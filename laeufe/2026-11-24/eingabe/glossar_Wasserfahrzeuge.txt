@@ -1,0 +1,39 @@
+VORGABEN (verbindlich, zuerst verwenden)
+  struktur_fahrwerk: Fahrzeugstruktur und Fahrwerk (Fahrzeuge mit Fahrwerk); Fahrzeugstruktur (Fahrzeuge ohne Fahrwerk)
+  antrieb: Antriebssystem
+  energieversorgung: Energieversorgungssystem
+  lenkung: Lenksystem
+  bremse: Bremssystem
+  bedienraum: Fahrerhaus (Nutzfahrzeuge, Arbeitsmaschinen); Fahrgastraum (Pkw, Busse); Führerstand (Schienenfahrzeuge); Cockpit (Luftfahrzeuge); Leitstand (ferngesteuerte und bodengeführte Fahrzeuge)
+  aufbau_nutzlast: Aufbau und Ladung (Nutzfahrzeuge); Laderaum und Anhängevorrichtung (Pkw); Arbeitsausrüstung (Arbeits- und Baumaschinen); Nutzlastsystem (unbemannte Fahrzeuge, Luft- und Raumfahrzeuge)
+  elektrik_elektronik: Elektrik und Elektronik
+  steuerung_information: Fahrzeugsteuerung und Information
+  assistenz_sicherheit: Fahrerassistenz und Sicherheit (mit Fahrer an Bord); Assistenz und Sicherheit (ohne Fahrer an Bord); Flugsicherheitssystem (Raketen)
+  beleuchtung_sicht: Beleuchtung und Sicht
+  thermomanagement: Thermomanagement
+  nebensysteme: Neben- und Versorgungssysteme
+  sonstig: Auftriebs- und Trimmsystem; Kabel- und Tether-Management-System; Stufentrennsystem; Bergungs- und Landesystem
+  Funktionen: Fahrzeuglasten tragen; Energie speichern; Elektrische Energie verteilen; Antriebsleistung erzeugen; Drehmoment übertragen; Fahrzeug fortbewegen; Fahrzeug lenken; Fahrzeug manövrieren; Fahrzeug verzögern; Bremsenergie zurückgewinnen; Traktionsbatterie laden; Treibstoff fördern; Druckluft bereitstellen; Hydraulische Leistung bereitstellen; Arbeitsgeräte versorgen; Fahrereingaben erfassen; Fahrerinformationen anzeigen; Fahrersicht sicherstellen; Insassen schützen; Ladung aufnehmen; Daten übertragen; Fahrzeugzustand überwachen; Fahrzeugposition bestimmen; Fahrzeugumfeld erfassen; Fahrzeugumgebung ausleuchten; Betriebstemperatur regeln; Auftrieb bereitstellen; Stufen trennen; Nutzlast aussetzen; Flug abbrechen; Fahrzeug aussetzen und bergen; Objekte handhaben; Unterdruck bereitstellen; Innenraum klimatisieren; Tether ausgeben und einholen
+  Regel: Hauptsystemnamen nur aus dieser Liste. Mehrere Namen je Kategorie gelten für die in Klammern genannte Fahrzeugart; die Klammer gehört nicht zum Namen.
+  Regel: Funktionsnamen zuerst aus dieser Liste. Neue Funktionen nur für fahrzeugartspezifische Leistungen (z. B. Oberwagen schwenken) und nie als Synonym einer gelisteten Funktion.
+  Regel: „Fahrer“ in Funktionsnamen steht für die führende Person, auch Pilot, Triebfahrzeugführer oder Bediener am Leitstand.
+  Regel: Neue Namen in offene_punkte mit dem Vermerk „Glossarvorschlag:“ führen.
+  Regel: Zuordnung: Komponenten aus der Zuordnungsliste gehören unter das Hauptsystem der genannten Kategorie, soweit die Fahrzeugart sie besitzt. Abweichungen nur mit Begründung in offene_punkte.
+
+ZUORDNUNG (verbindlich: Komponente gehört unter das Hauptsystem dieser Kategorie)
+  antrieb: Verbrennungsmotor; Traktionsmaschine; Getriebe; Differenzial; Gelenkwelle; Antriebswelle; Abgasanlage; Abgasnachbehandlung; Thruster; Triebwerk
+  energieversorgung: Kraftstofftank; Kraftstoffanlage; Wasserstofftank; Wasserstoffspeicher; Brennstoffzellensystem; Brennstoffzelle; Traktionsbatterie; Hochvoltbatterie; Hochvolt-Bordnetz; Hochvoltverteilung; Hochvolt-Verteilung; Gleichspannungswandler; Ladeeinrichtung; Bordnetzbatterie; Starterbatterie; Generator
+  elektrik_elektronik: Niedervolt-Bordnetz; Leitungssatz; Stromverteiler; Sicherungen; Bussystem; Fahrzeugbus; Gateway
+  bremse: Betriebsbremse; Feststellbremse; Bremskraftverstärker; Antiblockiersystem; Fahrdynamikregelung; Stabilitätsregelung; Bremsregelung
+  lenkung: Lenkunterstützung; Lenkgetriebe; Lenksäule; Lenkrad
+  struktur_fahrwerk: Karosserie; Rohbau; Crashstruktur; Rahmen; Türen; Heckklappe; Motorhaube; Radaufhängung; Federung; Räder und Reifen; Achse
+  bedienraum: Sitze; Rückhaltesystem; Sicherheitsgurt; Airbag; Gurtstraffer; Verdeck; Innenausstattung; Bedienelemente; Anzeigeelemente; Kombiinstrument
+  aufbau_nutzlast: Gepäckraum; Laderaum; Ladeboden; Laderaumabdeckung; Anhängevorrichtung; Dachträger; Manipulator; Werkzeugschlitten
+  steuerung_information: Fahrzeugmanagement; Telematikeinheit; Notrufsystem; Diagnose; Navigation; Infotainment
+  assistenz_sicherheit: Umfeldsensorik; Notbremsassistent; Spurhalteassistent; Geschwindigkeitsassistent; Müdigkeitswarnung; Reifendrucküberwachung; Überschlagschutz
+  beleuchtung_sicht: Scheinwerfer; Leuchten; Signalleuchten; Scheibenwischer; Scheibenreinigung; Rückspiegel; Außenspiegel; Kamera-Monitor-System
+  thermomanagement: Heiz- und Klimaanlage; Klimaanlage; Klimakompressor; Wärmepumpe; Innenraumheizung; Kühlkreislauf; Kühlmittelpumpe; Kühler; Batterietemperierung
+  nebensysteme: Unterdruckpumpe; Druckluftanlage; Kompressor für Druckluft; Nebenaggregatetrieb
+
+BISHER VERWENDET (Gruppe Wasserfahrzeuge markiert)
+  Funktionen: Anhänger ziehen; Fahrerzustand überwachen; Fahrzeug festhalten; Lichtsignale abgeben; Schiebetür betätigen; Verdeck öffnen und schließen
