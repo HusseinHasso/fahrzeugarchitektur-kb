@@ -218,3 +218,6 @@ in `aenderungen.json`. Nur der Orchestrator setzt diese beiden Stufen. **[belegt
 - **Mindestlänge der Hauptsystem-Abschnitte** (Festlegung des Auftraggebers, 2026-11-24): 80 Wörter sind ein Richtwert
   für die Mindestlänge, keine exakte Grenze. `validate` meldet eine Unterschreitung nur als HINWEIS, sie löst keine
   Korrekturrunde aus. Die Obergrenze je Hauptsystem-Abschnitt liegt bei 300 Wörtern (WARNUNG).
+- **Toleranz der Wortgrenzen** (Festlegung des Auftraggebers, 2026-11-24): Alle Wortgrenzen (Artikel 1.300 bis 2.000,
+  Übersicht 800 bis 1.500, Hauptsystem-Abschnitt höchstens 300) gelten mit ±50 Wörtern Toleranz. Innerhalb der Toleranz
+  meldet `validate` einen HINWEIS, erst darüber hinaus eine WARNUNG mit Korrekturrunde.

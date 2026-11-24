@@ -26,6 +26,25 @@ KATEGORIEN = [
     "beleuchtung_sicht", "thermomanagement", "nebensysteme",
 ]
 STATUS = ["offen", "in_arbeit", "zu_pruefen", "geprueft"]
+TOLERANZ = 50  # Wortgrenzen gelten mit ±50 Wörtern Toleranz (Festlegung des Auftraggebers)
+
+
+def pruefe_umfang(m, aid, wert, unten, oben, was, regel):
+    """Innerhalb der Grenzen: nichts; innerhalb der Toleranz: HINWEIS; darüber hinaus: WARNUNG."""
+    if unten is not None and wert < unten - TOLERANZ or oben is not None and wert > oben + TOLERANZ:
+        m.W(aid, f"{was} hat {wert} Wörter (Rahmen {rahmen(unten, oben)} ± {TOLERANZ}, {regel})")
+        return False
+    if unten is not None and wert < unten or oben is not None and wert > oben:
+        m.H(aid, f"{was} hat {wert} Wörter (Rahmen {rahmen(unten, oben)}, innerhalb der Toleranz, {regel})")
+    return True
+
+
+def rahmen(unten, oben):
+    if unten is None:
+        return f"höchstens {oben}"
+    if oben is None:
+        return f"mindestens {unten}"
+    return f"{unten:,}–{oben:,}".replace(",", ".")
 WORT = re.compile(r"\w+", re.UNICODE)
 FORMELN = re.compile(r"\b(CO2|H2O|H2|O2|N2O|NO2|CH4|SO2)\b")  # chemische Formeln sind keine Zahlenwerte (Regel 7)
 
@@ -247,12 +266,11 @@ def pruefe_artikel(aid, a, d, inv, glossar, schema, alle, m):
 
     # Umfang
     gesamt = sum(woerter(p.get("text", "")) for p in ps)
-    if a.get("artikeltyp") == "blatt" and not 1300 <= gesamt <= 2000:
-        m.W(aid, f"Wortzahl {gesamt} außerhalb 1.300–2.000 (Regel 3)")
-    elif a.get("artikeltyp") == "uebersicht" and not 800 <= gesamt <= 1500:
-        m.W(aid, f"Wortzahl {gesamt} außerhalb 800–1.500 (Regel 16)")
-    else:
-        m.H(aid, f"Wortzahl {gesamt}")
+    if a.get("artikeltyp") == "blatt":
+        pruefe_umfang(m, aid, gesamt, 1300, 2000, "Artikel", "Regel 3")
+    elif a.get("artikeltyp") == "uebersicht":
+        pruefe_umfang(m, aid, gesamt, 800, 1500, "Artikel", "Regel 16")
+    m.H(aid, f"Wortzahl {gesamt}")
 
     # Dramaturgie
     typen = [s.get("abschnittstyp") for s in abschnitte]
@@ -390,9 +408,8 @@ def pruefe_artikel(aid, a, d, inv, glossar, schema, alle, m):
             m.F(aid, f"{hid} {h.get('name')}: kein Abschnitt mit dieser element_id")
         else:
             w = sum(woerter(p.get("text", "")) for s in secs for p in s["absaetze"])
-            if w > 300:
-                m.W(aid, f"{hid} {h.get('name')}: Abschnitt hat {w} Wörter (höchstens 300, Regel 3)")
-            elif w < 80:
+            pruefe_umfang(m, aid, w, None, 300, f"{hid} {h.get('name')}: Abschnitt", "Regel 3")
+            if w < 80:
                 # Richtwert, keine Korrekturrunde (Leitfaden 2.4, Abschnitt 10)
                 m.H(aid, f"{hid} {h.get('name')}: Abschnitt hat {w} Wörter (Richtwert mindestens 80, Regel 3)")
         unter = [e for e in E.values() if e.get("id") != hid and hs_von(e.get("id")) == hid]
