@@ -3,7 +3,7 @@
   "artikel_id": "A-0005",
   "artikeltyp": "blatt",
   "titel": "Cabriolet",
-  "betrachtungsumfang": "Generische Referenzarchitektur des Cabriolets als Personenkraftwagen mit öffnungsfähigem Dach (Stoffverdeck, versenkbares oder abnehmbares Hardtop) auf Basis einer selbsttragenden Karosserie, mit verbrennungsmotorischem oder elektrischem Antrieb. Nicht betrachtet werden Roadster mit Notverdeck, Targa- und Schiebedachbauformen sowie Geländewagen- und Pick-up-Cabrios als eigene Bauarten; sie erscheinen nur zur Abgrenzung.",
+  "betrachtungsumfang": "Generische Referenzarchitektur des Cabriolets als Personenkraftwagen mit öffnungsfähigem Dach (Stoffverdeck, versenkbares oder abnehmbares Hardtop) auf Basis einer selbsttragenden Karosserie, mit verbrennungsmotorischem oder elektrischem Antrieb. Nicht betrachtet werden Roadster mit Notverdeck, Targa- und Schiebedachbauformen sowie Geländewagen- und Pick-up-Cabrios als eigene Bauarten; sie erscheinen nur zur Abgrenzung. Die Cabriolimousine wird nur als Grenzfall der Versteifungsvariante betrachtet.",
   "status": "in_arbeit",
   "quellenzugriff": "ja",
   "kindartikel_ids": [],
@@ -79,8 +79,14 @@
           "text": "Ein Cabriolet, kurz Cabrio, ist ein Personenkraftwagen, dessen Dach durch Zurückklappen geöffnet werden kann. Cabriolets basieren häufig auf der Coupé-Variante einer Fahrzeugbaureihe, unterscheiden sich von den geschlossenen Fahrzeugen aber stark in der Bauart der selbsttragenden Karosserie. Traditionell bezeichnet der Begriff ein Fahrzeug mit gefüttertem, vollständig zurückklappbarem Stoffdach; seit den 1990er Jahren erhalten immer mehr Modelle ein versenkbares Stahldach und werden als Coupé-Cabriolet bezeichnet. Daneben gibt es abnehmbare Hardtops aus Metall oder Kunststoff, die von Hand entfernt und oft im Kofferraum verstaut werden.",
           "begruendung": "belegt",
           "belege": [
-            {"quellen_id": "Q1", "fundstelle": "Einleitungssatz sowie Abschnitt „Definition“, Absätze 2 und 3"},
-            {"quellen_id": "Q2", "fundstelle": "Einleitung, Absatz 2 (detachable hardtops)"}
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Einleitungssatz sowie Abschnitt „Definition“, Absätze 2 und 3"
+            },
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Einleitung, Absatz 2 (detachable hardtops)"
+            }
           ],
           "aussagetyp": "funktion",
           "herangezogene_artikel_ids": []
@@ -91,7 +97,13 @@
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
-            "praemissen": ["P1", "P3", "P11", "P16", "Ein bewegliches Dach braucht Antrieb, Energie, Ablageraum und Steuerung."],
+            "praemissen": [
+              "P1",
+              "P3",
+              "P11",
+              "P16",
+              "Ein bewegliches Dach braucht Antrieb, Energie, Ablageraum und Steuerung."
+            ],
             "schluss": "Die Dachbauart wirkt auf Struktur, Fahrgastraum, Laderaum, Sicherheit, Versorgung und Steuerung; die übrigen Hauptsysteme entsprechen dem Pkw."
           },
           "sicherheit": "mittel",
@@ -110,8 +122,14 @@
           "text": "Bei der selbsttragenden Karosserie eines Cabriolets fehlen die Dachholme als tragende Komponente, sodass alle Belastungen durch eine verstärkte Bodengruppe aufgenommen werden müssen. Gegenüber der geschlossenen Basislimousine kommen eine Verstärkung im Unterbodenbereich und ein verstärkter Frontscheibenrahmen hinzu, die die fehlende Versteifung durch Dach und eingeklebte Scheiben ausgleichen; teilweise übernehmen dauerhaft sichtbare Überrollbügel diese Aufgabe. Die verringerte strukturelle Steifigkeit gilt als möglicher Nachteil der Bauform.",
           "begruendung": "belegt",
           "belege": [
-            {"quellen_id": "Q1", "fundstelle": "Abschnitt „Definition“, Absatz 2 (Schuhkarton-Problem) und Abschnitt „Ausführungen“, Absatz nach den Bauarten A bis F"},
-            {"quellen_id": "Q2", "fundstelle": "Einleitung, Absatz 1 (reduced structural rigidity)"}
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Abschnitt „Definition“, Absatz 2 (Schuhkarton-Problem) und Abschnitt „Ausführungen“, Absatz nach den Bauarten A bis F"
+            },
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Einleitung, Absatz 1 (reduced structural rigidity)"
+            }
           ],
           "aussagetyp": "loesung",
           "herangezogene_artikel_ids": []
@@ -122,7 +140,11 @@
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
-            "praemissen": ["P3", "Q1 Abschnitt „Aktuelle Bauformen“ (Cabriolimousine)", "Ohne Dach bleibt als geschlossener Querschnitt nur der Unterbau."],
+            "praemissen": [
+              "P3",
+              "Q1 Abschnitt „Aktuelle Bauformen“ (Cabriolimousine)",
+              "Ohne Dach bleibt als geschlossener Querschnitt nur der Unterbau."
+            ],
             "schluss": "Die Lasten laufen über Bodengruppe und Frontscheibenrahmen; die Versteifungsvariante bestimmt, wie viel Struktur oberhalb der Gürtellinie bleibt."
           },
           "sicherheit": "mittel",
@@ -138,14 +160,20 @@
       "absaetze": [
         {
           "absatz_id": "P5",
-          "text": "Das Antriebssystem erzeugt die Antriebsleistung und überträgt sie auf die angetriebenen Räder. Es besteht aus Antriebsmaschine, Getriebe und Antriebswellen und wird häufig vom Basisfahrzeug übernommen. Die Antriebsmaschine ist ein Verbrennungsmotor oder eine elektrische Maschine; eine elektrische Maschine kann beim Verzögern Bremsenergie zurückgewinnen. Der Leistungsfluss verläuft von der Antriebsmaschine über Getriebe und Antriebswellen zu den Rädern. Die Antriebsart wirkt auf die Struktur zurück: Ein großer Energiespeicher im Unterboden konkurriert mit den Verstärkungen der Bodengruppe, und die Lage von Motor und Getriebe bestimmt den Raum für Verdeckablage und Gepäckraum mit.",
+          "text": "Das Antriebssystem erzeugt die Antriebsleistung und überträgt sie auf die angetriebenen Räder. Es besteht aus Antriebsmaschine, Getriebe und Antriebswellen und wird häufig vom Basisfahrzeug übernommen. Die Antriebsmaschine ist ein Verbrennungsmotor oder eine elektrische Maschine; eine elektrische Maschine kann beim Verzögern Bremsenergie zurückgewinnen. Der Leistungsfluss verläuft von der Antriebsmaschine über Getriebe und Antriebswellen zu den Rädern. Die Antriebsart wirkt auf die Struktur zurück: Ein großer Energiespeicher im Unterboden konkurriert mit den Verstärkungen der Bodengruppe, und die Lage von Motor und Getriebe bestimmt den Raum für Verdeckablage und Gepäckraum mit. Ein im Unterboden verbautes Batteriegehäuse kann aber auch in den Lastpfad der Bodengruppe einbezogen werden und Verstärkungen teilweise ersetzen; das koppelt Batteriegehäuse und Karosseriestruktur in Crash- und Steifigkeitsauslegung.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
-            "praemissen": ["P1", "P3", "P11", "Funktionsprinzip Antriebsstrang: Wandler, Übersetzung, Übertragung zum Rad."],
-            "schluss": "Der Antrieb entspricht dem Basisfahrzeug; seine Bauraumbelegung im Unterboden und Heck steht in Konflikt mit Versteifung und Verdeckablage."
+            "praemissen": [
+              "P1",
+              "P3",
+              "P11",
+              "Funktionsprinzip Antriebsstrang: Wandler, Übersetzung, Übertragung zum Rad.",
+              "Gegenprobe: Ein steifes Gehäuse im Unterboden kann selbst Lasten tragen."
+            ],
+            "schluss": "Der Antrieb entspricht dem Basisfahrzeug; seine Bauraumbelegung im Unterboden und Heck steht in Konflikt mit Versteifung und Verdeckablage. Ein tragendes Batteriegehäuse ist die Gegenvariante zum reinen Bauraumkonflikt."
           },
-          "sicherheit": "mittel",
+          "sicherheit": "gering",
           "aussagetyp": "variante",
           "herangezogene_artikel_ids": []
         }
@@ -162,7 +190,12 @@
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
-            "praemissen": ["P3", "P5", "P20", "Jeder elektrische Verbraucher braucht einen Speicher oder Wandler als Quelle."],
+            "praemissen": [
+              "P3",
+              "P5",
+              "P20",
+              "Jeder elektrische Verbraucher braucht einen Speicher oder Wandler als Quelle."
+            ],
             "schluss": "Die Speicher konkurrieren um den Bauraum der Versteifung; der Verdeckantrieb belastet das Bordnetz."
           },
           "sicherheit": "gering",
@@ -198,10 +231,15 @@
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
-            "praemissen": ["Funktionsprinzip hydraulische Pkw-Bremse: Betätigung, Druckübertragung, Radbremse.", "P5", "P14"],
-            "schluss": "Das Bremssystem entspricht dem Pkw; es liefert Zustandsinformationen an die Verdecksteuerung."
+            "praemissen": [
+              "Funktionsprinzip hydraulische Pkw-Bremse: Betätigung, Druckübertragung, Radbremse.",
+              "P5",
+              "P14",
+              "Eine Verdeckbewegung während der Fahrt oder bei rollendem Fahrzeug muss die Verdecksteuerung ausschließen oder begrenzen."
+            ],
+            "schluss": "Das Bremssystem entspricht dem Pkw; es liefert den Stillstands- und Feststellbremsstatus an die Verdecksteuerung."
           },
-          "sicherheit": "hoch",
+          "sicherheit": "mittel",
           "aussagetyp": "loesung",
           "herangezogene_artikel_ids": []
         }
@@ -214,24 +252,39 @@
       "absaetze": [
         {
           "absatz_id": "P9",
-          "text": "Ein Stoffverdeck besteht aus flexiblem Material wie PVC oder Stoffgewebe über einem gelenkigen Faltgestänge und kann eine Dämmlage und einen Innenhimmel tragen, der das Gestänge verdeckt; die Heckscheibe ist oft Teil der Dachbaugruppe. Ein versenkbares Hardtop besteht aus zwei oder mehr Teilen aus Metall oder Kunststoff, die über ein aufwändiges Gestänge verbunden sind und zusammengeklappt im Kofferraum abgelegt werden. Ein Windschott verringert Geräusche und Luftströmung bei den Insassen.",
+          "text": "Ein Stoffverdeck besteht aus flexiblem Material wie PVC oder Stoffgewebe über einem gelenkigen Faltgestänge; die Heckscheibe ist oft Teil der Dachbaugruppe. Ein versenkbares Hardtop besteht aus zwei oder mehr Teilen aus Metall oder Kunststoff, die über ein aufwändiges Gestänge verbunden sind und zusammengeklappt im Kofferraum abgelegt werden.",
           "begruendung": "belegt",
           "belege": [
-            {"quellen_id": "Q1", "fundstelle": "Abschnitt „Technik“, Absatz 2"},
-            {"quellen_id": "Q2", "fundstelle": "Abschnitt „Roof types“, Unterabschnitt „Textile“; Abschnitt „Other design features“, Unterabschnitte „Rear window“ und „Windblocker“"},
-            {"quellen_id": "Q3", "fundstelle": "Abschnitt „Construction“ (two and five sections of metal or plastic)"}
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Abschnitt „Technik“, Absatz 2"
+            },
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Abschnitt „Roof types“, Unterabschnitt „Textile“; Abschnitt „Other design features“, Unterabschnitt „Rear window“"
+            },
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Abschnitt „Construction“ (two and five sections of metal or plastic)"
+            }
           ],
           "aussagetyp": "loesung",
           "herangezogene_artikel_ids": []
         },
         {
           "absatz_id": "P10",
-          "text": "Der Fahrgastraum wird beim Cabriolet nach oben durch das Verdecksystem abgeschlossen. Es umfasst Verdeckgestänge, Dachhaut, Heckscheibe und die Verdeckverriegelung am Frontscheibenrahmen. Das Verdeckgestänge führt die Dachhaut auf einer festen Kinematik in den Ablageraum; die Verdeckverriegelung meldet ihren Zustand an die Verdecksteuerung. Die Innenausstattung mit Sitzanlage, Bedien- und Anzeigeelementen sowie Windschott unterscheidet sich vom geschlossenen Fahrzeug durch den Verdeckschalter und witterungsbeständige Oberflächen.",
+          "text": "Der Fahrgastraum wird nach oben durch das Verdecksystem abgeschlossen. Es umfasst Verdeckgestänge, Dachhaut, Heckscheibe, Dachdichtungen und die Verdeckverriegelung am Frontscheibenrahmen sowie als Verdeckantrieb Hydraulikzylinder oder elektrische Stellmotoren. Eine Verdeckklappe deckt bei vielen Bauarten den Verdeckkasten ab, in dem das Verdeckpaket abgelegt wird; bei anderen liegt das Verdeck gefaltet auf der Verdeckklappe. Die Verdeckverriegelung meldet ihren Zustand an die Verdecksteuerung. Zur Innenausstattung gehören Sitzanlage, Seitenscheiben und Fensterheber, Bedien- und Anzeigeelemente mit dem Verdeckschalter sowie das Windschott. Die Sitzanordnung als Zweisitzer oder Viersitzer bestimmt Verdecklänge und Ablageraum.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
-            "praemissen": ["P9", "P3", "Ein bewegliches Dach muss in geschlossener Lage gegen den Frontscheibenrahmen verriegelt werden."],
-            "schluss": "Das Verdecksystem ist ein Subsystem des Fahrgastraums mit Gestänge, Dachhaut, Heckscheibe und Verriegelung."
+            "praemissen": [
+              "P9",
+              "P3",
+              "P11",
+              "Q1 Abschnitt „Ausführungen“ (versenkbare Seitenscheiben, in der Regel zwei- bis fünfsitzig)",
+              "Ein bewegliches Dach muss in geschlossener Lage gegen den Frontscheibenrahmen verriegelt und abgedichtet werden."
+            ],
+            "schluss": "Das Verdecksystem ist ein Subsystem des Fahrgastraums mit Gestänge, Dachhaut, Heckscheibe, Dichtungen, Verriegelung, Verdeckklappe und Verdeckantrieb; die Sitzanordnung bestimmt seine Größe."
           },
           "sicherheit": "mittel",
           "aussagetyp": "modellannahme",
@@ -249,20 +302,30 @@
           "text": "Ein Blechdach benötigt mehr Platz im Kofferraum als ein Stoffdach. Versenkbare Hardtops nutzen häufig doppelt angeschlagene Kofferraumdeckel, die das Dach von vorn und Gepäck von hinten aufnehmen; der Kofferraum enthält oft eine Trennvorrichtung, die das Einladen von Gepäck verhindert, das mit der Dachbewegung kollidieren würde. Bei manchen Cabrios liegt das Stoffverdeck zusammengefaltet auf der Verdeckklappe und wird mit einer Persenning geschützt.",
           "begruendung": "belegt",
           "belege": [
-            {"quellen_id": "Q1", "fundstelle": "Abschnitt „Technik“, Absätze 1 und 3"},
-            {"quellen_id": "Q3", "fundstelle": "Abschnitt „Construction“ (dual-hinged trunk/boot lids, divider mechanism)"}
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Abschnitt „Technik“, Absätze 1 und 3"
+            },
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Abschnitt „Construction“ (dual-hinged trunk/boot lids, divider mechanism)"
+            }
           ],
           "aussagetyp": "loesung",
           "herangezogene_artikel_ids": []
         },
         {
           "absatz_id": "P12",
-          "text": "Das Hauptsystem Laderaum und Anhängevorrichtung umfasst damit Gepäckraum, Gepäckraumdeckel und Laderaumabtrennung. Gepäckraum und Verdeckablage teilen sich denselben Bauraum, sodass das nutzbare Volumen vom Verdeckzustand abhängt. Eine Anhängevorrichtung ist als Option möglich und belastet das Heck, das bereits Verdecklagerung und Ablage trägt.",
+          "text": "Das Hauptsystem Laderaum und Anhängevorrichtung umfasst damit Gepäckraum, Gepäckraumdeckel und Laderaumabtrennung. Gepäckraum und Verdeckablage teilen sich denselben Bauraum, sodass das nutzbare Volumen vom Verdeckzustand abhängt. Bei automatisch betätigten versenkbaren Dächern kann die Verdecksteuerung die Stellung der Laderaumabtrennung abfragen und die Bewegung erst dann freigeben. Eine Anhängevorrichtung ist als Option möglich und belastet das Heck, das bereits Verdecklagerung und Ablage trägt.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
-            "praemissen": ["P11", "P9"],
-            "schluss": "Laderaum und Verdeckablage sind gekoppelt; die Laderaumabtrennung ist Schnittstelle zur Verdecksteuerung."
+            "praemissen": [
+              "P11",
+              "P9",
+              "Damit die Abtrennung eine Kollision verhindert, muss ihre Lage vor jeder automatischen Dachbewegung sichergestellt sein, mechanisch oder durch Abfrage."
+            ],
+            "schluss": "Laderaum und Verdeckablage sind gekoppelt; bei automatisch betätigten versenkbaren Dächern kann die Laderaumabtrennung Schnittstelle zur Verdecksteuerung sein."
           },
           "sicherheit": "mittel",
           "aussagetyp": "loesung",
@@ -281,7 +344,12 @@
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
-            "praemissen": ["Q3 Abschnitt „History“ (Endschalter, Relais und Stellmotoren eines elektrisch betätigten Hardtops)", "Q4 Abschnitt „Weitere Funktionen“", "P10", "P14"],
+            "praemissen": [
+              "Q3 Abschnitt „History“ (Endschalter, Relais und Stellmotoren eines elektrisch betätigten Hardtops)",
+              "Q4 Abschnitt „Weitere Funktionen“",
+              "P10",
+              "P14"
+            ],
             "schluss": "Verdeckantrieb und Überschlagschutz erfordern eigene Sensorik, Leitungen in bewegte Teile und Datenaustausch über das Kommunikationsnetz."
           },
           "sicherheit": "mittel",
@@ -297,11 +365,17 @@
       "absaetze": [
         {
           "absatz_id": "P14",
-          "text": "Fahrzeugsteuerung und Information bilden die logische Ebene. Cabriospezifisch ist die Verdecksteuerung: Sie wertet Verdeckschalter, Verriegelungs- und Endlagenstatus, die Stellung der Laderaumabtrennung und die Fahrgeschwindigkeit aus und steuert die Stellantriebe in einer festen Bewegungsfolge aus Entriegeln, Öffnen von Verdeckklappe oder Gepäckraumdeckel, Ablegen und Schließen. Das Energiemanagement stimmt den Verdeckantrieb mit dem Ladezustand der Batterien ab. Die Diagnosefunktion erfasst Fehler von Verdeckantrieb und Überschlagschutzsystem und stellt sie über die Diagnoseschnittstelle bereit. Wird eine Bewegung unterbrochen, muss die Verdecksteuerung einen sicheren Zwischenzustand halten und den Fahrer über die Bedien- und Anzeigeelemente informieren.",
+          "text": "Fahrzeugsteuerung und Information bilden die logische Ebene. Cabriospezifisch ist die Verdecksteuerung: Bei elektrohydraulisch oder elektromechanisch betätigten Dächern wertet sie Verdeckschalter, Verriegelungs- und Endlagenstatus, Stillstandsstatus, gegebenenfalls die Stellung der Laderaumabtrennung und die Fahrgeschwindigkeit aus und steuert Fensterheber und Stellantriebe in einer festen Bewegungsfolge aus Absenken der Seitenscheiben, Entriegeln, Öffnen von Verdeckklappe oder Gepäckraumdeckel, Ablegen und Schließen. Das Energiemanagement stimmt den Verdeckantrieb mit dem Ladezustand der Batterien ab. Die Diagnosefunktion erfasst Fehler von Verdeckantrieb und Überschlagschutzsystem und stellt sie über die Diagnoseschnittstelle bereit. Wird eine Bewegung unterbrochen, muss die Verdecksteuerung einen sicheren Zwischenzustand halten und den Fahrer über die Bedien- und Anzeigeelemente informieren.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
-            "praemissen": ["P11", "P13", "Q4 Abschnitt „Weitere Funktionen“ (Eigendiagnose, Fehlerspeicher, Diagnoseschnittstelle)", "Mehrere Stellglieder in einem gemeinsamen Bauraum erfordern eine geordnete Bewegungsfolge."],
+            "praemissen": [
+              "P11",
+              "P13",
+              "Q4 Abschnitt „Weitere Funktionen“ (Eigendiagnose, Fehlerspeicher, Diagnoseschnittstelle)",
+              "Mehrere Stellglieder in einem gemeinsamen Bauraum erfordern eine geordnete Bewegungsfolge.",
+              "P10"
+            ],
             "schluss": "Die Verdecksteuerung koordiniert Sensoren und Stellantriebe in fester Reihenfolge; Diagnose und Energiemanagement ergänzen sie."
           },
           "sicherheit": "mittel",
@@ -320,8 +394,14 @@
           "text": "Bei Überschlagunfällen entstehen Verletzungen vor allem durch eine zu schwache Dachstruktur, durch Herausfallen aus den Fenstern und durch nicht angelegte Gurte. Die US-Norm FMVSS 216 zur Dachfestigkeit gilt nicht für Cabriolets, außer als wahlweise Alternative zu den Überschlagprüfungen nach FMVSS 208.",
           "begruendung": "belegt",
           "belege": [
-            {"quellen_id": "Q6", "fundstelle": "Introduction, Absatz 1"},
-            {"quellen_id": "Q5", "fundstelle": "S3 Application, Buchstabe (c)"}
+            {
+              "quellen_id": "Q6",
+              "fundstelle": "Introduction, Absatz 1"
+            },
+            {
+              "quellen_id": "Q5",
+              "fundstelle": "S3 Application, Buchstabe (c)"
+            }
           ],
           "aussagetyp": "funktion",
           "herangezogene_artikel_ids": []
@@ -331,22 +411,32 @@
           "text": "Ein Überrollsensor erkennt den Überschlag anhand von Fahrzeugbeschleunigung, Fahrzeugneigung und Hinterradausfederung und lässt ausklappbare Überrollbügel oder ausfahrbare hintere Kopfstützen ausfahren, indem ein Elektromagnet eine vorgespannte Feder entriegelt. Der Sensor diagnostiziert sich selbst; im Auslösefall wird die Zentralverriegelung geöffnet. Weitere Maßnahmen sind pyrotechnisch ausgelöste Überrollbügel hinter den Rücksitzen, mit Borstahl verstärkte A-Säulen und Seitenairbags aus der Tür, die den Kopf auch bei geöffnetem Fenster schützen.",
           "begruendung": "belegt",
           "belege": [
-            {"quellen_id": "Q4", "fundstelle": "Einleitung (Überrollsensor, Elektromagnet, vorgespannte Feder) sowie Abschnitte „Auslösung“ und „Weitere Funktionen“"},
-            {"quellen_id": "Q2", "fundstelle": "Abschnitt „Safety“, Aufzählung"}
+            {
+              "quellen_id": "Q4",
+              "fundstelle": "Einleitung (Überrollsensor, Elektromagnet, vorgespannte Feder) sowie Abschnitte „Auslösung“ und „Weitere Funktionen“"
+            },
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Abschnitt „Safety“, Aufzählung"
+            }
           ],
           "aussagetyp": "loesung",
           "herangezogene_artikel_ids": []
         },
         {
           "absatz_id": "P17",
-          "text": "Im Modell besteht das Überschlagschutzsystem aus Überrollsensor, Überrollbügel und Auslöseeinheit. Das Rückhaltesystem aus Sicherheitsgurten und Seitenairbags kann mit der Überschlagerkennung in einem gemeinsamen Steuergerät zusammengefasst sein. Eine Umfeldsensorik erfasst Fahrbahn und Hindernisse für Assistenzfunktionen mit Eingriff in Bremse und Lenkung.",
+          "text": "Im Modell besteht das Überschlagschutzsystem aus Überrollsensor, Überrollbügel und Auslöseeinheit. Das Rückhaltesystem umfasst Sicherheitsgurte, Frontairbags und Seitenairbags; ohne B-Säule können Gurtumlenkung oder Gurtbringer in Sitz oder Seitenverkleidung liegen. Eine Umfeldsensorik erfasst das Umfeld für Assistenzfunktionen.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
-            "praemissen": ["P16", "Q4 Abschnitt „Ausblick“ (Integration der Überschlagserkennung in ein zentrales Kombigerät)"],
-            "schluss": "Überschlagschutz und Rückhaltesystem sind getrennte Subsysteme mit gemeinsamer Auslöselogik."
+            "praemissen": [
+              "P16",
+              "P7",
+              "Ohne Dach und B-Säule fehlt der übliche obere Befestigungspunkt des Gurts."
+            ],
+            "schluss": "Überschlagschutz und Rückhaltesystem sind getrennte Subsysteme; die Gurtführung verlagert sich in Sitz oder Seitenverkleidung."
           },
-          "sicherheit": "mittel",
+          "sicherheit": "gering",
           "aussagetyp": "modellannahme",
           "herangezogene_artikel_ids": []
         }
@@ -363,7 +453,12 @@
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
-            "praemissen": ["Q2 Abschnitt „Safety“ (heated rear window)", "P9", "P11", "Ohne festes Dach entfällt der Dachbereich als Einbauort."],
+            "praemissen": [
+              "Q2 Abschnitt „Safety“ (heated rear window)",
+              "P9",
+              "P11",
+              "Ohne festes Dach entfällt der Dachbereich als Einbauort."
+            ],
             "schluss": "Sichtsysteme folgen dem Pkw, mit verlegten Dachleuchten und beheizter Heckscheibe im Verdeck."
           },
           "sicherheit": "gering",
@@ -383,7 +478,10 @@
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
-            "praemissen": ["Q2 Abschnitt „Other design features“ (Heizluftkanal zum Nackenbereich des Sitzes)", "Ohne Dach lässt sich keine geschlossene Innenraumluft halten."],
+            "praemissen": [
+              "Q2 Abschnitt „Other design features“ (Heizluftkanal zum Nackenbereich des Sitzes)",
+              "Ohne Dach lässt sich keine geschlossene Innenraumluft halten."
+            ],
             "schluss": "Die Klimatisierung des offenen Fahrgastraums verlagert sich auf gezielte, körpernahe Luftführung."
           },
           "sicherheit": "mittel",
@@ -399,7 +497,7 @@
       "absaetze": [
         {
           "absatz_id": "P20",
-          "text": "Die Neben- und Versorgungssysteme stellen beim Cabriolet vor allem die Antriebsenergie der Verdeckbewegung bereit. Bei elektrohydraulischer Bauweise erzeugt ein Hydraulikaggregat aus Elektromotor, Pumpe und Ventilblock den Druck für Hydraulikzylinder, die Verdeckgestänge, Verdeckklappe und Gepäckraumdeckel bewegen. Elektrische Stellmotoren treiben bei elektromechanischer Bauweise die Bewegung über Getriebe und Gestänge direkt an und können auch einzelne Verriegelungen betätigen. Von Hand bediente Stoffverdecke kommen mit Federn zur Gewichtsentlastung aus. Das Hydraulikaggregat kann im Heck nahe der Verdeckablage sitzen, um kurze Leitungen zu den Hydraulikzylindern zu erhalten. Die Wahl beeinflusst Masse, Geräusch, Bewegungsdauer und Bauraum im Heck.",
+          "text": "Die Neben- und Versorgungssysteme stellen beim Cabriolet vor allem die Versorgung der Verdeckbewegung bereit. Bei elektrohydraulischer Bauweise erzeugt ein Hydraulikaggregat aus Elektromotor, Pumpe und Ventilblock den Druck, den Hydraulikleitungen zu den Hydraulikzylindern des Verdeckantriebs führen; diese bewegen Verdeckgestänge, Verdeckklappe und Gepäckraumdeckel. Das Hydraulikaggregat kann im Heck nahe der Verdeckablage sitzen, um die Hydraulikleitungen kurz zu halten. Bei elektromechanischer Bauweise entfällt das Aggregat: Elektrische Stellmotoren im Verdecksystem werden direkt aus dem Bordnetz versorgt. Von Hand bediente Stoffverdecke kommen mit Federn zur Gewichtsentlastung aus. Die Wahl beeinflusst Masse, Geräusch, Bewegungsdauer und Bauraum im Heck.",
           "begruendung": "modellwissen",
           "belege": [],
           "sicherheit": "gering",
@@ -414,14 +512,20 @@
       "absaetze": [
         {
           "absatz_id": "P21",
-          "text": "Auf oberster Ebene lässt sich das Cabriolet als Gesamtsystem mit Fahrzeugstruktur und Fahrwerk, Antriebssystem, Energieversorgungssystem, Lenksystem, Bremssystem, Fahrgastraum, Laderaum und Anhängevorrichtung, Elektrik und Elektronik, Fahrzeugsteuerung und Information, Fahrerassistenz und Sicherheit, Beleuchtung und Sicht, Thermomanagement sowie Neben- und Versorgungssysteme auffassen. Das Verdecksystem ist kein eigenes Hauptsystem, sondern eine Querschnittsfunktion, die Fahrgastraum, Laderaum, Struktur, Versorgung, Steuerung und Sicherheit über definierbare Schnittstellen koppelt.",
+          "text": "Auf oberster Ebene lässt sich das Cabriolet als Gesamtsystem mit Fahrzeugstruktur und Fahrwerk, Antriebssystem, Energieversorgungssystem, Lenksystem, Bremssystem, Fahrgastraum, Laderaum und Anhängevorrichtung, Elektrik und Elektronik, Fahrzeugsteuerung und Information, Fahrerassistenz und Sicherheit, Beleuchtung und Sicht, Thermomanagement sowie Neben- und Versorgungssysteme auffassen. Das Verdecksystem ist als Subsystem des Fahrgastraums modelliert, weil es den Fahrgastraum nach oben abschließt; über Verdecklagerung, Verdeckkasten, Verdeckantrieb und Verdecksteuerung ist es mit Fahrzeugstruktur, Laderaum, Neben- und Versorgungssystemen sowie Fahrzeugsteuerung gekoppelt.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
-            "praemissen": ["P2", "P10", "P12", "P14", "P20"],
-            "schluss": "Die Hauptsysteme entsprechen dem Pkw; das Verdeck verbindet sie als Querschnittsthema."
+            "praemissen": [
+              "P2",
+              "P10",
+              "P12",
+              "P14",
+              "P20"
+            ],
+            "schluss": "Die Hauptsysteme entsprechen dem Pkw; das Verdecksystem gehört zum Fahrgastraum und ist über benannte Schnittstellen mit Struktur, Laderaum, Versorgung und Steuerung gekoppelt."
           },
-          "sicherheit": "hoch",
+          "sicherheit": "mittel",
           "aussagetyp": "modellannahme",
           "herangezogene_artikel_ids": []
         }
@@ -433,11 +537,17 @@
       "absaetze": [
         {
           "absatz_id": "P22",
-          "text": "In SysML bildet der Block `Cabriolet` das Gesamtsystem mit den Hauptsystemen als Bestandteilen. Typische Dekompositionspfade sind `Fahrgastraum → Verdecksystem → Verdeckgestänge`, `Fahrerassistenz und Sicherheit → Überschlagschutzsystem → Auslöseeinheit`, `Fahrzeugstruktur und Fahrwerk → Karosseriestruktur → Frontscheibenrahmen` und `Neben- und Versorgungssysteme → Hydraulikaggregat`. Ports und Konnektoren bilden die Verdeckverriegelung am Frontscheibenrahmen, die Anlenkung der Hydraulikzylinder am Verdeckgestänge, den Verdeckkasten im Gepäckraum und die Signalwege zur Verdecksteuerung ab. Die Dachbauart lässt sich als Variante im Block Definition Diagram führen, die Bewegungsfolge des Verdecks als Zustandsautomat und Aktivitätsdiagramm.",
+          "text": "In SysML bildet der Block `Cabriolet` das Gesamtsystem mit den Hauptsystemen als Bestandteilen. Typische Dekompositionspfade sind `Fahrgastraum → Verdecksystem → Verdeckgestänge`, `Fahrerassistenz und Sicherheit → Überschlagschutzsystem → Auslöseeinheit`, `Fahrzeugstruktur und Fahrwerk → Karosseriestruktur → Frontscheibenrahmen` und `Fahrgastraum → Verdecksystem → Verdeckantrieb → Hydraulikzylinder`. Ports und Konnektoren bilden die Verdeckverriegelung am Frontscheibenrahmen, die Anlenkung der Hydraulikzylinder am Verdeckgestänge, den Verdeckkasten im Gepäckraum und die Signalwege zur Verdecksteuerung ab. Die Dachbauart lässt sich als Variante im Block Definition Diagram führen, die Bewegungsfolge des Verdecks als Zustandsautomat und Aktivitätsdiagramm.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
-            "praemissen": ["P10", "P14", "P17", "P20", "P21"],
+            "praemissen": [
+              "P10",
+              "P14",
+              "P17",
+              "P20",
+              "P21"
+            ],
             "schluss": "Die cabriospezifischen Elemente lassen sich als Subsysteme einordnen; die Bewegungsfolge eignet sich für Verhaltensdiagramme."
           },
           "sicherheit": "hoch",
@@ -452,11 +562,20 @@
       "absaetze": [
         {
           "absatz_id": "P23",
-          "text": "Kraftstofftank oder Traktionsbatterie liefern Energie an die Antriebsmaschine; mechanische Leistung fließt über Getriebe und Antriebswellen zu Rädern und Reifen. Fahrbahnlasten gehen über die Radaufhängung in die Karosseriestruktur, Verdecklasten über die Verdecklagerung. Die Bordnetzbatterie speist den Leitungssatz, dieser Hydraulikaggregat, Stellmotoren und Leuchten; das Hydraulikaggregat liefert Druck an die Hydraulikzylinder, diese bewegen das Verdeckgestänge. Verdeckschalter, Verdeckverriegelung und Laderaumabtrennung melden an die Verdecksteuerung, die das Hydraulikaggregat ansteuert. Der Überrollsensor meldet an Auslöseeinheit und Kommunikationsnetz, die Auslöseeinheit fährt den Überrollbügel aus. Der Kühlkreislauf führt Wärme von der Antriebsmaschine ab, die Heiz- und Klimaanlage und die Nackenheizung temperieren Innenraum und Sitzanlage.",
+          "text": "Kraftstofftank oder Traktionsbatterie liefern Energie an die Antriebsmaschine; mechanische Leistung fließt über Getriebe und Antriebswellen zu Rädern und Reifen. Fahrbahnlasten gehen über die Radaufhängung in die Karosseriestruktur, Verdecklasten über die Verdecklagerung. Die Bordnetzbatterie speist den Leitungssatz, dieser Hydraulikaggregat, Stellmotoren und Leuchten; das Hydraulikaggregat liefert Druck an die Hydraulikzylinder, diese bewegen das Verdeckgestänge. Verdeckschalter, Verdeckverriegelung, Feststellbremse und Laderaumabtrennung melden an die Verdecksteuerung, die Hydraulikaggregat, Stellmotoren und Fensterheber ansteuert. Der Überrollsensor meldet an Auslöseeinheit und Kommunikationsnetz, die Auslöseeinheit fährt den Überrollbügel aus.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
-            "praemissen": ["P5", "P6", "P10", "P13", "P14", "P16", "P19", "P20"],
+            "praemissen": [
+              "P5",
+              "P6",
+              "P10",
+              "P13",
+              "P14",
+              "P16",
+              "P19",
+              "P20"
+            ],
             "schluss": "Jeder Fluss hat Ursprung und Ziel in einem beschriebenen Element."
           },
           "sicherheit": "hoch",
@@ -471,11 +590,27 @@
       "absaetze": [
         {
           "absatz_id": "P24",
-          "text": "Physisch zerfällt das Cabriolet in die genannten Hauptsysteme mit Subsystemen und Komponenten. Funktional ordnen sich zu: Fahrzeuglasten tragen der Karosseriestruktur und dem Fahrwerk; Antriebsleistung erzeugen und Bremsenergie zurückgewinnen der Antriebsmaschine; Drehmoment übertragen Getriebe und Antriebswellen; Fahrzeug fortbewegen dem Antriebssystem mit Rädern und Reifen; Energie speichern Kraftstofftank, Traktionsbatterie und Bordnetzbatterie; Elektrische Energie verteilen dem Leitungssatz; Daten übertragen dem Kommunikationsnetz; Fahrzeug lenken dem Lenksystem; Fahrzeug verzögern dem Bremssystem; Fahrereingaben erfassen und Fahrerinformationen anzeigen den Bedien- und Anzeigeelementen; Verdeck öffnen und schließen Verdecksystem, Hydraulikaggregat, Hydraulikzylinder, Stellmotoren und Verdecksteuerung; Ladung aufnehmen dem Gepäckraum; Insassen schützen Überschlagschutzsystem, Rückhaltesystem und Frontscheibenrahmen; Fahrzeugzustand überwachen Diagnosefunktion und Überrollsensor; Fahrzeugumfeld erfassen der Umfeldsensorik; Fahrzeugumgebung ausleuchten Scheinwerfer und Leuchten; Fahrersicht sicherstellen Scheibenwischanlage und Heckscheibenheizung; Betriebstemperatur regeln dem Kühlkreislauf; Innenraum klimatisieren Heiz- und Klimaanlage und Nackenheizung; Hydraulische Leistung bereitstellen dem Hydraulikaggregat. Die Flussperspektive verbindet diese Zuordnungen über Ports.",
+          "text": "Funktional ordnen sich zu: Fahrzeuglasten tragen der Karosseriestruktur und dem Fahrwerk; Antriebsleistung erzeugen und Bremsenergie zurückgewinnen der Antriebsmaschine; Drehmoment übertragen Getriebe und Antriebswellen; Fahrzeug fortbewegen dem Antriebssystem mit Rädern und Reifen; Energie speichern Kraftstofftank, Traktionsbatterie und Bordnetzbatterie; Elektrische Energie verteilen dem Leitungssatz; Daten übertragen dem Kommunikationsnetz; Fahrzeug lenken dem Lenksystem; Fahrzeug verzögern dem Bremssystem; Fahrereingaben erfassen und Fahrerinformationen anzeigen den Bedien- und Anzeigeelementen; Verdeck öffnen und schließen Verdecksystem mit Verdeckantrieb, Hydraulikaggregat und Verdecksteuerung; Ladung aufnehmen dem Gepäckraum; Insassen schützen Überschlagschutzsystem, Rückhaltesystem und Frontscheibenrahmen; Fahrzeugzustand überwachen Diagnosefunktion und Überrollsensor; Fahrzeugumfeld erfassen der Umfeldsensorik; Fahrzeugumgebung ausleuchten Scheinwerfer und Leuchten; Fahrersicht sicherstellen Scheibenwischanlage und Heckscheibenheizung; Betriebstemperatur regeln dem Kühlkreislauf; Innenraum klimatisieren Heiz- und Klimaanlage und Nackenheizung; Hydraulische Leistung bereitstellen Hydraulikaggregat und Hydraulikleitungen.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
-            "praemissen": ["P3", "P4", "P5", "P6", "P7", "P8", "P10", "P12", "P13", "P14", "P16", "P17", "P18", "P19", "P20"],
+            "praemissen": [
+              "P3",
+              "P4",
+              "P5",
+              "P6",
+              "P7",
+              "P8",
+              "P10",
+              "P12",
+              "P13",
+              "P14",
+              "P16",
+              "P17",
+              "P18",
+              "P19",
+              "P20"
+            ],
             "schluss": "Jede Funktion des Modellblocks hat ausführende Elemente."
           },
           "sicherheit": "hoch",
@@ -487,133 +622,1396 @@
   ],
   "modell": {
     "elemente": [
-      {"id": "E1", "name": "Cabriolet", "typ": "gesamtsystem", "eltern_id": null, "absatz_ids": ["P1", "P2", "P21"]},
-      {"id": "E2", "name": "Fahrzeugstruktur und Fahrwerk", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P3", "P4"], "kategorie": "struktur_fahrwerk"},
-      {"id": "E3", "name": "Karosseriestruktur", "typ": "subsystem", "eltern_id": "E2", "absatz_ids": ["P3", "P4"]},
-      {"id": "E4", "name": "Bodengruppe", "typ": "komponente", "eltern_id": "E3", "absatz_ids": ["P3", "P4"]},
-      {"id": "E5", "name": "Frontscheibenrahmen", "typ": "komponente", "eltern_id": "E3", "absatz_ids": ["P3", "P4"]},
-      {"id": "E7", "name": "Fahrwerk", "typ": "subsystem", "eltern_id": "E2", "absatz_ids": ["P4"]},
-      {"id": "E8", "name": "Radaufhängung", "typ": "komponente", "eltern_id": "E7", "absatz_ids": ["P4"]},
-      {"id": "E9", "name": "Räder und Reifen", "typ": "komponente", "eltern_id": "E7", "absatz_ids": ["P4"]},
-      {"id": "E10", "name": "Antriebssystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P5"], "kategorie": "antrieb"},
-      {"id": "E11", "name": "Antriebsmaschine", "typ": "komponente", "eltern_id": "E10", "absatz_ids": ["P5"]},
-      {"id": "E12", "name": "Getriebe", "typ": "komponente", "eltern_id": "E10", "absatz_ids": ["P5"]},
-      {"id": "E13", "name": "Antriebswellen", "typ": "komponente", "eltern_id": "E10", "absatz_ids": ["P5"]},
-      {"id": "E14", "name": "Energieversorgungssystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P6"], "kategorie": "energieversorgung"},
-      {"id": "E15", "name": "Kraftstofftank", "typ": "komponente", "eltern_id": "E14", "absatz_ids": ["P6"]},
-      {"id": "E16", "name": "Traktionsbatterie", "typ": "komponente", "eltern_id": "E14", "absatz_ids": ["P6"]},
-      {"id": "E17", "name": "Bordnetzbatterie", "typ": "komponente", "eltern_id": "E14", "absatz_ids": ["P6"]},
-      {"id": "E18", "name": "Lenksystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P7"], "kategorie": "lenkung"},
-      {"id": "E19", "name": "Lenkrad und Lenksäule", "typ": "komponente", "eltern_id": "E18", "absatz_ids": ["P7"]},
-      {"id": "E20", "name": "Lenkgetriebe", "typ": "komponente", "eltern_id": "E18", "absatz_ids": ["P7"]},
-      {"id": "E21", "name": "Lenkunterstützung", "typ": "komponente", "eltern_id": "E18", "absatz_ids": ["P7"]},
-      {"id": "E22", "name": "Bremssystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P8"], "kategorie": "bremse"},
-      {"id": "E23", "name": "Radbremsen", "typ": "komponente", "eltern_id": "E22", "absatz_ids": ["P8"]},
-      {"id": "E24", "name": "Bremsregeleinheit", "typ": "komponente", "eltern_id": "E22", "absatz_ids": ["P8"]},
-      {"id": "E25", "name": "Feststellbremse", "typ": "komponente", "eltern_id": "E22", "absatz_ids": ["P8"]},
-      {"id": "E26", "name": "Fahrgastraum", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P9", "P10"], "kategorie": "bedienraum"},
-      {"id": "E27", "name": "Verdecksystem", "typ": "subsystem", "eltern_id": "E26", "absatz_ids": ["P9", "P10"]},
-      {"id": "E28", "name": "Verdeckgestänge", "typ": "komponente", "eltern_id": "E27", "absatz_ids": ["P9", "P10"]},
-      {"id": "E29", "name": "Dachhaut", "typ": "komponente", "eltern_id": "E27", "absatz_ids": ["P9", "P10"]},
-      {"id": "E30", "name": "Heckscheibe", "typ": "komponente", "eltern_id": "E27", "absatz_ids": ["P9", "P10"]},
-      {"id": "E31", "name": "Verdeckverriegelung", "typ": "komponente", "eltern_id": "E27", "absatz_ids": ["P10"]},
-      {"id": "E32", "name": "Innenausstattung", "typ": "subsystem", "eltern_id": "E26", "absatz_ids": ["P10"]},
-      {"id": "E33", "name": "Sitzanlage", "typ": "komponente", "eltern_id": "E32", "absatz_ids": ["P10"]},
-      {"id": "E34", "name": "Bedien- und Anzeigeelemente", "typ": "komponente", "eltern_id": "E32", "absatz_ids": ["P10"]},
-      {"id": "E35", "name": "Windschott", "typ": "komponente", "eltern_id": "E32", "absatz_ids": ["P9", "P10"]},
-      {"id": "E36", "name": "Laderaum und Anhängevorrichtung", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P11", "P12"], "kategorie": "aufbau_nutzlast"},
-      {"id": "E37", "name": "Gepäckraum", "typ": "komponente", "eltern_id": "E36", "absatz_ids": ["P11", "P12"]},
-      {"id": "E38", "name": "Gepäckraumdeckel", "typ": "komponente", "eltern_id": "E36", "absatz_ids": ["P11", "P12"]},
-      {"id": "E39", "name": "Laderaumabtrennung", "typ": "komponente", "eltern_id": "E36", "absatz_ids": ["P11", "P12"]},
-      {"id": "E41", "name": "Elektrik und Elektronik", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P13"], "kategorie": "elektrik_elektronik"},
-      {"id": "E42", "name": "Leitungssatz", "typ": "komponente", "eltern_id": "E41", "absatz_ids": ["P13"]},
-      {"id": "E43", "name": "Steuergeräte", "typ": "komponente", "eltern_id": "E41", "absatz_ids": ["P13"]},
-      {"id": "E44", "name": "Kommunikationsnetz", "typ": "komponente", "eltern_id": "E41", "absatz_ids": ["P13"]},
-      {"id": "E45", "name": "Fahrzeugsteuerung und Information", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P14"], "kategorie": "steuerung_information"},
-      {"id": "E46", "name": "Verdecksteuerung", "typ": "komponente", "eltern_id": "E45", "absatz_ids": ["P14"]},
-      {"id": "E47", "name": "Energiemanagement", "typ": "komponente", "eltern_id": "E45", "absatz_ids": ["P14"]},
-      {"id": "E48", "name": "Diagnosefunktion", "typ": "komponente", "eltern_id": "E45", "absatz_ids": ["P14"]},
-      {"id": "E49", "name": "Fahrerassistenz und Sicherheit", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P15", "P16", "P17"], "kategorie": "assistenz_sicherheit"},
-      {"id": "E50", "name": "Überschlagschutzsystem", "typ": "subsystem", "eltern_id": "E49", "absatz_ids": ["P16", "P17"]},
-      {"id": "E51", "name": "Überrollsensor", "typ": "komponente", "eltern_id": "E50", "absatz_ids": ["P16", "P17"]},
-      {"id": "E52", "name": "Überrollbügel", "typ": "komponente", "eltern_id": "E50", "absatz_ids": ["P16", "P17"]},
-      {"id": "E53", "name": "Auslöseeinheit", "typ": "komponente", "eltern_id": "E50", "absatz_ids": ["P16", "P17"]},
-      {"id": "E54", "name": "Rückhaltesystem", "typ": "subsystem", "eltern_id": "E49", "absatz_ids": ["P17"]},
-      {"id": "E55", "name": "Sicherheitsgurte", "typ": "komponente", "eltern_id": "E54", "absatz_ids": ["P17"]},
-      {"id": "E56", "name": "Seitenairbags", "typ": "komponente", "eltern_id": "E54", "absatz_ids": ["P16", "P17"]},
-      {"id": "E57", "name": "Umfeldsensorik", "typ": "komponente", "eltern_id": "E49", "absatz_ids": ["P17"]},
-      {"id": "E58", "name": "Beleuchtung und Sicht", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P18"], "kategorie": "beleuchtung_sicht"},
-      {"id": "E59", "name": "Scheinwerfer und Leuchten", "typ": "komponente", "eltern_id": "E58", "absatz_ids": ["P18"]},
-      {"id": "E60", "name": "Scheibenwischanlage", "typ": "komponente", "eltern_id": "E58", "absatz_ids": ["P18"]},
-      {"id": "E61", "name": "Heckscheibenheizung", "typ": "komponente", "eltern_id": "E58", "absatz_ids": ["P18"]},
-      {"id": "E62", "name": "Thermomanagement", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P19"], "kategorie": "thermomanagement"},
-      {"id": "E63", "name": "Kühlkreislauf", "typ": "komponente", "eltern_id": "E62", "absatz_ids": ["P19"]},
-      {"id": "E64", "name": "Heiz- und Klimaanlage", "typ": "komponente", "eltern_id": "E62", "absatz_ids": ["P19"]},
-      {"id": "E65", "name": "Nackenheizung", "typ": "komponente", "eltern_id": "E62", "absatz_ids": ["P19"]},
-      {"id": "E66", "name": "Neben- und Versorgungssysteme", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P20"], "kategorie": "nebensysteme"},
-      {"id": "E67", "name": "Hydraulikaggregat", "typ": "komponente", "eltern_id": "E66", "absatz_ids": ["P20"]},
-      {"id": "E68", "name": "Hydraulikzylinder", "typ": "komponente", "eltern_id": "E66", "absatz_ids": ["P20"]},
-      {"id": "E69", "name": "Elektrische Stellmotoren", "typ": "komponente", "eltern_id": "E66", "absatz_ids": ["P20"]}
+      {
+        "id": "E1",
+        "name": "Cabriolet",
+        "typ": "gesamtsystem",
+        "eltern_id": null,
+        "absatz_ids": [
+          "P1",
+          "P2",
+          "P21"
+        ]
+      },
+      {
+        "id": "E2",
+        "name": "Fahrzeugstruktur und Fahrwerk",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P3",
+          "P4"
+        ],
+        "kategorie": "struktur_fahrwerk"
+      },
+      {
+        "id": "E3",
+        "name": "Karosseriestruktur",
+        "typ": "subsystem",
+        "eltern_id": "E2",
+        "absatz_ids": [
+          "P3",
+          "P4"
+        ]
+      },
+      {
+        "id": "E4",
+        "name": "Bodengruppe",
+        "typ": "komponente",
+        "eltern_id": "E3",
+        "absatz_ids": [
+          "P3",
+          "P4"
+        ]
+      },
+      {
+        "id": "E5",
+        "name": "Frontscheibenrahmen",
+        "typ": "komponente",
+        "eltern_id": "E3",
+        "absatz_ids": [
+          "P3",
+          "P4"
+        ]
+      },
+      {
+        "id": "E7",
+        "name": "Fahrwerk",
+        "typ": "subsystem",
+        "eltern_id": "E2",
+        "absatz_ids": [
+          "P4"
+        ]
+      },
+      {
+        "id": "E8",
+        "name": "Radaufhängung",
+        "typ": "komponente",
+        "eltern_id": "E7",
+        "absatz_ids": [
+          "P4"
+        ]
+      },
+      {
+        "id": "E9",
+        "name": "Räder und Reifen",
+        "typ": "komponente",
+        "eltern_id": "E7",
+        "absatz_ids": [
+          "P4"
+        ]
+      },
+      {
+        "id": "E10",
+        "name": "Antriebssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P5"
+        ],
+        "kategorie": "antrieb"
+      },
+      {
+        "id": "E11",
+        "name": "Antriebsmaschine",
+        "typ": "komponente",
+        "eltern_id": "E10",
+        "absatz_ids": [
+          "P5"
+        ]
+      },
+      {
+        "id": "E12",
+        "name": "Getriebe",
+        "typ": "komponente",
+        "eltern_id": "E10",
+        "absatz_ids": [
+          "P5"
+        ]
+      },
+      {
+        "id": "E13",
+        "name": "Antriebswellen",
+        "typ": "komponente",
+        "eltern_id": "E10",
+        "absatz_ids": [
+          "P5"
+        ]
+      },
+      {
+        "id": "E14",
+        "name": "Energieversorgungssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P6"
+        ],
+        "kategorie": "energieversorgung"
+      },
+      {
+        "id": "E15",
+        "name": "Kraftstofftank",
+        "typ": "komponente",
+        "eltern_id": "E14",
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "E16",
+        "name": "Traktionsbatterie",
+        "typ": "komponente",
+        "eltern_id": "E14",
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "E17",
+        "name": "Bordnetzbatterie",
+        "typ": "komponente",
+        "eltern_id": "E14",
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "E18",
+        "name": "Lenksystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P7"
+        ],
+        "kategorie": "lenkung"
+      },
+      {
+        "id": "E19",
+        "name": "Lenkrad und Lenksäule",
+        "typ": "komponente",
+        "eltern_id": "E18",
+        "absatz_ids": [
+          "P7"
+        ]
+      },
+      {
+        "id": "E20",
+        "name": "Lenkgetriebe",
+        "typ": "komponente",
+        "eltern_id": "E18",
+        "absatz_ids": [
+          "P7"
+        ]
+      },
+      {
+        "id": "E21",
+        "name": "Lenkunterstützung",
+        "typ": "komponente",
+        "eltern_id": "E18",
+        "absatz_ids": [
+          "P7"
+        ]
+      },
+      {
+        "id": "E22",
+        "name": "Bremssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P8"
+        ],
+        "kategorie": "bremse"
+      },
+      {
+        "id": "E23",
+        "name": "Radbremsen",
+        "typ": "komponente",
+        "eltern_id": "E22",
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "E24",
+        "name": "Bremsregeleinheit",
+        "typ": "komponente",
+        "eltern_id": "E22",
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "E25",
+        "name": "Feststellbremse",
+        "typ": "komponente",
+        "eltern_id": "E22",
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "E26",
+        "name": "Fahrgastraum",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P9",
+          "P10"
+        ],
+        "kategorie": "bedienraum"
+      },
+      {
+        "id": "E27",
+        "name": "Verdecksystem",
+        "typ": "subsystem",
+        "eltern_id": "E26",
+        "absatz_ids": [
+          "P9",
+          "P10",
+          "P21"
+        ]
+      },
+      {
+        "id": "E28",
+        "name": "Verdeckgestänge",
+        "typ": "komponente",
+        "eltern_id": "E27",
+        "absatz_ids": [
+          "P9",
+          "P10"
+        ]
+      },
+      {
+        "id": "E29",
+        "name": "Dachhaut",
+        "typ": "komponente",
+        "eltern_id": "E27",
+        "absatz_ids": [
+          "P9",
+          "P10"
+        ]
+      },
+      {
+        "id": "E30",
+        "name": "Heckscheibe",
+        "typ": "komponente",
+        "eltern_id": "E27",
+        "absatz_ids": [
+          "P9",
+          "P10"
+        ]
+      },
+      {
+        "id": "E31",
+        "name": "Verdeckverriegelung",
+        "typ": "komponente",
+        "eltern_id": "E27",
+        "absatz_ids": [
+          "P10"
+        ]
+      },
+      {
+        "id": "E71",
+        "name": "Verdeckklappe",
+        "typ": "komponente",
+        "eltern_id": "E27",
+        "absatz_ids": [
+          "P10",
+          "P11",
+          "P14"
+        ]
+      },
+      {
+        "id": "E73",
+        "name": "Dachdichtungen",
+        "typ": "komponente",
+        "eltern_id": "E27",
+        "absatz_ids": [
+          "P10"
+        ]
+      },
+      {
+        "id": "E70",
+        "name": "Verdeckantrieb",
+        "typ": "subsystem",
+        "eltern_id": "E27",
+        "absatz_ids": [
+          "P10",
+          "P20"
+        ]
+      },
+      {
+        "id": "E68",
+        "name": "Hydraulikzylinder",
+        "typ": "komponente",
+        "eltern_id": "E70",
+        "absatz_ids": [
+          "P10",
+          "P20"
+        ]
+      },
+      {
+        "id": "E69",
+        "name": "Elektrische Stellmotoren",
+        "typ": "komponente",
+        "eltern_id": "E70",
+        "absatz_ids": [
+          "P10",
+          "P20"
+        ]
+      },
+      {
+        "id": "E32",
+        "name": "Innenausstattung",
+        "typ": "subsystem",
+        "eltern_id": "E26",
+        "absatz_ids": [
+          "P10"
+        ]
+      },
+      {
+        "id": "E33",
+        "name": "Sitzanlage",
+        "typ": "komponente",
+        "eltern_id": "E32",
+        "absatz_ids": [
+          "P10"
+        ]
+      },
+      {
+        "id": "E34",
+        "name": "Bedien- und Anzeigeelemente",
+        "typ": "komponente",
+        "eltern_id": "E32",
+        "absatz_ids": [
+          "P10"
+        ]
+      },
+      {
+        "id": "E72",
+        "name": "Seitenscheiben und Fensterheber",
+        "typ": "komponente",
+        "eltern_id": "E32",
+        "absatz_ids": [
+          "P10",
+          "P14"
+        ]
+      },
+      {
+        "id": "E35",
+        "name": "Windschott",
+        "typ": "komponente",
+        "eltern_id": "E32",
+        "absatz_ids": [
+          "P9",
+          "P10"
+        ]
+      },
+      {
+        "id": "E36",
+        "name": "Laderaum und Anhängevorrichtung",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P11",
+          "P12"
+        ],
+        "kategorie": "aufbau_nutzlast"
+      },
+      {
+        "id": "E37",
+        "name": "Gepäckraum",
+        "typ": "komponente",
+        "eltern_id": "E36",
+        "absatz_ids": [
+          "P11",
+          "P12"
+        ]
+      },
+      {
+        "id": "E38",
+        "name": "Gepäckraumdeckel",
+        "typ": "komponente",
+        "eltern_id": "E36",
+        "absatz_ids": [
+          "P11",
+          "P12"
+        ]
+      },
+      {
+        "id": "E39",
+        "name": "Laderaumabtrennung",
+        "typ": "komponente",
+        "eltern_id": "E36",
+        "absatz_ids": [
+          "P11",
+          "P12"
+        ]
+      },
+      {
+        "id": "E41",
+        "name": "Elektrik und Elektronik",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P13"
+        ],
+        "kategorie": "elektrik_elektronik"
+      },
+      {
+        "id": "E42",
+        "name": "Leitungssatz",
+        "typ": "komponente",
+        "eltern_id": "E41",
+        "absatz_ids": [
+          "P13"
+        ]
+      },
+      {
+        "id": "E43",
+        "name": "Steuergeräte",
+        "typ": "komponente",
+        "eltern_id": "E41",
+        "absatz_ids": [
+          "P13"
+        ]
+      },
+      {
+        "id": "E44",
+        "name": "Kommunikationsnetz",
+        "typ": "komponente",
+        "eltern_id": "E41",
+        "absatz_ids": [
+          "P13"
+        ]
+      },
+      {
+        "id": "E45",
+        "name": "Fahrzeugsteuerung und Information",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P14"
+        ],
+        "kategorie": "steuerung_information"
+      },
+      {
+        "id": "E46",
+        "name": "Verdecksteuerung",
+        "typ": "komponente",
+        "eltern_id": "E45",
+        "absatz_ids": [
+          "P14"
+        ]
+      },
+      {
+        "id": "E47",
+        "name": "Energiemanagement",
+        "typ": "komponente",
+        "eltern_id": "E45",
+        "absatz_ids": [
+          "P14"
+        ]
+      },
+      {
+        "id": "E48",
+        "name": "Diagnosefunktion",
+        "typ": "komponente",
+        "eltern_id": "E45",
+        "absatz_ids": [
+          "P14"
+        ]
+      },
+      {
+        "id": "E49",
+        "name": "Fahrerassistenz und Sicherheit",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P15",
+          "P16",
+          "P17"
+        ],
+        "kategorie": "assistenz_sicherheit"
+      },
+      {
+        "id": "E50",
+        "name": "Überschlagschutzsystem",
+        "typ": "subsystem",
+        "eltern_id": "E49",
+        "absatz_ids": [
+          "P16",
+          "P17"
+        ]
+      },
+      {
+        "id": "E51",
+        "name": "Überrollsensor",
+        "typ": "komponente",
+        "eltern_id": "E50",
+        "absatz_ids": [
+          "P16",
+          "P17"
+        ]
+      },
+      {
+        "id": "E52",
+        "name": "Überrollbügel",
+        "typ": "komponente",
+        "eltern_id": "E50",
+        "absatz_ids": [
+          "P16",
+          "P17"
+        ]
+      },
+      {
+        "id": "E53",
+        "name": "Auslöseeinheit",
+        "typ": "komponente",
+        "eltern_id": "E50",
+        "absatz_ids": [
+          "P16",
+          "P17"
+        ]
+      },
+      {
+        "id": "E54",
+        "name": "Rückhaltesystem",
+        "typ": "subsystem",
+        "eltern_id": "E49",
+        "absatz_ids": [
+          "P17"
+        ]
+      },
+      {
+        "id": "E55",
+        "name": "Sicherheitsgurte",
+        "typ": "komponente",
+        "eltern_id": "E54",
+        "absatz_ids": [
+          "P17"
+        ]
+      },
+      {
+        "id": "E56",
+        "name": "Seitenairbags",
+        "typ": "komponente",
+        "eltern_id": "E54",
+        "absatz_ids": [
+          "P16",
+          "P17"
+        ]
+      },
+      {
+        "id": "E75",
+        "name": "Frontairbags",
+        "typ": "komponente",
+        "eltern_id": "E54",
+        "absatz_ids": [
+          "P17"
+        ]
+      },
+      {
+        "id": "E57",
+        "name": "Umfeldsensorik",
+        "typ": "komponente",
+        "eltern_id": "E49",
+        "absatz_ids": [
+          "P17"
+        ]
+      },
+      {
+        "id": "E58",
+        "name": "Beleuchtung und Sicht",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P18"
+        ],
+        "kategorie": "beleuchtung_sicht"
+      },
+      {
+        "id": "E59",
+        "name": "Scheinwerfer und Leuchten",
+        "typ": "komponente",
+        "eltern_id": "E58",
+        "absatz_ids": [
+          "P18"
+        ]
+      },
+      {
+        "id": "E60",
+        "name": "Scheibenwischanlage",
+        "typ": "komponente",
+        "eltern_id": "E58",
+        "absatz_ids": [
+          "P18"
+        ]
+      },
+      {
+        "id": "E61",
+        "name": "Heckscheibenheizung",
+        "typ": "komponente",
+        "eltern_id": "E58",
+        "absatz_ids": [
+          "P18"
+        ]
+      },
+      {
+        "id": "E62",
+        "name": "Thermomanagement",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P19"
+        ],
+        "kategorie": "thermomanagement"
+      },
+      {
+        "id": "E63",
+        "name": "Kühlkreislauf",
+        "typ": "komponente",
+        "eltern_id": "E62",
+        "absatz_ids": [
+          "P19"
+        ]
+      },
+      {
+        "id": "E64",
+        "name": "Heiz- und Klimaanlage",
+        "typ": "komponente",
+        "eltern_id": "E62",
+        "absatz_ids": [
+          "P19"
+        ]
+      },
+      {
+        "id": "E65",
+        "name": "Nackenheizung",
+        "typ": "komponente",
+        "eltern_id": "E62",
+        "absatz_ids": [
+          "P19"
+        ]
+      },
+      {
+        "id": "E66",
+        "name": "Neben- und Versorgungssysteme",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P20"
+        ],
+        "kategorie": "nebensysteme"
+      },
+      {
+        "id": "E67",
+        "name": "Hydraulikaggregat",
+        "typ": "komponente",
+        "eltern_id": "E66",
+        "absatz_ids": [
+          "P20"
+        ]
+      },
+      {
+        "id": "E74",
+        "name": "Hydraulikleitungen",
+        "typ": "komponente",
+        "eltern_id": "E66",
+        "absatz_ids": [
+          "P20"
+        ]
+      }
     ],
     "funktionen": [
-      {"id": "F1", "name": "Fahrzeuglasten tragen", "ausgefuehrt_von": ["E3", "E7"], "absatz_ids": ["P3", "P4"]},
-      {"id": "F2", "name": "Antriebsleistung erzeugen", "ausgefuehrt_von": ["E11"], "absatz_ids": ["P5"]},
-      {"id": "F3", "name": "Drehmoment übertragen", "ausgefuehrt_von": ["E12", "E13"], "absatz_ids": ["P5"]},
-      {"id": "F4", "name": "Fahrzeug fortbewegen", "ausgefuehrt_von": ["E10", "E9"], "absatz_ids": ["P5"]},
-      {"id": "F5", "name": "Bremsenergie zurückgewinnen", "ausgefuehrt_von": ["E11"], "absatz_ids": ["P5", "P8"]},
-      {"id": "F6", "name": "Energie speichern", "ausgefuehrt_von": ["E15", "E16", "E17"], "absatz_ids": ["P6"]},
-      {"id": "F7", "name": "Elektrische Energie verteilen", "ausgefuehrt_von": ["E42"], "absatz_ids": ["P13"]},
-      {"id": "F8", "name": "Daten übertragen", "ausgefuehrt_von": ["E44"], "absatz_ids": ["P13"]},
-      {"id": "F9", "name": "Fahrzeug lenken", "ausgefuehrt_von": ["E18"], "absatz_ids": ["P7"]},
-      {"id": "F10", "name": "Fahrzeug verzögern", "ausgefuehrt_von": ["E22"], "absatz_ids": ["P8"]},
-      {"id": "F11", "name": "Fahrereingaben erfassen", "ausgefuehrt_von": ["E34"], "absatz_ids": ["P10"]},
-      {"id": "F12", "name": "Fahrerinformationen anzeigen", "ausgefuehrt_von": ["E34"], "absatz_ids": ["P10"]},
-      {"id": "F13", "name": "Verdeck öffnen und schließen", "ausgefuehrt_von": ["E27", "E67", "E68", "E69", "E46"], "absatz_ids": ["P10", "P14", "P20"]},
-      {"id": "F14", "name": "Ladung aufnehmen", "ausgefuehrt_von": ["E37"], "absatz_ids": ["P11", "P12"]},
-      {"id": "F15", "name": "Insassen schützen", "ausgefuehrt_von": ["E50", "E54", "E5"], "absatz_ids": ["P16", "P17"]},
-      {"id": "F16", "name": "Fahrzeugzustand überwachen", "ausgefuehrt_von": ["E48", "E51"], "absatz_ids": ["P14", "P16"]},
-      {"id": "F17", "name": "Fahrzeugumfeld erfassen", "ausgefuehrt_von": ["E57"], "absatz_ids": ["P17"]},
-      {"id": "F18", "name": "Fahrzeugumgebung ausleuchten", "ausgefuehrt_von": ["E59"], "absatz_ids": ["P18"]},
-      {"id": "F19", "name": "Fahrersicht sicherstellen", "ausgefuehrt_von": ["E60", "E61"], "absatz_ids": ["P18"]},
-      {"id": "F20", "name": "Betriebstemperatur regeln", "ausgefuehrt_von": ["E63"], "absatz_ids": ["P19"]},
-      {"id": "F21", "name": "Innenraum klimatisieren", "ausgefuehrt_von": ["E64", "E65"], "absatz_ids": ["P19"]},
-      {"id": "F22", "name": "Hydraulische Leistung bereitstellen", "ausgefuehrt_von": ["E67"], "absatz_ids": ["P20"]}
+      {
+        "id": "F1",
+        "name": "Fahrzeuglasten tragen",
+        "ausgefuehrt_von": [
+          "E3",
+          "E7"
+        ],
+        "absatz_ids": [
+          "P3",
+          "P4"
+        ]
+      },
+      {
+        "id": "F2",
+        "name": "Antriebsleistung erzeugen",
+        "ausgefuehrt_von": [
+          "E11"
+        ],
+        "absatz_ids": [
+          "P5"
+        ]
+      },
+      {
+        "id": "F3",
+        "name": "Drehmoment übertragen",
+        "ausgefuehrt_von": [
+          "E12",
+          "E13"
+        ],
+        "absatz_ids": [
+          "P5"
+        ]
+      },
+      {
+        "id": "F4",
+        "name": "Fahrzeug fortbewegen",
+        "ausgefuehrt_von": [
+          "E10",
+          "E9"
+        ],
+        "absatz_ids": [
+          "P5"
+        ]
+      },
+      {
+        "id": "F5",
+        "name": "Bremsenergie zurückgewinnen",
+        "ausgefuehrt_von": [
+          "E11"
+        ],
+        "absatz_ids": [
+          "P5",
+          "P8"
+        ]
+      },
+      {
+        "id": "F6",
+        "name": "Energie speichern",
+        "ausgefuehrt_von": [
+          "E15",
+          "E16",
+          "E17"
+        ],
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "F7",
+        "name": "Elektrische Energie verteilen",
+        "ausgefuehrt_von": [
+          "E42"
+        ],
+        "absatz_ids": [
+          "P13"
+        ]
+      },
+      {
+        "id": "F8",
+        "name": "Daten übertragen",
+        "ausgefuehrt_von": [
+          "E44"
+        ],
+        "absatz_ids": [
+          "P13"
+        ]
+      },
+      {
+        "id": "F9",
+        "name": "Fahrzeug lenken",
+        "ausgefuehrt_von": [
+          "E18"
+        ],
+        "absatz_ids": [
+          "P7"
+        ]
+      },
+      {
+        "id": "F10",
+        "name": "Fahrzeug verzögern",
+        "ausgefuehrt_von": [
+          "E22"
+        ],
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "F11",
+        "name": "Fahrereingaben erfassen",
+        "ausgefuehrt_von": [
+          "E34"
+        ],
+        "absatz_ids": [
+          "P10"
+        ]
+      },
+      {
+        "id": "F12",
+        "name": "Fahrerinformationen anzeigen",
+        "ausgefuehrt_von": [
+          "E34"
+        ],
+        "absatz_ids": [
+          "P10"
+        ]
+      },
+      {
+        "id": "F13",
+        "name": "Verdeck öffnen und schließen",
+        "ausgefuehrt_von": [
+          "E27",
+          "E70",
+          "E67",
+          "E46"
+        ],
+        "absatz_ids": [
+          "P10",
+          "P14",
+          "P20"
+        ]
+      },
+      {
+        "id": "F14",
+        "name": "Ladung aufnehmen",
+        "ausgefuehrt_von": [
+          "E37"
+        ],
+        "absatz_ids": [
+          "P11",
+          "P12"
+        ]
+      },
+      {
+        "id": "F15",
+        "name": "Insassen schützen",
+        "ausgefuehrt_von": [
+          "E50",
+          "E54",
+          "E5"
+        ],
+        "absatz_ids": [
+          "P16",
+          "P17"
+        ]
+      },
+      {
+        "id": "F16",
+        "name": "Fahrzeugzustand überwachen",
+        "ausgefuehrt_von": [
+          "E48",
+          "E51"
+        ],
+        "absatz_ids": [
+          "P14",
+          "P16"
+        ]
+      },
+      {
+        "id": "F17",
+        "name": "Fahrzeugumfeld erfassen",
+        "ausgefuehrt_von": [
+          "E57"
+        ],
+        "absatz_ids": [
+          "P17"
+        ]
+      },
+      {
+        "id": "F18",
+        "name": "Fahrzeugumgebung ausleuchten",
+        "ausgefuehrt_von": [
+          "E59"
+        ],
+        "absatz_ids": [
+          "P18"
+        ]
+      },
+      {
+        "id": "F19",
+        "name": "Fahrersicht sicherstellen",
+        "ausgefuehrt_von": [
+          "E60",
+          "E61"
+        ],
+        "absatz_ids": [
+          "P18"
+        ]
+      },
+      {
+        "id": "F20",
+        "name": "Betriebstemperatur regeln",
+        "ausgefuehrt_von": [
+          "E63"
+        ],
+        "absatz_ids": [
+          "P19"
+        ]
+      },
+      {
+        "id": "F21",
+        "name": "Innenraum klimatisieren",
+        "ausgefuehrt_von": [
+          "E64",
+          "E65"
+        ],
+        "absatz_ids": [
+          "P19"
+        ]
+      },
+      {
+        "id": "F22",
+        "name": "Hydraulische Leistung bereitstellen",
+        "ausgefuehrt_von": [
+          "E67",
+          "E74"
+        ],
+        "absatz_ids": [
+          "P20"
+        ]
+      }
     ],
     "fluesse": [
-      {"id": "S1", "von": "E15", "nach": "E11", "art": "stoff", "medium": "Kraftstoff", "absatz_ids": ["P6", "P23"], "schnittstelle": "Kraftstoffversorgung Antriebsmaschine"},
-      {"id": "S2", "von": "E16", "nach": "E11", "art": "elektrisch", "medium": "Hochvolt-Gleichstrom", "absatz_ids": ["P6", "P23"], "schnittstelle": "Hochvoltanschluss Antrieb"},
-      {"id": "S3", "von": "E11", "nach": "E12", "art": "mechanisch", "medium": "Drehmoment", "absatz_ids": ["P5", "P23"]},
-      {"id": "S4", "von": "E12", "nach": "E13", "art": "mechanisch", "medium": "Drehmoment", "absatz_ids": ["P5", "P23"]},
-      {"id": "S5", "von": "E13", "nach": "E9", "art": "mechanisch", "medium": "Drehmoment", "absatz_ids": ["P5", "P23"], "schnittstelle": "Radnabe"},
-      {"id": "S6", "von": "E8", "nach": "E3", "art": "mechanisch", "medium": "Fahrbahnlasten", "absatz_ids": ["P4", "P23"]},
-      {"id": "S7", "von": "E28", "nach": "E3", "art": "mechanisch", "medium": "Verdecklasten", "absatz_ids": ["P4", "P23"], "schnittstelle": "Verdecklagerung"},
-      {"id": "S8", "von": "E17", "nach": "E42", "art": "elektrisch", "medium": "Bordnetzstrom", "absatz_ids": ["P6", "P13", "P23"], "schnittstelle": "Bordnetzanschluss"},
-      {"id": "S9", "von": "E42", "nach": "E67", "art": "elektrisch", "medium": "Bordnetzstrom", "absatz_ids": ["P13", "P20", "P23"], "schnittstelle": "Versorgungsanschluss Verdeckantrieb"},
-      {"id": "S10", "von": "E67", "nach": "E68", "art": "hydraulisch", "medium": "Hydrauliköl", "absatz_ids": ["P20", "P23"]},
-      {"id": "S11", "von": "E68", "nach": "E28", "art": "mechanisch", "medium": "Stellkraft", "absatz_ids": ["P20", "P23"], "schnittstelle": "Anlenkpunkt Verdeckgestänge"},
-      {"id": "S12", "von": "E34", "nach": "E46", "art": "information", "medium": "Verdeckbefehl", "absatz_ids": ["P10", "P14", "P23"], "schnittstelle": "Verdeckschalter"},
-      {"id": "S13", "von": "E46", "nach": "E67", "art": "information", "medium": "Ansteuersignal", "absatz_ids": ["P14", "P23"], "schnittstelle": "Ansteuerung Verdeckantrieb"},
-      {"id": "S14", "von": "E31", "nach": "E46", "art": "information", "medium": "Verriegelungs- und Endlagenstatus", "absatz_ids": ["P10", "P14", "P23"], "schnittstelle": "Verriegelungsschalter"},
-      {"id": "S15", "von": "E39", "nach": "E46", "art": "information", "medium": "Stellung Laderaumabtrennung", "absatz_ids": ["P12", "P14", "P23"], "schnittstelle": "Schalter Laderaumabtrennung"},
-      {"id": "S16", "von": "E27", "nach": "E37", "art": "mechanisch", "medium": "abgelegtes Verdeckpaket", "absatz_ids": ["P11", "P12"], "schnittstelle": "Verdeckkasten"},
-      {"id": "S17", "von": "E51", "nach": "E53", "art": "information", "medium": "Auslösesignal", "absatz_ids": ["P16", "P23"]},
-      {"id": "S18", "von": "E53", "nach": "E52", "art": "mechanisch", "medium": "Federenergie", "absatz_ids": ["P16", "P23"]},
-      {"id": "S19", "von": "E51", "nach": "E44", "art": "information", "medium": "Crashsignal", "absatz_ids": ["P13", "P16", "P23"], "schnittstelle": "Fahrzeugnetzwerk Sicherheit"},
-      {"id": "S20", "von": "E19", "nach": "E20", "art": "mechanisch", "medium": "Lenkmoment", "absatz_ids": ["P7"]},
-      {"id": "S21", "von": "E20", "nach": "E8", "art": "mechanisch", "medium": "Lenkkraft", "absatz_ids": ["P7"], "schnittstelle": "Spurstangenanbindung"},
-      {"id": "S22", "von": "E24", "nach": "E23", "art": "hydraulisch", "medium": "Bremsflüssigkeit", "absatz_ids": ["P8"]},
-      {"id": "S23", "von": "E57", "nach": "E43", "art": "information", "medium": "Umfelddaten", "absatz_ids": ["P17"]},
-      {"id": "S24", "von": "E43", "nach": "E24", "art": "information", "medium": "Bremsanforderung", "absatz_ids": ["P8", "P17"], "schnittstelle": "Fahrzeugnetzwerk Fahrwerk"},
-      {"id": "S25", "von": "E63", "nach": "E11", "art": "thermisch", "medium": "Kühlmittel", "absatz_ids": ["P19", "P23"], "schnittstelle": "Kühlmittelanschluss Antrieb"},
-      {"id": "S26", "von": "E65", "nach": "E33", "art": "thermisch", "medium": "Warmluft", "absatz_ids": ["P19", "P23"], "schnittstelle": "Luftaustritt Sitz"},
-      {"id": "S27", "von": "E64", "nach": "E26", "art": "thermisch", "medium": "temperierte Luft", "absatz_ids": ["P19", "P23"], "schnittstelle": "Luftausströmer"},
-      {"id": "S28", "von": "E61", "nach": "E30", "art": "thermisch", "medium": "Heizwärme", "absatz_ids": ["P18"]},
-      {"id": "S29", "von": "E42", "nach": "E59", "art": "elektrisch", "medium": "Bordnetzstrom", "absatz_ids": ["P13", "P18", "P23"], "schnittstelle": "Leuchtenanschluss"},
-      {"id": "S30", "von": "E44", "nach": "E48", "art": "information", "medium": "Fehler- und Zustandsdaten", "absatz_ids": ["P13", "P14"]},
-      {"id": "S31", "von": "E16", "nach": "E47", "art": "information", "medium": "Ladezustand", "absatz_ids": ["P6", "P14"], "schnittstelle": "Batteriezustandsdaten"},
-      {"id": "S32", "von": "E44", "nach": "E34", "art": "information", "medium": "Fahrer- und Warninformationen", "absatz_ids": ["P10", "P13"], "schnittstelle": "Anzeigeschnittstelle"},
-      {"id": "S33", "von": "E42", "nach": "E69", "art": "elektrisch", "medium": "Bordnetzstrom", "absatz_ids": ["P20", "P23"], "schnittstelle": "Versorgungsanschluss Stellmotoren"},
-      {"id": "S34", "von": "E69", "nach": "E38", "art": "mechanisch", "medium": "Stellkraft", "absatz_ids": ["P14", "P20"], "schnittstelle": "Antrieb Gepäckraumdeckel"}
+      {
+        "id": "S1",
+        "von": "E15",
+        "nach": "E11",
+        "art": "stoff",
+        "medium": "Kraftstoff",
+        "absatz_ids": [
+          "P6",
+          "P23"
+        ],
+        "schnittstelle": "Kraftstoffversorgung Antriebsmaschine"
+      },
+      {
+        "id": "S2",
+        "von": "E16",
+        "nach": "E11",
+        "art": "elektrisch",
+        "medium": "Hochvolt-Gleichstrom",
+        "absatz_ids": [
+          "P6",
+          "P23"
+        ],
+        "schnittstelle": "Hochvoltanschluss Antrieb"
+      },
+      {
+        "id": "S3",
+        "von": "E11",
+        "nach": "E12",
+        "art": "mechanisch",
+        "medium": "Drehmoment",
+        "absatz_ids": [
+          "P5",
+          "P23"
+        ]
+      },
+      {
+        "id": "S4",
+        "von": "E12",
+        "nach": "E13",
+        "art": "mechanisch",
+        "medium": "Drehmoment",
+        "absatz_ids": [
+          "P5",
+          "P23"
+        ]
+      },
+      {
+        "id": "S5",
+        "von": "E13",
+        "nach": "E9",
+        "art": "mechanisch",
+        "medium": "Drehmoment",
+        "absatz_ids": [
+          "P5",
+          "P23"
+        ],
+        "schnittstelle": "Radnabe"
+      },
+      {
+        "id": "S6",
+        "von": "E8",
+        "nach": "E3",
+        "art": "mechanisch",
+        "medium": "Fahrbahnlasten",
+        "absatz_ids": [
+          "P4",
+          "P23"
+        ]
+      },
+      {
+        "id": "S7",
+        "von": "E28",
+        "nach": "E3",
+        "art": "mechanisch",
+        "medium": "Verdecklasten",
+        "absatz_ids": [
+          "P4",
+          "P23"
+        ],
+        "schnittstelle": "Verdecklagerung"
+      },
+      {
+        "id": "S8",
+        "von": "E17",
+        "nach": "E42",
+        "art": "elektrisch",
+        "medium": "Bordnetzstrom",
+        "absatz_ids": [
+          "P6",
+          "P13",
+          "P23"
+        ],
+        "schnittstelle": "Bordnetzanschluss"
+      },
+      {
+        "id": "S9",
+        "von": "E42",
+        "nach": "E67",
+        "art": "elektrisch",
+        "medium": "Bordnetzstrom",
+        "absatz_ids": [
+          "P13",
+          "P20",
+          "P23"
+        ],
+        "schnittstelle": "Versorgungsanschluss Verdeckantrieb"
+      },
+      {
+        "id": "S10",
+        "von": "E67",
+        "nach": "E74",
+        "art": "hydraulisch",
+        "medium": "Hydrauliköl",
+        "absatz_ids": [
+          "P20",
+          "P23"
+        ],
+        "schnittstelle": "Hydraulikanschluss Aggregat"
+      },
+      {
+        "id": "S11",
+        "von": "E68",
+        "nach": "E28",
+        "art": "mechanisch",
+        "medium": "Stellkraft",
+        "absatz_ids": [
+          "P20",
+          "P23"
+        ],
+        "schnittstelle": "Anlenkpunkt Verdeckgestänge"
+      },
+      {
+        "id": "S12",
+        "von": "E34",
+        "nach": "E46",
+        "art": "information",
+        "medium": "Verdeckbefehl",
+        "absatz_ids": [
+          "P10",
+          "P14",
+          "P23"
+        ],
+        "schnittstelle": "Verdeckschalter"
+      },
+      {
+        "id": "S13",
+        "von": "E46",
+        "nach": "E67",
+        "art": "information",
+        "medium": "Ansteuersignal",
+        "absatz_ids": [
+          "P14",
+          "P23"
+        ],
+        "schnittstelle": "Ansteuerung Verdeckantrieb"
+      },
+      {
+        "id": "S14",
+        "von": "E31",
+        "nach": "E46",
+        "art": "information",
+        "medium": "Verriegelungs- und Endlagenstatus",
+        "absatz_ids": [
+          "P10",
+          "P14",
+          "P23"
+        ],
+        "schnittstelle": "Verriegelungsschalter"
+      },
+      {
+        "id": "S15",
+        "von": "E39",
+        "nach": "E46",
+        "art": "information",
+        "medium": "Stellung Laderaumabtrennung",
+        "absatz_ids": [
+          "P12",
+          "P14",
+          "P23"
+        ],
+        "schnittstelle": "Schalter Laderaumabtrennung"
+      },
+      {
+        "id": "S16",
+        "von": "E27",
+        "nach": "E37",
+        "art": "mechanisch",
+        "medium": "abgelegtes Verdeckpaket",
+        "absatz_ids": [
+          "P11",
+          "P12"
+        ],
+        "schnittstelle": "Verdeckkasten"
+      },
+      {
+        "id": "S17",
+        "von": "E51",
+        "nach": "E53",
+        "art": "information",
+        "medium": "Auslösesignal",
+        "absatz_ids": [
+          "P16",
+          "P23"
+        ]
+      },
+      {
+        "id": "S18",
+        "von": "E53",
+        "nach": "E52",
+        "art": "mechanisch",
+        "medium": "Federenergie",
+        "absatz_ids": [
+          "P16",
+          "P23"
+        ]
+      },
+      {
+        "id": "S19",
+        "von": "E51",
+        "nach": "E44",
+        "art": "information",
+        "medium": "Crashsignal",
+        "absatz_ids": [
+          "P13",
+          "P16",
+          "P23"
+        ],
+        "schnittstelle": "Fahrzeugnetzwerk Sicherheit"
+      },
+      {
+        "id": "S20",
+        "von": "E19",
+        "nach": "E20",
+        "art": "mechanisch",
+        "medium": "Lenkmoment",
+        "absatz_ids": [
+          "P7"
+        ]
+      },
+      {
+        "id": "S21",
+        "von": "E20",
+        "nach": "E8",
+        "art": "mechanisch",
+        "medium": "Lenkkraft",
+        "absatz_ids": [
+          "P7"
+        ],
+        "schnittstelle": "Spurstangenanbindung"
+      },
+      {
+        "id": "S22",
+        "von": "E24",
+        "nach": "E23",
+        "art": "hydraulisch",
+        "medium": "Bremsflüssigkeit",
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "S23",
+        "von": "E57",
+        "nach": "E43",
+        "art": "information",
+        "medium": "Umfelddaten",
+        "absatz_ids": [
+          "P17"
+        ]
+      },
+      {
+        "id": "S24",
+        "von": "E43",
+        "nach": "E24",
+        "art": "information",
+        "medium": "Bremsanforderung",
+        "absatz_ids": [
+          "P8",
+          "P17"
+        ],
+        "schnittstelle": "Fahrzeugnetzwerk Fahrwerk"
+      },
+      {
+        "id": "S25",
+        "von": "E63",
+        "nach": "E11",
+        "art": "thermisch",
+        "medium": "Kühlmittel",
+        "absatz_ids": [
+          "P19"
+        ],
+        "schnittstelle": "Kühlmittelanschluss Antrieb"
+      },
+      {
+        "id": "S26",
+        "von": "E65",
+        "nach": "E33",
+        "art": "thermisch",
+        "medium": "Warmluft",
+        "absatz_ids": [
+          "P19"
+        ],
+        "schnittstelle": "Luftaustritt Sitz"
+      },
+      {
+        "id": "S27",
+        "von": "E64",
+        "nach": "E26",
+        "art": "thermisch",
+        "medium": "temperierte Luft",
+        "absatz_ids": [
+          "P19"
+        ],
+        "schnittstelle": "Luftausströmer"
+      },
+      {
+        "id": "S28",
+        "von": "E61",
+        "nach": "E30",
+        "art": "thermisch",
+        "medium": "Heizwärme",
+        "absatz_ids": [
+          "P18"
+        ]
+      },
+      {
+        "id": "S29",
+        "von": "E42",
+        "nach": "E59",
+        "art": "elektrisch",
+        "medium": "Bordnetzstrom",
+        "absatz_ids": [
+          "P13",
+          "P18",
+          "P23"
+        ],
+        "schnittstelle": "Leuchtenanschluss"
+      },
+      {
+        "id": "S30",
+        "von": "E44",
+        "nach": "E48",
+        "art": "information",
+        "medium": "Fehler- und Zustandsdaten",
+        "absatz_ids": [
+          "P13",
+          "P14"
+        ]
+      },
+      {
+        "id": "S31",
+        "von": "E16",
+        "nach": "E47",
+        "art": "information",
+        "medium": "Ladezustand",
+        "absatz_ids": [
+          "P6",
+          "P14"
+        ],
+        "schnittstelle": "Batteriezustandsdaten"
+      },
+      {
+        "id": "S32",
+        "von": "E44",
+        "nach": "E34",
+        "art": "information",
+        "medium": "Fahrer- und Warninformationen",
+        "absatz_ids": [
+          "P10",
+          "P13"
+        ],
+        "schnittstelle": "Anzeigeschnittstelle"
+      },
+      {
+        "id": "S33",
+        "von": "E42",
+        "nach": "E69",
+        "art": "elektrisch",
+        "medium": "Bordnetzstrom",
+        "absatz_ids": [
+          "P20",
+          "P23"
+        ],
+        "schnittstelle": "Versorgungsanschluss Stellmotoren"
+      },
+      {
+        "id": "S34",
+        "von": "E69",
+        "nach": "E38",
+        "art": "mechanisch",
+        "medium": "Stellkraft",
+        "absatz_ids": [
+          "P14",
+          "P20"
+        ],
+        "schnittstelle": "Antrieb Gepäckraumdeckel"
+      },
+      {
+        "id": "S35",
+        "von": "E74",
+        "nach": "E68",
+        "art": "hydraulisch",
+        "medium": "Hydrauliköl",
+        "absatz_ids": [
+          "P20",
+          "P23"
+        ],
+        "schnittstelle": "Hydraulikanschluss Verdeckantrieb"
+      },
+      {
+        "id": "S36",
+        "von": "E68",
+        "nach": "E71",
+        "art": "mechanisch",
+        "medium": "Stellkraft",
+        "absatz_ids": [
+          "P10",
+          "P20"
+        ]
+      },
+      {
+        "id": "S37",
+        "von": "E46",
+        "nach": "E72",
+        "art": "information",
+        "medium": "Ansteuersignal",
+        "absatz_ids": [
+          "P14",
+          "P23"
+        ],
+        "schnittstelle": "Ansteuerung Fensterheber"
+      },
+      {
+        "id": "S38",
+        "von": "E25",
+        "nach": "E46",
+        "art": "information",
+        "medium": "Stillstands- und Feststellbremsstatus",
+        "absatz_ids": [
+          "P8",
+          "P14",
+          "P23"
+        ],
+        "schnittstelle": "Fahrzeugnetzwerk Fahrwerk-Karosserie"
+      }
     ],
     "entfallene_kategorien": [],
     "varianten": [
@@ -621,109 +2019,612 @@
         "id": "V1",
         "element_id": "E27",
         "bezeichnung": "Dachbauart",
-        "alternativen": ["Stoffverdeck", "versenkbares Hardtop (Coupé-Cabriolet)", "abnehmbares Hardtop"],
-        "auswahlkriterien": ["Gepäckraumvolumen bei offenem Dach", "Masse und Schwerpunktlage", "Geräusch- und Witterungsschutz", "Kosten und mechanische Komplexität", "Verschleiß und Vandalismusschutz"],
-        "auswirkungen": [
-          {"element_id": "E37", "beschreibung": "Versenkbares Hardtop braucht mehr Ablageraum im Gepäckraum."},
-          {"element_id": "E38", "beschreibung": "Versenkbares Hardtop erfordert häufig einen doppelt angeschlagenen Gepäckraumdeckel."},
-          {"element_id": "E39", "beschreibung": "Laderaumabtrennung zum Schutz der Dachbewegung bei versenkbaren Bauarten."},
-          {"element_id": "E66", "beschreibung": "Automatisch betätigte Dächer benötigen Hydraulikaggregat oder Stellmotoren; abnehmbares Hardtop keinen Antrieb."},
-          {"element_id": "E3", "beschreibung": "Masse des Dachs und Lagerkräfte beeinflussen Versteifung und Verdecklagerung."}
+        "alternativen": [
+          "Stoffverdeck",
+          "versenkbares Hardtop (Coupé-Cabriolet)",
+          "abnehmbares Hardtop"
         ],
-        "absatz_ids": ["P1", "P9", "P11"]
+        "auswahlkriterien": [
+          "Gepäckraumvolumen bei offenem Dach",
+          "Masse und Schwerpunktlage",
+          "Geräusch- und Witterungsschutz",
+          "Kosten und mechanische Komplexität",
+          "Verschleiß und Vandalismusschutz"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E37",
+            "beschreibung": "Versenkbares Hardtop braucht mehr Ablageraum im Gepäckraum."
+          },
+          {
+            "element_id": "E38",
+            "beschreibung": "Versenkbares Hardtop erfordert häufig einen doppelt angeschlagenen Gepäckraumdeckel."
+          },
+          {
+            "element_id": "E39",
+            "beschreibung": "Laderaumabtrennung zum Schutz der Dachbewegung bei versenkbaren Bauarten."
+          },
+          {
+            "element_id": "E66",
+            "beschreibung": "Automatisch betätigte Dächer benötigen Hydraulikaggregat oder Stellmotoren; abnehmbares Hardtop keinen Antrieb."
+          },
+          {
+            "element_id": "E3",
+            "beschreibung": "Masse des Dachs und Lagerkräfte beeinflussen Versteifung und Verdecklagerung."
+          }
+        ],
+        "absatz_ids": [
+          "P1",
+          "P9",
+          "P11"
+        ]
       },
       {
         "id": "V2",
         "element_id": "E3",
-        "bezeichnung": "Versteifungskonzept der Karosserie",
-        "alternativen": ["Vollcabriolet mit verstärkter Bodengruppe und verstärktem Frontscheibenrahmen", "Cabriolet mit festem Überrollbügel", "Cabriolimousine mit stehenden Tür- und Fensterrahmen"],
-        "auswahlkriterien": ["gewünschtes Offenfahrgefühl", "Torsionssteifigkeit", "Fahrzeugmasse", "Insassenschutz beim Überschlag"],
-        "auswirkungen": [
-          {"element_id": "E50", "beschreibung": "Fester Überrollbügel ersetzt oder ergänzt ein aktives Überschlagschutzsystem."},
-          {"element_id": "E27", "beschreibung": "Bei stehenden Seitenrahmen schrumpft das Verdeck auf den Dachmittelteil."},
-          {"element_id": "E7", "beschreibung": "Mehrmasse aus Verstärkungen verlangt Abstimmung des Fahrwerks."}
+        "bezeichnung": "Versteifungsmaßnahmen der Karosserie",
+        "alternativen": [
+          "Versteifung über Bodengruppe und Frontscheibenrahmen",
+          "zusätzlich fester Überrollbügel als Strukturelement",
+          "stehende Tür- und Fensterrahmen (Cabriolimousine)"
         ],
-        "absatz_ids": ["P3", "P4"]
+        "auswahlkriterien": [
+          "gewünschtes Offenfahrgefühl",
+          "Torsionssteifigkeit",
+          "Fahrzeugmasse",
+          "Insassenschutz beim Überschlag"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E27",
+            "beschreibung": "Bei stehenden Seitenrahmen schrumpft das Verdeck auf den Dachmittelteil."
+          },
+          {
+            "element_id": "E7",
+            "beschreibung": "Mehrmasse aus Verstärkungen verlangt Abstimmung des Fahrwerks."
+          }
+        ],
+        "absatz_ids": [
+          "P3",
+          "P4"
+        ]
       },
       {
         "id": "V3",
         "element_id": "E50",
         "bezeichnung": "Art des Überschlagschutzes",
-        "alternativen": ["fester Überrollbügel", "im Bedarfsfall ausfahrende Überrollbügel oder Kopfstützen mit Federauslösung", "pyrotechnisch ausgelöste Überrollbügel"],
-        "auswahlkriterien": ["Erscheinungsbild bei offenem Dach", "Bauraum hinter den Sitzen", "Auslösezeit und Funktionssicherheit", "Diagnosefähigkeit"],
-        "auswirkungen": [
-          {"element_id": "E41", "beschreibung": "Aktive Systeme benötigen Überrollsensor, Leitungen und Netzanbindung."},
-          {"element_id": "E48", "beschreibung": "Aktive Systeme erfordern Eigendiagnose und Fehleranzeige."},
-          {"element_id": "E27", "beschreibung": "Fester Bügel begrenzt Kinematik und Ablageraum des Verdecks."},
-          {"element_id": "E33", "beschreibung": "Ausfahrende Kopfstützen sind in die Sitzanlage integriert."}
+        "alternativen": [
+          "fester Überrollbügel",
+          "im Bedarfsfall ausfahrende Überrollbügel oder Kopfstützen mit Federauslösung",
+          "pyrotechnisch ausgelöste Überrollbügel"
         ],
-        "absatz_ids": ["P3", "P16", "P17"]
+        "auswahlkriterien": [
+          "Erscheinungsbild bei offenem Dach",
+          "Bauraum hinter den Sitzen",
+          "Auslösezeit und Funktionssicherheit",
+          "Diagnosefähigkeit"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E41",
+            "beschreibung": "Aktive Systeme benötigen Überrollsensor, Leitungen und Netzanbindung."
+          },
+          {
+            "element_id": "E48",
+            "beschreibung": "Aktive Systeme erfordern Eigendiagnose und Fehleranzeige."
+          },
+          {
+            "element_id": "E27",
+            "beschreibung": "Fester Bügel begrenzt Kinematik und Ablageraum des Verdecks."
+          },
+          {
+            "element_id": "E33",
+            "beschreibung": "Ausfahrende Kopfstützen sind in die Sitzanlage integriert."
+          }
+        ],
+        "absatz_ids": [
+          "P3",
+          "P16",
+          "P17"
+        ]
       },
       {
         "id": "V4",
-        "element_id": "E66",
+        "element_id": "E70",
         "bezeichnung": "Betätigungsart des Verdecks",
-        "alternativen": ["manuell mit Federunterstützung", "elektrohydraulisch", "elektromechanisch"],
-        "auswahlkriterien": ["Bedienkomfort", "Masse und Bauraum", "Geräusch und Bewegungsdauer", "Kosten"],
-        "auswirkungen": [
-          {"element_id": "E46", "beschreibung": "Automatische Betätigung erfordert eine Verdecksteuerung mit Sensorik."},
-          {"element_id": "E42", "beschreibung": "Leitungssatz muss den Verdeckantrieb versorgen."},
-          {"element_id": "E17", "beschreibung": "Bordnetzbatterie trägt die kurzzeitige Last des Verdeckantriebs."}
+        "alternativen": [
+          "manuell mit Federunterstützung",
+          "elektrohydraulisch",
+          "elektromechanisch"
         ],
-        "absatz_ids": ["P20"]
+        "auswahlkriterien": [
+          "Bedienkomfort",
+          "Masse und Bauraum",
+          "Geräusch und Bewegungsdauer",
+          "Kosten"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E46",
+            "beschreibung": "Automatische Betätigung erfordert eine Verdecksteuerung mit Sensorik."
+          },
+          {
+            "element_id": "E42",
+            "beschreibung": "Leitungssatz muss den Verdeckantrieb versorgen."
+          },
+          {
+            "element_id": "E17",
+            "beschreibung": "Bordnetzbatterie trägt die kurzzeitige Last des Verdeckantriebs."
+          },
+          {
+            "element_id": "E66",
+            "beschreibung": "Elektrohydraulische Betätigung erfordert Hydraulikaggregat und Hydraulikleitungen; bei elektromechanischer oder manueller Betätigung entfallen sie."
+          }
+        ],
+        "absatz_ids": [
+          "P20"
+        ]
       },
       {
         "id": "V5",
         "element_id": "E10",
         "bezeichnung": "Antriebsart",
-        "alternativen": ["verbrennungsmotorisch", "elektrisch"],
-        "auswahlkriterien": ["Bauraum im Unterboden", "Reichweite", "Fahrzeugmasse", "Übernahme vom Basisfahrzeug"],
-        "auswirkungen": [
-          {"element_id": "E14", "beschreibung": "Traktionsbatterie statt Kraftstofftank."},
-          {"element_id": "E4", "beschreibung": "Traktionsbatterie im Unterboden konkurriert mit den Verstärkungen der Bodengruppe."},
-          {"element_id": "E62", "beschreibung": "Zusätzlicher Temperierkreis für die Traktionsbatterie."},
-          {"element_id": "E22", "beschreibung": "Aufteilung der Bremskraft zwischen Rückgewinnung und Radbremsen."}
+        "alternativen": [
+          "verbrennungsmotorisch",
+          "elektrisch"
         ],
-        "absatz_ids": ["P5", "P6"]
+        "auswahlkriterien": [
+          "Bauraum im Unterboden",
+          "Reichweite",
+          "Fahrzeugmasse",
+          "Übernahme vom Basisfahrzeug"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E14",
+            "beschreibung": "Traktionsbatterie statt Kraftstofftank."
+          },
+          {
+            "element_id": "E4",
+            "beschreibung": "Traktionsbatterie im Unterboden konkurriert mit den Verstärkungen der Bodengruppe."
+          },
+          {
+            "element_id": "E62",
+            "beschreibung": "Zusätzlicher Temperierkreis für die Traktionsbatterie."
+          },
+          {
+            "element_id": "E22",
+            "beschreibung": "Aufteilung der Bremskraft zwischen Rückgewinnung und Radbremsen."
+          },
+          {
+            "element_id": "E3",
+            "beschreibung": "Batteriegehäuse als tragendes oder nicht tragendes Element der Bodengruppe."
+          }
+        ],
+        "absatz_ids": [
+          "P5",
+          "P6"
+        ]
+      },
+      {
+        "id": "V6",
+        "element_id": "E26",
+        "bezeichnung": "Sitzanordnung",
+        "alternativen": [
+          "Zweisitzer",
+          "Zwei-plus-zwei- oder Viersitzer"
+        ],
+        "auswahlkriterien": [
+          "Nutzungsprofil",
+          "Verdecklänge und Teilezahl des Dachs",
+          "Bauraum hinter den Sitzen"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E27",
+            "beschreibung": "Verdecklänge, Kinematik und Teilezahl des Dachs."
+          },
+          {
+            "element_id": "E50",
+            "beschreibung": "Lage der Überrollbügel hinter Vorder- oder Fondsitzen."
+          },
+          {
+            "element_id": "E37",
+            "beschreibung": "Verbleibender Ablage- und Gepäckraum."
+          },
+          {
+            "element_id": "E3",
+            "beschreibung": "Radstand und Umfang der Versteifung."
+          }
+        ],
+        "absatz_ids": [
+          "P10"
+        ]
       }
     ],
     "klaerungsfragen": [
-      {"id": "K1", "frage": "Soll das Dach als Stoffverdeck, als versenkbares Hardtop oder als abnehmbares Hardtop ausgeführt werden?", "element_ids": ["E27"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Ablageraum, Gepäckraumdeckel, Verdeckantrieb und Masse ab.", "variante_ids": ["V1"]},
-      {"id": "K2", "frage": "Wird ein Vollcabriolet ohne stehende Dachrahmen verlangt, oder sind ein fester Überrollbügel oder stehende Seitenrahmen zulässig?", "element_ids": ["E3", "E2"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Umfang der Versteifung, Verdeckgröße und Überschlagschutz ab.", "variante_ids": ["V2"]},
-      {"id": "K3", "frage": "Welche Torsionssteifigkeit wird im Verhältnis zum geschlossenen Basisfahrzeug gefordert?", "element_ids": ["E3"], "anlass": "anforderung", "relevanz": "Davon hängen Art und Masse der Verstärkungen in Bodengruppe und Frontscheibenrahmen ab."},
-      {"id": "K4", "frage": "Soll der Überschlagschutz durch feste Überrollbügel, durch federausgelöste ausfahrende Bügel oder Kopfstützen oder pyrotechnisch erfolgen?", "element_ids": ["E50", "E49"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Sensorik, Diagnose, Bauraum hinter den Sitzen und Verdeckkinematik ab.", "variante_ids": ["V3"]},
-      {"id": "K5", "frage": "Für welche Zielmärkte und Überschlagprüfungen muss der Insassenschutz des offenen Fahrzeugs nachgewiesen werden?", "element_ids": ["E49", "E5"], "anlass": "anforderung", "relevanz": "Davon hängen Auslegung von Frontscheibenrahmen und Überschlagschutzsystem ab."},
-      {"id": "K6", "frage": "Soll das Verdeck von Hand, elektrohydraulisch oder elektromechanisch betätigt werden?", "element_ids": ["E66", "E46"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Hydraulikaggregat oder Stellmotoren, Verdecksteuerung und Bordnetzlast ab.", "variante_ids": ["V4"]},
-      {"id": "K7", "frage": "Wird das Cabriolet mit Verbrennungsmotor, mit elektrischem Antrieb oder in beiden Antriebsarten angeboten?", "element_ids": ["E10", "E14"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Energiespeicher, Unterbodenstruktur und Thermomanagement ab.", "variante_ids": ["V5"]},
-      {"id": "K8", "frage": "Wo dürfen Kraftstofftank oder Traktionsbatterie liegen, ohne Bodengruppenverstärkung und Verdeckablage zu beeinträchtigen?", "element_ids": ["E14", "E4"], "anlass": "schnittstelle", "relevanz": "Davon hängen Bauraumaufteilung und Lastpfad im Unterboden ab."},
-      {"id": "K9", "frage": "Ist das Lenksystem unverändert vom Basisfahrzeug zu übernehmen, oder sind Maßnahmen gegen Lenkradschwingungen vorzusehen?", "element_ids": ["E18", "E19"], "anlass": "anforderung", "relevanz": "Davon hängen Lenksäulenlagerung und Abstimmungsaufwand ab."},
-      {"id": "K10", "frage": "Darf die Verdeckbewegung nur im Stillstand mit angezogener Feststellbremse oder auch bei langsamer Fahrt ausgelöst werden?", "element_ids": ["E22", "E46"], "anlass": "betrieb", "relevanz": "Davon hängen Freigabebedingungen der Verdecksteuerung und benötigte Signale aus dem Bremssystem ab."},
-      {"id": "K11", "frage": "Soll der Fahrgastraum nur zwei Sitze oder zusätzlich Fondsitze erhalten, die das Verdeck überdecken muss?", "element_ids": ["E26", "E27"], "anlass": "anforderung", "relevanz": "Davon hängen Verdecklänge, Kinematik und Ablageraum ab."},
-      {"id": "K12", "frage": "Welches Gepäckraumvolumen muss bei abgelegtem Verdeck mindestens verfügbar bleiben?", "element_ids": ["E36", "E37"], "anlass": "anforderung", "relevanz": "Davon hängen Dachbauart, Verdeckpaket und Laderaumabtrennung ab."},
-      {"id": "K13", "frage": "Erhält die Verdeckelektronik ein eigenes Steuergerät, oder wird sie in ein vorhandenes Karosseriesteuergerät integriert?", "element_ids": ["E41", "E43", "E46"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Leitungssatz, Netzanbindung und Variantenaufwand gegenüber dem Basisfahrzeug ab."},
-      {"id": "K14", "frage": "Soll das Verdeck auch aus der Ferne über den Fahrzeugschlüssel geöffnet und geschlossen werden können?", "element_ids": ["E45", "E46"], "anlass": "betrieb", "relevanz": "Davon hängen Absicherungslogik, Zugangssystem und Freigabebedingungen ab."},
-      {"id": "K15", "frage": "Soll die Heckscheibe des Verdecks aus Glas mit Heckscheibenheizung oder aus Kunststoff ausgeführt werden?", "element_ids": ["E58", "E30", "E61"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Faltbarkeit des Verdecks, Sicht nach hinten und elektrische Leitungsführung ab."},
-      {"id": "K16", "frage": "Soll die Klimatisierung für offenes Fahren zusätzliche körpernahe Luftführungen wie eine Nackenheizung erhalten?", "element_ids": ["E62", "E65"], "anlass": "anforderung", "relevanz": "Davon hängen Sitzaufbau, Luftkanäle und elektrische Last ab."}
+      {
+        "id": "K1",
+        "frage": "Soll das Dach als Stoffverdeck, als versenkbares Hardtop oder als abnehmbares Hardtop ausgeführt werden?",
+        "element_ids": [
+          "E27"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Ablageraum, Gepäckraumdeckel, Verdeckantrieb und Masse ab.",
+        "variante_ids": [
+          "V1"
+        ]
+      },
+      {
+        "id": "K2",
+        "frage": "Darf die Karosserie oberhalb der Gürtellinie stehende Strukturteile wie Tür- und Fensterrahmen oder einen tragenden Bügel behalten, oder muss die Steifigkeit allein über Unterbau und Frontscheibenrahmen erreicht werden?",
+        "element_ids": [
+          "E3",
+          "E2"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Umfang der Versteifung, Verdeckgröße und Mehrmasse ab.",
+        "variante_ids": [
+          "V2"
+        ]
+      },
+      {
+        "id": "K3",
+        "frage": "Welche Torsionssteifigkeit wird im Verhältnis zum geschlossenen Basisfahrzeug gefordert?",
+        "element_ids": [
+          "E3"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Art und Masse der Verstärkungen in Bodengruppe und Frontscheibenrahmen ab."
+      },
+      {
+        "id": "K4",
+        "frage": "Soll der Überschlagschutz durch feste Überrollbügel, durch federausgelöste ausfahrende Bügel oder Kopfstützen oder pyrotechnisch erfolgen?",
+        "element_ids": [
+          "E50",
+          "E49"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Sensorik, Diagnose, Bauraum hinter den Sitzen und Verdeckkinematik ab.",
+        "variante_ids": [
+          "V3"
+        ]
+      },
+      {
+        "id": "K5",
+        "frage": "Für welche Zielmärkte und Überschlagprüfungen muss der Insassenschutz des offenen Fahrzeugs nachgewiesen werden?",
+        "element_ids": [
+          "E49",
+          "E5"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Auslegung von Frontscheibenrahmen und Überschlagschutzsystem ab."
+      },
+      {
+        "id": "K6",
+        "frage": "Soll das Verdeck von Hand, elektrohydraulisch oder elektromechanisch betätigt werden?",
+        "element_ids": [
+          "E70",
+          "E66",
+          "E46"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Hydraulikaggregat oder Stellmotoren, Verdecksteuerung und Bordnetzlast ab.",
+        "variante_ids": [
+          "V4"
+        ]
+      },
+      {
+        "id": "K7",
+        "frage": "Wird das Cabriolet mit Verbrennungsmotor, mit elektrischem Antrieb oder in beiden Antriebsarten angeboten?",
+        "element_ids": [
+          "E10",
+          "E14"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Energiespeicher, Unterbodenstruktur und Thermomanagement ab.",
+        "variante_ids": [
+          "V5"
+        ]
+      },
+      {
+        "id": "K8",
+        "frage": "Wo dürfen Kraftstofftank oder Traktionsbatterie liegen, und soll ein Batteriegehäuse im Unterboden tragend in die Bodengruppe einbezogen werden?",
+        "element_ids": [
+          "E14",
+          "E4"
+        ],
+        "anlass": "schnittstelle",
+        "relevanz": "Davon hängen Bauraumaufteilung, Lastpfad im Unterboden und Umfang der Bodengruppenverstärkung ab.",
+        "variante_ids": [
+          "V5"
+        ]
+      },
+      {
+        "id": "K9",
+        "frage": "Ist das Lenksystem unverändert vom Basisfahrzeug zu übernehmen, oder sind Maßnahmen gegen Lenkradschwingungen vorzusehen?",
+        "element_ids": [
+          "E18",
+          "E19"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Lenksäulenlagerung und Abstimmungsaufwand ab."
+      },
+      {
+        "id": "K10",
+        "frage": "Darf die Verdeckbewegung nur im Stillstand mit angezogener Feststellbremse oder auch bei langsamer Fahrt ausgelöst werden?",
+        "element_ids": [
+          "E22",
+          "E46"
+        ],
+        "anlass": "betrieb",
+        "relevanz": "Davon hängen Freigabebedingungen der Verdecksteuerung und benötigte Signale aus dem Bremssystem ab."
+      },
+      {
+        "id": "K11",
+        "frage": "Soll der Fahrgastraum nur zwei Sitze oder zusätzlich Fondsitze erhalten, die das Verdeck überdecken muss?",
+        "element_ids": [
+          "E26",
+          "E27"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Verdecklänge, Kinematik und Ablageraum ab.",
+        "variante_ids": [
+          "V6"
+        ]
+      },
+      {
+        "id": "K12",
+        "frage": "Welches Gepäckraumvolumen muss bei abgelegtem Verdeck mindestens verfügbar bleiben?",
+        "element_ids": [
+          "E36",
+          "E37"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Dachbauart, Verdeckpaket und Laderaumabtrennung ab."
+      },
+      {
+        "id": "K13",
+        "frage": "Erhält die Verdeckelektronik ein eigenes Steuergerät, oder wird sie in ein vorhandenes Karosseriesteuergerät integriert?",
+        "element_ids": [
+          "E41",
+          "E43",
+          "E46"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Leitungssatz, Netzanbindung und Variantenaufwand gegenüber dem Basisfahrzeug ab."
+      },
+      {
+        "id": "K14",
+        "frage": "Soll das Verdeck auch aus der Ferne über den Fahrzeugschlüssel geöffnet und geschlossen werden können?",
+        "element_ids": [
+          "E45",
+          "E46"
+        ],
+        "anlass": "betrieb",
+        "relevanz": "Davon hängen Absicherungslogik, Zugangssystem und Freigabebedingungen ab."
+      },
+      {
+        "id": "K15",
+        "frage": "Soll die Heckscheibe des Verdecks aus Glas mit Heckscheibenheizung oder aus Kunststoff ausgeführt werden?",
+        "element_ids": [
+          "E58",
+          "E30",
+          "E61"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Faltbarkeit des Verdecks, Sicht nach hinten und elektrische Leitungsführung ab."
+      },
+      {
+        "id": "K16",
+        "frage": "Soll die Klimatisierung für offenes Fahren zusätzliche körpernahe Luftführungen wie eine Nackenheizung erhalten?",
+        "element_ids": [
+          "E62",
+          "E65"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Sitzaufbau, Luftkanäle und elektrische Last ab."
+      },
+      {
+        "id": "K17",
+        "frage": "Wird das Cabriolet von einem geschlossenen Basisfahrzeug der Baureihe abgeleitet oder eigenständig konstruiert, und wird das Verdecksystem als komplettes Modul zugekauft?",
+        "element_ids": [
+          "E1",
+          "E27"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Übernahmeumfang der Hauptsysteme, Versteifungsaufwand und die Schnittstelle zwischen Fahrzeughersteller und Verdecklieferant ab."
+      }
     ],
     "anforderungsthemen": [
-      {"id": "R1", "element_ids": ["E2", "E3"], "thema": "Karosseriesteifigkeit", "kenngroessen": ["Torsionssteifigkeit", "Biegesteifigkeit", "Eigenfrequenz der Karosserie", "Mehrmasse der Verstärkungen"]},
-      {"id": "R2", "element_ids": ["E10"], "thema": "Fahrleistung", "kenngroessen": ["Antriebsleistung", "Höchstgeschwindigkeit", "Beschleunigungszeit"]},
-      {"id": "R3", "element_ids": ["E14"], "thema": "Reichweite und Energiespeicher", "kenngroessen": ["Reichweite", "nutzbarer Energieinhalt", "Tankvolumen", "Bordnetzreserve für Verdeckbetätigung"]},
-      {"id": "R4", "element_ids": ["E18"], "thema": "Lenkverhalten", "kenngroessen": ["Lenkradschwingung", "Lenkmoment", "Wendekreis"]},
-      {"id": "R5", "element_ids": ["E22"], "thema": "Bremsleistung", "kenngroessen": ["Bremsweg", "mittlere Verzögerung", "Haltevermögen der Feststellbremse"]},
-      {"id": "R6", "element_ids": ["E26", "E27"], "thema": "Verdeckfunktion und Dichtheit", "kenngroessen": ["Öffnungs- und Schließdauer", "Wasserdichtheit", "Innengeräusch bei geschlossenem Verdeck", "Lebensdauer in Betätigungszyklen", "zulässige Fahrgeschwindigkeit für die Betätigung"]},
-      {"id": "R7", "element_ids": ["E36"], "thema": "Gepäckraum", "kenngroessen": ["Gepäckraumvolumen bei geschlossenem Verdeck", "Gepäckraumvolumen bei abgelegtem Verdeck", "Anhängelast"]},
-      {"id": "R8", "element_ids": ["E41"], "thema": "Bordnetz und Vernetzung", "kenngroessen": ["Stromaufnahme des Verdeckantriebs", "Spannungsstabilität", "Signallaufzeit Crashsignal"]},
-      {"id": "R9", "element_ids": ["E45"], "thema": "Verdecksteuerung und Diagnose", "kenngroessen": ["Freigabebedingungen", "Fehlerreaktion bei Unterbrechung der Bewegung", "Diagnoseabdeckung"]},
-      {"id": "R10", "element_ids": ["E49", "E50"], "thema": "Insassenschutz beim Überschlag", "kenngroessen": ["Auslösezeit des Überschlagschutzes", "Überlebensraum für den Kopf", "Festigkeit des Frontscheibenrahmens"], "regelwerke": [{"bezeichnung": "FMVSS 216 Roof crush resistance (49 CFR 571.216), Anwendungsbereich mit Ausnahme für Cabriolets", "quellen_id": "Q5", "fundstelle": "S3 Application, Buchstabe (c)"}]},
-      {"id": "R11", "element_ids": ["E58"], "thema": "Sicht nach hinten", "kenngroessen": ["Sichtfeld nach hinten bei offenem und geschlossenem Verdeck", "Abtaudauer der Heckscheibe"]},
-      {"id": "R12", "element_ids": ["E62"], "thema": "Thermischer Komfort", "kenngroessen": ["Innenraumtemperatur", "Luftgeschwindigkeit im Kopfbereich", "Aufheizdauer"]},
-      {"id": "R13", "element_ids": ["E66"], "thema": "Verdeckantrieb", "kenngroessen": ["Betätigungskraft", "Geräuschpegel des Antriebs", "Masse des Antriebs"]}
+      {
+        "id": "R1",
+        "element_ids": [
+          "E2",
+          "E3"
+        ],
+        "thema": "Karosseriesteifigkeit",
+        "kenngroessen": [
+          "Torsionssteifigkeit",
+          "Biegesteifigkeit",
+          "Eigenfrequenz der Karosserie",
+          "Mehrmasse der Verstärkungen"
+        ]
+      },
+      {
+        "id": "R2",
+        "element_ids": [
+          "E10"
+        ],
+        "thema": "Fahrleistung",
+        "kenngroessen": [
+          "Antriebsleistung",
+          "Höchstgeschwindigkeit",
+          "Beschleunigungszeit"
+        ]
+      },
+      {
+        "id": "R3",
+        "element_ids": [
+          "E14"
+        ],
+        "thema": "Reichweite und Energiespeicher",
+        "kenngroessen": [
+          "Reichweite",
+          "nutzbarer Energieinhalt",
+          "Tankvolumen",
+          "Bordnetzreserve für Verdeckbetätigung"
+        ]
+      },
+      {
+        "id": "R4",
+        "element_ids": [
+          "E18"
+        ],
+        "thema": "Lenkverhalten",
+        "kenngroessen": [
+          "Lenkradschwingung",
+          "Lenkmoment",
+          "Wendekreis"
+        ]
+      },
+      {
+        "id": "R5",
+        "element_ids": [
+          "E22"
+        ],
+        "thema": "Bremsleistung",
+        "kenngroessen": [
+          "Bremsweg",
+          "mittlere Verzögerung",
+          "Haltevermögen der Feststellbremse"
+        ]
+      },
+      {
+        "id": "R6",
+        "element_ids": [
+          "E26",
+          "E27"
+        ],
+        "thema": "Verdeckfunktion und Dichtheit",
+        "kenngroessen": [
+          "Öffnungs- und Schließdauer",
+          "Wasserdichtheit",
+          "Innengeräusch bei geschlossenem Verdeck",
+          "Lebensdauer in Betätigungszyklen",
+          "zulässige Fahrgeschwindigkeit für die Betätigung",
+          "Freiraumbedarf in Höhe und Länge während der Betätigung",
+          "zulässiger Temperaturbereich für die Betätigung"
+        ]
+      },
+      {
+        "id": "R7",
+        "element_ids": [
+          "E36"
+        ],
+        "thema": "Gepäckraum",
+        "kenngroessen": [
+          "Gepäckraumvolumen bei geschlossenem Verdeck",
+          "Gepäckraumvolumen bei abgelegtem Verdeck",
+          "Anhängelast"
+        ]
+      },
+      {
+        "id": "R8",
+        "element_ids": [
+          "E41"
+        ],
+        "thema": "Bordnetz und Vernetzung",
+        "kenngroessen": [
+          "Stromaufnahme des Verdeckantriebs",
+          "Spannungsstabilität",
+          "Signallaufzeit Crashsignal"
+        ]
+      },
+      {
+        "id": "R9",
+        "element_ids": [
+          "E45"
+        ],
+        "thema": "Verdecksteuerung und Diagnose",
+        "kenngroessen": [
+          "Freigabebedingungen",
+          "Fehlerreaktion bei Unterbrechung der Bewegung",
+          "Diagnoseabdeckung"
+        ]
+      },
+      {
+        "id": "R10",
+        "element_ids": [
+          "E49",
+          "E50"
+        ],
+        "thema": "Insassenschutz beim Überschlag",
+        "kenngroessen": [
+          "Auslösezeit des Überschlagschutzes",
+          "Überlebensraum für den Kopf",
+          "Festigkeit des Frontscheibenrahmens"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "FMVSS 216 Roof crush resistance (49 CFR 571.216), Anwendungsbereich mit Ausnahme für Cabriolets",
+            "quellen_id": "Q5",
+            "fundstelle": "S3 Application, Buchstabe (c)"
+          }
+        ]
+      },
+      {
+        "id": "R11",
+        "element_ids": [
+          "E58"
+        ],
+        "thema": "Sicht nach hinten",
+        "kenngroessen": [
+          "Sichtfeld nach hinten bei offenem und geschlossenem Verdeck",
+          "Abtaudauer der Heckscheibe"
+        ]
+      },
+      {
+        "id": "R12",
+        "element_ids": [
+          "E62"
+        ],
+        "thema": "Thermischer Komfort",
+        "kenngroessen": [
+          "Innenraumtemperatur",
+          "Luftgeschwindigkeit im Kopfbereich",
+          "Aufheizdauer"
+        ]
+      },
+      {
+        "id": "R13",
+        "element_ids": [
+          "E66"
+        ],
+        "thema": "Verdeckantrieb",
+        "kenngroessen": [
+          "Betätigungskraft",
+          "Geräuschpegel des Antriebs",
+          "Masse des Antriebs"
+        ]
+      },
+      {
+        "id": "R14",
+        "element_ids": [
+          "E26",
+          "E35"
+        ],
+        "thema": "Offenfahrkomfort",
+        "kenngroessen": [
+          "Windgeräusch bei offenem Verdeck",
+          "Luftgeschwindigkeit im Kopfbereich mit und ohne Windschott",
+          "Kopffreiheit bei geschlossenem Verdeck"
+        ]
+      }
     ]
   },
   "offene_punkte": [
     "Glossarvorschlag: Funktion „Verdeck öffnen und schließen“ (fahrzeugartspezifische Leistung offener Pkw).",
-    "Glossarvorschlag: Hauptsystem „Verdecksystem“ (Kategorie sonstig) für Fahrzeuge mit öffnungsfähigem Dach; im Artikel mangels Glossarname als Subsystem des Fahrgastraums geführt.",
     "Recherche: Verordnung (EU) 2018/858, Anhang I, Aufbauarten der Klasse M1 (Definition Cabriolet/Kabrio-Limousine); eur-lex.europa.eu war in diesem Lauf nicht abrufbar.",
     "Recherche: DIN 70010 (Begriff Kabriolett, Dach mit mindestens zwei Positionen) im Original prüfen; nur über Wikipedia bekannt.",
     "Recherche: SAE Technical Paper 930411 (Steifigkeitsverlust bei Coupé-zu-Cabriolet-Umbau, Unterbodenverstärkung); saemobilus.sae.org nicht abrufbar.",
