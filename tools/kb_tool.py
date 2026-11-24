@@ -51,7 +51,8 @@ FORMELN = re.compile(r"\b(CO2|H2O|H2|O2|N2O|NO2|CH4|SO2)\b")  # chemische Formel
 
 def hat_ziffer(text):
     return bool(re.search(r"\d", FORMELN.sub("", text)))
-NORMKUERZEL = re.compile(r"\b(ISO|DIN|EN|IEC|SAE|ECE|UNECE|VDI|DNV|IMCA|StVZO|UN-R|UN R)\b")
+# Normkürzel als Verweis auf ein Regelwerk; Organisationsnamen (UNECE, DNV, IMCA) allein sind kein Normverweis
+NORMKUERZEL = re.compile(r"\b(ISO|DIN|EN|IEC|SAE|ECE-R|VDI|StVZO|UN-R|UN R|FMVSS|CFR)\b")
 
 
 # ---------------------------------------------------------------- Hilfen
