@@ -32,6 +32,7 @@ Klärungsfragen und Anforderungsthemen). **[belegt; Erweiterung 2.4]**
 |---|---|
 | `leitfaden/Leitfaden_2.4.md` | dieser Leitfaden |
 | `leitfaden/Arbeitsauftrag_Artikel.md` | Vorlage für jeden Erstellungs-, Übersichts- und Korrekturaufruf **[belegt]** |
+| `leitfaden/Arbeitsauftrag_Review.md` | Vorlage für jeden Review-Aufruf, Ausgabeformat der Befunde **[ergänzt]** |
 | `leitfaden/Referenzartikel_Lkw.md` | Maßstab für Aufbau, Dramaturgie und Detailtiefe, kein Beleg **[belegt]** |
 | `leitfaden/artikel.schema.json` | Schema 2.3 für jeden Artikel (2.2 bleibt lesbar) **[belegt; Erweiterung 2.4]** |
 | `leitfaden/Recherchegliederung.md` | Taxonomie als Baum, erzeugt aus `kb/inventar.json` **[ergänzt]** |
@@ -150,7 +151,7 @@ in `aenderungen.json`. Nur der Orchestrator setzt diese beiden Stufen. **[belegt
 - Befunde `hoch` führen zu einer Revision (`aufruftyp: revision`, Eingabe: bisheriger Artikel und Befunde), danach
   erneut Validierung. Ohne Befund `hoch` setzt der Orchestrator `geprueft`; Befunde `mittel` und `gering` werden
   im `anlass` vermerkt.
-- Review-Befunde werden unter `kb/reviews/{artikel_id}.json` abgelegt.
+- Review-Befunde werden unter `kb/reviews/{artikel_id}.json` abgelegt. Vorlage und Ausgabeformat: `leitfaden/Arbeitsauftrag_Review.md`.
 
 ## 7. Protokollierung
 
@@ -207,3 +208,10 @@ in `aenderungen.json`. Nur der Orchestrator setzt diese beiden Stufen. **[belegt
   auf ein anderes Hauptsystem.
 - **Review** (Abschnitt 6) prüft zusätzlich die Brauchbarkeit von Varianten, Fragen und Anforderungsthemen.
 - Artikel nach Schema 2.2 (Probelauf 2) bleiben gültig. `validate` meldet bei ihnen einen HINWEIS.
+- **Übersichten** (Arbeitsauftrag, Regel 16): Abschnittsfolge Einleitung, gemeinsame Architektur, Unterscheidungsmerkmale,
+  Zusammenfassung, Modellierungsbezug; 800 bis 1.500 Wörter; Modellblock Pflicht mit gemeinsamen Hauptsystemen,
+  mindestens zwei Unterscheidungsmerkmalen und drei Klärungsfragen. `validate` prüft das ab Schema 2.3.
+- **Review-Vorlage** `Arbeitsauftrag_Review.md` neu.
+- **Glossar** (Stand 2026-11-24, nach Probelauf 3): aufgenommen „Unterdruck bereitstellen“, „Innenraum klimatisieren“,
+  „Tether ausgeben und einholen“ (ersetzt die Vorschläge „Tether führen“ und „Tetherlänge anpassen“). Offen:
+  „Druck ausgleichen“, „Nebenaggregate antreiben“.

@@ -203,6 +203,13 @@ def pruefe_artikel(aid, a, d, inv, glossar, schema, alle, m):
                     m.F(aid, f"{p.get('absatz_id')}: Prämisse {pr} existiert nicht")
                 if re.fullmatch(r"Q\d+", pr) and pr not in quellen:
                     m.F(aid, f"{p.get('absatz_id')}: Prämisse {pr} existiert nicht")
+                ref = re.fullmatch(r"(A-\d{4})/(P\d+)", pr)
+                if ref:
+                    kind = alle.get(ref.group(1))
+                    if kind is None or isinstance(kind, Exception):
+                        m.F(aid, f"{p.get('absatz_id')}: Prämisse {pr}: Artikel {ref.group(1)} liegt nicht vor")
+                    elif ref.group(2) not in {q.get("absatz_id") for q in absaetze(kind)}:
+                        m.F(aid, f"{p.get('absatz_id')}: Prämisse {pr} existiert nicht")
         if b != "belegt":
             t = p.get("text", "")
             if re.search(r"\d", t) or NORMKUERZEL.search(t):
@@ -237,6 +244,8 @@ def pruefe_artikel(aid, a, d, inv, glossar, schema, alle, m):
     gesamt = sum(woerter(p.get("text", "")) for p in ps)
     if a.get("artikeltyp") == "blatt" and not 1300 <= gesamt <= 2000:
         m.W(aid, f"Wortzahl {gesamt} außerhalb 1.300–2.000 (Regel 3)")
+    elif a.get("artikeltyp") == "uebersicht" and not 800 <= gesamt <= 1500:
+        m.W(aid, f"Wortzahl {gesamt} außerhalb 800–1.500 (Regel 16)")
     else:
         m.H(aid, f"Wortzahl {gesamt}")
 
@@ -254,6 +263,11 @@ def pruefe_artikel(aid, a, d, inv, glossar, schema, alle, m):
                 komprimiert.append(t)
         if komprimiert != erwartet:
             m.F(aid, "Abschnittsfolge weicht von Regel 2 ab: " + " > ".join(komprimiert))
+    elif a.get("artikeltyp") == "uebersicht" and a.get("schema_version", "0") >= "2.3":
+        erwartet = ["gesamtsystem", "querschnitt", "variante", "gesamtsystem", "modellierung"]
+        komprimiert = [t for i, t in enumerate(typen) if i == 0 or typen[i - 1] != t]
+        if komprimiert != erwartet:
+            m.F(aid, "Abschnittsfolge weicht von Regel 16 ab: " + " > ".join(komprimiert))
 
     # Übersicht
     if a.get("artikeltyp") == "uebersicht":
@@ -273,6 +287,8 @@ def pruefe_artikel(aid, a, d, inv, glossar, schema, alle, m):
     if mo is None:
         if a.get("artikeltyp") == "blatt":
             m.F(aid, "modell fehlt (bei Blattartikel Pflicht)")
+        elif a.get("schema_version", "0") >= "2.3":
+            m.F(aid, "modell fehlt (ab Schema 2.3 auch bei Übersichten Pflicht, Regel 16)")
         pruefe_offene_punkte(aid, a, set(), m)
         return
     E = {}
@@ -335,7 +351,7 @@ def pruefe_artikel(aid, a, d, inv, glossar, schema, alle, m):
     erlaubt = {k: {ohne_klammer(n) for n in v} for k, v in glossar["hauptsysteme"].items()}
     entfallen = {x.get("kategorie") for x in mo.get("entfallene_kategorien", [])}
     abgedeckt = {h.get("kategorie") for h in hs}
-    for k in KATEGORIEN:
+    for k in (KATEGORIEN if a.get("artikeltyp") == "blatt" else []):
         if k not in abgedeckt and k not in entfallen:
             m.F(aid, f"Kategorie {k} weder abgedeckt noch in entfallene_kategorien (Regel 1)")
         if k in abgedeckt and k in entfallen:
@@ -362,6 +378,8 @@ def pruefe_artikel(aid, a, d, inv, glossar, schema, alle, m):
             m.F(aid, f"{hid}: Hauptsystem ohne kategorie")
         elif h.get("name") not in erlaubt.get(kat, set()):
             m.F(aid, f"{hid}: Name „{h.get('name')}“ nicht in den Glossarvorgaben für {kat} (Regel 9)")
+        if a.get("artikeltyp") != "blatt":
+            continue
         secs = abschnitt_von.get(hid, [])
         if not secs:
             m.F(aid, f"{hid} {h.get('name')}: kein Abschnitt mit dieser element_id")
@@ -422,8 +440,9 @@ def pruefe_erweiterung(aid, a, mo, E, hs, hs_von, P, m):
         if a.get("artikeltyp") == "blatt":
             m.H(aid, f"Schema {a.get('schema_version')}: ohne Varianten, Klärungsfragen und Anforderungsthemen")
         return
-    if a.get("artikeltyp") == "blatt":
-        for f in felder:
+    pflicht = felder if a.get("artikeltyp") == "blatt" else ("varianten", "klaerungsfragen")
+    if True:
+        for f in pflicht:
             if f not in mo:
                 m.F(aid, f"modell.{f} fehlt (ab Schema 2.3 bei Blattartikeln Pflicht)")
     V = {}
@@ -479,6 +498,13 @@ def pruefe_erweiterung(aid, a, mo, E, hs, hs_von, P, m):
         if re.search(r"\d", frei) or NORMKUERZEL.search(frei):
             m.W(aid, f"{r.get('id')}: Ziffern oder Normkürzel in Thema oder Kenngrößen; Regelwerke nur unter regelwerke mit Beleg (Regel 7)")
     if a.get("artikeltyp") != "blatt":
+        if len(V) < 2:
+            m.W(aid, f"nur {len(V)} Unterscheidungsmerkmale unter varianten (mindestens zwei, Regel 16)")
+        if len(mo.get("klaerungsfragen", [])) < 3:
+            m.W(aid, f"nur {len(mo.get('klaerungsfragen', []))} Klärungsfragen (mindestens drei, Regel 16)")
+        for vid, v in V.items():
+            if not frage_v[vid]:
+                m.W(aid, f"{vid} „{v.get('bezeichnung')}“: keine Klärungsfrage verweist auf diese Variante (Regel 16)")
         return
     for h in hs:
         if not frage_hs[h["id"]]:
