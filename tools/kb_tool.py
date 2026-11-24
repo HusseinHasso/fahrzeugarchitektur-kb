@@ -132,6 +132,11 @@ def cmd_glossar(args):
     aus.append("  Funktionen: " + "; ".join(g["funktionen"]))
     for r in g.get("regeln", []):
         aus.append(f"  Regel: {r}")
+    if g.get("zuordnung"):
+        aus.append("")
+        aus.append("ZUORDNUNG (verbindlich: Komponente gehört unter das Hauptsystem dieser Kategorie)")
+        for z in g["zuordnung"]:
+            aus.append(f"  {z['kategorie']}: " + "; ".join(z["komponenten"]))
     aus.append("")
     aus.append(f"BISHER VERWENDET (Gruppe {args.gruppe} markiert)")
 
@@ -424,6 +429,24 @@ def pruefe_artikel(aid, a, d, inv, glossar, schema, alle, m):
             m.F(aid, f"{hid} {h.get('name')}: keine Funktion zugeordnet")
         if not fluss_hs[hid]:
             m.F(aid, f"{hid} {h.get('name')}: an keinem Fluss beteiligt")
+
+    # Zuordnungsliste des Glossars
+    regel = {}
+    for z in glossar.get("zuordnung", []):
+        for k in z["komponenten"]:
+            regel[k.lower()] = z["kategorie"]
+    for e in E.values():
+        if e.get("typ") not in ("subsystem", "komponente"):
+            continue
+        name = e.get("name", "").lower()
+        # Schlüsselwort als Kopf eines Wortes (Ende eines Kompositums, ggf. mit Pluralendung)
+        treffer = [k for k in regel if re.search(re.escape(k) + r"(e|en|n|s|er)?(?![\w-])", name)]
+        if not treffer:
+            continue
+        soll = regel[max(treffer, key=len)]
+        ist = E.get(hs_von(e.get("id")), {}).get("kategorie")
+        if ist and ist != soll:
+            m.W(aid, f"{e.get('id')} „{e.get('name')}“ liegt unter {ist}, laut Zuordnungsliste gehört es zu {soll}")
 
     # Elementnamen im Text
     text = " ".join(p.get("text", "") for p in ps).lower()

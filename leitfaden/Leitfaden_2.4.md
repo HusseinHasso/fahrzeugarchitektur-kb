@@ -149,7 +149,8 @@ in `aenderungen.json`. Nur der Orchestrator setzt diese beiden Stufen. **[belegt
 - Ausgabe: JSON-Liste von Befunden `{absatz_id|element_id, schwere: hoch|mittel|gering, befund, vorschlag}`.
   Der Reviewer ändert den Artikel nicht.
 - Befunde `hoch` führen zu einer Revision (`aufruftyp: revision`, Eingabe: bisheriger Artikel und Befunde), danach
-  erneut Validierung. Ohne Befund `hoch` setzt der Orchestrator `geprueft`; Befunde `mittel` und `gering` werden
+  erneut Validierung. Trägt die Revision neue Belege oder Regelwerke ein, prüft der Reviewer nur diese nach
+  (Feld `nachpruefung` in der Review-Datei); erst wenn alle bestätigt sind, folgt `geprueft`. Ohne Befund `hoch` setzt der Orchestrator `geprueft`; Befunde `mittel` und `gering` werden
   im `anlass` vermerkt.
 - Review-Befunde werden unter `kb/reviews/{artikel_id}.json` abgelegt. Vorlage und Ausgabeformat: `leitfaden/Arbeitsauftrag_Review.md`.
 
@@ -221,3 +222,7 @@ in `aenderungen.json`. Nur der Orchestrator setzt diese beiden Stufen. **[belegt
 - **Toleranz der Wortgrenzen** (Festlegung des Auftraggebers, 2026-11-24): Alle Wortgrenzen (Artikel 1.300 bis 2.000,
   Übersicht 800 bis 1.500, Hauptsystem-Abschnitt höchstens 300) gelten mit ±50 Wörtern Toleranz. Innerhalb der Toleranz
   meldet `validate` einen HINWEIS, erst darüber hinaus eine WARNUNG mit Korrekturrunde.
+- **Nach der Generalprobe** (2026-11-24): Zuordnungsliste im Glossar (`zuordnung`, verbindlich, von `validate` als
+  WARNUNG geprüft); im Arbeitsauftrag Zuordnung (Regel 1), Geltungsbereich von Regelwerken (Regel 8), Speicher und
+  Wandler je Antriebsart (Regel 12), belegte Absätze beim Kürzen nur umformulieren (Korrekturrunden); Nachprüfung
+  neuer Belege nach einer Revision (Abschnitt 6).

@@ -1,10 +1,11 @@
 {
-  "stand": "2026-11-24, Entwurf aus Lkw-Beispiel und Probeläufen 1 bis 3; Glossarpflege nach Probelauf 3; nach jeder Welle fortschreiben",
+  "stand": "2026-11-24, nach Generalprobe Personenkraftfahrzeuge: Zuordnungsliste ergänzt; nach jeder Welle fortschreiben",
   "regeln": [
     "Hauptsystemnamen nur aus dieser Liste. Mehrere Namen je Kategorie gelten für die in Klammern genannte Fahrzeugart; die Klammer gehört nicht zum Namen.",
     "Funktionsnamen zuerst aus dieser Liste. Neue Funktionen nur für fahrzeugartspezifische Leistungen (z. B. Oberwagen schwenken) und nie als Synonym einer gelisteten Funktion.",
     "„Fahrer“ in Funktionsnamen steht für die führende Person, auch Pilot, Triebfahrzeugführer oder Bediener am Leitstand.",
-    "Neue Namen in offene_punkte mit dem Vermerk „Glossarvorschlag:“ führen."
+    "Neue Namen in offene_punkte mit dem Vermerk „Glossarvorschlag:“ führen.",
+    "Zuordnung: Komponenten aus der Zuordnungsliste gehören unter das Hauptsystem der genannten Kategorie, soweit die Fahrzeugart sie besitzt. Abweichungen nur mit Begründung in offene_punkte."
   ],
   "hauptsysteme": {
     "struktur_fahrwerk": [
@@ -99,5 +100,179 @@
     "Unterdruck bereitstellen",
     "Innenraum klimatisieren",
     "Tether ausgeben und einholen"
+  ],
+  "zuordnung": [
+    {
+      "kategorie": "antrieb",
+      "komponenten": [
+        "Verbrennungsmotor",
+        "Traktionsmaschine",
+        "Getriebe",
+        "Differenzial",
+        "Gelenkwelle",
+        "Antriebswelle",
+        "Abgasanlage",
+        "Abgasnachbehandlung",
+        "Thruster",
+        "Triebwerk"
+      ]
+    },
+    {
+      "kategorie": "energieversorgung",
+      "komponenten": [
+        "Kraftstofftank",
+        "Kraftstoffanlage",
+        "Wasserstofftank",
+        "Wasserstoffspeicher",
+        "Brennstoffzellensystem",
+        "Brennstoffzelle",
+        "Traktionsbatterie",
+        "Hochvoltbatterie",
+        "Hochvolt-Bordnetz",
+        "Hochvoltverteilung",
+        "Hochvolt-Verteilung",
+        "Gleichspannungswandler",
+        "Ladeeinrichtung",
+        "Bordnetzbatterie",
+        "Starterbatterie",
+        "Generator"
+      ]
+    },
+    {
+      "kategorie": "elektrik_elektronik",
+      "komponenten": [
+        "Niedervolt-Bordnetz",
+        "Leitungssatz",
+        "Stromverteiler",
+        "Sicherungen",
+        "Bussystem",
+        "Fahrzeugbus",
+        "Gateway"
+      ]
+    },
+    {
+      "kategorie": "bremse",
+      "komponenten": [
+        "Betriebsbremse",
+        "Feststellbremse",
+        "Bremskraftverstärker",
+        "Antiblockiersystem",
+        "Fahrdynamikregelung",
+        "Stabilitätsregelung",
+        "Bremsregelung"
+      ]
+    },
+    {
+      "kategorie": "lenkung",
+      "komponenten": [
+        "Lenkunterstützung",
+        "Lenkgetriebe",
+        "Lenksäule",
+        "Lenkrad"
+      ]
+    },
+    {
+      "kategorie": "struktur_fahrwerk",
+      "komponenten": [
+        "Karosserie",
+        "Rohbau",
+        "Crashstruktur",
+        "Rahmen",
+        "Türen",
+        "Heckklappe",
+        "Motorhaube",
+        "Radaufhängung",
+        "Federung",
+        "Räder und Reifen",
+        "Achse"
+      ]
+    },
+    {
+      "kategorie": "bedienraum",
+      "komponenten": [
+        "Sitze",
+        "Rückhaltesystem",
+        "Sicherheitsgurt",
+        "Airbag",
+        "Gurtstraffer",
+        "Verdeck",
+        "Innenausstattung",
+        "Bedienelemente",
+        "Anzeigeelemente",
+        "Kombiinstrument"
+      ]
+    },
+    {
+      "kategorie": "aufbau_nutzlast",
+      "komponenten": [
+        "Gepäckraum",
+        "Laderaum",
+        "Ladeboden",
+        "Laderaumabdeckung",
+        "Anhängevorrichtung",
+        "Dachträger",
+        "Manipulator",
+        "Werkzeugschlitten"
+      ]
+    },
+    {
+      "kategorie": "steuerung_information",
+      "komponenten": [
+        "Fahrzeugmanagement",
+        "Telematikeinheit",
+        "Notrufsystem",
+        "Diagnose",
+        "Navigation",
+        "Infotainment"
+      ]
+    },
+    {
+      "kategorie": "assistenz_sicherheit",
+      "komponenten": [
+        "Umfeldsensorik",
+        "Notbremsassistent",
+        "Spurhalteassistent",
+        "Geschwindigkeitsassistent",
+        "Müdigkeitswarnung",
+        "Reifendrucküberwachung",
+        "Überschlagschutz"
+      ]
+    },
+    {
+      "kategorie": "beleuchtung_sicht",
+      "komponenten": [
+        "Scheinwerfer",
+        "Leuchten",
+        "Signalleuchten",
+        "Scheibenwischer",
+        "Scheibenreinigung",
+        "Rückspiegel",
+        "Außenspiegel",
+        "Kamera-Monitor-System"
+      ]
+    },
+    {
+      "kategorie": "thermomanagement",
+      "komponenten": [
+        "Heiz- und Klimaanlage",
+        "Klimaanlage",
+        "Klimakompressor",
+        "Wärmepumpe",
+        "Innenraumheizung",
+        "Kühlkreislauf",
+        "Kühlmittelpumpe",
+        "Kühler",
+        "Batterietemperierung"
+      ]
+    },
+    {
+      "kategorie": "nebensysteme",
+      "komponenten": [
+        "Unterdruckpumpe",
+        "Druckluftanlage",
+        "Kompressor für Druckluft",
+        "Nebenaggregatetrieb"
+      ]
+    }
   ]
 }
