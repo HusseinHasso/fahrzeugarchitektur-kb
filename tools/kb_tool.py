@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""kb_tool.py – Werkzeug für die Fahrzeugarchitektur-Wissensbasis (Leitfaden 2.3, Schema 2.2).
+"""kb_tool.py – Werkzeug für die Fahrzeugarchitektur-Wissensbasis (Leitfaden 2.4, Schema 2.3; ältere Schemata werden mitgeprüft).
 
 Nachbau aus Arbeitsauftrag, Schema und Probelauf 2. Befehle:
 
@@ -209,9 +209,14 @@ def pruefe_artikel(aid, a, d, inv, glossar, schema, alle, m):
                 m.W(aid, f"{p.get('absatz_id')}: Ziffern oder Normkürzel in nicht belegtem Absatz (Regel 7)")
         if a.get("artikeltyp") == "blatt" and p.get("herangezogene_artikel_ids"):
             m.F(aid, f"{p.get('absatz_id')}: herangezogene_artikel_ids bei Blattartikel nicht leer")
+    for r in (a.get("modell") or {}).get("anforderungsthemen", []):
+        for rw in r.get("regelwerke", []):
+            benutzt.add(rw.get("quellen_id"))
+            if rw.get("quellen_id") not in quellen:
+                m.F(aid, f"{r.get('id')}: Regelwerk verweist auf unbekannte Quelle {rw.get('quellen_id')}")
     for qid, q in quellen.items():
         if qid not in benutzt:
-            m.F(aid, f"Quelle {qid} wird in keinem Beleg verwendet")
+            m.F(aid, f"Quelle {qid} wird in keinem Beleg und keinem Regelwerk verwendet")
         if not q.get("quellentyp"):
             m.F(aid, f"Quelle {qid} ohne quellentyp")
     if a.get("quellenzugriff") == "nein" and (quellen or benutzt):
@@ -405,7 +410,88 @@ def pruefe_artikel(aid, a, d, inv, glossar, schema, alle, m):
         for f in mo.get("funktionen", []):
             if f.get("name", "").lower() not in per:
                 m.W(aid, f"{f.get('id')} „{f.get('name')}“ fehlt im Abschnitt Perspektiven (Regel 10)")
+    pruefe_erweiterung(aid, a, mo, E, hs, hs_von, P, m)
     pruefe_offene_punkte(aid, a, neu, m)
+
+
+def pruefe_erweiterung(aid, a, mo, E, hs, hs_von, P, m):
+    """Varianten, Klärungsfragen, Anforderungsthemen (ab Schema 2.3)."""
+    felder = ("varianten", "klaerungsfragen", "anforderungsthemen")
+    neu_schema = a.get("schema_version", "0") >= "2.3"
+    if not neu_schema:
+        if a.get("artikeltyp") == "blatt":
+            m.H(aid, f"Schema {a.get('schema_version')}: ohne Varianten, Klärungsfragen und Anforderungsthemen")
+        return
+    if a.get("artikeltyp") == "blatt":
+        for f in felder:
+            if f not in mo:
+                m.F(aid, f"modell.{f} fehlt (ab Schema 2.3 bei Blattartikeln Pflicht)")
+    V = {}
+    for liste, praefix in (("varianten", "V"), ("klaerungsfragen", "K"), ("anforderungsthemen", "R")):
+        c = collections.Counter(x.get("id") for x in mo.get(liste, []))
+        for k, n in c.items():
+            if n > 1:
+                m.F(aid, f"ID {k} in {liste} doppelt")
+    for v in mo.get("varianten", []):
+        V[v.get("id")] = v
+        if v.get("element_id") not in E:
+            m.F(aid, f"{v.get('id')}: element_id {v.get('element_id')} existiert nicht")
+        for x in v.get("absatz_ids", []):
+            if x not in P:
+                m.F(aid, f"{v.get('id')}: absatz_id {x} existiert nicht")
+        eigen = hs_von(v.get("element_id"))
+        andere = False
+        for w in v.get("auswirkungen", []):
+            if w.get("element_id") not in E:
+                m.F(aid, f"{v.get('id')}: Auswirkung auf {w.get('element_id')}, existiert nicht")
+            elif hs_von(w.get("element_id")) != eigen:
+                andere = True
+        if not andere:
+            m.H(aid, f"{v.get('id')} „{v.get('bezeichnung')}“: keine Auswirkung auf ein anderes Hauptsystem")
+        for t in v.get("alternativen", []) + v.get("auswahlkriterien", []):
+            if re.search(r"\d", t):
+                m.W(aid, f"{v.get('id')}: Ziffern in Alternativen oder Auswahlkriterien (Regel 7)")
+                break
+    frage_hs = collections.Counter()
+    frage_v = collections.Counter()
+    for k in mo.get("klaerungsfragen", []):
+        for x in k.get("element_ids", []):
+            if x not in E:
+                m.F(aid, f"{k.get('id')}: element_id {x} existiert nicht")
+        for x in {hs_von(x) for x in k.get("element_ids", [])}:
+            frage_hs[x] += 1
+        for x in k.get("variante_ids", []):
+            if x not in V:
+                m.F(aid, f"{k.get('id')}: variante_id {x} existiert nicht")
+            frage_v[x] += 1
+        if not k.get("frage", "").rstrip().endswith("?"):
+            m.W(aid, f"{k.get('id')}: Klärungsfrage endet nicht mit Fragezeichen")
+        if re.search(r"\d", k.get("frage", "")) or NORMKUERZEL.search(k.get("frage", "")):
+            m.W(aid, f"{k.get('id')}: Ziffern oder Normkürzel in der Klärungsfrage (Regel 7)")
+    anf_hs = collections.Counter()
+    for r in mo.get("anforderungsthemen", []):
+        for x in r.get("element_ids", []):
+            if x not in E:
+                m.F(aid, f"{r.get('id')}: element_id {x} existiert nicht")
+        for x in {hs_von(x) for x in r.get("element_ids", [])}:
+            anf_hs[x] += 1
+        frei = " ".join([r.get("thema", "")] + r.get("kenngroessen", []))
+        if re.search(r"\d", frei) or NORMKUERZEL.search(frei):
+            m.W(aid, f"{r.get('id')}: Ziffern oder Normkürzel in Thema oder Kenngrößen; Regelwerke nur unter regelwerke mit Beleg (Regel 7)")
+    if a.get("artikeltyp") != "blatt":
+        return
+    for h in hs:
+        if not frage_hs[h["id"]]:
+            m.F(aid, f"{h['id']} {h.get('name')}: keine Klärungsfrage (Regel 13)")
+        if not anf_hs[h["id"]]:
+            m.F(aid, f"{h['id']} {h.get('name')}: kein Anforderungsthema (Regel 14)")
+    if len(V) < 3:
+        m.W(aid, f"nur {len(V)} Varianten im Modellblock (mindestens drei, Regel 12)")
+    for vid, v in V.items():
+        if not frage_v[vid]:
+            m.W(aid, f"{vid} „{v.get('bezeichnung')}“: keine Klärungsfrage verweist auf diese Variante (Regel 13)")
+    m.H(aid, f"Erweiterung: {len(V)} Varianten, {len(mo.get('klaerungsfragen', []))} Klärungsfragen, "
+             f"{len(mo.get('anforderungsthemen', []))} Anforderungsthemen")
 
 
 def pruefe_offene_punkte(aid, a, neu, m):

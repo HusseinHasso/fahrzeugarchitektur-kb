@@ -1,4 +1,4 @@
-# Arbeitsauftrag je Artikel (Vorlage, Leitfaden 2.3)
+# Arbeitsauftrag je Artikel (Vorlage, Leitfaden 2.4)
 
 Ein Aufruf bearbeitet genau einen Artikel. Der Orchestrator füllt die Platzhalter in `{}` und gibt mit: diese Vorlage, `Referenzartikel_Lkw.md`, die Ausgabe von `kb_tool.py glossar <dir> --gruppe {gruppe}`, den Inventareintrag und `artikel.schema.json`. Bei Übersichten kommen die Kindartikel hinzu, bei Revisionen der bisherige Artikel.
 
@@ -8,9 +8,11 @@ Für Korrekturrunden gibt der Orchestrator die Zeilen `FEHLER` und `WARNUNG` aus
 
 ---
 
-Erstelle den Artikel **{artikel_id} {bezeichnung}** ({artikeltyp}) nach Leitfaden 2.3. Quellenzugriff: **{ja|nein}**. Gib ausschließlich ein JSON-Objekt aus, das `artikel.schema.json` erfüllt (`schema_version: 2.2`, `status: in_arbeit`). Schreibe auf Deutsch.
+Erstelle den Artikel **{artikel_id} {bezeichnung}** ({artikeltyp}) nach Leitfaden 2.4. Quellenzugriff: **{ja|nein}**. Gib ausschließlich ein JSON-Objekt aus, das `artikel.schema.json` erfüllt (`schema_version: 2.3`, `status: in_arbeit`). Schreibe auf Deutsch.
 
 **Vorrang.** Vollständigkeit geht vor Belegquote. Ein vollständiger, sorgfältig hergeleiteter Artikel mit wenigen Belegen ist besser als ein lückenhafter mit vielen. Nicht belegte Aussagen sicherst du durch Herleitung ab (Vorgehen, Schritt 3). Du streichst sie nicht.
+
+**Zweck der Wissensbasis.** Die Artikel leiten beim Modellieren von Fahrzeugen an und unterstützen beim Verfeinern von Architekturen und Anforderungen: Sie liefern die Dekomposition, schlagen Alternativen mit ihren Folgen vor und stellen die konkreten Fragen, die ein Modellierer oder Auftraggeber beantworten muss. Schreib so, dass ein Assistent daraus Vorschläge und Rückfragen ableiten kann.
 
 **Ziel (Blattartikel).** Beschreibe die **generische Referenzarchitektur der Fahrzeugart**, in Aufbau, Dramaturgie und Detailtiefe wie im Referenzartikel Lkw. Schreibe zusammenhängende Fließtextabsätze über Aufgabe, Bauteile, Wirkzusammenhang, Varianten und Schnittstellen. Der Artikel ist kein Datenblatt eines Modells und keine Sammlung belegter Einzelbauweisen. Quellen ergänzen und präzisieren den Text, sie begrenzen ihn nicht.
 
@@ -20,6 +22,7 @@ Erstelle den Artikel **{artikel_id} {bezeichnung}** ({artikeltyp}) nach Leitfade
    - Hauptsysteme je Kategorie (Regel 1)
    - je Hauptsystem: Subsysteme, Komponenten, Flüsse, Schnittstellen und Varianten
    - Funktionen mit ihrer Zuordnung
+   - je Hauptsystem: Entscheidungen mit Alternativen und Folgen für andere Hauptsysteme (Regel 12), offene Entscheidungsfragen (Regel 13), Anforderungsthemen (Regel 14)
    - Lücken
 2. Mit Quellenzugriff: Suche Quellen gezielt für Grundaufbau, Varianten, Zahlen, Normen und Abgrenzungen (Regel 6). Füll verbleibende Lücken aus Herleitung oder Fachwissen.
 3. **Absichern.** Prüfe in der Arbeitsnotiz jede Aussage ohne Beleg in vier Schritten:
@@ -76,7 +79,11 @@ Erstelle den Artikel **{artikel_id} {bezeichnung}** ({artikeltyp}) nach Leitfade
 8. **Reichweite.** Nenne, wofür eine Aussage gilt: Fahrzeugart, Bauweise oder Baureihe. „Typischerweise“ nur, wenn Quelle oder Herleitung es stützen. Modellvorschläge kennzeichnest du mit `aussagetyp: modellannahme`.
 9. **Vokabular.** Hauptsystemnamen übernimmst du aus den Glossarvorgaben. Funktionsnamen (Verb–Objekt, Infinitiv) ebenfalls zuerst daraus, dann aus den bisher verwendeten Namen, vorrangig aus derselben Gruppe. Einen neuen Namen vergibst du nur, wenn keiner passt, und nie als Synonym. Jeder neue Name kommt in `offene_punkte` als „Glossarvorschlag: …“.
 10. **Perspektiven.** Der Abschnitt ordnet alle Funktionen des Modellblocks den ausführenden Systemen und Komponenten zu, nicht nur beispielhaft.
-11. **Offene Punkte.** Hier stehen konkreter Recherchebedarf (Quelle oder Suchbegriff), nicht herleitbare Bestandteile und Glossarvorschläge, keine allgemeinen Geltungshinweise.
+11. **Offene Punkte.** Hier stehen konkreter Recherchebedarf (Quelle oder Suchbegriff), nicht herleitbare Bestandteile und Glossarvorschläge, keine allgemeinen Geltungshinweise. Fragen an Modellierer gehören nicht hierher, sondern in `klaerungsfragen`.
+12. **Varianten** (`modell.varianten`). Jede strukturändernde Variante aus dem Text bekommt einen Eintrag am betroffenen Element, mindestens drei je Blattartikel. `bezeichnung` nennt den Gegenstand der Entscheidung (etwa Antriebsart), `alternativen` mindestens zwei Lösungen, `auswahlkriterien` die Gesichtspunkte, nach denen entschieden wird, `auswirkungen` die Elemente, die sich je nach Wahl ändern, vorrangig in anderen Hauptsystemen. `absatz_ids` verweist auf die Absätze, die die Variante beschreiben. Keine Zahlenwerte.
+13. **Klärungsfragen** (`modell.klaerungsfragen`). Je Hauptsystem mindestens eine konkrete, beantwortbare Frage an Modellierer oder Auftraggeber, die beim Verfeinern von Architektur oder Anforderungen gestellt werden muss. Jede Variante hat mindestens eine Frage, die über `variante_ids` auf sie verweist. `anlass` ist `architekturentscheidung`, `anforderung`, `schnittstelle` oder `betrieb`. `relevanz` sagt in einem Satz, was von der Antwort abhängt. Keine Fragen, die der Artikel selbst beantworten müsste, keine Recherchefragen, keine Ziffern und keine Normkürzel.
+14. **Anforderungsthemen** (`modell.anforderungsthemen`). Je Hauptsystem mindestens ein Thema, zu dem beim Verfeinern typischerweise Anforderungen entstehen (etwa Insassenschutz, Tauchtiefe, Reichweite), mit den Namen der zugehörigen `kenngroessen` ohne Zahlenwerte. Regelwerke nennst du nur unter `regelwerke` mit Quelle und Fundstelle aus diesem Lauf. Ohne Beleg lässt du das Regelwerk weg und ergänzt bei Bedarf einen Recherchepunkt in `offene_punkte`.
+15. **Schnittstellen.** Setz an Flüssen zwischen verschiedenen Hauptsystemen `schnittstelle` mit der Bezeichnung der Schnittstelle, sofern sie sich benennen lässt.
 
 **Prüfliste vor der Ausgabe** (im Denken, ohne Skript)
 - Vollständigkeit: Jede Kategorie ist abgedeckt oder begründet entfallen. Jedes Hauptsystem ist bis zu den Komponenten zerlegt. Die strukturändernden Varianten sind beschrieben.
@@ -85,6 +92,7 @@ Erstelle den Artikel **{artikel_id} {bezeichnung}** ({artikeltyp}) nach Leitfade
 - Jede `absatz_id`, `element_id`, jedes `von` und `nach` verweist auf etwas Vorhandenes. Alle IDs sind eindeutig.
 - Jede Quelle hat einen zutreffenden `quellentyp` und wird in mindestens einem Beleg verwendet.
 - Die Wortzahl liegt zwischen 1.300 und 2.000. In nicht belegten Absätzen stehen keine Ziffern und keine Normkürzel.
+- Mindestens drei Varianten, jede mit Auswahlkriterien, Auswirkungen und mindestens einer Klärungsfrage. Jedes Hauptsystem hat mindestens eine Klärungsfrage und ein Anforderungsthema. Jede Frage endet mit Fragezeichen. Regelwerke nur mit Beleg.
 
 **Korrekturrunden**
 - Korrigiere nur die gemeldeten Stellen und gib das vollständige JSON mit `status: in_arbeit` erneut aus.

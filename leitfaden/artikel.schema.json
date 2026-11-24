@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Artikel der Fahrzeugarchitektur-Wissensbasis (Schema 2.2, Leitfaden 2.3)",
+  "title": "Artikel der Fahrzeugarchitektur-Wissensbasis (Schema 2.3, Leitfaden 2.4)",
   "type": "object",
   "required": [
     "schema_version",
@@ -20,7 +20,8 @@
       "enum": [
         "2.0",
         "2.1",
-        "2.2"
+        "2.2",
+        "2.3"
       ]
     },
     "artikel_id": {
@@ -445,6 +446,11 @@
                   "type": "string",
                   "pattern": "^P\\d+$"
                 }
+              },
+              "schnittstelle": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Ab 2.3, optional: Bezeichnung der Schnittstelle, über die der Fluss läuft (Grundlage für Ports und Schnittstellenanforderungen)."
               }
             },
             "additionalProperties": false
@@ -479,6 +485,207 @@
               "grund": {
                 "type": "string",
                 "minLength": 1
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "varianten": {
+          "type": "array",
+          "description": "Ab 2.3, bei Blattartikeln Pflicht: strukturändernde Varianten als Grundlage für Architekturvorschläge.",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "element_id",
+              "bezeichnung",
+              "alternativen",
+              "auswahlkriterien",
+              "auswirkungen",
+              "absatz_ids"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^V\\d+$"
+              },
+              "element_id": {
+                "type": "string",
+                "pattern": "^E\\d+$"
+              },
+              "bezeichnung": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Gegenstand der Entscheidung, z. B. Antriebsart."
+              },
+              "alternativen": {
+                "type": "array",
+                "minItems": 2,
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "auswahlkriterien": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "description": "Wonach zwischen den Alternativen entschieden wird, ohne Zahlenwerte."
+              },
+              "auswirkungen": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "element_id",
+                    "beschreibung"
+                  ],
+                  "properties": {
+                    "element_id": {
+                      "type": "string",
+                      "pattern": "^E\\d+$"
+                    },
+                    "beschreibung": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "additionalProperties": false
+                },
+                "description": "Welche Elemente, vorrangig anderer Hauptsysteme, sich je nach Alternative ändern."
+              },
+              "absatz_ids": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "string",
+                  "pattern": "^P\\d+$"
+                }
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "klaerungsfragen": {
+          "type": "array",
+          "description": "Ab 2.3, bei Blattartikeln Pflicht: konkrete Fragen an Modellierer oder Auftraggeber beim Verfeinern von Architektur und Anforderungen.",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "frage",
+              "element_ids",
+              "anlass",
+              "relevanz"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^K\\d+$"
+              },
+              "frage": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Eine beantwortbare Frage, endet mit Fragezeichen."
+              },
+              "element_ids": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "string",
+                  "pattern": "^E\\d+$"
+                }
+              },
+              "anlass": {
+                "enum": [
+                  "architekturentscheidung",
+                  "anforderung",
+                  "schnittstelle",
+                  "betrieb"
+                ]
+              },
+              "relevanz": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Was von der Antwort abhängt."
+              },
+              "variante_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^V\\d+$"
+                }
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "anforderungsthemen": {
+          "type": "array",
+          "description": "Ab 2.3, bei Blattartikeln Pflicht: Themen, zu denen beim Verfeinern typischerweise Anforderungen entstehen.",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "element_ids",
+              "thema",
+              "kenngroessen"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^R\\d+$"
+              },
+              "element_ids": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "string",
+                  "pattern": "^E\\d+$"
+                }
+              },
+              "thema": {
+                "type": "string",
+                "minLength": 1
+              },
+              "kenngroessen": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "description": "Namen der Kenngrößen, ohne Zahlenwerte."
+              },
+              "regelwerke": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "bezeichnung",
+                    "quellen_id",
+                    "fundstelle"
+                  ],
+                  "properties": {
+                    "bezeichnung": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "quellen_id": {
+                      "type": "string",
+                      "pattern": "^Q\\d+$"
+                    },
+                    "fundstelle": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "additionalProperties": false
+                },
+                "description": "Nur mit Beleg aus einer abgerufenen Quelle (Regel 7)."
               }
             },
             "additionalProperties": false

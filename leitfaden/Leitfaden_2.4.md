@@ -1,23 +1,39 @@
-# Leitfaden 2.3 – Erstellung der Fahrzeugarchitektur-Wissensbasis
+# Leitfaden 2.4 – Erstellung der Fahrzeugarchitektur-Wissensbasis
 
-> **Rekonstruktion vom 2026-11-24.** Das Original von Leitfaden 2.3 lag nicht vor. Diese Fassung ist aus
+> **Fassung 2.4 vom 2026-11-24.** Sie beruht auf einer Rekonstruktion von Leitfaden 2.3, dessen Original nicht
+> vorlag, und erweitert sie um den Zweck der Wissensbasis und Schema 2.3 (Abschnitt 10). Die Rekonstruktion ist aus
 > `Arbeitsauftrag_Artikel.md`, `artikel.schema.json` (Schema 2.2), `glossar_vorgaben.json` und den Dateien von
 > Probelauf 2 (`probelaeufe/probelauf2/`) hergeleitet. Jede Festlegung trägt eine Kennung:
 > **[belegt]** steht so oder sinngemäß in diesen Dateien; **[ergänzt]** ist eine neue Festlegung, die die Lücke
 > schließt und vom Auftraggeber bestätigt oder geändert werden sollte.
 > Bei Widerspruch gehen Arbeitsauftrag und Schema diesem Leitfaden vor.
 
-## 0. Gegenstand und Dateien
+## 0. Zweck, Gegenstand und Dateien
 
-Die Wissensbasis beschreibt für jede Fahrzeugart des Inventars die generische Referenzarchitektur als
-Fließtextartikel mit maschinenlesbarem Modellblock (Elemente, Funktionen, Flüsse). **[belegt]**
+**Zweck.** Die Wissensbasis gibt Anleitung und Unterstützung beim Modellieren von Fahrzeugen. Sie dient dazu,
+beim Verfeinern von Architekturen und Anforderungen Vorschläge zu machen und konkrete Fragen zu stellen.
+**[vom Auftraggeber festgelegt, 2026-11-24]** Daraus folgen drei Nutzungen jedes Artikels:
+
+1. **Anleiten:** Dekomposition, Funktionszuordnung, Flüsse und Modellierungsbezug zeigen, wie die Fahrzeugart als
+   Modell aufgebaut wird.
+2. **Vorschlagen:** Varianten mit Alternativen, Auswahlkriterien und Auswirkungen auf andere Hauptsysteme
+   (`modell.varianten`); Vergleich mit verwandten Fahrzeugarten über die Übersichten.
+3. **Nachfragen:** Klärungsfragen je Hauptsystem (`modell.klaerungsfragen`) und Anforderungsthemen mit Kenngrößen
+   (`modell.anforderungsthemen`).
+
+Die Kennzeichnung jedes Absatzes nach Begründung und Sicherheit erlaubt einem Assistenten, belegte Lösungen von
+Vorschlägen zu unterscheiden.
+
+**Gegenstand.** Die Wissensbasis beschreibt für jede Fahrzeugart des Inventars die generische Referenzarchitektur als
+Fließtextartikel mit maschinenlesbarem Modellblock (Elemente, Funktionen, Flüsse, ab Schema 2.3 auch Varianten,
+Klärungsfragen und Anforderungsthemen). **[belegt; Erweiterung 2.4]**
 
 | Datei | Zweck |
 |---|---|
-| `leitfaden/Leitfaden_2.3.md` | dieser Leitfaden |
+| `leitfaden/Leitfaden_2.4.md` | dieser Leitfaden |
 | `leitfaden/Arbeitsauftrag_Artikel.md` | Vorlage für jeden Erstellungs-, Übersichts- und Korrekturaufruf **[belegt]** |
 | `leitfaden/Referenzartikel_Lkw.md` | Maßstab für Aufbau, Dramaturgie und Detailtiefe, kein Beleg **[belegt]** |
-| `leitfaden/artikel.schema.json` | Schema 2.2 für jeden Artikel **[belegt]** |
+| `leitfaden/artikel.schema.json` | Schema 2.3 für jeden Artikel (2.2 bleibt lesbar) **[belegt; Erweiterung 2.4]** |
 | `leitfaden/Recherchegliederung.md` | Taxonomie als Baum, erzeugt aus `kb/inventar.json` **[ergänzt]** |
 | `kb/manifest.json` | Versionen: Leitfaden, Schema, Recherchegliederung, Laufart **[belegt]** |
 | `kb/inventar.json` | 191 Artikel mit Typ, Recherchepfaden und Kindartikeln **[belegt]** |
@@ -123,6 +139,9 @@ in `aenderungen.json`. Nur der Orchestrator setzt diese beiden Stufen. **[belegt
 - Der Reviewer prüft, was `validate` nicht prüfen kann:
   1. Stichprobe von mindestens drei belegten Absätzen: Quelle abrufen, steht jede Aussage in der Fundstelle?
   2. Fachliche Richtigkeit und Reichweite der hergeleiteten Absätze (trägt die Herleitung, stimmt die Sicherheit?).
+  2a. Brauchbarkeit für den Zweck: Sind die Varianten echte Architekturentscheidungen mit zutreffenden
+     Auswirkungen? Sind die Klärungsfragen konkret, beantwortbar und für die Verfeinerung nötig? Fehlen
+     naheliegende Anforderungsthemen?
   3. Vollständigkeit der Architektur gegenüber der Fahrzeugart; fehlende strukturändernde Varianten.
   4. Passen `begruendung`, `aussagetyp` und Quellentyp?
   5. Bei Übersichten: Sind Gemeinsamkeiten und Unterschiede der Kindartikel zutreffend wiedergegeben?
@@ -139,7 +158,7 @@ in `aenderungen.json`. Nur der Orchestrator setzt diese beiden Stufen. **[belegt
 
 ```json
 {"datum": "JJJJ-MM-TT", "anlass": "…", "betroffene_artikel_ids": ["A-0001"],
- "leitfaden_version": "2.3", "aufruftyp": "erstellung|uebersicht|korrektur|revision|review|status|glossar",
+ "leitfaden_version": "2.4", "aufruftyp": "erstellung|uebersicht|korrektur|revision|review|status|glossar",
  "modell_id": "claude-opus-5-5"}
 ```
 
@@ -174,3 +193,17 @@ in `aenderungen.json`. Nur der Orchestrator setzt diese beiden Stufen. **[belegt
 - Klären, ob `kb_tool.py validate` im Original andere Prüfungen oder Stufen hatte.
 - Für den Gesamtlauf den Ressourcenrahmen festlegen: Probelauf 2 brauchte je Blattartikel etwa 120.000 bis 150.000
   Tokens und 6 bis 11 Minuten.
+
+## 10. Änderungen in Fassung 2.4 gegenüber 2.3
+
+- **Zweck** der Wissensbasis aufgenommen (Abschnitt 0).
+- **Schema 2.3**: im Modellblock neu `varianten`, `klaerungsfragen` und `anforderungsthemen` (bei Blattartikeln
+  Pflicht), an Flüssen optional `schnittstelle`. Der Fließtext und seine Wortgrenzen bleiben unverändert.
+- **Arbeitsauftrag**: Abschnitt „Zweck der Wissensbasis“, Vorgehen Schritt 1 ergänzt, Regeln 12 bis 15, zwei
+  Punkte in der Prüfliste.
+- **`kb_tool.py validate`**: prüft die neuen Felder. FEHLER: kaputte Verweise, Hauptsystem ohne Klärungsfrage oder
+  ohne Anforderungsthema, fehlende Pflichtfelder. WARNUNG: weniger als drei Varianten, Variante ohne Klärungsfrage,
+  Frage ohne Fragezeichen, Ziffern oder Normkürzel außerhalb von `regelwerke`. HINWEIS: Variante ohne Auswirkung
+  auf ein anderes Hauptsystem.
+- **Review** (Abschnitt 6) prüft zusätzlich die Brauchbarkeit von Varianten, Fragen und Anforderungsthemen.
+- Artikel nach Schema 2.2 (Probelauf 2) bleiben gültig. `validate` meldet bei ihnen einen HINWEIS.
