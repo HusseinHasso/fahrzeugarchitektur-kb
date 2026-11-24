@@ -23,7 +23,7 @@
       "titel": "Methodische Erläuterungen zu Statistiken über Fahrzeugzulassungen (FZ)",
       "urheber": "Kraftfahrt-Bundesamt",
       "stand": "2021-01",
-      "url": "https://www.kba.de/DE/Statistik/Fahrzeuge/fz_methodik/fz_methodische_erlaeuterungen_202101_pdf.pdf?__blob=publicationFile&v=3",
+      "url": "https://www.kba.de/DE/Statistik/Fahrzeuge/fz_methodik/fz_methodische_erlaueterungen_202101_pdf.pdf?__blob=publicationFile&v=3",
       "abgerufen": true,
       "abrufdatum": "2026-11-24",
       "quellentyp": "behoerde"
@@ -106,7 +106,7 @@
         },
         {
           "absatz_id": "P4",
-          "text": "Architektonisch ist das SUV damit ein Personenkraftwagen, der Pkw-Plattformtechnik mit Merkmalen des Geländewagens verbindet. Seine Hauptsysteme sind über mechanische, elektrische, hydraulische, pneumatische, thermische und informationstechnische Schnittstellen gekoppelt. Die folgende Dekomposition zerlegt sie in Subsysteme und Komponenten und benennt die Bauweisen, die ihre Struktur verändern.",
+          "text": "Architektonisch ist das SUV damit ein Personenkraftwagen, der Pkw-Plattformtechnik mit Merkmalen des Geländewagens verbindet. Seine Hauptsysteme sind über mechanische, elektrische, hydraulische, pneumatische, thermische und informationstechnische Schnittstellen gekoppelt; die folgende Dekomposition zerlegt sie in Subsysteme und Komponenten und benennt strukturändernde Bauweisen.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -188,15 +188,18 @@
       "absaetze": [
         {
           "absatz_id": "P8",
-          "text": "Das Antriebssystem erzeugt Antriebsleistung und überträgt das Drehmoment auf die angetriebenen Räder. Antriebsmaschine ist ein Verbrennungsmotor, den bei hybriden Bauweisen eine elektrische Traktionsmaschine ergänzt und bei batterieelektrischen ersetzt. Die Kraftübertragung führt über das Getriebe, bei Allradantrieb über Verteilergetriebe oder Allradkupplung und Gelenkwelle, zum Achsdifferenzial jeder angetriebenen Achse und über Antriebswellen zu den Rädern.",
+          "text": "Das Antriebssystem erzeugt die Antriebsleistung für die Räder. Antriebsmaschine ist ein Verbrennungsmotor mit Abgasanlage und Abgasnachbehandlung, den hybride Bauweisen um eine Traktionsmaschine ergänzen und batterieelektrische durch sie ersetzen; ein Wechselrichter der Leistungselektronik speist sie aus dem Hochvolt-Bordnetz. In der Kraftübertragung treibt bei Frontquereinbau das Getriebe das vordere Achsdifferenzial an, ein Winkeltrieb zweigt über die Gelenkwelle zur Allradkupplung vor dem hinteren Achsdifferenzial ab; bei Längseinbau verteilt es ein Verteilergetriebe.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "P9",
-              "Eine Antriebsmaschine muss ihr Drehmoment drehzahlgewandelt und mit Drehzahlausgleich zwischen den Rädern an die Antriebsräder abgeben"
+              "P10",
+              "Eine Antriebsmaschine muss ihr Drehmoment drehzahlgewandelt und mit Drehzahlausgleich zwischen den Rädern an die Antriebsräder abgeben",
+              "Eine Wechselstrommaschine braucht einen Wechselrichter zwischen Gleichstromspeicher und Maschine",
+              "Ein Verbrennungsmotor braucht eine Abgasführung"
             ],
-            "schluss": "Das Antriebssystem gliedert sich in Antriebsmaschine und Kraftübertragung mit Getriebe, Verteilergetriebe, Gelenkwelle und Achsdifferenzial."
+            "schluss": "Das Antriebssystem gliedert sich in Antriebsmaschine mit Verbrennungsmotor, Abgasanlage, Traktionsmaschine und Leistungselektronik sowie Kraftübertragung, deren Aufbau von der Einbaulage abhängt."
           },
           "sicherheit": "hoch",
           "aussagetyp": "funktion",
@@ -204,7 +207,7 @@
         },
         {
           "absatz_id": "P9",
-          "text": "Ein Allradantrieb erfordert zwei Achsdifferenziale. Permanente Allradantriebe teilen die Antriebsleistung über ein Zentraldifferenzial auf beide Achsen auf. Bei kupplungsgesteuerten, auch Hang-On genannten Systemen wird eine Achse permanent angetrieben und die andere nur unter bestimmten Voraussetzungen über eine Kupplung versorgt, bei aktiven Systemen meist über eine elektronisch gesteuerte Reiblamellenkupplung, die ein übergeordneter Fahrdynamikregler situationsabhängig steuert. Bei Hybridantrieben kann ein eigener Elektromotor die Hinterachse antreiben; Kardanwelle und Mitteldifferenzial entfallen dann.",
+          "text": "Permanente Allradantriebe teilen die Antriebsleistung über ein Zentraldifferenzial auf beide Achsen auf. Bei kupplungsgesteuerten, auch Hang-On genannten Systemen wird eine Achse permanent angetrieben und die andere nur unter bestimmten Voraussetzungen über eine Kupplung versorgt, bei aktiven Systemen meist über eine elektronisch gesteuerte Reiblamellenkupplung, die ein übergeordneter Fahrdynamikregler steuert. Bei Hybridantrieben kann ein eigener Elektromotor die Hinterachse antreiben.",
           "begruendung": "belegt",
           "belege": [
             {
@@ -235,7 +238,7 @@
       "absaetze": [
         {
           "absatz_id": "P11",
-          "text": "Das Energieversorgungssystem speichert die Antriebsenergie und stellt sie dem Antriebssystem bereit. Beim konventionellen SUV ist das die Kraftstoffanlage mit Tank, Förderpumpe und Leitungen. Elektrifizierte Bauweisen besitzen eine Traktionsbatterie mit Batteriemanagement und Schutzeinrichtungen, die beim Bremsen Energie der Traktionsmaschine aufnimmt und vom Thermomanagement temperiert wird. Plug-in-hybride und batterieelektrische SUV haben zusätzlich eine Ladeeinrichtung mit Ladeanschluss und Bordlader.",
+          "text": "Das Energieversorgungssystem speichert die Antriebsenergie und stellt sie dem Antriebssystem bereit. Beim konventionellen SUV ist das die Kraftstoffanlage mit Tank, Förderpumpe und Leitungen. Elektrifizierte Bauweisen besitzen ein Hochvoltsystem aus Traktionsbatterie mit Batteriemanagement und Schutzeinrichtungen und einem Hochvolt-Bordnetz mit Gleichspannungswandler zum Niedervolt-Bordnetz. Die Traktionsbatterie nimmt beim Bremsen Energie der Traktionsmaschine auf und wird vom Thermomanagement temperiert. Plug-in-hybride und batterieelektrische SUV haben zusätzlich eine Ladeeinrichtung mit Ladeanschluss und Bordlader.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -245,7 +248,7 @@
               "Ein elektrischer Antrieb braucht Energiespeicher, Überwachung und Wärmeabfuhr",
               "Ein extern aufladbarer Speicher braucht eine Ladeschnittstelle"
             ],
-            "schluss": "Das Energieversorgungssystem besteht je nach Antriebsart aus Kraftstoffanlage, Traktionsbatterie und Ladeeinrichtung."
+            "schluss": "Das Energieversorgungssystem besteht je nach Antriebsart aus Kraftstoffanlage und einem Hochvoltsystem mit Traktionsbatterie, Hochvolt-Bordnetz und Ladeeinrichtung."
           },
           "sicherheit": "hoch",
           "aussagetyp": "funktion",
@@ -301,7 +304,7 @@
       "absaetze": [
         {
           "absatz_id": "P14",
-          "text": "Das Bremssystem verzögert das SUV, hält es im Stand und setzt die Eingriffe der Fahrdynamikregelung um. In der Betriebsbremse wirkt das Bremspedal über einen Bremskraftverstärker auf den Hauptbremszylinder; ein Hydraulikaggregat mit Ventilen und Pumpe moduliert die Drücke radindividuell, und die Radbremsen wandeln Bewegungsenergie in Wärme. Die Feststellbremse kann mechanisch oder elektromechanisch wirken. Bei elektrifizierten SUV übernimmt die Traktionsmaschine einen Teil der Verzögerung; ein unterdruckunabhängiger Bremskraftverstärker stimmt dann Reib- und Rekuperationsbremse ab.",
+          "text": "Das Bremssystem verzögert das SUV, hält es im Stand und setzt die Eingriffe der Fahrdynamikregelung um. In der Betriebsbremse wirkt das Bremspedal über einen Bremskraftverstärker auf den Hauptbremszylinder; ein Hydraulikaggregat mit Ventilen und Pumpe moduliert die Drücke radindividuell, und die Radbremsen wandeln Bewegungsenergie in Wärme. Die Feststellbremse kann mechanisch oder elektromechanisch wirken. Bei elektrifizierten SUV übernimmt die Traktionsmaschine einen Teil der Verzögerung; die Bremsregelung muss Reib- und Rekuperationsbremse überblenden, etwa mit einem unterdruckunabhängigen, elektromechanischen Bremskraftverstärker oder einem integrierten Bremssystem, das Druckerzeugung und Radmodulation in einer Einheit vereint.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -311,9 +314,9 @@
               "Radindividuelle Bremseingriffe erfordern ein Stellglied, das Bremsdrücke je Rad unabhängig vom Pedal aufbauen und abbauen kann",
               "Eine Traktionsmaschine kann generatorisch bremsen"
             ],
-            "schluss": "Das Bremssystem besteht aus Betriebsbremse mit Bremskraftverstärker, Hydraulikaggregat und Radbremsen sowie der Feststellbremse; bei Elektrifizierung kommt die Abstimmung mit der Rekuperation hinzu."
+            "schluss": "Das Bremssystem besteht aus Betriebsbremse mit Bremskraftverstärker, Hydraulikaggregat und Radbremsen sowie der Feststellbremse; bei Elektrifizierung kommt die Überblendung mit der Rekuperation hinzu, deren Bauart offen ist."
           },
-          "sicherheit": "hoch",
+          "sicherheit": "mittel",
           "aussagetyp": "funktion",
           "herangezogene_artikel_ids": []
         },
@@ -423,16 +426,17 @@
       "absaetze": [
         {
           "absatz_id": "P20",
-          "text": "Fahrzeugsteuerung und Information bilden die logische Ebene über den physischen Systemen. Die Fahrdynamikregelung wertet Raddrehzahlen, Lenkwinkel, Gierrate und Querbeschleunigung aus, greift über Bremse und Antrieb ein und steuert bei aktiver Allradkupplung die Momentenverteilung zwischen den Achsen. Die Fahrmodusverwaltung schaltet je nach Fahrprogramm, etwa Straße, Schnee, Gelände oder Anhängerbetrieb, die Kennlinien von Antrieb, Allradkupplung, Getriebe, Fahrwerk und Bremsregelung um. Bei Hybriden koordiniert ein Energiemanagement die Antriebspfade. Zustände und Warnungen gibt die Fahrzeugsteuerung über die Anzeigeelemente des Fahrgastraums aus. Die Diagnoseschnittstelle stellt Fehler-, Zustands- und Wartungsdaten bereit und dient der Softwareaktualisierung.",
+          "text": "Fahrzeugsteuerung und Information bilden die logische Ebene über den physischen Systemen. Die Fahrdynamikregelung wertet Raddrehzahlen, Lenkwinkel, Gierrate und Querbeschleunigung aus, greift über Bremse und Antrieb ein und steuert bei aktiver Allradkupplung die Momentenverteilung zwischen den Achsen. Die Fahrmodusverwaltung schaltet je nach Fahrprogramm, etwa Straße, Schnee, Gelände oder Anhängerbetrieb, die Kennlinien von Antrieb, Allradkupplung, Getriebe, Fahrwerk und Bremsregelung um. Bei Hybriden koordiniert ein Energiemanagement die Antriebspfade. Zustände und Warnungen gibt die Fahrzeugsteuerung über die Anzeigeelemente des Fahrgastraums aus. Zur externen Kommunikation gehören die Diagnoseschnittstelle für Fehler-, Zustands- und Wartungsdaten in der Werkstatt und eine Telematikeinheit, die Mobilfunkverbindung, Ortung und automatischen Notruf bereitstellt und Softwareaktualisierungen über Funk überträgt.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "P9",
               "P15",
-              "Funktionen, die mehrere Hauptsysteme gleichzeitig beeinflussen, brauchen eine übergeordnete Koordination"
+              "Funktionen, die mehrere Hauptsysteme gleichzeitig beeinflussen, brauchen eine übergeordnete Koordination",
+              "Fernzugriff, Notruf und Ortung erfordern eine Mobilfunk- und Satellitenempfangseinheit im Fahrzeug"
             ],
-            "schluss": "Fahrzeugsteuerung und Information umfassen Fahrdynamikregelung, Fahrmodusverwaltung und Diagnoseschnittstelle."
+            "schluss": "Fahrzeugsteuerung und Information umfassen Fahrdynamikregelung, Fahrmodusverwaltung und die externe Kommunikation mit Diagnoseschnittstelle und Telematikeinheit."
           },
           "sicherheit": "mittel",
           "aussagetyp": "funktion",
@@ -498,7 +502,7 @@
       "absaetze": [
         {
           "absatz_id": "P23",
-          "text": "Das Thermomanagement regelt die Betriebstemperaturen und klimatisiert den Innenraum. Der Kühlkreislauf mit Pumpe, Kühler, Lüfter und Ventilen führt Wärme von Verbrennungsmotor, Getriebe, Leistungselektronik und Traktionsmaschine ab. Der Kältekreislauf mit Klimakompressor, Verdampfer und Kondensator kühlt den Innenraum und bei elektrifizierten SUV über einen Wärmetauscher die Traktionsbatterie; als Wärmepumpe betrieben, kann er auch heizen. Eine Regelung mit Temperatursensoren und Stellventilen verteilt die Wärmeströme bedarfsgerecht zwischen den Kreisläufen. Das Heiz- und Lüftungsgerät verteilt temperierte Luft im Fahrgastraum. Anhängerbetrieb, langsame Geländefahrt und das große Innenraumvolumen erhöhen die geforderte Kühl- und Klimaleistung.",
+          "text": "Das Thermomanagement regelt die Betriebstemperaturen und klimatisiert den Innenraum. Ein oder mehrere Kühlkreisläufe auf unterschiedlichem Temperaturniveau mit Pumpen, Kühlern, Lüfter und Ventilen führen Wärme von Verbrennungsmotor, Getriebe, Leistungselektronik und Traktionsmaschine ab. Der Kältekreislauf mit Klimakompressor, Verdampfer und Kondensator kühlt den Innenraum und kann bei elektrifizierten SUV über einen Wärmetauscher auch die Traktionsbatterie kühlen; alternativ wird die Batterie über einen eigenen Kühlkreislauf temperiert. Eine Regelung mit Temperatursensoren und Stellventilen verteilt die Wärmeströme bedarfsgerecht. Das Heiz- und Lüftungsgerät verteilt temperierte Luft im Fahrgastraum. Anhängerbetrieb, langsame Geländefahrt und das große Innenraumvolumen erhöhen die geforderte Kühl- und Klimaleistung.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -511,7 +515,7 @@
             ],
             "schluss": "Das Thermomanagement besteht aus Kühlkreislauf, Kältekreislauf sowie Heiz- und Lüftungsgerät und ist mit Antrieb, Energieversorgung und Fahrgastraum gekoppelt."
           },
-          "sicherheit": "hoch",
+          "sicherheit": "mittel",
           "aussagetyp": "funktion",
           "herangezogene_artikel_ids": []
         }
@@ -524,7 +528,7 @@
       "absaetze": [
         {
           "absatz_id": "P24",
-          "text": "Neben- und Versorgungssysteme stellen Hilfsenergien für einzelne Verbraucher bereit. Ein SUV mit Luftfederung besitzt einen elektrisch angetriebenen Luftfederkompressor mit Lufttrockner, Speicher und Ventilblock, der die Federbälge versorgt und die Niveauregulierung ermöglicht. Fehlt ausreichender Saugrohrunterdruck, etwa beim Dieselmotor oder beim batterieelektrischen Antrieb, liefert eine Unterdruckpumpe den Unterdruck für einen pneumatischen Bremskraftverstärker, sofern dieser nicht elektromechanisch ausgeführt ist. Hilfsaggregate wie Standheizung oder Seilwinde kommen je nach Ausstattung hinzu und werden an Bordnetz und Tragstruktur angebunden. Ihr Energiebedarf belastet das Niedervolt-Bordnetz, und sie werden je Ausstattungsvariante zu- oder abgewählt.",
+          "text": "Neben- und Versorgungssysteme stellen Hilfsenergien für einzelne Verbraucher bereit. Ein SUV mit Luftfederung besitzt einen elektrisch angetriebenen Luftfederkompressor mit Lufttrockner, Speicher und Ventilblock, der die Federbälge versorgt und die Niveauregulierung ermöglicht. Fehlt ausreichender Saugrohrunterdruck, etwa beim Dieselmotor oder beim batterieelektrischen Antrieb, liefert eine Unterdruckpumpe den Unterdruck für einen pneumatischen Bremskraftverstärker, sofern dieser nicht elektromechanisch ausgeführt ist. Hilfsaggregate wie Standheizung oder Seilwinde kommen je nach Ausstattung hinzu und werden an Bordnetz und Tragstruktur angebunden. Ihr Energiebedarf belastet das Niedervolt-Bordnetz, und sie werden je nach Ausstattungsvariante zu- oder abgewählt.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -548,7 +552,7 @@
       "absaetze": [
         {
           "absatz_id": "P25",
-          "text": "Auf oberster Ebene besteht das SUV aus Fahrzeugstruktur und Fahrwerk, Antriebssystem, Energieversorgungssystem, Lenksystem, Bremssystem, Fahrgastraum, Laderaum und Anhängevorrichtung, Elektrik und Elektronik, Fahrzeugsteuerung und Information, Fahrerassistenz und Sicherheit, Beleuchtung und Sicht, Thermomanagement sowie Neben- und Versorgungssystemen. Kennzeichnend gegenüber anderen Pkw sind erhöhte Bodenfreiheit, Allradoptionen, Anhängebetrieb und die Fahrmodusverwaltung.",
+          "text": "Auf oberster Ebene besteht das SUV aus Fahrzeugstruktur und Fahrwerk, Antriebssystem, Energieversorgungssystem, Lenksystem, Bremssystem, Fahrgastraum, Laderaum und Anhängevorrichtung, Elektrik und Elektronik, Fahrzeugsteuerung und Information, Fahrerassistenz und Sicherheit, Beleuchtung und Sicht, Thermomanagement sowie Neben- und Versorgungssystemen. Kennzeichnend gegenüber anderen Pkw sind die erhöhte Bodenfreiheit, die höhere Sitzposition mit an Geländewagen angelehnten Proportionen und der daraus folgende höhere Schwerpunkt; Allradantrieb, Geländefahrprogramme und Anhängebetrieb sind häufige, aber nicht kennzeichnende Optionen.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -556,13 +560,15 @@
               "P1",
               "P4",
               "P5",
+              "P6",
               "P8",
+              "P16",
               "P18",
               "P20"
             ],
-            "schluss": "Die dreizehn Hauptsysteme bilden die oberste Dekompositionsebene des SUV."
+            "schluss": "Die dreizehn Hauptsysteme bilden die oberste Dekompositionsebene; Bodenfreiheit, Sitzposition und Schwerpunkt unterscheiden das SUV von anderen Pkw."
           },
-          "sicherheit": "hoch",
+          "sicherheit": "mittel",
           "aussagetyp": "funktion",
           "herangezogene_artikel_ids": []
         }
@@ -574,7 +580,7 @@
       "absaetze": [
         {
           "absatz_id": "P26",
-          "text": "In SysML bildet der Block `SUV` das Gesamtsystem mit den Hauptsystemen als Teilen. Beispiele für Dekompositionspfade sind `Antriebssystem → Kraftübertragung → Verteilergetriebe → Gelenkwelle → Achsdifferenzial`, `Fahrzeugstruktur und Fahrwerk → Fahrwerk → Federung und Dämpfung` und `Bremssystem → Betriebsbremse → Hydraulikaggregat`. Ports und Konnektoren bilden Radantrieb, Hochvolt-, Niedervolt-, Kühlmittel-, Luftfeder- und Busanschlüsse ab. Tragstruktur, Allradbauart und Antriebsart lassen sich als Varianten des Grundblocks modellieren. Geeignet sind Blockdefinitions- und interne Blockdiagramme, Aktivitätsdiagramme für Leistungsflüsse und ein Zustandsdiagramm für die Fahrmodusverwaltung.",
+          "text": "In SysML bildet der Block `SUV` das Gesamtsystem. Beispiele für Dekompositionspfade sind `Antriebssystem → Kraftübertragung → Verteilergetriebe → Gelenkwelle → Achsdifferenzial`, `Fahrzeugstruktur und Fahrwerk → Fahrwerk → Federung und Dämpfung` und `Bremssystem → Betriebsbremse → Hydraulikaggregat`. Ports und Konnektoren bilden Radantrieb, Hochvolt-, Niedervolt-, Kühlmittel-, Luftfeder- und Busanschlüsse ab. Tragstruktur, Allradbauart und Antriebsart lassen sich als Varianten des Grundblocks modellieren. Geeignet sind Blockdefinitions- und interne Blockdiagramme, Aktivitätsdiagramme für Leistungsflüsse und ein Zustandsdiagramm für die Fahrmodusverwaltung.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -599,7 +605,7 @@
       "absaetze": [
         {
           "absatz_id": "P27",
-          "text": "Die Kraftstoffanlage versorgt den Verbrennungsmotor, die Traktionsbatterie die Traktionsmaschine, die beim Rekuperieren zurückspeist; die Ladeeinrichtung lädt die Batterie. Drehmoment fließt über Getriebe, Verteilergetriebe, Gelenkwelle und Achsdifferenzial zu Rädern und Reifen; Radbremsen wirken auf die Räder, das Lenkgetriebe auf die Radaufhängung. Das Niedervolt-Bordnetz speist Lenkunterstützung und Scheinwerfer. Umfeldsensoren melden an das Assistenzsteuergerät, das wie die Fahrdynamikregelung Sollwerte an Hydraulikaggregat und Lenkunterstützung sendet; Steuergeräte melden an die Anzeigeelemente, die Bedienelemente an die Fahrmodusverwaltung, diese an das Verteilergetriebe. Wärme fließt von der Traktionsmaschine in den Kühlkreislauf, Kälte vom Kältekreislauf zur Traktionsbatterie, Warmluft in den Fahrgastraum. Luftfederkompressor und Unterdruckpumpe versorgen Federung und Bremskraftverstärker; die Anhängekupplung leitet Anhängelasten in die Rohbaukarosserie.",
+          "text": "Die Kraftstoffanlage versorgt den Verbrennungsmotor, die Abgasanlage führt dessen Abgas ab. Das Hochvolt-Bordnetz verbindet Traktionsbatterie, Ladeeinrichtung und Leistungselektronik, die die Traktionsmaschine speist und rekuperierte Energie zurückführt; sein Gleichspannungswandler speist das Niedervolt-Bordnetz, das Lenkunterstützung und Scheinwerfer versorgt. Drehmoment fließt vom Getriebe zum vorderen Achsdifferenzial und über Winkeltrieb oder Verteilergetriebe, Gelenkwelle und Allradkupplung zum hinteren, weiter zu Rädern und Reifen; Radbremsen und Lenkgetriebe wirken auf Räder und Radaufhängung. Umfeldsensoren melden an das Assistenzsteuergerät, das wie die Fahrdynamikregelung Sollwerte an Hydraulikaggregat und Lenkunterstützung sendet; die Telematikeinheit liefert Softwareaktualisierungen an die Steuergeräte, diese melden an die Anzeigeelemente. Wärme fließt von der Traktionsmaschine in den Kühlkreislauf, Warmluft in den Fahrgastraum, bei Batteriekühlung über die Klimaanlage Kälte vom Kältekreislauf zur Traktionsbatterie. Variantenabhängig versorgen Luftfederkompressor und Unterdruckpumpe Federung und pneumatischen Bremskraftverstärker; die Anhängekupplung leitet Anhängelasten in die Rohbaukarosserie.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -615,9 +621,9 @@
               "P23",
               "P24"
             ],
-            "schluss": "Die Flüsse verbinden alle Hauptsysteme über mechanische, elektrische, stoffliche, thermische, pneumatische und informationstechnische Schnittstellen."
+            "schluss": "Die Flüsse verbinden alle Hauptsysteme; ein Teil gilt nur für bestimmte Varianten von Antrieb, Federung und Bremse."
           },
-          "sicherheit": "hoch",
+          "sicherheit": "mittel",
           "aussagetyp": "funktion",
           "herangezogene_artikel_ids": []
         }
@@ -629,7 +635,7 @@
       "absaetze": [
         {
           "absatz_id": "P28",
-          "text": "Die Funktionen sind wie folgt zugeordnet. Fahrzeuglasten tragen: Tragstruktur, Fahrwerk; Energie speichern: Kraftstoffanlage, Traktionsbatterie; Treibstoff fördern: Kraftstoffanlage; Traktionsbatterie laden: Ladeeinrichtung; Antriebsleistung erzeugen: Verbrennungsmotor, Traktionsmaschine; Drehmoment übertragen: Getriebe, Verteilergetriebe, Gelenkwelle, Achsdifferenzial; Fahrzeug fortbewegen: Räder und Reifen; Bremsenergie zurückgewinnen: Traktionsmaschine, Bremskraftverstärker; Fahrzeug lenken: Lenkrad und Lenksäule, Lenkunterstützung, Lenkgetriebe; Fahrzeug verzögern: Betriebsbremse, Feststellbremse; Fahrereingaben erfassen und Fahrerinformationen anzeigen: Bedien- und Anzeigeelemente; Insassen schützen: Rückhaltesysteme, Airbagsteuergerät, Rohbaukarosserie; Ladung aufnehmen: Gepäckraum, Heckklappe; Anhänger ziehen: Anhängekupplung; Elektrische Energie verteilen: Niedervolt-Bordnetz; Daten übertragen: Kommunikationsnetz; Fahrzeugzustand überwachen: Steuergeräte, Fahrdynamikregelung, Diagnoseschnittstelle; Fahrzeugumfeld erfassen: Umfeldsensoren, Assistenzsteuergerät; Fahrzeugumgebung ausleuchten: Scheinwerfer; Fahrersicht sicherstellen: Sichtsysteme; Betriebstemperatur regeln: Kühlkreislauf; Innenraum klimatisieren: Kältekreislauf, Heiz- und Lüftungsgerät; Druckluft bereitstellen: Luftfederkompressor; Unterdruck bereitstellen: Unterdruckpumpe. Physische Dekomposition, Funktionszuordnung und Flüsse bilden zusammen die drei Perspektiven der Architektur.",
+          "text": "Die Funktionen sind wie folgt zugeordnet. Fahrzeuglasten tragen: Tragstruktur, Fahrwerk; Energie speichern: Kraftstoffanlage, Traktionsbatterie; Treibstoff fördern: Kraftstoffanlage; Traktionsbatterie laden: Ladeeinrichtung; Antriebsleistung erzeugen: Verbrennungsmotor, Traktionsmaschine, Leistungselektronik; Drehmoment übertragen: Getriebe, Verteilergetriebe, Winkeltrieb, Gelenkwelle, Allradkupplung, Achsdifferenziale; Fahrzeug fortbewegen: Räder und Reifen; Bremsenergie zurückgewinnen: Traktionsmaschine; Fahrzeug lenken: Lenkrad und Lenksäule, Lenkunterstützung, Lenkgetriebe; Fahrzeug verzögern: Betriebsbremse, Feststellbremse; Fahrereingaben erfassen und Fahrerinformationen anzeigen: Bedien- und Anzeigeelemente; Insassen schützen: Rückhaltesysteme, Airbagsteuergerät, Rohbaukarosserie; Ladung aufnehmen: Gepäckraum, Heckklappe; Anhänger ziehen: Anhängekupplung; Elektrische Energie verteilen: Niedervolt-Bordnetz, Hochvolt-Bordnetz; Daten übertragen: Kommunikationsnetz, Telematikeinheit; Fahrzeugzustand überwachen: Steuergeräte, Fahrdynamikregelung, Diagnoseschnittstelle; Fahrzeugposition bestimmen: Telematikeinheit; Fahrzeugumfeld erfassen: Umfeldsensoren, Assistenzsteuergerät; Fahrzeugumgebung ausleuchten: Scheinwerfer; Fahrersicht sicherstellen: Sichtsysteme; Betriebstemperatur regeln: Kühlkreislauf; Innenraum klimatisieren: Kältekreislauf, Heiz- und Lüftungsgerät; Druckluft bereitstellen: Luftfederkompressor; Unterdruck bereitstellen: Unterdruckpumpe.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -794,6 +800,27 @@
         ]
       },
       {
+        "id": "E301",
+        "name": "Abgasanlage mit Abgasnachbehandlung",
+        "typ": "komponente",
+        "eltern_id": "E31",
+        "absatz_ids": [
+          "P8",
+          "P27"
+        ]
+      },
+      {
+        "id": "E302",
+        "name": "Leistungselektronik",
+        "typ": "komponente",
+        "eltern_id": "E31",
+        "absatz_ids": [
+          "P8",
+          "P23",
+          "P27"
+        ]
+      },
+      {
         "id": "E34",
         "name": "Kraftübertragung",
         "typ": "subsystem",
@@ -834,12 +861,43 @@
       },
       {
         "id": "E38",
-        "name": "Achsdifferenzial",
+        "name": "Vorderes Achsdifferenzial",
         "typ": "komponente",
         "eltern_id": "E34",
         "absatz_ids": [
           "P8",
-          "P9"
+          "P27"
+        ]
+      },
+      {
+        "id": "E303",
+        "name": "Winkeltrieb",
+        "typ": "komponente",
+        "eltern_id": "E34",
+        "absatz_ids": [
+          "P8",
+          "P27"
+        ]
+      },
+      {
+        "id": "E304",
+        "name": "Allradkupplung",
+        "typ": "komponente",
+        "eltern_id": "E34",
+        "absatz_ids": [
+          "P8",
+          "P20",
+          "P27"
+        ]
+      },
+      {
+        "id": "E305",
+        "name": "Hinteres Achsdifferenzial",
+        "typ": "komponente",
+        "eltern_id": "E34",
+        "absatz_ids": [
+          "P8",
+          "P27"
         ]
       },
       {
@@ -864,10 +922,19 @@
         ]
       },
       {
+        "id": "E45",
+        "name": "Hochvoltsystem",
+        "typ": "subsystem",
+        "eltern_id": "E4",
+        "absatz_ids": [
+          "P11"
+        ]
+      },
+      {
         "id": "E42",
         "name": "Traktionsbatterie",
         "typ": "komponente",
-        "eltern_id": "E4",
+        "eltern_id": "E45",
         "absatz_ids": [
           "P11",
           "P12",
@@ -878,8 +945,19 @@
         "id": "E43",
         "name": "Ladeeinrichtung",
         "typ": "komponente",
-        "eltern_id": "E4",
+        "eltern_id": "E45",
         "absatz_ids": [
+          "P11",
+          "P27"
+        ]
+      },
+      {
+        "id": "E44",
+        "name": "Hochvolt-Bordnetz",
+        "typ": "komponente",
+        "eltern_id": "E45",
+        "absatz_ids": [
+          "P8",
           "P11",
           "P27"
         ]
@@ -1132,12 +1210,31 @@
         ]
       },
       {
-        "id": "E103",
-        "name": "Diagnoseschnittstelle",
-        "typ": "komponente",
+        "id": "E105",
+        "name": "Externe Kommunikation",
+        "typ": "subsystem",
         "eltern_id": "E10",
         "absatz_ids": [
           "P20"
+        ]
+      },
+      {
+        "id": "E103",
+        "name": "Diagnoseschnittstelle",
+        "typ": "komponente",
+        "eltern_id": "E105",
+        "absatz_ids": [
+          "P20"
+        ]
+      },
+      {
+        "id": "E104",
+        "name": "Telematikeinheit",
+        "typ": "komponente",
+        "eltern_id": "E105",
+        "absatz_ids": [
+          "P20",
+          "P27"
         ]
       },
       {
@@ -1339,7 +1436,8 @@
         "name": "Antriebsleistung erzeugen",
         "ausgefuehrt_von": [
           "E32",
-          "E33"
+          "E33",
+          "E302"
         ],
         "absatz_ids": [
           "P8",
@@ -1352,8 +1450,11 @@
         "ausgefuehrt_von": [
           "E35",
           "E36",
+          "E303",
           "E37",
-          "E38"
+          "E304",
+          "E38",
+          "E305"
         ],
         "absatz_ids": [
           "P8",
@@ -1376,8 +1477,7 @@
         "id": "F8",
         "name": "Bremsenergie zurückgewinnen",
         "ausgefuehrt_von": [
-          "E33",
-          "E62"
+          "E33"
         ],
         "absatz_ids": [
           "P11",
@@ -1473,9 +1573,11 @@
         "id": "F16",
         "name": "Elektrische Energie verteilen",
         "ausgefuehrt_von": [
-          "E91"
+          "E91",
+          "E44"
         ],
         "absatz_ids": [
+          "P11",
           "P19",
           "P28"
         ]
@@ -1484,10 +1586,12 @@
         "id": "F17",
         "name": "Daten übertragen",
         "ausgefuehrt_von": [
-          "E93"
+          "E93",
+          "E104"
         ],
         "absatz_ids": [
           "P19",
+          "P20",
           "P28"
         ]
       },
@@ -1583,6 +1687,17 @@
           "P24",
           "P28"
         ]
+      },
+      {
+        "id": "F26",
+        "name": "Fahrzeugposition bestimmen",
+        "ausgefuehrt_von": [
+          "E104"
+        ],
+        "absatz_ids": [
+          "P20",
+          "P28"
+        ]
       }
     ],
     "fluesse": [
@@ -1600,27 +1715,29 @@
       },
       {
         "id": "S2",
-        "von": "E42",
-        "nach": "E33",
+        "von": "E44",
+        "nach": "E302",
         "art": "elektrisch",
         "medium": "Hochvolt-Gleichstrom",
         "absatz_ids": [
+          "P8",
           "P11",
           "P27"
         ],
-        "schnittstelle": "Hochvoltanschluss Traktionsmaschine"
+        "schnittstelle": "Hochvoltanschluss Leistungselektronik"
       },
       {
         "id": "S3",
-        "von": "E33",
-        "nach": "E42",
+        "von": "E302",
+        "nach": "E44",
         "art": "elektrisch",
         "medium": "Rekuperationsstrom",
         "absatz_ids": [
+          "P8",
           "P11",
           "P27"
         ],
-        "schnittstelle": "Hochvoltanschluss Traktionsmaschine"
+        "schnittstelle": "Hochvoltanschluss Leistungselektronik"
       },
       {
         "id": "S4",
@@ -1649,7 +1766,7 @@
         "von": "E35",
         "nach": "E36",
         "art": "mechanisch",
-        "medium": "Drehmoment",
+        "medium": "Drehmoment (Längseinbau)",
         "absatz_ids": [
           "P8",
           "P27"
@@ -1660,7 +1777,7 @@
         "von": "E36",
         "nach": "E37",
         "art": "mechanisch",
-        "medium": "Drehmoment",
+        "medium": "Drehmoment (Längseinbau)",
         "absatz_ids": [
           "P8",
           "P27"
@@ -1669,9 +1786,9 @@
       {
         "id": "S8",
         "von": "E37",
-        "nach": "E38",
+        "nach": "E305",
         "art": "mechanisch",
-        "medium": "Drehmoment",
+        "medium": "Drehmoment (Längseinbau)",
         "absatz_ids": [
           "P8",
           "P27"
@@ -1793,8 +1910,7 @@
         "medium": "Fahrprogrammwahl",
         "absatz_ids": [
           "P17",
-          "P20",
-          "P27"
+          "P20"
         ],
         "schnittstelle": "Wahlschalter Fahrprogramme"
       },
@@ -1805,8 +1921,7 @@
         "art": "information",
         "medium": "Kennlinienvorgabe",
         "absatz_ids": [
-          "P20",
-          "P27"
+          "P20"
         ],
         "schnittstelle": "Fahrzeugbus Antrieb"
       },
@@ -1893,6 +2008,153 @@
           "P27"
         ],
         "schnittstelle": "Befestigung am hinteren Querträger"
+      },
+      {
+        "id": "S27",
+        "von": "E42",
+        "nach": "E44",
+        "art": "elektrisch",
+        "medium": "Hochvolt-Gleichstrom",
+        "absatz_ids": [
+          "P11",
+          "P27"
+        ]
+      },
+      {
+        "id": "S28",
+        "von": "E302",
+        "nach": "E33",
+        "art": "elektrisch",
+        "medium": "Drehstrom",
+        "absatz_ids": [
+          "P8",
+          "P27"
+        ]
+      },
+      {
+        "id": "S29",
+        "von": "E44",
+        "nach": "E91",
+        "art": "elektrisch",
+        "medium": "Niedervolt-Gleichstrom",
+        "absatz_ids": [
+          "P11",
+          "P19",
+          "P27"
+        ],
+        "schnittstelle": "Gleichspannungswandler zum Niedervolt-Bordnetz"
+      },
+      {
+        "id": "S30",
+        "von": "E33",
+        "nach": "E35",
+        "art": "mechanisch",
+        "medium": "Drehmoment",
+        "absatz_ids": [
+          "P8",
+          "P27"
+        ]
+      },
+      {
+        "id": "S31",
+        "von": "E35",
+        "nach": "E38",
+        "art": "mechanisch",
+        "medium": "Drehmoment (Quereinbau)",
+        "absatz_ids": [
+          "P8",
+          "P27"
+        ]
+      },
+      {
+        "id": "S32",
+        "von": "E35",
+        "nach": "E303",
+        "art": "mechanisch",
+        "medium": "Drehmoment (Quereinbau)",
+        "absatz_ids": [
+          "P8",
+          "P27"
+        ]
+      },
+      {
+        "id": "S33",
+        "von": "E303",
+        "nach": "E37",
+        "art": "mechanisch",
+        "medium": "Drehmoment (Quereinbau)",
+        "absatz_ids": [
+          "P8",
+          "P27"
+        ]
+      },
+      {
+        "id": "S34",
+        "von": "E37",
+        "nach": "E304",
+        "art": "mechanisch",
+        "medium": "Drehmoment (Quereinbau)",
+        "absatz_ids": [
+          "P8",
+          "P27"
+        ]
+      },
+      {
+        "id": "S35",
+        "von": "E304",
+        "nach": "E305",
+        "art": "mechanisch",
+        "medium": "Drehmoment (Quereinbau)",
+        "absatz_ids": [
+          "P8",
+          "P27"
+        ]
+      },
+      {
+        "id": "S36",
+        "von": "E305",
+        "nach": "E27",
+        "art": "mechanisch",
+        "medium": "Antriebsmoment",
+        "absatz_ids": [
+          "P8",
+          "P27"
+        ],
+        "schnittstelle": "Antriebswelle zur Radnabe"
+      },
+      {
+        "id": "S37",
+        "von": "E36",
+        "nach": "E38",
+        "art": "mechanisch",
+        "medium": "Drehmoment (Längseinbau)",
+        "absatz_ids": [
+          "P8",
+          "P27"
+        ]
+      },
+      {
+        "id": "S38",
+        "von": "E104",
+        "nach": "E92",
+        "art": "information",
+        "medium": "Softwareaktualisierung",
+        "absatz_ids": [
+          "P20",
+          "P27"
+        ],
+        "schnittstelle": "Fahrzeugbus Telematik"
+      },
+      {
+        "id": "S39",
+        "von": "E32",
+        "nach": "E301",
+        "art": "stoff",
+        "medium": "Abgas",
+        "absatz_ids": [
+          "P8",
+          "P27"
+        ]
       }
     ],
     "entfallene_kategorien": [],
@@ -1995,7 +2257,7 @@
           },
           {
             "element_id": "E102",
-            "beschreibung": "Fahrprogramme für Schnee und Gelände setzen eine angetriebene Hinterachse voraus."
+            "beschreibung": "Die Allradbauart bestimmt, welche Stellgrößen die Fahrprogramme nutzen können: bei Frontantrieb nur Antriebs- und Bremsregelung, bei Allradantrieb zusätzlich die Momentenverteilung zwischen den Achsen."
           },
           {
             "element_id": "E22",
@@ -2082,6 +2344,83 @@
         "absatz_ids": [
           "P13"
         ]
+      },
+      {
+        "id": "V6",
+        "element_id": "E61",
+        "bezeichnung": "Bauart der Betriebsbremse",
+        "alternativen": [
+          "Unterdruck-Bremskraftverstärker mit separatem Hydraulikaggregat",
+          "Elektromechanischer Bremskraftverstärker mit separatem Hydraulikaggregat",
+          "Integriertes Bremssystem mit Druckerzeugung und Radmodulation in einer Einheit"
+        ],
+        "auswahlkriterien": [
+          "Rekuperationsanteil",
+          "Antriebsart",
+          "Redundanzbedarf für Assistenzfunktionen",
+          "Kosten"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E142",
+            "beschreibung": "Nur der Unterdruck-Bremskraftverstärker benötigt ohne Saugrohrunterdruck eine Unterdruckpumpe."
+          },
+          {
+            "element_id": "E33",
+            "beschreibung": "Unterdruckunabhängige und integrierte Bauarten erlauben eine feinere Überblendung mit der Rekuperation der Traktionsmaschine."
+          },
+          {
+            "element_id": "E91",
+            "beschreibung": "Elektromechanische und integrierte Bauarten sind große Verbraucher des Niedervolt-Bordnetzes und brauchen eine gesicherte Versorgung."
+          },
+          {
+            "element_id": "E112",
+            "beschreibung": "Automatisierte Bremseingriffe des Assistenzsteuergeräts erfordern je nach Bauart eine redundante Rückfallebene."
+          }
+        ],
+        "absatz_ids": [
+          "P14",
+          "P24"
+        ]
+      },
+      {
+        "id": "V7",
+        "element_id": "E34",
+        "bezeichnung": "Geländeausstattung der Kraftübertragung",
+        "alternativen": [
+          "Ohne Geländeuntersetzung und Differenzialsperre, Sperrwirkung über Bremseingriff",
+          "Mit Differenzialsperre",
+          "Mit Differenzialsperre und Geländeuntersetzung im Verteilergetriebe"
+        ],
+        "auswahlkriterien": [
+          "Geländeanspruch",
+          "Einstufung als Geländefahrzeug",
+          "Anhängebetrieb an Steigungen",
+          "Masse und Kosten"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E36",
+            "beschreibung": "Eine Geländeuntersetzung wird als Gruppenstufe im Verteilergetriebe ausgeführt."
+          },
+          {
+            "element_id": "E101",
+            "beschreibung": "Ohne mechanische Sperre übernimmt die Fahrdynamikregelung die Sperrwirkung über radindividuelle Bremseingriffe."
+          },
+          {
+            "element_id": "E102",
+            "beschreibung": "Die Fahrmodusverwaltung schaltet Sperre und Untersetzung oder die entsprechenden Regelkennlinien je Fahrprogramm."
+          },
+          {
+            "element_id": "E6",
+            "beschreibung": "Die Bremsregelung trägt bei fehlender Sperre zusätzliche thermische Last durch Traktionseingriffe."
+          }
+        ],
+        "absatz_ids": [
+          "P3",
+          "P10",
+          "P15"
+        ]
       }
     ],
     "klaerungsfragen": [
@@ -2149,7 +2488,7 @@
         "anlass": "anforderung",
         "relevanz": "Davon hängen Kraftübertragung, Bodenfreiheit und Überhänge sowie die Einordnung als Geländewagen oder SUV ab.",
         "variante_ids": [
-          "V3"
+          "V7"
         ]
       },
       {
@@ -2188,6 +2527,7 @@
         "anlass": "architekturentscheidung",
         "relevanz": "Davon hängen der Bedarf an einer Unterdruckpumpe und die Rückgewinnung von Bremsenergie ab.",
         "variante_ids": [
+          "V6",
           "V4"
         ]
       },
@@ -2276,17 +2616,27 @@
       },
       {
         "id": "K16",
-        "frage": "Welche Verbraucher benötigen im gewählten Antriebskonzept eine eigene Unterdruck- oder Druckluftversorgung?",
+        "frage": "Welche Zusatzaggregate wie Standheizung, Seilwinde oder zusätzliche Steckdosen soll das SUV ab Werk vorsehen, und aus welchem Bordnetz werden sie versorgt?",
         "element_ids": [
           "E14",
-          "E141",
-          "E142"
+          "E91"
         ],
-        "anlass": "schnittstelle",
-        "relevanz": "Davon hängt ab, welche Nebenaggregate vorzusehen und an Bordnetz und Tragstruktur anzubinden sind.",
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Bordnetzleistung, Befestigungspunkte an der Tragstruktur und die Ausstattungsvarianten ab."
+      },
+      {
+        "id": "K17",
+        "frage": "Wird das SUV von einer Plattform mit quer eingebautem Frontantrieb oder mit längs eingebautem Antrieb abgeleitet?",
+        "element_ids": [
+          "E3",
+          "E34",
+          "E21"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Winkeltrieb oder Verteilergetriebe, Allradkupplung, Bauraum im Mitteltunnel und die Plattformgleichheit mit anderen Pkw ab.",
         "variante_ids": [
-          "V2",
-          "V4"
+          "V1",
+          "V3"
         ]
       }
     ],
@@ -2326,6 +2676,13 @@
           "Spurweite",
           "Wankwinkel",
           "Querbeschleunigung im Grenzbereich"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "UN-Regelung Nr. 140 (Elektronische Stabilitätsregelung für Personenkraftwagen)",
+            "quellen_id": "Q1",
+            "fundstelle": "Abschnitt 4, Tabelle aktive Sicherheit, Zeile Y; Abschnitt 3, Tabelle Anwendungsbereich, Eintrag 140"
+          }
         ]
       },
       {
@@ -2362,11 +2719,18 @@
           "Energieverbrauch",
           "Ladeleistung",
           "Ladedauer",
-          "Tankinhalt"
+          "Tankinhalt",
+          "Isolationswiderstand",
+          "Berührschutz"
         ],
         "regelwerke": [
           {
-            "bezeichnung": "UN-Regelung Nr. 101 (Messung von CO2, Verbrauch, elektrischem Energieverbrauch und Reichweite)",
+            "bezeichnung": "UN-Regelung Nr. 154 (Emissionen, CO2, Verbrauch, elektrischer Energieverbrauch und Reichweite leichter Fahrzeuge)",
+            "quellen_id": "Q1",
+            "fundstelle": "Abschnitt 3, Tabelle Anwendungsbereich, Eintrag 154; Abschnitt 6, Tabelle Umweltschutz, Zeile D"
+          },
+          {
+            "bezeichnung": "UN-Regelung Nr. 101 (älteres Prüfverfahren für CO2, Verbrauch, elektrischen Energieverbrauch und Reichweite)",
             "quellen_id": "Q1",
             "fundstelle": "Abschnitt 3, Tabelle Anwendungsbereich, Eintrag 101"
           },
@@ -2487,7 +2851,8 @@
         "id": "R10",
         "element_ids": [
           "E10",
-          "E103"
+          "E103",
+          "E104"
         ],
         "thema": "Cybersicherheit und Softwareaktualisierung",
         "kenngroessen": [
@@ -2524,9 +2889,9 @@
             "fundstelle": "Abschnitt 5, Tabelle passive Sicherheit, Zeile R; Abschnitt 8.37"
           },
           {
-            "bezeichnung": "UN-Regelungen Nr. 131 und 152 (Notbremssysteme) sowie Nr. 140 (Elektronische Stabilitätsregelung)",
+            "bezeichnung": "UN-Regelung Nr. 152 (Notbremssystem für M1 und N1)",
             "quellen_id": "Q1",
-            "fundstelle": "Abschnitt 4, Tabelle aktive Sicherheit, Zeile Y"
+            "fundstelle": "Abschnitt 4, Tabelle aktive Sicherheit, Zeile Y; Abschnitt 3, Tabelle Anwendungsbereich, Eintrag 152"
           }
         ]
       },
@@ -2587,6 +2952,27 @@
           "Druckaufbauzeit der Luftfederung",
           "Leistungsaufnahme der Nebenaggregate"
         ]
+      },
+      {
+        "id": "R15",
+        "element_ids": [
+          "E3",
+          "E32",
+          "E301"
+        ],
+        "thema": "Abgas- und CO2-Emissionen",
+        "kenngroessen": [
+          "Schadstoffemissionen",
+          "CO2-Emission",
+          "Kraftstoffverbrauch"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "UN-Regelung Nr. 154 (leichte Personen- und Nutzfahrzeuge, Emissionen, CO2 und Verbrauch)",
+            "quellen_id": "Q1",
+            "fundstelle": "Abschnitt 6, Tabelle Umweltschutz, Zeilen A und D"
+          }
+        ]
       }
     ]
   },
@@ -2595,7 +2981,7 @@
     "Recherche: Definition der Fahrzeugklasse M1G in Anhang I der Verordnung (EU) 2018/858 auf EUR-Lex prüfen; Abruf in diesem Lauf blockiert, hier über UNECE R.E.3 belegt.",
     "Recherche: Fachliteratur zu Lenk-, Brems- und Fahrwerksauslegung von SUV (Suchbegriff: Fahrwerkhandbuch SUV Achslast Schwerpunkthöhe Lenkunterstützung).",
     "Recherche: Integration der Traktionsbatterie bei SUV-Plattformen (Suchbegriff: Batterieintegration Unterboden SUV Bodenfreiheit Unterbodenschutz).",
-    "Recherche: Regelwerke zur Kippstabilität von Pkw und zur Versorgung von Nebenverbrauchern mit Unterdruck oder Druckluft; für die Anforderungsthemen R2 und R14 kein Regelwerk belegt.",
+    "Recherche: Regelwerk oder Bewertungsverfahren zur Kippstabilität im engeren Sinn (statischer Stabilitätsfaktor) für R2 sowie zur Versorgung von Nebenverbrauchern mit Unterdruck oder Druckluft für R14; kein Regelwerk belegt.",
     "Glossarvorschlag: Anhänger ziehen (Funktion der Anhängekupplung; keine gelistete Funktion deckt die Aufnahme von Zug- und Stützlast eines Anhängers ab)."
   ]
 }
