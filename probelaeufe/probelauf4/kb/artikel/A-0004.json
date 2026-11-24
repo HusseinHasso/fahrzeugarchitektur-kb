@@ -88,7 +88,7 @@
         },
         {
           "absatz_id": "P2",
-          "text": "Die EU-Typgenehmigung definiert die Klasse M1 als Kraftfahrzeuge, die vorwiegend für die Beförderung von Fahrgästen und deren Gepäck ausgelegt und gebaut sind, mit höchstens acht Sitzplätzen zusätzlich zum Fahrersitz und ohne Stehplätze. Als Aufbauart der Klasse M1 ist das Mehrzweckfahrzeug (Code AF) festgelegt: ein Fahrzeug zur Beförderung von Fahrgästen und deren Gepäck oder zur gelegentlichen Beförderung von Gütern in einem einzigen Innenraum. Ein Fahrzeug, bei dem sich der Bereich für Fahrer und Ladung in einem einzigen Bauteil befindet, wird nur dann der Klasse N1 zugeordnet, wenn alle dafür festgelegten Kriterien erfüllt sind, andernfalls der Klasse M1. Als rollstuhlgerechtes Fahrzeug (Code SH) gilt ein Fahrzeug der Klasse M1, das speziell konstruiert oder umgerüstet wurde, um Personen im Rollstuhl sitzend aufzunehmen.",
+          "text": "Die EU-Typgenehmigung definiert die Klasse M1 als Kraftfahrzeuge, die vorwiegend für die Beförderung von Fahrgästen und deren Gepäck ausgelegt und gebaut sind, mit höchstens acht Sitzplätzen zusätzlich zum Fahrersitz und ohne Stehplätze. Als Aufbauart der Klasse M1 ist das Mehrzweckfahrzeug (Code AF) festgelegt: ein Fahrzeug zur Beförderung von Fahrgästen und deren Gepäck oder zur gelegentlichen Beförderung von Gütern in einem einzigen Innenraum. Liegen Fahrer- und Ladebereich in einem einzigen Bauteil, wird ein Fahrzeug nur dann der Klasse N1 zugeordnet, wenn alle dafür festgelegten Kriterien erfüllt sind, andernfalls der Klasse M1. Ein rollstuhlgerechtes Fahrzeug (Code SH) ist ein Fahrzeug der Klasse M1, das speziell konstruiert oder umgerüstet wurde, um Personen im Rollstuhl sitzend aufzunehmen. Die US-Bundesnormen ordnen Kraftfahrzeuge für höchstens zehn Personen als Personenkraftwagen ein, oder, wenn sie auf einem Lkw-Fahrgestell oder mit besonderen Merkmalen für gelegentlichen Geländebetrieb gebaut sind, als Mehrzweck-Personenfahrzeug.",
           "begruendung": "belegt",
           "belege": [
             {
@@ -98,13 +98,17 @@
             {
               "quellen_id": "Q2",
               "fundstelle": "Teil C Nr. 2.6 (AF Mehrzweckfahrzeug); Teil A Nr. 3.8.1 und 3.8.2 (Zuordnung N1 oder M1); Teil C Nr. 5.5 (SH Rollstuhlgerechtes Fahrzeug)"
+            },
+            {
+              "quellen_id": "Q5",
+              "fundstelle": "Definitionen „Passenger car“ und „Multipurpose passenger vehicle“"
             }
           ],
           "herangezogene_artikel_ids": []
         },
         {
           "absatz_id": "P3",
-          "text": "Daraus ergibt sich die Systemgrenze dieses Artikels: Betrachtet wird der Van als Personenkraftwagen mit einem einzigen Innenraum, in dem Fahrgäste, Gepäck und gelegentlich Güter gemeinsam untergebracht sind. Kastenwagen zur Güterbeförderung und Kleinbusse mit mehr Sitzplätzen liegen außerhalb. Als Gesamtsystem besteht der Van aus funktional und physisch abgegrenzten Hauptsystemen, die über mechanische, elektrische, hydraulische, pneumatische, thermische und informationstechnische Schnittstellen gekoppelt sind. Die folgenden Abschnitte zerlegen jedes Hauptsystem für eine Systemdekomposition in Subsysteme und Komponenten.",
+          "text": "Daraus ergibt sich die Systemgrenze dieses Artikels: Betrachtet wird der Van als Personenkraftwagen mit einem einzigen Innenraum, in dem Fahrgäste, Gepäck und gelegentlich Güter gemeinsam untergebracht sind. Kastenwagen zur Güterbeförderung und Kleinbusse mit mehr Sitzplätzen liegen außerhalb. Der Van besteht aus Hauptsystemen, die über mechanische, elektrische, hydraulische, pneumatische, thermische und informationstechnische Schnittstellen gekoppelt sind. Die folgenden Abschnitte zerlegen jedes Hauptsystem für eine Systemdekomposition in Subsysteme und Komponenten.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -128,7 +132,7 @@
       "absaetze": [
         {
           "absatz_id": "P4",
-          "text": "Fahrzeugstruktur und Fahrwerk tragen beim Van alle Fahrzeuglasten. Bei Vans auf Pkw-Plattform ersetzt die selbsttragende Karosserie den Rahmen: Die Bodengruppe nimmt Antrieb, Energiespeicher, Sitzverankerungen und Fahrwerk auf, die Fahrgastzelle aus Säulen, Dach und Seitenwänden umschließt den einzigen Innenraum. Große Türausschnitte im hohen Aufbau verlangen steife Säulen und Dachrahmen. Fondzugänge können als Schiebetür mit Führungsschienen ausgeführt sein. Das Fahrwerk umfasst Vorderachse, Hinterachse, Federung und Dämpfung sowie Räder und Reifen und muss die stark wechselnde Zuladung abdecken.",
+          "text": "Fahrzeugstruktur und Fahrwerk tragen beim Van alle Fahrzeuglasten. Bei Vans auf Pkw-Plattform ersetzt die selbsttragende Karosserie den Rahmen: Die Bodengruppe nimmt Antrieb, Energiespeicher, Sitzverankerungen und Fahrwerk auf, die Fahrgastzelle umschließt den einzigen Innenraum. Fondzugänge können als Schiebetür mit Führungsschienen ausgeführt sein. Türschlösser und Schließsystem sichern alle Türen und die Heckklappe, verriegeln zentral und melden den Schließzustand an die Bedien- und Anzeigeelemente. Das Fahrwerk umfasst Vorderachse, Hinterachse, Federung und Dämpfung sowie Räder und Reifen.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -136,30 +140,42 @@
               "P1",
               "P2",
               "Eine selbsttragende Karosserie leitet alle Lasten über Bodengruppe und Fahrgastzelle.",
-              "Viele Sitzplätze bedeuten große Unterschiede zwischen leerem und voll besetztem Fahrzeug."
+              "Jede Tür braucht ein Schloss, dessen Zustand der Fahrer erkennen muss."
             ],
-            "schluss": "Struktur und Fahrwerk des Van müssen einen hohen Innenraum mit großen Öffnungen und wechselnder Zuladung tragen."
+            "schluss": "Struktur und Fahrwerk des Van tragen einen hohen Innenraum mit großen Öffnungen, deren Türen über ein Schließsystem gesichert sind."
           },
           "sicherheit": "mittel",
           "herangezogene_artikel_ids": [],
           "aussagetyp": "loesung"
         },
         {
+          "absatz_id": "P25",
+          "text": "Vans, die von einem Transporter abgeleitet sind, übernehmen dessen Aufbau, Antriebslage und Fahrwerk. Auf einem Leiterrahmen tritt der Rahmen an die Stelle der tragenden Bodengruppe und hebt den Fahrzeugboden und die Einstiegshöhe an.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P2",
+              "Ein abgeleitetes Fahrzeug übernimmt die tragende Struktur seiner Basis.",
+              "Ein Rahmen unter dem Aufbau liegt zwischen Fahrbahn und Fahrzeugboden."
+            ],
+            "schluss": "Die Basisplattform bestimmt Tragstruktur, Antriebslage und Bodenhöhe des Van."
+          },
+          "sicherheit": "gering",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "variante"
+        },
+        {
           "absatz_id": "P5",
-          "text": "In der US-Klassifizierung ist ein Mehrzweck-Personenfahrzeug ein Kraftfahrzeug für höchstens zehn Personen, das auf einem Lkw-Fahrgestell oder mit besonderen Merkmalen für gelegentlichen Geländebetrieb gebaut ist. Für Schiebetüren verlangt die US-Norm zu Türschlössern, dass jedes Schiebetürsystem ein primäres Türschlosssystem oder ein Schloss mit voll verriegelter Stellung samt einer für den Fahrer gut sichtbaren Türschließwarnung besitzt und dass sich Führungsschiene und Schlitten der geschlossenen Tür unter Querlast nicht vom Türrahmen lösen.",
+          "text": "Für Vans mit US-Zulassung verlangt die US-Norm zu Türschlössern, die für Fahrzeuge bis 4.536 kg zulässiger Gesamtmasse gilt, dass jedes Schiebetürsystem ein primäres Türschlosssystem oder ein Schloss mit voll verriegelter Stellung samt einer für den Fahrer gut sichtbaren Türschließwarnung besitzt. Bei ab dem 1. September 2010 gebauten Fahrzeugen dürfen sich Führungsschiene und Schlitten der geschlossenen Tür unter Querlast nicht vom Türrahmen lösen.",
           "begruendung": "belegt",
           "belege": [
             {
-              "quellen_id": "Q5",
-              "fundstelle": "Definition „Multipurpose passenger vehicle“"
-            },
-            {
               "quellen_id": "Q4",
-              "fundstelle": "S4.2 Sliding Side Doors, S4.2.1 und S4.2.2.1"
+              "fundstelle": "S2 Application; S4.2.1; S4.2.2.1 und S4.2.2.3"
             }
           ],
-          "herangezogene_artikel_ids": [],
-          "aussagetyp": "variante"
+          "herangezogene_artikel_ids": []
         }
       ]
     },
@@ -194,18 +210,19 @@
       "absaetze": [
         {
           "absatz_id": "P7",
-          "text": "Das Energieversorgungssystem speichert die Antriebsenergie und stellt sie dem Antriebssystem bereit. Beim konventionellen Van besteht es aus der Kraftstoffanlage mit Kraftstofftank und Kraftstoffpumpe, die den Treibstoff zum Verbrennungsmotor fördert. Beim batterieelektrischen Van tritt an ihre Stelle das Hochvolt-Energiespeichersystem mit Traktionsbatterie, Batteriemanagementsystem und Ladeeinrichtung, über die die Traktionsbatterie aus dem Stromnetz geladen wird. Hybride Vans besitzen beide Pfade. Liegt die Traktionsbatterie flach in der Bodengruppe, hebt sie den Fahrzeugboden an und beeinflusst damit Sitzhöhe, Einstiegshöhe und Laderaumhöhe. Das Batteriemanagementsystem überwacht Zellspannungen und Temperaturen und meldet den Ladezustand an das Fahrzeugmanagement.",
+          "text": "Das Energieversorgungssystem speichert die Antriebsenergie und stellt sie dem Antriebssystem bereit. Beim konventionellen Van besteht es aus der Kraftstoffanlage mit Kraftstofftank und Kraftstoffpumpe, die den Treibstoff zum Verbrennungsmotor fördert. Beim batterieelektrischen Van tritt an ihre Stelle das Hochvolt-Energiespeichersystem mit Traktionsbatterie, Batteriemanagementsystem und Ladeeinrichtung, über die die Traktionsbatterie aus dem Stromnetz geladen wird. Hybride Vans besitzen beide Pfade; eine Ladeeinrichtung hat nur der Plug-in-Hybrid, beim Vollhybrid wird die Traktionsbatterie ausschließlich über Traktionsmaschine und Rückgewinnung geladen, Mildhybride können statt eines Hochvoltsystems ein Niederspannungssystem nutzen. Liegt die Traktionsbatterie flach in der Bodengruppe, hebt sie den Fahrzeugboden an. Das Batteriemanagementsystem überwacht Zellen und Temperaturen und meldet den Ladezustand an das Fahrzeugmanagement.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "P6",
               "Jeder Energiewandler braucht einen passenden Speicher und dessen Zuführung.",
-              "Ein Batteriespeicher braucht Überwachung und eine Ladeschnittstelle."
+              "Ein extern geladener Batteriespeicher braucht eine Ladeschnittstelle.",
+              "Ein Batteriespeicher braucht eine Überwachung."
             ],
-            "schluss": "Je nach Antriebsart besteht die Energieversorgung aus Kraftstoffanlage, Hochvolt-Energiespeichersystem oder beiden."
+            "schluss": "Je nach Antriebsart besteht die Energieversorgung aus Kraftstoffanlage, Hochvolt-Energiespeichersystem oder beiden; eine Ladeeinrichtung gibt es nur bei externer Lademöglichkeit."
           },
-          "sicherheit": "hoch",
+          "sicherheit": "mittel",
           "herangezogene_artikel_ids": [],
           "aussagetyp": "variante"
         }
@@ -242,7 +259,7 @@
       "absaetze": [
         {
           "absatz_id": "P9",
-          "text": "Das Bremssystem verzögert den Van, hält ihn im Stillstand fest und stabilisiert ihn beim Bremsen. Die Betriebsbremse ist beim Pkw-basierten Van hydraulisch: Das Bremspedal wirkt über den Bremskraftverstärker auf den Hauptbremszylinder, der über Bremsleitungen die Radbremsen betätigt. Die Feststellbremse wirkt mechanisch oder elektrisch auf Radbremsen der Hinterachse. Das Bremsregelsystem mit Antiblockiersystem und elektronischer Stabilitätsregelung moduliert die Radbremsdrücke einzeln und koordiniert bei elektrischem Antrieb die Reibbremse mit der Rückgewinnung durch die Traktionsmaschine. Liefert der Antrieb keinen ausreichenden Unterdruck, braucht der Bremskraftverstärker eine Unterdruckpumpe oder wird elektromechanisch ausgeführt. Hohe Schwerpunktlage und wechselnde Beladung machen eine beladungsabhängige Bremskraftverteilung wichtig.",
+          "text": "Das Bremssystem verzögert den Van, hält ihn im Stillstand fest und stabilisiert ihn beim Bremsen. Die Betriebsbremse ist beim Pkw-basierten Van hydraulisch: Das Bremspedal wirkt über den Bremskraftverstärker auf den Hauptbremszylinder, der über Bremsleitungen die Radbremsen betätigt. Die Feststellbremse wirkt mechanisch oder elektrisch auf Radbremsen der Hinterachse. Das Bremsregelsystem mit Antiblockiersystem und elektronischer Stabilitätsregelung moduliert die Radbremsdrücke einzeln. Liefert der Antrieb keinen ausreichenden Unterdruck, braucht der Bremskraftverstärker eine Unterdruckpumpe, oder Bremskraftverstärker und Hauptbremszylinder werden durch ein elektromechanisches oder integriertes elektrohydraulisches Bremssystem ersetzt, das zugleich Reibbremse und Rückgewinnung der Traktionsmaschine überblendet. Hohe Schwerpunktlage und wechselnde Beladung machen eine beladungsabhängige Bremskraftverteilung wichtig.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -252,11 +269,11 @@
               "P4",
               "P6"
             ],
-            "schluss": "Das Bremssystem gliedert sich in Betriebsbremse, Feststellbremse und Bremsregelsystem; die Antriebsart bestimmt die Unterdruckversorgung."
+            "schluss": "Das Bremssystem gliedert sich in Betriebsbremse, Feststellbremse und Bremsregelsystem; die Antriebsart bestimmt die Bremskraftverstärkung."
           },
-          "sicherheit": "hoch",
+          "sicherheit": "mittel",
           "herangezogene_artikel_ids": [],
-          "aussagetyp": "loesung"
+          "aussagetyp": "variante"
         }
       ]
     },
@@ -267,7 +284,7 @@
       "absaetze": [
         {
           "absatz_id": "P10",
-          "text": "Der Fahrgastraum ist beim Van der zentrale Nutzraum und zugleich Bedienplatz des Fahrers. Er umfasst die Sitzanlage aus mehreren Sitzreihen mit ihren Sitzverankerungen in der Bodengruppe, die Rückhaltesysteme aus Sicherheitsgurten, Airbags und Kindersitzverankerungen sowie die Bedien- und Anzeigeelemente am Fahrerplatz. Weil Sitze verschoben, umgeklappt oder ausgebaut werden können, müssen Verankerungen und Gurtanbindung in jeder vorgesehenen Sitzposition wirksam sein. Eine strukturändernde Variante ist der rollstuhlgerechte Umbau mit Rampe oder Lift, abgesenktem Boden und Rollstuhlrückhaltung.",
+          "text": "Der Fahrgastraum ist beim Van der zentrale Nutzraum und Bedienplatz des Fahrers. Er umfasst die Sitzanlage aus Sitzreihen mit Sitzverankerungen in der Bodengruppe, die Rückhaltesysteme aus Sicherheitsgurten, Airbags und Kindersitzverankerungen sowie die Bedien- und Anzeigeelemente. Verschiebbare oder ausbaubare Sitze verlangen Verankerungen, die in jeder vorgesehenen Sitzposition wirken. Eine Variante ist der rollstuhlgerechte Umbau mit Rampe oder Lift.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -284,12 +301,12 @@
         },
         {
           "absatz_id": "P11",
-          "text": "Die US-Norm für Kindersitzverankerungen verlangt bei Fahrzeugen mit drei oder mehr nach vorn gerichteten hinteren Sitzplätzen an mindestens zwei dieser Plätze ein Kindersitz-Verankerungssystem, bei Fahrzeugen mit drei oder mehr Sitzreihen mindestens eines davon in der zweiten Reihe, sofern dort ein solcher Platz vorhanden ist, und an einem dritten Platz eine obere Halteverankerung.",
+          "text": "Für Fahrzeuge mit US-Zulassung, bei Mehrzweck-Personenfahrzeugen nur bis 3.855 kg zulässiger Gesamtmasse und vorbehaltlich der Ausnahmen in S5, verlangt die US-Norm für Kindersitzverankerungen bei drei oder mehr nach vorn gerichteten hinteren Sitzplätzen an mindestens zwei dieser Plätze ein Kindersitz-Verankerungssystem, bei drei oder mehr Sitzreihen mindestens eines in der zweiten Reihe, sofern dort ein solcher Platz vorhanden ist, und an einem dritten Platz eine obere Halteverankerung. Ein verschiebbarer hinterer Sitz, der außen oder mittig genutzt werden kann, gilt als mittiger Platz und braucht eine Halteverankerung, falls kein anderer mittiger Platz so ausgestattet ist.",
           "begruendung": "belegt",
           "belege": [
             {
               "quellen_id": "Q6",
-              "fundstelle": "S4.2(a)(1) und (2)"
+              "fundstelle": "S2 Application; S4.2(a)(1) und (2); S4.3(a)"
             }
           ],
           "herangezogene_artikel_ids": []
@@ -339,19 +356,19 @@
       "absaetze": [
         {
           "absatz_id": "P14",
-          "text": "Elektrik und Elektronik versorgen und vernetzen die übrigen Hauptsysteme. Das Niedervolt-Bordnetz besteht aus Bordnetzbatterie, Stromverteiler mit Sicherungen und dem Leitungssatz, der beim Van wegen der langen Karosserie, der beweglichen Schiebetüren und vieler Sitzplätze mit Gurtschlosssensoren, Sitzheizungen und Steckdosen weit verzweigt ist. Beim elektrifizierten Van speist ein Gleichspannungswandler das Bordnetz aus der Traktionsbatterie anstelle eines Generators. Steuergeräte erfassen Sensorsignale und steuern Aktoren; sie tauschen Daten über das Fahrzeugkommunikationsnetz aus, das aus Bussystemen und Ethernet-Verbindungen bestehen und domänenweise oder zonal gegliedert sein kann. Sicherheitsrelevante Verbraucher müssen auch bei Ausfall eines Energiepfads versorgt bleiben.",
+          "text": "Elektrik und Elektronik versorgen und vernetzen die übrigen Hauptsysteme. Das Niedervolt-Bordnetz besteht aus Bordnetzbatterie, Stromverteiler mit Sicherungen und dem Leitungssatz, der beim Van wegen der langen Karosserie, der beweglichen Schiebetüren und vieler Sitzplätze mit Gurtschlosssensoren und Steckdosen weit verzweigt ist. Beim elektrifizierten Van speist ein Gleichspannungswandler das Bordnetz aus der Traktionsbatterie anstelle eines Generators. Steuergeräte erfassen Sensorsignale und steuern Aktoren; sie tauschen Daten über das Fahrzeugkommunikationsnetz aus, das domänenweise oder zonal gegliedert sein kann. Arbeiten sicherheitsrelevante Funktionen wie Lenkunterstützung oder elektromechanische Bremse elektrisch, muss geklärt werden, ob ihre Versorgung redundant ausgeführt wird.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "Jeder elektrische Verbraucher braucht Versorgung, Absicherung und Leitung.",
-              "P5",
+              "P4",
               "P7",
               "P10"
             ],
             "schluss": "Das Bordnetz des Van ist durch bewegliche Türen und viele Sitzplätze weit verzweigt; beim elektrifizierten Van entfällt der Generator zugunsten eines Gleichspannungswandlers."
           },
-          "sicherheit": "hoch",
+          "sicherheit": "mittel",
           "herangezogene_artikel_ids": [],
           "aussagetyp": "loesung"
         }
@@ -431,7 +448,7 @@
       "absaetze": [
         {
           "absatz_id": "P18",
-          "text": "Das Thermomanagement regelt die Betriebstemperaturen der Antriebs- und Energiekomponenten und klimatisiert den Innenraum. Der Kühlkreislauf führt Abwärme von Verbrennungsmotor oder von Leistungselektronik und Traktionsmaschine über Kühler und Lüfter ab. Beim elektrifizierten Van kommt eine Batterietemperierung hinzu, die die Traktionsbatterie beim Laden und Fahren kühlt oder heizt. Die Heiz- und Klimaanlage besteht aus dem Frontklimagerät und kann wegen des großen Innenraumvolumens um eine Fondklimatisierung mit eigenem Verdampfer und Luftführung zu den hinteren Sitzreihen ergänzt werden. Beim batterieelektrischen Van bezieht die Klimatisierung ihre Energie aus der Traktionsbatterie und mindert so die Reichweite.",
+          "text": "Das Thermomanagement regelt die Betriebstemperaturen der Antriebs- und Energiekomponenten und klimatisiert den Innenraum. Der Kühlkreislauf führt Abwärme von Verbrennungsmotor oder von Leistungselektronik und Traktionsmaschine über Kühler und Lüfter ab. Beim elektrifizierten Van kühlt oder heizt eine Batterietemperierung die Traktionsbatterie. Die Heiz- und Klimaanlage besteht aus dem Frontklimagerät mit Klimakompressor im Kältemittelkreis und der Innenraumheizung; wegen des großen Innenraumvolumens kann eine Fondklimatisierung mit eigenem Verdampfer die hinteren Sitzreihen versorgen. Beim batterieelektrischen Van fehlt die Motorabwärme: Die Innenraumheizung arbeitet dann mit einem Hochvoltheizer oder als Wärmepumpe, die Kältemittelkreis, Kühlkreislauf und Batterietemperierung koppelt. Die Klimatisierung bezieht dann ihre Energie aus der Traktionsbatterie und mindert die Reichweite.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -440,9 +457,9 @@
               "P7",
               "P12",
               "Energiewandlung erzeugt Abwärme, die abgeführt werden muss.",
-              "Ein großes Luftvolumen braucht eine verteilte Luftführung."
+              "Ohne Motorabwärme muss Heizwärme aus elektrischer Energie erzeugt werden."
             ],
-            "schluss": "Das Thermomanagement des Van umfasst Kühlkreislauf, Batterietemperierung und eine Heiz- und Klimaanlage, die für hintere Reihen erweitert werden kann."
+            "schluss": "Das Thermomanagement des Van umfasst Kühlkreislauf, Batterietemperierung und eine Heiz- und Klimaanlage, deren Heizung beim batterieelektrischen Van elektrisch arbeitet."
           },
           "sicherheit": "mittel",
           "herangezogene_artikel_ids": [],
@@ -507,7 +524,7 @@
       "absaetze": [
         {
           "absatz_id": "P21",
-          "text": "Für eine Modellierung in SysML bildet der Block Van das Gesamtsystem mit den Hauptsystemen als Bestandteilen. Bewährte Dekompositionspfade sind Van → Fahrzeugstruktur und Fahrwerk → Karosserie → Schiebetür, Van → Energieversorgungssystem → Hochvolt-Energiespeichersystem → Traktionsbatterie, Van → Antriebssystem → Kraftübertragung → Getriebe, Differential und Antriebswellen sowie Van → Fahrgastraum → Rückhaltesysteme → Kindersitzverankerungen. Antriebsart, Sitzkonzept und Türkonzept modelliert man als Varianten, etwa über Spezialisierung der Blöcke Antriebseinheit und Sitzanlage.",
+          "text": "Für eine Modellierung in SysML bildet der Block Van das Gesamtsystem mit den Hauptsystemen als Bestandteilen. Dekompositionspfade sind Van → Fahrzeugstruktur und Fahrwerk → Karosserie → Schiebetür, Van → Energieversorgungssystem → Hochvolt-Energiespeichersystem → Traktionsbatterie, Van → Antriebssystem → Kraftübertragung → Getriebe, Differential und Antriebswellen sowie Van → Fahrgastraum → Rückhaltesysteme → Kindersitzverankerungen. Antriebsart, Sitzkonzept und Türkonzept bildet man über Spezialisierung der Blöcke Antriebseinheit und Sitzanlage ab.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -550,14 +567,13 @@
       "absaetze": [
         {
           "absatz_id": "P23",
-          "text": "Stoff: Kraftstoffanlage an Verbrennungsmotor. Elektrisch: Traktionsbatterie an Leistungselektronik und Gleichspannungswandler, Leistungselektronik an Traktionsmaschine, Ladeeinrichtung an Traktionsbatterie, Stromverteiler an Steuergeräte, Außenbeleuchtung und Schiebetürantrieb. Mechanisch: Antriebswellen an Räder und Reifen, Lenkgetriebe an Vorderachse, Schiebetürantrieb an Schiebetür, Sitzverankerungen und Anhängevorrichtung an Bodengruppe. Hydraulisch: Hauptbremszylinder an Radbremsen. Pneumatisch: Unterdruckpumpe an Bremskraftverstärker. Thermisch: Verbrennungsmotor an Kühlkreislauf, Batterietemperierung an Traktionsbatterie, Fondklimatisierung an Fahrgastraum. Information: Umfeldsensorik an Assistenzsteuergerät, Assistenzsteuergerät an Bremsregelsystem und Lenkunterstützung, Bremsregelsystem und Fahrzeugmanagement an Leistungselektronik, Bedien- und Anzeigeelemente mit Fahrzeugmanagement in beiden Richtungen, Rückfahrkamera an Bedien- und Anzeigeelemente, Insassenschutzsteuergerät an Airbags, Fahrzeugmanagement an Diagnoseschnittstelle.",
+          "text": "Stoff: Kraftstoffanlage an Verbrennungsmotor. Elektrisch: Traktionsbatterie an Leistungselektronik und Gleichspannungswandler, Leistungselektronik an Traktionsmaschine, Ladeeinrichtung an Traktionsbatterie, Stromverteiler an Steuergeräte, Außenbeleuchtung, Türschlösser und Schiebetürantrieb. Mechanisch: Antriebswellen an Räder und Reifen, Lenkgetriebe an Vorderachse, Schiebetürantrieb an Schiebetür, Sitzverankerungen und Anhängevorrichtung an Bodengruppe. Hydraulisch: Hauptbremszylinder an Radbremsen. Pneumatisch: Unterdruckpumpe an Bremskraftverstärker. Thermisch: Verbrennungsmotor an Kühlkreislauf, Batterietemperierung an Traktionsbatterie, Fondklimatisierung an Fahrgastraum. Information: Umfeldsensorik an Assistenzsteuergerät, dieses an Bremsregelsystem und Lenkunterstützung; Bremsregelsystem und Fahrzeugmanagement an Leistungselektronik; Fahrzeugmanagement mit Bedien- und Anzeigeelementen wechselseitig; Türschlösser, Rückfahrkamera an Anzeige; Insassenschutzsteuergerät an Airbags.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "P6",
               "P7",
-              "P8",
               "P9",
               "P13",
               "P14",
@@ -581,7 +597,7 @@
       "absaetze": [
         {
           "absatz_id": "P24",
-          "text": "Funktionale Zuordnung: Fahrzeuglasten tragen – Karosserie, Fahrwerk; Antriebsleistung erzeugen – Antriebseinheit; Drehmoment übertragen – Kraftübertragung; Fahrzeug fortbewegen – Antriebssystem, Räder und Reifen; Energie speichern – Kraftstoffanlage, Traktionsbatterie, Bordnetzbatterie; Treibstoff fördern – Kraftstoffpumpe; Traktionsbatterie laden – Ladeeinrichtung, Batteriemanagementsystem; Fahrzeug lenken – Lenkbetätigung, Lenkgetriebe, Lenkunterstützung; Fahrzeug verzögern – Betriebsbremse, Feststellbremse; Bremsenergie zurückgewinnen – Traktionsmaschine, Bremsregelsystem; Insassen schützen – Rückhaltesysteme, Fahrgastzelle, Insassenschutzsteuergerät; Fahrereingaben erfassen und Fahrerinformationen anzeigen – Bedien- und Anzeigeelemente; Ladung aufnehmen – Gepäckraum, Anhängevorrichtung; Elektrische Energie verteilen – Niedervolt-Bordnetz; Daten übertragen – Fahrzeugkommunikationsnetz; Fahrzeugzustand überwachen – Fahrzeugmanagement, Diagnoseschnittstelle; Fahrzeugposition bestimmen – Infotainment- und Telematikeinheit; Fahrzeugumfeld erfassen – Umfeldsensorik; Fahrzeugumgebung ausleuchten – Außenbeleuchtung; Fahrersicht sicherstellen – Sichtsysteme; Betriebstemperatur regeln – Kühlkreislauf, Batterietemperierung; Innenraum klimatisieren – Heiz- und Klimaanlage, Zusatzheizung; Unterdruck bereitstellen – Unterdruckpumpe; Schiebetür betätigen – Schiebetürantrieb.",
+          "text": "Zuordnung: Fahrzeuglasten tragen – Karosserie, Fahrwerk; Antriebsleistung erzeugen – Antriebseinheit; Drehmoment übertragen – Kraftübertragung; Fahrzeug fortbewegen – Antriebssystem, Räder und Reifen; Energie speichern – Kraftstoffanlage, Traktionsbatterie, Bordnetzbatterie; Treibstoff fördern – Kraftstoffpumpe; Traktionsbatterie laden – Ladeeinrichtung; Fahrzeug lenken – Lenksystem; Fahrzeug verzögern – Betriebsbremse, Feststellbremse; Bremsenergie zurückgewinnen – Traktionsmaschine, Bremsregelsystem; Insassen schützen – Rückhaltesysteme, Fahrgastzelle, Insassenschutzsteuergerät; Fahrereingaben erfassen, Fahrerinformationen anzeigen – Bedien- und Anzeigeelemente; Ladung aufnehmen – Gepäckraum, Anhängevorrichtung; Elektrische Energie verteilen – Niedervolt-Bordnetz; Daten übertragen – Fahrzeugkommunikationsnetz; Fahrzeugzustand überwachen – Fahrzeugmanagement; Fahrzeugposition bestimmen – Telematikeinheit; Fahrzeugumfeld erfassen – Umfeldsensorik; Fahrzeugumgebung ausleuchten – Außenbeleuchtung; Fahrersicht sicherstellen – Sichtsysteme; Betriebstemperatur regeln – Kühlkreislauf, Batterietemperierung; Innenraum klimatisieren – Heiz- und Klimaanlage, Zusatzheizung; Unterdruck bereitstellen – Unterdruckpumpe; Schiebetür betätigen – Schiebetürantrieb.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -641,6 +657,7 @@
         "eltern_id": "E2",
         "absatz_ids": [
           "P4",
+          "P25",
           "P21"
         ]
       },
@@ -1496,6 +1513,35 @@
         "absatz_ids": [
           "P19"
         ]
+      },
+      {
+        "id": "E91",
+        "name": "Türschlösser und Schließsystem",
+        "typ": "komponente",
+        "eltern_id": "E3",
+        "absatz_ids": [
+          "P4",
+          "P5",
+          "P19"
+        ]
+      },
+      {
+        "id": "E92",
+        "name": "Klimakompressor",
+        "typ": "komponente",
+        "eltern_id": "E83",
+        "absatz_ids": [
+          "P18"
+        ]
+      },
+      {
+        "id": "E93",
+        "name": "Innenraumheizung",
+        "typ": "komponente",
+        "eltern_id": "E83",
+        "absatz_ids": [
+          "P18"
+        ]
       }
     ],
     "funktionen": [
@@ -1764,6 +1810,7 @@
         "name": "Innenraum klimatisieren",
         "ausgefuehrt_von": [
           "E83",
+          "E93",
           "E90"
         ],
         "absatz_ids": [
@@ -2125,9 +2172,33 @@
         "art": "information",
         "medium": "Fehler- und Wartungsinformationen",
         "absatz_ids": [
-          "P15",
-          "P23"
+          "P15"
         ]
+      },
+      {
+        "id": "S29",
+        "von": "E91",
+        "nach": "E50",
+        "art": "information",
+        "medium": "Schließzustand der Türen",
+        "absatz_ids": [
+          "P4",
+          "P5",
+          "P23"
+        ],
+        "schnittstelle": "Türschließwarnung"
+      },
+      {
+        "id": "S30",
+        "von": "E58",
+        "nach": "E91",
+        "art": "elektrisch",
+        "medium": "Niedervolt-Versorgung",
+        "absatz_ids": [
+          "P14",
+          "P23"
+        ],
+        "schnittstelle": "Bordnetzanschluss Schließsystem"
       }
     ],
     "entfallene_kategorien": [],
@@ -2138,7 +2209,8 @@
         "bezeichnung": "Antriebsart",
         "alternativen": [
           "Verbrennungsmotor mit Kraftstoffanlage",
-          "Hybridantrieb mit Verbrennungsmotor und Traktionsmaschine",
+          "Hybridantrieb ohne externe Lademöglichkeit",
+          "Plug-in-Hybridantrieb",
           "Batterieelektrischer Antrieb mit Traktionsbatterie"
         ],
         "auswahlkriterien": [
@@ -2172,6 +2244,10 @@
           {
             "element_id": "E60",
             "beschreibung": "Gleichspannungswandler statt Generator für das Niedervolt-Bordnetz"
+          },
+          {
+            "element_id": "E28",
+            "beschreibung": "Ladeeinrichtung nur bei batterieelektrischem Antrieb und Plug-in-Hybrid"
           }
         ],
         "absatz_ids": [
@@ -2187,7 +2263,8 @@
         "bezeichnung": "Basisplattform",
         "alternativen": [
           "Pkw-Plattform mit selbsttragender Karosserie",
-          "Ableitung von einem Transporter oder Lkw-Fahrgestell"
+          "Ableitung von einem Transporter mit selbsttragendem Aufbau",
+          "Aufbau auf Leiterrahmen"
         ],
         "auswahlkriterien": [
           "Sitzplatzzahl und Innenraumhöhe",
@@ -2211,11 +2288,15 @@
           {
             "element_id": "E36",
             "beschreibung": "Auslegung der Betriebsbremse auf Gesamtmasse und Schwerpunktlage"
+          },
+          {
+            "element_id": "E4",
+            "beschreibung": "Rahmen oder tragende Bodengruppe, Bodenhöhe und Einstiegshöhe"
           }
         ],
         "absatz_ids": [
           "P4",
-          "P5",
+          "P25",
           "P6"
         ]
       },
@@ -2289,6 +2370,10 @@
           {
             "element_id": "E85",
             "beschreibung": "Luftführung zu den hinteren Sitzreihen"
+          },
+          {
+            "element_id": "E49",
+            "beschreibung": "Kindersitzverankerungen und obere Halteverankerungen müssen jede vorgesehene Position verschiebbarer Sitze abdecken"
           }
         ],
         "absatz_ids": [
@@ -2361,6 +2446,69 @@
         "absatz_ids": [
           "P18"
         ]
+      },
+      {
+        "id": "V7",
+        "element_id": "E36",
+        "bezeichnung": "Bremskraftverstärkung",
+        "alternativen": [
+          "Unterdruckverstärker mit Unterdruck aus dem Antrieb",
+          "Unterdruckverstärker mit Unterdruckpumpe",
+          "Elektromechanischer oder integrierter elektrohydraulischer Bremsaktor"
+        ],
+        "auswahlkriterien": [
+          "Antriebsart und verfügbare Unterdruckquelle",
+          "Anteil der Rückgewinnung am Verzögern",
+          "Anforderungen automatisierter Bremseingriffe"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E88",
+            "beschreibung": "Unterdruckpumpe nur beim Unterdruckverstärker ohne ausreichende Unterdruckquelle, beim Bremsaktor entfällt sie"
+          },
+          {
+            "element_id": "E41",
+            "beschreibung": "Überblendung von Reibbremse und Rückgewinnung"
+          },
+          {
+            "element_id": "E56",
+            "beschreibung": "Elektrische Versorgung des Bremsaktors, gegebenenfalls redundant"
+          }
+        ],
+        "absatz_ids": [
+          "P9"
+        ]
+      },
+      {
+        "id": "V8",
+        "element_id": "E83",
+        "bezeichnung": "Innenraumheizung beim elektrifizierten Van",
+        "alternativen": [
+          "Elektrischer Hochvoltheizer",
+          "Wärmepumpe"
+        ],
+        "auswahlkriterien": [
+          "Reichweite bei Kälte",
+          "Bauaufwand und Kosten",
+          "Kopplung mit Kühlkreislauf und Batterietemperierung"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E26",
+            "beschreibung": "Energieentnahme für das Heizen und damit Reichweite"
+          },
+          {
+            "element_id": "E82",
+            "beschreibung": "Kopplung des Kühlkreislaufs mit dem Kältemittelkreis bei Wärmepumpe"
+          },
+          {
+            "element_id": "E86",
+            "beschreibung": "Batterietemperierung als Wärmequelle oder Wärmesenke der Wärmepumpe"
+          }
+        ],
+        "absatz_ids": [
+          "P18"
+        ]
       }
     ],
     "klaerungsfragen": [
@@ -2371,7 +2519,7 @@
           "E1"
         ],
         "anlass": "betrieb",
-        "relevanz": "Davon hängen Sitzkonzept, Laufleistungsauslegung und die Einordnung in die Fahrzeugklasse ab."
+        "relevanz": "Davon hängen Sitzkonzept, Laufleistungsauslegung und Ausstattung für den Fahrdienst ab."
       },
       {
         "id": "K2",
@@ -2559,6 +2707,53 @@
         "variante_ids": [
           "V3"
         ]
+      },
+      {
+        "id": "K17",
+        "frage": "Soll die Bremskraft über einen Unterdruckverstärker, mit Unterdruckpumpe oder über einen elektromechanischen beziehungsweise integrierten elektrohydraulischen Bremsaktor verstärkt werden?",
+        "element_ids": [
+          "E35",
+          "E36"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Unterdruckpumpe, Überblendung der Rückgewinnung und Bordnetzversorgung der Bremse ab.",
+        "variante_ids": [
+          "V7"
+        ]
+      },
+      {
+        "id": "K18",
+        "frage": "Soll die Versorgung elektrisch arbeitender Sicherheitsfunktionen wie Lenkunterstützung und Bremsaktor redundant ausgeführt werden?",
+        "element_ids": [
+          "E56"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Bordnetztopologie, Zahl der Energiespeicher und Absicherungskonzept ab.",
+        "variante_ids": [
+          "V7"
+        ]
+      },
+      {
+        "id": "K19",
+        "frage": "Soll der elektrifizierte Van den Innenraum mit einem elektrischen Hochvoltheizer oder mit einer Wärmepumpe beheizen?",
+        "element_ids": [
+          "E83",
+          "E93"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Reichweite bei Kälte, Kältemittelkreis und Kopplung mit Kühlkreislauf und Batterietemperierung ab.",
+        "variante_ids": [
+          "V8"
+        ]
+      },
+      {
+        "id": "K20",
+        "frage": "Für welche Zulassungsmärkte soll der Van ausgelegt werden, nur für die europäische Typgenehmigung oder auch für die USA?",
+        "element_ids": [
+          "E1"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen die anzuwendenden Anforderungen an Türen, Kindersitzverankerungen und Rückhaltesysteme sowie die Klassenzuordnung ab."
       }
     ],
     "anforderungsthemen": [
@@ -2600,9 +2795,9 @@
         ],
         "regelwerke": [
           {
-            "bezeichnung": "US-Norm zu Türschlössern und Türhaltekomponenten (Standard No. 206)",
+            "bezeichnung": "US-Bundesnorm zu Türschlössern und Türhaltekomponenten (Standard No. 206), nur für Fahrzeuge mit US-Zulassung bis zur Massengrenze in S2",
             "quellen_id": "Q4",
-            "fundstelle": "S4.2 Sliding Side Doors"
+            "fundstelle": "S2 Application; S4.2 Sliding Side Doors"
           }
         ]
       },
@@ -2685,9 +2880,9 @@
         ],
         "regelwerke": [
           {
-            "bezeichnung": "US-Norm zu Kindersitz-Verankerungssystemen (Standard No. 225)",
+            "bezeichnung": "US-Bundesnorm zu Kindersitz-Verankerungssystemen (Standard No. 225), nur für Fahrzeuge mit US-Zulassung, für Mehrzweck-Personenfahrzeuge bis zur Massengrenze in S2",
             "quellen_id": "Q6",
-            "fundstelle": "S4.2(a)(1) und (2)"
+            "fundstelle": "S2 Application; S4.2(a)(1) und (2); S4.3(a)"
           }
         ]
       },
