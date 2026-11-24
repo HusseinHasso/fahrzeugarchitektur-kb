@@ -215,3 +215,6 @@ in `aenderungen.json`. Nur der Orchestrator setzt diese beiden Stufen. **[belegt
 - **Glossar** (Stand 2026-11-24, nach Probelauf 3): aufgenommen „Unterdruck bereitstellen“, „Innenraum klimatisieren“,
   „Tether ausgeben und einholen“ (ersetzt die Vorschläge „Tether führen“ und „Tetherlänge anpassen“). Offen:
   „Druck ausgleichen“, „Nebenaggregate antreiben“.
+- **Mindestlänge der Hauptsystem-Abschnitte** (Festlegung des Auftraggebers, 2026-11-24): 80 Wörter sind ein Richtwert
+  für die Mindestlänge, keine exakte Grenze. `validate` meldet eine Unterschreitung nur als HINWEIS, sie löst keine
+  Korrekturrunde aus. Die Obergrenze von 150 Wörtern bleibt eine WARNUNG.

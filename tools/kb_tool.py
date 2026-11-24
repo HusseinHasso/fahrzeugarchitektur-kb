@@ -390,8 +390,11 @@ def pruefe_artikel(aid, a, d, inv, glossar, schema, alle, m):
             m.F(aid, f"{hid} {h.get('name')}: kein Abschnitt mit dieser element_id")
         else:
             w = sum(woerter(p.get("text", "")) for s in secs for p in s["absaetze"])
-            if not 80 <= w <= 150:
-                m.W(aid, f"{hid} {h.get('name')}: Abschnitt hat {w} Wörter (80–150, Regel 3)")
+            if w > 150:
+                m.W(aid, f"{hid} {h.get('name')}: Abschnitt hat {w} Wörter (höchstens 150, Regel 3)")
+            elif w < 80:
+                # Richtwert, keine Korrekturrunde (Leitfaden 2.4, Abschnitt 10)
+                m.H(aid, f"{hid} {h.get('name')}: Abschnitt hat {w} Wörter (Richtwert mindestens 80, Regel 3)")
         unter = [e for e in E.values() if e.get("id") != hid and hs_von(e.get("id")) == hid]
         if len(unter) < 2:
             m.F(aid, f"{hid} {h.get('name')}: weniger als zwei Elemente darunter")
