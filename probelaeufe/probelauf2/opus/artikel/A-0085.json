@@ -1,0 +1,788 @@
+{
+  "schema_version": "2.2",
+  "artikel_id": "A-0085",
+  "artikeltyp": "blatt",
+  "titel": "ROV (ferngesteuertes Unterwasserfahrzeug)",
+  "betrachtungsumfang": "Generische Referenzarchitektur ferngesteuerter, kabelgebundener Unterwasserfahrzeuge (ROV) einschließlich der Anlagen an Bord des Trägerschiffs (Leitstand, Stromversorgung, Kabel-, Winden- und Aussetztechnik), von Beobachtungs- bis Arbeitsklasse. Nicht betrachtet: geschleppte Fahrzeuge ohne eigenen Antrieb (ROTV), autonome Unterwasserfahrzeuge und bemannte Tauchboote.",
+  "status": "in_arbeit",
+  "quellenzugriff": "ja",
+  "kindartikel_ids": [],
+  "quellen": [
+    {
+      "quellen_id": "Q1",
+      "titel": "Remotely operated underwater vehicle",
+      "urheber": "Wikipedia-Autoren (englischsprachige Wikipedia)",
+      "stand": null,
+      "url": "https://en.wikipedia.org/wiki/Remotely_operated_underwater_vehicle",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q2",
+      "titel": "Remotely Operated Vehicle",
+      "urheber": "Wikipedia-Autoren (deutschsprachige Wikipedia)",
+      "stand": null,
+      "url": "https://de.wikipedia.org/wiki/Remotely_Operated_Vehicle",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q3",
+      "titel": "Remotely Operated Vehicles (ROVs)",
+      "urheber": "NOAA Ocean Exploration",
+      "stand": "2023-05-09",
+      "url": "https://oceanexplorer.noaa.gov/technology/subs-rovs/",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "behoerde"
+    },
+    {
+      "quellen_id": "Q4",
+      "titel": "What is an ROV? (Fact Sheet)",
+      "urheber": "NOAA Ocean Exploration",
+      "stand": null,
+      "url": "https://oceanexplorer.noaa.gov/fact-sheet/rov-fact-sheet",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "behoerde"
+    },
+    {
+      "quellen_id": "Q5",
+      "titel": "Undersea Vehicles and National Needs, Chapter 2: Undersea Vehicle Capabilities and Technologies",
+      "urheber": "National Research Council",
+      "stand": "1996",
+      "url": "https://www.nationalacademies.org/read/5069/chapter/4",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "fachliteratur"
+    },
+    {
+      "quellen_id": "Q6",
+      "titel": "ROV Design",
+      "urheber": "Marine Technology Society, ROV Committee (rov.org)",
+      "stand": null,
+      "url": "https://rov.org/design/",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "verband"
+    }
+  ],
+  "abschnitte": [
+    {
+      "ueberschrift": "Einleitung",
+      "abschnittstyp": "gesamtsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P1",
+          "text": "Ein ROV (Remotely Operated Vehicle), auch Tauchroboter genannt, ist ein kabelgeführtes Unterwasserfahrzeug für Anwendungen in Wissenschaft, Industrie und Militär. Es ist in der Regel über ein Kabel mit einem Trägerschiff verbunden, das Energie und Informationen überträgt, und wird von einer Besatzung an Bord eines Schiffs, einer schwimmenden Plattform oder an Land in der Nähe gesteuert, meist aus einem Kontrollraum. Anders als ein autonomes Unterwasserfahrzeug ist es auf dieses Kabel angewiesen. Da es von der Oberfläche aus versorgt wird, hat es keine wesentliche Energiebegrenzung, braucht aber erhebliche Unterstützung an der Oberfläche.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q2", "fundstelle": "Einleitung: „kabelgeführtes Unterwasserfahrzeug für Anwendungen in Wissenschaft und Industrie und beim Militär“; Kabel „zur Energie- und Informationsübertragung an ein Überwasserschiff“; Bezeichnung Tauchroboter"},
+            {"quellen_id": "Q1", "fundstelle": "Einleitung: „generally, but not necessarily, linked to a host ship by a neutrally buoyant tether“; „operated by a crew either aboard a vessel/floating platform or on proximate land“, „usually from a control room“; „ROVs require a tether, or an umbilical, (unlike an AUV)“"},
+            {"quellen_id": "Q5", "fundstelle": "Kapitel 2: ROVs „are powered from the surface, have no real energy limitations“ und „require significant surface support“"}
+          ],
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P2",
+          "text": "Das Gesamtsystem reicht damit über das tauchende Fahrzeug hinaus und schließt die Anlagen an Bord ein: Leitstand, Stromversorgung, Winde und Aussetzvorrichtung. Zwischen beiden Teilen und innerhalb des Fahrzeugs bestehen mechanische, elektrische, hydraulische, informationstechnische und stoffliche Schnittstellen. Die folgenden Abschnitte zerlegen das Gesamtsystem in Hauptsysteme und diese weiter in Subsysteme und Komponenten, als Grundlage etwa für eine Dekomposition in SysML.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P1: Steuerung und Energieversorgung erfolgen von der Oberfläche über ein Kabel",
+              "Q6: Das ROV-System umfasst Fahrzeug, Werkzeuge und Sensoren, Bedienkonsolen, elektrische Energieverteilung, Umbilical- und Tetherkabel sowie Handhabungssystem",
+              "Q3: Große ROVs benötigen Winde und A-Rahmen oder Kran zum Aussetzen und Bergen",
+              "Hydraulische Arbeitsgeräte (P23) und eingesammelte Proben (P13) erfordern hydraulische und stoffliche Schnittstellen"
+            ],
+            "schluss": "Die Systemgrenze umfasst Fahrzeug und Oberflächenanlagen; die Kopplungen sind mechanisch, elektrisch, hydraulisch, informationstechnisch und stofflich."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrzeugstruktur",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E2",
+      "absaetze": [
+        {
+          "absatz_id": "P3",
+          "text": "Die Fahrzeugstruktur bildet das mechanische Gerüst des ROV. ROVs sind meist Rahmen oder Gerüste, die mit verschiedenen Komponenten ausgestattet sind. Eine Bauform ist der offene Rahmen, der Sensoren, Thruster und mechanische Komponenten umschließt; Arbeitsklasse-ROVs besitzen ein Aluminiumchassis. Torpedoförmige Bauweisen haben einen geringen Strömungswiderstand, aber deutliche Einschränkungen bei der Steuerung. Größere ROVs können Landekufen besitzen, um an Deck geborgen zu werden.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q2", "fundstelle": "Einleitung: „ROVs sind meist Rahmen oder Gerüste, die mit verschiedenen Komponenten ausgestattet sind“"},
+            {"quellen_id": "Q1", "fundstelle": "Bauformen: „consisting of an open frame where all the operational sensors, thrusters, and mechanical components are enclosed“; Torpedoform „offer low hydrodynamic resistance, but comes with significant control limitations“; „Work-class ROVs are built with a large flotation pack on top of an aluminium chassis“; „the ROV may have landing skids for retrieval to the deck“"}
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P4",
+          "text": "Der Rahmen ist der zentrale Lastpfad und erfüllt die Funktion Fahrzeuglasten tragen: Er nimmt das Gewicht der Komponenten, den Auftrieb, den Schub der Thruster und die Reaktionskräfte der Manipulatoren auf und leitet beim Bergen die Hebelast in den Anschlag von Tether oder Garage. Die Bauform wirkt auf andere Hauptsysteme: Der offene Rahmen erlaubt eine freie Anordnung von Thrustern und Nutzlast, die Torpedoform begünstigt die Längsfahrt.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P3: Alle Komponenten sind am Rahmen angebracht",
+              "P5: Der Auftriebskörper sitzt auf dem Chassis",
+              "P7: Thruster erzeugen die Bewegungskräfte",
+              "P13: Manipulatoren arbeiten am Fahrzeug",
+              "P25: Das Fahrzeug wird an Tether oder Garage ausgesetzt und geborgen",
+              "Kräftegleichgewicht: Jede an einer Komponente angreifende Kraft muss über die tragende Struktur abgeleitet werden"
+            ],
+            "schluss": "Der Rahmen bündelt alle Lastpfade; die Bauform (offen oder torpedoförmig) bestimmt die Anordnung von Antrieb und Nutzlast."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Auftriebs- und Trimmsystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E6",
+      "absaetze": [
+        {
+          "absatz_id": "P5",
+          "text": "Das Auftriebs- und Trimmsystem gleicht das Gewicht des Fahrzeugs im Wasser aus. Arbeitsklasse-ROVs tragen ein großes Auftriebspaket oben auf dem Aluminiumchassis, typischerweise aus syntaktischem Schaum. Dieser Auftriebskörper trägt das Gewicht des ROV und hilft, in der Wassersäule neutralen Auftrieb zu halten. Leichte Komponenten sitzen oben, schwere unten; der Abstand zwischen Auftriebs- und Massenschwerpunkt gibt dem Fahrzeug Stabilität und Steifigkeit für Arbeiten unter Wasser.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q1", "fundstelle": "Work-class-Konstruktion: „large flotation pack on top of an aluminium chassis“; syntaktischer Schaum wird typischerweise verwendet; leichte Komponenten oben, schwere unten, Trennung von Auftriebs- und Massenschwerpunkt für Stabilität und Steifigkeit"},
+            {"quellen_id": "Q4", "fundstelle": "Syntactic foam: „Supports the weight of the ROV and helps maintain neutral buoyancy in the water column“"}
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P6",
+          "text": "Da sich die Masse mit Werkzeugen und eingesammelten Proben ändert, ergänzen verstellbare Trimmgewichte den Auftriebskörper. Mit ihnen werden neutraler Auftrieb und Schwerpunktlage vor dem Tauchgang eingestellt, damit die Thruster keinen Dauerschub gegen Gewicht oder Auftrieb aufbringen müssen. Die Funktion Auftrieb bereitstellen koppelt das System an Fahrzeugstruktur, Antriebssystem und Nutzlastsystem.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P5: Neutraler Auftrieb und Schwerpunktabstand werden durch Auftriebskörper und Massenverteilung eingestellt",
+              "P13: Werkzeuge, Sensoren und Proben ändern die Ausrüstung und damit die Masse",
+              "Ein Fehlbetrag zwischen Gewicht und Auftrieb müsste sonst durch Dauerschub der Vertikalthruster ausgeglichen werden"
+            ],
+            "schluss": "Ein Trimmelement neben dem Auftriebskörper ist nötig, um Auftrieb und Schwerpunktlage an die jeweilige Ausrüstung anzupassen."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Antriebssystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E9",
+      "absaetze": [
+        {
+          "absatz_id": "P7",
+          "text": "Das Antriebssystem bewegt das ROV im Raum. Das Fahrzeug trägt eine Vielzahl von Antriebspropellern, den Thrustern, um in alle Richtungen zu manövrieren; sie steuern seine Bewegung unter Wasser. Bei Arbeitsklasse-ROVs sitzen die Thruster zwischen Auftriebs- und Massenschwerpunkt, um die Lage zu halten, meist in einer ausgeglichenen Vektoranordnung für eine möglichst präzise Steuerung. Kleinere Modelle arbeiten rein elektrisch, größere elektrohydraulisch.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q2", "fundstelle": "Einleitung: „tragen eine Vielzahl an Antriebspropellern (engl. thruster), um in alle Richtungen zu manövrieren“; Abschnitt Klassen: kleinere Modelle rein elektrisch, größere elektrohydraulisch"},
+            {"quellen_id": "Q1", "fundstelle": "Work-class: Thruster zwischen Auftriebs- und Massenschwerpunkt zur Lagehaltung; „Thrusters are usually in a balanced vector configuration to provide the most precise control possible“"},
+            {"quellen_id": "Q4", "fundstelle": "Thrusters: „Control the motion of the ROV underwater“"}
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P8",
+          "text": "Für das Modell bietet sich eine Gliederung in Horizontalthruster für Längs-, Quer- und Drehbewegung und Vertikalthruster für das Tauchen an; schräg eingebaute Thruster können beides übernehmen. Thrusterregler setzen die Schubsollwerte des Steuerrechners in Motorleistung um. Gemeinsam erfüllen sie Antriebsleistung erzeugen, Fahrzeug fortbewegen und Fahrzeug manövrieren; Richtungswechsel und Verzögerung entstehen durch unterschiedliche oder umgekehrte Schübe. Elektrohydraulisch treiben Hydraulikmotoren die Propeller, gespeist aus den Neben- und Versorgungssystemen.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P7: Thruster in Vektoranordnung ermöglichen Bewegung in alle Richtungen",
+              "Bewegung in alle Richtungen erfordert Schubanteile in der Horizontalebene und in der Vertikalen",
+              "Elektrische Antriebsmotoren benötigen eine Leistungsstelleinheit zwischen Sollwert und Motor",
+              "P7, P23: Größere Fahrzeuge sind elektrohydraulisch, die Hydraulik versorgt den Antrieb"
+            ],
+            "schluss": "Das Antriebssystem gliedert sich in Horizontal- und Vertikalthruster mit Thrusterreglern; Kurs- und Geschwindigkeitsänderungen entstehen allein über den Schub, in der elektrohydraulischen Variante über das Hydrauliksystem."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Energieversorgungssystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E13",
+      "absaetze": [
+        {
+          "absatz_id": "P9",
+          "text": "Das Energieversorgungssystem versorgt das ROV von der Oberfläche aus, weshalb es keine wesentliche Energiebegrenzung hat. Das Kabel zum Schiff liefert die elektrische Energie; das Umbilical enthält dazu elektrische Leiter. Die elektrische Energieverteilung ist ein eigenes Teilsystem, und Leistungsänderungen wirken weit: Eine höhere Geschwindigkeit erfordert mehr elektrische Energie und betrifft Tether-Management, Winde, Handhabungssystem und Stromversorgung.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q5", "fundstelle": "Kapitel 2: ROVs „are powered from the surface, have no real energy limitations“"},
+            {"quellen_id": "Q4", "fundstelle": "Tether: „Bundle of cables connecting the ROV to the ship that provides electricity“"},
+            {"quellen_id": "Q1", "fundstelle": "Umbilical: „an armored cable that contains a group of electrical conductors and fiber optics“"},
+            {"quellen_id": "Q6", "fundstelle": "Subsysteme: „Electrical power distribution“; Beispiel Geschwindigkeitserhöhung: „additional electrical energy“, betrifft „tether management system, winch, handling system and power supply“"}
+          ],
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P10",
+          "text": "Die Oberflächenstromversorgung bezieht Energie aus dem Bordnetz des Trägerschiffs und bereitet sie für die Übertragung auf. Weil die Leitungsverluste über große Kabellängen mit dem Strom wachsen, ist eine Übertragung mit hoher Spannung und eine Wandlung im Fahrzeug zweckmäßig. Diese übernimmt die Unterwasser-Leistungsverteilung, die Thrusterregler, Hydraulikaggregat, Elektronik und Scheinwerfer speist. Beide erfüllen die Funktion Elektrische Energie verteilen; ein großer Energiespeicher an Bord ist nicht nötig.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P9: Die Energie kommt über das Kabel von der Oberfläche",
+              "Ohmsche Leitungsverluste steigen quadratisch mit dem Strom; bei gleicher Leistung senkt höhere Spannung den Strom",
+              "P7, P21, P23: Verbraucher im Fahrzeug sind Thruster, Scheinwerfer, Hydraulikaggregat und Elektronik"
+            ],
+            "schluss": "Die Energieversorgung gliedert sich in eine Oberflächenstromversorgung und eine Unterwasser-Leistungsverteilung, die wandelt und verteilt; eine Speicherung an Bord ist für die Grundbauweise nicht erforderlich."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Leitstand",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E16",
+      "absaetze": [
+        {
+          "absatz_id": "P11",
+          "text": "Der Leitstand liegt an Bord des Trägerschiffs, meist als Kontrollraum. Piloten führen das Fahrzeug und seine Arme über Joysticks und Touchscreens einer Steuerkonsole; Piloten, Ingenieure und Navigatoren arbeiten dort zusammen. So steuert ein Pilot den Greifarm, während ein Co-Pilot die Hauptkamera ausrichtet. Videokameras übertragen Bilder in Echtzeit an die Wissenschaftler an Bord.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q2", "fundstelle": "Einleitung: „Das ROV wird dabei aus einem Kontrollstand an Bord eines Forschungsschiffes gesteuert“"},
+            {"quellen_id": "Q1", "fundstelle": "Bedienung: „usually from a control room“"},
+            {"quellen_id": "Q3", "fundstelle": "Piloten führen ROV und Arme „via joysticks and touchscreens“ an einer „control box“; „video cameras, which transmit real-time surveillance to scientists aboard the surface vessel“"},
+            {"quellen_id": "Q4", "fundstelle": "„Aboard the surface vessel pilots, engineers, and navigators work together to control the ROV“; „An ROV pilot controls ROV Deep Discoverer's grasping arm, while the co-pilot points the main camera“"}
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P12",
+          "text": "Da niemand an Bord des Fahrzeugs ist, bildet der Leitstand die einzige Mensch-Maschine-Schnittstelle. Die Pilotenkonsole erfüllt die Funktion Fahrereingaben erfassen und gibt Fahr-, Kamera- und Manipulatorbefehle an den Steuerrechner. Die Videoanzeige erfüllt die Funktion Fahrerinformationen anzeigen und stellt Kamera- und Sonarbilder, Position und Fahrzeugzustand dar, die über die Telemetrie nach oben gelangen.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P1: Das Fahrzeug ist unbemannt und wird von der Oberfläche gesteuert",
+              "P11: Bedienung über Joysticks und Touchscreens, Kamerabilder in Echtzeit",
+              "P15, P19: Sensordaten und Sonarbilder werden über das Kabel nach oben übertragen"
+            ],
+            "schluss": "Eingabe (Pilotenkonsole) und Anzeige (Videoanzeige) bilden die beiden Komponenten des Leitstands und sind die einzige Bedienschnittstelle."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Nutzlastsystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E20",
+      "absaetze": [
+        {
+          "absatz_id": "P13",
+          "text": "Das Nutzlastsystem trägt die Ausrüstung für die eigentliche Aufgabe. Ein ROV kann einen Manipulatorarm zum Sammeln biologischer und geologischer Proben besitzen, die in Behälter an den Seiten des Fahrzeugs gelegt werden. Häufig sind zwei Arme mit unterschiedlichen Greifbacken vorhanden; sie haben mehrere Gelenke und wechselbare Backen, bei großen Arbeitsklasse-ROVs meist hydraulischen Antrieb. Hinzu kommen außen montierte Sensoren, etwa für Leitfähigkeit, Temperatur und Tiefe, sowie Magnetometer oder Wasserschöpfer.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q3", "fundstelle": "„manipulator arm designed for collecting biological and geological samples“; Proben „are deposited into boxes along the sides of the ROVs“; externe Sensoren für Leitfähigkeit, Temperatur und Tiefe"},
+            {"quellen_id": "Q1", "fundstelle": "„It is common to find ROVs with two robotic arms; each manipulator may have a different gripping jaw“; Zusatzausrüstung „sonars, magnetometers, a still camera, a manipulator or cutting arm, water samplers“"},
+            {"quellen_id": "Q4", "fundstelle": "Manipulator: „Multi-joint arm with interchangeable jaws“"},
+            {"quellen_id": "Q5", "fundstelle": "Kapitel 2: „Large work-class ROVs are usually fitted with hydraulically powered manipulators“"}
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P14",
+          "text": "Im Modell gliedert sich das Nutzlastsystem in Manipulatorarm, Probenbehälter und Messsensorik. Der Manipulatorarm erfüllt die Funktion Objekte handhaben, die Probenbehälter die Funktion Ladung aufnehmen, die Messsensorik trägt zu Fahrzeugumfeld erfassen bei. Jede Änderung der Ausrüstung verschiebt Masse und Leistungsbedarf und wirkt damit auf das Auftriebs- und Trimmsystem und die Hydraulikversorgung.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P13: Manipulatoren, Probenbehälter und außen montierte Sensoren bilden die Ausrüstung",
+              "P5: Auftrieb und Schwerpunkt sind auf die Masse abgestimmt",
+              "P23: Manipulatoren werden hydraulisch versorgt"
+            ],
+            "schluss": "Das Nutzlastsystem besteht aus drei Komponenten; Ausrüstungswechsel erfordern Anpassungen an Trimmung und Hydraulik."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Elektrik und Elektronik",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E25",
+      "absaetze": [
+        {
+          "absatz_id": "P15",
+          "text": "Elektrik und Elektronik müssen Druck und Seewasser standhalten. Elektrische Komponenten sitzen daher in ölgefüllten wasserdichten Kammern oder in Einatmosphärenkammern. Das Kabel überträgt Daten über Glasfasern an die Oberfläche, sodass das ROV große Mengen Sensorinformationen in Echtzeit an das Trägerschiff weitergeben kann.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q1", "fundstelle": "Elektronikschutz: elektrische Komponenten in „oil-filled water tight compartments or one-atmosphere compartments“ gegen Korrosion und Druck"},
+            {"quellen_id": "Q4", "fundstelle": "Tether: liefert Strom und führt Glasfaserdaten zur Oberfläche"},
+            {"quellen_id": "Q5", "fundstelle": "Kapitel 2: „large quantities of real-time sensor information back to a surface support vessel“"}
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P16",
+          "text": "Elektronikbehälter nehmen Leistungs-, Regel- und Kommunikationselektronik auf. Eine Telemetrieeinheit bündelt Video, Sensordaten und Rückmeldungen auf die Glasfaser und verteilt die Befehle von oben; sie erfüllt die Funktion Daten übertragen. Unterwassersteckverbinder und Leitungen verbinden die Behälter mit Thrustern, Kameras, Scheinwerfern und Sensoren außerhalb. Über diese Ebene hängen fast alle Hauptsysteme zusammen.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P15: Elektronik sitzt in geschützten Kammern, Daten laufen über Glasfaser",
+              "Viele Kameras und Sensoren teilen sich eine Kabelverbindung; ihre Signale müssen gebündelt und getrennt werden",
+              "Thruster, Kameras und Scheinwerfer sitzen außerhalb der Kammern und brauchen druckfeste Verbindungen"
+            ],
+            "schluss": "Elektrik und Elektronik gliedern sich in Elektronikbehälter, Telemetrieeinheit und Unterwassersteckverbinder."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrzeugsteuerung und Information",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E29",
+      "absaetze": [
+        {
+          "absatz_id": "P17",
+          "text": "ROVs navigieren relativ zur Oberfläche oder zum Meeresboden; Inspektionsfahrzeuge besitzen unter anderem eine USBL-Positionierung. Im Kontrollraum arbeiten Navigatoren mit Piloten und Ingenieuren zusammen.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q5", "fundstelle": "Tabelle 2-1: ROV-Navigation „Relative to surface/seafloor“"},
+            {"quellen_id": "Q1", "fundstelle": "Inspection class: Ausstattung mit USBL-Positionierung"},
+            {"quellen_id": "Q4", "fundstelle": "„pilots, engineers, and navigators work together to control the ROV“"}
+          ],
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P18",
+          "text": "Die Fahrzeugsteuerung und Information bildet die logische Ebene. Ein Steuerrechner, verteilt auf Oberfläche und Fahrzeug, setzt die Eingaben der Pilotenkonsole in Schubsollwerte um; wegen der Vektoranordnung muss er jede gewünschte Bewegung auf die einzelnen Thruster aufteilen. Damit wirkt er an Fahrzeug manövrieren mit und erfüllt Fahrzeugzustand überwachen. Das Navigationssystem erfüllt Fahrzeugposition bestimmen: Die Unterwasserortung liefert die Position relativ zum Schiff, Lage- und Kurssensor und Tiefensensor liefern Istwerte, mit denen sich Kurs und Tiefe automatisch halten lassen.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P7: Thruster in Vektoranordnung; jede Bewegung ergibt sich aus mehreren Schüben",
+              "P11, P12: Eingaben kommen von der Konsole an der Oberfläche",
+              "P17: Navigation relativ zu Oberfläche und Meeresboden, USBL-Positionierung",
+              "Eine Regelung von Kurs und Tiefe braucht gemessene Istwerte für Lage, Kurs und Tiefe"
+            ],
+            "schluss": "Die Fahrzeugsteuerung besteht aus Steuerrechner und Navigationssystem mit Unterwasserortung, Lage- und Kurssensor und Tiefensensor."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Assistenz und Sicherheit",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E35",
+      "absaetze": [
+        {
+          "absatz_id": "P19",
+          "text": "ROVs können mit Sonaren ausgestattet sein; Inspektionsfahrzeuge tragen neben Live-Video und Fotografie ein bildgebendes Sonar.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q1", "fundstelle": "Zusatzausrüstung „sonars, magnetometers …“; Inspection class „typically equipped with live-feed video, still photography, imaging sonar“"}
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P20",
+          "text": "Ohne Fahrer an Bord richtet sich die Assistenz und Sicherheit auf Fahrzeug, Umgebung und Decksmannschaft. Das Sonar erfüllt Fahrzeugumfeld erfassen auch dort, wo Dunkelheit oder Trübung die Kamerasicht begrenzen, und macht Hindernisse auf der Videoanzeige sichtbar. Weil elektrische Leistung durch leitfähiges Seewasser geführt wird, prüft eine Isolationsüberwachung die Leitungen auf Fehlerströme; Leckagemelder erkennen eindringendes Wasser in den Elektronikbehältern. Beide melden an den Steuerrechner und tragen zu Fahrzeugzustand überwachen bei.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P19: Sonare gehören zur Ausstattung",
+              "P21: Kameras benötigen künstliches Licht in der dunklen Tiefe; ihre Reichweite ist begrenzt",
+              "P9, P10: Elektrische Leistung wird über das Kabel ins Fahrzeug geführt",
+              "P15: Elektronik sitzt in abgedichteten Kammern, deren Dichtheit überwacht werden muss",
+              "Isolations- und Leckageüberwachung als Bauweisenannahme ohne Quelle"
+            ],
+            "schluss": "Assistenz und Sicherheit umfassen Sonar, Isolationsüberwachung und Leckagemelder; die beiden Letzteren sind eine nicht belegte Annahme über die Bauweise."
+          },
+          "sicherheit": "gering",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Beleuchtung und Sicht",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E39",
+      "absaetze": [
+        {
+          "absatz_id": "P21",
+          "text": "Die meisten ROVs besitzen mindestens eine Videokamera und Scheinwerfer. Mehrere Kameras in verschiedenen Winkeln liefern Fotos und hochaufgelöstes Video, leistungsstarke LEDs bringen Licht in die dunkle Tiefe, und Kameras können gegen Kollisionen geschützt sein. Bei Zweikörpersystemen dient ein schwebender Begleitkörper als zusätzliche Licht- und Kameraquelle; solche Systeme sind schwerer zu steuern und zu transportieren.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q1", "fundstelle": "„Most ROVs are equipped with at least a video camera and lights“; Kameras „may also be guarded for protection against collisions“"},
+            {"quellen_id": "Q4", "fundstelle": "„Multiple cameras are mounted at different angles to take photos and high-definition video“; „High power LEDs bring light to the dark depths of the ocean“"},
+            {"quellen_id": "Q3", "fundstelle": "Zweikörpersysteme (Deep Discoverer und Seirios): Begleitkörper als „an extra light source and camera“; schwerer zu steuern und zu transportieren"}
+          ],
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P22",
+          "text": "Beleuchtung und Sicht ersetzen dem Piloten den direkten Blick. Videokameras mit einer Schwenk-Neige-Einheit, über die der Co-Pilot die Hauptkamera ausrichtet, erfüllen die Funktion Fahrersicht sicherstellen, die Scheinwerfer die Funktion Fahrzeugumgebung ausleuchten. Beide beziehen Energie aus der Unterwasser-Leistungsverteilung; das Video läuft über die Telemetrieeinheit zum Leitstand. Die Zweikörperbauweise verlagert einen Teil von Licht und Kameras auf einen zweiten Körper im Kabelstrang.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P12: Der Pilot sieht das Umfeld nur über die Videoanzeige",
+              "P11: Der Co-Pilot richtet die Hauptkamera aus, was eine bewegliche Kamerahalterung erfordert",
+              "P10, P16: Energie kommt aus der Unterwasser-Leistungsverteilung, Daten laufen über die Telemetrieeinheit",
+              "P21: Zweikörpersysteme besitzen einen Begleitkörper mit Licht und Kamera"
+            ],
+            "schluss": "Beleuchtung und Sicht bestehen aus Scheinwerfern, Videokameras und Schwenk-Neige-Einheit; die Zweikörpervariante verteilt sie auf zwei Körper."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Neben- und Versorgungssysteme",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E43",
+      "absaetze": [
+        {
+          "absatz_id": "P23",
+          "text": "Bei leistungsstarken ROVs treibt der größte Teil der elektrischen Leistung einen leistungsstarken Elektromotor an, der eine Hydraulikpumpe antreibt. Die Hydraulik versorgt Antrieb, Werkzeuge und Arme, weil entsprechende elektrische Antriebe unter Wasser zu schwierig umzusetzen wären. Große Arbeitsklasse-ROVs besitzen meist hydraulisch angetriebene Manipulatoren.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q1", "fundstelle": "Energieverteilung: „most of the electric power drives a high-power electric motor which drives a hydraulic pump“; Hydraulik für Antrieb, Werkzeuge und Arme, elektrische Motoren „would be too difficult to implement subsea“"},
+            {"quellen_id": "Q5", "fundstelle": "Kapitel 2: „Large work-class ROVs are usually fitted with hydraulically powered manipulators“"}
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P24",
+          "text": "Die Neben- und Versorgungssysteme fassen diese Versorgung zusammen. Elektromotor und Hydraulikpumpe bilden das Hydraulikaggregat, das die Funktion Hydraulische Leistung bereitstellen erfüllt. Ein Ventilblock verteilt den Ölstrom auf Thruster, Manipulatorarm und Werkzeuge und erfüllt Arbeitsgeräte versorgen. Damit Dichtungen keinem großen Druckunterschied zur Umgebung ausgesetzt sind, gleicht ein Druckkompensator den Systemdruck an den Außendruck an. Bei rein elektrischen Fahrzeugen entfällt das Hydraulikaggregat, und die Unterwasser-Leistungsverteilung speist Thruster und Arme direkt.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P23: Elektromotor treibt Hydraulikpumpe, Hydraulik versorgt mehrere Verbraucher",
+              "Mehrere hydraulische Verbraucher an einer Pumpe erfordern eine steuerbare Verteilung",
+              "Der Umgebungsdruck steigt mit der Tiefe; ölgefüllte Systeme (P15) werden dem Außendruck angeglichen",
+              "P7: Kleinere Modelle arbeiten rein elektrisch"
+            ],
+            "schluss": "Die Neben- und Versorgungssysteme bestehen aus Hydraulikaggregat, Ventilblock und Druckkompensator und entfallen bei rein elektrischer Bauweise."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Kabel- und Tether-Management-System",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E49",
+      "absaetze": [
+        {
+          "absatz_id": "P25",
+          "text": "Das Kabel- und Tether-Management-System verbindet Fahrzeug und Schiff. In der Regel hängt das ROV an einem neutral schwimmenden Tether; für größere Tiefen oder raue See dient ein lasttragendes, gepanzertes Umbilical mit elektrischen Leitern und Glasfasern und ein Tether-Management-System. Dieses verlängert und verkürzt den Tether, um den Kabelwiderstand zu verringern. Es kann als Garage ausgeführt sein, die das ROV durch die Wellenzone trägt, oder als Tophat. Große ROVs brauchen zum Aussetzen und Bergen eine Winde und einen A-Rahmen oder Kran.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q1", "fundstelle": "Einleitung: „neutrally buoyant tether“; „a load-carrying umbilical cable is used along with a tether management system (TMS)“; Umbilical „armored cable that contains a group of electrical conductors and fiber optics“; „The purpose of the TMS is to lengthen and shorten the tether so the effect of cable drag …“; TMS als „garage-like device which contains the ROV during lowering through the splash zone“ oder „tophat“"},
+            {"quellen_id": "Q3", "fundstelle": "Große ROVs benötigen eine Winde und einen A-Rahmen oder Kran zum Aussetzen und Bergen"}
+          ],
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P26",
+          "text": "Beim Aussetzen hebt die Aussetz- und Bergevorrichtung die Garage mit dem Fahrzeug über Bord, die Umbilicalwinde fiert sie unter die Wellenzone. Dort fährt das ROV aus, und die Tethertrommel gibt nur so viel Tether frei wie nötig. So erfüllen Winde und Vorrichtung Fahrzeug aussetzen und bergen, Tethertrommel und Garage die Funktion Tetherlänge anpassen. Ohne Tether-Management-System entfallen beide, und das Kabel führt direkt zum Fahrzeug.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P25: Die Garage trägt das ROV durch die Wellenzone; das TMS verlängert und verkürzt den Tether",
+              "P25: Winde und A-Rahmen oder Kran dienen dem Aussetzen und Bergen",
+              "Das Verlängern und Verkürzen eines Kabels erfordert eine Trommel mit Antrieb",
+              "P25: Ohne TMS hängt das ROV direkt am Tether"
+            ],
+            "schluss": "Das System gliedert sich in Umbilical, Umbilicalwinde, Tether-Management-System (Tether, Tethertrommel, Garage) und Aussetz- und Bergevorrichtung; die Variante ohne TMS entfällt dessen Subsystem."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Zusammenfassung",
+      "abschnittstyp": "gesamtsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P27",
+          "text": "Auf oberster Ebene besteht das ROV aus Fahrzeugstruktur, Auftriebs- und Trimmsystem, Antriebssystem, Energieversorgungssystem, Leitstand, Nutzlastsystem, Elektrik und Elektronik, Fahrzeugsteuerung und Information, Assistenz und Sicherheit, Beleuchtung und Sicht, Neben- und Versorgungssystemen sowie Kabel- und Tether-Management-System. Lenk- und Bremssystem entfallen, weil die Thruster beides übernehmen; ein eigenes Thermomanagement entfällt, weil das umgebende Wasser die Wärme aufnimmt. Kennzeichnend ist die Teilung in einen tauchenden und einen an Bord verbleibenden Teil, die nur das Kabel verbindet.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P3 bis P26: Beschreibung der zwölf Hauptsysteme",
+              "P8: Richtungswechsel und Verzögerung über den Schub",
+              "Das Fahrzeug ist vollständig von Wasser umgeben, das Verlustwärme von Gehäusen und Hydraulik aufnimmt",
+              "P1, P2: Fahrzeug und Oberflächenanlagen sind nur über das Kabel gekoppelt"
+            ],
+            "schluss": "Die oberste Ebene umfasst zwölf Hauptsysteme; Lenkung, Bremse und Thermomanagement entfallen als eigene Systeme."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Modellierungsbezug",
+      "abschnittstyp": "modellierung",
+      "absaetze": [
+        {
+          "absatz_id": "P28",
+          "text": "In SysML bildet der Block `Ferngesteuertes Unterwasserfahrzeug` das Gesamtsystem mit den Hauptsystemen als Bestandteilen. Sie lassen sich rekursiv zerlegen, etwa `Kabel- und Tether-Management-System → Tether-Management-System → Tethertrommel`, `Neben- und Versorgungssysteme → Hydraulikaggregat → Hydraulikpumpe` oder `Fahrzeugsteuerung und Information → Navigationssystem → Unterwasserortung`.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P24, P26, P18: Subsystemebenen von Neben- und Versorgungssystemen, Kabel- und Tether-Management-System und Fahrzeugsteuerung",
+              "SysML-Blöcke bilden Teil-von-Beziehungen ab"
+            ],
+            "schluss": "Die Dekomposition lässt sich über mindestens drei Pfade mit drei Ebenen unterhalb des Gesamtsystems modellieren."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P29",
+          "text": "Ports und Konnektoren bilden die Schnittstellen ab: elektrische Ports für die Leistung über Umbilical und Tether, Glasfaser-Ports für die Telemetrie, hydraulische Ports am Ventilblock, mechanische Ports für Schub, Auftrieb und Hebelast am Rahmen und ein Stoffport an den Probenbehältern. Block Definition Diagrams zeigen die Struktur, Internal Block Diagrams die Kopplungen, Aktivitäts- und Zustandsdiagramme Abläufe wie Aussetzen, Tauchgang und Bergung.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P2: Schnittstellenarten mechanisch, elektrisch, hydraulisch, informationstechnisch und stofflich",
+              "P30: Flüsse zwischen den Elementen",
+              "P26: Aussetzen und Bergen als zeitlicher Ablauf"
+            ],
+            "schluss": "Jede Schnittstellenart wird als Port mit Konnektor abgebildet; Struktur, Kopplung und Ablauf verteilen sich auf die genannten Diagrammarten."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Flüsse",
+      "abschnittstyp": "fluesse",
+      "absaetze": [
+        {
+          "absatz_id": "P30",
+          "text": "Elektrisch: Oberflächenstromversorgung → Umbilical → Tether → Unterwasser-Leistungsverteilung → Thrusterregler → Thruster sowie → Scheinwerfer und Elektromotor. Mechanisch: Elektromotor → Hydraulikpumpe; Thruster und Auftriebskörper → Rahmen; Umbilicalwinde → Umbilical, Tethertrommel → Tether, Aussetz- und Bergevorrichtung → Garage. Hydraulisch: Hydraulikpumpe → Ventilblock → Manipulatorarm und, elektrohydraulisch, Thruster; Druckkompensator → Ventilblock. Information: Pilotenkonsole → Steuerrechner → Telemetrieeinheit → Thrusterregler und Schwenk-Neige-Einheit; Videokameras, Sonar und Messsensorik → Telemetrieeinheit → Videoanzeige; Unterwasserortung, Lage- und Kurssensor, Tiefensensor, Isolationsüberwachung und Leckagemelder → Steuerrechner. Stoff: Manipulatorarm → Probenbehälter.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P9, P10: elektrische Versorgung über das Kabel",
+              "P23, P24: hydraulische Versorgung",
+              "P15, P16, P18: Informationswege",
+              "P4, P26: mechanische Lastpfade",
+              "P13: Proben gelangen in die Behälter"
+            ],
+            "schluss": "Die Flüsse verbinden alle Hauptsysteme über Ursprung und Ziel."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Perspektiven",
+      "abschnittstyp": "perspektiven",
+      "absaetze": [
+        {
+          "absatz_id": "P31",
+          "text": "Funktional zugeordnet sind: Fahrzeuglasten tragen dem Rahmen; Auftrieb bereitstellen Auftriebskörper und Trimmgewichten; Antriebsleistung erzeugen Horizontalthrustern und Vertikalthrustern; Fahrzeug fortbewegen dem Antriebssystem; Fahrzeug manövrieren dem Antriebssystem mit dem Steuerrechner; Elektrische Energie verteilen Oberflächenstromversorgung, Unterwasser-Leistungsverteilung, Umbilical und Tether; Hydraulische Leistung bereitstellen dem Hydraulikaggregat; Arbeitsgeräte versorgen dem Ventilblock; Fahrereingaben erfassen der Pilotenkonsole; Fahrerinformationen anzeigen der Videoanzeige; Objekte handhaben dem Manipulatorarm; Ladung aufnehmen den Probenbehältern; Daten übertragen Telemetrieeinheit, Umbilical und Tether; Fahrzeugposition bestimmen dem Navigationssystem; Fahrzeugzustand überwachen Steuerrechner, Isolationsüberwachung und Leckagemeldern; Fahrzeugumfeld erfassen Sonar und Messsensorik; Fahrzeugumgebung ausleuchten den Scheinwerfern; Fahrersicht sicherstellen Videokameras und Schwenk-Neige-Einheit; Fahrzeug aussetzen und bergen Umbilicalwinde und Aussetz- und Bergevorrichtung; Tetherlänge anpassen Tethertrommel und Garage.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "Funktionszuordnungen in P4, P6, P8, P10, P12, P14, P16, P18, P20, P22, P24, P26"
+            ],
+            "schluss": "Alle Funktionen des Modells sind ausführenden Systemen und Komponenten zugeordnet."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    }
+  ],
+  "modell": {
+    "elemente": [
+      {"id": "E1", "name": "Ferngesteuertes Unterwasserfahrzeug", "typ": "gesamtsystem", "eltern_id": null, "absatz_ids": ["P1", "P28"]},
+      {"id": "E2", "name": "Fahrzeugstruktur", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P3", "P6", "P27"], "kategorie": "struktur_fahrwerk"},
+      {"id": "E3", "name": "Rahmen", "typ": "komponente", "eltern_id": "E2", "absatz_ids": ["P3", "P4", "P29", "P30", "P31"]},
+      {"id": "E4", "name": "Landekufen", "typ": "komponente", "eltern_id": "E2", "absatz_ids": ["P3"]},
+      {"id": "E6", "name": "Auftriebs- und Trimmsystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P5", "P14", "P27"], "kategorie": "sonstig"},
+      {"id": "E7", "name": "Auftriebskörper", "typ": "komponente", "eltern_id": "E6", "absatz_ids": ["P5", "P6", "P30", "P31"]},
+      {"id": "E8", "name": "Trimmgewichte", "typ": "komponente", "eltern_id": "E6", "absatz_ids": ["P6", "P31"]},
+      {"id": "E9", "name": "Antriebssystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P7", "P6", "P27", "P31"], "kategorie": "antrieb"},
+      {"id": "E10", "name": "Horizontalthruster", "typ": "komponente", "eltern_id": "E9", "absatz_ids": ["P8", "P31"]},
+      {"id": "E11", "name": "Vertikalthruster", "typ": "komponente", "eltern_id": "E9", "absatz_ids": ["P8", "P31"]},
+      {"id": "E12", "name": "Thrusterregler", "typ": "komponente", "eltern_id": "E9", "absatz_ids": ["P8", "P10", "P30"]},
+      {"id": "E13", "name": "Energieversorgungssystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P9", "P27"], "kategorie": "energieversorgung"},
+      {"id": "E14", "name": "Oberflächenstromversorgung", "typ": "komponente", "eltern_id": "E13", "absatz_ids": ["P10", "P30", "P31"]},
+      {"id": "E15", "name": "Unterwasser-Leistungsverteilung", "typ": "komponente", "eltern_id": "E13", "absatz_ids": ["P10", "P22", "P24", "P30", "P31"]},
+      {"id": "E16", "name": "Leitstand", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P11", "P12", "P22", "P27"], "kategorie": "bedienraum"},
+      {"id": "E17", "name": "Pilotenkonsole", "typ": "komponente", "eltern_id": "E16", "absatz_ids": ["P12", "P18", "P30", "P31"]},
+      {"id": "E18", "name": "Videoanzeige", "typ": "komponente", "eltern_id": "E16", "absatz_ids": ["P12", "P20", "P30", "P31"]},
+      {"id": "E20", "name": "Nutzlastsystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P13", "P14", "P6", "P27"], "kategorie": "aufbau_nutzlast"},
+      {"id": "E21", "name": "Manipulatorarm", "typ": "komponente", "eltern_id": "E20", "absatz_ids": ["P13", "P14", "P24", "P30", "P31"]},
+      {"id": "E22", "name": "Probenbehälter", "typ": "komponente", "eltern_id": "E20", "absatz_ids": ["P14", "P29", "P30"]},
+      {"id": "E23", "name": "Messsensorik", "typ": "komponente", "eltern_id": "E20", "absatz_ids": ["P14", "P30", "P31"]},
+      {"id": "E25", "name": "Elektrik und Elektronik", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P15", "P27"], "kategorie": "elektrik_elektronik"},
+      {"id": "E26", "name": "Elektronikbehälter", "typ": "komponente", "eltern_id": "E25", "absatz_ids": ["P16", "P20"]},
+      {"id": "E27", "name": "Telemetrieeinheit", "typ": "komponente", "eltern_id": "E25", "absatz_ids": ["P16", "P22", "P30", "P31"]},
+      {"id": "E28", "name": "Unterwassersteckverbinder", "typ": "komponente", "eltern_id": "E25", "absatz_ids": ["P16"]},
+      {"id": "E29", "name": "Fahrzeugsteuerung und Information", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P17", "P18", "P27", "P28"], "kategorie": "steuerung_information"},
+      {"id": "E30", "name": "Steuerrechner", "typ": "komponente", "eltern_id": "E29", "absatz_ids": ["P18", "P12", "P20", "P30", "P31"]},
+      {"id": "E31", "name": "Navigationssystem", "typ": "subsystem", "eltern_id": "E29", "absatz_ids": ["P18", "P28", "P31"]},
+      {"id": "E32", "name": "Unterwasserortung", "typ": "komponente", "eltern_id": "E31", "absatz_ids": ["P18", "P28", "P30"]},
+      {"id": "E33", "name": "Lage- und Kurssensor", "typ": "komponente", "eltern_id": "E31", "absatz_ids": ["P18", "P30"]},
+      {"id": "E34", "name": "Tiefensensor", "typ": "komponente", "eltern_id": "E31", "absatz_ids": ["P18", "P30"]},
+      {"id": "E35", "name": "Assistenz und Sicherheit", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P19", "P20", "P27"], "kategorie": "assistenz_sicherheit"},
+      {"id": "E36", "name": "Sonar", "typ": "komponente", "eltern_id": "E35", "absatz_ids": ["P19", "P20", "P30", "P31"]},
+      {"id": "E37", "name": "Isolationsüberwachung", "typ": "komponente", "eltern_id": "E35", "absatz_ids": ["P20", "P30", "P31"]},
+      {"id": "E38", "name": "Leckagemelder", "typ": "komponente", "eltern_id": "E35", "absatz_ids": ["P20", "P30"]},
+      {"id": "E39", "name": "Beleuchtung und Sicht", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P21", "P22", "P27"], "kategorie": "beleuchtung_sicht"},
+      {"id": "E40", "name": "Scheinwerfer", "typ": "komponente", "eltern_id": "E39", "absatz_ids": ["P21", "P22", "P30", "P31"]},
+      {"id": "E41", "name": "Videokameras", "typ": "komponente", "eltern_id": "E39", "absatz_ids": ["P11", "P22", "P30", "P31"]},
+      {"id": "E42", "name": "Schwenk-Neige-Einheit", "typ": "komponente", "eltern_id": "E39", "absatz_ids": ["P22", "P30", "P31"]},
+      {"id": "E43", "name": "Neben- und Versorgungssysteme", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P23", "P24", "P8", "P28"], "kategorie": "nebensysteme"},
+      {"id": "E44", "name": "Hydraulikaggregat", "typ": "subsystem", "eltern_id": "E43", "absatz_ids": ["P24", "P10", "P28", "P31"]},
+      {"id": "E45", "name": "Elektromotor", "typ": "komponente", "eltern_id": "E44", "absatz_ids": ["P23", "P24", "P30"]},
+      {"id": "E46", "name": "Hydraulikpumpe", "typ": "komponente", "eltern_id": "E44", "absatz_ids": ["P23", "P24", "P28", "P30"]},
+      {"id": "E47", "name": "Ventilblock", "typ": "komponente", "eltern_id": "E43", "absatz_ids": ["P24", "P29", "P30", "P31"]},
+      {"id": "E48", "name": "Druckkompensator", "typ": "komponente", "eltern_id": "E43", "absatz_ids": ["P24", "P30"]},
+      {"id": "E49", "name": "Kabel- und Tether-Management-System", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P25", "P26", "P27", "P28"], "kategorie": "sonstig"},
+      {"id": "E50", "name": "Umbilical", "typ": "komponente", "eltern_id": "E49", "absatz_ids": ["P9", "P25", "P29", "P30", "P31"]},
+      {"id": "E51", "name": "Umbilicalwinde", "typ": "komponente", "eltern_id": "E49", "absatz_ids": ["P26", "P30", "P31"]},
+      {"id": "E52", "name": "Tether-Management-System", "typ": "subsystem", "eltern_id": "E49", "absatz_ids": ["P25", "P26", "P28"]},
+      {"id": "E53", "name": "Tether", "typ": "komponente", "eltern_id": "E52", "absatz_ids": ["P25", "P26", "P29", "P30", "P31"]},
+      {"id": "E54", "name": "Tethertrommel", "typ": "komponente", "eltern_id": "E52", "absatz_ids": ["P26", "P28", "P30", "P31"]},
+      {"id": "E55", "name": "Garage", "typ": "komponente", "eltern_id": "E52", "absatz_ids": ["P25", "P26", "P30", "P31"]},
+      {"id": "E56", "name": "Aussetz- und Bergevorrichtung", "typ": "komponente", "eltern_id": "E49", "absatz_ids": ["P26", "P30", "P31"]}
+    ],
+    "funktionen": [
+      {"id": "F1", "name": "Fahrzeuglasten tragen", "ausgefuehrt_von": ["E3"], "absatz_ids": ["P4", "P31"]},
+      {"id": "F2", "name": "Auftrieb bereitstellen", "ausgefuehrt_von": ["E7", "E8"], "absatz_ids": ["P6", "P31"]},
+      {"id": "F3", "name": "Antriebsleistung erzeugen", "ausgefuehrt_von": ["E10", "E11"], "absatz_ids": ["P8", "P31"]},
+      {"id": "F4", "name": "Fahrzeug fortbewegen", "ausgefuehrt_von": ["E9"], "absatz_ids": ["P8", "P31"]},
+      {"id": "F5", "name": "Fahrzeug manövrieren", "ausgefuehrt_von": ["E9", "E30"], "absatz_ids": ["P8", "P18", "P31"]},
+      {"id": "F6", "name": "Elektrische Energie verteilen", "ausgefuehrt_von": ["E14", "E15", "E50", "E53"], "absatz_ids": ["P10", "P31"]},
+      {"id": "F7", "name": "Hydraulische Leistung bereitstellen", "ausgefuehrt_von": ["E44"], "absatz_ids": ["P24", "P31"]},
+      {"id": "F8", "name": "Arbeitsgeräte versorgen", "ausgefuehrt_von": ["E47"], "absatz_ids": ["P24", "P31"]},
+      {"id": "F9", "name": "Fahrereingaben erfassen", "ausgefuehrt_von": ["E17"], "absatz_ids": ["P12", "P31"]},
+      {"id": "F10", "name": "Fahrerinformationen anzeigen", "ausgefuehrt_von": ["E18"], "absatz_ids": ["P12", "P31"]},
+      {"id": "F11", "name": "Objekte handhaben", "ausgefuehrt_von": ["E21"], "absatz_ids": ["P14", "P31"]},
+      {"id": "F12", "name": "Ladung aufnehmen", "ausgefuehrt_von": ["E22"], "absatz_ids": ["P14", "P31"]},
+      {"id": "F13", "name": "Daten übertragen", "ausgefuehrt_von": ["E27", "E50", "E53"], "absatz_ids": ["P16", "P31"]},
+      {"id": "F14", "name": "Fahrzeugposition bestimmen", "ausgefuehrt_von": ["E31"], "absatz_ids": ["P18", "P31"]},
+      {"id": "F15", "name": "Fahrzeugzustand überwachen", "ausgefuehrt_von": ["E30", "E37", "E38"], "absatz_ids": ["P18", "P20", "P31"]},
+      {"id": "F16", "name": "Fahrzeugumfeld erfassen", "ausgefuehrt_von": ["E36", "E23"], "absatz_ids": ["P14", "P20", "P31"]},
+      {"id": "F17", "name": "Fahrzeugumgebung ausleuchten", "ausgefuehrt_von": ["E40"], "absatz_ids": ["P22", "P31"]},
+      {"id": "F18", "name": "Fahrersicht sicherstellen", "ausgefuehrt_von": ["E41", "E42"], "absatz_ids": ["P22", "P31"]},
+      {"id": "F19", "name": "Fahrzeug aussetzen und bergen", "ausgefuehrt_von": ["E51", "E56"], "absatz_ids": ["P26", "P31"]},
+      {"id": "F20", "name": "Tetherlänge anpassen", "ausgefuehrt_von": ["E54", "E55"], "absatz_ids": ["P26", "P31"]}
+    ],
+    "fluesse": [
+      {"id": "S1", "von": "E14", "nach": "E50", "art": "elektrisch", "medium": "elektrische Leistung", "absatz_ids": ["P10", "P30"]},
+      {"id": "S2", "von": "E50", "nach": "E53", "art": "elektrisch", "medium": "elektrische Leistung", "absatz_ids": ["P30"]},
+      {"id": "S3", "von": "E53", "nach": "E15", "art": "elektrisch", "medium": "elektrische Leistung", "absatz_ids": ["P10", "P30"]},
+      {"id": "S4", "von": "E15", "nach": "E12", "art": "elektrisch", "medium": "elektrische Leistung", "absatz_ids": ["P10", "P30"]},
+      {"id": "S5", "von": "E12", "nach": "E10", "art": "elektrisch", "medium": "geregelte Motorleistung", "absatz_ids": ["P8", "P30"]},
+      {"id": "S6", "von": "E12", "nach": "E11", "art": "elektrisch", "medium": "geregelte Motorleistung", "absatz_ids": ["P8", "P30"]},
+      {"id": "S7", "von": "E15", "nach": "E40", "art": "elektrisch", "medium": "elektrische Leistung", "absatz_ids": ["P22", "P30"]},
+      {"id": "S8", "von": "E15", "nach": "E45", "art": "elektrisch", "medium": "elektrische Leistung", "absatz_ids": ["P10", "P30"]},
+      {"id": "S9", "von": "E45", "nach": "E46", "art": "mechanisch", "medium": "Drehmoment", "absatz_ids": ["P23", "P30"]},
+      {"id": "S10", "von": "E46", "nach": "E47", "art": "hydraulisch", "medium": "Hydrauliköl", "absatz_ids": ["P24", "P30"]},
+      {"id": "S11", "von": "E47", "nach": "E21", "art": "hydraulisch", "medium": "Hydrauliköl", "absatz_ids": ["P24", "P30"]},
+      {"id": "S12", "von": "E47", "nach": "E10", "art": "hydraulisch", "medium": "Hydrauliköl (elektrohydraulische Bauweise)", "absatz_ids": ["P8", "P30"]},
+      {"id": "S13", "von": "E47", "nach": "E11", "art": "hydraulisch", "medium": "Hydrauliköl (elektrohydraulische Bauweise)", "absatz_ids": ["P8", "P30"]},
+      {"id": "S14", "von": "E48", "nach": "E47", "art": "hydraulisch", "medium": "Bezugsdruck", "absatz_ids": ["P24", "P30"]},
+      {"id": "S15", "von": "E10", "nach": "E3", "art": "mechanisch", "medium": "Schub", "absatz_ids": ["P4", "P30"]},
+      {"id": "S16", "von": "E11", "nach": "E3", "art": "mechanisch", "medium": "Schub", "absatz_ids": ["P4", "P30"]},
+      {"id": "S17", "von": "E7", "nach": "E3", "art": "mechanisch", "medium": "Auftriebskraft", "absatz_ids": ["P4", "P30"]},
+      {"id": "S18", "von": "E51", "nach": "E50", "art": "mechanisch", "medium": "Zugkraft", "absatz_ids": ["P26", "P30"]},
+      {"id": "S19", "von": "E54", "nach": "E53", "art": "mechanisch", "medium": "Zugkraft", "absatz_ids": ["P26", "P30"]},
+      {"id": "S20", "von": "E56", "nach": "E55", "art": "mechanisch", "medium": "Hebelast", "absatz_ids": ["P26", "P30"]},
+      {"id": "S21", "von": "E17", "nach": "E30", "art": "information", "medium": "Bedienbefehle", "absatz_ids": ["P12", "P30"]},
+      {"id": "S22", "von": "E30", "nach": "E27", "art": "information", "medium": "Steuerbefehle über Glasfaser", "absatz_ids": ["P16", "P30"]},
+      {"id": "S23", "von": "E27", "nach": "E12", "art": "information", "medium": "Schubsollwerte", "absatz_ids": ["P18", "P30"]},
+      {"id": "S24", "von": "E27", "nach": "E42", "art": "information", "medium": "Kamerabefehle", "absatz_ids": ["P22", "P30"]},
+      {"id": "S25", "von": "E41", "nach": "E27", "art": "information", "medium": "Videosignal", "absatz_ids": ["P22", "P30"]},
+      {"id": "S26", "von": "E36", "nach": "E27", "art": "information", "medium": "Sonardaten", "absatz_ids": ["P20", "P30"]},
+      {"id": "S27", "von": "E23", "nach": "E27", "art": "information", "medium": "Messdaten", "absatz_ids": ["P16", "P30"]},
+      {"id": "S28", "von": "E27", "nach": "E18", "art": "information", "medium": "Video und Telemetrie über Glasfaser", "absatz_ids": ["P12", "P30"]},
+      {"id": "S29", "von": "E32", "nach": "E30", "art": "information", "medium": "Position", "absatz_ids": ["P18", "P30"]},
+      {"id": "S30", "von": "E33", "nach": "E30", "art": "information", "medium": "Lage und Kurs", "absatz_ids": ["P18", "P30"]},
+      {"id": "S31", "von": "E34", "nach": "E30", "art": "information", "medium": "Tiefe", "absatz_ids": ["P18", "P30"]},
+      {"id": "S32", "von": "E37", "nach": "E30", "art": "information", "medium": "Isolationszustand", "absatz_ids": ["P20", "P30"]},
+      {"id": "S33", "von": "E38", "nach": "E30", "art": "information", "medium": "Leckagemeldung", "absatz_ids": ["P20", "P30"]},
+      {"id": "S34", "von": "E21", "nach": "E22", "art": "stoff", "medium": "Proben", "absatz_ids": ["P13", "P30"]}
+    ],
+    "entfallene_kategorien": [
+      {"kategorie": "lenkung", "grund": "Keine eigene Lenkanlage; Richtungsänderungen entstehen durch unterschiedliche Schübe der Thruster im Antriebssystem (P8)."},
+      {"kategorie": "bremse", "grund": "Keine Radbremse oder Bremsanlage; Verzögerung und Halten erfolgen über Schubumkehr der Thruster und neutralen Auftrieb (P6, P8)."},
+      {"kategorie": "thermomanagement", "grund": "Kein eigenständiges Thermomanagement im Fahrzeug; die Wärme von Gehäusen und Hydraulik geht an das umgebende Wasser (P27). Klimatisierung des Leitstands ist Teil der Schiffsinfrastruktur."}
+    ]
+  },
+  "offene_punkte": [
+    "Glossarvorschlag: Tetherlänge anpassen (Funktion von Tethertrommel und Garage im Tether-Management-System; keine gelistete Funktion deckt das Ausgeben und Einholen des Tethers ab).",
+    "Recherche Thrusteranordnung und Schubaufteilung: Fachliteratur, Suchbegriffe „ROV thrust allocation vectored thruster configuration“, „Christ Wernli The ROV Manual“.",
+    "Recherche Leistungsübertragung über Umbilical und Wandlung im Fahrzeug: Suchbegriffe „ROV umbilical power transmission subsea transformer“.",
+    "Recherche Isolationsüberwachung und Leckageerkennung (Absatz P20 nur Bauweisenannahme): Suchbegriffe „ROV ground fault monitoring“, „ROV pod leak detection“.",
+    "Recherche Trimmung und Auftriebsanpassung bei wechselnder Nutzlast: Suchbegriffe „ROV ballast trim weights payload buoyancy“.",
+    "Recherche Regelwerke für ROV-Systeme und Aussetz- und Bergeanlagen: IMCA-Leitfäden zu ROV-Betrieb und LARS-Prüfung, ISO 13628-8 (ROV-Schnittstellen), DNV-Regeln für Hebeanlagen; Belege für Umbilicalwinde und Aussetz- und Bergevorrichtung.",
+    "Nicht herleitbar: Zuordnung des Begleitkörpers von Zweikörpersystemen (eigenes Element oder Teil des Kabel- und Tether-Management-Systems) und seine Funktion als Entkoppler von Schiffsbewegungen; Suchbegriffe „ROV two-body system depressor“.",
+    "Nicht herleitbar: Varianten mit Energiespeicher an Bord (Hybrid- oder Resident-ROV) und ihre Auswirkungen auf Energieversorgung und Tether; Suchbegriffe „hybrid ROV battery“, „resident ROV subsea docking“."
+  ]
+}

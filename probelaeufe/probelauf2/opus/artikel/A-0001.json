@@ -1,0 +1,841 @@
+{
+  "schema_version": "2.2",
+  "artikel_id": "A-0001",
+  "artikeltyp": "blatt",
+  "titel": "Pkw",
+  "betrachtungsumfang": "Generische Referenzarchitektur des Personenkraftwagens (EU-Fahrzeugklasse M1) mit Verbrennungs-, Elektro- und Hybridantrieb; ohne Sonderaufbauten und ohne modell- oder baureihenspezifische Ausführungen.",
+  "status": "in_arbeit",
+  "quellenzugriff": "ja",
+  "kindartikel_ids": [],
+  "quellen": [
+    {
+      "quellen_id": "Q1",
+      "titel": "Verordnung (EU) 2018/858 – Artikel 4: Fahrzeugklassen",
+      "urheber": "Europäisches Parlament und Rat der Europäischen Union",
+      "stand": "2018",
+      "url": "https://gesetze.legal/eu/vo_eu_2018_858/4",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q2",
+      "titel": "Pkw (Personenkraftwagen)",
+      "urheber": "Autorinnen und Autoren der deutschsprachigen Wikipedia (Spiegel dewiki.de)",
+      "stand": null,
+      "url": "https://dewiki.de/Lexikon/Pkw",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q3",
+      "titel": "Der Elektroantrieb: So funktioniert ein Elektroauto",
+      "urheber": "ADAC e. V.",
+      "stand": null,
+      "url": "https://www.adac.de/verkehr/tanken-kraftstoff-antrieb/alternative-antriebe/elektroantrieb/",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "verband"
+    },
+    {
+      "quellen_id": "Q4",
+      "titel": "Praxishandbuch Pkw-Bremsen. Technik, Service, Regelsysteme (Leseprobe)",
+      "urheber": "Jens Sternbeck; Krafthand Medien GmbH",
+      "stand": "1. Auflage 2015",
+      "url": "https://www.krafthand-shop.de/wp-content/uploads/2023/04/Pkw_Bremsen_Leseprobe.pdf",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "fachliteratur"
+    },
+    {
+      "quellen_id": "Q5",
+      "titel": "Lenkungshandbuch. Lenksysteme, Lenkgefühl, Fahrdynamik von Kraftfahrzeugen (Leseprobe)",
+      "urheber": "P. Pfeffer, M. Harrer (Hrsg.); Vieweg+Teubner Verlag",
+      "stand": "1. Auflage 2011",
+      "url": "https://content.e-bookshelf.de/media/reading/L-119829-e3d4cc2faa.pdf",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "fachliteratur"
+    },
+    {
+      "quellen_id": "Q6",
+      "titel": "General Safety Regulation – Übersicht der Anforderungen",
+      "urheber": "ADAC e. V.",
+      "stand": null,
+      "url": "https://www.adac.de/-/media/pdf/tet/general_safety_regulation.pdf",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "verband"
+    },
+    {
+      "quellen_id": "Q7",
+      "titel": "Kraftwagen",
+      "urheber": "wissen.de Lexikon",
+      "stand": null,
+      "url": "https://www.wissen.de/lexikon/Kraftwagen",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q8",
+      "titel": "Elektrischer Antriebsstrang (Kapitel 6), in: A. Kampker, H. H. Heimes (Hrsg.): Elektromobilität",
+      "urheber": "H. H. Heimes, A. Kampker u. a.; Springer",
+      "stand": "2024",
+      "url": "https://link.springer.com/content/pdf/10.1007/978-3-662-65812-3_6.pdf",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "fachliteratur"
+    },
+    {
+      "quellen_id": "Q9",
+      "titel": "Verordnung (EU) 2019/2144 – Artikel 7: Besondere Anforderungen an Personenkraftwagen und leichte Nutzfahrzeuge",
+      "urheber": "Europäisches Parlament und Rat der Europäischen Union",
+      "stand": "2019",
+      "url": "https://gesetze.legal/eu/vo_eu_2019_2144/7",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "norm"
+    }
+  ],
+  "abschnitte": [
+    {
+      "ueberschrift": "Einleitung",
+      "abschnittstyp": "gesamtsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P1",
+          "text": "Ein Personenkraftwagen (Pkw) ist ein Fahrzeug mit eigenem Antrieb, das vorwiegend zur Beförderung von Personen bestimmt ist; angetrieben wird er durch einen Verbrennungsmotor oder elektrisch. Im Recht der Europäischen Union gehört er zur Klasse M, die vorwiegend für die Beförderung von Personen und deren Gepäck ausgelegte und gebaute Kraftfahrzeuge umfasst, und darin zur Klasse M1: Kraftfahrzeuge mit höchstens acht Sitzplätzen zusätzlich zum Fahrersitz und ohne Stehplätze.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q1", "fundstelle": "Art. 4 Abs. 1 Buchst. a und Buchst. a Ziff. i (Klasse M, Klasse M1)"},
+            {"quellen_id": "Q2", "fundstelle": "Einleitung und Abschnitt Definitionen; Abschnitte Verbote von Verbrennungsmotoren sowie Wirkungsgrade und Emissionen eines PKW (Verbrennungsmotor, Elektrofahrzeuge)"}
+          ],
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P2",
+          "text": "Architekturell lässt sich der Personenkraftwagen als Gesamtsystem auffassen, das aus funktional und physisch abgegrenzten Hauptsystemen besteht. Diese sind über mechanische, elektrische, hydraulische, pneumatische, thermische und informationstechnische Schnittstellen gekoppelt; pneumatisch ist beim Pkw etwa die Unterdruckversorgung der Bremskraftverstärkung. Für eine Systemdekomposition, etwa in SysML, wird der Pkw zuerst in diese Hauptsysteme zerlegt und anschließend rekursiv in Subsysteme und Komponenten untergliedert.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P1: Personenbeförderung mit eigenem Antrieb",
+              "Personenbeförderung mit eigenem Antrieb erfordert Tragstruktur, Antrieb, Energiespeicher, Richtungsführung, Verzögerung und Insassenraum",
+              "P12: Bremskraftverstärker mit Vakuumversorgung",
+              "Kategorien der Glossarvorgaben"
+            ],
+            "schluss": "Der Pkw ist als Gesamtsystem aus gekoppelten Hauptsystemen mit mehreren Schnittstellenarten zu beschreiben und hierarchisch zu zerlegen."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrzeugstruktur und Fahrwerk",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E2",
+      "absaetze": [
+        {
+          "absatz_id": "P3",
+          "text": "Die Karosserie von Personenkraftwagen wird heute meist als selbsttragender Aufbau gebaut. In der Schalenbauweise tragen die Bleche den Aufbau selbst, in der Skelettbauweise übernimmt ein fachwerkartiges Stahlgerüst die Trägerfunktion. Dem Wagenkörper steht das Fahrwerk gegenüber.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q7", "fundstelle": "Lexikonartikel Kraftwagen, Passage zu Aufbau, Fahrgestell, Fahrwerk und selbsttragenden Aufbauten (Schalen- und Skelettbauweise)"}
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P4",
+          "text": "Fahrzeugstruktur und Fahrwerk tragen alle Fahrzeuglasten und leiten sie zur Fahrbahn ab. Bei selbsttragender Bauweise ist die Rohkarosserie zugleich Tragstruktur und Befestigungsbasis für Antrieb, Fahrwerk, Fahrgastraum und Laderaum; Türen und Klappen verschließen ihre Öffnungen. Das Fahrwerk umfasst Räder und Reifen, die Radaufhängung, welche die Räder führt, sowie Federung und Dämpfung. Vertikallasten verlaufen von der Fahrbahn über Räder und Reifen, Radaufhängung sowie Federung und Dämpfung in die Rohkarosserie; Antriebs-, Brems- und Seitenführungskräfte leitet die Radaufhängung über ihre Anbindungspunkte direkt in die Struktur.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P3: selbsttragende Karosserie als Regelbauweise, Fahrwerk als Gegenstück",
+              "Kräfte zwischen Fahrbahn und Fahrzeug können nur über die Radaufstandsflächen und die Radführung in die tragende Struktur gelangen (Kräftegleichgewicht)",
+              "Feder- und Dämpferelemente stützen die Vertikallasten zwischen Radführung und Aufbau ab, während Längs- und Querkräfte über die Lenker der Radführung abgestützt werden"
+            ],
+            "schluss": "Die Rohkarosserie ist Tragstruktur; der Lastpfad führt über Räder und Reifen, Radaufhängung sowie Federung und Dämpfung in die Rohkarosserie."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Antriebssystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E10",
+      "absaetze": [
+        {
+          "absatz_id": "P5",
+          "text": "Bei Kraftwagen, zu denen der Pkw zählt, sitzt der Motor meist vorn, alternativ hinten; möglich sind Vorderrad-, Hinterrad- oder Allradantrieb. Die Motorkraft läuft über eine ausrückbare Kupplung zum Wechselgetriebe, das die Antriebskräfte an die wechselnden Fahrwiderstände anpasst.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q7", "fundstelle": "Lexikonartikel Kraftwagen, Passagen zu Motoranordnung (Front-, Heckmotor), Antriebsarten und Kraftübertragung (Kupplung, Wechselgetriebe)"}
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P6",
+          "text": "Das Antriebssystem erzeugt Antriebsleistung mit einem Verbrennungsmotor und überträgt sie über die Kraftübertragung aus Kupplung, Getriebe sowie Differential und Antriebswellen auf die Räder. Das Differential ist nötig, weil die Räder in Kurven unterschiedliche Wege zurücklegen. Beim Elektroantrieb ersetzt eine elektrische Antriebseinheit den Motor, mit Folgen für Energieversorgung, Thermomanagement und Nebensysteme.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P5: Kupplung und Wechselgetriebe zwischen Motor und Antrieb",
+              "P7: elektrischer Antriebsstrang mit Wechselrichter und elektrischer Maschine",
+              "Kurveninnere und kurvenäußere Räder legen unterschiedliche Wege zurück; ein Drehzahlausgleich ist kinematisch notwendig",
+              "Ein elektrischer Antrieb braucht Energiespeicher, Wandler und Wärmeabfuhr"
+            ],
+            "schluss": "Das Antriebssystem besteht aus Energiewandler und Kraftübertragung mit Differential; der Elektroantrieb tauscht den Wandler und wirkt auf Energieversorgung, Thermomanagement und Nebensysteme."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P7",
+          "text": "Im elektrischen Antriebsstrang wandelt der Wechselrichter die Gleichspannung der Batterie in Wechselspannung für die elektrische Maschine, die elektrische in mechanische Energie umwandelt. Eine Kupplung ist nicht nötig, weil das Motormoment ab Drehzahl null verfügbar ist; meist genügt ein Getriebe mit fester Übersetzung. Beim elektrischen Bremsen speist die Maschine als Generator über den Wechselrichter die Batterie.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q8", "fundstelle": "Abschn. 6.2 und 6.3 (Wechselrichter, elektrische Maschine, generatorischer Betrieb bei elektrischer Bremsung); Abschn. 6.3.1 (Kupplung nicht erforderlich)"},
+            {"quellen_id": "Q3", "fundstelle": "Abschnitt Elektromotor: Fahrkomfort und Effizienz (Getriebe mit fester Übersetzung)"}
+          ],
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Energieversorgungssystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E19",
+      "absaetze": [
+        {
+          "absatz_id": "P8",
+          "text": "Die Traktionsbatterie liefert die Energie für den Antrieb und die Hochvolt-Nebenverbraucher. Ihre Zellen werden zu Modulen und diese zu einem Batteriepack verschaltet; Schütze und Sicherungen sind auf Systemebene integriert, wo in der Regel erst das Hochvoltniveau von 400 V oder 800 V entsteht. Das Batteriemanagementsystem aggregiert die Sensordaten, steuert die Schütze und schützt die Zellen vor Überladung. Das Bordladegerät lädt die Batterie aus einer externen Quelle, in der Regel dem Stromnetz.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q8", "fundstelle": "Abschn. 6.2, 6.3 und 6.3.2 (Traktionsbatterie, Batteriemanagementsystem, On-Board Charger)"}
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P9",
+          "text": "Das Energieversorgungssystem speichert die Energie für Antrieb und Verbraucher. Beim Verbrennungsantrieb besteht es aus der Kraftstoffanlage mit Kraftstofftank und Kraftstoffpumpe, beim Elektroantrieb aus dem Hochvolt-Energiesystem mit Traktionsbatterie, Batteriemanagementsystem, Bordladegerät und Ladeanschluss; Hybride enthalten beides. Steuergeräte und Komfortverbraucher versorgt ein Niedervolt-Energiesystem mit Bordnetzbatterie, das der Generator oder beim Elektroantrieb ein Gleichspannungswandler aus der Traktionsbatterie lädt.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P8: Aufbau des Hochvolt-Energiesystems",
+              "Q8: DC/DC-Wandler wandelt Gleichspannungen auf andere Spannungsniveaus",
+              "P10: elektromechanische Lenkung wird über das Bordnetz gespeist",
+              "Ein Verbrennungsmotor benötigt einen Kraftstoffspeicher und eine Förderung zum Motor (Funktionsprinzip)",
+              "Ein Bordladegerät braucht einen äußeren Anschluss an die Energiequelle"
+            ],
+            "schluss": "Das Energieversorgungssystem gliedert sich je nach Antrieb in Kraftstoffanlage und Hochvolt-Energiesystem sowie in ein Niedervolt-Energiesystem für Steuergeräte und Verbraucher."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Lenksystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E32",
+      "absaetze": [
+        {
+          "absatz_id": "P10",
+          "text": "Die Bauteile der Lenkung sind Lenkrad, Lenksäule, Lenkgetriebe und Spurstangen. Die Lenksäule leitet die Eingabe am Lenkrad an das Lenkgetriebe, das meist als Ritzel-Zahnstangengetriebe die Drehbewegung in eine Linearbewegung wandelt; die Spurstangen übertragen diese über Kugelgelenke auf den Radträger, der das Rad um die Lenkachse dreht. Bei der hydraulischen Servolenkung erzeugt meist eine vom Verbrennungsmotor angetriebene Flügelzellenpumpe die Unterstützung, bei der elektrohydraulischen eine motorunabhängige Pumpe, bei der elektromechanischen ein über das Bordnetz gespeister Elektromotor.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q5", "fundstelle": "Kap. A, S. 1 (Bauteile der Lenkung, Ritzel-Zahnstangengetriebe, Spurstangen) und S. 3–4 (hydraulische, elektrohydraulische und elektromechanische Servolenkung)"}
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P11",
+          "text": "Das Lenksystem gliedert sich in die Lenkbetätigung aus Lenkrad und Lenksäule und die Lenkübertragung aus Lenkgetriebe, Spurstangen und Servoeinheit. Die Servoeinheit setzt außer dem Fahrerwunsch auch Lenkanforderungen der Fahrerassistenz um. Dass Fahrzeuge mit hydraulischer Servolenkung übergangsweise nur ein Spurhaltewarnsystem benötigen, spricht dafür, dass der Notfall-Spurhalteassistent eine elektrisch ansteuerbare Servoeinheit voraussetzt.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P10: Bauteile und Servolenkungsarten",
+              "P19: Notfall-Spurhalteassistent für Pkw vorgeschrieben",
+              "Q6: Fahrzeuge mit hydraulischer Servolenkung erhalten mit späteren Fristen stattdessen ein Spurhaltewarnsystem"
+            ],
+            "schluss": "Die Servoeinheit ist Teil der Lenkübertragung und zugleich Stellglied für Assistenzeingriffe, was eine elektrische Ansteuerbarkeit voraussetzt."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Bremssystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E40",
+      "absaetze": [
+        {
+          "absatz_id": "P12",
+          "text": "Der Hauptbremszylinder leitet die Kraft der Bremsbetätigung in die Hydraulikanlage; fast alle modernen Hauptbremszylinder bestehen aus zwei unabhängig arbeitenden Hydraulikkreisen. Weil die Fußkraft allein nicht ausreicht, erzeugt ein Bremskraftverstärker Hilfskraft, hydraulisch oder über Vakuum, das eine mechanische oder elektrische Vakuumpumpe bereitstellt. An den Rädern arbeiten Trommelbremsen oder Scheibenbremsen mit Festsattel oder Faustsattel; als Feststellbremse dient unter anderem die elektrische Parkbremse. ABS und elektronisches Stabilitätsprogramm steuern die Bremskraft.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q4", "fundstelle": "Kap. 4.1 (S. 21), Kap. 4.3 und 4.4 (S. 24–25), Kap. 4.6 (S. 29), Kap. 4.10 bis 4.10.2 (S. 42–47), Kap. 7 und 7.1 (S. 71); Kap. 13 und 14 laut Inhaltsverzeichnis"}
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P13",
+          "text": "Das Bremssystem gliedert sich in die Bremsbetätigung mit Bremskraftverstärker und Hauptbremszylinder, das Bremsregelsystem, die Radbremsen mit Scheibenbremse oder Trommelbremse und die Feststellbremse. Die Bremsflüssigkeit fließt vom Hauptbremszylinder über das Bremsregelsystem zu den Radbremsen. Das Bremsregelsystem setzt auch Anforderungen der Notbremsassistenz um und teilt bei elektrischem Antrieb die Verzögerung zwischen Radbremsen und generatorischem Bremsen auf.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P12: Bauteile der Pkw-Bremsanlage; ABS und Stabilitätsprogramm steuern die Bremskraft",
+              "P7: elektrische Maschine bremst generatorisch",
+              "P19: Notbremsassistenzsysteme vorgeschrieben",
+              "Eine Regelung der Bremskraft je Rad muss zwischen Hauptbremszylinder und Radbremsen eingreifen"
+            ],
+            "schluss": "Das Bremsregelsystem liegt im Hydraulikpfad zwischen Bremsbetätigung und Radbremsen und koordiniert Fahrer-, Assistenz- und Rekuperationsanforderungen."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrgastraum",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E49",
+      "absaetze": [
+        {
+          "absatz_id": "P14",
+          "text": "Der Fahrgastraum nimmt Fahrer und Mitfahrende auf und ist zugleich Bedien- und Arbeitsraum. Er umfasst die Sitzanlage mit Fahrersitz und höchstens acht weiteren Sitzplätzen, die Rückhaltesysteme sowie die Bedien- und Anzeigeelemente. Nach deutschem Recht dürfen nur so viele Personen befördert werden, wie Sicherheitsgurte vorhanden sind, daher sind die Rückhaltesysteme sitzplatzbezogen ausgelegt. Über die Bedien- und Anzeigeelemente gibt der Fahrer Fahr- und Komfortbefehle ein und erhält Zustands-, Warn- und Navigationsinformationen; Rohkarosserie und Rückhaltesysteme schützen gemeinsam die Insassen. Die Klimatisierung des Innenraums übernimmt das Thermomanagement.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P1: Klasse M1 mit höchstens acht Sitzplätzen zusätzlich zum Fahrersitz",
+              "Q2: Personenzahl ist in Deutschland auf die Zahl der vorhandenen Sicherheitsgurte begrenzt",
+              "Jede Fahrereingabe und jede Fahrerinformation braucht ein Bedien- oder Anzeigeelement im Fahrgastraum"
+            ],
+            "schluss": "Der Fahrgastraum besteht aus Sitzanlage, sitzplatzbezogenen Rückhaltesystemen und Bedien- und Anzeigeelementen."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Laderaum und Anhängevorrichtung",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E53",
+      "absaetze": [
+        {
+          "absatz_id": "P15",
+          "text": "Laderaum und Anhängevorrichtung nehmen Gepäck und gegebenenfalls Anhängelasten auf; das Gepäck zählt die Klassendefinition ausdrücklich zur Personenbeförderung. Der Gepäckraum ist Teil der Karosserie und liegt dort, wo Antrieb und Fahrgastraum Bauraum freilassen: bei Frontmotor im Heck, bei Heckmotor im Vorderwagen, bei kompakter elektrischer Antriebseinheit gegebenenfalls an beiden Enden. Eine optionale Anhängerkupplung leitet Zug- und Stützlasten eines Anhängers oder Lastenträgers in die Rohkarosserie und versorgt über eine Steckverbindung die Anhängerbeleuchtung aus dem Leitungssatz. Die Zuladung wirkt über die Rohkarosserie auf Fahrwerk, Bremssystem und Antriebssystem.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P1: Klasse M umfasst die Beförderung von Personen und deren Gepäck",
+              "P3: selbsttragende Karosserie",
+              "P5: Motor vorn oder hinten",
+              "Anhängelasten müssen in die tragende Struktur eingeleitet werden; ein Anhänger benötigt eine eigene, vom Zugfahrzeug versorgte Beleuchtung"
+            ],
+            "schluss": "Der Gepäckraum ist ein Bauraum der Karosserie, dessen Lage aus der Antriebsanordnung folgt; die Anhängerkupplung hat eine mechanische und eine elektrische Schnittstelle."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Elektrik und Elektronik",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E56",
+      "absaetze": [
+        {
+          "absatz_id": "P16",
+          "text": "Elektrik und Elektronik verbinden die meisten Hauptsysteme miteinander. Die Energieverteilung besteht aus dem Leitungssatz sowie Sicherungen und Stromverteiler, die Energie der Bordnetzbatterie an die Verbraucher führen. Die Elektronikarchitektur umfasst Steuergeräte und das Fahrzeugnetzwerk, über das diese Daten austauschen. Sensoren und Aktoren bilden die Schnittstelle zu den physischen Systemen: Ein Steuergerät liest Größen wie Drehzahl, Druck oder Lenkwinkel, verarbeitet sie und steuert Aktoren wie die Servoeinheit oder das Bremsregelsystem. Weil diese Vernetzung von außen angreifbar ist, verlangt das Unionsrecht auch einen Schutz gegen Cyber-Angriffe.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P10: elektromechanische Lenkung wird über das Bordnetz gespeist",
+              "P12: ABS und Stabilitätsprogramm steuern die Bremskraft",
+              "P8: Batteriemanagementsystem aggregiert Sensordaten",
+              "Q6: Schutz des Fahrzeugs gegen Cyber-Angriffe vorgeschrieben",
+              "Jede Regelung braucht Messgröße, Verarbeitung und Stellglied"
+            ],
+            "schluss": "Elektrik und Elektronik gliedern sich in Energieverteilung, Elektronikarchitektur sowie Sensoren und Aktoren, die über das Fahrzeugnetzwerk gekoppelt sind."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrzeugsteuerung und Information",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E64",
+      "absaetze": [
+        {
+          "absatz_id": "P17",
+          "text": "Fahrzeugsteuerung und Information bilden die logische Ebene der Architektur. Das Fahrzeugmanagement koordiniert als Antriebs- und Energiemanagement Funktionen, die mehrere Hauptsysteme betreffen: Es setzt den Fahrwunsch in Momentanforderungen an Verbrennungsmotor oder Wechselrichter um, wertet die Zustandsdaten des Batteriemanagementsystems aus und stimmt beim Hybrid beide Antriebspfade ab.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P7: Wechselrichter steuert die elektrische Maschine",
+              "P8: Batteriemanagementsystem liefert Zustandsdaten der Batterie",
+              "P5: Verbrennungsmotor als Antriebsquelle",
+              "Bei mehreren Energiewandlern muss eine übergeordnete Instanz die Momentenaufteilung festlegen"
+            ],
+            "schluss": "Ein Fahrzeugmanagement koordiniert Antrieb und Energieversorgung über die Grenzen einzelner Hauptsysteme hinweg."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P18",
+          "text": "Die Diagnoseschnittstelle stellt Fehler-, Zustands- und Wartungsinformationen der Steuergeräte für Werkstatt und Prüfung bereit. Das Infotainment- und Telematiksystem bestimmt per Satellitenortung die Fahrzeugposition, bietet Navigation und Medien und verbindet den Pkw mit externen Diensten. Seine Anzeigen laufen über die Bedien- und Anzeigeelemente.",
+          "begruendung": "modellwissen",
+          "belege": [],
+          "sicherheit": "gering",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrerassistenz und Sicherheit",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E68",
+      "absaetze": [
+        {
+          "absatz_id": "P19",
+          "text": "Nach EU-Recht müssen Pkw der Klasse M1 hochentwickelte Notbremsassistenzsysteme besitzen, die zunächst Hindernisse und bewegte Fahrzeuge vor dem Fahrzeug und in einer zweiten Phase auch Fußgänger und Radfahrer erkennen, ferner einen Notfall-Spurhalteassistenten; der Fahrer muss diese Systeme übersteuern können. Vorgeschrieben sind außerdem unter anderem intelligenter Geschwindigkeitsassistent, Notbremslicht, Rückfahrassistent, Müdigkeitswarnung, Unfalldatenspeicher, Reifendrucküberwachung und Schutz gegen Cyber-Angriffe.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q9", "fundstelle": "Art. 7 Abs. 1 bis 4 (Notbremsassistenz in zwei Phasen, Notfall-Spurhalteassistent, Übersteuerbarkeit)"},
+            {"quellen_id": "Q6", "fundstelle": "Übersicht der für Pkw (M1) vorgeschriebenen Systeme"}
+          ],
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P20",
+          "text": "Fahrerassistenz und Sicherheit gliedern sich in Umfeldsensorik, Assistenzsteuergerät und Ereignisdatenspeicher. Die Umfeldsensorik erfasst Hindernisse, Fahrzeuge, Fußgänger und Radfahrer; das Assistenzsteuergerät verknüpft diese Daten mit Geschwindigkeit, Lenkwinkel und Bremszustand und greift über Bremsregelsystem und Servoeinheit ein. Warnungen gibt es über die Bedien- und Anzeigeelemente aus. Der Ereignisdatenspeicher zeichnet Daten im Umfeld eines Unfalls auf.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P19: vorgeschriebene Notbrems-, Spurhalte- und Warnsysteme sowie Unfalldatenspeicher",
+              "P13: Bremsregelsystem setzt Bremsanforderungen um",
+              "P11: Servoeinheit setzt Lenkanforderungen um",
+              "Eine Notbremsung auf erkannte Hindernisse erfordert Umfelderfassung, Entscheidung und Stelleingriff"
+            ],
+            "schluss": "Fahrerassistenz und Sicherheit bestehen aus Umfeldsensorik, Assistenzsteuergerät und Ereignisdatenspeicher mit Stellpfaden zu Bremse und Lenkung."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Beleuchtung und Sicht",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E72",
+      "absaetze": [
+        {
+          "absatz_id": "P21",
+          "text": "Beleuchtung und Sicht dienen dem Sehen und dem Gesehenwerden. Die Lichtanlage umfasst Scheinwerfer, welche die Fahrbahn ausleuchten, und Signalleuchten wie Schluss-, Brems- und Blinkleuchten; auch das vorgeschriebene Notbremslicht nutzt die Signalleuchten und wird von den Steuergeräten bei starker Verzögerung angesteuert. Das Sichtsystem besteht aus Scheibenwischanlage und Außenspiegel; die Scheibenwischanlage hält die Frontscheibe frei, der vorgeschriebene Rückfahrassistent ergänzt die Sicht nach hinten. Die Lichtanlage wird über den Leitungssatz versorgt und über die Bedien- und Anzeigeelemente geschaltet. Leuchtmittel und kamerabasierte Spiegelersatzsysteme sind Varianten ohne Strukturänderung.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P19: Notbremslicht und Rückfahrassistent vorgeschrieben",
+              "P16: elektrische Verbraucher werden über Leitungssatz und Steuergeräte versorgt und angesteuert",
+              "Analogieschluss vom Referenzaufbau des Lkw für Scheinwerfer, Signalleuchten, Scheibenwischanlage und Spiegel"
+            ],
+            "schluss": "Beleuchtung und Sicht bestehen aus Lichtanlage und Sichtsystem mit elektrischer Versorgung aus dem Bordnetz."
+          },
+          "sicherheit": "gering",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Thermomanagement",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E79",
+      "absaetze": [
+        {
+          "absatz_id": "P22",
+          "text": "Beim Elektrofahrzeug reicht die Abwärme der elektrischen Komponenten nicht für die Innenraumheizung, daher ist ein spezielles Thermomanagement nötig. Es muss die Batterie im Sommer kühlen und im Winter beheizen können; die Batteriemodule brauchen dazu eine Schnittstelle zu diesem System, um das Temperaturfenster der Zellen zu halten. Kühlsysteme beziehungsweise Temperaturmanagement zählen zu den Komponenten des Elektroantriebs.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q8", "fundstelle": "Abschn. 6.1 und 6.3.2 (Thermomanagement, Temperierung der Batterie)"},
+            {"quellen_id": "Q3", "fundstelle": "Abschnitt Elektroantrieb: Die Komponenten"}
+          ],
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P23",
+          "text": "Das Thermomanagement regelt die Betriebstemperaturen der Hauptsysteme und das Innenraumklima. Beim Verbrennungsantrieb führt der Motorkühlkreislauf die Motorwärme ab, welche die Heizungs- und Klimaanlage zum Heizen nutzt. Beim Elektroantrieb temperiert ein Batterie- und Elektronikkühlkreislauf Traktionsbatterie, Wechselrichter und elektrische Maschine, und die Heizungs- und Klimaanlage benötigt eine eigene Wärmequelle.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P22: Batterietemperierung nötig, Abwärme reicht nicht zur Innenraumheizung",
+              "P5: Verbrennungsmotor als Antriebsquelle",
+              "P7: Wechselrichter und elektrische Maschine",
+              "Verbrennungsmotoren und elektrische Wandler erzeugen Verlustwärme, die abgeführt werden muss"
+            ],
+            "schluss": "Das Thermomanagement besteht je nach Antrieb aus Motorkühlkreislauf oder Batterie- und Elektronikkühlkreislauf sowie der Heizungs- und Klimaanlage."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Neben- und Versorgungssysteme",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E83",
+      "absaetze": [
+        {
+          "absatz_id": "P24",
+          "text": "Neben- und Versorgungssysteme stellen Hilfsenergien für Bremssystem und Lenksystem bereit. Die Unterdruckpumpe versorgt den Vakuum-Bremskraftverstärker, die Lenkhilfepumpe liefert der hydraulischen Servolenkung den Ölvolumenstrom. Beim Verbrennungsmotor treibt ein Riementrieb solche Nebenaggregate mechanisch an. Beim Elektroantrieb fehlt diese mechanische Quelle: Die Unterdruckpumpe wird elektrisch angetrieben oder durch einen aktiven Bremskraftverstärker ersetzt, die Lenkhilfepumpe wird bei elektrohydraulischer Lenkung elektrisch angetrieben oder entfällt mit der elektromechanischen Servolenkung, und der Riementrieb entfällt. Beide Pumpen bilden damit die Schnittstelle, an der die Antriebsbauweise auf Bremssystem und Lenksystem durchschlägt.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P12: Vakuum aus mechanischer oder elektrischer Vakuumpumpe",
+              "Q4: aktiver Bremskraftverstärker (Kap. 4.1.2)",
+              "P10: Flügelzellenpumpe vom Verbrennungsmotor angetrieben, elektrohydraulische Pumpe motorunabhängig, elektromechanische Lenkung aus dem Bordnetz",
+              "P7: beim Elektroantrieb fehlt der Verbrennungsmotor als mechanische Quelle"
+            ],
+            "schluss": "Unterdruck- und Lenkhilfepumpe sind Nebensysteme, deren Antrieb sich mit der Antriebsbauweise ändert oder entfällt."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Zusammenfassung",
+      "abschnittstyp": "gesamtsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P25",
+          "text": "Auf oberster Ebene besteht der Personenkraftwagen damit aus Fahrzeugstruktur und Fahrwerk, Antriebssystem, Energieversorgungssystem, Lenksystem, Bremssystem, Fahrgastraum, Laderaum und Anhängevorrichtung, Elektrik und Elektronik, Fahrzeugsteuerung und Information, Fahrerassistenz und Sicherheit, Beleuchtung und Sicht, Thermomanagement sowie Neben- und Versorgungssystemen. Die Antriebsbauweise ist die strukturändernde Variante mit der größten Reichweite; sie wirkt auf Energieversorgung, Thermomanagement, Nebensysteme und Bremsregelung.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": ["P4", "P6", "P9", "P11", "P13", "P14", "P15", "P16", "P17", "P20", "P21", "P23", "P24"],
+            "schluss": "Die dreizehn Hauptsysteme bilden die oberste Ebene; der Antriebswechsel verändert die meisten anderen Hauptsysteme."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Modellierungsbezug",
+      "abschnittstyp": "modellierung",
+      "absaetze": [
+        {
+          "absatz_id": "P26",
+          "text": "In SysML bildet der Block `Personenkraftwagen` das Gesamtsystem mit den Hauptsystemen als Bestandteilen. Mehrstufige Dekompositionspfade sind etwa `Antriebssystem → Kraftübertragung → Getriebe`, `Energieversorgungssystem → Hochvolt-Energiesystem → Batteriemanagementsystem`, `Bremssystem → Bremsbetätigung → Hauptbremszylinder` und `Fahrzeugstruktur und Fahrwerk → Fahrwerk → Radaufhängung`. Ports und Konnektoren bilden die Schnittstellen nach Flussart ab, etwa einen elektrischen Port zwischen Wechselrichter und elektrischer Maschine. Block Definition Diagrams zeigen die Dekomposition, Internal Block Diagrams die Flüsse, Aktivitätsdiagramme die Funktionsketten und Zustandsautomaten Betriebsarten wie Laden, Fahren und Rekuperieren.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": ["P2", "P25", "Elemente, Funktionen und Flüsse des Modellblocks dieses Artikels"],
+            "schluss": "Die Dekomposition des Artikels lässt sich unmittelbar als Blockhierarchie mit typisierten Ports und ergänzenden Verhaltensdiagrammen abbilden."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Flüsse",
+      "abschnittstyp": "fluesse",
+      "absaetze": [
+        {
+          "absatz_id": "P27",
+          "text": "Stofflich fördert die Kraftstoffpumpe Kraftstoff zum Verbrennungsmotor. Elektrisch fließt Energie vom Ladeanschluss über das Bordladegerät in die Traktionsbatterie, weiter über den Wechselrichter zur elektrischen Maschine und beim Rekuperieren zurück; Gleichspannungswandler oder Generator laden die Bordnetzbatterie, die über Sicherungen und Stromverteiler und den Leitungssatz die Verbraucher speist. Mechanisch fließen Drehmoment bis zu Rädern und Reifen, Lenkbewegung über Lenkgetriebe und Spurstangen und Radlasten über die Radaufhängung in die Rohkarosserie. Hydraulisch fließt Bremsflüssigkeit über das Bremsregelsystem zu den Radbremsen, Öl von der Lenkhilfepumpe zur Servoeinheit, pneumatisch Unterdruck zum Bremskraftverstärker. Thermisch geben Verbrennungsmotor und Traktionsbatterie Wärme an ihre Kühlkreisläufe ab. Informationen laufen von Sensoren und Aktoren, Umfeldsensorik und Batteriemanagementsystem zu den Steuergeräten und von dort als Stellbefehle zu Wechselrichter, Bremsregelsystem und Servoeinheit.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": ["P4", "P7", "P8", "P9", "P10", "P13", "P16", "P20", "P23", "P24"],
+            "schluss": "Jeder Fluss hat Ursprung und Ziel in den beschriebenen Hauptsystemen."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Perspektiven",
+      "abschnittstyp": "perspektiven",
+      "absaetze": [
+        {
+          "absatz_id": "P28",
+          "text": "Die Zuordnung der Funktionen verbindet physische, funktionale und Flussperspektive: Fahrzeuglasten tragen (Rohkarosserie, Radaufhängung, Federung und Dämpfung, Räder und Reifen); Energie speichern (Kraftstofftank, Traktionsbatterie, Bordnetzbatterie); Treibstoff fördern (Kraftstoffpumpe); Traktionsbatterie laden (Ladeanschluss, Bordladegerät); Elektrische Energie verteilen (Leitungssatz, Sicherungen und Stromverteiler, Gleichspannungswandler); Antriebsleistung erzeugen (Verbrennungsmotor, elektrische Maschine); Drehmoment übertragen (Kraftübertragung); Fahrzeug fortbewegen (Antriebssystem, Räder und Reifen); Bremsenergie zurückgewinnen (elektrische Maschine, Wechselrichter, Traktionsbatterie); Fahrzeug lenken (Lenksystem); Fahrzeug verzögern (Bremssystem).",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": ["Funktionen und ausgefuehrt_von im Modellblock", "P25"],
+            "schluss": "Jede Funktion ist mindestens einem ausführenden Element zugeordnet."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P29",
+          "text": "Fahrereingaben erfassen (Bedien- und Anzeigeelemente, Lenkrad, Sensoren und Aktoren); Fahrerinformationen anzeigen (Bedien- und Anzeigeelemente, Infotainment- und Telematiksystem); Insassen schützen (Rückhaltesysteme, Rohkarosserie); Ladung aufnehmen (Gepäckraum, Anhängerkupplung); Daten übertragen (Fahrzeugnetzwerk); Fahrzeugzustand überwachen (Fahrzeugmanagement, Batteriemanagementsystem, Diagnoseschnittstelle, Ereignisdatenspeicher); Fahrzeugposition bestimmen (Infotainment- und Telematiksystem); Fahrzeugumfeld erfassen (Umfeldsensorik); Fahrzeugumgebung ausleuchten (Scheinwerfer); Fahrersicht sicherstellen (Scheibenwischanlage, Außenspiegel); Betriebstemperatur regeln (Motorkühlkreislauf, Batterie- und Elektronikkühlkreislauf); Innenraum klimatisieren (Heizungs- und Klimaanlage); Hydraulische Leistung bereitstellen (Lenkhilfepumpe); Unterdruck bereitstellen (Unterdruckpumpe).",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": ["Funktionen und ausgefuehrt_von im Modellblock", "P25"],
+            "schluss": "Jede Funktion ist mindestens einem ausführenden Element zugeordnet."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    }
+  ],
+  "modell": {
+    "elemente": [
+      {"id": "E1", "name": "Personenkraftwagen", "typ": "gesamtsystem", "eltern_id": null, "absatz_ids": ["P1", "P2", "P25", "P26"]},
+
+      {"id": "E2", "name": "Fahrzeugstruktur und Fahrwerk", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P4", "P25", "P26"], "kategorie": "struktur_fahrwerk"},
+      {"id": "E3", "name": "Karosserie", "typ": "subsystem", "eltern_id": "E2", "absatz_ids": ["P3", "P15"]},
+      {"id": "E4", "name": "Rohkarosserie", "typ": "komponente", "eltern_id": "E3", "absatz_ids": ["P4", "P14", "P15", "P27", "P28", "P29"]},
+      {"id": "E5", "name": "Türen und Klappen", "typ": "komponente", "eltern_id": "E3", "absatz_ids": ["P4"]},
+      {"id": "E6", "name": "Fahrwerk", "typ": "subsystem", "eltern_id": "E2", "absatz_ids": ["P3", "P4", "P26"]},
+      {"id": "E7", "name": "Radaufhängung", "typ": "komponente", "eltern_id": "E6", "absatz_ids": ["P4", "P26", "P27", "P28"]},
+      {"id": "E8", "name": "Federung und Dämpfung", "typ": "komponente", "eltern_id": "E6", "absatz_ids": ["P4", "P28"]},
+      {"id": "E9", "name": "Räder und Reifen", "typ": "komponente", "eltern_id": "E6", "absatz_ids": ["P4", "P27", "P28"]},
+
+      {"id": "E10", "name": "Antriebssystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P6", "P25", "P26", "P28"], "kategorie": "antrieb"},
+      {"id": "E11", "name": "Verbrennungsmotor", "typ": "komponente", "eltern_id": "E10", "absatz_ids": ["P6", "P10", "P17", "P24", "P27", "P28"]},
+      {"id": "E12", "name": "Elektrische Antriebseinheit", "typ": "subsystem", "eltern_id": "E10", "absatz_ids": ["P6", "P15"]},
+      {"id": "E13", "name": "Elektrische Maschine", "typ": "komponente", "eltern_id": "E12", "absatz_ids": ["P7", "P23", "P26", "P27", "P28"]},
+      {"id": "E14", "name": "Wechselrichter", "typ": "komponente", "eltern_id": "E12", "absatz_ids": ["P7", "P17", "P23", "P26", "P27", "P28"]},
+      {"id": "E15", "name": "Kraftübertragung", "typ": "subsystem", "eltern_id": "E10", "absatz_ids": ["P6", "P26", "P28"]},
+      {"id": "E16", "name": "Kupplung", "typ": "komponente", "eltern_id": "E15", "absatz_ids": ["P5", "P6", "P7"]},
+      {"id": "E17", "name": "Getriebe", "typ": "komponente", "eltern_id": "E15", "absatz_ids": ["P6", "P7", "P26"]},
+      {"id": "E18", "name": "Differential und Antriebswellen", "typ": "komponente", "eltern_id": "E15", "absatz_ids": ["P6"]},
+
+      {"id": "E19", "name": "Energieversorgungssystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P9", "P25", "P26"], "kategorie": "energieversorgung"},
+      {"id": "E20", "name": "Kraftstoffanlage", "typ": "subsystem", "eltern_id": "E19", "absatz_ids": ["P9"]},
+      {"id": "E21", "name": "Kraftstofftank", "typ": "komponente", "eltern_id": "E20", "absatz_ids": ["P9", "P28"]},
+      {"id": "E22", "name": "Kraftstoffpumpe", "typ": "komponente", "eltern_id": "E20", "absatz_ids": ["P9", "P27", "P28"]},
+      {"id": "E23", "name": "Hochvolt-Energiesystem", "typ": "subsystem", "eltern_id": "E19", "absatz_ids": ["P9", "P26"]},
+      {"id": "E24", "name": "Traktionsbatterie", "typ": "komponente", "eltern_id": "E23", "absatz_ids": ["P8", "P9", "P23", "P27", "P28"]},
+      {"id": "E25", "name": "Batteriemanagementsystem", "typ": "komponente", "eltern_id": "E23", "absatz_ids": ["P8", "P9", "P17", "P26", "P27", "P29"]},
+      {"id": "E26", "name": "Bordladegerät", "typ": "komponente", "eltern_id": "E23", "absatz_ids": ["P8", "P9", "P27", "P28"]},
+      {"id": "E27", "name": "Ladeanschluss", "typ": "komponente", "eltern_id": "E23", "absatz_ids": ["P9", "P27", "P28"]},
+      {"id": "E28", "name": "Niedervolt-Energiesystem", "typ": "subsystem", "eltern_id": "E19", "absatz_ids": ["P9"]},
+      {"id": "E29", "name": "Bordnetzbatterie", "typ": "komponente", "eltern_id": "E28", "absatz_ids": ["P9", "P16", "P27", "P28"]},
+      {"id": "E30", "name": "Generator", "typ": "komponente", "eltern_id": "E28", "absatz_ids": ["P9", "P27"]},
+      {"id": "E31", "name": "Gleichspannungswandler", "typ": "komponente", "eltern_id": "E28", "absatz_ids": ["P9", "P27", "P28"]},
+
+      {"id": "E32", "name": "Lenksystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P11", "P24", "P25", "P28"], "kategorie": "lenkung"},
+      {"id": "E33", "name": "Lenkbetätigung", "typ": "subsystem", "eltern_id": "E32", "absatz_ids": ["P11"]},
+      {"id": "E34", "name": "Lenkrad", "typ": "komponente", "eltern_id": "E33", "absatz_ids": ["P10", "P11", "P29"]},
+      {"id": "E35", "name": "Lenksäule", "typ": "komponente", "eltern_id": "E33", "absatz_ids": ["P10", "P11"]},
+      {"id": "E36", "name": "Lenkübertragung", "typ": "subsystem", "eltern_id": "E32", "absatz_ids": ["P11"]},
+      {"id": "E37", "name": "Lenkgetriebe", "typ": "komponente", "eltern_id": "E36", "absatz_ids": ["P10", "P11", "P27"]},
+      {"id": "E38", "name": "Spurstangen", "typ": "komponente", "eltern_id": "E36", "absatz_ids": ["P10", "P11", "P27"]},
+      {"id": "E39", "name": "Servoeinheit", "typ": "komponente", "eltern_id": "E36", "absatz_ids": ["P11", "P16", "P20", "P27"]},
+
+      {"id": "E40", "name": "Bremssystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P13", "P15", "P24", "P25", "P26", "P28"], "kategorie": "bremse"},
+      {"id": "E41", "name": "Bremsbetätigung", "typ": "subsystem", "eltern_id": "E40", "absatz_ids": ["P13", "P26"]},
+      {"id": "E42", "name": "Bremskraftverstärker", "typ": "komponente", "eltern_id": "E41", "absatz_ids": ["P12", "P13", "P24", "P27"]},
+      {"id": "E43", "name": "Hauptbremszylinder", "typ": "komponente", "eltern_id": "E41", "absatz_ids": ["P12", "P13", "P26"]},
+      {"id": "E44", "name": "Bremsregelsystem", "typ": "komponente", "eltern_id": "E40", "absatz_ids": ["P13", "P16", "P20", "P27"]},
+      {"id": "E45", "name": "Radbremsen", "typ": "subsystem", "eltern_id": "E40", "absatz_ids": ["P13", "P27"]},
+      {"id": "E46", "name": "Scheibenbremse", "typ": "komponente", "eltern_id": "E45", "absatz_ids": ["P12", "P13"]},
+      {"id": "E47", "name": "Trommelbremse", "typ": "komponente", "eltern_id": "E45", "absatz_ids": ["P12", "P13"]},
+      {"id": "E48", "name": "Feststellbremse", "typ": "komponente", "eltern_id": "E40", "absatz_ids": ["P12", "P13"]},
+
+      {"id": "E49", "name": "Fahrgastraum", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P14", "P25"], "kategorie": "bedienraum"},
+      {"id": "E50", "name": "Sitzanlage", "typ": "komponente", "eltern_id": "E49", "absatz_ids": ["P14"]},
+      {"id": "E51", "name": "Rückhaltesysteme", "typ": "komponente", "eltern_id": "E49", "absatz_ids": ["P14", "P29"]},
+      {"id": "E52", "name": "Bedien- und Anzeigeelemente", "typ": "komponente", "eltern_id": "E49", "absatz_ids": ["P14", "P18", "P20", "P21", "P29"]},
+
+      {"id": "E53", "name": "Laderaum und Anhängevorrichtung", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P15", "P25"], "kategorie": "aufbau_nutzlast"},
+      {"id": "E54", "name": "Gepäckraum", "typ": "komponente", "eltern_id": "E53", "absatz_ids": ["P15", "P29"]},
+      {"id": "E55", "name": "Anhängerkupplung", "typ": "komponente", "eltern_id": "E53", "absatz_ids": ["P15", "P29"]},
+
+      {"id": "E56", "name": "Elektrik und Elektronik", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P16", "P25"], "kategorie": "elektrik_elektronik"},
+      {"id": "E57", "name": "Energieverteilung", "typ": "subsystem", "eltern_id": "E56", "absatz_ids": ["P16"]},
+      {"id": "E58", "name": "Leitungssatz", "typ": "komponente", "eltern_id": "E57", "absatz_ids": ["P15", "P16", "P21", "P27", "P28"]},
+      {"id": "E59", "name": "Sicherungen und Stromverteiler", "typ": "komponente", "eltern_id": "E57", "absatz_ids": ["P16", "P27", "P28"]},
+      {"id": "E60", "name": "Elektronikarchitektur", "typ": "subsystem", "eltern_id": "E56", "absatz_ids": ["P16"]},
+      {"id": "E61", "name": "Steuergeräte", "typ": "komponente", "eltern_id": "E60", "absatz_ids": ["P9", "P16", "P18", "P21", "P27"]},
+      {"id": "E62", "name": "Fahrzeugnetzwerk", "typ": "komponente", "eltern_id": "E60", "absatz_ids": ["P16", "P29"]},
+      {"id": "E63", "name": "Sensoren und Aktoren", "typ": "komponente", "eltern_id": "E56", "absatz_ids": ["P16", "P27", "P29"]},
+
+      {"id": "E64", "name": "Fahrzeugsteuerung und Information", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P17", "P25"], "kategorie": "steuerung_information"},
+      {"id": "E65", "name": "Fahrzeugmanagement", "typ": "komponente", "eltern_id": "E64", "absatz_ids": ["P17", "P29"]},
+      {"id": "E66", "name": "Diagnoseschnittstelle", "typ": "komponente", "eltern_id": "E64", "absatz_ids": ["P18", "P29"]},
+      {"id": "E67", "name": "Infotainment- und Telematiksystem", "typ": "komponente", "eltern_id": "E64", "absatz_ids": ["P18", "P29"]},
+
+      {"id": "E68", "name": "Fahrerassistenz und Sicherheit", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P20", "P25"], "kategorie": "assistenz_sicherheit"},
+      {"id": "E69", "name": "Umfeldsensorik", "typ": "komponente", "eltern_id": "E68", "absatz_ids": ["P20", "P27", "P29"]},
+      {"id": "E70", "name": "Assistenzsteuergerät", "typ": "komponente", "eltern_id": "E68", "absatz_ids": ["P20"]},
+      {"id": "E71", "name": "Ereignisdatenspeicher", "typ": "komponente", "eltern_id": "E68", "absatz_ids": ["P20", "P29"]},
+
+      {"id": "E72", "name": "Beleuchtung und Sicht", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P21", "P25"], "kategorie": "beleuchtung_sicht"},
+      {"id": "E73", "name": "Lichtanlage", "typ": "subsystem", "eltern_id": "E72", "absatz_ids": ["P21"]},
+      {"id": "E74", "name": "Scheinwerfer", "typ": "komponente", "eltern_id": "E73", "absatz_ids": ["P21", "P29"]},
+      {"id": "E75", "name": "Signalleuchten", "typ": "komponente", "eltern_id": "E73", "absatz_ids": ["P21"]},
+      {"id": "E76", "name": "Sichtsystem", "typ": "subsystem", "eltern_id": "E72", "absatz_ids": ["P21"]},
+      {"id": "E77", "name": "Scheibenwischanlage", "typ": "komponente", "eltern_id": "E76", "absatz_ids": ["P21", "P29"]},
+      {"id": "E78", "name": "Außenspiegel", "typ": "komponente", "eltern_id": "E76", "absatz_ids": ["P21", "P29"]},
+
+      {"id": "E79", "name": "Thermomanagement", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P22", "P23", "P25"], "kategorie": "thermomanagement"},
+      {"id": "E80", "name": "Motorkühlkreislauf", "typ": "komponente", "eltern_id": "E79", "absatz_ids": ["P23", "P29"]},
+      {"id": "E81", "name": "Batterie- und Elektronikkühlkreislauf", "typ": "komponente", "eltern_id": "E79", "absatz_ids": ["P23", "P29"]},
+      {"id": "E82", "name": "Heizungs- und Klimaanlage", "typ": "komponente", "eltern_id": "E79", "absatz_ids": ["P23", "P29"]},
+
+      {"id": "E83", "name": "Neben- und Versorgungssysteme", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P24", "P25"], "kategorie": "nebensysteme"},
+      {"id": "E84", "name": "Unterdruckpumpe", "typ": "komponente", "eltern_id": "E83", "absatz_ids": ["P24", "P29"]},
+      {"id": "E85", "name": "Lenkhilfepumpe", "typ": "komponente", "eltern_id": "E83", "absatz_ids": ["P24", "P27", "P29"]},
+      {"id": "E86", "name": "Riementrieb", "typ": "komponente", "eltern_id": "E83", "absatz_ids": ["P24"]}
+    ],
+    "funktionen": [
+      {"id": "F1", "name": "Fahrzeuglasten tragen", "ausgefuehrt_von": ["E4", "E7", "E8", "E9"], "absatz_ids": ["P4", "P28"]},
+      {"id": "F2", "name": "Energie speichern", "ausgefuehrt_von": ["E21", "E24", "E29"], "absatz_ids": ["P9", "P28"]},
+      {"id": "F3", "name": "Treibstoff fördern", "ausgefuehrt_von": ["E22"], "absatz_ids": ["P9", "P28"]},
+      {"id": "F4", "name": "Traktionsbatterie laden", "ausgefuehrt_von": ["E26", "E27"], "absatz_ids": ["P8", "P28"]},
+      {"id": "F5", "name": "Elektrische Energie verteilen", "ausgefuehrt_von": ["E58", "E59", "E31"], "absatz_ids": ["P16", "P28"]},
+      {"id": "F6", "name": "Antriebsleistung erzeugen", "ausgefuehrt_von": ["E11", "E13"], "absatz_ids": ["P6", "P28"]},
+      {"id": "F7", "name": "Drehmoment übertragen", "ausgefuehrt_von": ["E15"], "absatz_ids": ["P6", "P28"]},
+      {"id": "F8", "name": "Fahrzeug fortbewegen", "ausgefuehrt_von": ["E10", "E9"], "absatz_ids": ["P6", "P28"]},
+      {"id": "F9", "name": "Bremsenergie zurückgewinnen", "ausgefuehrt_von": ["E13", "E14", "E24"], "absatz_ids": ["P7", "P28"]},
+      {"id": "F10", "name": "Fahrzeug lenken", "ausgefuehrt_von": ["E32"], "absatz_ids": ["P10", "P28"]},
+      {"id": "F11", "name": "Fahrzeug verzögern", "ausgefuehrt_von": ["E40"], "absatz_ids": ["P13", "P28"]},
+      {"id": "F12", "name": "Fahrereingaben erfassen", "ausgefuehrt_von": ["E52", "E34", "E63"], "absatz_ids": ["P14", "P29"]},
+      {"id": "F13", "name": "Fahrerinformationen anzeigen", "ausgefuehrt_von": ["E52", "E67"], "absatz_ids": ["P14", "P18", "P29"]},
+      {"id": "F14", "name": "Insassen schützen", "ausgefuehrt_von": ["E51", "E4"], "absatz_ids": ["P14", "P29"]},
+      {"id": "F15", "name": "Ladung aufnehmen", "ausgefuehrt_von": ["E54", "E55"], "absatz_ids": ["P15", "P29"]},
+      {"id": "F16", "name": "Daten übertragen", "ausgefuehrt_von": ["E62"], "absatz_ids": ["P16", "P29"]},
+      {"id": "F17", "name": "Fahrzeugzustand überwachen", "ausgefuehrt_von": ["E65", "E25", "E66", "E71"], "absatz_ids": ["P17", "P18", "P29"]},
+      {"id": "F18", "name": "Fahrzeugposition bestimmen", "ausgefuehrt_von": ["E67"], "absatz_ids": ["P18", "P29"]},
+      {"id": "F19", "name": "Fahrzeugumfeld erfassen", "ausgefuehrt_von": ["E69"], "absatz_ids": ["P20", "P29"]},
+      {"id": "F20", "name": "Fahrzeugumgebung ausleuchten", "ausgefuehrt_von": ["E74"], "absatz_ids": ["P21", "P29"]},
+      {"id": "F21", "name": "Fahrersicht sicherstellen", "ausgefuehrt_von": ["E77", "E78"], "absatz_ids": ["P21", "P29"]},
+      {"id": "F22", "name": "Betriebstemperatur regeln", "ausgefuehrt_von": ["E80", "E81"], "absatz_ids": ["P23", "P29"]},
+      {"id": "F23", "name": "Innenraum klimatisieren", "ausgefuehrt_von": ["E82"], "absatz_ids": ["P23", "P29"]},
+      {"id": "F24", "name": "Hydraulische Leistung bereitstellen", "ausgefuehrt_von": ["E85"], "absatz_ids": ["P24", "P29"]},
+      {"id": "F25", "name": "Unterdruck bereitstellen", "ausgefuehrt_von": ["E84"], "absatz_ids": ["P24", "P29"]}
+    ],
+    "fluesse": [
+      {"id": "S1", "von": "E22", "nach": "E11", "art": "stoff", "medium": "Kraftstoff", "absatz_ids": ["P9", "P27"]},
+      {"id": "S2", "von": "E27", "nach": "E26", "art": "elektrisch", "medium": "Netzstrom", "absatz_ids": ["P9", "P27"]},
+      {"id": "S3", "von": "E26", "nach": "E24", "art": "elektrisch", "medium": "Ladestrom", "absatz_ids": ["P8", "P27"]},
+      {"id": "S4", "von": "E24", "nach": "E14", "art": "elektrisch", "medium": "Hochvolt-Gleichstrom", "absatz_ids": ["P7", "P27"]},
+      {"id": "S5", "von": "E14", "nach": "E13", "art": "elektrisch", "medium": "Wechselstrom", "absatz_ids": ["P7", "P27"]},
+      {"id": "S6", "von": "E14", "nach": "E24", "art": "elektrisch", "medium": "Rekuperationsstrom", "absatz_ids": ["P7", "P27"]},
+      {"id": "S7", "von": "E24", "nach": "E31", "art": "elektrisch", "medium": "Hochvolt-Gleichstrom", "absatz_ids": ["P9"]},
+      {"id": "S8", "von": "E31", "nach": "E29", "art": "elektrisch", "medium": "Niedervolt-Gleichstrom", "absatz_ids": ["P9", "P27"]},
+      {"id": "S9", "von": "E30", "nach": "E29", "art": "elektrisch", "medium": "Niedervolt-Gleichstrom", "absatz_ids": ["P9", "P27"]},
+      {"id": "S10", "von": "E29", "nach": "E59", "art": "elektrisch", "medium": "Niedervolt-Gleichstrom", "absatz_ids": ["P16", "P27"]},
+      {"id": "S11", "von": "E59", "nach": "E58", "art": "elektrisch", "medium": "abgesicherter Verbraucherstrom", "absatz_ids": ["P16", "P27"]},
+      {"id": "S12", "von": "E58", "nach": "E61", "art": "elektrisch", "medium": "Versorgungsspannung", "absatz_ids": ["P16"]},
+      {"id": "S13", "von": "E58", "nach": "E74", "art": "elektrisch", "medium": "Versorgungsspannung", "absatz_ids": ["P21"]},
+      {"id": "S14", "von": "E58", "nach": "E55", "art": "elektrisch", "medium": "Anhängerstromversorgung", "absatz_ids": ["P15"]},
+      {"id": "S15", "von": "E11", "nach": "E16", "art": "mechanisch", "medium": "Drehmoment", "absatz_ids": ["P5", "P6"]},
+      {"id": "S16", "von": "E16", "nach": "E17", "art": "mechanisch", "medium": "Drehmoment", "absatz_ids": ["P5", "P6"]},
+      {"id": "S17", "von": "E13", "nach": "E17", "art": "mechanisch", "medium": "Drehmoment", "absatz_ids": ["P7"]},
+      {"id": "S18", "von": "E17", "nach": "E18", "art": "mechanisch", "medium": "Drehmoment", "absatz_ids": ["P6", "P27"]},
+      {"id": "S19", "von": "E18", "nach": "E9", "art": "mechanisch", "medium": "Drehmoment", "absatz_ids": ["P6", "P27"]},
+      {"id": "S20", "von": "E34", "nach": "E35", "art": "mechanisch", "medium": "Lenkmoment", "absatz_ids": ["P10"]},
+      {"id": "S21", "von": "E35", "nach": "E37", "art": "mechanisch", "medium": "Lenkmoment", "absatz_ids": ["P10"]},
+      {"id": "S22", "von": "E37", "nach": "E38", "art": "mechanisch", "medium": "Lenkbewegung", "absatz_ids": ["P10", "P27"]},
+      {"id": "S23", "von": "E38", "nach": "E9", "art": "mechanisch", "medium": "Lenkbewegung", "absatz_ids": ["P10", "P27"]},
+      {"id": "S24", "von": "E39", "nach": "E37", "art": "mechanisch", "medium": "Unterstützungskraft", "absatz_ids": ["P11"]},
+      {"id": "S25", "von": "E9", "nach": "E7", "art": "mechanisch", "medium": "Radkräfte", "absatz_ids": ["P4", "P27"]},
+      {"id": "S26", "von": "E7", "nach": "E8", "art": "mechanisch", "medium": "Vertikallast", "absatz_ids": ["P4"]},
+      {"id": "S27", "von": "E8", "nach": "E4", "art": "mechanisch", "medium": "Vertikallast", "absatz_ids": ["P4"]},
+      {"id": "S28", "von": "E7", "nach": "E4", "art": "mechanisch", "medium": "Antriebs-, Brems- und Seitenführungskräfte", "absatz_ids": ["P4", "P27"]},
+      {"id": "S29", "von": "E55", "nach": "E4", "art": "mechanisch", "medium": "Zug- und Stützlast", "absatz_ids": ["P15"]},
+      {"id": "S30", "von": "E42", "nach": "E43", "art": "mechanisch", "medium": "verstärkte Betätigungskraft", "absatz_ids": ["P12", "P13"]},
+      {"id": "S31", "von": "E43", "nach": "E44", "art": "hydraulisch", "medium": "Bremsflüssigkeit", "absatz_ids": ["P13", "P27"]},
+      {"id": "S32", "von": "E44", "nach": "E46", "art": "hydraulisch", "medium": "Bremsflüssigkeit", "absatz_ids": ["P13", "P27"]},
+      {"id": "S33", "von": "E44", "nach": "E47", "art": "hydraulisch", "medium": "Bremsflüssigkeit", "absatz_ids": ["P13", "P27"]},
+      {"id": "S34", "von": "E84", "nach": "E42", "art": "pneumatisch", "medium": "Unterdruck", "absatz_ids": ["P24", "P27"]},
+      {"id": "S35", "von": "E11", "nach": "E86", "art": "mechanisch", "medium": "Drehmoment", "absatz_ids": ["P24"]},
+      {"id": "S36", "von": "E86", "nach": "E85", "art": "mechanisch", "medium": "Drehmoment", "absatz_ids": ["P24"]},
+      {"id": "S37", "von": "E85", "nach": "E39", "art": "hydraulisch", "medium": "Hydrauliköl", "absatz_ids": ["P24", "P27"]},
+      {"id": "S38", "von": "E11", "nach": "E80", "art": "thermisch", "medium": "Motorwärme", "absatz_ids": ["P23", "P27"]},
+      {"id": "S39", "von": "E80", "nach": "E82", "art": "thermisch", "medium": "Heizwärme", "absatz_ids": ["P23"]},
+      {"id": "S40", "von": "E24", "nach": "E81", "art": "thermisch", "medium": "Verlustwärme", "absatz_ids": ["P22", "P23", "P27"]},
+      {"id": "S41", "von": "E13", "nach": "E81", "art": "thermisch", "medium": "Verlustwärme", "absatz_ids": ["P23"]},
+      {"id": "S42", "von": "E63", "nach": "E61", "art": "information", "medium": "Sensorwerte", "absatz_ids": ["P16", "P27"]},
+      {"id": "S43", "von": "E61", "nach": "E63", "art": "information", "medium": "Stellbefehle", "absatz_ids": ["P16"]},
+      {"id": "S44", "von": "E69", "nach": "E70", "art": "information", "medium": "Umfelddaten", "absatz_ids": ["P20", "P27"]},
+      {"id": "S45", "von": "E70", "nach": "E44", "art": "information", "medium": "Bremsanforderung", "absatz_ids": ["P13", "P20", "P27"]},
+      {"id": "S46", "von": "E70", "nach": "E39", "art": "information", "medium": "Lenkanforderung", "absatz_ids": ["P11", "P20", "P27"]},
+      {"id": "S47", "von": "E25", "nach": "E65", "art": "information", "medium": "Batteriezustand", "absatz_ids": ["P17", "P27"]},
+      {"id": "S48", "von": "E65", "nach": "E14", "art": "information", "medium": "Momentanforderung", "absatz_ids": ["P17", "P27"]},
+      {"id": "S49", "von": "E52", "nach": "E62", "art": "information", "medium": "Bedienbefehle", "absatz_ids": ["P14"]},
+      {"id": "S50", "von": "E62", "nach": "E66", "art": "information", "medium": "Diagnosedaten", "absatz_ids": ["P18"]},
+      {"id": "S51", "von": "E70", "nach": "E52", "art": "information", "medium": "Warnungen", "absatz_ids": ["P20"]},
+      {"id": "S52", "von": "E67", "nach": "E52", "art": "information", "medium": "Navigations- und Medieninformationen", "absatz_ids": ["P18"]},
+      {"id": "S53", "von": "E61", "nach": "E75", "art": "information", "medium": "Ansteuerung Notbremslicht", "absatz_ids": ["P21"]}
+    ],
+    "entfallene_kategorien": []
+  },
+  "offene_punkte": [
+    "Glossarvorschlag: Unterdruck bereitstellen (Funktion der Unterdruckpumpe für den Vakuum-Bremskraftverstärker; Pkw-spezifische Hilfsenergie, kein Synonym zu „Druckluft bereitstellen“).",
+    "Glossarvorschlag: Innenraum klimatisieren (Funktion der Heizungs- und Klimaanlage für den Fahrgastraum; abgegrenzt von „Betriebstemperatur regeln“, das die Temperierung technischer Systeme meint).",
+    "Recherche Rückhaltesysteme: Aufbau aus Sicherheitsgurt, Gurtstraffer und Airbags belegen; Quelle UN-Regelungen Nr. 16 und Nr. 94 bzw. Suchbegriff „Insassenschutz Pkw Rückhaltesystem Airbag Gurtstraffer Fachbuch“.",
+    "Recherche Umfeldsensorik: Sensorprinzipien (Kamera, Radar, Lidar, Ultraschall) und ihre Zuordnung zu den vorgeschriebenen Assistenzsystemen; Suchbegriff „Umfeldsensorik Pkw Fahrerassistenzsysteme Handbuch“.",
+    "Recherche Beleuchtung und Sicht: vorgeschriebene lichttechnische Einrichtungen und Sichtfeld für Pkw belegen; Quelle UN-Regelung Nr. 48 und Nr. 46 bzw. StVZO §§ 49a ff.",
+    "Recherche Hybridantriebe: Strukturvarianten (seriell, parallel, leistungsverzweigt, Plug-in) und Lage der elektrischen Maschine im Antriebsstrang; Suchbegriff „Hybridantrieb Topologien Pkw Fachbuch“.",
+    "Recherche Fahrzeugstruktur: Rahmenbauweise bei Pkw (etwa Geländewagen) als Variante zur selbsttragenden Karosserie und Bauweisen der Radaufhängung belegen; Suchbegriff „Leiterrahmen Pkw Geländewagen“, „Radaufhängung Bauarten Fahrwerkhandbuch“.",
+    "Recherche Diagnose und Telematik: Pflichten zu On-Board-Diagnose und eCall für Pkw belegen; Quelle Verordnung (EU) 2015/758 und Verordnung (EU) 2017/1151.",
+    "Recherche Anhängevorrichtung: Anforderungen an Anhängerkupplungen und elektrische Anhängerverbindung; Quelle UN-Regelung Nr. 55.",
+    "Recherche Niedervolt-Bordnetz: Begründung und Ausführung des Niedervolt-Bordnetzes in Elektrofahrzeugen mit nicht herstellergebundener Quelle belegen; Suchbegriff „Niedervolt-Bordnetz Elektrofahrzeug DC/DC-Wandler Fachbuch“."
+  ]
+}

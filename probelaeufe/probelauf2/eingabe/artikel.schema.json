@@ -1,0 +1,492 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Artikel der Fahrzeugarchitektur-Wissensbasis (Schema 2.2, Leitfaden 2.3)",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "artikel_id",
+    "artikeltyp",
+    "titel",
+    "betrachtungsumfang",
+    "status",
+    "quellenzugriff",
+    "kindartikel_ids",
+    "quellen",
+    "abschnitte",
+    "offene_punkte"
+  ],
+  "properties": {
+    "schema_version": {
+      "enum": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ]
+    },
+    "artikel_id": {
+      "type": "string",
+      "pattern": "^A-\\d{4}$"
+    },
+    "artikeltyp": {
+      "enum": [
+        "blatt",
+        "uebersicht"
+      ]
+    },
+    "titel": {
+      "type": "string",
+      "minLength": 1
+    },
+    "betrachtungsumfang": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "enum": [
+        "offen",
+        "in_arbeit",
+        "zu_pruefen",
+        "geprueft"
+      ],
+      "description": "Bei Erstellung, Korrektur und Revision immer in_arbeit. geprueft und zu_pruefen setzt nur der Orchestrator mit kb_tool.py status."
+    },
+    "quellenzugriff": {
+      "enum": [
+        "ja",
+        "nein"
+      ]
+    },
+    "kindartikel_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^A-\\d{4}$"
+      }
+    },
+    "quellen": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/quelle"
+      }
+    },
+    "abschnitte": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/abschnitt"
+      }
+    },
+    "modell": {
+      "$ref": "#/$defs/modell",
+      "description": "Bei artikeltyp blatt Pflicht, bei uebersicht optional."
+    },
+    "offene_punkte": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "description": "Einziger Ort fuer offene Punkte: konkreter Recherchebedarf (Quelle oder Suchbegriff) und nicht herleitbare Bestandteile."
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "quelle": {
+      "type": "object",
+      "required": [
+        "quellen_id",
+        "titel",
+        "abgerufen",
+        "abrufdatum"
+      ],
+      "properties": {
+        "quellen_id": {
+          "type": "string",
+          "pattern": "^Q\\d+$"
+        },
+        "titel": {
+          "type": "string",
+          "minLength": 1
+        },
+        "urheber": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "stand": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "url": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "abgerufen": {
+          "const": true
+        },
+        "abrufdatum": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "quellentyp": {
+          "enum": [
+            "norm",
+            "behoerde",
+            "fachliteratur",
+            "fachpresse",
+            "nachschlagewerk",
+            "verband",
+            "hersteller"
+          ],
+          "description": "norm: Norm, Gesetz, Verordnung, Regelwerk; behoerde: Behoerde, staatliche Forschungseinrichtung, Raumfahrtagentur; fachliteratur: Lehrbuch, Handbuch, wissenschaftliche Veroeffentlichung, Hochschulskript; fachpresse: Fach- und Branchenmagazin; nachschlagewerk: Enzyklopaedie, auch offene wie Wikipedia; verband: Verband, Pruefinstitution, Automobilclub; hersteller: Hersteller- und Zuliefererunterlagen. Typ nie passend machen: passt keiner, Quelle weglassen."
+        }
+      },
+      "additionalProperties": false
+    },
+    "abschnitt": {
+      "type": "object",
+      "required": [
+        "ueberschrift",
+        "abschnittstyp",
+        "absaetze"
+      ],
+      "properties": {
+        "ueberschrift": {
+          "type": "string",
+          "minLength": 1
+        },
+        "abschnittstyp": {
+          "enum": [
+            "gesamtsystem",
+            "hauptsystem",
+            "querschnitt",
+            "variante",
+            "fluesse",
+            "perspektiven",
+            "modellierung",
+            "offene_punkte"
+          ],
+          "description": "offene_punkte nur fuer Bestaende der Schemaversion 2.0; ab 2.1 stehen offene Punkte im Feld offene_punkte."
+        },
+        "element_id": {
+          "type": "string",
+          "pattern": "^E\\d+$",
+          "description": "Pflicht bei abschnittstyp hauptsystem; verweist auf das Hauptsystem im modell."
+        },
+        "absaetze": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/absatz"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "absatz": {
+      "type": "object",
+      "required": [
+        "absatz_id",
+        "text",
+        "begruendung",
+        "belege",
+        "herangezogene_artikel_ids"
+      ],
+      "properties": {
+        "absatz_id": {
+          "type": "string",
+          "pattern": "^P\\d+$"
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1
+        },
+        "begruendung": {
+          "enum": [
+            "belegt",
+            "gemischt",
+            "hergeleitet",
+            "modellwissen"
+          ],
+          "description": "belegt: Beleg aus in diesem Lauf abgerufener Quelle; gemischt: teils belegt, teils hergeleitet; hergeleitet: mit herleitung; modellwissen: Fachwissen ohne Quelle."
+        },
+        "belege": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "quellen_id",
+              "fundstelle"
+            ],
+            "properties": {
+              "quellen_id": {
+                "type": "string",
+                "pattern": "^Q\\d+$"
+              },
+              "fundstelle": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "additionalProperties": false
+          },
+          "description": "Nur bei begruendung belegt oder gemischt, sonst leere Liste."
+        },
+        "herleitung": {
+          "type": "object",
+          "required": [
+            "praemissen",
+            "schluss"
+          ],
+          "properties": {
+            "praemissen": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "string"
+              }
+            },
+            "schluss": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "additionalProperties": false,
+          "description": "Pflicht bei begruendung hergeleitet und gemischt. praemissen: Absatz-IDs (P…), Quellen-IDs (Q…) oder Kurztext."
+        },
+        "sicherheit": {
+          "enum": [
+            "hoch",
+            "mittel",
+            "gering"
+          ],
+          "description": "Pflicht bei allem ausser belegt. hoch: mehrere Quellen oder zwingend aus dem Funktionsprinzip; mittel: eine Quelle oder plausible Herleitung; gering: Analogieschluss."
+        },
+        "aussagetyp": {
+          "enum": [
+            "funktion",
+            "loesung",
+            "variante",
+            "modellannahme"
+          ]
+        },
+        "herangezogene_artikel_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^A-\\d{4}$"
+          },
+          "description": "Nur bei Uebersichten (Kindartikel), bei Blattartikeln leere Liste."
+        }
+      },
+      "additionalProperties": false
+    },
+    "modell": {
+      "type": "object",
+      "required": [
+        "elemente",
+        "funktionen",
+        "fluesse"
+      ],
+      "properties": {
+        "elemente": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "name",
+              "typ",
+              "eltern_id",
+              "absatz_ids"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^E\\d+$"
+              },
+              "name": {
+                "type": "string",
+                "minLength": 1
+              },
+              "typ": {
+                "enum": [
+                  "gesamtsystem",
+                  "hauptsystem",
+                  "subsystem",
+                  "komponente"
+                ]
+              },
+              "eltern_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "absatz_ids": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "string",
+                  "pattern": "^P\\d+$"
+                }
+              },
+              "kategorie": {
+                "enum": [
+                  "struktur_fahrwerk",
+                  "antrieb",
+                  "energieversorgung",
+                  "lenkung",
+                  "bremse",
+                  "bedienraum",
+                  "aufbau_nutzlast",
+                  "elektrik_elektronik",
+                  "steuerung_information",
+                  "assistenz_sicherheit",
+                  "beleuchtung_sicht",
+                  "thermomanagement",
+                  "nebensysteme",
+                  "sonstig"
+                ],
+                "description": "Pflicht bei typ hauptsystem."
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "funktionen": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "name",
+              "ausgefuehrt_von",
+              "absatz_ids"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^F\\d+$"
+              },
+              "name": {
+                "type": "string",
+                "minLength": 1
+              },
+              "ausgefuehrt_von": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "string",
+                  "pattern": "^E\\d+$"
+                }
+              },
+              "absatz_ids": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "string",
+                  "pattern": "^P\\d+$"
+                }
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "fluesse": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "von",
+              "nach",
+              "art",
+              "absatz_ids"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^S\\d+$"
+              },
+              "von": {
+                "type": "string",
+                "pattern": "^E\\d+$"
+              },
+              "nach": {
+                "type": "string",
+                "pattern": "^E\\d+$"
+              },
+              "art": {
+                "enum": [
+                  "mechanisch",
+                  "elektrisch",
+                  "pneumatisch",
+                  "hydraulisch",
+                  "thermisch",
+                  "stoff",
+                  "information",
+                  "sonstige"
+                ]
+              },
+              "medium": {
+                "type": "string"
+              },
+              "absatz_ids": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "string",
+                  "pattern": "^P\\d+$"
+                }
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "entfallene_kategorien": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "kategorie",
+              "grund"
+            ],
+            "properties": {
+              "kategorie": {
+                "enum": [
+                  "struktur_fahrwerk",
+                  "antrieb",
+                  "energieversorgung",
+                  "lenkung",
+                  "bremse",
+                  "bedienraum",
+                  "aufbau_nutzlast",
+                  "elektrik_elektronik",
+                  "steuerung_information",
+                  "assistenz_sicherheit",
+                  "beleuchtung_sicht",
+                  "thermomanagement",
+                  "nebensysteme"
+                ]
+              },
+              "grund": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "description": "Bedingte Pflichten prueft kb_tool.py validate (nicht dieses Schema): modell ist bei Blattartikeln Pflicht; herleitung bei begruendung hergeleitet/gemischt; sicherheit bei allem ausser belegt; belege nur bei belegt/gemischt."
+}

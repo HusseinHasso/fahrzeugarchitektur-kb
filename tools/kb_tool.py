@@ -9,6 +9,7 @@ Nachbau aus Arbeitsauftrag, Schema und Probelauf 2. Befehle:
   status   <dir> ID STATUS [--grund T] Setzt den Status (nur Orchestrator); zu_pruefen/geprueft nur ohne FEHLER
   plan     <dir> [--gruppe G]          Bearbeitungsreihenfolge: Blattartikel, dann Übersichten von unten nach oben
   stats    <dir>                       Kennzahlen je Artikel (Wörter, Belegquote, Quellen)
+  gliederung <dir>                     Recherchegliederung als Markdown-Baum aus dem Inventar
 
 <dir> enthält manifest.json, inventar.json, glossar_vorgaben.json, aenderungen.json und artikel/.
 """
@@ -513,6 +514,42 @@ def cmd_plan(args):
                          f"status={st}", "bereit" if bereit else "wartet", gruppe_von(e) or "?", e["bezeichnung"]]))
 
 
+def cmd_gliederung(args):
+    """Recherchegliederung als Markdown-Baum aus dem Inventar."""
+    d = Path(args.dir)
+    inv = inventar(d)
+    kinder = {k for e in inv.values() for k in e.get("kindartikel_ids", [])}
+    wurzeln = [e for e in inv.values() if e["artikel_id"] not in kinder]
+    cache = {}
+    zeilen = []
+
+    def knoten(aid, ebene, pfad):
+        e = inv[aid]
+        weitere = [" > ".join(p) for p in e.get("recherchepfade", []) if p[-1] == e["bezeichnung"]
+                   and p[:-1] != pfad]
+        zusatz = f" — auch unter: {'; '.join(weitere)}" if weitere else ""
+        typ = "Übersicht" if e["artikeltyp"] == "uebersicht" else "Blatt"
+        zeilen.append(f"{'  ' * ebene}- **{aid}** {e['bezeichnung']} ({typ}){zusatz}")
+        for k in e.get("kindartikel_ids", []):
+            if k in inv:
+                knoten(k, ebene + 1, pfad + [e["bezeichnung"]])
+
+    for w in sorted(wurzeln, key=lambda e: e["artikel_id"]):
+        knoten(w["artikel_id"], 0, [])
+    typen = collections.Counter(e["artikeltyp"] for e in inv.values())
+    stufen = collections.Counter(tiefe(inv, a, cache) for a in inv)
+    man = lade(d / "manifest.json", {})
+    print(f"# Recherchegliederung, Version {man.get('recherchegliederung_version', '?')}\n")
+    print("<!-- Erzeugt mit: python3 tools/kb_tool.py gliederung kb > leitfaden/Recherchegliederung.md. "
+          "Nicht von Hand bearbeiten; Quelle ist kb/inventar.json. -->\n")
+    print(f"{len(inv)} Artikel: {typen['blatt']} Blattartikel, {typen['uebersicht']} Übersichten. "
+          "Bearbeitungsebenen (0 = Blatt, zuerst): "
+          + ", ".join(f"Ebene {k}: {v}" for k, v in sorted(stufen.items())) + ".\n")
+    print("Artikel mit mehreren Recherchepfaden erscheinen unter jedem Elternartikel; "
+          "ihre Glossargruppe ist die des ersten Pfads.\n")
+    print("\n".join(zeilen))
+
+
 def cmd_stats(args):
     d = Path(args.dir)
     print("artikel\tstatus\twoerter\tabsaetze\tbelegt\tquellen\telemente\tfunktionen\tfluesse\toffene_punkte")
@@ -543,9 +580,10 @@ def main():
     s.add_argument("status", choices=STATUS); s.add_argument("--grund"); s.add_argument("--schema")
     p = sub.add_parser("plan"); p.add_argument("dir"); p.add_argument("--gruppe")
     st = sub.add_parser("stats"); st.add_argument("dir")
+    gl = sub.add_parser("gliederung"); gl.add_argument("dir")
     args = ap.parse_args()
     rc = {"glossar": cmd_glossar, "validate": cmd_validate, "status": cmd_status,
-          "plan": cmd_plan, "stats": cmd_stats}[args.cmd](args)
+          "plan": cmd_plan, "stats": cmd_stats, "gliederung": cmd_gliederung}[args.cmd](args)
     sys.exit(rc or 0)
 
 

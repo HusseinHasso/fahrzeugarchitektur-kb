@@ -1,0 +1,1899 @@
+{
+  "schema_version": "2.2",
+  "artikel_id": "A-0085",
+  "artikeltyp": "blatt",
+  "titel": "ROV (Remotely Operated Vehicle)",
+  "betrachtungsumfang": "Generische Referenzarchitektur eines kabelgebundenen, ferngesteuerten unbemannten Unterwasserfahrzeugs (ROV) einschließlich des Oberflächenanteils (Leitstand, Energieversorgung, Aussetzeinrichtung) bis zur Schnittstelle am Trägerschiff.",
+  "status": "in_arbeit",
+  "quellenzugriff": "ja",
+  "kindartikel_ids": [],
+  "quellen": [
+    {
+      "quellen_id": "Q1",
+      "titel": "Remotely Operated Vehicle",
+      "urheber": "Wikipedia (deutsch)",
+      "stand": null,
+      "url": "https://de.wikipedia.org/wiki/Remotely_Operated_Vehicle",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q2",
+      "titel": "Remotely operated underwater vehicle",
+      "urheber": "Wikipedia (englisch)",
+      "stand": null,
+      "url": "https://en.wikipedia.org/wiki/Remotely_operated_underwater_vehicle",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q3",
+      "titel": "Science & Technology for Exploration: Submersibles and ROVs",
+      "urheber": "NOAA Ocean Exploration",
+      "stand": null,
+      "url": "https://oceanexplorer.noaa.gov/technology/subs-rovs/",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "behoerde"
+    },
+    {
+      "quellen_id": "Q4",
+      "titel": "ROV Fact Sheet",
+      "urheber": "NOAA Ocean Exploration",
+      "stand": null,
+      "url": "https://oceanexplorer.noaa.gov/fact-sheet/rov-fact-sheet",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "behoerde"
+    }
+  ],
+  "abschnitte": [
+    {
+      "ueberschrift": "Einleitung",
+      "abschnittstyp": "gesamtsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P1",
+          "text": "Ein ROV (Remotely Operated Vehicle) ist ein unbemanntes Unterwasserfahrzeug, das über ein Kabel mit einem Überwasserschiff verbunden ist und von einem Kontrollstand an Bord ferngesteuert wird. Das Kabel überträgt Energie, Steuerbefehle und Daten, Kameras liefern Videobilder in Echtzeit. Anders als autonome Unterwasserfahrzeuge, die ihre Energie in Akkumulatoren mitführen, bezieht ein ROV sie über das Kabel. Typische Aufgaben sind Beobachtung, Probennahme und Intervention, etwa Ventile betätigen oder Bauteile tauschen.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Abschnitt zu Aufbau und Energieversorgung: Kabelverbindung, Kontrollstand, Abgrenzung zu AUV"
+            },
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Abschnitt zur Funktionsweise: Tether, Strom und Signale, Befehle, Live-Video"
+            },
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Abschnitt Manipulatoren und Werkzeuge: Werkzeugpakete"
+            }
+          ],
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P2",
+          "text": "Systemgrenze ist das Fahrzeug unter Wasser einschließlich des Kabels bis zur Übergabestelle am Trägerschiff. Leitstand, Oberflächenstromversorgung und Aussetzeinrichtung zählen zum Oberflächenanteil, weil das Fahrzeug ohne sie nicht funktioniert. Zwischen den Systemen bestehen mechanische, elektrische, hydraulische, thermische und informationstechnische Schnittstellen. Die folgenden Abschnitte zerlegen das ROV in Hauptsysteme, Subsysteme und Komponenten. Modellierungsbezug, Flüsse und Perspektiven schließen den Artikel ab.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "sicherheit": "mittel",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": [],
+          "herleitung": {
+            "praemissen": [
+              "P1",
+              "Fernsteuerung und Energiebezug über Kabel setzen eine Gegenstelle auf dem Schiff voraus"
+            ],
+            "schluss": "Ohne Oberflächenanteil ist weder Energie noch Steuerung des Fahrzeugs möglich, also gehört er zur Systemgrenze."
+          }
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrzeugstruktur",
+      "abschnittstyp": "hauptsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P3",
+          "text": "Work-Class-ROVs bestehen aus einem Aluminiumchassis mit einem großen Auftriebskörper obenauf. Verbreitet ist ein offener Rahmen, in dem Sensoren, Thruster und mechanische Teile montiert sind; für Datenerfassung und Inspektion kommen auch torpedoförmige Bauweisen vor. Größere ROVs können Landekufen für die Bergung an Deck besitzen, am unteren Ende kann ein Werkzeugschlitten Sensor- oder Werkzeugpakete aufnehmen.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Abschnitt Aufbau: Chassis, Rahmenbauformen, Landekufen, Werkzeugschlitten"
+            }
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P4",
+          "text": "Der Rahmen ist das zentrale Tragelement. Er nimmt Thruster, Manipulatoren und Auftriebskörper auf und führt Schub, Reaktions- und Tetherkräfte zusammen, weil jede Kraftquelle am Fahrzeug eine gemeinsame Bezugsstruktur braucht. Ein Fahrwerk mit Rädern ist für frei schwimmende ROVs nicht vorgesehen; die Landekufen dienen nur dem Abstellen.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "sicherheit": "hoch",
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": [],
+          "herleitung": {
+            "praemissen": [
+              "P3",
+              "Alle Kraftquellen am Fahrzeug brauchen eine gemeinsame tragende Struktur",
+              "Frei schwimmende Fahrzeuge rollen nicht auf dem Grund"
+            ],
+            "schluss": "Der Rahmen ist Lastpfad aller Kräfte; ein Fahrwerk entfällt bei frei schwimmenden Bauweisen."
+          }
+        }
+      ],
+      "element_id": "E2"
+    },
+    {
+      "ueberschrift": "Auftriebs- und Trimmsystem",
+      "abschnittstyp": "hauptsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P5",
+          "text": "Ein großer Auftriebskörper aus syntaktischem Schaum trägt das Gewicht des Fahrzeugs und hält es in der Wassersäule neutral schwebend. Leichte Bauteile liegen oben, schwere unten; der große Abstand zwischen Auftriebsschwerpunkt und Gewichtsschwerpunkt stabilisiert das Fahrzeug bei Arbeiten unter Wasser.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Abschnitt Auftrieb und Stabilität: Flotation Pack, syntaktischer Schaum, Schwerpunktabstand"
+            },
+            {
+              "quellen_id": "Q4",
+              "fundstelle": "Abschnitt Syntactic foam: neutraler Auftrieb"
+            }
+          ],
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P6",
+          "text": "Trimmballast gleicht wechselnde Nutzlasten aus und richtet das Fahrzeug in Neigung und Tiefenlage aus. Der Auftriebskörper wirkt passiv, braucht keine Energie und leitet seine Kraft über den Rahmen ein. Das System ist fahrzeugartspezifisch und deshalb als sonstiges System geführt. Bei Änderung der Nutzlast wird der Ballast neu abgestimmt, bevor das Fahrzeug eingesetzt wird.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "sicherheit": "hoch",
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": [],
+          "herleitung": {
+            "praemissen": [
+              "P5",
+              "Schwebezustand verlangt Gleichgewicht von Gewichts- und Auftriebskraft",
+              "Nutzlast wechselt je Einsatz"
+            ],
+            "schluss": "Eine passive Auftriebseinheit plus verstellbarer Ballast ist zum Abgleich nötig; die Kraft geht über die Struktur ins Fahrzeug."
+          }
+        }
+      ],
+      "element_id": "E6"
+    },
+    {
+      "ueberschrift": "Antriebssystem",
+      "abschnittstyp": "hauptsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P7",
+          "text": "Mehrere Thruster ermöglichen das Manövrieren in alle Richtungen. Sie sind zwischen Auftriebs- und Gewichtsschwerpunkt angeordnet, meist in ausgewogener Vektoranordnung, damit die Lage bei Manövern stabil bleibt. Kleinere ROVs sind meist rein elektrisch, größere elektrohydraulisch betrieben.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Abschnitt Aufbau: Vielzahl von Antriebspropellern, Energieversorgung elektrisch/elektrohydraulisch"
+            },
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Abschnitt Thruster: Anordnung zwischen Auftriebs- und Gewichtsschwerpunkt, Vektorkonfiguration"
+            }
+          ],
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P8",
+          "text": "Jeder Thruster wandelt elektrische oder hydraulische Leistung in Schub. Eine Thrusteransteuerung setzt die Sollwerte des Bordsteuerrechners in Motorströme oder Ventilstellungen um. Richtungsänderung und Verzögerung entstehen durch Verteilen und Umkehren der Schübe, daher entfallen Lenksystem und Bremssystem als eigene Systeme. Kupplung und Getriebe sind nicht zwingend. Ausfall einzelner Thruster mindert die Manövrierbarkeit, solange genügend Schubvektoren verbleiben.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "sicherheit": "mittel",
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": [],
+          "herleitung": {
+            "praemissen": [
+              "P7",
+              "Fahrzeug ohne Räder und Ruder bewegt sich nur durch Schubkräfte",
+              "Elektrische und hydraulische Varianten benötigen unterschiedliche Stellglieder"
+            ],
+            "schluss": "Schubvektoren übernehmen Lenken und Verzögern; die Ansteuerung wandelt Sollwerte in Stellgrößen."
+          }
+        }
+      ],
+      "element_id": "E9"
+    },
+    {
+      "ueberschrift": "Energieversorgungssystem",
+      "abschnittstyp": "hauptsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P9",
+          "text": "Die elektrische Energie kommt vom Schiff über das Tether und versorgt Kameras, Leuchten, Probennehmer und Sensoren. Am Fahrzeug wird sie auf die Komponenten verteilt.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q4",
+              "fundstelle": "Abschnitt Power: Strom vom Schiff über das Tether"
+            },
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Abschnitt Power: Verteilung der elektrischen Energie am Fahrzeug"
+            }
+          ],
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P10",
+          "text": "Eine Oberflächenstromversorgung auf dem Trägerschiff stellt die Spannung für das Kabel bereit, ein Leistungsverteiler am Fahrzeug passt sie an die Verbraucher an und sichert die Abgänge ab. Weil das ROV keinen Hauptspeicher mitführt, fließt die Energie nur vom Schiff zum Fahrzeug. Der Oberflächenteil gehört damit zur Systemgrenze. Varianten mit Pufferbatterie sind denkbar, hier aber nicht belegt. Verbraucher mit hohem Leistungsbedarf wie Elektromotor und Thruster liegen am selben Verteiler.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "sicherheit": "hoch",
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": [],
+          "herleitung": {
+            "praemissen": [
+              "P1",
+              "P9",
+              "Ohne mitgeführten Speicher ist der Energiefluss einseitig"
+            ],
+            "schluss": "Quelle liegt auf dem Schiff, Verteilung am Fahrzeug; ein Speicher wäre eine Variante."
+          }
+        }
+      ],
+      "element_id": "E12"
+    },
+    {
+      "ueberschrift": "Kabel- und Tether-Management-System",
+      "abschnittstyp": "hauptsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P11",
+          "text": "Das Tether ist ein Kabelbündel zwischen Fahrzeug und Schiff; es führt Energie nach unten und Daten über Glasfasern nach oben. Bei rauer See oder großer Tiefe kommt ein lasttragendes, gepanzertes Umbilical mit Tether-Management-System hinzu. Dieses ist entweder eine Garage, die das ROV beim Absenken durch die Spritzzone hält, oder bei größeren Work-Class-ROVs eine eigene Einheit oben auf dem Fahrzeug. Es verlängert und verkürzt das Tether gegen Strömungswiderstand, spult es verwicklungsfrei und kann als Winde dienen. Ein zu großes Tether erhöht den Widerstand, ein zu kleines trägt die Last beim Aussetzen und Bergen nicht.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q4",
+              "fundstelle": "Abschnitt Tether: Kabelbündel, Energie nach unten, Daten über Glasfaser"
+            },
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Abschnitt Tether und Tether Management System: Umbilical, Garage, Aufsatzeinheit, Spulen, Dimensionierung"
+            }
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P12",
+          "text": "Das Umbilical verbindet das Schiff mit dem Tether-Management-System, das Tether führt von dort zum Fahrzeug; das System ist damit mechanischer, elektrischer und optischer Übergang. Ohne Garage entfällt diese Stufe, und das Tether geht direkt zum Schiff.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "sicherheit": "mittel",
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": [],
+          "herleitung": {
+            "praemissen": [
+              "P11",
+              "Kabelabschnitte zwischen Schiff, Management-System und Fahrzeug folgen aus der beschriebenen Reihenfolge"
+            ],
+            "schluss": "Das System liegt zwischen den beiden Kabelabschnitten und setzt Last, Strom und Signale um; freischwimmende ROVs lassen es weg."
+          }
+        }
+      ],
+      "element_id": "E15"
+    },
+    {
+      "ueberschrift": "Nutzlastsystem",
+      "abschnittstyp": "hauptsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P13",
+          "text": "Schwere Work-Class-ROVs tragen mindestens zwei Manipulatoren für Aufgaben mit Kraft und Fingerspitzengefühl. Werkzeugpakete übernehmen Leitungsanschluss, Komponententausch, Ventilbetätigung und Schneiden. Ein mehrgelenkiger Arm mit wechselbaren Backen greift biologische, geologische oder archäologische Proben. Sonare, Magnetometer, Fotokameras, Wasserprobennehmer und Messgeräte für Temperatur, Dichte oder Schallgeschwindigkeit ergänzen die Ausrüstung; Inspektions-ROVs tragen zusätzlich bildgebendes Sonar und USBL-Positionierung.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Abschnitt Manipulatoren, Werkzeuge und Sensoren"
+            },
+            {
+              "quellen_id": "Q4",
+              "fundstelle": "Abschnitt Manipulator arm: mehrgelenkiger Arm mit wechselbaren Backen"
+            }
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P14",
+          "text": "Das Sensorpaket gliedert sich in Sonar und Messsonde und liefert seine Daten an die Kommunikationseinheit. Manipulatoren und Werkzeuge sind Verbraucher hydraulischer oder elektrischer Leistung und stützen ihre Reaktionskräfte am Rahmen ab. Die Nutzlast ist austauschbar und bestimmt die Einsatzart; reine Beobachtungs-ROVs tragen oft nur Kamera und Leuchten.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "sicherheit": "mittel",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": [],
+          "herleitung": {
+            "praemissen": [
+              "P13",
+              "P3",
+              "Greifkräfte brauchen ein Widerlager"
+            ],
+            "schluss": "Nutzlast ist Verbraucher und Datenquelle und stützt sich am Rahmen ab; ihre Zusammenstellung ist einsatzabhängig."
+          }
+        }
+      ],
+      "element_id": "E21"
+    },
+    {
+      "ueberschrift": "Elektrik und Elektronik",
+      "abschnittstyp": "hauptsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P15",
+          "text": "Elektrische Bauteile sitzen in ölgefüllten, wasserdichten Gehäusen oder in Gehäusen mit atmosphärischem Innendruck. Das schützt sie vor Korrosion durch Meerwasser und vor dem Druck der Tiefsee.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Abschnitt Power: ölgefüllte bzw. One-Atmosphere-Gehäuse"
+            }
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P16",
+          "text": "Elektronikgehäuse nehmen Leistungs- und Signalelektronik auf; eine Verkabelung verbindet Leistungsverteiler, Thruster, Sensoren, Kameras und Leuchten. Die Kommunikationseinheit bündelt Sensor- und Videosignale für die Glasfaserstrecke des Tethers und verteilt die Steuerbefehle zurück an Bordsteuerrechner und Verbraucher. Bündeln ist nötig, weil viele Signale wenige Fasern teilen. Bei Kleinfahrzeugen kann die Elektronik in einem einzigen Gehäuse sitzen. Die Elektronik teilt sich damit Energie- und Signalweg mit allen übrigen Hauptsystemen.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": [],
+          "herleitung": {
+            "praemissen": [
+              "P15",
+              "P11",
+              "Viele Signale, wenige Fasern"
+            ],
+            "schluss": "Gehäuse, Verkabelung und Kommunikationseinheit folgen aus der Notwendigkeit, Signale gebündelt über das Tether zu führen."
+          }
+        }
+      ],
+      "element_id": "E27"
+    },
+    {
+      "ueberschrift": "Fahrzeugsteuerung und Information",
+      "abschnittstyp": "hauptsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P17",
+          "text": "Ein Bordsteuerrechner nimmt Steuerbefehle des Leitstands entgegen und gibt Sollschübe an die Thrusteransteuerung weiter. Die Lagesensorik misst Neigung, Kurs und Tiefe, eine Navigationssensorik die Position relativ zum Schiff oder zum Meeresboden. Aus diesen Messwerten bildet er den Zustand, den er über das Tether an den Leitstand meldet. So wird das Fahrzeug an der Schnittstelle zwischen Pilot und Antrieb überwacht, ohne dass jede Messgröße einzeln über das Tether laufen muss. Bei einfachen Kleinfahrzeugen kann diese Aufgabe entfallen, wenn der Pilot die Thruster direkt ansteuert.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "sicherheit": "gering",
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": [],
+          "herleitung": {
+            "praemissen": [
+              "P7",
+              "P11",
+              "P16",
+              "Ferngesteuerte Fahrzeuge brauchen Zustandserfassung"
+            ],
+            "schluss": "Bordseitige Verarbeitung vermittelt zwischen Pilot, Sensoren und Antrieb; einfache Bauweisen verzichten darauf."
+          }
+        }
+      ],
+      "element_id": "E31"
+    },
+    {
+      "ueberschrift": "Leitstand",
+      "abschnittstyp": "hauptsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P18",
+          "text": "Die Steuerung erfolgt aus einem Kontrollraum an Bord eines Schiffes oder einer schwimmenden Plattform, teils auch von nahegelegenem Land. Pilot, Copilot, Ingenieure und Navigatoren arbeiten dort zusammen; Bewegung und Manipulatoren werden über Joysticks und Touchscreens an einer Steuerbox bedient, der Copilot richtet die Hauptkamera aus.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Abschnitt Control: Kontrollraum auf Schiff, Plattform oder Land"
+            },
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Abschnitt Piloting: Joysticks und Touchscreens an Steuerbox"
+            },
+            {
+              "quellen_id": "Q4",
+              "fundstelle": "Abschnitt Ship and control room: Pilot, Copilot, Ingenieure, Navigatoren"
+            }
+          ],
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P19",
+          "text": "Das Steuerpult erfasst die Eingaben des Piloten, die Anzeigeeinheit stellt Video, Sonarbild und Zustandsdaten dar. Der Leitstand ist die Gegenstelle des Tethers, also Ursprung der Steuerbefehle und Senke der Sensordaten. Bei kleinen ROVs kann er auf ein tragbares Handgerät schrumpfen.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "sicherheit": "gering",
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": [],
+          "herleitung": {
+            "praemissen": [
+              "P18",
+              "P1",
+              "Ferngesteuert heißt Eingabe und Rückmeldung am Ort des Piloten"
+            ],
+            "schluss": "Pult erfasst, Anzeige gibt aus; der Leitstand schließt den Regelkreis am Kabelende."
+          }
+        }
+      ],
+      "element_id": "E35"
+    },
+    {
+      "ueberschrift": "Assistenz und Sicherheit",
+      "abschnittstyp": "hauptsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P20",
+          "text": "Assistenzfunktionen wie automatische Tiefen- und Kurshaltung entlasten den Piloten. Ein Lage- und Tiefenregler vergleicht Messwerte der Lagesensorik mit dem Sollwert und gibt Korrekturschübe an die Thrusteransteuerung. Ein Insassenschutz entfällt, da niemand an Bord ist. Der Pilot kann die Funktionen jederzeit übersteuern, weil er das Fahrzeug über den Leitstand führt.",
+          "begruendung": "modellwissen",
+          "belege": [],
+          "sicherheit": "gering",
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P21",
+          "text": "Wasserzutritt und Isolationsfehler gefährden die ölgefüllten und druckfesten Gehäuse. Eine Leckage- und Isolationsüberwachung meldet Fehler an den Bordsteuerrechner und den Leitstand, damit der Pilot den Einsatz abbrechen oder die Last abschalten kann. Sie schützt Fahrzeug und Personal am Schiff, nicht Insassen.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "sicherheit": "mittel",
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": [],
+          "herleitung": {
+            "praemissen": [
+              "P15",
+              "P17",
+              "Gehäusedichtheit ist Voraussetzung für die Elektrik"
+            ],
+            "schluss": "Aus der Abhängigkeit der Elektrik von dichten Gehäusen folgt ein Überwachungsbedarf mit Meldeweg zum Pilot."
+          }
+        }
+      ],
+      "element_id": "E38"
+    },
+    {
+      "ueberschrift": "Beleuchtung und Sicht",
+      "abschnittstyp": "hauptsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P22",
+          "text": "Mehrere Kameras sind in verschiedenen Winkeln montiert und liefern hochauflösendes Video; leistungsstarke LEDs leuchten die dunkle Tiefe aus. Die meisten ROVs tragen mindestens eine Videokamera und Leuchten, bei Work-Class-ROVs können die Kameras gegen Kollisionen geschützt sein.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q4",
+              "fundstelle": "Abschnitte Cameras und Lights: Kameras, LEDs"
+            },
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Abschnitt Lights and cameras: Mindestausstattung, Kollisionsschutz"
+            }
+          ],
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P23",
+          "text": "Kameras und Leuchten sind Verbraucher des Leistungsverteilers, das Videosignal läuft über die Kommunikationseinheit zum Leitstand. Eine Schwenk-Neige-Einheit richtet eine Hauptkamera aus, sodass der Copilot sie fernzielen kann. Ohne Beleuchtung entsteht in der Tiefe kein Kamerabild, Kamera und Leuchte bilden daher eine funktionale Einheit. Mehrere Kameras erlauben unterschiedliche Blickrichtungen auf Arbeitsbereich und Umgebung.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "sicherheit": "gering",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": [],
+          "herleitung": {
+            "praemissen": [
+              "P22",
+              "P18",
+              "P9",
+              "P16"
+            ],
+            "schluss": "Kameras brauchen Energie und Signalweg; die Ausrichtung durch den Copilot setzt eine fernbedienbare Kamerahalterung voraus."
+          }
+        }
+      ],
+      "element_id": "E41"
+    },
+    {
+      "ueberschrift": "Thermomanagement",
+      "abschnittstyp": "hauptsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P24",
+          "text": "Elektronik, Elektromotoren und Hydraulikaggregat erzeugen Verlustwärme, die abgeführt werden muss. Das umgebende Wasser dient als Wärmesenke: Die Ölfüllung der Gehäuse leitet Wärme an die Gehäusewand, ein Hydraulikölkühler gibt die Abwärme des Hydraulikaggregats an das Seewasser ab. Ein aktiver Kühlkreis mit Pumpen ist nicht zwingend erforderlich. Das Thermomanagement ist damit überwiegend passiv und über thermische Flüsse an Elektrik, Hydraulik und Umgebung gekoppelt. Bauteile mit hoher Verlustleistung werden dafür nahe an der Gehäusewand angeordnet, damit der Wärmeweg kurz bleibt. Zusätzlich entlastet die Strömung beim Fahren oder bei Wasserbewegung die Wärmeabfuhr an der Außenfläche; im Stand ist die Wärmeabfuhr geringer, was die Dauerleistung begrenzen kann.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "sicherheit": "hoch",
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": [],
+          "herleitung": {
+            "praemissen": [
+              "P15",
+              "P25",
+              "Verlustleistung wird zu Wärme",
+              "Seewasser ist eine große Wärmesenke"
+            ],
+            "schluss": "Abwärme muss an die Umgebung gelangen; die Ölfüllung und ein Kühler am Aggregat sind dafür die naheliegenden Pfade."
+          }
+        }
+      ],
+      "element_id": "E45"
+    },
+    {
+      "ueberschrift": "Neben- und Versorgungssysteme",
+      "abschnittstyp": "hauptsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P25",
+          "text": "Bei leistungsstarken ROVs treibt ein großer Elektromotor eine Hydraulikpumpe an, die Antrieb und Werkzeuge wie Drehmomentschrauber und Manipulatorarme versorgt. Beim Aussetzen und Bergen stabilisiert ein Davit, ein kleiner Kran, das ROV; das Trägerschiff setzt es aus und holt es zurück.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Abschnitt Power: Elektromotor treibt Hydraulikpumpe"
+            },
+            {
+              "quellen_id": "Q4",
+              "fundstelle": "Abschnitt Ship and control room: Davit, Aussetzen und Bergen"
+            }
+          ],
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P26",
+          "text": "Das Hydraulikaggregat besteht aus Elektromotor und Hydraulikpumpe und liefert Drucköl an Manipulatoren, Werkzeuge und hydraulische Thruster. Ein Druckkompensator gleicht den Innendruck der ölgefüllten Gehäuse an den mit der Tiefe steigenden Wasserdruck an. Die Aussetz- und Bergungseinrichtung gehört zum Trägerschiff und bildet die mechanische Schnittstelle zum Tether-Management-System.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": [],
+          "herleitung": {
+            "praemissen": [
+              "P25",
+              "P15",
+              "Wasserdruck steigt mit der Tiefe"
+            ],
+            "schluss": "Ölgefüllte Gehäuse brauchen Druckausgleich; das Aggregat versorgt hydraulische Verbraucher; Aussetzen läuft über das Schiff."
+          }
+        }
+      ],
+      "element_id": "E48"
+    },
+    {
+      "ueberschrift": "Zusammenfassung der obersten Ebene",
+      "abschnittstyp": "gesamtsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P27",
+          "text": "Auf oberster Ebene besteht das ROV aus den Systemen Fahrzeugstruktur, Auftriebs- und Trimmsystem, Antriebssystem, Energieversorgungssystem, Kabel- und Tether-Management-System, Nutzlastsystem, Elektrik und Elektronik, Fahrzeugsteuerung und Information, Leitstand, Assistenz und Sicherheit, Beleuchtung und Sicht, Thermomanagement sowie Neben- und Versorgungssystemen. Lenksystem und Bremssystem entfallen, weil Thruster Lenken und Verzögern übernehmen. Das Tether ist die einzige durchgehende Verbindung zwischen Unterwasser- und Oberflächenanteil. Die Systeme sind über definierte Schnittstellen und Flüsse gekoppelt.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "sicherheit": "mittel",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": [],
+          "herleitung": {
+            "praemissen": [
+              "P3",
+              "P5",
+              "P8",
+              "P11",
+              "P18"
+            ],
+            "schluss": "Zusammenführung der beschriebenen Hauptsysteme."
+          }
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Modellierungsbezug",
+      "abschnittstyp": "modellierung",
+      "absaetze": [
+        {
+          "absatz_id": "P28",
+          "text": "Der Block `ROV` bildet das Gesamtsystem. Drei Dekompositionspfade: `ROV → Kabel- und Tether-Management-System → Tether-Management-System → Winde`; `ROV → Nutzlastsystem → Sensorpaket → Sonar`; `ROV → Neben- und Versorgungssysteme → Hydraulikaggregat → Hydraulikpumpe`. Ports und Konnektoren bilden die Schnittstellen ab: elektrische Ports am Leistungsverteiler, hydraulische am Hydraulikaggregat, mechanische am Rahmen, Informationsports an der Kommunikationseinheit. Ein SysML Block Definition Diagram zeigt die Struktur, ein Internal Block Diagram Ports und Flüsse, ein Aktivitätsdiagramm die Funktionsabläufe.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "sicherheit": "mittel",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": [],
+          "herleitung": {
+            "praemissen": [
+              "P11",
+              "P13",
+              "P25",
+              "P27"
+            ],
+            "schluss": "Pfade und Ports folgen aus den im Modell angelegten Elementen und Flüssen."
+          }
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Flüsse",
+      "abschnittstyp": "fluesse",
+      "absaetze": [
+        {
+          "absatz_id": "P29",
+          "text": "Elektrisch: Oberflächenstromversorgung → Umbilical → Tether-Management-System → Tether → Leistungsverteiler → Thrusteransteuerung, Kamera, Leuchte, Elektromotor. Hydraulisch: Hydraulikaggregat → Manipulator, Werkzeugpaket, bei hydraulischen Varianten Thruster. Mechanisch: Thruster, Auftriebskörper und Manipulator → Rahmen; Aussetz- und Bergungseinrichtung → Tether-Management-System. Information: Steuerpult → Tether → Kommunikationseinheit → Bordsteuerrechner → Thrusteransteuerung; Sonar, Kamera und Lagesensorik → Kommunikationseinheit → Tether → Anzeigeeinheit. Thermisch: Elektronikgehäuse und Hydraulikaggregat → Ölfüllung und Hydraulikölkühler → Seewasser.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "sicherheit": "mittel",
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": [],
+          "herleitung": {
+            "praemissen": [
+              "P9",
+              "P11",
+              "P16",
+              "P17",
+              "P24",
+              "P26"
+            ],
+            "schluss": "Zusammenstellung der in den Hauptsystemen beschriebenen Flüsse."
+          }
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Perspektiven",
+      "abschnittstyp": "perspektiven",
+      "absaetze": [
+        {
+          "absatz_id": "P30",
+          "text": "Funktionale Zuordnung. Fahrzeuglasten tragen: Rahmen, Werkzeugschlitten. Auftrieb bereitstellen: Auftriebskörper, Trimmballast. Antriebsleistung erzeugen, Fahrzeug fortbewegen, Fahrzeug manövrieren, Fahrzeug verzögern: Thruster mit Thrusteransteuerung, beim Manövrieren zusätzlich Bordsteuerrechner und Lage- und Tiefenregler. Elektrische Energie verteilen: Oberflächenstromversorgung, Leistungsverteiler, Verkabelung. Hydraulische Leistung bereitstellen, Arbeitsgeräte versorgen: Hydraulikaggregat. Objekte handhaben: Manipulator, Werkzeugpaket. Fahrzeugumfeld erfassen: Sonar, Messsonde, Kamera. Fahrersicht sicherstellen: Kamera, Leuchte, Schwenk-Neige-Einheit; Fahrzeugumgebung ausleuchten: Leuchte. Fahrereingaben erfassen: Steuerpult; Fahrerinformationen anzeigen: Anzeigeeinheit. Daten übertragen: Kommunikationseinheit, Tether, Umbilical. Fahrzeugzustand überwachen: Lagesensorik, Leckage- und Isolationsüberwachung, Bordsteuerrechner. Fahrzeugposition bestimmen: Navigationssensorik. Betriebstemperatur regeln: Ölfüllung, Hydraulikölkühler. Fahrzeug aussetzen und bergen: Aussetz- und Bergungseinrichtung. Tether führen: Winde, Garage. Druck ausgleichen: Druckkompensator.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "sicherheit": "mittel",
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": [],
+          "herleitung": {
+            "praemissen": [
+              "P2",
+              "P4",
+              "P6",
+              "P8",
+              "P10",
+              "P11",
+              "P14",
+              "P16",
+              "P17",
+              "P19",
+              "P21",
+              "P23",
+              "P24",
+              "P26"
+            ],
+            "schluss": "Jede Funktion des Modellblocks wird dem Element zugeordnet, das sie in den Hauptsystemabschnitten ausführt."
+          }
+        }
+      ]
+    }
+  ],
+  "modell": {
+    "elemente": [
+      {
+        "id": "E1",
+        "name": "ROV",
+        "typ": "gesamtsystem",
+        "eltern_id": null,
+        "absatz_ids": [
+          "P1",
+          "P2"
+        ]
+      },
+      {
+        "id": "E2",
+        "name": "Fahrzeugstruktur",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P3",
+          "P4"
+        ],
+        "kategorie": "struktur_fahrwerk"
+      },
+      {
+        "id": "E3",
+        "name": "Rahmen",
+        "typ": "komponente",
+        "eltern_id": "E2",
+        "absatz_ids": [
+          "P3",
+          "P4"
+        ]
+      },
+      {
+        "id": "E4",
+        "name": "Werkzeugschlitten",
+        "typ": "komponente",
+        "eltern_id": "E2",
+        "absatz_ids": [
+          "P3"
+        ]
+      },
+      {
+        "id": "E5",
+        "name": "Landekufen",
+        "typ": "komponente",
+        "eltern_id": "E2",
+        "absatz_ids": [
+          "P3",
+          "P4"
+        ]
+      },
+      {
+        "id": "E6",
+        "name": "Auftriebs- und Trimmsystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P5",
+          "P6"
+        ],
+        "kategorie": "sonstig"
+      },
+      {
+        "id": "E7",
+        "name": "Auftriebskörper",
+        "typ": "komponente",
+        "eltern_id": "E6",
+        "absatz_ids": [
+          "P5",
+          "P6"
+        ]
+      },
+      {
+        "id": "E8",
+        "name": "Trimmballast",
+        "typ": "komponente",
+        "eltern_id": "E6",
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "E9",
+        "name": "Antriebssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P7",
+          "P8"
+        ],
+        "kategorie": "antrieb"
+      },
+      {
+        "id": "E10",
+        "name": "Thruster",
+        "typ": "komponente",
+        "eltern_id": "E9",
+        "absatz_ids": [
+          "P7",
+          "P8"
+        ]
+      },
+      {
+        "id": "E11",
+        "name": "Thrusteransteuerung",
+        "typ": "komponente",
+        "eltern_id": "E9",
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "E12",
+        "name": "Energieversorgungssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P9",
+          "P10"
+        ],
+        "kategorie": "energieversorgung"
+      },
+      {
+        "id": "E13",
+        "name": "Oberflächenstromversorgung",
+        "typ": "komponente",
+        "eltern_id": "E12",
+        "absatz_ids": [
+          "P10"
+        ]
+      },
+      {
+        "id": "E14",
+        "name": "Leistungsverteiler",
+        "typ": "komponente",
+        "eltern_id": "E12",
+        "absatz_ids": [
+          "P9",
+          "P10"
+        ]
+      },
+      {
+        "id": "E15",
+        "name": "Kabel- und Tether-Management-System",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P11",
+          "P12"
+        ],
+        "kategorie": "sonstig"
+      },
+      {
+        "id": "E16",
+        "name": "Tether",
+        "typ": "komponente",
+        "eltern_id": "E15",
+        "absatz_ids": [
+          "P11",
+          "P12"
+        ]
+      },
+      {
+        "id": "E17",
+        "name": "Umbilical",
+        "typ": "komponente",
+        "eltern_id": "E15",
+        "absatz_ids": [
+          "P11",
+          "P12"
+        ]
+      },
+      {
+        "id": "E18",
+        "name": "Tether-Management-System",
+        "typ": "subsystem",
+        "eltern_id": "E15",
+        "absatz_ids": [
+          "P11",
+          "P12"
+        ]
+      },
+      {
+        "id": "E19",
+        "name": "Winde",
+        "typ": "komponente",
+        "eltern_id": "E18",
+        "absatz_ids": [
+          "P11"
+        ]
+      },
+      {
+        "id": "E20",
+        "name": "Garage",
+        "typ": "komponente",
+        "eltern_id": "E18",
+        "absatz_ids": [
+          "P11",
+          "P12"
+        ]
+      },
+      {
+        "id": "E21",
+        "name": "Nutzlastsystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P13",
+          "P14"
+        ],
+        "kategorie": "aufbau_nutzlast"
+      },
+      {
+        "id": "E22",
+        "name": "Manipulator",
+        "typ": "komponente",
+        "eltern_id": "E21",
+        "absatz_ids": [
+          "P13",
+          "P14"
+        ]
+      },
+      {
+        "id": "E23",
+        "name": "Werkzeugpaket",
+        "typ": "komponente",
+        "eltern_id": "E21",
+        "absatz_ids": [
+          "P13",
+          "P14"
+        ]
+      },
+      {
+        "id": "E24",
+        "name": "Sensorpaket",
+        "typ": "subsystem",
+        "eltern_id": "E21",
+        "absatz_ids": [
+          "P13",
+          "P14"
+        ]
+      },
+      {
+        "id": "E25",
+        "name": "Sonar",
+        "typ": "komponente",
+        "eltern_id": "E24",
+        "absatz_ids": [
+          "P13",
+          "P14"
+        ]
+      },
+      {
+        "id": "E26",
+        "name": "Messsonde",
+        "typ": "komponente",
+        "eltern_id": "E24",
+        "absatz_ids": [
+          "P13",
+          "P14"
+        ]
+      },
+      {
+        "id": "E27",
+        "name": "Elektrik und Elektronik",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P15",
+          "P16"
+        ],
+        "kategorie": "elektrik_elektronik"
+      },
+      {
+        "id": "E28",
+        "name": "Elektronikgehäuse",
+        "typ": "komponente",
+        "eltern_id": "E27",
+        "absatz_ids": [
+          "P15",
+          "P16"
+        ]
+      },
+      {
+        "id": "E29",
+        "name": "Verkabelung",
+        "typ": "komponente",
+        "eltern_id": "E27",
+        "absatz_ids": [
+          "P16"
+        ]
+      },
+      {
+        "id": "E30",
+        "name": "Kommunikationseinheit",
+        "typ": "komponente",
+        "eltern_id": "E27",
+        "absatz_ids": [
+          "P16"
+        ]
+      },
+      {
+        "id": "E31",
+        "name": "Fahrzeugsteuerung und Information",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P17"
+        ],
+        "kategorie": "steuerung_information"
+      },
+      {
+        "id": "E32",
+        "name": "Bordsteuerrechner",
+        "typ": "komponente",
+        "eltern_id": "E31",
+        "absatz_ids": [
+          "P17"
+        ]
+      },
+      {
+        "id": "E33",
+        "name": "Lagesensorik",
+        "typ": "komponente",
+        "eltern_id": "E31",
+        "absatz_ids": [
+          "P17"
+        ]
+      },
+      {
+        "id": "E34",
+        "name": "Navigationssensorik",
+        "typ": "komponente",
+        "eltern_id": "E31",
+        "absatz_ids": [
+          "P17"
+        ]
+      },
+      {
+        "id": "E35",
+        "name": "Leitstand",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P18",
+          "P19"
+        ],
+        "kategorie": "bedienraum"
+      },
+      {
+        "id": "E36",
+        "name": "Steuerpult",
+        "typ": "komponente",
+        "eltern_id": "E35",
+        "absatz_ids": [
+          "P18",
+          "P19"
+        ]
+      },
+      {
+        "id": "E37",
+        "name": "Anzeigeeinheit",
+        "typ": "komponente",
+        "eltern_id": "E35",
+        "absatz_ids": [
+          "P19"
+        ]
+      },
+      {
+        "id": "E38",
+        "name": "Assistenz und Sicherheit",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P20",
+          "P21"
+        ],
+        "kategorie": "assistenz_sicherheit"
+      },
+      {
+        "id": "E39",
+        "name": "Lage- und Tiefenregler",
+        "typ": "komponente",
+        "eltern_id": "E38",
+        "absatz_ids": [
+          "P20"
+        ]
+      },
+      {
+        "id": "E40",
+        "name": "Leckage- und Isolationsüberwachung",
+        "typ": "komponente",
+        "eltern_id": "E38",
+        "absatz_ids": [
+          "P21"
+        ]
+      },
+      {
+        "id": "E41",
+        "name": "Beleuchtung und Sicht",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P22",
+          "P23"
+        ],
+        "kategorie": "beleuchtung_sicht"
+      },
+      {
+        "id": "E42",
+        "name": "Kamera",
+        "typ": "komponente",
+        "eltern_id": "E41",
+        "absatz_ids": [
+          "P22",
+          "P23"
+        ]
+      },
+      {
+        "id": "E43",
+        "name": "Leuchte",
+        "typ": "komponente",
+        "eltern_id": "E41",
+        "absatz_ids": [
+          "P22",
+          "P23"
+        ]
+      },
+      {
+        "id": "E44",
+        "name": "Schwenk-Neige-Einheit",
+        "typ": "komponente",
+        "eltern_id": "E41",
+        "absatz_ids": [
+          "P23"
+        ]
+      },
+      {
+        "id": "E45",
+        "name": "Thermomanagement",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P24"
+        ],
+        "kategorie": "thermomanagement"
+      },
+      {
+        "id": "E46",
+        "name": "Ölfüllung",
+        "typ": "komponente",
+        "eltern_id": "E45",
+        "absatz_ids": [
+          "P24"
+        ]
+      },
+      {
+        "id": "E47",
+        "name": "Hydraulikölkühler",
+        "typ": "komponente",
+        "eltern_id": "E45",
+        "absatz_ids": [
+          "P24"
+        ]
+      },
+      {
+        "id": "E48",
+        "name": "Neben- und Versorgungssysteme",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P25",
+          "P26"
+        ],
+        "kategorie": "nebensysteme"
+      },
+      {
+        "id": "E49",
+        "name": "Hydraulikaggregat",
+        "typ": "subsystem",
+        "eltern_id": "E48",
+        "absatz_ids": [
+          "P25",
+          "P26"
+        ]
+      },
+      {
+        "id": "E50",
+        "name": "Hydraulikpumpe",
+        "typ": "komponente",
+        "eltern_id": "E49",
+        "absatz_ids": [
+          "P25",
+          "P26"
+        ]
+      },
+      {
+        "id": "E51",
+        "name": "Elektromotor",
+        "typ": "komponente",
+        "eltern_id": "E49",
+        "absatz_ids": [
+          "P25",
+          "P26"
+        ]
+      },
+      {
+        "id": "E52",
+        "name": "Druckkompensator",
+        "typ": "komponente",
+        "eltern_id": "E48",
+        "absatz_ids": [
+          "P26"
+        ]
+      },
+      {
+        "id": "E53",
+        "name": "Aussetz- und Bergungseinrichtung",
+        "typ": "komponente",
+        "eltern_id": "E48",
+        "absatz_ids": [
+          "P25",
+          "P26"
+        ]
+      }
+    ],
+    "funktionen": [
+      {
+        "id": "F1",
+        "name": "Fahrzeuglasten tragen",
+        "ausgefuehrt_von": [
+          "E3",
+          "E4"
+        ],
+        "absatz_ids": [
+          "P3",
+          "P4"
+        ]
+      },
+      {
+        "id": "F2",
+        "name": "Auftrieb bereitstellen",
+        "ausgefuehrt_von": [
+          "E7",
+          "E8"
+        ],
+        "absatz_ids": [
+          "P5",
+          "P6"
+        ]
+      },
+      {
+        "id": "F3",
+        "name": "Antriebsleistung erzeugen",
+        "ausgefuehrt_von": [
+          "E10"
+        ],
+        "absatz_ids": [
+          "P7",
+          "P8"
+        ]
+      },
+      {
+        "id": "F4",
+        "name": "Fahrzeug fortbewegen",
+        "ausgefuehrt_von": [
+          "E10",
+          "E11"
+        ],
+        "absatz_ids": [
+          "P7",
+          "P8"
+        ]
+      },
+      {
+        "id": "F5",
+        "name": "Fahrzeug manövrieren",
+        "ausgefuehrt_von": [
+          "E10",
+          "E11",
+          "E32",
+          "E39"
+        ],
+        "absatz_ids": [
+          "P7",
+          "P8",
+          "P17",
+          "P20"
+        ]
+      },
+      {
+        "id": "F6",
+        "name": "Fahrzeug verzögern",
+        "ausgefuehrt_von": [
+          "E10",
+          "E11"
+        ],
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "F7",
+        "name": "Elektrische Energie verteilen",
+        "ausgefuehrt_von": [
+          "E13",
+          "E14",
+          "E29"
+        ],
+        "absatz_ids": [
+          "P9",
+          "P10",
+          "P16"
+        ]
+      },
+      {
+        "id": "F8",
+        "name": "Hydraulische Leistung bereitstellen",
+        "ausgefuehrt_von": [
+          "E49"
+        ],
+        "absatz_ids": [
+          "P25",
+          "P26"
+        ]
+      },
+      {
+        "id": "F9",
+        "name": "Arbeitsgeräte versorgen",
+        "ausgefuehrt_von": [
+          "E49"
+        ],
+        "absatz_ids": [
+          "P25",
+          "P26"
+        ]
+      },
+      {
+        "id": "F10",
+        "name": "Objekte handhaben",
+        "ausgefuehrt_von": [
+          "E22",
+          "E23"
+        ],
+        "absatz_ids": [
+          "P13",
+          "P14"
+        ]
+      },
+      {
+        "id": "F11",
+        "name": "Fahrzeugumfeld erfassen",
+        "ausgefuehrt_von": [
+          "E25",
+          "E26",
+          "E42"
+        ],
+        "absatz_ids": [
+          "P13",
+          "P14",
+          "P22"
+        ]
+      },
+      {
+        "id": "F12",
+        "name": "Fahrersicht sicherstellen",
+        "ausgefuehrt_von": [
+          "E42",
+          "E43",
+          "E44"
+        ],
+        "absatz_ids": [
+          "P22",
+          "P23"
+        ]
+      },
+      {
+        "id": "F13",
+        "name": "Fahrzeugumgebung ausleuchten",
+        "ausgefuehrt_von": [
+          "E43"
+        ],
+        "absatz_ids": [
+          "P22",
+          "P23"
+        ]
+      },
+      {
+        "id": "F14",
+        "name": "Fahrereingaben erfassen",
+        "ausgefuehrt_von": [
+          "E36"
+        ],
+        "absatz_ids": [
+          "P18",
+          "P19"
+        ]
+      },
+      {
+        "id": "F15",
+        "name": "Fahrerinformationen anzeigen",
+        "ausgefuehrt_von": [
+          "E37"
+        ],
+        "absatz_ids": [
+          "P19"
+        ]
+      },
+      {
+        "id": "F16",
+        "name": "Daten übertragen",
+        "ausgefuehrt_von": [
+          "E30",
+          "E16",
+          "E17"
+        ],
+        "absatz_ids": [
+          "P11",
+          "P16"
+        ]
+      },
+      {
+        "id": "F17",
+        "name": "Fahrzeugzustand überwachen",
+        "ausgefuehrt_von": [
+          "E33",
+          "E40",
+          "E32"
+        ],
+        "absatz_ids": [
+          "P17",
+          "P21"
+        ]
+      },
+      {
+        "id": "F18",
+        "name": "Fahrzeugposition bestimmen",
+        "ausgefuehrt_von": [
+          "E34"
+        ],
+        "absatz_ids": [
+          "P17"
+        ]
+      },
+      {
+        "id": "F19",
+        "name": "Betriebstemperatur regeln",
+        "ausgefuehrt_von": [
+          "E46",
+          "E47"
+        ],
+        "absatz_ids": [
+          "P24"
+        ]
+      },
+      {
+        "id": "F20",
+        "name": "Fahrzeug aussetzen und bergen",
+        "ausgefuehrt_von": [
+          "E53"
+        ],
+        "absatz_ids": [
+          "P25",
+          "P26"
+        ]
+      },
+      {
+        "id": "F21",
+        "name": "Tether führen",
+        "ausgefuehrt_von": [
+          "E19",
+          "E20",
+          "E18"
+        ],
+        "absatz_ids": [
+          "P11",
+          "P12"
+        ]
+      },
+      {
+        "id": "F22",
+        "name": "Druck ausgleichen",
+        "ausgefuehrt_von": [
+          "E52"
+        ],
+        "absatz_ids": [
+          "P26"
+        ]
+      }
+    ],
+    "fluesse": [
+      {
+        "id": "S1",
+        "von": "E13",
+        "nach": "E17",
+        "art": "elektrisch",
+        "medium": "Strom",
+        "absatz_ids": [
+          "P10",
+          "P11"
+        ]
+      },
+      {
+        "id": "S2",
+        "von": "E17",
+        "nach": "E18",
+        "art": "elektrisch",
+        "medium": "Strom",
+        "absatz_ids": [
+          "P11",
+          "P12"
+        ]
+      },
+      {
+        "id": "S3",
+        "von": "E18",
+        "nach": "E16",
+        "art": "elektrisch",
+        "medium": "Strom",
+        "absatz_ids": [
+          "P12"
+        ]
+      },
+      {
+        "id": "S4",
+        "von": "E16",
+        "nach": "E14",
+        "art": "elektrisch",
+        "medium": "Strom",
+        "absatz_ids": [
+          "P9",
+          "P12"
+        ]
+      },
+      {
+        "id": "S5",
+        "von": "E14",
+        "nach": "E11",
+        "art": "elektrisch",
+        "medium": "Strom",
+        "absatz_ids": [
+          "P8",
+          "P10"
+        ]
+      },
+      {
+        "id": "S6",
+        "von": "E11",
+        "nach": "E10",
+        "art": "elektrisch",
+        "medium": "Motorstrom",
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "S7",
+        "von": "E14",
+        "nach": "E51",
+        "art": "elektrisch",
+        "medium": "Strom",
+        "absatz_ids": [
+          "P25",
+          "P26"
+        ]
+      },
+      {
+        "id": "S8",
+        "von": "E14",
+        "nach": "E42",
+        "art": "elektrisch",
+        "medium": "Strom",
+        "absatz_ids": [
+          "P23"
+        ]
+      },
+      {
+        "id": "S9",
+        "von": "E14",
+        "nach": "E43",
+        "art": "elektrisch",
+        "medium": "Strom",
+        "absatz_ids": [
+          "P23"
+        ]
+      },
+      {
+        "id": "S10",
+        "von": "E51",
+        "nach": "E50",
+        "art": "mechanisch",
+        "medium": "Wellenleistung",
+        "absatz_ids": [
+          "P25",
+          "P26"
+        ]
+      },
+      {
+        "id": "S11",
+        "von": "E50",
+        "nach": "E22",
+        "art": "hydraulisch",
+        "medium": "Drucköl",
+        "absatz_ids": [
+          "P26"
+        ]
+      },
+      {
+        "id": "S12",
+        "von": "E50",
+        "nach": "E23",
+        "art": "hydraulisch",
+        "medium": "Drucköl",
+        "absatz_ids": [
+          "P26"
+        ]
+      },
+      {
+        "id": "S13",
+        "von": "E10",
+        "nach": "E3",
+        "art": "mechanisch",
+        "medium": "Schub",
+        "absatz_ids": [
+          "P4"
+        ]
+      },
+      {
+        "id": "S14",
+        "von": "E7",
+        "nach": "E3",
+        "art": "mechanisch",
+        "medium": "Auftriebskraft",
+        "absatz_ids": [
+          "P5",
+          "P6"
+        ]
+      },
+      {
+        "id": "S15",
+        "von": "E36",
+        "nach": "E17",
+        "art": "information",
+        "medium": "Steuerbefehle",
+        "absatz_ids": [
+          "P19",
+          "P11"
+        ]
+      },
+      {
+        "id": "S16",
+        "von": "E17",
+        "nach": "E18",
+        "art": "information",
+        "medium": "Steuerbefehle",
+        "absatz_ids": [
+          "P12"
+        ]
+      },
+      {
+        "id": "S17",
+        "von": "E18",
+        "nach": "E16",
+        "art": "information",
+        "medium": "Steuerbefehle",
+        "absatz_ids": [
+          "P12"
+        ]
+      },
+      {
+        "id": "S18",
+        "von": "E16",
+        "nach": "E30",
+        "art": "information",
+        "medium": "Steuerbefehle",
+        "absatz_ids": [
+          "P16"
+        ]
+      },
+      {
+        "id": "S19",
+        "von": "E30",
+        "nach": "E32",
+        "art": "information",
+        "medium": "Steuerbefehle",
+        "absatz_ids": [
+          "P16",
+          "P17"
+        ]
+      },
+      {
+        "id": "S20",
+        "von": "E32",
+        "nach": "E11",
+        "art": "information",
+        "medium": "Sollschübe",
+        "absatz_ids": [
+          "P17"
+        ]
+      },
+      {
+        "id": "S21",
+        "von": "E25",
+        "nach": "E30",
+        "art": "information",
+        "medium": "Sonardaten",
+        "absatz_ids": [
+          "P13",
+          "P14"
+        ]
+      },
+      {
+        "id": "S22",
+        "von": "E42",
+        "nach": "E30",
+        "art": "information",
+        "medium": "Video",
+        "absatz_ids": [
+          "P22",
+          "P23"
+        ]
+      },
+      {
+        "id": "S23",
+        "von": "E33",
+        "nach": "E32",
+        "art": "information",
+        "medium": "Lagedaten",
+        "absatz_ids": [
+          "P17"
+        ]
+      },
+      {
+        "id": "S24",
+        "von": "E30",
+        "nach": "E16",
+        "art": "information",
+        "medium": "Sensor- und Videodaten",
+        "absatz_ids": [
+          "P16"
+        ]
+      },
+      {
+        "id": "S25",
+        "von": "E16",
+        "nach": "E18",
+        "art": "information",
+        "medium": "Sensor- und Videodaten",
+        "absatz_ids": [
+          "P12"
+        ]
+      },
+      {
+        "id": "S26",
+        "von": "E18",
+        "nach": "E17",
+        "art": "information",
+        "medium": "Sensor- und Videodaten",
+        "absatz_ids": [
+          "P12"
+        ]
+      },
+      {
+        "id": "S27",
+        "von": "E17",
+        "nach": "E37",
+        "art": "information",
+        "medium": "Sensor- und Videodaten",
+        "absatz_ids": [
+          "P19"
+        ]
+      },
+      {
+        "id": "S28",
+        "von": "E40",
+        "nach": "E32",
+        "art": "information",
+        "medium": "Fehlermeldung",
+        "absatz_ids": [
+          "P21"
+        ]
+      },
+      {
+        "id": "S29",
+        "von": "E33",
+        "nach": "E39",
+        "art": "information",
+        "medium": "Lagemesswerte",
+        "absatz_ids": [
+          "P20"
+        ]
+      },
+      {
+        "id": "S30",
+        "von": "E39",
+        "nach": "E11",
+        "art": "information",
+        "medium": "Korrekturschub",
+        "absatz_ids": [
+          "P20"
+        ]
+      },
+      {
+        "id": "S31",
+        "von": "E49",
+        "nach": "E47",
+        "art": "thermisch",
+        "medium": "Abwärme",
+        "absatz_ids": [
+          "P24"
+        ]
+      },
+      {
+        "id": "S32",
+        "von": "E28",
+        "nach": "E46",
+        "art": "thermisch",
+        "medium": "Abwärme",
+        "absatz_ids": [
+          "P24"
+        ]
+      },
+      {
+        "id": "S33",
+        "von": "E53",
+        "nach": "E18",
+        "art": "mechanisch",
+        "medium": "Hebelast",
+        "absatz_ids": [
+          "P25",
+          "P26"
+        ]
+      },
+      {
+        "id": "S34",
+        "von": "E22",
+        "nach": "E3",
+        "art": "mechanisch",
+        "medium": "Reaktionskraft",
+        "absatz_ids": [
+          "P14"
+        ]
+      },
+      {
+        "id": "S35",
+        "von": "E26",
+        "nach": "E30",
+        "art": "information",
+        "medium": "Messdaten",
+        "absatz_ids": [
+          "P14"
+        ]
+      },
+      {
+        "id": "S36",
+        "von": "E34",
+        "nach": "E32",
+        "art": "information",
+        "medium": "Positionsdaten",
+        "absatz_ids": [
+          "P17"
+        ]
+      },
+      {
+        "id": "S37",
+        "von": "E32",
+        "nach": "E44",
+        "art": "information",
+        "medium": "Ausrichtbefehl",
+        "absatz_ids": [
+          "P23"
+        ]
+      },
+      {
+        "id": "S38",
+        "von": "E52",
+        "nach": "E46",
+        "art": "hydraulisch",
+        "medium": "Druckausgleich",
+        "absatz_ids": [
+          "P26"
+        ]
+      }
+    ],
+    "entfallene_kategorien": [
+      {
+        "kategorie": "lenkung",
+        "grund": "Kein eigenes Lenksystem: Richtungsänderung durch Verteilung der Thruster-Schübe."
+      },
+      {
+        "kategorie": "bremse",
+        "grund": "Kein eigenes Bremssystem: Verzögerung durch Gegenschub der Thruster und Strömungswiderstand."
+      }
+    ]
+  },
+  "offene_punkte": [
+    "Glossarvorschlag: Funktion „Tether führen“ (Ausgeben, Einholen und Spulen des Tethers; keine gelistete Funktion deckt dies fahrzeugartspezifisch ab).",
+    "Glossarvorschlag: Funktion „Druck ausgleichen“ (Druckkompensation ölgefüllter Gehäuse; keine gelistete Funktion passt).",
+    "Recherchebedarf: ROV mit Pufferbatterie oder hybrider Energieversorgung (Suchbegriff „tethered ROV onboard battery hybrid“); Energie speichern ist im generischen Modell nicht abgebildet.",
+    "Recherchebedarf: bodengehende Bauformen (Trencher, Crawler) und ein mögliches Fahrwerk (Suchbegriff „trenching ROV tracks crawler architecture“).",
+    "Recherchebedarf: Bordsteuerrechner, Tiefen-/Kurshaltung und Leckageüberwachung (Fachliteratur, z. B. „The ROV Manual“, Suchbegriff „ROV control system depth heading hold leak detection“).",
+    "Recherchebedarf: Aufbau und Anordnung der Thruster je Klasse (Suchbegriff „ROV thruster configuration vectored“), Navigationssensorik (DVL, USBL) im Detail."
+  ]
+}
