@@ -425,8 +425,26 @@ def pruefe_artikel(aid, a, d, inv, glossar, schema, alle, m):
     per = " ".join(p.get("text", "") for s in abschnitte if s.get("abschnittstyp") == "perspektiven"
                    for p in s["absaetze"]).lower()
     if a.get("artikeltyp") == "blatt":
+        def genannt(name):
+            # wörtlich oder gebeugt: jedes Wort des Funktionsnamens mit seinem Stamm (vier Buchstaben)
+            if name.lower() in per:
+                return True
+            stems = []
+            for w in WORT.findall(name):
+                w = w.lower()
+                if len(w) < 3 or w in ("und", "oder"):
+                    continue
+                for vor in ("zurück", "fort", "aus", "auf", "ein", "ab", "an", "zu"):
+                    # trennbares Verb: „leuchten … aus“, „geben … ab“
+                    if w.endswith("en") and w.startswith(vor) and len(w) - len(vor) >= 4:
+                        stems += [vor, w[len(vor):][:4]]
+                        break
+                else:
+                    stems.append(w[:4])
+            return bool(stems) and all(re.search(r"\b" + re.escape(st), per) for st in stems)
+
         for f in mo.get("funktionen", []):
-            if f.get("name", "").lower() not in per:
+            if not genannt(f.get("name", "")):
                 m.W(aid, f"{f.get('id')} „{f.get('name')}“ fehlt im Abschnitt Perspektiven (Regel 10)")
     pruefe_erweiterung(aid, a, mo, E, hs, hs_von, P, m)
     pruefe_offene_punkte(aid, a, neu, m)
