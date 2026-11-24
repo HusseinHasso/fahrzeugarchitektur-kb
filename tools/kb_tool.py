@@ -27,6 +27,11 @@ KATEGORIEN = [
 ]
 STATUS = ["offen", "in_arbeit", "zu_pruefen", "geprueft"]
 WORT = re.compile(r"\w+", re.UNICODE)
+FORMELN = re.compile(r"\b(CO2|H2O|H2|O2|N2O|NO2|CH4|SO2)\b")  # chemische Formeln sind keine Zahlenwerte (Regel 7)
+
+
+def hat_ziffer(text):
+    return bool(re.search(r"\d", FORMELN.sub("", text)))
 NORMKUERZEL = re.compile(r"\b(ISO|DIN|EN|IEC|SAE|ECE|UNECE|VDI|DNV|IMCA|StVZO|UN-R|UN R)\b")
 
 
@@ -212,7 +217,7 @@ def pruefe_artikel(aid, a, d, inv, glossar, schema, alle, m):
                         m.F(aid, f"{p.get('absatz_id')}: Prämisse {pr} existiert nicht")
         if b != "belegt":
             t = p.get("text", "")
-            if re.search(r"\d", t) or NORMKUERZEL.search(t):
+            if hat_ziffer(t) or NORMKUERZEL.search(t):
                 m.W(aid, f"{p.get('absatz_id')}: Ziffern oder Normkürzel in nicht belegtem Absatz (Regel 7)")
         if a.get("artikeltyp") == "blatt" and p.get("herangezogene_artikel_ids"):
             m.F(aid, f"{p.get('absatz_id')}: herangezogene_artikel_ids bei Blattartikel nicht leer")
@@ -486,7 +491,7 @@ def pruefe_erweiterung(aid, a, mo, E, hs, hs_von, P, m):
         if not andere:
             m.H(aid, f"{v.get('id')} „{v.get('bezeichnung')}“: keine Auswirkung auf ein anderes Hauptsystem")
         for t in v.get("alternativen", []) + v.get("auswahlkriterien", []):
-            if re.search(r"\d", t):
+            if hat_ziffer(t):
                 m.W(aid, f"{v.get('id')}: Ziffern in Alternativen oder Auswahlkriterien (Regel 7)")
                 break
     frage_hs = collections.Counter()
@@ -503,7 +508,7 @@ def pruefe_erweiterung(aid, a, mo, E, hs, hs_von, P, m):
             frage_v[x] += 1
         if not k.get("frage", "").rstrip().endswith("?"):
             m.W(aid, f"{k.get('id')}: Klärungsfrage endet nicht mit Fragezeichen")
-        if re.search(r"\d", k.get("frage", "")) or NORMKUERZEL.search(k.get("frage", "")):
+        if hat_ziffer(k.get("frage", "")) or NORMKUERZEL.search(k.get("frage", "")):
             m.W(aid, f"{k.get('id')}: Ziffern oder Normkürzel in der Klärungsfrage (Regel 7)")
     anf_hs = collections.Counter()
     for r in mo.get("anforderungsthemen", []):
@@ -513,7 +518,7 @@ def pruefe_erweiterung(aid, a, mo, E, hs, hs_von, P, m):
         for x in {hs_von(x) for x in r.get("element_ids", [])}:
             anf_hs[x] += 1
         frei = " ".join([r.get("thema", "")] + r.get("kenngroessen", []))
-        if re.search(r"\d", frei) or NORMKUERZEL.search(frei):
+        if hat_ziffer(frei) or NORMKUERZEL.search(frei):
             m.W(aid, f"{r.get('id')}: Ziffern oder Normkürzel in Thema oder Kenngrößen; Regelwerke nur unter regelwerke mit Beleg (Regel 7)")
     if a.get("artikeltyp") != "blatt":
         if len(V) < 2:
