@@ -217,4 +217,4 @@ in `aenderungen.json`. Nur der Orchestrator setzt diese beiden Stufen. **[belegt
   „Druck ausgleichen“, „Nebenaggregate antreiben“.
 - **Mindestlänge der Hauptsystem-Abschnitte** (Festlegung des Auftraggebers, 2026-11-24): 80 Wörter sind ein Richtwert
   für die Mindestlänge, keine exakte Grenze. `validate` meldet eine Unterschreitung nur als HINWEIS, sie löst keine
-  Korrekturrunde aus. Die Obergrenze je Hauptsystem-Abschnitt liegt bei 800 Wörtern (WARNUNG).
+  Korrekturrunde aus. Die Obergrenze je Hauptsystem-Abschnitt liegt bei 300 Wörtern (WARNUNG).
