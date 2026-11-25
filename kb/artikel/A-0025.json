@@ -4,7 +4,7 @@
   "artikeltyp": "blatt",
   "titel": "Polizeifahrzeug",
   "betrachtungsumfang": "Generische Referenzarchitektur des Polizeifahrzeugs als Einsatzfahrzeug der Polizei auf Basis von Personenkraftwagen (Limousine, Kombi), SUV und Kleinbussen, uniformiert oder zivil ausgestaltet, mit Polizeiausrüstung aus Sondersignal- und Anhaltesignalanlage, Einsatzkommunikation, Einsatzdokumentation und Ausrüstungsausbau, einschließlich der Varianten für Personen- und Diensthundtransport und mit Schutzausstattung. Antriebsarten: Verbrennungsmotor mit Kraftstoffanlage, Vollhybrid ohne externe Lademöglichkeit (Traktionsbatterie und Traktionsmaschine) sowie batterieelektrischer Antrieb. Ausgeschlossen sind Plug-in-Hybride, Brennstoffzellen- und Gasantriebe, Polizeimotorräder, gepanzerte Sonderwagen, Wasserwerfer und andere Lkw-basierte Einsatzfahrzeuge sowie Luft- und Wasserfahrzeuge der Polizei. Rechtliche Vorgaben sind für Deutschland belegt, Beschaffungs- und Prüfpraxis ergänzend für die USA (Michigan State Police).",
-  "status": "in_arbeit",
+  "status": "geprueft",
   "quellenzugriff": "ja",
   "kindartikel_ids": [],
   "quellen": [
@@ -788,195 +788,1929 @@
   ],
   "modell": {
     "elemente": [
-      {"id": "E1", "name": "Polizeifahrzeug", "typ": "gesamtsystem", "eltern_id": null, "absatz_ids": ["P1", "P3", "P26"]},
-      {"id": "E2", "name": "Fahrzeugstruktur und Fahrwerk", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P4", "P5", "P31"], "kategorie": "struktur_fahrwerk"},
-      {"id": "E3", "name": "Karosserie", "typ": "subsystem", "eltern_id": "E2", "absatz_ids": ["P4"]},
-      {"id": "E4", "name": "Rohbau", "typ": "komponente", "eltern_id": "E3", "absatz_ids": ["P4"]},
-      {"id": "E5", "name": "Türen", "typ": "komponente", "eltern_id": "E3", "absatz_ids": ["P4", "P5"]},
-      {"id": "E6", "name": "Polizeikennzeichnung", "typ": "komponente", "eltern_id": "E3", "absatz_ids": ["P4", "P31"]},
-      {"id": "E7", "name": "Schubbügel", "typ": "komponente", "eltern_id": "E3", "absatz_ids": ["P4", "P5"]},
-      {"id": "E8", "name": "Ballistische Schutzpaneele", "typ": "komponente", "eltern_id": "E3", "absatz_ids": ["P4", "P5"]},
-      {"id": "E9", "name": "Fahrwerk", "typ": "subsystem", "eltern_id": "E2", "absatz_ids": ["P4"]},
-      {"id": "E10", "name": "Achsen", "typ": "komponente", "eltern_id": "E9", "absatz_ids": ["P4"]},
-      {"id": "E11", "name": "Federung und Dämpfung", "typ": "komponente", "eltern_id": "E9", "absatz_ids": ["P4", "P5"]},
-      {"id": "E12", "name": "Räder und Reifen", "typ": "komponente", "eltern_id": "E9", "absatz_ids": ["P4"]},
-      {"id": "E13", "name": "Antriebssystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P6", "P7"], "kategorie": "antrieb"},
-      {"id": "E14", "name": "Antriebseinheit", "typ": "subsystem", "eltern_id": "E13", "absatz_ids": ["P6"]},
-      {"id": "E15", "name": "Verbrennungsmotor", "typ": "komponente", "eltern_id": "E14", "absatz_ids": ["P6"]},
-      {"id": "E16", "name": "Traktionsmaschine", "typ": "komponente", "eltern_id": "E14", "absatz_ids": ["P6"]},
-      {"id": "E17", "name": "Leistungselektronik", "typ": "komponente", "eltern_id": "E14", "absatz_ids": ["P6"]},
-      {"id": "E18", "name": "Kraftübertragung", "typ": "subsystem", "eltern_id": "E13", "absatz_ids": ["P6"]},
-      {"id": "E19", "name": "Getriebe", "typ": "komponente", "eltern_id": "E18", "absatz_ids": ["P6"]},
-      {"id": "E20", "name": "Differenzial", "typ": "komponente", "eltern_id": "E18", "absatz_ids": ["P6"]},
-      {"id": "E21", "name": "Antriebswellen", "typ": "komponente", "eltern_id": "E18", "absatz_ids": ["P6"]},
-      {"id": "E22", "name": "Abgasanlage", "typ": "komponente", "eltern_id": "E13", "absatz_ids": ["P6"]},
-      {"id": "E23", "name": "Energieversorgungssystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P8", "P9"], "kategorie": "energieversorgung"},
-      {"id": "E24", "name": "Kraftstoffanlage", "typ": "subsystem", "eltern_id": "E23", "absatz_ids": ["P8"]},
-      {"id": "E25", "name": "Kraftstofftank", "typ": "komponente", "eltern_id": "E24", "absatz_ids": ["P8"]},
-      {"id": "E26", "name": "Kraftstoffpumpe", "typ": "komponente", "eltern_id": "E24", "absatz_ids": ["P8"]},
-      {"id": "E27", "name": "Hochvolt-Energiespeichersystem", "typ": "subsystem", "eltern_id": "E23", "absatz_ids": ["P8"]},
-      {"id": "E28", "name": "Traktionsbatterie", "typ": "komponente", "eltern_id": "E27", "absatz_ids": ["P8"]},
-      {"id": "E29", "name": "Ladeeinrichtung", "typ": "komponente", "eltern_id": "E27", "absatz_ids": ["P8"]},
-      {"id": "E121", "name": "Hochvoltverteilung", "typ": "komponente", "eltern_id": "E27", "absatz_ids": ["P8"]},
-      {"id": "E30", "name": "Niedervolt-Energieversorgung", "typ": "subsystem", "eltern_id": "E23", "absatz_ids": ["P8"]},
-      {"id": "E31", "name": "Starterbatterie", "typ": "komponente", "eltern_id": "E30", "absatz_ids": ["P8"]},
-      {"id": "E32", "name": "Zusatzbatterie", "typ": "komponente", "eltern_id": "E30", "absatz_ids": ["P8", "P9"]},
-      {"id": "E33", "name": "Generator", "typ": "komponente", "eltern_id": "E30", "absatz_ids": ["P8", "P9"]},
-      {"id": "E34", "name": "Gleichspannungswandler", "typ": "komponente", "eltern_id": "E30", "absatz_ids": ["P8"]},
-      {"id": "E119", "name": "Batterietrennrelais oder Ladewandler", "typ": "komponente", "eltern_id": "E30", "absatz_ids": ["P8"]},
-      {"id": "E35", "name": "Lenksystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P10"], "kategorie": "lenkung"},
-      {"id": "E36", "name": "Lenkbetätigung", "typ": "subsystem", "eltern_id": "E35", "absatz_ids": ["P10"]},
-      {"id": "E37", "name": "Lenkrad", "typ": "komponente", "eltern_id": "E36", "absatz_ids": ["P10"]},
-      {"id": "E38", "name": "Lenksäule", "typ": "komponente", "eltern_id": "E36", "absatz_ids": ["P10"]},
-      {"id": "E39", "name": "Lenkgetriebe", "typ": "komponente", "eltern_id": "E35", "absatz_ids": ["P10"]},
-      {"id": "E40", "name": "Lenkunterstützung", "typ": "komponente", "eltern_id": "E35", "absatz_ids": ["P10"]},
-      {"id": "E41", "name": "Bremssystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P11"], "kategorie": "bremse"},
-      {"id": "E42", "name": "Betriebsbremse", "typ": "subsystem", "eltern_id": "E41", "absatz_ids": ["P11"]},
-      {"id": "E43", "name": "Bremskraftverstärker", "typ": "komponente", "eltern_id": "E42", "absatz_ids": ["P11", "P25"]},
-      {"id": "E44", "name": "Radbremsen", "typ": "komponente", "eltern_id": "E42", "absatz_ids": ["P11"]},
-      {"id": "E45", "name": "Feststellbremse", "typ": "komponente", "eltern_id": "E41", "absatz_ids": ["P11"]},
-      {"id": "E46", "name": "Bremsregelung", "typ": "komponente", "eltern_id": "E41", "absatz_ids": ["P11"]},
-      {"id": "E47", "name": "Fahrgastraum", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P12", "P13"], "kategorie": "bedienraum"},
-      {"id": "E48", "name": "Fahrerplatz", "typ": "subsystem", "eltern_id": "E47", "absatz_ids": ["P12"]},
-      {"id": "E49", "name": "Sitze", "typ": "komponente", "eltern_id": "E48", "absatz_ids": ["P12"]},
-      {"id": "E50", "name": "Bedienelemente", "typ": "komponente", "eltern_id": "E48", "absatz_ids": ["P12"]},
-      {"id": "E51", "name": "Kombiinstrument", "typ": "komponente", "eltern_id": "E48", "absatz_ids": ["P12"]},
-      {"id": "E52", "name": "Signalbedienteil", "typ": "komponente", "eltern_id": "E48", "absatz_ids": ["P12"]},
-      {"id": "E53", "name": "Fondraum", "typ": "subsystem", "eltern_id": "E47", "absatz_ids": ["P12", "P13"]},
-      {"id": "E54", "name": "Rücksitzbank", "typ": "komponente", "eltern_id": "E53", "absatz_ids": ["P12", "P13"]},
-      {"id": "E55", "name": "Rückhaltesystem", "typ": "komponente", "eltern_id": "E53", "absatz_ids": ["P12"]},
-      {"id": "E56", "name": "Trennwand", "typ": "komponente", "eltern_id": "E53", "absatz_ids": ["P12", "P13"]},
-      {"id": "E57", "name": "Laderaum und Anhängevorrichtung", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P14"], "kategorie": "aufbau_nutzlast"},
-      {"id": "E58", "name": "Laderaum", "typ": "subsystem", "eltern_id": "E57", "absatz_ids": ["P14"]},
-      {"id": "E59", "name": "Ausrüstungsfächer", "typ": "komponente", "eltern_id": "E58", "absatz_ids": ["P14"]},
-      {"id": "E60", "name": "Diensthundebox", "typ": "komponente", "eltern_id": "E58", "absatz_ids": ["P14"]},
-      {"id": "E61", "name": "Anhängevorrichtung", "typ": "komponente", "eltern_id": "E57", "absatz_ids": ["P14"]},
-      {"id": "E62", "name": "Elektrik und Elektronik", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P15", "P16"], "kategorie": "elektrik_elektronik"},
-      {"id": "E63", "name": "Niedervolt-Bordnetz", "typ": "subsystem", "eltern_id": "E62", "absatz_ids": ["P15"]},
-      {"id": "E64", "name": "Stromverteiler", "typ": "komponente", "eltern_id": "E63", "absatz_ids": ["P15"]},
-      {"id": "E65", "name": "Sicherungen", "typ": "komponente", "eltern_id": "E63", "absatz_ids": ["P15"]},
-      {"id": "E66", "name": "Leitungssatz", "typ": "komponente", "eltern_id": "E63", "absatz_ids": ["P15", "P16"]},
-      {"id": "E67", "name": "Fahrzeugbus", "typ": "komponente", "eltern_id": "E62", "absatz_ids": ["P15"]},
-      {"id": "E68", "name": "Gateway", "typ": "komponente", "eltern_id": "E62", "absatz_ids": ["P15", "P16"]},
-      {"id": "E69", "name": "Steuergeräte", "typ": "komponente", "eltern_id": "E62", "absatz_ids": ["P15"]},
-      {"id": "E70", "name": "Fahrzeugsteuerung und Information", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P17", "P18", "P19"], "kategorie": "steuerung_information"},
-      {"id": "E71", "name": "Einsatzkommunikation", "typ": "subsystem", "eltern_id": "E70", "absatz_ids": ["P19"]},
-      {"id": "E72", "name": "Fahrzeugfunkgerät", "typ": "komponente", "eltern_id": "E71", "absatz_ids": ["P17", "P19"]},
-      {"id": "E73", "name": "Funkantennen", "typ": "komponente", "eltern_id": "E71", "absatz_ids": ["P19"]},
-      {"id": "E74", "name": "Telematikeinheit", "typ": "komponente", "eltern_id": "E71", "absatz_ids": ["P19"]},
-      {"id": "E75", "name": "Einsatzdokumentation", "typ": "subsystem", "eltern_id": "E70", "absatz_ids": ["P19"]},
-      {"id": "E76", "name": "Einsatzrechner", "typ": "komponente", "eltern_id": "E75", "absatz_ids": ["P18", "P19"]},
-      {"id": "E77", "name": "Videoaufzeichnung", "typ": "komponente", "eltern_id": "E75", "absatz_ids": ["P18", "P19"]},
-      {"id": "E78", "name": "Kennzeichenerkennung", "typ": "komponente", "eltern_id": "E75", "absatz_ids": ["P18", "P19"]},
-      {"id": "E79", "name": "Geschwindigkeitsmessanlage", "typ": "komponente", "eltern_id": "E75", "absatz_ids": ["P18", "P19"]},
-      {"id": "E80", "name": "Navigation", "typ": "komponente", "eltern_id": "E70", "absatz_ids": ["P19"]},
-      {"id": "E81", "name": "Fahrzeugmanagement", "typ": "komponente", "eltern_id": "E70", "absatz_ids": ["P19"]},
-      {"id": "E82", "name": "Diagnose", "typ": "komponente", "eltern_id": "E70", "absatz_ids": ["P19"]},
-      {"id": "E83", "name": "Fahrerassistenz und Sicherheit", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P20"], "kategorie": "assistenz_sicherheit"},
-      {"id": "E84", "name": "Umfeldsensorik", "typ": "subsystem", "eltern_id": "E83", "absatz_ids": ["P20"]},
-      {"id": "E85", "name": "Rundumsichtkamera", "typ": "komponente", "eltern_id": "E84", "absatz_ids": ["P20"]},
-      {"id": "E86", "name": "Radarsensor", "typ": "komponente", "eltern_id": "E84", "absatz_ids": ["P20"]},
-      {"id": "E120", "name": "Frontkamera", "typ": "komponente", "eltern_id": "E84", "absatz_ids": ["P20"]},
-      {"id": "E87", "name": "Notbremsassistent", "typ": "komponente", "eltern_id": "E83", "absatz_ids": ["P20"]},
-      {"id": "E88", "name": "Annäherungswarnung", "typ": "komponente", "eltern_id": "E83", "absatz_ids": ["P20"]},
-      {"id": "E89", "name": "Insassenschutzsteuergerät", "typ": "komponente", "eltern_id": "E83", "absatz_ids": ["P20"]},
-      {"id": "E90", "name": "Beleuchtung und Sicht", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P21", "P22", "P23", "P32"], "kategorie": "beleuchtung_sicht"},
-      {"id": "E91", "name": "Sondersignalanlage", "typ": "subsystem", "eltern_id": "E90", "absatz_ids": ["P23", "P32"]},
-      {"id": "E92", "name": "Warnleuchten für blaues Blinklicht", "typ": "komponente", "eltern_id": "E91", "absatz_ids": ["P21", "P23"]},
-      {"id": "E93", "name": "Heckwarnsystem", "typ": "komponente", "eltern_id": "E91", "absatz_ids": ["P21", "P23"]},
-      {"id": "E94", "name": "Einsatzhorn", "typ": "komponente", "eltern_id": "E91", "absatz_ids": ["P22", "P23"]},
-      {"id": "E95", "name": "Signalsteuergerät", "typ": "komponente", "eltern_id": "E91", "absatz_ids": ["P23"]},
-      {"id": "E96", "name": "Anhaltesignalanlage", "typ": "subsystem", "eltern_id": "E90", "absatz_ids": ["P23"]},
-      {"id": "E97", "name": "Anhaltesignal", "typ": "komponente", "eltern_id": "E96", "absatz_ids": ["P21", "P23"]},
-      {"id": "E98", "name": "Signalgeber für Lichtschrift", "typ": "komponente", "eltern_id": "E96", "absatz_ids": ["P21", "P23"]},
-      {"id": "E99", "name": "Anhaltehorn", "typ": "komponente", "eltern_id": "E96", "absatz_ids": ["P22", "P23"]},
-      {"id": "E100", "name": "Fahrzeugbeleuchtung", "typ": "subsystem", "eltern_id": "E90", "absatz_ids": ["P23"]},
-      {"id": "E101", "name": "Scheinwerfer", "typ": "komponente", "eltern_id": "E100", "absatz_ids": ["P23"]},
-      {"id": "E102", "name": "Leuchten", "typ": "komponente", "eltern_id": "E100", "absatz_ids": ["P23"]},
-      {"id": "E103", "name": "Suchscheinwerfer", "typ": "komponente", "eltern_id": "E100", "absatz_ids": ["P21", "P23"]},
-      {"id": "E104", "name": "Sichtsysteme", "typ": "subsystem", "eltern_id": "E90", "absatz_ids": ["P23"]},
-      {"id": "E105", "name": "Scheibenwischer", "typ": "komponente", "eltern_id": "E104", "absatz_ids": ["P23"]},
-      {"id": "E106", "name": "Außenspiegel", "typ": "komponente", "eltern_id": "E104", "absatz_ids": ["P23"]},
-      {"id": "E107", "name": "Rückfahrkamera", "typ": "komponente", "eltern_id": "E104", "absatz_ids": ["P23"]},
-      {"id": "E108", "name": "Thermomanagement", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P24"], "kategorie": "thermomanagement"},
-      {"id": "E109", "name": "Kühlkreislauf", "typ": "komponente", "eltern_id": "E108", "absatz_ids": ["P24"]},
-      {"id": "E110", "name": "Heiz- und Klimaanlage", "typ": "subsystem", "eltern_id": "E108", "absatz_ids": ["P24"]},
-      {"id": "E111", "name": "Klimakompressor", "typ": "komponente", "eltern_id": "E110", "absatz_ids": ["P24"]},
-      {"id": "E112", "name": "Innenraumheizung", "typ": "komponente", "eltern_id": "E110", "absatz_ids": ["P24"]},
-      {"id": "E113", "name": "Fondklimaanlage", "typ": "komponente", "eltern_id": "E110", "absatz_ids": ["P24"]},
-      {"id": "E114", "name": "Batterietemperierung", "typ": "komponente", "eltern_id": "E108", "absatz_ids": ["P24"]},
-      {"id": "E115", "name": "Neben- und Versorgungssysteme", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P25"], "kategorie": "nebensysteme"},
-      {"id": "E116", "name": "Nebenaggregatetrieb", "typ": "komponente", "eltern_id": "E115", "absatz_ids": ["P25"]},
-      {"id": "E117", "name": "Unterdruckpumpe", "typ": "komponente", "eltern_id": "E115", "absatz_ids": ["P25"]},
-      {"id": "E118", "name": "Fremdeinspeisung", "typ": "komponente", "eltern_id": "E115", "absatz_ids": ["P25"]}
+      {
+        "id": "E1",
+        "name": "Polizeifahrzeug",
+        "typ": "gesamtsystem",
+        "eltern_id": null,
+        "absatz_ids": [
+          "P1",
+          "P3",
+          "P26"
+        ]
+      },
+      {
+        "id": "E2",
+        "name": "Fahrzeugstruktur und Fahrwerk",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P5",
+          "P31"
+        ],
+        "kategorie": "struktur_fahrwerk"
+      },
+      {
+        "id": "E3",
+        "name": "Karosserie",
+        "typ": "subsystem",
+        "eltern_id": "E2",
+        "absatz_ids": [
+          "P4"
+        ]
+      },
+      {
+        "id": "E4",
+        "name": "Rohbau",
+        "typ": "komponente",
+        "eltern_id": "E3",
+        "absatz_ids": [
+          "P4"
+        ]
+      },
+      {
+        "id": "E5",
+        "name": "Türen",
+        "typ": "komponente",
+        "eltern_id": "E3",
+        "absatz_ids": [
+          "P4",
+          "P5"
+        ]
+      },
+      {
+        "id": "E6",
+        "name": "Polizeikennzeichnung",
+        "typ": "komponente",
+        "eltern_id": "E3",
+        "absatz_ids": [
+          "P4",
+          "P31"
+        ]
+      },
+      {
+        "id": "E7",
+        "name": "Schubbügel",
+        "typ": "komponente",
+        "eltern_id": "E3",
+        "absatz_ids": [
+          "P4",
+          "P5"
+        ]
+      },
+      {
+        "id": "E8",
+        "name": "Ballistische Schutzpaneele",
+        "typ": "komponente",
+        "eltern_id": "E3",
+        "absatz_ids": [
+          "P4",
+          "P5"
+        ]
+      },
+      {
+        "id": "E9",
+        "name": "Fahrwerk",
+        "typ": "subsystem",
+        "eltern_id": "E2",
+        "absatz_ids": [
+          "P4"
+        ]
+      },
+      {
+        "id": "E10",
+        "name": "Achsen",
+        "typ": "komponente",
+        "eltern_id": "E9",
+        "absatz_ids": [
+          "P4"
+        ]
+      },
+      {
+        "id": "E11",
+        "name": "Federung und Dämpfung",
+        "typ": "komponente",
+        "eltern_id": "E9",
+        "absatz_ids": [
+          "P4",
+          "P5"
+        ]
+      },
+      {
+        "id": "E12",
+        "name": "Räder und Reifen",
+        "typ": "komponente",
+        "eltern_id": "E9",
+        "absatz_ids": [
+          "P4"
+        ]
+      },
+      {
+        "id": "E13",
+        "name": "Antriebssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P6",
+          "P7"
+        ],
+        "kategorie": "antrieb"
+      },
+      {
+        "id": "E14",
+        "name": "Antriebseinheit",
+        "typ": "subsystem",
+        "eltern_id": "E13",
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "E15",
+        "name": "Verbrennungsmotor",
+        "typ": "komponente",
+        "eltern_id": "E14",
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "E16",
+        "name": "Traktionsmaschine",
+        "typ": "komponente",
+        "eltern_id": "E14",
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "E17",
+        "name": "Leistungselektronik",
+        "typ": "komponente",
+        "eltern_id": "E14",
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "E18",
+        "name": "Kraftübertragung",
+        "typ": "subsystem",
+        "eltern_id": "E13",
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "E19",
+        "name": "Getriebe",
+        "typ": "komponente",
+        "eltern_id": "E18",
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "E20",
+        "name": "Differenzial",
+        "typ": "komponente",
+        "eltern_id": "E18",
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "E21",
+        "name": "Antriebswellen",
+        "typ": "komponente",
+        "eltern_id": "E18",
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "E22",
+        "name": "Abgasanlage",
+        "typ": "komponente",
+        "eltern_id": "E13",
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "E23",
+        "name": "Energieversorgungssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P8",
+          "P9"
+        ],
+        "kategorie": "energieversorgung"
+      },
+      {
+        "id": "E24",
+        "name": "Kraftstoffanlage",
+        "typ": "subsystem",
+        "eltern_id": "E23",
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "E25",
+        "name": "Kraftstofftank",
+        "typ": "komponente",
+        "eltern_id": "E24",
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "E26",
+        "name": "Kraftstoffpumpe",
+        "typ": "komponente",
+        "eltern_id": "E24",
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "E27",
+        "name": "Hochvolt-Energiespeichersystem",
+        "typ": "subsystem",
+        "eltern_id": "E23",
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "E28",
+        "name": "Traktionsbatterie",
+        "typ": "komponente",
+        "eltern_id": "E27",
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "E29",
+        "name": "Ladeeinrichtung",
+        "typ": "komponente",
+        "eltern_id": "E27",
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "E121",
+        "name": "Hochvoltverteilung",
+        "typ": "komponente",
+        "eltern_id": "E27",
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "E30",
+        "name": "Niedervolt-Energieversorgung",
+        "typ": "subsystem",
+        "eltern_id": "E23",
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "E31",
+        "name": "Starterbatterie",
+        "typ": "komponente",
+        "eltern_id": "E30",
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "E32",
+        "name": "Zusatzbatterie",
+        "typ": "komponente",
+        "eltern_id": "E30",
+        "absatz_ids": [
+          "P8",
+          "P9"
+        ]
+      },
+      {
+        "id": "E33",
+        "name": "Generator",
+        "typ": "komponente",
+        "eltern_id": "E30",
+        "absatz_ids": [
+          "P8",
+          "P9"
+        ]
+      },
+      {
+        "id": "E34",
+        "name": "Gleichspannungswandler",
+        "typ": "komponente",
+        "eltern_id": "E30",
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "E119",
+        "name": "Batterietrennrelais oder Ladewandler",
+        "typ": "komponente",
+        "eltern_id": "E30",
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "E35",
+        "name": "Lenksystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P10"
+        ],
+        "kategorie": "lenkung"
+      },
+      {
+        "id": "E36",
+        "name": "Lenkbetätigung",
+        "typ": "subsystem",
+        "eltern_id": "E35",
+        "absatz_ids": [
+          "P10"
+        ]
+      },
+      {
+        "id": "E37",
+        "name": "Lenkrad",
+        "typ": "komponente",
+        "eltern_id": "E36",
+        "absatz_ids": [
+          "P10"
+        ]
+      },
+      {
+        "id": "E38",
+        "name": "Lenksäule",
+        "typ": "komponente",
+        "eltern_id": "E36",
+        "absatz_ids": [
+          "P10"
+        ]
+      },
+      {
+        "id": "E39",
+        "name": "Lenkgetriebe",
+        "typ": "komponente",
+        "eltern_id": "E35",
+        "absatz_ids": [
+          "P10"
+        ]
+      },
+      {
+        "id": "E40",
+        "name": "Lenkunterstützung",
+        "typ": "komponente",
+        "eltern_id": "E35",
+        "absatz_ids": [
+          "P10"
+        ]
+      },
+      {
+        "id": "E41",
+        "name": "Bremssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P11"
+        ],
+        "kategorie": "bremse"
+      },
+      {
+        "id": "E42",
+        "name": "Betriebsbremse",
+        "typ": "subsystem",
+        "eltern_id": "E41",
+        "absatz_ids": [
+          "P11"
+        ]
+      },
+      {
+        "id": "E43",
+        "name": "Bremskraftverstärker",
+        "typ": "komponente",
+        "eltern_id": "E42",
+        "absatz_ids": [
+          "P11",
+          "P25"
+        ]
+      },
+      {
+        "id": "E44",
+        "name": "Radbremsen",
+        "typ": "komponente",
+        "eltern_id": "E42",
+        "absatz_ids": [
+          "P11"
+        ]
+      },
+      {
+        "id": "E45",
+        "name": "Feststellbremse",
+        "typ": "komponente",
+        "eltern_id": "E41",
+        "absatz_ids": [
+          "P11"
+        ]
+      },
+      {
+        "id": "E46",
+        "name": "Bremsregelung",
+        "typ": "komponente",
+        "eltern_id": "E41",
+        "absatz_ids": [
+          "P11"
+        ]
+      },
+      {
+        "id": "E47",
+        "name": "Fahrgastraum",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P12",
+          "P13"
+        ],
+        "kategorie": "bedienraum"
+      },
+      {
+        "id": "E48",
+        "name": "Fahrerplatz",
+        "typ": "subsystem",
+        "eltern_id": "E47",
+        "absatz_ids": [
+          "P12"
+        ]
+      },
+      {
+        "id": "E49",
+        "name": "Sitze",
+        "typ": "komponente",
+        "eltern_id": "E48",
+        "absatz_ids": [
+          "P12"
+        ]
+      },
+      {
+        "id": "E50",
+        "name": "Bedienelemente",
+        "typ": "komponente",
+        "eltern_id": "E48",
+        "absatz_ids": [
+          "P12"
+        ]
+      },
+      {
+        "id": "E51",
+        "name": "Kombiinstrument",
+        "typ": "komponente",
+        "eltern_id": "E48",
+        "absatz_ids": [
+          "P12"
+        ]
+      },
+      {
+        "id": "E52",
+        "name": "Signalbedienteil",
+        "typ": "komponente",
+        "eltern_id": "E48",
+        "absatz_ids": [
+          "P12"
+        ]
+      },
+      {
+        "id": "E53",
+        "name": "Fondraum",
+        "typ": "subsystem",
+        "eltern_id": "E47",
+        "absatz_ids": [
+          "P12",
+          "P13"
+        ]
+      },
+      {
+        "id": "E54",
+        "name": "Rücksitzbank",
+        "typ": "komponente",
+        "eltern_id": "E53",
+        "absatz_ids": [
+          "P12",
+          "P13"
+        ]
+      },
+      {
+        "id": "E55",
+        "name": "Rückhaltesystem",
+        "typ": "komponente",
+        "eltern_id": "E53",
+        "absatz_ids": [
+          "P12"
+        ]
+      },
+      {
+        "id": "E56",
+        "name": "Trennwand",
+        "typ": "komponente",
+        "eltern_id": "E53",
+        "absatz_ids": [
+          "P12",
+          "P13"
+        ]
+      },
+      {
+        "id": "E57",
+        "name": "Laderaum und Anhängevorrichtung",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P14"
+        ],
+        "kategorie": "aufbau_nutzlast"
+      },
+      {
+        "id": "E58",
+        "name": "Laderaum",
+        "typ": "subsystem",
+        "eltern_id": "E57",
+        "absatz_ids": [
+          "P14"
+        ]
+      },
+      {
+        "id": "E59",
+        "name": "Ausrüstungsfächer",
+        "typ": "komponente",
+        "eltern_id": "E58",
+        "absatz_ids": [
+          "P14"
+        ]
+      },
+      {
+        "id": "E60",
+        "name": "Diensthundebox",
+        "typ": "komponente",
+        "eltern_id": "E58",
+        "absatz_ids": [
+          "P14"
+        ]
+      },
+      {
+        "id": "E61",
+        "name": "Anhängevorrichtung",
+        "typ": "komponente",
+        "eltern_id": "E57",
+        "absatz_ids": [
+          "P14"
+        ]
+      },
+      {
+        "id": "E62",
+        "name": "Elektrik und Elektronik",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P15",
+          "P16"
+        ],
+        "kategorie": "elektrik_elektronik"
+      },
+      {
+        "id": "E63",
+        "name": "Niedervolt-Bordnetz",
+        "typ": "subsystem",
+        "eltern_id": "E62",
+        "absatz_ids": [
+          "P15"
+        ]
+      },
+      {
+        "id": "E64",
+        "name": "Stromverteiler",
+        "typ": "komponente",
+        "eltern_id": "E63",
+        "absatz_ids": [
+          "P15"
+        ]
+      },
+      {
+        "id": "E65",
+        "name": "Sicherungen",
+        "typ": "komponente",
+        "eltern_id": "E63",
+        "absatz_ids": [
+          "P15"
+        ]
+      },
+      {
+        "id": "E66",
+        "name": "Leitungssatz",
+        "typ": "komponente",
+        "eltern_id": "E63",
+        "absatz_ids": [
+          "P15",
+          "P16"
+        ]
+      },
+      {
+        "id": "E67",
+        "name": "Fahrzeugbus",
+        "typ": "komponente",
+        "eltern_id": "E62",
+        "absatz_ids": [
+          "P15"
+        ]
+      },
+      {
+        "id": "E68",
+        "name": "Gateway",
+        "typ": "komponente",
+        "eltern_id": "E62",
+        "absatz_ids": [
+          "P15",
+          "P16"
+        ]
+      },
+      {
+        "id": "E69",
+        "name": "Steuergeräte",
+        "typ": "komponente",
+        "eltern_id": "E62",
+        "absatz_ids": [
+          "P15"
+        ]
+      },
+      {
+        "id": "E70",
+        "name": "Fahrzeugsteuerung und Information",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P17",
+          "P18",
+          "P19"
+        ],
+        "kategorie": "steuerung_information"
+      },
+      {
+        "id": "E71",
+        "name": "Einsatzkommunikation",
+        "typ": "subsystem",
+        "eltern_id": "E70",
+        "absatz_ids": [
+          "P19"
+        ]
+      },
+      {
+        "id": "E72",
+        "name": "Fahrzeugfunkgerät",
+        "typ": "komponente",
+        "eltern_id": "E71",
+        "absatz_ids": [
+          "P17",
+          "P19"
+        ]
+      },
+      {
+        "id": "E73",
+        "name": "Funkantennen",
+        "typ": "komponente",
+        "eltern_id": "E71",
+        "absatz_ids": [
+          "P19"
+        ]
+      },
+      {
+        "id": "E74",
+        "name": "Telematikeinheit",
+        "typ": "komponente",
+        "eltern_id": "E71",
+        "absatz_ids": [
+          "P19"
+        ]
+      },
+      {
+        "id": "E75",
+        "name": "Einsatzdokumentation",
+        "typ": "subsystem",
+        "eltern_id": "E70",
+        "absatz_ids": [
+          "P19"
+        ]
+      },
+      {
+        "id": "E76",
+        "name": "Einsatzrechner",
+        "typ": "komponente",
+        "eltern_id": "E75",
+        "absatz_ids": [
+          "P18",
+          "P19"
+        ]
+      },
+      {
+        "id": "E77",
+        "name": "Videoaufzeichnung",
+        "typ": "komponente",
+        "eltern_id": "E75",
+        "absatz_ids": [
+          "P18",
+          "P19"
+        ]
+      },
+      {
+        "id": "E78",
+        "name": "Kennzeichenerkennung",
+        "typ": "komponente",
+        "eltern_id": "E75",
+        "absatz_ids": [
+          "P18",
+          "P19"
+        ]
+      },
+      {
+        "id": "E79",
+        "name": "Geschwindigkeitsmessanlage",
+        "typ": "komponente",
+        "eltern_id": "E75",
+        "absatz_ids": [
+          "P18",
+          "P19"
+        ]
+      },
+      {
+        "id": "E80",
+        "name": "Navigation",
+        "typ": "komponente",
+        "eltern_id": "E70",
+        "absatz_ids": [
+          "P19"
+        ]
+      },
+      {
+        "id": "E81",
+        "name": "Fahrzeugmanagement",
+        "typ": "komponente",
+        "eltern_id": "E70",
+        "absatz_ids": [
+          "P19"
+        ]
+      },
+      {
+        "id": "E82",
+        "name": "Diagnose",
+        "typ": "komponente",
+        "eltern_id": "E70",
+        "absatz_ids": [
+          "P19"
+        ]
+      },
+      {
+        "id": "E83",
+        "name": "Fahrerassistenz und Sicherheit",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P20"
+        ],
+        "kategorie": "assistenz_sicherheit"
+      },
+      {
+        "id": "E84",
+        "name": "Umfeldsensorik",
+        "typ": "subsystem",
+        "eltern_id": "E83",
+        "absatz_ids": [
+          "P20"
+        ]
+      },
+      {
+        "id": "E85",
+        "name": "Rundumsichtkamera",
+        "typ": "komponente",
+        "eltern_id": "E84",
+        "absatz_ids": [
+          "P20"
+        ]
+      },
+      {
+        "id": "E86",
+        "name": "Radarsensor",
+        "typ": "komponente",
+        "eltern_id": "E84",
+        "absatz_ids": [
+          "P20"
+        ]
+      },
+      {
+        "id": "E120",
+        "name": "Frontkamera",
+        "typ": "komponente",
+        "eltern_id": "E84",
+        "absatz_ids": [
+          "P20"
+        ]
+      },
+      {
+        "id": "E87",
+        "name": "Notbremsassistent",
+        "typ": "komponente",
+        "eltern_id": "E83",
+        "absatz_ids": [
+          "P20"
+        ]
+      },
+      {
+        "id": "E88",
+        "name": "Annäherungswarnung",
+        "typ": "komponente",
+        "eltern_id": "E83",
+        "absatz_ids": [
+          "P20"
+        ]
+      },
+      {
+        "id": "E89",
+        "name": "Insassenschutzsteuergerät",
+        "typ": "komponente",
+        "eltern_id": "E83",
+        "absatz_ids": [
+          "P20"
+        ]
+      },
+      {
+        "id": "E90",
+        "name": "Beleuchtung und Sicht",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P21",
+          "P22",
+          "P23",
+          "P32"
+        ],
+        "kategorie": "beleuchtung_sicht"
+      },
+      {
+        "id": "E91",
+        "name": "Sondersignalanlage",
+        "typ": "subsystem",
+        "eltern_id": "E90",
+        "absatz_ids": [
+          "P23",
+          "P32"
+        ]
+      },
+      {
+        "id": "E92",
+        "name": "Warnleuchten für blaues Blinklicht",
+        "typ": "komponente",
+        "eltern_id": "E91",
+        "absatz_ids": [
+          "P21",
+          "P23"
+        ]
+      },
+      {
+        "id": "E93",
+        "name": "Heckwarnsystem",
+        "typ": "komponente",
+        "eltern_id": "E91",
+        "absatz_ids": [
+          "P21",
+          "P23"
+        ]
+      },
+      {
+        "id": "E94",
+        "name": "Einsatzhorn",
+        "typ": "komponente",
+        "eltern_id": "E91",
+        "absatz_ids": [
+          "P22",
+          "P23"
+        ]
+      },
+      {
+        "id": "E95",
+        "name": "Signalsteuergerät",
+        "typ": "komponente",
+        "eltern_id": "E91",
+        "absatz_ids": [
+          "P23"
+        ]
+      },
+      {
+        "id": "E96",
+        "name": "Anhaltesignalanlage",
+        "typ": "subsystem",
+        "eltern_id": "E90",
+        "absatz_ids": [
+          "P23"
+        ]
+      },
+      {
+        "id": "E97",
+        "name": "Anhaltesignal",
+        "typ": "komponente",
+        "eltern_id": "E96",
+        "absatz_ids": [
+          "P21",
+          "P23"
+        ]
+      },
+      {
+        "id": "E98",
+        "name": "Signalgeber für Lichtschrift",
+        "typ": "komponente",
+        "eltern_id": "E96",
+        "absatz_ids": [
+          "P21",
+          "P23"
+        ]
+      },
+      {
+        "id": "E99",
+        "name": "Anhaltehorn",
+        "typ": "komponente",
+        "eltern_id": "E96",
+        "absatz_ids": [
+          "P22",
+          "P23"
+        ]
+      },
+      {
+        "id": "E100",
+        "name": "Fahrzeugbeleuchtung",
+        "typ": "subsystem",
+        "eltern_id": "E90",
+        "absatz_ids": [
+          "P23"
+        ]
+      },
+      {
+        "id": "E101",
+        "name": "Scheinwerfer",
+        "typ": "komponente",
+        "eltern_id": "E100",
+        "absatz_ids": [
+          "P23"
+        ]
+      },
+      {
+        "id": "E102",
+        "name": "Leuchten",
+        "typ": "komponente",
+        "eltern_id": "E100",
+        "absatz_ids": [
+          "P23"
+        ]
+      },
+      {
+        "id": "E103",
+        "name": "Suchscheinwerfer",
+        "typ": "komponente",
+        "eltern_id": "E100",
+        "absatz_ids": [
+          "P21",
+          "P23"
+        ]
+      },
+      {
+        "id": "E104",
+        "name": "Sichtsysteme",
+        "typ": "subsystem",
+        "eltern_id": "E90",
+        "absatz_ids": [
+          "P23"
+        ]
+      },
+      {
+        "id": "E105",
+        "name": "Scheibenwischer",
+        "typ": "komponente",
+        "eltern_id": "E104",
+        "absatz_ids": [
+          "P23"
+        ]
+      },
+      {
+        "id": "E106",
+        "name": "Außenspiegel",
+        "typ": "komponente",
+        "eltern_id": "E104",
+        "absatz_ids": [
+          "P23"
+        ]
+      },
+      {
+        "id": "E107",
+        "name": "Rückfahrkamera",
+        "typ": "komponente",
+        "eltern_id": "E104",
+        "absatz_ids": [
+          "P23"
+        ]
+      },
+      {
+        "id": "E108",
+        "name": "Thermomanagement",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P24"
+        ],
+        "kategorie": "thermomanagement"
+      },
+      {
+        "id": "E109",
+        "name": "Kühlkreislauf",
+        "typ": "komponente",
+        "eltern_id": "E108",
+        "absatz_ids": [
+          "P24"
+        ]
+      },
+      {
+        "id": "E110",
+        "name": "Heiz- und Klimaanlage",
+        "typ": "subsystem",
+        "eltern_id": "E108",
+        "absatz_ids": [
+          "P24"
+        ]
+      },
+      {
+        "id": "E111",
+        "name": "Klimakompressor",
+        "typ": "komponente",
+        "eltern_id": "E110",
+        "absatz_ids": [
+          "P24"
+        ]
+      },
+      {
+        "id": "E112",
+        "name": "Innenraumheizung",
+        "typ": "komponente",
+        "eltern_id": "E110",
+        "absatz_ids": [
+          "P24"
+        ]
+      },
+      {
+        "id": "E113",
+        "name": "Fondklimaanlage",
+        "typ": "komponente",
+        "eltern_id": "E110",
+        "absatz_ids": [
+          "P24"
+        ]
+      },
+      {
+        "id": "E114",
+        "name": "Batterietemperierung",
+        "typ": "komponente",
+        "eltern_id": "E108",
+        "absatz_ids": [
+          "P24"
+        ]
+      },
+      {
+        "id": "E115",
+        "name": "Neben- und Versorgungssysteme",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P25"
+        ],
+        "kategorie": "nebensysteme"
+      },
+      {
+        "id": "E116",
+        "name": "Nebenaggregatetrieb",
+        "typ": "komponente",
+        "eltern_id": "E115",
+        "absatz_ids": [
+          "P25"
+        ]
+      },
+      {
+        "id": "E117",
+        "name": "Unterdruckpumpe",
+        "typ": "komponente",
+        "eltern_id": "E115",
+        "absatz_ids": [
+          "P25"
+        ]
+      },
+      {
+        "id": "E118",
+        "name": "Fremdeinspeisung",
+        "typ": "komponente",
+        "eltern_id": "E115",
+        "absatz_ids": [
+          "P25"
+        ]
+      }
     ],
     "funktionen": [
-      {"id": "F1", "name": "Fahrzeuglasten tragen", "ausgefuehrt_von": ["E3", "E9"], "absatz_ids": ["P4", "P30"]},
-      {"id": "F2", "name": "Antriebsleistung erzeugen", "ausgefuehrt_von": ["E14"], "absatz_ids": ["P6", "P30"]},
-      {"id": "F3", "name": "Drehmoment übertragen", "ausgefuehrt_von": ["E18"], "absatz_ids": ["P6", "P30"]},
-      {"id": "F4", "name": "Fahrzeug fortbewegen", "ausgefuehrt_von": ["E13", "E12"], "absatz_ids": ["P6", "P30"]},
-      {"id": "F5", "name": "Energie speichern", "ausgefuehrt_von": ["E24", "E27", "E30"], "absatz_ids": ["P8", "P30"]},
-      {"id": "F6", "name": "Treibstoff fördern", "ausgefuehrt_von": ["E26"], "absatz_ids": ["P8", "P30"]},
-      {"id": "F7", "name": "Traktionsbatterie laden", "ausgefuehrt_von": ["E29"], "absatz_ids": ["P8", "P30"]},
-      {"id": "F8", "name": "Elektrische Energie verteilen", "ausgefuehrt_von": ["E63", "E121", "E119", "E118"], "absatz_ids": ["P8", "P15", "P25", "P30"]},
-      {"id": "F9", "name": "Arbeitsgeräte versorgen", "ausgefuehrt_von": ["E32", "E64"], "absatz_ids": ["P8", "P9", "P30"]},
-      {"id": "F10", "name": "Fahrzeug lenken", "ausgefuehrt_von": ["E36", "E39", "E40"], "absatz_ids": ["P10", "P30"]},
-      {"id": "F11", "name": "Fahrzeug verzögern", "ausgefuehrt_von": ["E42"], "absatz_ids": ["P11", "P30"]},
-      {"id": "F12", "name": "Bremsenergie zurückgewinnen", "ausgefuehrt_von": ["E16", "E46"], "absatz_ids": ["P11", "P30"]},
-      {"id": "F13", "name": "Fahrzeug festhalten", "ausgefuehrt_von": ["E45"], "absatz_ids": ["P11", "P30"]},
-      {"id": "F14", "name": "Fahrereingaben erfassen", "ausgefuehrt_von": ["E50", "E52", "E37"], "absatz_ids": ["P10", "P12", "P30"]},
-      {"id": "F15", "name": "Fahrerinformationen anzeigen", "ausgefuehrt_von": ["E51", "E76"], "absatz_ids": ["P12", "P19", "P30"]},
-      {"id": "F16", "name": "Insassen schützen", "ausgefuehrt_von": ["E55", "E56", "E8", "E89"], "absatz_ids": ["P4", "P12", "P20", "P30"]},
-      {"id": "F17", "name": "Ladung aufnehmen", "ausgefuehrt_von": ["E58", "E59", "E60"], "absatz_ids": ["P14", "P30"]},
-      {"id": "F18", "name": "Anhänger ziehen", "ausgefuehrt_von": ["E61"], "absatz_ids": ["P14", "P30"]},
-      {"id": "F19", "name": "Daten übertragen", "ausgefuehrt_von": ["E67", "E68", "E72", "E74"], "absatz_ids": ["P15", "P19", "P30"]},
-      {"id": "F20", "name": "Fahrzeugposition bestimmen", "ausgefuehrt_von": ["E80", "E72"], "absatz_ids": ["P17", "P19", "P30"]},
-      {"id": "F21", "name": "Fahrzeugzustand überwachen", "ausgefuehrt_von": ["E81", "E82"], "absatz_ids": ["P19", "P30"]},
-      {"id": "F22", "name": "Einsatzgeschehen aufzeichnen", "ausgefuehrt_von": ["E77", "E78", "E79"], "absatz_ids": ["P18", "P19", "P30"]},
-      {"id": "F23", "name": "Fahrzeugumfeld erfassen", "ausgefuehrt_von": ["E84", "E88"], "absatz_ids": ["P20", "P30"]},
-      {"id": "F24", "name": "Lichtsignale abgeben", "ausgefuehrt_von": ["E91", "E96", "E102"], "absatz_ids": ["P23", "P30"]},
-      {"id": "F25", "name": "Schallsignale abgeben", "ausgefuehrt_von": ["E94", "E99"], "absatz_ids": ["P22", "P23", "P30"]},
-      {"id": "F26", "name": "Fahrzeugumgebung ausleuchten", "ausgefuehrt_von": ["E101", "E103"], "absatz_ids": ["P23", "P30"]},
-      {"id": "F27", "name": "Fahrersicht sicherstellen", "ausgefuehrt_von": ["E104", "E85"], "absatz_ids": ["P20", "P23", "P30"]},
-      {"id": "F28", "name": "Betriebstemperatur regeln", "ausgefuehrt_von": ["E109", "E114"], "absatz_ids": ["P24", "P30"]},
-      {"id": "F29", "name": "Innenraum klimatisieren", "ausgefuehrt_von": ["E110"], "absatz_ids": ["P24", "P30"]},
-      {"id": "F30", "name": "Unterdruck bereitstellen", "ausgefuehrt_von": ["E117"], "absatz_ids": ["P25", "P30"]}
+      {
+        "id": "F1",
+        "name": "Fahrzeuglasten tragen",
+        "ausgefuehrt_von": [
+          "E3",
+          "E9"
+        ],
+        "absatz_ids": [
+          "P4",
+          "P30"
+        ]
+      },
+      {
+        "id": "F2",
+        "name": "Antriebsleistung erzeugen",
+        "ausgefuehrt_von": [
+          "E14"
+        ],
+        "absatz_ids": [
+          "P6",
+          "P30"
+        ]
+      },
+      {
+        "id": "F3",
+        "name": "Drehmoment übertragen",
+        "ausgefuehrt_von": [
+          "E18"
+        ],
+        "absatz_ids": [
+          "P6",
+          "P30"
+        ]
+      },
+      {
+        "id": "F4",
+        "name": "Fahrzeug fortbewegen",
+        "ausgefuehrt_von": [
+          "E13",
+          "E12"
+        ],
+        "absatz_ids": [
+          "P6",
+          "P30"
+        ]
+      },
+      {
+        "id": "F5",
+        "name": "Energie speichern",
+        "ausgefuehrt_von": [
+          "E24",
+          "E27",
+          "E30"
+        ],
+        "absatz_ids": [
+          "P8",
+          "P30"
+        ]
+      },
+      {
+        "id": "F6",
+        "name": "Treibstoff fördern",
+        "ausgefuehrt_von": [
+          "E26"
+        ],
+        "absatz_ids": [
+          "P8",
+          "P30"
+        ]
+      },
+      {
+        "id": "F7",
+        "name": "Traktionsbatterie laden",
+        "ausgefuehrt_von": [
+          "E29"
+        ],
+        "absatz_ids": [
+          "P8",
+          "P30"
+        ]
+      },
+      {
+        "id": "F8",
+        "name": "Elektrische Energie verteilen",
+        "ausgefuehrt_von": [
+          "E63",
+          "E121",
+          "E119",
+          "E118"
+        ],
+        "absatz_ids": [
+          "P8",
+          "P15",
+          "P25",
+          "P30"
+        ]
+      },
+      {
+        "id": "F9",
+        "name": "Arbeitsgeräte versorgen",
+        "ausgefuehrt_von": [
+          "E32",
+          "E64"
+        ],
+        "absatz_ids": [
+          "P8",
+          "P9",
+          "P30"
+        ]
+      },
+      {
+        "id": "F10",
+        "name": "Fahrzeug lenken",
+        "ausgefuehrt_von": [
+          "E36",
+          "E39",
+          "E40"
+        ],
+        "absatz_ids": [
+          "P10",
+          "P30"
+        ]
+      },
+      {
+        "id": "F11",
+        "name": "Fahrzeug verzögern",
+        "ausgefuehrt_von": [
+          "E42"
+        ],
+        "absatz_ids": [
+          "P11",
+          "P30"
+        ]
+      },
+      {
+        "id": "F12",
+        "name": "Bremsenergie zurückgewinnen",
+        "ausgefuehrt_von": [
+          "E16",
+          "E46"
+        ],
+        "absatz_ids": [
+          "P11",
+          "P30"
+        ]
+      },
+      {
+        "id": "F13",
+        "name": "Fahrzeug festhalten",
+        "ausgefuehrt_von": [
+          "E45"
+        ],
+        "absatz_ids": [
+          "P11",
+          "P30"
+        ]
+      },
+      {
+        "id": "F14",
+        "name": "Fahrereingaben erfassen",
+        "ausgefuehrt_von": [
+          "E50",
+          "E52",
+          "E37"
+        ],
+        "absatz_ids": [
+          "P10",
+          "P12",
+          "P30"
+        ]
+      },
+      {
+        "id": "F15",
+        "name": "Fahrerinformationen anzeigen",
+        "ausgefuehrt_von": [
+          "E51",
+          "E76"
+        ],
+        "absatz_ids": [
+          "P12",
+          "P19",
+          "P30"
+        ]
+      },
+      {
+        "id": "F16",
+        "name": "Insassen schützen",
+        "ausgefuehrt_von": [
+          "E55",
+          "E56",
+          "E8",
+          "E89"
+        ],
+        "absatz_ids": [
+          "P4",
+          "P12",
+          "P20",
+          "P30"
+        ]
+      },
+      {
+        "id": "F17",
+        "name": "Ladung aufnehmen",
+        "ausgefuehrt_von": [
+          "E58",
+          "E59",
+          "E60"
+        ],
+        "absatz_ids": [
+          "P14",
+          "P30"
+        ]
+      },
+      {
+        "id": "F18",
+        "name": "Anhänger ziehen",
+        "ausgefuehrt_von": [
+          "E61"
+        ],
+        "absatz_ids": [
+          "P14",
+          "P30"
+        ]
+      },
+      {
+        "id": "F19",
+        "name": "Daten übertragen",
+        "ausgefuehrt_von": [
+          "E67",
+          "E68",
+          "E72",
+          "E74"
+        ],
+        "absatz_ids": [
+          "P15",
+          "P19",
+          "P30"
+        ]
+      },
+      {
+        "id": "F20",
+        "name": "Fahrzeugposition bestimmen",
+        "ausgefuehrt_von": [
+          "E80",
+          "E72"
+        ],
+        "absatz_ids": [
+          "P17",
+          "P19",
+          "P30"
+        ]
+      },
+      {
+        "id": "F21",
+        "name": "Fahrzeugzustand überwachen",
+        "ausgefuehrt_von": [
+          "E81",
+          "E82"
+        ],
+        "absatz_ids": [
+          "P19",
+          "P30"
+        ]
+      },
+      {
+        "id": "F22",
+        "name": "Einsatzgeschehen aufzeichnen",
+        "ausgefuehrt_von": [
+          "E77",
+          "E78",
+          "E79"
+        ],
+        "absatz_ids": [
+          "P18",
+          "P19",
+          "P30"
+        ]
+      },
+      {
+        "id": "F23",
+        "name": "Fahrzeugumfeld erfassen",
+        "ausgefuehrt_von": [
+          "E84",
+          "E88"
+        ],
+        "absatz_ids": [
+          "P20",
+          "P30"
+        ]
+      },
+      {
+        "id": "F24",
+        "name": "Lichtsignale abgeben",
+        "ausgefuehrt_von": [
+          "E91",
+          "E96",
+          "E102"
+        ],
+        "absatz_ids": [
+          "P23",
+          "P30"
+        ]
+      },
+      {
+        "id": "F25",
+        "name": "Schallsignale abgeben",
+        "ausgefuehrt_von": [
+          "E94",
+          "E99"
+        ],
+        "absatz_ids": [
+          "P22",
+          "P23",
+          "P30"
+        ]
+      },
+      {
+        "id": "F26",
+        "name": "Fahrzeugumgebung ausleuchten",
+        "ausgefuehrt_von": [
+          "E101",
+          "E103"
+        ],
+        "absatz_ids": [
+          "P23",
+          "P30"
+        ]
+      },
+      {
+        "id": "F27",
+        "name": "Fahrersicht sicherstellen",
+        "ausgefuehrt_von": [
+          "E104",
+          "E85"
+        ],
+        "absatz_ids": [
+          "P20",
+          "P23",
+          "P30"
+        ]
+      },
+      {
+        "id": "F28",
+        "name": "Betriebstemperatur regeln",
+        "ausgefuehrt_von": [
+          "E109",
+          "E114"
+        ],
+        "absatz_ids": [
+          "P24",
+          "P30"
+        ]
+      },
+      {
+        "id": "F29",
+        "name": "Innenraum klimatisieren",
+        "ausgefuehrt_von": [
+          "E110"
+        ],
+        "absatz_ids": [
+          "P24",
+          "P30"
+        ]
+      },
+      {
+        "id": "F30",
+        "name": "Unterdruck bereitstellen",
+        "ausgefuehrt_von": [
+          "E117"
+        ],
+        "absatz_ids": [
+          "P25",
+          "P30"
+        ]
+      }
     ],
     "fluesse": [
-      {"id": "S1", "von": "E25", "nach": "E15", "art": "stoff", "medium": "Kraftstoff", "absatz_ids": ["P8", "P29"], "schnittstelle": "Kraftstoffzulauf"},
-      {"id": "S2", "von": "E121", "nach": "E17", "art": "elektrisch", "medium": "Hochvolt-Gleichstrom", "absatz_ids": ["P6", "P8", "P29"], "schnittstelle": "Hochvolt-Schnittstelle"},
-      {"id": "S3", "von": "E17", "nach": "E16", "art": "elektrisch", "medium": "Wechselstrom", "absatz_ids": ["P6", "P29"]},
-      {"id": "S4", "von": "E14", "nach": "E18", "art": "mechanisch", "medium": "Drehmoment", "absatz_ids": ["P6", "P29"]},
-      {"id": "S5", "von": "E18", "nach": "E12", "art": "mechanisch", "medium": "Drehmoment", "absatz_ids": ["P6", "P29"], "schnittstelle": "Radantrieb"},
-      {"id": "S6", "von": "E29", "nach": "E28", "art": "elektrisch", "medium": "Ladestrom", "absatz_ids": ["P8", "P29"]},
-      {"id": "S7", "von": "E33", "nach": "E63", "art": "elektrisch", "medium": "Niedervolt-Gleichstrom", "absatz_ids": ["P8", "P29"], "schnittstelle": "Bordnetzeinspeisung"},
-      {"id": "S8", "von": "E34", "nach": "E63", "art": "elektrisch", "medium": "Niedervolt-Gleichstrom", "absatz_ids": ["P8", "P29"], "schnittstelle": "Bordnetzeinspeisung"},
-      {"id": "S9", "von": "E32", "nach": "E64", "art": "elektrisch", "medium": "Niedervolt-Gleichstrom", "absatz_ids": ["P8", "P15", "P29"], "schnittstelle": "Ausrüstungsanschluss"},
-      {"id": "S10", "von": "E64", "nach": "E95", "art": "elektrisch", "medium": "Niedervolt-Gleichstrom", "absatz_ids": ["P15", "P29"], "schnittstelle": "Ausrüstungsanschluss"},
-      {"id": "S11", "von": "E64", "nach": "E72", "art": "elektrisch", "medium": "Niedervolt-Gleichstrom", "absatz_ids": ["P15", "P29"], "schnittstelle": "Ausrüstungsanschluss"},
-      {"id": "S12", "von": "E95", "nach": "E92", "art": "elektrisch", "medium": "Ansteuerstrom", "absatz_ids": ["P23", "P29"]},
-      {"id": "S13", "von": "E95", "nach": "E94", "art": "elektrisch", "medium": "Tonsignal", "absatz_ids": ["P23", "P29"]},
-      {"id": "S14", "von": "E52", "nach": "E95", "art": "information", "medium": "Schaltbefehl Sondersignal", "absatz_ids": ["P12", "P29"], "schnittstelle": "Bedienschnittstelle Signalanlage"},
-      {"id": "S15", "von": "E37", "nach": "E95", "art": "information", "medium": "Schaltbefehl Lenkradtasten", "absatz_ids": ["P10", "P29"], "schnittstelle": "Lenkradtastenanschluss"},
-      {"id": "S16", "von": "E68", "nach": "E76", "art": "information", "medium": "Fahrzeugsignale", "absatz_ids": ["P15", "P19", "P29"], "schnittstelle": "Fahrzeugdatenschnittstelle"},
-      {"id": "S17", "von": "E72", "nach": "E76", "art": "information", "medium": "Status- und Auftragsdaten", "absatz_ids": ["P19", "P29"]},
-      {"id": "S18", "von": "E97", "nach": "E77", "art": "information", "medium": "Auslösesignal", "absatz_ids": ["P18", "P19", "P29"], "schnittstelle": "Auslöseeingang Videoaufzeichnung"},
-      {"id": "S19", "von": "E84", "nach": "E87", "art": "information", "medium": "Umfelddaten", "absatz_ids": ["P20", "P29"]},
-      {"id": "S20", "von": "E87", "nach": "E46", "art": "information", "medium": "Bremsanforderung", "absatz_ids": ["P20", "P29"], "schnittstelle": "Fahrzeugbus"},
-      {"id": "S21", "von": "E39", "nach": "E10", "art": "mechanisch", "medium": "Lenkkraft", "absatz_ids": ["P10", "P29"], "schnittstelle": "Spurstangen"},
-      {"id": "S22", "von": "E116", "nach": "E33", "art": "mechanisch", "medium": "Drehmoment", "absatz_ids": ["P25", "P29"], "schnittstelle": "Riementrieb"},
-      {"id": "S23", "von": "E117", "nach": "E43", "art": "pneumatisch", "medium": "Unterdruck", "absatz_ids": ["P25", "P29"], "schnittstelle": "Unterdruckanschluss"},
-      {"id": "S24", "von": "E15", "nach": "E109", "art": "thermisch", "medium": "Kühlmittel", "absatz_ids": ["P24", "P29"], "schnittstelle": "Kühlmittelanschluss"},
-      {"id": "S25", "von": "E17", "nach": "E109", "art": "thermisch", "medium": "Kühlmittel", "absatz_ids": ["P24", "P29"], "schnittstelle": "Kühlmittelanschluss"},
-      {"id": "S26", "von": "E114", "nach": "E28", "art": "thermisch", "medium": "Kühlmittel", "absatz_ids": ["P24", "P29"], "schnittstelle": "Batteriekühlanschluss"},
-      {"id": "S27", "von": "E110", "nach": "E53", "art": "thermisch", "medium": "temperierte Luft", "absatz_ids": ["P24", "P29"], "schnittstelle": "Luftführung Fond"},
-      {"id": "S28", "von": "E61", "nach": "E3", "art": "mechanisch", "medium": "Zug- und Stützlast", "absatz_ids": ["P14", "P29"], "schnittstelle": "Befestigung am Rohbau"},
-      {"id": "S29", "von": "E67", "nach": "E81", "art": "information", "medium": "Busbotschaften", "absatz_ids": ["P15", "P19", "P29"], "schnittstelle": "Fahrzeugbus"},
-      {"id": "S30", "von": "E118", "nach": "E32", "art": "elektrisch", "medium": "Ladestrom", "absatz_ids": ["P25", "P29"], "schnittstelle": "Fremdeinspeisungsanschluss"},
-      {"id": "S31", "von": "E28", "nach": "E121", "art": "elektrisch", "medium": "Hochvolt-Gleichstrom", "absatz_ids": ["P8", "P29"]},
-      {"id": "S32", "von": "E121", "nach": "E34", "art": "elektrisch", "medium": "Hochvolt-Gleichstrom", "absatz_ids": ["P8", "P29"]},
-      {"id": "S33", "von": "E63", "nach": "E119", "art": "elektrisch", "medium": "Niedervolt-Gleichstrom", "absatz_ids": ["P8", "P29"], "schnittstelle": "Ladeanschluss Zusatzbatterie"},
-      {"id": "S34", "von": "E119", "nach": "E32", "art": "elektrisch", "medium": "Ladestrom", "absatz_ids": ["P8", "P29"]}
+      {
+        "id": "S1",
+        "von": "E25",
+        "nach": "E15",
+        "art": "stoff",
+        "medium": "Kraftstoff",
+        "absatz_ids": [
+          "P8",
+          "P29"
+        ],
+        "schnittstelle": "Kraftstoffzulauf"
+      },
+      {
+        "id": "S2",
+        "von": "E121",
+        "nach": "E17",
+        "art": "elektrisch",
+        "medium": "Hochvolt-Gleichstrom",
+        "absatz_ids": [
+          "P6",
+          "P8",
+          "P29"
+        ],
+        "schnittstelle": "Hochvolt-Schnittstelle"
+      },
+      {
+        "id": "S3",
+        "von": "E17",
+        "nach": "E16",
+        "art": "elektrisch",
+        "medium": "Wechselstrom",
+        "absatz_ids": [
+          "P6",
+          "P29"
+        ]
+      },
+      {
+        "id": "S4",
+        "von": "E14",
+        "nach": "E18",
+        "art": "mechanisch",
+        "medium": "Drehmoment",
+        "absatz_ids": [
+          "P6",
+          "P29"
+        ]
+      },
+      {
+        "id": "S5",
+        "von": "E18",
+        "nach": "E12",
+        "art": "mechanisch",
+        "medium": "Drehmoment",
+        "absatz_ids": [
+          "P6",
+          "P29"
+        ],
+        "schnittstelle": "Radantrieb"
+      },
+      {
+        "id": "S6",
+        "von": "E29",
+        "nach": "E28",
+        "art": "elektrisch",
+        "medium": "Ladestrom",
+        "absatz_ids": [
+          "P8",
+          "P29"
+        ]
+      },
+      {
+        "id": "S7",
+        "von": "E33",
+        "nach": "E63",
+        "art": "elektrisch",
+        "medium": "Niedervolt-Gleichstrom",
+        "absatz_ids": [
+          "P8",
+          "P29"
+        ],
+        "schnittstelle": "Bordnetzeinspeisung"
+      },
+      {
+        "id": "S8",
+        "von": "E34",
+        "nach": "E63",
+        "art": "elektrisch",
+        "medium": "Niedervolt-Gleichstrom",
+        "absatz_ids": [
+          "P8",
+          "P29"
+        ],
+        "schnittstelle": "Bordnetzeinspeisung"
+      },
+      {
+        "id": "S9",
+        "von": "E32",
+        "nach": "E64",
+        "art": "elektrisch",
+        "medium": "Niedervolt-Gleichstrom",
+        "absatz_ids": [
+          "P8",
+          "P15",
+          "P29"
+        ],
+        "schnittstelle": "Ausrüstungsanschluss"
+      },
+      {
+        "id": "S10",
+        "von": "E64",
+        "nach": "E95",
+        "art": "elektrisch",
+        "medium": "Niedervolt-Gleichstrom",
+        "absatz_ids": [
+          "P15",
+          "P29"
+        ],
+        "schnittstelle": "Ausrüstungsanschluss"
+      },
+      {
+        "id": "S11",
+        "von": "E64",
+        "nach": "E72",
+        "art": "elektrisch",
+        "medium": "Niedervolt-Gleichstrom",
+        "absatz_ids": [
+          "P15",
+          "P29"
+        ],
+        "schnittstelle": "Ausrüstungsanschluss"
+      },
+      {
+        "id": "S12",
+        "von": "E95",
+        "nach": "E92",
+        "art": "elektrisch",
+        "medium": "Ansteuerstrom",
+        "absatz_ids": [
+          "P23",
+          "P29"
+        ]
+      },
+      {
+        "id": "S13",
+        "von": "E95",
+        "nach": "E94",
+        "art": "elektrisch",
+        "medium": "Tonsignal",
+        "absatz_ids": [
+          "P23",
+          "P29"
+        ]
+      },
+      {
+        "id": "S14",
+        "von": "E52",
+        "nach": "E95",
+        "art": "information",
+        "medium": "Schaltbefehl Sondersignal",
+        "absatz_ids": [
+          "P12",
+          "P29"
+        ],
+        "schnittstelle": "Bedienschnittstelle Signalanlage"
+      },
+      {
+        "id": "S15",
+        "von": "E37",
+        "nach": "E95",
+        "art": "information",
+        "medium": "Schaltbefehl Lenkradtasten",
+        "absatz_ids": [
+          "P10",
+          "P29"
+        ],
+        "schnittstelle": "Lenkradtastenanschluss"
+      },
+      {
+        "id": "S16",
+        "von": "E68",
+        "nach": "E76",
+        "art": "information",
+        "medium": "Fahrzeugsignale",
+        "absatz_ids": [
+          "P15",
+          "P19",
+          "P29"
+        ],
+        "schnittstelle": "Fahrzeugdatenschnittstelle"
+      },
+      {
+        "id": "S17",
+        "von": "E72",
+        "nach": "E76",
+        "art": "information",
+        "medium": "Status- und Auftragsdaten",
+        "absatz_ids": [
+          "P19",
+          "P29"
+        ]
+      },
+      {
+        "id": "S18",
+        "von": "E97",
+        "nach": "E77",
+        "art": "information",
+        "medium": "Auslösesignal",
+        "absatz_ids": [
+          "P18",
+          "P19",
+          "P29"
+        ],
+        "schnittstelle": "Auslöseeingang Videoaufzeichnung"
+      },
+      {
+        "id": "S19",
+        "von": "E84",
+        "nach": "E87",
+        "art": "information",
+        "medium": "Umfelddaten",
+        "absatz_ids": [
+          "P20",
+          "P29"
+        ]
+      },
+      {
+        "id": "S20",
+        "von": "E87",
+        "nach": "E46",
+        "art": "information",
+        "medium": "Bremsanforderung",
+        "absatz_ids": [
+          "P20",
+          "P29"
+        ],
+        "schnittstelle": "Fahrzeugbus"
+      },
+      {
+        "id": "S21",
+        "von": "E39",
+        "nach": "E10",
+        "art": "mechanisch",
+        "medium": "Lenkkraft",
+        "absatz_ids": [
+          "P10",
+          "P29"
+        ],
+        "schnittstelle": "Spurstangen"
+      },
+      {
+        "id": "S22",
+        "von": "E116",
+        "nach": "E33",
+        "art": "mechanisch",
+        "medium": "Drehmoment",
+        "absatz_ids": [
+          "P25",
+          "P29"
+        ],
+        "schnittstelle": "Riementrieb"
+      },
+      {
+        "id": "S23",
+        "von": "E117",
+        "nach": "E43",
+        "art": "pneumatisch",
+        "medium": "Unterdruck",
+        "absatz_ids": [
+          "P25",
+          "P29"
+        ],
+        "schnittstelle": "Unterdruckanschluss"
+      },
+      {
+        "id": "S24",
+        "von": "E15",
+        "nach": "E109",
+        "art": "thermisch",
+        "medium": "Kühlmittel",
+        "absatz_ids": [
+          "P24",
+          "P29"
+        ],
+        "schnittstelle": "Kühlmittelanschluss"
+      },
+      {
+        "id": "S25",
+        "von": "E17",
+        "nach": "E109",
+        "art": "thermisch",
+        "medium": "Kühlmittel",
+        "absatz_ids": [
+          "P24",
+          "P29"
+        ],
+        "schnittstelle": "Kühlmittelanschluss"
+      },
+      {
+        "id": "S26",
+        "von": "E114",
+        "nach": "E28",
+        "art": "thermisch",
+        "medium": "Kühlmittel",
+        "absatz_ids": [
+          "P24",
+          "P29"
+        ],
+        "schnittstelle": "Batteriekühlanschluss"
+      },
+      {
+        "id": "S27",
+        "von": "E110",
+        "nach": "E53",
+        "art": "thermisch",
+        "medium": "temperierte Luft",
+        "absatz_ids": [
+          "P24",
+          "P29"
+        ],
+        "schnittstelle": "Luftführung Fond"
+      },
+      {
+        "id": "S28",
+        "von": "E61",
+        "nach": "E3",
+        "art": "mechanisch",
+        "medium": "Zug- und Stützlast",
+        "absatz_ids": [
+          "P14",
+          "P29"
+        ],
+        "schnittstelle": "Befestigung am Rohbau"
+      },
+      {
+        "id": "S29",
+        "von": "E67",
+        "nach": "E81",
+        "art": "information",
+        "medium": "Busbotschaften",
+        "absatz_ids": [
+          "P15",
+          "P19",
+          "P29"
+        ],
+        "schnittstelle": "Fahrzeugbus"
+      },
+      {
+        "id": "S30",
+        "von": "E118",
+        "nach": "E32",
+        "art": "elektrisch",
+        "medium": "Ladestrom",
+        "absatz_ids": [
+          "P25",
+          "P29"
+        ],
+        "schnittstelle": "Fremdeinspeisungsanschluss"
+      },
+      {
+        "id": "S31",
+        "von": "E28",
+        "nach": "E121",
+        "art": "elektrisch",
+        "medium": "Hochvolt-Gleichstrom",
+        "absatz_ids": [
+          "P8",
+          "P29"
+        ]
+      },
+      {
+        "id": "S32",
+        "von": "E121",
+        "nach": "E34",
+        "art": "elektrisch",
+        "medium": "Hochvolt-Gleichstrom",
+        "absatz_ids": [
+          "P8",
+          "P29"
+        ]
+      },
+      {
+        "id": "S33",
+        "von": "E63",
+        "nach": "E119",
+        "art": "elektrisch",
+        "medium": "Niedervolt-Gleichstrom",
+        "absatz_ids": [
+          "P8",
+          "P29"
+        ],
+        "schnittstelle": "Ladeanschluss Zusatzbatterie"
+      },
+      {
+        "id": "S34",
+        "von": "E119",
+        "nach": "E32",
+        "art": "elektrisch",
+        "medium": "Ladestrom",
+        "absatz_ids": [
+          "P8",
+          "P29"
+        ]
+      }
     ],
     "entfallene_kategorien": [],
     "varianten": [
@@ -984,148 +2718,773 @@
         "id": "V1",
         "element_id": "E13",
         "bezeichnung": "Antriebsart",
-        "alternativen": ["Verbrennungsmotor mit Kraftstoffanlage", "Vollhybrid ohne externe Lademöglichkeit mit Traktionsbatterie und Traktionsmaschine", "Batterieelektrischer Antrieb mit Traktionsbatterie und Ladeeinrichtung"],
-        "auswahlkriterien": ["Einsatzrolle und Anteil der Einsatzfahrten mit hoher Geschwindigkeit", "Dauer des Standbetriebs mit laufender Ausrüstung", "Lademöglichkeiten auf der Dienststelle", "Vorgaben des Trägers zu lokalen Emissionen", "Bauraum für Ausrüstung und Energiespeicher"],
-        "auswirkungen": [
-          {"element_id": "E23", "beschreibung": "Kraftstoffanlage, Hochvolt-Energiespeichersystem oder beide"},
-          {"element_id": "E30", "beschreibung": "Generator oder Gleichspannungswandler speist das Niedervolt-Bordnetz"},
-          {"element_id": "E108", "beschreibung": "Kühlkreislauf für Motor oder Leistungselektronik, zusätzlich Batterietemperierung"},
-          {"element_id": "E46", "beschreibung": "Koordination von Reibbremse und Rückgewinnung"},
-          {"element_id": "E115", "beschreibung": "Nebenaggregatetrieb nur beim Verbrennungsmotor, Unterdruckpumpe nur bei unterdruckbetriebenem Bremskraftverstärker ohne ausreichenden Motorunterdruck"}
+        "alternativen": [
+          "Verbrennungsmotor mit Kraftstoffanlage",
+          "Vollhybrid ohne externe Lademöglichkeit mit Traktionsbatterie und Traktionsmaschine",
+          "Batterieelektrischer Antrieb mit Traktionsbatterie und Ladeeinrichtung"
         ],
-        "absatz_ids": ["P6", "P7", "P8", "P24", "P25"]
+        "auswahlkriterien": [
+          "Einsatzrolle und Anteil der Einsatzfahrten mit hoher Geschwindigkeit",
+          "Dauer des Standbetriebs mit laufender Ausrüstung",
+          "Lademöglichkeiten auf der Dienststelle",
+          "Vorgaben des Trägers zu lokalen Emissionen",
+          "Bauraum für Ausrüstung und Energiespeicher"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E23",
+            "beschreibung": "Kraftstoffanlage, Hochvolt-Energiespeichersystem oder beide"
+          },
+          {
+            "element_id": "E30",
+            "beschreibung": "Generator oder Gleichspannungswandler speist das Niedervolt-Bordnetz"
+          },
+          {
+            "element_id": "E108",
+            "beschreibung": "Kühlkreislauf für Motor oder Leistungselektronik, zusätzlich Batterietemperierung"
+          },
+          {
+            "element_id": "E46",
+            "beschreibung": "Koordination von Reibbremse und Rückgewinnung"
+          },
+          {
+            "element_id": "E115",
+            "beschreibung": "Nebenaggregatetrieb nur beim Verbrennungsmotor, Unterdruckpumpe nur bei unterdruckbetriebenem Bremskraftverstärker ohne ausreichenden Motorunterdruck"
+          }
+        ],
+        "absatz_ids": [
+          "P6",
+          "P7",
+          "P8",
+          "P24",
+          "P25"
+        ]
       },
       {
         "id": "V2",
         "element_id": "E3",
         "bezeichnung": "Erscheinungsbild",
-        "alternativen": ["Uniformiert mit Polizeikennzeichnung und Dachbalken", "Teilmarkiert mit unauffälliger oder reflektierender Markierung", "Zivil ohne Kennzeichnung mit verdeckt oder versenkbar eingebauten Signalleuchten", "Zivil mit bei Bedarf aufgesetzter Kennleuchte"],
-        "auswahlkriterien": ["Einsatzrolle, etwa Streifendienst, Verkehrsüberwachung oder Ermittlung", "gewünschte Präsenzwirkung", "Erkennbarkeit für Hubschrauber und andere Verkehrsteilnehmer", "Wiederverkauf oder Leasingrückgabe", "Zulässigkeit ziviler Fahrzeuge für Anhaltekontrollen im Rechtsraum"],
-        "auswirkungen": [
-          {"element_id": "E6", "beschreibung": "Folierung und Konturmarkierung entfallen beim zivilen Fahrzeug, beim teilmarkierten Fahrzeug unauffällige oder reflektierende Markierung"},
-          {"element_id": "E91", "beschreibung": "Dachbalken, verdeckt etwa im Kühlergrill oder versenkbar eingebaute Warnleuchten oder bei Bedarf aufgesetzte Kennleuchte"},
-          {"element_id": "E96", "beschreibung": "Anordnung von Anhaltesignal und Signalgeber für Lichtschrift im Innenraum oder Dachaufbau"},
-          {"element_id": "E73", "beschreibung": "unauffällige Antennenanordnung beim zivilen Fahrzeug"},
-          {"element_id": "E64", "beschreibung": "Steckanschluss für die aufsetzbare Kennleuchte statt fester Leitungen zum Dach"}
+        "alternativen": [
+          "Uniformiert mit Polizeikennzeichnung und Dachbalken",
+          "Teilmarkiert mit unauffälliger oder reflektierender Markierung",
+          "Zivil ohne Kennzeichnung mit verdeckt oder versenkbar eingebauten Signalleuchten",
+          "Zivil mit bei Bedarf aufgesetzter Kennleuchte"
         ],
-        "absatz_ids": ["P1", "P4", "P23", "P31", "P32"]
+        "auswahlkriterien": [
+          "Einsatzrolle, etwa Streifendienst, Verkehrsüberwachung oder Ermittlung",
+          "gewünschte Präsenzwirkung",
+          "Erkennbarkeit für Hubschrauber und andere Verkehrsteilnehmer",
+          "Wiederverkauf oder Leasingrückgabe",
+          "Zulässigkeit ziviler Fahrzeuge für Anhaltekontrollen im Rechtsraum"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E6",
+            "beschreibung": "Folierung und Konturmarkierung entfallen beim zivilen Fahrzeug, beim teilmarkierten Fahrzeug unauffällige oder reflektierende Markierung"
+          },
+          {
+            "element_id": "E91",
+            "beschreibung": "Dachbalken, verdeckt etwa im Kühlergrill oder versenkbar eingebaute Warnleuchten oder bei Bedarf aufgesetzte Kennleuchte"
+          },
+          {
+            "element_id": "E96",
+            "beschreibung": "Anordnung von Anhaltesignal und Signalgeber für Lichtschrift im Innenraum oder Dachaufbau"
+          },
+          {
+            "element_id": "E73",
+            "beschreibung": "unauffällige Antennenanordnung beim zivilen Fahrzeug"
+          },
+          {
+            "element_id": "E64",
+            "beschreibung": "Steckanschluss für die aufsetzbare Kennleuchte statt fester Leitungen zum Dach"
+          }
+        ],
+        "absatz_ids": [
+          "P1",
+          "P4",
+          "P23",
+          "P31",
+          "P32"
+        ]
       },
       {
         "id": "V3",
         "element_id": "E53",
         "bezeichnung": "Nutzung des Fondraums",
-        "alternativen": ["Fahrgastsitze ohne Trennwand", "Gesichertes Transportabteil mit Trennwand und harter Rücksitzbank", "Diensthundbereich mit Diensthundebox"],
-        "auswahlkriterien": ["Häufigkeit des Transports festgenommener Personen", "Besatzungsstärke", "Einsatz von Diensthunden", "Vorgaben des Trägers zum Eigenschutz"],
-        "auswirkungen": [
-          {"element_id": "E55", "beschreibung": "Rückhaltung für Fahrgäste oder gesicherte Personen"},
-          {"element_id": "E5", "beschreibung": "Türbetätigung im Fond von innen sperrbar"},
-          {"element_id": "E60", "beschreibung": "Diensthundebox im Laderaum oder Fond"},
-          {"element_id": "E113", "beschreibung": "Fondklimaanlage für Transportabteil oder Diensthund"}
+        "alternativen": [
+          "Fahrgastsitze ohne Trennwand",
+          "Gesichertes Transportabteil mit Trennwand und harter Rücksitzbank",
+          "Diensthundbereich mit Diensthundebox"
         ],
-        "absatz_ids": ["P12", "P13", "P14"]
+        "auswahlkriterien": [
+          "Häufigkeit des Transports festgenommener Personen",
+          "Besatzungsstärke",
+          "Einsatz von Diensthunden",
+          "Vorgaben des Trägers zum Eigenschutz"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E55",
+            "beschreibung": "Rückhaltung für Fahrgäste oder gesicherte Personen"
+          },
+          {
+            "element_id": "E5",
+            "beschreibung": "Türbetätigung im Fond von innen sperrbar"
+          },
+          {
+            "element_id": "E60",
+            "beschreibung": "Diensthundebox im Laderaum oder Fond"
+          },
+          {
+            "element_id": "E113",
+            "beschreibung": "Fondklimaanlage für Transportabteil oder Diensthund"
+          }
+        ],
+        "absatz_ids": [
+          "P12",
+          "P13",
+          "P14"
+        ]
       },
       {
         "id": "V4",
         "element_id": "E2",
         "bezeichnung": "Schutzausstattung",
-        "alternativen": ["Ohne Zusatzschutz", "Schubbügel an der Front", "Ballistische Schutzpaneele in den Türen", "Schubbügel und ballistische Schutzpaneele"],
-        "auswahlkriterien": ["Gefährdungslage im Einsatzgebiet", "Einsatztaktik beim Abdrängen und Räumen der Fahrbahn", "Zusatzmasse und Zuladung", "Verträglichkeit mit Insassenschutz und Sensorik"],
-        "auswirkungen": [
-          {"element_id": "E11", "beschreibung": "Abstimmung von Federung und Dämpfung auf die Zusatzmasse"},
-          {"element_id": "E84", "beschreibung": "Sichtfelder von Radarsensor und Kamera durch Schubbügel beeinflusst"},
-          {"element_id": "E89", "beschreibung": "Abstimmung der Crashsensierung auf Schubbügel"},
-          {"element_id": "E5", "beschreibung": "Türen mit eingebauten Schutzpaneelen"}
+        "alternativen": [
+          "Ohne Zusatzschutz",
+          "Schubbügel an der Front",
+          "Ballistische Schutzpaneele in den Türen",
+          "Schubbügel und ballistische Schutzpaneele"
         ],
-        "absatz_ids": ["P4", "P5", "P20"]
+        "auswahlkriterien": [
+          "Gefährdungslage im Einsatzgebiet",
+          "Einsatztaktik beim Abdrängen und Räumen der Fahrbahn",
+          "Zusatzmasse und Zuladung",
+          "Verträglichkeit mit Insassenschutz und Sensorik"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E11",
+            "beschreibung": "Abstimmung von Federung und Dämpfung auf die Zusatzmasse"
+          },
+          {
+            "element_id": "E84",
+            "beschreibung": "Sichtfelder von Radarsensor und Kamera durch Schubbügel beeinflusst"
+          },
+          {
+            "element_id": "E89",
+            "beschreibung": "Abstimmung der Crashsensierung auf Schubbügel"
+          },
+          {
+            "element_id": "E5",
+            "beschreibung": "Türen mit eingebauten Schutzpaneelen"
+          }
+        ],
+        "absatz_ids": [
+          "P4",
+          "P5",
+          "P20"
+        ]
       },
       {
         "id": "V5",
         "element_id": "E62",
         "bezeichnung": "Integrationsweg der Polizeiausrüstung",
-        "alternativen": ["Werksvorrüstung im Polizeipaket mit Vorrüstungsleitungssatz und Gateway", "Nachrüstung durch einen Ausbaubetrieb am Serienfahrzeug"],
-        "auswahlkriterien": ["Verfügbarkeit eines Polizeipakets für die Fahrzeugbasis", "Stückzahl und Beschaffungsweg", "Gewährleistung und Zulassung", "Wiederverwendung der Ausrüstung beim Fahrzeugwechsel"],
-        "auswirkungen": [
-          {"element_id": "E66", "beschreibung": "vorbereitete Ausrüstungsleitungen oder zusätzlicher Leitungssatz"},
-          {"element_id": "E68", "beschreibung": "werkseitiges Gateway oder eigene Signalabgriffe"},
-          {"element_id": "E95", "beschreibung": "Anbindung des Signalsteuergeräts an Fahrzeugsignale und Lenkradtasten"},
-          {"element_id": "E32", "beschreibung": "werkseitige oder nachgerüstete Zusatzbatterie"}
+        "alternativen": [
+          "Werksvorrüstung im Polizeipaket mit Vorrüstungsleitungssatz und Gateway",
+          "Nachrüstung durch einen Ausbaubetrieb am Serienfahrzeug"
         ],
-        "absatz_ids": ["P2", "P15", "P16"]
+        "auswahlkriterien": [
+          "Verfügbarkeit eines Polizeipakets für die Fahrzeugbasis",
+          "Stückzahl und Beschaffungsweg",
+          "Gewährleistung und Zulassung",
+          "Wiederverwendung der Ausrüstung beim Fahrzeugwechsel"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E66",
+            "beschreibung": "vorbereitete Ausrüstungsleitungen oder zusätzlicher Leitungssatz"
+          },
+          {
+            "element_id": "E68",
+            "beschreibung": "werkseitiges Gateway oder eigene Signalabgriffe"
+          },
+          {
+            "element_id": "E95",
+            "beschreibung": "Anbindung des Signalsteuergeräts an Fahrzeugsignale und Lenkradtasten"
+          },
+          {
+            "element_id": "E32",
+            "beschreibung": "werkseitige oder nachgerüstete Zusatzbatterie"
+          }
+        ],
+        "absatz_ids": [
+          "P2",
+          "P15",
+          "P16"
+        ]
       },
       {
         "id": "V6",
         "element_id": "E2",
         "bezeichnung": "Fahrzeugbasis",
-        "alternativen": ["Limousine oder Kombi", "SUV", "Kleinbus"],
-        "auswahlkriterien": ["Besatzungsstärke und Sitzplätze", "Umfang der mitgeführten Einsatzmittel", "Fahrleistung und Wendigkeit", "Geländegängigkeit"],
-        "auswirkungen": [
-          {"element_id": "E58", "beschreibung": "Größe und Aufteilung des Laderaums"},
-          {"element_id": "E53", "beschreibung": "Sitzplätze und mögliches Transportabteil"},
-          {"element_id": "E91", "beschreibung": "Anbringung des Dachbalkens und geometrische Sichtbarkeit"},
-          {"element_id": "E13", "beschreibung": "verfügbare Antriebe und Allradantrieb"}
+        "alternativen": [
+          "Limousine oder Kombi",
+          "SUV",
+          "Kleinbus"
         ],
-        "absatz_ids": ["P2", "P4"]
+        "auswahlkriterien": [
+          "Besatzungsstärke und Sitzplätze",
+          "Umfang der mitgeführten Einsatzmittel",
+          "Fahrleistung und Wendigkeit",
+          "Geländegängigkeit"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E58",
+            "beschreibung": "Größe und Aufteilung des Laderaums"
+          },
+          {
+            "element_id": "E53",
+            "beschreibung": "Sitzplätze und mögliches Transportabteil"
+          },
+          {
+            "element_id": "E91",
+            "beschreibung": "Anbringung des Dachbalkens und geometrische Sichtbarkeit"
+          },
+          {
+            "element_id": "E13",
+            "beschreibung": "verfügbare Antriebe und Allradantrieb"
+          }
+        ],
+        "absatz_ids": [
+          "P2",
+          "P4"
+        ]
       },
       {
         "id": "V7",
         "element_id": "E43",
         "bezeichnung": "Bauart der Bremskraftverstärkung",
-        "alternativen": ["Unterdruckverstärker mit Motorunterdruck", "Unterdruckverstärker mit Unterdruckpumpe", "Elektromechanischer Bremskraftverstärker"],
-        "auswahlkriterien": ["Antriebsart und verfügbarer Motorunterdruck", "Angebot der gewählten Fahrzeugbasis", "Umfang der Bremsenergierückgewinnung", "Belastbarkeit des Niedervolt-Bordnetzes"],
-        "auswirkungen": [
-          {"element_id": "E117", "beschreibung": "Unterdruckpumpe entfällt beim elektromechanischen Verstärker und beim Unterdruckverstärker mit Motorunterdruck"},
-          {"element_id": "E63", "beschreibung": "zusätzlicher Verbraucher im Niedervolt-Bordnetz beim elektromechanischen Verstärker oder bei der Unterdruckpumpe"},
-          {"element_id": "E46", "beschreibung": "Koordination von Reibbremse und Rückgewinnung über den elektromechanischen Verstärker"}
+        "alternativen": [
+          "Unterdruckverstärker mit Motorunterdruck",
+          "Unterdruckverstärker mit Unterdruckpumpe",
+          "Elektromechanischer Bremskraftverstärker"
         ],
-        "absatz_ids": ["P11", "P25"]
+        "auswahlkriterien": [
+          "Antriebsart und verfügbarer Motorunterdruck",
+          "Angebot der gewählten Fahrzeugbasis",
+          "Umfang der Bremsenergierückgewinnung",
+          "Belastbarkeit des Niedervolt-Bordnetzes"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E117",
+            "beschreibung": "Unterdruckpumpe entfällt beim elektromechanischen Verstärker und beim Unterdruckverstärker mit Motorunterdruck"
+          },
+          {
+            "element_id": "E63",
+            "beschreibung": "zusätzlicher Verbraucher im Niedervolt-Bordnetz beim elektromechanischen Verstärker oder bei der Unterdruckpumpe"
+          },
+          {
+            "element_id": "E46",
+            "beschreibung": "Koordination von Reibbremse und Rückgewinnung über den elektromechanischen Verstärker"
+          }
+        ],
+        "absatz_ids": [
+          "P11",
+          "P25"
+        ]
       }
     ],
     "klaerungsfragen": [
-      {"id": "K1", "frage": "Für welchen Rechtsraum und welche Polizeibehörde wird das Fahrzeug ausgelegt?", "element_ids": ["E1"], "anlass": "anforderung", "relevanz": "Davon hängen zulässige Signalanlagen, Kennzeichnung, Funksystem und Zulassung ab."},
-      {"id": "K2", "frage": "Soll das Fahrzeug auf einer Limousine oder einem Kombi, einem SUV oder einem Kleinbus aufbauen?", "element_ids": ["E2", "E3"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Laderaum, Sitzplätze, Dachaufbau und verfügbare Antriebe ab.", "variante_ids": ["V6"]},
-      {"id": "K3", "frage": "Wird das Fahrzeug uniformiert mit Kennzeichnung und Dachbalken, teilmarkiert mit unauffälliger oder reflektierender Markierung, zivil mit verdeckt oder versenkbar eingebauten Signalleuchten oder zivil mit bei Bedarf aufgesetzter Kennleuchte ausgeführt?", "element_ids": ["E3", "E6", "E91", "E64"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Polizeikennzeichnung, Anordnung der Warnleuchten und Antennen sowie die Stromversorgung der Signalanlage ab.", "variante_ids": ["V2"]},
-      {"id": "K4", "frage": "Welche Schutzausstattung, etwa ein Schubbügel oder ballistische Schutzpaneele in den Türen, wird gefordert?", "element_ids": ["E2", "E7", "E8"], "anlass": "anforderung", "relevanz": "Davon hängen Fahrzeugmasse, Fahrwerksabstimmung und die Verträglichkeit mit Sensorik und Insassenschutz ab.", "variante_ids": ["V4"]},
-      {"id": "K5", "frage": "Soll das Fahrzeug mit Verbrennungsmotor, als Vollhybrid oder batterieelektrisch angetrieben werden?", "element_ids": ["E13", "E14"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Energiespeicher, Thermomanagement, Bremsregelung und Nebenaggregate ab.", "variante_ids": ["V1"]},
-      {"id": "K6", "frage": "Wie lange muss die Einsatzausrüstung im Stand ohne Fahrbetrieb versorgt werden können?", "element_ids": ["E23", "E30", "E32"], "anlass": "anforderung", "relevanz": "Davon hängen Größe der Zusatzbatterie, Generatorleistung, die Strategie für den gesicherten Leerlauf und die Auslegung der Batterietrennung ab.", "variante_ids": ["V1"]},
-      {"id": "K7", "frage": "Sollen Sondersignal und Funkmikrofon über Tasten am Lenkrad bedienbar sein?", "element_ids": ["E35", "E37", "E95"], "anlass": "schnittstelle", "relevanz": "Davon hängt ab, ob eine Schnittstelle zwischen Lenkrad und Signalsteuergerät vorzusehen ist."},
-      {"id": "K8", "frage": "Wie viele aufeinanderfolgende Vollbremsungen aus hoher Geschwindigkeit muss das Bremssystem ohne Leistungsabfall bewältigen?", "element_ids": ["E41", "E44"], "anlass": "anforderung", "relevanz": "Davon hängen Auslegung der Radbremsen und ihre Kühlung ab."},
-      {"id": "K9", "frage": "Dient der Fond als normaler Sitzplatz, als gesichertes Transportabteil hinter einer Trennwand oder als Diensthundbereich?", "element_ids": ["E47", "E53", "E56"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Sitze, Trennwand, Türbetätigung und Fondklimatisierung ab.", "variante_ids": ["V3"]},
-      {"id": "K10", "frage": "Welche Einsatzmittel und Schutzausstattung müssen im Laderaum mitgeführt und crashsicher befestigt werden?", "element_ids": ["E57", "E59"], "anlass": "anforderung", "relevanz": "Davon hängen Zuladung, Aufteilung der Ausrüstungsfächer und der verbleibende Bauraum für Technik ab."},
-      {"id": "K11", "frage": "Wird die Polizeiausrüstung über eine Werksvorrüstung des Herstellers oder durch einen Ausbaubetrieb nachgerüstet?", "element_ids": ["E62", "E66", "E68"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Leitungssatz, Gateway und die Eingriffe in die Serienelektrik ab.", "variante_ids": ["V5"]},
-      {"id": "K12", "frage": "Welche Funk- und Datensysteme der Leitstelle muss das Fahrzeug unterstützen?", "element_ids": ["E70", "E72", "E74"], "anlass": "schnittstelle", "relevanz": "Davon hängen Fahrzeugfunkgerät, Antennenanzahl und Telematikeinheit ab."},
-      {"id": "K13", "frage": "Soll das Fahrzeug Einsätze per Video aufzeichnen, Kennzeichen erkennen oder Geschwindigkeiten messen?", "element_ids": ["E75", "E77", "E78", "E79"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Umfang der Einsatzdokumentation, Kameraanordnung und Datenschnittstellen ab."},
-      {"id": "K14", "frage": "Darf der Fahrer den Notbremsassistenten im Einsatz vorübergehend abschalten?", "element_ids": ["E83", "E87"], "anlass": "betrieb", "relevanz": "Davon hängen Bedienkonzept und Sicherheitsnachweis der Assistenzfunktionen ab."},
-      {"id": "K15", "frage": "Welche Signaleinrichtungen, also blaues Blinklicht, Heckwarnsystem, Anhaltesignal und Anhaltehorn, soll das Fahrzeug führen?", "element_ids": ["E90", "E91", "E96"], "anlass": "anforderung", "relevanz": "Davon hängen Umfang von Sondersignal- und Anhaltesignalanlage und die Verriegelungen im Signalsteuergerät ab.", "variante_ids": ["V2"]},
-      {"id": "K16", "frage": "Unter welchen klimatischen Bedingungen muss das Fahrzeug im Leerlauf mit voller Ausrüstungslast betrieben werden?", "element_ids": ["E108", "E109", "E110"], "anlass": "betrieb", "relevanz": "Davon hängen Kühlleistung und Auslegung der Heiz- und Klimaanlage ab."},
-      {"id": "K17", "frage": "Soll das Fahrzeug auf der Dienststelle über eine Fremdeinspeisung nachgeladen werden?", "element_ids": ["E115", "E118"], "anlass": "betrieb", "relevanz": "Davon hängen Ladeanschluss, Ladeerhaltung der Zusatzbatterie und die Einsatzbereitschaft bei Dienstbeginn ab."},
-      {"id": "K18", "frage": "Welche Bauart der Bremskraftverstärkung bietet die gewählte Fahrzeugbasis?", "element_ids": ["E41", "E43"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Unterdruckpumpe, Last im Niedervolt-Bordnetz und die Koordination von Reibbremse und Rückgewinnung ab.", "variante_ids": ["V7"]}
+      {
+        "id": "K1",
+        "frage": "Für welchen Rechtsraum und welche Polizeibehörde wird das Fahrzeug ausgelegt?",
+        "element_ids": [
+          "E1"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen zulässige Signalanlagen, Kennzeichnung, Funksystem und Zulassung ab."
+      },
+      {
+        "id": "K2",
+        "frage": "Soll das Fahrzeug auf einer Limousine oder einem Kombi, einem SUV oder einem Kleinbus aufbauen?",
+        "element_ids": [
+          "E2",
+          "E3"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Laderaum, Sitzplätze, Dachaufbau und verfügbare Antriebe ab.",
+        "variante_ids": [
+          "V6"
+        ]
+      },
+      {
+        "id": "K3",
+        "frage": "Wird das Fahrzeug uniformiert mit Kennzeichnung und Dachbalken, teilmarkiert mit unauffälliger oder reflektierender Markierung, zivil mit verdeckt oder versenkbar eingebauten Signalleuchten oder zivil mit bei Bedarf aufgesetzter Kennleuchte ausgeführt?",
+        "element_ids": [
+          "E3",
+          "E6",
+          "E91",
+          "E64"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Polizeikennzeichnung, Anordnung der Warnleuchten und Antennen sowie die Stromversorgung der Signalanlage ab.",
+        "variante_ids": [
+          "V2"
+        ]
+      },
+      {
+        "id": "K4",
+        "frage": "Welche Schutzausstattung, etwa ein Schubbügel oder ballistische Schutzpaneele in den Türen, wird gefordert?",
+        "element_ids": [
+          "E2",
+          "E7",
+          "E8"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Fahrzeugmasse, Fahrwerksabstimmung und die Verträglichkeit mit Sensorik und Insassenschutz ab.",
+        "variante_ids": [
+          "V4"
+        ]
+      },
+      {
+        "id": "K5",
+        "frage": "Soll das Fahrzeug mit Verbrennungsmotor, als Vollhybrid oder batterieelektrisch angetrieben werden?",
+        "element_ids": [
+          "E13",
+          "E14"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Energiespeicher, Thermomanagement, Bremsregelung und Nebenaggregate ab.",
+        "variante_ids": [
+          "V1"
+        ]
+      },
+      {
+        "id": "K6",
+        "frage": "Wie lange muss die Einsatzausrüstung im Stand ohne Fahrbetrieb versorgt werden können?",
+        "element_ids": [
+          "E23",
+          "E30",
+          "E32"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Größe der Zusatzbatterie, Generatorleistung, die Strategie für den gesicherten Leerlauf und die Auslegung der Batterietrennung ab.",
+        "variante_ids": [
+          "V1"
+        ]
+      },
+      {
+        "id": "K7",
+        "frage": "Sollen Sondersignal und Funkmikrofon über Tasten am Lenkrad bedienbar sein?",
+        "element_ids": [
+          "E35",
+          "E37",
+          "E95"
+        ],
+        "anlass": "schnittstelle",
+        "relevanz": "Davon hängt ab, ob eine Schnittstelle zwischen Lenkrad und Signalsteuergerät vorzusehen ist."
+      },
+      {
+        "id": "K8",
+        "frage": "Wie viele aufeinanderfolgende Vollbremsungen aus hoher Geschwindigkeit muss das Bremssystem ohne Leistungsabfall bewältigen?",
+        "element_ids": [
+          "E41",
+          "E44"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Auslegung der Radbremsen und ihre Kühlung ab."
+      },
+      {
+        "id": "K9",
+        "frage": "Dient der Fond als normaler Sitzplatz, als gesichertes Transportabteil hinter einer Trennwand oder als Diensthundbereich?",
+        "element_ids": [
+          "E47",
+          "E53",
+          "E56"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Sitze, Trennwand, Türbetätigung und Fondklimatisierung ab.",
+        "variante_ids": [
+          "V3"
+        ]
+      },
+      {
+        "id": "K10",
+        "frage": "Welche Einsatzmittel und Schutzausstattung müssen im Laderaum mitgeführt und crashsicher befestigt werden?",
+        "element_ids": [
+          "E57",
+          "E59"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Zuladung, Aufteilung der Ausrüstungsfächer und der verbleibende Bauraum für Technik ab."
+      },
+      {
+        "id": "K11",
+        "frage": "Wird die Polizeiausrüstung über eine Werksvorrüstung des Herstellers oder durch einen Ausbaubetrieb nachgerüstet?",
+        "element_ids": [
+          "E62",
+          "E66",
+          "E68"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Leitungssatz, Gateway und die Eingriffe in die Serienelektrik ab.",
+        "variante_ids": [
+          "V5"
+        ]
+      },
+      {
+        "id": "K12",
+        "frage": "Welche Funk- und Datensysteme der Leitstelle muss das Fahrzeug unterstützen?",
+        "element_ids": [
+          "E70",
+          "E72",
+          "E74"
+        ],
+        "anlass": "schnittstelle",
+        "relevanz": "Davon hängen Fahrzeugfunkgerät, Antennenanzahl und Telematikeinheit ab."
+      },
+      {
+        "id": "K13",
+        "frage": "Soll das Fahrzeug Einsätze per Video aufzeichnen, Kennzeichen erkennen oder Geschwindigkeiten messen?",
+        "element_ids": [
+          "E75",
+          "E77",
+          "E78",
+          "E79"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Umfang der Einsatzdokumentation, Kameraanordnung und Datenschnittstellen ab."
+      },
+      {
+        "id": "K14",
+        "frage": "Darf der Fahrer den Notbremsassistenten im Einsatz vorübergehend abschalten?",
+        "element_ids": [
+          "E83",
+          "E87"
+        ],
+        "anlass": "betrieb",
+        "relevanz": "Davon hängen Bedienkonzept und Sicherheitsnachweis der Assistenzfunktionen ab."
+      },
+      {
+        "id": "K15",
+        "frage": "Welche Signaleinrichtungen, also blaues Blinklicht, Heckwarnsystem, Anhaltesignal und Anhaltehorn, soll das Fahrzeug führen?",
+        "element_ids": [
+          "E90",
+          "E91",
+          "E96"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Umfang von Sondersignal- und Anhaltesignalanlage und die Verriegelungen im Signalsteuergerät ab.",
+        "variante_ids": [
+          "V2"
+        ]
+      },
+      {
+        "id": "K16",
+        "frage": "Unter welchen klimatischen Bedingungen muss das Fahrzeug im Leerlauf mit voller Ausrüstungslast betrieben werden?",
+        "element_ids": [
+          "E108",
+          "E109",
+          "E110"
+        ],
+        "anlass": "betrieb",
+        "relevanz": "Davon hängen Kühlleistung und Auslegung der Heiz- und Klimaanlage ab."
+      },
+      {
+        "id": "K17",
+        "frage": "Soll das Fahrzeug auf der Dienststelle über eine Fremdeinspeisung nachgeladen werden?",
+        "element_ids": [
+          "E115",
+          "E118"
+        ],
+        "anlass": "betrieb",
+        "relevanz": "Davon hängen Ladeanschluss, Ladeerhaltung der Zusatzbatterie und die Einsatzbereitschaft bei Dienstbeginn ab."
+      },
+      {
+        "id": "K18",
+        "frage": "Welche Bauart der Bremskraftverstärkung bietet die gewählte Fahrzeugbasis?",
+        "element_ids": [
+          "E41",
+          "E43"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Unterdruckpumpe, Last im Niedervolt-Bordnetz und die Koordination von Reibbremse und Rückgewinnung ab.",
+        "variante_ids": [
+          "V7"
+        ]
+      }
     ],
     "anforderungsthemen": [
-      {"id": "R1", "element_ids": ["E1"], "thema": "Sonderrechte und Wegerecht", "kenngroessen": ["berechtigte Organisation", "Einsatzlagen für blaues Blinklicht mit Einsatzhorn", "Einsatzlagen für blaues Blinklicht allein"], "regelwerke": [
-        {"bezeichnung": "StVO § 35 Sonderrechte (Deutschland)", "quellen_id": "Q6", "fundstelle": "§ 35 Abs. 1"},
-        {"bezeichnung": "StVO § 38 Blaues und gelbes Blinklicht (Deutschland)", "quellen_id": "Q7", "fundstelle": "§ 38 Abs. 1 und 2"}
-      ]},
-      {"id": "R2", "element_ids": ["E2", "E3", "E6"], "thema": "Erkennbarkeit und Kennzeichnung", "kenngroessen": ["Farbgebung", "Anteil retroreflektierender Markierung", "Lage und Größe der Luftkennung"]},
-      {"id": "R3", "element_ids": ["E2", "E7", "E8"], "thema": "Schutz der Besatzung", "kenngroessen": ["Schutzklasse der Schutzpaneele", "geschützte Fläche", "Zusatzmasse", "Belastbarkeit des Schubbügels"]},
-      {"id": "R4", "element_ids": ["E13"], "thema": "Fahrleistung im Einsatz", "kenngroessen": ["Beschleunigung", "Höchstgeschwindigkeit", "Dauerhaltbarkeit bei Einsatzfahrten", "Reichweite"]},
-      {"id": "R5", "element_ids": ["E23", "E30", "E32"], "thema": "Energiebilanz im Standbetrieb", "kenngroessen": ["Kapazität der Zusatzbatterie", "Generatorleistung", "Standbetriebsdauer", "Ruhestromverbrauch der Ausrüstung"]},
-      {"id": "R6", "element_ids": ["E35"], "thema": "Lenkverhalten und Wendigkeit", "kenngroessen": ["Wendekreis", "Lenkkraft", "Lenkpräzision bei hoher Geschwindigkeit"]},
-      {"id": "R7", "element_ids": ["E41", "E44"], "thema": "Bremsleistung bei Wiederholbremsungen", "kenngroessen": ["mittlere Verzögerung", "Anzahl Vollbremsungen ohne Leistungsabfall", "Bremsentemperatur"]},
-      {"id": "R8", "element_ids": ["E47", "E48", "E53"], "thema": "Arbeitsplatzergonomie und Personentransport", "kenngroessen": ["Sitzkomfort", "Erreichbarkeit der Bedienteile", "Rundumsicht", "Einstieg in den Fond", "Ausführung der Trennwand"]},
-      {"id": "R9", "element_ids": ["E57", "E58", "E61"], "thema": "Zuladung und Unterbringung der Einsatzmittel", "kenngroessen": ["Zuladung", "Laderaumvolumen", "Anhängelast"]},
-      {"id": "R10", "element_ids": ["E62", "E63", "E68"], "thema": "Ausrüstungsschnittstelle im Bordnetz", "kenngroessen": ["Anzahl der Ausrüstungsstromkreise", "Absicherung je Stromkreis", "verfügbare Fahrzeugsignale", "schaltbare Ausgänge"]},
-      {"id": "R11", "element_ids": ["E70", "E72"], "thema": "Einsatzkommunikation", "kenngroessen": ["unterstützte Funkdienste", "Zertifizierung des Fahrzeugfunkgeräts", "Positionsmeldung", "Verschlüsselung"], "regelwerke": [
-        {"bezeichnung": "BDBOS-Gesetz § 15a Abs. 1 Satz 1, Zertifizierung der Endgeräte im Digitalfunk BOS (Deutschland)", "quellen_id": "Q8", "fundstelle": "Abschnitt Unter welchen Voraussetzungen können Endgeräte im Digitalfunk BOS eingesetzt werden"}
-      ]},
-      {"id": "R12", "element_ids": ["E75", "E77"], "thema": "Einsatzdokumentation", "kenngroessen": ["Aufzeichnungsauslöser", "Speicherdauer", "Erfassungsbereich der Kameras"]},
-      {"id": "R13", "element_ids": ["E83", "E87", "E88"], "thema": "Assistenz im Einsatzbetrieb", "kenngroessen": ["Abschaltbarkeit von Eingriffen", "Erfassungsbereich der Annäherungswarnung", "freie Sensorsichtfelder"]},
-      {"id": "R14", "element_ids": ["E90", "E91", "E96"], "thema": "Optische und akustische Signale", "kenngroessen": ["Anzahl und Anordnung der Warnleuchten", "geometrische Sichtbarkeit", "Verriegelung der Signalbetriebsarten", "Lichtfarben der Signalgeber"], "regelwerke": [
-        {"bezeichnung": "StVZO § 52 Zusätzliche Scheinwerfer und Leuchten (Deutschland, Kraftfahrzeuge des Vollzugsdienstes der Polizei)", "quellen_id": "Q4", "fundstelle": "§ 52 Abs. 2, 3, 3a und 11"},
-        {"bezeichnung": "StVZO § 55 Einrichtungen für Schallzeichen (Deutschland, Einsatzhorn und Anhaltehorn)", "quellen_id": "Q5", "fundstelle": "§ 55 Abs. 3 und 3a"}
-      ]},
-      {"id": "R15", "element_ids": ["E108", "E109", "E110"], "thema": "Thermische Belastbarkeit im Leerlauf", "kenngroessen": ["Kühlleistung", "Außentemperaturbereich", "Innenraumtemperatur im Standbetrieb"]},
-      {"id": "R16", "element_ids": ["E115", "E118"], "thema": "Einsatzbereitschaft zwischen den Einsätzen", "kenngroessen": ["Ladezustand bei Dienstbeginn", "Nachladezeit"]},
-      {"id": "R17", "element_ids": ["E62", "E71", "E73"], "thema": "Elektromagnetische Verträglichkeit von Funk und Ausrüstung", "kenngroessen": ["Sendeleistung und Frequenzbereiche der Funkgeräte", "Antennenpositionen", "Störfestigkeit der Fahrzeugsteuergeräte", "Störaussendung der Ausrüstung"]}
+      {
+        "id": "R1",
+        "element_ids": [
+          "E1"
+        ],
+        "thema": "Sonderrechte und Wegerecht",
+        "kenngroessen": [
+          "berechtigte Organisation",
+          "Einsatzlagen für blaues Blinklicht mit Einsatzhorn",
+          "Einsatzlagen für blaues Blinklicht allein"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "StVO § 35 Sonderrechte (Deutschland)",
+            "quellen_id": "Q6",
+            "fundstelle": "§ 35 Abs. 1"
+          },
+          {
+            "bezeichnung": "StVO § 38 Blaues und gelbes Blinklicht (Deutschland)",
+            "quellen_id": "Q7",
+            "fundstelle": "§ 38 Abs. 1 und 2"
+          }
+        ]
+      },
+      {
+        "id": "R2",
+        "element_ids": [
+          "E2",
+          "E3",
+          "E6"
+        ],
+        "thema": "Erkennbarkeit und Kennzeichnung",
+        "kenngroessen": [
+          "Farbgebung",
+          "Anteil retroreflektierender Markierung",
+          "Lage und Größe der Luftkennung"
+        ]
+      },
+      {
+        "id": "R3",
+        "element_ids": [
+          "E2",
+          "E7",
+          "E8"
+        ],
+        "thema": "Schutz der Besatzung",
+        "kenngroessen": [
+          "Schutzklasse der Schutzpaneele",
+          "geschützte Fläche",
+          "Zusatzmasse",
+          "Belastbarkeit des Schubbügels"
+        ]
+      },
+      {
+        "id": "R4",
+        "element_ids": [
+          "E13"
+        ],
+        "thema": "Fahrleistung im Einsatz",
+        "kenngroessen": [
+          "Beschleunigung",
+          "Höchstgeschwindigkeit",
+          "Dauerhaltbarkeit bei Einsatzfahrten",
+          "Reichweite"
+        ]
+      },
+      {
+        "id": "R5",
+        "element_ids": [
+          "E23",
+          "E30",
+          "E32"
+        ],
+        "thema": "Energiebilanz im Standbetrieb",
+        "kenngroessen": [
+          "Kapazität der Zusatzbatterie",
+          "Generatorleistung",
+          "Standbetriebsdauer",
+          "Ruhestromverbrauch der Ausrüstung"
+        ]
+      },
+      {
+        "id": "R6",
+        "element_ids": [
+          "E35"
+        ],
+        "thema": "Lenkverhalten und Wendigkeit",
+        "kenngroessen": [
+          "Wendekreis",
+          "Lenkkraft",
+          "Lenkpräzision bei hoher Geschwindigkeit"
+        ]
+      },
+      {
+        "id": "R7",
+        "element_ids": [
+          "E41",
+          "E44"
+        ],
+        "thema": "Bremsleistung bei Wiederholbremsungen",
+        "kenngroessen": [
+          "mittlere Verzögerung",
+          "Anzahl Vollbremsungen ohne Leistungsabfall",
+          "Bremsentemperatur"
+        ]
+      },
+      {
+        "id": "R8",
+        "element_ids": [
+          "E47",
+          "E48",
+          "E53"
+        ],
+        "thema": "Arbeitsplatzergonomie und Personentransport",
+        "kenngroessen": [
+          "Sitzkomfort",
+          "Erreichbarkeit der Bedienteile",
+          "Rundumsicht",
+          "Einstieg in den Fond",
+          "Ausführung der Trennwand"
+        ]
+      },
+      {
+        "id": "R9",
+        "element_ids": [
+          "E57",
+          "E58",
+          "E61"
+        ],
+        "thema": "Zuladung und Unterbringung der Einsatzmittel",
+        "kenngroessen": [
+          "Zuladung",
+          "Laderaumvolumen",
+          "Anhängelast"
+        ]
+      },
+      {
+        "id": "R10",
+        "element_ids": [
+          "E62",
+          "E63",
+          "E68"
+        ],
+        "thema": "Ausrüstungsschnittstelle im Bordnetz",
+        "kenngroessen": [
+          "Anzahl der Ausrüstungsstromkreise",
+          "Absicherung je Stromkreis",
+          "verfügbare Fahrzeugsignale",
+          "schaltbare Ausgänge"
+        ]
+      },
+      {
+        "id": "R11",
+        "element_ids": [
+          "E70",
+          "E72"
+        ],
+        "thema": "Einsatzkommunikation",
+        "kenngroessen": [
+          "unterstützte Funkdienste",
+          "Zertifizierung des Fahrzeugfunkgeräts",
+          "Positionsmeldung",
+          "Verschlüsselung"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "BDBOS-Gesetz § 15a Abs. 1 Satz 1, Zertifizierung der Endgeräte im Digitalfunk BOS (Deutschland)",
+            "quellen_id": "Q8",
+            "fundstelle": "Abschnitt Unter welchen Voraussetzungen können Endgeräte im Digitalfunk BOS eingesetzt werden"
+          }
+        ]
+      },
+      {
+        "id": "R12",
+        "element_ids": [
+          "E75",
+          "E77"
+        ],
+        "thema": "Einsatzdokumentation",
+        "kenngroessen": [
+          "Aufzeichnungsauslöser",
+          "Speicherdauer",
+          "Erfassungsbereich der Kameras"
+        ]
+      },
+      {
+        "id": "R13",
+        "element_ids": [
+          "E83",
+          "E87",
+          "E88"
+        ],
+        "thema": "Assistenz im Einsatzbetrieb",
+        "kenngroessen": [
+          "Abschaltbarkeit von Eingriffen",
+          "Erfassungsbereich der Annäherungswarnung",
+          "freie Sensorsichtfelder"
+        ]
+      },
+      {
+        "id": "R14",
+        "element_ids": [
+          "E90",
+          "E91",
+          "E96"
+        ],
+        "thema": "Optische und akustische Signale",
+        "kenngroessen": [
+          "Anzahl und Anordnung der Warnleuchten",
+          "geometrische Sichtbarkeit",
+          "Verriegelung der Signalbetriebsarten",
+          "Lichtfarben der Signalgeber"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "StVZO § 52 Zusätzliche Scheinwerfer und Leuchten (Deutschland, Kraftfahrzeuge des Vollzugsdienstes der Polizei)",
+            "quellen_id": "Q4",
+            "fundstelle": "§ 52 Abs. 2, 3, 3a und 11"
+          },
+          {
+            "bezeichnung": "StVZO § 55 Einrichtungen für Schallzeichen (Deutschland, Einsatzhorn und Anhaltehorn)",
+            "quellen_id": "Q5",
+            "fundstelle": "§ 55 Abs. 3 und 3a"
+          }
+        ]
+      },
+      {
+        "id": "R15",
+        "element_ids": [
+          "E108",
+          "E109",
+          "E110"
+        ],
+        "thema": "Thermische Belastbarkeit im Leerlauf",
+        "kenngroessen": [
+          "Kühlleistung",
+          "Außentemperaturbereich",
+          "Innenraumtemperatur im Standbetrieb"
+        ]
+      },
+      {
+        "id": "R16",
+        "element_ids": [
+          "E115",
+          "E118"
+        ],
+        "thema": "Einsatzbereitschaft zwischen den Einsätzen",
+        "kenngroessen": [
+          "Ladezustand bei Dienstbeginn",
+          "Nachladezeit"
+        ]
+      },
+      {
+        "id": "R17",
+        "element_ids": [
+          "E62",
+          "E71",
+          "E73"
+        ],
+        "thema": "Elektromagnetische Verträglichkeit von Funk und Ausrüstung",
+        "kenngroessen": [
+          "Sendeleistung und Frequenzbereiche der Funkgeräte",
+          "Antennenpositionen",
+          "Störfestigkeit der Fahrzeugsteuergeräte",
+          "Störaussendung der Ausrüstung"
+        ]
+      }
     ]
   },
   "offene_punkte": [
