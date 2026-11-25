@@ -96,12 +96,12 @@
       "absaetze": [
         {
           "absatz_id": "P1",
-          "text": "Eine Lokomotive ist nach der TSI LOC&PAS, die für das Eisenbahnsystem der Europäischen Union gilt, ein Triebfahrzeug, das nicht für die Aufnahme einer Zuladung ausgelegt ist und im normalen Betrieb von einem Zug abgekuppelt und unabhängig betrieben werden kann. Untergrundbahnen, Straßenbahnen und funktional getrennte örtliche Netze fallen nicht unter diese TSI. Ist das Triebfahrzeug in den Nutzbereich integriert, spricht man von einem Triebwagen oder Triebzug. Am gängigsten sind Dampf-, Diesel- und Elektrolokomotiven; daneben gibt es Zwei- und Mehrsystemfahrzeuge sowie Zweikraftlokomotiven.",
+          "text": "Eine Lokomotive ist nach der TSI LOC&PAS, die für das Eisenbahnsystem der Europäischen Union gilt, ein Triebfahrzeug, das nicht für die Aufnahme einer Zuladung ausgelegt ist und im normalen Betrieb von einem Zug abgekuppelt und unabhängig betrieben werden kann. Untergrundbahnen, Straßenbahnen und funktional getrennte örtliche Netze fallen nicht unter diese TSI. Ebenso ausgenommen sind Rangierloks, die ausschließlich für Rangierbereiche, Bahnhöfe und Depots ausgelegt sind. Die Lärmanforderungen der TSI NOI, Verordnung (EU) Nr. 1304/2014, gelten nach deren Anwendungsbereich zusätzlich. Ist das Triebfahrzeug in den Nutzbereich integriert, spricht man von einem Triebwagen oder Triebzug. Am gängigsten sind Dampf-, Diesel- und Elektrolokomotiven; daneben gibt es Zwei- und Mehrsystemfahrzeuge sowie Zweikraftlokomotiven.",
           "begruendung": "belegt",
           "belege": [
             {
               "quellen_id": "Q1",
-              "fundstelle": "Kapitel 1, Abschn. 1.1 Technischer Anwendungsbereich und 1.2 Geografischer Anwendungsbereich; Abschn. 2.2.2 A (1) Verbrennungs-Triebfahrzeuge oder elektrische Triebfahrzeuge"
+              "fundstelle": "Kapitel 1, Abschn. 1.1 Technischer Anwendungsbereich und 1.2 Geografischer Anwendungsbereich; Abschn. 2.1 Das Teilsystem „Fahrzeuge“ als Teil des Eisenbahnsystems der Europäischen Union; Abschn. 2.2.2 A (1) Verbrennungs-Triebfahrzeuge oder elektrische Triebfahrzeuge (Lokomotive, Rangierlok); Abschn. 2.3.1 A (1) Ausnahmen vom Anwendungsbereich"
             },
             {
               "quellen_id": "Q3",
@@ -160,16 +160,19 @@
         },
         {
           "absatz_id": "P4",
-          "text": "Fahrzeugstruktur und Fahrwerk tragen alle Fahrzeuglasten und ziehen über die Zug- und Stoßeinrichtung den Wagenzug. Die Gewichtskraft führt vom Lokomotivkasten mit Rahmen und Maschinenraum über die Federung in die Drehgestelle und über Radsatzlager und Radsätze ins Gleis; die Zugkraft läuft von den Radsätzen über Drehgestell und Rahmen zur Endkupplung, Druckkräfte nehmen die Puffer auf. Ein Bahnräumer schützt die Räder des führenden Radsatzes. Weil das Gleis die Spurführung übernimmt, entfällt ein Lenksystem.",
+          "text": "Fahrzeugstruktur und Fahrwerk tragen alle Fahrzeuglasten und ziehen über die Zug- und Stoßeinrichtung den Wagenzug. Die Gewichtskraft führt vom Lokomotivkasten mit Rahmen und Maschinenraum über die Federung in die Drehgestelle und über Radsatzlager und Radsätze ins Gleis; die Zugkraft läuft von den Radsätzen über Drehgestell und Rahmen zur Endkupplung, Druckkräfte nehmen die Puffer auf. Die Achsfolge mit der Zahl der Drehgestelle, Radsätze und angetriebenen Radsätze ändert die Struktur: Drehgestelle tragen je zwei oder drei Radsätze, Einrahmenlokomotiven zwei oder drei Radsätze am Rahmen; davon hängen Zahl der Traktionsmaschinen, Radsatzantriebe und Traktionsstromrichter sowie die Rahmenlänge ab. Ein Bahnräumer schützt die Räder des führenden Radsatzes. Weil das Gleis die Spurführung übernimmt, entfällt ein Lenksystem.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "P3",
               "Q1 Abschn. 4.2.3.7: Bahnräumer schützen die Räder der führenden Radsatzwelle",
-              "Q7 Einleitung: Das Laufwerk führt das Fahrzeug im Gleis und überträgt Antriebs- und Bremskräfte auf das Gleis"
+              "Q7 Einleitung: Das Laufwerk führt das Fahrzeug im Gleis und überträgt Antriebs- und Bremskräfte auf das Gleis",
+              "Q7 Abschn. Laufwerksanordnungen: kurze Fahrzeuge mit zwei oder drei Radsätzen direkt am Aufbau, sonst zwei Drehgestelle mit je zwei oder drei Radsätzen",
+              "Q3 Abschn. Elektrolokomotiven: Einzelachsantrieb, Radsätze mit Fahrmotor in paarig angeordneten Drehgestellen mit je zwei oder drei Radsätzen",
+              "Q4 Abschn. Fahrsteuerung bei Wechselstromfahrzeugen, Antrieb durch Drehstrommotoren: Traktionsstromrichter meist einer pro Drehgestell oder einer pro Fahrmotor"
             ],
-            "schluss": "Der Lastpfad führt vom Kasten über Federung, Drehgestell, Radsatzlager und Radsatz ins Gleis und von den Radsätzen über den Rahmen zur Endkupplung; ein Lenksystem ist wegen der Spurführung nicht erforderlich."
+            "schluss": "Der Lastpfad führt vom Kasten über Federung, Drehgestell, Radsatzlager und Radsatz ins Gleis und von den Radsätzen über den Rahmen zur Endkupplung; die Achsfolge bestimmt Zahl der Traktionsmaschinen, Radsatzantriebe und Traktionsstromrichter sowie die Rahmenlänge; ein Lenksystem ist wegen der Spurführung nicht erforderlich."
           },
           "sicherheit": "hoch",
           "aussagetyp": "loesung",
@@ -205,7 +208,7 @@
         },
         {
           "absatz_id": "P6",
-          "text": "Das Antriebssystem erzeugt die Antriebsleistung und überträgt das Drehmoment auf die Radsätze. Seine Kraftübertragung umfasst je nach Antriebsart Traktionsstromrichter und Traktionsmaschine, die bei der dieselelektrischen Lokomotive vom Hauptgenerator des Energieversorgungssystems gespeist werden, oder Strömungsgetriebe und Gelenkwelle sowie stets den Radsatzantrieb. Verbrennungsmotor und Abgasanlage gehören nur zu Lokomotiven mit Verbrennungsmotor. Die gewählte Antriebsart bestimmt, welche Speicher und Wandler Energieversorgung und Thermomanagement bereitstellen müssen.",
+          "text": "Das Antriebssystem erzeugt die Antriebsleistung und überträgt das Drehmoment auf die Radsätze. Seine Kraftübertragung umfasst je nach Antriebsart Traktionsmaschine und Traktionsstromrichter oder Strömungsgetriebe und Gelenkwelle sowie stets den Radsatzantrieb. Bei der dieselelektrischen Lokomotive speist der Hauptgenerator die Traktionsmaschinen, bei heutigen Drehstromfahrmotoren über Traktionsstromrichter, bei älteren Gleichstromfahrmotoren ohne sie. Verbrennungsmotor, Abgasanlage und Abgasnachbehandlung gehören nur zu Lokomotiven mit Verbrennungsmotor. Die gewählte Antriebsart bestimmt, welche Speicher und Wandler Energieversorgung und Thermomanagement bereitstellen müssen.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -213,11 +216,12 @@
               "P5",
               "Q5 Abschn. Aufbau: Drehgestellbauart mit Gelenkwellen bei dieselhydraulischem Antrieb",
               "Q5 Abschn. Elektrische Kraftübertragung: Generatoren, Steuerung und Fahrmotoren ersetzen Kupplungen, Getriebe und Wandler",
-              "Ein Verbrennungsmotor benötigt eine Abgasführung"
+              "Q5 Abschn. Elektrische Kraftübertragung: Bauformen mit Gleichstromgenerator und Gleichstromfahrmotoren, Drehstromgenerator mit Diodengleichrichtung und Gleichstromfahrmotoren oder Drehstromgenerator mit Drehstromfahrmotoren; Steuerung über die Erregermaschine",
+              "Ein Verbrennungsmotor benötigt eine Abgasführung; die Abgasnachbehandlung steht in der Zuordnungsliste unter dem Antriebssystem (Emissionsvorschriften als Recherchepunkt offen)"
             ],
-            "schluss": "Die Kraftübertragung ist das variantenabhängige Subsystem des Antriebssystems; Radsatzantrieb und Radsätze sind allen Antriebsarten gemeinsam."
+            "schluss": "Die Kraftübertragung ist das variantenabhängige Subsystem des Antriebssystems; Traktionsstromrichter gehören bei dieselelektrischem Antrieb nur zu Bauarten mit Drehstromfahrmotoren, Verbrennungsmotor, Abgasanlage und Abgasnachbehandlung nur zu Lokomotiven mit Verbrennungsmotor; Radsatzantrieb und Radsätze sind allen Antriebsarten gemeinsam."
           },
-          "sicherheit": "hoch",
+          "sicherheit": "mittel",
           "aussagetyp": "loesung",
           "herangezogene_artikel_ids": []
         }
@@ -307,19 +311,23 @@
         },
         {
           "absatz_id": "P11",
-          "text": "Das Bremssystem der Lokomotive verzögert das eigene Fahrzeug und gibt zugleich den Bremsbefehl an den Zug. Die Druckluftbremse mit Führerbremsventil, Hauptluftleitung, Steuerventil und Bremszylinder wirkt auf die Radsätze; die Hauptluftleitung wird an der Endkupplung zum Wagenzug durchgekuppelt. Die elektrodynamische Bremse nutzt die Traktionsmaschinen als Generatoren und gibt die Energie an einen Bremswiderstand oder als Nutzbremse an die Fahrleitung ab; das Gleitschutzsystem begrenzt die Bremskraft auf den verfügbaren Kraftschluss.",
+          "text": "Das Bremssystem der Lokomotive verzögert das eigene Fahrzeug und gibt zugleich den Bremsbefehl an den Zug. Die Druckluftbremse mit Führerbremsventil, Hauptluftleitung, Steuerventil, Hilfsluftbehälter und Bremszylinder wirkt auf die Radsätze. Die Hauptluftleitung ist Signal- und Nachfüllweg: Sie füllt den Hilfsluftbehälter, aus dem das Steuerventil beim Bremsen die Bremszylinder speist, und ist an der Endkupplung zum Wagenzug durchgekuppelt. Bei elektrischer Kraftübertragung nutzt die elektrodynamische Bremse die Traktionsmaschinen als Generatoren und gibt die Energie an einen Bremswiderstand ab, bei Elektrolokomotiven als Nutzbremse auch an eine aufnahmefähige Fahrleitung, bei Batterielokomotiven an die Traktionsbatterie; dieselhydraulische Lokomotiven bremsen hydrodynamisch über das Strömungsgetriebe. Das Gleitschutzsystem begrenzt die Bremskraft auf den verfügbaren Kraftschluss.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "P10",
-              "Q4 Abschn. Elektrodynamische Bremsung: Widerstandsbremse und Nutzbremse",
+              "P5",
+              "P7: Batterielokomotiven laden ihre Batterien durch Nutzbremsung",
+              "Q4 Abschn. Elektrodynamische Bremsung: Widerstandsbremse und Nutzbremse, Nutzbremse setzt ein aufnahmefähiges Fahrleitungsnetz voraus",
+              "Q5 Abschn. Kraftübertragung: hydro- oder elektrodynamische Bremse",
               "Q1 Abschn. 4.2.4.6.2: Gleitschutzsystem steuert Reibungs- und dynamische Bremskraft",
+              "Q6 Abschn. Indirekt wirkende Druckluftbremse: Hauptluftleitung ist Energieversorger und Signalweg, der Hilfsluftbehälter wird über das Steuerventil aus der Hauptluftleitung nachgefüllt, beim Bremsen leiten die Steuerventile Druckluft aus den Hilfsluftbehältern in die Bremszylinder",
               "Q6: Hauptluftleitung ist durchgehend mit allen Fahrzeugen verbunden"
             ],
-            "schluss": "Das Bremssystem besteht aus Druckluftbremse, direkter Bremse, Feststellbremse, elektrodynamischer Bremse mit Bremswiderstand und Gleitschutzsystem und ist pneumatisch mit dem Wagenzug gekoppelt."
+            "schluss": "Das Bremssystem besteht aus Druckluftbremse mit Hilfsluftbehälter, direkter Bremse, Feststellbremse, einer von der Kraftübertragung abhängigen dynamischen Bremse und Gleitschutzsystem und ist pneumatisch mit dem Wagenzug gekoppelt."
           },
-          "sicherheit": "hoch",
+          "sicherheit": "mittel",
           "aussagetyp": "loesung",
           "herangezogene_artikel_ids": []
         }
@@ -387,16 +395,17 @@
         },
         {
           "absatz_id": "P15",
-          "text": "Elektrik und Elektronik verteilen die Energie unterhalb der Traktionsebene: Die Hilfsbetriebeversorgung speist Lüfter, Pumpen und Kompressor, das Niedervolt-Bordnetz versorgt aus der Bordnetzbatterie Steuerung, Zugsicherung und Beleuchtung. Über den Fahrzeugbus tauschen Fahrzeugmanagement, Stromrichter, Bremssteuerung und Diagnose Daten aus. Bei Diesellokomotiven speist der Hauptgenerator oder ein eigener Generator die Hilfsbetriebe.",
+          "text": "Elektrik und Elektronik verteilen die Energie unterhalb der Traktionsebene: Die Hilfsbetriebeversorgung speist Lüfter, Pumpen und Kompressor, das Niedervolt-Bordnetz versorgt aus der Bordnetzbatterie Steuerung, Zugsicherung und Beleuchtung. Über den Fahrzeugbus tauschen Fahrzeugmanagement, Stromrichter, Bremssteuerung und Diagnose Daten aus. Bei Diesellokomotiven speist der Hauptgenerator oder ein eigener Generator die Hilfsbetriebe. Ein Batterieladegerät lädt die Bordnetzbatterie aus Hilfsbetriebeversorgung, Transformatoranzapfung oder bei Diesellokomotiven aus dem Generator.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "P14",
               "Q5 Abschn. Nebenbetriebe: elektrische Energie für Beleuchtung, Lüfterantriebe und Batterieladung aus Hauptgenerator oder eigenem Generator",
+              "Q4 Abschn. Hilfsbetriebe: Ladegerät der Akkumulatoren, versorgt aus dem Hilfsbetriebe-Bordnetz, einer Transformatoranzapfung oder einem separaten Umformer",
               "Verteilte Steuergeräte benötigen ein gemeinsames Kommunikationsnetz"
             ],
-            "schluss": "Das Hauptsystem gliedert sich in Hilfsbetriebeversorgung mit Hilfsbetriebeumrichter und Niedervolt-Bordnetz, Fahrzeugbus und Schutzeinrichtungen."
+            "schluss": "Das Hauptsystem gliedert sich in Hilfsbetriebeversorgung mit Hilfsbetriebeumrichter, Batterieladegerät und Niedervolt-Bordnetz, Fahrzeugbus und Schutzeinrichtungen."
           },
           "sicherheit": "mittel",
           "aussagetyp": "loesung",
@@ -428,17 +437,18 @@
         },
         {
           "absatz_id": "P17",
-          "text": "Fahrzeugsteuerung und Information bilden die logische Ebene. Das Fahrzeugmanagement setzt die Sollwerte des Führerstands in Anforderungen an Traktionsstromrichter und Bremssteuerung um und steuert bei Mehrfachtraktion weitere Lokomotiven von einem Führerraum aus. Die Diagnose sammelt Zustandsmeldungen, etwa der Radsatzlagerüberwachung, die Ereignisaufzeichnung speichert Fahrdaten, der Zugfunk verbindet den Triebfahrzeugführer mit der Betriebsleitung.",
+          "text": "Fahrzeugsteuerung und Information bilden die logische Ebene. Das Fahrzeugmanagement setzt die Sollwerte des Führerstands in Anforderungen an Traktionsstromrichter und Bremssteuerung um und steuert bei Mehrfachtraktion weitere Lokomotiven von einem Führerraum aus. Bei Mehrfachtraktion und Wendezugbetrieb verbindet eine Zugsteuerleitung oder ein Zugbus die Fahrzeuge, sodass auch ein Steuerwagen am anderen Zugende Traktion und Bremse steuern kann. Die Diagnose sammelt Zustandsmeldungen, etwa der Radsatzlagerüberwachung, die Ereignisaufzeichnung speichert Fahrdaten, der Zugfunk verbindet den Triebfahrzeugführer mit der Betriebsleitung.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "P16",
               "Q1 Abschn. 2.2.1 g: Mehrfachtraktion von einem Führerraum aus steuerbar",
+              "Q6 Abschn. Indirekt wirkende Druckluftbremse: Die durchgehende Bremse wird vom Führerstand eines Triebfahrzeugs oder eines Steuerwagens aus bedient",
               "Q1 Abschn. 4.2.3.3.2.1: fahrzeugseitige Radsatzlagerüberwachung mit Diagnosemeldungen an Bord",
               "P14"
             ],
-            "schluss": "Fahrzeugmanagement, Diagnose mit Ereignisaufzeichnung und Radsatzlagerüberwachung sowie Zugfunk bilden das Hauptsystem."
+            "schluss": "Fahrzeugmanagement mit Zugsteuerleitung, Diagnose mit Ereignisaufzeichnung und Radsatzlagerüberwachung sowie Zugfunk bilden das Hauptsystem."
           },
           "sicherheit": "mittel",
           "aussagetyp": "funktion",
@@ -508,17 +518,18 @@
         },
         {
           "absatz_id": "P21",
-          "text": "Weil eine Lokomotive mit zwei Führerständen in beiden Richtungen an der Zugspitze fährt, besitzt jedes Ende Außenleuchten mit Scheinwerfer und Signalleuchten, die je nach Fahrtrichtung Spitzen- oder Schlussbild zeigen. Die Sichteinrichtungen mit Scheibenwischer und Außenspiegel sichern die Fahrersicht, das Signalhorn die akustische Warnung. Versorgt werden die Leuchten aus dem Niedervolt-Bordnetz, bedient vom Führerstand.",
+          "text": "Weil eine Lokomotive in beide Richtungen fährt und auch am Zugende läuft, besitzt sie unabhängig von der Anordnung der Führerstände an beiden Fahrzeugenden Außenleuchten mit Scheinwerfer und Signalleuchten, die je nach Fahrtrichtung Spitzen- oder Schlussbild zeigen. Je Führerstand sichern Sichteinrichtungen mit Scheibenwischer und Außenspiegel die Fahrersicht, das Signalhorn die akustische Warnung. Versorgt werden die Leuchten aus dem Niedervolt-Bordnetz, bedient vom Führerstand.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "P20",
               "P12",
+              "Q5 Abschn. Aufbau: Führerstände an beiden Enden, an einem Ende oder in der Mitte",
               "P14: Akkumulatoren versorgen die Signalbeleuchtung",
               "Q4 Abschn. Mechanische Zubehörteile: akustische Signalanlage und Scheibenreinigungsanlage"
             ],
-            "schluss": "An jedem Ende mit Führerstand sind Außenleuchten, Signalhorn und Sichteinrichtungen vorhanden, versorgt aus dem Niedervolt-Bordnetz."
+            "schluss": "An beiden Fahrzeugenden sind Außenleuchten vorhanden, Signalhorn und Sichteinrichtungen je Führerstand; versorgt werden die Leuchten aus dem Niedervolt-Bordnetz."
           },
           "sicherheit": "mittel",
           "aussagetyp": "loesung",
@@ -910,6 +921,15 @@
         ]
       },
       {
+        "id": "E140",
+        "name": "Abgasnachbehandlung",
+        "typ": "komponente",
+        "eltern_id": "E20",
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
         "id": "E23",
         "name": "Kraftübertragung",
         "typ": "subsystem",
@@ -1186,6 +1206,15 @@
         ]
       },
       {
+        "id": "E61",
+        "name": "Hilfsluftbehälter",
+        "typ": "komponente",
+        "eltern_id": "E51",
+        "absatz_ids": [
+          "P11"
+        ]
+      },
+      {
         "id": "E56",
         "name": "Direkte Bremse",
         "typ": "komponente",
@@ -1331,6 +1360,15 @@
         ]
       },
       {
+        "id": "E86",
+        "name": "Batterieladegerät",
+        "typ": "komponente",
+        "eltern_id": "E81",
+        "absatz_ids": [
+          "P15"
+        ]
+      },
+      {
         "id": "E84",
         "name": "Fahrzeugbus",
         "typ": "komponente",
@@ -1405,6 +1443,15 @@
         "eltern_id": "E90",
         "absatz_ids": [
           "P14",
+          "P17"
+        ]
+      },
+      {
+        "id": "E96",
+        "name": "Zugsteuerleitung",
+        "typ": "komponente",
+        "eltern_id": "E90",
+        "absatz_ids": [
           "P17"
         ]
       },
@@ -2293,10 +2340,11 @@
         "id": "S24",
         "von": "E53",
         "nach": "E54",
-        "art": "pneumatisch",
-        "medium": "Druckluft",
+        "art": "information",
+        "medium": "Bremssteuerdruck",
         "absatz_ids": [
-          "P10"
+          "P10",
+          "P11"
         ]
       },
       {
@@ -2306,7 +2354,8 @@
         "art": "pneumatisch",
         "medium": "Druckluft",
         "absatz_ids": [
-          "P10"
+          "P10",
+          "P11"
         ]
       },
       {
@@ -2468,6 +2517,47 @@
           "P14"
         ],
         "schnittstelle": "Auslösebefehl an den Hauptschalter"
+      },
+      {
+        "id": "S40",
+        "von": "E53",
+        "nach": "E61",
+        "art": "pneumatisch",
+        "medium": "Druckluft zum Nachfüllen",
+        "absatz_ids": [
+          "P11"
+        ]
+      },
+      {
+        "id": "S41",
+        "von": "E61",
+        "nach": "E54",
+        "art": "pneumatisch",
+        "medium": "Druckluft",
+        "absatz_ids": [
+          "P11"
+        ]
+      },
+      {
+        "id": "S42",
+        "von": "E86",
+        "nach": "E41",
+        "art": "elektrisch",
+        "medium": "Ladestrom",
+        "absatz_ids": [
+          "P15"
+        ],
+        "schnittstelle": "Ladeanschluss der Bordnetzbatterie"
+      },
+      {
+        "id": "S43",
+        "von": "E82",
+        "nach": "E86",
+        "art": "elektrisch",
+        "medium": "Hilfsbetriebestrom",
+        "absatz_ids": [
+          "P15"
+        ]
       }
     ],
     "entfallene_kategorien": [
@@ -2528,6 +2618,10 @@
           {
             "element_id": "E81",
             "beschreibung": "Hilfsbetriebe aus Transformatoranzapfung, Fahrleitung oder Generator."
+          },
+          {
+            "element_id": "E140",
+            "beschreibung": "Abgasanlage und Abgasnachbehandlung nur bei Antrieben mit Verbrennungsmotor."
           }
         ],
         "absatz_ids": [
@@ -2608,6 +2702,42 @@
         ]
       },
       {
+        "id": "V8",
+        "element_id": "E7",
+        "bezeichnung": "Achsfolge",
+        "alternativen": [
+          "Zwei Drehgestelle mit je zwei Radsätzen",
+          "Zwei Drehgestelle mit je drei Radsätzen",
+          "Einrahmenlaufwerk mit zwei oder drei Radsätzen"
+        ],
+        "auswahlkriterien": [
+          "zulässige Radsatzlast",
+          "erforderliche Anfahrzugkraft",
+          "Bogenläufigkeit"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E28",
+            "beschreibung": "Anzahl der Traktionsmaschinen nach Zahl der angetriebenen Radsätze."
+          },
+          {
+            "element_id": "E29",
+            "beschreibung": "Anzahl der Radsatzantriebe."
+          },
+          {
+            "element_id": "E27",
+            "beschreibung": "Anzahl der Traktionsstromrichter, je Drehgestell oder je Fahrmotor."
+          },
+          {
+            "element_id": "E3",
+            "beschreibung": "Rahmenlänge des Lokomotivkastens."
+          }
+        ],
+        "absatz_ids": [
+          "P4"
+        ]
+      },
+      {
         "id": "V4",
         "element_id": "E29",
         "bezeichnung": "Art des Radsatzantriebs",
@@ -2656,7 +2786,7 @@
           },
           {
             "element_id": "E111",
-            "beschreibung": "Außenleuchten an jedem Fahrzeugende mit Führerstand."
+            "beschreibung": "Außenleuchten mit Scheinwerfern und Signalleuchten an beiden Fahrzeugenden in allen Anordnungen; je nach Anordnung ändern sich die Bedienstellen für die Leuchten und ihre Zuordnung zur Fahrtrichtung."
           },
           {
             "element_id": "E115",
@@ -2664,7 +2794,7 @@
           },
           {
             "element_id": "E91",
-            "beschreibung": "Fahrzeugmanagement muss bei einem Endführerstand Mehrfachtraktion unterstützen."
+            "beschreibung": "Fahrzeugmanagement mit Mehrfachtraktionssteuerung wird bei einem Endführerstand häufig verlangt."
           }
         ],
         "absatz_ids": [
@@ -2679,9 +2809,11 @@
         "alternativen": [
           "Widerstandsbremse",
           "Nutzbremse mit Rückspeisung",
+          "Hydrodynamische Bremse (bei dieselhydraulischem Antrieb)",
           "keine dynamische Bremse"
         ],
         "auswahlkriterien": [
+          "Antriebsart und Kraftübertragung",
           "Rückspeisefähigkeit der Fahrleitung",
           "Bremsenergie auf Gefällestrecken",
           "Verschleiß der Reibungsbremse"
@@ -2698,9 +2830,14 @@
           {
             "element_id": "E37",
             "beschreibung": "Bei Batterielokomotiven lädt die Nutzbremse die Traktionsbatterie."
+          },
+          {
+            "element_id": "E25",
+            "beschreibung": "Strömungsgetriebe mit Bremsstufe und Wärmeabfuhr über den Kühlkreislauf."
           }
         ],
         "absatz_ids": [
+          "P5",
           "P11"
         ]
       },
@@ -2769,6 +2906,19 @@
         "relevanz": "Davon hängen Radsatzantrieb, Gelenkwellen und Kastenstruktur ab.",
         "variante_ids": [
           "V3"
+        ]
+      },
+      {
+        "id": "K19",
+        "frage": "Wie viele Drehgestelle und Radsätze soll die Lokomotive erhalten, und welche Radsätze sollen angetrieben werden?",
+        "element_ids": [
+          "E7",
+          "E20"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Zahl der Traktionsmaschinen, Radsatzantriebe und Traktionsstromrichter, Radsatzlast und Rahmenlänge ab.",
+        "variante_ids": [
+          "V8"
         ]
       },
       {
@@ -2862,13 +3012,14 @@
       },
       {
         "id": "K12",
-        "frage": "Soll die Lokomotive in Mehrfachtraktion oder mit verteilter Traktion betrieben werden, und über welche Steuerleitung werden die Lokomotiven verbunden?",
+        "frage": "Soll die Lokomotive in Mehrfachtraktion, mit verteilter Traktion oder im Wendezugbetrieb von einem Steuerwagen aus gesteuert werden, und über welche Steuerleitung oder welchen Zugbus werden die Fahrzeuge verbunden?",
         "element_ids": [
           "E90",
-          "E91"
+          "E91",
+          "E96"
         ],
         "anlass": "schnittstelle",
-        "relevanz": "Davon hängen Fahrzeugmanagement, Fahrzeugbus und Kupplungsschnittstellen ab."
+        "relevanz": "Davon hängen Fahrzeugmanagement, Fahrzeugbus, Zugsteuerleitung und Kupplungsschnittstellen sowie die Zugbusschnittstelle und die Fernsteuerung von Traktion und Bremse ab."
       },
       {
         "id": "K13",
@@ -2921,6 +3072,15 @@
           "V3",
           "V5"
         ]
+      },
+      {
+        "id": "K18",
+        "frage": "Welche Zugmassen soll die Lokomotive mit welcher Höchstgeschwindigkeit und auf welchen maßgebenden Steigungen befördern, gegebenenfalls in Mehrfachtraktion?",
+        "element_ids": [
+          "E20"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Antriebsleistung, Anfahrzugkraft, Achsfolge, Kühlleistung und Bremsauslegung ab."
       }
     ],
     "anforderungsthemen": [
@@ -2938,9 +3098,31 @@
         ],
         "regelwerke": [
           {
-            "bezeichnung": "TSI LOC&PAS, Verordnung (EU) Nr. 1302/2014 (Eisenbahnsystem der EU)",
+            "bezeichnung": "TSI LOC&PAS, Verordnung (EU) Nr. 1302/2014 (Eisenbahnsystem der EU, ohne Rangierloks)",
             "quellen_id": "Q1",
             "fundstelle": "Abschn. 4.2.8.1.1 und 4.2.8.1.2"
+          }
+        ]
+      },
+      {
+        "id": "R14",
+        "element_ids": [
+          "E20"
+        ],
+        "thema": "Geräusch- und Abgasemissionen",
+        "kenngroessen": [
+          "Standgeräusch",
+          "Anfahrgeräusch",
+          "Vorbeifahrgeräusch",
+          "Geräuschpegel im Führerraum",
+          "Emissionsstufe des Verbrennungsmotors",
+          "Partikel- und Stickoxidemission"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "TSI NOI, Verordnung (EU) Nr. 1304/2014, über den Verweis der TSI LOC&PAS (Eisenbahnsystem der EU, gemäß Anwendungsbereich der TSI NOI)",
+            "quellen_id": "Q1",
+            "fundstelle": "Abschn. 2.1 Das Teilsystem „Fahrzeuge“ als Teil des Eisenbahnsystems der Europäischen Union"
           }
         ]
       },
@@ -2959,7 +3141,7 @@
         ],
         "regelwerke": [
           {
-            "bezeichnung": "TSI LOC&PAS (Eisenbahnsystem der EU)",
+            "bezeichnung": "TSI LOC&PAS (Eisenbahnsystem der EU, ohne Rangierloks)",
             "quellen_id": "Q1",
             "fundstelle": "Abschn. 4.2.2.2.3 Endkupplung; 4.2.2.5 Passive Sicherheit; 4.2.3.6 Minimaler Bogenhalbmesser"
           }
@@ -2979,7 +3161,7 @@
         ],
         "regelwerke": [
           {
-            "bezeichnung": "TSI LOC&PAS (Eisenbahnsystem der EU)",
+            "bezeichnung": "TSI LOC&PAS (Eisenbahnsystem der EU, ohne Rangierloks)",
             "quellen_id": "Q1",
             "fundstelle": "Abschn. 4.2.3.2.1 Radsatzlastparameter; 4.2.3.2.2 Radlast; 4.2.3.4.2 Dynamisches Fahrverhalten; 4.2.3.4.3 Äquivalente Konizität"
           }
@@ -2999,7 +3181,7 @@
         ],
         "regelwerke": [
           {
-            "bezeichnung": "TSI LOC&PAS (Eisenbahnsystem der EU)",
+            "bezeichnung": "TSI LOC&PAS (Eisenbahnsystem der EU, ohne Rangierloks)",
             "quellen_id": "Q1",
             "fundstelle": "Abschn. 4.2.8.2.1 bis 4.2.8.2.9"
           }
@@ -3034,7 +3216,7 @@
         ],
         "regelwerke": [
           {
-            "bezeichnung": "TSI LOC&PAS (Eisenbahnsystem der EU)",
+            "bezeichnung": "TSI LOC&PAS (Eisenbahnsystem der EU, ohne Rangierloks)",
             "quellen_id": "Q1",
             "fundstelle": "Abschn. 4.2.4.1 Allgemeines; 4.2.4.2 Funktionale und sicherheitsrelevante Anforderungen; 4.2.4.5 Bremsvermögen"
           },
@@ -3059,7 +3241,7 @@
         ],
         "regelwerke": [
           {
-            "bezeichnung": "TSI LOC&PAS (Eisenbahnsystem der EU)",
+            "bezeichnung": "TSI LOC&PAS (Eisenbahnsystem der EU, ohne Rangierloks)",
             "quellen_id": "Q1",
             "fundstelle": "Abschn. 4.2.9.1 Führerraum; 4.2.4.4.1 Schnellbremsbefehl"
           }
@@ -3103,7 +3285,7 @@
             "fundstelle": "§ 229.135 Event recorders"
           },
           {
-            "bezeichnung": "TSI LOC&PAS (Eisenbahnsystem der EU)",
+            "bezeichnung": "TSI LOC&PAS (Eisenbahnsystem der EU, ohne Rangierloks)",
             "quellen_id": "Q1",
             "fundstelle": "Abschn. 4.2.3.3.2 Überwachung des Zustands der Radsatzlager"
           }
@@ -3123,7 +3305,7 @@
         ],
         "regelwerke": [
           {
-            "bezeichnung": "TSI LOC&PAS (Eisenbahnsystem der EU)",
+            "bezeichnung": "TSI LOC&PAS (Eisenbahnsystem der EU, ohne Rangierloks)",
             "quellen_id": "Q1",
             "fundstelle": "Abschn. 4.2.9.3.1 Wachsamkeitskontrolle; 4.2.10.3.3; 4.2.10.3.5"
           },
@@ -3149,7 +3331,7 @@
         ],
         "regelwerke": [
           {
-            "bezeichnung": "TSI LOC&PAS (Eisenbahnsystem der EU)",
+            "bezeichnung": "TSI LOC&PAS (Eisenbahnsystem der EU, ohne Rangierloks)",
             "quellen_id": "Q1",
             "fundstelle": "Abschn. 4.2.7.1 Außenleuchten; 4.2.7.2 Signalhorn"
           },
@@ -3173,7 +3355,7 @@
         ],
         "regelwerke": [
           {
-            "bezeichnung": "TSI LOC&PAS (Eisenbahnsystem der EU)",
+            "bezeichnung": "TSI LOC&PAS (Eisenbahnsystem der EU, ohne Rangierloks)",
             "quellen_id": "Q1",
             "fundstelle": "Abschn. 4.2.6.1.1 Temperatur; 4.2.9.1.7 Klimasteuerung und Luftqualität"
           }
@@ -3210,6 +3392,8 @@
     "Recherchebedarf: Fachliteratur zum Brennstoffzellenantrieb von Lokomotiven (Suchbegriff Wasserstoff Rangierlokomotive Brennstoffzelle Pufferbatterie) zur Belegung von P9.",
     "Recherchebedarf: Lehrbuch Schienenfahrzeugtechnik, etwa Schindler (Hrsg.), Handbuch Schienenfahrzeuge, zur Belegung von Fahrzeugmanagement, Mehrfachtraktion und Fahrzeugbus (P15, P17).",
     "Recherchebedarf: TSI ZZS (Zugsteuerung, Zugsicherung und Signalgebung) zur Belegung der fahrzeugseitigen Zugbeeinflussung und der Bremsschnittstellen (P19).",
-    "Recherchebedarf: EN-Normen zu Klimatisierung des Führerraums und zu Bremswiderständen (Suchbegriff Führerraum Klimatisierung Norm Schienenfahrzeuge) für P23 und Variante V6."
+    "Recherchebedarf: EN-Normen zu Klimatisierung des Führerraums und zu Bremswiderständen (Suchbegriff Führerraum Klimatisierung Norm Schienenfahrzeuge) für P23 und Variante V6.",
+    "Recherchebedarf: Emissionsvorschriften für Verbrennungsmotoren von Triebfahrzeugen zur Belegung der Abgasnachbehandlung und der Emissionskenngrößen in R14 (Suchbegriff Verordnung (EU) 2016/1628 Triebwagen Lokomotiven Emissionsstufe).",
+    "Recherchebedarf: Text der TSI NOI, Verordnung (EU) Nr. 1304/2014, auf EUR-Lex zur Belegung der Geräuschkenngrößen in R14 mit Fundstellen (Standgeräusch, Anfahrgeräusch, Vorbeifahrgeräusch, Führerraum)."
   ]
 }
