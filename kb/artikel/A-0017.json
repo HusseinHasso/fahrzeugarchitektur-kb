@@ -4,7 +4,7 @@
   "artikeltyp": "blatt",
   "titel": "Leichtkraftrad",
   "betrachtungsumfang": "Generische Referenzarchitektur des Leichtkraftrads als zweirädriges Kraftrad der EU-Unterklasse L3e-A1 (in Deutschland Fahrerlaubnisklasse A1) in Motorrad- und Rollerbauform mit Fremdzündungs-Verbrennungsmotor, batterieelektrischem Antrieb und Hybridantrieb. Selbstzündungs-, Kreiskolben-, Druckluft- und Brennstoffzellenantriebe, Krafträder mit Beiwagen (L4e), dreirädrige Kraftfahrzeuge sowie die Unter-Unterklassen Enduro und Trial nur als Abgrenzung.",
-  "status": "in_arbeit",
+  "status": "geprueft",
   "quellenzugriff": "ja",
   "kindartikel_ids": [],
   "quellen": [
@@ -765,205 +765,2101 @@
   ],
   "modell": {
     "elemente": [
-      {"id": "E1", "name": "Leichtkraftrad", "typ": "gesamtsystem", "eltern_id": null, "absatz_ids": ["P1", "P2", "P28", "P29"]},
-      {"id": "E2", "name": "Fahrzeugstruktur und Fahrwerk", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P5", "P28", "P29"], "kategorie": "struktur_fahrwerk"},
-      {"id": "E3", "name": "Rahmen", "typ": "subsystem", "eltern_id": "E2", "absatz_ids": ["P3", "P4", "P5", "P6"]},
-      {"id": "E4", "name": "Hauptrahmen", "typ": "komponente", "eltern_id": "E3", "absatz_ids": ["P5", "P13", "P19"]},
-      {"id": "E5", "name": "Heckrahmen", "typ": "komponente", "eltern_id": "E3", "absatz_ids": ["P5", "P19"]},
-      {"id": "E6", "name": "Verkleidung", "typ": "komponente", "eltern_id": "E3", "absatz_ids": ["P5", "P26", "P27"]},
-      {"id": "E7", "name": "Fahrwerk", "typ": "subsystem", "eltern_id": "E2", "absatz_ids": ["P5", "P29"]},
-      {"id": "E8", "name": "Vorderradführung", "typ": "komponente", "eltern_id": "E7", "absatz_ids": ["P5", "P12", "P13"]},
-      {"id": "E9", "name": "Hinterradschwinge", "typ": "komponente", "eltern_id": "E7", "absatz_ids": ["P5", "P6", "P29"]},
-      {"id": "E10", "name": "Federbein", "typ": "komponente", "eltern_id": "E7", "absatz_ids": ["P5", "P19"]},
-      {"id": "E11", "name": "Räder und Reifen", "typ": "komponente", "eltern_id": "E7", "absatz_ids": ["P4", "P5"]},
-      {"id": "E12", "name": "Ständer", "typ": "komponente", "eltern_id": "E2", "absatz_ids": ["P5"]},
-      {"id": "E13", "name": "Antriebssystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P8", "P28", "P29"], "kategorie": "antrieb"},
-      {"id": "E14", "name": "Verbrennungsantrieb", "typ": "subsystem", "eltern_id": "E13", "absatz_ids": ["P8"]},
-      {"id": "E15", "name": "Verbrennungsmotor", "typ": "komponente", "eltern_id": "E14", "absatz_ids": ["P3", "P7", "P8"]},
-      {"id": "E16", "name": "Ansauganlage", "typ": "komponente", "eltern_id": "E14", "absatz_ids": ["P8"]},
-      {"id": "E17", "name": "Abgasanlage", "typ": "komponente", "eltern_id": "E14", "absatz_ids": ["P8"]},
-      {"id": "E18", "name": "Abgasnachbehandlung", "typ": "komponente", "eltern_id": "E14", "absatz_ids": ["P8"]},
-      {"id": "E19", "name": "Startvorrichtung", "typ": "komponente", "eltern_id": "E14", "absatz_ids": ["P8"]},
-      {"id": "E20", "name": "Elektroantrieb", "typ": "subsystem", "eltern_id": "E13", "absatz_ids": ["P8"]},
-      {"id": "E21", "name": "Traktionsmaschine", "typ": "komponente", "eltern_id": "E20", "absatz_ids": ["P8", "P27"]},
-      {"id": "E22", "name": "Leistungselektronik", "typ": "komponente", "eltern_id": "E20", "absatz_ids": ["P8", "P23", "P27"]},
-      {"id": "E23", "name": "Kraftübertragung", "typ": "subsystem", "eltern_id": "E13", "absatz_ids": ["P8", "P29"]},
-      {"id": "E24", "name": "Kupplung", "typ": "komponente", "eltern_id": "E23", "absatz_ids": ["P8", "P9", "P17"]},
-      {"id": "E25", "name": "Getriebe", "typ": "komponente", "eltern_id": "E23", "absatz_ids": ["P3", "P8", "P9"]},
-      {"id": "E26", "name": "Endantrieb", "typ": "komponente", "eltern_id": "E23", "absatz_ids": ["P3", "P8", "P9", "P6"]},
-      {"id": "E27", "name": "Energieversorgungssystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P10", "P28", "P29"], "kategorie": "energieversorgung"},
-      {"id": "E28", "name": "Kraftstoffanlage", "typ": "subsystem", "eltern_id": "E27", "absatz_ids": ["P10"]},
-      {"id": "E29", "name": "Kraftstofftank", "typ": "komponente", "eltern_id": "E28", "absatz_ids": ["P3", "P4", "P10"]},
-      {"id": "E30", "name": "Kraftstoffpumpe", "typ": "komponente", "eltern_id": "E28", "absatz_ids": ["P10"]},
-      {"id": "E31", "name": "Traktionsenergiespeicher", "typ": "subsystem", "eltern_id": "E27", "absatz_ids": ["P10", "P11"]},
-      {"id": "E32", "name": "Traktionsbatterie", "typ": "komponente", "eltern_id": "E31", "absatz_ids": ["P10", "P27"]},
-      {"id": "E33", "name": "Ladeeinrichtung", "typ": "komponente", "eltern_id": "E31", "absatz_ids": ["P10"]},
-      {"id": "E34", "name": "Gleichspannungswandler", "typ": "komponente", "eltern_id": "E31", "absatz_ids": ["P10"]},
-      {"id": "E35", "name": "Bordnetzversorgung", "typ": "subsystem", "eltern_id": "E27", "absatz_ids": ["P10", "P26", "P29"]},
-      {"id": "E36", "name": "Generator", "typ": "komponente", "eltern_id": "E35", "absatz_ids": ["P10", "P29"]},
-      {"id": "E37", "name": "Laderegler", "typ": "komponente", "eltern_id": "E35", "absatz_ids": ["P10"]},
-      {"id": "E38", "name": "Starterbatterie", "typ": "komponente", "eltern_id": "E35", "absatz_ids": ["P10"]},
-      {"id": "E39", "name": "Lenksystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P13", "P28"], "kategorie": "lenkung"},
-      {"id": "E40", "name": "Lenker", "typ": "komponente", "eltern_id": "E39", "absatz_ids": ["P12", "P13"]},
-      {"id": "E41", "name": "Gabelbrücken", "typ": "komponente", "eltern_id": "E39", "absatz_ids": ["P13"]},
-      {"id": "E42", "name": "Lenkkopflager", "typ": "komponente", "eltern_id": "E39", "absatz_ids": ["P13"]},
-      {"id": "E43", "name": "Bremssystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P16", "P28", "P29"], "kategorie": "bremse"},
-      {"id": "E44", "name": "Betriebsbremse", "typ": "subsystem", "eltern_id": "E43", "absatz_ids": ["P14", "P16"]},
-      {"id": "E45", "name": "Bremshebel", "typ": "komponente", "eltern_id": "E44", "absatz_ids": ["P15", "P16"]},
-      {"id": "E46", "name": "Hauptbremszylinder", "typ": "komponente", "eltern_id": "E44", "absatz_ids": ["P16"]},
-      {"id": "E47", "name": "Vorderradbremse", "typ": "komponente", "eltern_id": "E44", "absatz_ids": ["P15", "P16"]},
-      {"id": "E48", "name": "Hinterradbremse", "typ": "komponente", "eltern_id": "E44", "absatz_ids": ["P15", "P16"]},
-      {"id": "E49", "name": "Antiblockiersystem", "typ": "subsystem", "eltern_id": "E43", "absatz_ids": ["P14", "P16", "P29"]},
-      {"id": "E50", "name": "Raddrehzahlsensoren", "typ": "komponente", "eltern_id": "E49", "absatz_ids": ["P16", "P24", "P29"]},
-      {"id": "E51", "name": "Hydraulikaggregat", "typ": "komponente", "eltern_id": "E49", "absatz_ids": ["P16"]},
-      {"id": "E52", "name": "Kombibremse", "typ": "komponente", "eltern_id": "E43", "absatz_ids": ["P14", "P15", "P16"]},
-      {"id": "E53", "name": "Cockpit", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P18", "P28"], "kategorie": "bedienraum"},
-      {"id": "E54", "name": "Fahrerplatz", "typ": "subsystem", "eltern_id": "E53", "absatz_ids": ["P18"]},
-      {"id": "E55", "name": "Sitzbank", "typ": "komponente", "eltern_id": "E54", "absatz_ids": ["P5", "P18", "P19"]},
-      {"id": "E56", "name": "Fußrasten", "typ": "komponente", "eltern_id": "E54", "absatz_ids": ["P18"]},
-      {"id": "E57", "name": "Mensch-Maschine-Schnittstelle", "typ": "subsystem", "eltern_id": "E53", "absatz_ids": ["P18"]},
-      {"id": "E58", "name": "Bedienelemente", "typ": "komponente", "eltern_id": "E57", "absatz_ids": ["P17", "P18"]},
-      {"id": "E59", "name": "Kombiinstrument", "typ": "komponente", "eltern_id": "E57", "absatz_ids": ["P17", "P18", "P23"]},
-      {"id": "E60", "name": "Aufbau und Ladung", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P19", "P28"], "kategorie": "aufbau_nutzlast"},
-      {"id": "E61", "name": "Gepäckträger", "typ": "komponente", "eltern_id": "E60", "absatz_ids": ["P5", "P19"]},
-      {"id": "E62", "name": "Halteeinrichtungen und Fußstützen für Beifahrer", "typ": "komponente", "eltern_id": "E60", "absatz_ids": ["P19"]},
-      {"id": "E63", "name": "Anhängevorrichtung", "typ": "komponente", "eltern_id": "E60", "absatz_ids": ["P19"]},
-      {"id": "E64", "name": "Elektrik und Elektronik", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P21", "P28"], "kategorie": "elektrik_elektronik"},
-      {"id": "E65", "name": "Niedervolt-Bordnetz", "typ": "subsystem", "eltern_id": "E64", "absatz_ids": ["P21", "P26"]},
-      {"id": "E66", "name": "Leitungssatz", "typ": "komponente", "eltern_id": "E65", "absatz_ids": ["P21"]},
-      {"id": "E67", "name": "Sicherungen", "typ": "komponente", "eltern_id": "E65", "absatz_ids": ["P21"]},
-      {"id": "E68", "name": "Stromverteiler", "typ": "komponente", "eltern_id": "E65", "absatz_ids": ["P21"]},
-      {"id": "E69", "name": "Fahrzeugbus", "typ": "komponente", "eltern_id": "E64", "absatz_ids": ["P20", "P21", "P29"]},
-      {"id": "E70", "name": "Fahrzeugsteuerung und Information", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P23", "P28"], "kategorie": "steuerung_information"},
-      {"id": "E71", "name": "Motorsteuergerät", "typ": "komponente", "eltern_id": "E70", "absatz_ids": ["P20", "P23", "P24"]},
-      {"id": "E72", "name": "Diagnose", "typ": "komponente", "eltern_id": "E70", "absatz_ids": ["P22", "P23"]},
-      {"id": "E73", "name": "Fahrerassistenz und Sicherheit", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P24", "P28"], "kategorie": "assistenz_sicherheit"},
-      {"id": "E74", "name": "Betriebssicherung", "typ": "subsystem", "eltern_id": "E73", "absatz_ids": ["P24"]},
-      {"id": "E75", "name": "Notausschalter", "typ": "komponente", "eltern_id": "E74", "absatz_ids": ["P17", "P24"]},
-      {"id": "E76", "name": "Seitenständerschalter", "typ": "komponente", "eltern_id": "E74", "absatz_ids": ["P24"]},
-      {"id": "E77", "name": "Sicherung gegen unbefugte Benutzung", "typ": "komponente", "eltern_id": "E74", "absatz_ids": ["P12", "P24"]},
-      {"id": "E78", "name": "Antriebsschlupfregelung", "typ": "komponente", "eltern_id": "E73", "absatz_ids": ["P20", "P24"]},
-      {"id": "E79", "name": "Hupe", "typ": "komponente", "eltern_id": "E73", "absatz_ids": ["P17", "P24"]},
-      {"id": "E80", "name": "Beleuchtung und Sicht", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P26", "P28"], "kategorie": "beleuchtung_sicht"},
-      {"id": "E81", "name": "Beleuchtungseinrichtungen", "typ": "subsystem", "eltern_id": "E80", "absatz_ids": ["P25", "P26"]},
-      {"id": "E82", "name": "Scheinwerfer", "typ": "komponente", "eltern_id": "E81", "absatz_ids": ["P26"]},
-      {"id": "E83", "name": "Leuchten", "typ": "komponente", "eltern_id": "E81", "absatz_ids": ["P25", "P26"]},
-      {"id": "E84", "name": "Signalleuchten", "typ": "komponente", "eltern_id": "E81", "absatz_ids": ["P25", "P26"]},
-      {"id": "E85", "name": "Tagfahrleuchten", "typ": "komponente", "eltern_id": "E81", "absatz_ids": ["P25", "P26"]},
-      {"id": "E86", "name": "Rückspiegel", "typ": "komponente", "eltern_id": "E80", "absatz_ids": ["P25", "P26"]},
-      {"id": "E87", "name": "Thermomanagement", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P27", "P28"], "kategorie": "thermomanagement"},
-      {"id": "E88", "name": "Kühlkreislauf", "typ": "subsystem", "eltern_id": "E87", "absatz_ids": ["P27"]},
-      {"id": "E89", "name": "Kühler", "typ": "komponente", "eltern_id": "E88", "absatz_ids": ["P27"]},
-      {"id": "E90", "name": "Kühlmittelpumpe", "typ": "komponente", "eltern_id": "E88", "absatz_ids": ["P27"]},
-      {"id": "E91", "name": "Kühlerlüfter", "typ": "komponente", "eltern_id": "E88", "absatz_ids": ["P21", "P27"]},
-      {"id": "E92", "name": "Kühlrippen", "typ": "komponente", "eltern_id": "E87", "absatz_ids": ["P27"]},
-      {"id": "E93", "name": "Aktivkohlebehälter", "typ": "komponente", "eltern_id": "E28", "absatz_ids": ["P10", "P30"]},
-      {"id": "E94", "name": "Batteriemanagementsystem", "typ": "komponente", "eltern_id": "E31", "absatz_ids": ["P10", "P30"]},
-      {"id": "E95", "name": "Thermostat", "typ": "komponente", "eltern_id": "E88", "absatz_ids": ["P27"]}
+      {
+        "id": "E1",
+        "name": "Leichtkraftrad",
+        "typ": "gesamtsystem",
+        "eltern_id": null,
+        "absatz_ids": [
+          "P1",
+          "P2",
+          "P28",
+          "P29"
+        ]
+      },
+      {
+        "id": "E2",
+        "name": "Fahrzeugstruktur und Fahrwerk",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P5",
+          "P28",
+          "P29"
+        ],
+        "kategorie": "struktur_fahrwerk"
+      },
+      {
+        "id": "E3",
+        "name": "Rahmen",
+        "typ": "subsystem",
+        "eltern_id": "E2",
+        "absatz_ids": [
+          "P3",
+          "P4",
+          "P5",
+          "P6"
+        ]
+      },
+      {
+        "id": "E4",
+        "name": "Hauptrahmen",
+        "typ": "komponente",
+        "eltern_id": "E3",
+        "absatz_ids": [
+          "P5",
+          "P13",
+          "P19"
+        ]
+      },
+      {
+        "id": "E5",
+        "name": "Heckrahmen",
+        "typ": "komponente",
+        "eltern_id": "E3",
+        "absatz_ids": [
+          "P5",
+          "P19"
+        ]
+      },
+      {
+        "id": "E6",
+        "name": "Verkleidung",
+        "typ": "komponente",
+        "eltern_id": "E3",
+        "absatz_ids": [
+          "P5",
+          "P26",
+          "P27"
+        ]
+      },
+      {
+        "id": "E7",
+        "name": "Fahrwerk",
+        "typ": "subsystem",
+        "eltern_id": "E2",
+        "absatz_ids": [
+          "P5",
+          "P29"
+        ]
+      },
+      {
+        "id": "E8",
+        "name": "Vorderradführung",
+        "typ": "komponente",
+        "eltern_id": "E7",
+        "absatz_ids": [
+          "P5",
+          "P12",
+          "P13"
+        ]
+      },
+      {
+        "id": "E9",
+        "name": "Hinterradschwinge",
+        "typ": "komponente",
+        "eltern_id": "E7",
+        "absatz_ids": [
+          "P5",
+          "P6",
+          "P29"
+        ]
+      },
+      {
+        "id": "E10",
+        "name": "Federbein",
+        "typ": "komponente",
+        "eltern_id": "E7",
+        "absatz_ids": [
+          "P5",
+          "P19"
+        ]
+      },
+      {
+        "id": "E11",
+        "name": "Räder und Reifen",
+        "typ": "komponente",
+        "eltern_id": "E7",
+        "absatz_ids": [
+          "P4",
+          "P5"
+        ]
+      },
+      {
+        "id": "E12",
+        "name": "Ständer",
+        "typ": "komponente",
+        "eltern_id": "E2",
+        "absatz_ids": [
+          "P5"
+        ]
+      },
+      {
+        "id": "E13",
+        "name": "Antriebssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P8",
+          "P28",
+          "P29"
+        ],
+        "kategorie": "antrieb"
+      },
+      {
+        "id": "E14",
+        "name": "Verbrennungsantrieb",
+        "typ": "subsystem",
+        "eltern_id": "E13",
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "E15",
+        "name": "Verbrennungsmotor",
+        "typ": "komponente",
+        "eltern_id": "E14",
+        "absatz_ids": [
+          "P3",
+          "P7",
+          "P8"
+        ]
+      },
+      {
+        "id": "E16",
+        "name": "Ansauganlage",
+        "typ": "komponente",
+        "eltern_id": "E14",
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "E17",
+        "name": "Abgasanlage",
+        "typ": "komponente",
+        "eltern_id": "E14",
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "E18",
+        "name": "Abgasnachbehandlung",
+        "typ": "komponente",
+        "eltern_id": "E14",
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "E19",
+        "name": "Startvorrichtung",
+        "typ": "komponente",
+        "eltern_id": "E14",
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "E20",
+        "name": "Elektroantrieb",
+        "typ": "subsystem",
+        "eltern_id": "E13",
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "E21",
+        "name": "Traktionsmaschine",
+        "typ": "komponente",
+        "eltern_id": "E20",
+        "absatz_ids": [
+          "P8",
+          "P27"
+        ]
+      },
+      {
+        "id": "E22",
+        "name": "Leistungselektronik",
+        "typ": "komponente",
+        "eltern_id": "E20",
+        "absatz_ids": [
+          "P8",
+          "P23",
+          "P27"
+        ]
+      },
+      {
+        "id": "E23",
+        "name": "Kraftübertragung",
+        "typ": "subsystem",
+        "eltern_id": "E13",
+        "absatz_ids": [
+          "P8",
+          "P29"
+        ]
+      },
+      {
+        "id": "E24",
+        "name": "Kupplung",
+        "typ": "komponente",
+        "eltern_id": "E23",
+        "absatz_ids": [
+          "P8",
+          "P9",
+          "P17"
+        ]
+      },
+      {
+        "id": "E25",
+        "name": "Getriebe",
+        "typ": "komponente",
+        "eltern_id": "E23",
+        "absatz_ids": [
+          "P3",
+          "P8",
+          "P9"
+        ]
+      },
+      {
+        "id": "E26",
+        "name": "Endantrieb",
+        "typ": "komponente",
+        "eltern_id": "E23",
+        "absatz_ids": [
+          "P3",
+          "P8",
+          "P9",
+          "P6"
+        ]
+      },
+      {
+        "id": "E27",
+        "name": "Energieversorgungssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P10",
+          "P28",
+          "P29"
+        ],
+        "kategorie": "energieversorgung"
+      },
+      {
+        "id": "E28",
+        "name": "Kraftstoffanlage",
+        "typ": "subsystem",
+        "eltern_id": "E27",
+        "absatz_ids": [
+          "P10"
+        ]
+      },
+      {
+        "id": "E29",
+        "name": "Kraftstofftank",
+        "typ": "komponente",
+        "eltern_id": "E28",
+        "absatz_ids": [
+          "P3",
+          "P4",
+          "P10"
+        ]
+      },
+      {
+        "id": "E30",
+        "name": "Kraftstoffpumpe",
+        "typ": "komponente",
+        "eltern_id": "E28",
+        "absatz_ids": [
+          "P10"
+        ]
+      },
+      {
+        "id": "E31",
+        "name": "Traktionsenergiespeicher",
+        "typ": "subsystem",
+        "eltern_id": "E27",
+        "absatz_ids": [
+          "P10",
+          "P11"
+        ]
+      },
+      {
+        "id": "E32",
+        "name": "Traktionsbatterie",
+        "typ": "komponente",
+        "eltern_id": "E31",
+        "absatz_ids": [
+          "P10",
+          "P27"
+        ]
+      },
+      {
+        "id": "E33",
+        "name": "Ladeeinrichtung",
+        "typ": "komponente",
+        "eltern_id": "E31",
+        "absatz_ids": [
+          "P10"
+        ]
+      },
+      {
+        "id": "E34",
+        "name": "Gleichspannungswandler",
+        "typ": "komponente",
+        "eltern_id": "E31",
+        "absatz_ids": [
+          "P10"
+        ]
+      },
+      {
+        "id": "E35",
+        "name": "Bordnetzversorgung",
+        "typ": "subsystem",
+        "eltern_id": "E27",
+        "absatz_ids": [
+          "P10",
+          "P26",
+          "P29"
+        ]
+      },
+      {
+        "id": "E36",
+        "name": "Generator",
+        "typ": "komponente",
+        "eltern_id": "E35",
+        "absatz_ids": [
+          "P10",
+          "P29"
+        ]
+      },
+      {
+        "id": "E37",
+        "name": "Laderegler",
+        "typ": "komponente",
+        "eltern_id": "E35",
+        "absatz_ids": [
+          "P10"
+        ]
+      },
+      {
+        "id": "E38",
+        "name": "Starterbatterie",
+        "typ": "komponente",
+        "eltern_id": "E35",
+        "absatz_ids": [
+          "P10"
+        ]
+      },
+      {
+        "id": "E39",
+        "name": "Lenksystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P13",
+          "P28"
+        ],
+        "kategorie": "lenkung"
+      },
+      {
+        "id": "E40",
+        "name": "Lenker",
+        "typ": "komponente",
+        "eltern_id": "E39",
+        "absatz_ids": [
+          "P12",
+          "P13"
+        ]
+      },
+      {
+        "id": "E41",
+        "name": "Gabelbrücken",
+        "typ": "komponente",
+        "eltern_id": "E39",
+        "absatz_ids": [
+          "P13"
+        ]
+      },
+      {
+        "id": "E42",
+        "name": "Lenkkopflager",
+        "typ": "komponente",
+        "eltern_id": "E39",
+        "absatz_ids": [
+          "P13"
+        ]
+      },
+      {
+        "id": "E43",
+        "name": "Bremssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P16",
+          "P28",
+          "P29"
+        ],
+        "kategorie": "bremse"
+      },
+      {
+        "id": "E44",
+        "name": "Betriebsbremse",
+        "typ": "subsystem",
+        "eltern_id": "E43",
+        "absatz_ids": [
+          "P14",
+          "P16"
+        ]
+      },
+      {
+        "id": "E45",
+        "name": "Bremshebel",
+        "typ": "komponente",
+        "eltern_id": "E44",
+        "absatz_ids": [
+          "P15",
+          "P16"
+        ]
+      },
+      {
+        "id": "E46",
+        "name": "Hauptbremszylinder",
+        "typ": "komponente",
+        "eltern_id": "E44",
+        "absatz_ids": [
+          "P16"
+        ]
+      },
+      {
+        "id": "E47",
+        "name": "Vorderradbremse",
+        "typ": "komponente",
+        "eltern_id": "E44",
+        "absatz_ids": [
+          "P15",
+          "P16"
+        ]
+      },
+      {
+        "id": "E48",
+        "name": "Hinterradbremse",
+        "typ": "komponente",
+        "eltern_id": "E44",
+        "absatz_ids": [
+          "P15",
+          "P16"
+        ]
+      },
+      {
+        "id": "E49",
+        "name": "Antiblockiersystem",
+        "typ": "subsystem",
+        "eltern_id": "E43",
+        "absatz_ids": [
+          "P14",
+          "P16",
+          "P29"
+        ]
+      },
+      {
+        "id": "E50",
+        "name": "Raddrehzahlsensoren",
+        "typ": "komponente",
+        "eltern_id": "E49",
+        "absatz_ids": [
+          "P16",
+          "P24",
+          "P29"
+        ]
+      },
+      {
+        "id": "E51",
+        "name": "Hydraulikaggregat",
+        "typ": "komponente",
+        "eltern_id": "E49",
+        "absatz_ids": [
+          "P16"
+        ]
+      },
+      {
+        "id": "E52",
+        "name": "Kombibremse",
+        "typ": "komponente",
+        "eltern_id": "E43",
+        "absatz_ids": [
+          "P14",
+          "P15",
+          "P16"
+        ]
+      },
+      {
+        "id": "E53",
+        "name": "Cockpit",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P18",
+          "P28"
+        ],
+        "kategorie": "bedienraum"
+      },
+      {
+        "id": "E54",
+        "name": "Fahrerplatz",
+        "typ": "subsystem",
+        "eltern_id": "E53",
+        "absatz_ids": [
+          "P18"
+        ]
+      },
+      {
+        "id": "E55",
+        "name": "Sitzbank",
+        "typ": "komponente",
+        "eltern_id": "E54",
+        "absatz_ids": [
+          "P5",
+          "P18",
+          "P19"
+        ]
+      },
+      {
+        "id": "E56",
+        "name": "Fußrasten",
+        "typ": "komponente",
+        "eltern_id": "E54",
+        "absatz_ids": [
+          "P18"
+        ]
+      },
+      {
+        "id": "E57",
+        "name": "Mensch-Maschine-Schnittstelle",
+        "typ": "subsystem",
+        "eltern_id": "E53",
+        "absatz_ids": [
+          "P18"
+        ]
+      },
+      {
+        "id": "E58",
+        "name": "Bedienelemente",
+        "typ": "komponente",
+        "eltern_id": "E57",
+        "absatz_ids": [
+          "P17",
+          "P18"
+        ]
+      },
+      {
+        "id": "E59",
+        "name": "Kombiinstrument",
+        "typ": "komponente",
+        "eltern_id": "E57",
+        "absatz_ids": [
+          "P17",
+          "P18",
+          "P23"
+        ]
+      },
+      {
+        "id": "E60",
+        "name": "Aufbau und Ladung",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P19",
+          "P28"
+        ],
+        "kategorie": "aufbau_nutzlast"
+      },
+      {
+        "id": "E61",
+        "name": "Gepäckträger",
+        "typ": "komponente",
+        "eltern_id": "E60",
+        "absatz_ids": [
+          "P5",
+          "P19"
+        ]
+      },
+      {
+        "id": "E62",
+        "name": "Halteeinrichtungen und Fußstützen für Beifahrer",
+        "typ": "komponente",
+        "eltern_id": "E60",
+        "absatz_ids": [
+          "P19"
+        ]
+      },
+      {
+        "id": "E63",
+        "name": "Anhängevorrichtung",
+        "typ": "komponente",
+        "eltern_id": "E60",
+        "absatz_ids": [
+          "P19"
+        ]
+      },
+      {
+        "id": "E64",
+        "name": "Elektrik und Elektronik",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P21",
+          "P28"
+        ],
+        "kategorie": "elektrik_elektronik"
+      },
+      {
+        "id": "E65",
+        "name": "Niedervolt-Bordnetz",
+        "typ": "subsystem",
+        "eltern_id": "E64",
+        "absatz_ids": [
+          "P21",
+          "P26"
+        ]
+      },
+      {
+        "id": "E66",
+        "name": "Leitungssatz",
+        "typ": "komponente",
+        "eltern_id": "E65",
+        "absatz_ids": [
+          "P21"
+        ]
+      },
+      {
+        "id": "E67",
+        "name": "Sicherungen",
+        "typ": "komponente",
+        "eltern_id": "E65",
+        "absatz_ids": [
+          "P21"
+        ]
+      },
+      {
+        "id": "E68",
+        "name": "Stromverteiler",
+        "typ": "komponente",
+        "eltern_id": "E65",
+        "absatz_ids": [
+          "P21"
+        ]
+      },
+      {
+        "id": "E69",
+        "name": "Fahrzeugbus",
+        "typ": "komponente",
+        "eltern_id": "E64",
+        "absatz_ids": [
+          "P20",
+          "P21",
+          "P29"
+        ]
+      },
+      {
+        "id": "E70",
+        "name": "Fahrzeugsteuerung und Information",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P23",
+          "P28"
+        ],
+        "kategorie": "steuerung_information"
+      },
+      {
+        "id": "E71",
+        "name": "Motorsteuergerät",
+        "typ": "komponente",
+        "eltern_id": "E70",
+        "absatz_ids": [
+          "P20",
+          "P23",
+          "P24"
+        ]
+      },
+      {
+        "id": "E72",
+        "name": "Diagnose",
+        "typ": "komponente",
+        "eltern_id": "E70",
+        "absatz_ids": [
+          "P22",
+          "P23"
+        ]
+      },
+      {
+        "id": "E73",
+        "name": "Fahrerassistenz und Sicherheit",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P24",
+          "P28"
+        ],
+        "kategorie": "assistenz_sicherheit"
+      },
+      {
+        "id": "E74",
+        "name": "Betriebssicherung",
+        "typ": "subsystem",
+        "eltern_id": "E73",
+        "absatz_ids": [
+          "P24"
+        ]
+      },
+      {
+        "id": "E75",
+        "name": "Notausschalter",
+        "typ": "komponente",
+        "eltern_id": "E74",
+        "absatz_ids": [
+          "P17",
+          "P24"
+        ]
+      },
+      {
+        "id": "E76",
+        "name": "Seitenständerschalter",
+        "typ": "komponente",
+        "eltern_id": "E74",
+        "absatz_ids": [
+          "P24"
+        ]
+      },
+      {
+        "id": "E77",
+        "name": "Sicherung gegen unbefugte Benutzung",
+        "typ": "komponente",
+        "eltern_id": "E74",
+        "absatz_ids": [
+          "P12",
+          "P24"
+        ]
+      },
+      {
+        "id": "E78",
+        "name": "Antriebsschlupfregelung",
+        "typ": "komponente",
+        "eltern_id": "E73",
+        "absatz_ids": [
+          "P20",
+          "P24"
+        ]
+      },
+      {
+        "id": "E79",
+        "name": "Hupe",
+        "typ": "komponente",
+        "eltern_id": "E73",
+        "absatz_ids": [
+          "P17",
+          "P24"
+        ]
+      },
+      {
+        "id": "E80",
+        "name": "Beleuchtung und Sicht",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P26",
+          "P28"
+        ],
+        "kategorie": "beleuchtung_sicht"
+      },
+      {
+        "id": "E81",
+        "name": "Beleuchtungseinrichtungen",
+        "typ": "subsystem",
+        "eltern_id": "E80",
+        "absatz_ids": [
+          "P25",
+          "P26"
+        ]
+      },
+      {
+        "id": "E82",
+        "name": "Scheinwerfer",
+        "typ": "komponente",
+        "eltern_id": "E81",
+        "absatz_ids": [
+          "P26"
+        ]
+      },
+      {
+        "id": "E83",
+        "name": "Leuchten",
+        "typ": "komponente",
+        "eltern_id": "E81",
+        "absatz_ids": [
+          "P25",
+          "P26"
+        ]
+      },
+      {
+        "id": "E84",
+        "name": "Signalleuchten",
+        "typ": "komponente",
+        "eltern_id": "E81",
+        "absatz_ids": [
+          "P25",
+          "P26"
+        ]
+      },
+      {
+        "id": "E85",
+        "name": "Tagfahrleuchten",
+        "typ": "komponente",
+        "eltern_id": "E81",
+        "absatz_ids": [
+          "P25",
+          "P26"
+        ]
+      },
+      {
+        "id": "E86",
+        "name": "Rückspiegel",
+        "typ": "komponente",
+        "eltern_id": "E80",
+        "absatz_ids": [
+          "P25",
+          "P26"
+        ]
+      },
+      {
+        "id": "E87",
+        "name": "Thermomanagement",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P27",
+          "P28"
+        ],
+        "kategorie": "thermomanagement"
+      },
+      {
+        "id": "E88",
+        "name": "Kühlkreislauf",
+        "typ": "subsystem",
+        "eltern_id": "E87",
+        "absatz_ids": [
+          "P27"
+        ]
+      },
+      {
+        "id": "E89",
+        "name": "Kühler",
+        "typ": "komponente",
+        "eltern_id": "E88",
+        "absatz_ids": [
+          "P27"
+        ]
+      },
+      {
+        "id": "E90",
+        "name": "Kühlmittelpumpe",
+        "typ": "komponente",
+        "eltern_id": "E88",
+        "absatz_ids": [
+          "P27"
+        ]
+      },
+      {
+        "id": "E91",
+        "name": "Kühlerlüfter",
+        "typ": "komponente",
+        "eltern_id": "E88",
+        "absatz_ids": [
+          "P21",
+          "P27"
+        ]
+      },
+      {
+        "id": "E92",
+        "name": "Kühlrippen",
+        "typ": "komponente",
+        "eltern_id": "E87",
+        "absatz_ids": [
+          "P27"
+        ]
+      },
+      {
+        "id": "E93",
+        "name": "Aktivkohlebehälter",
+        "typ": "komponente",
+        "eltern_id": "E28",
+        "absatz_ids": [
+          "P10",
+          "P30"
+        ]
+      },
+      {
+        "id": "E94",
+        "name": "Batteriemanagementsystem",
+        "typ": "komponente",
+        "eltern_id": "E31",
+        "absatz_ids": [
+          "P10",
+          "P30"
+        ]
+      },
+      {
+        "id": "E95",
+        "name": "Thermostat",
+        "typ": "komponente",
+        "eltern_id": "E88",
+        "absatz_ids": [
+          "P27"
+        ]
+      }
     ],
     "funktionen": [
-      {"id": "F1", "name": "Fahrzeuglasten tragen", "ausgefuehrt_von": ["E3", "E7"], "absatz_ids": ["P4", "P5"]},
-      {"id": "F2", "name": "Fahrzeug im Stand abstützen", "ausgefuehrt_von": ["E12"], "absatz_ids": ["P5"]},
-      {"id": "F3", "name": "Energie speichern", "ausgefuehrt_von": ["E29", "E32", "E38"], "absatz_ids": ["P10"]},
-      {"id": "F4", "name": "Treibstoff fördern", "ausgefuehrt_von": ["E30"], "absatz_ids": ["P10"]},
-      {"id": "F5", "name": "Traktionsbatterie laden", "ausgefuehrt_von": ["E33"], "absatz_ids": ["P10"]},
-      {"id": "F6", "name": "Elektrische Energie verteilen", "ausgefuehrt_von": ["E65", "E36", "E37", "E34"], "absatz_ids": ["P10", "P21"]},
-      {"id": "F7", "name": "Antriebsleistung erzeugen", "ausgefuehrt_von": ["E15", "E21", "E22"], "absatz_ids": ["P8"]},
-      {"id": "F8", "name": "Drehmoment übertragen", "ausgefuehrt_von": ["E23"], "absatz_ids": ["P8", "P9"]},
-      {"id": "F9", "name": "Fahrzeug fortbewegen", "ausgefuehrt_von": ["E26", "E11"], "absatz_ids": ["P8"]},
-      {"id": "F10", "name": "Bremsenergie zurückgewinnen", "ausgefuehrt_von": ["E21"], "absatz_ids": ["P8"]},
-      {"id": "F11", "name": "Fahrzeug lenken", "ausgefuehrt_von": ["E39"], "absatz_ids": ["P12", "P13"]},
-      {"id": "F12", "name": "Fahrzeug verzögern", "ausgefuehrt_von": ["E44", "E49", "E52"], "absatz_ids": ["P14", "P16"]},
-      {"id": "F13", "name": "Antriebsleistung begrenzen", "ausgefuehrt_von": ["E71", "E22"], "absatz_ids": ["P23"]},
-      {"id": "F14", "name": "Fahrzeugzustand überwachen", "ausgefuehrt_von": ["E72", "E71", "E76", "E94"], "absatz_ids": ["P23", "P24", "P10"]},
-      {"id": "F15", "name": "Daten übertragen", "ausgefuehrt_von": ["E69"], "absatz_ids": ["P21"]},
-      {"id": "F16", "name": "Fahrereingaben erfassen", "ausgefuehrt_von": ["E58", "E45", "E75"], "absatz_ids": ["P17", "P18"]},
-      {"id": "F17", "name": "Fahrerinformationen anzeigen", "ausgefuehrt_von": ["E59"], "absatz_ids": ["P17", "P18"]},
-      {"id": "F18", "name": "Ladung aufnehmen", "ausgefuehrt_von": ["E61", "E62", "E55"], "absatz_ids": ["P19"]},
-      {"id": "F19", "name": "Anhänger ziehen", "ausgefuehrt_von": ["E63"], "absatz_ids": ["P19"]},
-      {"id": "F20", "name": "Antriebsschlupf begrenzen", "ausgefuehrt_von": ["E78"], "absatz_ids": ["P24"]},
-      {"id": "F21", "name": "Fahrzeug gegen unbefugte Benutzung sichern", "ausgefuehrt_von": ["E77"], "absatz_ids": ["P24"]},
-      {"id": "F22", "name": "Akustische Warnsignale abgeben", "ausgefuehrt_von": ["E79"], "absatz_ids": ["P24"]},
-      {"id": "F23", "name": "Fahrzeugumgebung ausleuchten", "ausgefuehrt_von": ["E82"], "absatz_ids": ["P26"]},
-      {"id": "F24", "name": "Lichtsignale abgeben", "ausgefuehrt_von": ["E83", "E84", "E85"], "absatz_ids": ["P25", "P26"]},
-      {"id": "F25", "name": "Fahrersicht sicherstellen", "ausgefuehrt_von": ["E86"], "absatz_ids": ["P25", "P26"]},
-      {"id": "F26", "name": "Betriebstemperatur regeln", "ausgefuehrt_von": ["E88", "E92"], "absatz_ids": ["P27"]}
+      {
+        "id": "F1",
+        "name": "Fahrzeuglasten tragen",
+        "ausgefuehrt_von": [
+          "E3",
+          "E7"
+        ],
+        "absatz_ids": [
+          "P4",
+          "P5"
+        ]
+      },
+      {
+        "id": "F2",
+        "name": "Fahrzeug im Stand abstützen",
+        "ausgefuehrt_von": [
+          "E12"
+        ],
+        "absatz_ids": [
+          "P5"
+        ]
+      },
+      {
+        "id": "F3",
+        "name": "Energie speichern",
+        "ausgefuehrt_von": [
+          "E29",
+          "E32",
+          "E38"
+        ],
+        "absatz_ids": [
+          "P10"
+        ]
+      },
+      {
+        "id": "F4",
+        "name": "Treibstoff fördern",
+        "ausgefuehrt_von": [
+          "E30"
+        ],
+        "absatz_ids": [
+          "P10"
+        ]
+      },
+      {
+        "id": "F5",
+        "name": "Traktionsbatterie laden",
+        "ausgefuehrt_von": [
+          "E33"
+        ],
+        "absatz_ids": [
+          "P10"
+        ]
+      },
+      {
+        "id": "F6",
+        "name": "Elektrische Energie verteilen",
+        "ausgefuehrt_von": [
+          "E65",
+          "E36",
+          "E37",
+          "E34"
+        ],
+        "absatz_ids": [
+          "P10",
+          "P21"
+        ]
+      },
+      {
+        "id": "F7",
+        "name": "Antriebsleistung erzeugen",
+        "ausgefuehrt_von": [
+          "E15",
+          "E21",
+          "E22"
+        ],
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "F8",
+        "name": "Drehmoment übertragen",
+        "ausgefuehrt_von": [
+          "E23"
+        ],
+        "absatz_ids": [
+          "P8",
+          "P9"
+        ]
+      },
+      {
+        "id": "F9",
+        "name": "Fahrzeug fortbewegen",
+        "ausgefuehrt_von": [
+          "E26",
+          "E11"
+        ],
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "F10",
+        "name": "Bremsenergie zurückgewinnen",
+        "ausgefuehrt_von": [
+          "E21"
+        ],
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "F11",
+        "name": "Fahrzeug lenken",
+        "ausgefuehrt_von": [
+          "E39"
+        ],
+        "absatz_ids": [
+          "P12",
+          "P13"
+        ]
+      },
+      {
+        "id": "F12",
+        "name": "Fahrzeug verzögern",
+        "ausgefuehrt_von": [
+          "E44",
+          "E49",
+          "E52"
+        ],
+        "absatz_ids": [
+          "P14",
+          "P16"
+        ]
+      },
+      {
+        "id": "F13",
+        "name": "Antriebsleistung begrenzen",
+        "ausgefuehrt_von": [
+          "E71",
+          "E22"
+        ],
+        "absatz_ids": [
+          "P23"
+        ]
+      },
+      {
+        "id": "F14",
+        "name": "Fahrzeugzustand überwachen",
+        "ausgefuehrt_von": [
+          "E72",
+          "E71",
+          "E76",
+          "E94"
+        ],
+        "absatz_ids": [
+          "P23",
+          "P24",
+          "P10"
+        ]
+      },
+      {
+        "id": "F15",
+        "name": "Daten übertragen",
+        "ausgefuehrt_von": [
+          "E69"
+        ],
+        "absatz_ids": [
+          "P21"
+        ]
+      },
+      {
+        "id": "F16",
+        "name": "Fahrereingaben erfassen",
+        "ausgefuehrt_von": [
+          "E58",
+          "E45",
+          "E75"
+        ],
+        "absatz_ids": [
+          "P17",
+          "P18"
+        ]
+      },
+      {
+        "id": "F17",
+        "name": "Fahrerinformationen anzeigen",
+        "ausgefuehrt_von": [
+          "E59"
+        ],
+        "absatz_ids": [
+          "P17",
+          "P18"
+        ]
+      },
+      {
+        "id": "F18",
+        "name": "Ladung aufnehmen",
+        "ausgefuehrt_von": [
+          "E61",
+          "E62",
+          "E55"
+        ],
+        "absatz_ids": [
+          "P19"
+        ]
+      },
+      {
+        "id": "F19",
+        "name": "Anhänger ziehen",
+        "ausgefuehrt_von": [
+          "E63"
+        ],
+        "absatz_ids": [
+          "P19"
+        ]
+      },
+      {
+        "id": "F20",
+        "name": "Antriebsschlupf begrenzen",
+        "ausgefuehrt_von": [
+          "E78"
+        ],
+        "absatz_ids": [
+          "P24"
+        ]
+      },
+      {
+        "id": "F21",
+        "name": "Fahrzeug gegen unbefugte Benutzung sichern",
+        "ausgefuehrt_von": [
+          "E77"
+        ],
+        "absatz_ids": [
+          "P24"
+        ]
+      },
+      {
+        "id": "F22",
+        "name": "Akustische Warnsignale abgeben",
+        "ausgefuehrt_von": [
+          "E79"
+        ],
+        "absatz_ids": [
+          "P24"
+        ]
+      },
+      {
+        "id": "F23",
+        "name": "Fahrzeugumgebung ausleuchten",
+        "ausgefuehrt_von": [
+          "E82"
+        ],
+        "absatz_ids": [
+          "P26"
+        ]
+      },
+      {
+        "id": "F24",
+        "name": "Lichtsignale abgeben",
+        "ausgefuehrt_von": [
+          "E83",
+          "E84",
+          "E85"
+        ],
+        "absatz_ids": [
+          "P25",
+          "P26"
+        ]
+      },
+      {
+        "id": "F25",
+        "name": "Fahrersicht sicherstellen",
+        "ausgefuehrt_von": [
+          "E86"
+        ],
+        "absatz_ids": [
+          "P25",
+          "P26"
+        ]
+      },
+      {
+        "id": "F26",
+        "name": "Betriebstemperatur regeln",
+        "ausgefuehrt_von": [
+          "E88",
+          "E92"
+        ],
+        "absatz_ids": [
+          "P27"
+        ]
+      }
     ],
     "fluesse": [
-      {"id": "S1", "von": "E29", "nach": "E30", "art": "stoff", "medium": "Kraftstoff", "absatz_ids": ["P10", "P30"]},
-      {"id": "S2", "von": "E30", "nach": "E15", "art": "stoff", "medium": "Kraftstoff", "absatz_ids": ["P10", "P30"], "schnittstelle": "Kraftstoffzulauf zum Motor"},
-      {"id": "S3", "von": "E16", "nach": "E15", "art": "stoff", "medium": "Verbrennungsluft", "absatz_ids": ["P8", "P30"]},
-      {"id": "S4", "von": "E15", "nach": "E17", "art": "stoff", "medium": "Abgas", "absatz_ids": ["P8", "P30"]},
-      {"id": "S5", "von": "E17", "nach": "E18", "art": "stoff", "medium": "Abgas", "absatz_ids": ["P8", "P30"]},
-      {"id": "S6", "von": "E15", "nach": "E24", "art": "mechanisch", "medium": "Drehmoment", "absatz_ids": ["P8", "P30"]},
-      {"id": "S7", "von": "E24", "nach": "E25", "art": "mechanisch", "medium": "Drehmoment", "absatz_ids": ["P8", "P30"]},
-      {"id": "S8", "von": "E25", "nach": "E26", "art": "mechanisch", "medium": "Drehmoment", "absatz_ids": ["P8", "P9", "P30"]},
-      {"id": "S9", "von": "E26", "nach": "E11", "art": "mechanisch", "medium": "Antriebsmoment", "absatz_ids": ["P8", "P30"], "schnittstelle": "Hinterradnabe"},
-      {"id": "S10", "von": "E21", "nach": "E26", "art": "mechanisch", "medium": "Drehmoment", "absatz_ids": ["P8", "P30"]},
-      {"id": "S11", "von": "E32", "nach": "E22", "art": "elektrisch", "medium": "Traktionsstrom", "absatz_ids": ["P10", "P30"], "schnittstelle": "Anschluss der Traktionsbatterie"},
-      {"id": "S12", "von": "E22", "nach": "E21", "art": "elektrisch", "medium": "Phasenstrom", "absatz_ids": ["P8"]},
-      {"id": "S13", "von": "E21", "nach": "E22", "art": "elektrisch", "medium": "Rückgespeiste Bremsenergie", "absatz_ids": ["P8"]},
-      {"id": "S14", "von": "E22", "nach": "E32", "art": "elektrisch", "medium": "Rückgespeiste Bremsenergie", "absatz_ids": ["P8"], "schnittstelle": "Anschluss der Traktionsbatterie"},
-      {"id": "S15", "von": "E33", "nach": "E32", "art": "elektrisch", "medium": "Ladestrom", "absatz_ids": ["P10", "P30"]},
-      {"id": "S16", "von": "E32", "nach": "E34", "art": "elektrisch", "medium": "Gleichstrom", "absatz_ids": ["P10", "P30"]},
-      {"id": "S17", "von": "E34", "nach": "E65", "art": "elektrisch", "medium": "Niedervolt-Gleichstrom", "absatz_ids": ["P10", "P30"], "schnittstelle": "Bordnetzeinspeisung des Gleichspannungswandlers"},
-      {"id": "S18", "von": "E15", "nach": "E36", "art": "mechanisch", "medium": "Drehmoment", "absatz_ids": ["P10", "P30"], "schnittstelle": "Generatorantrieb an der Kurbelwelle"},
-      {"id": "S19", "von": "E36", "nach": "E37", "art": "elektrisch", "medium": "Wechselstrom", "absatz_ids": ["P10", "P30"]},
-      {"id": "S20", "von": "E37", "nach": "E38", "art": "elektrisch", "medium": "Ladestrom", "absatz_ids": ["P10", "P30"]},
-      {"id": "S21", "von": "E38", "nach": "E65", "art": "elektrisch", "medium": "Niedervolt-Gleichstrom", "absatz_ids": ["P21", "P30"], "schnittstelle": "Batterieanschluss des Bordnetzes"},
-      {"id": "S22", "von": "E65", "nach": "E81", "art": "elektrisch", "medium": "Niedervolt-Gleichstrom", "absatz_ids": ["P21", "P26"], "schnittstelle": "Lichtstromkreise"},
-      {"id": "S23", "von": "E65", "nach": "E71", "art": "elektrisch", "medium": "Niedervolt-Gleichstrom", "absatz_ids": ["P21"], "schnittstelle": "Steuergeräteversorgung"},
-      {"id": "S24", "von": "E65", "nach": "E91", "art": "elektrisch", "medium": "Niedervolt-Gleichstrom", "absatz_ids": ["P21", "P27"], "schnittstelle": "Lüfterstromkreis"},
-      {"id": "S25", "von": "E65", "nach": "E51", "art": "elektrisch", "medium": "Niedervolt-Gleichstrom", "absatz_ids": ["P21"], "schnittstelle": "Versorgung des Hydraulikaggregats"},
-      {"id": "S26", "von": "E58", "nach": "E71", "art": "information", "medium": "Gasgriffstellung", "absatz_ids": ["P18", "P23", "P30"], "schnittstelle": "Gasgriffsignal"},
-      {"id": "S27", "von": "E58", "nach": "E24", "art": "mechanisch", "medium": "Kupplungsbetätigung", "absatz_ids": ["P17", "P18"], "schnittstelle": "Kupplungszug"},
-      {"id": "S28", "von": "E58", "nach": "E25", "art": "mechanisch", "medium": "Schaltbewegung", "absatz_ids": ["P17", "P18"], "schnittstelle": "Fußschalthebel am Getriebe"},
-      {"id": "S29", "von": "E40", "nach": "E41", "art": "mechanisch", "medium": "Lenkmoment", "absatz_ids": ["P13"]},
-      {"id": "S30", "von": "E41", "nach": "E8", "art": "mechanisch", "medium": "Lenkmoment", "absatz_ids": ["P13"], "schnittstelle": "Gabelklemmung in den Gabelbrücken"},
-      {"id": "S31", "von": "E11", "nach": "E8", "art": "mechanisch", "medium": "Radkräfte", "absatz_ids": ["P5", "P30"]},
-      {"id": "S32", "von": "E8", "nach": "E4", "art": "mechanisch", "medium": "Radkräfte", "absatz_ids": ["P5", "P30"]},
-      {"id": "S33", "von": "E11", "nach": "E9", "art": "mechanisch", "medium": "Radkräfte", "absatz_ids": ["P5", "P30"]},
-      {"id": "S34", "von": "E9", "nach": "E10", "art": "mechanisch", "medium": "Federkraft", "absatz_ids": ["P5", "P30"]},
-      {"id": "S35", "von": "E10", "nach": "E4", "art": "mechanisch", "medium": "Federkraft", "absatz_ids": ["P5", "P30"]},
-      {"id": "S36", "von": "E45", "nach": "E46", "art": "mechanisch", "medium": "Hebelkraft", "absatz_ids": ["P16"]},
-      {"id": "S37", "von": "E46", "nach": "E47", "art": "hydraulisch", "medium": "Bremsflüssigkeit", "absatz_ids": ["P16", "P30"]},
-      {"id": "S38", "von": "E46", "nach": "E48", "art": "hydraulisch", "medium": "Bremsflüssigkeit", "absatz_ids": ["P16", "P30"]},
-      {"id": "S39", "von": "E46", "nach": "E52", "art": "hydraulisch", "medium": "Bremsflüssigkeit", "absatz_ids": ["P16", "P30"]},
-      {"id": "S40", "von": "E52", "nach": "E47", "art": "hydraulisch", "medium": "Bremsflüssigkeit", "absatz_ids": ["P15", "P16"]},
-      {"id": "S41", "von": "E50", "nach": "E51", "art": "information", "medium": "Raddrehzahl", "absatz_ids": ["P16", "P30"]},
-      {"id": "S42", "von": "E51", "nach": "E47", "art": "hydraulisch", "medium": "Modulierter Bremsdruck", "absatz_ids": ["P16", "P30"]},
-      {"id": "S43", "von": "E50", "nach": "E78", "art": "information", "medium": "Raddrehzahl", "absatz_ids": ["P24", "P30"], "schnittstelle": "Raddrehzahlsignal"},
-      {"id": "S44", "von": "E78", "nach": "E71", "art": "information", "medium": "Momentenanforderung", "absatz_ids": ["P24"], "schnittstelle": "Anforderung zur Momentenreduzierung"},
-      {"id": "S45", "von": "E75", "nach": "E71", "art": "information", "medium": "Abschaltsignal", "absatz_ids": ["P24", "P30"], "schnittstelle": "Notaussignal"},
-      {"id": "S46", "von": "E76", "nach": "E71", "art": "information", "medium": "Ständerstellung", "absatz_ids": ["P24", "P30"], "schnittstelle": "Seitenständersignal"},
-      {"id": "S47", "von": "E71", "nach": "E69", "art": "information", "medium": "Zustandsdaten", "absatz_ids": ["P21", "P30"], "schnittstelle": "Busanschluss des Motorsteuergeräts"},
-      {"id": "S48", "von": "E69", "nach": "E59", "art": "information", "medium": "Zustandsdaten", "absatz_ids": ["P21", "P30"], "schnittstelle": "Instrumentenanbindung am Fahrzeugbus"},
-      {"id": "S49", "von": "E71", "nach": "E72", "art": "information", "medium": "Fehlercodes", "absatz_ids": ["P23"]},
-      {"id": "S50", "von": "E71", "nach": "E15", "art": "information", "medium": "Einspritz- und Zündsignale", "absatz_ids": ["P23"], "schnittstelle": "Einspritz- und Zündansteuerung"},
-      {"id": "S51", "von": "E71", "nach": "E22", "art": "information", "medium": "Leistungsvorgabe", "absatz_ids": ["P23"], "schnittstelle": "Leistungsanforderung an die Leistungselektronik"},
-      {"id": "S52", "von": "E45", "nach": "E83", "art": "information", "medium": "Bremslichtsignal", "absatz_ids": ["P16", "P26"], "schnittstelle": "Bremslichtschalter"},
-      {"id": "S53", "von": "E58", "nach": "E81", "art": "elektrisch", "medium": "Schaltsignal für Licht und Blinker", "absatz_ids": ["P17", "P26"], "schnittstelle": "Lenkerschalter"},
-      {"id": "S54", "von": "E58", "nach": "E79", "art": "elektrisch", "medium": "Schaltsignal", "absatz_ids": ["P17", "P24"], "schnittstelle": "Hupenschalter"},
-      {"id": "S55", "von": "E90", "nach": "E15", "art": "stoff", "medium": "Kühlmittel", "absatz_ids": ["P27"], "schnittstelle": "Kühlmittelzulauf am Motor"},
-      {"id": "S56", "von": "E15", "nach": "E89", "art": "thermisch", "medium": "Erwärmtes Kühlmittel", "absatz_ids": ["P27", "P30"], "schnittstelle": "Kühlmittelrücklauf zum Kühler"},
-      {"id": "S57", "von": "E15", "nach": "E92", "art": "thermisch", "medium": "Motorwärme", "absatz_ids": ["P27", "P30"], "schnittstelle": "Zylinder und Zylinderkopf"},
-      {"id": "S58", "von": "E61", "nach": "E5", "art": "mechanisch", "medium": "Gepäcklast", "absatz_ids": ["P5", "P19"], "schnittstelle": "Gepäckträgerbefestigung am Heckrahmen"},
-      {"id": "S59", "von": "E62", "nach": "E5", "art": "mechanisch", "medium": "Beifahrerlast", "absatz_ids": ["P19"], "schnittstelle": "Beifahrerhalterung am Heckrahmen"},
-      {"id": "S60", "von": "E63", "nach": "E5", "art": "mechanisch", "medium": "Zug- und Stützlast", "absatz_ids": ["P19"], "schnittstelle": "Befestigung der Anhängevorrichtung"},
-      {"id": "S61", "von": "E55", "nach": "E5", "art": "mechanisch", "medium": "Sitzlast", "absatz_ids": ["P5", "P18"], "schnittstelle": "Sitzbankaufnahme am Heckrahmen"},
-      {"id": "S62", "von": "E56", "nach": "E4", "art": "mechanisch", "medium": "Fußlast", "absatz_ids": ["P18"], "schnittstelle": "Fußrastenaufnahme"},
-      {"id": "S63", "von": "E12", "nach": "E4", "art": "mechanisch", "medium": "Stützlast", "absatz_ids": ["P5"]},
-      {"id": "S64", "von": "E77", "nach": "E41", "art": "mechanisch", "medium": "Lenkungsarretierung", "absatz_ids": ["P12", "P24"], "schnittstelle": "Lenkschloss am Lenkkopf"},
-      {"id": "S65", "von": "E9", "nach": "E4", "art": "mechanisch", "medium": "Radkräfte", "absatz_ids": ["P5", "P30"], "schnittstelle": "Schwingenlager"},
-      {"id": "S66", "von": "E45", "nach": "E48", "art": "mechanisch", "medium": "Betätigungskraft", "absatz_ids": ["P16", "P30"], "schnittstelle": "Bremsgestänge oder Bremsseil"},
-      {"id": "S67", "von": "E29", "nach": "E93", "art": "stoff", "medium": "Kraftstoffdampf", "absatz_ids": ["P10", "P30"]},
-      {"id": "S68", "von": "E93", "nach": "E16", "art": "stoff", "medium": "Kraftstoffdampf", "absatz_ids": ["P10", "P30"], "schnittstelle": "Spülleitung zur Ansauganlage"},
-      {"id": "S69", "von": "E94", "nach": "E33", "art": "information", "medium": "Ladefreigabe und Ladegrenzen", "absatz_ids": ["P10", "P30"]},
-      {"id": "S70", "von": "E94", "nach": "E22", "art": "information", "medium": "Entladegrenzen", "absatz_ids": ["P10", "P30"], "schnittstelle": "Leistungsfreigabe an die Leistungselektronik"},
-      {"id": "S71", "von": "E94", "nach": "E69", "art": "information", "medium": "Ladezustand und Batteriezustand", "absatz_ids": ["P10", "P30"], "schnittstelle": "Busanschluss des Batteriemanagementsystems"},
-      {"id": "S72", "von": "E21", "nach": "E88", "art": "thermisch", "medium": "Verlustwärme", "absatz_ids": ["P27", "P30"], "schnittstelle": "Kühlanschluss der Traktionsmaschine"},
-      {"id": "S73", "von": "E22", "nach": "E88", "art": "thermisch", "medium": "Verlustwärme", "absatz_ids": ["P27", "P30"], "schnittstelle": "Kühlanschluss der Leistungselektronik"},
-      {"id": "S74", "von": "E32", "nach": "E88", "art": "thermisch", "medium": "Verlustwärme", "absatz_ids": ["P27", "P30"], "schnittstelle": "Kühlanschluss der Traktionsbatterie"}
+      {
+        "id": "S1",
+        "von": "E29",
+        "nach": "E30",
+        "art": "stoff",
+        "medium": "Kraftstoff",
+        "absatz_ids": [
+          "P10",
+          "P30"
+        ]
+      },
+      {
+        "id": "S2",
+        "von": "E30",
+        "nach": "E15",
+        "art": "stoff",
+        "medium": "Kraftstoff",
+        "absatz_ids": [
+          "P10",
+          "P30"
+        ],
+        "schnittstelle": "Kraftstoffzulauf zum Motor"
+      },
+      {
+        "id": "S3",
+        "von": "E16",
+        "nach": "E15",
+        "art": "stoff",
+        "medium": "Verbrennungsluft",
+        "absatz_ids": [
+          "P8",
+          "P30"
+        ]
+      },
+      {
+        "id": "S4",
+        "von": "E15",
+        "nach": "E17",
+        "art": "stoff",
+        "medium": "Abgas",
+        "absatz_ids": [
+          "P8",
+          "P30"
+        ]
+      },
+      {
+        "id": "S5",
+        "von": "E17",
+        "nach": "E18",
+        "art": "stoff",
+        "medium": "Abgas",
+        "absatz_ids": [
+          "P8",
+          "P30"
+        ]
+      },
+      {
+        "id": "S6",
+        "von": "E15",
+        "nach": "E24",
+        "art": "mechanisch",
+        "medium": "Drehmoment",
+        "absatz_ids": [
+          "P8",
+          "P30"
+        ]
+      },
+      {
+        "id": "S7",
+        "von": "E24",
+        "nach": "E25",
+        "art": "mechanisch",
+        "medium": "Drehmoment",
+        "absatz_ids": [
+          "P8",
+          "P30"
+        ]
+      },
+      {
+        "id": "S8",
+        "von": "E25",
+        "nach": "E26",
+        "art": "mechanisch",
+        "medium": "Drehmoment",
+        "absatz_ids": [
+          "P8",
+          "P9",
+          "P30"
+        ]
+      },
+      {
+        "id": "S9",
+        "von": "E26",
+        "nach": "E11",
+        "art": "mechanisch",
+        "medium": "Antriebsmoment",
+        "absatz_ids": [
+          "P8",
+          "P30"
+        ],
+        "schnittstelle": "Hinterradnabe"
+      },
+      {
+        "id": "S10",
+        "von": "E21",
+        "nach": "E26",
+        "art": "mechanisch",
+        "medium": "Drehmoment",
+        "absatz_ids": [
+          "P8",
+          "P30"
+        ]
+      },
+      {
+        "id": "S11",
+        "von": "E32",
+        "nach": "E22",
+        "art": "elektrisch",
+        "medium": "Traktionsstrom",
+        "absatz_ids": [
+          "P10",
+          "P30"
+        ],
+        "schnittstelle": "Anschluss der Traktionsbatterie"
+      },
+      {
+        "id": "S12",
+        "von": "E22",
+        "nach": "E21",
+        "art": "elektrisch",
+        "medium": "Phasenstrom",
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "S13",
+        "von": "E21",
+        "nach": "E22",
+        "art": "elektrisch",
+        "medium": "Rückgespeiste Bremsenergie",
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "S14",
+        "von": "E22",
+        "nach": "E32",
+        "art": "elektrisch",
+        "medium": "Rückgespeiste Bremsenergie",
+        "absatz_ids": [
+          "P8"
+        ],
+        "schnittstelle": "Anschluss der Traktionsbatterie"
+      },
+      {
+        "id": "S15",
+        "von": "E33",
+        "nach": "E32",
+        "art": "elektrisch",
+        "medium": "Ladestrom",
+        "absatz_ids": [
+          "P10",
+          "P30"
+        ]
+      },
+      {
+        "id": "S16",
+        "von": "E32",
+        "nach": "E34",
+        "art": "elektrisch",
+        "medium": "Gleichstrom",
+        "absatz_ids": [
+          "P10",
+          "P30"
+        ]
+      },
+      {
+        "id": "S17",
+        "von": "E34",
+        "nach": "E65",
+        "art": "elektrisch",
+        "medium": "Niedervolt-Gleichstrom",
+        "absatz_ids": [
+          "P10",
+          "P30"
+        ],
+        "schnittstelle": "Bordnetzeinspeisung des Gleichspannungswandlers"
+      },
+      {
+        "id": "S18",
+        "von": "E15",
+        "nach": "E36",
+        "art": "mechanisch",
+        "medium": "Drehmoment",
+        "absatz_ids": [
+          "P10",
+          "P30"
+        ],
+        "schnittstelle": "Generatorantrieb an der Kurbelwelle"
+      },
+      {
+        "id": "S19",
+        "von": "E36",
+        "nach": "E37",
+        "art": "elektrisch",
+        "medium": "Wechselstrom",
+        "absatz_ids": [
+          "P10",
+          "P30"
+        ]
+      },
+      {
+        "id": "S20",
+        "von": "E37",
+        "nach": "E38",
+        "art": "elektrisch",
+        "medium": "Ladestrom",
+        "absatz_ids": [
+          "P10",
+          "P30"
+        ]
+      },
+      {
+        "id": "S21",
+        "von": "E38",
+        "nach": "E65",
+        "art": "elektrisch",
+        "medium": "Niedervolt-Gleichstrom",
+        "absatz_ids": [
+          "P21",
+          "P30"
+        ],
+        "schnittstelle": "Batterieanschluss des Bordnetzes"
+      },
+      {
+        "id": "S22",
+        "von": "E65",
+        "nach": "E81",
+        "art": "elektrisch",
+        "medium": "Niedervolt-Gleichstrom",
+        "absatz_ids": [
+          "P21",
+          "P26"
+        ],
+        "schnittstelle": "Lichtstromkreise"
+      },
+      {
+        "id": "S23",
+        "von": "E65",
+        "nach": "E71",
+        "art": "elektrisch",
+        "medium": "Niedervolt-Gleichstrom",
+        "absatz_ids": [
+          "P21"
+        ],
+        "schnittstelle": "Steuergeräteversorgung"
+      },
+      {
+        "id": "S24",
+        "von": "E65",
+        "nach": "E91",
+        "art": "elektrisch",
+        "medium": "Niedervolt-Gleichstrom",
+        "absatz_ids": [
+          "P21",
+          "P27"
+        ],
+        "schnittstelle": "Lüfterstromkreis"
+      },
+      {
+        "id": "S25",
+        "von": "E65",
+        "nach": "E51",
+        "art": "elektrisch",
+        "medium": "Niedervolt-Gleichstrom",
+        "absatz_ids": [
+          "P21"
+        ],
+        "schnittstelle": "Versorgung des Hydraulikaggregats"
+      },
+      {
+        "id": "S26",
+        "von": "E58",
+        "nach": "E71",
+        "art": "information",
+        "medium": "Gasgriffstellung",
+        "absatz_ids": [
+          "P18",
+          "P23",
+          "P30"
+        ],
+        "schnittstelle": "Gasgriffsignal"
+      },
+      {
+        "id": "S27",
+        "von": "E58",
+        "nach": "E24",
+        "art": "mechanisch",
+        "medium": "Kupplungsbetätigung",
+        "absatz_ids": [
+          "P17",
+          "P18"
+        ],
+        "schnittstelle": "Kupplungszug"
+      },
+      {
+        "id": "S28",
+        "von": "E58",
+        "nach": "E25",
+        "art": "mechanisch",
+        "medium": "Schaltbewegung",
+        "absatz_ids": [
+          "P17",
+          "P18"
+        ],
+        "schnittstelle": "Fußschalthebel am Getriebe"
+      },
+      {
+        "id": "S29",
+        "von": "E40",
+        "nach": "E41",
+        "art": "mechanisch",
+        "medium": "Lenkmoment",
+        "absatz_ids": [
+          "P13"
+        ]
+      },
+      {
+        "id": "S30",
+        "von": "E41",
+        "nach": "E8",
+        "art": "mechanisch",
+        "medium": "Lenkmoment",
+        "absatz_ids": [
+          "P13"
+        ],
+        "schnittstelle": "Gabelklemmung in den Gabelbrücken"
+      },
+      {
+        "id": "S31",
+        "von": "E11",
+        "nach": "E8",
+        "art": "mechanisch",
+        "medium": "Radkräfte",
+        "absatz_ids": [
+          "P5",
+          "P30"
+        ]
+      },
+      {
+        "id": "S32",
+        "von": "E8",
+        "nach": "E4",
+        "art": "mechanisch",
+        "medium": "Radkräfte",
+        "absatz_ids": [
+          "P5",
+          "P30"
+        ]
+      },
+      {
+        "id": "S33",
+        "von": "E11",
+        "nach": "E9",
+        "art": "mechanisch",
+        "medium": "Radkräfte",
+        "absatz_ids": [
+          "P5",
+          "P30"
+        ]
+      },
+      {
+        "id": "S34",
+        "von": "E9",
+        "nach": "E10",
+        "art": "mechanisch",
+        "medium": "Federkraft",
+        "absatz_ids": [
+          "P5",
+          "P30"
+        ]
+      },
+      {
+        "id": "S35",
+        "von": "E10",
+        "nach": "E4",
+        "art": "mechanisch",
+        "medium": "Federkraft",
+        "absatz_ids": [
+          "P5",
+          "P30"
+        ]
+      },
+      {
+        "id": "S36",
+        "von": "E45",
+        "nach": "E46",
+        "art": "mechanisch",
+        "medium": "Hebelkraft",
+        "absatz_ids": [
+          "P16"
+        ]
+      },
+      {
+        "id": "S37",
+        "von": "E46",
+        "nach": "E47",
+        "art": "hydraulisch",
+        "medium": "Bremsflüssigkeit",
+        "absatz_ids": [
+          "P16",
+          "P30"
+        ]
+      },
+      {
+        "id": "S38",
+        "von": "E46",
+        "nach": "E48",
+        "art": "hydraulisch",
+        "medium": "Bremsflüssigkeit",
+        "absatz_ids": [
+          "P16",
+          "P30"
+        ]
+      },
+      {
+        "id": "S39",
+        "von": "E46",
+        "nach": "E52",
+        "art": "hydraulisch",
+        "medium": "Bremsflüssigkeit",
+        "absatz_ids": [
+          "P16",
+          "P30"
+        ]
+      },
+      {
+        "id": "S40",
+        "von": "E52",
+        "nach": "E47",
+        "art": "hydraulisch",
+        "medium": "Bremsflüssigkeit",
+        "absatz_ids": [
+          "P15",
+          "P16"
+        ]
+      },
+      {
+        "id": "S41",
+        "von": "E50",
+        "nach": "E51",
+        "art": "information",
+        "medium": "Raddrehzahl",
+        "absatz_ids": [
+          "P16",
+          "P30"
+        ]
+      },
+      {
+        "id": "S42",
+        "von": "E51",
+        "nach": "E47",
+        "art": "hydraulisch",
+        "medium": "Modulierter Bremsdruck",
+        "absatz_ids": [
+          "P16",
+          "P30"
+        ]
+      },
+      {
+        "id": "S43",
+        "von": "E50",
+        "nach": "E78",
+        "art": "information",
+        "medium": "Raddrehzahl",
+        "absatz_ids": [
+          "P24",
+          "P30"
+        ],
+        "schnittstelle": "Raddrehzahlsignal"
+      },
+      {
+        "id": "S44",
+        "von": "E78",
+        "nach": "E71",
+        "art": "information",
+        "medium": "Momentenanforderung",
+        "absatz_ids": [
+          "P24"
+        ],
+        "schnittstelle": "Anforderung zur Momentenreduzierung"
+      },
+      {
+        "id": "S45",
+        "von": "E75",
+        "nach": "E71",
+        "art": "information",
+        "medium": "Abschaltsignal",
+        "absatz_ids": [
+          "P24",
+          "P30"
+        ],
+        "schnittstelle": "Notaussignal"
+      },
+      {
+        "id": "S46",
+        "von": "E76",
+        "nach": "E71",
+        "art": "information",
+        "medium": "Ständerstellung",
+        "absatz_ids": [
+          "P24",
+          "P30"
+        ],
+        "schnittstelle": "Seitenständersignal"
+      },
+      {
+        "id": "S47",
+        "von": "E71",
+        "nach": "E69",
+        "art": "information",
+        "medium": "Zustandsdaten",
+        "absatz_ids": [
+          "P21",
+          "P30"
+        ],
+        "schnittstelle": "Busanschluss des Motorsteuergeräts"
+      },
+      {
+        "id": "S48",
+        "von": "E69",
+        "nach": "E59",
+        "art": "information",
+        "medium": "Zustandsdaten",
+        "absatz_ids": [
+          "P21",
+          "P30"
+        ],
+        "schnittstelle": "Instrumentenanbindung am Fahrzeugbus"
+      },
+      {
+        "id": "S49",
+        "von": "E71",
+        "nach": "E72",
+        "art": "information",
+        "medium": "Fehlercodes",
+        "absatz_ids": [
+          "P23"
+        ]
+      },
+      {
+        "id": "S50",
+        "von": "E71",
+        "nach": "E15",
+        "art": "information",
+        "medium": "Einspritz- und Zündsignale",
+        "absatz_ids": [
+          "P23"
+        ],
+        "schnittstelle": "Einspritz- und Zündansteuerung"
+      },
+      {
+        "id": "S51",
+        "von": "E71",
+        "nach": "E22",
+        "art": "information",
+        "medium": "Leistungsvorgabe",
+        "absatz_ids": [
+          "P23"
+        ],
+        "schnittstelle": "Leistungsanforderung an die Leistungselektronik"
+      },
+      {
+        "id": "S52",
+        "von": "E45",
+        "nach": "E83",
+        "art": "information",
+        "medium": "Bremslichtsignal",
+        "absatz_ids": [
+          "P16",
+          "P26"
+        ],
+        "schnittstelle": "Bremslichtschalter"
+      },
+      {
+        "id": "S53",
+        "von": "E58",
+        "nach": "E81",
+        "art": "elektrisch",
+        "medium": "Schaltsignal für Licht und Blinker",
+        "absatz_ids": [
+          "P17",
+          "P26"
+        ],
+        "schnittstelle": "Lenkerschalter"
+      },
+      {
+        "id": "S54",
+        "von": "E58",
+        "nach": "E79",
+        "art": "elektrisch",
+        "medium": "Schaltsignal",
+        "absatz_ids": [
+          "P17",
+          "P24"
+        ],
+        "schnittstelle": "Hupenschalter"
+      },
+      {
+        "id": "S55",
+        "von": "E90",
+        "nach": "E15",
+        "art": "stoff",
+        "medium": "Kühlmittel",
+        "absatz_ids": [
+          "P27"
+        ],
+        "schnittstelle": "Kühlmittelzulauf am Motor"
+      },
+      {
+        "id": "S56",
+        "von": "E15",
+        "nach": "E89",
+        "art": "thermisch",
+        "medium": "Erwärmtes Kühlmittel",
+        "absatz_ids": [
+          "P27",
+          "P30"
+        ],
+        "schnittstelle": "Kühlmittelrücklauf zum Kühler"
+      },
+      {
+        "id": "S57",
+        "von": "E15",
+        "nach": "E92",
+        "art": "thermisch",
+        "medium": "Motorwärme",
+        "absatz_ids": [
+          "P27",
+          "P30"
+        ],
+        "schnittstelle": "Zylinder und Zylinderkopf"
+      },
+      {
+        "id": "S58",
+        "von": "E61",
+        "nach": "E5",
+        "art": "mechanisch",
+        "medium": "Gepäcklast",
+        "absatz_ids": [
+          "P5",
+          "P19"
+        ],
+        "schnittstelle": "Gepäckträgerbefestigung am Heckrahmen"
+      },
+      {
+        "id": "S59",
+        "von": "E62",
+        "nach": "E5",
+        "art": "mechanisch",
+        "medium": "Beifahrerlast",
+        "absatz_ids": [
+          "P19"
+        ],
+        "schnittstelle": "Beifahrerhalterung am Heckrahmen"
+      },
+      {
+        "id": "S60",
+        "von": "E63",
+        "nach": "E5",
+        "art": "mechanisch",
+        "medium": "Zug- und Stützlast",
+        "absatz_ids": [
+          "P19"
+        ],
+        "schnittstelle": "Befestigung der Anhängevorrichtung"
+      },
+      {
+        "id": "S61",
+        "von": "E55",
+        "nach": "E5",
+        "art": "mechanisch",
+        "medium": "Sitzlast",
+        "absatz_ids": [
+          "P5",
+          "P18"
+        ],
+        "schnittstelle": "Sitzbankaufnahme am Heckrahmen"
+      },
+      {
+        "id": "S62",
+        "von": "E56",
+        "nach": "E4",
+        "art": "mechanisch",
+        "medium": "Fußlast",
+        "absatz_ids": [
+          "P18"
+        ],
+        "schnittstelle": "Fußrastenaufnahme"
+      },
+      {
+        "id": "S63",
+        "von": "E12",
+        "nach": "E4",
+        "art": "mechanisch",
+        "medium": "Stützlast",
+        "absatz_ids": [
+          "P5"
+        ]
+      },
+      {
+        "id": "S64",
+        "von": "E77",
+        "nach": "E41",
+        "art": "mechanisch",
+        "medium": "Lenkungsarretierung",
+        "absatz_ids": [
+          "P12",
+          "P24"
+        ],
+        "schnittstelle": "Lenkschloss am Lenkkopf"
+      },
+      {
+        "id": "S65",
+        "von": "E9",
+        "nach": "E4",
+        "art": "mechanisch",
+        "medium": "Radkräfte",
+        "absatz_ids": [
+          "P5",
+          "P30"
+        ],
+        "schnittstelle": "Schwingenlager"
+      },
+      {
+        "id": "S66",
+        "von": "E45",
+        "nach": "E48",
+        "art": "mechanisch",
+        "medium": "Betätigungskraft",
+        "absatz_ids": [
+          "P16",
+          "P30"
+        ],
+        "schnittstelle": "Bremsgestänge oder Bremsseil"
+      },
+      {
+        "id": "S67",
+        "von": "E29",
+        "nach": "E93",
+        "art": "stoff",
+        "medium": "Kraftstoffdampf",
+        "absatz_ids": [
+          "P10",
+          "P30"
+        ]
+      },
+      {
+        "id": "S68",
+        "von": "E93",
+        "nach": "E16",
+        "art": "stoff",
+        "medium": "Kraftstoffdampf",
+        "absatz_ids": [
+          "P10",
+          "P30"
+        ],
+        "schnittstelle": "Spülleitung zur Ansauganlage"
+      },
+      {
+        "id": "S69",
+        "von": "E94",
+        "nach": "E33",
+        "art": "information",
+        "medium": "Ladefreigabe und Ladegrenzen",
+        "absatz_ids": [
+          "P10",
+          "P30"
+        ]
+      },
+      {
+        "id": "S70",
+        "von": "E94",
+        "nach": "E22",
+        "art": "information",
+        "medium": "Entladegrenzen",
+        "absatz_ids": [
+          "P10",
+          "P30"
+        ],
+        "schnittstelle": "Leistungsfreigabe an die Leistungselektronik"
+      },
+      {
+        "id": "S71",
+        "von": "E94",
+        "nach": "E69",
+        "art": "information",
+        "medium": "Ladezustand und Batteriezustand",
+        "absatz_ids": [
+          "P10",
+          "P30"
+        ],
+        "schnittstelle": "Busanschluss des Batteriemanagementsystems"
+      },
+      {
+        "id": "S72",
+        "von": "E21",
+        "nach": "E88",
+        "art": "thermisch",
+        "medium": "Verlustwärme",
+        "absatz_ids": [
+          "P27",
+          "P30"
+        ],
+        "schnittstelle": "Kühlanschluss der Traktionsmaschine"
+      },
+      {
+        "id": "S73",
+        "von": "E22",
+        "nach": "E88",
+        "art": "thermisch",
+        "medium": "Verlustwärme",
+        "absatz_ids": [
+          "P27",
+          "P30"
+        ],
+        "schnittstelle": "Kühlanschluss der Leistungselektronik"
+      },
+      {
+        "id": "S74",
+        "von": "E32",
+        "nach": "E88",
+        "art": "thermisch",
+        "medium": "Verlustwärme",
+        "absatz_ids": [
+          "P27",
+          "P30"
+        ],
+        "schnittstelle": "Kühlanschluss der Traktionsbatterie"
+      }
     ],
     "entfallene_kategorien": [
       {
@@ -976,192 +2872,863 @@
         "id": "V1",
         "element_id": "E13",
         "bezeichnung": "Antriebsart",
-        "alternativen": ["Fremdzündungs-Verbrennungsmotor", "Batterieelektrischer Antrieb mit Traktionsmaschine", "Hybridantrieb aus Verbrennungsmotor und Traktionsmaschine"],
-        "auswahlkriterien": ["Reichweite und Zeitbedarf für Tanken oder Laden", "lokale Abgas- und Geräuschemissionen", "Lademöglichkeit am Abstellort", "Masse und Bauraum des Energiespeichers im Verhältnis zur Leistungs-Gewichts-Grenze der Klasse"],
-        "auswirkungen": [
-          {"element_id": "E27", "beschreibung": "Kraftstoffanlage, Traktionsenergiespeicher oder beide."},
-          {"element_id": "E35", "beschreibung": "Beim batterieelektrischen Antrieb entfällt der Generator; der Gleichspannungswandler speist das Bordnetz."},
-          {"element_id": "E87", "beschreibung": "Kühlung von Traktionsmaschine, Leistungselektronik und Traktionsbatterie statt oder zusätzlich zur Motorkühlung."},
-          {"element_id": "E23", "beschreibung": "Kupplung und Getriebe können beim Elektroantrieb entfallen."},
-          {"element_id": "E57", "beschreibung": "Ohne Schaltgetriebe entfallen Kupplungshebel und Fußschalthebel; Ladezustandsanzeige statt Kraftstoffanzeige."},
-          {"element_id": "E3", "beschreibung": "Der Rahmen muss Bauraum und Befestigung für Traktionsbatterie oder Kraftstofftank bieten."}
+        "alternativen": [
+          "Fremdzündungs-Verbrennungsmotor",
+          "Batterieelektrischer Antrieb mit Traktionsmaschine",
+          "Hybridantrieb aus Verbrennungsmotor und Traktionsmaschine"
         ],
-        "absatz_ids": ["P7", "P8", "P10", "P11"]
+        "auswahlkriterien": [
+          "Reichweite und Zeitbedarf für Tanken oder Laden",
+          "lokale Abgas- und Geräuschemissionen",
+          "Lademöglichkeit am Abstellort",
+          "Masse und Bauraum des Energiespeichers im Verhältnis zur Leistungs-Gewichts-Grenze der Klasse"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E27",
+            "beschreibung": "Kraftstoffanlage, Traktionsenergiespeicher oder beide."
+          },
+          {
+            "element_id": "E35",
+            "beschreibung": "Beim batterieelektrischen Antrieb entfällt der Generator; der Gleichspannungswandler speist das Bordnetz."
+          },
+          {
+            "element_id": "E87",
+            "beschreibung": "Kühlung von Traktionsmaschine, Leistungselektronik und Traktionsbatterie statt oder zusätzlich zur Motorkühlung."
+          },
+          {
+            "element_id": "E23",
+            "beschreibung": "Kupplung und Getriebe können beim Elektroantrieb entfallen."
+          },
+          {
+            "element_id": "E57",
+            "beschreibung": "Ohne Schaltgetriebe entfallen Kupplungshebel und Fußschalthebel; Ladezustandsanzeige statt Kraftstoffanzeige."
+          },
+          {
+            "element_id": "E3",
+            "beschreibung": "Der Rahmen muss Bauraum und Befestigung für Traktionsbatterie oder Kraftstofftank bieten."
+          }
+        ],
+        "absatz_ids": [
+          "P7",
+          "P8",
+          "P10",
+          "P11"
+        ]
       },
       {
         "id": "V2",
         "element_id": "E2",
         "bezeichnung": "Bauform",
-        "alternativen": ["Motorradbauform mit rahmenfestem Motor und Hinterradschwinge", "Rollerbauform mit Triebsatzschwinge und stufenlosem Getriebe"],
-        "auswahlkriterien": ["Einsatzprofil Stadtverkehr oder Überland", "Bedienkomfort ohne Kuppeln und Schalten", "Stauraum und Wetterschutz", "ungefederte Masse und Fahrverhalten"],
-        "auswirkungen": [
-          {"element_id": "E25", "beschreibung": "Sequenzielles Schaltgetriebe oder stufenloses Getriebe im Triebsatz."},
-          {"element_id": "E26", "beschreibung": "Beim Roller liegt der Endantrieb im Triebsatz."},
-          {"element_id": "E9", "beschreibung": "Die eigene Hinterradschwinge entfällt, der Triebsatz übernimmt die Hinterradführung."},
-          {"element_id": "E58", "beschreibung": "Beim Roller entfallen Kupplungshebel und Fußschalthebel; die Hinterradbremse wird meist mit einem linken Handbremshebel statt mit dem Fußbremshebel betätigt."},
-          {"element_id": "E60", "beschreibung": "Roller können ein Staufach unter der Sitzbank bieten."},
-          {"element_id": "E45", "beschreibung": "Beim Roller ist der Bremshebel der Hinterradbremse ein linker Handhebel; er steuert den Hauptbremszylinder dieses Kreises an."},
-          {"element_id": "E52", "beschreibung": "Beim Roller wird die Kombibremse vom linken Handhebel angesteuert."}
+        "alternativen": [
+          "Motorradbauform mit rahmenfestem Motor und Hinterradschwinge",
+          "Rollerbauform mit Triebsatzschwinge und stufenlosem Getriebe"
         ],
-        "absatz_ids": ["P4", "P6", "P9", "P18", "P19", "P15"]
+        "auswahlkriterien": [
+          "Einsatzprofil Stadtverkehr oder Überland",
+          "Bedienkomfort ohne Kuppeln und Schalten",
+          "Stauraum und Wetterschutz",
+          "ungefederte Masse und Fahrverhalten"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E25",
+            "beschreibung": "Sequenzielles Schaltgetriebe oder stufenloses Getriebe im Triebsatz."
+          },
+          {
+            "element_id": "E26",
+            "beschreibung": "Beim Roller liegt der Endantrieb im Triebsatz."
+          },
+          {
+            "element_id": "E9",
+            "beschreibung": "Die eigene Hinterradschwinge entfällt, der Triebsatz übernimmt die Hinterradführung."
+          },
+          {
+            "element_id": "E58",
+            "beschreibung": "Beim Roller entfallen Kupplungshebel und Fußschalthebel; die Hinterradbremse wird meist mit einem linken Handbremshebel statt mit dem Fußbremshebel betätigt."
+          },
+          {
+            "element_id": "E60",
+            "beschreibung": "Roller können ein Staufach unter der Sitzbank bieten."
+          },
+          {
+            "element_id": "E45",
+            "beschreibung": "Beim Roller ist der Bremshebel der Hinterradbremse ein linker Handhebel; er steuert den Hauptbremszylinder dieses Kreises an."
+          },
+          {
+            "element_id": "E52",
+            "beschreibung": "Beim Roller wird die Kombibremse vom linken Handhebel angesteuert."
+          }
+        ],
+        "absatz_ids": [
+          "P4",
+          "P6",
+          "P9",
+          "P18",
+          "P19",
+          "P15"
+        ]
       },
       {
         "id": "V3",
         "element_id": "E26",
         "bezeichnung": "Bauart des Endantriebs",
-        "alternativen": ["Kettenantrieb", "Zahnriemenantrieb", "Kardanwelle"],
-        "auswahlkriterien": ["Wartungsaufwand", "Herstellkosten", "Masse", "Anpassbarkeit der Übersetzung", "Geräusch"],
-        "auswirkungen": [
-          {"element_id": "E9", "beschreibung": "Kettenspannung über den Federweg bei Kette und Zahnriemen, Momentabstützung und Wellenführung bei der Kardanwelle."},
-          {"element_id": "E15", "beschreibung": "Die Kardanwelle passt am einfachsten zu längs liegender Kurbelwelle, sonst ist ein zusätzlicher Winkeltrieb nötig."}
+        "alternativen": [
+          "Kettenantrieb",
+          "Zahnriemenantrieb",
+          "Kardanwelle"
         ],
-        "absatz_ids": ["P9"]
+        "auswahlkriterien": [
+          "Wartungsaufwand",
+          "Herstellkosten",
+          "Masse",
+          "Anpassbarkeit der Übersetzung",
+          "Geräusch"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E9",
+            "beschreibung": "Kettenspannung über den Federweg bei Kette und Zahnriemen, Momentabstützung und Wellenführung bei der Kardanwelle."
+          },
+          {
+            "element_id": "E15",
+            "beschreibung": "Die Kardanwelle passt am einfachsten zu längs liegender Kurbelwelle, sonst ist ein zusätzlicher Winkeltrieb nötig."
+          }
+        ],
+        "absatz_ids": [
+          "P9"
+        ]
       },
       {
         "id": "V4",
         "element_id": "E43",
         "bezeichnung": "Verbessertes Bremssystem",
-        "alternativen": ["Antiblockiersystem", "Kombibremse", "Kombibremse mit Antiblockiersystem"],
-        "auswahlkriterien": ["Bremsweg und Fahrstabilität bei Fehlbedienung", "Kosten und Masse", "Unterklasse Enduro oder Trial mit Ausnahme von der Ausrüstungspflicht"],
-        "auswirkungen": [
-          {"element_id": "E65", "beschreibung": "Versorgung und Sensorleitungen für das Hydraulikaggregat nur mit Antiblockiersystem."},
-          {"element_id": "E59", "beschreibung": "Warnleuchte für das Antiblockiersystem im Kombiinstrument."},
-          {"element_id": "E78", "beschreibung": "Eine Antriebsschlupfregelung kann nur die Raddrehzahlsensoren eines vorhandenen Antiblockiersystems mitnutzen."},
-          {"element_id": "E48", "beschreibung": "Bei der Kombibremse wird die Hinterradbremse mit der Vorderradbremse gekoppelt betätigt."}
+        "alternativen": [
+          "Antiblockiersystem",
+          "Kombibremse",
+          "Kombibremse mit Antiblockiersystem"
         ],
-        "absatz_ids": ["P14", "P15", "P16"]
+        "auswahlkriterien": [
+          "Bremsweg und Fahrstabilität bei Fehlbedienung",
+          "Kosten und Masse",
+          "Unterklasse Enduro oder Trial mit Ausnahme von der Ausrüstungspflicht"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E65",
+            "beschreibung": "Versorgung und Sensorleitungen für das Hydraulikaggregat nur mit Antiblockiersystem."
+          },
+          {
+            "element_id": "E59",
+            "beschreibung": "Warnleuchte für das Antiblockiersystem im Kombiinstrument."
+          },
+          {
+            "element_id": "E78",
+            "beschreibung": "Eine Antriebsschlupfregelung kann nur die Raddrehzahlsensoren eines vorhandenen Antiblockiersystems mitnutzen."
+          },
+          {
+            "element_id": "E48",
+            "beschreibung": "Bei der Kombibremse wird die Hinterradbremse mit der Vorderradbremse gekoppelt betätigt."
+          }
+        ],
+        "absatz_ids": [
+          "P14",
+          "P15",
+          "P16"
+        ]
       },
       {
         "id": "V5",
         "element_id": "E3",
         "bezeichnung": "Rahmenbauart",
-        "alternativen": ["Einrohrrahmen", "Zentralpressrahmen", "Rückgrat- oder Zentralrohrrahmen", "Doppelschleifenrahmen", "Gitterrohrrahmen", "Brückenrahmen mit tragender Motor-Getriebe-Einheit"],
-        "auswahlkriterien": ["Steifigkeit", "Fertigungskosten in der Großserie", "Masse", "Bauraum für Motor, Kraftstofftank oder Traktionsbatterie"],
-        "auswirkungen": [
-          {"element_id": "E15", "beschreibung": "Im Brückenrahmen und in anderen offenen Rahmenformen trägt die Motor-Getriebe-Einheit mit, das Motorgehäuse nimmt Fahrwerkslasten auf; im geschlossenen Rahmen hängt der Motor im Rahmen."},
-          {"element_id": "E29", "beschreibung": "Lage und Form des Kraftstofftanks folgen der Rahmenform."},
-          {"element_id": "E6", "beschreibung": "Umfang der Verkleidung und Befestigungspunkte hängen von der Rahmenform ab."}
+        "alternativen": [
+          "Einrohrrahmen",
+          "Zentralpressrahmen",
+          "Rückgrat- oder Zentralrohrrahmen",
+          "Doppelschleifenrahmen",
+          "Gitterrohrrahmen",
+          "Brückenrahmen mit tragender Motor-Getriebe-Einheit"
         ],
-        "absatz_ids": ["P4", "P6"]
+        "auswahlkriterien": [
+          "Steifigkeit",
+          "Fertigungskosten in der Großserie",
+          "Masse",
+          "Bauraum für Motor, Kraftstofftank oder Traktionsbatterie"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E15",
+            "beschreibung": "Im Brückenrahmen und in anderen offenen Rahmenformen trägt die Motor-Getriebe-Einheit mit, das Motorgehäuse nimmt Fahrwerkslasten auf; im geschlossenen Rahmen hängt der Motor im Rahmen."
+          },
+          {
+            "element_id": "E29",
+            "beschreibung": "Lage und Form des Kraftstofftanks folgen der Rahmenform."
+          },
+          {
+            "element_id": "E6",
+            "beschreibung": "Umfang der Verkleidung und Befestigungspunkte hängen von der Rahmenform ab."
+          }
+        ],
+        "absatz_ids": [
+          "P4",
+          "P6"
+        ]
       },
       {
         "id": "V6",
         "element_id": "E87",
         "bezeichnung": "Kühlungsart des Motors",
-        "alternativen": ["Luftkühlung über Kühlrippen", "Flüssigkeitskühlung mit Kühlkreislauf"],
-        "auswahlkriterien": ["Leistungsdichte und Geräusch", "Kosten und Masse", "thermische Belastung im Stadtverkehr"],
-        "auswirkungen": [
-          {"element_id": "E15", "beschreibung": "Kühlrippen an Zylinder und Zylinderkopf oder Kühlmittelmantel."},
-          {"element_id": "E65", "beschreibung": "Der Kühlerlüfter ist ein zusätzlicher Verbraucher im Bordnetz."},
-          {"element_id": "E59", "beschreibung": "Temperaturanzeige für das Kühlmittel."},
-          {"element_id": "E6", "beschreibung": "Kühleranordnung und Luftführung in Rahmen oder Verkleidung."}
+        "alternativen": [
+          "Luftkühlung über Kühlrippen",
+          "Flüssigkeitskühlung mit Kühlkreislauf"
         ],
-        "absatz_ids": ["P27"]
+        "auswahlkriterien": [
+          "Leistungsdichte und Geräusch",
+          "Kosten und Masse",
+          "thermische Belastung im Stadtverkehr"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E15",
+            "beschreibung": "Kühlrippen an Zylinder und Zylinderkopf oder Kühlmittelmantel."
+          },
+          {
+            "element_id": "E65",
+            "beschreibung": "Der Kühlerlüfter ist ein zusätzlicher Verbraucher im Bordnetz."
+          },
+          {
+            "element_id": "E59",
+            "beschreibung": "Temperaturanzeige für das Kühlmittel."
+          },
+          {
+            "element_id": "E6",
+            "beschreibung": "Kühleranordnung und Luftführung in Rahmen oder Verkleidung."
+          }
+        ],
+        "absatz_ids": [
+          "P27"
+        ]
       },
       {
         "id": "V7",
         "element_id": "E39",
         "bezeichnung": "Lenkungsbauart",
-        "alternativen": ["Steuerkopflenkung mit Teleskopgabel", "Radnabenlenkung", "Achsschenkellenkung"],
-        "auswahlkriterien": ["Kosten und Verbreitung", "Trennung von Lenk- und Federungsfunktion", "Bauraum am Vorderrad"],
-        "auswirkungen": [
-          {"element_id": "E8", "beschreibung": "Teleskopgabel oder eigene Vorderradschwinge mit Federbein."},
-          {"element_id": "E4", "beschreibung": "Lenkkopf oder vordere Schwingenaufnahme am Hauptrahmen."},
-          {"element_id": "E47", "beschreibung": "Anordnung und Leitungsführung der Vorderradbremse."}
+        "alternativen": [
+          "Steuerkopflenkung mit Teleskopgabel",
+          "Radnabenlenkung",
+          "Achsschenkellenkung"
         ],
-        "absatz_ids": ["P12", "P13"]
+        "auswahlkriterien": [
+          "Kosten und Verbreitung",
+          "Trennung von Lenk- und Federungsfunktion",
+          "Bauraum am Vorderrad"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E8",
+            "beschreibung": "Teleskopgabel oder eigene Vorderradschwinge mit Federbein."
+          },
+          {
+            "element_id": "E4",
+            "beschreibung": "Lenkkopf oder vordere Schwingenaufnahme am Hauptrahmen."
+          },
+          {
+            "element_id": "E47",
+            "beschreibung": "Anordnung und Leitungsführung der Vorderradbremse."
+          }
+        ],
+        "absatz_ids": [
+          "P12",
+          "P13"
+        ]
       },
       {
         "id": "V8",
         "element_id": "E80",
         "bezeichnung": "Lösung für die Sichtbarkeit am Tag",
-        "alternativen": ["Automatisch eingeschaltete Beleuchtungseinrichtung", "Eigene Tagfahrleuchten"],
-        "auswahlkriterien": ["Energiebedarf im Bordnetz", "Gestaltung der Fahrzeugfront", "Lebensdauer der Leuchtmittel"],
-        "auswirkungen": [
-          {"element_id": "E35", "beschreibung": "Dauerlast für Generator oder Gleichspannungswandler."},
-          {"element_id": "E58", "beschreibung": "Schaltlogik des Lichtschalters am Lenkerschalter."},
-          {"element_id": "E85", "beschreibung": "Tagfahrleuchten kommen nur bei der zweiten Alternative hinzu."}
+        "alternativen": [
+          "Automatisch eingeschaltete Beleuchtungseinrichtung",
+          "Eigene Tagfahrleuchten"
         ],
-        "absatz_ids": ["P25", "P26"]
+        "auswahlkriterien": [
+          "Energiebedarf im Bordnetz",
+          "Gestaltung der Fahrzeugfront",
+          "Lebensdauer der Leuchtmittel"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E35",
+            "beschreibung": "Dauerlast für Generator oder Gleichspannungswandler."
+          },
+          {
+            "element_id": "E58",
+            "beschreibung": "Schaltlogik des Lichtschalters am Lenkerschalter."
+          },
+          {
+            "element_id": "E85",
+            "beschreibung": "Tagfahrleuchten kommen nur bei der zweiten Alternative hinzu."
+          }
+        ],
+        "absatz_ids": [
+          "P25",
+          "P26"
+        ]
       },
       {
         "id": "V9",
         "element_id": "E20",
         "bezeichnung": "Anordnung der Traktionsmaschine",
-        "alternativen": ["Radnabenmotor im Hinterrad", "Rahmen- oder schwingenfeste Traktionsmaschine mit Endantrieb"],
-        "auswahlkriterien": ["ungefederte Masse und Fahrkomfort", "Bauraum", "Kosten", "Wartung"],
-        "auswirkungen": [
-          {"element_id": "E26", "beschreibung": "Beim Radnabenmotor entfällt der Endantrieb, bei rahmen- oder schwingenfester Traktionsmaschine treibt er das Hinterrad an."},
-          {"element_id": "E11", "beschreibung": "Beim Radnabenmotor trägt das Hinterrad den Motor, die ungefederte Masse steigt."},
-          {"element_id": "E9", "beschreibung": "Beim Radnabenmotor führt die Hinterradschwinge die Leistungs- und Sensorleitungen und nimmt das Antriebsmoment ab."},
-          {"element_id": "E87", "beschreibung": "Beim Radnabenmotor wird die Wärme der Traktionsmaschine über Radgehäuse und Fahrtwind abgeführt."}
+        "alternativen": [
+          "Radnabenmotor im Hinterrad",
+          "Rahmen- oder schwingenfeste Traktionsmaschine mit Endantrieb"
         ],
-        "absatz_ids": ["P8"]
+        "auswahlkriterien": [
+          "ungefederte Masse und Fahrkomfort",
+          "Bauraum",
+          "Kosten",
+          "Wartung"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E26",
+            "beschreibung": "Beim Radnabenmotor entfällt der Endantrieb, bei rahmen- oder schwingenfester Traktionsmaschine treibt er das Hinterrad an."
+          },
+          {
+            "element_id": "E11",
+            "beschreibung": "Beim Radnabenmotor trägt das Hinterrad den Motor, die ungefederte Masse steigt."
+          },
+          {
+            "element_id": "E9",
+            "beschreibung": "Beim Radnabenmotor führt die Hinterradschwinge die Leistungs- und Sensorleitungen und nimmt das Antriebsmoment ab."
+          },
+          {
+            "element_id": "E87",
+            "beschreibung": "Beim Radnabenmotor wird die Wärme der Traktionsmaschine über Radgehäuse und Fahrtwind abgeführt."
+          }
+        ],
+        "absatz_ids": [
+          "P8"
+        ]
       }
     ],
     "klaerungsfragen": [
-      {"id": "K1", "frage": "Welche Antriebsart soll das Leichtkraftrad erhalten: Verbrennungsmotor, batterieelektrischen Antrieb oder Hybrid?", "element_ids": ["E13", "E27"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Energieversorgung, Kraftübertragung, Thermomanagement und Bedienelemente ab.", "variante_ids": ["V1"]},
-      {"id": "K2", "frage": "Soll das Fahrzeug als Motorrad mit Schaltgetriebe oder als Roller mit Triebsatzschwinge und stufenlosem Getriebe ausgelegt werden?", "element_ids": ["E2", "E13"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Hinterradführung, Getriebe, Endantrieb, Bedienelemente und Stauraum ab.", "variante_ids": ["V2"]},
-      {"id": "K3", "frage": "Welcher Endantrieb ist vorgesehen: Kette, Zahnriemen oder Kardanwelle?", "element_ids": ["E26", "E9"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Schwingenkonstruktion, Wartungskonzept und Masse ab.", "variante_ids": ["V3"]},
-      {"id": "K4", "frage": "Soll das verbesserte Bremssystem als Antiblockiersystem, als Kombibremse oder als Kombination beider ausgeführt werden?", "element_ids": ["E43"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Hydraulikaggregat, Sensorik, Bordnetzlast und die Möglichkeit einer Antriebsschlupfregelung ab.", "variante_ids": ["V4"]},
-      {"id": "K5", "frage": "Welche Rahmenbauart ist vorgesehen, und soll die Motor-Getriebe-Einheit tragend in den Rahmen einbezogen werden?", "element_ids": ["E3", "E15"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Lastpfad, Motoraufhängung und Bauraum für Tank oder Batterie ab.", "variante_ids": ["V5"]},
-      {"id": "K6", "frage": "Wird der Motor luftgekühlt oder flüssigkeitsgekühlt?", "element_ids": ["E87", "E15"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Kühlkreislauf, Kühleranordnung, Lüfter im Bordnetz und Temperaturanzeige ab.", "variante_ids": ["V6"]},
-      {"id": "K7", "frage": "Soll das Vorderrad über eine Steuerkopflenkung mit Teleskopgabel oder über eine Radnaben- beziehungsweise Achsschenkellenkung geführt werden?", "element_ids": ["E39", "E8"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Vorderradführung, Lenkkopf und Rahmenvorderteil ab.", "variante_ids": ["V7"]},
-      {"id": "K8", "frage": "Soll die Sichtbarkeit am Tag durch automatisch eingeschaltete Beleuchtung oder durch eigene Tagfahrleuchten sichergestellt werden?", "element_ids": ["E80"], "anlass": "anforderung", "relevanz": "Davon hängen Leuchtenbestückung, Schaltlogik und Bordnetzlast ab.", "variante_ids": ["V8"]},
-      {"id": "K9", "frage": "Soll die Traktionsbatterie fest eingebaut und am Fahrzeug geladen oder als entnehmbarer Akku außerhalb des Fahrzeugs geladen werden?", "element_ids": ["E27", "E31"], "anlass": "schnittstelle", "relevanz": "Davon hängen Ladeeinrichtung, Steckverbindung, Batteriebefestigung und Diebstahlschutz ab.", "variante_ids": ["V1"]},
-      {"id": "K10", "frage": "Welcher Ständer ist vorzusehen: Seitenständer, Hauptständer oder beide?", "element_ids": ["E2", "E12"], "anlass": "betrieb", "relevanz": "Davon hängen Rahmenaufnahmen, Seitenständerschalter und Abstellen auf unebenem Grund ab."},
-      {"id": "K11", "frage": "Ist das Fahrzeug für den Betrieb mit Beifahrer auszulegen?", "element_ids": ["E53", "E60"], "anlass": "anforderung", "relevanz": "Davon hängen Sitzbanklänge, Beifahrereinrichtungen, Heckrahmen, Federbein und Bremsauslegung ab."},
-      {"id": "K12", "frage": "Welche Zustände und Warnungen muss das Kombiinstrument anzeigen, und soll es digital ausgeführt werden?", "element_ids": ["E53", "E59"], "anlass": "anforderung", "relevanz": "Davon hängen Anbindung an Fahrzeugbus oder Einzelverdrahtung und der Umfang der Kontrollleuchten ab."},
-      {"id": "K13", "frage": "Welches Gepäcksystem und welche Zuladung muss der Heckrahmen aufnehmen, und ist eine Anhängevorrichtung vorgesehen?", "element_ids": ["E60", "E5"], "anlass": "anforderung", "relevanz": "Davon hängen Heckrahmenfestigkeit, Federbeinauslegung und zulässige Gesamtmasse ab."},
-      {"id": "K14", "frage": "Sollen Motorsteuergerät, Antiblockiersystem und Kombiinstrument über einen Fahrzeugbus verbunden oder einzeln verdrahtet werden?", "element_ids": ["E64", "E69"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Leitungssatz, Diagnosezugang und Erweiterbarkeit um Assistenzfunktionen ab."},
-      {"id": "K15", "frage": "Werden die Leistungsgrenzen der Klasse allein durch die Bauart eingehalten oder zusätzlich elektronisch begrenzt, und wie wird die Begrenzung gegen Manipulation geschützt?", "element_ids": ["E70", "E71", "E22"], "anlass": "anforderung", "relevanz": "Davon hängen Motorauslegung, Funktionen von Motorsteuergerät oder Leistungselektronik, Manipulationsschutz und die Einstufung des Fahrzeugs ab."},
-      {"id": "K16", "frage": "Sollen eine Antriebsschlupfregelung und eine elektronische Wegfahrsperre zusätzlich zum Lenkschloss vorgesehen werden?", "element_ids": ["E73", "E78", "E77"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Sensorik, Steuergerätefunktionen und Schlüsselsystem ab."},
-      {"id": "K17", "frage": "Soll die Traktionsmaschine als Radnabenmotor im Hinterrad oder rahmenfest mit Endantrieb angeordnet werden?", "element_ids": ["E20", "E21"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Endantrieb, ungefederte Masse, Schwingenkonstruktion, Leitungsführung und Kühlung der Traktionsmaschine ab.", "variante_ids": ["V9"]},
-      {"id": "K18", "frage": "Soll das Traktionssystem unterhalb oder oberhalb der Hochspannungsgrenze betrieben werden?", "element_ids": ["E31", "E20"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Berührungsschutz, Isolationsüberwachung, Leistungselektronik, Ladeeinrichtung und die anzuwendenden Anforderungen an die elektrische Sicherheit ab.", "variante_ids": ["V1"]}
+      {
+        "id": "K1",
+        "frage": "Welche Antriebsart soll das Leichtkraftrad erhalten: Verbrennungsmotor, batterieelektrischen Antrieb oder Hybrid?",
+        "element_ids": [
+          "E13",
+          "E27"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Energieversorgung, Kraftübertragung, Thermomanagement und Bedienelemente ab.",
+        "variante_ids": [
+          "V1"
+        ]
+      },
+      {
+        "id": "K2",
+        "frage": "Soll das Fahrzeug als Motorrad mit Schaltgetriebe oder als Roller mit Triebsatzschwinge und stufenlosem Getriebe ausgelegt werden?",
+        "element_ids": [
+          "E2",
+          "E13"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Hinterradführung, Getriebe, Endantrieb, Bedienelemente und Stauraum ab.",
+        "variante_ids": [
+          "V2"
+        ]
+      },
+      {
+        "id": "K3",
+        "frage": "Welcher Endantrieb ist vorgesehen: Kette, Zahnriemen oder Kardanwelle?",
+        "element_ids": [
+          "E26",
+          "E9"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Schwingenkonstruktion, Wartungskonzept und Masse ab.",
+        "variante_ids": [
+          "V3"
+        ]
+      },
+      {
+        "id": "K4",
+        "frage": "Soll das verbesserte Bremssystem als Antiblockiersystem, als Kombibremse oder als Kombination beider ausgeführt werden?",
+        "element_ids": [
+          "E43"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Hydraulikaggregat, Sensorik, Bordnetzlast und die Möglichkeit einer Antriebsschlupfregelung ab.",
+        "variante_ids": [
+          "V4"
+        ]
+      },
+      {
+        "id": "K5",
+        "frage": "Welche Rahmenbauart ist vorgesehen, und soll die Motor-Getriebe-Einheit tragend in den Rahmen einbezogen werden?",
+        "element_ids": [
+          "E3",
+          "E15"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Lastpfad, Motoraufhängung und Bauraum für Tank oder Batterie ab.",
+        "variante_ids": [
+          "V5"
+        ]
+      },
+      {
+        "id": "K6",
+        "frage": "Wird der Motor luftgekühlt oder flüssigkeitsgekühlt?",
+        "element_ids": [
+          "E87",
+          "E15"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Kühlkreislauf, Kühleranordnung, Lüfter im Bordnetz und Temperaturanzeige ab.",
+        "variante_ids": [
+          "V6"
+        ]
+      },
+      {
+        "id": "K7",
+        "frage": "Soll das Vorderrad über eine Steuerkopflenkung mit Teleskopgabel oder über eine Radnaben- beziehungsweise Achsschenkellenkung geführt werden?",
+        "element_ids": [
+          "E39",
+          "E8"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Vorderradführung, Lenkkopf und Rahmenvorderteil ab.",
+        "variante_ids": [
+          "V7"
+        ]
+      },
+      {
+        "id": "K8",
+        "frage": "Soll die Sichtbarkeit am Tag durch automatisch eingeschaltete Beleuchtung oder durch eigene Tagfahrleuchten sichergestellt werden?",
+        "element_ids": [
+          "E80"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Leuchtenbestückung, Schaltlogik und Bordnetzlast ab.",
+        "variante_ids": [
+          "V8"
+        ]
+      },
+      {
+        "id": "K9",
+        "frage": "Soll die Traktionsbatterie fest eingebaut und am Fahrzeug geladen oder als entnehmbarer Akku außerhalb des Fahrzeugs geladen werden?",
+        "element_ids": [
+          "E27",
+          "E31"
+        ],
+        "anlass": "schnittstelle",
+        "relevanz": "Davon hängen Ladeeinrichtung, Steckverbindung, Batteriebefestigung und Diebstahlschutz ab.",
+        "variante_ids": [
+          "V1"
+        ]
+      },
+      {
+        "id": "K10",
+        "frage": "Welcher Ständer ist vorzusehen: Seitenständer, Hauptständer oder beide?",
+        "element_ids": [
+          "E2",
+          "E12"
+        ],
+        "anlass": "betrieb",
+        "relevanz": "Davon hängen Rahmenaufnahmen, Seitenständerschalter und Abstellen auf unebenem Grund ab."
+      },
+      {
+        "id": "K11",
+        "frage": "Ist das Fahrzeug für den Betrieb mit Beifahrer auszulegen?",
+        "element_ids": [
+          "E53",
+          "E60"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Sitzbanklänge, Beifahrereinrichtungen, Heckrahmen, Federbein und Bremsauslegung ab."
+      },
+      {
+        "id": "K12",
+        "frage": "Welche Zustände und Warnungen muss das Kombiinstrument anzeigen, und soll es digital ausgeführt werden?",
+        "element_ids": [
+          "E53",
+          "E59"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Anbindung an Fahrzeugbus oder Einzelverdrahtung und der Umfang der Kontrollleuchten ab."
+      },
+      {
+        "id": "K13",
+        "frage": "Welches Gepäcksystem und welche Zuladung muss der Heckrahmen aufnehmen, und ist eine Anhängevorrichtung vorgesehen?",
+        "element_ids": [
+          "E60",
+          "E5"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Heckrahmenfestigkeit, Federbeinauslegung und zulässige Gesamtmasse ab."
+      },
+      {
+        "id": "K14",
+        "frage": "Sollen Motorsteuergerät, Antiblockiersystem und Kombiinstrument über einen Fahrzeugbus verbunden oder einzeln verdrahtet werden?",
+        "element_ids": [
+          "E64",
+          "E69"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Leitungssatz, Diagnosezugang und Erweiterbarkeit um Assistenzfunktionen ab."
+      },
+      {
+        "id": "K15",
+        "frage": "Werden die Leistungsgrenzen der Klasse allein durch die Bauart eingehalten oder zusätzlich elektronisch begrenzt, und wie wird die Begrenzung gegen Manipulation geschützt?",
+        "element_ids": [
+          "E70",
+          "E71",
+          "E22"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Motorauslegung, Funktionen von Motorsteuergerät oder Leistungselektronik, Manipulationsschutz und die Einstufung des Fahrzeugs ab."
+      },
+      {
+        "id": "K16",
+        "frage": "Sollen eine Antriebsschlupfregelung und eine elektronische Wegfahrsperre zusätzlich zum Lenkschloss vorgesehen werden?",
+        "element_ids": [
+          "E73",
+          "E78",
+          "E77"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Sensorik, Steuergerätefunktionen und Schlüsselsystem ab."
+      },
+      {
+        "id": "K17",
+        "frage": "Soll die Traktionsmaschine als Radnabenmotor im Hinterrad oder rahmenfest mit Endantrieb angeordnet werden?",
+        "element_ids": [
+          "E20",
+          "E21"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Endantrieb, ungefederte Masse, Schwingenkonstruktion, Leitungsführung und Kühlung der Traktionsmaschine ab.",
+        "variante_ids": [
+          "V9"
+        ]
+      },
+      {
+        "id": "K18",
+        "frage": "Soll das Traktionssystem unterhalb oder oberhalb der Hochspannungsgrenze betrieben werden?",
+        "element_ids": [
+          "E31",
+          "E20"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Berührungsschutz, Isolationsüberwachung, Leistungselektronik, Ladeeinrichtung und die anzuwendenden Anforderungen an die elektrische Sicherheit ab.",
+        "variante_ids": [
+          "V1"
+        ]
+      }
     ],
     "anforderungsthemen": [
-      {"id": "R1", "element_ids": ["E1", "E13", "E71"], "thema": "Fahrzeugklasse und Leistungsgrenzen", "kenngroessen": ["Hubvolumen", "maximale Nenndauer- oder Nutzleistung", "Verhältnis von Leistung zu Gewicht"], "regelwerke": [
-        {"bezeichnung": "Verordnung (EU) Nr. 168/2013, Anhang I, Unterklasse L3e-A1 (EU, Fahrzeugklasse L)", "quellen_id": "Q1", "fundstelle": "Anhang I, Klasse L3e, Unterklasse L3e-A1, Kriterien (7) bis (9)"},
-        {"bezeichnung": "Fahrerlaubnis-Verordnung § 6, Klasse A1 (Deutschland)", "quellen_id": "Q2", "fundstelle": "§ 6 Abs. 1, Klasse A1"}
-      ]},
-      {"id": "R2", "element_ids": ["E2", "E3", "E12"], "thema": "Festigkeit der Fahrzeugstruktur und Abstellen", "kenngroessen": ["Rahmensteifigkeit", "Federweg", "Sitzhöhe", "Bodenfreiheit", "Standsicherheit auf dem Ständer"], "regelwerke": [
-        {"bezeichnung": "Verordnung (EU) Nr. 168/2013, Anhang II: Festigkeit der Fahrzeugstruktur und Ständer (EU, Fahrzeugklasse L)", "quellen_id": "Q1", "fundstelle": "Anhang II Teil B Nr. 18 und Teil C Nr. 15"}
-      ]},
-      {"id": "R3", "element_ids": ["E13", "E14"], "thema": "Fahrleistungen, Abgas- und Geräuschemissionen", "kenngroessen": ["bauartbedingte Höchstgeschwindigkeit", "maximales Drehmoment", "Abgasemissionen", "Kraftstoffverbrauch", "Geräuschpegel", "Verdunstungsemissionen"], "regelwerke": [
-        {"bezeichnung": "Verordnung (EU) Nr. 168/2013, Anhang II Teil A: Umweltverträglichkeit und Antriebsleistung (EU, Fahrzeugklasse L)", "quellen_id": "Q1", "fundstelle": "Anhang II Teil A Nr. 1 bis 3"}
-      ]},
-      {"id": "R4", "element_ids": ["E27", "E31", "E28"], "thema": "Reichweite, Laden und elektrische Sicherheit", "kenngroessen": ["Reichweite", "nutzbarer Energieinhalt", "Ladedauer", "Berührungsschutz", "Isolationswiderstand", "Tankinhalt"], "regelwerke": [
-        {"bezeichnung": "Verordnung (EU) Nr. 168/2013, Anhang VIII: elektrische Sicherheit, mit UN-ECE-Regelung Nr. 100 und ISO 13063 (EU, Fahrzeugklasse L mit elektrischem Antrieb)", "quellen_id": "Q1", "fundstelle": "Anhang VIII, Gegenstand Elektrische Sicherheit"},
-        {"bezeichnung": "Verordnung (EU) Nr. 168/2013, Anhang II: Kraftstoffspeicher (EU, Fahrzeugklasse L)", "quellen_id": "Q1", "fundstelle": "Anhang II Teil C Nr. 8"}
-      ]},
-      {"id": "R5", "element_ids": ["E39", "E8"], "thema": "Lenkverhalten und Fahrstabilität", "kenngroessen": ["Lenkkopfwinkel", "Nachlauf", "Lenkeinschlag", "Lenkmoment"], "regelwerke": [
-        {"bezeichnung": "Verordnung (EU) Nr. 168/2013, Anhang II: Steuerfähigkeit, Kurvenfahr-Eigenschaften und Wendefähigkeit (EU, Fahrzeugklasse L)", "quellen_id": "Q1", "fundstelle": "Anhang II Teil B Nr. 13"}
-      ]},
-      {"id": "R6", "element_ids": ["E43", "E44", "E49", "E52"], "thema": "Bremsleistung und verbessertes Bremssystem", "kenngroessen": ["Bremsweg", "mittlere Vollverzögerung", "Betätigungskraft", "Verhalten bei Ausfall eines Kreises"], "regelwerke": [
-        {"bezeichnung": "Verordnung (EU) Nr. 168/2013, Anhang VIII: verbindlicher Einbau verbesserter Bremssysteme (EU, Unterklasse L3e-A1)", "quellen_id": "Q1", "fundstelle": "Anhang VIII, Gegenstand Verbindlicher Einbau verbesserter Bremssysteme, Buchst. a"},
-        {"bezeichnung": "UN-Regelung Nr. 78, Bremsanlagen der Klassen L1 bis L5 (anwendende UN-Vertragsparteien)", "quellen_id": "Q3", "fundstelle": "Abs. 5.1.5 und Annex 3"}
-      ]},
-      {"id": "R7", "element_ids": ["E53", "E58", "E59"], "thema": "Bedienbarkeit und Anzeige", "kenngroessen": ["Erreichbarkeit der Bedienelemente in Fahrposition", "Betätigungskräfte", "Ablesbarkeit der Anzeigen", "Sitzhöhe"], "regelwerke": [
-        {"bezeichnung": "Verordnung (EU) Nr. 168/2013, Anhang II: vom Fahrer bediente Betätigungseinrichtungen, Kontrollleuchten und Anzeiger sowie Sitzplatz (EU, Fahrzeugklasse L)", "quellen_id": "Q1", "fundstelle": "Anhang II Teil B Nr. 7 und Nr. 12"},
-        {"bezeichnung": "UN-Regelung Nr. 78, Betätigung der Betriebsbremse aus der normalen Fahrposition (anwendende UN-Vertragsparteien)", "quellen_id": "Q3", "fundstelle": "Abs. 5.1.2 und 5.1.11"}
-      ]},
-      {"id": "R8", "element_ids": ["E60", "E5"], "thema": "Zuladung und Beifahrerbetrieb", "kenngroessen": ["zulässige Zuladung", "Gepäckträgerlast", "Anzahl der Sitzplätze", "zulässige Gesamtmasse"], "regelwerke": [
-        {"bezeichnung": "Verordnung (EU) Nr. 168/2013, Anhang II: Massen und Abmessungen sowie Halteeinrichtungen und Fußstützen für Beifahrer (EU, Fahrzeugklasse L)", "quellen_id": "Q1", "fundstelle": "Anhang II Teil C Nr. 10 und Nr. 12"}
-      ]},
-      {"id": "R9", "element_ids": ["E64", "E65"], "thema": "Bordnetzstabilität und elektromagnetische Verträglichkeit", "kenngroessen": ["Ladebilanz", "Spannungsstabilität", "Störaussendung", "Störfestigkeit"], "regelwerke": [
-        {"bezeichnung": "Verordnung (EU) Nr. 168/2013, Anhang II: Elektromagnetische Verträglichkeit (EU, Fahrzeugklasse L)", "quellen_id": "Q1", "fundstelle": "Anhang II Teil C Nr. 6"}
-      ]},
-      {"id": "R10", "element_ids": ["E70", "E71", "E72"], "thema": "Diagnose und Manipulationsschutz", "kenngroessen": ["Umfang der überwachten Fehler", "Fehleranzeige", "Schutz der Leistungsbegrenzung", "Diagnosestufe"], "regelwerke": [
-        {"bezeichnung": "Verordnung (EU) Nr. 168/2013, Anhang II: Leistungsbegrenzung, Maßnahmen betreffend unbefugte Eingriffe, On-Board-Diagnosesysteme (EU, Fahrzeugklasse L)", "quellen_id": "Q1", "fundstelle": "Anhang II Teil B Nr. 17, Teil C Nr. 1 und Nr. 11"}
-      ]},
-      {"id": "R11", "element_ids": ["E73", "E77", "E79"], "thema": "Diebstahlschutz und Warnsignale", "kenngroessen": ["Widerstand gegen unbefugte Benutzung", "Schallpegel der Hupe"], "regelwerke": [
-        {"bezeichnung": "Verordnung (EU) Nr. 168/2013, Anhang II: akustische Warneinrichtungen und Sicherungen gegen unbefugte Benutzung (EU, Fahrzeugklasse L)", "quellen_id": "Q1", "fundstelle": "Anhang II Teil B Nr. 1 und Teil C Nr. 5"}
-      ]},
-      {"id": "R12", "element_ids": ["E80", "E81", "E86"], "thema": "Sichtbarkeit und Sicht nach hinten", "kenngroessen": ["Lichtstärke", "Anbauhöhe der Leuchten", "Sichtfeld der Rückspiegel", "Spiegelfläche"], "regelwerke": [
-        {"bezeichnung": "Verordnung (EU) Nr. 168/2013, Anhang VIII: Sichtbarkeit durch automatisches Einschalten der Beleuchtung (EU, Fahrzeugklasse L3e)", "quellen_id": "Q1", "fundstelle": "Anhang VIII, Gegenstand Verbesserung der Sichtbarkeit, Buchst. b"},
-        {"bezeichnung": "Verordnung (EU) Nr. 168/2013, Anhang II: Anbau der Beleuchtungseinrichtungen und Sicht nach hinten (EU, Fahrzeugklasse L)", "quellen_id": "Q1", "fundstelle": "Anhang II Teil B Nr. 8 und Nr. 9"}
-      ]},
-      {"id": "R13", "element_ids": ["E87", "E88"], "thema": "Thermische Auslegung", "kenngroessen": ["Kühlmittelaustrittstemperatur", "Öltemperatur", "Kühlleistung im Stand", "Batterietemperatur"]}
+      {
+        "id": "R1",
+        "element_ids": [
+          "E1",
+          "E13",
+          "E71"
+        ],
+        "thema": "Fahrzeugklasse und Leistungsgrenzen",
+        "kenngroessen": [
+          "Hubvolumen",
+          "maximale Nenndauer- oder Nutzleistung",
+          "Verhältnis von Leistung zu Gewicht"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "Verordnung (EU) Nr. 168/2013, Anhang I, Unterklasse L3e-A1 (EU, Fahrzeugklasse L)",
+            "quellen_id": "Q1",
+            "fundstelle": "Anhang I, Klasse L3e, Unterklasse L3e-A1, Kriterien (7) bis (9)"
+          },
+          {
+            "bezeichnung": "Fahrerlaubnis-Verordnung § 6, Klasse A1 (Deutschland)",
+            "quellen_id": "Q2",
+            "fundstelle": "§ 6 Abs. 1, Klasse A1"
+          }
+        ]
+      },
+      {
+        "id": "R2",
+        "element_ids": [
+          "E2",
+          "E3",
+          "E12"
+        ],
+        "thema": "Festigkeit der Fahrzeugstruktur und Abstellen",
+        "kenngroessen": [
+          "Rahmensteifigkeit",
+          "Federweg",
+          "Sitzhöhe",
+          "Bodenfreiheit",
+          "Standsicherheit auf dem Ständer"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "Verordnung (EU) Nr. 168/2013, Anhang II: Festigkeit der Fahrzeugstruktur und Ständer (EU, Fahrzeugklasse L)",
+            "quellen_id": "Q1",
+            "fundstelle": "Anhang II Teil B Nr. 18 und Teil C Nr. 15"
+          }
+        ]
+      },
+      {
+        "id": "R3",
+        "element_ids": [
+          "E13",
+          "E14"
+        ],
+        "thema": "Fahrleistungen, Abgas- und Geräuschemissionen",
+        "kenngroessen": [
+          "bauartbedingte Höchstgeschwindigkeit",
+          "maximales Drehmoment",
+          "Abgasemissionen",
+          "Kraftstoffverbrauch",
+          "Geräuschpegel",
+          "Verdunstungsemissionen"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "Verordnung (EU) Nr. 168/2013, Anhang II Teil A: Umweltverträglichkeit und Antriebsleistung (EU, Fahrzeugklasse L)",
+            "quellen_id": "Q1",
+            "fundstelle": "Anhang II Teil A Nr. 1 bis 3"
+          }
+        ]
+      },
+      {
+        "id": "R4",
+        "element_ids": [
+          "E27",
+          "E31",
+          "E28"
+        ],
+        "thema": "Reichweite, Laden und elektrische Sicherheit",
+        "kenngroessen": [
+          "Reichweite",
+          "nutzbarer Energieinhalt",
+          "Ladedauer",
+          "Berührungsschutz",
+          "Isolationswiderstand",
+          "Tankinhalt"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "Verordnung (EU) Nr. 168/2013, Anhang VIII: elektrische Sicherheit, mit UN-ECE-Regelung Nr. 100 und ISO 13063 (EU, Fahrzeugklasse L mit elektrischem Antrieb)",
+            "quellen_id": "Q1",
+            "fundstelle": "Anhang VIII, Gegenstand Elektrische Sicherheit"
+          },
+          {
+            "bezeichnung": "Verordnung (EU) Nr. 168/2013, Anhang II: Kraftstoffspeicher (EU, Fahrzeugklasse L)",
+            "quellen_id": "Q1",
+            "fundstelle": "Anhang II Teil C Nr. 8"
+          }
+        ]
+      },
+      {
+        "id": "R5",
+        "element_ids": [
+          "E39",
+          "E8"
+        ],
+        "thema": "Lenkverhalten und Fahrstabilität",
+        "kenngroessen": [
+          "Lenkkopfwinkel",
+          "Nachlauf",
+          "Lenkeinschlag",
+          "Lenkmoment"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "Verordnung (EU) Nr. 168/2013, Anhang II: Steuerfähigkeit, Kurvenfahr-Eigenschaften und Wendefähigkeit (EU, Fahrzeugklasse L)",
+            "quellen_id": "Q1",
+            "fundstelle": "Anhang II Teil B Nr. 13"
+          }
+        ]
+      },
+      {
+        "id": "R6",
+        "element_ids": [
+          "E43",
+          "E44",
+          "E49",
+          "E52"
+        ],
+        "thema": "Bremsleistung und verbessertes Bremssystem",
+        "kenngroessen": [
+          "Bremsweg",
+          "mittlere Vollverzögerung",
+          "Betätigungskraft",
+          "Verhalten bei Ausfall eines Kreises"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "Verordnung (EU) Nr. 168/2013, Anhang VIII: verbindlicher Einbau verbesserter Bremssysteme (EU, Unterklasse L3e-A1)",
+            "quellen_id": "Q1",
+            "fundstelle": "Anhang VIII, Gegenstand Verbindlicher Einbau verbesserter Bremssysteme, Buchst. a"
+          },
+          {
+            "bezeichnung": "UN-Regelung Nr. 78, Bremsanlagen der Klassen L1 bis L5 (anwendende UN-Vertragsparteien)",
+            "quellen_id": "Q3",
+            "fundstelle": "Abs. 5.1.5 und Annex 3"
+          }
+        ]
+      },
+      {
+        "id": "R7",
+        "element_ids": [
+          "E53",
+          "E58",
+          "E59"
+        ],
+        "thema": "Bedienbarkeit und Anzeige",
+        "kenngroessen": [
+          "Erreichbarkeit der Bedienelemente in Fahrposition",
+          "Betätigungskräfte",
+          "Ablesbarkeit der Anzeigen",
+          "Sitzhöhe"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "Verordnung (EU) Nr. 168/2013, Anhang II: vom Fahrer bediente Betätigungseinrichtungen, Kontrollleuchten und Anzeiger sowie Sitzplatz (EU, Fahrzeugklasse L)",
+            "quellen_id": "Q1",
+            "fundstelle": "Anhang II Teil B Nr. 7 und Nr. 12"
+          },
+          {
+            "bezeichnung": "UN-Regelung Nr. 78, Betätigung der Betriebsbremse aus der normalen Fahrposition (anwendende UN-Vertragsparteien)",
+            "quellen_id": "Q3",
+            "fundstelle": "Abs. 5.1.2 und 5.1.11"
+          }
+        ]
+      },
+      {
+        "id": "R8",
+        "element_ids": [
+          "E60",
+          "E5"
+        ],
+        "thema": "Zuladung und Beifahrerbetrieb",
+        "kenngroessen": [
+          "zulässige Zuladung",
+          "Gepäckträgerlast",
+          "Anzahl der Sitzplätze",
+          "zulässige Gesamtmasse"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "Verordnung (EU) Nr. 168/2013, Anhang II: Massen und Abmessungen sowie Halteeinrichtungen und Fußstützen für Beifahrer (EU, Fahrzeugklasse L)",
+            "quellen_id": "Q1",
+            "fundstelle": "Anhang II Teil C Nr. 10 und Nr. 12"
+          }
+        ]
+      },
+      {
+        "id": "R9",
+        "element_ids": [
+          "E64",
+          "E65"
+        ],
+        "thema": "Bordnetzstabilität und elektromagnetische Verträglichkeit",
+        "kenngroessen": [
+          "Ladebilanz",
+          "Spannungsstabilität",
+          "Störaussendung",
+          "Störfestigkeit"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "Verordnung (EU) Nr. 168/2013, Anhang II: Elektromagnetische Verträglichkeit (EU, Fahrzeugklasse L)",
+            "quellen_id": "Q1",
+            "fundstelle": "Anhang II Teil C Nr. 6"
+          }
+        ]
+      },
+      {
+        "id": "R10",
+        "element_ids": [
+          "E70",
+          "E71",
+          "E72"
+        ],
+        "thema": "Diagnose und Manipulationsschutz",
+        "kenngroessen": [
+          "Umfang der überwachten Fehler",
+          "Fehleranzeige",
+          "Schutz der Leistungsbegrenzung",
+          "Diagnosestufe"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "Verordnung (EU) Nr. 168/2013, Anhang II: Leistungsbegrenzung, Maßnahmen betreffend unbefugte Eingriffe, On-Board-Diagnosesysteme (EU, Fahrzeugklasse L)",
+            "quellen_id": "Q1",
+            "fundstelle": "Anhang II Teil B Nr. 17, Teil C Nr. 1 und Nr. 11"
+          }
+        ]
+      },
+      {
+        "id": "R11",
+        "element_ids": [
+          "E73",
+          "E77",
+          "E79"
+        ],
+        "thema": "Diebstahlschutz und Warnsignale",
+        "kenngroessen": [
+          "Widerstand gegen unbefugte Benutzung",
+          "Schallpegel der Hupe"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "Verordnung (EU) Nr. 168/2013, Anhang II: akustische Warneinrichtungen und Sicherungen gegen unbefugte Benutzung (EU, Fahrzeugklasse L)",
+            "quellen_id": "Q1",
+            "fundstelle": "Anhang II Teil B Nr. 1 und Teil C Nr. 5"
+          }
+        ]
+      },
+      {
+        "id": "R12",
+        "element_ids": [
+          "E80",
+          "E81",
+          "E86"
+        ],
+        "thema": "Sichtbarkeit und Sicht nach hinten",
+        "kenngroessen": [
+          "Lichtstärke",
+          "Anbauhöhe der Leuchten",
+          "Sichtfeld der Rückspiegel",
+          "Spiegelfläche"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "Verordnung (EU) Nr. 168/2013, Anhang VIII: Sichtbarkeit durch automatisches Einschalten der Beleuchtung (EU, Fahrzeugklasse L3e)",
+            "quellen_id": "Q1",
+            "fundstelle": "Anhang VIII, Gegenstand Verbesserung der Sichtbarkeit, Buchst. b"
+          },
+          {
+            "bezeichnung": "Verordnung (EU) Nr. 168/2013, Anhang II: Anbau der Beleuchtungseinrichtungen und Sicht nach hinten (EU, Fahrzeugklasse L)",
+            "quellen_id": "Q1",
+            "fundstelle": "Anhang II Teil B Nr. 8 und Nr. 9"
+          }
+        ]
+      },
+      {
+        "id": "R13",
+        "element_ids": [
+          "E87",
+          "E88"
+        ],
+        "thema": "Thermische Auslegung",
+        "kenngroessen": [
+          "Kühlmittelaustrittstemperatur",
+          "Öltemperatur",
+          "Kühlleistung im Stand",
+          "Batterietemperatur"
+        ]
+      }
     ]
   },
   "offene_punkte": [
