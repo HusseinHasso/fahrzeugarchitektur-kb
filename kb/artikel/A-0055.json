@@ -4,7 +4,7 @@
   "artikeltyp": "blatt",
   "titel": "Pkw-Anhänger",
   "betrachtungsumfang": "Generische Referenzarchitektur ungetriebener Starrdeichsel- bzw. Zentralachsanhänger der EU-Fahrzeugklassen O1 und O2, die hinter Personenkraftwagen über eine Kugelkopfkupplung mitgeführt werden: ein- oder zweiachsig (Tandemachse), ungebremst oder mit Auflaufbremse, mit offenem Kasten-, Plattform-, Koffer- oder Fahrzeugtransporteraufbau. Ausdrücklich ausgeschlossen sind Anhänger mit eigenem Antrieb (etwa elektrisch angetriebene Anhänger mit Traktionsbatterie), Deichselanhänger mit Drehschemellenkung, Wohnanhänger mit Innenausbau und eigener Energieversorgung, Anhänger mit Druckluft- oder durchgehender Bremsanlage sowie das Zugfahrzeug einschließlich seiner Anhängevorrichtung. Regelwerksangaben gelten, soweit nicht anders genannt, für Deutschland (StVZO) bzw. die Europäische Union.",
-  "status": "in_arbeit",
+  "status": "geprueft",
   "quellenzugriff": "ja",
   "kindartikel_ids": [],
   "quellen": [
@@ -488,203 +488,1100 @@
   ],
   "modell": {
     "elemente": [
-      {"id": "E1", "name": "Pkw-Anhänger", "typ": "gesamtsystem", "eltern_id": null, "absatz_ids": ["P1", "P17"]},
-      {"id": "E2", "name": "Fahrzeugstruktur und Fahrwerk", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P4", "P17"], "kategorie": "struktur_fahrwerk"},
-      {"id": "E3", "name": "Rahmen", "typ": "komponente", "eltern_id": "E2", "absatz_ids": ["P4", "P12"]},
-      {"id": "E4", "name": "Zugeinrichtung", "typ": "subsystem", "eltern_id": "E2", "absatz_ids": ["P4"]},
-      {"id": "E5", "name": "Zugdeichsel", "typ": "komponente", "eltern_id": "E4", "absatz_ids": ["P4", "P9"]},
-      {"id": "E6", "name": "Zugkugelkupplung", "typ": "komponente", "eltern_id": "E4", "absatz_ids": ["P4", "P9"]},
-      {"id": "E7", "name": "Stützrad", "typ": "komponente", "eltern_id": "E4", "absatz_ids": ["P4"]},
-      {"id": "E8", "name": "Achsaggregat", "typ": "subsystem", "eltern_id": "E2", "absatz_ids": ["P4", "P6"]},
-      {"id": "E9", "name": "Achse", "typ": "komponente", "eltern_id": "E8", "absatz_ids": ["P4"]},
-      {"id": "E10", "name": "Federung", "typ": "komponente", "eltern_id": "E8", "absatz_ids": ["P4", "P6"]},
-      {"id": "E11", "name": "Räder und Reifen", "typ": "komponente", "eltern_id": "E8", "absatz_ids": ["P4", "P9"]},
-      {"id": "E12", "name": "Bremssystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P9", "P10", "P17"], "kategorie": "bremse"},
-      {"id": "E13", "name": "Betriebsbremse", "typ": "subsystem", "eltern_id": "E12", "absatz_ids": ["P9", "P10"]},
-      {"id": "E14", "name": "Auflaufeinrichtung", "typ": "komponente", "eltern_id": "E13", "absatz_ids": ["P9", "P10"]},
-      {"id": "E15", "name": "Bremsgestänge", "typ": "komponente", "eltern_id": "E13", "absatz_ids": ["P9"]},
-      {"id": "E16", "name": "Radbremsen", "typ": "komponente", "eltern_id": "E13", "absatz_ids": ["P9", "P10"]},
-      {"id": "E17", "name": "Rückfahrautomatik", "typ": "komponente", "eltern_id": "E13", "absatz_ids": ["P9"]},
-      {"id": "E18", "name": "Feststellbremse", "typ": "komponente", "eltern_id": "E12", "absatz_ids": ["P9", "P10"]},
-      {"id": "E19", "name": "Abreißseil", "typ": "komponente", "eltern_id": "E12", "absatz_ids": ["P9", "P10"]},
-      {"id": "E20", "name": "Aufbau und Ladung", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P12", "P17"], "kategorie": "aufbau_nutzlast"},
-      {"id": "E21", "name": "Ladungsträger", "typ": "subsystem", "eltern_id": "E20", "absatz_ids": ["P12"]},
-      {"id": "E22", "name": "Ladeboden", "typ": "komponente", "eltern_id": "E21", "absatz_ids": ["P12"]},
-      {"id": "E23", "name": "Bordwände", "typ": "komponente", "eltern_id": "E21", "absatz_ids": ["P12"]},
-      {"id": "E24", "name": "Laderaumabdeckung", "typ": "komponente", "eltern_id": "E21", "absatz_ids": ["P12"]},
-      {"id": "E25", "name": "Zurrpunkte", "typ": "komponente", "eltern_id": "E20", "absatz_ids": ["P12"]},
-      {"id": "E26", "name": "Elektrik und Elektronik", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P14", "P17"], "kategorie": "elektrik_elektronik"},
-      {"id": "E27", "name": "Anhängerstecker", "typ": "komponente", "eltern_id": "E26", "absatz_ids": ["P14", "P10"]},
-      {"id": "E28", "name": "Leitungssatz", "typ": "komponente", "eltern_id": "E26", "absatz_ids": ["P14", "P10"]},
-      {"id": "E29", "name": "Verteilerdose", "typ": "komponente", "eltern_id": "E26", "absatz_ids": ["P14"]},
-      {"id": "E30", "name": "Beleuchtung und Sicht", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P16", "P17"], "kategorie": "beleuchtung_sicht"},
-      {"id": "E31", "name": "Signalleuchten", "typ": "subsystem", "eltern_id": "E30", "absatz_ids": ["P16"]},
-      {"id": "E32", "name": "Schlussleuchten", "typ": "komponente", "eltern_id": "E31", "absatz_ids": ["P16"]},
-      {"id": "E33", "name": "Bremsleuchten", "typ": "komponente", "eltern_id": "E31", "absatz_ids": ["P16"]},
-      {"id": "E34", "name": "Fahrtrichtungsanzeiger", "typ": "komponente", "eltern_id": "E31", "absatz_ids": ["P16"]},
-      {"id": "E35", "name": "Nebelschlussleuchte", "typ": "komponente", "eltern_id": "E31", "absatz_ids": ["P16"]},
-      {"id": "E36", "name": "Rückfahrleuchte", "typ": "komponente", "eltern_id": "E31", "absatz_ids": ["P16"]},
-      {"id": "E37", "name": "Kennzeichenleuchte", "typ": "komponente", "eltern_id": "E31", "absatz_ids": ["P16"]},
-      {"id": "E38", "name": "Rückstrahler", "typ": "komponente", "eltern_id": "E30", "absatz_ids": ["P16"]}
+      {
+        "id": "E1",
+        "name": "Pkw-Anhänger",
+        "typ": "gesamtsystem",
+        "eltern_id": null,
+        "absatz_ids": [
+          "P1",
+          "P17"
+        ]
+      },
+      {
+        "id": "E2",
+        "name": "Fahrzeugstruktur und Fahrwerk",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P17"
+        ],
+        "kategorie": "struktur_fahrwerk"
+      },
+      {
+        "id": "E3",
+        "name": "Rahmen",
+        "typ": "komponente",
+        "eltern_id": "E2",
+        "absatz_ids": [
+          "P4",
+          "P12"
+        ]
+      },
+      {
+        "id": "E4",
+        "name": "Zugeinrichtung",
+        "typ": "subsystem",
+        "eltern_id": "E2",
+        "absatz_ids": [
+          "P4"
+        ]
+      },
+      {
+        "id": "E5",
+        "name": "Zugdeichsel",
+        "typ": "komponente",
+        "eltern_id": "E4",
+        "absatz_ids": [
+          "P4",
+          "P9"
+        ]
+      },
+      {
+        "id": "E6",
+        "name": "Zugkugelkupplung",
+        "typ": "komponente",
+        "eltern_id": "E4",
+        "absatz_ids": [
+          "P4",
+          "P9"
+        ]
+      },
+      {
+        "id": "E7",
+        "name": "Stützrad",
+        "typ": "komponente",
+        "eltern_id": "E4",
+        "absatz_ids": [
+          "P4"
+        ]
+      },
+      {
+        "id": "E8",
+        "name": "Achsaggregat",
+        "typ": "subsystem",
+        "eltern_id": "E2",
+        "absatz_ids": [
+          "P4",
+          "P6"
+        ]
+      },
+      {
+        "id": "E9",
+        "name": "Achse",
+        "typ": "komponente",
+        "eltern_id": "E8",
+        "absatz_ids": [
+          "P4"
+        ]
+      },
+      {
+        "id": "E10",
+        "name": "Federung",
+        "typ": "komponente",
+        "eltern_id": "E8",
+        "absatz_ids": [
+          "P4",
+          "P6"
+        ]
+      },
+      {
+        "id": "E11",
+        "name": "Räder und Reifen",
+        "typ": "komponente",
+        "eltern_id": "E8",
+        "absatz_ids": [
+          "P4",
+          "P9"
+        ]
+      },
+      {
+        "id": "E12",
+        "name": "Bremssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P9",
+          "P10",
+          "P17"
+        ],
+        "kategorie": "bremse"
+      },
+      {
+        "id": "E13",
+        "name": "Betriebsbremse",
+        "typ": "subsystem",
+        "eltern_id": "E12",
+        "absatz_ids": [
+          "P9",
+          "P10"
+        ]
+      },
+      {
+        "id": "E14",
+        "name": "Auflaufeinrichtung",
+        "typ": "komponente",
+        "eltern_id": "E13",
+        "absatz_ids": [
+          "P9",
+          "P10"
+        ]
+      },
+      {
+        "id": "E15",
+        "name": "Bremsgestänge",
+        "typ": "komponente",
+        "eltern_id": "E13",
+        "absatz_ids": [
+          "P9"
+        ]
+      },
+      {
+        "id": "E16",
+        "name": "Radbremsen",
+        "typ": "komponente",
+        "eltern_id": "E13",
+        "absatz_ids": [
+          "P9",
+          "P10"
+        ]
+      },
+      {
+        "id": "E17",
+        "name": "Rückfahrautomatik",
+        "typ": "komponente",
+        "eltern_id": "E13",
+        "absatz_ids": [
+          "P9"
+        ]
+      },
+      {
+        "id": "E18",
+        "name": "Feststellbremse",
+        "typ": "komponente",
+        "eltern_id": "E12",
+        "absatz_ids": [
+          "P9",
+          "P10"
+        ]
+      },
+      {
+        "id": "E19",
+        "name": "Abreißseil",
+        "typ": "komponente",
+        "eltern_id": "E12",
+        "absatz_ids": [
+          "P9",
+          "P10"
+        ]
+      },
+      {
+        "id": "E20",
+        "name": "Aufbau und Ladung",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P12",
+          "P17"
+        ],
+        "kategorie": "aufbau_nutzlast"
+      },
+      {
+        "id": "E21",
+        "name": "Ladungsträger",
+        "typ": "subsystem",
+        "eltern_id": "E20",
+        "absatz_ids": [
+          "P12"
+        ]
+      },
+      {
+        "id": "E22",
+        "name": "Ladeboden",
+        "typ": "komponente",
+        "eltern_id": "E21",
+        "absatz_ids": [
+          "P12"
+        ]
+      },
+      {
+        "id": "E23",
+        "name": "Bordwände",
+        "typ": "komponente",
+        "eltern_id": "E21",
+        "absatz_ids": [
+          "P12"
+        ]
+      },
+      {
+        "id": "E24",
+        "name": "Laderaumabdeckung",
+        "typ": "komponente",
+        "eltern_id": "E21",
+        "absatz_ids": [
+          "P12"
+        ]
+      },
+      {
+        "id": "E25",
+        "name": "Zurrpunkte",
+        "typ": "komponente",
+        "eltern_id": "E20",
+        "absatz_ids": [
+          "P12"
+        ]
+      },
+      {
+        "id": "E26",
+        "name": "Elektrik und Elektronik",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P14",
+          "P17"
+        ],
+        "kategorie": "elektrik_elektronik"
+      },
+      {
+        "id": "E27",
+        "name": "Anhängerstecker",
+        "typ": "komponente",
+        "eltern_id": "E26",
+        "absatz_ids": [
+          "P14",
+          "P10"
+        ]
+      },
+      {
+        "id": "E28",
+        "name": "Leitungssatz",
+        "typ": "komponente",
+        "eltern_id": "E26",
+        "absatz_ids": [
+          "P14",
+          "P10"
+        ]
+      },
+      {
+        "id": "E29",
+        "name": "Verteilerdose",
+        "typ": "komponente",
+        "eltern_id": "E26",
+        "absatz_ids": [
+          "P14"
+        ]
+      },
+      {
+        "id": "E30",
+        "name": "Beleuchtung und Sicht",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P16",
+          "P17"
+        ],
+        "kategorie": "beleuchtung_sicht"
+      },
+      {
+        "id": "E31",
+        "name": "Signalleuchten",
+        "typ": "subsystem",
+        "eltern_id": "E30",
+        "absatz_ids": [
+          "P16"
+        ]
+      },
+      {
+        "id": "E32",
+        "name": "Schlussleuchten",
+        "typ": "komponente",
+        "eltern_id": "E31",
+        "absatz_ids": [
+          "P16"
+        ]
+      },
+      {
+        "id": "E33",
+        "name": "Bremsleuchten",
+        "typ": "komponente",
+        "eltern_id": "E31",
+        "absatz_ids": [
+          "P16"
+        ]
+      },
+      {
+        "id": "E34",
+        "name": "Fahrtrichtungsanzeiger",
+        "typ": "komponente",
+        "eltern_id": "E31",
+        "absatz_ids": [
+          "P16"
+        ]
+      },
+      {
+        "id": "E35",
+        "name": "Nebelschlussleuchte",
+        "typ": "komponente",
+        "eltern_id": "E31",
+        "absatz_ids": [
+          "P16"
+        ]
+      },
+      {
+        "id": "E36",
+        "name": "Rückfahrleuchte",
+        "typ": "komponente",
+        "eltern_id": "E31",
+        "absatz_ids": [
+          "P16"
+        ]
+      },
+      {
+        "id": "E37",
+        "name": "Kennzeichenleuchte",
+        "typ": "komponente",
+        "eltern_id": "E31",
+        "absatz_ids": [
+          "P16"
+        ]
+      },
+      {
+        "id": "E38",
+        "name": "Rückstrahler",
+        "typ": "komponente",
+        "eltern_id": "E30",
+        "absatz_ids": [
+          "P16"
+        ]
+      }
     ],
     "funktionen": [
-      {"id": "F1", "name": "Fahrzeuglasten tragen", "ausgefuehrt_von": ["E3", "E8", "E7"], "absatz_ids": ["P4", "P20"]},
-      {"id": "F2", "name": "Anhänger ziehen", "ausgefuehrt_von": ["E4", "E5", "E6"], "absatz_ids": ["P4", "P20"]},
-      {"id": "F3", "name": "Fahrzeug verzögern", "ausgefuehrt_von": ["E13", "E19"], "absatz_ids": ["P9", "P20"]},
-      {"id": "F4", "name": "Fahrzeug festhalten", "ausgefuehrt_von": ["E18"], "absatz_ids": ["P9", "P20"]},
-      {"id": "F5", "name": "Ladung aufnehmen", "ausgefuehrt_von": ["E21"], "absatz_ids": ["P12", "P20"]},
-      {"id": "F6", "name": "Ladung sichern", "ausgefuehrt_von": ["E25", "E23"], "absatz_ids": ["P12", "P20"]},
-      {"id": "F7", "name": "Elektrische Energie verteilen", "ausgefuehrt_von": ["E27", "E28", "E29"], "absatz_ids": ["P14", "P20"]},
-      {"id": "F8", "name": "Lichtsignale abgeben", "ausgefuehrt_von": ["E31"], "absatz_ids": ["P16", "P20"]},
-      {"id": "F9", "name": "Fahrzeug kenntlich machen", "ausgefuehrt_von": ["E38"], "absatz_ids": ["P16", "P20"]}
+      {
+        "id": "F1",
+        "name": "Fahrzeuglasten tragen",
+        "ausgefuehrt_von": [
+          "E3",
+          "E8",
+          "E7"
+        ],
+        "absatz_ids": [
+          "P4",
+          "P20"
+        ]
+      },
+      {
+        "id": "F2",
+        "name": "Anhänger ziehen",
+        "ausgefuehrt_von": [
+          "E4",
+          "E5",
+          "E6"
+        ],
+        "absatz_ids": [
+          "P4",
+          "P20"
+        ]
+      },
+      {
+        "id": "F3",
+        "name": "Fahrzeug verzögern",
+        "ausgefuehrt_von": [
+          "E13",
+          "E19"
+        ],
+        "absatz_ids": [
+          "P9",
+          "P20"
+        ]
+      },
+      {
+        "id": "F4",
+        "name": "Fahrzeug festhalten",
+        "ausgefuehrt_von": [
+          "E18"
+        ],
+        "absatz_ids": [
+          "P9",
+          "P20"
+        ]
+      },
+      {
+        "id": "F5",
+        "name": "Ladung aufnehmen",
+        "ausgefuehrt_von": [
+          "E21"
+        ],
+        "absatz_ids": [
+          "P12",
+          "P20"
+        ]
+      },
+      {
+        "id": "F6",
+        "name": "Ladung sichern",
+        "ausgefuehrt_von": [
+          "E25",
+          "E23"
+        ],
+        "absatz_ids": [
+          "P12",
+          "P20"
+        ]
+      },
+      {
+        "id": "F7",
+        "name": "Elektrische Energie verteilen",
+        "ausgefuehrt_von": [
+          "E27",
+          "E28",
+          "E29"
+        ],
+        "absatz_ids": [
+          "P14",
+          "P20"
+        ]
+      },
+      {
+        "id": "F8",
+        "name": "Lichtsignale abgeben",
+        "ausgefuehrt_von": [
+          "E31"
+        ],
+        "absatz_ids": [
+          "P16",
+          "P20"
+        ]
+      },
+      {
+        "id": "F9",
+        "name": "Fahrzeug kenntlich machen",
+        "ausgefuehrt_von": [
+          "E38"
+        ],
+        "absatz_ids": [
+          "P16",
+          "P20"
+        ]
+      }
     ],
     "fluesse": [
-      {"id": "S1", "von": "E6", "nach": "E5", "art": "mechanisch", "medium": "Zug-, Schub- und Stützkraft", "absatz_ids": ["P4", "P19"]},
-      {"id": "S2", "von": "E5", "nach": "E3", "art": "mechanisch", "medium": "Zug- und Schubkraft", "absatz_ids": ["P4", "P19"]},
-      {"id": "S3", "von": "E3", "nach": "E8", "art": "mechanisch", "medium": "Gewichtskraft von Aufbau und Ladung", "absatz_ids": ["P4", "P19"]},
-      {"id": "S4", "von": "E22", "nach": "E3", "art": "mechanisch", "medium": "Gewichtskraft der Ladung", "absatz_ids": ["P12", "P19"], "schnittstelle": "Aufbaubefestigung am Rahmen"},
-      {"id": "S5", "von": "E25", "nach": "E3", "art": "mechanisch", "medium": "Sicherungskräfte der Zurrgurte", "absatz_ids": ["P12", "P19"], "schnittstelle": "Zurrpunktanbindung am Rahmen"},
-      {"id": "S6", "von": "E6", "nach": "E14", "art": "mechanisch", "medium": "Auflaufkraft", "absatz_ids": ["P9", "P19"], "schnittstelle": "Kupplungsaufnahme der Auflaufeinrichtung"},
-      {"id": "S7", "von": "E14", "nach": "E15", "art": "mechanisch", "medium": "Betätigungskraft", "absatz_ids": ["P9", "P19"]},
-      {"id": "S8", "von": "E15", "nach": "E16", "art": "mechanisch", "medium": "Betätigungskraft", "absatz_ids": ["P9", "P19"]},
-      {"id": "S9", "von": "E16", "nach": "E11", "art": "mechanisch", "medium": "Bremsmoment", "absatz_ids": ["P9", "P19"], "schnittstelle": "Radnabe"},
-      {"id": "S10", "von": "E18", "nach": "E15", "art": "mechanisch", "medium": "Feststellkraft", "absatz_ids": ["P9", "P19"]},
-      {"id": "S11", "von": "E19", "nach": "E18", "art": "mechanisch", "medium": "Auslösekraft beim Trennen der Kupplung", "absatz_ids": ["P9", "P19"]},
-      {"id": "S12", "von": "E14", "nach": "E5", "art": "mechanisch", "medium": "Reaktionskraft der Auflaufeinrichtung", "absatz_ids": ["P9"], "schnittstelle": "Befestigung der Auflaufeinrichtung an der Zugdeichsel"},
-      {"id": "S13", "von": "E27", "nach": "E28", "art": "elektrisch", "medium": "Versorgung und Schaltsignale der Leuchten", "absatz_ids": ["P14", "P19"]},
-      {"id": "S14", "von": "E28", "nach": "E29", "art": "elektrisch", "medium": "Versorgung und Schaltsignale der Leuchten", "absatz_ids": ["P14", "P19"]},
-      {"id": "S15", "von": "E29", "nach": "E31", "art": "elektrisch", "medium": "Leuchtenstrom", "absatz_ids": ["P16", "P19"], "schnittstelle": "Leuchtenanschluss"},
-      {"id": "S16", "von": "E3", "nach": "E31", "art": "mechanisch", "medium": "Halterung der Leuchten", "absatz_ids": ["P16"], "schnittstelle": "Leuchtenträger am Heck"},
-      {"id": "S17", "von": "E3", "nach": "E38", "art": "mechanisch", "medium": "Halterung der Rückstrahler", "absatz_ids": ["P16"], "schnittstelle": "Rückstrahlerbefestigung am Heck"}
+      {
+        "id": "S1",
+        "von": "E6",
+        "nach": "E5",
+        "art": "mechanisch",
+        "medium": "Zug-, Schub- und Stützkraft",
+        "absatz_ids": [
+          "P4",
+          "P19"
+        ]
+      },
+      {
+        "id": "S2",
+        "von": "E5",
+        "nach": "E3",
+        "art": "mechanisch",
+        "medium": "Zug- und Schubkraft",
+        "absatz_ids": [
+          "P4",
+          "P19"
+        ]
+      },
+      {
+        "id": "S3",
+        "von": "E3",
+        "nach": "E8",
+        "art": "mechanisch",
+        "medium": "Gewichtskraft von Aufbau und Ladung",
+        "absatz_ids": [
+          "P4",
+          "P19"
+        ]
+      },
+      {
+        "id": "S4",
+        "von": "E22",
+        "nach": "E3",
+        "art": "mechanisch",
+        "medium": "Gewichtskraft der Ladung",
+        "absatz_ids": [
+          "P12",
+          "P19"
+        ],
+        "schnittstelle": "Aufbaubefestigung am Rahmen"
+      },
+      {
+        "id": "S5",
+        "von": "E25",
+        "nach": "E3",
+        "art": "mechanisch",
+        "medium": "Sicherungskräfte der Zurrgurte",
+        "absatz_ids": [
+          "P12",
+          "P19"
+        ],
+        "schnittstelle": "Zurrpunktanbindung am Rahmen"
+      },
+      {
+        "id": "S6",
+        "von": "E6",
+        "nach": "E14",
+        "art": "mechanisch",
+        "medium": "Auflaufkraft",
+        "absatz_ids": [
+          "P9",
+          "P19"
+        ],
+        "schnittstelle": "Kupplungsaufnahme der Auflaufeinrichtung"
+      },
+      {
+        "id": "S7",
+        "von": "E14",
+        "nach": "E15",
+        "art": "mechanisch",
+        "medium": "Betätigungskraft",
+        "absatz_ids": [
+          "P9",
+          "P19"
+        ]
+      },
+      {
+        "id": "S8",
+        "von": "E15",
+        "nach": "E16",
+        "art": "mechanisch",
+        "medium": "Betätigungskraft",
+        "absatz_ids": [
+          "P9",
+          "P19"
+        ]
+      },
+      {
+        "id": "S9",
+        "von": "E16",
+        "nach": "E11",
+        "art": "mechanisch",
+        "medium": "Bremsmoment",
+        "absatz_ids": [
+          "P9",
+          "P19"
+        ],
+        "schnittstelle": "Radnabe"
+      },
+      {
+        "id": "S10",
+        "von": "E18",
+        "nach": "E15",
+        "art": "mechanisch",
+        "medium": "Feststellkraft",
+        "absatz_ids": [
+          "P9",
+          "P19"
+        ]
+      },
+      {
+        "id": "S11",
+        "von": "E19",
+        "nach": "E18",
+        "art": "mechanisch",
+        "medium": "Auslösekraft beim Trennen der Kupplung",
+        "absatz_ids": [
+          "P9",
+          "P19"
+        ]
+      },
+      {
+        "id": "S12",
+        "von": "E14",
+        "nach": "E5",
+        "art": "mechanisch",
+        "medium": "Reaktionskraft der Auflaufeinrichtung",
+        "absatz_ids": [
+          "P9"
+        ],
+        "schnittstelle": "Befestigung der Auflaufeinrichtung an der Zugdeichsel"
+      },
+      {
+        "id": "S13",
+        "von": "E27",
+        "nach": "E28",
+        "art": "elektrisch",
+        "medium": "Versorgung und Schaltsignale der Leuchten",
+        "absatz_ids": [
+          "P14",
+          "P19"
+        ]
+      },
+      {
+        "id": "S14",
+        "von": "E28",
+        "nach": "E29",
+        "art": "elektrisch",
+        "medium": "Versorgung und Schaltsignale der Leuchten",
+        "absatz_ids": [
+          "P14",
+          "P19"
+        ]
+      },
+      {
+        "id": "S15",
+        "von": "E29",
+        "nach": "E31",
+        "art": "elektrisch",
+        "medium": "Leuchtenstrom",
+        "absatz_ids": [
+          "P16",
+          "P19"
+        ],
+        "schnittstelle": "Leuchtenanschluss"
+      },
+      {
+        "id": "S16",
+        "von": "E3",
+        "nach": "E31",
+        "art": "mechanisch",
+        "medium": "Halterung der Leuchten",
+        "absatz_ids": [
+          "P16"
+        ],
+        "schnittstelle": "Leuchtenträger am Heck"
+      },
+      {
+        "id": "S17",
+        "von": "E3",
+        "nach": "E38",
+        "art": "mechanisch",
+        "medium": "Halterung der Rückstrahler",
+        "absatz_ids": [
+          "P16"
+        ],
+        "schnittstelle": "Rückstrahlerbefestigung am Heck"
+      }
     ],
     "entfallene_kategorien": [
-      {"kategorie": "antrieb", "grund": "Der Pkw-Anhänger hat keinen eigenen Antrieb; die Fortbewegung leistet das Zugfahrzeug. Angetriebene Anhänger sind im Betrachtungsumfang ausgeschlossen."},
-      {"kategorie": "energieversorgung", "grund": "Kein eigener Energiespeicher in der Grundbauweise; elektrische Energie kommt über die Steckverbindung vom Zugfahrzeug. Wohnanhänger mit Bordbatterie sind ausgeschlossen."},
-      {"kategorie": "lenkung", "grund": "Keine lenkbaren Räder; die Richtungsführung erfolgt über Kugelgelenk und starre Zugdeichsel. Drehschemelanhänger sind ausgeschlossen."},
-      {"kategorie": "bedienraum", "grund": "Keine Personen an Bord; bedient wird von außen beim Kuppeln, Abstellen und Beladen."},
-      {"kategorie": "steuerung_information", "grund": "Keine Steuergeräte in der Grundbauweise; Schaltlogik und Anhängererkennung liegen im Zugfahrzeug."},
-      {"kategorie": "assistenz_sicherheit", "grund": "Keine Sensorik oder Assistenzfunktion in der Grundbauweise; Gespannstabilisierung liegt beim Zugfahrzeug. Stabilisierungseinrichtungen am Anhänger sind als Recherchepunkt offen."},
-      {"kategorie": "thermomanagement", "grund": "Keine temperierungsbedürftigen Aggregate; die Bremswärme wird an den Radbremsen direkt an die Umgebung abgegeben."},
-      {"kategorie": "nebensysteme", "grund": "Keine Druckluft-, Hydraulik- oder Nebenantriebe; die Auflaufbremse arbeitet rein mechanisch."}
+      {
+        "kategorie": "antrieb",
+        "grund": "Der Pkw-Anhänger hat keinen eigenen Antrieb; die Fortbewegung leistet das Zugfahrzeug. Angetriebene Anhänger sind im Betrachtungsumfang ausgeschlossen."
+      },
+      {
+        "kategorie": "energieversorgung",
+        "grund": "Kein eigener Energiespeicher in der Grundbauweise; elektrische Energie kommt über die Steckverbindung vom Zugfahrzeug. Wohnanhänger mit Bordbatterie sind ausgeschlossen."
+      },
+      {
+        "kategorie": "lenkung",
+        "grund": "Keine lenkbaren Räder; die Richtungsführung erfolgt über Kugelgelenk und starre Zugdeichsel. Drehschemelanhänger sind ausgeschlossen."
+      },
+      {
+        "kategorie": "bedienraum",
+        "grund": "Keine Personen an Bord; bedient wird von außen beim Kuppeln, Abstellen und Beladen."
+      },
+      {
+        "kategorie": "steuerung_information",
+        "grund": "Keine Steuergeräte in der Grundbauweise; Schaltlogik und Anhängererkennung liegen im Zugfahrzeug."
+      },
+      {
+        "kategorie": "assistenz_sicherheit",
+        "grund": "Keine Sensorik oder Assistenzfunktion in der Grundbauweise; Gespannstabilisierung liegt beim Zugfahrzeug. Stabilisierungseinrichtungen am Anhänger sind als Recherchepunkt offen."
+      },
+      {
+        "kategorie": "thermomanagement",
+        "grund": "Keine temperierungsbedürftigen Aggregate; die Bremswärme wird an den Radbremsen direkt an die Umgebung abgegeben."
+      },
+      {
+        "kategorie": "nebensysteme",
+        "grund": "Keine Druckluft-, Hydraulik- oder Nebenantriebe; die Auflaufbremse arbeitet rein mechanisch."
+      }
     ],
     "varianten": [
       {
         "id": "V1",
         "element_id": "E12",
         "bezeichnung": "Bremsausführung",
-        "alternativen": ["ungebremst", "Auflaufbremse mit Feststellbremse und Abreißseil", "elektrisch betätigte Bremse mit Steuergerät im Zugfahrzeug"],
-        "auswahlkriterien": ["angestrebte zulässige Gesamtmasse", "Achsanzahl und Achslast", "Zielmarkt und dort zulässige Bremsausführungen", "Anhängelast der vorgesehenen Zugfahrzeuge"],
-        "auswirkungen": [
-          {"element_id": "E4", "beschreibung": "Bei Auflaufbremse trägt die Auflaufeinrichtung in der Zugdeichsel die Zugkugelkupplung, ungebremst sitzt sie starr an der Deichsel."},
-          {"element_id": "E8", "beschreibung": "Die Achse braucht bei gebremster Ausführung Radbremsen und Bremsträger."},
-          {"element_id": "E26", "beschreibung": "Eine elektrisch betätigte Bremse verlangt eine zusätzliche Steuerleitung in Anhängerstecker und Leitungssatz."}
+        "alternativen": [
+          "ungebremst",
+          "Auflaufbremse mit Feststellbremse und Abreißseil",
+          "elektrisch betätigte Bremse mit Steuergerät im Zugfahrzeug"
         ],
-        "absatz_ids": ["P7", "P10"]
+        "auswahlkriterien": [
+          "angestrebte zulässige Gesamtmasse",
+          "Achsanzahl und Achslast",
+          "Zielmarkt und dort zulässige Bremsausführungen",
+          "Anhängelast der vorgesehenen Zugfahrzeuge"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E4",
+            "beschreibung": "Bei Auflaufbremse trägt die Auflaufeinrichtung in der Zugdeichsel die Zugkugelkupplung, ungebremst sitzt sie starr an der Deichsel."
+          },
+          {
+            "element_id": "E8",
+            "beschreibung": "Die Achse braucht bei gebremster Ausführung Radbremsen und Bremsträger."
+          },
+          {
+            "element_id": "E26",
+            "beschreibung": "Eine elektrisch betätigte Bremse verlangt eine zusätzliche Steuerleitung in Anhängerstecker und Leitungssatz."
+          }
+        ],
+        "absatz_ids": [
+          "P7",
+          "P10"
+        ]
       },
       {
         "id": "V2",
         "element_id": "E8",
         "bezeichnung": "Achsanordnung",
-        "alternativen": ["Einachsaggregat", "Tandemachsaggregat"],
-        "auswahlkriterien": ["zulässige Gesamtmasse", "benötigte Ladelänge", "Rangierbarkeit von Hand", "Bremspflicht"],
-        "auswirkungen": [
-          {"element_id": "E12", "beschreibung": "Mit der Achsanordnung ändern sich Bremspflicht und Anzahl der Radbremsen."},
-          {"element_id": "E3", "beschreibung": "Ein Tandemachsaggregat verlangt einen längeren Rahmen mit zusätzlichen Achsaufnahmen."},
-          {"element_id": "E4", "beschreibung": "Die Lage des Achsaggregats verschiebt die Stützlast an der Zugkugelkupplung."}
+        "alternativen": [
+          "Einachsaggregat",
+          "Tandemachsaggregat"
         ],
-        "absatz_ids": ["P6"]
+        "auswahlkriterien": [
+          "zulässige Gesamtmasse",
+          "benötigte Ladelänge",
+          "Rangierbarkeit von Hand",
+          "Bremspflicht"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E12",
+            "beschreibung": "Mit der Achsanordnung ändern sich Bremspflicht und Anzahl der Radbremsen."
+          },
+          {
+            "element_id": "E3",
+            "beschreibung": "Ein Tandemachsaggregat verlangt einen längeren Rahmen mit zusätzlichen Achsaufnahmen."
+          },
+          {
+            "element_id": "E4",
+            "beschreibung": "Die Lage des Achsaggregats verschiebt die Stützlast an der Zugkugelkupplung."
+          }
+        ],
+        "absatz_ids": [
+          "P6"
+        ]
       },
       {
         "id": "V3",
         "element_id": "E20",
         "bezeichnung": "Aufbauart",
-        "alternativen": ["offener Kasten mit Bordwänden", "Plattform", "Fahrzeugtransporter mit Fahrschienen und Auffahrrampen", "Kofferaufbau", "kippbarer Kasten"],
-        "auswahlkriterien": ["Ladungsarten", "Witterungsschutz", "Be- und Entladeart", "Ladehöhe"],
-        "auswirkungen": [
-          {"element_id": "E3", "beschreibung": "Kippbarer Kasten braucht ein Kippgelenk am Rahmen; Fahrzeugtransporter verlangt Aufnahmen für Auffahrrampen."},
-          {"element_id": "E30", "beschreibung": "Höhere oder bewegliche Aufbauten verändern Anbauorte und Montage der Leuchten."},
-          {"element_id": "E4", "beschreibung": "Schwerpunktlage des Aufbaus beeinflusst die Stützlast."}
+        "alternativen": [
+          "offener Kasten mit Bordwänden",
+          "Plattform",
+          "Fahrzeugtransporter mit Fahrschienen und Auffahrrampen",
+          "Kofferaufbau",
+          "kippbarer Kasten"
         ],
-        "absatz_ids": ["P11", "P12"]
+        "auswahlkriterien": [
+          "Ladungsarten",
+          "Witterungsschutz",
+          "Be- und Entladeart",
+          "Ladehöhe"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E3",
+            "beschreibung": "Kippbarer Kasten braucht ein Kippgelenk am Rahmen; Fahrzeugtransporter verlangt Aufnahmen für Auffahrrampen."
+          },
+          {
+            "element_id": "E30",
+            "beschreibung": "Höhere oder bewegliche Aufbauten verändern Anbauorte und Montage der Leuchten."
+          },
+          {
+            "element_id": "E4",
+            "beschreibung": "Schwerpunktlage des Aufbaus beeinflusst die Stützlast."
+          }
+        ],
+        "absatz_ids": [
+          "P11",
+          "P12"
+        ]
       },
       {
         "id": "V4",
         "element_id": "E27",
         "bezeichnung": "Kontaktumfang der Steckverbindung",
-        "alternativen": ["Steckverbindung nur mit Beleuchtungskontakten", "Steckverbindung mit Zusatzkontakten für Dauerspannung und Ladeleitung"],
-        "auswahlkriterien": ["Verbraucher im Aufbau", "Ausstattung der vorgesehenen Zugfahrzeuge", "Kompatibilität mit älteren Steckdosen"],
-        "auswirkungen": [
-          {"element_id": "E28", "beschreibung": "Zusatzkontakte erweitern den Leitungssatz um Adern größeren Querschnitts."},
-          {"element_id": "E20", "beschreibung": "Mit Dauerspannung werden Verbraucher im Aufbau, etwa eine Innenbeleuchtung, möglich."}
+        "alternativen": [
+          "Steckverbindung nur mit Beleuchtungskontakten",
+          "Steckverbindung mit Zusatzkontakten für Dauerspannung und Ladeleitung"
         ],
-        "absatz_ids": ["P13", "P14"]
+        "auswahlkriterien": [
+          "Verbraucher im Aufbau",
+          "Ausstattung der vorgesehenen Zugfahrzeuge",
+          "Kompatibilität mit älteren Steckdosen"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E28",
+            "beschreibung": "Zusatzkontakte erweitern den Leitungssatz um Adern größeren Querschnitts."
+          },
+          {
+            "element_id": "E20",
+            "beschreibung": "Mit Dauerspannung werden Verbraucher im Aufbau, etwa eine Innenbeleuchtung, möglich."
+          }
+        ],
+        "absatz_ids": [
+          "P13",
+          "P14"
+        ]
       },
       {
         "id": "V5",
         "element_id": "E31",
         "bezeichnung": "Montage der Signalleuchten",
-        "alternativen": ["fest am Rahmen montiert", "abnehmbarer Leuchtenträger"],
-        "auswahlkriterien": ["Aufbauart und Ladevorgang am Heck", "Beschädigungsrisiko", "Einhaltung der Anbauhöhen"],
-        "auswirkungen": [
-          {"element_id": "E3", "beschreibung": "Fest montierte Leuchten brauchen Halterungen am Rahmenheck."},
-          {"element_id": "E28", "beschreibung": "Ein abnehmbarer Leuchtenträger verlangt eine lösbare Verbindung im Leitungssatz."}
+        "alternativen": [
+          "fest am Rahmen montiert",
+          "abnehmbarer Leuchtenträger"
         ],
-        "absatz_ids": ["P16"]
+        "auswahlkriterien": [
+          "Aufbauart und Ladevorgang am Heck",
+          "Beschädigungsrisiko",
+          "Einhaltung der Anbauhöhen"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E3",
+            "beschreibung": "Fest montierte Leuchten brauchen Halterungen am Rahmenheck."
+          },
+          {
+            "element_id": "E28",
+            "beschreibung": "Ein abnehmbarer Leuchtenträger verlangt eine lösbare Verbindung im Leitungssatz."
+          }
+        ],
+        "absatz_ids": [
+          "P16"
+        ]
       }
     ],
     "klaerungsfragen": [
-      {"id": "K1", "frage": "Soll der Anhänger ungebremst, mit Auflaufbremse oder mit elektrisch betätigter Bremse ausgeführt werden?", "element_ids": ["E12", "E4", "E8"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen zulässige Gesamtmasse, Aufbau der Zugeinrichtung und Ausführung der Achse ab.", "variante_ids": ["V1"]},
-      {"id": "K2", "frage": "Ist ein Einachs- oder ein Tandemachsaggregat vorzusehen?", "element_ids": ["E2", "E8"], "anlass": "architekturentscheidung", "relevanz": "Die Antwort bestimmt Rahmenlänge, Bremspflicht und Lage der Stützlast.", "variante_ids": ["V2"]},
-      {"id": "K3", "frage": "Welche Ladungsarten soll der Anhänger aufnehmen, und genügt dafür ein offener Kasten oder ist eine Plattform, ein Fahrzeugtransporter, ein Kofferaufbau oder ein kippbarer Kasten nötig?", "element_ids": ["E20", "E21"], "anlass": "anforderung", "relevanz": "Davon hängen Struktur des Ladungsträgers, Rahmenanbauten und Leuchtenmontage ab.", "variante_ids": ["V3"]},
-      {"id": "K4", "frage": "Sollen Verbraucher im Aufbau über Dauerspannung und Ladeleitung aus dem Zugfahrzeug versorgt werden?", "element_ids": ["E26", "E27", "E28"], "anlass": "schnittstelle", "relevanz": "Die Antwort legt Kontaktumfang der Steckverbindung und Adernquerschnitte des Leitungssatzes fest.", "variante_ids": ["V4"]},
-      {"id": "K5", "frage": "Müssen die Signalleuchten wegen Be- und Entladen über das Heck oder wegen Kippbewegung abnehmbar angeordnet werden?", "element_ids": ["E30", "E31"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Leuchtenhalterung am Rahmen und Trennstelle im Leitungssatz ab.", "variante_ids": ["V5"]},
-      {"id": "K6", "frage": "Welche zulässige Stützlast und welche Anhängelast der vorgesehenen Zugfahrzeuge sind als Schnittstellenvorgabe einzuhalten?", "element_ids": ["E2", "E4", "E6"], "anlass": "schnittstelle", "relevanz": "Die Antwort begrenzt zulässige Gesamtmasse und Lage des Achsaggregats unter dem Rahmen."},
-      {"id": "K7", "frage": "Wird der Anhänger häufig rückwärts rangiert oder voll beladen an Gefällen abgestellt?", "element_ids": ["E12", "E17", "E18"], "anlass": "betrieb", "relevanz": "Davon hängen Auslegung von Rückfahrautomatik und Feststellbremse ab.", "variante_ids": ["V1"]},
-      {"id": "K8", "frage": "In welchen Märkten soll der Anhänger zugelassen werden?", "element_ids": ["E30", "E26", "E12"], "anlass": "anforderung", "relevanz": "Davon hängen lichttechnische Anbauvorgaben, Steckverbindungssystem und zulässige Bremsausführung ab.", "variante_ids": ["V1", "V4"]},
-      {"id": "K9", "frage": "Soll das Zugfahrzeug den angeschlossenen Anhänger elektrisch erkennen können, etwa zur Abschaltung seiner eigenen Nebelschlussleuchte?", "element_ids": ["E26", "E27", "E35"], "anlass": "schnittstelle", "relevanz": "Die Antwort bestimmt, ob die Nebelschlussleuchte des Anhängers mit einer erkennbaren Last ausgeführt werden muss."}
+      {
+        "id": "K1",
+        "frage": "Soll der Anhänger ungebremst, mit Auflaufbremse oder mit elektrisch betätigter Bremse ausgeführt werden?",
+        "element_ids": [
+          "E12",
+          "E4",
+          "E8"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen zulässige Gesamtmasse, Aufbau der Zugeinrichtung und Ausführung der Achse ab.",
+        "variante_ids": [
+          "V1"
+        ]
+      },
+      {
+        "id": "K2",
+        "frage": "Ist ein Einachs- oder ein Tandemachsaggregat vorzusehen?",
+        "element_ids": [
+          "E2",
+          "E8"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Die Antwort bestimmt Rahmenlänge, Bremspflicht und Lage der Stützlast.",
+        "variante_ids": [
+          "V2"
+        ]
+      },
+      {
+        "id": "K3",
+        "frage": "Welche Ladungsarten soll der Anhänger aufnehmen, und genügt dafür ein offener Kasten oder ist eine Plattform, ein Fahrzeugtransporter, ein Kofferaufbau oder ein kippbarer Kasten nötig?",
+        "element_ids": [
+          "E20",
+          "E21"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Struktur des Ladungsträgers, Rahmenanbauten und Leuchtenmontage ab.",
+        "variante_ids": [
+          "V3"
+        ]
+      },
+      {
+        "id": "K4",
+        "frage": "Sollen Verbraucher im Aufbau über Dauerspannung und Ladeleitung aus dem Zugfahrzeug versorgt werden?",
+        "element_ids": [
+          "E26",
+          "E27",
+          "E28"
+        ],
+        "anlass": "schnittstelle",
+        "relevanz": "Die Antwort legt Kontaktumfang der Steckverbindung und Adernquerschnitte des Leitungssatzes fest.",
+        "variante_ids": [
+          "V4"
+        ]
+      },
+      {
+        "id": "K5",
+        "frage": "Müssen die Signalleuchten wegen Be- und Entladen über das Heck oder wegen Kippbewegung abnehmbar angeordnet werden?",
+        "element_ids": [
+          "E30",
+          "E31"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Leuchtenhalterung am Rahmen und Trennstelle im Leitungssatz ab.",
+        "variante_ids": [
+          "V5"
+        ]
+      },
+      {
+        "id": "K6",
+        "frage": "Welche zulässige Stützlast und welche Anhängelast der vorgesehenen Zugfahrzeuge sind als Schnittstellenvorgabe einzuhalten?",
+        "element_ids": [
+          "E2",
+          "E4",
+          "E6"
+        ],
+        "anlass": "schnittstelle",
+        "relevanz": "Die Antwort begrenzt zulässige Gesamtmasse und Lage des Achsaggregats unter dem Rahmen."
+      },
+      {
+        "id": "K7",
+        "frage": "Wird der Anhänger häufig rückwärts rangiert oder voll beladen an Gefällen abgestellt?",
+        "element_ids": [
+          "E12",
+          "E17",
+          "E18"
+        ],
+        "anlass": "betrieb",
+        "relevanz": "Davon hängen Auslegung von Rückfahrautomatik und Feststellbremse ab.",
+        "variante_ids": [
+          "V1"
+        ]
+      },
+      {
+        "id": "K8",
+        "frage": "In welchen Märkten soll der Anhänger zugelassen werden?",
+        "element_ids": [
+          "E30",
+          "E26",
+          "E12"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen lichttechnische Anbauvorgaben, Steckverbindungssystem und zulässige Bremsausführung ab.",
+        "variante_ids": [
+          "V1",
+          "V4"
+        ]
+      },
+      {
+        "id": "K9",
+        "frage": "Soll das Zugfahrzeug den angeschlossenen Anhänger elektrisch erkennen können, etwa zur Abschaltung seiner eigenen Nebelschlussleuchte?",
+        "element_ids": [
+          "E26",
+          "E27",
+          "E35"
+        ],
+        "anlass": "schnittstelle",
+        "relevanz": "Die Antwort bestimmt, ob die Nebelschlussleuchte des Anhängers mit einer erkennbaren Last ausgeführt werden muss."
+      }
     ],
     "anforderungsthemen": [
       {
         "id": "R1",
-        "element_ids": ["E2", "E4", "E8"],
+        "element_ids": [
+          "E2",
+          "E4",
+          "E8"
+        ],
         "thema": "Tragfähigkeit und Gespannstabilität",
-        "kenngroessen": ["zulässige Gesamtmasse", "Achslast", "Stützlast", "Schwerpunktlage", "Ladehöhe"],
+        "kenngroessen": [
+          "zulässige Gesamtmasse",
+          "Achslast",
+          "Stützlast",
+          "Schwerpunktlage",
+          "Ladehöhe"
+        ],
         "regelwerke": [
-          {"bezeichnung": "StVZO § 44 Stützeinrichtung und Stützlast (Deutschland; Starrdeichsel- und Zentralachsanhänger)", "quellen_id": "Q3", "fundstelle": "§ 44 Abs. 2 und 3"},
-          {"bezeichnung": "StVZO § 42 Anhängelast hinter Kraftfahrzeugen (Deutschland; Anhänger hinter Pkw)", "quellen_id": "Q2", "fundstelle": "§ 42 Abs. 1 und 2"}
+          {
+            "bezeichnung": "StVZO § 44 Stützeinrichtung und Stützlast (Deutschland; Starrdeichsel- und Zentralachsanhänger)",
+            "quellen_id": "Q3",
+            "fundstelle": "§ 44 Abs. 2 und 3"
+          },
+          {
+            "bezeichnung": "StVZO § 42 Anhängelast hinter Kraftfahrzeugen (Deutschland; Anhänger hinter Pkw)",
+            "quellen_id": "Q2",
+            "fundstelle": "§ 42 Abs. 1 und 2"
+          }
         ]
       },
       {
         "id": "R2",
-        "element_ids": ["E12", "E13", "E18", "E19"],
+        "element_ids": [
+          "E12",
+          "E13",
+          "E18",
+          "E19"
+        ],
         "thema": "Bremswirkung und Sicherung gegen Wegrollen",
-        "kenngroessen": ["mittlere Vollverzögerung", "Haltewirkung der Feststellbremse an Steigung und Gefälle", "Wirkung bei Trennung vom Zugfahrzeug", "Ansprechverhalten der Auflaufeinrichtung"],
+        "kenngroessen": [
+          "mittlere Vollverzögerung",
+          "Haltewirkung der Feststellbremse an Steigung und Gefälle",
+          "Wirkung bei Trennung vom Zugfahrzeug",
+          "Ansprechverhalten der Auflaufeinrichtung"
+        ],
         "regelwerke": [
-          {"bezeichnung": "StVZO § 41 Bremsen und Unterlegkeile (Deutschland; Anhänger)", "quellen_id": "Q1", "fundstelle": "§ 41 Abs. 9 bis 11"}
+          {
+            "bezeichnung": "StVZO § 41 Bremsen und Unterlegkeile (Deutschland; Anhänger)",
+            "quellen_id": "Q1",
+            "fundstelle": "§ 41 Abs. 9 bis 11"
+          }
         ]
       },
       {
         "id": "R3",
-        "element_ids": ["E20", "E21", "E25"],
+        "element_ids": [
+          "E20",
+          "E21",
+          "E25"
+        ],
         "thema": "Ladungsaufnahme und Ladungssicherung",
-        "kenngroessen": ["Nutzlast", "Ladeflächenmaße", "Bordwandhöhe", "Belastbarkeit der Zurrpunkte", "Witterungsschutz"]
+        "kenngroessen": [
+          "Nutzlast",
+          "Ladeflächenmaße",
+          "Bordwandhöhe",
+          "Belastbarkeit der Zurrpunkte",
+          "Witterungsschutz"
+        ]
       },
       {
         "id": "R4",
-        "element_ids": ["E26", "E27", "E28"],
+        "element_ids": [
+          "E26",
+          "E27",
+          "E28"
+        ],
         "thema": "Elektrische Kompatibilität mit dem Zugfahrzeug",
-        "kenngroessen": ["Nennspannung", "Kontaktbelegung", "Leiterquerschnitt", "Korrosionsbeständigkeit der Kontakte"],
+        "kenngroessen": [
+          "Nennspannung",
+          "Kontaktbelegung",
+          "Leiterquerschnitt",
+          "Korrosionsbeständigkeit der Kontakte"
+        ],
         "regelwerke": [
-          {"bezeichnung": "ISO 11446 (13-polige Steckverbindung für Pkw-Anhänger, 12 V)", "quellen_id": "Q7", "fundstelle": "Abschnitt „PKW“"}
+          {
+            "bezeichnung": "ISO 11446 (13-polige Steckverbindung für Pkw-Anhänger, 12 V)",
+            "quellen_id": "Q7",
+            "fundstelle": "Abschnitt „PKW“"
+          }
         ]
       },
       {
         "id": "R5",
-        "element_ids": ["E30", "E31", "E38"],
+        "element_ids": [
+          "E30",
+          "E31",
+          "E38"
+        ],
         "thema": "Rückwärtige lichttechnische Sicherung",
-        "kenngroessen": ["Anzahl der Leuchten", "Anbauhöhe", "Abstand zum Fahrzeugumriss", "Rückstrahlergröße"],
+        "kenngroessen": [
+          "Anzahl der Leuchten",
+          "Anbauhöhe",
+          "Abstand zum Fahrzeugumriss",
+          "Rückstrahlergröße"
+        ],
         "regelwerke": [
-          {"bezeichnung": "StVZO § 53 Schlussleuchten, Bremsleuchten, Rückstrahler (Deutschland; Kraftfahrzeuge und Anhänger)", "quellen_id": "Q4", "fundstelle": "§ 53 Abs. 1, 2 und 4"}
+          {
+            "bezeichnung": "StVZO § 53 Schlussleuchten, Bremsleuchten, Rückstrahler (Deutschland; Kraftfahrzeuge und Anhänger)",
+            "quellen_id": "Q4",
+            "fundstelle": "§ 53 Abs. 1, 2 und 4"
+          }
         ]
       }
     ]
