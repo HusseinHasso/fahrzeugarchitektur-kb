@@ -4,7 +4,7 @@
   "artikeltyp": "blatt",
   "titel": "Einschienenbahn",
   "betrachtungsumfang": "Generische Referenzarchitektur des Fahrzeugs einer Einschienenbahn (Monorail) für den Personenverkehr auf einem eigenen, meist aufgeständerten Fahrweg, in den Bauarten Sattelbahn mit gummibereiftem Fahrwerk auf einem Fahrbalken sowie Hängebahn mit Stahlrädern mit Doppelspurkranz auf einer Schiene oder mit gummibereiftem Fahrwerk in einem unten geschlitzten Kastenträger, als Einzelfahrzeug, Gelenkfahrzeug oder aus gekuppelten Einheiten, mit Fahrer oder fahrerlos. Antriebsart: elektrischer Antrieb mit Energiezufuhr von außen über Stromschienen am oder im Fahrweg; die Energiequelle liegt außerhalb der Systemgrenze, ein Traktionsenergiespeicher entfällt, Energiewandler sind Traktionsstromrichter und Traktionsmaschine (rotierend oder als Linearmotor). Ausdrücklich nicht betrachtet werden seil-, dampf- oder verbrennungsmotorisch angetriebene sowie batterie- oder wasserstoffgespeiste Einschienenbahnen, kreiselstabilisierte und auf einer einzelnen Vignolschiene laufende Bauarten, Magnet- und Luftkissenschwebebahnen, Einschienenhängebahnen in Bergbau und Industrie sowie die Infrastruktur (Fahrbalken, Stützen, Weichen, Stromschienen, Stationen, Bahnsteigtüren, streckenseitige Zugsicherung und Leitstelle).",
-  "status": "in_arbeit",
+  "status": "zu_pruefen",
   "quellenzugriff": "ja",
   "kindartikel_ids": [],
   "quellen": [
@@ -211,7 +211,7 @@
         },
         {
           "absatz_id": "P6",
-          "text": "Generisch gliedert sich Fahrzeugstruktur und Fahrwerk in den Wagenkasten mit Türen, Kupplung und Notausstieg und das Fahrwerk aus Fahrwerksrahmen, Tragrad, Führungsrad, Stabilisierungsrad, Federung und Aushebesicherung. Die Last geht über Federung und Fahrwerksrahmen auf das Tragrad und in den Balken; Querkräfte nehmen Führungs- und Stabilisierungsrad formschlüssig auf. Bei Hängebahnen ersetzt die pendelnde Aufhängung das Stabilisierungsrad, eine Pendeldämpfung aus Pendeldämpfern und Pendelbegrenzern beruhigt den Wagen beim Halt; in der Bauart Langen entfällt auch das Führungsrad, das Stahlrad mit Doppelspurkranz trägt und führt, der Aufhängebügel wirkt als Aushebesicherung. Eine Lenkung entfällt. Den Notausstieg bestimmt das Evakuierungskonzept: Übertritt über Stirntüren in ein Bergungsfahrzeug, Fluchtsteg oder Rettungsgerät von unten.",
+          "text": "Generisch gliedern sich Fahrzeugstruktur und Fahrwerk in den Wagenkasten mit Türen, Kupplung und Notausstieg und das Fahrwerk aus Fahrwerksrahmen, Tragrad, Führungsrad, Stabilisierungsrad, Federung und Aushebesicherung. Die Last geht über Federung und Fahrwerksrahmen auf das Tragrad und in den Balken; Querkräfte nehmen Führungs- und Stabilisierungsrad auf. Bei Hängebahnen ersetzt die pendelnde Aufhängung das Stabilisierungsrad, eine Pendeldämpfung aus Pendeldämpfern und Pendelbegrenzern beruhigt den Wagen; in der Bauart Langen trägt und führt ein Stahlrad mit Doppelspurkranz, der Aufhängebügel wirkt als Aushebesicherung. Eine Lenkung entfällt. Den Notausstieg bestimmt das Evakuierungskonzept: Bergungsfahrzeug über Stirntüren, Fluchtsteg oder Rettungsgerät.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -278,7 +278,7 @@
         },
         {
           "absatz_id": "P9",
-          "text": "Generisch besteht das Antriebssystem aus Traktionsstromrichter, Traktionsmaschine und Getriebe; die Zuordnung der Stromrichter zu Fahrwerk oder Wagen ist eine Auslegungsentscheidung. Der Traktionsstromrichter stellt Spannung und Frequenz ein, das Getriebe übersetzt das Drehmoment der Traktionsmaschine auf das Tragrad, das die Zugkraft per Reibschluss in den Balken leitet; beim elektrischen Bremsen kehrt sich der Leistungsfluss um. Mit Linearmotor entfallen Getriebe und Reibschluss: Der Stator wirkt auf eine Reaktionsschiene am Fahrweg, das Tragrad trägt nur noch.",
+          "text": "Generisch besteht das Antriebssystem aus Traktionsstromrichter, Traktionsmaschine und Getriebe; ob die Stromrichter am Fahrwerk oder im Wagen sitzen, ist eine Auslegungsentscheidung. Der Traktionsstromrichter stellt Spannung und Frequenz ein, das Getriebe übersetzt das Drehmoment auf das Tragrad, das die Zugkraft per Reibschluss in den Balken leitet; beim elektrischen Bremsen kehrt sich der Leistungsfluss um. Mit Linearmotor entfallen Getriebe und Reibschluss, der Stator wirkt auf eine Reaktionsschiene am Fahrweg.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -327,7 +327,7 @@
         },
         {
           "absatz_id": "P11",
-          "text": "Generisch umfasst das Energieversorgungssystem die Stromabnahme mit Stromabnehmer und Hauptschalter sowie die Hilfsbetriebeversorgung mit Hilfsbetriebeumrichter und Bordnetzbatterie. Der Stromabnehmer sitzt dort, wo die Stromschiene liegt: am Fahrwerk, wenn sie seitlich am Balken oder im Kastenträger verläuft, auf dem Wagenkasten bei der Bauart Langen. Der Hauptschalter trennt bei Fehlern vom Netz, der Hilfsbetriebeumrichter speist Klimaanlage, Kompressor und Bordnetz, die Bordnetzbatterie überbrückt Spannungsausfälle. Ein Traktionsenergiespeicher entfällt.",
+          "text": "Generisch umfasst das Energieversorgungssystem die Stromabnahme mit Stromabnehmer und Hauptschalter sowie die Hilfsbetriebeversorgung mit Hilfsbetriebeumrichter und Bordnetzbatterie. Der Stromabnehmer sitzt an der Stromschiene: am Fahrwerk, wenn sie seitlich am Balken oder im Kastenträger verläuft, auf dem Wagenkasten bei der Bauart Langen. Der Hauptschalter trennt bei Fehlern vom Netz, der Hilfsbetriebeumrichter speist Klimaanlage, Kompressor und Bordnetz, die Bordnetzbatterie überbrückt Spannungsausfälle. Ein Traktionsenergiespeicher entfällt.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -370,7 +370,7 @@
         },
         {
           "absatz_id": "P13",
-          "text": "Generisch umfasst das Bremssystem die Bremsregelung, die Betriebsbremse mit Scheibenbremsen am Fahrwerk und die Feststellbremse. Die Bremsregelung verteilt die geforderte Verzögerung auf die elektrische Bremse der Traktionsmaschine und die Reibungsbremse, vorrangig elektrisch. Gummibereifte Tragräder haften auf dem Balken gut; bei Stahlrad auf Stahlschiene ohne Sand begrenzt der Kraftschluss die Verzögerung stärker. Die Reibungsbremsen werden pneumatisch, hydraulisch oder elektromechanisch betätigt; davon hängt ab, ob eine Druckluftanlage nötig ist.",
+          "text": "Generisch umfasst das Bremssystem die Bremsregelung, die Betriebsbremse mit Scheibenbremsen am Fahrwerk und die Feststellbremse. Die Bremsregelung verteilt die Verzögerung vorrangig auf die elektrische Bremse der Traktionsmaschine, sonst auf die Reibungsbremse. Gummibereifte Tragräder haften auf dem Balken gut, Stahlrad auf Stahlschiene begrenzt die Verzögerung stärker. Die Reibungsbremsen werden pneumatisch, hydraulisch oder elektromechanisch betätigt; davon hängt ab, ob eine Druckluftanlage nötig ist.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -414,7 +414,7 @@
         },
         {
           "absatz_id": "P15",
-          "text": "Generisch umfasst der Führerstand Bedienelemente am Fahrpult, Anzeigeelemente und den Fahrersitz. Die Bedienelemente geben Fahr-, Brems- und Türbefehle an Fahrzeugmanagement und Bremsregelung; die Anzeigeelemente zeigen Geschwindigkeit, Fahrerlaubnis, Türzustand und Störungen. Pendelbetrieb verlangt Zweirichtungsfahrzeuge mit Führerstand an beiden Enden, Schleifenbetrieb erlaubt Einrichtungsfahrzeuge mit vorderem Führerstand. Im fahrerlosen Betrieb übernimmt die automatische Fahrsteuerung die Aufgaben des Fahrers.",
+          "text": "Generisch umfasst der Führerstand Bedienelemente am Fahrpult, Anzeigeelemente und den Fahrersitz. Die Bedienelemente geben Fahr-, Brems- und Türbefehle an Fahrzeugmanagement und Bremsregelung; die Anzeigeelemente zeigen Geschwindigkeit, Fahrerlaubnis, Türzustand und Störungen. Pendelbetrieb verlangt Führerstände an beiden Enden, Schleifenbetrieb erlaubt Einrichtungsfahrzeuge. Im fahrerlosen Betrieb übernimmt die automatische Fahrsteuerung die Fahreraufgaben.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -479,7 +479,7 @@
       "absaetze": [
         {
           "absatz_id": "P18",
-          "text": "Elektrik und Elektronik umfasst das Niedervolt-Bordnetz, den Stromverteiler und den Fahrzeugbus. Das Niedervolt-Bordnetz verteilt Energie aus Hilfsbetriebeumrichter und Bordnetzbatterie über den Stromverteiler an Steuergeräte, Türen, Beleuchtung und Funk. Der Fahrzeugbus verbindet Fahrzeugmanagement, Traktionsstromrichter, Bremsregelung, Türsteuerung und Fahrzeuggerät der Zugbeeinflussung. Bei Gelenkfahrzeugen und gekuppelten Einheiten reicht er über Gelenk oder Kupplung durch den Zug. Bei Hängebahnen führen die Leitungen zwischen Fahrwerk und Wagenkasten durch die Aufhängung.",
+          "text": "Elektrik und Elektronik umfasst das Niedervolt-Bordnetz, den Stromverteiler und den Fahrzeugbus. Das Niedervolt-Bordnetz verteilt Energie aus Hilfsbetriebeumrichter und Bordnetzbatterie über den Stromverteiler an Steuergeräte, Türen, Beleuchtung und Funk. Der Fahrzeugbus verbindet Fahrzeugmanagement, Traktionsstromrichter, Bremsregelung, Türsteuerung und Fahrzeuggerät der Zugbeeinflussung und reicht über Gelenk oder Kupplung durch den Zug. Bei Hängebahnen führen die Leitungen durch die Aufhängung.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -519,7 +519,7 @@
         },
         {
           "absatz_id": "P20",
-          "text": "Generisch gliedert sich Fahrzeugsteuerung und Information in zwei Subsysteme: die Fahrzeugleittechnik mit Fahrzeugmanagement und Türsteuerung sowie das Diagnose- und Informationssystem mit Diagnose und Fahrgastinformation. Das Fahrzeugmanagement setzt Befehle aus Führerstand oder automatischer Fahrsteuerung in Sollwerte für Traktionsstromrichter und Bremsregelung um und koordiniert die Hilfsbetriebe. Die Türsteuerung gibt die Fahrt nur bei geschlossenen, verriegelten Türen frei. Die Diagnose zeichnet Fehler und Betriebsdaten für Werkstatt und Leitstelle auf. Die Fahrgastinformation gibt Meldungen des Fahrzeugmanagements als Anzeigen und Ansagen aus; ihre Notsprechstelle verbindet über den Fahrzeugfunk mit der Leitstelle.",
+          "text": "Generisch gliedert sich Fahrzeugsteuerung und Information in die Fahrzeugleittechnik mit Fahrzeugmanagement und Türsteuerung sowie das Diagnose- und Informationssystem mit Diagnose und Fahrgastinformation. Das Fahrzeugmanagement setzt Befehle aus Führerstand oder automatischer Fahrsteuerung in Sollwerte für Traktionsstromrichter und Bremsregelung um und koordiniert die Hilfsbetriebe. Die Türsteuerung gibt die Fahrt nur bei verriegelten Türen frei. Die Diagnose zeichnet Fehler und Betriebsdaten für Werkstatt und Leitstelle auf. Die Fahrgastinformation gibt Anzeigen und Ansagen aus; ihre Notsprechstelle verbindet über den Fahrzeugfunk mit der Leitstelle.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -564,7 +564,7 @@
         },
         {
           "absatz_id": "P22",
-          "text": "Generisch umfasst Fahrerassistenz und Sicherheit die Zugsicherung an Bord mit Fahrzeuggerät der Zugbeeinflussung und Ortungseinrichtung sowie Fahrsteuerung und Kommunikation mit automatischer Fahrsteuerung und Fahrzeugfunk. Das Fahrzeuggerät überwacht die Fahrerlaubnis und löst bei Überschreitung eine Zwangsbremsung aus. Da Fahrzeug und Fahrweg meist von einem Hersteller stammen, ist sie systemspezifisch. Weichen sind nicht auffahrbar; die Fahrerlaubnis muss die verriegelte Weichenlage einschließen, wie der Zusammenstoß in Walt Disney World zeigt.",
+          "text": "Generisch umfasst Fahrerassistenz und Sicherheit die Zugsicherung an Bord mit Fahrzeuggerät der Zugbeeinflussung und Ortungseinrichtung sowie Fahrsteuerung und Kommunikation mit automatischer Fahrsteuerung und Fahrzeugfunk. Das Fahrzeuggerät überwacht die Fahrerlaubnis und löst bei Überschreitung eine Zwangsbremsung aus; da Fahrzeug und Fahrweg meist vom selben Hersteller stammen, ist es systemspezifisch. Weichen sind nicht auffahrbar, daher muss die Fahrerlaubnis die verriegelte Weichenlage einschließen.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -643,7 +643,7 @@
       "absaetze": [
         {
           "absatz_id": "P25",
-          "text": "Das Thermomanagement umfasst die Heiz- und Klimaanlage für Fahrgastraum und Führerstand, gespeist vom Hilfsbetriebeumrichter, und den Kühlkreislauf, der die Verlustwärme von Traktionsstromrichter und Traktionsmaschine abführt; mit Linearmotor kommt die Statorkühlung hinzu. Bei Hängebahnen verhindert der Lichtraum Unterflureinbauten, und auf dem Dach erschwert der darüberliegende Fahrweg die Instandhaltung; Klimageräte liegen daher im Wagenkasten oder als Dachaufbauten neben der Aufhängung.",
+          "text": "Das Thermomanagement umfasst die Heiz- und Klimaanlage für Fahrgastraum und Führerstand, gespeist vom Hilfsbetriebeumrichter, und den Kühlkreislauf, der die Verlustwärme von Traktionsstromrichter und Traktionsmaschine abführt; mit Linearmotor kommt die Statorkühlung hinzu. Bei Hängebahnen verhindert der Lichtraum Unterflureinbauten und der Fahrweg über dem Dach erschwert die Instandhaltung; Klimageräte liegen daher im Wagenkasten oder neben der Aufhängung.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -682,7 +682,7 @@
         },
         {
           "absatz_id": "P27",
-          "text": "Generisch umfassen die Neben- und Versorgungssysteme die Druckluftanlage aus Kompressor für Druckluft, Luftaufbereitung und Druckluftbehälter. Sie versorgen die Luftfedern der Federung, pneumatisch betätigte Bremsen und gegebenenfalls Türantriebe. Werden Bremsen elektromechanisch oder hydraulisch betätigt und fehlt eine Luftfederung, entfällt die Druckluftanlage; bei fehlendem Bauraum ist die stationäre Befüllung von Speicherbehältern die historische Alternative.",
+          "text": "Generisch umfassen die Neben- und Versorgungssysteme die Druckluftanlage aus Kompressor für Druckluft, Luftaufbereitung und Druckluftbehälter. Sie versorgt die Luftfedern der Federung, pneumatische Bremsen und gegebenenfalls Türantriebe. Bei elektromechanisch oder hydraulisch betätigten Bremsen ohne Luftfederung entfällt sie; historische Alternative bei fehlendem Bauraum ist die stationäre Befüllung von Speicherbehältern.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -736,7 +736,7 @@
       "absaetze": [
         {
           "absatz_id": "P29",
-          "text": "In SysML bildet der Block Einschienenbahn das Gesamtsystem mit den Hauptsystemen als Teilen. Dekompositionspfade sind etwa `Fahrzeugstruktur und Fahrwerk → Fahrwerk → Führungsrad`, `Energieversorgungssystem → Stromabnahme → Stromabnehmer` und `Fahrerassistenz und Sicherheit → Zugsicherung an Bord → Ortungseinrichtung`. Sattel- und Hängebahnfahrwerk sind Spezialisierungen eines abstrakten Fahrwerks. Ports bilden die Schnittstellen zum Fahrweg als externem Block ab (Rad-Balken-Kontakt, Stromschiene, Funk) sowie interne elektrische, pneumatische, thermische und Datenports; Konnektoren folgen den Flüssen. Geeignet sind Blockdefinitions-, interne Block-, Aktivitäts- und Zustandsdiagramme.",
+          "text": "In SysML bildet der Block Einschienenbahn das Gesamtsystem mit den Hauptsystemen als Teilen. Dekompositionspfade sind etwa `Fahrzeugstruktur und Fahrwerk → Fahrwerk → Führungsrad`, `Energieversorgungssystem → Stromabnahme → Stromabnehmer` und `Fahrerassistenz und Sicherheit → Zugsicherung an Bord → Ortungseinrichtung`. Sattel- und Hängebahnfahrwerk spezialisieren ein abstraktes Fahrwerk. Ports bilden die Schnittstellen zum Fahrweg als externem Block (Rad-Balken-Kontakt, Stromschiene, Funk) sowie interne elektrische, pneumatische, thermische und Datenports ab; Konnektoren folgen den Flüssen. Geeignet sind Blockdefinitions-, interne Block-, Aktivitäts- und Zustandsdiagramme.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
