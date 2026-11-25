@@ -4,7 +4,7 @@
   "artikeltyp": "blatt",
   "titel": "E-Bike",
   "betrachtungsumfang": "Generische Referenzarchitektur des zweirädrigen E-Bikes mit Antrieb durch Muskelkraft und einen elektromotorischen Hilfsantrieb aus einer Traktionsbatterie (Energiespeicher Traktionsbatterie, Energiewandler Traktionsmaschine; die Muskelkraft liefert der Fahrer von außerhalb der Systemgrenze über den Tretantrieb). Bezugsbauweise ist das Pedelec mit Mittelmotor; Nabenmotoren, das S-Pedelec und das E-Bike mit Gashebel sind Varianten. Brennstoffzellen- und Superkondensatorantriebe sind ausgeschlossen; mehrspurige Lastenfahrräder, Velomobile, Elektrokleinstfahrzeuge und Elektromotorräder nur zur Abgrenzung. Rechtliche Einordnung für Deutschland und die Europäische Union.",
-  "status": "in_arbeit",
+  "status": "geprueft",
   "quellenzugriff": "ja",
   "kindartikel_ids": [],
   "quellen": [
@@ -669,7 +669,7 @@
       "absaetze": [
         {
           "absatz_id": "P29",
-          "text": "In SysML bildet der Block E-Bike das Gesamtsystem mit den Hauptsystemen als Bestandteilen. Dekompositionspfade sind E-Bike → Antriebssystem → Elektrischer Hilfsantrieb → Traktionsmaschine, E-Bike → Energieversorgungssystem → Batteriesystem → Batteriemanagement und E-Bike → Elektrik und Elektronik → Sensorik → Tretsensor. Die Antriebseinheit des Mittelmotors ist eine physische Baugruppe, der Traktionsmaschine, Getriebe, Motorsteuerung, Tretsensor und Fahrzeugmanagement per Allokation zugeordnet werden. Ports bilden die mechanischen Schnittstellen für Momente und Lasten, die elektrischen für Akku-, Lade- und Lichtstrom, die hydraulische Bremsleitung und das Bussystem ab; Konnektoren verbinden sie. Block Definition Diagrams zeigen die Dekomposition, Internal Block Diagrams die Flüsse, Aktivitätsdiagramme die Unterstützungsregelung und Zustandsautomaten Betriebsarten wie Unterstützung, Schiebehilfe und Abschaltung.",
+          "text": "In SysML bildet der Block E-Bike das Gesamtsystem mit den Hauptsystemen als Bestandteilen. Dekompositionspfade sind E-Bike → Antriebssystem → Elektrischer Hilfsantrieb → Traktionsmaschine, E-Bike → Energieversorgungssystem → Batteriesystem → Batteriemanagement und E-Bike → Elektrik und Elektronik → Sensorik → Tretsensor. Die Antriebseinheit des Mittelmotors ist eine physische Baugruppe, der Traktionsmaschine, Getriebe, Motorsteuerung, Tretsensor und Fahrzeugmanagement per Allokation zugeordnet werden. Ports bilden mechanische, elektrische, hydraulische und Bus-Schnittstellen ab; Konnektoren verbinden sie. Block Definition Diagrams zeigen die Dekomposition, Internal Block Diagrams die Flüsse, Aktivitätsdiagramme die Unterstützungsregelung, Zustandsautomaten Unterstützung, Schiebehilfe und Abschaltung.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -696,7 +696,7 @@
       "absaetze": [
         {
           "absatz_id": "P30",
-          "text": "Ladestrom fließt von der Ladeeinrichtung in die Traktionsbatterie, Akkustrom über den Leitungssatz zur Motorsteuerung und Traktionsmaschine sowie zu den lichttechnischen Einrichtungen. Tret- und Motormoment fließen über Getriebe und Kraftübertragung zum Hinterrad, das Reaktionsmoment stützt sich am Rahmen ab. Die Bremsbetätigung wirkt auf Vorderradbremse und Hinterradbremse. Tretsensor, Geschwindigkeitssensor, gegebenenfalls Bremssensor, Bedieneinheit und Batteriemanagement melden an das Fahrzeugmanagement, dieses gibt Sollmomente an die Motorsteuerung und Daten an Display, Diagnose und Telematikeinheit. Lenkmoment fließt über Steuersatz und Vorderradgabel zum Vorderrad; Sattel und Gepäckträger leiten Lasten in den Rahmen.",
+          "text": "Ladestrom fließt von der Ladeeinrichtung in die Traktionsbatterie, Akkustrom über den Leitungssatz zu Motorsteuerung, Traktionsmaschine und lichttechnischen Einrichtungen. Tret- und Motormoment fließen über Getriebe und Kraftübertragung zum Hinterrad, das Reaktionsmoment stützt sich am Rahmen ab. Die Bremsbetätigung wirkt auf beide Radbremsen. Sensoren, Bedieneinheit und Batteriemanagement melden an das Fahrzeugmanagement; dieses gibt Sollmomente an die Motorsteuerung und Daten an Display, Diagnose und Telematikeinheit. Lenkmoment fließt über Steuersatz und Gabel zum Vorderrad; Sattel und Gepäckträger leiten Lasten in den Rahmen.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -726,7 +726,7 @@
       "absaetze": [
         {
           "absatz_id": "P31",
-          "text": "Rahmen und Fahrwerk tragen die Fahrzeuglasten, Räder und Reifen bewegen das Fahrzeug fort. Tretantrieb, Traktionsmaschine und Motorsteuerung erzeugen Antriebsleistung, die Kraftübertragung überträgt das Drehmoment. Die Traktionsbatterie speichert Energie, die Ladeeinrichtung lädt die Traktionsbatterie, der Leitungssatz verteilt elektrische Energie. Das Lenksystem lenkt das Fahrzeug, die Betriebsbremse verzögert es und hält es fest, ein getriebeloser Nabenmotor gewinnt Bremsenergie zurück. Bedieneinheit, Tretsensor und der optionale Bremssensor erfassen Fahrereingaben, das Display zeigt Fahrerinformationen an. Das Fahrzeugmanagement regelt die Tretunterstützung; Batteriemanagement und Diagnose überwachen den Fahrzeugzustand; Batteriemanagement und Motorsteuerung regeln die Betriebstemperatur; Bussystem und Telematikeinheit übertragen Daten. Ladung aufnehmen ist Aufgabe des Gepäckträgers, Anhänger ziehen ist Aufgabe der Anhängevorrichtung. Der Scheinwerfer leuchtet die Umgebung aus, Schlussleuchte und Rückstrahler geben Lichtsignale ab, die Glocke Schallzeichen.",
+          "text": "Fahrzeuglasten tragen: Rahmen und Fahrwerk. Fahrzeug fortbewegen: Räder und Reifen. Antriebsleistung erzeugen: Tretantrieb, Traktionsmaschine und Motorsteuerung. Drehmoment übertragen: Kraftübertragung. Energie speichern: Traktionsbatterie. Traktionsbatterie laden: Ladeeinrichtung. Elektrische Energie verteilen: Leitungssatz. Fahrzeug lenken: Lenksystem. Fahrzeug verzögern und Fahrzeug festhalten: Betriebsbremse. Bremsenergie zurückgewinnen: Traktionsmaschine, sofern als getriebeloser Nabenmotor ausgeführt. Fahrereingaben erfassen: Bedieneinheit, Tretsensor und optionaler Bremssensor. Fahrerinformationen anzeigen: Display. Tretunterstützung regeln: Fahrzeugmanagement. Fahrzeugzustand überwachen: Batteriemanagement und Diagnose. Betriebstemperatur regeln: Batteriemanagement und Motorsteuerung. Daten übertragen: Bussystem und Telematikeinheit. Ladung aufnehmen: Gepäckträger. Anhänger ziehen: Anhängevorrichtung. Fahrzeugumgebung ausleuchten: Scheinwerfer. Lichtsignale abgeben: Schlussleuchte und Rückstrahler. Schallzeichen abgeben: Glocke.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -756,285 +756,1930 @@
   ],
   "modell": {
     "elemente": [
-      {"id": "E1", "name": "E-Bike", "typ": "gesamtsystem", "eltern_id": null, "absatz_ids": ["P1", "P4", "P28"]},
-      {"id": "E2", "name": "Fahrzeugstruktur und Fahrwerk", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P5", "P28"], "kategorie": "struktur_fahrwerk"},
-      {"id": "E3", "name": "Rahmen", "typ": "komponente", "eltern_id": "E2", "absatz_ids": ["P5", "P6"]},
-      {"id": "E4", "name": "Fahrwerk", "typ": "subsystem", "eltern_id": "E2", "absatz_ids": ["P5"]},
-      {"id": "E5", "name": "Räder und Reifen", "typ": "komponente", "eltern_id": "E4", "absatz_ids": ["P5", "P31"]},
-      {"id": "E6", "name": "Federung", "typ": "komponente", "eltern_id": "E4", "absatz_ids": ["P5", "P13"]},
-      {"id": "E7", "name": "Ständer und Schutzbleche", "typ": "komponente", "eltern_id": "E2", "absatz_ids": ["P5"]},
-      {"id": "E8", "name": "Antriebssystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P9", "P28"], "kategorie": "antrieb"},
-      {"id": "E9", "name": "Tretantrieb", "typ": "komponente", "eltern_id": "E8", "absatz_ids": ["P9", "P31"]},
-      {"id": "E10", "name": "Elektrischer Hilfsantrieb", "typ": "subsystem", "eltern_id": "E8", "absatz_ids": ["P4", "P9"]},
-      {"id": "E11", "name": "Traktionsmaschine", "typ": "komponente", "eltern_id": "E10", "absatz_ids": ["P9"]},
-      {"id": "E12", "name": "Motorsteuerung", "typ": "komponente", "eltern_id": "E10", "absatz_ids": ["P9", "P17", "P22"]},
-      {"id": "E57", "name": "Getriebe", "typ": "komponente", "eltern_id": "E10", "absatz_ids": ["P9", "P29"]},
-      {"id": "E13", "name": "Kraftübertragung", "typ": "subsystem", "eltern_id": "E8", "absatz_ids": ["P9"]},
-      {"id": "E14", "name": "Kettentrieb", "typ": "komponente", "eltern_id": "E13", "absatz_ids": ["P9"]},
-      {"id": "E15", "name": "Gangschaltung", "typ": "komponente", "eltern_id": "E13", "absatz_ids": ["P9"]},
-      {"id": "E16", "name": "Freilauf", "typ": "komponente", "eltern_id": "E13", "absatz_ids": ["P9"]},
-      {"id": "E17", "name": "Energieversorgungssystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P11", "P28"], "kategorie": "energieversorgung"},
-      {"id": "E18", "name": "Batteriesystem", "typ": "subsystem", "eltern_id": "E17", "absatz_ids": ["P11"]},
-      {"id": "E19", "name": "Traktionsbatterie", "typ": "komponente", "eltern_id": "E18", "absatz_ids": ["P9", "P11"]},
-      {"id": "E20", "name": "Batteriemanagement", "typ": "komponente", "eltern_id": "E18", "absatz_ids": ["P10", "P11", "P27"]},
-      {"id": "E21", "name": "Akkuhalterung", "typ": "komponente", "eltern_id": "E18", "absatz_ids": ["P11"]},
-      {"id": "E22", "name": "Ladeeinrichtung", "typ": "komponente", "eltern_id": "E17", "absatz_ids": ["P11"]},
-      {"id": "E23", "name": "Lichtmaschine", "typ": "komponente", "eltern_id": "E17", "absatz_ids": ["P11", "P25", "P27"]},
-      {"id": "E24", "name": "Lenksystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P13", "P28"], "kategorie": "lenkung"},
-      {"id": "E25", "name": "Lenker mit Vorbau", "typ": "komponente", "eltern_id": "E24", "absatz_ids": ["P13"]},
-      {"id": "E26", "name": "Steuersatz", "typ": "komponente", "eltern_id": "E24", "absatz_ids": ["P13"]},
-      {"id": "E27", "name": "Vorderradgabel", "typ": "komponente", "eltern_id": "E24", "absatz_ids": ["P5", "P6", "P13"]},
-      {"id": "E28", "name": "Bremssystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P16", "P32", "P28"], "kategorie": "bremse"},
-      {"id": "E29", "name": "Betriebsbremse", "typ": "subsystem", "eltern_id": "E28", "absatz_ids": ["P16"]},
-      {"id": "E30", "name": "Bremsbetätigung", "typ": "komponente", "eltern_id": "E29", "absatz_ids": ["P16"]},
-      {"id": "E31", "name": "Vorderradbremse", "typ": "komponente", "eltern_id": "E29", "absatz_ids": ["P16"]},
-      {"id": "E32", "name": "Hinterradbremse", "typ": "komponente", "eltern_id": "E29", "absatz_ids": ["P16"]},
-      {"id": "E33", "name": "Bremssensor", "typ": "komponente", "eltern_id": "E28", "absatz_ids": ["P16", "P24"]},
-      {"id": "E58", "name": "Antiblockiersystem", "typ": "komponente", "eltern_id": "E28", "absatz_ids": ["P32"]},
-      {"id": "E34", "name": "Cockpit", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P18", "P28"], "kategorie": "bedienraum"},
-      {"id": "E35", "name": "Sattel mit Sattelstütze", "typ": "komponente", "eltern_id": "E34", "absatz_ids": ["P18"]},
-      {"id": "E36", "name": "Bedieneinheit", "typ": "komponente", "eltern_id": "E34", "absatz_ids": ["P18"]},
-      {"id": "E37", "name": "Display", "typ": "komponente", "eltern_id": "E34", "absatz_ids": ["P17", "P18"]},
-      {"id": "E38", "name": "Aufbau und Ladung", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P19", "P28"], "kategorie": "aufbau_nutzlast"},
-      {"id": "E39", "name": "Gepäckträger", "typ": "komponente", "eltern_id": "E38", "absatz_ids": ["P19"]},
-      {"id": "E40", "name": "Anhängevorrichtung", "typ": "komponente", "eltern_id": "E38", "absatz_ids": ["P19"]},
-      {"id": "E41", "name": "Elektrik und Elektronik", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P21", "P28"], "kategorie": "elektrik_elektronik"},
-      {"id": "E42", "name": "Leitungssatz", "typ": "komponente", "eltern_id": "E41", "absatz_ids": ["P21"]},
-      {"id": "E43", "name": "Bussystem", "typ": "komponente", "eltern_id": "E41", "absatz_ids": ["P18", "P21"]},
-      {"id": "E44", "name": "Sensorik", "typ": "subsystem", "eltern_id": "E41", "absatz_ids": ["P21"]},
-      {"id": "E45", "name": "Tretsensor", "typ": "komponente", "eltern_id": "E44", "absatz_ids": ["P21"]},
-      {"id": "E46", "name": "Geschwindigkeitssensor", "typ": "komponente", "eltern_id": "E44", "absatz_ids": ["P20", "P21"]},
-      {"id": "E47", "name": "Fahrzeugsteuerung und Information", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P24", "P28"], "kategorie": "steuerung_information"},
-      {"id": "E48", "name": "Fahrzeugmanagement", "typ": "komponente", "eltern_id": "E47", "absatz_ids": ["P24"]},
-      {"id": "E49", "name": "Diagnose", "typ": "komponente", "eltern_id": "E47", "absatz_ids": ["P24"]},
-      {"id": "E50", "name": "Telematikeinheit", "typ": "komponente", "eltern_id": "E47", "absatz_ids": ["P24"]},
-      {"id": "E51", "name": "Beleuchtung und Sicht", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P27", "P28"], "kategorie": "beleuchtung_sicht"},
-      {"id": "E52", "name": "Lichttechnische Einrichtungen", "typ": "subsystem", "eltern_id": "E51", "absatz_ids": ["P27"]},
-      {"id": "E53", "name": "Scheinwerfer", "typ": "komponente", "eltern_id": "E52", "absatz_ids": ["P25", "P27"]},
-      {"id": "E54", "name": "Schlussleuchte", "typ": "komponente", "eltern_id": "E52", "absatz_ids": ["P25", "P27"]},
-      {"id": "E55", "name": "Rückstrahler", "typ": "komponente", "eltern_id": "E52", "absatz_ids": ["P25", "P27"]},
-      {"id": "E56", "name": "Glocke", "typ": "komponente", "eltern_id": "E51", "absatz_ids": ["P25", "P27"]}
+      {
+        "id": "E1",
+        "name": "E-Bike",
+        "typ": "gesamtsystem",
+        "eltern_id": null,
+        "absatz_ids": [
+          "P1",
+          "P4",
+          "P28"
+        ]
+      },
+      {
+        "id": "E2",
+        "name": "Fahrzeugstruktur und Fahrwerk",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P5",
+          "P28"
+        ],
+        "kategorie": "struktur_fahrwerk"
+      },
+      {
+        "id": "E3",
+        "name": "Rahmen",
+        "typ": "komponente",
+        "eltern_id": "E2",
+        "absatz_ids": [
+          "P5",
+          "P6"
+        ]
+      },
+      {
+        "id": "E4",
+        "name": "Fahrwerk",
+        "typ": "subsystem",
+        "eltern_id": "E2",
+        "absatz_ids": [
+          "P5"
+        ]
+      },
+      {
+        "id": "E5",
+        "name": "Räder und Reifen",
+        "typ": "komponente",
+        "eltern_id": "E4",
+        "absatz_ids": [
+          "P5",
+          "P31"
+        ]
+      },
+      {
+        "id": "E6",
+        "name": "Federung",
+        "typ": "komponente",
+        "eltern_id": "E4",
+        "absatz_ids": [
+          "P5",
+          "P13"
+        ]
+      },
+      {
+        "id": "E7",
+        "name": "Ständer und Schutzbleche",
+        "typ": "komponente",
+        "eltern_id": "E2",
+        "absatz_ids": [
+          "P5"
+        ]
+      },
+      {
+        "id": "E8",
+        "name": "Antriebssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P9",
+          "P28"
+        ],
+        "kategorie": "antrieb"
+      },
+      {
+        "id": "E9",
+        "name": "Tretantrieb",
+        "typ": "komponente",
+        "eltern_id": "E8",
+        "absatz_ids": [
+          "P9",
+          "P31"
+        ]
+      },
+      {
+        "id": "E10",
+        "name": "Elektrischer Hilfsantrieb",
+        "typ": "subsystem",
+        "eltern_id": "E8",
+        "absatz_ids": [
+          "P4",
+          "P9"
+        ]
+      },
+      {
+        "id": "E11",
+        "name": "Traktionsmaschine",
+        "typ": "komponente",
+        "eltern_id": "E10",
+        "absatz_ids": [
+          "P9"
+        ]
+      },
+      {
+        "id": "E12",
+        "name": "Motorsteuerung",
+        "typ": "komponente",
+        "eltern_id": "E10",
+        "absatz_ids": [
+          "P9",
+          "P17",
+          "P22"
+        ]
+      },
+      {
+        "id": "E57",
+        "name": "Getriebe",
+        "typ": "komponente",
+        "eltern_id": "E10",
+        "absatz_ids": [
+          "P9",
+          "P29"
+        ]
+      },
+      {
+        "id": "E13",
+        "name": "Kraftübertragung",
+        "typ": "subsystem",
+        "eltern_id": "E8",
+        "absatz_ids": [
+          "P9"
+        ]
+      },
+      {
+        "id": "E14",
+        "name": "Kettentrieb",
+        "typ": "komponente",
+        "eltern_id": "E13",
+        "absatz_ids": [
+          "P9"
+        ]
+      },
+      {
+        "id": "E15",
+        "name": "Gangschaltung",
+        "typ": "komponente",
+        "eltern_id": "E13",
+        "absatz_ids": [
+          "P9"
+        ]
+      },
+      {
+        "id": "E16",
+        "name": "Freilauf",
+        "typ": "komponente",
+        "eltern_id": "E13",
+        "absatz_ids": [
+          "P9"
+        ]
+      },
+      {
+        "id": "E17",
+        "name": "Energieversorgungssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P11",
+          "P28"
+        ],
+        "kategorie": "energieversorgung"
+      },
+      {
+        "id": "E18",
+        "name": "Batteriesystem",
+        "typ": "subsystem",
+        "eltern_id": "E17",
+        "absatz_ids": [
+          "P11"
+        ]
+      },
+      {
+        "id": "E19",
+        "name": "Traktionsbatterie",
+        "typ": "komponente",
+        "eltern_id": "E18",
+        "absatz_ids": [
+          "P9",
+          "P11"
+        ]
+      },
+      {
+        "id": "E20",
+        "name": "Batteriemanagement",
+        "typ": "komponente",
+        "eltern_id": "E18",
+        "absatz_ids": [
+          "P10",
+          "P11",
+          "P27"
+        ]
+      },
+      {
+        "id": "E21",
+        "name": "Akkuhalterung",
+        "typ": "komponente",
+        "eltern_id": "E18",
+        "absatz_ids": [
+          "P11"
+        ]
+      },
+      {
+        "id": "E22",
+        "name": "Ladeeinrichtung",
+        "typ": "komponente",
+        "eltern_id": "E17",
+        "absatz_ids": [
+          "P11"
+        ]
+      },
+      {
+        "id": "E23",
+        "name": "Lichtmaschine",
+        "typ": "komponente",
+        "eltern_id": "E17",
+        "absatz_ids": [
+          "P11",
+          "P25",
+          "P27"
+        ]
+      },
+      {
+        "id": "E24",
+        "name": "Lenksystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P13",
+          "P28"
+        ],
+        "kategorie": "lenkung"
+      },
+      {
+        "id": "E25",
+        "name": "Lenker mit Vorbau",
+        "typ": "komponente",
+        "eltern_id": "E24",
+        "absatz_ids": [
+          "P13"
+        ]
+      },
+      {
+        "id": "E26",
+        "name": "Steuersatz",
+        "typ": "komponente",
+        "eltern_id": "E24",
+        "absatz_ids": [
+          "P13"
+        ]
+      },
+      {
+        "id": "E27",
+        "name": "Vorderradgabel",
+        "typ": "komponente",
+        "eltern_id": "E24",
+        "absatz_ids": [
+          "P5",
+          "P6",
+          "P13"
+        ]
+      },
+      {
+        "id": "E28",
+        "name": "Bremssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P16",
+          "P32",
+          "P28"
+        ],
+        "kategorie": "bremse"
+      },
+      {
+        "id": "E29",
+        "name": "Betriebsbremse",
+        "typ": "subsystem",
+        "eltern_id": "E28",
+        "absatz_ids": [
+          "P16"
+        ]
+      },
+      {
+        "id": "E30",
+        "name": "Bremsbetätigung",
+        "typ": "komponente",
+        "eltern_id": "E29",
+        "absatz_ids": [
+          "P16"
+        ]
+      },
+      {
+        "id": "E31",
+        "name": "Vorderradbremse",
+        "typ": "komponente",
+        "eltern_id": "E29",
+        "absatz_ids": [
+          "P16"
+        ]
+      },
+      {
+        "id": "E32",
+        "name": "Hinterradbremse",
+        "typ": "komponente",
+        "eltern_id": "E29",
+        "absatz_ids": [
+          "P16"
+        ]
+      },
+      {
+        "id": "E33",
+        "name": "Bremssensor",
+        "typ": "komponente",
+        "eltern_id": "E28",
+        "absatz_ids": [
+          "P16",
+          "P24"
+        ]
+      },
+      {
+        "id": "E58",
+        "name": "Antiblockiersystem",
+        "typ": "komponente",
+        "eltern_id": "E28",
+        "absatz_ids": [
+          "P32"
+        ]
+      },
+      {
+        "id": "E34",
+        "name": "Cockpit",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P18",
+          "P28"
+        ],
+        "kategorie": "bedienraum"
+      },
+      {
+        "id": "E35",
+        "name": "Sattel mit Sattelstütze",
+        "typ": "komponente",
+        "eltern_id": "E34",
+        "absatz_ids": [
+          "P18"
+        ]
+      },
+      {
+        "id": "E36",
+        "name": "Bedieneinheit",
+        "typ": "komponente",
+        "eltern_id": "E34",
+        "absatz_ids": [
+          "P18"
+        ]
+      },
+      {
+        "id": "E37",
+        "name": "Display",
+        "typ": "komponente",
+        "eltern_id": "E34",
+        "absatz_ids": [
+          "P17",
+          "P18"
+        ]
+      },
+      {
+        "id": "E38",
+        "name": "Aufbau und Ladung",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P19",
+          "P28"
+        ],
+        "kategorie": "aufbau_nutzlast"
+      },
+      {
+        "id": "E39",
+        "name": "Gepäckträger",
+        "typ": "komponente",
+        "eltern_id": "E38",
+        "absatz_ids": [
+          "P19"
+        ]
+      },
+      {
+        "id": "E40",
+        "name": "Anhängevorrichtung",
+        "typ": "komponente",
+        "eltern_id": "E38",
+        "absatz_ids": [
+          "P19"
+        ]
+      },
+      {
+        "id": "E41",
+        "name": "Elektrik und Elektronik",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P21",
+          "P28"
+        ],
+        "kategorie": "elektrik_elektronik"
+      },
+      {
+        "id": "E42",
+        "name": "Leitungssatz",
+        "typ": "komponente",
+        "eltern_id": "E41",
+        "absatz_ids": [
+          "P21"
+        ]
+      },
+      {
+        "id": "E43",
+        "name": "Bussystem",
+        "typ": "komponente",
+        "eltern_id": "E41",
+        "absatz_ids": [
+          "P18",
+          "P21"
+        ]
+      },
+      {
+        "id": "E44",
+        "name": "Sensorik",
+        "typ": "subsystem",
+        "eltern_id": "E41",
+        "absatz_ids": [
+          "P21"
+        ]
+      },
+      {
+        "id": "E45",
+        "name": "Tretsensor",
+        "typ": "komponente",
+        "eltern_id": "E44",
+        "absatz_ids": [
+          "P21"
+        ]
+      },
+      {
+        "id": "E46",
+        "name": "Geschwindigkeitssensor",
+        "typ": "komponente",
+        "eltern_id": "E44",
+        "absatz_ids": [
+          "P20",
+          "P21"
+        ]
+      },
+      {
+        "id": "E47",
+        "name": "Fahrzeugsteuerung und Information",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P24",
+          "P28"
+        ],
+        "kategorie": "steuerung_information"
+      },
+      {
+        "id": "E48",
+        "name": "Fahrzeugmanagement",
+        "typ": "komponente",
+        "eltern_id": "E47",
+        "absatz_ids": [
+          "P24"
+        ]
+      },
+      {
+        "id": "E49",
+        "name": "Diagnose",
+        "typ": "komponente",
+        "eltern_id": "E47",
+        "absatz_ids": [
+          "P24"
+        ]
+      },
+      {
+        "id": "E50",
+        "name": "Telematikeinheit",
+        "typ": "komponente",
+        "eltern_id": "E47",
+        "absatz_ids": [
+          "P24"
+        ]
+      },
+      {
+        "id": "E51",
+        "name": "Beleuchtung und Sicht",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P27",
+          "P28"
+        ],
+        "kategorie": "beleuchtung_sicht"
+      },
+      {
+        "id": "E52",
+        "name": "Lichttechnische Einrichtungen",
+        "typ": "subsystem",
+        "eltern_id": "E51",
+        "absatz_ids": [
+          "P27"
+        ]
+      },
+      {
+        "id": "E53",
+        "name": "Scheinwerfer",
+        "typ": "komponente",
+        "eltern_id": "E52",
+        "absatz_ids": [
+          "P25",
+          "P27"
+        ]
+      },
+      {
+        "id": "E54",
+        "name": "Schlussleuchte",
+        "typ": "komponente",
+        "eltern_id": "E52",
+        "absatz_ids": [
+          "P25",
+          "P27"
+        ]
+      },
+      {
+        "id": "E55",
+        "name": "Rückstrahler",
+        "typ": "komponente",
+        "eltern_id": "E52",
+        "absatz_ids": [
+          "P25",
+          "P27"
+        ]
+      },
+      {
+        "id": "E56",
+        "name": "Glocke",
+        "typ": "komponente",
+        "eltern_id": "E51",
+        "absatz_ids": [
+          "P25",
+          "P27"
+        ]
+      }
     ],
     "funktionen": [
-      {"id": "F1", "name": "Fahrzeuglasten tragen", "ausgefuehrt_von": ["E3", "E4"], "absatz_ids": ["P5", "P31"]},
-      {"id": "F2", "name": "Fahrzeug fortbewegen", "ausgefuehrt_von": ["E5"], "absatz_ids": ["P5", "P31"]},
-      {"id": "F3", "name": "Antriebsleistung erzeugen", "ausgefuehrt_von": ["E9", "E11", "E12"], "absatz_ids": ["P9", "P31"]},
-      {"id": "F4", "name": "Drehmoment übertragen", "ausgefuehrt_von": ["E13"], "absatz_ids": ["P9", "P31"]},
-      {"id": "F5", "name": "Energie speichern", "ausgefuehrt_von": ["E19"], "absatz_ids": ["P10", "P11", "P31"]},
-      {"id": "F6", "name": "Traktionsbatterie laden", "ausgefuehrt_von": ["E22"], "absatz_ids": ["P11", "P31"]},
-      {"id": "F7", "name": "Elektrische Energie verteilen", "ausgefuehrt_von": ["E42"], "absatz_ids": ["P21", "P31"]},
-      {"id": "F8", "name": "Fahrzeug lenken", "ausgefuehrt_von": ["E24"], "absatz_ids": ["P13", "P31"]},
-      {"id": "F9", "name": "Fahrzeug verzögern", "ausgefuehrt_von": ["E29"], "absatz_ids": ["P14", "P16", "P31"]},
-      {"id": "F10", "name": "Fahrzeug festhalten", "ausgefuehrt_von": ["E29"], "absatz_ids": ["P14", "P16", "P31"]},
-      {"id": "F11", "name": "Bremsenergie zurückgewinnen", "ausgefuehrt_von": ["E11"], "absatz_ids": ["P8", "P31"]},
-      {"id": "F12", "name": "Fahrereingaben erfassen", "ausgefuehrt_von": ["E36", "E45", "E33"], "absatz_ids": ["P16", "P18", "P21", "P31"]},
-      {"id": "F13", "name": "Fahrerinformationen anzeigen", "ausgefuehrt_von": ["E37"], "absatz_ids": ["P17", "P18", "P31"]},
-      {"id": "F14", "name": "Tretunterstützung regeln", "ausgefuehrt_von": ["E48"], "absatz_ids": ["P22", "P24", "P31"]},
-      {"id": "F15", "name": "Fahrzeugzustand überwachen", "ausgefuehrt_von": ["E20", "E49"], "absatz_ids": ["P11", "P24", "P31"]},
-      {"id": "F16", "name": "Betriebstemperatur regeln", "ausgefuehrt_von": ["E20", "E12"], "absatz_ids": ["P11", "P22", "P31"]},
-      {"id": "F17", "name": "Daten übertragen", "ausgefuehrt_von": ["E43", "E50"], "absatz_ids": ["P21", "P24", "P31"]},
-      {"id": "F18", "name": "Ladung aufnehmen", "ausgefuehrt_von": ["E39"], "absatz_ids": ["P19", "P31"]},
-      {"id": "F19", "name": "Anhänger ziehen", "ausgefuehrt_von": ["E40"], "absatz_ids": ["P19", "P31"]},
-      {"id": "F20", "name": "Fahrzeugumgebung ausleuchten", "ausgefuehrt_von": ["E53"], "absatz_ids": ["P27", "P31"]},
-      {"id": "F21", "name": "Lichtsignale abgeben", "ausgefuehrt_von": ["E54", "E55"], "absatz_ids": ["P27", "P31"]},
-      {"id": "F22", "name": "Schallzeichen abgeben", "ausgefuehrt_von": ["E56"], "absatz_ids": ["P27", "P31"]}
+      {
+        "id": "F1",
+        "name": "Fahrzeuglasten tragen",
+        "ausgefuehrt_von": [
+          "E3",
+          "E4"
+        ],
+        "absatz_ids": [
+          "P5",
+          "P31"
+        ]
+      },
+      {
+        "id": "F2",
+        "name": "Fahrzeug fortbewegen",
+        "ausgefuehrt_von": [
+          "E5"
+        ],
+        "absatz_ids": [
+          "P5",
+          "P31"
+        ]
+      },
+      {
+        "id": "F3",
+        "name": "Antriebsleistung erzeugen",
+        "ausgefuehrt_von": [
+          "E9",
+          "E11",
+          "E12"
+        ],
+        "absatz_ids": [
+          "P9",
+          "P31"
+        ]
+      },
+      {
+        "id": "F4",
+        "name": "Drehmoment übertragen",
+        "ausgefuehrt_von": [
+          "E13"
+        ],
+        "absatz_ids": [
+          "P9",
+          "P31"
+        ]
+      },
+      {
+        "id": "F5",
+        "name": "Energie speichern",
+        "ausgefuehrt_von": [
+          "E19"
+        ],
+        "absatz_ids": [
+          "P10",
+          "P11",
+          "P31"
+        ]
+      },
+      {
+        "id": "F6",
+        "name": "Traktionsbatterie laden",
+        "ausgefuehrt_von": [
+          "E22"
+        ],
+        "absatz_ids": [
+          "P11",
+          "P31"
+        ]
+      },
+      {
+        "id": "F7",
+        "name": "Elektrische Energie verteilen",
+        "ausgefuehrt_von": [
+          "E42"
+        ],
+        "absatz_ids": [
+          "P21",
+          "P31"
+        ]
+      },
+      {
+        "id": "F8",
+        "name": "Fahrzeug lenken",
+        "ausgefuehrt_von": [
+          "E24"
+        ],
+        "absatz_ids": [
+          "P13",
+          "P31"
+        ]
+      },
+      {
+        "id": "F9",
+        "name": "Fahrzeug verzögern",
+        "ausgefuehrt_von": [
+          "E29"
+        ],
+        "absatz_ids": [
+          "P14",
+          "P16",
+          "P31"
+        ]
+      },
+      {
+        "id": "F10",
+        "name": "Fahrzeug festhalten",
+        "ausgefuehrt_von": [
+          "E29"
+        ],
+        "absatz_ids": [
+          "P14",
+          "P16",
+          "P31"
+        ]
+      },
+      {
+        "id": "F11",
+        "name": "Bremsenergie zurückgewinnen",
+        "ausgefuehrt_von": [
+          "E11"
+        ],
+        "absatz_ids": [
+          "P8",
+          "P31"
+        ]
+      },
+      {
+        "id": "F12",
+        "name": "Fahrereingaben erfassen",
+        "ausgefuehrt_von": [
+          "E36",
+          "E45",
+          "E33"
+        ],
+        "absatz_ids": [
+          "P16",
+          "P18",
+          "P21",
+          "P31"
+        ]
+      },
+      {
+        "id": "F13",
+        "name": "Fahrerinformationen anzeigen",
+        "ausgefuehrt_von": [
+          "E37"
+        ],
+        "absatz_ids": [
+          "P17",
+          "P18",
+          "P31"
+        ]
+      },
+      {
+        "id": "F14",
+        "name": "Tretunterstützung regeln",
+        "ausgefuehrt_von": [
+          "E48"
+        ],
+        "absatz_ids": [
+          "P22",
+          "P24",
+          "P31"
+        ]
+      },
+      {
+        "id": "F15",
+        "name": "Fahrzeugzustand überwachen",
+        "ausgefuehrt_von": [
+          "E20",
+          "E49"
+        ],
+        "absatz_ids": [
+          "P11",
+          "P24",
+          "P31"
+        ]
+      },
+      {
+        "id": "F16",
+        "name": "Betriebstemperatur regeln",
+        "ausgefuehrt_von": [
+          "E20",
+          "E12"
+        ],
+        "absatz_ids": [
+          "P11",
+          "P22",
+          "P31"
+        ]
+      },
+      {
+        "id": "F17",
+        "name": "Daten übertragen",
+        "ausgefuehrt_von": [
+          "E43",
+          "E50"
+        ],
+        "absatz_ids": [
+          "P21",
+          "P24",
+          "P31"
+        ]
+      },
+      {
+        "id": "F18",
+        "name": "Ladung aufnehmen",
+        "ausgefuehrt_von": [
+          "E39"
+        ],
+        "absatz_ids": [
+          "P19",
+          "P31"
+        ]
+      },
+      {
+        "id": "F19",
+        "name": "Anhänger ziehen",
+        "ausgefuehrt_von": [
+          "E40"
+        ],
+        "absatz_ids": [
+          "P19",
+          "P31"
+        ]
+      },
+      {
+        "id": "F20",
+        "name": "Fahrzeugumgebung ausleuchten",
+        "ausgefuehrt_von": [
+          "E53"
+        ],
+        "absatz_ids": [
+          "P27",
+          "P31"
+        ]
+      },
+      {
+        "id": "F21",
+        "name": "Lichtsignale abgeben",
+        "ausgefuehrt_von": [
+          "E54",
+          "E55"
+        ],
+        "absatz_ids": [
+          "P27",
+          "P31"
+        ]
+      },
+      {
+        "id": "F22",
+        "name": "Schallzeichen abgeben",
+        "ausgefuehrt_von": [
+          "E56"
+        ],
+        "absatz_ids": [
+          "P27",
+          "P31"
+        ]
+      }
     ],
     "fluesse": [
-      {"id": "S1", "von": "E22", "nach": "E19", "art": "elektrisch", "medium": "Ladestrom", "absatz_ids": ["P11", "P30"], "schnittstelle": "Ladebuchse"},
-      {"id": "S2", "von": "E19", "nach": "E42", "art": "elektrisch", "medium": "Gleichstrom der Traktionsbatterie", "absatz_ids": ["P21", "P30"], "schnittstelle": "Akkukontakte der Akkuhalterung"},
-      {"id": "S3", "von": "E42", "nach": "E12", "art": "elektrisch", "medium": "Gleichstrom der Traktionsbatterie", "absatz_ids": ["P21", "P30"], "schnittstelle": "Versorgungsanschluss der Antriebseinheit"},
-      {"id": "S4", "von": "E12", "nach": "E11", "art": "elektrisch", "medium": "Wicklungsströme", "absatz_ids": ["P9", "P30"]},
-      {"id": "S5", "von": "E9", "nach": "E13", "art": "mechanisch", "medium": "Tretmoment", "absatz_ids": ["P9", "P30"]},
-      {"id": "S6", "von": "E11", "nach": "E57", "art": "mechanisch", "medium": "Motormoment", "absatz_ids": ["P9", "P30"]},
-      {"id": "S32", "von": "E57", "nach": "E13", "art": "mechanisch", "medium": "untersetztes Motormoment", "absatz_ids": ["P9", "P30"]},
-      {"id": "S7", "von": "E13", "nach": "E5", "art": "mechanisch", "medium": "Antriebsmoment am Hinterrad", "absatz_ids": ["P9", "P30"], "schnittstelle": "Hinterradnabe mit Freilauf"},
-      {"id": "S8", "von": "E11", "nach": "E3", "art": "mechanisch", "medium": "Reaktionsmoment", "absatz_ids": ["P6", "P30"], "schnittstelle": "Motoraufnahme im Tretlagerbereich oder Drehmomentstütze"},
-      {"id": "S9", "von": "E30", "nach": "E31", "art": "hydraulisch", "medium": "Bremsflüssigkeit, bei Seilzugbremsen Zugkraft im Bowdenzug", "absatz_ids": ["P16", "P30"]},
-      {"id": "S10", "von": "E30", "nach": "E32", "art": "hydraulisch", "medium": "Bremsflüssigkeit, bei Seilzugbremsen Zugkraft im Bowdenzug", "absatz_ids": ["P16", "P30"]},
-      {"id": "S11", "von": "E31", "nach": "E5", "art": "mechanisch", "medium": "Bremsmoment vorn", "absatz_ids": ["P16", "P30"], "schnittstelle": "Felge oder Bremsscheibe am Vorderrad"},
-      {"id": "S12", "von": "E32", "nach": "E5", "art": "mechanisch", "medium": "Bremsmoment hinten", "absatz_ids": ["P16", "P30"], "schnittstelle": "Felge, Bremsscheibe oder Hinterradnabe"},
-      {"id": "S13", "von": "E45", "nach": "E48", "art": "information", "medium": "Trittfrequenz oder Tretmoment", "absatz_ids": ["P21", "P24", "P30"], "schnittstelle": "Sensoranschluss der Antriebseinheit"},
-      {"id": "S14", "von": "E46", "nach": "E48", "art": "information", "medium": "Fahrgeschwindigkeit", "absatz_ids": ["P24", "P30"], "schnittstelle": "Sensoranschluss der Antriebseinheit"},
-      {"id": "S15", "von": "E33", "nach": "E48", "art": "information", "medium": "Bremssignal", "absatz_ids": ["P16", "P24", "P30"], "schnittstelle": "Bremskontakt"},
-      {"id": "S16", "von": "E36", "nach": "E43", "art": "information", "medium": "Unterstützungsstufe und Bedienbefehle", "absatz_ids": ["P18", "P30"], "schnittstelle": "Busanschluss der Bedieneinheit"},
-      {"id": "S17", "von": "E43", "nach": "E48", "art": "information", "medium": "Busnachrichten", "absatz_ids": ["P21", "P24"]},
-      {"id": "S18", "von": "E20", "nach": "E43", "art": "information", "medium": "Ladezustand und Temperatur", "absatz_ids": ["P21", "P30"], "schnittstelle": "Datenschnittstelle der Traktionsbatterie"},
-      {"id": "S19", "von": "E48", "nach": "E12", "art": "information", "medium": "Sollmoment", "absatz_ids": ["P9", "P24", "P30"], "schnittstelle": "Steuerschnittstelle der Motorsteuerung"},
-      {"id": "S20", "von": "E48", "nach": "E37", "art": "information", "medium": "Anzeigedaten", "absatz_ids": ["P18", "P24", "P30"], "schnittstelle": "Displayanschluss am Bussystem"},
-      {"id": "S21", "von": "E48", "nach": "E49", "art": "information", "medium": "Fehler- und Zustandsdaten", "absatz_ids": ["P24", "P30"]},
-      {"id": "S22", "von": "E48", "nach": "E50", "art": "information", "medium": "Fahr- und Zustandsdaten", "absatz_ids": ["P24", "P30"]},
-      {"id": "S23", "von": "E42", "nach": "E52", "art": "elektrisch", "medium": "Lichtstrom", "absatz_ids": ["P21", "P27", "P30"], "schnittstelle": "Lichtausgang der Antriebseinheit"},
-      {"id": "S24", "von": "E23", "nach": "E52", "art": "elektrisch", "medium": "Lichtstrom", "absatz_ids": ["P11", "P27"], "schnittstelle": "Dynamoanschluss"},
-      {"id": "S25", "von": "E25", "nach": "E26", "art": "mechanisch", "medium": "Lenkmoment", "absatz_ids": ["P13", "P30"]},
-      {"id": "S26", "von": "E26", "nach": "E27", "art": "mechanisch", "medium": "Lenkmoment", "absatz_ids": ["P13", "P30"]},
-      {"id": "S27", "von": "E27", "nach": "E5", "art": "mechanisch", "medium": "Lenkbewegung und Radlast vorn", "absatz_ids": ["P13", "P30"], "schnittstelle": "Vorderradachse in den Gabelenden"},
-      {"id": "S28", "von": "E35", "nach": "E3", "art": "mechanisch", "medium": "Fahrerlast", "absatz_ids": ["P5", "P30"], "schnittstelle": "Sattelrohr"},
-      {"id": "S29", "von": "E39", "nach": "E3", "art": "mechanisch", "medium": "Gepäcklast", "absatz_ids": ["P19", "P30"], "schnittstelle": "Gepäckträgerbefestigung am Hinterbau"},
-      {"id": "S30", "von": "E40", "nach": "E3", "art": "mechanisch", "medium": "Zug- und Stützkraft des Anhängers", "absatz_ids": ["P19"], "schnittstelle": "Anhängerkupplung am Hinterbau"},
-      {"id": "S31", "von": "E26", "nach": "E3", "art": "mechanisch", "medium": "Lagerkräfte der Lenkung", "absatz_ids": ["P13"], "schnittstelle": "Steuerrohr"}
+      {
+        "id": "S1",
+        "von": "E22",
+        "nach": "E19",
+        "art": "elektrisch",
+        "medium": "Ladestrom",
+        "absatz_ids": [
+          "P11",
+          "P30"
+        ],
+        "schnittstelle": "Ladebuchse"
+      },
+      {
+        "id": "S2",
+        "von": "E19",
+        "nach": "E42",
+        "art": "elektrisch",
+        "medium": "Gleichstrom der Traktionsbatterie",
+        "absatz_ids": [
+          "P21",
+          "P30"
+        ],
+        "schnittstelle": "Akkukontakte der Akkuhalterung"
+      },
+      {
+        "id": "S3",
+        "von": "E42",
+        "nach": "E12",
+        "art": "elektrisch",
+        "medium": "Gleichstrom der Traktionsbatterie",
+        "absatz_ids": [
+          "P21",
+          "P30"
+        ],
+        "schnittstelle": "Versorgungsanschluss der Antriebseinheit"
+      },
+      {
+        "id": "S4",
+        "von": "E12",
+        "nach": "E11",
+        "art": "elektrisch",
+        "medium": "Wicklungsströme",
+        "absatz_ids": [
+          "P9",
+          "P30"
+        ]
+      },
+      {
+        "id": "S5",
+        "von": "E9",
+        "nach": "E13",
+        "art": "mechanisch",
+        "medium": "Tretmoment",
+        "absatz_ids": [
+          "P9",
+          "P30"
+        ]
+      },
+      {
+        "id": "S6",
+        "von": "E11",
+        "nach": "E57",
+        "art": "mechanisch",
+        "medium": "Motormoment",
+        "absatz_ids": [
+          "P9",
+          "P30"
+        ]
+      },
+      {
+        "id": "S32",
+        "von": "E57",
+        "nach": "E13",
+        "art": "mechanisch",
+        "medium": "untersetztes Motormoment",
+        "absatz_ids": [
+          "P9",
+          "P30"
+        ]
+      },
+      {
+        "id": "S7",
+        "von": "E13",
+        "nach": "E5",
+        "art": "mechanisch",
+        "medium": "Antriebsmoment am Hinterrad",
+        "absatz_ids": [
+          "P9",
+          "P30"
+        ],
+        "schnittstelle": "Hinterradnabe mit Freilauf"
+      },
+      {
+        "id": "S8",
+        "von": "E11",
+        "nach": "E3",
+        "art": "mechanisch",
+        "medium": "Reaktionsmoment",
+        "absatz_ids": [
+          "P6",
+          "P30"
+        ],
+        "schnittstelle": "Motoraufnahme im Tretlagerbereich oder Drehmomentstütze"
+      },
+      {
+        "id": "S9",
+        "von": "E30",
+        "nach": "E31",
+        "art": "hydraulisch",
+        "medium": "Bremsflüssigkeit, bei Seilzugbremsen Zugkraft im Bowdenzug",
+        "absatz_ids": [
+          "P16",
+          "P30"
+        ]
+      },
+      {
+        "id": "S10",
+        "von": "E30",
+        "nach": "E32",
+        "art": "hydraulisch",
+        "medium": "Bremsflüssigkeit, bei Seilzugbremsen Zugkraft im Bowdenzug",
+        "absatz_ids": [
+          "P16",
+          "P30"
+        ]
+      },
+      {
+        "id": "S11",
+        "von": "E31",
+        "nach": "E5",
+        "art": "mechanisch",
+        "medium": "Bremsmoment vorn",
+        "absatz_ids": [
+          "P16",
+          "P30"
+        ],
+        "schnittstelle": "Felge oder Bremsscheibe am Vorderrad"
+      },
+      {
+        "id": "S12",
+        "von": "E32",
+        "nach": "E5",
+        "art": "mechanisch",
+        "medium": "Bremsmoment hinten",
+        "absatz_ids": [
+          "P16",
+          "P30"
+        ],
+        "schnittstelle": "Felge, Bremsscheibe oder Hinterradnabe"
+      },
+      {
+        "id": "S13",
+        "von": "E45",
+        "nach": "E48",
+        "art": "information",
+        "medium": "Trittfrequenz oder Tretmoment",
+        "absatz_ids": [
+          "P21",
+          "P24",
+          "P30"
+        ],
+        "schnittstelle": "Sensoranschluss der Antriebseinheit"
+      },
+      {
+        "id": "S14",
+        "von": "E46",
+        "nach": "E48",
+        "art": "information",
+        "medium": "Fahrgeschwindigkeit",
+        "absatz_ids": [
+          "P24",
+          "P30"
+        ],
+        "schnittstelle": "Sensoranschluss der Antriebseinheit"
+      },
+      {
+        "id": "S15",
+        "von": "E33",
+        "nach": "E48",
+        "art": "information",
+        "medium": "Bremssignal",
+        "absatz_ids": [
+          "P16",
+          "P24",
+          "P30"
+        ],
+        "schnittstelle": "Bremskontakt"
+      },
+      {
+        "id": "S16",
+        "von": "E36",
+        "nach": "E43",
+        "art": "information",
+        "medium": "Unterstützungsstufe und Bedienbefehle",
+        "absatz_ids": [
+          "P18",
+          "P30"
+        ],
+        "schnittstelle": "Busanschluss der Bedieneinheit"
+      },
+      {
+        "id": "S17",
+        "von": "E43",
+        "nach": "E48",
+        "art": "information",
+        "medium": "Busnachrichten",
+        "absatz_ids": [
+          "P21",
+          "P24"
+        ]
+      },
+      {
+        "id": "S18",
+        "von": "E20",
+        "nach": "E43",
+        "art": "information",
+        "medium": "Ladezustand und Temperatur",
+        "absatz_ids": [
+          "P21",
+          "P30"
+        ],
+        "schnittstelle": "Datenschnittstelle der Traktionsbatterie"
+      },
+      {
+        "id": "S19",
+        "von": "E48",
+        "nach": "E12",
+        "art": "information",
+        "medium": "Sollmoment",
+        "absatz_ids": [
+          "P9",
+          "P24",
+          "P30"
+        ],
+        "schnittstelle": "Steuerschnittstelle der Motorsteuerung"
+      },
+      {
+        "id": "S20",
+        "von": "E48",
+        "nach": "E37",
+        "art": "information",
+        "medium": "Anzeigedaten",
+        "absatz_ids": [
+          "P18",
+          "P24",
+          "P30"
+        ],
+        "schnittstelle": "Displayanschluss am Bussystem"
+      },
+      {
+        "id": "S21",
+        "von": "E48",
+        "nach": "E49",
+        "art": "information",
+        "medium": "Fehler- und Zustandsdaten",
+        "absatz_ids": [
+          "P24",
+          "P30"
+        ]
+      },
+      {
+        "id": "S22",
+        "von": "E48",
+        "nach": "E50",
+        "art": "information",
+        "medium": "Fahr- und Zustandsdaten",
+        "absatz_ids": [
+          "P24",
+          "P30"
+        ]
+      },
+      {
+        "id": "S23",
+        "von": "E42",
+        "nach": "E52",
+        "art": "elektrisch",
+        "medium": "Lichtstrom",
+        "absatz_ids": [
+          "P21",
+          "P27",
+          "P30"
+        ],
+        "schnittstelle": "Lichtausgang der Antriebseinheit"
+      },
+      {
+        "id": "S24",
+        "von": "E23",
+        "nach": "E52",
+        "art": "elektrisch",
+        "medium": "Lichtstrom",
+        "absatz_ids": [
+          "P11",
+          "P27"
+        ],
+        "schnittstelle": "Dynamoanschluss"
+      },
+      {
+        "id": "S25",
+        "von": "E25",
+        "nach": "E26",
+        "art": "mechanisch",
+        "medium": "Lenkmoment",
+        "absatz_ids": [
+          "P13",
+          "P30"
+        ]
+      },
+      {
+        "id": "S26",
+        "von": "E26",
+        "nach": "E27",
+        "art": "mechanisch",
+        "medium": "Lenkmoment",
+        "absatz_ids": [
+          "P13",
+          "P30"
+        ]
+      },
+      {
+        "id": "S27",
+        "von": "E27",
+        "nach": "E5",
+        "art": "mechanisch",
+        "medium": "Lenkbewegung und Radlast vorn",
+        "absatz_ids": [
+          "P13",
+          "P30"
+        ],
+        "schnittstelle": "Vorderradachse in den Gabelenden"
+      },
+      {
+        "id": "S28",
+        "von": "E35",
+        "nach": "E3",
+        "art": "mechanisch",
+        "medium": "Fahrerlast",
+        "absatz_ids": [
+          "P5",
+          "P30"
+        ],
+        "schnittstelle": "Sattelrohr"
+      },
+      {
+        "id": "S29",
+        "von": "E39",
+        "nach": "E3",
+        "art": "mechanisch",
+        "medium": "Gepäcklast",
+        "absatz_ids": [
+          "P19",
+          "P30"
+        ],
+        "schnittstelle": "Gepäckträgerbefestigung am Hinterbau"
+      },
+      {
+        "id": "S30",
+        "von": "E40",
+        "nach": "E3",
+        "art": "mechanisch",
+        "medium": "Zug- und Stützkraft des Anhängers",
+        "absatz_ids": [
+          "P19"
+        ],
+        "schnittstelle": "Anhängerkupplung am Hinterbau"
+      },
+      {
+        "id": "S31",
+        "von": "E26",
+        "nach": "E3",
+        "art": "mechanisch",
+        "medium": "Lagerkräfte der Lenkung",
+        "absatz_ids": [
+          "P13"
+        ],
+        "schnittstelle": "Steuerrohr"
+      }
     ],
     "entfallene_kategorien": [
-      {"kategorie": "assistenz_sicherheit", "grund": "Die Bezugsbauweise besitzt keine eigenständigen Assistenz- oder Insassenschutzsysteme; die sicherheitsrelevanten Abschaltfunktionen gehören zum Fahrzeugmanagement, Schutzausrüstung wie der Helm liegt außerhalb der Systemgrenze (Recherchepunkt zu Zusatzausstattungen in offene_punkte)."},
-      {"kategorie": "thermomanagement", "grund": "Keine eigene Temperierung: Motor und Akku geben Wärme passiv über ihre Gehäuse ab; Temperaturüberwachung und Leistungsrücknahme übernehmen Batteriemanagement und Motorsteuerung."},
-      {"kategorie": "nebensysteme", "grund": "Keine Druckluft-, Unterdruck- oder Hydraulikversorgung und keine Nebenantriebe; hydraulische Bremsen sind in sich geschlossene Teile des Bremssystems."}
+      {
+        "kategorie": "assistenz_sicherheit",
+        "grund": "Die Bezugsbauweise besitzt keine eigenständigen Assistenz- oder Insassenschutzsysteme; die sicherheitsrelevanten Abschaltfunktionen gehören zum Fahrzeugmanagement, Schutzausrüstung wie der Helm liegt außerhalb der Systemgrenze (Recherchepunkt zu Zusatzausstattungen in offene_punkte)."
+      },
+      {
+        "kategorie": "thermomanagement",
+        "grund": "Keine eigene Temperierung: Motor und Akku geben Wärme passiv über ihre Gehäuse ab; Temperaturüberwachung und Leistungsrücknahme übernehmen Batteriemanagement und Motorsteuerung."
+      },
+      {
+        "kategorie": "nebensysteme",
+        "grund": "Keine Druckluft-, Unterdruck- oder Hydraulikversorgung und keine Nebenantriebe; hydraulische Bremsen sind in sich geschlossene Teile des Bremssystems."
+      }
     ],
     "varianten": [
       {
         "id": "V1",
         "element_id": "E8",
         "bezeichnung": "Anordnung der Traktionsmaschine",
-        "alternativen": ["Mittelmotor am Tretlager", "Hinterradnabenmotor", "Vorderradnabenmotor"],
-        "auswahlkriterien": ["Steigfähigkeit und Wirkungsgrad bei niedriger Fahrgeschwindigkeit", "Kombinierbarkeit mit Ketten- oder Nabenschaltung", "Traktion und Fahrsicherheit am angetriebenen Rad", "Kosten und Nachrüstbarkeit"],
-        "auswirkungen": [
-          {"element_id": "E3", "beschreibung": "Mittelmotor erfordert eine besonders ausgeformte Aufnahme im Tretlagerbereich, Nabenmotoren eine Drehmomentstütze am Ausfallende."},
-          {"element_id": "E27", "beschreibung": "Beim Vorderradnabenmotor muss die Vorderradgabel das Reaktionsmoment abstützen; das Lenkverhalten ändert sich."},
-          {"element_id": "E45", "beschreibung": "Mittelmotoren integrieren den Tretsensor, Vorderradmotoren nutzen meist Bewegungssensoren."},
-          {"element_id": "E28", "beschreibung": "Ein getriebeloser Nabenmotor kann zusätzlich zur Betriebsbremse Nutzbremsung leisten."}
+        "alternativen": [
+          "Mittelmotor am Tretlager",
+          "Hinterradnabenmotor",
+          "Vorderradnabenmotor"
         ],
-        "absatz_ids": ["P6", "P7", "P8", "P9"]
+        "auswahlkriterien": [
+          "Steigfähigkeit und Wirkungsgrad bei niedriger Fahrgeschwindigkeit",
+          "Kombinierbarkeit mit Ketten- oder Nabenschaltung",
+          "Traktion und Fahrsicherheit am angetriebenen Rad",
+          "Kosten und Nachrüstbarkeit"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E3",
+            "beschreibung": "Mittelmotor erfordert eine besonders ausgeformte Aufnahme im Tretlagerbereich, Nabenmotoren eine Drehmomentstütze am Ausfallende."
+          },
+          {
+            "element_id": "E27",
+            "beschreibung": "Beim Vorderradnabenmotor muss die Vorderradgabel das Reaktionsmoment abstützen; das Lenkverhalten ändert sich."
+          },
+          {
+            "element_id": "E45",
+            "beschreibung": "Mittelmotoren integrieren den Tretsensor, Vorderradmotoren nutzen meist Bewegungssensoren."
+          },
+          {
+            "element_id": "E28",
+            "beschreibung": "Ein getriebeloser Nabenmotor kann zusätzlich zur Betriebsbremse Nutzbremsung leisten."
+          }
+        ],
+        "absatz_ids": [
+          "P6",
+          "P7",
+          "P8",
+          "P9"
+        ]
       },
       {
         "id": "V2",
         "element_id": "E1",
         "bezeichnung": "Rechtliche Fahrzeugklasse und Unterstützungsgrenze",
-        "alternativen": ["Pedelec nach Fahrradrecht", "S-Pedelec als Kleinkraftrad", "E-Bike mit Gashebel ohne Tretpflicht"],
-        "auswahlkriterien": ["angestrebte Reisegeschwindigkeit und Einsatzprofil", "Zulassungs-, Versicherungs-, Führerschein- und Helmpflicht", "Zielgruppe und Nutzung von Radwegen"],
-        "auswirkungen": [
-          {"element_id": "E48", "beschreibung": "Abschaltgrenzen der Unterstützung und Freigabe des Gashebels hängen von der Klasse ab."},
-          {"element_id": "E11", "beschreibung": "Zulässige Nenndauerleistung der Traktionsmaschine richtet sich nach der Klasse."},
-          {"element_id": "E36", "beschreibung": "Beim E-Bike mit Gashebel kommt ein Gasgriff zur Bedieneinheit hinzu."},
-          {"element_id": "E51", "beschreibung": "Beim S-Pedelec gelten die Vorschriften über lichttechnische Einrichtungen an Fahrrädern nicht; die Ausrüstung richtet sich nach den Vorschriften für Kraftfahrzeuge seiner Klasse."},
-          {"element_id": "E28", "beschreibung": "Höhere Unterstützungsgeschwindigkeit erhöht die Anforderungen an die Bremswirkung."}
+        "alternativen": [
+          "Pedelec nach Fahrradrecht",
+          "S-Pedelec als Kleinkraftrad",
+          "E-Bike mit Gashebel ohne Tretpflicht"
         ],
-        "absatz_ids": ["P1", "P2", "P3", "P27"]
+        "auswahlkriterien": [
+          "angestrebte Reisegeschwindigkeit und Einsatzprofil",
+          "Zulassungs-, Versicherungs-, Führerschein- und Helmpflicht",
+          "Zielgruppe und Nutzung von Radwegen"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E48",
+            "beschreibung": "Abschaltgrenzen der Unterstützung und Freigabe des Gashebels hängen von der Klasse ab."
+          },
+          {
+            "element_id": "E11",
+            "beschreibung": "Zulässige Nenndauerleistung der Traktionsmaschine richtet sich nach der Klasse."
+          },
+          {
+            "element_id": "E36",
+            "beschreibung": "Beim E-Bike mit Gashebel kommt ein Gasgriff zur Bedieneinheit hinzu."
+          },
+          {
+            "element_id": "E51",
+            "beschreibung": "Beim S-Pedelec gelten die Vorschriften über lichttechnische Einrichtungen an Fahrrädern nicht; die Ausrüstung richtet sich nach den Vorschriften für Kraftfahrzeuge seiner Klasse."
+          },
+          {
+            "element_id": "E28",
+            "beschreibung": "Höhere Unterstützungsgeschwindigkeit erhöht die Anforderungen an die Bremswirkung."
+          }
+        ],
+        "absatz_ids": [
+          "P1",
+          "P2",
+          "P3",
+          "P27"
+        ]
       },
       {
         "id": "V3",
         "element_id": "E44",
         "bezeichnung": "Sensorprinzip der Unterstützungsregelung",
-        "alternativen": ["Bewegungssensor für die Trittfrequenz", "Drehmomentsensor für die Tretkraft"],
-        "auswahlkriterien": ["Dosierbarkeit und Natürlichkeit der Unterstützung", "Kosten", "Integrierbarkeit in die Antriebseinheit"],
-        "auswirkungen": [
-          {"element_id": "E48", "beschreibung": "Gleichmäßige Unterstützung bei Bewegungssensor, kraftproportionale Regelung bei Drehmomentsensor."},
-          {"element_id": "E9", "beschreibung": "Beim Drehmomentsensor erhält die Tretlagerwelle eine Messstelle."},
-          {"element_id": "E10", "beschreibung": "Beim Mittelmotor ist der Drehmomentsensor Teil der Antriebseinheit."},
-          {"element_id": "E33", "beschreibung": "Beim Bewegungssensor ist ein Bremssensor zur schnellen Abschaltung nötig, beim Drehmomentsensor optional."}
+        "alternativen": [
+          "Bewegungssensor für die Trittfrequenz",
+          "Drehmomentsensor für die Tretkraft"
         ],
-        "absatz_ids": ["P20", "P21", "P22"]
+        "auswahlkriterien": [
+          "Dosierbarkeit und Natürlichkeit der Unterstützung",
+          "Kosten",
+          "Integrierbarkeit in die Antriebseinheit"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E48",
+            "beschreibung": "Gleichmäßige Unterstützung bei Bewegungssensor, kraftproportionale Regelung bei Drehmomentsensor."
+          },
+          {
+            "element_id": "E9",
+            "beschreibung": "Beim Drehmomentsensor erhält die Tretlagerwelle eine Messstelle."
+          },
+          {
+            "element_id": "E10",
+            "beschreibung": "Beim Mittelmotor ist der Drehmomentsensor Teil der Antriebseinheit."
+          },
+          {
+            "element_id": "E33",
+            "beschreibung": "Beim Bewegungssensor ist ein Bremssensor zur schnellen Abschaltung nötig, beim Drehmomentsensor optional."
+          }
+        ],
+        "absatz_ids": [
+          "P20",
+          "P21",
+          "P22"
+        ]
       },
       {
         "id": "V4",
         "element_id": "E18",
         "bezeichnung": "Anordnung der Traktionsbatterie",
-        "alternativen": ["Gepäckträger-Akku", "Rahmen-Akku am Unterrohr oder Sitzrohr", "Intube-Akku im Unterrohr"],
-        "auswahlkriterien": ["Schwerpunktlage und Fahrverhalten", "Entnehmbarkeit und Diebstahlschutz", "Rahmengestaltung und benötigter Energieinhalt"],
-        "auswirkungen": [
-          {"element_id": "E3", "beschreibung": "Intube-Akku erfordert ein Unterrohr mit Öffnung und innerer Halterung, Rahmen-Akkus Befestigungspunkte am Rohr."},
-          {"element_id": "E39", "beschreibung": "Beim Gepäckträger-Akku trägt der Gepäckträger die Traktionsbatterie."},
-          {"element_id": "E42", "beschreibung": "Leitungsführung vom Akku zur Antriebseinheit ändert sich."}
+        "alternativen": [
+          "Gepäckträger-Akku",
+          "Rahmen-Akku am Unterrohr oder Sitzrohr",
+          "Intube-Akku im Unterrohr"
         ],
-        "absatz_ids": ["P6", "P11", "P19"]
+        "auswahlkriterien": [
+          "Schwerpunktlage und Fahrverhalten",
+          "Entnehmbarkeit und Diebstahlschutz",
+          "Rahmengestaltung und benötigter Energieinhalt"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E3",
+            "beschreibung": "Intube-Akku erfordert ein Unterrohr mit Öffnung und innerer Halterung, Rahmen-Akkus Befestigungspunkte am Rohr."
+          },
+          {
+            "element_id": "E39",
+            "beschreibung": "Beim Gepäckträger-Akku trägt der Gepäckträger die Traktionsbatterie."
+          },
+          {
+            "element_id": "E42",
+            "beschreibung": "Leitungsführung vom Akku zur Antriebseinheit ändert sich."
+          }
+        ],
+        "absatz_ids": [
+          "P6",
+          "P11",
+          "P19"
+        ]
       },
       {
         "id": "V5",
         "element_id": "E52",
         "bezeichnung": "Energiequelle der Beleuchtung",
-        "alternativen": ["Lichtmaschine unabhängig vom Akku", "Kopplung an die Traktionsbatterie mit Lichtreserve", "Antriebsmotor übergangsweise als Lichtmaschine"],
-        "auswahlkriterien": ["Verfügbarkeit des Lichts bei entladenem Akku", "Masse und Rollwiderstand", "Kosten"],
-        "auswirkungen": [
-          {"element_id": "E20", "beschreibung": "Bei Kopplung an den Akku muss das Batteriemanagement nach Abschaltung der Unterstützung eine Lichtreserve halten."},
-          {"element_id": "E23", "beschreibung": "Die Lichtmaschine ist erforderlich oder entfällt."},
-          {"element_id": "E12", "beschreibung": "Die Motorsteuerung stellt einen Lichtausgang bereit oder betreibt den Motor als Generator."},
-          {"element_id": "E5", "beschreibung": "Beim Nabendynamo erhält das Vorderrad eine Dynamonabe."}
+        "alternativen": [
+          "Lichtmaschine unabhängig vom Akku",
+          "Kopplung an die Traktionsbatterie mit Lichtreserve",
+          "Antriebsmotor übergangsweise als Lichtmaschine"
         ],
-        "absatz_ids": ["P11", "P25", "P26", "P27"]
+        "auswahlkriterien": [
+          "Verfügbarkeit des Lichts bei entladenem Akku",
+          "Masse und Rollwiderstand",
+          "Kosten"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E20",
+            "beschreibung": "Bei Kopplung an den Akku muss das Batteriemanagement nach Abschaltung der Unterstützung eine Lichtreserve halten."
+          },
+          {
+            "element_id": "E23",
+            "beschreibung": "Die Lichtmaschine ist erforderlich oder entfällt."
+          },
+          {
+            "element_id": "E12",
+            "beschreibung": "Die Motorsteuerung stellt einen Lichtausgang bereit oder betreibt den Motor als Generator."
+          },
+          {
+            "element_id": "E5",
+            "beschreibung": "Beim Nabendynamo erhält das Vorderrad eine Dynamonabe."
+          }
+        ],
+        "absatz_ids": [
+          "P11",
+          "P25",
+          "P26",
+          "P27"
+        ]
       },
       {
         "id": "V6",
         "element_id": "E29",
         "bezeichnung": "Bremsbauart",
-        "alternativen": ["Felgenbremse", "Scheibenbremse, hydraulisch oder mechanisch", "Rücktrittbremse in Kombination mit Felgenbremse", "hydraulische Scheibenbremse mit Antiblockiersystem"],
-        "auswahlkriterien": ["Bremswirkung bei Fahrzeugmasse und Geschwindigkeit", "Wartungsaufwand", "Kosten", "Bediengewohnheiten der Zielgruppe"],
-        "auswirkungen": [
-          {"element_id": "E5", "beschreibung": "Felgen mit Bremsflanke oder Bremsscheibenaufnahmen an den Naben; Rücktrittbremse in der Hinterradnabe; beim Antiblockiersystem Sensorscheiben an den Rädern."},
-          {"element_id": "E27", "beschreibung": "Scheibenbremsen erfordern eine Bremssattelaufnahme an der Vorderradgabel."},
-          {"element_id": "E3", "beschreibung": "Bremsaufnahme am Hinterbau des Rahmens."},
-          {"element_id": "E9", "beschreibung": "Bei Rücktrittbremse wird über die Pedale gebremst."},
-          {"element_id": "E43", "beschreibung": "Beim Antiblockiersystem wird das Bremssystem an das Bussystem angebunden."},
-          {"element_id": "E19", "beschreibung": "Beim Antiblockiersystem versorgt die Traktionsbatterie zusätzlich die Bremsregelung."}
+        "alternativen": [
+          "Felgenbremse",
+          "Scheibenbremse, hydraulisch oder mechanisch",
+          "Rücktrittbremse in Kombination mit Felgenbremse",
+          "hydraulische Scheibenbremse mit Antiblockiersystem"
         ],
-        "absatz_ids": ["P14", "P15", "P16", "P32"]
+        "auswahlkriterien": [
+          "Bremswirkung bei Fahrzeugmasse und Geschwindigkeit",
+          "Wartungsaufwand",
+          "Kosten",
+          "Bediengewohnheiten der Zielgruppe"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E5",
+            "beschreibung": "Felgen mit Bremsflanke oder Bremsscheibenaufnahmen an den Naben; Rücktrittbremse in der Hinterradnabe; beim Antiblockiersystem Sensorscheiben an den Rädern."
+          },
+          {
+            "element_id": "E27",
+            "beschreibung": "Scheibenbremsen erfordern eine Bremssattelaufnahme an der Vorderradgabel."
+          },
+          {
+            "element_id": "E3",
+            "beschreibung": "Bremsaufnahme am Hinterbau des Rahmens."
+          },
+          {
+            "element_id": "E9",
+            "beschreibung": "Bei Rücktrittbremse wird über die Pedale gebremst."
+          },
+          {
+            "element_id": "E43",
+            "beschreibung": "Beim Antiblockiersystem wird das Bremssystem an das Bussystem angebunden."
+          },
+          {
+            "element_id": "E19",
+            "beschreibung": "Beim Antiblockiersystem versorgt die Traktionsbatterie zusätzlich die Bremsregelung."
+          }
+        ],
+        "absatz_ids": [
+          "P14",
+          "P15",
+          "P16",
+          "P32"
+        ]
       },
       {
         "id": "V7",
         "element_id": "E13",
         "bezeichnung": "Bauart der Gangschaltung",
-        "alternativen": ["Kettenschaltung", "Nabenschaltung"],
-        "auswahlkriterien": ["Übersetzungsbereich", "Wartung und Verschleiß", "Kombinierbarkeit mit der Motorposition"],
-        "auswirkungen": [
-          {"element_id": "E11", "beschreibung": "Ein Hinterradnabenmotor ist im Regelfall nur mit Kettenschaltung kombinierbar."},
-          {"element_id": "E14", "beschreibung": "Ein Zahnriemen anstelle der Kette ist nur mit Nabenschaltung oder einem Getriebe in der Antriebseinheit kombinierbar, nicht mit einer Kettenschaltung."},
-          {"element_id": "E3", "beschreibung": "Ausfallenden und Hinterbau richten sich nach Schaltung und Riemenführung; ein Zahnriemen erfordert einen im Hinterbau teilbaren Rahmen zum Einlegen des Riemens."}
+        "alternativen": [
+          "Kettenschaltung",
+          "Nabenschaltung"
         ],
-        "absatz_ids": ["P8", "P9"]
+        "auswahlkriterien": [
+          "Übersetzungsbereich",
+          "Wartung und Verschleiß",
+          "Kombinierbarkeit mit der Motorposition"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E11",
+            "beschreibung": "Ein Hinterradnabenmotor ist im Regelfall nur mit Kettenschaltung kombinierbar."
+          },
+          {
+            "element_id": "E14",
+            "beschreibung": "Ein Zahnriemen anstelle der Kette ist nur mit Nabenschaltung oder einem Getriebe in der Antriebseinheit kombinierbar, nicht mit einer Kettenschaltung."
+          },
+          {
+            "element_id": "E3",
+            "beschreibung": "Ausfallenden und Hinterbau richten sich nach Schaltung und Riemenführung; ein Zahnriemen erfordert einen im Hinterbau teilbaren Rahmen zum Einlegen des Riemens."
+          }
+        ],
+        "absatz_ids": [
+          "P8",
+          "P9"
+        ]
       },
       {
         "id": "V8",
         "element_id": "E4",
         "bezeichnung": "Federungsbauweise",
-        "alternativen": ["ungefedert", "Federgabel", "vollgefedert mit Hinterbaudämpfer"],
-        "auswahlkriterien": ["Einsatzgelände", "Fahrkomfort", "Masse und Kosten"],
-        "auswirkungen": [
-          {"element_id": "E3", "beschreibung": "Ein beweglicher Hinterbau ändert die Rahmenform."},
-          {"element_id": "E27", "beschreibung": "Federgabel statt starrer Vorderradgabel."},
-          {"element_id": "E18", "beschreibung": "Akkuanordnung muss den Bauraum des Dämpfers berücksichtigen."},
-          {"element_id": "E42", "beschreibung": "Leitungen müssen über bewegliche Gelenke geführt werden."}
+        "alternativen": [
+          "ungefedert",
+          "Federgabel",
+          "vollgefedert mit Hinterbaudämpfer"
         ],
-        "absatz_ids": ["P5"]
+        "auswahlkriterien": [
+          "Einsatzgelände",
+          "Fahrkomfort",
+          "Masse und Kosten"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E3",
+            "beschreibung": "Ein beweglicher Hinterbau ändert die Rahmenform."
+          },
+          {
+            "element_id": "E27",
+            "beschreibung": "Federgabel statt starrer Vorderradgabel."
+          },
+          {
+            "element_id": "E18",
+            "beschreibung": "Akkuanordnung muss den Bauraum des Dämpfers berücksichtigen."
+          },
+          {
+            "element_id": "E42",
+            "beschreibung": "Leitungen müssen über bewegliche Gelenke geführt werden."
+          }
+        ],
+        "absatz_ids": [
+          "P5"
+        ]
       }
     ],
     "klaerungsfragen": [
-      {"id": "K1", "frage": "Soll das E-Bike als Pedelec nach Fahrradrecht, als S-Pedelec mit Einstufung als Kleinkraftrad oder als E-Bike mit Gashebel ausgelegt werden?", "element_ids": ["E1", "E47"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Abschaltgrenzen, Motorleistung, Bedienung, Beleuchtungsumfang und die Zulassungsanforderungen ab.", "variante_ids": ["V2"]},
-      {"id": "K2", "frage": "Soll die Traktionsmaschine als Mittelmotor am Tretlager oder als Nabenmotor im Vorder- oder Hinterrad angeordnet werden?", "element_ids": ["E8", "E11"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Rahmenaufnahme, Gangschaltung, Sensorik und Lenkverhalten ab.", "variante_ids": ["V1"]},
-      {"id": "K3", "frage": "Soll die Unterstützung kraftproportional über einen Drehmomentsensor oder gleichmäßig über einen Bewegungssensor geregelt werden?", "element_ids": ["E41", "E44", "E48"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Regelstrategie, Sensoranordnung an der Tretlagerwelle, die Notwendigkeit eines Bremssensors und Kosten ab.", "variante_ids": ["V3"]},
-      {"id": "K4", "frage": "Wo soll die Traktionsbatterie untergebracht werden, und muss sie zum Laden entnehmbar sein?", "element_ids": ["E17", "E18"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Rahmenform, Gepäckträger, Akkuhalterung und Ladekonzept ab.", "variante_ids": ["V4"]},
-      {"id": "K5", "frage": "Soll die Beleuchtung aus der Traktionsbatterie, über eine Lichtmaschine oder über den Antriebsmotor versorgt werden?", "element_ids": ["E51", "E52", "E20"], "anlass": "schnittstelle", "relevanz": "Davon hängen Lichtreserve im Batteriemanagement, Lichtausgang der Motorsteuerung und die Vorderradnabe ab.", "variante_ids": ["V5"]},
-      {"id": "K6", "frage": "Welche Bremsbauart sollen Vorder- und Hinterrad erhalten, und wird eine Rücktrittbremse gewünscht?", "element_ids": ["E28", "E29"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Laufräder, Gabel- und Rahmenaufnahmen sowie die Bremsbetätigung ab.", "variante_ids": ["V6"]},
-      {"id": "K7", "frage": "Soll das E-Bike eine Kettenschaltung oder eine Nabenschaltung erhalten?", "element_ids": ["E8", "E13"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen die mögliche Motorposition, der Einsatz eines Zahnriemens und die Wartung ab.", "variante_ids": ["V7"]},
-      {"id": "K8", "frage": "Für welches Gelände ist das E-Bike vorgesehen, und braucht es eine Federgabel oder einen gefederten Hinterbau?", "element_ids": ["E2", "E4"], "anlass": "anforderung", "relevanz": "Davon hängen Rahmenform, Gabel, Akkuanordnung und Leitungsführung ab.", "variante_ids": ["V8"]},
-      {"id": "K9", "frage": "Soll der Lenker in Höhe und Neigung verstellbar sein, und welche Bedien- und Anzeigeelemente muss er tragen?", "element_ids": ["E24", "E25"], "anlass": "schnittstelle", "relevanz": "Davon hängen Vorbaubauart, Leitungsführung zum Lenker und die Anordnung von Bedieneinheit und Display ab."},
-      {"id": "K10", "frage": "Welche Informationen muss das Display während der Fahrt anzeigen, und soll ein Smartphone als Anzeige dienen können?", "element_ids": ["E34", "E37"], "anlass": "anforderung", "relevanz": "Davon hängen Displaygröße, Halterung und die Schnittstelle zur Telematikeinheit ab."},
-      {"id": "K11", "frage": "Welche Zuladung soll der Gepäckträger tragen, und soll ein Fahrradanhänger gezogen werden können?", "element_ids": ["E38", "E39", "E40"], "anlass": "anforderung", "relevanz": "Davon hängen Auslegung von Rahmen und Bremsen sowie die Anhängevorrichtung ab."},
-      {"id": "K12", "frage": "Soll das E-Bike vernetzt werden, etwa mit Smartphone-Anbindung, digitaler Wegfahrsperre und Ferndiagnose?", "element_ids": ["E47", "E50"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Telematikeinheit, Datenschnittstellen und die Diagnosefunktionen ab."},
-      {"id": "K13", "frage": "Gegen welche Witterung und welche Reinigungsverfahren müssen Leitungssatz und Steckverbinder geschützt sein?", "element_ids": ["E41", "E42"], "anlass": "betrieb", "relevanz": "Davon hängen Steckverbinderbauart, Leitungsführung und Abdichtung ab."},
-      {"id": "K14", "frage": "Welche Reichweite mit Unterstützung wird für das Einsatzprofil gefordert, und wie lange darf ein Ladevorgang dauern?", "element_ids": ["E17", "E19", "E22"], "anlass": "anforderung", "relevanz": "Davon hängen Energieinhalt, Masse und Bauraum der Traktionsbatterie sowie das Ladegerät ab."},
-      {"id": "K15", "frage": "Für welches zulässige Gesamtgewicht aus Fahrer, Fahrzeug und Gepäck soll das E-Bike ausgelegt werden?", "element_ids": ["E2", "E28"], "anlass": "anforderung", "relevanz": "Davon hängen Auslegung von Rahmen, Gabel, Laufrädern und Bremsbauart ab."}
+      {
+        "id": "K1",
+        "frage": "Soll das E-Bike als Pedelec nach Fahrradrecht, als S-Pedelec mit Einstufung als Kleinkraftrad oder als E-Bike mit Gashebel ausgelegt werden?",
+        "element_ids": [
+          "E1",
+          "E47"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Abschaltgrenzen, Motorleistung, Bedienung, Beleuchtungsumfang und die Zulassungsanforderungen ab.",
+        "variante_ids": [
+          "V2"
+        ]
+      },
+      {
+        "id": "K2",
+        "frage": "Soll die Traktionsmaschine als Mittelmotor am Tretlager oder als Nabenmotor im Vorder- oder Hinterrad angeordnet werden?",
+        "element_ids": [
+          "E8",
+          "E11"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Rahmenaufnahme, Gangschaltung, Sensorik und Lenkverhalten ab.",
+        "variante_ids": [
+          "V1"
+        ]
+      },
+      {
+        "id": "K3",
+        "frage": "Soll die Unterstützung kraftproportional über einen Drehmomentsensor oder gleichmäßig über einen Bewegungssensor geregelt werden?",
+        "element_ids": [
+          "E41",
+          "E44",
+          "E48"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Regelstrategie, Sensoranordnung an der Tretlagerwelle, die Notwendigkeit eines Bremssensors und Kosten ab.",
+        "variante_ids": [
+          "V3"
+        ]
+      },
+      {
+        "id": "K4",
+        "frage": "Wo soll die Traktionsbatterie untergebracht werden, und muss sie zum Laden entnehmbar sein?",
+        "element_ids": [
+          "E17",
+          "E18"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Rahmenform, Gepäckträger, Akkuhalterung und Ladekonzept ab.",
+        "variante_ids": [
+          "V4"
+        ]
+      },
+      {
+        "id": "K5",
+        "frage": "Soll die Beleuchtung aus der Traktionsbatterie, über eine Lichtmaschine oder über den Antriebsmotor versorgt werden?",
+        "element_ids": [
+          "E51",
+          "E52",
+          "E20"
+        ],
+        "anlass": "schnittstelle",
+        "relevanz": "Davon hängen Lichtreserve im Batteriemanagement, Lichtausgang der Motorsteuerung und die Vorderradnabe ab.",
+        "variante_ids": [
+          "V5"
+        ]
+      },
+      {
+        "id": "K6",
+        "frage": "Welche Bremsbauart sollen Vorder- und Hinterrad erhalten, und wird eine Rücktrittbremse gewünscht?",
+        "element_ids": [
+          "E28",
+          "E29"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Laufräder, Gabel- und Rahmenaufnahmen sowie die Bremsbetätigung ab.",
+        "variante_ids": [
+          "V6"
+        ]
+      },
+      {
+        "id": "K7",
+        "frage": "Soll das E-Bike eine Kettenschaltung oder eine Nabenschaltung erhalten?",
+        "element_ids": [
+          "E8",
+          "E13"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen die mögliche Motorposition, der Einsatz eines Zahnriemens und die Wartung ab.",
+        "variante_ids": [
+          "V7"
+        ]
+      },
+      {
+        "id": "K8",
+        "frage": "Für welches Gelände ist das E-Bike vorgesehen, und braucht es eine Federgabel oder einen gefederten Hinterbau?",
+        "element_ids": [
+          "E2",
+          "E4"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Rahmenform, Gabel, Akkuanordnung und Leitungsführung ab.",
+        "variante_ids": [
+          "V8"
+        ]
+      },
+      {
+        "id": "K9",
+        "frage": "Soll der Lenker in Höhe und Neigung verstellbar sein, und welche Bedien- und Anzeigeelemente muss er tragen?",
+        "element_ids": [
+          "E24",
+          "E25"
+        ],
+        "anlass": "schnittstelle",
+        "relevanz": "Davon hängen Vorbaubauart, Leitungsführung zum Lenker und die Anordnung von Bedieneinheit und Display ab."
+      },
+      {
+        "id": "K10",
+        "frage": "Welche Informationen muss das Display während der Fahrt anzeigen, und soll ein Smartphone als Anzeige dienen können?",
+        "element_ids": [
+          "E34",
+          "E37"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Displaygröße, Halterung und die Schnittstelle zur Telematikeinheit ab."
+      },
+      {
+        "id": "K11",
+        "frage": "Welche Zuladung soll der Gepäckträger tragen, und soll ein Fahrradanhänger gezogen werden können?",
+        "element_ids": [
+          "E38",
+          "E39",
+          "E40"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Auslegung von Rahmen und Bremsen sowie die Anhängevorrichtung ab."
+      },
+      {
+        "id": "K12",
+        "frage": "Soll das E-Bike vernetzt werden, etwa mit Smartphone-Anbindung, digitaler Wegfahrsperre und Ferndiagnose?",
+        "element_ids": [
+          "E47",
+          "E50"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Telematikeinheit, Datenschnittstellen und die Diagnosefunktionen ab."
+      },
+      {
+        "id": "K13",
+        "frage": "Gegen welche Witterung und welche Reinigungsverfahren müssen Leitungssatz und Steckverbinder geschützt sein?",
+        "element_ids": [
+          "E41",
+          "E42"
+        ],
+        "anlass": "betrieb",
+        "relevanz": "Davon hängen Steckverbinderbauart, Leitungsführung und Abdichtung ab."
+      },
+      {
+        "id": "K14",
+        "frage": "Welche Reichweite mit Unterstützung wird für das Einsatzprofil gefordert, und wie lange darf ein Ladevorgang dauern?",
+        "element_ids": [
+          "E17",
+          "E19",
+          "E22"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Energieinhalt, Masse und Bauraum der Traktionsbatterie sowie das Ladegerät ab."
+      },
+      {
+        "id": "K15",
+        "frage": "Für welches zulässige Gesamtgewicht aus Fahrer, Fahrzeug und Gepäck soll das E-Bike ausgelegt werden?",
+        "element_ids": [
+          "E2",
+          "E28"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Auslegung von Rahmen, Gabel, Laufrädern und Bremsbauart ab."
+      }
     ],
     "anforderungsthemen": [
-      {"id": "R1", "element_ids": ["E1"], "thema": "Rechtliche Fahrzeugklasse", "kenngroessen": ["Nenndauerleistung des Hilfsantriebs", "Abschaltgeschwindigkeit der Unterstützung", "Höchstgeschwindigkeit der Anfahr- und Schiebehilfe", "bauartbedingte Höchstgeschwindigkeit"], "regelwerke": [
-        {"bezeichnung": "StVG § 1 Abs. 3 (Deutschland, durch Muskelkraft fortbewegte Landfahrzeuge mit elektromotorischem Hilfsantrieb)", "quellen_id": "Q1", "fundstelle": "§ 1 Abs. 3"},
-        {"bezeichnung": "StVZO § 63a Abs. 2 (Deutschland, Fahrräder mit elektrischer Trethilfe)", "quellen_id": "Q2", "fundstelle": "§ 63a Abs. 2"},
-        {"bezeichnung": "Verordnung (EU) Nr. 168/2013 Art. 2 Abs. 2 Buchst. h (EU, Ausnahme von Fahrrädern mit Trethilfe aus der Typgenehmigung für Fahrzeuge der Klasse L)", "quellen_id": "Q6", "fundstelle": "Art. 2 Abs. 2 Buchst. h"},
-        {"bezeichnung": "Verordnung (EU) Nr. 168/2013 Anhang I, Klasse L1e mit Unterklassen L1e-A und L1e-B (EU, leichte zweirädrige Kraftfahrzeuge)", "quellen_id": "Q7", "fundstelle": "Anhang I, Klasse L1e"}
-      ]},
-      {"id": "R2", "element_ids": ["E2", "E3"], "thema": "Strukturfestigkeit", "kenngroessen": ["zulässiges Gesamtgewicht", "Festigkeit von Rahmen und Gabel", "Rahmensteifigkeit"]},
-      {"id": "R3", "element_ids": ["E8", "E11"], "thema": "Unterstützungsverhalten", "kenngroessen": ["Nenndauerleistung", "maximales Drehmoment", "Unterstützungsverhältnis", "Ansprechverhalten bei Tretbeginn"]},
-      {"id": "R4", "element_ids": ["E17", "E19"], "thema": "Reichweite und Batteriesicherheit", "kenngroessen": ["Energieinhalt der Traktionsbatterie", "Reichweite mit Unterstützung", "Ladedauer", "Zyklenfestigkeit", "Betriebstemperaturbereich", "Schutz gegen Kurzschluss und Überladung", "Verhalten bei Überhitzung und thermischem Durchgehen", "Schutz gegen Eindringen von Wasser in den Akku", "mechanische Festigkeit der Akkuhalterung"]},
-      {"id": "R5", "element_ids": ["E24", "E25"], "thema": "Lenkfestigkeit und Lenkergonomie", "kenngroessen": ["Festigkeit der Verbindung von Lenker und Vorbau", "Lenkerbreite", "Lenkerhöhe"]},
-      {"id": "R6", "element_ids": ["E28", "E29"], "thema": "Bremsleistung", "kenngroessen": ["Bremsverzögerung", "Bremsweg", "Dosierbarkeit der Bremswirkung"], "regelwerke": [
-        {"bezeichnung": "StVZO § 65 Abs. 1 und 2 (Deutschland, Fahrräder einschließlich Pedelecs)", "quellen_id": "Q3", "fundstelle": "§ 65 Abs. 1 Satz 2 und Abs. 2"}
-      ]},
-      {"id": "R7", "element_ids": ["E34", "E36", "E37"], "thema": "Bedienbarkeit am Fahrerplatz", "kenngroessen": ["Ablesbarkeit des Displays", "Erreichbarkeit der Bedienelemente", "Verstellbereich der Sattelstütze"]},
-      {"id": "R8", "element_ids": ["E38", "E39", "E40"], "thema": "Zuladung", "kenngroessen": ["Zuladung des Gepäckträgers", "Anhängelast", "Stützlast"]},
-      {"id": "R9", "element_ids": ["E41", "E42", "E43"], "thema": "Elektrische Robustheit", "kenngroessen": ["Schutz gegen Wasser und Staub", "elektromagnetische Verträglichkeit", "Schwingungsfestigkeit der Steckverbinder"]},
-      {"id": "R10", "element_ids": ["E47", "E48"], "thema": "Einhaltung der Unterstützungsgrenzen und Manipulationsschutz", "kenngroessen": ["Abschaltgeschwindigkeit", "Reaktionszeit bei Tretunterbrechung", "Erkennung von Manipulationen"], "regelwerke": [
-        {"bezeichnung": "StVG § 1 Abs. 3 (Deutschland, Unterbrechung der Unterstützung bei Geschwindigkeitsgrenze oder Tretende)", "quellen_id": "Q1", "fundstelle": "§ 1 Abs. 3 Satz 1 Nr. 1 und 2"}
-      ]},
-      {"id": "R11", "element_ids": ["E51", "E52", "E56"], "thema": "Beleuchtung und Signale", "kenngroessen": ["Lichtstärke und Lichtverteilung des Scheinwerfers", "Anbauhöhe der lichttechnischen Einrichtungen", "Leuchtdauer nach Abschaltung der Unterstützung"], "regelwerke": [
-        {"bezeichnung": "StVZO § 67 (Deutschland, lichttechnische Einrichtungen an Fahrrädern)", "quellen_id": "Q4", "fundstelle": "§ 67 Abs. 1, 3, 4, 5"},
-        {"bezeichnung": "StVZO § 67 Abs. 7 (Deutschland, Fahrräder mit elektrischer Tretunterstützung, in Verkehr gebracht ab 1. Januar 2019)", "quellen_id": "Q4", "fundstelle": "§ 67 Abs. 7"},
-        {"bezeichnung": "StVZO § 64a (Deutschland, Schallzeichen an Fahrrädern)", "quellen_id": "Q5", "fundstelle": "§ 64a Satz 1"}
-      ]}
+      {
+        "id": "R1",
+        "element_ids": [
+          "E1"
+        ],
+        "thema": "Rechtliche Fahrzeugklasse",
+        "kenngroessen": [
+          "Nenndauerleistung des Hilfsantriebs",
+          "Abschaltgeschwindigkeit der Unterstützung",
+          "Höchstgeschwindigkeit der Anfahr- und Schiebehilfe",
+          "bauartbedingte Höchstgeschwindigkeit"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "StVG § 1 Abs. 3 (Deutschland, durch Muskelkraft fortbewegte Landfahrzeuge mit elektromotorischem Hilfsantrieb)",
+            "quellen_id": "Q1",
+            "fundstelle": "§ 1 Abs. 3"
+          },
+          {
+            "bezeichnung": "StVZO § 63a Abs. 2 (Deutschland, Fahrräder mit elektrischer Trethilfe)",
+            "quellen_id": "Q2",
+            "fundstelle": "§ 63a Abs. 2"
+          },
+          {
+            "bezeichnung": "Verordnung (EU) Nr. 168/2013 Art. 2 Abs. 2 Buchst. h (EU, Ausnahme von Fahrrädern mit Trethilfe aus der Typgenehmigung für Fahrzeuge der Klasse L)",
+            "quellen_id": "Q6",
+            "fundstelle": "Art. 2 Abs. 2 Buchst. h"
+          },
+          {
+            "bezeichnung": "Verordnung (EU) Nr. 168/2013 Anhang I, Klasse L1e mit Unterklassen L1e-A und L1e-B (EU, leichte zweirädrige Kraftfahrzeuge)",
+            "quellen_id": "Q7",
+            "fundstelle": "Anhang I, Klasse L1e"
+          }
+        ]
+      },
+      {
+        "id": "R2",
+        "element_ids": [
+          "E2",
+          "E3"
+        ],
+        "thema": "Strukturfestigkeit",
+        "kenngroessen": [
+          "zulässiges Gesamtgewicht",
+          "Festigkeit von Rahmen und Gabel",
+          "Rahmensteifigkeit"
+        ]
+      },
+      {
+        "id": "R3",
+        "element_ids": [
+          "E8",
+          "E11"
+        ],
+        "thema": "Unterstützungsverhalten",
+        "kenngroessen": [
+          "Nenndauerleistung",
+          "maximales Drehmoment",
+          "Unterstützungsverhältnis",
+          "Ansprechverhalten bei Tretbeginn"
+        ]
+      },
+      {
+        "id": "R4",
+        "element_ids": [
+          "E17",
+          "E19"
+        ],
+        "thema": "Reichweite und Batteriesicherheit",
+        "kenngroessen": [
+          "Energieinhalt der Traktionsbatterie",
+          "Reichweite mit Unterstützung",
+          "Ladedauer",
+          "Zyklenfestigkeit",
+          "Betriebstemperaturbereich",
+          "Schutz gegen Kurzschluss und Überladung",
+          "Verhalten bei Überhitzung und thermischem Durchgehen",
+          "Schutz gegen Eindringen von Wasser in den Akku",
+          "mechanische Festigkeit der Akkuhalterung"
+        ]
+      },
+      {
+        "id": "R5",
+        "element_ids": [
+          "E24",
+          "E25"
+        ],
+        "thema": "Lenkfestigkeit und Lenkergonomie",
+        "kenngroessen": [
+          "Festigkeit der Verbindung von Lenker und Vorbau",
+          "Lenkerbreite",
+          "Lenkerhöhe"
+        ]
+      },
+      {
+        "id": "R6",
+        "element_ids": [
+          "E28",
+          "E29"
+        ],
+        "thema": "Bremsleistung",
+        "kenngroessen": [
+          "Bremsverzögerung",
+          "Bremsweg",
+          "Dosierbarkeit der Bremswirkung"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "StVZO § 65 Abs. 1 und 2 (Deutschland, Fahrräder einschließlich Pedelecs)",
+            "quellen_id": "Q3",
+            "fundstelle": "§ 65 Abs. 1 Satz 2 und Abs. 2"
+          }
+        ]
+      },
+      {
+        "id": "R7",
+        "element_ids": [
+          "E34",
+          "E36",
+          "E37"
+        ],
+        "thema": "Bedienbarkeit am Fahrerplatz",
+        "kenngroessen": [
+          "Ablesbarkeit des Displays",
+          "Erreichbarkeit der Bedienelemente",
+          "Verstellbereich der Sattelstütze"
+        ]
+      },
+      {
+        "id": "R8",
+        "element_ids": [
+          "E38",
+          "E39",
+          "E40"
+        ],
+        "thema": "Zuladung",
+        "kenngroessen": [
+          "Zuladung des Gepäckträgers",
+          "Anhängelast",
+          "Stützlast"
+        ]
+      },
+      {
+        "id": "R9",
+        "element_ids": [
+          "E41",
+          "E42",
+          "E43"
+        ],
+        "thema": "Elektrische Robustheit",
+        "kenngroessen": [
+          "Schutz gegen Wasser und Staub",
+          "elektromagnetische Verträglichkeit",
+          "Schwingungsfestigkeit der Steckverbinder"
+        ]
+      },
+      {
+        "id": "R10",
+        "element_ids": [
+          "E47",
+          "E48"
+        ],
+        "thema": "Einhaltung der Unterstützungsgrenzen und Manipulationsschutz",
+        "kenngroessen": [
+          "Abschaltgeschwindigkeit",
+          "Reaktionszeit bei Tretunterbrechung",
+          "Erkennung von Manipulationen"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "StVG § 1 Abs. 3 (Deutschland, Unterbrechung der Unterstützung bei Geschwindigkeitsgrenze oder Tretende)",
+            "quellen_id": "Q1",
+            "fundstelle": "§ 1 Abs. 3 Satz 1 Nr. 1 und 2"
+          }
+        ]
+      },
+      {
+        "id": "R11",
+        "element_ids": [
+          "E51",
+          "E52",
+          "E56"
+        ],
+        "thema": "Beleuchtung und Signale",
+        "kenngroessen": [
+          "Lichtstärke und Lichtverteilung des Scheinwerfers",
+          "Anbauhöhe der lichttechnischen Einrichtungen",
+          "Leuchtdauer nach Abschaltung der Unterstützung"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "StVZO § 67 (Deutschland, lichttechnische Einrichtungen an Fahrrädern)",
+            "quellen_id": "Q4",
+            "fundstelle": "§ 67 Abs. 1, 3, 4, 5"
+          },
+          {
+            "bezeichnung": "StVZO § 67 Abs. 7 (Deutschland, Fahrräder mit elektrischer Tretunterstützung, in Verkehr gebracht ab 1. Januar 2019)",
+            "quellen_id": "Q4",
+            "fundstelle": "§ 67 Abs. 7"
+          },
+          {
+            "bezeichnung": "StVZO § 64a (Deutschland, Schallzeichen an Fahrrädern)",
+            "quellen_id": "Q5",
+            "fundstelle": "§ 64a Satz 1"
+          }
+        ]
+      }
     ]
   },
   "offene_punkte": [
