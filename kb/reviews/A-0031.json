@@ -329,5 +329,28 @@
       "vorschlag": "K2 umformulieren: „Welche höchste Radsatzlast soll der Wagen haben, und welche Höchstgeschwindigkeit soll er leer und beladen fahren?“"
     }
   ],
-  "gesamturteil": "Der Artikel ist gut gegliedert, sauber belegt (alle 34 geprüften Beleg- und Regelwerkszuordnungen bestätigt) und als Modellierungsvorlage für Güterwagen weitgehend brauchbar. Revisionsbedürftig sind der falsche Lastsignalfluss zum Lastwechsel mit Sicherheit hoch, die fehlende Variante elektropneumatische Bremse und die zu Unrecht entfallene Kategorie Elektrik und Elektronik bei Wagen mit Energieversorgung oder Digitaler Automatischer Kupplung. Daneben fehlen einige Komponenten (Bremskupplung, Anlenkungen, Kessel) und Anforderungsthemen (Gefahrgut, Instandhaltung)."
+  "gesamturteil": "Der Artikel ist gut gegliedert, sauber belegt (alle 34 geprüften Beleg- und Regelwerkszuordnungen bestätigt) und als Modellierungsvorlage für Güterwagen weitgehend brauchbar. Revisionsbedürftig sind der falsche Lastsignalfluss zum Lastwechsel mit Sicherheit hoch, die fehlende Variante elektropneumatische Bremse und die zu Unrecht entfallene Kategorie Elektrik und Elektronik bei Wagen mit Energieversorgung oder Digitaler Automatischer Kupplung. Daneben fehlen einige Komponenten (Bremskupplung, Anlenkungen, Kessel) und Anforderungsthemen (Gefahrgut, Instandhaltung).",
+  "nachpruefung": [
+    {
+      "datum": "2026-11-24",
+      "ref": "R14",
+      "quellen_id": "Q7",
+      "ergebnis": "nicht_gedeckt",
+      "anmerkung": "Fundstellen vorhanden und inhaltlich teilweise gedeckt: S. 13 (2.3.4, Point 4.2.2.2) verlangt für Kesselwagen im Anwendungsbereich von RID 6.8.2.1.2, in den Lastfällen der TSI-Festigkeitsanforderung höchsten Betriebsdruck, Betriebstemperaturbereich des Mantels und Mindestwanddicke nach RID 6.8.2.1/6.8.2.6 zu berücksichtigen; S. 27 (2.3.23, Point 4.2.6.1.1) verweist für den Brandschutz bei Gefahrgut vollständig auf RID. Der Geltungsbereich ist aber falsch angegeben: Die Lastfälle sind die der TSI (Point 4.2.2.2), nicht RID-Lastfälle 'nach Abschnitt 6.8.2.1.2' (dieser Abschnitt bestimmt nur, welche Kesselwagen betroffen sind), und die Angabe 'Vertragsstaaten des COTIF' steht nicht in Q7. Die Kenngrößen Gefahrgutklasse, Tankcodierung und Prüfdruck kommen an den Fundstellen nicht vor."
+    },
+    {
+      "datum": "2026-11-24",
+      "ref": "R15",
+      "quellen_id": "Q7",
+      "ergebnis": "bestaetigt",
+      "anmerkung": "S. 28, Abschnitt 2.3.26 (Point 4.5.3, Maintenance description file): Ersatzteilliste (parts list), Instandhaltungsplan (maintenance plan) sowie Prüfungen insbesondere sicherheitsrelevanter Teile (checks and tests in particular of safety relevant parts) stehen dort wörtlich; Geltungsbereich TSI Güterwagen Punkt 4.5.3 zutreffend. Hinweis: Die Kenngrößen (Instandhaltungsintervall, Zugänglichkeit, Austauschbarkeit, Zustandsdiagnose) sind an der Fundstelle nicht ausdrücklich genannt, werden vom Beleg aber auch nicht behauptet."
+    },
+    {
+      "datum": "2026-11-24",
+      "ref": "R16",
+      "quellen_id": "Q7",
+      "ergebnis": "bestaetigt",
+      "anmerkung": "S. 33, Abschnitt 3.2 (Point 7.1.2, Mutual recognition of the first authorisation, Beginn S. 32): (d1) Störstrom über die Schiene mit harmonisierten Prüfmethoden und Fahrzeugimpedanz, (d2) Störfelder nahe dem Radsensor eines Achszählers bzw. durch Rückstrom über die Schiene; beides als Zusatzbedingungen der gegenseitigen Anerkennung, Geltungsbereich also zutreffend. Hinweis: Die Kenngröße 'Absicherung der Stromkreise' steht nicht in (d1)/(d2)."
+    }
+  ]
 }
