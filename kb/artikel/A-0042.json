@@ -4,7 +4,7 @@
   "artikeltyp": "blatt",
   "titel": "Schneemobil",
   "betrachtungsumfang": "Generische Referenzarchitektur des Schneemobils (Motorschlitten) als sitzend gefahrenes Kettenfahrzeug für ein bis zwei Personen mit Gleiskette am Heck und Lenkski vorn, für Freizeit-, Transport- und Arbeitseinsatz einschließlich Doppelraupen-Arbeitsfahrzeugen. Betrachtet werden Antriebe mit Zweitakt- oder Viertakt-Ottomotor (Energiespeicher Kraftstofftank) und elektrische Antriebe mit Traktionsbatterie. Nicht betrachtet werden Wasserstoff- und Hybridantriebe, propellergetriebene Schlitten, Snowbikes und Umbausätze für Motorräder, Pistenraupen und Schneekatzen sowie Raupenfahrzeuge, die durch Abbremsen einer Raupe gelenkt werden.",
-  "status": "in_arbeit",
+  "status": "geprueft",
   "quellenzugriff": "ja",
   "kindartikel_ids": [],
   "quellen": [
@@ -274,7 +274,7 @@
         },
         {
           "absatz_id": "P8",
-          "text": "Das Energieversorgungssystem gliedert sich in Kraftstoffversorgung, Bordnetzversorgung und beim Elektroantrieb den Hochvolt-Energiespeicher. Die Kraftstoffversorgung umfasst Kraftstofftank und Kraftstoffanlage mit Pumpe oder Vergaserzulauf und Leitungen. Beim Verbrennungsmotor besteht die Bordnetzversorgung aus dem vom Motor angetriebenen Generator und der Starterbatterie; bei Seilzugstart kann die Batterie entfallen. Der Hochvolt-Energiespeicher mit Traktionsbatterie und Ladeeinrichtung ersetzt die Kraftstoffversorgung und braucht den Bauraum, den sonst Kraftstofftank und Motor einnehmen. Beim Elektroantrieb speist die Traktionsbatterie die Traktionsmaschine über die Hochvolt-Verteilung und einen Wechselrichter; ein Gleichspannungswandler versorgt anstelle des Generators das Niedervolt-Bordnetz, ein Batteriemanagement überwacht die Zellen. Die Hochvolt-Verteilung trennt die Traktionsbatterie ab, wenn die Totmanneinrichtung auslöst.",
+          "text": "Das Energieversorgungssystem gliedert sich in Kraftstoffversorgung, Bordnetzversorgung und beim Elektroantrieb den Hochvolt-Energiespeicher. Die Kraftstoffversorgung umfasst Kraftstofftank und Kraftstoffanlage mit Pumpe oder Vergaserzulauf und Leitungen. Beim Verbrennungsmotor besteht die Bordnetzversorgung aus dem motorgetriebenen Generator und der Starterbatterie, die bei Seilzugstart entfallen kann. Der Hochvolt-Energiespeicher mit Traktionsbatterie und Ladeeinrichtung ersetzt die Kraftstoffversorgung und belegt den Bauraum von Kraftstofftank und Motor. Die Traktionsbatterie speist die Traktionsmaschine über Hochvolt-Verteilung und Wechselrichter; ein Gleichspannungswandler versorgt statt des Generators das Niedervolt-Bordnetz, ein Batteriemanagement überwacht die Zellen. Löst die Totmanneinrichtung aus, trennt die Hochvolt-Verteilung die Traktionsbatterie ab.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -714,7 +714,7 @@
       "absaetze": [
         {
           "absatz_id": "P28",
-          "text": "Kraftstofftank liefert über die Kraftstoffanlage Kraftstoff an den Verbrennungsmotor, die Traktionsbatterie Hochvoltstrom über Hochvolt-Verteilung und Wechselrichter an die Traktionsmaschine, der Gleichspannungswandler Niedervoltstrom an den Leitungssatz. Mechanische Leistung fließt von Verbrennungsmotor über Primärkupplung, Antriebsriemen, Sekundärkupplung, Kettenkasten und Antriebswelle zur Gleiskette, der Motor treibt den Generator. Lasten gehen über Laufwerkfederung und Skifederung in den Fahrzeugrahmen. Lenkbewegung läuft von Lenker über Lenksäule und Spurstangen zum Lenkski, Bremsdruck vom Bremshebel zum Bremssattel. Der Leitungssatz versorgt Verbraucher; Totmanneinrichtung, Notausschalter und Bedienelemente melden an Stromverteiler und Motorsteuergerät; Abgas strömt in die Abgasanlage, Kühlmittel zum Kühler.",
+          "text": "Kraftstoff: Kraftstofftank → Kraftstoffanlage → Verbrennungsmotor. Hochvoltstrom: Traktionsbatterie → Hochvolt-Verteilung → Wechselrichter → Traktionsmaschine. Niedervoltstrom: Gleichspannungswandler → Leitungssatz → Verbraucher. Mechanische Leistung: Verbrennungsmotor → Primärkupplung → Antriebsriemen → Sekundärkupplung → Kettenkasten → Antriebswelle → Gleiskette, Motor → Generator. Lasten: Laufwerkfederung und Skifederung → Fahrzeugrahmen. Lenkbewegung: Lenker → Lenksäule → Spurstangen → Lenkski. Bremsdruck: Bremshebel → Bremssattel. Signale: Totmanneinrichtung, Notausschalter, Bedienelemente → Stromverteiler, Motorsteuergerät. Abgas → Abgasanlage, Kühlmittel → Kühler.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
