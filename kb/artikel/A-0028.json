@@ -4,7 +4,7 @@
   "artikeltyp": "blatt",
   "titel": "Triebwagen",
   "betrachtungsumfang": "Generische Referenzarchitektur des Triebwagens für regelspurige Eisenbahnen: angetriebenes Schienenfahrzeug mit eigener Zuladung, als Einzelfahrzeug, Doppel- oder Gelenktriebwagen und als Triebzug, überwiegend im Personenverkehr. Betrachtete Antriebsarten mit Energiespeicher und Energiewandler: Elektrotriebwagen (Fahrleitungsanbindung ohne Speicher, Traktionsstromrichter und Traktionsmaschine), Dieseltriebwagen mit mechanischer, hydrodynamischer oder elektrischer Kraftübertragung (Kraftstofftank, Verbrennungsmotor, gegebenenfalls Generator), Hybrid-Dieseltriebwagen (zusätzlich Traktionsbatterie, Traktionsmaschine), Zweikrafttriebwagen (Fahrleitungsanbindung und Dieselaggregat mit Generator), batterieelektrischer Triebwagen (Traktionsbatterie, Traktionsmaschine) und Wasserstofftriebwagen (Wasserstoffspeicher, Brennstoffzellensystem, Pufferbatterie, Traktionsmaschine). Nicht betrachtet werden Straßenbahn-, Stadtbahn- und U-Bahn-Triebwagen, Zahnradtriebwagen, Dampftriebwagen, Wasserstoffverbrennungsmotoren, Stromschienenbetrieb, Superkondensatorspeicher sowie Lokomotiven und Triebköpfe ohne Zuladung.",
-  "status": "in_arbeit",
+  "status": "geprueft",
   "quellenzugriff": "ja",
   "kindartikel_ids": [],
   "quellen": [
@@ -76,7 +76,7 @@
       "absaetze": [
         {
           "absatz_id": "P1",
-          "text": "Triebwagen, auch Motorwagen genannt, sind angetriebene Schienenfahrzeuge, die selbst Fahrgäste oder Ladung befördern; Lokomotiven haben dafür, außer Gepäcklokomotiven, keinen Raum. Die EU-TSI „Fahrzeuge – Lokomotiven und Personenwagen“ (Verordnung (EU) Nr. 1302/2014) definiert den Triebwagen als unabhängig betreibbares Einzelfahrzeug mit einer Zuladung aus Fahrgästen, Gepäck, Post oder Fracht und den Triebzug als nicht trennbaren Zugverband, dessen Konfiguration nur in einer Werkstatt geändert werden kann. Die deutsche EBO teilt für regelspurige Eisenbahnen die Triebfahrzeuge in Lokomotiven, Triebwagen und Kleinlokomotiven ein.",
+          "text": "Triebwagen, auch Motorwagen genannt, sind angetriebene Schienenfahrzeuge, die selbst Fahrgäste oder Ladung befördern; Lokomotiven haben dafür, außer Gepäcklokomotiven, keinen Raum. Die TSI LOC&PAS (Verordnung (EU) Nr. 1302/2014) definiert in der Ursprungsfassung den Triebwagen als unabhängig betreibbares Einzelfahrzeug mit einer Zuladung aus Fahrgästen, Gepäck, Post oder Fracht und den Triebzug als nicht trennbaren Zugverband, dessen Konfiguration nur in einer Werkstatt geändert werden kann. Die deutsche EBO teilt für regelspurige Eisenbahnen die Triebfahrzeuge in Lokomotiven, Triebwagen und Kleinlokomotiven ein.",
           "begruendung": "belegt",
           "belege": [
             {
@@ -96,7 +96,7 @@
         },
         {
           "absatz_id": "P2",
-          "text": "Zum Gesamtsystem Triebwagen gehört alles, was das Fahrzeug zum eigenen Fortbewegen und zum Aufnehmen der Zuladung braucht. Fahrweg, Fahrleitung, streckenseitige Zugsicherung sowie Tank-, Lade- und Entsorgungsanlagen liegen außerhalb der Systemgrenze und werden über mechanische, elektrische, pneumatische, stoffliche, thermische und informationstechnische Schnittstellen angebunden. Die Dekomposition zerlegt den Triebwagen in Hauptsysteme, diese in Subsysteme und Komponenten.",
+          "text": "Zum Gesamtsystem gehört alles, was der Triebwagen zum Fortbewegen und zum Aufnehmen der Zuladung braucht. Fahrweg, Fahrleitung, streckenseitige Zugsicherung sowie Tank-, Lade- und Entsorgungsanlagen liegen außerhalb und sind über mechanische, elektrische, pneumatische, stoffliche, thermische und informationstechnische Schnittstellen angebunden. Die Dekomposition gliedert Hauptsysteme in Subsysteme und Komponenten.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -184,7 +184,7 @@
         },
         {
           "absatz_id": "P7",
-          "text": "Das Antriebssystem gliedert sich in den elektrischen Fahrantrieb mit Traktionsstromrichter, Traktionsmaschine und Radsatzgetriebe und den Dieselantrieb mit Verbrennungsmotor, Getriebe, Gelenkwelle und Abgasnachbehandlung. Der Traktionsstromrichter formt die zugeführte elektrische Energie in eine drehzahlvariable Speisung der Traktionsmaschine um, deren Drehmoment das Radsatzgetriebe auf den Radsatz überträgt; im dieselhydraulischen Pfad läuft das Moment über Getriebe und Gelenkwelle zum Radsatzgetriebe. Beim elektrischen Bremsen arbeitet die Traktionsmaschine als Generator und speist zurück.",
+          "text": "Das Antriebssystem gliedert sich in den elektrischen Fahrantrieb mit Traktionsstromrichter, Traktionsmaschine und Radsatzgetriebe und den Dieselantrieb mit Verbrennungsmotor, Getriebe, Gelenkwelle und Abgasnachbehandlung. Der Traktionsstromrichter speist die Traktionsmaschine drehzahlvariabel, deren Drehmoment das Radsatzgetriebe auf den Radsatz überträgt; im dieselhydraulischen Pfad läuft das Moment über Getriebe und Gelenkwelle zum Radsatzgetriebe. Beim elektrischen Bremsen arbeitet die Traktionsmaschine als Generator und speist in Fahrleitung oder Traktionsbatterie zurück, sonst setzt der Bremswiderstand die Energie in Wärme um.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -192,7 +192,8 @@
               "P6: Fahrmotoren mit Frequenzumrichter, Strömungsgetriebe, dieselelektrischer Antrieb.",
               "Q2, Abschnitte 4.2.4.7 und 4.2.8.2.3: dynamische Bremse mit dem Antriebssystem verbunden, Nutzbremse mit Rückführung der Energie in die Oberleitung.",
               "Funktionsprinzip: Ein drehzahlvariabel betriebener Elektromotor braucht einen Stromrichter; die Motordrehzahl muss auf die Radsatzdrehzahl übersetzt werden.",
-              "Gesetzliche Abgasvorgaben für Verbrennungsmotoren (Q2, Abschnitt 4.2.8.3) erfordern eine Abgasnachbehandlung."
+              "Gesetzliche Abgasvorgaben für Verbrennungsmotoren (Q2, Abschnitt 4.2.8.3) erfordern eine Abgasnachbehandlung.",
+              "Funktionsprinzip: Elektrische Bremsenergie, die weder Fahrleitung noch Traktionsbatterie aufnehmen, muss im Fahrzeug in Wärme umgesetzt werden; Q2, Abschnitt 4.2.8.2.3 regelt die Nutzbremse nur für zurückspeisende Einheiten."
             ],
             "schluss": "Elektrischer Fahrantrieb und Dieselantrieb sind die beiden Subsysteme mit dem beschriebenen Leistungsfluss."
           },
@@ -225,7 +226,7 @@
       "absaetze": [
         {
           "absatz_id": "P9",
-          "text": "Der Elektrotriebzug hat keinen Energiespeicher und bezieht die Traktionsenergie über einen Stromabnehmer aus der Oberleitung; der Dieseltriebzug führt Dieselkraftstoff mit. Der batterieelektrische Triebzug lädt seinen Batteriespeicher während der Fahrt oder im Stillstand unter Oberleitung, auch an Nachladepunkten nur im Stillstand oder an Nachladeabschnitten, und überbrückt so nicht elektrifizierte Abschnitte. Im Wasserstofftriebzug erzeugt eine Brennstoffzelle Strom aus Wasserstoff aus Drucktanks und Luftsauerstoff; eine Batterie speichert ihn zwischen und ermöglicht Rekuperation und Spitzenleistung. Auch die Hilfsbetriebe werden aus der Brennstoffzelle versorgt.",
+          "text": "Der Elektrotriebzug hat keinen Energiespeicher und bezieht die Traktionsenergie über einen Stromabnehmer aus der Oberleitung; der Dieseltriebzug führt Dieselkraftstoff mit. Der batterieelektrische Triebzug lädt seinen Batteriespeicher unter Oberleitung in Fahrt oder Stillstand, an Nachladepunkten im Stillstand oder an Nachladeabschnitten, und überbrückt so nicht elektrifizierte Abschnitte. Im Wasserstofftriebzug erzeugt eine Brennstoffzelle Strom aus Wasserstoff aus Drucktanks und Luftsauerstoff; eine Batterie speichert ihn zwischen und ermöglicht Rekuperation und Spitzenleistung. Auch die Hilfsbetriebe werden aus der Brennstoffzelle versorgt.",
           "begruendung": "belegt",
           "belege": [
             {
@@ -257,7 +258,7 @@
         },
         {
           "absatz_id": "P11",
-          "text": "Das Energieversorgungssystem umfasst je nach Antriebsart die Fahrleitungsanbindung mit Stromabnehmer, Hauptleistungsschalter, Haupttransformator und Energiemesssystem, die Kraftstoffanlage mit Kraftstofftank, das Wasserstoffsystem mit Wasserstoffspeicher und Brennstoffzellensystem, den Generator, die Traktionsbatterie, den Hilfsbetriebeumrichter und die Bordnetzbatterie. Den Haupttransformator braucht nur der Betrieb an Wechselstrom; die Bordnetzbatterie hält bei Ausfall der Hauptenergieversorgung Steuerung, Notbeleuchtung und Notlüftung aufrecht.",
+          "text": "Das Energieversorgungssystem umfasst je nach Antriebsart die Fahrleitungsanbindung mit Stromabnehmer, Hauptleistungsschalter, Haupttransformator und Energiemesssystem, die Kraftstoffanlage mit Kraftstofftank, das Wasserstoffsystem mit Wasserstoffspeicher und Brennstoffzellensystem, den Generator, die Traktionsbatterie, den Hilfsbetriebeumrichter und die Bordnetzbatterie. Den Haupttransformator braucht nur der Betrieb an Wechselstrom; die Bordnetzbatterie hält bei Ausfall der Hauptenergieversorgung Steuerung, Notbeleuchtung und Notlüftung aufrecht. Ladeeinrichtung und Betankungsanschluss für Kraftstoff oder Wasserstoff verbinden mit Lade- und Tankanlagen.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -265,7 +266,9 @@
               "P9 und P10: Energiequellen und Komponenten der Fahrleitungsanbindung.",
               "P6: Generator beim dieselelektrischen Antrieb.",
               "Q2, Abschnitte 4.2.5.8 Nr. 2 und 4.2.10.4.1: batteriebetriebene Zwangslüftung und Notbeleuchtung nach Ausfall der Hauptenergieversorgung.",
-              "Funktionsprinzip: Ein Transformator arbeitet nur mit Wechselspannung."
+              "Funktionsprinzip: Ein Transformator arbeitet nur mit Wechselspannung.",
+              "P2: Tank- und Ladeanlagen liegen außerhalb der Systemgrenze.",
+              "Q2, Abschnitt 4.2.11.7: Anforderungen an die Kraftstoffbetankung."
             ],
             "schluss": "Das Energieversorgungssystem bündelt alle Energiequellen und die Bordnetzbatterie als Notversorgung."
           },
@@ -297,7 +300,7 @@
         },
         {
           "absatz_id": "P13",
-          "text": "Das Bremssystem gliedert sich in die Hauptbremse mit Bremssteuerung, Bremszylinder, Radbremse und Gleitschutzsystem sowie Feststellbremse, Magnetschienenbremse und Fahrgastnotbremse. Die Bremssteuerung nimmt Anforderungen von Führertisch, Zugbeeinflussung, Sicherheitsfahrschaltung und Fahrgastnotbremse auf und verteilt die Bremskraft auf die Traktionsmaschine und die Reibungsbremse, deren Bremszylinder aus der Druckluftanlage gespeist werden. Ob die Ansteuerung mit Fahrzeugen anderer Herkunft zusammenarbeiten muss oder in festen Verbänden frei gewählt werden kann, hängt von der Zugbildung ab.",
+          "text": "Das Bremssystem gliedert sich in die Hauptbremse mit Bremssteuerung, Bremszylinder, Radbremse und Gleitschutzsystem sowie Feststellbremse, Magnetschienenbremse und Fahrgastnotbremse. Die Bremssteuerung nimmt Anforderungen von Führertisch, Zugbeeinflussung, Sicherheitsfahrschaltung und Fahrgastnotbremse auf und verteilt die Bremskraft auf die Traktionsmaschine und die Reibungsbremse, deren Bremszylinder aus der Druckluftanlage gespeist werden. Im freizügigen Betrieb muss die Bremse mit fremden Fahrzeugen zusammenarbeiten; in festen Verbänden ist die Ansteuerung frei wählbar, wirkt aber durchgehend und selbsttätig.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -305,9 +308,11 @@
               "P12: Hauptbremse, Feststellbremse, Notbremsgriffe, dynamische Bremse, Magnetschienenbremse, Gleitschutz.",
               "P21: Zugbeeinflussung und Sicherheitsfahrschaltung bringen den Zug selbsttätig zum Halten.",
               "Q5, Abschnitt „Typische Nebenaggregate“: Luftpresser zur Drucklufterzeugung unter anderem für die Bremsen.",
-              "Q2, Abschnitt 4.2.4.3: Bremskompatibilität nur für freizügigen Betrieb gefordert, keine Anforderungen an die Bremsart nicht trennbarer oder vordefinierter Zugverbände."
+              "Q2, Abschnitt 4.2.4.3: Bremskompatibilität nur für freizügigen Betrieb gefordert, keine Anforderungen an die Bremsart nicht trennbarer oder vordefinierter Zugverbände.",
+              "Q1, § 23 Abs. 1 Satz 2: Die durchgehende selbsttätige Bremse muss mit den Bremsbauarten der Bahnen zusammenarbeiten, auf deren Strecken die Fahrzeuge übergehen (Deutschland).",
+              "Q2, Abschnitt 4.2.4.2.1 Nr. 3 und 4: durchgehendes Signal über eine Steuerleitung und selbsttätige Aktivierung bei Unterbrechung."
             ],
-            "schluss": "Die Bremssteuerung koordiniert alle Bremsanforderungen und Bremsarten; die Art der Ansteuerung folgt aus der Zugbildung."
+            "schluss": "Die Bremssteuerung koordiniert alle Bremsanforderungen und Bremsarten; die Kompatibilität der Ansteuerung folgt aus Zugbildung und Einsatzgebiet, durchgehende und selbsttätige Wirkung gelten immer."
           },
           "sicherheit": "mittel",
           "herangezogene_artikel_ids": []
@@ -333,17 +338,17 @@
         },
         {
           "absatz_id": "P15",
-          "text": "Der Führerstand umfasst den Führertisch mit Bedienelementen und Anzeigeelementen, den Führersitz und die Stirnscheibe; nach der Zuordnungsliste führt er auch die im Fahrgastbereich eingebauten Fahrgastsitze. Fahr- und Bremsbefehle gehen vom Führertisch über den Fahrzeugbus an das Fahrzeugmanagement, Zustands- und Warnmeldungen laufen zurück. Ein Triebwagen, der ohne Steuerwagen im Wendebetrieb fährt, braucht an beiden Enden einen Führerstand.",
+          "text": "Der Führerstand umfasst den Führertisch mit Bedienelementen und Anzeigeelementen, den Führersitz und die Stirnscheibe; dem Bedienraum sind auch die Fahrgastsitze zugeordnet. Fahr- und Bremsbefehle gehen vom Führertisch über den Fahrzeugbus an das Fahrzeugmanagement, Zustands- und Warnmeldungen laufen zurück. Ein Triebwagen, der ohne Steuerwagen im Wendebetrieb fährt, braucht an beiden Enden einen Führerstand.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "P14: Führersitz, Führertisch, Stirnscheibe, Bedienelemente und Anzeigen.",
-              "P16: Sitze als Parameter der Fahrgasteinheiten; Zuordnungsliste: Sitze gehören zur Kategorie bedienraum.",
+              "P16: Sitze als Parameter der Fahrgasteinheiten; Zuordnungsliste des Glossars: Sitze gehören zum Hauptsystem der Kategorie bedienraum.",
               "Q4, Abschnitt „Definitionen“: Triebwagen fahren allein oder mit Steuer-, Mittel- und Beiwagen; Abschnitt „Entwicklung in Deutschland“: Einzelfahrzeuge mit beiderseitigen Führerständen.",
               "Funktionsprinzip: Ein Fahrtrichtungswechsel ohne Umsetzen braucht am jeweils führenden Ende einen Führerstand."
             ],
-            "schluss": "Der Führerstand ist die Bedienschnittstelle und nimmt als Hauptsystem des Bedienraums auch die Fahrgastsitze auf; seine Anzahl folgt aus der Zugbildung."
+            "schluss": "Der Führerstand ist die Bedienschnittstelle und nimmt nach der Zuordnungsliste auch die Fahrgastsitze auf; seine Anzahl folgt aus der Zugbildung."
           },
           "sicherheit": "hoch",
           "herangezogene_artikel_ids": []
@@ -357,7 +362,7 @@
       "absaetze": [
         {
           "absatz_id": "P16",
-          "text": "Die Zuladung eines Triebwagens sind Fahrgäste, Gepäck, Post oder Fracht; neben Triebwagen des Personenverkehrs gibt es Gütertriebwagen, Arbeitstriebwagen sowie Gepäck- und Posttriebwagen. Für Fahrgasteinheiten nennt die TSI als Parameter der TSI PRM unter anderem Sitze, Rollstuhlplätze, Türen, Toiletten, Kundeninformationen und Einstiegsstufen; sanitäre Systeme dürfen keine gesundheits- oder umweltschädlichen Stoffe freisetzen. Die EBO überträgt die Ausrüstung der Personenwagen, soweit erforderlich, auf Triebwagen und verlangt Ausstiegsmöglichkeiten für Notfälle. In Doppelstocktriebzügen geht der Einbau der Antriebsaggregate bei der üblichen Fahrzeugbegrenzungslinie zulasten von Sitzplätzen.",
+          "text": "Zuladung sind Fahrgäste, Gepäck, Post oder Fracht; neben Personentriebwagen gibt es Güter-, Arbeits-, Gepäck- und Posttriebwagen. Für Fahrgasteinheiten nennt die TSI als Parameter der TSI PRM unter anderem Sitze, Rollstuhlplätze, Türen, Toiletten, Kundeninformationen und Einstiegsstufen; sanitäre Systeme dürfen keine gesundheits- oder umweltschädlichen Stoffe freisetzen. Die EBO überträgt die Ausrüstung der Personenwagen, soweit erforderlich, auf Triebwagen und verlangt Ausstiegsmöglichkeiten für Notfälle. In Doppelstocktriebzügen geht der Einbau der Antriebsaggregate bei der üblichen Fahrzeugbegrenzungslinie zulasten von Sitzplätzen.",
           "begruendung": "belegt",
           "belege": [
             {
@@ -377,7 +382,7 @@
         },
         {
           "absatz_id": "P17",
-          "text": "Aufbau und Ladung umfasst den Fahrgastbereich mit dem Mehrzweckbereich, das Sanitärsystem und gegebenenfalls ein Gepäckabteil; die dort eingebauten Fahrgastsitze sind dem Führerstand zugeordnet und bestimmen mit dem Mehrzweckbereich die Kapazität. Da die Antriebsausrüstung unterflur und auf dem Dach sitzt, bleibt fast die ganze Fahrzeuglänge für Zuladung; die Wahl zwischen ein- und doppelstöckiger Bauweise verschiebt Antriebs-, Energie- und Klimageräte.",
+          "text": "Aufbau und Ladung umfasst den Fahrgastbereich mit Mehrzweckbereich, dessen Fläche die Kapazität bestimmt, das Sanitärsystem und gegebenenfalls ein Gepäckabteil. Bei Hochflurbauweise sitzt die Antriebsausrüstung unterflur und auf dem Dach, sodass fast die ganze Fahrzeuglänge für Zuladung bleibt; Niederflurbauweise für stufenlosen Einstieg verlagert sie auf das Dach oder in ein Antriebsmodul zwischen den Wagenkästen. Die Stockwerksbauweise verschiebt Antriebs-, Energie- und Klimageräte.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -385,9 +390,11 @@
               "P16: Zuladungsarten, Sitze, Rollstuhlplätze, Toiletten, Doppelstockbauweise.",
               "P3 und P6: Ausrüstung unter- oder oberhalb des Wagenkastens, Fahrmotoren unterflur.",
               "P25: Klimaanlagen auf dem Dach.",
-              "P15: Fahrgastsitze unter dem Führerstand als Hauptsystem des Bedienraums."
+              "Q4, Abschnitt „Definitionen“: mittig eingereihte angetriebene Wagen ohne Führerstände und Sitzplätze heißen Maschinenwagen oder Antriebsmodul; Gelenktriebwagen auch aufgesattelt.",
+              "Q2, Abschnitt 4.2.5: Änderung der Fußbodenhöhe und Einstiegsstufen als Parameter der Barrierefreiheit.",
+              "Funktionsprinzip: Ein durchgehend niedriger Fußboden lässt unter dem Wagenkasten keinen Platz für Großgeräte."
             ],
-            "schluss": "Der Fahrgast- und Ladebereich nutzt die Fahrzeuglänge; die Stockwerksbauweise beeinflusst die Lage der Ausrüstung."
+            "schluss": "Der Fahrgast- und Ladebereich nutzt die Fahrzeuglänge; Fußbodenhöhe und Stockwerksbauweise bestimmen die Lage der Ausrüstung."
           },
           "sicherheit": "mittel",
           "herangezogene_artikel_ids": []
@@ -401,14 +408,15 @@
       "absaetze": [
         {
           "absatz_id": "P18",
-          "text": "Elektrik und Elektronik umfasst die Energieverteilung mit Drehstrom-Bordnetz, Niedervolt-Bordnetz und Leitungssatz sowie den Fahrzeugbus. Das Drehstrom-Bordnetz aus dem Hilfsbetriebeumrichter versorgt Kompressor, Lüfter und Klimaanlage, das Niedervolt-Bordnetz mit der Bordnetzbatterie Steuergeräte, Türsteuerung, Beleuchtung und Zugsicherung. Der Fahrzeugbus verbindet die Steuergeräte aller Wagen und über die Endkupplung gekuppelte Einheiten.",
+          "text": "Elektrik und Elektronik umfasst die Energieverteilung mit Drehstrom-Bordnetz, Niedervolt-Bordnetz und Leitungssatz sowie den Fahrzeugbus. Das Drehstrom-Bordnetz aus dem Hilfsbetriebeumrichter versorgt Kompressor, Lüfter und Klimaanlage, das Niedervolt-Bordnetz mit der Bordnetzbatterie Steuergeräte, Türsteuerung, Beleuchtung und Zugsicherung. Ein Batterieladegerät am Hilfsbetriebeumrichter lädt die Bordnetzbatterie. Der Fahrzeugbus verbindet die Steuergeräte aller Wagen und über die Endkupplung gekuppelte Einheiten.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "Q5, Einleitung und Abschnitt „Typische Nebenaggregate“: Drehstrom-Bordnetz aus dem Hilfsbetriebeumrichter für Luftpresser, Lüfter und Klimaanlage.",
               "P14: Mehrfachtraktion von einem einzigen Führerraum aus erfordert eine durchgehende Steuerverbindung.",
-              "Fachwissen: Steuergeräte, Türsteuerung und Zugsicherung werden aus einem batteriegestützten Niederspannungsnetz versorgt."
+              "Fachwissen: Steuergeräte, Türsteuerung und Zugsicherung werden aus einem batteriegestützten Niederspannungsnetz versorgt.",
+              "Q5, Abschnitt „Typische Nebenaggregate“: Batterieladegerät am Hilfsbetriebeumrichter, bei einigen Wechselstromfahrzeugen an einer gesonderten Transformatoranzapfung."
             ],
             "schluss": "Die Energieverteilung und der Fahrzeugbus verbinden alle Wagen und gekuppelte Einheiten elektrisch."
           },
@@ -479,7 +487,7 @@
         },
         {
           "absatz_id": "P22",
-          "text": "Fahrerassistenz und Sicherheit gliedert sich in die Zugsicherung mit Zugbeeinflussung und Sicherheitsfahrschaltung und den Brandschutz mit Brandmeldeeinrichtung und Feuerlöscher. Zugbeeinflussung und Sicherheitsfahrschaltung greifen über die Bremssteuerung ein, die Brandmeldeeinrichtung meldet an das Fahrzeugmanagement, das automatische Maßnahmen wie das Abschalten der Frischluftzufuhr auslöst.",
+          "text": "Fahrerassistenz und Sicherheit gliedert sich in die Zugsicherung mit Zugbeeinflussung und Sicherheitsfahrschaltung und den Brandschutz mit Brandmeldeeinrichtung und Feuerlöscher. Zugbeeinflussung und Sicherheitsfahrschaltung greifen über die Bremssteuerung ein, die Brandmeldeeinrichtung meldet an das Fahrzeugmanagement, das etwa die Frischluftzufuhr abschaltet.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -518,14 +526,16 @@
         },
         {
           "absatz_id": "P24",
-          "text": "Beleuchtung und Sicht umfasst die Außenleuchten mit Frontscheinwerfer, Spitzenlichter und Schlusslichter, das Signalhorn, die Notbeleuchtung und den Scheibenwischer der Stirnscheibe. Bei Führerständen an beiden Enden trägt jedes Ende Außenleuchten, deren Signalbild mit der Fahrtrichtung wechselt.",
+          "text": "Beleuchtung und Sicht umfasst die Außenleuchten mit Frontscheinwerfer, Spitzenlichter und Schlusslichter, das Signalhorn, die Notbeleuchtung, die Innenbeleuchtung, den Scheibenwischer der Stirnscheibe sowie Kamera-Monitor-System oder Außenspiegel für die Sicht nach hinten beim Fahrgastwechsel. Bei Führerständen an beiden Enden trägt jedes Ende Außenleuchten, deren Signalbild mit der Fahrtrichtung wechselt.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "P23: Frontscheinwerfer, Spitzenlichter, Schlusslichter, Signalhorn, Notbeleuchtung.",
               "P15: Führerstände an beiden Enden im Wendebetrieb.",
-              "Fachwissen: Die Stirnscheibe wird im Betrieb durch einen Scheibenwischer frei gehalten."
+              "Fachwissen: Die Stirnscheibe wird im Betrieb durch einen Scheibenwischer frei gehalten.",
+              "Q2, Abschnitt 4.2.9.1.3.2: Sicht nach hinten auf beiden Seiten bei stehendem Fahrzeug über Seitenfenster, Außenspiegel oder Kamerasystem.",
+              "Q2, Abschnitt 4.2.9.1.8: Innenbeleuchtung des Führerraums; Abschnitt 4.2.5: Beleuchtung als Parameter der Fahrgasteinheiten."
             ],
             "schluss": "Die Außenleuchten sind an jedem möglichen Zugende vorhanden und fahrtrichtungsabhängig geschaltet."
           },
@@ -607,7 +617,7 @@
       "absaetze": [
         {
           "absatz_id": "P28",
-          "text": "Auf oberster Ebene besteht der Triebwagen aus Fahrzeugstruktur und Fahrwerk, Antriebssystem, Energieversorgungssystem, Bremssystem, Führerstand, Aufbau und Ladung, Elektrik und Elektronik, Fahrzeugsteuerung und Information, Fahrerassistenz und Sicherheit, Beleuchtung und Sicht, Thermomanagement sowie Neben- und Versorgungssystemen. Ein Lenksystem entfällt, weil die Radsätze das Fahrzeug im Gleis führen. Antriebsart, Laufwerkskonzept, Kupplung, Zugbildung und Stockwerksbauweise verändern mehrere Hauptsysteme zugleich.",
+          "text": "Auf oberster Ebene besteht der Triebwagen aus Fahrzeugstruktur und Fahrwerk, Antriebssystem, Energieversorgungssystem, Bremssystem, Führerstand, Aufbau und Ladung, Elektrik und Elektronik, Fahrzeugsteuerung und Information, Fahrerassistenz und Sicherheit, Beleuchtung und Sicht, Thermomanagement sowie Neben- und Versorgungssystemen. Ein Lenksystem entfällt, da die Radsätze im Gleis führen. Antriebsart, Laufwerkskonzept, Kupplung, Zugbildung und Stockwerksbauweise verändern mehrere Hauptsysteme zugleich.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -629,7 +639,7 @@
       "absaetze": [
         {
           "absatz_id": "P29",
-          "text": "Der SysML-Block `Triebwagen` enthält die Hauptsysteme als Teile, zerlegt etwa entlang `Fahrzeugstruktur und Fahrwerk → Laufwerk → Drehgestell → Radsatz`, `Antriebssystem → Elektrischer Fahrantrieb → Traktionsmaschine`, `Energieversorgungssystem → Fahrleitungsanbindung → Stromabnehmer` und `Neben- und Versorgungssysteme → Druckluftanlage → Druckluftbehälter`. Ports bilden Rad-Schiene-Kontakt, Stromabnehmer, Endkupplung, Tank- und Ladeanschluss, Fahrzeugbus und Zugbeeinflussung ab, Konnektoren die Flüsse. Blockdefinitionsdiagramme zeigen die Dekomposition, interne Blockdiagramme die Flüsse, Zustandsdiagramme die Tür-Traktionssperre; die Antriebsarten werden als Spezialisierungen eines gemeinsamen Grundblocks modelliert.",
+          "text": "Der SysML-Block `Triebwagen` enthält die Hauptsysteme als Teile, zerlegt etwa entlang `Fahrzeugstruktur und Fahrwerk → Laufwerk → Drehgestell → Radsatz`, `Antriebssystem → Elektrischer Fahrantrieb → Traktionsmaschine`, `Energieversorgungssystem → Fahrleitungsanbindung → Stromabnehmer` und `Neben- und Versorgungssysteme → Druckluftanlage → Druckluftbehälter`. Ports bilden Rad-Schiene-Kontakt, Stromabnehmer, Endkupplung, Tank- und Ladeanschluss, Fahrzeugbus und Zugbeeinflussung ab, Konnektoren die Flüsse. Blockdefinitionsdiagramme zeigen die Dekomposition, interne Blockdiagramme die Flüsse, Zustandsdiagramme die Tür-Traktionssperre; Antriebsarten sind Spezialisierungen eines Grundblocks.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -653,7 +663,7 @@
       "absaetze": [
         {
           "absatz_id": "P30",
-          "text": "Fahrleitung, Traktionsbatterie, Brennstoffzellensystem oder Generator speisen den Traktionsstromrichter, die Kraftstoffanlage den Verbrennungsmotor. Mechanische Leistung fließt von Traktionsmaschine oder Getriebe über das Radsatzgetriebe zum Radsatz, beim Bremsen elektrisch zurück. Der Hilfsbetriebeumrichter speist das Drehstrom-Bordnetz für Kompressor und Klimaanlage, die Druckluftanlage versorgt Bremszylinder und Sandstreuanlage. Der Fahrzeugbus überträgt Befehle, Türzustände und Meldungen; Zugbeeinflussung und Sicherheitsfahrschaltung wirken auf die Bremssteuerung. Der Kühlkreislauf führt Abwärme ab, die Heiz- und Klimaanlage temperiert den Fahrgastbereich.",
+          "text": "Fahrleitung, Traktionsbatterie, Brennstoffzellensystem oder Generator speisen den Traktionsstromrichter, die Kraftstoffanlage den Verbrennungsmotor. Mechanische Leistung fließt über das Radsatzgetriebe zum Radsatz, Bremsenergie zurück in Fahrleitung, Traktionsbatterie oder Bremswiderstand. Der Hilfsbetriebeumrichter speist das Drehstrom-Bordnetz, die Druckluftanlage Bremszylinder und Sandstreuanlage. Der Fahrzeugbus überträgt Befehle und Meldungen; Zugbeeinflussung und Sicherheitsfahrschaltung wirken auf die Bremssteuerung. Der Kühlkreislauf führt Abwärme ab, die Heiz- und Klimaanlage temperiert den Fahrgastbereich.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -673,7 +683,7 @@
       "absaetze": [
         {
           "absatz_id": "P31",
-          "text": "Funktional gilt: Fahrzeuglasten tragen Wagenkasten und Laufwerk; Fahrzeug im Gleis führen und Fahrzeug fortbewegen der Radsatz; Energie speichern Kraftstofftank, Wasserstoffspeicher, Traktionsbatterie und Bordnetzbatterie; Treibstoff fördern Kraftstoffanlage und Wasserstoffsystem; Traktionsbatterie laden Stromabnehmer und Traktionsstromrichter; Elektrische Energie verteilen Fahrleitungsanbindung, Hilfsbetriebeumrichter und Energieverteilung; Antriebsleistung erzeugen Traktionsmaschine und Verbrennungsmotor; Drehmoment übertragen Radsatzgetriebe, Getriebe und Gelenkwelle; Fahrzeug verzögern Hauptbremse und Magnetschienenbremse; Fahrzeug festhalten die Feststellbremse; Bremsenergie zurückgewinnen Traktionsmaschine und Traktionsstromrichter; Kraftschluss verbessern Sandstreuanlage und Gleitschutzsystem; Druckluft bereitstellen die Druckluftanlage; Fahrereingaben erfassen und Fahrerinformationen anzeigen der Führertisch; Fahrersicht sicherstellen Stirnscheibe und Scheibenwischer; Fahrzeugumgebung ausleuchten die Frontscheinwerfer; Lichtsignale abgeben Spitzenlichter und Schlusslichter; Hörbare Signale abgeben das Signalhorn; Insassen schützen Crashstruktur und Brandschutz; Ladung aufnehmen Fahrgastbereich und Gepäckabteil; Betriebstüren betätigen Türsteuerung und Türen; Fahrgäste informieren das Fahrgastinformationssystem; Daten übertragen Fahrzeugbus und Zugfunkeinrichtung; Fahrzeugzustand überwachen Diagnose, Fahrdatenschreiber und Brandmeldeeinrichtung; Zugfahrt überwachen die Zugbeeinflussung; Fahrerzustand überwachen die Sicherheitsfahrschaltung; Betriebstemperatur regeln die Antriebskühlung; Innenraum klimatisieren die Klimatisierung.",
+          "text": "Fahrzeuglasten tragen Wagenkasten und Laufwerk; Fahrzeug im Gleis führen und Fahrzeug fortbewegen Radsatz; Energie speichern Kraftstofftank, Wasserstoffspeicher, Traktionsbatterie und Bordnetzbatterie; Treibstoff fördern Kraftstoffanlage und Wasserstoffsystem; Traktionsbatterie laden Stromabnehmer, Traktionsstromrichter und Ladeeinrichtung; Elektrische Energie verteilen Fahrleitungsanbindung, Hilfsbetriebeumrichter, Batterieladegerät und Energieverteilung; Antriebsleistung erzeugen Traktionsmaschine und Verbrennungsmotor; Drehmoment übertragen Radsatzgetriebe, Getriebe und Gelenkwelle; Fahrzeug verzögern Hauptbremse, Magnetschienenbremse und Bremswiderstand; Fahrzeug festhalten Feststellbremse; Bremsenergie zurückgewinnen Traktionsmaschine und Traktionsstromrichter; Kraftschluss verbessern Sandstreuanlage und Gleitschutzsystem; Druckluft bereitstellen Druckluftanlage; Fahrereingaben erfassen und Fahrerinformationen anzeigen Führertisch; Fahrersicht sicherstellen Stirnscheibe, Scheibenwischer und Kamera-Monitor-System; Fahrzeugumgebung ausleuchten Frontscheinwerfer und Innenbeleuchtung; Lichtsignale abgeben Spitzenlichter und Schlusslichter; Hörbare Signale abgeben Signalhorn; Insassen schützen Crashstruktur und Brandschutz; Ladung aufnehmen Fahrgastbereich und Gepäckabteil; Betriebstüren betätigen Türsteuerung und Türen; Fahrgäste informieren Fahrgastinformationssystem; Daten übertragen Fahrzeugbus und Zugfunkeinrichtung; Fahrzeugzustand überwachen Diagnose, Fahrdatenschreiber und Brandmeldeeinrichtung; Zugfahrt überwachen Zugbeeinflussung; Fahrerzustand überwachen Sicherheitsfahrschaltung; Betriebstemperatur regeln Antriebskühlung; Innenraum klimatisieren Klimatisierung.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -726,7 +736,8 @@
           "P3",
           "P4",
           "P5",
-          "P31"
+          "P31",
+          "P17"
         ]
       },
       {
@@ -975,6 +986,17 @@
         ]
       },
       {
+        "id": "E106",
+        "name": "Bremswiderstand",
+        "typ": "komponente",
+        "eltern_id": "E17",
+        "absatz_ids": [
+          "P7",
+          "P30",
+          "P31"
+        ]
+      },
+      {
         "id": "E26",
         "name": "Energieversorgungssystem",
         "typ": "hauptsystem",
@@ -1068,6 +1090,15 @@
         ]
       },
       {
+        "id": "E109",
+        "name": "Betankungsanschluss Kraftstoff",
+        "typ": "komponente",
+        "eltern_id": "E32",
+        "absatz_ids": [
+          "P11"
+        ]
+      },
+      {
         "id": "E34",
         "name": "Wasserstoffsystem",
         "typ": "subsystem",
@@ -1098,6 +1129,15 @@
           "P11",
           "P26",
           "P30"
+        ]
+      },
+      {
+        "id": "E110",
+        "name": "Betankungsanschluss Wasserstoff",
+        "typ": "komponente",
+        "eltern_id": "E34",
+        "absatz_ids": [
+          "P11"
         ]
       },
       {
@@ -1146,6 +1186,26 @@
         "absatz_ids": [
           "P11",
           "P18",
+          "P31"
+        ]
+      },
+      {
+        "id": "E107",
+        "name": "Batterieladegerät",
+        "typ": "komponente",
+        "eltern_id": "E26",
+        "absatz_ids": [
+          "P18",
+          "P31"
+        ]
+      },
+      {
+        "id": "E108",
+        "name": "Ladeeinrichtung",
+        "typ": "komponente",
+        "eltern_id": "E26",
+        "absatz_ids": [
+          "P11",
           "P31"
         ]
       },
@@ -1340,8 +1400,7 @@
         "eltern_id": "E50",
         "absatz_ids": [
           "P15",
-          "P16",
-          "P17"
+          "P16"
         ]
       },
       {
@@ -1699,6 +1758,26 @@
         ]
       },
       {
+        "id": "E111",
+        "name": "Innenbeleuchtung",
+        "typ": "komponente",
+        "eltern_id": "E84",
+        "absatz_ids": [
+          "P24",
+          "P31"
+        ]
+      },
+      {
+        "id": "E112",
+        "name": "Kamera-Monitor-System",
+        "typ": "komponente",
+        "eltern_id": "E84",
+        "absatz_ids": [
+          "P24",
+          "P31"
+        ]
+      },
+      {
         "id": "E92",
         "name": "Thermomanagement",
         "typ": "hauptsystem",
@@ -1916,7 +1995,8 @@
         "name": "Traktionsbatterie laden",
         "ausgefuehrt_von": [
           "E28",
-          "E18"
+          "E18",
+          "E108"
         ],
         "absatz_ids": [
           "P9",
@@ -1929,7 +2009,8 @@
         "ausgefuehrt_von": [
           "E27",
           "E39",
-          "E63"
+          "E63",
+          "E107"
         ],
         "absatz_ids": [
           "P10",
@@ -1967,7 +2048,8 @@
         "name": "Fahrzeug verzögern",
         "ausgefuehrt_von": [
           "E42",
-          "E48"
+          "E48",
+          "E106"
         ],
         "absatz_ids": [
           "P12",
@@ -2050,7 +2132,8 @@
         "name": "Fahrersicht sicherstellen",
         "ausgefuehrt_von": [
           "E55",
-          "E91"
+          "E91",
+          "E112"
         ],
         "absatz_ids": [
           "P14",
@@ -2062,7 +2145,8 @@
         "id": "F18",
         "name": "Fahrzeugumgebung ausleuchten",
         "ausgefuehrt_von": [
-          "E86"
+          "E86",
+          "E111"
         ],
         "absatz_ids": [
           "P23",
@@ -2721,6 +2805,48 @@
         "absatz_ids": [
           "P5"
         ]
+      },
+      {
+        "id": "S46",
+        "von": "E18",
+        "nach": "E106",
+        "art": "elektrisch",
+        "medium": "Bremsenergie",
+        "absatz_ids": [
+          "P7",
+          "P30"
+        ]
+      },
+      {
+        "id": "S47",
+        "von": "E39",
+        "nach": "E107",
+        "art": "elektrisch",
+        "medium": "Hilfsbetriebeenergie",
+        "absatz_ids": [
+          "P18"
+        ]
+      },
+      {
+        "id": "S48",
+        "von": "E107",
+        "nach": "E40",
+        "art": "elektrisch",
+        "medium": "Ladestrom",
+        "absatz_ids": [
+          "P18"
+        ]
+      },
+      {
+        "id": "S49",
+        "von": "E65",
+        "nach": "E111",
+        "art": "elektrisch",
+        "medium": "Niederspannung",
+        "absatz_ids": [
+          "P24"
+        ],
+        "schnittstelle": "Leuchtenanschluss"
       }
     ],
     "entfallene_kategorien": [
@@ -2931,7 +3057,7 @@
         "alternativen": [
           "Laden während der Fahrt unter Oberleitung und an Nachladeabschnitten",
           "Laden im Stillstand an Nachladepunkten",
-          "Laden ausschließlich im Betriebshof"
+          "Laden im Stillstand an einer Ladeeinrichtung im Betriebshof"
         ],
         "auswahlkriterien": [
           "vorhandene Oberleitungsabschnitte im Netz",
@@ -2942,7 +3068,7 @@
         "auswirkungen": [
           {
             "element_id": "E28",
-            "beschreibung": "Stromabnehmer für Laden unter Fahrleitung oder Ladeanschluss im Betriebshof"
+            "beschreibung": "Stromabnehmer für Laden unter Fahrleitung und an Nachladeabschnitten"
           },
           {
             "element_id": "E38",
@@ -2955,6 +3081,10 @@
           {
             "element_id": "E70",
             "beschreibung": "Energiemanagement mit Lade- und Fahrstrategie"
+          },
+          {
+            "element_id": "E108",
+            "beschreibung": "Ladeeinrichtung für Stillstandsladung im Betriebshof"
           }
         ],
         "absatz_ids": [
@@ -2968,7 +3098,7 @@
         "bezeichnung": "Ansteuerung der Hauptbremse",
         "alternativen": [
           "Durchgehende Bremsleitung, kompatibel mit Fahrzeugen anderer Herkunft",
-          "Herstellerspezifische Ansteuerung in nicht trennbaren oder vordefinierten Zugverbänden"
+          "Herstellerspezifische durchgehende und selbsttätige Ansteuerung, etwa elektropneumatisch, in nicht trennbaren oder vordefinierten Zugverbänden"
         ],
         "auswahlkriterien": [
           "freizügiger Betrieb mit anderen Fahrzeugen",
@@ -3062,6 +3192,55 @@
           "P15",
           "P24"
         ]
+      },
+      {
+        "id": "V9",
+        "element_id": "E3",
+        "bezeichnung": "Fußbodenhöhe und Anordnung der Antriebsausrüstung",
+        "alternativen": [
+          "Hochflur mit Unterflurausrüstung",
+          "Niederflur mit Dachausrüstung",
+          "Niederflur mit Antriebsmodul zwischen den Wagenkästen"
+        ],
+        "auswahlkriterien": [
+          "Bahnsteighöhen im Einsatznetz",
+          "Barrierefreiheit und Fahrgastwechselzeit",
+          "Platz für Energiespeicher",
+          "Achslast"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E17",
+            "beschreibung": "Einbauort des Traktionsstromrichters unterflur, auf dem Dach oder im Antriebsmodul"
+          },
+          {
+            "element_id": "E21",
+            "beschreibung": "Einbauort des Dieselaggregats unterflur oder im Antriebsmodul"
+          },
+          {
+            "element_id": "E38",
+            "beschreibung": "Einbauort der Traktionsbatterie unterflur, auf dem Dach oder im Antriebsmodul"
+          },
+          {
+            "element_id": "E35",
+            "beschreibung": "Einbauort der Wasserstoffspeicher auf dem Dach oder im Antriebsmodul"
+          },
+          {
+            "element_id": "E94",
+            "beschreibung": "Dachplatz für Klimageräte konkurriert mit verlagerter Antriebsausrüstung"
+          },
+          {
+            "element_id": "E9",
+            "beschreibung": "Drehgestellbauart unter Niederflurbereichen"
+          },
+          {
+            "element_id": "E5",
+            "beschreibung": "Türen und Einstieg mit oder ohne Stufen"
+          }
+        ],
+        "absatz_ids": [
+          "P17"
+        ]
       }
     ],
     "klaerungsfragen": [
@@ -3128,16 +3307,14 @@
       },
       {
         "id": "K6",
-        "frage": "Muss der Triebwagen mit Fahrzeugen anderer Baureihen oder mit Reisezugwagen kuppelbar sein, und soll im laufenden Betrieb geflügelt werden?",
+        "frage": "Muss der Triebwagen mit Fahrzeugen anderer Baureihen oder mit Reisezugwagen mechanisch kuppelbar sein, und soll im laufenden Betrieb geflügelt werden?",
         "element_ids": [
-          "E14",
-          "E43"
+          "E14"
         ],
         "anlass": "schnittstelle",
-        "relevanz": "Davon hängen Bauart der Endkupplung und Ansteuerung der Hauptbremse ab.",
+        "relevanz": "Davon hängen Bauart der Endkupplung und Durchführung des Fahrzeugbusses ab.",
         "variante_ids": [
-          "V4",
-          "V6"
+          "V4"
         ]
       },
       {
@@ -3295,6 +3472,19 @@
         ],
         "anlass": "anforderung",
         "relevanz": "Davon hängen Crashstruktur, Bahnräumer und Gestaltung des Stirnbereichs ab."
+      },
+      {
+        "id": "K21",
+        "frage": "Welche Bahnsteighöhen hat das Einsatznetz, und ist ein stufenloser Einstieg gefordert?",
+        "element_ids": [
+          "E3",
+          "E5"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Fußbodenhöhe, Einbauort der Antriebsausrüstung und Laufwerksbauart ab.",
+        "variante_ids": [
+          "V9"
+        ]
       }
     ],
     "anforderungsthemen": [
@@ -3312,7 +3502,7 @@
         ],
         "regelwerke": [
           {
-            "bezeichnung": "Verordnung (EU) Nr. 1302/2014 (TSI LOC&PAS), Begriffsbestimmungen; EU-Eisenbahnsystem, ausgenommen funktionell getrennte Nahverkehrsnetze und Stadtbahnen",
+            "bezeichnung": "Verordnung (EU) Nr. 1302/2014 (TSI LOC&PAS), Ursprungsfassung 2014, seither geändert, Begriffsbestimmungen; EU-Eisenbahnsystem, ausgenommen funktionell getrennte Nahverkehrsnetze und Stadtbahnen",
             "quellen_id": "Q2",
             "fundstelle": "Anhang, Abschnitte 2.2.1, 2.2.2 und 2.3.1 Gruppe A"
           },
@@ -3340,7 +3530,7 @@
         ],
         "regelwerke": [
           {
-            "bezeichnung": "Verordnung (EU) Nr. 1302/2014 (TSI LOC&PAS), Struktur und mechanische Teile; EU",
+            "bezeichnung": "Verordnung (EU) Nr. 1302/2014 (TSI LOC&PAS), Ursprungsfassung 2014, seither geändert, Struktur und mechanische Teile; EU",
             "quellen_id": "Q2",
             "fundstelle": "Abschnitte 4.2.2.2.3, 4.2.2.4 und 4.2.2.5"
           },
@@ -3366,7 +3556,7 @@
         ],
         "regelwerke": [
           {
-            "bezeichnung": "Verordnung (EU) Nr. 1302/2014 (TSI LOC&PAS), Antriebsleistung; EU",
+            "bezeichnung": "Verordnung (EU) Nr. 1302/2014 (TSI LOC&PAS), Ursprungsfassung 2014, seither geändert, Antriebsleistung; EU",
             "quellen_id": "Q2",
             "fundstelle": "Abschnitte 4.2.8.1.1 und 4.2.8.1.2"
           }
@@ -3389,7 +3579,7 @@
         ],
         "regelwerke": [
           {
-            "bezeichnung": "Verordnung (EU) Nr. 1302/2014 (TSI LOC&PAS), Energieversorgung elektrischer Einheiten; EU",
+            "bezeichnung": "Verordnung (EU) Nr. 1302/2014 (TSI LOC&PAS), Ursprungsfassung 2014, seither geändert, Energieversorgung elektrischer Einheiten; EU",
             "quellen_id": "Q2",
             "fundstelle": "Abschnitte 4.2.8.2.1, 4.2.8.2.8 und 4.2.8.2.10"
           }
@@ -3410,7 +3600,7 @@
         ],
         "regelwerke": [
           {
-            "bezeichnung": "Verordnung (EU) Nr. 1302/2014 (TSI LOC&PAS), Bremsen; EU",
+            "bezeichnung": "Verordnung (EU) Nr. 1302/2014 (TSI LOC&PAS), Ursprungsfassung 2014, seither geändert, Bremsen; EU",
             "quellen_id": "Q2",
             "fundstelle": "Abschnitte 4.2.4.1, 4.2.4.2 und 4.2.4.5"
           },
@@ -3435,7 +3625,7 @@
         ],
         "regelwerke": [
           {
-            "bezeichnung": "Verordnung (EU) Nr. 1302/2014 (TSI LOC&PAS), Führerraum; EU",
+            "bezeichnung": "Verordnung (EU) Nr. 1302/2014 (TSI LOC&PAS), Ursprungsfassung 2014, seither geändert, Führerraum; EU",
             "quellen_id": "Q2",
             "fundstelle": "Abschnitt 4.2.9.1"
           }
@@ -3456,7 +3646,7 @@
         ],
         "regelwerke": [
           {
-            "bezeichnung": "Verordnung (EU) Nr. 1302/2014 (TSI LOC&PAS), fahrgastspezifische Aspekte mit Verweis auf die TSI PRM; EU",
+            "bezeichnung": "Verordnung (EU) Nr. 1302/2014 (TSI LOC&PAS), Ursprungsfassung 2014, seither geändert, fahrgastspezifische Aspekte mit Verweis auf die TSI PRM; EU",
             "quellen_id": "Q2",
             "fundstelle": "Abschnitt 4.2.5"
           }
@@ -3476,7 +3666,7 @@
         ],
         "regelwerke": [
           {
-            "bezeichnung": "Verordnung (EU) Nr. 1302/2014 (TSI LOC&PAS), elektrischer Schutz und Schutz gegen elektrische Gefahren; EU",
+            "bezeichnung": "Verordnung (EU) Nr. 1302/2014 (TSI LOC&PAS), Ursprungsfassung 2014, seither geändert, elektrischer Schutz und Schutz gegen elektrische Gefahren; EU",
             "quellen_id": "Q2",
             "fundstelle": "Abschnitte 4.2.8.2.10 und 4.2.8.4"
           }
@@ -3498,7 +3688,7 @@
         ],
         "regelwerke": [
           {
-            "bezeichnung": "Verordnung (EU) Nr. 1302/2014 (TSI LOC&PAS), Außentüren, Kommunikation und Fahrdatenschreiber; EU",
+            "bezeichnung": "Verordnung (EU) Nr. 1302/2014 (TSI LOC&PAS), Ursprungsfassung 2014, seither geändert, Außentüren, Kommunikation und Fahrdatenschreiber; EU",
             "quellen_id": "Q2",
             "fundstelle": "Abschnitte 4.2.5.2, 4.2.5.3, 4.2.5.5 und 4.2.9.6"
           },
@@ -3528,7 +3718,7 @@
             "fundstelle": "§ 28 Abs. 1 Nr. 4 bis 6 und Abs. 7"
           },
           {
-            "bezeichnung": "Verordnung (EU) Nr. 1302/2014 (TSI LOC&PAS), Wachsamkeitskontrolle und Brandschutz; EU",
+            "bezeichnung": "Verordnung (EU) Nr. 1302/2014 (TSI LOC&PAS), Ursprungsfassung 2014, seither geändert, Wachsamkeitskontrolle und Brandschutz; EU",
             "quellen_id": "Q2",
             "fundstelle": "Abschnitte 4.2.9.3.1 und 4.2.10"
           }
@@ -3548,7 +3738,7 @@
         ],
         "regelwerke": [
           {
-            "bezeichnung": "Verordnung (EU) Nr. 1302/2014 (TSI LOC&PAS), Außenleuchten und Signalhorn; EU",
+            "bezeichnung": "Verordnung (EU) Nr. 1302/2014 (TSI LOC&PAS), Ursprungsfassung 2014, seither geändert, Außenleuchten und Signalhorn; EU",
             "quellen_id": "Q2",
             "fundstelle": "Abschnitte 4.2.7.1, 4.2.7.2 und 4.2.10.4.1"
           }
@@ -3568,7 +3758,7 @@
         ],
         "regelwerke": [
           {
-            "bezeichnung": "Verordnung (EU) Nr. 1302/2014 (TSI LOC&PAS), Luftqualität im Innern; EU",
+            "bezeichnung": "Verordnung (EU) Nr. 1302/2014 (TSI LOC&PAS), Ursprungsfassung 2014, seither geändert, Luftqualität im Innern; EU",
             "quellen_id": "Q2",
             "fundstelle": "Abschnitt 4.2.5.8"
           }
@@ -3587,6 +3777,42 @@
           "Druckluftqualität",
           "Sandstreumenge"
         ]
+      },
+      {
+        "id": "R14",
+        "element_ids": [
+          "E2",
+          "E3"
+        ],
+        "thema": "Fahrzeugbegrenzung",
+        "kenngroessen": [
+          "Bezugslinie",
+          "Wagenkastenbreite",
+          "Fahrzeughöhe über Schienenoberkante",
+          "Höhe der Dachausrüstung"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "EBO, Begrenzung der Fahrzeuge; Deutschland, regelspurige Eisenbahnen",
+            "quellen_id": "Q1",
+            "fundstelle": "§ 22 Abs. 1 bis 4"
+          }
+        ]
+      },
+      {
+        "id": "R15",
+        "element_ids": [
+          "E1",
+          "E16",
+          "E92"
+        ],
+        "thema": "Geräuschemission und Innengeräusch",
+        "kenngroessen": [
+          "Standgeräusch",
+          "Anfahrgeräusch",
+          "Vorbeifahrgeräusch",
+          "Innengeräuschpegel im Fahrgastbereich"
+        ]
       }
     ]
   },
@@ -3599,11 +3825,12 @@
     "Glossarvorschlag: Fahrgäste informieren (Funktion des Fahrgastinformationssystems; „Fahrerinformationen anzeigen“ richtet sich nur an den Triebfahrzeugführer).",
     "Glossarvorschlag: Für die Kategorie aufbau_nutzlast fehlt ein Hauptsystemname für Schienenfahrzeuge, etwa „Fahrgast- und Ladebereich (Schienenfahrzeuge)“; verwendet wurde „Aufbau und Ladung“, weil die TSI die Zuladung des Triebwagens aus Fahrgästen, Gepäck, Post oder Fracht definiert.",
     "Recherche: amtliche Fassung der EBO auf gesetze-im-internet.de; der Host war in diesem Lauf nicht erreichbar (Namensauflösung blockiert), verwendet wurde die Textwiedergabe auf lxgesetze.de.",
-    "Recherche: konsolidierte Fassung der Verordnung (EU) Nr. 1302/2014 mit den Änderungen durch die Verordnungen (EU) 2019/776 und 2023/1694 auf EUR-Lex; verwendet wurde die Ursprungsfassung von 2014.",
+    "Recherche: konsolidierte Fassung der Verordnung (EU) Nr. 1302/2014 mit den Änderungen durch die Verordnungen (EU) 2019/776 und 2023/1694 auf EUR-Lex; verwendet wurde die Ursprungsfassung von 2014. Nach dem Abruf der konsolidierten Fassung die Fundstellen der Regelwerkseinträge R1 bis R12 und der belegten Absätze prüfen; die Dokumentseite auf EUR-Lex nennt weitere Änderungsverordnungen.",
     "Recherche: Fachliteratur zur Schienenfahrzeugtechnik (Suchbegriffe: Janicki Reinhard Rüffner Schienenfahrzeugtechnik; Filipović Elektrische Bahnen) zur Belegung von P5, P7, P13, P18, P20 und P27.",
     "Recherche: Normen zur Kollisionssicherheit und zum Brandschutz von Schienenfahrzeugen (Suchbegriffe: EN 15227 Kollisionssicherheit; EN 45545 Brandschutz Schienenfahrzeuge) für R2 und R10.",
     "Recherche: TSI PRM (Verordnung (EU) Nr. 1300/2014) für Einstiegshöhe, Rollstuhlplätze und Toiletten in P16, P17 und R7.",
     "Recherche: Druckluftverbraucher in Triebwagen (Suchbegriffe: Luftfederung Triebzug Druckluftanlage; Stromabnehmer Hubantrieb pneumatisch) zur Belegung von P27.",
-    "Recherche: Kühlkonzepte und Batterietemperierung in batterieelektrischen und Wasserstofftriebzügen (Suchbegriffe: BEMU Batteriekühlung; Brennstoffzellentriebzug Kühlsystem) für P26."
+    "Recherche: Kühlkonzepte und Batterietemperierung in batterieelektrischen und Wasserstofftriebzügen (Suchbegriffe: BEMU Batteriekühlung; Brennstoffzellentriebzug Kühlsystem) für P26.",
+    "Recherche: TSI Lärm (Verordnung (EU) Nr. 1304/2014) für Grenzwerte und Geltungsbereich des neuen Anforderungsthemas Geräusch (R15)."
   ]
 }
