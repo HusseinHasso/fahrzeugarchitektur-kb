@@ -4,7 +4,7 @@
   "artikeltyp": "blatt",
   "titel": "Moped",
   "betrachtungsumfang": "Generische Referenzarchitektur des Mopeds als zweirädriges Kleinkraftrad (EU-Fahrzeugklasse L1e, Unterklasse L1e-B) in den Bauformen Moped mit Pedalen, Mokick und Motorroller einschließlich Elektromotorroller, mit Verbrennungsmotor oder batterieelektrischem Antrieb; Hybrid-, Druckluft- und sonstige Antriebsformen, Fahrräder mit Antriebssystem (L1e-A), dreirädrige Kleinkrafträder (L2e) und Leichtkrafträder (L3e) sind ausgeschlossen und dienen nur der Abgrenzung.",
-  "status": "in_arbeit",
+  "status": "geprueft",
   "quellenzugriff": "ja",
   "kindartikel_ids": [],
   "quellen": [
@@ -274,7 +274,7 @@
       "absaetze": [
         {
           "absatz_id": "P11",
-          "text": "Das Lenksystem ändert die Fahrtrichtung, indem der Fahrer über den Lenker die im Lenkkopflager drehbar gelagerte Vorderradführung verdreht. Beim einspurigen Fahrzeug wirkt der Lenkeingriff zugleich auf die Schräglage, sodass die Kurvenfahrt aus Lenkimpuls und Neigung entsteht; Lenkunterstützung und Lenkgetriebe entfallen. Am Lenker sitzen die Bedienelemente für Gas, Bremsen und Licht, er ist damit Schnittstelle zu Fahrgastraum, Antrieb und Bremssystem. Ein Lenkschloss am entsprechend gestalteten Lenkkopf oder eine elektronische Wegfahrsperre sichert das abgestellte Fahrzeug gegen unbefugte Benutzung. Die Bauart der Vorderradführung, etwa Teleskopgabel oder Kurzschwinge, bestimmt die Lenkgeometrie, gehört aber zum Fahrwerk.",
+          "text": "Das Lenksystem ändert die Fahrtrichtung, indem der Fahrer über den Lenker die im Lenkkopflager drehbar gelagerte Vorderradführung verdreht. Beim Einspurfahrzeug wirkt der Lenkeingriff zugleich auf die Schräglage, die Kurvenfahrt entsteht aus Lenkimpuls und Neigung; Lenkunterstützung und Lenkgetriebe entfallen. Am Lenker sitzen die Bedienelemente für Gas, Bremsen und Licht, er ist damit Schnittstelle zu Fahrgastraum, Antrieb und Bremssystem. Ein Lenkschloss am Lenkkopf oder eine elektronische Wegfahrsperre sichert das abgestellte Fahrzeug. Die Bauart der Vorderradführung bestimmt die Lenkgeometrie, gehört aber zum Fahrwerk.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -459,7 +459,7 @@
         },
         {
           "absatz_id": "P20",
-          "text": "Das System Fahrzeugsteuerung und Information bildet die logische Ebene. Das Fahrzeugmanagement steuert beim Verbrenner Zündung und Gemischaufbereitung, beim Elektroantrieb zusammen mit dem Antriebsregler das Drehmoment, und setzt, soweit vorhanden, die bauartbedingte Begrenzung von Leistung und Geschwindigkeit eingriffsgeschützt um; bei einfachen Verbrennern erfolgt sie konstruktiv über Kraftübertragung, Ansaug- und Abgasweg oder Zündanlage. Der Zündschalter, als Schlüsselschalter oder elektronische Freigabe, schaltet Bordnetz, Zündung und Beleuchtung und gibt den Start frei. Die Diagnose speichert Fehler und stellt sie der Werkstatt bereit. Eine Telematikeinheit mit Ortung und Mobilfunk haben vor allem Verleihfahrzeuge, die per App entsperrt werden; sie greift auf die Startfreigabe zu und braucht auch im Stand Energie.",
+          "text": "Das System Fahrzeugsteuerung und Information bildet die logische Ebene aus dem Subsystem Fahrzeugmanagement und der optionalen Telematikeinheit. Das Fahrzeugmanagement steuert beim Verbrenner Zündung und Gemischaufbereitung, beim Elektroantrieb mit dem Antriebsregler das Drehmoment, und setzt, soweit vorhanden, die bauartbedingte Begrenzung eingriffsgeschützt um; bei einfachen Verbrennern erfolgt sie konstruktiv über Kraftübertragung, Ansaug- und Abgasweg oder Zündanlage. Zum Subsystem gehören Zündschalter und Diagnose. Der Zündschalter, als Schlüsselschalter oder elektronische Freigabe, schaltet Bordnetz, Zündung und Beleuchtung und gibt den Start frei; die Diagnose speichert Fehler für die Werkstatt. Eine Telematikeinheit mit Ortung und Mobilfunk haben vor allem per App entsperrte Verleihfahrzeuge; sie greift auf die Startfreigabe zu und braucht auch im Stand Energie.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -469,7 +469,7 @@
               "Q5",
               "Q6"
             ],
-            "schluss": "Fahrzeugsteuerung und Information besteht aus Fahrzeugmanagement mit Begrenzung, Zündschalter, Diagnose und optionaler Telematikeinheit; bei einfachen Verbrennern liegt die Begrenzung im Antriebsstrang."
+            "schluss": "Fahrzeugsteuerung und Information besteht aus dem Subsystem Fahrzeugmanagement mit Begrenzung, Zündschalter und Diagnose sowie der optionalen Telematikeinheit; bei einfachen Verbrennern liegt die Begrenzung im Antriebsstrang."
           },
           "sicherheit": "mittel",
           "herangezogene_artikel_ids": [],
@@ -561,7 +561,7 @@
       "absaetze": [
         {
           "absatz_id": "P25",
-          "text": "Architekturell ist das Moped auf oberster Ebene ein Gesamtsystem aus Fahrzeugstruktur und Fahrwerk, Antriebssystem, Energieversorgungssystem, Lenksystem, Bremssystem, Fahrgastraum, Aufbau und Ladung, Elektrik und Elektronik, Fahrzeugsteuerung und Information, Fahrerassistenz und Sicherheit, Beleuchtung und Sicht sowie Thermomanagement. Neben- und Versorgungssysteme besitzt es nicht. Die Klassengrenzen wirken über Antrieb und Fahrzeugsteuerung auf das ganze Fahrzeug; die Antriebsart verändert Energieversorgung, Thermomanagement und Bordnetz am stärksten.",
+          "text": "Architekturell ist das Moped auf oberster Ebene ein Gesamtsystem aus Fahrzeugstruktur und Fahrwerk, Antriebssystem, Energieversorgungssystem, Lenksystem, Bremssystem, Fahrgastraum, Aufbau und Ladung, Elektrik und Elektronik, Fahrzeugsteuerung und Information, Fahrerassistenz und Sicherheit, Beleuchtung und Sicht sowie Thermomanagement; Neben- und Versorgungssysteme fehlen. Die Klassengrenzen wirken über Antrieb und Fahrzeugsteuerung auf das ganze Fahrzeug; die Antriebsart verändert Energieversorgung, Thermomanagement und Bordnetz am stärksten.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -587,7 +587,7 @@
       "absaetze": [
         {
           "absatz_id": "P26",
-          "text": "In SysML bildet der Block Moped das Gesamtsystem mit den Hauptsystemen als Bestandteilen, rekursiv zerlegt etwa als Antriebssystem → Verbrennungsmotor → Abgasanlage → Abgasnachbehandlung, Energieversorgungssystem → Traktionsbatteriesystem → Batteriemanagementsystem oder Fahrzeugstruktur und Fahrwerk → Radführung und Federung → Hinterradschwinge. Die Antriebsarten sind alternative Spezialisierungen des Antriebssystems samt Energieversorgung. Ports und Konnektoren bilden mechanische Schnittstellen an Lenkkopf, Motoraufhängung und Hinterradnabe, elektrische an Bordnetz und Ladeanschluss, informationstechnische am Fahrzeugbus sowie thermische und stoffliche an Kühlung, Kraftstoff- und Abgasweg ab. Verwendet werden Block Definition Diagrams, Internal Block Diagrams und Aktivitätsdiagramme.",
+          "text": "In SysML bildet der Block Moped das Gesamtsystem mit den Hauptsystemen als Bestandteilen, rekursiv zerlegt etwa als Antriebssystem → Verbrennungsmotor → Abgasanlage → Abgasnachbehandlung, Energieversorgungssystem → Traktionsbatteriesystem → Batteriemanagementsystem oder Fahrzeugstruktur und Fahrwerk → Radführung und Federung → Hinterradschwinge. Die Antriebsarten sind alternative Spezialisierungen des Antriebssystems samt Energieversorgung. Ports und Konnektoren bilden mechanische Schnittstellen an Lenkkopf, Motoraufhängung und Hinterradnabe, elektrische an Bordnetz und Ladeanschluss, informationstechnische am Fahrzeugbus sowie thermische und stoffliche an Kühlung, Kraftstoff- und Abgasweg ab. Diagrammarten sind BDD, IBD und Aktivitätsdiagramm.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -1307,7 +1307,7 @@
       {
         "id": "E66",
         "name": "Fahrzeugmanagement",
-        "typ": "komponente",
+        "typ": "subsystem",
         "eltern_id": "E10",
         "absatz_ids": [
           "P20"
@@ -1317,7 +1317,7 @@
         "id": "E67",
         "name": "Diagnose",
         "typ": "komponente",
-        "eltern_id": "E10",
+        "eltern_id": "E66",
         "absatz_ids": [
           "P20"
         ]
@@ -1335,7 +1335,7 @@
         "id": "E81",
         "name": "Zündschalter",
         "typ": "komponente",
-        "eltern_id": "E10",
+        "eltern_id": "E66",
         "absatz_ids": [
           "P20",
           "P22",
