@@ -4,7 +4,7 @@
   "artikeltyp": "blatt",
   "titel": "Transporter",
   "betrachtungsumfang": "Generische Referenzarchitektur des Transporters (Kleintransporters) als Kraftfahrzeug zur Güterbeförderung der EU-Fahrzeugklasse N1 (zulässige Gesamtmasse höchstens 3,5 t) in den Aufbauarten Kastenwagen (Van, Führerhaus und Laderaum in einer Einheit), Fahrgestell mit Führerhaus mit Pritschen- oder Kofferaufbau sowie Doppelkabine; Antriebsarten verbrennungsmotorisch und batterieelektrisch. Ausdrücklich nicht betrachtet werden Hybrid-, Brennstoffzellen- und Gasantriebe, Kleinbusse und Reisemobile auf Transporterbasis, als Pkw zugelassene Hochdachkombis, leichte Lkw oberhalb von 3,5 t sowie Aufbauten von Aufbauherstellern jenseits der Befestigungs- und Versorgungsschnittstellen.",
-  "status": "in_arbeit",
+  "status": "zu_pruefen",
   "quellenzugriff": "ja",
   "kindartikel_ids": [],
   "quellen": [
@@ -138,7 +138,7 @@
         },
         {
           "absatz_id": "P4",
-          "text": "Die Karosserie gliedert sich in den Rohbau mit Bodengruppe, Seitenwänden und Dach, die Crashstruktur im Vorderwagen und die Türen, darunter Hecktüren oder Heckklappe und eine seitliche Tür zum Beladen, etwa als Schiebetür. Bei der Fahrgestellausführung trägt hinter dem Fahrerhaus ein Rahmen aus Längsträgern den Aufbau. Das Fahrwerk umfasst je Achse Radaufhängung, Federung sowie Räder und Reifen. Die Ladung stützt sich über Ladeboden und Rohbau oder Rahmen auf Federung und Achse ab; die Federung muss die zwischen leer und beladen stark schwankende Hinterachslast abdecken. Strukturändernde Varianten sind Kasten oder Fahrgestell sowie Einzel- oder Zwillingsbereifung hinten.",
+          "text": "Die Karosserie gliedert sich in den Rohbau mit Bodengruppe, Seitenwänden und Dach, die Crashstruktur im Vorderwagen und die Türen, darunter Hecktüren oder Heckklappe und eine seitliche Tür zum Beladen, etwa als Schiebetür. Bei der Fahrgestellausführung trägt hinter dem Fahrerhaus ein Rahmen aus Längsträgern den Aufbau. Die Karosserie wird meist in mehreren Radständen, Längen und Dachhöhen angeboten, die Ladevolumen und Länge des Ladebereichs festlegen. Das Fahrwerk umfasst je Achse Radaufhängung, Federung sowie Räder und Reifen. Die Ladung stützt sich über Ladeboden und Rohbau oder Rahmen auf Federung und Achse ab; die Federung muss die zwischen leer und beladen stark schwankende Hinterachslast abdecken. Strukturändernde Varianten sind Kasten oder Fahrgestell sowie Einzel- oder Zwillingsbereifung hinten.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -146,7 +146,8 @@
               "P3",
               "Q4 Anhang I Teil A Nr. 3.8.2.2 Buchstabe a (Beladen über rückwärtige Tür, Heckklappe oder Seitentür)",
               "P1 (Nutzlast ist im Verhältnis zur zulässigen Gesamtmasse erheblich)",
-              "Funktionsprinzip: Lasten laufen von der Ladefläche über die tragende Struktur in Federung und Achsen."
+              "Funktionsprinzip: Lasten laufen von der Ladefläche über die tragende Struktur in Federung und Achsen.",
+              "P14 (Mindestlänge des Ladebereichs im Verhältnis zum Radstand)"
             ],
             "schluss": "Die Tragstruktur ist entweder geschlossener Kasten oder Fahrgestell mit Rahmen; das Fahrwerk muss einen großen Lastbereich an der Hinterachse abdecken."
           },
@@ -228,16 +229,17 @@
       "absaetze": [
         {
           "absatz_id": "P8",
-          "text": "Das Lenksystem setzt den Fahrerwunsch in einen Lenkeinschlag der Vorderräder um. Die Lenkeingabe besteht aus Lenkrad und Lenksäule, der Lenkstrang aus Lenkgetriebe, Spurstange und Lenkunterstützung. Das Lenkgetriebe wandelt die Drehung der Lenksäule in eine Querbewegung der Spurstange, die Lenkunterstützung verringert die Handkraft, hydraulisch mit einer Pumpe am Nebenaggregatetrieb oder elektrisch. Nur die elektrische Ausführung bringt ohne zusätzlichen Aktor Lenkmomente des Spurhalteassistenten auf.",
+          "text": "Das Lenksystem setzt den Fahrerwunsch in einen Lenkeinschlag der Vorderräder um. Die Lenkeingabe besteht aus Lenkrad und Lenksäule, der Lenkstrang aus Lenkgetriebe, Spurstange und Lenkunterstützung. Das Lenkgetriebe wandelt die Drehung der Lenksäule in eine Querbewegung der Spurstange, die Lenkunterstützung verringert die Handkraft, hydraulisch mit einer Pumpe am Nebenaggregatetrieb, elektrohydraulisch mit elektrisch angetriebener Pumpe oder elektrisch. Nur die elektrische Ausführung bringt ohne zusätzlichen Aktor Lenkmomente des Spurhalteassistenten auf.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "Funktionsprinzip: Eine Achsschenkellenkung braucht eine Übersetzung von der Drehbewegung des Lenkrads in eine Querbewegung am Rad.",
               "P9 (abweichende Ausrüstung bei hydraulischer Servolenkung)",
-              "Ein Elektromotor in der Lenkunterstützung lässt sich von Steuergeräten unmittelbar ansteuern."
+              "Ein Elektromotor in der Lenkunterstützung lässt sich von Steuergeräten unmittelbar ansteuern.",
+              "Eine elektrisch angetriebene Pumpe löst die hydraulische Unterstützung vom Nebenaggregatetrieb, bringt aber selbst kein ansteuerbares Lenkmoment auf."
             ],
-            "schluss": "Die Art der Lenkunterstützung entscheidet, ob Assistenzfunktionen lenkend eingreifen können."
+            "schluss": "Die Art der Lenkunterstützung entscheidet, ob Assistenzfunktionen ohne zusätzlichen Aktor lenkend eingreifen können und ob die Lenkung vom Nebenaggregatetrieb abhängt."
           },
           "sicherheit": "mittel",
           "aussagetyp": "variante",
@@ -282,12 +284,12 @@
         },
         {
           "absatz_id": "P11",
-          "text": "Nach Anhang II der Verordnung (EU) 2018/858 ist für die EU-Typgenehmigung der Einbau eines ESC erforderlich; Fahrzeuge der Klasse N1 können dabei nach UN-Regelung Nr. 13 oder Nr. 13-H genehmigt werden.",
+          "text": "Nach Anhang II der Verordnung (EU) 2019/2144, die Anhang II der Verordnung (EU) 2018/858 insoweit ersetzt, ist in der EU für Fahrzeuge der Klasse N1 ein Fahrdynamik-Regelsystem vorgeschrieben; das Bremssystem wird nach UN-Regelung Nr. 13 oder Nr. 13-H genehmigt.",
           "begruendung": "belegt",
           "belege": [
             {
-              "quellen_id": "Q4",
-              "fundstelle": "Anhang II Teil I, Fußnoten 3 und 4 zur Tabelle der Rechtsakte"
+              "quellen_id": "Q5",
+              "fundstelle": "Anhang II Zeilen C4 (Bremssystem, UN-Regelungen Nr. 13 und 13-H) und C7 (Fahrdynamik-Regelsystem, UN-Regelungen Nr. 13 und 140); Anhang I Fußnote 2 (Fahrdynamik-Regelfunktion auch für N1 Pflicht); Anhang III Nr. 1 Buchstabe b Ziffer i (Ersetzung der Erläuterungen 3 und 4 in Anhang II der Verordnung (EU) 2018/858)"
             }
           ],
           "aussagetyp": "loesung",
@@ -461,13 +463,15 @@
         },
         {
           "absatz_id": "P20",
-          "text": "Die Umfeldsensorik umfasst Frontkamera und Radarsensor für das Vorfeld sowie eine Rückfahrsensorik aus Ultraschallsensoren oder Rückfahrkamera. Die Assistenzfunktionen Notbremsassistent, Spurhalteassistent, Geschwindigkeitsassistent, Müdigkeitswarnung und Rückfahrassistent werten diese Daten mit Fahrzustandsdaten aus und greifen über Bremsregelung, Lenkunterstützung und Fahrzeugmanagement ein oder warnen über das Kombiinstrument, an das auch die Reifendrucküberwachung meldet. Da beim Kastenwagen mit geschlossener Trennwand die direkte Sicht nach hinten fehlt, gewinnt die Rückfahrsensorik an Gewicht. Bei hydraulischer Lenkunterstützung bleibt die Spurhaltung auf Warnungen beschränkt.",
+          "text": "Die Umfeldsensorik umfasst Frontkamera und Radarsensor für das Vorfeld sowie eine Rückfahrsensorik aus Ultraschallsensoren oder Rückfahrkamera. Die Assistenzfunktionen Notbremsassistent, Spurhalteassistent, Geschwindigkeitsassistent, Müdigkeitswarnung und Rückfahrassistent werten diese Daten mit Fahrzustandsdaten aus und greifen über Bremsregelung, Lenkunterstützung und Fahrzeugmanagement ein oder warnen über das Kombiinstrument, an das auch die Reifendrucküberwachung meldet. Da beim Kastenwagen mit geschlossener Trennwand die direkte Sicht nach hinten fehlt, gewinnt die Rückfahrsensorik an Gewicht. Bei hydraulischer Lenkunterstützung ohne zusätzlichen Lenkaktor kann der Notfall-Spurhalteassistent nicht über die Lenkung eingreifen; er muss dann über einseitigen Bremseingriff der Bremsregelung wirken, oder das Fahrzeug nutzt die befristete Ausnahme der Verordnung mit einem Spurhaltewarnsystem.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "P19 (vorgeschriebene Assistenzfunktionen)",
-              "P8 und P9 (Lenkeingriff nur mit elektrischer Lenkunterstützung, sonst Spurhaltewarnung)",
+              "P8 (Lenkmomente ohne zusätzlichen Aktor nur mit elektrischer Lenkunterstützung)",
+              "P9 (befristete Ausnahme für hydraulische Servolenkung, ersatzweise Spurhaltewarnsystem)",
+              "Funktionsprinzip: Ein Spurhalteeingriff braucht einen ansteuerbaren Aktor in Lenkung oder Bremse.",
               "P13 (nach allen Seiten umschlossener Laderaum, Trennwand)",
               "Funktionsprinzip: Erkennung vor und hinter dem Fahrzeug braucht Sensoren mit entsprechendem Erfassungsbereich."
             ],
@@ -486,7 +490,7 @@
       "absaetze": [
         {
           "absatz_id": "P21",
-          "text": "Das System Beleuchtung und Sicht macht den Transporter sichtbar und sichert die Fahrersicht. Die Lichtanlage umfasst Scheinwerfer und Signalleuchten einschließlich Notbremslicht; bei Fahrgestellen sitzen die Heckleuchten am Aufbau und werden über die Aufbauschnittstelle versorgt. Das Sichtsystem besteht aus Scheibenwischer mit Scheibenreinigung, Außenspiegel und optional einem Kamera-Monitor-System. Da der geschlossene Kasten den Innenspiegel nutzlos macht, übernehmen Außenspiegel und Kamera die Sicht nach hinten.",
+          "text": "Das System Beleuchtung und Sicht macht den Transporter sichtbar und sichert die Fahrersicht. Die Lichtanlage umfasst Scheinwerfer und Signalleuchten einschließlich Notbremslicht; bei Fahrgestellen sitzen die Heckleuchten am Aufbau und werden über die Aufbauschnittstelle versorgt. Das Sichtsystem besteht aus Scheibenwischer mit Scheibenreinigung, Außenspiegel und optional einem Kamera-Monitor-System. Beim Kastenwagen mit geschlossener Trennwand oder ohne Heckfenster ist der Innenspiegel ohne Nutzen; dann übernehmen Außenspiegel und Kamera die Sicht nach hinten.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -496,7 +500,7 @@
               "P19 (Notbremslicht)",
               "Q6 Einleitung (keine Seitenfenster hinter der B-Säule)"
             ],
-            "schluss": "Beim Kastenwagen tragen Außenspiegel und Kamera die Rücksicht; bei Fahrgestellen gehören die Heckleuchten zum Aufbau."
+            "schluss": "Beim Kastenwagen mit geschlossener Trennwand oder ohne Heckfenster tragen Außenspiegel und Kamera die Rücksicht; bei Fahrgestellen gehören die Heckleuchten zum Aufbau."
           },
           "sicherheit": "mittel",
           "aussagetyp": "loesung",
@@ -511,14 +515,15 @@
       "absaetze": [
         {
           "absatz_id": "P22",
-          "text": "Das Thermomanagement hält Antrieb, Energiespeicher und Fahrerhaus im zulässigen Temperaturbereich. Der Kühlkreislauf mit Kühler und Kühlmittelpumpe führt die Verlustwärme von Verbrennungsmotor oder von Traktionsmaschine und Antriebswechselrichter ab. Die Heiz- und Klimaanlage mit Klimakompressor und Innenraumheizung klimatisiert das Fahrerhaus; ohne Motorabwärme heizt sie elektrisch oder über eine Wärmepumpe. Die Batterietemperierung kühlt oder heizt die Traktionsbatterie beim Fahren und Laden. Den Laderaum temperiert erst ein Kühlaufbau mit eigenem Kühlaggregat.",
+          "text": "Das Thermomanagement hält Antrieb, Energiespeicher und Fahrerhaus im zulässigen Temperaturbereich. Der Kühlkreislauf mit Kühler und Kühlmittelpumpe führt die Verlustwärme von Verbrennungsmotor oder von Traktionsmaschine und Antriebswechselrichter ab. Die Heiz- und Klimaanlage mit Klimakompressor und Innenraumheizung klimatisiert das Fahrerhaus; ohne Motorabwärme heizt sie elektrisch oder über eine Wärmepumpe. Beim batterieelektrischen Transporter treibt ein Elektromotor den Klimakompressor aus der Hochvolt-Verteilung an. Die Batterietemperierung kühlt oder heizt die Traktionsbatterie beim Fahren und Laden. Den Laderaum temperiert erst ein Kühlaufbau mit eigenem Kühlaggregat.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "Funktionsprinzip: Jeder Energiewandler erzeugt Verlustwärme, die abgeführt werden muss.",
               "P6 und P7 (elektrischer Antriebspfad, Traktionsbatterie)",
-              "P15 (Aufbau als eigener Umfang)"
+              "P15 (Aufbau als eigener Umfang)",
+              "Funktionsprinzip: Ohne Verbrennungsmotor fehlt der Riementrieb, der Klimakompressor braucht einen eigenen elektrischen Antrieb aus dem Hochvolt-Energiesystem."
             ],
             "schluss": "Das Thermomanagement umfasst Kühlkreislauf, Heiz- und Klimaanlage und beim elektrischen Transporter die Batterietemperierung."
           },
@@ -571,7 +576,7 @@
             ],
             "schluss": "Die Hauptsysteme und ihre prägenden Abhängigkeiten ergeben sich aus den vorangehenden Abschnitten."
           },
-          "sicherheit": "hoch",
+          "sicherheit": "mittel",
           "aussagetyp": "funktion",
           "herangezogene_artikel_ids": []
         }
@@ -618,7 +623,7 @@
             ],
             "schluss": "Die Energie-, Stoff-, Last- und Informationsflüsse verbinden die Hauptsysteme über benannte Schnittstellen."
           },
-          "sicherheit": "hoch",
+          "sicherheit": "mittel",
           "aussagetyp": "funktion",
           "herangezogene_artikel_ids": []
         }
@@ -640,7 +645,7 @@
             ],
             "schluss": "Alle Funktionen des Modells sind den ausführenden Systemen und Komponenten zugeordnet."
           },
-          "sicherheit": "hoch",
+          "sicherheit": "mittel",
           "aussagetyp": "funktion",
           "herangezogene_artikel_ids": []
         }
@@ -2427,6 +2432,17 @@
           "P26"
         ],
         "schnittstelle": "Befestigung Anhängevorrichtung"
+      },
+      {
+        "id": "S29",
+        "von": "E29",
+        "nach": "E107",
+        "art": "elektrisch",
+        "medium": "Hochvolt-Gleichstrom",
+        "absatz_ids": [
+          "P22"
+        ],
+        "schnittstelle": "Hochvolt-Nebenverbraucheranschluss"
       }
     ],
     "entfallene_kategorien": [],
@@ -2437,13 +2453,11 @@
         "bezeichnung": "Aufbauart",
         "alternativen": [
           "Kastenwagen mit Führerhaus und Laderaum in einer Einheit",
-          "Fahrgestell mit Führerhaus und Pritschen- oder Kofferaufbau",
-          "Doppelkabine mit zweiter Sitzreihe und verkürztem Laderaum"
+          "Fahrgestell mit Führerhaus und Pritschen- oder Kofferaufbau"
         ],
         "auswahlkriterien": [
           "Ladungsart und Ladevolumen",
           "Witterungsschutz und Diebstahlschutz der Ladung",
-          "Bedarf an Sitzplätzen für Mitfahrer",
           "Anpassung durch Aufbauhersteller",
           "Masse und Nutzlast"
         ],
@@ -2454,15 +2468,11 @@
           },
           {
             "element_id": "E98",
-            "beschreibung": "Beim geschlossenen Kasten übernehmen Außenspiegel und Kamera die Sicht nach hinten."
+            "beschreibung": "Beim geschlossenen Kasten mit geschlossener Trennwand oder ohne Heckfenster übernehmen Außenspiegel und Kamera die Sicht nach hinten."
           },
           {
             "element_id": "E73",
             "beschreibung": "Fahrgestelle brauchen eine Aufbauschnittstelle für Leuchten und Aufbaufunktionen."
-          },
-          {
-            "element_id": "E53",
-            "beschreibung": "Doppelkabine ergänzt eine zweite Sitzreihe mit Rückhaltesystemen."
           },
           {
             "element_id": "E97",
@@ -2515,6 +2525,14 @@
           {
             "element_id": "E109",
             "beschreibung": "Ohne Motorabwärme braucht die Heizung eine Wärmepumpe oder elektrische Heizung."
+          },
+          {
+            "element_id": "E113",
+            "beschreibung": "Nebenaggregatetrieb entfällt beim batterieelektrischen Antrieb; Generator, Klimakompressor und Lenkpumpe brauchen dann elektrische Antriebe."
+          },
+          {
+            "element_id": "E107",
+            "beschreibung": "Elektrischer Klimakompressor am Hochvoltnetz statt Riemenantrieb."
           }
         ],
         "absatz_ids": [
@@ -2618,7 +2636,7 @@
           },
           {
             "element_id": "E88",
-            "beschreibung": "Notbremsassistent kann den Druck direkt über den Bremskraftverstärker aufbauen."
+            "beschreibung": "Mit elektromechanischem Bremskraftverstärker steht ein zweiter, schnellerer Druckerzeuger neben der Hydraulikeinheit der Bremsregelung zur Verfügung; mit Unterdruck-Bremskraftverstärker baut allein die Bremsregelung den Druck für den Notbremsassistenten auf."
           },
           {
             "element_id": "E67",
@@ -2636,6 +2654,7 @@
         "bezeichnung": "Art der Lenkunterstützung",
         "alternativen": [
           "hydraulische Lenkunterstützung mit Pumpe am Nebenaggregatetrieb",
+          "elektrohydraulische Lenkunterstützung mit elektrisch angetriebener Pumpe",
           "elektrische Lenkunterstützung"
         ],
         "auswahlkriterien": [
@@ -2647,15 +2666,15 @@
         "auswirkungen": [
           {
             "element_id": "E89",
-            "beschreibung": "Nur mit elektrischer Lenkunterstützung greift der Spurhalteassistent lenkend ein, sonst bleibt es bei der Warnung."
+            "beschreibung": "Elektrische Lenkunterstützung erlaubt den Lenkeingriff des Spurhalteassistenten unmittelbar; bei hydraulischer oder elektrohydraulischer Ausführung braucht er einen zusätzlichen Lenkaktor oder den Bremseingriff, sonst bleibt nur die befristete Spurhaltewarnung."
           },
           {
             "element_id": "E113",
-            "beschreibung": "Hydraulische Ausführung braucht eine Pumpe am Nebenaggregatetrieb."
+            "beschreibung": "Hydraulische Ausführung braucht eine Pumpe am Nebenaggregatetrieb; bei elektrohydraulischer und elektrischer Ausführung entfällt der Nebenaggregatetrieb als Antrieb der Lenkpumpe."
           },
           {
             "element_id": "E67",
-            "beschreibung": "Elektrische Ausführung belastet das Niedervolt-Bordnetz."
+            "beschreibung": "Elektrische Ausführung und der Pumpenmotor der elektrohydraulischen Ausführung belasten das Niedervolt-Bordnetz."
           }
         ],
         "absatz_ids": [
@@ -2663,18 +2682,85 @@
           "P9",
           "P20"
         ]
+      },
+      {
+        "id": "V7",
+        "element_id": "E51",
+        "bezeichnung": "Kabinenausführung",
+        "alternativen": [
+          "Einzelkabine mit einer Sitzreihe",
+          "Doppelkabine mit zweiter Sitzreihe"
+        ],
+        "auswahlkriterien": [
+          "Bedarf an Sitzplätzen für Mitfahrer",
+          "erforderliche Länge des Ladebereichs"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E53",
+            "beschreibung": "Doppelkabine ergänzt eine zweite Sitzreihe."
+          },
+          {
+            "element_id": "E56",
+            "beschreibung": "Rückhaltesysteme für die zweite Sitzreihe kommen hinzu."
+          },
+          {
+            "element_id": "E60",
+            "beschreibung": "Doppelkabine verkürzt den Laderaum beim Kastenwagen bzw. die Pritsche beim Fahrgestell."
+          }
+        ],
+        "absatz_ids": [
+          "P12",
+          "P13"
+        ]
+      },
+      {
+        "id": "V8",
+        "element_id": "E3",
+        "bezeichnung": "Radstand, Länge und Dachhöhe",
+        "alternativen": [
+          "kurzer Radstand mit Normaldach",
+          "langer Radstand mit Hochdach"
+        ],
+        "auswahlkriterien": [
+          "Ladevolumen und Ladungsabmessungen",
+          "Wendekreis und Rangieren im Lieferverkehr",
+          "Durchfahrtshöhen am Einsatzort"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E60",
+            "beschreibung": "Radstand, Länge und Dachhöhe bestimmen das Laderaumvolumen."
+          },
+          {
+            "element_id": "E20",
+            "beschreibung": "Die Gelenkwellenlänge ändert sich mit dem Radstand."
+          },
+          {
+            "element_id": "E68",
+            "beschreibung": "Die Leitungssatzlänge ändert sich mit Fahrzeuglänge und Radstand."
+          },
+          {
+            "element_id": "E28",
+            "beschreibung": "Der Radstand bestimmt den Bauraum der Traktionsbatterie zwischen den Achsen."
+          }
+        ],
+        "absatz_ids": [
+          "P4",
+          "P14"
+        ]
       }
     ],
     "klaerungsfragen": [
       {
         "id": "K1",
-        "frage": "Soll der Transporter als Kastenwagen, als Fahrgestell mit Führerhaus für einen Pritschen- oder Kofferaufbau oder als Doppelkabine ausgeführt werden?",
+        "frage": "Soll der Transporter als Kastenwagen oder als Fahrgestell mit Führerhaus für einen Pritschen- oder Kofferaufbau ausgeführt werden?",
         "element_ids": [
           "E59",
           "E3"
         ],
         "anlass": "architekturentscheidung",
-        "relevanz": "Davon hängen Tragstruktur, Sicht nach hinten, Sitzanordnung und Aufbauschnittstelle ab.",
+        "relevanz": "Davon hängen Tragstruktur, Sicht nach hinten und Aufbauschnittstelle ab.",
         "variante_ids": [
           "V1"
         ]
@@ -2725,21 +2811,22 @@
           "E112"
         ],
         "anlass": "architekturentscheidung",
-        "relevanz": "Davon hängen Unterdruckversorgung, Rekuperation und Eingriff des Notbremsassistenten ab.",
+        "relevanz": "Davon hängen Unterdruckversorgung, Überblendung mit der Rekuperation und Druckaufbaudynamik bei Assistenzeingriffen ab.",
         "variante_ids": [
           "V5"
         ]
       },
       {
         "id": "K6",
-        "frage": "Soll die Lenkunterstützung elektrisch ausgeführt werden, damit der Spurhalteassistent lenkend eingreifen kann?",
+        "frage": "Soll die Lenkunterstützung elektrisch ausgeführt werden, oder soll der Spurhalteassistent bei hydraulischer Lenkunterstützung über einen Bremseingriff oder einen zusätzlichen Lenkaktor wirken?",
         "element_ids": [
           "E40",
           "E34",
-          "E89"
+          "E89",
+          "E48"
         ],
         "anlass": "architekturentscheidung",
-        "relevanz": "Davon hängen der Funktionsumfang der Spurhaltung und der Nebenaggregatetrieb ab.",
+        "relevanz": "Davon hängen der Funktionsumfang der Spurhaltung, die Eingriffsschnittstelle zur Bremsregelung und der Nebenaggregatetrieb ab.",
         "variante_ids": [
           "V6"
         ]
@@ -2767,7 +2854,8 @@
         "anlass": "anforderung",
         "relevanz": "Davon hängen Sitzanordnung, Rückhaltesysteme und Gestaltung der Trennwand ab.",
         "variante_ids": [
-          "V1"
+          "V1",
+          "V7"
         ]
       },
       {
@@ -2861,15 +2949,29 @@
       },
       {
         "id": "K17",
-        "frage": "Welche zulässige Gesamtmasse und Nutzlast soll die Fahrzeugstruktur tragen, und soll daraus auch eine schwerere Variante oberhalb der leichten Nutzfahrzeuge abgeleitet werden?",
+        "frage": "Welche zulässige Gesamtmasse innerhalb der Fahrzeugklasse der leichten Nutzfahrzeuge, welche Nutzlast und welche zulässigen Achslasten soll die Fahrzeugstruktur tragen?",
         "element_ids": [
           "E2",
           "E8"
         ],
         "anlass": "anforderung",
-        "relevanz": "Davon hängen Auslegung von Federung, Achse, Rahmen und Bremse ab.",
+        "relevanz": "Davon hängen Auslegung von Federung, Achse, Rahmen, Bereifung und Bremse sowie die verbleibende Nutzlast nach Batteriemasse ab.",
         "variante_ids": [
+          "V2",
           "V4"
+        ]
+      },
+      {
+        "id": "K18",
+        "frage": "Welche Ladungsabmessungen und welches Ladevolumen muss der Laderaum aufnehmen, und welche Fahrzeuglänge und Durchfahrtshöhe sind im Einsatzgebiet zulässig?",
+        "element_ids": [
+          "E3",
+          "E60"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Radstand, Länge und Dachhöhe und damit Rohbau, Gelenkwelle, Leitungssatz und Bauraum der Traktionsbatterie ab.",
+        "variante_ids": [
+          "V8"
         ]
       }
     ],
@@ -2982,9 +3084,9 @@
         ],
         "regelwerke": [
           {
-            "bezeichnung": "Verordnung (EU) 2018/858, Fahrdynamikregelung erforderlich, Klasse N1 genehmigungsfähig nach UN-Regelung Nr. 13 oder Nr. 13-H (EU)",
-            "quellen_id": "Q4",
-            "fundstelle": "Anhang II Teil I, Fußnoten 3 und 4"
+            "bezeichnung": "Verordnung (EU) 2019/2144, Bremssystem nach UN-Regelung Nr. 13 oder Nr. 13-H und Fahrdynamik-Regelsystem nach UN-Regelung Nr. 13 oder Nr. 140 (EU, Klassen M und N einschließlich N1; Fahrdynamik-Regelfunktion auch für N1 Pflicht)",
+            "quellen_id": "Q5",
+            "fundstelle": "Anhang II, Zeilen C4 und C7; Anhang I, Fußnote 2"
           }
         ]
       },
@@ -3140,6 +3242,47 @@
           "Abtriebsleistung des Nebenabtriebs",
           "Verfügbarkeit im Stand"
         ]
+      },
+      {
+        "id": "R15",
+        "element_ids": [
+          "E13"
+        ],
+        "thema": "Energieverbrauch und Emissionen",
+        "kenngroessen": [
+          "Kraftstoffverbrauch",
+          "elektrischer Energieverbrauch",
+          "CO2-Emissionen",
+          "Schadstoffemissionen",
+          "Fahrgeräusch"
+        ]
+      },
+      {
+        "id": "R16",
+        "element_ids": [
+          "E27",
+          "E28"
+        ],
+        "thema": "Elektrische Sicherheit des Hochvolt-Energiesystems",
+        "kenngroessen": [
+          "Isolationswiderstand",
+          "Berührschutz",
+          "Abschaltzeit nach Unfall",
+          "Batterieschutz bei Seiten- und Unterbodenaufprall",
+          "Verhalten bei thermischem Durchgehen"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "Verordnung (EU) 2019/2144 mit UN-Regelung Nr. 100, elektrische Betriebssicherheit (EU, Klassen M1 bis M3 und N1 bis N3)",
+            "quellen_id": "Q5",
+            "fundstelle": "Artikel 4 Absatz 5 Buchstabe a; Anhang II, Zeile A19"
+          },
+          {
+            "bezeichnung": "Verordnung (EU) 2019/2144 mit UN-Regelung Nr. 34, Heckaufprall einschließlich elektrischer Sicherheit nach einem Unfall (EU, Klassen M1 bis 3 500 kg und N1)",
+            "quellen_id": "Q5",
+            "fundstelle": "Anhang II, Zeile A27"
+          }
+        ]
       }
     ]
   },
@@ -3151,6 +3294,8 @@
     "Recherche: Fachliteratur zu Antriebsanordnung und Fahrwerksbauarten von Transportern (Vorderachse, Hinterachsfederung, Front- versus Heckantrieb), Suchbegriffe „Transporter Fahrwerk Hinterachse Blattfeder“, „Kleintransporter Frontantrieb Heckantrieb Ladeboden“.",
     "Recherche: Fachliteratur oder Behördenquellen zu batterieelektrischen Transportern (Batterieanordnung, Nutzlastverlust, Ladestrategie), Suchbegriffe „Elektrotransporter Batterieanordnung Nutzlast“, „battery electric van architecture“.",
     "Recherche: Führerscheinregelungen für schwerere alternativ angetriebene Transporter in der EU (Richtlinie 2006/126/EG und nationale Umsetzung) als Abgrenzung zur Massengrenze.",
-    "Recherche: Herstellerunterlagen mehrerer Baureihen zu Aufbauschnittstelle und Aufbaurichtlinien (elektrische Signale, Befestigungspunkte), Suchbegriff „Aufbaurichtlinie Transporter“."
+    "Recherche: Herstellerunterlagen mehrerer Baureihen zu Aufbauschnittstelle und Aufbaurichtlinien (elektrische Signale, Befestigungspunkte), Suchbegriff „Aufbaurichtlinie Transporter“.",
+    "Recherche: Abgas- und CO2-Vorschriften für Klasse N1 in der EU als Regelwerke zum Anforderungsthema Energieverbrauch und Emissionen, Suchbegriff „Euro 6 leichte Nutzfahrzeuge N1“.",
+    "Recherche: Anforderungen an Batterieschutz bei Unterbodenaufprall und thermischem Durchgehen der Traktionsbatterie, Suchbegriff „elektrische Sicherheit Hochvolt EU-Typgenehmigung, UN-Regelung zu Elektrofahrzeugen“."
   ]
 }
