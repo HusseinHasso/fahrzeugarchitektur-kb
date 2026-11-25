@@ -4,7 +4,7 @@
   "artikeltyp": "blatt",
   "titel": "ATV",
   "betrachtungsumfang": "Generische Referenzarchitektur des vierrädrigen ATV (Quad) mit Reitsitz und Lenker für den Geländeeinsatz in Freizeit, Sport und Arbeit, für einen Fahrer und optional als Tandem-ATV mit einem Beifahrer; Sport-, Nutz- und Jugend-ATVs sowie straßenzugelassene Ausführungen (in der EU etwa Unterklasse L7e-B1) sind als Varianten einbezogen. Antriebsarten: Verbrennungsmotor (Ottomotor) mit Kraftstoffanlage sowie batterieelektrischer Antrieb mit Traktionsmaschine und Traktionsbatterie. Ausgeschlossen sind Side-by-Side-Fahrzeuge (UTV, EU-Unterklasse L7e-B2), dreirädrige ATVs, sechsrädrige und Raupenausführungen, amphibische ATVs, Diesel-, Hybrid- und sonstige Antriebe sowie Straßenquads der Unterklassen L6e-A und L7e-A. Rechtliche Vorgaben sind für die USA (16 CFR Part 1420 mit ANSI/SVIA 1) und die EU (Verordnung (EU) Nr. 168/2013) belegt, ergänzend Arbeitsschutzhinweise für Großbritannien (HSE) und Zulassungsangaben für Deutschland.",
-  "status": "in_arbeit",
+  "status": "geprueft",
   "quellenzugriff": "ja",
   "kindartikel_ids": [],
   "quellen": [
@@ -207,7 +207,7 @@
         },
         {
           "absatz_id": "P7",
-          "text": "Fahrzeugstruktur und Fahrwerk gliedern sich in die Tragstruktur aus Rahmen, Verkleidung und Unterfahrschutz und das Fahrwerk aus Vorderradaufhängung, Hinterradaufhängung, Federung sowie Räder und Reifen. Die Radlasten fließen über Radaufhängungen und Federung in den Rahmen, der auch Antriebseinheit, Energiespeicher, Sitzbank, Gepäckträger und Anhängevorrichtung trägt; der Unterfahrschutz schützt Rahmen und Antrieb bei Bodenberührung. Die große Bodenfreiheit hebt den Schwerpunkt, sodass Spurweite, Radstand und Schwerpunktlage die Kippneigung bestimmen. Die Hinterradaufhängung legt fest, ob der Endantrieb eine Starrachse oder Antriebswellen speist.",
+          "text": "Die Tragstruktur umfasst Rahmen, Verkleidung und Unterfahrschutz, das Fahrwerk Vorderrad- und Hinterradaufhängung, Federung sowie Räder und Reifen. Die Radlasten fließen über Radaufhängungen und Federung in den Rahmen, der auch Antriebseinheit, Energiespeicher, Sitzbank, Gepäckträger und Anhängevorrichtung trägt; der Unterfahrschutz schützt Rahmen und Antrieb bei Bodenberührung. Die große Bodenfreiheit hebt den Schwerpunkt, sodass Spurweite, Radstand und Schwerpunktlage die Kippneigung bestimmen. Die Hinterradaufhängung legt fest, ob der Endantrieb eine Starrachse oder Antriebswellen speist.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -258,14 +258,16 @@
         },
         {
           "absatz_id": "P10",
-          "text": "Das Antriebssystem gliedert sich in die Antriebseinheit, je nach Antriebsart Verbrennungsmotor oder Traktionsmaschine mit Leistungselektronik, und die Kraftübertragung aus Kupplung, Getriebe, Kettenantrieb oder Gelenkwelle und Differenzial. Das Drehmoment fließt vom Motor über Kupplung und Getriebe zum Endantrieb und zu den Rädern, beim Allradantrieb über eine Gelenkwelle auch zur Vorderachse. Die Abgasanlage führt das Abgas ab. Beim batterieelektrischen ATV speist die Traktionsbatterie über die Leistungselektronik die Traktionsmaschine; Abgasanlage und Schaltkupplung entfallen.",
+          "text": "Das Antriebssystem gliedert sich in die Antriebseinheit, Verbrennungsmotor oder Traktionsmaschine mit Leistungselektronik, und die Kraftübertragung aus Kupplung, Getriebe, Kettenantrieb oder Gelenkwelle und Differenzial. Das Drehmoment fließt über Kupplung und Getriebe zum Endantrieb, bei Allradantrieb per Gelenkwelle auch zur Vorderachse, vorn und bei Einzelradaufhängung über Achsgetriebe und Antriebswellen zu den Rädern. Die Abgasanlage führt das Abgas ab. Beim batterieelektrischen ATV speist die Traktionsbatterie über die Leistungselektronik die Traktionsmaschine; Abgasanlage und Schaltkupplung entfallen.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "P8",
+              "P5",
               "P9",
-              "Ein elektrischer Antrieb braucht Energiespeicher, Leistungsstellung und Wandler; er erzeugt kein Abgas (Funktionsprinzip)."
+              "Ein elektrischer Antrieb braucht Energiespeicher, Leistungsstellung und Wandler; er erzeugt kein Abgas (Funktionsprinzip).",
+              "Einzeln gefederte Räder bewegen sich gegenüber dem Achsgetriebe und brauchen deshalb je Rad eine gelenkige Antriebswelle (Funktionsprinzip)."
             ],
             "schluss": "Das Antriebssystem besteht aus Antriebseinheit und Kraftübertragung, deren Bestandteile mit Antriebsart und Antriebskonfiguration wechseln."
           },
@@ -337,16 +339,17 @@
         },
         {
           "absatz_id": "P14",
-          "text": "Das Lenksystem besteht aus dem Lenker, der auch die Bedienelemente trägt, der Lenkübertragung aus Lenksäule und Lenkgestänge zu den Achsschenkeln der Vorderradaufhängung und optional einer elektrischen Lenkunterstützung an der Lenksäule. Diese wird vom Fahrzeugmanagement angesteuert und erhöht den Leistungsbedarf an Generator und Bordnetz.",
+          "text": "Das Lenksystem besteht aus dem Lenker, der auch die Bedienelemente trägt, der Lenkübertragung aus Lenksäule und Lenkgestänge zu den Achsschenkeln und optional einer elektrischen Lenkunterstützung an der Lenksäule. Deren eigenes Steuergerät wertet Lenkmoment und Fahrgeschwindigkeit aus; sie erhöht den Leistungsbedarf an Generator und Bordnetz, und ob sie am Fahrzeugmanagement hängt, ist Bauweisenentscheidung.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "P5",
               "P13",
-              "Eine Lenkbewegung am Lenker muss mechanisch zu den gelenkten Vorderrädern übertragen werden (Funktionsprinzip)."
+              "Eine Lenkbewegung am Lenker muss mechanisch zu den gelenkten Vorderrädern übertragen werden (Funktionsprinzip).",
+              "Eine elektrische Lenkunterstützung muss das Lenkmoment des Fahrers erfassen und daraus mit einer eigenen Regelung das Unterstützungsmoment bilden (Funktionsprinzip)."
             ],
-            "schluss": "Das Lenksystem gliedert sich in Lenker, Lenkübertragung und optionale Lenkunterstützung mit Schnittstellen zu Fahrwerk, Bordnetz und Fahrzeugmanagement."
+            "schluss": "Das Lenksystem gliedert sich in Lenker, Lenkübertragung und optionale Lenkunterstützung mit eigenem Steuergerät und Schnittstellen zu Fahrwerk und Bordnetz; die Anbindung an das Fahrzeugmanagement ist eine Bauweisenentscheidung."
           },
           "sicherheit": "mittel",
           "aussagetyp": "modellannahme",
@@ -500,7 +503,7 @@
       "absaetze": [
         {
           "absatz_id": "P22",
-          "text": "Elektrik und Elektronik umfassen das Niedervolt-Bordnetz mit Leitungssatz, Sicherungen und Stromverteiler, die Startanlage und die Steuergeräte, beim Einspritzmotor mindestens das Motorsteuergerät, beim Elektroantrieb zusätzlich Batteriemanagement und Leistungselektronik. Die Starterbatterie speist über das Bordnetz Startanlage, Zündung, Beleuchtung, Anzeigen und Nebenverbraucher; die Steuergeräte kommunizieren über Einzelleitungen oder einen Fahrzeugbus. Steckverbinder und Leitungsführung müssen gegen Wasser, Schlamm, Staub und Erschütterungen geschützt sein.",
+          "text": "Elektrik und Elektronik umfassen Niedervolt-Bordnetz mit Leitungssatz, Sicherungen und Stromverteiler, Startanlage und Steuergeräte: beim Einspritzmotor mindestens das Motorsteuergerät, beim Elektroantrieb zusätzlich Batteriemanagement und Leistungselektronik. Die Starterbatterie speist über das Bordnetz Startanlage, Zündung, Beleuchtung, Anzeigen und Nebenverbraucher; die Steuergeräte kommunizieren über Einzelleitungen oder einen Fahrzeugbus. Steckverbinder und Leitungen brauchen Schutz gegen Wasser, Schlamm, Staub und Erschütterungen.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -525,7 +528,7 @@
       "absaetze": [
         {
           "absatz_id": "P23",
-          "text": "Die Norm ANSI/SVIA-1-2001 verlangte für Jugend-ATVs der Kategorie Y-6 (6 bis 11 Jahre) eine Begrenzung auf höchstens 10 mph, anhebbar bis 15 mph, und für Y-12 (12 bis 16 Jahre) auf höchstens 15 mph, anhebbar bis 30 mph. Der CPSC-Entwurf von 2006 sah für Jugend-ATVs zusätzlich Automatikgetriebe vor.",
+          "text": "In den USA verlangte die Norm ANSI/SVIA-1-2001 für Jugend-ATVs der Kategorie Y-6 (6 bis 11 Jahre) eine Begrenzung auf höchstens 10 mph, anhebbar bis 15 mph, und für Y-12 (12 bis 16 Jahre) auf höchstens 15 mph, anhebbar bis 30 mph. Der CPSC-Entwurf von 2006 sah für Jugend-ATVs zusätzlich Automatikgetriebe vor.",
           "begruendung": "belegt",
           "belege": [
             {
@@ -538,7 +541,7 @@
         },
         {
           "absatz_id": "P24",
-          "text": "Fahrzeugsteuerung und Information umfassen Fahrzeugmanagement, Geschwindigkeitsbegrenzer und Diagnose. Das Fahrzeugmanagement steuert Einspritzung und Zündung oder die Momentvorgabe an die Leistungselektronik, wertet Gangstellung und Bremse für die Startfreigabe aus und schaltet gegebenenfalls den Allradantrieb. Der Geschwindigkeitsbegrenzer drosselt bei Jugend-ATVs die Antriebsleistung, die Diagnose speichert Fehler für die Werkstatt.",
+          "text": "Fahrzeugsteuerung und Information umfassen Fahrzeugmanagement, Geschwindigkeitsbegrenzer und Diagnose. Das Fahrzeugmanagement steuert Einspritzung und Zündung oder die Momentvorgabe an die Leistungselektronik, wertet Gangstellung und Bremse für die Startfreigabe aus und schaltet gegebenenfalls den Allradantrieb. Der Geschwindigkeitsbegrenzer drosselt bei Jugend-ATVs die Leistung, die Diagnose speichert Fehler.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -584,15 +587,16 @@
         },
         {
           "absatz_id": "P26",
-          "text": "Fahrerassistenz und Sicherheit bestehen im Grundaufbau aus Startsperre, Notausschalter und optionalem Überschlagschutz. Die Startsperre gibt die Startanlage abhängig von Gangstellung und Bremse frei, der Notausschalter unterbricht über das Fahrzeugmanagement den Antrieb, wenn sich die Leine löst. Den übrigen Insassenschutz leisten Fahrstabilität, Fahrtechnik und Schutzausrüstung.",
+          "text": "Fahrerassistenz und Sicherheit gliedern sich in Abschalteinrichtungen und optionalen Überschlagschutz. Im Grundaufbau gehören dazu die Startsperre, die die Startanlage abhängig von Gangstellung oder Bremse freigibt, und der Motorstoppschalter am Lenker; im Renneinsatz kommt ein Notausschalter mit Abreißleine hinzu, der über das Fahrzeugmanagement den Antrieb unterbricht. Vom nachrüstbaren Überschlagschutz rät die britische Arbeitsschutzbehörde für Reitsitz-ATVs ab. Übrigen Insassenschutz leisten Fahrstabilität, Fahrtechnik und Schutzausrüstung.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
+              "P17",
               "P25",
               "P19"
             ],
-            "schluss": "Fahrerassistenz und Sicherheit beschränken sich auf Startsperre, Notausschalter und optionalen Überschlagschutz."
+            "schluss": "Fahrerassistenz und Sicherheit gliedern sich in Abschalteinrichtungen mit Startsperre und Motorstoppschalter im Grundaufbau und dem Notausschalter als Option für Sport- und Renneinsatz sowie den Überschlagschutz als nachrüstbare Option, von der für ATVs im Reitsitz abgeraten wird."
           },
           "sicherheit": "mittel",
           "aussagetyp": "modellannahme",
@@ -707,7 +711,7 @@
       "absaetze": [
         {
           "absatz_id": "P32",
-          "text": "Auf oberster Ebene besteht das ATV aus Fahrzeugstruktur und Fahrwerk, Antriebssystem, Energieversorgungssystem, Lenksystem, Bremssystem, Fahrgastraum, Aufbau und Ladung, Elektrik und Elektronik, Fahrzeugsteuerung und Information, Fahrerassistenz und Sicherheit, Beleuchtung und Sicht, Thermomanagement sowie Neben- und Versorgungssystemen. Prägend sind offener Reitsitz mit Lenker, Fahrwerk mit großer Bodenfreiheit und Niederdruckreifen, kompakter Antriebsstrang mit oder ohne Allradantrieb und der Fahrer als Teil der Stabilisierung. Einsatzklasse, Antriebsart und Zulassungsart verändern mehrere Hauptsysteme zugleich.",
+          "text": "Auf oberster Ebene besteht das ATV aus dreizehn Hauptsystemen, von Fahrzeugstruktur und Fahrwerk bis zu den Neben- und Versorgungssystemen. Prägend sind offener Reitsitz mit Lenker, Fahrwerk mit großer Bodenfreiheit und Niederdruckreifen, kompakter Antriebsstrang mit oder ohne Allradantrieb und der Fahrer als Teil der Stabilisierung. Einsatzklasse, Antriebsart und Zulassungsart verändern mehrere Hauptsysteme zugleich.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -720,7 +724,7 @@
             ],
             "schluss": "Das ATV setzt sich aus dreizehn gekoppelten Hauptsystemen zusammen, deren Ausprägung von wenigen übergreifenden Entscheidungen abhängt."
           },
-          "sicherheit": "hoch",
+          "sicherheit": "mittel",
           "aussagetyp": "modellannahme",
           "herangezogene_artikel_ids": []
         }
@@ -772,7 +776,7 @@
       "absaetze": [
         {
           "absatz_id": "P35",
-          "text": "Stoff: Kraftstoffanlage an Verbrennungsmotor an Abgasanlage. Mechanisch: Verbrennungsmotor an Kraftübertragung an Räder und Reifen, Lenkübertragung an Vorderradaufhängung, Fahrwerk und Gepäckträger an Tragstruktur. Elektrisch: Traktionsbatterie an Leistungselektronik an Traktionsmaschine, Ladeeinrichtung an Traktionsbatterie, Generator an Starterbatterie an Bordnetz an Verbraucher. Hydraulisch: Bremsbetätigung an Radbremsen. Thermisch: Verbrennungsmotor an Kühlkreislauf, Batterietemperierung an Traktionsbatterie. Information: Bedienelemente und Steuergeräte an Fahrzeugmanagement an Anzeigeelemente, Geschwindigkeitsbegrenzer an Antriebseinheit, Startsperre an Startanlage, Bremsbetätigung an Leuchten.",
+          "text": "Stoff: Kraftstoffanlage an Verbrennungsmotor an Abgasanlage. Mechanisch: Verbrennungsmotor an Kraftübertragung, teils über Antriebswellen, an Räder und Reifen, Lenkübertragung an Vorderradaufhängung, Fahrwerk und Gepäckträger an Tragstruktur. Elektrisch: Traktionsbatterie an Leistungselektronik an Traktionsmaschine, Ladeeinrichtung an Traktionsbatterie, Generator an Starterbatterie an Bordnetz an Verbraucher. Hydraulisch: Bremsbetätigung an Radbremsen. Thermisch: Verbrennungsmotor an Kühlkreislauf, Batterietemperierung an Traktionsbatterie. Information: Bedienelemente und Steuergeräte an Fahrzeugmanagement an Anzeigeelemente, Geschwindigkeitsbegrenzer an Antriebseinheit, Startsperre an Startanlage, Bremsbetätigung an Leuchten.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -803,7 +807,7 @@
       "absaetze": [
         {
           "absatz_id": "P36",
-          "text": "Fahrzeuglasten tragen – Tragstruktur, Fahrwerk; Energie speichern – Kraftstofftank, Traktionsbatterie, Starterbatterie; Treibstoff fördern – Kraftstoffanlage; Elektrische Energie verteilen – Niedervolt-Bordnetz, Gleichspannungswandler; Traktionsbatterie laden – Ladeeinrichtung; Antriebsleistung erzeugen – Verbrennungsmotor, Traktionsmaschine, Leistungselektronik; Drehmoment übertragen – Kraftübertragung; Fahrzeug fortbewegen – Antriebssystem, Räder und Reifen; Fahrzeug lenken – Lenker, Lenkübertragung, Lenkunterstützung; Fahrzeug verzögern – Betriebsbremse; Fahrzeug festhalten – Feststellbremse; Bremsenergie zurückgewinnen – Traktionsmaschine, Leistungselektronik; Fahrereingaben erfassen – Bedienelemente; Fahrerinformationen anzeigen – Anzeigeelemente; Ladung aufnehmen – Gepäckträger, Anbaugeräte; Anhänger ziehen – Anhängevorrichtung; Daten übertragen – Steuergeräte, Leitungssatz; Fahrzeugzustand überwachen – Fahrzeugmanagement, Diagnose; Fahrgeschwindigkeit begrenzen – Geschwindigkeitsbegrenzer; Insassen schützen – Startsperre, Notausschalter, Überschlagschutz; Fahrzeugumgebung ausleuchten – Scheinwerfer; Lichtsignale abgeben – Leuchten, Rückstrahler, Hupe; Fahrersicht sicherstellen – Rückspiegel; Betriebstemperatur regeln – Kühlkreislauf, Hitzeschutz, Batterietemperierung; Arbeitsgeräte versorgen – Seilwinde, Anhängersteckdose.",
+          "text": "Fahrzeuglasten tragen – Tragstruktur, Fahrwerk; Energie speichern – Kraftstofftank, Traktionsbatterie, Starterbatterie; Treibstoff fördern – Kraftstoffanlage; Elektrische Energie verteilen – Niedervolt-Bordnetz, Gleichspannungswandler; Traktionsbatterie laden – Ladeeinrichtung; Antriebsleistung erzeugen – Verbrennungsmotor, Traktionsmaschine, Leistungselektronik; Drehmoment übertragen – Kraftübertragung; Fahrzeug fortbewegen – Antriebssystem, Räder und Reifen; Fahrzeug lenken – Lenker, Lenkübertragung, Lenkunterstützung; Fahrzeug verzögern – Betriebsbremse; Fahrzeug festhalten – Feststellbremse; Bremsenergie zurückgewinnen – Traktionsmaschine, Leistungselektronik; Fahrereingaben erfassen – Bedienelemente; Fahrerinformationen anzeigen – Anzeigeelemente; Ladung aufnehmen – Gepäckträger, Anbaugeräte; Anhänger ziehen – Anhängevorrichtung; Daten übertragen – Steuergeräte, Leitungssatz; Fahrzeugzustand überwachen – Fahrzeugmanagement, Diagnose; Fahrgeschwindigkeit begrenzen – Geschwindigkeitsbegrenzer; Insassen schützen – Abschalteinrichtungen mit Startsperre, Motorstoppschalter und Notausschalter; Fahrzeugumgebung ausleuchten – Scheinwerfer; Lichtsignale abgeben – Leuchten, Rückstrahler, Hupe; Fahrersicht sicherstellen – Rückspiegel; Betriebstemperatur regeln – Kühlkreislauf, Hitzeschutz, Batterietemperierung; Arbeitsgeräte versorgen – Seilwinde, Anhängersteckdose.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -1046,6 +1050,24 @@
         "eltern_id": "E17",
         "absatz_ids": [
           "P8",
+          "P10"
+        ]
+      },
+      {
+        "id": "E95",
+        "name": "Achsgetriebe",
+        "typ": "komponente",
+        "eltern_id": "E17",
+        "absatz_ids": [
+          "P10"
+        ]
+      },
+      {
+        "id": "E96",
+        "name": "Antriebswelle",
+        "typ": "komponente",
+        "eltern_id": "E17",
+        "absatz_ids": [
           "P10"
         ]
       },
@@ -1546,12 +1568,31 @@
         "kategorie": "assistenz_sicherheit"
       },
       {
+        "id": "E97",
+        "name": "Abschalteinrichtungen",
+        "typ": "subsystem",
+        "eltern_id": "E73",
+        "absatz_ids": [
+          "P26"
+        ]
+      },
+      {
         "id": "E74",
         "name": "Startsperre",
         "typ": "komponente",
-        "eltern_id": "E73",
+        "eltern_id": "E97",
         "absatz_ids": [
           "P25",
+          "P26"
+        ]
+      },
+      {
+        "id": "E94",
+        "name": "Motorstoppschalter",
+        "typ": "komponente",
+        "eltern_id": "E97",
+        "absatz_ids": [
+          "P17",
           "P26"
         ]
       },
@@ -1559,7 +1600,7 @@
         "id": "E75",
         "name": "Notausschalter",
         "typ": "komponente",
-        "eltern_id": "E73",
+        "eltern_id": "E97",
         "absatz_ids": [
           "P25",
           "P26"
@@ -1976,8 +2017,8 @@
         "name": "Insassen schützen",
         "ausgefuehrt_von": [
           "E74",
-          "E75",
-          "E76"
+          "E94",
+          "E75"
         ],
         "absatz_ids": [
           "P25",
@@ -2376,6 +2417,18 @@
           "P35"
         ],
         "schnittstelle": "Anhängersteckdose"
+      },
+      {
+        "id": "S29",
+        "von": "E96",
+        "nach": "E11",
+        "art": "mechanisch",
+        "medium": "Drehmoment",
+        "absatz_ids": [
+          "P10",
+          "P35"
+        ],
+        "schnittstelle": "Radnabe"
       }
     ],
     "entfallene_kategorien": [],
@@ -2570,7 +2623,7 @@
           },
           {
             "element_id": "E19",
-            "beschreibung": "Automatikgetriebe beim Jugend-ATV, Verzicht auf Rückwärtsgang beim Motocross-Sportquad"
+            "beschreibung": "Automatikgetriebe beim Jugend-ATV nach früherem US-Regelungsentwurf der Verbraucherschutzbehörde vorgeschlagen, kein geltendes Recht; geltende Anforderungen der aktuellen Normausgabe prüfen. Verzicht auf Rückwärtsgang beim Motocross-Sportquad"
           },
           {
             "element_id": "E7",
@@ -2627,14 +2680,15 @@
         "bezeichnung": "Zulassungsart",
         "alternativen": [
           "Reines Geländefahrzeug ohne Straßenzulassung",
-          "Straßenzulassung mit Typgenehmigung als Gelände-Quad",
-          "Nationale Zulassung als Pkw, vierrädriges Kraftfahrzeug oder land- und forstwirtschaftliche Zugmaschine"
+          "EU-Typgenehmigung als Gelände-Quad der Fahrzeugklasse L",
+          "Nationale Einzelzulassung, in Deutschland etwa als land- und forstwirtschaftliche Zugmaschine"
         ],
         "auswahlkriterien": [
           "Einsatz auf öffentlichen Straßen",
           "Zielmärkte und dortige Zulassungswege",
           "Leistung und Masse des Fahrzeugs",
-          "Mitnahme eines Beifahrers"
+          "Mitnahme eines Beifahrers",
+          "Gültigkeit der Zulassung in anderen Mitgliedstaaten"
         ],
         "auswirkungen": [
           {
@@ -2689,7 +2743,7 @@
           },
           {
             "element_id": "E70",
-            "beschreibung": "Fahrzeugmanagement steuert die Unterstützung an"
+            "beschreibung": "Fahrzeugmanagement liefert gegebenenfalls Geschwindigkeitssignal"
           }
         ],
         "absatz_ids": [
@@ -2824,7 +2878,7 @@
           "E38"
         ],
         "anlass": "architekturentscheidung",
-        "relevanz": "Davon hängen Lenksäule, Bordnetzleistung und Ansteuerung durch das Fahrzeugmanagement ab.",
+        "relevanz": "Davon hängen Lenksäule, Bordnetzleistung und die Anbindung an das Fahrzeugmanagement ab.",
         "variante_ids": [
           "V8"
         ]
@@ -2914,6 +2968,19 @@
         ],
         "anlass": "anforderung",
         "relevanz": "Davon hängen Beleuchtung, Rückspiegel, Hupe, Geschwindigkeitsanzeige und Anhängevorrichtung ab.",
+        "variante_ids": [
+          "V7"
+        ]
+      },
+      {
+        "id": "K19",
+        "frage": "In welchen Zielmärkten soll das ATV in Verkehr gebracht werden, und als Geländefahrzeug, als straßenzugelassenes Fahrzeug oder als beides?",
+        "element_ids": [
+          "E1",
+          "E77"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen die verbindlichen Regelwerke, die Fahrzeugklasse und damit Beleuchtung, Kraftstoffanlage, Bremsprüfung und Höchstgeschwindigkeit ab.",
         "variante_ids": [
           "V7"
         ]
@@ -3115,7 +3182,8 @@
           "Schutzart gegen Wasser und Staub",
           "Schwingfestigkeit",
           "Betriebstemperaturbereich",
-          "Störfestigkeit und Störaussendung"
+          "Störfestigkeit und Störaussendung",
+          "Watfähigkeit (zulässige Wattiefe)"
         ],
         "regelwerke": [
           {
@@ -3204,7 +3272,7 @@
     "Glossarvorschlag: Fahrgeschwindigkeit begrenzen (fahrzeugartspezifische Funktion des Geschwindigkeitsbegrenzers bei Jugend-ATVs; keine gelistete Funktion deckt die einstellbare Begrenzung der Höchstgeschwindigkeit ab, „Fahrzeugzustand überwachen“ und „Fahrzeug verzögern“ sind keine Synonyme).",
     "Glossarvorschlag: Fahrerplatz als Hauptsystemname für bedienraum bei Krafträdern und ATVs (wie in A-0014 vorgeschlagen); das Glossar nennt für ATVs keinen Namen, daher ist vorläufig Fahrgastraum verwendet, obwohl das ATV keinen umschlossenen Innenraum hat. Für aufbau_nutzlast ist Aufbau und Ladung (Nutzfahrzeuge) gewählt, weil Gepäckträger, Anhängevorrichtung und Anbaugeräte der Nutzfahrzeugaufgabe entsprechen.",
     "Abweichung von der Zuordnungsliste: Lenkrad (lenkung), Karosserie, Türen, Heckklappe und Motorhaube (struktur_fahrwerk) sowie Rückhaltesystem, Sicherheitsgurt und Airbag (bedienraum) entfallen beim ATV im Reitsitz; gelenkt wird über den Lenker, Beckengurte sind nach HSE nicht anzubringen. Die Bordnetzbatterie ist als Starterbatterie geführt.",
-    "Recherche: Originaltext ANSI/SVIA 1-2023 (Leseexemplar unter svia.org/ansi-svia-1-2023) zu Bedienelementen, Beleuchtung, Nickstabilität, Bremsprüfung und Geräusch lesen; in diesem Lauf wurden die Inhalte nur über die CPSC-Regelungsentwürfe erschlossen, der Entwurf von 2006 ist nicht geltendes Recht.",
+    "Recherche: Originaltext ANSI/SVIA 1-2023 (Leseexemplar unter svia.org/ansi-svia-1-2023) zu Bedienelementen, Beleuchtung, Nickstabilität, Bremsprüfung und Geräusch sowie zu den aktuellen Jugendkategorien mit ihren Geschwindigkeitsgrenzen und Getriebevorgaben lesen; in diesem Lauf wurden die Inhalte nur über die CPSC-Regelungsentwürfe erschlossen, der Entwurf von 2006 ist nicht geltendes Recht.",
     "Recherche: federalregister.gov lieferte in diesem Lauf eine Zugangssperre; die Schlussregel 83 FR 8336 (2018, Beleuchtung und Rückstrahler) und 89 FR 4195 (2024) über govinfo.gov lesen, um P27 und R12 mit Primärquelle zu belegen.",
     "Recherche: Verordnung (EU) Nr. 168/2013, Anhang II und delegierte Verordnungen zu Bau- und Bremsanforderungen der Unterklasse L7e-B (Suchbegriffe: Delegierte Verordnung (EU) Nr. 3/2014, (EU) Nr. 44/2014, L7e-B Bremsen), um R2, R6 und R12 für die EU zu belegen.",
     "Recherche: Fachquellen zu batterieelektrischen ATVs mit Traktionsbatterie, Batteriemanagement und Rückgewinnung (Suchbegriffe: electric ATV powertrain, Elektro-Quad Batterie), um P10, P12 und P30 zu belegen.",
