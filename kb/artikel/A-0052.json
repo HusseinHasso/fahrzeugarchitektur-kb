@@ -4,7 +4,7 @@
   "artikeltyp": "blatt",
   "titel": "Kampfpanzer",
   "betrachtungsumfang": "Generische Referenzarchitektur moderner Kampfpanzer auf Gleisketten mit drehbarem Turm und Kanone als Hauptwaffe, wie sie die Begriffsbestimmung des KSE-Vertrags erfasst (Geltungsbereich: Vertragsstaaten, Anwendungsgebiet Atlantik bis Ural). Betrachtete Antriebsarten: Dieselmotor und Gasturbine (Energiespeicher Kraftstofftank, Energiewandler Verbrennungsmotor) sowie Hybrid mit elektrischem Antriebsstrang in serieller oder paralleler Struktur (zusätzlich Traktionsbatterie, Hochvolt-Bordnetz, Stromrichter und Traktionsmaschine, beim seriellen Hybrid ein Traktionsgenerator). Ausgeschlossen sind rein batterieelektrische, Wasserstoff- und Brennstoffzellenantriebe, Radkampfpanzer, turmlose Kasemattpanzer, Ableitungen wie Berge- oder Pionierpanzer sowie Munitions- und Waffenwirkung im Detail.",
-  "status": "in_arbeit",
+  "status": "geprueft",
   "quellenzugriff": "ja",
   "kindartikel_ids": [],
   "quellen": [
@@ -794,205 +794,2043 @@
   ],
   "modell": {
     "elemente": [
-      {"id": "E1", "name": "Kampfpanzer", "typ": "gesamtsystem", "eltern_id": null, "absatz_ids": ["P1", "P2", "P3", "P29"]},
-      {"id": "E2", "name": "Fahrzeugstruktur und Fahrwerk", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P4", "P5", "P6", "P7"], "kategorie": "struktur_fahrwerk"},
-      {"id": "E3", "name": "Wanne", "typ": "subsystem", "eltern_id": "E2", "absatz_ids": ["P4"]},
-      {"id": "E4", "name": "Panzerung", "typ": "komponente", "eltern_id": "E3", "absatz_ids": ["P4", "P5"]},
-      {"id": "E5", "name": "Zusatzpanzerung", "typ": "komponente", "eltern_id": "E3", "absatz_ids": ["P4", "P5"]},
-      {"id": "E6", "name": "Kettenlaufwerk", "typ": "subsystem", "eltern_id": "E2", "absatz_ids": ["P4", "P6"]},
-      {"id": "E7", "name": "Triebrad", "typ": "komponente", "eltern_id": "E6", "absatz_ids": ["P6"]},
-      {"id": "E8", "name": "Leitrad", "typ": "komponente", "eltern_id": "E6", "absatz_ids": ["P6"]},
-      {"id": "E9", "name": "Laufrollen", "typ": "komponente", "eltern_id": "E6", "absatz_ids": ["P6"]},
-      {"id": "E10", "name": "Stützrollen", "typ": "komponente", "eltern_id": "E6", "absatz_ids": ["P6"]},
-      {"id": "E11", "name": "Gleiskette", "typ": "komponente", "eltern_id": "E6", "absatz_ids": ["P6"]},
-      {"id": "E12", "name": "Federung", "typ": "komponente", "eltern_id": "E6", "absatz_ids": ["P4", "P7"]},
-      {"id": "E13", "name": "Schwingungsdämpfer", "typ": "komponente", "eltern_id": "E6", "absatz_ids": ["P4", "P7"]},
-      {"id": "E14", "name": "Antriebssystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P8", "P9", "P10"], "kategorie": "antrieb"},
-      {"id": "E15", "name": "Triebwerk", "typ": "subsystem", "eltern_id": "E14", "absatz_ids": ["P8", "P9"]},
-      {"id": "E16", "name": "Verbrennungsmotor", "typ": "komponente", "eltern_id": "E15", "absatz_ids": ["P8", "P9"]},
-      {"id": "E17", "name": "Luftfilteranlage", "typ": "komponente", "eltern_id": "E15", "absatz_ids": ["P9"]},
-      {"id": "E18", "name": "Abgasanlage", "typ": "komponente", "eltern_id": "E15", "absatz_ids": ["P9"]},
-      {"id": "E19", "name": "Kraftübertragung", "typ": "subsystem", "eltern_id": "E14", "absatz_ids": ["P9"]},
-      {"id": "E20", "name": "Getriebe", "typ": "komponente", "eltern_id": "E19", "absatz_ids": ["P9", "P33"]},
-      {"id": "E21", "name": "Seitenvorgelege", "typ": "komponente", "eltern_id": "E19", "absatz_ids": ["P9"]},
-      {"id": "E22", "name": "Elektrischer Antriebsstrang", "typ": "subsystem", "eltern_id": "E14", "absatz_ids": ["P9", "P10"]},
-      {"id": "E23", "name": "Traktionsmaschine", "typ": "komponente", "eltern_id": "E22", "absatz_ids": ["P9", "P10"]},
-      {"id": "E24", "name": "Stromrichter", "typ": "komponente", "eltern_id": "E22", "absatz_ids": ["P9", "P10"]},
-      {"id": "E25", "name": "Energieversorgungssystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P11", "P12"], "kategorie": "energieversorgung"},
-      {"id": "E26", "name": "Kraftstoffversorgung", "typ": "subsystem", "eltern_id": "E25", "absatz_ids": ["P11"]},
-      {"id": "E27", "name": "Kraftstofftank", "typ": "komponente", "eltern_id": "E26", "absatz_ids": ["P11"]},
-      {"id": "E28", "name": "Elektrische Energiebereitstellung", "typ": "subsystem", "eltern_id": "E25", "absatz_ids": ["P11"]},
-      {"id": "E29", "name": "Generator", "typ": "komponente", "eltern_id": "E28", "absatz_ids": ["P11"]},
-      {"id": "E30", "name": "Bordnetzbatterie", "typ": "komponente", "eltern_id": "E28", "absatz_ids": ["P11"]},
-      {"id": "E31", "name": "Hilfsstromaggregat", "typ": "komponente", "eltern_id": "E28", "absatz_ids": ["P11", "P12"]},
-      {"id": "E32", "name": "Traktionsbatterie", "typ": "komponente", "eltern_id": "E28", "absatz_ids": ["P11"]},
-      {"id": "E110", "name": "Traktionsgenerator", "typ": "komponente", "eltern_id": "E28", "absatz_ids": ["P9", "P11"]},
-      {"id": "E111", "name": "Hochvolt-Bordnetz", "typ": "komponente", "eltern_id": "E28", "absatz_ids": ["P9", "P11"]},
-      {"id": "E33", "name": "Lenksystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P13", "P14"], "kategorie": "lenkung"},
-      {"id": "E34", "name": "Lenkeingabe", "typ": "komponente", "eltern_id": "E33", "absatz_ids": ["P14"]},
-      {"id": "E35", "name": "Lenkgetriebe", "typ": "komponente", "eltern_id": "E33", "absatz_ids": ["P13", "P14", "P33"]},
-      {"id": "E36", "name": "Hydrostatischer Lenkantrieb", "typ": "komponente", "eltern_id": "E33", "absatz_ids": ["P14"]},
-      {"id": "E37", "name": "Bremssystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P15"], "kategorie": "bremse"},
-      {"id": "E38", "name": "Betriebsbremse", "typ": "komponente", "eltern_id": "E37", "absatz_ids": ["P15"]},
-      {"id": "E39", "name": "Feststellbremse", "typ": "komponente", "eltern_id": "E37", "absatz_ids": ["P15"]},
-      {"id": "E40", "name": "Dauerbremse", "typ": "komponente", "eltern_id": "E37", "absatz_ids": ["P15"]},
-      {"id": "E41", "name": "Fahrerhaus", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P16", "P17"], "kategorie": "bedienraum"},
-      {"id": "E42", "name": "Fahrerraum", "typ": "subsystem", "eltern_id": "E41", "absatz_ids": ["P16"]},
-      {"id": "E43", "name": "Bedienelemente", "typ": "komponente", "eltern_id": "E42", "absatz_ids": ["P16"]},
-      {"id": "E44", "name": "Anzeigeelemente", "typ": "komponente", "eltern_id": "E42", "absatz_ids": ["P16"]},
-      {"id": "E115", "name": "Fahrersitz", "typ": "komponente", "eltern_id": "E42", "absatz_ids": ["P16"]},
-      {"id": "E45", "name": "Kampfraum", "typ": "subsystem", "eltern_id": "E41", "absatz_ids": ["P16"]},
-      {"id": "E46", "name": "Kommandantenplatz", "typ": "komponente", "eltern_id": "E45", "absatz_ids": ["P16"]},
-      {"id": "E47", "name": "Richtschützenplatz", "typ": "komponente", "eltern_id": "E45", "absatz_ids": ["P16"]},
-      {"id": "E48", "name": "Ladeschützenplatz", "typ": "komponente", "eltern_id": "E45", "absatz_ids": ["P16", "P17"]},
-      {"id": "E116", "name": "Besatzungssitze", "typ": "komponente", "eltern_id": "E45", "absatz_ids": ["P16"]},
-      {"id": "E49", "name": "Aufbau und Ladung", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P18", "P19", "P20"], "kategorie": "aufbau_nutzlast"},
-      {"id": "E50", "name": "Turm", "typ": "subsystem", "eltern_id": "E49", "absatz_ids": ["P18"]},
-      {"id": "E51", "name": "Turmstruktur", "typ": "komponente", "eltern_id": "E50", "absatz_ids": ["P18"]},
-      {"id": "E52", "name": "Turmdrehkranz", "typ": "komponente", "eltern_id": "E50", "absatz_ids": ["P4", "P18"]},
-      {"id": "E53", "name": "Richtantriebe", "typ": "komponente", "eltern_id": "E50", "absatz_ids": ["P18", "P20"]},
-      {"id": "E112", "name": "Turmhydraulik", "typ": "komponente", "eltern_id": "E50", "absatz_ids": ["P28", "P31"]},
-      {"id": "E54", "name": "Waffenanlage", "typ": "subsystem", "eltern_id": "E49", "absatz_ids": ["P18", "P19"]},
-      {"id": "E55", "name": "Hauptwaffe", "typ": "komponente", "eltern_id": "E54", "absatz_ids": ["P18", "P19"]},
-      {"id": "E56", "name": "Koaxiales Maschinengewehr", "typ": "komponente", "eltern_id": "E54", "absatz_ids": ["P18", "P19"]},
-      {"id": "E57", "name": "Waffenstation", "typ": "komponente", "eltern_id": "E54", "absatz_ids": ["P18", "P19"]},
-      {"id": "E114", "name": "Rohrrücklaufeinrichtung", "typ": "komponente", "eltern_id": "E54", "absatz_ids": ["P18"]},
-      {"id": "E58", "name": "Feuerleitanlage", "typ": "subsystem", "eltern_id": "E49", "absatz_ids": ["P18", "P20"]},
-      {"id": "E59", "name": "Zieloptiken", "typ": "komponente", "eltern_id": "E58", "absatz_ids": ["P18", "P20"]},
-      {"id": "E60", "name": "Laserentfernungsmesser", "typ": "komponente", "eltern_id": "E58", "absatz_ids": ["P18", "P20"]},
-      {"id": "E61", "name": "Feuerleitrechner", "typ": "komponente", "eltern_id": "E58", "absatz_ids": ["P18", "P20"]},
-      {"id": "E62", "name": "Waffenstabilisierung", "typ": "komponente", "eltern_id": "E58", "absatz_ids": ["P18", "P20"]},
-      {"id": "E63", "name": "Munitionsversorgung", "typ": "subsystem", "eltern_id": "E49", "absatz_ids": ["P18", "P19"]},
-      {"id": "E64", "name": "Munitionsbunker", "typ": "komponente", "eltern_id": "E63", "absatz_ids": ["P18", "P19"]},
-      {"id": "E65", "name": "Ladeautomat", "typ": "komponente", "eltern_id": "E63", "absatz_ids": ["P17", "P18"]},
-      {"id": "E66", "name": "Elektrik und Elektronik", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P21"], "kategorie": "elektrik_elektronik"},
-      {"id": "E67", "name": "Niedervolt-Bordnetz", "typ": "subsystem", "eltern_id": "E66", "absatz_ids": ["P21"]},
-      {"id": "E68", "name": "Stromverteiler", "typ": "komponente", "eltern_id": "E67", "absatz_ids": ["P21"]},
-      {"id": "E69", "name": "Sicherungen", "typ": "komponente", "eltern_id": "E67", "absatz_ids": ["P21"]},
-      {"id": "E70", "name": "Leitungssatz", "typ": "komponente", "eltern_id": "E67", "absatz_ids": ["P21"]},
-      {"id": "E71", "name": "Fahrzeugbus", "typ": "komponente", "eltern_id": "E66", "absatz_ids": ["P21"]},
-      {"id": "E72", "name": "Gateway", "typ": "komponente", "eltern_id": "E66", "absatz_ids": ["P21"]},
-      {"id": "E73", "name": "Schleifringübertrager", "typ": "komponente", "eltern_id": "E66", "absatz_ids": ["P21"]},
-      {"id": "E74", "name": "Fahrzeugsteuerung und Information", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P22"], "kategorie": "steuerung_information"},
-      {"id": "E75", "name": "Fahrzeugkoordination", "typ": "subsystem", "eltern_id": "E74", "absatz_ids": ["P22"]},
-      {"id": "E76", "name": "Fahrzeugmanagement", "typ": "komponente", "eltern_id": "E75", "absatz_ids": ["P22"]},
-      {"id": "E77", "name": "Diagnose", "typ": "komponente", "eltern_id": "E75", "absatz_ids": ["P22"]},
-      {"id": "E78", "name": "Führung und Kommunikation", "typ": "subsystem", "eltern_id": "E74", "absatz_ids": ["P22"]},
-      {"id": "E79", "name": "Navigation", "typ": "komponente", "eltern_id": "E78", "absatz_ids": ["P22"]},
-      {"id": "E80", "name": "Funkanlage", "typ": "komponente", "eltern_id": "E78", "absatz_ids": ["P22"]},
-      {"id": "E81", "name": "Führungsinformationssystem", "typ": "komponente", "eltern_id": "E78", "absatz_ids": ["P16", "P22"]},
-      {"id": "E113", "name": "Bordverständigungsanlage", "typ": "komponente", "eltern_id": "E78", "absatz_ids": ["P22"]},
-      {"id": "E82", "name": "Fahrerassistenz und Sicherheit", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P23", "P24"], "kategorie": "assistenz_sicherheit"},
-      {"id": "E83", "name": "Aktives Schutzsystem", "typ": "subsystem", "eltern_id": "E82", "absatz_ids": ["P23", "P24"]},
-      {"id": "E84", "name": "Warnsensoren", "typ": "komponente", "eltern_id": "E83", "absatz_ids": ["P23", "P24"]},
-      {"id": "E85", "name": "Gegenmaßnahmenwerfer", "typ": "komponente", "eltern_id": "E83", "absatz_ids": ["P24"]},
-      {"id": "E86", "name": "Nebelmittelwurfanlage", "typ": "komponente", "eltern_id": "E82", "absatz_ids": ["P23", "P24"]},
-      {"id": "E87", "name": "Besatzungsschutz", "typ": "subsystem", "eltern_id": "E82", "absatz_ids": ["P24"]},
-      {"id": "E88", "name": "ABC-Schutzanlage", "typ": "komponente", "eltern_id": "E87", "absatz_ids": ["P23", "P24"]},
-      {"id": "E89", "name": "Brandunterdrückungsanlage", "typ": "komponente", "eltern_id": "E87", "absatz_ids": ["P23", "P24"]},
-      {"id": "E90", "name": "Umfeldsensorik", "typ": "komponente", "eltern_id": "E82", "absatz_ids": ["P24"]},
-      {"id": "E91", "name": "Beleuchtung und Sicht", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P25"], "kategorie": "beleuchtung_sicht"},
-      {"id": "E92", "name": "Beleuchtung", "typ": "subsystem", "eltern_id": "E91", "absatz_ids": ["P25"]},
-      {"id": "E93", "name": "Scheinwerfer", "typ": "komponente", "eltern_id": "E92", "absatz_ids": ["P25"]},
-      {"id": "E94", "name": "Leuchten", "typ": "komponente", "eltern_id": "E92", "absatz_ids": ["P25"]},
-      {"id": "E95", "name": "Fahrersicht", "typ": "subsystem", "eltern_id": "E91", "absatz_ids": ["P25"]},
-      {"id": "E96", "name": "Winkelspiegel", "typ": "komponente", "eltern_id": "E95", "absatz_ids": ["P25"]},
-      {"id": "E97", "name": "Nachtsichtgerät", "typ": "komponente", "eltern_id": "E95", "absatz_ids": ["P25"]},
-      {"id": "E98", "name": "Kamera-Monitor-System", "typ": "komponente", "eltern_id": "E95", "absatz_ids": ["P25"]},
-      {"id": "E99", "name": "Thermomanagement", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P26", "P27"], "kategorie": "thermomanagement"},
-      {"id": "E100", "name": "Kühlkreislauf", "typ": "subsystem", "eltern_id": "E99", "absatz_ids": ["P26", "P27"]},
-      {"id": "E101", "name": "Kühler", "typ": "komponente", "eltern_id": "E100", "absatz_ids": ["P27"]},
-      {"id": "E102", "name": "Lüfter", "typ": "komponente", "eltern_id": "E100", "absatz_ids": ["P26", "P27"]},
-      {"id": "E103", "name": "Kühlmittelpumpe", "typ": "komponente", "eltern_id": "E100", "absatz_ids": ["P27"]},
-      {"id": "E104", "name": "Heiz- und Klimaanlage", "typ": "komponente", "eltern_id": "E99", "absatz_ids": ["P27"]},
-      {"id": "E105", "name": "Neben- und Versorgungssysteme", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P28"], "kategorie": "nebensysteme"},
-      {"id": "E106", "name": "Hydraulikanlage", "typ": "subsystem", "eltern_id": "E105", "absatz_ids": ["P28"]},
-      {"id": "E107", "name": "Hydraulikpumpe", "typ": "komponente", "eltern_id": "E106", "absatz_ids": ["P28"]},
-      {"id": "E108", "name": "Hydraulikspeicher", "typ": "komponente", "eltern_id": "E106", "absatz_ids": ["P28"]},
-      {"id": "E109", "name": "Tiefwatausrüstung", "typ": "komponente", "eltern_id": "E105", "absatz_ids": ["P28"]}
+      {
+        "id": "E1",
+        "name": "Kampfpanzer",
+        "typ": "gesamtsystem",
+        "eltern_id": null,
+        "absatz_ids": [
+          "P1",
+          "P2",
+          "P3",
+          "P29"
+        ]
+      },
+      {
+        "id": "E2",
+        "name": "Fahrzeugstruktur und Fahrwerk",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P5",
+          "P6",
+          "P7"
+        ],
+        "kategorie": "struktur_fahrwerk"
+      },
+      {
+        "id": "E3",
+        "name": "Wanne",
+        "typ": "subsystem",
+        "eltern_id": "E2",
+        "absatz_ids": [
+          "P4"
+        ]
+      },
+      {
+        "id": "E4",
+        "name": "Panzerung",
+        "typ": "komponente",
+        "eltern_id": "E3",
+        "absatz_ids": [
+          "P4",
+          "P5"
+        ]
+      },
+      {
+        "id": "E5",
+        "name": "Zusatzpanzerung",
+        "typ": "komponente",
+        "eltern_id": "E3",
+        "absatz_ids": [
+          "P4",
+          "P5"
+        ]
+      },
+      {
+        "id": "E6",
+        "name": "Kettenlaufwerk",
+        "typ": "subsystem",
+        "eltern_id": "E2",
+        "absatz_ids": [
+          "P4",
+          "P6"
+        ]
+      },
+      {
+        "id": "E7",
+        "name": "Triebrad",
+        "typ": "komponente",
+        "eltern_id": "E6",
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "E8",
+        "name": "Leitrad",
+        "typ": "komponente",
+        "eltern_id": "E6",
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "E9",
+        "name": "Laufrollen",
+        "typ": "komponente",
+        "eltern_id": "E6",
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "E10",
+        "name": "Stützrollen",
+        "typ": "komponente",
+        "eltern_id": "E6",
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "E11",
+        "name": "Gleiskette",
+        "typ": "komponente",
+        "eltern_id": "E6",
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "E12",
+        "name": "Federung",
+        "typ": "komponente",
+        "eltern_id": "E6",
+        "absatz_ids": [
+          "P4",
+          "P7"
+        ]
+      },
+      {
+        "id": "E13",
+        "name": "Schwingungsdämpfer",
+        "typ": "komponente",
+        "eltern_id": "E6",
+        "absatz_ids": [
+          "P4",
+          "P7"
+        ]
+      },
+      {
+        "id": "E14",
+        "name": "Antriebssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P8",
+          "P9",
+          "P10"
+        ],
+        "kategorie": "antrieb"
+      },
+      {
+        "id": "E15",
+        "name": "Triebwerk",
+        "typ": "subsystem",
+        "eltern_id": "E14",
+        "absatz_ids": [
+          "P8",
+          "P9"
+        ]
+      },
+      {
+        "id": "E16",
+        "name": "Verbrennungsmotor",
+        "typ": "komponente",
+        "eltern_id": "E15",
+        "absatz_ids": [
+          "P8",
+          "P9"
+        ]
+      },
+      {
+        "id": "E17",
+        "name": "Luftfilteranlage",
+        "typ": "komponente",
+        "eltern_id": "E15",
+        "absatz_ids": [
+          "P9"
+        ]
+      },
+      {
+        "id": "E18",
+        "name": "Abgasanlage",
+        "typ": "komponente",
+        "eltern_id": "E15",
+        "absatz_ids": [
+          "P9"
+        ]
+      },
+      {
+        "id": "E19",
+        "name": "Kraftübertragung",
+        "typ": "subsystem",
+        "eltern_id": "E14",
+        "absatz_ids": [
+          "P9"
+        ]
+      },
+      {
+        "id": "E20",
+        "name": "Getriebe",
+        "typ": "komponente",
+        "eltern_id": "E19",
+        "absatz_ids": [
+          "P9",
+          "P33"
+        ]
+      },
+      {
+        "id": "E21",
+        "name": "Seitenvorgelege",
+        "typ": "komponente",
+        "eltern_id": "E19",
+        "absatz_ids": [
+          "P9"
+        ]
+      },
+      {
+        "id": "E22",
+        "name": "Elektrischer Antriebsstrang",
+        "typ": "subsystem",
+        "eltern_id": "E14",
+        "absatz_ids": [
+          "P9",
+          "P10"
+        ]
+      },
+      {
+        "id": "E23",
+        "name": "Traktionsmaschine",
+        "typ": "komponente",
+        "eltern_id": "E22",
+        "absatz_ids": [
+          "P9",
+          "P10"
+        ]
+      },
+      {
+        "id": "E24",
+        "name": "Stromrichter",
+        "typ": "komponente",
+        "eltern_id": "E22",
+        "absatz_ids": [
+          "P9",
+          "P10"
+        ]
+      },
+      {
+        "id": "E25",
+        "name": "Energieversorgungssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P11",
+          "P12"
+        ],
+        "kategorie": "energieversorgung"
+      },
+      {
+        "id": "E26",
+        "name": "Kraftstoffversorgung",
+        "typ": "subsystem",
+        "eltern_id": "E25",
+        "absatz_ids": [
+          "P11"
+        ]
+      },
+      {
+        "id": "E27",
+        "name": "Kraftstofftank",
+        "typ": "komponente",
+        "eltern_id": "E26",
+        "absatz_ids": [
+          "P11"
+        ]
+      },
+      {
+        "id": "E28",
+        "name": "Elektrische Energiebereitstellung",
+        "typ": "subsystem",
+        "eltern_id": "E25",
+        "absatz_ids": [
+          "P11"
+        ]
+      },
+      {
+        "id": "E29",
+        "name": "Generator",
+        "typ": "komponente",
+        "eltern_id": "E28",
+        "absatz_ids": [
+          "P11"
+        ]
+      },
+      {
+        "id": "E30",
+        "name": "Bordnetzbatterie",
+        "typ": "komponente",
+        "eltern_id": "E28",
+        "absatz_ids": [
+          "P11"
+        ]
+      },
+      {
+        "id": "E31",
+        "name": "Hilfsstromaggregat",
+        "typ": "komponente",
+        "eltern_id": "E28",
+        "absatz_ids": [
+          "P11",
+          "P12"
+        ]
+      },
+      {
+        "id": "E32",
+        "name": "Traktionsbatterie",
+        "typ": "komponente",
+        "eltern_id": "E28",
+        "absatz_ids": [
+          "P11"
+        ]
+      },
+      {
+        "id": "E110",
+        "name": "Traktionsgenerator",
+        "typ": "komponente",
+        "eltern_id": "E28",
+        "absatz_ids": [
+          "P9",
+          "P11"
+        ]
+      },
+      {
+        "id": "E111",
+        "name": "Hochvolt-Bordnetz",
+        "typ": "komponente",
+        "eltern_id": "E28",
+        "absatz_ids": [
+          "P9",
+          "P11"
+        ]
+      },
+      {
+        "id": "E33",
+        "name": "Lenksystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P13",
+          "P14"
+        ],
+        "kategorie": "lenkung"
+      },
+      {
+        "id": "E34",
+        "name": "Lenkeingabe",
+        "typ": "komponente",
+        "eltern_id": "E33",
+        "absatz_ids": [
+          "P14"
+        ]
+      },
+      {
+        "id": "E35",
+        "name": "Lenkgetriebe",
+        "typ": "komponente",
+        "eltern_id": "E33",
+        "absatz_ids": [
+          "P13",
+          "P14",
+          "P33"
+        ]
+      },
+      {
+        "id": "E36",
+        "name": "Hydrostatischer Lenkantrieb",
+        "typ": "komponente",
+        "eltern_id": "E33",
+        "absatz_ids": [
+          "P14"
+        ]
+      },
+      {
+        "id": "E37",
+        "name": "Bremssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P15"
+        ],
+        "kategorie": "bremse"
+      },
+      {
+        "id": "E38",
+        "name": "Betriebsbremse",
+        "typ": "komponente",
+        "eltern_id": "E37",
+        "absatz_ids": [
+          "P15"
+        ]
+      },
+      {
+        "id": "E39",
+        "name": "Feststellbremse",
+        "typ": "komponente",
+        "eltern_id": "E37",
+        "absatz_ids": [
+          "P15"
+        ]
+      },
+      {
+        "id": "E40",
+        "name": "Dauerbremse",
+        "typ": "komponente",
+        "eltern_id": "E37",
+        "absatz_ids": [
+          "P15"
+        ]
+      },
+      {
+        "id": "E41",
+        "name": "Fahrerhaus",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P16",
+          "P17"
+        ],
+        "kategorie": "bedienraum"
+      },
+      {
+        "id": "E42",
+        "name": "Fahrerraum",
+        "typ": "subsystem",
+        "eltern_id": "E41",
+        "absatz_ids": [
+          "P16"
+        ]
+      },
+      {
+        "id": "E43",
+        "name": "Bedienelemente",
+        "typ": "komponente",
+        "eltern_id": "E42",
+        "absatz_ids": [
+          "P16"
+        ]
+      },
+      {
+        "id": "E44",
+        "name": "Anzeigeelemente",
+        "typ": "komponente",
+        "eltern_id": "E42",
+        "absatz_ids": [
+          "P16"
+        ]
+      },
+      {
+        "id": "E115",
+        "name": "Fahrersitz",
+        "typ": "komponente",
+        "eltern_id": "E42",
+        "absatz_ids": [
+          "P16"
+        ]
+      },
+      {
+        "id": "E45",
+        "name": "Kampfraum",
+        "typ": "subsystem",
+        "eltern_id": "E41",
+        "absatz_ids": [
+          "P16"
+        ]
+      },
+      {
+        "id": "E46",
+        "name": "Kommandantenplatz",
+        "typ": "komponente",
+        "eltern_id": "E45",
+        "absatz_ids": [
+          "P16"
+        ]
+      },
+      {
+        "id": "E47",
+        "name": "Richtschützenplatz",
+        "typ": "komponente",
+        "eltern_id": "E45",
+        "absatz_ids": [
+          "P16"
+        ]
+      },
+      {
+        "id": "E48",
+        "name": "Ladeschützenplatz",
+        "typ": "komponente",
+        "eltern_id": "E45",
+        "absatz_ids": [
+          "P16",
+          "P17"
+        ]
+      },
+      {
+        "id": "E116",
+        "name": "Besatzungssitze",
+        "typ": "komponente",
+        "eltern_id": "E45",
+        "absatz_ids": [
+          "P16"
+        ]
+      },
+      {
+        "id": "E49",
+        "name": "Aufbau und Ladung",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P18",
+          "P19",
+          "P20"
+        ],
+        "kategorie": "aufbau_nutzlast"
+      },
+      {
+        "id": "E50",
+        "name": "Turm",
+        "typ": "subsystem",
+        "eltern_id": "E49",
+        "absatz_ids": [
+          "P18"
+        ]
+      },
+      {
+        "id": "E51",
+        "name": "Turmstruktur",
+        "typ": "komponente",
+        "eltern_id": "E50",
+        "absatz_ids": [
+          "P18"
+        ]
+      },
+      {
+        "id": "E52",
+        "name": "Turmdrehkranz",
+        "typ": "komponente",
+        "eltern_id": "E50",
+        "absatz_ids": [
+          "P4",
+          "P18"
+        ]
+      },
+      {
+        "id": "E53",
+        "name": "Richtantriebe",
+        "typ": "komponente",
+        "eltern_id": "E50",
+        "absatz_ids": [
+          "P18",
+          "P20"
+        ]
+      },
+      {
+        "id": "E112",
+        "name": "Turmhydraulik",
+        "typ": "komponente",
+        "eltern_id": "E50",
+        "absatz_ids": [
+          "P28",
+          "P31"
+        ]
+      },
+      {
+        "id": "E54",
+        "name": "Waffenanlage",
+        "typ": "subsystem",
+        "eltern_id": "E49",
+        "absatz_ids": [
+          "P18",
+          "P19"
+        ]
+      },
+      {
+        "id": "E55",
+        "name": "Hauptwaffe",
+        "typ": "komponente",
+        "eltern_id": "E54",
+        "absatz_ids": [
+          "P18",
+          "P19"
+        ]
+      },
+      {
+        "id": "E56",
+        "name": "Koaxiales Maschinengewehr",
+        "typ": "komponente",
+        "eltern_id": "E54",
+        "absatz_ids": [
+          "P18",
+          "P19"
+        ]
+      },
+      {
+        "id": "E57",
+        "name": "Waffenstation",
+        "typ": "komponente",
+        "eltern_id": "E54",
+        "absatz_ids": [
+          "P18",
+          "P19"
+        ]
+      },
+      {
+        "id": "E114",
+        "name": "Rohrrücklaufeinrichtung",
+        "typ": "komponente",
+        "eltern_id": "E54",
+        "absatz_ids": [
+          "P18"
+        ]
+      },
+      {
+        "id": "E58",
+        "name": "Feuerleitanlage",
+        "typ": "subsystem",
+        "eltern_id": "E49",
+        "absatz_ids": [
+          "P18",
+          "P20"
+        ]
+      },
+      {
+        "id": "E59",
+        "name": "Zieloptiken",
+        "typ": "komponente",
+        "eltern_id": "E58",
+        "absatz_ids": [
+          "P18",
+          "P20"
+        ]
+      },
+      {
+        "id": "E60",
+        "name": "Laserentfernungsmesser",
+        "typ": "komponente",
+        "eltern_id": "E58",
+        "absatz_ids": [
+          "P18",
+          "P20"
+        ]
+      },
+      {
+        "id": "E61",
+        "name": "Feuerleitrechner",
+        "typ": "komponente",
+        "eltern_id": "E58",
+        "absatz_ids": [
+          "P18",
+          "P20"
+        ]
+      },
+      {
+        "id": "E62",
+        "name": "Waffenstabilisierung",
+        "typ": "komponente",
+        "eltern_id": "E58",
+        "absatz_ids": [
+          "P18",
+          "P20"
+        ]
+      },
+      {
+        "id": "E63",
+        "name": "Munitionsversorgung",
+        "typ": "subsystem",
+        "eltern_id": "E49",
+        "absatz_ids": [
+          "P18",
+          "P19"
+        ]
+      },
+      {
+        "id": "E64",
+        "name": "Munitionsbunker",
+        "typ": "komponente",
+        "eltern_id": "E63",
+        "absatz_ids": [
+          "P18",
+          "P19"
+        ]
+      },
+      {
+        "id": "E65",
+        "name": "Ladeautomat",
+        "typ": "komponente",
+        "eltern_id": "E63",
+        "absatz_ids": [
+          "P17",
+          "P18"
+        ]
+      },
+      {
+        "id": "E66",
+        "name": "Elektrik und Elektronik",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P21"
+        ],
+        "kategorie": "elektrik_elektronik"
+      },
+      {
+        "id": "E67",
+        "name": "Niedervolt-Bordnetz",
+        "typ": "subsystem",
+        "eltern_id": "E66",
+        "absatz_ids": [
+          "P21"
+        ]
+      },
+      {
+        "id": "E68",
+        "name": "Stromverteiler",
+        "typ": "komponente",
+        "eltern_id": "E67",
+        "absatz_ids": [
+          "P21"
+        ]
+      },
+      {
+        "id": "E69",
+        "name": "Sicherungen",
+        "typ": "komponente",
+        "eltern_id": "E67",
+        "absatz_ids": [
+          "P21"
+        ]
+      },
+      {
+        "id": "E70",
+        "name": "Leitungssatz",
+        "typ": "komponente",
+        "eltern_id": "E67",
+        "absatz_ids": [
+          "P21"
+        ]
+      },
+      {
+        "id": "E71",
+        "name": "Fahrzeugbus",
+        "typ": "komponente",
+        "eltern_id": "E66",
+        "absatz_ids": [
+          "P21"
+        ]
+      },
+      {
+        "id": "E72",
+        "name": "Gateway",
+        "typ": "komponente",
+        "eltern_id": "E66",
+        "absatz_ids": [
+          "P21"
+        ]
+      },
+      {
+        "id": "E73",
+        "name": "Schleifringübertrager",
+        "typ": "komponente",
+        "eltern_id": "E66",
+        "absatz_ids": [
+          "P21"
+        ]
+      },
+      {
+        "id": "E74",
+        "name": "Fahrzeugsteuerung und Information",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P22"
+        ],
+        "kategorie": "steuerung_information"
+      },
+      {
+        "id": "E75",
+        "name": "Fahrzeugkoordination",
+        "typ": "subsystem",
+        "eltern_id": "E74",
+        "absatz_ids": [
+          "P22"
+        ]
+      },
+      {
+        "id": "E76",
+        "name": "Fahrzeugmanagement",
+        "typ": "komponente",
+        "eltern_id": "E75",
+        "absatz_ids": [
+          "P22"
+        ]
+      },
+      {
+        "id": "E77",
+        "name": "Diagnose",
+        "typ": "komponente",
+        "eltern_id": "E75",
+        "absatz_ids": [
+          "P22"
+        ]
+      },
+      {
+        "id": "E78",
+        "name": "Führung und Kommunikation",
+        "typ": "subsystem",
+        "eltern_id": "E74",
+        "absatz_ids": [
+          "P22"
+        ]
+      },
+      {
+        "id": "E79",
+        "name": "Navigation",
+        "typ": "komponente",
+        "eltern_id": "E78",
+        "absatz_ids": [
+          "P22"
+        ]
+      },
+      {
+        "id": "E80",
+        "name": "Funkanlage",
+        "typ": "komponente",
+        "eltern_id": "E78",
+        "absatz_ids": [
+          "P22"
+        ]
+      },
+      {
+        "id": "E81",
+        "name": "Führungsinformationssystem",
+        "typ": "komponente",
+        "eltern_id": "E78",
+        "absatz_ids": [
+          "P16",
+          "P22"
+        ]
+      },
+      {
+        "id": "E113",
+        "name": "Bordverständigungsanlage",
+        "typ": "komponente",
+        "eltern_id": "E78",
+        "absatz_ids": [
+          "P22"
+        ]
+      },
+      {
+        "id": "E82",
+        "name": "Fahrerassistenz und Sicherheit",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P23",
+          "P24"
+        ],
+        "kategorie": "assistenz_sicherheit"
+      },
+      {
+        "id": "E83",
+        "name": "Aktives Schutzsystem",
+        "typ": "subsystem",
+        "eltern_id": "E82",
+        "absatz_ids": [
+          "P23",
+          "P24"
+        ]
+      },
+      {
+        "id": "E84",
+        "name": "Warnsensoren",
+        "typ": "komponente",
+        "eltern_id": "E83",
+        "absatz_ids": [
+          "P23",
+          "P24"
+        ]
+      },
+      {
+        "id": "E85",
+        "name": "Gegenmaßnahmenwerfer",
+        "typ": "komponente",
+        "eltern_id": "E83",
+        "absatz_ids": [
+          "P24"
+        ]
+      },
+      {
+        "id": "E86",
+        "name": "Nebelmittelwurfanlage",
+        "typ": "komponente",
+        "eltern_id": "E82",
+        "absatz_ids": [
+          "P23",
+          "P24"
+        ]
+      },
+      {
+        "id": "E87",
+        "name": "Besatzungsschutz",
+        "typ": "subsystem",
+        "eltern_id": "E82",
+        "absatz_ids": [
+          "P24"
+        ]
+      },
+      {
+        "id": "E88",
+        "name": "ABC-Schutzanlage",
+        "typ": "komponente",
+        "eltern_id": "E87",
+        "absatz_ids": [
+          "P23",
+          "P24"
+        ]
+      },
+      {
+        "id": "E89",
+        "name": "Brandunterdrückungsanlage",
+        "typ": "komponente",
+        "eltern_id": "E87",
+        "absatz_ids": [
+          "P23",
+          "P24"
+        ]
+      },
+      {
+        "id": "E90",
+        "name": "Umfeldsensorik",
+        "typ": "komponente",
+        "eltern_id": "E82",
+        "absatz_ids": [
+          "P24"
+        ]
+      },
+      {
+        "id": "E91",
+        "name": "Beleuchtung und Sicht",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P25"
+        ],
+        "kategorie": "beleuchtung_sicht"
+      },
+      {
+        "id": "E92",
+        "name": "Beleuchtung",
+        "typ": "subsystem",
+        "eltern_id": "E91",
+        "absatz_ids": [
+          "P25"
+        ]
+      },
+      {
+        "id": "E93",
+        "name": "Scheinwerfer",
+        "typ": "komponente",
+        "eltern_id": "E92",
+        "absatz_ids": [
+          "P25"
+        ]
+      },
+      {
+        "id": "E94",
+        "name": "Leuchten",
+        "typ": "komponente",
+        "eltern_id": "E92",
+        "absatz_ids": [
+          "P25"
+        ]
+      },
+      {
+        "id": "E95",
+        "name": "Fahrersicht",
+        "typ": "subsystem",
+        "eltern_id": "E91",
+        "absatz_ids": [
+          "P25"
+        ]
+      },
+      {
+        "id": "E96",
+        "name": "Winkelspiegel",
+        "typ": "komponente",
+        "eltern_id": "E95",
+        "absatz_ids": [
+          "P25"
+        ]
+      },
+      {
+        "id": "E97",
+        "name": "Nachtsichtgerät",
+        "typ": "komponente",
+        "eltern_id": "E95",
+        "absatz_ids": [
+          "P25"
+        ]
+      },
+      {
+        "id": "E98",
+        "name": "Kamera-Monitor-System",
+        "typ": "komponente",
+        "eltern_id": "E95",
+        "absatz_ids": [
+          "P25"
+        ]
+      },
+      {
+        "id": "E99",
+        "name": "Thermomanagement",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P26",
+          "P27"
+        ],
+        "kategorie": "thermomanagement"
+      },
+      {
+        "id": "E100",
+        "name": "Kühlkreislauf",
+        "typ": "subsystem",
+        "eltern_id": "E99",
+        "absatz_ids": [
+          "P26",
+          "P27"
+        ]
+      },
+      {
+        "id": "E101",
+        "name": "Kühler",
+        "typ": "komponente",
+        "eltern_id": "E100",
+        "absatz_ids": [
+          "P27"
+        ]
+      },
+      {
+        "id": "E102",
+        "name": "Lüfter",
+        "typ": "komponente",
+        "eltern_id": "E100",
+        "absatz_ids": [
+          "P26",
+          "P27"
+        ]
+      },
+      {
+        "id": "E103",
+        "name": "Kühlmittelpumpe",
+        "typ": "komponente",
+        "eltern_id": "E100",
+        "absatz_ids": [
+          "P27"
+        ]
+      },
+      {
+        "id": "E104",
+        "name": "Heiz- und Klimaanlage",
+        "typ": "komponente",
+        "eltern_id": "E99",
+        "absatz_ids": [
+          "P27"
+        ]
+      },
+      {
+        "id": "E105",
+        "name": "Neben- und Versorgungssysteme",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P28"
+        ],
+        "kategorie": "nebensysteme"
+      },
+      {
+        "id": "E106",
+        "name": "Hydraulikanlage",
+        "typ": "subsystem",
+        "eltern_id": "E105",
+        "absatz_ids": [
+          "P28"
+        ]
+      },
+      {
+        "id": "E107",
+        "name": "Hydraulikpumpe",
+        "typ": "komponente",
+        "eltern_id": "E106",
+        "absatz_ids": [
+          "P28"
+        ]
+      },
+      {
+        "id": "E108",
+        "name": "Hydraulikspeicher",
+        "typ": "komponente",
+        "eltern_id": "E106",
+        "absatz_ids": [
+          "P28"
+        ]
+      },
+      {
+        "id": "E109",
+        "name": "Tiefwatausrüstung",
+        "typ": "komponente",
+        "eltern_id": "E105",
+        "absatz_ids": [
+          "P28"
+        ]
+      }
     ],
     "funktionen": [
-      {"id": "F1", "name": "Fahrzeuglasten tragen", "ausgefuehrt_von": ["E3", "E6"], "absatz_ids": ["P4", "P6", "P32"]},
-      {"id": "F2", "name": "Energie speichern", "ausgefuehrt_von": ["E27", "E30", "E32"], "absatz_ids": ["P11", "P32"]},
-      {"id": "F3", "name": "Treibstoff fördern", "ausgefuehrt_von": ["E26"], "absatz_ids": ["P11", "P32"]},
-      {"id": "F4", "name": "Elektrische Energie verteilen", "ausgefuehrt_von": ["E67", "E68", "E111"], "absatz_ids": ["P11", "P21", "P32"]},
-      {"id": "F5", "name": "Antriebsleistung erzeugen", "ausgefuehrt_von": ["E16", "E23"], "absatz_ids": ["P8", "P9", "P32"]},
-      {"id": "F6", "name": "Drehmoment übertragen", "ausgefuehrt_von": ["E20", "E21"], "absatz_ids": ["P9", "P32"]},
-      {"id": "F7", "name": "Fahrzeug fortbewegen", "ausgefuehrt_von": ["E6"], "absatz_ids": ["P6", "P32"]},
-      {"id": "F8", "name": "Fahrzeug lenken", "ausgefuehrt_von": ["E34", "E35"], "absatz_ids": ["P13", "P14", "P32"]},
-      {"id": "F9", "name": "Fahrzeug verzögern", "ausgefuehrt_von": ["E38", "E40"], "absatz_ids": ["P15", "P32"]},
-      {"id": "F10", "name": "Fahrzeug festhalten", "ausgefuehrt_von": ["E39"], "absatz_ids": ["P15", "P32"]},
-      {"id": "F11", "name": "Hydraulische Leistung bereitstellen", "ausgefuehrt_von": ["E106"], "absatz_ids": ["P28", "P32"]},
-      {"id": "F12", "name": "Fahrereingaben erfassen", "ausgefuehrt_von": ["E43"], "absatz_ids": ["P16", "P32"]},
-      {"id": "F13", "name": "Fahrerinformationen anzeigen", "ausgefuehrt_von": ["E44"], "absatz_ids": ["P16", "P32"]},
-      {"id": "F14", "name": "Fahrersicht sicherstellen", "ausgefuehrt_von": ["E96", "E97", "E98"], "absatz_ids": ["P25", "P32"]},
-      {"id": "F15", "name": "Insassen schützen", "ausgefuehrt_von": ["E4", "E5", "E64", "E87", "E115", "E116"], "absatz_ids": ["P5", "P16", "P19", "P23", "P32"]},
-      {"id": "F16", "name": "Ladung aufnehmen", "ausgefuehrt_von": ["E64"], "absatz_ids": ["P19", "P32"]},
-      {"id": "F17", "name": "Ziele erfassen", "ausgefuehrt_von": ["E59", "E60"], "absatz_ids": ["P18", "P20", "P32"]},
-      {"id": "F18", "name": "Waffe richten", "ausgefuehrt_von": ["E53", "E62", "E61"], "absatz_ids": ["P18", "P20", "P32"]},
-      {"id": "F19", "name": "Ziele bekämpfen", "ausgefuehrt_von": ["E55", "E56", "E57", "E65"], "absatz_ids": ["P18", "P19", "P32"]},
-      {"id": "F20", "name": "Bedrohungen abwehren", "ausgefuehrt_von": ["E83", "E86"], "absatz_ids": ["P23", "P24", "P32"]},
-      {"id": "F21", "name": "Daten übertragen", "ausgefuehrt_von": ["E71", "E80", "E113"], "absatz_ids": ["P21", "P22", "P32"]},
-      {"id": "F22", "name": "Fahrzeugzustand überwachen", "ausgefuehrt_von": ["E76", "E77"], "absatz_ids": ["P22", "P32"]},
-      {"id": "F23", "name": "Fahrzeugposition bestimmen", "ausgefuehrt_von": ["E79"], "absatz_ids": ["P22", "P32"]},
-      {"id": "F24", "name": "Fahrzeugumfeld erfassen", "ausgefuehrt_von": ["E90", "E84"], "absatz_ids": ["P24", "P32"]},
-      {"id": "F25", "name": "Fahrzeugumgebung ausleuchten", "ausgefuehrt_von": ["E93"], "absatz_ids": ["P25", "P32"]},
-      {"id": "F26", "name": "Lichtsignale abgeben", "ausgefuehrt_von": ["E94"], "absatz_ids": ["P25", "P32"]},
-      {"id": "F27", "name": "Betriebstemperatur regeln", "ausgefuehrt_von": ["E100"], "absatz_ids": ["P27", "P32"]},
-      {"id": "F28", "name": "Innenraum klimatisieren", "ausgefuehrt_von": ["E104"], "absatz_ids": ["P27", "P32"]}
+      {
+        "id": "F1",
+        "name": "Fahrzeuglasten tragen",
+        "ausgefuehrt_von": [
+          "E3",
+          "E6"
+        ],
+        "absatz_ids": [
+          "P4",
+          "P6",
+          "P32"
+        ]
+      },
+      {
+        "id": "F2",
+        "name": "Energie speichern",
+        "ausgefuehrt_von": [
+          "E27",
+          "E30",
+          "E32"
+        ],
+        "absatz_ids": [
+          "P11",
+          "P32"
+        ]
+      },
+      {
+        "id": "F3",
+        "name": "Treibstoff fördern",
+        "ausgefuehrt_von": [
+          "E26"
+        ],
+        "absatz_ids": [
+          "P11",
+          "P32"
+        ]
+      },
+      {
+        "id": "F4",
+        "name": "Elektrische Energie verteilen",
+        "ausgefuehrt_von": [
+          "E67",
+          "E68",
+          "E111"
+        ],
+        "absatz_ids": [
+          "P11",
+          "P21",
+          "P32"
+        ]
+      },
+      {
+        "id": "F5",
+        "name": "Antriebsleistung erzeugen",
+        "ausgefuehrt_von": [
+          "E16",
+          "E23"
+        ],
+        "absatz_ids": [
+          "P8",
+          "P9",
+          "P32"
+        ]
+      },
+      {
+        "id": "F6",
+        "name": "Drehmoment übertragen",
+        "ausgefuehrt_von": [
+          "E20",
+          "E21"
+        ],
+        "absatz_ids": [
+          "P9",
+          "P32"
+        ]
+      },
+      {
+        "id": "F7",
+        "name": "Fahrzeug fortbewegen",
+        "ausgefuehrt_von": [
+          "E6"
+        ],
+        "absatz_ids": [
+          "P6",
+          "P32"
+        ]
+      },
+      {
+        "id": "F8",
+        "name": "Fahrzeug lenken",
+        "ausgefuehrt_von": [
+          "E34",
+          "E35"
+        ],
+        "absatz_ids": [
+          "P13",
+          "P14",
+          "P32"
+        ]
+      },
+      {
+        "id": "F9",
+        "name": "Fahrzeug verzögern",
+        "ausgefuehrt_von": [
+          "E38",
+          "E40"
+        ],
+        "absatz_ids": [
+          "P15",
+          "P32"
+        ]
+      },
+      {
+        "id": "F10",
+        "name": "Fahrzeug festhalten",
+        "ausgefuehrt_von": [
+          "E39"
+        ],
+        "absatz_ids": [
+          "P15",
+          "P32"
+        ]
+      },
+      {
+        "id": "F11",
+        "name": "Hydraulische Leistung bereitstellen",
+        "ausgefuehrt_von": [
+          "E106"
+        ],
+        "absatz_ids": [
+          "P28",
+          "P32"
+        ]
+      },
+      {
+        "id": "F12",
+        "name": "Fahrereingaben erfassen",
+        "ausgefuehrt_von": [
+          "E43"
+        ],
+        "absatz_ids": [
+          "P16",
+          "P32"
+        ]
+      },
+      {
+        "id": "F13",
+        "name": "Fahrerinformationen anzeigen",
+        "ausgefuehrt_von": [
+          "E44"
+        ],
+        "absatz_ids": [
+          "P16",
+          "P32"
+        ]
+      },
+      {
+        "id": "F14",
+        "name": "Fahrersicht sicherstellen",
+        "ausgefuehrt_von": [
+          "E96",
+          "E97",
+          "E98"
+        ],
+        "absatz_ids": [
+          "P25",
+          "P32"
+        ]
+      },
+      {
+        "id": "F15",
+        "name": "Insassen schützen",
+        "ausgefuehrt_von": [
+          "E4",
+          "E5",
+          "E64",
+          "E87",
+          "E115",
+          "E116"
+        ],
+        "absatz_ids": [
+          "P5",
+          "P16",
+          "P19",
+          "P23",
+          "P32"
+        ]
+      },
+      {
+        "id": "F16",
+        "name": "Ladung aufnehmen",
+        "ausgefuehrt_von": [
+          "E64"
+        ],
+        "absatz_ids": [
+          "P19",
+          "P32"
+        ]
+      },
+      {
+        "id": "F17",
+        "name": "Ziele erfassen",
+        "ausgefuehrt_von": [
+          "E59",
+          "E60"
+        ],
+        "absatz_ids": [
+          "P18",
+          "P20",
+          "P32"
+        ]
+      },
+      {
+        "id": "F18",
+        "name": "Waffe richten",
+        "ausgefuehrt_von": [
+          "E53",
+          "E62",
+          "E61"
+        ],
+        "absatz_ids": [
+          "P18",
+          "P20",
+          "P32"
+        ]
+      },
+      {
+        "id": "F19",
+        "name": "Ziele bekämpfen",
+        "ausgefuehrt_von": [
+          "E55",
+          "E56",
+          "E57",
+          "E65"
+        ],
+        "absatz_ids": [
+          "P18",
+          "P19",
+          "P32"
+        ]
+      },
+      {
+        "id": "F20",
+        "name": "Bedrohungen abwehren",
+        "ausgefuehrt_von": [
+          "E83",
+          "E86"
+        ],
+        "absatz_ids": [
+          "P23",
+          "P24",
+          "P32"
+        ]
+      },
+      {
+        "id": "F21",
+        "name": "Daten übertragen",
+        "ausgefuehrt_von": [
+          "E71",
+          "E80",
+          "E113"
+        ],
+        "absatz_ids": [
+          "P21",
+          "P22",
+          "P32"
+        ]
+      },
+      {
+        "id": "F22",
+        "name": "Fahrzeugzustand überwachen",
+        "ausgefuehrt_von": [
+          "E76",
+          "E77"
+        ],
+        "absatz_ids": [
+          "P22",
+          "P32"
+        ]
+      },
+      {
+        "id": "F23",
+        "name": "Fahrzeugposition bestimmen",
+        "ausgefuehrt_von": [
+          "E79"
+        ],
+        "absatz_ids": [
+          "P22",
+          "P32"
+        ]
+      },
+      {
+        "id": "F24",
+        "name": "Fahrzeugumfeld erfassen",
+        "ausgefuehrt_von": [
+          "E90",
+          "E84"
+        ],
+        "absatz_ids": [
+          "P24",
+          "P32"
+        ]
+      },
+      {
+        "id": "F25",
+        "name": "Fahrzeugumgebung ausleuchten",
+        "ausgefuehrt_von": [
+          "E93"
+        ],
+        "absatz_ids": [
+          "P25",
+          "P32"
+        ]
+      },
+      {
+        "id": "F26",
+        "name": "Lichtsignale abgeben",
+        "ausgefuehrt_von": [
+          "E94"
+        ],
+        "absatz_ids": [
+          "P25",
+          "P32"
+        ]
+      },
+      {
+        "id": "F27",
+        "name": "Betriebstemperatur regeln",
+        "ausgefuehrt_von": [
+          "E100"
+        ],
+        "absatz_ids": [
+          "P27",
+          "P32"
+        ]
+      },
+      {
+        "id": "F28",
+        "name": "Innenraum klimatisieren",
+        "ausgefuehrt_von": [
+          "E104"
+        ],
+        "absatz_ids": [
+          "P27",
+          "P32"
+        ]
+      }
     ],
     "fluesse": [
-      {"id": "S1", "von": "E27", "nach": "E16", "art": "stoff", "medium": "Kraftstoff", "absatz_ids": ["P11", "P31"], "schnittstelle": "Kraftstoffanschluss Triebwerk"},
-      {"id": "S2", "von": "E16", "nach": "E20", "art": "mechanisch", "medium": "Drehmoment", "absatz_ids": ["P9", "P31"]},
-      {"id": "S3", "von": "E20", "nach": "E35", "art": "mechanisch", "medium": "Drehmoment", "absatz_ids": ["P14", "P31"], "schnittstelle": "Schalt-Lenkgetriebe (Getriebe zu Lenkgetriebe)"},
-      {"id": "S4", "von": "E35", "nach": "E21", "art": "mechanisch", "medium": "Drehmoment je Seite", "absatz_ids": ["P9", "P31"], "schnittstelle": "Abtrieb Lenkgetriebe zu Seitenvorgelege"},
-      {"id": "S5", "von": "E21", "nach": "E7", "art": "mechanisch", "medium": "Drehmoment", "absatz_ids": ["P9", "P31"], "schnittstelle": "Triebradnabe"},
-      {"id": "S6", "von": "E7", "nach": "E11", "art": "mechanisch", "medium": "Zugkraft", "absatz_ids": ["P6", "P31"]},
-      {"id": "S7", "von": "E29", "nach": "E67", "art": "elektrisch", "medium": "Gleichstrom Bordnetz", "absatz_ids": ["P21", "P31"], "schnittstelle": "Bordnetzeinspeisung Generator"},
-      {"id": "S8", "von": "E31", "nach": "E67", "art": "elektrisch", "medium": "Gleichstrom Bordnetz", "absatz_ids": ["P12", "P31"], "schnittstelle": "Bordnetzeinspeisung Hilfsstromaggregat"},
-      {"id": "S9", "von": "E67", "nach": "E73", "art": "elektrisch", "medium": "Bordnetzenergie", "absatz_ids": ["P21"]},
-      {"id": "S10", "von": "E73", "nach": "E53", "art": "elektrisch", "medium": "Bordnetzenergie", "absatz_ids": ["P21", "P31"], "schnittstelle": "Turmdrehverbindung (elektrisch)"},
-      {"id": "S11", "von": "E59", "nach": "E61", "art": "information", "medium": "Zieldaten", "absatz_ids": ["P20", "P31"]},
-      {"id": "S12", "von": "E60", "nach": "E61", "art": "information", "medium": "Zielentfernung", "absatz_ids": ["P20", "P31"]},
-      {"id": "S13", "von": "E61", "nach": "E53", "art": "information", "medium": "Richtbefehle Vorhalt und Aufsatz", "absatz_ids": ["P20", "P31"]},
-      {"id": "S14", "von": "E61", "nach": "E46", "art": "information", "medium": "Feuerleitdaten", "absatz_ids": ["P16", "P31"], "schnittstelle": "Bediengerät Feuerleitanlage"},
-      {"id": "S15", "von": "E64", "nach": "E55", "art": "stoff", "medium": "Munition", "absatz_ids": ["P19", "P31"]},
-      {"id": "S16", "von": "E52", "nach": "E3", "art": "mechanisch", "medium": "Turmlasten und Rückstoß", "absatz_ids": ["P4", "P31"], "schnittstelle": "Turmdrehkranz"},
-      {"id": "S17", "von": "E12", "nach": "E3", "art": "mechanisch", "medium": "Federkräfte", "absatz_ids": ["P4", "P31"]},
-      {"id": "S18", "von": "E43", "nach": "E71", "art": "information", "medium": "Fahr-, Lenk- und Bremsbefehle", "absatz_ids": ["P16", "P21"], "schnittstelle": "Fahrerbedienschnittstelle"},
-      {"id": "S19", "von": "E34", "nach": "E35", "art": "information", "medium": "Lenkvorgabe", "absatz_ids": ["P14"]},
-      {"id": "S20", "von": "E71", "nach": "E76", "art": "information", "medium": "Zustands- und Steuerdaten", "absatz_ids": ["P21", "P22"], "schnittstelle": "Fahrzeugbus"},
-      {"id": "S21", "von": "E84", "nach": "E85", "art": "information", "medium": "Bedrohungsmeldung", "absatz_ids": ["P24"]},
-      {"id": "S22", "von": "E84", "nach": "E86", "art": "information", "medium": "Auslösebefehl", "absatz_ids": ["P24"]},
-      {"id": "S23", "von": "E90", "nach": "E44", "art": "information", "medium": "Videobild Rundumsicht", "absatz_ids": ["P24"], "schnittstelle": "Videoschnittstelle Rundumsicht"},
-      {"id": "S24", "von": "E16", "nach": "E101", "art": "thermisch", "medium": "Kühlmittel", "absatz_ids": ["P27", "P31"], "schnittstelle": "Kühlmittelanschluss Triebwerk"},
-      {"id": "S25", "von": "E20", "nach": "E101", "art": "thermisch", "medium": "Getriebeöl", "absatz_ids": ["P27", "P31"], "schnittstelle": "Ölkühleranschluss Getriebe"},
-      {"id": "S26", "von": "E88", "nach": "E45", "art": "stoff", "medium": "gefilterte Überdruckluft", "absatz_ids": ["P23", "P27", "P31"], "schnittstelle": "Überdruckluftzufuhr Besatzungsraum"},
-      {"id": "S27", "von": "E104", "nach": "E45", "art": "thermisch", "medium": "temperierte Luft", "absatz_ids": ["P27", "P31"], "schnittstelle": "Klimaluftzufuhr Besatzungsraum"},
-      {"id": "S28", "von": "E20", "nach": "E107", "art": "mechanisch", "medium": "Drehmoment", "absatz_ids": ["P28"], "schnittstelle": "Nebenabtrieb Triebwerk"},
-      {"id": "S29", "von": "E112", "nach": "E53", "art": "hydraulisch", "medium": "Hydrauliköl", "absatz_ids": ["P28", "P31"]},
-      {"id": "S30", "von": "E107", "nach": "E12", "art": "hydraulisch", "medium": "Hydrauliköl für Niveauregulierung oder Blockierung", "absatz_ids": ["P28", "P31"], "schnittstelle": "Hydraulikanschluss Laufwerk"},
-      {"id": "S31", "von": "E38", "nach": "E21", "art": "mechanisch", "medium": "Bremsmoment (bei Bremsen am Abtrieb)", "absatz_ids": ["P15", "P31"], "schnittstelle": "Bremse am Abtrieb"},
-      {"id": "S32", "von": "E32", "nach": "E111", "art": "elektrisch", "medium": "Gleichstrom Traktion", "absatz_ids": ["P11"], "schnittstelle": "Traktionsanschluss Batterie"},
-      {"id": "S33", "von": "E24", "nach": "E23", "art": "elektrisch", "medium": "Wechselstrom Traktion", "absatz_ids": ["P9", "P10"]},
-      {"id": "S34", "von": "E23", "nach": "E21", "art": "mechanisch", "medium": "Drehmoment je Seite", "absatz_ids": ["P9"]},
-      {"id": "S35", "von": "E67", "nach": "E93", "art": "elektrisch", "medium": "Bordnetzenergie", "absatz_ids": ["P21", "P31"], "schnittstelle": "Lichtstromkreis"},
-      {"id": "S36", "von": "E98", "nach": "E44", "art": "information", "medium": "Videobild rückwärtig", "absatz_ids": ["P25"], "schnittstelle": "Videoschnittstelle Fahrer"},
-      {"id": "S37", "von": "E80", "nach": "E81", "art": "information", "medium": "Sprach- und Datenfunk", "absatz_ids": ["P22"]},
-      {"id": "S38", "von": "E79", "nach": "E81", "art": "information", "medium": "Positionsdaten", "absatz_ids": ["P22"]},
-      {"id": "S39", "von": "E71", "nach": "E77", "art": "information", "medium": "Fehler- und Zustandsdaten", "absatz_ids": ["P21", "P22"], "schnittstelle": "Fahrzeugbus"},
-      {"id": "S40", "von": "E16", "nach": "E110", "art": "mechanisch", "medium": "Drehmoment (serieller Hybrid)", "absatz_ids": ["P9", "P11"], "schnittstelle": "Generatorabtrieb Verbrennungsmotor"},
-      {"id": "S41", "von": "E110", "nach": "E111", "art": "elektrisch", "medium": "Gleichstrom Traktion", "absatz_ids": ["P11"]},
-      {"id": "S42", "von": "E111", "nach": "E24", "art": "elektrisch", "medium": "Gleichstrom Traktion", "absatz_ids": ["P9", "P11"], "schnittstelle": "Hochvoltanschluss Stromrichter"},
-      {"id": "S43", "von": "E23", "nach": "E20", "art": "mechanisch", "medium": "Zusatzdrehmoment (paralleler Hybrid)", "absatz_ids": ["P9"]},
-      {"id": "S44", "von": "E73", "nach": "E112", "art": "elektrisch", "medium": "Bordnetzenergie", "absatz_ids": ["P28", "P31"], "schnittstelle": "Turmdrehverbindung (elektrisch)"},
-      {"id": "S45", "von": "E55", "nach": "E114", "art": "mechanisch", "medium": "Rückstoßkraft", "absatz_ids": ["P18"]},
-      {"id": "S46", "von": "E114", "nach": "E52", "art": "mechanisch", "medium": "Rückstoßkraft", "absatz_ids": ["P18"]},
-      {"id": "S47", "von": "E113", "nach": "E80", "art": "information", "medium": "Sprache", "absatz_ids": ["P22"]},
-      {"id": "S48", "von": "E80", "nach": "E113", "art": "information", "medium": "Sprechfunk", "absatz_ids": ["P22"]},
-      {"id": "S49", "von": "E113", "nach": "E43", "art": "information", "medium": "Sprechverbindung Fahrer", "absatz_ids": ["P16", "P22"], "schnittstelle": "Sprechstelle Fahrerplatz"},
-      {"id": "S50", "von": "E113", "nach": "E73", "art": "information", "medium": "Sprechverbindung Turm", "absatz_ids": ["P21", "P22"], "schnittstelle": "Bordverständigung zu Drehübertragung"},
-      {"id": "S51", "von": "E73", "nach": "E46", "art": "information", "medium": "Sprechverbindung Turm", "absatz_ids": ["P21", "P22"], "schnittstelle": "Turmdrehverbindung (Daten)"}
+      {
+        "id": "S1",
+        "von": "E27",
+        "nach": "E16",
+        "art": "stoff",
+        "medium": "Kraftstoff",
+        "absatz_ids": [
+          "P11",
+          "P31"
+        ],
+        "schnittstelle": "Kraftstoffanschluss Triebwerk"
+      },
+      {
+        "id": "S2",
+        "von": "E16",
+        "nach": "E20",
+        "art": "mechanisch",
+        "medium": "Drehmoment",
+        "absatz_ids": [
+          "P9",
+          "P31"
+        ]
+      },
+      {
+        "id": "S3",
+        "von": "E20",
+        "nach": "E35",
+        "art": "mechanisch",
+        "medium": "Drehmoment",
+        "absatz_ids": [
+          "P14",
+          "P31"
+        ],
+        "schnittstelle": "Schalt-Lenkgetriebe (Getriebe zu Lenkgetriebe)"
+      },
+      {
+        "id": "S4",
+        "von": "E35",
+        "nach": "E21",
+        "art": "mechanisch",
+        "medium": "Drehmoment je Seite",
+        "absatz_ids": [
+          "P9",
+          "P31"
+        ],
+        "schnittstelle": "Abtrieb Lenkgetriebe zu Seitenvorgelege"
+      },
+      {
+        "id": "S5",
+        "von": "E21",
+        "nach": "E7",
+        "art": "mechanisch",
+        "medium": "Drehmoment",
+        "absatz_ids": [
+          "P9",
+          "P31"
+        ],
+        "schnittstelle": "Triebradnabe"
+      },
+      {
+        "id": "S6",
+        "von": "E7",
+        "nach": "E11",
+        "art": "mechanisch",
+        "medium": "Zugkraft",
+        "absatz_ids": [
+          "P6",
+          "P31"
+        ]
+      },
+      {
+        "id": "S7",
+        "von": "E29",
+        "nach": "E67",
+        "art": "elektrisch",
+        "medium": "Gleichstrom Bordnetz",
+        "absatz_ids": [
+          "P21",
+          "P31"
+        ],
+        "schnittstelle": "Bordnetzeinspeisung Generator"
+      },
+      {
+        "id": "S8",
+        "von": "E31",
+        "nach": "E67",
+        "art": "elektrisch",
+        "medium": "Gleichstrom Bordnetz",
+        "absatz_ids": [
+          "P12",
+          "P31"
+        ],
+        "schnittstelle": "Bordnetzeinspeisung Hilfsstromaggregat"
+      },
+      {
+        "id": "S9",
+        "von": "E67",
+        "nach": "E73",
+        "art": "elektrisch",
+        "medium": "Bordnetzenergie",
+        "absatz_ids": [
+          "P21"
+        ]
+      },
+      {
+        "id": "S10",
+        "von": "E73",
+        "nach": "E53",
+        "art": "elektrisch",
+        "medium": "Bordnetzenergie",
+        "absatz_ids": [
+          "P21",
+          "P31"
+        ],
+        "schnittstelle": "Turmdrehverbindung (elektrisch)"
+      },
+      {
+        "id": "S11",
+        "von": "E59",
+        "nach": "E61",
+        "art": "information",
+        "medium": "Zieldaten",
+        "absatz_ids": [
+          "P20",
+          "P31"
+        ]
+      },
+      {
+        "id": "S12",
+        "von": "E60",
+        "nach": "E61",
+        "art": "information",
+        "medium": "Zielentfernung",
+        "absatz_ids": [
+          "P20",
+          "P31"
+        ]
+      },
+      {
+        "id": "S13",
+        "von": "E61",
+        "nach": "E53",
+        "art": "information",
+        "medium": "Richtbefehle Vorhalt und Aufsatz",
+        "absatz_ids": [
+          "P20",
+          "P31"
+        ]
+      },
+      {
+        "id": "S14",
+        "von": "E61",
+        "nach": "E46",
+        "art": "information",
+        "medium": "Feuerleitdaten",
+        "absatz_ids": [
+          "P16",
+          "P31"
+        ],
+        "schnittstelle": "Bediengerät Feuerleitanlage"
+      },
+      {
+        "id": "S15",
+        "von": "E64",
+        "nach": "E55",
+        "art": "stoff",
+        "medium": "Munition",
+        "absatz_ids": [
+          "P19",
+          "P31"
+        ]
+      },
+      {
+        "id": "S16",
+        "von": "E52",
+        "nach": "E3",
+        "art": "mechanisch",
+        "medium": "Turmlasten und Rückstoß",
+        "absatz_ids": [
+          "P4",
+          "P31"
+        ],
+        "schnittstelle": "Turmdrehkranz"
+      },
+      {
+        "id": "S17",
+        "von": "E12",
+        "nach": "E3",
+        "art": "mechanisch",
+        "medium": "Federkräfte",
+        "absatz_ids": [
+          "P4",
+          "P31"
+        ]
+      },
+      {
+        "id": "S18",
+        "von": "E43",
+        "nach": "E71",
+        "art": "information",
+        "medium": "Fahr-, Lenk- und Bremsbefehle",
+        "absatz_ids": [
+          "P16",
+          "P21"
+        ],
+        "schnittstelle": "Fahrerbedienschnittstelle"
+      },
+      {
+        "id": "S19",
+        "von": "E34",
+        "nach": "E35",
+        "art": "information",
+        "medium": "Lenkvorgabe",
+        "absatz_ids": [
+          "P14"
+        ]
+      },
+      {
+        "id": "S20",
+        "von": "E71",
+        "nach": "E76",
+        "art": "information",
+        "medium": "Zustands- und Steuerdaten",
+        "absatz_ids": [
+          "P21",
+          "P22"
+        ],
+        "schnittstelle": "Fahrzeugbus"
+      },
+      {
+        "id": "S21",
+        "von": "E84",
+        "nach": "E85",
+        "art": "information",
+        "medium": "Bedrohungsmeldung",
+        "absatz_ids": [
+          "P24"
+        ]
+      },
+      {
+        "id": "S22",
+        "von": "E84",
+        "nach": "E86",
+        "art": "information",
+        "medium": "Auslösebefehl",
+        "absatz_ids": [
+          "P24"
+        ]
+      },
+      {
+        "id": "S23",
+        "von": "E90",
+        "nach": "E44",
+        "art": "information",
+        "medium": "Videobild Rundumsicht",
+        "absatz_ids": [
+          "P24"
+        ],
+        "schnittstelle": "Videoschnittstelle Rundumsicht"
+      },
+      {
+        "id": "S24",
+        "von": "E16",
+        "nach": "E101",
+        "art": "thermisch",
+        "medium": "Kühlmittel",
+        "absatz_ids": [
+          "P27",
+          "P31"
+        ],
+        "schnittstelle": "Kühlmittelanschluss Triebwerk"
+      },
+      {
+        "id": "S25",
+        "von": "E20",
+        "nach": "E101",
+        "art": "thermisch",
+        "medium": "Getriebeöl",
+        "absatz_ids": [
+          "P27",
+          "P31"
+        ],
+        "schnittstelle": "Ölkühleranschluss Getriebe"
+      },
+      {
+        "id": "S26",
+        "von": "E88",
+        "nach": "E45",
+        "art": "stoff",
+        "medium": "gefilterte Überdruckluft",
+        "absatz_ids": [
+          "P23",
+          "P27",
+          "P31"
+        ],
+        "schnittstelle": "Überdruckluftzufuhr Besatzungsraum"
+      },
+      {
+        "id": "S27",
+        "von": "E104",
+        "nach": "E45",
+        "art": "thermisch",
+        "medium": "temperierte Luft",
+        "absatz_ids": [
+          "P27",
+          "P31"
+        ],
+        "schnittstelle": "Klimaluftzufuhr Besatzungsraum"
+      },
+      {
+        "id": "S28",
+        "von": "E20",
+        "nach": "E107",
+        "art": "mechanisch",
+        "medium": "Drehmoment",
+        "absatz_ids": [
+          "P28"
+        ],
+        "schnittstelle": "Nebenabtrieb Triebwerk"
+      },
+      {
+        "id": "S29",
+        "von": "E112",
+        "nach": "E53",
+        "art": "hydraulisch",
+        "medium": "Hydrauliköl",
+        "absatz_ids": [
+          "P28",
+          "P31"
+        ]
+      },
+      {
+        "id": "S30",
+        "von": "E107",
+        "nach": "E12",
+        "art": "hydraulisch",
+        "medium": "Hydrauliköl für Niveauregulierung oder Blockierung",
+        "absatz_ids": [
+          "P28",
+          "P31"
+        ],
+        "schnittstelle": "Hydraulikanschluss Laufwerk"
+      },
+      {
+        "id": "S31",
+        "von": "E38",
+        "nach": "E21",
+        "art": "mechanisch",
+        "medium": "Bremsmoment (bei Bremsen am Abtrieb)",
+        "absatz_ids": [
+          "P15",
+          "P31"
+        ],
+        "schnittstelle": "Bremse am Abtrieb"
+      },
+      {
+        "id": "S32",
+        "von": "E32",
+        "nach": "E111",
+        "art": "elektrisch",
+        "medium": "Gleichstrom Traktion",
+        "absatz_ids": [
+          "P11"
+        ],
+        "schnittstelle": "Traktionsanschluss Batterie"
+      },
+      {
+        "id": "S33",
+        "von": "E24",
+        "nach": "E23",
+        "art": "elektrisch",
+        "medium": "Wechselstrom Traktion",
+        "absatz_ids": [
+          "P9",
+          "P10"
+        ]
+      },
+      {
+        "id": "S34",
+        "von": "E23",
+        "nach": "E21",
+        "art": "mechanisch",
+        "medium": "Drehmoment je Seite",
+        "absatz_ids": [
+          "P9"
+        ]
+      },
+      {
+        "id": "S35",
+        "von": "E67",
+        "nach": "E93",
+        "art": "elektrisch",
+        "medium": "Bordnetzenergie",
+        "absatz_ids": [
+          "P21",
+          "P31"
+        ],
+        "schnittstelle": "Lichtstromkreis"
+      },
+      {
+        "id": "S36",
+        "von": "E98",
+        "nach": "E44",
+        "art": "information",
+        "medium": "Videobild rückwärtig",
+        "absatz_ids": [
+          "P25"
+        ],
+        "schnittstelle": "Videoschnittstelle Fahrer"
+      },
+      {
+        "id": "S37",
+        "von": "E80",
+        "nach": "E81",
+        "art": "information",
+        "medium": "Sprach- und Datenfunk",
+        "absatz_ids": [
+          "P22"
+        ]
+      },
+      {
+        "id": "S38",
+        "von": "E79",
+        "nach": "E81",
+        "art": "information",
+        "medium": "Positionsdaten",
+        "absatz_ids": [
+          "P22"
+        ]
+      },
+      {
+        "id": "S39",
+        "von": "E71",
+        "nach": "E77",
+        "art": "information",
+        "medium": "Fehler- und Zustandsdaten",
+        "absatz_ids": [
+          "P21",
+          "P22"
+        ],
+        "schnittstelle": "Fahrzeugbus"
+      },
+      {
+        "id": "S40",
+        "von": "E16",
+        "nach": "E110",
+        "art": "mechanisch",
+        "medium": "Drehmoment (serieller Hybrid)",
+        "absatz_ids": [
+          "P9",
+          "P11"
+        ],
+        "schnittstelle": "Generatorabtrieb Verbrennungsmotor"
+      },
+      {
+        "id": "S41",
+        "von": "E110",
+        "nach": "E111",
+        "art": "elektrisch",
+        "medium": "Gleichstrom Traktion",
+        "absatz_ids": [
+          "P11"
+        ]
+      },
+      {
+        "id": "S42",
+        "von": "E111",
+        "nach": "E24",
+        "art": "elektrisch",
+        "medium": "Gleichstrom Traktion",
+        "absatz_ids": [
+          "P9",
+          "P11"
+        ],
+        "schnittstelle": "Hochvoltanschluss Stromrichter"
+      },
+      {
+        "id": "S43",
+        "von": "E23",
+        "nach": "E20",
+        "art": "mechanisch",
+        "medium": "Zusatzdrehmoment (paralleler Hybrid)",
+        "absatz_ids": [
+          "P9"
+        ]
+      },
+      {
+        "id": "S44",
+        "von": "E73",
+        "nach": "E112",
+        "art": "elektrisch",
+        "medium": "Bordnetzenergie",
+        "absatz_ids": [
+          "P28",
+          "P31"
+        ],
+        "schnittstelle": "Turmdrehverbindung (elektrisch)"
+      },
+      {
+        "id": "S45",
+        "von": "E55",
+        "nach": "E114",
+        "art": "mechanisch",
+        "medium": "Rückstoßkraft",
+        "absatz_ids": [
+          "P18"
+        ]
+      },
+      {
+        "id": "S46",
+        "von": "E114",
+        "nach": "E52",
+        "art": "mechanisch",
+        "medium": "Rückstoßkraft",
+        "absatz_ids": [
+          "P18"
+        ]
+      },
+      {
+        "id": "S47",
+        "von": "E113",
+        "nach": "E80",
+        "art": "information",
+        "medium": "Sprache",
+        "absatz_ids": [
+          "P22"
+        ]
+      },
+      {
+        "id": "S48",
+        "von": "E80",
+        "nach": "E113",
+        "art": "information",
+        "medium": "Sprechfunk",
+        "absatz_ids": [
+          "P22"
+        ]
+      },
+      {
+        "id": "S49",
+        "von": "E113",
+        "nach": "E43",
+        "art": "information",
+        "medium": "Sprechverbindung Fahrer",
+        "absatz_ids": [
+          "P16",
+          "P22"
+        ],
+        "schnittstelle": "Sprechstelle Fahrerplatz"
+      },
+      {
+        "id": "S50",
+        "von": "E113",
+        "nach": "E73",
+        "art": "information",
+        "medium": "Sprechverbindung Turm",
+        "absatz_ids": [
+          "P21",
+          "P22"
+        ],
+        "schnittstelle": "Bordverständigung zu Drehübertragung"
+      },
+      {
+        "id": "S51",
+        "von": "E73",
+        "nach": "E46",
+        "art": "information",
+        "medium": "Sprechverbindung Turm",
+        "absatz_ids": [
+          "P21",
+          "P22"
+        ],
+        "schnittstelle": "Turmdrehverbindung (Daten)"
+      }
     ],
     "entfallene_kategorien": [],
     "varianten": [
@@ -1000,138 +2838,698 @@
         "id": "V1",
         "element_id": "E14",
         "bezeichnung": "Antriebsart",
-        "alternativen": ["Dieselmotor", "Gasturbine", "Serieller Hybrid (Verbrennungsmotor mit Traktionsgenerator, Traktionsmaschinen je Seite)", "Paralleler Hybrid (Elektromaschine im Getriebe ergänzt den mechanischen Pfad)"],
-        "auswahlkriterien": ["Leistungsgewicht und Bauvolumen der Antriebsanlage", "Kraftstoffverbrauch und Fahrbereich", "Wärmesignatur und Geräuschemission", "Logistik der Treibstoffversorgung", "Lebenszykluskosten und Kampfwertsteigerung"],
-        "auswirkungen": [
-          {"element_id": "E25", "beschreibung": "Kraftstoffmenge und Hilfsstromaggregat richten sich nach dem Verbrauch; beide Hybridformen erfordern Traktionsbatterie und Hochvolt-Bordnetz, der serielle Hybrid zusätzlich einen Traktionsgenerator."},
-          {"element_id": "E99", "beschreibung": "Kühlleistung und Luftführung ändern sich; der Hybrid braucht Kühlkreise für Batterie, Stromrichter und Traktionsmaschinen."},
-          {"element_id": "E33", "beschreibung": "Beim seriellen Hybrid mit Zwei-Ecken-Antrieb entfällt das mechanische Lenkgetriebe, gelenkt wird über die Traktionsmaschinen; beim parallelen Hybrid bleibt es erhalten."},
-          {"element_id": "E66", "beschreibung": "Der Hybrid fügt einen Traktionsstromkreis mit eigener Absicherung hinzu."},
-          {"element_id": "E20", "beschreibung": "Beim parallelen Hybrid nimmt das Getriebe die Elektromaschine auf, beim seriellen Hybrid entfällt der mechanische Pfad bis zum Seitenvorgelege."}
+        "alternativen": [
+          "Dieselmotor",
+          "Gasturbine",
+          "Serieller Hybrid (Verbrennungsmotor mit Traktionsgenerator, Traktionsmaschinen je Seite)",
+          "Paralleler Hybrid (Elektromaschine im Getriebe ergänzt den mechanischen Pfad)"
         ],
-        "absatz_ids": ["P8", "P9", "P10", "P11"]
+        "auswahlkriterien": [
+          "Leistungsgewicht und Bauvolumen der Antriebsanlage",
+          "Kraftstoffverbrauch und Fahrbereich",
+          "Wärmesignatur und Geräuschemission",
+          "Logistik der Treibstoffversorgung",
+          "Lebenszykluskosten und Kampfwertsteigerung"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E25",
+            "beschreibung": "Kraftstoffmenge und Hilfsstromaggregat richten sich nach dem Verbrauch; beide Hybridformen erfordern Traktionsbatterie und Hochvolt-Bordnetz, der serielle Hybrid zusätzlich einen Traktionsgenerator."
+          },
+          {
+            "element_id": "E99",
+            "beschreibung": "Kühlleistung und Luftführung ändern sich; der Hybrid braucht Kühlkreise für Batterie, Stromrichter und Traktionsmaschinen."
+          },
+          {
+            "element_id": "E33",
+            "beschreibung": "Beim seriellen Hybrid mit Zwei-Ecken-Antrieb entfällt das mechanische Lenkgetriebe, gelenkt wird über die Traktionsmaschinen; beim parallelen Hybrid bleibt es erhalten."
+          },
+          {
+            "element_id": "E66",
+            "beschreibung": "Der Hybrid fügt einen Traktionsstromkreis mit eigener Absicherung hinzu."
+          },
+          {
+            "element_id": "E20",
+            "beschreibung": "Beim parallelen Hybrid nimmt das Getriebe die Elektromaschine auf, beim seriellen Hybrid entfällt der mechanische Pfad bis zum Seitenvorgelege."
+          }
+        ],
+        "absatz_ids": [
+          "P8",
+          "P9",
+          "P10",
+          "P11"
+        ]
       },
       {
         "id": "V2",
         "element_id": "E15",
         "bezeichnung": "Triebwerkslage",
-        "alternativen": ["Heckanordnung", "Frontanordnung"],
-        "auswahlkriterien": ["Schutz der Besatzung", "Heckausstieg für Besatzung oder Personen", "Waffenrichtbereich und Rohrüberstand", "Infrarotsignatur der Front", "Kettenbelastung und Triebradlage"],
-        "auswirkungen": [
-          {"element_id": "E3", "beschreibung": "Die Frontanordnung erlaubt eine Heckausstiegsluke und nutzt das Triebwerk als Schutz, verändert aber die Wannenfront."},
-          {"element_id": "E7", "beschreibung": "Das Triebrad liegt auf der Seite des Triebwerks, vorn oder hinten."},
-          {"element_id": "E50", "beschreibung": "Bei Frontanordnung ist der Waffenrichtbereich des Turms eingeschränkt."},
-          {"element_id": "E100", "beschreibung": "Die Frontanordnung erhöht den Aufwand für Kühl- und Abgasführung."}
+        "alternativen": [
+          "Heckanordnung",
+          "Frontanordnung"
         ],
-        "absatz_ids": ["P8", "P26"]
+        "auswahlkriterien": [
+          "Schutz der Besatzung",
+          "Heckausstieg für Besatzung oder Personen",
+          "Waffenrichtbereich und Rohrüberstand",
+          "Infrarotsignatur der Front",
+          "Kettenbelastung und Triebradlage"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E3",
+            "beschreibung": "Die Frontanordnung erlaubt eine Heckausstiegsluke und nutzt das Triebwerk als Schutz, verändert aber die Wannenfront."
+          },
+          {
+            "element_id": "E7",
+            "beschreibung": "Das Triebrad liegt auf der Seite des Triebwerks, vorn oder hinten."
+          },
+          {
+            "element_id": "E50",
+            "beschreibung": "Bei Frontanordnung ist der Waffenrichtbereich des Turms eingeschränkt."
+          },
+          {
+            "element_id": "E100",
+            "beschreibung": "Die Frontanordnung erhöht den Aufwand für Kühl- und Abgasführung."
+          }
+        ],
+        "absatz_ids": [
+          "P8",
+          "P26"
+        ]
       },
       {
         "id": "V3",
         "element_id": "E63",
         "bezeichnung": "Ladeverfahren der Hauptwaffe",
-        "alternativen": ["Ladeschütze", "Ladeautomat"],
-        "auswahlkriterien": ["Besatzungsstärke und Durchhaltefähigkeit", "Turmvolumen und Silhouette", "Munitionsanordnung und Schutz vor Munitionsexplosion", "Ausfallverhalten und Notbetrieb"],
-        "auswirkungen": [
-          {"element_id": "E45", "beschreibung": "Mit Ladeautomat entfällt der Ladeschützenplatz im Kampfraum."},
-          {"element_id": "E50", "beschreibung": "Ohne Ladeschützen kann der Turm kleiner ausfallen."},
-          {"element_id": "E64", "beschreibung": "Der Ladeautomat bestimmt Lage und Form des Munitionsbunkers."},
-          {"element_id": "E67", "beschreibung": "Der Ladeautomat ist ein zusätzlicher elektrischer Verbraucher."}
+        "alternativen": [
+          "Ladeschütze",
+          "Ladeautomat"
         ],
-        "absatz_ids": ["P17", "P18"]
+        "auswahlkriterien": [
+          "Besatzungsstärke und Durchhaltefähigkeit",
+          "Turmvolumen und Silhouette",
+          "Munitionsanordnung und Schutz vor Munitionsexplosion",
+          "Ausfallverhalten und Notbetrieb"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E45",
+            "beschreibung": "Mit Ladeautomat entfällt der Ladeschützenplatz im Kampfraum."
+          },
+          {
+            "element_id": "E50",
+            "beschreibung": "Ohne Ladeschützen kann der Turm kleiner ausfallen."
+          },
+          {
+            "element_id": "E64",
+            "beschreibung": "Der Ladeautomat bestimmt Lage und Form des Munitionsbunkers."
+          },
+          {
+            "element_id": "E67",
+            "beschreibung": "Der Ladeautomat ist ein zusätzlicher elektrischer Verbraucher."
+          }
+        ],
+        "absatz_ids": [
+          "P17",
+          "P18"
+        ]
       },
       {
         "id": "V4",
         "element_id": "E12",
         "bezeichnung": "Federungsart",
-        "alternativen": ["Drehstabfederung", "Hydropneumatische Feder-Dämpfer-Elemente", "Geregeltes Laufwerk"],
-        "auswahlkriterien": ["Federweg und Belastung der Besatzung", "Regelbarkeit, Niveauregulierung und Blockierung für den Waffeneinsatz", "Bauraum in der Wanne", "Entwicklungs-, Beschaffungs- und Unterhaltskosten", "Notbetrieb bei Ausfall"],
-        "auswirkungen": [
-          {"element_id": "E3", "beschreibung": "Drehstäbe quer durch den Wannenboden beanspruchen Bauraum, hydropneumatische Elemente sitzen außen an der Wanne."},
-          {"element_id": "E106", "beschreibung": "Nur geregelte Laufwerke und hydropneumatische Federungen mit Niveauregulierung oder Blockierung benötigen hydraulische Versorgung."},
-          {"element_id": "E62", "beschreibung": "Die Vorstabilisierung der Wanne durch das Laufwerk entlastet die Waffenstabilisierung."},
-          {"element_id": "E76", "beschreibung": "Ein geregeltes Laufwerk braucht Regelfunktionen im Fahrzeugmanagement."}
+        "alternativen": [
+          "Drehstabfederung",
+          "Hydropneumatische Feder-Dämpfer-Elemente",
+          "Geregeltes Laufwerk"
         ],
-        "absatz_ids": ["P6", "P7", "P28"]
+        "auswahlkriterien": [
+          "Federweg und Belastung der Besatzung",
+          "Regelbarkeit, Niveauregulierung und Blockierung für den Waffeneinsatz",
+          "Bauraum in der Wanne",
+          "Entwicklungs-, Beschaffungs- und Unterhaltskosten",
+          "Notbetrieb bei Ausfall"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E3",
+            "beschreibung": "Drehstäbe quer durch den Wannenboden beanspruchen Bauraum, hydropneumatische Elemente sitzen außen an der Wanne."
+          },
+          {
+            "element_id": "E106",
+            "beschreibung": "Nur geregelte Laufwerke und hydropneumatische Federungen mit Niveauregulierung oder Blockierung benötigen hydraulische Versorgung."
+          },
+          {
+            "element_id": "E62",
+            "beschreibung": "Die Vorstabilisierung der Wanne durch das Laufwerk entlastet die Waffenstabilisierung."
+          },
+          {
+            "element_id": "E76",
+            "beschreibung": "Ein geregeltes Laufwerk braucht Regelfunktionen im Fahrzeugmanagement."
+          }
+        ],
+        "absatz_ids": [
+          "P6",
+          "P7",
+          "P28"
+        ]
       },
       {
         "id": "V5",
         "element_id": "E49",
         "bezeichnung": "Turmkonzept und Besatzungsanordnung",
-        "alternativen": ["Bemannter Turm mit Kampfraum", "Unbemannter Turm mit Besatzung in der Wanne"],
-        "auswahlkriterien": ["Überlebensfähigkeit der Besatzung", "Silhouette und Masse", "Sicht und Lagebild der Besatzung", "Ausfallsicherheit der fernbedienten Waffenanlage"],
-        "auswirkungen": [
-          {"element_id": "E41", "beschreibung": "Beim unbemannten Turm wandern Kommandanten- und Richtschützenplatz in die Wanne."},
-          {"element_id": "E90", "beschreibung": "Die Besatzung ist auf eine kamerabasierte Rundumsicht angewiesen."},
-          {"element_id": "E73", "beschreibung": "Alle Bedien- und Videosignale laufen über die Drehübertragung."},
-          {"element_id": "E65", "beschreibung": "Der unbemannte Turm setzt einen Ladeautomaten voraus."}
+        "alternativen": [
+          "Bemannter Turm mit Kampfraum",
+          "Unbemannter Turm mit Besatzung in der Wanne"
         ],
-        "absatz_ids": ["P17", "P18"]
+        "auswahlkriterien": [
+          "Überlebensfähigkeit der Besatzung",
+          "Silhouette und Masse",
+          "Sicht und Lagebild der Besatzung",
+          "Ausfallsicherheit der fernbedienten Waffenanlage"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E41",
+            "beschreibung": "Beim unbemannten Turm wandern Kommandanten- und Richtschützenplatz in die Wanne."
+          },
+          {
+            "element_id": "E90",
+            "beschreibung": "Die Besatzung ist auf eine kamerabasierte Rundumsicht angewiesen."
+          },
+          {
+            "element_id": "E73",
+            "beschreibung": "Alle Bedien- und Videosignale laufen über die Drehübertragung."
+          },
+          {
+            "element_id": "E65",
+            "beschreibung": "Der unbemannte Turm setzt einen Ladeautomaten voraus."
+          }
+        ],
+        "absatz_ids": [
+          "P17",
+          "P18"
+        ]
       },
       {
         "id": "V6",
         "element_id": "E35",
         "bezeichnung": "Lenkgetriebeart",
-        "alternativen": ["Stufenloses Überlagerungs-Lenkgetriebe mit hydrostatischem Lenkantrieb", "Umlauf-Lenkgetriebe", "Elektrische Lenkung über Zwei-Ecken-Antrieb"],
-        "auswahlkriterien": ["Lenkbarkeit und Kurvenradien", "Leistungsbilanz und Wirkungsgrad", "Bauraum und Masse", "Kopplung an die Antriebsart"],
-        "auswirkungen": [
-          {"element_id": "E20", "beschreibung": "Überlagerungs-Lenkgetriebe werden mit dem Getriebe zum Schalt-Lenkgetriebe vereint."},
-          {"element_id": "E23", "beschreibung": "Beim Zwei-Ecken-Antrieb übernehmen die Traktionsmaschinen die Lenkfunktion."},
-          {"element_id": "E37", "beschreibung": "Umlauf-Lenkgetriebe mit Lenkbremsen verschränken Brems- und Lenkfunktion."},
-          {"element_id": "E100", "beschreibung": "Lenkleistung im hydrostatischen Kreis fällt als zusätzliche Verlustwärme an."}
+        "alternativen": [
+          "Stufenloses Überlagerungs-Lenkgetriebe mit hydrostatischem Lenkantrieb",
+          "Umlauf-Lenkgetriebe",
+          "Elektrische Lenkung über Zwei-Ecken-Antrieb"
         ],
-        "absatz_ids": ["P13", "P14"]
+        "auswahlkriterien": [
+          "Lenkbarkeit und Kurvenradien",
+          "Leistungsbilanz und Wirkungsgrad",
+          "Bauraum und Masse",
+          "Kopplung an die Antriebsart"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E20",
+            "beschreibung": "Überlagerungs-Lenkgetriebe werden mit dem Getriebe zum Schalt-Lenkgetriebe vereint."
+          },
+          {
+            "element_id": "E23",
+            "beschreibung": "Beim Zwei-Ecken-Antrieb übernehmen die Traktionsmaschinen die Lenkfunktion."
+          },
+          {
+            "element_id": "E37",
+            "beschreibung": "Umlauf-Lenkgetriebe mit Lenkbremsen verschränken Brems- und Lenkfunktion."
+          },
+          {
+            "element_id": "E100",
+            "beschreibung": "Lenkleistung im hydrostatischen Kreis fällt als zusätzliche Verlustwärme an."
+          }
+        ],
+        "absatz_ids": [
+          "P13",
+          "P14"
+        ]
       },
       {
         "id": "V7",
         "element_id": "E20",
         "bezeichnung": "Getriebeart",
-        "alternativen": ["Lastschaltbares Getriebe mit hydrodynamischem Wandler", "Mechanisches Schaltgetriebe mit Umlauf-Lenkgetriebe"],
-        "auswahlkriterien": ["Bedienbarkeit und Verschleiß", "Wirkungsgrad", "Bauraum und Masse", "Kosten"],
-        "auswirkungen": [
-          {"element_id": "E35", "beschreibung": "Das Lenkgetriebe bildet mit dem Lastschaltgetriebe einen Block oder ist als Umlauf-Lenkgetriebe getrennt ausgeführt."},
-          {"element_id": "E101", "beschreibung": "Der hydrodynamische Wandler erzeugt Verlustwärme, die über den Ölkühleranschluss des Getriebes zum Kühler geführt wird; beim mechanischen Schaltgetriebe entfällt dieser Anteil weitgehend."},
-          {"element_id": "E43", "beschreibung": "Das mechanische Schaltgetriebe verlangt eine Schaltbedienung am Fahrerplatz, das Lastschaltgetriebe nur eine Fahrstufenwahl."}
+        "alternativen": [
+          "Lastschaltbares Getriebe mit hydrodynamischem Wandler",
+          "Mechanisches Schaltgetriebe mit Umlauf-Lenkgetriebe"
         ],
-        "absatz_ids": ["P9", "P33"]
+        "auswahlkriterien": [
+          "Bedienbarkeit und Verschleiß",
+          "Wirkungsgrad",
+          "Bauraum und Masse",
+          "Kosten"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E35",
+            "beschreibung": "Das Lenkgetriebe bildet mit dem Lastschaltgetriebe einen Block oder ist als Umlauf-Lenkgetriebe getrennt ausgeführt."
+          },
+          {
+            "element_id": "E101",
+            "beschreibung": "Der hydrodynamische Wandler erzeugt Verlustwärme, die über den Ölkühleranschluss des Getriebes zum Kühler geführt wird; beim mechanischen Schaltgetriebe entfällt dieser Anteil weitgehend."
+          },
+          {
+            "element_id": "E43",
+            "beschreibung": "Das mechanische Schaltgetriebe verlangt eine Schaltbedienung am Fahrerplatz, das Lastschaltgetriebe nur eine Fahrstufenwahl."
+          }
+        ],
+        "absatz_ids": [
+          "P9",
+          "P33"
+        ]
       }
     ],
     "klaerungsfragen": [
-      {"id": "K1", "frage": "Welche Antriebsart soll das Modell abbilden: Dieselmotor, Gasturbine oder einen Hybrid, und ist dieser seriell mit Traktionsgenerator oder parallel mit Elektromaschine im Getriebe aufgebaut?", "element_ids": ["E14", "E25"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Energiespeicher, Traktionsgenerator, Hochvolt-Bordnetz, Kühlkreise, Lenkgetriebe und Bordnetz ab.", "variante_ids": ["V1"]},
-      {"id": "K2", "frage": "Soll das Triebwerk im Heck oder in der Front der Wanne liegen?", "element_ids": ["E15", "E3"], "anlass": "architekturentscheidung", "relevanz": "Die Antwort bestimmt Triebradlage, Heckausstieg, Waffenrichtbereich und Kühlluftführung.", "variante_ids": ["V2"]},
-      {"id": "K3", "frage": "Wird die Hauptwaffe von einem Ladeschützen oder von einem Ladeautomaten geladen?", "element_ids": ["E63", "E45"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Besatzungsstärke, Turmgröße und Anordnung des Munitionsbunkers ab.", "variante_ids": ["V3"]},
-      {"id": "K4", "frage": "Welche Federungsart ist vorgesehen, und muss das Laufwerk Niveauregulierung oder Blockierung für den Waffeneinsatz bieten?", "element_ids": ["E12", "E2"], "anlass": "anforderung", "relevanz": "Die Antwort entscheidet über Hydraulikversorgung, Bauraum in der Wanne und Regelfunktionen.", "variante_ids": ["V4"]},
-      {"id": "K5", "frage": "Sitzt die Besatzung im Turm oder geschützt in der Wanne unter einem unbemannten Turm?", "element_ids": ["E49", "E41"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Besatzungsraum, Rundumsichtsystem und Umfang der Drehübertragung ab.", "variante_ids": ["V5"]},
-      {"id": "K6", "frage": "Welche Lenkgetriebeart wird eingesetzt, und bildet sie mit dem Getriebe einen gemeinsamen Block?", "element_ids": ["E35", "E33", "E20"], "anlass": "architekturentscheidung", "relevanz": "Die Antwort legt fest, ob Lenk- und Antriebssystem getrennte oder gemeinsame Blöcke im Modell sind.", "variante_ids": ["V6"]},
-      {"id": "K7", "frage": "Gegen welche Bedrohungen, auch Minen und improvisierte Sprengvorrichtungen, und aus welchen Trefferrichtungen muss die Panzerung schützen, und soll Zusatzpanzerung modular nachrüstbar sein?", "element_ids": ["E2", "E4", "E5", "E41"], "anlass": "anforderung", "relevanz": "Davon hängen Masse, Gestaltung von Wanne und Wannenboden, Lagerung der Sitze und Befestigungsschnittstellen der Zusatzpanzerung ab."},
-      {"id": "K8", "frage": "Wie lange soll der Kampfpanzer im Beobachtungshalt bei abgestelltem Triebwerk einsatzbereit bleiben?", "element_ids": ["E25", "E31"], "anlass": "betrieb", "relevanz": "Die Antwort bestimmt Batteriekapazität und Leistung des Hilfsstromaggregats."},
-      {"id": "K9", "frage": "Ist eine verschleißfreie Dauerbremse gefordert, und sind Betriebsbremse und Lenkbremsen getrennte Bauteile?", "element_ids": ["E37", "E40"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen die Kopplung von Bremssystem, Getriebe und Lenkgetriebe sowie die Wärmeabfuhr ab."},
-      {"id": "K10", "frage": "Welche Bedien- und Anzeigeelemente erhält jeder Besatzungsplatz, und muss ein Platz die Aufgaben eines anderen übernehmen können?", "element_ids": ["E41", "E43", "E44"], "anlass": "anforderung", "relevanz": "Die Antwort bestimmt Umfang der Bedienschnittstellen und Datenverbindungen zwischen Fahrerraum und Kampfraum."},
-      {"id": "K11", "frage": "Welche elektrische Leistung und welche Datenverbindungen müssen zwischen Wanne und Turm übertragen werden?", "element_ids": ["E66", "E73", "E72"], "anlass": "schnittstelle", "relevanz": "Davon hängen Auslegung des Schleifringübertragers und die Aufteilung der Steuergeräte auf Wanne und Turm ab."},
-      {"id": "K12", "frage": "An welche Führungsinformations- und Funksysteme des Verbands muss der Kampfpanzer angebunden werden?", "element_ids": ["E74", "E80", "E81"], "anlass": "schnittstelle", "relevanz": "Die Antwort legt Funkausstattung, Datenformate und Anzeigen am Kommandantenplatz fest."},
-      {"id": "K13", "frage": "Soll ein aktives Schutzsystem vorgesehen werden, und wenn ja, als ablenkendes oder abfangendes System?", "element_ids": ["E82", "E83"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Sensorik, Werfer am Turm, Energiebedarf und Gefährdung begleitender Infanterie ab."},
-      {"id": "K14", "frage": "Welche Sichtmittel braucht der Fahrer bei geschlossener Luke und bei Nacht, und muss das Fahrzeug mit Beleuchtung am Straßenverkehr teilnehmen?", "element_ids": ["E91", "E95", "E92"], "anlass": "anforderung", "relevanz": "Die Antwort bestimmt Umfang von Fahrersicht und Beleuchtung sowie deren Abschaltlogik."},
-      {"id": "K15", "frage": "Für welche Umgebungstemperaturen und welche zulässige Wärmesignatur ist das Thermomanagement auszulegen?", "element_ids": ["E99", "E100"], "anlass": "anforderung", "relevanz": "Davon hängen Kühlerfläche, Lüfterleistung und die Leistungsentnahme vom Triebwerk ab."},
-      {"id": "K16", "frage": "Muss der Kampfpanzer Gewässer watend oder mit Tiefwatausrüstung unter Wasser durchfahren können?", "element_ids": ["E105", "E109"], "anlass": "betrieb", "relevanz": "Die Antwort entscheidet über Tiefwatausrüstung, Abdichtung der Wanne und Luftversorgung des Triebwerks."},
-      {"id": "K17", "frage": "Soll die Kraftübertragung ein lastschaltbares Getriebe mit hydrodynamischem Wandler oder ein mechanisches Schaltgetriebe mit getrenntem Umlauf-Lenkgetriebe erhalten?", "element_ids": ["E20", "E35"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen die Blockbildung mit dem Lenkgetriebe, die Ölkühlung des Getriebes und die Schaltbedienung am Fahrerplatz ab.", "variante_ids": ["V7"]},
-      {"id": "K18", "frage": "Welche Gefechtsmasse darf der Kampfpanzer höchstens haben, und mit welchen Transportmitteln und über welche Brückenklassen muss er verlegbar sein?", "element_ids": ["E1"], "anlass": "anforderung", "relevanz": "Davon hängen Schutzniveau, Laufwerksauslegung, spezifische Leistung und Modularität der Zusatzpanzerung ab."}
+      {
+        "id": "K1",
+        "frage": "Welche Antriebsart soll das Modell abbilden: Dieselmotor, Gasturbine oder einen Hybrid, und ist dieser seriell mit Traktionsgenerator oder parallel mit Elektromaschine im Getriebe aufgebaut?",
+        "element_ids": [
+          "E14",
+          "E25"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Energiespeicher, Traktionsgenerator, Hochvolt-Bordnetz, Kühlkreise, Lenkgetriebe und Bordnetz ab.",
+        "variante_ids": [
+          "V1"
+        ]
+      },
+      {
+        "id": "K2",
+        "frage": "Soll das Triebwerk im Heck oder in der Front der Wanne liegen?",
+        "element_ids": [
+          "E15",
+          "E3"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Die Antwort bestimmt Triebradlage, Heckausstieg, Waffenrichtbereich und Kühlluftführung.",
+        "variante_ids": [
+          "V2"
+        ]
+      },
+      {
+        "id": "K3",
+        "frage": "Wird die Hauptwaffe von einem Ladeschützen oder von einem Ladeautomaten geladen?",
+        "element_ids": [
+          "E63",
+          "E45"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Besatzungsstärke, Turmgröße und Anordnung des Munitionsbunkers ab.",
+        "variante_ids": [
+          "V3"
+        ]
+      },
+      {
+        "id": "K4",
+        "frage": "Welche Federungsart ist vorgesehen, und muss das Laufwerk Niveauregulierung oder Blockierung für den Waffeneinsatz bieten?",
+        "element_ids": [
+          "E12",
+          "E2"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Die Antwort entscheidet über Hydraulikversorgung, Bauraum in der Wanne und Regelfunktionen.",
+        "variante_ids": [
+          "V4"
+        ]
+      },
+      {
+        "id": "K5",
+        "frage": "Sitzt die Besatzung im Turm oder geschützt in der Wanne unter einem unbemannten Turm?",
+        "element_ids": [
+          "E49",
+          "E41"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Besatzungsraum, Rundumsichtsystem und Umfang der Drehübertragung ab.",
+        "variante_ids": [
+          "V5"
+        ]
+      },
+      {
+        "id": "K6",
+        "frage": "Welche Lenkgetriebeart wird eingesetzt, und bildet sie mit dem Getriebe einen gemeinsamen Block?",
+        "element_ids": [
+          "E35",
+          "E33",
+          "E20"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Die Antwort legt fest, ob Lenk- und Antriebssystem getrennte oder gemeinsame Blöcke im Modell sind.",
+        "variante_ids": [
+          "V6"
+        ]
+      },
+      {
+        "id": "K7",
+        "frage": "Gegen welche Bedrohungen, auch Minen und improvisierte Sprengvorrichtungen, und aus welchen Trefferrichtungen muss die Panzerung schützen, und soll Zusatzpanzerung modular nachrüstbar sein?",
+        "element_ids": [
+          "E2",
+          "E4",
+          "E5",
+          "E41"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Masse, Gestaltung von Wanne und Wannenboden, Lagerung der Sitze und Befestigungsschnittstellen der Zusatzpanzerung ab."
+      },
+      {
+        "id": "K8",
+        "frage": "Wie lange soll der Kampfpanzer im Beobachtungshalt bei abgestelltem Triebwerk einsatzbereit bleiben?",
+        "element_ids": [
+          "E25",
+          "E31"
+        ],
+        "anlass": "betrieb",
+        "relevanz": "Die Antwort bestimmt Batteriekapazität und Leistung des Hilfsstromaggregats."
+      },
+      {
+        "id": "K9",
+        "frage": "Ist eine verschleißfreie Dauerbremse gefordert, und sind Betriebsbremse und Lenkbremsen getrennte Bauteile?",
+        "element_ids": [
+          "E37",
+          "E40"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen die Kopplung von Bremssystem, Getriebe und Lenkgetriebe sowie die Wärmeabfuhr ab."
+      },
+      {
+        "id": "K10",
+        "frage": "Welche Bedien- und Anzeigeelemente erhält jeder Besatzungsplatz, und muss ein Platz die Aufgaben eines anderen übernehmen können?",
+        "element_ids": [
+          "E41",
+          "E43",
+          "E44"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Die Antwort bestimmt Umfang der Bedienschnittstellen und Datenverbindungen zwischen Fahrerraum und Kampfraum."
+      },
+      {
+        "id": "K11",
+        "frage": "Welche elektrische Leistung und welche Datenverbindungen müssen zwischen Wanne und Turm übertragen werden?",
+        "element_ids": [
+          "E66",
+          "E73",
+          "E72"
+        ],
+        "anlass": "schnittstelle",
+        "relevanz": "Davon hängen Auslegung des Schleifringübertragers und die Aufteilung der Steuergeräte auf Wanne und Turm ab."
+      },
+      {
+        "id": "K12",
+        "frage": "An welche Führungsinformations- und Funksysteme des Verbands muss der Kampfpanzer angebunden werden?",
+        "element_ids": [
+          "E74",
+          "E80",
+          "E81"
+        ],
+        "anlass": "schnittstelle",
+        "relevanz": "Die Antwort legt Funkausstattung, Datenformate und Anzeigen am Kommandantenplatz fest."
+      },
+      {
+        "id": "K13",
+        "frage": "Soll ein aktives Schutzsystem vorgesehen werden, und wenn ja, als ablenkendes oder abfangendes System?",
+        "element_ids": [
+          "E82",
+          "E83"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Sensorik, Werfer am Turm, Energiebedarf und Gefährdung begleitender Infanterie ab."
+      },
+      {
+        "id": "K14",
+        "frage": "Welche Sichtmittel braucht der Fahrer bei geschlossener Luke und bei Nacht, und muss das Fahrzeug mit Beleuchtung am Straßenverkehr teilnehmen?",
+        "element_ids": [
+          "E91",
+          "E95",
+          "E92"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Die Antwort bestimmt Umfang von Fahrersicht und Beleuchtung sowie deren Abschaltlogik."
+      },
+      {
+        "id": "K15",
+        "frage": "Für welche Umgebungstemperaturen und welche zulässige Wärmesignatur ist das Thermomanagement auszulegen?",
+        "element_ids": [
+          "E99",
+          "E100"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Kühlerfläche, Lüfterleistung und die Leistungsentnahme vom Triebwerk ab."
+      },
+      {
+        "id": "K16",
+        "frage": "Muss der Kampfpanzer Gewässer watend oder mit Tiefwatausrüstung unter Wasser durchfahren können?",
+        "element_ids": [
+          "E105",
+          "E109"
+        ],
+        "anlass": "betrieb",
+        "relevanz": "Die Antwort entscheidet über Tiefwatausrüstung, Abdichtung der Wanne und Luftversorgung des Triebwerks."
+      },
+      {
+        "id": "K17",
+        "frage": "Soll die Kraftübertragung ein lastschaltbares Getriebe mit hydrodynamischem Wandler oder ein mechanisches Schaltgetriebe mit getrenntem Umlauf-Lenkgetriebe erhalten?",
+        "element_ids": [
+          "E20",
+          "E35"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen die Blockbildung mit dem Lenkgetriebe, die Ölkühlung des Getriebes und die Schaltbedienung am Fahrerplatz ab.",
+        "variante_ids": [
+          "V7"
+        ]
+      },
+      {
+        "id": "K18",
+        "frage": "Welche Gefechtsmasse darf der Kampfpanzer höchstens haben, und mit welchen Transportmitteln und über welche Brückenklassen muss er verlegbar sein?",
+        "element_ids": [
+          "E1"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Schutzniveau, Laufwerksauslegung, spezifische Leistung und Modularität der Zusatzpanzerung ab."
+      }
     ],
     "anforderungsthemen": [
-      {"id": "R1", "element_ids": ["E1"], "thema": "Rüstungskontrollrechtliche Einstufung als Kampfpanzer", "kenngroessen": ["Leergewicht", "Kaliber der Kanone", "Schwenkbereich der Kanone", "Fahrwerksart"], "regelwerke": [{"bezeichnung": "Vertrag über Konventionelle Streitkräfte in Europa, Begriffsbestimmung Kampfpanzer (Geltungsbereich: Vertragsstaaten, Anwendungsgebiet vom Atlantik bis zum Ural)", "quellen_id": "Q1", "fundstelle": "Artikel II Absatz 1 Buchstaben B und C"}]},
-      {"id": "R2", "element_ids": ["E2", "E4", "E5"], "thema": "Ballistischer Schutz", "kenngroessen": ["Schutzniveau je Trefferzone", "Masse der Panzerung", "Nachrüstbarkeit der Zusatzpanzerung", "Minenschutzniveau", "Schutz gegen improvisierte Sprengvorrichtungen"]},
-      {"id": "R3", "element_ids": ["E2", "E6"], "thema": "Geländegängigkeit", "kenngroessen": ["spezifischer Bodendruck", "Grabenüberschreitfähigkeit", "Kletterfähigkeit", "Bodenfreiheit", "Steigfähigkeit", "Federweg"]},
-      {"id": "R4", "element_ids": ["E14"], "thema": "Fahrleistung", "kenngroessen": ["spezifische Leistung", "Höchstgeschwindigkeit", "Beschleunigung", "Triebradleistung"]},
-      {"id": "R5", "element_ids": ["E25"], "thema": "Fahrbereich und Durchhaltefähigkeit", "kenngroessen": ["Fahrbereich Straße", "Fahrbereich Gelände", "Kraftstoffvorrat", "Betriebsdauer im Beobachtungshalt"]},
-      {"id": "R6", "element_ids": ["E33"], "thema": "Lenkbarkeit", "kenngroessen": ["kleinster Kurvenradius", "Wenden auf der Stelle", "Lenkverhältnis"]},
-      {"id": "R7", "element_ids": ["E37"], "thema": "Bremsvermögen", "kenngroessen": ["mittlere Verzögerung", "Haltevermögen am Hang", "Dauerbremsleistung"]},
-      {"id": "R8", "element_ids": ["E41"], "thema": "Besatzungsarbeitsplatz", "kenngroessen": ["Besatzungsstärke", "Beschleunigungsbelastung der Besatzung", "Sichtbereich je Besatzungsplatz"]},
-      {"id": "R9", "element_ids": ["E49"], "thema": "Feuerkraft", "kenngroessen": ["Kaliber der Hauptwaffe", "Erstschusstrefferwahrscheinlichkeit", "Kampfentfernung", "Munitionsvorrat", "Richtgeschwindigkeit"]},
-      {"id": "R10", "element_ids": ["E66"], "thema": "Bordnetz und Vernetzung", "kenngroessen": ["elektrische Dauerleistung", "Datenrate des Fahrzeugbusses", "Übertragungsleistung der Drehverbindung", "elektromagnetische Verträglichkeit"]},
-      {"id": "R11", "element_ids": ["E74"], "thema": "Führungsfähigkeit", "kenngroessen": ["Funkreichweite", "Ortungsgenauigkeit", "Diagnosetiefe"]},
-      {"id": "R12", "element_ids": ["E82"], "thema": "Überlebensfähigkeit der Besatzung", "kenngroessen": ["Reaktionszeit des Schutzsystems", "Abdeckungswinkel", "Schutzgrad gegen ABC-Kampfstoffe", "Auslösezeit der Brandunterdrückung"]},
-      {"id": "R13", "element_ids": ["E91"], "thema": "Sicht und Lichtsignatur", "kenngroessen": ["Sichtfeld des Fahrers", "Nachtsichtreichweite", "Lichtsignatur im Gefechtsbetrieb"]},
-      {"id": "R14", "element_ids": ["E99"], "thema": "Thermische Auslegung", "kenngroessen": ["Kühlleistung", "zulässige Umgebungstemperatur", "Infrarotsignatur", "Innenraumtemperatur"]},
-      {"id": "R15", "element_ids": ["E105"], "thema": "Wassergängigkeit", "kenngroessen": ["Wattiefe ohne Vorbereitung", "Tiefwattiefe", "Vorbereitungszeit"]},
-      {"id": "R16", "element_ids": ["E1"], "thema": "Masse und Verlegbarkeit", "kenngroessen": ["Gefechtsmasse", "Brückenklasse", "Transportabmessungen", "Masse ohne Zusatzpanzerung"]}
+      {
+        "id": "R1",
+        "element_ids": [
+          "E1"
+        ],
+        "thema": "Rüstungskontrollrechtliche Einstufung als Kampfpanzer",
+        "kenngroessen": [
+          "Leergewicht",
+          "Kaliber der Kanone",
+          "Schwenkbereich der Kanone",
+          "Fahrwerksart"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "Vertrag über Konventionelle Streitkräfte in Europa, Begriffsbestimmung Kampfpanzer (Geltungsbereich: Vertragsstaaten, Anwendungsgebiet vom Atlantik bis zum Ural)",
+            "quellen_id": "Q1",
+            "fundstelle": "Artikel II Absatz 1 Buchstaben B und C"
+          }
+        ]
+      },
+      {
+        "id": "R2",
+        "element_ids": [
+          "E2",
+          "E4",
+          "E5"
+        ],
+        "thema": "Ballistischer Schutz",
+        "kenngroessen": [
+          "Schutzniveau je Trefferzone",
+          "Masse der Panzerung",
+          "Nachrüstbarkeit der Zusatzpanzerung",
+          "Minenschutzniveau",
+          "Schutz gegen improvisierte Sprengvorrichtungen"
+        ]
+      },
+      {
+        "id": "R3",
+        "element_ids": [
+          "E2",
+          "E6"
+        ],
+        "thema": "Geländegängigkeit",
+        "kenngroessen": [
+          "spezifischer Bodendruck",
+          "Grabenüberschreitfähigkeit",
+          "Kletterfähigkeit",
+          "Bodenfreiheit",
+          "Steigfähigkeit",
+          "Federweg"
+        ]
+      },
+      {
+        "id": "R4",
+        "element_ids": [
+          "E14"
+        ],
+        "thema": "Fahrleistung",
+        "kenngroessen": [
+          "spezifische Leistung",
+          "Höchstgeschwindigkeit",
+          "Beschleunigung",
+          "Triebradleistung"
+        ]
+      },
+      {
+        "id": "R5",
+        "element_ids": [
+          "E25"
+        ],
+        "thema": "Fahrbereich und Durchhaltefähigkeit",
+        "kenngroessen": [
+          "Fahrbereich Straße",
+          "Fahrbereich Gelände",
+          "Kraftstoffvorrat",
+          "Betriebsdauer im Beobachtungshalt"
+        ]
+      },
+      {
+        "id": "R6",
+        "element_ids": [
+          "E33"
+        ],
+        "thema": "Lenkbarkeit",
+        "kenngroessen": [
+          "kleinster Kurvenradius",
+          "Wenden auf der Stelle",
+          "Lenkverhältnis"
+        ]
+      },
+      {
+        "id": "R7",
+        "element_ids": [
+          "E37"
+        ],
+        "thema": "Bremsvermögen",
+        "kenngroessen": [
+          "mittlere Verzögerung",
+          "Haltevermögen am Hang",
+          "Dauerbremsleistung"
+        ]
+      },
+      {
+        "id": "R8",
+        "element_ids": [
+          "E41"
+        ],
+        "thema": "Besatzungsarbeitsplatz",
+        "kenngroessen": [
+          "Besatzungsstärke",
+          "Beschleunigungsbelastung der Besatzung",
+          "Sichtbereich je Besatzungsplatz"
+        ]
+      },
+      {
+        "id": "R9",
+        "element_ids": [
+          "E49"
+        ],
+        "thema": "Feuerkraft",
+        "kenngroessen": [
+          "Kaliber der Hauptwaffe",
+          "Erstschusstrefferwahrscheinlichkeit",
+          "Kampfentfernung",
+          "Munitionsvorrat",
+          "Richtgeschwindigkeit"
+        ]
+      },
+      {
+        "id": "R10",
+        "element_ids": [
+          "E66"
+        ],
+        "thema": "Bordnetz und Vernetzung",
+        "kenngroessen": [
+          "elektrische Dauerleistung",
+          "Datenrate des Fahrzeugbusses",
+          "Übertragungsleistung der Drehverbindung",
+          "elektromagnetische Verträglichkeit"
+        ]
+      },
+      {
+        "id": "R11",
+        "element_ids": [
+          "E74"
+        ],
+        "thema": "Führungsfähigkeit",
+        "kenngroessen": [
+          "Funkreichweite",
+          "Ortungsgenauigkeit",
+          "Diagnosetiefe"
+        ]
+      },
+      {
+        "id": "R12",
+        "element_ids": [
+          "E82"
+        ],
+        "thema": "Überlebensfähigkeit der Besatzung",
+        "kenngroessen": [
+          "Reaktionszeit des Schutzsystems",
+          "Abdeckungswinkel",
+          "Schutzgrad gegen ABC-Kampfstoffe",
+          "Auslösezeit der Brandunterdrückung"
+        ]
+      },
+      {
+        "id": "R13",
+        "element_ids": [
+          "E91"
+        ],
+        "thema": "Sicht und Lichtsignatur",
+        "kenngroessen": [
+          "Sichtfeld des Fahrers",
+          "Nachtsichtreichweite",
+          "Lichtsignatur im Gefechtsbetrieb"
+        ]
+      },
+      {
+        "id": "R14",
+        "element_ids": [
+          "E99"
+        ],
+        "thema": "Thermische Auslegung",
+        "kenngroessen": [
+          "Kühlleistung",
+          "zulässige Umgebungstemperatur",
+          "Infrarotsignatur",
+          "Innenraumtemperatur"
+        ]
+      },
+      {
+        "id": "R15",
+        "element_ids": [
+          "E105"
+        ],
+        "thema": "Wassergängigkeit",
+        "kenngroessen": [
+          "Wattiefe ohne Vorbereitung",
+          "Tiefwattiefe",
+          "Vorbereitungszeit"
+        ]
+      },
+      {
+        "id": "R16",
+        "element_ids": [
+          "E1"
+        ],
+        "thema": "Masse und Verlegbarkeit",
+        "kenngroessen": [
+          "Gefechtsmasse",
+          "Brückenklasse",
+          "Transportabmessungen",
+          "Masse ohne Zusatzpanzerung"
+        ]
+      }
     ]
   },
   "offene_punkte": [
