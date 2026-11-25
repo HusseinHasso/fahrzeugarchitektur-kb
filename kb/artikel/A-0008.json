@@ -107,6 +107,16 @@
       "abgerufen": true,
       "abrufdatum": "2026-11-24",
       "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q11",
+      "titel": "Regulation No 13 of the Economic Commission for Europe of the United Nations (UN/ECE) — Uniform provisions concerning the approval of vehicles of categories M, N and O with regard to braking [2016/194]",
+      "urheber": "UNECE; veröffentlicht im Amtsblatt der Europäischen Union (EUR-Lex)",
+      "stand": "ABl. L 42 vom 18.2.2016; enthält alle gültigen Texte bis Ergänzung 13 zur 11. Änderungsserie (in Kraft seit 8. Oktober 2015)",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:42016X0218(01)",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-25",
+      "quellentyp": "norm"
     }
   ],
   "abschnitte": [
@@ -239,7 +249,7 @@
         },
         {
           "absatz_id": "P7",
-          "text": "Das Antriebssystem erzeugt Antriebsleistung und überträgt Drehmoment. Der Verbrennungsmotor wandelt Kraftstoff in mechanische Leistung, die Abgasnachbehandlung reinigt das Abgas. Die Kraftübertragung führt die Leistung über Kupplung, Getriebe, Gelenkwelle und Differenzial zu den Triebachsen, bei Allradantrieb über ein Verteilergetriebe. Beim elektrischen Antrieb speist ein Wechselrichter die Traktionsmaschine, die den Motor ergänzt oder ersetzt und beim Bremsen Energie zurückgewinnt.",
+          "text": "Das Antriebssystem erzeugt Antriebsleistung und überträgt Drehmoment. Der Verbrennungsmotor wandelt Kraftstoff in mechanische Leistung, die Abgasnachbehandlung reinigt das Abgas. Die Kraftübertragung führt die Leistung über Kupplung, Getriebe, Gelenkwelle und Differenzial zu den Triebachsen, bei Allradantrieb über ein Verteilergetriebe. Beim elektrischen Antrieb speist ein Wechselrichter die Traktionsmaschine, die den Motor ergänzt oder ersetzt und beim Bremsen Energie zurückgewinnt. Die Traktionsmaschine sitzt als Zentralmotor vor Getriebe und Gelenkwelle oder mit Untersetzung und Differenzial in einer elektrischen Achse, wobei Gelenkwelle und getriebeseitiger Nebenabtrieb entfallen; Hybride koppeln sie parallel am Getriebe oder seriell, dann erzeugt der Verbrennungsmotor nur Strom.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -247,9 +257,10 @@
               "P6",
               "P4: Triebachsen und Allradantrieb",
               "Funktionsprinzip: Leistung gelangt vom Energiewandler über drehmoment- und drehzahlanpassende Glieder an die angetriebenen Räder",
-              "Funktionsprinzip: eine elektrische Maschine arbeitet auch als Generator"
+              "Funktionsprinzip: eine elektrische Maschine arbeitet auch als Generator",
+              "Funktionsprinzip: die Traktionsmaschine kann über Getriebe und Gelenkwelle oder unmittelbar über Untersetzung und Differenzial auf die Triebachse wirken; beim seriellen Hybrid besteht keine mechanische Verbindung vom Verbrennungsmotor zu den Rädern"
             ],
-            "schluss": "Das Antriebssystem besteht aus Verbrennungsmotor und/oder elektrischem Antrieb sowie der Kraftübertragung."
+            "schluss": "Das Antriebssystem besteht aus Verbrennungsmotor und/oder elektrischem Antrieb sowie der Kraftübertragung; die Anordnung der Traktionsmaschine (Zentralmotor, elektrische Achse, paralleler oder serieller Hybrid) bestimmt, welche Glieder der Kraftübertragung entfallen."
           },
           "sicherheit": "mittel",
           "aussagetyp": "loesung",
@@ -319,19 +330,21 @@
         },
         {
           "absatz_id": "P11",
-          "text": "Das Lenksystem setzt den Lenkwunsch in Radlenkwinkel um. Die Lenkbetätigung umfasst Lenkrad und Lenksäule, die Lenkübertragung Lenkgetriebe, Lenkunterstützung und Lenkgestänge. Die hohen Achslasten erfordern eine hydraulische, elektrohydraulische oder elektrische Lenkunterstützung, ohne Verbrennungsmotor elektrisch versorgt. Gelenkte Zusatzachsen erhalten eine Nachlaufachslenkung; eine elektrisch überlagerte Lenkunterstützung erlaubt Eingriffe des Spurhalteassistenten.",
+          "text": "Das Lenksystem setzt den Lenkwunsch in Radlenkwinkel um. Die Lenkbetätigung umfasst Lenkrad und Lenksäule, die Lenkübertragung Lenkgetriebe, Lenkunterstützung und Lenkgestänge. Die hohen Achslasten erfordern eine hydraulische, elektrohydraulische oder elektrisch überlagerte hydraulische Lenkunterstützung, ohne Verbrennungsmotor elektrisch versorgt. Weitere gelenkte Vorderachsen und gelenkte Vorlaufachsen werden über ein mit der Lenkübertragung gekoppeltes Zusatzachslenkgestänge mitgelenkt; gelenkte Nachlaufachsen erhalten eine eigene Nachlaufachslenkung, zwangsgelenkt oder selbstlenkend. Eine elektrisch überlagerte Lenkunterstützung erlaubt Eingriffe des Spurhalteassistenten.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
-              "P10",
+              "P10: erste und bei Vierachsern zweite Achse gelenkt, gelenkte Nachlauf- und Vorlaufachsen",
               "Physik: das Lenkmoment am Achsschenkel wächst mit der Achslast",
               "P7: ohne Verbrennungsmotor fehlt ein mechanischer Pumpenantrieb",
-              "P25: Lenkeingriff des Spurhalteassistenten"
+              "P25: Lenkeingriff des Spurhalteassistenten",
+              "Funktionsprinzip: eine vor der nicht gelenkten Triebachse liegende Lenkachse schlägt gleichsinnig mit der Vorderachse ein und lässt sich mechanisch mit ihr koppeln; eine hinter ihr liegende Nachlaufachse schlägt gegensinnig ein oder folgt selbstlenkend",
+              "Modellwissen: Bauweisen der Lenkunterstützung und der Zusatzachslenkung"
             ],
-            "schluss": "Das Lenksystem gliedert sich in Lenkbetätigung, Lenkübertragung mit Lenkunterstützung und gegebenenfalls Nachlaufachslenkung."
+            "schluss": "Das Lenksystem gliedert sich in Lenkbetätigung und Lenkübertragung mit Lenkunterstützung und Zusatzachslenkgestänge; gelenkte Nachlaufachsen erhalten eine eigene Nachlaufachslenkung."
           },
-          "sicherheit": "mittel",
+          "sicherheit": "gering",
           "aussagetyp": "loesung",
           "herangezogene_artikel_ids": []
         }
@@ -344,12 +357,16 @@
       "absaetze": [
         {
           "absatz_id": "P12",
-          "text": "Nach UN-Regelung Nr. 13 (Revision 3, 1996; Klassen M, N und O, für die UN-Vertragsparteien, die sie anwenden) besteht eine Bremsanlage aus Betätigungseinrichtung, Übertragungseinrichtung und Bremse. Gefordert sind Betriebs-, Hilfs- und Feststellbremsanlage, letztere hält das Fahrzeug rein mechanisch auch ohne Fahrer; N2 und N3 mit höchstens vier Achsen benötigen ein Antiblockiersystem der Kategorie 1. Ein Retarder hält eine Bremswirkung lange ohne wesentlichen Leistungsabfall.",
+          "text": "Nach UN-Regelung Nr. 13 (Revision 3, 1996, historische Fassung; für Anforderungen ist die geltende konsolidierte Fassung heranzuziehen; Klassen M, N und O, für die UN-Vertragsparteien, die sie anwenden) besteht eine Bremsanlage aus Betätigungseinrichtung, Übertragungseinrichtung und Bremse. Gefordert sind Betriebs-, Hilfs- und Feststellbremsanlage, letztere hält das Fahrzeug rein mechanisch auch ohne Fahrer; N2 und N3 mit höchstens vier Achsen benötigen ein Antiblockiersystem der Kategorie 1. Ein Retarder hält eine Bremswirkung lange ohne wesentlichen Leistungsabfall.",
           "begruendung": "belegt",
           "belege": [
             {
               "quellen_id": "Q6",
               "fundstelle": "Abs. 2.3-2.5, S. 7; Abs. 2.14, S. 9; Abs. 5.1.2, S. 12-13; Abs. 5.2.1.22, S. 21"
+            },
+            {
+              "quellen_id": "Q11",
+              "fundstelle": "ABl. L 42/1 vom 18.2.2016, Titel und Vorbemerkung (Incorporating all valid text up to Supplement 13 to the 11 series of amendments; Status in der neuesten UN/ECE-Fassung zu prüfen)"
             }
           ],
           "aussagetyp": "funktion",
@@ -434,7 +451,7 @@
         },
         {
           "absatz_id": "P17",
-          "text": "Die Fahrerhausstruktur mit der Fahrerhauslagerung lagert den Kabinenrohbau, der als Teil der Tragstruktur den Überlebensraum bildet, elastisch und kippbar auf dem Rahmen. Der Fahrerarbeitsplatz umfasst Sitze, Rückhaltesystem, Bedienelemente und Anzeigeelemente, über die Fahrereingaben an die Steuergeräte und Warnmeldungen zurück zum Fahrer gelangen; der Ruhebereich hängt vom Einsatz ab.",
+          "text": "Die Fahrerhausstruktur mit Fahrerhauslagerung und Kippvorrichtung lagert den Kabinenrohbau mit Türen und Verglasung, der als Teil der Tragstruktur den Überlebensraum bildet, elastisch und beim Frontlenker kippbar auf dem Rahmen. Der Fahrerarbeitsplatz umfasst Sitze, Rückhaltesystem, Bedienelemente und Anzeigeelemente, über die Fahrereingaben an die Steuergeräte und Warnmeldungen zurück zum Fahrer gelangen; der Ruhebereich hängt vom Einsatz ab.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -442,9 +459,10 @@
               "P15",
               "P16",
               "Q1: Abschnitt 1.2.1, S. 6 (kippbares Fahrerhaus für den Zugang zum Motor)",
-              "Funktionsprinzip: Fahrereingaben und Rückmeldungen laufen über Bedien- und Anzeigeelemente"
+              "Funktionsprinzip: Fahrereingaben und Rückmeldungen laufen über Bedien- und Anzeigeelemente",
+              "Funktionsprinzip: ein geschlossenes Fahrerhaus braucht Türen für den Zugang und Verglasung für die Sicht, ein kippbares Fahrerhaus eine Kippvorrichtung"
             ],
-            "schluss": "Das Fahrerhaus gliedert sich in Fahrerhausstruktur mit Fahrerhauslagerung, Fahrerarbeitsplatz und einsatzabhängigen Ruhebereich; der Kabinenrohbau gehört zur Tragstruktur."
+            "schluss": "Das Fahrerhaus gliedert sich in Fahrerhausstruktur mit Fahrerhauslagerung und Kippvorrichtung, Fahrerarbeitsplatz und einsatzabhängigen Ruhebereich; Kabinenrohbau, Türen und Verglasung gehören zur Tragstruktur."
           },
           "sicherheit": "mittel",
           "aussagetyp": "loesung",
@@ -601,12 +619,13 @@
         },
         {
           "absatz_id": "P25",
-          "text": "Das Hauptsystem Fahrerassistenz und Sicherheit gliedert sich in Aktive Sicherheit sowie Fahrer- und Fahrzeugüberwachung. Die Umfeldsensorik erfasst Verkehr und ungeschützte Verkehrsteilnehmer; Notbremsassistent und Spurhalteassistent greifen über Bremsregelung und Lenkunterstützung ein, der Abbiegeassistent warnt, der Abstandsregeltempomat regelt den Abstand. Müdigkeitswarnung, Geschwindigkeitsassistent und Reifendrucküberwachung melden über die Anzeigeelemente.",
+          "text": "Das Hauptsystem Fahrerassistenz und Sicherheit gliedert sich in Aktive Sicherheit sowie Fahrer- und Fahrzeugüberwachung. Die Umfeldsensorik erfasst Verkehr und ungeschützte Verkehrsteilnehmer; der Notbremsassistent greift über die Bremsregelung ein, Abbiegeassistent und Rückfahrassistent warnen, der Abstandsregeltempomat regelt den Abstand. Vorgeschrieben ist ein Spurhaltewarnsystem; ein eingreifender Spurhalteassistent über die Lenkunterstützung ist eine optionale Ausbaustufe. Müdigkeitswarnung, Geschwindigkeitsassistent und Reifendrucküberwachung melden über die Anzeigeelemente.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "P24",
+              "P24: Rückfahrassistent und Spurhaltewarnsystem für N2 und N3 vorgeschrieben, ein eingreifender Spurhalteassistent nicht",
               "Q1: Abschnitt 1.5, S. 32 (abstandsgeregelter Tempomat)",
               "P14",
               "P11",
@@ -685,7 +704,7 @@
         },
         {
           "absatz_id": "P29",
-          "text": "Das Thermomanagement hält Antrieb, Energiespeicher und Fahrerhaus auf Betriebstemperatur. Der Kühlkreislauf mit Kühler, Kühlmittelpumpe und Lüfter führt die Abwärme von Motor, Getriebe und Retarder ab und begrenzt so bei langen Gefällen die Dauerbremsleistung. Elektrifizierte Lkw haben eine Batterietemperierung; die Heiz- und Klimaanlage temperiert das Fahrerhaus, auch in Ruhezeiten.",
+          "text": "Das Thermomanagement hält Antrieb, Energiespeicher und Fahrerhaus auf Betriebstemperatur. Der Kühlkreislauf mit Kühler, Kühlmittelpumpe und Lüfter führt die Abwärme von Motor, Getriebe und Retarder ab und begrenzt so bei langen Gefällen die Dauerbremsleistung. Elektrifizierte Lkw haben eine Batterietemperierung und zusätzlich einen Kühlkreislauf Leistungselektronik und Antrieb für Wechselrichter und Traktionsmaschine; beim Brennstoffzellen-Lkw kommt die große Abwärme des Brennstoffzellensystems hinzu. Die Heiz- und Klimaanlage temperiert das Fahrerhaus, auch in Ruhezeiten.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -694,9 +713,12 @@
               "P12: Retarder als Dauerbremse",
               "Physik: die Bremsenergie der Dauerbremse wird in Wärme gewandelt und muss abgeführt werden",
               "P15: Fahrerhaus als Aufenthaltsraum in Ruhezeiten",
-              "P9: Traktionsbatterie"
+              "P9: Traktionsbatterie",
+              "P7: Wechselrichter und Traktionsmaschine",
+              "P9: Brennstoffzellensystem",
+              "Physik: Wandlungsverluste von Leistungselektronik, elektrischer Maschine und Brennstoffzelle fallen als Wärme an und müssen abgeführt werden"
             ],
-            "schluss": "Das Thermomanagement besteht aus Kühlkreislauf, Batterietemperierung und Heiz- und Klimaanlage und koppelt Antrieb, Bremse und Fahrerhaus."
+            "schluss": "Das Thermomanagement besteht aus Kühlkreislauf, Kühlkreislauf Leistungselektronik und Antrieb, Batterietemperierung und Heiz- und Klimaanlage und koppelt Antrieb, Energieversorgung, Bremse und Fahrerhaus."
           },
           "sicherheit": "mittel",
           "aussagetyp": "loesung",
@@ -811,7 +833,7 @@
       "absaetze": [
         {
           "absatz_id": "P34",
-          "text": "Kraftstoff fließt vom Kraftstofftank zum Verbrennungsmotor, Wasserstoff zum Brennstoffzellensystem, Hochvoltstrom über das Hochvolt-Bordnetz zum Wechselrichter. Mechanische Leistung fließt über die Kraftübertragung zu den Achsen und über den Nebenabtrieb zur Hydraulikversorgung und Kippeinrichtung. Druckluft fließt vom Kompressor über die Druckluftbehälter zu Betriebsbremse, Federung und Anhängerbremsanschluss. Daten laufen über den Fahrzeugbus zwischen Bedienelementen, Steuergeräten, Bremsregelung und Anzeigeelementen; Abwärme von Motor, Dauerbremse und Traktionsbatterie gelangt in Kühlkreislauf und Batterietemperierung.",
+          "text": "Kraftstoff fließt vom Kraftstofftank zum Verbrennungsmotor, beim Brennstoffzellenantrieb Wasserstoff zum Brennstoffzellensystem, Hochvoltstrom über das Hochvolt-Bordnetz zum Wechselrichter. Mechanische Leistung fließt über die Kraftübertragung zu den Achsen und über den Nebenabtrieb zur Hydraulikversorgung und Kippeinrichtung. Druckluft fließt vom Kompressor über die Druckluftbehälter zu Betriebsbremse und Anhängerbremsanschluss, bei Luftfederung auch zur Federung. Daten laufen über den Fahrzeugbus zwischen Bedienelementen, Steuergeräten, Bremsregelung und Anzeigeelementen; Abwärme von Motor, Dauerbremse und Traktionsbatterie gelangt in Kühlkreislauf und Batterietemperierung, bei elektrifizierten Lkw die von Wechselrichter, Traktionsmaschine und Brennstoffzellensystem in den Kühlkreislauf Leistungselektronik und Antrieb.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -824,9 +846,9 @@
               "P31",
               "Funktionsprinzip: jeder Fluss hat Ursprung und Ziel im Modell"
             ],
-            "schluss": "Die wesentlichen Stoff-, Energie- und Informationsflüsse verbinden die Hauptsysteme wie beschrieben."
+            "schluss": "Die wesentlichen Stoff-, Energie- und Informationsflüsse verbinden die Hauptsysteme wie beschrieben; einzelne Flüsse bestehen nur bei der jeweiligen Antriebs- oder Federungsvariante."
           },
-          "sicherheit": "hoch",
+          "sicherheit": "mittel",
           "aussagetyp": "funktion",
           "herangezogene_artikel_ids": []
         }
@@ -838,7 +860,7 @@
       "absaetze": [
         {
           "absatz_id": "P35",
-          "text": "Rahmen, Achse, Federung sowie Räder und Reifen tragen die Fahrzeuglasten. Kraftstofftank, Traktionsbatterie, Wasserstofftank und Bordnetzbatterie speichern Energie, die Kraftstoffanlage fördert Treibstoff, die Ladeeinrichtung lädt die Traktionsbatterie, Hochvolt-Bordnetz, Gleichspannungswandler und Niedervolt-Bordnetz verteilen elektrische Energie. Verbrennungsmotor und Traktionsmaschine erzeugen Antriebsleistung, die Kraftübertragung überträgt Drehmoment, Antriebssystem sowie Räder und Reifen bewegen das Fahrzeug fort, Traktionsmaschine und Traktionsbatterie gewinnen Bremsenergie zurück. Lenkbetätigung, Lenkübertragung, Nachlaufachslenkung und Spurhalteassistent lenken das Fahrzeug; Betriebsbremse, Dauerbremse, Notbremsassistent und Abstandsregeltempomat verzögern es, die Feststellbremse hält es fest. Die Druckluftanlage stellt Druckluft bereit, die Hydraulikversorgung hydraulische Leistung, der Nebenabtrieb versorgt Arbeitsgeräte; Ladebordwand, Kippeinrichtung und Ladekran handhaben Objekte, Aufbau und Kühlaggregat nehmen Ladung auf, Koppeleinrichtung, Anhängerbremsanschluss und Anhängersteckverbindung ziehen Anhänger. Bedienelemente, Lenkrad und Bremswertgeber erfassen Fahrereingaben, Anzeigeelemente zeigen Fahrerinformationen an, Kabinenrohbau und Rückhaltesystem schützen Insassen, das Sichtsystem stellt die Fahrersicht sicher, Scheinwerfer leuchten die Fahrzeugumgebung aus, Signalleuchten und Konturmarkierung geben Lichtsignale ab. Vernetzung und Telematikeinheit übertragen Daten, Fahrzeugmanagement, Diagnose und Reifendrucküberwachung überwachen den Fahrzeugzustand, die Betriebsdatenerfassung zeichnet Betriebsdaten auf, die Navigation bestimmt die Fahrzeugposition, Umfeldsensorik und Abbiegeassistent erfassen das Fahrzeugumfeld, die Müdigkeitswarnung überwacht den Fahrerzustand. Kühlkreislauf und Batterietemperierung regeln die Betriebstemperatur, die Heiz- und Klimaanlage klimatisiert den Innenraum.",
+          "text": "Rahmen, Achse, Federung sowie Räder und Reifen tragen die Fahrzeuglasten. Kraftstofftank, Traktionsbatterie, Wasserstofftank und Bordnetzbatterie speichern Energie, die Kraftstoffanlage fördert Treibstoff, die Ladeeinrichtung lädt die Traktionsbatterie, Hochvolt-Bordnetz, Gleichspannungswandler und Niedervolt-Bordnetz verteilen elektrische Energie. Verbrennungsmotor und Traktionsmaschine erzeugen Antriebsleistung, die Kraftübertragung überträgt Drehmoment, Antriebssystem sowie Räder und Reifen bewegen das Fahrzeug fort, Traktionsmaschine und Traktionsbatterie gewinnen Bremsenergie zurück. Lenkbetätigung, Lenkübertragung, Nachlaufachslenkung und Spurhalteassistent lenken das Fahrzeug; Betriebsbremse, Dauerbremse, Notbremsassistent und Abstandsregeltempomat verzögern es, die Feststellbremse hält es fest. Die Druckluftanlage stellt Druckluft bereit, die Hydraulikversorgung hydraulische Leistung, der Nebenabtrieb versorgt Arbeitsgeräte; Ladebordwand, Kippeinrichtung und Ladekran handhaben Objekte, Aufbau und Kühlaggregat nehmen Ladung auf, Koppeleinrichtung, Anhängerbremsanschluss und Anhängersteckverbindung ziehen Anhänger. Bedienelemente, Lenkrad und Bremswertgeber erfassen Fahrereingaben, Anzeigeelemente zeigen Fahrerinformationen an, Kabinenrohbau und Rückhaltesystem schützen Insassen, das Sichtsystem stellt die Fahrersicht sicher, Scheinwerfer leuchten die Fahrzeugumgebung aus, Signalleuchten und Konturmarkierung geben Lichtsignale ab. Vernetzung und Telematikeinheit übertragen Daten, Fahrzeugmanagement, Diagnose und Reifendrucküberwachung überwachen den Fahrzeugzustand, die Betriebsdatenerfassung zeichnet Betriebsdaten auf, die Navigation bestimmt die Fahrzeugposition, Umfeldsensorik, Rückfahrassistent und Abbiegeassistent erfassen das Fahrzeugumfeld, die Müdigkeitswarnung überwacht den Fahrerzustand. Kühlkreislauf, Kühlkreislauf Leistungselektronik und Antrieb sowie Batterietemperierung regeln die Betriebstemperatur, die Heiz- und Klimaanlage klimatisiert den Innenraum.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -860,7 +882,7 @@
             ],
             "schluss": "Jede Funktion ist ausführenden Systemen und Komponenten zugeordnet; physische, funktionale und Flussperspektive sind verbunden."
           },
-          "sicherheit": "hoch",
+          "sicherheit": "mittel",
           "aussagetyp": "funktion",
           "herangezogene_artikel_ids": []
         }
@@ -2259,6 +2281,64 @@
           "P34",
           "P35"
         ]
+      },
+      {
+        "id": "E133",
+        "name": "Zusatzachslenkgestänge",
+        "typ": "komponente",
+        "eltern_id": "E40",
+        "absatz_ids": [
+          "P11"
+        ]
+      },
+      {
+        "id": "E134",
+        "name": "Kühlkreislauf Leistungselektronik und Antrieb",
+        "typ": "komponente",
+        "eltern_id": "E119",
+        "absatz_ids": [
+          "P29",
+          "P34",
+          "P35"
+        ]
+      },
+      {
+        "id": "E135",
+        "name": "Rückfahrassistent",
+        "typ": "komponente",
+        "eltern_id": "E100",
+        "absatz_ids": [
+          "P24",
+          "P25",
+          "P35"
+        ]
+      },
+      {
+        "id": "E136",
+        "name": "Türen",
+        "typ": "komponente",
+        "eltern_id": "E3",
+        "absatz_ids": [
+          "P17"
+        ]
+      },
+      {
+        "id": "E137",
+        "name": "Verglasung",
+        "typ": "komponente",
+        "eltern_id": "E3",
+        "absatz_ids": [
+          "P17"
+        ]
+      },
+      {
+        "id": "E138",
+        "name": "Kippvorrichtung",
+        "typ": "komponente",
+        "eltern_id": "E57",
+        "absatz_ids": [
+          "P17"
+        ]
       }
     ],
     "funktionen": [
@@ -2613,7 +2693,8 @@
         "name": "Fahrzeugumfeld erfassen",
         "ausgefuehrt_von": [
           "E101",
-          "E104"
+          "E104",
+          "E135"
         ],
         "absatz_ids": [
           "P25",
@@ -2636,7 +2717,8 @@
         "name": "Betriebstemperatur regeln",
         "ausgefuehrt_von": [
           "E120",
-          "E124"
+          "E124",
+          "E134"
         ],
         "absatz_ids": [
           "P29",
@@ -3259,6 +3341,53 @@
           "P17"
         ],
         "schnittstelle": "Lagerpunkte des Kabinenrohbaus"
+      },
+      {
+        "id": "S55",
+        "von": "E15",
+        "nach": "E134",
+        "art": "thermisch",
+        "medium": "Kühlmittel",
+        "absatz_ids": [
+          "P29",
+          "P34"
+        ],
+        "schnittstelle": "Wechselrichterkühlung"
+      },
+      {
+        "id": "S56",
+        "von": "E14",
+        "nach": "E134",
+        "art": "thermisch",
+        "medium": "Kühlmittel",
+        "absatz_ids": [
+          "P29",
+          "P34"
+        ],
+        "schnittstelle": "Kühlmittelanschluss der Traktionsmaschine"
+      },
+      {
+        "id": "S57",
+        "von": "E32",
+        "nach": "E134",
+        "art": "thermisch",
+        "medium": "Kühlmittel",
+        "absatz_ids": [
+          "P29",
+          "P34"
+        ],
+        "schnittstelle": "Kühlmittelanschluss des Brennstoffzellensystems"
+      },
+      {
+        "id": "S58",
+        "von": "E135",
+        "nach": "E64",
+        "art": "information",
+        "medium": "Rückraumwarnung",
+        "absatz_ids": [
+          "P25"
+        ],
+        "schnittstelle": "Rückfahrwarnung im Fahrerhaus"
       }
     ],
     "entfallene_kategorien": [],
@@ -3295,7 +3424,7 @@
           },
           {
             "element_id": "E119",
-            "beschreibung": "Elektrifizierte Antriebe benötigen eine Batterietemperierung; die Motorabwärme zur Fahrerhausheizung fehlt."
+            "beschreibung": "Elektrifizierte Antriebe benötigen eine Batterietemperierung und einen Kühlkreislauf Leistungselektronik und Antrieb, beim Brennstoffzellenantrieb mit der großen Abwärme des Brennstoffzellensystems; die Motorabwärme zur Fahrerhausheizung fehlt."
           },
           {
             "element_id": "E51",
@@ -3378,8 +3507,8 @@
         ],
         "auswirkungen": [
           {
-            "element_id": "E59",
-            "beschreibung": "Beim Frontlenker ist eine Kippvorrichtung der Fahrerhauslagerung nötig."
+            "element_id": "E138",
+            "beschreibung": "Beim Frontlenker ist eine Kippvorrichtung an der Fahrerhauslagerung nötig."
           },
           {
             "element_id": "E4",
@@ -3423,7 +3552,11 @@
           },
           {
             "element_id": "E44",
-            "beschreibung": "Gelenkte Zusatzachsen benötigen eine Nachlaufachslenkung."
+            "beschreibung": "Gelenkte Nachlaufachsen benötigen eine Nachlaufachslenkung."
+          },
+          {
+            "element_id": "E133",
+            "beschreibung": "Eine gelenkte Vorlaufachse oder die zweite Lenkachse eines Vierachsers wird über das Zusatzachslenkgestänge mitgelenkt."
           },
           {
             "element_id": "E46",
@@ -3530,8 +3663,7 @@
         "bezeichnung": "Ansteuerung der Betriebsbremse",
         "alternativen": [
           "Pneumatisch angesteuerte Druckluftbremse",
-          "Elektronisch geregelte Druckluftbremse",
-          "Rein elektrische Bremse"
+          "Elektronisch geregelte Druckluftbremse"
         ],
         "auswahlkriterien": [
           "Ansprechzeit und Bremsweg",
@@ -3542,7 +3674,7 @@
         "auswirkungen": [
           {
             "element_id": "E127",
-            "beschreibung": "Bei rein elektrischer Bremse entfällt die Druckluft als Bremsenergie."
+            "beschreibung": "Bei elektronisch geregelter Druckluftbremse bleibt die Druckluftversorgung für Radbremsen, Federspeicher und Anhängerversorgung erforderlich."
           },
           {
             "element_id": "E85",
@@ -3593,6 +3725,81 @@
         "absatz_ids": [
           "P15",
           "P17"
+        ]
+      },
+      {
+        "id": "V9",
+        "element_id": "E13",
+        "bezeichnung": "Anordnung der Traktionsmaschine",
+        "alternativen": [
+          "Zentralmotor mit Getriebe und Gelenkwelle",
+          "Elektrische Achse mit integrierter Traktionsmaschine",
+          "Paralleler Hybrid am Getriebe",
+          "Serieller Hybrid"
+        ],
+        "auswahlkriterien": [
+          "Bauraum am Rahmen für Energiespeicher",
+          "ungefederte Masse",
+          "Wiederverwendung des Diesel-Antriebsstrangs",
+          "Bedarf an Nebenabtrieb für Aufbauaggregate"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E16",
+            "beschreibung": "Bei elektrischer Achse entfallen Getriebe und Gelenkwelle; beim parallelen Hybrid wirkt die Traktionsmaschine am Getriebe."
+          },
+          {
+            "element_id": "E7",
+            "beschreibung": "Bei elektrischer Achse wird die Triebachse zur Antriebseinheit mit Traktionsmaschine, Untersetzung und Differenzial."
+          },
+          {
+            "element_id": "E131",
+            "beschreibung": "Ohne Getriebe entfällt der getriebeseitige Nebenabtrieb; Aufbauaggregate werden elektrisch angetrieben."
+          },
+          {
+            "element_id": "E120",
+            "beschreibung": "Bei elektrischer Achse muss der Kühlkreis bis an die Triebachse geführt werden."
+          }
+        ],
+        "absatz_ids": [
+          "P7"
+        ]
+      },
+      {
+        "id": "V10",
+        "element_id": "E42",
+        "bezeichnung": "Art der Lenkunterstützung",
+        "alternativen": [
+          "Hydraulisch mit motorgetriebener Lenkpumpe",
+          "Elektrohydraulisch mit elektrisch angetriebener Pumpe",
+          "Elektrisch überlagerte hydraulische Lenkung"
+        ],
+        "auswahlkriterien": [
+          "Verfügbarkeit eines Verbrennungsmotors als Pumpenantrieb",
+          "vorgesehene Lenkeingriffe von Assistenzsystemen",
+          "Energiebedarf der Lenkunterstützung",
+          "Lenkverhalten bei Ausfall der Unterstützung"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E11",
+            "beschreibung": "Die hydraulische Lenkunterstützung braucht eine vom Verbrennungsmotor angetriebene Lenkpumpe."
+          },
+          {
+            "element_id": "E80",
+            "beschreibung": "Elektrohydraulische und elektrisch überlagerte Lenkunterstützung belasten das Niedervolt-Bordnetz."
+          },
+          {
+            "element_id": "E28",
+            "beschreibung": "Bei elektrifizierten Lkw kann die Pumpe der Lenkunterstützung aus dem Hochvolt-Bordnetz versorgt werden."
+          },
+          {
+            "element_id": "E103",
+            "beschreibung": "Mit elektrisch überlagerter Lenkunterstützung sind Lenkeingriffe des Spurhalteassistenten möglich."
+          }
+        ],
+        "absatz_ids": [
+          "P11"
         ]
       }
     ],
@@ -3719,13 +3926,13 @@
       },
       {
         "id": "K10",
-        "frage": "Wird die Betriebsbremse pneumatisch, elektronisch geregelt oder rein elektrisch angesteuert?",
+        "frage": "Wird die Betriebsbremse als pneumatisch angesteuerte oder als elektronisch geregelte Druckluftbremse ausgeführt?",
         "element_ids": [
           "E45",
           "E46"
         ],
         "anlass": "architekturentscheidung",
-        "relevanz": "Davon hängen Druckluftanlage, Busanbindung der Bremsregelung und Eingriffsmöglichkeiten der Assistenz ab.",
+        "relevanz": "Davon hängen Busanbindung der Bremsregelung, Eingriffsmöglichkeiten der Assistenz und die elektrische Bremsansteuerung des Anhängers ab.",
         "variante_ids": [
           "V7"
         ]
@@ -3783,7 +3990,10 @@
           "E42"
         ],
         "anlass": "architekturentscheidung",
-        "relevanz": "Davon hängen Energieversorgung der Lenkunterstützung und die Anbindung des Spurhalteassistenten ab."
+        "relevanz": "Davon hängen Energieversorgung der Lenkunterstützung und die Anbindung des Spurhalteassistenten ab.",
+        "variante_ids": [
+          "V10"
+        ]
       },
       {
         "id": "K16",
@@ -3795,6 +4005,30 @@
         ],
         "anlass": "architekturentscheidung",
         "relevanz": "Davon hängen Sichtfeldabdeckung, Anzeigeelemente im Fahrerhaus und elektrische Versorgung ab."
+      },
+      {
+        "id": "K17",
+        "frage": "Soll die Traktionsmaschine als Zentralmotor mit Getriebe und Gelenkwelle, als elektrische Achse oder bei Hybriden parallel am Getriebe oder seriell angeordnet werden?",
+        "element_ids": [
+          "E13",
+          "E16"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Kraftübertragung, Bauraum am Rahmen für Energiespeicher, Nebenabtrieb und Kühlkreisführung ab.",
+        "variante_ids": [
+          "V9"
+        ]
+      },
+      {
+        "id": "K18",
+        "frage": "Welche zulässige Gesamtmasse, welches Zuggesamtgewicht und welche Nutzlast soll der Lkw haben, für welche Einsatzart und in welchem Zulassungsraum?",
+        "element_ids": [
+          "E1",
+          "E2",
+          "E66"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Fahrzeugklasse, Achskonfiguration, Antriebsauslegung und anwendbare Regelwerke ab."
       }
     ],
     "anforderungsthemen": [
@@ -3939,9 +4173,14 @@
         ],
         "regelwerke": [
           {
-            "bezeichnung": "UN-Regelung Nr. 13, Bremsen der Klassen M, N und O (UN-Vertragsparteien, die sie anwenden)",
+            "bezeichnung": "UN-Regelung Nr. 13, Bremsen der Klassen M, N und O (Revision 3, 1996, historische Fassung; für Anforderungen ist die geltende konsolidierte Fassung heranzuziehen; UN-Vertragsparteien, die sie anwenden)",
             "quellen_id": "Q6",
             "fundstelle": "Abs. 5.1.2, S. 12-13; Abs. 5.2.1.22, S. 21"
+          },
+          {
+            "bezeichnung": "UN-Regelung Nr. 13, Fassung bis Ergänzung 13 zur 11. Änderungsserie (ABl. L 42 vom 18.2.2016): Fahrzeugstabilitätsfunktion mit Kippschutz und Richtungsstabilisierung für N2, N3 mit höchstens drei Achsen und bestimmte vierachsige N3 (UN-Vertragsparteien, die sie anwenden)",
+            "quellen_id": "Q11",
+            "fundstelle": "Vorbemerkung zum Stand; Abs. 5.2.1.32"
           }
         ]
       },
@@ -4106,6 +4345,22 @@
             "fundstelle": "Anhang 7, Teil A, Nr. 1 und 2, S. 55-57"
           }
         ]
+      },
+      {
+        "id": "R17",
+        "element_ids": [
+          "E25",
+          "E28",
+          "E30"
+        ],
+        "thema": "Hochvolt- und Wasserstoffsicherheit",
+        "kenngroessen": [
+          "Isolationswiderstand",
+          "Berührschutzklasse",
+          "Abschaltzeit nach Aufprall",
+          "Leckagerate",
+          "Speicherdruck"
+        ]
       }
     ]
   },
@@ -4113,7 +4368,8 @@
     "Glossarvorschlag: Betriebsdaten aufzeichnen (Kontrollgerät und Unfalldatenspeicher dokumentieren Fahrt-, Lenkzeit- und Ereignisdaten; Fahrzeugzustand überwachen betrifft die laufende Zustandsüberwachung, nicht die Aufzeichnung).",
     "Recherchebedarf: Richtlinie 96/53/EG in konsolidierter Fassung (Maße und Gewichte) und Verordnung (EU) 2018/858 Anhang I auf eur-lex.europa.eu; in diesem Lauf ohne Inhalt geantwortet, Achslasten daher nur über die Fachkunde Nutzfahrzeugtechnik belegt.",
     "Recherchebedarf: Verordnung (EU) 2019/2144 im Volltext auf eur-lex.europa.eu (in diesem Lauf nicht abrufbar); Assistenz- und Unfalldatenspeicherpflichten nur über die ADAC-Zusammenfassung belegt.",
-    "Recherchebedarf: aktuelle konsolidierte Fassungen der UN-Regelungen Nr. 13 (einschließlich elektronischer Bremssysteme und Dauerbremsanforderungen schwerer Lkw) und Nr. 48 auf unece.org; unece.org verweigerte in diesem Lauf den Abruf, verwendet wurden Revision 3 (1996) bzw. Revision 7 (2013).",
+    "Recherchebedarf: aktuelle konsolidierte Fassungen der UN-Regelungen Nr. 13 (einschließlich elektronischer Bremssysteme und Dauerbremsanforderungen schwerer Lkw) und Nr. 48 auf unece.org; unece.org verweigerte in diesem Lauf den Abruf, verwendet wurden Revision 3 (1996) bzw. Revision 7 (2013). Von Nr. 13 liegt zusätzlich die im Amtsblatt der EU 2016 veröffentlichte Fassung bis Ergänzung 13 zur 11. Änderungsserie vor (Q11); spätere Ergänzungen fehlen. Suchbegriff: UN Regulation 13 vehicle stability function N2 N3.",
+    "Recherchebedarf: Regelwerke zur Hochvolt- und Wasserstoffsicherheit für das Anforderungsthema R17, Suchbegriff UN-Regelung Nr. 100 (elektrische Sicherheit) und UN-Regelung Nr. 134 (Wasserstofffahrzeuge), Geltungsbereich für N2 und N3.",
     "Recherchebedarf: UN-Regelung Nr. 29 im Volltext (abgerufen nur Amendment 4 zu Revision 2) und UN-Regelung Nr. 46 (Einrichtungen für indirekte Sicht, Kamera-Monitor-Systeme) zur Belegung von P17, P27 und R9.",
     "Recherchebedarf: Fachliteratur zur Zweikreis-Zweileitungs-Druckluftbremsanlage und zur Luftaufbereitung, etwa Fachkunde Nutzfahrzeugtechnik Kapitel 4 (Volltext), zur Belegung von P14 und P31.",
     "Recherchebedarf: Nebenabtriebe, Hilfsrahmen und Aufbauschnittstellen, Suchbegriff Nebenabtrieb Lkw Aufbaurichtlinie Hilfsrahmen, zur Belegung von P19 und P31; Herstellerunterlagen belegen nur die jeweilige Baureihe.",

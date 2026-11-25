@@ -220,21 +220,24 @@
         },
         {
           "absatz_id": "P7",
-          "text": "Fahrzeugstruktur und Fahrwerk gliedern sich in den Wagenkasten mit Gelenk, Türen, Kupplungseinrichtung und Trittstufen, den Fahrgastraum mit Festhalteeinrichtungen und Notausstiegen sowie die Fahrwerke mit Triebdrehgestell, Laufdrehgestell, Radsätze, Federung und Bahnräumer. Gewichtskräfte fließen vom Wagenkasten über die Federung in die Radsätze, Zug- und Bremskräfte vom Triebdrehgestell in den Wagenkasten. Die Fußbodenhöhe bestimmt Trittstufen, Fahrwerksbauart und den Einbauort der Traktionsausrüstung; Zweirichtungsfahrzeuge brauchen beidseitige Türen und zwei Führerstände.",
+          "text": "Fahrzeugstruktur und Fahrwerk gliedern sich in den Wagenkasten mit Gelenk, Türen, Kupplungseinrichtung und Trittstufen, den Fahrgastraum mit Festhalteeinrichtungen und Notausstiegen sowie die Fahrwerke mit Triebdrehgestell, Laufdrehgestell, Jakobs-Drehgestell, Radsätze, Federung und Bahnräumer. Gewichtskräfte fließen vom Wagenkasten über die Federung in die Radsätze; Zugkräfte gelangen vom Triebdrehgestell, Bremskräfte von Trieb- und Laufdrehgestellen in den Wagenkasten. Das Fahrzeugkonzept legt fest, ob ein Jakobs-Drehgestell unter dem Gelenk zwei Wagenteile trägt, jedes Wagenteil auf eigenen Drehgestellen läuft oder beim Multigelenkfahrzeug schwebende Mittelteile zwischen Wagenteilen mit Fahrwerken hängen; davon hängen Gelenkbauart, Zahl der Triebdrehgestelle und Bauraum der Traktionsausrüstung ab. Die Fußbodenhöhe bestimmt Trittstufen, Fahrwerksbauart und den Einbauort der Traktionsausrüstung. Zweirichtungsbetrieb verlangt beidseitige Türen und Führerstände an beiden Zugenden, je Einheit oder, bei Einheiten mit nur einem Führerstand, im ständig gekuppelten Verband.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "P4: Lastannahmen, Notausstiege, Festhalteeinrichtungen, Gelenkbereich, Federung und Spurführung.",
               "P5: Gelenkwagen auf Trieb- und Laufdrehgestellen, Kupplungen für Mehrfachtraktion.",
+              "P5: Glieder-, Einzelgelenk- und Multigelenkfahrzeuge sowie Drehgestell, Jakobs-Drehgestell und Losrad als Fahrwerksbauarten; dreiteilige Gelenktriebwagen mit zwei Jakobsdrehgestellen.",
               "P6: Fußbodenhöhe, Bahnsteige und Trittstufen hängen zusammen; Zweirichtungsfahrzeuge bedienen Mittelbahnsteige.",
+              "P16: Einheiten mit nur einem Führerstand fahren nur in Doppeltraktion.",
+              "P15: Mechanische Bremse und Magnetschienenbremse wirken unabhängig vom Antrieb und damit auch an nicht angetriebenen Drehgestellen.",
               "Q1, § 41 Abs. 1: Bahnräumer vor dem in Fahrtrichtung ersten Radsatz.",
               "Q6, Abschnitt „Elektrische Einrichtungen“: Zweisystemausrüstung auf dem Dach und unter dem Fußboden des Mittelteils.",
               "Funktionsprinzip: Gewichtskräfte müssen über Federung und Räder in die Schiene, Traktionskräfte von den angetriebenen Rädern in den Wagenkasten geleitet werden."
             ],
-            "schluss": "Fahrzeugstruktur und Fahrwerk bestehen aus Wagenkasten, Fahrgastraum und Fahrwerken; Fußbodenhöhe und Richtungsbetrieb ändern die Struktur."
+            "schluss": "Fahrzeugstruktur und Fahrwerk bestehen aus Wagenkasten, Fahrgastraum und Fahrwerken; Fahrzeugkonzept, Fußbodenhöhe und Richtungsbetrieb ändern die Struktur, Führerstände sind an beiden Zugenden, nicht zwingend je Einheit nötig."
           },
-          "sicherheit": "hoch",
+          "sicherheit": "mittel",
           "aussagetyp": "loesung",
           "herangezogene_artikel_ids": []
         }
@@ -327,13 +330,14 @@
         },
         {
           "absatz_id": "P12",
-          "text": "Das Energieversorgungssystem gliedert sich in die Stromabnahme mit Stromabnehmer, Hauptschalter und Systemwahlschalter, die Wechselstromausrüstung mit Transformator und Gleichrichter, die nur Zweisystemfahrzeuge haben, und die Hilfsbetriebeversorgung mit Hilfsbetriebeumrichter und Bordnetzbatterie. Der Fahrstrom fließt über Hauptschalter und Systemwahlschalter direkt oder über die Wechselstromausrüstung zum Traktionsstromrichter, zurück über Radsätze und Schienen. Die Bordnetzbatterie hält Bremsen und Signaleinrichtungen ohne Fahrleitungsspannung wirksam. Fahrzeugseitige Traktionsenergiespeicher sind nicht betrachtet.",
+          "text": "Das Energieversorgungssystem gliedert sich in die Stromabnahme mit Stromabnehmer, Hauptschalter und Systemwahlschalter, die Wechselstromausrüstung mit Transformator und Gleichrichter, die nur Zweisystemfahrzeuge haben, und die Hilfsbetriebeversorgung mit Hilfsbetriebeumrichter und Bordnetzbatterie. Der Fahrstrom fließt über Hauptschalter und Systemwahlschalter direkt oder über die Wechselstromausrüstung zum Traktionsstromrichter, zurück über Radsätze und Schienen. Im Zweisystemfahrzeug wird auch die Hilfsbetriebeversorgung im Wechselstrombetrieb über die Wechselstromausrüstung gespeist. Die Bordnetzbatterie hält Bremsen und Signaleinrichtungen ohne Fahrleitungsspannung wirksam. Fahrzeugseitige Traktionsenergiespeicher sind nicht betrachtet.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "P10: Versorgung über Oberleitung und Stromabnehmer.",
               "P11: Zweisystemfahrzeuge mit Systemwahlschalter, Transformator und Gleichrichter; automatischer Systemwechsel.",
+              "Funktionsprinzip: Hinter dem Systemwahlschalter liegt im Wechselstrombetrieb Einphasenwechselspannung an; eine Gleichspannung für die Hilfsbetriebe steht dann erst hinter Transformator und Gleichrichter zur Verfügung.",
               "Q4, Abschnitt „Verkehrsbauten“: Rückstrom der Gleichspannungsseite über die Fahrschienen.",
               "Q1, § 36 Abs. 1 und § 40 Abs. 1: Bremsen und Signaleinrichtungen müssen unabhängig von der Fahrleitungsspannung wirken.",
               "Funktionsprinzip: Zwischen Fahrleitung und Traktionskreis ist ein Trennschalter nötig; Hilfsbetriebe brauchen eine eigene, gepufferte Niederspannung."
@@ -531,17 +535,19 @@
         },
         {
           "absatz_id": "P22",
-          "text": "Fahrerassistenz und Sicherheit umfassen die Fahrbetriebssicherung mit Sicherheitsfahrschaltung und Zugsicherungseinrichtung sowie die Notfallausrüstung mit Notfall-Sprecheinrichtungen für Fahrgäste. Beide Sicherungsgeräte wirken über die Bremsregelung auf alle Bremsen und melden an die Anzeigeelemente. Ein Fahrzeug nur für Fahren auf Sicht braucht keine Zugsicherungseinrichtung; Tunnel und unabhängige Abschnitte verlangen sie samt Notbremsüberbrückung und Vorkehrungen für Strecken ohne Sicherheitsraum.",
+          "text": "Fahrerassistenz und Sicherheit umfassen die Fahrbetriebssicherung mit Sicherheitsfahrschaltung und Zugsicherungseinrichtung sowie die Notfallausrüstung mit Notfall-Sprecheinrichtungen für Fahrgäste. Beide Sicherungsgeräte wirken über die Bremsregelung auf alle Bremsen und melden an die Anzeigeelemente. Ein Fahrzeug nur für Fahren auf Sicht braucht keine Zugsicherungseinrichtung; auf Strecken mit Zugsicherungsanlagen, in der Regel unabhängige Abschnitte und längere Tunnel, ist sie samt Notbremsüberbrückung und Vorkehrungen für Strecken ohne Sicherheitsraum erforderlich.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "P21: Sicherheitsfahrschaltung, fahrzeugseitige Zugsicherungseinrichtungen, Verbot des Fahrens auf Sicht in Tunneln und auf unabhängigen Bahnen.",
+              "Q1, § 38 Abs. 3: Zugsicherungseinrichtungen sind für Personenfahrzeuge auf Strecken mit Zugsicherungsanlagen vorgeschrieben.",
+              "Q1, § 49 Abs. 3 Nr. 2: in kurzen Tunneln straßenabhängiger Bahnen darf auf Sicht gefahren werden, wenn der Betriebsbremsweg einsehbar ist.",
               "P13: Notbremsüberbrückung auf Strecken ohne Sicherheitsraum und in Tunneln.",
               "Q1, § 33 Abs. 12 und § 43 Abs. 7: besondere Anforderungen an Fahrzeuge auf Strecken ohne Sicherheitsraum.",
               "Q1, § 46 Abs. 5: Notfall-Sprechverbindung zwischen Fahrgästen und Fahrzeugführer in unbesetzten Fahrzeugen eines Zuges."
             ],
-            "schluss": "Die Fahrbetriebssicherung ist bei Stadtbahnen wegen Tunnel- und unabhängiger Abschnitte Teil des Fahrzeugs; ihr Umfang hängt von der Betriebsweise ab."
+            "schluss": "Die Fahrbetriebssicherung ist Teil des Fahrzeugs, soweit es Strecken mit Zugsicherungsanlagen befährt, bei Stadtbahnen meist unabhängige Abschnitte und längere Tunnel; ihr Umfang hängt von der Betriebsweise ab."
           },
           "sicherheit": "mittel",
           "aussagetyp": "loesung",
@@ -901,6 +907,16 @@
         "typ": "komponente",
         "eltern_id": "E12",
         "absatz_ids": [
+          "P7"
+        ]
+      },
+      {
+        "id": "E86",
+        "name": "Jakobs-Drehgestell",
+        "typ": "komponente",
+        "eltern_id": "E12",
+        "absatz_ids": [
+          "P5",
           "P7"
         ]
       },
@@ -2217,10 +2233,20 @@
       },
       {
         "id": "S16",
-        "von": "E29",
+        "von": "E30",
         "nach": "E35",
         "art": "elektrisch",
-        "medium": "Fahrstrom für Hilfsbetriebe",
+        "medium": "Gleichspannung (Gleichstrombetrieb)",
+        "absatz_ids": [
+          "P12"
+        ]
+      },
+      {
+        "id": "S41",
+        "von": "E33",
+        "nach": "E35",
+        "art": "elektrisch",
+        "medium": "gleichgerichtete Spannung (Wechselstrombetrieb)",
         "absatz_ids": [
           "P12"
         ]
@@ -2565,6 +2591,10 @@
           {
             "element_id": "E7",
             "beschreibung": "Ausfahrbare Trittstufen für Eisenbahnbahnsteige"
+          },
+          {
+            "element_id": "E34",
+            "beschreibung": "Hilfsbetriebeumrichter muss aus beiden Stromsystemen gespeist werden"
           }
         ],
         "absatz_ids": [
@@ -2774,6 +2804,48 @@
           "P16",
           "P17"
         ]
+      },
+      {
+        "id": "V7",
+        "element_id": "E12",
+        "bezeichnung": "Fahrzeug- und Fahrwerkskonzept",
+        "alternativen": [
+          "Einzelgelenkfahrzeug mit Jakobs-Drehgestell unter dem Gelenk",
+          "Gelenkfahrzeug mit Einzeldrehgestellen unter jedem Wagenteil",
+          "Multigelenkfahrzeug mit Fahrwerksmodulen und schwebenden Mittelteilen (Niederflur)"
+        ],
+        "auswahlkriterien": [
+          "Fußbodenhöhe",
+          "Kleinster Bogenhalbmesser",
+          "Achslast und Zahl der angetriebenen Radsätze",
+          "Fahrzeuglänge"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E4",
+            "beschreibung": "Gelenkbauart und Lage der Gelenke über einem Drehgestell oder zwischen den Wagenteilen"
+          },
+          {
+            "element_id": "E13",
+            "beschreibung": "Zahl und Anordnung der Triebdrehgestelle"
+          },
+          {
+            "element_id": "E14",
+            "beschreibung": "Zahl und Anordnung der Laufdrehgestelle"
+          },
+          {
+            "element_id": "E19",
+            "beschreibung": "Einbauort der Traktionsausrüstung unter Flur oder auf dem Dach"
+          },
+          {
+            "element_id": "E42",
+            "beschreibung": "Zahl der Magnetschienenbremsen je nach Zahl der Fahrwerke"
+          }
+        ],
+        "absatz_ids": [
+          "P5",
+          "P7"
+        ]
       }
     ],
     "klaerungsfragen": [
@@ -2917,13 +2989,13 @@
       },
       {
         "id": "K12",
-        "frage": "Müssen auf Eisenbahnabschnitten eisenbahnübliche Spitzensignale und ein Signalhorn zusätzlich zu Fahrtrichtungsanzeigern und Läutewerk vorhanden sein?",
+        "frage": "Sollen die eisenbahnseitigen Signalbilder mit denselben Leuchten wie die straßenbahnseitigen dargestellt und automatisch mit dem Stromsystem umgeschaltet werden, oder getrennt und vom Fahrer geschaltet?",
         "element_ids": [
-          "E70",
-          "E71"
+          "E71",
+          "E56"
         ],
-        "anlass": "anforderung",
-        "relevanz": "Davon hängen Anzahl und Schaltung der Signaleinrichtungen ab.",
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Zahl der Leuchten, Ansteuerung aus der Fahrzeugsteuerung und Bedienung am Fahrerpult ab.",
         "variante_ids": [
           "V1"
         ]
@@ -2965,6 +3037,31 @@
           "V1",
           "V5"
         ]
+      },
+      {
+        "id": "K16",
+        "frage": "Welche Fahrzeuglänge, Zahl der Wagenteile und welcher kleinste Bogenhalbmesser sind vorgegeben, und sollen die Wagenteile auf Jakobs-Drehgestellen oder auf eigenen Drehgestellen laufen?",
+        "element_ids": [
+          "E2",
+          "E12",
+          "E86"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Gelenkbauart, Zahl und Anordnung der Trieb- und Laufdrehgestelle und der Einbauort der Traktionsausrüstung ab.",
+        "variante_ids": [
+          "V7"
+        ]
+      },
+      {
+        "id": "K17",
+        "frage": "Welche Fahrzeugbreite, Fahrzeuglänge, Spurweite und welche Zahl an Sitz- und Stehplätzen je Einheit sind für das Einsatznetz vorgegeben?",
+        "element_ids": [
+          "E2",
+          "E3",
+          "E12"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Wagenkastenquerschnitt, Zahl der Wagenteile und Drehgestelle, Türanzahl und Antriebsleistung ab."
       }
     ],
     "anforderungsthemen": [
@@ -3293,6 +3390,55 @@
             "bezeichnung": "BOStrab (Deutschland; Straßenbahnen nach § 4 PBefG), Schutzeinrichtungen und Festhalten der Türen",
             "quellen_id": "Q1",
             "fundstelle": "§ 43 Abs. 3 und 6"
+          }
+        ]
+      },
+      {
+        "id": "R14",
+        "element_ids": [
+          "E3",
+          "E8",
+          "E11"
+        ],
+        "thema": "Brandschutz",
+        "kenngroessen": [
+          "Brandverhalten der Werkstoffe",
+          "Rauchentwicklung und Toxizität",
+          "Schutzdauer bis zur Fremdrettung",
+          "Lage von Einrichtungen mit erhöhter Brandgefahr"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "BOStrab (Deutschland; Straßenbahnen nach § 4 PBefG), Brandschutz",
+            "quellen_id": "Q1",
+            "fundstelle": "§ 33 Abs. 3"
+          },
+          {
+            "bezeichnung": "BOStrab (Deutschland; Straßenbahnen nach § 4 PBefG), Fahrzeuge für Strecken ohne Sicherheitsraum",
+            "quellen_id": "Q1",
+            "fundstelle": "§ 33 Abs. 12"
+          }
+        ]
+      },
+      {
+        "id": "R15",
+        "element_ids": [
+          "E3",
+          "E6",
+          "E17"
+        ],
+        "thema": "Kollisionssicherheit des Wagenkastens",
+        "kenngroessen": [
+          "Längssteifigkeit (Druckfestigkeit) des Wagenkastens",
+          "Energieaufnahme der Fahrzeugenden",
+          "Kollisionsszenarien mit Straßenfahrzeugen",
+          "Kollisionsszenarien mit Eisenbahnfahrzeugen"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "LNT-Richtlinie (Deutschland; leichte Nahverkehrstriebwagen im Mischbetrieb Stadtbahn/Eisenbahn), Ausgleich geringer Längssteifigkeit durch Maßnahmen der aktiven Sicherheit",
+            "quellen_id": "Q4",
+            "fundstelle": "Abschnitt „Fahrzeugtechnik – Spurführung“, Absatz zur Steifigkeit von Straßenbahn- und Eisenbahnfahrzeugen"
           }
         ]
       }

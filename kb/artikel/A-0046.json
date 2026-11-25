@@ -136,7 +136,7 @@
         },
         {
           "absatz_id": "P3",
-          "text": "Beschrieben wird der hydraulische Universalbagger mit unbegrenzt schwenkbarem Oberwagen als Raupen- oder Mobilbagger. Er fährt nur zum Umsetzen und arbeitet im Stand. Ein zentraler Leistungsteil erzeugt hydraulische Leistung und verteilt sie über ein Steuerventil auf Zylinder und Hydraulikmotoren. Die Systeme sind mechanisch, hydraulisch, elektrisch, thermisch und informationstechnisch gekoppelt; prägende Trennstelle ist die Drehverbindung zwischen Unterwagen und Oberwagen. Die Zerlegung umfasst dreizehn Hauptsysteme bis zur Komponentenebene.",
+          "text": "Beschrieben wird der hydraulische Universalbagger mit unbegrenzt schwenkbarem Oberwagen als Raupen- oder Mobilbagger. Er arbeitet vorwiegend im Stand und verfährt zwischen Arbeitsstellungen oder zum Umsetzen. Ein zentraler Leistungsteil erzeugt hydraulische Leistung und verteilt sie über ein Steuerventil auf Zylinder und Hydraulikmotoren. Die Systeme sind mechanisch, hydraulisch, elektrisch, thermisch und informationstechnisch gekoppelt; prägende Trennstelle ist die Drehverbindung zwischen Unterwagen und Oberwagen. Die Zerlegung umfasst dreizehn Hauptsysteme bis zur Komponentenebene.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -144,9 +144,10 @@
               "P1",
               "P2",
               "Q2, Abschnitt Configurations: alle Grab- und Fahrbewegungen über Hydraulikzylinder und Hydraulikmotoren",
-              "Q1, Abschnitt Eingefäßbagger: Vorschub durch Bewegen des Grabgefäßes, nicht durch Verfahren der Maschine (Standbagger)"
+              "Q1, Abschnitt Eingefäßbagger: Vorschub durch Bewegen des Grabgefäßes, nicht durch Verfahren der Maschine (Standbagger)",
+              "Q5, Abschnitt 3.17.4: Bagger dürfen mit angeschlagener Last verfahren werden, wenn der Fahrweg eingeebnet ist"
             ],
-            "schluss": "Der Bagger ist eine stationär arbeitende, selbstfahrende Maschine mit hydraulischer Leistungsverteilung; Unterwagen und Oberwagen sind über die Drehverbindung gekoppelt."
+            "schluss": "Der Bagger ist eine vorwiegend stationär arbeitende, selbstfahrende Maschine mit hydraulischer Leistungsverteilung; Unterwagen und Oberwagen sind über die Drehverbindung gekoppelt."
           },
           "sicherheit": "hoch",
           "aussagetyp": "funktion",
@@ -197,7 +198,7 @@
         },
         {
           "absatz_id": "P6",
-          "text": "Die deutsche Straßenverkehrs-Zulassungs-Ordnung begrenzt die Breite von Kraftfahrzeugen allgemein auf 2,55 m; 3,00 m gelten nur für land- oder forstwirtschaftliche Arbeitsmaschinen im land- oder forstwirtschaftlichen Einsatz. Selbstfahrende Arbeitsmaschinen mit bauartbestimmter Höchstgeschwindigkeit bis 25 km/h fallen nach der Fahrerlaubnis-Verordnung unter Klasse L; Bagger fahren in der Regel nicht schneller als 20 km/h.",
+          "text": "Die deutsche Straßenverkehrs-Zulassungs-Ordnung begrenzt die Breite von Kraftfahrzeugen allgemein auf 2,55 m; 3,00 m gelten unter anderem für land- oder forstwirtschaftliche Arbeitsmaschinen im land- oder forstwirtschaftlichen Einsatz. Selbstfahrende Arbeitsmaschinen mit bauartbestimmter Höchstgeschwindigkeit bis 25 km/h fallen nach der Fahrerlaubnis-Verordnung unter Klasse L; Bagger fahren in der Regel nicht schneller als 20 km/h.",
           "begruendung": "belegt",
           "belege": [
             {
@@ -251,7 +252,7 @@
             ],
             "schluss": "Das Antriebssystem besteht aus Primärantrieb, Hydrauliksystem, Fahrantrieb und Schwenkantrieb; die Fahrwerksbauart bestimmt den Aufbau des Fahrantriebs."
           },
-          "sicherheit": "mittel",
+          "sicherheit": "gering",
           "aussagetyp": "loesung",
           "herangezogene_artikel_ids": []
         },
@@ -277,7 +278,7 @@
       "absaetze": [
         {
           "absatz_id": "P10",
-          "text": "Das Energieversorgungssystem stellt Kraftstoff und elektrische Energie bereit: die Kraftstoffversorgung mit Kraftstofftank und Kraftstoffanlage, die Bordenergieversorgung mit Starterbatterie und Generator. Beim batterieelektrischen Bagger ersetzt das Hochvoltsystem die Kraftstoffversorgung: Die Traktionsbatterie speist über das Hochvolt-Bordnetz den elektrischen Antriebsmotor, die Ladeeinrichtung lädt aus dem Netz, ein Gleichspannungswandler ersetzt den Generator. Tank und Batterie liegen im Oberwagen, daher kreuzt kein Hauptenergiefluss die Drehverbindung. Die Antriebsart bestimmt Einsatzdauer, Abgasnachbehandlung und Thermomanagement.",
+          "text": "Das Energieversorgungssystem stellt Kraftstoff und elektrische Energie bereit: die Kraftstoffversorgung mit Kraftstofftank und Kraftstoffanlage, die Bordenergieversorgung mit Starterbatterie und Generator. Beim batterieelektrischen Bagger ersetzt das Hochvoltsystem die Kraftstoffversorgung: Die Traktionsbatterie speist über das Hochvolt-Bordnetz und einen Wechselrichter den elektrischen Antriebsmotor, die Ladeeinrichtung lädt aus dem Netz, ein Gleichspannungswandler ersetzt den Generator. Kraftstofftank und gegebenenfalls Traktionsbatterie liegen meist im Oberwagen; die Drehdurchführung führt daher nur Drucköl und Niedervoltleitungen zum Unterwagen. Die Antriebsart bestimmt Einsatzdauer, Abgasnachbehandlung und Thermomanagement.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -285,11 +286,14 @@
               "P4: Kraftstofftank und Motor im Oberwagen",
               "P8",
               "Ein Verbrennungsmotor braucht Kraftstoffspeicher und Förderung, ein elektrischer Antrieb Speicher, Verteilung und Ladeeinrichtung",
-              "Ohne Generator muss das Niedervoltnetz aus dem Hochvoltnetz gespeist werden"
+              "Ohne Generator muss das Niedervoltnetz aus dem Hochvoltnetz gespeist werden",
+              "P4: Drehdurchführung versorgt die Fahrmotoren im Unterwagen mit Hochdrucköl",
+              "Ein Wechselrichter wandelt die Gleichspannung der Traktionsbatterie in die drehzahlvariable Wechselspannung des Antriebsmotors",
+              "Annahme ohne Quelle: Traktionsbatterie im Oberwagen"
             ],
-            "schluss": "Das Energieversorgungssystem besteht aus Kraftstoffversorgung, Hochvoltsystem und Bordenergieversorgung, deren Belegung von der Antriebsart abhängt."
+            "schluss": "Das Energieversorgungssystem besteht aus Kraftstoffversorgung, Hochvoltsystem mit Wechselrichter und Bordenergieversorgung, deren Belegung von der Antriebsart abhängt; die Drehdurchführung ist die einzige Leistungsschnittstelle zum Unterwagen."
           },
-          "sicherheit": "mittel",
+          "sicherheit": "gering",
           "aussagetyp": "variante",
           "herangezogene_artikel_ids": []
         }
@@ -302,7 +306,7 @@
       "absaetze": [
         {
           "absatz_id": "P11",
-          "text": "Das Lenksystem hängt von der Fahrwerksbauart ab. Der Raupenbagger lenkt ohne lenkbare Räder, indem die Fahrmotoren beider Ketten mit unterschiedlicher Drehzahl oder Drehrichtung laufen; die Lenkfunktion liegt im Fahrantrieb und in den Fahrpedalen. Der Mobilbagger hat eine gelenkte Achse mit Lenkbetätigung aus Lenkrad und Lenksäule und Lenkhydraulik aus Lenkunterstützung mit Lenkventil und Lenkzylinder, versorgt aus dem Hydrauliksystem. Weil der Fahrer im Oberwagen sitzt, kehrt sich bei nach hinten geschwenktem Oberwagen der Lenksinn um.",
+          "text": "Das Lenksystem hängt von der Fahrwerksbauart ab. Der Raupenbagger lenkt ohne lenkbare Räder, indem die Fahrmotoren beider Ketten mit unterschiedlicher Drehzahl oder Drehrichtung laufen; die Lenkfunktion liegt im Fahrantrieb und in den Fahrpedalen. Der Mobilbagger hat meist eine gelenkte Vorderachse, teils Allrad- oder Hundeganglenkung, mit Lenkbetätigung aus Lenkrad und Lenksäule und Lenkhydraulik aus Lenkunterstützung mit Lenkventil und Lenkzylinder, versorgt aus dem Hydrauliksystem. Weil der Fahrer im Oberwagen sitzt, kehrt sich bei nach hinten geschwenktem Oberwagen der Lenksinn um.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -310,11 +314,13 @@
               "P4: Fahrmotoren und Endantriebe treiben jede Kette einzeln",
               "P5",
               "Ein Kettenfahrzeug ohne lenkbare Räder ändert die Richtung nur über die Geschwindigkeitsdifferenz der Ketten",
-              "Annahme ohne Quelle: hydraulische Lenkung an der gelenkten Achse des Mobilbaggers"
+              "Annahme ohne Quelle: hydraulische Lenkung an der gelenkten Achse des Mobilbaggers",
+              "Der Fahrer im Oberwagen blickt bei nach hinten geschwenktem Oberwagen entgegen der Fahrtrichtung des Unterwagens",
+              "Annahme ohne Quelle: Allrad- und Hundeganglenkung als Varianten des Mobilbaggers"
             ],
             "schluss": "Beim Raupenbagger ist die Lenkung Teil des Fahrantriebs; nur der Mobilbagger hat ein eigenes Lenksystem aus Lenkbetätigung und Lenkhydraulik."
           },
-          "sicherheit": "mittel",
+          "sicherheit": "gering",
           "aussagetyp": "variante",
           "herangezogene_artikel_ids": []
         }
@@ -468,16 +474,17 @@
       "absaetze": [
         {
           "absatz_id": "P18",
-          "text": "Die Fahrzeugsteuerung und Information koordiniert mehrere Hauptsysteme. Das Fahrzeugmanagement stimmt Motordrehzahl und Pumpenleistung ab, damit die Pumpen den Motor nicht überlasten; beim Load-Sensing-Bagger übernimmt das der hydromechanische Leistungsregler der Pumpe, bei elektronisch geregelten Maschinen ein Steuergerät mit wählbaren Betriebsarten. Die Diagnose sammelt Fehler- und Zustandsdaten für Wartung und Prüfungen. Eine Telematikeinheit kann Betriebsstunden, Standort und Verbrauch übertragen.",
+          "text": "Die Fahrzeugsteuerung und Information koordiniert mehrere Hauptsysteme. Das Fahrzeugmanagement stimmt Motordrehzahl und Pumpenleistung ab, damit die Pumpen den Motor nicht überlasten; beim Load-Sensing-Bagger übernimmt das der hydromechanische Leistungsregler der Pumpe, bei elektronisch geregelten Maschinen ein Steuergerät mit wählbaren Betriebsarten. Die Diagnose sammelt Fehler- und Zustandsdaten für Wartung und Prüfungen. Eine Telematikeinheit kann Betriebsstunden, Standort und Verbrauch übertragen. Eine Maschinensteuerung zeigt aus Neigungssensoren der Grabausrüstung und satellitengestützter Positionsbestimmung die Schneidenposition zum Sollmodell an oder führt die Grabausrüstung teilautomatisch.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "P9: Verstellpumpe mit Leistungsregler",
               "Q6, Abschnitt Prüfungen: Prüfung vor erster Inbetriebnahme und mindestens jährlich, Ergebnisse dokumentieren",
-              "Annahme ohne Quelle: elektronische Leistungsregelung mit Betriebsarten und Telematikeinheit"
+              "Annahme ohne Quelle: elektronische Leistungsregelung mit Betriebsarten und Telematikeinheit",
+              "Annahme ohne Quelle: Maschinensteuerung mit Neigungs- und Winkelsensoren an der Grabausrüstung und satellitengestützter Positionsbestimmung"
             ],
-            "schluss": "Die Fahrzeugsteuerung und Information besteht aus Fahrzeugmanagement, Diagnose und Telematikeinheit."
+            "schluss": "Die Fahrzeugsteuerung und Information besteht aus Fahrzeugmanagement, Diagnose, Telematikeinheit und gegebenenfalls einer Maschinensteuerung."
           },
           "sicherheit": "gering",
           "aussagetyp": "loesung",
@@ -492,7 +499,7 @@
       "absaetze": [
         {
           "absatz_id": "P19",
-          "text": "Nach Kapitel 2.12 der DGUV Regel 100-500, die in Deutschland für Unternehmer im Bereich der gesetzlichen Unfallversicherung gilt, dürfen Bagger im Hebezeugeinsatz nur mit selbsttätig wirkender Sicherung gegen Zurücklaufen der Last, Notendhalteinrichtung und Lastmomentbegrenzung betrieben werden; Hydraulikbagger ohne Seiltrieb dürfen stattdessen eine selbsttätige Warneinrichtung haben. Der Baustein der BG BAU fordert für Hydraulikbagger im Hebezeugeinsatz Überlastwarneinrichtung und Leitungsbruchsicherung, außer bei Traglast unter 1000 kg oder Kippmoment unter 40000 Nm, wenn der Hersteller diesen Einsatz als bestimmungsgemäß erklärt. Bei Gefahr durch herabfallende Gegenstände muss ein widerstandsfähiges Schutzdach den Fahrerplatz sichern.",
+          "text": "Nach Kapitel 2.12 der DGUV Regel 100-500, die in Deutschland für Unternehmer im Bereich der gesetzlichen Unfallversicherung gilt, dürfen Bagger im Hebezeugeinsatz nur mit selbsttätig wirkender Sicherung gegen Zurücklaufen der Last, Notendhalteinrichtung und Lastmomentbegrenzung betrieben werden. Hydraulikbagger ohne Seiltrieb dürfen anstelle der Lastmomentbegrenzung eine selbsttätig wirkende Warneinrichtung haben, bei zulässiger Traglast unter 1000 kg in der kleinsten, um 360° drehbaren Ausladung oder Kippmoment unter 40000 Nm auch keine, wenn der Hersteller diesen Einsatz als bestimmungsgemäß erklärt hat. Der Baustein der BG BAU fordert für sie Überlastwarneinrichtung und Leitungsbruchsicherung mit derselben Ausnahme. Bei Gefahr durch herabfallende Gegenstände muss ein widerstandsfähiges Schutzdach den Fahrerplatz sichern.",
           "begruendung": "belegt",
           "belege": [
             {
@@ -574,7 +581,7 @@
       "absaetze": [
         {
           "absatz_id": "P23",
-          "text": "Das Thermomanagement führt die Verlustwärme von Motor und Hydraulik ab. Da Drosselverluste als Wärme im Öl anfallen, umfasst die Motor- und Ölkühlung neben Kühler und Kühlmittelpumpe einen Hydraulikölkühler; ein Lüfter saugt Luft durch das Kühlerpaket. Die Kabinenklimatisierung besteht aus Heiz- und Klimaanlage mit Klimakompressor. Batterieelektrische Bagger brauchen eine Batterietemperierung; elektrohydraulische Einzelantriebe senken die Wärme im Öl.",
+          "text": "Das Thermomanagement führt die Verlustwärme von Motor und Hydraulik ab. Da Drosselverluste als Wärme im Öl anfallen, umfasst die Motor- und Ölkühlung neben Kühler und Kühlmittelpumpe einen Hydraulikölkühler; ein Lüfter saugt Luft durch das Kühlerpaket. Die Kabinenklimatisierung besteht aus Heiz- und Klimaanlage mit Klimakompressor. Batterieelektrische Bagger brauchen eine Batterietemperierung und Kühlung für Antriebsmotor und Leistungselektronik; Motorkühlung und Nebenaggregatetrieb entfallen, Klimakompressor, Lüfter und Pumpen laufen elektrisch oder am Antriebsmotor. Elektrohydraulische Einzelantriebe senken die Wärme im Öl.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -582,9 +589,11 @@
               "P9: große Verluste an Wegeventilen und Druckwaagen, elektrohydraulische Antriebe vermeiden sie",
               "P10",
               "Verlustleistung fällt als Wärme an und muss abgeführt werden",
-              "Traktionsbatterien arbeiten nur in einem begrenzten Temperaturfenster"
+              "Traktionsbatterien arbeiten nur in einem begrenzten Temperaturfenster",
+              "P24: Nebenaggregatetrieb am Motor treibt Kühlmittelpumpe, Lüfter und Klimakompressor",
+              "Ohne Verbrennungsmotor fehlen dessen Wärmequelle und dessen Nebenabtrieb; Antriebsmotor und Wechselrichter erzeugen eigene Verlustwärme"
             ],
-            "schluss": "Das Thermomanagement besteht aus Motor- und Ölkühlung, Kabinenklimatisierung und bei Batteriebetrieb einer Batterietemperierung."
+            "schluss": "Das Thermomanagement besteht aus Motor- und Ölkühlung, Kabinenklimatisierung und bei Batteriebetrieb einer Batterietemperierung und einer Kühlung von Antriebsmotor und Leistungselektronik."
           },
           "sicherheit": "mittel",
           "aussagetyp": "loesung",
@@ -669,7 +678,7 @@
       "absaetze": [
         {
           "absatz_id": "P27",
-          "text": "Hydraulisch: Hauptpumpen über Hauptsteuerventil zu Zylindern, Schwenkmotor und über die Drehdurchführung zu den Fahrmotoren; Vorsteuerpumpe zu Bedienhebeln und Schwenkwerksbremse; Zusatzhydraulik zum Anbaugerät; Hydrauliksystem zu Lenkhydraulik und Betriebsbremse. Mechanisch: Motor über Pumpenverteilergetriebe zu den Hauptpumpen, Endantriebe zum Kettenlaufwerk, Gelenkwelle zur Achse, Schwenkgetriebe zur Drehverbindung. Stoff: Kraftstoff zum Motor. Elektrisch: Generator oder Gleichspannungswandler ins Niedervolt-Bordnetz, Traktionsbatterie über Hochvolt-Bordnetz zum Antriebsmotor. Information: Bedienhebel zu Steuergeräten, Maschinensensorik zur Überlastwarneinrichtung, Warnungen zu Anzeigeelementen. Thermisch: Motor und Hydrauliköl zur Kühlung, klimatisierte Luft zur Kabine.",
+          "text": "Hydraulisch: Hauptpumpen über Hauptsteuerventil zu Zylindern, Schwenkmotor und über Drehdurchführung zu Fahrmotoren; Vorsteuerpumpe zu Bedienhebeln und Schwenkwerksbremse; Zusatzhydraulik zum Anbaugerät; Hydrauliksystem zu Lenkhydraulik und Betriebsbremse. Mechanisch: Motor über Pumpenverteilergetriebe zu Hauptpumpen, Endantriebe zum Kettenlaufwerk, Gelenkwelle zur Achse, Schwenkgetriebe zur Drehverbindung. Stoff: Kraftstoff zum Motor. Elektrisch: Generator oder Gleichspannungswandler ins Niedervolt-Bordnetz, Traktionsbatterie über Hochvolt-Bordnetz und Wechselrichter zum Antriebsmotor. Information: Bedienhebel zu Steuergeräten, Maschinensensorik über Überlastwarneinrichtung und Maschinensteuerung zu Anzeigeelementen, Fahrzeugmanagement zum Wechselrichter. Thermisch: Motor und Hydrauliköl zur Kühlung, klimatisierte Luft zur Kabine.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -680,6 +689,7 @@
               "P12",
               "P14",
               "P17",
+              "P18",
               "P20",
               "P23",
               "P24"
@@ -698,7 +708,7 @@
       "absaetze": [
         {
           "absatz_id": "P28",
-          "text": "Funktionszuordnung: Unterwagen und Oberwagen: Fahrzeuglasten tragen; Fahrantrieb, Kettenlaufwerk sowie Räder und Reifen: Fahrzeug fortbewegen; Abstützung und Planierschild: Fahrzeug abstützen; Verbrennungsmotor und elektrischer Antriebsmotor: Antriebsleistung erzeugen; Pumpenverteilergetriebe, Getriebe, Gelenkwelle, Differenzial, Endantriebe und Nebenaggregatetrieb: Drehmoment übertragen; Hydrauliksystem und Fahrzeugmanagement: Hydraulische Leistung bereitstellen; Schwenkantrieb und Drehverbindung: Oberwagen schwenken; Kraftstofftank, Traktionsbatterie und Starterbatterie: Energie speichern; Kraftstoffanlage: Treibstoff fördern; Ladeeinrichtung: Traktionsbatterie laden; Niedervolt-Bordnetz und Hochvolt-Bordnetz: Elektrische Energie verteilen; Lenkhydraulik und Fahrantrieb: Fahrzeug lenken; Betriebsbremse und Fahrmotoren: Fahrzeug verzögern; Feststellbremse und Schwenkwerksbremse: Fahrzeug festhalten; Bedienhebel, Fahrpedale und Bedienelemente: Fahrereingaben erfassen; Anzeigeelemente: Fahrerinformationen anzeigen; Kabine, Sicherheitsgurt und Überschlagschutz: Insassen schützen; Grabausrüstung und Anbaugerät: Erdreich lösen; Grabausrüstung und Werkzeugaufnahme: Objekte handhaben; Schnellwechsler: Anbaugerät wechseln; Fahrzeugbus und Telematikeinheit: Daten übertragen; Maschinensensorik, Diagnose und Überlastwarneinrichtung: Fahrzeugzustand überwachen; Scheinwerfer: Fahrzeugumgebung ausleuchten; Signalleuchten: Lichtsignale abgeben; Sichtsystem und Kamera-Monitor-System: Fahrersicht sicherstellen; Motor- und Ölkühlung und Batterietemperierung: Betriebstemperatur regeln; Kabinenklimatisierung: Innenraum klimatisieren; Zusatzhydraulik: Arbeitsgeräte versorgen.",
+          "text": "Funktionszuordnung: Unterwagen und Oberwagen: Fahrzeuglasten tragen; Fahrantrieb, Kettenlaufwerk sowie Räder und Reifen: Fahrzeug fortbewegen; Abstützung und Planierschild: Fahrzeug abstützen; Verbrennungsmotor und elektrischer Antriebsmotor: Antriebsleistung erzeugen; Pumpenverteilergetriebe, Getriebe, Gelenkwelle, Differenzial, Endantriebe und Nebenaggregatetrieb: Drehmoment übertragen; Hydrauliksystem und Fahrzeugmanagement: Hydraulische Leistung bereitstellen; Schwenkantrieb und Drehverbindung: Oberwagen schwenken; Kraftstofftank, Traktionsbatterie und Starterbatterie: Energie speichern; Kraftstoffanlage: Treibstoff fördern; Ladeeinrichtung: Traktionsbatterie laden; Niedervolt-Bordnetz und Hochvolt-Bordnetz: Elektrische Energie verteilen; Lenkhydraulik und Fahrantrieb: Fahrzeug lenken; Betriebsbremse und Fahrmotoren: Fahrzeug verzögern; Feststellbremse und Schwenkwerksbremse: Fahrzeug festhalten; Bedienhebel, Fahrpedale und Bedienelemente: Fahrereingaben erfassen; Anzeigeelemente: Fahrerinformationen anzeigen; Kabine, Sicherheitsgurt und Überschlagschutz: Insassen schützen; Grabausrüstung und Anbaugerät: Erdreich lösen; Grabausrüstung und Werkzeugaufnahme: Objekte handhaben; Schnellwechsler: Anbaugerät wechseln; Fahrzeugbus und Telematikeinheit: Daten übertragen; Maschinensteuerung: Fahrzeugposition bestimmen; Maschinensensorik, Diagnose und Überlastwarneinrichtung: Fahrzeugzustand überwachen; Scheinwerfer: Fahrzeugumgebung ausleuchten; Signalleuchten: Lichtsignale abgeben; Sichtsystem und Kamera-Monitor-System: Fahrersicht sicherstellen; Motor- und Ölkühlung und Batterietemperierung: Betriebstemperatur regeln; Kabinenklimatisierung: Innenraum klimatisieren; Zusatzhydraulik: Arbeitsgeräte versorgen.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -877,7 +887,8 @@
         "eltern_id": "E14",
         "absatz_ids": [
           "P8",
-          "P10"
+          "P10",
+          "P23"
         ]
       },
       {
@@ -1123,6 +1134,16 @@
         "eltern_id": "E38",
         "absatz_ids": [
           "P10"
+        ]
+      },
+      {
+        "id": "E118",
+        "name": "Wechselrichter",
+        "typ": "komponente",
+        "eltern_id": "E38",
+        "absatz_ids": [
+          "P10",
+          "P27"
         ]
       },
       {
@@ -1589,6 +1610,17 @@
         ]
       },
       {
+        "id": "E119",
+        "name": "Maschinensteuerung",
+        "typ": "komponente",
+        "eltern_id": "E85",
+        "absatz_ids": [
+          "P18",
+          "P27",
+          "P28"
+        ]
+      },
+      {
         "id": "E89",
         "name": "Fahrerassistenz und Sicherheit",
         "typ": "hauptsystem",
@@ -1865,7 +1897,8 @@
         "typ": "komponente",
         "eltern_id": "E114",
         "absatz_ids": [
-          "P24"
+          "P24",
+          "P23"
         ]
       }
     ],
@@ -2199,6 +2232,16 @@
           "P16",
           "P24"
         ]
+      },
+      {
+        "id": "F29",
+        "name": "Fahrzeugposition bestimmen",
+        "ausgefuehrt_von": [
+          "E119"
+        ],
+        "absatz_ids": [
+          "P18"
+        ]
       }
     ],
     "fluesse": [
@@ -2485,14 +2528,38 @@
       {
         "id": "S25",
         "von": "E40",
+        "nach": "E118",
+        "art": "elektrisch",
+        "medium": "Hochspannung (Gleichstrom)",
+        "absatz_ids": [
+          "P10",
+          "P27"
+        ]
+      },
+      {
+        "id": "S40",
+        "von": "E118",
         "nach": "E16",
         "art": "elektrisch",
-        "medium": "Hochspannung",
+        "medium": "Drehstrom",
         "absatz_ids": [
           "P10",
           "P27"
         ],
         "schnittstelle": "Hochvoltanschluss Antriebsmotor"
+      },
+      {
+        "id": "S41",
+        "von": "E86",
+        "nach": "E118",
+        "art": "information",
+        "medium": "Drehzahlvorgabe",
+        "absatz_ids": [
+          "P10",
+          "P18",
+          "P27"
+        ],
+        "schnittstelle": "Fahrzeugbus"
       },
       {
         "id": "S26",
@@ -2654,6 +2721,30 @@
         "absatz_ids": [
           "P18"
         ]
+      },
+      {
+        "id": "S42",
+        "von": "E84",
+        "nach": "E119",
+        "art": "information",
+        "medium": "Neigungs- und Winkelsignale",
+        "absatz_ids": [
+          "P18",
+          "P27"
+        ],
+        "schnittstelle": "Fahrzeugbus"
+      },
+      {
+        "id": "S43",
+        "von": "E119",
+        "nach": "E67",
+        "art": "information",
+        "medium": "Schneidenposition gegenüber Sollmodell",
+        "absatz_ids": [
+          "P18",
+          "P27"
+        ],
+        "schnittstelle": "Anzeigedaten über Fahrzeugbus"
       }
     ],
     "entfallene_kategorien": [],
@@ -2758,7 +2849,7 @@
           },
           {
             "element_id": "E38",
-            "beschreibung": "Das Hochvoltsystem mit Traktionsbatterie, Hochvolt-Bordnetz und Ladeeinrichtung kommt hinzu."
+            "beschreibung": "Das Hochvoltsystem mit Traktionsbatterie, Hochvolt-Bordnetz, Wechselrichter und Ladeeinrichtung kommt hinzu."
           },
           {
             "element_id": "E42",
@@ -2771,6 +2862,14 @@
           {
             "element_id": "E113",
             "beschreibung": "Eine Batterietemperierung wird erforderlich."
+          },
+          {
+            "element_id": "E117",
+            "beschreibung": "Beim batterieelektrischen Bagger entfällt der Nebenaggregatetrieb am Verbrennungsmotor; Klimakompressor, Lüfter und Pumpen werden elektrisch oder vom Antriebsmotor angetrieben."
+          },
+          {
+            "element_id": "E105",
+            "beschreibung": "Die Motorkühlung entfällt, Antriebsmotor und Leistungselektronik brauchen einen eigenen Kühlkreis."
           }
         ],
         "absatz_ids": [
@@ -2785,10 +2884,11 @@
         "bezeichnung": "Hydraulikarchitektur",
         "alternativen": [
           "Ventilgesteuertes Load-Sensing-System mit Verstellpumpen und Hauptsteuerventil",
-          "Elektrohydraulische Einzelantriebe im offenen Kreis",
-          "Elektrohydraulische Einzelantriebe im geschlossenen Kreis"
+          "Elektrohydraulische Einzelantriebe im offenen Kreis beim batterieelektrischen Antrieb",
+          "Elektrohydraulische Einzelantriebe im geschlossenen Kreis beim batterieelektrischen Antrieb"
         ],
         "auswahlkriterien": [
+          "Gewählte Antriebsart: Elektrohydraulische Einzelantriebe kommen nur beim batterieelektrischen Antrieb in Betracht, weil sie beim Dieselantrieb einen motorgetriebenen Generator und damit einen ausgeschlossenen dieselelektrischen Hybrid erfordern",
           "Energiebedarf und Kraftstoffverbrauch im Arbeitsspiel",
           "Möglichkeit der Energierückgewinnung",
           "Kosten, Bauraum und Masse",
@@ -2805,7 +2905,7 @@
           },
           {
             "element_id": "E34",
-            "beschreibung": "Ein elektrischer Speicher für zurückgewonnene Energie und eine elektrische Verteilung kommen hinzu."
+            "beschreibung": "Die Traktionsbatterie nimmt zurückgewonnene Energie auf, und das Hochvolt-Bordnetz versorgt statt eines Antriebsmotors mehrere Elektromaschinen."
           },
           {
             "element_id": "E83",
@@ -2814,6 +2914,14 @@
           {
             "element_id": "E108",
             "beschreibung": "Die Wärmelast am Hydraulikölkühler sinkt."
+          },
+          {
+            "element_id": "E14",
+            "beschreibung": "Der elektrische Antriebsmotor treibt keine Hauptpumpen über das Pumpenverteilergetriebe mehr an; die Elektromaschinen je Verbraucher ersetzen ihn als zentralen Leistungsteil."
+          },
+          {
+            "element_id": "E38",
+            "beschreibung": "Das Hochvoltsystem braucht Umrichter je Elektromaschine und einen Pufferspeicher für zurückgewonnene Energie, als Traktionsbatterie oder Superkondensator."
           }
         ],
         "absatz_ids": [
@@ -2957,9 +3065,58 @@
           "P19",
           "P20"
         ]
+      },
+      {
+        "id": "V9",
+        "element_id": "E119",
+        "bezeichnung": "Maschinensteuerung",
+        "alternativen": [
+          "Ohne Maschinensteuerung",
+          "Anzeigende Maschinensteuerung",
+          "Teilautomatische Maschinensteuerung"
+        ],
+        "auswahlkriterien": [
+          "Geforderte Grabgenauigkeit gegenüber dem Sollmodell",
+          "Verfügbarkeit digitaler Geländemodelle",
+          "Erfahrung der Fahrer",
+          "Kosten der Nachrüstung"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E84",
+            "beschreibung": "Neigungs- und Winkelsensoren an Ausleger, Löffelstiel und Löffel sowie eine satellitengestützte Positionsbestimmung kommen hinzu."
+          },
+          {
+            "element_id": "E83",
+            "beschreibung": "Ein Steuergerät der Maschinensteuerung wird über den Fahrzeugbus eingebunden."
+          },
+          {
+            "element_id": "E22",
+            "beschreibung": "Die teilautomatische Führung setzt eine elektrische Ansteuerung des Hauptsteuerventils voraus."
+          }
+        ],
+        "absatz_ids": [
+          "P18"
+        ]
       }
     ],
     "klaerungsfragen": [
+      {
+        "id": "K21",
+        "frage": "Für welche Größenklasse und welches Einsatzgewicht soll der Bagger ausgelegt werden, vom Minibagger bis zum Großbagger?",
+        "element_ids": [
+          "E1",
+          "E2",
+          "E68"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Fahrwerksbauart, Hecktyp, Auslegerbauart, Planierschild, Fahrerplatz und Transport ab.",
+        "variante_ids": [
+          "V1",
+          "V2",
+          "V5"
+        ]
+      },
       {
         "id": "K1",
         "frage": "Soll der Bagger als Raupenbagger mit Kettenlaufwerk oder als Mobilbagger mit Achsen und Abstützung ausgeführt werden?",
@@ -3009,7 +3166,7 @@
           "E34"
         ],
         "anlass": "architekturentscheidung",
-        "relevanz": "Davon hängen Energieversorgung, Abgasnachbehandlung und Thermomanagement ab.",
+        "relevanz": "Davon hängen Energieversorgung, Abgasnachbehandlung, Thermomanagement und der Antrieb der Nebenaggregate ab.",
         "variante_ids": [
           "V3"
         ]
@@ -3037,9 +3194,10 @@
           "E22"
         ],
         "anlass": "architekturentscheidung",
-        "relevanz": "Davon hängen Hauptsteuerventil, Schwenkantrieb, elektrische Speicher und Ölkühlung ab.",
+        "relevanz": "Davon hängen Hauptsteuerventil, Schwenkantrieb, elektrische Speicher und Ölkühlung ab, und elektrohydraulische Einzelantriebe setzen den batterieelektrischen Antrieb voraus.",
         "variante_ids": [
-          "V4"
+          "V4",
+          "V3"
         ]
       },
       {
@@ -3143,6 +3301,19 @@
         ],
         "anlass": "schnittstelle",
         "relevanz": "Davon hängt ab, ob eine Telematikeinheit und welche Diagnosedaten vorzusehen sind."
+      },
+      {
+        "id": "K22",
+        "frage": "Soll der Bagger eine anzeigende oder teilautomatische Maschinensteuerung erhalten?",
+        "element_ids": [
+          "E85",
+          "E119"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Sensorik an der Grabausrüstung, Positionsbestimmung, Steuergeräte und die Ansteuerung des Hauptsteuerventils ab.",
+        "variante_ids": [
+          "V9"
+        ]
       },
       {
         "id": "K15",
@@ -3373,6 +3544,18 @@
         ]
       },
       {
+        "id": "R17",
+        "element_ids": [
+          "E85",
+          "E119"
+        ],
+        "thema": "Grabgenauigkeit",
+        "kenngroessen": [
+          "Höhengenauigkeit der Schneide",
+          "Positionsgenauigkeit"
+        ]
+      },
+      {
         "id": "R12",
         "element_ids": [
           "E89",
@@ -3477,6 +3660,8 @@
     "Recherche Zulassung: Zulassungsfreiheit selbstfahrender Arbeitsmaschinen nach FZV § 3; die Seite war in diesem Lauf nicht abrufbar (Verbindungsabbruch).",
     "Recherche Fachliteratur: Fahrantrieb, Bremsen und Lenkung von Mobil- und Raupenbaggern, etwa Kunze, Göhring, Jacob: Baumaschinen (Vieweg), um die hergeleiteten Absätze P8, P11 und P12 zu belegen.",
     "Recherche Elektrifizierung: Aufbau batterieelektrischer Bagger mit Traktionsbatterie, Ladeeinrichtung und Batterietemperierung (Suchbegriff: batterieelektrischer Bagger Hochvolt Aufbau); der MDPI-Übersichtsartikel zu hybriden Baumaschinen (Energies 12, 2024) war in diesem Lauf nicht abrufbar (Zugriff verweigert).",
-    "Recherche Ausstattung: Vorsteuersperre, Leitungsbruchsicherungsventile, Zentralschmieranlage und Schleifring der Drehdurchführung (Suchbegriff: Hydraulikbagger Rohrbruchsicherung Vorsteuersperre Aufbau), um P17, P20 und P24 zu belegen."
+    "Recherche Ausstattung: Vorsteuersperre, Leitungsbruchsicherungsventile, Zentralschmieranlage und Schleifring der Drehdurchführung (Suchbegriff: Hydraulikbagger Rohrbruchsicherung Vorsteuersperre Aufbau), um P17, P20 und P24 zu belegen.",
+    "Recherche Maschinensteuerung: Aufbau anzeigender und teilautomatischer Baggersteuerungen mit Neigungs- und Winkelsensoren und satellitengestützter Positionsbestimmung (Suchbegriff: Maschinensteuerung Bagger GNSS Neigungssensor), um den Satz in P18 zu belegen.",
+    "Recherche Elektrifizierung: Einbaulage der Traktionsbatterie im Oberwagen batterieelektrischer Bagger, um die Annahme in P10 zu belegen."
   ]
 }

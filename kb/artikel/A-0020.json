@@ -198,7 +198,7 @@
             ],
             "schluss": "Fahrzeugstruktur und Fahrwerk bestehen aus Rahmen, Fahrwerk mit Rädern und Reifen sowie Federung und den Anbauteilen; der Lastpfad endet an den Radaufstandsflächen."
           },
-          "sicherheit": "mittel",
+          "sicherheit": "gering",
           "aussagetyp": "loesung",
           "herangezogene_artikel_ids": []
         },
@@ -253,7 +253,7 @@
         },
         {
           "absatz_id": "P9",
-          "text": "Das Antriebssystem gliedert sich in Tretantrieb, Elektrischer Hilfsantrieb und Kraftübertragung. Der Tretantrieb aus Tretkurbeln, Pedalen und Tretlagerwelle wandelt Muskelkraft in Drehmoment. Im Elektrischen Hilfsantrieb speist die Motorsteuerung die Traktionsmaschine aus der Traktionsbatterie und schützt sie vor Überlast; beim Mittelmotor bilden beide mit einem untersetzenden Getriebe die Antriebseinheit. Die Kraftübertragung führt das summierte Moment über Kettentrieb oder Zahnriemen, Gangschaltung und Freilauf zum Hinterrad; ein Nabenmotor greift direkt am Laufrad an. Das Sollmoment kommt vom Fahrzeugmanagement.",
+          "text": "Das Antriebssystem gliedert sich in Tretantrieb, Elektrischer Hilfsantrieb und Kraftübertragung. Der Tretantrieb aus Tretkurbeln, Pedalen und Tretlagerwelle wandelt Muskelkraft in Drehmoment. Im Elektrischen Hilfsantrieb speist die Motorsteuerung die Traktionsmaschine aus der Traktionsbatterie und schützt sie vor Überlast; beim Mittelmotor bilden beide mit einem untersetzenden Getriebe die Antriebseinheit. Die Kraftübertragung führt das summierte Moment über Kettentrieb oder Zahnriemen, Gangschaltung und Freilauf (Zahnriemen nur mit Nabenschaltung) zum Hinterrad; ein Nabenmotor greift direkt am Laufrad an. Das Sollmoment kommt vom Fahrzeugmanagement.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -263,9 +263,10 @@
               "Q10 Abschnitt Mittelmotoren (schnelllaufender Motor mit ins Langsame übersetzendem Getriebe; Zahnriemen parallel zur Kette)",
               "Q10 Abschnitt Motorsteuerung (Betrieb des Motors, Absicherung vor Überlastung)",
               "Ein bürstenloser Motor braucht eine elektronische Kommutierung aus der Gleichspannung der Batterie",
-              "Rollen ohne Mittreten erfordert einen Freilauf zwischen Pedalen und Hinterrad"
+              "Rollen ohne Mittreten erfordert einen Freilauf zwischen Pedalen und Hinterrad",
+              "Ein Zahnriemen lässt sich nicht seitlich zwischen Ritzeln umlegen und ist daher nicht mit einer Kettenschaltung kombinierbar"
             ],
-            "schluss": "Das Antriebssystem besteht aus Tretantrieb, Elektrischem Hilfsantrieb mit Traktionsmaschine und Motorsteuerung sowie Kraftübertragung mit Kettentrieb, Gangschaltung und Freilauf."
+            "schluss": "Das Antriebssystem besteht aus Tretantrieb, Elektrischem Hilfsantrieb mit Traktionsmaschine, Motorsteuerung und Getriebe sowie Kraftübertragung mit Kettentrieb, Gangschaltung und Freilauf."
           },
           "sicherheit": "mittel",
           "aussagetyp": "loesung",
@@ -306,7 +307,7 @@
             ],
             "schluss": "Das Energieversorgungssystem gliedert sich in Batteriesystem mit Traktionsbatterie, Batteriemanagement und Akkuhalterung, Ladeeinrichtung und optionale Lichtmaschine."
           },
-          "sicherheit": "mittel",
+          "sicherheit": "gering",
           "aussagetyp": "loesung",
           "herangezogene_artikel_ids": []
         }
@@ -390,21 +391,32 @@
         },
         {
           "absatz_id": "P16",
-          "text": "Das Bremssystem verzögert das E-Bike und hält es fest. Die Betriebsbremse besteht aus der Bremsbetätigung mit Bremshebeln und Bowdenzug oder Hydraulikleitung, bei der Rücktrittbremse über die Pedale, sowie aus Vorderradbremse und Hinterradbremse als Felgen-, Scheiben- oder Rücktrittbremse. Ein Bremssensor meldet die Betätigung an das Fahrzeugmanagement, das die Unterstützung abschaltet. Die Bremsbauart bestimmt Bremsflanken an den Felgen oder Scheibenaufnahmen an den Naben und Sattelaufnahmen an Gabel und Rahmen.",
+          "text": "Das Bremssystem verzögert das E-Bike und hält es fest. Die Betriebsbremse besteht aus der Bremsbetätigung mit Bremshebeln und Bowdenzug oder Hydraulikleitung, bei der Rücktrittbremse über die Pedale, sowie aus Vorderradbremse und Hinterradbremse als Felgen-, Scheiben- oder Rücktrittbremse. Optional meldet ein Bremssensor die Betätigung an das Fahrzeugmanagement, das die Unterstützung abschaltet, verbreitet vor allem bei Antrieben mit Bewegungssensor. Die Bremsbauart bestimmt Bremsflanken an den Felgen oder Scheibenaufnahmen an den Naben und Sattelaufnahmen an Gabel und Rahmen.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "P14",
               "P15",
-              "Q10 Abschnitt Gesetzlicher Rahmen (Elektroantrieb setzt beim Bremsen aus)",
+              "Q10 Abschnitt Gesetzlicher Rahmen (Elektroantrieb setzt in vielen Ländern beim Bremsen aus)",
+              "P1 und P2 (Abschaltung bei Tretende und Geschwindigkeitsgrenze; keine Abschaltung beim Bremsen verlangt)",
+              "P20 (Bewegungssensoren erfassen nur, ob pedaliert wird, nicht die Tretkraft)",
               "Zwei getrennt betätigte Bremsen erhalten bei Ausfall einer Bremse eine Restbremswirkung",
               "Eine Felgenbremse wirkt auf die Felge, eine Scheibenbremse auf eine an der Nabe befestigte Scheibe"
             ],
-            "schluss": "Das Bremssystem besteht aus einer zweikreisigen Betriebsbremse mit Bremsbetätigung, Vorderrad- und Hinterradbremse sowie einem Bremssensor zur Abschaltung der Unterstützung."
+            "schluss": "Das Bremssystem besteht aus einer zweikreisigen Betriebsbremse mit Bremsbetätigung, Vorderrad- und Hinterradbremse sowie einem optionalen Bremssensor zur Abschaltung der Unterstützung, der vor allem bei Antrieben mit Bewegungssensor verbreitet ist."
           },
           "sicherheit": "mittel",
           "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P32",
+          "text": "Als Variante erhält die hydraulische Scheibenbremse ein Antiblockiersystem: Raddrehzahlsensoren erkennen drohendes Blockieren, ein Hydraulikmodulator begrenzt den Bremsdruck; versorgt wird es aus der Traktionsbatterie, angebunden am Bussystem.",
+          "begruendung": "modellwissen",
+          "belege": [],
+          "sicherheit": "gering",
+          "aussagetyp": "variante",
           "herangezogene_artikel_ids": []
         }
       ]
@@ -546,7 +558,7 @@
         },
         {
           "absatz_id": "P24",
-          "text": "Fahrzeugsteuerung und Information bilden die logische Ebene. Das Fahrzeugmanagement berechnet aus Tretsensor, Geschwindigkeitssensor, Bremssensor, Unterstützungsstufe und Batteriezustand das Sollmoment und erzwingt die Abschaltgrenzen; physisch liegt es meist im Steuergerät der Antriebseinheit. Die Diagnose speichert Fehler- und Zustandsdaten für die Werkstatt. Eine optionale Telematikeinheit koppelt das E-Bike mit einem Smartphone für Navigation und digitale Wegfahrsperre.",
+          "text": "Fahrzeugsteuerung und Information bilden die logische Ebene. Das Fahrzeugmanagement berechnet aus Tretsensor, Geschwindigkeitssensor, gegebenenfalls Bremssensor, Unterstützungsstufe und Batteriezustand das Sollmoment und erzwingt die Abschaltgrenzen; physisch liegt es beim Mittelmotor im Steuergerät der Antriebseinheit, beim Nabenmotor in einem separaten Steuergerät. Die Diagnose speichert Fehler- und Zustandsdaten für die Werkstatt. Eine optionale Telematikeinheit koppelt das E-Bike mit einem Smartphone für Navigation und digitale Wegfahrsperre.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -554,6 +566,8 @@
               "P22",
               "P23",
               "P16",
+              "P9",
+              "P21",
               "Q9 Abschnitte Vernetzung (Navigations-App, digitale Wegfahrsperren) und Den Akku eines E-Bikes testen (Prüfung durch Fachwerkstätten)",
               "Abschaltgrenzen müssen an einer Stelle aus allen Sensorsignalen manipulationssicher durchgesetzt werden"
             ],
@@ -601,13 +615,14 @@
         },
         {
           "absatz_id": "P27",
-          "text": "Beleuchtung und Sicht dienen dem Sehen und Gesehenwerden. Lichttechnische Einrichtungen sind Scheinwerfer, Schlussleuchte und passive Rückstrahler; die Glocke gibt Schallzeichen. Speist die Antriebseinheit das Licht aus der Traktionsbatterie, müssen Batteriemanagement und Motorsteuerung eine Lichtreserve vorhalten; eine Lichtmaschine macht das Licht vom Akku unabhängig. Für S-Pedelecs gelten als Kleinkrafträder die Beleuchtungsvorschriften für Krafträder.",
+          "text": "Beleuchtung und Sicht dienen dem Sehen und Gesehenwerden. Lichttechnische Einrichtungen sind Scheinwerfer, Schlussleuchte und passive Rückstrahler; die Glocke gibt Schallzeichen. Speist die Antriebseinheit das Licht aus der Traktionsbatterie, müssen Batteriemanagement und Motorsteuerung eine Lichtreserve vorhalten; eine Lichtmaschine macht das Licht vom Akku unabhängig. Für S-Pedelecs als Kleinkrafträder gelten die Fahrradvorschriften für lichttechnische Einrichtungen nicht, sondern die Vorschriften für Kraftfahrzeuge ihrer Klasse.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "P25",
               "P26",
+              "P2",
               "P3",
               "Eine Reserve nach Abschaltung des Antriebs kann nur die Instanz sicherstellen, die die Entladung des Akkus begrenzt",
               "Kleinkrafträder fallen nicht unter die Vorschriften für Fahrräder"
@@ -654,7 +669,7 @@
       "absaetze": [
         {
           "absatz_id": "P29",
-          "text": "In SysML bildet der Block E-Bike das Gesamtsystem mit den Hauptsystemen als Bestandteilen. Dekompositionspfade sind E-Bike → Antriebssystem → Elektrischer Hilfsantrieb → Traktionsmaschine, E-Bike → Energieversorgungssystem → Batteriesystem → Batteriemanagement und E-Bike → Elektrik und Elektronik → Sensorik → Tretsensor. Ports bilden die mechanischen Schnittstellen für Momente und Lasten, die elektrischen für Akku-, Lade- und Lichtstrom, die hydraulische Bremsleitung und das Bussystem ab; Konnektoren verbinden sie. Block Definition Diagrams zeigen die Dekomposition, Internal Block Diagrams die Flüsse, Aktivitätsdiagramme die Unterstützungsregelung und Zustandsautomaten Betriebsarten wie Unterstützung, Schiebehilfe und Abschaltung.",
+          "text": "In SysML bildet der Block E-Bike das Gesamtsystem mit den Hauptsystemen als Bestandteilen. Dekompositionspfade sind E-Bike → Antriebssystem → Elektrischer Hilfsantrieb → Traktionsmaschine, E-Bike → Energieversorgungssystem → Batteriesystem → Batteriemanagement und E-Bike → Elektrik und Elektronik → Sensorik → Tretsensor. Die Antriebseinheit des Mittelmotors ist eine physische Baugruppe, der Traktionsmaschine, Getriebe, Motorsteuerung, Tretsensor und Fahrzeugmanagement per Allokation zugeordnet werden. Ports bilden die mechanischen Schnittstellen für Momente und Lasten, die elektrischen für Akku-, Lade- und Lichtstrom, die hydraulische Bremsleitung und das Bussystem ab; Konnektoren verbinden sie. Block Definition Diagrams zeigen die Dekomposition, Internal Block Diagrams die Flüsse, Aktivitätsdiagramme die Unterstützungsregelung und Zustandsautomaten Betriebsarten wie Unterstützung, Schiebehilfe und Abschaltung.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -681,7 +696,7 @@
       "absaetze": [
         {
           "absatz_id": "P30",
-          "text": "Ladestrom fließt von der Ladeeinrichtung in die Traktionsbatterie, Akkustrom über den Leitungssatz zur Motorsteuerung und Traktionsmaschine sowie zu den lichttechnischen Einrichtungen. Tret- und Motormoment fließen über die Kraftübertragung zum Hinterrad, das Reaktionsmoment stützt sich am Rahmen ab. Die Bremsbetätigung wirkt auf Vorderradbremse und Hinterradbremse. Tretsensor, Geschwindigkeitssensor, Bremssensor, Bedieneinheit und Batteriemanagement melden an das Fahrzeugmanagement, dieses gibt Sollmomente an die Motorsteuerung und Daten an Display, Diagnose und Telematikeinheit. Lenkmoment fließt über Steuersatz und Vorderradgabel zum Vorderrad; Sattel und Gepäckträger leiten Lasten in den Rahmen.",
+          "text": "Ladestrom fließt von der Ladeeinrichtung in die Traktionsbatterie, Akkustrom über den Leitungssatz zur Motorsteuerung und Traktionsmaschine sowie zu den lichttechnischen Einrichtungen. Tret- und Motormoment fließen über Getriebe und Kraftübertragung zum Hinterrad, das Reaktionsmoment stützt sich am Rahmen ab. Die Bremsbetätigung wirkt auf Vorderradbremse und Hinterradbremse. Tretsensor, Geschwindigkeitssensor, gegebenenfalls Bremssensor, Bedieneinheit und Batteriemanagement melden an das Fahrzeugmanagement, dieses gibt Sollmomente an die Motorsteuerung und Daten an Display, Diagnose und Telematikeinheit. Lenkmoment fließt über Steuersatz und Vorderradgabel zum Vorderrad; Sattel und Gepäckträger leiten Lasten in den Rahmen.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -711,7 +726,7 @@
       "absaetze": [
         {
           "absatz_id": "P31",
-          "text": "Rahmen und Fahrwerk tragen die Fahrzeuglasten, Räder und Reifen bewegen das Fahrzeug fort. Tretantrieb, Traktionsmaschine und Motorsteuerung erzeugen Antriebsleistung, die Kraftübertragung überträgt das Drehmoment. Die Traktionsbatterie speichert Energie, die Ladeeinrichtung lädt die Traktionsbatterie, der Leitungssatz verteilt elektrische Energie. Das Lenksystem lenkt das Fahrzeug, die Betriebsbremse verzögert es und hält es fest, ein getriebeloser Nabenmotor gewinnt Bremsenergie zurück. Bedieneinheit, Tretsensor und Bremssensor erfassen Fahrereingaben, das Display zeigt Fahrerinformationen an. Das Fahrzeugmanagement regelt die Tretunterstützung; Batteriemanagement und Diagnose überwachen den Fahrzeugzustand; Batteriemanagement und Motorsteuerung regeln die Betriebstemperatur; Bussystem und Telematikeinheit übertragen Daten. Ladung aufnehmen ist Aufgabe des Gepäckträgers, Anhänger ziehen ist Aufgabe der Anhängevorrichtung. Der Scheinwerfer leuchtet die Umgebung aus, Schlussleuchte und Rückstrahler geben Lichtsignale ab, die Glocke Schallzeichen.",
+          "text": "Rahmen und Fahrwerk tragen die Fahrzeuglasten, Räder und Reifen bewegen das Fahrzeug fort. Tretantrieb, Traktionsmaschine und Motorsteuerung erzeugen Antriebsleistung, die Kraftübertragung überträgt das Drehmoment. Die Traktionsbatterie speichert Energie, die Ladeeinrichtung lädt die Traktionsbatterie, der Leitungssatz verteilt elektrische Energie. Das Lenksystem lenkt das Fahrzeug, die Betriebsbremse verzögert es und hält es fest, ein getriebeloser Nabenmotor gewinnt Bremsenergie zurück. Bedieneinheit, Tretsensor und der optionale Bremssensor erfassen Fahrereingaben, das Display zeigt Fahrerinformationen an. Das Fahrzeugmanagement regelt die Tretunterstützung; Batteriemanagement und Diagnose überwachen den Fahrzeugzustand; Batteriemanagement und Motorsteuerung regeln die Betriebstemperatur; Bussystem und Telematikeinheit übertragen Daten. Ladung aufnehmen ist Aufgabe des Gepäckträgers, Anhänger ziehen ist Aufgabe der Anhängevorrichtung. Der Scheinwerfer leuchtet die Umgebung aus, Schlussleuchte und Rückstrahler geben Lichtsignale ab, die Glocke Schallzeichen.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -753,6 +768,7 @@
       {"id": "E10", "name": "Elektrischer Hilfsantrieb", "typ": "subsystem", "eltern_id": "E8", "absatz_ids": ["P4", "P9"]},
       {"id": "E11", "name": "Traktionsmaschine", "typ": "komponente", "eltern_id": "E10", "absatz_ids": ["P9"]},
       {"id": "E12", "name": "Motorsteuerung", "typ": "komponente", "eltern_id": "E10", "absatz_ids": ["P9", "P17", "P22"]},
+      {"id": "E57", "name": "Getriebe", "typ": "komponente", "eltern_id": "E10", "absatz_ids": ["P9", "P29"]},
       {"id": "E13", "name": "Kraftübertragung", "typ": "subsystem", "eltern_id": "E8", "absatz_ids": ["P9"]},
       {"id": "E14", "name": "Kettentrieb", "typ": "komponente", "eltern_id": "E13", "absatz_ids": ["P9"]},
       {"id": "E15", "name": "Gangschaltung", "typ": "komponente", "eltern_id": "E13", "absatz_ids": ["P9"]},
@@ -768,12 +784,13 @@
       {"id": "E25", "name": "Lenker mit Vorbau", "typ": "komponente", "eltern_id": "E24", "absatz_ids": ["P13"]},
       {"id": "E26", "name": "Steuersatz", "typ": "komponente", "eltern_id": "E24", "absatz_ids": ["P13"]},
       {"id": "E27", "name": "Vorderradgabel", "typ": "komponente", "eltern_id": "E24", "absatz_ids": ["P5", "P6", "P13"]},
-      {"id": "E28", "name": "Bremssystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P16", "P28"], "kategorie": "bremse"},
+      {"id": "E28", "name": "Bremssystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P16", "P32", "P28"], "kategorie": "bremse"},
       {"id": "E29", "name": "Betriebsbremse", "typ": "subsystem", "eltern_id": "E28", "absatz_ids": ["P16"]},
       {"id": "E30", "name": "Bremsbetätigung", "typ": "komponente", "eltern_id": "E29", "absatz_ids": ["P16"]},
       {"id": "E31", "name": "Vorderradbremse", "typ": "komponente", "eltern_id": "E29", "absatz_ids": ["P16"]},
       {"id": "E32", "name": "Hinterradbremse", "typ": "komponente", "eltern_id": "E29", "absatz_ids": ["P16"]},
       {"id": "E33", "name": "Bremssensor", "typ": "komponente", "eltern_id": "E28", "absatz_ids": ["P16", "P24"]},
+      {"id": "E58", "name": "Antiblockiersystem", "typ": "komponente", "eltern_id": "E28", "absatz_ids": ["P32"]},
       {"id": "E34", "name": "Cockpit", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P18", "P28"], "kategorie": "bedienraum"},
       {"id": "E35", "name": "Sattel mit Sattelstütze", "typ": "komponente", "eltern_id": "E34", "absatz_ids": ["P18"]},
       {"id": "E36", "name": "Bedieneinheit", "typ": "komponente", "eltern_id": "E34", "absatz_ids": ["P18"]},
@@ -828,7 +845,8 @@
       {"id": "S3", "von": "E42", "nach": "E12", "art": "elektrisch", "medium": "Gleichstrom der Traktionsbatterie", "absatz_ids": ["P21", "P30"], "schnittstelle": "Versorgungsanschluss der Antriebseinheit"},
       {"id": "S4", "von": "E12", "nach": "E11", "art": "elektrisch", "medium": "Wicklungsströme", "absatz_ids": ["P9", "P30"]},
       {"id": "S5", "von": "E9", "nach": "E13", "art": "mechanisch", "medium": "Tretmoment", "absatz_ids": ["P9", "P30"]},
-      {"id": "S6", "von": "E11", "nach": "E13", "art": "mechanisch", "medium": "Motormoment", "absatz_ids": ["P9", "P30"]},
+      {"id": "S6", "von": "E11", "nach": "E57", "art": "mechanisch", "medium": "Motormoment", "absatz_ids": ["P9", "P30"]},
+      {"id": "S32", "von": "E57", "nach": "E13", "art": "mechanisch", "medium": "untersetztes Motormoment", "absatz_ids": ["P9", "P30"]},
       {"id": "S7", "von": "E13", "nach": "E5", "art": "mechanisch", "medium": "Antriebsmoment am Hinterrad", "absatz_ids": ["P9", "P30"], "schnittstelle": "Hinterradnabe mit Freilauf"},
       {"id": "S8", "von": "E11", "nach": "E3", "art": "mechanisch", "medium": "Reaktionsmoment", "absatz_ids": ["P6", "P30"], "schnittstelle": "Motoraufnahme im Tretlagerbereich oder Drehmomentstütze"},
       {"id": "S9", "von": "E30", "nach": "E31", "art": "hydraulisch", "medium": "Bremsflüssigkeit, bei Seilzugbremsen Zugkraft im Bowdenzug", "absatz_ids": ["P16", "P30"]},
@@ -885,7 +903,7 @@
           {"element_id": "E48", "beschreibung": "Abschaltgrenzen der Unterstützung und Freigabe des Gashebels hängen von der Klasse ab."},
           {"element_id": "E11", "beschreibung": "Zulässige Nenndauerleistung der Traktionsmaschine richtet sich nach der Klasse."},
           {"element_id": "E36", "beschreibung": "Beim E-Bike mit Gashebel kommt ein Gasgriff zur Bedieneinheit hinzu."},
-          {"element_id": "E51", "beschreibung": "Beim S-Pedelec gelten die Beleuchtungsvorschriften für Krafträder statt der für Fahrräder."},
+          {"element_id": "E51", "beschreibung": "Beim S-Pedelec gelten die Vorschriften über lichttechnische Einrichtungen an Fahrrädern nicht; die Ausrüstung richtet sich nach den Vorschriften für Kraftfahrzeuge seiner Klasse."},
           {"element_id": "E28", "beschreibung": "Höhere Unterstützungsgeschwindigkeit erhöht die Anforderungen an die Bremswirkung."}
         ],
         "absatz_ids": ["P1", "P2", "P3", "P27"]
@@ -899,7 +917,8 @@
         "auswirkungen": [
           {"element_id": "E48", "beschreibung": "Gleichmäßige Unterstützung bei Bewegungssensor, kraftproportionale Regelung bei Drehmomentsensor."},
           {"element_id": "E9", "beschreibung": "Beim Drehmomentsensor erhält die Tretlagerwelle eine Messstelle."},
-          {"element_id": "E10", "beschreibung": "Beim Mittelmotor ist der Drehmomentsensor Teil der Antriebseinheit."}
+          {"element_id": "E10", "beschreibung": "Beim Mittelmotor ist der Drehmomentsensor Teil der Antriebseinheit."},
+          {"element_id": "E33", "beschreibung": "Beim Bewegungssensor ist ein Bremssensor zur schnellen Abschaltung nötig, beim Drehmomentsensor optional."}
         ],
         "absatz_ids": ["P20", "P21", "P22"]
       },
@@ -934,15 +953,17 @@
         "id": "V6",
         "element_id": "E29",
         "bezeichnung": "Bremsbauart",
-        "alternativen": ["Felgenbremse", "Scheibenbremse, hydraulisch oder mechanisch", "Rücktrittbremse in Kombination mit Felgenbremse"],
+        "alternativen": ["Felgenbremse", "Scheibenbremse, hydraulisch oder mechanisch", "Rücktrittbremse in Kombination mit Felgenbremse", "hydraulische Scheibenbremse mit Antiblockiersystem"],
         "auswahlkriterien": ["Bremswirkung bei Fahrzeugmasse und Geschwindigkeit", "Wartungsaufwand", "Kosten", "Bediengewohnheiten der Zielgruppe"],
         "auswirkungen": [
-          {"element_id": "E5", "beschreibung": "Felgen mit Bremsflanke oder Bremsscheibenaufnahmen an den Naben; Rücktrittbremse in der Hinterradnabe."},
+          {"element_id": "E5", "beschreibung": "Felgen mit Bremsflanke oder Bremsscheibenaufnahmen an den Naben; Rücktrittbremse in der Hinterradnabe; beim Antiblockiersystem Sensorscheiben an den Rädern."},
           {"element_id": "E27", "beschreibung": "Scheibenbremsen erfordern eine Bremssattelaufnahme an der Vorderradgabel."},
           {"element_id": "E3", "beschreibung": "Bremsaufnahme am Hinterbau des Rahmens."},
-          {"element_id": "E9", "beschreibung": "Bei Rücktrittbremse wird über die Pedale gebremst."}
+          {"element_id": "E9", "beschreibung": "Bei Rücktrittbremse wird über die Pedale gebremst."},
+          {"element_id": "E43", "beschreibung": "Beim Antiblockiersystem wird das Bremssystem an das Bussystem angebunden."},
+          {"element_id": "E19", "beschreibung": "Beim Antiblockiersystem versorgt die Traktionsbatterie zusätzlich die Bremsregelung."}
         ],
-        "absatz_ids": ["P14", "P15", "P16"]
+        "absatz_ids": ["P14", "P15", "P16", "P32"]
       },
       {
         "id": "V7",
@@ -952,8 +973,8 @@
         "auswahlkriterien": ["Übersetzungsbereich", "Wartung und Verschleiß", "Kombinierbarkeit mit der Motorposition"],
         "auswirkungen": [
           {"element_id": "E11", "beschreibung": "Ein Hinterradnabenmotor ist im Regelfall nur mit Kettenschaltung kombinierbar."},
-          {"element_id": "E14", "beschreibung": "Ein Zahnriemen anstelle der Kette setzt eine Schaltung ohne Kettenumwerfer voraus."},
-          {"element_id": "E3", "beschreibung": "Ausfallenden und Hinterbau richten sich nach Schaltung und Riemenführung."}
+          {"element_id": "E14", "beschreibung": "Ein Zahnriemen anstelle der Kette ist nur mit Nabenschaltung oder einem Getriebe in der Antriebseinheit kombinierbar, nicht mit einer Kettenschaltung."},
+          {"element_id": "E3", "beschreibung": "Ausfallenden und Hinterbau richten sich nach Schaltung und Riemenführung; ein Zahnriemen erfordert einen im Hinterbau teilbaren Rahmen zum Einlegen des Riemens."}
         ],
         "absatz_ids": ["P8", "P9"]
       },
@@ -975,7 +996,7 @@
     "klaerungsfragen": [
       {"id": "K1", "frage": "Soll das E-Bike als Pedelec nach Fahrradrecht, als S-Pedelec mit Einstufung als Kleinkraftrad oder als E-Bike mit Gashebel ausgelegt werden?", "element_ids": ["E1", "E47"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Abschaltgrenzen, Motorleistung, Bedienung, Beleuchtungsumfang und die Zulassungsanforderungen ab.", "variante_ids": ["V2"]},
       {"id": "K2", "frage": "Soll die Traktionsmaschine als Mittelmotor am Tretlager oder als Nabenmotor im Vorder- oder Hinterrad angeordnet werden?", "element_ids": ["E8", "E11"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Rahmenaufnahme, Gangschaltung, Sensorik und Lenkverhalten ab.", "variante_ids": ["V1"]},
-      {"id": "K3", "frage": "Soll die Unterstützung kraftproportional über einen Drehmomentsensor oder gleichmäßig über einen Bewegungssensor geregelt werden?", "element_ids": ["E41", "E44", "E48"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Regelstrategie, Sensoranordnung an der Tretlagerwelle und Kosten ab.", "variante_ids": ["V3"]},
+      {"id": "K3", "frage": "Soll die Unterstützung kraftproportional über einen Drehmomentsensor oder gleichmäßig über einen Bewegungssensor geregelt werden?", "element_ids": ["E41", "E44", "E48"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Regelstrategie, Sensoranordnung an der Tretlagerwelle, die Notwendigkeit eines Bremssensors und Kosten ab.", "variante_ids": ["V3"]},
       {"id": "K4", "frage": "Wo soll die Traktionsbatterie untergebracht werden, und muss sie zum Laden entnehmbar sein?", "element_ids": ["E17", "E18"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Rahmenform, Gepäckträger, Akkuhalterung und Ladekonzept ab.", "variante_ids": ["V4"]},
       {"id": "K5", "frage": "Soll die Beleuchtung aus der Traktionsbatterie, über eine Lichtmaschine oder über den Antriebsmotor versorgt werden?", "element_ids": ["E51", "E52", "E20"], "anlass": "schnittstelle", "relevanz": "Davon hängen Lichtreserve im Batteriemanagement, Lichtausgang der Motorsteuerung und die Vorderradnabe ab.", "variante_ids": ["V5"]},
       {"id": "K6", "frage": "Welche Bremsbauart sollen Vorder- und Hinterrad erhalten, und wird eine Rücktrittbremse gewünscht?", "element_ids": ["E28", "E29"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Laufräder, Gabel- und Rahmenaufnahmen sowie die Bremsbetätigung ab.", "variante_ids": ["V6"]},
@@ -986,7 +1007,8 @@
       {"id": "K11", "frage": "Welche Zuladung soll der Gepäckträger tragen, und soll ein Fahrradanhänger gezogen werden können?", "element_ids": ["E38", "E39", "E40"], "anlass": "anforderung", "relevanz": "Davon hängen Auslegung von Rahmen und Bremsen sowie die Anhängevorrichtung ab."},
       {"id": "K12", "frage": "Soll das E-Bike vernetzt werden, etwa mit Smartphone-Anbindung, digitaler Wegfahrsperre und Ferndiagnose?", "element_ids": ["E47", "E50"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Telematikeinheit, Datenschnittstellen und die Diagnosefunktionen ab."},
       {"id": "K13", "frage": "Gegen welche Witterung und welche Reinigungsverfahren müssen Leitungssatz und Steckverbinder geschützt sein?", "element_ids": ["E41", "E42"], "anlass": "betrieb", "relevanz": "Davon hängen Steckverbinderbauart, Leitungsführung und Abdichtung ab."},
-      {"id": "K14", "frage": "Welche Reichweite mit Unterstützung wird für das Einsatzprofil gefordert, und wie lange darf ein Ladevorgang dauern?", "element_ids": ["E17", "E19", "E22"], "anlass": "anforderung", "relevanz": "Davon hängen Energieinhalt, Masse und Bauraum der Traktionsbatterie sowie das Ladegerät ab."}
+      {"id": "K14", "frage": "Welche Reichweite mit Unterstützung wird für das Einsatzprofil gefordert, und wie lange darf ein Ladevorgang dauern?", "element_ids": ["E17", "E19", "E22"], "anlass": "anforderung", "relevanz": "Davon hängen Energieinhalt, Masse und Bauraum der Traktionsbatterie sowie das Ladegerät ab."},
+      {"id": "K15", "frage": "Für welches zulässige Gesamtgewicht aus Fahrer, Fahrzeug und Gepäck soll das E-Bike ausgelegt werden?", "element_ids": ["E2", "E28"], "anlass": "anforderung", "relevanz": "Davon hängen Auslegung von Rahmen, Gabel, Laufrädern und Bremsbauart ab."}
     ],
     "anforderungsthemen": [
       {"id": "R1", "element_ids": ["E1"], "thema": "Rechtliche Fahrzeugklasse", "kenngroessen": ["Nenndauerleistung des Hilfsantriebs", "Abschaltgeschwindigkeit der Unterstützung", "Höchstgeschwindigkeit der Anfahr- und Schiebehilfe", "bauartbedingte Höchstgeschwindigkeit"], "regelwerke": [
@@ -997,7 +1019,7 @@
       ]},
       {"id": "R2", "element_ids": ["E2", "E3"], "thema": "Strukturfestigkeit", "kenngroessen": ["zulässiges Gesamtgewicht", "Festigkeit von Rahmen und Gabel", "Rahmensteifigkeit"]},
       {"id": "R3", "element_ids": ["E8", "E11"], "thema": "Unterstützungsverhalten", "kenngroessen": ["Nenndauerleistung", "maximales Drehmoment", "Unterstützungsverhältnis", "Ansprechverhalten bei Tretbeginn"]},
-      {"id": "R4", "element_ids": ["E17", "E19"], "thema": "Reichweite und Batteriesicherheit", "kenngroessen": ["Energieinhalt der Traktionsbatterie", "Reichweite mit Unterstützung", "Ladedauer", "Zyklenfestigkeit", "Betriebstemperaturbereich"]},
+      {"id": "R4", "element_ids": ["E17", "E19"], "thema": "Reichweite und Batteriesicherheit", "kenngroessen": ["Energieinhalt der Traktionsbatterie", "Reichweite mit Unterstützung", "Ladedauer", "Zyklenfestigkeit", "Betriebstemperaturbereich", "Schutz gegen Kurzschluss und Überladung", "Verhalten bei Überhitzung und thermischem Durchgehen", "Schutz gegen Eindringen von Wasser in den Akku", "mechanische Festigkeit der Akkuhalterung"]},
       {"id": "R5", "element_ids": ["E24", "E25"], "thema": "Lenkfestigkeit und Lenkergonomie", "kenngroessen": ["Festigkeit der Verbindung von Lenker und Vorbau", "Lenkerbreite", "Lenkerhöhe"]},
       {"id": "R6", "element_ids": ["E28", "E29"], "thema": "Bremsleistung", "kenngroessen": ["Bremsverzögerung", "Bremsweg", "Dosierbarkeit der Bremswirkung"], "regelwerke": [
         {"bezeichnung": "StVZO § 65 Abs. 1 und 2 (Deutschland, Fahrräder einschließlich Pedelecs)", "quellen_id": "Q3", "fundstelle": "§ 65 Abs. 1 Satz 2 und Abs. 2"}
@@ -1025,7 +1047,7 @@
     "Recherchebedarf: gesetze-im-internet.de setzte die Verbindung für die StVZO-Paragrafen zurück; die Texte wurden über buzer.de gelesen. Abgleich mit der amtlichen Fassung auf gesetze-im-internet.de.",
     "Recherchebedarf: Fachliteratur zu Rahmen- und Federungsbauweisen von E-Bikes (Suchbegriff Pedelec Rahmenbauform Federung Fachbuch E-Bike-Technik), zur Belegung von P5.",
     "Recherchebedarf: Quelle zu Batteriemanagement, Akkuhalterung und Ladegerät von Pedelec-Akkus (Suchbegriff Pedelec Akku Batteriemanagementsystem Sicherheit Ladegerät), zur Belegung von P11.",
-    "Recherchebedarf: Quelle zu Antiblockiersystemen und Assistenzsystemen an E-Bikes (Suchbegriff E-Bike ABS Radar Assistenzsystem), um den Entfall der Kategorie Fahrerassistenz und Sicherheit zu prüfen.",
+    "Recherchebedarf: Quelle zu Antiblockiersystemen im Bremssystem von E-Bikes (Suchbegriff E-Bike ABS Hydraulikmodulator Raddrehzahlsensor), zur Belegung von P32 und Variante V6; ferner zu Assistenzsystemen an E-Bikes (Suchbegriff E-Bike Radar Assistenzsystem), um den Entfall der Kategorie Fahrerassistenz und Sicherheit zu prüfen.",
     "Recherchebedarf: Quelle zu Bus- und Steckverbindertechnik von E-Bike-Antriebssystemen (Suchbegriff E-Bike Antriebssystem CAN-Bus Display Steuergerät), zur Belegung von P21 und P24."
   ]
 }

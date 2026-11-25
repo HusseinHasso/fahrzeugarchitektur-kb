@@ -141,7 +141,7 @@
       "absaetze": [
         {
           "absatz_id": "P3",
-          "text": "Fahrzeugstruktur und Fahrwerk tragen die Fahrzeuglasten. Die Tragstruktur umfasst den Rahmen des Lkw-Fahrgestells, der Fahrerhaus, Antrieb, Energiespeicher und Aufbau aufnimmt, und die Heckklappe als hinteren Abschluss des Laderaums. Das Fahrwerk umfasst jede Achse mit Federung sowie Räder und Reifen, für enge Wohnstraßen auch eine gelenkte Nachlaufachse. Weil sich der Laderaum während der Tour füllt und Lifter oder Frontladergabel Lasten aufnehmen, ändert sich die Achslastverteilung laufend; Achsanordnung und Federung werden darauf abgestimmt, eine Luftfederung bezieht Druckluft aus den Neben- und Versorgungssystemen.",
+          "text": "Fahrzeugstruktur und Fahrwerk tragen die Fahrzeuglasten. Die Tragstruktur umfasst den Rahmen des Lkw-Fahrgestells, der Fahrerhaus, Antrieb, Energiespeicher und Aufbau aufnimmt, sowie die Heckklappe, die den Laderaum hinten verschließt, beim Hecklader die Schüttung trägt und zum Entleeren hydraulisch hochschwenkt. Das Fahrwerk umfasst jede Achse mit Federung sowie Räder und Reifen, für enge Wohnstraßen auch eine gelenkte Nachlaufachse. Weil sich der Laderaum während der Tour füllt und Lifter oder Frontladergabel Lasten aufnehmen, ändert sich die Achslastverteilung laufend; Achsanordnung und Federung werden darauf abgestimmt, eine Luftfederung bezieht Druckluft aus den Neben- und Versorgungssystemen.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -149,10 +149,9 @@
               "P1: Aufbau auf dem Fahrgestell eines Lastkraftwagens",
               "Q1: Abschnitt Müllfahrzeuge mit Frontlader (Container werden über das Fahrerhaus gehoben)",
               "Q9: Arbeitspaket 2, S. 27 (Hinterachslenkung)",
-              "P12: Pressschnecke an der Heckklappe; Zuordnungsliste der Glossarausgabe: Heckklappe gehört zur Fahrzeugstruktur",
-              "Lastpfad: jede am Rahmen befestigte Masse stützt sich über Federung, Achse und Räder auf der Fahrbahn ab; wachsende Zuladung und Hublasten verschieben die Achslasten"
+              "P12, P14, P26: Heckklappe mit Pressschnecke, Abschluss des Laderaums, hydraulisch bewegt", "Lastpfad: jede am Rahmen befestigte Masse stützt sich über Federung, Achse und Räder auf der Fahrbahn ab; wachsende Zuladung und Hublasten verschieben die Achslasten"
             ],
-            "schluss": "Das Hauptsystem gliedert sich in Tragstruktur mit Rahmen und Heckklappe sowie Fahrwerk; Achsanordnung und Federung folgen der im Betrieb wechselnden Beladung."
+            "schluss": "Das Hauptsystem gliedert sich in Tragstruktur mit Rahmen sowie Fahrwerk; Achsanordnung und Federung folgen der im Betrieb wechselnden Beladung."
           },
           "sicherheit": "mittel",
           "aussagetyp": "loesung",
@@ -240,7 +239,7 @@
         },
         {
           "absatz_id": "P8",
-          "text": "Das Lenksystem lenkt das Fahrzeug und hilft beim Manövrieren in Wendeanlagen. Die Lenkbetätigung umfasst Lenkrad und Lenksäule, die Lenkübertragung Lenkgetriebe, Lenkunterstützung und gegebenenfalls eine Nachlaufachslenkung. Die Lenkunterstützung muss beim Rangieren auch ohne laufenden Verbrennungsmotor wirken und wird dann elektrisch aus dem Hochvolt-Bordnetz angetrieben. Ob Links- oder Rechtslenker, folgt aus dem Ladesystem und verschiebt Bedienplatz, Spiegel und Kamerablickfelder.",
+          "text": "Das Lenksystem lenkt das Fahrzeug und hilft beim Manövrieren in Wendeanlagen. Die Lenkbetätigung umfasst Lenkrad und Lenksäule, die Lenkübertragung Lenkgetriebe, Lenkunterstützung und gegebenenfalls eine Nachlaufachslenkung. Beim konventionellen Fahrzeug treibt der Verbrennungsmotor die Lenkhilfepumpe; beim seriellen Hybrid und beim batterieelektrischen Fahrzeug wird die Lenkunterstützung elektrisch aus dem Hochvolt-Bordnetz angetrieben, damit sie auch bei stehendem Verbrennungsmotor wirkt. Ob Links- oder Rechtslenker, folgt aus dem Ladesystem und verschiebt Bedienplatz, Spiegel und Kamerablickfelder.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -248,9 +247,10 @@
               "P7",
               "Q2: Abschnitt 3.8, S. 26 (Rangieren, Zurücksetzen und Wenden im Wendehammer, Rückwärtsfahrt mit Schrittgeschwindigkeit)",
               "P5: ohne Verbrennungsmotor fehlt ein mechanischer Pumpenantrieb",
-              "Funktionsprinzip: ein Lenksystem besteht aus Eingabe, Übertragung und Kraftunterstützung"
+              "Funktionsprinzip: ein Lenksystem besteht aus Eingabe, Übertragung und Kraftunterstützung",
+              "Funktionsprinzip: ein vom Verbrennungsmotor angetriebener Pumpenantrieb liefert nur bei laufendem Motor Leistung"
             ],
-            "schluss": "Das Lenksystem gliedert sich in Lenkbetätigung und Lenkübertragung mit Lenkunterstützung und Nachlaufachslenkung; die Lenkerposition ist eine Variante."
+            "schluss": "Das Lenksystem gliedert sich in Lenkbetätigung und Lenkübertragung mit Lenkunterstützung und Nachlaufachslenkung; beim konventionellen Antrieb treibt der Verbrennungsmotor die Lenkunterstützung, bei seriellem Hybrid und batterieelektrischem Antrieb wird sie elektrisch aus dem Hochvolt-Bordnetz angetrieben; die Lenkerposition ist eine Variante."
           },
           "sicherheit": "mittel",
           "aussagetyp": "loesung",
@@ -335,7 +335,7 @@
         },
         {
           "absatz_id": "P13",
-          "text": "Die europäische Normreihe EN 1501, im Vereinigten Königreich als BS EN übernommen, regelt Sicherheitsanforderungen an Abfallsammelfahrzeuge: Teil 1 den hydraulisch betätigten Aufbau von Heckladern samt Schüttungen und Schnittstellen zum Fahrgestell, unter anderem zu Verdichtung, Entleerung, Mitfahrt, Steuerung und Standsicherheit, Teil 3 die Frontlader, Teil 5 die Schüttungen für Abfallbehälter; nach Teil 4 werden lärmarme Fahrzeuge geprüft. Die eingesehenen Ausgaben sind zurückgezogen, ihre Versionsgeschichte nennt Ausgaben von 2021.",
+          "text": "Die europäische Normreihe EN 1501, im Vereinigten Königreich als BS EN übernommen, regelt Sicherheitsanforderungen an Abfallsammelfahrzeuge: Teil 1 den hydraulisch betätigten Aufbau von Heckladern samt Schüttungen und Schnittstellen zum Fahrgestell, unter anderem zu Verdichtung, Entleerung, Mitfahrt, Steuerung und Standsicherheit, Teil 3 die Frontlader, Teil 2 die Seitenlader, Teil 5 die Schüttungen für Abfallbehälter; nach Teil 4 werden lärmarme Fahrzeuge geprüft. Die eingesehenen Ausgaben sind zurückgezogen, ihre Versionsgeschichte nennt Ausgaben von 2021.",
           "begruendung": "belegt",
           "belege": [
             {"quellen_id": "Q3", "fundstelle": "Overview (Anwendungsbereich) und Contents, Abschnitte 4 und 6.1-6.11; Kopfdaten (Withdrawn); History"},
@@ -348,7 +348,7 @@
         },
         {
           "absatz_id": "P14",
-          "text": "Aufbau und Ladung nehmen den Abfall auf, verdichten ihn und geben ihn an der Entladestelle ab. Die Schüttung umfasst Lifter mit Behälteraufnahme, Sammelwanne, bei Front- und Seitenladern einen Ladearm, sowie den Heckbedienstand. Die Verdichtungseinrichtung ist eine Pressplatte oder eine Drehtrommel mit Pressschnecke, in der Verdichtung und Laderaum zusammenfallen. Der Laderaum umfasst Sammelbehälter und Gegenschild, dazu Wiegeeinrichtung, Trittbretter mit Haltegriffen und einen Löschwasseranschluss gegen Akkubrände im Abfall. Alle Bewegungen speist die Hydraulikversorgung, die Aufbausteuerung führt sie.",
+          "text": "Aufbau und Ladung nehmen den Abfall auf, verdichten ihn und geben ihn an der Entladestelle ab. Die Schüttung umfasst Lifter mit Behälteraufnahme, Sammelwanne, bei Front- und Seitenladern einen Ladearm, sowie den Heckbedienstand. Die Verdichtungseinrichtung ist eine Pressplatte oder eine Drehtrommel mit Pressschnecke, in der Verdichtung und Laderaum zusammenfallen. Der Laderaum umfasst Sammelbehälter und Gegenschild, dazu Wiegeeinrichtung, Trittbretter mit Haltegriffen und einen Löschwasseranschluss gegen Akkubrände im Abfall; hinten verschließt ihn die Heckklappe, die zur Tragstruktur zählt. Alle Bewegungen speist die Hydraulikversorgung, die Aufbausteuerung führt sie.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -551,11 +551,11 @@
       "absaetze": [
         {
           "absatz_id": "P25",
-          "text": "Bei den meisten Nutzfahrzeugen mit Arbeitshydraulik liefert der Verbrennungsmotor die Pumpenleistung, und der größte Teil des Leistungsbedarfs entfällt auf die Hydraulik im Leerlaufbetrieb. Das elektrische Hydraulikpumpensystem nach De Santis und anderen treibt Behälterhub und Verdichtung eines Müllwagens mit Elektromotor, Umrichter und Hydraulikpumpe aus einem Batteriepaket mit Batteriemanagementsystem und Ladegerät. Nach den britischen Hebezeugvorschriften LOLER gelten die Hubvorrichtungen von Müllfahrzeugen als Hebezeug; wiederholtes Rütteln zum Lösen festsitzender Inhalte verschleißt Hydraulikzylinder und Lasthaken.",
+          "text": "Bei den meisten Nutzfahrzeugen mit Arbeitshydraulik liefert der Verbrennungsmotor die Pumpenleistung, und der größte Teil des Leistungsbedarfs entfällt auf die Hydraulik im Leerlaufbetrieb. Das elektrische Hydraulikpumpensystem nach De Santis und anderen treibt Behälterhub und Verdichtung eines Müllwagens mit Elektromotor, Umrichter und Hydraulikpumpe aus einem Batteriepaket mit Batteriemanagementsystem und Ladegerät. Nach den britischen Hebezeugvorschriften LOLER gelten die Hubvorrichtungen von Müllfahrzeugen als Hebezeug.",
           "begruendung": "belegt",
           "belege": [
             {"quellen_id": "Q8", "fundstelle": "Abstract, S. 1; Abschnitt 1 Introduction, S. 2; Abschnitte 2 und 2.1, S. 3"},
-            {"quellen_id": "Q6", "fundstelle": "Abschnitte Provision and maintenance of lifting machinery and the hoisted container und Blind spots at the rear of the load"}
+            {"quellen_id": "Q6", "fundstelle": "Abschnitt Provision and maintenance of lifting machinery and the hoisted container"}
           ],
           "aussagetyp": "variante",
           "herangezogene_artikel_ids": []
@@ -594,7 +594,7 @@
             "praemissen": ["P2", "P3", "P5", "P6", "P8", "P10", "P11", "P14", "P15", "P17", "P20", "P22", "P24", "P26"],
             "schluss": "Das Müllfahrzeug besteht aus dreizehn gekoppelten Hauptsystemen, deren Ausprägung von Ladesystem und Antriebsart abhängt."
           },
-          "sicherheit": "hoch",
+          "sicherheit": "mittel",
           "aussagetyp": "funktion",
           "herangezogene_artikel_ids": []
         }
@@ -671,7 +671,7 @@
       {"id": "E2", "name": "Fahrzeugstruktur und Fahrwerk", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P3", "P27"], "kategorie": "struktur_fahrwerk"},
       {"id": "E3", "name": "Tragstruktur", "typ": "subsystem", "eltern_id": "E2", "absatz_ids": ["P3"]},
       {"id": "E4", "name": "Rahmen", "typ": "komponente", "eltern_id": "E3", "absatz_ids": ["P3", "P30"]},
-      {"id": "E79", "name": "Heckklappe", "typ": "komponente", "eltern_id": "E3", "absatz_ids": ["P3", "P12", "P26", "P30"]},
+      {"id": "E79", "name": "Heckklappe", "typ": "komponente", "eltern_id": "E3", "absatz_ids": ["P3", "P12", "P14", "P26", "P30"]},
       {"id": "E5", "name": "Fahrwerk", "typ": "subsystem", "eltern_id": "E2", "absatz_ids": ["P3"]},
       {"id": "E6", "name": "Achse", "typ": "komponente", "eltern_id": "E5", "absatz_ids": ["P3", "P29", "P30"]},
       {"id": "E7", "name": "Federung", "typ": "komponente", "eltern_id": "E5", "absatz_ids": ["P3", "P30"]},
@@ -862,7 +862,7 @@
       {"id": "S18", "von": "E11", "nach": "E28", "art": "mechanisch", "medium": "Wellenleistung", "absatz_ids": ["P5", "P6"], "schnittstelle": "Generatorkupplung"},
       {"id": "S19", "von": "E28", "nach": "E26", "art": "elektrisch", "medium": "Hochvolt-Gleichstrom", "absatz_ids": ["P6", "P29"]},
       {"id": "S20", "von": "E29", "nach": "E26", "art": "elektrisch", "medium": "Hochvolt-Gleichstrom, wechselnde Richtung", "absatz_ids": ["P6", "P29"]},
-      {"id": "S21", "von": "E26", "nach": "E41", "art": "elektrisch", "medium": "Hochvolt-Gleichstrom", "absatz_ids": ["P8", "P29"], "schnittstelle": "Hochvolt-Anschluss Lenkhilfepumpe"},
+      {"id": "S21", "von": "E26", "nach": "E41", "art": "elektrisch", "medium": "Hochvolt-Gleichstrom (nur bei seriellem Hybrid und batterieelektrischem Antrieb)", "absatz_ids": ["P8", "P29"], "schnittstelle": "Hochvolt-Anschluss Lenkhilfepumpe"},
       {"id": "S22", "von": "E26", "nach": "E137", "art": "elektrisch", "medium": "Hochvolt-Gleichstrom", "absatz_ids": ["P26", "P29"], "schnittstelle": "Hochvolt-Anschluss Kompressor"},
       {"id": "S23", "von": "E27", "nach": "E33", "art": "elektrisch", "medium": "Ladestrom Niedervolt", "absatz_ids": ["P6"]},
       {"id": "S24", "von": "E33", "nach": "E86", "art": "elektrisch", "medium": "Niedervolt-Gleichstrom", "absatz_ids": ["P6", "P15"], "schnittstelle": "Bordnetzanschluss Niedervolt"},
@@ -951,6 +951,20 @@
           {"element_id": "E70", "beschreibung": "Der Ladearm des Seitenladers liegt auf der Fahrerseite im direkten Blick."}
         ],
         "absatz_ids": ["P7", "P8"]
+      },
+      {
+        "id": "V6",
+        "element_id": "E55",
+        "bezeichnung": "Fahrerhausbauart",
+        "alternativen": ["Fahrerhaus mit tiefem Einstieg (Niedrigeinstieg)", "Serien-Fahrerhaus des Lkw-Fahrgestells"],
+        "auswahlkriterien": ["Häufigkeit des Ein- und Aussteigens je Tour", "Anzahl mitfahrender Lader", "direkte Sicht auf Fußgänger und Radfahrer im Nahbereich", "Verfügbarkeit und Kosten des Fahrgestells", "Bodenfreiheit im Einsatzgebiet"],
+        "auswirkungen": [
+          {"element_id": "E2", "beschreibung": "Fahrgestellbauart und Rahmen vorn sowie die Anordnung von Verbrennungsmotor oder Energiespeichern unter der Kabine ändern sich."},
+          {"element_id": "E105", "beschreibung": "Der Umfang der Rückraum- und Nahbereichsüberwachung richtet sich nach der direkten Sicht aus der Kabine."},
+          {"element_id": "E115", "beschreibung": "Anordnung von Außenspiegeln und Blickfeldern ändert sich mit der Sitzhöhe."},
+          {"element_id": "E56", "beschreibung": "Zahl der Sitzplätze und Rückhaltesysteme in der Kabine hängt von der Bauart ab."}
+        ],
+        "absatz_ids": ["P11"]
       }
     ],
     "klaerungsfragen": [
@@ -962,7 +976,7 @@
       {"id": "K6", "frage": "Auf welcher Fahrzeugseite werden die Behälter aufgenommen, und soll das Fahrzeug als Links- oder Rechtslenker ausgeführt werden?", "element_ids": ["E35", "E59"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Lage von Bedienplatz, Spiegeln und Ladearm ab.", "variante_ids": ["V5"]},
       {"id": "K7", "frage": "Welche zulässige Gesamtmasse und welche Achsanordnung soll das Fahrgestell haben, und ist eine gelenkte Nachlaufachse für das Sammelgebiet nötig?", "element_ids": ["E2", "E5", "E42"], "anlass": "anforderung", "relevanz": "Davon hängen Nutzlast, Wendigkeit und Auslegung von Rahmen, Federung und Lenkung ab."},
       {"id": "K8", "frage": "Soll die Feststellbremse automatisch einfallen, wenn das Fahrzeug an einer Ladestelle hält und der Ladebetrieb beginnt?", "element_ids": ["E45", "E48"], "anlass": "betrieb", "relevanz": "Davon hängen Ansteuerung der Feststellbremse und ihre Verriegelung mit der Aufbausteuerung ab."},
-      {"id": "K9", "frage": "Wie viele Lader fahren in der Kabine mit, und wird ein niedriges Fahrerhaus mit tiefem Einstieg gefordert?", "element_ids": ["E55", "E56"], "anlass": "anforderung", "relevanz": "Davon hängen Fahrerhausbauart, Sitzplätze und Rückhaltesysteme ab."},
+      {"id": "K9", "frage": "Wie viele Lader fahren in der Kabine mit, und wird ein niedriges Fahrerhaus mit tiefem Einstieg gefordert?", "element_ids": ["E55", "E56"], "anlass": "anforderung", "relevanz": "Davon hängen Fahrerhausbauart, Sitzplätze und Rückhaltesysteme ab.", "variante_ids": ["V6"]},
       {"id": "K10", "frage": "Über welche Bus-Schnittstelle tauschen Fahrgestell und Aufbau Signale aus, und wer verantwortet das Gateway?", "element_ids": ["E85", "E92"], "anlass": "schnittstelle", "relevanz": "Davon hängen Signalumfang, Verriegelungen und die Aufteilung der Steuergeräte zwischen Fahrzeug- und Aufbauhersteller ab."},
       {"id": "K11", "frage": "Sollen Behälter einzeln gewogen werden, und an welches Abrechnungs- oder Tourensystem werden die Daten übertragen?", "element_ids": ["E95", "E80", "E101"], "anlass": "schnittstelle", "relevanz": "Davon hängen Wiegeeinrichtung, Telematikeinheit und Datenformate ab."},
       {"id": "K12", "frage": "Soll die Rückwärtsfahrt durch Umfeldsensorik mit Bremseingriff abgesichert werden, oder bleibt ein Einweiser vorgesehen?", "element_ids": ["E105", "E106"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Umfang der Rückraumüberwachung und ihre Kopplung an die Bremsregelung ab."},
@@ -974,6 +988,7 @@
     "anforderungsthemen": [
       {"id": "R1", "element_ids": ["E65", "E66", "E72"], "thema": "Sicherheit von Aufbau und Schüttung", "kenngroessen": ["Schutzabstände an Verdichtung und Schüttung", "Stillsetzzeit", "Standsicherheit", "Anordnung der Bedienstellen"], "regelwerke": [
         {"bezeichnung": "EN 1501-1 Hecklader (europäische Norm; im Vereinigten Königreich als BS EN 1501-1:1998+A2:2009, zurückgezogen, Folgeausgabe 2021)", "quellen_id": "Q3", "fundstelle": "Overview (Anwendungsbereich) und Contents, Abschnitte 6.1-6.11"},
+        {"bezeichnung": "EN 1501-2 Seitenlader (europäische Norm; von EN 1501-5 als zugehöriger Teil für Seitenlader genannt)", "quellen_id": "Q5", "fundstelle": "Overview, 1 Scope"},
         {"bezeichnung": "EN 1501-3 Frontlader (europäische Norm; im Vereinigten Königreich als BS EN 1501-3:2008, zurückgezogen)", "quellen_id": "Q4", "fundstelle": "Overview (Anwendungsbereich)"},
         {"bezeichnung": "EN 1501-5 Schüttungen für Abfallsammelfahrzeuge (europäische Norm; im Vereinigten Königreich als BS EN 1501-5:2011, zurückgezogen, Folgeausgabe 2021)", "quellen_id": "Q5", "fundstelle": "Overview, 1 Scope"}
       ]},
@@ -995,7 +1010,7 @@
         {"bezeichnung": "DGUV Regel 114-601 Abfallsammlung (Deutschland, gesetzliche Unfallversicherung): Rundumlicht, Kennzeichnung, Ausleuchtung des Arbeitsplatzes", "quellen_id": "Q2", "fundstelle": "Abschnitt 3.2, S. 15; Abschnitt 3.6, S. 22-23"}
       ]},
       {"id": "R13", "element_ids": ["E125"], "thema": "Temperierung und Klimatisierung", "kenngroessen": ["Umgebungstemperaturbereich", "zulässiger Batterietemperaturbereich", "Heizleistung im Fahrerhaus"]},
-      {"id": "R14", "element_ids": ["E67", "E139"], "thema": "Prüfung der Hubvorrichtung", "kenngroessen": ["Prüfintervall", "Tragfähigkeit", "Zustand von Hydraulikzylindern und Lasthaken"], "regelwerke": [
+      {"id": "R14", "element_ids": ["E67", "E139"], "thema": "Prüfung der Hubvorrichtung", "kenngroessen": ["Prüfintervall", "Tragfähigkeit", "Zustand von Hydraulikzylindern, Schläuchen und Lastaufnahme"], "regelwerke": [
         {"bezeichnung": "Lifting Operations and Lifting Equipment Regulations, LOLER (Vereinigtes Königreich): Hubvorrichtungen von Müllfahrzeugen als Hebezeug mit Prüfung durch eine befähigte Person", "quellen_id": "Q6", "fundstelle": "Abschnitt Provision and maintenance of lifting machinery and the hoisted container"}
       ]},
       {"id": "R15", "element_ids": ["E135", "E139"], "thema": "Hilfsenergie und Geräusch", "kenngroessen": ["Hydraulikdruck", "Förderstrom", "Schallleistungspegel im Sammelbetrieb"], "regelwerke": [

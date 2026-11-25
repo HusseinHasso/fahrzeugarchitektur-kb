@@ -519,7 +519,7 @@
         },
         {
           "absatz_id": "P20",
-          "text": "Generisch umfasst Fahrzeugsteuerung und Information Fahrzeugmanagement, Türsteuerung, Diagnose und Fahrgastinformation. Das Fahrzeugmanagement setzt Befehle aus Führerstand oder automatischer Fahrsteuerung in Sollwerte für Traktionsstromrichter und Bremsregelung um und koordiniert die Hilfsbetriebe. Die Türsteuerung gibt die Fahrt nur bei geschlossenen, verriegelten Türen frei. Die Diagnose zeichnet Fehler und Betriebsdaten für Werkstatt und Leitstelle auf. Die Fahrgastinformation gibt Meldungen des Fahrzeugmanagements als Anzeigen und Ansagen aus; ihre Notsprechstelle verbindet über den Fahrzeugfunk mit der Leitstelle.",
+          "text": "Generisch gliedert sich Fahrzeugsteuerung und Information in zwei Subsysteme: die Fahrzeugleittechnik mit Fahrzeugmanagement und Türsteuerung sowie das Diagnose- und Informationssystem mit Diagnose und Fahrgastinformation. Das Fahrzeugmanagement setzt Befehle aus Führerstand oder automatischer Fahrsteuerung in Sollwerte für Traktionsstromrichter und Bremsregelung um und koordiniert die Hilfsbetriebe. Die Türsteuerung gibt die Fahrt nur bei geschlossenen, verriegelten Türen frei. Die Diagnose zeichnet Fehler und Betriebsdaten für Werkstatt und Leitstelle auf. Die Fahrgastinformation gibt Meldungen des Fahrzeugmanagements als Anzeigen und Ansagen aus; ihre Notsprechstelle verbindet über den Fahrzeugfunk mit der Leitstelle.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -530,7 +530,7 @@
               "P14",
               "Ohne Fahrpersonal ist die Notsprechstelle die einzige Verbindung der Fahrgäste zur Leitstelle."
             ],
-            "schluss": "Fahrzeugmanagement, Türsteuerung mit Fahrfreigabe, Diagnose mit Datenaufzeichnung und Fahrgastinformation mit Notsprechstelle bilden das Hauptsystem."
+            "schluss": "Die Fahrzeugleittechnik mit Fahrzeugmanagement und Türsteuerung mit Fahrfreigabe sowie das Diagnose- und Informationssystem mit Diagnose mit Datenaufzeichnung und Fahrgastinformation mit Notsprechstelle bilden das Hauptsystem."
           },
           "sicherheit": "mittel",
           "herangezogene_artikel_ids": []
@@ -1237,10 +1237,19 @@
         "kategorie": "steuerung_information"
       },
       {
+        "id": "E67",
+        "name": "Fahrzeugleittechnik",
+        "typ": "subsystem",
+        "eltern_id": "E41",
+        "absatz_ids": [
+          "P20"
+        ]
+      },
+      {
         "id": "E42",
         "name": "Fahrzeugmanagement",
         "typ": "komponente",
-        "eltern_id": "E41",
+        "eltern_id": "E67",
         "absatz_ids": [
           "P20"
         ]
@@ -1249,9 +1258,18 @@
         "id": "E43",
         "name": "Türsteuerung",
         "typ": "komponente",
-        "eltern_id": "E41",
+        "eltern_id": "E67",
         "absatz_ids": [
           "P19",
+          "P20"
+        ]
+      },
+      {
+        "id": "E68",
+        "name": "Diagnose- und Informationssystem",
+        "typ": "subsystem",
+        "eltern_id": "E41",
+        "absatz_ids": [
           "P20"
         ]
       },
@@ -1259,7 +1277,7 @@
         "id": "E44",
         "name": "Diagnose",
         "typ": "komponente",
-        "eltern_id": "E41",
+        "eltern_id": "E68",
         "absatz_ids": [
           "P19",
           "P20"
@@ -1269,7 +1287,7 @@
         "id": "E66",
         "name": "Fahrgastinformation",
         "typ": "komponente",
-        "eltern_id": "E41",
+        "eltern_id": "E68",
         "absatz_ids": [
           "P20"
         ]
