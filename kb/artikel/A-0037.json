@@ -4,7 +4,7 @@
   "artikeltyp": "blatt",
   "titel": "Zahnradbahn",
   "betrachtungsumfang": "Generische Referenzarchitektur des Zahnradbahnfahrzeugs auf zweischienigem Gleis mit Zahnstange in Gleismitte: Zahnradtriebwagen und Zahnradtriebzüge sowie Zahnradlokomotiven mit Wagen und Vorstellwagen, für reine Zahnradbahnen und für gemischten Adhäsions- und Zahnradbetrieb, im Personen- und Güterverkehr. Betrachtete Antriebsarten: elektrischer Antrieb aus der Fahrleitung mit Gleichstrom, Einphasenwechselstrom oder Drehstrom (Energiewandler Traktionsstromrichter mit Traktionsmaschine, bei Wechselstrom zusätzlich Haupttransformator; Bordnetzbatterie als Hilfsenergiespeicher, kein Traktionsenergiespeicher) und dieselelektrischer Antrieb (Energiespeicher Kraftstofftank; Energiewandler Verbrennungsmotor mit Generator, Traktionsstromrichter und Traktionsmaschine). Zahnstange, Zahnstangeneinfahrten, Zahnstangenweichen, Fahrleitung und streckenseitige Zugsicherung sind Schnittstellen, nicht Bestandteil. Nicht betrachtet werden Dampf-, Batterie- und Wasserstoffantrieb, Treidellokomotiven, Standseilbahnen mit Bremszahnstange, Einschienen-Zahnradbahnen (Monorackbahnen) und Mittelschienen-Reibungssysteme wie das System Fell.",
-  "status": "in_arbeit",
+  "status": "geprueft",
   "quellenzugriff": "ja",
   "kindartikel_ids": [],
   "quellen": [
@@ -347,7 +347,7 @@
         },
         {
           "absatz_id": "P15",
-          "text": "Der Führerstand besteht aus dem Führertisch mit Bedienelementen für Zug- und Bremskraft, Betriebsartenschalter und Anzeigeelementen sowie dem Führersitz. Triebwagen haben an beiden Enden einen Führerstand; geschobene Züge können bergseitig von einem Steuerwagen geführt werden. Die Eingaben gehen über den Fahrzeugbus an das Fahrzeugmanagement, Zustand, Betriebsart und Geschwindigkeit kommen auf die Anzeigeelemente zurück.",
+          "text": "Der Führerstand besteht aus dem Führertisch mit Bedienelementen für Zug- und Bremskraft, Betriebsartenschalter und Anzeigeelementen sowie dem Führersitz. Dem Bedienraum zugeordnet sind auch die Fahrgastsitze, die im Wagenkasten befestigt sind und deren Besetzung zur Zuladung zählt. Triebwagen haben an beiden Enden einen Führerstand; geschobene Züge können bergseitig von einem Steuerwagen geführt werden. Die Eingaben gehen über den Fahrzeugbus an das Fahrzeugmanagement, Zustand, Betriebsart und Geschwindigkeit kommen auf die Anzeigeelemente zurück.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -355,9 +355,9 @@
               "P14",
               "Q3 (Bildunterschrift Wengernalpbahn: Triebwagen mit Steuerwagen)",
               "Jede Fahrereingabe braucht ein Bedienelement und einen Weg zur ausführenden Steuerung",
-              "Zuordnungsliste der Glossarausgabe: Sitze gehören zur Kategorie bedienraum; bei Schienenfahrzeugen ist der Bedienraum der Führerstand, Sitze im Sinne der Liste ist hier der Führersitz"
+              "Zuordnungsliste der Glossarausgabe: Sitze gehören zur Kategorie bedienraum; bei Schienenfahrzeugen ist der Bedienraum der Führerstand, ihm sind daher Führersitz und Fahrgastsitze zugeordnet"
             ],
-            "schluss": "Der Führerstand bündelt Fahr-, Brems- und Betriebsartenbedienung mit dem Führersitz und bezieht seine Anzeigen aus der Fahrzeugsteuerung."
+            "schluss": "Der Führerstand bündelt Fahr-, Brems- und Betriebsartenbedienung mit dem Führersitz, umfasst als Bedienraum auch die Fahrgastsitze und bezieht seine Anzeigen aus der Fahrzeugsteuerung."
           },
           "sicherheit": "gering",
           "aussagetyp": "modellannahme",
@@ -389,14 +389,15 @@
         },
         {
           "absatz_id": "P17",
-          "text": "Aufbau und Ladung umfassen den Fahrgastraum mit Fahrgastsitzen und Stehplatzfläche, deren Besetzung zur Zuladung zählt, das Gepäck- und Güterabteil und bei lokbespannten Zügen den Vorstellwagen. Die Zuladung wirkt als Last auf den Wagenkasten und bestimmt die Bremskraft, die Anhalte- und Beharrungsbremse aufbringen müssen; zusätzliche Stehplatzfläche erhöht so die Anforderungen an das Bremssystem. Güter- und Dienstwagen ohne Bremszahnrad werden bergseitig geschoben.",
+          "text": "Aufbau und Ladung umfassen den Fahrgastraum mit Stehplatzfläche, das Gepäck- und Güterabteil und bei lokbespannten Zügen den Vorstellwagen; die Besetzung der Stehplatzfläche und der Fahrgastsitze zählt zur Zuladung. Die Zuladung wirkt als Last auf den Wagenkasten und bestimmt die Bremskraft, die Anhalte- und Beharrungsbremse aufbringen müssen; zusätzliche Stehplatzfläche erhöht so die Anforderungen an das Bremssystem. Güter- und Dienstwagen ohne Bremszahnrad werden bergseitig geschoben.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "P16",
               "P4",
-              "Q3 (Abschnitt Personen- und Güterwagen: Wagen ohne Bremszahnrad werden bergwärts geschoben)"
+              "Q3 (Abschnitt Personen- und Güterwagen: Wagen ohne Bremszahnrad werden bergwärts geschoben)",
+              "P15"
             ],
             "schluss": "Die Nutzlast ist Bemessungsgröße für Struktur und Bremse; ungebremste Wagen erzwingen eine bergseitige Einreihung."
           },
@@ -665,7 +666,7 @@
       "absaetze": [
         {
           "absatz_id": "P29",
-          "text": "Funktionale Zuordnung:Fahrzeuglasten tragen – Wagenkasten, Drehgestell, Radsatz, Federung; Fahrzeug im Gleis führen – Radsatz, Drehgestell; Insassen schützen – Wagenkasten, Einstiegstüren; Antriebsleistung erzeugen – Traktionsstromrichter, Traktionsmaschine, Verbrennungsmotor; Drehmoment übertragen – Getriebe, Drehmoment-Begrenzungsorgan, Adhäsionskupplung, Verteildifferential; Fahrzeug fortbewegen – Triebzahnrad, Radsatz; Zahnrad synchronisieren – Synchronisierungseinrichtung; Elektrische Energie verteilen – Fahrleitungsanbindung, Hilfsbetriebeumrichter, Niedervolt-Bordnetz, Leitungssatz; Energie speichern – Bordnetzbatterie, Kraftstofftank, Druckluftbehälter; Fahrzeug verzögern – Mechanische Anhaltebremsen, Beharrungsbremse, Adhäsionsbremse, Magnetschienenbremse; Bremsenergie zurückgewinnen – Traktionsmaschine, Traktionsstromrichter; Fahrzeug festhalten – Klinkenbremse, Zahnradbremse; Druckluft bereitstellen – Kompressor für Druckluft, Druckluftbehälter; Hydraulische Leistung bereitstellen – Hydraulikaggregat; Fahrereingaben erfassen – Bedienelemente, Betriebsartenschalter; Fahrerinformationen anzeigen – Anzeigeelemente; Ladung aufnehmen – Fahrgastsitze, Stehplatzfläche, Gepäck- und Güterabteil, Vorstellwagen; Daten übertragen – Fahrzeugbus; Fahrzeugzustand überwachen – Fahrzeugmanagement, Diagnose, Fahrdatenregistrierung; Zugfahrt überwachen – Sicherheitsbaugruppe, Sicherheitssteuerung, Fahrzeuggerät der Zugbeeinflussung; Fahrersicht sicherstellen – Scheibenwischer; Fahrzeugumgebung ausleuchten – Scheinwerfer; Lichtsignale abgeben – Signalleuchten; Betriebstemperatur regeln – Kühlkreislauf, Bremswiderstandslüfter; Innenraum klimatisieren – Heiz- und Klimaanlage.",
+          "text": "Funktionale Zuordnung:Fahrzeuglasten tragen – Wagenkasten, Drehgestell, Radsatz, Federung; Fahrzeug im Gleis führen – Radsatz, Drehgestell; Insassen schützen – Wagenkasten, Einstiegstüren, Fahrgastsitze; Antriebsleistung erzeugen – Traktionsstromrichter, Traktionsmaschine, Verbrennungsmotor; Drehmoment übertragen – Getriebe, Drehmoment-Begrenzungsorgan, Adhäsionskupplung, Verteildifferential; Fahrzeug fortbewegen – Triebzahnrad, Radsatz; Zahnrad synchronisieren – Synchronisierungseinrichtung; Elektrische Energie verteilen – Fahrleitungsanbindung, Hilfsbetriebeumrichter, Niedervolt-Bordnetz, Leitungssatz; Energie speichern – Bordnetzbatterie, Kraftstofftank, Druckluftbehälter; Fahrzeug verzögern – Mechanische Anhaltebremsen, Beharrungsbremse, Adhäsionsbremse, Magnetschienenbremse; Bremsenergie zurückgewinnen – Traktionsmaschine, Traktionsstromrichter; Fahrzeug festhalten – Klinkenbremse, Zahnradbremse; Druckluft bereitstellen – Kompressor für Druckluft, Druckluftbehälter; Hydraulische Leistung bereitstellen – Hydraulikaggregat; Fahrereingaben erfassen – Bedienelemente, Betriebsartenschalter; Fahrerinformationen anzeigen – Anzeigeelemente; Ladung aufnehmen – Stehplatzfläche, Gepäck- und Güterabteil, Vorstellwagen; Daten übertragen – Fahrzeugbus; Fahrzeugzustand überwachen – Fahrzeugmanagement, Diagnose, Fahrdatenregistrierung; Zugfahrt überwachen – Sicherheitsbaugruppe, Sicherheitssteuerung, Fahrzeuggerät der Zugbeeinflussung; Fahrersicht sicherstellen – Scheibenwischer; Fahrzeugumgebung ausleuchten – Scheinwerfer; Lichtsignale abgeben – Signalleuchten; Betriebstemperatur regeln – Kühlkreislauf, Bremswiderstandslüfter; Innenraum klimatisieren – Heiz- und Klimaanlage.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -1206,9 +1207,11 @@
         "id": "E51",
         "name": "Fahrgastsitze",
         "typ": "komponente",
-        "eltern_id": "E50",
+        "eltern_id": "E43",
         "absatz_ids": [
-          "P17"
+          "P15",
+          "P17",
+          "P29"
         ]
       },
       {
@@ -1538,10 +1541,12 @@
         "name": "Insassen schützen",
         "ausgefuehrt_von": [
           "E3",
-          "E9"
+          "E9",
+          "E51"
         ],
         "absatz_ids": [
           "P5",
+          "P15",
           "P29"
         ]
       },
@@ -1716,7 +1721,6 @@
         "id": "F17",
         "name": "Ladung aufnehmen",
         "ausgefuehrt_von": [
-          "E51",
           "E52",
           "E53",
           "E54"
@@ -2402,6 +2406,7 @@
         "art": "mechanisch",
         "medium": "Zuladung",
         "absatz_ids": [
+          "P15",
           "P17"
         ],
         "schnittstelle": "Sitzbefestigung im Wagenkasten"
@@ -3183,7 +3188,6 @@
     "Recherche: G. Borgeaud, Stand- und Entgleisungssicherheit bei Zahnradbahnen, Schweizerische Bauzeitung 1969 und 1978 (e-periodica.ch), sowie BAV-Richtlinie „Nachweis sicheres Fahrverhalten Meterspur-, Spezialspur- und Zahnradbahnen“ für P5 und R1 abrufen.",
     "Recherche: Fachliteratur zu Bordnetz, Kühlung und Bremswiderständen von Zahnradtriebfahrzeugen (Suchbegriffe: Zahnradtriebwagen Bremswiderstand Dachkühlung; rack railcar auxiliary converter) zur Belegung von P18 und P24.",
     "Recherche: Betätigung der Federspeicher-Bandbremsen (Suchbegriffe: Federspeicher-Bandbremse Zahnradbahn hydraulisch lüften) zur Belegung von P13 und P25.",
-    "Recherche: Folgezugsignale am Fahrzeug und Führerstandsgestaltung (Suchbegriffe: Folgezugtafel Zahnradbahn; Zahnradtriebwagen Führerstand Steuerwagen) zur Belegung von P15 und P23.",
-    "Zuordnung: Fahrgastsitze abweichend von der Zuordnungsliste (Sitze → bedienraum) unter Aufbau und Ladung/Fahrgastraum, weil der Bedienraum bei Schienenfahrzeugen der Führerstand ist; Sitze im Sinne der Liste ist hier der Führersitz (E48)."
+    "Recherche: Folgezugsignale am Fahrzeug und Führerstandsgestaltung (Suchbegriffe: Folgezugtafel Zahnradbahn; Zahnradtriebwagen Führerstand Steuerwagen) zur Belegung von P15 und P23."
   ]
 }
