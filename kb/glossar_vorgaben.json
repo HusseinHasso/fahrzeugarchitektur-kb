@@ -1,11 +1,12 @@
 {
-  "stand": "2026-11-24, nach Generalprobe Personenkraftfahrzeuge: Zuordnungsliste ergänzt; nach jeder Welle fortschreiben",
+  "stand": "2026-11-25, nach Welle Landfahrzeuge (Blattartikel): 41 Funktionen aufgenommen, Synonyme zusammengeführt, Hauptsystemnamen Fahrerplatz, Besatzungsraum, Waffenanlage und Missionsausrüstung; nach jeder Welle fortschreiben",
   "regeln": [
     "Hauptsystemnamen nur aus dieser Liste. Mehrere Namen je Kategorie gelten für die in Klammern genannte Fahrzeugart; die Klammer gehört nicht zum Namen.",
     "Funktionsnamen zuerst aus dieser Liste. Neue Funktionen nur für fahrzeugartspezifische Leistungen (z. B. Oberwagen schwenken) und nie als Synonym einer gelisteten Funktion.",
     "„Fahrer“ in Funktionsnamen steht für die führende Person, auch Pilot, Triebfahrzeugführer oder Bediener am Leitstand.",
     "Neue Namen in offene_punkte mit dem Vermerk „Glossarvorschlag:“ führen.",
-    "Zuordnung: Komponenten aus der Zuordnungsliste gehören unter das Hauptsystem der genannten Kategorie, soweit die Fahrzeugart sie besitzt. Abweichungen nur mit Begründung in offene_punkte."
+    "Zuordnung: Komponenten aus der Zuordnungsliste gehören unter das Hauptsystem der genannten Kategorie, soweit die Fahrzeugart sie besitzt. Abweichungen nur mit Begründung in offene_punkte.",
+    "Synonyme nicht neu einführen: Akustische Signale abgeben (nicht Schallzeichen, Warnsignal, hörbare Signale), Türen betätigen (nicht Schiebetür oder Betriebstüren betätigen), Fahrzeuge kuppeln (auch Anhänger oder Zugfahrzeug ankuppeln), Unbefugte Benutzung verhindern (auch Diebstahlschutz), Höchstgeschwindigkeit begrenzen."
   ],
   "hauptsysteme": {
     "struktur_fahrwerk": [
@@ -25,16 +26,19 @@
       "Bremssystem"
     ],
     "bedienraum": [
-      "Fahrerhaus (Nutzfahrzeuge, Arbeitsmaschinen)",
-      "Fahrgastraum (Pkw, Busse)",
+      "Fahrerhaus (Nutzfahrzeuge, Arbeitsmaschinen, ungepanzerte Militärfahrzeuge)",
+      "Fahrgastraum (Pkw, Busse, Reisezugwagen)",
+      "Fahrerplatz (Krafträder, Fahrräder, Stehfahrzeuge, ATV, Quads, Schneemobile)",
+      "Besatzungsraum (gepanzerte Gefechtsfahrzeuge)",
       "Führerstand (Schienenfahrzeuge)",
       "Cockpit (Luftfahrzeuge)",
       "Leitstand (ferngesteuerte und bodengeführte Fahrzeuge)"
     ],
     "aufbau_nutzlast": [
-      "Aufbau und Ladung (Nutzfahrzeuge)",
+      "Aufbau und Ladung (Nutzfahrzeuge, Anhänger, Zweiräder, Geländefahrzeuge, Schienenfahrzeuge)",
       "Laderaum und Anhängevorrichtung (Pkw)",
       "Arbeitsausrüstung (Arbeits- und Baumaschinen)",
+      "Waffenanlage und Missionsausrüstung (gepanzerte Gefechtsfahrzeuge)",
       "Nutzlastsystem (unbemannte Fahrzeuge, Luft- und Raumfahrzeuge)"
     ],
     "elektrik_elektronik": [
@@ -99,7 +103,48 @@
     "Objekte handhaben",
     "Unterdruck bereitstellen",
     "Innenraum klimatisieren",
-    "Tether ausgeben und einholen"
+    "Tether ausgeben und einholen",
+    "Lichtsignale abgeben",
+    "Akustische Signale abgeben",
+    "Fahrzeug festhalten",
+    "Fahrzeug abstützen",
+    "Fahrzeug stabilisieren",
+    "Anhänger ziehen",
+    "Fahrzeuge kuppeln",
+    "Fahrerzustand überwachen",
+    "Fahrgeschwindigkeit überwachen",
+    "Höchstgeschwindigkeit begrenzen",
+    "Antriebsschlupf regeln",
+    "Unbefugte Benutzung verhindern",
+    "Betriebsdaten aufzeichnen",
+    "Türen betätigen",
+    "Fahrgäste aufnehmen",
+    "Fahrgäste informieren",
+    "Fahrgäste versorgen",
+    "Innenraum beleuchten",
+    "Frischwasser bereitstellen",
+    "Abwasser sammeln",
+    "Landstrom einspeisen",
+    "Elektrische Energie erzeugen",
+    "Elektrische Energie abgeben",
+    "Fahrstrom abnehmen",
+    "Fahrzeug im Gleis führen",
+    "Fahrzeug am Fahrweg führen",
+    "Kraftschluss verbessern",
+    "Längskräfte übertragen",
+    "Zugfahrt überwachen",
+    "Zugfahrt automatisch steuern",
+    "Ladung sichern",
+    "Ladung entladen",
+    "Ladung abkippen",
+    "Ladung temperieren",
+    "Fahrzeug kenntlich machen",
+    "Reifendruck regeln",
+    "Fahrzeug bergen",
+    "Ziele erfassen",
+    "Waffe richten",
+    "Ziele bekämpfen",
+    "Bedrohungen abwehren"
   ],
   "zuordnung": [
     {
