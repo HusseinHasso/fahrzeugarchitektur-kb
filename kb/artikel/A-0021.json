@@ -1,0 +1,897 @@
+{
+  "schema_version": "2.3",
+  "artikel_id": "A-0021",
+  "artikeltyp": "blatt",
+  "titel": "Lastenrad",
+  "betrachtungsumfang": "Generische Referenzarchitektur des Lastenrads (Lastenfahrrad, Transportrad, Cargobike) als Fahrrad zum Transport von Gütern oder Personen, ein- und mehrspurig (Mini-Lastenrad, Long John, Longtail, Lastendreirad und Lastenvierrad, Heavy Cargobike). Antriebsarten: reiner Muskelkraftantrieb (Energiequelle ist die führende Person außerhalb der Systemgrenze, Wandler ist der Tretantrieb mit Tretkurbel) und elektrische Tretunterstützung als Pedelec im Sinne von § 63a StVZO (Deutschland) beziehungsweise Artikel 2 Absatz 2 Buchstabe h der Verordnung (EU) Nr. 168/2013 (Energiespeicher Traktionsbatterie, Energiewandler Traktionsmaschine), einschließlich des seriellen Antriebs mit Tretgenerator. Ausdrücklich nicht betrachtet werden S-Pedelec-Lastenräder und andere als Kraftfahrzeug der Klasse L eingestufte Lastenräder, Brennstoffzellenantriebe, Fahrradanhänger als eigene Fahrzeuge jenseits der Anhängevorrichtung, Rikschas und Fahrradtaxis als reine Personenbeförderungsfahrzeuge sowie stationäre Abstellanlagen.",
+  "status": "in_arbeit",
+  "quellenzugriff": "ja",
+  "kindartikel_ids": [],
+  "quellen": [
+    {
+      "quellen_id": "Q1",
+      "titel": "Lastenfahrrad",
+      "urheber": "Wikipedia, Die freie Enzyklopädie (deutschsprachig)",
+      "stand": "Fassung vom Abrufdatum (Quelltext über action=raw gelesen)",
+      "url": "https://de.wikipedia.org/wiki/Lastenfahrrad",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q2",
+      "titel": "Cargo bike",
+      "urheber": "Wikipedia, The Free Encyclopedia (englischsprachig)",
+      "stand": "Fassung vom Abrufdatum (Quelltext über action=raw gelesen)",
+      "url": "https://en.wikipedia.org/wiki/Cargo_bike",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q3",
+      "titel": "Elektro-Lastenfahrrad",
+      "urheber": "Wikipedia, Die freie Enzyklopädie (deutschsprachig)",
+      "stand": "Fassung vom Abrufdatum (Quelltext über action=raw gelesen)",
+      "url": "https://de.wikipedia.org/wiki/Elektro-Lastenfahrrad",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q4",
+      "titel": "Lastenräder – Technik & Modelle. In: Assmann, T.; Bürklen, A.; Gruber, J.; Knese, D.; Mayregger, P.; Rudolph, C. (Hrsg.): Radlogistik. Grundlagen zu Logistik und Wirtschaftsverkehr mit Lasten- und Transporträdern, Kapitel 1, S. 3–14",
+      "urheber": "Jonas Kremer; Springer Gabler, Wiesbaden (Open Access, CC BY 4.0)",
+      "stand": "2024, doi:10.1007/978-3-658-44449-5_1",
+      "url": "https://link.springer.com/content/pdf/10.1007/978-3-658-44449-5_1.pdf",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "fachliteratur"
+    },
+    {
+      "quellen_id": "Q5",
+      "titel": "Gesetze und Regulierung zur Radlogistik. In: Assmann, T. et al. (Hrsg.): Radlogistik. Grundlagen zu Logistik und Wirtschaftsverkehr mit Lasten- und Transporträdern, Kapitel 2, S. 15–27",
+      "urheber": "Tom Assmann (Otto-von-Guericke-Universität Magdeburg); Springer Gabler, Wiesbaden (Open Access, CC BY 4.0)",
+      "stand": "2024, doi:10.1007/978-3-658-44449-5_2",
+      "url": "https://link.springer.com/content/pdf/10.1007/978-3-658-44449-5_2.pdf",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "fachliteratur"
+    },
+    {
+      "quellen_id": "Q6",
+      "titel": "Straßenverkehrs-Zulassungs-Ordnung (StVZO), § 63a Fahrräder und Fahrradanhänger",
+      "urheber": "Bundesministerium für Verkehr (Verordnungsgeber); Text über buzer.de",
+      "stand": "Fassung durch Artikel 1 der 55. Verordnung zur Änderung straßenverkehrsrechtlicher Vorschriften vom 25. Juni 2021 (BGBl. I S. 2204), in Kraft seit 3. Juli 2021",
+      "url": "https://www.buzer.de/63a_StVZO.htm",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q7",
+      "titel": "Straßenverkehrs-Zulassungs-Ordnung (StVZO), § 65 Bremsen",
+      "urheber": "Bundesministerium für Verkehr (Verordnungsgeber); Text über buzer.de",
+      "stand": "StVZO vom 26. April 2012, zuletzt geändert durch Artikel 1 der Verordnung vom 10. Juni 2024 (BGBl. 2024 I Nr. 191)",
+      "url": "https://www.buzer.de/65_StVZO.htm",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q8",
+      "titel": "Straßenverkehrs-Zulassungs-Ordnung (StVZO), § 67 Lichttechnische Einrichtungen an Fahrrädern",
+      "urheber": "Bundesministerium der Justiz, gesetze-im-internet.de",
+      "stand": "Einzelnorm in der am Abrufdatum veröffentlichten Fassung",
+      "url": "https://www.gesetze-im-internet.de/stvzo_2012/__67.html",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q9",
+      "titel": "Verordnung (EU) Nr. 168/2013 des Europäischen Parlaments und des Rates vom 15. Januar 2013 über die Genehmigung und Marktüberwachung von zwei- oder dreirädrigen und vierrädrigen Fahrzeugen",
+      "urheber": "Europäisches Parlament und Rat der Europäischen Union",
+      "stand": "Amtsblatt der EU L 60 vom 2.3.2013, S. 52, Originalfassung",
+      "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32013R0168",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q10",
+      "titel": "Straßenverkehrs-Zulassungs-Ordnung (StVZO), § 64a Einrichtungen für Schallzeichen",
+      "urheber": "Bundesministerium für Verkehr (Verordnungsgeber); Text über buzer.de",
+      "stand": "StVZO vom 26. April 2012, zuletzt geändert durch Artikel 1 der Verordnung vom 10. Juni 2024 (BGBl. 2024 I Nr. 191)",
+      "url": "https://www.buzer.de/64a_StVZO.htm",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "norm"
+    }
+  ],
+  "abschnitte": [
+    {
+      "ueberschrift": "Einleitung",
+      "abschnittstyp": "gesamtsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P1",
+          "text": "Ein Lastenrad, auch Lastenfahrrad, Transportrad oder Cargobike genannt, ist ein Fahrrad oder ein einem Fahrrad gleichgestelltes Fahrzeug, das dem Transport von Gütern oder Personen dient und je nach Aufgabe mit verschiedenen An- und Aufbauten ausgerüstet ist. Es hat zwei, drei oder seltener vier Laufräder, von denen mindestens eines per Muskelkraft angetrieben wird. Rahmen, Antrieb und Räder müssen größere Lasten aufnehmen als bei einem gewöhnlichen Fahrrad. In Deutschland bilden Lastenräder keine eigene Fahrzeugklasse; sie sind rechtlich Fahrräder, solange sie innerhalb der Grenzen eines Fahrrads nach der Straßenverkehrs-Zulassungs-Ordnung bleiben.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q1", "fundstelle": "Einleitung und Abschnitt „Bauformen“, Absatz 1"},
+            {"quellen_id": "Q2", "fundstelle": "Einleitung, Absatz 2 (frame, drivetrain and wheels must be constructed to handle loads larger than those on an ordinary bicycle)"},
+            {"quellen_id": "Q5", "fundstelle": "Abschnitt 2.1.1, Absatz 1"}
+          ],
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P2",
+          "text": "Als Gesamtsystem besteht das Lastenrad aus Systemen, die über mechanische, elektrische und informationstechnische Schnittstellen gekoppelt sind. Die führende Person liegt außerhalb der Systemgrenze, ist aber zugleich Energiequelle, Bediener und Teil der Massenbilanz. Für eine Systemdekomposition, etwa in SysML, wird das Lastenrad zunächst in seine Hauptsysteme zerlegt, die anschließend in Subsysteme und Komponenten untergliedert werden.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P1: mindestens ein Laufrad wird per Muskelkraft angetrieben",
+              "Q6: ein Fahrrad wird durch die Muskelkraft auf ihm befindlicher Personen angetrieben, wahlweise mit elektromotorischem Hilfsantrieb",
+              "Funktionsprinzip: Eingaben der Person und Lastpfade sind mechanisch, Hilfsantrieb und Beleuchtung elektrisch, die Unterstützungsregelung signalbasiert"
+            ],
+            "schluss": "Das Lastenrad ist ein über mechanische, elektrische und informationstechnische Schnittstellen gekoppeltes Gesamtsystem; die führende Person ist externer Akteur und Energiequelle."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrzeugstruktur und Fahrwerk",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E2",
+      "absaetze": [
+        {
+          "absatz_id": "P3",
+          "text": "Einspurige Lastenräder haben zwei in Fahrtrichtung hintereinander angeordnete Räder und eine Fahrdynamik ähnlich konventionellen Fahrrädern: Mini-Lastenräder wie das Bäckerrad mit verstärktem Rahmen und Ladefläche über dem Vorderrad, Long Johns mit Ladefläche zwischen Lenker und meist kleinerem Vorderrad sowie Longtails mit verlängertem Radstand hinter dem Sitz. Mehrspurige Lastenräder haben mindestens zwei parallel angeordnete Räder und stehen bei geringer Geschwindigkeit und im Stillstand stabil; Dreiräder gibt es inzwischen mit Dämpfung und mit Neigetechnik, die sie wendiger macht. Heavy Cargobikes definieren sich über eine Zuladung an Waren von mehr als 200 kg, teils mit absenkbaren Hinterachsen. Lastenräder haben meist deutlich stabilere angebaute Fahrradständer als herkömmliche Fahrräder.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q4", "fundstelle": "Abschnitte 1.2, 1.2.1, 1.2.2, 1.3, 1.3.1 und 1.4"},
+            {"quellen_id": "Q1", "fundstelle": "Abschnitt „Bauformen“, Aufzählungspunkte „Vorderlader“/„Long John“ und „Longtails“; Abschnitt „Abstellelemente“, Absatz 1"}
+          ],
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P4",
+          "text": "Fahrzeugstruktur und Fahrwerk gliedern sich in Tragstruktur und Fahrwerk. Der Rahmen nimmt Sitz, Lenkung, Antrieb und Ladeplattform auf und leitet die Lasten aus Ladung und führender Person über jede Achse in Räder und Reifen; eine Federung kann dazwischenliegen. Bei Neigetechnik koppelt ein Neigemechanismus den neigbaren Fahrerteil mit dem parallelen Radpaar. Tief zwischen den Rädern liegende Ladung senkt den Schwerpunkt, Ladung über einem Rad hebt ihn.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P1: Rahmen und Räder müssen größere Lasten aufnehmen",
+              "P3: Bauformen mit Ladefläche vorn, hinten oder zwischen parallelen Rädern; Neigetechnik; Dämpfung; Fahrradständer",
+              "Lastpfad: jede Last muss von der Aufnahme über Rahmen und Radlagerung in die Fahrbahn geleitet werden"
+            ],
+            "schluss": "Die Tragstruktur aus Rahmen und Fahrradständer und das Fahrwerk aus Achse, Räder und Reifen, Federung und gegebenenfalls Neigemechanismus bilden das Hauptsystem."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Antriebssystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E11",
+      "absaetze": [
+        {
+          "absatz_id": "P5",
+          "text": "Der Antrieb gilt als Herzstück des Lastenrads. Neben rein manuellen Ketten- und Riemenantrieben gibt es Elektroantriebe, die den Vortrieb unterstützen. Mittelmotoren sitzen an der Tretkurbel, wirken über die Kette und kommen meist bei Mini-Lastenrädern und Long Johns zum Einsatz. Nabenmotoren am Vorder- oder Hinterrad sind im gewerblichen Bereich am häufigsten; die Muskelkraft gelangt dann über Kette oder Riemen zur Nabe, die Gangschaltung sitzt an der Tretkurbel. Heavy Cargobikes haben meist zwei Nabenmotoren an der Hinterachse oder angepasste Spezialmotoren.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q4", "fundstelle": "Abschnitte 1.6.2, 1.6.2.1, 1.6.2.2 und 1.6.2.3"}
+          ],
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P6",
+          "text": "Beim seriellen Antrieb, der „elektrischen Kette“, entfallen Kette und Riemen: Über das Pedalieren und einen Generator wird Energie erzeugt und in eine Batterie gespeist, und ein Nabenmotor stellt sie entsprechend dem Pedalieren zum Vortrieb bereit. Das ist wartungsärmer, bereitet wegen der gesetzlichen Leistungsbegrenzung aber an steilen Rampen Probleme. Für den Fahrradstatus darf das Rad nur fahren, wenn pedaliert wird.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q4", "fundstelle": "Abschnitt 1.6.2.4"},
+            {"quellen_id": "Q5", "fundstelle": "Abschnitt 2.1.1, Absatz 5 (serieller Hybridantrieb)"}
+          ],
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P7",
+          "text": "Das Antriebssystem gliedert sich damit in Tretantrieb und elektrischen Hilfsantrieb. Der Tretantrieb umfasst Tretkurbel, Kettentrieb mit Kette oder Riemen und Gangschaltung; beim seriellen Antrieb ersetzt ein Tretgenerator den Kettentrieb. Der Hilfsantrieb besteht aus Traktionsmaschine, Motorsteuerung und Tretsensor, weil die Unterstützung enden muss, sobald nicht mehr getreten wird. Treibt ein mehrspuriges Rad zwei parallele Räder gemeinsam an, braucht es ein Differenzial; Radmotoren je Rad kommen ohne aus.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P5: manueller Ketten- oder Riemenantrieb, Mittel- und Nabenmotoren, Gangschaltung an der Tretkurbel",
+              "P6: serieller Antrieb mit Generator an der Pedale statt Kette",
+              "Q6: Unterstützung wird unterbrochen, wenn der Fahrer mit dem Treten einhält; das setzt eine Erfassung des Tretens voraus",
+              "Q1: zum Antrieb beider Hinterräder eines Dreirads würde ein Differentialgetriebe benötigt"
+            ],
+            "schluss": "Das Antriebssystem besteht aus Tretantrieb (Tretkurbel, Kettentrieb, Gangschaltung oder Tretgenerator) und Hilfsantrieb (Traktionsmaschine, Motorsteuerung, Tretsensor), bei gemeinsam angetriebenen Parallelrädern ergänzt um ein Differenzial."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Energieversorgungssystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E22",
+      "absaetze": [
+        {
+          "absatz_id": "P8",
+          "text": "Elektrische Unterstützung kann Zuladung und Reichweite eines Lastenrads erhöhen, erfordert aber eine Batterie an Bord. Für elektrische Komponenten von Lastenrädern gilt, soweit die entstehende europäische Lastenradnorm DIN EN 17860 nichts festlegt, die europäische Norm DIN EN 15194 für elektromotorisch unterstützte Räder, unter anderem für Stromkreise und Ladesystem bis 48 V Gleichstrom. Nach der deutschen Straßenverkehrs-Zulassungs-Ordnung dienen Lichtmaschine, Batterie oder wieder aufladbarer Energiespeicher als Energiequelle der Beleuchtung; bei Fahrrädern mit elektrischer Tretunterstützung darf sie am Antriebsspeicher hängen, wenn sie nach dessen entladungsbedingter Abschaltung noch mindestens zwei Stunden versorgt wird oder der Antriebsmotor übergangsweise als Lichtmaschine dient.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q2", "fundstelle": "Abschnitt „Development“, Absatz 3 (power assist can increase the payload and range ... requires an on-board battery)"},
+            {"quellen_id": "Q5", "fundstelle": "Abschnitt 2.2.1.2, Absatz 1"},
+            {"quellen_id": "Q8", "fundstelle": "Absatz 1 Satz 3 und Absatz 7"}
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P9",
+          "text": "Das Energieversorgungssystem umfasst damit das Batteriesystem aus Traktionsbatterie und Batteriemanagementsystem, das die Zellen beim Laden und Entladen überwacht und schützt, sowie die Ladeeinrichtung. Flottenkonzepte können statt des Ladens am Fahrzeug den Batterietausch an festen Stationen vorsehen. Unmotorisierte Lastenräder kommen ohne Batteriesystem aus und versorgen ihre Beleuchtung über eine Lichtmaschine.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P8: Batterie an Bord, Ladesystem, Lichtmaschine oder Batterie als Energiequelle der Beleuchtung",
+              "Q3: Akku-Management mit Tausch an festen Plätzen im ONO-Konzept",
+              "Funktionsprinzip: ein wiederaufladbarer Energiespeicher braucht eine Ladeeinrichtung und eine Überwachung gegen Überlastung"
+            ],
+            "schluss": "Das Energieversorgungssystem besteht aus Batteriesystem, Ladeeinrichtung und Lichtmaschine; bei rein muskelkraftbetriebenen Rädern bleibt nur die Lichtmaschine."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Lenksystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E28",
+      "absaetze": [
+        {
+          "absatz_id": "P10",
+          "text": "Beim Frontlader und beim Long John liegt das Vorderrad unter oder vor der Ladefläche und wird vom Lenker über Gestänge oder Seilzug angesteuert; Longtails fahren sich eher wie gewöhnliche Fahrräder. Dreiräder mit Ladefläche zwischen den Vorderrädern lenken im Wesentlichen auf drei Arten. Bei Drehschemel- oder Knicklenkung schwenkt die starr mit den Vorderrädern verbundene Last mit, die Räder neigen bei schnellerer Kurvenfahrt zum Kippen, und ein Lenkungsdämpfer kann die selbstverstärkende Lenkwirkung abschwächen. Bei Achsschenkellenkung werden die Vorderräder einzeln angelenkt, die Ladefläche ist rahmenfest, aber durch die einschwenkenden Räder kleiner. Dreiräder mit Einzelradlenkung legen sich wie Zweiräder in die Kurve.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q1", "fundstelle": "Abschnitt „Bauformen“, Aufzählungspunkte „Frontlader“ und „Vorderlader“/„Long John“ sowie Absatz zu Lasten-Dreirädern mit den drei Lenkungsbauarten"},
+            {"quellen_id": "Q2", "fundstelle": "Abschnitt „Longtail bicycle“, Absatz 1"}
+          ],
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P11",
+          "text": "Das Lenksystem besteht damit aus Lenker, Lenkgestänge oder Seilzug und der Lenkgabel des Vorderrads; bei mehrspurigen Rädern treten Drehschemel oder Achsschenkel an die Stelle der Lenkgabel. Mini-Lastenräder und Longtails lenken das Vorderrad direkt, das Lenkgestänge entfällt. Ein Drehschemel verlangt eine schwenkbare Lagerung des Ladeteils am Rahmen, die Achsschenkellenkung Freiraum für die einschwenkenden Räder.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P10: Übertragung über Gestänge oder Seilzug bei vorgelagertem Vorderrad; Drehschemel, Achsschenkel- und Einzelradlenkung bei Dreirädern",
+              "P3: Mini-Lastenräder und Longtails mit konventioneller Vorderradanordnung"
+            ],
+            "schluss": "Lenker, Lenkgestänge und Lenkgabel bilden die Komponenten; die Lenkungsbauart bestimmt die Anbindung der Ladeplattform an den Rahmen."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Bremssystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E32",
+      "absaetze": [
+        {
+          "absatz_id": "P12",
+          "text": "Nach der deutschen Straßenverkehrs-Zulassungs-Ordnung müssen Fahrräder, also auch Lastenräder mit Fahrradstatus, zwei voneinander unabhängige Bremsen haben; jede Bremse muss während der Fahrt leicht bedient werden können. Als ausreichende Bremse gilt jede fest angebrachte Einrichtung, welche die Geschwindigkeit des Fahrzeugs vermindern und das Fahrzeug feststellen kann.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q7", "fundstelle": "Absatz 1 Sätze 1 und 2, Absatz 2"},
+            {"quellen_id": "Q5", "fundstelle": "Zusammenfassung und Abschnitt 2.1.1, Absatz 1 (Lastenrad ist ein Fahrrad mit allen Rechten und Pflichten)"}
+          ],
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P13",
+          "text": "Das Bremssystem umfasst damit die Bremshebel am Lenker, die Betriebsbremse aus zwei unabhängigen Radbremsen mit Seilzug- oder Hydraulikbetätigung und eine Feststellbremse. Mehrspurige Räder kippen beim Abstellen nicht, können aber wegrollen und brauchen daher eine Feststellfunktion. Die hohe Gesamtmasse beladener Lastenräder verlangt Radbremsen, die auf die Zuladung ausgelegt sind.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P12: zwei unabhängige, während der Fahrt leicht bedienbare Bremsen; eine ausreichende Bremse muss das Fahrzeug auch feststellen können",
+              "P3: mehrspurige Lastenräder stehen stabil, Heavy Cargobikes tragen hohe Zuladungen",
+              "Funktionsprinzip: Bremsleistung wächst mit der zu verzögernden Masse"
+            ],
+            "schluss": "Bremshebel, Betriebsbremse und Feststellbremse sind die Komponenten; mehrspurige und schwere Lastenräder stellen erhöhte Anforderungen an Feststellen und Bremsvermögen."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrerhaus",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E36",
+      "absaetze": [
+        {
+          "absatz_id": "P14",
+          "text": "In Deutschland brauchen Kinder bis sieben Jahre auf dem Fahrrad gesonderte Sitze und eine Vorrichtung, die verhindert, dass ihre Füße in die Speichen geraten; weitere Personen dürfen nur auf Lastenrädern befördert werden, die dafür gebaut und eingerichtet sind, und die fahrende Person muss mindestens 16 Jahre alt sein. Im Kasten eines Long John sitzen ältere Kinder auf einer Bank mit Drei- oder Fünfpunktgurt, Verdecke schützen vor Witterung. Nach der Unfallforschung der Versicherer lässt sich die Sicherheit vor allem durch Sitze mit Kopfschutz, wirksame Gurte und Sicherheitszellen verbessern. Gewerbliche Modelle wie das ONO haben eine wettergeschützte Kabine.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q5", "fundstelle": "Abschnitt 2.1.1, Absatz 6 (Kinder- und Personentransport nach § 21 Absatz 3 StVO)"},
+            {"quellen_id": "Q2", "fundstelle": "Abschnitt „Long john bicycle“, Absatz 4"},
+            {"quellen_id": "Q1", "fundstelle": "Abschnitt „Rechtslage“, Unterabschnitt „Deutschland“, Absatz zur Unfallforschung der Versicherer"},
+            {"quellen_id": "Q3", "fundstelle": "Abschnitt „ONO“, Absatz 2 (wettergeschützte Kabine)"}
+          ],
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P15",
+          "text": "Das Fahrerhaus ist beim Lastenrad meist ein offener Fahrerplatz: Sitze wie Sattel oder Fahrersitz, Bedienelemente am Lenker für Schaltung, Bremse, Licht und Unterstützungsstufe sowie Anzeigeelemente für Geschwindigkeit und Ladezustand. Ein Verdeck schützt vor Witterung, erhöht aber Masse, Breite und Seitenwindfläche. Das Rückhaltesystem für mitfahrende Kinder ist im Ladebereich befestigt und koppelt Fahrerhaus und Aufbau.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P14: Verdecke und Kabinen als Witterungsschutz, Sitze und Gurte für Kinder im Kasten",
+              "P5 und P19: Gangschaltung und Hilfsantrieb mit wählbarer Unterstützung verlangen Bedien- und Anzeigeelemente",
+              "P22: Beleuchtung muss eingeschaltet werden können"
+            ],
+            "schluss": "Das Fahrerhaus besteht aus Fahrerplatz (Sitze, Bedienelemente, Anzeigeelemente), optionalem Verdeck und dem im Ladebereich befestigten Rückhaltesystem."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Aufbau und Ladung",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E43",
+      "absaetze": [
+        {
+          "absatz_id": "P16",
+          "text": "Der Ladebereich ist eine offene oder geschlossene Box, eine flache Plattform oder ein Korb über einem oder beiden Rädern, tief hinter dem Vorderrad oder zwischen parallelen Rädern. Aufbauten sind entweder Wechselcontainer, die sich lösen und gegen volle tauschen lassen, teils mit elektronischen Schlössern und vor allem in der Logistik, oder fest verbaute Container, auch als offener Pick-up oder mit Plane. Die Anwenderempfehlung RLVD-001 des Radlogistik Verbands Deutschland empfiehlt einheitliche Montagepunkte für Aufbauten hinter der fahrenden Person und zwei an der Europalette orientierte Grundtypen. Mit Anhängern bilden Lastenräder Gespanne; nach deutschem Recht darf ein Pedelec-Gespann mit angetriebenem Anhänger höchstens 0,25 kW Nenndauerleistung haben.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q2", "fundstelle": "Einleitung, Absatz 2"},
+            {"quellen_id": "Q4", "fundstelle": "Abschnitte 1.5 und 1.6.1"},
+            {"quellen_id": "Q5", "fundstelle": "Abschnitte 2.1.3, Absatz 1, und 2.2.3"}
+          ],
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P17",
+          "text": "Das System Aufbau und Ladung gliedert sich in die Ladeplattform mit Ladeboden und Montagepunkten, den darauf befestigten Transportbehälter und die Anhängevorrichtung. Die Montagepunkte sind die mechanische Schnittstelle zum Rahmen und bestimmen, welche Aufbauten wechselbar sind; ein elektronisches Schloss braucht Versorgung aus dem Bordnetz. Masse und Lage der Ladung wirken auf Schwerpunkt, Bremsen und Lenkung.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P16: Box, Plattform oder Korb; Wechselcontainer mit elektronischen Schlössern; einheitliche Montagepunkte; Gespanne mit Anhängern",
+              "P4: Lage der Ladung bestimmt den Schwerpunkt",
+              "Funktionsprinzip: ein elektrisches Schloss braucht eine Energiequelle"
+            ],
+            "schluss": "Ladeplattform (Ladeboden, Montagepunkte), Transportbehälter und Anhängevorrichtung bilden das Hauptsystem; die Montagepunkte sind die Aufbauschnittstelle zum Rahmen."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Elektrik und Elektronik",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E49",
+      "absaetze": [
+        {
+          "absatz_id": "P18",
+          "text": "Bei elektrisch unterstützten Lastenrädern verbindet das System Elektrik und Elektronik Traktionsbatterie, Motorsteuerung, Bedien- und Anzeigeelemente, Beleuchtung und elektronische Schlösser. Es besteht aus dem Niedervolt-Bordnetz mit Leitungssatz und einem Bussystem für den Datenaustausch zwischen Antriebseinheit, Batterie und Anzeige. Bei unmotorisierten Lastenrädern bleibt nur die Lichtleitung zwischen Lichtmaschine, Scheinwerfer und Leuchten.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P8: Stromkreise bis zu einer niedrigen Gleichspannung, Beleuchtung am Antriebsspeicher oder an der Lichtmaschine",
+              "P7 und P15: Motorsteuerung, Tretsensor, Bedien- und Anzeigeelemente tauschen Signale aus",
+              "P16: elektronische Schlösser an Wechselcontainern",
+              "Annahme zur Bauweise: der Datenaustausch erfolgt über ein gemeinsames Bussystem"
+            ],
+            "schluss": "Leitungssatz des Niedervolt-Bordnetzes und Bussystem bilden das Hauptsystem; ohne Hilfsantrieb reduziert es sich auf die Lichtleitung."
+          },
+          "sicherheit": "gering",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrzeugsteuerung und Information",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E52",
+      "absaetze": [
+        {
+          "absatz_id": "P19",
+          "text": "In Deutschland gilt ein Fahrzeug mit elektrischer Trethilfe als Fahrrad, wenn der Hilfsantrieb höchstens 0,25 kW Nenndauerleistung hat und seine Unterstützung mit zunehmender Geschwindigkeit progressiv abnimmt und bei 25 km/h oder beim Einhalten im Treten unterbrochen wird; eine Anfahr- oder Schiebehilfe darf bis 6 km/h auch ohne Treten antreiben, bei Lastenrädern etwa zum Rangieren in angetriebener Rückwärtsfahrt. Die EU-Verordnung Nr. 168/2013 für Fahrzeuge der Klasse L gilt nicht für solche Fahrräder bis 250 W. Stärker oder über 25 km/h unterstützte Räder gelten als Kraftfahrzeuge, in der Regel der Klasse L.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q6", "fundstelle": "Absatz 2 Sätze 1 und 2"},
+            {"quellen_id": "Q5", "fundstelle": "Abschnitt 2.1.1, Absätze 2 und 4"},
+            {"quellen_id": "Q9", "fundstelle": "Artikel 2 Absatz 2 Buchstabe h"}
+          ],
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P20",
+          "text": "Die Fahrzeugsteuerung und Information setzt diese Grenzen im Fahrzeugmanagement um: Es bildet aus Tretsensor, Geschwindigkeit und Unterstützungsstufe den Sollwert der Motorsteuerung, gibt die Schiebehilfe frei und schaltet die Beleuchtung. Eine Diagnose liefert Fehler- und Wartungsdaten; gewerbliche Flotten ergänzen eine Telematikeinheit zur Ortung. Automatisiert fahrende Lastenräder, die etwa einer abgesessenen Zustellperson folgen, brauchen zusätzlich ansteuerbare Lenk- und Bremsaktoren.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P19: Leistungsgrenze, geschwindigkeitsabhängige Abregelung, Abschaltung beim Einhalten im Treten, Schiebehilfe",
+              "P7: Tretsensor und Motorsteuerung im Hilfsantrieb",
+              "Q3: automatisierte Elektro-Lastenräder mit Folgefunktion ohne aktives Pedalieren und Lenken",
+              "Annahme zur Bauweise: Diagnose und Telematik bei gewerblichen Flotten"
+            ],
+            "schluss": "Das Fahrzeugmanagement regelt die Tretunterstützung; Diagnose und Telematikeinheit ergänzen es je nach Einsatz."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrerassistenz und Sicherheit",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E56",
+      "absaetze": [
+        {
+          "absatz_id": "P21",
+          "text": "Fahrerassistenz und Sicherheit sind beim manuell gefahrenen Lastenrad schwach ausgeprägt, da die führende Person das Umfeld selbst wahrnimmt. Zum System gehören eine Diebstahlsicherung, etwa ein Rahmenschloss oder eine verriegelte Ladebox, und bei automatisierten Varianten die Umfeldsensorik. Kipp- und Mitfahrerschutz liegen in Fahrwerk, Neigemechanismus und Rückhaltesystem.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "Q1: Lastenräder brauchen beim Langzeitparken Schutz vor Diebstahl und Vandalismus",
+              "P16: Wechselcontainer mit elektronischen Schlössern",
+              "P20: automatisierte Folgefunktionen setzen eine Erfassung des Umfelds voraus",
+              "P14: Insassenschutz über Sitze, Gurte und Sicherheitszellen"
+            ],
+            "schluss": "Diebstahlsicherung und optionale Umfeldsensorik bilden das Hauptsystem; passive Sicherheit liegt in anderen Hauptsystemen."
+          },
+          "sicherheit": "gering",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Beleuchtung und Sicht",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E59",
+      "absaetze": [
+        {
+          "absatz_id": "P22",
+          "text": "Lastenräder mit Fahrradstatus müssen die Beleuchtungs- und Signalregeln für Fahrräder einhalten. Nach der deutschen Straßenverkehrs-Zulassungs-Ordnung brauchen sie vorn einen oder zwei Scheinwerfer für weißes Abblendlicht und einen weißen Rückstrahler, hinten eine rote Schlussleuchte und einen roten Rückstrahler, gelbe Pedalrückstrahler und seitliche retroreflektierende Kennzeichnung; Fahrtrichtungsanzeiger sind zulässig. Über 1 000 mm Breite sind paarweise Rückstrahler, zwei Scheinwerfer und zwei Schlussleuchten nahe der Außenkante vorgeschrieben, über 1 800 mm die Anbauvorschriften der UN-Regelung Nr. 48 für Personenkraftwagen. Zudem ist mindestens eine helltönende Glocke Pflicht.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q5", "fundstelle": "Abschnitt 2.1.1, Absatz 7"},
+            {"quellen_id": "Q8", "fundstelle": "Absätze 2 bis 5"},
+            {"quellen_id": "Q10", "fundstelle": "Satz 1"}
+          ],
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P23",
+          "text": "Das System Beleuchtung und Sicht gliedert sich in die Baugruppe Lichttechnische Einrichtungen aus Scheinwerfer, Leuchten und Rückstrahlern, die Glocke und gegebenenfalls einen Rückspiegel. Breite Lastenräder tragen Scheinwerfer und Leuchten paarweise außen, was die Leitungsführung verlängert. Verdecken Aufbau oder Verdeck die Sicht nach hinten, stellt ein Rückspiegel die Fahrersicht sicher.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P22: vorgeschriebene Scheinwerfer, Leuchten, Rückstrahler und Glocke; paarweise Anordnung bei großer Breite",
+              "P14 und P16: hohe Aufbauten und Verdecke"
+            ],
+            "schluss": "Lichttechnische Einrichtungen, Glocke und Rückspiegel bilden das Hauptsystem; Fahrzeugbreite und Aufbau bestimmen Anordnung und Sichtbedarf."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Zusammenfassung",
+      "abschnittstyp": "gesamtsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P24",
+          "text": "Architektonisch lässt sich das Lastenrad damit auf oberster Ebene als Gesamtsystem mit den Systemen Fahrzeugstruktur und Fahrwerk, Antriebssystem, Energieversorgungssystem, Lenksystem, Bremssystem, Fahrerhaus, Aufbau und Ladung, Elektrik und Elektronik, Fahrzeugsteuerung und Information, Fahrerassistenz und Sicherheit sowie Beleuchtung und Sicht auffassen; Thermomanagement sowie Neben- und Versorgungssysteme entfallen. Bauform und Antriebsart prägen fast alle anderen Systeme, und die rechtliche Grenze zum Kraftfahrzeug wirkt über Hilfsantrieb, Abmessungen und Beleuchtung auf die ganze Architektur.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": ["P3", "P5", "P7", "P11", "P19", "P22"],
+            "schluss": "Elf Hauptsysteme bilden die oberste Ebene; Bauform, Antriebsart und Fahrradstatus sind die prägenden Architekturentscheidungen."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Modellierungsbezug",
+      "abschnittstyp": "modellierung",
+      "absaetze": [
+        {
+          "absatz_id": "P25",
+          "text": "Für eine Modellierung in SysML bildet der Block `Lastenrad` das Gesamtsystem mit den genannten Systemen als Bestandteilen. Diese lassen sich rekursiv zerlegen, etwa `Antriebssystem → Hilfsantrieb → Traktionsmaschine`, `Antriebssystem → Tretantrieb → Kettentrieb`, `Energieversorgungssystem → Batteriesystem → Batteriemanagementsystem`, `Aufbau und Ladung → Ladeplattform → Montagepunkte` oder `Fahrzeugstruktur und Fahrwerk → Fahrwerk → Neigemechanismus`. Ports und Konnektoren bilden die mechanischen Schnittstellen an Tretkurbel, Radnabe und Montagepunkten, die elektrischen zwischen Batterie, Motorsteuerung und Beleuchtung sowie die informationstechnischen über das Bussystem ab. Die führende Person wird als externer Akteur mit Ports für Tretleistung, Lenk- und Bremseingaben modelliert. Geeignet sind Blockdefinitionsdiagramme, interne Blockdiagramme, Aktivitätsdiagramme und ein Zustandsautomat für die Unterstützungsregelung mit Schiebehilfe.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": ["P2", "P4", "P7", "P9", "P17", "P20"],
+            "schluss": "Die Dekomposition und die Schnittstellen des Artikels lassen sich unmittelbar in Blöcke, Ports und Verhaltensdiagramme überführen."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Flüsse",
+      "abschnittstyp": "fluesse",
+      "absaetze": [
+        {
+          "absatz_id": "P26",
+          "text": "Die Tretkurbel liefert Tretleistung über Kettentrieb und gegebenenfalls Differenzial an das Antriebsrad, beim seriellen Antrieb über den Tretgenerator elektrisch an die Traktionsbatterie; die Traktionsmaschine liefert mechanische Leistung an die Radnabe. Die Traktionsbatterie versorgt Motorsteuerung, Leitungssatz und Scheinwerfer, die Ladeeinrichtung lädt sie. Tretsensor, Bedienelemente, Batteriemanagementsystem und Umfeldsensorik liefern Informationen an das Fahrzeugmanagement, dieses Sollwerte an die Motorsteuerung und Anzeigewerte an die Anzeigeelemente. Lenker, Bremshebel und Montagepunkte übertragen Kräfte auf Lenkgabel, Betriebsbremse und Rahmen.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": ["P6", "P7", "P8", "P9", "P11", "P13", "P17", "P20"],
+            "schluss": "Jeder Fluss verbindet ein liefernd und ein empfangend beschriebenes Element der Hauptsystemabschnitte."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Perspektiven",
+      "abschnittstyp": "perspektiven",
+      "absaetze": [
+        {
+          "absatz_id": "P27",
+          "text": "Physische Dekomposition und Flussperspektive werden über die Funktionszuordnung verbunden: Fahrzeuglasten tragen Rahmen, Achse, Räder und Reifen und Federung; Energie speichern die Traktionsbatterie; Elektrische Energie verteilen der Leitungssatz; Antriebsleistung erzeugen Tretkurbel und Traktionsmaschine; Drehmoment übertragen Kettentrieb, Gangschaltung, Tretgenerator und Differenzial; Fahrzeug fortbewegen das Antriebssystem mit Räder und Reifen; Tretunterstützung regeln Fahrzeugmanagement und Motorsteuerung; Fahrzeug manövrieren Traktionsmaschine und Fahrzeugmanagement; Fahrzeug lenken Lenker, Lenkgestänge, Lenkgabel und Neigemechanismus; Fahrzeug verzögern Bremshebel und Betriebsbremse; Fahrzeug festhalten Feststellbremse und Fahrradständer; Traktionsbatterie laden Ladeeinrichtung und Batteriemanagementsystem; Fahrereingaben erfassen Bedienelemente und Tretsensor; Fahrerinformationen anzeigen die Anzeigeelemente; Insassen schützen das Rückhaltesystem; Ladung aufnehmen Ladeboden und Transportbehälter; Anhänger ziehen die Anhängevorrichtung; Daten übertragen Bussystem und Telematikeinheit; Fahrzeugzustand überwachen Diagnose und Batteriemanagementsystem; Fahrzeugposition bestimmen die Telematikeinheit; Fahrzeugumfeld erfassen die Umfeldsensorik; Fahrzeug gegen Diebstahl sichern die Diebstahlsicherung; Fahrzeugumgebung ausleuchten der Scheinwerfer; Lichtsignale abgeben Leuchten und Rückstrahler; Schallzeichen abgeben die Glocke; Fahrersicht sicherstellen der Rückspiegel.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": ["P4", "P7", "P9", "P11", "P13", "P15", "P17", "P18", "P20", "P21", "P23"],
+            "schluss": "Jede Funktion des Modellblocks ist mindestens einem ausführenden Element zugeordnet."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    }
+  ],
+  "modell": {
+    "elemente": [
+      {"id": "E1", "name": "Lastenrad", "typ": "gesamtsystem", "eltern_id": null, "absatz_ids": ["P1", "P2", "P24", "P25"]},
+      {"id": "E2", "name": "Fahrzeugstruktur und Fahrwerk", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P3", "P4", "P24"], "kategorie": "struktur_fahrwerk"},
+      {"id": "E3", "name": "Tragstruktur", "typ": "subsystem", "eltern_id": "E2", "absatz_ids": ["P4"]},
+      {"id": "E4", "name": "Rahmen", "typ": "komponente", "eltern_id": "E3", "absatz_ids": ["P3", "P4", "P17"]},
+      {"id": "E5", "name": "Fahrradständer", "typ": "komponente", "eltern_id": "E3", "absatz_ids": ["P3", "P27"]},
+      {"id": "E6", "name": "Fahrwerk", "typ": "subsystem", "eltern_id": "E2", "absatz_ids": ["P4", "P21", "P25"]},
+      {"id": "E7", "name": "Räder und Reifen", "typ": "komponente", "eltern_id": "E6", "absatz_ids": ["P4", "P27"]},
+      {"id": "E8", "name": "Federung", "typ": "komponente", "eltern_id": "E6", "absatz_ids": ["P4", "P27"]},
+      {"id": "E9", "name": "Neigemechanismus", "typ": "komponente", "eltern_id": "E6", "absatz_ids": ["P4", "P21", "P25"]},
+      {"id": "E10", "name": "Achse", "typ": "komponente", "eltern_id": "E6", "absatz_ids": ["P4", "P27"]},
+      {"id": "E11", "name": "Antriebssystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P5", "P6", "P7", "P24"], "kategorie": "antrieb"},
+      {"id": "E12", "name": "Tretantrieb", "typ": "subsystem", "eltern_id": "E11", "absatz_ids": ["P7", "P25"]},
+      {"id": "E13", "name": "Tretkurbel", "typ": "komponente", "eltern_id": "E12", "absatz_ids": ["P5", "P7", "P26"]},
+      {"id": "E14", "name": "Kettentrieb", "typ": "komponente", "eltern_id": "E12", "absatz_ids": ["P7", "P26"]},
+      {"id": "E15", "name": "Gangschaltung", "typ": "komponente", "eltern_id": "E12", "absatz_ids": ["P5", "P7"]},
+      {"id": "E20", "name": "Tretgenerator", "typ": "komponente", "eltern_id": "E12", "absatz_ids": ["P7", "P26"]},
+      {"id": "E16", "name": "Hilfsantrieb", "typ": "subsystem", "eltern_id": "E11", "absatz_ids": ["P7", "P19", "P25"]},
+      {"id": "E17", "name": "Traktionsmaschine", "typ": "komponente", "eltern_id": "E16", "absatz_ids": ["P7", "P25", "P26"]},
+      {"id": "E18", "name": "Motorsteuerung", "typ": "komponente", "eltern_id": "E16", "absatz_ids": ["P7", "P18", "P20", "P26"]},
+      {"id": "E19", "name": "Tretsensor", "typ": "komponente", "eltern_id": "E16", "absatz_ids": ["P7", "P20", "P26"]},
+      {"id": "E21", "name": "Differenzial", "typ": "komponente", "eltern_id": "E11", "absatz_ids": ["P7", "P26"]},
+      {"id": "E22", "name": "Energieversorgungssystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P8", "P9", "P24"], "kategorie": "energieversorgung"},
+      {"id": "E23", "name": "Batteriesystem", "typ": "subsystem", "eltern_id": "E22", "absatz_ids": ["P9", "P25"]},
+      {"id": "E24", "name": "Traktionsbatterie", "typ": "komponente", "eltern_id": "E23", "absatz_ids": ["P9", "P18", "P26"]},
+      {"id": "E25", "name": "Batteriemanagementsystem", "typ": "komponente", "eltern_id": "E23", "absatz_ids": ["P9", "P25", "P26"]},
+      {"id": "E26", "name": "Ladeeinrichtung", "typ": "komponente", "eltern_id": "E22", "absatz_ids": ["P9", "P26"]},
+      {"id": "E27", "name": "Lichtmaschine", "typ": "komponente", "eltern_id": "E22", "absatz_ids": ["P8", "P9", "P18"]},
+      {"id": "E28", "name": "Lenksystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P10", "P11", "P24"], "kategorie": "lenkung"},
+      {"id": "E29", "name": "Lenker", "typ": "komponente", "eltern_id": "E28", "absatz_ids": ["P10", "P11", "P26"]},
+      {"id": "E30", "name": "Lenkgestänge", "typ": "komponente", "eltern_id": "E28", "absatz_ids": ["P11", "P27"]},
+      {"id": "E31", "name": "Lenkgabel", "typ": "komponente", "eltern_id": "E28", "absatz_ids": ["P11", "P26"]},
+      {"id": "E32", "name": "Bremssystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P12", "P13", "P24"], "kategorie": "bremse"},
+      {"id": "E33", "name": "Bremshebel", "typ": "komponente", "eltern_id": "E32", "absatz_ids": ["P13", "P26"]},
+      {"id": "E34", "name": "Betriebsbremse", "typ": "komponente", "eltern_id": "E32", "absatz_ids": ["P13", "P26"]},
+      {"id": "E35", "name": "Feststellbremse", "typ": "komponente", "eltern_id": "E32", "absatz_ids": ["P13", "P27"]},
+      {"id": "E36", "name": "Fahrerhaus", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P14", "P15", "P24"], "kategorie": "bedienraum"},
+      {"id": "E37", "name": "Fahrerplatz", "typ": "subsystem", "eltern_id": "E36", "absatz_ids": ["P15"]},
+      {"id": "E38", "name": "Sitze", "typ": "komponente", "eltern_id": "E37", "absatz_ids": ["P14", "P15"]},
+      {"id": "E39", "name": "Bedienelemente", "typ": "komponente", "eltern_id": "E37", "absatz_ids": ["P15", "P26"]},
+      {"id": "E40", "name": "Anzeigeelemente", "typ": "komponente", "eltern_id": "E37", "absatz_ids": ["P15", "P26"]},
+      {"id": "E41", "name": "Verdeck", "typ": "komponente", "eltern_id": "E36", "absatz_ids": ["P15", "P23"]},
+      {"id": "E42", "name": "Rückhaltesystem", "typ": "komponente", "eltern_id": "E36", "absatz_ids": ["P15", "P21"]},
+      {"id": "E43", "name": "Aufbau und Ladung", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P16", "P17", "P24", "P25"], "kategorie": "aufbau_nutzlast"},
+      {"id": "E44", "name": "Ladeplattform", "typ": "subsystem", "eltern_id": "E43", "absatz_ids": ["P17", "P25"]},
+      {"id": "E45", "name": "Ladeboden", "typ": "komponente", "eltern_id": "E44", "absatz_ids": ["P17", "P27"]},
+      {"id": "E46", "name": "Montagepunkte", "typ": "komponente", "eltern_id": "E44", "absatz_ids": ["P16", "P17", "P25"]},
+      {"id": "E47", "name": "Transportbehälter", "typ": "komponente", "eltern_id": "E43", "absatz_ids": ["P17", "P27"]},
+      {"id": "E48", "name": "Anhängevorrichtung", "typ": "komponente", "eltern_id": "E43", "absatz_ids": ["P17", "P27"]},
+      {"id": "E49", "name": "Elektrik und Elektronik", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P18", "P24"], "kategorie": "elektrik_elektronik"},
+      {"id": "E50", "name": "Leitungssatz", "typ": "komponente", "eltern_id": "E49", "absatz_ids": ["P18", "P26"]},
+      {"id": "E51", "name": "Bussystem", "typ": "komponente", "eltern_id": "E49", "absatz_ids": ["P18", "P25"]},
+      {"id": "E52", "name": "Fahrzeugsteuerung und Information", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P19", "P20", "P24"], "kategorie": "steuerung_information"},
+      {"id": "E53", "name": "Fahrzeugmanagement", "typ": "komponente", "eltern_id": "E52", "absatz_ids": ["P20", "P26"]},
+      {"id": "E54", "name": "Diagnose", "typ": "komponente", "eltern_id": "E52", "absatz_ids": ["P20", "P27"]},
+      {"id": "E55", "name": "Telematikeinheit", "typ": "komponente", "eltern_id": "E52", "absatz_ids": ["P20", "P27"]},
+      {"id": "E56", "name": "Fahrerassistenz und Sicherheit", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P21", "P24"], "kategorie": "assistenz_sicherheit"},
+      {"id": "E57", "name": "Umfeldsensorik", "typ": "komponente", "eltern_id": "E56", "absatz_ids": ["P21", "P26"]},
+      {"id": "E58", "name": "Diebstahlsicherung", "typ": "komponente", "eltern_id": "E56", "absatz_ids": ["P21", "P27"]},
+      {"id": "E59", "name": "Beleuchtung und Sicht", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P22", "P23", "P24"], "kategorie": "beleuchtung_sicht"},
+      {"id": "E60", "name": "Lichttechnische Einrichtungen", "typ": "subsystem", "eltern_id": "E59", "absatz_ids": ["P23"]},
+      {"id": "E61", "name": "Scheinwerfer", "typ": "komponente", "eltern_id": "E60", "absatz_ids": ["P22", "P23", "P26"]},
+      {"id": "E62", "name": "Leuchten", "typ": "komponente", "eltern_id": "E60", "absatz_ids": ["P23", "P27"]},
+      {"id": "E63", "name": "Rückstrahler", "typ": "komponente", "eltern_id": "E60", "absatz_ids": ["P22", "P23"]},
+      {"id": "E64", "name": "Glocke", "typ": "komponente", "eltern_id": "E59", "absatz_ids": ["P22", "P23"]},
+      {"id": "E65", "name": "Rückspiegel", "typ": "komponente", "eltern_id": "E59", "absatz_ids": ["P23", "P27"]}
+    ],
+    "funktionen": [
+      {"id": "F1", "name": "Fahrzeuglasten tragen", "ausgefuehrt_von": ["E4", "E10", "E7", "E8"], "absatz_ids": ["P4", "P27"]},
+      {"id": "F2", "name": "Energie speichern", "ausgefuehrt_von": ["E24"], "absatz_ids": ["P9", "P27"]},
+      {"id": "F3", "name": "Elektrische Energie verteilen", "ausgefuehrt_von": ["E50"], "absatz_ids": ["P18", "P27"]},
+      {"id": "F4", "name": "Antriebsleistung erzeugen", "ausgefuehrt_von": ["E13", "E17"], "absatz_ids": ["P5", "P7", "P27"]},
+      {"id": "F5", "name": "Drehmoment übertragen", "ausgefuehrt_von": ["E14", "E15", "E20", "E21"], "absatz_ids": ["P7", "P27"]},
+      {"id": "F6", "name": "Fahrzeug fortbewegen", "ausgefuehrt_von": ["E11", "E7"], "absatz_ids": ["P5", "P27"]},
+      {"id": "F7", "name": "Tretunterstützung regeln", "ausgefuehrt_von": ["E53", "E18"], "absatz_ids": ["P19", "P20", "P27"]},
+      {"id": "F8", "name": "Fahrzeug manövrieren", "ausgefuehrt_von": ["E17", "E53"], "absatz_ids": ["P19", "P20", "P27"]},
+      {"id": "F9", "name": "Fahrzeug lenken", "ausgefuehrt_von": ["E29", "E30", "E31", "E9"], "absatz_ids": ["P10", "P11", "P27"]},
+      {"id": "F10", "name": "Fahrzeug verzögern", "ausgefuehrt_von": ["E33", "E34"], "absatz_ids": ["P12", "P13", "P27"]},
+      {"id": "F11", "name": "Fahrzeug festhalten", "ausgefuehrt_von": ["E35", "E5"], "absatz_ids": ["P3", "P13", "P27"]},
+      {"id": "F12", "name": "Traktionsbatterie laden", "ausgefuehrt_von": ["E26", "E25"], "absatz_ids": ["P9", "P27"]},
+      {"id": "F13", "name": "Fahrereingaben erfassen", "ausgefuehrt_von": ["E39", "E19"], "absatz_ids": ["P15", "P20", "P27"]},
+      {"id": "F14", "name": "Fahrerinformationen anzeigen", "ausgefuehrt_von": ["E40"], "absatz_ids": ["P15", "P27"]},
+      {"id": "F15", "name": "Insassen schützen", "ausgefuehrt_von": ["E42"], "absatz_ids": ["P14", "P15", "P27"]},
+      {"id": "F16", "name": "Ladung aufnehmen", "ausgefuehrt_von": ["E45", "E47"], "absatz_ids": ["P16", "P17", "P27"]},
+      {"id": "F17", "name": "Anhänger ziehen", "ausgefuehrt_von": ["E48"], "absatz_ids": ["P16", "P17", "P27"]},
+      {"id": "F18", "name": "Daten übertragen", "ausgefuehrt_von": ["E51", "E55"], "absatz_ids": ["P18", "P20", "P27"]},
+      {"id": "F19", "name": "Fahrzeugzustand überwachen", "ausgefuehrt_von": ["E54", "E25"], "absatz_ids": ["P9", "P20", "P27"]},
+      {"id": "F20", "name": "Fahrzeugposition bestimmen", "ausgefuehrt_von": ["E55"], "absatz_ids": ["P20", "P27"]},
+      {"id": "F21", "name": "Fahrzeugumfeld erfassen", "ausgefuehrt_von": ["E57"], "absatz_ids": ["P21", "P27"]},
+      {"id": "F22", "name": "Fahrzeug gegen Diebstahl sichern", "ausgefuehrt_von": ["E58"], "absatz_ids": ["P21", "P27"]},
+      {"id": "F23", "name": "Fahrzeugumgebung ausleuchten", "ausgefuehrt_von": ["E61"], "absatz_ids": ["P22", "P27"]},
+      {"id": "F24", "name": "Lichtsignale abgeben", "ausgefuehrt_von": ["E62", "E63"], "absatz_ids": ["P22", "P23", "P27"]},
+      {"id": "F25", "name": "Schallzeichen abgeben", "ausgefuehrt_von": ["E64"], "absatz_ids": ["P22", "P27"]},
+      {"id": "F26", "name": "Fahrersicht sicherstellen", "ausgefuehrt_von": ["E65"], "absatz_ids": ["P23", "P27"]}
+    ],
+    "fluesse": [
+      {"id": "S1", "von": "E13", "nach": "E14", "art": "mechanisch", "medium": "Tretleistung", "absatz_ids": ["P7", "P26"]},
+      {"id": "S2", "von": "E14", "nach": "E7", "art": "mechanisch", "medium": "Antriebsleistung über Kette oder Riemen", "absatz_ids": ["P5", "P26"], "schnittstelle": "Radnabe des Antriebsrads"},
+      {"id": "S3", "von": "E17", "nach": "E7", "art": "mechanisch", "medium": "Unterstützungsleistung", "absatz_ids": ["P5", "P26"], "schnittstelle": "Radnabe oder Tretlager"},
+      {"id": "S4", "von": "E24", "nach": "E18", "art": "elektrisch", "medium": "Antriebsenergie", "absatz_ids": ["P18", "P26"], "schnittstelle": "Batterieanschluss der Antriebseinheit"},
+      {"id": "S5", "von": "E18", "nach": "E17", "art": "elektrisch", "medium": "geregelter Motorstrom", "absatz_ids": ["P7", "P20"]},
+      {"id": "S6", "von": "E19", "nach": "E53", "art": "information", "medium": "Tretsignal", "absatz_ids": ["P20", "P26"], "schnittstelle": "Bussystem"},
+      {"id": "S7", "von": "E53", "nach": "E18", "art": "information", "medium": "Sollwert der Unterstützung", "absatz_ids": ["P20", "P26"], "schnittstelle": "Bussystem"},
+      {"id": "S8", "von": "E26", "nach": "E24", "art": "elektrisch", "medium": "Ladestrom", "absatz_ids": ["P9", "P26"]},
+      {"id": "S9", "von": "E24", "nach": "E61", "art": "elektrisch", "medium": "Lichtstrom", "absatz_ids": ["P8", "P26"], "schnittstelle": "Lichtanschluss am Antriebsspeicher"},
+      {"id": "S10", "von": "E27", "nach": "E61", "art": "elektrisch", "medium": "Lichtstrom", "absatz_ids": ["P8", "P18"], "schnittstelle": "Lichtleitung"},
+      {"id": "S11", "von": "E29", "nach": "E30", "art": "mechanisch", "medium": "Lenkbewegung", "absatz_ids": ["P10", "P11"]},
+      {"id": "S12", "von": "E30", "nach": "E31", "art": "mechanisch", "medium": "Lenkbewegung", "absatz_ids": ["P11", "P26"]},
+      {"id": "S13", "von": "E31", "nach": "E7", "art": "mechanisch", "medium": "Lenkwinkel", "absatz_ids": ["P11"], "schnittstelle": "Radaufnahme der Lenkgabel"},
+      {"id": "S14", "von": "E33", "nach": "E34", "art": "mechanisch", "medium": "Seilzug oder Bremsflüssigkeit", "absatz_ids": ["P13", "P26"]},
+      {"id": "S15", "von": "E34", "nach": "E7", "art": "mechanisch", "medium": "Bremsmoment", "absatz_ids": ["P13"], "schnittstelle": "Bremsaufnahme am Rad"},
+      {"id": "S16", "von": "E47", "nach": "E46", "art": "mechanisch", "medium": "Ladungslast", "absatz_ids": ["P17"]},
+      {"id": "S17", "von": "E46", "nach": "E4", "art": "mechanisch", "medium": "Aufbau- und Ladungslast", "absatz_ids": ["P16", "P17", "P26"], "schnittstelle": "Aufbauschnittstelle (Montagepunkte)"},
+      {"id": "S18", "von": "E39", "nach": "E53", "art": "information", "medium": "Fahrereingaben", "absatz_ids": ["P15", "P26"], "schnittstelle": "Bussystem"},
+      {"id": "S19", "von": "E53", "nach": "E40", "art": "information", "medium": "Anzeigewerte", "absatz_ids": ["P15", "P26"], "schnittstelle": "Bussystem"},
+      {"id": "S20", "von": "E20", "nach": "E24", "art": "elektrisch", "medium": "Generatorstrom", "absatz_ids": ["P6", "P26"], "schnittstelle": "Generatoranschluss"},
+      {"id": "S21", "von": "E25", "nach": "E53", "art": "information", "medium": "Batteriezustand", "absatz_ids": ["P9", "P26"], "schnittstelle": "Bussystem"},
+      {"id": "S22", "von": "E57", "nach": "E53", "art": "information", "medium": "Umfelddaten", "absatz_ids": ["P20", "P21", "P26"], "schnittstelle": "Sensorschnittstelle"},
+      {"id": "S23", "von": "E48", "nach": "E4", "art": "mechanisch", "medium": "Zug- und Stützkraft", "absatz_ids": ["P16", "P17"], "schnittstelle": "Kupplungsaufnahme am Hinterbau"},
+      {"id": "S24", "von": "E24", "nach": "E50", "art": "elektrisch", "medium": "Bordnetzenergie", "absatz_ids": ["P18", "P26"], "schnittstelle": "Bordnetzanschluss der Batterie"},
+      {"id": "S25", "von": "E50", "nach": "E58", "art": "elektrisch", "medium": "Versorgung elektronisches Schloss", "absatz_ids": ["P17", "P18"], "schnittstelle": "Versorgungsanschluss des Schlosses"},
+      {"id": "S26", "von": "E14", "nach": "E21", "art": "mechanisch", "medium": "Antriebsleistung", "absatz_ids": ["P7", "P26"]},
+      {"id": "S27", "von": "E21", "nach": "E7", "art": "mechanisch", "medium": "Antriebsleistung je Rad", "absatz_ids": ["P7"], "schnittstelle": "Radnabe"},
+      {"id": "S28", "von": "E42", "nach": "E44", "art": "mechanisch", "medium": "Rückhaltekräfte", "absatz_ids": ["P15"], "schnittstelle": "Befestigung im Ladebereich"}
+    ],
+    "entfallene_kategorien": [
+      {"kategorie": "thermomanagement", "grund": "Lastenräder besitzen keine eigenständigen Kühl- oder Heizkreisläufe; die Wärme von Traktionsmaschine, Motorsteuerung und Traktionsbatterie wird über deren Gehäuse an die Umgebungsluft abgegeben."},
+      {"kategorie": "nebensysteme", "grund": "Keine Druckluft-, Hydraulik- oder Nebenabtriebssysteme; Aufbaugeräte und elektronische Schlösser werden, falls nötig, über das Bordnetz oder eigene Speicher des Aufbaus versorgt."}
+    ],
+    "varianten": [
+      {
+        "id": "V1",
+        "element_id": "E2",
+        "bezeichnung": "Spurigkeit und Bauform",
+        "alternativen": [
+          "Einspurig mit Ladefläche vor der führenden Person (Mini-Lastenrad, Long John)",
+          "Einspurig mit verlängertem Hinterbau (Longtail)",
+          "Mehrspurig als Dreirad oder Vierrad, mit oder ohne Neigetechnik",
+          "Heavy Cargobike mit hoher Zuladung"
+        ],
+        "auswahlkriterien": ["Zuladung und Ladevolumen", "Wendigkeit und fahrradähnliches Fahrverhalten", "Standsicherheit im Stillstand", "Fahrzeugbreite und Nutzung von Radwegen", "Abstell- und Tragbarkeit"],
+        "auswirkungen": [
+          {"element_id": "E28", "beschreibung": "Vorgelagertes Vorderrad braucht Lenkgestänge; mehrspurige Bauformen brauchen Drehschemel, Achsschenkel oder Einzelradlenkung."},
+          {"element_id": "E35", "beschreibung": "Mehrspurige Räder brauchen eine Feststellfunktion gegen Wegrollen."},
+          {"element_id": "E21", "beschreibung": "Gemeinsam angetriebene Parallelräder erfordern ein Differenzial oder Radmotoren je Rad."},
+          {"element_id": "E60", "beschreibung": "Breite mehrspurige Räder brauchen paarweise Scheinwerfer, Schlussleuchten und Rückstrahler an den Außenkanten."},
+          {"element_id": "E44", "beschreibung": "Lage der Ladeplattform vorn, hinten oder zwischen den Rädern bestimmt Schwerpunkt und Ladevolumen."}
+        ],
+        "absatz_ids": ["P3", "P4", "P7", "P13", "P22", "P23"]
+      },
+      {
+        "id": "V2",
+        "element_id": "E11",
+        "bezeichnung": "Antriebsart",
+        "alternativen": [
+          "Rein muskelkraftbetriebener Tretantrieb mit Kette oder Riemen",
+          "Pedelec mit Mittelmotor an der Tretkurbel",
+          "Pedelec mit Nabenmotor oder zwei Radmotoren",
+          "Serieller Antrieb mit Tretgenerator ohne Kette"
+        ],
+        "auswahlkriterien": ["Zuladung und Steigungen im Einsatzgebiet", "Wartungsaufwand und Standzeiten", "Anschaffungskosten", "Einhaltung des Fahrradstatus", "private oder gewerbliche Nutzung"],
+        "auswirkungen": [
+          {"element_id": "E23", "beschreibung": "Elektrische Antriebe brauchen ein Batteriesystem, der reine Muskelkraftantrieb nicht."},
+          {"element_id": "E27", "beschreibung": "Ohne Antriebsbatterie versorgt eine Lichtmaschine die Beleuchtung."},
+          {"element_id": "E53", "beschreibung": "Elektrische Antriebe brauchen ein Fahrzeugmanagement zur Regelung der Tretunterstützung."},
+          {"element_id": "E40", "beschreibung": "Mit Hilfsantrieb kommen Anzeigen für Ladezustand und Unterstützungsstufe hinzu."},
+          {"element_id": "E50", "beschreibung": "Der serielle Antrieb überträgt die Tretleistung elektrisch und erweitert den Leitungssatz."}
+        ],
+        "absatz_ids": ["P5", "P6", "P7", "P8", "P9", "P18"]
+      },
+      {
+        "id": "V3",
+        "element_id": "E28",
+        "bezeichnung": "Lenkungsbauart",
+        "alternativen": [
+          "Direkte Lenkung über die Lenkgabel",
+          "Lenkgestänge oder Seilzug zum vorgelagerten Vorderrad",
+          "Drehschemel- oder Knicklenkung mit mitschwenkender Last",
+          "Achsschenkellenkung mit rahmenfester Ladefläche",
+          "Einzelradlenkung mit Neigung in die Kurve"
+        ],
+        "auswahlkriterien": ["Kippstabilität bei Kurvenfahrt", "Lenkkräfte und Lenkgefühl", "nutzbare Ladefläche", "Wendigkeit"],
+        "auswirkungen": [
+          {"element_id": "E44", "beschreibung": "Drehschemel verlangt eine schwenkbare Lagerung des Ladeteils, Achsschenkellenkung Freiraum für einschwenkende Räder."},
+          {"element_id": "E9", "beschreibung": "Einzelradlenkung mit Neigung erfordert einen Neigemechanismus im Fahrwerk."},
+          {"element_id": "E4", "beschreibung": "Die Lenkungsbauart bestimmt Lage des Steuerrohrs und Anbindung der Lenkübertragung am Rahmen."}
+        ],
+        "absatz_ids": ["P10", "P11"]
+      },
+      {
+        "id": "V4",
+        "element_id": "E43",
+        "bezeichnung": "Aufbauart",
+        "alternativen": [
+          "Wechselcontainer",
+          "Fest verbauter geschlossener Container",
+          "Offene Plattform oder Pick-up mit Plane",
+          "Kasten mit Sitzbank für Personenbeförderung"
+        ],
+        "auswahlkriterien": ["Umschlagzeit im Logistikprozess", "Diebstahl- und Witterungsschutz der Ladung", "Passung zu Ladungsträgern wie der Europalette", "Personenbeförderung"],
+        "auswirkungen": [
+          {"element_id": "E58", "beschreibung": "Geschlossene Container können elektronisch verriegelt werden."},
+          {"element_id": "E50", "beschreibung": "Elektronische Schlösser brauchen eine Versorgung aus dem Bordnetz."},
+          {"element_id": "E42", "beschreibung": "Personenbeförderung erfordert Sitze und Rückhaltesystem im Kasten."},
+          {"element_id": "E65", "beschreibung": "Hohe Aufbauten hinter der führenden Person verlangen einen Rückspiegel."},
+          {"element_id": "E4", "beschreibung": "Wechselaufbauten setzen einheitliche Montagepunkte am Rahmen voraus."}
+        ],
+        "absatz_ids": ["P14", "P16", "P17", "P23"]
+      },
+      {
+        "id": "V5",
+        "element_id": "E36",
+        "bezeichnung": "Wetterschutz des Fahrerplatzes",
+        "alternativen": ["Offener Fahrerplatz", "Verdeck", "Geschlossene Kabine"],
+        "auswahlkriterien": ["Witterungsschutz für Fahrer und Mitfahrende", "Masse und Breite", "Seitenwindempfindlichkeit", "Sicht nach hinten"],
+        "auswirkungen": [
+          {"element_id": "E65", "beschreibung": "Verdeck oder Kabine schränken die Sicht ein und erfordern einen Rückspiegel."},
+          {"element_id": "E4", "beschreibung": "Kabine und Verdeck brauchen Befestigungspunkte am Rahmen und erhöhen die Masse."}
+        ],
+        "absatz_ids": ["P14", "P15", "P23"]
+      }
+    ],
+    "klaerungsfragen": [
+      {"id": "K1", "frage": "Soll das Lastenrad einspurig mit Ladefläche vor der führenden Person, als Longtail oder mehrspurig als Dreirad oder Vierrad ausgeführt werden?", "element_ids": ["E2", "E3"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Lenkungsbauart, Feststellfunktion, Antriebsanordnung und Beleuchtungsanordnung ab.", "variante_ids": ["V1"]},
+      {"id": "K2", "frage": "Welche Zuladung und welche zulässige Gesamtmasse muss das Lastenrad aufnehmen, und soll es als leichtes oder schweres Lastenrad ausgelegt werden?", "element_ids": ["E2", "E6"], "anlass": "anforderung", "relevanz": "Davon hängen Rahmenauslegung, Bremsen, Antriebsleistung und anwendbare Prüfnorm ab.", "variante_ids": ["V1"]},
+      {"id": "K3", "frage": "Soll der Antrieb rein mit Muskelkraft, mit Mittelmotor, mit Nabenmotor oder als serieller Antrieb ohne Kette ausgeführt werden?", "element_ids": ["E11", "E16"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Batteriesystem, Fahrzeugmanagement, Kettentrieb und Lichtversorgung ab.", "variante_ids": ["V2"]},
+      {"id": "K4", "frage": "Welche Steigungen, etwa Rampen in Parkhäusern, muss das Lastenrad voll beladen bewältigen?", "element_ids": ["E11", "E17"], "anlass": "betrieb", "relevanz": "Davon hängen Motorbauart, Übersetzung und die Eignung des seriellen Antriebs ab.", "variante_ids": ["V2"]},
+      {"id": "K5", "frage": "Soll die Traktionsbatterie am Fahrzeug geladen, entnommen und extern geladen oder an festen Stationen getauscht werden?", "element_ids": ["E22", "E24", "E26"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Batteriebefestigung, Ladeeinrichtung und Betriebskonzept der Flotte ab."},
+      {"id": "K6", "frage": "Welche Lenkungsbauart ist vorgesehen: direkte Lenkung, Lenkgestänge zum vorgelagerten Vorderrad, Drehschemel, Achsschenkellenkung oder Einzelradlenkung mit Neigung?", "element_ids": ["E28", "E30"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Kippstabilität, nutzbare Ladefläche und Anbindung der Ladeplattform ab.", "variante_ids": ["V3"]},
+      {"id": "K7", "frage": "Wie soll das beladene Lastenrad beim Abstellen auf geneigtem Grund gegen Wegrollen gesichert werden?", "element_ids": ["E32", "E35"], "anlass": "betrieb", "relevanz": "Davon hängt ab, ob eine eigene Feststellbremse oder eine Feststellfunktion der Bremshebel vorgesehen wird."},
+      {"id": "K8", "frage": "Braucht die führende Person einen offenen Fahrerplatz, ein Verdeck oder eine geschlossene Kabine?", "element_ids": ["E36", "E41"], "anlass": "anforderung", "relevanz": "Davon hängen Masse, Breite, Seitenwindempfindlichkeit und Sichtbedarf ab.", "variante_ids": ["V5"]},
+      {"id": "K9", "frage": "Sollen Kinder oder weitere Personen befördert werden, und wie viele Sitzplätze mit Rückhaltesystem sind dafür vorzusehen?", "element_ids": ["E36", "E42", "E38"], "anlass": "anforderung", "relevanz": "Davon hängen Ausführung des Kastens, Rückhaltesystem und rechtliche Eignung zur Personenbeförderung ab.", "variante_ids": ["V4"]},
+      {"id": "K10", "frage": "Sollen Wechselcontainer, fest verbaute Container oder offene Plattformen verwendet werden, und welche Ladungsträger müssen hineinpassen?", "element_ids": ["E43", "E47", "E46"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Montagepunkte, Verriegelung, Diebstahlsicherung und Umschlagprozess ab.", "variante_ids": ["V4"]},
+      {"id": "K11", "frage": "Soll das Lastenrad mit einem Anhänger als Gespann betrieben werden, und ist dieser Anhänger angetrieben?", "element_ids": ["E43", "E48"], "anlass": "schnittstelle", "relevanz": "Davon hängen Anhängevorrichtung, Rahmenlasten und die Leistungsaufteilung im Gespann ab."},
+      {"id": "K12", "frage": "Welche Verbraucher außer Antrieb und Beleuchtung, etwa elektronische Schlösser oder Aufbaugeräte, muss das Bordnetz versorgen?", "element_ids": ["E49", "E50"], "anlass": "schnittstelle", "relevanz": "Davon hängen Leitungssatz, Batteriekapazität und Steckverbindungen zum Aufbau ab."},
+      {"id": "K13", "frage": "Wird für den Flottenbetrieb eine Telematikeinheit für Ortung und Fernauslesung von Diagnosedaten benötigt?", "element_ids": ["E52", "E55", "E54"], "anlass": "anforderung", "relevanz": "Davon hängen Datenschnittstellen, Energiebedarf im Stillstand und Wartungsprozesse ab."},
+      {"id": "K14", "frage": "Soll eine Schiebehilfe mit angetriebener Rückwärtsfahrt zum Rangieren vorgesehen werden?", "element_ids": ["E52", "E53", "E17"], "anlass": "betrieb", "relevanz": "Davon hängen Bedienelemente, Motoransteuerung und Regelungslogik ab."},
+      {"id": "K15", "frage": "Soll das Lastenrad automatisierte Folgefunktionen ohne aktives Treten und Lenken unterstützen?", "element_ids": ["E56", "E57"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Umfeldsensorik, ansteuerbare Lenk- und Bremsaktoren und die rechtliche Einordnung ab."},
+      {"id": "K16", "frage": "Wie breit wird das Lastenrad, und müssen Scheinwerfer, Schlussleuchten und Rückstrahler deshalb paarweise an den Außenkanten angeordnet werden?", "element_ids": ["E59", "E60"], "anlass": "anforderung", "relevanz": "Davon hängen Anzahl und Anbauort der lichttechnischen Einrichtungen und die Leitungsführung ab.", "variante_ids": ["V1"]}
+    ],
+    "anforderungsthemen": [
+      {"id": "R1", "element_ids": ["E1", "E2"], "thema": "Massenbilanz und Zuladung", "kenngroessen": ["zulässiges Gesamtgewicht", "Leergewicht", "Zuladung", "Ladevolumen"], "regelwerke": [
+        {"bezeichnung": "DIN 79010:2020 Transport- und Lastenfahrrad (Deutschland; einspurige Lastenräder bis 1 m Breite und 250 kg, mehrspurige bis 2 m Breite und 300 kg zulässigem Gesamtgewicht; ohne direkte Rechtskraft)", "quellen_id": "Q5", "fundstelle": "Abschnitt 2.2.1, Absätze 2 und 3"},
+        {"bezeichnung": "DIN EN 17860 Carrier Cycles, Normreihe im Entwurf (Europa; leichte und schwere ein- und mehrspurige Lastenräder, Anhänger, elektrische Komponenten, Personenbeförderung)", "quellen_id": "Q5", "fundstelle": "Abschnitt 2.2.1.1"}
+      ]},
+      {"id": "R2", "element_ids": ["E2", "E4"], "thema": "Fahrzeugabmessungen", "kenngroessen": ["Fahrzeugbreite", "Fahrzeuglänge", "Fahrzeughöhe", "Radstand"], "regelwerke": [
+        {"bezeichnung": "StVZO §§ 32 und 63 (Deutschland; Fahrräder einspurig bis 1 m Breite, mehrspurig bis 2 m Breite, 4 m Länge und 2,5 m Höhe)", "quellen_id": "Q5", "fundstelle": "Abschnitt 2.1.1, Absatz 3"}
+      ]},
+      {"id": "R3", "element_ids": ["E11", "E16", "E53"], "thema": "Begrenzung der Tretunterstützung", "kenngroessen": ["Nenndauerleistung des Hilfsantriebs", "Abschaltgeschwindigkeit der Unterstützung", "Höchstgeschwindigkeit der Schiebehilfe", "Verlauf der Unterstützung über der Geschwindigkeit"], "regelwerke": [
+        {"bezeichnung": "§ 63a Absatz 2 StVZO (Deutschland; Fahrräder mit elektrischer Trethilfe)", "quellen_id": "Q6", "fundstelle": "Absatz 2 Sätze 1 und 2"},
+        {"bezeichnung": "Verordnung (EU) Nr. 168/2013, Ausnahme vom Anwendungsbereich (EU; Fahrräder mit Trethilfe bis 250 W, Abschaltung vor 25 km/h)", "quellen_id": "Q9", "fundstelle": "Artikel 2 Absatz 2 Buchstabe h"}
+      ]},
+      {"id": "R4", "element_ids": ["E11", "E17"], "thema": "Steigfähigkeit und Anfahrverhalten", "kenngroessen": ["Steigfähigkeit voll beladen", "Drehmoment der Traktionsmaschine", "Übersetzungsbereich der Gangschaltung"]},
+      {"id": "R5", "element_ids": ["E22", "E24", "E26"], "thema": "Reichweite und Laden", "kenngroessen": ["Reichweite je Batterieladung", "Batteriekapazität", "Ladedauer", "Nennspannung"], "regelwerke": [
+        {"bezeichnung": "DIN EN 15194 Elektromotorisch unterstützte Räder – EPAC (Europa; Systeme bis 48 V Gleichstrom einschließlich Ladesystem)", "quellen_id": "Q5", "fundstelle": "Abschnitt 2.2.1.2, Absatz 1"}
+      ]},
+      {"id": "R6", "element_ids": ["E28", "E9"], "thema": "Lenkverhalten und Kippstabilität", "kenngroessen": ["Kippstabilität bei Kurvenfahrt", "Wendekreis", "Lenkkraft", "Lenkungsdämpfung"]},
+      {"id": "R7", "element_ids": ["E32", "E34", "E35"], "thema": "Bremsvermögen", "kenngroessen": ["Verzögerung voll beladen", "Feststellvermögen an Steigungen", "Anzahl unabhängiger Bremsen", "Bedienkraft am Bremshebel"], "regelwerke": [
+        {"bezeichnung": "§ 65 StVZO Bremsen (Deutschland; Fahrräder mit zwei voneinander unabhängigen Bremsen)", "quellen_id": "Q7", "fundstelle": "Absatz 1 Satz 2 und Absatz 2"}
+      ]},
+      {"id": "R8", "element_ids": ["E36", "E42", "E38"], "thema": "Personenbeförderung und Insassenschutz", "kenngroessen": ["Anzahl der Sitzplätze", "Gurtart", "Kopfschutz der Sitze", "Speichenschutz"], "regelwerke": [
+        {"bezeichnung": "§ 21 Absatz 3 StVO (Deutschland; Mitnahme von Kindern bis sieben Jahre und Personenbeförderung auf dafür gebauten Lastenrädern, Mindestalter der fahrenden Person)", "quellen_id": "Q5", "fundstelle": "Abschnitt 2.1.1, Absatz 6"}
+      ]},
+      {"id": "R9", "element_ids": ["E43", "E46", "E47"], "thema": "Aufbauschnittstelle und Ladungsträger", "kenngroessen": ["Lage der Montagepunkte", "Innen- und Außenmaße des Aufbaus", "Ladevolumen", "Wechselzeit des Containers"], "regelwerke": [
+        {"bezeichnung": "Anwenderempfehlung RLVD-001 des Radlogistik Verbands Deutschland und des BdKEP (Deutschland; Standardgrößen von Containern und Aufbauten, Montagepunkte, nicht rechtsverbindlich)", "quellen_id": "Q5", "fundstelle": "Abschnitt 2.2.3"}
+      ]},
+      {"id": "R10", "element_ids": ["E49", "E50", "E51"], "thema": "Elektrische Sicherheit und Verkabelung", "kenngroessen": ["Nennspannung des Bordnetzes", "Schutzart gegen Wasser und Staub", "Absicherung der Stromkreise"], "regelwerke": [
+        {"bezeichnung": "DIN EN 15194 Elektromotorisch unterstützte Räder – EPAC (Europa; elektrische Stromkreise bis 48 V Gleichstrom)", "quellen_id": "Q5", "fundstelle": "Abschnitt 2.2.1.2, Absatz 1"}
+      ]},
+      {"id": "R11", "element_ids": ["E52", "E53", "E54", "E55"], "thema": "Unterstützungsregelung, Diagnose und Telematik", "kenngroessen": ["Anzahl der Unterstützungsstufen", "Reaktionszeit der Abschaltung", "Umfang des Fehlerspeichers", "Ortungsgenauigkeit"]},
+      {"id": "R12", "element_ids": ["E56", "E57", "E58"], "thema": "Diebstahlschutz und Automatisierung", "kenngroessen": ["Verriegelungsart", "Erfassungsbereich der Umfeldsensorik", "Folgeabstand"]},
+      {"id": "R13", "element_ids": ["E59", "E60", "E64"], "thema": "Lichttechnische und akustische Ausrüstung", "kenngroessen": ["Anzahl und Anbauhöhe der Scheinwerfer und Leuchten", "Versorgungsdauer der Beleuchtung nach Abschaltung des Antriebs", "Anordnung der Rückstrahler"], "regelwerke": [
+        {"bezeichnung": "§ 67 StVZO Lichttechnische Einrichtungen an Fahrrädern (Deutschland; Fahrräder, mit Sonderregeln über 1 000 mm und über 1 800 mm Breite)", "quellen_id": "Q8", "fundstelle": "Absätze 1 bis 8"},
+        {"bezeichnung": "§ 64a StVZO Einrichtungen für Schallzeichen (Deutschland; Fahrräder)", "quellen_id": "Q10", "fundstelle": "Sätze 1 bis 3"}
+      ]}
+    ]
+  },
+  "offene_punkte": [
+    "Glossarvorschlag: Funktion „Tretunterstützung regeln“ (Regelung des elektrischen Hilfsantriebs abhängig von Treten und Geschwindigkeit; nicht synonym mit „Antriebsleistung erzeugen“).",
+    "Glossarvorschlag: Funktion „Schallzeichen abgeben“ (akustische Warnung anderer Verkehrsteilnehmer, etwa per Glocke; nicht synonym mit „Lichtsignale abgeben“).",
+    "Glossarvorschlag: Funktion „Fahrzeug gegen Diebstahl sichern“ (Verriegeln von Fahrzeug und Ladebox; nicht synonym mit „Fahrzeug festhalten“).",
+    "Abweichung von der Zuordnungsliste: Der Tretgenerator des seriellen Antriebs ist ein Generator (Zuordnung energieversorgung), steht aber unter dem Antriebssystem, weil er dort den Kettentrieb als Übertragungsglied zwischen Tretkurbel und Antrieb ersetzt; die Lichtmaschine steht zuordnungsgemäß im Energieversorgungssystem.",
+    "Recherche: DIN 79010:2020-02 und den Entwurf der Normreihe DIN EN 17860 (Carrier Cycles) im Original für Kippstabilität, Rahmenprüfung, Bremsanforderungen und gewichtsbezogene Definitionen auswerten; beide nur über Q5 bekannt.",
+    "Recherche: Anwenderempfehlung RLVD-001 (Radlogistik Verband Deutschland, BdKEP 2023) im Original für Lage und Maße der Montagepunkte.",
+    "Recherche: § 63a, § 64a und § 65 StVZO wurden über buzer.de gelesen; gesetze-im-internet.de war in diesem Lauf für diese Paragraphen, für § 1 StVG, § 21 StVO und § 32 StVZO nicht abrufbar. Abgleich mit der amtlichen Fassung und direkte Auswertung von § 21 Absatz 3 StVO und § 32 StVZO.",
+    "Recherche: Studie der Unfallforschung der Versicherer zum Kindertransport in Lastenrädern (udv.de, März 2024) für Anforderungen an Sitze, Gurte und Sicherheitszellen.",
+    "Recherche: Fachliteratur zur Bremsauslegung und Feststellbremse schwerer und mehrspuriger Lastenräder, Suchbegriffe „Schwerlastenrad Bremse Feststellbremse“, „cargo cycle brake requirements EN 17860“.",
+    "Recherche: Fachliteratur zu Batteriemanagement und Kommunikationsbus bei Pedelec-Antriebssystemen, Suchbegriffe „EPAC Batteriemanagementsystem“, „Pedelec Antriebssystem Bus Kommunikation“.",
+    "Recherche: Radlogistik, Kapitel 24 (Brennstoffzellenantriebe für Lastenräder), falls der Betrachtungsumfang später um diese Antriebsart erweitert wird."
+  ]
+}

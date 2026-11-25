@@ -1,0 +1,3287 @@
+{
+  "schema_version": "2.3",
+  "artikel_id": "A-0009",
+  "artikeltyp": "blatt",
+  "titel": "Sattelzugmaschine",
+  "betrachtungsumfang": "Generische Referenzarchitektur der Sattelzugmaschine als schweres Straßennutzfahrzeug zum Ziehen von Sattelaufliegern über eine Sattelkupplung, in Frontlenker- und Haubenbauweise, mit dieselverbrennungsmotorischem oder batterieelektrischem Antrieb. Der Sattelauflieger gehört nicht zum Gesamtsystem und erscheint nur als Schnittstellenpartner. Ausdrücklich ausgeschlossen sind Hybrid-, Wasserstoff-, Brennstoffzellen- und Oberleitungsantriebe sowie Ballast- und Schwerlastzugmaschinen mit Zugdeichsel, Terminalzugmaschinen, Kleintransporter mit Sattelplatte und Kombinationen mit Dolly; sie erscheinen höchstens zur Abgrenzung.",
+  "status": "in_arbeit",
+  "quellenzugriff": "ja",
+  "kindartikel_ids": [],
+  "quellen": [
+    {
+      "quellen_id": "Q1",
+      "titel": "Sattelzug (Weiterleitung von „Sattelkupplung“)",
+      "urheber": "Wikipedia, Die freie Enzyklopädie (deutschsprachig)",
+      "stand": "oldid 267255784",
+      "url": "https://de.wikipedia.org/wiki/Sattelzug",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q2",
+      "titel": "Semi-trailer truck",
+      "urheber": "Wikipedia, The Free Encyclopedia (englischsprachig)",
+      "stand": "oldid 1387123698",
+      "url": "https://en.wikipedia.org/wiki/Semi-trailer_truck",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q3",
+      "titel": "Tractor unit",
+      "urheber": "Wikipedia, The Free Encyclopedia (englischsprachig)",
+      "stand": "oldid 1383130196",
+      "url": "https://en.wikipedia.org/wiki/Tractor_unit",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q4",
+      "titel": "Fifth-wheel coupling",
+      "urheber": "Wikipedia, The Free Encyclopedia (englischsprachig)",
+      "stand": "oldid 1383101067",
+      "url": "https://en.wikipedia.org/wiki/Fifth-wheel_coupling",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q5",
+      "titel": "49 CFR § 393.70 – Coupling devices and towing methods, except for driveaway-towaway operations",
+      "urheber": "Federal Motor Carrier Safety Administration, U.S. Department of Transportation (Code of Federal Regulations, Ausgabe 2023)",
+      "stand": "2023-10-01",
+      "url": "https://www.govinfo.gov/content/pkg/CFR-2023-title49-vol5/xml/CFR-2023-title49-vol5-sec393-70.xml",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q6",
+      "titel": "49 CFR § 571.121 – Standard No. 121; Air brake systems",
+      "urheber": "National Highway Traffic Safety Administration, U.S. Department of Transportation (Code of Federal Regulations, Ausgabe 2023)",
+      "stand": "2023-10-01",
+      "url": "https://www.govinfo.gov/content/pkg/CFR-2023-title49-vol6/xml/CFR-2023-title49-vol6-sec571-121.xml",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q7",
+      "titel": "49 CFR § 571.136 – Standard No. 136; Electronic stability control systems for heavy vehicles",
+      "urheber": "National Highway Traffic Safety Administration, U.S. Department of Transportation (Code of Federal Regulations, Ausgabe 2023)",
+      "stand": "2023-10-01",
+      "url": "https://www.govinfo.gov/content/pkg/CFR-2023-title49-vol6/xml/CFR-2023-title49-vol6-sec571-136.xml",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q8",
+      "titel": "49 CFR § 390.5 – Definitions",
+      "urheber": "Federal Motor Carrier Safety Administration, U.S. Department of Transportation (Code of Federal Regulations, Ausgabe 2023)",
+      "stand": "2023-10-01",
+      "url": "https://www.govinfo.gov/content/pkg/CFR-2023-title49-vol5/xml/CFR-2023-title49-vol5-sec390-5.xml",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q9",
+      "titel": "ISO 11992",
+      "urheber": "Wikipedia, The Free Encyclopedia (englischsprachig)",
+      "stand": "oldid 1262860373",
+      "url": "https://en.wikipedia.org/wiki/ISO_11992",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    }
+  ],
+  "abschnitte": [
+    {
+      "ueberschrift": "Einleitung",
+      "abschnittstyp": "gesamtsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P1",
+          "text": "Eine Sattelzugmaschine ist ein vom Lastkraftwagen abgeleitetes Fahrzeug, das anstelle einer Ladefläche eine Sattelkupplung trägt; mit einem Sattelauflieger bildet sie den Sattelzug, in Deutschland amtlich Sattelkraftfahrzeug. Sie basiert meist auf einem kurzen Lkw-Fahrgestell mit Fahrerhaus, Lenk- und Antriebsachsen, Motor und Getriebe, auf dessen Rahmen die Sattelkupplung geschraubt ist. Über sie trägt die Maschine einen erheblichen Teil der Aufliegerlast, was die Traktion verbessert. Das US-Bundesrecht für gewerbliche Kraftfahrzeuge definiert die Zugmaschine als selbstfahrendes Fahrzeug, das vorrangig zum Ziehen anderer Fahrzeuge bestimmt ist, und den Sattelanhänger als Fahrzeug, dessen Gewicht teilweise auf dem Zugfahrzeug ruht.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Einleitung; Abschnitt „Sattelzugmaschine“, Absatz 1; Abschnitt „Sattelauflieger“, Absatz 2 (Last über die Sattelkupplung, Traktion); Abschnitt „Nachteile“, erster Punkt"
+            },
+            {
+              "quellen_id": "Q8",
+              "fundstelle": "§ 390.5, Begriffsbestimmungen „Truck tractor“ und „Trailer“ Nr. (3) „Semitrailer“"
+            }
+          ],
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P2",
+          "text": "Architekturell ist die Sattelzugmaschine ein Lastkraftwagen, dessen Aufbau durch die Sattelkupplung ersetzt ist. Die Systemgrenze verläuft an Kupplung und Versorgungsanschlüssen: Der Auflieger ist ein eigenes Fahrzeug, aber der wichtigste Schnittstellenpartner. Die Hauptsysteme sind über mechanische, pneumatische, elektrische, hydraulische, thermische und informationstechnische Schnittstellen gekoppelt. Für eine Dekomposition, etwa in SysML, zerlegt man die Maschine in die Hauptsysteme des Lastkraftwagens und ordnet die kupplungsspezifischen Elemente dort als Subsysteme und Komponenten ein.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P1",
+              "P10",
+              "P18",
+              "Ein gezogenes Fahrzeug braucht vom Zugfahrzeug Kraftschluss, Bremsenergie, Strom und Steuersignale."
+            ],
+            "schluss": "Die Systemgrenze liegt an Sattelkupplung und Anhängeranschlüssen; die übrigen Hauptsysteme entsprechen dem Lastkraftwagen."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrzeugstruktur und Fahrwerk",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E2",
+      "absaetze": [
+        {
+          "absatz_id": "P3",
+          "text": "Die meisten Sattelzugmaschinen beruhen auf dem Fahrgestell eines schweren Lastkraftwagens ohne Ladungsaufbau, mit kürzeren Rahmen für Frontlenker und Kabinen ohne Schlafplatz und längeren für Schlafkabinen. Die Achszahl richtet sich nach den Achslastvorschriften; am häufigsten sind 4×2, 6×2 und 6×4. Bei den meisten 6×2-Maschinen lässt sich die nicht angetriebene Hinterachse bei geringer Last oder ohne Auflieger anheben, was Reifenverschleiß senkt und die Traktion der Antriebsachse erhöht. Moderne Fahrzeuge haben eine pneumatisch regulierbare Höhenverstellung der Hinterachsen, meist per Fernbedienung aus dem Fahrerhaus; damit hebt die Maschine den Auflieger an, um die Stützbeine freizubekommen.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Abschnitt „Overview“, letzter Absatz; Abschnitt „Axles“, Absätze 2 und 3"
+            },
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Abschnitt „Sattelzugmaschine“, Absatz 2 (Höhenverstellung, Fernbedienung Luftfederung)"
+            }
+          ],
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P4",
+          "text": "Der Rahmen ist das tragende Element: Er nimmt über die Montageplatte die Stützlast des Aufliegers auf und leitet sie mit dem Gewicht von Motor, Fahrerhaus und Tanks in das Fahrwerk. Dieses umfasst die gelenkte Vorderachse, die Antriebsachse, bei mehrachsigen Varianten eine Liftachse oder zweite Antriebsachse, die Luftfederung mit Niveauregelung sowie Räder und Reifen. Die Achskonfiguration ändert andere Hauptsysteme: Eine zweite Antriebsachse erweitert die Kraftübertragung um einen Durchtrieb, eine Liftachse braucht eine pneumatische Hubvorrichtung und eine Lastregelung im Fahrzeugmanagement.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P1",
+              "P3",
+              "Q5 Absatz (b)(1)",
+              "Eine Last, die hinter der Kabine eingeleitet wird, muss über den Rahmen auf die Achsen verteilt werden."
+            ],
+            "schluss": "Rahmen und Fahrwerk bilden den Lastpfad der Sattellast; die Achskonfiguration wirkt auf Antrieb, Druckluft und Steuerung."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Antriebssystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E10",
+      "absaetze": [
+        {
+          "absatz_id": "P5",
+          "text": "Sattelzugmaschinen haben typischerweise großvolumige Dieselmotoren für Leistung, Haltbarkeit und Wirtschaftlichkeit und ein Getriebe mit zehn bis achtzehn Gängen. Wegen der stark wechselnden Lasten sind Schaltgetriebe verbreitet; alle Hersteller bieten jedoch automatisierte Schaltgetriebe und hydraulische Automatikgetriebe an.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Abschnitt „Overview“, Absatz 2"
+            },
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Abschnitt „Transmission“, Absatz 1"
+            }
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P6",
+          "text": "Der Leistungsfluss verläuft vom Verbrennungsmotor über die Kraftübertragung mit Kupplung, Getriebe und Gelenkwelle zum Differenzial der Antriebsachse; im Abgasstrang sitzt die Abgasnachbehandlung. Bei der batterieelektrischen Variante ersetzt ein Elektroantrieb aus Traktionsmaschine und Wechselrichter den Motor; die Kraftübertragung wird kürzer, und die Traktionsmaschine kann beim Verzögern Bremsenergie zurückgewinnen. Die Antriebsart verändert andere Hauptsysteme: Energiespeicher, Kühlkreisläufe, Antrieb von Kompressor und Nebenabtrieb und Bauraum am Rahmen.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P1",
+              "P5",
+              "Q3 Abschnitt „Electrification“",
+              "Funktionsprinzip: Ein Antrieb braucht Energiewandler, Übertragung und Wärmeabfuhr."
+            ],
+            "schluss": "Die Antriebskette folgt dem Lastkraftwagen; die Elektrifizierung tauscht den Wandler und wirkt auf Speicher, Thermomanagement und Nebenaggregate."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Energieversorgungssystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E21",
+      "absaetze": [
+        {
+          "absatz_id": "P7",
+          "text": "Die meisten Sattelzugmaschinen fahren mit Diesel. Mehrere Hersteller erproben und bauen batterieelektrische Maschinen für den Kurz- und Regionalverkehr mit großen Lithium-Ionen- oder Lithium-Eisenphosphat-Batterien. Studien zufolge sind Ladestationen für schwere Elektrofahrzeuge stark konzentriert; ihre Last kann der tausender Haushalte entsprechen und ohne Pufferspeicher das örtliche Netz gefährden.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Abschnitt „Electrification“"
+            }
+          ],
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P8",
+          "text": "Das Energieversorgungssystem umfasst bei der Dieselvariante den Kraftstofftank am Rahmen, bei der elektrischen Variante ein Hochvolt-Energiesystem aus Traktionsbatterie, Ladeeinrichtung und Gleichspannungswandler. Bordnetzbatterie und Generator speisen Verbraucher und über die Steckverbindungen den Auflieger; bei elektrischem Antrieb übernimmt der Gleichspannungswandler die Rolle des Generators. Tanks und Batterien konkurrieren am Rahmen mit Achsen, Druckluftbehältern und Abgasnachbehandlung um Bauraum, während der Raum hinter der Kabine für Kupplung und Schwenkbereich des Aufliegers frei bleibt.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P1",
+              "P7",
+              "P18",
+              "Speicher brauchen Bauraum; am Rahmen konkurrieren alle Anbauteile außerhalb des Kupplungsbereichs."
+            ],
+            "schluss": "Die Antriebsart bestimmt die Speicherkomponenten; deren Größe wirkt auf Rahmenlänge und Achslastverteilung."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Lenksystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E29",
+      "absaetze": [
+        {
+          "absatz_id": "P9",
+          "text": "Das Lenksystem überträgt die Fahrereingabe vom Lenkrad über die Lenksäule auf die Lenkaktorik: Das Lenkgetriebe mit Lenkunterstützung bewegt über das Lenkgestänge die Räder der Vorderachse. Wegen der hohen Achslasten ist die Unterstützung unverzichtbar; sie arbeitet hydraulisch, elektrohydraulisch oder elektrisch. Eine elektrische Unterstützung erlaubt Eingriffe des Spurhalteassistenten und braucht keine motorgetriebene Pumpe. Mehrachsige Maschinen können mehr als eine gelenkte Achse haben; dann erweitert sich das Lenkgestänge um die zweite Lenkachse.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "Q3 Abschnitt „Axles“, Absatz 3 (mehr als eine Lenkachse)",
+              "P6",
+              "Funktionsprinzip: Lenkkräfte schwer belasteter Achsen übersteigen die Handkraft."
+            ],
+            "schluss": "Die Lenkung folgt dem schweren Lkw; Unterstützungsart und Zahl der Lenkachsen sind Varianten."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Bremssystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E36",
+      "absaetze": [
+        {
+          "absatz_id": "P10",
+          "text": "Sattelzüge bremsen mit Druckluft. Die Feststellbremse der Zugmaschine und die Notbremse des Aufliegers sind Federspeicherbremsen, die Druckluft zum Lösen brauchen und bei Druckverlust einfallen. Zwei Leitungen verbinden die Fahrzeuge: Die Vorratsleitung füllt den Luftbehälter des Aufliegers und löst dessen Notbremse, die Steuerleitung steuert die Bremsung im Betrieb. Als Dauerbremsen dienen Motorbremsen und hydraulische oder elektrische Retarder, mit denen lange Gefälle ohne Überhitzung der Radbremsen befahren werden.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Abschnitt „Braking“, Absätze 1, 2, 3 und 6"
+            },
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Abschnitt „Sattelauflieger“, Absatz 2 (zwei Druckluftbremsleitungen)"
+            }
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P11",
+          "text": "In den USA verlangt FMVSS No. 121 für Fahrzeuge, die druckluftgebremste Fahrzeuge ziehen sollen, eine Einrichtung, die den Luftdruck des Zugfahrzeugs bei Druckverlust im gezogenen Fahrzeug schützt. Zugmaschinen brauchen ein Antiblockiersystem, das die Räder mindestens einer Vorder- und einer Hinterachse direkt regelt, und einen Stromkreis, der das Antiblockiersystem des gezogenen Fahrzeugs bei eingeschalteter Zündung dauernd versorgt. FMVSS No. 136 fordert für Zugmaschinen über 11 793 kg zulässiger Gesamtmasse eine Stabilitätsregelung, die Bremsmomente radindividuell einstellt, die Zugmasse schätzt, Lenkeingaben überwacht und das Motormoment verändern kann.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q6",
+              "fundstelle": "S5.1.3, S5.1.6.1(b), S5.1.6.3"
+            },
+            {
+              "quellen_id": "Q7",
+              "fundstelle": "S3.1, S4 (Definition „Electronic stability control system“, Merkmale 1, 6, 7, 8), S5.1"
+            }
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P12",
+          "text": "Im Modell besteht die Betriebsbremse aus Betriebsbremsventil, Bremszylinder und Radbremsen; daneben stehen Feststellbremse und Dauerbremse. Antiblockiersystem und Stabilitätsregelung modulieren den Druck je Rad. Die Anhängersteuerung mit Anhängersteuerventil und Druckluftkupplungsköpfen speist Vorrats- und Steuerleitung und sichert den eigenen Vorrat bei Leitungsabriss. Eine elektronisch geregelte Variante ersetzt die pneumatische Ansteuerung durch elektrische Signale und überträgt die Bremsanforderung zusätzlich über die Datenleitung an den Auflieger.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P10",
+              "P11",
+              "P18",
+              "Jede Bremsfunktion braucht Stellglied, Energiequelle und Ansteuerung."
+            ],
+            "schluss": "Das Bremssystem gliedert sich in Betriebsbremse, Feststell- und Dauerbremse, Regelung und Anhängersteuerung."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrerhaus",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E48",
+      "absaetze": [
+        {
+          "absatz_id": "P13",
+          "text": "In Europa sind Sattelzugmaschinen meist Frontlenker mit der Kabine über dem Motor, in Nordamerika meist Haubenfahrzeuge. Die flache Front erlaubt kürzere Zugmaschinen mit längeren Aufliegern innerhalb der zulässigen Gesamtlänge, bessere Wendigkeit und Sicht; für Reparaturen muss aber die ganze Kabine nach vorn gekippt werden. Eine Schlafkabine haben nicht alle Fahrzeuge. In der EU erlauben seit September 2021 die mit der Verordnung (EU) 2019/1892 gelockerten Regeln längere Kabinen für bessere Aerodynamik und mehr Schutz ungeschützter Verkehrsteilnehmer.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Abschnitt „Europe“, Absatz 1; Abschnitt „Construction“, Legende Nr. 5"
+            },
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Abschnitt „Cab types“, Absätze 2 und 3"
+            }
+          ],
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P14",
+          "text": "Das Fahrerhaus gliedert sich in die Kabine mit Kabinenstruktur, Kabinenlagerung und gegebenenfalls Schlafkabine sowie den Fahrerarbeitsplatz; zu ihm gehören die Sitze, das Rückhaltesystem, die Bedienelemente und das Kombiinstrument. Kabinenstruktur und Rückhaltesystem schützen die Insassen. Über die Bedienelemente steuert der Fahrer auch Luftfederung und Kupplungsentriegelung. Kabinenbauart und Kabinenlänge legen mit der Kupplungslage fest, wie viel Rahmen bis zur Hinterachse bleibt; die Schlafkabine erhöht zudem den Bedarf an Standklimatisierung und Ruhestrom.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P3",
+              "P13",
+              "P16",
+              "Ein Arbeitsplatz braucht Sitz, Schutz, Eingabe und Anzeige."
+            ],
+            "schluss": "Das Fahrerhaus zerfällt in Kabine und Arbeitsplatz; Kabinenlänge koppelt Rahmen, Kupplungslage und Thermomanagement."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Aufbau und Ladung",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E58",
+      "absaetze": [
+        {
+          "absatz_id": "P15",
+          "text": "Die Sattelkupplung besteht aus einer Platte mit eingebautem Schließmechanismus, auf der der Auflieger aufliegt und in die sein Königszapfen eingekuppelt wird; so ist er beweglich, aber sicher verbunden. Die hufeisenförmige Platte dreht sich nicht mit, ihre Oberfläche wird gegen Reibung gefettet. Heutige Kupplungen lassen den Königszapfen von hinten einfahren und verriegeln selbsttätig. Sein Eingriff in den Verriegelungsmechanismus ist die einzige Verbindung zwischen Zugmaschine und Auflieger; eine weitere Sicherung gibt es nicht.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Abschnitt „Sattelzugmaschine“, Absatz 1; Abschnitt „Geschichte“, vorletzter Absatz vor „In Europa“ (Einfahren von hinten, automatische Verriegelung)"
+            },
+            {
+              "quellen_id": "Q4",
+              "fundstelle": "Einleitung, Absatz 1; Abschnitt „Fruehauf automatic semi-trailer“, letzter Absatz"
+            }
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P16",
+          "text": "Für gewerbliche Kraftfahrzeuge in den USA verlangt 49 CFR § 393.70, dass die Unterhälfte der Sattelkupplung mit Konsolen, Montageplatten oder Winkeln am Rahmen verschraubt wird und gegen Verschieben gesichert ist. Der Verriegelungsmechanismus darf ein Trennen nur nach bewusster manueller Entriegelung zulassen, die vom Fahrerhaus aus bedienbar sein darf. Die Kupplung ist so anzuordnen, dass sich das Gewicht bei jedem Beladungszustand richtig auf die Achsen verteilt und Lenken und Bremsen nicht behindert werden. Bei den meisten nordamerikanischen Zugmaschinen ist sie zur Einstellung der Lastverteilung längs verschiebbar.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q5",
+              "fundstelle": "§ 393.70 Absätze (b)(1)(i), (b)(2) und (b)(3)"
+            },
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Abschnitt „North America“, Absatz 3"
+            }
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P17",
+          "text": "Im Modell ist die Sattelkupplung das Subsystem des Hauptsystems Aufbau und Ladung, weil sie den Platz des Ladungsaufbaus einnimmt. Sie besteht aus Kupplungsplatte, Verriegelung, Montageplatte und bei verschiebbarer Ausführung einer Schiebeeinrichtung. Die Stützlast fließt von der Aufliegerstirn über Kupplungsplatte und Montageplatte in den Rahmen, Zug- und Bremskräfte über Königszapfen und Verriegelung. Die Kupplungslage verteilt die Sattellast auf die Achsen und bestimmt den Abstand zur Kabine. Die Kupplungshöhe richtet sich nach den Aufliegern: Großvolumenauflieger mit kleinen Rädern verlangen eine niedrige Sattelhöhe und kleinere Räder an der Zugmaschine.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P15",
+              "P16",
+              "Q1 Abschnitt „Einsatz“, Absatz 2 (Megaliner mit kleineren Rädern an Zugfahrzeug und Auflieger)"
+            ],
+            "schluss": "Die Sattelkupplung bildet ein Subsystem mit Platte, Verriegelung, Befestigung und optionaler Verschiebung; Lage und Höhe sind Architekturparameter."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Elektrik und Elektronik",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E64",
+      "absaetze": [
+        {
+          "absatz_id": "P18",
+          "text": "Die Sattelzugmaschine versorgt den Auflieger mit Strom für Beleuchtung, Antiblockiersystem und weitere Verbraucher; eine Leitung verbindet die Lichtanlage, eine weitere Steckverbindung dient dem Antiblockiersystem. Für den digitalen Datenaustausch zwischen Zugmaschine und einem oder mehreren Anhängern definiert ISO 11992 einen CAN-basierten Bus, dessen Protokoll SAE J1939 ähnelt; Teile betreffen Bitübertragung, Bremsen und Fahrwerk, übrige Ausrüstung und Diagnose.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Abschnitt „Sattelzugmaschine“, Absatz 3; Abschnitt „Sattelauflieger“, Absatz 2"
+            },
+            {
+              "quellen_id": "Q9",
+              "fundstelle": "Einleitung, Absätze 1 und 2; Abschnitt „Official texts“"
+            }
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P19",
+          "text": "Im Modell umfasst Elektrik und Elektronik das Niedervolt-Bordnetz mit Leitungssatz, Stromverteiler und Sicherungen, das Kommunikationsnetz mit Fahrzeugbus und Gateway sowie die Anhängersteckverbindungen im Kupplungsbereich. Das Gateway trennt den internen Fahrzeugbus vom Anhängerbus, damit Fehler eines wechselnden Aufliegers die Zugmaschine nicht stören. Leitungen und Stecker müssen häufiges Kuppeln, Knickbewegungen und Witterung ertragen.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P18",
+              "P8",
+              "Q1 Abschnitt „Vorteile“ (häufiger Aufliegerwechsel)"
+            ],
+            "schluss": "Zum Bordnetz des Lastkraftwagens kommen Anhängerstecker und ein abgetrennter Anhängerbus hinzu."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrzeugsteuerung und Information",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E73",
+      "absaetze": [
+        {
+          "absatz_id": "P20",
+          "text": "Fahrzeugsteuerung und Information koordiniert Funktionen über Hauptsystemgrenzen. Das Fahrzeugmanagement verknüpft Motor, Getriebe, Dauerbremse und Liftachse und berücksichtigt die geschätzte Zugmasse, die je nach Auflieger stark schwankt. Die Diagnose erfasst Fehler der Maschine und über den Anhängerbus auch Meldungen des Aufliegers. Die Telematikeinheit bestimmt die Position und meldet Zustands- und Auftragsdaten; im Betrieb vieler Auflieger mit wenigen Zugmaschinen gehört die Zuordnung beider zu ihren Inhalten.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P11",
+              "P18",
+              "Q1 Abschnitt „Vorteile“ (viele Auflieger, wenige Zugmaschinen)",
+              "P4"
+            ],
+            "schluss": "Die Steuerung muss die wechselnde Zugmasse und den Auflieger als Datenquelle einbeziehen."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrerassistenz und Sicherheit",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E77",
+      "absaetze": [
+        {
+          "absatz_id": "P21",
+          "text": "Das Fahrerassistenz- und Sicherheitssystem stützt sich auf die Umfeldsensorik in der Fahrzeugfront, etwa Radar und Kamera. Darauf bauen die Assistenzfunktionen Notbremsassistent, Spurhalteassistent und Geschwindigkeitsassistent auf, die über Bremssystem, Lenkunterstützung und Antrieb eingreifen. Die Auslegung muss den gekuppelten Auflieger berücksichtigen: Die Zugmasse verlängert den Bremsweg, eine harte Bremsung kann den Zug am Kupplungspunkt einknicken lassen, und der Auflieger verdeckt den Seitenraum beim Abbiegen.",
+          "begruendung": "modellwissen",
+          "belege": [],
+          "sicherheit": "gering",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Beleuchtung und Sicht",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E83",
+      "absaetze": [
+        {
+          "absatz_id": "P22",
+          "text": "Beleuchtung und Sicht umfasst die Beleuchtung mit Scheinwerfer und Leuchten sowie das Sichtsystem mit Scheibenwischer und Außenspiegel oder Kamera-Monitor-System. Bei gekuppeltem Auflieger übernimmt dessen Lichtanlage die rückwärtigen Signale, die die Zugmaschine über die Steckverbindung schaltet. Die Spiegel müssen die Aufliegerflanken und den beim Ausschwenken überstrichenen Raum zeigen. Ein Kamera-Monitor-System verlagert Funktionen in Elektrik und Fahrerhaus und kann den Bildausschnitt dem Knickwinkel nachführen.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P18",
+              "Q1 Abschnitt „Nachteile“ (Ausschwenken bei Kurvenfahrt)",
+              "Der gekuppelte Auflieger verdeckt das Heck der Zugmaschine."
+            ],
+            "schluss": "Signalisierung und Sicht müssen den Auflieger einbeziehen; die Sichtlösung ist eine Variante."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Thermomanagement",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E91",
+      "absaetze": [
+        {
+          "absatz_id": "P23",
+          "text": "Das Thermomanagement führt über den Kühlkreislauf mit Kühler, Kühlmittelpumpe und Lüfter die Abwärme des Verbrennungsmotors ab. Ein hydraulischer Retarder belastet denselben Kreislauf gerade im Gefälle, wenn der Motor wenig Leistung abgibt; die Kühlleistung begrenzt so die Dauerbremsleistung. Beim Frontlenker begrenzt die Kabine die Kühlerfläche. Elektrische Maschinen brauchen eine Batterietemperierung und Kühlung für Traktionsmaschine und Wechselrichter. Die Heiz- und Klimaanlage temperiert die Kabine, bei Schlafkabinen auch im Stand.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P10",
+              "P13",
+              "P6",
+              "Ein hydraulischer Retarder wandelt Bremsenergie in Wärme der Arbeitsflüssigkeit."
+            ],
+            "schluss": "Kühlkreislauf, Dauerbremse und Kabinenbauart sind gekoppelt; die Antriebsart erweitert die Temperierung."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Neben- und Versorgungssysteme",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E98",
+      "absaetze": [
+        {
+          "absatz_id": "P24",
+          "text": "Die Neben- und Versorgungssysteme liefern vor allem Druckluft. Zur Druckluftanlage gehören der Kompressor für Druckluft, die Luftaufbereitung und die Druckluftbehälter; sie versorgt Bremssystem, Luftfederung, Liftachse und über die Anhängersteuerung den Auflieger. Beim Verbrennungsmotor treibt der Nebenaggregatetrieb den Kompressor, bei elektrischem Antrieb ersetzt ein elektrisch angetriebener Kompressor diesen Pfad. Für Kippauflieger kann eine Kipphydraulik vorgesehen sein: Ein Nebenabtrieb am Getriebe treibt eine Hydraulikpumpe, deren Druckleitung zum Auflieger führt.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "Q6 S5.1.1 und S5.1.2 (Kompressor, Behälter)",
+              "P3",
+              "P10",
+              "Q1 Abschnitt „Einsatz“, Absatz 1 (Sattelkraftfahrzeuge mit Kippmulde)"
+            ],
+            "schluss": "Die Druckluftanlage ist die zentrale Versorgung für Bremse, Federung und Auflieger; Hydraulik ist eine einsatzabhängige Variante."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Zusammenfassung",
+      "abschnittstyp": "gesamtsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P25",
+          "text": "Auf oberster Ebene besteht die Sattelzugmaschine aus Fahrzeugstruktur und Fahrwerk, Antriebssystem, Energieversorgungssystem, Lenksystem, Bremssystem, Fahrerhaus, Aufbau und Ladung, Elektrik und Elektronik, Fahrzeugsteuerung und Information, Fahrerassistenz und Sicherheit, Beleuchtung und Sicht, Thermomanagement sowie Neben- und Versorgungssysteme. Gegenüber dem Lastkraftwagen verschiebt sich der Schwerpunkt vom Ladungsaufbau zur Kupplungsschnittstelle: Sattelkupplung, Anhängersteuerung, Anhängersteckverbindungen und Druckluftanlage übergeben Last, Druckluft, Energie und Daten an den Auflieger.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P2",
+              "P12",
+              "P17",
+              "P19",
+              "P24"
+            ],
+            "schluss": "Die Hauptsysteme entsprechen dem Lastkraftwagen; die Aufliegerschnittstelle ist das prägende Merkmal."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Modellierungsbezug",
+      "abschnittstyp": "modellierung",
+      "absaetze": [
+        {
+          "absatz_id": "P26",
+          "text": "In SysML bildet der Block Sattelzugmaschine das Gesamtsystem mit den Hauptsystemen als Teilen. Dekompositionspfade sind etwa Aufbau und Ladung → Sattelkupplung → Verriegelung, Bremssystem → Anhängersteuerung → Druckluftkupplungsköpfe und Antriebssystem → Kraftübertragung → Getriebe → Gelenkwelle → Differenzial. Der Auflieger wird als externer Block modelliert, verbunden über Ports für Stützlast und Zugkraft, Vorrats- und Steuerdruck, Anhängerstrom und Anhängerdaten. Für die Struktur eignen sich Blockdefinitionsdiagramme, für die Kopplung interne Blockdiagramme, für Ankuppeln und Bremsen Aktivitäts- und Zustandsdiagramme.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P2",
+              "P12",
+              "P17",
+              "P24"
+            ],
+            "schluss": "Die Dekomposition folgt den Hauptsystemen; der Auflieger wird über typisierte Ports angebunden."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Flüsse",
+      "abschnittstyp": "fluesse",
+      "absaetze": [
+        {
+          "absatz_id": "P27",
+          "text": "Kraftstofftank und Traktionsbatterie versorgen Verbrennungsmotor und Wechselrichter, die Ladeeinrichtung lädt die Batterie. Drehmoment läuft über die Kraftübertragung zur Antriebsachse. Die Sattelkupplung leitet Stützlast und Zugkraft in den Rahmen, dieser in das Fahrwerk. Die Druckluftanlage speist Betriebsbremse, Luftfederung, Liftachse und Anhängersteuerung. Bordnetzbatterie, Generator und Gleichspannungswandler speisen das Niedervolt-Bordnetz, dieses Scheinwerfer und Anhängersteckverbindungen; das Gateway gibt Anhängerdaten aus. Umfeldsensorik informiert die Assistenzfunktionen, die Bremsungen anfordern; Bedienelemente, Stabilitätsregelung und Kombiinstrument tauschen Informationen mit dem Fahrzeugmanagement. Motor und Dauerbremse geben Wärme an den Kühlkreislauf ab; Nebenaggregatetrieb und Nebenabtrieb treiben Kompressor und Hydraulikpumpe.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P6",
+              "P8",
+              "P9",
+              "P12",
+              "P17",
+              "P19",
+              "P21",
+              "P23",
+              "P24"
+            ],
+            "schluss": "Die Flüsse verbinden die Hauptsysteme über die benannten Schnittstellen."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Perspektiven",
+      "abschnittstyp": "perspektiven",
+      "absaetze": [
+        {
+          "absatz_id": "P28",
+          "text": "Funktionszuordnung: Fahrzeuglasten tragen Rahmen, Fahrwerk und Sattelkupplung; Anhänger ziehen und Anhänger kuppeln Sattelkupplung und Verriegelung; Anhänger versorgen Anhängersteuerung und Anhängersteckverbindungen; Energie speichern Kraftstofftank, Traktionsbatterie, Bordnetzbatterie und Druckluftbehälter; Elektrische Energie verteilen Niedervolt-Bordnetz und Gleichspannungswandler; Traktionsbatterie laden die Ladeeinrichtung; Antriebsleistung erzeugen Verbrennungsmotor und Traktionsmaschine; Drehmoment übertragen die Kraftübertragung; Fahrzeug fortbewegen Antriebsachse sowie Räder und Reifen; Bremsenergie zurückgewinnen die Traktionsmaschine; Fahrzeug lenken Lenkrad, Lenksäule, Lenkaktorik und Spurhalteassistent; Fahrzeug verzögern Betriebsbremse, Dauerbremse, Antiblockiersystem, Stabilitätsregelung und Notbremsassistent; Fahrzeug festhalten die Feststellbremse; Druckluft bereitstellen die Druckluftanlage; Hydraulische Leistung bereitstellen die Kipphydraulik; Fahrereingaben erfassen Lenkrad und Bedienelemente; Fahrerinformationen anzeigen das Kombiinstrument; Insassen schützen Kabinenstruktur und Rückhaltesystem; Daten übertragen Kommunikationsnetz und Anhängersteckverbindungen; Fahrzeugzustand überwachen Fahrzeugmanagement und Diagnose; Fahrzeugposition bestimmen die Telematikeinheit; Fahrzeugumfeld erfassen die Umfeldsensorik; Fahrzeugumgebung ausleuchten die Scheinwerfer; Lichtsignale abgeben die Leuchten; Fahrersicht sicherstellen das Sichtsystem; Betriebstemperatur regeln Kühlkreislauf und Batterietemperierung; Innenraum klimatisieren die Heiz- und Klimaanlage.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P4",
+              "P6",
+              "P8",
+              "P9",
+              "P12",
+              "P14",
+              "P17",
+              "P19",
+              "P20",
+              "P21",
+              "P22",
+              "P23",
+              "P24"
+            ],
+            "schluss": "Jede Funktion hat mindestens ein ausführendes Element."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    }
+  ],
+  "modell": {
+    "elemente": [
+      {
+        "id": "E1",
+        "name": "Sattelzugmaschine",
+        "typ": "gesamtsystem",
+        "eltern_id": null,
+        "absatz_ids": [
+          "P1",
+          "P2",
+          "P25",
+          "P26"
+        ]
+      },
+      {
+        "id": "E2",
+        "name": "Fahrzeugstruktur und Fahrwerk",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P3",
+          "P4",
+          "P25"
+        ],
+        "kategorie": "struktur_fahrwerk"
+      },
+      {
+        "id": "E3",
+        "name": "Rahmen",
+        "typ": "komponente",
+        "eltern_id": "E2",
+        "absatz_ids": [
+          "P1",
+          "P3",
+          "P4",
+          "P17",
+          "P27"
+        ]
+      },
+      {
+        "id": "E4",
+        "name": "Fahrwerk",
+        "typ": "subsystem",
+        "eltern_id": "E2",
+        "absatz_ids": [
+          "P4",
+          "P27"
+        ]
+      },
+      {
+        "id": "E5",
+        "name": "Vorderachse",
+        "typ": "komponente",
+        "eltern_id": "E4",
+        "absatz_ids": [
+          "P4",
+          "P9"
+        ]
+      },
+      {
+        "id": "E6",
+        "name": "Antriebsachse",
+        "typ": "komponente",
+        "eltern_id": "E4",
+        "absatz_ids": [
+          "P3",
+          "P4",
+          "P6",
+          "P27"
+        ]
+      },
+      {
+        "id": "E7",
+        "name": "Liftachse",
+        "typ": "komponente",
+        "eltern_id": "E4",
+        "absatz_ids": [
+          "P4",
+          "P20",
+          "P24",
+          "P27"
+        ]
+      },
+      {
+        "id": "E8",
+        "name": "Luftfederung",
+        "typ": "komponente",
+        "eltern_id": "E4",
+        "absatz_ids": [
+          "P4",
+          "P14",
+          "P24",
+          "P27"
+        ]
+      },
+      {
+        "id": "E9",
+        "name": "Räder und Reifen",
+        "typ": "komponente",
+        "eltern_id": "E4",
+        "absatz_ids": [
+          "P4",
+          "P28"
+        ]
+      },
+      {
+        "id": "E10",
+        "name": "Antriebssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P5",
+          "P6",
+          "P25"
+        ],
+        "kategorie": "antrieb"
+      },
+      {
+        "id": "E11",
+        "name": "Verbrennungsmotor",
+        "typ": "komponente",
+        "eltern_id": "E10",
+        "absatz_ids": [
+          "P6",
+          "P23",
+          "P24",
+          "P27"
+        ]
+      },
+      {
+        "id": "E12",
+        "name": "Abgasnachbehandlung",
+        "typ": "komponente",
+        "eltern_id": "E10",
+        "absatz_ids": [
+          "P6",
+          "P8"
+        ]
+      },
+      {
+        "id": "E13",
+        "name": "Elektroantrieb",
+        "typ": "subsystem",
+        "eltern_id": "E10",
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "E14",
+        "name": "Traktionsmaschine",
+        "typ": "komponente",
+        "eltern_id": "E13",
+        "absatz_ids": [
+          "P6",
+          "P23",
+          "P28"
+        ]
+      },
+      {
+        "id": "E15",
+        "name": "Wechselrichter",
+        "typ": "komponente",
+        "eltern_id": "E13",
+        "absatz_ids": [
+          "P6",
+          "P23",
+          "P27"
+        ]
+      },
+      {
+        "id": "E16",
+        "name": "Kraftübertragung",
+        "typ": "subsystem",
+        "eltern_id": "E10",
+        "absatz_ids": [
+          "P4",
+          "P6",
+          "P26",
+          "P27"
+        ]
+      },
+      {
+        "id": "E17",
+        "name": "Kupplung",
+        "typ": "komponente",
+        "eltern_id": "E16",
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "E18",
+        "name": "Getriebe",
+        "typ": "komponente",
+        "eltern_id": "E16",
+        "absatz_ids": [
+          "P1",
+          "P5",
+          "P6",
+          "P26"
+        ]
+      },
+      {
+        "id": "E19",
+        "name": "Gelenkwelle",
+        "typ": "komponente",
+        "eltern_id": "E16",
+        "absatz_ids": [
+          "P6",
+          "P26"
+        ]
+      },
+      {
+        "id": "E20",
+        "name": "Differenzial",
+        "typ": "komponente",
+        "eltern_id": "E16",
+        "absatz_ids": [
+          "P6",
+          "P26"
+        ]
+      },
+      {
+        "id": "E21",
+        "name": "Energieversorgungssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P7",
+          "P8",
+          "P25"
+        ],
+        "kategorie": "energieversorgung"
+      },
+      {
+        "id": "E22",
+        "name": "Kraftstofftank",
+        "typ": "komponente",
+        "eltern_id": "E21",
+        "absatz_ids": [
+          "P8",
+          "P27"
+        ]
+      },
+      {
+        "id": "E23",
+        "name": "Hochvolt-Energiesystem",
+        "typ": "subsystem",
+        "eltern_id": "E21",
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "E24",
+        "name": "Traktionsbatterie",
+        "typ": "komponente",
+        "eltern_id": "E23",
+        "absatz_ids": [
+          "P7",
+          "P8",
+          "P27"
+        ]
+      },
+      {
+        "id": "E25",
+        "name": "Ladeeinrichtung",
+        "typ": "komponente",
+        "eltern_id": "E23",
+        "absatz_ids": [
+          "P8",
+          "P27"
+        ]
+      },
+      {
+        "id": "E26",
+        "name": "Gleichspannungswandler",
+        "typ": "komponente",
+        "eltern_id": "E23",
+        "absatz_ids": [
+          "P8",
+          "P27"
+        ]
+      },
+      {
+        "id": "E27",
+        "name": "Bordnetzbatterie",
+        "typ": "komponente",
+        "eltern_id": "E21",
+        "absatz_ids": [
+          "P8",
+          "P27"
+        ]
+      },
+      {
+        "id": "E28",
+        "name": "Generator",
+        "typ": "komponente",
+        "eltern_id": "E21",
+        "absatz_ids": [
+          "P8",
+          "P27"
+        ]
+      },
+      {
+        "id": "E29",
+        "name": "Lenksystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P9",
+          "P25"
+        ],
+        "kategorie": "lenkung"
+      },
+      {
+        "id": "E30",
+        "name": "Lenkrad",
+        "typ": "komponente",
+        "eltern_id": "E29",
+        "absatz_ids": [
+          "P9",
+          "P28"
+        ]
+      },
+      {
+        "id": "E31",
+        "name": "Lenksäule",
+        "typ": "komponente",
+        "eltern_id": "E29",
+        "absatz_ids": [
+          "P9",
+          "P28"
+        ]
+      },
+      {
+        "id": "E32",
+        "name": "Lenkaktorik",
+        "typ": "subsystem",
+        "eltern_id": "E29",
+        "absatz_ids": [
+          "P9",
+          "P28"
+        ]
+      },
+      {
+        "id": "E33",
+        "name": "Lenkgetriebe",
+        "typ": "komponente",
+        "eltern_id": "E32",
+        "absatz_ids": [
+          "P9"
+        ]
+      },
+      {
+        "id": "E34",
+        "name": "Lenkunterstützung",
+        "typ": "komponente",
+        "eltern_id": "E32",
+        "absatz_ids": [
+          "P9",
+          "P21"
+        ]
+      },
+      {
+        "id": "E35",
+        "name": "Lenkgestänge",
+        "typ": "komponente",
+        "eltern_id": "E32",
+        "absatz_ids": [
+          "P9"
+        ]
+      },
+      {
+        "id": "E36",
+        "name": "Bremssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P10",
+          "P11",
+          "P12",
+          "P25"
+        ],
+        "kategorie": "bremse"
+      },
+      {
+        "id": "E37",
+        "name": "Betriebsbremse",
+        "typ": "subsystem",
+        "eltern_id": "E36",
+        "absatz_ids": [
+          "P12",
+          "P27"
+        ]
+      },
+      {
+        "id": "E38",
+        "name": "Betriebsbremsventil",
+        "typ": "komponente",
+        "eltern_id": "E37",
+        "absatz_ids": [
+          "P12"
+        ]
+      },
+      {
+        "id": "E39",
+        "name": "Bremszylinder",
+        "typ": "komponente",
+        "eltern_id": "E37",
+        "absatz_ids": [
+          "P12"
+        ]
+      },
+      {
+        "id": "E40",
+        "name": "Radbremsen",
+        "typ": "komponente",
+        "eltern_id": "E37",
+        "absatz_ids": [
+          "P10",
+          "P12"
+        ]
+      },
+      {
+        "id": "E41",
+        "name": "Feststellbremse",
+        "typ": "komponente",
+        "eltern_id": "E36",
+        "absatz_ids": [
+          "P10",
+          "P12"
+        ]
+      },
+      {
+        "id": "E42",
+        "name": "Dauerbremse",
+        "typ": "komponente",
+        "eltern_id": "E36",
+        "absatz_ids": [
+          "P12",
+          "P20",
+          "P23",
+          "P27"
+        ]
+      },
+      {
+        "id": "E43",
+        "name": "Antiblockiersystem",
+        "typ": "komponente",
+        "eltern_id": "E36",
+        "absatz_ids": [
+          "P11",
+          "P12"
+        ]
+      },
+      {
+        "id": "E44",
+        "name": "Stabilitätsregelung",
+        "typ": "komponente",
+        "eltern_id": "E36",
+        "absatz_ids": [
+          "P11",
+          "P12",
+          "P27"
+        ]
+      },
+      {
+        "id": "E45",
+        "name": "Anhängersteuerung",
+        "typ": "subsystem",
+        "eltern_id": "E36",
+        "absatz_ids": [
+          "P12",
+          "P24",
+          "P26",
+          "P27"
+        ]
+      },
+      {
+        "id": "E46",
+        "name": "Anhängersteuerventil",
+        "typ": "komponente",
+        "eltern_id": "E45",
+        "absatz_ids": [
+          "P12"
+        ]
+      },
+      {
+        "id": "E47",
+        "name": "Druckluftkupplungsköpfe",
+        "typ": "komponente",
+        "eltern_id": "E45",
+        "absatz_ids": [
+          "P12",
+          "P26"
+        ]
+      },
+      {
+        "id": "E48",
+        "name": "Fahrerhaus",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P13",
+          "P14",
+          "P25"
+        ],
+        "kategorie": "bedienraum"
+      },
+      {
+        "id": "E49",
+        "name": "Kabine",
+        "typ": "subsystem",
+        "eltern_id": "E48",
+        "absatz_ids": [
+          "P13",
+          "P14",
+          "P23"
+        ]
+      },
+      {
+        "id": "E50",
+        "name": "Kabinenstruktur",
+        "typ": "komponente",
+        "eltern_id": "E49",
+        "absatz_ids": [
+          "P14",
+          "P28"
+        ]
+      },
+      {
+        "id": "E51",
+        "name": "Kabinenlagerung",
+        "typ": "komponente",
+        "eltern_id": "E49",
+        "absatz_ids": [
+          "P14"
+        ]
+      },
+      {
+        "id": "E52",
+        "name": "Schlafkabine",
+        "typ": "komponente",
+        "eltern_id": "E49",
+        "absatz_ids": [
+          "P13",
+          "P14",
+          "P23"
+        ]
+      },
+      {
+        "id": "E53",
+        "name": "Fahrerarbeitsplatz",
+        "typ": "subsystem",
+        "eltern_id": "E48",
+        "absatz_ids": [
+          "P14"
+        ]
+      },
+      {
+        "id": "E54",
+        "name": "Sitze",
+        "typ": "komponente",
+        "eltern_id": "E53",
+        "absatz_ids": [
+          "P14"
+        ]
+      },
+      {
+        "id": "E55",
+        "name": "Rückhaltesystem",
+        "typ": "komponente",
+        "eltern_id": "E53",
+        "absatz_ids": [
+          "P14",
+          "P28"
+        ]
+      },
+      {
+        "id": "E56",
+        "name": "Bedienelemente",
+        "typ": "komponente",
+        "eltern_id": "E53",
+        "absatz_ids": [
+          "P14",
+          "P27",
+          "P28"
+        ]
+      },
+      {
+        "id": "E57",
+        "name": "Kombiinstrument",
+        "typ": "komponente",
+        "eltern_id": "E53",
+        "absatz_ids": [
+          "P14",
+          "P27",
+          "P28"
+        ]
+      },
+      {
+        "id": "E58",
+        "name": "Aufbau und Ladung",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P15",
+          "P16",
+          "P17",
+          "P25"
+        ],
+        "kategorie": "aufbau_nutzlast"
+      },
+      {
+        "id": "E59",
+        "name": "Sattelkupplung",
+        "typ": "subsystem",
+        "eltern_id": "E58",
+        "absatz_ids": [
+          "P1",
+          "P15",
+          "P16",
+          "P17",
+          "P27"
+        ]
+      },
+      {
+        "id": "E60",
+        "name": "Kupplungsplatte",
+        "typ": "komponente",
+        "eltern_id": "E59",
+        "absatz_ids": [
+          "P15",
+          "P17"
+        ]
+      },
+      {
+        "id": "E61",
+        "name": "Verriegelung",
+        "typ": "komponente",
+        "eltern_id": "E59",
+        "absatz_ids": [
+          "P15",
+          "P16",
+          "P17",
+          "P26"
+        ]
+      },
+      {
+        "id": "E62",
+        "name": "Montageplatte",
+        "typ": "komponente",
+        "eltern_id": "E59",
+        "absatz_ids": [
+          "P4",
+          "P16",
+          "P17"
+        ]
+      },
+      {
+        "id": "E63",
+        "name": "Schiebeeinrichtung",
+        "typ": "komponente",
+        "eltern_id": "E59",
+        "absatz_ids": [
+          "P16",
+          "P17"
+        ]
+      },
+      {
+        "id": "E64",
+        "name": "Elektrik und Elektronik",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P18",
+          "P19",
+          "P25"
+        ],
+        "kategorie": "elektrik_elektronik"
+      },
+      {
+        "id": "E65",
+        "name": "Niedervolt-Bordnetz",
+        "typ": "subsystem",
+        "eltern_id": "E64",
+        "absatz_ids": [
+          "P19",
+          "P27"
+        ]
+      },
+      {
+        "id": "E66",
+        "name": "Leitungssatz",
+        "typ": "komponente",
+        "eltern_id": "E65",
+        "absatz_ids": [
+          "P19"
+        ]
+      },
+      {
+        "id": "E67",
+        "name": "Stromverteiler",
+        "typ": "komponente",
+        "eltern_id": "E65",
+        "absatz_ids": [
+          "P19"
+        ]
+      },
+      {
+        "id": "E68",
+        "name": "Sicherungen",
+        "typ": "komponente",
+        "eltern_id": "E65",
+        "absatz_ids": [
+          "P19"
+        ]
+      },
+      {
+        "id": "E69",
+        "name": "Kommunikationsnetz",
+        "typ": "subsystem",
+        "eltern_id": "E64",
+        "absatz_ids": [
+          "P19",
+          "P28"
+        ]
+      },
+      {
+        "id": "E70",
+        "name": "Fahrzeugbus",
+        "typ": "komponente",
+        "eltern_id": "E69",
+        "absatz_ids": [
+          "P19"
+        ]
+      },
+      {
+        "id": "E71",
+        "name": "Gateway",
+        "typ": "komponente",
+        "eltern_id": "E69",
+        "absatz_ids": [
+          "P19",
+          "P27"
+        ]
+      },
+      {
+        "id": "E72",
+        "name": "Anhängersteckverbindungen",
+        "typ": "komponente",
+        "eltern_id": "E64",
+        "absatz_ids": [
+          "P18",
+          "P19",
+          "P27"
+        ]
+      },
+      {
+        "id": "E73",
+        "name": "Fahrzeugsteuerung und Information",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P20",
+          "P25"
+        ],
+        "kategorie": "steuerung_information"
+      },
+      {
+        "id": "E74",
+        "name": "Fahrzeugmanagement",
+        "typ": "komponente",
+        "eltern_id": "E73",
+        "absatz_ids": [
+          "P4",
+          "P20",
+          "P27"
+        ]
+      },
+      {
+        "id": "E75",
+        "name": "Diagnose",
+        "typ": "komponente",
+        "eltern_id": "E73",
+        "absatz_ids": [
+          "P18",
+          "P20"
+        ]
+      },
+      {
+        "id": "E76",
+        "name": "Telematikeinheit",
+        "typ": "komponente",
+        "eltern_id": "E73",
+        "absatz_ids": [
+          "P20"
+        ]
+      },
+      {
+        "id": "E77",
+        "name": "Fahrerassistenz und Sicherheit",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P21",
+          "P25"
+        ],
+        "kategorie": "assistenz_sicherheit"
+      },
+      {
+        "id": "E78",
+        "name": "Umfeldsensorik",
+        "typ": "komponente",
+        "eltern_id": "E77",
+        "absatz_ids": [
+          "P21",
+          "P27"
+        ]
+      },
+      {
+        "id": "E79",
+        "name": "Assistenzfunktionen",
+        "typ": "subsystem",
+        "eltern_id": "E77",
+        "absatz_ids": [
+          "P21",
+          "P27"
+        ]
+      },
+      {
+        "id": "E80",
+        "name": "Notbremsassistent",
+        "typ": "komponente",
+        "eltern_id": "E79",
+        "absatz_ids": [
+          "P21",
+          "P28"
+        ]
+      },
+      {
+        "id": "E81",
+        "name": "Spurhalteassistent",
+        "typ": "komponente",
+        "eltern_id": "E79",
+        "absatz_ids": [
+          "P21",
+          "P28"
+        ]
+      },
+      {
+        "id": "E82",
+        "name": "Geschwindigkeitsassistent",
+        "typ": "komponente",
+        "eltern_id": "E79",
+        "absatz_ids": [
+          "P21"
+        ]
+      },
+      {
+        "id": "E83",
+        "name": "Beleuchtung und Sicht",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P22",
+          "P25"
+        ],
+        "kategorie": "beleuchtung_sicht"
+      },
+      {
+        "id": "E84",
+        "name": "Beleuchtung",
+        "typ": "subsystem",
+        "eltern_id": "E83",
+        "absatz_ids": [
+          "P22"
+        ]
+      },
+      {
+        "id": "E85",
+        "name": "Scheinwerfer",
+        "typ": "komponente",
+        "eltern_id": "E84",
+        "absatz_ids": [
+          "P22",
+          "P27"
+        ]
+      },
+      {
+        "id": "E86",
+        "name": "Leuchten",
+        "typ": "komponente",
+        "eltern_id": "E84",
+        "absatz_ids": [
+          "P22",
+          "P28"
+        ]
+      },
+      {
+        "id": "E87",
+        "name": "Sichtsystem",
+        "typ": "subsystem",
+        "eltern_id": "E83",
+        "absatz_ids": [
+          "P22",
+          "P28"
+        ]
+      },
+      {
+        "id": "E88",
+        "name": "Scheibenwischer",
+        "typ": "komponente",
+        "eltern_id": "E87",
+        "absatz_ids": [
+          "P22"
+        ]
+      },
+      {
+        "id": "E89",
+        "name": "Außenspiegel",
+        "typ": "komponente",
+        "eltern_id": "E87",
+        "absatz_ids": [
+          "P22"
+        ]
+      },
+      {
+        "id": "E90",
+        "name": "Kamera-Monitor-System",
+        "typ": "komponente",
+        "eltern_id": "E87",
+        "absatz_ids": [
+          "P22"
+        ]
+      },
+      {
+        "id": "E91",
+        "name": "Thermomanagement",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P23",
+          "P25"
+        ],
+        "kategorie": "thermomanagement"
+      },
+      {
+        "id": "E92",
+        "name": "Kühlkreislauf",
+        "typ": "subsystem",
+        "eltern_id": "E91",
+        "absatz_ids": [
+          "P23",
+          "P27"
+        ]
+      },
+      {
+        "id": "E93",
+        "name": "Kühler",
+        "typ": "komponente",
+        "eltern_id": "E92",
+        "absatz_ids": [
+          "P23"
+        ]
+      },
+      {
+        "id": "E94",
+        "name": "Kühlmittelpumpe",
+        "typ": "komponente",
+        "eltern_id": "E92",
+        "absatz_ids": [
+          "P23"
+        ]
+      },
+      {
+        "id": "E95",
+        "name": "Lüfter",
+        "typ": "komponente",
+        "eltern_id": "E92",
+        "absatz_ids": [
+          "P23"
+        ]
+      },
+      {
+        "id": "E96",
+        "name": "Batterietemperierung",
+        "typ": "komponente",
+        "eltern_id": "E91",
+        "absatz_ids": [
+          "P23",
+          "P28"
+        ]
+      },
+      {
+        "id": "E97",
+        "name": "Heiz- und Klimaanlage",
+        "typ": "komponente",
+        "eltern_id": "E91",
+        "absatz_ids": [
+          "P23",
+          "P28"
+        ]
+      },
+      {
+        "id": "E98",
+        "name": "Neben- und Versorgungssysteme",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P24",
+          "P25"
+        ],
+        "kategorie": "nebensysteme"
+      },
+      {
+        "id": "E99",
+        "name": "Druckluftanlage",
+        "typ": "subsystem",
+        "eltern_id": "E98",
+        "absatz_ids": [
+          "P24",
+          "P27"
+        ]
+      },
+      {
+        "id": "E100",
+        "name": "Kompressor für Druckluft",
+        "typ": "komponente",
+        "eltern_id": "E99",
+        "absatz_ids": [
+          "P24",
+          "P27"
+        ]
+      },
+      {
+        "id": "E101",
+        "name": "Luftaufbereitung",
+        "typ": "komponente",
+        "eltern_id": "E99",
+        "absatz_ids": [
+          "P24"
+        ]
+      },
+      {
+        "id": "E102",
+        "name": "Druckluftbehälter",
+        "typ": "komponente",
+        "eltern_id": "E99",
+        "absatz_ids": [
+          "P24",
+          "P28"
+        ]
+      },
+      {
+        "id": "E103",
+        "name": "Nebenaggregatetrieb",
+        "typ": "komponente",
+        "eltern_id": "E98",
+        "absatz_ids": [
+          "P24",
+          "P27"
+        ]
+      },
+      {
+        "id": "E104",
+        "name": "Kipphydraulik",
+        "typ": "subsystem",
+        "eltern_id": "E98",
+        "absatz_ids": [
+          "P24",
+          "P28"
+        ]
+      },
+      {
+        "id": "E105",
+        "name": "Nebenabtrieb",
+        "typ": "komponente",
+        "eltern_id": "E104",
+        "absatz_ids": [
+          "P6",
+          "P24",
+          "P27"
+        ]
+      },
+      {
+        "id": "E106",
+        "name": "Hydraulikpumpe",
+        "typ": "komponente",
+        "eltern_id": "E104",
+        "absatz_ids": [
+          "P24",
+          "P27"
+        ]
+      }
+    ],
+    "funktionen": [
+      {
+        "id": "F1",
+        "name": "Fahrzeuglasten tragen",
+        "ausgefuehrt_von": [
+          "E3",
+          "E4",
+          "E59"
+        ],
+        "absatz_ids": [
+          "P4",
+          "P17",
+          "P28"
+        ]
+      },
+      {
+        "id": "F2",
+        "name": "Anhänger ziehen",
+        "ausgefuehrt_von": [
+          "E59",
+          "E61"
+        ],
+        "absatz_ids": [
+          "P1",
+          "P17",
+          "P28"
+        ]
+      },
+      {
+        "id": "F3",
+        "name": "Anhänger kuppeln",
+        "ausgefuehrt_von": [
+          "E59",
+          "E61"
+        ],
+        "absatz_ids": [
+          "P15",
+          "P17",
+          "P28"
+        ]
+      },
+      {
+        "id": "F4",
+        "name": "Anhänger versorgen",
+        "ausgefuehrt_von": [
+          "E45",
+          "E72"
+        ],
+        "absatz_ids": [
+          "P12",
+          "P18",
+          "P19",
+          "P28"
+        ]
+      },
+      {
+        "id": "F5",
+        "name": "Energie speichern",
+        "ausgefuehrt_von": [
+          "E22",
+          "E24",
+          "E27",
+          "E102"
+        ],
+        "absatz_ids": [
+          "P8",
+          "P24",
+          "P28"
+        ]
+      },
+      {
+        "id": "F6",
+        "name": "Elektrische Energie verteilen",
+        "ausgefuehrt_von": [
+          "E65",
+          "E26"
+        ],
+        "absatz_ids": [
+          "P8",
+          "P19",
+          "P28"
+        ]
+      },
+      {
+        "id": "F7",
+        "name": "Traktionsbatterie laden",
+        "ausgefuehrt_von": [
+          "E25"
+        ],
+        "absatz_ids": [
+          "P8",
+          "P28"
+        ]
+      },
+      {
+        "id": "F8",
+        "name": "Antriebsleistung erzeugen",
+        "ausgefuehrt_von": [
+          "E11",
+          "E14"
+        ],
+        "absatz_ids": [
+          "P6",
+          "P28"
+        ]
+      },
+      {
+        "id": "F9",
+        "name": "Drehmoment übertragen",
+        "ausgefuehrt_von": [
+          "E16"
+        ],
+        "absatz_ids": [
+          "P6",
+          "P28"
+        ]
+      },
+      {
+        "id": "F10",
+        "name": "Fahrzeug fortbewegen",
+        "ausgefuehrt_von": [
+          "E6",
+          "E9"
+        ],
+        "absatz_ids": [
+          "P4",
+          "P6",
+          "P28"
+        ]
+      },
+      {
+        "id": "F11",
+        "name": "Bremsenergie zurückgewinnen",
+        "ausgefuehrt_von": [
+          "E14"
+        ],
+        "absatz_ids": [
+          "P6",
+          "P28"
+        ]
+      },
+      {
+        "id": "F12",
+        "name": "Fahrzeug lenken",
+        "ausgefuehrt_von": [
+          "E30",
+          "E31",
+          "E32",
+          "E81"
+        ],
+        "absatz_ids": [
+          "P9",
+          "P28"
+        ]
+      },
+      {
+        "id": "F13",
+        "name": "Fahrzeug verzögern",
+        "ausgefuehrt_von": [
+          "E37",
+          "E42",
+          "E43",
+          "E44",
+          "E80"
+        ],
+        "absatz_ids": [
+          "P10",
+          "P12",
+          "P21",
+          "P28"
+        ]
+      },
+      {
+        "id": "F14",
+        "name": "Fahrzeug festhalten",
+        "ausgefuehrt_von": [
+          "E41"
+        ],
+        "absatz_ids": [
+          "P10",
+          "P12",
+          "P28"
+        ]
+      },
+      {
+        "id": "F15",
+        "name": "Druckluft bereitstellen",
+        "ausgefuehrt_von": [
+          "E99"
+        ],
+        "absatz_ids": [
+          "P24",
+          "P28"
+        ]
+      },
+      {
+        "id": "F16",
+        "name": "Hydraulische Leistung bereitstellen",
+        "ausgefuehrt_von": [
+          "E104"
+        ],
+        "absatz_ids": [
+          "P24",
+          "P28"
+        ]
+      },
+      {
+        "id": "F17",
+        "name": "Fahrereingaben erfassen",
+        "ausgefuehrt_von": [
+          "E30",
+          "E56"
+        ],
+        "absatz_ids": [
+          "P9",
+          "P14",
+          "P28"
+        ]
+      },
+      {
+        "id": "F18",
+        "name": "Fahrerinformationen anzeigen",
+        "ausgefuehrt_von": [
+          "E57"
+        ],
+        "absatz_ids": [
+          "P14",
+          "P28"
+        ]
+      },
+      {
+        "id": "F19",
+        "name": "Insassen schützen",
+        "ausgefuehrt_von": [
+          "E50",
+          "E55"
+        ],
+        "absatz_ids": [
+          "P14",
+          "P28"
+        ]
+      },
+      {
+        "id": "F20",
+        "name": "Daten übertragen",
+        "ausgefuehrt_von": [
+          "E69",
+          "E72"
+        ],
+        "absatz_ids": [
+          "P18",
+          "P19",
+          "P28"
+        ]
+      },
+      {
+        "id": "F21",
+        "name": "Fahrzeugzustand überwachen",
+        "ausgefuehrt_von": [
+          "E74",
+          "E75"
+        ],
+        "absatz_ids": [
+          "P20",
+          "P28"
+        ]
+      },
+      {
+        "id": "F22",
+        "name": "Fahrzeugposition bestimmen",
+        "ausgefuehrt_von": [
+          "E76"
+        ],
+        "absatz_ids": [
+          "P20",
+          "P28"
+        ]
+      },
+      {
+        "id": "F23",
+        "name": "Fahrzeugumfeld erfassen",
+        "ausgefuehrt_von": [
+          "E78"
+        ],
+        "absatz_ids": [
+          "P21",
+          "P28"
+        ]
+      },
+      {
+        "id": "F24",
+        "name": "Fahrzeugumgebung ausleuchten",
+        "ausgefuehrt_von": [
+          "E85"
+        ],
+        "absatz_ids": [
+          "P22",
+          "P28"
+        ]
+      },
+      {
+        "id": "F25",
+        "name": "Lichtsignale abgeben",
+        "ausgefuehrt_von": [
+          "E86"
+        ],
+        "absatz_ids": [
+          "P22",
+          "P28"
+        ]
+      },
+      {
+        "id": "F26",
+        "name": "Fahrersicht sicherstellen",
+        "ausgefuehrt_von": [
+          "E87"
+        ],
+        "absatz_ids": [
+          "P22",
+          "P28"
+        ]
+      },
+      {
+        "id": "F27",
+        "name": "Betriebstemperatur regeln",
+        "ausgefuehrt_von": [
+          "E92",
+          "E96"
+        ],
+        "absatz_ids": [
+          "P23",
+          "P28"
+        ]
+      },
+      {
+        "id": "F28",
+        "name": "Innenraum klimatisieren",
+        "ausgefuehrt_von": [
+          "E97"
+        ],
+        "absatz_ids": [
+          "P23",
+          "P28"
+        ]
+      }
+    ],
+    "fluesse": [
+      {
+        "id": "S1",
+        "von": "E22",
+        "nach": "E11",
+        "art": "stoff",
+        "medium": "Dieselkraftstoff",
+        "absatz_ids": [
+          "P8",
+          "P27"
+        ],
+        "schnittstelle": "Kraftstoffversorgung Verbrennungsmotor"
+      },
+      {
+        "id": "S2",
+        "von": "E24",
+        "nach": "E15",
+        "art": "elektrisch",
+        "medium": "Hochvolt-Gleichstrom",
+        "absatz_ids": [
+          "P6",
+          "P27"
+        ],
+        "schnittstelle": "Hochvoltanschluss Antrieb"
+      },
+      {
+        "id": "S3",
+        "von": "E15",
+        "nach": "E14",
+        "art": "elektrisch",
+        "medium": "Drehstrom",
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "S4",
+        "von": "E11",
+        "nach": "E16",
+        "art": "mechanisch",
+        "medium": "Drehmoment",
+        "absatz_ids": [
+          "P6",
+          "P27"
+        ]
+      },
+      {
+        "id": "S5",
+        "von": "E14",
+        "nach": "E16",
+        "art": "mechanisch",
+        "medium": "Drehmoment",
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "S6",
+        "von": "E16",
+        "nach": "E6",
+        "art": "mechanisch",
+        "medium": "Drehmoment",
+        "absatz_ids": [
+          "P6",
+          "P27"
+        ],
+        "schnittstelle": "Achsantrieb"
+      },
+      {
+        "id": "S7",
+        "von": "E59",
+        "nach": "E3",
+        "art": "mechanisch",
+        "medium": "Stützlast, Zug- und Bremskraft des Aufliegers",
+        "absatz_ids": [
+          "P17",
+          "P27"
+        ],
+        "schnittstelle": "Sattelkupplungsbefestigung am Rahmen"
+      },
+      {
+        "id": "S8",
+        "von": "E3",
+        "nach": "E4",
+        "art": "mechanisch",
+        "medium": "Achslasten",
+        "absatz_ids": [
+          "P4",
+          "P27"
+        ]
+      },
+      {
+        "id": "S9",
+        "von": "E99",
+        "nach": "E37",
+        "art": "pneumatisch",
+        "medium": "Druckluft",
+        "absatz_ids": [
+          "P24",
+          "P27"
+        ],
+        "schnittstelle": "Druckluftversorgung Bremse"
+      },
+      {
+        "id": "S10",
+        "von": "E99",
+        "nach": "E8",
+        "art": "pneumatisch",
+        "medium": "Druckluft",
+        "absatz_ids": [
+          "P24",
+          "P27"
+        ],
+        "schnittstelle": "Druckluftversorgung Luftfederung"
+      },
+      {
+        "id": "S11",
+        "von": "E99",
+        "nach": "E7",
+        "art": "pneumatisch",
+        "medium": "Druckluft",
+        "absatz_ids": [
+          "P4",
+          "P24",
+          "P27"
+        ],
+        "schnittstelle": "Druckluftversorgung Liftachse"
+      },
+      {
+        "id": "S12",
+        "von": "E99",
+        "nach": "E45",
+        "art": "pneumatisch",
+        "medium": "Druckluft",
+        "absatz_ids": [
+          "P24",
+          "P27"
+        ],
+        "schnittstelle": "Druckluftversorgung Anhängersteuerung"
+      },
+      {
+        "id": "S13",
+        "von": "E46",
+        "nach": "E47",
+        "art": "pneumatisch",
+        "medium": "Vorrats- und Steuerdruck für den Auflieger",
+        "absatz_ids": [
+          "P12"
+        ]
+      },
+      {
+        "id": "S14",
+        "von": "E28",
+        "nach": "E27",
+        "art": "elektrisch",
+        "medium": "Ladestrom Bordnetz",
+        "absatz_ids": [
+          "P8",
+          "P27"
+        ]
+      },
+      {
+        "id": "S15",
+        "von": "E27",
+        "nach": "E65",
+        "art": "elektrisch",
+        "medium": "Niedervolt-Gleichstrom",
+        "absatz_ids": [
+          "P8",
+          "P27"
+        ],
+        "schnittstelle": "Bordnetzanschluss"
+      },
+      {
+        "id": "S16",
+        "von": "E26",
+        "nach": "E65",
+        "art": "elektrisch",
+        "medium": "Niedervolt-Gleichstrom",
+        "absatz_ids": [
+          "P8",
+          "P27"
+        ],
+        "schnittstelle": "Kopplung Hochvolt- und Niedervolt-Bordnetz"
+      },
+      {
+        "id": "S17",
+        "von": "E25",
+        "nach": "E24",
+        "art": "elektrisch",
+        "medium": "Ladestrom",
+        "absatz_ids": [
+          "P8",
+          "P27"
+        ]
+      },
+      {
+        "id": "S18",
+        "von": "E65",
+        "nach": "E72",
+        "art": "elektrisch",
+        "medium": "Anhängerstrom",
+        "absatz_ids": [
+          "P18",
+          "P19",
+          "P27"
+        ]
+      },
+      {
+        "id": "S19",
+        "von": "E71",
+        "nach": "E72",
+        "art": "information",
+        "medium": "Anhängerdaten",
+        "absatz_ids": [
+          "P19",
+          "P27"
+        ]
+      },
+      {
+        "id": "S20",
+        "von": "E65",
+        "nach": "E85",
+        "art": "elektrisch",
+        "medium": "Lichtstrom",
+        "absatz_ids": [
+          "P22",
+          "P27"
+        ],
+        "schnittstelle": "Lichtversorgung"
+      },
+      {
+        "id": "S21",
+        "von": "E78",
+        "nach": "E79",
+        "art": "information",
+        "medium": "Umfelddaten",
+        "absatz_ids": [
+          "P21",
+          "P27"
+        ]
+      },
+      {
+        "id": "S22",
+        "von": "E79",
+        "nach": "E37",
+        "art": "information",
+        "medium": "Bremsanforderung",
+        "absatz_ids": [
+          "P21",
+          "P27"
+        ],
+        "schnittstelle": "Bremsanforderung Assistenz"
+      },
+      {
+        "id": "S23",
+        "von": "E56",
+        "nach": "E74",
+        "art": "information",
+        "medium": "Fahrerwunsch",
+        "absatz_ids": [
+          "P14",
+          "P27"
+        ],
+        "schnittstelle": "Fahrereingabe"
+      },
+      {
+        "id": "S24",
+        "von": "E74",
+        "nach": "E57",
+        "art": "information",
+        "medium": "Zustands- und Warnmeldungen",
+        "absatz_ids": [
+          "P20",
+          "P27"
+        ],
+        "schnittstelle": "Fahrerinformation"
+      },
+      {
+        "id": "S25",
+        "von": "E44",
+        "nach": "E74",
+        "art": "information",
+        "medium": "Momentenanforderung",
+        "absatz_ids": [
+          "P11",
+          "P27"
+        ],
+        "schnittstelle": "Motormomenteneingriff Stabilitätsregelung"
+      },
+      {
+        "id": "S26",
+        "von": "E30",
+        "nach": "E31",
+        "art": "mechanisch",
+        "medium": "Lenkmoment",
+        "absatz_ids": [
+          "P9"
+        ]
+      },
+      {
+        "id": "S27",
+        "von": "E31",
+        "nach": "E32",
+        "art": "mechanisch",
+        "medium": "Lenkmoment",
+        "absatz_ids": [
+          "P9"
+        ]
+      },
+      {
+        "id": "S28",
+        "von": "E32",
+        "nach": "E5",
+        "art": "mechanisch",
+        "medium": "Lenkbewegung",
+        "absatz_ids": [
+          "P9"
+        ],
+        "schnittstelle": "Lenkgestänge an Vorderachse"
+      },
+      {
+        "id": "S29",
+        "von": "E11",
+        "nach": "E92",
+        "art": "thermisch",
+        "medium": "Abwärme im Kühlmittel",
+        "absatz_ids": [
+          "P23",
+          "P27"
+        ],
+        "schnittstelle": "Motorkühlung"
+      },
+      {
+        "id": "S30",
+        "von": "E42",
+        "nach": "E92",
+        "art": "thermisch",
+        "medium": "Bremswärme im Kühlmittel",
+        "absatz_ids": [
+          "P23",
+          "P27"
+        ],
+        "schnittstelle": "Retarderkühlung"
+      },
+      {
+        "id": "S31",
+        "von": "E96",
+        "nach": "E24",
+        "art": "thermisch",
+        "medium": "Temperiermittel",
+        "absatz_ids": [
+          "P23"
+        ],
+        "schnittstelle": "Batterietemperieranschluss"
+      },
+      {
+        "id": "S32",
+        "von": "E97",
+        "nach": "E49",
+        "art": "thermisch",
+        "medium": "temperierte Luft",
+        "absatz_ids": [
+          "P23"
+        ],
+        "schnittstelle": "Kabinenbelüftung"
+      },
+      {
+        "id": "S33",
+        "von": "E11",
+        "nach": "E103",
+        "art": "mechanisch",
+        "medium": "Drehmoment",
+        "absatz_ids": [
+          "P24",
+          "P27"
+        ],
+        "schnittstelle": "Nebenantrieb am Motor"
+      },
+      {
+        "id": "S34",
+        "von": "E103",
+        "nach": "E100",
+        "art": "mechanisch",
+        "medium": "Drehmoment",
+        "absatz_ids": [
+          "P24",
+          "P27"
+        ]
+      },
+      {
+        "id": "S35",
+        "von": "E16",
+        "nach": "E105",
+        "art": "mechanisch",
+        "medium": "Drehmoment",
+        "absatz_ids": [
+          "P24",
+          "P27"
+        ],
+        "schnittstelle": "Nebenabtrieb am Getriebe"
+      },
+      {
+        "id": "S36",
+        "von": "E105",
+        "nach": "E106",
+        "art": "mechanisch",
+        "medium": "Drehmoment",
+        "absatz_ids": [
+          "P24",
+          "P27"
+        ]
+      }
+    ],
+    "entfallene_kategorien": [],
+    "varianten": [
+      {
+        "id": "V1",
+        "element_id": "E10",
+        "bezeichnung": "Antriebsart",
+        "alternativen": [
+          "Dieselverbrennungsmotor mit Kraftstofftank",
+          "batterieelektrischer Antrieb mit Traktionsmaschine und Traktionsbatterie"
+        ],
+        "auswahlkriterien": [
+          "Einsatzprofil (Fernverkehr, Regional- oder Kurzverkehr)",
+          "verfügbare Ladeinfrastruktur und Netzanschluss",
+          "Nutzlast und Achslastreserve",
+          "Energiekosten und Emissionsvorgaben"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E21",
+            "beschreibung": "Kraftstofftank oder Hochvolt-Energiesystem mit Traktionsbatterie, Ladeeinrichtung und Gleichspannungswandler."
+          },
+          {
+            "element_id": "E92",
+            "beschreibung": "Elektrischer Antrieb erfordert Kühlung von Traktionsmaschine und Wechselrichter, dafür weniger Motorabwärme."
+          },
+          {
+            "element_id": "E96",
+            "beschreibung": "Batterietemperierung nur bei elektrischem Antrieb."
+          },
+          {
+            "element_id": "E103",
+            "beschreibung": "Ohne Verbrennungsmotor entfällt der Nebenaggregatetrieb; Kompressor und Lenkhilfe werden elektrisch angetrieben."
+          },
+          {
+            "element_id": "E3",
+            "beschreibung": "Batteriepakete belegen Bauraum am Rahmen und beeinflussen Radstand und Achslasten."
+          }
+        ],
+        "absatz_ids": [
+          "P6",
+          "P7",
+          "P8",
+          "P23",
+          "P24"
+        ]
+      },
+      {
+        "id": "V2",
+        "element_id": "E4",
+        "bezeichnung": "Achskonfiguration",
+        "alternativen": [
+          "zweiachsig mit einer Antriebsachse",
+          "dreiachsig mit Antriebsachse und anhebbarer Liftachse",
+          "dreiachsig mit zwei Antriebsachsen"
+        ],
+        "auswahlkriterien": [
+          "zulässige Achslasten im Einsatzgebiet",
+          "Sattellast der vorgesehenen Auflieger",
+          "Traktionsbedarf",
+          "Leermasse und Reifenverschleiß"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E16",
+            "beschreibung": "Zwei Antriebsachsen erfordern einen Durchtrieb mit Zwischendifferenzial."
+          },
+          {
+            "element_id": "E99",
+            "beschreibung": "Liftachse benötigt pneumatische Hubvorrichtung und Luftversorgung."
+          },
+          {
+            "element_id": "E74",
+            "beschreibung": "Lastabhängige Steuerung der Liftachse im Fahrzeugmanagement."
+          },
+          {
+            "element_id": "E29",
+            "beschreibung": "Bei mehrachsigen Maschinen kann eine zweite Lenkachse hinzukommen."
+          }
+        ],
+        "absatz_ids": [
+          "P3",
+          "P4",
+          "P9"
+        ]
+      },
+      {
+        "id": "V3",
+        "element_id": "E48",
+        "bezeichnung": "Fahrerhausbauart",
+        "alternativen": [
+          "Frontlenker mit Kabine über dem Motor",
+          "Haubenfahrzeug mit Motor vor der Kabine"
+        ],
+        "auswahlkriterien": [
+          "zulässige Gesamtlänge des Zuges und angestrebte Aufliegerlänge",
+          "Wendigkeit und Sicht",
+          "Wartungszugang",
+          "Insassenschutz und Aerodynamik"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E3",
+            "beschreibung": "Frontlenker erlaubt kürzeren Rahmen und Radstand."
+          },
+          {
+            "element_id": "E51",
+            "beschreibung": "Frontlenker braucht eine kippbare Kabinenlagerung für den Motorzugang."
+          },
+          {
+            "element_id": "E93",
+            "beschreibung": "Beim Frontlenker begrenzt die Kabine die verfügbare Kühlerfläche."
+          },
+          {
+            "element_id": "E59",
+            "beschreibung": "Kabinenlänge und Kupplungslage teilen sich die Rahmenlänge."
+          }
+        ],
+        "absatz_ids": [
+          "P13",
+          "P14",
+          "P23"
+        ]
+      },
+      {
+        "id": "V4",
+        "element_id": "E49",
+        "bezeichnung": "Kabinenausführung",
+        "alternativen": [
+          "Kabine ohne Schlafplatz für Nah- und Verteilerverkehr",
+          "Kabine mit Schlafkabine für Fernverkehr"
+        ],
+        "auswahlkriterien": [
+          "Einsatzdauer und Ruhezeiten unterwegs",
+          "verfügbare Rahmenlänge",
+          "Leermasse"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E3",
+            "beschreibung": "Schlafkabinen erfordern einen längeren Rahmen."
+          },
+          {
+            "element_id": "E97",
+            "beschreibung": "Standheizung und Standklimatisierung während der Ruhezeiten."
+          },
+          {
+            "element_id": "E27",
+            "beschreibung": "Höherer Ruhestrombedarf aus der Bordnetzbatterie."
+          }
+        ],
+        "absatz_ids": [
+          "P3",
+          "P13",
+          "P14",
+          "P23"
+        ]
+      },
+      {
+        "id": "V5",
+        "element_id": "E59",
+        "bezeichnung": "Befestigung der Sattelkupplung",
+        "alternativen": [
+          "fest montierte Sattelkupplung",
+          "längs verschiebbare Sattelkupplung mit Schiebeeinrichtung"
+        ],
+        "auswahlkriterien": [
+          "Vielfalt der zu ziehenden Auflieger",
+          "Bedarf an Anpassung der Achslastverteilung",
+          "Leermasse und Wartungsaufwand"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E3",
+            "beschreibung": "Schiebeeinrichtung braucht eine längere Montagefläche am Rahmen."
+          },
+          {
+            "element_id": "E4",
+            "beschreibung": "Die Kupplungslage verschiebt die Lastanteile zwischen Vorder- und Hinterachse."
+          },
+          {
+            "element_id": "E56",
+            "beschreibung": "Fernbetätigte Verschiebung oder Entriegelung erfordert Bedienelemente im Fahrerhaus."
+          }
+        ],
+        "absatz_ids": [
+          "P16",
+          "P17"
+        ]
+      },
+      {
+        "id": "V6",
+        "element_id": "E87",
+        "bezeichnung": "Indirekte Sicht",
+        "alternativen": [
+          "Außenspiegel",
+          "Kamera-Monitor-System"
+        ],
+        "auswahlkriterien": [
+          "Sicht auf Aufliegerflanken bei Kurvenfahrt",
+          "Luftwiderstand",
+          "Verfügbarkeit bei Ausfall der Elektrik"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E65",
+            "beschreibung": "Kamera-Monitor-System benötigt abgesicherte Stromversorgung."
+          },
+          {
+            "element_id": "E57",
+            "beschreibung": "Monitore im Fahrerhaus ersetzen den Spiegelblick."
+          },
+          {
+            "element_id": "E69",
+            "beschreibung": "Nachführung nach Knickwinkel braucht Daten über das Kommunikationsnetz."
+          }
+        ],
+        "absatz_ids": [
+          "P22"
+        ]
+      },
+      {
+        "id": "V7",
+        "element_id": "E98",
+        "bezeichnung": "Hydraulikversorgung für den Auflieger",
+        "alternativen": [
+          "ohne Kipphydraulik",
+          "Kipphydraulik mit Nebenabtrieb und Hydraulikpumpe"
+        ],
+        "auswahlkriterien": [
+          "vorgesehene Aufliegerarten wie Kipp- oder Schubbodenauflieger",
+          "Leermasse",
+          "Bauraum am Getriebe und Rahmen"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E16",
+            "beschreibung": "Getriebe braucht einen Anschluss für den Nebenabtrieb."
+          },
+          {
+            "element_id": "E56",
+            "beschreibung": "Bedienelemente zum Schalten des Nebenabtriebs im Fahrerhaus."
+          },
+          {
+            "element_id": "E74",
+            "beschreibung": "Freigabelogik für den Nebenabtrieb im Fahrzeugmanagement."
+          }
+        ],
+        "absatz_ids": [
+          "P24"
+        ]
+      }
+    ],
+    "klaerungsfragen": [
+      {
+        "id": "K1",
+        "frage": "Soll die Sattelzugmaschine dieselverbrennungsmotorisch oder batterieelektrisch angetrieben werden?",
+        "element_ids": [
+          "E10",
+          "E21"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Energiespeicher, Thermomanagement, Nebenaggregate und Rahmenbelegung ab.",
+        "variante_ids": [
+          "V1"
+        ]
+      },
+      {
+        "id": "K2",
+        "frage": "Wird die batterieelektrische Maschine nur im Depot oder auch unterwegs geladen, und welche Ladeschnittstellen stehen dort zur Verfügung?",
+        "element_ids": [
+          "E25",
+          "E24"
+        ],
+        "anlass": "betrieb",
+        "relevanz": "Davon hängen Batteriegröße, Ladeeinrichtung und Einsatzradius ab.",
+        "variante_ids": [
+          "V1"
+        ]
+      },
+      {
+        "id": "K3",
+        "frage": "Welche Achskonfiguration ist vorgesehen: zweiachsig, dreiachsig mit Liftachse oder dreiachsig mit zwei Antriebsachsen?",
+        "element_ids": [
+          "E4",
+          "E2"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Kraftübertragung, Druckluftbedarf, Lenkung und zulässige Sattellast ab.",
+        "variante_ids": [
+          "V2"
+        ]
+      },
+      {
+        "id": "K4",
+        "frage": "In welchem Bereich muss die Luftfederung die Sattelhöhe verstellen können, um alle vorgesehenen Auflieger auf- und absatteln zu können?",
+        "element_ids": [
+          "E8"
+        ],
+        "anlass": "schnittstelle",
+        "relevanz": "Davon hängen Federweg, Niveauregelung und Radgröße ab."
+      },
+      {
+        "id": "K5",
+        "frage": "Soll das Fahrerhaus als Frontlenker oder als Haubenfahrzeug ausgeführt werden?",
+        "element_ids": [
+          "E48"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Rahmenlänge, zulässige Aufliegerlänge, Kühlerfläche und Kabinenlagerung ab.",
+        "variante_ids": [
+          "V3"
+        ]
+      },
+      {
+        "id": "K6",
+        "frage": "Wird eine Schlafkabine benötigt, und muss die Kabine während der Ruhezeiten ohne laufenden Motor beheizt und gekühlt werden?",
+        "element_ids": [
+          "E52",
+          "E97"
+        ],
+        "anlass": "betrieb",
+        "relevanz": "Davon hängen Kabinenlänge, Standklimatisierung und Ruhestrombedarf ab.",
+        "variante_ids": [
+          "V4"
+        ]
+      },
+      {
+        "id": "K7",
+        "frage": "Soll die Sattelkupplung fest montiert oder längs verschiebbar sein, und soll ihre Entriegelung aus dem Fahrerhaus möglich sein?",
+        "element_ids": [
+          "E59",
+          "E63",
+          "E61"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Achslastverteilung, Rahmenauslegung und Bedienelemente ab.",
+        "variante_ids": [
+          "V5"
+        ]
+      },
+      {
+        "id": "K8",
+        "frage": "Welche Aufliegerarten mit welchen Sattelhöhen und Königszapfengrößen muss die Maschine ziehen können?",
+        "element_ids": [
+          "E59",
+          "E60",
+          "E58"
+        ],
+        "anlass": "schnittstelle",
+        "relevanz": "Davon hängen Kupplungsbauart, Kupplungshöhe und Bereifung ab."
+      },
+      {
+        "id": "K9",
+        "frage": "Soll die Lenkunterstützung hydraulisch oder elektrisch ausgeführt werden, und soll sie Eingriffe von Assistenzfunktionen erlauben?",
+        "element_ids": [
+          "E34",
+          "E29"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Pumpenantrieb, Energiebedarf und Assistenzfähigkeit ab."
+      },
+      {
+        "id": "K10",
+        "frage": "Muss die Anhängersteuerung nur rein pneumatisch gesteuerte Auflieger bedienen oder auch elektronisch geregelte Aufliegerbremsen mit Datenverbindung?",
+        "element_ids": [
+          "E45",
+          "E72",
+          "E36"
+        ],
+        "anlass": "schnittstelle",
+        "relevanz": "Davon hängen Anhängersteuerventil, Steckverbindungen und Bremsregelung ab."
+      },
+      {
+        "id": "K11",
+        "frage": "Welche elektrischen Verbraucher des Aufliegers über Beleuchtung und Bremsregelung hinaus soll die Zugmaschine versorgen?",
+        "element_ids": [
+          "E72",
+          "E65",
+          "E64"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Strombelastbarkeit der Anhängerkreise, Steckerausführung und Bordnetzauslegung ab."
+      },
+      {
+        "id": "K12",
+        "frage": "Soll die Telematikeinheit den jeweils gekuppelten Auflieger erkennen und dessen Zustandsdaten an die Disposition übertragen?",
+        "element_ids": [
+          "E76",
+          "E75",
+          "E73"
+        ],
+        "anlass": "betrieb",
+        "relevanz": "Davon hängen Datenumfang des Anhängerbusses, Diagnoseabdeckung und Telematikfunktionen ab."
+      },
+      {
+        "id": "K13",
+        "frage": "Sollen die Assistenzfunktionen die Masse und Länge des gekuppelten Aufliegers berücksichtigen, etwa beim Notbremsen und Abbiegen?",
+        "element_ids": [
+          "E79",
+          "E78",
+          "E77"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Sensorumfang für den Seitenbereich und die Anbindung an Fahrzeugmanagement und Anhängerbus ab."
+      },
+      {
+        "id": "K14",
+        "frage": "Sollen Außenspiegel oder ein Kamera-Monitor-System für die indirekte Sicht eingesetzt werden?",
+        "element_ids": [
+          "E87",
+          "E90",
+          "E83"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Stromversorgung, Anzeigen im Fahrerhaus und Luftwiderstand ab.",
+        "variante_ids": [
+          "V6"
+        ]
+      },
+      {
+        "id": "K15",
+        "frage": "Welche Dauerbremsleistung muss auf langen Gefällstrecken dauerhaft verfügbar sein?",
+        "element_ids": [
+          "E42",
+          "E92",
+          "E91"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Retarderbauart und Kühlleistung des Kühlkreislaufs ab."
+      },
+      {
+        "id": "K16",
+        "frage": "Muss die Maschine Kipp- oder Schubbodenauflieger hydraulisch versorgen können?",
+        "element_ids": [
+          "E104",
+          "E98"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Nebenabtrieb, Hydraulikpumpe und Getriebeausführung ab.",
+        "variante_ids": [
+          "V7"
+        ]
+      }
+    ],
+    "anforderungsthemen": [
+      {
+        "id": "R1",
+        "element_ids": [
+          "E2",
+          "E4",
+          "E3"
+        ],
+        "thema": "Achslasten und Sattellast",
+        "kenngroessen": [
+          "zulässige Achslasten",
+          "zulässige Gesamtmasse",
+          "Sattellast",
+          "Radstand",
+          "Leermasse"
+        ]
+      },
+      {
+        "id": "R2",
+        "element_ids": [
+          "E10"
+        ],
+        "thema": "Fahrleistung",
+        "kenngroessen": [
+          "Antriebsleistung",
+          "Drehmoment",
+          "Steigfähigkeit mit Zugmasse",
+          "Energieverbrauch"
+        ]
+      },
+      {
+        "id": "R3",
+        "element_ids": [
+          "E21"
+        ],
+        "thema": "Reichweite und Laden",
+        "kenngroessen": [
+          "Reichweite",
+          "Tankvolumen",
+          "nutzbarer Batterieenergieinhalt",
+          "Ladeleistung"
+        ]
+      },
+      {
+        "id": "R4",
+        "element_ids": [
+          "E29"
+        ],
+        "thema": "Lenkbarkeit und Wendigkeit",
+        "kenngroessen": [
+          "Wendekreis",
+          "Lenkkraft",
+          "Lenkwinkel"
+        ]
+      },
+      {
+        "id": "R5",
+        "element_ids": [
+          "E36",
+          "E45",
+          "E43"
+        ],
+        "thema": "Bremsung und Anhängerbremsversorgung",
+        "kenngroessen": [
+          "Bremsweg",
+          "Ansprechzeit",
+          "Vorratsdruck",
+          "Verhalten bei Leitungsabriss"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "FMVSS No. 121, Air brake systems (49 CFR § 571.121), USA: Lkw, Busse und Anhänger mit Druckluftbremse",
+            "quellen_id": "Q6",
+            "fundstelle": "S3, S5.1.3, S5.1.6.1(b), S5.1.6.3"
+          }
+        ]
+      },
+      {
+        "id": "R6",
+        "element_ids": [
+          "E44"
+        ],
+        "thema": "Fahrstabilität des Zuges",
+        "kenngroessen": [
+          "Kippstabilität",
+          "Gierstabilität",
+          "Motormomentreduzierung"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "FMVSS No. 136, Electronic stability control systems for heavy vehicles (49 CFR § 571.136), USA: Zugmaschinen und Busse über 11 793 kg zulässiger Gesamtmasse",
+            "quellen_id": "Q7",
+            "fundstelle": "S3.1, S4, S5.1"
+          }
+        ]
+      },
+      {
+        "id": "R7",
+        "element_ids": [
+          "E48",
+          "E49"
+        ],
+        "thema": "Fahrerarbeitsplatz und Kabinenabmessungen",
+        "kenngroessen": [
+          "Kabinenlänge",
+          "Insassenschutz",
+          "Sichtfeld",
+          "Ruhezeitkomfort"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "Verordnung (EU) 2019/1892, EU: Länge von Fahrerhäusern schwerer Nutzfahrzeuge",
+            "quellen_id": "Q3",
+            "fundstelle": "Abschnitt „Cab types“, Absatz 3"
+          }
+        ]
+      },
+      {
+        "id": "R8",
+        "element_ids": [
+          "E58",
+          "E59",
+          "E61"
+        ],
+        "thema": "Sichere Kupplung des Aufliegers",
+        "kenngroessen": [
+          "Sattellast",
+          "Kupplungshöhe",
+          "Verriegelungssicherheit",
+          "Befestigungsfestigkeit am Rahmen"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "49 CFR § 393.70, USA: gewerbliche Kraftfahrzeuge im Geltungsbereich der Federal Motor Carrier Safety Regulations",
+            "quellen_id": "Q5",
+            "fundstelle": "(b)(1), (b)(2), (b)(3)"
+          }
+        ]
+      },
+      {
+        "id": "R9",
+        "element_ids": [
+          "E64",
+          "E72",
+          "E69"
+        ],
+        "thema": "Elektrische und datentechnische Anhängerschnittstelle",
+        "kenngroessen": [
+          "Steckerbelegung",
+          "Strombelastbarkeit",
+          "Datenprotokoll",
+          "Dauerversorgung der Anhängerbremsregelung"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "ISO 11992, international: digitaler Datenaustausch zwischen Zug- und Anhängefahrzeugen",
+            "quellen_id": "Q9",
+            "fundstelle": "Einleitung, Abschnitt „Official texts“"
+          },
+          {
+            "bezeichnung": "FMVSS No. 121 (49 CFR § 571.121), USA: Versorgungskreis für das Antiblockiersystem gezogener Fahrzeuge an Zugmaschinen",
+            "quellen_id": "Q6",
+            "fundstelle": "S5.1.6.3"
+          }
+        ]
+      },
+      {
+        "id": "R10",
+        "element_ids": [
+          "E73",
+          "E75",
+          "E76"
+        ],
+        "thema": "Diagnose und Flottenanbindung",
+        "kenngroessen": [
+          "Diagnoseabdeckung",
+          "Fehlerspeichertiefe",
+          "Übertragungsumfang der Telematik"
+        ]
+      },
+      {
+        "id": "R11",
+        "element_ids": [
+          "E77",
+          "E79"
+        ],
+        "thema": "Notbremsung und Spurhaltung",
+        "kenngroessen": [
+          "Erkennungsreichweite",
+          "Auslöseschwelle",
+          "Fehlauslöserate",
+          "Abdeckung des Seitenbereichs"
+        ]
+      },
+      {
+        "id": "R12",
+        "element_ids": [
+          "E83",
+          "E87"
+        ],
+        "thema": "Sicht und Signalisierung",
+        "kenngroessen": [
+          "Sichtfeld der indirekten Sicht",
+          "Leuchtweite",
+          "Sichtbarkeit der Signalleuchten"
+        ]
+      },
+      {
+        "id": "R13",
+        "element_ids": [
+          "E91",
+          "E92"
+        ],
+        "thema": "Kühl- und Temperierleistung",
+        "kenngroessen": [
+          "Kühlleistung",
+          "Dauerbremsleistung",
+          "Temperaturbereich der Traktionsbatterie",
+          "Heiz- und Kühlleistung der Kabine"
+        ]
+      },
+      {
+        "id": "R14",
+        "element_ids": [
+          "E98",
+          "E99"
+        ],
+        "thema": "Druckluftversorgung",
+        "kenngroessen": [
+          "Förderleistung des Kompressors",
+          "Behältervolumen",
+          "Luftqualität",
+          "Füllzeit"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "FMVSS No. 121 (49 CFR § 571.121), USA: Lkw, Busse und Anhänger mit Druckluftbremse",
+            "quellen_id": "Q6",
+            "fundstelle": "S5.1.1, S5.1.2"
+          }
+        ]
+      },
+      {
+        "id": "R15",
+        "element_ids": [
+          "E104"
+        ],
+        "thema": "Hydraulikversorgung des Aufliegers",
+        "kenngroessen": [
+          "Volumenstrom",
+          "Betriebsdruck",
+          "Schaltbedingungen des Nebenabtriebs"
+        ]
+      }
+    ]
+  },
+  "offene_punkte": [
+    "Glossarvorschlag: Funktion „Anhänger kuppeln“ (fahrzeugartspezifische Leistung von Zugfahrzeugen mit Sattelkupplung).",
+    "Glossarvorschlag: Funktion „Anhänger versorgen“ (Versorgung des gezogenen Fahrzeugs mit Druckluft, Strom und Daten; nicht synonym zu „Arbeitsgeräte versorgen“).",
+    "Recherche: Richtlinie 96/53/EG (höchstzulässige Abmessungen und Gewichte, EU) im Original für Achslasten, Sattelzuglänge und Kabinenlänge; eur-lex.europa.eu war in diesem Lauf nicht abrufbar.",
+    "Recherche: UN-Regelung Nr. 55 (mechanische Verbindungseinrichtungen, Sattelkupplung und Königszapfen) und UN-Regelung Nr. 13 (Bremsen, Anschlüsse für Anhänger); unece.org lieferte in diesem Lauf keinen Zugriff (403).",
+    "Recherche: Verordnung (EU) 2019/1892 im Original prüfen; bisher nur über Q3 bekannt.",
+    "Recherche: ISO 11992 Teile 1 bis 4 im Original sowie die Steckverbindungsnormen für Zugfahrzeug und Anhänger, Suchbegriffe „ISO 7638“, „ISO 12098“, „Anhängersteckdose Lkw Belegung“.",
+    "Recherche: deutsche Vorschriften zu Sattelkraftfahrzeugen (StVZO, FZV); gesetze-im-internet.de war in diesem Lauf nicht erreichbar.",
+    "Recherche: behördliche oder wissenschaftliche Untersuchungen zu batterieelektrischen Sattelzugmaschinen (Batteriegröße, Bauraum, Achslasten), Suchbegriffe „battery electric tractor-trailer NREL“, „E-Sattelzugmaschine Achslast“; nrel.gov war nicht erreichbar.",
+    "Recherche: Fachliteratur zum Lastpfad Sattelkupplung–Montageplatte–Rahmen und zur Auslegung der Kupplungslage, Suchbegriffe „Sattelkupplung Montageplatte Rahmen Auslegung“, „fifth wheel setting weight distribution“.",
+    "Recherche: Fachliteratur zu Assistenzsystemen für Sattelzüge (Abbiegeassistent, Notbremsung mit Auflieger), da der Abschnitt Fahrerassistenz und Sicherheit nur auf Modellwissen beruht."
+  ]
+}

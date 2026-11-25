@@ -1,0 +1,3835 @@
+{
+  "schema_version": "2.3",
+  "artikel_id": "A-0023",
+  "artikeltyp": "blatt",
+  "titel": "Krankenwagen",
+  "betrachtungsumfang": "Generische Referenzarchitektur des Krankenwagens (Krankenkraftwagen) als zweispuriges Straßenkraftfahrzeug zur Beförderung, Betreuung und Versorgung Kranker oder Verletzter auf Basis eines leichten bis mittelschweren Nutzfahrzeugs, in den Bauarten Kastenwagen mit integriertem Patientenraum sowie Fahrgestell oder Kastenwagen-Fahrgestell mit Kofferaufbau, über die Ausstattungsstufen Krankentransportwagen, Notfallkrankenwagen und Rettungswagen (einschließlich Notarztwagen als Besetzungsvariante); Antriebsarten verbrennungsmotorisch (Diesel) und batterieelektrisch, mit Hinterrad-, Vorderrad- oder Allradantrieb. Herangezogene Regelwerke gelten für die EU-Typgenehmigung (Klasse M, Fahrzeug mit besonderer Zweckbestimmung), die Zulassung in Deutschland und die US-Bundesbeschaffung. Ausdrücklich nicht betrachtet werden Hybrid-, Gas- und Brennstoffzellenantriebe, Notarzteinsatzfahrzeuge ohne Patiententransport, Großraumrettungswagen und Mehrtragen-Krankentransportwagen auf Bus- oder Lkw-Basis, gepanzerte militärische Sanitätsfahrzeuge, Luft- und Wasserrettungsmittel sowie die medizinischen Geräte selbst jenseits ihrer Halterungen, Energie- und Gasanschlüsse.",
+  "status": "in_arbeit",
+  "quellenzugriff": "ja",
+  "kindartikel_ids": [],
+  "quellen": [
+    {
+      "quellen_id": "Q1",
+      "titel": "Krankenkraftwagen",
+      "urheber": "Wikipedia, Die freie Enzyklopädie (deutschsprachig)",
+      "stand": "Version oldid 270448579",
+      "url": "https://de.wikipedia.org/wiki/Krankenkraftwagen",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q2",
+      "titel": "Rettungswagen",
+      "urheber": "Wikipedia, Die freie Enzyklopädie (deutschsprachig)",
+      "stand": "Aktuelle Version am Abrufdatum (Quelltext)",
+      "url": "https://de.wikipedia.org/wiki/Rettungswagen",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q3",
+      "titel": "Krankentransportwagen",
+      "urheber": "Wikipedia, Die freie Enzyklopädie (deutschsprachig)",
+      "stand": "Aktuelle Version am Abrufdatum (Quelltext)",
+      "url": "https://de.wikipedia.org/wiki/Krankentransportwagen",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q4",
+      "titel": "Ambulance",
+      "urheber": "Wikipedia, The Free Encyclopedia (englischsprachig)",
+      "stand": "Aktuelle Version am Abrufdatum (Quelltext)",
+      "url": "https://en.wikipedia.org/wiki/Ambulance",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q5",
+      "titel": "Verordnung (EU) 2018/858 des Europäischen Parlaments und des Rates vom 30. Mai 2018 über die Genehmigung und die Marktüberwachung von Kraftfahrzeugen und Kraftfahrzeuganhängern sowie von Systemen, Bauteilen und selbstständigen technischen Einheiten für diese Fahrzeuge",
+      "urheber": "Europäisches Parlament und Rat der Europäischen Union",
+      "stand": "Amtsblatt der EU L 151 vom 14.6.2018, Originalfassung",
+      "url": "https://publications.europa.eu/resource/cellar/d828c80f-6f9d-11e8-9483-01aa75ed71a1.0004.03/DOC_1",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q6",
+      "titel": "Federal Specification for the Star-of-Life Ambulance, KKK-A-1822F",
+      "urheber": "U.S. General Services Administration",
+      "stand": "Ausgabe vom 1. August 2007 (Grundausgabe ohne Änderungsmitteilungen)",
+      "url": "https://www.alabamapublichealth.gov/ems/assets/gsa.kkk.1822f061915.pdf",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q7",
+      "titel": "Straßenverkehrs-Zulassungs-Ordnung (StVZO), § 52 Zusätzliche Scheinwerfer und Leuchten",
+      "urheber": "Bundesministerium der Justiz und Bundesamt für Justiz (gesetze-im-internet.de)",
+      "stand": "Konsolidierte Fassung am Abrufdatum",
+      "url": "https://www.gesetze-im-internet.de/stvzo_2012/__52.html",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "norm"
+    }
+  ],
+  "abschnitte": [
+    {
+      "ueberschrift": "Krankenwagen als Gesamtsystem",
+      "abschnittstyp": "gesamtsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P1",
+          "text": "Als Krankenkraftwagen, umgangssprachlich Krankenwagen, bezeichnet man spezielle zweispurige Kraftfahrzeuge des Rettungs- und Krankentransports. In der EU führt die Verordnung (EU) 2018/858 den Krankenwagen als Fahrzeug der Klasse M mit besonderer Zweckbestimmung, das zur Beförderung Kranker oder Verletzter bestimmt und dafür besonders ausgerüstet ist. EN 1789 unterscheidet Krankentransportwagen (Typ A1 und A2) für Nicht-Notfallpatienten, den Notfallkrankenwagen (Typ B) und den Rettungswagen (Typ C) für Transport, erweiterte Behandlung und Überwachung von Notfallpatienten; von Typ zu Typ steigt die Mindestausrüstung.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Einleitung, Absatz 1"
+            },
+            {
+              "quellen_id": "Q5",
+              "fundstelle": "Anhang I Teil A Nr. 5 (Fahrzeuge mit besonderer Zweckbestimmung), Nr. 5.3 Krankenwagen, Code SC"
+            },
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Abschnitt „Normung“, Unterabschnitt „Aufteilung“, Tabelle"
+            },
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Abschnitt „Technik“, Unterabschnitt „Ausstattung“, Absatz 2 mit Aufzählung der Typen"
+            }
+          ],
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P2",
+          "text": "Architektonisch besteht der Krankenwagen aus einem serienmäßigen Nutzfahrzeug als Basisfahrzeug und dem Ausbau mit Patientenraum und medizintechnischer Einrichtung. Beide sind über mechanische Befestigungen, eine elektrische Aufbauschnittstelle, thermische Kopplungen, Gasleitungen für Sauerstoff und Informationsverbindungen gekoppelt; optische und akustische Signale wirken auf die Verkehrsumgebung. Der Artikel zerlegt den Krankenwagen in Hauptsysteme, Subsysteme und Komponenten.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P1",
+              "Q4 Abschnitt „Design and construction“, Absatz 3 (zweistufige Fertigung aus Fahrgestell oder Kastenwagen und Ausbau)",
+              "P16 (Aufbau über eigene Stromkreise versorgt)",
+              "Funktionsprinzip: Medizinische Ausrüstung braucht Befestigung, Energie, Gas und Klimatisierung aus dem Fahrzeug."
+            ],
+            "schluss": "Der Krankenwagen ist ein Gesamtsystem aus Basisfahrzeug und Ausbau, gekoppelt über mechanische, elektrische, thermische, stoffliche und informationstechnische Schnittstellen."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrzeugstruktur und Fahrwerk",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E2",
+      "absaetze": [
+        {
+          "absatz_id": "P3",
+          "text": "Krankenwagen entstehen häufig in zwei Fertigungsstufen: Ein Hersteller liefert ein Fahrgestell mit Fahrerhaus oder einen Kastenwagen, ein zweiter baut daraus durch Karosseriebau oder Aufsetzen eines vorgefertigten Kastens den Krankenwagen auf. Die US-Spezifikation KKK-A-1822F unterscheidet Typ I (Fahrgestell mit Fahrerhaus und modularem Aufbau), Typ II (Kastenwagen mit integrierter Karosserie) und Typ III (Kastenwagen-Fahrgestell mit modularem Aufbau); Typ I und III haben Zwillingsräder hinten. In Deutschland verbreitet sind Kofferaufbauten aus Alu-Sandwich-Platten, Sperrholz, Aluminium-Skelett oder glasfaserverstärktem Kunststoff auf Lieferwagen-Fahrgestellen von 3,5 t bis 7,49 t zulässiger Gesamtmasse.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q4",
+              "fundstelle": "Abschnitt „Design and construction“, Absatz 3"
+            },
+            {
+              "quellen_id": "Q6",
+              "fundstelle": "Abschnitte 3.1.2, 3.1.3, 3.1.4 und 3.6.7"
+            },
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Abschnitt „Technik“, Unterabschnitt „Verwendete Fahrzeugtypen“, Absatz 1"
+            }
+          ],
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P4",
+          "text": "Im Modell gliedert sich Fahrzeugstruktur und Fahrwerk in die Karosserie mit dem Rohbau des Fahrerhauses, dem Kofferaufbau oder verlängerten Kastenaufbau und den Türen für Seiten- und Heckbeladung, den Rahmen sowie das Fahrwerk mit Achse, Radaufhängung, Federung sowie Räder und Reifen. Die Last der Fahrtrage läuft über Tragenhalterung und Boden in den Kofferaufbau, über die Aufbaubefestigung in den Rahmen und über Federung und Achsen auf die Fahrbahn.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P3",
+              "Q6 Abschnitt 3.10.6 (Tragenhalterungen an der Aufbaustruktur befestigt)",
+              "Q6 Abschnitt 3.10.8 (Patiententüren seitlich und am Heck)",
+              "Funktionsprinzip: Massenkräfte laufen von der Auflage über die tragende Struktur in Federung, Achsen und Fahrbahn."
+            ],
+            "schluss": "Die Tragstruktur besteht aus Karosserie mit Aufbau und Rahmen; der Lastpfad der Patientenlagerung führt über Aufbau, Rahmen und Fahrwerk."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Antriebssystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E13",
+      "absaetze": [
+        {
+          "absatz_id": "P5",
+          "text": "Für die USA fordert KKK-A-1822F den Dieselmotor und Antriebsstrang des Fahrgestellherstellers, ein Automatikgetriebe mit Getriebeölkühler, eine ausgewuchtete Gelenkwelle und ein Sperr- oder Selbstsperrdifferenzial an der Hinterachse. Die Abgasanlage mündet seitlich und von den Türen abgewandt, damit möglichst keine Abgase in den Innenraum gelangen.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q6",
+              "fundstelle": "Abschnitte 3.6.3.1, 3.6.5.2, 3.6.5.3, 3.6.5.5 und 3.6.4.6"
+            }
+          ],
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P6",
+          "text": "Das Antriebssystem erzeugt die Antriebsleistung: Der Verbrennungsmotor treibt über die Kraftübertragung aus Getriebe, Gelenkwelle und Differenzial die Antriebsachse. Beim batterieelektrischen Krankenwagen ersetzt eine Traktionsmaschine den Motor; ein Antriebswechselrichter speist sie aus der Hochvolt-Verteilung, und beim Verzögern gewinnt sie Bremsenergie zurück. Fahrgestelle mit Allradantrieb erhalten ein Verteilergetriebe mit zweiter Gelenkwelle zur Vorderachse; sie erhöhen Masse und Ladekante des Aufbaus.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P5",
+              "Q2 Abschnitt „Technik“, Unterabschnitt „Verwendete Fahrzeugtypen“ (Fahrgestelle je nach Region auch als Allrad)",
+              "Q4 Abschnitt „Design and construction“, Absatz 4 (Übergang zu elektrischen Antrieben)",
+              "Funktionsprinzip: Ein elektrischer Antrieb braucht Energiespeicher, Leistungselektronik und Maschine; elektrische Maschinen sind generatorisch betreibbar.",
+              "Funktionsprinzip: Eine angetriebene Vorderachse braucht eine Leistungsverzweigung und eine zusätzliche Welle unter dem Fahrzeug."
+            ],
+            "schluss": "Der Antriebsstrang ist je nach Antriebsart verbrennungsmotorisch oder elektrisch; Allradfahrgestelle ergänzen ein Verteilergetriebe."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Energieversorgungssystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E23",
+      "absaetze": [
+        {
+          "absatz_id": "P7",
+          "text": "KKK-A-1822F sieht zwei Batterien in einem belüfteten, von den Insassenräumen abgetrennten Bereich vor. Die Lichtmaschine muss auch bei hoher Motorraumtemperatur die Dauerlast aus Motor- und Getriebesteuerung, Beleuchtung, Klimatisierung von Fahrerhaus und Patientenraum, Funk, Warnlichtanlage und medizinischer Last decken. Im Stand hebt eine Leerlaufdrehzahlanhebung bei Park- oder Neutralstellung und angezogener Feststellbremse die Motordrehzahl an; eine Spannungsüberwachung warnt vor Tiefentladung.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q6",
+              "fundstelle": "Abschnitte 3.7.6, 3.7.6.1, 3.7.6.2 und 3.7.7"
+            }
+          ],
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P8",
+          "text": "Das Energieversorgungssystem speichert die Antriebsenergie und speist die Bordnetze. In der Kraftstoffversorgung des Dieselfahrzeugs fördert die Kraftstoffanlage Kraftstoff aus dem Kraftstofftank; der Generator lädt Starterbatterie und die Bordnetzbatterie des Ausbaus. Beim batterieelektrischen Fahrzeug bilden Traktionsbatterie, Hochvolt-Verteilung, Ladeeinrichtung und Gleichspannungswandler das Hochvolt-Energiesystem. Die Traktionsbatterie muss dann Fahrt und Standzeit am Einsatzort gemeinsam decken, und ihre Größe konkurriert mit der Nutzlast.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P7 (Dauerlast des Ausbaus auch im Stand)",
+              "P16 (möglichst ununterbrochene Stromversorgung)",
+              "P6 (batterieelektrischer Antriebspfad)",
+              "Funktionsprinzip: Ohne Verbrennungsmotor fehlt der Antrieb des Generators; jede Mehrmasse geht bei fester Gesamtmasse von der Nutzlast ab.",
+              "Annahme ohne Quelle zur Bauweise batterieelektrischer Krankenwagen."
+            ],
+            "schluss": "Je Antriebsart gibt es eine Kraftstoffversorgung oder ein Hochvolt-Energiesystem; beim elektrischen Krankenwagen bestimmt der Standbedarf die Batteriegröße mit."
+          },
+          "sicherheit": "gering",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Lenksystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E35",
+      "absaetze": [
+        {
+          "absatz_id": "P9",
+          "text": "Das Lenksystem setzt den Fahrerwunsch in einen Lenkeinschlag der Vorderräder um und stammt unverändert vom Basisfahrzeug; die US-Spezifikation verlangt die serienmäßige Servolenkung. Vom Lenkrad führt die Lenksäule zum Lenkgetriebe, die Lenkunterstützung verringert die Lenkkraft. Arbeitet sie elektrisch, kann der Spurhalteassistent über sie eingreifen. Beim Allradfahrgestell ist die gelenkte Vorderachse zugleich angetrieben.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "Q6 Abschnitt 3.6.6 (serienmäßige Servolenkung des Fahrgestellherstellers)",
+              "P6 (Allradfahrgestelle)",
+              "Funktionsprinzip: Eine Achsschenkellenkung braucht eine Übersetzung der Lenkraddrehung in eine Bewegung am Rad; ein elektrischer Lenkunterstützungsmotor ist von Steuergeräten ansteuerbar."
+            ],
+            "schluss": "Das Lenksystem wird vom Basisfahrzeug übernommen; die Art der Lenkunterstützung entscheidet über lenkende Assistenzeingriffe."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Bremssystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E39",
+      "absaetze": [
+        {
+          "absatz_id": "P10",
+          "text": "Das Bremssystem verzögert den Krankenwagen und hält ihn fest; die US-Spezifikation fordert die schwerste verfügbare servounterstützte Bremsanlage samt Feststellbremse und, soweit verfügbar, ein Antiblockiersystem. Bei den verbreiteten Lieferwagen-Fahrgestellen ist die Betriebsbremse hydraulisch: Der Bremskraftverstärker verstärkt die Pedalkraft, Leitungen führen den Druck zu jeder Radbremse, und die Bremsregelung mit Antiblockiersystem und Fahrdynamikregelung moduliert ihn. Die Feststellbremse ist Bedingung für die Leerlaufdrehzahlanhebung im Stand; beim batterieelektrischen Fahrzeug verzögert zusätzlich die Traktionsmaschine.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "Q6 Abschnitt 3.6.5.4",
+              "P3 (Lieferwagen-Fahrgestelle als Basis)",
+              "P7 (Leerlaufdrehzahlanhebung nur bei angezogener Feststellbremse)",
+              "P6 (Rückgewinnung von Bremsenergie)",
+              "Q5 Anhang II Teil III Anlage 1 Nr. 9A und 9B (Bremsvorschriften für Krankenwagen)",
+              "Funktionsprinzip: Eine hydraulische Bremse braucht Druckerzeuger, Leitungen und Radbremsen; Regeleingriffe setzen eine ansteuerbare Druckmodulation voraus."
+            ],
+            "schluss": "Die Betriebsbremse ist hydraulisch mit Bremsregelung; die Feststellbremse ist mit der Standversorgung verknüpft."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrerhaus",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E47",
+      "absaetze": [
+        {
+          "absatz_id": "P11",
+          "text": "Nach KKK-A-1822F zeigt eine Warnanzeige im Fahrerraum offene Türen von Patientenraum, Fahrerhaus und Gerätefächern sowie ausgefahrene Einrichtungen wie Umfeldscheinwerfer an. Bei Typ II und III trennt eine Trennwand in voller Höhe und Breite mit Durchgangstür und Sichtfenster Fahrer- und Patientenraum; Fahrzeuge ohne Durchgang erhalten ein Schiebefenster für Sicht- und Sprechverbindung.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q6",
+              "fundstelle": "Abschnitte 3.7.1.1, 3.10.14, 3.10.14.1 und 3.10.2"
+            }
+          ],
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P12",
+          "text": "Das Fahrerhaus stammt vom Basisfahrzeug. Der Fahrerarbeitsplatz umfasst Sitze und Rückhaltesystem, das Bedien- und Anzeigesystem die Bedienelemente für Fahrzeug, Sondersignal, Funk und Arbeitsbeleuchtung, das Kombiinstrument und die Warnanzeige. Die Trennwand ist Schnittstelle zum Patientenraum und entscheidet, ob die Besatzung während der Fahrt zwischen beiden Räumen wechseln kann.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P11",
+              "P3 (Fahrgestell mit Fahrerhaus oder Kastenwagen vom Fahrzeughersteller)",
+              "Q6 Abschnitt 3.8.3 (Schalter der Umfeldscheinwerfer auf der Fahrerhauskonsole)",
+              "Q6 Abschnitt 3.14.4 (Horn-Sirenen-Schalter auf der Fahrerkonsole)"
+            ],
+            "schluss": "Das Fahrerhaus umfasst Fahrerarbeitsplatz, Bedien- und Anzeigesystem und die Trennwand als Schnittstelle zum Patientenraum."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Aufbau und Ladung",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E56",
+      "absaetze": [
+        {
+          "absatz_id": "P13",
+          "text": "In der EU muss der Patientenraum nach Anhang II der Verordnung (EU) 2018/858 die EN 1789 ohne deren Ausrüstungstabellen erfüllen, belegt durch den Prüfbericht eines technischen Dienstes; ein Rollstuhlplatz erfordert zusätzlich Rollstuhlbefestigung und Rückhaltesysteme. Die Mindestausstattung eines Krankentransportwagens besteht im Wesentlichen aus Trage, Tragstuhl, Sauerstoffanlage, Absaugpumpe, tragbarer Notfallausrüstung und Verbandmaterial. Im Rettungswagen sind Geräte wie das EKG-Gerät aus ihrer Halterung entnehmbar, die zugleich Ladestation ist; Schwerlast-Rettungswagen haben oft eine Ladebordwand.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q5",
+              "fundstelle": "Anhang II Teil III Anlage 1, „Zusätzliche Anforderungen für Krankenwagen“"
+            },
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Abschnitt „Technik“, Unterabschnitt „Ausstattung“, Absatz 1"
+            },
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Abschnitt „Medizinische Ausstattung“, Unterabschnitt „Deutschland“, Absatz 3, und Abschnitt „Technik“, Unterabschnitt „Verwendete Fahrzeugtypen“"
+            }
+          ],
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P14",
+          "text": "KKK-A-1822F verlangt Raum um den Patienten für lebenserhaltende Maßnahmen während der Fahrt; die Haupttrage liegt mit dem Kopf nach vorn und ist vom Betreuersitz aus zugänglich. Die Tragenhalterung mit Schnellverschluss darf unter Kräften in Längs-, Quer- und Hochrichtung nicht versagen. Eine fest verrohrte Sauerstoffanlage mit Druckminderer wird aus einer von außen wechselbaren Flasche gespeist, die elektrische Absauganlage entlüftet nach außen.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q6",
+              "fundstelle": "Abschnitte 3.10.1, 3.1.5, 3.10.3, 3.11.6, 3.12, 3.12.1 und 3.12.2"
+            }
+          ],
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P15",
+          "text": "Im Modell umfasst Aufbau und Ladung die Patientenlagerung aus Fahrtrage, Tragenhalterung und Tragstuhl, den Betreuersitz, die medizinische Gasversorgung aus Sauerstoffflasche, Druckminderer und Sauerstoffentnahmestelle, die Absauganlage, die Medizingerätehalterung, den Stauraum und optional die Ladebordwand. Die Fahrtrage wird in der Tragenhalterung verriegelt, Sauerstoff fließt über den Druckminderer zur Entnahmestelle. Die Ausstattungsstufe ändert Gasvorrat, Gerätezahl und elektrische Last.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P13",
+              "P14",
+              "P1 (steigende Mindestausrüstung von Typ zu Typ)",
+              "Q6 Abschnitte 3.11.1 und 3.11.2 (Stauraum innen und außen)"
+            ],
+            "schluss": "Der Ausbau gliedert sich in Patientenlagerung, Betreuersitz, Gasversorgung, Absauganlage, Gerätehalterung, Stauraum und Ladehilfe; die Ausstattungsstufe skaliert Gas, Geräte und Last."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Elektrik und Elektronik",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E70",
+      "absaetze": [
+        {
+          "absatz_id": "P16",
+          "text": "Wegen des hohen Strombedarfs des Ausbaus für Blaulicht, Innenbeleuchtung, Arbeitsscheinwerfer, Rückwarnsystem, Temperaturmanagement und Laden der Medizingeräte brauchen Rettungswagen eine möglichst ununterbrochene Stromversorgung über ein außen angeschlossenes Ladekabel oder den Motor. KKK-A-1822F versorgt den Aufbau über eigene, von den Fahrgestellkreisen getrennte Stromkreise und ein getrenntes Wechselspannungsnetz, das im Stand über eine Landstromeinspeisung gespeist wird; daran hält ein Ladeerhaltungsgerät die Batterien geladen. Tragbare Geräte werden nur bei laufendem Motor oder anliegendem Landstrom geladen.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Abschnitt „Technik“, Absatz 2"
+            },
+            {
+              "quellen_id": "Q6",
+              "fundstelle": "Abschnitte 3.7.2 Nr. 1, 3.7.8, 3.7.8.1, 3.7.7.1 und 3.7.7.2"
+            }
+          ],
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P17",
+          "text": "Im Modell gliedert sich Elektrik und Elektronik in das Fahrgestell-Bordnetz mit Niedervolt-Bordnetz, Leitungssatz, Sicherungen und Fahrzeugbus und das Aufbaubordnetz mit Stromverteiler, Landstromeinspeisung, Wechselspannungsnetz, Ladeerhaltungsgerät und Geräteladeschaltung. Die Bordnetzbatterie speist über die Aufbauschnittstelle den Stromverteiler, der Absauganlage, Sondersignalanlage und Arbeitsbeleuchtung versorgt; bei hoher Last kommt ein Lastmanagement mit Abschaltreihenfolge hinzu.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P16",
+              "Q6 Abschnitt 3, Arbeitsblatt Nr. 23 (Lastmanagement mit festzulegender Abschaltreihenfolge)",
+              "Q6 Abschnitt 3.7.7.2 (Ladeschaltung für tragbare Geräte)",
+              "P8 (Bordnetzbatterie des Ausbaus)"
+            ],
+            "schluss": "Elektrik und Elektronik bestehen aus Fahrgestell-Bordnetz und Aufbaubordnetz, verbunden über die Aufbauschnittstelle."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrzeugsteuerung und Information",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E82",
+      "absaetze": [
+        {
+          "absatz_id": "P18",
+          "text": "Der Krankentransportwagen ist per Funk mit der Leitstelle verbunden, in Deutschland im öffentlichen Rettungsdienst über den BOS-Funk; über Datenfunk übermittelt die Leitstelle Transportinformationen, und die Besatzung meldet Position und Einsatzbereitschaft, teils mit GPS-Ortung. Datenfunkterminals übernehmen Einsatzdaten und protokollieren Zeitstempel. Fahrdatenschreiber zeichnen Geschwindigkeit, Bremsung, Warnlicht- und Sirenenbetrieb sowie Gurtnutzung auf.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Abschnitt „Technik“, Unterabschnitt „Kommunikation“, Absätze 1 und 2"
+            },
+            {
+              "quellen_id": "Q4",
+              "fundstelle": "Abschnitt „Equipment“, Aufzählungspunkte „Mobile data terminal“ und „Data recorders“"
+            }
+          ],
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P19",
+          "text": "Im Modell umfasst Fahrzeugsteuerung und Information die Einsatzkommunikation mit Funkanlage, Datenfunkterminal und Navigation, den Fahrdatenschreiber und die Betriebssteuerung mit Fahrzeugmanagement, Leerlaufdrehzahlanhebung, Motorweiterlaufschaltung und Diagnose. Die Motorweiterlaufschaltung erlaubt, den Krankenwagen mit laufendem Motor abzuschließen; das Fahrzeugmanagement koordiniert sie mit Leerlaufdrehzahlanhebung und Feststellbremse. Beim batterieelektrischen Fahrzeug übernimmt es stattdessen das Energiemanagement zwischen Traktionsbatterie und Aufbaubordnetz.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P18",
+              "P7 (Leerlaufdrehzahlanhebung, Spannungsüberwachung)",
+              "Q2 Abschnitt „Technik“, Absatz 2 (Motorweiterlaufschaltung)",
+              "P8 (Hochvolt-Energiesystem)"
+            ],
+            "schluss": "Die logische Ebene umfasst Einsatzkommunikation, Datenaufzeichnung und Betriebssteuerung für die Standversorgung."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrerassistenz und Sicherheit",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E93",
+      "absaetze": [
+        {
+          "absatz_id": "P20",
+          "text": "Krankenwagen sind häufiger in Unfälle mit Verletzten oder Toten verwickelt als Feuerwehr- oder Polizeifahrzeuge; die Betreuung des Patienten verhindert oft das Anschnallen der Besatzung, und nicht angeschnallte Insassen im Patientenraum sind besonders gefährdet. KKK-A-1822F verlangt für alle Sitzplätze im Patientenraum geeignete Rückhaltesysteme.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q4",
+              "fundstelle": "Abschnitt „Safety“, Absatz 1"
+            },
+            {
+              "quellen_id": "Q6",
+              "fundstelle": "Abschnitt 3.11.5"
+            }
+          ],
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P21",
+          "text": "Das System Fahrerassistenz und Sicherheit übernimmt die Assistenzfunktionen des Basisfahrzeugs: Die Umfeldsensorik erfasst den Raum vor dem Fahrzeug, Notbremsassistent und Spurhalteassistent greifen über Bremsregelung und Lenkunterstützung ein. Weil der Ausbau Masse, Schwerpunkt und Breite verändert, muss die Abstimmung dieser Funktionen und der Fahrdynamikregelung für das fertige Fahrzeug nachgewiesen werden.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "Q5 Anhang II Teil III, Erläuterung zum Buchstaben A1 (Auswirkungen der Mehrstufen-Typgenehmigung auf das ESC des Basisfahrzeugs)",
+              "P20",
+              "P9 und P10 (Eingriffswege über Lenkunterstützung und Bremsregelung)",
+              "Analogieschluss vom Transporter als Basisfahrzeug; Umfang der Assistenzausstattung ohne Quelle."
+            ],
+            "schluss": "Die Assistenzfunktionen stammen vom Basisfahrzeug und müssen für das ausgebaute Fahrzeug abgestimmt werden."
+          },
+          "sicherheit": "gering",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Beleuchtung und Sicht",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E97",
+      "absaetze": [
+        {
+          "absatz_id": "P22",
+          "text": "In Deutschland dürfen nach § 52 Absatz 3 StVZO Kraftfahrzeuge des Rettungsdienstes, die für Krankentransport oder Notfallrettung besonders eingerichtet, als Krankenkraftwagen anerkannt und außen deutlich gekennzeichnet sind, Warnleuchten für blaues Blinklicht führen, mehrere, wenn die Rundumwirkung es erfordert. Rettungswagen nehmen häufig Sonder- und Wegerechte nach §§ 35 und 38 StVO in Anspruch und haben dafür blaue Rundumkennleuchten und ein Folgetonhorn. KKK-A-1822F fordert eine Warnlichtanlage mit Rundumwirkung in zwei Betriebsarten, eine elektronische Sirene, seitliche Umfeldscheinwerfer und eine Ladeleuchte, die beim Öffnen der Hecktüren einschaltet.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q7",
+              "fundstelle": "§ 52 Absatz 3 Satz 1 Nr. 4"
+            },
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Abschnitt „Technik“, Absatz 1"
+            },
+            {
+              "quellen_id": "Q6",
+              "fundstelle": "Abschnitte 3.8.2, 3.14.4 und 3.8.3"
+            }
+          ],
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P23",
+          "text": "Im Modell gliedert sich Beleuchtung und Sicht in die Lichtanlage mit Scheinwerfer und Signalleuchten, die Sondersignalanlage mit Warnleuchten für blaues Blinklicht und Folgetonhorn, die Arbeitsbeleuchtung mit Umfeldscheinwerfer, Ladeleuchte und Patientenraumbeleuchtung sowie das Sichtsystem mit Außenspiegel, Scheibenwischer und Kamera-Monitor-System. Weil der Kofferaufbau die Sicht nach hinten verdeckt, übernehmen Außenspiegel und Kamera die Rücksicht; die Sondersignalanlage gehört zur elektrischen Dauerlast.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P22",
+              "P7 (Warnlichtanlage als Teil der Dauerlast)",
+              "P3 (Kofferaufbau hinter dem Fahrerhaus)",
+              "Q6 Abschnitt 3.8.4 (Innenbeleuchtung)",
+              "Funktionsprinzip: Ein geschlossener Aufbau ohne Heckfenster verhindert die direkte Rücksicht."
+            ],
+            "schluss": "Beleuchtung und Sicht umfassen Lichtanlage, Sondersignalanlage, Arbeitsbeleuchtung und Sichtsystem."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Thermomanagement",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E112",
+      "absaetze": [
+        {
+          "absatz_id": "P24",
+          "text": "Nach KKK-A-1822F hat jeder Krankenwagen eine Heizungs-, Lüftungs- und Klimaanlage, deren Klima in Fahrer- und Patientenraum unabhängig regelbar ist; Frischluft wird vorn angesaugt und hinten oben abgeführt. Die Heizung des Patientenraums wird möglichst an die Anschlusspunkte des Fahrgestells angeschlossen und hat eigene Absperrventile. Oft dient eine eigene Klimaanlage dem Arbeitsbereich, teils mit Filterung gegen Krankheitserreger.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q6",
+              "fundstelle": "Abschnitte 3.13.1, 3.13.2, 3.13.4 und 3.13.5"
+            },
+            {
+              "quellen_id": "Q4",
+              "fundstelle": "Abschnitt „Equipment“, Aufzählungspunkt „Air conditioning“"
+            }
+          ],
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P25",
+          "text": "Im Modell umfasst das Thermomanagement den Kühlkreislauf mit Kühler und Kühlmittelpumpe, die Heiz- und Klimaanlage des Fahrerhauses, die Patientenraumklimatisierung mit Zusatzklimaanlage, Zusatzheizung und Lüftung sowie beim batterieelektrischen Fahrzeug die Batterietemperierung. Die Zusatzheizung nutzt Wärme aus dem Kühlkreislauf des Motors; ohne Motorwärme heizt sie elektrisch und belastet die Traktionsbatterie.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P24",
+              "Q6 Abschnitt 3.6.4.5 (Kühlsystem des Motors)",
+              "P8 (Traktionsbatterie)",
+              "Funktionsprinzip: Jeder Energiewandler erzeugt Verlustwärme; ohne Verbrennungsmotor fehlt die Abwärme für die Heizung."
+            ],
+            "schluss": "Das Thermomanagement umfasst Motorkühlung, getrennte Klimatisierung von Fahrerhaus und Patientenraum und beim elektrischen Fahrzeug die Batterietemperierung."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Neben- und Versorgungssysteme",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E122",
+      "absaetze": [
+        {
+          "absatz_id": "P26",
+          "text": "Die Neben- und Versorgungssysteme stellen Hilfsenergien bereit. Der Nebenaggregatetrieb des Verbrennungsmotors treibt Generator und Klimakompressor. Für Wechselspannung ohne Landstrom nennt die US-Spezifikation tragbare, hydraulisch, riemen- oder hilfsmotorgetriebene Generatoren sowie einen aus dem Niedervoltnetz gespeisten Wechselrichter; im Modell sind dies Zusatzgenerator und Bordwechselrichter. Beide speisen das Wechselspannungsnetz und belasten Nebenaggregatetrieb oder Bordnetzbatterie.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "Q6 Abschnitt 3, Arbeitsblatt Nr. 28 (Arten bordeigener Wechselspannungsquellen)",
+              "P16 (Wechselspannungsnetz, Landstromeinspeisung)",
+              "Funktionsprinzip: Ein Generator braucht mechanischen Antrieb, ein Wechselrichter eine Gleichspannungsquelle."
+            ],
+            "schluss": "Nebenaggregatetrieb, Zusatzgenerator und Bordwechselrichter bilden die Hilfsenergieversorgung mit Schnittstellen zu Antrieb, Energieversorgung und Aufbaubordnetz."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Zusammenfassung",
+      "abschnittstyp": "gesamtsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P27",
+          "text": "Auf oberster Ebene besteht der Krankenwagen aus Fahrzeugstruktur und Fahrwerk, Antriebssystem, Energieversorgungssystem, Lenksystem, Bremssystem, Fahrerhaus, Aufbau und Ladung, Elektrik und Elektronik, Fahrzeugsteuerung und Information, Fahrerassistenz und Sicherheit, Beleuchtung und Sicht, Thermomanagement sowie Neben- und Versorgungssystemen. Prägend sind die Trennung von Basisfahrzeug und Ausbau, die Energieversorgung des Ausbaus im Stand und die Sondersignalanlage.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P2",
+              "P3",
+              "P16",
+              "P22"
+            ],
+            "schluss": "Die Hauptsysteme und ihre prägenden Abhängigkeiten ergeben sich aus den vorangehenden Abschnitten."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Modellierungsbezug",
+      "abschnittstyp": "modellierung",
+      "absaetze": [
+        {
+          "absatz_id": "P28",
+          "text": "In SysML bildet der Block Krankenwagen das Gesamtsystem mit den dreizehn Hauptsystemen als Teilen. Dekompositionspfade sind etwa Aufbau und Ladung → Medizinische Gasversorgung → Druckminderer, Elektrik und Elektronik → Aufbaubordnetz → Landstromeinspeisung, Beleuchtung und Sicht → Sondersignalanlage → Folgetonhorn sowie Antriebssystem → Kraftübertragung → Verteilergetriebe. Ports bilden Aufbauschnittstelle, Landstromanschluss, Sauerstoffanschlüsse und Tragenhalterung ab. Block Definition Diagrams zeigen die Zerlegung mit Varianten, Internal Block Diagrams die Energie-, Gas- und Informationsflüsse, Zustandsmaschinen die Betriebsarten Fahrt, Einsatzfahrt und Stand.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P15",
+              "P17",
+              "P23",
+              "P6",
+              "Strukturelle Dekomposition in Blöcke mit Teil-von-Beziehungen und Ports für Schnittstellen."
+            ],
+            "schluss": "Die Dekomposition lässt sich über mehrere Ebenen als Blockhierarchie mit Variantenpunkten, Ports und Betriebsarten abbilden."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Flüsse",
+      "abschnittstyp": "fluesse",
+      "absaetze": [
+        {
+          "absatz_id": "P29",
+          "text": "Kraftstoff fließt vom Kraftstofftank über die Kraftstoffanlage zum Verbrennungsmotor, Hochvoltenergie von der Traktionsbatterie über Hochvolt-Verteilung und Antriebswechselrichter zur Traktionsmaschine, mechanische Leistung über Getriebe, Gelenkwelle und Differenzial zu den Rädern. Generator, Gleichspannungswandler und Ladeerhaltungsgerät laden die Batterien; Landstrom, Zusatzgenerator und Bordwechselrichter speisen das Wechselspannungsnetz. Sauerstoff fließt von der Flasche zur Entnahmestelle, Tragelasten über Tragenhalterung, Kofferaufbau und Rahmen in Federung und Achse. Informationen laufen von der Umfeldsensorik über die Assistenzfunktionen zu Bremsregelung und Lenkunterstützung, Wärme vom Motor über den Kühlkreislauf zur Zusatzheizung.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "Flüsse der Abschnitte P4 bis P26",
+              "Jeder Fluss hat Ursprung und Ziel in einem Element des Modells."
+            ],
+            "schluss": "Energie-, Stoff-, Last-, Wärme- und Informationsflüsse verbinden die Hauptsysteme über benannte Schnittstellen."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Perspektiven",
+      "abschnittstyp": "perspektiven",
+      "absaetze": [
+        {
+          "absatz_id": "P30",
+          "text": "Funktionszuordnung. Fahrzeuglasten tragen: Karosserie, Rahmen, Fahrwerk. Antriebsleistung erzeugen: Verbrennungsmotor, Abgasanlage, Traktionsmaschine, Antriebswechselrichter. Drehmoment übertragen: Kraftübertragung. Fahrzeug fortbewegen: Räder und Reifen. Treibstoff fördern: Kraftstoffanlage. Energie speichern: Kraftstofftank, Traktionsbatterie, Starterbatterie, Bordnetzbatterie. Traktionsbatterie laden: Ladeeinrichtung. Elektrische Energie verteilen: Generator, Gleichspannungswandler, Hochvolt-Verteilung, Fahrgestell-Bordnetz, Stromverteiler, Wechselspannungsnetz. Landstrom einspeisen: Landstromeinspeisung, Ladeerhaltungsgerät. Arbeitsgeräte versorgen: Geräteladeschaltung, Nebenaggregatetrieb, Zusatzgenerator, Bordwechselrichter, Leerlaufdrehzahlanhebung, Motorweiterlaufschaltung. Fahrzeug lenken: Lenkrad, Lenkgetriebe, Lenkunterstützung, Spurhalteassistent. Fahrzeug verzögern: Betriebsbremse, Bremsregelung, Notbremsassistent. Bremsenergie zurückgewinnen: Traktionsmaschine. Fahrzeug festhalten: Feststellbremse. Fahrereingaben erfassen: Bedienelemente. Fahrerinformationen anzeigen: Kombiinstrument, Warnanzeige. Insassen schützen: Rückhaltesystem, Betreuersitz, Tragenhalterung, Trennwand. Ladung aufnehmen: Patientenlagerung, Stauraum, Ladebordwand, Türen. Patienten versorgen: Medizingerätehalterung, Absauganlage. Medizinischen Sauerstoff bereitstellen: medizinische Gasversorgung. Unterdruck bereitstellen: Absauganlage. Daten übertragen: Fahrzeugbus, Funkanlage, Datenfunkterminal. Fahrzeugposition bestimmen: Navigation. Fahrzeugzustand überwachen: Fahrzeugmanagement, Diagnose, Fahrdatenschreiber. Fahrzeugumfeld erfassen: Umfeldsensorik, Kamera-Monitor-System. Fahrzeugumgebung ausleuchten: Scheinwerfer, Arbeitsbeleuchtung. Lichtsignale abgeben: Signalleuchten, Warnleuchten für blaues Blinklicht. Akustische Warnsignale abgeben: Folgetonhorn. Fahrersicht sicherstellen: Außenspiegel, Scheibenwischer, Kamera-Monitor-System. Betriebstemperatur regeln: Kühlkreislauf, Batterietemperierung. Innenraum klimatisieren: Heiz- und Klimaanlage, Patientenraumklimatisierung.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "Funktionszuordnungen der Abschnitte P4 bis P26",
+              "Jede Funktion braucht ein ausführendes Element."
+            ],
+            "schluss": "Alle Funktionen des Modells sind den ausführenden Systemen und Komponenten zugeordnet."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    }
+  ],
+  "modell": {
+    "elemente": [
+      {
+        "id": "E1",
+        "name": "Krankenwagen",
+        "typ": "gesamtsystem",
+        "eltern_id": null,
+        "absatz_ids": [
+          "P1",
+          "P2",
+          "P27",
+          "P28"
+        ]
+      },
+      {
+        "id": "E2",
+        "name": "Fahrzeugstruktur und Fahrwerk",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P27"
+        ],
+        "kategorie": "struktur_fahrwerk"
+      },
+      {
+        "id": "E3",
+        "name": "Karosserie",
+        "typ": "subsystem",
+        "eltern_id": "E2",
+        "absatz_ids": [
+          "P3",
+          "P4",
+          "P30"
+        ]
+      },
+      {
+        "id": "E4",
+        "name": "Rohbau",
+        "typ": "komponente",
+        "eltern_id": "E3",
+        "absatz_ids": [
+          "P4"
+        ]
+      },
+      {
+        "id": "E5",
+        "name": "Kofferaufbau",
+        "typ": "komponente",
+        "eltern_id": "E3",
+        "absatz_ids": [
+          "P3",
+          "P4",
+          "P23",
+          "P29"
+        ]
+      },
+      {
+        "id": "E6",
+        "name": "Türen",
+        "typ": "komponente",
+        "eltern_id": "E3",
+        "absatz_ids": [
+          "P4",
+          "P11",
+          "P30"
+        ]
+      },
+      {
+        "id": "E7",
+        "name": "Rahmen",
+        "typ": "komponente",
+        "eltern_id": "E2",
+        "absatz_ids": [
+          "P4",
+          "P29",
+          "P30"
+        ]
+      },
+      {
+        "id": "E8",
+        "name": "Fahrwerk",
+        "typ": "subsystem",
+        "eltern_id": "E2",
+        "absatz_ids": [
+          "P4",
+          "P30"
+        ]
+      },
+      {
+        "id": "E9",
+        "name": "Achse",
+        "typ": "komponente",
+        "eltern_id": "E8",
+        "absatz_ids": [
+          "P4",
+          "P29"
+        ]
+      },
+      {
+        "id": "E10",
+        "name": "Radaufhängung",
+        "typ": "komponente",
+        "eltern_id": "E8",
+        "absatz_ids": [
+          "P4"
+        ]
+      },
+      {
+        "id": "E11",
+        "name": "Federung",
+        "typ": "komponente",
+        "eltern_id": "E8",
+        "absatz_ids": [
+          "P4",
+          "P29"
+        ]
+      },
+      {
+        "id": "E12",
+        "name": "Räder und Reifen",
+        "typ": "komponente",
+        "eltern_id": "E8",
+        "absatz_ids": [
+          "P4",
+          "P30"
+        ]
+      },
+      {
+        "id": "E13",
+        "name": "Antriebssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P6",
+          "P27",
+          "P28"
+        ],
+        "kategorie": "antrieb"
+      },
+      {
+        "id": "E14",
+        "name": "Verbrennungsmotor",
+        "typ": "komponente",
+        "eltern_id": "E13",
+        "absatz_ids": [
+          "P6",
+          "P29",
+          "P30"
+        ]
+      },
+      {
+        "id": "E15",
+        "name": "Abgasanlage",
+        "typ": "komponente",
+        "eltern_id": "E13",
+        "absatz_ids": [
+          "P5",
+          "P30"
+        ]
+      },
+      {
+        "id": "E16",
+        "name": "Traktionsmaschine",
+        "typ": "komponente",
+        "eltern_id": "E13",
+        "absatz_ids": [
+          "P6",
+          "P10",
+          "P29",
+          "P30"
+        ]
+      },
+      {
+        "id": "E17",
+        "name": "Antriebswechselrichter",
+        "typ": "komponente",
+        "eltern_id": "E13",
+        "absatz_ids": [
+          "P6",
+          "P29",
+          "P30"
+        ]
+      },
+      {
+        "id": "E18",
+        "name": "Kraftübertragung",
+        "typ": "subsystem",
+        "eltern_id": "E13",
+        "absatz_ids": [
+          "P6",
+          "P28",
+          "P30"
+        ]
+      },
+      {
+        "id": "E19",
+        "name": "Getriebe",
+        "typ": "komponente",
+        "eltern_id": "E18",
+        "absatz_ids": [
+          "P6",
+          "P29"
+        ]
+      },
+      {
+        "id": "E20",
+        "name": "Gelenkwelle",
+        "typ": "komponente",
+        "eltern_id": "E18",
+        "absatz_ids": [
+          "P5",
+          "P6",
+          "P29"
+        ]
+      },
+      {
+        "id": "E21",
+        "name": "Differenzial",
+        "typ": "komponente",
+        "eltern_id": "E18",
+        "absatz_ids": [
+          "P6",
+          "P29"
+        ]
+      },
+      {
+        "id": "E22",
+        "name": "Verteilergetriebe",
+        "typ": "komponente",
+        "eltern_id": "E18",
+        "absatz_ids": [
+          "P6",
+          "P28"
+        ]
+      },
+      {
+        "id": "E23",
+        "name": "Energieversorgungssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P8",
+          "P27"
+        ],
+        "kategorie": "energieversorgung"
+      },
+      {
+        "id": "E24",
+        "name": "Kraftstoffversorgung",
+        "typ": "subsystem",
+        "eltern_id": "E23",
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "E25",
+        "name": "Kraftstofftank",
+        "typ": "komponente",
+        "eltern_id": "E24",
+        "absatz_ids": [
+          "P8",
+          "P29",
+          "P30"
+        ]
+      },
+      {
+        "id": "E26",
+        "name": "Kraftstoffanlage",
+        "typ": "komponente",
+        "eltern_id": "E24",
+        "absatz_ids": [
+          "P8",
+          "P29",
+          "P30"
+        ]
+      },
+      {
+        "id": "E27",
+        "name": "Hochvolt-Energiesystem",
+        "typ": "subsystem",
+        "eltern_id": "E23",
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "E28",
+        "name": "Traktionsbatterie",
+        "typ": "komponente",
+        "eltern_id": "E27",
+        "absatz_ids": [
+          "P8",
+          "P19",
+          "P25",
+          "P29",
+          "P30"
+        ]
+      },
+      {
+        "id": "E29",
+        "name": "Hochvolt-Verteilung",
+        "typ": "komponente",
+        "eltern_id": "E27",
+        "absatz_ids": [
+          "P6",
+          "P8",
+          "P29",
+          "P30"
+        ]
+      },
+      {
+        "id": "E30",
+        "name": "Ladeeinrichtung",
+        "typ": "komponente",
+        "eltern_id": "E27",
+        "absatz_ids": [
+          "P8",
+          "P30"
+        ]
+      },
+      {
+        "id": "E31",
+        "name": "Gleichspannungswandler",
+        "typ": "komponente",
+        "eltern_id": "E27",
+        "absatz_ids": [
+          "P8",
+          "P29",
+          "P30"
+        ]
+      },
+      {
+        "id": "E32",
+        "name": "Starterbatterie",
+        "typ": "komponente",
+        "eltern_id": "E23",
+        "absatz_ids": [
+          "P8",
+          "P30"
+        ]
+      },
+      {
+        "id": "E33",
+        "name": "Bordnetzbatterie",
+        "typ": "komponente",
+        "eltern_id": "E23",
+        "absatz_ids": [
+          "P8",
+          "P17",
+          "P26",
+          "P30"
+        ]
+      },
+      {
+        "id": "E34",
+        "name": "Generator",
+        "typ": "komponente",
+        "eltern_id": "E23",
+        "absatz_ids": [
+          "P8",
+          "P26",
+          "P29",
+          "P30"
+        ]
+      },
+      {
+        "id": "E35",
+        "name": "Lenksystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P9",
+          "P27"
+        ],
+        "kategorie": "lenkung"
+      },
+      {
+        "id": "E36",
+        "name": "Lenkrad",
+        "typ": "komponente",
+        "eltern_id": "E35",
+        "absatz_ids": [
+          "P9",
+          "P30"
+        ]
+      },
+      {
+        "id": "E37",
+        "name": "Lenkgetriebe",
+        "typ": "komponente",
+        "eltern_id": "E35",
+        "absatz_ids": [
+          "P9",
+          "P30"
+        ]
+      },
+      {
+        "id": "E38",
+        "name": "Lenkunterstützung",
+        "typ": "komponente",
+        "eltern_id": "E35",
+        "absatz_ids": [
+          "P9",
+          "P21",
+          "P29",
+          "P30"
+        ]
+      },
+      {
+        "id": "E39",
+        "name": "Bremssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P10",
+          "P27"
+        ],
+        "kategorie": "bremse"
+      },
+      {
+        "id": "E40",
+        "name": "Betriebsbremse",
+        "typ": "subsystem",
+        "eltern_id": "E39",
+        "absatz_ids": [
+          "P10",
+          "P30"
+        ]
+      },
+      {
+        "id": "E41",
+        "name": "Bremskraftverstärker",
+        "typ": "komponente",
+        "eltern_id": "E40",
+        "absatz_ids": [
+          "P10"
+        ]
+      },
+      {
+        "id": "E42",
+        "name": "Radbremse",
+        "typ": "komponente",
+        "eltern_id": "E40",
+        "absatz_ids": [
+          "P10"
+        ]
+      },
+      {
+        "id": "E43",
+        "name": "Feststellbremse",
+        "typ": "komponente",
+        "eltern_id": "E39",
+        "absatz_ids": [
+          "P7",
+          "P10",
+          "P19",
+          "P30"
+        ]
+      },
+      {
+        "id": "E44",
+        "name": "Bremsregelung",
+        "typ": "subsystem",
+        "eltern_id": "E39",
+        "absatz_ids": [
+          "P10",
+          "P21",
+          "P29",
+          "P30"
+        ]
+      },
+      {
+        "id": "E45",
+        "name": "Antiblockiersystem",
+        "typ": "komponente",
+        "eltern_id": "E44",
+        "absatz_ids": [
+          "P10"
+        ]
+      },
+      {
+        "id": "E46",
+        "name": "Fahrdynamikregelung",
+        "typ": "komponente",
+        "eltern_id": "E44",
+        "absatz_ids": [
+          "P10",
+          "P21"
+        ]
+      },
+      {
+        "id": "E47",
+        "name": "Fahrerhaus",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P11",
+          "P12",
+          "P27"
+        ],
+        "kategorie": "bedienraum"
+      },
+      {
+        "id": "E48",
+        "name": "Fahrerarbeitsplatz",
+        "typ": "subsystem",
+        "eltern_id": "E47",
+        "absatz_ids": [
+          "P12"
+        ]
+      },
+      {
+        "id": "E49",
+        "name": "Sitze",
+        "typ": "komponente",
+        "eltern_id": "E48",
+        "absatz_ids": [
+          "P12"
+        ]
+      },
+      {
+        "id": "E50",
+        "name": "Rückhaltesystem",
+        "typ": "komponente",
+        "eltern_id": "E48",
+        "absatz_ids": [
+          "P12",
+          "P30"
+        ]
+      },
+      {
+        "id": "E51",
+        "name": "Bedien- und Anzeigesystem",
+        "typ": "subsystem",
+        "eltern_id": "E47",
+        "absatz_ids": [
+          "P12"
+        ]
+      },
+      {
+        "id": "E52",
+        "name": "Bedienelemente",
+        "typ": "komponente",
+        "eltern_id": "E51",
+        "absatz_ids": [
+          "P12",
+          "P30"
+        ]
+      },
+      {
+        "id": "E53",
+        "name": "Kombiinstrument",
+        "typ": "komponente",
+        "eltern_id": "E51",
+        "absatz_ids": [
+          "P12",
+          "P30"
+        ]
+      },
+      {
+        "id": "E54",
+        "name": "Warnanzeige",
+        "typ": "komponente",
+        "eltern_id": "E51",
+        "absatz_ids": [
+          "P11",
+          "P12",
+          "P30"
+        ]
+      },
+      {
+        "id": "E55",
+        "name": "Trennwand",
+        "typ": "komponente",
+        "eltern_id": "E47",
+        "absatz_ids": [
+          "P11",
+          "P12",
+          "P30"
+        ]
+      },
+      {
+        "id": "E56",
+        "name": "Aufbau und Ladung",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P15",
+          "P27",
+          "P28"
+        ],
+        "kategorie": "aufbau_nutzlast"
+      },
+      {
+        "id": "E57",
+        "name": "Patientenlagerung",
+        "typ": "subsystem",
+        "eltern_id": "E56",
+        "absatz_ids": [
+          "P15",
+          "P30"
+        ]
+      },
+      {
+        "id": "E58",
+        "name": "Fahrtrage",
+        "typ": "komponente",
+        "eltern_id": "E57",
+        "absatz_ids": [
+          "P4",
+          "P15"
+        ]
+      },
+      {
+        "id": "E59",
+        "name": "Tragenhalterung",
+        "typ": "komponente",
+        "eltern_id": "E57",
+        "absatz_ids": [
+          "P4",
+          "P14",
+          "P15",
+          "P29",
+          "P30"
+        ]
+      },
+      {
+        "id": "E60",
+        "name": "Tragstuhl",
+        "typ": "komponente",
+        "eltern_id": "E57",
+        "absatz_ids": [
+          "P13",
+          "P15"
+        ]
+      },
+      {
+        "id": "E61",
+        "name": "Betreuersitz",
+        "typ": "komponente",
+        "eltern_id": "E56",
+        "absatz_ids": [
+          "P14",
+          "P15",
+          "P30"
+        ]
+      },
+      {
+        "id": "E62",
+        "name": "Medizinische Gasversorgung",
+        "typ": "subsystem",
+        "eltern_id": "E56",
+        "absatz_ids": [
+          "P15",
+          "P28",
+          "P30"
+        ]
+      },
+      {
+        "id": "E63",
+        "name": "Sauerstoffflasche",
+        "typ": "komponente",
+        "eltern_id": "E62",
+        "absatz_ids": [
+          "P15"
+        ]
+      },
+      {
+        "id": "E64",
+        "name": "Druckminderer",
+        "typ": "komponente",
+        "eltern_id": "E62",
+        "absatz_ids": [
+          "P14",
+          "P15",
+          "P28"
+        ]
+      },
+      {
+        "id": "E65",
+        "name": "Sauerstoffentnahmestelle",
+        "typ": "komponente",
+        "eltern_id": "E62",
+        "absatz_ids": [
+          "P15"
+        ]
+      },
+      {
+        "id": "E66",
+        "name": "Absauganlage",
+        "typ": "komponente",
+        "eltern_id": "E56",
+        "absatz_ids": [
+          "P14",
+          "P15",
+          "P17",
+          "P30"
+        ]
+      },
+      {
+        "id": "E67",
+        "name": "Medizingerätehalterung",
+        "typ": "komponente",
+        "eltern_id": "E56",
+        "absatz_ids": [
+          "P15",
+          "P30"
+        ]
+      },
+      {
+        "id": "E68",
+        "name": "Stauraum",
+        "typ": "komponente",
+        "eltern_id": "E56",
+        "absatz_ids": [
+          "P15",
+          "P30"
+        ]
+      },
+      {
+        "id": "E69",
+        "name": "Ladebordwand",
+        "typ": "komponente",
+        "eltern_id": "E56",
+        "absatz_ids": [
+          "P13",
+          "P15",
+          "P30"
+        ]
+      },
+      {
+        "id": "E70",
+        "name": "Elektrik und Elektronik",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P17",
+          "P27",
+          "P28"
+        ],
+        "kategorie": "elektrik_elektronik"
+      },
+      {
+        "id": "E71",
+        "name": "Fahrgestell-Bordnetz",
+        "typ": "subsystem",
+        "eltern_id": "E70",
+        "absatz_ids": [
+          "P17",
+          "P30"
+        ]
+      },
+      {
+        "id": "E72",
+        "name": "Niedervolt-Bordnetz",
+        "typ": "komponente",
+        "eltern_id": "E71",
+        "absatz_ids": [
+          "P17"
+        ]
+      },
+      {
+        "id": "E73",
+        "name": "Leitungssatz",
+        "typ": "komponente",
+        "eltern_id": "E71",
+        "absatz_ids": [
+          "P17"
+        ]
+      },
+      {
+        "id": "E74",
+        "name": "Sicherungen",
+        "typ": "komponente",
+        "eltern_id": "E71",
+        "absatz_ids": [
+          "P17"
+        ]
+      },
+      {
+        "id": "E75",
+        "name": "Fahrzeugbus",
+        "typ": "komponente",
+        "eltern_id": "E71",
+        "absatz_ids": [
+          "P17",
+          "P30"
+        ]
+      },
+      {
+        "id": "E76",
+        "name": "Aufbaubordnetz",
+        "typ": "subsystem",
+        "eltern_id": "E70",
+        "absatz_ids": [
+          "P17",
+          "P19",
+          "P28"
+        ]
+      },
+      {
+        "id": "E77",
+        "name": "Stromverteiler",
+        "typ": "komponente",
+        "eltern_id": "E76",
+        "absatz_ids": [
+          "P17",
+          "P30"
+        ]
+      },
+      {
+        "id": "E78",
+        "name": "Landstromeinspeisung",
+        "typ": "komponente",
+        "eltern_id": "E76",
+        "absatz_ids": [
+          "P16",
+          "P17",
+          "P28",
+          "P30"
+        ]
+      },
+      {
+        "id": "E79",
+        "name": "Wechselspannungsnetz",
+        "typ": "komponente",
+        "eltern_id": "E76",
+        "absatz_ids": [
+          "P16",
+          "P17",
+          "P26",
+          "P29",
+          "P30"
+        ]
+      },
+      {
+        "id": "E80",
+        "name": "Ladeerhaltungsgerät",
+        "typ": "komponente",
+        "eltern_id": "E76",
+        "absatz_ids": [
+          "P16",
+          "P17",
+          "P29",
+          "P30"
+        ]
+      },
+      {
+        "id": "E81",
+        "name": "Geräteladeschaltung",
+        "typ": "komponente",
+        "eltern_id": "E76",
+        "absatz_ids": [
+          "P17",
+          "P30"
+        ]
+      },
+      {
+        "id": "E82",
+        "name": "Fahrzeugsteuerung und Information",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P19",
+          "P27"
+        ],
+        "kategorie": "steuerung_information"
+      },
+      {
+        "id": "E83",
+        "name": "Einsatzkommunikation",
+        "typ": "subsystem",
+        "eltern_id": "E82",
+        "absatz_ids": [
+          "P19"
+        ]
+      },
+      {
+        "id": "E84",
+        "name": "Funkanlage",
+        "typ": "komponente",
+        "eltern_id": "E83",
+        "absatz_ids": [
+          "P19",
+          "P30"
+        ]
+      },
+      {
+        "id": "E85",
+        "name": "Datenfunkterminal",
+        "typ": "komponente",
+        "eltern_id": "E83",
+        "absatz_ids": [
+          "P18",
+          "P19",
+          "P30"
+        ]
+      },
+      {
+        "id": "E86",
+        "name": "Navigation",
+        "typ": "komponente",
+        "eltern_id": "E83",
+        "absatz_ids": [
+          "P19",
+          "P30"
+        ]
+      },
+      {
+        "id": "E87",
+        "name": "Betriebssteuerung",
+        "typ": "subsystem",
+        "eltern_id": "E82",
+        "absatz_ids": [
+          "P19"
+        ]
+      },
+      {
+        "id": "E88",
+        "name": "Fahrzeugmanagement",
+        "typ": "komponente",
+        "eltern_id": "E87",
+        "absatz_ids": [
+          "P19",
+          "P30"
+        ]
+      },
+      {
+        "id": "E89",
+        "name": "Leerlaufdrehzahlanhebung",
+        "typ": "komponente",
+        "eltern_id": "E87",
+        "absatz_ids": [
+          "P7",
+          "P10",
+          "P19",
+          "P30"
+        ]
+      },
+      {
+        "id": "E90",
+        "name": "Motorweiterlaufschaltung",
+        "typ": "komponente",
+        "eltern_id": "E87",
+        "absatz_ids": [
+          "P19",
+          "P30"
+        ]
+      },
+      {
+        "id": "E91",
+        "name": "Diagnose",
+        "typ": "komponente",
+        "eltern_id": "E87",
+        "absatz_ids": [
+          "P19",
+          "P30"
+        ]
+      },
+      {
+        "id": "E92",
+        "name": "Fahrdatenschreiber",
+        "typ": "komponente",
+        "eltern_id": "E82",
+        "absatz_ids": [
+          "P18",
+          "P19",
+          "P30"
+        ]
+      },
+      {
+        "id": "E93",
+        "name": "Fahrerassistenz und Sicherheit",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P21",
+          "P27"
+        ],
+        "kategorie": "assistenz_sicherheit"
+      },
+      {
+        "id": "E94",
+        "name": "Umfeldsensorik",
+        "typ": "komponente",
+        "eltern_id": "E93",
+        "absatz_ids": [
+          "P21",
+          "P29",
+          "P30"
+        ]
+      },
+      {
+        "id": "E95",
+        "name": "Notbremsassistent",
+        "typ": "komponente",
+        "eltern_id": "E93",
+        "absatz_ids": [
+          "P21",
+          "P30"
+        ]
+      },
+      {
+        "id": "E96",
+        "name": "Spurhalteassistent",
+        "typ": "komponente",
+        "eltern_id": "E93",
+        "absatz_ids": [
+          "P9",
+          "P21",
+          "P30"
+        ]
+      },
+      {
+        "id": "E97",
+        "name": "Beleuchtung und Sicht",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P23",
+          "P27",
+          "P28"
+        ],
+        "kategorie": "beleuchtung_sicht"
+      },
+      {
+        "id": "E98",
+        "name": "Lichtanlage",
+        "typ": "subsystem",
+        "eltern_id": "E97",
+        "absatz_ids": [
+          "P23"
+        ]
+      },
+      {
+        "id": "E99",
+        "name": "Scheinwerfer",
+        "typ": "komponente",
+        "eltern_id": "E98",
+        "absatz_ids": [
+          "P23",
+          "P30"
+        ]
+      },
+      {
+        "id": "E100",
+        "name": "Signalleuchten",
+        "typ": "komponente",
+        "eltern_id": "E98",
+        "absatz_ids": [
+          "P23",
+          "P30"
+        ]
+      },
+      {
+        "id": "E101",
+        "name": "Sondersignalanlage",
+        "typ": "subsystem",
+        "eltern_id": "E97",
+        "absatz_ids": [
+          "P17",
+          "P23",
+          "P27",
+          "P28"
+        ]
+      },
+      {
+        "id": "E102",
+        "name": "Warnleuchten für blaues Blinklicht",
+        "typ": "komponente",
+        "eltern_id": "E101",
+        "absatz_ids": [
+          "P22",
+          "P23",
+          "P30"
+        ]
+      },
+      {
+        "id": "E103",
+        "name": "Folgetonhorn",
+        "typ": "komponente",
+        "eltern_id": "E101",
+        "absatz_ids": [
+          "P22",
+          "P23",
+          "P28",
+          "P30"
+        ]
+      },
+      {
+        "id": "E104",
+        "name": "Arbeitsbeleuchtung",
+        "typ": "subsystem",
+        "eltern_id": "E97",
+        "absatz_ids": [
+          "P12",
+          "P17",
+          "P23",
+          "P30"
+        ]
+      },
+      {
+        "id": "E105",
+        "name": "Umfeldscheinwerfer",
+        "typ": "komponente",
+        "eltern_id": "E104",
+        "absatz_ids": [
+          "P11",
+          "P22",
+          "P23"
+        ]
+      },
+      {
+        "id": "E106",
+        "name": "Ladeleuchte",
+        "typ": "komponente",
+        "eltern_id": "E104",
+        "absatz_ids": [
+          "P22",
+          "P23"
+        ]
+      },
+      {
+        "id": "E107",
+        "name": "Patientenraumbeleuchtung",
+        "typ": "komponente",
+        "eltern_id": "E104",
+        "absatz_ids": [
+          "P23"
+        ]
+      },
+      {
+        "id": "E108",
+        "name": "Sichtsystem",
+        "typ": "subsystem",
+        "eltern_id": "E97",
+        "absatz_ids": [
+          "P23"
+        ]
+      },
+      {
+        "id": "E109",
+        "name": "Außenspiegel",
+        "typ": "komponente",
+        "eltern_id": "E108",
+        "absatz_ids": [
+          "P23",
+          "P30"
+        ]
+      },
+      {
+        "id": "E110",
+        "name": "Scheibenwischer",
+        "typ": "komponente",
+        "eltern_id": "E108",
+        "absatz_ids": [
+          "P23",
+          "P30"
+        ]
+      },
+      {
+        "id": "E111",
+        "name": "Kamera-Monitor-System",
+        "typ": "komponente",
+        "eltern_id": "E108",
+        "absatz_ids": [
+          "P23",
+          "P30"
+        ]
+      },
+      {
+        "id": "E112",
+        "name": "Thermomanagement",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P25",
+          "P27"
+        ],
+        "kategorie": "thermomanagement"
+      },
+      {
+        "id": "E113",
+        "name": "Kühlkreislauf",
+        "typ": "subsystem",
+        "eltern_id": "E112",
+        "absatz_ids": [
+          "P25",
+          "P29",
+          "P30"
+        ]
+      },
+      {
+        "id": "E114",
+        "name": "Kühler",
+        "typ": "komponente",
+        "eltern_id": "E113",
+        "absatz_ids": [
+          "P25"
+        ]
+      },
+      {
+        "id": "E115",
+        "name": "Kühlmittelpumpe",
+        "typ": "komponente",
+        "eltern_id": "E113",
+        "absatz_ids": [
+          "P25"
+        ]
+      },
+      {
+        "id": "E116",
+        "name": "Heiz- und Klimaanlage",
+        "typ": "komponente",
+        "eltern_id": "E112",
+        "absatz_ids": [
+          "P25",
+          "P30"
+        ]
+      },
+      {
+        "id": "E117",
+        "name": "Patientenraumklimatisierung",
+        "typ": "subsystem",
+        "eltern_id": "E112",
+        "absatz_ids": [
+          "P25",
+          "P30"
+        ]
+      },
+      {
+        "id": "E118",
+        "name": "Zusatzklimaanlage",
+        "typ": "komponente",
+        "eltern_id": "E117",
+        "absatz_ids": [
+          "P25"
+        ]
+      },
+      {
+        "id": "E119",
+        "name": "Zusatzheizung",
+        "typ": "komponente",
+        "eltern_id": "E117",
+        "absatz_ids": [
+          "P25",
+          "P29"
+        ]
+      },
+      {
+        "id": "E120",
+        "name": "Lüftung",
+        "typ": "komponente",
+        "eltern_id": "E117",
+        "absatz_ids": [
+          "P25"
+        ]
+      },
+      {
+        "id": "E121",
+        "name": "Batterietemperierung",
+        "typ": "komponente",
+        "eltern_id": "E112",
+        "absatz_ids": [
+          "P25",
+          "P30"
+        ]
+      },
+      {
+        "id": "E122",
+        "name": "Neben- und Versorgungssysteme",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P26",
+          "P27"
+        ],
+        "kategorie": "nebensysteme"
+      },
+      {
+        "id": "E123",
+        "name": "Nebenaggregatetrieb",
+        "typ": "komponente",
+        "eltern_id": "E122",
+        "absatz_ids": [
+          "P26",
+          "P30"
+        ]
+      },
+      {
+        "id": "E124",
+        "name": "Zusatzgenerator",
+        "typ": "komponente",
+        "eltern_id": "E122",
+        "absatz_ids": [
+          "P26",
+          "P29",
+          "P30"
+        ]
+      },
+      {
+        "id": "E125",
+        "name": "Bordwechselrichter",
+        "typ": "komponente",
+        "eltern_id": "E122",
+        "absatz_ids": [
+          "P26",
+          "P29",
+          "P30"
+        ]
+      }
+    ],
+    "funktionen": [
+      {
+        "id": "F1",
+        "name": "Fahrzeuglasten tragen",
+        "ausgefuehrt_von": [
+          "E3",
+          "E7",
+          "E8"
+        ],
+        "absatz_ids": [
+          "P4",
+          "P30"
+        ]
+      },
+      {
+        "id": "F2",
+        "name": "Antriebsleistung erzeugen",
+        "ausgefuehrt_von": [
+          "E14",
+          "E15",
+          "E16",
+          "E17"
+        ],
+        "absatz_ids": [
+          "P6",
+          "P30"
+        ]
+      },
+      {
+        "id": "F3",
+        "name": "Drehmoment übertragen",
+        "ausgefuehrt_von": [
+          "E18"
+        ],
+        "absatz_ids": [
+          "P6",
+          "P30"
+        ]
+      },
+      {
+        "id": "F4",
+        "name": "Fahrzeug fortbewegen",
+        "ausgefuehrt_von": [
+          "E12"
+        ],
+        "absatz_ids": [
+          "P4",
+          "P30"
+        ]
+      },
+      {
+        "id": "F5",
+        "name": "Treibstoff fördern",
+        "ausgefuehrt_von": [
+          "E26"
+        ],
+        "absatz_ids": [
+          "P8",
+          "P30"
+        ]
+      },
+      {
+        "id": "F6",
+        "name": "Energie speichern",
+        "ausgefuehrt_von": [
+          "E25",
+          "E28",
+          "E32",
+          "E33"
+        ],
+        "absatz_ids": [
+          "P8",
+          "P30"
+        ]
+      },
+      {
+        "id": "F7",
+        "name": "Traktionsbatterie laden",
+        "ausgefuehrt_von": [
+          "E30"
+        ],
+        "absatz_ids": [
+          "P8",
+          "P30"
+        ]
+      },
+      {
+        "id": "F8",
+        "name": "Elektrische Energie verteilen",
+        "ausgefuehrt_von": [
+          "E34",
+          "E31",
+          "E29",
+          "E71",
+          "E77",
+          "E79"
+        ],
+        "absatz_ids": [
+          "P8",
+          "P17",
+          "P30"
+        ]
+      },
+      {
+        "id": "F9",
+        "name": "Landstrom einspeisen",
+        "ausgefuehrt_von": [
+          "E78",
+          "E80"
+        ],
+        "absatz_ids": [
+          "P16",
+          "P17",
+          "P30"
+        ]
+      },
+      {
+        "id": "F10",
+        "name": "Arbeitsgeräte versorgen",
+        "ausgefuehrt_von": [
+          "E81",
+          "E123",
+          "E124",
+          "E125",
+          "E89",
+          "E90"
+        ],
+        "absatz_ids": [
+          "P17",
+          "P19",
+          "P26",
+          "P30"
+        ]
+      },
+      {
+        "id": "F11",
+        "name": "Fahrzeug lenken",
+        "ausgefuehrt_von": [
+          "E36",
+          "E37",
+          "E38",
+          "E96"
+        ],
+        "absatz_ids": [
+          "P9",
+          "P30"
+        ]
+      },
+      {
+        "id": "F12",
+        "name": "Fahrzeug verzögern",
+        "ausgefuehrt_von": [
+          "E40",
+          "E44",
+          "E95"
+        ],
+        "absatz_ids": [
+          "P10",
+          "P21",
+          "P30"
+        ]
+      },
+      {
+        "id": "F13",
+        "name": "Bremsenergie zurückgewinnen",
+        "ausgefuehrt_von": [
+          "E16"
+        ],
+        "absatz_ids": [
+          "P6",
+          "P30"
+        ]
+      },
+      {
+        "id": "F14",
+        "name": "Fahrzeug festhalten",
+        "ausgefuehrt_von": [
+          "E43"
+        ],
+        "absatz_ids": [
+          "P10",
+          "P30"
+        ]
+      },
+      {
+        "id": "F15",
+        "name": "Fahrereingaben erfassen",
+        "ausgefuehrt_von": [
+          "E52"
+        ],
+        "absatz_ids": [
+          "P12",
+          "P30"
+        ]
+      },
+      {
+        "id": "F16",
+        "name": "Fahrerinformationen anzeigen",
+        "ausgefuehrt_von": [
+          "E53",
+          "E54"
+        ],
+        "absatz_ids": [
+          "P11",
+          "P12",
+          "P30"
+        ]
+      },
+      {
+        "id": "F17",
+        "name": "Insassen schützen",
+        "ausgefuehrt_von": [
+          "E50",
+          "E61",
+          "E59",
+          "E55"
+        ],
+        "absatz_ids": [
+          "P12",
+          "P14",
+          "P20",
+          "P30"
+        ]
+      },
+      {
+        "id": "F18",
+        "name": "Ladung aufnehmen",
+        "ausgefuehrt_von": [
+          "E57",
+          "E68",
+          "E69",
+          "E6"
+        ],
+        "absatz_ids": [
+          "P13",
+          "P15",
+          "P30"
+        ]
+      },
+      {
+        "id": "F19",
+        "name": "Patienten versorgen",
+        "ausgefuehrt_von": [
+          "E67",
+          "E66"
+        ],
+        "absatz_ids": [
+          "P13",
+          "P15",
+          "P30"
+        ]
+      },
+      {
+        "id": "F20",
+        "name": "Medizinischen Sauerstoff bereitstellen",
+        "ausgefuehrt_von": [
+          "E62"
+        ],
+        "absatz_ids": [
+          "P14",
+          "P15",
+          "P30"
+        ]
+      },
+      {
+        "id": "F21",
+        "name": "Unterdruck bereitstellen",
+        "ausgefuehrt_von": [
+          "E66"
+        ],
+        "absatz_ids": [
+          "P14",
+          "P30"
+        ]
+      },
+      {
+        "id": "F22",
+        "name": "Daten übertragen",
+        "ausgefuehrt_von": [
+          "E75",
+          "E84",
+          "E85"
+        ],
+        "absatz_ids": [
+          "P17",
+          "P18",
+          "P19",
+          "P30"
+        ]
+      },
+      {
+        "id": "F23",
+        "name": "Fahrzeugposition bestimmen",
+        "ausgefuehrt_von": [
+          "E86"
+        ],
+        "absatz_ids": [
+          "P18",
+          "P19",
+          "P30"
+        ]
+      },
+      {
+        "id": "F24",
+        "name": "Fahrzeugzustand überwachen",
+        "ausgefuehrt_von": [
+          "E88",
+          "E91",
+          "E92"
+        ],
+        "absatz_ids": [
+          "P18",
+          "P19",
+          "P30"
+        ]
+      },
+      {
+        "id": "F25",
+        "name": "Fahrzeugumfeld erfassen",
+        "ausgefuehrt_von": [
+          "E94",
+          "E111"
+        ],
+        "absatz_ids": [
+          "P21",
+          "P23",
+          "P30"
+        ]
+      },
+      {
+        "id": "F26",
+        "name": "Fahrzeugumgebung ausleuchten",
+        "ausgefuehrt_von": [
+          "E99",
+          "E104"
+        ],
+        "absatz_ids": [
+          "P22",
+          "P23",
+          "P30"
+        ]
+      },
+      {
+        "id": "F27",
+        "name": "Lichtsignale abgeben",
+        "ausgefuehrt_von": [
+          "E100",
+          "E102"
+        ],
+        "absatz_ids": [
+          "P22",
+          "P23",
+          "P30"
+        ]
+      },
+      {
+        "id": "F28",
+        "name": "Akustische Warnsignale abgeben",
+        "ausgefuehrt_von": [
+          "E103"
+        ],
+        "absatz_ids": [
+          "P22",
+          "P23",
+          "P30"
+        ]
+      },
+      {
+        "id": "F29",
+        "name": "Fahrersicht sicherstellen",
+        "ausgefuehrt_von": [
+          "E109",
+          "E110",
+          "E111"
+        ],
+        "absatz_ids": [
+          "P23",
+          "P30"
+        ]
+      },
+      {
+        "id": "F30",
+        "name": "Betriebstemperatur regeln",
+        "ausgefuehrt_von": [
+          "E113",
+          "E121"
+        ],
+        "absatz_ids": [
+          "P25",
+          "P30"
+        ]
+      },
+      {
+        "id": "F31",
+        "name": "Innenraum klimatisieren",
+        "ausgefuehrt_von": [
+          "E116",
+          "E117"
+        ],
+        "absatz_ids": [
+          "P24",
+          "P25",
+          "P30"
+        ]
+      }
+    ],
+    "fluesse": [
+      {
+        "id": "S1",
+        "von": "E26",
+        "nach": "E14",
+        "art": "stoff",
+        "medium": "Dieselkraftstoff",
+        "absatz_ids": [
+          "P8",
+          "P29"
+        ],
+        "schnittstelle": "Kraftstoffleitung zum Motor"
+      },
+      {
+        "id": "S2",
+        "von": "E14",
+        "nach": "E19",
+        "art": "mechanisch",
+        "medium": "Drehmoment",
+        "absatz_ids": [
+          "P6",
+          "P29"
+        ]
+      },
+      {
+        "id": "S3",
+        "von": "E19",
+        "nach": "E20",
+        "art": "mechanisch",
+        "medium": "Drehmoment",
+        "absatz_ids": [
+          "P6",
+          "P29"
+        ]
+      },
+      {
+        "id": "S4",
+        "von": "E20",
+        "nach": "E21",
+        "art": "mechanisch",
+        "medium": "Drehmoment",
+        "absatz_ids": [
+          "P6",
+          "P29"
+        ]
+      },
+      {
+        "id": "S5",
+        "von": "E21",
+        "nach": "E12",
+        "art": "mechanisch",
+        "medium": "Antriebsmoment",
+        "absatz_ids": [
+          "P6",
+          "P29"
+        ],
+        "schnittstelle": "Antriebswelle zur Radnabe"
+      },
+      {
+        "id": "S6",
+        "von": "E28",
+        "nach": "E29",
+        "art": "elektrisch",
+        "medium": "Hochvolt-Gleichstrom",
+        "absatz_ids": [
+          "P8",
+          "P29"
+        ]
+      },
+      {
+        "id": "S7",
+        "von": "E29",
+        "nach": "E17",
+        "art": "elektrisch",
+        "medium": "Hochvolt-Gleichstrom",
+        "absatz_ids": [
+          "P6",
+          "P29"
+        ],
+        "schnittstelle": "Hochvoltanschluss Antriebswechselrichter"
+      },
+      {
+        "id": "S8",
+        "von": "E17",
+        "nach": "E16",
+        "art": "elektrisch",
+        "medium": "Drehstrom",
+        "absatz_ids": [
+          "P6",
+          "P29"
+        ]
+      },
+      {
+        "id": "S9",
+        "von": "E16",
+        "nach": "E19",
+        "art": "mechanisch",
+        "medium": "Drehmoment",
+        "absatz_ids": [
+          "P6",
+          "P29"
+        ]
+      },
+      {
+        "id": "S10",
+        "von": "E30",
+        "nach": "E28",
+        "art": "elektrisch",
+        "medium": "Ladestrom",
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "S11",
+        "von": "E31",
+        "nach": "E72",
+        "art": "elektrisch",
+        "medium": "Niedervolt-Gleichstrom",
+        "absatz_ids": [
+          "P8",
+          "P17",
+          "P29"
+        ],
+        "schnittstelle": "Niedervolt-Einspeisung aus dem Hochvolt-Energiesystem"
+      },
+      {
+        "id": "S12",
+        "von": "E34",
+        "nach": "E33",
+        "art": "elektrisch",
+        "medium": "Ladestrom",
+        "absatz_ids": [
+          "P8",
+          "P29"
+        ]
+      },
+      {
+        "id": "S13",
+        "von": "E14",
+        "nach": "E123",
+        "art": "mechanisch",
+        "medium": "Drehmoment",
+        "absatz_ids": [
+          "P26"
+        ],
+        "schnittstelle": "Nebenabtrieb an der Kurbelwelle"
+      },
+      {
+        "id": "S14",
+        "von": "E123",
+        "nach": "E34",
+        "art": "mechanisch",
+        "medium": "Drehmoment",
+        "absatz_ids": [
+          "P26"
+        ],
+        "schnittstelle": "Riementrieb Generator"
+      },
+      {
+        "id": "S15",
+        "von": "E78",
+        "nach": "E79",
+        "art": "elektrisch",
+        "medium": "Wechselspannung aus Landstrom",
+        "absatz_ids": [
+          "P16",
+          "P29"
+        ]
+      },
+      {
+        "id": "S16",
+        "von": "E79",
+        "nach": "E80",
+        "art": "elektrisch",
+        "medium": "Wechselspannung",
+        "absatz_ids": [
+          "P16"
+        ]
+      },
+      {
+        "id": "S17",
+        "von": "E80",
+        "nach": "E33",
+        "art": "elektrisch",
+        "medium": "Ladestrom",
+        "absatz_ids": [
+          "P16",
+          "P29"
+        ],
+        "schnittstelle": "Batterieladeanschluss"
+      },
+      {
+        "id": "S18",
+        "von": "E33",
+        "nach": "E77",
+        "art": "elektrisch",
+        "medium": "Niedervolt-Gleichstrom",
+        "absatz_ids": [
+          "P17"
+        ],
+        "schnittstelle": "Aufbauschnittstelle"
+      },
+      {
+        "id": "S19",
+        "von": "E77",
+        "nach": "E66",
+        "art": "elektrisch",
+        "medium": "Niedervolt-Gleichstrom",
+        "absatz_ids": [
+          "P17"
+        ],
+        "schnittstelle": "Geräteversorgung Patientenraum"
+      },
+      {
+        "id": "S20",
+        "von": "E77",
+        "nach": "E101",
+        "art": "elektrisch",
+        "medium": "Niedervolt-Gleichstrom",
+        "absatz_ids": [
+          "P17",
+          "P23"
+        ],
+        "schnittstelle": "Versorgung Sondersignalanlage"
+      },
+      {
+        "id": "S21",
+        "von": "E81",
+        "nach": "E67",
+        "art": "elektrisch",
+        "medium": "Ladestrom",
+        "absatz_ids": [
+          "P16",
+          "P17"
+        ],
+        "schnittstelle": "Ladeanschluss Medizingerätehalterung"
+      },
+      {
+        "id": "S22",
+        "von": "E63",
+        "nach": "E64",
+        "art": "stoff",
+        "medium": "medizinischer Sauerstoff",
+        "absatz_ids": [
+          "P14",
+          "P15"
+        ]
+      },
+      {
+        "id": "S23",
+        "von": "E64",
+        "nach": "E65",
+        "art": "stoff",
+        "medium": "medizinischer Sauerstoff",
+        "absatz_ids": [
+          "P15",
+          "P29"
+        ]
+      },
+      {
+        "id": "S24",
+        "von": "E58",
+        "nach": "E59",
+        "art": "mechanisch",
+        "medium": "Tragelast",
+        "absatz_ids": [
+          "P15"
+        ]
+      },
+      {
+        "id": "S25",
+        "von": "E59",
+        "nach": "E5",
+        "art": "mechanisch",
+        "medium": "Tragelast",
+        "absatz_ids": [
+          "P4",
+          "P29"
+        ],
+        "schnittstelle": "Tragenbefestigung im Aufbauboden"
+      },
+      {
+        "id": "S26",
+        "von": "E5",
+        "nach": "E7",
+        "art": "mechanisch",
+        "medium": "Aufbaulast",
+        "absatz_ids": [
+          "P4",
+          "P29"
+        ]
+      },
+      {
+        "id": "S27",
+        "von": "E7",
+        "nach": "E11",
+        "art": "mechanisch",
+        "medium": "Fahrzeuglast",
+        "absatz_ids": [
+          "P4",
+          "P29"
+        ]
+      },
+      {
+        "id": "S28",
+        "von": "E11",
+        "nach": "E9",
+        "art": "mechanisch",
+        "medium": "Fahrzeuglast",
+        "absatz_ids": [
+          "P4",
+          "P29"
+        ]
+      },
+      {
+        "id": "S29",
+        "von": "E52",
+        "nach": "E101",
+        "art": "information",
+        "medium": "Schaltbefehl Sondersignal",
+        "absatz_ids": [
+          "P12"
+        ],
+        "schnittstelle": "Bedienteil Sondersignal"
+      },
+      {
+        "id": "S30",
+        "von": "E36",
+        "nach": "E37",
+        "art": "mechanisch",
+        "medium": "Lenkmoment",
+        "absatz_ids": [
+          "P9"
+        ]
+      },
+      {
+        "id": "S31",
+        "von": "E38",
+        "nach": "E37",
+        "art": "mechanisch",
+        "medium": "Unterstützungsmoment",
+        "absatz_ids": [
+          "P9"
+        ]
+      },
+      {
+        "id": "S32",
+        "von": "E37",
+        "nach": "E10",
+        "art": "mechanisch",
+        "medium": "Lenkbewegung",
+        "absatz_ids": [
+          "P9"
+        ],
+        "schnittstelle": "Spurstange"
+      },
+      {
+        "id": "S33",
+        "von": "E41",
+        "nach": "E42",
+        "art": "hydraulisch",
+        "medium": "Bremsflüssigkeit",
+        "absatz_ids": [
+          "P10"
+        ]
+      },
+      {
+        "id": "S34",
+        "von": "E44",
+        "nach": "E42",
+        "art": "hydraulisch",
+        "medium": "Bremsflüssigkeit",
+        "absatz_ids": [
+          "P10"
+        ]
+      },
+      {
+        "id": "S35",
+        "von": "E94",
+        "nach": "E95",
+        "art": "information",
+        "medium": "Umfelddaten",
+        "absatz_ids": [
+          "P21",
+          "P29"
+        ]
+      },
+      {
+        "id": "S36",
+        "von": "E95",
+        "nach": "E44",
+        "art": "information",
+        "medium": "Bremsanforderung",
+        "absatz_ids": [
+          "P21",
+          "P29"
+        ],
+        "schnittstelle": "Fahrzeugbus"
+      },
+      {
+        "id": "S37",
+        "von": "E96",
+        "nach": "E38",
+        "art": "information",
+        "medium": "Lenkmomentanforderung",
+        "absatz_ids": [
+          "P9",
+          "P21",
+          "P29"
+        ],
+        "schnittstelle": "Lenkeingriff über Fahrzeugbus"
+      },
+      {
+        "id": "S38",
+        "von": "E85",
+        "nach": "E84",
+        "art": "information",
+        "medium": "Einsatz- und Statusdaten",
+        "absatz_ids": [
+          "P18",
+          "P19"
+        ]
+      },
+      {
+        "id": "S39",
+        "von": "E75",
+        "nach": "E92",
+        "art": "information",
+        "medium": "Fahrdaten",
+        "absatz_ids": [
+          "P18"
+        ],
+        "schnittstelle": "Fahrzeugbus"
+      },
+      {
+        "id": "S40",
+        "von": "E43",
+        "nach": "E89",
+        "art": "information",
+        "medium": "Status Feststellbremse",
+        "absatz_ids": [
+          "P7",
+          "P10"
+        ],
+        "schnittstelle": "Freigabe Leerlaufdrehzahlanhebung"
+      },
+      {
+        "id": "S41",
+        "von": "E89",
+        "nach": "E14",
+        "art": "information",
+        "medium": "Drehzahlvorgabe",
+        "absatz_ids": [
+          "P7",
+          "P19"
+        ],
+        "schnittstelle": "Motorsteuerung"
+      },
+      {
+        "id": "S42",
+        "von": "E14",
+        "nach": "E113",
+        "art": "thermisch",
+        "medium": "Kühlmittel",
+        "absatz_ids": [
+          "P25",
+          "P29"
+        ],
+        "schnittstelle": "Motorkühlmittelanschluss"
+      },
+      {
+        "id": "S43",
+        "von": "E113",
+        "nach": "E119",
+        "art": "thermisch",
+        "medium": "Heizwasser",
+        "absatz_ids": [
+          "P24",
+          "P25",
+          "P29"
+        ]
+      },
+      {
+        "id": "S44",
+        "von": "E118",
+        "nach": "E56",
+        "art": "thermisch",
+        "medium": "gekühlte Luft",
+        "absatz_ids": [
+          "P24",
+          "P25"
+        ],
+        "schnittstelle": "Luftführung Patientenraum"
+      },
+      {
+        "id": "S45",
+        "von": "E121",
+        "nach": "E28",
+        "art": "thermisch",
+        "medium": "Temperiermittel",
+        "absatz_ids": [
+          "P25"
+        ],
+        "schnittstelle": "Temperierkreis Traktionsbatterie"
+      },
+      {
+        "id": "S46",
+        "von": "E124",
+        "nach": "E79",
+        "art": "elektrisch",
+        "medium": "Wechselspannung",
+        "absatz_ids": [
+          "P26",
+          "P29"
+        ],
+        "schnittstelle": "Einspeisung Wechselspannungsnetz"
+      },
+      {
+        "id": "S47",
+        "von": "E125",
+        "nach": "E79",
+        "art": "elektrisch",
+        "medium": "Wechselspannung",
+        "absatz_ids": [
+          "P26",
+          "P29"
+        ],
+        "schnittstelle": "Einspeisung Wechselspannungsnetz"
+      },
+      {
+        "id": "S48",
+        "von": "E33",
+        "nach": "E125",
+        "art": "elektrisch",
+        "medium": "Niedervolt-Gleichstrom",
+        "absatz_ids": [
+          "P26"
+        ],
+        "schnittstelle": "Bordnetzanschluss Wechselrichter"
+      },
+      {
+        "id": "S49",
+        "von": "E6",
+        "nach": "E54",
+        "art": "information",
+        "medium": "Türkontaktsignal",
+        "absatz_ids": [
+          "P11"
+        ],
+        "schnittstelle": "Türkontaktschalter"
+      },
+      {
+        "id": "S50",
+        "von": "E69",
+        "nach": "E58",
+        "art": "mechanisch",
+        "medium": "Hubkraft",
+        "absatz_ids": [
+          "P13",
+          "P15"
+        ]
+      },
+      {
+        "id": "S51",
+        "von": "E77",
+        "nach": "E104",
+        "art": "elektrisch",
+        "medium": "Niedervolt-Gleichstrom",
+        "absatz_ids": [
+          "P17",
+          "P23"
+        ],
+        "schnittstelle": "Versorgung Arbeitsbeleuchtung"
+      },
+      {
+        "id": "S52",
+        "von": "E6",
+        "nach": "E106",
+        "art": "information",
+        "medium": "Türöffnungssignal",
+        "absatz_ids": [
+          "P22"
+        ],
+        "schnittstelle": "Türkontakt Ladeleuchte"
+      }
+    ],
+    "entfallene_kategorien": [],
+    "varianten": [
+      {
+        "id": "V1",
+        "element_id": "E2",
+        "bezeichnung": "Aufbauart",
+        "alternativen": [
+          "Kastenwagen mit integriertem Patientenraum",
+          "Fahrgestell mit Fahrerhaus und Kofferaufbau",
+          "Kastenwagen-Fahrgestell mit Kofferaufbau und Durchgang"
+        ],
+        "auswahlkriterien": [
+          "Innenraumhöhe und -länge des Patientenraums",
+          "Nutzlastbedarf",
+          "Umsetzbarkeit des Ausbaus auf ein neues Fahrgestell",
+          "Beschaffungs- und Lebenszykluskosten",
+          "Wendigkeit im Stadtverkehr"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E55",
+            "beschreibung": "Trennwand mit Durchgang oder nur Schiebefenster zum Patientenraum"
+          },
+          {
+            "element_id": "E76",
+            "beschreibung": "Aufbaubordnetz mit eigener Aufbauschnittstelle zum Fahrgestell beim Kofferaufbau"
+          },
+          {
+            "element_id": "E102",
+            "beschreibung": "Warnleuchten an den oberen Ecken des Kofferaufbaus oder auf dem Fahrerhausdach"
+          },
+          {
+            "element_id": "E117",
+            "beschreibung": "Patientenraumklimatisierung als eigenes Aggregat am Kofferaufbau"
+          },
+          {
+            "element_id": "E12",
+            "beschreibung": "Zwillingsbereifung an der Hinterachse bei Fahrgestellen mit Kofferaufbau"
+          }
+        ],
+        "absatz_ids": [
+          "P3",
+          "P4",
+          "P11",
+          "P23"
+        ]
+      },
+      {
+        "id": "V2",
+        "element_id": "E13",
+        "bezeichnung": "Antriebsart",
+        "alternativen": [
+          "Dieselmotor mit Kraftstoffversorgung",
+          "Batterieelektrischer Antrieb mit Traktionsbatterie"
+        ],
+        "auswahlkriterien": [
+          "Einsatzradius und Schichtdauer",
+          "Standzeiten mit laufenden Verbrauchern am Einsatzort",
+          "Ladeinfrastruktur an der Rettungswache",
+          "Nutzlastreserve",
+          "Emissions- und Lärmvorgaben"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E23",
+            "beschreibung": "Kraftstoffversorgung oder Hochvolt-Energiesystem"
+          },
+          {
+            "element_id": "E89",
+            "beschreibung": "Leerlaufdrehzahlanhebung und Motorweiterlaufschaltung entfallen beim elektrischen Antrieb"
+          },
+          {
+            "element_id": "E119",
+            "beschreibung": "Zusatzheizung elektrisch statt über Motorabwärme"
+          },
+          {
+            "element_id": "E121",
+            "beschreibung": "Batterietemperierung kommt hinzu"
+          },
+          {
+            "element_id": "E123",
+            "beschreibung": "Nebenaggregatetrieb entfällt, Nebenverbraucher werden elektrisch angetrieben"
+          },
+          {
+            "element_id": "E39",
+            "beschreibung": "Bremsenergie wird über die Traktionsmaschine zurückgewonnen"
+          }
+        ],
+        "absatz_ids": [
+          "P6",
+          "P8",
+          "P19",
+          "P25"
+        ]
+      },
+      {
+        "id": "V3",
+        "element_id": "E18",
+        "bezeichnung": "Antriebsanordnung",
+        "alternativen": [
+          "Hinterradantrieb",
+          "Vorderradantrieb",
+          "Allradantrieb mit Verteilergetriebe"
+        ],
+        "auswahlkriterien": [
+          "Gelände- und Winterbetrieb im Einsatzgebiet",
+          "Ladekantenhöhe und Bauhöhe",
+          "Leermasse und Nutzlast",
+          "Traktion beladen"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E35",
+            "beschreibung": "Gelenkte Vorderachse ist bei Allradantrieb zugleich angetrieben"
+          },
+          {
+            "element_id": "E5",
+            "beschreibung": "Bauhöhe und Ladekante des Kofferaufbaus steigen"
+          },
+          {
+            "element_id": "E9",
+            "beschreibung": "Ausführung der angetriebenen Achsen"
+          }
+        ],
+        "absatz_ids": [
+          "P6",
+          "P9"
+        ]
+      },
+      {
+        "id": "V4",
+        "element_id": "E56",
+        "bezeichnung": "Ausstattungsstufe des Ausbaus",
+        "alternativen": [
+          "Krankentransportwagen",
+          "Notfallkrankenwagen",
+          "Rettungswagen oder Notarztwagen"
+        ],
+        "auswahlkriterien": [
+          "Einsatzspektrum zwischen Krankentransport und Notfallrettung",
+          "landesrechtliche Vorgaben zur Ausstattung",
+          "Qualifikation der Besatzung",
+          "Raumbedarf für Behandlung während der Fahrt"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E62",
+            "beschreibung": "Umfang des Sauerstoffvorrats"
+          },
+          {
+            "element_id": "E67",
+            "beschreibung": "Zahl der Medizingerätehalterungen mit Ladeanschluss"
+          },
+          {
+            "element_id": "E77",
+            "beschreibung": "Elektrische Last am Stromverteiler"
+          },
+          {
+            "element_id": "E33",
+            "beschreibung": "Kapazität der Bordnetzbatterie"
+          },
+          {
+            "element_id": "E117",
+            "beschreibung": "Leistung der Patientenraumklimatisierung"
+          }
+        ],
+        "absatz_ids": [
+          "P1",
+          "P13",
+          "P15"
+        ]
+      },
+      {
+        "id": "V5",
+        "element_id": "E76",
+        "bezeichnung": "Energieversorgung des Ausbaus im Stand",
+        "alternativen": [
+          "Landstrom an der Wache und Motorlauf mit Leerlaufdrehzahlanhebung am Einsatzort",
+          "Zusatzgenerator",
+          "Bordwechselrichter aus der Bordnetzbatterie"
+        ],
+        "auswahlkriterien": [
+          "Standzeiten am Einsatzort",
+          "Lärm und Abgas am Einsatzort",
+          "Leistungsbedarf der Wechselspannungsverbraucher",
+          "Masse und Bauraum"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E124",
+            "beschreibung": "Zusatzgenerator und seine Antriebsquelle kommen hinzu"
+          },
+          {
+            "element_id": "E33",
+            "beschreibung": "Bordnetzbatterie muss den Wechselrichter tragen"
+          },
+          {
+            "element_id": "E89",
+            "beschreibung": "Leerlaufdrehzahlanhebung wird zur Hauptversorgung im Stand"
+          },
+          {
+            "element_id": "E88",
+            "beschreibung": "Fahrzeugmanagement übernimmt Lastmanagement und Abschaltreihenfolge"
+          }
+        ],
+        "absatz_ids": [
+          "P16",
+          "P17",
+          "P26"
+        ]
+      },
+      {
+        "id": "V6",
+        "element_id": "E57",
+        "bezeichnung": "Patientenlagerung und Beladung",
+        "alternativen": [
+          "Fahrtrage mit Tragenhalterung",
+          "Schwerlasttrage mit Ladebordwand"
+        ],
+        "auswahlkriterien": [
+          "Patientengewicht",
+          "Rückenbelastung der Besatzung",
+          "Nutzlastreserve"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E5",
+            "beschreibung": "Bodenverstärkung und Heckportal des Kofferaufbaus"
+          },
+          {
+            "element_id": "E11",
+            "beschreibung": "Federung der Hinterachse für höhere Last"
+          },
+          {
+            "element_id": "E77",
+            "beschreibung": "Stromverteiler versorgt die Ladebordwand"
+          }
+        ],
+        "absatz_ids": [
+          "P13",
+          "P15"
+        ]
+      }
+    ],
+    "klaerungsfragen": [
+      {
+        "id": "K1",
+        "frage": "Soll der Krankenwagen als Kastenwagen mit integriertem Patientenraum oder als Fahrgestell mit umsetzbarem Kofferaufbau ausgeführt werden?",
+        "element_ids": [
+          "E2",
+          "E5"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Tragstruktur, Trennwand, Aufbaubordnetz und Lage der Warnleuchten ab.",
+        "variante_ids": [
+          "V1"
+        ]
+      },
+      {
+        "id": "K2",
+        "frage": "Welche Nutzlast muss nach Ausbau, Besatzung, Patient und Gerätebeladung mindestens verbleiben?",
+        "element_ids": [
+          "E2",
+          "E11"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Die Antwort bestimmt Fahrgestellklasse, Bereifung und Federung.",
+        "variante_ids": [
+          "V1",
+          "V6"
+        ]
+      },
+      {
+        "id": "K3",
+        "frage": "Soll der Krankenwagen verbrennungsmotorisch oder batterieelektrisch angetrieben werden?",
+        "element_ids": [
+          "E13",
+          "E23"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Energiespeicher, Standversorgung, Heizung und Nebenaggregate ab.",
+        "variante_ids": [
+          "V2"
+        ]
+      },
+      {
+        "id": "K4",
+        "frage": "Muss das Fahrzeug Feldwege, Gelände oder verschneite Straßen befahren, sodass ein Allradfahrgestell nötig ist?",
+        "element_ids": [
+          "E18",
+          "E35"
+        ],
+        "anlass": "betrieb",
+        "relevanz": "Die Antwort entscheidet über Verteilergetriebe, angetriebene Vorderachse und Bauhöhe des Aufbaus.",
+        "variante_ids": [
+          "V3"
+        ]
+      },
+      {
+        "id": "K5",
+        "frage": "Wie lange muss der Ausbau am Einsatzort ohne Landstrom versorgt werden, und darf dabei der Motor laufen?",
+        "element_ids": [
+          "E23",
+          "E33",
+          "E76"
+        ],
+        "anlass": "betrieb",
+        "relevanz": "Davon hängen Batteriekapazität, Leerlaufdrehzahlanhebung und Bedarf an Zusatzgenerator oder Wechselrichter ab.",
+        "variante_ids": [
+          "V2",
+          "V5"
+        ]
+      },
+      {
+        "id": "K6",
+        "frage": "Ist eine elektrische Lenkunterstützung gefordert, damit ein Spurhalteassistent lenkend eingreifen kann?",
+        "element_ids": [
+          "E35",
+          "E38",
+          "E96"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Die Antwort legt fest, ob Assistenzfunktionen nur warnen oder eingreifen."
+      },
+      {
+        "id": "K7",
+        "frage": "Soll die Feststellbremse mit Leerlaufdrehzahlanhebung und Motorweiterlaufschaltung verriegelt werden, und wer verantwortet diese Verknüpfung?",
+        "element_ids": [
+          "E39",
+          "E43",
+          "E89"
+        ],
+        "anlass": "schnittstelle",
+        "relevanz": "Davon hängt die Schnittstelle zwischen Fahrgestellhersteller und Ausbauer in der Betriebssteuerung ab."
+      },
+      {
+        "id": "K8",
+        "frage": "Soll die Trennwand einen begehbaren Durchgang zum Patientenraum haben oder nur ein Schiebefenster?",
+        "element_ids": [
+          "E47",
+          "E55"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Sitzanordnung im Fahrerhaus, Aufbaubauart und Besatzungswechsel während der Fahrt ab.",
+        "variante_ids": [
+          "V1"
+        ]
+      },
+      {
+        "id": "K9",
+        "frage": "Für welche Ausstattungsstufe wird der Ausbau ausgelegt: Krankentransport, Notfallkrankenwagen oder Rettungswagen?",
+        "element_ids": [
+          "E56",
+          "E62"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Die Antwort skaliert Sauerstoffvorrat, Geräteausstattung, elektrische Last und Klimatisierung.",
+        "variante_ids": [
+          "V4"
+        ]
+      },
+      {
+        "id": "K10",
+        "frage": "Müssen schwergewichtige Patienten befördert werden, sodass Schwerlasttrage und Ladebordwand vorzusehen sind?",
+        "element_ids": [
+          "E57",
+          "E69"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Bodenverstärkung, Heckportal, Federung und elektrische Versorgung der Ladehilfe ab.",
+        "variante_ids": [
+          "V6"
+        ]
+      },
+      {
+        "id": "K11",
+        "frage": "Welche Medizingeräte werden fest eingebaut und welche tragbar in Halterungen mit Ladeanschluss mitgeführt?",
+        "element_ids": [
+          "E56",
+          "E67",
+          "E81"
+        ],
+        "anlass": "schnittstelle",
+        "relevanz": "Die Antwort bestimmt Halterungen, Ladeschaltungen und Steckdosen im Patientenraum."
+      },
+      {
+        "id": "K12",
+        "frage": "Über welche Quelle wird das Wechselspannungsnetz im Stand ohne Landstrom gespeist?",
+        "element_ids": [
+          "E70",
+          "E76",
+          "E79"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Zusatzgenerator, Bordwechselrichter und Belastung der Bordnetzbatterie ab.",
+        "variante_ids": [
+          "V5"
+        ]
+      },
+      {
+        "id": "K13",
+        "frage": "Welche Verbraucher soll ein Lastmanagement bei sinkender Batteriespannung in welcher Reihenfolge abschalten?",
+        "element_ids": [
+          "E70",
+          "E77",
+          "E88"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Die Antwort sichert die Versorgung lebenswichtiger Medizingeräte bei Energiemangel."
+      },
+      {
+        "id": "K14",
+        "frage": "Welche Funk- und Datensysteme der Leitstelle muss das Fahrzeug unterstützen, und wer stellt die Endgeräte bei?",
+        "element_ids": [
+          "E82",
+          "E84",
+          "E85"
+        ],
+        "anlass": "schnittstelle",
+        "relevanz": "Davon hängen Einbauraum, Antennen, Stromversorgung und Datenanbindung der Einsatzkommunikation ab."
+      },
+      {
+        "id": "K15",
+        "frage": "Wie werden Assistenzfunktionen und Fahrdynamikregelung nach dem Ausbau abgestimmt, und wer weist ihre Wirkung nach?",
+        "element_ids": [
+          "E93",
+          "E46"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Die Antwort klärt Verantwortung und Prüfumfang zwischen Fahrgestellhersteller und Ausbauer."
+      },
+      {
+        "id": "K16",
+        "frage": "Welche Anordnung der Warnleuchten und welche Signalgeber verlangt der Betreiber für sein Einsatzgebiet?",
+        "element_ids": [
+          "E97",
+          "E101"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Leuchtenpositionen am Aufbau, Dauerlast und Bedienteil im Fahrerhaus ab."
+      },
+      {
+        "id": "K17",
+        "frage": "Welche Temperaturgrenzen müssen im Patientenraum bei extremen Außentemperaturen und im Stand eingehalten werden?",
+        "element_ids": [
+          "E112",
+          "E117"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Die Antwort bestimmt Leistung von Zusatzklimaanlage und Zusatzheizung und den Energiebedarf im Stand."
+      },
+      {
+        "id": "K18",
+        "frage": "Ist am Einsatzort ein laufender Zusatzgenerator zulässig, oder müssen Geräusch und Abgas dort vermieden werden?",
+        "element_ids": [
+          "E122",
+          "E124"
+        ],
+        "anlass": "betrieb",
+        "relevanz": "Davon hängt ab, ob die Standversorgung über Generator oder Batterie und Wechselrichter erfolgt.",
+        "variante_ids": [
+          "V5"
+        ]
+      }
+    ],
+    "anforderungsthemen": [
+      {
+        "id": "R1",
+        "element_ids": [
+          "E2",
+          "E5"
+        ],
+        "thema": "Festigkeit des Aufbaus und Insassenschutz bei Überschlag",
+        "kenngroessen": [
+          "Tragfähigkeit von Dach und Seitenwand",
+          "bleibende Verformung",
+          "Festigkeit der Einbautenbefestigung"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "KKK-A-1822F, Abschnitte 3.10.5 und 3.10.6 (USA, Star-of-Life-Krankenwagen auf Herstellerfahrgestell)",
+            "quellen_id": "Q6",
+            "fundstelle": "Abschnitte 3.10.5 und 3.10.6"
+          }
+        ]
+      },
+      {
+        "id": "R2",
+        "element_ids": [
+          "E2",
+          "E11",
+          "E12"
+        ],
+        "thema": "Nutzlast und Achslasten",
+        "kenngroessen": [
+          "zulässige Gesamtmasse",
+          "Nutzlastreserve",
+          "Achslastverteilung"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "Verordnung (EU) 2018/858, Anhang II Teil III Anlage 1 Nr. 44A und 48A Massen und Abmessungen (EU-Typgenehmigung, Krankenwagen der Klassen M1 bis M3)",
+            "quellen_id": "Q5",
+            "fundstelle": "Anhang II Teil III Anlage 1, Zeilen 44A und 48A"
+          }
+        ]
+      },
+      {
+        "id": "R3",
+        "element_ids": [
+          "E13",
+          "E15"
+        ],
+        "thema": "Fahrleistung und Abgasführung",
+        "kenngroessen": [
+          "Beschleunigung",
+          "Steigfähigkeit",
+          "Lage des Abgasaustritts"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "KKK-A-1822F, Abschnitte 3.4.6, 3.4.7 und 3.6.4.6 (USA)",
+            "quellen_id": "Q6",
+            "fundstelle": "Abschnitte 3.4.6, 3.4.7 und 3.6.4.6"
+          }
+        ]
+      },
+      {
+        "id": "R4",
+        "element_ids": [
+          "E23",
+          "E33",
+          "E34"
+        ],
+        "thema": "Energieautonomie des Ausbaus",
+        "kenngroessen": [
+          "elektrische Dauerlast",
+          "Generatorleistung bei hoher Motorraumtemperatur",
+          "Batteriekapazität",
+          "Standzeit ohne Nachladung",
+          "Reichweite"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "KKK-A-1822F, Abschnitte 3.7.6 und 3.7.7 (USA)",
+            "quellen_id": "Q6",
+            "fundstelle": "Abschnitte 3.7.6, 3.7.6.1, 3.7.6.2 und 3.7.7"
+          }
+        ]
+      },
+      {
+        "id": "R5",
+        "element_ids": [
+          "E35",
+          "E38"
+        ],
+        "thema": "Lenkbarkeit und Wendigkeit",
+        "kenngroessen": [
+          "Wendekreis",
+          "Lenkkraft",
+          "Eingriffsfähigkeit der Lenkunterstützung"
+        ]
+      },
+      {
+        "id": "R6",
+        "element_ids": [
+          "E39",
+          "E43"
+        ],
+        "thema": "Bremsverhalten des beladenen Fahrzeugs",
+        "kenngroessen": [
+          "Bremsweg",
+          "Haltewirkung der Feststellbremse",
+          "Anteil der Rückgewinnung"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "Verordnung (EU) 2018/858, Anhang II Teil III Anlage 1 Nr. 9A und 9B Bremsen (EU-Typgenehmigung, Krankenwagen der Klassen M1 bis M3)",
+            "quellen_id": "Q5",
+            "fundstelle": "Anhang II Teil III Anlage 1, Zeilen 9A und 9B"
+          }
+        ]
+      },
+      {
+        "id": "R7",
+        "element_ids": [
+          "E47",
+          "E54",
+          "E55"
+        ],
+        "thema": "Bedienung und Verbindung zum Patientenraum",
+        "kenngroessen": [
+          "Erreichbarkeit der Bedienelemente",
+          "Sicht- und Sprechverbindung",
+          "Umfang der Warnanzeigen"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "KKK-A-1822F, Abschnitte 3.7.1.1, 3.10.2 und 3.10.14 (USA)",
+            "quellen_id": "Q6",
+            "fundstelle": "Abschnitte 3.7.1.1, 3.10.2, 3.10.14 und 3.10.14.1"
+          }
+        ]
+      },
+      {
+        "id": "R8",
+        "element_ids": [
+          "E56",
+          "E59",
+          "E62",
+          "E66"
+        ],
+        "thema": "Patientenraum und medizinische Versorgung",
+        "kenngroessen": [
+          "Innenraummaße",
+          "Festigkeit der Tragenhalterung",
+          "Sauerstoffvorrat",
+          "Saugleistung der Absauganlage",
+          "Desinfizierbarkeit der Oberflächen"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "Verordnung (EU) 2018/858, Anhang II Teil III Anlage 1, Zusätzliche Anforderungen für Krankenwagen (EU-Typgenehmigung; Patientenraum nach EN 1789 ohne Ausrüstungstabellen)",
+            "quellen_id": "Q5",
+            "fundstelle": "Anhang II Teil III Anlage 1, „Zusätzliche Anforderungen für Krankenwagen“"
+          },
+          {
+            "bezeichnung": "KKK-A-1822F, Abschnitte 3.10.4, 3.11.6 und 3.12 (USA)",
+            "quellen_id": "Q6",
+            "fundstelle": "Abschnitte 3.10.4, 3.11.6, 3.12, 3.12.1 und 3.12.2"
+          }
+        ]
+      },
+      {
+        "id": "R9",
+        "element_ids": [
+          "E56",
+          "E61",
+          "E50"
+        ],
+        "thema": "Insassenschutz im Patientenraum",
+        "kenngroessen": [
+          "Festigkeit der Sitzverankerung",
+          "Gurtausstattung je Sitzplatz",
+          "Rollstuhlsicherung"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "Verordnung (EU) 2018/858, Anhang II Teil III Anlage 1 Nr. 15A, 19A und 31A mit Erläuterungen L und M (EU-Typgenehmigung, Krankenwagen der Klassen M1 bis M3)",
+            "quellen_id": "Q5",
+            "fundstelle": "Anhang II Teil III Anlage 1, Zeilen 15A, 19A und 31A; Erläuterungen zu den Buchstaben L und M"
+          }
+        ]
+      },
+      {
+        "id": "R10",
+        "element_ids": [
+          "E70",
+          "E78",
+          "E79"
+        ],
+        "thema": "Elektrische Sicherheit und Landstromversorgung",
+        "kenngroessen": [
+          "Fehlerstromschutz",
+          "Anschlussleistung Landstrom",
+          "Ladestrom des Ladeerhaltungsgeräts",
+          "elektromagnetische Verträglichkeit"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "KKK-A-1822F, Abschnitte 3.7.7.1 und 3.7.8 (USA)",
+            "quellen_id": "Q6",
+            "fundstelle": "Abschnitte 3.7.7.1, 3.7.8 bis 3.7.8.6"
+          },
+          {
+            "bezeichnung": "Verordnung (EU) 2018/858, Anhang II Teil III Anlage 1 Nr. 10A Elektromagnetische Verträglichkeit (EU-Typgenehmigung)",
+            "quellen_id": "Q5",
+            "fundstelle": "Anhang II Teil III Anlage 1, Zeile 10A"
+          }
+        ]
+      },
+      {
+        "id": "R11",
+        "element_ids": [
+          "E82",
+          "E84",
+          "E92"
+        ],
+        "thema": "Einsatzkommunikation und Datenaufzeichnung",
+        "kenngroessen": [
+          "Funkverfügbarkeit",
+          "Ortungsgenauigkeit",
+          "Umfang der aufgezeichneten Fahrdaten"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "KKK-A-1822F, Abschnitte 3.14.1 bis 3.14.3 (USA)",
+            "quellen_id": "Q6",
+            "fundstelle": "Abschnitte 3.14.1, 3.14.2 und 3.14.3"
+          }
+        ]
+      },
+      {
+        "id": "R12",
+        "element_ids": [
+          "E93",
+          "E46"
+        ],
+        "thema": "Assistenzwirkung und Fahrstabilität des ausgebauten Fahrzeugs",
+        "kenngroessen": [
+          "Eingriffsschwellen",
+          "Fahrstabilität bei Spurwechsel",
+          "Schwerpunkthöhe"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "Verordnung (EU) 2018/858, Anhang II Teil III, Erläuterung A1 zum ESC bei Mehrstufen-Typgenehmigung (EU-Typgenehmigung)",
+            "quellen_id": "Q5",
+            "fundstelle": "Anhang II Teil III, Erläuterung zum Buchstaben A1"
+          }
+        ]
+      },
+      {
+        "id": "R13",
+        "element_ids": [
+          "E97",
+          "E101",
+          "E104"
+        ],
+        "thema": "Wahrnehmbarkeit im Einsatz und Ausleuchtung",
+        "kenngroessen": [
+          "Rundumsichtbarkeit der Warnleuchten",
+          "Schallpegel des Folgetonhorns",
+          "Ausleuchtung des Arbeitsbereichs"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "StVZO § 52 Absatz 3 (Deutschland, Warnleuchten für blaues Blinklicht an Krankenkraftwagen)",
+            "quellen_id": "Q7",
+            "fundstelle": "§ 52 Absatz 3 Satz 1 Nr. 4 und Satz 2"
+          },
+          {
+            "bezeichnung": "KKK-A-1822F, Abschnitte 3.8.2, 3.8.3 und 3.14.4 (USA)",
+            "quellen_id": "Q6",
+            "fundstelle": "Abschnitte 3.8.2, 3.8.2.1, 3.8.3 und 3.14.4"
+          }
+        ]
+      },
+      {
+        "id": "R14",
+        "element_ids": [
+          "E112",
+          "E117"
+        ],
+        "thema": "Klima und Lüftung im Patientenraum",
+        "kenngroessen": [
+          "Innentemperaturbereich",
+          "Luftwechselrate",
+          "Schalldruckpegel im Patientenraum"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "KKK-A-1822F, Abschnitt 3.13 (USA)",
+            "quellen_id": "Q6",
+            "fundstelle": "Abschnitte 3.13.1 bis 3.13.6"
+          }
+        ]
+      },
+      {
+        "id": "R15",
+        "element_ids": [
+          "E122",
+          "E124",
+          "E125"
+        ],
+        "thema": "Bordeigene Wechselspannungsversorgung",
+        "kenngroessen": [
+          "Dauerleistung",
+          "Spannungsqualität",
+          "Geräuschemission am Einsatzort"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "KKK-A-1822F, Abschnitt 3, Arbeitsblatt Nr. 28 (USA)",
+            "quellen_id": "Q6",
+            "fundstelle": "Abschnitt 3, Arbeitsblatt, Nr. 28"
+          }
+        ]
+      }
+    ]
+  },
+  "offene_punkte": [
+    "Recherche: DIN EN 1789 in aktueller Ausgabe (Innenraummaße, Festigkeitsprüfungen von Tragenhalterung und Einbauten, Ausrüstungstabellen); in diesem Lauf nicht abgerufen, da kostenpflichtig.",
+    "Recherche: StVO § 35 und § 38 sowie StVZO § 55 (Einsatzhorn) im Wortlaut; gesetze-im-internet.de brach die Verbindung für diese Paragraphen in diesem Lauf ab, StVO-Angaben stützen sich daher nur auf das Nachschlagewerk.",
+    "Recherche: Quellen zu batterieelektrischen Krankenwagen (Energiebedarf im Stand, Batteriegröße, elektrische Heizung); Suchbegriffe „elektrischer Rettungswagen Energiebedarf“, „battery electric ambulance energy consumption“.",
+    "Recherche: Änderungsmitteilungen zu KKK-A-1822F (hier nur Grundausgabe 2007 gelesen) sowie NFPA 1917 und CAAS Ground Vehicle Standard als US-Alternativen.",
+    "Recherche: Ausführung der Betriebsbremse bei Fahrgestellen bis 7,49 t (hydraulisch oder Druckluft) und Assistenzpflichten nach Verordnung (EU) 2019/2144 für Krankenwagen; Suchbegriff „Verordnung (EU) 2019/2144 Fahrzeuge mit besonderer Zweckbestimmung“.",
+    "Zuordnung: Sitze und Rückhaltesysteme des Patientenraums sind als Betreuersitz und Tragenhalterung unter Aufbau und Ladung geführt, weil sie zum Ausbau gehören; Sitze und Rückhaltesystem des Fahrerhauses stehen unter Fahrerhaus.",
+    "Glossarvorschlag: Landstrom einspeisen (Funktion; Einspeisung externer Netzenergie in das Aufbaubordnetz im Stand).",
+    "Glossarvorschlag: Patienten versorgen (Funktion; medizinische Behandlung und Überwachung während Stand und Fahrt).",
+    "Glossarvorschlag: Medizinischen Sauerstoff bereitstellen (Funktion; Speicherung, Druckminderung und Verteilung medizinischen Sauerstoffs).",
+    "Glossarvorschlag: Akustische Warnsignale abgeben (Funktion; Folgetonhorn oder Sirene bei Einsatzfahrt)."
+  ]
+}

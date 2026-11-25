@@ -1,0 +1,3205 @@
+{
+  "schema_version": "2.3",
+  "artikel_id": "A-0029",
+  "artikeltyp": "blatt",
+  "titel": "Hochgeschwindigkeitszug",
+  "betrachtungsumfang": "Generische Referenzarchitektur des Hochgeschwindigkeitszugs als Triebzug in fester oder vordefinierter Formation für den Personenfernverkehr auf Hochgeschwindigkeits- und ausgebauten Strecken, mit konzentriertem Antrieb in Triebköpfen oder verteiltem Antrieb, in Einsystem- und Mehrsystemausführung, als Einzelwagen- oder Gliederzug und mit fester Spurweite oder Spurwechselradsätzen. Antriebsart: elektrischer Antrieb mit Energiezufuhr aus der Oberleitung; die Energiequelle liegt außerhalb der Systemgrenze, ein Traktionsenergiespeicher entfällt, Energiewandler sind Transformator, Traktionsstromrichter und Traktionsmaschine. Ausdrücklich nicht betrachtet werden Diesel- und Gasturbinenantriebe, batterie- oder wasserstoffgespeiste Antriebe, lokbespannte Züge mit freizügig kuppelbaren Wagen, Neigetechnik- und Doppelstockausführungen, Magnetschwebebahnen, Hochgeschwindigkeitsgüterverkehr sowie die Infrastruktur (Oberleitung, Gleis, streckenseitige Zugsicherung).",
+  "status": "in_arbeit",
+  "quellenzugriff": "ja",
+  "kindartikel_ids": [],
+  "quellen": [
+    {
+      "quellen_id": "Q1",
+      "titel": "Hochgeschwindigkeitszug",
+      "urheber": "Wikipedia, Die freie Enzyklopädie (deutschsprachig)",
+      "stand": "Fassung vom Abrufdatum (Quelltext über action=raw gelesen)",
+      "url": "https://de.wikipedia.org/wiki/Hochgeschwindigkeitszug",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q2",
+      "titel": "High-speed rail",
+      "urheber": "Wikipedia, The Free Encyclopedia (englischsprachig)",
+      "stand": "Fassung vom Abrufdatum (Quelltext über action=raw gelesen)",
+      "url": "https://en.wikipedia.org/wiki/High-speed_rail",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q3",
+      "titel": "ICE 3",
+      "urheber": "Wikipedia, Die freie Enzyklopädie (deutschsprachig)",
+      "stand": "Fassung vom Abrufdatum (Quelltext über action=raw gelesen); Aussagen gelten nur für die Baureihen des ICE 3",
+      "url": "https://de.wikipedia.org/wiki/ICE_3",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q4",
+      "titel": "Triebkopf",
+      "urheber": "Wikipedia, Die freie Enzyklopädie (deutschsprachig)",
+      "stand": "Fassung vom Abrufdatum (Quelltext über action=raw gelesen)",
+      "url": "https://de.wikipedia.org/wiki/Triebkopf",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q5",
+      "titel": "Druckertüchtigte Schienenfahrzeuge",
+      "urheber": "Wikipedia, Die freie Enzyklopädie (deutschsprachig)",
+      "stand": "Fassung vom Abrufdatum (Quelltext über action=raw gelesen)",
+      "url": "https://de.wikipedia.org/wiki/Druckert%C3%BCchtigte_Schienenfahrzeuge",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q6",
+      "titel": "Verordnung (EU) Nr. 1302/2014 der Kommission vom 18. November 2014 über eine technische Spezifikation für die Interoperabilität des Teilsystems „Fahrzeuge — Lokomotiven und Personenwagen“ des Eisenbahnsystems in der Europäischen Union (TSI LOC&PAS), Anhang",
+      "urheber": "Europäische Kommission; Wiedergabe durch The National Archives, legislation.gov.uk",
+      "stand": "Ursprünglich angenommene Fassung (Original as adopted by EU), englischer Text; spätere Änderungen nicht berücksichtigt",
+      "url": "https://www.legislation.gov.uk/eur/2014/1302/annex/adopted",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q7",
+      "titel": "Richtlinie (EU) 2016/797 des Europäischen Parlaments und des Rates vom 11. Mai 2016 über die Interoperabilität des Eisenbahnsystems in der Europäischen Union (Neufassung), Anhang I",
+      "urheber": "Europäisches Parlament und Rat der Europäischen Union; Wiedergabe durch The National Archives, legislation.gov.uk",
+      "stand": "Ursprünglich angenommene Fassung, englischer Text",
+      "url": "https://www.legislation.gov.uk/eudr/2016/797/annex/I/adopted",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "norm"
+    }
+  ],
+  "abschnitte": [
+    {
+      "ueberschrift": "Einleitung",
+      "abschnittstyp": "gesamtsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P1",
+          "text": "Ein Hochgeschwindigkeitszug ist ein Zug des Eisenbahnverkehrs, der aufgrund seiner Höchstgeschwindigkeit und sonstiger technischer Eigenschaften für den Hochgeschwindigkeitsverkehr geeignet ist; seine Höchstgeschwindigkeit liegt in keinem Fall unter 190 km/h. Die Richtlinie (EU) 2016/797 unterscheidet im Eisenbahnsystem der Europäischen Union eigens gebaute Hochgeschwindigkeitsstrecken für in der Regel mindestens 250 km/h und eigens ausgebaute für Geschwindigkeiten in der Größenordnung von 200 km/h. Für den Internationalen Eisenbahnverband ist Hochgeschwindigkeit ein Zusammenwirken von Infrastruktur, Fahrzeugen und Betriebsbedingungen.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Einleitung, Absatz 1"
+            },
+            {
+              "quellen_id": "Q7",
+              "fundstelle": "Anhang I, Nummer 1 Buchstaben a und b sowie Nummer 2"
+            },
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Abschnitt „International Union of Railways definition“, Absatz nach der Aufzählung der Bedingungen"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "funktion"
+        },
+        {
+          "absatz_id": "P2",
+          "text": "Die TSI Lokomotiven und Personenwagen, Verordnung (EU) Nr. 1302/2014, regelt das Teilsystem Fahrzeuge dieses Eisenbahnsystems; über einer Auslegungshöchstgeschwindigkeit von 350 km/h ist sie zu ergänzen. Ein Triebzug ist danach eine feste, nur in der Werkstatt umzubildende Formation aus angetriebenen oder aus angetriebenen und nicht angetriebenen Fahrzeugen. Ein Triebkopf ist ein angetriebenes Fahrzeug mit Führerstand am Ende eines Triebzugs, das im Normalbetrieb nicht abgekuppelt wird.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q6",
+              "fundstelle": "Anhang, Abschnitte 2.1, 2.2.2 Gruppen A Buchstabe a und B, 2.3.3"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "funktion"
+        },
+        {
+          "absatz_id": "P3",
+          "text": "Außerhalb der Systemgrenze liegen Oberleitung, Gleis und streckenseitige Zugsicherung; mit ihnen ist der Zug über Stromabnehmer, Rad-Schiene-Kontakt und Datenübertragung gekoppelt, mit der Umgebungsluft über Aerodynamik und Druckwellen. Intern verbinden mechanische, elektrische, pneumatische, thermische und informationstechnische Schnittstellen die Hauptsysteme, in die das Gesamtsystem Hochgeschwindigkeitszug zerlegt wird. Ein Lenksystem entfällt, weil das Gleis den Radsatz führt.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "Q6, Anhang, Abschnitt 2.1: Das Teilsystem Fahrzeuge hat Schnittstellen zu Infrastruktur, Energie, Zugsteuerung und Zugsicherung.",
+              "Q1, Abschnitt „Beschreibung“: Speisung aus der Oberleitung, Druckstöße an Tunnelportalen und bei Zugbegegnungen.",
+              "Funktionsprinzip der Eisenbahn: Spurführung durch Radsatz und Gleis."
+            ],
+            "schluss": "Die Systemgrenze umschließt den Zug; Oberleitung, Gleis und Strecke sind externe Partner, eine Lenkung ist nicht erforderlich."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrzeugstruktur und Fahrwerk",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E2",
+      "absaetze": [
+        {
+          "absatz_id": "P4",
+          "text": "Eine vergleichsweise geringe Masse wird durch Leichtbau erzielt, verbreitet mit Wagenkästen aus Aluminium-Strangpressprofilen. Die Drehgestelle sind konventionell oder als Jakobs-Drehgestell ausgeführt, Schlingerdämpfer reduzieren die Kräfte zwischen Rad, Drehgestell und Wagenkasten, als Sekundärfederung ist Luftfederung üblich; Talgo-Züge laufen auf Losradsätzen. Triebzüge in fester Formation ab einer Auslegungshöchstgeschwindigkeit von 250 km/h tragen nach der TSI an beiden Enden eine automatische Mittelpufferkupplung. In Spanien wechseln bestimmte Hochgeschwindigkeitszüge zwischen Breit- und Normalspur bei der Durchfahrt einer Spurwechselanlage.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Abschnitt „Beschreibung“, Absätze 3, 8, 9 und 11"
+            },
+            {
+              "quellen_id": "Q6",
+              "fundstelle": "Anhang, Abschnitt 4.2.2.2.3 Buchstabe a-2 Nummer 1"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "variante"
+        },
+        {
+          "absatz_id": "P5",
+          "text": "Fahrzeugstruktur und Fahrwerk gliedern sich in den Wagenkasten mit Rohbau, Crashstruktur, Türen, Wagenübergang und automatischer Mittelpufferkupplung sowie das Laufwerk mit Drehgestell, Radsatz, Radsatzlager, Federung und Schlingerdämpfer. Die Lasten laufen vom Rohbau über Federung, Drehgestell und Radsatzlager in den Radsatz und die Schiene, Längskräfte über die Kupplungen. Im Gliederzug teilen sich benachbarte Wagen ein Jakobs-Drehgestell; das spart Laufwerke, macht die Wagen aber nur in der Werkstatt trennbar und ändert Wagenübergang sowie Verteilung von Antrieb und Bremse. Spurwechselradsätze wirken auf Getriebe und Bremsscheiben.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P4: Drehgestellbauarten, Federung, Mittelpufferkupplung und Spurwechsel.",
+              "Q6, Anhang, Abschnitt 4.2.3.5.2 Nummer 1: Zum Radsatz gehören Radsatzlager, Getriebe und Bremsscheiben.",
+              "Q4, Abschnitt „Verwendung“, Absatz 2: Auf Jakobs-Drehgestellen abgestützte Fahrzeuge sind nur mit Hebezeugen trennbar.",
+              "Funktionsprinzip: Jede Last braucht einen Pfad bis zur Aufstandsfläche."
+            ],
+            "schluss": "Die Struktur gliedert sich in Wagenkasten und Laufwerk; die Laufwerksanordnung bestimmt Trennbarkeit, Übergänge und Antriebsverteilung."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Antriebssystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E15",
+      "absaetze": [
+        {
+          "absatz_id": "P6",
+          "text": "Hochgeschwindigkeitszüge werden überwiegend elektrisch angetrieben, meist mit Asynchron- oder Synchronmotoren, die über Frequenzumrichter mit Drehstrom gespeist werden; Antriebe mit Dieselmotoren oder Gasturbinen bilden die große Ausnahme. Der Antrieb ist entweder in Triebköpfen an den Zugenden konzentriert, etwa bei TGV, ICE 1 und ICE 2, oder über den Zug verteilt, wie bei allen Shinkansen und seit dem ICE 3. Beim ICE 3 senkt der verteilte Antrieb Haftwertbeanspruchung und Achslast, die Triebzüge lassen sich aber nicht trennen und sind seitenwindanfälliger.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Abschnitt „Beschreibung“, Absätze 1, 2 und 4"
+            },
+            {
+              "quellen_id": "Q4",
+              "fundstelle": "Abschnitt „Verwendung“, Absätze 1 und 3"
+            },
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Abschnitt „Verteilter Antrieb“, Absatz 4"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "variante"
+        },
+        {
+          "absatz_id": "P7",
+          "text": "Das Antriebssystem besteht aus Traktionsstromrichter, Traktionsmaschine und Getriebe: Der Traktionsstromrichter speist die Traktionsmaschine mit Drehstrom variabler Frequenz, das Getriebe überträgt ihr Drehmoment auf den Radsatz, beim elektrischen Bremsen kehrt sich der Fluss um. Die Wahl zwischen Triebköpfen und verteiltem Antrieb bestimmt die Verteilung von Trieb- und Laufdrehgestellen, Lage und Zahl der Transformatoren, die Anordnung der Traktionskühlung und das Sitzplatzangebot an den Zugenden. Zugkraft wird nur bei geschlossenen Türen und ohne Notbremsanforderung freigegeben.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P6: Drehstromfahrmotoren über Frequenzumrichter; konzentrierter oder verteilter Antrieb.",
+              "Q3, Abschnitt „Motoren und Stromversorgung“: Drehmomentübertragung auf Radsatzgetriebe.",
+              "Q6, Anhang, Abschnitte 4.2.5.5.7 und 4.2.4.4.1 Nummer 4: Tür-Traktions-Verriegelung und Zugkraftabschaltung bei Notbremsung.",
+              "Funktionsprinzip: Ein elektrischer Antrieb braucht Wandler, Maschine und Kraftübertragung."
+            ],
+            "schluss": "Die Antriebskette ist Stromrichter, Maschine, Getriebe; das Antriebskonzept wirkt auf Fahrwerk, Energieversorgung, Kühlung und Fahrgastbereich."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Energieversorgungssystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E19",
+      "absaetze": [
+        {
+          "absatz_id": "P8",
+          "text": "Die Fahrenergie kommt kontinuierlich aus der Oberleitung über Stromabnehmer. Die TSI behandelt die Stromsysteme Wechselstrom 25 kV 50 Hz und 15 kV 16,7 Hz sowie Gleichstrom 3 kV und 1,5 kV; Mehrsystemfahrzeuge erkennen die Spannung am Stromabnehmer selbsttätig, und ab 250 km/h steuert ein Zugsteuerungs- und Überwachungssystem Stromabnehmer und Hauptschalter an Trennstellen automatisch. Beim ICE 3 verbindet eine Hochspannungs-Dachleitung die Transformatorwagen, Umrichter speisen die Zugsammelschienen, und ein Batterieladegerät versorgt die Batteriesammelschiene und lädt die Batterien.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Abschnitt „Beschreibung“, Absätze 1 und 6"
+            },
+            {
+              "quellen_id": "Q6",
+              "fundstelle": "Anhang, Abschnitte 4.2.8.2.1 und 4.2.8.2.9.8 Nummern 2 und 4"
+            },
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Abschnitt „Motoren und Stromversorgung“"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P9",
+          "text": "Das Energieversorgungssystem gliedert sich in Stromabnahme und Hochspannungsausrüstung mit Stromabnehmer, Hauptschalter, Hochspannungs-Dachleitung, Transformator und Energiemesssystem sowie die Hilfsbetriebeversorgung mit Hilfsbetriebeumrichter, Zugsammelschiene, Gleichspannungswandler als Batterieladegerät und Bordnetzbatterie. Die Energiequelle liegt außerhalb der Systemgrenze, ein Speicher für Traktionsenergie entfällt; die Bordnetzbatterie hält Steuerung und Sicherheitsfunktionen ohne Fahrleitungsspannung. Ein Mehrsystemzug braucht zusätzliche Stromabnehmer, Spannungserkennung und Stromrichter für Gleichspannung, was Antriebssystem und Fahrzeugmanagement ändert.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P8: Oberleitungsspeisung, Stromsysteme, Hauptschalter, Dachleitung, Zugsammelschienen und Batterieladung.",
+              "Q6, Anhang, Abschnitte 4.2.8.2.8 und 4.2.8.2.10 Nummer 2: bordseitiges Energiemesssystem; Stromabnehmer und Hauptschalter auf demselben Fahrzeug.",
+              "Q3, Abschnitt „Verteilter Antrieb“, Absatz 2: Mehrsystem-Halbzüge tragen zusätzliche Gleichstrom-Stromabnehmer.",
+              "Funktionsprinzip: Ohne Bordspeicher für Traktion muss eine Batterie die Steuerung bei Spannungsausfall versorgen."
+            ],
+            "schluss": "Die Energieversorgung zerfällt in Hochspannungs- und Hilfsbetriebeebene; das Stromsystem bestimmt Dachausrüstung und Stromrichter."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Bremssystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E31",
+      "absaetze": [
+        {
+          "absatz_id": "P10",
+          "text": "Nach der TSI hat jede Einheit eine durchgehende und selbsttätige Hauptbremse für Betriebs- und Notbremsung und eine Feststellbremse, die ohne Energie an Bord unbegrenzt wirkt. Über 150 km/h ist ein Gleitschutz vorgeschrieben, ab 250 km/h eine Radumdrehungsüberwachung; die Magnetschienenbremse darf über 280 km/h nicht verwendet werden. Elektrisches Bremsen an den Antriebsachsen wird durch Scheibenbremsen und Magnetschienen- oder Wirbelstrombremsen ergänzt; beim ICE 3 steuert ein Bremssteuerrechner die Bremssysteme, und Bremssand unterstützt auf nassen Schienen.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q6",
+              "fundstelle": "Anhang, Abschnitte 4.2.4.2.1 Nummern 1 bis 4, 4.2.4.6.2 Nummern 2 und 8, 4.2.4.8.2 Nummer 4"
+            },
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Abschnitt „Beschreibung“, Absatz 10"
+            },
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Abschnitt „Bremsen“, Bildunterschrift und Absatz 2"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P11",
+          "text": "Das Bremssystem gliedert sich in die Bremssteuerung mit Bremsregelung, Gleitschutz und Bremsleitung sowie die Bremsaktorik mit Scheibenbremse, elektrodynamischer Bremse, Schienenbremse, Feststellbremse und Sandstreueinrichtung. Anforderungen von Führerstand, Zugsicherung und Fahrgastalarm erreichen über die Bremsleitung die Bremsregelung, die die Bremskraft auf die Bremsarten verteilt. Die elektrodynamische Bremse nutzt den Antrieb und speist zurück, die Reibungsbremsen setzen Energie in Wärme um. Eine Wirbelstrombremse braucht elektrische Leistung, Anbauraum am Laufdrehgestell und eine Freigabe der Strecke.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P10: Hauptbremse, Feststellbremse, dynamische und adhäsionsunabhängige Bremsen, Gleitschutz, Bremssteuerrechner, Bremssand.",
+              "Q6, Anhang, Abschnitte 4.2.4.4.1 Nummer 3 und 4.2.4.8.3: Zugsicherung löst Notbremsung aus; Einsatzbedingungen der Wirbelstrombremse nicht harmonisiert.",
+              "Q3, Abschnitt „Bremsen“, Absatz 1: Wirbelstrombremsen an nicht angetriebenen Radsätzen."
+            ],
+            "schluss": "Die Bremse besteht aus Steuerungs- und Aktorebene; die Wahl der Schienenbremse wirkt auf Energieversorgung, Laufwerk und Streckenzulassung."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Führerstand",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E42",
+      "absaetze": [
+        {
+          "absatz_id": "P12",
+          "text": "Nach der TSI ist der Führerstand für die Bedienung durch einen einzelnen Triebfahrzeugführer ausgelegt. Er hat mindestens zwei unabhängige Notbremsbetätigungen und eine Einrichtung, die die Aktivität des Triebfahrzeugführers überwacht und den Zug bei fehlender Aktivität selbsttätig anhält. Die Frontscheibe muss Einschlägen von Projektilen widerstehen.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q6",
+              "fundstelle": "Anhang, Abschnitte 4.2.9.1.1 Nummer 1, 4.2.4.4.1 Nummer 2, 4.2.9.3.1 Nummer 1, 4.2.9.2.1 Nummer 2"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P13",
+          "text": "Der Führerstand umfasst Bedienelemente, Anzeigeelemente und den Triebfahrzeugführersitz. Da beide Zugenden einen Führerstand haben, ist jeweils nur einer aktiv. Eingaben gelangen über den Fahrzeugbus zum Fahrzeugmanagement und weiter zu Antrieb und Bremse, Notbremsbefehle zusätzlich direkt in die Bremsleitung; Zustands-, Zugbeeinflussungs- und Warnmeldungen laufen zur Anzeige zurück.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P12: Einmannbedienung, Notbremsbetätigungen, Aktivitätsüberwachung.",
+              "Q6, Anhang, Abschnitt 4.2.4.4.2 Nummer 3: Betriebsbremsbefehl nur an einer Stelle im Zug aktiv.",
+              "Q4, Abschnitt „Verwendung“, Absatz 4: Bei einem Triebkopf liegt am anderen Ende in der Regel ein Steuerwagen.",
+              "Funktionsprinzip: Jede Eingabe braucht einen Pfad zum ausführenden System."
+            ],
+            "schluss": "Der Führerstand ist Eingabe- und Anzeigestelle, an beiden Enden vorhanden und über Bus und Bremsleitung angebunden."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Aufbau und Ladung",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E46",
+      "absaetze": [
+        {
+          "absatz_id": "P14",
+          "text": "Zu den fahrgastbezogenen Anforderungen der TSI gehören Sanitärsysteme, Kommunikationseinrichtungen, Fahrgastalarm, Außentüren und Luftqualität im Innenraum; Traktionsleistung wird nur freigegeben, wenn alle Türen geschlossen und verriegelt sind. China nutzt wie Japan das größere Lichtraumprofil für breitere Züge als in Europa, die zwei Sitze auf der einen und drei auf der anderen Seite des Mittelgangs erlauben.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q6",
+              "fundstelle": "Anhang, Abschnitt 4.2.5 (Gliederung 4.2.5.1 bis 4.2.5.8) und Abschnitt 4.2.5.5.7 Nummer 1"
+            },
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Abschnitt „Beschreibung“, Absatz 11"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P15",
+          "text": "Aufbau und Ladung umfassen den Fahrgastbereich mit Fahrgastbestuhlung, Gepäckablagen und Sanitärsystem sowie den Fahrgastalarm. Fahrgäste und Gepäck sind die Nutzlast, deren Lasten der Rohbau aufnimmt; das Sanitärsystem braucht Wasserbehälter und Energie aus der Zugsammelschiene, der Fahrgastalarm meldet an Führerstand und Bremsregelung. Wagenbreite, Sitzteiler und Türzahl bestimmen Kapazität, Achslast und Klimaleistung.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P14: fahrgastbezogene Einrichtungen und Sitzanordnung.",
+              "Q6, Anhang, Abschnitt 4.2.5.3 (Gliederung): Bremsauslösung durch den Fahrgastalarm.",
+              "Annahme über die Bauweise: Sanitärsysteme mit Wasserbehältern und elektrischer Versorgung aus der Zugsammelschiene."
+            ],
+            "schluss": "Der Fahrgastbereich ist die Nutzlastaufnahme; seine Auslegung koppelt an Struktur, Bremse und Klimatisierung."
+          },
+          "sicherheit": "gering",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Elektrik und Elektronik",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E52",
+      "absaetze": [
+        {
+          "absatz_id": "P16",
+          "text": "Beim ICE 3 baut das Leitsystem auf dem Train Communication Network mit redundanten Bussystemen auf. Wagenbeleuchtung, Tür- und Bremssteuerung, Fahrgastinformationssystem sowie Antriebs- und Zugsteuergeräte werden aus einer Batteriesammelschiene versorgt, und die selbsttätigen Kupplungen verbinden auch Steuerungs- und Informationsleitungen.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Abschnitte „Leitsystem“, „Motoren und Stromversorgung“ (letzte Sätze) und „Kupplungen“, Absatz 1"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P17",
+          "text": "Elektrik und Elektronik umfassen Niedervolt-Bordnetz, Leitungssatz und Fahrzeugbus. Das Niedervolt-Bordnetz verteilt die Energie der Bordnetzbatterie an Steuergeräte, Beleuchtung und Türsteuerung, der Leitungssatz führt durch Wagenübergänge und Kupplungskontakte. Der Fahrzeugbus verbindet die Steuergeräte aller Wagen und in Mehrfachtraktion die gekuppelten Triebzüge; seine Verfügbarkeit ist für Bremse, Türen und Zugsicherung sicherheitsrelevant.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P16: Busbasiertes Leitsystem, Batteriesammelschiene, Steuerleitungen über die Kupplung.",
+              "Q6, Anhang, Abschnitt 2.2.1 Buchstabe g: Mehrfachtraktion aus einem Führerstand.",
+              "Funktionsprinzip: Verteilte Steuergeräte brauchen Energieverteilung, Leitungen und Datenverbindung."
+            ],
+            "schluss": "Die Elektrik besteht aus Niedervoltverteilung, Verkabelung und zugweitem Bus."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrzeugsteuerung und Information",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E56",
+      "absaetze": [
+        {
+          "absatz_id": "P18",
+          "text": "Beim ICE 3 steuern und überwachen zentrale Steuergeräte in den Endwagen die Traktionseinheiten, erstellen Diagnosemeldungen für das Zugpersonal und vereinen automatische Fahr- und Bremssteuerung, zentrale Weg- und Geschwindigkeitserfassung, Sicherheitsfahrschaltung und Diagnosesystem. Das Fahrgastinformationssystem wird aus einer Zentrale im Zugbegleiterabteil gesteuert.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Abschnitte „Leitsystem“ und „Fahrgastinformationssystem und öffentliche Kommunikation“, Absatz 1"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P19",
+          "text": "Fahrzeugsteuerung und Information bestehen aus Fahrzeugmanagement, Diagnose und Fahrgastinformationssystem. Das Fahrzeugmanagement verarbeitet die Eingaben des Führerstands, koordiniert Antrieb, Bremse, Stromabnehmer, Türen und Druckschutz und bestimmt Weg und Position des Zuges. Die Diagnose sammelt Meldungen, etwa der Radsatzlagerüberwachung, für Triebfahrzeugführer und Instandhaltung. Die fahrzeugseitige Zugsicherung ist ein eigenes Teilsystem und über eine definierte Schnittstelle angebunden.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P18: Zentrale Steuergeräte mit Fahr-, Brems-, Weg- und Diagnosefunktionen.",
+              "P8: Zugsteuerungs- und Überwachungssystem steuert Stromabnehmer und Hauptschalter.",
+              "Q6, Anhang, Abschnitt 2.1: Fahrzeugseitige Zugsteuerung und Zugsicherung ist ein eigenes Teilsystem."
+            ],
+            "schluss": "Das Fahrzeugmanagement ist die koordinierende Ebene; Zugsicherung bleibt ein abgegrenztes Teilsystem."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrerassistenz und Sicherheit",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E60",
+      "absaetze": [
+        {
+          "absatz_id": "P20",
+          "text": "Über 200 km/h wird es für Triebfahrzeugführer schwierig, streckenseitige Signale zu erkennen; oberhalb der Grenzen herkömmlicher Signaltechnik wird eine Zugbeeinflussung wie das European Train Control System notwendig oder gesetzlich vorgeschrieben. Nach der TSI haben Einheiten ab 250 km/h eine bordseitige Überwachung der Radsatzlager, Bereiche mit Brandrisiko eine Branderkennung, die den Triebfahrzeugführer benachrichtigt, und eine Aufzeichnungseinrichtung speichert die in der TSI Betrieb festgelegten Informationen.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Abschnitt „International Union of Railways definition“, Absatz „The criterion of 200 km/h“"
+            },
+            {
+              "quellen_id": "Q6",
+              "fundstelle": "Anhang, Abschnitte 4.2.3.3.2 Nummer 2, 4.2.10.3.2 Nummern 1 und 2, 4.2.9.6 Nummern 1 und 2"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "funktion"
+        },
+        {
+          "absatz_id": "P21",
+          "text": "Fahrerassistenz und Sicherheit gliedern sich in Zugbeeinflussung und Führerüberwachung mit Zugsicherungs-Fahrzeuggerät, Sicherheitsfahrschaltung und Aufzeichnungseinrichtung sowie Zustands- und Brandüberwachung mit Radsatzlagerüberwachung und Brandmeldeanlage. Das Zugsicherungs-Fahrzeuggerät empfängt die Fahrerlaubnis von der Strecke, überwacht die Geschwindigkeit, zeigt sie im Führerstand an und löst bei Überschreitung die Notbremsung aus. Nationale Zugbeeinflussungen neben dem europäischen System erfordern weitere Fahrzeuggeräte, Antennen und Anzeigen.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P20: Zugbeeinflussung, Radsatzlagerüberwachung, Branderkennung, Aufzeichnung.",
+              "P12: Aktivitätsüberwachung des Triebfahrzeugführers.",
+              "Q6, Anhang, Abschnitt 4.2.4.4.1 Nummer 3: Notbremsauslösung durch die Zugsicherung.",
+              "Q3, Abschnitt „Bremsen“: anzeigegeführte Fahrten mit zwei Zugbeeinflussungssystemen."
+            ],
+            "schluss": "Sicherheitsfunktionen gliedern sich in Fahrtüberwachung und Zustandsüberwachung; mehrere Zugbeeinflussungssysteme vervielfachen die Fahrzeuggeräte."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Beleuchtung und Sicht",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E68",
+      "absaetze": [
+        {
+          "absatz_id": "P22",
+          "text": "Nach der TSI hat ein Zug an der Spitze zwei weiße Scheinwerfer mit Abblend- und Fernlicht; Grün ist für Außenleuchten ausgeschlossen, um Verwechslungen mit Signalen zu vermeiden. Hinzu kommen Spitzen- und Schlussleuchten sowie ein Signalhorn. Die Frontscheibe hat vom Triebfahrzeugführer gesteuerte Einrichtungen zum Enteisen, Entfeuchten und Reinigen.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q6",
+              "fundstelle": "Anhang, Abschnitte 4.2.7.1 Nummer 1, 4.2.7.1.1 Nummern 2 und 5, Gliederung 4.2.7.1.2 bis 4.2.7.2, 4.2.9.2.3 Nummer 1"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P23",
+          "text": "Beleuchtung und Sicht gliedern sich in die Außensignalisierung mit Scheinwerfer, Leuchten und Signalhorn und das Sichtsystem mit Frontscheibe und Scheibenreinigung. Da der Zug in beide Richtungen fährt, schaltet die Lampensteuerung am führenden Ende Scheinwerfer und Spitzenlicht, am anderen Ende Schlusslicht. Die Energie kommt aus dem Niedervolt-Bordnetz, die Befehle aus dem aktiven Führerstand.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P22: Scheinwerfer, Spitzen- und Schlussleuchten, Signalhorn, Frontscheibenausrüstung.",
+              "P13: An beiden Zugenden liegt ein Führerstand, nur einer ist aktiv."
+            ],
+            "schluss": "Außensignalisierung und Sicht sind richtungsabhängig vom aktiven Führerstand gesteuert."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Thermomanagement",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E76",
+      "absaetze": [
+        {
+          "absatz_id": "P24",
+          "text": "Die Fahrzeuge werden druckertüchtigt gebaut, um Druckstöße an Tunnelportalen und bei Zugbegegnungen von den Ohren der Fahrgäste abzuhalten; Voraussetzung sind dauerhaft geschlossene Fenster und damit eine Klimaanlage. Aktive Systeme halten mit druckgeschützten Ventilatoren einen konstanten Frischluftstrom, passive verschließen während eines Druckereignisses Klappen im Luftversorgungssystem. Beim ICE 3 sind die Fahrmotoren fremdbelüftet.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Abschnitt „Beschreibung“, Absatz 7"
+            },
+            {
+              "quellen_id": "Q5",
+              "fundstelle": "Abschnitt „Anforderungen“, Absatz 1 und Aufzählung der aktiven und passiven Systeme"
+            },
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Abschnitt „Motoren und Stromversorgung“, Satz 1"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "variante"
+        },
+        {
+          "absatz_id": "P25",
+          "text": "Das Thermomanagement gliedert sich in die Fahrgastraumklimatisierung mit Heiz- und Klimaanlage und Druckschutzeinrichtung sowie die Traktionskühlung mit Kühlkreislauf, Kühler und Fahrmotorlüfter. Transformator, Stromrichter und Fahrmotoren erzeugen Verlustwärme, die Kühlkreislauf und Kühler an die Umgebung abgeben; ihre Lage folgt dem Antriebskonzept. Ein passiver Druckschutz braucht ein Auslösesignal von Sensorik, Fahrzeugmanagement oder Zugsicherung, ein aktiver mehr Lüfterleistung aus der Hilfsbetriebeversorgung.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P24: Druckertüchtigung mit Klimaanlage, aktive und passive Druckschutzsysteme, fremdbelüftete Fahrmotoren.",
+              "Q5, Abschnitt „Anforderungen“, Absatz 4: Auslösung durch Detektion an der Zugspitze, von Hand oder über die Leit- und Sicherungstechnik.",
+              "Physikalische Notwendigkeit: Elektrische Wandler erzeugen Verlustwärme, die abgeführt werden muss."
+            ],
+            "schluss": "Das Thermomanagement besteht aus Fahrgastraumklimatisierung mit Druckschutz und Traktionskühlung; das Druckschutzprinzip ändert Schnittstellen zu Steuerung und Energie."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Neben- und Versorgungssysteme",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E84",
+      "absaetze": [
+        {
+          "absatz_id": "P26",
+          "text": "Beim ICE 3 sind die Radsätze mit pneumatischen Hochleistungsbremsen ausgerüstet, und die selbsttätigen Kupplungen an den Führerstandsenden verbinden Hauptluftleitung und Hauptluftbehälterleitung.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Abschnitte „Bremsen“, Absatz 1, und „Kupplungen“, Absatz 1"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P27",
+          "text": "Die Neben- und Versorgungssysteme umfassen die Druckluftanlage mit Kompressor für Druckluft, Luftaufbereitung und Hauptluftbehälter. Sie versorgt Bremsaktoren und Federung; der Hauptluftbehälter speichert die Energie, mit der die Bremse auch ohne Energiezufuhr angelegt werden kann. Den Kompressor speist die Hilfsbetriebeversorgung; weitere Verbraucher hängen von der Bauart ab.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P26: Pneumatische Bremsen und durchgehende Luftleitungen.",
+              "P4: Luftfederung als Sekundärfederung.",
+              "Q6, Anhang, Abschnitt 4.2.4.2.1 Nummer 9: ausreichend gespeicherte Bremsenergie an Bord."
+            ],
+            "schluss": "Eine Druckluftanlage mit Erzeugung, Aufbereitung und Speicher ist erforderlich."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Zusammenfassung",
+      "abschnittstyp": "gesamtsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P28",
+          "text": "Auf oberster Ebene besteht der Hochgeschwindigkeitszug aus Fahrzeugstruktur und Fahrwerk, Antriebssystem, Energieversorgungssystem, Bremssystem, Führerstand, Aufbau und Ladung, Elektrik und Elektronik, Fahrzeugsteuerung und Information, Fahrerassistenz und Sicherheit, Beleuchtung und Sicht, Thermomanagement sowie Neben- und Versorgungssystemen.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P3 bis P27: Hauptsysteme mit ihren Schnittstellen."
+            ],
+            "schluss": "Die Hauptsysteme bilden die oberste Dekompositionsebene."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Modellierungsbezug",
+      "abschnittstyp": "modellierung",
+      "absaetze": [
+        {
+          "absatz_id": "P29",
+          "text": "In SysML bildet der Block Hochgeschwindigkeitszug das Gesamtsystem mit den Hauptsystemen als Teilen. Dekompositionspfade sind etwa `Energieversorgungssystem → Stromabnahme und Hochspannungsausrüstung → Transformator`, `Fahrzeugstruktur und Fahrwerk → Laufwerk → Drehgestell`, `Bremssystem → Bremsaktorik → Schienenbremse` und `Fahrerassistenz und Sicherheit → Zugbeeinflussung und Führerüberwachung → Zugsicherungs-Fahrzeuggerät`. Ports bilden Stromabnehmer–Oberleitung, Rad–Schiene, Zugsicherung–Strecke und die Mittelpufferkupplung mit mechanischen, pneumatischen und Datenkontakten ab, Konnektoren die Flüsse. Blockdefinitionsdiagramme zeigen die Dekomposition, interne Blockdiagramme die Flüsse, Zustandsdiagramme Systemwechsel und Druckschutz; Triebkopfzug und Triebzug mit verteiltem Antrieb sind Spezialisierungen eines Grundblocks.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P5, P9, P11, P21: Hauptsysteme mit Subsystemen und Komponenten.",
+              "P3: externe Schnittstellen zu Oberleitung, Gleis und Strecke.",
+              "Modellannahme: SysML-Blöcke, Ports und Konnektoren bilden Dekomposition und Flüsse ab."
+            ],
+            "schluss": "Die Dekomposition lässt sich als Blockhierarchie mit Ports abbilden, Varianten als Spezialisierungen."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Flüsse",
+      "abschnittstyp": "fluesse",
+      "absaetze": [
+        {
+          "absatz_id": "P30",
+          "text": "Elektrisch: Stromabnehmer, Hauptschalter, Transformator, Traktionsstromrichter und Traktionsmaschine, beim Bremsen zurück; Hilfsbetriebeumrichter an Zugsammelschiene, diese an Klimaanlage und Gleichspannungswandler, dieser an Bordnetzbatterie und Niedervolt-Bordnetz. Mechanisch: Getriebe und Scheibenbremse auf den Radsatz, Lasten vom Rohbau über Federung und Drehgestell. Pneumatisch: Hauptluftbehälter an Scheibenbremse und Federung. Thermisch: Transformator an Kühlkreislauf und Kühler. Information: Bedienelemente an Fahrzeugmanagement, dieses an Antrieb, Bremsregelung, Stromabnehmer und Druckschutzeinrichtung; Zugsicherung, Sicherheitsfahrschaltung und Fahrgastalarm an die Bremse; Überwachungen an Diagnose und Anzeige",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P7, P9, P11, P13, P15, P17, P19, P21, P25, P27: Flüsse der Hauptsysteme.",
+              "Funktionsprinzip: Jeder Fluss hat Ursprung und Ziel."
+            ],
+            "schluss": "Die Flüsse verbinden die Hauptsysteme über elektrische, mechanische, pneumatische, thermische und informationstechnische Schnittstellen."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Perspektiven",
+      "abschnittstyp": "perspektiven",
+      "absaetze": [
+        {
+          "absatz_id": "P31",
+          "text": "Funktional gilt: Fahrzeuglasten tragen Wagenkasten und Laufwerk; Antriebsleistung erzeugen Traktionsstromrichter und Traktionsmaschine; Drehmoment übertragen das Getriebe; Fahrzeug fortbewegen Antriebssystem und Radsatz; Elektrische Energie verteilen Stromabnahme und Hochspannungsausrüstung, Hilfsbetriebeversorgung und Niedervolt-Bordnetz; Energie speichern Bordnetzbatterie und Hauptluftbehälter; Fahrzeug verzögern Bremssteuerung und Bremsaktorik; Bremsenergie zurückgewinnen elektrodynamische Bremse und Traktionsstromrichter; Fahrzeug festhalten die Feststellbremse; Druckluft bereitstellen die Druckluftanlage; Fahrereingaben erfassen die Bedienelemente; Fahrerinformationen anzeigen die Anzeigeelemente; Fahrersicht sicherstellen das Sichtsystem; Fahrzeugumgebung ausleuchten die Scheinwerfer; Lichtsignale abgeben die Leuchten; Akustische Warnsignale abgeben das Signalhorn; Insassen schützen Crashstruktur, Brandmeldeanlage und Druckschutzeinrichtung; Ladung aufnehmen der Fahrgastbereich; Daten übertragen der Fahrzeugbus; Fahrzeugzustand überwachen Diagnose sowie Zustands- und Brandüberwachung; Fahrzeugposition bestimmen das Fahrzeugmanagement; Fahrerzustand überwachen die Sicherheitsfahrschaltung; Fahrgeschwindigkeit überwachen das Zugsicherungs-Fahrzeuggerät; Betriebstemperatur regeln die Traktionskühlung; Innenraum klimatisieren die Fahrgastraumklimatisierung; Fahrgäste informieren das Fahrgastinformationssystem.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "Modellblock: Funktionen mit ausführenden Elementen.",
+              "P5 bis P27: Aufgaben der Hauptsysteme."
+            ],
+            "schluss": "Jede Funktion ist einem ausführenden Element zugeordnet."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    }
+  ],
+  "modell": {
+    "elemente": [
+      {
+        "id": "E1",
+        "name": "Hochgeschwindigkeitszug",
+        "typ": "gesamtsystem",
+        "eltern_id": null,
+        "absatz_ids": [
+          "P1",
+          "P3",
+          "P28"
+        ]
+      },
+      {
+        "id": "E2",
+        "name": "Fahrzeugstruktur und Fahrwerk",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P5",
+          "P28"
+        ],
+        "kategorie": "struktur_fahrwerk"
+      },
+      {
+        "id": "E3",
+        "name": "Wagenkasten",
+        "typ": "subsystem",
+        "eltern_id": "E2",
+        "absatz_ids": [
+          "P4",
+          "P5",
+          "P31"
+        ]
+      },
+      {
+        "id": "E4",
+        "name": "Rohbau",
+        "typ": "komponente",
+        "eltern_id": "E3",
+        "absatz_ids": [
+          "P5",
+          "P30"
+        ]
+      },
+      {
+        "id": "E5",
+        "name": "Crashstruktur",
+        "typ": "komponente",
+        "eltern_id": "E3",
+        "absatz_ids": [
+          "P5",
+          "P31"
+        ]
+      },
+      {
+        "id": "E6",
+        "name": "Türen",
+        "typ": "komponente",
+        "eltern_id": "E3",
+        "absatz_ids": [
+          "P5",
+          "P14"
+        ]
+      },
+      {
+        "id": "E7",
+        "name": "Wagenübergang",
+        "typ": "komponente",
+        "eltern_id": "E3",
+        "absatz_ids": [
+          "P5"
+        ]
+      },
+      {
+        "id": "E8",
+        "name": "Automatische Mittelpufferkupplung",
+        "typ": "komponente",
+        "eltern_id": "E3",
+        "absatz_ids": [
+          "P4",
+          "P5"
+        ]
+      },
+      {
+        "id": "E9",
+        "name": "Laufwerk",
+        "typ": "subsystem",
+        "eltern_id": "E2",
+        "absatz_ids": [
+          "P5",
+          "P31"
+        ]
+      },
+      {
+        "id": "E10",
+        "name": "Drehgestell",
+        "typ": "komponente",
+        "eltern_id": "E9",
+        "absatz_ids": [
+          "P4",
+          "P5",
+          "P30"
+        ]
+      },
+      {
+        "id": "E11",
+        "name": "Radsatz",
+        "typ": "komponente",
+        "eltern_id": "E9",
+        "absatz_ids": [
+          "P5",
+          "P7",
+          "P30"
+        ]
+      },
+      {
+        "id": "E12",
+        "name": "Radsatzlager",
+        "typ": "komponente",
+        "eltern_id": "E9",
+        "absatz_ids": [
+          "P5"
+        ]
+      },
+      {
+        "id": "E13",
+        "name": "Federung",
+        "typ": "komponente",
+        "eltern_id": "E9",
+        "absatz_ids": [
+          "P5",
+          "P27",
+          "P30"
+        ]
+      },
+      {
+        "id": "E14",
+        "name": "Schlingerdämpfer",
+        "typ": "komponente",
+        "eltern_id": "E9",
+        "absatz_ids": [
+          "P4",
+          "P5"
+        ]
+      },
+      {
+        "id": "E15",
+        "name": "Antriebssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P7",
+          "P28"
+        ],
+        "kategorie": "antrieb"
+      },
+      {
+        "id": "E16",
+        "name": "Traktionsstromrichter",
+        "typ": "komponente",
+        "eltern_id": "E15",
+        "absatz_ids": [
+          "P7",
+          "P30",
+          "P31"
+        ]
+      },
+      {
+        "id": "E17",
+        "name": "Traktionsmaschine",
+        "typ": "komponente",
+        "eltern_id": "E15",
+        "absatz_ids": [
+          "P7",
+          "P30"
+        ]
+      },
+      {
+        "id": "E18",
+        "name": "Getriebe",
+        "typ": "komponente",
+        "eltern_id": "E15",
+        "absatz_ids": [
+          "P5",
+          "P7",
+          "P30"
+        ]
+      },
+      {
+        "id": "E19",
+        "name": "Energieversorgungssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P9",
+          "P28"
+        ],
+        "kategorie": "energieversorgung"
+      },
+      {
+        "id": "E20",
+        "name": "Stromabnahme und Hochspannungsausrüstung",
+        "typ": "subsystem",
+        "eltern_id": "E19",
+        "absatz_ids": [
+          "P9",
+          "P29"
+        ]
+      },
+      {
+        "id": "E21",
+        "name": "Stromabnehmer",
+        "typ": "komponente",
+        "eltern_id": "E20",
+        "absatz_ids": [
+          "P8",
+          "P9",
+          "P30"
+        ]
+      },
+      {
+        "id": "E22",
+        "name": "Hauptschalter",
+        "typ": "komponente",
+        "eltern_id": "E20",
+        "absatz_ids": [
+          "P8",
+          "P9",
+          "P30"
+        ]
+      },
+      {
+        "id": "E23",
+        "name": "Hochspannungs-Dachleitung",
+        "typ": "komponente",
+        "eltern_id": "E20",
+        "absatz_ids": [
+          "P8",
+          "P9"
+        ]
+      },
+      {
+        "id": "E24",
+        "name": "Transformator",
+        "typ": "komponente",
+        "eltern_id": "E20",
+        "absatz_ids": [
+          "P9",
+          "P25",
+          "P30"
+        ]
+      },
+      {
+        "id": "E25",
+        "name": "Energiemesssystem",
+        "typ": "komponente",
+        "eltern_id": "E20",
+        "absatz_ids": [
+          "P9"
+        ]
+      },
+      {
+        "id": "E26",
+        "name": "Hilfsbetriebeversorgung",
+        "typ": "subsystem",
+        "eltern_id": "E19",
+        "absatz_ids": [
+          "P9",
+          "P25",
+          "P27"
+        ]
+      },
+      {
+        "id": "E27",
+        "name": "Hilfsbetriebeumrichter",
+        "typ": "komponente",
+        "eltern_id": "E26",
+        "absatz_ids": [
+          "P9",
+          "P30"
+        ]
+      },
+      {
+        "id": "E28",
+        "name": "Zugsammelschiene",
+        "typ": "komponente",
+        "eltern_id": "E26",
+        "absatz_ids": [
+          "P9",
+          "P15",
+          "P30"
+        ]
+      },
+      {
+        "id": "E29",
+        "name": "Gleichspannungswandler",
+        "typ": "komponente",
+        "eltern_id": "E26",
+        "absatz_ids": [
+          "P9",
+          "P30"
+        ]
+      },
+      {
+        "id": "E30",
+        "name": "Bordnetzbatterie",
+        "typ": "komponente",
+        "eltern_id": "E26",
+        "absatz_ids": [
+          "P9",
+          "P17",
+          "P30"
+        ]
+      },
+      {
+        "id": "E31",
+        "name": "Bremssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P11",
+          "P28"
+        ],
+        "kategorie": "bremse"
+      },
+      {
+        "id": "E32",
+        "name": "Bremssteuerung",
+        "typ": "subsystem",
+        "eltern_id": "E31",
+        "absatz_ids": [
+          "P11",
+          "P31"
+        ]
+      },
+      {
+        "id": "E33",
+        "name": "Bremsregelung",
+        "typ": "komponente",
+        "eltern_id": "E32",
+        "absatz_ids": [
+          "P11",
+          "P15",
+          "P30"
+        ]
+      },
+      {
+        "id": "E34",
+        "name": "Gleitschutz",
+        "typ": "komponente",
+        "eltern_id": "E32",
+        "absatz_ids": [
+          "P10",
+          "P11"
+        ]
+      },
+      {
+        "id": "E35",
+        "name": "Bremsleitung",
+        "typ": "komponente",
+        "eltern_id": "E32",
+        "absatz_ids": [
+          "P11",
+          "P13"
+        ]
+      },
+      {
+        "id": "E36",
+        "name": "Bremsaktorik",
+        "typ": "subsystem",
+        "eltern_id": "E31",
+        "absatz_ids": [
+          "P11",
+          "P29"
+        ]
+      },
+      {
+        "id": "E37",
+        "name": "Scheibenbremse",
+        "typ": "komponente",
+        "eltern_id": "E36",
+        "absatz_ids": [
+          "P11",
+          "P30"
+        ]
+      },
+      {
+        "id": "E38",
+        "name": "Elektrodynamische Bremse",
+        "typ": "komponente",
+        "eltern_id": "E36",
+        "absatz_ids": [
+          "P11",
+          "P31"
+        ]
+      },
+      {
+        "id": "E39",
+        "name": "Schienenbremse",
+        "typ": "komponente",
+        "eltern_id": "E36",
+        "absatz_ids": [
+          "P11",
+          "P29"
+        ]
+      },
+      {
+        "id": "E40",
+        "name": "Feststellbremse",
+        "typ": "komponente",
+        "eltern_id": "E36",
+        "absatz_ids": [
+          "P10",
+          "P11",
+          "P31"
+        ]
+      },
+      {
+        "id": "E41",
+        "name": "Sandstreueinrichtung",
+        "typ": "komponente",
+        "eltern_id": "E36",
+        "absatz_ids": [
+          "P11"
+        ]
+      },
+      {
+        "id": "E42",
+        "name": "Führerstand",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P12",
+          "P13",
+          "P28"
+        ],
+        "kategorie": "bedienraum"
+      },
+      {
+        "id": "E43",
+        "name": "Bedienelemente",
+        "typ": "komponente",
+        "eltern_id": "E42",
+        "absatz_ids": [
+          "P13",
+          "P30"
+        ]
+      },
+      {
+        "id": "E44",
+        "name": "Anzeigeelemente",
+        "typ": "komponente",
+        "eltern_id": "E42",
+        "absatz_ids": [
+          "P13",
+          "P31"
+        ]
+      },
+      {
+        "id": "E45",
+        "name": "Triebfahrzeugführersitz",
+        "typ": "komponente",
+        "eltern_id": "E42",
+        "absatz_ids": [
+          "P13"
+        ]
+      },
+      {
+        "id": "E46",
+        "name": "Aufbau und Ladung",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P15",
+          "P28"
+        ],
+        "kategorie": "aufbau_nutzlast"
+      },
+      {
+        "id": "E47",
+        "name": "Fahrgastbereich",
+        "typ": "subsystem",
+        "eltern_id": "E46",
+        "absatz_ids": [
+          "P15",
+          "P31"
+        ]
+      },
+      {
+        "id": "E48",
+        "name": "Fahrgastbestuhlung",
+        "typ": "komponente",
+        "eltern_id": "E47",
+        "absatz_ids": [
+          "P15"
+        ]
+      },
+      {
+        "id": "E49",
+        "name": "Gepäckablagen",
+        "typ": "komponente",
+        "eltern_id": "E47",
+        "absatz_ids": [
+          "P15"
+        ]
+      },
+      {
+        "id": "E50",
+        "name": "Sanitärsystem",
+        "typ": "komponente",
+        "eltern_id": "E47",
+        "absatz_ids": [
+          "P15"
+        ]
+      },
+      {
+        "id": "E51",
+        "name": "Fahrgastalarm",
+        "typ": "komponente",
+        "eltern_id": "E46",
+        "absatz_ids": [
+          "P14",
+          "P15",
+          "P30"
+        ]
+      },
+      {
+        "id": "E52",
+        "name": "Elektrik und Elektronik",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P17",
+          "P28"
+        ],
+        "kategorie": "elektrik_elektronik"
+      },
+      {
+        "id": "E53",
+        "name": "Niedervolt-Bordnetz",
+        "typ": "komponente",
+        "eltern_id": "E52",
+        "absatz_ids": [
+          "P17",
+          "P23",
+          "P30"
+        ]
+      },
+      {
+        "id": "E54",
+        "name": "Leitungssatz",
+        "typ": "komponente",
+        "eltern_id": "E52",
+        "absatz_ids": [
+          "P17"
+        ]
+      },
+      {
+        "id": "E55",
+        "name": "Fahrzeugbus",
+        "typ": "komponente",
+        "eltern_id": "E52",
+        "absatz_ids": [
+          "P13",
+          "P17",
+          "P31"
+        ]
+      },
+      {
+        "id": "E56",
+        "name": "Fahrzeugsteuerung und Information",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P19",
+          "P28"
+        ],
+        "kategorie": "steuerung_information"
+      },
+      {
+        "id": "E57",
+        "name": "Fahrzeugmanagement",
+        "typ": "komponente",
+        "eltern_id": "E56",
+        "absatz_ids": [
+          "P13",
+          "P19",
+          "P30"
+        ]
+      },
+      {
+        "id": "E58",
+        "name": "Diagnose",
+        "typ": "komponente",
+        "eltern_id": "E56",
+        "absatz_ids": [
+          "P19",
+          "P30"
+        ]
+      },
+      {
+        "id": "E59",
+        "name": "Fahrgastinformationssystem",
+        "typ": "komponente",
+        "eltern_id": "E56",
+        "absatz_ids": [
+          "P16",
+          "P18",
+          "P19"
+        ]
+      },
+      {
+        "id": "E60",
+        "name": "Fahrerassistenz und Sicherheit",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P21",
+          "P28"
+        ],
+        "kategorie": "assistenz_sicherheit"
+      },
+      {
+        "id": "E61",
+        "name": "Zugbeeinflussung und Führerüberwachung",
+        "typ": "subsystem",
+        "eltern_id": "E60",
+        "absatz_ids": [
+          "P21",
+          "P29"
+        ]
+      },
+      {
+        "id": "E62",
+        "name": "Zugsicherungs-Fahrzeuggerät",
+        "typ": "komponente",
+        "eltern_id": "E61",
+        "absatz_ids": [
+          "P21",
+          "P29",
+          "P31"
+        ]
+      },
+      {
+        "id": "E63",
+        "name": "Sicherheitsfahrschaltung",
+        "typ": "komponente",
+        "eltern_id": "E61",
+        "absatz_ids": [
+          "P18",
+          "P21",
+          "P30"
+        ]
+      },
+      {
+        "id": "E64",
+        "name": "Aufzeichnungseinrichtung",
+        "typ": "komponente",
+        "eltern_id": "E61",
+        "absatz_ids": [
+          "P20",
+          "P21"
+        ]
+      },
+      {
+        "id": "E65",
+        "name": "Zustands- und Brandüberwachung",
+        "typ": "subsystem",
+        "eltern_id": "E60",
+        "absatz_ids": [
+          "P21",
+          "P31"
+        ]
+      },
+      {
+        "id": "E66",
+        "name": "Radsatzlagerüberwachung",
+        "typ": "komponente",
+        "eltern_id": "E65",
+        "absatz_ids": [
+          "P19",
+          "P21"
+        ]
+      },
+      {
+        "id": "E67",
+        "name": "Brandmeldeanlage",
+        "typ": "komponente",
+        "eltern_id": "E65",
+        "absatz_ids": [
+          "P21",
+          "P31"
+        ]
+      },
+      {
+        "id": "E68",
+        "name": "Beleuchtung und Sicht",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P23",
+          "P28"
+        ],
+        "kategorie": "beleuchtung_sicht"
+      },
+      {
+        "id": "E69",
+        "name": "Außensignalisierung",
+        "typ": "subsystem",
+        "eltern_id": "E68",
+        "absatz_ids": [
+          "P23"
+        ]
+      },
+      {
+        "id": "E70",
+        "name": "Scheinwerfer",
+        "typ": "komponente",
+        "eltern_id": "E69",
+        "absatz_ids": [
+          "P22",
+          "P23",
+          "P31"
+        ]
+      },
+      {
+        "id": "E71",
+        "name": "Leuchten",
+        "typ": "komponente",
+        "eltern_id": "E69",
+        "absatz_ids": [
+          "P23",
+          "P31"
+        ]
+      },
+      {
+        "id": "E72",
+        "name": "Signalhorn",
+        "typ": "komponente",
+        "eltern_id": "E69",
+        "absatz_ids": [
+          "P22",
+          "P23",
+          "P31"
+        ]
+      },
+      {
+        "id": "E73",
+        "name": "Sichtsystem",
+        "typ": "subsystem",
+        "eltern_id": "E68",
+        "absatz_ids": [
+          "P23",
+          "P31"
+        ]
+      },
+      {
+        "id": "E74",
+        "name": "Frontscheibe",
+        "typ": "komponente",
+        "eltern_id": "E73",
+        "absatz_ids": [
+          "P12",
+          "P22",
+          "P23"
+        ]
+      },
+      {
+        "id": "E75",
+        "name": "Scheibenreinigung",
+        "typ": "komponente",
+        "eltern_id": "E73",
+        "absatz_ids": [
+          "P23"
+        ]
+      },
+      {
+        "id": "E76",
+        "name": "Thermomanagement",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P25",
+          "P28"
+        ],
+        "kategorie": "thermomanagement"
+      },
+      {
+        "id": "E77",
+        "name": "Fahrgastraumklimatisierung",
+        "typ": "subsystem",
+        "eltern_id": "E76",
+        "absatz_ids": [
+          "P25",
+          "P31"
+        ]
+      },
+      {
+        "id": "E78",
+        "name": "Heiz- und Klimaanlage",
+        "typ": "komponente",
+        "eltern_id": "E77",
+        "absatz_ids": [
+          "P25"
+        ]
+      },
+      {
+        "id": "E79",
+        "name": "Druckschutzeinrichtung",
+        "typ": "komponente",
+        "eltern_id": "E77",
+        "absatz_ids": [
+          "P25",
+          "P30",
+          "P31"
+        ]
+      },
+      {
+        "id": "E80",
+        "name": "Traktionskühlung",
+        "typ": "subsystem",
+        "eltern_id": "E76",
+        "absatz_ids": [
+          "P7",
+          "P25",
+          "P31"
+        ]
+      },
+      {
+        "id": "E81",
+        "name": "Kühlkreislauf",
+        "typ": "komponente",
+        "eltern_id": "E80",
+        "absatz_ids": [
+          "P25",
+          "P30"
+        ]
+      },
+      {
+        "id": "E82",
+        "name": "Kühler",
+        "typ": "komponente",
+        "eltern_id": "E80",
+        "absatz_ids": [
+          "P25",
+          "P30"
+        ]
+      },
+      {
+        "id": "E83",
+        "name": "Fahrmotorlüfter",
+        "typ": "komponente",
+        "eltern_id": "E80",
+        "absatz_ids": [
+          "P25"
+        ]
+      },
+      {
+        "id": "E84",
+        "name": "Neben- und Versorgungssysteme",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P27",
+          "P28"
+        ],
+        "kategorie": "nebensysteme"
+      },
+      {
+        "id": "E85",
+        "name": "Druckluftanlage",
+        "typ": "subsystem",
+        "eltern_id": "E84",
+        "absatz_ids": [
+          "P27",
+          "P31"
+        ]
+      },
+      {
+        "id": "E86",
+        "name": "Kompressor für Druckluft",
+        "typ": "komponente",
+        "eltern_id": "E85",
+        "absatz_ids": [
+          "P27"
+        ]
+      },
+      {
+        "id": "E87",
+        "name": "Luftaufbereitung",
+        "typ": "komponente",
+        "eltern_id": "E85",
+        "absatz_ids": [
+          "P27"
+        ]
+      },
+      {
+        "id": "E88",
+        "name": "Hauptluftbehälter",
+        "typ": "komponente",
+        "eltern_id": "E85",
+        "absatz_ids": [
+          "P27",
+          "P30",
+          "P31"
+        ]
+      }
+    ],
+    "funktionen": [
+      {
+        "id": "F1",
+        "name": "Fahrzeuglasten tragen",
+        "ausgefuehrt_von": [
+          "E3",
+          "E9"
+        ],
+        "absatz_ids": [
+          "P5",
+          "P31"
+        ]
+      },
+      {
+        "id": "F2",
+        "name": "Antriebsleistung erzeugen",
+        "ausgefuehrt_von": [
+          "E16",
+          "E17"
+        ],
+        "absatz_ids": [
+          "P6",
+          "P7",
+          "P31"
+        ]
+      },
+      {
+        "id": "F3",
+        "name": "Drehmoment übertragen",
+        "ausgefuehrt_von": [
+          "E18"
+        ],
+        "absatz_ids": [
+          "P7",
+          "P31"
+        ]
+      },
+      {
+        "id": "F4",
+        "name": "Fahrzeug fortbewegen",
+        "ausgefuehrt_von": [
+          "E15",
+          "E11"
+        ],
+        "absatz_ids": [
+          "P7",
+          "P31"
+        ]
+      },
+      {
+        "id": "F5",
+        "name": "Elektrische Energie verteilen",
+        "ausgefuehrt_von": [
+          "E20",
+          "E26",
+          "E53"
+        ],
+        "absatz_ids": [
+          "P9",
+          "P17",
+          "P31"
+        ]
+      },
+      {
+        "id": "F6",
+        "name": "Energie speichern",
+        "ausgefuehrt_von": [
+          "E30",
+          "E88"
+        ],
+        "absatz_ids": [
+          "P9",
+          "P27",
+          "P31"
+        ]
+      },
+      {
+        "id": "F7",
+        "name": "Fahrzeug verzögern",
+        "ausgefuehrt_von": [
+          "E32",
+          "E36"
+        ],
+        "absatz_ids": [
+          "P10",
+          "P11",
+          "P31"
+        ]
+      },
+      {
+        "id": "F8",
+        "name": "Bremsenergie zurückgewinnen",
+        "ausgefuehrt_von": [
+          "E38",
+          "E16"
+        ],
+        "absatz_ids": [
+          "P11",
+          "P31"
+        ]
+      },
+      {
+        "id": "F9",
+        "name": "Fahrzeug festhalten",
+        "ausgefuehrt_von": [
+          "E40"
+        ],
+        "absatz_ids": [
+          "P10",
+          "P31"
+        ]
+      },
+      {
+        "id": "F10",
+        "name": "Druckluft bereitstellen",
+        "ausgefuehrt_von": [
+          "E85"
+        ],
+        "absatz_ids": [
+          "P27",
+          "P31"
+        ]
+      },
+      {
+        "id": "F11",
+        "name": "Fahrereingaben erfassen",
+        "ausgefuehrt_von": [
+          "E43"
+        ],
+        "absatz_ids": [
+          "P13",
+          "P31"
+        ]
+      },
+      {
+        "id": "F12",
+        "name": "Fahrerinformationen anzeigen",
+        "ausgefuehrt_von": [
+          "E44"
+        ],
+        "absatz_ids": [
+          "P13",
+          "P31"
+        ]
+      },
+      {
+        "id": "F13",
+        "name": "Fahrersicht sicherstellen",
+        "ausgefuehrt_von": [
+          "E73"
+        ],
+        "absatz_ids": [
+          "P22",
+          "P23",
+          "P31"
+        ]
+      },
+      {
+        "id": "F14",
+        "name": "Fahrzeugumgebung ausleuchten",
+        "ausgefuehrt_von": [
+          "E70"
+        ],
+        "absatz_ids": [
+          "P22",
+          "P31"
+        ]
+      },
+      {
+        "id": "F15",
+        "name": "Lichtsignale abgeben",
+        "ausgefuehrt_von": [
+          "E71"
+        ],
+        "absatz_ids": [
+          "P22",
+          "P23",
+          "P31"
+        ]
+      },
+      {
+        "id": "F16",
+        "name": "Akustische Warnsignale abgeben",
+        "ausgefuehrt_von": [
+          "E72"
+        ],
+        "absatz_ids": [
+          "P22",
+          "P31"
+        ]
+      },
+      {
+        "id": "F17",
+        "name": "Insassen schützen",
+        "ausgefuehrt_von": [
+          "E5",
+          "E67",
+          "E79"
+        ],
+        "absatz_ids": [
+          "P5",
+          "P20",
+          "P24",
+          "P31"
+        ]
+      },
+      {
+        "id": "F18",
+        "name": "Ladung aufnehmen",
+        "ausgefuehrt_von": [
+          "E47"
+        ],
+        "absatz_ids": [
+          "P15",
+          "P31"
+        ]
+      },
+      {
+        "id": "F19",
+        "name": "Daten übertragen",
+        "ausgefuehrt_von": [
+          "E55"
+        ],
+        "absatz_ids": [
+          "P16",
+          "P17",
+          "P31"
+        ]
+      },
+      {
+        "id": "F20",
+        "name": "Fahrzeugzustand überwachen",
+        "ausgefuehrt_von": [
+          "E58",
+          "E65"
+        ],
+        "absatz_ids": [
+          "P19",
+          "P21",
+          "P31"
+        ]
+      },
+      {
+        "id": "F21",
+        "name": "Fahrzeugposition bestimmen",
+        "ausgefuehrt_von": [
+          "E57"
+        ],
+        "absatz_ids": [
+          "P18",
+          "P19",
+          "P31"
+        ]
+      },
+      {
+        "id": "F22",
+        "name": "Fahrerzustand überwachen",
+        "ausgefuehrt_von": [
+          "E63"
+        ],
+        "absatz_ids": [
+          "P12",
+          "P21",
+          "P31"
+        ]
+      },
+      {
+        "id": "F23",
+        "name": "Fahrgeschwindigkeit überwachen",
+        "ausgefuehrt_von": [
+          "E62"
+        ],
+        "absatz_ids": [
+          "P21",
+          "P31"
+        ]
+      },
+      {
+        "id": "F24",
+        "name": "Betriebstemperatur regeln",
+        "ausgefuehrt_von": [
+          "E80"
+        ],
+        "absatz_ids": [
+          "P25",
+          "P31"
+        ]
+      },
+      {
+        "id": "F25",
+        "name": "Innenraum klimatisieren",
+        "ausgefuehrt_von": [
+          "E77"
+        ],
+        "absatz_ids": [
+          "P24",
+          "P25",
+          "P31"
+        ]
+      },
+      {
+        "id": "F26",
+        "name": "Fahrgäste informieren",
+        "ausgefuehrt_von": [
+          "E59"
+        ],
+        "absatz_ids": [
+          "P18",
+          "P19",
+          "P31"
+        ]
+      }
+    ],
+    "fluesse": [
+      {
+        "id": "S1",
+        "von": "E21",
+        "nach": "E22",
+        "art": "elektrisch",
+        "absatz_ids": [
+          "P8",
+          "P30"
+        ],
+        "medium": "Wechsel- oder Gleichstrom aus der Oberleitung"
+      },
+      {
+        "id": "S2",
+        "von": "E22",
+        "nach": "E24",
+        "art": "elektrisch",
+        "absatz_ids": [
+          "P9",
+          "P30"
+        ],
+        "medium": "Hochspannung"
+      },
+      {
+        "id": "S3",
+        "von": "E24",
+        "nach": "E16",
+        "art": "elektrisch",
+        "absatz_ids": [
+          "P7",
+          "P30"
+        ],
+        "medium": "Traktionsenergie",
+        "schnittstelle": "Traktionsanschluss Transformator–Stromrichter"
+      },
+      {
+        "id": "S4",
+        "von": "E16",
+        "nach": "E17",
+        "art": "elektrisch",
+        "absatz_ids": [
+          "P7",
+          "P30"
+        ],
+        "medium": "Drehstrom variabler Frequenz"
+      },
+      {
+        "id": "S5",
+        "von": "E17",
+        "nach": "E18",
+        "art": "mechanisch",
+        "absatz_ids": [
+          "P7"
+        ],
+        "medium": "Drehmoment"
+      },
+      {
+        "id": "S6",
+        "von": "E18",
+        "nach": "E11",
+        "art": "mechanisch",
+        "absatz_ids": [
+          "P5",
+          "P7",
+          "P30"
+        ],
+        "medium": "Antriebsmoment",
+        "schnittstelle": "Radsatzgetriebe–Radsatzwelle"
+      },
+      {
+        "id": "S7",
+        "von": "E16",
+        "nach": "E24",
+        "art": "elektrisch",
+        "absatz_ids": [
+          "P7",
+          "P11",
+          "P30"
+        ],
+        "medium": "zurückgespeiste Bremsenergie",
+        "schnittstelle": "Traktionsanschluss Transformator–Stromrichter"
+      },
+      {
+        "id": "S8",
+        "von": "E27",
+        "nach": "E28",
+        "art": "elektrisch",
+        "absatz_ids": [
+          "P9",
+          "P30"
+        ],
+        "medium": "Hilfsbetriebeenergie"
+      },
+      {
+        "id": "S9",
+        "von": "E28",
+        "nach": "E78",
+        "art": "elektrisch",
+        "absatz_ids": [
+          "P30"
+        ],
+        "medium": "Hilfsbetriebeenergie",
+        "schnittstelle": "Zugsammelschiene"
+      },
+      {
+        "id": "S10",
+        "von": "E28",
+        "nach": "E29",
+        "art": "elektrisch",
+        "absatz_ids": [
+          "P9",
+          "P30"
+        ],
+        "medium": "Hilfsbetriebeenergie"
+      },
+      {
+        "id": "S11",
+        "von": "E29",
+        "nach": "E30",
+        "art": "elektrisch",
+        "absatz_ids": [
+          "P9",
+          "P30"
+        ],
+        "medium": "Ladestrom"
+      },
+      {
+        "id": "S12",
+        "von": "E30",
+        "nach": "E53",
+        "art": "elektrisch",
+        "absatz_ids": [
+          "P16",
+          "P17",
+          "P30"
+        ],
+        "medium": "Niedervolt-Gleichspannung",
+        "schnittstelle": "Batteriesammelschiene"
+      },
+      {
+        "id": "S13",
+        "von": "E53",
+        "nach": "E70",
+        "art": "elektrisch",
+        "absatz_ids": [
+          "P23"
+        ],
+        "medium": "Niedervolt-Gleichspannung",
+        "schnittstelle": "Beleuchtungsversorgung"
+      },
+      {
+        "id": "S14",
+        "von": "E53",
+        "nach": "E57",
+        "art": "elektrisch",
+        "absatz_ids": [
+          "P17"
+        ],
+        "medium": "Niedervolt-Gleichspannung",
+        "schnittstelle": "Steuergeräteversorgung"
+      },
+      {
+        "id": "S15",
+        "von": "E37",
+        "nach": "E11",
+        "art": "mechanisch",
+        "absatz_ids": [
+          "P11",
+          "P30"
+        ],
+        "medium": "Bremskraft",
+        "schnittstelle": "Bremsscheibe am Radsatz"
+      },
+      {
+        "id": "S16",
+        "von": "E4",
+        "nach": "E13",
+        "art": "mechanisch",
+        "absatz_ids": [
+          "P5",
+          "P30"
+        ],
+        "medium": "Vertikallasten"
+      },
+      {
+        "id": "S17",
+        "von": "E13",
+        "nach": "E10",
+        "art": "mechanisch",
+        "absatz_ids": [
+          "P5",
+          "P30"
+        ],
+        "medium": "Vertikallasten"
+      },
+      {
+        "id": "S18",
+        "von": "E10",
+        "nach": "E12",
+        "art": "mechanisch",
+        "absatz_ids": [
+          "P5"
+        ],
+        "medium": "Rad- und Führungskräfte"
+      },
+      {
+        "id": "S19",
+        "von": "E12",
+        "nach": "E11",
+        "art": "mechanisch",
+        "absatz_ids": [
+          "P5"
+        ],
+        "medium": "Rad- und Führungskräfte"
+      },
+      {
+        "id": "S20",
+        "von": "E8",
+        "nach": "E4",
+        "art": "mechanisch",
+        "absatz_ids": [
+          "P5"
+        ],
+        "medium": "Zug- und Druckkräfte"
+      },
+      {
+        "id": "S21",
+        "von": "E48",
+        "nach": "E4",
+        "art": "mechanisch",
+        "absatz_ids": [
+          "P15"
+        ],
+        "medium": "Lasten aus Fahrgästen",
+        "schnittstelle": "Sitzbefestigung am Rohbau"
+      },
+      {
+        "id": "S22",
+        "von": "E86",
+        "nach": "E88",
+        "art": "pneumatisch",
+        "absatz_ids": [
+          "P27"
+        ],
+        "medium": "Druckluft"
+      },
+      {
+        "id": "S23",
+        "von": "E88",
+        "nach": "E37",
+        "art": "pneumatisch",
+        "absatz_ids": [
+          "P27",
+          "P30"
+        ],
+        "medium": "Druckluft",
+        "schnittstelle": "Hauptluftbehälterleitung"
+      },
+      {
+        "id": "S24",
+        "von": "E88",
+        "nach": "E13",
+        "art": "pneumatisch",
+        "absatz_ids": [
+          "P27",
+          "P30"
+        ],
+        "medium": "Druckluft",
+        "schnittstelle": "Luftfederversorgung"
+      },
+      {
+        "id": "S25",
+        "von": "E27",
+        "nach": "E86",
+        "art": "elektrisch",
+        "absatz_ids": [
+          "P27"
+        ],
+        "medium": "Hilfsbetriebeenergie",
+        "schnittstelle": "Kompressorversorgung"
+      },
+      {
+        "id": "S26",
+        "von": "E24",
+        "nach": "E81",
+        "art": "thermisch",
+        "absatz_ids": [
+          "P25",
+          "P30"
+        ],
+        "medium": "Verlustwärme",
+        "schnittstelle": "Kühlanschluss der Traktionskomponenten"
+      },
+      {
+        "id": "S27",
+        "von": "E81",
+        "nach": "E82",
+        "art": "thermisch",
+        "absatz_ids": [
+          "P25",
+          "P30"
+        ],
+        "medium": "Verlustwärme"
+      },
+      {
+        "id": "S28",
+        "von": "E78",
+        "nach": "E47",
+        "art": "thermisch",
+        "absatz_ids": [
+          "P25"
+        ],
+        "medium": "temperierte Zuluft",
+        "schnittstelle": "Luftkanal Fahrgastraum"
+      },
+      {
+        "id": "S29",
+        "von": "E43",
+        "nach": "E57",
+        "art": "information",
+        "absatz_ids": [
+          "P13",
+          "P30"
+        ],
+        "medium": "Fahr- und Bremsbefehle",
+        "schnittstelle": "Fahrzeugbus"
+      },
+      {
+        "id": "S30",
+        "von": "E57",
+        "nach": "E16",
+        "art": "information",
+        "absatz_ids": [
+          "P19",
+          "P30"
+        ],
+        "medium": "Zugkraftsollwert",
+        "schnittstelle": "Fahrzeugbus"
+      },
+      {
+        "id": "S31",
+        "von": "E57",
+        "nach": "E33",
+        "art": "information",
+        "absatz_ids": [
+          "P19",
+          "P30"
+        ],
+        "medium": "Bremsanforderung",
+        "schnittstelle": "Fahrzeugbus"
+      },
+      {
+        "id": "S32",
+        "von": "E57",
+        "nach": "E21",
+        "art": "information",
+        "absatz_ids": [
+          "P8",
+          "P19",
+          "P30"
+        ],
+        "medium": "Trennstellenbefehle",
+        "schnittstelle": "Fahrzeugbus"
+      },
+      {
+        "id": "S33",
+        "von": "E57",
+        "nach": "E79",
+        "art": "information",
+        "absatz_ids": [
+          "P25",
+          "P30"
+        ],
+        "medium": "Druckschutzauslösung",
+        "schnittstelle": "Fahrzeugbus"
+      },
+      {
+        "id": "S34",
+        "von": "E57",
+        "nach": "E59",
+        "art": "information",
+        "absatz_ids": [
+          "P19"
+        ],
+        "medium": "Zuglauf und Geschwindigkeit",
+        "schnittstelle": "Fahrzeugbus"
+      },
+      {
+        "id": "S35",
+        "von": "E62",
+        "nach": "E35",
+        "art": "information",
+        "absatz_ids": [
+          "P21",
+          "P30"
+        ],
+        "medium": "Notbremsbefehl",
+        "schnittstelle": "Notbremsschnittstelle der Zugsicherung"
+      },
+      {
+        "id": "S36",
+        "von": "E62",
+        "nach": "E44",
+        "art": "information",
+        "absatz_ids": [
+          "P21"
+        ],
+        "medium": "zulässige Geschwindigkeit und Fahrerlaubnis",
+        "schnittstelle": "Führerraumanzeige der Zugbeeinflussung"
+      },
+      {
+        "id": "S37",
+        "von": "E63",
+        "nach": "E35",
+        "art": "information",
+        "absatz_ids": [
+          "P21",
+          "P30"
+        ],
+        "medium": "Zwangsbremsbefehl"
+      },
+      {
+        "id": "S38",
+        "von": "E51",
+        "nach": "E33",
+        "art": "information",
+        "absatz_ids": [
+          "P15",
+          "P30"
+        ],
+        "medium": "Fahrgastalarmmeldung",
+        "schnittstelle": "Fahrgastalarmschnittstelle"
+      },
+      {
+        "id": "S39",
+        "von": "E66",
+        "nach": "E58",
+        "art": "information",
+        "absatz_ids": [
+          "P19",
+          "P30"
+        ],
+        "medium": "Lagerzustandsmeldung",
+        "schnittstelle": "Fahrzeugbus"
+      },
+      {
+        "id": "S40",
+        "von": "E67",
+        "nach": "E44",
+        "art": "information",
+        "absatz_ids": [
+          "P20",
+          "P30"
+        ],
+        "medium": "Brandmeldung",
+        "schnittstelle": "Fahrzeugbus"
+      },
+      {
+        "id": "S41",
+        "von": "E35",
+        "nach": "E33",
+        "art": "information",
+        "absatz_ids": [
+          "P11"
+        ],
+        "medium": "Bremsbefehl"
+      },
+      {
+        "id": "S42",
+        "von": "E33",
+        "nach": "E38",
+        "art": "information",
+        "absatz_ids": [
+          "P11"
+        ],
+        "medium": "Sollwert elektrodynamische Bremskraft"
+      },
+      {
+        "id": "S43",
+        "von": "E33",
+        "nach": "E37",
+        "art": "information",
+        "absatz_ids": [
+          "P11"
+        ],
+        "medium": "Sollwert Reibungsbremskraft"
+      },
+      {
+        "id": "S44",
+        "von": "E33",
+        "nach": "E39",
+        "art": "information",
+        "absatz_ids": [
+          "P11"
+        ],
+        "medium": "Ansteuerung Schienenbremse"
+      },
+      {
+        "id": "S45",
+        "von": "E43",
+        "nach": "E35",
+        "art": "information",
+        "absatz_ids": [
+          "P13"
+        ],
+        "medium": "Notbremsbefehl",
+        "schnittstelle": "Notbremsbetätigung"
+      }
+    ],
+    "entfallene_kategorien": [
+      {
+        "kategorie": "lenkung",
+        "grund": "Schienenfahrzeug: Die Spurführung übernehmen Radsatz und Gleis; die Führungskräfte sind im Laufwerk unter Fahrzeugstruktur und Fahrwerk modelliert."
+      }
+    ],
+    "varianten": [
+      {
+        "id": "V1",
+        "element_id": "E15",
+        "bezeichnung": "Antriebskonzept",
+        "alternativen": [
+          "Konzentrierter Antrieb in Triebköpfen an den Zugenden",
+          "Verteilter Antrieb mit Traktionsausrüstung unter den Wagenböden",
+          "Triebköpfe mit angetriebenen Nachbarwagen"
+        ],
+        "auswahlkriterien": [
+          "Achslast und Gleisbeanspruchung",
+          "Haftwertbeanspruchung und Beschleunigung",
+          "Sitzplatzangebot bei gegebener Zuglänge",
+          "Trennbarkeit und Instandhaltung",
+          "Seitenwindempfindlichkeit",
+          "befahrbare Steigungen"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E9",
+            "beschreibung": "Verteilung von Trieb- und Laufdrehgestellen über den Zug oder Konzentration an den Enden."
+          },
+          {
+            "element_id": "E24",
+            "beschreibung": "Transformatoren im Triebkopf oder in eigenen Transformatorwagen unter dem Wagenboden."
+          },
+          {
+            "element_id": "E80",
+            "beschreibung": "Kühler und Fahrmotorlüfter zentral im Triebkopf oder verteilt unterflur."
+          },
+          {
+            "element_id": "E47",
+            "beschreibung": "Fahrgastplätze auch in den Endwagen nur beim verteilten Antrieb."
+          },
+          {
+            "element_id": "E36",
+            "beschreibung": "Elektrodynamische Bremse an vielen oder wenigen Achsen; Schienenbremse an den Laufdrehgestellen."
+          }
+        ],
+        "absatz_ids": [
+          "P6",
+          "P7"
+        ]
+      },
+      {
+        "id": "V2",
+        "element_id": "E9",
+        "bezeichnung": "Laufwerksanordnung",
+        "alternativen": [
+          "Einzelwagen mit je zwei eigenen Drehgestellen",
+          "Gliederzug mit Jakobs-Drehgestellen zwischen den Wagen",
+          "Losradsätze ohne torsionssteife Radverbindung"
+        ],
+        "auswahlkriterien": [
+          "Zahl der Laufwerke und Masse",
+          "Trennbarkeit der Wagen im Betrieb",
+          "Achslast",
+          "Laufverhalten und Instandhaltung"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E7",
+            "beschreibung": "Gelenkiger Wagenübergang über dem gemeinsamen Drehgestell beim Gliederzug."
+          },
+          {
+            "element_id": "E8",
+            "beschreibung": "Innenkupplungen entfallen beim Gliederzug zugunsten eines Gelenks."
+          },
+          {
+            "element_id": "E15",
+            "beschreibung": "Anordnung der Triebdrehgestelle und Achslastverteilung ändern sich."
+          },
+          {
+            "element_id": "E36",
+            "beschreibung": "Zahl und Lage der Bremsstellen ändern sich mit der Zahl der Radsätze."
+          }
+        ],
+        "absatz_ids": [
+          "P4",
+          "P5"
+        ]
+      },
+      {
+        "id": "V3",
+        "element_id": "E11",
+        "bezeichnung": "Spurweitenauslegung",
+        "alternativen": [
+          "Feste Spurweite",
+          "Spurwechselradsätze für die Durchfahrt von Spurwechselanlagen"
+        ],
+        "auswahlkriterien": [
+          "Netze unterschiedlicher Spurweite im Einsatzgebiet",
+          "Durchgehende Verbindungen ohne Umsteigen",
+          "Masse und Instandhaltungsaufwand des Laufwerks"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E18",
+            "beschreibung": "Radsatzgetriebe muss verschiebbare Räder zulassen."
+          },
+          {
+            "element_id": "E37",
+            "beschreibung": "Bremsscheiben und Bremszangen müssen beiden Spurweiten folgen."
+          },
+          {
+            "element_id": "E10",
+            "beschreibung": "Drehgestell braucht Verriegelung und Führung für die Spurwechselmechanik."
+          }
+        ],
+        "absatz_ids": [
+          "P4",
+          "P5"
+        ]
+      },
+      {
+        "id": "V4",
+        "element_id": "E19",
+        "bezeichnung": "Stromsystemausstattung",
+        "alternativen": [
+          "Einsystemausführung für ein Wechselstromsystem",
+          "Mehrsystemausführung für Wechsel- und Gleichstromsysteme"
+        ],
+        "auswahlkriterien": [
+          "Stromsysteme der Strecken im Einsatzgebiet",
+          "Grenzüberschreitender Verkehr",
+          "Masse und Dachraum",
+          "Beschaffungskosten"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E21",
+            "beschreibung": "Zusätzliche Stromabnehmer für Gleichstrom und Spannungserkennung."
+          },
+          {
+            "element_id": "E16",
+            "beschreibung": "Traktionsstromrichter muss auch Gleichspannung direkt aufnehmen."
+          },
+          {
+            "element_id": "E57",
+            "beschreibung": "Fahrzeugmanagement steuert Systemwechsel an Trennstellen."
+          }
+        ],
+        "absatz_ids": [
+          "P8",
+          "P9"
+        ]
+      },
+      {
+        "id": "V5",
+        "element_id": "E36",
+        "bezeichnung": "Adhäsionsunabhängige Bremse",
+        "alternativen": [
+          "Wirbelstrombremse",
+          "Magnetschienenbremse",
+          "Keine adhäsionsunabhängige Bremse"
+        ],
+        "auswahlkriterien": [
+          "Geforderte Bremsleistung im oberen Geschwindigkeitsbereich",
+          "Verschleiß der Scheibenbremsen",
+          "Zulassung auf den vorgesehenen Strecken",
+          "Einsatzgeschwindigkeit",
+          "elektrischer Leistungsbedarf"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E26",
+            "beschreibung": "Wirbelstrombremse braucht elektrische Leistung aus der Fahrzeugversorgung."
+          },
+          {
+            "element_id": "E10",
+            "beschreibung": "Anbauraum für Magnete am Laufdrehgestell."
+          },
+          {
+            "element_id": "E62",
+            "beschreibung": "Zugsicherung und Streckenangaben bestimmen, wo die Schienenbremse verwendet werden darf."
+          }
+        ],
+        "absatz_ids": [
+          "P10",
+          "P11"
+        ]
+      },
+      {
+        "id": "V6",
+        "element_id": "E61",
+        "bezeichnung": "Zugbeeinflussungsausrüstung",
+        "alternativen": [
+          "Nur europäisches Zugbeeinflussungssystem",
+          "Europäisches System mit zusätzlichen nationalen Zugbeeinflussungssystemen"
+        ],
+        "auswahlkriterien": [
+          "Ausrüstung der vorgesehenen Strecken",
+          "Grenzüberschreitender Einsatz",
+          "Zulassungsaufwand",
+          "Dach- und Unterflurraum für Antennen"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E44",
+            "beschreibung": "Zusätzliche Anzeige- und Bedienelemente im Führerstand."
+          },
+          {
+            "element_id": "E55",
+            "beschreibung": "Weitere Busteilnehmer und Umschaltlogik."
+          },
+          {
+            "element_id": "E35",
+            "beschreibung": "Mehrere Systeme greifen auf die Notbremsschnittstelle zu."
+          }
+        ],
+        "absatz_ids": [
+          "P20",
+          "P21"
+        ]
+      },
+      {
+        "id": "V7",
+        "element_id": "E79",
+        "bezeichnung": "Druckschutzprinzip",
+        "alternativen": [
+          "Aktiver Druckschutz mit druckgeschützten Ventilatoren",
+          "Passiver Druckschutz mit Druckschutzklappen"
+        ],
+        "auswahlkriterien": [
+          "Tunnelanteil und Zugbegegnungen im Tunnel",
+          "Frischluftversorgung während des Druckereignisses",
+          "Energiebedarf und Masse",
+          "Verfügbarkeit eines Auslösesignals"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E57",
+            "beschreibung": "Passiver Druckschutz braucht Auslösung durch Fahrzeugmanagement oder Sensorik an der Zugspitze."
+          },
+          {
+            "element_id": "E62",
+            "beschreibung": "Auslösung kann über die Zugsicherung erfolgen."
+          },
+          {
+            "element_id": "E27",
+            "beschreibung": "Aktiver Druckschutz erhöht die Lüfterleistung aus dem Hilfsbetriebeumrichter."
+          }
+        ],
+        "absatz_ids": [
+          "P24",
+          "P25"
+        ]
+      }
+    ],
+    "klaerungsfragen": [
+      {
+        "id": "K1",
+        "frage": "Soll der Antrieb in Triebköpfen an den Zugenden konzentriert oder als verteilter Antrieb unter den Wagenböden ausgeführt werden?",
+        "element_ids": [
+          "E15",
+          "E9"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Achslast, Lage der Transformatoren und Kühler sowie das Sitzplatzangebot ab.",
+        "variante_ids": [
+          "V1"
+        ]
+      },
+      {
+        "id": "K2",
+        "frage": "Sollen die Wagen eigene Drehgestelle erhalten oder als Gliederzug auf gemeinsamen Jakobs-Drehgestellen laufen?",
+        "element_ids": [
+          "E2",
+          "E9"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Wagenübergänge, Kupplungen, Trennbarkeit der Wagen und Verteilung von Antrieb und Bremse ab.",
+        "variante_ids": [
+          "V2"
+        ]
+      },
+      {
+        "id": "K3",
+        "frage": "Muss der Zug Netze unterschiedlicher Spurweite ohne Fahrzeugwechsel befahren?",
+        "element_ids": [
+          "E2",
+          "E11"
+        ],
+        "anlass": "betrieb",
+        "relevanz": "Davon hängt ab, ob Spurwechselradsätze mit angepassten Getrieben und Bremsen nötig sind.",
+        "variante_ids": [
+          "V3"
+        ]
+      },
+      {
+        "id": "K4",
+        "frage": "Welche Stromsysteme der Oberleitung muss der Zug im vorgesehenen Einsatzgebiet befahren können?",
+        "element_ids": [
+          "E19",
+          "E21"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Zahl der Stromabnehmer, Stromrichterauslegung und Systemwechselsteuerung ab.",
+        "variante_ids": [
+          "V4"
+        ]
+      },
+      {
+        "id": "K5",
+        "frage": "Soll eine adhäsionsunabhängige Schienenbremse vorgesehen werden, und wenn ja, als Wirbelstrombremse oder als Magnetschienenbremse?",
+        "element_ids": [
+          "E31",
+          "E36"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Bremsleistung bei hoher Geschwindigkeit, elektrischer Leistungsbedarf und Streckenzulassung ab.",
+        "variante_ids": [
+          "V5"
+        ]
+      },
+      {
+        "id": "K6",
+        "frage": "Welche Zugbeeinflussungssysteme sind auf den vorgesehenen Strecken neben dem europäischen System gefordert?",
+        "element_ids": [
+          "E60",
+          "E61"
+        ],
+        "anlass": "schnittstelle",
+        "relevanz": "Davon hängen Zahl der Fahrzeuggeräte, Antennen und Führerraumanzeigen ab.",
+        "variante_ids": [
+          "V6"
+        ]
+      },
+      {
+        "id": "K7",
+        "frage": "Welche Kollisionsszenarien muss die Crashstruktur des Wagenkastens abdecken?",
+        "element_ids": [
+          "E2",
+          "E5"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Auslegung der Energieabsorber, Kupplung und Führerraumstruktur ab."
+      },
+      {
+        "id": "K8",
+        "frage": "Soll der Führerstand an beiden Zugenden vollwertig ausgeführt sein, oder genügt an einem Ende ein Steuerwagen mit Führerstand?",
+        "element_ids": [
+          "E42"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Zahl der Führerstandsausrüstungen und die Lage der Triebköpfe ab.",
+        "variante_ids": [
+          "V1"
+        ]
+      },
+      {
+        "id": "K9",
+        "frage": "Welche Sitzplatzkapazität, Klassenaufteilung und Gepäckmenge muss der Fahrgastbereich aufnehmen?",
+        "element_ids": [
+          "E46",
+          "E47"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Wagenzahl, Sitzteiler, Türanordnung und Klimaleistung ab."
+      },
+      {
+        "id": "K10",
+        "frage": "Soll der Fahrzeugbus redundant ausgeführt und über die automatische Kupplung zwischen gekuppelten Triebzügen durchgebunden werden?",
+        "element_ids": [
+          "E52",
+          "E55",
+          "E8"
+        ],
+        "anlass": "schnittstelle",
+        "relevanz": "Davon hängen Kupplungskontakte, Leitungssatz und die Verfügbarkeit in Mehrfachtraktion ab."
+      },
+      {
+        "id": "K11",
+        "frage": "Welche Diagnosedaten sollen während der Fahrt an Instandhaltung oder Betriebszentrale übertragen werden?",
+        "element_ids": [
+          "E56",
+          "E58"
+        ],
+        "anlass": "betrieb",
+        "relevanz": "Davon hängen Diagnosetiefe, Datenübertragung und Instandhaltungskonzept ab."
+      },
+      {
+        "id": "K12",
+        "frage": "Sind über die zwei vorgeschriebenen Scheinwerfer hinaus zusätzliche obere Scheinwerfer vorgesehen?",
+        "element_ids": [
+          "E68",
+          "E70"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Kopfgestaltung, Lampensteuerung und Bordnetzlast ab."
+      },
+      {
+        "id": "K13",
+        "frage": "Soll der Druckschutz aktiv mit druckgeschützten Ventilatoren oder passiv mit Druckschutzklappen ausgeführt werden?",
+        "element_ids": [
+          "E76",
+          "E79"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Frischluftversorgung im Tunnel, Auslösesignal und Lüfterleistung ab.",
+        "variante_ids": [
+          "V7"
+        ]
+      },
+      {
+        "id": "K14",
+        "frage": "Welche Verbraucher außer Bremse und Luftfederung sollen aus der Druckluftanlage versorgt werden?",
+        "element_ids": [
+          "E84",
+          "E85"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Kompressorleistung und Behältervolumen ab."
+      },
+      {
+        "id": "K15",
+        "frage": "Soll der Zug Bremsenergie in die Oberleitung zurückspeisen, und auf welchen Strecken ist das zugelassen?",
+        "element_ids": [
+          "E19",
+          "E38"
+        ],
+        "anlass": "schnittstelle",
+        "relevanz": "Davon hängen Stromrichterauslegung, Bremskraftaufteilung und Energieverbrauch ab."
+      },
+      {
+        "id": "K16",
+        "frage": "Welche Kühlart, Luft oder Flüssigkeit, soll für Transformator und Traktionsstromrichter verwendet werden?",
+        "element_ids": [
+          "E76",
+          "E80"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Kühlerlage, Lüfterleistung und Instandhaltung der Traktionskühlung ab."
+      }
+    ],
+    "anforderungsthemen": [
+      {
+        "id": "R1",
+        "element_ids": [
+          "E1",
+          "E15"
+        ],
+        "thema": "Fahrleistung",
+        "kenngroessen": [
+          "Höchstgeschwindigkeit",
+          "Zugkraftkennlinie",
+          "Anfahrbeschleunigung",
+          "befahrbare Steigung",
+          "Haftwertausnutzung"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "Verordnung (EU) Nr. 1302/2014, TSI Lokomotiven und Personenwagen, ursprünglich angenommene Fassung (Eisenbahnsystem der Europäischen Union; Lokomotiven, Triebzüge und Personenwagen auf den Spurweiten des Abschnitts 2.3.2, Auslegungshöchstgeschwindigkeit bis 350 km/h, darüber zu ergänzen)",
+            "quellen_id": "Q6",
+            "fundstelle": "Anhang, Abschnitte 2.3.3 und 4.2.8.1.1"
+          }
+        ]
+      },
+      {
+        "id": "R2",
+        "element_ids": [
+          "E2",
+          "E3"
+        ],
+        "thema": "Passive Sicherheit und Kupplung",
+        "kenngroessen": [
+          "Kollisionsenergieaufnahme",
+          "Kupplungshöhe",
+          "Zug- und Druckkräfte der Kupplung",
+          "Festigkeit des Wagenkastens"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "Verordnung (EU) Nr. 1302/2014, TSI Lokomotiven und Personenwagen, ursprünglich angenommene Fassung (Eisenbahnsystem der Europäischen Union; Lokomotiven, Triebzüge und Personenwagen auf den Spurweiten des Abschnitts 2.3.2, Auslegungshöchstgeschwindigkeit bis 350 km/h, darüber zu ergänzen)",
+            "quellen_id": "Q6",
+            "fundstelle": "Anhang, Abschnitt 4.2.2.2.3 Buchstaben a-1 und a-2; Gliederung 4.2.2.4 und 4.2.2.5"
+          }
+        ]
+      },
+      {
+        "id": "R3",
+        "element_ids": [
+          "E9"
+        ],
+        "thema": "Laufsicherheit und Gleisbeanspruchung",
+        "kenngroessen": [
+          "Achslast",
+          "Radsatzführungskräfte",
+          "äquivalente Konizität",
+          "Lagerzustand"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "Verordnung (EU) Nr. 1302/2014, TSI Lokomotiven und Personenwagen, ursprünglich angenommene Fassung (Eisenbahnsystem der Europäischen Union; Lokomotiven, Triebzüge und Personenwagen auf den Spurweiten des Abschnitts 2.3.2, Auslegungshöchstgeschwindigkeit bis 350 km/h, darüber zu ergänzen)",
+            "quellen_id": "Q6",
+            "fundstelle": "Anhang, Abschnitte 4.2.3.2, 4.2.3.3.2 und 4.2.3.4 (Gliederung)"
+          }
+        ]
+      },
+      {
+        "id": "R4",
+        "element_ids": [
+          "E1",
+          "E3"
+        ],
+        "thema": "Aerodynamik",
+        "kenngroessen": [
+          "Luftgeschwindigkeit im Zugwind am Gleis",
+          "Kopfdruckwelle",
+          "Druckschwankung im Tunnel",
+          "Seitenwindkennkurve"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "Verordnung (EU) Nr. 1302/2014, TSI Lokomotiven und Personenwagen, ursprünglich angenommene Fassung (Eisenbahnsystem der Europäischen Union; Lokomotiven, Triebzüge und Personenwagen auf den Spurweiten des Abschnitts 2.3.2, Auslegungshöchstgeschwindigkeit bis 350 km/h, darüber zu ergänzen)",
+            "quellen_id": "Q6",
+            "fundstelle": "Anhang, Abschnitte 4.2.6.2.1 bis 4.2.6.2.4"
+          }
+        ]
+      },
+      {
+        "id": "R5",
+        "element_ids": [
+          "E19"
+        ],
+        "thema": "Stromabnahme und Netzverträglichkeit",
+        "kenngroessen": [
+          "unterstützte Stromsysteme",
+          "Kontaktkraft des Stromabnehmers",
+          "maximaler Strom aus der Oberleitung",
+          "Leistungsfaktor",
+          "Rückspeiseleistung"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "Verordnung (EU) Nr. 1302/2014, TSI Lokomotiven und Personenwagen, ursprünglich angenommene Fassung (Eisenbahnsystem der Europäischen Union; Lokomotiven, Triebzüge und Personenwagen auf den Spurweiten des Abschnitts 2.3.2, Auslegungshöchstgeschwindigkeit bis 350 km/h, darüber zu ergänzen)",
+            "quellen_id": "Q6",
+            "fundstelle": "Anhang, Abschnitte 4.2.8.2.1 bis 4.2.8.2.10"
+          }
+        ]
+      },
+      {
+        "id": "R6",
+        "element_ids": [
+          "E31"
+        ],
+        "thema": "Bremsleistung",
+        "kenngroessen": [
+          "Verzögerungsprofil",
+          "äquivalente Ansprechzeit",
+          "Bremsweg",
+          "rechnerisch angenommener Kraftschluss",
+          "Haltevermögen der Feststellbremse"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "Verordnung (EU) Nr. 1302/2014, TSI Lokomotiven und Personenwagen, ursprünglich angenommene Fassung (Eisenbahnsystem der Europäischen Union; Lokomotiven, Triebzüge und Personenwagen auf den Spurweiten des Abschnitts 2.3.2, Auslegungshöchstgeschwindigkeit bis 350 km/h, darüber zu ergänzen)",
+            "quellen_id": "Q6",
+            "fundstelle": "Anhang, Abschnitte 4.2.4.1 Nummer 4, 4.2.4.2.1 und 4.2.4.6.1"
+          }
+        ]
+      },
+      {
+        "id": "R7",
+        "element_ids": [
+          "E42"
+        ],
+        "thema": "Führerstand und Bedienung",
+        "kenngroessen": [
+          "Sichtfeld nach vorn",
+          "Lärmpegel im Führerstand",
+          "Ergonomie des Führerpults",
+          "Klima und Luftqualität im Führerstand"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "Verordnung (EU) Nr. 1302/2014, TSI Lokomotiven und Personenwagen, ursprünglich angenommene Fassung (Eisenbahnsystem der Europäischen Union; Lokomotiven, Triebzüge und Personenwagen auf den Spurweiten des Abschnitts 2.3.2, Auslegungshöchstgeschwindigkeit bis 350 km/h, darüber zu ergänzen)",
+            "quellen_id": "Q6",
+            "fundstelle": "Anhang, Abschnitt 4.2.9.1 (Gliederung 4.2.9.1.1 bis 4.2.9.1.8)"
+          }
+        ]
+      },
+      {
+        "id": "R8",
+        "element_ids": [
+          "E46"
+        ],
+        "thema": "Fahrgastkapazität und Zugang",
+        "kenngroessen": [
+          "Sitzplatzzahl",
+          "Türanzahl und Türbreite",
+          "Fahrgastwechselzeit",
+          "Luftqualität im Innenraum"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "Verordnung (EU) Nr. 1302/2014, TSI Lokomotiven und Personenwagen, ursprünglich angenommene Fassung (Eisenbahnsystem der Europäischen Union; Lokomotiven, Triebzüge und Personenwagen auf den Spurweiten des Abschnitts 2.3.2, Auslegungshöchstgeschwindigkeit bis 350 km/h, darüber zu ergänzen)",
+            "quellen_id": "Q6",
+            "fundstelle": "Anhang, Abschnitt 4.2.5 (Gliederung 4.2.5.5 und 4.2.5.8)"
+          }
+        ]
+      },
+      {
+        "id": "R9",
+        "element_ids": [
+          "E52"
+        ],
+        "thema": "Bordnetzverfügbarkeit",
+        "kenngroessen": [
+          "Überbrückungszeit der Bordnetzbatterie",
+          "Redundanz des Fahrzeugbusses",
+          "Störfestigkeit"
+        ]
+      },
+      {
+        "id": "R10",
+        "element_ids": [
+          "E56"
+        ],
+        "thema": "Diagnose und Instandhaltungsdaten",
+        "kenngroessen": [
+          "Diagnosetiefe",
+          "Meldelatenz",
+          "Umfang der übertragenen Zustandsdaten"
+        ]
+      },
+      {
+        "id": "R11",
+        "element_ids": [
+          "E60",
+          "E65"
+        ],
+        "thema": "Brandschutz und Evakuierung",
+        "kenngroessen": [
+          "Brandschutzkategorie",
+          "Laufvermögen im Brandfall",
+          "überwachte Brandrisikobereiche",
+          "Notausstiege"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "Verordnung (EU) Nr. 1302/2014, TSI Lokomotiven und Personenwagen, ursprünglich angenommene Fassung (Eisenbahnsystem der Europäischen Union; Lokomotiven, Triebzüge und Personenwagen auf den Spurweiten des Abschnitts 2.3.2, Auslegungshöchstgeschwindigkeit bis 350 km/h, darüber zu ergänzen)",
+            "quellen_id": "Q6",
+            "fundstelle": "Anhang, Abschnitte 4.2.10.3.2, 4.2.10.4.4 und Gliederung 4.2.10.5"
+          }
+        ]
+      },
+      {
+        "id": "R12",
+        "element_ids": [
+          "E60",
+          "E61"
+        ],
+        "thema": "Zugsicherung und Datenaufzeichnung",
+        "kenngroessen": [
+          "unterstützte Zugbeeinflussungssysteme",
+          "Reaktion bei fehlender Fahreraktivität",
+          "Aufzeichnungsumfang",
+          "Datenintegrität"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "Verordnung (EU) Nr. 1302/2014, TSI Lokomotiven und Personenwagen, ursprünglich angenommene Fassung (Eisenbahnsystem der Europäischen Union; Lokomotiven, Triebzüge und Personenwagen auf den Spurweiten des Abschnitts 2.3.2, Auslegungshöchstgeschwindigkeit bis 350 km/h, darüber zu ergänzen)",
+            "quellen_id": "Q6",
+            "fundstelle": "Anhang, Abschnitte 4.2.9.3.1 und 4.2.9.6"
+          }
+        ]
+      },
+      {
+        "id": "R13",
+        "element_ids": [
+          "E68"
+        ],
+        "thema": "Außensignalisierung",
+        "kenngroessen": [
+          "Lichtstärke der Scheinwerfer",
+          "Lichtfarbe",
+          "Anordnung der Scheinwerfer",
+          "Schalldruckpegel des Signalhorns"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "Verordnung (EU) Nr. 1302/2014, TSI Lokomotiven und Personenwagen, ursprünglich angenommene Fassung (Eisenbahnsystem der Europäischen Union; Lokomotiven, Triebzüge und Personenwagen auf den Spurweiten des Abschnitts 2.3.2, Auslegungshöchstgeschwindigkeit bis 350 km/h, darüber zu ergänzen)",
+            "quellen_id": "Q6",
+            "fundstelle": "Anhang, Abschnitte 4.2.7.1.1 und 4.2.7.2 (Gliederung)"
+          }
+        ]
+      },
+      {
+        "id": "R14",
+        "element_ids": [
+          "E76",
+          "E77"
+        ],
+        "thema": "Druckkomfort und Klimatisierung",
+        "kenngroessen": [
+          "Druckänderung im Fahrgastraum",
+          "Druckgradient",
+          "Innentemperatur",
+          "Frischluftrate"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "Verordnung (EU) Nr. 1302/2014, TSI Lokomotiven und Personenwagen, ursprünglich angenommene Fassung (Eisenbahnsystem der Europäischen Union; Lokomotiven, Triebzüge und Personenwagen auf den Spurweiten des Abschnitts 2.3.2, Auslegungshöchstgeschwindigkeit bis 350 km/h, darüber zu ergänzen)",
+            "quellen_id": "Q6",
+            "fundstelle": "Anhang, Abschnitte 4.2.5.8 (Gliederung) und 4.2.6.2.3"
+          }
+        ]
+      },
+      {
+        "id": "R15",
+        "element_ids": [
+          "E84",
+          "E85"
+        ],
+        "thema": "Druckluftversorgung",
+        "kenngroessen": [
+          "Liefermenge des Kompressors",
+          "Speichervolumen",
+          "gespeicherte Bremsenergie",
+          "Luftqualität"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "Verordnung (EU) Nr. 1302/2014, TSI Lokomotiven und Personenwagen, ursprünglich angenommene Fassung (Eisenbahnsystem der Europäischen Union; Lokomotiven, Triebzüge und Personenwagen auf den Spurweiten des Abschnitts 2.3.2, Auslegungshöchstgeschwindigkeit bis 350 km/h, darüber zu ergänzen)",
+            "quellen_id": "Q6",
+            "fundstelle": "Anhang, Abschnitt 4.2.4.2.1 Nummer 9"
+          }
+        ]
+      }
+    ]
+  },
+  "offene_punkte": [
+    "Recherche: aktuelle konsolidierte Fassung der Verordnung (EU) Nr. 1302/2014 und ihrer Änderungsverordnungen auf EUR-Lex; eur-lex.europa.eu war in diesem Lauf nicht erreichbar, verwendet wurde die ursprünglich angenommene Fassung über legislation.gov.uk (Q6). Betrifft P2, P4, P8, P10, P12, P14, P20, P22 und alle Regelwerksangaben.",
+    "Recherche: TSI Zugsteuerung, Zugsicherung und Signalgebung (Suchbegriffe: TSI CCS, ETCS Fahrzeuggerät Hochgeschwindigkeitszug) für P21 und V6.",
+    "Recherche: Fachliteratur zur Hochgeschwindigkeitsfahrzeugtechnik (Suchbegriffe: Schienenfahrzeugtechnik Lehrbuch Hochgeschwindigkeit, Traktionskühlung Transformator Triebzug, Hilfsbetriebeumrichter Zugsammelschiene) zur Belegung von P5, P7, P9, P11, P25 und P27.",
+    "Recherche: UIC-Kodex 660 zu Druckkomfort und Druckertüchtigung (in Q5 genannt, nicht abgerufen) für P25 und R14.",
+    "Recherche: UIC-Definitionen des Hochgeschwindigkeitsverkehrs (uic.org, Seite „General definitions of highspeed“); die in diesem Lauf abgerufene UIC-Übersichtsseite enthielt keine Definition.",
+    "Recherche: Neigetechnik- und Doppelstock-Hochgeschwindigkeitszüge (in Q2 genannt) als weitere strukturändernde Varianten; im Betrachtungsumfang derzeit ausgeschlossen.",
+    "Recherche: Druckluftverbraucher von Hochgeschwindigkeitszügen außer Bremse und Luftfederung (Suchbegriffe: Stromabnehmer Hubantrieb Druckluft, Sandstreuanlage Druckluft Triebzug) für P27.",
+    "Glossarvorschlag: Hauptsystemname für die Kategorie aufbau_nutzlast bei Schienenpersonenfahrzeugen (etwa „Fahrgastbereich und Gepäck“); ersatzweise verwendet wurde „Aufbau und Ladung“, das im Glossar für Nutzfahrzeuge vorgesehen ist.",
+    "Abweichung von der Zuordnungsliste: Die Fahrgastsitze stehen als „Fahrgastbestuhlung“ unter Aufbau und Ladung statt als „Sitze“ unter dem bedienraum-Hauptsystem, weil der Führerstand nur den Triebfahrzeugführersitz aufnimmt.",
+    "Glossarvorschlag: Akustische Warnsignale abgeben (fahrzeugartspezifische Funktion des Signalhorns; „Lichtsignale abgeben“ deckt akustische Signale nicht ab).",
+    "Glossarvorschlag: Fahrgäste informieren (Funktion des Fahrgastinformationssystems; „Fahrerinformationen anzeigen“ richtet sich nur an den Triebfahrzeugführer).",
+    "Glossarvorschlag: Fahrgeschwindigkeit überwachen (Funktion des Zugsicherungs-Fahrzeuggeräts; „Fahrzeugzustand überwachen“ und „Fahrerzustand überwachen“ decken die Überwachung der zulässigen Geschwindigkeit nicht ab)."
+  ]
+}

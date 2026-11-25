@@ -1,0 +1,2818 @@
+{
+  "schema_version": "2.3",
+  "artikel_id": "A-0022",
+  "artikeltyp": "blatt",
+  "titel": "E-Scooter",
+  "betrachtungsumfang": "Generische Referenzarchitektur des E-Scooters (Elektro-Tretroller, E-Stehroller) als einspuriges, zweirädriges, elektrisch angetriebenes Fahrzeug ohne Sitz mit Trittbrett und Lenkstange, für den privaten Gebrauch und für stationsunabhängige Verleihsysteme, in Deutschland als Elektrokleinstfahrzeug nach § 1 Absatz 1 der Elektrokleinstfahrzeuge-Verordnung (bauartbedingte Höchstgeschwindigkeit mehr als 6 bis 20 km/h), mit Hinweisen auf andere europäische Staaten. Antriebsart: batterieelektrisch (Energiespeicher Traktionsbatterie, Energiewandler Traktionsmaschine als Radnabenmotor); das Abstoßen mit dem Fuß wird als Leistungsfluss außerhalb der Systemgrenze behandelt. Ausdrücklich nicht betrachtet werden E-Scooter mit Sitz und Motorroller, verbrennungsmotorisch angetriebene Stehroller, Brennstoffzellen-Batterie-Hybride, selbstbalancierende Elektrokleinstfahrzeuge, drei- und vierrädrige Elektrokleinstfahrzeuge, Kinderroller ohne Straßenzulassung sowie App, Betreiberserver und Ladeinfrastruktur des Verleihs außerhalb des Fahrzeugs.",
+  "status": "in_arbeit",
+  "quellenzugriff": "ja",
+  "kindartikel_ids": [],
+  "quellen": [
+    {
+      "quellen_id": "Q1",
+      "titel": "E-Scooter",
+      "urheber": "Wikipedia, Die freie Enzyklopädie (deutschsprachig)",
+      "stand": "Fassung vom Abrufdatum (Quelltext über action=raw gelesen)",
+      "url": "https://de.wikipedia.org/wiki/E-Scooter",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q2",
+      "titel": "E-scooter",
+      "urheber": "Wikipedia, The Free Encyclopedia (englischsprachig)",
+      "stand": "Fassung vom Abrufdatum (Quelltext über action=raw gelesen)",
+      "url": "https://en.wikipedia.org/wiki/E-scooter",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q3",
+      "titel": "Elektrokleinstfahrzeuge-Verordnung",
+      "urheber": "Wikipedia, Die freie Enzyklopädie (deutschsprachig)",
+      "stand": "Fassung vom Abrufdatum (Quelltext über action=raw gelesen)",
+      "url": "https://de.wikipedia.org/wiki/Elektrokleinstfahrzeuge-Verordnung",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q4",
+      "titel": "E-Tretroller-Verleihsystem",
+      "urheber": "Wikipedia, Die freie Enzyklopädie (deutschsprachig)",
+      "stand": "Fassung vom Abrufdatum (Quelltext über action=raw gelesen)",
+      "url": "https://de.wikipedia.org/wiki/E-Tretroller-Verleihsystem",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q5",
+      "titel": "Elektrokleinstfahrzeuge-Verordnung (eKFV), § 1 Anwendungsbereich",
+      "urheber": "Bundesministerium für Verkehr (Verordnungsgeber); Text über buzer.de",
+      "stand": "Elektrokleinstfahrzeuge-Verordnung vom 6. Juni 2019 (BGBl. I S. 756), zuletzt geändert durch Artikel 2 der Verordnung vom 30. Januar 2026 (BGBl. 2026 I Nr. 32); Textfassung mit Wirkung vom 1. April 2026",
+      "url": "https://www.buzer.de/1_eKFV.htm",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q6",
+      "titel": "Elektrokleinstfahrzeuge-Verordnung (eKFV), § 4 Anforderungen an die Verzögerungseinrichtung",
+      "urheber": "Bundesministerium für Verkehr (Verordnungsgeber); Text über buzer.de",
+      "stand": "Elektrokleinstfahrzeuge-Verordnung vom 6. Juni 2019 (BGBl. I S. 756), zuletzt geändert durch Artikel 2 der Verordnung vom 30. Januar 2026 (BGBl. 2026 I Nr. 32); Textfassung mit Wirkung vom 1. April 2026",
+      "url": "https://www.buzer.de/4_eKFV.htm",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q7",
+      "titel": "Elektrokleinstfahrzeuge-Verordnung (eKFV), § 5 Anforderungen an die lichttechnischen Einrichtungen",
+      "urheber": "Bundesministerium für Verkehr (Verordnungsgeber); Text über buzer.de",
+      "stand": "Elektrokleinstfahrzeuge-Verordnung vom 6. Juni 2019 (BGBl. I S. 756), zuletzt geändert durch Artikel 2 der Verordnung vom 30. Januar 2026 (BGBl. 2026 I Nr. 32); Textfassung mit Wirkung vom 1. April 2026",
+      "url": "https://www.buzer.de/5_eKFV.htm",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q8",
+      "titel": "Elektrokleinstfahrzeuge-Verordnung (eKFV), § 6 Anforderungen an die Einrichtung für Schallzeichen",
+      "urheber": "Bundesministerium für Verkehr (Verordnungsgeber); Text über buzer.de",
+      "stand": "Elektrokleinstfahrzeuge-Verordnung vom 6. Juni 2019 (BGBl. I S. 756), zuletzt geändert durch Artikel 2 der Verordnung vom 30. Januar 2026 (BGBl. 2026 I Nr. 32); Textfassung mit Wirkung vom 1. April 2026",
+      "url": "https://www.buzer.de/6_eKFV.htm",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q9",
+      "titel": "Elektrokleinstfahrzeuge-Verordnung (eKFV), § 7 Sonstige Sicherheitsanforderungen",
+      "urheber": "Bundesministerium für Verkehr (Verordnungsgeber); Text über buzer.de",
+      "stand": "Elektrokleinstfahrzeuge-Verordnung vom 6. Juni 2019 (BGBl. I S. 756), zuletzt geändert durch Artikel 2 der Verordnung vom 30. Januar 2026 (BGBl. 2026 I Nr. 32); Textfassung mit Wirkung vom 1. April 2026",
+      "url": "https://www.buzer.de/7_eKFV.htm",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q10",
+      "titel": "Elektrokleinstfahrzeuge-Verordnung (eKFV), § 8 Personenbeförderung und Anhängerbetrieb",
+      "urheber": "Bundesministerium für Verkehr (Verordnungsgeber); Text über buzer.de",
+      "stand": "Elektrokleinstfahrzeuge-Verordnung vom 6. Juni 2019 (BGBl. I S. 756), zuletzt geändert durch Artikel 2 der Verordnung vom 30. Januar 2026 (BGBl. 2026 I Nr. 32); Textfassung mit Wirkung vom 1. April 2026",
+      "url": "https://www.buzer.de/8_eKFV.htm",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q11",
+      "titel": "Modeling, Simulation, and Performance Evaluation of a Commercial Electric Scooter. World Electric Vehicle Journal 16 (2025), Nr. 9, Artikel 529",
+      "urheber": "Sajad Solgi; Andreas Stadler; Kazem Pourhossein; Amra Jahic; Maik Plenz; Detlef Schulz (Helmut-Schmidt-Universität Hamburg); MDPI, Basel (Open Access, CC BY 4.0)",
+      "stand": "2025-09-18, doi:10.3390/wevj16090529",
+      "url": "https://mdpi-res.com/d_attachment/wevj/wevj-16-00529/article_deploy/wevj-16-00529.pdf",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "fachliteratur"
+    },
+    {
+      "quellen_id": "Q12",
+      "titel": "Elektrokleinstfahrzeuge-Verordnung (eKFV), § 2 Anforderungen an das Inbetriebsetzen",
+      "urheber": "Bundesministerium für Verkehr (Verordnungsgeber); Text über buzer.de",
+      "stand": "Elektrokleinstfahrzeuge-Verordnung vom 6. Juni 2019 (BGBl. I S. 756), zuletzt geändert durch Artikel 2 der Verordnung vom 30. Januar 2026 (BGBl. 2026 I Nr. 32); Textfassung mit Wirkung vom 1. April 2026",
+      "url": "https://www.buzer.de/2_eKFV.htm",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "norm"
+    }
+  ],
+  "abschnitte": [
+    {
+      "ueberschrift": "Einleitung",
+      "abschnittstyp": "gesamtsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P1",
+          "text": "Ein E-Scooter, auch Elektro-Tretroller oder E-Stehroller, ist ein kleines einspuriges Kraftfahrzeug, das einem Tretroller ähnelt, aber von einem Elektromotor angetrieben wird; je nach Modell ist zusätzlich Abstoßen mit dem Fuß möglich. Die fahrende Person steht auf einem Trittbrett und hält sich an einer Lenkstange fest, mit der sie auch lenkt. In Deutschland ist er ein Elektrokleinstfahrzeug: ein Kraftfahrzeug mit elektrischem Antrieb, mehr als 6 und höchstens 20 km/h bauartbedingter Höchstgeschwindigkeit, ohne Sitz, mit mindestens 700 mm langer Lenk- oder Haltestange, höchstens 500 W Nenndauerleistung, höchstens 700 mm Breite, 1 400 mm Höhe, 2 000 mm Länge und 55 kg Masse ohne Fahrer. Frankreich, Österreich und Spanien erlauben 25 km/h.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Einleitung; Abschnitt „Aufbau und Eigenschaften“, Absatz 1; Abschnitt „Rechtslage in verschiedenen europäischen Ländern“, Absatz 1"
+            },
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Einleitung, Absatz 1; Abschnitt „Parts and other features“, Absatz 2 (handlebar for support and steering)"
+            },
+            {
+              "quellen_id": "Q5",
+              "fundstelle": "Absatz 1 Nummern 1 bis 5"
+            }
+          ],
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P2",
+          "text": "Architektonisch ist der E-Scooter ein Gesamtsystem, dessen Systeme vor allem über mechanische, elektrische und informationstechnische Schnittstellen gekoppelt sind. Die fahrende Person liegt außerhalb der Systemgrenze und wirkt über Körpergewicht sowie Lenk-, Leistungs- und Bremseingaben; bei Verleihfahrzeugen gehört die Telematikeinheit dazu, App und Betreiberserver nicht. Die Dekomposition zerlegt das Fahrzeug in Hauptsysteme, Subsysteme und Komponenten.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P1: elektrischer Antrieb, stehende Person auf Trittbrett, Lenkstange zum Festhalten und Lenken",
+              "P17: Verleihfahrzeug wird über App entsperrt und per GPS-Tracker geortet",
+              "Funktionsprinzip: Antrieb aus Batterie über Leistungselektronik, Regelung über Sensorsignale"
+            ],
+            "schluss": "Die Schnittstellen sind überwiegend mechanisch, elektrisch und informationstechnisch; die Person und die Infrastruktur des Verleihs liegen außerhalb der Systemgrenze."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrzeugstruktur und Fahrwerk",
+      "abschnittstyp": "hauptsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P3",
+          "text": "Ein E-Scooter hat zwei Räder, zwischen denen sich das Trittbrett befindet; über dem Vorderrad erhebt sich die Lenkstange. Die Reifen mit 5 bis 12 Zoll Durchmesser sind Vollgummi-, Luft- oder Luftkammerreifen; Vollreifen sind pannensicher und wartungsarm, aber schwerer und federn schlechter. Die Federung reicht von keiner über Federgabeln bis zu gedämpften Gelenksystemen. Klappbare Bauweisen lassen sich in öffentlichen Verkehrsmitteln oder im Kofferraum mitnehmen. In Deutschland müssen einspurige Elektrokleinstfahrzeuge mit Ständer Anhang XVI der Delegierten Verordnung (EU) Nr. 44/2014 erfüllen und im Betriebs- wie im Transportzustand sicher sein.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Abschnitt „Aufbau und Eigenschaften“, Absatz 1"
+            },
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Abschnitte „Wheels and tires“ und „Suspension“"
+            },
+            {
+              "quellen_id": "Q11",
+              "fundstelle": "Abschnitt 1, Absatz 1 (foldable design, public transport, trunk of a car)"
+            },
+            {
+              "quellen_id": "Q9",
+              "fundstelle": "Nummern 6 und 11"
+            }
+          ],
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P4",
+          "text": "Die Tragstruktur bildet das Trittbrett als Längsträger: Vorn nimmt es über das Lenkkopflager Lenkstange und Vorderradgabel auf, hinten das Hinterrad, seitlich den Seitenständer. Bei klappbaren Fahrzeugen verbindet der Klappmechanismus Lenkstange und Trittbrett und muss spielfrei verriegeln. Lasten fließen von der Standfläche über Trittbrett und Federung in Räder und Reifen; das Fahrwerk wird wegen der kleinen Räder auf Unebenheiten ausgelegt. Liegt die Traktionsbatterie im Trittbrett, ist dieses zugleich Batteriegehäuse.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P3: zwei Räder mit Trittbrett dazwischen, Lenkstange über dem Vorderrad, Federungsbauarten, klappbare Bauweisen, Ständer",
+              "P7: Akkumulator unter dem Trittbrett",
+              "P9: kleine Räder stoppen an Bordsteinen und Schlaglöchern",
+              "Physikalische Notwendigkeit: Gewicht der Person und Radkräfte brauchen einen geschlossenen Lastpfad"
+            ],
+            "schluss": "Das Trittbrett ist Längsträger und Lastknoten; Klappmechanismus, Seitenständer und Fahrwerk aus Federung sowie Rädern und Reifen hängen daran."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ],
+      "element_id": "E2"
+    },
+    {
+      "ueberschrift": "Antriebssystem",
+      "abschnittstyp": "hauptsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P5",
+          "text": "Angetrieben wird ein E-Scooter von einem elektrischen Radnabenmotor im Vorder- oder Hinterrad oder in beiden; der Elektromotor macht ein Getriebe überflüssig und kann Bremsenergie zurückgewinnen. In einem untersuchten handelsüblichen E-Scooter ist es ein permanentmagneterregter bürstenloser Gleichstrommotor, dessen Rotorlage in den Stator eingebettete Hallsensoren erfassen. Ein dreiphasiger Wechselrichter mit sechs MOSFET-Schaltern legt die Gleichspannung blockweise an die Phasen; die Regler bilden die Schaltpulse aus Batteriestrom, Zwischenkreisspannung, Phasenströmen, Hallsignalen, Drehzahl und Sollgeschwindigkeit.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Einleitung, Absatz 1; Abschnitt „Parts and other features“, Absatz 4 (electric motor makes gears unnecessary, regenerative braking)"
+            },
+            {
+              "quellen_id": "Q11",
+              "fundstelle": "Abstract; Abschnitt 2, Absätze 1 und 2 sowie Erläuterung zu Abbildung 2"
+            }
+          ],
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P6",
+          "text": "Das Antriebssystem gliedert sich in den Radnabenantrieb aus Traktionsmaschine und Rotorlagesensor und die Antriebselektronik aus Wechselrichter und Motorsteuerung. Die Motorsteuerung erhält vom Fahrzeugmanagement einen Sollwert, der Wechselrichter speist die Traktionsmaschine aus dem Zwischenkreis, und ihr Rotor ist die Radnabe, sodass das Drehmoment ohne Getriebe auf das Rad wirkt. Ein Vorderradmotor führt Leitungen durch Lenkstange und Gabel und belastet das gelenkte Rad, ein Hinterradmotor hält die Lenkung leicht, zwei Motoren verdoppeln die Antriebselektronik.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P5: Radnabenmotor vorn, hinten oder in beiden Rädern, kein Getriebe, Hallsensoren, Wechselrichter, Regler mit Sollgeschwindigkeit",
+              "P7: Zwischenkreis zwischen Batterie und Wechselrichter",
+              "Funktionsprinzip Radnabenmotor: Rotor und Radnabe sind ein Bauteil, der Stator ist mit der Achse verbunden"
+            ],
+            "schluss": "Der Leistungspfad besteht aus Antriebselektronik und Radnabenantrieb ohne Getriebe; die Motorlage bestimmt Leitungsführung und Belastung von Lenkung und Fahrwerk."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        }
+      ],
+      "element_id": "E10"
+    },
+    {
+      "ueberschrift": "Energieversorgungssystem",
+      "abschnittstyp": "hauptsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P7",
+          "text": "Die Energie liefert meist ein Lithium-Ionen-Akkumulator unter dem Trittbrett, an oder in der Lenkstange oder über dem Vorderreifen; einige Modelle erlauben einen Zusatzakku oder den Akkutausch. In einem untersuchten Fahrzeug regelt ein Hochsetz-Tiefsetz-Gleichspannungswandler Batteriespannung und -strom beim Laden und Entladen, ein Zwischenkreiskondensator glättet die Spannung. Geladen wird mit konstantem Strom, dann konstanter Spannung, in Grenzen, die das Batteriemanagementsystem dem externen Ladegerät vorgibt. In Deutschland müssen die Batterien DIN EN 50604-1:2022-06 entsprechen. Verleihroller werden abends zum Laden eingesammelt.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Abschnitt „Aufbau und Eigenschaften“, Absatz 2"
+            },
+            {
+              "quellen_id": "Q11",
+              "fundstelle": "Abschnitt 1, Absatz zur Leistungswandlung (buck-boost converter, DC-link capacitor); Abschnitt 2, Absatz 1; Abschnitt 4.2 (CC-CV-Ladung, BMS, externes Ladegerät)"
+            },
+            {
+              "quellen_id": "Q9",
+              "fundstelle": "Nummer 8"
+            },
+            {
+              "quellen_id": "Q4",
+              "fundstelle": "Abschnitt „Kritik“, Unterabschnitt „Umwelt- und Nachhaltigkeitsaspekte“, Absatz 1"
+            }
+          ],
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P8",
+          "text": "Das Energieversorgungssystem gliedert sich in das Batteriesystem aus Traktionsbatterie und Batteriemanagementsystem und das Subsystem Energiewandlung und Laden aus Gleichspannungswandler und Ladeeinrichtung. Ohne Verbrennungsmotor entfällt eine Starterbatterie; Licht, Anzeige und Telematik hängen ebenfalls an der Traktionsbatterie. Das Batteriemanagementsystem überwacht die Zellen, begrenzt Lade-, Entlade- und Rekuperationsströme und meldet den Ladezustand. Zur Ladeeinrichtung gehören Ladegerät und Ladebuchse, bei Wechselakkus eine externe Ladestation mit Akkuschloss am Fahrzeug; an der Lenkstange erhöht die Batterie die Lenkträgheit.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P7: Akkumulator, Gleichspannungswandler, Batteriemanagementsystem setzt Ladegrenzen, externes Ladegerät, Akkutausch, Einbauorte",
+              "P5 und P11: Rekuperation führt dem Akku Energie zu",
+              "P13: App zeigt die Restladung, also wird der Ladezustand gemeldet",
+              "P1: rein elektrischer Antrieb ohne Verbrennungsmotor"
+            ],
+            "schluss": "Ein einziger Energiespeicher versorgt alle Verbraucher; seine Anordnung und Wechselbarkeit ändern Struktur, Lenkung und Diebstahlsicherung."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        }
+      ],
+      "element_id": "E17"
+    },
+    {
+      "ueberschrift": "Lenksystem",
+      "abschnittstyp": "hauptsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P9",
+          "text": "Die Lenkstange über dem Vorderrad kann auch als Knüppel ausgeführt sein; der Lenker dient zum Abstützen und Lenken. In Deutschland muss die Lenk- oder Haltestange eines Elektrokleinstfahrzeugs ohne Sitz mindestens 700 mm lang sein. Als mögliche Unfallgründe gelten der hohe Schwerpunkt der stehenden Person, empfindliche Lenkung und kleine Räder, die an Bordsteinen oder Schlaglöchern plötzlich stoppen.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Abschnitt „Aufbau und Eigenschaften“, Absatz 1"
+            },
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Abschnitt „Parts and other features“, Absatz 2; Abschnitt „Safety“, letzter Absatz"
+            },
+            {
+              "quellen_id": "Q5",
+              "fundstelle": "Absatz 1 Nummer 2"
+            }
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P10",
+          "text": "Das Lenksystem besteht aus Lenker, Lenkstange und Vorderradgabel. Die Lenkstange überträgt das Lenkmoment ohne Lenkgetriebe und Lenkunterstützung über das Lenkkopflager auf die Gabel und leitet die Haltekräfte der Person in das Trittbrett. Am Lenker sitzen Bedienelemente, Bremshebel, Anzeige, Glocke und oft Scheinwerfer und Fahrtrichtungsanzeiger, sodass die Lenkstange auch Leitungstrasse ist.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P9: Lenkstange über dem Vorderrad, Lenker zum Abstützen und Lenken",
+              "P13 und P21: Bedienelement für die Motorleistung, Fahrtrichtungsanzeiger an Lenkerenden, Glocke",
+              "Funktionsprinzip: geringe Lenkkräfte bei niedriger Geschwindigkeit erlauben direkte Lenkung"
+            ],
+            "schluss": "Die Lenkung ist eine direkte mechanische Kette vom Lenker zum Vorderrad und zugleich Träger und Leitungsweg der Bedienung."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ],
+      "element_id": "E24"
+    },
+    {
+      "ueberschrift": "Bremssystem",
+      "abschnittstyp": "hauptsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P11",
+          "text": "In Deutschland braucht ein Elektrokleinstfahrzeug zwei voneinander unabhängige Bremsen, die bis zum Stillstand und bis zur Maximalgeschwindigkeit wirken, mindestens 3,5 m/s² erreichen und einzeln bei Ausfall der anderen mindestens 44 Prozent davon, ohne dass das Fahrzeug die Spur verlässt; ein nicht selbstbalancierendes Fahrzeug muss bei Ausfall der Spannungsversorgung unabhängig von ihr bremsen oder mit mindestens 1,54 m/s² anhalten. Ausgeführt werden die Bremsen etwa als elektrische Bremse vorn und mechanische Schutzblechbremse hinten, ferner als Scheiben-, Trommel-, Magnet- und Hydraulikbremsen sowie als Rekuperationsbremsen, die dem Akku Energie zuführen.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q6",
+              "fundstelle": "Absatz 1"
+            },
+            {
+              "quellen_id": "Q9",
+              "fundstelle": "Nummer 10"
+            },
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Abschnitt „Aufbau und Eigenschaften“, Absatz 3"
+            },
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Abschnitt „Brakes“, Satz 1 und 2"
+            }
+          ],
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P12",
+          "text": "Das Bremssystem gliedert sich in die Reibungsbremse aus Bremshebel und Radbremse und das Subsystem Elektrische Bremse aus Nutzbremse und Bremsregelung. Meldet der Bremshebel den Bremswunsch, gibt die Bremsregelung der Motorsteuerung ein Bremsmoment vor, und die Traktionsmaschine speist als Generator in die Traktionsbatterie. Die Nutzbremse wirkt nur am angetriebenen Rad und entfällt bei Spannungsausfall; daher arbeitet die Reibungsbremse bordnetzunabhängig, und ihre Lage folgt der des Radnabenmotors.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P11: zwei unabhängige Bremsen, Bremsen bei Spannungsausfall, elektrische und mechanische Bremse, Rekuperation in den Akku",
+              "P5 und P6: Radnabenmotor an einem oder beiden Rädern"
+            ],
+            "schluss": "Elektrische Bremse und Reibungsbremse bilden die zwei unabhängigen Bremsen; ihre Zuordnung zu den Rädern folgt der Motorlage."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        }
+      ],
+      "element_id": "E28"
+    },
+    {
+      "ueberschrift": "Fahrgastraum",
+      "abschnittstyp": "hauptsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P13",
+          "text": "In Deutschland müssen Standflächen rutschhemmend und Bedienteile gegen unbeabsichtigtes Verstellen gesichert sein; das Bedienelement für die Motorleistung, etwa Drehgriff oder Knopf, muss beim Loslassen innerhalb einer Sekunde selbständig in Nullstellung zurückkehren. Personenbeförderung und Anhängerbetrieb sind nicht gestattet, und die Wirksamkeit der Fahrtrichtungsanzeiger ist optisch und akustisch anzuzeigen. Bei Verleihrollern zeigt die App die restliche Akkuladung.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q9",
+              "fundstelle": "Nummern 5, 7 Satz 1 und 9"
+            },
+            {
+              "quellen_id": "Q10",
+              "fundstelle": "einziger Satz"
+            },
+            {
+              "quellen_id": "Q7",
+              "fundstelle": "Absatz 4 Satz 2 Nummer 6"
+            },
+            {
+              "quellen_id": "Q4",
+              "fundstelle": "Abschnitt „Funktionsweise“, Absatz 1"
+            }
+          ],
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P14",
+          "text": "Der Fahrgastraum ist ein offener Stehplatz ohne Sitz und Rückhaltesystem. Er besteht aus der Standfläche auf dem Trittbrett, den Bedienelementen am Lenker für Motorleistung, Ein und Aus, Fahrmodus, Licht und Blinker sowie den Anzeigeelementen für Geschwindigkeit, Ladezustand, Fehler und Blinkerkontrolle. Beim Verleih übernimmt das Smartphone einen Teil der Anzeige.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P1: Fahrzeug ohne Sitz, Person steht",
+              "P13: rutschhemmende Standfläche, selbstrückstellendes Bedienelement für die Motorleistung, Blinkerkontrolle, Restladung in der App",
+              "P21: Fahrtrichtungsanzeiger und Beleuchtung sind zu bedienen"
+            ],
+            "schluss": "Der Bedienraum reduziert sich auf Standfläche, Bedienelemente und Anzeigeelemente."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ],
+      "element_id": "E35"
+    },
+    {
+      "ueberschrift": "Elektrik und Elektronik",
+      "abschnittstyp": "hauptsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P15",
+          "text": "In Deutschland müssen Elektrokleinstfahrzeuge die UN-Regelung Nr. 10 zur elektromagnetischen Verträglichkeit erfüllen, gegen direktes Berühren spannungsführender Bauteile geschützt sein und mit ihren elektrischen Komponenten die Kapitel 6.1, 6.3, 6.4, 10 und 11 der DIN EN 17128:2021-01 einhalten.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q9",
+              "fundstelle": "Nummern 2, 4 und 8"
+            }
+          ],
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P16",
+          "text": "Elektrik und Elektronik bestehen aus dem Leitungssatz mit Leistungs-, Phasen-, Sensor- und Lichtleitungen, den Sicherungen und einem Bussystem zwischen Motorsteuerung, Batteriemanagementsystem, Anzeigeelementen und Telematikeinheit; ein getrenntes Bordnetz mit eigener Batterie fehlt. Der Leitungssatz läuft vom Trittbrett über Lenkkopf und Klappgelenk in die Lenkstange und durch die Achse in den Radnabenmotor. Weil Strom und Zwischenkreisspannung mit der Last schwanken, werden Absicherung und Störfestigkeit mit dem Antrieb ausgelegt.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P15: elektromagnetische Verträglichkeit und Berührungsschutz vorgeschrieben",
+              "Q11, Abschnitt 5: Drehzahl- und Laständerungen wirken auf Zwischenkreisspannung und Batteriestrom zurück",
+              "P5, P8 und P10: Phasen- und Sensorleitungen zum Radnabenmotor, Versorgung aller Verbraucher aus der Traktionsbatterie, Leitungsweg Lenkstange",
+              "Annahme zur Bauweise: Datenaustausch über ein gemeinsames Bussystem"
+            ],
+            "schluss": "Leitungssatz, Sicherungen und Bussystem bilden das Hauptsystem; es gibt kein getrenntes Bordnetz."
+          },
+          "sicherheit": "gering",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": []
+        }
+      ],
+      "element_id": "E39"
+    },
+    {
+      "ueberschrift": "Fahrzeugsteuerung und Information",
+      "abschnittstyp": "hauptsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P17",
+          "text": "Bei stationsunabhängigen Verleihsystemen wird der Roller per App über einen QR-Code entsperrt und nach dem Abstellen in einer Parkzone wieder verriegelt. Ein fest installierter GPS-Tracker hilft, die Fahrzeuge zum Laden und Warten zu finden; per Standortbestimmung lassen sich Antrieb und Bremsen bis zum Stillstand beeinflussen, in Langsamfahrzonen sinkt das Tempo automatisch. In Deutschland braucht ein Elektrokleinstfahrzeug eine Allgemeine Betriebserlaubnis oder Einzelbetriebserlaubnis, eine Versicherungsplakette, Fahrzeug-Identifizierungsnummer und Fabrikschild; die Allgemeine Betriebserlaubnis beantragen häufig die Hersteller beim Kraftfahrt-Bundesamt.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q4",
+              "fundstelle": "Abschnitt „Funktionsweise“, Absätze 1, 3 und 4"
+            },
+            {
+              "quellen_id": "Q12",
+              "fundstelle": "Absatz 1 Satz 1 Nummern 1 bis 3"
+            },
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Abschnitt „Anforderung an EKF und Ausstattungsvorschriften“, Absatz 1"
+            }
+          ],
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P18",
+          "text": "Fahrzeugsteuerung und Information umfasst Fahrzeugmanagement, Telematikeinheit und Diagnose. Das Fahrzeugmanagement, auch in die Motorsteuerung integrierbar, setzt Eingaben in Sollwerte um, begrenzt die bauartbedingte Höchstgeschwindigkeit, verwaltet Fahrmodi und koordiniert Nutzbremse und Bremslicht. Die Telematikeinheit mit Satellitenortung und Mobilfunk ist beim Verleih notwendig, privat optional; die Diagnose speichert Fehler für Anzeige, App oder Service. Das Nutzungsmodell als Privat- oder Verleihfahrzeug ändert damit Telematik, Diebstahlsicherung, Anzeige und Batteriekonzept.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P17: Entsperren per App, GPS-Tracker, Beeinflussung von Antrieb und Bremsen nach Standort",
+              "P1: bauartbedingte Höchstgeschwindigkeit begrenzt",
+              "P5 und P12: Regler mit Sollgeschwindigkeit, Bremsmomentvorgabe",
+              "P7: Akkutausch und Einsammeln der Verleihroller"
+            ],
+            "schluss": "Fahrzeugmanagement, Telematikeinheit und Diagnose bilden die logische Ebene; das Nutzungsmodell ist eine strukturändernde Entscheidung."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        }
+      ],
+      "element_id": "E43"
+    },
+    {
+      "ueberschrift": "Fahrerassistenz und Sicherheit",
+      "abschnittstyp": "hauptsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P19",
+          "text": "In Deutschland müssen Elektrokleinstfahrzeuge den Maßnahmen zum Schutz vor Manipulation nach DIN EN 15194:2024-03 entsprechen. Verleihroller sind nur digital gegen unbefugte Inbetriebnahme gesichert und stehen unangeschlossen im öffentlichen Raum; trotz elektronischer Verriegelung können sie umgeworfen oder weggetragen werden.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q9",
+              "fundstelle": "Nummer 3"
+            },
+            {
+              "quellen_id": "Q4",
+              "fundstelle": "Abschnitt „Kritik“, Unterabschnitt „Vandalismus“, Absatz 1"
+            }
+          ],
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P20",
+          "text": "Fahrerassistenz und Sicherheit sind schwach ausgeprägt, weil die Person das Umfeld selbst wahrnimmt. Dazu gehören die Diebstahlsicherung als elektronische Wegfahrsperre über Motorsteuerung oder Telematikeinheit, gegebenenfalls mit Akkuschloss, und der Manipulationsschutz für Parameter wie Höchstgeschwindigkeit und Raddurchmesser. Eine Umfeldsensorik, etwa eine Kamera zur Gehwegerkennung, ist eine optionale Variante, die über das Fahrzeugmanagement die Freigabe beeinflusst.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P19: Manipulationsschutz vorgeschrieben, digitale Sicherung gegen unbefugte Inbetriebnahme",
+              "P17 und P18: Verriegelung über App und Telematikeinheit, standortabhängiger Eingriff in Antrieb und Bremsen",
+              "P8: Akkuschloss bei Wechselakkus",
+              "Analogieschluss von automatisierten Funktionen anderer Leichtfahrzeuge für die Umfeldsensorik"
+            ],
+            "schluss": "Diebstahlsicherung und Manipulationsschutz bilden das Hauptsystem, Umfeldsensorik ist optional."
+          },
+          "sicherheit": "gering",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": []
+        }
+      ],
+      "element_id": "E47"
+    },
+    {
+      "ueberschrift": "Beleuchtung und Sicht",
+      "abschnittstyp": "hauptsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P21",
+          "text": "In Deutschland sind nur vorgeschriebene und zulässige lichttechnische Einrichtungen in amtlich genehmigter Bauart erlaubt. Schlussleuchte und Rückstrahler dürfen in einem Gerät sitzen, Schlussleuchten eine rote Bremslichtfunktion haben. Seitlich kennzeichnen gelbe Rückstrahler oder weiße retroreflektierende Ringe an Reifen oder Felgen. Die konsolidierte Fassung schreibt vorn und hinten wirkende Fahrtrichtungsanzeiger vor, die in den Lenkerenden sitzen und mitschwenken dürfen; nach der deutschsprachigen Wikipedia gilt dies für ab 2027 neu zugelassene E-Scooter. Pflicht ist eine helltönende Glocke, Sirenen und Radlaufglocken sind unzulässig.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q7",
+              "fundstelle": "Absatz 1 Sätze 1, 3 und 4; Absatz 3 Satz 1; Absatz 4 Satz 1 und Satz 2 Nummern 1, 5 und 7"
+            },
+            {
+              "quellen_id": "Q8",
+              "fundstelle": "Sätze 1 und 3"
+            },
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Abschnitt „Aufbau und Eigenschaften“, Absatz 4"
+            }
+          ],
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P22",
+          "text": "Beleuchtung und Sicht gliedert sich in die Beleuchtung mit Scheinwerfer und Leuchten und die Signaleinrichtungen mit Fahrtrichtungsanzeiger, Rückstrahler und Glocke. Der Scheinwerfer sitzt an der Lenkstange, die Leuchten am Heck. Leitungssatz und Gleichspannungswandler versorgen die aktiven Einrichtungen aus der Traktionsbatterie; Licht- und Blinkertaster sind Bedienelemente, das Bremslicht folgt dem Bremshebel. Rückspiegel gehören nicht zum Grundaufbau.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P21: Schlussleuchte, Rückstrahler, Bremslichtfunktion, Fahrtrichtungsanzeiger, Glocke; Rückspiegel nicht genannt",
+              "P8 und P16: Versorgung aller Verbraucher aus der Traktionsbatterie über den Leitungssatz",
+              "P12: Bremshebel meldet den Bremswunsch"
+            ],
+            "schluss": "Beleuchtung und Signaleinrichtungen bilden das Hauptsystem und hängen elektrisch an Energieversorgung und Bedienung."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ],
+      "element_id": "E51"
+    },
+    {
+      "ueberschrift": "Zusammenfassung",
+      "abschnittstyp": "gesamtsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P23",
+          "text": "Auf oberster Ebene besteht der E-Scooter damit aus Fahrzeugstruktur und Fahrwerk, Antriebssystem, Energieversorgungssystem, Lenksystem, Bremssystem, Fahrgastraum, Elektrik und Elektronik, Fahrzeugsteuerung und Information, Fahrerassistenz und Sicherheit sowie Beleuchtung und Sicht; Aufbau und Ladung, Thermomanagement und Nebensysteme entfallen. Prägend sind Motor- und Batterielage, Bremsenkombination, Klappbarkeit und Nutzungsmodell sowie die rechtlichen Grenzen für Leistung, Geschwindigkeit, Abmessungen und Masse.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P4",
+              "P6",
+              "P8",
+              "P12",
+              "P18",
+              "P1"
+            ],
+            "schluss": "Zehn Hauptsysteme bilden die oberste Ebene; fünf Entscheidungen prägen die Architektur."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Modellierungsbezug",
+      "abschnittstyp": "modellierung",
+      "absaetze": [
+        {
+          "absatz_id": "P24",
+          "text": "In SysML bildet der Block `E-Scooter` das Gesamtsystem mit den genannten Systemen als Bestandteilen, rekursiv zerlegt etwa als `Antriebssystem → Antriebselektronik → Wechselrichter`, `Energieversorgungssystem → Batteriesystem → Batteriemanagementsystem` oder `Bremssystem → Elektrische Bremse → Nutzbremse`. Ports und Konnektoren bilden mechanische Schnittstellen an Radnabe, Lenkkopflager und Klappgelenk, elektrische an Zwischenkreis und Ladebuchse und informationstechnische über Bussystem und Mobilfunk ab; die Person ist externer Akteur. Geeignet sind Blockdefinitionsdiagramme, interne Blockdiagramme, Aktivitätsdiagramme und Zustandsautomaten für Freigabe und Verriegelung.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P6",
+              "P8",
+              "P12",
+              "P4",
+              "P16",
+              "P18"
+            ],
+            "schluss": "Die Dekomposition und Schnittstellen des Artikels lassen sich unmittelbar in Blöcke, Ports und Verhaltensdiagramme überführen."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Flüsse",
+      "abschnittstyp": "fluesse",
+      "absaetze": [
+        {
+          "absatz_id": "P25",
+          "text": "Die Traktionsbatterie liefert Gleichstrom über Gleichspannungswandler und Wechselrichter an die Traktionsmaschine, diese Drehmoment über die Radnabe an Räder und Reifen; die Nutzbremse speist zurück, die Ladeeinrichtung lädt über die Ladebuchse, der Leitungssatz versorgt Scheinwerfer und Leuchten. Rotorlagesensor, Bedienelemente, Bremsregelung, Batteriemanagementsystem, Telematikeinheit, Manipulationsschutz und Umfeldsensorik informieren Motorsteuerung oder Fahrzeugmanagement, dieses liefert Sollwerte, Anzeigewerte und Verriegelungsbefehle. Standfläche, Trittbrett, Federung und Vorderradgabel leiten Lasten, Lenker und Lenkstange das Lenkmoment, der Bremshebel die Betätigungskraft.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P6",
+              "P8",
+              "P10",
+              "P12",
+              "P14",
+              "P16",
+              "P18",
+              "P20",
+              "P22"
+            ],
+            "schluss": "Jeder Fluss verbindet ein in den Hauptsystemabschnitten liefernd und ein empfangend beschriebenes Element."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Perspektiven",
+      "abschnittstyp": "perspektiven",
+      "absaetze": [
+        {
+          "absatz_id": "P26",
+          "text": "Die Funktionszuordnung verbindet physische Dekomposition und Flussperspektive: Fahrzeuglasten tragen Trittbrett, Seitenständer, Räder und Reifen, Federung und Vorderradgabel; Fahrzeug zusammenklappen der Klappmechanismus; Antriebsleistung erzeugen Traktionsmaschine und Wechselrichter; Drehmoment übertragen und Fahrzeug fortbewegen Traktionsmaschine sowie Räder und Reifen; Energie speichern die Traktionsbatterie; Traktionsbatterie laden Ladeeinrichtung und Batteriemanagementsystem; Elektrische Energie verteilen Gleichspannungswandler, Leitungssatz und Sicherungen; Fahrzeug lenken Lenker, Lenkstange und Vorderradgabel; Fahrzeug verzögern Bremshebel, Radbremse und Nutzbremse; Bremsenergie zurückgewinnen Nutzbremse und Bremsregelung; Fahrereingaben erfassen die Bedienelemente; Fahrerinformationen anzeigen die Anzeigeelemente; Daten übertragen Bussystem und Telematikeinheit; Fahrzeugzustand überwachen Batteriemanagementsystem, Diagnose und Fahrzeugmanagement; Fahrzeugposition bestimmen die Telematikeinheit; Höchstgeschwindigkeit begrenzen Fahrzeugmanagement und Motorsteuerung; Unbefugte Benutzung verhindern Diebstahlsicherung und Manipulationsschutz; Fahrzeugumfeld erfassen die Umfeldsensorik; Fahrzeugumgebung ausleuchten der Scheinwerfer; Lichtsignale abgeben Leuchten, Fahrtrichtungsanzeiger und Rückstrahler; Schallzeichen abgeben die Glocke.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P4",
+              "P6",
+              "P8",
+              "P10",
+              "P12",
+              "P14",
+              "P16",
+              "P18",
+              "P20",
+              "P22"
+            ],
+            "schluss": "Alle Funktionen des Modellblocks sind ausführenden Systemen und Komponenten zugeordnet."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    }
+  ],
+  "modell": {
+    "elemente": [
+      {
+        "id": "E1",
+        "name": "E-Scooter",
+        "typ": "gesamtsystem",
+        "eltern_id": null,
+        "absatz_ids": [
+          "P1",
+          "P2",
+          "P23",
+          "P24"
+        ]
+      },
+      {
+        "id": "E2",
+        "name": "Fahrzeugstruktur und Fahrwerk",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P3",
+          "P4",
+          "P23"
+        ],
+        "kategorie": "struktur_fahrwerk"
+      },
+      {
+        "id": "E3",
+        "name": "Tragstruktur",
+        "typ": "subsystem",
+        "eltern_id": "E2",
+        "absatz_ids": [
+          "P4"
+        ]
+      },
+      {
+        "id": "E4",
+        "name": "Trittbrett",
+        "typ": "komponente",
+        "eltern_id": "E3",
+        "absatz_ids": [
+          "P1",
+          "P3",
+          "P4",
+          "P25",
+          "P26"
+        ]
+      },
+      {
+        "id": "E5",
+        "name": "Klappmechanismus",
+        "typ": "komponente",
+        "eltern_id": "E3",
+        "absatz_ids": [
+          "P4",
+          "P26"
+        ]
+      },
+      {
+        "id": "E6",
+        "name": "Seitenständer",
+        "typ": "komponente",
+        "eltern_id": "E3",
+        "absatz_ids": [
+          "P4",
+          "P26"
+        ]
+      },
+      {
+        "id": "E7",
+        "name": "Fahrwerk",
+        "typ": "subsystem",
+        "eltern_id": "E2",
+        "absatz_ids": [
+          "P4"
+        ]
+      },
+      {
+        "id": "E8",
+        "name": "Räder und Reifen",
+        "typ": "komponente",
+        "eltern_id": "E7",
+        "absatz_ids": [
+          "P3",
+          "P4",
+          "P25",
+          "P26"
+        ]
+      },
+      {
+        "id": "E9",
+        "name": "Federung",
+        "typ": "komponente",
+        "eltern_id": "E7",
+        "absatz_ids": [
+          "P3",
+          "P4",
+          "P25",
+          "P26"
+        ]
+      },
+      {
+        "id": "E10",
+        "name": "Antriebssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P5",
+          "P6",
+          "P23",
+          "P24"
+        ],
+        "kategorie": "antrieb"
+      },
+      {
+        "id": "E11",
+        "name": "Radnabenantrieb",
+        "typ": "subsystem",
+        "eltern_id": "E10",
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "E12",
+        "name": "Traktionsmaschine",
+        "typ": "komponente",
+        "eltern_id": "E11",
+        "absatz_ids": [
+          "P6",
+          "P12",
+          "P25",
+          "P26"
+        ]
+      },
+      {
+        "id": "E13",
+        "name": "Rotorlagesensor",
+        "typ": "komponente",
+        "eltern_id": "E11",
+        "absatz_ids": [
+          "P5",
+          "P6",
+          "P25"
+        ]
+      },
+      {
+        "id": "E14",
+        "name": "Antriebselektronik",
+        "typ": "subsystem",
+        "eltern_id": "E10",
+        "absatz_ids": [
+          "P6",
+          "P24"
+        ]
+      },
+      {
+        "id": "E15",
+        "name": "Wechselrichter",
+        "typ": "komponente",
+        "eltern_id": "E14",
+        "absatz_ids": [
+          "P5",
+          "P6",
+          "P24",
+          "P25",
+          "P26"
+        ]
+      },
+      {
+        "id": "E16",
+        "name": "Motorsteuerung",
+        "typ": "komponente",
+        "eltern_id": "E14",
+        "absatz_ids": [
+          "P6",
+          "P12",
+          "P16",
+          "P18",
+          "P20",
+          "P25",
+          "P26"
+        ]
+      },
+      {
+        "id": "E17",
+        "name": "Energieversorgungssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P7",
+          "P8",
+          "P23",
+          "P24"
+        ],
+        "kategorie": "energieversorgung"
+      },
+      {
+        "id": "E18",
+        "name": "Batteriesystem",
+        "typ": "subsystem",
+        "eltern_id": "E17",
+        "absatz_ids": [
+          "P8",
+          "P24"
+        ]
+      },
+      {
+        "id": "E19",
+        "name": "Traktionsbatterie",
+        "typ": "komponente",
+        "eltern_id": "E18",
+        "absatz_ids": [
+          "P4",
+          "P8",
+          "P12",
+          "P22",
+          "P25",
+          "P26"
+        ]
+      },
+      {
+        "id": "E20",
+        "name": "Batteriemanagementsystem",
+        "typ": "komponente",
+        "eltern_id": "E18",
+        "absatz_ids": [
+          "P7",
+          "P8",
+          "P16",
+          "P24",
+          "P25",
+          "P26"
+        ]
+      },
+      {
+        "id": "E21",
+        "name": "Energiewandlung und Laden",
+        "typ": "subsystem",
+        "eltern_id": "E17",
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "E22",
+        "name": "Gleichspannungswandler",
+        "typ": "komponente",
+        "eltern_id": "E21",
+        "absatz_ids": [
+          "P7",
+          "P8",
+          "P22",
+          "P25",
+          "P26"
+        ]
+      },
+      {
+        "id": "E23",
+        "name": "Ladeeinrichtung",
+        "typ": "komponente",
+        "eltern_id": "E21",
+        "absatz_ids": [
+          "P8",
+          "P25",
+          "P26"
+        ]
+      },
+      {
+        "id": "E24",
+        "name": "Lenksystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P9",
+          "P10",
+          "P23"
+        ],
+        "kategorie": "lenkung"
+      },
+      {
+        "id": "E25",
+        "name": "Lenker",
+        "typ": "komponente",
+        "eltern_id": "E24",
+        "absatz_ids": [
+          "P9",
+          "P10",
+          "P25",
+          "P26"
+        ]
+      },
+      {
+        "id": "E26",
+        "name": "Lenkstange",
+        "typ": "komponente",
+        "eltern_id": "E24",
+        "absatz_ids": [
+          "P1",
+          "P3",
+          "P4",
+          "P9",
+          "P10",
+          "P16",
+          "P22",
+          "P25",
+          "P26"
+        ]
+      },
+      {
+        "id": "E27",
+        "name": "Vorderradgabel",
+        "typ": "komponente",
+        "eltern_id": "E24",
+        "absatz_ids": [
+          "P4",
+          "P10",
+          "P25",
+          "P26"
+        ]
+      },
+      {
+        "id": "E28",
+        "name": "Bremssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P11",
+          "P12",
+          "P23",
+          "P24"
+        ],
+        "kategorie": "bremse"
+      },
+      {
+        "id": "E29",
+        "name": "Reibungsbremse",
+        "typ": "subsystem",
+        "eltern_id": "E28",
+        "absatz_ids": [
+          "P12"
+        ]
+      },
+      {
+        "id": "E30",
+        "name": "Bremshebel",
+        "typ": "komponente",
+        "eltern_id": "E29",
+        "absatz_ids": [
+          "P10",
+          "P12",
+          "P22",
+          "P25",
+          "P26"
+        ]
+      },
+      {
+        "id": "E31",
+        "name": "Radbremse",
+        "typ": "komponente",
+        "eltern_id": "E29",
+        "absatz_ids": [
+          "P12",
+          "P26"
+        ]
+      },
+      {
+        "id": "E32",
+        "name": "Elektrische Bremse",
+        "typ": "subsystem",
+        "eltern_id": "E28",
+        "absatz_ids": [
+          "P12",
+          "P24"
+        ]
+      },
+      {
+        "id": "E33",
+        "name": "Nutzbremse",
+        "typ": "komponente",
+        "eltern_id": "E32",
+        "absatz_ids": [
+          "P12",
+          "P18",
+          "P24",
+          "P25",
+          "P26"
+        ]
+      },
+      {
+        "id": "E34",
+        "name": "Bremsregelung",
+        "typ": "komponente",
+        "eltern_id": "E32",
+        "absatz_ids": [
+          "P12",
+          "P25",
+          "P26"
+        ]
+      },
+      {
+        "id": "E35",
+        "name": "Fahrgastraum",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P13",
+          "P14",
+          "P23"
+        ],
+        "kategorie": "bedienraum"
+      },
+      {
+        "id": "E36",
+        "name": "Standfläche",
+        "typ": "komponente",
+        "eltern_id": "E35",
+        "absatz_ids": [
+          "P4",
+          "P13",
+          "P14",
+          "P25"
+        ]
+      },
+      {
+        "id": "E37",
+        "name": "Bedienelemente",
+        "typ": "komponente",
+        "eltern_id": "E35",
+        "absatz_ids": [
+          "P10",
+          "P14",
+          "P22",
+          "P25",
+          "P26"
+        ]
+      },
+      {
+        "id": "E38",
+        "name": "Anzeigeelemente",
+        "typ": "komponente",
+        "eltern_id": "E35",
+        "absatz_ids": [
+          "P14",
+          "P16",
+          "P26"
+        ]
+      },
+      {
+        "id": "E39",
+        "name": "Elektrik und Elektronik",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P15",
+          "P16",
+          "P23"
+        ],
+        "kategorie": "elektrik_elektronik"
+      },
+      {
+        "id": "E40",
+        "name": "Leitungssatz",
+        "typ": "komponente",
+        "eltern_id": "E39",
+        "absatz_ids": [
+          "P16",
+          "P22",
+          "P25",
+          "P26"
+        ]
+      },
+      {
+        "id": "E41",
+        "name": "Bussystem",
+        "typ": "komponente",
+        "eltern_id": "E39",
+        "absatz_ids": [
+          "P16",
+          "P24",
+          "P26"
+        ]
+      },
+      {
+        "id": "E42",
+        "name": "Sicherungen",
+        "typ": "komponente",
+        "eltern_id": "E39",
+        "absatz_ids": [
+          "P16",
+          "P26"
+        ]
+      },
+      {
+        "id": "E43",
+        "name": "Fahrzeugsteuerung und Information",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P17",
+          "P18",
+          "P23"
+        ],
+        "kategorie": "steuerung_information"
+      },
+      {
+        "id": "E44",
+        "name": "Fahrzeugmanagement",
+        "typ": "komponente",
+        "eltern_id": "E43",
+        "absatz_ids": [
+          "P6",
+          "P18",
+          "P20",
+          "P25",
+          "P26"
+        ]
+      },
+      {
+        "id": "E45",
+        "name": "Telematikeinheit",
+        "typ": "komponente",
+        "eltern_id": "E43",
+        "absatz_ids": [
+          "P2",
+          "P16",
+          "P18",
+          "P20",
+          "P25"
+        ]
+      },
+      {
+        "id": "E46",
+        "name": "Diagnose",
+        "typ": "komponente",
+        "eltern_id": "E43",
+        "absatz_ids": [
+          "P18",
+          "P26"
+        ]
+      },
+      {
+        "id": "E47",
+        "name": "Fahrerassistenz und Sicherheit",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P19",
+          "P20",
+          "P23"
+        ],
+        "kategorie": "assistenz_sicherheit"
+      },
+      {
+        "id": "E48",
+        "name": "Diebstahlsicherung",
+        "typ": "komponente",
+        "eltern_id": "E47",
+        "absatz_ids": [
+          "P20",
+          "P26"
+        ]
+      },
+      {
+        "id": "E49",
+        "name": "Manipulationsschutz",
+        "typ": "komponente",
+        "eltern_id": "E47",
+        "absatz_ids": [
+          "P20",
+          "P25",
+          "P26"
+        ]
+      },
+      {
+        "id": "E50",
+        "name": "Umfeldsensorik",
+        "typ": "komponente",
+        "eltern_id": "E47",
+        "absatz_ids": [
+          "P20",
+          "P25",
+          "P26"
+        ]
+      },
+      {
+        "id": "E51",
+        "name": "Beleuchtung und Sicht",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P21",
+          "P22",
+          "P23"
+        ],
+        "kategorie": "beleuchtung_sicht"
+      },
+      {
+        "id": "E52",
+        "name": "Beleuchtung",
+        "typ": "subsystem",
+        "eltern_id": "E51",
+        "absatz_ids": [
+          "P22"
+        ]
+      },
+      {
+        "id": "E53",
+        "name": "Scheinwerfer",
+        "typ": "komponente",
+        "eltern_id": "E52",
+        "absatz_ids": [
+          "P10",
+          "P22",
+          "P25",
+          "P26"
+        ]
+      },
+      {
+        "id": "E54",
+        "name": "Leuchten",
+        "typ": "komponente",
+        "eltern_id": "E52",
+        "absatz_ids": [
+          "P22",
+          "P25",
+          "P26"
+        ]
+      },
+      {
+        "id": "E55",
+        "name": "Signaleinrichtungen",
+        "typ": "subsystem",
+        "eltern_id": "E51",
+        "absatz_ids": [
+          "P22"
+        ]
+      },
+      {
+        "id": "E56",
+        "name": "Fahrtrichtungsanzeiger",
+        "typ": "komponente",
+        "eltern_id": "E55",
+        "absatz_ids": [
+          "P10",
+          "P13",
+          "P21",
+          "P22",
+          "P26"
+        ]
+      },
+      {
+        "id": "E57",
+        "name": "Rückstrahler",
+        "typ": "komponente",
+        "eltern_id": "E55",
+        "absatz_ids": [
+          "P21",
+          "P22",
+          "P26"
+        ]
+      },
+      {
+        "id": "E58",
+        "name": "Glocke",
+        "typ": "komponente",
+        "eltern_id": "E55",
+        "absatz_ids": [
+          "P10",
+          "P21",
+          "P22",
+          "P26"
+        ]
+      }
+    ],
+    "funktionen": [
+      {
+        "id": "F1",
+        "name": "Fahrzeuglasten tragen",
+        "ausgefuehrt_von": [
+          "E4",
+          "E6",
+          "E8",
+          "E9",
+          "E27"
+        ],
+        "absatz_ids": [
+          "P4",
+          "P26"
+        ]
+      },
+      {
+        "id": "F2",
+        "name": "Fahrzeug zusammenklappen",
+        "ausgefuehrt_von": [
+          "E5"
+        ],
+        "absatz_ids": [
+          "P3",
+          "P4",
+          "P26"
+        ]
+      },
+      {
+        "id": "F3",
+        "name": "Antriebsleistung erzeugen",
+        "ausgefuehrt_von": [
+          "E12",
+          "E15"
+        ],
+        "absatz_ids": [
+          "P5",
+          "P6",
+          "P26"
+        ]
+      },
+      {
+        "id": "F4",
+        "name": "Drehmoment übertragen",
+        "ausgefuehrt_von": [
+          "E12",
+          "E8"
+        ],
+        "absatz_ids": [
+          "P6",
+          "P26"
+        ]
+      },
+      {
+        "id": "F5",
+        "name": "Fahrzeug fortbewegen",
+        "ausgefuehrt_von": [
+          "E10",
+          "E8"
+        ],
+        "absatz_ids": [
+          "P5",
+          "P26"
+        ]
+      },
+      {
+        "id": "F6",
+        "name": "Energie speichern",
+        "ausgefuehrt_von": [
+          "E19"
+        ],
+        "absatz_ids": [
+          "P7",
+          "P8",
+          "P26"
+        ]
+      },
+      {
+        "id": "F7",
+        "name": "Traktionsbatterie laden",
+        "ausgefuehrt_von": [
+          "E23",
+          "E20"
+        ],
+        "absatz_ids": [
+          "P7",
+          "P8",
+          "P26"
+        ]
+      },
+      {
+        "id": "F8",
+        "name": "Elektrische Energie verteilen",
+        "ausgefuehrt_von": [
+          "E22",
+          "E40",
+          "E42"
+        ],
+        "absatz_ids": [
+          "P8",
+          "P16",
+          "P26"
+        ]
+      },
+      {
+        "id": "F9",
+        "name": "Fahrzeug lenken",
+        "ausgefuehrt_von": [
+          "E25",
+          "E26",
+          "E27"
+        ],
+        "absatz_ids": [
+          "P9",
+          "P10",
+          "P26"
+        ]
+      },
+      {
+        "id": "F10",
+        "name": "Fahrzeug verzögern",
+        "ausgefuehrt_von": [
+          "E30",
+          "E31",
+          "E33"
+        ],
+        "absatz_ids": [
+          "P11",
+          "P12",
+          "P26"
+        ]
+      },
+      {
+        "id": "F11",
+        "name": "Bremsenergie zurückgewinnen",
+        "ausgefuehrt_von": [
+          "E33",
+          "E34"
+        ],
+        "absatz_ids": [
+          "P11",
+          "P12",
+          "P26"
+        ]
+      },
+      {
+        "id": "F12",
+        "name": "Fahrereingaben erfassen",
+        "ausgefuehrt_von": [
+          "E37"
+        ],
+        "absatz_ids": [
+          "P13",
+          "P14",
+          "P26"
+        ]
+      },
+      {
+        "id": "F13",
+        "name": "Fahrerinformationen anzeigen",
+        "ausgefuehrt_von": [
+          "E38"
+        ],
+        "absatz_ids": [
+          "P13",
+          "P14",
+          "P26"
+        ]
+      },
+      {
+        "id": "F14",
+        "name": "Daten übertragen",
+        "ausgefuehrt_von": [
+          "E41",
+          "E45"
+        ],
+        "absatz_ids": [
+          "P16",
+          "P18",
+          "P26"
+        ]
+      },
+      {
+        "id": "F15",
+        "name": "Fahrzeugzustand überwachen",
+        "ausgefuehrt_von": [
+          "E20",
+          "E46",
+          "E44"
+        ],
+        "absatz_ids": [
+          "P8",
+          "P18",
+          "P26"
+        ]
+      },
+      {
+        "id": "F16",
+        "name": "Fahrzeugposition bestimmen",
+        "ausgefuehrt_von": [
+          "E45"
+        ],
+        "absatz_ids": [
+          "P17",
+          "P18",
+          "P26"
+        ]
+      },
+      {
+        "id": "F17",
+        "name": "Höchstgeschwindigkeit begrenzen",
+        "ausgefuehrt_von": [
+          "E44",
+          "E16"
+        ],
+        "absatz_ids": [
+          "P17",
+          "P18",
+          "P26"
+        ]
+      },
+      {
+        "id": "F18",
+        "name": "Unbefugte Benutzung verhindern",
+        "ausgefuehrt_von": [
+          "E48",
+          "E49"
+        ],
+        "absatz_ids": [
+          "P19",
+          "P20",
+          "P26"
+        ]
+      },
+      {
+        "id": "F19",
+        "name": "Fahrzeugumfeld erfassen",
+        "ausgefuehrt_von": [
+          "E50"
+        ],
+        "absatz_ids": [
+          "P20",
+          "P26"
+        ]
+      },
+      {
+        "id": "F20",
+        "name": "Fahrzeugumgebung ausleuchten",
+        "ausgefuehrt_von": [
+          "E53"
+        ],
+        "absatz_ids": [
+          "P21",
+          "P22",
+          "P26"
+        ]
+      },
+      {
+        "id": "F21",
+        "name": "Lichtsignale abgeben",
+        "ausgefuehrt_von": [
+          "E54",
+          "E56",
+          "E57"
+        ],
+        "absatz_ids": [
+          "P21",
+          "P22",
+          "P26"
+        ]
+      },
+      {
+        "id": "F22",
+        "name": "Schallzeichen abgeben",
+        "ausgefuehrt_von": [
+          "E58"
+        ],
+        "absatz_ids": [
+          "P21",
+          "P22",
+          "P26"
+        ]
+      }
+    ],
+    "fluesse": [
+      {
+        "id": "S1",
+        "von": "E19",
+        "nach": "E22",
+        "art": "elektrisch",
+        "medium": "Gleichstrom aus der Traktionsbatterie",
+        "absatz_ids": [
+          "P7",
+          "P25"
+        ]
+      },
+      {
+        "id": "S2",
+        "von": "E22",
+        "nach": "E15",
+        "art": "elektrisch",
+        "medium": "geglättete Zwischenkreisspannung",
+        "absatz_ids": [
+          "P7",
+          "P25"
+        ],
+        "schnittstelle": "Zwischenkreis"
+      },
+      {
+        "id": "S3",
+        "von": "E15",
+        "nach": "E12",
+        "art": "elektrisch",
+        "medium": "Drehstrom über Phasenleitungen",
+        "absatz_ids": [
+          "P5",
+          "P6",
+          "P25"
+        ]
+      },
+      {
+        "id": "S4",
+        "von": "E12",
+        "nach": "E8",
+        "art": "mechanisch",
+        "medium": "Antriebsmoment",
+        "absatz_ids": [
+          "P6",
+          "P25"
+        ],
+        "schnittstelle": "Radnabe"
+      },
+      {
+        "id": "S5",
+        "von": "E13",
+        "nach": "E16",
+        "art": "information",
+        "medium": "Rotorlage",
+        "absatz_ids": [
+          "P5",
+          "P6",
+          "P25"
+        ]
+      },
+      {
+        "id": "S6",
+        "von": "E16",
+        "nach": "E15",
+        "art": "information",
+        "medium": "Schaltpulse",
+        "absatz_ids": [
+          "P5",
+          "P6"
+        ]
+      },
+      {
+        "id": "S7",
+        "von": "E37",
+        "nach": "E44",
+        "art": "information",
+        "medium": "Leistungsvorgabe des Bedienelements",
+        "absatz_ids": [
+          "P14",
+          "P25"
+        ],
+        "schnittstelle": "Bedienschnittstelle am Lenker"
+      },
+      {
+        "id": "S8",
+        "von": "E44",
+        "nach": "E16",
+        "art": "information",
+        "medium": "Drehmoment- oder Geschwindigkeitssollwert",
+        "absatz_ids": [
+          "P6",
+          "P18",
+          "P25"
+        ],
+        "schnittstelle": "Sollwertschnittstelle zur Motorsteuerung"
+      },
+      {
+        "id": "S9",
+        "von": "E20",
+        "nach": "E44",
+        "art": "information",
+        "medium": "Ladezustand und Stromgrenzen",
+        "absatz_ids": [
+          "P8",
+          "P25"
+        ],
+        "schnittstelle": "Bussystem"
+      },
+      {
+        "id": "S10",
+        "von": "E44",
+        "nach": "E38",
+        "art": "information",
+        "medium": "Geschwindigkeit, Ladezustand, Fahrmodus, Fehler",
+        "absatz_ids": [
+          "P14",
+          "P25"
+        ],
+        "schnittstelle": "Bussystem"
+      },
+      {
+        "id": "S11",
+        "von": "E23",
+        "nach": "E19",
+        "art": "elektrisch",
+        "medium": "Ladestrom",
+        "absatz_ids": [
+          "P7",
+          "P8",
+          "P25"
+        ],
+        "schnittstelle": "Ladebuchse"
+      },
+      {
+        "id": "S12",
+        "von": "E33",
+        "nach": "E19",
+        "art": "elektrisch",
+        "medium": "zurückgewonnene Bremsenergie",
+        "absatz_ids": [
+          "P11",
+          "P12",
+          "P25"
+        ],
+        "schnittstelle": "Zwischenkreis"
+      },
+      {
+        "id": "S13",
+        "von": "E30",
+        "nach": "E31",
+        "art": "mechanisch",
+        "medium": "Betätigungskraft",
+        "absatz_ids": [
+          "P12",
+          "P25"
+        ]
+      },
+      {
+        "id": "S14",
+        "von": "E30",
+        "nach": "E34",
+        "art": "information",
+        "medium": "Bremswunsch",
+        "absatz_ids": [
+          "P12",
+          "P25"
+        ]
+      },
+      {
+        "id": "S15",
+        "von": "E34",
+        "nach": "E16",
+        "art": "information",
+        "medium": "Bremsmomentvorgabe",
+        "absatz_ids": [
+          "P12",
+          "P25"
+        ],
+        "schnittstelle": "Bremssignal zur Motorsteuerung"
+      },
+      {
+        "id": "S16",
+        "von": "E22",
+        "nach": "E40",
+        "art": "elektrisch",
+        "medium": "Versorgung der Verbraucher",
+        "absatz_ids": [
+          "P16",
+          "P22"
+        ],
+        "schnittstelle": "Bordnetzabgang"
+      },
+      {
+        "id": "S17",
+        "von": "E40",
+        "nach": "E53",
+        "art": "elektrisch",
+        "medium": "Lichtversorgung",
+        "absatz_ids": [
+          "P22",
+          "P25"
+        ],
+        "schnittstelle": "Lichtanschluss"
+      },
+      {
+        "id": "S18",
+        "von": "E40",
+        "nach": "E54",
+        "art": "elektrisch",
+        "medium": "Lichtversorgung",
+        "absatz_ids": [
+          "P22",
+          "P25"
+        ],
+        "schnittstelle": "Lichtanschluss"
+      },
+      {
+        "id": "S19",
+        "von": "E45",
+        "nach": "E44",
+        "art": "information",
+        "medium": "Position, Entsperrbefehl, Zonenregeln",
+        "absatz_ids": [
+          "P17",
+          "P18",
+          "P25"
+        ],
+        "schnittstelle": "Bussystem"
+      },
+      {
+        "id": "S20",
+        "von": "E44",
+        "nach": "E48",
+        "art": "information",
+        "medium": "Verriegelungsbefehl",
+        "absatz_ids": [
+          "P20",
+          "P25"
+        ],
+        "schnittstelle": "Verriegelungssignal"
+      },
+      {
+        "id": "S21",
+        "von": "E36",
+        "nach": "E4",
+        "art": "mechanisch",
+        "medium": "Gewichtskraft der Person",
+        "absatz_ids": [
+          "P4",
+          "P25"
+        ],
+        "schnittstelle": "Standfläche auf dem Trittbrett"
+      },
+      {
+        "id": "S22",
+        "von": "E4",
+        "nach": "E9",
+        "art": "mechanisch",
+        "medium": "Fahrzeug- und Personenlast",
+        "absatz_ids": [
+          "P4",
+          "P25"
+        ]
+      },
+      {
+        "id": "S23",
+        "von": "E9",
+        "nach": "E8",
+        "art": "mechanisch",
+        "medium": "Radlast",
+        "absatz_ids": [
+          "P4",
+          "P25"
+        ]
+      },
+      {
+        "id": "S24",
+        "von": "E25",
+        "nach": "E26",
+        "art": "mechanisch",
+        "medium": "Lenkmoment",
+        "absatz_ids": [
+          "P10",
+          "P25"
+        ]
+      },
+      {
+        "id": "S25",
+        "von": "E26",
+        "nach": "E27",
+        "art": "mechanisch",
+        "medium": "Lenkmoment",
+        "absatz_ids": [
+          "P10",
+          "P25"
+        ],
+        "schnittstelle": "Lenkkopflager"
+      },
+      {
+        "id": "S26",
+        "von": "E27",
+        "nach": "E4",
+        "art": "mechanisch",
+        "medium": "Radlast des Vorderrads",
+        "absatz_ids": [
+          "P4",
+          "P10"
+        ],
+        "schnittstelle": "Lenkkopflager"
+      },
+      {
+        "id": "S27",
+        "von": "E26",
+        "nach": "E5",
+        "art": "mechanisch",
+        "medium": "Halte- und Abstützkräfte",
+        "absatz_ids": [
+          "P4"
+        ],
+        "schnittstelle": "Klappgelenk"
+      },
+      {
+        "id": "S28",
+        "von": "E19",
+        "nach": "E20",
+        "art": "information",
+        "medium": "Zellspannungen und Zustandsgrößen",
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "S29",
+        "von": "E34",
+        "nach": "E54",
+        "art": "information",
+        "medium": "Bremslichtsignal",
+        "absatz_ids": [
+          "P12",
+          "P22"
+        ],
+        "schnittstelle": "Bremslichtansteuerung"
+      },
+      {
+        "id": "S30",
+        "von": "E37",
+        "nach": "E56",
+        "art": "information",
+        "medium": "Blinkbefehl",
+        "absatz_ids": [
+          "P14",
+          "P22"
+        ],
+        "schnittstelle": "Blinkertaster"
+      },
+      {
+        "id": "S31",
+        "von": "E49",
+        "nach": "E44",
+        "art": "information",
+        "medium": "Geschützte und plausibilisierte Parameter",
+        "absatz_ids": [
+          "P20",
+          "P25"
+        ],
+        "schnittstelle": "Bussystem"
+      },
+      {
+        "id": "S32",
+        "von": "E50",
+        "nach": "E44",
+        "art": "information",
+        "medium": "Umfeldinformation",
+        "absatz_ids": [
+          "P20",
+          "P25"
+        ],
+        "schnittstelle": "Bussystem"
+      },
+      {
+        "id": "S33",
+        "von": "E46",
+        "nach": "E45",
+        "art": "information",
+        "medium": "Fehlerspeicherinhalte",
+        "absatz_ids": [
+          "P18"
+        ]
+      },
+      {
+        "id": "S34",
+        "von": "E27",
+        "nach": "E8",
+        "art": "mechanisch",
+        "medium": "Lenkbewegung und Radführung",
+        "absatz_ids": [
+          "P10"
+        ],
+        "schnittstelle": "Vorderradachse"
+      }
+    ],
+    "entfallene_kategorien": [
+      {
+        "kategorie": "aufbau_nutzlast",
+        "grund": "In Deutschland sind Personenbeförderung und Anhängerbetrieb nicht gestattet (Q10); Taschen oder Haken sind Zubehör außerhalb der Systemgrenze."
+      },
+      {
+        "kategorie": "thermomanagement",
+        "grund": "Keine Kühl- oder Heizkreisläufe; Traktionsmaschine, Wechselrichter und Traktionsbatterie geben Wärme über ihre Gehäuse an die Umgebungsluft ab, die Temperaturüberwachung liegt im Batteriemanagementsystem."
+      },
+      {
+        "kategorie": "nebensysteme",
+        "grund": "Keine Druckluft-, Unterdruck-, Hydraulik- oder Nebenabtriebssysteme; Hydraulik kommt höchstens innerhalb einer Radbremse oder eines Federelements vor."
+      }
+    ],
+    "varianten": [
+      {
+        "id": "V1",
+        "element_id": "E7",
+        "bezeichnung": "Bereifung und Federung",
+        "alternativen": [
+          "Vollgummi- oder Wabenreifen ohne Federung",
+          "Luftreifen mit oder ohne Federung",
+          "Luftkammerreifen",
+          "Federung vorn und hinten mit gedämpften Gelenksystemen"
+        ],
+        "auswahlkriterien": [
+          "Fahrkomfort und Fahrbahnzustand",
+          "Pannensicherheit und Wartungsaufwand",
+          "Masse",
+          "Kosten"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E27",
+            "beschreibung": "Gefederte Ausführungen brauchen eine Federgabel statt einer starren Vorderradgabel."
+          },
+          {
+            "element_id": "E4",
+            "beschreibung": "Eine hintere Federung verlangt eine Schwinge oder Federaufnahme am Trittbrett."
+          },
+          {
+            "element_id": "E12",
+            "beschreibung": "Bei Radnabenmotoren bestimmt die Reifenart den Aufwand für Reifenwechsel und die Stoßbelastung des Motors."
+          }
+        ],
+        "absatz_ids": [
+          "P3",
+          "P4"
+        ]
+      },
+      {
+        "id": "V2",
+        "element_id": "E10",
+        "bezeichnung": "Lage des Radnabenmotors",
+        "alternativen": [
+          "Radnabenmotor im Vorderrad",
+          "Radnabenmotor im Hinterrad",
+          "Radnabenmotoren in beiden Rädern"
+        ],
+        "auswahlkriterien": [
+          "Traktion und Steigfähigkeit",
+          "Lenkverhalten und ungefederte Masse am gelenkten Rad",
+          "Leitungsführung",
+          "Kosten und Masse"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E27",
+            "beschreibung": "Ein Vorderradmotor muss sein Reaktionsmoment in der Gabel abstützen und Leitungen durch die Gabel führen."
+          },
+          {
+            "element_id": "E40",
+            "beschreibung": "Phasen- und Sensorleitungen laufen je nach Lage durch Lenkstange oder Hinterbau."
+          },
+          {
+            "element_id": "E33",
+            "beschreibung": "Die Nutzbremse wirkt nur am angetriebenen Rad."
+          },
+          {
+            "element_id": "E31",
+            "beschreibung": "Die Radbremse wird bevorzugt am nicht angetriebenen Rad angeordnet."
+          },
+          {
+            "element_id": "E15",
+            "beschreibung": "Zwei Motoren brauchen zwei Wechselrichter oder einen doppelten Leistungsteil."
+          }
+        ],
+        "absatz_ids": [
+          "P5",
+          "P6",
+          "P12"
+        ]
+      },
+      {
+        "id": "V3",
+        "element_id": "E18",
+        "bezeichnung": "Anordnung und Wechselbarkeit der Traktionsbatterie",
+        "alternativen": [
+          "Fest im Trittbrett",
+          "An oder in der Lenkstange",
+          "Über dem Vorderrad",
+          "Wechselakku oder Zusatzakku"
+        ],
+        "auswahlkriterien": [
+          "Schwerpunktlage",
+          "Reichweite",
+          "Ladekonzept und Flottenlogistik",
+          "Diebstahlschutz",
+          "Bauraum"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E4",
+            "beschreibung": "Im Trittbrett wird das Trittbrett zum Batteriegehäuse und bestimmt dessen Bauhöhe."
+          },
+          {
+            "element_id": "E26",
+            "beschreibung": "An der Lenkstange erhöht die Batterie Masse und Trägheit der Lenkung."
+          },
+          {
+            "element_id": "E23",
+            "beschreibung": "Wechselakkus werden in einer Ladestation außerhalb des Fahrzeugs geladen."
+          },
+          {
+            "element_id": "E48",
+            "beschreibung": "Ein Wechselakku braucht ein Akkuschloss."
+          }
+        ],
+        "absatz_ids": [
+          "P7",
+          "P8"
+        ]
+      },
+      {
+        "id": "V4",
+        "element_id": "E28",
+        "bezeichnung": "Kombination der Bremsen",
+        "alternativen": [
+          "Nutzbremse am angetriebenen Rad und mechanische Radbremse am anderen Rad",
+          "Mechanische Radbremsen an beiden Rädern, zusätzlich Nutzbremse",
+          "Schutzblechbremse hinten mit elektrischer Bremse vorn"
+        ],
+        "auswahlkriterien": [
+          "Unabhängigkeit der beiden Bremsen",
+          "Bremswirkung bei Nässe und bei Spannungsausfall",
+          "Energierückgewinnung",
+          "Wartungsaufwand"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E16",
+            "beschreibung": "Mit Nutzbremse muss die Motorsteuerung Bremsmomente regeln."
+          },
+          {
+            "element_id": "E19",
+            "beschreibung": "Die Traktionsbatterie muss Rekuperationsströme aufnehmen können."
+          },
+          {
+            "element_id": "E8",
+            "beschreibung": "Scheiben- oder Trommelbremsen brauchen eine Bremsaufnahme am Rad."
+          },
+          {
+            "element_id": "E54",
+            "beschreibung": "Ein Bremslicht braucht ein Bremssignal vom Bremshebel."
+          }
+        ],
+        "absatz_ids": [
+          "P11",
+          "P12"
+        ]
+      },
+      {
+        "id": "V5",
+        "element_id": "E43",
+        "bezeichnung": "Nutzungsmodell",
+        "alternativen": [
+          "Privatfahrzeug",
+          "Verleihfahrzeug in einem stationsunabhängigen System"
+        ],
+        "auswahlkriterien": [
+          "Betreiberanforderungen an Ortung und Entsperren",
+          "Robustheit gegen Vandalismus",
+          "Ladelogistik",
+          "Kosten je Fahrzeug"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E45",
+            "beschreibung": "Beim Verleih ist die Telematikeinheit mit Ortung und Mobilfunk notwendig."
+          },
+          {
+            "element_id": "E48",
+            "beschreibung": "Beim Verleih erfolgt die Verriegelung elektronisch über App und Telematikeinheit."
+          },
+          {
+            "element_id": "E38",
+            "beschreibung": "Beim Verleih übernimmt die App einen Teil der Anzeige."
+          },
+          {
+            "element_id": "E19",
+            "beschreibung": "Flottenbetrieb begünstigt Wechselakkus und das Einsammeln zum Laden."
+          }
+        ],
+        "absatz_ids": [
+          "P17",
+          "P18"
+        ]
+      },
+      {
+        "id": "V6",
+        "element_id": "E3",
+        "bezeichnung": "Klappbarkeit",
+        "alternativen": [
+          "Klappbar mit Klappmechanismus",
+          "Starre Verbindung von Lenkstange und Trittbrett"
+        ],
+        "auswahlkriterien": [
+          "Mitnahme in öffentlichen Verkehrsmitteln und im Kofferraum",
+          "Steifigkeit und Spielfreiheit",
+          "Masse",
+          "Sicherheit im Transportzustand"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E26",
+            "beschreibung": "Die Lenkstange braucht ein verriegelbares Gelenk."
+          },
+          {
+            "element_id": "E40",
+            "beschreibung": "Leitungen müssen über das Klappgelenk geführt werden."
+          }
+        ],
+        "absatz_ids": [
+          "P3",
+          "P4"
+        ]
+      }
+    ],
+    "klaerungsfragen": [
+      {
+        "id": "K1",
+        "frage": "Soll der E-Scooter zum Mitnehmen in öffentlichen Verkehrsmitteln oder im Kofferraum klappbar sein?",
+        "element_ids": [
+          "E3",
+          "E5"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Klappmechanismus, Lenkstangengelenk und Leitungsführung ab.",
+        "variante_ids": [
+          "V6"
+        ]
+      },
+      {
+        "id": "K2",
+        "frage": "Auf welchen Fahrbahnen soll der E-Scooter überwiegend fahren, und welche Reifenart und Federung folgen daraus?",
+        "element_ids": [
+          "E2",
+          "E7",
+          "E8",
+          "E9"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Gabelbauart, Hinterbau und Komfortanforderungen ab.",
+        "variante_ids": [
+          "V1"
+        ]
+      },
+      {
+        "id": "K3",
+        "frage": "Soll der Radnabenmotor im Vorderrad, im Hinterrad oder in beiden Rädern sitzen?",
+        "element_ids": [
+          "E10",
+          "E12"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Gabel, Leitungsführung, Bremsenanordnung und Antriebselektronik ab.",
+        "variante_ids": [
+          "V2"
+        ]
+      },
+      {
+        "id": "K4",
+        "frage": "Welche Steigungen und welches Personengewicht muss der Antrieb bei voller Geschwindigkeit bewältigen?",
+        "element_ids": [
+          "E10",
+          "E12",
+          "E15"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Motorauslegung, Wechselrichterströme und Batteriebelastung innerhalb der Leistungsgrenze ab."
+      },
+      {
+        "id": "K5",
+        "frage": "Soll die Traktionsbatterie fest im Trittbrett verbaut, an der Lenkstange angebracht oder als Wechselakku ausgeführt werden?",
+        "element_ids": [
+          "E17",
+          "E18",
+          "E19"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Trittbrettstruktur, Lenkträgheit, Ladekonzept und Diebstahlsicherung ab.",
+        "variante_ids": [
+          "V3"
+        ]
+      },
+      {
+        "id": "K6",
+        "frage": "Welche Reichweite und welche Ladedauer erwartet der Auftraggeber im typischen Einsatz?",
+        "element_ids": [
+          "E19",
+          "E23"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Batteriegröße, Fahrzeugmasse und Ladegerät ab."
+      },
+      {
+        "id": "K7",
+        "frage": "Welche Bedienelemente, Anzeigen und Leuchten sollen an der Lenkstange untergebracht werden?",
+        "element_ids": [
+          "E24",
+          "E26",
+          "E25"
+        ],
+        "anlass": "schnittstelle",
+        "relevanz": "Davon hängen Leitungsführung durch die Lenkstange, Lenkermasse und Bauraum am Lenker ab."
+      },
+      {
+        "id": "K8",
+        "frage": "Welche Kombination aus mechanischer Radbremse und Nutzbremse soll an Vorder- und Hinterrad eingesetzt werden?",
+        "element_ids": [
+          "E28",
+          "E31",
+          "E33"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Unabhängigkeit der Bremsen, Bremsmomentregelung und Bremsaufnahmen an den Rädern ab.",
+        "variante_ids": [
+          "V4"
+        ]
+      },
+      {
+        "id": "K9",
+        "frage": "Soll die Nutzbremse über einen eigenen Bremshebel oder gemeinsam mit der mechanischen Bremse betätigt werden?",
+        "element_ids": [
+          "E30",
+          "E34"
+        ],
+        "anlass": "betrieb",
+        "relevanz": "Davon hängen Sensorik am Bremshebel und Bremslichtansteuerung ab.",
+        "variante_ids": [
+          "V4"
+        ]
+      },
+      {
+        "id": "K10",
+        "frage": "Soll die Motorleistung über einen Drehgriff, einen Daumenhebel oder einen Knopf vorgegeben werden?",
+        "element_ids": [
+          "E35",
+          "E37"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Lenkergestaltung, Rückstellmechanik und Bedienergonomie ab."
+      },
+      {
+        "id": "K11",
+        "frage": "Welche Signale sollen über ein gemeinsames Bussystem und welche über Einzelleitungen geführt werden?",
+        "element_ids": [
+          "E39",
+          "E41",
+          "E40"
+        ],
+        "anlass": "schnittstelle",
+        "relevanz": "Davon hängen Leitungsanzahl durch Lenkstange und Klappgelenk sowie Diagnosefähigkeit ab."
+      },
+      {
+        "id": "K12",
+        "frage": "Wird der E-Scooter als Privatfahrzeug oder als Verleihfahrzeug in einem stationsunabhängigen System betrieben?",
+        "element_ids": [
+          "E43",
+          "E45"
+        ],
+        "anlass": "betrieb",
+        "relevanz": "Davon hängen Telematikeinheit, Verriegelung, Anzeige und Batteriekonzept ab.",
+        "variante_ids": [
+          "V5",
+          "V3"
+        ]
+      },
+      {
+        "id": "K13",
+        "frage": "Welche Zonenregeln wie Sperrzonen und Langsamfahrzonen soll das Fahrzeug selbsttätig durchsetzen?",
+        "element_ids": [
+          "E44",
+          "E45"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Ortungsgenauigkeit, Eingriff in Antrieb und Bremsen und die Kommunikation mit dem Betreiber ab.",
+        "variante_ids": [
+          "V5"
+        ]
+      },
+      {
+        "id": "K14",
+        "frage": "Welcher Schutz gegen Diebstahl und gegen das Verändern der Höchstgeschwindigkeit wird gefordert?",
+        "element_ids": [
+          "E47",
+          "E48",
+          "E49"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Wegfahrsperre, Akkuschloss und Absicherung der Steuergerätesoftware ab."
+      },
+      {
+        "id": "K15",
+        "frage": "In welchen Ländern soll der E-Scooter betrieben werden, und welche Ausrüstung mit Fahrtrichtungsanzeigern, Bremslicht und Glocke gilt dort?",
+        "element_ids": [
+          "E51",
+          "E56",
+          "E1"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Anzahl und Lage der Leuchten, Bedientaster und Kontrollanzeigen ab."
+      }
+    ],
+    "anforderungsthemen": [
+      {
+        "id": "R1",
+        "element_ids": [
+          "E1",
+          "E2"
+        ],
+        "thema": "Abmessungen und Masse",
+        "kenngroessen": [
+          "Gesamtbreite",
+          "Gesamthöhe",
+          "Gesamtlänge",
+          "Fahrzeugmasse ohne Fahrer",
+          "Packmaß im Transportzustand"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "§ 1 Absatz 1 Nummern 4 und 5 Elektrokleinstfahrzeuge-Verordnung (Deutschland; Elektrokleinstfahrzeuge ohne Sitz oder selbstbalancierend, mehr als 6 bis 20 km/h)",
+            "quellen_id": "Q5",
+            "fundstelle": "Absatz 1 Nummern 4 und 5"
+          }
+        ]
+      },
+      {
+        "id": "R2",
+        "element_ids": [
+          "E2",
+          "E7",
+          "E6"
+        ],
+        "thema": "Fahrdynamik und Standsicherheit",
+        "kenngroessen": [
+          "Fahrstabilität",
+          "Standsicherheit auf dem Ständer",
+          "Sicherheit im Transportzustand",
+          "Bodenfreiheit"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "§ 7 Nummern 1, 6 und 11 Elektrokleinstfahrzeuge-Verordnung (Deutschland; Elektrokleinstfahrzeuge ohne Sitz oder selbstbalancierend, mehr als 6 bis 20 km/h); Fahrdynamik nach Anlage 2, Ständer nach Anhang XVI der Delegierten Verordnung (EU) Nr. 44/2014 für einspurige Fahrzeuge",
+            "quellen_id": "Q9",
+            "fundstelle": "Nummern 1, 6 und 11"
+          }
+        ]
+      },
+      {
+        "id": "R3",
+        "element_ids": [
+          "E10",
+          "E12",
+          "E44"
+        ],
+        "thema": "Antriebsleistung und Höchstgeschwindigkeit",
+        "kenngroessen": [
+          "Nenndauerleistung",
+          "bauartbedingte Höchstgeschwindigkeit",
+          "Steigfähigkeit",
+          "Beschleunigung"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "§ 1 Absatz 1 und Absatz 1 Nummer 3 Elektrokleinstfahrzeuge-Verordnung (Deutschland; Elektrokleinstfahrzeuge ohne Sitz oder selbstbalancierend, mehr als 6 bis 20 km/h); Leistungsbestimmung nach DIN EN 15194:2024-03 oder UN-Regelung Nr. 85",
+            "quellen_id": "Q5",
+            "fundstelle": "Absatz 1 Satz 1 und Nummer 3"
+          }
+        ]
+      },
+      {
+        "id": "R4",
+        "element_ids": [
+          "E17",
+          "E19",
+          "E20",
+          "E23"
+        ],
+        "thema": "Reichweite und Batteriesicherheit",
+        "kenngroessen": [
+          "Reichweite",
+          "nutzbarer Energieinhalt",
+          "Ladedauer",
+          "Zyklenlebensdauer",
+          "Verhalten bei thermischem Fehler"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "§ 7 Nummer 8 Elektrokleinstfahrzeuge-Verordnung (Deutschland; Elektrokleinstfahrzeuge ohne Sitz oder selbstbalancierend, mehr als 6 bis 20 km/h); Batterien nach DIN EN 50604-1:2022-06",
+            "quellen_id": "Q9",
+            "fundstelle": "Nummer 8"
+          }
+        ]
+      },
+      {
+        "id": "R5",
+        "element_ids": [
+          "E24",
+          "E26"
+        ],
+        "thema": "Lenkstange und Lenkverhalten",
+        "kenngroessen": [
+          "Länge der Lenkstange",
+          "Lenkerbreite",
+          "Lenkeinschlag",
+          "Spielfreiheit im Lenkkopf"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "§ 1 Absatz 1 Nummer 2 Elektrokleinstfahrzeuge-Verordnung (Deutschland; Elektrokleinstfahrzeuge ohne Sitz oder selbstbalancierend, mehr als 6 bis 20 km/h)",
+            "quellen_id": "Q5",
+            "fundstelle": "Absatz 1 Nummer 2"
+          }
+        ]
+      },
+      {
+        "id": "R6",
+        "element_ids": [
+          "E28",
+          "E31",
+          "E33"
+        ],
+        "thema": "Bremswirkung",
+        "kenngroessen": [
+          "mittlere Verzögerung",
+          "Restbremswirkung bei Ausfall einer Bremse",
+          "Bremswirkung bei Spannungsausfall",
+          "Spurtreue beim Bremsen"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "§ 4 Absätze 1 und 3 Elektrokleinstfahrzeuge-Verordnung (Deutschland; Elektrokleinstfahrzeuge ohne Sitz oder selbstbalancierend, mehr als 6 bis 20 km/h)",
+            "quellen_id": "Q6",
+            "fundstelle": "Absätze 1 und 3"
+          },
+          {
+            "bezeichnung": "§ 7 Nummer 10 Elektrokleinstfahrzeuge-Verordnung (Deutschland; Elektrokleinstfahrzeuge ohne Sitz oder selbstbalancierend, mehr als 6 bis 20 km/h)",
+            "quellen_id": "Q9",
+            "fundstelle": "Nummer 10"
+          }
+        ]
+      },
+      {
+        "id": "R7",
+        "element_ids": [
+          "E35",
+          "E36",
+          "E37"
+        ],
+        "thema": "Bedienung und Halt der Person",
+        "kenngroessen": [
+          "Rückstellzeit des Leistungsbedienelements",
+          "Rutschhemmung der Standfläche",
+          "Sicherung gegen unbeabsichtigtes Verstellen"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "§ 7 Nummern 5, 7 und 9 Elektrokleinstfahrzeuge-Verordnung (Deutschland; Elektrokleinstfahrzeuge ohne Sitz oder selbstbalancierend, mehr als 6 bis 20 km/h)",
+            "quellen_id": "Q9",
+            "fundstelle": "Nummern 5, 7 und 9"
+          },
+          {
+            "bezeichnung": "§ 8 Elektrokleinstfahrzeuge-Verordnung (Deutschland; Elektrokleinstfahrzeuge ohne Sitz oder selbstbalancierend, mehr als 6 bis 20 km/h): Personenbeförderung und Anhängerbetrieb nicht gestattet",
+            "quellen_id": "Q10",
+            "fundstelle": "einziger Satz"
+          }
+        ]
+      },
+      {
+        "id": "R8",
+        "element_ids": [
+          "E39",
+          "E40",
+          "E42"
+        ],
+        "thema": "Elektrische Sicherheit und elektromagnetische Verträglichkeit",
+        "kenngroessen": [
+          "Berührungsschutz",
+          "Störaussendung",
+          "Störfestigkeit",
+          "Schutz gegen Feuchtigkeit"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "§ 7 Nummern 2, 4 und 8 Elektrokleinstfahrzeuge-Verordnung (Deutschland; Elektrokleinstfahrzeuge ohne Sitz oder selbstbalancierend, mehr als 6 bis 20 km/h); UN-Regelung Nr. 10 und DIN EN 17128:2021-01 Kapitel 6.1, 6.3, 6.4, 10 und 11",
+            "quellen_id": "Q9",
+            "fundstelle": "Nummern 2, 4 und 8"
+          }
+        ]
+      },
+      {
+        "id": "R9",
+        "element_ids": [
+          "E43",
+          "E45",
+          "E44"
+        ],
+        "thema": "Ortung, Entsperren und Zonensteuerung",
+        "kenngroessen": [
+          "Ortungsgenauigkeit",
+          "Reaktionszeit auf Entsperrbefehle",
+          "Verfügbarkeit der Mobilfunkverbindung",
+          "Genauigkeit der Zonengrenzen"
+        ]
+      },
+      {
+        "id": "R10",
+        "element_ids": [
+          "E1",
+          "E43"
+        ],
+        "thema": "Betriebserlaubnis und Kennzeichnung",
+        "kenngroessen": [
+          "Fahrzeug-Identifizierungsnummer",
+          "Fabrikschild",
+          "Versicherungsplakette",
+          "Betriebserlaubnis"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "§ 2 Absatz 1 Elektrokleinstfahrzeuge-Verordnung (Deutschland; Elektrokleinstfahrzeuge ohne Sitz oder selbstbalancierend, mehr als 6 bis 20 km/h)",
+            "quellen_id": "Q12",
+            "fundstelle": "Absatz 1 Satz 1 Nummern 1 bis 3"
+          }
+        ]
+      },
+      {
+        "id": "R11",
+        "element_ids": [
+          "E47",
+          "E48",
+          "E49"
+        ],
+        "thema": "Manipulations- und Diebstahlschutz",
+        "kenngroessen": [
+          "Schutz der Geschwindigkeitsbegrenzung",
+          "Schutz der Leistungsbegrenzung",
+          "Wegfahrsperre"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "§ 7 Nummer 3 Elektrokleinstfahrzeuge-Verordnung (Deutschland; Elektrokleinstfahrzeuge ohne Sitz oder selbstbalancierend, mehr als 6 bis 20 km/h); Manipulationsschutz nach DIN EN 15194:2024-03",
+            "quellen_id": "Q9",
+            "fundstelle": "Nummer 3"
+          }
+        ]
+      },
+      {
+        "id": "R12",
+        "element_ids": [
+          "E51",
+          "E53",
+          "E54",
+          "E56",
+          "E57",
+          "E58"
+        ],
+        "thema": "Sichtbarkeit und Signalisierung",
+        "kenngroessen": [
+          "Lichtstärke",
+          "Anbauhöhe",
+          "geometrische Sichtbarkeit",
+          "seitliche Kennzeichnung",
+          "Schallzeichen"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "§ 5 Absätze 1, 3 und 4 Elektrokleinstfahrzeuge-Verordnung (Deutschland; Elektrokleinstfahrzeuge ohne Sitz oder selbstbalancierend, mehr als 6 bis 20 km/h)",
+            "quellen_id": "Q7",
+            "fundstelle": "Absatz 1, Absatz 3 und Absatz 4"
+          },
+          {
+            "bezeichnung": "§ 6 Elektrokleinstfahrzeuge-Verordnung (Deutschland; Elektrokleinstfahrzeuge ohne Sitz oder selbstbalancierend, mehr als 6 bis 20 km/h)",
+            "quellen_id": "Q8",
+            "fundstelle": "Sätze 1 bis 3"
+          }
+        ]
+      }
+    ]
+  },
+  "offene_punkte": [
+    "Glossarvorschlag: Funktion „Fahrzeug zusammenklappen“ (Überführen in den Transportzustand über den Klappmechanismus; nicht synonym mit „Fahrzeuglasten tragen“).",
+    "Glossarvorschlag: Funktion „Höchstgeschwindigkeit begrenzen“ (Einhalten der bauartbedingten Höchstgeschwindigkeit und von Zonengeschwindigkeiten; nicht synonym mit „Fahrzeug verzögern“); in A-0015 und A-0016 bereits verwendet, aber nicht im Glossar geführt.",
+    "Glossarvorschlag: Funktion „Unbefugte Benutzung verhindern“ (Wegfahrsperre, Verriegelung und Manipulationsschutz; nicht synonym mit „Fahrzeug festhalten“); in A-0016 bereits verwendet, in A-0021 als „Fahrzeug gegen Diebstahl sichern“ – Vereinheitlichung im Glossar nötig.",
+    "Glossarvorschlag: Funktion „Schallzeichen abgeben“ (akustische Warnung per Glocke, Begriff nach § 6 eKFV; nicht synonym mit „Lichtsignale abgeben“); in A-0015 und A-0016 stehen dafür abweichende Namen – Vereinheitlichung im Glossar nötig.",
+    "Glossar: Für Zweiräder und Stehfahrzeuge nennt die Kategorie bedienraum keinen eigenen Namen; wie in A-0014 und A-0015 wird „Fahrgastraum“ verwendet, obwohl der E-Scooter keinen Raum, sondern einen offenen Stehplatz hat.",
+    "Recherche: gesetze-im-internet.de (eKFV) war in diesem Lauf nicht abrufbar; die Paragraphen wurden über buzer.de gelesen. Abgleich mit der amtlichen Fassung, insbesondere zum Inkrafttreten der Pflicht zu Fahrtrichtungsanzeigern (§ 5 Absatz 4; laut Q3 teilweise Inkrafttreten am 1. März 2027) und zu Anlage 2 (Fahrdynamikprüfungen).",
+    "Recherche: BASt-Bericht F 158 (wissenschaftliche Begleitung Elektrokleinstfahrzeuge, opus4.hbz-nrw.de) und eKF-Evaluierungsbericht (bast.opus.hbz-nrw.de) waren wegen einer Bot-Sperre nicht abrufbar; auswerten für Fahrdynamik, Bremsen, Lenkstange und Unfallgeschehen.",
+    "Recherche: Verordnung (EU) Nr. 168/2013, Artikel 2 Absatz 2 (Ausschluss von Fahrzeugen ohne Sitzplatz und selbstbalancierenden Fahrzeugen) über EUR-Lex, in diesem Lauf nicht abrufbar; Einordnung des E-Scooters im EU-Typgenehmigungsrecht.",
+    "Recherche: DIN EN 17128:2021-01 (PLEV) im Original für Rahmen-, Klappmechanismus-, Bremsen- und Elektrikanforderungen; nur über Q6 und Q9 bekannt.",
+    "Recherche: Fachliteratur zur Kommunikation zwischen Motorsteuerung, Batteriemanagementsystem, Anzeige und Telematik bei E-Scootern, Suchbegriffe „e-scooter controller display communication protocol“, „PLEV CAN bus architecture“.",
+    "Recherche: Fachliteratur zu Diebstahlsicherung, Geofencing und Umfeldsensorik bei Verleih-E-Scootern, Suchbegriffe „shared e-scooter IoT module geofencing“, „e-scooter sidewalk detection camera“.",
+    "Recherche: Fachliteratur zur Wärmeentwicklung von Radnabenmotor und Batterie bei E-Scootern, Suchbegriff „e-scooter hub motor thermal behaviour“, zur Absicherung des Entfalls von Thermomanagement."
+  ]
+}

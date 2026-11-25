@@ -1,0 +1,1141 @@
+{
+  "schema_version": "2.3",
+  "artikel_id": "A-0017",
+  "artikeltyp": "blatt",
+  "titel": "Leichtkraftrad",
+  "betrachtungsumfang": "Generische Referenzarchitektur des Leichtkraftrads als zweirädriges Kraftrad der EU-Unterklasse L3e-A1 (in Deutschland Fahrerlaubnisklasse A1) in Motorrad- und Rollerbauform mit Fremdzündungs-Verbrennungsmotor, batterieelektrischem Antrieb und Hybridantrieb. Selbstzündungs-, Kreiskolben-, Druckluft- und Brennstoffzellenantriebe, Krafträder mit Beiwagen (L4e), dreirädrige Kraftfahrzeuge sowie die Unter-Unterklassen Enduro und Trial nur als Abgrenzung.",
+  "status": "in_arbeit",
+  "quellenzugriff": "ja",
+  "kindartikel_ids": [],
+  "quellen": [
+    {
+      "quellen_id": "Q1",
+      "titel": "Verordnung (EU) Nr. 168/2013 des Europäischen Parlaments und des Rates vom 15. Januar 2013 über die Genehmigung und Marktüberwachung von zwei- oder dreirädrigen und vierrädrigen Fahrzeugen",
+      "urheber": "Europäisches Parlament und Rat der Europäischen Union",
+      "stand": "ABl. L 60 vom 2.3.2013, S. 52 (Ursprungsfassung)",
+      "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32013R0168",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q2",
+      "titel": "Verordnung über die Zulassung von Personen zum Straßenverkehr (Fahrerlaubnis-Verordnung – FeV), § 6 Einteilung der Fahrerlaubnisklassen",
+      "urheber": "Bundesministerium der Justiz (gesetze-im-internet.de)",
+      "stand": null,
+      "url": "https://www.gesetze-im-internet.de/fev_2010/__6.html",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q3",
+      "titel": "UN Regulation No. 78 – Uniform provisions concerning the approval of vehicles of categories L1, L2, L3, L4 and L5 with regard to braking (englisch-japanische Textausgabe)",
+      "urheber": "UNECE WP.29; Textausgabe des Ministry of Land, Infrastructure, Transport and Tourism (Japan)",
+      "stand": "03 series of amendments",
+      "url": "https://www.mlit.go.jp/jidosha/un/UN_R078.pdf",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q4",
+      "titel": "Leichtkraftrad",
+      "urheber": "Wikipedia, Die freie Enzyklopädie",
+      "stand": "Version vom 4. September 2026",
+      "url": "https://de.wikipedia.org/wiki/Leichtkraftrad",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q5",
+      "titel": "Motorrad",
+      "urheber": "Wikipedia, Die freie Enzyklopädie",
+      "stand": "Version vom 5. Oktober 2026",
+      "url": "https://de.wikipedia.org/wiki/Motorrad",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q6",
+      "titel": "Motorradrahmen",
+      "urheber": "Wikipedia, Die freie Enzyklopädie",
+      "stand": "Version vom 12. Juni 2026",
+      "url": "https://de.wikipedia.org/wiki/Motorradrahmen",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q7",
+      "titel": "Belastung und Beanspruchung von Motorradfahrern bei der Bremsung mit verschiedenen Bremssystemen. Dissertation, Technische Universität Darmstadt, Fachbereich Maschinenbau",
+      "urheber": "Joachim Funke (TU Darmstadt, Fachgebiet Fahrzeugtechnik)",
+      "stand": "mündliche Prüfung 2. Mai 2006; Veröffentlichung 2007",
+      "url": "https://www.fzd.tu-darmstadt.de/media/fachgebiet_fzd/previous_design/publikationen_3/2007/2007_funke_dissertation.pdf",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "fachliteratur"
+    }
+  ],
+  "abschnitte": [
+    {
+      "ueberschrift": "Einleitung",
+      "abschnittstyp": "gesamtsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P1",
+          "text": "Ein Leichtkraftrad ist im EU-Typgenehmigungsrecht ein zweirädriges Kraftrad der Unterklasse L3e-A1, „Kraftrad mit niedriger Leistung“: Hubvolumen höchstens 125 cm³, maximale Nenndauer- oder Nutzleistung höchstens 11 kW, Verhältnis von Leistung zu Gewicht höchstens 0,1 kW/kg. Die deutsche Fahrerlaubnis-Verordnung ordnet Krafträder mit diesen Grenzen, auch mit Beiwagen, der Klasse A1 zu. In Deutschland bezeichnet man als Leichtkrafträder kleine Motorräder mit mehr als 50 cm³ und höchstens 125 cm³ Hubraum.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Art. 4 Abs. 2 Buchst. c und Anhang I, Klasse L3e, Unterklasse L3e-A1, Kriterien (7) bis (9)"
+            },
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "§ 6 Abs. 1, Klasse A1, erster Spiegelstrich"
+            },
+            {
+              "quellen_id": "Q4",
+              "fundstelle": "Einleitung des Artikels (Begriffsbestimmung Deutschland)"
+            }
+          ],
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P2",
+          "text": "Architekturell ist das Leichtkraftrad ein einspuriges Gesamtsystem zur Beförderung von Fahrer, gegebenenfalls Beifahrer und leichtem Gepäck auf Straßen. Seine Hauptsysteme sind über mechanische, hydraulische, elektrische, thermische, stoffliche und informationstechnische Schnittstellen gekoppelt. Für die Dekomposition, etwa in SysML, zerlegt man es in die folgenden Hauptsysteme und diese weiter in Subsysteme und Komponenten.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P1",
+              "P3",
+              "Ein Fahrzeug mit zwei Rädern in einer Spur ist einspurig",
+              "Jedes Hauptsystem tauscht Energie, Stoff oder Information mit mindestens einem anderen aus (siehe Flüsse)"
+            ],
+            "schluss": "Das Leichtkraftrad lässt sich als hierarchisch zerlegbares Gesamtsystem mit Schnittstellen der genannten Arten beschreiben."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P3",
+          "text": "Ein Motorrad besteht im Wesentlichen aus Rahmen, Motor mit Getriebe (bei Elektromotoren auch ohne) und Endantrieb, Vorderradaufhängung mit Vorderrad, Hinterradaufhängung mit Hinterrad, Bremsanlage, Lenkung, Kraftstofftank beziehungsweise Akkumulator und Sitz. Beim Verbrennungsmotor sind Motor und Getriebe wegen der kompakten Abmessungen meist in einem gemeinsamen Gehäuse zusammengefasst.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q5",
+              "fundstelle": "Abschnitt 6.1 Grundsätzliche Bestandteile"
+            }
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrzeugstruktur und Fahrwerk",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E2",
+      "absaetze": [
+        {
+          "absatz_id": "P4",
+          "text": "Der Motorradrahmen ist das tragende Fahrgestell, an dem Motor, Getriebe, Radaufhängung, Lenkung, Kraftstofftank, Sitze und Verkleidungsteile befestigt sind; bei manchen Ausführungen übernimmt die Motor-Getriebe-Einheit teilweise die tragende Funktion. Einrohrrahmen werden heute fast ausschließlich bei Leichtkrafträdern oder leistungsschwachen Motorrädern verwendet, Zentralpressrahmen eignen sich für geringe Motorleistungen, Brückenrahmen werden bei fast allen Herstellern leistungsstarker Motorräder verbaut. Vorn überwiegt die Teleskopgabel, hinten hat sich die gezogene Schwinge durchgesetzt; bei der Triebsatzschwinge, etwa des Motorrollers Vespa, ist der Motor auf der Schwinge montiert. An Leichtkrafträdern finden sich noch Diagonalreifen.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q6",
+              "fundstelle": "Einleitung; Abschnitte 3.3 Pressstahlrahmen, 4.1 Einrohrrahmen, 4.5 Brückenrohrrahmen"
+            },
+            {
+              "quellen_id": "Q5",
+              "fundstelle": "Abschnitte 6.7.1 Steuerkopflenkung, 6.8 Hinterradaufhängung, 6.9 Reifen"
+            }
+          ],
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P5",
+          "text": "Das Hauptsystem Fahrzeugstruktur und Fahrwerk trägt alle Fahrzeuglasten. Zum Rahmen gehören Hauptrahmen, Heckrahmen und Verkleidung, zum Fahrwerk Vorderradführung, Hinterradschwinge, Federbein sowie Räder und Reifen. Der Hauptrahmen nimmt am Lenkkopf das Lenksystem und am Schwingenlager die Hinterradschwinge auf, der Heckrahmen trägt Sitzbank und Gepäckträger. Radkräfte gelangen vorn über die gefederte Vorderradführung in den Lenkkopf, hinten über Hinterradschwinge und Federbein in den Hauptrahmen. Weil ein einspuriges Fahrzeug im Stand umfällt, stützt ein Ständer es ab.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P3",
+              "P4",
+              "Ein Radfahrzeug stützt sich nur über die Radaufstandsflächen auf der Fahrbahn ab, alle Lasten laufen über Räder und Radführungen in den Rahmen",
+              "Ein einspuriges Fahrzeug ist im Stand nicht eigenstabil",
+              "Q1 Anhang II Teil C Nr. 15 (Ständer als Gegenstand der Typgenehmigung)"
+            ],
+            "schluss": "Der Lastpfad führt von Rädern und Reifen über Vorderradführung beziehungsweise Hinterradschwinge und Federbein in den Hauptrahmen; ein Ständer ist für das abgestellte Fahrzeug notwendig."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P6",
+          "text": "Die Rahmenbauart ändert den Lastpfad: Im Einrohr- oder Zentralpressrahmen hängt der Motor im Rahmen, im Brückenrahmen wird die Motor-Getriebe-Einheit tragend, sodass Motorgehäuse und Motoraufhängung Fahrwerkslasten aufnehmen. In der Rollerbauform mit Triebsatzschwinge schwingt der Antrieb mit dem Hinterrad; Endantrieb und Hinterradführung verschmelzen, eine eigene Hinterradschwinge entfällt, und die ungefederte Masse steigt.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P4",
+              "Q6 Abschnitt 4.5: beim Brückenrahmen wird die Motor-Getriebe-Einheit als tragende Baugruppe einbezogen",
+              "Was mit dem Rad ein- und ausfedert, zählt zur ungefederten Masse",
+              "Sitzt der Motor auf der Schwinge, ist die Schwinge zugleich Gehäuse des Triebsatzes"
+            ],
+            "schluss": "Rahmenbauart und Bauform sind strukturändernde Entscheidungen mit Folgen für Motoraufhängung, Endantrieb und Hinterradführung."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Antriebssystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E13",
+      "absaetze": [
+        {
+          "absatz_id": "P7",
+          "text": "Die Verordnung (EU) Nr. 168/2013 stuft Fahrzeuge der Klasse L auch nach der Antriebsart ein, unter anderem Verbrennungsmotor mit Fremd- oder Selbstzündung, Elektromotor und Hybrid. Fast alle zurzeit zugelassenen Motorräder haben Hubkolben-Ottomotoren; die seit 2017 für neu zugelassene Leichtkrafträder geltende Abgasnorm Euro 4 bedeutete das Aus für den Verkauf neuer Leichtkrafträder mit Zweitaktmotor in der EU. Hybrid-Elektroantriebe gab es zunächst nur für Motorroller, inzwischen auch von einzelnen Motorradherstellern.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Art. 4 Abs. 3 Buchst. a, d und e"
+            },
+            {
+              "quellen_id": "Q5",
+              "fundstelle": "Abschnitte 6.2.1 Ottomotor und 6.4 Hybrid-Elektroantrieb"
+            },
+            {
+              "quellen_id": "Q4",
+              "fundstelle": "Abschnitt Geschichte, letzter Absatz"
+            }
+          ],
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P8",
+          "text": "Das Antriebssystem erzeugt Antriebsleistung und überträgt Drehmoment auf das Hinterrad. Zum Verbrennungsantrieb gehören Verbrennungsmotor, Ansauganlage, Abgasanlage mit Abgasnachbehandlung und eine Startvorrichtung. Die Kraftübertragung leitet das Drehmoment über Kupplung und Getriebe zum Endantrieb. Beim Elektroantrieb speist die Leistungselektronik eine Traktionsmaschine, das Getriebe kann entfallen, und im Schubbetrieb lässt sich Bremsenergie zurückgewinnen. Ein Hybrid besitzt beide Pfade.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P3",
+              "P7",
+              "Q5 Abschnitt 6.6: der Antrieb erfolgt beim Motorrad in der Regel auf das Hinterrad",
+              "Ein Verbrennungsmotor braucht Luftzufuhr, Abgasabfuhr und eine Startvorrichtung; die Abgasnorm (P7) verlangt eine Abgasnachbehandlung",
+              "Eine elektrische Maschine kann generatorisch betrieben werden und braucht eine Leistungselektronik zur Ansteuerung"
+            ],
+            "schluss": "Das Antriebssystem besteht je nach Antriebsart aus Verbrennungsantrieb, Elektroantrieb oder beiden und einer Kraftübertragung zum Hinterrad."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P9",
+          "text": "Motorräder mit Schaltgetriebe haben üblicherweise im Ölbad laufende Mehrscheibenkupplungen und sequenzielle Getriebe, Motorroller überwiegend stufenlose CVT-Getriebe. Der Endantrieb wird als Kette, Zahnriemen oder Kardanwelle ausgeführt; der Kettenantrieb ist einfach, kostengünstig und in der Übersetzung leicht anzupassen, aber wartungsintensiv, die Kardanwelle ist wartungsfrei, aber schwerer und erzeugt lastwechselbedingte Aufstellmomente.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q5",
+              "fundstelle": "Abschnitte 6.5.1 Schaltgetriebe, 6.5.3 Automatikgetriebe, 6.6 Antriebsstrang, 6.6.1 Kette, 6.6.3 Kardanwelle mit 6.6.3.1 und 6.6.3.2"
+            }
+          ],
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Energieversorgungssystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E27",
+      "absaetze": [
+        {
+          "absatz_id": "P10",
+          "text": "Das Energieversorgungssystem speichert die Antriebsenergie und versorgt das Bordnetz. Die Kraftstoffanlage besteht aus Kraftstofftank und, bei Einspritzmotoren, einer Kraftstoffpumpe. Die Bordnetzversorgung umfasst einen vom Motor angetriebenen Generator, einen Laderegler und die Starterbatterie. Beim Elektroantrieb tritt der Traktionsenergiespeicher an die Stelle der Kraftstoffanlage: Die Traktionsbatterie, fest eingebaut oder entnehmbar, wird über eine Ladeeinrichtung geladen, ein Gleichspannungswandler ersetzt den Generator. Ein Hybrid besitzt beides.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P3 (Kraftstofftank beziehungsweise Akkumulator)",
+              "P8",
+              "P11",
+              "Ein Bordnetz braucht eine Energiequelle und einen Speicher als Puffer und Startenergie",
+              "Ohne Verbrennungsmotor fehlt der mechanische Generatorantrieb, das Bordnetz muss aus der Traktionsbatterie gespeist werden",
+              "Annahme ohne Quelle: entnehmbare Traktionsbatterien als Bauweise"
+            ],
+            "schluss": "Je nach Antriebsart besteht das Energieversorgungssystem aus Kraftstoffanlage, Traktionsenergiespeicher oder beiden sowie einer Bordnetzversorgung."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P11",
+          "text": "Fahrzeuge der Klasse L mit elektrisch betriebenen Antriebsmotoren, die nicht dauerhaft an das Netz angeschlossen sind, müssen in der EU so ausgelegt sein, dass elektrischer Antriebsstrang und mit der Hochspannungssammelschiene galvanisch verbundene Komponenten keine Gefährdung der elektrischen Sicherheit verursachen; anzuwenden sind die UN-ECE-Regelung Nr. 100 und die Norm ISO 13063. Der Kraftstoffspeicher ist ein eigener Gegenstand der EU-Typgenehmigung.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Anhang VIII, Gegenstand Elektrische Sicherheit (Anhang II (B) 3); Anhang II Teil C Nr. 8 Kraftstoffspeicher"
+            }
+          ],
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Lenksystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E39",
+      "absaetze": [
+        {
+          "absatz_id": "P12",
+          "text": "Bei Motorrädern unterscheidet man Steuerkopflenkung, Radnabenlenkung und Achsschenkellenkung. Am meisten verwendet wird die Steuerkopflenkung: Eine am Lenkkopf drehbare Vorderradführung überträgt die Lenkbewegung auf das Rad, meist eine Gabel, die Federung und Dämpfung übernimmt, seit den 1960er-Jahren überwiegend als Teleskopgabel. Gelenkt wird mit dem Lenker; das Zündschloss arretiert bei abgezogenem Schlüssel die Lenkung.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q5",
+              "fundstelle": "Abschnitte 6.7 Lenkung, 6.7.1 Steuerkopflenkung, 6.12 Anzeige- und Bedienelemente"
+            }
+          ],
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P13",
+          "text": "Das Lenksystem besteht aus Lenker, Gabelbrücken und Lenkkopflager, optional ergänzt um einen Lenkungsdämpfer. Die Lenkbewegung gelangt vom Lenker über die im Lenkkopflager drehbaren Gabelbrücken in die Vorderradführung und an das Vorderrad. Eine Lenkunterstützung entfällt. Weil das einspurige Fahrzeug in Schräglage Kurven fährt, wirkt das Lenksystem eng mit Fahrwerksgeometrie und Reifen zusammen. Radnaben- und Achsschenkellenkung trennen Lenkung und Federung und verlangen eine andere Vorderradaufnahme am Hauptrahmen.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P12",
+              "P5",
+              "Die Gabel muss gegenüber dem Rahmen drehbar gelagert und mit dem Lenker verbunden sein",
+              "Die Lenkkräfte eines leichten einspurigen Fahrzeugs bringt der Fahrer ohne Hilfskraft auf",
+              "Q5 Abschnitte 6.7.2 und 6.7.3: Radnabenlenkung mit Drehachse in der Radmitte, Achsschenkellenkung als eigene Vorderradführung"
+            ],
+            "schluss": "Die Grundbauweise des Lenksystems ist Lenker, Gabelbrücken und Lenkkopflager ohne Lenkunterstützung; andere Lenkungsbauarten ändern die Vorderradaufnahme."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Bremssystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E43",
+      "absaetze": [
+        {
+          "absatz_id": "P14",
+          "text": "Nach UN-Regelung Nr. 78, die für Fahrzeuge der Klassen L1 bis L5 gilt und von den sie anwendenden Vertragsparteien angewandt wird, braucht ein zweirädriges Fahrzeug der Klasse L3 zwei getrennte Betriebsbremsanlagen oder eine geteilte Betriebsbremsanlage mit mindestens einer Bremse am Vorderrad und einer am Hinterrad; eine eingebaute Feststellbremse braucht eine von der Betriebsbremse getrennte Betätigung. Ein Antiblockiersystem erkennt Radschlupf und regelt selbsttätig den Bremsdruck; Störungen zeigt eine gelbe Warnleuchte im Blickfeld des Fahrers. In der EU müssen neue Krafträder der Unterklasse L3e-A1 nach Wahl des Herstellers ein Antiblockiersystem, eine kombinierte Bremsanlage oder beides haben; Enduro- und Trial-Krafträder sind ausgenommen. Bei der kombinierten Bremsanlage betätigt eine einzige Betätigungseinrichtung mindestens zwei Bremsen an verschiedenen Rädern.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Abs. 1 Scope, 2.1, 5.1.4, 5.1.5, 5.1.11, 5.1.13 sowie 9.1"
+            },
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Art. 3 Nr. 23 bis 25; Anhang VIII, Gegenstand Verbindlicher Einbau verbesserter Bremssysteme, Buchst. a und Ausnahme"
+            }
+          ],
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P15",
+          "text": "Aktuelle Motorräder haben hydraulisch betätigte Scheibenbremsen; Trommelbremsen werden noch als Hinterradbremse bei Leichtkrafträdern geliefert. Am weitesten verbreitet ist die Betätigung der Vorderradbremse mit der rechten Hand und der Hinterradbremse mit dem rechten Fuß. Beim ältesten Kombinationsbremssystem betätigt der Handbremshebel nur eine der beiden Vorderradbremsscheiben, der Fußhebel die Hinterradbremse und die zweite Vorderradscheibe; aufwendigere Systeme betätigen bei Betätigung eines Bedienelements grundsätzlich beide Bremsen.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q5",
+              "fundstelle": "Abschnitte 6.10 Bremsanlage und 6.12 Anzeige- und Bedienelemente"
+            },
+            {
+              "quellen_id": "Q7",
+              "fundstelle": "Kap. 1 Einleitung, S. 5 (Bedienkonzepte von Kombinationsbremssystemen)"
+            }
+          ],
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P16",
+          "text": "Das Bremssystem verzögert das Fahrzeug. Die Betriebsbremse umfasst Bremshebel, Hauptbremszylinder, Leitungen sowie Vorderradbremse und Hinterradbremse: Der Hauptbremszylinder wandelt die Hebelkraft in Druck, der Bremssattel presst die Beläge an die Scheibe. Beim Antiblockiersystem melden Raddrehzahlsensoren an ein Hydraulikaggregat mit Steuergerät, das den Radbremsdruck moduliert. Die Kombibremse koppelt beide Kreise hydraulisch oder mechanisch. Ein Bremslichtschalter am Bremshebel schaltet die Bremsleuchte.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P14",
+              "P15",
+              "Q3 Abs. 2.5 (Bremsanlage aus Betätigung, Übertragung und Bremse) und 5.1.10 (Hauptbremszylinder bei hydraulischer Übertragung)",
+              "Zur Schlupfregelung braucht das Antiblockiersystem die Drehzahl jedes geregelten Rads und einen Druckmodulator",
+              "Annahme ohne Quelle: Kopplung der Kombibremse über Verteilventil oder Gestänge"
+            ],
+            "schluss": "Das Bremssystem gliedert sich in Betriebsbremse, Antiblockiersystem und gegebenenfalls Kombibremse mit hydraulischem Kraftfluss vom Bremshebel zu den Radbremsen."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Cockpit",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E53",
+      "absaetze": [
+        {
+          "absatz_id": "P17",
+          "text": "Ein Motorrad muss eine beleuchtete Geschwindigkeitsanzeige haben; daneben gibt es Kontrollleuchten für Leerlauf, Blinker, Fernlicht, Öldruck und Reserve. Am weitesten verbreitet ist die Bedienung mit Gangschaltung am linken Fuß, Kupplung an der linken Hand und Gasdrehgriff rechts; am rechten Lenkerschalter liegen Startknopf und Notausschalter, am linken Blinkerschalter, Hupe und Lichtschalter.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q5",
+              "fundstelle": "Abschnitte 6.12 Anzeige- und Bedienelemente und 6.12.1 Cockpit"
+            }
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P18",
+          "text": "Das Cockpit ist beim Leichtkraftrad kein geschlossener Raum, sondern der offene Fahrerarbeitsplatz. Der Fahrerplatz umfasst Sitzbank und Fußrasten, die Mensch-Maschine-Schnittstelle die Bedienelemente an Lenker und Fußrasten sowie das Kombiinstrument. Die Bedienelemente leiten Fahrereingaben über Seilzug, Gestänge oder elektrisch an Antrieb, Beleuchtung und Motorsteuergerät; das Kombiinstrument zeigt Geschwindigkeit, Zustände und Warnungen. Ein Rückhaltesystem fehlt. Bei Rollern mit stufenlosem Getriebe entfallen Kupplungshebel und Fußschalthebel.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P17",
+              "P2",
+              "P9 (Motorroller überwiegend mit stufenlosem Getriebe)",
+              "Fahrer und Beifahrer sitzen offen auf dem Fahrzeug, ohne Fahrgastzelle gibt es keinen Verankerungsraum für ein Rückhaltesystem",
+              "Ohne Schaltgetriebe mit Handkupplung gibt es nichts zu kuppeln und zu schalten"
+            ],
+            "schluss": "Das Cockpit besteht aus Fahrerplatz und Mensch-Maschine-Schnittstelle; seine Bedienelemente hängen von Getriebebauart und Ausstattung ab."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Aufbau und Ladung",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E60",
+      "absaetze": [
+        {
+          "absatz_id": "P19",
+          "text": "Das Hauptsystem Aufbau und Ladung nimmt Beifahrer und Gepäck auf: einen Gepäckträger am Heckrahmen, gegebenenfalls mit Koffern, die Halteeinrichtungen und Fußstützen für Beifahrer und optional eine Anhängevorrichtung; Roller können ein Staufach unter der Sitzbank bieten. Die Lasten wirken über den Heckrahmen auf Hauptrahmen, Federbein und Hinterrad und verschieben den Schwerpunkt, was Fahrverhalten, Federung und Bremskraftverteilung beeinflusst.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "Q1 Anhang II Teil C Nr. 12 (Halteeinrichtungen und Fußstützen für Beifahrer) und Nr. 10 (Massen und Abmessungen)",
+              "Q6 Einleitung (Anhängerkupplungen am Rahmen befestigt)",
+              "P5",
+              "Zusätzliche Masse über dem Heck erhöht die Hinterradlast und verschiebt den Schwerpunkt nach hinten und oben",
+              "Annahme ohne Quelle: Staufach unter der Sitzbank bei Rollern"
+            ],
+            "schluss": "Aufbau und Ladung umfasst Gepäckträger, Beifahrereinrichtungen und optionale Anhängevorrichtung, deren Lasten über den Heckrahmen in das Fahrwerk gehen."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Elektrik und Elektronik",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E64",
+      "absaetze": [
+        {
+          "absatz_id": "P20",
+          "text": "Im Zuge der Digitalisierung übernehmen bei Serienmotorrädern zunehmend digitale Steuergeräte die Steuerung der Komponenten, verbunden über Systembusse wie CAN oder LIN. Moderne Motorräder haben Motorsteuerungs-, Informations- und Fahrerassistenzsysteme wie Antiblockiersystem und Traktionskontrolle.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q5",
+              "fundstelle": "Abschnitt 6.11 Elektrik und Elektronik"
+            }
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P21",
+          "text": "Das Hauptsystem Elektrik und Elektronik verteilt elektrische Energie und verbindet die Steuergeräte. Das Niedervolt-Bordnetz aus Leitungssatz, Sicherungen und Stromverteiler versorgt Motorsteuergerät, Zündung und Einspritzung, Antiblockiersystem, Beleuchtung, Kombiinstrument und Kühlerlüfter. Ein Fahrzeugbus verbindet bei umfangreicher Ausstattung Motorsteuergerät, Antiblockiersystem und Kombiinstrument; einfache Ausführungen kommen mit Einzelverdrahtung aus.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P10",
+              "P20",
+              "Jeder elektrische Verbraucher braucht eine abgesicherte Zuleitung aus dem Bordnetz",
+              "Annahme ohne Quelle über den Ausstattungsumfang einfacher Leichtkrafträder"
+            ],
+            "schluss": "Das Niedervolt-Bordnetz verbindet Bordnetzversorgung und Verbraucher; ein Fahrzeugbus ist eine Ausstattungsvariante."
+          },
+          "sicherheit": "gering",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrzeugsteuerung und Information",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E70",
+      "absaetze": [
+        {
+          "absatz_id": "P22",
+          "text": "Gegenstände der EU-Typgenehmigung von Fahrzeugen der Klasse L sind unter anderem On-Board-Diagnosesysteme, die bauartbezogene Begrenzung der maximalen Nenndauer- oder Nutzleistung und Maßnahmen betreffend unbefugte Eingriffe. Für neu zugelassene Leichtkrafträder gilt seit dem 1. Januar 2017 die Abgasnorm Euro 4 einschließlich On-Board-Diagnose.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Anhang II Teil B Nr. 17, Teil C Nr. 1 und Nr. 11"
+            },
+            {
+              "quellen_id": "Q4",
+              "fundstelle": "Abschnitt Geschichte, letzter Absatz"
+            }
+          ],
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P23",
+          "text": "Das Hauptsystem Fahrzeugsteuerung und Information koordiniert systemübergreifende Funktionen. Das Motorsteuergerät bestimmt aus Gasgriffstellung, Drehzahl und Temperaturen Einspritzung und Zündung, steuert beim Elektroantrieb die Leistungselektronik an und begrenzt die Antriebsleistung auf die Klassengrenze, die deshalb gegen Manipulation zu schützen ist. Die Diagnose speichert Fehler, meldet sie über das Kombiinstrument und ist über eine Diagnoseschnittstelle zugänglich.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P1 (Leistungsgrenze bestimmt die Einstufung)",
+              "P22",
+              "P8",
+              "Eine elektronische Leistungsbegrenzung muss dort wirken, wo die Leistung gestellt wird, also im Motorsteuergerät oder in der Leistungselektronik",
+              "Eine On-Board-Diagnose braucht Fehlerspeicher, Fahreranzeige und Zugang für die Werkstatt"
+            ],
+            "schluss": "Motorsteuergerät und Diagnose bilden den Kern der Fahrzeugsteuerung; das Motorsteuergerät setzt die Leistungsgrenze der Klasse durch."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrerassistenz und Sicherheit",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E73",
+      "absaetze": [
+        {
+          "absatz_id": "P24",
+          "text": "Das Hauptsystem Fahrerassistenz und Sicherheit ist beim Leichtkraftrad schmal. Die Betriebssicherung umfasst Notausschalter, Seitenständerschalter und eine Sicherung gegen unbefugte Benutzung wie Lenkschloss oder Wegfahrsperre; Notausschalter und Seitenständerschalter melden an das Motorsteuergerät, das den Motor abstellt oder den Start sperrt. Eine Antriebsschlupfregelung nutzt die Raddrehzahlsensoren des Antiblockiersystems und fordert beim Durchdrehen des Hinterrads weniger Moment an. Hinzu kommt eine Hupe als akustische Warneinrichtung; Umfeldsensorik gehört nicht zur Grundbauweise.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P17 (Notausschalter, Hupe)",
+              "P12 (Zündschloss arretiert die Lenkung)",
+              "P20 (Traktionskontrolle an modernen Motorrädern)",
+              "Q1 Anhang II Teil B Nr. 1 (akustische Warneinrichtungen) und Teil C Nr. 5 (Sicherungen gegen unbefugte Benutzung)",
+              "Eine Schlupfregelung am Antriebsrad braucht Drehzahlen von angetriebenem und nicht angetriebenem Rad",
+              "Annahme ohne Quelle: Seitenständerschalter und Fehlen von Umfeldsensorik in der Klasse"
+            ],
+            "schluss": "Fahrerassistenz und Sicherheit umfasst beim Leichtkraftrad Betriebssicherung, optionale Antriebsschlupfregelung und Hupe."
+          },
+          "sicherheit": "gering",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Beleuchtung und Sicht",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E80",
+      "absaetze": [
+        {
+          "absatz_id": "P25",
+          "text": "Zur Verbesserung der Sichtbarkeit durch automatisches Einschalten der Beleuchtung müssen Fahrzeuge der Klasse L3e in der EU nach Wahl des Herstellers Beleuchtungs- und Lichtsignaleinrichtungen nach UN-ECE-Regelung Nr. 53 oder eigene Tagfahrleuchten nach UN-ECE-Regelung Nr. 87 haben. In Deutschland sind an Krafträdern Schlussleuchte und Rückstrahler, Fahrtrichtungsanzeiger, ein Rückspiegel und bei mehr als 50 km/h Höchstgeschwindigkeit Bremsleuchten vorgeschrieben; ab Erstzulassung 17. Juni 2003 braucht ein Kraftrad ab 45 km/h rechts einen zweiten Rückspiegel.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Anhang VIII, Gegenstand Verbesserung der Sichtbarkeit des Fahrzeugs und des Fahrers durch automatisches Einschalten der Beleuchtungseinrichtung, Buchst. b"
+            },
+            {
+              "quellen_id": "Q5",
+              "fundstelle": "Abschnitt 6.13 Lichttechnische Einrichtungen und Spiegel"
+            }
+          ],
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P26",
+          "text": "Das Hauptsystem Beleuchtung und Sicht umfasst die Beleuchtungseinrichtungen mit Scheinwerfer, Leuchten, Signalleuchten und gegebenenfalls Tagfahrleuchten sowie die Rückspiegel am Lenker oder an der Verkleidung. Das Niedervolt-Bordnetz versorgt sie, Lenkerschalter und Bremslichtschalter steuern sie. Die Wahl zwischen automatisch eingeschaltetem Abblendlicht und eigenen Tagfahrleuchten bestimmt Schaltlogik und Last der Bordnetzversorgung.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P25",
+              "P17 (Blinker- und Lichtschalter am linken Lenkerschalter)",
+              "P21",
+              "P16 (Bremslichtschalter)",
+              "Dauerhaft eingeschaltete Leuchten belasten die Bordnetzversorgung je nach Leistungsaufnahme"
+            ],
+            "schluss": "Die Beleuchtungseinrichtungen hängen elektrisch am Niedervolt-Bordnetz und informationstechnisch an Bedienelementen und Bremse; die Sichtbarkeitslösung ist eine Variante."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Thermomanagement",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E87",
+      "absaetze": [
+        {
+          "absatz_id": "P27",
+          "text": "Das Thermomanagement regelt die Betriebstemperatur des Motors samt Getriebeöl und beim Elektroantrieb von Traktionsmaschine, Leistungselektronik und Traktionsbatterie. Bei Luftkühlung geben Kühlrippen an Zylinder und Zylinderkopf die Wärme an den Fahrtwind ab. Bei Flüssigkeitskühlung fördert im Kühlkreislauf die Kühlmittelpumpe das Kühlmittel durch den Motor zum Kühler, ein Kühlerlüfter kühlt im Stand; der Kühler braucht Anströmung an Rahmen oder Verkleidung, das Kombiinstrument eine Temperaturanzeige. Eine Klimatisierung entfällt.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "Q4 Abschnitt Geschichte: Leichtkrafträder luftgekühlt und mit Wasserkühlung angeboten",
+              "Q5 Abschnitte 6.5 (gemeinsamer Ölkreislauf von Motor und Getriebe) und 6.12.1 (Kühlmitteltemperaturanzeige im Cockpit eines Leichtkraftrads)",
+              "Verlustwärme von Motor, Maschine, Elektronik und Batterie muss an die Umgebung abgeführt werden",
+              "Im Stand fehlt der Fahrtwind",
+              "Ohne geschlossenen Bedienraum gibt es nichts zu klimatisieren"
+            ],
+            "schluss": "Das Thermomanagement besteht je nach Kühlungsart aus Kühlrippen oder einem Kühlkreislauf mit Kühler, Kühlmittelpumpe und Kühlerlüfter."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Zusammenfassung",
+      "abschnittstyp": "gesamtsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P28",
+          "text": "Auf oberster Ebene besteht das Leichtkraftrad aus Fahrzeugstruktur und Fahrwerk, Antriebssystem, Energieversorgungssystem, Lenksystem, Bremssystem, Cockpit, Aufbau und Ladung, Elektrik und Elektronik, Fahrzeugsteuerung und Information, Fahrerassistenz und Sicherheit, Beleuchtung und Sicht sowie Thermomanagement. Neben- und Versorgungssysteme wie Druckluft oder Nebenabtrieb fehlen. Klassenprägend sind die vom Motorsteuergerät durchgesetzte Leistungsgrenze und das verbesserte Bremssystem.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P1",
+              "P5",
+              "P8",
+              "P10",
+              "P13",
+              "P14",
+              "P18",
+              "P19",
+              "P21",
+              "P23",
+              "P24",
+              "P26",
+              "P27"
+            ],
+            "schluss": "Die zwölf beschriebenen Hauptsysteme bilden die oberste Ebene; Leistungsgrenze und verbessertes Bremssystem unterscheiden das Leichtkraftrad von anderen Krafträdern."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Modellierungsbezug",
+      "abschnittstyp": "modellierung",
+      "absaetze": [
+        {
+          "absatz_id": "P29",
+          "text": "Für SysML bildet der Block `Leichtkraftrad` das Gesamtsystem mit den Hauptsystemen als Bestandteilen. Dekompositionspfade sind etwa `Antriebssystem → Kraftübertragung → Endantrieb`, `Bremssystem → Antiblockiersystem → Raddrehzahlsensoren`, `Fahrzeugstruktur und Fahrwerk → Fahrwerk → Hinterradschwinge` und `Energieversorgungssystem → Bordnetzversorgung → Generator`. Ports bilden Lenkkopf und Hinterradnabe, Bremsleitungen, Kraftstoffzulauf, Batterieanschlüsse, Signalleitungen und Fahrzeugbus ab. Antriebsart, Bauform, Endantrieb und Bremsausstattung werden als Varianten modelliert. Geeignet sind Blockdefinitionsdiagramme, Interne Blockdiagramme und Aktivitätsdiagramme.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P5",
+              "P8",
+              "P10",
+              "P16",
+              "Strukturelle Dekomposition wird in SysML als Komposition von Blöcken, Flüsse über Ports und Konnektoren abgebildet"
+            ],
+            "schluss": "Die Dekomposition des Artikels lässt sich unmittelbar in eine SysML-Blockstruktur mit Ports für die benannten Schnittstellen und Varianten überführen."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Flüsse",
+      "abschnittstyp": "fluesse",
+      "absaetze": [
+        {
+          "absatz_id": "P30",
+          "text": "Stoff: Kraftstofftank, Kraftstoffpumpe, Verbrennungsmotor; Luft über die Ansauganlage, Abgas über Abgasanlage und Abgasnachbehandlung. Mechanisch: Verbrennungsmotor oder Traktionsmaschine über Kupplung, Getriebe und Endantrieb zum Hinterrad; Kurbelwelle zum Generator; Radkräfte über Vorderradführung, Hinterradschwinge und Federbein in den Rahmen. Elektrisch: Generator, Laderegler, Starterbatterie ins Niedervolt-Bordnetz; Ladeeinrichtung zur Traktionsbatterie, von dort zur Leistungselektronik und über den Gleichspannungswandler ins Bordnetz. Hydraulisch: Hauptbremszylinder über Kombibremse und Hydraulikaggregat zu den Radbremsen. Information: Bedienelemente, Raddrehzahlsensoren, Notausschalter und Seitenständerschalter an Motorsteuergerät, Hydraulikaggregat und Antriebsschlupfregelung, über den Fahrzeugbus an das Kombiinstrument. Thermisch: Motor an Kühler oder Kühlrippen.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P5",
+              "P8",
+              "P10",
+              "P16",
+              "P21",
+              "P23",
+              "P24",
+              "P27",
+              "Jeder Fluss braucht Ursprung und Ziel im Modell"
+            ],
+            "schluss": "Die genannten Flüsse verbinden alle Hauptsysteme und entsprechen den Flüssen des Modellblocks."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Perspektiven",
+      "abschnittstyp": "perspektiven",
+      "absaetze": [
+        {
+          "absatz_id": "P31",
+          "text": "Physisch zerlegt sich das Leichtkraftrad in die beschriebenen Hauptsysteme, Subsysteme und Komponenten. Funktional gilt: Fahrzeuglasten tragen Rahmen und Fahrwerk; Fahrzeug im Stand abstützen der Ständer; Energie speichern Kraftstofftank, Traktionsbatterie und Starterbatterie; Treibstoff fördern die Kraftstoffpumpe; Traktionsbatterie laden die Ladeeinrichtung; Elektrische Energie verteilen Niedervolt-Bordnetz, Generator, Laderegler und Gleichspannungswandler; Antriebsleistung erzeugen Verbrennungsmotor, Traktionsmaschine und Leistungselektronik; Drehmoment übertragen die Kraftübertragung; Fahrzeug fortbewegen Endantrieb sowie Räder und Reifen; Bremsenergie zurückgewinnen die Traktionsmaschine; Fahrzeug lenken das Lenksystem; Fahrzeug verzögern Betriebsbremse, Antiblockiersystem und Kombibremse; Antriebsleistung begrenzen das Motorsteuergerät; Fahrzeugzustand überwachen Diagnose, Motorsteuergerät und Seitenständerschalter; Daten übertragen der Fahrzeugbus; Fahrereingaben erfassen Bedienelemente, Bremshebel und Notausschalter; Fahrerinformationen anzeigen das Kombiinstrument; Ladung aufnehmen Gepäckträger, Sitzbank sowie Halteeinrichtungen und Fußstützen für Beifahrer; Anhänger ziehen die Anhängevorrichtung; Antriebsschlupf begrenzen die Antriebsschlupfregelung; Fahrzeug gegen unbefugte Benutzung sichern die Sicherung gegen unbefugte Benutzung; Akustische Warnsignale abgeben die Hupe; Fahrzeugumgebung ausleuchten der Scheinwerfer; Lichtsignale abgeben Leuchten, Signalleuchten und Tagfahrleuchten; Fahrersicht sicherstellen die Rückspiegel; Betriebstemperatur regeln Kühlkreislauf und Kühlrippen.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "Funktionsblock des Modells",
+              "Jede Funktion braucht ein ausführendes Element",
+              "P5 bis P27"
+            ],
+            "schluss": "Alle Funktionen des Modells sind den ausführenden Systemen und Komponenten zugeordnet."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    }
+  ],
+  "modell": {
+    "elemente": [
+      {"id": "E1", "name": "Leichtkraftrad", "typ": "gesamtsystem", "eltern_id": null, "absatz_ids": ["P1", "P2", "P28", "P29"]},
+      {"id": "E2", "name": "Fahrzeugstruktur und Fahrwerk", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P5", "P28", "P29"], "kategorie": "struktur_fahrwerk"},
+      {"id": "E3", "name": "Rahmen", "typ": "subsystem", "eltern_id": "E2", "absatz_ids": ["P3", "P4", "P5", "P6"]},
+      {"id": "E4", "name": "Hauptrahmen", "typ": "komponente", "eltern_id": "E3", "absatz_ids": ["P5", "P13", "P19"]},
+      {"id": "E5", "name": "Heckrahmen", "typ": "komponente", "eltern_id": "E3", "absatz_ids": ["P5", "P19"]},
+      {"id": "E6", "name": "Verkleidung", "typ": "komponente", "eltern_id": "E3", "absatz_ids": ["P5", "P26", "P27"]},
+      {"id": "E7", "name": "Fahrwerk", "typ": "subsystem", "eltern_id": "E2", "absatz_ids": ["P5", "P29"]},
+      {"id": "E8", "name": "Vorderradführung", "typ": "komponente", "eltern_id": "E7", "absatz_ids": ["P5", "P12", "P13"]},
+      {"id": "E9", "name": "Hinterradschwinge", "typ": "komponente", "eltern_id": "E7", "absatz_ids": ["P5", "P6", "P29"]},
+      {"id": "E10", "name": "Federbein", "typ": "komponente", "eltern_id": "E7", "absatz_ids": ["P5", "P19"]},
+      {"id": "E11", "name": "Räder und Reifen", "typ": "komponente", "eltern_id": "E7", "absatz_ids": ["P4", "P5"]},
+      {"id": "E12", "name": "Ständer", "typ": "komponente", "eltern_id": "E2", "absatz_ids": ["P5"]},
+      {"id": "E13", "name": "Antriebssystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P8", "P28", "P29"], "kategorie": "antrieb"},
+      {"id": "E14", "name": "Verbrennungsantrieb", "typ": "subsystem", "eltern_id": "E13", "absatz_ids": ["P8"]},
+      {"id": "E15", "name": "Verbrennungsmotor", "typ": "komponente", "eltern_id": "E14", "absatz_ids": ["P3", "P7", "P8"]},
+      {"id": "E16", "name": "Ansauganlage", "typ": "komponente", "eltern_id": "E14", "absatz_ids": ["P8"]},
+      {"id": "E17", "name": "Abgasanlage", "typ": "komponente", "eltern_id": "E14", "absatz_ids": ["P8"]},
+      {"id": "E18", "name": "Abgasnachbehandlung", "typ": "komponente", "eltern_id": "E14", "absatz_ids": ["P8"]},
+      {"id": "E19", "name": "Startvorrichtung", "typ": "komponente", "eltern_id": "E14", "absatz_ids": ["P8"]},
+      {"id": "E20", "name": "Elektroantrieb", "typ": "subsystem", "eltern_id": "E13", "absatz_ids": ["P8"]},
+      {"id": "E21", "name": "Traktionsmaschine", "typ": "komponente", "eltern_id": "E20", "absatz_ids": ["P8", "P27"]},
+      {"id": "E22", "name": "Leistungselektronik", "typ": "komponente", "eltern_id": "E20", "absatz_ids": ["P8", "P23", "P27"]},
+      {"id": "E23", "name": "Kraftübertragung", "typ": "subsystem", "eltern_id": "E13", "absatz_ids": ["P8", "P29"]},
+      {"id": "E24", "name": "Kupplung", "typ": "komponente", "eltern_id": "E23", "absatz_ids": ["P8", "P9", "P17"]},
+      {"id": "E25", "name": "Getriebe", "typ": "komponente", "eltern_id": "E23", "absatz_ids": ["P3", "P8", "P9"]},
+      {"id": "E26", "name": "Endantrieb", "typ": "komponente", "eltern_id": "E23", "absatz_ids": ["P3", "P8", "P9", "P6"]},
+      {"id": "E27", "name": "Energieversorgungssystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P10", "P28", "P29"], "kategorie": "energieversorgung"},
+      {"id": "E28", "name": "Kraftstoffanlage", "typ": "subsystem", "eltern_id": "E27", "absatz_ids": ["P10"]},
+      {"id": "E29", "name": "Kraftstofftank", "typ": "komponente", "eltern_id": "E28", "absatz_ids": ["P3", "P4", "P10"]},
+      {"id": "E30", "name": "Kraftstoffpumpe", "typ": "komponente", "eltern_id": "E28", "absatz_ids": ["P10"]},
+      {"id": "E31", "name": "Traktionsenergiespeicher", "typ": "subsystem", "eltern_id": "E27", "absatz_ids": ["P10", "P11"]},
+      {"id": "E32", "name": "Traktionsbatterie", "typ": "komponente", "eltern_id": "E31", "absatz_ids": ["P10", "P27"]},
+      {"id": "E33", "name": "Ladeeinrichtung", "typ": "komponente", "eltern_id": "E31", "absatz_ids": ["P10"]},
+      {"id": "E34", "name": "Gleichspannungswandler", "typ": "komponente", "eltern_id": "E31", "absatz_ids": ["P10"]},
+      {"id": "E35", "name": "Bordnetzversorgung", "typ": "subsystem", "eltern_id": "E27", "absatz_ids": ["P10", "P26", "P29"]},
+      {"id": "E36", "name": "Generator", "typ": "komponente", "eltern_id": "E35", "absatz_ids": ["P10", "P29"]},
+      {"id": "E37", "name": "Laderegler", "typ": "komponente", "eltern_id": "E35", "absatz_ids": ["P10"]},
+      {"id": "E38", "name": "Starterbatterie", "typ": "komponente", "eltern_id": "E35", "absatz_ids": ["P10"]},
+      {"id": "E39", "name": "Lenksystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P13", "P28"], "kategorie": "lenkung"},
+      {"id": "E40", "name": "Lenker", "typ": "komponente", "eltern_id": "E39", "absatz_ids": ["P12", "P13"]},
+      {"id": "E41", "name": "Gabelbrücken", "typ": "komponente", "eltern_id": "E39", "absatz_ids": ["P13"]},
+      {"id": "E42", "name": "Lenkkopflager", "typ": "komponente", "eltern_id": "E39", "absatz_ids": ["P13"]},
+      {"id": "E43", "name": "Bremssystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P16", "P28", "P29"], "kategorie": "bremse"},
+      {"id": "E44", "name": "Betriebsbremse", "typ": "subsystem", "eltern_id": "E43", "absatz_ids": ["P14", "P16"]},
+      {"id": "E45", "name": "Bremshebel", "typ": "komponente", "eltern_id": "E44", "absatz_ids": ["P15", "P16"]},
+      {"id": "E46", "name": "Hauptbremszylinder", "typ": "komponente", "eltern_id": "E44", "absatz_ids": ["P16"]},
+      {"id": "E47", "name": "Vorderradbremse", "typ": "komponente", "eltern_id": "E44", "absatz_ids": ["P15", "P16"]},
+      {"id": "E48", "name": "Hinterradbremse", "typ": "komponente", "eltern_id": "E44", "absatz_ids": ["P15", "P16"]},
+      {"id": "E49", "name": "Antiblockiersystem", "typ": "subsystem", "eltern_id": "E43", "absatz_ids": ["P14", "P16", "P29"]},
+      {"id": "E50", "name": "Raddrehzahlsensoren", "typ": "komponente", "eltern_id": "E49", "absatz_ids": ["P16", "P24", "P29"]},
+      {"id": "E51", "name": "Hydraulikaggregat", "typ": "komponente", "eltern_id": "E49", "absatz_ids": ["P16"]},
+      {"id": "E52", "name": "Kombibremse", "typ": "komponente", "eltern_id": "E43", "absatz_ids": ["P14", "P15", "P16"]},
+      {"id": "E53", "name": "Cockpit", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P18", "P28"], "kategorie": "bedienraum"},
+      {"id": "E54", "name": "Fahrerplatz", "typ": "subsystem", "eltern_id": "E53", "absatz_ids": ["P18"]},
+      {"id": "E55", "name": "Sitzbank", "typ": "komponente", "eltern_id": "E54", "absatz_ids": ["P5", "P18", "P19"]},
+      {"id": "E56", "name": "Fußrasten", "typ": "komponente", "eltern_id": "E54", "absatz_ids": ["P18"]},
+      {"id": "E57", "name": "Mensch-Maschine-Schnittstelle", "typ": "subsystem", "eltern_id": "E53", "absatz_ids": ["P18"]},
+      {"id": "E58", "name": "Bedienelemente", "typ": "komponente", "eltern_id": "E57", "absatz_ids": ["P17", "P18"]},
+      {"id": "E59", "name": "Kombiinstrument", "typ": "komponente", "eltern_id": "E57", "absatz_ids": ["P17", "P18", "P23"]},
+      {"id": "E60", "name": "Aufbau und Ladung", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P19", "P28"], "kategorie": "aufbau_nutzlast"},
+      {"id": "E61", "name": "Gepäckträger", "typ": "komponente", "eltern_id": "E60", "absatz_ids": ["P5", "P19"]},
+      {"id": "E62", "name": "Halteeinrichtungen und Fußstützen für Beifahrer", "typ": "komponente", "eltern_id": "E60", "absatz_ids": ["P19"]},
+      {"id": "E63", "name": "Anhängevorrichtung", "typ": "komponente", "eltern_id": "E60", "absatz_ids": ["P19"]},
+      {"id": "E64", "name": "Elektrik und Elektronik", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P21", "P28"], "kategorie": "elektrik_elektronik"},
+      {"id": "E65", "name": "Niedervolt-Bordnetz", "typ": "subsystem", "eltern_id": "E64", "absatz_ids": ["P21", "P26"]},
+      {"id": "E66", "name": "Leitungssatz", "typ": "komponente", "eltern_id": "E65", "absatz_ids": ["P21"]},
+      {"id": "E67", "name": "Sicherungen", "typ": "komponente", "eltern_id": "E65", "absatz_ids": ["P21"]},
+      {"id": "E68", "name": "Stromverteiler", "typ": "komponente", "eltern_id": "E65", "absatz_ids": ["P21"]},
+      {"id": "E69", "name": "Fahrzeugbus", "typ": "komponente", "eltern_id": "E64", "absatz_ids": ["P20", "P21", "P29"]},
+      {"id": "E70", "name": "Fahrzeugsteuerung und Information", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P23", "P28"], "kategorie": "steuerung_information"},
+      {"id": "E71", "name": "Motorsteuergerät", "typ": "komponente", "eltern_id": "E70", "absatz_ids": ["P20", "P23", "P24"]},
+      {"id": "E72", "name": "Diagnose", "typ": "komponente", "eltern_id": "E70", "absatz_ids": ["P22", "P23"]},
+      {"id": "E73", "name": "Fahrerassistenz und Sicherheit", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P24", "P28"], "kategorie": "assistenz_sicherheit"},
+      {"id": "E74", "name": "Betriebssicherung", "typ": "subsystem", "eltern_id": "E73", "absatz_ids": ["P24"]},
+      {"id": "E75", "name": "Notausschalter", "typ": "komponente", "eltern_id": "E74", "absatz_ids": ["P17", "P24"]},
+      {"id": "E76", "name": "Seitenständerschalter", "typ": "komponente", "eltern_id": "E74", "absatz_ids": ["P24"]},
+      {"id": "E77", "name": "Sicherung gegen unbefugte Benutzung", "typ": "komponente", "eltern_id": "E74", "absatz_ids": ["P12", "P24"]},
+      {"id": "E78", "name": "Antriebsschlupfregelung", "typ": "komponente", "eltern_id": "E73", "absatz_ids": ["P20", "P24"]},
+      {"id": "E79", "name": "Hupe", "typ": "komponente", "eltern_id": "E73", "absatz_ids": ["P17", "P24"]},
+      {"id": "E80", "name": "Beleuchtung und Sicht", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P26", "P28"], "kategorie": "beleuchtung_sicht"},
+      {"id": "E81", "name": "Beleuchtungseinrichtungen", "typ": "subsystem", "eltern_id": "E80", "absatz_ids": ["P25", "P26"]},
+      {"id": "E82", "name": "Scheinwerfer", "typ": "komponente", "eltern_id": "E81", "absatz_ids": ["P26"]},
+      {"id": "E83", "name": "Leuchten", "typ": "komponente", "eltern_id": "E81", "absatz_ids": ["P25", "P26"]},
+      {"id": "E84", "name": "Signalleuchten", "typ": "komponente", "eltern_id": "E81", "absatz_ids": ["P25", "P26"]},
+      {"id": "E85", "name": "Tagfahrleuchten", "typ": "komponente", "eltern_id": "E81", "absatz_ids": ["P25", "P26"]},
+      {"id": "E86", "name": "Rückspiegel", "typ": "komponente", "eltern_id": "E80", "absatz_ids": ["P25", "P26"]},
+      {"id": "E87", "name": "Thermomanagement", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P27", "P28"], "kategorie": "thermomanagement"},
+      {"id": "E88", "name": "Kühlkreislauf", "typ": "subsystem", "eltern_id": "E87", "absatz_ids": ["P27"]},
+      {"id": "E89", "name": "Kühler", "typ": "komponente", "eltern_id": "E88", "absatz_ids": ["P27"]},
+      {"id": "E90", "name": "Kühlmittelpumpe", "typ": "komponente", "eltern_id": "E88", "absatz_ids": ["P27"]},
+      {"id": "E91", "name": "Kühlerlüfter", "typ": "komponente", "eltern_id": "E88", "absatz_ids": ["P21", "P27"]},
+      {"id": "E92", "name": "Kühlrippen", "typ": "komponente", "eltern_id": "E87", "absatz_ids": ["P27"]}
+    ],
+    "funktionen": [
+      {"id": "F1", "name": "Fahrzeuglasten tragen", "ausgefuehrt_von": ["E3", "E7"], "absatz_ids": ["P4", "P5"]},
+      {"id": "F2", "name": "Fahrzeug im Stand abstützen", "ausgefuehrt_von": ["E12"], "absatz_ids": ["P5"]},
+      {"id": "F3", "name": "Energie speichern", "ausgefuehrt_von": ["E29", "E32", "E38"], "absatz_ids": ["P10"]},
+      {"id": "F4", "name": "Treibstoff fördern", "ausgefuehrt_von": ["E30"], "absatz_ids": ["P10"]},
+      {"id": "F5", "name": "Traktionsbatterie laden", "ausgefuehrt_von": ["E33"], "absatz_ids": ["P10"]},
+      {"id": "F6", "name": "Elektrische Energie verteilen", "ausgefuehrt_von": ["E65", "E36", "E37", "E34"], "absatz_ids": ["P10", "P21"]},
+      {"id": "F7", "name": "Antriebsleistung erzeugen", "ausgefuehrt_von": ["E15", "E21", "E22"], "absatz_ids": ["P8"]},
+      {"id": "F8", "name": "Drehmoment übertragen", "ausgefuehrt_von": ["E23"], "absatz_ids": ["P8", "P9"]},
+      {"id": "F9", "name": "Fahrzeug fortbewegen", "ausgefuehrt_von": ["E26", "E11"], "absatz_ids": ["P8"]},
+      {"id": "F10", "name": "Bremsenergie zurückgewinnen", "ausgefuehrt_von": ["E21"], "absatz_ids": ["P8"]},
+      {"id": "F11", "name": "Fahrzeug lenken", "ausgefuehrt_von": ["E39"], "absatz_ids": ["P12", "P13"]},
+      {"id": "F12", "name": "Fahrzeug verzögern", "ausgefuehrt_von": ["E44", "E49", "E52"], "absatz_ids": ["P14", "P16"]},
+      {"id": "F13", "name": "Antriebsleistung begrenzen", "ausgefuehrt_von": ["E71"], "absatz_ids": ["P23"]},
+      {"id": "F14", "name": "Fahrzeugzustand überwachen", "ausgefuehrt_von": ["E72", "E71", "E76"], "absatz_ids": ["P23", "P24"]},
+      {"id": "F15", "name": "Daten übertragen", "ausgefuehrt_von": ["E69"], "absatz_ids": ["P21"]},
+      {"id": "F16", "name": "Fahrereingaben erfassen", "ausgefuehrt_von": ["E58", "E45", "E75"], "absatz_ids": ["P17", "P18"]},
+      {"id": "F17", "name": "Fahrerinformationen anzeigen", "ausgefuehrt_von": ["E59"], "absatz_ids": ["P17", "P18"]},
+      {"id": "F18", "name": "Ladung aufnehmen", "ausgefuehrt_von": ["E61", "E62", "E55"], "absatz_ids": ["P19"]},
+      {"id": "F19", "name": "Anhänger ziehen", "ausgefuehrt_von": ["E63"], "absatz_ids": ["P19"]},
+      {"id": "F20", "name": "Antriebsschlupf begrenzen", "ausgefuehrt_von": ["E78"], "absatz_ids": ["P24"]},
+      {"id": "F21", "name": "Fahrzeug gegen unbefugte Benutzung sichern", "ausgefuehrt_von": ["E77"], "absatz_ids": ["P24"]},
+      {"id": "F22", "name": "Akustische Warnsignale abgeben", "ausgefuehrt_von": ["E79"], "absatz_ids": ["P24"]},
+      {"id": "F23", "name": "Fahrzeugumgebung ausleuchten", "ausgefuehrt_von": ["E82"], "absatz_ids": ["P26"]},
+      {"id": "F24", "name": "Lichtsignale abgeben", "ausgefuehrt_von": ["E83", "E84", "E85"], "absatz_ids": ["P25", "P26"]},
+      {"id": "F25", "name": "Fahrersicht sicherstellen", "ausgefuehrt_von": ["E86"], "absatz_ids": ["P25", "P26"]},
+      {"id": "F26", "name": "Betriebstemperatur regeln", "ausgefuehrt_von": ["E88", "E92"], "absatz_ids": ["P27"]}
+    ],
+    "fluesse": [
+      {"id": "S1", "von": "E29", "nach": "E30", "art": "stoff", "medium": "Kraftstoff", "absatz_ids": ["P10", "P30"]},
+      {"id": "S2", "von": "E30", "nach": "E15", "art": "stoff", "medium": "Kraftstoff", "absatz_ids": ["P10", "P30"], "schnittstelle": "Kraftstoffzulauf zum Motor"},
+      {"id": "S3", "von": "E16", "nach": "E15", "art": "stoff", "medium": "Verbrennungsluft", "absatz_ids": ["P8", "P30"]},
+      {"id": "S4", "von": "E15", "nach": "E17", "art": "stoff", "medium": "Abgas", "absatz_ids": ["P8", "P30"]},
+      {"id": "S5", "von": "E17", "nach": "E18", "art": "stoff", "medium": "Abgas", "absatz_ids": ["P8", "P30"]},
+      {"id": "S6", "von": "E15", "nach": "E24", "art": "mechanisch", "medium": "Drehmoment", "absatz_ids": ["P8", "P30"]},
+      {"id": "S7", "von": "E24", "nach": "E25", "art": "mechanisch", "medium": "Drehmoment", "absatz_ids": ["P8", "P30"]},
+      {"id": "S8", "von": "E25", "nach": "E26", "art": "mechanisch", "medium": "Drehmoment", "absatz_ids": ["P8", "P9", "P30"]},
+      {"id": "S9", "von": "E26", "nach": "E11", "art": "mechanisch", "medium": "Antriebsmoment", "absatz_ids": ["P8", "P30"], "schnittstelle": "Hinterradnabe"},
+      {"id": "S10", "von": "E21", "nach": "E26", "art": "mechanisch", "medium": "Drehmoment", "absatz_ids": ["P8", "P30"]},
+      {"id": "S11", "von": "E32", "nach": "E22", "art": "elektrisch", "medium": "Traktionsstrom", "absatz_ids": ["P10", "P30"], "schnittstelle": "Anschluss der Traktionsbatterie"},
+      {"id": "S12", "von": "E22", "nach": "E21", "art": "elektrisch", "medium": "Phasenstrom", "absatz_ids": ["P8"]},
+      {"id": "S13", "von": "E21", "nach": "E22", "art": "elektrisch", "medium": "Rückgespeiste Bremsenergie", "absatz_ids": ["P8"]},
+      {"id": "S14", "von": "E22", "nach": "E32", "art": "elektrisch", "medium": "Rückgespeiste Bremsenergie", "absatz_ids": ["P8"], "schnittstelle": "Anschluss der Traktionsbatterie"},
+      {"id": "S15", "von": "E33", "nach": "E32", "art": "elektrisch", "medium": "Ladestrom", "absatz_ids": ["P10", "P30"]},
+      {"id": "S16", "von": "E32", "nach": "E34", "art": "elektrisch", "medium": "Gleichstrom", "absatz_ids": ["P10", "P30"]},
+      {"id": "S17", "von": "E34", "nach": "E65", "art": "elektrisch", "medium": "Niedervolt-Gleichstrom", "absatz_ids": ["P10", "P30"], "schnittstelle": "Bordnetzeinspeisung des Gleichspannungswandlers"},
+      {"id": "S18", "von": "E15", "nach": "E36", "art": "mechanisch", "medium": "Drehmoment", "absatz_ids": ["P10", "P30"], "schnittstelle": "Generatorantrieb an der Kurbelwelle"},
+      {"id": "S19", "von": "E36", "nach": "E37", "art": "elektrisch", "medium": "Wechselstrom", "absatz_ids": ["P10", "P30"]},
+      {"id": "S20", "von": "E37", "nach": "E38", "art": "elektrisch", "medium": "Ladestrom", "absatz_ids": ["P10", "P30"]},
+      {"id": "S21", "von": "E38", "nach": "E65", "art": "elektrisch", "medium": "Niedervolt-Gleichstrom", "absatz_ids": ["P21", "P30"], "schnittstelle": "Batterieanschluss des Bordnetzes"},
+      {"id": "S22", "von": "E65", "nach": "E81", "art": "elektrisch", "medium": "Niedervolt-Gleichstrom", "absatz_ids": ["P21", "P26"], "schnittstelle": "Lichtstromkreise"},
+      {"id": "S23", "von": "E65", "nach": "E71", "art": "elektrisch", "medium": "Niedervolt-Gleichstrom", "absatz_ids": ["P21"], "schnittstelle": "Steuergeräteversorgung"},
+      {"id": "S24", "von": "E65", "nach": "E91", "art": "elektrisch", "medium": "Niedervolt-Gleichstrom", "absatz_ids": ["P21", "P27"], "schnittstelle": "Lüfterstromkreis"},
+      {"id": "S25", "von": "E65", "nach": "E51", "art": "elektrisch", "medium": "Niedervolt-Gleichstrom", "absatz_ids": ["P21"], "schnittstelle": "Versorgung des Hydraulikaggregats"},
+      {"id": "S26", "von": "E58", "nach": "E71", "art": "information", "medium": "Gasgriffstellung", "absatz_ids": ["P18", "P23", "P30"], "schnittstelle": "Gasgriffsignal"},
+      {"id": "S27", "von": "E58", "nach": "E24", "art": "mechanisch", "medium": "Kupplungsbetätigung", "absatz_ids": ["P17", "P18"], "schnittstelle": "Kupplungszug"},
+      {"id": "S28", "von": "E58", "nach": "E25", "art": "mechanisch", "medium": "Schaltbewegung", "absatz_ids": ["P17", "P18"], "schnittstelle": "Fußschalthebel am Getriebe"},
+      {"id": "S29", "von": "E40", "nach": "E41", "art": "mechanisch", "medium": "Lenkmoment", "absatz_ids": ["P13"]},
+      {"id": "S30", "von": "E41", "nach": "E8", "art": "mechanisch", "medium": "Lenkmoment", "absatz_ids": ["P13"], "schnittstelle": "Gabelklemmung in den Gabelbrücken"},
+      {"id": "S31", "von": "E11", "nach": "E8", "art": "mechanisch", "medium": "Radkräfte", "absatz_ids": ["P5", "P30"]},
+      {"id": "S32", "von": "E8", "nach": "E4", "art": "mechanisch", "medium": "Radkräfte", "absatz_ids": ["P5", "P30"]},
+      {"id": "S33", "von": "E11", "nach": "E9", "art": "mechanisch", "medium": "Radkräfte", "absatz_ids": ["P5", "P30"]},
+      {"id": "S34", "von": "E9", "nach": "E10", "art": "mechanisch", "medium": "Federkraft", "absatz_ids": ["P5", "P30"]},
+      {"id": "S35", "von": "E10", "nach": "E4", "art": "mechanisch", "medium": "Federkraft", "absatz_ids": ["P5", "P30"]},
+      {"id": "S36", "von": "E45", "nach": "E46", "art": "mechanisch", "medium": "Hebelkraft", "absatz_ids": ["P16"]},
+      {"id": "S37", "von": "E46", "nach": "E47", "art": "hydraulisch", "medium": "Bremsflüssigkeit", "absatz_ids": ["P16", "P30"]},
+      {"id": "S38", "von": "E46", "nach": "E48", "art": "hydraulisch", "medium": "Bremsflüssigkeit", "absatz_ids": ["P16", "P30"]},
+      {"id": "S39", "von": "E46", "nach": "E52", "art": "hydraulisch", "medium": "Bremsflüssigkeit", "absatz_ids": ["P16", "P30"]},
+      {"id": "S40", "von": "E52", "nach": "E47", "art": "hydraulisch", "medium": "Bremsflüssigkeit", "absatz_ids": ["P15", "P16"]},
+      {"id": "S41", "von": "E50", "nach": "E51", "art": "information", "medium": "Raddrehzahl", "absatz_ids": ["P16", "P30"]},
+      {"id": "S42", "von": "E51", "nach": "E47", "art": "hydraulisch", "medium": "Modulierter Bremsdruck", "absatz_ids": ["P16", "P30"]},
+      {"id": "S43", "von": "E50", "nach": "E78", "art": "information", "medium": "Raddrehzahl", "absatz_ids": ["P24", "P30"], "schnittstelle": "Raddrehzahlsignal"},
+      {"id": "S44", "von": "E78", "nach": "E71", "art": "information", "medium": "Momentenanforderung", "absatz_ids": ["P24"], "schnittstelle": "Anforderung zur Momentenreduzierung"},
+      {"id": "S45", "von": "E75", "nach": "E71", "art": "information", "medium": "Abschaltsignal", "absatz_ids": ["P24", "P30"], "schnittstelle": "Notaussignal"},
+      {"id": "S46", "von": "E76", "nach": "E71", "art": "information", "medium": "Ständerstellung", "absatz_ids": ["P24", "P30"], "schnittstelle": "Seitenständersignal"},
+      {"id": "S47", "von": "E71", "nach": "E69", "art": "information", "medium": "Zustandsdaten", "absatz_ids": ["P21", "P30"], "schnittstelle": "Busanschluss des Motorsteuergeräts"},
+      {"id": "S48", "von": "E69", "nach": "E59", "art": "information", "medium": "Zustandsdaten", "absatz_ids": ["P21", "P30"], "schnittstelle": "Instrumentenanbindung am Fahrzeugbus"},
+      {"id": "S49", "von": "E71", "nach": "E72", "art": "information", "medium": "Fehlercodes", "absatz_ids": ["P23"]},
+      {"id": "S50", "von": "E71", "nach": "E15", "art": "information", "medium": "Einspritz- und Zündsignale", "absatz_ids": ["P23"], "schnittstelle": "Einspritz- und Zündansteuerung"},
+      {"id": "S51", "von": "E71", "nach": "E22", "art": "information", "medium": "Leistungsvorgabe", "absatz_ids": ["P23"], "schnittstelle": "Leistungsanforderung an die Leistungselektronik"},
+      {"id": "S52", "von": "E45", "nach": "E83", "art": "information", "medium": "Bremslichtsignal", "absatz_ids": ["P16", "P26"], "schnittstelle": "Bremslichtschalter"},
+      {"id": "S53", "von": "E58", "nach": "E81", "art": "elektrisch", "medium": "Schaltsignal für Licht und Blinker", "absatz_ids": ["P17", "P26"], "schnittstelle": "Lenkerschalter"},
+      {"id": "S54", "von": "E58", "nach": "E79", "art": "elektrisch", "medium": "Schaltsignal", "absatz_ids": ["P17", "P24"], "schnittstelle": "Hupenschalter"},
+      {"id": "S55", "von": "E90", "nach": "E15", "art": "stoff", "medium": "Kühlmittel", "absatz_ids": ["P27"], "schnittstelle": "Kühlmittelzulauf am Motor"},
+      {"id": "S56", "von": "E15", "nach": "E89", "art": "thermisch", "medium": "Erwärmtes Kühlmittel", "absatz_ids": ["P27", "P30"], "schnittstelle": "Kühlmittelrücklauf zum Kühler"},
+      {"id": "S57", "von": "E15", "nach": "E92", "art": "thermisch", "medium": "Motorwärme", "absatz_ids": ["P27", "P30"], "schnittstelle": "Zylinder und Zylinderkopf"},
+      {"id": "S58", "von": "E61", "nach": "E5", "art": "mechanisch", "medium": "Gepäcklast", "absatz_ids": ["P5", "P19"], "schnittstelle": "Gepäckträgerbefestigung am Heckrahmen"},
+      {"id": "S59", "von": "E62", "nach": "E5", "art": "mechanisch", "medium": "Beifahrerlast", "absatz_ids": ["P19"], "schnittstelle": "Beifahrerhalterung am Heckrahmen"},
+      {"id": "S60", "von": "E63", "nach": "E5", "art": "mechanisch", "medium": "Zug- und Stützlast", "absatz_ids": ["P19"], "schnittstelle": "Befestigung der Anhängevorrichtung"},
+      {"id": "S61", "von": "E55", "nach": "E5", "art": "mechanisch", "medium": "Sitzlast", "absatz_ids": ["P5", "P18"], "schnittstelle": "Sitzbankaufnahme am Heckrahmen"},
+      {"id": "S62", "von": "E56", "nach": "E4", "art": "mechanisch", "medium": "Fußlast", "absatz_ids": ["P18"], "schnittstelle": "Fußrastenaufnahme"},
+      {"id": "S63", "von": "E12", "nach": "E4", "art": "mechanisch", "medium": "Stützlast", "absatz_ids": ["P5"]},
+      {"id": "S64", "von": "E77", "nach": "E41", "art": "mechanisch", "medium": "Lenkungsarretierung", "absatz_ids": ["P12", "P24"], "schnittstelle": "Lenkschloss am Lenkkopf"}
+    ],
+    "entfallene_kategorien": [
+      {
+        "kategorie": "nebensysteme",
+        "grund": "Das Leichtkraftrad besitzt weder Druckluft-, Hydraulik- oder Unterdruckversorgung noch einen Nebenabtrieb; die hydraulische Bremsbetätigung arbeitet mit Muskelkraft, Ständer und Endantrieb gehören zu Fahrwerk und Antriebssystem."
+      }
+    ],
+    "varianten": [
+      {
+        "id": "V1",
+        "element_id": "E13",
+        "bezeichnung": "Antriebsart",
+        "alternativen": ["Fremdzündungs-Verbrennungsmotor", "Batterieelektrischer Antrieb mit Traktionsmaschine", "Hybridantrieb aus Verbrennungsmotor und Traktionsmaschine"],
+        "auswahlkriterien": ["Reichweite und Zeitbedarf für Tanken oder Laden", "lokale Abgas- und Geräuschemissionen", "Lademöglichkeit am Abstellort", "Masse und Bauraum des Energiespeichers im Verhältnis zur Leistungs-Gewichts-Grenze der Klasse"],
+        "auswirkungen": [
+          {"element_id": "E27", "beschreibung": "Kraftstoffanlage, Traktionsenergiespeicher oder beide."},
+          {"element_id": "E35", "beschreibung": "Beim batterieelektrischen Antrieb entfällt der Generator; der Gleichspannungswandler speist das Bordnetz."},
+          {"element_id": "E87", "beschreibung": "Kühlung von Traktionsmaschine, Leistungselektronik und Traktionsbatterie statt oder zusätzlich zur Motorkühlung."},
+          {"element_id": "E23", "beschreibung": "Kupplung und Getriebe können beim Elektroantrieb entfallen."},
+          {"element_id": "E57", "beschreibung": "Ohne Schaltgetriebe entfallen Kupplungshebel und Fußschalthebel; Ladezustandsanzeige statt Kraftstoffanzeige."},
+          {"element_id": "E3", "beschreibung": "Der Rahmen muss Bauraum und Befestigung für Traktionsbatterie oder Kraftstofftank bieten."}
+        ],
+        "absatz_ids": ["P7", "P8", "P10", "P11"]
+      },
+      {
+        "id": "V2",
+        "element_id": "E2",
+        "bezeichnung": "Bauform",
+        "alternativen": ["Motorradbauform mit rahmenfestem Motor und Hinterradschwinge", "Rollerbauform mit Triebsatzschwinge und stufenlosem Getriebe"],
+        "auswahlkriterien": ["Einsatzprofil Stadtverkehr oder Überland", "Bedienkomfort ohne Kuppeln und Schalten", "Stauraum und Wetterschutz", "ungefederte Masse und Fahrverhalten"],
+        "auswirkungen": [
+          {"element_id": "E25", "beschreibung": "Sequenzielles Schaltgetriebe oder stufenloses Getriebe im Triebsatz."},
+          {"element_id": "E26", "beschreibung": "Beim Roller liegt der Endantrieb im Triebsatz."},
+          {"element_id": "E9", "beschreibung": "Die eigene Hinterradschwinge entfällt, der Triebsatz übernimmt die Hinterradführung."},
+          {"element_id": "E58", "beschreibung": "Beim Roller entfallen Kupplungshebel und Fußschalthebel."},
+          {"element_id": "E60", "beschreibung": "Roller können ein Staufach unter der Sitzbank bieten."}
+        ],
+        "absatz_ids": ["P4", "P6", "P9", "P18", "P19"]
+      },
+      {
+        "id": "V3",
+        "element_id": "E26",
+        "bezeichnung": "Bauart des Endantriebs",
+        "alternativen": ["Kettenantrieb", "Zahnriemenantrieb", "Kardanwelle"],
+        "auswahlkriterien": ["Wartungsaufwand", "Herstellkosten", "Masse", "Anpassbarkeit der Übersetzung", "Geräusch"],
+        "auswirkungen": [
+          {"element_id": "E9", "beschreibung": "Kettenspannung über den Federweg bei Kette und Zahnriemen, Momentabstützung und Wellenführung bei der Kardanwelle."},
+          {"element_id": "E15", "beschreibung": "Die Kardanwelle passt am einfachsten zu längs liegender Kurbelwelle, sonst ist ein zusätzlicher Winkeltrieb nötig."}
+        ],
+        "absatz_ids": ["P9"]
+      },
+      {
+        "id": "V4",
+        "element_id": "E43",
+        "bezeichnung": "Verbessertes Bremssystem",
+        "alternativen": ["Antiblockiersystem", "Kombibremse", "Kombibremse mit Antiblockiersystem"],
+        "auswahlkriterien": ["Bremsweg und Fahrstabilität bei Fehlbedienung", "Kosten und Masse", "Unterklasse Enduro oder Trial mit Ausnahme von der Ausrüstungspflicht"],
+        "auswirkungen": [
+          {"element_id": "E65", "beschreibung": "Versorgung und Sensorleitungen für das Hydraulikaggregat nur mit Antiblockiersystem."},
+          {"element_id": "E59", "beschreibung": "Warnleuchte für das Antiblockiersystem im Kombiinstrument."},
+          {"element_id": "E78", "beschreibung": "Eine Antriebsschlupfregelung kann nur die Raddrehzahlsensoren eines vorhandenen Antiblockiersystems mitnutzen."},
+          {"element_id": "E48", "beschreibung": "Bei der Kombibremse wird die Hinterradbremse mit der Vorderradbremse gekoppelt betätigt."}
+        ],
+        "absatz_ids": ["P14", "P15", "P16"]
+      },
+      {
+        "id": "V5",
+        "element_id": "E3",
+        "bezeichnung": "Rahmenbauart",
+        "alternativen": ["Einrohrrahmen", "Zentralpressrahmen", "Brückenrahmen mit tragender Motor-Getriebe-Einheit"],
+        "auswahlkriterien": ["Steifigkeit", "Fertigungskosten in der Großserie", "Masse", "Bauraum für Motor, Kraftstofftank oder Traktionsbatterie"],
+        "auswirkungen": [
+          {"element_id": "E15", "beschreibung": "Im Brückenrahmen nimmt das Motorgehäuse Fahrwerkslasten auf."},
+          {"element_id": "E29", "beschreibung": "Lage und Form des Kraftstofftanks folgen der Rahmenform."},
+          {"element_id": "E6", "beschreibung": "Umfang der Verkleidung und Befestigungspunkte hängen von der Rahmenform ab."}
+        ],
+        "absatz_ids": ["P4", "P6"]
+      },
+      {
+        "id": "V6",
+        "element_id": "E87",
+        "bezeichnung": "Kühlungsart des Motors",
+        "alternativen": ["Luftkühlung über Kühlrippen", "Flüssigkeitskühlung mit Kühlkreislauf"],
+        "auswahlkriterien": ["Leistungsdichte und Geräusch", "Kosten und Masse", "thermische Belastung im Stadtverkehr"],
+        "auswirkungen": [
+          {"element_id": "E15", "beschreibung": "Kühlrippen an Zylinder und Zylinderkopf oder Kühlmittelmantel."},
+          {"element_id": "E65", "beschreibung": "Der Kühlerlüfter ist ein zusätzlicher Verbraucher im Bordnetz."},
+          {"element_id": "E59", "beschreibung": "Temperaturanzeige für das Kühlmittel."},
+          {"element_id": "E6", "beschreibung": "Kühleranordnung und Luftführung in Rahmen oder Verkleidung."}
+        ],
+        "absatz_ids": ["P27"]
+      },
+      {
+        "id": "V7",
+        "element_id": "E39",
+        "bezeichnung": "Lenkungsbauart",
+        "alternativen": ["Steuerkopflenkung mit Teleskopgabel", "Radnabenlenkung", "Achsschenkellenkung"],
+        "auswahlkriterien": ["Kosten und Verbreitung", "Trennung von Lenk- und Federungsfunktion", "Bauraum am Vorderrad"],
+        "auswirkungen": [
+          {"element_id": "E8", "beschreibung": "Teleskopgabel oder eigene Vorderradschwinge mit Federbein."},
+          {"element_id": "E4", "beschreibung": "Lenkkopf oder vordere Schwingenaufnahme am Hauptrahmen."},
+          {"element_id": "E47", "beschreibung": "Anordnung und Leitungsführung der Vorderradbremse."}
+        ],
+        "absatz_ids": ["P12", "P13"]
+      },
+      {
+        "id": "V8",
+        "element_id": "E80",
+        "bezeichnung": "Lösung für die Sichtbarkeit am Tag",
+        "alternativen": ["Automatisch eingeschaltete Beleuchtungseinrichtung", "Eigene Tagfahrleuchten"],
+        "auswahlkriterien": ["Energiebedarf im Bordnetz", "Gestaltung der Fahrzeugfront", "Lebensdauer der Leuchtmittel"],
+        "auswirkungen": [
+          {"element_id": "E35", "beschreibung": "Dauerlast für Generator oder Gleichspannungswandler."},
+          {"element_id": "E58", "beschreibung": "Schaltlogik des Lichtschalters am Lenkerschalter."},
+          {"element_id": "E85", "beschreibung": "Tagfahrleuchten kommen nur bei der zweiten Alternative hinzu."}
+        ],
+        "absatz_ids": ["P25", "P26"]
+      }
+    ],
+    "klaerungsfragen": [
+      {"id": "K1", "frage": "Welche Antriebsart soll das Leichtkraftrad erhalten: Verbrennungsmotor, batterieelektrischen Antrieb oder Hybrid?", "element_ids": ["E13", "E27"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Energieversorgung, Kraftübertragung, Thermomanagement und Bedienelemente ab.", "variante_ids": ["V1"]},
+      {"id": "K2", "frage": "Soll das Fahrzeug als Motorrad mit Schaltgetriebe oder als Roller mit Triebsatzschwinge und stufenlosem Getriebe ausgelegt werden?", "element_ids": ["E2", "E13"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Hinterradführung, Getriebe, Endantrieb, Bedienelemente und Stauraum ab.", "variante_ids": ["V2"]},
+      {"id": "K3", "frage": "Welcher Endantrieb ist vorgesehen: Kette, Zahnriemen oder Kardanwelle?", "element_ids": ["E26", "E9"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Schwingenkonstruktion, Wartungskonzept und Masse ab.", "variante_ids": ["V3"]},
+      {"id": "K4", "frage": "Soll das verbesserte Bremssystem als Antiblockiersystem, als Kombibremse oder als Kombination beider ausgeführt werden?", "element_ids": ["E43"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Hydraulikaggregat, Sensorik, Bordnetzlast und die Möglichkeit einer Antriebsschlupfregelung ab.", "variante_ids": ["V4"]},
+      {"id": "K5", "frage": "Welche Rahmenbauart ist vorgesehen, und soll die Motor-Getriebe-Einheit tragend in den Rahmen einbezogen werden?", "element_ids": ["E3", "E15"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Lastpfad, Motoraufhängung und Bauraum für Tank oder Batterie ab.", "variante_ids": ["V5"]},
+      {"id": "K6", "frage": "Wird der Motor luftgekühlt oder flüssigkeitsgekühlt?", "element_ids": ["E87", "E15"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Kühlkreislauf, Kühleranordnung, Lüfter im Bordnetz und Temperaturanzeige ab.", "variante_ids": ["V6"]},
+      {"id": "K7", "frage": "Soll das Vorderrad über eine Steuerkopflenkung mit Teleskopgabel oder über eine Radnaben- beziehungsweise Achsschenkellenkung geführt werden?", "element_ids": ["E39", "E8"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Vorderradführung, Lenkkopf und Rahmenvorderteil ab.", "variante_ids": ["V7"]},
+      {"id": "K8", "frage": "Soll die Sichtbarkeit am Tag durch automatisch eingeschaltete Beleuchtung oder durch eigene Tagfahrleuchten sichergestellt werden?", "element_ids": ["E80"], "anlass": "anforderung", "relevanz": "Davon hängen Leuchtenbestückung, Schaltlogik und Bordnetzlast ab.", "variante_ids": ["V8"]},
+      {"id": "K9", "frage": "Soll die Traktionsbatterie fest eingebaut und am Fahrzeug geladen oder als entnehmbarer Akku außerhalb des Fahrzeugs geladen werden?", "element_ids": ["E27", "E31"], "anlass": "schnittstelle", "relevanz": "Davon hängen Ladeeinrichtung, Steckverbindung, Batteriebefestigung und Diebstahlschutz ab.", "variante_ids": ["V1"]},
+      {"id": "K10", "frage": "Welcher Ständer ist vorzusehen: Seitenständer, Hauptständer oder beide?", "element_ids": ["E2", "E12"], "anlass": "betrieb", "relevanz": "Davon hängen Rahmenaufnahmen, Seitenständerschalter und Abstellen auf unebenem Grund ab."},
+      {"id": "K11", "frage": "Ist das Fahrzeug für den Betrieb mit Beifahrer auszulegen?", "element_ids": ["E53", "E60"], "anlass": "anforderung", "relevanz": "Davon hängen Sitzbanklänge, Beifahrereinrichtungen, Heckrahmen, Federbein und Bremsauslegung ab."},
+      {"id": "K12", "frage": "Welche Zustände und Warnungen muss das Kombiinstrument anzeigen, und soll es digital ausgeführt werden?", "element_ids": ["E53", "E59"], "anlass": "anforderung", "relevanz": "Davon hängen Anbindung an Fahrzeugbus oder Einzelverdrahtung und der Umfang der Kontrollleuchten ab."},
+      {"id": "K13", "frage": "Welches Gepäcksystem und welche Zuladung muss der Heckrahmen aufnehmen, und ist eine Anhängevorrichtung vorgesehen?", "element_ids": ["E60", "E5"], "anlass": "anforderung", "relevanz": "Davon hängen Heckrahmenfestigkeit, Federbeinauslegung und zulässige Gesamtmasse ab."},
+      {"id": "K14", "frage": "Sollen Motorsteuergerät, Antiblockiersystem und Kombiinstrument über einen Fahrzeugbus verbunden oder einzeln verdrahtet werden?", "element_ids": ["E64", "E69"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Leitungssatz, Diagnosezugang und Erweiterbarkeit um Assistenzfunktionen ab."},
+      {"id": "K15", "frage": "Wie soll die Begrenzung der Antriebsleistung auf die Klassengrenze umgesetzt und gegen Manipulation geschützt werden?", "element_ids": ["E70", "E71"], "anlass": "anforderung", "relevanz": "Davon hängen Software des Motorsteuergeräts, Diagnose und die Einstufung des Fahrzeugs ab."},
+      {"id": "K16", "frage": "Sollen eine Antriebsschlupfregelung und eine elektronische Wegfahrsperre zusätzlich zum Lenkschloss vorgesehen werden?", "element_ids": ["E73", "E78", "E77"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Sensorik, Steuergerätefunktionen und Schlüsselsystem ab."}
+    ],
+    "anforderungsthemen": [
+      {"id": "R1", "element_ids": ["E1", "E13", "E71"], "thema": "Fahrzeugklasse und Leistungsgrenzen", "kenngroessen": ["Hubvolumen", "maximale Nenndauer- oder Nutzleistung", "Verhältnis von Leistung zu Gewicht"], "regelwerke": [
+        {"bezeichnung": "Verordnung (EU) Nr. 168/2013, Anhang I, Unterklasse L3e-A1 (EU, Fahrzeugklasse L)", "quellen_id": "Q1", "fundstelle": "Anhang I, Klasse L3e, Unterklasse L3e-A1, Kriterien (7) bis (9)"},
+        {"bezeichnung": "Fahrerlaubnis-Verordnung § 6, Klasse A1 (Deutschland)", "quellen_id": "Q2", "fundstelle": "§ 6 Abs. 1, Klasse A1"}
+      ]},
+      {"id": "R2", "element_ids": ["E2", "E3", "E12"], "thema": "Festigkeit der Fahrzeugstruktur und Abstellen", "kenngroessen": ["Rahmensteifigkeit", "Federweg", "Sitzhöhe", "Bodenfreiheit", "Standsicherheit auf dem Ständer"], "regelwerke": [
+        {"bezeichnung": "Verordnung (EU) Nr. 168/2013, Anhang II: Festigkeit der Fahrzeugstruktur und Ständer (EU, Fahrzeugklasse L)", "quellen_id": "Q1", "fundstelle": "Anhang II Teil B Nr. 18 und Teil C Nr. 15"}
+      ]},
+      {"id": "R3", "element_ids": ["E13", "E14"], "thema": "Fahrleistungen, Abgas- und Geräuschemissionen", "kenngroessen": ["bauartbedingte Höchstgeschwindigkeit", "maximales Drehmoment", "Abgasemissionen", "Kraftstoffverbrauch", "Geräuschpegel"], "regelwerke": [
+        {"bezeichnung": "Verordnung (EU) Nr. 168/2013, Anhang II Teil A: Umweltverträglichkeit und Antriebsleistung (EU, Fahrzeugklasse L)", "quellen_id": "Q1", "fundstelle": "Anhang II Teil A Nr. 1 bis 3"}
+      ]},
+      {"id": "R4", "element_ids": ["E27", "E31", "E28"], "thema": "Reichweite, Laden und elektrische Sicherheit", "kenngroessen": ["Reichweite", "nutzbarer Energieinhalt", "Ladedauer", "Berührungsschutz", "Isolationswiderstand", "Tankinhalt"], "regelwerke": [
+        {"bezeichnung": "Verordnung (EU) Nr. 168/2013, Anhang VIII: elektrische Sicherheit, mit UN-ECE-Regelung Nr. 100 und ISO 13063 (EU, Fahrzeugklasse L mit elektrischem Antrieb)", "quellen_id": "Q1", "fundstelle": "Anhang VIII, Gegenstand Elektrische Sicherheit"},
+        {"bezeichnung": "Verordnung (EU) Nr. 168/2013, Anhang II: Kraftstoffspeicher (EU, Fahrzeugklasse L)", "quellen_id": "Q1", "fundstelle": "Anhang II Teil C Nr. 8"}
+      ]},
+      {"id": "R5", "element_ids": ["E39", "E8"], "thema": "Lenkverhalten und Fahrstabilität", "kenngroessen": ["Lenkkopfwinkel", "Nachlauf", "Lenkeinschlag", "Lenkmoment"], "regelwerke": [
+        {"bezeichnung": "Verordnung (EU) Nr. 168/2013, Anhang II: Steuerfähigkeit, Kurvenfahr-Eigenschaften und Wendefähigkeit (EU, Fahrzeugklasse L)", "quellen_id": "Q1", "fundstelle": "Anhang II Teil B Nr. 13"}
+      ]},
+      {"id": "R6", "element_ids": ["E43", "E44", "E49", "E52"], "thema": "Bremsleistung und verbessertes Bremssystem", "kenngroessen": ["Bremsweg", "mittlere Vollverzögerung", "Betätigungskraft", "Verhalten bei Ausfall eines Kreises"], "regelwerke": [
+        {"bezeichnung": "Verordnung (EU) Nr. 168/2013, Anhang VIII: verbindlicher Einbau verbesserter Bremssysteme (EU, Unterklasse L3e-A1)", "quellen_id": "Q1", "fundstelle": "Anhang VIII, Gegenstand Verbindlicher Einbau verbesserter Bremssysteme, Buchst. a"},
+        {"bezeichnung": "UN-Regelung Nr. 78, Bremsanlagen der Klassen L1 bis L5 (anwendende UN-Vertragsparteien)", "quellen_id": "Q3", "fundstelle": "Abs. 5.1.5 und Annex 3"}
+      ]},
+      {"id": "R7", "element_ids": ["E53", "E58", "E59"], "thema": "Bedienbarkeit und Anzeige", "kenngroessen": ["Erreichbarkeit der Bedienelemente in Fahrposition", "Betätigungskräfte", "Ablesbarkeit der Anzeigen", "Sitzhöhe"], "regelwerke": [
+        {"bezeichnung": "Verordnung (EU) Nr. 168/2013, Anhang II: vom Fahrer bediente Betätigungseinrichtungen, Kontrollleuchten und Anzeiger sowie Sitzplatz (EU, Fahrzeugklasse L)", "quellen_id": "Q1", "fundstelle": "Anhang II Teil B Nr. 7 und Nr. 12"},
+        {"bezeichnung": "UN-Regelung Nr. 78, Betätigung der Betriebsbremse aus der normalen Fahrposition (anwendende UN-Vertragsparteien)", "quellen_id": "Q3", "fundstelle": "Abs. 5.1.2 und 5.1.11"}
+      ]},
+      {"id": "R8", "element_ids": ["E60", "E5"], "thema": "Zuladung und Beifahrerbetrieb", "kenngroessen": ["zulässige Zuladung", "Gepäckträgerlast", "Anzahl der Sitzplätze", "zulässige Gesamtmasse"], "regelwerke": [
+        {"bezeichnung": "Verordnung (EU) Nr. 168/2013, Anhang II: Massen und Abmessungen sowie Halteeinrichtungen und Fußstützen für Beifahrer (EU, Fahrzeugklasse L)", "quellen_id": "Q1", "fundstelle": "Anhang II Teil C Nr. 10 und Nr. 12"}
+      ]},
+      {"id": "R9", "element_ids": ["E64", "E65"], "thema": "Bordnetzstabilität und elektromagnetische Verträglichkeit", "kenngroessen": ["Ladebilanz", "Spannungsstabilität", "Störaussendung", "Störfestigkeit"], "regelwerke": [
+        {"bezeichnung": "Verordnung (EU) Nr. 168/2013, Anhang II: Elektromagnetische Verträglichkeit (EU, Fahrzeugklasse L)", "quellen_id": "Q1", "fundstelle": "Anhang II Teil C Nr. 6"}
+      ]},
+      {"id": "R10", "element_ids": ["E70", "E71", "E72"], "thema": "Diagnose und Manipulationsschutz", "kenngroessen": ["Umfang der überwachten Fehler", "Fehleranzeige", "Schutz der Leistungsbegrenzung"], "regelwerke": [
+        {"bezeichnung": "Verordnung (EU) Nr. 168/2013, Anhang II: Leistungsbegrenzung, Maßnahmen betreffend unbefugte Eingriffe, On-Board-Diagnosesysteme (EU, Fahrzeugklasse L)", "quellen_id": "Q1", "fundstelle": "Anhang II Teil B Nr. 17, Teil C Nr. 1 und Nr. 11"}
+      ]},
+      {"id": "R11", "element_ids": ["E73", "E77", "E79"], "thema": "Diebstahlschutz und Warnsignale", "kenngroessen": ["Widerstand gegen unbefugte Benutzung", "Schallpegel der Hupe"], "regelwerke": [
+        {"bezeichnung": "Verordnung (EU) Nr. 168/2013, Anhang II: akustische Warneinrichtungen und Sicherungen gegen unbefugte Benutzung (EU, Fahrzeugklasse L)", "quellen_id": "Q1", "fundstelle": "Anhang II Teil B Nr. 1 und Teil C Nr. 5"}
+      ]},
+      {"id": "R12", "element_ids": ["E80", "E81", "E86"], "thema": "Sichtbarkeit und Sicht nach hinten", "kenngroessen": ["Lichtstärke", "Anbauhöhe der Leuchten", "Sichtfeld der Rückspiegel", "Spiegelfläche"], "regelwerke": [
+        {"bezeichnung": "Verordnung (EU) Nr. 168/2013, Anhang VIII: Sichtbarkeit durch automatisches Einschalten der Beleuchtung (EU, Fahrzeugklasse L3e)", "quellen_id": "Q1", "fundstelle": "Anhang VIII, Gegenstand Verbesserung der Sichtbarkeit, Buchst. b"},
+        {"bezeichnung": "Verordnung (EU) Nr. 168/2013, Anhang II: Anbau der Beleuchtungseinrichtungen und Sicht nach hinten (EU, Fahrzeugklasse L)", "quellen_id": "Q1", "fundstelle": "Anhang II Teil B Nr. 8 und Nr. 9"}
+      ]},
+      {"id": "R13", "element_ids": ["E87", "E88"], "thema": "Thermische Auslegung", "kenngroessen": ["Kühlmittelaustrittstemperatur", "Öltemperatur", "Kühlleistung im Stand", "Batterietemperatur"]}
+    ]
+  },
+  "offene_punkte": [
+    "Glossarvorschlag: Fahrzeug im Stand abstützen (Ständer hält das einspurige, nicht eigenstabile Fahrzeug aufrecht; nicht gleichbedeutend mit Fahrzeug festhalten).",
+    "Glossarvorschlag: Antriebsleistung begrenzen (Begrenzung auf die Leistungsgrenze der Fahrzeugklasse im Motorsteuergerät; nicht gleichbedeutend mit Antriebsleistung erzeugen).",
+    "Glossarvorschlag: Antriebsschlupf begrenzen (Antriebsschlupfregelung am Antriebsrad; Fahrzeug verzögern betrifft nur die Bremse).",
+    "Glossarvorschlag: Fahrzeug gegen unbefugte Benutzung sichern (Lenkschloss, Wegfahrsperre).",
+    "Glossarvorschlag: Akustische Warnsignale abgeben (Hupe; Lichtsignale abgeben betrifft nur optische Signale).",
+    "Glossarvorschlag: Hauptsystemname Cockpit auch für Krafträder (offener Fahrerarbeitsplatz) in die Klammer der Kategorie bedienraum aufnehmen; die Glossarliste nennt Cockpit bisher nur für Luftfahrzeuge, ein Fahrerhaus oder Fahrgastraum besitzt das Leichtkraftrad nicht.",
+    "Glossarvorschlag: Hauptsystemname Aufbau und Ladung auch für Krafträder (Gepäck- und Beifahrereinrichtungen) in die Klammer der Kategorie aufbau_nutzlast aufnehmen.",
+    "Abweichung von der Zuordnungsliste: Lenkrad, Lenksäule, Lenkgetriebe und Lenkunterstützung besitzt das Leichtkraftrad nicht; an ihre Stelle treten Lenker, Gabelbrücken und Lenkkopflager. Sitze sind als Sitzbank, Bedienelemente und Kombiinstrument unter Cockpit geführt.",
+    "Recherchebedarf: Fahrzeug-Zulassungsverordnung § 2 (Begriff Leichtkraftrad) auf gesetze-im-internet.de; in diesem Lauf Verbindungsabbruch, daher Begriff nur über Wikipedia (Q4) belegt.",
+    "Recherchebedarf: UN-Regelungen Nr. 53 (Anbau der Beleuchtung an L3-Fahrzeugen) und Nr. 81 (Rückspiegel) im Volltext; unece.org lieferte in diesem Lauf Fehler 403, die Spiegelseite des japanischen Verkehrsministeriums hatte keine Ausgabe.",
+    "Recherchebedarf: Delegierte Verordnungen (EU) Nr. 3/2014 (funktionale Sicherheit) und Nr. 44/2014 (Fahrzeugbau) auf eur-lex.europa.eu zur Belegung von Ständer, Beifahrereinrichtungen, Lenkverhalten und Rückspiegeln (P5, P13, P19).",
+    "Recherchebedarf: Fachliteratur Motorradtechnik (etwa Stoffregen, Motorradtechnik) zu Fahrwerksgeometrie, Kühlung und Bordnetz von Leichtkrafträdern zur Belegung von P13, P21 und P27.",
+    "Recherchebedarf: Quelle zu batterieelektrischen Leichtkrafträdern (Spannungslage, entnehmbare Akkus, Ladeeinrichtung), Suchbegriff Elektro-Leichtkraftrad L3e-A1 Batteriesystem Wechselakku, zur Belegung von P10 und Variante V1.",
+    "Recherchebedarf: Quelle zu Seitenständerschalter, Wegfahrsperre und Antriebsschlupfregelung in der Klasse L3e-A1, zur Belegung von P24.",
+    "Recherchebedarf: Widerspruch klären zwischen Wikipedia Motorrad (Abschnitt 6.10: ABS seit 2016 Pflicht für neue Motorräder ab 125 cm³) und Verordnung (EU) Nr. 168/2013 Anhang VIII (L3e-A1: Antiblockiersystem oder kombinierte Bremsanlage nach Wahl des Herstellers); der Artikel folgt der Verordnung."
+  ]
+}

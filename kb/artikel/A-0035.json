@@ -1,0 +1,933 @@
+{
+  "schema_version": "2.3",
+  "artikel_id": "A-0035",
+  "artikeltyp": "blatt",
+  "titel": "U-Bahn",
+  "betrachtungsumfang": "Generische Referenzarchitektur des U-Bahn-Fahrzeugs (Metro) als elektrischer Triebwagen oder Triebzug für den städtischen Personenverkehr auf unabhängigem Bahnkörper, mit Rad-Schiene-Laufwerk oder gummibereiftem Laufwerk mit Führungsrädern, mit Stromzuführung über Stromschiene oder Oberleitung mit Gleichspannung, in fester Zugbildung oder aus kuppelbaren Einheiten und mit Automatisierungsgraden vom Fahren mit Triebfahrzeugführer bis zum fahrerlosen Betrieb. Antriebsart: elektrischer Antrieb mit Energiezufuhr von außen; die Energiequelle liegt außerhalb der Systemgrenze, ein Traktionsenergiespeicher entfällt, Energiewandler sind Traktionsstromrichter und Traktionsmaschine. Ausdrücklich nicht betrachtet werden Linearmotor-, Zahnrad- und Seilantrieb, Einschienen- und Magnetschwebebahnen, mit Wechselspannung gespeiste Fahrzeuge, batterie-, diesel- oder wasserstoffgespeiste Fahrzeuge, im U-Bahn-Betrieb eingesetzte Niederflur-Straßenbahnfahrzeuge, Arbeits- und Spezialfahrzeuge sowie die Infrastruktur (Stromschiene, Oberleitung, Gleis, Stationen, Bahnsteigtüren, streckenseitige Zugsteuerung und Leitstelle).",
+  "status": "in_arbeit",
+  "quellenzugriff": "ja",
+  "kindartikel_ids": [],
+  "quellen": [
+    {
+      "quellen_id": "Q1",
+      "titel": "U-Bahn",
+      "urheber": "Wikipedia, Die freie Enzyklopädie (deutschsprachig)",
+      "stand": "Fassung vom Abrufdatum (Quelltext über action=raw gelesen)",
+      "url": "https://de.wikipedia.org/wiki/U-Bahn",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q2",
+      "titel": "Rapid transit",
+      "urheber": "Wikipedia, The Free Encyclopedia (englischsprachig)",
+      "stand": "Fassung vom Abrufdatum (Quelltext über action=raw gelesen)",
+      "url": "https://en.wikipedia.org/wiki/Rapid_transit",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q3",
+      "titel": "Third rail",
+      "urheber": "Wikipedia, The Free Encyclopedia (englischsprachig)",
+      "stand": "Fassung vom Abrufdatum (Quelltext über action=raw gelesen)",
+      "url": "https://en.wikipedia.org/wiki/Third_rail",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q4",
+      "titel": "Communications-based train control",
+      "urheber": "Wikipedia, The Free Encyclopedia (englischsprachig)",
+      "stand": "Fassung vom Abrufdatum (Quelltext über action=raw gelesen)",
+      "url": "https://en.wikipedia.org/wiki/Communications-based_train_control",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q5",
+      "titel": "Straßenbahn-Bau- und Betriebsordnung",
+      "urheber": "Wikipedia, Die freie Enzyklopädie (deutschsprachig)",
+      "stand": "Fassung vom Abrufdatum (Quelltext über action=raw gelesen); der Verordnungstext selbst war in diesem Lauf nicht abrufbar",
+      "url": "https://de.wikipedia.org/wiki/Stra%C3%9Fenbahn-Bau-_und_Betriebsordnung",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q6",
+      "titel": "Richtlinie (EU) 2016/797 des Europäischen Parlaments und des Rates vom 11. Mai 2016 über die Interoperabilität des Eisenbahnsystems in der Europäischen Union (Neufassung), Artikel 1",
+      "urheber": "Europäisches Parlament und Rat der Europäischen Union; Wiedergabe durch The National Archives, legislation.gov.uk",
+      "stand": "Ursprünglich angenommene Fassung, englischer Text",
+      "url": "https://www.legislation.gov.uk/eudr/2016/797/article/1/adopted",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q7",
+      "titel": "HHA Typ DT5",
+      "urheber": "Wikipedia, Die freie Enzyklopädie (deutschsprachig)",
+      "stand": "Fassung vom Abrufdatum (Quelltext über action=raw gelesen); Aussagen gelten nur für die Baureihe DT5 der U-Bahn Hamburg",
+      "url": "https://de.wikipedia.org/wiki/HHA_Typ_DT5",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    }
+  ],
+  "abschnitte": [
+    {
+      "ueberschrift": "Einleitung",
+      "abschnittstyp": "gesamtsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P1",
+          "text": "Eine U-Bahn (Metro) ist nach der Definition des Internationalen Verbands für öffentliches Verkehrswesen (UITP) ein spurgeführtes, meist schienengebundenes, elektrisch angetriebenes Verkehrssystem hoher Beförderungskapazität für den städtischen Raum, das auf unabhängigem Bahnkörper verkehrt und mit mindestens zweiteiligen Fahrzeugen für mindestens 100 Fahrgäste betrieben wird. Straßen- und Stadtbahnen fahren dagegen mindestens teilweise auf Sicht und auf mitbenutzten Trassen. Die Interoperabilitätsrichtlinie (EU) 2016/797 gilt in der Europäischen Union nicht für Metros. In Deutschland regelt die Straßenbahn-Bau- und Betriebsordnung (BOStrab) auch Hoch- und Untergrundbahnen als unabhängige Bahnen; nur diese dürfen automatisch betrieben werden.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q1", "fundstelle": "Abschnitt „Definition“, Unterabschnitt „Internationaler Verband für öffentliches Verkehrswesen“, Absätze 1 bis 4"},
+            {"quellen_id": "Q6", "fundstelle": "Article 1 Absatz 3 Buchstabe a"},
+            {"quellen_id": "Q5", "fundstelle": "Einleitung sowie Abschnitt „Regelungsgegenstand“, Definition „Unabhängige Bahnen“"}
+          ],
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P2",
+          "text": "Systemgrenze ist das U-Bahn-Fahrzeug als elektrischer Triebwagen oder Triebzug. Stromschiene oder Oberleitung, Gleis, Bahnsteig, Leitstelle und streckenseitige Zugsteuerung liegen außerhalb und bilden externe Schnittstellen für Fahrenergie, Tragen und Führen sowie Daten. Intern sind die Hauptsysteme über mechanische, elektrische, pneumatische, thermische und informationstechnische Schnittstellen gekoppelt. Der Artikel zerlegt die U-Bahn zuerst in Hauptsysteme und diese dann in Subsysteme und Komponenten.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P1: elektrisch angetriebenes, spurgeführtes Verkehrssystem auf unabhängigem Bahnkörper.",
+              "P8: Fahrstrom kommt über Stromschiene oder Oberleitung von außen.",
+              "P20: Fahrerlaubnis und Position werden mit der Strecke ausgetauscht."
+            ],
+            "schluss": "Das Fahrzeug hat externe Schnittstellen zu Energiezuführung, Fahrweg und Streckenausrüstung; die Infrastruktur liegt außerhalb der Systemgrenze."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrzeugstruktur und Fahrwerk",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E2",
+      "absaetze": [
+        {
+          "absatz_id": "P3",
+          "text": "U-Bahnen verwenden Triebwagen und Triebzüge; die über den Zug verteilte Antriebsausrüstung ergibt eine höhere Beschleunigung und Bremsverzögerung und eine gleichmäßigere Achslast. Weit verbreitet sind durchgängig begehbare Triebzüge, daneben Doppeltriebwagen; Gliederzüge mit Jakobs-Drehgestellen sind selten. Viele breite Schiebetüren, für den Zweirichtungsbetrieb auf beiden Seiten, ermöglichen kurze Aufenthaltszeiten. Bei Zügen aus nicht durchgängig verbundenen Wagen verhindern in einigen Netzen Sperren zwischen den Wagen als Übersteigschutz das Stürzen zwischen die Wagen. Beim Hamburger Typ DT5 ruhen Wagenkästen aus Edelstahl auf luftgefederten Drehgestellen, gekuppelt wird mit Scharfenbergkupplung.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q1", "fundstelle": "Abschnitt „Fahrbetriebsmittel“, Unterabschnitt „Allgemeine Merkmale“, Aufzählungspunkte „Triebwagen/Triebzüge“, „Türen und Türräume“ und „Zweirichtungsbetrieb“ sowie Absatz nach der Aufzählung; Unterabschnitt „Übersteigschutz“"},
+            {"quellen_id": "Q7", "fundstelle": "Abschnitt „Konstruktion“, Absatz 1; Infobox, Feld „Kupplungstyp“"}
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P4",
+          "text": "Generisch gliedert sich Fahrzeugstruktur und Fahrwerk in den Wagenkasten mit Türen, Wagenübergang, Kupplung und Übersteigschutz und in das Laufwerk aus Drehgestellen mit Radsatz und Federung. Die Fahrgastlast fließt über Federung und Drehgestell in den Radsatz und ins Gleis, Zug- und Bremskräfte vom Radsatz über Drehgestell und Wagenkasten zur Kupplung. Radsatz und Gleis übernehmen die Spurführung. Der Querschnitt des Wagenkastens folgt dem Tunnelprofil, Zahl und Art von Kupplungen und Wagenübergängen der Zugbildung.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P3: Triebzüge mit Drehgestellen, Türen, Übersteigschutz und Kupplung.",
+              "P14: Wagenkastenprofil wird an enge Röhrentunnel angepasst.",
+              "Funktionsprinzip: Gewichts-, Zug- und Bremskräfte müssen zwischen Wagenkasten und Gleis über Federung, Drehgestell und Radsatz übertragen werden."
+            ],
+            "schluss": "Das Hauptsystem gliedert sich in Wagenkasten und Laufwerk mit einem Lastpfad vom Wagenkasten über das Drehgestell zum Radsatz."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P5",
+          "text": "U-Bahnen auf Gummireifen fahren ergänzend zu oder anstelle von Stahlrädern auf Gummireifen; die höhere Haftreibung verbessert Beschleunigen und Bremsen und eignet sich für stärkere Längsneigungen. Meist sind zusätzliche horizontale Führungsräder nötig, und oft bleibt ein konventionelles Gleis für Reifenschäden und Weichen. Der Strom wird über eine Stromschiene zugeführt und über die Schienen des konventionellen Gleises zurückgeleitet. Nachteilig sind höhere Instandhaltungskosten und geringere Energieeffizienz.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q1", "fundstelle": "Abschnitt „Traktionssysteme“, Aufzählungspunkt „Gummireifen“, Absatz 1"},
+            {"quellen_id": "Q2", "fundstelle": "Abschnitt „Tracks“, Absatz 2"},
+            {"quellen_id": "Q3", "fundstelle": "Abschnitt „Return current mechanisms“, Absatz 1"}
+          ],
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Antriebssystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E12",
+      "absaetze": [
+        {
+          "absatz_id": "P6",
+          "text": "Die Mehrzahl der U-Bahn-Strecken nutzt das Rad-Schiene-System mit angetriebenen Stahlrädern auf Stahlschienen, und praktisch alle Metrozüge fahren elektrisch und sind als Triebzüge gebaut. Linearantriebe erzeugen den Vortrieb dagegen über ein Magnetfeld zwischen Fahrzeug und einem Langstator im Gleis. Beim Hamburger DT5 treiben sechs wassergekühlte Drehstrom-Fahrmotoren die Radsätze an; beim Bremsen wird Energie ins Stromnetz zurückgespeist.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q1", "fundstelle": "Abschnitt „Traktionssysteme“, Absatz 1 und Aufzählungspunkt „Linearantrieb“"},
+            {"quellen_id": "Q2", "fundstelle": "Abschnitt „Motive power“, Absatz 1"},
+            {"quellen_id": "Q7", "fundstelle": "Infobox, Felder „Antrieb“ und „AnzahlFahrmotoren“; Abschnitt „Umweltaspekte“, Absatz 2"}
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P7",
+          "text": "Generisch besteht das Antriebssystem je angetriebenem Drehgestell aus Traktionsstromrichter, Traktionsmaschine und Getriebe. Der Traktionsstromrichter formt die Gleichspannung in eine geregelte Drehspannung um, die Traktionsmaschine erzeugt daraus Drehmoment, und das Getriebe überträgt es auf den Radsatz. Beim Bremsen arbeitet die Traktionsmaschine als Generator, und der Traktionsstromrichter speist die Energie zurück. Die Sollwerte kommen vom Fahrzeugmanagement, die Verlustwärme nimmt der Kühlkreislauf auf.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P6: Drehstrom-Fahrmotoren treiben Radsätze an; beim Bremsen wird zurückgespeist.",
+              "P8: Fahrstrom ist meist Gleichspannung.",
+              "Funktionsprinzip: Ein Drehstrommotor an einem Gleichspannungsnetz braucht einen Wechselrichter; die Motordrehzahl muss über ein Getriebe an die Raddrehzahl angepasst werden; Verlustwärme muss abgeführt werden."
+            ],
+            "schluss": "Die Wirkkette lautet Traktionsstromrichter, Traktionsmaschine, Getriebe, Radsatz und ist beim elektrischen Bremsen umkehrbar."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Energieversorgungssystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E16",
+      "absaetze": [
+        {
+          "absatz_id": "P8",
+          "text": "Der Fahrstrom kommt über eine neben oder seltener zwischen den Fahrschienen liegende Stromschiene oder über eine Oberleitung. Stromschienen erlauben kleinere Tunnelprofile, begrenzen aber die übertragbare Spannung. Meist wird Gleichspannung genutzt, mit Stromschiene in den meisten europäischen Netzen 750 V, mit Oberleitung vorrangig 1500 V. Abnehmerschuhe bestreichen die Stromschiene von unten, von oben oder seitlich; liegen alle Schuhe eines Zuges in Lücken der Stromschiene, steht er ohne Fahrstrom. Der Rückstrom fließt meist über die Fahrschienen, bei der London Underground über eine vierte Schiene, damit die Tunnelauskleidungen nicht korrodieren.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q1", "fundstelle": "Abschnitt „Stromversorgung“, Absätze 1, 2 und 4"},
+            {"quellen_id": "Q3", "fundstelle": "Abschnitte „Description“, Absatz 2, „Gaps“ und „Return current mechanisms“, Absatz 2"},
+            {"quellen_id": "Q2", "fundstelle": "Abschnitt „Motive power“, Absätze 1 und 2"}
+          ],
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P9",
+          "text": "Generisch umfasst das Energieversorgungssystem die Stromabnahme mit Stromabnehmer, Hauptschalter und Netzfilter sowie die Hilfsbetriebeversorgung mit Hilfsbetriebeumrichter, Gleichspannungswandler und Bordnetzbatterie. Der Hauptschalter trennt den Zug bei Fehlern vom Netz, der Netzfilter entkoppelt Stromrichter und Netz. Der Hilfsbetriebeumrichter speist Heiz- und Klimaanlage und Kompressor, der Gleichspannungswandler das Niedervolt-Bordnetz und die Bordnetzbatterie, die bei Spannungsausfall Steuerung und Notbeleuchtung puffert. Über die Zuglänge verteilte, miteinander verbundene Stromabnehmer überbrücken Lücken der Stromschiene.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P8: Stromzuführung über Stromschiene oder Oberleitung mit Gleichspannung; Lücken in der Stromschiene.",
+              "P7: Traktionsstromrichter als Verbraucher der Fahrspannung.",
+              "P24, P26: Klimaanlage und Druckluftkompressor als Hilfsbetriebe.",
+              "Funktionsprinzip: Fehlerströme müssen abgeschaltet, Hilfsbetriebe und Steuerung aus der Fahrspannung versorgt und bei deren Ausfall gepuffert werden."
+            ],
+            "schluss": "Das Energieversorgungssystem besteht aus Stromabnahme und Hilfsbetriebeversorgung mit Pufferbatterie."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Bremssystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E25",
+      "absaetze": [
+        {
+          "absatz_id": "P10",
+          "text": "U-Bahn-Züge haben eine hohe Bremsverzögerung, damit sie die Fahrgeschwindigkeit wegen des kurzen Bremswegs trotz kurzer Haltabstände lange halten können. Die Erwärmung der Bremsen kann Tunnel und Bahnhöfe aufheizen; regenerative Bremsen mindern das. Beim Hamburger DT5 besteht das Bremssystem aus einer elektrischen Bremse über die Fahrmotoren und Scheibenbremsen; seit einer Änderung der Steuerungssoftware bremst die elektrische Bremse bis zum Stillstand.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q1", "fundstelle": "Abschnitt „Allgemeine Merkmale“, Aufzählungspunkt „Beschleunigung und Bremsen“; Abschnitt „Überhitzung von Tunnelanlagen“, Absätze 1 und 2"},
+            {"quellen_id": "Q7", "fundstelle": "Abschnitt „Umweltaspekte“, Absatz 2"}
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P11",
+          "text": "Generisch umfasst das Bremssystem die Bremsregelung, die Betriebsbremse mit Bremsaktuator und Scheibenbremse, die Feststellbremse und den Gleitschutz. Die Bremsregelung nutzt vorrangig die elektrische Bremse des Antriebssystems und ergänzt sie durch die Reibungsbremse, wenn diese nicht ausreicht. Der Bremsaktuator wird je nach Bauart pneumatisch aus der Druckluftanlage oder elektrohydraulisch betätigt. Die Feststellbremse hält den abgestellten Zug ohne Energie. Bremsbefehle kommen vom Fahrpult, vom Fahrzeuggerät der Zugbeeinflussung und von der Notbremse der Fahrgäste.",
+          "begruendung": "modellwissen",
+          "belege": [],
+          "sicherheit": "gering",
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Führerstand",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E32",
+      "absaetze": [
+        {
+          "absatz_id": "P12",
+          "text": "Die Zugsteuerung erfolgt manuell durch einen Triebfahrzeugführer oder teilweise bis vollständig automatisch durch einen Fahrtrechner. Auch fahrerlos betriebene Züge haben Not- oder Hilfsfahrpulte für Ausfälle des automatischen Systems und für Werkstattfahrten. Auf Strecken mit schmalem Profil wird über Fluchttüren in den Stirnseiten evakuiert, die teils außermittig liegen, um den Führerstand freier gestalten zu können. Beim Hamburger DT5 lassen sich alle Türen zentral vom Fahrstand aus öffnen und schließen.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q1", "fundstelle": "Abschnitt „Steuerung“, Absatz 1; Abschnitt „Strecken mit schmalem Profil“, Absatz 2"},
+            {"quellen_id": "Q7", "fundstelle": "Abschnitt „Ausstattung“, Absatz 2"}
+          ],
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P13",
+          "text": "Generisch umfasst der Führerstand Bedienelemente, Anzeigeelemente und den Fahrersitz. Die Bedienelemente geben Fahr-, Brems- und Türbefehle an Fahrzeugmanagement, Bremsregelung und Türsteuerung; die Anzeigeelemente zeigen Fahrerlaubnis und Störmeldungen. Mit steigendem Automatisierungsgrad schrumpft der Führerstand zum Hilfsfahrpult. Die Zahl der Führerstände folgt aus der Zugbildung, die Lage der Stirntür aus dem Evakuierungskonzept.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P12: manuelle oder automatische Zugsteuerung, Hilfsfahrpulte, Stirnfluchttüren, Türbedienung vom Fahrstand.",
+              "P3: Führerstände an beiden Enden oder je Einheit.",
+              "P20: Fahrerlaubnis aus der Zugbeeinflussung."
+            ],
+            "schluss": "Der Führerstand besteht aus Bedien- und Anzeigeelementen und Fahrersitz; sein Umfang hängt vom Automatisierungsgrad und der Zugbildung ab."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Aufbau und Ladung",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E36",
+      "absaetze": [
+        {
+          "absatz_id": "P14",
+          "text": "Der Innenraum ist vorrangig auf möglichst viele Fahrgäste mit großem Stehplatzanteil ausgerichtet. Längssitze brauchen weniger Fläche und erhöhen die Zahl der Stehplätze, Quersitze bieten mehr Komfort für längere Fahrten; vielfach werden beide gemischt. Mehrzweckflächen für Rollstühle, Kinderwagen und Fahrräder sowie Vorrangsitze liegen nahe den Türen. Toiletten und gastronomisches Angebot fehlen. In engen Röhrentunneln muss das Wagenkastenprofil abgerundet oder abgeschrägt werden.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q1", "fundstelle": "Abschnitt „Innenraumgestaltung“, Absätze 1 bis 4; Abschnitt „Allgemeine Merkmale“, Aufzählungspunkt „Ausstattungsniveau“"}
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P15",
+          "text": "Generisch umfasst Aufbau und Ladung die Fahrgastbestuhlung, die Mehrzweckfläche und Haltestangen für Stehende. Die Fahrgastlast geht über Boden und Befestigungen in den Wagenkasten. Die Sitzanordnung bestimmt die Kapazität und die Auslegungsmasse und damit Fahrwerk, Antrieb und Bremse; die Mehrzweckfläche braucht Türnähe und Zugang zum Notrufsystem.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P14: Sitzanordnung, Stehplätze und Mehrzweckflächen nahe den Türen.",
+              "P4: Lastpfad vom Wagenkasten zum Radsatz.",
+              "Funktionsprinzip: Die Zuladung geht in Masse, Achslast und Bremsauslegung ein."
+            ],
+            "schluss": "Die Innenraumausstattung ist mit dem Wagenkasten verbunden und bestimmt die Auslegungsmasse anderer Hauptsysteme."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Elektrik und Elektronik",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E40",
+      "absaetze": [
+        {
+          "absatz_id": "P16",
+          "text": "Sollen Fahrzeuge zu Mehrfachtraktionen gekuppelt werden, etwa um das Platzangebot an eine im Tagesverlauf schwankende Nachfrage anzupassen, müssen sie im Verband eingesetzt werden können und über entsprechende Steuerungstechnik verfügen.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q1", "fundstelle": "Abschnitt „Allgemeine Merkmale“, Aufzählungspunkt „Steuerung/Zugbildung“"}
+          ],
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P17",
+          "text": "Generisch umfasst Elektrik und Elektronik das Niedervolt-Bordnetz, den Stromverteiler und den Fahrzeugbus. Das Niedervolt-Bordnetz verteilt Energie aus Gleichspannungswandler und Bordnetzbatterie über den Stromverteiler an Steuergeräte, Türantriebe, Leuchten und Zugbeeinflussung. Der Fahrzeugbus verbindet die Steuergeräte einer Einheit und über elektrische Kontakte der Kupplung die gekuppelten Einheiten, sodass ein Fahrpult den ganzen Verband steuert.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P16: Mehrfachtraktion erfordert Steuerungstechnik für den Verband.",
+              "P9: Gleichspannungswandler und Bordnetzbatterie speisen das Niedervolt-Bordnetz.",
+              "Funktionsprinzip: Verteilte Steuergeräte brauchen Versorgung und ein gemeinsames Kommunikationsnetz."
+            ],
+            "schluss": "Elektrik und Elektronik bestehen aus Niedervolt-Bordnetz mit Stromverteiler und einem über die Kupplung durchgeschalteten Fahrzeugbus."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrzeugsteuerung und Information",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E44",
+      "absaetze": [
+        {
+          "absatz_id": "P18",
+          "text": "Im Innenraum zeigen U-Bahn-Fahrzeuge in der Regel Linie, Fahrtziel und nächste Station, teils auch die Ausstiegsseite. Nach dem Zwei-Sinne-Prinzip werden Haltestellen akustisch und visuell angekündigt und das Türschließen mit Signaltönen und Signalleuchten begleitet. Teils schließen sensorgesteuerte Türen bei längeren Standzeiten selbsttätig, um Wärme- und Kälteverluste zu mindern. Der Hamburger DT5 hat Fahrgastinformationssysteme, Videoüberwachung und Notrufeinrichtungen.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q1", "fundstelle": "Abschnitt „Fahrgastinformation“, Absätze 2 und 3; Abschnitt „Belüftung und Klimatisierung“, Absatz 3"},
+            {"quellen_id": "Q7", "fundstelle": "Abschnitt „Ausstattung“, Absatz 1"}
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P19",
+          "text": "Generisch umfasst Fahrzeugsteuerung und Information das Fahrzeugmanagement, die Türsteuerung, die Diagnose und die Fahrgastkommunikation aus Fahrgastinformationssystem, Notrufsystem und Videoüberwachung. Das Fahrzeugmanagement verteilt Fahr- und Bremssollwerte von Fahrpult oder automatischer Fahrsteuerung über den Fahrzeugbus an Traktionsstromrichter und Bremsregelung. Die Türsteuerung gibt die Türen nur im Stillstand frei und meldet sie geschlossen als Abfahrbedingung. Die Diagnose sammelt Störmeldungen. Ohne Personal an Bord müssen Notruf und Videobild über Datenfunk zur Leitstelle gelangen.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P18: Fahrgastinformation, Türschließsteuerung, Videoüberwachung und Notrufeinrichtungen.",
+              "P12: Türen werden zentral vom Fahrstand bedient.",
+              "P20: Fahrten ohne Personal an Bord; automatische Fahrsteuerung regelt Zug- und Bremskraft.",
+              "Funktionsprinzip: Fahrbefehle müssen an Antrieb und Bremse verteilt werden; ein Notruf braucht einen Empfänger."
+            ],
+            "schluss": "Das Hauptsystem koordiniert Fahrbefehle, Türen, Diagnose und Fahrgastkommunikation und braucht im fahrerlosen Betrieb eine Verbindung zur Leitstelle."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrerassistenz und Sicherheit",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E52",
+      "absaetze": [
+        {
+          "absatz_id": "P20",
+          "text": "Nach IEC 62290-1 reichen die Automatisierungsgrade von GoA 0, dem Fahren auf Sicht, bis GoA 4, dem fahrerlosen Betrieb ohne Personal an Bord; bei GoA 2 sind Anfahren und Anhalten automatisiert, bei GoA 3 bedient ein Zugbegleiter die Türen. Funkbasierte Zugsteuerung (CBTC) ermittelt die Zugposition hochauflösend und unabhängig von Gleisstromkreisen und tauscht laufend Daten mit der Strecke aus. Das Fahrzeuggerät der Zugbeeinflussung (ATP) überwacht die Geschwindigkeit gegen das Sicherheitsprofil, bremst bei Bedarf und empfängt die Fahrerlaubnis; die automatische Fahrsteuerung (ATO) regelt Zug- und Bremskraft unterhalb dieser Grenze.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q4", "fundstelle": "Einleitung, Absatz 2; Abschnitt „Grades of automation“; Abschnitt „Architecture“, Aufzählung der logischen Komponenten, Punkte „Onboard ATP system“ und „Onboard ATO system“"},
+            {"quellen_id": "Q1", "fundstelle": "Abschnitt „Steuerung“, Absatz 1"}
+          ],
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P21",
+          "text": "Generisch umfasst Fahrerassistenz und Sicherheit die Zugsteuerung an Bord mit Fahrzeuggerät der Zugbeeinflussung, Ortungseinrichtung und automatischer Fahrsteuerung sowie Datenfunk und Brandmeldeanlage. Die Ortungseinrichtung bestimmt die Position aus Radumdrehungen und streckenseitigen Balisen, der Datenfunk empfängt die Fahrerlaubnis. Automatische Fahrsteuerung und Fahrzeuggerät der Zugbeeinflussung geben Sollwerte an das Fahrzeugmanagement beziehungsweise Zwangsbremsbefehle an die Bremsregelung. Die Brandmeldeanlage meldet an Fahrzeugmanagement und Leitstelle, damit über Weiterfahrt oder Evakuierung entschieden werden kann.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P20: Fahrzeuggerät der Zugbeeinflussung und automatische Fahrsteuerung an Bord; Positionsbestimmung und Datenaustausch mit der Strecke.",
+              "Q4, Abschnitt „Architecture“: Balisen als streckenseitige Ausrüstung, Funk als Übertragungsweg.",
+              "P12: Evakuierung im Tunnel über Stirnfluchttüren.",
+              "Funktionsprinzip: Ein Brand muss erkannt und gemeldet werden, bevor über Maßnahmen entschieden wird."
+            ],
+            "schluss": "Das Hauptsystem besteht aus der Zugsteuerung an Bord mit Ortung, Datenfunk und Branderkennung."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Beleuchtung und Sicht",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E59",
+      "absaetze": [
+        {
+          "absatz_id": "P22",
+          "text": "Beim Hamburger DT5 sitzen die Rückleuchten oberhalb der Scheinwerfer, nachdem sie darunter bei Schnee oft zugeschneit waren; kleine blaue Leuchten an der Seitenwand zeigen vor allem dem Betriebspersonal die Türfreigabe an.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q7", "fundstelle": "Abschnitt „Ausstattung“, Absatz 4"}
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P23",
+          "text": "Generisch umfasst Beleuchtung und Sicht Scheinwerfer und Leuchten an beiden Zugenden, die Innenbeleuchtung und den Scheibenwischer der Frontscheibe. Die Scheinwerfer leuchten den Fahrweg im dunklen Tunnel aus; die Leuchten kennzeichnen Zugspitze und Zugschluss und wechseln mit der Fahrtrichtung, die das Fahrzeugmanagement vorgibt. Scheibenwischer werden vor allem auf Oberflächen- und Hochbahnabschnitten gebraucht.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P22: Scheinwerfer und Rückleuchten an den Zugenden, Signalleuchten an der Seitenwand.",
+              "P3: Zweirichtungsbetrieb mit Führerständen an beiden Enden.",
+              "Funktionsprinzip: Im Tunnel fehlt Tageslicht; Niederschlag fällt nur auf Abschnitten im Freien."
+            ],
+            "schluss": "Beide Zugenden tragen Scheinwerfer und richtungsabhängig geschaltete Leuchten; der Scheibenwischer ist für Abschnitte im Freien nötig."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Thermomanagement",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E63",
+      "absaetze": [
+        {
+          "absatz_id": "P24",
+          "text": "Die Belüftung muss auch im Tunnel gewährleistet sein, wo öffnende Fenster nur eingeschränkt möglich sind. Heizungen sind seit der Frühzeit üblich, die Kühlung gewann vor allem seit dem späten zwanzigsten Jahrhundert an Bedeutung. In älteren Netzen mit kleinen Tunnelprofilen fehlt oft Platz für Klimageräte auf dem Dach; Hersteller bieten flache und unterflur eingebaute Geräte an. Abwärme von Klimageräten und Bremsen kann Tunnel und Bahnhöfe aufheizen. Beim Hamburger DT5 sind die Fahrmotoren wassergekühlt.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q1", "fundstelle": "Abschnitt „Belüftung und Klimatisierung“, Absätze 1 und 2; Abschnitt „Überhitzung von Tunnelanlagen“, Absatz 1"},
+            {"quellen_id": "Q7", "fundstelle": "Infobox, Feld „Antrieb“; Abschnitt „Umweltaspekte“, Absatz 2"}
+          ],
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P25",
+          "text": "Generisch umfasst das Thermomanagement die Heiz- und Klimaanlage für Fahrgastraum und Führerstand sowie den Kühlkreislauf mit Kühler für Traktionsstromrichter und Traktionsmaschinen. Die Heiz- und Klimaanlage bezieht Energie vom Hilfsbetriebeumrichter und temperiert Frischluft, der Kühlkreislauf führt Verlustwärme zum Kühler. Beide geben Wärme an die Umgebung ab, im Tunnel also an die Tunnelluft; das Fahrzeug ist dadurch mit der Tunnellüftung gekoppelt.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P24: Heizung, Kühlung und wassergekühlte Fahrmotoren; Abwärme heizt Tunnel auf.",
+              "P7: Verlustwärme in Traktionsstromrichter und Traktionsmaschine.",
+              "Funktionsprinzip: Wärme, die ein Fahrzeug abgibt, verbleibt im umgebenden Raum."
+            ],
+            "schluss": "Das Thermomanagement besteht aus Heiz- und Klimaanlage und Traktionskühlung und hat eine thermische Schnittstelle zur Tunnelluft."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Neben- und Versorgungssysteme",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E67",
+      "absaetze": [
+        {
+          "absatz_id": "P26",
+          "text": "Die Neben- und Versorgungssysteme umfassen die Druckluftanlage aus Kompressor für Druckluft, Luftaufbereitung und Druckluftbehälter. Luftgefederte Drehgestelle brauchen Druckluft für die Federbälge, pneumatische Bremsaktuatoren für die Reibungsbremse. Der Kompressor wird vom Hilfsbetriebeumrichter gespeist, die Luftaufbereitung trocknet die Luft, die Druckluftbehälter puffern den Bedarf. Bei elektrohydraulischer Bremse und Stahlfederung kann die Druckluftanlage entfallen.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P3: luftgefederte Drehgestelle beim DT5.",
+              "P11: pneumatische oder elektrohydraulische Betätigung der Reibungsbremse.",
+              "P9: Hilfsbetriebeumrichter speist den Kompressor.",
+              "Funktionsprinzip: Pneumatische Verbraucher brauchen Erzeugung, Aufbereitung und Speicherung von Druckluft."
+            ],
+            "schluss": "Die Druckluftanlage ist das zentrale Neben- und Versorgungssystem, solange pneumatische Verbraucher vorhanden sind."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Zusammenfassung",
+      "abschnittstyp": "gesamtsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P27",
+          "text": "Auf oberster Ebene besteht die U-Bahn aus Fahrzeugstruktur und Fahrwerk, Antriebssystem, Energieversorgungssystem, Bremssystem, Führerstand, Aufbau und Ladung, Elektrik und Elektronik, Fahrzeugsteuerung und Information, Fahrerassistenz und Sicherheit, Beleuchtung und Sicht und Thermomanagement; hinzu kommen die Neben- und Versorgungssysteme. Ein Lenksystem entfällt, weil das Gleis die Spur führt. Kennzeichnend sind Stromabnahme von der Stromschiene, Auslegung auf schnellen Fahrgastwechsel, enge Kopplung an das Tunnelprofil und Automatisierung bis zum fahrerlosen Betrieb.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P3 bis P26: Hauptsysteme mit ihren Schnittstellen.",
+              "P4: Spurführung durch Radsatz und Gleis."
+            ],
+            "schluss": "Die Hauptsysteme bilden die oberste Dekompositionsebene der U-Bahn."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Modellierungsbezug",
+      "abschnittstyp": "modellierung",
+      "absaetze": [
+        {
+          "absatz_id": "P28",
+          "text": "In SysML bildet der Block U-Bahn das Gesamtsystem mit den Hauptsystemen als Teilen. Dekompositionspfade sind etwa `Fahrzeugstruktur und Fahrwerk → Laufwerk → Drehgestell → Radsatz`, `Energieversorgungssystem → Stromabnahme → Stromabnehmer`, `Fahrerassistenz und Sicherheit → Zugsteuerung an Bord → Fahrzeuggerät der Zugbeeinflussung` und `Neben- und Versorgungssysteme → Druckluftanlage → Kompressor für Druckluft`. Externe Ports führen zu Stromschiene oder Oberleitung, Gleis, Streckenfunk und Bahnsteig; interne Konnektoren bilden Fahrspannung, Bordnetz, Druckluft, Kühlmittel und Fahrzeugbus ab, die Kupplung bündelt mechanische und Datenverbindungen. Varianten werden Spezialisierungen. Block Definition Diagrams zeigen die Zerlegung, Internal Block Diagrams die Flüsse, Aktivitätsdiagramme Fahr-, Brems- und Türablauf, Zustandsdiagramme die Betriebsarten.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P4, P9, P21, P26: Hauptsysteme mit Subsystemen und Komponenten.",
+              "P2: externe Schnittstellen zu Energiezuführung, Fahrweg und Strecke.",
+              "Modellannahme: SysML-Blöcke, Ports und Konnektoren bilden Dekomposition und Flüsse ab."
+            ],
+            "schluss": "Die Dekomposition lässt sich als Blockhierarchie mit Ports abbilden, Varianten als Spezialisierungen."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Flüsse",
+      "abschnittstyp": "fluesse",
+      "absaetze": [
+        {
+          "absatz_id": "P29",
+          "text": "Elektrisch: Stromabnehmer, Hauptschalter, Netzfilter, Traktionsstromrichter, Traktionsmaschine, beim Bremsen zurück; Netzfilter an Hilfsbetriebeumrichter, dieser an Heiz- und Klimaanlage, Kompressor und Gleichspannungswandler, dieser an Bordnetzbatterie und Niedervolt-Bordnetz, dieses an Leuchten und Zugbeeinflussung. Mechanisch: Traktionsmaschine, Getriebe, Radsatz; Fahrgastlast über Wagenkasten und Drehgestell. Pneumatisch: Kompressor, Luftaufbereitung, Druckluftbehälter an Bremsaktuator und Federung. Thermisch: Antrieb an Kühlkreislauf und Kühler, Klimaanlage an den Fahrgastraum. Information: Bedienelemente, automatische Fahrsteuerung und Brandmeldeanlage an Fahrzeugmanagement, dieses an Traktionsstromrichter, Bremsregelung, Leuchten und Fahrgastinformationssystem; Ortungseinrichtung und Datenfunk an Fahrzeuggerät der Zugbeeinflussung, dieses an Bremsregelung und Anzeigeelemente; Türsteuerung an Türen; Notrufsystem an Datenfunk; Fahrzeugbus über die Kupplung.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P7, P9, P11, P13, P15, P17, P19, P21, P23, P25, P26: Flüsse der Hauptsysteme.",
+              "Funktionsprinzip: Jeder Fluss hat Ursprung und Ziel."
+            ],
+            "schluss": "Die Flüsse verbinden die Hauptsysteme über elektrische, mechanische, pneumatische, thermische und informationstechnische Schnittstellen."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Perspektiven",
+      "abschnittstyp": "perspektiven",
+      "absaetze": [
+        {
+          "absatz_id": "P30",
+          "text": "Funktional gilt: Fahrzeuglasten tragen Wagenkasten und Laufwerk; Energie speichern Bordnetzbatterie und Druckluftbehälter; Elektrische Energie verteilen Stromabnahme, Hilfsbetriebeversorgung, Niedervolt-Bordnetz und Stromverteiler; Antriebsleistung erzeugen Traktionsstromrichter und Traktionsmaschine; Drehmoment übertragen das Getriebe; Fahrzeug fortbewegen Antriebssystem und Radsatz; Fahrzeug verzögern Bremssystem und Traktionsmaschine; Bremsenergie zurückgewinnen Traktionsmaschine und Traktionsstromrichter; Fahrzeug festhalten die Feststellbremse; Druckluft bereitstellen die Druckluftanlage; Fahrereingaben erfassen die Bedienelemente; Fahrerinformationen anzeigen die Anzeigeelemente; Fahrersicht sicherstellen der Scheibenwischer; Fahrzeugumgebung ausleuchten die Scheinwerfer; Lichtsignale abgeben die Leuchten; Ladung aufnehmen Fahrgastbestuhlung, Mehrzweckfläche und Haltestangen; Insassen schützen Brandmeldeanlage, Notrufsystem und Haltestangen; Schiebetür betätigen Türen und Türsteuerung; Daten übertragen Fahrzeugbus und Datenfunk; Fahrzeugzustand überwachen Diagnose und Fahrzeugmanagement; Fahrzeugposition bestimmen die Ortungseinrichtung; Fahrgeschwindigkeit überwachen das Fahrzeuggerät der Zugbeeinflussung; Zugfahrt automatisch steuern die automatische Fahrsteuerung; Fahrgäste informieren das Fahrgastinformationssystem; Betriebstemperatur regeln Kühlkreislauf und Kühler; Innenraum klimatisieren die Heiz- und Klimaanlage.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "Modellblock: Funktionen mit ausführenden Elementen.",
+              "P4 bis P26: Aufgaben der Hauptsysteme."
+            ],
+            "schluss": "Jede Funktion ist einem ausführenden Element zugeordnet."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    }
+  ],
+  "modell": {
+    "elemente": [
+      {"id": "E1", "name": "U-Bahn", "typ": "gesamtsystem", "eltern_id": null, "absatz_ids": ["P1", "P2", "P27"]},
+      {"id": "E2", "name": "Fahrzeugstruktur und Fahrwerk", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P4", "P27"], "kategorie": "struktur_fahrwerk"},
+      {"id": "E3", "name": "Wagenkasten", "typ": "subsystem", "eltern_id": "E2", "absatz_ids": ["P3", "P4"]},
+      {"id": "E4", "name": "Türen", "typ": "komponente", "eltern_id": "E3", "absatz_ids": ["P3", "P4"]},
+      {"id": "E5", "name": "Wagenübergang", "typ": "komponente", "eltern_id": "E3", "absatz_ids": ["P4"]},
+      {"id": "E6", "name": "Kupplung", "typ": "komponente", "eltern_id": "E3", "absatz_ids": ["P3", "P4"]},
+      {"id": "E7", "name": "Übersteigschutz", "typ": "komponente", "eltern_id": "E3", "absatz_ids": ["P3", "P4"]},
+      {"id": "E8", "name": "Laufwerk", "typ": "subsystem", "eltern_id": "E2", "absatz_ids": ["P4", "P5"]},
+      {"id": "E9", "name": "Drehgestell", "typ": "subsystem", "eltern_id": "E8", "absatz_ids": ["P3", "P4"]},
+      {"id": "E10", "name": "Radsatz", "typ": "komponente", "eltern_id": "E9", "absatz_ids": ["P4", "P7"]},
+      {"id": "E11", "name": "Federung", "typ": "komponente", "eltern_id": "E9", "absatz_ids": ["P4", "P26"]},
+      {"id": "E12", "name": "Antriebssystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P7", "P27"], "kategorie": "antrieb"},
+      {"id": "E13", "name": "Traktionsstromrichter", "typ": "komponente", "eltern_id": "E12", "absatz_ids": ["P7"]},
+      {"id": "E14", "name": "Traktionsmaschine", "typ": "komponente", "eltern_id": "E12", "absatz_ids": ["P6", "P7"]},
+      {"id": "E15", "name": "Getriebe", "typ": "komponente", "eltern_id": "E12", "absatz_ids": ["P7"]},
+      {"id": "E16", "name": "Energieversorgungssystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P9", "P27"], "kategorie": "energieversorgung"},
+      {"id": "E17", "name": "Stromabnahme", "typ": "subsystem", "eltern_id": "E16", "absatz_ids": ["P8", "P9"]},
+      {"id": "E18", "name": "Stromabnehmer", "typ": "komponente", "eltern_id": "E17", "absatz_ids": ["P8", "P9"]},
+      {"id": "E19", "name": "Hauptschalter", "typ": "komponente", "eltern_id": "E17", "absatz_ids": ["P9"]},
+      {"id": "E20", "name": "Netzfilter", "typ": "komponente", "eltern_id": "E17", "absatz_ids": ["P9"]},
+      {"id": "E21", "name": "Hilfsbetriebeversorgung", "typ": "subsystem", "eltern_id": "E16", "absatz_ids": ["P9"]},
+      {"id": "E22", "name": "Hilfsbetriebeumrichter", "typ": "komponente", "eltern_id": "E21", "absatz_ids": ["P9", "P25", "P26"]},
+      {"id": "E23", "name": "Gleichspannungswandler", "typ": "komponente", "eltern_id": "E21", "absatz_ids": ["P9", "P17"]},
+      {"id": "E24", "name": "Bordnetzbatterie", "typ": "komponente", "eltern_id": "E21", "absatz_ids": ["P9", "P17"]},
+      {"id": "E25", "name": "Bremssystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P10", "P11", "P27"], "kategorie": "bremse"},
+      {"id": "E26", "name": "Bremsregelung", "typ": "komponente", "eltern_id": "E25", "absatz_ids": ["P11"]},
+      {"id": "E27", "name": "Betriebsbremse", "typ": "subsystem", "eltern_id": "E25", "absatz_ids": ["P11"]},
+      {"id": "E28", "name": "Bremsaktuator", "typ": "komponente", "eltern_id": "E27", "absatz_ids": ["P11", "P26"]},
+      {"id": "E29", "name": "Scheibenbremse", "typ": "komponente", "eltern_id": "E27", "absatz_ids": ["P10", "P11"]},
+      {"id": "E30", "name": "Feststellbremse", "typ": "komponente", "eltern_id": "E25", "absatz_ids": ["P11"]},
+      {"id": "E31", "name": "Gleitschutz", "typ": "komponente", "eltern_id": "E25", "absatz_ids": ["P11"]},
+      {"id": "E32", "name": "Führerstand", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P12", "P13", "P27"], "kategorie": "bedienraum"},
+      {"id": "E33", "name": "Bedienelemente", "typ": "komponente", "eltern_id": "E32", "absatz_ids": ["P13"]},
+      {"id": "E34", "name": "Anzeigeelemente", "typ": "komponente", "eltern_id": "E32", "absatz_ids": ["P13"]},
+      {"id": "E35", "name": "Fahrersitz", "typ": "komponente", "eltern_id": "E32", "absatz_ids": ["P13"]},
+      {"id": "E36", "name": "Aufbau und Ladung", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P15", "P27"], "kategorie": "aufbau_nutzlast"},
+      {"id": "E37", "name": "Fahrgastbestuhlung", "typ": "komponente", "eltern_id": "E36", "absatz_ids": ["P14", "P15"]},
+      {"id": "E38", "name": "Mehrzweckfläche", "typ": "komponente", "eltern_id": "E36", "absatz_ids": ["P14", "P15"]},
+      {"id": "E39", "name": "Haltestangen", "typ": "komponente", "eltern_id": "E36", "absatz_ids": ["P15"]},
+      {"id": "E40", "name": "Elektrik und Elektronik", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P16", "P17", "P27"], "kategorie": "elektrik_elektronik"},
+      {"id": "E41", "name": "Niedervolt-Bordnetz", "typ": "komponente", "eltern_id": "E40", "absatz_ids": ["P17"]},
+      {"id": "E42", "name": "Stromverteiler", "typ": "komponente", "eltern_id": "E40", "absatz_ids": ["P17"]},
+      {"id": "E43", "name": "Fahrzeugbus", "typ": "komponente", "eltern_id": "E40", "absatz_ids": ["P17"]},
+      {"id": "E44", "name": "Fahrzeugsteuerung und Information", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P18", "P19", "P27"], "kategorie": "steuerung_information"},
+      {"id": "E45", "name": "Fahrzeugmanagement", "typ": "komponente", "eltern_id": "E44", "absatz_ids": ["P19"]},
+      {"id": "E46", "name": "Türsteuerung", "typ": "komponente", "eltern_id": "E44", "absatz_ids": ["P19"]},
+      {"id": "E47", "name": "Diagnose", "typ": "komponente", "eltern_id": "E44", "absatz_ids": ["P19"]},
+      {"id": "E48", "name": "Fahrgastkommunikation", "typ": "subsystem", "eltern_id": "E44", "absatz_ids": ["P19"]},
+      {"id": "E49", "name": "Fahrgastinformationssystem", "typ": "komponente", "eltern_id": "E48", "absatz_ids": ["P18", "P19"]},
+      {"id": "E50", "name": "Notrufsystem", "typ": "komponente", "eltern_id": "E48", "absatz_ids": ["P19"]},
+      {"id": "E51", "name": "Videoüberwachung", "typ": "komponente", "eltern_id": "E48", "absatz_ids": ["P18", "P19"]},
+      {"id": "E52", "name": "Fahrerassistenz und Sicherheit", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P20", "P21", "P27"], "kategorie": "assistenz_sicherheit"},
+      {"id": "E53", "name": "Zugsteuerung an Bord", "typ": "subsystem", "eltern_id": "E52", "absatz_ids": ["P21"]},
+      {"id": "E54", "name": "Fahrzeuggerät der Zugbeeinflussung", "typ": "komponente", "eltern_id": "E53", "absatz_ids": ["P20", "P21"]},
+      {"id": "E55", "name": "Automatische Fahrsteuerung", "typ": "komponente", "eltern_id": "E53", "absatz_ids": ["P20", "P21"]},
+      {"id": "E56", "name": "Ortungseinrichtung", "typ": "komponente", "eltern_id": "E53", "absatz_ids": ["P21"]},
+      {"id": "E57", "name": "Datenfunk", "typ": "komponente", "eltern_id": "E52", "absatz_ids": ["P19", "P21"]},
+      {"id": "E58", "name": "Brandmeldeanlage", "typ": "komponente", "eltern_id": "E52", "absatz_ids": ["P21"]},
+      {"id": "E59", "name": "Beleuchtung und Sicht", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P22", "P23", "P27"], "kategorie": "beleuchtung_sicht"},
+      {"id": "E60", "name": "Scheinwerfer", "typ": "komponente", "eltern_id": "E59", "absatz_ids": ["P22", "P23"]},
+      {"id": "E61", "name": "Leuchten", "typ": "komponente", "eltern_id": "E59", "absatz_ids": ["P22", "P23"]},
+      {"id": "E62", "name": "Scheibenwischer", "typ": "komponente", "eltern_id": "E59", "absatz_ids": ["P23"]},
+      {"id": "E63", "name": "Thermomanagement", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P24", "P25", "P27"], "kategorie": "thermomanagement"},
+      {"id": "E64", "name": "Heiz- und Klimaanlage", "typ": "komponente", "eltern_id": "E63", "absatz_ids": ["P24", "P25"]},
+      {"id": "E65", "name": "Kühlkreislauf", "typ": "komponente", "eltern_id": "E63", "absatz_ids": ["P25"]},
+      {"id": "E66", "name": "Kühler", "typ": "komponente", "eltern_id": "E63", "absatz_ids": ["P25"]},
+      {"id": "E67", "name": "Neben- und Versorgungssysteme", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P26", "P27"], "kategorie": "nebensysteme"},
+      {"id": "E68", "name": "Druckluftanlage", "typ": "subsystem", "eltern_id": "E67", "absatz_ids": ["P26"]},
+      {"id": "E69", "name": "Kompressor für Druckluft", "typ": "komponente", "eltern_id": "E68", "absatz_ids": ["P26"]},
+      {"id": "E70", "name": "Luftaufbereitung", "typ": "komponente", "eltern_id": "E68", "absatz_ids": ["P26"]},
+      {"id": "E71", "name": "Druckluftbehälter", "typ": "komponente", "eltern_id": "E68", "absatz_ids": ["P26"]}
+    ],
+    "funktionen": [
+      {"id": "F1", "name": "Fahrzeuglasten tragen", "ausgefuehrt_von": ["E3", "E8"], "absatz_ids": ["P4", "P30"]},
+      {"id": "F2", "name": "Energie speichern", "ausgefuehrt_von": ["E24", "E71"], "absatz_ids": ["P9", "P26", "P30"]},
+      {"id": "F3", "name": "Elektrische Energie verteilen", "ausgefuehrt_von": ["E17", "E21", "E41", "E42"], "absatz_ids": ["P9", "P17", "P30"]},
+      {"id": "F4", "name": "Antriebsleistung erzeugen", "ausgefuehrt_von": ["E13", "E14"], "absatz_ids": ["P7", "P30"]},
+      {"id": "F5", "name": "Drehmoment übertragen", "ausgefuehrt_von": ["E15"], "absatz_ids": ["P7", "P30"]},
+      {"id": "F6", "name": "Fahrzeug fortbewegen", "ausgefuehrt_von": ["E12", "E10"], "absatz_ids": ["P6", "P7", "P30"]},
+      {"id": "F7", "name": "Fahrzeug verzögern", "ausgefuehrt_von": ["E25", "E14"], "absatz_ids": ["P10", "P11", "P30"]},
+      {"id": "F8", "name": "Bremsenergie zurückgewinnen", "ausgefuehrt_von": ["E14", "E13"], "absatz_ids": ["P6", "P7", "P30"]},
+      {"id": "F9", "name": "Fahrzeug festhalten", "ausgefuehrt_von": ["E30"], "absatz_ids": ["P11", "P30"]},
+      {"id": "F10", "name": "Druckluft bereitstellen", "ausgefuehrt_von": ["E68"], "absatz_ids": ["P26", "P30"]},
+      {"id": "F11", "name": "Fahrereingaben erfassen", "ausgefuehrt_von": ["E33"], "absatz_ids": ["P13", "P30"]},
+      {"id": "F12", "name": "Fahrerinformationen anzeigen", "ausgefuehrt_von": ["E34"], "absatz_ids": ["P13", "P30"]},
+      {"id": "F13", "name": "Fahrersicht sicherstellen", "ausgefuehrt_von": ["E62"], "absatz_ids": ["P23", "P30"]},
+      {"id": "F14", "name": "Fahrzeugumgebung ausleuchten", "ausgefuehrt_von": ["E60"], "absatz_ids": ["P23", "P30"]},
+      {"id": "F15", "name": "Lichtsignale abgeben", "ausgefuehrt_von": ["E61"], "absatz_ids": ["P22", "P23", "P30"]},
+      {"id": "F16", "name": "Ladung aufnehmen", "ausgefuehrt_von": ["E37", "E38", "E39"], "absatz_ids": ["P14", "P15", "P30"]},
+      {"id": "F17", "name": "Insassen schützen", "ausgefuehrt_von": ["E58", "E50", "E39"], "absatz_ids": ["P19", "P21", "P30"]},
+      {"id": "F18", "name": "Schiebetür betätigen", "ausgefuehrt_von": ["E4", "E46"], "absatz_ids": ["P3", "P19", "P30"]},
+      {"id": "F19", "name": "Daten übertragen", "ausgefuehrt_von": ["E43", "E57"], "absatz_ids": ["P17", "P21", "P30"]},
+      {"id": "F20", "name": "Fahrzeugzustand überwachen", "ausgefuehrt_von": ["E47", "E45"], "absatz_ids": ["P19", "P30"]},
+      {"id": "F21", "name": "Fahrzeugposition bestimmen", "ausgefuehrt_von": ["E56"], "absatz_ids": ["P21", "P30"]},
+      {"id": "F22", "name": "Fahrgeschwindigkeit überwachen", "ausgefuehrt_von": ["E54"], "absatz_ids": ["P20", "P21", "P30"]},
+      {"id": "F23", "name": "Zugfahrt automatisch steuern", "ausgefuehrt_von": ["E55"], "absatz_ids": ["P20", "P21", "P30"]},
+      {"id": "F24", "name": "Fahrgäste informieren", "ausgefuehrt_von": ["E49"], "absatz_ids": ["P18", "P19", "P30"]},
+      {"id": "F25", "name": "Betriebstemperatur regeln", "ausgefuehrt_von": ["E65", "E66"], "absatz_ids": ["P25", "P30"]},
+      {"id": "F26", "name": "Innenraum klimatisieren", "ausgefuehrt_von": ["E64"], "absatz_ids": ["P24", "P25", "P30"]}
+    ],
+    "fluesse": [
+      {"id": "S1", "von": "E18", "nach": "E19", "art": "elektrisch", "medium": "Gleichstrom aus Stromschiene oder Oberleitung", "absatz_ids": ["P8", "P9", "P29"]},
+      {"id": "S2", "von": "E19", "nach": "E20", "art": "elektrisch", "medium": "Fahrspannung", "absatz_ids": ["P9", "P29"]},
+      {"id": "S3", "von": "E20", "nach": "E13", "art": "elektrisch", "medium": "gefilterte Fahrspannung", "absatz_ids": ["P7", "P9", "P29"], "schnittstelle": "Fahrspannungsanschluss Traktion"},
+      {"id": "S4", "von": "E13", "nach": "E14", "art": "elektrisch", "medium": "geregelte Drehspannung", "absatz_ids": ["P7", "P29"]},
+      {"id": "S5", "von": "E14", "nach": "E15", "art": "mechanisch", "medium": "Drehmoment", "absatz_ids": ["P7", "P29"]},
+      {"id": "S6", "von": "E15", "nach": "E10", "art": "mechanisch", "medium": "Drehmoment am Radsatz", "absatz_ids": ["P7", "P29"], "schnittstelle": "Radsatzgetriebe am Drehgestell"},
+      {"id": "S7", "von": "E14", "nach": "E13", "art": "elektrisch", "medium": "generatorische Bremsenergie", "absatz_ids": ["P7", "P29"]},
+      {"id": "S8", "von": "E13", "nach": "E20", "art": "elektrisch", "medium": "rückgespeiste Bremsenergie", "absatz_ids": ["P6", "P7", "P29"], "schnittstelle": "Fahrspannungsanschluss Traktion"},
+      {"id": "S9", "von": "E20", "nach": "E22", "art": "elektrisch", "medium": "Fahrspannung", "absatz_ids": ["P9", "P29"]},
+      {"id": "S10", "von": "E22", "nach": "E64", "art": "elektrisch", "medium": "Hilfsbetriebespannung", "absatz_ids": ["P9", "P25", "P29"], "schnittstelle": "Hilfsbetriebeanschluss Klimaanlage"},
+      {"id": "S11", "von": "E22", "nach": "E69", "art": "elektrisch", "medium": "Hilfsbetriebespannung", "absatz_ids": ["P9", "P26", "P29"], "schnittstelle": "Hilfsbetriebeanschluss Kompressor"},
+      {"id": "S12", "von": "E22", "nach": "E23", "art": "elektrisch", "medium": "Hilfsbetriebespannung", "absatz_ids": ["P9", "P29"]},
+      {"id": "S13", "von": "E23", "nach": "E24", "art": "elektrisch", "medium": "Ladestrom", "absatz_ids": ["P9", "P29"]},
+      {"id": "S14", "von": "E23", "nach": "E41", "art": "elektrisch", "medium": "Niedervolt-Gleichspannung", "absatz_ids": ["P9", "P17", "P29"], "schnittstelle": "Niedervolt-Einspeisung"},
+      {"id": "S15", "von": "E24", "nach": "E41", "art": "elektrisch", "medium": "Pufferstrom bei Spannungsausfall", "absatz_ids": ["P9", "P17"], "schnittstelle": "Niedervolt-Einspeisung"},
+      {"id": "S16", "von": "E42", "nach": "E54", "art": "elektrisch", "medium": "Niedervolt-Versorgung", "absatz_ids": ["P17", "P29"], "schnittstelle": "Niedervolt-Versorgung Zugbeeinflussung"},
+      {"id": "S17", "von": "E41", "nach": "E61", "art": "elektrisch", "medium": "Niedervolt-Versorgung", "absatz_ids": ["P17", "P23", "P29"], "schnittstelle": "Niedervolt-Versorgung Beleuchtung"},
+      {"id": "S18", "von": "E33", "nach": "E45", "art": "information", "medium": "Fahr-, Brems- und Türbefehle", "absatz_ids": ["P13", "P19", "P29"], "schnittstelle": "Fahrpultschnittstelle"},
+      {"id": "S19", "von": "E45", "nach": "E13", "art": "information", "medium": "Zug- und Bremskraftsollwert", "absatz_ids": ["P7", "P19", "P29"], "schnittstelle": "Fahrzeugbus"},
+      {"id": "S20", "von": "E45", "nach": "E26", "art": "information", "medium": "Bremssollwert", "absatz_ids": ["P11", "P19", "P29"], "schnittstelle": "Fahrzeugbus"},
+      {"id": "S21", "von": "E26", "nach": "E28", "art": "information", "medium": "Bremsbefehl", "absatz_ids": ["P11"]},
+      {"id": "S22", "von": "E28", "nach": "E29", "art": "mechanisch", "medium": "Zuspannkraft", "absatz_ids": ["P11", "P29"]},
+      {"id": "S23", "von": "E69", "nach": "E70", "art": "pneumatisch", "medium": "Druckluft", "absatz_ids": ["P26", "P29"]},
+      {"id": "S24", "von": "E70", "nach": "E71", "art": "pneumatisch", "medium": "aufbereitete Druckluft", "absatz_ids": ["P26", "P29"]},
+      {"id": "S25", "von": "E71", "nach": "E28", "art": "pneumatisch", "medium": "Druckluft", "absatz_ids": ["P11", "P26", "P29"], "schnittstelle": "Druckluftanschluss Bremse"},
+      {"id": "S26", "von": "E71", "nach": "E11", "art": "pneumatisch", "medium": "Druckluft für Luftfederbälge", "absatz_ids": ["P26", "P29"], "schnittstelle": "Druckluftanschluss Luftfederung"},
+      {"id": "S27", "von": "E56", "nach": "E54", "art": "information", "medium": "Zugposition", "absatz_ids": ["P21", "P29"]},
+      {"id": "S28", "von": "E57", "nach": "E54", "art": "information", "medium": "Fahrerlaubnis von der Strecke", "absatz_ids": ["P20", "P21", "P29"]},
+      {"id": "S29", "von": "E54", "nach": "E26", "art": "information", "medium": "Zwangsbremsbefehl", "absatz_ids": ["P20", "P21", "P29"], "schnittstelle": "Bremseingriff Zugbeeinflussung"},
+      {"id": "S30", "von": "E55", "nach": "E45", "art": "information", "medium": "Zug- und Bremssollwerte", "absatz_ids": ["P19", "P21", "P29"], "schnittstelle": "Fahrzeugbus"},
+      {"id": "S31", "von": "E54", "nach": "E34", "art": "information", "medium": "Fahrerlaubnis und zulässige Geschwindigkeit", "absatz_ids": ["P13", "P29"], "schnittstelle": "Führerstandsanzeige Zugbeeinflussung"},
+      {"id": "S32", "von": "E46", "nach": "E4", "art": "information", "medium": "Türfreigabe und Schließbefehl", "absatz_ids": ["P19", "P29"], "schnittstelle": "Türsteuerleitung"},
+      {"id": "S33", "von": "E46", "nach": "E45", "art": "information", "medium": "Meldung Türen geschlossen", "absatz_ids": ["P19"]},
+      {"id": "S34", "von": "E47", "nach": "E34", "art": "information", "medium": "Störmeldungen", "absatz_ids": ["P13", "P19"], "schnittstelle": "Fahrzeugbus"},
+      {"id": "S35", "von": "E13", "nach": "E65", "art": "thermisch", "medium": "Verlustwärme über Kühlmittel", "absatz_ids": ["P25", "P29"], "schnittstelle": "Kühlmittelanschluss Traktion"},
+      {"id": "S36", "von": "E14", "nach": "E65", "art": "thermisch", "medium": "Verlustwärme über Kühlmittel", "absatz_ids": ["P24", "P25", "P29"], "schnittstelle": "Kühlmittelanschluss Traktion"},
+      {"id": "S37", "von": "E65", "nach": "E66", "art": "thermisch", "medium": "Kühlmittel", "absatz_ids": ["P25", "P29"]},
+      {"id": "S38", "von": "E64", "nach": "E36", "art": "thermisch", "medium": "temperierte Frischluft", "absatz_ids": ["P25", "P29"], "schnittstelle": "Luftkanal Fahrgastraum"},
+      {"id": "S39", "von": "E37", "nach": "E3", "art": "mechanisch", "medium": "Fahrgastlast", "absatz_ids": ["P15", "P29"], "schnittstelle": "Sitz- und Bodenbefestigung"},
+      {"id": "S40", "von": "E3", "nach": "E9", "art": "mechanisch", "medium": "Wagenkastenlast", "absatz_ids": ["P4", "P29"]},
+      {"id": "S41", "von": "E43", "nach": "E6", "art": "information", "medium": "Zugbusdaten zum gekuppelten Fahrzeug", "absatz_ids": ["P17", "P29"], "schnittstelle": "elektrische Kupplungskontakte"},
+      {"id": "S42", "von": "E58", "nach": "E45", "art": "information", "medium": "Brandmeldung", "absatz_ids": ["P21", "P29"], "schnittstelle": "Fahrzeugbus"},
+      {"id": "S43", "von": "E45", "nach": "E49", "art": "information", "medium": "Linie, Fahrtziel, nächste Station", "absatz_ids": ["P18", "P19", "P29"]},
+      {"id": "S44", "von": "E50", "nach": "E57", "art": "information", "medium": "Notruf und Videobild zur Leitstelle", "absatz_ids": ["P19", "P29"], "schnittstelle": "Fahrgastkommunikation zum Datenfunk"},
+      {"id": "S45", "von": "E45", "nach": "E61", "art": "information", "medium": "Fahrtrichtung für Spitzen- und Schlusssignal", "absatz_ids": ["P23", "P29"], "schnittstelle": "Fahrzeugbus"}
+    ],
+    "entfallene_kategorien": [
+      {"kategorie": "lenkung", "grund": "Spurgeführtes Schienenfahrzeug: Die Spurführung übernehmen Radsatz und Gleis, bei gummibereiften Bauarten Führungsräder an Führungsschienen; beides ist im Laufwerk unter Fahrzeugstruktur und Fahrwerk modelliert."}
+    ],
+    "varianten": [
+      {
+        "id": "V1",
+        "element_id": "E17",
+        "bezeichnung": "Art der Stromzuführung",
+        "alternativen": ["Stromschiene, von unten bestrichen", "Stromschiene, von oben oder seitlich bestrichen", "Oberleitung mit Dachstromabnehmer", "Stromschiene mit zusätzlichem Dachstromabnehmer für Werkstattfahrten"],
+        "auswahlkriterien": ["Tunnelprofil und Baukosten", "übertragbare Spannung und Abstand der Unterwerke", "Berührungsschutz für Personen im Gleisbereich", "Vereisung und Witterung auf Abschnitten im Freien", "Lücken an Weichen und Gleisverbindungen", "Bestandsnetz und Werkstattanlagen"],
+        "auswirkungen": [
+          {"element_id": "E18", "beschreibung": "Abnehmerschuhe an den Drehgestellen oder Dachstromabnehmer; Verteilung über die Zuglänge zur Überbrückung von Lücken."},
+          {"element_id": "E3", "beschreibung": "Dachfläche für Stromabnehmer und Isolatoren nur bei Oberleitung; Wagenkastenhöhe und Profil abhängig vom Tunnel."},
+          {"element_id": "E20", "beschreibung": "Auslegung von Netzfilter und Traktionsstromrichter nach der Spannungsebene."},
+          {"element_id": "E64", "beschreibung": "Konkurrenz um Dachbauraum zwischen Klimageräten und Dachstromabnehmer."}
+        ],
+        "absatz_ids": ["P8", "P9"]
+      },
+      {
+        "id": "V2",
+        "element_id": "E17",
+        "bezeichnung": "Rückstromführung",
+        "alternativen": ["Rückstrom über die Fahrschienen", "Rückstrom über eine eigene vierte Schiene"],
+        "auswahlkriterien": ["Korrosionsgefahr metallischer Tunnelauskleidungen durch Streuströme", "Laufwerkstechnik", "Vorgaben des Bestandsnetzes"],
+        "auswirkungen": [
+          {"element_id": "E18", "beschreibung": "Zusätzliche Rückstromabnehmer für die vierte Schiene."},
+          {"element_id": "E10", "beschreibung": "Rückstromführung über Radsatz und Erdungskontakte nur bei Rückstrom über die Fahrschienen."}
+        ],
+        "absatz_ids": ["P8"]
+      },
+      {
+        "id": "V3",
+        "element_id": "E8",
+        "bezeichnung": "Laufwerkstechnik",
+        "alternativen": ["Stahlräder auf Stahlschienen", "Gummireifen mit Stahlnotlaufrädern und horizontalen Führungsrädern", "Gummireifen ohne Stahlräder mit Führungsschiene"],
+        "auswahlkriterien": ["Längsneigung der Strecke", "geforderte Beschleunigung und Bremsverzögerung", "Witterung auf Abschnitten im Freien", "Instandhaltungskosten", "Energieeffizienz", "Weichenbauart"],
+        "auswirkungen": [
+          {"element_id": "E9", "beschreibung": "Drehgestell mit zusätzlichen Gummireifen und Führungsrädern."},
+          {"element_id": "E18", "beschreibung": "Bei Gummireifen ist eine Stromschiene nötig, die zugleich führen kann; Rückstrom über das konventionelle Gleis."},
+          {"element_id": "E25", "beschreibung": "Höherer Haftwert erlaubt höhere Bremsverzögerung und verändert Gleitschutz und Bremskraftverteilung."},
+          {"element_id": "E64", "beschreibung": "In vollständig geschlossenen gummibereiften Netzen begrenzt die Tunnelerwärmung den Einsatz von Klimaanlagen."}
+        ],
+        "absatz_ids": ["P4", "P5"]
+      },
+      {
+        "id": "V4",
+        "element_id": "E52",
+        "bezeichnung": "Automatisierungsgrad",
+        "alternativen": ["Fahren durch Triebfahrzeugführer mit Zugbeeinflussung", "halbautomatischer Betrieb mit Triebfahrzeugführer", "fahrerloser Betrieb mit Zugbegleiter", "fahrerloser Betrieb ohne Personal an Bord"],
+        "auswahlkriterien": ["Zugfolgezeit und Kapazität", "Personalkosten", "Abschottung der Strecke und Bahnsteigsicherung", "Rechtsrahmen für automatischen Betrieb", "Umrüstung im laufenden Betrieb"],
+        "auswirkungen": [
+          {"element_id": "E32", "beschreibung": "Vollwertiger Führerstand oder abschließbares Hilfsfahrpult."},
+          {"element_id": "E46", "beschreibung": "Türsteuerung durch Fahrer, Zugbegleiter oder automatisch."},
+          {"element_id": "E50", "beschreibung": "Notruf und Videobild müssen ohne Personal an Bord zur Leitstelle übertragen werden."},
+          {"element_id": "E57", "beschreibung": "Datenfunk mit höherer Verfügbarkeit und Bandbreite."},
+          {"element_id": "E45", "beschreibung": "Fahrzeugmanagement übernimmt Abfahr- und Störfallabläufe selbsttätig."}
+        ],
+        "absatz_ids": ["P12", "P13", "P20", "P21"]
+      },
+      {
+        "id": "V5",
+        "element_id": "E2",
+        "bezeichnung": "Zugbildung",
+        "alternativen": ["kuppelbare Einzel- oder Doppeltriebwagen in Mehrfachtraktion", "fester, durchgängig begehbarer Triebzug", "Gliederzug mit Jakobs-Drehgestellen"],
+        "auswahlkriterien": ["Schwankung der Nachfrage im Tagesverlauf", "Stehplatzangebot und Fahrgastverteilung", "Bahnsteiglänge", "Fahrzeuggröße und Masse", "Instandhaltung und Fahrzeugtausch"],
+        "auswirkungen": [
+          {"element_id": "E6", "beschreibung": "Automatische Kupplung mit elektrischen und pneumatischen Kontakten zwischen den Einheiten oder nur innerhalb des Triebzugs."},
+          {"element_id": "E7", "beschreibung": "Übersteigschutz nur bei nicht durchgängig verbundenen Wagen."},
+          {"element_id": "E5", "beschreibung": "Durchgängige Wagenübergänge nur beim Triebzug."},
+          {"element_id": "E32", "beschreibung": "Führerstände je Einheit oder nur an den Zugenden."},
+          {"element_id": "E43", "beschreibung": "Zugbus muss die Zugkonfiguration nach dem Kuppeln erkennen."}
+        ],
+        "absatz_ids": ["P3", "P4", "P16", "P17"]
+      },
+      {
+        "id": "V6",
+        "element_id": "E64",
+        "bezeichnung": "Einbauort der Klimageräte",
+        "alternativen": ["Klimagerät als Dachaufbau", "flaches, in das Wagenkastenprofil eingefügtes Klimagerät", "Klimagerät unter dem Wagenboden"],
+        "auswahlkriterien": ["Tunnelprofil und Fahrzeughöhe", "Unterflurbauraum neben Traktions- und Hilfsbetriebeausrüstung", "Schwerpunktlage", "Zugänglichkeit für Wartung"],
+        "auswirkungen": [
+          {"element_id": "E3", "beschreibung": "Dachkontur und Luftkanäle im Wagenkasten oder Unterflurausschnitte."},
+          {"element_id": "E22", "beschreibung": "Unterflurbauraum für Hilfsbetriebeumrichter wird bei Unterflurgeräten knapp."},
+          {"element_id": "E18", "beschreibung": "Bei Oberleitung teilen sich Dachstromabnehmer und Klimageräte den Dachbauraum."}
+        ],
+        "absatz_ids": ["P24", "P25"]
+      },
+      {
+        "id": "V7",
+        "element_id": "E27",
+        "bezeichnung": "Betätigungsart der Reibungsbremse",
+        "alternativen": ["pneumatische Betätigung aus der Druckluftanlage", "elektrohydraulische Betätigung"],
+        "auswahlkriterien": ["weitere Druckluftverbraucher wie Luftfederung", "Bauraum und Masse", "Instandhaltungsaufwand", "Ansprechverhalten"],
+        "auswirkungen": [
+          {"element_id": "E68", "beschreibung": "Druckluftanlage nötig oder bei Stahlfederung entbehrlich."},
+          {"element_id": "E28", "beschreibung": "Bremszylinder mit Druckluft oder hydraulische Aggregate am Drehgestell."},
+          {"element_id": "E11", "beschreibung": "Luftfederung setzt Druckluft voraus und spricht für pneumatische Bremsbetätigung."}
+        ],
+        "absatz_ids": ["P11", "P26"]
+      }
+    ],
+    "klaerungsfragen": [
+      {"id": "K1", "frage": "Soll der Zug als fester, durchgängig begehbarer Triebzug oder aus kuppelbaren Einheiten gebildet werden?", "element_ids": ["E2", "E6", "E43"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Kupplungen, Übersteigschutz, Zahl der Führerstände und die Auslegung des Zugbusses ab.", "variante_ids": ["V5"]},
+      {"id": "K2", "frage": "Fährt das Fahrzeug mit Stahlrädern auf Schienen oder mit Gummireifen und Führungsrädern?", "element_ids": ["E8", "E9"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Drehgestellbauart, Rückstromführung, Bremsauslegung und die Wärmelast im Tunnel ab.", "variante_ids": ["V3"]},
+      {"id": "K3", "frage": "Welche Anfahrbeschleunigung muss der Zug bei voller Besetzung erreichen, und wie viele Drehgestelle sollen dafür angetrieben sein?", "element_ids": ["E12", "E13", "E14"], "anlass": "anforderung", "relevanz": "Davon hängen Leistung und Zahl der Traktionsstromrichter und Traktionsmaschinen sowie der Kühlbedarf ab."},
+      {"id": "K4", "frage": "Wird der Fahrstrom über Stromschiene oder Oberleitung zugeführt, und von welcher Seite wird eine Stromschiene bestrichen?", "element_ids": ["E17", "E18"], "anlass": "schnittstelle", "relevanz": "Davon hängen Stromabnehmerbauart, Spannungsebene, Dachbauraum und Berührungsschutz ab.", "variante_ids": ["V1"]},
+      {"id": "K5", "frage": "Fließt der Rückstrom über die Fahrschienen oder über eine eigene Rückleiterschiene?", "element_ids": ["E17", "E10"], "anlass": "schnittstelle", "relevanz": "Davon hängt ab, ob zusätzliche Rückstromabnehmer und Erdungskontakte am Radsatz vorzusehen sind.", "variante_ids": ["V2"]},
+      {"id": "K6", "frage": "Welche Verbraucher müssen bei Ausfall der Fahrspannung wie lange aus der Bordnetzbatterie weiter versorgt werden?", "element_ids": ["E16", "E24"], "anlass": "anforderung", "relevanz": "Davon hängen Kapazität der Bordnetzbatterie und die Notversorgung von Beleuchtung, Türen und Zugfunk bei einer Evakuierung ab."},
+      {"id": "K7", "frage": "Werden die Reibungsbremsen pneumatisch oder elektrohydraulisch betätigt?", "element_ids": ["E27", "E28"], "anlass": "architekturentscheidung", "relevanz": "Davon hängt ab, ob eine Druckluftanlage an Bord nötig ist und wie die Bremsaktuatoren ausgeführt werden.", "variante_ids": ["V7"]},
+      {"id": "K8", "frage": "Soll die elektrische Bremse bis zum Stillstand wirken, und kann das Netz die Bremsenergie jederzeit aufnehmen?", "element_ids": ["E25", "E13"], "anlass": "betrieb", "relevanz": "Davon hängen Verschleiß der Scheibenbremsen, Bremswiderstände und die Wärmeabgabe in den Tunnel ab."},
+      {"id": "K9", "frage": "Wird ein vollwertiger Führerstand oder nur ein abschließbares Hilfsfahrpult vorgesehen?", "element_ids": ["E32", "E33", "E34"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Fahrgastfläche an den Zugenden, Bedien- und Anzeigeumfang und die Rückfallebene bei Störungen ab.", "variante_ids": ["V4"]},
+      {"id": "K10", "frage": "Welcher Automatisierungsgrad ist für den Regelbetrieb vorgesehen, und soll eine spätere Umrüstung auf fahrerlosen Betrieb vorbereitet werden?", "element_ids": ["E52", "E53"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Umfang der Zugsteuerung an Bord, Datenfunk, Türsteuerung und Fahrgastkommunikation ab.", "variante_ids": ["V4"]},
+      {"id": "K11", "frage": "Welches Verhältnis von Sitz- zu Stehplätzen und wie viele Mehrzweckflächen fordert der Auftraggeber?", "element_ids": ["E36", "E37", "E38"], "anlass": "anforderung", "relevanz": "Davon hängen Fahrgastkapazität, Auslegungsmasse und damit Antrieb, Bremse und Fahrwerk ab."},
+      {"id": "K12", "frage": "Welches Zugbussystem wird eingesetzt, und muss der Zug mit vorhandenen Baureihen im Verband fahren können?", "element_ids": ["E40", "E43", "E6"], "anlass": "schnittstelle", "relevanz": "Davon hängen Kupplungskontakte, Datenformate und die Kompatibilität mit der Bestandsflotte ab.", "variante_ids": ["V5"]},
+      {"id": "K13", "frage": "Öffnen die Fahrgäste die freigegebenen Türen einzeln, oder werden sie zentral geöffnet, und sollen sie bei längeren Standzeiten selbsttätig schließen?", "element_ids": ["E44", "E46", "E4"], "anlass": "betrieb", "relevanz": "Davon hängen Türsteuerung, Sensorik im Türbereich und Wärmeverluste beim Halt ab."},
+      {"id": "K14", "frage": "Verkehrt das Fahrzeug auch auf Oberflächen- oder Hochbahnabschnitten, auf denen Scheibenwischer und Blendschutz gebraucht werden?", "element_ids": ["E59", "E62", "E60"], "anlass": "betrieb", "relevanz": "Davon hängen Ausstattung der Frontscheibe, Scheinwerferauslegung und die Witterungsfestigkeit der Stromabnahme ab."},
+      {"id": "K15", "frage": "Lässt das Tunnelprofil Klimageräte auf dem Dach zu, oder müssen sie flach oder unter dem Wagenboden eingebaut werden?", "element_ids": ["E63", "E64", "E3"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Dachkontur, Unterflurbelegung und Luftführung im Wagenkasten ab.", "variante_ids": ["V6"]},
+      {"id": "K16", "frage": "Welche Wärmeabgabe des Fahrzeugs an die Tunnelluft lässt die Tunnellüftung zu?", "element_ids": ["E63", "E65", "E66"], "anlass": "schnittstelle", "relevanz": "Davon hängen Auslegung von Kühlkreislauf und Klimaanlage sowie der Nutzen der Bremsenergierückspeisung ab."},
+      {"id": "K17", "frage": "Welche Verbraucher außer Federung und Bremse sollen mit Druckluft betrieben werden?", "element_ids": ["E67", "E68"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Liefermenge des Kompressors, Behältergröße und die Leitungsführung über die Kupplung ab.", "variante_ids": ["V7"]},
+      {"id": "K18", "frage": "Über welche Wege soll ein Zug im Tunnel evakuiert werden, über die Seitentüren oder über Fluchttüren in den Stirnseiten?", "element_ids": ["E52", "E3", "E32"], "anlass": "anforderung", "relevanz": "Davon hängen Stirntür, Führerstandsgestaltung, Kupplungsrichtung und die Notversorgung von Beleuchtung und Türen ab."}
+    ],
+    "anforderungsthemen": [
+      {"id": "R1", "element_ids": ["E1", "E12"], "thema": "Fahrleistung", "kenngroessen": ["Höchstgeschwindigkeit", "Anfahrbeschleunigung", "befahrbare Längsneigung", "Haftwertausnutzung", "Fahrzeit zwischen Stationen"]},
+      {"id": "R2", "element_ids": ["E2", "E36"], "thema": "Beförderungskapazität und Fahrgastwechsel", "kenngroessen": ["Fahrgastkapazität", "Stehplatzdichte", "Türanzahl je Seite", "lichte Türbreite", "Fahrgastwechselzeit"]},
+      {"id": "R3", "element_ids": ["E2", "E3", "E8"], "thema": "Fahrzeugbegrenzung und Fahrwerk", "kenngroessen": ["Fahrzeugbreite", "Fahrzeughöhe", "kleinster befahrbarer Bogenradius", "Achslast", "Spurweite", "Laufruhe"]},
+      {"id": "R4", "element_ids": ["E16", "E17", "E21"], "thema": "Energieversorgung und Rückspeisung", "kenngroessen": ["Nennspannung", "Spannungsbereich", "maximale Stromaufnahme", "Rückspeiseleistung", "Überbrückungszeit der Bordnetzbatterie"]},
+      {"id": "R5", "element_ids": ["E25"], "thema": "Bremsvermögen", "kenngroessen": ["Betriebsbremsverzögerung", "Notbremsverzögerung", "Bremsweg", "Haltevermögen der Feststellbremse", "Anteil der elektrischen Bremse"]},
+      {"id": "R6", "element_ids": ["E32"], "thema": "Arbeitsplatz und Bedienbarkeit im Führerstand", "kenngroessen": ["Sichtfeld", "Erreichbarkeit der Bedienelemente", "Zahl der Notbremsbetätigungen", "Funktionsumfang im Hilfsfahrbetrieb"]},
+      {"id": "R7", "element_ids": ["E36", "E38"], "thema": "Barrierefreiheit", "kenngroessen": ["Zahl der Mehrzweckflächen", "Zahl der Vorrangsitze", "Kontrast der Türen", "Spalt zwischen Fahrzeug und Bahnsteig", "Informationen nach dem Zwei-Sinne-Prinzip"]},
+      {"id": "R8", "element_ids": ["E40"], "thema": "Bordnetz, Datenkommunikation und elektromagnetische Verträglichkeit", "kenngroessen": ["Bordnetzspannung", "Verfügbarkeit des Fahrzeugbusses", "Störaussendung", "Störfestigkeit"]},
+      {"id": "R9", "element_ids": ["E44", "E48"], "thema": "Fahrgastinformation und Notruf", "kenngroessen": ["Anzeigeinhalte", "Ansageverständlichkeit", "Zahl der Notrufstellen", "Verbindungszeit zur Leitstelle", "Speicherdauer der Videoaufzeichnung"]},
+      {"id": "R10", "element_ids": ["E52", "E53"], "thema": "Zugsicherung und Automatisierung", "kenngroessen": ["Automatisierungsgrad", "Sicherheitsintegrität der Zugbeeinflussung", "Ortungsgenauigkeit", "Zugfolgezeit", "Haltegenauigkeit am Bahnsteig"], "regelwerke": [
+        {"bezeichnung": "IEC 62290-1 (internationale Norm der IEC; definiert und klassifiziert die Automatisierungsgrade, auf die sich funkbasierte Zugsteuerungen beziehen; Geltungsbereich im Einzelnen nicht recherchiert)", "quellen_id": "Q4", "fundstelle": "Abschnitt „Grades of automation“, Absatz 1"},
+        {"bezeichnung": "IEEE 1474 (Norm des IEEE; Definition funkbasierter Zugsteuerung mit Positionsbestimmung, Datenübertragung sowie Funktionen der Zugbeeinflussung, Fahrautomatik und Zugüberwachung)", "quellen_id": "Q4", "fundstelle": "Einleitung, Absatz 2; Abschnitt „Background and origin“, Absatz 1"}
+      ]},
+      {"id": "R11", "element_ids": ["E52", "E58", "E3"], "thema": "Brandschutz und Evakuierung", "kenngroessen": ["Branderkennungszeit", "Brandverhalten der Werkstoffe", "Evakuierungszeit", "Breite der Fluchtwege", "Notlaufzeit bei Brand"]},
+      {"id": "R12", "element_ids": ["E59"], "thema": "Signalisierung und Beleuchtung", "kenngroessen": ["Beleuchtungsstärke der Scheinwerfer", "Kennzeichnung von Zugspitze und Zugschluss", "Innenbeleuchtungsstärke", "Dauer der Notbeleuchtung"]},
+      {"id": "R13", "element_ids": ["E63", "E64", "E65"], "thema": "Klima und Wärmelast", "kenngroessen": ["Innenraumtemperatur", "Frischluftrate", "Kälteleistung", "Heizleistung", "Wärmeabgabe an den Tunnel"]},
+      {"id": "R14", "element_ids": ["E67", "E68"], "thema": "Druckluftversorgung", "kenngroessen": ["Liefermenge des Kompressors", "Behältervolumen", "Luftqualität", "Betriebsdruck"]},
+      {"id": "R15", "element_ids": ["E1"], "thema": "Rechtsrahmen und Zulassung", "kenngroessen": ["anzuwendende Bau- und Betriebsordnung", "Zulässigkeit des automatischen Betriebs", "Art des Bahnkörpers"], "regelwerke": [
+        {"bezeichnung": "Straßenbahn-Bau- und Betriebsordnung (BOStrab), Bundesrecht der Bundesrepublik Deutschland; gilt für Straßenbahnen einschließlich Hoch- und Untergrundbahnen als unabhängige Bahnen, nur diese dürfen automatisch betrieben werden", "quellen_id": "Q5", "fundstelle": "Infobox, Feld „Geltungsbereich“; Abschnitt „Regelungsgegenstand“, Absätze 1 bis 3"},
+        {"bezeichnung": "Richtlinie (EU) 2016/797 über die Interoperabilität des Eisenbahnsystems (Europäische Union); gilt ausdrücklich nicht für Metros", "quellen_id": "Q6", "fundstelle": "Article 1 Absatz 3 Buchstabe a"}
+      ]},
+      {"id": "R16", "element_ids": ["E1", "E10"], "thema": "Geräuschemission", "kenngroessen": ["Außengeräuschpegel bei Vorbeifahrt", "Innengeräuschpegel", "Bremsgeräusch"]}
+    ]
+  },
+  "offene_punkte": [
+    "Recherche: Verordnungstext der BOStrab und der BOStrab-Richtlinien (Bremsen-, Fahrzeug- und Lichtraumrichtlinie); gesetze-im-internet.de war in diesem Lauf nicht erreichbar, verwendet wurde nur der Wikipedia-Artikel (Q5). Betrifft P11, P23, R5, R11 und R12.",
+    "Recherche: Primärtext von IEC 62290-1 zu Geltungsbereich und Definitionen der Automatisierungsgrade (Suchbegriffe: IEC 62290-1 urban guided transport management and command/control systems) für P20 und R10.",
+    "Recherche: VDV-Typenempfehlung U-Bahnfahrzeuge (in Q1 genannt, nicht abgerufen) zu Hauptabmessungen und Ausrüstung für P4, P9 und R3.",
+    "Recherche: Fachliteratur zu U-Bahn-Fahrzeugtechnik (Suchbegriffe: Hilfsbetriebeumrichter U-Bahn, Netzfilter Gleichstrombahn, Stromschienenstromabnehmer Drehgestell, Zugbus Mehrfachtraktion U-Bahn) zur Belegung von P7, P9 und P17.",
+    "Recherche: Bremsbetätigung und Druckluftverbraucher bei U-Bahn-Fahrzeugen (Suchbegriffe: elektrohydraulische Bremse Metro, Druckluftanlage U-Bahn-Fahrzeug) für P11, P26 und V7.",
+    "Recherche: Brandschutzanforderungen an U-Bahn-Fahrzeuge (Suchbegriffe: EN 45545 Metro, Brandschutz U-Bahn-Fahrzeug Notlauf) für R11.",
+    "Glossarvorschlag: Hauptsystemname für die Kategorie aufbau_nutzlast bei Schienenpersonenfahrzeugen (etwa „Fahrgastbereich“); ersatzweise verwendet wurde „Aufbau und Ladung“, das im Glossar für Nutzfahrzeuge vorgesehen ist.",
+    "Glossarvorschlag: Zuordnung der Kategorie assistenz_sicherheit bei Fahrzeugarten mit wahlweise fahrerlosem Betrieb; verwendet wurde „Fahrerassistenz und Sicherheit“, obwohl bei fahrerlosem Betrieb „Assistenz und Sicherheit“ passen würde.",
+    "Abweichung von der Zuordnungsliste: Die Fahrgastsitze stehen als „Fahrgastbestuhlung“ unter Aufbau und Ladung statt als „Sitze“ unter dem bedienraum-Hauptsystem, weil der Führerstand nur den Fahrersitz aufnimmt.",
+    "Glossarvorschlag: Fahrgeschwindigkeit überwachen (Funktion des Fahrzeuggeräts der Zugbeeinflussung; „Fahrzeugzustand überwachen“ deckt die Überwachung der zulässigen Geschwindigkeit nicht ab).",
+    "Glossarvorschlag: Zugfahrt automatisch steuern (Funktion der automatischen Fahrsteuerung; „Fahrzeug fortbewegen“ beschreibt die mechanische Leistung, nicht das selbsttätige Regeln von Zug- und Bremskraft).",
+    "Glossarvorschlag: Fahrgäste informieren (Funktion des Fahrgastinformationssystems; „Fahrerinformationen anzeigen“ richtet sich nur an den Triebfahrzeugführer)."
+  ]
+}
