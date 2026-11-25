@@ -205,7 +205,7 @@
         },
         {
           "absatz_id": "P6",
-          "text": "Das Antriebssystem erzeugt die Antriebsleistung und überträgt das Drehmoment auf die Radsätze. Seine Kraftübertragung umfasst je nach Antriebsart Hauptgenerator, Traktionsstromrichter und Traktionsmaschine oder Strömungsgetriebe und Gelenkwelle sowie stets den Radsatzantrieb. Verbrennungsmotor und Abgasanlage gehören nur zu Lokomotiven mit Verbrennungsmotor. Die gewählte Antriebsart bestimmt, welche Speicher und Wandler Energieversorgung und Thermomanagement bereitstellen müssen.",
+          "text": "Das Antriebssystem erzeugt die Antriebsleistung und überträgt das Drehmoment auf die Radsätze. Seine Kraftübertragung umfasst je nach Antriebsart Traktionsstromrichter und Traktionsmaschine, die bei der dieselelektrischen Lokomotive vom Hauptgenerator des Energieversorgungssystems gespeist werden, oder Strömungsgetriebe und Gelenkwelle sowie stets den Radsatzantrieb. Verbrennungsmotor und Abgasanlage gehören nur zu Lokomotiven mit Verbrennungsmotor. Die gewählte Antriebsart bestimmt, welche Speicher und Wandler Energieversorgung und Thermomanagement bereitstellen müssen.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -247,7 +247,7 @@
         },
         {
           "absatz_id": "P8",
-          "text": "Das Energieversorgungssystem stellt die Energie für Antrieb, Hilfsbetriebe und Wagenzug bereit. Bei der Elektrolokomotive speist der Oberspannungskreis mit Stromabnehmer, Hauptschalter und Haupttransformator die Traktionsstromrichter, die Hilfsbetriebe und die Zugsammelschiene. Bei der Diesellokomotive speichert die Kraftstoffanlage mit Kraftstofftank die Energie für den Verbrennungsmotor, bei der Batterielokomotive die Traktionsbatterie, die über eine Ladeeinrichtung geladen wird. Zweikraftlokomotiven vereinen Oberspannungskreis und Kraftstoffanlage. Eine Bordnetzbatterie versorgt in allen Varianten die Steuerstromkreise.",
+          "text": "Das Energieversorgungssystem stellt die Energie für Antrieb, Hilfsbetriebe und Wagenzug bereit. Bei der Elektrolokomotive speist der Oberspannungskreis mit Stromabnehmer, Hauptschalter und Haupttransformator die Traktionsstromrichter, die Hilfsbetriebe und die Zugsammelschiene. Bei der Diesellokomotive speichert die Kraftstoffanlage mit Kraftstofftank die Energie für den Verbrennungsmotor, bei der Batterielokomotive die Traktionsbatterie, die über eine Ladeeinrichtung geladen wird. Bei der dieselelektrischen Lokomotive wandelt zusätzlich ein vom Verbrennungsmotor angetriebener Hauptgenerator dessen Leistung in elektrische Energie für die Traktionsstromrichter. Zweikraftlokomotiven vereinen Oberspannungskreis und Kraftstoffanlage. Eine Bordnetzbatterie versorgt in allen Varianten die Steuerstromkreise.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -255,9 +255,10 @@
               "P7",
               "Q5 Abschn. Vorteile und Nachteile: Die Diesellokomotive führt ihren Energievorrat als Dieselkraftstoff mit",
               "Q5 Abschn. Elektrische Kraftübertragung: Zweikraftlokomotiven beziehen Energie vom Generator oder der Fahrleitung",
-              "Q4 Abschn. Hilfsbetriebe: Akkumulatoren versorgen Steuerstromkreise fahrleitungsunabhängig"
+              "Q4 Abschn. Hilfsbetriebe: Akkumulatoren versorgen Steuerstromkreise fahrleitungsunabhängig",
+              "P5"
             ],
-            "schluss": "Je nach Antriebsart enthält das Energieversorgungssystem Oberspannungskreis, Kraftstoffanlage oder Traktionsbatterie mit Ladeeinrichtung, stets aber eine Bordnetzbatterie."
+            "schluss": "Je nach Antriebsart enthält das Energieversorgungssystem Oberspannungskreis, Kraftstoffanlage, bei dieselelektrischem Antrieb den Hauptgenerator oder Traktionsbatterie mit Ladeeinrichtung, stets aber eine Bordnetzbatterie."
           },
           "sicherheit": "mittel",
           "aussagetyp": "variante",
@@ -671,7 +672,7 @@
       "absaetze": [
         {
           "absatz_id": "P28",
-          "text": "Elektrische Energie fließt von der Fahrleitung über Stromabnehmer, Hauptschalter und Haupttransformator zu Traktionsstromrichter, Hilfsbetriebeumrichter und Zugsammelschiene; bei Diesellokomotiven fließt Kraftstoff vom Kraftstofftank zum Verbrennungsmotor, dessen Leistung zu Hauptgenerator oder Strömungsgetriebe. Die Traktionsmaschine liefert Drehmoment über den Radsatzantrieb an den Radsatz, der Rahmen die Zugkraft an die Endkupplung. Beim elektrodynamischen Bremsen fließt Energie zum Bremswiderstand oder zur Fahrleitung. Der Kompressor füllt den Hauptluftbehälter, das Führerbremsventil steuert die Hauptluftleitung. Bedienelemente liefern Eingaben an das Fahrzeugmanagement, Sicherheitsfahrschaltung und Zugbeeinflussung Bremsbefehle an die Druckluftbremse; Wärme fließt von Transformator und Stromrichter an Kühlanlagen und Umgebung.",
+          "text": "Elektrische Energie fließt von der Fahrleitung über Stromabnehmer, Hauptschalter und Haupttransformator zu Traktionsstromrichter, Hilfsbetriebeumrichter und Zugsammelschiene; bei Diesellokomotiven fließt Kraftstoff vom Kraftstofftank zum Verbrennungsmotor, dessen Leistung zum Hauptgenerator der Energieversorgung oder zum Strömungsgetriebe. Die Traktionsmaschine liefert Drehmoment über den Radsatzantrieb an den Radsatz, der Rahmen die Zugkraft an die Endkupplung. Beim elektrodynamischen Bremsen fließt Energie zum Bremswiderstand oder zur Fahrleitung. Der Kompressor füllt den Hauptluftbehälter, das Führerbremsventil steuert die Hauptluftleitung. Bedienelemente liefern Eingaben an das Fahrzeugmanagement, Sicherheitsfahrschaltung und Zugbeeinflussung Bremsbefehle an die Druckluftbremse; Wärme fließt von Transformator und Stromrichter an Kühlanlagen und Umgebung.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -923,9 +924,10 @@
         "id": "E24",
         "name": "Hauptgenerator",
         "typ": "komponente",
-        "eltern_id": "E23",
+        "eltern_id": "E30",
         "absatz_ids": [
-          "P6",
+          "P5",
+          "P8",
           "P15",
           "P28"
         ]
@@ -2104,6 +2106,7 @@
         "medium": "Drehmoment",
         "absatz_ids": [
           "P5",
+          "P8",
           "P28"
         ]
       },
@@ -2126,6 +2129,7 @@
         "medium": "Generatorstrom",
         "absatz_ids": [
           "P5",
+          "P8",
           "P28"
         ]
       },
@@ -2500,6 +2504,10 @@
           {
             "element_id": "E31",
             "beschreibung": "Oberspannungskreis nur bei elektrischem und Zweikraftantrieb."
+          },
+          {
+            "element_id": "E24",
+            "beschreibung": "Hauptgenerator nur bei dieselelektrischem Antrieb."
           },
           {
             "element_id": "E35",
@@ -3197,7 +3205,6 @@
     "Glossarvorschlag: Fahrleitungsstrom abnehmen (Stromabnehmer und Hauptschalter übernehmen Energie aus Oberleitung oder Stromschiene; keine gelistete Funktion deckt die Energieaufnahme von außen ab).",
     "Glossarvorschlag: Wagenzug mit Energie versorgen (Zugsammelschiene versorgt angehängte Reisezugwagen; Elektrische Energie verteilen betrifft nur das eigene Fahrzeug).",
     "Glossarvorschlag: Akustische Warnsignale abgeben (Signalhorn; Lichtsignale abgeben betrifft nur optische Signale).",
-    "Abweichung von der Zuordnungsliste: Der Hauptgenerator der dieselelektrischen Lokomotive steht unter dem Antriebssystem, weil er Teil der Kraftübertragung zwischen Verbrennungsmotor und Traktionsmaschine ist; der Eintrag Generator der Zuordnungsliste (energieversorgung) wird auf Bordnetzgeneratoren bezogen.",
     "Nicht abrufbar in diesem Lauf: Eisenbahn-Bau- und Betriebsordnung auf gesetze-im-internet.de (Verbindung nicht hergestellt) zur Belegung der deutschen Vorschriften zu Bremsen, Sicherheitsfahrschaltung und Signalen; Suchbegriff EBO Paragraph Bremsen Sicherheitsfahrschaltung.",
     "Nicht abrufbar in diesem Lauf: FRA-Bericht Assessment of Battery Technology for Rail Propulsion Application (railroads.dot.gov, Zugriff verweigert) zur Belegung von Traktionsbatterie, Batterietemperierung und Batterietender.",
     "Recherchebedarf: Fachliteratur zum Brennstoffzellenantrieb von Lokomotiven (Suchbegriff Wasserstoff Rangierlokomotive Brennstoffzelle Pufferbatterie) zur Belegung von P9.",

@@ -144,12 +144,12 @@
             "praemissen": [
               "P1",
               "Q3: Besatzung in einem durchgängigen Kampfraum, Waffen im Turm (Abschnitt Überblick, Absatz 1)",
-              "Glossarvorgaben der Gruppe Landfahrzeuge: alle dreizehn Kategorien außer sonstig sind beim Schützenpanzer besetzt",
+              "Modellierungskonvention: Glossarvorgaben der Gruppe Landfahrzeuge; danach sind alle dreizehn Kategorien außer sonstig beim Schützenpanzer besetzt",
               "Funktionsprinzip: Antrieb, Lenkhydraulik, Kühlung, Belüftung und Steuergeräte koppeln die Systeme über Energie-, Stoff- und Informationsflüsse"
             ],
             "schluss": "Der Schützenpanzer lässt sich als Gesamtsystem aus dreizehn Hauptsystemen mit den genannten Schnittstellenarten zerlegen; Wanne, Waffenanlage und Kampfraum sind die artspezifischen Merkmale."
           },
-          "sicherheit": "hoch",
+          "sicherheit": "mittel",
           "aussagetyp": "modellannahme",
           "herangezogene_artikel_ids": []
         }
@@ -223,20 +223,36 @@
         },
         {
           "absatz_id": "P7",
-          "text": "Im Triebwerksblock läuft der Kraftfluss vom Verbrennungsmotor über Drehmomentwandler und Getriebe ins Lenkgetriebe und über je eine Antriebswelle zum Triebrad jeder Kettenseite; die Abgasanlage kann das Abgas zur Signaturminderung mit Frischluft mischen. Beim dieselelektrischen Antrieb ersetzen Generator und je eine Traktionsmaschine pro Kettenseite die mechanische Kraftübertragung und lenken über ihre Drehzahldifferenz; jeder Strang muss dann mehr als die volle Motorleistung übertragen.",
+          "text": "Im Triebwerksblock läuft der Kraftfluss vom Verbrennungsmotor über Drehmomentwandler und Getriebe ins Lenkgetriebe und über je eine Antriebswelle zum Triebrad jeder Kettenseite; die Abgasanlage kann das Abgas zur Signaturminderung mit Frischluft mischen.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "P6",
               "P3 (Triebrad überträgt das Drehmoment auf die Kette)",
-              "Q3: Abgase werden mit Frischluft vermischt ausgestoßen, um die Infrarotsignatur zu reduzieren (Abschnitt Schutz, Absatz 3)",
-              "Q4: Untersuchung des dieselelektrischen Antriebs an einem Marder als Versuchsträger (Abschnitt Technik, letzter Absatz vor Aufbau)",
-              "Q7: zweisträngiger elektrischer Antrieb lenkt über die Drehzahl, jeder Strang muss mehr als die volle Motorleistung übertragen (Abschnitt Antrieb und Lenkung, Lenkungsbauform 2)"
+              "Q3: Abgase werden mit Frischluft vermischt ausgestoßen, um die Infrarotsignatur zu reduzieren (Abschnitt Schutz, Absatz 3)"
             ],
-            "schluss": "Der mechanische Kraftfluss verläuft durch den Triebwerksblock über das Lenkgetriebe zu beiden Triebrädern; der dieselelektrische Antrieb ersetzt diese Kette durch Generator und seitenweise Traktionsmaschinen, die zugleich das Lenken übernehmen."
+            "schluss": "Der mechanische Kraftfluss verläuft durch den Triebwerksblock über das Lenkgetriebe zu beiden Triebrädern."
           },
           "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P34",
+          "text": "Beim dieselelektrischen Antrieb in zweisträngiger Bauweise mit je einer Traktionsmaschine pro Kettenseite ersetzen Generator und Traktionsmaschinen die mechanische Kraftübertragung und lenken über ihre Drehzahldifferenz; jeder Strang muss dann mehr als die volle Motorleistung übertragen. Bauweisen mit mechanischer Querwelle oder eigenem Lenkmotor vermeiden diese Überdimensionierung der Stränge.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P6",
+              "Q4: Untersuchung des dieselelektrischen Antriebs an einem Marder als Versuchsträger (Abschnitt Technik, letzter Absatz vor Aufbau)",
+              "Q7: zweisträngiger elektrischer Antrieb lenkt über die Drehzahl, jeder Strang muss mehr als die volle Motorleistung übertragen (Abschnitt Antrieb und Lenkung, Lenkungsbauform 2); die Quelle beschreibt diese Bauweise an einem anderen Kettenfahrzeug, an dem sie sich nicht bewährte",
+              "Analogieschluss: Architektur dieselelektrischer Schützenpanzer ist in diesem Lauf nicht belegt"
+            ],
+            "schluss": "Bei zweisträngiger Bauweise ersetzen Generator und seitenweise Traktionsmaschinen die mechanische Kraftübertragung und übernehmen das Lenken; andere elektrische Bauweisen sind möglich."
+          },
+          "sicherheit": "gering",
           "aussagetyp": "variante",
           "herangezogene_artikel_ids": []
         }
@@ -260,20 +276,38 @@
         },
         {
           "absatz_id": "P9",
-          "text": "Das Energieversorgungssystem gliedert sich damit in die Kraftstoffversorgung mit Kraftstofftank und Kraftstoffanlage und die Stromerzeugung mit Generator, Leistungselektronik, Gleichspannungswandler und Bordnetzbatterie. Sollen Optiken, Funk und Waffenanlage bei abgestelltem Motor arbeiten, bestimmt dieser Stillstandsbetrieb die Batteriekapazität. Beim hybriden Antrieb kommt eine Traktionsbatterie hinzu, der Generator wird Hauptenergiewandler.",
+          "text": "Das Energieversorgungssystem gliedert sich damit in die Kraftstoffversorgung mit Kraftstofftank und Kraftstoffanlage und die Stromerzeugung mit Generator, Leistungselektronik, Gleichspannungswandler und Bordnetzbatterie. Beim dieselelektrischen und beim hybriden Antrieb kommt ein Hochvolt-Bordnetz mit Schutz- und Überwachungseinrichtungen hinzu, das Leistungselektronik und Traktionsmaschinen verbindet. Sollen Optiken, Funk und Waffenanlage bei abgestelltem Motor arbeiten, bestimmt dieser Stillstandsbetrieb die Batteriekapazität.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "P8",
-              "P7 (dieselelektrischer Antrieb mit Generator und Traktionsmaschinen)",
+              "P34 (dieselelektrischer Antrieb mit Generator und Traktionsmaschinen)",
               "Q10: Anforderung an Energieerzeugung und -management für längeren Stillstandsbetrieb (silent watch) beim Bradley-Nachfolger (Abschnitt Preliminary OMFV Requirements, Punkt Sustainability)",
-              "Funktionsprinzip: Ohne laufenden Motor kann nur ein Speicher oder ein eigenes Aggregat die Verbraucher versorgen"
+              "Funktionsprinzip: Ohne laufenden Motor kann nur ein Speicher oder ein eigenes Aggregat die Verbraucher versorgen",
+              "Funktionsprinzip: Elektrisch übertragene Traktionsleistung erfordert eine vom Niedervolt-Bordnetz getrennte Hochvoltebene mit Isolationsüberwachung und Abschaltung"
             ],
-            "schluss": "Die Energieversorgung besteht aus Kraftstoffversorgung und Stromerzeugung; die geforderte Dauer des Stillstandsbetriebs bestimmt die Speicherauslegung, beim Hybrid kommt die Traktionsbatterie hinzu."
+            "schluss": "Die Energieversorgung besteht aus Kraftstoffversorgung und Stromerzeugung, bei elektrischer Kraftübertragung ergänzt um ein Hochvolt-Bordnetz; die geforderte Dauer des Stillstandsbetriebs bestimmt die Speicherauslegung."
           },
           "sicherheit": "mittel",
           "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P35",
+          "text": "Beim hybriden Antrieb kommt eine Traktionsbatterie hinzu, die über das Hochvolt-Bordnetz die Traktionsmaschinen mitversorgt; der Generator wird Hauptenergiewandler.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P34",
+              "P9 (Hochvolt-Bordnetz bei elektrischer Kraftübertragung)",
+              "Analogieschluss: Architektur hybrider Schützenpanzer ist in diesem Lauf nicht belegt"
+            ],
+            "schluss": "Beim hybriden Antrieb speichert eine Traktionsbatterie am Hochvolt-Bordnetz Energie für die Traktionsmaschinen; der Generator wird Hauptenergiewandler."
+          },
+          "sicherheit": "gering",
+          "aussagetyp": "variante",
           "herangezogene_artikel_ids": []
         }
       ]
@@ -405,7 +439,7 @@
         },
         {
           "absatz_id": "P17",
-          "text": "Im Modell bilden Drehturm, Maschinenkanone, Maschinengewehr, Lenkflugkörperstartgerät und Richt- und Stabilisierungsanlage die Waffenanlage, Rundblickperiskop, Waffenoptik und Feuerleitrechner das Sicht- und Feuerleitsystem; ein Stauraum für Munition und Ausrüstung ergänzt beide. Ob der Turm bemannt oder unbemannt ist, verschiebt Arbeitsplätze sowie Bild- und Energieübertragung zwischen Turm und Wanne.",
+          "text": "Im Modell bilden Drehturm, Maschinenkanone, Maschinengewehr, Lenkflugkörperstartgerät, Richt- und Stabilisierungsanlage sowie Munitionsmagazin und Zuführung die Waffenanlage, Rundblickperiskop, Waffenoptik und Feuerleitrechner das Sicht- und Feuerleitsystem; ein Stauraum für Ausrüstung ergänzt beide. Munitionsmagazin und Zuführung versorgen die Maschinenkanone; ihre Lage im Turm oder in der Wanne bestimmt Nachladen und Schutz. Ob der Turm bemannt oder unbemannt ist, verschiebt Arbeitsplätze sowie Bild- und Energieübertragung zwischen Turm und Wanne.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -413,9 +447,10 @@
               "P16",
               "Q3: Richtschütze sitzt vor dem Drehträger, Schleifringe übertragen die Steuersignale; zentrales Regal unter dem Turm als Stauraum (Abschnitt Überblick, Absätze 2 und 3)",
               "Q4: Seiten- und Höhenrichten über eine elektrohydraulische Richtanlage, Zweimanndrehturm beim Marder (Abschnitt Bewaffnung)",
+              "Q3: Schneckenmagazin im Turmheck, Nachladen der Reserve nur von außen, Doppelgurtzuführer der Maschinenkanone (Abschnitt Bewaffnung, Unterabschnitt Primärbewaffnung, Absätze 1 und 3)",
               "Funktionsprinzip: Eine stabilisierte Waffe braucht einen Regelkreis aus Zielerfassung, Rechner und Richtantrieb"
             ],
-            "schluss": "Das Hauptsystem Aufbau und Ladung besteht aus Waffenanlage, Sicht- und Feuerleitsystem und Stauraum; die Turmbauart bestimmt Arbeitsplätze und Übertragungswege zwischen Turm und Wanne."
+            "schluss": "Das Hauptsystem Aufbau und Ladung besteht aus Waffenanlage mit Munitionsmagazin und Zuführung, Sicht- und Feuerleitsystem und Stauraum; die Turmbauart bestimmt Arbeitsplätze und Übertragungswege zwischen Turm und Wanne."
           },
           "sicherheit": "mittel",
           "aussagetyp": "variante",
@@ -586,20 +621,36 @@
         },
         {
           "absatz_id": "P27",
-          "text": "Das Thermomanagement besteht aus der Aggregatekühlung mit Kühler, Kühlerlüfter und Kühlkreislauf für Motor und Getriebe und der Klimatisierung mit Klimaanlage und Klimakompressor für den Kampfraum. Weil Kühlluft durch die Panzerung geführt werden muss, legt die Triebwerkslage Lage und Schutz der Kühlöffnungen fest. Elektronik und volle Besetzung im dicht geschlossenen Raum erfordern aktive Kühlung.",
+          "text": "Das Thermomanagement besteht aus der Aggregatekühlung mit Kühler, Kühlerlüfter und Kühlkreislauf für Motor und Getriebe. Weil Kühlluft durch die Panzerung geführt werden muss, legt die Triebwerkslage Lage und Schutz der Kühlöffnungen fest.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "P26",
-              "P23 (dicht verschließbarer Kampfraum)",
               "Funktionsprinzip: Verlustwärme von Motor und Getriebe muss über Wärmetauscher an die Umgebung abgegeben werden",
-              "Funktionsprinzip: Ein geschlossener Raum mit Wärmequellen erwärmt sich ohne aktive Wärmeabfuhr"
+              "Funktionsprinzip: Kühlluft muss von außen durch die geschützte Wanne zu- und abgeführt werden"
             ],
-            "schluss": "Das Thermomanagement besteht aus Aggregatekühlung und Klimatisierung; die Lage der Kühlöffnungen folgt aus der Triebwerksanordnung."
+            "schluss": "Die Aggregatekühlung ist zwingender Bestandteil des Thermomanagements; die Lage der Kühlöffnungen folgt aus der Triebwerksanordnung."
           },
           "sicherheit": "hoch",
           "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P33",
+          "text": "Die Klimatisierung mit Klimaanlage und Klimakompressor für den Kampfraum ist bauweisen- und einsatzabhängig. Ob der Kampfraum aktiv gekühlt werden muss, hängt von Klimazone, Elektroniklast und Dauer des geschlossenen Betriebs ab; an bestehenden Baureihen wurde eine Raumkühlanlage teils erst nachträglich eingebaut.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P26 (Raumkühlanlage erst in einer späteren Ausführung des Marder)",
+              "P23 (dicht verschließbarer Kampfraum)",
+              "Funktionsprinzip: Ein geschlossener Raum mit Wärmequellen erwärmt sich ohne Wärmeabfuhr, das Maß hängt von Umgebungstemperatur, Wärmelast und Betriebsdauer ab"
+            ],
+            "schluss": "Die Klimatisierung des Kampfraums ist kein zwingender, sondern ein bauweisen- und einsatzabhängiger Bestandteil des Thermomanagements."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "variante",
           "herangezogene_artikel_ids": []
         }
       ]
@@ -642,7 +693,7 @@
             "praemissen": ["P2", "P5", "P7", "P11", "P13", "P17", "P19"],
             "schluss": "Die oberste Ebene umfasst dreizehn Hauptsysteme; Triebwerksblock, Wanne und Turmschnittstelle bündeln die stärksten Kopplungen."
           },
-          "sicherheit": "hoch",
+          "sicherheit": "mittel",
           "aussagetyp": "modellannahme",
           "herangezogene_artikel_ids": []
         }
@@ -680,11 +731,11 @@
       "absaetze": [
         {
           "absatz_id": "P31",
-          "text": "Stoff: Kraftstofftank über Kraftstoffanlage zum Verbrennungsmotor, Abgas zur Abgasanlage, Filterluft der ABC-Schutzanlage in den Schützentruppraum. Mechanisch: Motor über Drehmomentwandler, Getriebe, Lenkgetriebe und Antriebswelle zu Triebrad und Gleiskette, alternativ Traktionsmaschine zur Antriebswelle; Hydraulikmotor zum Lenkgetriebe; Laufrollen über Federung in die Wanne; Motor zu Generator und Nebenaggregatetrieb, dieser zu Hydraulikpumpe und Hydraulikversorgung; Betriebsbremse und Retarder auf den Abtrieb; Richtanlage zur Maschinenkanone. Elektrisch: Generator über Leistungselektronik und Gleichspannungswandler ins Niedervolt-Bordnetz, dazu Bordnetzbatterie, Traktionsbatterie und Hilfsstromaggregat; Leistungselektronik zu Kühlerlüfter, Klimakompressor und Traktionsmaschine; Bordnetz über Schleifringübertrager zum Drehturm und zu den Scheinwerfern. Hydraulisch: Hydraulikpumpe zum Hydraulikmotor, Hydraulikversorgung zur Richtanlage. Thermisch: Motor über Kühlkreislauf zum Kühler, Klimaanlage in den Schützentruppraum. Information: Lenkrad zur Lenkübertragung; Optiken über Feuerleitrechner zu Richtanlage und Führungssystem, dazu Navigation und Gateway, weiter zur Funkanlage; Fahrzeugmanagement, Bedienelemente und Kamera-Monitor-System zu den Anzeigeelementen; Warnsensoren zu Nebelmittelwurfanlage und Infrarotstörer.",
+          "text": "Stoff: Kraftstofftank über Kraftstoffanlage zum Verbrennungsmotor, Abgas zur Abgasanlage, Filterluft der ABC-Schutzanlage in den Schützentruppraum, Munitionsmagazin und Zuführung zur Maschinenkanone. Mechanisch: Motor über Drehmomentwandler, Getriebe, Lenkgetriebe und Antriebswelle zu Triebrad und Gleiskette, alternativ Traktionsmaschine zur Antriebswelle; Hydraulikmotor zum Lenkgetriebe; Laufrollen über Federung in die Wanne; Motor zu Generator und Nebenaggregatetrieb, dieser zu Hydraulikpumpe und Hydraulikversorgung; Betriebsbremse und Retarder auf den Abtrieb; Richtanlage zur Maschinenkanone. Elektrisch: Generator über Leistungselektronik und Gleichspannungswandler ins Niedervolt-Bordnetz, dazu Bordnetzbatterie und Hilfsstromaggregat; Leistungselektronik zu Kühlerlüfter und Klimakompressor, über das Hochvolt-Bordnetz zur Traktionsmaschine, dorthin auch die Traktionsbatterie; Bordnetz über Schleifringübertrager zum Drehturm und zu den Scheinwerfern. Hydraulisch: Hydraulikpumpe zum Hydraulikmotor, Hydraulikversorgung zur Richtanlage. Thermisch: Motor über Kühlkreislauf zum Kühler, Klimaanlage in den Schützentruppraum. Information: Lenkrad zur Lenkübertragung; Optiken über Feuerleitrechner zu Richtanlage und Führungssystem, dazu Navigation und Gateway, weiter zur Funkanlage; Fahrzeugmanagement, Bedienelemente und Kamera-Monitor-System zu den Anzeigeelementen; Warnsensoren zu Nebelmittelwurfanlage und Infrarotstörer.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
-            "praemissen": ["P5", "P7", "P9", "P10", "P11", "P13", "P15", "P17", "P19", "P21", "P23", "P25", "P27", "P28"],
+            "praemissen": ["P5", "P7", "P9", "P10", "P11", "P13", "P15", "P17", "P19", "P21", "P23", "P25", "P27", "P28", "P33", "P34", "P35"],
             "schluss": "Die in den Hauptsystem-Abschnitten beschriebenen Wirkzusammenhänge ergeben die aufgeführten Flüsse mit jeweils benanntem Ursprung und Ziel."
           },
           "sicherheit": "mittel",
@@ -699,11 +750,11 @@
       "absaetze": [
         {
           "absatz_id": "P32",
-          "text": "Funktionszuordnung: Fahrzeuglasten tragen Wanne, Laufrollen und Federung; Fahrzeug fortbewegen Gleiskette und Triebrad; Energie speichern Kraftstofftank, Bordnetzbatterie und Traktionsbatterie; Treibstoff fördern die Kraftstoffanlage; Elektrische Energie erzeugen Generator und Hilfsstromaggregat; Elektrische Energie verteilen Leistungselektronik, Gleichspannungswandler, Niedervolt-Bordnetz und Schleifringübertrager; Antriebsleistung erzeugen Verbrennungsmotor und Traktionsmaschine; Drehmoment übertragen Drehmomentwandler, Getriebe, Antriebswelle und Nebenaggregatetrieb; Fahrzeug lenken Lenkgetriebe und Hydraulikmotor; Hydraulische Leistung bereitstellen Hydraulikpumpe und Hydraulikversorgung; Fahrzeug verzögern Betriebsbremse und Retarder; Fahrzeug festhalten die Feststellbremse; Fahrereingaben erfassen Lenkrad und Bedienelemente; Fahrerinformationen anzeigen die Anzeigeelemente; Insassen schützen Grundpanzerung, Zusatzpanzerung, Sitze, Rückhaltesystem, Brandunterdrückungsanlage, Feuerlöschanlage und ABC-Schutzanlage; Ladung aufnehmen Schützentruppraum und Stauraum; Waffe richten Richt- und Stabilisierungsanlage und Feuerleitrechner; Ziele bekämpfen Maschinenkanone, Maschinengewehr und Lenkflugkörperstartgerät; Bedrohung abwehren Nebelmittelwurfanlage und Infrarotstörer; Fahrzeugumfeld erfassen Rundblickperiskop, Waffenoptik und Warnsensoren; Daten übertragen Fahrzeugbus, Gateway, Führungs- und Waffeneinsatzsystem, Funkanlage und Bordverständigungsanlage; Fahrzeugzustand überwachen Fahrzeugmanagement und Diagnose; Fahrzeugposition bestimmen die Navigation; Fahrersicht sicherstellen Winkelspiegel, Fahrernachtsichtgerät und Kamera-Monitor-System; Fahrzeugumgebung ausleuchten die Scheinwerfer; Lichtsignale abgeben die Leuchten; Betriebstemperatur regeln Kühler, Kühlerlüfter und Kühlkreislauf; Innenraum klimatisieren Klimaanlage und Klimakompressor.",
+          "text": "Funktionszuordnung: Fahrzeuglasten tragen Wanne, Laufrollen und Federung; Fahrzeug fortbewegen Gleiskette und Triebrad; Energie speichern Kraftstofftank, Bordnetzbatterie und Traktionsbatterie; Treibstoff fördern die Kraftstoffanlage; Elektrische Energie erzeugen Generator und Hilfsstromaggregat; Elektrische Energie verteilen Leistungselektronik, Gleichspannungswandler, Hochvolt-Bordnetz, Niedervolt-Bordnetz und Schleifringübertrager; Antriebsleistung erzeugen Verbrennungsmotor und Traktionsmaschine; Drehmoment übertragen Drehmomentwandler, Getriebe, Antriebswelle und Nebenaggregatetrieb; Fahrzeug lenken Lenkgetriebe und Hydraulikmotor; Hydraulische Leistung bereitstellen Hydraulikpumpe und Hydraulikversorgung; Fahrzeug verzögern Betriebsbremse und Retarder; Fahrzeug festhalten die Feststellbremse; Fahrereingaben erfassen Lenkrad und Bedienelemente; Fahrerinformationen anzeigen die Anzeigeelemente; Insassen schützen Grundpanzerung, Zusatzpanzerung, Sitze, Rückhaltesystem, Brandunterdrückungsanlage, Feuerlöschanlage und ABC-Schutzanlage; Ladung aufnehmen Schützentruppraum und Stauraum; Waffe richten Richt- und Stabilisierungsanlage und Feuerleitrechner; Ziele bekämpfen Maschinenkanone, Maschinengewehr und Lenkflugkörperstartgerät; Bedrohung abwehren Nebelmittelwurfanlage und Infrarotstörer; Fahrzeugumfeld erfassen Rundblickperiskop, Waffenoptik und Warnsensoren; Daten übertragen Fahrzeugbus, Gateway, Führungs- und Waffeneinsatzsystem, Funkanlage und Bordverständigungsanlage; Fahrzeugzustand überwachen Fahrzeugmanagement und Diagnose; Fahrzeugposition bestimmen die Navigation; Fahrersicht sicherstellen Winkelspiegel, Fahrernachtsichtgerät und Kamera-Monitor-System; Fahrzeugumgebung ausleuchten die Scheinwerfer; Lichtsignale abgeben die Leuchten; Betriebstemperatur regeln Kühler, Kühlerlüfter und Kühlkreislauf; Innenraum klimatisieren Klimaanlage und Klimakompressor.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
-            "praemissen": ["P5", "P7", "P9", "P11", "P13", "P15", "P17", "P19", "P21", "P23", "P25", "P27", "P28"],
+            "praemissen": ["P5", "P7", "P9", "P11", "P13", "P15", "P17", "P19", "P21", "P23", "P25", "P27", "P28", "P33", "P34", "P35"],
             "schluss": "Jede Funktion des Modellblocks ist dem in den Hauptsystem-Abschnitten beschriebenen ausführenden System oder Bauteil zugeordnet."
           },
           "sicherheit": "mittel",
@@ -729,24 +780,25 @@
       {"id": "E12", "name": "Laufrollen", "typ": "komponente", "eltern_id": "E8", "absatz_ids": ["P3", "P5"]},
       {"id": "E13", "name": "Stützrollen", "typ": "komponente", "eltern_id": "E8", "absatz_ids": ["P3"]},
       {"id": "E14", "name": "Federung", "typ": "komponente", "eltern_id": "E8", "absatz_ids": ["P3", "P5"]},
-      {"id": "E15", "name": "Antriebssystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P6", "P7", "P29", "P30"], "kategorie": "antrieb"},
+      {"id": "E15", "name": "Antriebssystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P6", "P7", "P29", "P30", "P34"], "kategorie": "antrieb"},
       {"id": "E16", "name": "Triebwerksblock", "typ": "subsystem", "eltern_id": "E15", "absatz_ids": ["P6", "P7", "P11", "P30"]},
       {"id": "E17", "name": "Verbrennungsmotor", "typ": "komponente", "eltern_id": "E16", "absatz_ids": ["P6", "P7", "P28"]},
       {"id": "E18", "name": "Drehmomentwandler", "typ": "komponente", "eltern_id": "E16", "absatz_ids": ["P6", "P7", "P30"]},
       {"id": "E19", "name": "Getriebe", "typ": "komponente", "eltern_id": "E16", "absatz_ids": ["P7", "P11"]},
       {"id": "E20", "name": "Abgasanlage", "typ": "komponente", "eltern_id": "E16", "absatz_ids": ["P7"]},
       {"id": "E21", "name": "Antriebswelle", "typ": "komponente", "eltern_id": "E15", "absatz_ids": ["P7"]},
-      {"id": "E22", "name": "Traktionsmaschine", "typ": "komponente", "eltern_id": "E15", "absatz_ids": ["P7"]},
-      {"id": "E23", "name": "Energieversorgungssystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P8", "P9", "P29"], "kategorie": "energieversorgung"},
+      {"id": "E22", "name": "Traktionsmaschine", "typ": "komponente", "eltern_id": "E15", "absatz_ids": ["P34"]},
+      {"id": "E23", "name": "Energieversorgungssystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P8", "P9", "P29", "P35"], "kategorie": "energieversorgung"},
       {"id": "E24", "name": "Kraftstoffversorgung", "typ": "subsystem", "eltern_id": "E23", "absatz_ids": ["P8", "P9"]},
       {"id": "E25", "name": "Kraftstofftank", "typ": "komponente", "eltern_id": "E24", "absatz_ids": ["P8", "P9"]},
       {"id": "E26", "name": "Kraftstoffanlage", "typ": "komponente", "eltern_id": "E24", "absatz_ids": ["P9"]},
       {"id": "E27", "name": "Stromerzeugung", "typ": "subsystem", "eltern_id": "E23", "absatz_ids": ["P8", "P9"]},
-      {"id": "E28", "name": "Generator", "typ": "komponente", "eltern_id": "E27", "absatz_ids": ["P7", "P8", "P9"]},
+      {"id": "E28", "name": "Generator", "typ": "komponente", "eltern_id": "E27", "absatz_ids": ["P34", "P8", "P9", "P35"]},
       {"id": "E29", "name": "Leistungselektronik", "typ": "komponente", "eltern_id": "E27", "absatz_ids": ["P8", "P9", "P26"]},
       {"id": "E30", "name": "Gleichspannungswandler", "typ": "komponente", "eltern_id": "E27", "absatz_ids": ["P8", "P9"]},
       {"id": "E31", "name": "Bordnetzbatterie", "typ": "komponente", "eltern_id": "E27", "absatz_ids": ["P8", "P9"]},
-      {"id": "E32", "name": "Traktionsbatterie", "typ": "komponente", "eltern_id": "E27", "absatz_ids": ["P9"]},
+      {"id": "E32", "name": "Traktionsbatterie", "typ": "komponente", "eltern_id": "E27", "absatz_ids": ["P35"]},
+      {"id": "E109", "name": "Hochvolt-Bordnetz", "typ": "komponente", "eltern_id": "E27", "absatz_ids": ["P9", "P35"]},
       {"id": "E33", "name": "Lenksystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P10", "P11", "P29", "P30"], "kategorie": "lenkung"},
       {"id": "E34", "name": "Lenkbetätigung", "typ": "subsystem", "eltern_id": "E33", "absatz_ids": ["P11"]},
       {"id": "E35", "name": "Lenkrad", "typ": "komponente", "eltern_id": "E34", "absatz_ids": ["P10", "P11"]},
@@ -772,6 +824,7 @@
       {"id": "E55", "name": "Maschinengewehr", "typ": "komponente", "eltern_id": "E52", "absatz_ids": ["P16", "P17"]},
       {"id": "E56", "name": "Lenkflugkörperstartgerät", "typ": "komponente", "eltern_id": "E52", "absatz_ids": ["P16", "P17"]},
       {"id": "E57", "name": "Richt- und Stabilisierungsanlage", "typ": "komponente", "eltern_id": "E52", "absatz_ids": ["P16", "P17", "P28"]},
+      {"id": "E110", "name": "Munitionsmagazin und Zuführung", "typ": "komponente", "eltern_id": "E52", "absatz_ids": ["P17"]},
       {"id": "E58", "name": "Sicht- und Feuerleitsystem", "typ": "subsystem", "eltern_id": "E51", "absatz_ids": ["P16", "P17"]},
       {"id": "E59", "name": "Rundblickperiskop", "typ": "komponente", "eltern_id": "E58", "absatz_ids": ["P16", "P17"]},
       {"id": "E60", "name": "Waffenoptik", "typ": "komponente", "eltern_id": "E58", "absatz_ids": ["P16", "P17"]},
@@ -811,14 +864,14 @@
       {"id": "E94", "name": "Winkelspiegel", "typ": "komponente", "eltern_id": "E93", "absatz_ids": ["P24", "P25"]},
       {"id": "E95", "name": "Fahrernachtsichtgerät", "typ": "komponente", "eltern_id": "E93", "absatz_ids": ["P24", "P25"]},
       {"id": "E96", "name": "Kamera-Monitor-System", "typ": "komponente", "eltern_id": "E93", "absatz_ids": ["P24", "P25"]},
-      {"id": "E97", "name": "Thermomanagement", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P26", "P27", "P29"], "kategorie": "thermomanagement"},
+      {"id": "E97", "name": "Thermomanagement", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P26", "P27", "P29", "P33"], "kategorie": "thermomanagement"},
       {"id": "E98", "name": "Aggregatekühlung", "typ": "subsystem", "eltern_id": "E97", "absatz_ids": ["P26", "P27"]},
       {"id": "E99", "name": "Kühler", "typ": "komponente", "eltern_id": "E98", "absatz_ids": ["P26", "P27"]},
       {"id": "E100", "name": "Kühlerlüfter", "typ": "komponente", "eltern_id": "E98", "absatz_ids": ["P26", "P27"]},
       {"id": "E101", "name": "Kühlkreislauf", "typ": "komponente", "eltern_id": "E98", "absatz_ids": ["P27"]},
-      {"id": "E102", "name": "Klimatisierung", "typ": "subsystem", "eltern_id": "E97", "absatz_ids": ["P26", "P27"]},
-      {"id": "E103", "name": "Klimaanlage", "typ": "komponente", "eltern_id": "E102", "absatz_ids": ["P26", "P27"]},
-      {"id": "E104", "name": "Klimakompressor", "typ": "komponente", "eltern_id": "E102", "absatz_ids": ["P26", "P27"]},
+      {"id": "E102", "name": "Klimatisierung", "typ": "subsystem", "eltern_id": "E97", "absatz_ids": ["P26", "P33"]},
+      {"id": "E103", "name": "Klimaanlage", "typ": "komponente", "eltern_id": "E102", "absatz_ids": ["P26", "P33"]},
+      {"id": "E104", "name": "Klimakompressor", "typ": "komponente", "eltern_id": "E102", "absatz_ids": ["P26", "P33"]},
       {"id": "E105", "name": "Neben- und Versorgungssysteme", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P28", "P29"], "kategorie": "nebensysteme"},
       {"id": "E106", "name": "Nebenaggregatetrieb", "typ": "komponente", "eltern_id": "E105", "absatz_ids": ["P28"]},
       {"id": "E107", "name": "Hydraulikversorgung", "typ": "komponente", "eltern_id": "E105", "absatz_ids": ["P28"]},
@@ -827,11 +880,11 @@
     "funktionen": [
       {"id": "F1", "name": "Fahrzeuglasten tragen", "ausgefuehrt_von": ["E3", "E12", "E14"], "absatz_ids": ["P5", "P32"]},
       {"id": "F2", "name": "Fahrzeug fortbewegen", "ausgefuehrt_von": ["E9", "E10"], "absatz_ids": ["P3", "P7", "P32"]},
-      {"id": "F3", "name": "Energie speichern", "ausgefuehrt_von": ["E25", "E31", "E32"], "absatz_ids": ["P9", "P32"]},
+      {"id": "F3", "name": "Energie speichern", "ausgefuehrt_von": ["E25", "E31", "E32"], "absatz_ids": ["P9", "P32", "P35"]},
       {"id": "F4", "name": "Treibstoff fördern", "ausgefuehrt_von": ["E26"], "absatz_ids": ["P8", "P9", "P32"]},
       {"id": "F5", "name": "Elektrische Energie erzeugen", "ausgefuehrt_von": ["E28", "E108"], "absatz_ids": ["P8", "P9", "P28", "P32"]},
-      {"id": "F6", "name": "Elektrische Energie verteilen", "ausgefuehrt_von": ["E29", "E30", "E65", "E66", "E68"], "absatz_ids": ["P8", "P19", "P32"]},
-      {"id": "F7", "name": "Antriebsleistung erzeugen", "ausgefuehrt_von": ["E17", "E22"], "absatz_ids": ["P6", "P7", "P32"]},
+      {"id": "F6", "name": "Elektrische Energie verteilen", "ausgefuehrt_von": ["E29", "E30", "E65", "E66", "E68", "E109"], "absatz_ids": ["P8", "P19", "P32", "P9"]},
+      {"id": "F7", "name": "Antriebsleistung erzeugen", "ausgefuehrt_von": ["E17", "E22"], "absatz_ids": ["P6", "P7", "P32", "P34"]},
       {"id": "F8", "name": "Drehmoment übertragen", "ausgefuehrt_von": ["E18", "E19", "E21", "E106"], "absatz_ids": ["P7", "P28", "P32"]},
       {"id": "F9", "name": "Fahrzeug lenken", "ausgefuehrt_von": ["E37", "E39"], "absatz_ids": ["P10", "P11", "P32"]},
       {"id": "F10", "name": "Hydraulische Leistung bereitstellen", "ausgefuehrt_von": ["E38", "E107"], "absatz_ids": ["P10", "P28", "P32"]},
@@ -852,7 +905,7 @@
       {"id": "F25", "name": "Fahrzeugumgebung ausleuchten", "ausgefuehrt_von": ["E91"], "absatz_ids": ["P25", "P32"]},
       {"id": "F26", "name": "Lichtsignale abgeben", "ausgefuehrt_von": ["E92"], "absatz_ids": ["P25", "P32"]},
       {"id": "F27", "name": "Betriebstemperatur regeln", "ausgefuehrt_von": ["E99", "E100", "E101"], "absatz_ids": ["P26", "P27", "P32"]},
-      {"id": "F28", "name": "Innenraum klimatisieren", "ausgefuehrt_von": ["E103", "E104"], "absatz_ids": ["P26", "P27", "P32"]}
+      {"id": "F28", "name": "Innenraum klimatisieren", "ausgefuehrt_von": ["E103", "E104"], "absatz_ids": ["P26", "P33", "P32"]}
     ],
     "fluesse": [
       {"id": "S1", "von": "E25", "nach": "E26", "art": "stoff", "medium": "Dieselkraftstoff", "absatz_ids": ["P9", "P31"]},
@@ -867,7 +920,7 @@
       {"id": "S10", "von": "E9", "nach": "E12", "art": "mechanisch", "medium": "Bodenkräfte", "absatz_ids": ["P5", "P31"]},
       {"id": "S11", "von": "E12", "nach": "E14", "art": "mechanisch", "medium": "Laufrollenlast", "absatz_ids": ["P5", "P31"]},
       {"id": "S12", "von": "E14", "nach": "E3", "art": "mechanisch", "medium": "Federkraft", "absatz_ids": ["P5", "P31"]},
-      {"id": "S13", "von": "E22", "nach": "E21", "art": "mechanisch", "medium": "Drehmoment je Kettenseite", "absatz_ids": ["P7", "P31"]},
+      {"id": "S13", "von": "E22", "nach": "E21", "art": "mechanisch", "medium": "Drehmoment je Kettenseite", "absatz_ids": ["P34", "P31"]},
       {"id": "S14", "von": "E17", "nach": "E28", "art": "mechanisch", "medium": "Drehmoment", "absatz_ids": ["P8", "P31"], "schnittstelle": "Generatoranbindung am Verbrennungsmotor"},
       {"id": "S15", "von": "E17", "nach": "E106", "art": "mechanisch", "medium": "Drehmoment", "absatz_ids": ["P28", "P31"], "schnittstelle": "Nebenabtrieb am Verbrennungsmotor"},
       {"id": "S16", "von": "E106", "nach": "E38", "art": "mechanisch", "medium": "Drehmoment", "absatz_ids": ["P10", "P28", "P31"], "schnittstelle": "Pumpenantrieb der Lenkhydraulik"},
@@ -881,8 +934,9 @@
       {"id": "S24", "von": "E29", "nach": "E30", "art": "elektrisch", "medium": "Gleichstrom", "absatz_ids": ["P8", "P31"]},
       {"id": "S25", "von": "E30", "nach": "E65", "art": "elektrisch", "medium": "Bordnetzspannung", "absatz_ids": ["P8", "P19", "P31"], "schnittstelle": "Bordnetzeinspeisung"},
       {"id": "S26", "von": "E31", "nach": "E30", "art": "elektrisch", "medium": "Gleichstrom (Start und Pufferung)", "absatz_ids": ["P8", "P31"]},
-      {"id": "S27", "von": "E32", "nach": "E29", "art": "elektrisch", "medium": "Traktionsstrom", "absatz_ids": ["P9", "P31"]},
-      {"id": "S28", "von": "E29", "nach": "E22", "art": "elektrisch", "medium": "Traktionsstrom", "absatz_ids": ["P7", "P31"], "schnittstelle": "Leistungsanschluss der Traktionsmaschine"},
+      {"id": "S27", "von": "E32", "nach": "E109", "art": "elektrisch", "medium": "Traktionsstrom", "absatz_ids": ["P35", "P31"], "schnittstelle": "Batterieanschluss am Hochvolt-Bordnetz"},
+      {"id": "S28", "von": "E109", "nach": "E22", "art": "elektrisch", "medium": "Traktionsstrom", "absatz_ids": ["P9", "P34", "P31"], "schnittstelle": "Leistungsanschluss der Traktionsmaschine"},
+      {"id": "S54", "von": "E29", "nach": "E109", "art": "elektrisch", "medium": "Traktionsstrom", "absatz_ids": ["P9", "P31"], "schnittstelle": "Einspeisung der Leistungselektronik ins Hochvolt-Bordnetz"},
       {"id": "S29", "von": "E29", "nach": "E100", "art": "elektrisch", "medium": "Antriebsstrom", "absatz_ids": ["P8", "P26", "P31"], "schnittstelle": "Versorgung der elektrischen Kühlerlüfter"},
       {"id": "S30", "von": "E29", "nach": "E104", "art": "elektrisch", "medium": "Antriebsstrom", "absatz_ids": ["P8", "P26", "P31"], "schnittstelle": "Versorgung des Klimakompressors"},
       {"id": "S31", "von": "E108", "nach": "E65", "art": "elektrisch", "medium": "Bordnetzspannung", "absatz_ids": ["P28", "P31"], "schnittstelle": "Einspeisung Hilfsstromaggregat"},
@@ -894,6 +948,7 @@
       {"id": "S37", "von": "E60", "nach": "E61", "art": "information", "medium": "Zieldaten", "absatz_ids": ["P16", "P17", "P31"]},
       {"id": "S38", "von": "E61", "nach": "E57", "art": "information", "medium": "Richtbefehle", "absatz_ids": ["P17", "P31"]},
       {"id": "S39", "von": "E57", "nach": "E54", "art": "mechanisch", "medium": "Richtbewegung", "absatz_ids": ["P16", "P31"]},
+      {"id": "S55", "von": "E110", "nach": "E54", "art": "stoff", "medium": "Munition", "absatz_ids": ["P17", "P31"]},
       {"id": "S40", "von": "E61", "nach": "E74", "art": "information", "medium": "Ziel- und Lagedaten", "absatz_ids": ["P20", "P21", "P31"], "schnittstelle": "Datenschnittstelle zwischen Feuerleitung und Führungssystem"},
       {"id": "S41", "von": "E77", "nach": "E74", "art": "information", "medium": "Eigenposition", "absatz_ids": ["P21", "P31"]},
       {"id": "S42", "von": "E71", "nach": "E74", "art": "information", "medium": "Fahrzeugdaten", "absatz_ids": ["P19", "P21", "P31"], "schnittstelle": "Gateway zum Führungssystem"},
@@ -905,7 +960,7 @@
       {"id": "S48", "von": "E86", "nach": "E87", "art": "information", "medium": "Auslösesignal", "absatz_ids": ["P22", "P23", "P31"]},
       {"id": "S49", "von": "E86", "nach": "E88", "art": "information", "medium": "Auslösesignal", "absatz_ids": ["P22", "P23", "P31"]},
       {"id": "S50", "von": "E84", "nach": "E48", "art": "stoff", "medium": "gefilterte Außenluft", "absatz_ids": ["P22", "P23", "P31"], "schnittstelle": "Filterluftzuführung in den Kampfraum"},
-      {"id": "S51", "von": "E103", "nach": "E48", "art": "thermisch", "medium": "gekühlte Luft", "absatz_ids": ["P26", "P27", "P31"], "schnittstelle": "Luftverteilung im Kampfraum"},
+      {"id": "S51", "von": "E103", "nach": "E48", "art": "thermisch", "medium": "gekühlte Luft", "absatz_ids": ["P26", "P33", "P31"], "schnittstelle": "Luftverteilung im Kampfraum"},
       {"id": "S52", "von": "E17", "nach": "E101", "art": "thermisch", "medium": "Kühlmittel", "absatz_ids": ["P27", "P31"], "schnittstelle": "Kühlmittelanschluss am Triebwerksblock"},
       {"id": "S53", "von": "E101", "nach": "E99", "art": "thermisch", "medium": "Kühlmittel", "absatz_ids": ["P27", "P31"]}
     ],
@@ -997,9 +1052,10 @@
           {"element_id": "E28", "beschreibung": "Generator wird zum Hauptenergiewandler des Antriebs"},
           {"element_id": "E32", "beschreibung": "Traktionsbatterie nur beim hybriden Antrieb"},
           {"element_id": "E98", "beschreibung": "Aggregatekühlung muss zusätzlich Leistungselektronik und Traktionsmaschinen kühlen"},
-          {"element_id": "E107", "beschreibung": "Hydraulikversorgung kann bei elektrischem Antrieb entfallen"}
+          {"element_id": "E107", "beschreibung": "Hydraulikversorgung kann bei elektrischem Antrieb entfallen"},
+          {"element_id": "E109", "beschreibung": "Hochvolt-Bordnetz mit Schutz- und Überwachungseinrichtungen nur beim dieselelektrischen und hybriden Antrieb"}
         ],
-        "absatz_ids": ["P7", "P9", "P28"]
+        "absatz_ids": ["P7", "P9", "P28", "P34", "P35"]
       },
       {
         "id": "V5",
@@ -1043,6 +1099,28 @@
           {"element_id": "E65", "beschreibung": "Aktive Schutzsysteme erhöhen den Leistungsbedarf am Bordnetz"}
         ],
         "absatz_ids": ["P4", "P5", "P22"]
+      },
+      {
+        "id": "V7",
+        "element_id": "E57",
+        "bezeichnung": "Richtantriebsart",
+        "alternativen": [
+          "elektrohydraulische Richt- und Stabilisierungsanlage",
+          "vollelektrische Richt- und Stabilisierungsanlage"
+        ],
+        "auswahlkriterien": [
+          "Richtgeschwindigkeit und Stabilisierungsgüte",
+          "Brandlast von Hydrauliköl im Turm",
+          "Leistungsbedarf am Bordnetz",
+          "Wartungsaufwand"
+        ],
+        "auswirkungen": [
+          {"element_id": "E107", "beschreibung": "Hydraulikversorgung entfällt beim vollelektrischen Richtantrieb"},
+          {"element_id": "E106", "beschreibung": "Nebenaggregatetrieb ohne Abtrieb zur Richthydraulik beim vollelektrischen Richtantrieb"},
+          {"element_id": "E65", "beschreibung": "Niedervolt-Bordnetz muss beim vollelektrischen Richtantrieb höhere Leistung zum Turm bereitstellen"},
+          {"element_id": "E68", "beschreibung": "Schleifringübertrager überträgt beim vollelektrischen Richtantrieb höhere elektrische Leistung zum Turm"}
+        ],
+        "absatz_ids": ["P17", "P28"]
       }
     ],
     "klaerungsfragen": [
@@ -1063,7 +1141,7 @@
       {"id": "K15", "frage": "Soll neben dem Soft-Kill-Selbstschutz ein Hardkill-System vorgesehen werden?", "element_ids": ["E80", "E85"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Sensorik, Anbauflächen am Turm, Leistungsbedarf und Gefährdungsbereich für abgesessene Soldaten ab.", "variante_ids": ["V6"]},
       {"id": "K16", "frage": "Welche Sicht muss der Fahrer bei geschlossenen Luken bei Nacht und bei Rückwärtsfahrt haben?", "element_ids": ["E89", "E93", "E96"], "anlass": "anforderung", "relevanz": "Davon hängen Fahrernachtsichtgerät, Kamera-Monitor-System und Anzeigeelemente ab."},
       {"id": "K17", "frage": "In welchen Klimazonen muss der geschlossene Kampfraum mit voller Besetzung und eingeschaltetem ABC-Schutz betrieben werden?", "element_ids": ["E97", "E102", "E84"], "anlass": "betrieb", "relevanz": "Davon hängen Kühlleistung der Klimaanlage, Leistungsbedarf des Klimakompressors und Filterluftmenge ab."},
-      {"id": "K18", "frage": "Soll die Richt- und Stabilisierungsanlage elektrohydraulisch oder vollelektrisch angetrieben werden?", "element_ids": ["E105", "E107", "E57"], "anlass": "architekturentscheidung", "relevanz": "Davon hängt ab, ob eine Hydraulikversorgung im Turm und am Nebenaggregatetrieb nötig ist.", "variante_ids": ["V4"]}
+      {"id": "K18", "frage": "Soll die Richt- und Stabilisierungsanlage elektrohydraulisch oder vollelektrisch angetrieben werden?", "element_ids": ["E105", "E107", "E57"], "anlass": "architekturentscheidung", "relevanz": "Davon hängt ab, ob eine Hydraulikversorgung im Turm und am Nebenaggregatetrieb nötig ist.", "variante_ids": ["V7"]}
     ],
     "anforderungsthemen": [
       {"id": "R1", "element_ids": ["E2", "E3", "E4", "E5"], "thema": "Ballistischer Schutz und Minenschutz", "kenngroessen": ["Schutzniveau frontal", "Schutzniveau rundum", "Minenschutzniveau", "Masse der Zusatzpanzerung", "Rüstzeit der Schutzmodule"]},
@@ -1099,7 +1177,7 @@
     "Glossarvorschlag: Hauptsystemname für den Bedienraum gepanzerter Kampffahrzeuge, etwa Kampfraum (Kategorie bedienraum); verwendet wurde mangels passender Vorgabe Fahrerhaus.",
     "Glossarvorschlag: Hauptsystemname für die Nutzlast von Kampffahrzeugen, etwa Waffen- und Missionsausrüstung (Kategorie aufbau_nutzlast); verwendet wurde mangels passender Vorgabe Aufbau und Ladung.",
     "Recherche: Fachliteratur zu Fahrmechanik, Lenkgetrieben und Bremsen von Kettenfahrzeugen (Merhof, Hackbarth: Fahrmechanik der Kettenfahrzeuge; Suchbegriffe: Kettenfahrzeug Lenkgetriebe Bremsanordnung) zur Belegung von P7, P11 und P13 mit Fachliteratur.",
-    "Recherche: dieselelektrische und hybride Antriebe für Kettenkampffahrzeuge (Suchbegriffe: hybrid electric drive tracked combat vehicle; electric drive armoured vehicle) zur Belegung von P7, P9 und V4.",
+    "Recherche: dieselelektrische und hybride Antriebe für Kettenkampffahrzeuge (Suchbegriffe: hybrid electric drive tracked combat vehicle; electric drive armoured vehicle) zur Belegung von P34, P35 und V4.",
     "Recherche: Schutzniveaus gepanzerter Fahrzeuge im NATO-Regelwerk (STANAG 4569, AEP-55) mit frei zugänglicher amtlicher Fassung für R1; die englische Wikipedia-Seite zu STANAG 4569 war in diesem Lauf nicht abrufbar.",
     "Recherche: Architektur von Radschützenpanzern (Suchbegriffe: wheeled infantry fighting vehicle driveline steering; Radschützenpanzer Achslenkung) zur Belegung von V1 und P11.",
     "Recherche: Stillstandsbetrieb und Hilfsstromaggregate an Schützenpanzern (Suchbegriffe: silent watch auxiliary power unit infantry fighting vehicle) zur Belegung von P9, P28 und K7.",

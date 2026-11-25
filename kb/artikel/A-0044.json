@@ -147,13 +147,13 @@
         },
         {
           "absatz_id": "P8",
-          "text": "Der Verbrennungsmotor mit Luftfilter und Abgasnachbehandlung speist daher zwei Leistungspfade. Der Fahrantrieb führt die Leistung über ein hydrostatisches Getriebe, ein Schaltgetriebe, das Differenzial und Endantriebe an die Vorderachse. Der Arbeitsantrieb verteilt sie über eine Hauptkupplung sowie Riemen- und Kettentriebe an die Arbeitsorgane; eine Drehzahlverstelleinrichtung passt die Trommeldrehzahl an die Frucht an. Mit einem Variator entfällt der hydrostatische Kreis samt Ölkühlung und hydrostatischer Bremswirkung.",
+          "text": "Der Verbrennungsmotor mit Luftfilter und Abgasnachbehandlung speist daher zwei Leistungspfade. Der Fahrantrieb führt die Leistung über ein hydrostatisches Getriebe, ein Schaltgetriebe, das Differenzial und Endantriebe an die Vorderachse. Der Arbeitsantrieb verteilt sie über eine Hauptkupplung sowie Riemen- und Kettentriebe an die Arbeitsorgane; eine Drehzahlverstelleinrichtung passt die Trommeldrehzahl an die Frucht an. Zum Arbeitsantrieb gehört auch das Lüfterwendegetriebe, das den Kühlerventilator der Motorkühlung antreibt und dessen Drehrichtung zum Freiblasen des Kühlers umkehren kann. Mit einem Variator entfällt der hydrostatische Kreis samt Ölkühlung und hydrostatischer Bremswirkung.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herangezogene_artikel_ids": [],
           "herleitung": {
-            "praemissen": ["P7", "Q1, Abschnitt Dreschorgan: Trommeldrehzahl wird je nach Frucht variiert", "P3: angetriebene Vorderachse, Allrad nur bei schwierigem Gelände", "Ein Motor, der Fahrbewegung und Arbeitsorgane versorgt, braucht getrennte, einzeln schaltbare Leistungspfade"],
-            "schluss": "Das Antriebssystem gliedert sich in Verbrennungsmotor, Fahrantrieb und Arbeitsantrieb; die Getriebebauart des Fahrantriebs ist eine strukturändernde Variante."
+            "praemissen": ["P7", "Q1, Abschnitt Dreschorgan: Trommeldrehzahl wird je nach Frucht variiert", "P3: angetriebene Vorderachse, Allrad nur bei schwierigem Gelände", "Ein Motor, der Fahrbewegung und Arbeitsorgane versorgt, braucht getrennte, einzeln schaltbare Leistungspfade", "P26: Lüfterwendegetriebe kehrt die Drehrichtung des Kühlerventilators kurzzeitig um"],
+            "schluss": "Das Antriebssystem gliedert sich in Verbrennungsmotor, Fahrantrieb und Arbeitsantrieb mit Lüfterwendegetriebe; die Getriebebauart des Fahrantriebs ist eine strukturändernde Variante."
           },
           "sicherheit": "mittel",
           "aussagetyp": "loesung"
@@ -437,12 +437,12 @@
         },
         {
           "absatz_id": "P27",
-          "text": "Die Motorkühlung führt Motorwärme über Kühlkreislauf, Kühlmittelpumpe und Kühler ab; bei hydrostatischem Fahrantrieb fällt dessen Verlustleistung als Wärme im Öl an und braucht einen Ölkühler im Kühlerpaket. Die Kabinenklimatisierung mit Heiz- und Klimaanlage und Klimakompressor schützt den Fahrer vor Hitze und filtert die staubhaltige Frischluft.",
+          "text": "Die Motorkühlung führt Motorwärme über Kühlkreislauf, Kühlmittelpumpe und Kühler ab, dessen Kühlluft der vom Lüfterwendegetriebe des Arbeitsantriebs angetriebene Ventilator fördert; bei hydrostatischem Fahrantrieb fällt dessen Verlustleistung als Wärme im Öl an und braucht einen Ölkühler im Kühlerpaket. Die Kabinenklimatisierung mit Heiz- und Klimaanlage und Klimakompressor schützt den Fahrer vor Hitze und filtert die staubhaltige Frischluft.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herangezogene_artikel_ids": [],
           "herleitung": {
-            "praemissen": ["P8", "P13: klimatisierte Kabine als Schutz vor Staub und Hitze", "Verlustleistung von Verbrennungsmotor und Hydrostat fällt als Wärme an und muss abgeführt werden"],
+            "praemissen": ["P8", "P13: klimatisierte Kabine als Schutz vor Staub und Hitze", "Verlustleistung von Verbrennungsmotor und Hydrostat fällt als Wärme an und muss abgeführt werden", "P26"],
             "schluss": "Das Thermomanagement besteht aus Motorkühlung mit Ölkühler und Kabinenklimatisierung."
           },
           "sicherheit": "hoch",
@@ -514,12 +514,12 @@
       "absaetze": [
         {
           "absatz_id": "P31",
-          "text": "Stoff: Erntegut vom Erntevorsatz über Schrägförderer, Dreschwerk, Abscheidung und Reinigung zum Korntank, Überkehr zurück zum Dreschwerk, Korn über das Abtankrohr zum Transportfahrzeug, Stroh zum Strohhäcksler, Kraftstoff zum Verbrennungsmotor. Mechanisch: Motor an Fahrantrieb, Arbeitsantrieb und Nebenaggregatetrieb. Hydraulisch: Hydraulikversorgung an Erntevorsatz, Lenkhydraulik und Hangausgleich. Elektrisch: Generator ins Niedervolt-Bordnetz. Information: Prozesssensorik an Steuergeräte, Fahrhebel an Maschinensteuerung, Durchsatzregelung an Fahrantrieb, Navigation an Spurführungsassistent. Thermisch: Motor und Hydrostat an die Motorkühlung.",
+          "text": "Stoff: Erntegut vom Erntevorsatz über Schrägförderer, Dreschwerk, Abscheidung und Reinigung zum Korntank, Überkehr zurück zum Dreschwerk, Korn über das Abtankrohr zum Transportfahrzeug, Stroh zum Strohhäcksler, Kraftstoff zum Verbrennungsmotor. Mechanisch: Motor an Fahrantrieb, Arbeitsantrieb und Nebenaggregatetrieb, Lüfterwendegetriebe an Motorkühlung. Hydraulisch: Hydraulikversorgung an Erntevorsatz, Lenkhydraulik und Hangausgleich. Elektrisch: Generator ins Niedervolt-Bordnetz. Information: Prozesssensorik an Steuergeräte, Fahrhebel an Maschinensteuerung, Durchsatzregelung an Fahrantrieb, Navigation an Spurführungsassistent. Thermisch: Motor und Hydrostat an die Motorkühlung.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herangezogene_artikel_ids": [],
           "herleitung": {
-            "praemissen": ["P8", "P11", "P15", "P16", "P17", "P19", "P21", "P27", "P28"],
+            "praemissen": ["P8", "P11", "P15", "P16", "P17", "P19", "P21", "P27", "P28", "P26"],
             "schluss": "Jeder Fluss verbindet ein Ursprungs- mit einem Zielelement des Modells."
           },
           "sicherheit": "hoch",
@@ -533,7 +533,7 @@
       "absaetze": [
         {
           "absatz_id": "P32",
-          "text": "Funktionszuordnung: Rahmen und Laufwerk: Fahrzeuglasten tragen; Laufwerk und Fahrantrieb: Fahrzeug fortbewegen; Hangausgleich: Hangneigung ausgleichen; Verbrennungsmotor: Antriebsleistung erzeugen; Fahrantrieb und Arbeitsantrieb: Drehmoment übertragen; Arbeitsantrieb und Nebenaggregatetrieb: Arbeitsgeräte versorgen; Kraftstofftank und Starterbatterie: Energie speichern; Kraftstoffanlage: Treibstoff fördern; Lenkhydraulik und Spurführungsassistent: Fahrzeug lenken; Betriebsbremse und hydrostatisches Getriebe: Fahrzeug verzögern; Feststellbremse: Fahrzeug festhalten; Bedien- und Anzeigesystem: Fahrereingaben erfassen; Anzeigeelemente: Fahrerinformationen anzeigen; Kabine: Insassen schützen; Erntevorsatz und Schrägförderer: Erntegut aufnehmen; Dreschwerk: Erntegut dreschen; Abscheidung: Korn abscheiden; Reinigung: Korn reinigen; Korntank: Ladung aufnehmen; Abtankrohr: Korntank entleeren; Strohhäcksler und Spreuverteiler: Ernterückstände verteilen; Niedervolt-Bordnetz: Elektrische Energie verteilen; Fahrzeugbus: Daten übertragen; Prozesssensorik und Schneidwerksführung: Fahrzeugumfeld erfassen; Diagnose, Steinerkennung und Brandschutzeinrichtung: Fahrzeugzustand überwachen; Navigation: Fahrzeugposition bestimmen; Scheinwerfer: Fahrzeugumgebung ausleuchten; Signalleuchten: Lichtsignale abgeben; Sichtsystem: Fahrersicht sicherstellen; Motorkühlung: Betriebstemperatur regeln; Kabinenklimatisierung: Innenraum klimatisieren; Hydraulikversorgung: Hydraulische Leistung bereitstellen; Kompressor für Druckluft: Druckluft bereitstellen.",
+          "text": "Funktionszuordnung: Rahmen und Laufwerk: Fahrzeuglasten tragen; Laufwerk und Fahrantrieb: Fahrzeug fortbewegen; Hangausgleich: Hangneigung ausgleichen; Verbrennungsmotor: Antriebsleistung erzeugen; Fahrantrieb und Arbeitsantrieb: Drehmoment übertragen; Arbeitsantrieb und Nebenaggregatetrieb: Arbeitsgeräte versorgen; Kraftstofftank und Starterbatterie: Energie speichern; Kraftstoffanlage: Treibstoff fördern; Lenkhydraulik und Spurführungsassistent: Fahrzeug lenken; Betriebsbremse und hydrostatisches Getriebe: Fahrzeug verzögern; Feststellbremse: Fahrzeug festhalten; Bedien- und Anzeigesystem: Fahrereingaben erfassen; Anzeigeelemente: Fahrerinformationen anzeigen; Kabine: Insassen schützen; Erntevorsatz und Schrägförderer: Erntegut aufnehmen; Dreschwerk: Erntegut dreschen; Abscheidung: Korn abscheiden; Reinigung: Korn reinigen; Korntank: Ladung aufnehmen; Abtankrohr: Korntank entleeren; Strohhäcksler und Spreuverteiler: Ernterückstände verteilen; Niedervolt-Bordnetz: Elektrische Energie verteilen; Fahrzeugbus: Daten übertragen; Prozesssensorik und Schneidwerksführung: Fahrzeugumfeld erfassen; Diagnose, Steinerkennung und Brandschutzeinrichtung: Fahrzeugzustand überwachen; Navigation: Fahrzeugposition bestimmen; Scheinwerfer: Fahrzeugumgebung ausleuchten; Signalleuchten: Lichtsignale abgeben; Sichtsystem: Fahrersicht sicherstellen; Motorkühlung und Lüfterwendegetriebe: Betriebstemperatur regeln; Kabinenklimatisierung: Innenraum klimatisieren; Hydraulikversorgung: Hydraulische Leistung bereitstellen; Kompressor für Druckluft: Druckluft bereitstellen.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herangezogene_artikel_ids": [],
@@ -672,7 +672,7 @@
       {"id": "E109", "name": "Kühlkreislauf", "typ": "komponente", "eltern_id": "E108", "absatz_ids": ["P27"]},
       {"id": "E110", "name": "Kühlmittelpumpe", "typ": "komponente", "eltern_id": "E108", "absatz_ids": ["P27"]},
       {"id": "E111", "name": "Kühler", "typ": "komponente", "eltern_id": "E108", "absatz_ids": ["P26", "P27"]},
-      {"id": "E112", "name": "Lüfterwendegetriebe", "typ": "komponente", "eltern_id": "E108", "absatz_ids": ["P26"]},
+      {"id": "E112", "name": "Lüfterwendegetriebe", "typ": "komponente", "eltern_id": "E19", "absatz_ids": ["P8", "P26"]},
       {"id": "E113", "name": "Ölkühler", "typ": "komponente", "eltern_id": "E108", "absatz_ids": ["P27"]},
       {"id": "E114", "name": "Kabinenklimatisierung", "typ": "subsystem", "eltern_id": "E107", "absatz_ids": ["P27"]},
       {"id": "E115", "name": "Heiz- und Klimaanlage", "typ": "komponente", "eltern_id": "E114", "absatz_ids": ["P27"]},
@@ -716,7 +716,7 @@
       {"id": "F27", "name": "Fahrzeugumgebung ausleuchten", "ausgefuehrt_von": ["E101"], "absatz_ids": ["P25"]},
       {"id": "F28", "name": "Lichtsignale abgeben", "ausgefuehrt_von": ["E102"], "absatz_ids": ["P25"]},
       {"id": "F29", "name": "Fahrersicht sicherstellen", "ausgefuehrt_von": ["E103"], "absatz_ids": ["P25"]},
-      {"id": "F30", "name": "Betriebstemperatur regeln", "ausgefuehrt_von": ["E108"], "absatz_ids": ["P26", "P27"]},
+      {"id": "F30", "name": "Betriebstemperatur regeln", "ausgefuehrt_von": ["E108", "E112"], "absatz_ids": ["P8", "P26", "P27"]},
       {"id": "F31", "name": "Innenraum klimatisieren", "ausgefuehrt_von": ["E114"], "absatz_ids": ["P27"]},
       {"id": "F32", "name": "Hydraulische Leistung bereitstellen", "ausgefuehrt_von": ["E118"], "absatz_ids": ["P28"]},
       {"id": "F33", "name": "Druckluft bereitstellen", "ausgefuehrt_von": ["E123"], "absatz_ids": ["P28"]}
@@ -756,7 +756,8 @@
       {"id": "S32", "von": "E122", "nach": "E116", "art": "mechanisch", "medium": "Drehmoment", "absatz_ids": ["P27", "P28"], "schnittstelle": "Klimakompressorantrieb"},
       {"id": "S33", "von": "E41", "nach": "E39", "art": "hydraulisch", "medium": "Bremsdruck", "absatz_ids": ["P12"]},
       {"id": "S34", "von": "E79", "nach": "E100", "art": "elektrisch", "medium": "Niederspannung", "absatz_ids": ["P19", "P25"], "schnittstelle": "Lichtstromkreise"},
-      {"id": "S35", "von": "E115", "nach": "E43", "art": "thermisch", "medium": "Klimatisierte Luft", "absatz_ids": ["P27"], "schnittstelle": "Kabinenluftführung"}
+      {"id": "S35", "von": "E115", "nach": "E43", "art": "thermisch", "medium": "Klimatisierte Luft", "absatz_ids": ["P27"], "schnittstelle": "Kabinenluftführung"},
+      {"id": "S36", "von": "E112", "nach": "E108", "art": "mechanisch", "medium": "Drehmoment für den Kühlerventilator", "absatz_ids": ["P8", "P26", "P31"], "schnittstelle": "Lüfterantrieb"}
     ],
     "entfallene_kategorien": [],
     "varianten": [

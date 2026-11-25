@@ -230,7 +230,7 @@
         },
         {
           "absatz_id": "P8",
-          "text": "Das Energieversorgungssystem speichert die Antriebsenergie und speist die Bordnetze. In der Kraftstoffversorgung des Dieselfahrzeugs fördert die Kraftstoffanlage Kraftstoff aus dem Kraftstofftank; der Generator lädt Starterbatterie und die Bordnetzbatterie des Ausbaus. Beim batterieelektrischen Fahrzeug bilden Traktionsbatterie, Hochvolt-Verteilung, Ladeeinrichtung und Gleichspannungswandler das Hochvolt-Energiesystem. Die Traktionsbatterie muss dann Fahrt und Standzeit am Einsatzort gemeinsam decken, und ihre Größe konkurriert mit der Nutzlast.",
+          "text": "Das Energieversorgungssystem speichert die Antriebsenergie und speist die Bordnetze. In der Kraftstoffversorgung des Dieselfahrzeugs fördert die Kraftstoffanlage Kraftstoff aus dem Kraftstofftank; der Generator lädt Starterbatterie und die Bordnetzbatterie des Ausbaus. Für Wechselspannung im Stand ohne Landstrom kann ein Zusatzgenerator hinzukommen, der das Wechselspannungsnetz des Ausbaus speist. Beim batterieelektrischen Fahrzeug bilden Traktionsbatterie, Hochvolt-Verteilung, Ladeeinrichtung und Gleichspannungswandler das Hochvolt-Energiesystem. Die Traktionsbatterie muss dann Fahrt und Standzeit am Einsatzort gemeinsam decken, und ihre Größe konkurriert mit der Nutzlast.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -238,6 +238,7 @@
               "P7 (Dauerlast des Ausbaus auch im Stand)",
               "P16 (möglichst ununterbrochene Stromversorgung)",
               "P6 (batterieelektrischer Antriebspfad)",
+              "P26 (Zusatzgenerator als bordeigene Wechselspannungsquelle)",
               "Funktionsprinzip: Ohne Verbrennungsmotor fehlt der Antrieb des Generators; jede Mehrmasse geht bei fester Gesamtmasse von der Nutzlast ab.",
               "Annahme ohne Quelle zur Bauweise batterieelektrischer Krankenwagen."
             ],
@@ -611,7 +612,7 @@
       "absaetze": [
         {
           "absatz_id": "P26",
-          "text": "Die Neben- und Versorgungssysteme stellen Hilfsenergien bereit. Der Nebenaggregatetrieb des Verbrennungsmotors treibt Generator und Klimakompressor. Für Wechselspannung ohne Landstrom nennt die US-Spezifikation tragbare, hydraulisch, riemen- oder hilfsmotorgetriebene Generatoren sowie einen aus dem Niedervoltnetz gespeisten Wechselrichter; im Modell sind dies Zusatzgenerator und Bordwechselrichter. Beide speisen das Wechselspannungsnetz und belasten Nebenaggregatetrieb oder Bordnetzbatterie.",
+          "text": "Die Neben- und Versorgungssysteme stellen Hilfsenergien bereit. Der Nebenaggregatetrieb des Verbrennungsmotors treibt Generator und Klimakompressor. Für Wechselspannung ohne Landstrom nennt die US-Spezifikation tragbare, hydraulisch, riemen- oder hilfsmotorgetriebene Generatoren sowie einen aus dem Niedervoltnetz gespeisten Wechselrichter; im Modell sind dies der Zusatzgenerator, der als Energiequelle zum Energieversorgungssystem gehört, und der Bordwechselrichter. Beide speisen das Wechselspannungsnetz und belasten Nebenaggregatetrieb oder Bordnetzbatterie.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -620,7 +621,7 @@
               "P16 (Wechselspannungsnetz, Landstromeinspeisung)",
               "Funktionsprinzip: Ein Generator braucht mechanischen Antrieb, ein Wechselrichter eine Gleichspannungsquelle."
             ],
-            "schluss": "Nebenaggregatetrieb, Zusatzgenerator und Bordwechselrichter bilden die Hilfsenergieversorgung mit Schnittstellen zu Antrieb, Energieversorgung und Aufbaubordnetz."
+            "schluss": "Nebenaggregatetrieb und Bordwechselrichter bilden mit dem Zusatzgenerator des Energieversorgungssystems die Hilfsenergieversorgung mit Schnittstellen zu Antrieb, Energieversorgung und Aufbaubordnetz."
           },
           "sicherheit": "mittel",
           "aussagetyp": "loesung",
@@ -1080,6 +1081,18 @@
       {
         "id": "E34",
         "name": "Generator",
+        "typ": "komponente",
+        "eltern_id": "E23",
+        "absatz_ids": [
+          "P8",
+          "P26",
+          "P29",
+          "P30"
+        ]
+      },
+      {
+        "id": "E124",
+        "name": "Zusatzgenerator",
         "typ": "komponente",
         "eltern_id": "E23",
         "absatz_ids": [
@@ -2010,17 +2023,6 @@
         "eltern_id": "E122",
         "absatz_ids": [
           "P26",
-          "P30"
-        ]
-      },
-      {
-        "id": "E124",
-        "name": "Zusatzgenerator",
-        "typ": "komponente",
-        "eltern_id": "E122",
-        "absatz_ids": [
-          "P26",
-          "P29",
           "P30"
         ]
       },
@@ -3485,6 +3487,7 @@
         "frage": "Ist am Einsatzort ein laufender Zusatzgenerator zulässig, oder müssen Geräusch und Abgas dort vermieden werden?",
         "element_ids": [
           "E122",
+          "E23",
           "E124"
         ],
         "anlass": "betrieb",
@@ -3801,6 +3804,7 @@
         "id": "R15",
         "element_ids": [
           "E122",
+          "E23",
           "E124",
           "E125"
         ],

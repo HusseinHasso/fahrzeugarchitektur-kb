@@ -117,7 +117,7 @@
         },
         {
           "absatz_id": "P2",
-          "text": "Architekturell ist das Müllfahrzeug ein Gesamtsystem aus Basisfahrzeug und Arbeitsaufbau, das im Sammelbetrieb abwechselnd fährt und arbeitet. Seine Systeme sind über mechanische, hydraulische, pneumatische, elektrische, thermische und informationstechnische Schnittstellen gekoppelt; nach außen grenzen es Abfallbehälter, Entladestelle, Lade- oder Tankinfrastruktur und die mitarbeitende Besatzung ab. Für eine Dekomposition, etwa in SysML, wird es in Hauptsysteme und diese in Subsysteme und Komponenten zerlegt.",
+          "text": "Architekturell ist das Müllfahrzeug ein Gesamtsystem aus Basisfahrzeug und Arbeitsaufbau, das im Sammelbetrieb abwechselnd fährt und arbeitet. Mechanische, hydraulische, pneumatische, elektrische, thermische und informationstechnische Schnittstellen koppeln seine Systeme; nach außen grenzen es Abfallbehälter, Entladestelle, Lade- oder Tankinfrastruktur und Besatzung ab. Für die Dekomposition, etwa in SysML, wird es in Hauptsysteme, Subsysteme und Komponenten zerlegt.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -141,7 +141,7 @@
       "absaetze": [
         {
           "absatz_id": "P3",
-          "text": "Fahrzeugstruktur und Fahrwerk tragen die Fahrzeuglasten. Die Tragstruktur ist der Rahmen des Lkw-Fahrgestells, der Fahrerhaus, Antrieb, Energiespeicher und Aufbau aufnimmt. Das Fahrwerk umfasst jede Achse mit Federung sowie Räder und Reifen, für enge Wohnstraßen auch eine gelenkte Nachlaufachse. Weil sich der Laderaum während der Tour füllt und der Lifter am Heck oder die Gabel eines Frontladers vor dem Fahrerhaus Lasten aufnimmt, ändert sich die Achslastverteilung laufend; Achsanordnung und Federung werden darauf abgestimmt, eine Luftfederung bezieht Druckluft aus den Neben- und Versorgungssystemen.",
+          "text": "Fahrzeugstruktur und Fahrwerk tragen die Fahrzeuglasten. Die Tragstruktur umfasst den Rahmen des Lkw-Fahrgestells, der Fahrerhaus, Antrieb, Energiespeicher und Aufbau aufnimmt, und die Heckklappe als hinteren Abschluss des Laderaums. Das Fahrwerk umfasst jede Achse mit Federung sowie Räder und Reifen, für enge Wohnstraßen auch eine gelenkte Nachlaufachse. Weil sich der Laderaum während der Tour füllt und Lifter oder Frontladergabel Lasten aufnehmen, ändert sich die Achslastverteilung laufend; Achsanordnung und Federung werden darauf abgestimmt, eine Luftfederung bezieht Druckluft aus den Neben- und Versorgungssystemen.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -149,9 +149,10 @@
               "P1: Aufbau auf dem Fahrgestell eines Lastkraftwagens",
               "Q1: Abschnitt Müllfahrzeuge mit Frontlader (Container werden über das Fahrerhaus gehoben)",
               "Q9: Arbeitspaket 2, S. 27 (Hinterachslenkung)",
+              "P12: Pressschnecke an der Heckklappe; Zuordnungsliste der Glossarausgabe: Heckklappe gehört zur Fahrzeugstruktur",
               "Lastpfad: jede am Rahmen befestigte Masse stützt sich über Federung, Achse und Räder auf der Fahrbahn ab; wachsende Zuladung und Hublasten verschieben die Achslasten"
             ],
-            "schluss": "Das Hauptsystem gliedert sich in Tragstruktur und Fahrwerk; Achsanordnung und Federung folgen der im Betrieb wechselnden Beladung."
+            "schluss": "Das Hauptsystem gliedert sich in Tragstruktur mit Rahmen und Heckklappe sowie Fahrwerk; Achsanordnung und Federung folgen der im Betrieb wechselnden Beladung."
           },
           "sicherheit": "mittel",
           "aussagetyp": "loesung",
@@ -177,7 +178,7 @@
         },
         {
           "absatz_id": "P5",
-          "text": "Das Antriebssystem erzeugt Antriebsleistung und überträgt Drehmoment. Beim konventionellen Fahrzeug wandelt der Verbrennungsmotor Kraftstoff in mechanische Leistung, die Abgasnachbehandlung reinigt das Abgas, und die Kraftübertragung führt die Leistung über Getriebe, Gelenkwelle und Differenzial zur Antriebsachse. Beim elektrischen Antrieb speist ein Wechselrichter die Traktionsmaschine, die beim ständigen Anhalten im Sammelbetrieb Bremsenergie zurückgewinnt. Im seriellen Hybrid treibt der Verbrennungsmotor nur den Generator, im batterieelektrischen Fahrzeug entfällt er und mit ihm der Nebenabtrieb für den Aufbau.",
+          "text": "Das Antriebssystem erzeugt Antriebsleistung und überträgt Drehmoment. Beim konventionellen Fahrzeug wandelt der Verbrennungsmotor Kraftstoff in mechanische Leistung, die Abgasnachbehandlung reinigt das Abgas, und die Kraftübertragung führt die Leistung über Getriebe, Gelenkwelle und Differenzial zur Antriebsachse. Beim elektrischen Antrieb speist ein Wechselrichter die Traktionsmaschine, die beim häufigen Anhalten Bremsenergie zurückgewinnt. Im seriellen Hybrid treibt der Verbrennungsmotor nur den Generator, im batterieelektrischen Fahrzeug entfällt er und mit ihm der Nebenabtrieb für den Aufbau.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -202,7 +203,7 @@
       "absaetze": [
         {
           "absatz_id": "P6",
-          "text": "Das Energieversorgungssystem speichert die Energie für Fahrantrieb, Aufbau und Bordnetz. Die Kraftstoffanlage mit Kraftstofftank versorgt den Verbrennungsmotor. Das Hochvolt-Energiesystem umfasst je nach Antriebsart Traktionsbatterie und Ladeeinrichtung oder beim seriellen Hybrid Generator und SuperCaps-Speicher, dazu Hochvolt-Bordnetz, Gleichspannungswandler und einen Bremswiderstand, der überschüssige Bremsenergie bei vollem Speicher in Wärme wandelt. Beim batterieelektrischen Fahrzeug deckt die Traktionsbatterie auch die Arbeitsenergie von Schüttung und Verdichtung für die ganze Tour. Ein nachgerüsteter elektrischer Aufbauantrieb nutzt eine eigene Aufbaubatterie. Die Niedervoltversorgung besteht aus Bordnetzbatterie und Lichtmaschine; ohne Verbrennungsmotor lädt der Gleichspannungswandler die Bordnetzbatterie.",
+          "text": "Das Energieversorgungssystem speichert die Energie für Fahrantrieb, Aufbau und Bordnetz. Die Kraftstoffanlage mit Kraftstofftank versorgt den Verbrennungsmotor. Das Hochvolt-Energiesystem umfasst je nach Antriebsart Traktionsbatterie und Ladeeinrichtung oder beim seriellen Hybrid Generator und SuperCaps-Speicher, dazu Hochvolt-Bordnetz, Gleichspannungswandler und einen Bremswiderstand, der überschüssige Bremsenergie in Wärme wandelt. Beim batterieelektrischen Fahrzeug deckt die Traktionsbatterie auch die Arbeitsenergie des Aufbaus für die ganze Tour. Ein nachgerüsteter elektrischer Aufbauantrieb nutzt eine eigene Aufbaubatterie. Die Niedervoltversorgung besteht aus Bordnetzbatterie und Lichtmaschine; ohne Verbrennungsmotor lädt der Gleichspannungswandler die Bordnetzbatterie.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -239,7 +240,7 @@
         },
         {
           "absatz_id": "P8",
-          "text": "Das Lenksystem lenkt das Fahrzeug und hilft beim Manövrieren in Wendeanlagen. Die Lenkbetätigung umfasst Lenkrad und Lenksäule, die Lenkübertragung Lenkgetriebe, Lenkunterstützung und gegebenenfalls eine Nachlaufachslenkung. Weil oft mit Schrittgeschwindigkeit rangiert wird, muss die Lenkunterstützung auch ohne laufenden Verbrennungsmotor wirken und wird dann elektrisch aus dem Hochvolt-Bordnetz angetrieben. Ob Links- oder Rechtslenker, folgt aus dem Ladesystem und verschiebt Bedienplatz, Spiegel und Kamerablickfelder.",
+          "text": "Das Lenksystem lenkt das Fahrzeug und hilft beim Manövrieren in Wendeanlagen. Die Lenkbetätigung umfasst Lenkrad und Lenksäule, die Lenkübertragung Lenkgetriebe, Lenkunterstützung und gegebenenfalls eine Nachlaufachslenkung. Die Lenkunterstützung muss beim Rangieren auch ohne laufenden Verbrennungsmotor wirken und wird dann elektrisch aus dem Hochvolt-Bordnetz angetrieben. Ob Links- oder Rechtslenker, folgt aus dem Ladesystem und verschiebt Bedienplatz, Spiegel und Kamerablickfelder.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -274,7 +275,7 @@
         },
         {
           "absatz_id": "P10",
-          "text": "Das Bremssystem verzögert das Fahrzeug und hält es fest. Die Bremsanlage umfasst die druckluftbetätigte Betriebsbremse, die Feststellbremse und eine Dauerbremse; die Bremsregelung mit Antiblockiersystem und Stabilitätsregelung koordiniert die Radbremsen. Weil das Fahrzeug an jeder Ladestelle hält, während Lader am Heck arbeiten, muss es dort sicher festgehalten werden. Bei elektrischem Antrieb übernimmt die Traktionsmaschine einen Teil der Verzögerung; beim Rückwärtsfahren greift die Umfeldsensorik über die Bremsregelung ein.",
+          "text": "Das Bremssystem verzögert das Fahrzeug und hält es fest. Die Bremsanlage umfasst die druckluftbetätigte Betriebsbremse, die Feststellbremse und eine Dauerbremse; die Bremsregelung mit Antiblockiersystem und Stabilitätsregelung koordiniert die Radbremsen. An jeder Ladestelle muss es sicher stehen, während Lader am Heck arbeiten. Bei elektrischem Antrieb übernimmt die Traktionsmaschine einen Teil der Verzögerung; beim Rückwärtsfahren greift die Umfeldsensorik über die Bremsregelung ein.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -299,7 +300,7 @@
       "absaetze": [
         {
           "absatz_id": "P11",
-          "text": "Das Fahrerhaus ist Arbeitsplatz von Fahrer und Ladern. Die Kabine umfasst Sitze und Rückhaltesystem für die Besatzung; für häufiges Ein- und Aussteigen kommt ein niedriges Fahrerhaus mit tiefem Einstieg in Frage, sonst das Fahrerhaus des Serien-Lkw. Der Bedienplatz umfasst Bedienelemente für Fahrzeug und Aufbau, deren Stellteile gegen unbeabsichtigtes Betätigen gesichert sind, und Anzeigeelemente für Kamerabilder, Aufbauzustand und Warnungen. Bei Front- und Seitenladern bedient der Fahrer das Ladesystem allein von hier.",
+          "text": "Das Fahrerhaus ist Arbeitsplatz von Fahrer und Ladern. Die Kabine umfasst Sitze und Rückhaltesystem; für häufiges Ein- und Aussteigen kommt ein Fahrerhaus mit tiefem Einstieg in Frage, sonst das des Serien-Lkw. Der Bedienplatz umfasst gegen unbeabsichtigtes Betätigen gesicherte Bedienelemente für Fahrzeug und Aufbau sowie Anzeigeelemente für Kamerabilder, Aufbauzustand und Warnungen. Bei Front- und Seitenladern bedient der Fahrer das Ladesystem allein von hier.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -347,7 +348,7 @@
         },
         {
           "absatz_id": "P14",
-          "text": "Das Hauptsystem Aufbau und Ladung nimmt den Abfall auf, verdichtet ihn und gibt ihn an der Entladestelle ab. Die Schüttung umfasst Lifter mit Behälteraufnahme, Sammelwanne, bei Front- und Seitenladern einen Ladearm, sowie den Heckbedienstand. Die Verdichtungseinrichtung ist eine Pressplatte oder eine Drehtrommel mit Pressschnecke, in der Verdichtung und Laderaum zusammenfallen. Der Laderaum umfasst Sammelbehälter, Gegenschild und Heckklappe, ergänzt um Wiegeeinrichtung, Trittbretter mit Haltegriffen und einen Löschwasseranschluss gegen Brände durch Akkus im Abfall. Alle Bewegungen beziehen Leistung aus der Hydraulikversorgung und werden von der Aufbausteuerung geführt.",
+          "text": "Aufbau und Ladung nehmen den Abfall auf, verdichten ihn und geben ihn an der Entladestelle ab. Die Schüttung umfasst Lifter mit Behälteraufnahme, Sammelwanne, bei Front- und Seitenladern einen Ladearm, sowie den Heckbedienstand. Die Verdichtungseinrichtung ist eine Pressplatte oder eine Drehtrommel mit Pressschnecke, in der Verdichtung und Laderaum zusammenfallen. Der Laderaum umfasst Sammelbehälter und Gegenschild, dazu Wiegeeinrichtung, Trittbretter mit Haltegriffen und einen Löschwasseranschluss gegen Akkubrände im Abfall. Alle Bewegungen speist die Hydraulikversorgung, die Aufbausteuerung führt sie.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -373,7 +374,7 @@
       "absaetze": [
         {
           "absatz_id": "P15",
-          "text": "Elektrik und Elektronik verteilen elektrische Energie und vernetzen die Steuergeräte von Fahrgestell und Aufbau. Das Niedervolt-Bordnetz aus Leitungssatz, Stromverteiler und Sicherungen versorgt Leuchten, Kameras, Steuergeräte und Ventile der Aufbauhydraulik. Die Vernetzung über Fahrzeugbus und Gateway koppelt Fahrgestell und Aufbau, die oft von verschiedenen Herstellern stammen; darüber laufen Geschwindigkeit, Rückwärtsgang, Trittbrettstatus und Freigaben für den Nebenabtrieb. Bauteile im Spritzwasser der Räder brauchen Korrosions- und Feuchteschutz.",
+          "text": "Elektrik und Elektronik verteilen elektrische Energie und vernetzen die Steuergeräte von Fahrgestell und Aufbau. Das Niedervolt-Bordnetz aus Leitungssatz, Stromverteiler und Sicherungen versorgt Leuchten, Kameras, Steuergeräte und Ventile der Aufbauhydraulik. Die Vernetzung über Fahrzeugbus und Gateway koppelt Fahrgestell und Aufbau, oft verschiedener Hersteller; darüber laufen Geschwindigkeit, Rückwärtsgang, Trittbrettstatus und Freigaben für den Nebenabtrieb. Bauteile im Spritzwasser der Räder brauchen Korrosions- und Feuchteschutz.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -409,7 +410,7 @@
         },
         {
           "absatz_id": "P17",
-          "text": "Die Fahrzeugsteuerung und Information koordiniert Fahr- und Arbeitsbetrieb. In der Fahrzeug- und Aufbausteuerung führt das Fahrzeugmanagement Antrieb, Energie und Bremse; die Aufbausteuerung, etwa eine speicherprogrammierbare Steuerung, führt Schüttung, Verdichtung und Entleerung und verriegelt sie mit Fahrzuständen, etwa gegen Rückwärtsfahrt bei besetztem Trittbrett. Die Betriebsdatenerfassung umfasst Diagnose und eine Telematikeinheit, die Wiege-, Touren- und Zustandsdaten an den Betriebshof überträgt.",
+          "text": "Die Fahrzeugsteuerung und Information koordiniert Fahr- und Arbeitsbetrieb. In der Fahrzeug- und Aufbausteuerung führt das Fahrzeugmanagement Antrieb, Energie und Bremse; die Aufbausteuerung führt Schüttung, Verdichtung und Entleerung und verriegelt sie mit Fahrzuständen, etwa gegen Rückwärtsfahrt bei besetztem Trittbrett. Die Betriebsdatenerfassung umfasst Diagnose und eine Telematikeinheit, die Wiege-, Touren- und Zustandsdaten an den Betriebshof überträgt.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -454,7 +455,7 @@
         },
         {
           "absatz_id": "P20",
-          "text": "Das Hauptsystem Fahrerassistenz und Sicherheit schützt Besatzung und Passanten. Die Rückraumüberwachung umfasst Rückfahrkamera, Umfeldsensorik und Rückfahrwarneinrichtung; Bilder und Warnungen erscheinen auf den Anzeigeelementen, die Umfeldsensorik kann über die Bremsregelung eingreifen. Die Besatzungssicherung umfasst die Trittbrettüberwachung, die bei besetztem Standplatz die Rückwärtsfahrt sperrt und die Geschwindigkeit begrenzt, die Signalanlage zwischen Ladern und Fahrer und eine Not-Halt-Einrichtung, die Schüttung und Verdichtung stillsetzt.",
+          "text": "Fahrerassistenz und Sicherheit schützen Besatzung und Passanten. Die Rückraumüberwachung umfasst Rückfahrkamera, Umfeldsensorik und Rückfahrwarneinrichtung; Bilder und Warnungen erscheinen auf den Anzeigeelementen, die Umfeldsensorik kann über die Bremsregelung eingreifen. Die Besatzungssicherung umfasst die Trittbrettüberwachung, die bei besetztem Standplatz die Rückwärtsfahrt sperrt und die Geschwindigkeit begrenzt, die Signalanlage zwischen Ladern und Fahrer und eine Not-Halt-Einrichtung, die Schüttung und Verdichtung stillsetzt.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -605,7 +606,7 @@
       "absaetze": [
         {
           "absatz_id": "P28",
-          "text": "In SysML bildet der Block Müllfahrzeug das Gesamtsystem mit den Hauptsystemen als Bestandteilen. Dekompositionspfade sind etwa Aufbau und Ladung → Schüttung → Lifter, Aufbau und Ladung → Verdichtungseinrichtung → Pressplatte, Neben- und Versorgungssysteme → Hydraulikversorgung → Hydraulikpumpe und Energieversorgungssystem → Hochvolt-Energiesystem → Traktionsbatterie. Hecklader, Frontlader und Seitenlader lassen sich als Spezialisierungen eines Aufbaublocks modellieren. Ports bilden Hydraulik-, Nebenabtriebs-, Hochvolt-, Druckluft-, Bus- und Behälterschnittstellen ab; Block Definition Diagrams zeigen die Zerlegung, Internal Block Diagrams die Flüsse, Aktivitäts- und Zustandsdiagramme den Sammelzyklus aus Halten, Schütten, Verdichten und Weiterfahren.",
+          "text": "In SysML bildet der Block Müllfahrzeug das Gesamtsystem mit den Hauptsystemen als Bestandteilen. Dekompositionspfade sind etwa Aufbau und Ladung → Schüttung → Lifter, Aufbau und Ladung → Verdichtungseinrichtung → Pressplatte, Neben- und Versorgungssysteme → Hydraulikversorgung → Hydraulikpumpe und Energieversorgungssystem → Hochvolt-Energiesystem → Traktionsbatterie. Hecklader, Frontlader und Seitenlader sind Spezialisierungen eines Aufbaublocks. Ports bilden Hydraulik-, Nebenabtriebs-, Hochvolt-, Druckluft-, Bus- und Behälterschnittstellen ab; Block Definition Diagrams zeigen die Zerlegung, Internal Block Diagrams die Flüsse, Zustandsdiagramme den Sammelzyklus aus Halten, Schütten, Verdichten und Weiterfahren.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -630,7 +631,7 @@
       "absaetze": [
         {
           "absatz_id": "P29",
-          "text": "Kraftstoff fließt vom Kraftstofftank zum Verbrennungsmotor; Hochvoltstrom fließt vom Generator und SuperCaps-Speicher ins Hochvolt-Bordnetz und von dort zu Wechselrichter, Lenkunterstützung und Kompressor für Druckluft, Ladestrom von der Ladeeinrichtung zur Traktionsbatterie. Mechanische Leistung fließt über die Kraftübertragung zur Achse und über Nebenabtrieb oder Aufbaumotor zur Hydraulikpumpe, deren Drucköl Lifter und Verdichtungseinrichtung bewegt. Druckluft fließt über die Druckluftbehälter zur Betriebsbremse, Abfall von der Sammelwanne über die Verdichtungseinrichtung in den Sammelbehälter. Daten laufen über das Gateway zwischen Fahrzeugmanagement und Aufbausteuerung und von Trittbrettüberwachung, Heckbedienstand und Rückfahrkamera zu Aufbausteuerung und Anzeigeelementen; Abwärme gelangt in Kühlkreislauf und Batterietemperierung.",
+          "text": "Kraftstoff fließt vom Kraftstofftank zum Verbrennungsmotor; Hochvoltstrom von Generator und SuperCaps-Speicher über das Hochvolt-Bordnetz zu Wechselrichter, Lenkunterstützung und Kompressor für Druckluft, Ladestrom von der Ladeeinrichtung zur Traktionsbatterie. Mechanische Leistung fließt über die Kraftübertragung zur Achse und über Nebenabtrieb oder Aufbaumotor zur Hydraulikpumpe, deren Drucköl Lifter und Verdichtungseinrichtung bewegt. Druckluft fließt über die Druckluftbehälter zur Betriebsbremse, Abfall von der Sammelwanne über die Verdichtungseinrichtung in den Sammelbehälter. Daten laufen über das Gateway zwischen Fahrzeugmanagement und Aufbausteuerung und von Trittbrettüberwachung, Heckbedienstand und Rückfahrkamera zu Aufbausteuerung und Anzeigeelementen; Abwärme gelangt in Kühlkreislauf und Batterietemperierung.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -649,7 +650,7 @@
       "absaetze": [
         {
           "absatz_id": "P30",
-          "text": "Rahmen, Achse, Federung sowie Räder und Reifen tragen die Fahrzeuglasten. Kraftstofftank, Traktionsbatterie, SuperCaps-Speicher, Aufbaubatterie, Bordnetzbatterie und Druckluftbehälter speichern Energie; die Kraftstoffanlage fördert Treibstoff, die Ladeeinrichtung lädt die Traktionsbatterie, Hochvolt-Bordnetz, Gleichspannungswandler und Niedervolt-Bordnetz verteilen elektrische Energie. Verbrennungsmotor, Wechselrichter und Traktionsmaschine erzeugen Antriebsleistung, die Kraftübertragung überträgt Drehmoment, Antriebssystem sowie Räder und Reifen bewegen das Fahrzeug fort, Traktionsmaschine und Energiespeicher gewinnen Bremsenergie zurück. Lenkbetätigung und Lenkübertragung lenken, Nachlaufachslenkung und Rückraumüberwachung helfen beim Manövrieren; Betriebsbremse, Dauerbremse, Bremsregelung und Bremswiderstand verzögern, die Feststellbremse hält fest. Druckluftanlage und Hydraulikversorgung stellen Druckluft und hydraulische Leistung bereit, Nebenabtrieb und elektrischer Aufbauantrieb versorgen die Arbeitsgeräte. Bedienelemente und Heckbedienstand erfassen Fahrereingaben, Anzeigeelemente zeigen Fahrerinformationen an, Sitze und Rückhaltesystem schützen die Insassen. Schüttung und Laderaum nehmen die Ladung auf, Lifter und Ladearm handhaben Behälter, die Verdichtungseinrichtung verdichtet den Abfall, Gegenschild, Drehtrommel und Heckklappe entleeren den Laderaum. Fahrzeugbus, Gateway und Telematikeinheit übertragen Daten; Fahrzeugmanagement, Aufbausteuerung, Diagnose, Wiegeeinrichtung, Trittbrettüberwachung und Not-Halt-Einrichtung überwachen den Fahrzeugzustand. Rückfahrkamera und Umfeldsensorik erfassen das Fahrzeugumfeld, Scheinwerfer und Arbeitsscheinwerfer leuchten die Umgebung aus, Signalleuchten und Warnmarkierung geben Lichtsignale ab, Rückfahrwarneinrichtung und Signalanlage geben akustische Signale ab, Außenspiegel und Scheibenwischer stellen die Fahrersicht sicher. Kühlkreislauf, Batterietemperierung und Hydraulikölkühler regeln die Betriebstemperatur, die Heiz- und Klimaanlage klimatisiert den Innenraum.",
+          "text": "Rahmen, Achse, Federung sowie Räder und Reifen tragen die Fahrzeuglasten. Kraftstofftank, Traktionsbatterie, SuperCaps-Speicher, Aufbaubatterie, Bordnetzbatterie und Druckluftbehälter speichern Energie; die Kraftstoffanlage fördert Treibstoff, die Ladeeinrichtung lädt die Traktionsbatterie, Hochvolt-Bordnetz, Gleichspannungswandler und Niedervolt-Bordnetz verteilen elektrische Energie. Verbrennungsmotor, Wechselrichter und Traktionsmaschine erzeugen Antriebsleistung, die Kraftübertragung überträgt Drehmoment, Antriebssystem sowie Räder und Reifen bewegen das Fahrzeug fort, Traktionsmaschine und Energiespeicher gewinnen Bremsenergie zurück. Lenkbetätigung und Lenkübertragung lenken, Nachlaufachslenkung und Rückraumüberwachung helfen beim Manövrieren; Betriebsbremse, Dauerbremse, Bremsregelung und Bremswiderstand verzögern, die Feststellbremse hält fest. Druckluftanlage und Hydraulikversorgung stellen Druckluft und hydraulische Leistung bereit, Nebenabtrieb und elektrischer Aufbauantrieb versorgen die Arbeitsgeräte. Bedienelemente und Heckbedienstand erfassen Fahrereingaben, Anzeigeelemente zeigen Fahrerinformationen an, Sitze und Rückhaltesystem schützen die Insassen. Schüttung und Laderaum nehmen die Ladung auf, Lifter und Ladearm handhaben Objekte wie die Abfallbehälter, die Verdichtungseinrichtung verdichtet den Abfall, Gegenschild, Drehtrommel und Heckklappe entleeren den Laderaum. Fahrzeugbus, Gateway und Telematikeinheit übertragen Daten; Fahrzeugmanagement, Aufbausteuerung, Diagnose, Wiegeeinrichtung, Trittbrettüberwachung und Not-Halt-Einrichtung überwachen den Fahrzeugzustand. Rückfahrkamera und Umfeldsensorik erfassen das Fahrzeugumfeld, Scheinwerfer und Arbeitsscheinwerfer leuchten die Umgebung aus, Signalleuchten und Warnmarkierung geben Lichtsignale ab, Rückfahrwarneinrichtung und Signalanlage geben akustische Signale ab, Außenspiegel und Scheibenwischer stellen die Fahrersicht sicher. Kühlkreislauf, Batterietemperierung und Hydraulikölkühler regeln die Betriebstemperatur, die Heiz- und Klimaanlage klimatisiert den Innenraum.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -670,6 +671,7 @@
       {"id": "E2", "name": "Fahrzeugstruktur und Fahrwerk", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P3", "P27"], "kategorie": "struktur_fahrwerk"},
       {"id": "E3", "name": "Tragstruktur", "typ": "subsystem", "eltern_id": "E2", "absatz_ids": ["P3"]},
       {"id": "E4", "name": "Rahmen", "typ": "komponente", "eltern_id": "E3", "absatz_ids": ["P3", "P30"]},
+      {"id": "E79", "name": "Heckklappe", "typ": "komponente", "eltern_id": "E3", "absatz_ids": ["P3", "P12", "P26", "P30"]},
       {"id": "E5", "name": "Fahrwerk", "typ": "subsystem", "eltern_id": "E2", "absatz_ids": ["P3"]},
       {"id": "E6", "name": "Achse", "typ": "komponente", "eltern_id": "E5", "absatz_ids": ["P3", "P29", "P30"]},
       {"id": "E7", "name": "Federung", "typ": "komponente", "eltern_id": "E5", "absatz_ids": ["P3", "P30"]},
@@ -742,8 +744,7 @@
       {"id": "E76", "name": "Laderaum", "typ": "subsystem", "eltern_id": "E65", "absatz_ids": ["P12", "P14", "P30"]},
       {"id": "E77", "name": "Sammelbehälter", "typ": "komponente", "eltern_id": "E76", "absatz_ids": ["P14", "P29"]},
       {"id": "E78", "name": "Gegenschild", "typ": "komponente", "eltern_id": "E76", "absatz_ids": ["P12", "P14", "P26", "P30"]},
-      {"id": "E79", "name": "Heckklappe", "typ": "komponente", "eltern_id": "E76", "absatz_ids": ["P12", "P14", "P26", "P30"]},
-      {"id": "E80", "name": "Wiegeeinrichtung", "typ": "komponente", "eltern_id": "E76", "absatz_ids": ["P14", "P30"]},
+            {"id": "E80", "name": "Wiegeeinrichtung", "typ": "komponente", "eltern_id": "E76", "absatz_ids": ["P14", "P30"]},
       {"id": "E81", "name": "Trittbretter mit Haltegriffen", "typ": "komponente", "eltern_id": "E76", "absatz_ids": ["P14"]},
       {"id": "E82", "name": "Löschwasseranschluss", "typ": "komponente", "eltern_id": "E76", "absatz_ids": ["P14"]},
 
@@ -1006,7 +1007,6 @@
     "Glossarvorschlag: Abfall verdichten (fahrzeugartspezifische Leistung der Verdichtungseinrichtung).",
     "Glossarvorschlag: Laderaum entleeren (fahrzeugartspezifische Leistung von Gegenschild, Drehtrommel und Heckklappe).",
     "Glossarvorschlag: Akustische Signale abgeben (Rückfahrwarneinrichtung und Signalanlage; kein Synonym zu Lichtsignale abgeben).",
-    "Abweichung von der Zuordnungsliste: Heckklappe steht unter Aufbau und Ladung statt unter Fahrzeugstruktur und Fahrwerk, weil sie beim Müllfahrzeug Teil des Laderaums und der Entleerung ist, nicht der Karosserie.",
     "Recherchebedarf: Volltexte EN 1501-1:2021, EN 1501-3:2021 und EN 1501-5:2021 (DIN Media) zu Trittbrett-, Schüttungs- und Steuerungsanforderungen, insbesondere Personenerkennung an automatischen Schüttungen (Suchbegriff: WISH INFO 26 automatic bin lifts).",
     "Recherchebedarf: Fahrzeugklasse, Achslasten und Gesamtmassen von Müllfahrzeugen (Suchbegriffe: Abfallsammelfahrzeug Fahrzeugklasse N3, StVZO Achslast Müllwagen).",
     "Recherchebedarf: Quelle zu Fahrerhausbauarten von Müllfahrzeugen mit Niedrigeinstieg (Suchbegriff: Niederflurfahrerhaus Abfallsammelfahrzeug).",

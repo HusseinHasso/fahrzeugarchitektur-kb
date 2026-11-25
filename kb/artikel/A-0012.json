@@ -3,7 +3,7 @@
   "artikel_id": "A-0012",
   "artikeltyp": "blatt",
   "titel": "Kleinbus",
-  "betrachtungsumfang": "Generische Referenzarchitektur des Kleinbusses als Personenkraftwagen auf Basis eines Kleintransporters mit Fenstern im Fond und bis zu neun Sitzplätzen einschließlich Fahrersitz in einem einzigen Innenraum; betrachtet werden Verbrennungsmotor, Hybrid-, Plug-in-Hybrid- und batterieelektrischer Antrieb. Ausgeschlossen sind Wasserstoff- und Brennstoffzellenantriebe, Kraftomnibusse und Minibusse mit mehr Sitzplätzen, Kastenwagen zur Güterbeförderung, Wohnmobilausbauten und kompakte Vans auf Pkw-Plattform.",
+  "betrachtungsumfang": "Generische Referenzarchitektur des Kleinbusses als Personenkraftwagen auf Basis eines Kleintransporters mit Fenstern im Fond und bis zu neun Sitzplätzen einschließlich Fahrersitz in einem einzigen Innenraum; betrachtet werden Verbrennungsmotor, Hybrid-, Plug-in-Hybrid- und batterieelektrischer Antrieb. Ausgeschlossen sind Wasserstoff- und Brennstoffzellenantriebe, Kraftomnibusse und Minibusse mit mehr Sitzplätzen, Kastenwagen zur Güterbeförderung, Wohnmobilausbauten und kompakte Vans auf Pkw-Plattform; Kleinbusse gleicher Größe auf einer Pkw-Plattform werden nur als Variante der Plattformherkunft mit ihren Abweichungen betrachtet.",
   "status": "in_arbeit",
   "quellenzugriff": "ja",
   "kindartikel_ids": [],
@@ -141,7 +141,7 @@
             },
             {
               "quellen_id": "Q3",
-              "fundstelle": "Teil A Nr. 2.1.5, 2.1.6, 3.5 und 3.8.1"
+              "fundstelle": "Allgemeine Bestimmungen Nr. 2.1.5 und 2.1.6; Teil A Nr. 3.5 und 3.8.1"
             },
             {
               "quellen_id": "Q4",
@@ -164,16 +164,18 @@
         },
         {
           "absatz_id": "P4",
-          "text": "Betrachtet wird damit der Kleinbus als Personenkraftwagen auf Transporterbasis mit einem einzigen Innenraum für Fahrer, bis zu acht Mitfahrende und Gepäck, angetrieben von Verbrennungsmotor, Hybrid-, Plug-in-Hybrid- oder batterieelektrischem Antrieb. Ausgeschlossen sind Wasserstoffantriebe, Minibusse und Kraftomnibusse, Kastenwagen, Wohnmobilausbauten und kompakte Vans. Die Hauptsysteme sind mechanisch, elektrisch, hydraulisch, pneumatisch, thermisch und informationstechnisch gekoppelt; die folgenden Abschnitte zerlegen sie in Subsysteme und Komponenten.",
+          "text": "Betrachtet wird damit der Kleinbus als Personenkraftwagen auf Transporterbasis mit einem einzigen Innenraum für Fahrer, bis zu acht Mitfahrende und Gepäck, angetrieben von Verbrennungsmotor, Hybrid-, Plug-in-Hybrid- oder batterieelektrischem Antrieb. Kleinbusse auf einer Pkw-Plattform gleicher Größe übernehmen Fahrwerk, Bremse und Elektronikarchitektur der Pkw-Plattform und weichen in diesen Hauptsystemen ab. Ausgeschlossen sind Wasserstoffantriebe, Minibusse und Kraftomnibusse, Kastenwagen, Wohnmobilausbauten und kompakte Vans. Die Hauptsysteme sind mechanisch, elektrisch, hydraulisch, pneumatisch, thermisch und informationstechnisch gekoppelt; die folgenden Abschnitte zerlegen sie in Subsysteme und Komponenten.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "P1",
               "P2",
-              "P3"
+              "P3",
+              "Q10 (Abschnitt „T7 Multivan (seit 2021)“: modularer Querbaukasten als Basis)",
+              "Die Basisplattform legt Fahrwerk, Bremse und Elektronikarchitektur fest"
             ],
-            "schluss": "Der Kleinbus wird als Personenkraftwagen auf Transporterbasis mit einem Innenraum abgegrenzt; Antriebsarten ohne Wasserstoff werden betrachtet."
+            "schluss": "Der Kleinbus wird als Personenkraftwagen auf Basis eines Kleintransporters mit einem Innenraum abgegrenzt; Kleinbusse auf Pkw-Plattform weichen in Fahrwerk, Bremse und Elektronikarchitektur ab; Antriebsarten ohne Wasserstoff werden betrachtet."
           },
           "sicherheit": "mittel",
           "aussagetyp": "modellannahme",
@@ -188,15 +190,17 @@
       "absaetze": [
         {
           "absatz_id": "P5",
-          "text": "Fahrzeugstruktur und Fahrwerk tragen die Fahrzeuglasten. Vom Kleintransporter übernimmt der Kleinbus die geschlossene Karosserie in Kastenform: Die Bodengruppe nimmt Antrieb, Energiespeicher, Sitzverankerungen und Achsen auf, die Fahrgastzelle mit Fensterflächen im Fond bildet den Insassenraum, die Crashstruktur in Vorderwagen und Bodengruppe baut Aufprallenergie ab. Die Schiebetür erschließt den Fond, die Heckklappe den Gepäckraum. Das Fahrwerk aus Vorderachse, Hinterachse, Federung sowie Rädern und Reifen muss zwischen leerem und voll besetztem Fahrzeug stark wechselnde Achslasten aufnehmen. Schnittstellen sind Radnabe, Sitzverankerung und Anhängevorrichtung.",
+          "text": "Fahrzeugstruktur und Fahrwerk tragen die Fahrzeuglasten. Vom Kleintransporter übernimmt der Kleinbus die geschlossene Karosserie in Kastenform: Bei selbsttragender Bauweise nimmt die Bodengruppe Antrieb, Energiespeicher, Sitzverankerungen und Achsen auf; schwere Transporterbaureihen können stattdessen einen Rahmen mit aufgesetzter Karosserie haben, der Achsen, Antrieb und Energiespeicher trägt. Die Fahrgastzelle mit Fensterflächen im Fond bildet den Insassenraum, die Crashstruktur in Vorderwagen und Bodengruppe baut Aufprallenergie ab. Die Schiebetür erschließt den Fond, die Heckklappe den Gepäckraum. Das Fahrwerk aus Vorderachse, Hinterachse, Radaufhängung, Federung sowie Rädern und Reifen muss zwischen leerem und voll besetztem Fahrzeug stark wechselnde Achslasten aufnehmen, je Rad dämpft ein Dämpfer die Aufbaubewegung. Hinten kommen Starrachse oder Einzelradaufhängung, als Federung Blatt-, Schrauben- oder Luftfederung vor; eine Niveauregulierung gleicht die Beladung aus. Schnittstellen sind Radnabe, Sitzverankerung und Anhängevorrichtung.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "P1",
-              "Ein Fahrzeug für Personen und Gepäck mit hoher Zuladung braucht eine tragende Bodengruppe und ein lastvariables Fahrwerk"
+              "Ein Fahrzeug für Personen und Gepäck mit hoher Zuladung braucht eine tragende Bodengruppe und ein lastvariables Fahrwerk",
+              "Schwere Nutzfahrzeugbauweisen tragen Lasten über einen Rahmen getrennt von der Karosserie",
+              "Achsbauweise und Federungsbauart bestimmen Tragfähigkeit, Bauraum und Beladungsausgleich"
             ],
-            "schluss": "Karosserie und Fahrwerk folgen der Transporterbasis und sind für stark wechselnde Beladung ausgelegt."
+            "schluss": "Karosserie und Fahrwerk folgen der Transporterbasis, selbsttragend oder bei schwerer Auslegung mit Rahmen, und sind über Radaufhängung, Federung und Dämpfer für stark wechselnde Beladung ausgelegt."
           },
           "sicherheit": "mittel",
           "aussagetyp": "loesung",
@@ -255,16 +259,17 @@
         },
         {
           "absatz_id": "P9",
-          "text": "Die Antriebsanordnung ändert damit die Struktur: Frontantrieb gibt eine ebene Bodengruppe für Sitzschienen und Gepäckraum frei, Hinterrad- und Allradantrieb brauchen Gelenkwelle und angetriebene Hinterachse, nutzen aber die bei Beladung und Anhängebetrieb steigende Hinterachslast für die Traktion. Beim batterieelektrischen Antrieb entfallen Verbrennungsmotor und Kraftstoffanlage, die Traktionsbatterie beansprucht Bauraum in der Bodengruppe.",
+          "text": "Die Antriebsanordnung ändert damit die Struktur: Frontantrieb gibt eine ebene Bodengruppe für Sitzschienen und Gepäckraum frei. Beim Verbrennungsmotor mit Frontmotor brauchen Hinterrad- und Allradantrieb Gelenkwelle und angetriebene Hinterachse; bei elektrifiziertem Antrieb kann je Achse eine eigene Traktionsmaschine mit Achsgetriebe antreiben, dann entfällt die Gelenkwelle, und Allradantrieb entsteht durch eine zweite Traktionsmaschine. Angetriebene Hinterräder nutzen die bei Beladung und Anhängebetrieb steigende Hinterachslast für die Traktion. Beim batterieelektrischen Antrieb entfallen Verbrennungsmotor und Kraftstoffanlage, die Traktionsbatterie beansprucht Bauraum in der Bodengruppe.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "P8",
               "Eine Gelenkwelle braucht Bauraum unter dem Boden",
-              "Die übertragbare Antriebskraft eines Rades wächst mit seiner Radlast"
+              "Die übertragbare Antriebskraft eines Rades wächst mit seiner Radlast",
+              "Eine Traktionsmaschine lässt sich wegen ihrer kompakten Bauform direkt an der angetriebenen Achse anordnen"
             ],
-            "schluss": "Frontantrieb begünstigt die Bodengruppe, Hinterrad- und Allradantrieb die Traktion bei Beladung; die Antriebsart bestimmt den Bauraumbedarf der Energiespeicher."
+            "schluss": "Frontantrieb begünstigt die Bodengruppe, Hinterrad- und Allradantrieb die Traktion bei Beladung; die Gelenkwelle ist nur beim zentralen Antriebsaggregat nötig, elektrische Achsantriebe kommen ohne sie aus; die Antriebsart bestimmt den Bauraumbedarf der Energiespeicher."
           },
           "sicherheit": "mittel",
           "aussagetyp": "variante",
@@ -303,7 +308,7 @@
       "absaetze": [
         {
           "absatz_id": "P11",
-          "text": "Das Lenksystem setzt die Fahrereingabe in einen Lenkeinschlag der Vorderräder um. Die Lenkbetätigung aus Lenkrad und Lenksäule leitet das Moment an das Lenkgetriebe, das über Spurstangen auf die Vorderachse wirkt. Die Lenkunterstützung ist hydraulisch, elektrohydraulisch oder elektrisch; die elektrische erlaubt dem Spurhalteassistenten einen direkten Lenkeingriff, sonst bleibt nur einseitiges Bremsen. Schnittstellen bestehen zu Fahrgastraum, Bordnetz und Assistenz.",
+          "text": "Das Lenksystem setzt die Fahrereingabe in einen Lenkeinschlag der Vorderräder um. Die Lenkbetätigung aus Lenkrad und Lenksäule leitet das Moment an das Lenkgetriebe, das über Spurstangen auf die Vorderachse wirkt. Die Lenkunterstützung ist hydraulisch, elektrohydraulisch oder elektrisch. Ein Lenkeingriff des Spurhalteassistenten braucht einen elektrisch ansteuerbaren Aktor, bei elektrischer Lenkunterstützung deren Motor, sonst einen Zusatzaktor; ohne ihn bleibt nur der Eingriff über einseitiges Bremsen. Schnittstellen bestehen zu Fahrgastraum, Bordnetz und Assistenz.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -313,7 +318,7 @@
             ],
             "schluss": "Das Lenksystem besteht aus Lenkbetätigung, Lenkgetriebe und Lenkunterstützung; deren Bauart bestimmt die Eingriffsmöglichkeit der Assistenz."
           },
-          "sicherheit": "hoch",
+          "sicherheit": "mittel",
           "aussagetyp": "funktion",
           "herangezogene_artikel_ids": []
         }
@@ -326,16 +331,17 @@
       "absaetze": [
         {
           "absatz_id": "P12",
-          "text": "Das Bremssystem verzögert den Kleinbus, hält ihn fest und stabilisiert ihn. In der hydraulischen Betriebsbremse übertragen Bremskraftverstärker und Hauptbremszylinder die Pedalkraft auf die Radbremsen; die Feststellbremse wirkt mechanisch oder elektrisch auf die Hinterräder. Die Bremsregelung aus Antiblockiersystem und Fahrdynamikregelung regelt je Rad; sie ist wichtig, weil Masse und Schwerpunkt zwischen leerem und voll besetztem Kleinbus stark schwanken. Bei elektrifiziertem Antrieb koordiniert sie Reibbremse und Rückgewinnung, und der Notbremsassistent greift über sie ein. Fehlt der Unterdruck eines Ottomotors, liefert ihn eine Unterdruckpumpe.",
+          "text": "Das Bremssystem verzögert den Kleinbus, hält ihn fest und stabilisiert ihn. In der hydraulischen Betriebsbremse übertragen Bremskraftverstärker und Hauptbremszylinder die Pedalkraft auf die Radbremsen; die Feststellbremse wirkt mechanisch oder elektrisch auf die Hinterräder. Die Bremsregelung aus Antiblockiersystem und Fahrdynamikregelung regelt je Rad; sie ist wichtig, weil Masse und Schwerpunkt zwischen leerem und voll besetztem Kleinbus stark schwanken. Bei elektrifiziertem Antrieb koordiniert sie Reibbremse und Rückgewinnung, und der Notbremsassistent greift über sie ein. Der Bremskraftverstärker arbeitet mit Unterdruck aus dem Ottomotor oder einer Unterdruckpumpe oder elektromechanisch; elektromechanische oder integrierte elektrohydraulische Bremssysteme entkoppeln Pedal und Bremsdruck und erleichtern die Überlagerung von Reibbremse und Rückgewinnung.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "P5",
               "Ein pneumatischer Bremskraftverstärker braucht eine Unterdruckquelle",
-              "Rückgewinnung und Reibbremse müssen gemeinsam die Sollverzögerung ergeben"
+              "Rückgewinnung und Reibbremse müssen gemeinsam die Sollverzögerung ergeben",
+              "Ein elektromechanischer Verstärker braucht keine Unterdruckquelle"
             ],
-            "schluss": "Das Bremssystem gliedert sich in Betriebsbremse, Feststellbremse und Bremsregelung, die beladungsabhängig regelt und die Rückgewinnung koordiniert."
+            "schluss": "Das Bremssystem gliedert sich in Betriebsbremse, Feststellbremse und Bremsregelung, die beladungsabhängig regelt und die Rückgewinnung koordiniert; der Bremskraftverstärker arbeitet mit Unterdruck oder elektromechanisch."
           },
           "sicherheit": "mittel",
           "aussagetyp": "loesung",
@@ -375,14 +381,14 @@
             },
             {
               "quellen_id": "Q3",
-              "fundstelle": "Teil C Nr. 5.5 (SH Rollstuhlgerechtes Fahrzeug)"
+              "fundstelle": "Teil A Nr. 5.5 (SH Rollstuhlgerechtes Fahrzeug)"
             }
           ],
           "herangezogene_artikel_ids": []
         },
         {
           "absatz_id": "P15",
-          "text": "Für das Sitzkonzept stehen feste Sitzbänke, herausnehmbare oder verschiebbare Sitze auf Sitzschienen und drehbare Sitze zur Wahl; bewegliche Sitze verlangen im Sitz verankerte Gurte. Ein rollstuhlgerechter Ausbau ergänzt Rollstuhlstellplatz, Rückhaltesysteme und Rampe oder Hublift an Heck oder Schiebetür, oft mit abgesenktem Boden, und verringert die Zahl der Sitze.",
+          "text": "Für das Sitzkonzept stehen feste Sitzbänke, herausnehmbare oder verschiebbare Sitze auf Sitzschienen und drehbare Sitze zur Wahl; bewegliche Sitze verlangen im Sitz verankerte Gurte. Ein rollstuhlgerechter Ausbau ergänzt Rollstuhlstellplatz, Rückhaltesysteme und Rampe oder Hublift an Heck oder Schiebetür, gegebenenfalls mit abgesenktem Boden, und verringert die Zahl der Sitze.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -393,7 +399,7 @@
             ],
             "schluss": "Sitz- und Rollstuhlkonzept sind strukturändernde Varianten mit Folgen für Bodengruppe, Rückhaltesystem und Zugang."
           },
-          "sicherheit": "mittel",
+          "sicherheit": "gering",
           "aussagetyp": "variante",
           "herangezogene_artikel_ids": []
         }
@@ -470,7 +476,7 @@
       "absaetze": [
         {
           "absatz_id": "P19",
-          "text": "Für die EU-Typgenehmigung brauchen Kraftfahrzeuge einen intelligenten Geschwindigkeitsassistenten, eine Vorrichtung zum Einbau einer alkoholempfindlichen Wegfahrsperre, Warnsysteme bei Müdigkeit und nachlassender Konzentration des Fahrers, ein Notbremslicht, einen Rückfahrassistenten und eine nicht deaktivierbare ereignisbezogene Datenaufzeichnung. Fahrzeuge der Klassen M1 und N1 brauchen zusätzlich ein Notbremsassistenzsystem, das Hindernisse und bewegte Fahrzeuge, in einer zweiten Phase auch Fußgänger und Radfahrer erkennt, und einen Notfall-Spurhalteassistenten; beide müssen übersteuerbar sein und nach jeder Aktivierung des Hauptkontrollschalters im Normalbetrieb arbeiten. Außerdem müssen sie einen erweiterten Kopfaufprallschutzbereich bieten.",
+          "text": "Für die EU-Typgenehmigung brauchen Kraftfahrzeuge einen intelligenten Geschwindigkeitsassistenten, eine Vorrichtung zum Einbau einer alkoholempfindlichen Wegfahrsperre, Warnsysteme bei Müdigkeit und nachlassender Konzentration des Fahrers, ein Notbremslicht, einen Rückfahrassistenten und eine nicht deaktivierbare ereignisbezogene Datenaufzeichnung. Fahrzeuge der Klassen M1 und N1 brauchen zusätzlich ein Notbremsassistenzsystem, das Hindernisse und bewegte Fahrzeuge, in einer zweiten Phase auch Fußgänger und Radfahrer erkennt, und einen Notfall-Spurhalteassistenten; beide müssen übersteuerbar sein und nach jeder Aktivierung des Hauptkontrollschalters im Normalbetrieb arbeiten. Außerdem müssen sie einen erweiterten Kopfaufprallschutzbereich zum Schutz ungeschützter Verkehrsteilnehmer bieten.",
           "begruendung": "belegt",
           "belege": [
             {
@@ -486,7 +492,7 @@
         },
         {
           "absatz_id": "P20",
-          "text": "Als Personenkraftwagen unterliegt der Kleinbus beiden Gruppen. Das Hauptsystem umfasst die Umfeldsensorik mit Frontkamera, Radarsensor und Ultraschallsensoren, die Assistenzfunktionen Notbremsassistent, Spurhalteassistent, Geschwindigkeitsassistent, Müdigkeitswarnung und Rückfahrassistent sowie Ereignisdatenspeicher und Insassenschutzsteuergerät. Eingriffe laufen über Bremsregelung und Lenkunterstützung, Warnungen über das Kombiinstrument; wegen der verdeckten Sicht nach hinten nutzt der Rückfahrassistent Ultraschall und Rückfahrkamera.",
+          "text": "Als Personenkraftwagen unterliegt der Kleinbus beiden Gruppen. Das Hauptsystem umfasst die Umfeldsensorik, beispielhaft mit Frontkamera, Radarsensor und Ultraschallsensoren, die Assistenzfunktionen Notbremsassistent, Spurhalteassistent, Geschwindigkeitsassistent, Müdigkeitswarnung und Rückfahrassistent sowie Ereignisdatenspeicher und Insassenschutzsteuergerät. Das Warnsystem bei nachlassender Konzentration braucht eine Fahrerbeobachtungskamera im Innenraum; für die alkoholempfindliche Wegfahrsperre ist eine Einbauschnittstelle zur Wegfahrsperre vorzusehen. Eingriffe laufen über Bremsregelung und Lenkunterstützung, Warnungen über das Kombiinstrument; wegen der verdeckten Sicht nach hinten nutzt der Rückfahrassistent Ultraschall und Rückfahrkamera.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -495,9 +501,9 @@
               "P2",
               "P5"
             ],
-            "schluss": "Für den Kleinbus sind die Assistenzfunktionen beider Vorschriftengruppen vorzusehen und an Bremse, Lenkung und Anzeige anzubinden."
+            "schluss": "Für den Kleinbus sind die Assistenzfunktionen beider Vorschriftengruppen mit Fahrerbeobachtung und Einbauschnittstelle zur Wegfahrsperre vorzusehen und an Bremse, Lenkung und Anzeige anzubinden; die Sensorausstattung ist eine Beispielausstattung."
           },
-          "sicherheit": "mittel",
+          "sicherheit": "gering",
           "aussagetyp": "loesung",
           "herangezogene_artikel_ids": []
         }
@@ -533,16 +539,18 @@
       "absaetze": [
         {
           "absatz_id": "P22",
-          "text": "Das Thermomanagement regelt Betriebstemperaturen und klimatisiert den Innenraum. Der Kühlkreislauf führt die Abwärme von Verbrennungsmotor oder Traktionsmaschine und Leistungselektronik über Kühlmittelpumpe und Kühler ab, die Batterietemperierung hält die Traktionsbatterie im zulässigen Bereich. Die Heiz- und Klimaanlage aus Klimakompressor, Frontklimagerät und Innenraumheizung erreicht den langen Innenraum von vorn kaum gleichmäßig; eine Fondklimatisierung mit Luftführung im Dach ergänzt sie. Ohne Motorabwärme heizt der batterieelektrische Kleinbus elektrisch, zulasten der Reichweite.",
+          "text": "Das Thermomanagement regelt Betriebstemperaturen und klimatisiert den Innenraum. Der Kühlkreislauf führt die Abwärme von Verbrennungsmotor oder Traktionsmaschine und Leistungselektronik über Kühlmittelpumpe und Kühler ab, die Batterietemperierung hält die Traktionsbatterie im zulässigen Bereich. Die Heiz- und Klimaanlage aus Klimakompressor, Frontklimagerät und Innenraumheizung erreicht den langen Innenraum von vorn kaum gleichmäßig; eine Fondklimatisierung mit Luftführung im Dach ergänzt sie. Beim elektrifizierten Antrieb wird der Klimakompressor elektrisch aus dem Hochvolt-Bordnetz angetrieben; geheizt wird mit elektrischem Heizer oder einer Wärmepumpe, die Abwärme von Antrieb und Batterie nutzen kann, beim batterieelektrischen Kleinbus zulasten der Reichweite.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "P5",
               "Jeder Energiewandler und Speicher braucht Wärmeabfuhr",
-              "Luftführung über große Distanzen verliert Wirkung"
+              "Luftführung über große Distanzen verliert Wirkung",
+              "Ohne Nebenaggregatetrieb braucht der Klimakompressor einen eigenen elektrischen Antrieb",
+              "Eine Wärmepumpe hebt Umgebungs- oder Abwärme auf Heiztemperatur"
             ],
-            "schluss": "Das Thermomanagement umfasst Antriebskühlung, Batterietemperierung und eine zweigeteilte Innenraumklimatisierung."
+            "schluss": "Das Thermomanagement umfasst Antriebskühlung, Batterietemperierung und eine zweigeteilte Innenraumklimatisierung; beim elektrifizierten Antrieb arbeiten Klimakompressor und Heizung elektrisch, mit Heizer oder Wärmepumpe."
           },
           "sicherheit": "mittel",
           "aussagetyp": "loesung",
@@ -557,14 +565,15 @@
       "absaetze": [
         {
           "absatz_id": "P23",
-          "text": "Neben- und Versorgungssysteme liefern Hilfsenergie und Komfort. Zur Hilfsenergieversorgung gehören die Unterdruckpumpe für den Bremskraftverstärker bei Dieselmotor und elektrischem Antrieb und der Nebenaggregatetrieb, der beim Verbrennungsmotor Generator, Klimakompressor und Kühlmittelpumpe antreibt. Komfortaggregate sind der Schiebetürantrieb mit Einklemmschutz und die Zusatzheizung, die den Innenraum vor Fahrtbeginn oder bei Wartezeiten beheizt.",
+          "text": "Neben- und Versorgungssysteme liefern Hilfsenergie und Komfort. Zur Hilfsenergieversorgung gehören der Nebenaggregatetrieb, der beim Verbrennungsmotor Generator, Klimakompressor und Kühlmittelpumpe antreibt, und die Unterdruckpumpe für den Bremskraftverstärker bei Dieselmotor und, sofern der Verstärker mit Unterdruck arbeitet, bei elektrischem Antrieb. Komfortaggregate sind der Schiebetürantrieb mit Einklemmschutz und die Zusatzheizung, die den Innenraum vor Fahrtbeginn oder bei Wartezeiten beheizt.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "Ein Dieselmotor liefert keinen nutzbaren Saugrohrunterdruck",
               "P22",
-              "P6"
+              "P6",
+              "P12"
             ],
             "schluss": "Unterdruckpumpe, Nebenaggregatetrieb, Schiebetürantrieb und Zusatzheizung bilden die Neben- und Versorgungssysteme, abhängig von der Antriebsart."
           },
@@ -622,7 +631,7 @@
         },
         {
           "absatz_id": "P26",
-          "text": "Ports und Konnektoren bilden Kraftstoffzulauf, Hochvolt-Schnittstelle, Radnabe, Sitz- und Rollstuhlverankerung, Unterdruckanschluss, Anhängersteckdose, Diagnoseschnittstelle und Mensch-Maschine-Schnittstelle ab. Block Definition Diagrams zeigen die Teil-von-Struktur, Internal Block Diagrams die Flüsse, Aktivitätsdiagramme Abläufe wie Sitzumbau, Laden oder Bremsen mit Rückgewinnung.",
+          "text": "Ports und Konnektoren bilden Kraftstoffzulauf, Hochvolt-Schnittstelle, Radnabe, Sitz- und Rollstuhlverankerung, Unterdruckanschluss, Anhängersteckdose, Diagnoseschnittstelle, Einbauschnittstelle Wegfahrsperre und Mensch-Maschine-Schnittstelle ab. Block Definition Diagrams zeigen die Teil-von-Struktur, Internal Block Diagrams die Flüsse, Aktivitätsdiagramme Abläufe wie Sitzumbau, Laden oder Bremsen mit Rückgewinnung.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -643,7 +652,7 @@
       "absaetze": [
         {
           "absatz_id": "P27",
-          "text": "Stoff: Kraftstoffanlage an Verbrennungsmotor. Elektrisch: Traktionsbatterie an Leistungselektronik, diese an Traktionsmaschine, Ladeeinrichtung an Traktionsbatterie, Generator und Gleichspannungswandler an Niedervolt-Bordnetz, dieses an Steuergeräte und Anhängevorrichtung, Insassenschutzsteuergerät an Airbag. Mechanisch: Antriebseinheit an Kraftübertragung, Antriebswellen an Räder und Reifen, Lenkgetriebe an Vorderachse, Sitzschienen, Rollstuhlstellplatz und Anhängevorrichtung an Bodengruppe, Schiebetürantrieb an Schiebetür, Nebenaggregatetrieb an Klimakompressor. Hydraulisch: Hauptbremszylinder an Radbremsen. Pneumatisch: Unterdruckpumpe an Bremskraftverstärker. Thermisch: Verbrennungsmotor und Traktionsmaschine an Kühlkreislauf, Batterietemperierung an Traktionsbatterie, Fondklimatisierung an Fahrgastraum. Information: Umfeldsensorik an Assistenzfunktionen, Notbremsassistent an Bremsregelung, Spurhalteassistent an Lenkunterstützung, Bremsregelung an Leistungselektronik und Leuchten, Bedienelemente an Fahrzeugmanagement, dieses und Müdigkeitswarnung an Kombiinstrument, Rückfahrkamera an Infotainment, Diagnose an Gateway, Telematikeinheit an Notrufsystem.",
+          "text": "Stoff: Kraftstoffanlage an Verbrennungsmotor. Elektrisch: Traktionsbatterie an Leistungselektronik, diese an Traktionsmaschine, Ladeeinrichtung an Traktionsbatterie, Hochvolt-Verteilung an Klimakompressor, Generator und Gleichspannungswandler an Niedervolt-Bordnetz, dieses an Steuergeräte und Anhängevorrichtung, Insassenschutzsteuergerät an Airbag. Mechanisch: Antriebseinheit an Kraftübertragung, Antriebswellen an Räder und Reifen, Lenkgetriebe an Vorderachse, Sitzschienen, Rollstuhlstellplatz und Anhängevorrichtung an Bodengruppe, Schiebetürantrieb an Schiebetür, Nebenaggregatetrieb an Klimakompressor. Hydraulisch: Hauptbremszylinder an Radbremsen. Pneumatisch: Unterdruckpumpe an Bremskraftverstärker. Thermisch: Verbrennungsmotor und Traktionsmaschine an Kühlkreislauf, Batterietemperierung an Traktionsbatterie, Fondklimatisierung an Fahrgastraum. Information: Umfeldsensorik an Assistenzfunktionen, Notbremsassistent an Bremsregelung, Spurhalteassistent an Lenkunterstützung, Bremsregelung an Leistungselektronik und Leuchten, Bedienelemente an Fahrzeugmanagement, dieses und Müdigkeitswarnung an Kombiinstrument, Fahrerbeobachtungskamera an Müdigkeitswarnung, Rückfahrkamera an Infotainment, Diagnose an Gateway, Telematikeinheit an Notrufsystem.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -664,7 +673,7 @@
       "absaetze": [
         {
           "absatz_id": "P28",
-          "text": "Fahrzeuglasten tragen – Karosserie, Fahrwerk; Insassen schützen – Crashstruktur, Fahrgastzelle, Rückhaltesystem, Insassenschutzsteuergerät; Fahrgäste aufnehmen – Sitzanlage, Rollstuhlstellplatz; Antriebsleistung erzeugen – Antriebseinheit; Drehmoment übertragen – Kraftübertragung; Fahrzeug fortbewegen – Antriebssystem, Räder und Reifen; Energie speichern – Kraftstofftank, Traktionsbatterie, Bordnetzbatterie; Treibstoff fördern – Kraftstoffpumpe; Traktionsbatterie laden – Ladeeinrichtung; Elektrische Energie verteilen – Niedervolt-Bordnetz, Hochvolt-Verteilung, Gleichspannungswandler; Fahrzeug lenken – Lenksystem, Spurhalteassistent; Fahrzeug verzögern – Betriebsbremse, Bremsregelung, Notbremsassistent; Fahrzeug festhalten – Feststellbremse; Bremsenergie zurückgewinnen – Traktionsmaschine, Leistungselektronik, Bremsregelung; Fahrereingaben erfassen – Bedienelemente; Fahrerinformationen anzeigen – Kombiinstrument, Infotainment, Geschwindigkeitsassistent; Ladung aufnehmen – Gepäckraum, Dachträger; Anhänger ziehen – Anhängevorrichtung; Daten übertragen – Fahrzeugbus, Gateway, Telematikeinheit, Notrufsystem; Fahrzeugzustand überwachen – Fahrzeugmanagement, Diagnose, Ereignisdatenspeicher; Fahrzeugposition bestimmen – Telematikeinheit; Fahrzeugumfeld erfassen – Umfeldsensorik, Rückfahrassistent; Fahrerzustand überwachen – Müdigkeitswarnung; Fahrzeugumgebung ausleuchten – Scheinwerfer; Lichtsignale abgeben – Leuchten; Fahrersicht sicherstellen – Sichtsysteme; Betriebstemperatur regeln – Kühlkreislauf, Batterietemperierung; Innenraum klimatisieren – Heiz- und Klimaanlage, Zusatzheizung; Unterdruck bereitstellen – Unterdruckpumpe; Schiebetür betätigen – Schiebetürantrieb.",
+          "text": "Fahrzeuglasten tragen – Karosserie, Fahrwerk; Insassen schützen – Crashstruktur, Fahrgastzelle, Rückhaltesystem, Insassenschutzsteuergerät; Fahrgäste aufnehmen – Sitzanlage, Rollstuhlstellplatz; Antriebsleistung erzeugen – Antriebseinheit; Drehmoment übertragen – Kraftübertragung; Fahrzeug fortbewegen – Antriebssystem, Räder und Reifen; Energie speichern – Kraftstofftank, Traktionsbatterie, Bordnetzbatterie; Treibstoff fördern – Kraftstoffpumpe; Traktionsbatterie laden – Ladeeinrichtung; Elektrische Energie verteilen – Niedervolt-Bordnetz, Hochvolt-Verteilung, Gleichspannungswandler; Fahrzeug lenken – Lenksystem, Spurhalteassistent; Fahrzeug verzögern – Betriebsbremse, Bremsregelung, Notbremsassistent; Fahrzeug festhalten – Feststellbremse; Bremsenergie zurückgewinnen – Traktionsmaschine, Leistungselektronik, Bremsregelung; Fahrereingaben erfassen – Bedienelemente; Fahrerinformationen anzeigen – Kombiinstrument, Infotainment, Geschwindigkeitsassistent; Ladung aufnehmen – Gepäckraum, Dachträger; Anhänger ziehen – Anhängevorrichtung; Daten übertragen – Fahrzeugbus, Gateway, Telematikeinheit, Notrufsystem; Fahrzeugzustand überwachen – Fahrzeugmanagement, Diagnose, Ereignisdatenspeicher; Fahrzeugposition bestimmen – Telematikeinheit; Fahrzeugumfeld erfassen – Umfeldsensorik, Rückfahrassistent; Fahrerzustand überwachen – Müdigkeitswarnung, Fahrerbeobachtungskamera; Fahrzeugumgebung ausleuchten – Scheinwerfer; Lichtsignale abgeben – Leuchten; Fahrersicht sicherstellen – Sichtsysteme; Betriebstemperatur regeln – Kühlkreislauf, Batterietemperierung; Innenraum klimatisieren – Heiz- und Klimaanlage, Zusatzheizung; Unterdruck bereitstellen – Unterdruckpumpe; Schiebetür betätigen – Schiebetürantrieb.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -799,6 +808,24 @@
         "absatz_ids": [
           "P5",
           "P6"
+        ]
+      },
+      {
+        "id": "E122",
+        "name": "Radaufhängung",
+        "typ": "komponente",
+        "eltern_id": "E9",
+        "absatz_ids": [
+          "P5"
+        ]
+      },
+      {
+        "id": "E123",
+        "name": "Dämpfer",
+        "typ": "komponente",
+        "eltern_id": "E9",
+        "absatz_ids": [
+          "P5"
         ]
       },
       {
@@ -1113,7 +1140,8 @@
         "typ": "komponente",
         "eltern_id": "E45",
         "absatz_ids": [
-          "P12"
+          "P12",
+          "P23"
         ]
       },
       {
@@ -1499,6 +1527,15 @@
         ]
       },
       {
+        "id": "E121",
+        "name": "Fahrerbeobachtungskamera",
+        "typ": "komponente",
+        "eltern_id": "E84",
+        "absatz_ids": [
+          "P20"
+        ]
+      },
+      {
         "id": "E88",
         "name": "Assistenzfunktionen",
         "typ": "subsystem",
@@ -1719,6 +1756,15 @@
       {
         "id": "E112",
         "name": "Innenraumheizung",
+        "typ": "komponente",
+        "eltern_id": "E108",
+        "absatz_ids": [
+          "P22"
+        ]
+      },
+      {
+        "id": "E124",
+        "name": "Wärmepumpe",
         "typ": "komponente",
         "eltern_id": "E108",
         "absatz_ids": [
@@ -2082,7 +2128,8 @@
         "id": "F23",
         "name": "Fahrerzustand überwachen",
         "ausgefuehrt_von": [
-          "E92"
+          "E92",
+          "E121"
         ],
         "absatz_ids": [
           "P19",
@@ -2588,6 +2635,29 @@
           "P18",
           "P27"
         ]
+      },
+      {
+        "id": "S35",
+        "von": "E121",
+        "nach": "E92",
+        "art": "information",
+        "medium": "Fahrerbeobachtungsdaten",
+        "absatz_ids": [
+          "P20",
+          "P27"
+        ]
+      },
+      {
+        "id": "S36",
+        "von": "E33",
+        "nach": "E109",
+        "art": "elektrisch",
+        "medium": "Hochvolt-Gleichstrom",
+        "absatz_ids": [
+          "P22",
+          "P27"
+        ],
+        "schnittstelle": "Hochvolt-Anschluss Klimakompressor"
       }
     ],
     "entfallene_kategorien": [],
@@ -2644,11 +2714,15 @@
           },
           {
             "element_id": "E116",
-            "beschreibung": "nötig, wenn der Antrieb keinen Unterdruck liefert"
+            "beschreibung": "nötig bei Dieselmotor und, sofern der Bremskraftverstärker mit Unterdruck arbeitet, bei elektrifiziertem Antrieb"
           },
           {
             "element_id": "E117",
             "beschreibung": "entfällt beim batterieelektrischen Antrieb"
+          },
+          {
+            "element_id": "E109",
+            "beschreibung": "elektrisch angetrieben bei batterieelektrischem Antrieb"
           }
         ],
         "absatz_ids": [
@@ -2668,7 +2742,9 @@
           "Frontmotor mit Frontantrieb",
           "Frontmotor mit Hinterradantrieb",
           "Allradantrieb",
-          "Heckmotor mit Heckantrieb"
+          "Heckmotor mit Heckantrieb",
+          "Elektrischer Achsantrieb hinten",
+          "Elektrischer Allradantrieb mit je einer Traktionsmaschine je Achse"
         ],
         "auswahlkriterien": [
           "ebene Bodengruppe für Sitzschienen und Gepäckraum",
@@ -2679,7 +2755,7 @@
         "auswirkungen": [
           {
             "element_id": "E4",
-            "beschreibung": "durchgehender ebener Boden bei Frontantrieb, Tunnel oder Bauraum für Gelenkwelle sonst"
+            "beschreibung": "durchgehender ebener Boden bei Frontantrieb; beim Verbrennungsmotor mit Hinterrad- oder Allradantrieb Tunnel oder Bauraum für die Gelenkwelle; beim elektrischen Achsantrieb bleibt die ebene Bodengruppe erhalten"
           },
           {
             "element_id": "E11",
@@ -2691,11 +2767,19 @@
           },
           {
             "element_id": "E65",
-            "beschreibung": "eingeschränkt bei Heckmotor"
+            "beschreibung": "eingeschränkt bei Heckmotor mit Verbrennungsmotor"
           },
           {
             "element_id": "E67",
             "beschreibung": "zulässige Anhängelast hängt von der Traktion ab"
+          },
+          {
+            "element_id": "E22",
+            "beschreibung": "entfällt beim elektrischen Achsantrieb"
+          },
+          {
+            "element_id": "E17",
+            "beschreibung": "je angetriebener Achse eine Traktionsmaschine beim elektrischen Achs- und Allradantrieb"
           }
         ],
         "absatz_ids": [
@@ -2910,12 +2994,149 @@
           {
             "element_id": "E30",
             "beschreibung": "Energieinhalt begrenzt durch Massengrenze"
+          },
+          {
+            "element_id": "E3",
+            "beschreibung": "Rahmenbauweise bei schwerer Auslegung möglich"
           }
         ],
         "absatz_ids": [
           "P3",
           "P6",
-          "P10"
+          "P10",
+          "P5"
+        ]
+      },
+      {
+        "id": "V8",
+        "element_id": "E46",
+        "bezeichnung": "Bauart des Bremskraftverstärkers",
+        "alternativen": [
+          "Unterdruck-Bremskraftverstärker mit Unterdruck aus dem Ottomotor",
+          "Unterdruck-Bremskraftverstärker mit Unterdruckpumpe",
+          "Elektromechanischer Bremskraftverstärker oder integriertes elektrohydraulisches Bremssystem"
+        ],
+        "auswahlkriterien": [
+          "Antriebsart",
+          "Rückgewinnungsanteil",
+          "Eingriffsbedarf des Notbremsassistenten"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E116",
+            "beschreibung": "entfällt bei elektromechanischer Ausführung"
+          },
+          {
+            "element_id": "E69",
+            "beschreibung": "Versorgung des elektromechanischen Verstärkers"
+          },
+          {
+            "element_id": "E50",
+            "beschreibung": "Überlagerung von Reibbremse und Rückgewinnung über die entkoppelte Betätigung"
+          }
+        ],
+        "absatz_ids": [
+          "P12",
+          "P23"
+        ]
+      },
+      {
+        "id": "V9",
+        "element_id": "E1",
+        "bezeichnung": "Plattformherkunft",
+        "alternativen": [
+          "Ableitung von einem Kleintransporter",
+          "Ableitung von einer Pkw-Plattform"
+        ],
+        "auswahlkriterien": [
+          "Zuladung und zulässige Gesamtmasse",
+          "Fahrkomfort",
+          "Gleichteile mit Nutzfahrzeugvarianten"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E9",
+            "beschreibung": "Achsen, Radaufhängung und Federung der jeweiligen Plattform"
+          },
+          {
+            "element_id": "E44",
+            "beschreibung": "Bremsauslegung der jeweiligen Plattform"
+          },
+          {
+            "element_id": "E68",
+            "beschreibung": "Elektronikarchitektur der jeweiligen Plattform"
+          }
+        ],
+        "absatz_ids": [
+          "P4"
+        ]
+      },
+      {
+        "id": "V10",
+        "element_id": "E12",
+        "bezeichnung": "Federungsbauart der Hinterachse",
+        "alternativen": [
+          "Starrachse mit Blattfederung",
+          "Einzelradaufhängung mit Schraubenfederung",
+          "Luftfederung mit Niveauregulierung"
+        ],
+        "auswahlkriterien": [
+          "Zuladung und Hinterachslast",
+          "Fahrkomfort im Fond",
+          "Bauraum in der Bodengruppe",
+          "Antriebsanordnung"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E11",
+            "beschreibung": "Bauweise als Starrachse oder mit Einzelradaufhängung"
+          },
+          {
+            "element_id": "E4",
+            "beschreibung": "Bauraum und Anlenkpunkte der Hinterachse"
+          },
+          {
+            "element_id": "E30",
+            "beschreibung": "verfügbarer Bauraum im Unterboden"
+          }
+        ],
+        "absatz_ids": [
+          "P5"
+        ]
+      },
+      {
+        "id": "V11",
+        "element_id": "E108",
+        "bezeichnung": "Heizkonzept beim elektrifizierten Antrieb",
+        "alternativen": [
+          "Elektrischer Heizer",
+          "Wärmepumpe mit Nutzung der Abwärme von Antrieb und Batterie"
+        ],
+        "auswahlkriterien": [
+          "Reichweite bei Kälte",
+          "Heizbedarf des langen Innenraums mit Fondklimatisierung",
+          "Kosten und Bauraum"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E112",
+            "beschreibung": "Wärme aus elektrischem Heizer oder Wärmepumpe"
+          },
+          {
+            "element_id": "E113",
+            "beschreibung": "Batterieabwärme als Wärmequelle der Wärmepumpe"
+          },
+          {
+            "element_id": "E33",
+            "beschreibung": "Heizleistung aus der Hochvolt-Verteilung"
+          },
+          {
+            "element_id": "E30",
+            "beschreibung": "Reichweitenverlust durch Heizen"
+          }
+        ],
+        "absatz_ids": [
+          "P22"
         ]
       }
     ],
@@ -3006,13 +3227,14 @@
       },
       {
         "id": "K8",
-        "frage": "Muss die Lenkunterstützung elektrisch ausgeführt werden, damit der Spurhalteassistent über die Lenkung eingreifen kann?",
+        "frage": "Soll der Notfall-Spurhalteassistent über einen Lenkeingriff oder über einseitiges Bremsen wirken, und welche Lenkunterstützung gibt die Basisplattform vor?",
         "element_ids": [
           "E38",
-          "E43"
+          "E43",
+          "E90"
         ],
-        "anlass": "schnittstelle",
-        "relevanz": "Davon hängen Aktorik der Lenkung und Eingriffsweg des Spurhalteassistenten ab."
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Bauart der Lenkunterstützung, Aktorik und Eingriffsweg der Assistenz ab."
       },
       {
         "id": "K9",
@@ -3116,6 +3338,66 @@
         ],
         "anlass": "betrieb",
         "relevanz": "Davon hängen Zusatzheizung, Kraftstoff- oder Stromversorgung und Steuerung über das Fahrzeugmanagement ab."
+      },
+      {
+        "id": "K19",
+        "frage": "Soll der Bremskraftverstärker mit Unterdruck arbeiten oder elektromechanisch beziehungsweise als integriertes elektrohydraulisches Bremssystem ausgeführt werden?",
+        "element_ids": [
+          "E44",
+          "E46"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Unterdruckpumpe, Versorgung aus dem Bordnetz und die Überlagerung von Reibbremse und Rückgewinnung ab.",
+        "variante_ids": [
+          "V8"
+        ]
+      },
+      {
+        "id": "K20",
+        "frage": "Soll der Kleinbus von einem Kleintransporter oder von einer Pkw-Plattform abgeleitet werden, und haben Zuladung oder Fahrkomfort Vorrang?",
+        "element_ids": [
+          "E1"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Fahrwerk, Bremse, Elektronikarchitektur und die erreichbare Zuladung ab.",
+        "variante_ids": [
+          "V9"
+        ]
+      },
+      {
+        "id": "K21",
+        "frage": "Wie viele Sitzplätze einschließlich Fahrer sind gefordert, und soll das Fahrzeug als Personenkraftwagen oder als leichtes Nutzfahrzeug mit Personenbeförderung genehmigt werden?",
+        "element_ids": [
+          "E1"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Fahrzeugklasse, Zahl der Sitzverankerungen, Ladungssicherung und die geltenden Ausrüstungspflichten ab."
+      },
+      {
+        "id": "K22",
+        "frage": "Soll die Hinterachse eine Niveauregulierung erhalten, damit Fahrhöhe und Fahrkomfort bei wechselnder Beladung gleich bleiben?",
+        "element_ids": [
+          "E9",
+          "E12"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Federungsbauart, Bauraum an der Hinterachse und die Versorgung einer Luftfederung ab.",
+        "variante_ids": [
+          "V10"
+        ]
+      },
+      {
+        "id": "K23",
+        "frage": "Soll der elektrifizierte Kleinbus mit elektrischem Heizer oder mit einer Wärmepumpe beheizt werden, und welche Reichweite muss bei Kälte und voller Besetzung erhalten bleiben?",
+        "element_ids": [
+          "E104",
+          "E108"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Wärmepumpe, Kopplung von Batterietemperierung und Innenraumheizung sowie der Energieinhalt der Traktionsbatterie ab.",
+        "variante_ids": [
+          "V11"
+        ]
       }
     ],
     "anforderungsthemen": [
@@ -3138,9 +3420,9 @@
             "fundstelle": "Article 4(1)(a)(i) und (ii)"
           },
           {
-            "bezeichnung": "Verordnung (EU) 2018/858, Anhang I Teil A (Sitzplatzzählung, Kriterien für N1; EU-Typgenehmigung)",
+            "bezeichnung": "Verordnung (EU) 2018/858, Anhang I, Allgemeine Bestimmungen und Teil A (Sitzplatzzählung, Kriterien für N1; EU-Typgenehmigung)",
             "quellen_id": "Q3",
-            "fundstelle": "Teil A Nr. 2.1, 3.5, 3.6 und 3.8.1"
+            "fundstelle": "Allgemeine Bestimmungen Nr. 2.1; Teil A Nr. 3.5, 3.6 und 3.8.1"
           },
           {
             "bezeichnung": "Fahrerlaubnis-Verordnung, § 6 (Fahrerlaubnisklassen B und C1; Deutschland)",
@@ -3166,20 +3448,11 @@
       {
         "id": "R3",
         "element_ids": [
-          "E8",
           "E5"
         ],
-        "thema": "Insassen- und Fußgängerschutz",
+        "thema": "Insassenschutz",
         "kenngroessen": [
-          "Intrusion in die Fahrgastzelle",
-          "Kopfaufprallschutzbereich"
-        ],
-        "regelwerke": [
-          {
-            "bezeichnung": "Verordnung (EU) 2019/2144, Artikel 7 Absatz 5 (erweiterter Kopfaufprallschutzbereich; EU-Typgenehmigung, Klassen M1 und N1)",
-            "quellen_id": "Q8",
-            "fundstelle": "Art. 7 Abs. 5"
-          }
+          "Intrusion in die Fahrgastzelle"
         ]
       },
       {
@@ -3362,6 +3635,37 @@
           "Schließkraftbegrenzung der Schiebetür",
           "Heizleistung der Zusatzheizung"
         ]
+      },
+      {
+        "id": "R16",
+        "element_ids": [
+          "E29",
+          "E30"
+        ],
+        "thema": "Hochvolt-Sicherheit",
+        "kenngroessen": [
+          "Isolationswiderstand",
+          "Berührschutz",
+          "Abschaltzeit nach Aufprall",
+          "Intrusionsschutz der Traktionsbatterie"
+        ]
+      },
+      {
+        "id": "R17",
+        "element_ids": [
+          "E8"
+        ],
+        "thema": "Fußgänger- und Radfahrerschutz",
+        "kenngroessen": [
+          "Kopfaufprallschutzbereich"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "Verordnung (EU) 2019/2144, Artikel 7 Absatz 5 (erweiterter Kopfaufprallschutzbereich zum Schutz ungeschützter Verkehrsteilnehmer; EU-Typgenehmigung, Klassen M1 und N1)",
+            "quellen_id": "Q8",
+            "fundstelle": "Art. 7 Abs. 5"
+          }
+        ]
       }
     ]
   },
@@ -3372,6 +3676,8 @@
     "Recherche: Fahrerlaubnis-Verordnung und Straßenverkehrs-Zulassungs-Ordnung auf gesetze-im-internet.de (in diesem Lauf nicht abrufbar; verwendet wurde die Textwiedergabe auf buzer.de).",
     "Recherche: Quellen zu batterieelektrischen Kleinbussen (Batterieanordnung im Unterboden, Fondklimatisierung, Zuladung) und zu Fondklimatisierung und Zusatzheizung bei Kleinbussen, um die Absätze zu Energieversorgung, Thermomanagement und Neben- und Versorgungssystemen zu belegen.",
     "Recherche: Quellen zu Telematik- und Notrufsystemen in Personenkraftwagen (Suchbegriffe: eCall Typgenehmigung, Verordnung (EU) 2015/758), um den Absatz zu Fahrzeugsteuerung und Information zu belegen.",
-    "Recherche: Normen und Leitfäden zu Rollstuhlstellplätzen, Rampen und Hubliften in Personenkraftwagen (Suchbegriffe: ISO 10542, DIN 75078, Anlage zu § 35a StVZO Rollstuhl-Rückhaltesysteme)."
+    "Recherche: Normen und Leitfäden zu Rollstuhlstellplätzen, Rampen und Hubliften in Personenkraftwagen (Suchbegriffe: ISO 10542, DIN 75078, Anlage zu § 35a StVZO Rollstuhl-Rückhaltesysteme).",
+    "Recherche: Quellen zur Sensorik der Warnsysteme bei Müdigkeit und nachlassender Konzentration des Fahrers (Suchbegriffe: Driver Drowsiness and Attention Warning, Advanced Driver Distraction Warning, Fahrerbeobachtungskamera), um die Sensorausstattung im Absatz zu Fahrerassistenz und Sicherheit zu belegen.",
+    "Recherche: Vorschriften zur elektrischen Sicherheit von Fahrzeugen mit Hochvolt-Bordnetz (Suchbegriffe: UN-Regelung Nr. 100, Hochvolt-Sicherheit nach Aufprall, Isolationsüberwachung), um das Anforderungsthema Hochvolt-Sicherheit mit Regelwerken zu hinterlegen."
   ]
 }

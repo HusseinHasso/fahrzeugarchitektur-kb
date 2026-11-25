@@ -218,6 +218,19 @@
           ],
           "aussagetyp": "loesung",
           "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P31",
+          "text": "Teilmarkierte Fahrzeuge (ghost car) haben Markierungen in ähnlicher Farbe wie der Lack oder reflektierende Grafiken, die nur bei Beleuchtung oder aus bestimmten Blickwinkeln gut sichtbar sind. Sie dienen oft der Verkehrsüberwachung, auch wo zivile Fahrzeuge unzulässig oder in ihren Befugnissen eingeschränkt sind.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Abschnitt Types, Unterabschnitt Unmarked car, Ghost car"
+            }
+          ],
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
         }
       ]
     },
@@ -269,16 +282,18 @@
       "absaetze": [
         {
           "absatz_id": "P8",
-          "text": "Das Energieversorgungssystem speichert die Antriebsenergie und versorgt Grundfahrzeug und Ausrüstung. Die Kraftstoffanlage besteht aus Kraftstofftank und Kraftstoffpumpe, das Hochvolt-Energiespeichersystem aus Traktionsbatterie und, beim batterieelektrischen Fahrzeug, Ladeeinrichtung. Die Niedervolt-Energieversorgung umfasst Starterbatterie, Generator oder Gleichspannungswandler und eine Zusatzbatterie für die Einsatzausrüstung. Weil Signalanlagen, Funk und Rechner auch im Stand Energie verbrauchen, muss der Standbetrieb möglich sein, ohne die Starterbatterie zu entladen.",
+          "text": "Das Energieversorgungssystem speichert die Antriebsenergie und versorgt Grundfahrzeug und Ausrüstung. Die Kraftstoffanlage besteht aus Kraftstofftank und Kraftstoffpumpe, das Hochvolt-Energiespeichersystem aus Traktionsbatterie, Hochvoltverteilung und, beim batterieelektrischen Fahrzeug, Ladeeinrichtung. Die Niedervolt-Energieversorgung umfasst Starterbatterie, Generator oder Gleichspannungswandler und eine Zusatzbatterie für die Einsatzausrüstung. Ein Batterietrennrelais oder Ladewandler lädt die Zusatzbatterie im Fahrbetrieb und trennt sie im Stand von der Starterbatterie. Weil Signalanlagen, Funk und Rechner auch im Stand Energie verbrauchen, muss der Standbetrieb möglich sein, ohne die Starterbatterie zu entladen.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "P6",
               "P9",
-              "Funktionsprinzip: Ausrüstung im Stand wird aus Batterie oder laufendem Antrieb gespeist"
+              "Funktionsprinzip: Ausrüstung im Stand wird aus Batterie oder laufendem Antrieb gespeist",
+              "Funktionsprinzip: Zwei Batteriekreise, die im Fahrbetrieb gemeinsam geladen und im Stand getrennt entladen werden, brauchen ein Trennelement",
+              "Funktionsprinzip: Die Hochvoltverbraucher werden über eine abgesicherte und schaltbare Hochvoltverteilung aus der Traktionsbatterie gespeist"
             ],
-            "schluss": "Neben Antriebsenergiespeichern braucht das Polizeifahrzeug eine für Standbetrieb ausgelegte Niedervolt-Energieversorgung mit Zusatzbatterie."
+            "schluss": "Neben Antriebsenergiespeichern mit Hochvoltverteilung braucht das Polizeifahrzeug eine für Standbetrieb ausgelegte Niedervolt-Energieversorgung mit Zusatzbatterie und Batterietrennung."
           },
           "sicherheit": "mittel",
           "aussagetyp": "loesung",
@@ -310,7 +325,7 @@
       "absaetze": [
         {
           "absatz_id": "P10",
-          "text": "Das Lenksystem setzt Fahrereingaben in einen Lenkeinschlag der Vorderräder um. Die Lenkbetätigung aus Lenkrad und Lenksäule wirkt auf das Lenkgetriebe; die Lenkunterstützung verringert die Lenkkräfte und kann Eingriffe der Assistenz umsetzen. Beim Polizeifahrzeug wird das Lenkrad zugleich Bedienschnittstelle: Lenkradtasten können Sondersignal oder Funkmikrofon auslösen, sodass der Fahrer bei Einsatzfahrten beide Hände am Lenkrad behält.",
+          "text": "Das Lenksystem setzt Fahrereingaben in einen Lenkeinschlag der Vorderräder um. Die Lenkbetätigung aus Lenkrad und Lenksäule wirkt auf das Lenkgetriebe; die Lenkunterstützung verringert die Lenkkräfte und kann Eingriffe der Assistenz umsetzen. Bei einzelnen Baureihen wird das Lenkrad zugleich Bedienschnittstelle: Lenkradtasten lassen sich für Sondersignal oder Funkmikrofon belegen, sodass der Fahrer bei Einsatzfahrten beide Hände am Lenkrad behält.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -320,7 +335,7 @@
             ],
             "schluss": "Das Lenksystem entspricht dem Grundfahrzeug und wird um eine Bedienschnittstelle für Einsatzfunktionen erweitert."
           },
-          "sicherheit": "mittel",
+          "sicherheit": "gering",
           "aussagetyp": "loesung",
           "herangezogene_artikel_ids": []
         }
@@ -333,16 +348,17 @@
       "absaetze": [
         {
           "absatz_id": "P11",
-          "text": "Das Bremssystem verzögert das Fahrzeug und hält es fest. Die hydraulische Betriebsbremse wirkt vom Bremspedal über den Bremskraftverstärker auf die Radbremsen, die Feststellbremse sichert das stehende Fahrzeug an Einsatzstellen. Die Bremsregelung umfasst Antiblockiersystem und Stabilitätsregelung und koordiniert bei elektrifiziertem Antrieb Reibbremse und Rückgewinnung. Wiederholte Vollbremsungen aus hoher Geschwindigkeit belasten die Radbremsen thermisch, deshalb sehen Polizeipakete verstärkte Bremsen vor.",
+          "text": "Das Bremssystem verzögert das Fahrzeug und hält es fest. Die hydraulische Betriebsbremse wirkt vom Bremspedal über einen unterdruckbetriebenen oder elektromechanischen Bremskraftverstärker auf die Radbremsen, die Feststellbremse sichert das stehende Fahrzeug an Einsatzstellen. Die Bremsregelung umfasst Antiblockiersystem und Stabilitätsregelung und koordiniert bei elektrifiziertem Antrieb Reibbremse und Rückgewinnung. Wiederholte Vollbremsungen aus hoher Geschwindigkeit belasten die Radbremsen thermisch, deshalb sehen Polizeipakete verstärkte Bremsen vor.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "P5",
               "P7",
-              "Funktionsprinzip der hydraulischen Pkw-Bremse mit Unterdruckverstärker und Bremsregelung"
+              "Funktionsprinzip der hydraulischen Pkw-Bremse mit Bremskraftverstärker und Bremsregelung",
+              "Q11: Bremssystem mit elektrischem Verstärker (eBoost) bei Chevrolet Tahoe PPV und Blazer EV PPV (Factory Specifications, S. 12 und S. 24)"
             ],
-            "schluss": "Das Bremssystem folgt dem Grundfahrzeug, ist für Wiederholbremsungen verstärkt und hängt in Rückgewinnung und Verstärkung von der Antriebsart ab."
+            "schluss": "Das Bremssystem folgt dem Grundfahrzeug, ist für Wiederholbremsungen verstärkt und hängt in Rückgewinnung und Bauart der Verstärkung von Antriebsart und Fahrzeugbasis ab."
           },
           "sicherheit": "hoch",
           "aussagetyp": "loesung",
@@ -522,14 +538,15 @@
       "absaetze": [
         {
           "absatz_id": "P20",
-          "text": "Fahrerassistenz und Sicherheit übernimmt das Polizeifahrzeug weitgehend vom Grundfahrzeug: Die Umfeldsensorik aus Rundumsichtkamera und Radarsensor speist den Notbremsassistenten, das Insassenschutzsteuergerät löst die Rückhaltesysteme aus. Polizeitypisch sind eine Annäherungswarnung, die die Besatzung im stehenden Fahrzeug vor sich nähernden Personen warnt, und die Möglichkeit, Notbremseingriffe vorübergehend abzuschalten. Schubbügel, Dachaufbauten und Folierung dürfen Sensorsichtfelder nicht verdecken.",
+          "text": "Fahrerassistenz und Sicherheit übernimmt das Polizeifahrzeug weitgehend vom Grundfahrzeug: Die Umfeldsensorik aus Frontkamera und Radarsensor speist den Notbremsassistenten, eine Rundumsichtkamera unterstützt Rangieren und Nahbereichssicht, und das Insassenschutzsteuergerät löst die Rückhaltesysteme aus. Polizeitypisch sind eine Annäherungswarnung, die die Besatzung im stehenden Fahrzeug vor sich nähernden Personen warnt, und die Möglichkeit, Notbremseingriffe vorübergehend abzuschalten. Schubbügel, Dachaufbauten und Folierung dürfen Sensorsichtfelder nicht verdecken.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "Q11: Ford Police Interceptor Utility mit abschaltbarem Notbremsassistenten und Umfeldwarnung (police perimeter alert), Chevrolet Tahoe PPV mit Rundumsichtkamera (S. 27–28)",
               "P4",
-              "P12"
+              "P12",
+              "Funktionsprinzip: Notbremsassistenten erfassen den Verkehrsraum vor dem Fahrzeug mit nach vorn gerichteten Sensoren"
             ],
             "schluss": "Die Assistenz des Grundfahrzeugs wird um Funktionen für den Einsatzbetrieb ergänzt und muss mit Anbauten verträglich sein."
           },
@@ -580,7 +597,7 @@
         },
         {
           "absatz_id": "P23",
-          "text": "Beleuchtung und Sicht gliedern sich daher in vier Subsysteme. Die Sondersignalanlage umfasst Warnleuchten für blaues Blinklicht im Dachbalken und an der Front, das Heckwarnsystem, das Einsatzhorn und das Signalsteuergerät, das die vorgeschriebenen Verriegelungen umsetzt. Die Anhaltesignalanlage besteht aus Anhaltesignal, Signalgeber für Lichtschrift und Anhaltehorn. Hinzu kommen die Fahrzeugbeleuchtung aus Scheinwerfer, Leuchten und Suchscheinwerfer sowie Sichtsysteme aus Scheibenwischer, Außenspiegel und Rückfahrkamera. Beim zivilen Fahrzeug sind die Signalleuchten verdeckt hinter Kühlergrill oder Scheiben eingebaut.",
+          "text": "Beleuchtung und Sicht gliedern sich daher in vier Subsysteme. Die Sondersignalanlage umfasst Warnleuchten für blaues Blinklicht im Dachbalken und an der Front, das Heckwarnsystem und das Einsatzhorn; als Modellannahme bündelt ein Signalsteuergerät die Ansteuerung und setzt die vorgeschriebenen Verriegelungen um. Die Anhaltesignalanlage besteht aus Anhaltesignal, Signalgeber für Lichtschrift und Anhaltehorn. Hinzu kommen die Fahrzeugbeleuchtung aus Scheinwerfer, Leuchten und Suchscheinwerfer sowie Sichtsysteme aus Scheibenwischer, Außenspiegel und Rückfahrkamera. Beim zivilen Fahrzeug sind die Signalleuchten meist verdeckt, etwa im Kühlergrill, oder versenkbar eingebaut.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -591,7 +608,16 @@
             ],
             "schluss": "Die zulässigen Signaleinrichtungen bilden zwei Signalsubsysteme mit gemeinsamer Steuerung neben Fahrzeugbeleuchtung und Sichtsystemen."
           },
-          "sicherheit": "hoch",
+          "sicherheit": "mittel",
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P32",
+          "text": "Alternativ erhält ein ziviles Fahrzeug eine nur bei Bedarf aufgesetzte Kennleuchte, versorgt und angesteuert über einen Steckanschluss im Innenraum statt über feste Dachleitungen; Sondersignalanlage, Bordnetz und Anhaltesignalanlage ändern sich dadurch anders als beim Festeinbau.",
+          "begruendung": "modellwissen",
+          "belege": [],
+          "sicherheit": "gering",
           "aussagetyp": "variante",
           "herangezogene_artikel_ids": []
         }
@@ -628,7 +654,7 @@
       "absaetze": [
         {
           "absatz_id": "P25",
-          "text": "Neben- und Versorgungssysteme stellen Hilfsenergien bereit. Beim Verbrennungsmotor treibt der Nebenaggregatetrieb Generator und Klimakompressor an und muss die Dauerlast der Ausrüstung im Leerlauf tragen. Fehlt der Unterdruck des Motors, versorgt eine Unterdruckpumpe den Bremskraftverstärker. Als Modellannahme kommt eine Fremdeinspeisung hinzu, über die die Zusatzbatterie auf der Dienststelle nachgeladen wird, damit das Fahrzeug jederzeit einsatzbereit ist.",
+          "text": "Neben- und Versorgungssysteme stellen Hilfsenergien bereit. Beim Verbrennungsmotor treibt der Nebenaggregatetrieb Generator und Klimakompressor an und muss die Dauerlast der Ausrüstung im Leerlauf tragen. Fehlt der Unterdruck des Motors, versorgt eine Unterdruckpumpe den Bremskraftverstärker, sofern er nicht elektromechanisch arbeitet. Als Modellannahme kommt eine Fremdeinspeisung hinzu, über die die Zusatzbatterie auf der Dienststelle nachgeladen wird, damit das Fahrzeug jederzeit einsatzbereit ist.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -715,7 +741,7 @@
       "absaetze": [
         {
           "absatz_id": "P29",
-          "text": "Stoff: Kraftstofftank an Verbrennungsmotor. Elektrisch: Traktionsbatterie über Leistungselektronik an Traktionsmaschine, Ladeeinrichtung an Traktionsbatterie, Generator und Gleichspannungswandler an Niedervolt-Bordnetz, Zusatzbatterie an Stromverteiler, Stromverteiler an Signalsteuergerät und Fahrzeugfunkgerät, Signalsteuergerät an Warnleuchten und Einsatzhorn, Fremdeinspeisung an Zusatzbatterie. Mechanisch: Kraftübertragung an Räder und Reifen, Lenkgetriebe an Achsen, Nebenaggregatetrieb an Generator, Anhängevorrichtung an Karosserie. Pneumatisch: Unterdruckpumpe an Bremskraftverstärker. Information: Signalbedienteil und Lenkrad an Signalsteuergerät, Gateway und Funkgerät an Einsatzrechner, Anhaltesignal an Videoaufzeichnung, Fahrzeugbus an Fahrzeugmanagement, Umfeldsensorik über Notbremsassistent an Bremsregelung. Thermisch: Antrieb an Kühlkreislauf, Batterietemperierung an Traktionsbatterie, Klimaanlage an Fondraum.",
+          "text": "Stoff: Kraftstofftank an Verbrennungsmotor. Elektrisch: Traktionsbatterie über Hochvoltverteilung und Leistungselektronik an Traktionsmaschine, Hochvoltverteilung an Gleichspannungswandler, Ladeeinrichtung an Traktionsbatterie, Generator und Gleichspannungswandler an Niedervolt-Bordnetz, Niedervolt-Bordnetz über Batterietrennrelais oder Ladewandler an Zusatzbatterie, Zusatzbatterie an Stromverteiler, Stromverteiler an Signalsteuergerät und Fahrzeugfunkgerät, Signalsteuergerät an Warnleuchten und Einsatzhorn, Fremdeinspeisung an Zusatzbatterie. Mechanisch: Kraftübertragung an Räder und Reifen, Lenkgetriebe an Achsen, Nebenaggregatetrieb an Generator, Anhängevorrichtung an Karosserie. Pneumatisch: Unterdruckpumpe an Bremskraftverstärker. Information: Signalbedienteil und Lenkrad an Signalsteuergerät, Gateway und Funkgerät an Einsatzrechner, Anhaltesignal an Videoaufzeichnung, Fahrzeugbus an Fahrzeugmanagement, Umfeldsensorik über Notbremsassistent an Bremsregelung. Thermisch: Antrieb an Kühlkreislauf, Batterietemperierung an Traktionsbatterie, Klimaanlage an Fondraum.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -743,7 +769,7 @@
       "absaetze": [
         {
           "absatz_id": "P30",
-          "text": "Fahrzeuglasten tragen – Karosserie, Fahrwerk; Antriebsleistung erzeugen – Antriebseinheit; Drehmoment übertragen – Kraftübertragung; Fahrzeug fortbewegen – Antriebssystem, Räder und Reifen; Energie speichern – Kraftstoffanlage, Hochvolt-Energiespeichersystem, Niedervolt-Energieversorgung; Treibstoff fördern – Kraftstoffpumpe; Traktionsbatterie laden – Ladeeinrichtung, Fremdeinspeisung; Elektrische Energie verteilen – Niedervolt-Bordnetz; Arbeitsgeräte versorgen – Zusatzbatterie, Stromverteiler; Fahrzeug lenken – Lenkbetätigung, Lenkgetriebe, Lenkunterstützung; Fahrzeug verzögern – Betriebsbremse; Bremsenergie zurückgewinnen – Traktionsmaschine, Bremsregelung; Fahrzeug festhalten – Feststellbremse; Fahrereingaben erfassen – Bedienelemente, Signalbedienteil, Lenkrad; Fahrerinformationen anzeigen – Kombiinstrument, Einsatzrechner; Insassen schützen – Rückhaltesystem, Trennwand, Schutzpaneele, Insassenschutzsteuergerät; Ladung aufnehmen – Laderaum, Ausrüstungsfächer, Diensthundebox; Anhänger ziehen – Anhängevorrichtung; Daten übertragen – Fahrzeugbus, Gateway, Fahrzeugfunkgerät, Telematikeinheit; Fahrzeugposition bestimmen – Navigation, Fahrzeugfunkgerät; Fahrzeugzustand überwachen – Fahrzeugmanagement, Diagnose; Einsatzgeschehen aufzeichnen – Videoaufzeichnung, Kennzeichenerkennung, Geschwindigkeitsmessanlage; Fahrzeugumfeld erfassen – Umfeldsensorik, Annäherungswarnung; Lichtsignale abgeben – Sondersignalanlage, Anhaltesignalanlage, Leuchten; Schallsignale abgeben – Einsatzhorn, Anhaltehorn; Fahrzeugumgebung ausleuchten – Scheinwerfer, Suchscheinwerfer; Fahrersicht sicherstellen – Sichtsysteme; Betriebstemperatur regeln – Kühlkreislauf, Batterietemperierung; Innenraum klimatisieren – Heiz- und Klimaanlage; Unterdruck bereitstellen – Unterdruckpumpe.",
+          "text": "Fahrzeuglasten tragen – Karosserie, Fahrwerk; Antriebsleistung erzeugen – Antriebseinheit; Drehmoment übertragen – Kraftübertragung; Fahrzeug fortbewegen – Antriebssystem, Räder und Reifen; Energie speichern – Kraftstoffanlage, Hochvolt-Energiespeichersystem, Niedervolt-Energieversorgung; Treibstoff fördern – Kraftstoffpumpe; Traktionsbatterie laden – Ladeeinrichtung; Elektrische Energie verteilen – Niedervolt-Bordnetz, Hochvoltverteilung, Batterietrennrelais oder Ladewandler, Fremdeinspeisung; Arbeitsgeräte versorgen – Zusatzbatterie, Stromverteiler; Fahrzeug lenken – Lenkbetätigung, Lenkgetriebe, Lenkunterstützung; Fahrzeug verzögern – Betriebsbremse; Bremsenergie zurückgewinnen – Traktionsmaschine, Bremsregelung; Fahrzeug festhalten – Feststellbremse; Fahrereingaben erfassen – Bedienelemente, Signalbedienteil, Lenkrad; Fahrerinformationen anzeigen – Kombiinstrument, Einsatzrechner; Insassen schützen – Rückhaltesystem, Trennwand, Schutzpaneele, Insassenschutzsteuergerät; Ladung aufnehmen – Laderaum, Ausrüstungsfächer, Diensthundebox; Anhänger ziehen – Anhängevorrichtung; Daten übertragen – Fahrzeugbus, Gateway, Fahrzeugfunkgerät, Telematikeinheit; Fahrzeugposition bestimmen – Navigation, Fahrzeugfunkgerät; Fahrzeugzustand überwachen – Fahrzeugmanagement, Diagnose; Einsatzgeschehen aufzeichnen – Videoaufzeichnung, Kennzeichenerkennung, Geschwindigkeitsmessanlage; Fahrzeugumfeld erfassen – Umfeldsensorik, Annäherungswarnung; Lichtsignale abgeben – Sondersignalanlage, Anhaltesignalanlage, Leuchten; Schallsignale abgeben – Einsatzhorn, Anhaltehorn; Fahrzeugumgebung ausleuchten – Scheinwerfer, Suchscheinwerfer; Fahrersicht sicherstellen – Sichtsysteme, Rundumsichtkamera; Betriebstemperatur regeln – Kühlkreislauf, Batterietemperierung; Innenraum klimatisieren – Heiz- und Klimaanlage; Unterdruck bereitstellen – Unterdruckpumpe.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -763,11 +789,11 @@
   "modell": {
     "elemente": [
       {"id": "E1", "name": "Polizeifahrzeug", "typ": "gesamtsystem", "eltern_id": null, "absatz_ids": ["P1", "P3", "P26"]},
-      {"id": "E2", "name": "Fahrzeugstruktur und Fahrwerk", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P4", "P5"], "kategorie": "struktur_fahrwerk"},
+      {"id": "E2", "name": "Fahrzeugstruktur und Fahrwerk", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P4", "P5", "P31"], "kategorie": "struktur_fahrwerk"},
       {"id": "E3", "name": "Karosserie", "typ": "subsystem", "eltern_id": "E2", "absatz_ids": ["P4"]},
       {"id": "E4", "name": "Rohbau", "typ": "komponente", "eltern_id": "E3", "absatz_ids": ["P4"]},
       {"id": "E5", "name": "Türen", "typ": "komponente", "eltern_id": "E3", "absatz_ids": ["P4", "P5"]},
-      {"id": "E6", "name": "Polizeikennzeichnung", "typ": "komponente", "eltern_id": "E3", "absatz_ids": ["P4"]},
+      {"id": "E6", "name": "Polizeikennzeichnung", "typ": "komponente", "eltern_id": "E3", "absatz_ids": ["P4", "P31"]},
       {"id": "E7", "name": "Schubbügel", "typ": "komponente", "eltern_id": "E3", "absatz_ids": ["P4", "P5"]},
       {"id": "E8", "name": "Ballistische Schutzpaneele", "typ": "komponente", "eltern_id": "E3", "absatz_ids": ["P4", "P5"]},
       {"id": "E9", "name": "Fahrwerk", "typ": "subsystem", "eltern_id": "E2", "absatz_ids": ["P4"]},
@@ -791,11 +817,13 @@
       {"id": "E27", "name": "Hochvolt-Energiespeichersystem", "typ": "subsystem", "eltern_id": "E23", "absatz_ids": ["P8"]},
       {"id": "E28", "name": "Traktionsbatterie", "typ": "komponente", "eltern_id": "E27", "absatz_ids": ["P8"]},
       {"id": "E29", "name": "Ladeeinrichtung", "typ": "komponente", "eltern_id": "E27", "absatz_ids": ["P8"]},
+      {"id": "E121", "name": "Hochvoltverteilung", "typ": "komponente", "eltern_id": "E27", "absatz_ids": ["P8"]},
       {"id": "E30", "name": "Niedervolt-Energieversorgung", "typ": "subsystem", "eltern_id": "E23", "absatz_ids": ["P8"]},
       {"id": "E31", "name": "Starterbatterie", "typ": "komponente", "eltern_id": "E30", "absatz_ids": ["P8"]},
       {"id": "E32", "name": "Zusatzbatterie", "typ": "komponente", "eltern_id": "E30", "absatz_ids": ["P8", "P9"]},
       {"id": "E33", "name": "Generator", "typ": "komponente", "eltern_id": "E30", "absatz_ids": ["P8", "P9"]},
       {"id": "E34", "name": "Gleichspannungswandler", "typ": "komponente", "eltern_id": "E30", "absatz_ids": ["P8"]},
+      {"id": "E119", "name": "Batterietrennrelais oder Ladewandler", "typ": "komponente", "eltern_id": "E30", "absatz_ids": ["P8"]},
       {"id": "E35", "name": "Lenksystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P10"], "kategorie": "lenkung"},
       {"id": "E36", "name": "Lenkbetätigung", "typ": "subsystem", "eltern_id": "E35", "absatz_ids": ["P10"]},
       {"id": "E37", "name": "Lenkrad", "typ": "komponente", "eltern_id": "E36", "absatz_ids": ["P10"]},
@@ -804,7 +832,7 @@
       {"id": "E40", "name": "Lenkunterstützung", "typ": "komponente", "eltern_id": "E35", "absatz_ids": ["P10"]},
       {"id": "E41", "name": "Bremssystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P11"], "kategorie": "bremse"},
       {"id": "E42", "name": "Betriebsbremse", "typ": "subsystem", "eltern_id": "E41", "absatz_ids": ["P11"]},
-      {"id": "E43", "name": "Bremskraftverstärker", "typ": "komponente", "eltern_id": "E42", "absatz_ids": ["P11"]},
+      {"id": "E43", "name": "Bremskraftverstärker", "typ": "komponente", "eltern_id": "E42", "absatz_ids": ["P11", "P25"]},
       {"id": "E44", "name": "Radbremsen", "typ": "komponente", "eltern_id": "E42", "absatz_ids": ["P11"]},
       {"id": "E45", "name": "Feststellbremse", "typ": "komponente", "eltern_id": "E41", "absatz_ids": ["P11"]},
       {"id": "E46", "name": "Bremsregelung", "typ": "komponente", "eltern_id": "E41", "absatz_ids": ["P11"]},
@@ -848,11 +876,12 @@
       {"id": "E84", "name": "Umfeldsensorik", "typ": "subsystem", "eltern_id": "E83", "absatz_ids": ["P20"]},
       {"id": "E85", "name": "Rundumsichtkamera", "typ": "komponente", "eltern_id": "E84", "absatz_ids": ["P20"]},
       {"id": "E86", "name": "Radarsensor", "typ": "komponente", "eltern_id": "E84", "absatz_ids": ["P20"]},
+      {"id": "E120", "name": "Frontkamera", "typ": "komponente", "eltern_id": "E84", "absatz_ids": ["P20"]},
       {"id": "E87", "name": "Notbremsassistent", "typ": "komponente", "eltern_id": "E83", "absatz_ids": ["P20"]},
       {"id": "E88", "name": "Annäherungswarnung", "typ": "komponente", "eltern_id": "E83", "absatz_ids": ["P20"]},
       {"id": "E89", "name": "Insassenschutzsteuergerät", "typ": "komponente", "eltern_id": "E83", "absatz_ids": ["P20"]},
-      {"id": "E90", "name": "Beleuchtung und Sicht", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P21", "P22", "P23"], "kategorie": "beleuchtung_sicht"},
-      {"id": "E91", "name": "Sondersignalanlage", "typ": "subsystem", "eltern_id": "E90", "absatz_ids": ["P23"]},
+      {"id": "E90", "name": "Beleuchtung und Sicht", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P21", "P22", "P23", "P32"], "kategorie": "beleuchtung_sicht"},
+      {"id": "E91", "name": "Sondersignalanlage", "typ": "subsystem", "eltern_id": "E90", "absatz_ids": ["P23", "P32"]},
       {"id": "E92", "name": "Warnleuchten für blaues Blinklicht", "typ": "komponente", "eltern_id": "E91", "absatz_ids": ["P21", "P23"]},
       {"id": "E93", "name": "Heckwarnsystem", "typ": "komponente", "eltern_id": "E91", "absatz_ids": ["P21", "P23"]},
       {"id": "E94", "name": "Einsatzhorn", "typ": "komponente", "eltern_id": "E91", "absatz_ids": ["P22", "P23"]},
@@ -888,8 +917,8 @@
       {"id": "F4", "name": "Fahrzeug fortbewegen", "ausgefuehrt_von": ["E13", "E12"], "absatz_ids": ["P6", "P30"]},
       {"id": "F5", "name": "Energie speichern", "ausgefuehrt_von": ["E24", "E27", "E30"], "absatz_ids": ["P8", "P30"]},
       {"id": "F6", "name": "Treibstoff fördern", "ausgefuehrt_von": ["E26"], "absatz_ids": ["P8", "P30"]},
-      {"id": "F7", "name": "Traktionsbatterie laden", "ausgefuehrt_von": ["E29", "E118"], "absatz_ids": ["P8", "P25", "P30"]},
-      {"id": "F8", "name": "Elektrische Energie verteilen", "ausgefuehrt_von": ["E63"], "absatz_ids": ["P15", "P30"]},
+      {"id": "F7", "name": "Traktionsbatterie laden", "ausgefuehrt_von": ["E29"], "absatz_ids": ["P8", "P30"]},
+      {"id": "F8", "name": "Elektrische Energie verteilen", "ausgefuehrt_von": ["E63", "E121", "E119", "E118"], "absatz_ids": ["P8", "P15", "P25", "P30"]},
       {"id": "F9", "name": "Arbeitsgeräte versorgen", "ausgefuehrt_von": ["E32", "E64"], "absatz_ids": ["P8", "P9", "P30"]},
       {"id": "F10", "name": "Fahrzeug lenken", "ausgefuehrt_von": ["E36", "E39", "E40"], "absatz_ids": ["P10", "P30"]},
       {"id": "F11", "name": "Fahrzeug verzögern", "ausgefuehrt_von": ["E42"], "absatz_ids": ["P11", "P30"]},
@@ -908,14 +937,14 @@
       {"id": "F24", "name": "Lichtsignale abgeben", "ausgefuehrt_von": ["E91", "E96", "E102"], "absatz_ids": ["P23", "P30"]},
       {"id": "F25", "name": "Schallsignale abgeben", "ausgefuehrt_von": ["E94", "E99"], "absatz_ids": ["P22", "P23", "P30"]},
       {"id": "F26", "name": "Fahrzeugumgebung ausleuchten", "ausgefuehrt_von": ["E101", "E103"], "absatz_ids": ["P23", "P30"]},
-      {"id": "F27", "name": "Fahrersicht sicherstellen", "ausgefuehrt_von": ["E104"], "absatz_ids": ["P23", "P30"]},
+      {"id": "F27", "name": "Fahrersicht sicherstellen", "ausgefuehrt_von": ["E104", "E85"], "absatz_ids": ["P20", "P23", "P30"]},
       {"id": "F28", "name": "Betriebstemperatur regeln", "ausgefuehrt_von": ["E109", "E114"], "absatz_ids": ["P24", "P30"]},
       {"id": "F29", "name": "Innenraum klimatisieren", "ausgefuehrt_von": ["E110"], "absatz_ids": ["P24", "P30"]},
       {"id": "F30", "name": "Unterdruck bereitstellen", "ausgefuehrt_von": ["E117"], "absatz_ids": ["P25", "P30"]}
     ],
     "fluesse": [
       {"id": "S1", "von": "E25", "nach": "E15", "art": "stoff", "medium": "Kraftstoff", "absatz_ids": ["P8", "P29"], "schnittstelle": "Kraftstoffzulauf"},
-      {"id": "S2", "von": "E28", "nach": "E17", "art": "elektrisch", "medium": "Hochvolt-Gleichstrom", "absatz_ids": ["P6", "P29"], "schnittstelle": "Hochvolt-Schnittstelle"},
+      {"id": "S2", "von": "E121", "nach": "E17", "art": "elektrisch", "medium": "Hochvolt-Gleichstrom", "absatz_ids": ["P6", "P8", "P29"], "schnittstelle": "Hochvolt-Schnittstelle"},
       {"id": "S3", "von": "E17", "nach": "E16", "art": "elektrisch", "medium": "Wechselstrom", "absatz_ids": ["P6", "P29"]},
       {"id": "S4", "von": "E14", "nach": "E18", "art": "mechanisch", "medium": "Drehmoment", "absatz_ids": ["P6", "P29"]},
       {"id": "S5", "von": "E18", "nach": "E12", "art": "mechanisch", "medium": "Drehmoment", "absatz_ids": ["P6", "P29"], "schnittstelle": "Radantrieb"},
@@ -943,7 +972,11 @@
       {"id": "S27", "von": "E110", "nach": "E53", "art": "thermisch", "medium": "temperierte Luft", "absatz_ids": ["P24", "P29"], "schnittstelle": "Luftführung Fond"},
       {"id": "S28", "von": "E61", "nach": "E3", "art": "mechanisch", "medium": "Zug- und Stützlast", "absatz_ids": ["P14", "P29"], "schnittstelle": "Befestigung am Rohbau"},
       {"id": "S29", "von": "E67", "nach": "E81", "art": "information", "medium": "Busbotschaften", "absatz_ids": ["P15", "P19", "P29"], "schnittstelle": "Fahrzeugbus"},
-      {"id": "S30", "von": "E118", "nach": "E32", "art": "elektrisch", "medium": "Ladestrom", "absatz_ids": ["P25", "P29"], "schnittstelle": "Fremdeinspeisungsanschluss"}
+      {"id": "S30", "von": "E118", "nach": "E32", "art": "elektrisch", "medium": "Ladestrom", "absatz_ids": ["P25", "P29"], "schnittstelle": "Fremdeinspeisungsanschluss"},
+      {"id": "S31", "von": "E28", "nach": "E121", "art": "elektrisch", "medium": "Hochvolt-Gleichstrom", "absatz_ids": ["P8", "P29"]},
+      {"id": "S32", "von": "E121", "nach": "E34", "art": "elektrisch", "medium": "Hochvolt-Gleichstrom", "absatz_ids": ["P8", "P29"]},
+      {"id": "S33", "von": "E63", "nach": "E119", "art": "elektrisch", "medium": "Niedervolt-Gleichstrom", "absatz_ids": ["P8", "P29"], "schnittstelle": "Ladeanschluss Zusatzbatterie"},
+      {"id": "S34", "von": "E119", "nach": "E32", "art": "elektrisch", "medium": "Ladestrom", "absatz_ids": ["P8", "P29"]}
     ],
     "entfallene_kategorien": [],
     "varianten": [
@@ -958,7 +991,7 @@
           {"element_id": "E30", "beschreibung": "Generator oder Gleichspannungswandler speist das Niedervolt-Bordnetz"},
           {"element_id": "E108", "beschreibung": "Kühlkreislauf für Motor oder Leistungselektronik, zusätzlich Batterietemperierung"},
           {"element_id": "E46", "beschreibung": "Koordination von Reibbremse und Rückgewinnung"},
-          {"element_id": "E115", "beschreibung": "Nebenaggregatetrieb nur beim Verbrennungsmotor, Unterdruckpumpe bei fehlendem Motorunterdruck"}
+          {"element_id": "E115", "beschreibung": "Nebenaggregatetrieb nur beim Verbrennungsmotor, Unterdruckpumpe nur bei unterdruckbetriebenem Bremskraftverstärker ohne ausreichenden Motorunterdruck"}
         ],
         "absatz_ids": ["P6", "P7", "P8", "P24", "P25"]
       },
@@ -966,15 +999,16 @@
         "id": "V2",
         "element_id": "E3",
         "bezeichnung": "Erscheinungsbild",
-        "alternativen": ["Uniformiert mit Polizeikennzeichnung und Dachbalken", "Zivil ohne Kennzeichnung mit verdeckt eingebauten Signalleuchten"],
-        "auswahlkriterien": ["Einsatzrolle, etwa Streifendienst, Verkehrsüberwachung oder Ermittlung", "gewünschte Präsenzwirkung", "Erkennbarkeit für Hubschrauber und andere Verkehrsteilnehmer", "Wiederverkauf oder Leasingrückgabe"],
+        "alternativen": ["Uniformiert mit Polizeikennzeichnung und Dachbalken", "Teilmarkiert mit unauffälliger oder reflektierender Markierung", "Zivil ohne Kennzeichnung mit verdeckt oder versenkbar eingebauten Signalleuchten", "Zivil mit bei Bedarf aufgesetzter Kennleuchte"],
+        "auswahlkriterien": ["Einsatzrolle, etwa Streifendienst, Verkehrsüberwachung oder Ermittlung", "gewünschte Präsenzwirkung", "Erkennbarkeit für Hubschrauber und andere Verkehrsteilnehmer", "Wiederverkauf oder Leasingrückgabe", "Zulässigkeit ziviler Fahrzeuge für Anhaltekontrollen im Rechtsraum"],
         "auswirkungen": [
-          {"element_id": "E6", "beschreibung": "Folierung und Konturmarkierung entfallen beim zivilen Fahrzeug"},
-          {"element_id": "E91", "beschreibung": "Dachbalken oder verdeckte Warnleuchten hinter Kühlergrill und Scheiben"},
+          {"element_id": "E6", "beschreibung": "Folierung und Konturmarkierung entfallen beim zivilen Fahrzeug, beim teilmarkierten Fahrzeug unauffällige oder reflektierende Markierung"},
+          {"element_id": "E91", "beschreibung": "Dachbalken, verdeckt etwa im Kühlergrill oder versenkbar eingebaute Warnleuchten oder bei Bedarf aufgesetzte Kennleuchte"},
           {"element_id": "E96", "beschreibung": "Anordnung von Anhaltesignal und Signalgeber für Lichtschrift im Innenraum oder Dachaufbau"},
-          {"element_id": "E73", "beschreibung": "unauffällige Antennenanordnung beim zivilen Fahrzeug"}
+          {"element_id": "E73", "beschreibung": "unauffällige Antennenanordnung beim zivilen Fahrzeug"},
+          {"element_id": "E64", "beschreibung": "Steckanschluss für die aufsetzbare Kennleuchte statt fester Leitungen zum Dach"}
         ],
-        "absatz_ids": ["P1", "P4", "P23"]
+        "absatz_ids": ["P1", "P4", "P23", "P31", "P32"]
       },
       {
         "id": "V3",
@@ -1031,15 +1065,28 @@
           {"element_id": "E13", "beschreibung": "verfügbare Antriebe und Allradantrieb"}
         ],
         "absatz_ids": ["P2", "P4"]
+      },
+      {
+        "id": "V7",
+        "element_id": "E43",
+        "bezeichnung": "Bauart der Bremskraftverstärkung",
+        "alternativen": ["Unterdruckverstärker mit Motorunterdruck", "Unterdruckverstärker mit Unterdruckpumpe", "Elektromechanischer Bremskraftverstärker"],
+        "auswahlkriterien": ["Antriebsart und verfügbarer Motorunterdruck", "Angebot der gewählten Fahrzeugbasis", "Umfang der Bremsenergierückgewinnung", "Belastbarkeit des Niedervolt-Bordnetzes"],
+        "auswirkungen": [
+          {"element_id": "E117", "beschreibung": "Unterdruckpumpe entfällt beim elektromechanischen Verstärker und beim Unterdruckverstärker mit Motorunterdruck"},
+          {"element_id": "E63", "beschreibung": "zusätzlicher Verbraucher im Niedervolt-Bordnetz beim elektromechanischen Verstärker oder bei der Unterdruckpumpe"},
+          {"element_id": "E46", "beschreibung": "Koordination von Reibbremse und Rückgewinnung über den elektromechanischen Verstärker"}
+        ],
+        "absatz_ids": ["P11", "P25"]
       }
     ],
     "klaerungsfragen": [
       {"id": "K1", "frage": "Für welchen Rechtsraum und welche Polizeibehörde wird das Fahrzeug ausgelegt?", "element_ids": ["E1"], "anlass": "anforderung", "relevanz": "Davon hängen zulässige Signalanlagen, Kennzeichnung, Funksystem und Zulassung ab."},
       {"id": "K2", "frage": "Soll das Fahrzeug auf einer Limousine oder einem Kombi, einem SUV oder einem Kleinbus aufbauen?", "element_ids": ["E2", "E3"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Laderaum, Sitzplätze, Dachaufbau und verfügbare Antriebe ab.", "variante_ids": ["V6"]},
-      {"id": "K3", "frage": "Wird das Fahrzeug uniformiert mit Kennzeichnung und Dachbalken oder zivil mit verdeckt eingebauten Signalleuchten ausgeführt?", "element_ids": ["E3", "E6", "E91"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Polizeikennzeichnung, Anordnung der Warnleuchten und Antennen ab.", "variante_ids": ["V2"]},
+      {"id": "K3", "frage": "Wird das Fahrzeug uniformiert mit Kennzeichnung und Dachbalken, teilmarkiert mit unauffälliger oder reflektierender Markierung, zivil mit verdeckt oder versenkbar eingebauten Signalleuchten oder zivil mit bei Bedarf aufgesetzter Kennleuchte ausgeführt?", "element_ids": ["E3", "E6", "E91", "E64"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Polizeikennzeichnung, Anordnung der Warnleuchten und Antennen sowie die Stromversorgung der Signalanlage ab.", "variante_ids": ["V2"]},
       {"id": "K4", "frage": "Welche Schutzausstattung, etwa ein Schubbügel oder ballistische Schutzpaneele in den Türen, wird gefordert?", "element_ids": ["E2", "E7", "E8"], "anlass": "anforderung", "relevanz": "Davon hängen Fahrzeugmasse, Fahrwerksabstimmung und die Verträglichkeit mit Sensorik und Insassenschutz ab.", "variante_ids": ["V4"]},
       {"id": "K5", "frage": "Soll das Fahrzeug mit Verbrennungsmotor, als Vollhybrid oder batterieelektrisch angetrieben werden?", "element_ids": ["E13", "E14"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Energiespeicher, Thermomanagement, Bremsregelung und Nebenaggregate ab.", "variante_ids": ["V1"]},
-      {"id": "K6", "frage": "Wie lange muss die Einsatzausrüstung im Stand ohne Fahrbetrieb versorgt werden können?", "element_ids": ["E23", "E30", "E32"], "anlass": "anforderung", "relevanz": "Davon hängen Größe der Zusatzbatterie, Generatorleistung und die Strategie für den gesicherten Leerlauf ab.", "variante_ids": ["V1"]},
+      {"id": "K6", "frage": "Wie lange muss die Einsatzausrüstung im Stand ohne Fahrbetrieb versorgt werden können?", "element_ids": ["E23", "E30", "E32"], "anlass": "anforderung", "relevanz": "Davon hängen Größe der Zusatzbatterie, Generatorleistung, die Strategie für den gesicherten Leerlauf und die Auslegung der Batterietrennung ab.", "variante_ids": ["V1"]},
       {"id": "K7", "frage": "Sollen Sondersignal und Funkmikrofon über Tasten am Lenkrad bedienbar sein?", "element_ids": ["E35", "E37", "E95"], "anlass": "schnittstelle", "relevanz": "Davon hängt ab, ob eine Schnittstelle zwischen Lenkrad und Signalsteuergerät vorzusehen ist."},
       {"id": "K8", "frage": "Wie viele aufeinanderfolgende Vollbremsungen aus hoher Geschwindigkeit muss das Bremssystem ohne Leistungsabfall bewältigen?", "element_ids": ["E41", "E44"], "anlass": "anforderung", "relevanz": "Davon hängen Auslegung der Radbremsen und ihre Kühlung ab."},
       {"id": "K9", "frage": "Dient der Fond als normaler Sitzplatz, als gesichertes Transportabteil hinter einer Trennwand oder als Diensthundbereich?", "element_ids": ["E47", "E53", "E56"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Sitze, Trennwand, Türbetätigung und Fondklimatisierung ab.", "variante_ids": ["V3"]},
@@ -1050,7 +1097,8 @@
       {"id": "K14", "frage": "Darf der Fahrer den Notbremsassistenten im Einsatz vorübergehend abschalten?", "element_ids": ["E83", "E87"], "anlass": "betrieb", "relevanz": "Davon hängen Bedienkonzept und Sicherheitsnachweis der Assistenzfunktionen ab."},
       {"id": "K15", "frage": "Welche Signaleinrichtungen, also blaues Blinklicht, Heckwarnsystem, Anhaltesignal und Anhaltehorn, soll das Fahrzeug führen?", "element_ids": ["E90", "E91", "E96"], "anlass": "anforderung", "relevanz": "Davon hängen Umfang von Sondersignal- und Anhaltesignalanlage und die Verriegelungen im Signalsteuergerät ab.", "variante_ids": ["V2"]},
       {"id": "K16", "frage": "Unter welchen klimatischen Bedingungen muss das Fahrzeug im Leerlauf mit voller Ausrüstungslast betrieben werden?", "element_ids": ["E108", "E109", "E110"], "anlass": "betrieb", "relevanz": "Davon hängen Kühlleistung und Auslegung der Heiz- und Klimaanlage ab."},
-      {"id": "K17", "frage": "Soll das Fahrzeug auf der Dienststelle über eine Fremdeinspeisung nachgeladen werden?", "element_ids": ["E115", "E118"], "anlass": "betrieb", "relevanz": "Davon hängen Ladeanschluss, Ladeerhaltung der Zusatzbatterie und die Einsatzbereitschaft bei Dienstbeginn ab."}
+      {"id": "K17", "frage": "Soll das Fahrzeug auf der Dienststelle über eine Fremdeinspeisung nachgeladen werden?", "element_ids": ["E115", "E118"], "anlass": "betrieb", "relevanz": "Davon hängen Ladeanschluss, Ladeerhaltung der Zusatzbatterie und die Einsatzbereitschaft bei Dienstbeginn ab."},
+      {"id": "K18", "frage": "Welche Bauart der Bremskraftverstärkung bietet die gewählte Fahrzeugbasis?", "element_ids": ["E41", "E43"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Unterdruckpumpe, Last im Niedervolt-Bordnetz und die Koordination von Reibbremse und Rückgewinnung ab.", "variante_ids": ["V7"]}
     ],
     "anforderungsthemen": [
       {"id": "R1", "element_ids": ["E1"], "thema": "Sonderrechte und Wegerecht", "kenngroessen": ["berechtigte Organisation", "Einsatzlagen für blaues Blinklicht mit Einsatzhorn", "Einsatzlagen für blaues Blinklicht allein"], "regelwerke": [
@@ -1076,7 +1124,8 @@
         {"bezeichnung": "StVZO § 55 Einrichtungen für Schallzeichen (Deutschland, Einsatzhorn und Anhaltehorn)", "quellen_id": "Q5", "fundstelle": "§ 55 Abs. 3 und 3a"}
       ]},
       {"id": "R15", "element_ids": ["E108", "E109", "E110"], "thema": "Thermische Belastbarkeit im Leerlauf", "kenngroessen": ["Kühlleistung", "Außentemperaturbereich", "Innenraumtemperatur im Standbetrieb"]},
-      {"id": "R16", "element_ids": ["E115", "E118"], "thema": "Einsatzbereitschaft zwischen den Einsätzen", "kenngroessen": ["Ladezustand bei Dienstbeginn", "Nachladezeit"]}
+      {"id": "R16", "element_ids": ["E115", "E118"], "thema": "Einsatzbereitschaft zwischen den Einsätzen", "kenngroessen": ["Ladezustand bei Dienstbeginn", "Nachladezeit"]},
+      {"id": "R17", "element_ids": ["E62", "E71", "E73"], "thema": "Elektromagnetische Verträglichkeit von Funk und Ausrüstung", "kenngroessen": ["Sendeleistung und Frequenzbereiche der Funkgeräte", "Antennenpositionen", "Störfestigkeit der Fahrzeugsteuergeräte", "Störaussendung der Ausrüstung"]}
     ]
   },
   "offene_punkte": [
@@ -1088,6 +1137,7 @@
     "Recherche: Schutzklassen ballistischer Fahrzeugpanzerung für Streifenwagen (Suchbegriffe: VPAM Fahrzeug Schutzklasse, NIJ ballistic panels police vehicle doors), um R3 mit Regelwerk zu belegen.",
     "Recherche: Erfahrungsberichte deutscher Landespolizeien zu batterieelektrischen Streifenwagen (Suchbegriffe: Elektro-Streifenwagen Pilotprojekt Polizei Reichweite Standbetrieb), um V1 und P8 zu belegen.",
     "Recherche: Funktionsbeschreibung der Umfeldwarnung im Stand (police perimeter alert) in Herstellerunterlagen, um P20 zu belegen.",
-    "Recherche: Ladeerhaltung und Fremdeinspeisung bei abgestellten Einsatzfahrzeugen (Suchbegriffe: Einsatzfahrzeug Ladeerhaltung Fremdeinspeisung Wache), um die Modellannahme in P25 zu prüfen."
+    "Recherche: Ladeerhaltung und Fremdeinspeisung bei abgestellten Einsatzfahrzeugen (Suchbegriffe: Einsatzfahrzeug Ladeerhaltung Fremdeinspeisung Wache), um die Modellannahme in P25 zu prüfen.",
+    "Recherche: Regelwerk zur elektromagnetischen Verträglichkeit von Fahrzeugen und eingebauten Funkanlagen für R17 (Suchbegriff: UN-Regelung Nr. 10 elektromagnetische Verträglichkeit Funkeinbau Einsatzfahrzeug); in diesem Lauf nicht abgerufen."
   ]
 }

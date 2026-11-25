@@ -353,14 +353,15 @@
         },
         {
           "absatz_id": "P17",
-          "text": "Der Führerstand umfasst Fahr-Brems-Schalter, Anzeigeelemente und Fahrersitz und wandelt Fahrereingaben in Sollwerte für Fahrzeugsteuerung und Bremse. Die Wahl zwischen Einrichtungs- und Zweirichtungsfahrzeug ist eine Variante: Zweirichtungsfahrzeuge brauchen an beiden Enden einen Führerstand, beidseitige Signalgeber und Türen auf beiden Längsseiten; Einrichtungsfahrzeuge setzen Wendeschleifen voraus.",
+          "text": "Der Führerstand gliedert sich in den Fahrerarbeitsplatz mit Fahr-Brems-Schalter, Anzeigeelementen und Fahrersitz; ihm sind als Bedienraum auch die im Fahrgastraum angeordneten Sitze zugeordnet. Er wandelt Fahrereingaben in Sollwerte für Fahrzeugsteuerung und Bremse. Die Wahl zwischen Einrichtungs- und Zweirichtungsfahrzeug ist eine Variante: Zweirichtungsfahrzeuge brauchen an beiden Enden einen Führerstand, beidseitige Signalgeber und Türen auf beiden Längsseiten; Einrichtungsfahrzeuge setzen Wendeschleifen voraus.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "P2: Ein- oder Zweirichtungsbetrieb als Modulmerkmal",
               "P16: Fahr-Brems-Schalter",
-              "Q1 § 40 Abs. 2 Nr. 2: Signalgeber bei Zweirichtungsfahrzeugen an beiden Seiten"
+              "Q1 § 40 Abs. 2 Nr. 2: Signalgeber bei Zweirichtungsfahrzeugen an beiden Seiten",
+              "P18: verletzungssicher angeordnete Sitzplätze"
             ],
             "schluss": "Der Richtungsbetrieb bestimmt Anzahl der Führerstände, Signalgeber und Türseiten."
           },
@@ -389,7 +390,7 @@
         },
         {
           "absatz_id": "P19",
-          "text": "Aufbau und Ladung umfasst den Fahrgastraum; zu ihm gehören Sitze, Festhalteeinrichtungen und Notausstiege. Die Zuladung sind Fahrgäste, deren Last der Fahrgastraum in den Wagenkasten einleitet. Bei Teilniederflur liegen Podeste über den Fahrwerken, bei durchgehender Niederflur entfallen sie zulasten des Bauraums für Antrieb und Bremse.",
+          "text": "Aufbau und Ladung umfasst den Fahrgastraum; zu ihm gehören Festhalteeinrichtungen und Notausstiege, während die in ihm angeordneten Sitze zum Führerstand zählen. Die Zuladung sind Fahrgäste, deren Last der Fahrgastraum in den Wagenkasten einleitet. Bei Teilniederflur liegen Podeste über den Fahrwerken, bei durchgehender Niederflur entfallen sie zulasten des Bauraums für Antrieb und Bremse.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -1079,10 +1080,20 @@
         "kategorie": "bedienraum"
       },
       {
+        "id": "E85",
+        "name": "Fahrerarbeitsplatz",
+        "typ": "subsystem",
+        "eltern_id": "E41",
+        "absatz_ids": [
+          "P16",
+          "P17"
+        ]
+      },
+      {
         "id": "E42",
         "name": "Fahr-Brems-Schalter",
         "typ": "komponente",
-        "eltern_id": "E41",
+        "eltern_id": "E85",
         "absatz_ids": [
           "P16",
           "P17"
@@ -1092,7 +1103,7 @@
         "id": "E43",
         "name": "Anzeigeelemente",
         "typ": "komponente",
-        "eltern_id": "E41",
+        "eltern_id": "E85",
         "absatz_ids": [
           "P16",
           "P17"
@@ -1102,7 +1113,7 @@
         "id": "E44",
         "name": "Fahrersitz",
         "typ": "komponente",
-        "eltern_id": "E41",
+        "eltern_id": "E85",
         "absatz_ids": [
           "P16",
           "P17"
@@ -1134,8 +1145,9 @@
         "id": "E47",
         "name": "Sitze",
         "typ": "komponente",
-        "eltern_id": "E46",
+        "eltern_id": "E41",
         "absatz_ids": [
+          "P17",
           "P18",
           "P19"
         ]
@@ -2782,7 +2794,6 @@
     "Glossarvorschlag: Betriebstüren betätigen (Funktion von Türsteuerung und Türantrieben; „Schiebetür betätigen“ deckt die Fahrgasttüren von Schienenfahrzeugen nicht ab).",
     "Glossarvorschlag: Fahrgäste informieren (Funktion des Fahrgastinformationssystems; „Fahrerinformationen anzeigen“ richtet sich nur an den Fahrer).",
     "Glossarvorschlag: Für die Kategorie aufbau_nutzlast fehlt ein Hauptsystemname für Schienen-Personenfahrzeuge; verwendet wurde „Aufbau und Ladung“ mit dem Fahrgastraum als Ladungsteil, wie in den übrigen Schienenfahrzeugartikeln.",
-    "Abweichung von der Zuordnungsliste: Die Sitze (Zuordnung bedienraum) stehen unter dem Fahrgastraum in Aufbau und Ladung, weil sie zur Zuladung gehören; der Fahrersitz bleibt im Führerstand.",
     "Abweichung von der Zuordnungsliste: Statt „Räder und Reifen“ wird „Radsätze und Losräder“ geführt, weil Straßenbahnen Stahlräder ohne Reifen im Sinne des Straßenfahrzeugs haben.",
     "Recherche: amtliche Fassung der BOStrab und PBefG auf gesetze-im-internet.de (in diesem Lauf nicht erreichbar, Verbindungsabbruch) sowie Anlage 2 BOStrab (Bremsverzögerungstabellen) und Technische Regeln Bremsen zur Präzisierung von R5.",
     "Recherche: Rückstromführung und Hilfsbetriebeumrichter von Straßenbahnen (Suchbegriffe: Bahnrückstrom Straßenbahn Schienen; Hilfsbetriebeumrichter Straßenbahn Bordnetz) zur Belegung von P12 und P20.",

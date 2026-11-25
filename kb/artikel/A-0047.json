@@ -224,17 +224,19 @@
         },
         {
           "absatz_id": "P5",
-          "text": "Fahrzeugstruktur und Fahrwerk gliedern sich in den Rahmen mit Vorderwagen, Hinterwagen, Knickgelenk und Heckgegengewicht sowie das Fahrwerk mit Vorderachse und Hinterachse; Räder und Reifen übertragen die Lasten auf den Boden. Das Heckgegengewicht gleicht das Kippmoment der beladenen Schaufel um die Vorderachse aus und bestimmt so die Kipplast. Ohne Achsfederung kommt die Nachgiebigkeit vor allem aus den Reifen. Bei Allrad-Achsschenkellenkung ist der Rahmen ungeteilt.",
+          "text": "Fahrzeugstruktur und Fahrwerk gliedern sich in den Rahmen mit Vorderwagen, Hinterwagen, Knickgelenk, Heckgegengewicht und dem am Vorderwagen gelagerten Hubrahmen sowie das Fahrwerk mit Vorderachse und Hinterachse; Räder und Reifen übertragen die Lasten auf den Boden. Der Hubrahmen ist das tragende Strukturglied der Arbeitsausrüstung und leitet die Ladungslast in den Vorderwagen. Das Heckgegengewicht gleicht das Kippmoment der beladenen Schaufel um die Vorderachse aus und bestimmt so die Kipplast. Ohne Achsfederung kommt die Nachgiebigkeit vor allem aus den Reifen. Bei Allrad-Achsschenkellenkung ist der Rahmen ungeteilt.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "P4",
               "P10",
+              "P16",
               "Hebelgesetz: Die Last vor der Vorderachse erzeugt ein Kippmoment, das nur eine Masse hinter der Vorderachse ausgleichen kann",
-              "Q6 Abschnitt Vorteile: Kipplast als maximale Nutzlast vor dem Kippen nach vorn"
+              "Q6 Abschnitt Vorteile: Kipplast als maximale Nutzlast vor dem Kippen nach vorn",
+              "Glossar-Zuordnungsliste: Rahmen gehört zu struktur_fahrwerk; der Hubrahmen ist ein lasttragendes Strukturglied, das am Vorderwagen angelenkt ist"
             ],
-            "schluss": "Der Rahmen braucht neben Vorder- und Hinterwagen ein Gegengewicht im Heck; bei Achsschenkellenkung entfällt die Rahmenteilung."
+            "schluss": "Der Rahmen braucht neben Vorder- und Hinterwagen ein Gegengewicht im Heck und trägt mit dem Hubrahmen die Ladungslast in den Vorderwagen; bei Achsschenkellenkung entfällt die Rahmenteilung."
           },
           "sicherheit": "mittel",
           "aussagetyp": "loesung",
@@ -490,7 +492,7 @@
         },
         {
           "absatz_id": "P17",
-          "text": "Die Arbeitsausrüstung gliedert sich in das Hubgerüst aus Hubrahmen, Hubzylinder, Kippzylinder und Kipphebel, die Werkzeugaufnahme aus Schnellwechsler und Anbaugerät sowie die Radladerwaage. Geräte mit eigener Bewegung wie die Klappschaufel brauchen einen Zusatzsteuerkreis der Hydraulik. Die Lasten fließen über Hubrahmen und Zylinder in den Vorderwagen; die Kinematik bestimmt Zylinderkräfte, Kipplast und Sicht auf das Werkzeug.",
+          "text": "Die Arbeitsausrüstung gliedert sich in das Hubgerüst aus Hubzylinder, Kippzylinder und Kipphebel, die Werkzeugaufnahme aus Schnellwechsler und Anbaugerät sowie die Radladerwaage. Das Hubgerüst bewegt den Hubrahmen, der als Strukturglied zur Fahrzeugstruktur gehört und am Vorderwagen gelagert ist. Geräte mit eigener Bewegung wie die Klappschaufel brauchen einen Zusatzsteuerkreis der Hydraulik. Die Lasten fließen über Hubrahmen und Zylinder in den Vorderwagen; die Kinematik bestimmt Zylinderkräfte, Kipplast und Sicht auf das Werkzeug.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -500,7 +502,7 @@
               "P5",
               "Funktionsprinzip: Heben und Kippen sind zwei unabhängige Bewegungen und brauchen je einen Aktor mit Übertragungsglied"
             ],
-            "schluss": "Die Arbeitsausrüstung besteht aus Hubgerüst mit getrennten Hub- und Kippaktoren, Werkzeugaufnahme und Waage und stützt sich am Vorderwagen ab."
+            "schluss": "Die Arbeitsausrüstung besteht aus Hubgerüst mit getrennten Hub- und Kippaktoren, Werkzeugaufnahme und Waage; sie bewegt den zur Fahrzeugstruktur gehörenden Hubrahmen und stützt sich über ihn am Vorderwagen ab."
           },
           "sicherheit": "mittel",
           "aussagetyp": "loesung",
@@ -806,7 +808,7 @@
       "absaetze": [
         {
           "absatz_id": "P32",
-          "text": "Neben Dekomposition und Flüssen ordnet die funktionale Perspektive zu: Fahrzeuglasten tragen Rahmen, Achsen sowie Räder und Reifen; Energie speichern Kraftstofftank, Traktionsbatterie und Bremsdruckspeicher; Treibstoff fördern die Kraftstoffanlage; Traktionsbatterie laden die Ladeeinrichtung; Elektrische Energie verteilen Niedervolt- und Hochvolt-Bordnetz; Antriebsleistung erzeugen Verbrennungsmotor und Traktionsmaschine; Drehmoment übertragen die Kraftübertragung; Fahrzeug fortbewegen das Antriebssystem mit Rädern; Fahrzeug lenken das Lenksystem; Fahrzeug verzögern die Betriebsbremsanlage; Fahrzeug festhalten die Feststellbremse; Bremsenergie zurückgewinnen die Traktionsmaschine; Hydraulische Leistung bereitstellen Hydraulikversorgung und Bremsdruckversorgung; Arbeitsgeräte versorgen Zusatzsteuerkreis und Schnellwechsler; Ladung aufnehmen Hubgerüst und Anbaugerät; Anbaugerät heben und kippen Hubzylinder, Kippzylinder und Kipphebel; Ladungsmasse ermitteln die Radladerwaage; Fahrereingaben erfassen Bedienelemente und Lenkrad; Fahrerinformationen anzeigen die Anzeigeelemente; Insassen schützen Schutzaufbauten und Sicherheitsgurt; Fahrersicht sicherstellen die Sichteinrichtungen; Fahrzeugumgebung ausleuchten Scheinwerfer und Arbeitsscheinwerfer; Lichtsignale abgeben die Signalleuchten; Fahrzeugumfeld erfassen die Umfeldsensorik; Fahrerzustand überwachen die Fahrerpräsenzerkennung; Daten übertragen Fahrzeugbus und Telematikeinheit; Fahrzeugzustand überwachen Diagnose, Fahrzeugmanagement und Steuergeräteverbund; Betriebstemperatur regeln Kühlanlage und Batterietemperierung; Innenraum klimatisieren die Heiz- und Klimaanlage.",
+          "text": "Neben Dekomposition und Flüssen ordnet die funktionale Perspektive zu: Fahrzeuglasten tragen Rahmen, Achsen sowie Räder und Reifen; Energie speichern Kraftstofftank, Traktionsbatterie und Bremsdruckspeicher; Treibstoff fördern die Kraftstoffanlage; Traktionsbatterie laden die Ladeeinrichtung; Elektrische Energie verteilen Niedervolt- und Hochvolt-Bordnetz; Antriebsleistung erzeugen Verbrennungsmotor und Traktionsmaschine; Drehmoment übertragen die Kraftübertragung; Fahrzeug fortbewegen das Antriebssystem mit Rädern; Fahrzeug lenken das Lenksystem; Fahrzeug verzögern die Betriebsbremsanlage; Fahrzeug festhalten die Feststellbremse; Bremsenergie zurückgewinnen die Traktionsmaschine; Hydraulische Leistung bereitstellen Hydraulikversorgung und Bremsdruckversorgung; Arbeitsgeräte versorgen Zusatzsteuerkreis und Schnellwechsler; Ladung aufnehmen Hubrahmen, Hubgerüst und Anbaugerät; Anbaugerät heben und kippen Hubzylinder, Kippzylinder und Kipphebel; Ladungsmasse ermitteln die Radladerwaage; Fahrereingaben erfassen Bedienelemente und Lenkrad; Fahrerinformationen anzeigen die Anzeigeelemente; Insassen schützen Schutzaufbauten und Sicherheitsgurt; Fahrersicht sicherstellen die Sichteinrichtungen; Fahrzeugumgebung ausleuchten Scheinwerfer und Arbeitsscheinwerfer; Lichtsignale abgeben die Signalleuchten; Fahrzeugumfeld erfassen die Umfeldsensorik; Fahrerzustand überwachen die Fahrerpräsenzerkennung; Daten übertragen Fahrzeugbus und Telematikeinheit; Fahrzeugzustand überwachen Diagnose, Fahrzeugmanagement und Steuergeräteverbund; Betriebstemperatur regeln Kühlanlage und Batterietemperierung; Innenraum klimatisieren die Heiz- und Klimaanlage.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -868,7 +870,8 @@
         "eltern_id": "E2",
         "absatz_ids": [
           "P4",
-          "P5"
+          "P5",
+          "P17"
         ]
       },
       {
@@ -1523,9 +1526,10 @@
         "id": "E67",
         "name": "Hubrahmen",
         "typ": "komponente",
-        "eltern_id": "E66",
+        "eltern_id": "E3",
         "absatz_ids": [
           "P2",
+          "P5",
           "P16",
           "P17",
           "P31"
@@ -2281,6 +2285,7 @@
         "name": "Ladung aufnehmen",
         "ausgefuehrt_von": [
           "E66",
+          "E67",
           "E73"
         ],
         "absatz_ids": [
@@ -2777,6 +2782,7 @@
         "art": "mechanisch",
         "medium": "Ladungslast",
         "absatz_ids": [
+          "P5",
           "P17",
           "P31"
         ],
@@ -3279,6 +3285,10 @@
           {
             "element_id": "E69",
             "beschreibung": "Anordnung und Wirkrichtung des Kippzylinders"
+          },
+          {
+            "element_id": "E67",
+            "beschreibung": "Geometrie und Anlenkpunkte des Hubrahmens am Vorderwagen"
           },
           {
             "element_id": "E120",

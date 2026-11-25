@@ -3,7 +3,7 @@
   "artikel_id": "A-0049",
   "artikeltyp": "blatt",
   "titel": "Muldenkipper",
-  "betrachtungsumfang": "Selbstfahrender Muldenkipper für Erdbau, Gewinnung und Tagebau abseits öffentlicher Straßen, als starrer Muldenkipper (Großmuldenkipper) mit Achsschenkellenkung und als knickgelenkter Muldenkipper mit Knicklenkung, mit Hinterkipp-, Seitenkipp- oder Ausschubmulde. Betrachtete Antriebsarten sind dieselmechanisch, dieselelektrisch, dieselelektrisch mit Fahrleitungsunterstützung und batterieelektrisch mit Fahrleitungsladung; bemannter und autonomer Betrieb. Ausgeschlossen sind Kipper-Lkw und Sattelkipper für den Straßenverkehr (siehe Lkw), landwirtschaftliche Kippanhänger, Vorderkipper, Raupendumper und Zweiwegefahrzeuge sowie wasserstoffbasierte Antriebe.",
+  "betrachtungsumfang": "Selbstfahrender Muldenkipper für Erdbau, Gewinnung und Tagebau abseits öffentlicher Straßen, als starrer Muldenkipper (Großmuldenkipper) mit Achsschenkellenkung und als knickgelenkter Muldenkipper mit Knicklenkung, mit Hinterkipp-, Seitenkipp- oder Ausschubmulde. Betrachtete Antriebsarten sind dieselmechanisch, dieselelektrisch, dieselelektrisch mit Fahrleitungsunterstützung und batterieelektrisch mit Fahrleitungs- oder stationärer Ladung; bemannter und autonomer Betrieb. Ausgeschlossen sind Kipper-Lkw und Sattelkipper für den Straßenverkehr (siehe Lkw), landwirtschaftliche Kippanhänger, Vorderkipper, Raupendumper und Zweiwegefahrzeuge sowie wasserstoffbasierte Antriebe.",
   "status": "in_arbeit",
   "quellenzugriff": "ja",
   "kindartikel_ids": [],
@@ -216,7 +216,7 @@
         },
         {
           "absatz_id": "P7",
-          "text": "Kern des Antriebssystems ist der Verbrennungsmotor mit Abgasnachbehandlung. Beim dieselmechanischen Antrieb führt die mechanische Kraftübertragung seine Leistung über Getriebe, Gelenkwelle und Differenzial zum Endantrieb in den Radnaben, der das Drehmoment untersetzt. Beim dieselelektrischen Antrieb treibt der Motor einen Generator; der elektrische Fahrantrieb speist über Wechselrichter aus dem Gleichspannungszwischenkreis die Traktionsmaschine an der Hinterachse, die über den Endantrieb auf die Räder wirkt. Beim batterieelektrischen Antrieb entfällt der Verbrennungsmotor, der elektrische Fahrantrieb bleibt.",
+          "text": "Kern des Antriebssystems ist der Verbrennungsmotor mit Abgasnachbehandlung. Beim dieselmechanischen Antrieb führt die mechanische Kraftübertragung seine Leistung über Drehmomentwandler, Getriebe, Gelenkwelle und Differenzial zum Endantrieb in den Radnaben, der das Drehmoment untersetzt. Beim dieselelektrischen Antrieb treibt der Motor einen Generator; der elektrische Fahrantrieb speist über Wechselrichter aus dem Gleichspannungszwischenkreis die Traktionsmaschine an der Hinterachse, die über den Endantrieb auf die Räder wirkt. Beim batterieelektrischen Antrieb entfällt der Verbrennungsmotor, der elektrische Fahrantrieb bleibt.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herangezogene_artikel_ids": [],
@@ -225,7 +225,8 @@
               "P5: dieselelektrischer Antrieb mit Achsmotoren",
               "P6: Gelenkwelle, Differenzial und Radnabenuntersetzung",
               "Q8: Batteriepaket ersetzt Dieselmotor und Generator, Antriebsstrang bleibt weitgehend gleich; Energie wird am Gleichspannungszwischenkreis gemessen",
-              "Funktionsprinzip: Eine Traktionsmaschine an einem Gleichspannungskreis braucht einen Wechselrichter"
+              "Funktionsprinzip: Eine Traktionsmaschine an einem Gleichspannungskreis braucht einen Wechselrichter",
+              "Q3: Drehmomentwandler bereits beim ersten modernen Knicklenker"
             ],
             "schluss": "Beide Antriebspfade teilen Verbrennungsmotor und Endantrieb; der elektrische Pfad ersetzt Getriebe und Gelenkwelle durch Generator, Zwischenkreis, Wechselrichter und Traktionsmaschine."
           },
@@ -253,8 +254,21 @@
           "aussagetyp": "variante"
         },
         {
+          "absatz_id": "P32",
+          "text": "Auch knickgelenkte Muldenkipper werden inzwischen vollelektrisch gebaut. Elektromotoren treiben die Räder an, die Energie kommt aus Lithium-Ionen-Batterien. Geladen wird über Ladestecker, je nach Fahrzeug über einen Typ-2-Anschluss oder über das Combined Charging System. Die Fahrzeuge arbeiten sehr leise und sind auf Einsätze mit Rückgewinnung von Bremsenergie ausgerichtet.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Abschnitt Alternative fuel, erster und zweiter Absatz"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "variante"
+        },
+        {
           "absatz_id": "P9",
-          "text": "Das Energieversorgungssystem gliedert sich in Kraftstoffversorgung, elektrische Fahrenergieversorgung und Niedervoltversorgung. Die Kraftstoffversorgung fördert Diesel aus dem Kraftstofftank über die Kraftstoffanlage zum Motor. In der elektrischen Fahrenergieversorgung speisen Generator, Stromabnehmer und die Traktionsbatterie über den Gleichspannungswandler den gemeinsamen Gleichspannungszwischenkreis, je nach Antriebsart einzeln oder kombiniert. Starterbatterie und Bordnetzgenerator versorgen das Niedervolt-Bordnetz.",
+          "text": "Das Energieversorgungssystem gliedert sich in Kraftstoffversorgung, elektrische Fahrenergieversorgung und Niedervoltversorgung. Die Kraftstoffversorgung fördert Diesel aus dem Kraftstofftank über die Kraftstoffanlage zum Motor. In der elektrischen Fahrenergieversorgung speisen der Generator über den Gleichrichter, der Stromabnehmer und die Traktionsbatterie über den Gleichspannungswandler den gemeinsamen Gleichspannungszwischenkreis, je nach Antriebsart einzeln oder kombiniert. Bei stationärer Ladung nimmt eine Ladeeinrichtung den Strom über den Ladeanschluss auf und lädt die Traktionsbatterie. Bordnetzbatterie (beim Verbrennungsmotor zugleich Starterbatterie) und Bordnetzgenerator versorgen das Niedervolt-Bordnetz. Beim batterieelektrischen Fahrzeug speist der Gleichspannungswandler auch das Niedervolt-Bordnetz.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herangezogene_artikel_ids": [],
@@ -262,11 +276,13 @@
             "praemissen": [
               "P7: Antriebsarten mit Generator und Gleichspannungszwischenkreis",
               "P8: Batteriepaket mit Gleichspannungswandler, Stromabnehmer an der Fahrleitung",
-              "Funktionsprinzip: Ein Verbrennungsmotor braucht Kraftstoffspeicher und Förderung; ein Startvorgang braucht einen Niedervoltspeicher"
+              "P32: batterieelektrische Knicklenker werden über Ladestecker geladen",
+              "Funktionsprinzip: Ein Drehstromgenerator braucht zur Einspeisung in einen Gleichspannungskreis einen Gleichrichter.",
+              "Funktionsprinzip: Ein Verbrennungsmotor braucht Kraftstoffspeicher und Förderung; das Niedervolt-Bordnetz braucht einen Pufferspeicher, der beim Verbrennungsmotor zugleich den Startvorgang versorgt; ohne Verbrennungsmotor kann der Gleichspannungswandler das Bordnetz aus der Traktionsbatterie speisen"
             ],
-            "schluss": "Alle elektrischen Quellen speisen einen gemeinsamen Zwischenkreis; Kraftstoff- und Niedervoltversorgung sind davon getrennt."
+            "schluss": "Alle elektrischen Fahrenergiequellen speisen einen gemeinsamen Zwischenkreis, der Generator über einen Gleichrichter; die Ladeeinrichtung lädt die Traktionsbatterie bei stationärer Ladung; Kraftstoff- und Niedervoltversorgung sind davon getrennt."
           },
-          "sicherheit": "hoch",
+          "sicherheit": "mittel",
           "aussagetyp": "loesung"
         }
       ]
@@ -443,13 +459,13 @@
       "absaetze": [
         {
           "absatz_id": "P18",
-          "text": "Das Elektrik- und Elektroniksystem verteilt Niedervoltenergie und verbindet die Steuergeräte. Das Niedervolt-Bordnetz versorgt aus Starterbatterie und Bordnetzgenerator über Leitungssatz und Sicherungen Steuergeräte, Sensoren, Leuchten und Klimaanlage. Über den Fahrzeugbus tauschen die Steuergeräte von Motor, Fahrantrieb, Bremse, Kippeinrichtung und Assistenz Messwerte und Befehle aus. Staub, Erschütterungen und Nässe machen Abdichtung und Schwingungsfestigkeit zu Auslegungsthemen.",
+          "text": "Das Elektrik- und Elektroniksystem verteilt Niedervoltenergie und verbindet die Steuergeräte. Das Niedervolt-Bordnetz versorgt aus Bordnetzbatterie und Bordnetzgenerator über Leitungssatz und Sicherungen Steuergeräte, Sensoren, Leuchten und Klimaanlage. Über den Fahrzeugbus tauschen die Steuergeräte von Motor, Fahrantrieb, Bremse, Kippeinrichtung und Assistenz Messwerte und Befehle aus. Staub, Erschütterungen und Nässe machen Abdichtung und Schwingungsfestigkeit zu Auslegungsthemen.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herangezogene_artikel_ids": [],
           "herleitung": {
             "praemissen": [
-              "P9: Starterbatterie und Bordnetzgenerator",
+              "P9: Bordnetzbatterie und Bordnetzgenerator",
               "P19: Diagnose, Telematik, Wiegesysteme und Antriebsschlupfregelung erfordern vernetzte Steuergeräte",
               "Funktionsprinzip: Verteilte Steuergeräte brauchen Energieverteilung und Kommunikationsnetz"
             ],
@@ -518,12 +534,12 @@
         },
         {
           "absatz_id": "P22",
-          "text": "In den USA schreibt die Sicherheitsvorschrift für übertägige Metall- und Nichtmetallbergwerke Überschlagschutz und Sicherheitsgurte unter anderem für den Zugteil von Dumpern, Bodenentleerern und Hinterkippwagen vor; der Überschlagschutz muss SAE J1040 für Bau-, Erdbewegungs-, Forst- und Bergbaumaschinen erfüllen, und der Fahrer muss den Gurt tragen. Ausgenommen sind unter anderem nur ferngesteuert betriebene Geräte.",
+          "text": "In den USA schreibt die Sicherheitsvorschrift für übertägige Metall- und Nichtmetallbergwerke Überschlagschutz und Sicherheitsgurte unter anderem für den Zugteil von Dumpern, Bodenentleerern und Hinterkippwagen vor; der Überschlagschutz muss SAE J1040 für Bau-, Erdbewegungs-, Forst- und Bergbaumaschinen erfüllen, und der Fahrer muss den Gurt tragen. Ausgenommen sind unter anderem nur ferngesteuert betriebene Geräte. Starre Muldenkipper ohne Zugteil nennt die Aufzählung nicht ausdrücklich.",
           "begruendung": "belegt",
           "belege": [
             {
               "quellen_id": "Q6",
-              "fundstelle": "§ 56.14130 (a)(4), (b)(1), (f)(1)(iii) und (g)"
+              "fundstelle": "§ 56.14130 (a) mit (a)(4), (b)(1), (f)(1)(iii) und (g)"
             }
           ],
           "herangezogene_artikel_ids": [],
@@ -531,7 +547,7 @@
         },
         {
           "absatz_id": "P23",
-          "text": "Das Fahrerassistenz- und Sicherheitssystem gliedert sich in Schutzstrukturen und aktive Assistenz. Die Schutzstrukturen umfassen Überschlagschutz und Steinschlagschutz gegen herabfallendes Ladegut beim Beladen. Die Umfeldsensorik erfasst Personen und Fahrzeuge im toten Winkel und warnt über die Anzeigeelemente, die Müdigkeitswarnung überwacht den Fahrer. Die Fahrautomatisierung bestimmt die Fahrzeugposition und greift über das Fahrzeugmanagement auf Fahrantrieb, Bremse und Lenkung zu; im autonomen Betrieb übernimmt sie die Fahraufgabe.",
+          "text": "Das Fahrerassistenz- und Sicherheitssystem gliedert sich in Schutzstrukturen und aktive Assistenz. Die Schutzstrukturen umfassen Überschlagschutz und Steinschlagschutz gegen herabfallendes Ladegut beim Beladen. Die Umfeldsensorik erfasst Personen und Fahrzeuge im toten Winkel und warnt über die Anzeigeelemente, die Müdigkeitswarnung überwacht den Fahrer. Die Fahrautomatisierung bestimmt die Fahrzeugposition und greift über das Fahrzeugmanagement auf Fahrantrieb, Bremse und Lenkung zu; im autonomen Betrieb übernimmt sie die Fahraufgabe. Die Reifendrucküberwachung meldet Druck und Temperatur der Reifen, eine Brandunterdrückungsanlage schützt Motorraum und Hydraulik.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herangezogene_artikel_ids": [],
@@ -540,11 +556,12 @@
               "P21: Näherungswarnung, Müdigkeitsüberwachung, autonome Flotten",
               "P22: Überschlagschutz",
               "P16: Mulde schützt das Fahrerhaus beim Beladen",
-              "P14: toter Winkel"
+              "P14: toter Winkel",
+              "Annahme ohne Quelle: Reifendrucküberwachung und Brandunterdrückungsanlage als übliche Sicherheitskomponenten von Muldenkippern"
             ],
             "schluss": "Schutzstrukturen, Umfeldsensorik, Fahrerüberwachung und Fahrautomatisierung bilden die Elemente des Systems."
           },
-          "sicherheit": "mittel",
+          "sicherheit": "gering",
           "aussagetyp": "loesung"
         }
       ]
@@ -689,7 +706,7 @@
       "absaetze": [
         {
           "absatz_id": "P30",
-          "text": "Stoff: Kraftstoff vom Kraftstofftank über die Kraftstoffanlage zum Motor, Abgas über die Abgasnachbehandlung zur Muldenbeheizung, Schmierfett zum Kipplager. Mechanisch: Motor an Getriebe oder Generator, Gelenkwelle und Differenzial an Endantrieb, Traktionsmaschine an Endantrieb, Endantrieb an Räder und Reifen, Nebenaggregatetrieb an Hydraulikpumpe und Bordnetzgenerator, Ladungslast vom Muldenkörper in den Rahmen. Elektrisch: Generator, Stromabnehmer und Traktionsbatterie in den Zwischenkreis, von dort über Wechselrichter zu den Traktionsmaschinen und beim Bremsen zurück zum Bremswiderstand oder zur Batterie; Starterbatterie ins Niedervolt-Bordnetz. Hydraulisch: Hydraulikpumpe an Kippventil, Lenkunterstützung und Betriebsbremse. Thermisch: Motor an Kühler, Bremsen an Bremsenölkühler, Gebläse an Traktionsmaschinen, Klimaanlage an Kabine. Information: Bedienelemente und Fahrautomatisierung an Fahrzeugmanagement, von dort an Fahrantrieb und Bremsregelung; Warnungen und Kamerabilder an Anzeigeelemente.",
+          "text": "Stoff: Kraftstoff vom Kraftstofftank über die Kraftstoffanlage zum Motor, Abgas über die Abgasnachbehandlung zur Muldenbeheizung, Schmierfett zum Kipplager. Mechanisch: Motor über Drehmomentwandler an Getriebe oder an Generator, Gelenkwelle und Differenzial an Endantrieb, Traktionsmaschine an Endantrieb, Endantrieb an Räder und Reifen, Nebenaggregatetrieb an Hydraulikpumpe und Bordnetzgenerator, Ladungslast vom Muldenkörper in den Rahmen. Elektrisch: Generator über Gleichrichter, Stromabnehmer und Traktionsbatterie in den Zwischenkreis, von dort über Wechselrichter zu den Traktionsmaschinen und beim Bremsen zurück zum Bremswiderstand oder zur Batterie; Ladeeinrichtung in die Traktionsbatterie; Bordnetzbatterie ins Niedervolt-Bordnetz. Hydraulisch: Hydraulikpumpe an Kippventil, Lenkunterstützung und Betriebsbremse. Thermisch: Motor an Kühler, Bremsen an Bremsenölkühler, Gebläse an Traktionsmaschinen, Klimaanlage an Kabine. Information: Bedienelemente und Fahrautomatisierung an Fahrzeugmanagement, von dort an Fahrantrieb und Bremsregelung; Warnungen, Reifendaten, Brandmeldungen und Kamerabilder an Anzeigeelemente.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herangezogene_artikel_ids": [],
@@ -717,7 +734,7 @@
       "absaetze": [
         {
           "absatz_id": "P31",
-          "text": "Funktionszuordnung: Rahmen und Laufwerk: Fahrzeuglasten tragen; Laufwerk, Traktionsmaschine und Endantrieb: Fahrzeug fortbewegen; Verbrennungsmotor: Antriebsleistung erzeugen; mechanische Kraftübertragung und Endantrieb: Drehmoment übertragen; Kraftstofftank, Traktionsbatterie und Starterbatterie: Energie speichern; Kraftstoffanlage: Treibstoff fördern; Gleichspannungszwischenkreis und Niedervolt-Bordnetz: Elektrische Energie verteilen; Stromabnehmer und Gleichspannungswandler: Traktionsbatterie laden; Lenkhydraulik und Knickgelenk: Fahrzeug lenken; Reibungsbremsanlage und Dauerbremse: Fahrzeug verzögern; Traktionsmaschine und Traktionsbatterie: Bremsenergie zurückgewinnen; Feststellbremse: Fahrzeug festhalten; Bedienelemente: Fahrereingaben erfassen; Anzeigeelemente: Fahrerinformationen anzeigen; Schutzstrukturen und Sicherheitsgurt: Insassen schützen; Mulde: Ladung aufnehmen; Kippeinrichtung: Ladung abkippen; Fahrzeugbus und Telematikeinheit: Daten übertragen; Fahrzeugmanagement, Diagnose und Nutzlastwiegesystem: Fahrzeugzustand überwachen; Umfeldsensorik: Fahrzeugumfeld erfassen; Müdigkeitswarnung: Fahrerzustand überwachen; Fahrautomatisierung: Fahrzeugposition bestimmen; Sichtsystem: Fahrersicht sicherstellen; Außenbeleuchtung: Fahrzeugumgebung ausleuchten; Signalleuchten: Lichtsignale abgeben; Kühlkreislauf, Bremsenölkühler, Traktionskühlgebläse und Batterietemperierung: Betriebstemperatur regeln; Klimaanlage: Innenraum klimatisieren; Hydraulikversorgung: Hydraulische Leistung bereitstellen; Nebenaggregatetrieb: Arbeitsgeräte versorgen. Diese Zuordnung verbindet physische Dekomposition, Funktionen und Flüsse.",
+          "text": "Funktionszuordnung: Rahmen und Laufwerk: Fahrzeuglasten tragen; Laufwerk, Traktionsmaschine und Endantrieb: Fahrzeug fortbewegen; Verbrennungsmotor: Antriebsleistung erzeugen; mechanische Kraftübertragung und Endantrieb: Drehmoment übertragen; Kraftstofftank, Traktionsbatterie und Bordnetzbatterie: Energie speichern; Kraftstoffanlage: Treibstoff fördern; Gleichspannungszwischenkreis und Niedervolt-Bordnetz: Elektrische Energie verteilen; Stromabnehmer, Ladeeinrichtung und Gleichspannungswandler: Traktionsbatterie laden; Lenkhydraulik und Knickgelenk: Fahrzeug lenken; Reibungsbremsanlage und Dauerbremse: Fahrzeug verzögern; Traktionsmaschine und Traktionsbatterie: Bremsenergie zurückgewinnen; Feststellbremse: Fahrzeug festhalten; Bedienelemente: Fahrereingaben erfassen; Anzeigeelemente: Fahrerinformationen anzeigen; Schutzstrukturen und Sicherheitsgurt: Insassen schützen; Mulde: Ladung aufnehmen; Kippeinrichtung: Ladung abkippen; Fahrzeugbus und Telematikeinheit: Daten übertragen; Fahrzeugmanagement, Diagnose, Nutzlastwiegesystem und Reifendrucküberwachung: Fahrzeugzustand überwachen; Umfeldsensorik: Fahrzeugumfeld erfassen; Müdigkeitswarnung: Fahrerzustand überwachen; Fahrautomatisierung: Fahrzeugposition bestimmen; Sichtsystem: Fahrersicht sicherstellen; Außenbeleuchtung: Fahrzeugumgebung ausleuchten; Signalleuchten: Lichtsignale abgeben; Kühlkreislauf, Bremsenölkühler, Traktionskühlgebläse und Batterietemperierung: Betriebstemperatur regeln; Klimaanlage: Innenraum klimatisieren; Hydraulikversorgung: Hydraulische Leistung bereitstellen; Nebenaggregatetrieb: Arbeitsgeräte versorgen. Diese Zuordnung verbindet physische Dekomposition, Funktionen und Flüsse.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herangezogene_artikel_ids": [],
@@ -900,6 +917,15 @@
         ]
       },
       {
+        "id": "E106",
+        "name": "Drehmomentwandler",
+        "typ": "komponente",
+        "eltern_id": "E13",
+        "absatz_ids": [
+          "P7"
+        ]
+      },
+      {
         "id": "E17",
         "name": "Endantrieb",
         "typ": "komponente",
@@ -945,6 +971,7 @@
         "eltern_id": "E1",
         "absatz_ids": [
           "P8",
+          "P32",
           "P9",
           "P28"
         ],
@@ -984,6 +1011,7 @@
         "eltern_id": "E21",
         "absatz_ids": [
           "P8",
+          "P32",
           "P9"
         ]
       },
@@ -1025,6 +1053,7 @@
         "eltern_id": "E25",
         "absatz_ids": [
           "P8",
+          "P32",
           "P9",
           "P26"
         ]
@@ -1040,12 +1069,32 @@
         ]
       },
       {
+        "id": "E104",
+        "name": "Ladeeinrichtung",
+        "typ": "komponente",
+        "eltern_id": "E25",
+        "absatz_ids": [
+          "P9",
+          "P32"
+        ]
+      },
+      {
+        "id": "E105",
+        "name": "Gleichrichter",
+        "typ": "komponente",
+        "eltern_id": "E25",
+        "absatz_ids": [
+          "P9"
+        ]
+      },
+      {
         "id": "E31",
-        "name": "Starterbatterie",
+        "name": "Bordnetzbatterie",
         "typ": "komponente",
         "eltern_id": "E21",
         "absatz_ids": [
-          "P9"
+          "P9",
+          "P18"
         ]
       },
       {
@@ -1541,6 +1590,24 @@
         ]
       },
       {
+        "id": "E107",
+        "name": "Reifendrucküberwachung",
+        "typ": "komponente",
+        "eltern_id": "E75",
+        "absatz_ids": [
+          "P23"
+        ]
+      },
+      {
+        "id": "E108",
+        "name": "Brandunterdrückungsanlage",
+        "typ": "komponente",
+        "eltern_id": "E75",
+        "absatz_ids": [
+          "P23"
+        ]
+      },
+      {
         "id": "E82",
         "name": "Beleuchtung und Sicht",
         "typ": "hauptsystem",
@@ -1841,10 +1908,12 @@
         "name": "Traktionsbatterie laden",
         "ausgefuehrt_von": [
           "E28",
-          "E30"
+          "E30",
+          "E104"
         ],
         "absatz_ids": [
           "P8",
+          "P32",
           "P9",
           "P31"
         ]
@@ -1977,10 +2046,12 @@
         "ausgefuehrt_von": [
           "E70",
           "E72",
-          "E74"
+          "E74",
+          "E107"
         ],
         "absatz_ids": [
           "P20",
+          "P23",
           "P31"
         ]
       },
@@ -2150,6 +2221,17 @@
       {
         "id": "S5",
         "von": "E11",
+        "nach": "E106",
+        "art": "mechanisch",
+        "medium": "Drehmoment",
+        "absatz_ids": [
+          "P7",
+          "P30"
+        ]
+      },
+      {
+        "id": "S47",
+        "von": "E106",
         "nach": "E14",
         "art": "mechanisch",
         "medium": "Drehmoment",
@@ -2220,6 +2302,17 @@
       {
         "id": "S11",
         "von": "E26",
+        "nach": "E105",
+        "art": "elektrisch",
+        "medium": "Drehstrom",
+        "absatz_ids": [
+          "P9",
+          "P30"
+        ]
+      },
+      {
+        "id": "S48",
+        "von": "E105",
         "nach": "E27",
         "art": "elektrisch",
         "medium": "Gleichstrom",
@@ -2261,6 +2354,19 @@
           "P9",
           "P30"
         ]
+      },
+      {
+        "id": "S49",
+        "von": "E104",
+        "nach": "E29",
+        "art": "elektrisch",
+        "medium": "Ladestrom",
+        "absatz_ids": [
+          "P9",
+          "P32",
+          "P30"
+        ],
+        "schnittstelle": "Ladeanschluss"
       },
       {
         "id": "S15",
@@ -2636,6 +2742,30 @@
         ]
       },
       {
+        "id": "S50",
+        "von": "E107",
+        "nach": "E54",
+        "art": "information",
+        "medium": "Reifendruck und Reifentemperatur",
+        "absatz_ids": [
+          "P23",
+          "P30"
+        ],
+        "schnittstelle": "Warnanzeige"
+      },
+      {
+        "id": "S51",
+        "von": "E108",
+        "nach": "E54",
+        "art": "information",
+        "medium": "Brandmeldung",
+        "absatz_ids": [
+          "P23",
+          "P30"
+        ],
+        "schnittstelle": "Warnanzeige"
+      },
+      {
         "id": "S46",
         "von": "E3",
         "nach": "E77",
@@ -2659,14 +2789,16 @@
           "Dieselmechanischer Antrieb mit Getriebe, Gelenkwelle und Differenzial",
           "Dieselelektrischer Antrieb mit Generator und Traktionsmaschinen",
           "Dieselelektrischer Antrieb mit Fahrleitungsunterstützung an Steigungen",
-          "Batterieelektrischer Antrieb mit Fahrleitungsladung"
+          "Batterieelektrischer Antrieb mit Fahrleitungsladung",
+          "Batterieelektrischer Antrieb mit stationärer Ladung über Ladeanschluss"
         ],
         "auswahlkriterien": [
           "Nutzlastklasse",
           "Steigungsanteil und Länge des Fahrzyklus",
           "Verfügbarkeit von Netzstrom und Fahrleitungsinfrastruktur",
           "Energie- und Betriebskosten",
-          "Emissionsziele des Betreibers"
+          "Emissionsziele des Betreibers",
+          "Ladeinfrastruktur an der Baustelle"
         ],
         "auswirkungen": [
           {
@@ -2676,6 +2808,10 @@
           {
             "element_id": "E28",
             "beschreibung": "Ein Stromabnehmer ist nur bei Fahrleitungsbetrieb nötig."
+          },
+          {
+            "element_id": "E104",
+            "beschreibung": "Eine Ladeeinrichtung mit Ladeanschluss ist nur beim batterieelektrischen Antrieb mit stationärer Ladung nötig."
           },
           {
             "element_id": "E29",
@@ -2698,6 +2834,7 @@
           "P5",
           "P7",
           "P8",
+          "P32",
           "P9"
         ]
       },
@@ -2751,7 +2888,8 @@
         "auswahlkriterien": [
           "Bodenkontakt im unebenen Gelände",
           "Nutzlast und Achslast",
-          "Bodendruck und Traktion"
+          "Bodendruck und Traktion",
+          "Fahrkomfort und Fahrgeschwindigkeit"
         ],
         "auswirkungen": [
           {
@@ -2764,7 +2902,7 @@
           },
           {
             "element_id": "E8",
-            "beschreibung": "Der Pendelbogie bleibt meist ungefedert, eine Einzelachse kann gefedert werden."
+            "beschreibung": "Pendelbogie und Einzelhinterachse sind überwiegend ungefedert; gefederte Hinterwagenfahrwerke sind eine neuere Ausführung und ändern Federung und Nutzlastmessung."
           }
         ],
         "absatz_ids": [
@@ -2883,13 +3021,13 @@
     "klaerungsfragen": [
       {
         "id": "K1",
-        "frage": "Welche Antriebsart soll das Modell abbilden: dieselmechanisch, dieselelektrisch, dieselelektrisch mit Fahrleitungsunterstützung oder batterieelektrisch mit Fahrleitungsladung?",
+        "frage": "Welche Antriebsart soll das Modell abbilden: dieselmechanisch, dieselelektrisch, dieselelektrisch mit Fahrleitungsunterstützung, batterieelektrisch mit Fahrleitungsladung oder batterieelektrisch mit stationärer Ladung?",
         "element_ids": [
           "E10",
           "E21"
         ],
         "anlass": "architekturentscheidung",
-        "relevanz": "Davon hängen Generator, Stromabnehmer, Traktionsbatterie, Dauerbremse und Kühlkreise ab.",
+        "relevanz": "Davon hängen Generator, Stromabnehmer, Ladeeinrichtung, Traktionsbatterie, Dauerbremse und Kühlkreise ab.",
         "variante_ids": [
           "V1"
         ]
@@ -2931,10 +3069,11 @@
       },
       {
         "id": "K5",
-        "frage": "Ist im Einsatzgebiet eine Fahrleitung an Steigungsstrecken vorhanden oder geplant, und auf welchen Abschnitten des Fahrzyklus?",
+        "frage": "Ist im Einsatzgebiet eine Fahrleitung an Steigungsstrecken vorhanden oder geplant, und auf welchen Abschnitten des Fahrzyklus, oder wird die Batterie an einer stationären Ladestation geladen?",
         "element_ids": [
           "E21",
-          "E28"
+          "E28",
+          "E104"
         ],
         "anlass": "schnittstelle",
         "relevanz": "Davon hängen Stromabnehmer, Batteriegröße und die Schnittstelle zur Infrastruktur ab.",
@@ -3075,6 +3214,22 @@
         "variante_ids": [
           "V1"
         ]
+      },
+      {
+        "id": "K18",
+        "frage": "Welche Nutzlast je Fahrt und welcher Fahrzyklus mit Förderweg, Steigungen und Gefällen mit Last sind gefordert?",
+        "element_ids": [
+          "E1",
+          "E10",
+          "E2"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Bauweise, Antriebsart, Dauerbremse und Kühlleistung ab.",
+        "variante_ids": [
+          "V1",
+          "V2",
+          "V4"
+        ]
       }
     ],
     "anforderungsthemen": [
@@ -3176,7 +3331,9 @@
           "Kippzeit",
           "Absenkzeit",
           "Kippwinkel",
-          "Verschleißfestigkeit des Muldenblechs"
+          "Verschleißfestigkeit des Muldenblechs",
+          "zulässige Quer- und Längsneigung beim Kippen",
+          "Schwerpunkthöhe der angehobenen Mulde"
         ]
       },
       {
@@ -3218,9 +3375,9 @@
         ],
         "regelwerke": [
           {
-            "bezeichnung": "30 CFR § 56.14130 Roll-over protective structures (ROPS) and seat belts (USA, übertägige Metall- und Nichtmetallbergwerke; u. a. Zugteil von Dumpern und Hinterkippwagen)",
+            "bezeichnung": "30 CFR § 56.14130 Roll-over protective structures (ROPS) and seat belts (USA, übertägige Metall- und Nichtmetallbergwerke; u. a. Zugteil von Dumpern und Hinterkippwagen; Anwendbarkeit auf starre Muldenkipper aus dem Wortlaut nicht ersichtlich; sinngemäß zutreffend für den Vorderwagen knickgelenkter Muldenkipper)",
             "quellen_id": "Q6",
-            "fundstelle": "§ 56.14130 (a)(4), (b)(1) und (g)"
+            "fundstelle": "§ 56.14130 (a) mit (a)(4), (b)(1) und (g)"
           }
         ]
       },
@@ -3274,6 +3431,21 @@
           "Ölreinheit",
           "Schmierintervall"
         ]
+      },
+      {
+        "id": "R15",
+        "element_ids": [
+          "E1",
+          "E98",
+          "E69"
+        ],
+        "thema": "Verfügbarkeit und Instandhaltbarkeit",
+        "kenngroessen": [
+          "technische Verfügbarkeit",
+          "mittlere Betriebszeit zwischen Ausfällen",
+          "Wartungsintervall",
+          "Instandsetzungszeit"
+        ]
       }
     ]
   },
@@ -3283,6 +3455,7 @@
     "Recherche Normen ISO: Bremsanlagen, Lenkung mit Notlenkung und Schutzstrukturen von Erdbaumaschinen (Suchbegriffe: ISO 3450, ISO 5010, ISO 3471, ISO 3449); die ISO-Katalogseiten waren in diesem Lauf nicht abrufbar (HTTP 403).",
     "Recherche Federung starrer Muldenkipper: Q2 nennt fehlende Achsfederung als Merkmal; Bauart und Verbreitung hydropneumatischer Federzylinder klären (Suchbegriff: haul truck suspension cylinder hydropneumatic; Herstellerunterlagen oder Fachliteratur), um P4 und V3 abzusichern.",
     "Recherche Fachliteratur: Antriebsstrang und Dauerbremse dieselmechanischer Muldenkipper (Drehmomentwandler, Lastschaltgetriebe, Endantrieb, hydrodynamischer Retarder, ölgekühlte Lamellenbremse), um P7, P13 und P25 zu belegen (Suchbegriff: mechanical drive haul truck retarder oil-cooled disc brakes; etwa SME Mining Engineering Handbook).",
-    "Recherche Nebensysteme und Steuerung: Zentralschmieranlage, Nutzlastwiegesystem (Messprinzip) und Kippfreigabe bei Muldenkippern belegen (Suchbegriffe: haul truck payload monitoring system suspension pressure; automatic lubrication system haul truck), um P20 und P27 abzusichern."
+    "Recherche Nebensysteme und Steuerung: Zentralschmieranlage, Nutzlastwiegesystem (Messprinzip) und Kippfreigabe bei Muldenkippern belegen (Suchbegriffe: haul truck payload monitoring system suspension pressure; automatic lubrication system haul truck), um P20 und P27 abzusichern.",
+    "Recherche Regelwerk USA: Anwendbarkeit von 30 CFR § 56.14130 auf starre Muldenkipper (Haul Trucks) ohne Zugteil klären (MSHA Program Policy Manual; Suchbegriff: 56.14130 haul truck ROPS applicability), um R10 und P22 abzusichern."
   ]
 }

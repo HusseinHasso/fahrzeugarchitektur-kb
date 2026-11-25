@@ -96,7 +96,7 @@
         },
         {
           "absatz_id": "P2",
-          "text": "Zum Gesamtsystem Triebwagen gehört alles, was das Fahrzeug zum eigenen Fortbewegen und zum Aufnehmen der Zuladung braucht. Fahrweg, Fahrleitung, streckenseitige Zugsicherung sowie Tank-, Lade- und Entsorgungsanlagen liegen außerhalb der Systemgrenze und werden über mechanische, elektrische, pneumatische, stoffliche, thermische und informationstechnische Schnittstellen angebunden. Für eine Dekomposition, etwa in SysML, zerlegt man den Triebwagen zuerst in Hauptsysteme und diese weiter in Subsysteme und Komponenten.",
+          "text": "Zum Gesamtsystem Triebwagen gehört alles, was das Fahrzeug zum eigenen Fortbewegen und zum Aufnehmen der Zuladung braucht. Fahrweg, Fahrleitung, streckenseitige Zugsicherung sowie Tank-, Lade- und Entsorgungsanlagen liegen außerhalb der Systemgrenze und werden über mechanische, elektrische, pneumatische, stoffliche, thermische und informationstechnische Schnittstellen angebunden. Die Dekomposition zerlegt den Triebwagen in Hauptsysteme, diese in Subsysteme und Komponenten.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -333,16 +333,17 @@
         },
         {
           "absatz_id": "P15",
-          "text": "Der Führerstand umfasst den Führertisch mit Bedienelementen und Anzeigeelementen, den Führersitz und die Stirnscheibe. Fahr- und Bremsbefehle gehen vom Führertisch über den Fahrzeugbus an das Fahrzeugmanagement, Zustands- und Warnmeldungen laufen zurück. Ein Triebwagen, der ohne Steuerwagen im Wendebetrieb fährt, braucht an beiden Enden einen Führerstand.",
+          "text": "Der Führerstand umfasst den Führertisch mit Bedienelementen und Anzeigeelementen, den Führersitz und die Stirnscheibe; nach der Zuordnungsliste führt er auch die im Fahrgastbereich eingebauten Fahrgastsitze. Fahr- und Bremsbefehle gehen vom Führertisch über den Fahrzeugbus an das Fahrzeugmanagement, Zustands- und Warnmeldungen laufen zurück. Ein Triebwagen, der ohne Steuerwagen im Wendebetrieb fährt, braucht an beiden Enden einen Führerstand.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "P14: Führersitz, Führertisch, Stirnscheibe, Bedienelemente und Anzeigen.",
+              "P16: Sitze als Parameter der Fahrgasteinheiten; Zuordnungsliste: Sitze gehören zur Kategorie bedienraum.",
               "Q4, Abschnitt „Definitionen“: Triebwagen fahren allein oder mit Steuer-, Mittel- und Beiwagen; Abschnitt „Entwicklung in Deutschland“: Einzelfahrzeuge mit beiderseitigen Führerständen.",
               "Funktionsprinzip: Ein Fahrtrichtungswechsel ohne Umsetzen braucht am jeweils führenden Ende einen Führerstand."
             ],
-            "schluss": "Der Führerstand ist die Bedienschnittstelle; seine Anzahl folgt aus der Zugbildung."
+            "schluss": "Der Führerstand ist die Bedienschnittstelle und nimmt als Hauptsystem des Bedienraums auch die Fahrgastsitze auf; seine Anzahl folgt aus der Zugbildung."
           },
           "sicherheit": "hoch",
           "herangezogene_artikel_ids": []
@@ -376,14 +377,15 @@
         },
         {
           "absatz_id": "P17",
-          "text": "Aufbau und Ladung umfasst den Fahrgastbereich, dessen Fahrgastsitze und Mehrzweckbereich die Kapazität bestimmen, das Sanitärsystem und gegebenenfalls ein Gepäckabteil. Da die Antriebsausrüstung unterflur und auf dem Dach sitzt, steht fast die ganze Fahrzeuglänge für die Zuladung bereit; die Wahl zwischen ein- und doppelstöckiger Bauweise verschiebt Antriebs-, Energie- und Klimageräte.",
+          "text": "Aufbau und Ladung umfasst den Fahrgastbereich mit dem Mehrzweckbereich, das Sanitärsystem und gegebenenfalls ein Gepäckabteil; die dort eingebauten Fahrgastsitze sind dem Führerstand zugeordnet und bestimmen mit dem Mehrzweckbereich die Kapazität. Da die Antriebsausrüstung unterflur und auf dem Dach sitzt, bleibt fast die ganze Fahrzeuglänge für Zuladung; die Wahl zwischen ein- und doppelstöckiger Bauweise verschiebt Antriebs-, Energie- und Klimageräte.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "P16: Zuladungsarten, Sitze, Rollstuhlplätze, Toiletten, Doppelstockbauweise.",
               "P3 und P6: Ausrüstung unter- oder oberhalb des Wagenkastens, Fahrmotoren unterflur.",
-              "P25: Klimaanlagen auf dem Dach."
+              "P25: Klimaanlagen auf dem Dach.",
+              "P15: Fahrgastsitze unter dem Führerstand als Hauptsystem des Bedienraums."
             ],
             "schluss": "Der Fahrgast- und Ladebereich nutzt die Fahrzeuglänge; die Stockwerksbauweise beeinflusst die Lage der Ausrüstung."
           },
@@ -627,7 +629,7 @@
       "absaetze": [
         {
           "absatz_id": "P29",
-          "text": "In SysML bildet der Block `Triebwagen` das Gesamtsystem mit den Hauptsystemen als Teilen, zerlegt etwa entlang `Fahrzeugstruktur und Fahrwerk → Laufwerk → Drehgestell → Radsatz`, `Antriebssystem → Elektrischer Fahrantrieb → Traktionsmaschine`, `Energieversorgungssystem → Fahrleitungsanbindung → Stromabnehmer` und `Neben- und Versorgungssysteme → Druckluftanlage → Druckluftbehälter`. Ports bilden Rad-Schiene-Kontakt, Stromabnehmer und Fahrleitung, die Endkupplung mit mechanischem, pneumatischem und elektrischem Anschluss, Tank- und Ladeanschluss, Fahrzeugbus und Zugbeeinflussung ab, Konnektoren die Flüsse. Blockdefinitionsdiagramme zeigen die Dekomposition, interne Blockdiagramme die Flüsse, Zustandsdiagramme die Tür-Traktionssperre; die Antriebsarten werden als Spezialisierungen eines gemeinsamen Grundblocks modelliert.",
+          "text": "Der SysML-Block `Triebwagen` enthält die Hauptsysteme als Teile, zerlegt etwa entlang `Fahrzeugstruktur und Fahrwerk → Laufwerk → Drehgestell → Radsatz`, `Antriebssystem → Elektrischer Fahrantrieb → Traktionsmaschine`, `Energieversorgungssystem → Fahrleitungsanbindung → Stromabnehmer` und `Neben- und Versorgungssysteme → Druckluftanlage → Druckluftbehälter`. Ports bilden Rad-Schiene-Kontakt, Stromabnehmer, Endkupplung, Tank- und Ladeanschluss, Fahrzeugbus und Zugbeeinflussung ab, Konnektoren die Flüsse. Blockdefinitionsdiagramme zeigen die Dekomposition, interne Blockdiagramme die Flüsse, Zustandsdiagramme die Tür-Traktionssperre; die Antriebsarten werden als Spezialisierungen eines gemeinsamen Grundblocks modelliert.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -651,7 +653,7 @@
       "absaetze": [
         {
           "absatz_id": "P30",
-          "text": "Fahrleitung, Traktionsbatterie, Brennstoffzellensystem oder Generator liefern elektrische Energie an den Traktionsstromrichter, die Kraftstoffanlage Kraftstoff an den Verbrennungsmotor. Mechanische Leistung fließt von Traktionsmaschine oder Getriebe über das Radsatzgetriebe zum Radsatz, beim Bremsen elektrisch zurück. Der Hilfsbetriebeumrichter speist das Drehstrom-Bordnetz für Kompressor und Klimaanlage, die Druckluftanlage versorgt Bremszylinder und Sandstreuanlage. Über den Fahrzeugbus laufen Fahr- und Bremsbefehle, Türzustände und Meldungen; Zugbeeinflussung und Sicherheitsfahrschaltung wirken auf die Bremssteuerung. Der Kühlkreislauf führt Abwärme ab, die Heiz- und Klimaanlage temperiert den Fahrgastbereich.",
+          "text": "Fahrleitung, Traktionsbatterie, Brennstoffzellensystem oder Generator speisen den Traktionsstromrichter, die Kraftstoffanlage den Verbrennungsmotor. Mechanische Leistung fließt von Traktionsmaschine oder Getriebe über das Radsatzgetriebe zum Radsatz, beim Bremsen elektrisch zurück. Der Hilfsbetriebeumrichter speist das Drehstrom-Bordnetz für Kompressor und Klimaanlage, die Druckluftanlage versorgt Bremszylinder und Sandstreuanlage. Der Fahrzeugbus überträgt Befehle, Türzustände und Meldungen; Zugbeeinflussung und Sicherheitsfahrschaltung wirken auf die Bremssteuerung. Der Kühlkreislauf führt Abwärme ab, die Heiz- und Klimaanlage temperiert den Fahrgastbereich.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -1335,8 +1337,9 @@
         "id": "E58",
         "name": "Fahrgastsitze",
         "typ": "komponente",
-        "eltern_id": "E57",
+        "eltern_id": "E50",
         "absatz_ids": [
+          "P15",
           "P16",
           "P17"
         ]
@@ -3202,7 +3205,8 @@
         "id": "K12",
         "frage": "Welche Sitzplatzkapazität, Mehrzweckflächen und Toiletten fordert der Auftraggeber, und ist eine Doppelstockbauweise zulässig?",
         "element_ids": [
-          "E56"
+          "E56",
+          "E58"
         ],
         "anlass": "anforderung",
         "relevanz": "Davon hängen Fahrzeuglänge, Stockwerksbauweise und Lage der Antriebsausrüstung ab.",
@@ -3440,7 +3444,8 @@
       {
         "id": "R7",
         "element_ids": [
-          "E56"
+          "E56",
+          "E58"
         ],
         "thema": "Fahrgastkapazität und Barrierefreiheit",
         "kenngroessen": [
@@ -3593,7 +3598,6 @@
     "Glossarvorschlag: Betriebstüren betätigen (fahrzeugartspezifische Funktion von Türsteuerung und Türen; „Schiebetür betätigen“ deckt die Fahrgasttüren mit Traktionssperre nicht ab).",
     "Glossarvorschlag: Fahrgäste informieren (Funktion des Fahrgastinformationssystems; „Fahrerinformationen anzeigen“ richtet sich nur an den Triebfahrzeugführer).",
     "Glossarvorschlag: Für die Kategorie aufbau_nutzlast fehlt ein Hauptsystemname für Schienenfahrzeuge, etwa „Fahrgast- und Ladebereich (Schienenfahrzeuge)“; verwendet wurde „Aufbau und Ladung“, weil die TSI die Zuladung des Triebwagens aus Fahrgästen, Gepäck, Post oder Fracht definiert.",
-    "Zuordnung: Die Fahrgastsitze stehen abweichend von der Zuordnungsliste (Sitze unter bedienraum) unter Aufbau und Ladung, weil sie zur Zuladung des Fahrgastbereichs gehören; der Führersitz bleibt unter dem Führerstand.",
     "Recherche: amtliche Fassung der EBO auf gesetze-im-internet.de; der Host war in diesem Lauf nicht erreichbar (Namensauflösung blockiert), verwendet wurde die Textwiedergabe auf lxgesetze.de.",
     "Recherche: konsolidierte Fassung der Verordnung (EU) Nr. 1302/2014 mit den Änderungen durch die Verordnungen (EU) 2019/776 und 2023/1694 auf EUR-Lex; verwendet wurde die Ursprungsfassung von 2014.",
     "Recherche: Fachliteratur zur Schienenfahrzeugtechnik (Suchbegriffe: Janicki Reinhard Rüffner Schienenfahrzeugtechnik; Filipović Elektrische Bahnen) zur Belegung von P5, P7, P13, P18, P20 und P27.",

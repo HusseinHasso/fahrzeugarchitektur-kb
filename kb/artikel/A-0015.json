@@ -3,7 +3,7 @@
   "artikel_id": "A-0015",
   "artikeltyp": "blatt",
   "titel": "Motorroller",
-  "betrachtungsumfang": "Generische Referenzarchitektur des zweirädrigen Motorrollers mit freiem Durchstieg, Trittbrett und hinten unten liegender Antriebseinheit, als Kleinkraftrad oder Kraftrad (EU-Fahrzeugklassen L1e-B und L3e), vom Kleinroller bis zum Großroller. Betrachtet werden der verbrennungsmotorische Antrieb (Ottomotor in Zwei- oder Viertaktbauweise mit Kraftstofftank) und der batterieelektrische Antrieb (Traktionsmaschine mit Traktionsbatterie). Ausdrücklich ausgeschlossen sind dreirädrige Roller, im Stehen gefahrene E-Tretroller, Roller mit Beiwagen sowie Hybrid-, Gas-, Wasserstoff- und Brennstoffzellenantriebe; sie erscheinen höchstens zur Abgrenzung.",
+  "betrachtungsumfang": "Generische Referenzarchitektur des zweirädrigen Motorrollers mit freiem Durchstieg, Trittbrett und hinten unten liegender Antriebseinheit, als Kleinkraftrad oder Kraftrad (EU-Fahrzeugklassen L1e-B und L3e), vom Kleinroller bis zum Großroller. Betrachtet werden der verbrennungsmotorische Antrieb (Ottomotor in Zwei- oder Viertaktbauweise mit Kraftstofftank) und der batterieelektrische Antrieb (Traktionsmaschine mit Traktionsbatterie). Ausdrücklich ausgeschlossen sind dreirädrige Roller, überdachte Roller mit Sicherheitszelle und Gurt, im Stehen gefahrene E-Tretroller, Roller mit Beiwagen sowie Hybrid-, Gas-, Wasserstoff- und Brennstoffzellenantriebe; sie erscheinen höchstens zur Abgrenzung.",
   "status": "in_arbeit",
   "quellenzugriff": "ja",
   "kindartikel_ids": [],
@@ -104,19 +104,20 @@
         },
         {
           "absatz_id": "P3",
-          "text": "Der Motorroller ist damit ein offenes Einspurfahrzeug ohne Kabine für Fahrer, Sozius und kleines Gepäck. Seine Hauptsysteme koppeln sich über mechanische, elektrische, hydraulische, thermische, stoffliche und informationstechnische Schnittstellen; eine Druckluft-, Unterdruck- oder Hydraulikversorgung als eigenes Neben- und Versorgungssystem fehlt. Die folgenden Abschnitte zerlegen den Roller in Hauptsysteme, Subsysteme und Komponenten, jeweils für Verbrennungs- und Elektroantrieb.",
+          "text": "Der Motorroller ohne Dach ist damit ein offenes Einspurfahrzeug ohne Kabine für Fahrer, Sozius und kleines Gepäck. Seine Hauptsysteme koppeln sich über mechanische, elektrische, hydraulische, thermische, stoffliche und informationstechnische Schnittstellen; eine Druckluft-, Unterdruck- oder Hydraulikversorgung als eigenes Neben- und Versorgungssystem fehlt. Die folgenden Abschnitte zerlegen ihn für Verbrennungs- und Elektroantrieb in Hauptsysteme, Subsysteme und Komponenten.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "P1",
               "P2",
-              "Ein Einspurfahrzeug mit freiem Durchstieg besitzt keinen umschlossenen Innenraum.",
+              "Betrachtungsumfang: überdachte Roller mit Sicherheitszelle und Gurt sind ausgeschlossen.",
+              "Ein Roller ohne Dach mit freiem Durchstieg besitzt keinen umschlossenen Innenraum.",
               "Bremsen und Federung eines Zweirads werden von Hand, per Seilzug oder in geschlossenen Hydraulikkreisen betätigt und brauchen keine zentrale Druckmittelversorgung."
             ],
-            "schluss": "Der Roller ist ein offenes Gesamtsystem ohne eigene Druckmittelversorgung, dessen Hauptsysteme über die genannten Schnittstellenarten gekoppelt sind."
+            "schluss": "Der Roller ohne Dach ist ein offenes Gesamtsystem ohne eigene Druckmittelversorgung, dessen Hauptsysteme über die genannten Schnittstellenarten gekoppelt sind."
           },
-          "sicherheit": "hoch",
+          "sicherheit": "mittel",
           "aussagetyp": "modellannahme",
           "herangezogene_artikel_ids": []
         }
@@ -153,7 +154,7 @@
               "Jede Last muss über die tragende Struktur in die Radaufstandspunkte geleitet werden.",
               "Ein Einspurfahrzeug kann im Stand nicht aus eigener Kraft aufrecht stehen."
             ],
-            "schluss": "Rahmen, Verkleidung und Ständer bilden die Tragstruktur, Vorderradführung, Federung sowie Räder und Reifen das Fahrwerk; die Rahmenbauweise bestimmt den Bauraum anderer Hauptsysteme."
+            "schluss": "Rahmen, Verkleidung und Ständer bilden die Tragstruktur, Vorderradführung, Hinterradaufhängung, Federung sowie Räder und Reifen das Fahrwerk; die Rahmenbauweise bestimmt den Bauraum anderer Hauptsysteme."
           },
           "sicherheit": "mittel",
           "aussagetyp": "loesung",
@@ -198,7 +199,7 @@
         },
         {
           "absatz_id": "P8",
-          "text": "Im Verbrennungsroller fließt die Leistung vom Verbrennungsmotor über Variator und Fliehkraftkupplung, die drehzahlabhängig schließt, in den Radantrieb mit fester Übersetzung und weiter zum Hinterrad; der Fahrer gibt nur über den Gasdrehgriff vor. Am Motor hängen Starteinrichtung und Abgasanlage. Im elektrischen Antriebsstrang formt die Leistungselektronik den Batteriestrom für die Traktionsmaschine und regelt deren Drehmoment. Die Antriebsart ändert Energieversorgung, Thermomanagement und Gepäckraum; Triebsatzschwinge oder fester Motoreinbau ändern Federung und Rahmen.",
+          "text": "Im Verbrennungsroller fließt die Leistung vom Verbrennungsmotor über Variator und drehzahlabhängig schließende Fliehkraftkupplung in den Radantrieb mit fester Übersetzung zum Hinterrad; der Fahrer gibt nur über den Gasdrehgriff vor. Am Motor hängen Starteinrichtung, bordnetzversorgte Zündanlage, Luftansaugung mit Luftfilter und Abgasanlage. Im elektrischen Antriebsstrang formt die Leistungselektronik den Batteriestrom für die Traktionsmaschine und regelt deren Drehmoment. Bei der Triebsatzschwinge schwingen Verbrennungsmotor, Variator, Fliehkraftkupplung und Radantrieb als Baugruppe; beim festen Motoreinbau treibt ein Sekundärtrieb das Hinterrad in eigener Hinterradaufhängung, was Federung und Rahmen ändert.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -207,9 +208,10 @@
               "P7",
               "Eine Fliehkraftkupplung schließt mit steigender Drehzahl selbsttätig, daher entfällt ein Kupplungshebel.",
               "Ein bürstenloser Motor braucht eine elektronische Ansteuerung, die Batteriegleichstrom in Phasenströme umformt.",
-              "Ein Verbrennungsmotor braucht eine Startvorrichtung und eine Abgasführung."
+              "Ein Verbrennungsmotor braucht eine Startvorrichtung und eine Abgasführung, ein Ottomotor zusätzlich einen elektrisch erzeugten Zündfunken und gefilterte Verbrennungsluft.",
+              "Ein vom Rahmen getrennter Motor kann ein schwingend geführtes Hinterrad nur über einen längenausgleichenden Sekundärtrieb antreiben."
             ],
-            "schluss": "Die Wirkkette verläuft über Variator, Fliehkraftkupplung und Radantrieb oder über Leistungselektronik und Traktionsmaschine; Antriebsart und Einbaulage wirken auf andere Hauptsysteme."
+            "schluss": "Die Wirkkette verläuft über Variator, Fliehkraftkupplung und Radantrieb oder über Leistungselektronik und Traktionsmaschine; Zündanlage, Luftansaugung, Starteinrichtung und Abgasanlage ergänzen den Motor; Antriebsart und Einbaulage wirken auf andere Hauptsysteme."
           },
           "sicherheit": "mittel",
           "aussagetyp": "funktion",
@@ -241,7 +243,7 @@
         },
         {
           "absatz_id": "P10",
-          "text": "Die Kraftstoffanlage umfasst Kraftstofftank, Gemischaufbereitung durch Vergaser oder Einspritzung und beim Zweitakter den Schmierölbehälter. Das Batteriesystem besteht aus Traktionsbatterie, Batteriemanagementsystem und Ladeeinrichtung, die als Bordladegerät oder externes Ladegerät ausgeführt ist. Die Bordnetzversorgung leistet beim Verbrennungsroller ein motorgetriebener Generator mit Bordnetzbatterie, beim Elektroroller ein Gleichspannungswandler aus der Traktionsbatterie.",
+          "text": "Die Kraftstoffanlage umfasst Kraftstofftank, Kraftstoffpumpe, Gemischaufbereitung durch Vergaser oder Einspritzung und beim Zweitakter den Schmierölbehälter. Das Batteriesystem besteht aus Traktionsbatterie, Batteriemanagementsystem und Ladeeinrichtung, die als Bordladegerät oder externes Ladegerät ausgeführt ist. Die Bordnetzversorgung leistet beim Verbrennungsroller ein motorgetriebener Generator mit Bordnetzbatterie, beim Elektroroller ein Gleichspannungswandler aus der Traktionsbatterie.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -255,6 +257,26 @@
           },
           "sicherheit": "mittel",
           "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P29",
+          "text": "Bei tief liegendem Tank fördert eine Kraftstoffpumpe den Kraftstoff, beim Vergaser etwa eine Unterdruck-Membranpumpe, bei Einspritzung eine elektrische Druckpumpe. Tank oder Traktionsbatterie liegen unter der Sitzbank, zulasten des Gepäckraums, oder tiefer im Trittbrett beziehungsweise Mitteltunnel, was Trittbrett, Verkleidung und Rahmen ändert.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P1",
+              "P5",
+              "P9",
+              "P10",
+              "Ein tief liegender Tank kann die Gemischaufbereitung nicht sicher durch Schwerkraft versorgen; eine Einspritzung braucht Kraftstoff unter Druck.",
+              "Ein Energiespeicher braucht geschützten Bauraum außerhalb des freien Durchstiegs; dafür bleiben der Raum unter der Sitzbank und der Raum unter dem Trittbrett."
+            ],
+            "schluss": "Die Kraftstoffanlage braucht eine Kraftstoffpumpe; Kraftstofftank und Traktionsbatterie liegen unter der Sitzbank oder im Trittbrett, mit Folgen für Gepäckraum, Verkleidung, Rahmen und Schwerpunkt."
+          },
+          "sicherheit": "gering",
+          "aussagetyp": "variante",
           "herangezogene_artikel_ids": []
         }
       ]
@@ -356,7 +378,7 @@
         },
         {
           "absatz_id": "P15",
-          "text": "Der Fahrgastraum ist offen. Der Sitzplatz umfasst Sitzbank und Soziusfußrasten; die Bedien- und Anzeigeeinheit umfasst die Bedienelemente am Lenker wie Gasdrehgriff, Bremshebel und Schalter für Licht, Blinker, Hupe und Start sowie das Kombiinstrument mit Geschwindigkeit, Kraftstoffstand oder Ladezustand und Kontrollleuchten. Rückhaltesysteme fehlen; den Insassenschutz übernehmen Helm und Schutzkleidung außerhalb des Systems. Unter der Sitzbank grenzt der Gepäckraum an.",
+          "text": "Der Fahrgastraum des Rollers ohne Dach ist offen. Der Sitzplatz umfasst Sitzbank und Soziusfußrasten; die Bedien- und Anzeigeeinheit umfasst die Bedienelemente am Lenker wie Gasdrehgriff, Bremshebel und Schalter für Licht, Blinker, Hupe und Start sowie das Kombiinstrument mit Geschwindigkeit, Kraftstoffstand oder Ladezustand und Kontrollleuchten. Rückhaltesysteme fehlen hier; den Insassenschutz übernehmen Helm und Schutzkleidung außerhalb des Systems. Unter der Sitzbank grenzt der Gepäckraum an.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -364,10 +386,10 @@
               "P1",
               "P3",
               "P14",
-              "Ohne Kabine gibt es keine Struktur, an der Gurte oder Airbags wirksam verankert werden könnten.",
+              "Ohne Dach und Kabine gibt es keine Struktur, an der Gurte oder Airbags wirksam verankert werden könnten.",
               "Jede Fahrervorgabe an Antrieb, Licht und Signal braucht ein Bedienelement, jede Zustandsmeldung eine Anzeige."
             ],
-            "schluss": "Der Fahrgastraum besteht aus Sitzplatz sowie Bedien- und Anzeigeeinheit, ohne Rückhaltesystem."
+            "schluss": "Der Fahrgastraum des Rollers ohne Dach besteht aus Sitzplatz sowie Bedien- und Anzeigeeinheit, ohne Rückhaltesystem."
           },
           "sicherheit": "mittel",
           "aussagetyp": "loesung",
@@ -382,7 +404,7 @@
       "absaetze": [
         {
           "absatz_id": "P16",
-          "text": "Aufbau und Ladung nutzen den Bauraum, den der freie Durchstieg lässt: Über der hinten unten liegenden Antriebseinheit entsteht unter der Sitzbank ein Gepäckraum. Hinten nimmt ein Gepäckträger Lasten oder eine Transportbox auf; für Zustelldienste ersetzt ein großer Träger mit Box den Soziusplatz. Beim Elektroroller konkurriert der Gepäckraum mit der Traktionsbatterie. Alle Lasten gehen über Befestigungspunkte in den Rahmen und verschieben den Schwerpunkt nach hinten.",
+          "text": "Aufbau und Ladung nutzen den Bauraum, den der freie Durchstieg lässt: Über der hinten unten liegenden Antriebseinheit entsteht unter der Sitzbank ein Gepäckraum. Hinten nimmt ein Gepäckträger Lasten oder eine Transportbox auf; für Zustelldienste ersetzt ein großer Träger mit Box den Soziusplatz. Je nach Lage konkurriert der Gepäckraum mit Kraftstofftank oder Traktionsbatterie. Alle Lasten gehen über Befestigungspunkte in den Rahmen und verschieben den Schwerpunkt nach hinten.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -390,9 +412,10 @@
               "P1",
               "P9",
               "P14",
-              "Der Raum zwischen Antriebseinheit und Sitzbank wird von keinem anderen Hauptsystem zwingend belegt."
+              "P29",
+              "Den Raum zwischen Antriebseinheit und Sitzbank teilt sich der Gepäckraum je nach Lage des Energiespeichers mit Kraftstofftank oder Traktionsbatterie."
             ],
-            "schluss": "Gepäckraum, Gepäckträger und Transportbox bilden das Hauptsystem Aufbau und Ladung; ihr Bauraum hängt von Antriebsart und Batterieeinbau ab."
+            "schluss": "Gepäckraum, Gepäckträger und Transportbox bilden das Hauptsystem Aufbau und Ladung; ihr Bauraum hängt von Antriebsart und Lage des Energiespeichers ab."
           },
           "sicherheit": "mittel",
           "aussagetyp": "loesung",
@@ -446,12 +469,12 @@
       "absaetze": [
         {
           "absatz_id": "P19",
-          "text": "Nach Anhang XVIII der Delegierten Verordnung (EU) Nr. 3/2014 (EU, Klasse L) brauchen Fahrzeuge bestimmter Klassen Einrichtungen, die die Höchstgeschwindigkeit und gegebenenfalls die Nenndauer- oder Nutzleistung auf die Grenzen aus Anhang I der Verordnung (EU) Nr. 168/2013 begrenzen. Beim Elektromotorroller informiert das Batteriemanagementsystem den Nutzer und bietet oft die Funktion eines Bordcomputers. In Großstädten gibt es Verleihsysteme für Elektroroller.",
+          "text": "Nach Anhang XVIII der Delegierten Verordnung (EU) Nr. 3/2014 (EU, Klasse L) brauchen Fahrzeuge bestimmter Klassen Einrichtungen, die Höchstgeschwindigkeit und gegebenenfalls Nenndauer- oder Nutzleistung auf die Grenzen aus Anhang I der Verordnung (EU) Nr. 168/2013 begrenzen. Mindestens zwei der Begrenzungsverfahren müssen unabhängig voneinander funktionieren und von unterschiedlicher Art sein; vom Fahrzeugführer wählbare oder verstellbare Begrenzungen sind verboten. Beim Elektromotorroller informiert das Batteriemanagementsystem den Nutzer, oft als Bordcomputer. In Großstädten gibt es Verleihsysteme für Elektroroller.",
           "begruendung": "belegt",
           "belege": [
             {
               "quellen_id": "Q2",
-              "fundstelle": "Anhang XVIII, Nummern 1.1 und 1.1.1"
+              "fundstelle": "Anhang XVIII, Nummern 1.1, 1.1.1, 1.1.2.5 und 1.1.4"
             },
             {
               "quellen_id": "Q4",
@@ -463,7 +486,7 @@
         },
         {
           "absatz_id": "P20",
-          "text": "Das Fahrzeugmanagement liegt im Motor- oder Antriebssteuergerät oder in einem eigenen Fahrzeugsteuergerät: Es setzt die Fahrervorgabe in Antriebsmoment um, wirkt als Geschwindigkeitsbegrenzer, gibt den Start frei und stimmt beim Elektroroller Rekuperation und Bremse ab. Die Diagnose speichert Fehler und macht sie über einen Anschluss zugänglich. Im Verleih braucht der Roller eine Telematikeinheit für Ortung, Fernfreigabe und Zustandsmeldung, weil kein Personal vor Ort ist.",
+          "text": "Das Fahrzeugmanagement im Motor-, Antriebs- oder eigenen Fahrzeugsteuergerät setzt die Fahrervorgabe in Antriebsmoment um, stimmt beim Elektroroller Rekuperation und Bremse ab und gibt den Start frei, wenn die Sicherung gegen unbefugte Benutzung entriegelt und je nach Bauweise der Bremshebel gezogen oder der Seitenständer eingeklappt ist. Die bauartbedingte Begrenzung übernehmen mindestens zwei unabhängige Einrichtungen in Luftansaugung oder Gemischaufbereitung, bei leistungsstarken Krafträdern auch in der Zündanlage, in Variator oder Radantrieb oder in Leistungselektronik und Traktionsmaschine; das Fahrzeugmanagement ist nur eine davon und fehlt beim Vergaserroller ohne Motorsteuergerät. Die Diagnose speichert Fehler für einen Diagnoseanschluss. Im Verleih braucht der Roller eine Telematikeinheit für Ortung, Fernfreigabe und Zustandsmeldung.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -471,10 +494,12 @@
               "P7",
               "P12",
               "P19",
-              "Eine Begrenzung von Geschwindigkeit oder Leistung muss in der Logik wirken, die das Antriebsmoment stellt.",
+              "Q2 Anhang XVIII, Nummern 1.1.2.1 bis 1.1.2.5: Begrenzung durch mindestens zwei unabhängige Verfahren unterschiedlicher Art, beim Fremdzündungsmotor über Zündfunken (nur L3e-A3, L4e-A3, L5e), angesaugte Luft, Kraftstoffmenge oder Drehzahl des Abtriebsstrangs (Kupplung, Getriebe, Endantrieb), beim Elektromotor über zwei Leistungsreduktionen oder eine physische Begrenzung.",
+              "Ein Vergaserroller ohne Motorsteuergerät besitzt keine Logik, die das Antriebsmoment elektronisch stellt.",
+              "Ein Start darf erst nach Prüfung der Berechtigung und in sicherem Ausgangszustand erfolgen.",
               "Ein unbegleitet vermietetes Fahrzeug muss aus der Ferne gefunden, freigegeben und überwacht werden."
             ],
-            "schluss": "Fahrzeugmanagement, Diagnose und Telematikeinheit bilden die logische Steuerungsebene des Rollers."
+            "schluss": "Fahrzeugmanagement, Diagnose und Telematikeinheit bilden die logische Steuerungsebene; die bauartbedingte Begrenzung verteilt sich auf mindestens zwei unabhängige Einrichtungen in Antrieb, Energieversorgung und Steuerung, von denen das Fahrzeugmanagement höchstens eine ist."
           },
           "sicherheit": "mittel",
           "aussagetyp": "loesung",
@@ -489,7 +514,7 @@
       "absaetze": [
         {
           "absatz_id": "P21",
-          "text": "Fahrerassistenz und Sicherheit umfassen beim Roller wenige Funktionen. Vorgeschrieben ist eine akustische Warneinrichtung, die die EU-Typgenehmigung unter den Anforderungen der funktionalen Sicherheit aufführt. Leistungsstarke Roller können eine Antriebsschlupfregelung besitzen, die die Raddrehzahlsensoren des Antiblockiersystems nutzt und das Antriebsmoment über das Fahrzeugmanagement zurücknimmt. Eine Reifendrucküberwachung meldet Druckverlust an das Kombiinstrument. Umfeldsensorik sieht die generische Architektur nicht vor.",
+          "text": "Vorgeschrieben ist beim Roller eine akustische Warneinrichtung, die die EU-Typgenehmigung unter den Anforderungen der funktionalen Sicherheit aufführt. Leistungsstarke Roller können eine Antriebsschlupfregelung besitzen, die die Raddrehzahlsensoren des Antiblockiersystems nutzt und das Antriebsmoment über das Fahrzeugmanagement zurücknimmt. Eine Reifendrucküberwachung meldet Druckverlust an das Kombiinstrument. Eine Sicherung gegen unbefugte Benutzung aus Zünd- und Lenkschloss, optional mit Wegfahrsperre oder schlüssellosem Startsystem, meldet die Freigabe an das Fahrzeugmanagement. Umfeldsensorik sieht die generische Architektur nicht vor.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -497,9 +522,11 @@
               "Q1 Anhang II Teil B, Nummer 1 (akustische Warneinrichtungen)",
               "P12",
               "P20",
-              "Eine Antriebsschlupfregelung braucht Raddrehzahlen und einen Eingriff in das Antriebsmoment."
+              "Eine Antriebsschlupfregelung braucht Raddrehzahlen und einen Eingriff in das Antriebsmoment.",
+              "Q1 Anhang II Teil C, Nummer 5 (Sicherungen gegen unbefugte Benutzung)",
+              "Ein offenes, leicht zu bewegendes Fahrzeug muss gegen Starten und Wegschieben durch Unbefugte gesichert werden."
             ],
-            "schluss": "Das Hauptsystem besteht aus akustischer Warneinrichtung sowie optional Antriebsschlupfregelung und Reifendrucküberwachung."
+            "schluss": "Das Hauptsystem besteht aus akustischer Warneinrichtung und Sicherung gegen unbefugte Benutzung sowie optional Antriebsschlupfregelung und Reifendrucküberwachung."
           },
           "sicherheit": "gering",
           "aussagetyp": "variante",
@@ -556,7 +583,7 @@
       "absaetze": [
         {
           "absatz_id": "P24",
-          "text": "Das Thermomanagement richtet sich nach der Antriebsart. Der hinter der Verkleidung liegende Motor erhält kaum Fahrtwind; eine Gebläsekühlung, bei der ein Lüfterrad Luft über die Kühlrippen des Zylinders führt, löst das ohne Kühlmittel. Leistungsstärkere Motoren nutzen einen Kühlkreislauf mit Kühler und Kühlmittelpumpe, der Lufteinlässe in der Verkleidung braucht. Beim Elektroroller erwärmt eine Batterietemperierung die Traktionsbatterie bei Kälte, das Batteriemanagementsystem überwacht dabei die Temperatur.",
+          "text": "Der hinter der Verkleidung liegende Motor erhält kaum Fahrtwind; eine Gebläsekühlung, bei der ein Lüfterrad Luft über die Kühlrippen des Zylinders führt, löst das ohne Kühlmittel; je nach Baureihe dient ein Kühlkreislauf mit Kühler, Kühlmittelpumpe und Lufteinlässen in der Verkleidung. Beim Elektroroller geben Traktionsmaschine und Leistungselektronik Verlustwärme über Gehäuse und Fahrtwind oder an einen Kühlkreislauf ab; eine Batterietemperierung erwärmt die Traktionsbatterie bei Kälte, überwacht vom Batteriemanagementsystem.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -565,11 +592,12 @@
               "Q3 Einleitung, Absatz 3 (Motorräder benötigen Öffnungen für Kühlung) und Abschnitt „Geschichte“ (Gebläsekühlung)",
               "Q4 Abschnitt „Akkus“, Absatz 2 (Beheizung bei Kälte)",
               "P9",
-              "Ein verkleideter Motor ohne Fahrtwindanströmung braucht eine Zwangskühlung."
+              "Ein verkleideter Motor ohne Fahrtwindanströmung braucht eine Zwangskühlung.",
+              "Traktionsmaschine und Leistungselektronik setzen einen Teil der Leistung in Wärme um, die abgeführt werden muss."
             ],
-            "schluss": "Das Thermomanagement besteht je nach Antriebsart aus Gebläsekühlung oder Kühlkreislauf sowie der Batterietemperierung."
+            "schluss": "Das Thermomanagement besteht je nach Antriebsart und Baureihe aus Gebläsekühlung oder Kühlkreislauf, der Wärmeabfuhr von Traktionsmaschine und Leistungselektronik sowie der Batterietemperierung."
           },
-          "sicherheit": "mittel",
+          "sicherheit": "gering",
           "aussagetyp": "variante",
           "herangezogene_artikel_ids": []
         }
@@ -656,7 +684,7 @@
       "absaetze": [
         {
           "absatz_id": "P28",
-          "text": "Physisch gliedert sich der Roller in die genannten Hauptsysteme; funktional ordnen sich die Funktionen so zu: Fahrzeuglasten tragen Rahmen und Fahrwerk; Antriebsleistung erzeugen Verbrennungsmotor, Starteinrichtung oder Traktionsmaschine; Drehmoment übertragen Variator, Fliehkraftkupplung und Radantrieb; Fahrzeug fortbewegen Radantrieb sowie Räder und Reifen; Energie speichern Kraftstofftank, Traktionsbatterie und Bordnetzbatterie; Treibstoff fördern die Gemischaufbereitung; Traktionsbatterie laden die Ladeeinrichtung; Elektrische Energie verteilen das Niedervolt-Bordnetz; Fahrzeug lenken Lenker, Lenkrohr und Vorderradführung; Fahrzeug verzögern Betriebsbremse, kombinierte Bremsanlage und Antiblockiersystem; Bremsenergie zurückgewinnen Traktionsmaschine und Leistungselektronik; Fahrzeug festhalten Feststellbremse und Ständer; Fahrereingaben erfassen die Bedienelemente; Fahrerinformationen anzeigen das Kombiinstrument; Ladung aufnehmen Gepäckraum, Gepäckträger und Transportbox; Daten übertragen Fahrzeugbus und Telematikeinheit; Fahrzeugzustand überwachen Diagnose, Batteriemanagementsystem und Reifendrucküberwachung; Fahrzeugposition bestimmen die Telematikeinheit; Höchstgeschwindigkeit begrenzen das Fahrzeugmanagement; Antriebsschlupf regeln die Antriebsschlupfregelung; Warnsignal abgeben die akustische Warneinrichtung; Fahrzeugumgebung ausleuchten der Scheinwerfer; Lichtsignale abgeben Leuchten und Signalleuchten; Fahrersicht sicherstellen Rückspiegel und Windschild; Betriebstemperatur regeln Gebläsekühlung, Kühlkreislauf und Batterietemperierung.",
+          "text": "Physisch gliedert sich der Roller in die Hauptsysteme, funktional so: Fahrzeuglasten tragen (Rahmen, Fahrwerk); Antriebsleistung erzeugen (Verbrennungsmotor, Starteinrichtung, Traktionsmaschine); Drehmoment übertragen (Variator, Fliehkraftkupplung, Radantrieb); Fahrzeug fortbewegen (Radantrieb, Räder und Reifen); Energie speichern (Kraftstofftank, Traktionsbatterie, Bordnetzbatterie); Treibstoff fördern (Kraftstoffpumpe); Traktionsbatterie laden (Ladeeinrichtung); Elektrische Energie verteilen (Niedervolt-Bordnetz); Fahrzeug lenken (Lenker, Lenkrohr, Vorderradführung); Fahrzeug verzögern (Betriebsbremse, kombinierte Bremsanlage, Antiblockiersystem); Bremsenergie zurückgewinnen (Traktionsmaschine, Leistungselektronik); Fahrzeug festhalten (Feststellbremse, Ständer); Fahrereingaben erfassen (Bedienelemente); Fahrerinformationen anzeigen (Kombiinstrument); Ladung aufnehmen (Gepäckraum, Gepäckträger, Transportbox); Daten übertragen (Fahrzeugbus, Telematikeinheit); Fahrzeugzustand überwachen (Diagnose, Batteriemanagementsystem, Reifendrucküberwachung); Fahrzeugposition bestimmen (Telematikeinheit); Höchstgeschwindigkeit begrenzen (Fahrzeugmanagement, Variator, Leistungselektronik); Antriebsschlupf regeln (Antriebsschlupfregelung); Warnsignal abgeben (akustische Warneinrichtung); Fahrzeug gegen unbefugte Benutzung sichern (Sicherung gegen unbefugte Benutzung); Fahrzeugumgebung ausleuchten (Scheinwerfer); Lichtsignale abgeben (Leuchten, Signalleuchten); Fahrersicht sicherstellen (Rückspiegel, Windschild); Betriebstemperatur regeln (Gebläsekühlung, Kühlkreislauf, Batterietemperierung).",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -673,6 +701,7 @@
               "P21",
               "P23",
               "P24",
+              "P29",
               "Jede Funktion braucht ein ausführendes Element."
             ],
             "schluss": "Alle Funktionen des Modellblocks sind ausführenden Systemen und Komponenten zugeordnet."
@@ -689,31 +718,36 @@
       {"id": "E1", "name": "Motorroller", "typ": "gesamtsystem", "eltern_id": null, "absatz_ids": ["P1", "P2", "P3", "P25", "P26"]},
       {"id": "E2", "name": "Fahrzeugstruktur und Fahrwerk", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P4", "P5", "P25"], "kategorie": "struktur_fahrwerk"},
       {"id": "E3", "name": "Tragstruktur", "typ": "subsystem", "eltern_id": "E2", "absatz_ids": ["P5"]},
-      {"id": "E4", "name": "Rahmen", "typ": "komponente", "eltern_id": "E3", "absatz_ids": ["P4", "P5", "P11"]},
-      {"id": "E5", "name": "Verkleidung", "typ": "komponente", "eltern_id": "E3", "absatz_ids": ["P1", "P4", "P5", "P24"]},
+      {"id": "E4", "name": "Rahmen", "typ": "komponente", "eltern_id": "E3", "absatz_ids": ["P4", "P5", "P11", "P29"]},
+      {"id": "E5", "name": "Verkleidung", "typ": "komponente", "eltern_id": "E3", "absatz_ids": ["P1", "P4", "P5", "P24", "P29"]},
       {"id": "E6", "name": "Ständer", "typ": "komponente", "eltern_id": "E3", "absatz_ids": ["P5", "P13"]},
       {"id": "E7", "name": "Fahrwerk", "typ": "subsystem", "eltern_id": "E2", "absatz_ids": ["P5", "P26"]},
       {"id": "E8", "name": "Vorderradführung", "typ": "komponente", "eltern_id": "E7", "absatz_ids": ["P5", "P11", "P26"]},
       {"id": "E9", "name": "Federung", "typ": "komponente", "eltern_id": "E7", "absatz_ids": ["P5", "P8", "P11"]},
       {"id": "E10", "name": "Räder und Reifen", "typ": "komponente", "eltern_id": "E7", "absatz_ids": ["P4", "P5", "P28"]},
+      {"id": "E89", "name": "Hinterradaufhängung", "typ": "komponente", "eltern_id": "E7", "absatz_ids": ["P5", "P8"]},
       {"id": "E11", "name": "Antriebssystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P6", "P7", "P8", "P25"], "kategorie": "antrieb"},
       {"id": "E12", "name": "Triebsatzschwinge", "typ": "subsystem", "eltern_id": "E11", "absatz_ids": ["P5", "P6", "P8", "P26"]},
-      {"id": "E13", "name": "Verbrennungsmotor", "typ": "komponente", "eltern_id": "E12", "absatz_ids": ["P6", "P7", "P8", "P27"]},
-      {"id": "E14", "name": "Variator", "typ": "komponente", "eltern_id": "E12", "absatz_ids": ["P6", "P8", "P26"]},
+      {"id": "E13", "name": "Verbrennungsmotor", "typ": "komponente", "eltern_id": "E11", "absatz_ids": ["P6", "P7", "P8", "P27"]},
+      {"id": "E14", "name": "Variator", "typ": "komponente", "eltern_id": "E12", "absatz_ids": ["P6", "P8", "P26", "P20"]},
       {"id": "E15", "name": "Fliehkraftkupplung", "typ": "komponente", "eltern_id": "E12", "absatz_ids": ["P6", "P8"]},
-      {"id": "E16", "name": "Radantrieb", "typ": "komponente", "eltern_id": "E12", "absatz_ids": ["P8", "P27"]},
+      {"id": "E16", "name": "Radantrieb", "typ": "komponente", "eltern_id": "E12", "absatz_ids": ["P8", "P27", "P20"]},
       {"id": "E17", "name": "Elektrischer Antriebsstrang", "typ": "subsystem", "eltern_id": "E11", "absatz_ids": ["P8"]},
-      {"id": "E18", "name": "Traktionsmaschine", "typ": "komponente", "eltern_id": "E17", "absatz_ids": ["P8", "P13", "P27"]},
-      {"id": "E19", "name": "Leistungselektronik", "typ": "komponente", "eltern_id": "E17", "absatz_ids": ["P8", "P17", "P27"]},
+      {"id": "E18", "name": "Traktionsmaschine", "typ": "komponente", "eltern_id": "E17", "absatz_ids": ["P8", "P13", "P27", "P20", "P24"]},
+      {"id": "E19", "name": "Leistungselektronik", "typ": "komponente", "eltern_id": "E17", "absatz_ids": ["P8", "P17", "P27", "P20", "P24"]},
       {"id": "E20", "name": "Abgasanlage", "typ": "komponente", "eltern_id": "E11", "absatz_ids": ["P8", "P27"]},
       {"id": "E21", "name": "Starteinrichtung", "typ": "komponente", "eltern_id": "E11", "absatz_ids": ["P8", "P28"]},
+      {"id": "E86", "name": "Zündanlage", "typ": "komponente", "eltern_id": "E11", "absatz_ids": ["P8", "P20"]},
+      {"id": "E87", "name": "Luftansaugung", "typ": "komponente", "eltern_id": "E11", "absatz_ids": ["P8", "P20"]},
+      {"id": "E90", "name": "Sekundärtrieb", "typ": "komponente", "eltern_id": "E11", "absatz_ids": ["P6", "P8"]},
       {"id": "E22", "name": "Energieversorgungssystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P9", "P10", "P25"], "kategorie": "energieversorgung"},
       {"id": "E23", "name": "Kraftstoffanlage", "typ": "subsystem", "eltern_id": "E22", "absatz_ids": ["P10", "P27"]},
-      {"id": "E24", "name": "Kraftstofftank", "typ": "komponente", "eltern_id": "E23", "absatz_ids": ["P1", "P5", "P10"]},
-      {"id": "E25", "name": "Gemischaufbereitung", "typ": "komponente", "eltern_id": "E23", "absatz_ids": ["P10"]},
+      {"id": "E24", "name": "Kraftstofftank", "typ": "komponente", "eltern_id": "E23", "absatz_ids": ["P1", "P5", "P10", "P29"]},
+      {"id": "E25", "name": "Gemischaufbereitung", "typ": "komponente", "eltern_id": "E23", "absatz_ids": ["P10", "P20"]},
       {"id": "E26", "name": "Schmierölbehälter", "typ": "komponente", "eltern_id": "E23", "absatz_ids": ["P10"]},
+      {"id": "E88", "name": "Kraftstoffpumpe", "typ": "komponente", "eltern_id": "E23", "absatz_ids": ["P10", "P29"]},
       {"id": "E27", "name": "Batteriesystem", "typ": "subsystem", "eltern_id": "E22", "absatz_ids": ["P10", "P26"]},
-      {"id": "E28", "name": "Traktionsbatterie", "typ": "komponente", "eltern_id": "E27", "absatz_ids": ["P5", "P10", "P16", "P27"]},
+      {"id": "E28", "name": "Traktionsbatterie", "typ": "komponente", "eltern_id": "E27", "absatz_ids": ["P5", "P10", "P16", "P27", "P29"]},
       {"id": "E29", "name": "Batteriemanagementsystem", "typ": "komponente", "eltern_id": "E27", "absatz_ids": ["P9", "P10", "P19", "P24"]},
       {"id": "E30", "name": "Ladeeinrichtung", "typ": "komponente", "eltern_id": "E27", "absatz_ids": ["P10"]},
       {"id": "E31", "name": "Bordnetzversorgung", "typ": "subsystem", "eltern_id": "E22", "absatz_ids": ["P10", "P17"]},
@@ -723,7 +757,7 @@
       {"id": "E35", "name": "Lenksystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P11", "P25"], "kategorie": "lenkung"},
       {"id": "E36", "name": "Lenker", "typ": "komponente", "eltern_id": "E35", "absatz_ids": ["P1", "P11"]},
       {"id": "E37", "name": "Lenkrohr", "typ": "komponente", "eltern_id": "E35", "absatz_ids": ["P11"]},
-      {"id": "E38", "name": "Lenkkopflager", "typ": "komponente", "eltern_id": "E35", "absatz_ids": ["P11"]},
+      {"id": "E38", "name": "Lenkkopflager", "typ": "komponente", "eltern_id": "E35", "absatz_ids": ["P11", "P21"]},
       {"id": "E39", "name": "Bremssystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P12", "P13", "P25"], "kategorie": "bremse"},
       {"id": "E40", "name": "Betriebsbremse", "typ": "subsystem", "eltern_id": "E39", "absatz_ids": ["P13", "P26"]},
       {"id": "E41", "name": "Vorderradbremse", "typ": "komponente", "eltern_id": "E40", "absatz_ids": ["P11", "P13"]},
@@ -740,7 +774,7 @@
       {"id": "E52", "name": "Bedienelemente", "typ": "komponente", "eltern_id": "E51", "absatz_ids": ["P11", "P15"]},
       {"id": "E53", "name": "Kombiinstrument", "typ": "komponente", "eltern_id": "E51", "absatz_ids": ["P15", "P21"]},
       {"id": "E54", "name": "Aufbau und Ladung", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P16", "P25"], "kategorie": "aufbau_nutzlast"},
-      {"id": "E55", "name": "Gepäckraum", "typ": "komponente", "eltern_id": "E54", "absatz_ids": ["P15", "P16"]},
+      {"id": "E55", "name": "Gepäckraum", "typ": "komponente", "eltern_id": "E54", "absatz_ids": ["P15", "P16", "P29"]},
       {"id": "E56", "name": "Gepäckträger", "typ": "komponente", "eltern_id": "E54", "absatz_ids": ["P14", "P16"]},
       {"id": "E57", "name": "Transportbox", "typ": "komponente", "eltern_id": "E54", "absatz_ids": ["P16"]},
       {"id": "E58", "name": "Elektrik und Elektronik", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P17", "P18", "P25"], "kategorie": "elektrik_elektronik"},
@@ -757,6 +791,7 @@
       {"id": "E69", "name": "Akustische Warneinrichtung", "typ": "komponente", "eltern_id": "E68", "absatz_ids": ["P21"]},
       {"id": "E70", "name": "Antriebsschlupfregelung", "typ": "komponente", "eltern_id": "E68", "absatz_ids": ["P21"]},
       {"id": "E71", "name": "Reifendrucküberwachung", "typ": "komponente", "eltern_id": "E68", "absatz_ids": ["P21"]},
+      {"id": "E91", "name": "Sicherung gegen unbefugte Benutzung", "typ": "komponente", "eltern_id": "E68", "absatz_ids": ["P20", "P21"]},
       {"id": "E72", "name": "Beleuchtung und Sicht", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P22", "P23", "P25"], "kategorie": "beleuchtung_sicht"},
       {"id": "E73", "name": "Beleuchtungs- und Lichtsignaleinrichtungen", "typ": "subsystem", "eltern_id": "E72", "absatz_ids": ["P22", "P23"]},
       {"id": "E74", "name": "Scheinwerfer", "typ": "komponente", "eltern_id": "E73", "absatz_ids": ["P11", "P23"]},
@@ -778,7 +813,7 @@
       {"id": "F3", "name": "Drehmoment übertragen", "ausgefuehrt_von": ["E14", "E15", "E16"], "absatz_ids": ["P6", "P8", "P28"]},
       {"id": "F4", "name": "Fahrzeug fortbewegen", "ausgefuehrt_von": ["E16", "E10"], "absatz_ids": ["P8", "P28"]},
       {"id": "F5", "name": "Energie speichern", "ausgefuehrt_von": ["E24", "E28", "E33"], "absatz_ids": ["P9", "P10", "P28"]},
-      {"id": "F6", "name": "Treibstoff fördern", "ausgefuehrt_von": ["E25"], "absatz_ids": ["P10", "P28"]},
+      {"id": "F6", "name": "Treibstoff fördern", "ausgefuehrt_von": ["E88"], "absatz_ids": ["P10", "P29", "P28"]},
       {"id": "F7", "name": "Traktionsbatterie laden", "ausgefuehrt_von": ["E30"], "absatz_ids": ["P9", "P10", "P28"]},
       {"id": "F8", "name": "Elektrische Energie verteilen", "ausgefuehrt_von": ["E59"], "absatz_ids": ["P17", "P28"]},
       {"id": "F9", "name": "Fahrzeug lenken", "ausgefuehrt_von": ["E36", "E37", "E8"], "absatz_ids": ["P11", "P28"]},
@@ -791,16 +826,17 @@
       {"id": "F16", "name": "Daten übertragen", "ausgefuehrt_von": ["E63", "E67"], "absatz_ids": ["P17", "P20", "P28"]},
       {"id": "F17", "name": "Fahrzeugzustand überwachen", "ausgefuehrt_von": ["E66", "E29", "E71"], "absatz_ids": ["P9", "P20", "P21", "P28"]},
       {"id": "F18", "name": "Fahrzeugposition bestimmen", "ausgefuehrt_von": ["E67"], "absatz_ids": ["P20", "P28"]},
-      {"id": "F19", "name": "Höchstgeschwindigkeit begrenzen", "ausgefuehrt_von": ["E65"], "absatz_ids": ["P19", "P20", "P28"]},
+      {"id": "F19", "name": "Höchstgeschwindigkeit begrenzen", "ausgefuehrt_von": ["E65", "E14", "E19"], "absatz_ids": ["P19", "P20", "P28"]},
       {"id": "F20", "name": "Antriebsschlupf regeln", "ausgefuehrt_von": ["E70"], "absatz_ids": ["P21", "P28"]},
       {"id": "F21", "name": "Warnsignal abgeben", "ausgefuehrt_von": ["E69"], "absatz_ids": ["P21", "P28"]},
       {"id": "F22", "name": "Fahrzeugumgebung ausleuchten", "ausgefuehrt_von": ["E74"], "absatz_ids": ["P23", "P28"]},
       {"id": "F23", "name": "Lichtsignale abgeben", "ausgefuehrt_von": ["E75", "E76"], "absatz_ids": ["P23", "P28"]},
       {"id": "F24", "name": "Fahrersicht sicherstellen", "ausgefuehrt_von": ["E78", "E79"], "absatz_ids": ["P23", "P28"]},
-      {"id": "F25", "name": "Betriebstemperatur regeln", "ausgefuehrt_von": ["E81", "E82", "E85"], "absatz_ids": ["P24", "P28"]}
+      {"id": "F25", "name": "Betriebstemperatur regeln", "ausgefuehrt_von": ["E81", "E82", "E85"], "absatz_ids": ["P24", "P28"]},
+      {"id": "F26", "name": "Fahrzeug gegen unbefugte Benutzung sichern", "ausgefuehrt_von": ["E91"], "absatz_ids": ["P21", "P28"]}
     ],
     "fluesse": [
-      {"id": "S1", "von": "E23", "nach": "E13", "art": "stoff", "medium": "Kraftstoff", "absatz_ids": ["P10", "P27"], "schnittstelle": "Kraftstoffleitung"},
+      {"id": "S1", "von": "E88", "nach": "E13", "art": "stoff", "medium": "Kraftstoff", "absatz_ids": ["P10", "P29", "P27"], "schnittstelle": "Kraftstoffleitung"},
       {"id": "S2", "von": "E28", "nach": "E19", "art": "elektrisch", "medium": "Traktionsstrom", "absatz_ids": ["P8", "P27"], "schnittstelle": "Batterieanschluss Antrieb"},
       {"id": "S3", "von": "E19", "nach": "E18", "art": "elektrisch", "medium": "Phasenströme", "absatz_ids": ["P8"]},
       {"id": "S4", "von": "E13", "nach": "E14", "art": "mechanisch", "medium": "Kurbelwellendrehmoment", "absatz_ids": ["P8", "P27"]},
@@ -831,7 +867,11 @@
       {"id": "S29", "von": "E67", "nach": "E65", "art": "information", "medium": "Freigabe und Zustandsabfrage", "absatz_ids": ["P20"], "schnittstelle": "Fahrzeugbus"},
       {"id": "S30", "von": "E71", "nach": "E53", "art": "information", "medium": "Reifendruckwarnung", "absatz_ids": ["P21"], "schnittstelle": "Fahrzeugbus"},
       {"id": "S31", "von": "E43", "nach": "E75", "art": "information", "medium": "Bremslichtsignal", "absatz_ids": ["P23"], "schnittstelle": "Bremslichtschalter"},
-      {"id": "S32", "von": "E59", "nach": "E62", "art": "elektrisch", "medium": "Versorgungsstrom", "absatz_ids": ["P17", "P27"]}
+      {"id": "S32", "von": "E59", "nach": "E62", "art": "elektrisch", "medium": "Versorgungsstrom", "absatz_ids": ["P17", "P27"]},
+      {"id": "S33", "von": "E19", "nach": "E82", "art": "thermisch", "medium": "Verlustwärme", "absatz_ids": ["P24"], "schnittstelle": "Kühlanbindung Leistungselektronik"},
+      {"id": "S34", "von": "E59", "nach": "E86", "art": "elektrisch", "medium": "Zündstrom", "absatz_ids": ["P8", "P17"], "schnittstelle": "Zündstromkreis"},
+      {"id": "S35", "von": "E91", "nach": "E38", "art": "mechanisch", "medium": "Verriegelung des Lenkkopfs", "absatz_ids": ["P21"], "schnittstelle": "Lenkschloss am Lenkkopf"},
+      {"id": "S36", "von": "E91", "nach": "E65", "art": "information", "medium": "Startfreigabe", "absatz_ids": ["P20", "P21"], "schnittstelle": "Zündschlosssignal"}
     ],
     "entfallene_kategorien": [
       {"kategorie": "nebensysteme", "grund": "Der Motorroller hat keine Druckluft-, Unterdruck- oder Hydraulikversorgung und keinen Nebenabtrieb; die hydraulische Bremsbetätigung ist Teil des Bremssystems, die Schmierölversorgung des Zweitakters Teil der Kraftstoffanlage."}
@@ -855,17 +895,34 @@
       },
       {
         "id": "V2",
-        "element_id": "E12",
-        "bezeichnung": "Anordnung der Antriebseinheit am Hinterrad",
-        "alternativen": ["Triebsatzschwinge mit Motor, Variator und Radantrieb", "fest im Rahmen eingebauter Motor mit Hinterradschwinge und Kettentrieb", "Radnabenmotor im Hinterrad"],
+        "element_id": "E13",
+        "bezeichnung": "Einbau des Verbrennungsmotors",
+        "alternativen": ["Triebsatzschwinge aus Verbrennungsmotor, Variator, Fliehkraftkupplung und Radantrieb", "fest im Rahmen eingebauter Motor mit separater Hinterradschwinge und Sekundärtrieb"],
         "auswahlkriterien": ["Leistungsklasse und Fahrdynamik", "zulässige ungefederte Masse", "Herstellkosten", "Bauraum für Gepäckraum und Energiespeicher"],
         "auswirkungen": [
-          {"element_id": "E9", "beschreibung": "Die Triebsatzschwinge und der Radnabenmotor erhöhen die ungefederte Masse und verlangen eine darauf abgestimmte Federung."},
+          {"element_id": "E89", "beschreibung": "Die Hinterradaufhängung ist die Triebsatzschwinge selbst oder eine separate Hinterradschwinge mit Federbein."},
+          {"element_id": "E90", "beschreibung": "Beim festen Motoreinbau überträgt ein Sekundärtrieb, meist eine Kette, die Leistung zum Hinterrad; bei der Triebsatzschwinge entfällt er."},
+          {"element_id": "E9", "beschreibung": "Die Triebsatzschwinge erhöht die ungefederte Masse und verlangt eine darauf abgestimmte Federung."},
           {"element_id": "E4", "beschreibung": "Fester Motoreinbau braucht Motoraufnahmen im Rahmen und ein eigenes Schwingenlager."},
           {"element_id": "E20", "beschreibung": "Bei der Triebsatzschwinge schwingt die Abgasanlage mit und braucht eine bewegliche Anbindung."},
           {"element_id": "E55", "beschreibung": "Der feste Motoreinbau belegt Bauraum unter der Sitzbank anders als die Triebsatzschwinge."}
         ],
-        "absatz_ids": ["P6", "P7", "P8"]
+        "absatz_ids": ["P5", "P6", "P8"]
+      },
+      {
+        "id": "V8",
+        "element_id": "E18",
+        "bezeichnung": "Anordnung der Traktionsmaschine",
+        "alternativen": ["Radnabenmotor im Hinterrad", "rahmen- oder schwingenfeste Traktionsmaschine mit Zahnriemen als Sekundärtrieb"],
+        "auswahlkriterien": ["zulässige ungefederte Masse", "Platzbedarf im Hinterbau", "Herstellkosten", "Wartungsaufwand des Sekundärtriebs"],
+        "auswirkungen": [
+          {"element_id": "E9", "beschreibung": "Der Radnabenmotor erhöht die ungefederte Masse und verlangt eine darauf abgestimmte Federung."},
+          {"element_id": "E89", "beschreibung": "Beim Radnabenmotor führt die Hinterradaufhängung das Motorgehäuse und nimmt dessen Reaktionsmoment auf."},
+          {"element_id": "E90", "beschreibung": "Der Zahnriemen als Sekundärtrieb entfällt beim Radnabenmotor."},
+          {"element_id": "E4", "beschreibung": "Eine rahmenfeste Traktionsmaschine braucht eine Motoraufnahme im Rahmen."},
+          {"element_id": "E19", "beschreibung": "Beim Radnabenmotor führen die Phasenleitungen von der Leistungselektronik über die schwingende Hinterradaufhängung."}
+        ],
+        "absatz_ids": ["P7", "P8"]
       },
       {
         "id": "V3",
@@ -933,11 +990,25 @@
           {"element_id": "E59", "beschreibung": "Ein Kühlkreislauf mit elektrischem Lüfter belastet das Niedervolt-Bordnetz."}
         ],
         "absatz_ids": ["P24"]
+      },
+      {
+        "id": "V9",
+        "element_id": "E24",
+        "bezeichnung": "Lage von Kraftstofftank bzw. Traktionsbatterie",
+        "alternativen": ["unter der Sitzbank bei der Antriebseinheit", "im Trittbrett oder in einem flachen Mitteltunnel"],
+        "auswahlkriterien": ["Volumen des Gepäckraums unter der Sitzbank", "Schwerpunktlage", "Trittbrettform und Beinfreiheit", "Leitungsführung zur Antriebseinheit"],
+        "auswirkungen": [
+          {"element_id": "E55", "beschreibung": "Unter der Sitzbank verkleinert der Energiespeicher den Gepäckraum, im Trittbrett bleibt er frei."},
+          {"element_id": "E5", "beschreibung": "Ein Energiespeicher im Trittbrett oder Mitteltunnel verlangt eine höhere Trittfläche oder einen Tunnel in der Verkleidung."},
+          {"element_id": "E4", "beschreibung": "Der Rahmen braucht Aufnahme und Schutz des Energiespeichers an der gewählten Stelle."},
+          {"element_id": "E28", "beschreibung": "Für die Traktionsbatterie stellt sich dieselbe Lagefrage, mit Folgen für Kühlung und Zugänglichkeit."}
+        ],
+        "absatz_ids": ["P29", "P9", "P16"]
       }
     ],
     "klaerungsfragen": [
       {"id": "K1", "frage": "Soll der Motorroller mit Verbrennungsmotor oder batterieelektrisch angetrieben werden?", "element_ids": ["E11", "E22"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Energieversorgung, Thermomanagement, Abgasanlage, Bordnetzversorgung und Gepäckraum ab.", "variante_ids": ["V1"]},
-      {"id": "K2", "frage": "Soll die Antriebseinheit als Triebsatzschwinge, als fest im Rahmen eingebauter Motor mit Kettentrieb oder als Radnabenmotor ausgeführt werden?", "element_ids": ["E12", "E9", "E4"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen ungefederte Masse, Federung, Rahmenaufnahmen und Bauraum unter der Sitzbank ab.", "variante_ids": ["V2"]},
+      {"id": "K2", "frage": "Falls der Roller einen Verbrennungsmotor erhält: Soll der Motor in einer Triebsatzschwinge sitzen oder fest im Rahmen mit separater Hinterradschwinge und Sekundärtrieb?", "element_ids": ["E13", "E12", "E89", "E90"], "anlass": "architekturentscheidung", "relevanz": "Die Frage folgt auf die Entscheidung über die Antriebsart; von ihr hängen ungefederte Masse, Federung, Rahmenaufnahmen und Bauraum unter der Sitzbank ab.", "variante_ids": ["V2"]},
       {"id": "K3", "frage": "Welche Rahmenbauweise soll verwendet werden, selbsttragender Pressstahl oder Rohrrahmen mit Verkleidung?", "element_ids": ["E4", "E5", "E2"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen die tragende Funktion der Verkleidung, die Fertigung und der Bauraum für Tank und Batterie ab.", "variante_ids": ["V3"]},
       {"id": "K4", "frage": "Soll das Vorderrad in einer Kurzschwinge oder in einer Teleskopgabel geführt werden?", "element_ids": ["E8", "E37", "E41"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Lenkrohranbindung, Bremsabstützung und Federungsauslegung ab.", "variante_ids": ["V4"]},
       {"id": "K5", "frage": "Welche Bremsausstattung ist gefordert: getrennte Bremsen, kombinierte Bremsanlage, Antiblockiersystem oder beides?", "element_ids": ["E39", "E44", "E45"], "anlass": "anforderung", "relevanz": "Davon hängen Steuergeräte, Sensorik, Bremsbetätigung und die Zulässigkeit in der gewählten Fahrzeugklasse ab.", "variante_ids": ["V5"]},
@@ -949,9 +1020,12 @@
       {"id": "K11", "frage": "Wird der Roller im Verleih ohne Personal betrieben, sodass Ortung, Fernfreigabe und Zustandsmeldung nötig sind?", "element_ids": ["E67", "E65", "E64"], "anlass": "betrieb", "relevanz": "Davon hängt ab, ob eine Telematikeinheit mit Mobilfunk und Ortung vorgesehen werden muss."},
       {"id": "K12", "frage": "Sollen Antriebsschlupfregelung und Reifendrucküberwachung vorgesehen werden?", "element_ids": ["E70", "E71", "E68"], "anlass": "anforderung", "relevanz": "Davon hängen Sensorik, Eingriff in das Fahrzeugmanagement und Anzeigen im Kombiinstrument ab."},
       {"id": "K13", "frage": "Sollen Scheinwerfer und Kombiinstrument mitlenkend am Lenker oder fest im Beinschild sitzen?", "element_ids": ["E74", "E53", "E36", "E72"], "anlass": "schnittstelle", "relevanz": "Davon hängen Leitungsführung durch den Lenkkopf, Lenkermasse und Verkleidungsform ab."},
-      {"id": "K14", "frage": "Soll der Roller als Kleinkraftrad oder als Kraftrad zugelassen werden, und in welcher Leistungsstufe?", "element_ids": ["E1", "E11", "E65"], "anlass": "anforderung", "relevanz": "Davon hängen Motorleistung, Geschwindigkeitsbegrenzung, Bremsausstattung und Beleuchtungsvorgaben ab.", "variante_ids": ["V5"]},
+      {"id": "K14", "frage": "Soll der Roller als Kleinkraftrad oder als Kraftrad zugelassen werden, und in welcher Leistungsstufe?", "element_ids": ["E1", "E11", "E65"], "anlass": "anforderung", "relevanz": "Davon hängen Motorleistung, Geschwindigkeitsbegrenzung mit Anzahl und Lage der unabhängigen Begrenzungseinrichtungen, Bremsausstattung und Beleuchtungsvorgaben ab.", "variante_ids": ["V5"]},
       {"id": "K15", "frage": "Wird ein Windschild für Wetterschutz gefordert, und soll es verstellbar sein?", "element_ids": ["E79", "E72"], "anlass": "anforderung", "relevanz": "Davon hängen Verkleidung, Sichtfeld und Fahrgeräusch für den Fahrer ab."},
-      {"id": "K16", "frage": "Sollen beide Bremsen über Handhebel am Lenker oder die Hinterradbremse über ein Fußpedal betätigt werden?", "element_ids": ["E43", "E35", "E52"], "anlass": "schnittstelle", "relevanz": "Davon hängen Lenkerarmaturen, Trittbrettgestaltung und die Leitungsführung der Bremse ab."}
+      {"id": "K16", "frage": "Sollen beide Bremsen über Handhebel am Lenker oder die Hinterradbremse über ein Fußpedal betätigt werden?", "element_ids": ["E43", "E35", "E52"], "anlass": "schnittstelle", "relevanz": "Davon hängen Lenkerarmaturen, Trittbrettgestaltung und die Leitungsführung der Bremse ab."},
+      {"id": "K17", "frage": "Falls der Roller batterieelektrisch angetrieben wird: Soll die Traktionsmaschine als Radnabenmotor oder rahmen- beziehungsweise schwingenfest mit Zahnriemen ausgeführt werden?", "element_ids": ["E18", "E89", "E90"], "anlass": "architekturentscheidung", "relevanz": "Die Frage folgt auf die Entscheidung über die Antriebsart; von ihr hängen ungefederte Masse, Hinterradaufhängung, Sekundärtrieb und Leitungsführung ab.", "variante_ids": ["V8"]},
+      {"id": "K18", "frage": "Soll der Energiespeicher, also Kraftstofftank oder Traktionsbatterie, unter der Sitzbank oder im Trittbrett beziehungsweise Mitteltunnel liegen?", "element_ids": ["E24", "E28", "E55"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Gepäckraumvolumen, Trittbrettform, Verkleidung und Schwerpunktlage ab.", "variante_ids": ["V9"]},
+      {"id": "K19", "frage": "Welches Schlüsselsystem soll die Sicherung gegen unbefugte Benutzung haben: mechanisches Zünd- und Lenkschloss, zusätzlich eine Wegfahrsperre oder ein schlüsselloses Startsystem?", "element_ids": ["E91", "E65", "E68"], "anlass": "anforderung", "relevanz": "Davon hängen Lenkkopfgestaltung, Schnittstelle zum Fahrzeugmanagement und die erreichbare Überwindungszeit ab."}
     ],
     "anforderungsthemen": [
       {"id": "R1", "element_ids": ["E2", "E4", "E10"], "thema": "Tragfähigkeit und Fahrstabilität", "kenngroessen": ["technisch zulässige Gesamtmasse", "Leermasse", "Radstand", "Reifengröße", "Federweg", "Festigkeit der Fahrzeugstruktur"], "regelwerke": [
@@ -983,7 +1057,7 @@
         {"bezeichnung": "Verordnung (EU) Nr. 168/2013, Artikel 18: elektromagnetische Verträglichkeit über delegierte Rechtsakte (EU, Fahrzeuge der Klasse L)", "quellen_id": "Q1", "fundstelle": "Artikel 18 Absatz 2"}
       ]},
       {"id": "R11", "element_ids": ["E64", "E65", "E66", "E67"], "thema": "Manipulationsschutz, Diagnose und Vernetzung", "kenngroessen": ["Schutz gegen unbefugte Eingriffe", "Diagnosezugang", "Ortungsgenauigkeit", "Verfügbarkeit der Datenverbindung"], "regelwerke": [
-        {"bezeichnung": "Verordnung (EU) Nr. 168/2013, Anhang II Teil C: Maßnahmen betreffend unbefugte Eingriffe (EU, Fahrzeuge der Klasse L)", "quellen_id": "Q1", "fundstelle": "Anhang II Teil C, Nummer 1"}
+        {"bezeichnung": "Verordnung (EU) Nr. 168/2013, Anhang II Teil C: Maßnahmen betreffend unbefugte Eingriffe (EU, Fahrzeuge der Klasse L außer L3e-A3 und L4e-A3)", "quellen_id": "Q1", "fundstelle": "Anhang II Teil C, Nummer 1; Artikel 20 Absatz 1"}
       ]},
       {"id": "R12", "element_ids": ["E68", "E69", "E70"], "thema": "Warn- und Assistenzfunktionen", "kenngroessen": ["Schallpegel der Warneinrichtung", "Eingriffsschwelle der Schlupfregelung", "Warnschwelle Reifendruck"], "regelwerke": [
         {"bezeichnung": "Verordnung (EU) Nr. 168/2013, Anhang II Teil B: akustische Warneinrichtungen (EU, Fahrzeuge der Klasse L)", "quellen_id": "Q1", "fundstelle": "Anhang II Teil B, Nummer 1"}
@@ -992,7 +1066,10 @@
         {"bezeichnung": "Verordnung (EU) Nr. 168/2013, Anhang VIII: automatisches Einschalten der Beleuchtung (EU, Klassen L1e und L3e)", "quellen_id": "Q1", "fundstelle": "Anhang VIII, „Verbesserung der Sichtbarkeit des Fahrzeugs und des Fahrers“ a) und b)"},
         {"bezeichnung": "Delegierte Verordnung (EU) Nr. 3/2014, Anhänge IX und X: Anbau der Beleuchtung und Sicht nach hinten (EU, Klassen L1e-B und L3e)", "quellen_id": "Q2", "fundstelle": "Anhang IX, Nummern 1.1 und 1.1.1; Anhang X, Nummer 1"}
       ]},
-      {"id": "R14", "element_ids": ["E80", "E81", "E85"], "thema": "Betriebstemperaturen", "kenngroessen": ["Kühlleistung", "Betriebstemperaturbereich der Traktionsbatterie", "Umgebungstemperaturbereich", "Motortemperatur"]}
+      {"id": "R14", "element_ids": ["E80", "E81", "E85"], "thema": "Betriebstemperaturen", "kenngroessen": ["Kühlleistung", "Betriebstemperaturbereich der Traktionsbatterie", "Umgebungstemperaturbereich", "Motortemperatur"]},
+      {"id": "R15", "element_ids": ["E68", "E91"], "thema": "Diebstahlschutz", "kenngroessen": ["Überwindungszeit", "Schlüsselsystem"], "regelwerke": [
+        {"bezeichnung": "Verordnung (EU) Nr. 168/2013, Anhang II Teil C: Sicherungen gegen unbefugte Benutzung (EU, Fahrzeuge der Klasse L)", "quellen_id": "Q1", "fundstelle": "Anhang II Teil C, Nummer 5"}
+      ]}
     ]
   },
   "offene_punkte": [
@@ -1001,6 +1078,7 @@
     "Glossarvorschlag: Funktion „Höchstgeschwindigkeit begrenzen“ (bauartbedingte Begrenzung von Geschwindigkeit oder Leistung bei Krafträdern und Kleinkrafträdern).",
     "Glossarvorschlag: Funktion „Antriebsschlupf regeln“ (Begrenzung des Antriebsschlupfs; nicht synonym zu „Fahrzeug verzögern“).",
     "Glossarvorschlag: Funktion „Warnsignal abgeben“ (akustisches Warnsignal; Ergänzung zu „Lichtsignale abgeben“).",
+    "Glossarvorschlag: Funktion „Fahrzeug gegen unbefugte Benutzung sichern“ (Zünd- und Lenkschloss, Wegfahrsperre; nicht synonym zu „Fahrzeug festhalten“).",
     "Recherche: UNECE-Regelung Nr. 78 (Bremsen der Fahrzeuge der Klasse L) im Original für Aufbau der Bremsanlagen und Betätigung; der Abruf der PDF-Fassung bei unece.org lieferte in diesem Lauf keinen Inhalt.",
     "Recherche: Definition der Hochspannung in der Delegierten Verordnung (EU) Nr. 3/2014 und UN-Regelung Nr. 136, um zu klären, ob die Anforderungen an die elektrische Sicherheit für die Spannungslagen von Elektromotorrollern greifen.",
     "Recherche: Fachliteratur zu Variomatik, Fliehkraftkupplung und Triebsatzschwinge (Matschinsky, Radführungen der Straßenfahrzeuge; Gscheidle, Fachkunde Kraftfahrzeugtechnik) für Wirkkette, Kühlung und Bremsbetätigung des Rollers.",

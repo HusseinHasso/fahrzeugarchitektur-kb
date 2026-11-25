@@ -257,7 +257,7 @@
         },
         {
           "absatz_id": "P5",
-          "text": "Das System Fahrzeugstruktur und Fahrwerk gliedert sich in Tragstruktur und Achsaggregat. Zur Tragstruktur gehören der Rahmen aus Längs- und Querträgern, vorn die Aufsattelplatte mit dem Königszapfen und dahinter die Stützeinrichtung. Die Last fließt von Aufbau und Rahmen nach vorn über den Königszapfen in die Sattelkupplung und nach hinten über Federung und Achse zu Räder und Reifen. Die Federung ist als Luftfederung oder mechanische Federung ausgeführt; bei Luftfederung hebt ein Achslift eine Achse bei geringer Last an. Für tiefe Ladeböden wird der Rahmen hinter der Aufsattelplatte als Schwanenhals gekröpft.",
+          "text": "Das System Fahrzeugstruktur und Fahrwerk gliedert sich in Tragstruktur und Achsaggregat. Zur Tragstruktur gehören der Rahmen aus Längs- und Querträgern, vorn die Aufsattelplatte mit dem Königszapfen und dahinter die Stützeinrichtung. Die Last fließt von Aufbau und Rahmen nach vorn über den Königszapfen in die Sattelkupplung und nach hinten über Federung und Achse zu Räder und Reifen. Die Federung ist als Luftfederung oder mechanische Federung ausgeführt; bei Luftfederung hebt ein Achslift eine Achse bei geringer Last an. Je nach Variante ist eine Achse des Achsaggregats als Lenkachse oder, beim elektrisch angetriebenen Auflieger, als Antriebsachse ausgeführt. Für tiefe Ladeböden wird der Rahmen hinter der Aufsattelplatte als Schwanenhals gekröpft.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herangezogene_artikel_ids": [],
@@ -267,7 +267,8 @@
               "P3: Königszapfen, Achsen, Liftachse an Luftfederbälgen",
               "P4: Stützeinrichtung trägt den abgestellten Auflieger",
               "Q2: Drop-deck-Auflieger mit abgesenktem Boden hinter der Zugmaschine (Abschnitt Types)",
-              "Funktionsprinzip: jede Last braucht einen geschlossenen Pfad zu den Aufstandspunkten"
+              "Funktionsprinzip: jede Last braucht einen geschlossenen Pfad zu den Aufstandspunkten",
+              "P12, P14: Lenkachse und Antriebsachse ersetzen jeweils eine Achse des Achsaggregats"
             ],
             "schluss": "Tragstruktur und Achsaggregat bilden die beiden Lastpfade zur Sattelkupplung und zur Fahrbahn."
           },
@@ -409,7 +410,7 @@
         },
         {
           "absatz_id": "P12",
-          "text": "Mit starren Achsen entfällt das Lenksystem; die Spur folgt dann allein dem Königszapfen. Sonst besteht es aus Lenkachse, Lenkzylinder und Lenksteuergerät. Eine nachlaufgelenkte Lenkachse stellt sich durch Seitenkräfte selbst ein und wird bei Rückwärtsfahrt gesperrt. Bei der Zwangslenkung erfasst das Lenksteuergerät den Knickwinkel zum Zugfahrzeug, berechnet die Radeinschläge und steuert die Lenkzylinder, die Öl vom Hydraulikaggregat erhalten.",
+          "text": "Mit starren Achsen entfällt das Lenksystem; die Spur folgt dann allein dem Königszapfen. Sonst besteht es aus Lenkzylinder und Lenksteuergerät, die eine Lenkachse des Achsaggregats verstellen. Eine nachlaufgelenkte Lenkachse stellt sich durch Seitenkräfte selbst ein und wird bei Rückwärtsfahrt gesperrt. Bei der Zwangslenkung erfasst das Lenksteuergerät den Knickwinkel zum Zugfahrzeug, berechnet die Radeinschläge und steuert die Lenkzylinder, die Öl vom Hydraulikaggregat erhalten.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herangezogene_artikel_ids": [],
@@ -419,7 +420,7 @@
               "P3: dritte Achse oft als Lenkachse",
               "Annahme über Bauweisen: Nachlauflenkung und knickwinkelgeführte Zwangslenkung ohne Quelle in diesem Lauf"
             ],
-            "schluss": "Eine Lenkachse braucht Stellglied, Sollwertbildung und Hilfsenergie; Nachlauf- und Zwangslenkung unterscheiden sich in der Sollwertbildung."
+            "schluss": "Eine Lenkachse des Achsaggregats braucht Stellglied, Sollwertbildung und Hilfsenergie aus dem Lenksystem; Nachlauf- und Zwangslenkung unterscheiden sich in der Sollwertbildung."
           },
           "sicherheit": "gering",
           "aussagetyp": "variante"
@@ -446,7 +447,7 @@
         },
         {
           "absatz_id": "P14",
-          "text": "Der herkömmliche Sattelauflieger hat kein Antriebssystem. Beim elektrisch angetriebenen Auflieger ersetzt eine Antriebsachse eine Achse des Achsaggregats; eine Traktionsmaschine treibt sie an. Ein Wechselrichter speist die Traktionsmaschine aus dem Hochvolt-Bordnetz und kehrt beim Bremsen den Energiefluss um, sodass Bremsenergie in die Traktionsbatterie zurückfließt. Die Antriebsleistung muss zur Zugkraft der Sattelzugmaschine passen, damit der Auflieger nicht schiebt; ihre Sollwerte kommen über den Fahrzeugbus.",
+          "text": "Der herkömmliche Sattelauflieger hat kein Antriebssystem. Beim elektrisch angetriebenen Auflieger ersetzt eine Antriebsachse eine Achse des Achsaggregats; die Traktionsmaschine des Antriebssystems treibt sie an. Ein Wechselrichter speist die Traktionsmaschine aus dem Hochvolt-Bordnetz und kehrt beim Bremsen den Energiefluss um, sodass Bremsenergie in die Traktionsbatterie zurückfließt. Die Antriebsleistung muss zur Zugkraft der Sattelzugmaschine passen, damit der Auflieger nicht schiebt; ihre Sollwerte kommen über den Fahrzeugbus.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herangezogene_artikel_ids": [],
@@ -456,7 +457,7 @@
               "P13: elektrischer Antriebsstrang unterstützt die Zugmaschine",
               "Funktionsprinzip: ein elektrischer Antrieb braucht Energiespeicher, Wandler und Ansteuerung"
             ],
-            "schluss": "Der elektrische Antrieb ergänzt das Achsaggregat um Antriebsachse, Traktionsmaschine und Wechselrichter mit Sollwertvorgabe."
+            "schluss": "Der elektrische Antrieb besteht aus Traktionsmaschine und Wechselrichter mit Sollwertvorgabe und treibt eine Antriebsachse des Achsaggregats an."
           },
           "sicherheit": "mittel",
           "aussagetyp": "variante"
@@ -756,7 +757,7 @@
       "absaetze": [
         {
           "absatz_id": "P28",
-          "text": "Mechanisch: Ladungslast von Aufbaustruktur und Ladungssicherung in den Rahmen, von dort über den Königszapfen zur Sattelkupplung und über Federung und Achse zu Räder und Reifen; Stützlast der Stützeinrichtung; Drehmoment der Traktionsmaschine an die Antriebsachse. Pneumatisch: Vorrats- und Steuerdruck über die Kupplungsköpfe, Druckluftbehälter an Anhängerbremsventil und Überströmventil, weiter an Bremszylinder und Federung. Hydraulisch: Hydraulikaggregat an Kippeinrichtung und Lenkzylinder. Elektrisch: Steckverbindungen an Niedervolt-Bordnetz und Leuchten, Traktionsbatterie über Hochvolt-Bordnetz und Wechselrichter an die Traktionsmaschine und zurück, Gleichspannungswandler ins Niedervolt-Bordnetz, Bordnetzbatterie an Ladebordwand. Stoff und thermisch: Kraftstoff zum Kühlaggregat, Kälte in den Laderaum, Batterietemperierung an Traktionsbatterie. Information: Bremsanforderung an die Bremsregelung, Balgdruck an die Achslasterfassung, Sensordaten über den Fahrzeugbus an Telematikeinheit, Wechselrichter und Zugfahrzeug.",
+          "text": "Mechanisch: Ladungslast von Aufbaustruktur und Ladungssicherung in den Rahmen, von dort über den Königszapfen zur Sattelkupplung und über Federung und Achse zu Räder und Reifen; Stützlast der Stützeinrichtung; Stellkraft der Lenkzylinder an die Lenkachse; Drehmoment der Traktionsmaschine an die Antriebsachse und weiter an Räder und Reifen. Pneumatisch: Vorrats- und Steuerdruck über die Kupplungsköpfe, Druckluftbehälter an Anhängerbremsventil und Überströmventil, weiter an Bremszylinder und Federung. Hydraulisch: Hydraulikaggregat an Kippeinrichtung und Lenkzylinder. Elektrisch: Steckverbindungen an Niedervolt-Bordnetz und Leuchten, Traktionsbatterie über Hochvolt-Bordnetz und Wechselrichter an die Traktionsmaschine und zurück, Gleichspannungswandler ins Niedervolt-Bordnetz, Bordnetzbatterie an Ladebordwand. Stoff und thermisch: Kraftstoff zum Kühlaggregat, Kälte in den Laderaum, Batterietemperierung an Traktionsbatterie. Information: Bremsanforderung an die Bremsregelung, Balgdruck an die Achslasterfassung, Sensordaten über den Fahrzeugbus an Telematikeinheit, Wechselrichter und Zugfahrzeug.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herangezogene_artikel_ids": [],
@@ -1132,8 +1133,9 @@
         "id": "E33",
         "name": "Lenkachse",
         "typ": "komponente",
-        "eltern_id": "E32",
+        "eltern_id": "E8",
         "absatz_ids": [
+          "P5",
           "P12"
         ]
       },
@@ -1192,8 +1194,9 @@
         "id": "E39",
         "name": "Antriebsachse",
         "typ": "komponente",
-        "eltern_id": "E36",
+        "eltern_id": "E8",
         "absatz_ids": [
+          "P5",
           "P14"
         ]
       },
@@ -2210,7 +2213,8 @@
         "absatz_ids": [
           "P14",
           "P28"
-        ]
+        ],
+        "schnittstelle": "Antriebsflansch Antriebsachse"
       },
       {
         "id": "S28",
@@ -2329,6 +2333,29 @@
           "P22"
         ],
         "schnittstelle": "Temperaturmeldung Telematik"
+      },
+      {
+        "id": "S38",
+        "von": "E34",
+        "nach": "E33",
+        "art": "mechanisch",
+        "medium": "Lenkstellkraft",
+        "absatz_ids": [
+          "P12",
+          "P28"
+        ],
+        "schnittstelle": "Lenkzylinderanlenkung"
+      },
+      {
+        "id": "S39",
+        "von": "E39",
+        "nach": "E11",
+        "art": "mechanisch",
+        "medium": "Antriebsmoment",
+        "absatz_ids": [
+          "P14",
+          "P28"
+        ]
       }
     ],
     "entfallene_kategorien": [

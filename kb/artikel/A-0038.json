@@ -86,14 +86,14 @@
         },
         {
           "absatz_id": "P3",
-          "text": "Für die Architektur folgt daraus eine Systemgrenze über den Wagen hinaus: Die Wagen haben keinen eigenen Antrieb, Antrieb, Hauptbremsen und Steuerung liegen in einer Station. Das Gesamtsystem Standseilbahn umfasst daher beide Wagen, das Seilsystem und die Antriebsstation mit ihrer Versorgung; Gleis, Bauwerke und Stationen bleiben als Infrastruktur außen vor. Die Hauptsysteme sind über mechanische, elektrische, hydraulische und informationstechnische Schnittstellen gekoppelt, Wagen und Station nur über das Zugseil und eine Datenverbindung. Die folgenden Abschnitte zerlegen das Gesamtsystem in Hauptsysteme, Subsysteme und Komponenten.",
+          "text": "Die Wagen haben keinen eigenen Antrieb; Antrieb, Hauptbremsen und Steuerung liegen in einer Station. Das Gesamtsystem umfasst daher beide Wagen, das Seilsystem und die Antriebsstation mit ihrer Versorgung, nicht aber Gleis, Bauwerke und Stationen als Infrastruktur. Die Hauptsysteme sind mechanisch, elektrisch, hydraulisch und informationstechnisch gekoppelt, Wagen und Station über das Zugseil, eine Daten- und Sprechverbindung und, je nach Wagenversorgung, Ladekontakte oder eine Fahrleitung. Die folgenden Abschnitte zerlegen das Gesamtsystem in Hauptsysteme, Subsysteme und Komponenten.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
-            "praemissen": ["P1", "P2", "Q2: In den meisten modernen Anlagen hat keiner der Wagen einen eigenen Motor; der Antrieb sitzt im Maschinenraum", "Q3 Annex I: Trennung von Infrastruktur und Teilsystemen"],
-            "schluss": "Die Systemgrenze schließt Seilsystem und Antriebsstation ein und die Infrastruktur aus; Wagen und Station sind nur über Seil und Datenverbindung gekoppelt."
+            "praemissen": ["P1", "P2", "Q2: In den meisten modernen Anlagen hat keiner der Wagen einen eigenen Motor; der Antrieb sitzt im Maschinenraum", "Q3 Annex I: Trennung von Infrastruktur und Teilsystemen", "P11: Nachladung der Bordnetzbatterie über Kontakte in den Endstationen oder Fahrleitung"],
+            "schluss": "Die Systemgrenze schließt Seilsystem und Antriebsstation ein und die Infrastruktur aus; Wagen und Station sind über das Zugseil, eine Daten- und Sprechverbindung und, je nach Energieversorgung der Wagen, über Ladekontakte in den Stationen oder eine Fahrleitung gekoppelt."
           },
-          "sicherheit": "hoch",
+          "sicherheit": "mittel",
           "aussagetyp": "modellannahme",
           "herangezogene_artikel_ids": []
         }
@@ -167,12 +167,12 @@
         },
         {
           "absatz_id": "P9",
-          "text": "Das Antriebssystem gliedert sich in die Antriebsstation mit Antriebsstromrichter, Traktionsmaschine, Getriebe, Treibscheibe, Ablenkscheibe und Notantrieb und in das Seilsystem mit Zugseil, Unterseil, Spannscheibe und Seilrollen. Die Leistung fließt vom Antriebsstromrichter über Traktionsmaschine und Getriebe zur Treibscheibe und per Reibschluss ins Zugseil. Da der Kraftbedarf entlang der Fahrt wechselt und je nach Beladung ins Bremsen umschlägt, arbeitet die Traktionsmaschine drehzahlgeregelt in beiden Momentenrichtungen. Der Notantrieb mit eigener Energie holt die Wagen bei Ausfall des Hauptantriebs in eine Station.",
+          "text": "Das Antriebssystem gliedert sich in die Antriebsstation mit Antriebsstromrichter, Traktionsmaschine, Getriebe, Treibscheibe, Ablenkscheibe und Notantrieb und in das Seilsystem mit Zugseil, Unterseil, Spannscheibe und Seilrollen. Die Leistung fließt vom Antriebsstromrichter über Traktionsmaschine und Getriebe zur Treibscheibe und per Reibschluss ins Zugseil. Da der Kraftbedarf entlang der Fahrt wechselt und je nach Beladung ins Bremsen umschlägt, arbeitet die Traktionsmaschine drehzahlgeregelt in beiden Momentenrichtungen. Der Notantrieb holt die Wagen bei Ausfall des Hauptantriebs in eine Station, gespeist aus einer Notstromversorgung oder einem eigenen Verbrennungsmotor. Nach der EU-Seilbahnverordnung (neue Anlagen zur Personenbeförderung) entfällt er nur, wenn die Sicherheitsanalyse zeigt, dass die Fahrgäste die Wagen leicht, schnell und sicher verlassen können.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
-            "praemissen": ["P7", "P8", "Q1 Streckenprofil: Antriebskraft und Bremse müssen ständig nachgeregelt werden", "Q3 Annex II Nr. 4.2.2: Ersatzantrieb mit vom Hauptantrieb unabhängiger Energieversorgung", "Q1 Schrägaufzug: Trommelfördermaschine oder Gegengewicht"],
-            "schluss": "Die Antriebsstation braucht einen geregelten, vierquadrantenfähigen Leistungspfad und einen unabhängigen Notantrieb; das Seilsystem ist ein eigenes Subsystem."
+            "praemissen": ["P7", "P8", "Q1 Streckenprofil: Antriebskraft und Bremse müssen ständig nachgeregelt werden", "Q3 Annex II Nr. 4.2.2: Ersatzantrieb mit vom Hauptantrieb unabhängiger Energieversorgung; nicht nötig, wenn die Sicherheitsanalyse zeigt, dass Personen die Fahrzeuge leicht, schnell und sicher verlassen können", "Q1 Schrägaufzug: Trommelfördermaschine oder Gegengewicht"],
+            "schluss": "Die Antriebsstation braucht einen geregelten, vierquadrantenfähigen Leistungspfad und, sofern die Sicherheitsanalyse ihn nicht entbehrlich macht, einen Notantrieb mit unabhängiger Energiequelle; das Seilsystem ist ein eigenes Subsystem."
           },
           "sicherheit": "mittel",
           "aussagetyp": "loesung",
@@ -228,7 +228,7 @@
         },
         {
           "absatz_id": "P13",
-          "text": "Das Bremssystem gliedert sich in die Stationsbremsen mit Betriebsbremse, Sicherheitsbremse und Bremsregelung und in die Wagenbremse mit Fangbremse und Fangbremsauslösung. Die Bremsregelung staffelt die Eingriffe: betriebliches Anhalten über Traktionsmaschine und Betriebsbremse, bei Störungen die Sicherheitsbremse, bei Seilriss oder Überdrehzahl die Fangbremse. Da die Fangbremse federbetätigt ist, genügt der Fangbremsauslösung ein Druckabbau; zugleich hält sie den Wagen fest. Statt der Zangenbremse greift bei manchen Anlagen eine Zahnradbremse in eine Zahnstange in Gleismitte.",
+          "text": "Das Bremssystem gliedert sich in die Stationsbremsen mit Betriebsbremse, Sicherheitsbremse und Bremsregelung und in die Wagenbremse mit Fangbremse und Fangbremsauslösung. Die Bremsregelung staffelt die Eingriffe: betriebliches Anhalten über Traktionsmaschine und Betriebsbremse, bei Störungen die Sicherheitsbremse, bei Seilriss oder Überdrehzahl die Fangbremse. Da die Fangbremse federbetätigt ist, genügt der Fangbremsauslösung ein Druckabbau; zugleich hält sie den Wagen fest. Bei manchen, vor allem älteren Anlagen greift statt der Zangenbremse eine Zahnradbremse in eine Zahnstange in Gleismitte.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -262,10 +262,10 @@
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
-            "praemissen": ["P7", "P14"],
-            "schluss": "Die Bedienung liegt im ortsfesten Leitstand; ein Wagenbedienpult ist nur mit Wagenbegleiter nötig."
+            "praemissen": ["P7", "P14", "Q3 Annex II Nr. 5.4: Ist ein Bediener an Bord erforderlich, ist das Fahrzeug mit der dafür nötigen Ausrüstung zu versehen"],
+            "schluss": "Die Bedienung liegt im ortsfesten Leitstand; mit Wagenbegleiter braucht der Wagen Bedienelemente nach Q3 Annex II Nr. 5.4."
           },
-          "sicherheit": "mittel",
+          "sicherheit": "gering",
           "aussagetyp": "variante",
           "herangezogene_artikel_ids": []
         }
@@ -338,14 +338,14 @@
         },
         {
           "absatz_id": "P20",
-          "text": "Die Fahrsteuerung besteht aus Anlagensteuerung, Wegmessung und Türsteuerung. Da beide Wagen am selben Zugseil hängen, legt eine Wegmessung an Treibscheibe oder Seil die Position beider Wagen fest; die Anlagensteuerung leitet daraus Fahrprofil, Bremspunkte und den Sollwert des Antriebsstromrichters ab. Die Türsteuerung gibt die Fahrt erst bei geschlossenen und verriegelten Türen frei. Information und Diagnose umfassen Fahrgastinformation und Diagnose der Zustands- und Störmeldungen.",
+          "text": "Die Fahrsteuerung besteht aus Anlagensteuerung, Wegmessung, Streckenschaltern und Türsteuerung. Eine Wegmessung an der Treibscheibe liefert die Position beider Wagen am gemeinsamen Zugseil; Schlupf und Seildehnung verfälschen sie, daher gleichen ortsfeste Streckenschalter vor den Stationen sie ab, und eine unabhängige zweite Messung plausibilisiert sie. Die Anlagensteuerung leitet daraus Fahrprofil, Bremspunkte und den Sollwert des Antriebsstromrichters ab. Die Türsteuerung gibt die Fahrt erst bei verriegelten Türen frei. Information und Diagnose umfassen Fahrgastinformation und Diagnose der Zustands- und Störmeldungen.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
-            "praemissen": ["P1: beide Wagen fest an den Enden desselben Zugseils", "P19", "Q3 Annex II Nr. 5.3: Türen schließ- und verriegelbar"],
-            "schluss": "Eine Wegmessung genügt für beide Wagen; Fahrfreigabe setzt verriegelte Türen voraus."
+            "praemissen": ["P1: beide Wagen fest an den Enden desselben Zugseils", "P7: Kraftübertragung an der Treibscheibe durch Reibschluss", "Q1: Bei den Standseilbahnen in Valparaíso gleichen verstellbare Seilscheiben in den Bergstationen die Seildehnung aus", "P19", "Q3 Annex II Nr. 5.3: Türen schließ- und verriegelbar"],
+            "schluss": "Eine Wegmessung an der Treibscheibe liefert die Position beider Wagen, muss aber wegen Schlupf und Seildehnung über ortsfeste Streckenschalter abgeglichen und durch eine unabhängige zweite Messung plausibilisiert werden; Fahrfreigabe setzt verriegelte Türen voraus."
           },
-          "sicherheit": "hoch",
+          "sicherheit": "mittel",
           "aussagetyp": "loesung",
           "herangezogene_artikel_ids": []
         }
@@ -367,11 +367,11 @@
         },
         {
           "absatz_id": "P22",
-          "text": "Die Sicherheitsüberwachung umfasst Sicherheitskreis, Überdrehzahlüberwachung und Seilüberwachung, die Seillage auf den Seilrollen und ein Erschlaffen des Zugseils erfasst. Spricht eine Überwachung an, öffnet der Sicherheitskreis und löst über die Bremsregelung Stationsbremsen oder Fangbremse aus. Zur Rettung gehören Notausstieg und Bergungsausrüstung; ob Fahrgäste über einen Streckenweg aussteigen oder der Notantrieb den Wagen in eine Station holt, bestimmt Umfang von Bergungsausrüstung und Notstromversorgung.",
+          "text": "Die Sicherheitsüberwachung umfasst Sicherheitskreis, Überdrehzahlüberwachung, Endlagenüberwachung und Seilüberwachung, die Seillage auf den Seilrollen und ein Erschlaffen des Zugseils erfasst. Die Endlagenüberwachung prüft anhand der Streckenschalter, ob der Wagen vor den Stationen rechtzeitig verzögert. Spricht eine Überwachung an, öffnet der Sicherheitskreis und löst über die Bremsregelung Stationsbremsen oder Fangbremse aus. Zur Rettung gehören Notausstieg und Bergungsausrüstung; ob Fahrgäste über einen Streckenweg aussteigen oder der Notantrieb den Wagen in eine Station holt, bestimmt Umfang von Bergungsausrüstung und Notstromversorgung.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
-            "praemissen": ["P21", "P13", "P9: Notantrieb", "P10: Notstromversorgung"],
+            "praemissen": ["P21", "P13", "P20: Wegmessung mit Abgleich über Streckenschalter", "P9: Notantrieb", "P10: Notstromversorgung"],
             "schluss": "Überwachung, Bremskaskade und Rettungskonzept sind über Sicherheitskreis und Notantrieb gekoppelt."
           },
           "sicherheit": "mittel",
@@ -427,14 +427,14 @@
       "absaetze": [
         {
           "absatz_id": "P25",
-          "text": "Die Neben- und Versorgungssysteme stellen am Wagen hydraulische Leistung bereit. Ein Hydraulikaggregat mit Hydraulikspeicher hält über Hydraulikleitungen die federbetätigten Fangbremsen gelöst und dreht, wo vorhanden, die Abteile im Neigungsausgleich. Fällt der Druck durch ein Leck oder die Fangbremsauslösung ab, fallen die Fangbremsen selbsttätig ein; der Hydraulikspeicher überbrückt kurze Aggregatpausen.",
+          "text": "Die Neben- und Versorgungssysteme stellen am Wagen hydraulische Leistung bereit. In der Regel hält ein Hydraulikaggregat mit Hydraulikspeicher über Hydraulikleitungen die federbetätigten Fangbremsen gelöst und dreht, wo vorhanden, die Abteile im Neigungsausgleich. Fällt der Druck durch ein Leck oder die Fangbremsauslösung ab, fallen die Fangbremsen selbsttätig ein; ist der Hydraulikspeicher entsprechend ausgelegt, überbrückt er kurze Aggregatpausen.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": ["Q2: federbetätigte, hydraulisch gelöste Schienenbremsen", "Q4: Abteile werden hydraulisch gedreht", "P13"],
             "schluss": "Der Wagen braucht eine eigene Hydraulikversorgung, deren Druckverlust die Fangbremse auslöst."
           },
-          "sicherheit": "hoch",
+          "sicherheit": "mittel",
           "aussagetyp": "funktion",
           "herangezogene_artikel_ids": []
         }
@@ -446,11 +446,11 @@
       "absaetze": [
         {
           "absatz_id": "P26",
-          "text": "Auf oberster Ebene lässt sich die Standseilbahn als Gesamtsystem mit den Hauptsystemen Fahrzeugstruktur und Fahrwerk, Antriebssystem, Energieversorgungssystem, Bremssystem, Leitstand, Aufbau und Ladung, Elektrik und Elektronik, Fahrzeugsteuerung und Information, Assistenz und Sicherheit, Beleuchtung und Sicht, Thermomanagement sowie Neben- und Versorgungssysteme auffassen. Ein Lenksystem entfällt, weil das Gleis die Wagen führt. Kennzeichnend ist die Teilung in eine ortsfeste Station mit Antrieb, Hauptbremsen und Leitstand und bewegte Wagen mit Fangbremse, Bordnetz und Fahrgastraum, gekoppelt über Zugseil und Datenverbindung.",
+          "text": "Die oberste Ebene bilden die Hauptsysteme Fahrzeugstruktur und Fahrwerk, Antriebssystem, Energieversorgungssystem, Bremssystem, Leitstand, Aufbau und Ladung, Elektrik und Elektronik, Fahrzeugsteuerung und Information, Assistenz und Sicherheit, Beleuchtung und Sicht, Thermomanagement sowie Neben- und Versorgungssysteme. Ein Lenksystem entfällt, weil das Gleis die Wagen führt. Kennzeichnend ist die Teilung in die ortsfeste Station mit Antrieb, Hauptbremsen und Leitstand und die Wagen mit Fangbremse, Bordnetz und Fahrgastraum, gekoppelt über Zugseil, Datenverbindung und gegebenenfalls Ladekontakte oder Fahrleitung.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
-            "praemissen": ["P3", "P4", "P7", "P12", "P15"],
+            "praemissen": ["P3", "P4", "P7", "P12", "P15", "P11"],
             "schluss": "Die Architektur ist zwischen Station und Wagen geteilt."
           },
           "sicherheit": "hoch",
@@ -484,14 +484,14 @@
       "absaetze": [
         {
           "absatz_id": "P28",
-          "text": "Elektrische Energie fließt vom Netzanschluss zum Antriebsstromrichter und zur Traktionsmaschine, im Notfall von der Notstromversorgung zum Notantrieb. Mechanische Leistung läuft über Getriebe und Treibscheibe ins Zugseil und über die Seilbefestigung in den Fahrwerksrahmen; Spannscheibe und Seilrollen spannen und führen die Seile. Im Wagen speist die Bordnetzbatterie das Niedervolt-Bordnetz, das Hydraulikaggregat versorgt Fangbremse und Neigungsausgleich. Informationen laufen von Wegmessung, Sicherheitskreis und Wagenfunk zur Anlagensteuerung und Bremsregelung und weiter zu Antriebsstromrichter, Stationsbremsen und Anzeigeelementen. Wärme fließt von der Traktionsmaschine über den Kühlkreislauf zum Kühler.",
+          "text": "Elektrisch: Netzanschluss über Antriebsstromrichter zur Traktionsmaschine, Notstromversorgung zum Notantrieb, Ladeeinrichtung in den Endstationen zur Bordnetzbatterie, Batterie oder Fahrleitung ins Niedervolt-Bordnetz. Mechanisch: Getriebe und Treibscheibe ins Zugseil, Seilbefestigung in den Fahrwerksrahmen; Spannscheibe und Seilrollen spannen und führen die Seile. Hydraulisch: Hydraulikaggregat zu Fangbremse und Neigungsausgleich. Information: Wegmessung, Streckenschalter, Sicherheitskreis und Wagenfunk über Anlagensteuerung und Bremsregelung zu Antriebsstromrichter, Stationsbremsen und Anzeigeelementen. Wärme: Traktionsmaschine über Kühlkreislauf zum Kühler.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
-            "praemissen": ["P7", "P9", "P10", "P13", "P18", "P20", "P24", "P25"],
-            "schluss": "Die Flüsse verbinden Station und Wagen über Seil und Datenverbindung."
+            "praemissen": ["P7", "P9", "P10", "P11", "P13", "P18", "P20", "P24", "P25"],
+            "schluss": "Die Flüsse verbinden Station und Wagen über Seil, Datenverbindung und, je nach Energieversorgung der Wagen, über Ladekontakte oder Fahrleitung."
           },
-          "sicherheit": "hoch",
+          "sicherheit": "mittel",
           "aussagetyp": "funktion",
           "herangezogene_artikel_ids": []
         }
@@ -503,7 +503,7 @@
       "absaetze": [
         {
           "absatz_id": "P29",
-          "text": "Funktional gilt: Fahrzeuglasten tragen Wagenkastenrahmen, Fahrwerksrahmen, Federung und spurkranzloses Laufrad; Fahrzeug am Fahrweg führen Doppelspurkranzrad und Entgleisungssicherung; Antriebsleistung erzeugen Antriebsstromrichter, Traktionsmaschine und Notantrieb; Drehmoment übertragen Getriebe, Treibscheibe und Ablenkscheibe; Fahrzeug fortbewegen Zugseil und Seilbefestigung; Seil führen und spannen Unterseil, Spannscheibe und Seilrollen; Fahrzeug verzögern Betriebsbremse, Sicherheitsbremse, Bremsregelung, Fangbremse und Fangbremsauslösung; Fahrzeug festhalten Sicherheitsbremse und Fangbremse; Energie speichern Bordnetzbatterie und Notstromversorgung; Elektrische Energie verteilen Netzanschluss, Ladeeinrichtung, Niedervolt-Bordnetz und Stromverteiler; Hydraulische Leistung bereitstellen Hydraulikaggregat, Hydraulikspeicher und Hydraulikleitungen; Fahrgastabteil horizontieren der Neigungsausgleich; Fahrereingaben erfassen Bedienelemente und Wagenbedienpult; Fahrerinformationen anzeigen die Anzeigeelemente; Fahrersicht sicherstellen das Kamera-Monitor-System; Seilfahrt steuern Anlagensteuerung und Türsteuerung; Fahrzeugposition bestimmen die Wegmessung; Fahrzeugzustand überwachen Sicherheitskreis, Überdrehzahlüberwachung, Seilüberwachung und Diagnose; Daten übertragen der Wagenfunk; Fahrgäste informieren die Fahrgastinformation; Ladung aufnehmen Fahrgastabteil und Güterplattform; Insassen schützen Türen, Haltestangen, Notausstieg und Bergungsausrüstung; Fahrzeugumgebung ausleuchten Scheinwerfer und Leuchten; Betriebstemperatur regeln Kühlkreislauf und Kühler; Innenraum klimatisieren die Heiz- und Klimaanlage.",
+          "text": "Fahrzeuglasten tragen Wagenkastenrahmen, Fahrwerksrahmen, Federung und spurkranzloses Laufrad; Fahrzeug am Fahrweg führen Doppelspurkranzrad und Entgleisungssicherung; Antriebsleistung erzeugen Antriebsstromrichter, Traktionsmaschine und Notantrieb; Drehmoment übertragen Getriebe, Treibscheibe und Ablenkscheibe; Fahrzeug fortbewegen Zugseil und Seilbefestigung; Seil führen und spannen Unterseil, Spannscheibe und Seilrollen; Fahrzeug verzögern Betriebsbremse, Sicherheitsbremse, Bremsregelung, Fangbremse und Fangbremsauslösung; Fahrzeug festhalten Sicherheitsbremse und Fangbremse; Energie speichern Bordnetzbatterie und Notstromversorgung; Elektrische Energie verteilen Netzanschluss, Ladeeinrichtung, Niedervolt-Bordnetz und Stromverteiler; Hydraulische Leistung bereitstellen Hydraulikaggregat, Hydraulikspeicher und Hydraulikleitungen; Fahrgastabteil horizontieren Neigungsausgleich; Fahrereingaben erfassen Bedienelemente und Wagenbedienpult; Fahrerinformationen anzeigen Anzeigeelemente; Fahrersicht sicherstellen Kamera-Monitor-System; Seilfahrt steuern Anlagensteuerung und Türsteuerung; Fahrzeugposition bestimmen Wegmessung und Streckenschalter; Fahrzeugzustand überwachen Sicherheitskreis, Überdrehzahlüberwachung, Endlagenüberwachung, Seilüberwachung und Diagnose; Daten übertragen Wagenfunk; Fahrgäste informieren Fahrgastinformation; Ladung aufnehmen Fahrgastabteil und Güterplattform; Insassen schützen Türen, Haltestangen, Notausstieg und Bergungsausrüstung; Fahrzeugumgebung ausleuchten Scheinwerfer und Leuchten; Betriebstemperatur regeln Kühlkreislauf und Kühler; Innenraum klimatisieren Heiz- und Klimaanlage.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -548,10 +548,10 @@
       {"id": "E27", "name": "Energieversorgungssystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P10", "P11"], "kategorie": "energieversorgung"},
       {"id": "E28", "name": "Stationsenergieversorgung", "typ": "subsystem", "eltern_id": "E27", "absatz_ids": ["P10"]},
       {"id": "E29", "name": "Netzanschluss", "typ": "komponente", "eltern_id": "E28", "absatz_ids": ["P10", "P28"]},
-      {"id": "E30", "name": "Notstromversorgung", "typ": "komponente", "eltern_id": "E28", "absatz_ids": ["P10", "P22"]},
+      {"id": "E30", "name": "Notstromversorgung", "typ": "komponente", "eltern_id": "E28", "absatz_ids": ["P10", "P22", "P9"]},
       {"id": "E31", "name": "Wagenenergieversorgung", "typ": "subsystem", "eltern_id": "E27", "absatz_ids": ["P11"]},
       {"id": "E32", "name": "Bordnetzbatterie", "typ": "komponente", "eltern_id": "E31", "absatz_ids": ["P11", "P18"]},
-      {"id": "E33", "name": "Ladeeinrichtung", "typ": "komponente", "eltern_id": "E31", "absatz_ids": ["P11"]},
+      {"id": "E33", "name": "Ladeeinrichtung", "typ": "komponente", "eltern_id": "E31", "absatz_ids": ["P11", "P28"]},
       {"id": "E34", "name": "Bremssystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P12", "P13"], "kategorie": "bremse"},
       {"id": "E35", "name": "Stationsbremsen", "typ": "subsystem", "eltern_id": "E34", "absatz_ids": ["P13", "P22"]},
       {"id": "E36", "name": "Betriebsbremse", "typ": "komponente", "eltern_id": "E35", "absatz_ids": ["P12", "P13"]},
@@ -577,6 +577,7 @@
       {"id": "E56", "name": "Anlagensteuerung", "typ": "komponente", "eltern_id": "E55", "absatz_ids": ["P18", "P20"]},
       {"id": "E57", "name": "Wegmessung", "typ": "komponente", "eltern_id": "E55", "absatz_ids": ["P20", "P28"]},
       {"id": "E58", "name": "Türsteuerung", "typ": "komponente", "eltern_id": "E55", "absatz_ids": ["P20"]},
+      {"id": "E82", "name": "Streckenschalter", "typ": "komponente", "eltern_id": "E55", "absatz_ids": ["P20", "P22", "P28"]},
       {"id": "E59", "name": "Information und Diagnose", "typ": "subsystem", "eltern_id": "E54", "absatz_ids": ["P20"]},
       {"id": "E60", "name": "Fahrgastinformation", "typ": "komponente", "eltern_id": "E59", "absatz_ids": ["P20"]},
       {"id": "E61", "name": "Diagnose", "typ": "komponente", "eltern_id": "E59", "absatz_ids": ["P20"]},
@@ -585,6 +586,7 @@
       {"id": "E64", "name": "Sicherheitskreis", "typ": "komponente", "eltern_id": "E63", "absatz_ids": ["P22", "P28"]},
       {"id": "E65", "name": "Überdrehzahlüberwachung", "typ": "komponente", "eltern_id": "E63", "absatz_ids": ["P22"]},
       {"id": "E66", "name": "Seilüberwachung", "typ": "komponente", "eltern_id": "E63", "absatz_ids": ["P22"]},
+      {"id": "E83", "name": "Endlagenüberwachung", "typ": "komponente", "eltern_id": "E63", "absatz_ids": ["P22"]},
       {"id": "E67", "name": "Rettung", "typ": "subsystem", "eltern_id": "E62", "absatz_ids": ["P22"]},
       {"id": "E68", "name": "Notausstieg", "typ": "komponente", "eltern_id": "E67", "absatz_ids": ["P22"]},
       {"id": "E69", "name": "Bergungsausrüstung", "typ": "komponente", "eltern_id": "E67", "absatz_ids": ["P22"]},
@@ -618,8 +620,8 @@
       {"id": "F14", "name": "Fahrerinformationen anzeigen", "ausgefuehrt_von": ["E44"], "absatz_ids": ["P15", "P29"]},
       {"id": "F15", "name": "Fahrersicht sicherstellen", "ausgefuehrt_von": ["E73"], "absatz_ids": ["P23", "P29"]},
       {"id": "F16", "name": "Seilfahrt steuern", "ausgefuehrt_von": ["E56", "E58"], "absatz_ids": ["P20", "P29"]},
-      {"id": "F17", "name": "Fahrzeugposition bestimmen", "ausgefuehrt_von": ["E57"], "absatz_ids": ["P20", "P29"]},
-      {"id": "F18", "name": "Fahrzeugzustand überwachen", "ausgefuehrt_von": ["E64", "E65", "E66", "E61"], "absatz_ids": ["P22", "P29"]},
+      {"id": "F17", "name": "Fahrzeugposition bestimmen", "ausgefuehrt_von": ["E57", "E82"], "absatz_ids": ["P20", "P29"]},
+      {"id": "F18", "name": "Fahrzeugzustand überwachen", "ausgefuehrt_von": ["E64", "E65", "E66", "E61", "E83"], "absatz_ids": ["P22", "P29"]},
       {"id": "F19", "name": "Daten übertragen", "ausgefuehrt_von": ["E53"], "absatz_ids": ["P18", "P29"]},
       {"id": "F20", "name": "Fahrgäste informieren", "ausgefuehrt_von": ["E60"], "absatz_ids": ["P20", "P29"]},
       {"id": "F21", "name": "Ladung aufnehmen", "ausgefuehrt_von": ["E47", "E49"], "absatz_ids": ["P17", "P29"]},
@@ -640,7 +642,7 @@
       {"id": "S9", "von": "E25", "nach": "E24", "art": "mechanisch", "medium": "Spannkraft", "absatz_ids": ["P8", "P28"]},
       {"id": "S10", "von": "E30", "nach": "E21", "art": "elektrisch", "medium": "Notstrom", "absatz_ids": ["P10", "P28"], "schnittstelle": "Notstromeinspeisung des Notantriebs"},
       {"id": "S11", "von": "E21", "nach": "E18", "art": "mechanisch", "medium": "Drehmoment des Notantriebs", "absatz_ids": ["P9"]},
-      {"id": "S12", "von": "E33", "nach": "E32", "art": "elektrisch", "medium": "Ladestrom in der Endstation", "absatz_ids": ["P11"]},
+      {"id": "S12", "von": "E33", "nach": "E32", "art": "elektrisch", "medium": "Ladestrom in der Endstation", "absatz_ids": ["P11", "P28"]},
       {"id": "S13", "von": "E32", "nach": "E51", "art": "elektrisch", "medium": "Niederspannung", "absatz_ids": ["P18", "P28"], "schnittstelle": "Einspeisung Wagenbordnetz"},
       {"id": "S14", "von": "E52", "nach": "E79", "art": "elektrisch", "medium": "Versorgung des Hydraulikaggregats", "absatz_ids": ["P18"], "schnittstelle": "Versorgungsanschluss Hydraulikaggregat"},
       {"id": "S15", "von": "E79", "nach": "E40", "art": "hydraulisch", "medium": "Lösedruck", "absatz_ids": ["P25", "P28"], "schnittstelle": "Hydraulikanschluss der Fangbremse"},
@@ -668,7 +670,9 @@
       {"id": "S37", "von": "E73", "nach": "E53", "art": "information", "medium": "Videobilder", "absatz_ids": ["P23"], "schnittstelle": "Videoschnittstelle zum Wagenfunk"},
       {"id": "S38", "von": "E47", "nach": "E4", "art": "mechanisch", "medium": "Gewichtskraft der Nutzlast", "absatz_ids": ["P17"], "schnittstelle": "Abteilbefestigung am Wagenkasten"},
       {"id": "S39", "von": "E56", "nach": "E61", "art": "information", "medium": "Zustands- und Störmeldungen", "absatz_ids": ["P20"]},
-      {"id": "S40", "von": "E56", "nach": "E60", "art": "information", "medium": "Fahrgastmeldungen", "absatz_ids": ["P20"]}
+      {"id": "S40", "von": "E56", "nach": "E60", "art": "information", "medium": "Fahrgastmeldungen", "absatz_ids": ["P20"]},
+      {"id": "S41", "von": "E82", "nach": "E56", "art": "information", "medium": "Positionsabgleich", "absatz_ids": ["P20", "P28"]},
+      {"id": "S42", "von": "E83", "nach": "E64", "art": "information", "medium": "Endlagen- und Überfahrstörung", "absatz_ids": ["P22"]}
     ],
     "entfallene_kategorien": [
       {"kategorie": "lenkung", "grund": "Spurgeführtes Fahrzeug: Das Gleis führt die Wagen, an der Abtschen Weiche passiv über die Doppelspurkranzräder; die Spurführung ist im Fahrwerk unter Fahrzeugstruktur und Fahrwerk modelliert."}
@@ -718,8 +722,8 @@
         "id": "V4",
         "element_id": "E39",
         "bezeichnung": "Bauart der Wagenbremse",
-        "alternativen": ["Federbetätigte Zangen-Fangbremse am Schienenkopf", "Zahnradbremse, die in eine Zahnstange in Gleismitte greift"],
-        "auswahlkriterien": ["Witterung und Verschmutzung der Gleismitte", "Gleisanordnung und Ausweichenbauart", "geforderte Verzögerung und Prüfbarkeit"],
+        "alternativen": ["Federbetätigte Zangen-Fangbremse am Schienenkopf", "Zahnradbremse, die in eine Zahnstange in Gleismitte greift (vor allem bei älteren oder umzubauenden Anlagen)"],
+        "auswahlkriterien": ["Witterung und Verschmutzung der Gleismitte", "Gleisanordnung und Ausweichenbauart", "geforderte Verzögerung und Prüfbarkeit", "Neubau oder Erneuerung einer bestehenden Anlage mit Zahnstange"],
         "auswirkungen": [
           {"element_id": "E8", "beschreibung": "Der Fahrwerksrahmen nimmt entweder die Bremszangen oder das Bremszahnrad samt Lagerung auf."},
           {"element_id": "E10", "beschreibung": "Bei Zangenbremsen müssen die spurkranzlosen Räder den Bremsenraum an der Schiene überlaufen."},
@@ -766,18 +770,31 @@
           {"element_id": "E17", "beschreibung": "Ohne Gegenwagen muss die Traktionsmaschine das ganze Wagengewicht heben."}
         ],
         "absatz_ids": ["P1", "P9"]
+      },
+      {
+        "id": "V8",
+        "element_id": "E21",
+        "bezeichnung": "Energiequelle des Notantriebs",
+        "alternativen": ["Elektrisch aus einer Notstromversorgung (Batterie oder Notstromaggregat)", "Eigener Verbrennungsmotor mit hydraulischer oder mechanischer Kopplung an die Treibscheibe", "Kein Notantrieb, Bergung über Streckenweg"],
+        "auswahlkriterien": ["Ergebnis der Sicherheitsanalyse zum Verlassen der Wagen auf der Strecke", "Zugänglichkeit der Strecke für Rettungskräfte", "Unabhängigkeit der Energiequelle vom Hauptantrieb", "Platz, Abgasführung und Wartungsaufwand in der Antriebsstation"],
+        "auswirkungen": [
+          {"element_id": "E30", "beschreibung": "Die Notstromversorgung ist nur bei elektrischem Notantrieb nötig und wird nach dessen Leistung und Betriebsdauer bemessen."},
+          {"element_id": "E69", "beschreibung": "Ohne Notantrieb müssen Bergungsausrüstung und Streckenweg die Evakuierung aller Fahrgäste von der Strecke tragen."},
+          {"element_id": "E76", "beschreibung": "Ein Verbrennungsmotor als Notantrieb bringt eigene Kühlung und Abwärme in die Antriebsstation."}
+        ],
+        "absatz_ids": ["P9"]
       }
     ],
     "klaerungsfragen": [
       {"id": "K1", "frage": "Soll der Antrieb in der Berg- oder in der Talstation liegen, und ist wegen flacher Abschnitte ein Unterseil vorzusehen?", "element_ids": ["E14", "E22", "E24"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Seilbefestigungen, Antriebsauslegung, Netzanschluss und Lage der Kühlung ab.", "variante_ids": ["V1"]},
       {"id": "K2", "frage": "Wird die Strecke eingleisig mit Abtscher Weiche gebaut, oder sollen andere Fahrzeuge auf die Strecke übergehen können?", "element_ids": ["E7", "E9", "E10"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Radsatzbauart, Angriffsort der Fangbremse und die Möglichkeit einer Güterplattform ab.", "variante_ids": ["V2"]},
       {"id": "K3", "frage": "Schwankt die Streckenneigung so stark, dass die Abteile drehbar gelagert werden sollen, und ist stufenloser Einstieg für Rollstühle gefordert?", "element_ids": ["E3", "E6", "E47"], "anlass": "anforderung", "relevanz": "Davon hängen Hydraulik, Steuerung und Bahnsteigbauart ab.", "variante_ids": ["V3"]},
-      {"id": "K4", "frage": "Soll die Wagenbremse am Schienenkopf klemmen oder in eine Zahnstange greifen?", "element_ids": ["E39", "E40"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Fahrwerksrahmen, Gleisausrüstung und Hydraulikversorgung ab.", "variante_ids": ["V4"]},
+      {"id": "K4", "frage": "Ist eine vorhandene Zahnstange weiterzunutzen, oder wird die Wagenbremse als Zangenbremse am Schienenkopf ausgeführt?", "element_ids": ["E39", "E40"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Fahrwerksrahmen, Gleisausrüstung und Hydraulikversorgung ab.", "variante_ids": ["V4"]},
       {"id": "K5", "frage": "Welche Ereignisse sollen die Fangbremse auslösen, nur Seilriss und Überdrehzahl oder auch ein Not-Halt aus dem Wagen?", "element_ids": ["E41", "E65", "E66"], "anlass": "anforderung", "relevanz": "Davon hängen Sensorik, Auslöselogik und Häufigkeit von Fangbremsungen mit hoher Verzögerung ab."},
       {"id": "K6", "frage": "Wird die Anlage aus einem Leitstand mit Personal, mit Wagenbegleiter oder fahrerlos mit Selbstbedienung betrieben?", "element_ids": ["E42", "E45", "E73"], "anlass": "betrieb", "relevanz": "Davon hängen Wagenbedienpult, Kameraüberwachung, Fahrgastinformation und Funkumfang ab.", "variante_ids": ["V5"]},
       {"id": "K7", "frage": "Werden die Wagen aus einer in den Stationen nachgeladenen Batterie oder über eine Fahrleitung versorgt?", "element_ids": ["E31", "E32", "E33"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Batteriegröße, Haltezeiten und die zulässige Leistung der Klimatisierung ab.", "variante_ids": ["V6"]},
       {"id": "K8", "frage": "Sind zwei gegenläufige Wagen vorgesehen oder ein einzelner Wagen an Gegengewicht oder Seiltrommel?", "element_ids": ["E15", "E19"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Treibscheibe oder Seiltrommel, Ausweiche, Radsätze und Antriebsleistung ab.", "variante_ids": ["V7"]},
-      {"id": "K9", "frage": "Soll die Notstromversorgung den Notantrieb so lange speisen, dass beide Wagen sicher in eine Station geholt werden können?", "element_ids": ["E27", "E30", "E21"], "anlass": "anforderung", "relevanz": "Davon hängen Größe der Notstromversorgung und der Bedarf an Bergungsausrüstung auf der Strecke ab."},
+      {"id": "K9", "frage": "Soll die Notstromversorgung den Notantrieb so lange speisen, dass beide Wagen sicher in eine Station geholt werden können?", "element_ids": ["E27", "E30", "E21"], "anlass": "anforderung", "relevanz": "Davon hängen Größe der Notstromversorgung und der Bedarf an Bergungsausrüstung auf der Strecke ab.", "variante_ids": ["V8"]},
       {"id": "K10", "frage": "Wie viele Fahrgäste sollen je Wagen befördert werden, und wird zusätzlich Gut auf einer Plattform transportiert?", "element_ids": ["E46", "E47", "E49"], "anlass": "anforderung", "relevanz": "Davon hängen Lastdifferenz, Antriebsleistung, Seilzugkraft und Fangbremskraft ab."},
       {"id": "K11", "frage": "Über welchen Übertragungsweg sollen Wagenzustand, Sprache und Bilder zwischen fahrendem Wagen und Station laufen?", "element_ids": ["E50", "E53"], "anlass": "schnittstelle", "relevanz": "Davon hängen Streckenausrüstung, Verfügbarkeit der Sicherheitssignale und Bandbreite für Videobilder ab."},
       {"id": "K12", "frage": "Soll die Anlagensteuerung eine Fernüberwachung mehrerer Anlagen aus einer Zentrale unterstützen?", "element_ids": ["E54", "E56", "E61"], "anlass": "betrieb", "relevanz": "Davon hängen Diagnoseumfang, Datenschnittstellen und Personaleinsatz ab."},
@@ -786,7 +803,9 @@
       {"id": "K15", "frage": "Sollen die Abteile gekühlt oder nur beheizt und belüftet werden?", "element_ids": ["E74", "E75"], "anlass": "anforderung", "relevanz": "Davon hängen Energiebedarf im Wagen, Batteriegröße und Haltezeiten ab."},
       {"id": "K16", "frage": "Wie lange sollen die Fangbremsen bei Ausfall des Hydraulikaggregats gelöst bleiben, bevor der Wagen festgesetzt wird?", "element_ids": ["E78", "E80"], "anlass": "anforderung", "relevanz": "Davon hängen Größe des Hydraulikspeichers und Verfügbarkeit bei Aggregatstörungen ab."},
       {"id": "K17", "frage": "Welche Fahrzeuglasten außer den Fahrgästen sind anzusetzen, etwa Güter, Schneelast oder Wartungsgerät?", "element_ids": ["E2", "E4", "E8"], "anlass": "anforderung", "relevanz": "Davon hängen Bemessung von Wagenkasten, Fahrwerk und Seilbefestigung ab."},
-      {"id": "K18", "frage": "Welche Bremsverzögerung soll die Stationsbremse im Betrieb einhalten, damit Stehende nicht gefährdet werden?", "element_ids": ["E34", "E36", "E38"], "anlass": "anforderung", "relevanz": "Davon hängen Bremsregelung, Haltestangen und Bremsauslegung ab."}
+      {"id": "K18", "frage": "Welche Bremsverzögerung soll die Stationsbremse im Betrieb einhalten, damit Stehende nicht gefährdet werden?", "element_ids": ["E34", "E36", "E38"], "anlass": "anforderung", "relevanz": "Davon hängen Bremsregelung, Haltestangen und Bremsauslegung ab."},
+      {"id": "K19", "frage": "Verläuft die Strecke durch Tunnel, und welche Branderkennung und Evakuierung ist für die Wagen dort vorzusehen?", "element_ids": ["E2", "E67", "E75", "E79"], "anlass": "anforderung", "relevanz": "Davon hängen Werkstoffwahl der Innenausstattung, Branderkennung im Wagen, Wahl der Hydraulikflüssigkeit und das Rettungskonzept im Tunnel ab."},
+      {"id": "K20", "frage": "Welche Förderleistung je Stunde und Richtung und welche Fahrzeit zwischen den Endstationen sind gefordert?", "element_ids": ["E14", "E46"], "anlass": "anforderung", "relevanz": "Davon hängen Wagengröße, Zugbildung, Fahrgeschwindigkeit, Antriebsleistung und die Wahl zwischen zwei Wagen und Einzelwagen ab.", "variante_ids": ["V7"]}
     ],
     "anforderungsthemen": [
       {"id": "R1", "element_ids": ["E2", "E3", "E5"], "thema": "Sicherheit der Fahrgäste im Wagen", "kenngroessen": ["Verriegelung der Türen", "Belastbarkeit von Boden und Wänden", "Absturzsicherung der Fahrgäste"], "regelwerke": [{"bezeichnung": "Verordnung (EU) 2016/424, Anhang II Nr. 5.1 und 5.3 (EU; neue Seilbahnen zur Personenbeförderung)", "quellen_id": "Q3", "fundstelle": "Annex II Nr. 5.1 und 5.3"}]},
@@ -797,11 +816,12 @@
       {"id": "R6", "element_ids": ["E42", "E43", "E45"], "thema": "Bedienung und Not-Halt", "kenngroessen": ["Erreichbarkeit des Not-Halts", "Anzeigeumfang im Leitstand", "Ausrüstung für Personal an Bord"], "regelwerke": [{"bezeichnung": "Verordnung (EU) 2016/424, Anhang II Nr. 2.7.2 und 5.4 (EU; neue Seilbahnen zur Personenbeförderung)", "quellen_id": "Q3", "fundstelle": "Annex II Nr. 2.7.2 und 5.4"}]},
       {"id": "R7", "element_ids": ["E46", "E47", "E49"], "thema": "Beförderungskapazität und Barrierefreiheit", "kenngroessen": ["Fahrgäste je Wagen", "Stehplatzdichte", "Rollstuhlplätze", "Nutzlast der Güterplattform"], "regelwerke": [{"bezeichnung": "Verordnung (EU) 2016/424, Anhang II Nr. 6 (EU; neue Seilbahnen zur Personenbeförderung)", "quellen_id": "Q3", "fundstelle": "Annex II Nr. 6"}]},
       {"id": "R8", "element_ids": ["E50", "E53"], "thema": "Kommunikation zwischen Wagen und Station", "kenngroessen": ["Verfügbarkeit der Funkverbindung", "Übertragungszeit der Sicherheitssignale", "Sprachverständlichkeit"], "regelwerke": [{"bezeichnung": "Verordnung (EU) 2016/424, Anhang II Nr. 4.4 (EU; neue Seilbahnen zur Personenbeförderung)", "quellen_id": "Q3", "fundstelle": "Annex II Nr. 4.4"}]},
-      {"id": "R9", "element_ids": ["E54", "E56", "E57"], "thema": "Sichere Fahrsteuerung", "kenngroessen": ["Positionsgenauigkeit", "Haltegenauigkeit in den Stationen", "Störfestigkeit gegen elektromagnetische Einflüsse"], "regelwerke": [{"bezeichnung": "Verordnung (EU) 2016/424, Anhang II Nr. 4.3 (EU; neue Seilbahnen zur Personenbeförderung)", "quellen_id": "Q3", "fundstelle": "Annex II Nr. 4.3"}]},
+      {"id": "R9", "element_ids": ["E54", "E56", "E57"], "thema": "Sichere Fahrsteuerung", "kenngroessen": ["Positionsgenauigkeit", "Haltegenauigkeit in den Stationen", "Störfestigkeit gegen elektromagnetische Einflüsse", "Abweichung zwischen gemessener und tatsächlicher Wagenposition"], "regelwerke": [{"bezeichnung": "Verordnung (EU) 2016/424, Anhang II Nr. 4.3 (EU; neue Seilbahnen zur Personenbeförderung)", "quellen_id": "Q3", "fundstelle": "Annex II Nr. 4.3"}]},
       {"id": "R10", "element_ids": ["E62", "E64", "E67"], "thema": "Überwachung, Wiederanlaufsperre und Bergung", "kenngroessen": ["Erkennungszeit sicherheitsrelevanter Fehler", "Bergezeit", "Entgleisungssicherheit"], "regelwerke": [{"bezeichnung": "Verordnung (EU) 2016/424, Anhang II Nr. 2.7.1, 2.7.3, 5.8 und 7.2 (EU; neue Seilbahnen zur Personenbeförderung)", "quellen_id": "Q3", "fundstelle": "Annex II Nr. 2.7.1, 2.7.3, 5.8 und 7.2"}]},
       {"id": "R11", "element_ids": ["E70", "E72", "E73"], "thema": "Beleuchtung und Bildüberwachung", "kenngroessen": ["Beleuchtungsstärke im Abteil", "Dauer der Notbeleuchtung", "Abdeckung der Kamerabilder"]},
       {"id": "R12", "element_ids": ["E74", "E75", "E76"], "thema": "Temperierung von Wagen und Antriebsstation", "kenngroessen": ["Innenraumtemperatur", "Umgebungstemperaturbereich", "Kühlleistung der Antriebsstation"], "regelwerke": [{"bezeichnung": "Verordnung (EU) 2016/424, Anhang II Nr. 2.3 (EU; neue Seilbahnen zur Personenbeförderung)", "quellen_id": "Q3", "fundstelle": "Annex II Nr. 2.3"}]},
-      {"id": "R13", "element_ids": ["E78", "E79", "E80"], "thema": "Hydraulikversorgung am Wagen", "kenngroessen": ["Lösedruck der Fangbremsen", "Speichervolumen", "Dichtheit", "Stellzeit des Neigungsausgleichs"]}
+      {"id": "R13", "element_ids": ["E78", "E79", "E80"], "thema": "Hydraulikversorgung am Wagen", "kenngroessen": ["Lösedruck der Fangbremsen", "Speichervolumen", "Dichtheit", "Stellzeit des Neigungsausgleichs"]},
+      {"id": "R14", "element_ids": ["E2", "E75", "E79"], "thema": "Brandschutz in Wagen und Tunneln", "kenngroessen": ["Brennbarkeit der Innenausstattung", "Branderkennung im Wagen", "Evakuierungszeit aus dem Tunnel", "Entflammbarkeit der Hydraulikflüssigkeit"], "regelwerke": [{"bezeichnung": "Verordnung (EU) 2016/424, Anhang II Nr. 2.6.5 (EU; neue Seilbahnen zur Personenbeförderung)", "quellen_id": "Q3", "fundstelle": "Annex II Nr. 2.6.5"}]}
     ]
   },
   "offene_punkte": [

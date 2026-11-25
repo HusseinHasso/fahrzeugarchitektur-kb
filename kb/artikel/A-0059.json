@@ -1,0 +1,2598 @@
+{
+  "schema_version": "2.3",
+  "artikel_id": "A-0059",
+  "artikeltyp": "blatt",
+  "titel": "Bauanhänger",
+  "betrachtungsumfang": "Generische Referenzarchitektur ungetriebener Anhänger für Bauwirtschaft und Baustellenbetrieb, gezogen von Pkw, Transportern, Lastkraftwagen oder Traktoren, in Starrdeichsel- (Einzel- oder Tandemachse) und Gelenkdeichselbauart mit Drehschemel, ungebremst, mit Auflaufbremse oder Zweileitungs-Druckluftbremse, mit den Aufbaufamilien Transportanhänger für Baumaschinen (Tief- oder Hochladeplattform mit Auffahrrampen), Kippanhänger (Rückwärts- oder Dreiseitenkipper mit Handpumpe, elektrohydraulischem Aggregat mit Anhängerbatterie oder Zugfahrzeughydraulik) und Bauwagen (fahrbare Baubude mit Kabine und Ofenheizung). Einziger Energiespeicher an Bord ist die optionale Bordnetzbatterie des elektrohydraulischen Kippantriebs neben dem Druckluftvorrat der Bremse; eine Antriebsart wird nicht betrachtet. Ausgeschlossen sind Anhänger mit Fahrantrieb, Schwer- und Großraumtransportanhänger (A-0060), Sattelauflieger einschließlich Kippsattel (A-0057), Landwirtschaftsanhänger (A-0058), Containergebäude, auf Anhängerfahrgestell montierte Arbeitsmaschinen wie Kompressoren, Stromerzeuger oder Verkehrssicherungsanhänger sowie das Zugfahrzeug. Regelwerksangaben gelten, soweit nicht anders genannt, für Deutschland bzw. die Europäische Union.",
+  "status": "in_arbeit",
+  "quellenzugriff": "ja",
+  "kindartikel_ids": [],
+  "quellen": [
+    {
+      "quellen_id": "Q1",
+      "titel": "Anhänger (Fahrzeug)",
+      "urheber": "Wikipedia, Die freie Enzyklopädie (deutschsprachig)",
+      "stand": "Artikelfassung abgerufen 2026-11-24",
+      "url": "https://de.wikipedia.org/wiki/Anh%C3%A4nger",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q2",
+      "titel": "Bauwagen",
+      "urheber": "Wikipedia, Die freie Enzyklopädie (deutschsprachig)",
+      "stand": "Artikelfassung abgerufen 2026-11-24",
+      "url": "https://de.wikipedia.org/wiki/Bauwagen",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q3",
+      "titel": "Tieflader",
+      "urheber": "Wikipedia, Die freie Enzyklopädie (deutschsprachig)",
+      "stand": "Artikelfassung abgerufen 2026-11-24",
+      "url": "https://de.wikipedia.org/wiki/Tieflader",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q4",
+      "titel": "Kippbrücke (Ladefläche)",
+      "urheber": "Wikipedia, Die freie Enzyklopädie (deutschsprachig)",
+      "stand": "Artikelfassung abgerufen 2026-11-24",
+      "url": "https://de.wikipedia.org/wiki/Kippbr%C3%BCcke_(Ladefl%C3%A4che)",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q5",
+      "titel": "Bremse (Kraftfahrzeug)",
+      "urheber": "Wikipedia, Die freie Enzyklopädie (deutschsprachig)",
+      "stand": "Artikelfassung abgerufen 2026-11-24",
+      "url": "https://de.wikipedia.org/wiki/Bremse_(Kraftfahrzeug)",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q6",
+      "titel": "Straßenverkehrs-Zulassungs-Ordnung (StVZO), § 41 Bremsen und Unterlegkeile",
+      "urheber": "Bundesministerium der Justiz / Bundesamt für Justiz, gesetze-im-internet.de",
+      "stand": "geltende Fassung, abgerufen 2026-11-24",
+      "url": "https://www.gesetze-im-internet.de/stvzo_2012/__41.html",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q7",
+      "titel": "Straßenverkehrs-Zulassungs-Ordnung (StVZO), § 43 Einrichtungen zur Verbindung von Fahrzeugen",
+      "urheber": "Bundesministerium der Justiz / Bundesamt für Justiz, gesetze-im-internet.de",
+      "stand": "geltende Fassung, abgerufen 2026-11-24",
+      "url": "https://www.gesetze-im-internet.de/stvzo_2012/__43.html",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q8",
+      "titel": "Straßenverkehrs-Zulassungs-Ordnung (StVZO), § 44 Stützeinrichtung und Stützlast",
+      "urheber": "Bundesministerium der Justiz / Bundesamt für Justiz, gesetze-im-internet.de",
+      "stand": "geltende Fassung, abgerufen 2026-11-24",
+      "url": "https://www.gesetze-im-internet.de/stvzo_2012/__44.html",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q9",
+      "titel": "Straßenverkehrs-Zulassungs-Ordnung (StVZO), § 53 Schlussleuchten, Bremsleuchten, Rückstrahler",
+      "urheber": "Bundesministerium der Justiz / Bundesamt für Justiz, gesetze-im-internet.de",
+      "stand": "geltende Fassung, abgerufen 2026-11-24",
+      "url": "https://www.gesetze-im-internet.de/stvzo_2012/__53.html",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q10",
+      "titel": "Straßenverkehrs-Zulassungs-Ordnung (StVZO), § 58 Geschwindigkeitsschilder",
+      "urheber": "Bundesministerium der Justiz / Bundesamt für Justiz, gesetze-im-internet.de",
+      "stand": "geltende Fassung, abgerufen 2026-11-24",
+      "url": "https://www.gesetze-im-internet.de/stvzo_2012/__58.html",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q11",
+      "titel": "Fahrzeug-Zulassungsverordnung (FZV), § 3 Notwendigkeit einer Zulassung",
+      "urheber": "Bundesministerium der Justiz / Bundesamt für Justiz, gesetze-im-internet.de",
+      "stand": "geltende Fassung, abgerufen 2026-11-24",
+      "url": "https://www.gesetze-im-internet.de/fzv_2023/__3.html",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q12",
+      "titel": "Regulation (EU) 2018/858 on the approval and market surveillance of motor vehicles and their trailers, Article 4 Vehicle categories",
+      "urheber": "Europäisches Parlament und Rat der Europäischen Union; veröffentlicht von legislation.gov.uk (im Vereinigten Königreich fortgeltende Fassung)",
+      "stand": "revidierte Fassung, abgerufen 2026-11-24",
+      "url": "https://www.legislation.gov.uk/eur/2018/858/article/4",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q13",
+      "titel": "DGUV Information 214-023: Nur (nicht um-) kippen. Leitfaden – damit der Kippsattel beim Kippen nicht umkippt",
+      "urheber": "Deutsche Gesetzliche Unfallversicherung e.V. (DGUV), Sachgebiet Fahrzeuge; Autoren R. Brandau, G. Heider (BG Verkehr)",
+      "stand": "Ausgabe Januar 2016",
+      "url": "https://publikationen.dguv.de/widgets/pdf/download/article/229",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "verband"
+    }
+  ],
+  "abschnitte": [
+    {
+      "ueberschrift": "Einleitung",
+      "abschnittstyp": "gesamtsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P1",
+          "text": "Ein Bauanhänger ist ein Anhängefahrzeug ohne eigenen Fahrantrieb, das im Bauwesen Baumaschinen, Schüttgut und Baustelleneinrichtung befördert und teils am Standort genutzt wird. Gezogen wird er je nach Größe von Personenkraftwagen, Transportern, Lastkraftwagen oder Traktoren; das Zugfahrzeug erscheint nur als Schnittstellenpartner. Die Referenzarchitektur umfasst drei Aufbaufamilien auf einem gemeinsamen Anhängerfahrgestell: den Transportanhänger für Baumaschinen mit tiefer Ladefläche und Auffahrrampen, den Kippanhänger für Schüttgut und den Bauwagen als fahrbare Unterkunft. Fahrwerk, Bremse und Beleuchtung folgen den allgemeinen Regeln für Anhänger.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P2",
+              "Q1: Anhänger übertragen Zugkräfte über die Deichsel vom Zugfahrzeug",
+              "P15: Bauwagen bestehen aus einem herkömmlichen Anhängerfahrgestell"
+            ],
+            "schluss": "Bauanhänger sind über ihren Aufbau definiert; Fahrgestell, Bremse und Beleuchtung sind die eines gewöhnlichen Anhängers."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "funktion"
+        },
+        {
+          "absatz_id": "P2",
+          "text": "Die drei Aufbaufamilien sind als Fahrzeuge der Bauwirtschaft beschrieben. Tieflader dienen als Deichselanhänger hinter Lastkraftwagen und Zugmaschinen unter anderem dem Transport von Baumaschinen, als Pkw-Anhänger dem Transport kleiner Baumaschinen wie Minibagger im Garten- und Landschaftsbau. Kipperfahrzeuge für den öffentlichen Verkehr werden hauptsächlich in der Bauwirtschaft eingesetzt. Der Bauwagen ist ein Anhänger für den Transport hinter Lastkraftwagen, Traktoren oder Baumaschinen und dient den Beschäftigten auf Baustellen als Umkleidekabine, Aufenthaltsraum und Werkzeuglager.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Abschnitt „Ausführungen“, Punkte 1 und 2"
+            },
+            {
+              "quellen_id": "Q4",
+              "fundstelle": "Abschnitt „Verwendung“, Absatz 1"
+            },
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Einleitung und Abschnitt „Beschreibung“, Absatz 1"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "funktion"
+        },
+        {
+          "absatz_id": "P3",
+          "text": "Die Verordnung (EU) 2018/858 über die Genehmigung und Marktüberwachung von Kraftfahrzeugen und ihren Anhängern teilt Anhänger nach ihrer Höchstmasse in die Klasse O ein: O1 bis 0,75 t, O2 über 0,75 t bis 3,5 t, O3 über 3,5 t bis 10 t und O4 über 10 t.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q12",
+              "fundstelle": "Article 4 Absatz 1 Buchstabe d, Category O (i) bis (iv)"
+            }
+          ],
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P4",
+          "text": "Weil der Bauanhänger keine eigene Antriebsenergie besitzt, liegen seine wesentlichen Schnittstellen am Zugfahrzeug: mechanisch an der Zugeinrichtung für Zug-, Schub- und Stützkräfte, elektrisch an der Steckverbindung, pneumatisch an Kupplungsköpfen bei druckluftgebremsten Ausführungen und hydraulisch am Hydraulikanschluss, wenn der Kippanhänger die Hydraulik des Zugfahrzeugs nutzt. Für eine Dekomposition, etwa in SysML, wird der Bauanhänger zuerst in Hauptsysteme gegliedert; die Aufbaufamilien erscheinen als Varianten von Aufbau und Ladung.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P1",
+              "Q1: Zugkräfte über die Deichsel",
+              "P11: Druckluft wird über Verbindungsschläuche vom Zugfahrzeug bezogen",
+              "Kurztext: ein Fahrzeug ohne Energiewandler muss Energie für Leuchten und Bremse von außen beziehen"
+            ],
+            "schluss": "Alle Energie- und Signalflüsse des fahrenden Bauanhängers kreuzen die Schnittstelle zum Zugfahrzeug."
+          },
+          "sicherheit": "hoch",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "funktion"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrzeugstruktur und Fahrwerk",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E2",
+      "absaetze": [
+        {
+          "absatz_id": "P5",
+          "text": "Fahrzeugstruktur und Fahrwerk tragen Aufbau und Ladung und leiten Zug-, Brems- und Gewichtskräfte zwischen Zugfahrzeug und Fahrbahn. Die Tragstruktur besteht aus dem Rahmen, der Zugeinrichtung mit Deichsel und Zugöse oder Zugkugelkupplung sowie bei Starrdeichselanhängern der Stützeinrichtung. Das Fahrwerk umfasst Achse, Federung sowie Räder und Reifen. Der Lastpfad läuft von der Ladung über den Rahmen in Federung, Achse und Reifen; beim Starrdeichselanhänger geht ein Teil als Stützlast über die Zugeinrichtung ins Zugfahrzeug. Beim Kippanhänger nimmt der Rahmen zusätzlich die Kräfte aus Kipplager und Kippzylinder auf.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "Q1: Anhänger übertragen die Last über die Räder, bis auf die Stützlast",
+              "P6",
+              "Kurztext: Kräfte am Kipplager müssen in eine tragende Struktur abgeleitet werden"
+            ],
+            "schluss": "Rahmen, Zugeinrichtung und Fahrwerk bilden den einzigen Lastpfad zwischen Ladung, Zugfahrzeug und Fahrbahn."
+          },
+          "sicherheit": "hoch",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "funktion"
+        },
+        {
+          "absatz_id": "P6",
+          "text": "Bei Starrdeichselanhängern ist die Deichsel starr mit dem Rahmen verbunden; sie haben eine oder zwei, seltener drei Achsen, die ebenfalls starr am Rahmen sitzen. Zwei nah hintereinanderliegende Achsen ergeben ein Fahrverhalten ähnlich dem eines Einachsers; dafür ist der Begriff Tandemanhänger üblich. Verbreitetste Fahrwerksbauart ist der Leiterrahmen mit Starrachsen; ungedämpfte Starrachsen finden sich bei leichten Transportanhängern bis heute, bei gefederten Achsen ist die Blattfederung am weitesten verbreitet. Im Baustellenbetrieb werden für ungebremste Anhänger noch einfache Bolzenkupplungen verwendet. Nach § 44 StVZO (Deutschland) brauchen Starrdeichselanhänger eine höhenverstellbare, unverlierbar untergebrachte Stützeinrichtung, wenn die Stützlast mehr als 50 kg beträgt.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Abschnitt „Starrdeichselanhänger“, Absätze 1 und 3; Abschnitt „Fahrwerk und Federung“; Abschnitt „Anhängerkupplung“, Absatz zur Geschichte"
+            },
+            {
+              "quellen_id": "Q8",
+              "fundstelle": "Absatz 2"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P7",
+          "text": "Die Fahrgestellbauart ändert mehrere Hauptsysteme. Der Starrdeichselanhänger mit Einzel- oder Tandemachse braucht kein Lenksystem, aber eine Stützeinrichtung und eine stützlastfähige Zugeinrichtung; er passt zu leichten Transport- und Kippanhängern hinter Pkw und Transportern. Der Gelenkdeichselanhänger ist stützlastfrei und erlaubt lange Ladeflächen, verlangt aber das Lenksystem; er kommt für Bauwagen und schwere Kippanhänger hinter Lastkraftwagen in Betracht. Zweite Entscheidung ist die Geschwindigkeitsauslegung: Ein Schnellläufer verlangt aufwändigeres Fahrwerk und wirkt auf Federung, Bremse und Kennzeichnung.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P6",
+              "P8",
+              "P15: Schnellläufer benötigen ein aufwändigeres Fahrgestell",
+              "P21: Geschwindigkeitsschilder für langsame Anhänger"
+            ],
+            "schluss": "Fahrgestellbauart und Geschwindigkeitsauslegung sind strukturändernde Varianten mit Folgen für Lenkung, Bremse und Kennzeichnung."
+          },
+          "sicherheit": "gering",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "variante"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Lenksystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E11",
+      "absaetze": [
+        {
+          "absatz_id": "P8",
+          "text": "Gelenkdeichselanhänger haben zwei oder mehr Achsen, deren vordere über einen Drehschemel oder seltener über einzeln gelenkte Achsschenkel gelenkt wird; sie sind typisch für Lastkraftwagen und Traktoren. Bei der Drehschemellenkung ist die Vorderachse auf dem Drehschemel montiert und mit der Deichsel fest verbunden. Die Deichsel ist vertikal beweglich gelagert, mit starken Federn gehalten und darf nach dem Abkuppeln den Boden nicht berühren. Tandemanhänger brauchen keinen Drehschemel; ihre Achsen sind nicht lenkbar, was höheren Reifenabrieb bei engen Kurvenradien bedeutet.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Abschnitt „Gelenkdeichselanhänger“, Absätze 1 und 2; Abschnitt „Starrdeichselanhänger“, Absatz 3"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P9",
+          "text": "Das Lenksystem besteht damit aus Drehschemel und Deichsellagerung. Zugkraft und seitliche Auslenkung des Zugfahrzeugs gelangen über die Deichsel in den Drehschemel, der die Vorderachse um die Hochachse schwenkt und die Spur des Anhängers nachführt. Die Deichsellagerung entkoppelt die vertikale Deichselbewegung vom Drehschemel. Schnittstellen bestehen zu Zugeinrichtung und Achse sowie zu Brems- und Elektrikleitungen, die den Drehbereich überbrücken müssen. Beim Starrdeichselanhänger entfällt das Lenksystem.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P8"
+            ],
+            "schluss": "Drehschemel und Deichsellagerung sind die tragenden Elemente der Anhängerlenkung und koppeln Zugeinrichtung und Vorderachse."
+          },
+          "sicherheit": "hoch",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "funktion"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Bremssystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E14",
+      "absaetze": [
+        {
+          "absatz_id": "P10",
+          "text": "Bei der Auflaufbremse läuft der Anhänger beim Bremsen auf das Zugfahrzeug auf; die Kraft wird von der Kupplung über Hebel oder eine Mechanik auf die Bremsen des Anhängers übertragen. Eine Rückfahrsperre verhindert das Ansprechen beim Rückwärtsfahren und muss seit 1991 automatisch wirken. Ein Abreißseil ist mit der Bremsmechanik verbunden und bremst den Anhänger, wenn er sich während der Fahrt löst. Nach § 41 StVZO (Deutschland) sind Auflaufbremsen bis 3,5 t zulässigem Gesamtgewicht zulässig, wenn sie auf alle Räder wirken, bei höchstens 25 km/h bis 8 t; die Bremse muss feststellbar sein.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q5",
+              "fundstelle": "Abschnitt „Auflaufbremse“, Absätze 1 und 2"
+            },
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Abschnitt „Anhängerkupplung“, Absatz zum Abreißseil"
+            },
+            {
+              "quellen_id": "Q6",
+              "fundstelle": "Absatz 9 Satz 3 und Absatz 10"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P11",
+          "text": "Anhänger über 3 500 kg benötigen eine Zweileitungs-Druckluftbremsanlage, bei einer Höchstgeschwindigkeit über 60 km/h zusätzlich ein Antiblockiersystem. Die Druckluft kommt über eine rot markierte Vorratsleitung vom Zugfahrzeug, eine gelb markierte Bremsleitung steuert den Bremsvorgang; reißt die Vorratsleitung ab, löst das Anhängerbremsventil eine Vollbremsung aus. Als Feststellbremse dient die Federspeicherbremse. Starrdeichselanhänger über 750 kg zulässigem Gesamtgewicht müssen nach § 41 StVZO mindestens zwei Unterlegkeile haben.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Abschnitt „Bremsen“, Unterabschnitt zu Anhängern über 3500 kg; Abschnitt „Anhängerkupplung“, Absatz zu Maul- und Sattelkupplung"
+            },
+            {
+              "quellen_id": "Q5",
+              "fundstelle": "Abschnitt „Durchgehende Bremse“ bzw. Absatz zu Lkw-Anhängern mit Druckluftbremse; Absatz „Federspeicherbremse“"
+            },
+            {
+              "quellen_id": "Q6",
+              "fundstelle": "Absatz 14"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P12",
+          "text": "Im Modell gliedert sich das Bremssystem in die Auflaufbremsanlage mit Auflaufeinrichtung, Bremsgestänge und Abreißseil oder die Druckluftbremsanlage mit Kupplungsköpfen, Anhängerbremsventil, Druckluftbehälter, Bremszylindern und Antiblockiersystem; gemeinsam sind Radbremsen, Feststellbremse und Unterlegkeile. Leichte Bauanhänger bleiben ungebremst. Die Bremsbauart folgt der Gesamtmasse und wirkt auf andere Hauptsysteme: Die Auflaufeinrichtung ist in die Zugeinrichtung integriert, die Druckluftbremsanlage verlangt Leitungen über den Drehschemel und eine Versorgung des Antiblockiersystems über die Steckverbindung.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P10",
+              "P11"
+            ],
+            "schluss": "Die Bremsbauart ist eine massenabhängige Variante, die Zugeinrichtung, Lenksystem und Elektrik mitbestimmt."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "variante"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Aufbau und Ladung",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E28",
+      "absaetze": [
+        {
+          "absatz_id": "P13",
+          "text": "Eine Kippbrücke ist eine über einen Kippmechanismus mit dem Fahrgestell verbundene Ladefläche, die schräg gestellt werden kann, sodass das Ladegut herunterrutscht; sie eignet sich für schüttfähige Güter wie Erde oder Sand. Beim Dreiseitenkipper sind außer der Vorderwand alle Bordwände beweglich, gekippt wird nach rechts, links und hinten; Einseitenkipper kippen meist nur nach hinten. Beim Dreiseitenkipper müssen die Brückenstecker richtig gesetzt sein; über Kreuz gesteckte Brückenstecker führten bereits zum Ausreißen der Mulde aus ihren Lagern.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q4",
+              "fundstelle": "Einleitung; Abschnitte „Einseitenkipper“ und „Dreiseitenkipper“"
+            },
+            {
+              "quellen_id": "Q13",
+              "fundstelle": "Abschnitt 4.2 „Brückenstecker“"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P14",
+          "text": "Beim Tieflader liegt die Ladefläche üblicherweise unterhalb der Fahrachsen. Dadurch kann die Auffahrrampe kürzer oder flacher sein, Fahrzeuge lassen sich einfacher verladen, und der niedrigere Schwerpunkt erhöht die Fahrstabilität. Beim Überfahrtieflader liegen die Räder unter der Ladefläche, sodass bei Baugeräten die gesamte Breite nutzbar ist.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Einleitung; Abschnitt „Ausführungen“, Punkt Überfahrtieflader"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P15",
+          "text": "Der Bauwagen besteht aus einem herkömmlichen Anhängerfahrgestell mit einer Kabine aus Holz oder Sandwichplatten, in Deutschland meist mit Runddach; die Inneneinrichtung beschränkt sich ursprünglich auf Sitzgelegenheiten, einen Ofen und Spinde. Bauartbedingt dürfen Bauwagen meist nur mit höchstens 25 km/h fahren; Schnellläufer können für 100 km/h zugelassen werden und kosten durch das aufwändigere Fahrgestell ein Vielfaches. Fahrbare Baubuden hinter Kraftfahrzeugen mit höchstens 25 km/h sind nach § 3 FZV (Deutschland) zulassungsfrei, wenn sie nach § 58 StVZO gekennzeichnet sind.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Einleitung; Abschnitt „Beschreibung“, Absätze 1 und 2"
+            },
+            {
+              "quellen_id": "Q11",
+              "fundstelle": "Absatz 3 Satz 1 Nummer 2 Buchstabe c und Satz 2"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P16",
+          "text": "Im Modell besteht Aufbau und Ladung aus der Ladebrücke mit Ladeboden, Bordwänden und Zurrpunkten, der Kippeinrichtung mit Kippzylinder, Kipplager und Brückenstecker, den Auffahrrampen sowie der Kabine mit Kabinenstruktur und Inneneinrichtung. Die Aufbauart bestimmt, welche Elemente vorhanden sind, und wirkt auf andere Hauptsysteme: Die Kippbrücke verlangt Kipphydraulik und gegebenenfalls Energieversorgung, die Kabine Thermomanagement und Einspeisung, die tiefe Ladefläche eine angepasste Tragstruktur.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P13",
+              "P14",
+              "P15",
+              "Kurztext: Zurrpunkte und Bordwände halten die Ladung auf der Ladefläche"
+            ],
+            "schluss": "Die Aufbauart ist die zentrale strukturändernde Variante des Bauanhängers."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "variante"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Energieversorgungssystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E41",
+      "absaetze": [
+        {
+          "absatz_id": "P17",
+          "text": "Das Energieversorgungssystem ist nur beim Kippanhänger mit elektrohydraulischem Kippantrieb vorhanden. Der Pumpenmotor braucht elektrische Energie, entweder unmittelbar aus dem Bordnetz des Zugfahrzeugs oder aus einer Bordnetzbatterie auf dem Anhänger. Die Bordnetzbatterie erlaubt das Kippen auch im abgekuppelten Zustand und wird über eine Ladeeinrichtung aus der Steckverbindung nachgeladen. Schnittstellen bestehen zur Elektrik über die Ladeleitung und zur Kipphydraulik über den Pumpenmotoranschluss. Anhänger mit Handpumpe oder Zugfahrzeughydraulik, Transportanhänger und Bauwagen kommen ohne dieses Hauptsystem aus.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P18: hydraulische Kippantriebe sind heute Standard",
+              "P19",
+              "Kurztext: ein Elektromotor braucht eine Energiequelle; abgekuppelt steht das Bordnetz des Zugfahrzeugs nicht zur Verfügung"
+            ],
+            "schluss": "Ein Energiespeicher auf dem Anhänger ist nur für elektrohydraulisches Kippen ohne Zugfahrzeug notwendig."
+          },
+          "sicherheit": "gering",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "variante"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Neben- und Versorgungssysteme",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E44",
+      "absaetze": [
+        {
+          "absatz_id": "P18",
+          "text": "Kippmechanismen wurden anfangs durch Körperkraft, etwa mit Handkurbeln, betätigt; später kamen luftdruckbetriebene und hydraulische Kippantriebe hinzu, die heute gängiger Standard sind. Für Kippsattelauflieger rät die DGUV Information 214-023 (Deutschland, gewerbliche Unternehmen), die Hydraulik und besonders die Schlauchleitungen vor und nach der Beladung, während des Transports und vor dem Abkippen auf Beschädigungen zu prüfen, weil sonst herunterschlagende Mulden schwere Schäden verursachen können.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q4",
+              "fundstelle": "Abschnitt „Geschichte“, Absatz 1"
+            },
+            {
+              "quellen_id": "Q13",
+              "fundstelle": "Abschnitt 2.1 „Beschädigungen der Hydraulik“"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P19",
+          "text": "Kern der Neben- und Versorgungssysteme ist die Kipphydraulik aus Hydraulikpumpe, Hydrauliktank, Steuerventil und Hydraulikanschluss, ergänzt um die Kippsteuerung, mit der der Bediener Heben, Halten und Senken auslöst. Die Pumpe fördert Öl aus dem Hydrauliktank über das Steuerventil in den Kippzylinder; zum Senken öffnet das Steuerventil den Rücklauf. Je nach Kippantrieb wird die Pumpe von Hand oder elektrisch angetrieben, oder das Zugfahrzeug liefert den Druck über den Hydraulikanschluss. Bei Bauwagen und Transportanhängern entfällt die Kipphydraulik meist.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P18",
+              "P13",
+              "Kurztext: ein Hydraulikkreis braucht Druckerzeuger, Vorratsbehälter, Ventil und Verbraucher"
+            ],
+            "schluss": "Die Kipphydraulik ist ein variantenabhängiges Versorgungssystem zwischen Energiequelle und Kippzylinder."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "variante"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Elektrik und Elektronik",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E51",
+      "absaetze": [
+        {
+          "absatz_id": "P20",
+          "text": "Elektrik und Elektronik verbinden den Bauanhänger elektrisch mit dem Zugfahrzeug. Die Steckverbindung an der Deichsel überträgt Leuchtenschaltsignale, bei Bedarf Ladestrom und die Versorgung des Antiblockiersystems; der Leitungssatz verteilt sie längs des Rahmens zu Leuchten, Ladeeinrichtung und Bremse. Der Bauwagen kann zusätzlich einen Einspeiseanschluss besitzen, über den am Standort Baustrom für Licht und Geräte eingespeist wird. Varianten folgen aus Bremsbauart und Kippantrieb.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P11",
+              "P17",
+              "P21",
+              "Kurztext: ein Anhänger ohne Generator bezieht elektrische Energie vom Zugfahrzeug oder von außen"
+            ],
+            "schluss": "Steckverbindung, Leitungssatz und gegebenenfalls Einspeiseanschluss bilden die elektrische Verteilung des Anhängers."
+          },
+          "sicherheit": "gering",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Beleuchtung und Sicht",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E55",
+      "absaetze": [
+        {
+          "absatz_id": "P21",
+          "text": "Nach § 53 StVZO (Deutschland) müssen Anhänger hinten zwei Schlussleuchten und zwei Bremsleuchten für rotes Licht sowie zwei dreieckige rote Rückstrahler mit mindestens 150 mm Seitenlänge und nach oben zeigender Spitze haben. Anhänger der EU-Fahrzeugklassen O3 und O4 brauchen ab Erstzulassung 10. Juli 2011 Heckmarkierungstafeln mit gelbem reflektierendem Grund und rotem Rand. Anhänger mit einer bauartbedingten Höchstgeschwindigkeit unter 100 km/h tragen nach § 58 StVZO Geschwindigkeitsschilder an beiden Längsseiten und hinten.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q9",
+              "fundstelle": "Absätze 1, 2 und 4"
+            },
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Abschnitt „Heckmarkierungstafeln“"
+            },
+            {
+              "quellen_id": "Q10",
+              "fundstelle": "Absatz 3 Nummer 2 und Absatz 5"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P22",
+          "text": "Im Modell umfasst Beleuchtung und Sicht die Leuchten und die passive Kennzeichnung aus Rückstrahlern, Heckmarkierungstafeln und Geschwindigkeitsschildern. Die Leuchten werden über Leitungssatz und Steckverbindung vom Zugfahrzeug geschaltet; die passive Kennzeichnung macht den Anhänger auch abgekuppelt erkennbar, etwa den Bauwagen am Straßenrand. Beim Kippanhänger müssen die Leuchten außerhalb der Schwenkbereiche von Kippbrücke und Bordwänden liegen, beim Transportanhänger außerhalb der Auffahrrampen.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P21",
+              "P13",
+              "P14"
+            ],
+            "schluss": "Aktive Leuchten hängen vom Zugfahrzeug ab, passive Kennzeichnung wirkt auch abgekuppelt; die Aufbauart bestimmt die Anordnung."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Thermomanagement",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E61",
+      "absaetze": [
+        {
+          "absatz_id": "P23",
+          "text": "Zur ursprünglichen Inneneinrichtung des Bauwagens gehört ein Ofen; charakteristisch für ältere Bauwagen ist das außen angebrachte Ofenrohr mit Abdeckung. Zu Wohnstätten umgebaute Bauwagen werden oft mit Holz- oder Kohleofen beheizt.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Abschnitt „Beschreibung“, Absätze 1 und 2; Abschnitt „Weitere Verwendungen“"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P24",
+          "text": "Das Thermomanagement beschränkt sich auf den Bauwagen und besteht aus Innenraumheizung und Ofenrohr. Die Innenraumheizung setzt Brennstoff in Wärme um und gibt sie an die Kabine ab; das Ofenrohr führt das Rauchgas durch die Kabinenstruktur ins Freie. Daraus folgen Schnittstellen zum Aufbau, etwa Durchführung und Brandschutz an der Kabinenstruktur, sowie die Forderung, Heizung und Rauchgasführung beim Standortwechsel zu sichern. Andere Heizungsarten sind denkbar, hier aber nicht belegt.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P23",
+              "Kurztext: eine Verbrennungsheizung braucht Abgasführung ins Freie"
+            ],
+            "schluss": "Innenraumheizung und Ofenrohr bilden das Thermomanagement des Bauwagens."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Zusammenfassung",
+      "abschnittstyp": "gesamtsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P25",
+          "text": "Der Bauanhänger lässt sich auf oberster Ebene als Gesamtsystem mit den Hauptsystemen Fahrzeugstruktur und Fahrwerk, Lenksystem, Bremssystem, Aufbau und Ladung, Energieversorgungssystem, Neben- und Versorgungssysteme, Elektrik und Elektronik, Beleuchtung und Sicht sowie Thermomanagement auffassen. Antrieb, Bedienraum, Fahrzeugsteuerung und Assistenz entfallen, weil kein Fahrantrieb, kein Fahrer an Bord und keine eigene Fahrzeugführung vorhanden sind. Lenksystem, Energieversorgung, Kipphydraulik und Thermomanagement treten nur in bestimmten Varianten auf; die Aufbauart ist die zentrale Entscheidung.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P1",
+              "P7",
+              "P16",
+              "P17",
+              "P19",
+              "P24"
+            ],
+            "schluss": "Die Architektur besteht aus einem festen Anhängerkern und variantenabhängigen Systemen."
+          },
+          "sicherheit": "hoch",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "funktion"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Modellierungsbezug",
+      "abschnittstyp": "modellierung",
+      "absaetze": [
+        {
+          "absatz_id": "P26",
+          "text": "In SysML bildet der Block Bauanhänger das Gesamtsystem mit den Hauptsystemen als Bestandteilen. Dekompositionspfade sind etwa Fahrzeugstruktur und Fahrwerk → Tragstruktur → Zugeinrichtung, Bremssystem → Druckluftbremsanlage → Anhängerbremsventil, Aufbau und Ladung → Kippeinrichtung → Kippzylinder sowie Neben- und Versorgungssysteme → Kipphydraulik → Hydraulikpumpe. Die Aufbaufamilien werden Spezialisierungen eines gemeinsamen Anhängerblocks. Ports an Zugeinrichtung, Steckverbindung, Kupplungsköpfen und Hydraulikanschluss bilden die Schnittstellen zum Zugfahrzeug; Konnektoren verbinden intern etwa Hydraulikpumpe, Steuerventil und Kippzylinder. Geeignet sind Blockdefinitionsdiagramme, interne Blockdiagramme und Aktivitätsdiagramme für den Kippvorgang.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P5",
+              "P12",
+              "P16",
+              "P19",
+              "P4"
+            ],
+            "schluss": "Die Hauptsystemgliederung lässt sich direkt in eine SysML-Blockhierarchie mit Varianten und Ports übertragen."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "modellannahme"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Flüsse",
+      "abschnittstyp": "fluesse",
+      "absaetze": [
+        {
+          "absatz_id": "P27",
+          "text": "Mechanisch: Zugeinrichtung auf Rahmen, Deichsellagerung und Auflaufeinrichtung, diese über Bremsgestänge auf Radbremsen; Ladeboden und Kipplager auf Rahmen, Rahmen über Federung und Achse auf Räder und Reifen; Drehschemel auf Vorderachse; Kippzylinder auf Ladeboden. Pneumatisch: Kupplungsköpfe auf Anhängerbremsventil, dieses auf Druckluftbehälter und Bremszylinder. Hydraulisch: Hydrauliktank, Hydraulikpumpe oder Hydraulikanschluss über Steuerventil zum Kippzylinder. Elektrisch: Steckverbindung über Leitungssatz zu Leuchten und Ladeeinrichtung, zum Antiblockiersystem; Bordnetzbatterie zur Hydraulikpumpe; Einspeiseanschluss in den Leitungssatz. Information: Kippsteuerung an Steuerventil. Thermisch und stofflich: Innenraumheizung an Kabinenstruktur, Rauchgas ins Ofenrohr.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P5",
+              "P9",
+              "P12",
+              "P16",
+              "P17",
+              "P19",
+              "P20",
+              "P22",
+              "P24"
+            ],
+            "schluss": "Jeder Fluss verbindet ein Ursprungs- und ein Zielelement des Modells."
+          },
+          "sicherheit": "hoch",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "funktion"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Perspektiven",
+      "abschnittstyp": "perspektiven",
+      "absaetze": [
+        {
+          "absatz_id": "P28",
+          "text": "Funktionszuordnung: Fahrzeuglasten tragen durch Rahmen, Achse, Federung, Räder und Reifen; Anhänger ziehen durch Zugeinrichtung; Fahrzeug lenken durch Drehschemel und Deichsellagerung; Fahrzeug verzögern durch Auflaufbremsanlage, Druckluftbremsanlage und Radbremsen; Fahrzeug festhalten durch Feststellbremse, Unterlegkeile und Stützeinrichtung; Ladung aufnehmen durch Ladebrücke, Auffahrrampen und Kabine; Ladung sichern durch Zurrpunkte und Bordwände; Ladung entladen durch Kippeinrichtung und Kippzylinder; Hydraulische Leistung bereitstellen durch Kipphydraulik und Hydraulikpumpe; Fahrereingaben erfassen durch Kippsteuerung; Energie speichern durch Bordnetzbatterie und Druckluftbehälter; Elektrische Energie verteilen durch Steckverbindung, Leitungssatz und Einspeiseanschluss; Lichtsignale abgeben durch Leuchten; Fahrzeug kenntlich machen durch Kennzeichnung; Innenraum klimatisieren durch Innenraumheizung und Ofenrohr.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P5",
+              "P9",
+              "P12",
+              "P16",
+              "P17",
+              "P19",
+              "P20",
+              "P22",
+              "P24"
+            ],
+            "schluss": "Jede Funktion des Modells hat mindestens ein ausführendes Element."
+          },
+          "sicherheit": "hoch",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "funktion"
+        }
+      ]
+    }
+  ],
+  "modell": {
+    "elemente": [
+      {
+        "id": "E1",
+        "name": "Bauanhänger",
+        "typ": "gesamtsystem",
+        "eltern_id": null,
+        "absatz_ids": [
+          "P1",
+          "P4",
+          "P25",
+          "P26"
+        ]
+      },
+      {
+        "id": "E2",
+        "name": "Fahrzeugstruktur und Fahrwerk",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P5",
+          "P25",
+          "P26"
+        ],
+        "kategorie": "struktur_fahrwerk"
+      },
+      {
+        "id": "E3",
+        "name": "Tragstruktur",
+        "typ": "subsystem",
+        "eltern_id": "E2",
+        "absatz_ids": [
+          "P5",
+          "P16",
+          "P26"
+        ]
+      },
+      {
+        "id": "E4",
+        "name": "Rahmen",
+        "typ": "komponente",
+        "eltern_id": "E3",
+        "absatz_ids": [
+          "P5",
+          "P6",
+          "P27",
+          "P28"
+        ]
+      },
+      {
+        "id": "E5",
+        "name": "Zugeinrichtung",
+        "typ": "komponente",
+        "eltern_id": "E3",
+        "absatz_ids": [
+          "P4",
+          "P5",
+          "P7",
+          "P12",
+          "P27",
+          "P28"
+        ]
+      },
+      {
+        "id": "E6",
+        "name": "Stützeinrichtung",
+        "typ": "komponente",
+        "eltern_id": "E3",
+        "absatz_ids": [
+          "P5",
+          "P6",
+          "P7",
+          "P28"
+        ]
+      },
+      {
+        "id": "E7",
+        "name": "Fahrwerk",
+        "typ": "subsystem",
+        "eltern_id": "E2",
+        "absatz_ids": [
+          "P5",
+          "P7"
+        ]
+      },
+      {
+        "id": "E8",
+        "name": "Achse",
+        "typ": "komponente",
+        "eltern_id": "E7",
+        "absatz_ids": [
+          "P5",
+          "P9",
+          "P27",
+          "P28"
+        ]
+      },
+      {
+        "id": "E9",
+        "name": "Federung",
+        "typ": "komponente",
+        "eltern_id": "E7",
+        "absatz_ids": [
+          "P5",
+          "P7",
+          "P27",
+          "P28"
+        ]
+      },
+      {
+        "id": "E10",
+        "name": "Räder und Reifen",
+        "typ": "komponente",
+        "eltern_id": "E7",
+        "absatz_ids": [
+          "P5",
+          "P27",
+          "P28"
+        ]
+      },
+      {
+        "id": "E11",
+        "name": "Lenksystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P7",
+          "P9",
+          "P25"
+        ],
+        "kategorie": "lenkung"
+      },
+      {
+        "id": "E12",
+        "name": "Drehschemel",
+        "typ": "komponente",
+        "eltern_id": "E11",
+        "absatz_ids": [
+          "P8",
+          "P9",
+          "P12",
+          "P27",
+          "P28"
+        ]
+      },
+      {
+        "id": "E13",
+        "name": "Deichsellagerung",
+        "typ": "komponente",
+        "eltern_id": "E11",
+        "absatz_ids": [
+          "P9",
+          "P27",
+          "P28"
+        ]
+      },
+      {
+        "id": "E14",
+        "name": "Bremssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P12",
+          "P25",
+          "P26"
+        ],
+        "kategorie": "bremse"
+      },
+      {
+        "id": "E15",
+        "name": "Auflaufbremsanlage",
+        "typ": "subsystem",
+        "eltern_id": "E14",
+        "absatz_ids": [
+          "P12",
+          "P28"
+        ]
+      },
+      {
+        "id": "E16",
+        "name": "Auflaufeinrichtung",
+        "typ": "komponente",
+        "eltern_id": "E15",
+        "absatz_ids": [
+          "P12",
+          "P27"
+        ]
+      },
+      {
+        "id": "E17",
+        "name": "Bremsgestänge",
+        "typ": "komponente",
+        "eltern_id": "E15",
+        "absatz_ids": [
+          "P12",
+          "P27"
+        ]
+      },
+      {
+        "id": "E18",
+        "name": "Abreißseil",
+        "typ": "komponente",
+        "eltern_id": "E15",
+        "absatz_ids": [
+          "P10",
+          "P12"
+        ]
+      },
+      {
+        "id": "E19",
+        "name": "Druckluftbremsanlage",
+        "typ": "subsystem",
+        "eltern_id": "E14",
+        "absatz_ids": [
+          "P11",
+          "P12",
+          "P26",
+          "P28"
+        ]
+      },
+      {
+        "id": "E20",
+        "name": "Kupplungsköpfe",
+        "typ": "komponente",
+        "eltern_id": "E19",
+        "absatz_ids": [
+          "P4",
+          "P12",
+          "P26",
+          "P27"
+        ]
+      },
+      {
+        "id": "E21",
+        "name": "Anhängerbremsventil",
+        "typ": "komponente",
+        "eltern_id": "E19",
+        "absatz_ids": [
+          "P11",
+          "P12",
+          "P26",
+          "P27"
+        ]
+      },
+      {
+        "id": "E22",
+        "name": "Druckluftbehälter",
+        "typ": "komponente",
+        "eltern_id": "E19",
+        "absatz_ids": [
+          "P12",
+          "P27",
+          "P28"
+        ]
+      },
+      {
+        "id": "E23",
+        "name": "Bremszylinder",
+        "typ": "komponente",
+        "eltern_id": "E19",
+        "absatz_ids": [
+          "P12",
+          "P27"
+        ]
+      },
+      {
+        "id": "E24",
+        "name": "Antiblockiersystem",
+        "typ": "komponente",
+        "eltern_id": "E19",
+        "absatz_ids": [
+          "P11",
+          "P12",
+          "P20",
+          "P27"
+        ]
+      },
+      {
+        "id": "E25",
+        "name": "Radbremsen",
+        "typ": "komponente",
+        "eltern_id": "E14",
+        "absatz_ids": [
+          "P12",
+          "P27",
+          "P28"
+        ]
+      },
+      {
+        "id": "E26",
+        "name": "Feststellbremse",
+        "typ": "komponente",
+        "eltern_id": "E14",
+        "absatz_ids": [
+          "P11",
+          "P12",
+          "P28"
+        ]
+      },
+      {
+        "id": "E27",
+        "name": "Unterlegkeile",
+        "typ": "komponente",
+        "eltern_id": "E14",
+        "absatz_ids": [
+          "P11",
+          "P12",
+          "P28"
+        ]
+      },
+      {
+        "id": "E28",
+        "name": "Aufbau und Ladung",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P16",
+          "P25",
+          "P26"
+        ],
+        "kategorie": "aufbau_nutzlast"
+      },
+      {
+        "id": "E29",
+        "name": "Ladebrücke",
+        "typ": "subsystem",
+        "eltern_id": "E28",
+        "absatz_ids": [
+          "P16",
+          "P28"
+        ]
+      },
+      {
+        "id": "E30",
+        "name": "Ladeboden",
+        "typ": "komponente",
+        "eltern_id": "E29",
+        "absatz_ids": [
+          "P16",
+          "P27"
+        ]
+      },
+      {
+        "id": "E31",
+        "name": "Bordwände",
+        "typ": "komponente",
+        "eltern_id": "E29",
+        "absatz_ids": [
+          "P13",
+          "P16",
+          "P22",
+          "P28"
+        ]
+      },
+      {
+        "id": "E32",
+        "name": "Zurrpunkte",
+        "typ": "komponente",
+        "eltern_id": "E29",
+        "absatz_ids": [
+          "P16",
+          "P28"
+        ]
+      },
+      {
+        "id": "E33",
+        "name": "Kippeinrichtung",
+        "typ": "subsystem",
+        "eltern_id": "E28",
+        "absatz_ids": [
+          "P16",
+          "P26",
+          "P28"
+        ]
+      },
+      {
+        "id": "E34",
+        "name": "Kippzylinder",
+        "typ": "komponente",
+        "eltern_id": "E33",
+        "absatz_ids": [
+          "P5",
+          "P16",
+          "P19",
+          "P26",
+          "P27",
+          "P28"
+        ]
+      },
+      {
+        "id": "E35",
+        "name": "Kipplager",
+        "typ": "komponente",
+        "eltern_id": "E33",
+        "absatz_ids": [
+          "P5",
+          "P16",
+          "P27"
+        ]
+      },
+      {
+        "id": "E36",
+        "name": "Brückenstecker",
+        "typ": "komponente",
+        "eltern_id": "E33",
+        "absatz_ids": [
+          "P13",
+          "P16"
+        ]
+      },
+      {
+        "id": "E37",
+        "name": "Auffahrrampen",
+        "typ": "komponente",
+        "eltern_id": "E28",
+        "absatz_ids": [
+          "P1",
+          "P16",
+          "P22",
+          "P28"
+        ]
+      },
+      {
+        "id": "E38",
+        "name": "Kabine",
+        "typ": "subsystem",
+        "eltern_id": "E28",
+        "absatz_ids": [
+          "P15",
+          "P16",
+          "P24",
+          "P28"
+        ]
+      },
+      {
+        "id": "E39",
+        "name": "Kabinenstruktur",
+        "typ": "komponente",
+        "eltern_id": "E38",
+        "absatz_ids": [
+          "P16",
+          "P24",
+          "P27"
+        ]
+      },
+      {
+        "id": "E40",
+        "name": "Inneneinrichtung",
+        "typ": "komponente",
+        "eltern_id": "E38",
+        "absatz_ids": [
+          "P15",
+          "P16"
+        ]
+      },
+      {
+        "id": "E41",
+        "name": "Energieversorgungssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P17",
+          "P25"
+        ],
+        "kategorie": "energieversorgung"
+      },
+      {
+        "id": "E42",
+        "name": "Bordnetzbatterie",
+        "typ": "komponente",
+        "eltern_id": "E41",
+        "absatz_ids": [
+          "P17",
+          "P27",
+          "P28"
+        ]
+      },
+      {
+        "id": "E43",
+        "name": "Ladeeinrichtung",
+        "typ": "komponente",
+        "eltern_id": "E41",
+        "absatz_ids": [
+          "P17",
+          "P20",
+          "P27"
+        ]
+      },
+      {
+        "id": "E44",
+        "name": "Neben- und Versorgungssysteme",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P19",
+          "P25",
+          "P26"
+        ],
+        "kategorie": "nebensysteme"
+      },
+      {
+        "id": "E45",
+        "name": "Kipphydraulik",
+        "typ": "subsystem",
+        "eltern_id": "E44",
+        "absatz_ids": [
+          "P16",
+          "P19",
+          "P25",
+          "P26",
+          "P28"
+        ]
+      },
+      {
+        "id": "E46",
+        "name": "Hydraulikpumpe",
+        "typ": "komponente",
+        "eltern_id": "E45",
+        "absatz_ids": [
+          "P19",
+          "P26",
+          "P27",
+          "P28"
+        ]
+      },
+      {
+        "id": "E47",
+        "name": "Hydrauliktank",
+        "typ": "komponente",
+        "eltern_id": "E45",
+        "absatz_ids": [
+          "P19",
+          "P27"
+        ]
+      },
+      {
+        "id": "E48",
+        "name": "Steuerventil",
+        "typ": "komponente",
+        "eltern_id": "E45",
+        "absatz_ids": [
+          "P19",
+          "P26",
+          "P27"
+        ]
+      },
+      {
+        "id": "E49",
+        "name": "Hydraulikanschluss",
+        "typ": "komponente",
+        "eltern_id": "E45",
+        "absatz_ids": [
+          "P4",
+          "P19",
+          "P26",
+          "P27"
+        ]
+      },
+      {
+        "id": "E50",
+        "name": "Kippsteuerung",
+        "typ": "komponente",
+        "eltern_id": "E44",
+        "absatz_ids": [
+          "P19",
+          "P27",
+          "P28"
+        ]
+      },
+      {
+        "id": "E51",
+        "name": "Elektrik und Elektronik",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P20",
+          "P25"
+        ],
+        "kategorie": "elektrik_elektronik"
+      },
+      {
+        "id": "E52",
+        "name": "Steckverbindung",
+        "typ": "komponente",
+        "eltern_id": "E51",
+        "absatz_ids": [
+          "P4",
+          "P12",
+          "P17",
+          "P20",
+          "P27"
+        ]
+      },
+      {
+        "id": "E53",
+        "name": "Leitungssatz",
+        "typ": "komponente",
+        "eltern_id": "E51",
+        "absatz_ids": [
+          "P20",
+          "P22",
+          "P27"
+        ]
+      },
+      {
+        "id": "E54",
+        "name": "Einspeiseanschluss",
+        "typ": "komponente",
+        "eltern_id": "E51",
+        "absatz_ids": [
+          "P20",
+          "P27"
+        ]
+      },
+      {
+        "id": "E55",
+        "name": "Beleuchtung und Sicht",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P22",
+          "P25"
+        ],
+        "kategorie": "beleuchtung_sicht"
+      },
+      {
+        "id": "E56",
+        "name": "Leuchten",
+        "typ": "komponente",
+        "eltern_id": "E55",
+        "absatz_ids": [
+          "P22",
+          "P27",
+          "P28"
+        ]
+      },
+      {
+        "id": "E57",
+        "name": "Kennzeichnung",
+        "typ": "subsystem",
+        "eltern_id": "E55",
+        "absatz_ids": [
+          "P7",
+          "P22",
+          "P28"
+        ]
+      },
+      {
+        "id": "E58",
+        "name": "Rückstrahler",
+        "typ": "komponente",
+        "eltern_id": "E57",
+        "absatz_ids": [
+          "P21",
+          "P22"
+        ]
+      },
+      {
+        "id": "E59",
+        "name": "Heckmarkierungstafeln",
+        "typ": "komponente",
+        "eltern_id": "E57",
+        "absatz_ids": [
+          "P21",
+          "P22"
+        ]
+      },
+      {
+        "id": "E60",
+        "name": "Geschwindigkeitsschilder",
+        "typ": "komponente",
+        "eltern_id": "E57",
+        "absatz_ids": [
+          "P21",
+          "P22"
+        ]
+      },
+      {
+        "id": "E61",
+        "name": "Thermomanagement",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P24",
+          "P25"
+        ],
+        "kategorie": "thermomanagement"
+      },
+      {
+        "id": "E62",
+        "name": "Innenraumheizung",
+        "typ": "komponente",
+        "eltern_id": "E61",
+        "absatz_ids": [
+          "P24",
+          "P27",
+          "P28"
+        ]
+      },
+      {
+        "id": "E63",
+        "name": "Ofenrohr",
+        "typ": "komponente",
+        "eltern_id": "E61",
+        "absatz_ids": [
+          "P23",
+          "P24",
+          "P27",
+          "P28"
+        ]
+      }
+    ],
+    "funktionen": [
+      {
+        "id": "F1",
+        "name": "Fahrzeuglasten tragen",
+        "ausgefuehrt_von": [
+          "E4",
+          "E8",
+          "E9",
+          "E10"
+        ],
+        "absatz_ids": [
+          "P5",
+          "P28"
+        ]
+      },
+      {
+        "id": "F2",
+        "name": "Anhänger ziehen",
+        "ausgefuehrt_von": [
+          "E5"
+        ],
+        "absatz_ids": [
+          "P4",
+          "P5",
+          "P28"
+        ]
+      },
+      {
+        "id": "F3",
+        "name": "Fahrzeug lenken",
+        "ausgefuehrt_von": [
+          "E12",
+          "E13"
+        ],
+        "absatz_ids": [
+          "P9",
+          "P28"
+        ]
+      },
+      {
+        "id": "F4",
+        "name": "Fahrzeug verzögern",
+        "ausgefuehrt_von": [
+          "E15",
+          "E19",
+          "E25"
+        ],
+        "absatz_ids": [
+          "P10",
+          "P11",
+          "P12",
+          "P28"
+        ]
+      },
+      {
+        "id": "F5",
+        "name": "Fahrzeug festhalten",
+        "ausgefuehrt_von": [
+          "E26",
+          "E27",
+          "E6"
+        ],
+        "absatz_ids": [
+          "P11",
+          "P12",
+          "P28"
+        ]
+      },
+      {
+        "id": "F6",
+        "name": "Ladung aufnehmen",
+        "ausgefuehrt_von": [
+          "E29",
+          "E37",
+          "E38"
+        ],
+        "absatz_ids": [
+          "P16",
+          "P28"
+        ]
+      },
+      {
+        "id": "F7",
+        "name": "Ladung sichern",
+        "ausgefuehrt_von": [
+          "E32",
+          "E31"
+        ],
+        "absatz_ids": [
+          "P16",
+          "P28"
+        ]
+      },
+      {
+        "id": "F8",
+        "name": "Ladung entladen",
+        "ausgefuehrt_von": [
+          "E33",
+          "E34"
+        ],
+        "absatz_ids": [
+          "P13",
+          "P16",
+          "P28"
+        ]
+      },
+      {
+        "id": "F9",
+        "name": "Hydraulische Leistung bereitstellen",
+        "ausgefuehrt_von": [
+          "E45",
+          "E46"
+        ],
+        "absatz_ids": [
+          "P19",
+          "P28"
+        ]
+      },
+      {
+        "id": "F10",
+        "name": "Fahrereingaben erfassen",
+        "ausgefuehrt_von": [
+          "E50"
+        ],
+        "absatz_ids": [
+          "P19",
+          "P28"
+        ]
+      },
+      {
+        "id": "F11",
+        "name": "Energie speichern",
+        "ausgefuehrt_von": [
+          "E42",
+          "E22"
+        ],
+        "absatz_ids": [
+          "P17",
+          "P28"
+        ]
+      },
+      {
+        "id": "F12",
+        "name": "Elektrische Energie verteilen",
+        "ausgefuehrt_von": [
+          "E52",
+          "E53",
+          "E54"
+        ],
+        "absatz_ids": [
+          "P20",
+          "P28"
+        ]
+      },
+      {
+        "id": "F13",
+        "name": "Lichtsignale abgeben",
+        "ausgefuehrt_von": [
+          "E56"
+        ],
+        "absatz_ids": [
+          "P22",
+          "P28"
+        ]
+      },
+      {
+        "id": "F14",
+        "name": "Fahrzeug kenntlich machen",
+        "ausgefuehrt_von": [
+          "E57",
+          "E58",
+          "E59",
+          "E60"
+        ],
+        "absatz_ids": [
+          "P22",
+          "P28"
+        ]
+      },
+      {
+        "id": "F15",
+        "name": "Innenraum klimatisieren",
+        "ausgefuehrt_von": [
+          "E62",
+          "E63"
+        ],
+        "absatz_ids": [
+          "P24",
+          "P28"
+        ]
+      }
+    ],
+    "fluesse": [
+      {
+        "id": "S1",
+        "von": "E5",
+        "nach": "E4",
+        "art": "mechanisch",
+        "medium": "Zugkraft und Stützlast",
+        "absatz_ids": [
+          "P5",
+          "P27"
+        ]
+      },
+      {
+        "id": "S2",
+        "von": "E30",
+        "nach": "E4",
+        "art": "mechanisch",
+        "medium": "Ladungsgewicht",
+        "absatz_ids": [
+          "P5",
+          "P27"
+        ],
+        "schnittstelle": "Aufbaubefestigung am Rahmen"
+      },
+      {
+        "id": "S3",
+        "von": "E4",
+        "nach": "E9",
+        "art": "mechanisch",
+        "medium": "Radlast",
+        "absatz_ids": [
+          "P5",
+          "P27"
+        ]
+      },
+      {
+        "id": "S4",
+        "von": "E9",
+        "nach": "E8",
+        "art": "mechanisch",
+        "medium": "Radlast",
+        "absatz_ids": [
+          "P5",
+          "P27"
+        ]
+      },
+      {
+        "id": "S5",
+        "von": "E8",
+        "nach": "E10",
+        "art": "mechanisch",
+        "medium": "Radlast",
+        "absatz_ids": [
+          "P5",
+          "P27"
+        ]
+      },
+      {
+        "id": "S6",
+        "von": "E5",
+        "nach": "E16",
+        "art": "mechanisch",
+        "medium": "Auflaufkraft",
+        "absatz_ids": [
+          "P10",
+          "P12",
+          "P27"
+        ],
+        "schnittstelle": "Zugeinrichtung zu Auflaufeinrichtung"
+      },
+      {
+        "id": "S7",
+        "von": "E16",
+        "nach": "E17",
+        "art": "mechanisch",
+        "medium": "Betätigungskraft",
+        "absatz_ids": [
+          "P10",
+          "P27"
+        ]
+      },
+      {
+        "id": "S8",
+        "von": "E18",
+        "nach": "E17",
+        "art": "mechanisch",
+        "medium": "Abreißkraft",
+        "absatz_ids": [
+          "P10",
+          "P12"
+        ]
+      },
+      {
+        "id": "S9",
+        "von": "E17",
+        "nach": "E25",
+        "art": "mechanisch",
+        "medium": "Spannkraft",
+        "absatz_ids": [
+          "P10",
+          "P27"
+        ]
+      },
+      {
+        "id": "S10",
+        "von": "E20",
+        "nach": "E21",
+        "art": "pneumatisch",
+        "medium": "Vorrats- und Steuerdruck",
+        "absatz_ids": [
+          "P11",
+          "P27"
+        ]
+      },
+      {
+        "id": "S11",
+        "von": "E21",
+        "nach": "E22",
+        "art": "pneumatisch",
+        "medium": "Vorratsluft",
+        "absatz_ids": [
+          "P11",
+          "P27"
+        ]
+      },
+      {
+        "id": "S12",
+        "von": "E21",
+        "nach": "E23",
+        "art": "pneumatisch",
+        "medium": "Bremsdruck",
+        "absatz_ids": [
+          "P11",
+          "P27"
+        ]
+      },
+      {
+        "id": "S13",
+        "von": "E24",
+        "nach": "E23",
+        "art": "pneumatisch",
+        "medium": "geregelter Bremsdruck",
+        "absatz_ids": [
+          "P11",
+          "P12"
+        ]
+      },
+      {
+        "id": "S14",
+        "von": "E23",
+        "nach": "E25",
+        "art": "mechanisch",
+        "medium": "Spannkraft",
+        "absatz_ids": [
+          "P12",
+          "P27"
+        ]
+      },
+      {
+        "id": "S15",
+        "von": "E52",
+        "nach": "E24",
+        "art": "elektrisch",
+        "medium": "Versorgung Antiblockiersystem",
+        "absatz_ids": [
+          "P12",
+          "P20",
+          "P27"
+        ],
+        "schnittstelle": "Steckverbindung Antiblockiersystem"
+      },
+      {
+        "id": "S16",
+        "von": "E52",
+        "nach": "E53",
+        "art": "elektrisch",
+        "medium": "Leuchtenschaltsignale und Versorgung",
+        "absatz_ids": [
+          "P20",
+          "P27"
+        ]
+      },
+      {
+        "id": "S17",
+        "von": "E53",
+        "nach": "E56",
+        "art": "elektrisch",
+        "medium": "Leuchtenschaltsignale",
+        "absatz_ids": [
+          "P20",
+          "P22",
+          "P27"
+        ],
+        "schnittstelle": "Leuchtenanschluss"
+      },
+      {
+        "id": "S18",
+        "von": "E53",
+        "nach": "E43",
+        "art": "elektrisch",
+        "medium": "Ladestrom",
+        "absatz_ids": [
+          "P17",
+          "P20",
+          "P27"
+        ],
+        "schnittstelle": "Ladeleitung"
+      },
+      {
+        "id": "S19",
+        "von": "E43",
+        "nach": "E42",
+        "art": "elektrisch",
+        "medium": "Ladestrom",
+        "absatz_ids": [
+          "P17"
+        ]
+      },
+      {
+        "id": "S20",
+        "von": "E42",
+        "nach": "E46",
+        "art": "elektrisch",
+        "medium": "Pumpenstrom",
+        "absatz_ids": [
+          "P17",
+          "P27"
+        ],
+        "schnittstelle": "Pumpenmotoranschluss"
+      },
+      {
+        "id": "S21",
+        "von": "E47",
+        "nach": "E46",
+        "art": "hydraulisch",
+        "medium": "Hydrauliköl",
+        "absatz_ids": [
+          "P19",
+          "P27"
+        ]
+      },
+      {
+        "id": "S22",
+        "von": "E46",
+        "nach": "E48",
+        "art": "hydraulisch",
+        "medium": "Hydrauliköl unter Druck",
+        "absatz_ids": [
+          "P19",
+          "P27"
+        ]
+      },
+      {
+        "id": "S23",
+        "von": "E49",
+        "nach": "E48",
+        "art": "hydraulisch",
+        "medium": "Hydrauliköl vom Zugfahrzeug",
+        "absatz_ids": [
+          "P19",
+          "P27"
+        ]
+      },
+      {
+        "id": "S24",
+        "von": "E50",
+        "nach": "E48",
+        "art": "information",
+        "medium": "Schaltbefehl Heben, Halten, Senken",
+        "absatz_ids": [
+          "P19",
+          "P27"
+        ]
+      },
+      {
+        "id": "S25",
+        "von": "E48",
+        "nach": "E34",
+        "art": "hydraulisch",
+        "medium": "Hydrauliköl unter Druck",
+        "absatz_ids": [
+          "P19",
+          "P27"
+        ],
+        "schnittstelle": "Kippzylinderanschluss"
+      },
+      {
+        "id": "S26",
+        "von": "E34",
+        "nach": "E30",
+        "art": "mechanisch",
+        "medium": "Hubkraft",
+        "absatz_ids": [
+          "P16",
+          "P27"
+        ]
+      },
+      {
+        "id": "S27",
+        "von": "E35",
+        "nach": "E4",
+        "art": "mechanisch",
+        "medium": "Kipplagerkräfte",
+        "absatz_ids": [
+          "P5",
+          "P27"
+        ],
+        "schnittstelle": "Kipplager am Rahmen"
+      },
+      {
+        "id": "S28",
+        "von": "E5",
+        "nach": "E13",
+        "art": "mechanisch",
+        "medium": "Zug- und Lenkkraft",
+        "absatz_ids": [
+          "P9",
+          "P27"
+        ],
+        "schnittstelle": "Deichselanlenkung"
+      },
+      {
+        "id": "S29",
+        "von": "E12",
+        "nach": "E8",
+        "art": "mechanisch",
+        "medium": "Lenkbewegung",
+        "absatz_ids": [
+          "P9",
+          "P27"
+        ],
+        "schnittstelle": "Drehschemel zu Vorderachse"
+      },
+      {
+        "id": "S30",
+        "von": "E54",
+        "nach": "E53",
+        "art": "elektrisch",
+        "medium": "Baustrom",
+        "absatz_ids": [
+          "P20",
+          "P27"
+        ]
+      },
+      {
+        "id": "S31",
+        "von": "E62",
+        "nach": "E39",
+        "art": "thermisch",
+        "medium": "Heizwärme",
+        "absatz_ids": [
+          "P24",
+          "P27"
+        ],
+        "schnittstelle": "Kabineninnenraum"
+      },
+      {
+        "id": "S32",
+        "von": "E62",
+        "nach": "E63",
+        "art": "stoff",
+        "medium": "Rauchgas",
+        "absatz_ids": [
+          "P24",
+          "P27"
+        ]
+      }
+    ],
+    "entfallene_kategorien": [
+      {
+        "kategorie": "antrieb",
+        "grund": "Bauanhänger besitzen im Betrachtungsumfang keinen Fahrantrieb; angetriebene Anhänger sind ausgeschlossen."
+      },
+      {
+        "kategorie": "bedienraum",
+        "grund": "Kein Fahrer an Bord; die Bauwagenkabine ist Aufenthaltsraum und gehört zu Aufbau und Ladung, die Kippsteuerung zu den Neben- und Versorgungssystemen."
+      },
+      {
+        "kategorie": "steuerung_information",
+        "grund": "Keine übergeordnete Fahrzeugsteuerung, Diagnose oder Telematik; das Antiblockiersystem ist Teil des Bremssystems."
+      },
+      {
+        "kategorie": "assistenz_sicherheit",
+        "grund": "Keine Umfeldsensorik oder Assistenzfunktionen am Anhänger im Betrachtungsumfang; Abreißseil und Unterlegkeile gehören zum Bremssystem."
+      }
+    ],
+    "varianten": [
+      {
+        "id": "V1",
+        "element_id": "E2",
+        "bezeichnung": "Fahrgestellbauart",
+        "alternativen": [
+          "Starrdeichselanhänger mit Einzelachse",
+          "Starrdeichselanhänger mit Tandemachse",
+          "Gelenkdeichselanhänger mit Drehschemel"
+        ],
+        "auswahlkriterien": [
+          "zulässige Gesamtmasse und Ladeflächenlänge",
+          "Stützlastaufnahme und Art der Zugfahrzeuge",
+          "Rangierbarkeit und Reifenverschleiß in engen Kurven",
+          "Herstellkosten"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E11",
+            "beschreibung": "Lenksystem mit Drehschemel und Deichsellagerung nur beim Gelenkdeichselanhänger"
+          },
+          {
+            "element_id": "E6",
+            "beschreibung": "Stützeinrichtung nur beim Starrdeichselanhänger"
+          },
+          {
+            "element_id": "E27",
+            "beschreibung": "Anzahl der Unterlegkeile hängt von Achszahl und Deichselbauart ab"
+          },
+          {
+            "element_id": "E5",
+            "beschreibung": "Zugeinrichtung muss beim Starrdeichselanhänger Stützlast aufnehmen"
+          }
+        ],
+        "absatz_ids": [
+          "P6",
+          "P7",
+          "P8",
+          "P9"
+        ]
+      },
+      {
+        "id": "V2",
+        "element_id": "E14",
+        "bezeichnung": "Bremsbauart",
+        "alternativen": [
+          "ungebremst",
+          "Auflaufbremse",
+          "Zweileitungs-Druckluftbremse mit Antiblockiersystem"
+        ],
+        "auswahlkriterien": [
+          "zulässige Gesamtmasse",
+          "bauartbedingte Höchstgeschwindigkeit",
+          "Bremsanschlüsse der vorgesehenen Zugfahrzeuge"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E5",
+            "beschreibung": "Auflaufeinrichtung in die Zugeinrichtung integriert oder Zugöse mit Kupplungsköpfen"
+          },
+          {
+            "element_id": "E52",
+            "beschreibung": "zusätzliche Steckverbindung für das Antiblockiersystem bei Druckluftbremse"
+          },
+          {
+            "element_id": "E12",
+            "beschreibung": "Bremsleitungen müssen den Drehbereich des Drehschemels überbrücken"
+          }
+        ],
+        "absatz_ids": [
+          "P10",
+          "P11",
+          "P12"
+        ]
+      },
+      {
+        "id": "V3",
+        "element_id": "E28",
+        "bezeichnung": "Aufbauart",
+        "alternativen": [
+          "Transportplattform mit Auffahrrampen",
+          "Kippbrücke",
+          "Bauwagenkabine"
+        ],
+        "auswahlkriterien": [
+          "Transportgut",
+          "Nutzung am Standort",
+          "Art des Be- und Entladens"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E45",
+            "beschreibung": "Kipphydraulik nur bei Kippbrücke"
+          },
+          {
+            "element_id": "E41",
+            "beschreibung": "Energieversorgungssystem nur bei elektrohydraulisch gekippter Kippbrücke"
+          },
+          {
+            "element_id": "E61",
+            "beschreibung": "Thermomanagement nur bei Bauwagenkabine"
+          },
+          {
+            "element_id": "E54",
+            "beschreibung": "Einspeiseanschluss nur bei Bauwagenkabine"
+          },
+          {
+            "element_id": "E3",
+            "beschreibung": "tiefe Ladefläche verlangt angepasste Tragstruktur"
+          }
+        ],
+        "absatz_ids": [
+          "P1",
+          "P13",
+          "P14",
+          "P15",
+          "P16"
+        ]
+      },
+      {
+        "id": "V4",
+        "element_id": "E45",
+        "bezeichnung": "Kippantrieb",
+        "alternativen": [
+          "Handpumpe",
+          "elektrohydraulisches Aggregat mit Bordnetzbatterie",
+          "Hydraulik des Zugfahrzeugs über Hydraulikanschluss"
+        ],
+        "auswahlkriterien": [
+          "Kipphäufigkeit",
+          "Kippen im abgekuppelten Zustand",
+          "Hydraulikausstattung der Zugfahrzeuge",
+          "Masse und Kosten"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E41",
+            "beschreibung": "Bordnetzbatterie und Ladeeinrichtung nur beim elektrohydraulischen Aggregat"
+          },
+          {
+            "element_id": "E52",
+            "beschreibung": "Steckverbindung muss Ladestrom oder Pumpenstrom führen"
+          },
+          {
+            "element_id": "E49",
+            "beschreibung": "Hydraulikanschluss nur bei Nutzung der Zugfahrzeughydraulik"
+          }
+        ],
+        "absatz_ids": [
+          "P17",
+          "P18",
+          "P19"
+        ]
+      },
+      {
+        "id": "V5",
+        "element_id": "E33",
+        "bezeichnung": "Kipprichtung",
+        "alternativen": [
+          "Rückwärtskipper",
+          "Dreiseitenkipper"
+        ],
+        "auswahlkriterien": [
+          "Abladesituation auf der Baustelle",
+          "Standsicherheit beim Kippen",
+          "Bedienaufwand und Kosten"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E31",
+            "beschreibung": "beim Dreiseitenkipper alle Bordwände außer der Vorderwand beweglich"
+          },
+          {
+            "element_id": "E36",
+            "beschreibung": "Brückenstecker zur Wahl der Kipplager nur beim Dreiseitenkipper"
+          },
+          {
+            "element_id": "E56",
+            "beschreibung": "Leuchten außerhalb aller Schwenkbereiche anzuordnen"
+          }
+        ],
+        "absatz_ids": [
+          "P13",
+          "P16",
+          "P22"
+        ]
+      },
+      {
+        "id": "V6",
+        "element_id": "E2",
+        "bezeichnung": "Geschwindigkeitsauslegung",
+        "alternativen": [
+          "langsam laufendes Fahrgestell mit Geschwindigkeitsschild",
+          "Schnellläufer für den allgemeinen Straßenverkehr"
+        ],
+        "auswahlkriterien": [
+          "Transportentfernungen",
+          "Zulassungsfreiheit",
+          "Kosten des Fahrgestells"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E9",
+            "beschreibung": "Schnellläufer verlangt gefederte und gedämpfte Achsen"
+          },
+          {
+            "element_id": "E14",
+            "beschreibung": "Bremsanforderungen steigen mit der Höchstgeschwindigkeit"
+          },
+          {
+            "element_id": "E60",
+            "beschreibung": "Geschwindigkeitsschilder beim langsam laufenden Anhänger"
+          }
+        ],
+        "absatz_ids": [
+          "P7",
+          "P15",
+          "P21"
+        ]
+      }
+    ],
+    "klaerungsfragen": [
+      {
+        "id": "K1",
+        "frage": "Soll der Bauanhänger als Starrdeichselanhänger mit Einzel- oder Tandemachse oder als Gelenkdeichselanhänger mit Drehschemel ausgeführt werden?",
+        "element_ids": [
+          "E2",
+          "E11"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Lenksystem, Stützeinrichtung und Stützlastanforderung an die Zugfahrzeuge ab.",
+        "variante_ids": [
+          "V1"
+        ]
+      },
+      {
+        "id": "K2",
+        "frage": "Wird der Anhänger nur langsam für kurze Standortwechsel bewegt oder soll er mit normaler Lkw- oder Pkw-Geschwindigkeit über weite Strecken fahren?",
+        "element_ids": [
+          "E2",
+          "E14"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Die Antwort entscheidet über Zulassungsfreiheit, Fahrwerksaufwand, Bremsbauart und Kennzeichnung.",
+        "variante_ids": [
+          "V6"
+        ]
+      },
+      {
+        "id": "K3",
+        "frage": "Welche engen Kurvenradien und Rangierwege muss der Zug auf Baustellen und Lagerplätzen bewältigen?",
+        "element_ids": [
+          "E11",
+          "E2"
+        ],
+        "anlass": "betrieb",
+        "relevanz": "Davon hängt ab, ob ein Drehschemel nötig ist oder eine Tandemachse mit höherem Reifenverschleiß genügt.",
+        "variante_ids": [
+          "V1"
+        ]
+      },
+      {
+        "id": "K4",
+        "frage": "Welche zulässige Gesamtmasse soll der Anhänger haben, und welche Zugfahrzeuge mit welchen Bremsanschlüssen sollen ihn ziehen?",
+        "element_ids": [
+          "E14",
+          "E5",
+          "E52"
+        ],
+        "anlass": "schnittstelle",
+        "relevanz": "Die Antwort legt fest, ob der Anhänger ungebremst, auflaufgebremst oder druckluftgebremst ausgeführt wird.",
+        "variante_ids": [
+          "V2"
+        ]
+      },
+      {
+        "id": "K5",
+        "frage": "Welche Aufbauart soll der Anhänger tragen: Transportplattform mit Auffahrrampen, Kippbrücke oder Bauwagenkabine, und soll der Aufbau wechselbar sein?",
+        "element_ids": [
+          "E28"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Kipphydraulik, Energieversorgung, Thermomanagement und Tragstruktur ab.",
+        "variante_ids": [
+          "V3"
+        ]
+      },
+      {
+        "id": "K6",
+        "frage": "In welche Richtungen muss abgekippt werden, und auf welchem Untergrund wird überwiegend gekippt?",
+        "element_ids": [
+          "E33",
+          "E28"
+        ],
+        "anlass": "betrieb",
+        "relevanz": "Die Antwort entscheidet zwischen Rückwärts- und Dreiseitenkipper und bestimmt Anforderungen an die Standsicherheit.",
+        "variante_ids": [
+          "V5"
+        ]
+      },
+      {
+        "id": "K7",
+        "frage": "Welche Baumaschinen mit welcher Masse, Spurbreite und Bodenfreiheit müssen über die Auffahrrampen verladen werden?",
+        "element_ids": [
+          "E37",
+          "E28",
+          "E3"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Ladehöhe, Rampenlänge, Ladeflächenbreite und Zurrpunkte ab.",
+        "variante_ids": [
+          "V3"
+        ]
+      },
+      {
+        "id": "K8",
+        "frage": "Soll der Kippanhänger von Hand, elektrohydraulisch oder über die Hydraulik des Zugfahrzeugs gekippt werden, und muss er auch abgekuppelt kippen können?",
+        "element_ids": [
+          "E45",
+          "E44",
+          "E41"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Die Antwort bestimmt, ob Bordnetzbatterie, Ladeeinrichtung oder Hydraulikanschluss vorzusehen sind.",
+        "variante_ids": [
+          "V4"
+        ]
+      },
+      {
+        "id": "K9",
+        "frage": "Wie viele Kippvorgänge muss die Bordnetzbatterie zwischen zwei Ladevorgängen ermöglichen?",
+        "element_ids": [
+          "E41",
+          "E42"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Batteriegröße, Ladeeinrichtung und Leitungsquerschnitt der Steckverbindung ab.",
+        "variante_ids": [
+          "V4"
+        ]
+      },
+      {
+        "id": "K10",
+        "frage": "Welche Steckverbindungen bieten die vorgesehenen Zugfahrzeuge an, und soll der Bauwagen am Standort an Baustrom angeschlossen werden?",
+        "element_ids": [
+          "E51",
+          "E52",
+          "E54"
+        ],
+        "anlass": "schnittstelle",
+        "relevanz": "Die Antwort legt Steckverbindung, Leitungssatz und Einspeiseanschluss fest."
+      },
+      {
+        "id": "K11",
+        "frage": "Wird der Anhänger abgekuppelt im öffentlichen Verkehrsraum abgestellt?",
+        "element_ids": [
+          "E55",
+          "E57"
+        ],
+        "anlass": "betrieb",
+        "relevanz": "Davon hängt ab, ob passive Kennzeichnung genügt oder zusätzliche Warn- und Absicherungseinrichtungen nötig sind."
+      },
+      {
+        "id": "K12",
+        "frage": "Wie soll der Bauwagen beheizt werden: mit Festbrennstoffofen, Gasheizung oder elektrisch über Baustrom?",
+        "element_ids": [
+          "E61",
+          "E62",
+          "E38"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Die Antwort bestimmt Rauchgasführung, Brandschutz an der Kabinenstruktur und Bedarf am Einspeiseanschluss.",
+        "variante_ids": [
+          "V3"
+        ]
+      }
+    ],
+    "anforderungsthemen": [
+      {
+        "id": "R1",
+        "element_ids": [
+          "E2",
+          "E3",
+          "E7"
+        ],
+        "thema": "Tragfähigkeit und Lastverteilung",
+        "kenngroessen": [
+          "zulässige Gesamtmasse",
+          "Achslast",
+          "Stützlast",
+          "Nutzlast"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "StVZO § 44 Stützeinrichtung und Stützlast (Deutschland)",
+            "quellen_id": "Q8",
+            "fundstelle": "Absätze 2 und 3"
+          },
+          {
+            "bezeichnung": "StVZO § 43 Einrichtungen zur Verbindung von Fahrzeugen (Deutschland)",
+            "quellen_id": "Q7",
+            "fundstelle": "Absätze 1 und 4"
+          }
+        ]
+      },
+      {
+        "id": "R2",
+        "element_ids": [
+          "E1",
+          "E2"
+        ],
+        "thema": "Fahrzeugklasse und Zulassung",
+        "kenngroessen": [
+          "Höchstmasse",
+          "bauartbedingte Höchstgeschwindigkeit",
+          "Zulassungsstatus"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "Verordnung (EU) 2018/858, Artikel 4, Fahrzeugklasse O (EU)",
+            "quellen_id": "Q12",
+            "fundstelle": "Article 4 Absatz 1 Buchstabe d"
+          },
+          {
+            "bezeichnung": "FZV § 3 Notwendigkeit einer Zulassung, fahrbare Baubuden (Deutschland)",
+            "quellen_id": "Q11",
+            "fundstelle": "Absatz 3 Satz 1 Nummer 2 Buchstabe c und Satz 2"
+          }
+        ]
+      },
+      {
+        "id": "R3",
+        "element_ids": [
+          "E11"
+        ],
+        "thema": "Kurvenlauf und Spurtreue",
+        "kenngroessen": [
+          "Wendekreis",
+          "Lenkeinschlag des Drehschemels",
+          "Reifenverschleiß"
+        ]
+      },
+      {
+        "id": "R4",
+        "element_ids": [
+          "E14"
+        ],
+        "thema": "Bremswirkung und Abreißsicherung",
+        "kenngroessen": [
+          "mittlere Vollverzögerung",
+          "Feststellwirkung an Steigung und Gefälle",
+          "Ansprechverhalten bei Trennung vom Zugfahrzeug"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "StVZO § 41 Bremsen und Unterlegkeile (Deutschland)",
+            "quellen_id": "Q6",
+            "fundstelle": "Absätze 9, 10 und 14"
+          }
+        ]
+      },
+      {
+        "id": "R5",
+        "element_ids": [
+          "E28",
+          "E33"
+        ],
+        "thema": "Kippen und Standsicherheit",
+        "kenngroessen": [
+          "Kippwinkel",
+          "Standsicherheit beim Kippen",
+          "Ladevolumen"
+        ]
+      },
+      {
+        "id": "R6",
+        "element_ids": [
+          "E28",
+          "E29",
+          "E37"
+        ],
+        "thema": "Verladen und Ladungssicherung",
+        "kenngroessen": [
+          "Ladehöhe",
+          "Rampenwinkel",
+          "Zurrkraft je Zurrpunkt",
+          "Ladeflächenmaße"
+        ]
+      },
+      {
+        "id": "R7",
+        "element_ids": [
+          "E41"
+        ],
+        "thema": "Energiereserve für das Kippen",
+        "kenngroessen": [
+          "Batteriekapazität",
+          "Kippvorgänge je Ladung",
+          "Ladezeit"
+        ]
+      },
+      {
+        "id": "R8",
+        "element_ids": [
+          "E44",
+          "E45"
+        ],
+        "thema": "Kipphydraulik",
+        "kenngroessen": [
+          "Hubzeit",
+          "Betriebsdruck",
+          "Dichtheit der Schlauchleitungen"
+        ]
+      },
+      {
+        "id": "R9",
+        "element_ids": [
+          "E51"
+        ],
+        "thema": "Elektrische Schnittstelle zum Zugfahrzeug",
+        "kenngroessen": [
+          "Polzahl der Steckverbindung",
+          "Strombelastbarkeit",
+          "Schutzart"
+        ]
+      },
+      {
+        "id": "R10",
+        "element_ids": [
+          "E55",
+          "E57"
+        ],
+        "thema": "Erkennbarkeit und Kennzeichnung",
+        "kenngroessen": [
+          "Anbauhöhe der Leuchten",
+          "Anzahl und Größe der Rückstrahler",
+          "angezeigte Höchstgeschwindigkeit"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "StVZO § 53 Schlussleuchten, Bremsleuchten, Rückstrahler (Deutschland)",
+            "quellen_id": "Q9",
+            "fundstelle": "Absätze 1, 2 und 4"
+          },
+          {
+            "bezeichnung": "StVZO § 58 Geschwindigkeitsschilder (Deutschland)",
+            "quellen_id": "Q10",
+            "fundstelle": "Absätze 3 und 5"
+          }
+        ]
+      },
+      {
+        "id": "R11",
+        "element_ids": [
+          "E61"
+        ],
+        "thema": "Beheizung und Brandschutz des Bauwagens",
+        "kenngroessen": [
+          "Heizleistung",
+          "Oberflächentemperatur an Durchführungen",
+          "Rauchgasabführung"
+        ]
+      }
+    ]
+  },
+  "offene_punkte": [
+    "Glossarvorschlag: Ladung entladen (ausgeführt von Kippeinrichtung und Kippzylinder; Abkippen der Ladung, Gegenstück zu „Ladung aufnehmen“; bereits in A-0058 vorgeschlagen).",
+    "Glossarvorschlag: Ladung sichern (ausgeführt von Zurrpunkten und Bordwänden; bereits in A-0055 vorgeschlagen).",
+    "Glossarvorschlag: Fahrzeug kenntlich machen (ausgeführt von der passiven Kennzeichnung aus Rückstrahlern, Heckmarkierungstafeln und Geschwindigkeitsschildern; bereits in A-0055 vorgeschlagen).",
+    "Zuordnung: Die Anhängevorrichtung der Zuordnungsliste (aufbau_nutzlast) gehört zum Zugfahrzeug und liegt außerhalb der Systemgrenze; die anhängerseitige Zugeinrichtung steht unter Fahrzeugstruktur und Fahrwerk. Das Ofenrohr des Bauwagens ist keine Abgasanlage eines Antriebs und steht deshalb unter Thermomanagement statt unter antrieb.",
+    "Zuordnung: Die Funktion „Fahrereingaben erfassen“ ist der Kippsteuerung zugeordnet; die führende Person ist hier der Bediener des Kippvorgangs außerhalb eines Bedienraums.",
+    "Recherche: Elektrohydraulische Kippantriebe an Pkw- und Lkw-Kippanhängern mit Anhängerbatterie und Ladeleitung (Suchbegriffe „Kippanhänger E-Pumpe Batterie Ladeleitung“, „Rückwärtskipper Handpumpe Notbetätigung“), um P17 und P19 zu belegen.",
+    "Recherche: Standsicherheit von Kippanhängern beim Abkippen (DIN 70073 gilt laut DGUV Information 214-023 für Kippsattel mit Hinterkipper-Muldenaufbau; Übertragbarkeit auf Deichsel- und Zentralachskipper prüfen).",
+    "Recherche: Steckverbindungen zwischen Zugfahrzeug und Anhänger (ISO 1724, ISO 11446, ISO 7638 für die Bremsensteckverbindung) und Pflicht zu Fahrtrichtungsanzeigern am Anhänger (StVZO § 54 bzw. UN-Regelung Nr. 48), um P20 und P22 zu belegen.",
+    "Recherche: Heizung, Brandschutz und Elektroinstallation moderner Bauwagen (Suchbegriffe „Baustellenwagen Heizung Gas Brandschutz“, „Bauwagen Baustromanschluss“, BG BAU Baustelleneinrichtung), um P20 und P24 zu belegen.",
+    "Recherche: Fachliteratur zu Anhängern, etwa M. Hilgers, Nutzfahrzeugtechnik: Einsatzoptimierte Fahrzeuge, Aufbauten und Anhänger (Springer Vieweg), für Fahrgestell-, Kipp- und Tiefladebauarten von Bauanhängern.",
+    "Recherche: Wikipedia-Artikel „Kipper (Fahrzeug)“, „Zentralachsanhänger“ und „Baumaschinenanhänger“ waren in diesem Lauf wegen Ratenbegrenzung der Wikimedia-Server bzw. fehlender Artikel nicht abrufbar."
+  ]
+}

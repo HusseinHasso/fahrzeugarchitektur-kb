@@ -175,7 +175,7 @@
         },
         {
           "absatz_id": "P4",
-          "text": "Der Rahmen nimmt den Aufbau auf und leitet Eigen- und Ladungsgewicht in das Fahrwerk aus Achse, Federung sowie Rädern und Reifen. Die Zugeinrichtung aus Deichsel, Zugöse und Stützeinrichtung leitet Zug- und Bremskräfte zwischen Traktor und Rahmen; beim Starrdeichselanhänger trägt sie zusätzlich die Stützlast, und die Stützeinrichtung hält die abgekuppelte Deichsel. Beim Drehschemelanhänger verbindet der Drehschemel des Lenksystems Deichsel und Vorderachse. Breite und Fülldruck der Bereifung bestimmen Tragfähigkeit, Bodenschonung und Fahrzeugbreite.",
+          "text": "Der Rahmen nimmt den Aufbau auf und leitet Eigen- und Ladungsgewicht in das Fahrwerk aus Achse, Federung sowie Rädern und Reifen. Die Zugeinrichtung aus Deichsel, Zugöse und Stützeinrichtung leitet Zug- und Bremskräfte zwischen Traktor und Rahmen; beim Starrdeichselanhänger trägt sie zusätzlich die Stützlast, und die Stützeinrichtung hält die abgekuppelte Deichsel. Beim Drehschemelanhänger verbindet der Drehschemel des Lenksystems Deichsel und Vorderachse; beim Starrdeichselanhänger kann eine Lenkachse als Teil des Fahrwerks hinzukommen. Breite und Fülldruck der Bereifung bestimmen Tragfähigkeit, Bodenschonung und Fahrzeugbreite.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -260,7 +260,7 @@
         },
         {
           "absatz_id": "P8",
-          "text": "Das Lenksystem hat keinen eigenen Sollwertgeber: Der Lenkimpuls entsteht aus dem Winkel zwischen Traktor und Anhänger und wird über die Deichsel eingeleitet. Beim Starrdeichselanhänger mit Tandem- oder Tridemachse kann eine Lenkachse mit Achsschenkeln den Reifenabrieb mindern. Sie läuft frei nach oder wird als Zwangslenkung über einen Lenkzylinder an den Knickwinkel zum Traktor gekoppelt; dann braucht sie eine hydraulische Verbindung zur Zugeinrichtung und eine Sperre für die Rückwärtsfahrt.",
+          "text": "Das Lenksystem hat keinen eigenen Sollwertgeber: Der Lenkimpuls entsteht aus dem Winkel zwischen Traktor und Anhänger und wird über die Deichsel eingeleitet. Beim Starrdeichselanhänger mit Tandem- oder Tridemachse kann eine Lenkachse mit Achsschenkeln den Reifenabrieb mindern; sie gehört als Achse zum Fahrwerk, das Lenksystem steuert nur ihren Einschlag. Sie läuft frei nach oder wird als Zwangslenkung über einen Lenkzylinder an den Knickwinkel zum Traktor gekoppelt; dann braucht sie eine hydraulische Verbindung zur Zugeinrichtung und eine Sperre für die Rückwärtsfahrt.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -269,7 +269,7 @@
               "P7",
               "Funktionsprinzip: Ein gezogenes Fahrzeug folgt der Bahn des Zugfahrzeugs über die Kopplung"
             ],
-            "schluss": "Die Lenkung des Anhängers wird aus der Kopplung zum Traktor gesteuert; Lenkachsen sind eine Variante der Starrdeichselbauart."
+            "schluss": "Die Lenkung des Anhängers wird aus der Kopplung zum Traktor gesteuert; Lenkachsen sind eine Fahrwerksvariante der Starrdeichselbauart, deren Einschlag das Lenksystem vorgibt."
           },
           "sicherheit": "gering",
           "aussagetyp": "variante",
@@ -908,8 +908,9 @@
         "id": "E20",
         "name": "Lenkachse",
         "typ": "komponente",
-        "eltern_id": "E18",
+        "eltern_id": "E8",
         "absatz_ids": [
+          "P4",
           "P8",
           "P27"
         ]
@@ -2297,6 +2298,17 @@
           "P13",
           "P26"
         ]
+      },
+      {
+        "id": "S47",
+        "von": "E21",
+        "nach": "E20",
+        "art": "mechanisch",
+        "medium": "Lenkkraft",
+        "absatz_ids": [
+          "P8"
+        ],
+        "schnittstelle": "Lenkzylinderanlenkung an der Lenkachse"
       }
     ],
     "entfallene_kategorien": [
@@ -2331,7 +2343,11 @@
         "auswirkungen": [
           {
             "element_id": "E18",
-            "beschreibung": "Drehschemel beim Drehschemelanhänger, Lenkachse oder keine Lenkung beim Starrdeichselanhänger."
+            "beschreibung": "Drehschemel beim Drehschemelanhänger, Lenkzylinder für eine zwangsgelenkte Lenkachse oder keine Lenkung beim Starrdeichselanhänger."
+          },
+          {
+            "element_id": "E8",
+            "beschreibung": "Starre Achsen oder zusätzlich eine nachlaufende oder zwangsgelenkte Lenkachse beim Starrdeichselanhänger."
           },
           {
             "element_id": "E5",
@@ -2590,6 +2606,7 @@
         "frage": "Muss der Anhänger auf engen Hofflächen oder reifenschonend auf Grünland wenden, sodass eine Nachlauf- oder Zwangslenkung nötig ist?",
         "element_ids": [
           "E18",
+          "E8",
           "E20",
           "E21"
         ],
@@ -2784,7 +2801,8 @@
       {
         "id": "R4",
         "element_ids": [
-          "E18"
+          "E18",
+          "E20"
         ],
         "thema": "Wendigkeit und Spurtreue",
         "kenngroessen": [

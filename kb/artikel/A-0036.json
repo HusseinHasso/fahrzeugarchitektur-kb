@@ -211,16 +211,18 @@
         },
         {
           "absatz_id": "P6",
-          "text": "Generisch gliedert sich Fahrzeugstruktur und Fahrwerk in den Wagenkasten mit Türen, Kupplung und Notausstieg und in das Fahrwerk aus Fahrwerksrahmen, Tragrad, Führungsrad, Stabilisierungsrad, Federung und Aushebesicherung. Die Last geht vom Wagenkasten über Federung und Fahrwerksrahmen auf das Tragrad und in den Balken; Querkräfte leiten Führungsrad und Stabilisierungsrad formschlüssig ab. Bei der Hängebahn ersetzt die pendelnde Aufhängung das Stabilisierungsrad. Weil der Fahrweg führt, entfällt eine Lenkung; weil das Fahrzeug hoch fährt, braucht es einen Notausstieg.",
+          "text": "Generisch gliedert sich Fahrzeugstruktur und Fahrwerk in den Wagenkasten mit Türen, Kupplung und Notausstieg und das Fahrwerk aus Fahrwerksrahmen, Tragrad, Führungsrad, Stabilisierungsrad, Federung und Aushebesicherung. Die Last geht über Federung und Fahrwerksrahmen auf das Tragrad und in den Balken; Querkräfte nehmen Führungs- und Stabilisierungsrad formschlüssig auf. Bei Hängebahnen ersetzt die pendelnde Aufhängung das Stabilisierungsrad, eine Pendeldämpfung aus Pendeldämpfern und Pendelbegrenzern beruhigt den Wagen beim Halt; in der Bauart Langen entfällt auch das Führungsrad, das Stahlrad mit Doppelspurkranz trägt und führt, der Aufhängebügel wirkt als Aushebesicherung. Eine Lenkung entfällt. Den Notausstieg bestimmt das Evakuierungskonzept: Übertritt über Stirntüren in ein Bergungsfahrzeug, Fluchtsteg oder Rettungsgerät von unten.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "P4",
               "P5",
-              "P1: Tragen und Führen über denselben Balken"
+              "P1: Tragen und Führen über denselben Balken",
+              "Q1: Bauart Langen mit Stahlrädern mit Doppelspurkranz auf einer Schiene; Schwerkraftstabilisierung nur bei ausreichender Dämpfung gegen Pendeln (Abschnitte Hängende Bauarten und Stabilisierung gegen Umkippen)",
+              "Q5: Pendelbegrenzer als Nocken am Aufhängebügel in den Stationen, Pendeldämpfer bei einer früheren Baureihe (Abschnitt Pendelproblematik); Evakuierung auf freier Strecke durch die Feuerwehr mit Drehleiter oder Rettungsgerät vom Revisionssteg (Abschnitt Evakuierung)"
             ],
-            "schluss": "Die generische Struktur folgt aus Lastpfad und Formschluss am Balken; Sattel- und Hängebahn unterscheiden sich in der Querabstützung."
+            "schluss": "Die generische Struktur folgt aus Lastpfad und Formschluss am Balken; Sattel- und Hängebahn unterscheiden sich in Querabstützung, Führung und Pendeldämpfung, das Evakuierungskonzept bestimmt den Notausstieg."
           },
           "sicherheit": "mittel",
           "herangezogene_artikel_ids": []
@@ -276,18 +278,19 @@
         },
         {
           "absatz_id": "P9",
-          "text": "Generisch besteht das Antriebssystem je angetriebenem Fahrwerk aus Traktionsstromrichter, Traktionsmaschine und Getriebe. Der Traktionsstromrichter stellt aus der Fahrspannung Spannung und Frequenz für die Traktionsmaschine ein; das Getriebe übersetzt deren Drehmoment auf das Tragrad, das die Zugkraft über Reibschluss in den Fahrbalken leitet. Beim elektrischen Bremsen kehrt sich der Leistungsfluss um. Mit Linearmotor entfallen Getriebe und Reibschluss: Der Stator am Fahrzeug wirkt auf eine Reaktionsschiene am Fahrweg, und das Tragrad trägt nur noch.",
+          "text": "Generisch besteht das Antriebssystem aus Traktionsstromrichter, Traktionsmaschine und Getriebe; die Zuordnung der Stromrichter zu Fahrwerk oder Wagen ist eine Auslegungsentscheidung. Der Traktionsstromrichter stellt Spannung und Frequenz ein, das Getriebe übersetzt das Drehmoment der Traktionsmaschine auf das Tragrad, das die Zugkraft per Reibschluss in den Balken leitet; beim elektrischen Bremsen kehrt sich der Leistungsfluss um. Mit Linearmotor entfallen Getriebe und Reibschluss: Der Stator wirkt auf eine Reaktionsschiene am Fahrweg, das Tragrad trägt nur noch.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "P8",
               "Eine drehzahlvariable Drehstrommaschine braucht einen Stromrichter zwischen Fahrspannung und Maschine.",
-              "Ein Linearmotor erzeugt die Vortriebskraft berührungslos zwischen Fahrzeug und Fahrweg."
+              "Ein Linearmotor erzeugt die Vortriebskraft berührungslos zwischen Fahrzeug und Fahrweg.",
+              "Q5: frühe Wuppertaler Wagen mit Walzenfahrschalter und Reihenschlussmotoren ohne Stromrichter (Abschnitt Wagen, Drehgestelle und Motoren)"
             ],
-            "schluss": "Stromrichter, Maschine und Getriebe bilden die Antriebskette; der Linearmotor ersetzt Getriebe und Radantrieb."
+            "schluss": "Stromrichter, Maschine und Getriebe bilden die Antriebskette drehzahlvariabler Antriebe; ihre Zuordnung zu Fahrwerk oder Wagen ist eine Auslegungsentscheidung, der Linearmotor ersetzt Getriebe und Radantrieb."
           },
-          "sicherheit": "hoch",
+          "sicherheit": "mittel",
           "herangezogene_artikel_ids": []
         }
       ]
@@ -347,12 +350,12 @@
       "absaetze": [
         {
           "absatz_id": "P12",
-          "text": "Nach der BOStrab, die in Deutschland für Straßenbahnen einschließlich der unabhängigen Bahnen gilt, müssen Fahrzeuge mindestens zwei voneinander unabhängige Bremsen haben, deren Wirkung auch bei Ausfall der Fahrleitungsspannung gesichert ist. Eine Bremse muss das stillstehende Fahrzeug mit Nutzlast auf der größten Neigung halten, nach dem Federspeicherprinzip wirken und ihre Kraft rein mechanisch erzeugen. Personenfahrzeuge brauchen eine Fahrgast-Notbremsung. Die Wuppertaler Schwebebahn hat keine Sandstreueinrichtung.",
+          "text": "Nach der in Deutschland geltenden BOStrab brauchen Fahrzeuge mindestens zwei voneinander unabhängige Bremsen, die auch bei Ausfall der Fahrleitungsspannung wirken. Eine davon muss das Fahrzeug mit Nutzlast auf der größten Neigung halten und ihre Kraft rein mechanisch nach dem Federspeicherprinzip erzeugen. Die Fahrgast-Notbremsung in Personenfahrzeugen darf auf Strecken ohne Sicherheitsraum außerhalb von Haltestellen nicht zum Halten führen. Ohne Fahrzeugführer muss das Fahrzeug bei Entgleisung selbsttätig bis zum Stillstand bremsen. In Wuppertal fehlt eine Sandstreueinrichtung.",
           "begruendung": "belegt",
           "belege": [
             {
               "quellen_id": "Q9",
-              "fundstelle": "§ 36 Abs. 1, Abs. 5 und Abs. 10 BOStrab"
+              "fundstelle": "§ 36 Abs. 1, Abs. 5, Abs. 10 und Abs. 11 BOStrab"
             },
             {
               "quellen_id": "Q8",
@@ -516,16 +519,18 @@
         },
         {
           "absatz_id": "P20",
-          "text": "Generisch umfasst Fahrzeugsteuerung und Information das Fahrzeugmanagement, die Türsteuerung und die Diagnose. Das Fahrzeugmanagement setzt Befehle aus Führerstand oder automatischer Fahrsteuerung in Sollwerte für Traktionsstromrichter und Bremsregelung um und koordiniert die Hilfsbetriebe. Die Türsteuerung verknüpft Türfreigabe, Verriegelung und Fahrfreigabe, so dass das Fahrzeug nur mit geschlossenen Türen anfährt. Die Diagnose sammelt Fehlermeldungen und zeichnet Betriebsdaten für Werkstatt und Leitstelle auf.",
+          "text": "Generisch umfasst Fahrzeugsteuerung und Information Fahrzeugmanagement, Türsteuerung, Diagnose und Fahrgastinformation. Das Fahrzeugmanagement setzt Befehle aus Führerstand oder automatischer Fahrsteuerung in Sollwerte für Traktionsstromrichter und Bremsregelung um und koordiniert die Hilfsbetriebe. Die Türsteuerung gibt die Fahrt nur bei geschlossenen, verriegelten Türen frei. Die Diagnose zeichnet Fehler und Betriebsdaten für Werkstatt und Leitstelle auf. Die Fahrgastinformation gibt Meldungen des Fahrzeugmanagements als Anzeigen und Ansagen aus; ihre Notsprechstelle verbindet über den Fahrzeugfunk mit der Leitstelle.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "P19",
               "P15",
-              "P9"
+              "P9",
+              "P14",
+              "Ohne Fahrpersonal ist die Notsprechstelle die einzige Verbindung der Fahrgäste zur Leitstelle."
             ],
-            "schluss": "Fahrzeugmanagement, Türsteuerung mit Fahrfreigabe und Diagnose mit Datenaufzeichnung bilden das Hauptsystem."
+            "schluss": "Fahrzeugmanagement, Türsteuerung mit Fahrfreigabe, Diagnose mit Datenaufzeichnung und Fahrgastinformation mit Notsprechstelle bilden das Hauptsystem."
           },
           "sicherheit": "mittel",
           "herangezogene_artikel_ids": []
@@ -572,6 +577,23 @@
           },
           "sicherheit": "mittel",
           "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P32",
+          "text": "Gummibereifte Sattel- und Kastenträgerbahnen brauchen eine Rückfallebene für Reifenschäden: Ein Notlaufrad trägt bei Druckverlust des Tragrads, eine Reifendrucküberwachung meldet ihn an die Diagnose. Bei Stahlrädern entfallen beide.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P4",
+              "P5",
+              "Ein Druckverlust am Tragreifen senkt das Fahrzeug ab und gefährdet Lichtraum und Führung am Balken."
+            ],
+            "schluss": "Gummibereifte Fahrwerke brauchen ein Notlaufrad und eine Reifendrucküberwachung; Stahlradfahrwerke nicht."
+          },
+          "sicherheit": "gering",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": []
         }
       ]
     },
@@ -582,19 +604,23 @@
       "absaetze": [
         {
           "absatz_id": "P23",
-          "text": "Beim Zusammenstoß in Walt Disney World waren die Fenster des Zuges beschlagen und die Umgebung des Weichenbalkens schwach beleuchtet; nach dem Bericht verschlechterte das die Sicht des Fahrers auf den Fahrweg, und er erkannte nicht, dass er auf dem falschen Balken fuhr.",
+          "text": "Beim Zusammenstoß in Walt Disney World verschlechterten nach dem Bericht beschlagene Fenster und die schwache Beleuchtung am Weichenbalken die Sicht des Fahrers; er erkannte nicht, dass er auf dem falschen Balken fuhr. Die Wuppertaler Schwebebahnwagen haben keinen Frontscheinwerfer; seit der Baureihe 14 zeigen Streifen weißer und roter Leuchtdioden Spitzen- und Schlusssignal.",
           "begruendung": "belegt",
           "belege": [
             {
               "quellen_id": "Q4",
               "fundstelle": "Abschnitt Performance of the Operator of the Pink Monorail"
+            },
+            {
+              "quellen_id": "Q5",
+              "fundstelle": "Abschnitt Wagen, Allgemeine Beschreibung (Frontscheinwerfer, Spitzen- und Schlusssignal)"
             }
           ],
           "herangezogene_artikel_ids": []
         },
         {
           "absatz_id": "P24",
-          "text": "Beleuchtung und Sicht umfasst Scheinwerfer, Leuchten und den Scheibenwischer der Frontscheibe. Scheinwerfer leuchten Fahrbalken und Weichenbereiche aus; Leuchten geben Spitzen- und Schlusssignal ab und dienen als Innen- und Notbeleuchtung. Bei Zweirichtungsfahrzeugen wechseln Spitzen- und Schlusssignal mit der Fahrtrichtung, bei Einrichtungsfahrzeugen sind sie fest zugeordnet. Scheibenwischer und Heiz- und Klimaanlage halten die Frontscheibe klar.",
+          "text": "Beleuchtung und Sicht umfasst Scheinwerfer, Leuchten und den Scheibenwischer der Frontscheibe. Scheinwerfer, die nicht jede Bauart hat, leuchten Fahrbalken und Weichen aus; Leuchten geben Spitzen- und Schlusssignal ab, bei Zweirichtungsfahrzeugen mit der Fahrtrichtung wechselnd, und dienen als Innen- und Notbeleuchtung. Scheibenwischer und Heiz- und Klimaanlage halten die Frontscheibe klar.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -603,7 +629,7 @@
               "P14",
               "Ein Fahrer kann nur erkennen, was beleuchtet und durch eine klare Scheibe sichtbar ist."
             ],
-            "schluss": "Ausleuchtung, Signalgabe und klare Frontscheibe sind für die Sicht auf Fahrbalken und Weichen nötig."
+            "schluss": "Ausleuchtung, Signalgabe und klare Frontscheibe sind für die Sicht auf Fahrbalken und Weichen nötig; Scheinwerfer sind bauartabhängig, das Spitzensignal kann auch ein Leuchtstreifen geben."
           },
           "sicherheit": "gering",
           "herangezogene_artikel_ids": []
@@ -617,7 +643,7 @@
       "absaetze": [
         {
           "absatz_id": "P25",
-          "text": "Das Thermomanagement umfasst die Heiz- und Klimaanlage für Fahrgastraum und Führerstand sowie den Kühlkreislauf für Traktionsstromrichter und Traktionsmaschine. Der Kühlkreislauf führt deren Verlustwärme an die Umgebung ab; die Heiz- und Klimaanlage bezieht Energie vom Hilfsbetriebeumrichter und hält die Frontscheibe beschlagfrei. Bei Hängebahnen belegt die Aufhängung die Dachmitte, so dass Klimageräte seitlich oder im Wagenkasten liegen. Mit Linearmotor kommt die Kühlung des Stators hinzu.",
+          "text": "Das Thermomanagement umfasst die Heiz- und Klimaanlage für Fahrgastraum und Führerstand, gespeist vom Hilfsbetriebeumrichter, und den Kühlkreislauf, der die Verlustwärme von Traktionsstromrichter und Traktionsmaschine abführt; mit Linearmotor kommt die Statorkühlung hinzu. Bei Hängebahnen verhindert der Lichtraum Unterflureinbauten, und auf dem Dach erschwert der darüberliegende Fahrweg die Instandhaltung; Klimageräte liegen daher im Wagenkasten oder als Dachaufbauten neben der Aufhängung.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -626,6 +652,7 @@
               "P11",
               "P23",
               "P5",
+              "Q5: Lichtraum erlaubt keine Einbauten unter dem Wagenboden, Instandhaltung auf dem Dach durch das Gerüst erschwert, elektrische Komponenten weitgehend im Wagen, Dachaufbauten für die Temperatursteuerung der jüngsten Baureihe (Abschnitt Wagen, Allgemeine Beschreibung)",
               "Elektrische Wandler erzeugen Verlustwärme, die abgeführt werden muss."
             ],
             "schluss": "Klimatisierung und Antriebskühlung sind nötig; ihre Anordnung hängt von Bauart und Antrieb ab."
@@ -759,7 +786,7 @@
       "absaetze": [
         {
           "absatz_id": "P31",
-          "text": "Funktional gilt: Fahrzeuglasten tragen Wagenkasten, Fahrwerksrahmen, Tragrad und Federung; Fahrzeug am Fahrweg führen Führungsrad, Stabilisierungsrad und Aushebesicherung; Antriebsleistung erzeugen Traktionsstromrichter und Traktionsmaschine; Drehmoment übertragen das Getriebe; Fahrzeug fortbewegen das Antriebssystem mit Tragrad; Elektrische Energie verteilen Stromabnahme, Hilfsbetriebeversorgung, Niedervolt-Bordnetz und Stromverteiler; Energie speichern Bordnetzbatterie und Druckluftbehälter; Fahrzeug verzögern Bremsregelung und Betriebsbremse; Bremsenergie zurückgewinnen Traktionsmaschine und Traktionsstromrichter; Fahrzeug festhalten die Feststellbremse; Fahrereingaben erfassen Bedienelemente; Fahrerinformationen anzeigen Anzeigeelemente; Ladung aufnehmen Fahrgastbestuhlung, Haltestangen und Mehrzweckfläche; Daten übertragen Fahrzeugbus und Fahrzeugfunk; Fahrzeugzustand überwachen Diagnose und Fahrzeugmanagement; Schiebetür betätigen Türsteuerung und Türen; Fahrzeugposition bestimmen die Ortungseinrichtung; Fahrgeschwindigkeit überwachen das Fahrzeuggerät der Zugbeeinflussung; Zugfahrt automatisch steuern die Automatische Fahrsteuerung; Insassen schützen Aushebesicherung, Notausstieg und Fahrersitz; Fahrzeugumgebung ausleuchten Scheinwerfer; Lichtsignale abgeben Leuchten; Fahrersicht sicherstellen Scheibenwischer; Betriebstemperatur regeln der Kühlkreislauf; Innenraum klimatisieren die Heiz- und Klimaanlage; Druckluft bereitstellen Kompressor für Druckluft, Luftaufbereitung und Druckluftbehälter.",
+          "text": "Fahrzeuglasten tragen Wagenkasten, Fahrwerksrahmen, Tragrad, Notlaufrad und Federung; Fahrzeug am Fahrweg führen Führungsrad, Stabilisierungsrad, Aushebesicherung und Pendeldämpfung; Antriebsleistung erzeugen Traktionsstromrichter und Traktionsmaschine; Drehmoment übertragen Getriebe; Fahrzeug fortbewegen Antriebssystem mit Tragrad; Elektrische Energie verteilen Stromabnahme, Hilfsbetriebeversorgung, Niedervolt-Bordnetz und Stromverteiler; Energie speichern Bordnetzbatterie und Druckluftbehälter; Fahrzeug verzögern Bremsregelung und Betriebsbremse; Bremsenergie zurückgewinnen Traktionsmaschine und Traktionsstromrichter; Fahrzeug festhalten Feststellbremse; Fahrereingaben erfassen Bedienelemente; Fahrerinformationen anzeigen Anzeigeelemente; Ladung aufnehmen Fahrgastbestuhlung, Haltestangen und Mehrzweckfläche; Daten übertragen Fahrzeugbus und Fahrzeugfunk; Fahrzeugzustand überwachen Diagnose, Fahrzeugmanagement und Reifendrucküberwachung; Fahrgäste informieren Fahrgastinformation; Schiebetür betätigen Türsteuerung und Türen; Fahrzeugposition bestimmen Ortungseinrichtung; Fahrgeschwindigkeit überwachen Fahrzeuggerät der Zugbeeinflussung; Zugfahrt automatisch steuern Automatische Fahrsteuerung; Insassen schützen Aushebesicherung, Notausstieg und Fahrersitz; Fahrzeugumgebung ausleuchten Scheinwerfer; Lichtsignale abgeben Leuchten; Fahrersicht sicherstellen Scheibenwischer; Betriebstemperatur regeln Kühlkreislauf; Innenraum klimatisieren Heiz- und Klimaanlage; Druckluft bereitstellen Kompressor für Druckluft, Luftaufbereitung und Druckluftbehälter.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -775,7 +802,8 @@
               "P22",
               "P24",
               "P25",
-              "P27"
+              "P27",
+              "P32"
             ],
             "schluss": "Jede Funktion des Modellblocks ist einem ausführenden Element zugeordnet."
           },
@@ -919,6 +947,24 @@
         "absatz_ids": [
           "P5",
           "P6"
+        ]
+      },
+      {
+        "id": "E63",
+        "name": "Pendeldämpfung",
+        "typ": "komponente",
+        "eltern_id": "E7",
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "E64",
+        "name": "Notlaufrad",
+        "typ": "komponente",
+        "eltern_id": "E7",
+        "absatz_ids": [
+          "P32"
         ]
       },
       {
@@ -1220,6 +1266,15 @@
         ]
       },
       {
+        "id": "E66",
+        "name": "Fahrgastinformation",
+        "typ": "komponente",
+        "eltern_id": "E41",
+        "absatz_ids": [
+          "P20"
+        ]
+      },
+      {
         "id": "E45",
         "name": "Fahrerassistenz und Sicherheit",
         "typ": "hauptsystem",
@@ -1290,6 +1345,15 @@
         ]
       },
       {
+        "id": "E65",
+        "name": "Reifendrucküberwachung",
+        "typ": "komponente",
+        "eltern_id": "E45",
+        "absatz_ids": [
+          "P32"
+        ]
+      },
+      {
         "id": "E52",
         "name": "Beleuchtung und Sicht",
         "typ": "hauptsystem",
@@ -1306,6 +1370,7 @@
         "typ": "komponente",
         "eltern_id": "E52",
         "absatz_ids": [
+          "P23",
           "P24"
         ]
       },
@@ -1403,10 +1468,12 @@
           "E3",
           "E8",
           "E9",
-          "E12"
+          "E12",
+          "E64"
         ],
         "absatz_ids": [
           "P6",
+          "P32",
           "P31"
         ]
       },
@@ -1416,7 +1483,8 @@
         "ausgefuehrt_von": [
           "E10",
           "E11",
-          "E13"
+          "E13",
+          "E63"
         ],
         "absatz_ids": [
           "P6",
@@ -1576,10 +1644,12 @@
         "name": "Fahrzeugzustand überwachen",
         "ausgefuehrt_von": [
           "E44",
-          "E42"
+          "E42",
+          "E65"
         ],
         "absatz_ids": [
           "P20",
+          "P32",
           "P31"
         ]
       },
@@ -1707,6 +1777,17 @@
         ],
         "absatz_ids": [
           "P27",
+          "P31"
+        ]
+      },
+      {
+        "id": "F27",
+        "name": "Fahrgäste informieren",
+        "ausgefuehrt_von": [
+          "E66"
+        ],
+        "absatz_ids": [
+          "P20",
           "P31"
         ]
       }
@@ -2145,6 +2226,27 @@
           "P30"
         ],
         "schnittstelle": "Bordnetz an Beleuchtung"
+      },
+      {
+        "id": "S38",
+        "von": "E42",
+        "nach": "E66",
+        "art": "information",
+        "medium": "Fahrt- und Störungsmeldungen für Anzeigen und Ansagen",
+        "absatz_ids": [
+          "P20"
+        ]
+      },
+      {
+        "id": "S39",
+        "von": "E66",
+        "nach": "E51",
+        "art": "information",
+        "medium": "Notsprechverbindung der Fahrgäste zur Leitstelle",
+        "absatz_ids": [
+          "P20"
+        ],
+        "schnittstelle": "Notsprechstelle an Fahrzeugfunk"
       }
     ],
     "entfallene_kategorien": [
@@ -2190,11 +2292,19 @@
           },
           {
             "element_id": "E57",
-            "beschreibung": "Bei Hängebahnen belegt die Aufhängung die Dachmitte; Klimageräte müssen ausweichen."
+            "beschreibung": "Bei Hängebahnen keine Unterflurgeräte; Klimageräte im Wagenkasten oder als Dachaufbau neben der Aufhängung mit erschwerter Zugänglichkeit."
           },
           {
             "element_id": "E34",
             "beschreibung": "Bei tief liegendem Boden einer Sattelbahn ragen Fahrwerke in den Fahrgastraum und begrenzen die Bestuhlung."
+          },
+          {
+            "element_id": "E10",
+            "beschreibung": "Führungsräder bei Sattelbahn und Kastenträger-Hängebahn, entfallen bei Doppelspurkranz-Hängebahn."
+          },
+          {
+            "element_id": "E63",
+            "beschreibung": "Pendeldämpfung mit Pendeldämpfern und Pendelbegrenzern nur bei Hängebahnen."
           }
         ],
         "absatz_ids": [
@@ -2347,6 +2457,10 @@
           {
             "element_id": "E54",
             "beschreibung": "Spitzen- und Schlusssignal an beiden Enden bei Zweirichtungsfahrzeugen."
+          },
+          {
+            "element_id": "E66",
+            "beschreibung": "Im fahrerlosen Betrieb ist die Fahrgastinformation mit Notsprechstelle die einzige Verbindung der Fahrgäste zur Leitstelle."
           }
         ],
         "absatz_ids": [
@@ -2426,6 +2540,43 @@
         "absatz_ids": [
           "P7",
           "P18"
+        ]
+      },
+      {
+        "id": "V8",
+        "element_id": "E6",
+        "bezeichnung": "Evakuierungskonzept",
+        "alternativen": [
+          "Übertritt über Stirntüren in ein Bergungsfahrzeug",
+          "seitlicher Ausstieg auf einen Fluchtsteg am Fahrweg",
+          "Rettung von unten mit Rettungsgerät"
+        ],
+        "auswahlkriterien": [
+          "Fahrweghöhe",
+          "Vorhandensein eines Stegs am Fahrweg",
+          "Bauart Sattel- oder Hängebahn",
+          "Betrieb mit oder ohne Fahrer"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E3",
+            "beschreibung": "Stirntüren mit Übergang nur beim Übertritt in ein Bergungsfahrzeug; seitliche Notausstiege beim Fluchtsteg."
+          },
+          {
+            "element_id": "E5",
+            "beschreibung": "Kupplung muss die Verbindung zum Bergungsfahrzeug herstellen können."
+          },
+          {
+            "element_id": "E25",
+            "beschreibung": "Notbremsüberbrückung bis zur nächsten Station vermeidet Halte auf freier Strecke."
+          },
+          {
+            "element_id": "E54",
+            "beschreibung": "Notbeleuchtung für Fahrgastraum und Ausstiege bis zum Abschluss der Evakuierung."
+          }
+        ],
+        "absatz_ids": [
+          "P6"
         ]
       }
     ],
@@ -2570,7 +2721,7 @@
       },
       {
         "id": "K13",
-        "frage": "Welche Spitzen- und Schlusssignale und welche Ausleuchtung von Fahrbalken und Weichen verlangt der Betreiber?",
+        "frage": "Sind Scheinwerfer zur Ausleuchtung von Fahrbalken und Weichen überhaupt gefordert, und welche Spitzen- und Schlusssignale und welche Ausleuchtung verlangt der Betreiber?",
         "element_ids": [
           "E52"
         ],
@@ -2595,7 +2746,22 @@
           "E6"
         ],
         "anlass": "betrieb",
-        "relevanz": "Davon hängen Lage und Bauart von Notausstieg und Türen sowie die Schnittstelle zum Fahrweg ab."
+        "relevanz": "Davon hängen Lage und Bauart von Notausstieg, Stirntüren und Kupplung, die Notbremsüberbrückung, die Notbeleuchtung und die Schnittstelle zum Fahrweg ab.",
+        "variante_ids": [
+          "V8"
+        ]
+      },
+      {
+        "id": "K16",
+        "frage": "Soll die Fahrgast-Notbremsung auf der aufgeständerten Strecke bis zur nächsten Station überbrückt werden, und wer quittiert sie im fahrerlosen Betrieb?",
+        "element_ids": [
+          "E25"
+        ],
+        "anlass": "betrieb",
+        "relevanz": "Davon hängen Bremsregelung, Anzeige an Fahrer oder Leitstelle und die Häufigkeit von Evakuierungen auf freier Strecke ab.",
+        "variante_ids": [
+          "V8"
+        ]
       }
     ],
     "anforderungsthemen": [
@@ -2631,7 +2797,9 @@
           "Spiel der Aushebesicherung",
           "Pendelwinkel",
           "Kippsicherheit",
-          "Vorspannung der Führungs- und Stabilisierungsräder"
+          "Vorspannung der Führungs- und Stabilisierungsräder",
+          "Notlaufeigenschaften",
+          "Reifendruck"
         ]
       },
       {
@@ -2670,13 +2838,15 @@
           "mittlere Bremsverzögerung",
           "Haltevermögen auf größter Neigung",
           "Unabhängigkeit der Bremsen",
-          "Fahrgast-Notbremsung"
+          "Fahrgast-Notbremsung",
+          "Notbremsüberbrückung",
+          "Selbsttätiges Abbremsen bei Entgleisung (fahrerloser Betrieb)"
         ],
         "regelwerke": [
           {
-            "bezeichnung": "BOStrab § 36 Bremsen, Abs. 1, 5 und 10 (Deutschland; Straßenbahnen einschließlich unabhängiger Bahnen besonderer Bauart nach § 4 PBefG)",
+            "bezeichnung": "BOStrab § 36 Bremsen, Abs. 1, 5, 10 und 11 (Deutschland; Straßenbahnen einschließlich unabhängiger Bahnen besonderer Bauart nach § 4 PBefG)",
             "quellen_id": "Q9",
-            "fundstelle": "§ 36 Abs. 1, Abs. 5 und Abs. 10 BOStrab"
+            "fundstelle": "§ 36 Abs. 1, Abs. 5, Abs. 10 und Abs. 11 BOStrab"
           }
         ]
       },
@@ -2799,6 +2969,20 @@
           "Zahl der Notausstiege",
           "Rettungsweg zum Fahrweg"
         ]
+      },
+      {
+        "id": "R15",
+        "element_ids": [
+          "E1",
+          "E3"
+        ],
+        "thema": "Brandschutz",
+        "kenngroessen": [
+          "Brandverhalten der Werkstoffe",
+          "Branderkennung im Fahrgastraum und an elektrischen Geräten",
+          "Restfahrfähigkeit im Brandfall",
+          "Rauchfreihaltung"
+        ]
       }
     ]
   },
@@ -2814,6 +2998,8 @@
     "Glossarvorschlag: Zugfahrt automatisch steuern (Funktion der automatischen Fahrsteuerung, wie im Artikel A-0035 vorgeschlagen).",
     "Glossarvorschlag: Hauptsystemname für die Kategorie aufbau_nutzlast bei Schienenpersonenfahrzeugen (etwa „Fahrgastbereich“); verwendet wurde „Aufbau und Ladung“, das im Glossar für Nutzfahrzeuge vorgesehen ist.",
     "Glossarvorschlag: Zuordnung der Kategorie assistenz_sicherheit bei Fahrzeugarten mit wahlweise fahrerlosem Betrieb; verwendet wurde „Fahrerassistenz und Sicherheit“, obwohl bei fahrerlosem Betrieb „Assistenz und Sicherheit“ passen würde.",
-    "Abweichung von der Zuordnungsliste: Die Fahrgastsitze stehen als „Fahrgastbestuhlung“ unter Aufbau und Ladung statt als „Sitze“ unter dem Führerstand, weil der Führerstand nur den Fahrersitz aufnimmt."
+    "Abweichung von der Zuordnungsliste: Die Fahrgastsitze stehen als „Fahrgastbestuhlung“ unter Aufbau und Ladung statt als „Sitze“ unter dem Führerstand, weil der Führerstand nur den Fahrersitz aufnimmt.",
+    "Recherche: Rückfallebene bei Reifenschäden gummibereifter Einschienenbahnen (Suchbegriffe: monorail auxiliary wheel, run-flat tyre straddle monorail) für P32 und R2.",
+    "Recherche: Brandschutz von Einschienenbahnfahrzeugen (Suchbegriffe: Brandschutz Schienenfahrzeuge EN 45545 Monorail) für R15; Regelwerk erst mit Beleg eintragen."
   ]
 }

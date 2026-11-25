@@ -3,7 +3,7 @@
   "artikel_id": "A-0022",
   "artikeltyp": "blatt",
   "titel": "E-Scooter",
-  "betrachtungsumfang": "Generische Referenzarchitektur des E-Scooters (Elektro-Tretroller, E-Stehroller) als einspuriges, zweirädriges, elektrisch angetriebenes Fahrzeug ohne Sitz mit Trittbrett und Lenkstange, für den privaten Gebrauch und für stationsunabhängige Verleihsysteme, in Deutschland als Elektrokleinstfahrzeug nach § 1 Absatz 1 der Elektrokleinstfahrzeuge-Verordnung (bauartbedingte Höchstgeschwindigkeit mehr als 6 bis 20 km/h), mit Hinweisen auf andere europäische Staaten. Antriebsart: batterieelektrisch (Energiespeicher Traktionsbatterie, Energiewandler Traktionsmaschine als Radnabenmotor); das Abstoßen mit dem Fuß wird als Leistungsfluss außerhalb der Systemgrenze behandelt. Ausdrücklich nicht betrachtet werden E-Scooter mit Sitz und Motorroller, verbrennungsmotorisch angetriebene Stehroller, Brennstoffzellen-Batterie-Hybride, selbstbalancierende Elektrokleinstfahrzeuge, drei- und vierrädrige Elektrokleinstfahrzeuge, Kinderroller ohne Straßenzulassung sowie App, Betreiberserver und Ladeinfrastruktur des Verleihs außerhalb des Fahrzeugs.",
+  "betrachtungsumfang": "Generische Referenzarchitektur des E-Scooters (Elektro-Tretroller, E-Stehroller) als einspuriges, zweirädriges, elektrisch angetriebenes Fahrzeug ohne Sitz mit Trittbrett und Lenkstange, für den privaten Gebrauch und für stationsunabhängige Verleihsysteme, in Deutschland als Elektrokleinstfahrzeug nach § 1 Absatz 1 der Elektrokleinstfahrzeuge-Verordnung (bauartbedingte Höchstgeschwindigkeit mehr als 6 bis 20 km/h), mit Hinweisen auf andere europäische Staaten. Antriebsart: batterieelektrisch (Energiespeicher Traktionsbatterie, Energiewandler Traktionsmaschine als Radnabenmotor); Antriebe mit Reibrolle, Ketten- oder Riemenuntersetzung werden nicht betrachtet; das Abstoßen mit dem Fuß wird als Leistungsfluss außerhalb der Systemgrenze behandelt. Ausdrücklich nicht betrachtet werden E-Scooter mit Sitz und Motorroller, verbrennungsmotorisch angetriebene Stehroller, Brennstoffzellen-Batterie-Hybride, selbstbalancierende Elektrokleinstfahrzeuge, drei- und vierrädrige Elektrokleinstfahrzeuge, Kinderroller ohne Straßenzulassung sowie App, Betreiberserver, externes Ladegerät und Ladeinfrastruktur des Verleihs außerhalb des Fahrzeugs.",
   "status": "in_arbeit",
   "quellenzugriff": "ja",
   "kindartikel_ids": [],
@@ -25,7 +25,7 @@
       "stand": "Fassung vom Abrufdatum (Quelltext über action=raw gelesen)",
       "url": "https://en.wikipedia.org/wiki/E-scooter",
       "abgerufen": true,
-      "abrufdatum": "2026-11-24",
+      "abrufdatum": "2026-11-25",
       "quellentyp": "nachschlagewerk"
     },
     {
@@ -65,7 +65,7 @@
       "stand": "Elektrokleinstfahrzeuge-Verordnung vom 6. Juni 2019 (BGBl. I S. 756), zuletzt geändert durch Artikel 2 der Verordnung vom 30. Januar 2026 (BGBl. 2026 I Nr. 32); Textfassung mit Wirkung vom 1. April 2026",
       "url": "https://www.buzer.de/4_eKFV.htm",
       "abgerufen": true,
-      "abrufdatum": "2026-11-24",
+      "abrufdatum": "2026-11-25",
       "quellentyp": "norm"
     },
     {
@@ -230,12 +230,12 @@
       "absaetze": [
         {
           "absatz_id": "P5",
-          "text": "Angetrieben wird ein E-Scooter von einem elektrischen Radnabenmotor im Vorder- oder Hinterrad oder in beiden; der Elektromotor macht ein Getriebe überflüssig und kann Bremsenergie zurückgewinnen. In einem untersuchten handelsüblichen E-Scooter ist es ein permanentmagneterregter bürstenloser Gleichstrommotor, dessen Rotorlage in den Stator eingebettete Hallsensoren erfassen. Ein dreiphasiger Wechselrichter mit sechs MOSFET-Schaltern legt die Gleichspannung blockweise an die Phasen; die Regler bilden die Schaltpulse aus Batteriestrom, Zwischenkreisspannung, Phasenströmen, Hallsignalen, Drehzahl und Sollgeschwindigkeit.",
+          "text": "Ein großer Teil neuerer E-Scooter wird direkt von einem elektrischen Radnabenmotor im Vorder- oder Hinterrad oder in beiden angetrieben; daneben gibt es Antriebe über eine Reibrolle am Hinterreifen sowie Ketten- oder Riemenuntersetzungen zum Hinterrad. Der Elektromotor macht ein Getriebe überflüssig und kann Bremsenergie zurückgewinnen. In einem untersuchten handelsüblichen E-Scooter ist es ein permanentmagneterregter bürstenloser Gleichstrommotor, dessen Rotorlage in den Stator eingebettete Hallsensoren erfassen. Ein dreiphasiger Wechselrichter mit sechs MOSFET-Schaltern legt die Gleichspannung blockweise an die Phasen; die Regler bilden die Schaltpulse aus Batteriestrom, Zwischenkreisspannung, Phasenströmen, Hallsignalen, Drehzahl und Sollgeschwindigkeit.",
           "begruendung": "belegt",
           "belege": [
             {
               "quellen_id": "Q2",
-              "fundstelle": "Einleitung, Absatz 1; Abschnitt „Parts and other features“, Absatz 4 (electric motor makes gears unnecessary, regenerative braking)"
+              "fundstelle": "Einleitung, Absatz 1; Abschnitt „Parts and other features“, Absatz 4 (electric motor makes gears unnecessary, regenerative braking); Abschnitt „Drive and transmissions“, Absätze 1 bis 4 (direct drive, large proportion of newer e-scooters, spindle drive, chain and belt reduction drives)"
             },
             {
               "quellen_id": "Q11",
@@ -296,19 +296,21 @@
         },
         {
           "absatz_id": "P8",
-          "text": "Das Energieversorgungssystem gliedert sich in das Batteriesystem aus Traktionsbatterie und Batteriemanagementsystem und das Subsystem Energiewandlung und Laden aus Gleichspannungswandler und Ladeeinrichtung. Ohne Verbrennungsmotor entfällt eine Starterbatterie; Licht, Anzeige und Telematik hängen ebenfalls an der Traktionsbatterie. Das Batteriemanagementsystem überwacht die Zellen, begrenzt Lade-, Entlade- und Rekuperationsströme und meldet den Ladezustand. Zur Ladeeinrichtung gehören Ladegerät und Ladebuchse, bei Wechselakkus eine externe Ladestation mit Akkuschloss am Fahrzeug; an der Lenkstange erhöht die Batterie die Lenkträgheit.",
+          "text": "Das Energieversorgungssystem gliedert sich in das Batteriesystem aus Traktionsbatterie und Batteriemanagementsystem und das Subsystem Energiewandlung und Laden aus Gleichspannungswandler, Kleinspannungswandler und Ladeeinrichtung. Der Gleichspannungswandler im Traktionspfad passt bei einer untersuchten Bauweise die Batteriespannung an den Zwischenkreis an; bei anderen Bauweisen liegt der Wechselrichter direkt an der Batteriespannung. Ein Kleinspannungswandler versorgt Licht, Anzeige, Telematik und Bussystem. Ohne Verbrennungsmotor entfällt eine Starterbatterie; bei Privatfahrzeugen hängen Licht, Anzeige und Telematik an der Traktionsbatterie, Verleihfahrzeuge mit Wechselakku können eine Pufferbatterie in der Telematikeinheit haben, damit Ortung und Verriegelung bei entnommenem oder tiefentladenem Akku erhalten bleiben. Das Batteriemanagementsystem überwacht die Zellen, begrenzt Lade-, Entlade- und Rekuperationsströme und meldet den Ladezustand. Im Fahrzeug gehören zur Ladeeinrichtung Ladebuchse und Ladepfad zum Batteriemanagementsystem; das Ladegerät ist ein externes Netzteil außerhalb der Systemgrenze, bei Wechselakkus ergänzt um eine externe Ladestation, und das Fahrzeug erhält ein Akkuschloss. An der Lenkstange erhöht die Batterie die Lenkträgheit.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
-              "P7: Akkumulator, Gleichspannungswandler, Batteriemanagementsystem setzt Ladegrenzen, externes Ladegerät, Akkutausch, Einbauorte",
+              "P7: Akkumulator, Hochsetz-Tiefsetz-Wandler zwischen Batterie und Zwischenkreis im untersuchten Simulationsmodell, Batteriemanagementsystem setzt die Ladegrenzen für das externe Ladegerät, Akkutausch, Einbauorte",
               "P5 und P11: Rekuperation führt dem Akku Energie zu",
               "P13: App zeigt die Restladung, also wird der Ladezustand gemeldet",
-              "P1: rein elektrischer Antrieb ohne Verbrennungsmotor"
+              "P1: rein elektrischer Antrieb ohne Verbrennungsmotor",
+              "P17 und P19: Verleihfahrzeuge werden geortet und digital verriegelt",
+              "Annahme zur Bauweise: Licht, Anzeige, Telematik und Bussystem arbeiten mit Kleinspannung über einen eigenen Wandler; Verleihfahrzeuge mit Wechselakku puffern die Telematik"
             ],
-            "schluss": "Ein einziger Energiespeicher versorgt alle Verbraucher; seine Anordnung und Wechselbarkeit ändern Struktur, Lenkung und Diebstahlsicherung."
+            "schluss": "Die Traktionsbatterie versorgt den Traktionspfad und über einen Kleinspannungswandler die übrigen Verbraucher, bei Verleihfahrzeugen ergänzt um eine Pufferbatterie; das Ladegerät liegt außerhalb der Systemgrenze, Anordnung und Wechselbarkeit der Batterie ändern Struktur, Lenkung, Telematik und Diebstahlsicherung."
           },
-          "sicherheit": "mittel",
+          "sicherheit": "gering",
           "aussagetyp": "variante",
           "herangezogene_artikel_ids": []
         }
@@ -366,12 +368,12 @@
       "absaetze": [
         {
           "absatz_id": "P11",
-          "text": "In Deutschland braucht ein Elektrokleinstfahrzeug zwei voneinander unabhängige Bremsen, die bis zum Stillstand und bis zur Maximalgeschwindigkeit wirken, mindestens 3,5 m/s² erreichen und einzeln bei Ausfall der anderen mindestens 44 Prozent davon, ohne dass das Fahrzeug die Spur verlässt; ein nicht selbstbalancierendes Fahrzeug muss bei Ausfall der Spannungsversorgung unabhängig von ihr bremsen oder mit mindestens 1,54 m/s² anhalten. Ausgeführt werden die Bremsen etwa als elektrische Bremse vorn und mechanische Schutzblechbremse hinten, ferner als Scheiben-, Trommel-, Magnet- und Hydraulikbremsen sowie als Rekuperationsbremsen, die dem Akku Energie zuführen.",
+          "text": "In Deutschland braucht ein Elektrokleinstfahrzeug zwei voneinander unabhängige Bremsen, die bis zum Stillstand und bis zur Maximalgeschwindigkeit wirken, mindestens 3,5 m/s² erreichen und einzeln bei Ausfall der anderen mindestens 44 Prozent davon, ohne dass das Fahrzeug die Spur verlässt; ein nicht selbstbalancierendes Fahrzeug muss bei Ausfall der Spannungsversorgung unabhängig von ihr bremsen oder mit mindestens 1,54 m/s² anhalten. Mehrachsige Elektrokleinstfahrzeuge müssen eine voneinander unabhängige Vorderrad- und Hinterradbremse haben. Ausgeführt werden die Bremsen etwa als elektrische Bremse vorn und mechanische Schutzblechbremse hinten, ferner als Scheiben-, Trommel-, Magnet- und Hydraulikbremsen sowie als Rekuperationsbremsen, die dem Akku Energie zuführen.",
           "begruendung": "belegt",
           "belege": [
             {
               "quellen_id": "Q6",
-              "fundstelle": "Absatz 1"
+              "fundstelle": "Absätze 1 und 3"
             },
             {
               "quellen_id": "Q9",
@@ -391,15 +393,15 @@
         },
         {
           "absatz_id": "P12",
-          "text": "Das Bremssystem gliedert sich in die Reibungsbremse aus Bremshebel und Radbremse und das Subsystem Elektrische Bremse aus Nutzbremse und Bremsregelung. Meldet der Bremshebel den Bremswunsch, gibt die Bremsregelung der Motorsteuerung ein Bremsmoment vor, und die Traktionsmaschine speist als Generator in die Traktionsbatterie. Die Nutzbremse wirkt nur am angetriebenen Rad und entfällt bei Spannungsausfall; daher arbeitet die Reibungsbremse bordnetzunabhängig, und ihre Lage folgt der des Radnabenmotors.",
+          "text": "Das Bremssystem gliedert sich in die Reibungsbremse aus Bremshebel und Radbremse und das Subsystem Elektrische Bremse aus Nutzbremse und Bremsregelung. Meldet der Bremshebel den Bremswunsch, gibt die Bremsregelung der Motorsteuerung ein Bremsmoment vor, und die Traktionsmaschine speist als Generator in die Traktionsbatterie. Die Nutzbremse wirkt nur am angetriebenen Rad und entfällt bei Spannungsausfall; daher arbeitet die Reibungsbremse bordnetzunabhängig. Weil Vorder- und Hinterrad je eine voneinander unabhängige Bremse brauchen, sitzt die Reibungsbremse bei einem Motor am nicht angetriebenen Rad oder an beiden Rädern; bei zwei Radnabenmotoren mit Nutzbremse an beiden Rädern kommt eine spannungsunabhängige Reibungsbremse hinzu.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
-              "P11: zwei unabhängige Bremsen, Bremsen bei Spannungsausfall, elektrische und mechanische Bremse, Rekuperation in den Akku",
+              "P11: zwei unabhängige Bremsen, bei mehrachsigen Elektrokleinstfahrzeugen eine voneinander unabhängige Vorderrad- und Hinterradbremse, Bremsen bei Spannungsausfall, elektrische und mechanische Bremse, Rekuperation in den Akku",
               "P5 und P6: Radnabenmotor an einem oder beiden Rädern"
             ],
-            "schluss": "Elektrische Bremse und Reibungsbremse bilden die zwei unabhängigen Bremsen; ihre Zuordnung zu den Rädern folgt der Motorlage."
+            "schluss": "Elektrische Bremse und Reibungsbremse bilden die unabhängigen Bremsen an Vorder- und Hinterrad; ihre Zuordnung zu den Rädern folgt der Motorlage, und die spannungsunabhängige Bremswirkung muss stets eine Reibungsbremse liefern."
           },
           "sicherheit": "mittel",
           "aussagetyp": "variante",
@@ -610,18 +612,19 @@
         },
         {
           "absatz_id": "P22",
-          "text": "Beleuchtung und Sicht gliedert sich in die Beleuchtung mit Scheinwerfer und Leuchten und die Signaleinrichtungen mit Fahrtrichtungsanzeiger, Rückstrahler und Glocke. Der Scheinwerfer sitzt an der Lenkstange, die Leuchten am Heck. Leitungssatz und Gleichspannungswandler versorgen die aktiven Einrichtungen aus der Traktionsbatterie; Licht- und Blinkertaster sind Bedienelemente, das Bremslicht folgt dem Bremshebel. Rückspiegel gehören nicht zum Grundaufbau.",
+          "text": "Beleuchtung und Sicht gliedert sich in die Beleuchtung mit Scheinwerfer und Leuchten und die Signaleinrichtungen mit Fahrtrichtungsanzeiger, Rückstrahler und Glocke. Der Scheinwerfer sitzt an der Lenkstange, die Leuchten am Heck. Ein Kleinspannungswandler versorgt die aktiven Einrichtungen über den Leitungssatz aus der Traktionsbatterie; Licht- und Blinkertaster sind Bedienelemente, das Bremslicht folgt dem Bremshebel. Rückspiegel gehören nicht zum Grundaufbau.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "P21: Schlussleuchte, Rückstrahler, Bremslichtfunktion, Fahrtrichtungsanzeiger, Glocke; Rückspiegel nicht genannt",
-              "P8 und P16: Versorgung aller Verbraucher aus der Traktionsbatterie über den Leitungssatz",
+              "P8: Kleinspannungswandler für Licht, Anzeige, Telematik und Bussystem als Annahme zur Bauweise",
+              "P16: Leitungssatz mit Lichtleitungen",
               "P12: Bremshebel meldet den Bremswunsch"
             ],
             "schluss": "Beleuchtung und Signaleinrichtungen bilden das Hauptsystem und hängen elektrisch an Energieversorgung und Bedienung."
           },
-          "sicherheit": "mittel",
+          "sicherheit": "gering",
           "aussagetyp": "loesung",
           "herangezogene_artikel_ids": []
         }
@@ -660,7 +663,7 @@
       "absaetze": [
         {
           "absatz_id": "P24",
-          "text": "In SysML bildet der Block `E-Scooter` das Gesamtsystem mit den genannten Systemen als Bestandteilen, rekursiv zerlegt etwa als `Antriebssystem → Antriebselektronik → Wechselrichter`, `Energieversorgungssystem → Batteriesystem → Batteriemanagementsystem` oder `Bremssystem → Elektrische Bremse → Nutzbremse`. Ports und Konnektoren bilden mechanische Schnittstellen an Radnabe, Lenkkopflager und Klappgelenk, elektrische an Zwischenkreis und Ladebuchse und informationstechnische über Bussystem und Mobilfunk ab; die Person ist externer Akteur. Geeignet sind Blockdefinitionsdiagramme, interne Blockdiagramme, Aktivitätsdiagramme und Zustandsautomaten für Freigabe und Verriegelung.",
+          "text": "In SysML bildet der Block `E-Scooter` das Gesamtsystem mit den genannten Systemen als Bestandteilen, rekursiv zerlegt etwa als `Antriebssystem → Antriebselektronik → Wechselrichter`, `Energieversorgungssystem → Batteriesystem → Batteriemanagementsystem` oder `Bremssystem → Elektrische Bremse → Nutzbremse`. Ports und Konnektoren bilden mechanische Schnittstellen an Radnabe, Lenkkopflager und Klappgelenk, elektrische an Zwischenkreis und Ladebuchse und informationstechnische über Bussystem und Mobilfunk ab; die Person und das externe Ladegerät, angeschlossen über einen Port an der Ladebuchse, sind externe Akteure. Geeignet sind Blockdefinitionsdiagramme, interne Blockdiagramme, Aktivitätsdiagramme und Zustandsautomaten für Freigabe und Verriegelung.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -686,7 +689,7 @@
       "absaetze": [
         {
           "absatz_id": "P25",
-          "text": "Die Traktionsbatterie liefert Gleichstrom über Gleichspannungswandler und Wechselrichter an die Traktionsmaschine, diese Drehmoment über die Radnabe an Räder und Reifen; die Nutzbremse speist zurück, die Ladeeinrichtung lädt über die Ladebuchse, der Leitungssatz versorgt Scheinwerfer und Leuchten. Rotorlagesensor, Bedienelemente, Bremsregelung, Batteriemanagementsystem, Telematikeinheit, Manipulationsschutz und Umfeldsensorik informieren Motorsteuerung oder Fahrzeugmanagement, dieses liefert Sollwerte, Anzeigewerte und Verriegelungsbefehle. Standfläche, Trittbrett, Federung und Vorderradgabel leiten Lasten, Lenker und Lenkstange das Lenkmoment, der Bremshebel die Betätigungskraft.",
+          "text": "Die Traktionsbatterie liefert Gleichstrom, je nach Bauweise über den Gleichspannungswandler oder direkt, an den Wechselrichter und dieser an die Traktionsmaschine, diese Drehmoment über die Radnabe an Räder und Reifen; die Nutzbremse speist zurück, das externe Ladegerät lädt über die Ladebuchse der Ladeeinrichtung, der Kleinspannungswandler versorgt über den Leitungssatz Scheinwerfer und Leuchten. Rotorlagesensor, Bedienelemente, Bremsregelung, Batteriemanagementsystem, Telematikeinheit, Manipulationsschutz und Umfeldsensorik informieren Motorsteuerung oder Fahrzeugmanagement, dieses liefert Sollwerte, Anzeigewerte und Verriegelungsbefehle. Standfläche, Trittbrett, Federung und Vorderradgabel leiten Lasten, Lenker und Lenkstange das Lenkmoment, der Bremshebel die Betätigungskraft.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -715,7 +718,7 @@
       "absaetze": [
         {
           "absatz_id": "P26",
-          "text": "Die Funktionszuordnung verbindet physische Dekomposition und Flussperspektive: Fahrzeuglasten tragen Trittbrett, Seitenständer, Räder und Reifen, Federung und Vorderradgabel; Fahrzeug zusammenklappen der Klappmechanismus; Antriebsleistung erzeugen Traktionsmaschine und Wechselrichter; Drehmoment übertragen und Fahrzeug fortbewegen Traktionsmaschine sowie Räder und Reifen; Energie speichern die Traktionsbatterie; Traktionsbatterie laden Ladeeinrichtung und Batteriemanagementsystem; Elektrische Energie verteilen Gleichspannungswandler, Leitungssatz und Sicherungen; Fahrzeug lenken Lenker, Lenkstange und Vorderradgabel; Fahrzeug verzögern Bremshebel, Radbremse und Nutzbremse; Bremsenergie zurückgewinnen Nutzbremse und Bremsregelung; Fahrereingaben erfassen die Bedienelemente; Fahrerinformationen anzeigen die Anzeigeelemente; Daten übertragen Bussystem und Telematikeinheit; Fahrzeugzustand überwachen Batteriemanagementsystem, Diagnose und Fahrzeugmanagement; Fahrzeugposition bestimmen die Telematikeinheit; Höchstgeschwindigkeit begrenzen Fahrzeugmanagement und Motorsteuerung; Unbefugte Benutzung verhindern Diebstahlsicherung und Manipulationsschutz; Fahrzeugumfeld erfassen die Umfeldsensorik; Fahrzeugumgebung ausleuchten der Scheinwerfer; Lichtsignale abgeben Leuchten, Fahrtrichtungsanzeiger und Rückstrahler; Schallzeichen abgeben die Glocke.",
+          "text": "Die Funktionszuordnung verbindet physische Dekomposition und Flussperspektive: Fahrzeuglasten tragen Trittbrett, Seitenständer, Räder und Reifen, Federung und Vorderradgabel; Fahrzeug zusammenklappen der Klappmechanismus; Antriebsleistung erzeugen Traktionsmaschine und Wechselrichter; Drehmoment übertragen und Fahrzeug fortbewegen Traktionsmaschine sowie Räder und Reifen; Energie speichern die Traktionsbatterie; Traktionsbatterie laden Ladeeinrichtung mit Ladebuchse und Batteriemanagementsystem; Elektrische Energie verteilen Gleichspannungswandler, Kleinspannungswandler, Leitungssatz und Sicherungen; Fahrzeug lenken Lenker, Lenkstange und Vorderradgabel; Fahrzeug verzögern Bremshebel, Radbremse und Nutzbremse; Bremsenergie zurückgewinnen Nutzbremse und Bremsregelung; Fahrereingaben erfassen die Bedienelemente; Fahrerinformationen anzeigen die Anzeigeelemente; Daten übertragen Bussystem und Telematikeinheit; Fahrzeugzustand überwachen Batteriemanagementsystem, Diagnose und Fahrzeugmanagement; Fahrzeugposition bestimmen die Telematikeinheit; Höchstgeschwindigkeit begrenzen Fahrzeugmanagement und Motorsteuerung; Unbefugte Benutzung verhindern Diebstahlsicherung und Manipulationsschutz; Fahrzeugumfeld erfassen die Umfeldsensorik; Fahrzeugumgebung ausleuchten der Scheinwerfer; Lichtsignale abgeben Leuchten, Fahrtrichtungsanzeiger und Rückstrahler; Schallzeichen abgeben die Glocke.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -992,7 +995,6 @@
         "absatz_ids": [
           "P7",
           "P8",
-          "P22",
           "P25",
           "P26"
         ]
@@ -1004,6 +1006,18 @@
         "eltern_id": "E21",
         "absatz_ids": [
           "P8",
+          "P25",
+          "P26"
+        ]
+      },
+      {
+        "id": "E59",
+        "name": "Kleinspannungswandler",
+        "typ": "komponente",
+        "eltern_id": "E21",
+        "absatz_ids": [
+          "P8",
+          "P22",
           "P25",
           "P26"
         ]
@@ -1059,6 +1073,17 @@
           "P10",
           "P25",
           "P26"
+        ]
+      },
+      {
+        "id": "E60",
+        "name": "Lenkkopflager",
+        "typ": "komponente",
+        "eltern_id": "E24",
+        "absatz_ids": [
+          "P4",
+          "P10",
+          "P24"
         ]
       },
       {
@@ -1279,6 +1304,15 @@
         "absatz_ids": [
           "P18",
           "P26"
+        ]
+      },
+      {
+        "id": "E61",
+        "name": "Pufferbatterie",
+        "typ": "komponente",
+        "eltern_id": "E43",
+        "absatz_ids": [
+          "P8"
         ]
       },
       {
@@ -1510,12 +1544,14 @@
         "name": "Elektrische Energie verteilen",
         "ausgefuehrt_von": [
           "E22",
+          "E59",
           "E40",
           "E42"
         ],
         "absatz_ids": [
           "P8",
           "P16",
+          "P22",
           "P26"
         ]
       },
@@ -1881,13 +1917,15 @@
       },
       {
         "id": "S16",
-        "von": "E22",
+        "von": "E59",
         "nach": "E40",
         "art": "elektrisch",
-        "medium": "Versorgung der Verbraucher",
+        "medium": "Kleinspannung für Licht, Anzeige, Telematik und Bussystem",
         "absatz_ids": [
+          "P8",
           "P16",
-          "P22"
+          "P22",
+          "P25"
         ],
         "schnittstelle": "Bordnetzabgang"
       },
@@ -2098,6 +2136,40 @@
           "P10"
         ],
         "schnittstelle": "Vorderradachse"
+      },
+      {
+        "id": "S35",
+        "von": "E19",
+        "nach": "E59",
+        "art": "elektrisch",
+        "medium": "Gleichstrom aus der Traktionsbatterie",
+        "absatz_ids": [
+          "P8",
+          "P22"
+        ]
+      },
+      {
+        "id": "S36",
+        "von": "E26",
+        "nach": "E60",
+        "art": "mechanisch",
+        "medium": "Halte- und Abstützkräfte der Person",
+        "absatz_ids": [
+          "P4",
+          "P10"
+        ]
+      },
+      {
+        "id": "S37",
+        "von": "E60",
+        "nach": "E4",
+        "art": "mechanisch",
+        "medium": "Lager- und Abstützkräfte der Lenkung",
+        "absatz_ids": [
+          "P4",
+          "P10"
+        ],
+        "schnittstelle": "Lenkkopf"
       }
     ],
     "entfallene_kategorien": [
@@ -2226,6 +2298,10 @@
           {
             "element_id": "E48",
             "beschreibung": "Ein Wechselakku braucht ein Akkuschloss."
+          },
+          {
+            "element_id": "E45",
+            "beschreibung": "Bei Wechselakkus kann die Telematikeinheit eine Pufferbatterie brauchen, damit Ortung und Verriegelung bei entnommenem oder tiefentladenem Akku erhalten bleiben."
           }
         ],
         "absatz_ids": [
@@ -2238,12 +2314,13 @@
         "element_id": "E28",
         "bezeichnung": "Kombination der Bremsen",
         "alternativen": [
-          "Nutzbremse am angetriebenen Rad und mechanische Radbremse am anderen Rad",
+          "Nutzbremse am angetriebenen Rad und mechanische Radbremse am anderen Rad, etwa elektrische Bremse vorn mit Schutzblechbremse hinten",
           "Mechanische Radbremsen an beiden Rädern, zusätzlich Nutzbremse",
-          "Schutzblechbremse hinten mit elektrischer Bremse vorn"
+          "Zwei Radnabenmotoren mit Nutzbremse an beiden Rädern und zusätzlicher spannungsunabhängiger Reibungsbremse"
         ],
         "auswahlkriterien": [
           "Unabhängigkeit der beiden Bremsen",
+          "Aufteilung auf Vorder- und Hinterrad",
           "Bremswirkung bei Nässe und bei Spannungsausfall",
           "Energierückgewinnung",
           "Wartungsaufwand"
@@ -2335,6 +2412,39 @@
         "absatz_ids": [
           "P3",
           "P4"
+        ]
+      },
+      {
+        "id": "V7",
+        "element_id": "E21",
+        "bezeichnung": "Spannungsanpassung im Traktionspfad",
+        "alternativen": [
+          "Mit Gleichspannungswandler zwischen Traktionsbatterie und Zwischenkreis",
+          "Ohne Gleichspannungswandler, Wechselrichter direkt an der Batteriespannung"
+        ],
+        "auswahlkriterien": [
+          "Spannungslage von Traktionsbatterie und Traktionsmaschine",
+          "Wirkungsgrad im Traktionspfad",
+          "Bauraum und Masse",
+          "Kosten"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E15",
+            "beschreibung": "Ohne Wandler muss der Wechselrichter den gesamten Spannungsbereich der Traktionsbatterie zwischen voll und entladen beherrschen."
+          },
+          {
+            "element_id": "E20",
+            "beschreibung": "Ohne Wandler begrenzt allein das Batteriemanagementsystem Lade-, Entlade- und Rekuperationsströme, mit Wandler kann dieser sie mitregeln."
+          },
+          {
+            "element_id": "E33",
+            "beschreibung": "Die Rekuperationsströme der Nutzbremse fließen über den Wandler oder unmittelbar in die Traktionsbatterie."
+          }
+        ],
+        "absatz_ids": [
+          "P7",
+          "P8"
         ]
       }
     ],
@@ -2514,14 +2624,29 @@
       },
       {
         "id": "K15",
-        "frage": "In welchen Ländern soll der E-Scooter betrieben werden, und welche Ausrüstung mit Fahrtrichtungsanzeigern, Bremslicht und Glocke gilt dort?",
+        "frage": "In welchen Ländern und für welche bauartbedingte Höchstgeschwindigkeitsklasse soll der E-Scooter zugelassen werden?",
         "element_ids": [
           "E51",
           "E56",
-          "E1"
+          "E1",
+          "E44"
         ],
         "anlass": "anforderung",
-        "relevanz": "Davon hängen Anzahl und Lage der Leuchten, Bedientaster und Kontrollanzeigen ab."
+        "relevanz": "Davon hängen Leistungs- und Geschwindigkeitsbegrenzung im Fahrzeugmanagement, Ausrüstung mit Fahrtrichtungsanzeigern und Bremslicht sowie die Zulassungsnachweise ab."
+      },
+      {
+        "id": "K16",
+        "frage": "Soll zwischen Traktionsbatterie und Wechselrichter ein Gleichspannungswandler die Zwischenkreisspannung anpassen?",
+        "element_ids": [
+          "E21",
+          "E22",
+          "E15"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Auslegung des Wechselrichters, Strombegrenzung und Wirkungsgrad im Traktionspfad ab.",
+        "variante_ids": [
+          "V7"
+        ]
       }
     ],
     "anforderungsthemen": [
@@ -2567,6 +2692,22 @@
             "quellen_id": "Q9",
             "fundstelle": "Nummern 1, 6 und 11"
           }
+        ]
+      },
+      {
+        "id": "R13",
+        "element_ids": [
+          "E3",
+          "E5",
+          "E26"
+        ],
+        "thema": "Festigkeit und Dauerhaltbarkeit der Tragstruktur",
+        "kenngroessen": [
+          "statische Festigkeit",
+          "Dauerschwingfestigkeit",
+          "zulässige Gesamtmasse mit Fahrer",
+          "Spielfreiheit und Verriegelungssicherheit des Klappmechanismus",
+          "Schlagfestigkeit an Bordsteinen"
         ]
       },
       {
@@ -2619,7 +2760,8 @@
         "id": "R5",
         "element_ids": [
           "E24",
-          "E26"
+          "E26",
+          "E60"
         ],
         "thema": "Lenkstange und Lenkverhalten",
         "kenngroessen": [
@@ -2807,12 +2949,15 @@
     "Glossarvorschlag: Funktion „Unbefugte Benutzung verhindern“ (Wegfahrsperre, Verriegelung und Manipulationsschutz; nicht synonym mit „Fahrzeug festhalten“); in A-0016 bereits verwendet, in A-0021 als „Fahrzeug gegen Diebstahl sichern“ – Vereinheitlichung im Glossar nötig.",
     "Glossarvorschlag: Funktion „Schallzeichen abgeben“ (akustische Warnung per Glocke, Begriff nach § 6 eKFV; nicht synonym mit „Lichtsignale abgeben“); in A-0015 und A-0016 stehen dafür abweichende Namen – Vereinheitlichung im Glossar nötig.",
     "Glossar: Für Zweiräder und Stehfahrzeuge nennt die Kategorie bedienraum keinen eigenen Namen; wie in A-0014 und A-0015 wird „Fahrgastraum“ verwendet, obwohl der E-Scooter keinen Raum, sondern einen offenen Stehplatz hat.",
+    "Glossarvorschlag: Komponente „Kleinspannungswandler“ (Wandler von der Batteriespannung auf Kleinspannung für Licht, Anzeige, Telematik und Bussystem; nicht synonym mit dem Gleichspannungswandler im Traktionspfad zwischen Traktionsbatterie und Zwischenkreis).",
     "Recherche: gesetze-im-internet.de (eKFV) war in diesem Lauf nicht abrufbar; die Paragraphen wurden über buzer.de gelesen. Abgleich mit der amtlichen Fassung, insbesondere zum Inkrafttreten der Pflicht zu Fahrtrichtungsanzeigern (§ 5 Absatz 4; laut Q3 teilweise Inkrafttreten am 1. März 2027) und zu Anlage 2 (Fahrdynamikprüfungen).",
     "Recherche: BASt-Bericht F 158 (wissenschaftliche Begleitung Elektrokleinstfahrzeuge, opus4.hbz-nrw.de) und eKF-Evaluierungsbericht (bast.opus.hbz-nrw.de) waren wegen einer Bot-Sperre nicht abrufbar; auswerten für Fahrdynamik, Bremsen, Lenkstange und Unfallgeschehen.",
     "Recherche: Verordnung (EU) Nr. 168/2013, Artikel 2 Absatz 2 (Ausschluss von Fahrzeugen ohne Sitzplatz und selbstbalancierenden Fahrzeugen) über EUR-Lex, in diesem Lauf nicht abrufbar; Einordnung des E-Scooters im EU-Typgenehmigungsrecht.",
-    "Recherche: DIN EN 17128:2021-01 (PLEV) im Original für Rahmen-, Klappmechanismus-, Bremsen- und Elektrikanforderungen; nur über Q6 und Q9 bekannt.",
+    "Recherche: DIN EN 17128:2021-01 (PLEV) im Original für Rahmen-, Klappmechanismus-, Bremsen- und Elektrikanforderungen, insbesondere Festigkeits- und Dauerhaltbarkeitsprüfungen von Trittbrett, Lenkstange, Gabel und Klappmechanismus für das Anforderungsthema „Festigkeit und Dauerhaltbarkeit der Tragstruktur“ (R13); nur über Q6 und Q9 bekannt.",
     "Recherche: Fachliteratur zur Kommunikation zwischen Motorsteuerung, Batteriemanagementsystem, Anzeige und Telematik bei E-Scootern, Suchbegriffe „e-scooter controller display communication protocol“, „PLEV CAN bus architecture“.",
     "Recherche: Fachliteratur zu Diebstahlsicherung, Geofencing und Umfeldsensorik bei Verleih-E-Scootern, Suchbegriffe „shared e-scooter IoT module geofencing“, „e-scooter sidewalk detection camera“.",
-    "Recherche: Fachliteratur zur Wärmeentwicklung von Radnabenmotor und Batterie bei E-Scootern, Suchbegriff „e-scooter hub motor thermal behaviour“, zur Absicherung des Entfalls von Thermomanagement."
+    "Recherche: Fachliteratur zur Wärmeentwicklung von Radnabenmotor und Batterie bei E-Scootern, Suchbegriff „e-scooter hub motor thermal behaviour“, zur Absicherung des Entfalls von Thermomanagement.",
+    "Recherche: Spannungsversorgung von Licht, Anzeige, Telematik und Bussystem bei E-Scootern (eigener Kleinspannungswandler oder Versorgung direkt aus der Batteriespannung), Suchbegriffe „e-scooter DC-DC converter lighting supply“, „e-scooter controller accessory voltage“; Grundlage für P22, Sicherheit bisher gering.",
+    "Recherche: Pufferbatterie der Telematikeinheit bei Verleih-E-Scootern mit Wechselakku, Suchbegriff „shared e-scooter IoT module backup battery“."
   ]
 }

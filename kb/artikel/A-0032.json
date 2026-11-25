@@ -97,7 +97,7 @@
         },
         {
           "absatz_id": "P2",
-          "text": "Aus architektureller Sicht ist der Schlafwagen ein Gesamtsystem ohne eigenen Fahrantrieb, das Zugkraft, Bremssteuerung, elektrische Energie und Steuersignale über die Kuppelstellen an beiden Wagenenden aus dem Zugverband bezieht. Seine Systeme sind über mechanische, pneumatische, elektrische, thermische, stoffliche und informationstechnische Schnittstellen gekoppelt. Für eine Dekomposition, etwa in SysML, zerlegt man ihn zunächst in Hauptsysteme und diese weiter in Subsysteme und Komponenten; die folgenden Abschnitte behandeln die Hauptsysteme einzeln.",
+          "text": "Architekturell ist der Schlafwagen ein Gesamtsystem ohne Fahrantrieb, das Zugkraft und Bremssteuerung über die Kuppelstellen aus dem Zugverband bezieht, bei Zugsammelschiene und durchgehendem Steuerkabel auch elektrische Energie und Steuersignale; Wagen mit Achsgenerator erzeugen ihre Bordenergie selbst. Mechanische, pneumatische, elektrische, thermische, stoffliche und informationstechnische Schnittstellen koppeln seine Systeme. Die folgenden Abschnitte zerlegen ihn, etwa für SysML, in Hauptsysteme, Subsysteme und Komponenten.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -105,9 +105,10 @@
               "P1: Reisezugwagen sind nicht angetrieben.",
               "Q3: Die Zugsammelschiene verbindet alle Wagen mit der Lokomotive und versorgt sie von zentraler Stelle mit elektrischer Energie.",
               "Q4: Die durchgehende Hauptluftleitung überträgt Bremsenergie und Bremssignal vom Triebfahrzeug an alle Wagen.",
-              "Funktionsprinzip: Ein nicht angetriebener Wagen erhält Zugkraft nur über die Kupplung zum Nachbarfahrzeug."
+              "Funktionsprinzip: Ein nicht angetriebener Wagen erhält Zugkraft nur über die Kupplung zum Nachbarfahrzeug.",
+              "P8: Früher versorgten Achsgeneratoren und Akkumulatoren die Verbraucher; erst die Zugsammelschiene ersetzte sie."
             ],
-            "schluss": "Der Schlafwagen bezieht Zugkraft, Bremssteuerung, Energie und Steuersignale über Kuppelstellen aus dem Zugverband; seine Systeme sind über mehrere Schnittstellenarten gekoppelt."
+            "schluss": "Der Schlafwagen bezieht Zugkraft und Bremssteuerung über Kuppelstellen aus dem Zugverband, elektrische Energie und Steuersignale bei Zugsammelschiene und durchgehendem Steuerkabel ebenfalls; Wagen mit Achsgenerator erzeugen ihre Bordenergie selbst aus der Fahrbewegung. Seine Systeme sind über mehrere Schnittstellenarten gekoppelt."
           },
           "sicherheit": "hoch",
           "aussagetyp": "modellannahme",
@@ -145,7 +146,7 @@
         },
         {
           "absatz_id": "P5",
-          "text": "Der Wagenkasten gliedert sich in Untergestell, Seitenwand, Wagendach und Türen; das Untergestell nimmt die Längskräfte auf und trägt unterflur Behälter und Geräte. Das Laufwerk besteht je Drehgestell aus Drehgestellrahmen, Radsatz, Radsatzlager, Primärfederung und Sekundärfederung; die Gewichtskraft fließt vom Fahrgastraum über Wagenkasten und beide Federstufen in den Radsatz. Luftfedern speist die Hauptluftbehälterleitung, da der Wagen keine eigene Drucklufterzeugung hat. Beim freizügig einsetzbaren Einzelwagen überträgt die Zug- und Stoßeinrichtung mit Puffer und Schraubenkupplung Zug- und Druckkräfte zum Nachbarfahrzeug, die Übergangseinrichtung schützt den Durchgang zwischen den Wagen. Doppelstockbauart und Umspurbarkeit verändern Drehgestell und Einbauraum und damit Bremssystem und Fahrgastraum.",
+          "text": "Der Wagenkasten gliedert sich in Untergestell, Seitenwand, Wagendach und Türen; das Untergestell nimmt die Längskräfte auf und trägt unterflur Behälter und Geräte. Das Laufwerk besteht je Drehgestell aus Drehgestellrahmen, Radsatz, Radsatzlager, Primär- und Sekundärfederung; die Gewichtskraft fließt über Wagenkasten und beide Federstufen in den Radsatz. Luftfedern speist mangels eigener Drucklufterzeugung vorrangig die Hauptluftbehälterleitung; fehlt sie, etwa nach Zugtrennung oder neben älteren Wagen, braucht es Ersatzspeisung oder Notlaufverhalten. Die Zug- und Stoßeinrichtung mit Puffer und Schraubenkupplung überträgt Zug- und Druckkräfte zum Nachbarfahrzeug, die Übergangseinrichtung am Wagenkasten schützt den Durchgang. Doppelstockbauart und Umspurbarkeit verändern Drehgestell und Einbauraum, also auch Bremssystem und Fahrgastraum.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -153,10 +154,11 @@
               "P3: Wagenkasten auf Drehgestellen, Drehgestell aus Rahmen, Radsätzen, Radsatzlagern, Primär- und Sekundärfederung; Luftfedern bei komfortablen Wagen.",
               "P4: Doppelstockbauart und Umspurung verlagern die Bremsausrüstung ins Drehgestell.",
               "Q4: Die Hauptluftbehälterleitung dient als Energieversorger; die Druckluft wird im Triebfahrzeug erzeugt.",
+              "Q4 (Abschnitt Hochabbremsung, Reisezugwagen): Die Hauptluftbehälterleitung wird in Reisezügen in der Regel mitgekuppelt, bei einer Zugtrennung aber geöffnet; ältere Wagen ohne Hauptluftbehälterleitung können in einen Wagenzug eingestellt werden.",
               "Q2: Reisezugwagen mit Verbindungsgang erlauben den Übergang zwischen den Wagen während der Fahrt.",
               "Funktionsprinzip: Ein nicht angetriebener Wagen im Zugverband muss Zug- und Druckkräfte an beiden Enden übertragen; Gewichtskräfte fließen über die Federstufen in den Radsatz."
             ],
-            "schluss": "Der Wagenkasten zerfällt in Untergestell, Seitenwand, Wagendach und Türen, das Laufwerk in Drehgestellrahmen, Radsatz, Radsatzlager und zwei Federstufen; Zug- und Stoßeinrichtung und Übergangseinrichtung bilden die Schnittstelle zum Nachbarwagen, Luftfedern werden aus der Hauptluftbehälterleitung gespeist."
+            "schluss": "Der Wagenkasten zerfällt in Untergestell, Seitenwand, Wagendach und Türen, das Laufwerk in Drehgestellrahmen, Radsatz, Radsatzlager und zwei Federstufen; Zug- und Stoßeinrichtung und die Übergangseinrichtung am Wagenkasten bilden die Schnittstelle zum Nachbarwagen. Luftfedern werden vorrangig aus der Hauptluftbehälterleitung gespeist; für den Betrieb ohne diese Leitung sind Ersatzspeisung oder Notlaufverhalten festzulegen."
           },
           "sicherheit": "mittel",
           "aussagetyp": "loesung",
@@ -171,10 +173,10 @@
       "absaetze": [
         {
           "absatz_id": "P6",
-          "text": "Die indirekt wirkende, selbsttätige Druckluftbremse ist die Standardbremse bei Eisenbahnen und wird vom Führerstand eines Triebfahrzeugs oder Steuerwagens aus bedient. Alle Fahrzeuge eines Zuges haben eine durchgehende Hauptluftleitung, die neben der Hauptluftbehälterleitung als Energieversorger und Signalübertragungsweg dient. Jeder Wagen hat einen Hilfsluftbehälter, der über ein Steuerventil aus der Hauptluftleitung nachgefüllt wird; wird der Leitungsdruck abgesenkt, leiten die Steuerventile Druckluft in die Bremszylinder, die Bremsklötze an die Räder oder Bremszangen an Bremsscheiben andrücken. Notbremsventile sind gewöhnlich zusätzlich in Personenwagen vorhanden. Drehgestelle für höhere Geschwindigkeiten erhalten zusätzlich Magnetschienen- oder Wirbelstrombremsen; bei klassischen Reisezugwagen dienen Spindelhandbremsen als Festhaltebremse.",
+          "text": "Die indirekt wirkende, selbsttätige Druckluftbremse ist die Standardbremse bei Eisenbahnen, bedient vom Führerstand eines Triebfahrzeugs oder Steuerwagens. Alle Fahrzeuge haben eine durchgehende Hauptluftleitung, die neben der Hauptluftbehälterleitung als Energieversorger und Signalweg dient. Jeder Wagen hat einen Hilfsluftbehälter, den ein Steuerventil aus der Hauptluftleitung nachfüllt; sinkt der Leitungsdruck, leiten die Steuerventile Druckluft in die Bremszylinder, die Bremsklötze an die Räder oder Bremszangen an Bremsscheiben drücken. Personenwagen haben gewöhnlich zusätzlich Notbremsventile. Gegen Blockieren und Flachstellen erfassen elektronische Gleitschutzrechner die Achsdrehzahl magnetisch und senken beim Gleiten den Bremsdruck. Drehgestelle für höhere Geschwindigkeiten erhalten zusätzlich Magnetschienen- oder Wirbelstrombremsen; klassische Reisezugwagen haben Spindelhandbremsen als Festhaltebremse.",
           "begruendung": "belegt",
           "belege": [
-            {"quellen_id": "Q4", "fundstelle": "Abschnitt Indirekt wirkende Druckluftbremse; Unterabschnitt Prinzipieller Aufbau und Wirkungsweise (Hauptluftleitung, Hauptluftbehälterleitung, Hilfsluftbehälter, Steuerventil, Bremszylinder, Notbremsventile in Personenwagen)"},
+            {"quellen_id": "Q4", "fundstelle": "Abschnitt Indirekt wirkende Druckluftbremse; Unterabschnitt Prinzipieller Aufbau und Wirkungsweise (Hauptluftleitung, Hauptluftbehälterleitung, Hilfsluftbehälter, Steuerventil, Bremszylinder, Notbremsventile in Personenwagen); Unterabschnitt Gleitschutzregler (Blockieren der Radsätze und Flachstellen, elektronische Gleitschutzrechner mit magnetischer Erfassung der Achsdrehzahl, Senken des Bremsdrucks beim Gleiten)"},
             {"quellen_id": "Q5", "fundstelle": "Abschnitt Bremsausrüstung (Magnetschienen- oder Wirbelstrombremsen bei höheren Geschwindigkeiten, Spindelhandbremsen bei klassischen Reisezugwagen)"}
           ],
           "aussagetyp": "loesung",
@@ -182,18 +184,21 @@
         },
         {
           "absatz_id": "P7",
-          "text": "Der Schlafwagen erzeugt also weder Druckluft noch Bremsbefehle, sondern empfängt beide über die Hauptluftleitung. Seine Druckluftbremse gliedert sich in Hauptluftleitung, Hauptluftbehälterleitung, Steuerventil, Hilfsluftbehälter, Bremszylinder und Radbremse als Klotz- oder Scheibenbremse. Das Notbremsventil im Fahrgastraum entlüftet die Hauptluftleitung und bremst so den ganzen Zug; die Feststellbremse sichert den abgestellten Wagen ohne Druckluft. Scheibenbremsen setzen Bremsscheiben auf den Radsatz und Bremszangen an das Drehgestell, eine Magnetschienenbremse braucht Einbauraum über der Schiene und elektrische Energie.",
+          "text": "Der Schlafwagen empfängt Druckluft und Bremsbefehle über die Hauptluftleitung. Seine Druckluftbremse gliedert sich in Hauptluftleitung, Hauptluftbehälterleitung, Steuerventil, Hilfsluftbehälter, Bremszylinder, Gleitschutz und Radbremse als Klotz- oder Scheibenbremse. Ohne Notbremsüberbrückung entlüftet das Notbremsventil die Hauptluftleitung unmittelbar; mit der Notbremsüberbrückung einer elektropneumatischen Bremssteuerung meldet die Zugsteuerleitung die Notbremsanforderung ans Triebfahrzeug, das sie überbrücken kann. Die Feststellbremse sichert den abgestellten Wagen ohne Druckluft. Scheibenbremsen setzen Bremsscheiben auf den Radsatz und Bremszangen ans Drehgestell, eine Magnetschienenbremse braucht Einbauraum über der Schiene und elektrische Energie. Bei schnellen scheibengebremsten Wagen braucht der Gleitschutz Drehzahlsensoren am Radsatz und Energie aus dem Niedervolt-Bordnetz.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "P6: Bedienung der Druckluftbremse vom Triebfahrzeug oder Steuerwagen; Wagenausrüstung aus Hilfsluftbehälter, Steuerventil, Bremszylinder, Bremsklotz oder Bremsscheibe; Notbremsventile in Personenwagen; Spindelhandbremse als Festhaltebremse.",
               "P1: Der Schlafwagen ist ein nicht angetriebener Reisezugwagen ohne Führerstand.",
-              "Funktionsprinzip: Ein Elektromagnet benötigt elektrische Energie; eine Scheibenbremse benötigt eine Bremsscheibe am drehenden Radsatz."
+              "Q4 (Abschnitt Elektropneumatische Bremse): Die elektropneumatische Bremssteuerung überlagert die Steuerung über die Hauptluftleitung und ermöglicht dem Triebfahrzeugführer, eine gezogene Notbremse zu überbrücken, um an einem günstigen Ort anzuhalten.",
+              "P6 und Q4 (Abschnitte Gleitschutzregler, Hochabbremsung): Gleitschutz gegen blockierende Radsätze mit Drehzahlerfassung an der Achse; die Hochabbremsung für höhere Geschwindigkeiten wird bei elektrischem Gleitschutz vom Gleitschutzrechner angesteuert.",
+              "Funktionsprinzip: Ein Elektromagnet benötigt elektrische Energie; eine Scheibenbremse benötigt eine Bremsscheibe am drehenden Radsatz.",
+              "Funktionsprinzip: Ein elektronischer Gleitschutzrechner und seine Sensoren benötigen elektrische Energie aus dem Bordnetz."
             ],
-            "schluss": "Der Schlafwagen ist Empfänger der Bremsbefehle; seine Druckluftbremse besteht aus den genannten Komponenten, und die Bauart der Radbremse wirkt auf Laufwerk und Energieversorgung zurück."
+            "schluss": "Der Schlafwagen ist Empfänger der Bremsbefehle; seine Druckluftbremse besteht aus den genannten Komponenten einschließlich Gleitschutz. Ohne Notbremsüberbrückung wirkt das Notbremsventil unmittelbar auf die Hauptluftleitung, mit der Notbremsüberbrückung einer elektropneumatischen Bremssteuerung über die Zugsteuerleitung auf das Triebfahrzeug. Die Bauart der Radbremse wirkt auf Laufwerk und Energieversorgung zurück; schnelle scheibengebremste Wagen brauchen einen Gleitschutz mit Drehzahlsensoren am Radsatz und Versorgung aus dem Niedervolt-Bordnetz."
           },
-          "sicherheit": "hoch",
+          "sicherheit": "mittel",
           "aussagetyp": "loesung",
           "herangezogene_artikel_ids": []
         }
@@ -206,27 +211,29 @@
       "absaetze": [
         {
           "absatz_id": "P8",
-          "text": "Die Zugsammelschiene ist eine Leitung, die alle Wagen eines Reisezuges untereinander und mit der Lokomotive verbindet, um sie von zentraler Stelle mit elektrischer Energie zu versorgen; im Geltungsbereich des Internationalen Eisenbahnverbandes (UIC) ist sie einpolig, den Rückleiter bilden die Gleise. Ihre Kupplung ist in der Norm UIC 552 vereinheitlicht. Ein Ladegerät versorgt aus ihr die Akkumulatoren, nachgeschaltet ist ein Wechselrichter für die üblichen Verbraucherspannungen, sodass etwa die Beleuchtung auch während eines Lokomotivwechsels eingeschaltet bleiben kann. Früher versorgten Achsgeneratoren und im Stand die während der Fahrt geladenen Akkumulatoren die Verbraucher; mit der Zugsammelschiene konnten die Achsgeneratoren entfallen und die Batteriekapazität etwa halbiert werden.",
+          "text": "Die Zugsammelschiene versorgt alle Wagen eines Reisezuges, untereinander und mit der Lokomotive verbunden, zentral mit elektrischer Energie; im Geltungsbereich des Internationalen Eisenbahnverbandes (UIC) ist sie einpolig, den Rückleiter bilden die Gleise. Sie ist in der Norm UIC 552 vereinheitlicht und führt je nach Einsatz 1000 V mit 16,7 Hz, 1500 V mit 50 Hz oder 1500 bzw. 3000 V Gleichspannung. Ein Ladegerät versorgt aus ihr die Akkumulatoren, nachgeschaltet ist ein Wechselrichter für die üblichen Verbraucherspannungen, sodass etwa die Beleuchtung beim Lokomotivwechsel eingeschaltet bleibt. Früher versorgten Achsgeneratoren und im Stand die in Fahrt geladenen Akkumulatoren die Verbraucher; mit der Zugsammelschiene entfielen sie, und die Batteriekapazität ließ sich etwa halbieren.",
           "begruendung": "belegt",
           "belege": [
-            {"quellen_id": "Q3", "fundstelle": "Einleitung (Definition, einpolige Zugsammelschiene im UIC-Bereich, Gleise als Rückleiter); Abschnitt Geschichte (Achsgeneratoren, Halbierung der Batteriekapazität); Abschnitt Ausrüstung der Reisezugwagen (Ladegerät, Wechselrichter, Beleuchtung beim Lokomotivwechsel); Abschnitt Kupplung der Zugsammelschiene (UIC 552)"}
+            {"quellen_id": "Q3", "fundstelle": "Einleitung (Definition, einpolige Zugsammelschiene im UIC-Bereich, Gleise als Rückleiter); Abschnitt Geschichte (Achsgeneratoren, Halbierung der Batteriekapazität); Abschnitt Ausrüstung der Reisezugwagen (Ladegerät, Wechselrichter, Beleuchtung beim Lokomotivwechsel); Abschnitt Kupplung der Zugsammelschiene (UIC 552; Wechselspannung 1000 V 16,7 Hz oder 1500 V 50 Hz, Gleichspannung 1500 bzw. 3000 V)"}
           ],
           "aussagetyp": "loesung",
           "herangezogene_artikel_ids": []
         },
         {
           "absatz_id": "P9",
-          "text": "Das Energieversorgungssystem gliedert sich damit in die Energieübernahme mit Zugsammelschiene und, bei älteren oder autarken Bauarten, Achsgenerator sowie in die Energiewandlung und Speicherung mit Ladegerät, Bordnetzbatterie und Wechselrichter. Weil der Wagen nachts bewohnt ist und bei Lokomotivwechsel, Rangieren oder Abstellung ohne Speisung bleibt, bemisst sich die Bordnetzbatterie an den Verbrauchern, die dann weiterlaufen müssen: Beleuchtung, Rufanlage, Türsteuerung, Lüftung und Brandmeldung. Die Art der Energieübernahme entscheidet, ob ein Radsatz einen Generatorantrieb trägt und ob eine Klimaanlage betrieben werden kann.",
+          "text": "Das Energieversorgungssystem gliedert sich in die Energieübernahme mit Zugsammelschiene und, bei älteren oder autarken Bauarten, Achsgenerator sowie in die Energiewandlung und Speicherung mit Ladegerät, Bordnetzbatterie und Wechselrichter. Weil der Wagen nachts bewohnt ist und bei Lokomotivwechsel, Rangieren oder Abstellung ohne Speisung bleibt, bemisst sich die Bordnetzbatterie an Beleuchtung, Rufanlage, Türsteuerung, Lüftung und Brandmeldung. Die Energieübernahme entscheidet über Generatorantrieb am Radsatz und Klimatisierbarkeit; je nach Einsatznetzen beherrscht sie eine oder mehrere Speisespannungen, was Ladegerät, Innenraumheizung und Klimaanlage betrifft.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "P8: Zugsammelschiene, Ladegerät, Akkumulatoren und Wechselrichter; früher Achsgeneratoren mit Akkumulatoren.",
+              "P8: Die Zugsammelschiene führt je nach Einsatzbedingung unterschiedliche Wechsel- und Gleichspannungen.",
+              "P21: Bei international einsetzbaren Wagen wurde die Heizung durch Umgruppieren der Widerstandsheizkörper für mehrere Heizspannungen umschaltbar ausgeführt.",
               "Q3: Die Leistung von Klimaanlagen war von Achsgeneratoren nicht aufzubringen.",
               "P1: Der Schlafwagen dient dem liegenden Reisen, also der Nutzung während der Nacht.",
               "Funktionsprinzip: Ein Achsgenerator wird vom drehenden Radsatz angetrieben; ohne Speisung müssen sicherheitsrelevante Verbraucher aus dem Speicher versorgt werden."
             ],
-            "schluss": "Das Energieversorgungssystem besteht aus Energieübernahme und Energiewandlung und Speicherung; die Bordnetzbatterie wird nach den im speisungslosen Zustand nötigen Verbrauchern bemessen, und die Energieübernahme bestimmt Generatorantrieb und Klimatisierbarkeit."
+            "schluss": "Das Energieversorgungssystem besteht aus Energieübernahme und Energiewandlung und Speicherung; die Bordnetzbatterie wird nach den im speisungslosen Zustand nötigen Verbrauchern bemessen, die Energieübernahme bestimmt Generatorantrieb und Klimatisierbarkeit, und die Zahl der zu beherrschenden Speisespannungen wirkt auf Ladegerät, Innenraumheizung und Klimaanlage."
           },
           "sicherheit": "mittel",
           "aussagetyp": "loesung",
@@ -332,19 +339,28 @@
         },
         {
           "absatz_id": "P16",
-          "text": "Die Schaffnerrufanlage verbindet Ruftaster in jedem Schlafabteil mit der Zentrale im Dienstabteil. Die Fahrgastinformation gibt Zugziel und Durchsagen über Anzeigen und Lautsprecher wieder; im Schlafwagen ist eine abteilweise Abschaltung in der Nacht sinnvoll. Die Diagnose erfasst Zustände von Klimaanlage, Energieversorgung, Türen und Toilettensystem und meldet Störungen an Zugpersonal oder Werkstatt.",
+          "text": "Die Schaffnerrufanlage verbindet Ruftaster in jedem Schlafabteil mit der Zentrale im Dienstabteil. Die Fahrgastinformation gibt Zugziel und Durchsagen über Anzeigen und Lautsprecher wieder.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "P15: Zentrale der Schaffnerrufanlage im Dienstabteil, Kommunikation mit dem Gast; Daten für Zugzielanzeiger und Durchsagen über das durchgehende Kabel.",
               "P14: Ruftaster gehören zu den Bedienelementen im Abteil.",
-              "Funktionsprinzip: Eine Rufanlage braucht eine Rufstelle beim Gast; Störungen technischer Anlagen ohne Fahrer an Bord müssen erfasst und gemeldet werden."
+              "Funktionsprinzip: Eine Rufanlage braucht eine Rufstelle beim Gast und eine Zentrale beim Personal."
             ],
-            "schluss": "Fahrzeugsteuerung und Information besteht aus Schaffnerrufanlage, Fahrgastinformation und Diagnose."
+            "schluss": "Fahrzeugsteuerung und Information umfasst die Schaffnerrufanlage mit Ruftastern in den Abteilen und die Fahrgastinformation."
           },
           "sicherheit": "mittel",
           "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P29",
+          "text": "Eine Diagnose meldet Störungen von Klimaanlage, Energieversorgung, Türen und Toiletten ans Personal; nachts lässt sich die Fahrgastinformation abteilweise abschalten.",
+          "begruendung": "modellwissen",
+          "belege": [],
+          "sicherheit": "gering",
+          "aussagetyp": "modellannahme",
           "herangezogene_artikel_ids": []
         }
       ]
@@ -356,10 +372,10 @@
       "absaetze": [
         {
           "absatz_id": "P17",
-          "text": "Ende der 1920er Jahre gingen Züge mit Türsteuerung in Betrieb, die mit elektrischer Steuerung und Druckluft arbeitete; die Türen konnten durch den Triebfahrzeugführer geschlossen werden, waren aber während der Fahrt nicht verriegelt. Ab den 1960er Jahren wurde die Türblockierung während der Fahrt eingeführt.",
+          "text": "Ende der 1920er Jahre gingen bei den SBB die ersten Züge mit Türsteuerung in Betrieb, die mit elektrischer Steuerung und Druckluft arbeitete; die Türen konnten durch den Triebfahrzeugführer geschlossen werden, waren aber während der Fahrt nicht verriegelt. Ab den 1960er Jahren wurde die Türblockierung während der Fahrt eingeführt.",
           "begruendung": "belegt",
           "belege": [
-            {"quellen_id": "Q2", "fundstelle": "Abschnitt Außentüren (Türsteuerung mit elektrischer Steuerung und Druckluft, Türblockierung während der Fahrt ab den 1960er Jahren)"}
+            {"quellen_id": "Q2", "fundstelle": "Abschnitt Außentüren (erste Züge mit Türsteuerung Ende der 1920er Jahre bei den SBB, elektrische Steuerung und Druckluft, Türblockierung während der Fahrt ab den 1960er Jahren)"}
           ],
           "aussagetyp": "loesung",
           "herangezogene_artikel_ids": []
@@ -487,14 +503,14 @@
       "absaetze": [
         {
           "absatz_id": "P25",
-          "text": "Architekturell lässt sich der Schlafwagen damit auf oberster Ebene als Gesamtsystem mit den Hauptsystemen Fahrzeugstruktur und Fahrwerk, Bremssystem, Energieversorgungssystem, Elektrik und Elektronik, Fahrgastraum, Fahrzeugsteuerung und Information, Assistenz und Sicherheit, Beleuchtung und Sicht, Thermomanagement sowie Neben- und Versorgungssysteme auffassen. Antriebssystem, Lenksystem und ein Bedienplatz für eine führende Person fehlen; Zugkraft, Bremssteuerung und Energie kommen über die Kuppelstellen aus dem Zugverband. Kennzeichnend ist der hohe Anteil an Versorgungs- und Komfortsystemen, die einen bewohnten Raum eine ganze Nacht lang betreiben.",
+          "text": "Auf oberster Ebene umfasst der Schlafwagen die Hauptsysteme Fahrzeugstruktur und Fahrwerk, Bremssystem, Energieversorgungssystem, Elektrik und Elektronik, Fahrgastraum, Fahrzeugsteuerung und Information, Assistenz und Sicherheit, Beleuchtung und Sicht, Thermomanagement sowie Neben- und Versorgungssysteme. Antriebssystem, Lenksystem und ein Bedienplatz für eine führende Person fehlen; Zugkraft und Bremssteuerung kommen über die Kuppelstellen, elektrische Energie bei Zugsammelschienenspeisung ebenfalls, sonst vom Achsgenerator. Kennzeichnend ist der hohe Anteil an Versorgungs- und Komfortsystemen, die einen bewohnten Raum die Nacht über betreiben.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
-            "praemissen": ["P2", "P5", "P7", "P9", "P11", "P13", "P16", "P18", "P20", "P22", "P24"],
-            "schluss": "Der Schlafwagen besteht auf oberster Ebene aus zehn Hauptsystemen ohne Antrieb, Lenkung und Bedienplatz und ist über Kuppelstellen in den Zugverband eingebunden."
+            "praemissen": ["P2", "P5", "P7", "P9", "P11", "P13", "P16", "P29", "P18", "P20", "P22", "P24"],
+            "schluss": "Der Schlafwagen besteht auf oberster Ebene aus zehn Hauptsystemen ohne Antrieb, Lenkung und Bedienplatz und ist über Kuppelstellen in den Zugverband eingebunden; elektrische Energie bezieht er bei Zugsammelschienenspeisung aus dem Zugverband, mit Achsgenerator erzeugt er sie selbst."
           },
-          "sicherheit": "hoch",
+          "sicherheit": "mittel",
           "aussagetyp": "modellannahme",
           "herangezogene_artikel_ids": []
         }
@@ -529,10 +545,10 @@
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
-            "praemissen": ["P5", "P7", "P9", "P11", "P13", "P16", "P18", "P20", "P22", "P24", "Funktionsprinzip: Jeder Fluss hat Ursprung und Ziel im Modellblock."],
+            "praemissen": ["P5", "P7", "P9", "P11", "P13", "P16", "P29", "P18", "P20", "P22", "P24", "Funktionsprinzip: Jeder Fluss hat Ursprung und Ziel im Modellblock."],
             "schluss": "Die Flüsse verbinden die Hauptsysteme mechanisch, pneumatisch, elektrisch, informationstechnisch, thermisch und stofflich."
           },
-          "sicherheit": "hoch",
+          "sicherheit": "mittel",
           "aussagetyp": "modellannahme",
           "herangezogene_artikel_ids": []
         }
@@ -548,10 +564,10 @@
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
-            "praemissen": ["P5", "P7", "P9", "P11", "P13", "P16", "P18", "P20", "P22", "P24", "Funktionsliste des Modellblocks"],
+            "praemissen": ["P5", "P7", "P9", "P11", "P13", "P16", "P29", "P18", "P20", "P22", "P24", "Funktionsliste des Modellblocks"],
             "schluss": "Jede Funktion des Modellblocks ist mindestens einem ausführenden Element zugeordnet."
           },
-          "sicherheit": "hoch",
+          "sicherheit": "mittel",
           "aussagetyp": "modellannahme",
           "herangezogene_artikel_ids": []
         }
@@ -576,7 +592,7 @@
       {"id": "E14", "name": "Zug- und Stoßeinrichtung", "typ": "subsystem", "eltern_id": "E2", "absatz_ids": ["P5"]},
       {"id": "E15", "name": "Puffer", "typ": "komponente", "eltern_id": "E14", "absatz_ids": ["P5"]},
       {"id": "E16", "name": "Schraubenkupplung", "typ": "komponente", "eltern_id": "E14", "absatz_ids": ["P5"]},
-      {"id": "E17", "name": "Übergangseinrichtung", "typ": "komponente", "eltern_id": "E14", "absatz_ids": ["P5"]},
+      {"id": "E17", "name": "Übergangseinrichtung", "typ": "komponente", "eltern_id": "E3", "absatz_ids": ["P5"]},
       {"id": "E20", "name": "Bremssystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P6", "P7", "P25"], "kategorie": "bremse"},
       {"id": "E21", "name": "Druckluftbremse", "typ": "subsystem", "eltern_id": "E20", "absatz_ids": ["P6", "P7"]},
       {"id": "E22", "name": "Hauptluftleitung", "typ": "komponente", "eltern_id": "E21", "absatz_ids": ["P6", "P7"]},
@@ -585,9 +601,11 @@
       {"id": "E25", "name": "Hilfsluftbehälter", "typ": "komponente", "eltern_id": "E21", "absatz_ids": ["P6", "P7"]},
       {"id": "E26", "name": "Bremszylinder", "typ": "komponente", "eltern_id": "E21", "absatz_ids": ["P4", "P6", "P7"]},
       {"id": "E27", "name": "Radbremse", "typ": "komponente", "eltern_id": "E21", "absatz_ids": ["P7"]},
+      {"id": "E97", "name": "Gleitschutz", "typ": "komponente", "eltern_id": "E21", "absatz_ids": ["P6", "P7"]},
       {"id": "E28", "name": "Notbremsventil", "typ": "komponente", "eltern_id": "E20", "absatz_ids": ["P6", "P7"]},
       {"id": "E29", "name": "Feststellbremse", "typ": "komponente", "eltern_id": "E20", "absatz_ids": ["P6", "P7"]},
       {"id": "E30", "name": "Magnetschienenbremse", "typ": "komponente", "eltern_id": "E20", "absatz_ids": ["P6", "P7"]},
+      {"id": "E96", "name": "Notbremsüberbrückung", "typ": "komponente", "eltern_id": "E20", "absatz_ids": ["P7"]},
       {"id": "E31", "name": "Energieversorgungssystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P8", "P9", "P25"], "kategorie": "energieversorgung"},
       {"id": "E32", "name": "Energieübernahme", "typ": "subsystem", "eltern_id": "E31", "absatz_ids": ["P9"]},
       {"id": "E33", "name": "Zugsammelschiene", "typ": "komponente", "eltern_id": "E32", "absatz_ids": ["P8", "P9"]},
@@ -601,7 +619,7 @@
       {"id": "E42", "name": "Leitungssatz", "typ": "komponente", "eltern_id": "E41", "absatz_ids": ["P11"]},
       {"id": "E43", "name": "Stromverteiler", "typ": "komponente", "eltern_id": "E41", "absatz_ids": ["P11"]},
       {"id": "E44", "name": "Leistungsregelung", "typ": "komponente", "eltern_id": "E41", "absatz_ids": ["P10", "P11", "P22"]},
-      {"id": "E45", "name": "Zugsteuerleitung", "typ": "komponente", "eltern_id": "E40", "absatz_ids": ["P10", "P11"]},
+      {"id": "E45", "name": "Zugsteuerleitung", "typ": "komponente", "eltern_id": "E40", "absatz_ids": ["P10", "P11", "P7"]},
       {"id": "E50", "name": "Fahrgastraum", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P12", "P13", "P14", "P25"], "kategorie": "bedienraum"},
       {"id": "E51", "name": "Schlafabteil", "typ": "subsystem", "eltern_id": "E50", "absatz_ids": ["P12", "P13", "P14"]},
       {"id": "E52", "name": "Klappbett", "typ": "komponente", "eltern_id": "E51", "absatz_ids": ["P12", "P13"]},
@@ -611,10 +629,10 @@
       {"id": "E56", "name": "Seitengang", "typ": "komponente", "eltern_id": "E50", "absatz_ids": ["P12", "P13"]},
       {"id": "E57", "name": "Dienstabteil", "typ": "komponente", "eltern_id": "E50", "absatz_ids": ["P12", "P13", "P15"]},
       {"id": "E58", "name": "Sanitärraum", "typ": "komponente", "eltern_id": "E50", "absatz_ids": ["P12", "P13"]},
-      {"id": "E60", "name": "Fahrzeugsteuerung und Information", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P15", "P16", "P25"], "kategorie": "steuerung_information"},
+      {"id": "E60", "name": "Fahrzeugsteuerung und Information", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P15", "P16", "P29", "P25"], "kategorie": "steuerung_information"},
       {"id": "E61", "name": "Schaffnerrufanlage", "typ": "komponente", "eltern_id": "E60", "absatz_ids": ["P15", "P16"]},
-      {"id": "E62", "name": "Fahrgastinformation", "typ": "komponente", "eltern_id": "E60", "absatz_ids": ["P15", "P16"]},
-      {"id": "E63", "name": "Diagnose", "typ": "komponente", "eltern_id": "E60", "absatz_ids": ["P16"]},
+      {"id": "E62", "name": "Fahrgastinformation", "typ": "komponente", "eltern_id": "E60", "absatz_ids": ["P15", "P16", "P29"]},
+      {"id": "E63", "name": "Diagnose", "typ": "komponente", "eltern_id": "E60", "absatz_ids": ["P29"]},
       {"id": "E70", "name": "Assistenz und Sicherheit", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P17", "P18", "P25"], "kategorie": "assistenz_sicherheit"},
       {"id": "E71", "name": "Brandmeldeanlage", "typ": "komponente", "eltern_id": "E70", "absatz_ids": ["P18"]},
       {"id": "E72", "name": "Hilferufeinrichtung", "typ": "komponente", "eltern_id": "E70", "absatz_ids": ["P14", "P18"]},
@@ -646,7 +664,7 @@
       {"id": "F10", "name": "Schlafplätze bereitstellen", "ausgefuehrt_von": ["E51", "E52"], "absatz_ids": ["P1", "P12", "P13", "P28"]},
       {"id": "F11", "name": "Personal rufen", "ausgefuehrt_von": ["E61", "E72"], "absatz_ids": ["P15", "P16", "P18", "P28"]},
       {"id": "F12", "name": "Fahrgäste informieren", "ausgefuehrt_von": ["E62"], "absatz_ids": ["P15", "P16", "P28"]},
-      {"id": "F13", "name": "Fahrzeugzustand überwachen", "ausgefuehrt_von": ["E63"], "absatz_ids": ["P16", "P28"]},
+      {"id": "F13", "name": "Fahrzeugzustand überwachen", "ausgefuehrt_von": ["E63"], "absatz_ids": ["P29", "P28"]},
       {"id": "F14", "name": "Insassen schützen", "ausgefuehrt_von": ["E71", "E73", "E28"], "absatz_ids": ["P7", "P17", "P18", "P28"]},
       {"id": "F15", "name": "Innenraum beleuchten", "ausgefuehrt_von": ["E81"], "absatz_ids": ["P19", "P20", "P28"]},
       {"id": "F16", "name": "Lichtsignale abgeben", "ausgefuehrt_von": ["E82"], "absatz_ids": ["P20", "P28"]},
@@ -679,11 +697,14 @@
       {"id": "S21", "von": "E51", "nach": "E61", "art": "information", "medium": "Ruf", "absatz_ids": ["P16", "P27"], "schnittstelle": "Ruftaster im Abteil"},
       {"id": "S22", "von": "E71", "nach": "E61", "art": "information", "medium": "Brandalarm", "absatz_ids": ["P18", "P27"], "schnittstelle": "Alarmmeldung an Personal"},
       {"id": "S23", "von": "E88", "nach": "E86", "art": "information", "medium": "Solltemperatur", "absatz_ids": ["P22", "P27"]},
-      {"id": "S24", "von": "E86", "nach": "E63", "art": "information", "medium": "Zustands- und Störmeldungen", "absatz_ids": ["P16", "P27"], "schnittstelle": "Diagnoseschnittstelle"},
+      {"id": "S24", "von": "E86", "nach": "E63", "art": "information", "medium": "Zustands- und Störmeldungen", "absatz_ids": ["P29", "P27"], "schnittstelle": "Diagnoseschnittstelle"},
       {"id": "S25", "von": "E86", "nach": "E51", "art": "thermisch", "medium": "konditionierte Luft", "absatz_ids": ["P22", "P27"], "schnittstelle": "Luftauslass im Abteil"},
       {"id": "S26", "von": "E91", "nach": "E53", "art": "stoff", "medium": "Frischwasser", "absatz_ids": ["P24", "P27"], "schnittstelle": "Wasseranschluss der Zapfstelle"},
       {"id": "S27", "von": "E58", "nach": "E92", "art": "stoff", "medium": "Abwasser und Fäkalien", "absatz_ids": ["P24", "P27"], "schnittstelle": "Toilettenabfluss"},
-      {"id": "S28", "von": "E94", "nach": "E93", "art": "pneumatisch", "medium": "Unterdruck", "absatz_ids": ["P23", "P27"]}
+      {"id": "S28", "von": "E94", "nach": "E93", "art": "pneumatisch", "medium": "Unterdruck", "absatz_ids": ["P23", "P27"]},
+      {"id": "S29", "von": "E28", "nach": "E45", "art": "information", "medium": "Notbremsanforderung", "absatz_ids": ["P7"], "schnittstelle": "Notbremsschnittstelle"},
+      {"id": "S30", "von": "E10", "nach": "E97", "art": "information", "medium": "Radsatzdrehzahl", "absatz_ids": ["P6", "P7"]},
+      {"id": "S31", "von": "E97", "nach": "E26", "art": "pneumatisch", "medium": "Bremsdruckregelung", "absatz_ids": ["P6", "P7"]}
     ],
     "entfallene_kategorien": [
       {"kategorie": "antrieb", "grund": "Der Schlafwagen ist ein nicht angetriebener Reisezugwagen; die Zugkraft kommt vom Triebfahrzeug über die Zug- und Stoßeinrichtung."},
@@ -696,7 +717,7 @@
         "element_id": "E32",
         "bezeichnung": "Art der Energieübernahme",
         "alternativen": ["Zugsammelschiene mit Ladegerät und Wechselrichter", "Achsgenerator mit Bordnetzbatterie ohne Zugsammelschienenspeisung"],
-        "auswahlkriterien": ["Verfügbarkeit einer Zugenergieversorgung in den vorgesehenen Zügen", "Leistungsbedarf von Klimaanlage und Warmwasserbereitung", "Laufwiderstand und Instandhaltungsaufwand", "Betrieb in Netzen mit unterschiedlichen Heizspannungen"],
+        "auswahlkriterien": ["Verfügbarkeit einer Zugenergieversorgung in den vorgesehenen Zügen", "Leistungsbedarf von Klimaanlage und Warmwasserbereitung", "Laufwiderstand und Instandhaltungsaufwand"],
         "auswirkungen": [
           {"element_id": "E10", "beschreibung": "Beim Achsgenerator trägt ein Radsatz den Generatorantrieb."},
           {"element_id": "E86", "beschreibung": "Eine Klimaanlage ist praktisch nur mit Zugsammelschiene betreibbar."},
@@ -715,7 +736,7 @@
           {"element_id": "E26", "beschreibung": "Bremszylinder, teilweise Hilfsluftbehälter und Steuerventil wandern beim Doppelstockwagen ins Drehgestell."},
           {"element_id": "E51", "beschreibung": "Doppelstockwagen erlauben andere Abteilaufteilungen, etwa Vierbettabteile."},
           {"element_id": "E91", "beschreibung": "Unterflurraum für Tanks und Geräte wird knapper."},
-          {"element_id": "E17", "beschreibung": "Der Übergang zum Nachbarwagen liegt auf einer bestimmten Ebene und legt die Durchgangswege fest."}
+          {"element_id": "E17", "beschreibung": "Die Übergangseinrichtung liegt beim Doppelstockwagen auf der oberen oder unteren Ebene und muss zum Nachbarwagen passen."}
         ],
         "absatz_ids": ["P4", "P5"]
       },
@@ -767,7 +788,8 @@
         "auswirkungen": [
           {"element_id": "E10", "beschreibung": "Scheibenbremsen setzen Bremsscheiben auf den Radsatz."},
           {"element_id": "E9", "beschreibung": "Bremszangen, Bremszylinder und Magnetschienenbremse werden am Drehgestellrahmen befestigt."},
-          {"element_id": "E37", "beschreibung": "Eine Magnetschienenbremse braucht gesicherte elektrische Energie."}
+          {"element_id": "E37", "beschreibung": "Eine Magnetschienenbremse braucht gesicherte elektrische Energie."},
+          {"element_id": "E97", "beschreibung": "Scheibenbremsen für höhere Geschwindigkeiten verlangen einen Gleitschutz mit Drehzahlerfassung am Radsatz und Versorgung aus dem Bordnetz."}
         ],
         "absatz_ids": ["P6", "P7"]
       },
@@ -778,16 +800,30 @@
         "alternativen": ["Schraubenfedern", "Luftfedern"],
         "auswahlkriterien": ["Geforderter Schwingungskomfort im Schlaf", "Beschaffungs- und Instandhaltungskosten", "Verfügbarkeit von Druckluft aus der Hauptluftbehälterleitung"],
         "auswirkungen": [
-          {"element_id": "E23", "beschreibung": "Luftfedern werden aus der Hauptluftbehälterleitung gespeist, die dann durchgehend gekuppelt sein muss."},
+          {"element_id": "E23", "beschreibung": "Luftfedern brauchen eine Druckluftversorgung aus dem Zugverband, vorrangig aus der Hauptluftbehälterleitung; für den Betrieb ohne Hauptluftbehälterleitung ist eine Ersatzspeisung oder ein Notlaufverhalten festzulegen."},
           {"element_id": "E51", "beschreibung": "Die Federungsbauart bestimmt den Schwingungskomfort im Schlafabteil."}
         ],
         "absatz_ids": ["P3", "P5"]
+      },
+      {
+        "id": "V8",
+        "element_id": "E32",
+        "bezeichnung": "Spannungssysteme der Energieübernahme",
+        "alternativen": ["Einsystemwagen für eine Speisespannung", "Mehrsystemwagen für mehrere Speisespannungen und Frequenzen"],
+        "auswahlkriterien": ["Einsatznetze und deren Zugsammelschienenspannungen", "Betrieb mit Diesel- und Elektrolokomotiven", "Masse und Kosten der Eingangsstufe"],
+        "auswirkungen": [
+          {"element_id": "E36", "beschreibung": "Das Ladegerät braucht beim Mehrsystemwagen einen Eingang für mehrere Speisespannungen."},
+          {"element_id": "E87", "beschreibung": "Die Innenraumheizung wird umschaltbar ausgeführt oder über einen Umrichter gespeist."},
+          {"element_id": "E86", "beschreibung": "Die Klimaanlage wird beim Mehrsystemwagen über einen Umrichter versorgt."},
+          {"element_id": "E44", "beschreibung": "Die Leistungsregelung muss das anliegende Spannungssystem erkennen."}
+        ],
+        "absatz_ids": ["P8", "P9", "P21"]
       }
     ],
     "klaerungsfragen": [
       {"id": "K1", "frage": "Soll der Schlafwagen als Einstockwagen oder als Doppelstockwagen ausgeführt werden?", "element_ids": ["E2", "E3"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Abteilaufteilung, Lage der Bremsausrüstung und Einbauraum für Tanks ab.", "variante_ids": ["V2"]},
       {"id": "K2", "frage": "Muss der Wagen zwischen Netzen unterschiedlicher Spurweite verkehren, und wird dafür ein Drehgestellwechsel vorgesehen?", "element_ids": ["E8"], "anlass": "betrieb", "relevanz": "Davon hängt ab, ob die Bremsausrüstung vollständig im Drehgestell liegen muss.", "variante_ids": ["V3"]},
-      {"id": "K3", "frage": "Welcher Schwingungskomfort wird im Schlafabteil gefordert, und rechtfertigt er Luftfedern in der Sekundärfederung?", "element_ids": ["E13", "E51"], "anlass": "anforderung", "relevanz": "Davon hängen Federungsbauart und Druckluftbedarf aus der Hauptluftbehälterleitung ab.", "variante_ids": ["V7"]},
+      {"id": "K3", "frage": "Welcher Schwingungskomfort wird im Schlafabteil gefordert, rechtfertigt er Luftfedern in der Sekundärfederung, und wie wird die Luftfederung versorgt, wenn keine Hauptluftbehälterleitung gekuppelt ist?", "element_ids": ["E13", "E51"], "anlass": "anforderung", "relevanz": "Davon hängen Federungsbauart und Druckluftbedarf aus der Hauptluftbehälterleitung ab.", "variante_ids": ["V7"]},
       {"id": "K4", "frage": "Für welche Höchstgeschwindigkeit und welche Streckenanforderungen an das Bremsvermögen wird der Wagen ausgelegt?", "element_ids": ["E20"], "anlass": "anforderung", "relevanz": "Davon hängt ab, ob Klotz- oder Scheibenbremse genügt oder eine Magnetschienenbremse nötig ist.", "variante_ids": ["V6"]},
       {"id": "K5", "frage": "Wird der Wagen nur in Zügen mit Zugenergieversorgung eingesetzt, oder muss er auch ohne Speisung durch das Triebfahrzeug betrieben werden können?", "element_ids": ["E31", "E32"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Achsgenerator, Batteriegröße und Klimatisierbarkeit ab.", "variante_ids": ["V1"]},
       {"id": "K6", "frage": "Welche Verbraucher müssen bei Lokomotivwechsel, Rangieren und Abstellung ohne Speisung weiterlaufen, und wie lange?", "element_ids": ["E37", "E44"], "anlass": "betrieb", "relevanz": "Davon hängen Kapazität der Bordnetzbatterie und Abschaltstufen der Leistungsregelung ab.", "variante_ids": ["V1"]},
@@ -799,7 +835,9 @@
       {"id": "K12", "frage": "Soll der Wagen auch als letztes Fahrzeug eines Zuges laufen und dafür eigene Signalleuchten für das Zugschlusssignal tragen?", "element_ids": ["E80", "E82"], "anlass": "betrieb", "relevanz": "Davon hängen Ausrüstung und Energieversorgung der Signalleuchten ab."},
       {"id": "K13", "frage": "Soll jedes Abteil eine eigene Temperaturregelung erhalten, und welche Geräuschgrenzen gelten nachts im Abteil?", "element_ids": ["E85", "E86", "E88"], "anlass": "anforderung", "relevanz": "Davon hängen Zahl der Regelzonen, Luftführung und Anordnung des Klimageräts ab.", "variante_ids": ["V4"]},
       {"id": "K14", "frage": "Welches Toilettensystem ist mit den Entsorgungseinrichtungen der vorgesehenen Abstellanlagen und den Umweltvorgaben der Einsatzländer vereinbar?", "element_ids": ["E90", "E92"], "anlass": "schnittstelle", "relevanz": "Davon hängen Tankgröße, Unterdrucktechnik oder Bioreaktor und Entleerungsintervall ab.", "variante_ids": ["V5"]},
-      {"id": "K15", "frage": "Wie lange muss die Wasserversorgung ohne Nachfüllen auskommen, und muss der abgestellte Wagen gegen Frost geschützt werden?", "element_ids": ["E90", "E91"], "anlass": "betrieb", "relevanz": "Davon hängen Tankvolumen, Begleitheizung und Energiebedarf im Abstellbetrieb ab."}
+      {"id": "K15", "frage": "Wie lange muss die Wasserversorgung ohne Nachfüllen auskommen, und muss der abgestellte Wagen gegen Frost geschützt werden?", "element_ids": ["E90", "E91"], "anlass": "betrieb", "relevanz": "Davon hängen Tankvolumen, Begleitheizung und Energiebedarf im Abstellbetrieb ab."},
+      {"id": "K16", "frage": "In welchen Netzen soll der Wagen verkehren, und mit welchen Zugsammelschienenspannungen muss er dort betrieben werden können?", "element_ids": ["E31", "E32"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Eingangsstufe des Ladegeräts, Schaltung der Innenraumheizung und Versorgung der Klimaanlage ab.", "variante_ids": ["V8"]},
+      {"id": "K17", "frage": "Muss der Wagen eine Notbremsüberbrückung besitzen, und welche Triebfahrzeuge müssen sie auswerten können?", "element_ids": ["E20", "E28"], "anlass": "schnittstelle", "relevanz": "Davon hängen elektropneumatische Bremssteuerung, Belegung der Zugsteuerleitung und Kompatibilität mit den Triebfahrzeugen ab."}
     ],
     "anforderungsthemen": [
       {"id": "R1", "element_ids": ["E2", "E8", "E13"], "thema": "Laufkomfort und Laufsicherheit", "kenngroessen": ["Schwingungskomfort im Abteil", "Höchstgeschwindigkeit", "Radsatzlast", "Entgleisungssicherheit"]},
