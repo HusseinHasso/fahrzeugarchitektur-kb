@@ -4,7 +4,7 @@
   "artikeltyp": "blatt",
   "titel": "Sattelauflieger",
   "betrachtungsumfang": "Sattelauflieger (Sattelanhänger) für den Güterverkehr auf der Straße hinter einer Sattelzugmaschine oder einem Dolly, in Planen-, Koffer-, Kühlkoffer-, Kipp-, Tank-, Silo-, Tieflade- und Containerchassis-Bauart, mit starren Achsen, Liftachse oder Lenkachse, nur für die Straße oder kranbar für den kombinierten Verkehr. Betrachtete Antriebsarten sind der Auflieger ohne eigenen Antrieb und der elektrisch angetriebene Auflieger mit Traktionsbatterie und Traktionsmaschine. Ausgeschlossen sind Sattelzugmaschine und Dolly (Umgebung), Sattelzugomnibusse, Wohnauflieger, Fahrradauflieger, land- und forstwirtschaftliche Sonderbauarten sowie Auflieger mit Verbrennungs- oder Wasserstoffantrieb.",
-  "status": "in_arbeit",
+  "status": "zu_pruefen",
   "quellenzugriff": "ja",
   "kindartikel_ids": [],
   "quellen": [
@@ -157,6 +157,16 @@
       "abgerufen": true,
       "abrufdatum": "2026-11-24",
       "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q16",
+      "titel": "Straßenverkehrs-Zulassungs-Ordnung (StVZO) § 51b Umrissleuchten",
+      "urheber": "buzer.de (nichtamtliche konsolidierte Fassung der Straßenverkehrs-Zulassungs-Ordnung)",
+      "stand": "Fassung vom Abrufdatum",
+      "url": "https://www.buzer.de/51b_StVZO.htm",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-25",
+      "quellentyp": "norm"
     }
   ],
   "abschnitte": [
@@ -183,7 +193,7 @@
         },
         {
           "absatz_id": "P2",
-          "text": "Der Artikel beschreibt den Sattelauflieger für den Güterverkehr auf der Straße. Sattelzugmaschine, Dolly, Ladestelle und Umschlaggerät gehören zur Umgebung. Hauptfunktionen sind Ladung aufnehmen, Fahrzeuglasten tragen, Fahrzeug verzögern und Lichtsignale abgeben. Energie, Druckluft und Steuerbefehle bezieht der Auflieger über die Kupplungsstelle vom Zugfahrzeug. Mechanische, pneumatische, hydraulische, elektrische, thermische, stoffliche und informationstechnische Schnittstellen koppeln die zwölf Hauptsysteme, die bis zu Subsystemen und Komponenten zerlegt werden.",
+          "text": "Der Artikel beschreibt den Sattelauflieger für den Straßengüterverkehr; Sattelzugmaschine, Dolly, Ladestelle und Umschlaggerät gehören zur Umgebung. Hauptfunktionen sind Ladung aufnehmen, Fahrzeuglasten tragen, Fahrzeug verzögern und Lichtsignale abgeben. Energie, Druckluft und Steuerbefehle kommen über die Kupplungsstelle vom Zugfahrzeug. Mechanische, pneumatische, hydraulische, elektrische, thermische, stoffliche und informationstechnische Schnittstellen koppeln die zwölf Hauptsysteme, die bis zu Subsystemen und Komponenten zerlegt werden.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herangezogene_artikel_ids": [],
@@ -257,7 +267,7 @@
         },
         {
           "absatz_id": "P5",
-          "text": "Das System Fahrzeugstruktur und Fahrwerk gliedert sich in Tragstruktur und Achsaggregat. Zur Tragstruktur gehören der Rahmen aus Längs- und Querträgern, vorn die Aufsattelplatte mit dem Königszapfen und dahinter die Stützeinrichtung. Die Last fließt von Aufbau und Rahmen nach vorn über den Königszapfen in die Sattelkupplung und nach hinten über Federung und Achse zu Räder und Reifen. Die Federung ist als Luftfederung oder mechanische Federung ausgeführt; bei Luftfederung hebt ein Achslift eine Achse bei geringer Last an. Je nach Variante ist eine Achse des Achsaggregats als Lenkachse oder, beim elektrisch angetriebenen Auflieger, als Antriebsachse ausgeführt. Für tiefe Ladeböden wird der Rahmen hinter der Aufsattelplatte als Schwanenhals gekröpft.",
+          "text": "Fahrzeugstruktur und Fahrwerk gliedert sich in Tragstruktur und Achsaggregat. Zur Tragstruktur gehören der Rahmen, vorn die Aufsattelplatte mit dem Königszapfen und dahinter die Stützeinrichtung. Die Aufliegelast fließt vom Rahmen über die Aufsattelplatte in die Kupplungsplatte, Zug- und Bremskräfte über den Königszapfen, die übrige Last über Federung und Achse zu Rädern und Reifen. Bei Luftfederung hebt ein Achslift eine Achse bei geringer Last an. Je nach Variante wird eine Achse zur Lenkachse oder, beim elektrisch angetriebenen Auflieger, zur Antriebsachse. Für tiefe Ladeböden ist der Rahmen hinter der Aufsattelplatte als Schwanenhals gekröpft.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herangezogene_artikel_ids": [],
@@ -265,12 +275,13 @@
             "praemissen": [
               "P1: Gewicht teils auf Zugmaschine, teils auf eigene Achsen",
               "P3: Königszapfen, Achsen, Liftachse an Luftfederbälgen",
+              "Q3: die Unterseite des Aufliegers dreht sich auf der Kupplungsplatte der Sattelkupplung, der Königszapfen sitzt in deren Mitte (Einleitung)",
               "P4: Stützeinrichtung trägt den abgestellten Auflieger",
               "Q2: Drop-deck-Auflieger mit abgesenktem Boden hinter der Zugmaschine (Abschnitt Types)",
               "Funktionsprinzip: jede Last braucht einen geschlossenen Pfad zu den Aufstandspunkten",
               "P12, P14: Lenkachse und Antriebsachse ersetzen jeweils eine Achse des Achsaggregats"
             ],
-            "schluss": "Tragstruktur und Achsaggregat bilden die beiden Lastpfade zur Sattelkupplung und zur Fahrbahn."
+            "schluss": "Tragstruktur und Achsaggregat bilden die Lastpfade zur Fahrbahn: die Aufliegelast über die Aufsattelplatte auf die Kupplungsplatte, Zug- und Bremskräfte über den Königszapfen, die übrige Last über das Achsaggregat."
           },
           "sicherheit": "mittel",
           "aussagetyp": "loesung"
@@ -305,7 +316,7 @@
         },
         {
           "absatz_id": "P7",
-          "text": "Das System Aufbau und Ladung besteht aus Aufbaustruktur, Ladungssicherung und Ladehilfen. Die Aufbaustruktur umfasst Ladeboden, Laderaum mit Stirnwand, Seitenwänden oder Planen und Dach sowie das Heckportal mit Flügeltüren oder Rolltor. Die Ladungssicherung leitet über Zurrpunkte, Rungen und Sperrbalken die Trägheitskräfte der Ladung in Ladeboden und Rahmen. Ladehilfen wie Kippeinrichtung und Ladebordwand beziehen hydraulische oder elektrische Energie aus Neben- und Versorgungssystemen oder Energieversorgung. Containerchassis ersetzen den Aufbau durch Verriegelungen am Rahmen.",
+          "text": "Aufbau und Ladung gliedert sich in Aufbaustruktur, Ladungssicherung und Ladehilfen. Die Aufbaustruktur umfasst Ladeboden, Laderaum mit Stirnwand, Seitenwänden oder Planen und Dach sowie das Heckportal mit Flügeltüren oder Rolltor. Die Ladungssicherung leitet über Zurrpunkte, Rungen und Sperrbalken die Trägheitskräfte der Ladung in Ladeboden und Rahmen. Ladehilfen wie Kippeinrichtung und Ladebordwand beziehen hydraulische oder elektrische Energie aus Neben- und Versorgungssystemen oder Energieversorgung.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herangezogene_artikel_ids": [],
@@ -330,12 +341,12 @@
       "absaetze": [
         {
           "absatz_id": "P8",
-          "text": "Nach der deutschen Straßenverkehrs-Zulassungs-Ordnung müssen Sattelanhänger eine feststellbare, nachstellbare Bremsanlage haben, die eine mittlere Vollverzögerung von mindestens 4,5 m/s² erreicht und hinter Kraftfahrzeugen über 25 km/h auf alle Räder wirkt. Die festgestellte Bremse muss den vollbelasteten Anhänger rein mechanisch bei 18 Prozent Steigung und Gefälle halten; trennt er sich vom Zugfahrzeug, muss er selbsttätig zum Stehen kommen. Auflaufbremsen sind bei Sattelanhängern nicht zulässig.",
+          "text": "Nach der deutschen Straßenverkehrs-Zulassungs-Ordnung brauchen Sattelanhänger eine feststellbare, nachstellbare Bremsanlage mit mindestens 4,5 m/s² mittlerer Vollverzögerung, die hinter Kraftfahrzeugen über 25 km/h auf alle Räder wirkt. Festgestellt muss sie den vollbelasteten Anhänger rein mechanisch bei 18 Prozent Steigung und Gefälle halten; reißt er ab, muss er selbsttätig zum Stehen kommen. Auflaufbremsen sind unzulässig. Dies gilt nach § 41 Absatz 9 für zwei- und mehrachsige Anhänger; für Anhänger von Lastkraftwagen und Sattelzugmaschinen über 25 km/h bauartbedingter Höchstgeschwindigkeit gelten nach Absatz 18 stattdessen die Bremsbestimmungen im Anhang. Sattelanhänger tragen mindestens zwei Unterlegkeile in Halterungen, die Verlieren und Klappern ausschließen.",
           "begruendung": "belegt",
           "belege": [
             {
               "quellen_id": "Q7",
-              "fundstelle": "§ 41 Absatz 9 und Absatz 10 Satz 2"
+              "fundstelle": "§ 41 Absatz 9, Absatz 10 Satz 2, Absatz 14 Satz 2 Nummer 2 Buchstabe b und Satz 4, Absatz 18 Satz 1"
             }
           ],
           "herangezogene_artikel_ids": [],
@@ -368,7 +379,7 @@
         },
         {
           "absatz_id": "P10",
-          "text": "Strukturell besteht das Bremssystem aus Druckluftbremsanlage, Betriebsbremse, Feststellbremse und Bremsregelung. In der Druckluftbremsanlage kommen über die Kupplungsköpfe Vorratsdruck und Steuerdruck vom Zugfahrzeug. Das Anhängerbremsventil steuert damit aus dem Druckluftbehälter die Bremszylinder an und bremst beim Abreißen der Vorratsleitung selbsttätig. Kombinierte Bremszylinder betätigen mit dem Membranteil die Betriebsbremse an den Radbremsen und bilden mit dem Federspeicherteil die Feststellbremse. Die Bremsregelung umfasst das Antiblockiersystem, im elektronisch geregelten Bremssystem auch eine lastabhängige Bremskraftverteilung und eine Stabilitätsregelung, die bei Kippgefahr selbsttätig bremst.",
+          "text": "Das Bremssystem besteht aus Druckluftbremsanlage, Betriebsbremse, Feststellbremse und Bremsregelung. Mit Vorrats- und Steuerdruck aus den Kupplungsköpfen steuert das Anhängerbremsventil aus dem Druckluftbehälter die Bremszylinder an und bremst beim Abreißen der Vorratsleitung selbsttätig. Kombinierte Bremszylinder wirken mit dem Membranteil als Betriebsbremse, mit dem Federspeicherteil als Feststellbremse. Zur Bremsregelung gehören Antiblockiersystem und lastabhängige Bremskraftverteilung, pneumatisch oder elektronisch; das elektronisch geregelte Bremssystem kann zusätzlich eine Stabilitätsregelung tragen, die bei Kippgefahr selbsttätig bremst.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herangezogene_artikel_ids": [],
@@ -377,7 +388,8 @@
               "P8: Bremse auf alle Räder, selbsttätige Abreißbremsung, mechanisch gehaltene Feststellbremse",
               "P9: Zweileitungssystem, Federspeicher, Vorratsbehälter, Antiblockiersystem",
               "Q6: Relaisventil der Anhängerbremse, Federspeicherzylinder (Abschnitt Control system)",
-              "P3: Bremswirkung hängt von der Achslast ab"
+              "P3: Bremswirkung hängt von der Achslast ab",
+              "Q8: automatisch-lastabhängige Bremskraftregeleinrichtung neben dem automatischen Blockierverhinderer (§ 41b Absatz 4)"
             ],
             "schluss": "Aus Pflichtfunktionen und Druckluftprinzip folgen Ventil, Zylinder, Radbremsen und Regelung als Bausteine."
           },
@@ -410,7 +422,7 @@
         },
         {
           "absatz_id": "P12",
-          "text": "Mit starren Achsen entfällt das Lenksystem; die Spur folgt dann allein dem Königszapfen. Sonst besteht es aus Lenkzylinder und Lenksteuergerät, die eine Lenkachse des Achsaggregats verstellen. Eine nachlaufgelenkte Lenkachse stellt sich durch Seitenkräfte selbst ein und wird bei Rückwärtsfahrt gesperrt. Bei der Zwangslenkung erfasst das Lenksteuergerät den Knickwinkel zum Zugfahrzeug, berechnet die Radeinschläge und steuert die Lenkzylinder, die Öl vom Hydraulikaggregat erhalten.",
+          "text": "Mit starren Achsen entfällt das Lenksystem. Sonst verstellen Lenkzylinder und Lenksteuergerät eine Lenkachse des Achsaggregats. Eine nachlaufgelenkte Lenkachse stellt sich durch Seitenkräfte selbst ein und wird bei Rückwärtsfahrt gesperrt. Bei der Zwangslenkung erfasst das Lenksteuergerät den Knickwinkel zum Zugfahrzeug, berechnet die Radeinschläge und steuert die vom Hydraulikaggregat gespeisten Lenkzylinder.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herangezogene_artikel_ids": [],
@@ -447,7 +459,7 @@
         },
         {
           "absatz_id": "P14",
-          "text": "Der herkömmliche Sattelauflieger hat kein Antriebssystem. Beim elektrisch angetriebenen Auflieger ersetzt eine Antriebsachse eine Achse des Achsaggregats; die Traktionsmaschine des Antriebssystems treibt sie an. Ein Wechselrichter speist die Traktionsmaschine aus dem Hochvolt-Bordnetz und kehrt beim Bremsen den Energiefluss um, sodass Bremsenergie in die Traktionsbatterie zurückfließt. Die Antriebsleistung muss zur Zugkraft der Sattelzugmaschine passen, damit der Auflieger nicht schiebt; ihre Sollwerte kommen über den Fahrzeugbus.",
+          "text": "Der herkömmliche Sattelauflieger hat kein Antriebssystem. Beim elektrisch angetriebenen Auflieger treibt die Traktionsmaschine eine Antriebsachse an. Ein Wechselrichter speist sie aus dem Hochvolt-Bordnetz und kehrt beim Bremsen den Energiefluss um, sodass Bremsenergie in die Traktionsbatterie zurückfließt. Damit der Auflieger nicht schiebt, muss die Antriebsleistung zur Zugkraft der Zugmaschine passen; die Sollwerte kommen über den Fahrzeugbus oder aus einer Erfassung der Koppelkraft an der Kupplungsstelle.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herangezogene_artikel_ids": [],
@@ -455,11 +467,12 @@
             "praemissen": [
               "P1: Auflieger ohne eigenen Antrieb wird gezogen",
               "P13: elektrischer Antriebsstrang unterstützt die Zugmaschine",
-              "Funktionsprinzip: ein elektrischer Antrieb braucht Energiespeicher, Wandler und Ansteuerung"
+              "Funktionsprinzip: ein elektrischer Antrieb braucht Energiespeicher, Wandler und Ansteuerung",
+              "Annahme über Bauweisen der Sollwertbildung (Vorgabe des Zugfahrzeugs oder Erfassung der Koppelkraft) ohne Quelle in diesem Lauf"
             ],
-            "schluss": "Der elektrische Antrieb besteht aus Traktionsmaschine und Wechselrichter mit Sollwertvorgabe und treibt eine Antriebsachse des Achsaggregats an."
+            "schluss": "Der elektrische Antrieb besteht aus Traktionsmaschine und Wechselrichter, treibt eine Antriebsachse des Achsaggregats an und erhält seine Sollwerte je nach Bauweise vom Zugfahrzeug oder aus der Koppelkraft."
           },
-          "sicherheit": "mittel",
+          "sicherheit": "gering",
           "aussagetyp": "variante"
         }
       ],
@@ -496,7 +509,7 @@
       "absaetze": [
         {
           "absatz_id": "P16",
-          "text": "Das System Elektrik und Elektronik verbindet den Auflieger elektrisch mit dem Zugfahrzeug. Über Steckverbindungen an der Stirnseite kommen die Versorgung der Leuchten sowie Versorgung und Datenleitung der Bremsregelung. Das Niedervolt-Bordnetz verteilt die Energie über Leitungssatz und Sicherungen an Leuchten, Steuergeräte und Sensoren. Der Fahrzeugbus verbindet Bremsregelung, Lenksteuergerät, Wechselrichter, Reifendrucküberwachung und Telematikeinheit und meldet Zustände und Störungen an das Zugfahrzeug.",
+          "text": "Das System Elektrik und Elektronik verbindet den Auflieger elektrisch mit dem Zugfahrzeug. Steckverbindungen an der Stirnseite versorgen Leuchten und Bremsregelung; das Niedervolt-Bordnetz verteilt die Energie über Leitungssatz und Sicherungen an Leuchten, Steuergeräte und Sensoren. Beim elektronisch geregelten Bremssystem verbindet ein Fahrzeugbus Bremsregelung, Lenksteuergerät, Wechselrichter, Reifendrucküberwachung und Telematikeinheit und meldet Zustände und Störungen ans Zugfahrzeug; bei reinem Antiblockiersystem führen die Steckverbindungen nur Versorgung und Störungssignal.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herangezogene_artikel_ids": [],
@@ -505,11 +518,12 @@
               "P20: Leuchten sind vorgeschrieben und getrennt abgesichert",
               "P9: Antiblockiersystem am Auflieger",
               "Q15: Störungssignal des Antiblockiersystems muss zum Zugfahrzeug übertragbar sein (S5.2.3.2)",
-              "P4: elektrische Anschlüsse werden beim Kuppeln verbunden"
+              "P4: elektrische Anschlüsse werden beim Kuppeln verbunden",
+              "P10, V4: Umfang der Bremsregelung entscheidet über den Fahrzeugbus"
             ],
-            "schluss": "Ohne eigene Hauptenergiequelle braucht der Auflieger eine elektrische und eine Datenschnittstelle zum Zugfahrzeug und ein internes Bordnetz."
+            "schluss": "Der Auflieger braucht eine elektrische Schnittstelle zum Zugfahrzeug und ein internes Bordnetz; ein Fahrzeugbus mit Datenleitung zum Zugfahrzeug kommt mit dem elektronisch geregelten Bremssystem hinzu."
           },
-          "sicherheit": "hoch",
+          "sicherheit": "mittel",
           "aussagetyp": "loesung"
         }
       ],
@@ -521,7 +535,7 @@
       "absaetze": [
         {
           "absatz_id": "P17",
-          "text": "Das System Fahrzeugsteuerung und Information ist schwach ausgeprägt, weil das Zugfahrzeug die Fahrt führt. Das Steuergerät der Bremsregelung kann Aufgaben eines Fahrzeugmanagements übernehmen: Mit der Achslasterfassung über den Balgdruck der Luftfederung steuert es Bremskraft und Achslift. Die Diagnose speichert Fehler und ist über eine Diagnoseschnittstelle auslesbar. Die Telematikeinheit bestimmt die Position des Aufliegers und meldet Laderaumtemperatur, Türzustand und Fehler an den Betreiber, auch abgekuppelt.",
+          "text": "Fahrzeugsteuerung und Information ist schwach ausgeprägt, weil das Zugfahrzeug die Fahrt führt. Das Steuergerät der Bremsregelung kann Aufgaben eines Fahrzeugmanagements übernehmen und steuert mit der Achslasterfassung über den Balgdruck der Luftfederung Bremskraft und Achslift. Die Diagnose speichert Fehler, auslesbar über eine Diagnoseschnittstelle. Die Telematikeinheit bestimmt die Position und meldet Laderaumtemperatur, Türzustand und Fehler an den Betreiber, auch abgekuppelt.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herangezogene_artikel_ids": [],
@@ -567,7 +581,7 @@
         },
         {
           "absatz_id": "P19",
-          "text": "Das System Assistenz und Sicherheit umfasst, da kein Fahrer an Bord ist, passiven Schutz und überwachende Funktionen. Zum passiven Schutz gehören Unterfahrschutz und seitliche Schutzvorrichtung am Rahmen. Die Reifendrucküberwachung meldet Druckverlust über den Fahrzeugbus an das Zugfahrzeug. Eine Umfeldsensorik am Heck mit Kamera oder Abstandssensoren unterstützt das Rückwärtsfahren an die Rampe; die Stabilitätsregelung gehört zur Bremsregelung.",
+          "text": "Da kein Fahrer an Bord ist, umfasst Assistenz und Sicherheit passiven Schutz und überwachende Funktionen. Zum passiven Schutz gehören Unterfahrschutz und seitliche Schutzvorrichtung am Rahmen. Die Reifendrucküberwachung meldet Druckverlust über den Fahrzeugbus an das Zugfahrzeug. Eine Umfeldsensorik am Heck mit Kamera oder Abstandssensoren unterstützt das Rückwärtsfahren an die Rampe; die Stabilitätsregelung gehört zur Bremsregelung.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herangezogene_artikel_ids": [],
@@ -609,7 +623,7 @@
         },
         {
           "absatz_id": "P21",
-          "text": "Das System Beleuchtung und Sicht macht den Auflieger erkennbar und zeigt am Heck die Signale des verdeckten Zugfahrzeugs. Es besteht aus den Leuchten, also Schlussleuchten, Bremsleuchten, Fahrtrichtungsanzeiger und Seitenmarkierungsleuchten, sowie aus Rückstrahlern. Das Zugfahrzeug schaltet die Leuchten über die Steckverbindungen, das Niedervolt-Bordnetz versorgt sie. Sichteinrichtungen trägt der Auflieger nicht; Spiegel und Kamera-Monitor-System gehören zum Zugfahrzeug.",
+          "text": "Beleuchtung und Sicht macht den Auflieger erkennbar und zeigt am Heck die Signale des verdeckten Zugfahrzeugs. Zu den Leuchten gehören Schluss-, Brems- und Seitenmarkierungsleuchten, Fahrtrichtungsanzeiger, Umrissleuchten und die Kennzeichenleuchte; hinzu kommen Rückstrahler und die retroreflektierende Konturmarkierung an Seiten und Heck. Umrissleuchten an breiten Fahrzeugen und Konturmarkierung an großen schweren Anhängern schreibt die deutsche Straßenverkehrs-Zulassungs-Ordnung vor. Das Zugfahrzeug schaltet die Leuchten über die Steckverbindungen, das Niedervolt-Bordnetz versorgt sie.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herangezogene_artikel_ids": [],
@@ -618,9 +632,12 @@
               "P20: vorgeschriebene Leuchten und Rückstrahler",
               "P1: Auflieger hinter der Zugmaschine verdeckt deren Heck",
               "P16: Versorgung über Steckverbindungen und Niedervolt-Bordnetz",
-              "P2: kein Fahrer und kein Bedienraum an Bord"
+              "P2: kein Fahrer und kein Bedienraum an Bord",
+              "Q16: Umrissleuchten an Fahrzeugen über 2,10 m Breite vorgeschrieben (§ 51b Absatz 2)",
+              "Q13: auffällige Markierungen seitlich und hinten an Fahrzeugen der Klassen O3 und O4 vorgeschrieben (§ 53 Absatz 10 Satz 2)",
+              "Q1: Sattelauflieger führen ein eigenes Kennzeichen (Abschnitt Anwendung)"
             ],
-            "schluss": "Der Auflieger trägt die Signaleinrichtungen des Gespannhecks, aber keine Sichteinrichtungen."
+            "schluss": "Der Auflieger trägt die Signaleinrichtungen des Gespannhecks einschließlich Umrissleuchten, Kennzeichenleuchte und Konturmarkierung, aber keine Sichteinrichtungen."
           },
           "sicherheit": "hoch",
           "aussagetyp": "loesung"
@@ -634,7 +651,7 @@
       "absaetze": [
         {
           "absatz_id": "P22",
-          "text": "Das Thermomanagement betrifft vor allem die Ladung. Beim Kühlauflieger hält ein Kühlaggregat an der Stirnwand den wärmegedämmten Laderaum auf Solltemperatur; es arbeitet mit eigenem Verbrennungsmotor oder elektrisch. Temperaturfühler im Laderaum melden die Istwerte an Aggregat und Telematikeinheit. Beim elektrisch angetriebenen Auflieger kommt die Batterietemperierung für Traktionsbatterie und Wechselrichter hinzu. Die Radbremsen geben ihre Wärme ohne eigenes Kühlsystem an die Luft ab.",
+          "text": "Das Thermomanagement betrifft vor allem die Ladung. Beim Kühlauflieger hält ein Kühlaggregat an der Stirnwand den wärmegedämmten Laderaum auf Solltemperatur, mit eigenem Verbrennungsmotor oder elektrisch. Temperaturfühler im Laderaum melden die Istwerte an Aggregat und Telematikeinheit. Beim elektrisch angetriebenen Auflieger kommt die Batterietemperierung für Traktionsbatterie und Wechselrichter hinzu.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herangezogene_artikel_ids": [],
@@ -675,7 +692,7 @@
       "absaetze": [
         {
           "absatz_id": "P24",
-          "text": "Die Neben- und Versorgungssysteme liefern Hilfsenergie. Die Druckluftanlage speichert die über die Vorratsleitung gelieferte Druckluft im Druckluftbehälter und verteilt sie über ein Überströmventil an Bremse und Luftfederung, wobei die Bremse Vorrang hat. Ein Hebe-Senk-Ventil passt die Luftfederung an die Rampenhöhe an. Das Hydraulikaggregat versorgt Kippeinrichtung, Ladebordwand und Lenkzylinder; es wird elektrisch angetrieben oder über eine Hydraulikkupplung vom Zugfahrzeug gespeist.",
+          "text": "Die Neben- und Versorgungssysteme liefern Hilfsenergie. Die Druckluftanlage speichert die Druckluft aus der Vorratsleitung im Druckluftbehälter und verteilt sie über ein Überströmventil vorrangig an die Bremse, danach an die Luftfederung. Ein Hebe-Senk-Ventil passt die Luftfederung an die Rampenhöhe an. Das Hydraulikaggregat versorgt Kippeinrichtung, Ladebordwand und Lenkzylinder; es wird elektrisch angetrieben oder über eine Hydraulikkupplung vom Zugfahrzeug gespeist.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herangezogene_artikel_ids": [],
@@ -713,7 +730,7 @@
       "absaetze": [
         {
           "absatz_id": "P26",
-          "text": "Architekturell besteht der Sattelauflieger auf oberster Ebene aus Fahrzeugstruktur und Fahrwerk, Aufbau und Ladung, Bremssystem, Lenksystem, Antriebssystem, Energieversorgungssystem, Elektrik und Elektronik, Fahrzeugsteuerung und Information, Assistenz und Sicherheit, Beleuchtung und Sicht, Thermomanagement sowie Neben- und Versorgungssystemen; ein Fahrerhaus fehlt. Prägend ist die Kupplungsstelle, über die Last, Druckluft, elektrische Energie und Daten fließen. Lenk-, Antriebs- und Energieversorgungssystem sind nur in bestimmten Varianten besetzt.",
+          "text": "Auf oberster Ebene besteht der Sattelauflieger aus Fahrzeugstruktur und Fahrwerk, Aufbau und Ladung, Bremssystem, Lenksystem, Antriebssystem, Energieversorgungssystem, Elektrik und Elektronik, Fahrzeugsteuerung und Information, Assistenz und Sicherheit, Beleuchtung und Sicht, Thermomanagement sowie Neben- und Versorgungssystemen; ein Fahrerhaus fehlt. Prägend ist die Kupplungsstelle für Last, Druckluft, elektrische Energie und Daten. Lenk-, Antriebs- und Energieversorgungssystem sind nur in bestimmten Varianten besetzt.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herangezogene_artikel_ids": [],
@@ -735,7 +752,7 @@
       "absaetze": [
         {
           "absatz_id": "P27",
-          "text": "Für eine Modellierung in SysML bildet der Block Sattelauflieger das Gesamtsystem mit zwölf Hauptsystemen als Teilen; Sattelzugmaschine und Dolly sind externe Blöcke. Dekompositionspfade sind etwa Fahrzeugstruktur und Fahrwerk → Tragstruktur → Königszapfen, Bremssystem → Druckluftbremsanlage → Anhängerbremsventil, Neben- und Versorgungssysteme → Druckluftanlage → Druckluftbehälter und Energieversorgungssystem → Elektrische Fahrenergieversorgung → Traktionsbatterie. Varianten lassen sich als austauschbare Teile abbilden. Ports an Königszapfen, Kupplungsköpfen und Steckverbindungen bilden die Kupplungsstelle ab, Konnektoren die internen Druckluft-, Hydraulik-, Bordnetz- und Busverbindungen. Geeignet sind Blockdefinitionsdiagramme, interne Blockdiagramme und Aktivitätsdiagramme für Ankuppeln und Bremsen.",
+          "text": "In SysML bildet der Block Sattelauflieger das Gesamtsystem mit zwölf Hauptsystemen als Teilen; Sattelzugmaschine und Dolly sind externe Blöcke. Dekompositionspfade sind etwa Fahrzeugstruktur und Fahrwerk → Tragstruktur → Königszapfen, Bremssystem → Druckluftbremsanlage → Anhängerbremsventil und Energieversorgungssystem → Elektrische Fahrenergieversorgung → Traktionsbatterie. Varianten werden als austauschbare Teile abgebildet. Ports an Königszapfen, Kupplungsköpfen und Steckverbindungen bilden die Kupplungsstelle ab, Konnektoren die internen Druckluft-, Hydraulik-, Bordnetz- und Busverbindungen. Geeignet sind Blockdefinitions-, interne Block- und Aktivitätsdiagramme für Ankuppeln und Bremsen.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herangezogene_artikel_ids": [],
@@ -757,7 +774,7 @@
       "absaetze": [
         {
           "absatz_id": "P28",
-          "text": "Mechanisch: Ladungslast von Aufbaustruktur und Ladungssicherung in den Rahmen, von dort über den Königszapfen zur Sattelkupplung und über Federung und Achse zu Räder und Reifen; Stützlast der Stützeinrichtung; Stellkraft der Lenkzylinder an die Lenkachse; Drehmoment der Traktionsmaschine an die Antriebsachse und weiter an Räder und Reifen. Pneumatisch: Vorrats- und Steuerdruck über die Kupplungsköpfe, Druckluftbehälter an Anhängerbremsventil und Überströmventil, weiter an Bremszylinder und Federung. Hydraulisch: Hydraulikaggregat an Kippeinrichtung und Lenkzylinder. Elektrisch: Steckverbindungen an Niedervolt-Bordnetz und Leuchten, Traktionsbatterie über Hochvolt-Bordnetz und Wechselrichter an die Traktionsmaschine und zurück, Gleichspannungswandler ins Niedervolt-Bordnetz, Bordnetzbatterie an Ladebordwand. Stoff und thermisch: Kraftstoff zum Kühlaggregat, Kälte in den Laderaum, Batterietemperierung an Traktionsbatterie. Information: Bremsanforderung an die Bremsregelung, Balgdruck an die Achslasterfassung, Sensordaten über den Fahrzeugbus an Telematikeinheit, Wechselrichter und Zugfahrzeug.",
+          "text": "Mechanisch: Ladungslast über Aufbaustruktur und Ladungssicherung in den Rahmen, Aufliegelast in die Kupplungsplatte, Zug- und Bremskräfte über den Königszapfen, Radlast über Federung und Achse an Räder und Reifen, Stützlast der Stützeinrichtung, Stellkraft der Lenkzylinder, Drehmoment der Traktionsmaschine über die Antriebsachse. Pneumatisch: Vorrats- und Steuerdruck über Kupplungsköpfe und Druckluftbehälter an Bremszylinder und Federung. Hydraulisch: Hydraulikaggregat an Kippeinrichtung und Lenkzylinder. Elektrisch: Steckverbindungen an Niedervolt-Bordnetz und Leuchten, Traktionsbatterie über Hochvolt-Bordnetz und Wechselrichter an die Traktionsmaschine und zurück, Gleichspannungswandler und Bordnetzbatterie an Niedervoltverbraucher. Stofflich und thermisch: Kraftstoff zum Kühlaggregat, Kälte in den Laderaum, Batterietemperierung. Information: Bremsanforderung, Balgdruck und Busdaten an Bremsregelung, Telematikeinheit, Wechselrichter und Zugfahrzeug.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herangezogene_artikel_ids": [],
@@ -778,7 +795,7 @@
       "absaetze": [
         {
           "absatz_id": "P29",
-          "text": "Funktionszuordnung: Rahmen, Königszapfen und Achsaggregat: Fahrzeuglasten tragen; Königszapfen, Kupplungsköpfe und Steckverbindungen: Zugfahrzeug ankuppeln; Stützeinrichtung: Fahrzeug abstützen; Aufbaustruktur und Ladungssicherung: Ladung aufnehmen; Kippeinrichtung: Ladung abkippen; Anhängerbremsventil, Bremszylinder, Betriebsbremse, Antiblockiersystem und Stabilitätsregelung: Fahrzeug verzögern; Feststellbremse: Fahrzeug festhalten; Lenkachse, Lenkzylinder und Lenksteuergerät: Fahrzeug lenken; Traktionsmaschine: Antriebsleistung erzeugen; Antriebsachse: Drehmoment übertragen; Räder und Reifen und Traktionsmaschine: Fahrzeug fortbewegen; Traktionsmaschine und Wechselrichter: Bremsenergie zurückgewinnen; Traktionsbatterie, Kraftstofftank, Bordnetzbatterie und Druckluftbehälter: Energie speichern; Hochvolt-Bordnetz und Niedervolt-Bordnetz: Elektrische Energie verteilen; Druckluftanlage: Druckluft bereitstellen; Hydraulikaggregat: Hydraulische Leistung bereitstellen; Fahrzeugbus, Steckverbindungen und Telematikeinheit: Daten übertragen; Achslasterfassung, Diagnose und Reifendrucküberwachung: Fahrzeugzustand überwachen; Telematikeinheit: Fahrzeugposition bestimmen; Umfeldsensorik: Fahrzeugumfeld erfassen; Unterfahrschutz und seitliche Schutzvorrichtung: Verkehrsteilnehmer schützen; Leuchten und Rückstrahler: Lichtsignale abgeben; Kühlaggregat und Temperaturfühler: Ladung temperieren; Batterietemperierung: Betriebstemperatur regeln.",
+          "text": "Funktionszuordnung: Fahrzeuglasten tragen: Rahmen, Aufsattelplatte, Königszapfen, Achsaggregat; Zugfahrzeug ankuppeln: Königszapfen, Kupplungsköpfe, Steckverbindungen; Fahrzeug abstützen: Stützeinrichtung; Ladung aufnehmen: Aufbaustruktur, Ladungssicherung; Ladung abkippen: Kippeinrichtung; Fahrzeug verzögern: Anhängerbremsventil, Bremszylinder, Betriebsbremse, Antiblockiersystem, Stabilitätsregelung; Fahrzeug festhalten: Feststellbremse, Unterlegkeile; Fahrzeug lenken: Lenkachse, Lenkzylinder, Lenksteuergerät; Antriebsleistung erzeugen: Traktionsmaschine; Drehmoment übertragen: Antriebsachse; Fahrzeug fortbewegen: Räder und Reifen, Traktionsmaschine; Bremsenergie zurückgewinnen: Traktionsmaschine, Wechselrichter; Energie speichern: Traktionsbatterie, Kraftstofftank, Bordnetzbatterie, Druckluftbehälter; Elektrische Energie verteilen: Hochvolt-Bordnetz, Niedervolt-Bordnetz; Druckluft bereitstellen: Druckluftanlage; Hydraulische Leistung bereitstellen: Hydraulikaggregat; Daten übertragen: Fahrzeugbus, Steckverbindungen, Telematikeinheit; Fahrzeugzustand überwachen: Achslasterfassung, Diagnose, Reifendrucküberwachung; Fahrzeugposition bestimmen: Telematikeinheit; Fahrzeugumfeld erfassen: Umfeldsensorik; Verkehrsteilnehmer schützen: Unterfahrschutz, seitliche Schutzvorrichtung; Lichtsignale abgeben: Leuchten mit Umrissleuchten und Kennzeichenleuchte, Rückstrahler, Konturmarkierung; Ladung temperieren: Kühlaggregat, Temperaturfühler; Betriebstemperatur regeln: Batterietemperierung.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herangezogene_artikel_ids": [],
@@ -859,7 +876,9 @@
         "typ": "komponente",
         "eltern_id": "E3",
         "absatz_ids": [
-          "P5"
+          "P5",
+          "P28",
+          "P29"
         ]
       },
       {
@@ -1085,6 +1104,16 @@
           "P8",
           "P9",
           "P10"
+        ]
+      },
+      {
+        "id": "E84",
+        "name": "Unterlegkeile",
+        "typ": "komponente",
+        "eltern_id": "E22",
+        "absatz_ids": [
+          "P8",
+          "P29"
         ]
       },
       {
@@ -1495,6 +1524,24 @@
         ]
       },
       {
+        "id": "E81",
+        "name": "Umrissleuchten",
+        "typ": "komponente",
+        "eltern_id": "E65",
+        "absatz_ids": [
+          "P21"
+        ]
+      },
+      {
+        "id": "E82",
+        "name": "Kennzeichenleuchte",
+        "typ": "komponente",
+        "eltern_id": "E65",
+        "absatz_ids": [
+          "P21"
+        ]
+      },
+      {
         "id": "E70",
         "name": "Rückstrahler",
         "typ": "komponente",
@@ -1502,6 +1549,16 @@
         "absatz_ids": [
           "P20",
           "P21"
+        ]
+      },
+      {
+        "id": "E83",
+        "name": "Konturmarkierung",
+        "typ": "komponente",
+        "eltern_id": "E64",
+        "absatz_ids": [
+          "P21",
+          "P29"
         ]
       },
       {
@@ -1612,6 +1669,7 @@
         "ausgefuehrt_von": [
           "E4",
           "E5",
+          "E6",
           "E8"
         ],
         "absatz_ids": [
@@ -1687,9 +1745,11 @@
         "id": "F7",
         "name": "Fahrzeug festhalten",
         "ausgefuehrt_von": [
-          "E28"
+          "E28",
+          "E84"
         ],
         "absatz_ids": [
+          "P8",
           "P9",
           "P10",
           "P29"
@@ -1872,7 +1932,10 @@
         "name": "Lichtsignale abgeben",
         "ausgefuehrt_von": [
           "E65",
-          "E70"
+          "E81",
+          "E82",
+          "E70",
+          "E83"
         ],
         "absatz_ids": [
           "P21",
@@ -1929,13 +1992,26 @@
       {
         "id": "S3",
         "von": "E4",
-        "nach": "E5",
+        "nach": "E6",
         "art": "mechanisch",
-        "medium": "Aufliegelast und Zugkraft",
+        "medium": "Aufliegelast",
         "absatz_ids": [
           "P5",
           "P28"
-        ]
+        ],
+        "schnittstelle": "Auflagefläche Sattelkupplung"
+      },
+      {
+        "id": "S40",
+        "von": "E4",
+        "nach": "E5",
+        "art": "mechanisch",
+        "medium": "Zug- und Bremskräfte",
+        "absatz_ids": [
+          "P5",
+          "P28"
+        ],
+        "schnittstelle": "Königszapfen–Sattelkupplung"
       },
       {
         "id": "S4",
@@ -2399,7 +2475,7 @@
           },
           {
             "element_id": "E53",
-            "beschreibung": "Der Fahrzeugbus überträgt zusätzlich Antriebssollwerte vom Zugfahrzeug."
+            "beschreibung": "Je nach Bauweise überträgt der Fahrzeugbus zusätzlich Antriebssollwerte vom Zugfahrzeug; bildet der Auflieger die Sollwerte aus der Koppelkraft an der Kupplungsstelle, entfällt diese Aufgabe."
           }
         ],
         "absatz_ids": [
@@ -2500,11 +2576,12 @@
         "element_id": "E29",
         "bezeichnung": "Umfang der Bremsregelung",
         "alternativen": [
-          "Antiblockiersystem ohne Stabilitätsregelung",
-          "Elektronisch geregeltes Bremssystem mit lastabhängiger Bremskraftverteilung und Stabilitätsregelung"
+          "Antiblockiersystem mit pneumatischer lastabhängiger Bremskraftregelung",
+          "Elektronisch geregeltes Bremssystem ohne Stabilitätsregelung",
+          "Elektronisch geregeltes Bremssystem mit Stabilitätsregelung"
         ],
         "auswahlkriterien": [
-          "Zulassungsmarkt",
+          "Zulassungsmarkt und dort geforderte Bremsfunktionen, einschließlich der Zulässigkeit einer Ausführung ohne Stabilitätsregelung",
           "Ausstattung der Zugfahrzeuge",
           "Kipprisiko der Ladung",
           "Bedarf an Diagnose und Telematik"
@@ -2516,11 +2593,15 @@
           },
           {
             "element_id": "E55",
-            "beschreibung": "Die Achslasterfassung wird zur Eingangsgröße der Bremskraftverteilung."
+            "beschreibung": "Die Achslasterfassung liefert die Eingangsgröße der lastabhängigen Bremskraft, pneumatisch über den Balgdruck oder elektronisch im Bremssystem."
           },
           {
             "element_id": "E52",
             "beschreibung": "Die Steckverbindungen müssen Datenleitung und Dauerversorgung der Bremsregelung führen."
+          },
+          {
+            "element_id": "E31",
+            "beschreibung": "Die Stabilitätsregelung ist nur in der dritten Alternative vorhanden."
           }
         ],
         "absatz_ids": [
@@ -2573,7 +2654,7 @@
       },
       {
         "id": "K2",
-        "frage": "Wie soll die Antriebsleistung des Aufliegers mit der Zugkraft der Sattelzugmaschine abgestimmt werden?",
+        "frage": "Wie soll die Antriebsleistung des Aufliegers mit der Zugkraft der Sattelzugmaschine abgestimmt werden: über Sollwerte des Zugfahrzeugs auf dem Fahrzeugbus oder über eine eigene Erfassung der Koppelkraft an der Kupplungsstelle?",
         "element_ids": [
           "E36",
           "E53"
@@ -2624,7 +2705,7 @@
       },
       {
         "id": "K6",
-        "frage": "Soll die Bremsregelung nur ein Antiblockiersystem oder ein elektronisch geregeltes Bremssystem mit Stabilitätsregelung umfassen?",
+        "frage": "Soll die Bremsregelung aus einem Antiblockiersystem mit pneumatischer lastabhängiger Bremskraftregelung, aus einem elektronisch geregelten Bremssystem ohne Stabilitätsregelung oder aus einem mit Stabilitätsregelung bestehen?",
         "element_ids": [
           "E22"
         ],
@@ -2657,6 +2738,17 @@
         ],
         "anlass": "anforderung",
         "relevanz": "Davon hängen die anzuwendenden Bau- und Betriebsvorschriften für Abmessungen, Bremse und Beleuchtung ab."
+      },
+      {
+        "id": "K17",
+        "frage": "Welche Baugröße des Königszapfens, welche Aufsattelhöhe und welche Lage des Königszapfens muss der Auflieger für die vorgesehenen Sattelzugmaschinen einhalten?",
+        "element_ids": [
+          "E3",
+          "E5",
+          "E6"
+        ],
+        "anlass": "schnittstelle",
+        "relevanz": "Davon hängen Aufsattelplatte, Schwanenhalsform, Ladehöhe und die Kombinierbarkeit mit Zugmaschinen ab."
       },
       {
         "id": "K9",
@@ -2720,7 +2812,7 @@
       },
       {
         "id": "K14",
-        "frage": "Welche zusätzlichen Leuchten wie Arbeitsscheinwerfer, Umrissleuchten oder Konturmarkierung soll der Auflieger tragen?",
+        "frage": "Welche Leuchten soll der Auflieger über die vorgeschriebene Ausstattung hinaus tragen, etwa Arbeitsscheinwerfer, Rangierleuchten oder Rückfahrscheinwerfer?",
         "element_ids": [
           "E64",
           "E65"
@@ -2834,9 +2926,9 @@
         ],
         "regelwerke": [
           {
-            "bezeichnung": "StVZO § 41 (Deutschland): Bremsen von Anhängern und Sattelanhängern",
+            "bezeichnung": "StVZO § 41 (Deutschland): Bremsen und Unterlegkeile; Absatz 9 für zwei- und mehrachsige Anhänger, für Anhänger von Lastkraftwagen und Sattelzugmaschinen über 25 km/h nach Absatz 18 die Bremsbestimmungen im Anhang; Absatz 14 Unterlegkeile an Sattelanhängern",
             "quellen_id": "Q7",
-            "fundstelle": "§ 41 Absatz 9 und 10"
+            "fundstelle": "§ 41 Absatz 9, 10, 14 und 18"
           },
           {
             "bezeichnung": "FMVSS 121 (USA, Fahrzeuge mit Druckluftbremsanlage): Notbremsung von Anhängern",
@@ -2979,6 +3071,16 @@
             "bezeichnung": "StVZO § 51a (Deutschland): Seitliche Kenntlichmachung",
             "quellen_id": "Q14",
             "fundstelle": "§ 51a Absatz 1 und 6"
+          },
+          {
+            "bezeichnung": "StVZO § 51b (Deutschland, Fahrzeuge mit mehr als 2,10 m Breite): Umrissleuchten",
+            "quellen_id": "Q16",
+            "fundstelle": "§ 51b Absatz 1 und 2"
+          },
+          {
+            "bezeichnung": "StVZO § 53 Absatz 10 (Deutschland, Fahrzeuge der Klassen N2, N3, O3 und O4): auffällige Markierungen seitlich und hinten (Konturmarkierung)",
+            "quellen_id": "Q13",
+            "fundstelle": "§ 53 Absatz 10 Satz 2"
           }
         ]
       },
@@ -3029,10 +3131,12 @@
     "Glossarvorschlag: Verkehrsteilnehmer schützen (Schutz anderer Verkehrsteilnehmer durch Unterfahrschutz und seitliche Schutzvorrichtung; kein Synonym zu „Insassen schützen“).",
     "Glossarvorschlag: Ladung temperieren (Halten der Ladung auf Solltemperatur durch Kühl- oder Heizaggregat; kein Synonym zu „Innenraum klimatisieren“ oder „Betriebstemperatur regeln“).",
     "Abweichung Zuordnung: Königszapfen und Aufsattelplatte sind als Teil der Tragstruktur unter Fahrzeugstruktur und Fahrwerk modelliert, nicht als Anhängevorrichtung unter Aufbau und Ladung, weil sie beim Sattelauflieger Teil des tragenden Rahmens sind und die Aufliegelast in die Sattelkupplung leiten.",
-    "Recherche Regelwerk UN/ECE: Bremsanlagen von Anhängern der Klassen O3 und O4 (elektrische Steuerleitung, Stabilitätsfunktion, lastabhängige Bremskraft) und mechanische Verbindungseinrichtungen (Suchbegriffe: UN-Regelung Nr. 13 Anhänger; UN-Regelung Nr. 55 Zugsattelzapfen); unece.org lieferte in diesem Lauf HTTP 403.",
+    "Recherche Regelwerk UN/ECE: Bremsanlagen von Anhängern der Klassen O3 und O4 (elektrische Steuerleitung, Stabilitätsfunktion, lastabhängige Bremskraft) und mechanische Verbindungseinrichtungen (Suchbegriffe: UN-Regelung Nr. 13 Anhänger; UN-Regelung Nr. 55 Zugsattelzapfen); unece.org lieferte in diesem Lauf HTTP 403. Dazu den Anhang zu StVZO § 41 prüfen, auf den § 41 Absatz 18 für Anhänger von Sattelzugmaschinen über 25 km/h verweist.",
     "Recherche Regelwerk EU: Fahrzeugklassen O1 bis O4 und Typgenehmigung von Anhängern (Suchbegriff: Verordnung (EU) 2018/858 Anhang I); EUR-Lex lieferte in diesem Lauf keinen Inhalt.",
     "Recherche Fachliteratur: Anhänger-EBS mit Achslasterfassung, Rollstabilitätsfunktion und Achsliftsteuerung sowie Nachlauf- und Zwangslenkung von Aufliegern, um P10, P12 und P17 zu belegen (Suchbegriffe: Trailer EBS Achslastsensierung; Zwangslenkung Sattelauflieger Knickwinkel; Fachbuch Nutzfahrzeugtechnik).",
     "Recherche Normen Schnittstelle Zugfahrzeug–Auflieger: Steckverbindungen für Beleuchtung und Bremsregelung sowie Datenbus zwischen Zugfahrzeug und Anhänger (Suchbegriffe: ISO 7638; ISO 12098; ISO 11992), um P16 abzusichern.",
-    "Recherche Kühlauflieger und elektrisch angetriebene Auflieger: Energieversorgung des Kühlaggregats (Verbrennungsmotor, Netzbetrieb, Achsgenerator) und Aufbau des elektrischen Antriebsstrangs, um P14, P15 und P22 zu belegen (Suchbegriffe: Kühlaggregat Sattelauflieger Achsgenerator; eTrailer Antriebsachse Rekuperation; Fachliteratur oder Herstellerunterlagen)."
+    "Recherche Kühlauflieger und elektrisch angetriebene Auflieger: Energieversorgung des Kühlaggregats (Verbrennungsmotor, Netzbetrieb, Achsgenerator) und Aufbau des elektrischen Antriebsstrangs, um P14, P15 und P22 zu belegen (Suchbegriffe: Kühlaggregat Sattelauflieger Achsgenerator; eTrailer Antriebsachse Rekuperation; Fachliteratur oder Herstellerunterlagen).",
+    "Recherche: Pflicht der Fahrzeugstabilitätsfunktion für Anhänger O3/O4 in UN-Regelung Nr. 13 und der EU-Typgenehmigung, um die Zulässigkeit der Alternativen ohne Stabilitätsregelung in V4 zu klären (Suchbegriffe: UN-Regelung Nr. 13 vehicle stability function trailer; EU-Typgenehmigung Anhänger Stabilitätsfunktion).",
+    "Recherche Sollwertbildung des elektrisch angetriebenen Aufliegers: Vorgabe über den Fahrzeugbus des Zugfahrzeugs oder autarke Regelung aus einer Kraftmessung an Königszapfen oder Kupplungsstelle, um P14 abzusichern (Suchbegriffe: eTrailer Koppelkraft Königszapfen Sensor; electric trailer e-axle kingpin force sensor)."
   ]
 }
