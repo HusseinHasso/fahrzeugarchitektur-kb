@@ -61,21 +61,21 @@
     {
       "quellen_id": "Q6",
       "titel": "Fahrzeug-Zulassungsverordnung (FZV), § 2 Begriffsbestimmungen",
-      "urheber": "Bundesministerium der Justiz (gesetze-im-internet.de)",
-      "stand": null,
-      "url": "https://www.gesetze-im-internet.de/fzv_2023/__2.html",
+      "urheber": "Bundesrecht der Bundesrepublik Deutschland (Wiedergabe: buzer.de)",
+      "stand": "Fassung der Änderungsverordnung vom 19. Dezember 2025, in Kraft seit 31. Dezember 2025",
+      "url": "https://www.buzer.de/2_FZV.htm",
       "abgerufen": true,
-      "abrufdatum": "2026-11-24",
+      "abrufdatum": "2026-11-25",
       "quellentyp": "norm"
     },
     {
       "quellen_id": "Q7",
-      "titel": "29 CFR 1928.51 Roll-over protective structures (ROPS) for tractors used in agricultural operations",
-      "urheber": "Occupational Safety and Health Administration (Electronic Code of Federal Regulations)",
-      "stand": null,
-      "url": "https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XVII/part-1928/subpart-C/section-1928.51",
+      "titel": "29 CFR 1928.51 Roll-over protective structures (ROPS) for tractors used in agricultural operations (Code of Federal Regulations, Ausgabe 2023)",
+      "urheber": "Occupational Safety and Health Administration (Wiedergabe: govinfo.gov, U.S. Government Publishing Office)",
+      "stand": "2023-07-01",
+      "url": "https://www.govinfo.gov/content/pkg/CFR-2023-title29-vol8/xml/CFR-2023-title29-vol8-sec1928-51.xml",
       "abgerufen": true,
-      "abrufdatum": "2026-11-24",
+      "abrufdatum": "2026-11-25",
       "quellentyp": "norm"
     },
     {
@@ -105,7 +105,7 @@
             },
             {
               "quellen_id": "Q6",
-              "fundstelle": "§ 2 Nr. 16"
+              "fundstelle": "§ 2 Satz 1 Nr. 16"
             }
           ],
           "herangezogene_artikel_ids": [],
@@ -113,7 +113,7 @@
         },
         {
           "absatz_id": "P2",
-          "text": "Architekturell ist der Traktor damit ein Gesamtsystem, das neben der eigenen Fortbewegung vor allem Leistung an Arbeitsgeräte und Anhänger abgibt. Seine Systeme sind über mechanische, hydraulische, pneumatische, elektrische, thermische und informationstechnische Schnittstellen gekoppelt, von denen viele an den Anbauräumen nach außen führen. Für eine Dekomposition, etwa in SysML, wird er in dreizehn Hauptsysteme und diese in Subsysteme und Komponenten zerlegt.",
+          "text": "Architekturell ist der Traktor damit ein Gesamtsystem, das neben der Fortbewegung vor allem Leistung an Arbeitsgeräte und Anhänger abgibt. Mechanische, hydraulische, pneumatische, elektrische, thermische und informationstechnische Schnittstellen koppeln seine Systeme und führen oft an den Anbauräumen nach außen. Die Dekomposition, etwa in SysML, zerlegt ihn in dreizehn Hauptsysteme, Subsysteme und Komponenten.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -148,16 +148,18 @@
         },
         {
           "absatz_id": "P4",
-          "text": "Im Modell gliedert sich das Hauptsystem in die Tragstruktur mit Rahmen oder tragenden Gehäusen und Ballastierung sowie das Fahrwerk mit Vorderachse, Hinterachse, Federung, Räder und Reifen und gegebenenfalls Gleiskettenlaufwerk. Die Tragstruktur nimmt Fahrerhaus, Kraftheber und Anhängevorrichtung auf und leitet Zug- und Stützkräfte der Geräte in die Hinterachse. Ersetzt ein Gleiskettenlaufwerk die Räder, ändern sich Lenksystem und Kraftübertragung.",
+          "text": "Im Modell gliedert sich das Hauptsystem in die Tragstruktur mit Rahmen oder tragenden Antriebsgehäusen und Ballastierung sowie das Fahrwerk mit Vorderachse, Hinterachse, Federung, Räder und Reifen und gegebenenfalls Gleiskettenlaufwerk. Die Tragstruktur nimmt Fahrerhaus, Kraftheber und Anhängevorrichtung auf und leitet Kräfte von Heckgeräten in die Hinterachse, von Frontgeräten und Frontlader in die Vorderachse. In Blockbauweise tragen die Antriebsgehäuse selbst, Halb- und Vollrahmen entlasten sie. Ein Gleiskettenlaufwerk statt Rädern ändert Lenksystem und Kraftübertragung.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "P3",
               "Zug- und Stützkräfte angebauter Geräte müssen über eine tragende Struktur in die Aufstandsfläche geleitet werden",
-              "Q2: Gewichtskräfte der Geräte werden auf die Antriebsachse übertragen (Abschnitt Aufbau)"
+              "Q2: Gewichtskräfte der Geräte werden auf die Antriebsachse übertragen (Abschnitt Aufbau)",
+              "Q1: Ballastgewichte gleichen eine ungünstige Gewichtsverteilung durch Anbaugeräte aus, Frontgewichte wirken als Gegengewicht (Abschnitt Ballastierung)",
+              "Ohne Rahmen müssen die Gehäuse der Antriebsbaugruppen die Lasten tragen"
             ],
-            "schluss": "Die Gliederung in Tragstruktur und Fahrwerk und der Lastpfad über die Hinterachse folgen aus Bauform und Kraftfluss."
+            "schluss": "Die Gliederung in Tragstruktur und Fahrwerk, der Lastpfad je nach Anbauort in Hinter- oder Vorderachse und die Kopplung von Antrieb und Struktur bei Blockbauweise folgen aus Bauform und Kraftfluss."
           },
           "sicherheit": "mittel",
           "herangezogene_artikel_ids": [],
@@ -189,16 +191,17 @@
         },
         {
           "absatz_id": "P6",
-          "text": "Im Modell besteht das Antriebssystem aus dem Motor mit Verbrennungsmotor und Abgasnachbehandlung und der Kraftübertragung mit Fahrkupplung, Getriebe, Gelenkwelle zur Vorderachse und Differenzial. Weil der Motor die einzige Leistungsquelle ist, treibt er zugleich Zapfwelle, Hydraulikanlage und Generator an; das Fahrzeugmanagement stimmt diese Verbraucher mit der Fahrleistung ab.",
+          "text": "Im Modell besteht das Antriebssystem aus dem Motor mit Verbrennungsmotor und Abgasnachbehandlung und der Kraftübertragung mit Fahrkupplung, Getriebe, Differenzial mit Differenzialsperre, Gelenkwelle zur Vorderachse, Allradkupplung und Zapfwellengetriebe. Als einzige Leistungsquelle treibt der Motor zugleich Zapfwelle, Hydraulikanlage und Generator an; das Fahrzeugmanagement stimmt diese Verbraucher mit der Fahrleistung ab.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "P5",
               "Q8: Zapfwelle und Hydraulikpumpen sind über Untersetzungen mit der Motorwelle gekoppelt (Abschnitt II)",
-              "Ein zuschaltbarer Vorderachsantrieb braucht eine Welle vom Getriebe zur Vorderachse"
+              "Ein zuschaltbarer Vorderachsantrieb braucht eine Welle vom Getriebe zur Vorderachse",
+              "P13"
             ],
-            "schluss": "Motor und Kraftübertragung bilden die Subsysteme; die Nebenabtriebe hängen am selben Motor und erfordern eine Leistungskoordination."
+            "schluss": "Motor und Kraftübertragung mit Differenzialsperre und Allradkupplung bilden die Subsysteme; die Nebenabtriebe hängen am selben Motor und erfordern eine Leistungskoordination."
           },
           "sicherheit": "mittel",
           "herangezogene_artikel_ids": [],
@@ -219,7 +222,7 @@
         },
         {
           "absatz_id": "P8",
-          "text": "Diese Varianten ergänzen einen elektrischen Antriebspfad mit Traktionsmaschine und Wechselrichter, der das stufige Getriebe teilweise oder ganz ersetzt und beim Verzögern Bremsenergie zurückgewinnen kann; im diesel-elektrischen Antrieb arbeitet eine Traktionsmaschine am Motor als Generator. Energieversorgung, Thermomanagement und Fahrzeugsteuerung erweitern sich um Hochvoltspeicher, Kühlkreise und ein Energiemanagement.",
+          "text": "Diese Varianten ergänzen einen elektrischen Antriebspfad mit Traktionsmaschine und Wechselrichter, der das stufige Getriebe teilweise oder ganz ersetzt und Bremsenergie zurückgewinnen kann; diesel-elektrisch arbeitet eine Traktionsmaschine am Motor als Generator. Energieversorgung, Thermomanagement und Fahrzeugsteuerung erhalten Hochvoltspeicher, Kühlkreise und ein Energiemanagement.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -243,7 +246,7 @@
       "absaetze": [
         {
           "absatz_id": "P9",
-          "text": "Das Energieversorgungssystem stellt die Energie für Antrieb, Bordnetz und Arbeitsgeräte bereit. Die Kraftstoffversorgung umfasst Kraftstofftank und Kraftstoffanlage, die den Dieselkraftstoff zum Verbrennungsmotor fördert. Die Niedervolt-Energieversorgung besteht aus Starterbatterie und dem vom Motor angetriebenen Generator. Elektrifizierte Varianten erhalten eine Hochvolt-Energieversorgung mit Traktionsbatterie und Ladeeinrichtung, Brennstoffzellentraktoren einen Wasserstofftank und ein Brennstoffzellensystem. Die Wahl des Speichers bestimmt Einsatzdauer, Masse, Bauraum und die Lade- oder Tankinfrastruktur des Betriebs.",
+          "text": "Das Energieversorgungssystem stellt die Energie für Antrieb, Bordnetz und Arbeitsgeräte bereit. Die Kraftstoffversorgung umfasst Kraftstofftank und Kraftstoffanlage, die den Dieselkraftstoff zum Verbrennungsmotor fördert, die Niedervolt-Energieversorgung Starterbatterie und den vom Motor angetriebenen Generator. Elektrifizierte Varianten erhalten eine Hochvolt-Energieversorgung mit Traktionsbatterie und Ladeeinrichtung, Brennstoffzellentraktoren einen Wasserstofftank und ein Brennstoffzellensystem; ohne Verbrennungsmotor speist ein Gleichspannungswandler das Bordnetz. Der Speicher bestimmt Einsatzdauer, Masse, Bauraum und die nötige Lade- oder Tankinfrastruktur.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -251,7 +254,8 @@
               "P5",
               "P7",
               "Ein Verbrennungsmotor braucht Kraftstoffspeicher und Kraftstoffförderung",
-              "Das Starten des Motors und das Bordnetz erfordern einen elektrischen Speicher und eine Ladequelle"
+              "Das Starten des Motors und das Bordnetz erfordern einen elektrischen Speicher und eine Ladequelle",
+              "Ohne Verbrennungsmotor fehlt der Antrieb des Generators, das Niedervolt-Bordnetz braucht eine andere Ladequelle"
             ],
             "schluss": "Je Antriebsart folgen Energiespeicher und Wandler zwingend aus dem Funktionsprinzip; ihre Auslegung koppelt Einsatzdauer und Masse."
           },
@@ -294,7 +298,7 @@
         },
         {
           "absatz_id": "P12",
-          "text": "Im Modell umfasst das Lenksystem Lenkrad, Lenkunterstützung und bei Knicklenkung ein Knickgelenk. Die Lenkunterstützung bezieht Öl aus der Hydraulikanlage und wirkt über Lenkzylinder auf die Vorderachse; bei vollhydraulischer Lenkung ersetzt der Ölstrom die mechanische Verbindung. Das Knickgelenk teilt Tragstruktur und Gelenkwelle. Das Spurführungssystem gibt Lenksollwerte an die Lenkunterstützung.",
+          "text": "Im Modell umfasst das Lenksystem Lenkrad, Lenkunterstützung und bei Knicklenkung ein Knickgelenk. Die Lenkunterstützung bezieht Öl aus der Hydraulikanlage und wirkt über Lenkzylinder auf die Vorderachse; vollhydraulisch ersetzt der Ölstrom die mechanische Verbindung. Das Knickgelenk teilt Tragstruktur und Gelenkwelle. Das Spurführungssystem gibt Lenksollwerte an die Lenkunterstützung.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -335,18 +339,19 @@
         },
         {
           "absatz_id": "P14",
-          "text": "Das Bremssystem gliedert sich in die Radbremsanlage mit Betriebsbremse, Feststellbremse und Antiblockiersystem und die Anhängerbremsanlage mit Anhängersteuerventil und Anhängerbremsanschluss. Die Anhängerbremsanlage bezieht Energie aus Hydraulikanlage oder Druckluftanlage; die Kopplung von Bremse und Vorderachsantrieb ist eine Schnittstelle zum Antriebssystem.",
+          "text": "Das Bremssystem gliedert sich in die Radbremsanlage mit Betriebsbremse, Feststellbremse und bei schnelllaufenden Traktoren gegebenenfalls einem Antiblockiersystem sowie die Anhängerbremsanlage mit Anhängersteuerventil und Anhängerbremsanschluss. Die Anhängerbremsanlage bezieht Energie aus Hydraulikanlage oder Druckluftanlage; die Allradkupplung koppelt Bremse und Vorderachsantrieb als Schnittstelle zum Antriebssystem.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "P13",
+              "P13: Ein Antiblockiersystem ist in der EU nur bei Traktoren oberhalb der dort genannten Höchstgeschwindigkeit und auch dort nur gegebenenfalls gefordert",
               "Ein abgestelltes Fahrzeug, etwa am Hang, muss ohne Fahrereingriff festgehalten werden",
               "Eine Anhängerbremse braucht eine Energiequelle und ein Steuerelement am Zugfahrzeug"
             ],
-            "schluss": "Radbremsanlage und Anhängerbremsanlage sind die Subsysteme; Energie und Allradkopplung schaffen Schnittstellen."
+            "schluss": "Radbremsanlage und Anhängerbremsanlage sind die Subsysteme; das Antiblockiersystem gehört nur zu schnelllaufenden Traktoren, Energie und Allradkopplung schaffen Schnittstellen."
           },
-          "sicherheit": "hoch",
+          "sicherheit": "mittel",
           "herangezogene_artikel_ids": [],
           "aussagetyp": "loesung"
         }
@@ -372,13 +377,14 @@
         },
         {
           "absatz_id": "P16",
-          "text": "Im Modell besteht das Fahrerhaus aus der Kabine mit Kabinenstruktur und Fahrersitz und dem Bedienplatz mit Bedienelementen und Anzeigeelementen. Der Bedienplatz erfasst Eingaben für Antrieb, Kraftheber, Hydraulik und Anbaugerät und zeigt deren Zustände an; daher ist er an Fahrzeugbus und Anbaugerätebus angebunden.",
+          "text": "Im Modell besteht das Fahrerhaus aus der Kabine mit Kabinenstruktur, Fahrersitz und Sicherheitsgurt und dem Bedienplatz mit Bedienelementen und Anzeigeelementen. Der Bedienplatz erfasst Eingaben für Antrieb, Kraftheber, Hydraulik und Anbaugerät, zeigt deren Zustände und ist deshalb an Fahrzeugbus und Anbaugerätebus angebunden.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "P15",
-              "P19"
+              "P19",
+              "P23"
             ],
             "schluss": "Kabine und Bedienplatz bilden die Subsysteme; die Bedienung von Fahrzeug und Gerät erfordert Busanbindung."
           },
@@ -412,7 +418,7 @@
         },
         {
           "absatz_id": "P18",
-          "text": "Die Arbeitsausrüstung umfasst damit den Dreipunkt-Kraftheber mit Unterlenker, Oberlenker und Hubwerksregelung, die Anhängevorrichtung und den Frontlader. Sie bezieht Öl aus der Hydraulikanlage und leitet Gerätelasten in Tragstruktur und Hinterachse, sodass die Gerätekombination Ballastierung und Achslasten bestimmt. Zusätzliche Anbauräume erfordern weitere Kraftheber, eine Frontzapfwelle und Sicht nach vorn.",
+          "text": "Die Arbeitsausrüstung umfasst den Dreipunkt-Kraftheber mit Unterlenker, Oberlenker und Hubwerksregelung, die Anhängevorrichtung und den Frontlader. Sie bezieht Öl aus der Hydraulikanlage und leitet Gerätelasten in Tragstruktur und belastete Achse, sodass die Gerätekombination Ballastierung und Achslasten bestimmt. Zusätzliche Anbauräume erfordern weitere Kraftheber, eine Frontzapfwelle und Sicht nach vorn.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -452,21 +458,33 @@
           "aussagetyp": "loesung"
         },
         {
+          "absatz_id": "P35",
+          "text": "Das Traktorsteuergerät (Traktor-ECU) ist in der Regel am ISOBUS und am CAN-Bus des Traktors angeschlossen, stellt Daten wie Fahrgeschwindigkeit und Zapfwellendrehzahl im ISOBUS bereit und wirkt als Brücke zwischen beiden Bussen.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q4",
+              "fundstelle": "Abschnitt ISOBUS-Hardware, Unterabschnitt Traktorsteuergerät, Absatz 1"
+            }
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
           "absatz_id": "P20",
-          "text": "Im Modell besteht Elektrik und Elektronik aus dem Niedervolt-Bordnetz mit Leitungssatz und Anbaugerätesteckdose und dem Kommunikationsnetz mit Fahrzeugbus und Anbaugerätebus. Der Fahrzeugbus verbindet die Steuergeräte von Antrieb, Bremse, Hubwerk und Fahrerhaus; der Anbaugerätebus führt zu fremden Geräten und sollte vom Fahrzeugbus getrennt sein. Der Generator speist das Niedervolt-Bordnetz.",
+          "text": "Elektrik und Elektronik besteht aus dem Niedervolt-Bordnetz mit Leitungssatz und Anbaugerätesteckdose und dem Kommunikationsnetz, in dem ein Gateway, das Traktorsteuergerät, Fahrzeugbus und Anbaugerätebus koppelt.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "P19",
-              "P9",
-              "Annahme: Geräte fremder Hersteller sollen keinen unmittelbaren Zugriff auf fahrzeuginterne Steuergeräte erhalten"
+              "P35"
             ],
-            "schluss": "Bordnetz und Kommunikationsnetz mit getrenntem Fahrzeug- und Anbaugerätebus sind eine plausible Gliederung, deren Trennung eine Modellannahme ist."
+            "schluss": "Bordnetz und Kommunikationsnetz mit über das Gateway gekoppeltem Fahrzeugbus und Anbaugerätebus bilden die Subsysteme."
           },
-          "sicherheit": "gering",
+          "sicherheit": "mittel",
           "herangezogene_artikel_ids": [],
-          "aussagetyp": "modellannahme"
+          "aussagetyp": "loesung"
         }
       ],
       "element_id": "E62"
@@ -490,7 +508,7 @@
         },
         {
           "absatz_id": "P22",
-          "text": "Im Modell umfasst das Fahrzeugsteuerungs- und Informationssystem Fahrzeugmanagement, Auftragssteuerung und Navigation. Das Fahrzeugmanagement stimmt Motordrehzahl, Getriebe, Zapfwelle und Hubwerk ab und überwacht den Fahrzeugzustand. Die Auftragssteuerung setzt Applikationskarten mit der Position aus der Navigation in Sollwerte für das Arbeitsgerät um und dokumentiert die Arbeit.",
+          "text": "Im Modell gliedert sich das Fahrzeugsteuerungs- und Informationssystem in die Fahrzeugsteuerung mit dem Fahrzeugmanagement und das Informationssystem mit Auftragssteuerung, Navigation und Telematikeinheit. Das Fahrzeugmanagement stimmt Motordrehzahl, Getriebe, Zapfwelle und Hubwerk ab und überwacht den Fahrzeugzustand. Die Auftragssteuerung setzt Applikationskarten mit der Position aus der Navigation in Sollwerte für das Arbeitsgerät um und dokumentiert; die Telematikeinheit überträgt Arbeitsdaten zum Betrieb.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -499,7 +517,7 @@
               "P6",
               "Georeferenzierte Vorgaben setzen eine Positionsbestimmung voraus"
             ],
-            "schluss": "Koordination, Auftragsbearbeitung und Positionsbestimmung bilden die logische Ebene."
+            "schluss": "Koordination, Auftragsbearbeitung, Positionsbestimmung und Datenübertragung zum Betrieb bilden die logische Ebene."
           },
           "sicherheit": "mittel",
           "herangezogene_artikel_ids": [],
@@ -514,7 +532,7 @@
       "absaetze": [
         {
           "absatz_id": "P23",
-          "text": "Automatische Spurführungssysteme fahren mit satellitengestützter Positionsbestimmung Bearbeitungsspuren oder Fahrgassen ab und wenden am Vorgewende; autonom fahrende Traktoren sind in der Versuchsphase. Die EU-Verordnung fordert zum Arbeitsschutz unter anderem Umsturzschutzstrukturen, Schutz gegen herabfallende Gegenstände, Sicherheitsgurte, Anforderungen an Zapfwellen sowie Not- und automatische Stoppeinrichtungen. In den USA müssen Arbeitgeber nach 1976 gebaute landwirtschaftliche Traktoren, die Beschäftigte bedienen, mit Überrollschutz und Sicherheitsgurt ausstatten.",
+          "text": "Automatische Spurführungssysteme fahren mit satellitengestützter Positionsbestimmung Bearbeitungsspuren oder Fahrgassen ab und wenden am Vorgewende; autonom fahrende Traktoren sind in der Versuchsphase. Die EU-Verordnung fordert zum Arbeitsschutz unter anderem Umsturzschutzstrukturen, Schutz gegen herabfallende Gegenstände, Sicherheitsgurte, Anforderungen an Zapfwellen sowie Not- und automatische Stoppeinrichtungen. In den USA müssen Arbeitgeber nach dem 25. Oktober 1976 gebaute landwirtschaftliche Traktoren, die Beschäftigte bedienen, von festgelegten Ausnahmen abgesehen mit Überrollschutz und Sicherheitsgurt ausstatten.",
           "begruendung": "belegt",
           "belege": [
             {
@@ -527,7 +545,7 @@
             },
             {
               "quellen_id": "Q7",
-              "fundstelle": "Abs. (b)(1) und (b)(2)(i)"
+              "fundstelle": "§ 1928.51 Abs. (b) Einleitungssatz, (b)(1), (b)(2)(i) und (b)(5)"
             }
           ],
           "herangezogene_artikel_ids": [],
@@ -535,7 +553,7 @@
         },
         {
           "absatz_id": "P24",
-          "text": "Im Modell umfasst das Hauptsystem Überschlagschutz, Spurführungssystem und Umfeldsensorik. Der Überschlagschutz ist mit der Tragstruktur verbunden und schützt mit dem Sicherheitsgurt den Fahrer. Das Spurführungssystem nutzt die Position der Navigation und gibt Lenksollwerte; für fahrerlosen Betrieb muss die Umfeldsensorik Hindernisse erkennen und Antrieb, Zapfwelle und Hydraulik stillsetzen lassen.",
+          "text": "Im Modell umfasst das Hauptsystem Überschlagschutz, Spurführungssystem und Umfeldsensorik. Der Überschlagschutz ist mit der Tragstruktur verbunden und schützt mit dem Sicherheitsgurt den Fahrer. Das Spurführungssystem gibt aus der Position der Navigation Lenksollwerte; fahrerlos muss die Umfeldsensorik Hindernisse erkennen und Antrieb, Zapfwelle und Hydraulik stillsetzen lassen.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -571,7 +589,7 @@
         },
         {
           "absatz_id": "P26",
-          "text": "Das Beleuchtungs- und Sichtsystem umfasst Scheinwerfer für Fahrt und Arbeit, Signalleuchten und Außenspiegel. Arbeitsscheinwerfer leuchten Anbauräume und Feld bei Nachtarbeit aus; weil Anbaugeräte Leuchten verdecken können, erhalten Geräte und Anhänger eigene Leuchten, die über die Anbaugerätesteckdose versorgt werden. Die Sicht auf die Anbauräume beeinflusst Lage und Verglasung der Kabine.",
+          "text": "Das Beleuchtungs- und Sichtsystem umfasst Scheinwerfer für Fahrt und Arbeit, Signalleuchten und Außenspiegel. Arbeitsscheinwerfer leuchten Anbauräume und Feld nachts aus; weil Anbaugeräte Leuchten verdecken können, haben Geräte und Anhänger eigene, über die Anbaugerätesteckdose versorgte Leuchten. Die Sicht auf die Anbauräume beeinflusst Lage und Verglasung der Kabine.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -612,13 +630,13 @@
         },
         {
           "absatz_id": "P28",
-          "text": "Im Modell umfasst das Thermomanagement den Kühlkreislauf mit Kühler, Kühlmittelpumpe und Lüfter, der auch Ladeluft und Öl von Getriebe und Hydraulik kühlt, sowie die Heiz- und Klimaanlage der Kabine. Elektrifizierte Varianten erhalten eine Batterietemperierung, die Traktionsbatterie, Wechselrichter und Traktionsmaschine einbeziehen kann.",
+          "text": "Im Modell umfasst das Thermomanagement den Kühlkreislauf mit Kühler, Kühlmittelpumpe und Lüfter, der auch Ladeluft, Getriebe- und Hydrauliköl kühlt, sowie die Heiz- und Klimaanlage der Kabine. Elektrifizierte Varianten erhalten eine Batterietemperierung, die Traktionsbatterie, Wechselrichter und Traktionsmaschine einbeziehen kann.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "P27",
-              "P5: Ladeluftkühlung",
+              "Q1: Traktormotoren werden unter anderem über Ladeluftkühlung und Abgasturbolader auf ihre Leistung eingestellt (Abschnitt Abtriebsstrang, Unterabschnitt Motor)",
               "P8",
               "Verlustleistung in Getriebe und Hydraulik erwärmt das Öl"
             ],
@@ -654,20 +672,40 @@
         },
         {
           "absatz_id": "P30",
-          "text": "Im Modell bestehen die Neben- und Versorgungssysteme aus Zapfwelle, Hydraulikanlage und Druckluftanlage. Die Druckluftanlage mit Kompressor folgt aus der pneumatischen Anhängerbremse. Die Hydraulikanlage versorgt Lenkunterstützung, Kraftheber, Anhängerbremse und Anbaugeräte, sodass ihr Förderstrom aufgeteilt werden muss. Bei elektrifizierten Traktoren kann eine elektrische Zapfwelle hinzukommen.",
+          "text": "Im Modell bestehen die Neben- und Versorgungssysteme aus Zapfwelle, Hydraulikanlage und Druckluftanlage. Die Zapfwelle umfasst Zapfwellenkupplung, Heckzapfwelle und Frontzapfwelle; das Zapfwellengetriebe dazwischen gehört zur Kraftübertragung des Antriebssystems. Die Motorzapfwelle nimmt am Motor, die Getriebezapfwelle hinter der Fahrkupplung, die Wegezapfwelle hinter dem Getriebe ab. Die Druckluftanlage mit Kompressor folgt aus der pneumatischen Anhängerbremse; elektrifizierte Traktoren können eine elektrische Zapfwelle erhalten.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "P29",
               "P13",
+              "Q3: Die Motorzapfwelle ist über eine gesonderte Kupplung mit dem Motor verbunden, die Getriebezapfwelle über Fahrkupplung und Getriebe (Abschnitt Zapfwellenarten)",
               "Q8: erste elektrische Zapfwelle als Steckdose am Traktor (Abschnitt III, Absatz 5)"
             ],
-            "schluss": "Mechanische, hydraulische und pneumatische Versorgung der Geräte und Anhänger bilden das Hauptsystem."
+            "schluss": "Mechanische, hydraulische und pneumatische Versorgung der Geräte und Anhänger bilden das Hauptsystem; die Zapfwelle gliedert sich nach Abtriebspunkt und Anbauort."
           },
           "sicherheit": "mittel",
           "herangezogene_artikel_ids": [],
           "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P36",
+          "text": "Die Hydraulikpumpe fördert Öl aus dem Ölbehälter mit Filter über ein Vorrangventil zuerst zur Lenkunterstützung, den Rest zu Kraftheber, Zusatzsteuergeräten und über Hydraulikkupplungen zum Gerät. Ein Konstantstromsystem mit Konstantpumpe fördert stets den vollen Strom, ein Load-Sensing-System mit Verstellpumpe nur den gemeldeten Bedarf.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P29",
+              "P30",
+              "Q1: Die Hydraulikpumpe erzeugt einen Ölstrom zu Verbrauchern über Anschlüsse an den Anbauräumen; neben Zahnradpumpen verbreiten sich Axialkolbenpumpen, die nur bei Ansteuerung größere Antriebskräfte vom Motor verlangen (Abschnitt Kraft- und Signalübertragung)",
+              "Ein Hydraulikkreis braucht Pumpe, Ölvorrat mit Filterung, Steuerventile und lösbare Kupplungen zum Gerät",
+              "Die Lenkung ist sicherheitsrelevant und muss bei gleichzeitigen Verbrauchern vorrangig versorgt werden"
+            ],
+            "schluss": "Die Hydraulikanlage zerfällt in Pumpe, Ölbehälter, Steuerventile und Kupplungen und verteilt den Förderstrom mit Vorrang für die Lenkung; konstante oder bedarfsgeregelte Förderung ist eine strukturändernde Bauartentscheidung. Ohne eigene Quelle zur Systembauart bleibt die Sicherheit gering."
+          },
+          "sicherheit": "gering",
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
         }
       ],
       "element_id": "E85"
@@ -678,7 +716,7 @@
       "absaetze": [
         {
           "absatz_id": "P31",
-          "text": "Auf oberster Ebene lässt sich der Traktor als Gesamtsystem mit den Hauptsystemen Fahrzeugstruktur und Fahrwerk, Antriebssystem, Energieversorgungssystem, Lenksystem, Bremssystem, Fahrerhaus, Arbeitsausrüstung, Elektrik und Elektronik, Fahrzeugsteuerung und Information, Fahrerassistenz und Sicherheit, Beleuchtung und Sicht, Thermomanagement sowie Neben- und Versorgungssysteme auffassen. Anders als beim Straßenfahrzeug fließt ein großer Teil der Motorleistung über Zapfwelle, Hydraulikanlage und Anbaugerätebus in Arbeitsgeräte; die Anbauräume sind die wichtigsten äußeren Schnittstellen.",
+          "text": "Auf oberster Ebene besteht der Traktor aus den Hauptsystemen Fahrzeugstruktur und Fahrwerk, Antriebssystem, Energieversorgungssystem, Lenksystem, Bremssystem, Fahrerhaus, Arbeitsausrüstung, Elektrik und Elektronik, Fahrzeugsteuerung und Information, Fahrerassistenz und Sicherheit, Beleuchtung und Sicht, Thermomanagement sowie Neben- und Versorgungssysteme. Anders als beim Straßenfahrzeug fließt viel Motorleistung über Zapfwelle, Hydraulikanlage und Anbaugerätebus in Arbeitsgeräte; die Anbauräume sind die wichtigsten äußeren Schnittstellen.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -702,7 +740,7 @@
       "absaetze": [
         {
           "absatz_id": "P32",
-          "text": "In SysML bildet der Block Traktor das Gesamtsystem mit den dreizehn Hauptsystemen als Teilen. Dekompositionspfade sind etwa Antriebssystem → Kraftübertragung → Getriebe, Arbeitsausrüstung → Dreipunkt-Kraftheber → Hubwerksregelung, Bremssystem → Anhängerbremsanlage → Anhängersteuerventil und Energieversorgungssystem → Hochvolt-Energieversorgung → Traktionsbatterie. Ports und Konnektoren bilden vor allem die Anbauraumschnittstellen ab: Zapfwellenstummel, Hydraulikkupplungen, Druckluftkupplungen, Anbaugerätesteckdose, Anbaugerätebus und Koppelpunkte; das Anbaugerät wird als externer Block geführt. Blockdefinitionsdiagramme, interne Blockdiagramme und Aktivitätsdiagramme zeigen Struktur, Flüsse und Arbeitsabläufe.",
+          "text": "Der SysML-Block Traktor enthält die dreizehn Hauptsysteme als Teile. Dekompositionspfade sind etwa Antriebssystem → Kraftübertragung → Getriebe, Arbeitsausrüstung → Dreipunkt-Kraftheber → Hubwerksregelung, Bremssystem → Anhängerbremsanlage → Anhängersteuerventil und Energieversorgungssystem → Hochvolt-Energieversorgung → Traktionsbatterie. Ports und Konnektoren bilden vor allem die Anbauraumschnittstellen ab: Zapfwellenstummel, Hydraulikkupplungen, Druckluftkupplungen, Anbaugerätesteckdose, Anbaugerätebus und Koppelpunkte; das Anbaugerät ist ein externer Block. Blockdefinitions-, interne Block- und Aktivitätsdiagramme zeigen Struktur, Flüsse und Arbeitsabläufe.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -727,7 +765,7 @@
       "absaetze": [
         {
           "absatz_id": "P33",
-          "text": "Die Kraftstoffanlage liefert Kraftstoff an den Verbrennungsmotor, das Getriebe mechanische Leistung an die Hinterachse und über die Gelenkwelle an die Vorderachse. Der Motor treibt Zapfwelle, Hydraulikanlage und Generator; die Hydraulikanlage versorgt Dreipunkt-Kraftheber und Lenkunterstützung, die Druckluftanlage das Anhängersteuerventil. Der Generator speist das Niedervolt-Bordnetz. Hubwerksregelung, Bedienelemente und Auftragssteuerung tauschen Daten über Fahrzeugbus und Anbaugerätebus; der Kühlkreislauf führt Motorwärme ab, die Heiz- und Klimaanlage temperiert die Kabine.",
+          "text": "Die Kraftstoffanlage liefert Kraftstoff an den Verbrennungsmotor, das Getriebe mechanische Leistung an Hinterachse, Gelenkwelle und Wegezapfwelle. Der Motor treibt Zapfwellenkupplung, Hydraulikpumpe und Generator; die Hydraulikpumpe versorgt Lenkunterstützung, Dreipunkt-Kraftheber und Zusatzsteuergeräte, die Druckluftanlage das Anhängersteuerventil. Generator oder Gleichspannungswandler speisen das Niedervolt-Bordnetz. Steuergeräte tauschen Daten über Fahrzeugbus, Gateway und Anbaugerätebus, die Telematikeinheit mit dem Betrieb; der Kühlkreislauf führt Motorwärme ab, die Heiz- und Klimaanlage temperiert die Kabine.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -738,8 +776,11 @@
               "P14",
               "P18",
               "P20",
+              "P22",
               "P28",
-              "P29"
+              "P29",
+              "P30",
+              "P36"
             ],
             "schluss": "Jeder Fluss verbindet ein lieferndes und ein aufnehmendes Element der vorigen Abschnitte."
           },
@@ -755,7 +796,7 @@
       "absaetze": [
         {
           "absatz_id": "P34",
-          "text": "Funktional tragen Tragstruktur und Fahrwerk die Fahrzeuglasten; Kraftstofftank, Starterbatterie, Traktionsbatterie und Wasserstofftank speichern Energie; die Kraftstoffanlage fördert Treibstoff, die Ladeeinrichtung lädt die Traktionsbatterie; Verbrennungsmotor, Traktionsmaschine und Brennstoffzellensystem erzeugen Antriebsleistung, die Traktionsmaschine gewinnt Bremsenergie zurück; die Kraftübertragung überträgt Drehmoment; Räder und Reifen oder Gleiskettenlaufwerk bewegen das Fahrzeug fort; Lenkrad, Lenkunterstützung, Knickgelenk und Spurführungssystem lenken; die Radbremsanlage verzögert, die Feststellbremse hält fest; die Anhängevorrichtung zieht Anhänger; der Dreipunkt-Kraftheber übernimmt das Heben des Anbaugeräts, der Frontlader handhabt Objekte; Zapfwelle, Hydraulikanlage und Anbaugerätesteckdose versorgen Arbeitsgeräte; Hydraulikanlage und Druckluftanlage stellen hydraulische Leistung und Druckluft bereit; das Niedervolt-Bordnetz verteilt elektrische Energie; Bedienelemente erfassen Fahrereingaben, Anzeigeelemente zeigen Fahrerinformationen an; Außenspiegel sichern die Fahrersicht, Scheinwerfer leuchten die Umgebung aus, Signalleuchten geben Lichtsignale ab; Kabine und Überschlagschutz schützen die Insassen; Fahrzeugbus und Anbaugerätebus übertragen Daten; das Fahrzeugmanagement überwacht den Fahrzeugzustand, die Navigation bestimmt die Position, die Umfeldsensorik erfasst das Umfeld; die Auftragssteuerung steuert das Arbeitsgerät; Kühlkreislauf und Batterietemperierung regeln die Betriebstemperatur, die Heiz- und Klimaanlage klimatisiert den Innenraum.",
+          "text": "Funktional tragen Tragstruktur und Fahrwerk die Fahrzeuglasten; Kraftstofftank, Starterbatterie, Traktionsbatterie und Wasserstofftank speichern Energie; die Kraftstoffanlage fördert Treibstoff, die Ladeeinrichtung lädt die Traktionsbatterie; Verbrennungsmotor, Traktionsmaschine und Brennstoffzellensystem erzeugen Antriebsleistung, die Traktionsmaschine gewinnt Bremsenergie zurück; die Kraftübertragung überträgt Drehmoment; Räder und Reifen oder Gleiskettenlaufwerk bewegen das Fahrzeug fort; Lenkrad, Lenkunterstützung, Knickgelenk und Spurführungssystem lenken; die Radbremsanlage verzögert, die Feststellbremse hält fest; die Anhängevorrichtung zieht Anhänger; der Dreipunkt-Kraftheber hebt das Anbaugerät, der Frontlader handhabt Objekte; Zapfwelle, Hydraulikanlage und Anbaugerätesteckdose versorgen Arbeitsgeräte; Hydraulikanlage und Druckluftanlage stellen hydraulische Leistung und Druckluft bereit; das Niedervolt-Bordnetz verteilt elektrische Energie; Bedienelemente erfassen Fahrereingaben, Anzeigeelemente zeigen Fahrerinformationen an; Außenspiegel sichern die Fahrersicht, Scheinwerfer leuchten die Umgebung aus, Signalleuchten geben Lichtsignale ab; Kabine, Sicherheitsgurt und Überschlagschutz schützen die Insassen; Fahrzeugbus, Anbaugerätebus, Gateway und Telematikeinheit übertragen Daten; das Fahrzeugmanagement überwacht den Fahrzeugzustand, die Navigation bestimmt die Position, die Umfeldsensorik erfasst das Umfeld; die Auftragssteuerung steuert das Arbeitsgerät; Kühlkreislauf und Batterietemperierung regeln die Betriebstemperatur, die Heiz- und Klimaanlage klimatisiert den Innenraum.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -773,7 +814,8 @@
               "P24",
               "P26",
               "P28",
-              "P30"
+              "P30",
+              "P36"
             ],
             "schluss": "Jede Funktion des Modellblocks ist dem ausführenden Element zugeordnet."
           },
@@ -1096,7 +1138,6 @@
         "absatz_ids": [
           "P6",
           "P9",
-          "P20",
           "P33"
         ]
       },
@@ -1520,7 +1561,7 @@
         "id": "E70",
         "name": "Fahrzeugmanagement",
         "typ": "komponente",
-        "eltern_id": "E69",
+        "eltern_id": "E104",
         "absatz_ids": [
           "P6",
           "P22",
@@ -1531,7 +1572,7 @@
         "id": "E71",
         "name": "Auftragssteuerung",
         "typ": "komponente",
-        "eltern_id": "E69",
+        "eltern_id": "E105",
         "absatz_ids": [
           "P22",
           "P33",
@@ -1542,7 +1583,7 @@
         "id": "E72",
         "name": "Navigation",
         "typ": "komponente",
-        "eltern_id": "E69",
+        "eltern_id": "E105",
         "absatz_ids": [
           "P22",
           "P24",
@@ -1693,7 +1734,7 @@
       {
         "id": "E86",
         "name": "Zapfwelle",
-        "typ": "komponente",
+        "typ": "subsystem",
         "eltern_id": "E85",
         "absatz_ids": [
           "P29",
@@ -1705,12 +1746,13 @@
       {
         "id": "E87",
         "name": "Hydraulikanlage",
-        "typ": "komponente",
+        "typ": "subsystem",
         "eltern_id": "E85",
         "absatz_ids": [
           "P30",
           "P33",
-          "P34"
+          "P34",
+          "P36"
         ]
       },
       {
@@ -1722,6 +1764,171 @@
           "P30",
           "P33",
           "P34"
+        ]
+      },
+      {
+        "id": "E89",
+        "name": "Hydraulikpumpe",
+        "typ": "komponente",
+        "eltern_id": "E87",
+        "absatz_ids": [
+          "P33",
+          "P36"
+        ]
+      },
+      {
+        "id": "E90",
+        "name": "Ölbehälter mit Filter",
+        "typ": "komponente",
+        "eltern_id": "E87",
+        "absatz_ids": [
+          "P36"
+        ]
+      },
+      {
+        "id": "E91",
+        "name": "Zusatzsteuergeräte",
+        "typ": "komponente",
+        "eltern_id": "E87",
+        "absatz_ids": [
+          "P33",
+          "P36"
+        ]
+      },
+      {
+        "id": "E92",
+        "name": "Hydraulikkupplungen",
+        "typ": "komponente",
+        "eltern_id": "E87",
+        "absatz_ids": [
+          "P33",
+          "P36"
+        ]
+      },
+      {
+        "id": "E93",
+        "name": "Gateway",
+        "typ": "komponente",
+        "eltern_id": "E66",
+        "absatz_ids": [
+          "P20",
+          "P33",
+          "P34"
+        ]
+      },
+      {
+        "id": "E94",
+        "name": "Gleichspannungswandler",
+        "typ": "komponente",
+        "eltern_id": "E31",
+        "absatz_ids": [
+          "P9",
+          "P33"
+        ]
+      },
+      {
+        "id": "E95",
+        "name": "Allradkupplung",
+        "typ": "komponente",
+        "eltern_id": "E16",
+        "absatz_ids": [
+          "P6",
+          "P14"
+        ]
+      },
+      {
+        "id": "E96",
+        "name": "Differenzialsperre",
+        "typ": "komponente",
+        "eltern_id": "E16",
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "E97",
+        "name": "Zapfwellenkupplung",
+        "typ": "komponente",
+        "eltern_id": "E86",
+        "absatz_ids": [
+          "P30",
+          "P33"
+        ]
+      },
+      {
+        "id": "E98",
+        "name": "Zapfwellengetriebe",
+        "typ": "komponente",
+        "eltern_id": "E16",
+        "absatz_ids": [
+          "P6",
+          "P30"
+        ]
+      },
+      {
+        "id": "E99",
+        "name": "Heckzapfwelle",
+        "typ": "komponente",
+        "eltern_id": "E86",
+        "absatz_ids": [
+          "P30"
+        ]
+      },
+      {
+        "id": "E100",
+        "name": "Frontzapfwelle",
+        "typ": "komponente",
+        "eltern_id": "E86",
+        "absatz_ids": [
+          "P30"
+        ]
+      },
+      {
+        "id": "E101",
+        "name": "Tragende Antriebsgehäuse",
+        "typ": "komponente",
+        "eltern_id": "E3",
+        "absatz_ids": [
+          "P4"
+        ]
+      },
+      {
+        "id": "E102",
+        "name": "Sicherheitsgurt",
+        "typ": "komponente",
+        "eltern_id": "E49",
+        "absatz_ids": [
+          "P16",
+          "P34"
+        ]
+      },
+      {
+        "id": "E103",
+        "name": "Telematikeinheit",
+        "typ": "komponente",
+        "eltern_id": "E105",
+        "absatz_ids": [
+          "P22",
+          "P33",
+          "P34"
+        ]
+      },
+      {
+        "id": "E104",
+        "name": "Fahrzeugsteuerung",
+        "typ": "subsystem",
+        "eltern_id": "E69",
+        "absatz_ids": [
+          "P22"
+        ]
+      },
+      {
+        "id": "E105",
+        "name": "Informationssystem",
+        "typ": "subsystem",
+        "eltern_id": "E69",
+        "absatz_ids": [
+          "P22"
         ]
       }
     ],
@@ -2002,9 +2209,11 @@
         "name": "Insassen schützen",
         "ausgefuehrt_von": [
           "E49",
-          "E74"
+          "E74",
+          "E102"
         ],
         "absatz_ids": [
+          "P16",
           "P24",
           "P34"
         ]
@@ -2014,10 +2223,13 @@
         "name": "Daten übertragen",
         "ausgefuehrt_von": [
           "E67",
-          "E68"
+          "E68",
+          "E93",
+          "E103"
         ],
         "absatz_ids": [
           "P20",
+          "P22",
           "P34"
         ]
       },
@@ -2129,48 +2341,52 @@
       {
         "id": "S4",
         "von": "E14",
-        "nach": "E86",
+        "nach": "E97",
         "art": "mechanisch",
         "absatz_ids": [
           "P6",
           "P29",
+          "P30",
           "P33"
         ],
         "medium": "Drehmoment",
-        "schnittstelle": "Zapfwellenantrieb"
+        "schnittstelle": "Antrieb der Zapfwellenkupplung"
       },
       {
         "id": "S5",
         "von": "E14",
-        "nach": "E87",
+        "nach": "E89",
         "art": "mechanisch",
         "absatz_ids": [
           "P6",
-          "P33"
+          "P33",
+          "P36"
         ],
         "medium": "Drehmoment",
         "schnittstelle": "Antrieb der Hydraulikpumpe"
       },
       {
         "id": "S6",
-        "von": "E87",
+        "von": "E89",
         "nach": "E56",
         "art": "hydraulisch",
         "absatz_ids": [
           "P18",
-          "P33"
+          "P33",
+          "P36"
         ],
         "medium": "Hydrauliköl",
         "schnittstelle": "Hubwerksanschluss"
       },
       {
         "id": "S7",
-        "von": "E87",
+        "von": "E89",
         "nach": "E38",
         "art": "hydraulisch",
         "absatz_ids": [
           "P12",
-          "P33"
+          "P33",
+          "P36"
         ],
         "medium": "Hydrauliköl",
         "schnittstelle": "Lenkhydraulikanschluss"
@@ -2194,7 +2410,7 @@
         "nach": "E63",
         "art": "elektrisch",
         "absatz_ids": [
-          "P20",
+          "P9",
           "P33"
         ],
         "medium": "Niedervolt-Gleichstrom",
@@ -2206,8 +2422,7 @@
         "nach": "E67",
         "art": "information",
         "absatz_ids": [
-          "P20",
-          "P33"
+          "P20"
         ],
         "medium": "Hubwerksdaten",
         "schnittstelle": "Fahrzeugbusanschluss der Hubwerksregelung"
@@ -2218,8 +2433,7 @@
         "nach": "E68",
         "art": "information",
         "absatz_ids": [
-          "P22",
-          "P33"
+          "P22"
         ],
         "medium": "Sollwerte und Arbeitsdaten",
         "schnittstelle": "Geräteschnittstelle am Anbaugerätebus"
@@ -2265,8 +2479,7 @@
         "nach": "E67",
         "art": "information",
         "absatz_ids": [
-          "P16",
-          "P33"
+          "P16"
         ],
         "medium": "Fahrereingaben",
         "schnittstelle": "Bedienschnittstelle am Fahrzeugbus"
@@ -2362,6 +2575,134 @@
         ],
         "medium": "Drehmoment",
         "schnittstelle": "Einkopplung der Traktionsmaschine"
+      },
+      {
+        "id": "S24",
+        "von": "E89",
+        "nach": "E91",
+        "art": "hydraulisch",
+        "absatz_ids": [
+          "P33",
+          "P36"
+        ],
+        "medium": "Hydrauliköl"
+      },
+      {
+        "id": "S25",
+        "von": "E91",
+        "nach": "E92",
+        "art": "hydraulisch",
+        "absatz_ids": [
+          "P33",
+          "P36"
+        ],
+        "medium": "Hydrauliköl"
+      },
+      {
+        "id": "S26",
+        "von": "E67",
+        "nach": "E93",
+        "art": "information",
+        "absatz_ids": [
+          "P20",
+          "P35"
+        ],
+        "medium": "Fahrzeugdaten",
+        "schnittstelle": "Traktor-ECU"
+      },
+      {
+        "id": "S27",
+        "von": "E93",
+        "nach": "E68",
+        "art": "information",
+        "absatz_ids": [
+          "P20",
+          "P35"
+        ],
+        "medium": "Fahrzeugdaten wie Fahrgeschwindigkeit und Zapfwellendrehzahl",
+        "schnittstelle": "Traktor-ECU"
+      },
+      {
+        "id": "S28",
+        "von": "E94",
+        "nach": "E63",
+        "art": "elektrisch",
+        "absatz_ids": [
+          "P9",
+          "P33"
+        ],
+        "medium": "Niedervolt-Gleichstrom",
+        "schnittstelle": "Gleichspannungswandleranschluss am Niedervolt-Bordnetz"
+      },
+      {
+        "id": "S29",
+        "von": "E41",
+        "nach": "E95",
+        "art": "information",
+        "absatz_ids": [
+          "P13",
+          "P14"
+        ],
+        "medium": "Bremssignal",
+        "schnittstelle": "Allradzuschaltung beim Bremsen"
+      },
+      {
+        "id": "S30",
+        "von": "E18",
+        "nach": "E98",
+        "art": "mechanisch",
+        "absatz_ids": [
+          "P29",
+          "P30",
+          "P33"
+        ],
+        "medium": "Drehmoment"
+      },
+      {
+        "id": "S31",
+        "von": "E97",
+        "nach": "E98",
+        "art": "mechanisch",
+        "absatz_ids": [
+          "P30"
+        ],
+        "medium": "Drehmoment",
+        "schnittstelle": "Zapfwellenkupplung zum Zapfwellengetriebe"
+      },
+      {
+        "id": "S32",
+        "von": "E98",
+        "nach": "E99",
+        "art": "mechanisch",
+        "absatz_ids": [
+          "P30"
+        ],
+        "medium": "Drehmoment",
+        "schnittstelle": "Abtrieb zur Heckzapfwelle"
+      },
+      {
+        "id": "S33",
+        "von": "E61",
+        "nach": "E3",
+        "art": "mechanisch",
+        "absatz_ids": [
+          "P4",
+          "P18"
+        ],
+        "medium": "Zug- und Stützkräfte",
+        "schnittstelle": "Frontladeranbau an der Tragstruktur"
+      },
+      {
+        "id": "S34",
+        "von": "E71",
+        "nach": "E103",
+        "art": "information",
+        "absatz_ids": [
+          "P22",
+          "P33"
+        ],
+        "medium": "Applikationskarten und Arbeitsdaten",
+        "schnittstelle": "Datenübertragung zum Betriebsmanagement"
       }
     ],
     "entfallene_kategorien": [],
@@ -2400,6 +2741,10 @@
           {
             "element_id": "E86",
             "beschreibung": "Zapfwelle kann mechanisch oder elektrisch angetrieben werden."
+          },
+          {
+            "element_id": "E30",
+            "beschreibung": "Generator entfällt bei batterie- und brennstoffzellenelektrischem Antrieb, ein Gleichspannungswandler speist das Niedervolt-Bordnetz."
           }
         ],
         "absatz_ids": [
@@ -2614,6 +2959,154 @@
           "P15",
           "P16"
         ]
+      },
+      {
+        "id": "V8",
+        "element_id": "E87",
+        "bezeichnung": "Bauart der Hydraulikanlage",
+        "alternativen": [
+          "Konstantstromsystem mit Konstantpumpe",
+          "Load-Sensing-System mit Verstellpumpe"
+        ],
+        "auswahlkriterien": [
+          "Leistungsbedarf und Anzahl gleichzeitiger Verbraucher",
+          "Wirkungsgrad im Teillastbetrieb",
+          "Anforderungen der Anbaugeräte"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E38",
+            "beschreibung": "Lenkunterstützung wird über ein Vorrangventil versorgt, dessen Ausführung von der Systembauart abhängt."
+          },
+          {
+            "element_id": "E14",
+            "beschreibung": "Leistungsentnahme am Verbrennungsmotor folgt beim Load-Sensing-System dem Bedarf, beim Konstantstromsystem dem vollen Förderstrom."
+          },
+          {
+            "element_id": "E82",
+            "beschreibung": "Kühlkreislauf muss beim Konstantstromsystem mehr Verlustwärme des Hydrauliköls abführen."
+          },
+          {
+            "element_id": "E56",
+            "beschreibung": "Hubwerksversorgung des Dreipunkt-Krafthebers hängt von Vorrangschaltung und Ventilbauart ab."
+          },
+          {
+            "element_id": "E92",
+            "beschreibung": "Hydraulikkupplungen erhalten beim Load-Sensing-System eine zusätzliche Meldeleitung zum Gerät."
+          }
+        ],
+        "absatz_ids": [
+          "P30",
+          "P36"
+        ]
+      },
+      {
+        "id": "V9",
+        "element_id": "E3",
+        "bezeichnung": "Bauweise der Tragstruktur",
+        "alternativen": [
+          "rahmenlose Blockbauweise",
+          "Halbrahmenbauweise",
+          "Vollrahmen"
+        ],
+        "auswahlkriterien": [
+          "Steifigkeit und Lastaufnahme für Frontlader und Frontkraftheber",
+          "Austauschbarkeit von Motor und Antriebsvarianten",
+          "Bauraum"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E13",
+            "beschreibung": "Motorgehäuse wird bei Blockbauweise tragend und muss Strukturlasten aufnehmen."
+          },
+          {
+            "element_id": "E16",
+            "beschreibung": "Getriebe- und Achsgehäuse der Kraftübertragung werden bei Blockbauweise tragend."
+          },
+          {
+            "element_id": "E56",
+            "beschreibung": "Anlenkung des Dreipunkt-Krafthebers sitzt am tragenden Hinterachsgehäuse oder am Rahmen."
+          }
+        ],
+        "absatz_ids": [
+          "P3",
+          "P4"
+        ]
+      },
+      {
+        "id": "V10",
+        "element_id": "E9",
+        "bezeichnung": "Federungskonzept",
+        "alternativen": [
+          "ungefedert mit Reifenfederung",
+          "gefederte Vorderachse",
+          "Vollfederung"
+        ],
+        "auswahlkriterien": [
+          "Höchstgeschwindigkeit",
+          "Transportanteil",
+          "Fahrerbelastung durch Schwingungen"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E7",
+            "beschreibung": "Vorderachse erhält bei Vorderachsfederung Federelemente und eine geänderte Anbindung an die Tragstruktur."
+          },
+          {
+            "element_id": "E87",
+            "beschreibung": "Hydraulikanlage versorgt bei hydraulischer Federung die Federungszylinder."
+          },
+          {
+            "element_id": "E51",
+            "beschreibung": "Fahrersitz muss bei ungefedertem Fahrwerk den größten Teil der Schwingungen ausgleichen."
+          },
+          {
+            "element_id": "E49",
+            "beschreibung": "Kabine kann bei ungefedertem Fahrwerk zusätzlich gefedert gelagert werden."
+          }
+        ],
+        "absatz_ids": [
+          "P3",
+          "P4",
+          "P15"
+        ]
+      },
+      {
+        "id": "V11",
+        "element_id": "E86",
+        "bezeichnung": "Zapfwellenart und -anordnung",
+        "alternativen": [
+          "Motorzapfwelle am Heck",
+          "Getriebezapfwelle am Heck mit zusätzlichem Wegezapfwellenabtrieb",
+          "Heck- und Frontzapfwelle"
+        ],
+        "auswahlkriterien": [
+          "Antriebsbedarf und Drehzahlen der Geräte",
+          "Bedarf an fahrgeschwindigkeitsabhängigem Geräteantrieb, etwa für Triebachsanhänger",
+          "gleichzeitige Front- und Heckarbeit"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E18",
+            "beschreibung": "Getriebe braucht für die Wegezapfwelle einen Abtrieb hinter den Fahrstufen."
+          },
+          {
+            "element_id": "E17",
+            "beschreibung": "Fahrkupplung trennt bei Getriebe- und Wegezapfwelle auch den Zapfwellenantrieb."
+          },
+          {
+            "element_id": "E55",
+            "beschreibung": "Frontanbauraum erhält bei Frontzapfwelle einen Geräteantrieb."
+          },
+          {
+            "element_id": "E70",
+            "beschreibung": "Fahrzeugmanagement schaltet Zapfwellenkupplung und Zapfwellengetriebe."
+          }
+        ],
+        "absatz_ids": [
+          "P29",
+          "P30"
+        ]
       }
     ],
     "klaerungsfragen": [
@@ -2700,7 +3193,10 @@
           "E2"
         ],
         "anlass": "anforderung",
-        "relevanz": "Davon hängen Bremsanforderungen, Antiblockiersystem und Federung ab."
+        "relevanz": "Davon hängen Bremsanforderungen, ein gegebenenfalls erforderliches Antiblockiersystem und das Federungskonzept ab.",
+        "variante_ids": [
+          "V10"
+        ]
       },
       {
         "id": "K8",
@@ -2786,6 +3282,55 @@
         ],
         "anlass": "anforderung",
         "relevanz": "Davon hängen Zapfwellengetriebe, Pumpenbauart und Leistungsaufteilung des Motors ab."
+      },
+      {
+        "id": "K16",
+        "frage": "Wie viele hydraulische Verbraucher müssen gleichzeitig versorgt werden, und benötigen die Anbaugeräte eine bedarfsgeregelte Versorgung mit Rückmeldeleitung?",
+        "element_ids": [
+          "E85",
+          "E87"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Pumpenbauart, Vorrangschaltung der Lenkung, Anschlüsse am Anbauraum und Ölkühlung ab.",
+        "variante_ids": [
+          "V8"
+        ]
+      },
+      {
+        "id": "K17",
+        "frage": "Soll die Tragstruktur in rahmenloser Blockbauweise, als Halbrahmen oder als Vollrahmen ausgeführt werden?",
+        "element_ids": [
+          "E2",
+          "E3"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Lastaufnahme für Frontlader und Frontkraftheber, die Gestaltung der Antriebsgehäuse und die Austauschbarkeit von Antriebsvarianten ab.",
+        "variante_ids": [
+          "V9"
+        ]
+      },
+      {
+        "id": "K18",
+        "frage": "Benötigen die vorgesehenen Anbaugeräte eine Frontzapfwelle oder einen fahrgeschwindigkeitsabhängigen Zapfwellenantrieb, etwa für Triebachsanhänger?",
+        "element_ids": [
+          "E85",
+          "E86"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Zapfwellenkupplung, Abtrieb am Getriebe und die Ausstattung des Frontanbauraums ab.",
+        "variante_ids": [
+          "V11"
+        ]
+      },
+      {
+        "id": "K19",
+        "frage": "Für welches Einsatzprofil ist der Traktor bestimmt: allgemeine Feld- und Transportarbeit, Sonderkulturen mit schmaler Spur oder hoher Bodenfreiheit, Forst oder Großflächen mit hohem Zugkraftbedarf?",
+        "element_ids": [
+          "E1",
+          "E2"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Fahrzeugklasse, Spurweite, Bodenfreiheit, Leistungsklasse und die Wahl von Lenkungs-, Fahrwerks- und Anbauraumvariante ab."
       }
     ],
     "anforderungsthemen": [
@@ -2821,18 +3366,19 @@
         "element_ids": [
           "E12"
         ],
-        "thema": "Zugleistung und Abgasemission",
+        "thema": "Zugleistung, Schadstoffemission und Außengeräusch",
         "kenngroessen": [
           "Motornennleistung",
           "Zugkraft",
           "Geschwindigkeitsbereiche",
-          "Abgasemissionen"
+          "Abgasemissionen",
+          "Außengeräuschpegel"
         ],
         "regelwerke": [
           {
-            "bezeichnung": "Europäische Abgasstufe V für Motoren nicht für den Straßenverkehr bestimmter mobiler Maschinen (EU)",
-            "quellen_id": "Q8",
-            "fundstelle": "Abschnitt I, Absatz 2"
+            "bezeichnung": "Verordnung (EU) Nr. 167/2013, Umweltverträglichkeit: Schadstoffemissionen nach den Grenzwerten der Richtlinie 97/68/EG für mobile Maschinen und Außengeräuschpegel (EU, Klassen T und C)",
+            "quellen_id": "Q5",
+            "fundstelle": "Art. 19 Abs. 2 bis 4"
           }
         ]
       },
@@ -2982,9 +3528,9 @@
             "fundstelle": "Art. 18 Abs. 2 Buchst. a, b, j und o"
           },
           {
-            "bezeichnung": "29 CFR 1928.51, Überrollschutz und Sicherheitsgurt für landwirtschaftliche Traktoren mit Beschäftigten (USA, OSHA)",
+            "bezeichnung": "29 CFR 1928.51, Überrollschutz und Sicherheitsgurt für nach dem 25. Oktober 1976 gebaute landwirtschaftliche Traktoren, die Beschäftigte bedienen (USA, OSHA, mit Ausnahmen)",
             "quellen_id": "Q7",
-            "fundstelle": "Abs. (b)(1) und (b)(2)"
+            "fundstelle": "§ 1928.51 Abs. (b) Einleitungssatz, (b)(1), (b)(2)(i) und (b)(5)"
           }
         ]
       },
@@ -3057,7 +3603,7 @@
     "Recherche: Konsolidierte EU-Fassung der Verordnung (EU) Nr. 167/2013 und die Delegierte Verordnung (EU) 2015/208 (funktionale Sicherheit, Bremsen) sowie (EU) 1322/2014 (Arbeitsschutz, Umsturzschutz) auf EUR-Lex prüfen; EUR-Lex lieferte in diesem Lauf nur eine Zugangsprüfung, verwendet wurde die Originalfassung über legislation.gov.uk.",
     "Recherche: OECD-Standardcodes für die amtliche Prüfung land- und forstwirtschaftlicher Traktoren (Umsturzschutzstrukturen, Leistungsprüfung); oecd.org verweigerte in diesem Lauf den Abruf.",
     "Recherche: Normen zu Dreipunktanbau (Suchbegriff ISO 730, Kategorien der Koppelpunkte) und Zapfwelle (Suchbegriff ISO 500) für Maße und Kategoriegrenzen; Normtexte wurden in diesem Lauf nicht abgerufen.",
-    "Recherche: Fachliteratur zur Hydraulikarchitektur von Traktoren (Suchbegriffe Load-Sensing, Konstantstromsystem, Zusatzsteuergeräte), um Hydraulikanlage in Pumpe, Steuerventile und Anschlüsse zu zerlegen.",
-    "Recherche: Quelle zur Feststellbremse von Traktoren (Bauart und Anforderungen am Hang) und zur Trennung von Fahrzeugbus und Anbaugerätebus (Suchbegriff Tractor ECU, ISO 11783-9)."
+    "Recherche: Fachliteratur zur Hydraulikarchitektur von Traktoren (Suchbegriffe Load-Sensing, Konstantstromsystem, Zusatzsteuergeräte, Vorrangventil), um die hergeleitete Zerlegung der Hydraulikanlage und die Bauartvariante zu belegen.",
+    "Recherche: Quelle zur Feststellbremse von Traktoren (Bauart und Anforderungen am Hang)."
   ]
 }

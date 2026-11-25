@@ -113,7 +113,7 @@
         },
         {
           "absatz_id": "P2",
-          "text": "Architekturell ist die Lokomotive ein Gesamtsystem, das Zug- und Bremskraft für einen angehängten Wagenzug erzeugt, ohne selbst Fahrgäste oder Güter aufzunehmen. Ihre Schnittstellen sind mechanisch zum Gleis und zum Wagenzug, elektrisch zur Fahrleitung und zur Zugsammelschiene, pneumatisch über die Bremsleitungen, informationstechnisch zur Zugsicherung und zum Zugfunk sowie thermisch zur Umgebung. Für eine Dekomposition, etwa in SysML, wird sie zunächst in Hauptsysteme und diese weiter in Subsysteme und Komponenten zerlegt; strukturändernde Varianten stehen beim jeweils betroffenen Hauptsystem.",
+          "text": "Architekturell erzeugt die Lokomotive Zug- und Bremskraft für einen angehängten Wagenzug, ohne selbst Fahrgäste oder Güter aufzunehmen. Ihre Schnittstellen sind mechanisch zum Gleis und zum Wagenzug, elektrisch zur Fahrleitung und zur Zugsammelschiene, pneumatisch über die Bremsleitungen, informationstechnisch zur Zugsicherung und zum Zugfunk sowie thermisch zur Umgebung. Die Dekomposition, etwa in SysML, zerlegt sie in Hauptsysteme, Subsysteme und Komponenten; strukturändernde Varianten stehen beim jeweils betroffenen Hauptsystem.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -160,7 +160,7 @@
         },
         {
           "absatz_id": "P4",
-          "text": "Fahrzeugstruktur und Fahrwerk tragen alle Fahrzeuglasten und ziehen über die Zug- und Stoßeinrichtung den Wagenzug. Die Gewichtskraft führt vom Lokomotivkasten mit Rahmen und Maschinenraum über die Federung in die Drehgestelle und über Radsatzlager und Radsätze ins Gleis; die Zugkraft läuft von den Radsätzen über Drehgestell und Rahmen zur Endkupplung, Druckkräfte nehmen die Puffer auf. Die Achsfolge mit der Zahl der Drehgestelle, Radsätze und angetriebenen Radsätze ändert die Struktur: Drehgestelle tragen je zwei oder drei Radsätze, Einrahmenlokomotiven zwei oder drei Radsätze am Rahmen; davon hängen Zahl der Traktionsmaschinen, Radsatzantriebe und Traktionsstromrichter sowie die Rahmenlänge ab. Ein Bahnräumer schützt die Räder des führenden Radsatzes. Weil das Gleis die Spurführung übernimmt, entfällt ein Lenksystem.",
+          "text": "Fahrzeugstruktur und Fahrwerk tragen alle Lasten und ziehen über die Zug- und Stoßeinrichtung den Wagenzug. Die Gewichtskraft führt vom Lokomotivkasten mit Rahmen und Maschinenraum über Federung, Drehgestelle, Radsatzlager und Radsätze ins Gleis; die Zugkraft läuft von den Radsätzen über Drehgestell und Rahmen zur Endkupplung, Druckkräfte nehmen die Puffer auf. Die Achsfolge ändert die Struktur: Drehgestelle wie Einrahmenlokomotiven tragen je zwei oder drei Radsätze; davon hängen Zahl der Traktionsmaschinen, Radsatzantriebe und Traktionsstromrichter sowie die Rahmenlänge ab. Ein Bahnräumer schützt die Räder des führenden Radsatzes. Weil das Gleis die Spurführung übernimmt, entfällt ein Lenksystem.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -311,7 +311,7 @@
         },
         {
           "absatz_id": "P11",
-          "text": "Das Bremssystem der Lokomotive verzögert das eigene Fahrzeug und gibt zugleich den Bremsbefehl an den Zug. Die Druckluftbremse mit Führerbremsventil, Hauptluftleitung, Steuerventil, Hilfsluftbehälter und Bremszylinder wirkt auf die Radsätze. Die Hauptluftleitung ist Signal- und Nachfüllweg: Sie füllt den Hilfsluftbehälter, aus dem das Steuerventil beim Bremsen die Bremszylinder speist, und ist an der Endkupplung zum Wagenzug durchgekuppelt. Bei elektrischer Kraftübertragung nutzt die elektrodynamische Bremse die Traktionsmaschinen als Generatoren und gibt die Energie an einen Bremswiderstand ab, bei Elektrolokomotiven als Nutzbremse auch an eine aufnahmefähige Fahrleitung, bei Batterielokomotiven an die Traktionsbatterie; dieselhydraulische Lokomotiven bremsen hydrodynamisch über das Strömungsgetriebe. Das Gleitschutzsystem begrenzt die Bremskraft auf den verfügbaren Kraftschluss.",
+          "text": "Das Bremssystem verzögert die Lokomotive und gibt den Bremsbefehl an den Zug. Die Druckluftbremse mit Führerbremsventil, Hauptluftleitung, Steuerventil, Hilfsluftbehälter und Bremszylinder wirkt auf die Radsätze. Die Hauptluftleitung ist Signal- und Nachfüllweg: Sie füllt den Hilfsluftbehälter, aus dem das Steuerventil die Bremszylinder speist, und ist zum Wagenzug durchgekuppelt. Bei elektrischer Kraftübertragung nutzt die elektrodynamische Bremse die Traktionsmaschinen als Generatoren und speist einen Bremswiderstand, bei Elektrolokomotiven als Nutzbremse auch an eine aufnahmefähige Fahrleitung, bei Batterielokomotiven an die Traktionsbatterie; dieselhydraulische Lokomotiven bremsen hydrodynamisch über das Strömungsgetriebe. Das Gleitschutzsystem begrenzt die Bremskraft auf den verfügbaren Kraftschluss.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -658,7 +658,7 @@
       "absaetze": [
         {
           "absatz_id": "P27",
-          "text": "In SysML bildet der Block Lokomotive das Gesamtsystem mit den Hauptsystemen als Teilen. Dekompositionspfade sind etwa Energieversorgungssystem → Oberspannungskreis → Haupttransformator, Antriebssystem → Kraftübertragung → Traktionsmaschine, Fahrzeugstruktur und Fahrwerk → Laufwerk → Drehgestell → Radsatz und Bremssystem → Druckluftbremse → Steuerventil. Die Antriebsart wird als Spezialisierung eines abstrakten Blocks Kraftübertragung modelliert. Ports bilden Stromabnehmer zu Fahrleitung, Radsatz zu Gleis, Endkupplung zu Wagenzug, Hauptluftleitung und Zugsammelschiene ab; Block Definition Diagrams zeigen die Dekomposition, Internal Block Diagrams die Flüsse, Zustandsdiagramme etwa die Schnellbremsung.",
+          "text": "In SysML ist der Block Lokomotive das Gesamtsystem mit den Hauptsystemen als Teilen. Dekompositionspfade sind Energieversorgungssystem → Oberspannungskreis → Haupttransformator, Antriebssystem → Kraftübertragung → Traktionsmaschine, Fahrzeugstruktur und Fahrwerk → Laufwerk → Drehgestell → Radsatz und Bremssystem → Druckluftbremse → Steuerventil. Die Antriebsart spezialisiert einen abstrakten Block Kraftübertragung. Ports bilden Stromabnehmer zu Fahrleitung, Radsatz zu Gleis, Endkupplung zu Wagenzug, Hauptluftleitung und Zugsammelschiene ab; Block Definition Diagrams zeigen die Dekomposition, Internal Block Diagrams die Flüsse, Zustandsdiagramme etwa die Schnellbremsung.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -683,7 +683,7 @@
       "absaetze": [
         {
           "absatz_id": "P28",
-          "text": "Elektrische Energie fließt von der Fahrleitung über Stromabnehmer, Hauptschalter und Haupttransformator zu Traktionsstromrichter, Hilfsbetriebeumrichter und Zugsammelschiene; bei Diesellokomotiven fließt Kraftstoff vom Kraftstofftank zum Verbrennungsmotor, dessen Leistung zum Hauptgenerator der Energieversorgung oder zum Strömungsgetriebe. Die Traktionsmaschine liefert Drehmoment über den Radsatzantrieb an den Radsatz, der Rahmen die Zugkraft an die Endkupplung. Beim elektrodynamischen Bremsen fließt Energie zum Bremswiderstand oder zur Fahrleitung. Der Kompressor füllt den Hauptluftbehälter, das Führerbremsventil steuert die Hauptluftleitung. Bedienelemente liefern Eingaben an das Fahrzeugmanagement, Sicherheitsfahrschaltung und Zugbeeinflussung Bremsbefehle an die Druckluftbremse; Wärme fließt von Transformator und Stromrichter an Kühlanlagen und Umgebung.",
+          "text": "Elektrische Energie fließt von der Fahrleitung über Stromabnehmer, Hauptschalter und Haupttransformator zu Traktionsstromrichter, Hilfsbetriebeumrichter und Zugsammelschiene; bei Diesellokomotiven Kraftstoff vom Kraftstofftank zum Verbrennungsmotor, dessen Leistung zum Hauptgenerator oder Strömungsgetriebe. Die Traktionsmaschine liefert Drehmoment über den Radsatzantrieb an den Radsatz, der Rahmen die Zugkraft an die Endkupplung. Elektrodynamische Bremsenergie fließt zum Bremswiderstand oder zur Fahrleitung. Der Kompressor füllt den Hauptluftbehälter, das Führerbremsventil steuert die Hauptluftleitung. Bedienelemente liefern Eingaben an das Fahrzeugmanagement, Sicherheitsfahrschaltung und Zugbeeinflussung Bremsbefehle an die Druckluftbremse; Wärme fließt von Transformator und Stromrichter an Kühlanlagen und Umgebung.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {

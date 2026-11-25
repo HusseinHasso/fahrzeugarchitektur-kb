@@ -130,7 +130,7 @@
         },
         {
           "absatz_id": "P3",
-          "text": "Architekturell ist der Güterwagen ein Gesamtsystem ohne Fahrantrieb, das Zugkraft, Bremsluft und gegebenenfalls Energie und Daten über seine Wagenenden aus dem Zugverband bezieht. Er ist über Kupplung und Rad-Schiene-Kontakt mit Triebfahrzeug, Nachbarwagen und Gleis gekoppelt, über Lade- und Befestigungseinrichtungen mit Ladegut und Umschlaganlagen. Die folgenden Abschnitte zerlegen ihn in Hauptsysteme, Subsysteme und Komponenten, deren Umfang von der Gattung abhängt.",
+          "text": "Architekturell ist der Güterwagen ein Gesamtsystem ohne Fahrantrieb, das Zugkraft, Bremsluft und gegebenenfalls Energie und Daten über seine Wagenenden aus dem Zugverband bezieht. Kupplung und Rad-Schiene-Kontakt verbinden ihn mit Triebfahrzeug, Nachbarwagen und Gleis, Lade- und Befestigungseinrichtungen mit Ladegut und Umschlaganlagen. Die folgenden Abschnitte zerlegen ihn in Hauptsysteme, Subsysteme und Komponenten.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -209,7 +209,7 @@
         },
         {
           "absatz_id": "P7",
-          "text": "Fahrzeugstruktur und Fahrwerk tragen alle Fahrzeuglasten und gliedern sich in Untergestell aus Langträger, Hauptquerträger und Kopfstück, Laufwerk sowie Zug- und Stoßeinrichtung. Die Last fließt vom Ladeboden über Untergestell und Hauptquerträger in den Drehgestellrahmen und über Federung, Radsatzlager und Radsatz auf die Schiene; bei Einzelradsätzen sitzt die Radsatzführung am Langträger. Puffer am Kopfstück nehmen Druckkräfte auf, Schraubenkupplung und Zughaken leiten Zugkräfte ins Untergestell. Eine Digitale Automatische Kupplung mit Kontaktaufsatz verlangt eine zentrale Krafteinleitung und koppelt zugleich Luft, Energie und Daten.",
+          "text": "Fahrzeugstruktur und Fahrwerk tragen alle Fahrzeuglasten und gliedern sich in Untergestell, Laufwerk sowie Zug- und Stoßeinrichtung. Die Last fließt vom Ladeboden über Untergestell, Hauptquerträger und Drehgestellanlenkung mit Drehpfanne und Gleitstücken in den Drehgestellrahmen und über Federung, Radsatzlager und Radsatz auf die Schiene; die Radsatzanlenkung führt den Radsatz. Puffer am Kopfstück nehmen Druckkräfte auf, Schraubenkupplung und Zughaken leiten Zugkräfte ins Untergestell. Eine Digitale Automatische Kupplung mit Kontaktaufsatz leitet die Kräfte zentral ein und koppelt zugleich Luft, Energie und Daten.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -218,9 +218,10 @@
               "P5",
               "P6",
               "Q4: Abschnitt Kritik (zentrale Einleitung der Zug- und Druckkräfte der DAK in den Fahrzeugrahmen)",
-              "Lastpfad: jede Masse auf dem Wagen stützt sich über Untergestell, Federung, Radsatzlager und Radsatz auf der Schiene ab"
+              "Lastpfad: jede Masse auf dem Wagen stützt sich über Untergestell, Federung, Radsatzlager und Radsatz auf der Schiene ab",
+              "Funktionsprinzip: das Drehgestell muss sich gegenüber dem Untergestell drehen können und wird dazu am Hauptquerträger angelenkt; der Radsatz muss im Drehgestellrahmen oder am Untergestell geführt werden"
             ],
-            "schluss": "Das Hauptsystem gliedert sich in Untergestell, Laufwerk und Zug- und Stoßeinrichtung; Laufwerks- und Kupplungsbauart ändern die Krafteinleitung in das Untergestell."
+            "schluss": "Das Hauptsystem gliedert sich in Untergestell, Laufwerk mit Radsatzanlenkung und Drehgestellanlenkung und Zug- und Stoßeinrichtung; Laufwerks- und Kupplungsbauart ändern die Krafteinleitung in das Untergestell."
           },
           "sicherheit": "mittel",
           "aussagetyp": "loesung",
@@ -273,19 +274,23 @@
         },
         {
           "absatz_id": "P10",
-          "text": "Das Bremssystem verzögert den Wagen und hält ihn fest. Die Betriebsbremse besteht aus Hauptluftleitung, Steuerventil, Hilfsluftbehälter, Bremszylinder, Bremsgestänge, Bremsklotz und Lastwechsel; die Feststellbremse greift von Hand in dasselbe Bremsgestänge ein. Wagen mit pneumatischen Entladeklappen führen zusätzlich eine Hauptluftbehälterleitung; die Druckluft kommt vom Triebfahrzeug. Schnittstellen bestehen zu Radsatz, Federung, Entgleisungsdetektor und Wagenanschriften. Kompositsohlen brauchen einen Nachweis der Verträglichkeit mit Gleisstromkreisen, die Scheibenbremse verlagert die Reibwärme vom Rad auf Bremsscheiben.",
+          "text": "Das Bremssystem verzögert den Wagen und hält ihn fest. Die Betriebsbremse besteht aus Hauptluftleitung mit Bremskupplung und Absperrhahn an den Wagenenden, Steuerventil, Hilfsluftbehälter, Bremszylinder, Bremsgestänge mit Bremsgestängesteller, Bremsklotz, Umstelleinrichtung und Lastwechsel; die Feststellbremse greift in dasselbe Gestänge ein. Pneumatische Entladeklappen erfordern zusätzlich Hauptluftbehälterleitung und Luftvorratsbehälter. Alternativ wird die Bremse elektropneumatisch über durchgekuppelte Steuerleitungen oder den Kontaktaufsatz angesteuert. Schnittstellen bestehen zu Radsatz, Federung, Entgleisungsdetektor und Wagenanschriften. Kompositsohlen brauchen für Strecken mit Gleisstromkreisen einen Verträglichkeitsnachweis. Die Scheibenbremse verlagert die Reibwärme vom Rad auf Bremsscheiben.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "P8",
               "P9",
-              "P13: Hauptluftbehälterleitung für pneumatische Entladeklappen",
+              "P13: Hauptluftbehälterleitung und Luftvorratsbehälter für pneumatische Entladeklappen",
               "Q7: Abschnitt 2.3.7, S. 14-15 (Bremsklötze aus Verbundstoff und Gleisstromkreise)",
+              "Q7: Abschnitt 2.3.21, S. 25 (Eignung des Reibelements für Gleisstromkreise nur mit Nachweis, ohne Prüfung gilt es als nicht geeignet)",
               "Q7: Abschnitt 2.3.10, S. 17 (Entgleisungserkennung mit Bremsauslösung)",
-              "Funktionsprinzip: eine lastabhängige Bremse braucht ein Lastsignal aus der Federung"
+              "Q4: Abschnitt Funktionsstufen (bei Funktionsstufe 3 wird die elektropneumatische Bremse über die Kupplung verbunden)",
+              "Q1: Abschnitt Entwicklungsgeschichte, Allgemeines (UIC-Steuerleitungen für die elektropneumatische Bremse der DB-Wagen für den Hochgeschwindigkeitsverkehr)",
+              "Funktionsprinzip: eine automatische lastabhängige Bremse braucht ein Lastsignal aus der Federung",
+              "Funktionsprinzip: die durchgehende Hauptluftleitung muss an jedem Wagenende mit dem Nachbarwagen verbunden und am Zugende abgesperrt werden können"
             ],
-            "schluss": "Das Bremssystem besteht aus Betriebsbremse, Feststellbremse und optionaler Hauptluftbehälterleitung und ist mit Fahrwerk, Assistenz und Kennzeichnung gekoppelt."
+            "schluss": "Das Bremssystem besteht aus Betriebsbremse, Feststellbremse und optionaler Hauptluftbehälterleitung mit Luftvorratsbehälter, wird rein pneumatisch oder elektropneumatisch gesteuert und ist mit Fahrwerk, Assistenz und Kennzeichnung gekoppelt."
           },
           "sicherheit": "mittel",
           "aussagetyp": "loesung",
@@ -343,7 +348,7 @@
         },
         {
           "absatz_id": "P14",
-          "text": "Aufbau und Ladung nimmt die Ladung auf und gliedert sich in Wagenkasten, Be- und Entladevorrichtung und Ladungssicherung. Der Wagenkasten umfasst Seitenwand, Stirnwand, Dach und Ladeboden; je nach Gattung fehlen Dach oder Wände, beim Kesselwagen tritt der Kessel an ihre Stelle. Die Be- und Entladevorrichtung besteht je nach Bauart aus Schiebewand, Entladeklappe oder Ladeluke, die Ladungssicherung aus Rungen, Zurrpunkten und Aufsetzzapfen. Ladeboden und Aufsetzzapfen leiten die Ladungskräfte ins Untergestell. Die Gattung entscheidet, ob Thermomanagement, Energieversorgungssystem und Hauptluftbehälterleitung nötig sind.",
+          "text": "Aufbau und Ladung nimmt die Ladung auf und gliedert sich in Wagenkasten oder Kessel, Be- und Entladevorrichtung und Ladungssicherung. Der Wagenkasten umfasst Seitenwand, Stirnwand, Dach und Ladeboden, je nach Gattung ohne Dach oder Wände; beim Kesselwagen tritt an seine Stelle der Kessel, als Modellannahme aus Kesselmantel und Kesselarmaturen. Die Be- und Entladevorrichtung besteht aus Schiebewand, Entladeklappe oder Ladeluke, die Ladungssicherung aus Rungen, Zurrpunkten und Aufsetzzapfen, die mit dem Ladeboden die Ladungskräfte ins Untergestell leiten. Die Gattung bestimmt Thermomanagement, Energieversorgungssystem und Hauptluftbehälterleitung.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -352,9 +357,10 @@
               "P12",
               "P13",
               "P4: Untergestell nimmt alle Kräfte aus Be- und Entladung auf",
-              "Funktionsprinzip: jede Ladung muss aufgenommen, umgeschlagen und gesichert werden"
+              "Funktionsprinzip: jede Ladung muss aufgenommen, umgeschlagen und gesichert werden",
+              "Funktionsprinzip: ein Kessel für flüssige oder gasförmige Güter braucht einen geschlossenen Mantel sowie Einrichtungen zum Befüllen, Entleeren und gegen unzulässige Betriebszustände (Modellannahme)"
             ],
-            "schluss": "Aufbau und Ladung gliedern sich in Wagenkasten, Be- und Entladevorrichtung und Ladungssicherung, deren Ausprägung die Gattung bestimmt."
+            "schluss": "Aufbau und Ladung gliedern sich in Wagenkasten oder Kessel, Be- und Entladevorrichtung und Ladungssicherung, deren Ausprägung die Gattung bestimmt."
           },
           "sicherheit": "mittel",
           "aussagetyp": "loesung",
@@ -382,7 +388,7 @@
         },
         {
           "absatz_id": "P16",
-          "text": "Wo der Wagen Energie braucht, gliedert sich das Energieversorgungssystem in Energieerzeugung mit Achsgenerator oder Dieselgenerator und in Energiespeicherung und Wandlung mit Bordnetzbatterie und Wechselrichter. Der Achsgenerator wird vom Radsatz angetrieben und liefert nur während der Fahrt; die Bordnetzbatterie überbrückt Standzeiten und versorgt die Telematikeinheit, der Wechselrichter speist das Kühlaggregat. Mit einer Digitalen Automatischen Kupplung kann der Kontaktaufsatz die Bordnetzbatterie aus dem Triebfahrzeug laden und die eigene Energieerzeugung ersetzen.",
+          "text": "Wo der Wagen Energie braucht, gliedert sich das Energieversorgungssystem in Energieerzeugung mit Achsgenerator oder Dieselgenerator und in Energiespeicherung und Wandlung mit Bordnetzbatterie und Wechselrichter. Der Achsgenerator wird vom Radsatz angetrieben und liefert nur während der Fahrt; die Bordnetzbatterie überbrückt Standzeiten und versorgt die Telematikeinheit, der Wechselrichter speist das Kühlaggregat. Über den Kontaktaufsatz einer Digitalen Automatischen Kupplung kann das Triebfahrzeug die Bordnetzbatterie laden.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -393,6 +399,35 @@
               "Funktionsprinzip: ein Achsgenerator braucht die Drehbewegung des Radsatzes und liefert nur bei Fahrt, ein Speicher überbrückt den Stillstand"
             ],
             "schluss": "Das optionale Energieversorgungssystem besteht aus Energieerzeugung und Energiespeicherung und Wandlung; die Kupplungsbauart kann die Erzeugung ersetzen."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Elektrik und Elektronik",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E90",
+      "absaetze": [
+        {
+          "absatz_id": "P29",
+          "text": "Elektrik und Elektronik ist optional für Wagen mit eigener Energieversorgung oder Kontaktaufsatz an der Digitalen Automatischen Kupplung und besteht aus Leitungssatz, Stromverteiler mit Sicherungen und Bussystem. Der Leitungssatz führt die Energie vom Kontaktaufsatz zum Stromverteiler, der die Bordnetzbatterie lädt und die Telematikeinheit abgesichert versorgt. Das Bussystem überträgt als Zugdatenbus Daten zum Rechnerkern, bei elektropneumatischer Bremse auch Bremsbefehle. Elektrische Ausrüstung gilt als Brandquelle; ihre Störströme und Störfelder müssen mit der Zugortung verträglich sein.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P6",
+              "P15",
+              "P16",
+              "P18",
+              "Q4: Abschnitt Technische Beschreibung, Kontaktaufsatz (Energieversorgung und Datenverbindung zwischen den Fahrzeugen)",
+              "Q7: Abschnitt 2.3.23, S. 27 (elektrische Ausrüstung einschließlich Kabel als bedeutende potenzielle Brandquelle)",
+              "Q7: Abschnitt 3.2 (Point 7.1.2), Bedingungen (d1) und (d2), S. 33 (Störströme über die Schiene und elektromagnetische Störfelder elektronischer Ausrüstung)",
+              "Funktionsprinzip: Energie und Daten vom Kontaktaufsatz brauchen Leitungen, Absicherung und eine Busverbindung zu den Verbrauchern"
+            ],
+            "schluss": "Bei Wagen mit Energieversorgung oder Kontaktaufsatz bildet Elektrik und Elektronik aus Leitungssatz, Stromverteiler und Bussystem ein eigenes optionales Hauptsystem zwischen Kupplung, Energieversorgung und Telematik."
           },
           "sicherheit": "mittel",
           "aussagetyp": "loesung",
@@ -420,17 +455,19 @@
         },
         {
           "absatz_id": "P18",
-          "text": "Beim Güterwagen ist die Fahrzeugsteuerung und Information keine Steuer-, sondern eine Erfassungs- und Meldeebene. Die Telematikeinheit besteht aus Rechnerkern, Kommunikationsmodul und Ortungsempfänger; Zustandssensoren liefern Messwerte an den Rechnerkern, der sie über das Kommunikationsmodul an Wagenhalter oder Verlader meldet. Die Wagenanschriften kennzeichnen den Wagen auch ohne Elektronik. Eine Digitale Automatische Kupplung mit Kontaktaufsatz ergänzt eine Datenverbindung zum Triebfahrzeug, etwa für Wagenreihung, Zugvollständigkeit und automatische Bremsprobe.",
+          "text": "Bei rein pneumatischer Bremse und Handkupplung ist die Fahrzeugsteuerung und Information nur Erfassungs- und Meldeebene; elektropneumatische Bremse oder automatische Entkupplung fügen Steuerfunktionen hinzu. Die Telematikeinheit besteht aus Rechnerkern, Kommunikationsmodul und Ortungsempfänger; Zustandssensoren liefern Messwerte an den Rechnerkern, der sie an Wagenhalter oder Verlader meldet. Wagenanschriften kennzeichnen den Wagen auch ohne Elektronik. Der Kontaktaufsatz einer Digitalen Automatischen Kupplung ergänzt eine Datenverbindung zum Triebfahrzeug, etwa für Zugvollständigkeit und automatische Bremsprobe.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "P17",
               "P6",
+              "P10: elektropneumatische Ansteuerung der Bremse als Alternative",
               "Q4: Abschnitt Technische Beschreibung, Kontaktaufsatz (Automatisierungskomponenten Bremsprobe, Wagenreihung, Zugvollständigkeit)",
-              "Funktionsprinzip: ohne Antrieb und mit pneumatisch gesteuerter Bremse bleibt der Bordelektronik nur Erfassen und Melden"
+              "Q4: Abschnitt Funktionsstufen (elektropneumatische Bremse ab DAK-3, automatische Entkupplung bei DAK-5)",
+              "Funktionsprinzip: ohne Antrieb, mit rein pneumatisch gesteuerter Bremse und mit Handkupplung bleibt der Bordelektronik nur Erfassen und Melden"
             ],
-            "schluss": "Die Fahrzeugsteuerung und Information besteht aus Telematikeinheit, Zustandssensoren und Wagenanschriften und erhält mit automatischer Kupplung eine Zugdatenverbindung."
+            "schluss": "Die Fahrzeugsteuerung und Information besteht aus Telematikeinheit, Zustandssensoren und Wagenanschriften, erhält mit automatischer Kupplung eine Zugdatenverbindung und mit elektropneumatischer Bremse oder automatischer Entkupplung Steuerfunktionen."
           },
           "sicherheit": "mittel",
           "aussagetyp": "loesung",
@@ -462,7 +499,7 @@
         },
         {
           "absatz_id": "P20",
-          "text": "Assistenz und Sicherheit arbeitet ohne Fahrer an Bord und besteht aus Entgleisungsdetektor, Radsatzlagerüberwachung sowie Rangiertritte und Rangiergriffe. Ein pneumatischer Entgleisungsdetektor entlüftet die Hauptluftleitung und bremst so den Zug; eine elektronische Ausführung meldet über die Telematikeinheit oder die Datenverbindung einer automatischen Kupplung. Die Radsatzlagerüberwachung übergibt ihre Diagnose an den Rechnerkern. Automatische Kupplung erspart das Kuppeln zwischen den Puffern und mindert so die Gefährdung des Rangierpersonals.",
+          "text": "Assistenz und Sicherheit arbeitet ohne Fahrer an Bord und besteht aus Entgleisungsdetektor, Radsatzlagerüberwachung sowie Rangiertritte und Rangiergriffe. Ein pneumatischer Entgleisungsdetektor entlüftet die Hauptluftleitung und bremst so den Zug; ein elektronischer meldet über die Telematikeinheit oder die Kupplungsdatenverbindung. Die Radsatzlagerüberwachung übergibt ihre Diagnose an den Rechnerkern. Automatische Kupplung erspart dem Rangierpersonal das Kuppeln zwischen den Puffern.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -505,16 +542,17 @@
         },
         {
           "absatz_id": "P22",
-          "text": "Beleuchtung und Sicht beschränken sich beim Güterwagen auf das Kennzeichnen des Zugschlusses mit dem Schlusssignalhalter am Wagenende und aufgesteckten Signalleuchten, die nur am letzten Wagen eines Zuges sitzen. Fahrersicht und Umgebungsausleuchtung entfallen mangels Fahrer an Bord; nur Wagen mit eigener Energieversorgung, etwa Bauzugwagen, können weitere Leuchten speisen.",
+          "text": "Beleuchtung und Sicht beschränken sich auf den Schlusssignalhalter am Wagenende, an dem je nach Netz Schlussleuchten oder Schlussscheiben als Schlusssignal aufgesteckt werden, meist als betriebliche Ausrüstung nur am letzten Wagen. Fahrersicht und Umgebungsausleuchtung entfallen mangels Fahrer.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "P21",
               "P15: Energiebedarf für Beleuchtung bei Bauzugwagen",
-              "Funktionsprinzip: ein Fahrzeug ohne Fahrer an Bord braucht keine Fahrersicht, der Zugschluss muss erkennbar sein"
+              "Funktionsprinzip: ein Fahrzeug ohne Fahrer an Bord braucht keine Fahrersicht, der Zugschluss muss erkennbar sein",
+              "Betriebspraxis: das Schlusssignal wird je nach Netz als Schlussleuchte oder reflektierende Schlussscheibe vom Eisenbahnverkehrsunternehmen aufgesteckt (Fachwissen, Recherchepunkt in offene_punkte)"
             ],
-            "schluss": "Beleuchtung und Sicht bestehen aus Schlusssignalhalter und Signalleuchten."
+            "schluss": "Beleuchtung und Sicht bestehen aus dem Schlusssignalhalter am Wagen und dem aufgesteckten Schlusssignal, das meist zur betrieblichen Ausrüstung gehört."
           },
           "sicherheit": "mittel",
           "aussagetyp": "loesung",
@@ -550,7 +588,7 @@
         },
         {
           "absatz_id": "P24",
-          "text": "Thermomanagement gibt es nur bei Kühlwagen und beheizbaren Wagen; es regelt die Temperatur der Ladung. Es besteht aus Kühlaggregat, Heizeinrichtung und Wärmedämmung im Wagenkasten. Kühlaggregat und Heizeinrichtung entziehen dem Laderaum Wärme oder führen sie zu, das Kühlaggregat gespeist aus Dieselgenerator oder Wechselrichter; die Wärmedämmung in Seitenwand, Stirnwand und Dach begrenzt den Wärmedurchgang. Bei Kühlcontainern auf Tragwagen sitzt das Kühlaggregat in der Ladeeinheit, der Wagen liefert nur Energie.",
+          "text": "Thermomanagement gibt es nur bei Kühlwagen und beheizbaren Wagen; es regelt die Ladungstemperatur und besteht aus Kühlaggregat, Heizeinrichtung und Wärmedämmung. Kühlaggregat und Heizeinrichtung entziehen dem Laderaum Wärme oder führen sie zu, das Kühlaggregat gespeist aus Dieselgenerator oder Wechselrichter; die Wärmedämmung in Seitenwand, Stirnwand und Dach begrenzt den Wärmedurchgang. Bei Kühlcontainern auf Tragwagen liefert der Wagen nur Energie.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -574,7 +612,7 @@
       "absaetze": [
         {
           "absatz_id": "P25",
-          "text": "Auf oberster Ebene besteht der Güterwagen aus Fahrzeugstruktur und Fahrwerk, Bremssystem, Aufbau und Ladung, Energieversorgungssystem, Fahrzeugsteuerung und Information, Assistenz und Sicherheit, Beleuchtung und Sicht sowie Thermomanagement. Antrieb, Lenkung, Führerstand, eigenständige Elektrik und Elektronik sowie Neben- und Versorgungssysteme entfallen, weil der Wagen gezogen, im Gleis geführt und vom Triebfahrzeug mit Druckluft versorgt wird. Die ersten drei bilden den Kern jedes Güterwagens, die übrigen hängen von Gattung und Ausrüstung ab.",
+          "text": "Auf oberster Ebene besteht der Güterwagen aus Fahrzeugstruktur und Fahrwerk, Bremssystem, Aufbau und Ladung, Energieversorgungssystem, Elektrik und Elektronik, Fahrzeugsteuerung und Information, Assistenz und Sicherheit, Beleuchtung und Sicht sowie Thermomanagement. Antrieb, Lenkung, Führerstand sowie Neben- und Versorgungssysteme entfallen, weil der Wagen gezogen, im Gleis geführt und vom Triebfahrzeug mit Druckluft versorgt wird. Nur die ersten drei hat jeder Güterwagen.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -584,12 +622,13 @@
               "P10",
               "P14",
               "P16",
+              "P29",
               "P18",
               "P20",
               "P22",
               "P24"
             ],
-            "schluss": "Der Güterwagen besteht aus acht gekoppelten Hauptsystemen, von denen drei immer vorhanden sind."
+            "schluss": "Der Güterwagen besteht aus neun gekoppelten Hauptsystemen, von denen drei immer vorhanden sind."
           },
           "sicherheit": "mittel",
           "aussagetyp": "funktion",
@@ -603,7 +642,7 @@
       "absaetze": [
         {
           "absatz_id": "P26",
-          "text": "Der SysML-Block Güterwagen enthält die Hauptsysteme als Teile. Dekompositionspfade sind etwa Fahrzeugstruktur und Fahrwerk → Laufwerk → Radsatzlager, Bremssystem → Betriebsbremse → Steuerventil, Aufbau und Ladung → Ladungssicherung → Aufsetzzapfen sowie Fahrzeugsteuerung und Information → Telematikeinheit → Ortungsempfänger. Gattungen sind Spezialisierungen eines Grundblocks, Laufwerk, Kupplung, Reibelement und Energieversorgung austauschbare Teilblöcke. Ports an jedem Wagenende bündeln Längskräfte, Hauptluftleitung und optional Energie und Daten; weitere Ports sind Rad-Schiene-Kontakt, Ladeschnittstelle und Schlusssignalhalter. Block Definition Diagrams zeigen die Zerlegung, Internal Block Diagrams Kraft-, Luft- und Datenwege, Aktivitäts- und Zustandsdiagramme Bremsvorgang und Lastwechsel.",
+          "text": "Der SysML-Block Güterwagen enthält die Hauptsysteme als Teile. Dekompositionspfade sind etwa Fahrzeugstruktur und Fahrwerk → Laufwerk → Radsatzlager, Bremssystem → Betriebsbremse → Steuerventil, Aufbau und Ladung → Ladungssicherung → Aufsetzzapfen sowie Fahrzeugsteuerung und Information → Telematikeinheit → Ortungsempfänger. Gattungen spezialisieren einen Grundblock; Laufwerk, Kupplung, Reibelement und Energieversorgung sind austauschbare Teilblöcke. Ports je Wagenende bündeln Längskräfte, Hauptluftleitung und optional Energie und Daten, dazu Rad-Schiene-Kontakt, Ladeschnittstelle und Schlusssignalhalter. Block Definition Diagrams zeigen die Zerlegung, Internal Block Diagrams Kraft-, Luft- und Datenwege, Aktivitäts- und Zustandsdiagramme Bremsvorgang und Lastwechsel.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -627,7 +666,7 @@
       "absaetze": [
         {
           "absatz_id": "P27",
-          "text": "Druckluft fließt von der Hauptluftleitung über das Steuerventil in Hilfsluftbehälter und Bremszylinder, die Bremskraft über Bremsgestänge und Bremsklotz auf den Radsatz. Die Ladung stützt sich über Ladeboden oder Aufsetzzapfen, Untergestell, Drehgestellrahmen, Federung und Radsatzlager auf den Radsatz. Puffer leiten Druckkräfte ins Kopfstück, Schraubenkupplung und Zughaken Zugkräfte ins Untergestell; die Federung meldet den Beladezustand an den Lastwechsel. Strom fließt von Achsgenerator oder Kontaktaufsatz zur Bordnetzbatterie, zur Telematikeinheit und über den Wechselrichter zum Kühlaggregat. Messwerte, Position und Lagerdiagnose gehen zum Rechnerkern, der Entgleisungsdetektor wirkt auf die Hauptluftleitung, die Hauptluftbehälterleitung versorgt die Entladeklappe.",
+          "text": "Druckluft: Bremskupplung, Hauptluftleitung, Steuerventil, Hilfsluftbehälter, Bremszylinder; Bremskraft über Bremsgestänge und Bremsklotz auf den Radsatz. Last: Ladeboden oder Aufsetzzapfen, Untergestell, Drehgestellanlenkung, Drehgestellrahmen, Federung, Radsatzlager, Radsatz; Druckkräfte über Puffer ins Kopfstück, Zugkräfte über Schraubenkupplung und Zughaken ins Untergestell. Beladezustand: von der Federung an das Bremsgestänge, sonst von Hand am Lastwechsel. Strom: Achsgenerator sowie Kontaktaufsatz über Leitungssatz und Stromverteiler zu Bordnetzbatterie und Telematikeinheit, Wechselrichter zum Kühlaggregat. Daten zum Rechnerkern; der Entgleisungsdetektor entlüftet die Hauptluftleitung; Hauptluftbehälterleitung und Luftvorratsbehälter versorgen die Entladeklappe.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -636,6 +675,7 @@
               "P10",
               "P14",
               "P16",
+              "P29",
               "P18",
               "P20",
               "P22",
@@ -644,7 +684,7 @@
             ],
             "schluss": "Die wesentlichen Kraft-, Luft-, Energie-, Wärme- und Informationsflüsse verbinden die Hauptsysteme wie beschrieben."
           },
-          "sicherheit": "hoch",
+          "sicherheit": "mittel",
           "aussagetyp": "funktion",
           "herangezogene_artikel_ids": []
         }
@@ -656,7 +696,7 @@
       "absaetze": [
         {
           "absatz_id": "P28",
-          "text": "Untergestell, Drehgestellrahmen, Federung, Radsatzlager und Radsatz tragen die Fahrzeuglasten, Radsatz und Drehgestellrahmen führen das Fahrzeug im Gleis. Puffer, Zughaken, Schraubenkupplung oder Digitale Automatische Kupplung übertragen Längskräfte. Die Betriebsbremse mit Steuerventil, Bremszylinder, Bremsgestänge, Bremsklotz und Lastwechsel verzögert das Fahrzeug, die Feststellbremse hält es fest; Hauptluftleitung, Hilfsluftbehälter und Hauptluftbehälterleitung stellen Druckluft bereit. Wagenkasten, Ladeboden, Be- und Entladevorrichtung und Ladungssicherung nehmen die Ladung auf. Achsgenerator und Dieselgenerator erzeugen elektrische Energie, die Bordnetzbatterie speichert, Wechselrichter und Kontaktaufsatz verteilen sie. Der Ortungsempfänger bestimmt die Position, Kommunikationsmodul und Kontaktaufsatz übertragen Daten, Rechnerkern, Zustandssensoren, Entgleisungsdetektor und Radsatzlagerüberwachung überwachen den Zustand, Wagenanschriften kennzeichnen das Fahrzeug. Rangiertritte und Rangiergriffe schützen das Rangierpersonal, Schlusssignalhalter und Signalleuchten geben Lichtsignale ab, Kühlaggregat, Heizeinrichtung und Wärmedämmung temperieren die Ladung.",
+          "text": "Fahrzeuglasten tragen Untergestell, Drehgestellanlenkung, Drehgestellrahmen, Federung, Radsatzlager und Radsatz; im Gleis führen Radsatz, Radsatzanlenkung und Drehgestellrahmen. Längskräfte übertragen Puffer, Zughaken, Schraubenkupplung oder Digitale Automatische Kupplung. Die Betriebsbremse verzögert, die Feststellbremse hält fest; Hauptluftleitung, Hilfsluftbehälter, Hauptluftbehälterleitung und Luftvorratsbehälter stellen Druckluft bereit. Wagenkasten oder Kessel, Be- und Entladevorrichtung und Ladungssicherung nehmen die Ladung auf. Achsgenerator und Dieselgenerator erzeugen elektrische Energie, die Bordnetzbatterie speichert, Leitungssatz, Stromverteiler und Wechselrichter verteilen sie. Der Ortungsempfänger bestimmt die Position, Kommunikationsmodul, Bussystem und Kontaktaufsatz übertragen Daten, Zustandssensoren, Entgleisungsdetektor und Radsatzlagerüberwachung überwachen den Zustand, Wagenanschriften kennzeichnen. Rangiertritte und Rangiergriffe schützen Rangierpersonal, Schlusssignalhalter und Schlusssignal geben Lichtsignale ab, Kühlaggregat, Heizeinrichtung und Wärmedämmung temperieren die Ladung.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -665,6 +705,7 @@
               "P10",
               "P14",
               "P16",
+              "P29",
               "P18",
               "P20",
               "P22",
@@ -673,7 +714,7 @@
             ],
             "schluss": "Jede Funktion ist ausführenden Systemen und Komponenten zugeordnet; physische, funktionale und Flussperspektive sind verbunden."
           },
-          "sicherheit": "hoch",
+          "sicherheit": "mittel",
           "aussagetyp": "funktion",
           "herangezogene_artikel_ids": []
         }
@@ -818,6 +859,28 @@
         ]
       },
       {
+        "id": "E18",
+        "name": "Radsatzanlenkung",
+        "typ": "komponente",
+        "eltern_id": "E7",
+        "absatz_ids": [
+          "P4",
+          "P7",
+          "P28"
+        ]
+      },
+      {
+        "id": "E19",
+        "name": "Drehgestellanlenkung",
+        "typ": "komponente",
+        "eltern_id": "E7",
+        "absatz_ids": [
+          "P7",
+          "P27",
+          "P28"
+        ]
+      },
+      {
         "id": "E12",
         "name": "Zug- und Stoßeinrichtung",
         "typ": "subsystem",
@@ -887,7 +950,8 @@
           "P16",
           "P18",
           "P27",
-          "P28"
+          "P28",
+          "P29"
         ]
       },
       {
@@ -1001,6 +1065,38 @@
         ]
       },
       {
+        "id": "E31",
+        "name": "Bremskupplung",
+        "typ": "komponente",
+        "eltern_id": "E21",
+        "absatz_ids": [
+          "P10",
+          "P27",
+          "P28"
+        ]
+      },
+      {
+        "id": "E32",
+        "name": "Umstelleinrichtung",
+        "typ": "komponente",
+        "eltern_id": "E21",
+        "absatz_ids": [
+          "P10",
+          "P28"
+        ]
+      },
+      {
+        "id": "E33",
+        "name": "Bremsgestängesteller",
+        "typ": "komponente",
+        "eltern_id": "E21",
+        "absatz_ids": [
+          "P8",
+          "P10",
+          "P28"
+        ]
+      },
+      {
         "id": "E29",
         "name": "Hauptluftbehälterleitung",
         "typ": "komponente",
@@ -1009,6 +1105,18 @@
           "P10",
           "P13",
           "P14",
+          "P27",
+          "P28"
+        ]
+      },
+      {
+        "id": "E34",
+        "name": "Luftvorratsbehälter",
+        "typ": "komponente",
+        "eltern_id": "E20",
+        "absatz_ids": [
+          "P10",
+          "P13",
           "P27",
           "P28"
         ]
@@ -1091,6 +1199,34 @@
           "P14",
           "P27",
           "P28"
+        ]
+      },
+      {
+        "id": "E49",
+        "name": "Kessel",
+        "typ": "subsystem",
+        "eltern_id": "E35",
+        "absatz_ids": [
+          "P14",
+          "P28"
+        ]
+      },
+      {
+        "id": "E94",
+        "name": "Kesselmantel",
+        "typ": "komponente",
+        "eltern_id": "E49",
+        "absatz_ids": [
+          "P14"
+        ]
+      },
+      {
+        "id": "E95",
+        "name": "Kesselarmaturen",
+        "typ": "komponente",
+        "eltern_id": "E49",
+        "absatz_ids": [
+          "P14"
         ]
       },
       {
@@ -1240,7 +1376,8 @@
         "absatz_ids": [
           "P16",
           "P27",
-          "P28"
+          "P28",
+          "P29"
         ]
       },
       {
@@ -1253,6 +1390,49 @@
           "P16",
           "P24",
           "P27",
+          "P28"
+        ]
+      },
+      {
+        "id": "E90",
+        "name": "Elektrik und Elektronik",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P29",
+          "P25"
+        ],
+        "kategorie": "elektrik_elektronik"
+      },
+      {
+        "id": "E91",
+        "name": "Leitungssatz",
+        "typ": "komponente",
+        "eltern_id": "E90",
+        "absatz_ids": [
+          "P29",
+          "P27",
+          "P28"
+        ]
+      },
+      {
+        "id": "E92",
+        "name": "Stromverteiler",
+        "typ": "komponente",
+        "eltern_id": "E90",
+        "absatz_ids": [
+          "P29",
+          "P27",
+          "P28"
+        ]
+      },
+      {
+        "id": "E93",
+        "name": "Bussystem",
+        "typ": "komponente",
+        "eltern_id": "E90",
+        "absatz_ids": [
+          "P29",
           "P28"
         ]
       },
@@ -1278,7 +1458,8 @@
           "P18",
           "P20",
           "P26",
-          "P27"
+          "P27",
+          "P29"
         ]
       },
       {
@@ -1291,7 +1472,8 @@
           "P18",
           "P20",
           "P27",
-          "P28"
+          "P28",
+          "P29"
         ]
       },
       {
@@ -1408,7 +1590,7 @@
       },
       {
         "id": "E82",
-        "name": "Signalleuchten",
+        "name": "Schlusssignal",
         "typ": "komponente",
         "eltern_id": "E80",
         "absatz_ids": [
@@ -1471,7 +1653,8 @@
           "E8",
           "E9",
           "E10",
-          "E11"
+          "E11",
+          "E19"
         ],
         "absatz_ids": [
           "P4",
@@ -1484,10 +1667,12 @@
         "name": "Fahrzeug im Gleis führen",
         "ausgefuehrt_von": [
           "E8",
-          "E11"
+          "E11",
+          "E18"
         ],
         "absatz_ids": [
           "P4",
+          "P7",
           "P28"
         ]
       },
@@ -1515,7 +1700,9 @@
           "E24",
           "E26",
           "E27",
-          "E28"
+          "E28",
+          "E32",
+          "E33"
         ],
         "absatz_ids": [
           "P8",
@@ -1541,10 +1728,13 @@
         "ausgefuehrt_von": [
           "E23",
           "E25",
-          "E29"
+          "E29",
+          "E31",
+          "E34"
         ],
         "absatz_ids": [
           "P8",
+          "P10",
           "P13",
           "P28"
         ]
@@ -1556,7 +1746,8 @@
           "E36",
           "E40",
           "E41",
-          "E45"
+          "E45",
+          "E49"
         ],
         "absatz_ids": [
           "P12",
@@ -1593,10 +1784,13 @@
         "name": "Elektrische Energie verteilen",
         "ausgefuehrt_von": [
           "E57",
-          "E17"
+          "E17",
+          "E91",
+          "E92"
         ],
         "absatz_ids": [
           "P16",
+          "P29",
           "P28"
         ]
       },
@@ -1617,11 +1811,13 @@
         "name": "Daten übertragen",
         "ausgefuehrt_von": [
           "E63",
-          "E17"
+          "E17",
+          "E93"
         ],
         "absatz_ids": [
           "P17",
           "P18",
+          "P29",
           "P28"
         ]
       },
@@ -1788,9 +1984,9 @@
       {
         "id": "S9",
         "von": "E10",
-        "nach": "E28",
+        "nach": "E26",
         "art": "mechanisch",
-        "medium": "Einfederung als Lastsignal",
+        "medium": "Einfederung als Lastsignal (nur automatische Lastabbremsung)",
         "absatz_ids": [
           "P10",
           "P27"
@@ -1802,9 +1998,10 @@
         "von": "E28",
         "nach": "E26",
         "art": "mechanisch",
-        "medium": "lastabhängige Übersetzung",
+        "medium": "lastabhängige Übersetzung, von Hand am Lastwechsel eingestellt (Handeingabe des Beladezustands)",
         "absatz_ids": [
-          "P10"
+          "P10",
+          "P27"
         ]
       },
       {
@@ -1835,14 +2032,15 @@
       {
         "id": "S13",
         "von": "E3",
-        "nach": "E11",
+        "nach": "E19",
         "art": "mechanisch",
         "medium": "Vertikal-, Längs- und Querkräfte",
         "absatz_ids": [
           "P4",
           "P7",
           "P27"
-        ]
+        ],
+        "schnittstelle": "Drehpfanne und Gleitstücke am Hauptquerträger"
       },
       {
         "id": "S14",
@@ -1926,11 +2124,12 @@
       {
         "id": "S21",
         "von": "E17",
-        "nach": "E56",
+        "nach": "E91",
         "art": "elektrisch",
         "medium": "Energie aus dem Triebfahrzeug",
         "absatz_ids": [
           "P16",
+          "P29",
           "P27"
         ],
         "schnittstelle": "Kontaktaufsatz (Energiekontakte)"
@@ -1938,12 +2137,13 @@
       {
         "id": "S22",
         "von": "E17",
-        "nach": "E62",
+        "nach": "E93",
         "art": "information",
         "medium": "Zugdatenbus",
         "absatz_ids": [
           "P6",
-          "P18"
+          "P18",
+          "P29"
         ],
         "schnittstelle": "Kontaktaufsatz (Datenkontakte)"
       },
@@ -2010,14 +2210,15 @@
       {
         "id": "S28",
         "von": "E56",
-        "nach": "E62",
+        "nach": "E92",
         "art": "elektrisch",
-        "medium": "Versorgungsspannung",
+        "medium": "Batteriestrom",
         "absatz_ids": [
           "P16",
+          "P29",
           "P27"
         ],
-        "schnittstelle": "Energieversorgung der Telematikeinheit"
+        "schnittstelle": "Batterieanschluss am Stromverteiler"
       },
       {
         "id": "S29",
@@ -2131,6 +2332,88 @@
           "P22"
         ],
         "schnittstelle": "Signalstütze am Wagenende"
+      },
+      {
+        "id": "S39",
+        "von": "E19",
+        "nach": "E11",
+        "art": "mechanisch",
+        "medium": "Vertikal-, Längs- und Querkräfte",
+        "absatz_ids": [
+          "P7",
+          "P27"
+        ]
+      },
+      {
+        "id": "S40",
+        "von": "E31",
+        "nach": "E25",
+        "art": "pneumatisch",
+        "medium": "Druckluft und Drucksignal aus der Hauptluftleitung des Nachbarwagens",
+        "absatz_ids": [
+          "P10",
+          "P27"
+        ],
+        "schnittstelle": "Bremskupplung am Wagenende"
+      },
+      {
+        "id": "S41",
+        "von": "E34",
+        "nach": "E43",
+        "art": "pneumatisch",
+        "medium": "Vorratsluft für die Entladeklappe",
+        "absatz_ids": [
+          "P13",
+          "P27"
+        ],
+        "schnittstelle": "Druckluftanschluss der Entladeklappe"
+      },
+      {
+        "id": "S42",
+        "von": "E91",
+        "nach": "E92",
+        "art": "elektrisch",
+        "medium": "Energie aus dem Triebfahrzeug",
+        "absatz_ids": [
+          "P29",
+          "P27"
+        ]
+      },
+      {
+        "id": "S43",
+        "von": "E92",
+        "nach": "E56",
+        "art": "elektrisch",
+        "medium": "Ladestrom",
+        "absatz_ids": [
+          "P29",
+          "P27"
+        ],
+        "schnittstelle": "Batterieanschluss am Stromverteiler"
+      },
+      {
+        "id": "S44",
+        "von": "E92",
+        "nach": "E62",
+        "art": "elektrisch",
+        "medium": "abgesicherte Versorgungsspannung",
+        "absatz_ids": [
+          "P29",
+          "P27"
+        ],
+        "schnittstelle": "Energieversorgung der Telematikeinheit"
+      },
+      {
+        "id": "S45",
+        "von": "E93",
+        "nach": "E62",
+        "art": "information",
+        "medium": "Zugdaten",
+        "absatz_ids": [
+          "P29",
+          "P27"
+        ],
+        "schnittstelle": "Busanschluss der Telematikeinheit"
       }
     ],
     "entfallene_kategorien": [
@@ -2147,12 +2430,8 @@
         "grund": "Kein Führerstand; Bremserbühnen historischer Wagen und Bedienbühnen an Be- und Entladeeinrichtungen dienen nicht der Fahrzeugführung."
       },
       {
-        "kategorie": "elektrik_elektronik",
-        "grund": "Kein durchgehendes Bordnetz; die Leitungen der optionalen Telematik und Energieversorgung gehören zu diesen Hauptsystemen, durchgehende Energie- und Datenleitungen entstehen erst mit der Digitalen Automatischen Kupplung (Variante V2)."
-      },
-      {
         "kategorie": "nebensysteme",
-        "grund": "Keine eigene Drucklufterzeugung oder Hydraulikversorgung; Druckluft kommt über Hauptluftleitung und Hauptluftbehälterleitung vom Triebfahrzeug."
+        "grund": "Keine eigene Drucklufterzeugung oder Hydraulikversorgung; die Druckluft für Bremse und pneumatisch betätigte Entladeklappen kommt über Hauptluftleitung und Hauptluftbehälterleitung vom Triebfahrzeug. Hauptluftbehälterleitung und Luftvorratsbehälter werden unter dem Bremssystem geführt (Abweichung von der Zuordnungsliste, begründet in offene_punkte)."
       }
     ],
     "varianten": [
@@ -2219,8 +2498,8 @@
             "beschreibung": "Die automatische Kupplung verlangt eine zentrale Einleitung der Zug- und Druckkräfte, die Seitenpuffer entfallen."
           },
           {
-            "element_id": "E25",
-            "beschreibung": "Die Hauptluftleitung wird automatisch statt über Bremskupplungen von Hand verbunden."
+            "element_id": "E31",
+            "beschreibung": "Bremskupplung und Absperrhahn entfallen; die Hauptluftleitung wird im Kupplungskopf automatisch statt über Bremskupplungen von Hand verbunden."
           },
           {
             "element_id": "E50",
@@ -2351,7 +2630,11 @@
           },
           {
             "element_id": "E3",
-            "beschreibung": "Mittragende oder selbsttragende Aufbauten entlasten das Untergestell, beim Kesselwagen trägt der Kessel mit."
+            "beschreibung": "Mittragende oder selbsttragende Aufbauten entlasten das Untergestell, beim Kesselwagen trägt der Kessel (Subsystem Kessel) mit."
+          },
+          {
+            "element_id": "E49",
+            "beschreibung": "Beim Kesselwagen ersetzt der Kessel mit Kesselmantel und Kesselarmaturen den Wagenkasten."
           }
         ],
         "absatz_ids": [
@@ -2401,6 +2684,77 @@
         "absatz_ids": [
           "P15",
           "P16"
+        ]
+      },
+      {
+        "id": "V7",
+        "element_id": "E21",
+        "bezeichnung": "Bremssteuerung",
+        "alternativen": [
+          "rein pneumatische Steuerung über die Hauptluftleitung",
+          "elektropneumatische Bremse über durchgekuppelte Steuerleitung oder Kontaktaufsatz"
+        ],
+        "auswahlkriterien": [
+          "Höchstgeschwindigkeit und Bremsweg",
+          "Zuglänge und Durchschlagzeit",
+          "Verfügbarkeit von Energie und Daten am Wagen",
+          "Kompatibilität mit dem Wagenpark"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E22",
+            "beschreibung": "Bei elektropneumatischer Bremse wird das Steuerventil um elektropneumatisch angesteuerte Ventile und ein Bremssteuergerät ergänzt."
+          },
+          {
+            "element_id": "E50",
+            "beschreibung": "Die elektropneumatische Ansteuerung braucht elektrische Energie am Wagen."
+          },
+          {
+            "element_id": "E17",
+            "beschreibung": "Steuerkontakte im Kontaktaufsatz oder eine durchgekuppelte Steuerleitung übertragen die Bremsbefehle."
+          },
+          {
+            "element_id": "E61",
+            "beschreibung": "Die Datenverbindung zum Triebfahrzeug kann Bremsbefehle und Bremsprobe tragen."
+          },
+          {
+            "element_id": "E93",
+            "beschreibung": "Das Bussystem führt die Bremsbefehle über den Wagen."
+          }
+        ],
+        "absatz_ids": [
+          "P10",
+          "P18",
+          "P29"
+        ]
+      },
+      {
+        "id": "V8",
+        "element_id": "E72",
+        "bezeichnung": "Bauweise der Entgleisungserkennung",
+        "alternativen": [
+          "keine",
+          "pneumatische Erkennungs- und Auslösefunktion",
+          "elektronische Erkennung mit Meldung an den Führerstand"
+        ],
+        "auswahlkriterien": [
+          "Beförderung gefährlicher Güter",
+          "Risikobewertung falscher Auslösungen",
+          "verfügbare Datenverbindung zum Triebfahrzeug"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E25",
+            "beschreibung": "Die pneumatische Erkennungs- und Auslösefunktion braucht einen Anschluss an die Hauptluftleitung, die sie bei Entgleisung entlüftet."
+          },
+          {
+            "element_id": "E61",
+            "beschreibung": "Die elektronische Erkennung meldet über die Telematikeinheit oder die Zugdatenverbindung an den Führerstand."
+          }
+        ],
+        "absatz_ids": [
+          "P19",
+          "P20"
         ]
       }
     ],
@@ -2555,7 +2909,7 @@
         "anlass": "architekturentscheidung",
         "relevanz": "Davon hängen Anschluss an die Hauptluftleitung, Datenweg zum Triebfahrzeug und die nötige Risikobewertung ab.",
         "variante_ids": [
-          "V2"
+          "V8"
         ]
       },
       {
@@ -2590,6 +2944,43 @@
         ],
         "anlass": "betrieb",
         "relevanz": "Davon hängen Auslegung von Kupplung und Bremse für Kälte, Schnee und Eis sowie das Begrenzungsprofil ab."
+      },
+      {
+        "id": "K16",
+        "frage": "Soll die Betriebsbremse elektropneumatisch angesteuert werden, sobald Energie und Daten über die Kupplung verfügbar sind?",
+        "element_ids": [
+          "E21",
+          "E22"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Steuerventil, Energiebedarf am Wagen, Steuerkontakte der Kupplung und die Datenverbindung zum Triebfahrzeug ab.",
+        "variante_ids": [
+          "V7"
+        ]
+      },
+      {
+        "id": "K17",
+        "frage": "Soll der Wagen gefährliche Güter befördern, und welche Gefahrgutklassen kommen in Frage?",
+        "element_ids": [
+          "E35",
+          "E49"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Kessel, Festigkeitslastfälle, Brandschutz und gegebenenfalls Schutzeinrichtungen ab.",
+        "variante_ids": [
+          "V5"
+        ]
+      },
+      {
+        "id": "K18",
+        "frage": "Welche elektrischen Verbraucher und Datenteilnehmer soll das Bordnetz des Wagens verbinden, und soll es über den Kontaktaufsatz mit den Nachbarwagen durchgekuppelt werden?",
+        "element_ids": [
+          "E90",
+          "E91",
+          "E93"
+        ],
+        "anlass": "schnittstelle",
+        "relevanz": "Davon hängen Leitungssatz, Absicherung im Stromverteiler, Bussystem und der Nachweis der Verträglichkeit mit der Zugortung ab."
       }
     ],
     "anforderungsthemen": [
@@ -2862,6 +3253,73 @@
             "fundstelle": "Abschnitte 2.3.23 bis 2.3.25, S. 27-28"
           }
         ]
+      },
+      {
+        "id": "R14",
+        "element_ids": [
+          "E35",
+          "E49"
+        ],
+        "thema": "Gefahrgutbeförderung",
+        "kenngroessen": [
+          "Gefahrgutklasse",
+          "Tankcodierung",
+          "höchster Betriebsdruck des Kessels",
+          "Prüfdruck",
+          "Betriebstemperaturbereich des Kessels",
+          "Mindestwanddicke des Kesselmantels"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "RID, Ordnung für die internationale Eisenbahnbeförderung gefährlicher Güter (Vertragsstaaten des COTIF): Lastfälle für Kesselwagen nach Abschnitt 6.8.2.1.2 und Brandschutz bei Gefahrgut",
+            "quellen_id": "Q7",
+            "fundstelle": "Abschnitt 2.3.4 (Point 4.2.2.2), S. 13; Abschnitt 2.3.23 (Point 4.2.6.1.1), S. 27"
+          }
+        ]
+      },
+      {
+        "id": "R15",
+        "element_ids": [
+          "E1",
+          "E7",
+          "E20"
+        ],
+        "thema": "Instandhaltung",
+        "kenngroessen": [
+          "Instandhaltungsintervall",
+          "Zugänglichkeit verschleißender Teile",
+          "Austauschbarkeit von Radsatz und Bremsklotz",
+          "Umfang der Zustandsdiagnose"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "Verordnung (EU) Nr. 321/2013, TSI Güterwagen (EU), Punkt 4.5.3, Instandhaltungsunterlagen mit Ersatzteilliste, Instandhaltungsplan und Prüfungen sicherheitsrelevanter Teile",
+            "quellen_id": "Q7",
+            "fundstelle": "Abschnitt 2.3.26 (Point 4.5.3), S. 28"
+          }
+        ]
+      },
+      {
+        "id": "R16",
+        "element_ids": [
+          "E90",
+          "E92",
+          "E93"
+        ],
+        "thema": "Elektromagnetische Verträglichkeit mit der Zugortung",
+        "kenngroessen": [
+          "Störstrom über die Schiene",
+          "Störfeld im Bereich der Achszähler",
+          "Fahrzeugimpedanz",
+          "Absicherung der Stromkreise"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "Verordnung (EU) Nr. 321/2013, TSI Güterwagen (EU), Punkt 7.1.2 (d1) und (d2), Bedingungen der gegenseitigen Anerkennung für Einheiten mit Störströme oder Störfelder aussendender Ausrüstung",
+            "quellen_id": "Q7",
+            "fundstelle": "Abschnitt 3.2 (Point 7.1.2), Bedingungen (d1) und (d2), S. 33"
+          }
+        ]
       }
     ]
   },
@@ -2874,14 +3332,15 @@
     "Glossarvorschlag: Ladung temperieren (Kühlung oder Beheizung der Ladung bei Kühl- und beheizbaren Wagen; Betriebstemperatur regeln bezieht sich auf Fahrzeugsysteme, Innenraum klimatisieren auf Insassen).",
     "Abweichung Zuordnungsliste: Statt der Komponenten Räder und Reifen sowie Achse wird für Schienenfahrzeuge die Einheit Radsatz verwendet (Rad und Radsatzwelle als Verbund, keine Reifen); sie bleibt unter Fahrzeugstruktur und Fahrwerk.",
     "Abweichung Zuordnungsliste: Das Subsystem Be- und Entladevorrichtung (bisher Be- und Entladeeinrichtung) bleibt unter Aufbau und Ladung, weil es Schiebewand, Entladeklappe und Ladeluke für den Güterumschlag bündelt; die Komponente Ladeeinrichtung der Kategorie energieversorgung bezeichnet das Laden einer Traktionsbatterie und trifft auf den Güterumschlag nicht zu. Die Umbenennung vermeidet die Verwechslung; die Quellen sprechen von Be- und Entladeeinrichtungen.",
+    "Abweichung Zuordnungsliste: Hauptluftbehälterleitung und Luftvorratsbehälter gehören als Druckluftanlage zur Kategorie nebensysteme, bleiben aber unter dem Bremssystem, weil der Güterwagen keine eigene Drucklufterzeugung hat, die Hauptluftbehälterleitung wie die Hauptluftleitung über Kupplungen am Wagenende vom Triebfahrzeug gespeist wird und ein eigenes Hauptsystem nur aus diesen zwei Komponenten bestünde.",
     "Recherchebedarf: Verordnung (EU) Nr. 321/2013 in konsolidierter Fassung auf eur-lex.europa.eu, besonders Anhang C (Schraubenkupplung, Puffer, Bremsausrüstung für den freizügigen Austausch) und Punkt 4.2.6.3, zur Belegung von P7, P10 und P22; eur-lex.europa.eu antwortete in diesem Lauf mit leerer Antwort.",
     "Recherchebedarf: Fachliteratur zu Güterwagendrehgestellen und Untergestellen, Suchbegriff Y25 Drehgestell Primärfederung Reibungsdämpfer sowie Handbuch Schienenfahrzeuge (Schindler, Hrsg., DVV Media), zur Belegung von P7 und Variante V1.",
     "Recherchebedarf: Verordnung (EU) Nr. 1304/2014 (TSI Lärm) und Schienenlärmschutzgesetz im Volltext als Primärquellen für R5 und Variante V3; gesetze-im-internet.de lieferte unter der versuchten Adresse HTTP 404.",
     "Recherchebedarf: Achsgeneratoren und Energieautarkie von Güterwagen, Suchbegriff Achsgenerator Güterwagen Telematik Energiespeicher, zur Belegung von P16 und Variante V6.",
     "Recherchebedarf: Heizeinrichtungen beheizbarer Kessel- und Güterwagen und Bauarten von Kühlaggregaten auf Kühlwagen, Suchbegriffe beheizbarer Kesselwagen Heizschlange und Maschinenkühlwagen, zur Belegung von P24.",
-    "Recherchebedarf: Ausführung und Energieversorgung der Zugschlussleuchten sowie Vorgaben der TSI Betrieb und Verkehrssteuerung zum Zugschlusssignal, zur Belegung von P22.",
+    "Recherchebedarf: TSI Betrieb und Verkehrssteuerung (Suchbegriff TSI OPE Zugschlusssignal Güterzug) zu Zugschlusssignal für Güterzüge, zulässigen Schlussleuchten und reflektierenden Schlussscheiben je Netz sowie zur Zuständigkeit des Eisenbahnverkehrsunternehmens, zur Belegung von P22 und des Elements Schlusssignal.",
     "Recherchebedarf: ERA-Leitlinien zur Verwendung von Entgleisungsdetektoren (im WAG-Leitfaden verlinkt) und UIC-Merkblatt 541-08 zur rein pneumatischen Auslösefunktion, zur Belegung von P20.",
-    "Recherchebedarf: Technische Spezifikation der Digitalen Automatischen Kupplung (Europe's Rail, European DAC Delivery Programme) als Primärquelle zu Funktionsstufen, Kontaktaufsatz und Krafteinleitung statt Wikipedia, zur Belegung von P6, P7 und Variante V2; dabei klären, ob durchgekuppelte Energie- und Datenleitungen künftig ein eigenes Hauptsystem Elektrik und Elektronik begründen.",
+    "Recherchebedarf: Technische Spezifikation der Digitalen Automatischen Kupplung (Europe's Rail, European DAC Delivery Programme) als Primärquelle zu Funktionsstufen, Kontaktaufsatz und Krafteinleitung statt Wikipedia, zur Belegung von P6, P7 und Variante V2.",
     "Nicht abrufbar in diesem Lauf: eur-lex.europa.eu (TSI Güterwagen und TSI Lärm, HTTP 202 ohne Inhalt), data.europa.eu (ELI-Verweis, keine Verbindung), gesetze-im-internet.de (Schienenlärmschutzgesetz, HTTP 404), Wikipedia-Programmierschnittstelle zeitweise wegen Ratenbegrenzung (Artikel Y25 nicht abgerufen)."
   ]
 }
