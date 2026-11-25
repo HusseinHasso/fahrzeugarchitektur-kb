@@ -4,7 +4,7 @@
   "artikeltyp": "blatt",
   "titel": "Personenwagen",
   "betrachtungsumfang": "Generische Referenzarchitektur des Personenwagens als nicht angetriebener, lokbespannter Reisezugwagen zur Fahrgastbeförderung (Sitzwagen) für Vollbahnen im Geltungsbereich der EU-Interoperabilitätsspezifikation für Lokomotiven und Personenwagen (Verordnung (EU) Nr. 1302/2014), im freizügigen Fahrbetrieb oder im Wagenzug, mit den Bauarten Abteilwagen und Großraumwagen, einstöckig oder als Doppelstockwagen, und mit der Variante Steuerwagen (Reisezugwagen mit Führerraum); Energieversorgung über die Zugsammelschiene, historisch über Achsgenerator. Eine Antriebsart wird ausdrücklich nicht betrachtet, da der Personenwagen keinen Fahrantrieb besitzt. Ausgeschlossen bzw. nur zur Abgrenzung: Schlaf- und Liegewagen (eigener Artikel), Speise-, Bar- und Salonwagen, Gepäck-, Post-, Autotransport- und Heizwagen, nicht angetriebene Mittelwagen von Triebzügen sowie Beiwagen von Straßenbahnen.",
-  "status": "in_arbeit",
+  "status": "zu_pruefen",
   "quellenzugriff": "ja",
   "kindartikel_ids": [],
   "quellen": [
@@ -458,7 +458,7 @@
         },
         {
           "absatz_id": "P18",
-          "text": "Der Fahrgastalarm besteht aus Notgriffen, der Signalübertragung zum Führerraum und einer Sprechverbindung. Der Triebfahrzeugführer muss eine durch den Fahrgastalarm ausgelöste Bremsung außerhalb des Bahnsteigbereichs überbrücken können; diese Notbremsüberbrückung läuft entweder über eigene Steueradern neben der pneumatischen Bremssteuerung oder integriert in der elektropneumatischen Bremssteuerung. Öffnet der Notgriff das Notbremsventil unmittelbar, liegt nur der eingeschränkte Modus vor, etwa bei abgeschaltetem oder gestörtem Fahrgastalarm oder bei Kupplung mit nicht kompatiblen Fahrzeugen. Sensoren der Radsatzlagerüberwachung melden an das Wagensteuergerät. Die Brandschutzausrüstung umfasst Feuerlöscher, Brandmelder, Trennwände und schwer entflammbare Werkstoffe. Zu den Evakuierungseinrichtungen gehören Tür-Notöffner innen und außen, deren Betätigung an das Zugpersonal gemeldet wird, sowie Notausstiege.",
+          "text": "Das Hauptsystem gliedert sich in die Alarm- und Überwachungseinrichtungen mit Fahrgastalarm und Radsatzlagerüberwachung sowie den Brand- und Evakuierungsschutz mit Brandschutzausrüstung und Evakuierungseinrichtungen. Der Fahrgastalarm besteht aus Notgriffen, der Signalübertragung zum Führerraum und einer Sprechverbindung. Der Triebfahrzeugführer muss eine durch den Fahrgastalarm ausgelöste Bremsung außerhalb des Bahnsteigbereichs überbrücken können; diese Notbremsüberbrückung läuft entweder über eigene Steueradern neben der pneumatischen Bremssteuerung oder integriert in der elektropneumatischen Bremssteuerung. Öffnet der Notgriff das Notbremsventil unmittelbar, liegt nur der eingeschränkte Modus vor, etwa bei abgeschaltetem oder gestörtem Fahrgastalarm oder bei Kupplung mit nicht kompatiblen Fahrzeugen. Sensoren der Radsatzlagerüberwachung melden an das Wagensteuergerät. Die Brandschutzausrüstung umfasst Feuerlöscher, Brandmelder, Trennwände und schwer entflammbare Werkstoffe. Zu den Evakuierungseinrichtungen gehören Tür-Notöffner innen und außen, deren Betätigung an das Zugpersonal gemeldet wird, sowie Notausstiege.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -474,7 +474,7 @@
               "Q8 Abschnitt 4.2.5.5.5 Absatz 4 (Alarmsignal an das Zugpersonal bei per Notöffner geöffneten Türen)",
               "Q8 Abschnitt 4.2.10.5 (Notausstiege für Fahrgäste)"
             ],
-            "schluss": "Assistenz und Sicherheit gliedern sich in Fahrgastalarm mit Notbremsüberbrückung, Radsatzlagerüberwachung, Brandschutzausrüstung und Evakuierungseinrichtungen; die Ausführung der Notbremsüberbrückung hängt von der Bremssteuerung ab."
+            "schluss": "Assistenz und Sicherheit gliedern sich in die Alarm- und Überwachungseinrichtungen (Fahrgastalarm mit Notbremsüberbrückung, Radsatzlagerüberwachung) und den Brand- und Evakuierungsschutz (Brandschutzausrüstung, Evakuierungseinrichtungen); die Ausführung der Notbremsüberbrückung hängt von der Bremssteuerung ab."
           },
           "sicherheit": "mittel",
           "aussagetyp": "loesung",
@@ -648,7 +648,7 @@
       "absaetze": [
         {
           "absatz_id": "P26",
-          "text": "In SysML bildet der Block `Personenwagen` das Gesamtsystem mit den Hauptsystemen als Teilen. Dekompositionspfade sind etwa `Fahrzeugstruktur und Fahrwerk → Drehgestell → Radsatz`, `Bremssystem → Druckluftbremsanlage → Steuerventil`, `Fahrzeugstruktur und Fahrwerk → Zug- und Stoßeinrichtung → Schraubenkupplung` und `Personenwagen → Neben- und Versorgungssysteme → Toilettensystem`. Jedes Wagenende erhält Ports für Zugsammelschiene, Hauptluftleitung, Hauptluftbehälterleitung, Informations- und Steuerleitung, Zugbus, Kupplung und Wagenübergang, die interne Konnektoren durchverbinden. Block Definition Diagrams zeigen die Struktur, Internal Block Diagrams die Durchleitung, Aktivitätsdiagramme Bremsung und Fahrgastalarm, Zustandsautomaten die Türzustände.",
+          "text": "In SysML bildet der Block `Personenwagen` das Gesamtsystem mit den Hauptsystemen als Teilen. Dekompositionspfade sind etwa `Fahrzeugstruktur und Fahrwerk → Drehgestell → Radsatz`, `Bremssystem → Druckluftbremsanlage → Steuerventil`, `Fahrzeugstruktur und Fahrwerk → Zug- und Stoßeinrichtung → Schraubenkupplung` `Assistenz und Sicherheit → Alarm- und Überwachungseinrichtungen → Fahrgastalarm` und `Personenwagen → Neben- und Versorgungssysteme → Toilettensystem`. Jedes Wagenende erhält Ports für Zugsammelschiene, Hauptluftleitung, Hauptluftbehälterleitung, Informations- und Steuerleitung, Zugbus, Kupplung und Wagenübergang, die interne Konnektoren durchverbinden. Block Definition Diagrams zeigen die Struktur, Internal Block Diagrams die Durchleitung, Aktivitätsdiagramme Bremsung und Fahrgastalarm, Zustandsautomaten die Türzustände.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -1207,10 +1207,30 @@
         "kategorie": "assistenz_sicherheit"
       },
       {
+        "id": "E62",
+        "name": "Alarm- und Überwachungseinrichtungen",
+        "typ": "subsystem",
+        "eltern_id": "E45",
+        "absatz_ids": [
+          "P17",
+          "P18"
+        ]
+      },
+      {
+        "id": "E63",
+        "name": "Brand- und Evakuierungsschutz",
+        "typ": "subsystem",
+        "eltern_id": "E45",
+        "absatz_ids": [
+          "P17",
+          "P18"
+        ]
+      },
+      {
         "id": "E46",
         "name": "Fahrgastalarm",
         "typ": "komponente",
-        "eltern_id": "E45",
+        "eltern_id": "E62",
         "absatz_ids": [
           "P17",
           "P18"
@@ -1220,7 +1240,7 @@
         "id": "E47",
         "name": "Radsatzlagerüberwachung",
         "typ": "komponente",
-        "eltern_id": "E45",
+        "eltern_id": "E62",
         "absatz_ids": [
           "P17",
           "P18"
@@ -1230,7 +1250,7 @@
         "id": "E48",
         "name": "Brandschutzausrüstung",
         "typ": "komponente",
-        "eltern_id": "E45",
+        "eltern_id": "E63",
         "absatz_ids": [
           "P17",
           "P18"
@@ -1362,7 +1382,7 @@
         "id": "E61",
         "name": "Evakuierungseinrichtungen",
         "typ": "komponente",
-        "eltern_id": "E45",
+        "eltern_id": "E63",
         "absatz_ids": [
           "P18"
         ]
