@@ -1,0 +1,3257 @@
+{
+  "schema_version": "2.3",
+  "artikel_id": "A-0045",
+  "artikeltyp": "blatt",
+  "titel": "Forstmaschine",
+  "betrachtungsumfang": "Generische Referenzarchitektur der selbstfahrenden, bemannten Forstmaschine der vollmechanisierten Holzernte: Radharvester, Forwarder (Tragschlepper) und Skidder beziehungsweise Forstspezialschlepper, mit Raupenharvester als Fahrwerksvariante. Antriebsarten: Diesel-Verbrennungsmotor mit hydrostatischem Fahrantrieb sowie diesel-elektrischer Hybrid mit Traktionsmaschine und Traktionsbatterie. Ausgeschlossen: batterieelektrische und Brennstoffzellenantriebe, landwirtschaftliche Schlepper mit Forstausrüstung, Rückewagen, Seilkrananlagen, funkferngesteuerte Fäll- und Rückeraupen, Schreit- und Schubharvester, Feller-Buncher, Mulcher, Motorsägen sowie Zusatzaggregate wie Hacker; Baum, Waldboden und Betriebssoftware nur als Schnittstelle.",
+  "status": "in_arbeit",
+  "quellenzugriff": "ja",
+  "kindartikel_ids": [],
+  "quellen": [
+    {
+      "quellen_id": "Q1",
+      "titel": "Forstmaschine",
+      "urheber": "Wikipedia, die freie Enzyklopädie (deutschsprachig)",
+      "stand": "Version vom 17. Februar 2021 (Revision 208931709)",
+      "url": "https://de.wikipedia.org/wiki/Forstmaschine",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q2",
+      "titel": "Holzvollernter",
+      "urheber": "Wikipedia, die freie Enzyklopädie (deutschsprachig)",
+      "stand": "Version vom 22. April 2025 (Revision 255362049)",
+      "url": "https://de.wikipedia.org/wiki/Holzvollernter",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q3",
+      "titel": "Forwarder",
+      "urheber": "Wikipedia, die freie Enzyklopädie (deutschsprachig)",
+      "stand": "Version vom 15. Mai 2026 (Revision 267096567)",
+      "url": "https://de.wikipedia.org/wiki/Forwarder",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q4",
+      "titel": "Skidder",
+      "urheber": "Wikipedia, die freie Enzyklopädie (deutschsprachig)",
+      "stand": "Version vom 17. September 2025 (Revision 259813072)",
+      "url": "https://de.wikipedia.org/wiki/Skidder",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q5",
+      "titel": "Holzeinschlag – Harvester",
+      "urheber": "Bayerische Landesanstalt für Wald und Forstwirtschaft (LWF)",
+      "stand": null,
+      "url": "https://www.lwf.bayern.de/forsttechnik-holz/forsttechnik/051837/index.php",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "behoerde"
+    },
+    {
+      "quellen_id": "Q6",
+      "titel": "Holzrückung",
+      "urheber": "Bayerische Landesanstalt für Wald und Forstwirtschaft (LWF)",
+      "stand": null,
+      "url": "https://www.lwf.bayern.de/forsttechnik-holz/forsttechnik/051967/index.php",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "behoerde"
+    },
+    {
+      "quellen_id": "Q7",
+      "titel": "EN ISO 11850:2011 Machinery for forestry – General safety requirements (ISO 11850:2011), Katalogeintrag mit Leseprobe SIST EN ISO 11850:2012 (Inhaltsverzeichnis, Vorwort, Einleitung, Anhang ZA)",
+      "urheber": "CEN/TC 144 und ISO/TC 23/SC 15; Katalog iTeh Standards",
+      "stand": "Veröffentlichung 14.11.2011, dritte Ausgabe ISO 11850:2011-11-15",
+      "url": "https://standards.iteh.ai/catalog/standards/cen/38909a77-d8bf-4e8a-bb42-836807e93ee1/en-iso-11850-2011",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q8",
+      "titel": "Regulation (EU) No 167/2013 of the European Parliament and of the Council of 5 February 2013 on the approval and market surveillance of agricultural and forestry vehicles (Fassung wie angenommen)",
+      "urheber": "Europäisches Parlament und Rat der EU; Wiedergabe legislation.gov.uk (The National Archives)",
+      "stand": "Originalfassung vom 5. Februar 2013",
+      "url": "https://www.legislation.gov.uk/eur/2013/167/introduction/adopted",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q9",
+      "titel": "StanForD – Standard for Forest machine Data and Communication (Projektseite mit StanForD 2010)",
+      "urheber": "Skogforsk – Forestry Research Institute of Sweden",
+      "stand": "Stand der Seite aktualisiert 2025-05-14",
+      "url": "https://www.skogforsk.se/english/projects/stanford/",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "norm"
+    }
+  ],
+  "abschnitte": [
+    {
+      "ueberschrift": "Einleitung",
+      "abschnittstyp": "gesamtsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P1",
+          "text": "Eine Forstmaschine ist ein Fahrzeug, Aggregat oder Gerät, das speziell für die Arbeit im Wald konzipiert ist; die Palette reicht von der Seilwinde bis zum selbstfahrenden, computergesteuerten Holzvollernter. Zu den Forstfahrzeugen zählen Forstschlepper, Skidder, Holzvollernter und Forwarder. Der Harvester fällt die Bäume, entastet sie und längt sie sortimentsgerecht ab. Der Forwarder rückt das Holz aus dem Bestand, lädt es auf und transportiert es an den Lkw-befahrbaren Waldweg, der Skidder zieht die meist langen Stämme über den Waldboden. Harvester und Forwarder haben viel gemeinsam, etwa Rahmenbauweise, Dieselmotor, Knicklenkung und hydrostatischen Antrieb.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Einleitung und Aufzählung der Forstfahrzeuge"
+            },
+            {
+              "quellen_id": "Q5",
+              "fundstelle": "Abschnitte Harvester und Technik"
+            },
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Einleitung"
+            },
+            {
+              "quellen_id": "Q4",
+              "fundstelle": "Einleitung"
+            }
+          ],
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P2",
+          "text": "Der Artikel beschreibt die selbstfahrende, bemannte Forstmaschine der vollmechanisierten Holzernte als gemeinsames Grundmodell von Harvester, Forwarder und Skidder. Architekturell ist sie ein Gesamtsystem aus geländegängigem Basisfahrzeug und Arbeitsausrüstung, gekoppelt über mechanische, hydraulische, elektrische, thermische und informationstechnische Schnittstellen. Nach außen grenzen Baum und Holz, Waldboden, Fahrer und die Datenverarbeitung des Forstbetriebs sie ab. Für eine Dekomposition, etwa in SysML, wird sie in Hauptsysteme, Subsysteme und Komponenten zerlegt.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P1: Harvester, Forwarder und Skidder teilen Rahmenbauweise, Dieselmotor, Knicklenkung und hydrostatischen Antrieb",
+              "Funktionsprinzip: Fahrzeug mit Werkzeug wechselt zwischen Fahren und Arbeiten; Baum, Boden, Fahrer und Betrieb liegen außerhalb und wirken über Schnittstellen"
+            ],
+            "schluss": "Die Forstmaschine ist ein Gesamtsystem aus Basisfahrzeug und Arbeitsausrüstung mit benennbaren inneren und äußeren Schnittstellen."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrzeugstruktur und Fahrwerk",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E2",
+      "absaetze": [
+        {
+          "absatz_id": "P3",
+          "text": "Harvester und Forwarder werden in Rahmenbauweise hergestellt. Ihre Knicklenkung ermöglicht Spurtreue der hintereinander angeordneten Räder bei Kurvenfahrt und erleichtert den Einsatz im schweren Gelände, etwa weil ein kompletter Unterbodenschutz möglich ist. Moderne Radharvester besitzen zumindest vorne Bogie-Achsen, moderne Forwarder vorne und hinten und damit acht Räder; auch 10-Rad-Maschinen sind erhältlich. Die Reifenbreite beträgt meist 700 mm oder mehr. Bogiebänder erhöhen Traktion oder Aufstandsfläche, eine Reifendruckregelanlage passt den Reifeninnendruck dem Beladungszustand an. Raupenharvester verteilen ihr Gewicht über die Ketten, müssen aber per Tieflader umgesetzt werden.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q5",
+              "fundstelle": "Abschnitte Technik, Leistungsparameter und Harvester (Raupenharvester)"
+            },
+            {
+              "quellen_id": "Q6",
+              "fundstelle": "Abschnitte Technik des Forwarders, Möglichkeiten bodenschonender Rückung"
+            }
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P4",
+          "text": "Die Tragstruktur besteht aus Vorder- und Hinterwagen, deren Rahmen über das Knickgelenk verbunden sind; beim Forwarder trägt der Vorderwagen Fahrerhaus und Motor, der Hinterwagen Kran und Ladeeinrichtung. Die Lasten laufen vom Rahmen in die pendelnd gelagerte Bogie-Achse, die Bodenunebenheiten ausgleicht, und über Räder und Reifen in den Boden. Das Fahrwerk wird so zur strukturändernden Variante: Mehr Bogie-Achsen verteilen die Last, verlangen aber mehr Gelenkwellen und Radbremsen. Ersetzt ein Raupenfahrwerk die Räder, entfällt das Knickgelenk, und ein drehbarer Oberwagen trägt Kran und Kabine.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P3: Rahmenbauweise, Knicklenkung, Bogie-Achsen, Raupenharvester",
+              "Q5: Abschnitt Technik, beim Baggerharvester dreht sich der Oberwagen mit dem Kran",
+              "Lastpfad: jede am Rahmen befestigte Masse stützt sich über Achse und Räder auf dem Boden ab; eine Knicklenkung setzt ein Gelenk zwischen zwei Rahmenteilen voraus"
+            ],
+            "schluss": "Das Hauptsystem gliedert sich in Tragstruktur und Fahrwerk; Achsanordnung und Fahrwerksart sind strukturändernde Varianten."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Antriebssystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E13",
+      "absaetze": [
+        {
+          "absatz_id": "P5",
+          "text": "Harvester und Forwarder werden mit Dieselmotoren angetrieben; ein hydrostatischer Antrieb und Differenzialsperren sind Standard. Beim Holzvollernter wird die Kraft ausschließlich hydraulisch übertragen, die Steuerung aller Funktionen erfolgt elektrisch beziehungsweise mit hydraulischer Vorsteuerung. In skandinavischen Ländern sind Hybridforwarder in Erprobung, die den herkömmlichen Diesel- mit einem Elektroantrieb kombinieren.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q5",
+              "fundstelle": "Abschnitt Technik"
+            },
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Abschnitt Ausstattung"
+            },
+            {
+              "quellen_id": "Q6",
+              "fundstelle": "Abschnitt Technik des Forwarders"
+            }
+          ],
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P6",
+          "text": "Im Primärantrieb wandelt der Verbrennungsmotor Kraftstoff in mechanische Leistung, die Abgasnachbehandlung reinigt das Abgas. Der Nebenaggregatetrieb verteilt die Leistung auf Fahrpumpe und Arbeitshydraulikpumpe. Im hydrostatischen Fahrantrieb speist die verstellbare Fahrpumpe den hydraulischen Fahrmotor; die Kraftübertragung führt dessen Drehmoment über Getriebe, Gelenkwelle und sperrbares Differenzial in jede Bogie-Achse. Beim Hybrid unterstützt eine Traktionsmaschine mit Wechselrichter den Motor am Nebenaggregatetrieb, deckt Lastspitzen von Kran und Aggregat und speist beim Verzögern Energie zurück. Ein Raupenfahrwerk treibt der Fahrantrieb über Hydraulikmotoren an den Kettenrädern.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P5: Dieselmotor, hydrostatischer Antrieb, Differenzialsperren, Hybridforwarder mit Elektroantrieb",
+              "P3: Bogie-Achsen",
+              "Funktionsprinzip: ein hydrostatischer Antrieb braucht Pumpe und Motor, die Leistung gelangt über drehmomentanpassende Glieder zu den Rädern; eine elektrische Maschine kann motorisch und generatorisch arbeiten"
+            ],
+            "schluss": "Das Antriebssystem besteht aus Primärantrieb, hydrostatischem Fahrantrieb und Kraftübertragung; der Hybrid ergänzt eine Traktionsmaschine."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Energieversorgungssystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E25",
+      "absaetze": [
+        {
+          "absatz_id": "P7",
+          "text": "Das Energieversorgungssystem speichert die Energie für Antrieb, Arbeitsausrüstung und Bordnetz. In der Kraftstoffversorgung hält der Kraftstofftank den Dieselkraftstoff vor und fördert ihn zum Motor; sein Vorrat bestimmt, wie lange die Maschine im Schichtbetrieb ohne Betankung arbeitet. Die Niedervolt-Energiequelle aus Generator und Starterbatterie startet den Motor und speist das Niedervolt-Bordnetz. Beim Hybrid kommt ein Hochvolt-Energiesystem mit Traktionsbatterie und Gleichspannungswandler hinzu, der das Bordnetz aus dem Hochvoltkreis stützt.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P5: Dieselmotor und Hybrid mit Elektroantrieb",
+              "Q3: Abschnitt Arbeitsverfahren, Schichtbetrieb",
+              "Funktionsprinzip: ein Verbrennungsmotor braucht Kraftstoffspeicher und Starter, ein elektrischer Antrieb einen elektrischen Speicher"
+            ],
+            "schluss": "Das Hauptsystem umfasst Kraftstoffversorgung, Niedervolt-Energiequelle und beim Hybrid ein Hochvolt-Energiesystem."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Lenksystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E35",
+      "absaetze": [
+        {
+          "absatz_id": "P8",
+          "text": "Das Lenksystem lenkt über die Knicklenkung: Lenkzylinder zwischen Vorder- und Hinterwagen knicken das Fahrzeug im Knickgelenk ein, sodass die hinteren Räder in der Spur der vorderen laufen. Die Eingabe am Lenkrad oder an einem Lenkgeber im Joystick wirkt auf ein Lenkventil, das Drucköl aus der Arbeitshydraulik dosiert zu den Zylindern leitet; bei elektrischer Lenkeingabe steuert ein Steuergerät das Ventil. Beim Raupenfahrwerk entfällt die Knicklenkung, gelenkt wird über unterschiedliche Kettengeschwindigkeiten.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P3: Knicklenkung mit Spurtreue",
+              "P5: Kraft wird hydraulisch übertragen, Steuerung elektrisch oder hydraulisch vorgesteuert",
+              "Funktionsprinzip: ein Knickgelenk wird durch Zylinder zwischen den Rahmenteilen verstellt; Kettenfahrzeuge lenken über Geschwindigkeitsunterschiede der Ketten"
+            ],
+            "schluss": "Das Lenksystem besteht aus Lenkeingabe, Lenkventil und Lenkzylindern an der Knickstelle."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Bremssystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E39",
+      "absaetze": [
+        {
+          "absatz_id": "P9",
+          "text": "Das Bremssystem verzögert und hält die Maschine. Beim hydrostatischen Fahrantrieb verzögert schon das Zurückstellen der Fahrpumpe; die hydraulisch betätigte Betriebsbremse, etwa als nasse Lamellenbremse, ergänzt diese Wirkung. Die Feststellbremse ist federbetätigt und wird hydraulisch gelöst, damit sie bei Druckverlust einfällt. Eine Arbeitsbremse hält die Maschine während der Kranarbeit und ist an die Umschaltung zwischen Fahr- und Arbeitsbetrieb gekoppelt. Drucköl bezieht das Bremssystem aus der Arbeitshydraulik.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P5: hydrostatischer Antrieb",
+              "Q7: Inhaltsverzeichnis, Abschnitt Braking systems",
+              "Funktionsprinzip: eine Hydrostatpumpe mit zurückgenommenem Förderstrom bremst den Fahrmotor; eine federbetätigte Bremse fällt bei Druckausfall ein",
+              "Annahme ohne Quelle: Arbeitsbremse für den Kranbetrieb"
+            ],
+            "schluss": "Das Bremssystem umfasst Betriebsbremse, Feststellbremse und Arbeitsbremse, versorgt aus der Arbeitshydraulik."
+          },
+          "sicherheit": "gering",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrerhaus",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E43",
+      "absaetze": [
+        {
+          "absatz_id": "P10",
+          "text": "Die Kabinen von Harvestern und Forwardern sind ergonomisch gestaltet, also klimatisiert, lärmgeschützt und vibrationsdämpfend gelagert, und erfüllen hohe Sicherheitsstandards zum Schutz des Fahrers. Beim Forwarder werden Fahrzeug und der bis zu 10 m lange Ladekran von einem schwingungsgedämpften Fahrersitz in der Kabine aus gesteuert. Manche Holzvollernter haben eine entsprechend der Steigung neigbare Kabine, bei anderen lässt sich die gesamte Maschine in die Horizontale bringen.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q5",
+              "fundstelle": "Abschnitt Technik"
+            },
+            {
+              "quellen_id": "Q6",
+              "fundstelle": "Abschnitt Technik des Forwarders"
+            },
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Abschnitt Ausstattung"
+            },
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Abschnitt Ausstattung"
+            }
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P11",
+          "text": "Das Fahrerhaus gliedert sich in die Kabine mit Kabinenstruktur und Kabinenlagerung sowie den Bedienplatz. Weil der Fahrer abwechselnd fährt und den Kran führt, müssen Sitze und Bedienplatz Blick auf Fahrweg und Kranarbeitsbereich bieten; beim Forwarder wendet der Sitz dazu zum Hinterwagen. Bedienelemente sind Joysticks an den Armlehnen, Pedale und Tastenfelder, Anzeigeelemente der Bildschirm des Bordcomputers. Eine neigbare Kabine braucht in der Kabinenlagerung Neigezylinder, Neigungssensoren und eine Regelung.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P10: vibrationsdämpfend gelagerte Kabine, Fahrzeug und Kran vom Fahrersitz aus gesteuert, neigbare Kabine",
+              "P4: beim Forwarder sitzt der Kran am Hinterwagen",
+              "Funktionsprinzip: wer aus einem Sitz fährt und den Kran führt, braucht Sicht in beide Arbeitsrichtungen; eine geregelte Neigung braucht Aktor, Sensor und Regler"
+            ],
+            "schluss": "Das Fahrerhaus besteht aus Kabine und Bedienplatz; die Kabinenausführung ist eine strukturändernde Variante."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Arbeitsausrüstung",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E51",
+      "absaetze": [
+        {
+          "absatz_id": "P12",
+          "text": "Die Kranreichweite beträgt bei Harvestern meist rund zehn Meter; Baggerharvester erreichen bis zu 15 m, weil sich mit dem Kran der ganze Oberwagen samt Kontergewicht dreht. Hub- und Schwenkmoment sind wichtige Kenngrößen des Krans. Das Harvesteraggregat greift, fällt, entastet, misst und längt ab; der Fällkopf trägt Vorschubwalzen, Messeinheit, eine hydraulisch angetriebene Kettensäge und Entastungsmesser. Der Forwarder transportiert Kurzholz im Rungenkorb; für Langholz wird eine Klemmbank montiert, der Umbau dauert bei gleichen Befestigungspunkten weniger als eine Stunde. Polterschild und Seilwinde können hinzukommen. Bei Skiddern haben sich Klemmbank und Kran mit Holzgreifer durchgesetzt.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q5",
+              "fundstelle": "Abschnitt Technik"
+            },
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Abschnitt Ausstattung"
+            },
+            {
+              "quellen_id": "Q6",
+              "fundstelle": "Abschnitte Forwarder und Klemmbankschlepper"
+            },
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Abschnitt Ausstattung"
+            },
+            {
+              "quellen_id": "Q4",
+              "fundstelle": "Abschnitt Geschichte"
+            }
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P13",
+          "text": "Die Arbeitsausrüstung handhabt Bäume und Holz. Der Kran besteht aus der Kransäule mit Schwenkwerk auf dem Rahmen, dem Kranarm aus Hub-, Knick- und Teleskoparm und dem Rotator, der das Werkzeug dreht. Am Kranende sitzt das Harvesteraggregat mit seiner Sägeeinheit oder der Holzgreifer, versorgt aus dem Steuerventilblock. Der Maschinentyp ist die prägende Variante: Beim Harvester entfällt die Ladeeinrichtung, beim Forwarder das Aggregat; die Wahl ändert Rahmenlänge, Achslastverteilung, Hydraulikleistung und Aufarbeitungssteuerung.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P12: Kran mit Reichweite und Schwenkmoment, Harvesteraggregat mit Kettensäge, Rungenkorb, Klemmbank, Holzgreifer",
+              "P5: Kraftübertragung hydraulisch",
+              "Funktionsprinzip: ein schwenkbarer Gelenkkran braucht drehbare Säule, Arm und ein drehbares Werkzeuggelenk"
+            ],
+            "schluss": "Die Arbeitsausrüstung gliedert sich in Kran, Harvesteraggregat, Ladeeinrichtung und Zusatzgeräte; der Maschinentyp bestimmt die Auswahl."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Elektrik und Elektronik",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E67",
+      "absaetze": [
+        {
+          "absatz_id": "P14",
+          "text": "Das Elektrik- und Elektroniksystem verbindet Bedienung, Sensoren und Ventile. Das Niedervolt-Bordnetz verteilt die Energie über Leitungssatz und Sicherungen an Steuergeräte, Scheinwerfer, Klimatisierung und Ventilmagnete. Das Kommunikationsnetz verbindet die Steuergeräte von Motor, Fahrantrieb, Kran, Aggregat und Kabine über einen Fahrzeugbus. Weil die Kraftfunktionen elektrisch vorgesteuert werden, wirken die Bedienelemente über Steuergeräte auf den Steuerventilblock. Leitungen zur Kranspitze laufen über den Rotator und brauchen Schutz gegen Äste und Holz.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P5: Steuerung aller Funktionen elektrisch beziehungsweise mit hydraulischer Vorsteuerung",
+              "P15: Bordcomputer mit Messdaten",
+              "Funktionsprinzip: elektrisch vorgesteuerte Ventile brauchen Energieverteilung, Leitungen und Steuergeräte, verteilte Steuergeräte ein Kommunikationsnetz"
+            ],
+            "schluss": "Das Hauptsystem besteht aus Niedervolt-Bordnetz und Kommunikationsnetz."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrzeugsteuerung und Information",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E74",
+      "absaetze": [
+        {
+          "absatz_id": "P15",
+          "text": "Holzvollernter sind mit GPS, mobiler Kommunikation und einem Bordcomputer ausgestattet, der Holzhaushaltung und Sortenbildung unterstützt; die aufgearbeiteten Holzmassen lassen sich speichern und als Holzlisten ausdrucken. Die Messgenauigkeit hängt stark vom Sensorsystem, der Baumart, dem Rindenabzug und regelmäßiger, dokumentierter Kalibrierung ab. Für die Datenkommunikation mit den Maschinenrechnern von Harvestern, Forwardern, Feller-Bunchern und Skiddern pflegt das schwedische Forstforschungsinstitut Skogforsk den Standard StanForD, einen weltweiten De-facto-Standard ohne offiziellen Status; die Fassung StanForD2010 beruht auf XML.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Abschnitt Ausstattung, letzter Absatz"
+            },
+            {
+              "quellen_id": "Q9",
+              "fundstelle": "Abschnitte StanForD, StanForD2010 und Focus"
+            }
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P16",
+          "text": "Das Fahrzeugsteuerungs- und Informationssystem bildet die logische Ebene. Im Bordcomputer berechnet die Aufarbeitungssteuerung aus den Werten der Messeinheit und den vorgegebenen Sortimenten die Ablängschnitte und erfasst die Holzmengen; das Fahrzeugmanagement koordiniert Motordrehzahl, Fahrantrieb und Hydraulik, die Diagnose sammelt Zustands- und Fehlerinformationen. In Ortung und Kommunikation liefert die Navigation die Position, die Telematikeinheit tauscht Produktionsdaten und Aufträge mit dem Forstbetrieb aus.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P15: Bordcomputer, Sortenbildung, GPS, mobile Kommunikation, Datenstandard",
+              "Q5: Abschnitt Technik, Bordcomputer zur Überwachung und Einstellung der Maschinenfunktionen",
+              "P12: Messeinheit im Fällkopf"
+            ],
+            "schluss": "Das Hauptsystem gliedert sich in Bordcomputer sowie Ortung und Kommunikation."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrerassistenz und Sicherheit",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E82",
+      "absaetze": [
+        {
+          "absatz_id": "P17",
+          "text": "Die internationale Norm ISO 11850, als EN ISO 11850 auch Europäische Norm, legt allgemeine Sicherheitsanforderungen für selbstfahrende Forstmaschinen fest, darunter Fäller, Entaster, Forwarder, Holzlader, Skidder, Prozessoren, Harvester, Mulcher und Mehrzweckausführungen. Sie behandelt unter anderem Fahrerplatz, Zugang, Bedienteile, Sicht, Beleuchtung, Brems- und Lenksysteme, Standsicherheit, automatische Aufarbeitungssysteme, Brandrisiken, Lärm, Vibration, Winden und Hydrauliksysteme; ausgenommen sind etwa Kettenschuss, Fernsteuerung, der Bedarf an Arbeitsleuchten und die Verkehrssicherheit auf der Straße. In EU und EFTA begründet ihre Einhaltung nach Listung im Amtsblatt eine Konformitätsvermutung zur Maschinenrichtlinie 2006/42/EG.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q7",
+              "fundstelle": "Abstract (Anwendungsbereich); Inhaltsverzeichnis Abschnitte 4.3 bis 4.20; Anhang ZA"
+            }
+          ],
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P18",
+          "text": "Das Fahrerassistenz- und Sicherheitssystem schützt Fahrer und Maschine. Zu den Schutzaufbauten gehören der Überschlagschutz der Kabine, ein Schutz gegen herabfallende Äste und Stämme und die Schutzverglasung gegen eindringende Teile, etwa einer gerissenen Sägekette. Überwachung und Abschaltung umfassen die Standsicherheitsüberwachung, die aus Kranstellung, Last und Neigung die Kippgefahr bewertet und Kranbewegungen begrenzt, die Not-Halt-Einrichtung und eine Feuerlöscheinrichtung im Motorraum, wo Späne und Harz an heißen Bauteilen Brände auslösen können. Seilwinden stoppt eine Totmannschaltung, sobald die Bedienperson loslässt.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P17: Themen Fahrerplatz, Standsicherheit, Brandrisiken, Winden",
+              "Q6: Abschnitt Seilwinden, Totmannschaltung",
+              "P12: Kran mit großer Reichweite und Hubmoment",
+              "Funktionsprinzip: Bäume, Äste und Sägeketten können auf die Kabine wirken; eine weit ausladende Last verschiebt den Schwerpunkt"
+            ],
+            "schluss": "Das Hauptsystem umfasst Schutzaufbauten sowie Überwachung und Abschaltung."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Beleuchtung und Sicht",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E90",
+      "absaetze": [
+        {
+          "absatz_id": "P19",
+          "text": "Bagger-Holzvollernter sind rundum mit etwa 15 Arbeitsscheinwerfern ausgestattet, die Nachtarbeit erlauben; beim Forwarder ermöglichen zahlreiche am oberen Rand der Kabine angebrachte, in verschiedene Richtungen strahlende Scheinwerfer das Arbeiten in der Dunkelheit. Die Verordnung (EU) Nr. 167/2013 gilt in der EU für Zugmaschinen, Anhänger und gezogene auswechselbare Geräte; nach ihrem Erwägungsgrund 6 sehen weder sie noch die Maschinenrichtlinie 2006/42/EG noch die Richtlinie 97/68/EG Bauanforderungen für die Verkehrssicherheit selbstfahrender mobiler Maschinen in Land- und Forstwirtschaft auf der Straße vor.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Abschnitt Ausstattung"
+            },
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Abschnitt Ausstattung"
+            },
+            {
+              "quellen_id": "Q8",
+              "fundstelle": "Erwägungsgrund 6; Artikel 2 Absatz 1"
+            }
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P20",
+          "text": "Das Beleuchtungs- und Sichtsystem leuchtet den Arbeitsbereich aus und sichert die Fahrersicht. Die Beleuchtung umfasst Arbeitsscheinwerfer an Kabine und Kran sowie Scheinwerfer und Leuchten für Fahrten auf öffentlichen Straßen, deren Ausführung durch die genannten EU-Rechtsakte nicht harmonisiert ist. Zu den Sichteinrichtungen zählen Scheibenwischer an den großen Scheiben und ein Kamera-Monitor-System für den Bereich hinter der Maschine. Bei neigbarer Kabine werden Scheinwerfer und Kameras mit der Kabine geführt.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P19: Arbeitsscheinwerfer für Nachtarbeit, keine harmonisierten Straßenanforderungen",
+              "P10: neigbare Kabine",
+              "Annahme ohne Quelle: Kamera für den Bereich hinter der Maschine"
+            ],
+            "schluss": "Das Hauptsystem gliedert sich in Beleuchtung und Sichteinrichtungen."
+          },
+          "sicherheit": "gering",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Thermomanagement",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E98",
+      "absaetze": [
+        {
+          "absatz_id": "P21",
+          "text": "Im Holzvollernter ist eine Klimaanlage eingebaut, häufig auch eine automatische Vorheizung des Hydrauliköls und der Kabine vor Arbeitsbeginn.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Abschnitt Ausstattung"
+            }
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P22",
+          "text": "Das Thermomanagement regelt die Betriebstemperatur von Motor und Hydraulik und klimatisiert die Kabine. Im Kühlkreislauf führt der Kühler die Motorwärme ab, der Hydraulikölkühler die Verlustwärme von Fahrantrieb, Kran und Aggregat. Ein Kühlerlüfter fördert Luft durch beide; da Laub, Nadeln und Späne die Kühler zusetzen, bietet sich eine umkehrbare Drehrichtung zum Ausblasen an. Die Klimatisierung umfasst Heiz- und Klimaanlage und eine Standheizung für das Vorheizen; beim Hybrid kommt die Batterietemperierung hinzu.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P21: Klimaanlage, Vorheizung von Hydrauliköl und Kabine",
+              "P5: Kraftübertragung ausschließlich hydraulisch",
+              "Funktionsprinzip: Verbrennungsmotor und hydraulische Leistungsübertragung erzeugen Verlustwärme, die abgeführt werden muss"
+            ],
+            "schluss": "Das Thermomanagement besteht aus Kühlkreislauf und Klimatisierung."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Neben- und Versorgungssysteme",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E107",
+      "absaetze": [
+        {
+          "absatz_id": "P23",
+          "text": "Die sehr umfangreiche Hydraulikanlage des Holzvollernters muss, wenn der Waldeigentümer es verlangt, nach PEFC- und FSC-Standards mit biologisch abbaubarer Hydraulikflüssigkeit befüllt sein; bei Forwardern ist Bioöl mittlerweile Standard. Eine Vakuumpumpe verringert bei Reparaturen den Ölaustritt, ein Absperrventil am Kran schließt den Ölfluss zum Aggregat und hält bei einer Havarie das Öl zurück. Beim Forwarder werden Fahrfunktionen sowie Kran- und Anbauteilfunktionen über die Hydraulikanlage betrieben.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Abschnitt Ausstattung"
+            },
+            {
+              "quellen_id": "Q6",
+              "fundstelle": "Abschnitt Technik des Forwarders"
+            },
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Abschnitt Ausstattung"
+            }
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P24",
+          "text": "Die Neben- und Versorgungssysteme stellen hydraulische Leistung bereit und versorgen die Arbeitsgeräte. Der Nebenaggregatetrieb, ein Pumpenverteilergetriebe am Motor, treibt Fahrpumpe und Arbeitshydraulikpumpe. In der Arbeitshydraulik saugt die Arbeitshydraulikpumpe aus dem Hydrauliktank und speist den Steuerventilblock für Kran, Harvesteraggregat, Seilwinde und Ladeeinrichtung; sie versorgt auch Lenkung und Bremse. Absperrventil und Unterdruckpumpe begrenzen Ölverluste, eine Zentralschmieranlage schmiert Kran- und Gelenklager. Förderstrom und Systemdruck bestimmen so die Arbeitsleistung der ganzen Maschine.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P23: Hydraulikanlage für Fahr-, Kran- und Anbauteilfunktionen, Vakuumpumpe, Absperrventil",
+              "P6: Nebenaggregatetrieb treibt die Pumpen",
+              "Funktionsprinzip: ein offener Hydraulikkreis braucht Pumpe, Tank und Ventile"
+            ],
+            "schluss": "Das Hauptsystem besteht aus Arbeitshydraulik, Nebenaggregatetrieb und Zentralschmieranlage."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Zusammenfassung",
+      "abschnittstyp": "gesamtsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P25",
+          "text": "Architekturell lässt sich die Forstmaschine auf oberster Ebene als Gesamtsystem mit den Hauptsystemen Fahrzeugstruktur und Fahrwerk, Antriebssystem, Energieversorgungssystem, Lenksystem, Bremssystem, Fahrerhaus, Arbeitsausrüstung, Elektrik und Elektronik, Fahrzeugsteuerung und Information, Fahrerassistenz und Sicherheit, Beleuchtung und Sicht, Thermomanagement sowie Neben- und Versorgungssysteme auffassen. Kennzeichnend sind die zentrale Hydraulik, die Fahren, Lenken, Bremsen und Arbeiten aus einer Motorleistung speist, und die enge Kopplung von Harvesteraggregat und Bordcomputer.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P3 bis P24: Abschnitte der Hauptsysteme",
+              "P5, P23: Kraftübertragung und Kraftfunktionen hydraulisch"
+            ],
+            "schluss": "Die Forstmaschine besteht aus dreizehn gekoppelten Hauptsystemen mit der Hydraulik als zentralem Energiepfad."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Modellierungsbezug",
+      "abschnittstyp": "modellierung",
+      "absaetze": [
+        {
+          "absatz_id": "P26",
+          "text": "In SysML bildet der Block Forstmaschine das Gesamtsystem mit den Hauptsystemen als Bestandteilen. Dekompositionspfade sind etwa Antriebssystem → Hydrostatischer Fahrantrieb → Fahrpumpe, Antriebssystem → Kraftübertragung → Differenzial, Arbeitsausrüstung → Harvesteraggregat → Messeinheit und Fahrzeugstruktur und Fahrwerk → Fahrwerk → Bogie-Achse. Ports bilden die Hydraulikanschlüsse am Steuerventilblock, die Abtriebe des Nebenaggregatetriebs, die Busanschlüsse und die Krankonsole am Rahmen ab, Konnektoren verbinden sie. Harvester, Forwarder und Skidder werden als Spezialisierungen eines Basisfahrzeugblocks modelliert. Geeignet sind Block Definition Diagrams, Internal Block Diagrams für Hydraulik- und Datenflüsse und Aktivitätsdiagramme für den Arbeitszyklus.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P25: Hauptsysteme",
+              "P6, P12, P24: Unterstrukturen",
+              "Modellierungspraxis: Teil-von-Hierarchie als Blöcke, Schnittstellen als Ports"
+            ],
+            "schluss": "Die Dekomposition lässt sich in mehreren Ebenen mit Ports an den hydraulischen, mechanischen und informationstechnischen Schnittstellen abbilden."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Flüsse",
+      "abschnittstyp": "fluesse",
+      "absaetze": [
+        {
+          "absatz_id": "P27",
+          "text": "Kraftstoff fließt vom Kraftstofftank zum Verbrennungsmotor, mechanische Leistung vom Motor über den Nebenaggregatetrieb zu den Pumpen und vom Fahrmotor über Getriebe, Gelenkwelle und Differenzial zur Bogie-Achse. Drucköl fließt vom Steuerventilblock zu Kran, Harvesteraggregat und Seilwinde, von der Arbeitshydraulikpumpe zu Lenkventil und Betriebsbremse. Messwerte gehen von der Messeinheit zur Aufarbeitungssteuerung, Positionen und Produktionsdaten zwischen Navigation, Bordcomputer und Telematikeinheit, Bedienbefehle über den Fahrzeugbus zum Steuerventilblock. Wärme fließt zu Kühler und Hydraulikölkühler, Heizluft in die Kabine, Hochvolt-Energie beim Hybrid über den Wechselrichter zur Traktionsmaschine.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P6, P7, P13, P14, P16, P22, P24: Flüsse der Hauptsysteme"
+            ],
+            "schluss": "Die Flüsse verbinden alle Hauptsysteme über benennbare Schnittstellen."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Perspektiven",
+      "abschnittstyp": "perspektiven",
+      "absaetze": [
+        {
+          "absatz_id": "P28",
+          "text": "Funktionszuordnung: Fahrzeuglasten tragen und Fahrzeug fortbewegen – Tragstruktur, Fahrwerk mit Bogie-Achse, Räder und Reifen oder Raupenfahrwerk; Energie speichern – Kraftstofftank, Starterbatterie, Traktionsbatterie; Treibstoff fördern – Kraftstoffversorgung; Antriebsleistung erzeugen – Verbrennungsmotor, Traktionsmaschine; Bremsenergie zurückgewinnen – Traktionsmaschine; Drehmoment übertragen – Fahrantrieb, Kraftübertragung; Fahrzeug lenken – Lenksystem; Fahrzeug verzögern – Betriebsbremse, Fahrantrieb; Fahrzeug festhalten – Feststellbremse, Arbeitsbremse; Hydraulische Leistung bereitstellen und Arbeitsgeräte versorgen – Arbeitshydraulik, Nebenaggregatetrieb; Unterdruck bereitstellen – Unterdruckpumpe; Objekte handhaben – Kran, Holzgreifer; Bäume fällen und aufarbeiten – Harvesteraggregat; Ladung aufnehmen – Ladeeinrichtung; Holz beiseilen – Seilwinde; Holzmengen erfassen – Messeinheit, Aufarbeitungssteuerung; Fahrereingaben erfassen – Bedienelemente; Fahrerinformationen anzeigen – Anzeigeelemente; Elektrische Energie verteilen – Niedervolt-Bordnetz; Daten übertragen – Fahrzeugbus, Telematikeinheit; Fahrzeugzustand überwachen – Diagnose, Standsicherheitsüberwachung; Fahrzeugposition bestimmen – Navigation; Insassen schützen – Schutzaufbauten; Fahrzeugumgebung ausleuchten – Arbeitsscheinwerfer; Lichtsignale abgeben – Leuchten; Fahrersicht sicherstellen – Sichteinrichtungen; Betriebstemperatur regeln – Kühlkreislauf; Innenraum klimatisieren – Klimatisierung.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P4 bis P24: Funktionen und ausführende Elemente der Hauptsysteme"
+            ],
+            "schluss": "Jede Funktion ist mindestens einem ausführenden Element zugeordnet."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    }
+  ],
+  "modell": {
+    "elemente": [
+      {
+        "id": "E1",
+        "name": "Forstmaschine",
+        "typ": "gesamtsystem",
+        "eltern_id": null,
+        "absatz_ids": [
+          "P1",
+          "P2",
+          "P25",
+          "P26"
+        ]
+      },
+      {
+        "id": "E2",
+        "name": "Fahrzeugstruktur und Fahrwerk",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P3",
+          "P4",
+          "P25",
+          "P26"
+        ],
+        "kategorie": "struktur_fahrwerk"
+      },
+      {
+        "id": "E3",
+        "name": "Tragstruktur",
+        "typ": "subsystem",
+        "eltern_id": "E2",
+        "absatz_ids": [
+          "P4",
+          "P28"
+        ]
+      },
+      {
+        "id": "E4",
+        "name": "Rahmen",
+        "typ": "komponente",
+        "eltern_id": "E3",
+        "absatz_ids": [
+          "P3",
+          "P4",
+          "P26"
+        ]
+      },
+      {
+        "id": "E5",
+        "name": "Knickgelenk",
+        "typ": "komponente",
+        "eltern_id": "E3",
+        "absatz_ids": [
+          "P4",
+          "P8"
+        ]
+      },
+      {
+        "id": "E6",
+        "name": "Unterbodenschutz",
+        "typ": "komponente",
+        "eltern_id": "E3",
+        "absatz_ids": [
+          "P3"
+        ]
+      },
+      {
+        "id": "E7",
+        "name": "Fahrwerk",
+        "typ": "subsystem",
+        "eltern_id": "E2",
+        "absatz_ids": [
+          "P4",
+          "P26",
+          "P28"
+        ]
+      },
+      {
+        "id": "E8",
+        "name": "Bogie-Achse",
+        "typ": "komponente",
+        "eltern_id": "E7",
+        "absatz_ids": [
+          "P3",
+          "P4",
+          "P6",
+          "P26",
+          "P27",
+          "P28"
+        ]
+      },
+      {
+        "id": "E9",
+        "name": "Räder und Reifen",
+        "typ": "komponente",
+        "eltern_id": "E7",
+        "absatz_ids": [
+          "P4",
+          "P28"
+        ]
+      },
+      {
+        "id": "E10",
+        "name": "Bogiebänder",
+        "typ": "komponente",
+        "eltern_id": "E7",
+        "absatz_ids": [
+          "P3"
+        ]
+      },
+      {
+        "id": "E11",
+        "name": "Reifendruckregelanlage",
+        "typ": "komponente",
+        "eltern_id": "E7",
+        "absatz_ids": [
+          "P3"
+        ]
+      },
+      {
+        "id": "E12",
+        "name": "Raupenfahrwerk",
+        "typ": "komponente",
+        "eltern_id": "E7",
+        "absatz_ids": [
+          "P4",
+          "P6",
+          "P8",
+          "P28"
+        ]
+      },
+      {
+        "id": "E13",
+        "name": "Antriebssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P5",
+          "P6",
+          "P25",
+          "P26"
+        ],
+        "kategorie": "antrieb"
+      },
+      {
+        "id": "E14",
+        "name": "Primärantrieb",
+        "typ": "subsystem",
+        "eltern_id": "E13",
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "E15",
+        "name": "Verbrennungsmotor",
+        "typ": "komponente",
+        "eltern_id": "E14",
+        "absatz_ids": [
+          "P6",
+          "P27",
+          "P28"
+        ]
+      },
+      {
+        "id": "E16",
+        "name": "Abgasnachbehandlung",
+        "typ": "komponente",
+        "eltern_id": "E14",
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "E17",
+        "name": "Traktionsmaschine",
+        "typ": "komponente",
+        "eltern_id": "E14",
+        "absatz_ids": [
+          "P6",
+          "P27",
+          "P28"
+        ]
+      },
+      {
+        "id": "E34",
+        "name": "Wechselrichter",
+        "typ": "komponente",
+        "eltern_id": "E14",
+        "absatz_ids": [
+          "P6",
+          "P27"
+        ]
+      },
+      {
+        "id": "E18",
+        "name": "Hydrostatischer Fahrantrieb",
+        "typ": "subsystem",
+        "eltern_id": "E13",
+        "absatz_ids": [
+          "P6",
+          "P26",
+          "P28"
+        ]
+      },
+      {
+        "id": "E19",
+        "name": "Fahrpumpe",
+        "typ": "komponente",
+        "eltern_id": "E18",
+        "absatz_ids": [
+          "P6",
+          "P9",
+          "P26"
+        ]
+      },
+      {
+        "id": "E20",
+        "name": "Hydraulischer Fahrmotor",
+        "typ": "komponente",
+        "eltern_id": "E18",
+        "absatz_ids": [
+          "P6",
+          "P27"
+        ]
+      },
+      {
+        "id": "E21",
+        "name": "Kraftübertragung",
+        "typ": "subsystem",
+        "eltern_id": "E13",
+        "absatz_ids": [
+          "P6",
+          "P26",
+          "P28"
+        ]
+      },
+      {
+        "id": "E22",
+        "name": "Getriebe",
+        "typ": "komponente",
+        "eltern_id": "E21",
+        "absatz_ids": [
+          "P6",
+          "P27"
+        ]
+      },
+      {
+        "id": "E23",
+        "name": "Gelenkwelle",
+        "typ": "komponente",
+        "eltern_id": "E21",
+        "absatz_ids": [
+          "P6",
+          "P27"
+        ]
+      },
+      {
+        "id": "E24",
+        "name": "Differenzial",
+        "typ": "komponente",
+        "eltern_id": "E21",
+        "absatz_ids": [
+          "P6",
+          "P26",
+          "P27"
+        ]
+      },
+      {
+        "id": "E25",
+        "name": "Energieversorgungssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P7",
+          "P25"
+        ],
+        "kategorie": "energieversorgung"
+      },
+      {
+        "id": "E26",
+        "name": "Kraftstoffversorgung",
+        "typ": "subsystem",
+        "eltern_id": "E25",
+        "absatz_ids": [
+          "P7",
+          "P28"
+        ]
+      },
+      {
+        "id": "E27",
+        "name": "Kraftstofftank",
+        "typ": "komponente",
+        "eltern_id": "E26",
+        "absatz_ids": [
+          "P7",
+          "P27",
+          "P28"
+        ]
+      },
+      {
+        "id": "E28",
+        "name": "Niedervolt-Energiequelle",
+        "typ": "subsystem",
+        "eltern_id": "E25",
+        "absatz_ids": [
+          "P7"
+        ]
+      },
+      {
+        "id": "E29",
+        "name": "Generator",
+        "typ": "komponente",
+        "eltern_id": "E28",
+        "absatz_ids": [
+          "P7"
+        ]
+      },
+      {
+        "id": "E30",
+        "name": "Starterbatterie",
+        "typ": "komponente",
+        "eltern_id": "E28",
+        "absatz_ids": [
+          "P7",
+          "P28"
+        ]
+      },
+      {
+        "id": "E31",
+        "name": "Hochvolt-Energiesystem",
+        "typ": "subsystem",
+        "eltern_id": "E25",
+        "absatz_ids": [
+          "P7"
+        ]
+      },
+      {
+        "id": "E32",
+        "name": "Traktionsbatterie",
+        "typ": "komponente",
+        "eltern_id": "E31",
+        "absatz_ids": [
+          "P7",
+          "P28"
+        ]
+      },
+      {
+        "id": "E33",
+        "name": "Gleichspannungswandler",
+        "typ": "komponente",
+        "eltern_id": "E31",
+        "absatz_ids": [
+          "P7"
+        ]
+      },
+      {
+        "id": "E35",
+        "name": "Lenksystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P8",
+          "P25",
+          "P28"
+        ],
+        "kategorie": "lenkung"
+      },
+      {
+        "id": "E36",
+        "name": "Lenkrad",
+        "typ": "komponente",
+        "eltern_id": "E35",
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "E37",
+        "name": "Lenkventil",
+        "typ": "komponente",
+        "eltern_id": "E35",
+        "absatz_ids": [
+          "P8",
+          "P27"
+        ]
+      },
+      {
+        "id": "E38",
+        "name": "Lenkzylinder",
+        "typ": "komponente",
+        "eltern_id": "E35",
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "E39",
+        "name": "Bremssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P9",
+          "P25"
+        ],
+        "kategorie": "bremse"
+      },
+      {
+        "id": "E40",
+        "name": "Betriebsbremse",
+        "typ": "komponente",
+        "eltern_id": "E39",
+        "absatz_ids": [
+          "P9",
+          "P27",
+          "P28"
+        ]
+      },
+      {
+        "id": "E41",
+        "name": "Feststellbremse",
+        "typ": "komponente",
+        "eltern_id": "E39",
+        "absatz_ids": [
+          "P9",
+          "P28"
+        ]
+      },
+      {
+        "id": "E42",
+        "name": "Arbeitsbremse",
+        "typ": "komponente",
+        "eltern_id": "E39",
+        "absatz_ids": [
+          "P9",
+          "P28"
+        ]
+      },
+      {
+        "id": "E43",
+        "name": "Fahrerhaus",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P10",
+          "P11",
+          "P25"
+        ],
+        "kategorie": "bedienraum"
+      },
+      {
+        "id": "E44",
+        "name": "Kabine",
+        "typ": "subsystem",
+        "eltern_id": "E43",
+        "absatz_ids": [
+          "P10",
+          "P11"
+        ]
+      },
+      {
+        "id": "E45",
+        "name": "Kabinenstruktur",
+        "typ": "komponente",
+        "eltern_id": "E44",
+        "absatz_ids": [
+          "P11"
+        ]
+      },
+      {
+        "id": "E46",
+        "name": "Kabinenlagerung",
+        "typ": "komponente",
+        "eltern_id": "E44",
+        "absatz_ids": [
+          "P11"
+        ]
+      },
+      {
+        "id": "E47",
+        "name": "Bedienplatz",
+        "typ": "subsystem",
+        "eltern_id": "E43",
+        "absatz_ids": [
+          "P11"
+        ]
+      },
+      {
+        "id": "E48",
+        "name": "Sitze",
+        "typ": "komponente",
+        "eltern_id": "E47",
+        "absatz_ids": [
+          "P11"
+        ]
+      },
+      {
+        "id": "E49",
+        "name": "Bedienelemente",
+        "typ": "komponente",
+        "eltern_id": "E47",
+        "absatz_ids": [
+          "P11",
+          "P14",
+          "P28"
+        ]
+      },
+      {
+        "id": "E50",
+        "name": "Anzeigeelemente",
+        "typ": "komponente",
+        "eltern_id": "E47",
+        "absatz_ids": [
+          "P11",
+          "P28"
+        ]
+      },
+      {
+        "id": "E51",
+        "name": "Arbeitsausrüstung",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P12",
+          "P13",
+          "P25",
+          "P26"
+        ],
+        "kategorie": "aufbau_nutzlast"
+      },
+      {
+        "id": "E52",
+        "name": "Kran",
+        "typ": "subsystem",
+        "eltern_id": "E51",
+        "absatz_ids": [
+          "P12",
+          "P13",
+          "P27",
+          "P28"
+        ]
+      },
+      {
+        "id": "E53",
+        "name": "Kransäule",
+        "typ": "komponente",
+        "eltern_id": "E52",
+        "absatz_ids": [
+          "P13"
+        ]
+      },
+      {
+        "id": "E54",
+        "name": "Kranarm",
+        "typ": "komponente",
+        "eltern_id": "E52",
+        "absatz_ids": [
+          "P13"
+        ]
+      },
+      {
+        "id": "E55",
+        "name": "Rotator",
+        "typ": "komponente",
+        "eltern_id": "E52",
+        "absatz_ids": [
+          "P13",
+          "P14"
+        ]
+      },
+      {
+        "id": "E56",
+        "name": "Harvesteraggregat",
+        "typ": "subsystem",
+        "eltern_id": "E51",
+        "absatz_ids": [
+          "P12",
+          "P13",
+          "P26",
+          "P27",
+          "P28"
+        ]
+      },
+      {
+        "id": "E57",
+        "name": "Vorschubwalzen",
+        "typ": "komponente",
+        "eltern_id": "E56",
+        "absatz_ids": [
+          "P12"
+        ]
+      },
+      {
+        "id": "E58",
+        "name": "Entastungsmesser",
+        "typ": "komponente",
+        "eltern_id": "E56",
+        "absatz_ids": [
+          "P12"
+        ]
+      },
+      {
+        "id": "E59",
+        "name": "Sägeeinheit",
+        "typ": "komponente",
+        "eltern_id": "E56",
+        "absatz_ids": [
+          "P13"
+        ]
+      },
+      {
+        "id": "E60",
+        "name": "Messeinheit",
+        "typ": "komponente",
+        "eltern_id": "E56",
+        "absatz_ids": [
+          "P12",
+          "P16",
+          "P26",
+          "P27",
+          "P28"
+        ]
+      },
+      {
+        "id": "E61",
+        "name": "Ladeeinrichtung",
+        "typ": "subsystem",
+        "eltern_id": "E51",
+        "absatz_ids": [
+          "P4",
+          "P13",
+          "P28"
+        ]
+      },
+      {
+        "id": "E62",
+        "name": "Rungenkorb",
+        "typ": "komponente",
+        "eltern_id": "E61",
+        "absatz_ids": [
+          "P12"
+        ]
+      },
+      {
+        "id": "E63",
+        "name": "Klemmbank",
+        "typ": "komponente",
+        "eltern_id": "E61",
+        "absatz_ids": [
+          "P12"
+        ]
+      },
+      {
+        "id": "E64",
+        "name": "Holzgreifer",
+        "typ": "komponente",
+        "eltern_id": "E61",
+        "absatz_ids": [
+          "P12",
+          "P13",
+          "P28"
+        ]
+      },
+      {
+        "id": "E65",
+        "name": "Seilwinde",
+        "typ": "komponente",
+        "eltern_id": "E51",
+        "absatz_ids": [
+          "P12",
+          "P18",
+          "P27",
+          "P28"
+        ]
+      },
+      {
+        "id": "E66",
+        "name": "Polterschild",
+        "typ": "komponente",
+        "eltern_id": "E51",
+        "absatz_ids": [
+          "P12"
+        ]
+      },
+      {
+        "id": "E67",
+        "name": "Elektrik und Elektronik",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P14",
+          "P25"
+        ],
+        "kategorie": "elektrik_elektronik"
+      },
+      {
+        "id": "E68",
+        "name": "Niedervolt-Bordnetz",
+        "typ": "subsystem",
+        "eltern_id": "E67",
+        "absatz_ids": [
+          "P7",
+          "P14",
+          "P28"
+        ]
+      },
+      {
+        "id": "E69",
+        "name": "Leitungssatz",
+        "typ": "komponente",
+        "eltern_id": "E68",
+        "absatz_ids": [
+          "P14"
+        ]
+      },
+      {
+        "id": "E70",
+        "name": "Sicherungen",
+        "typ": "komponente",
+        "eltern_id": "E68",
+        "absatz_ids": [
+          "P14"
+        ]
+      },
+      {
+        "id": "E71",
+        "name": "Kommunikationsnetz",
+        "typ": "subsystem",
+        "eltern_id": "E67",
+        "absatz_ids": [
+          "P14"
+        ]
+      },
+      {
+        "id": "E72",
+        "name": "Fahrzeugbus",
+        "typ": "komponente",
+        "eltern_id": "E71",
+        "absatz_ids": [
+          "P14",
+          "P27",
+          "P28"
+        ]
+      },
+      {
+        "id": "E73",
+        "name": "Steuergeräte",
+        "typ": "komponente",
+        "eltern_id": "E71",
+        "absatz_ids": [
+          "P8",
+          "P14"
+        ]
+      },
+      {
+        "id": "E74",
+        "name": "Fahrzeugsteuerung und Information",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P15",
+          "P16",
+          "P25"
+        ],
+        "kategorie": "steuerung_information"
+      },
+      {
+        "id": "E75",
+        "name": "Bordcomputer",
+        "typ": "subsystem",
+        "eltern_id": "E74",
+        "absatz_ids": [
+          "P15",
+          "P16",
+          "P27"
+        ]
+      },
+      {
+        "id": "E76",
+        "name": "Aufarbeitungssteuerung",
+        "typ": "komponente",
+        "eltern_id": "E75",
+        "absatz_ids": [
+          "P13",
+          "P16",
+          "P27",
+          "P28"
+        ]
+      },
+      {
+        "id": "E77",
+        "name": "Fahrzeugmanagement",
+        "typ": "komponente",
+        "eltern_id": "E75",
+        "absatz_ids": [
+          "P16"
+        ]
+      },
+      {
+        "id": "E78",
+        "name": "Diagnose",
+        "typ": "komponente",
+        "eltern_id": "E75",
+        "absatz_ids": [
+          "P16",
+          "P28"
+        ]
+      },
+      {
+        "id": "E79",
+        "name": "Ortung und Kommunikation",
+        "typ": "subsystem",
+        "eltern_id": "E74",
+        "absatz_ids": [
+          "P16"
+        ]
+      },
+      {
+        "id": "E80",
+        "name": "Navigation",
+        "typ": "komponente",
+        "eltern_id": "E79",
+        "absatz_ids": [
+          "P16",
+          "P27",
+          "P28"
+        ]
+      },
+      {
+        "id": "E81",
+        "name": "Telematikeinheit",
+        "typ": "komponente",
+        "eltern_id": "E79",
+        "absatz_ids": [
+          "P16",
+          "P27",
+          "P28"
+        ]
+      },
+      {
+        "id": "E82",
+        "name": "Fahrerassistenz und Sicherheit",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P17",
+          "P18",
+          "P25"
+        ],
+        "kategorie": "assistenz_sicherheit"
+      },
+      {
+        "id": "E83",
+        "name": "Schutzaufbauten",
+        "typ": "subsystem",
+        "eltern_id": "E82",
+        "absatz_ids": [
+          "P18",
+          "P28"
+        ]
+      },
+      {
+        "id": "E84",
+        "name": "Überschlagschutz",
+        "typ": "komponente",
+        "eltern_id": "E83",
+        "absatz_ids": [
+          "P18"
+        ]
+      },
+      {
+        "id": "E85",
+        "name": "Schutzverglasung",
+        "typ": "komponente",
+        "eltern_id": "E83",
+        "absatz_ids": [
+          "P18"
+        ]
+      },
+      {
+        "id": "E86",
+        "name": "Überwachung und Abschaltung",
+        "typ": "subsystem",
+        "eltern_id": "E82",
+        "absatz_ids": [
+          "P18"
+        ]
+      },
+      {
+        "id": "E87",
+        "name": "Standsicherheitsüberwachung",
+        "typ": "komponente",
+        "eltern_id": "E86",
+        "absatz_ids": [
+          "P18",
+          "P28"
+        ]
+      },
+      {
+        "id": "E88",
+        "name": "Not-Halt-Einrichtung",
+        "typ": "komponente",
+        "eltern_id": "E86",
+        "absatz_ids": [
+          "P18"
+        ]
+      },
+      {
+        "id": "E89",
+        "name": "Feuerlöscheinrichtung",
+        "typ": "komponente",
+        "eltern_id": "E86",
+        "absatz_ids": [
+          "P18"
+        ]
+      },
+      {
+        "id": "E90",
+        "name": "Beleuchtung und Sicht",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P19",
+          "P20",
+          "P25"
+        ],
+        "kategorie": "beleuchtung_sicht"
+      },
+      {
+        "id": "E91",
+        "name": "Beleuchtung",
+        "typ": "subsystem",
+        "eltern_id": "E90",
+        "absatz_ids": [
+          "P20"
+        ]
+      },
+      {
+        "id": "E92",
+        "name": "Arbeitsscheinwerfer",
+        "typ": "komponente",
+        "eltern_id": "E91",
+        "absatz_ids": [
+          "P19",
+          "P20",
+          "P28"
+        ]
+      },
+      {
+        "id": "E93",
+        "name": "Scheinwerfer",
+        "typ": "komponente",
+        "eltern_id": "E91",
+        "absatz_ids": [
+          "P19",
+          "P20"
+        ]
+      },
+      {
+        "id": "E94",
+        "name": "Leuchten",
+        "typ": "komponente",
+        "eltern_id": "E91",
+        "absatz_ids": [
+          "P20",
+          "P28"
+        ]
+      },
+      {
+        "id": "E95",
+        "name": "Sichteinrichtungen",
+        "typ": "subsystem",
+        "eltern_id": "E90",
+        "absatz_ids": [
+          "P20",
+          "P28"
+        ]
+      },
+      {
+        "id": "E96",
+        "name": "Scheibenwischer",
+        "typ": "komponente",
+        "eltern_id": "E95",
+        "absatz_ids": [
+          "P20"
+        ]
+      },
+      {
+        "id": "E97",
+        "name": "Kamera-Monitor-System",
+        "typ": "komponente",
+        "eltern_id": "E95",
+        "absatz_ids": [
+          "P20"
+        ]
+      },
+      {
+        "id": "E98",
+        "name": "Thermomanagement",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P21",
+          "P22",
+          "P25"
+        ],
+        "kategorie": "thermomanagement"
+      },
+      {
+        "id": "E99",
+        "name": "Kühlkreislauf",
+        "typ": "subsystem",
+        "eltern_id": "E98",
+        "absatz_ids": [
+          "P22",
+          "P28"
+        ]
+      },
+      {
+        "id": "E100",
+        "name": "Kühler",
+        "typ": "komponente",
+        "eltern_id": "E99",
+        "absatz_ids": [
+          "P22",
+          "P27"
+        ]
+      },
+      {
+        "id": "E101",
+        "name": "Hydraulikölkühler",
+        "typ": "komponente",
+        "eltern_id": "E99",
+        "absatz_ids": [
+          "P22",
+          "P27"
+        ]
+      },
+      {
+        "id": "E102",
+        "name": "Kühlerlüfter",
+        "typ": "komponente",
+        "eltern_id": "E99",
+        "absatz_ids": [
+          "P22"
+        ]
+      },
+      {
+        "id": "E106",
+        "name": "Batterietemperierung",
+        "typ": "komponente",
+        "eltern_id": "E99",
+        "absatz_ids": [
+          "P22"
+        ]
+      },
+      {
+        "id": "E103",
+        "name": "Klimatisierung",
+        "typ": "subsystem",
+        "eltern_id": "E98",
+        "absatz_ids": [
+          "P14",
+          "P22",
+          "P28"
+        ]
+      },
+      {
+        "id": "E104",
+        "name": "Heiz- und Klimaanlage",
+        "typ": "komponente",
+        "eltern_id": "E103",
+        "absatz_ids": [
+          "P21",
+          "P22"
+        ]
+      },
+      {
+        "id": "E105",
+        "name": "Standheizung",
+        "typ": "komponente",
+        "eltern_id": "E103",
+        "absatz_ids": [
+          "P22"
+        ]
+      },
+      {
+        "id": "E107",
+        "name": "Neben- und Versorgungssysteme",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P23",
+          "P24",
+          "P25"
+        ],
+        "kategorie": "nebensysteme"
+      },
+      {
+        "id": "E108",
+        "name": "Arbeitshydraulik",
+        "typ": "subsystem",
+        "eltern_id": "E107",
+        "absatz_ids": [
+          "P24",
+          "P28"
+        ]
+      },
+      {
+        "id": "E109",
+        "name": "Arbeitshydraulikpumpe",
+        "typ": "komponente",
+        "eltern_id": "E108",
+        "absatz_ids": [
+          "P6",
+          "P24",
+          "P27"
+        ]
+      },
+      {
+        "id": "E110",
+        "name": "Hydrauliktank",
+        "typ": "komponente",
+        "eltern_id": "E108",
+        "absatz_ids": [
+          "P24"
+        ]
+      },
+      {
+        "id": "E111",
+        "name": "Steuerventilblock",
+        "typ": "komponente",
+        "eltern_id": "E108",
+        "absatz_ids": [
+          "P13",
+          "P14",
+          "P24",
+          "P26",
+          "P27"
+        ]
+      },
+      {
+        "id": "E112",
+        "name": "Absperrventil",
+        "typ": "komponente",
+        "eltern_id": "E108",
+        "absatz_ids": [
+          "P23",
+          "P24"
+        ]
+      },
+      {
+        "id": "E113",
+        "name": "Unterdruckpumpe",
+        "typ": "komponente",
+        "eltern_id": "E108",
+        "absatz_ids": [
+          "P24",
+          "P28"
+        ]
+      },
+      {
+        "id": "E114",
+        "name": "Nebenaggregatetrieb",
+        "typ": "komponente",
+        "eltern_id": "E107",
+        "absatz_ids": [
+          "P6",
+          "P24",
+          "P26",
+          "P27",
+          "P28"
+        ]
+      },
+      {
+        "id": "E115",
+        "name": "Zentralschmieranlage",
+        "typ": "komponente",
+        "eltern_id": "E107",
+        "absatz_ids": [
+          "P24"
+        ]
+      }
+    ],
+    "funktionen": [
+      {
+        "id": "F1",
+        "name": "Fahrzeuglasten tragen",
+        "ausgefuehrt_von": [
+          "E3",
+          "E7"
+        ],
+        "absatz_ids": [
+          "P4",
+          "P28"
+        ]
+      },
+      {
+        "id": "F2",
+        "name": "Energie speichern",
+        "ausgefuehrt_von": [
+          "E27",
+          "E30",
+          "E32"
+        ],
+        "absatz_ids": [
+          "P7",
+          "P28"
+        ]
+      },
+      {
+        "id": "F3",
+        "name": "Treibstoff fördern",
+        "ausgefuehrt_von": [
+          "E26"
+        ],
+        "absatz_ids": [
+          "P7",
+          "P28"
+        ]
+      },
+      {
+        "id": "F4",
+        "name": "Elektrische Energie verteilen",
+        "ausgefuehrt_von": [
+          "E68"
+        ],
+        "absatz_ids": [
+          "P14",
+          "P28"
+        ]
+      },
+      {
+        "id": "F5",
+        "name": "Antriebsleistung erzeugen",
+        "ausgefuehrt_von": [
+          "E15",
+          "E17"
+        ],
+        "absatz_ids": [
+          "P6",
+          "P28"
+        ]
+      },
+      {
+        "id": "F6",
+        "name": "Drehmoment übertragen",
+        "ausgefuehrt_von": [
+          "E18",
+          "E21"
+        ],
+        "absatz_ids": [
+          "P6",
+          "P28"
+        ]
+      },
+      {
+        "id": "F7",
+        "name": "Fahrzeug fortbewegen",
+        "ausgefuehrt_von": [
+          "E8",
+          "E9",
+          "E12"
+        ],
+        "absatz_ids": [
+          "P4",
+          "P28"
+        ]
+      },
+      {
+        "id": "F8",
+        "name": "Fahrzeug lenken",
+        "ausgefuehrt_von": [
+          "E35"
+        ],
+        "absatz_ids": [
+          "P8",
+          "P28"
+        ]
+      },
+      {
+        "id": "F9",
+        "name": "Fahrzeug verzögern",
+        "ausgefuehrt_von": [
+          "E40",
+          "E18"
+        ],
+        "absatz_ids": [
+          "P9",
+          "P28"
+        ]
+      },
+      {
+        "id": "F10",
+        "name": "Fahrzeug festhalten",
+        "ausgefuehrt_von": [
+          "E41",
+          "E42"
+        ],
+        "absatz_ids": [
+          "P9",
+          "P28"
+        ]
+      },
+      {
+        "id": "F11",
+        "name": "Bremsenergie zurückgewinnen",
+        "ausgefuehrt_von": [
+          "E17"
+        ],
+        "absatz_ids": [
+          "P6",
+          "P28"
+        ]
+      },
+      {
+        "id": "F12",
+        "name": "Hydraulische Leistung bereitstellen",
+        "ausgefuehrt_von": [
+          "E108"
+        ],
+        "absatz_ids": [
+          "P24",
+          "P28"
+        ]
+      },
+      {
+        "id": "F13",
+        "name": "Arbeitsgeräte versorgen",
+        "ausgefuehrt_von": [
+          "E108",
+          "E114"
+        ],
+        "absatz_ids": [
+          "P24",
+          "P28"
+        ]
+      },
+      {
+        "id": "F14",
+        "name": "Unterdruck bereitstellen",
+        "ausgefuehrt_von": [
+          "E113"
+        ],
+        "absatz_ids": [
+          "P24",
+          "P28"
+        ]
+      },
+      {
+        "id": "F15",
+        "name": "Objekte handhaben",
+        "ausgefuehrt_von": [
+          "E52",
+          "E64"
+        ],
+        "absatz_ids": [
+          "P13",
+          "P28"
+        ]
+      },
+      {
+        "id": "F16",
+        "name": "Bäume fällen und aufarbeiten",
+        "ausgefuehrt_von": [
+          "E56"
+        ],
+        "absatz_ids": [
+          "P12",
+          "P28"
+        ]
+      },
+      {
+        "id": "F17",
+        "name": "Ladung aufnehmen",
+        "ausgefuehrt_von": [
+          "E61"
+        ],
+        "absatz_ids": [
+          "P12",
+          "P28"
+        ]
+      },
+      {
+        "id": "F18",
+        "name": "Holz beiseilen",
+        "ausgefuehrt_von": [
+          "E65"
+        ],
+        "absatz_ids": [
+          "P28"
+        ]
+      },
+      {
+        "id": "F19",
+        "name": "Holzmengen erfassen",
+        "ausgefuehrt_von": [
+          "E60",
+          "E76"
+        ],
+        "absatz_ids": [
+          "P15",
+          "P16",
+          "P28"
+        ]
+      },
+      {
+        "id": "F20",
+        "name": "Fahrereingaben erfassen",
+        "ausgefuehrt_von": [
+          "E49"
+        ],
+        "absatz_ids": [
+          "P11",
+          "P28"
+        ]
+      },
+      {
+        "id": "F21",
+        "name": "Fahrerinformationen anzeigen",
+        "ausgefuehrt_von": [
+          "E50"
+        ],
+        "absatz_ids": [
+          "P11",
+          "P28"
+        ]
+      },
+      {
+        "id": "F22",
+        "name": "Daten übertragen",
+        "ausgefuehrt_von": [
+          "E72",
+          "E81"
+        ],
+        "absatz_ids": [
+          "P14",
+          "P16",
+          "P28"
+        ]
+      },
+      {
+        "id": "F23",
+        "name": "Fahrzeugzustand überwachen",
+        "ausgefuehrt_von": [
+          "E78",
+          "E87"
+        ],
+        "absatz_ids": [
+          "P16",
+          "P18",
+          "P28"
+        ]
+      },
+      {
+        "id": "F24",
+        "name": "Fahrzeugposition bestimmen",
+        "ausgefuehrt_von": [
+          "E80"
+        ],
+        "absatz_ids": [
+          "P16",
+          "P28"
+        ]
+      },
+      {
+        "id": "F25",
+        "name": "Insassen schützen",
+        "ausgefuehrt_von": [
+          "E83"
+        ],
+        "absatz_ids": [
+          "P18",
+          "P28"
+        ]
+      },
+      {
+        "id": "F26",
+        "name": "Fahrzeugumgebung ausleuchten",
+        "ausgefuehrt_von": [
+          "E92"
+        ],
+        "absatz_ids": [
+          "P19",
+          "P20",
+          "P28"
+        ]
+      },
+      {
+        "id": "F27",
+        "name": "Lichtsignale abgeben",
+        "ausgefuehrt_von": [
+          "E94"
+        ],
+        "absatz_ids": [
+          "P20",
+          "P28"
+        ]
+      },
+      {
+        "id": "F28",
+        "name": "Fahrersicht sicherstellen",
+        "ausgefuehrt_von": [
+          "E95"
+        ],
+        "absatz_ids": [
+          "P20",
+          "P28"
+        ]
+      },
+      {
+        "id": "F29",
+        "name": "Betriebstemperatur regeln",
+        "ausgefuehrt_von": [
+          "E99"
+        ],
+        "absatz_ids": [
+          "P22",
+          "P28"
+        ]
+      },
+      {
+        "id": "F30",
+        "name": "Innenraum klimatisieren",
+        "ausgefuehrt_von": [
+          "E103"
+        ],
+        "absatz_ids": [
+          "P22",
+          "P28"
+        ]
+      }
+    ],
+    "fluesse": [
+      {
+        "id": "S1",
+        "von": "E27",
+        "nach": "E15",
+        "art": "stoff",
+        "medium": "Dieselkraftstoff",
+        "absatz_ids": [
+          "P7",
+          "P27"
+        ],
+        "schnittstelle": "Kraftstoffvorlauf zum Motor"
+      },
+      {
+        "id": "S2",
+        "von": "E15",
+        "nach": "E114",
+        "art": "mechanisch",
+        "medium": "Drehmoment",
+        "absatz_ids": [
+          "P6",
+          "P27"
+        ],
+        "schnittstelle": "Motorabtrieb zum Nebenaggregatetrieb"
+      },
+      {
+        "id": "S3",
+        "von": "E114",
+        "nach": "E19",
+        "art": "mechanisch",
+        "medium": "Drehmoment",
+        "absatz_ids": [
+          "P6",
+          "P27"
+        ],
+        "schnittstelle": "Pumpenantrieb Fahrpumpe"
+      },
+      {
+        "id": "S4",
+        "von": "E19",
+        "nach": "E20",
+        "art": "hydraulisch",
+        "medium": "Hydrauliköl",
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "S5",
+        "von": "E20",
+        "nach": "E22",
+        "art": "mechanisch",
+        "medium": "Drehmoment",
+        "absatz_ids": [
+          "P6",
+          "P27"
+        ]
+      },
+      {
+        "id": "S6",
+        "von": "E22",
+        "nach": "E23",
+        "art": "mechanisch",
+        "medium": "Drehmoment",
+        "absatz_ids": [
+          "P6",
+          "P27"
+        ]
+      },
+      {
+        "id": "S7",
+        "von": "E23",
+        "nach": "E24",
+        "art": "mechanisch",
+        "medium": "Drehmoment",
+        "absatz_ids": [
+          "P6",
+          "P27"
+        ]
+      },
+      {
+        "id": "S8",
+        "von": "E24",
+        "nach": "E8",
+        "art": "mechanisch",
+        "medium": "Drehmoment",
+        "absatz_ids": [
+          "P6",
+          "P27"
+        ],
+        "schnittstelle": "Achsantrieb Bogie-Achse"
+      },
+      {
+        "id": "S9",
+        "von": "E114",
+        "nach": "E109",
+        "art": "mechanisch",
+        "medium": "Drehmoment",
+        "absatz_ids": [
+          "P24",
+          "P27"
+        ]
+      },
+      {
+        "id": "S10",
+        "von": "E109",
+        "nach": "E111",
+        "art": "hydraulisch",
+        "medium": "Hydrauliköl",
+        "absatz_ids": [
+          "P24"
+        ]
+      },
+      {
+        "id": "S11",
+        "von": "E111",
+        "nach": "E52",
+        "art": "hydraulisch",
+        "medium": "Hydrauliköl",
+        "absatz_ids": [
+          "P13",
+          "P27"
+        ],
+        "schnittstelle": "Hydraulikanschluss Kran"
+      },
+      {
+        "id": "S12",
+        "von": "E111",
+        "nach": "E56",
+        "art": "hydraulisch",
+        "medium": "Hydrauliköl",
+        "absatz_ids": [
+          "P13",
+          "P27"
+        ],
+        "schnittstelle": "Hydraulikanschluss Harvesteraggregat über Rotator"
+      },
+      {
+        "id": "S13",
+        "von": "E111",
+        "nach": "E65",
+        "art": "hydraulisch",
+        "medium": "Hydrauliköl",
+        "absatz_ids": [
+          "P24",
+          "P27"
+        ],
+        "schnittstelle": "Hydraulikanschluss Seilwinde"
+      },
+      {
+        "id": "S14",
+        "von": "E109",
+        "nach": "E37",
+        "art": "hydraulisch",
+        "medium": "Hydrauliköl",
+        "absatz_ids": [
+          "P8",
+          "P27"
+        ],
+        "schnittstelle": "Lenkhydraulik"
+      },
+      {
+        "id": "S15",
+        "von": "E109",
+        "nach": "E40",
+        "art": "hydraulisch",
+        "medium": "Hydrauliköl",
+        "absatz_ids": [
+          "P9",
+          "P27"
+        ],
+        "schnittstelle": "Bremshydraulik"
+      },
+      {
+        "id": "S16",
+        "von": "E60",
+        "nach": "E76",
+        "art": "information",
+        "medium": "Längen- und Durchmessermesswerte",
+        "absatz_ids": [
+          "P16",
+          "P27"
+        ],
+        "schnittstelle": "Messdatenschnittstelle Harvesteraggregat"
+      },
+      {
+        "id": "S17",
+        "von": "E49",
+        "nach": "E72",
+        "art": "information",
+        "medium": "Bedienbefehle",
+        "absatz_ids": [
+          "P14",
+          "P27"
+        ],
+        "schnittstelle": "Bedienschnittstelle Fahrerhaus"
+      },
+      {
+        "id": "S18",
+        "von": "E72",
+        "nach": "E111",
+        "art": "information",
+        "medium": "Ventilansteuerung",
+        "absatz_ids": [
+          "P14",
+          "P27"
+        ],
+        "schnittstelle": "Elektrische Ventilvorsteuerung"
+      },
+      {
+        "id": "S19",
+        "von": "E75",
+        "nach": "E50",
+        "art": "information",
+        "medium": "Maschinen- und Produktionsdaten",
+        "absatz_ids": [
+          "P11",
+          "P16"
+        ],
+        "schnittstelle": "Anzeigeschnittstelle Bordcomputer"
+      },
+      {
+        "id": "S20",
+        "von": "E29",
+        "nach": "E69",
+        "art": "elektrisch",
+        "medium": "Niedervolt-Gleichstrom",
+        "absatz_ids": [
+          "P7",
+          "P14"
+        ],
+        "schnittstelle": "Bordnetzeinspeisung"
+      },
+      {
+        "id": "S21",
+        "von": "E69",
+        "nach": "E92",
+        "art": "elektrisch",
+        "medium": "Niedervolt-Gleichstrom",
+        "absatz_ids": [
+          "P14",
+          "P20"
+        ],
+        "schnittstelle": "Lichtstromkreis"
+      },
+      {
+        "id": "S22",
+        "von": "E15",
+        "nach": "E100",
+        "art": "thermisch",
+        "medium": "Kühlmittel",
+        "absatz_ids": [
+          "P22",
+          "P27"
+        ],
+        "schnittstelle": "Motorkühlmittelkreis"
+      },
+      {
+        "id": "S23",
+        "von": "E110",
+        "nach": "E101",
+        "art": "thermisch",
+        "medium": "Hydrauliköl",
+        "absatz_ids": [
+          "P22",
+          "P27"
+        ],
+        "schnittstelle": "Ölkühlkreis"
+      },
+      {
+        "id": "S24",
+        "von": "E32",
+        "nach": "E34",
+        "art": "elektrisch",
+        "medium": "Hochvolt-Gleichstrom",
+        "absatz_ids": [
+          "P6",
+          "P7",
+          "P27"
+        ],
+        "schnittstelle": "Hochvolt-Anschluss Antrieb"
+      },
+      {
+        "id": "S25",
+        "von": "E34",
+        "nach": "E17",
+        "art": "elektrisch",
+        "medium": "Drehstrom",
+        "absatz_ids": [
+          "P6",
+          "P27"
+        ]
+      },
+      {
+        "id": "S26",
+        "von": "E17",
+        "nach": "E114",
+        "art": "mechanisch",
+        "medium": "Drehmoment",
+        "absatz_ids": [
+          "P6"
+        ],
+        "schnittstelle": "Hybridanbindung am Nebenaggregatetrieb"
+      },
+      {
+        "id": "S27",
+        "von": "E87",
+        "nach": "E111",
+        "art": "information",
+        "medium": "Sperrsignal Kranbewegung",
+        "absatz_ids": [
+          "P18",
+          "P27"
+        ],
+        "schnittstelle": "Kranabschaltung"
+      },
+      {
+        "id": "S28",
+        "von": "E53",
+        "nach": "E4",
+        "art": "mechanisch",
+        "medium": "Kranlasten",
+        "absatz_ids": [
+          "P13",
+          "P26"
+        ],
+        "schnittstelle": "Krankonsole am Rahmen"
+      },
+      {
+        "id": "S29",
+        "von": "E61",
+        "nach": "E4",
+        "art": "mechanisch",
+        "medium": "Holzlast",
+        "absatz_ids": [
+          "P4",
+          "P27"
+        ],
+        "schnittstelle": "Aufnahmepunkte der Ladeeinrichtung"
+      },
+      {
+        "id": "S30",
+        "von": "E80",
+        "nach": "E75",
+        "art": "information",
+        "medium": "Positionsdaten",
+        "absatz_ids": [
+          "P16",
+          "P27"
+        ],
+        "schnittstelle": "Positionsdaten"
+      },
+      {
+        "id": "S31",
+        "von": "E75",
+        "nach": "E81",
+        "art": "information",
+        "medium": "Produktionsdaten",
+        "absatz_ids": [
+          "P16",
+          "P27"
+        ],
+        "schnittstelle": "Produktionsdatenschnittstelle"
+      },
+      {
+        "id": "S32",
+        "von": "E104",
+        "nach": "E45",
+        "art": "thermisch",
+        "medium": "Heiz- und Kühlluft",
+        "absatz_ids": [
+          "P22",
+          "P27"
+        ],
+        "schnittstelle": "Kabinenluftführung"
+      }
+    ],
+    "entfallene_kategorien": [],
+    "varianten": [
+      {
+        "id": "V1",
+        "element_id": "E13",
+        "bezeichnung": "Antriebsart",
+        "alternativen": [
+          "Diesel-Verbrennungsmotor mit hydrostatischem Fahrantrieb",
+          "Diesel-elektrischer Hybrid mit Traktionsmaschine und Traktionsbatterie"
+        ],
+        "auswahlkriterien": [
+          "Lastprofil von Kran und Harvesteraggregat mit Lastspitzen",
+          "Kraftstoffverbrauch und Emissionsvorgaben des Auftraggebers",
+          "Bauraum und Masse der Energiespeicher",
+          "Wartbarkeit und Reifegrad im Waldeinsatz"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E31",
+            "beschreibung": "Beim Hybrid kommt das Hochvolt-Energiesystem mit Traktionsbatterie und Gleichspannungswandler hinzu."
+          },
+          {
+            "element_id": "E114",
+            "beschreibung": "Der Nebenaggregatetrieb erhält eine Anbindung der Traktionsmaschine."
+          },
+          {
+            "element_id": "E99",
+            "beschreibung": "Der Kühlkreislauf wird um die Batterietemperierung erweitert."
+          },
+          {
+            "element_id": "E77",
+            "beschreibung": "Das Fahrzeugmanagement übernimmt das Energiemanagement zwischen Motor und Traktionsbatterie."
+          },
+          {
+            "element_id": "E68",
+            "beschreibung": "Das Niedervolt-Bordnetz kann über den Gleichspannungswandler gestützt werden."
+          }
+        ],
+        "absatz_ids": [
+          "P5",
+          "P6",
+          "P7"
+        ]
+      },
+      {
+        "id": "V2",
+        "element_id": "E7",
+        "bezeichnung": "Fahrwerksart",
+        "alternativen": [
+          "Radfahrwerk mit Bogie-Achsen und Knicklenkung",
+          "Raupenfahrwerk mit drehbarem Oberwagen"
+        ],
+        "auswahlkriterien": [
+          "Hangneigung des Einsatzgebiets",
+          "Tragfähigkeit des Bodens, etwa auf Nassflächen",
+          "Baumdimension und erforderliche Kranreichweite",
+          "Häufigkeit und Entfernung des Umsetzens",
+          "Gefahr von Wurzel- und Wegeschäden"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E35",
+            "beschreibung": "Beim Raupenfahrwerk entfällt die Knicklenkung; gelenkt wird über die Kettengeschwindigkeiten."
+          },
+          {
+            "element_id": "E18",
+            "beschreibung": "Der Fahrantrieb treibt Kettenräder statt Bogie-Achsen."
+          },
+          {
+            "element_id": "E52",
+            "beschreibung": "Der Kran sitzt auf dem drehbaren Oberwagen mit Kontergewicht und erreicht größere Reichweiten."
+          },
+          {
+            "element_id": "E3",
+            "beschreibung": "Knickgelenk entfällt; die Tragstruktur braucht eine Drehverbindung zum Oberwagen."
+          },
+          {
+            "element_id": "E43",
+            "beschreibung": "Die Kabine dreht mit dem Oberwagen."
+          }
+        ],
+        "absatz_ids": [
+          "P3",
+          "P4",
+          "P6",
+          "P8",
+          "P12"
+        ]
+      },
+      {
+        "id": "V3",
+        "element_id": "E7",
+        "bezeichnung": "Achsanordnung",
+        "alternativen": [
+          "Einzelachsen vorne und hinten",
+          "Bogie-Achse vorne und Einzelachse hinten",
+          "Bogie-Achsen vorne und hinten",
+          "zusätzliche Bogie-Achse am Hinterwagen"
+        ],
+        "auswahlkriterien": [
+          "Bodenschonung durch Lastverteilung",
+          "Zuladung und Maschinenmasse",
+          "Fahrkomfort im Gelände",
+          "Wendigkeit und Kosten"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E21",
+            "beschreibung": "Zahl der Gelenkwellen und Achsantriebe ändert sich."
+          },
+          {
+            "element_id": "E39",
+            "beschreibung": "Zahl und Anordnung der Radbremsen ändern sich."
+          },
+          {
+            "element_id": "E4",
+            "beschreibung": "Rahmenlänge und Achsaufnahmen ändern sich."
+          },
+          {
+            "element_id": "E10",
+            "beschreibung": "Bogiebänder sind nur auf Bogie-Achsen möglich."
+          }
+        ],
+        "absatz_ids": [
+          "P3",
+          "P4"
+        ]
+      },
+      {
+        "id": "V4",
+        "element_id": "E51",
+        "bezeichnung": "Maschinentyp und Arbeitsausrüstung",
+        "alternativen": [
+          "Harvester mit Harvesteraggregat",
+          "Forwarder mit Rungenkorb und Holzgreifer",
+          "Skidder oder Forwarder mit Klemmbank",
+          "Seilschlepper mit Seilwinde"
+        ],
+        "auswahlkriterien": [
+          "Holzernteverfahren mit Kurzholz oder Langholz",
+          "Baumdimension und Bestandsart",
+          "Gassenabstand und Kranreichweite",
+          "Auslastung und Umrüsthäufigkeit"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E76",
+            "beschreibung": "Die Aufarbeitungssteuerung ist nur beim Harvester voll ausgeprägt."
+          },
+          {
+            "element_id": "E4",
+            "beschreibung": "Rahmenlänge und Kranposition hängen vom Maschinentyp ab."
+          },
+          {
+            "element_id": "E108",
+            "beschreibung": "Förderstrom und Ventilfunktionen der Arbeitshydraulik richten sich nach den Werkzeugen."
+          },
+          {
+            "element_id": "E47",
+            "beschreibung": "Ausrichtung von Sitz und Bedienplatz folgt dem Kranarbeitsbereich."
+          },
+          {
+            "element_id": "E87",
+            "beschreibung": "Die Standsicherheitsüberwachung berücksichtigt Kranlast und Zuladung."
+          }
+        ],
+        "absatz_ids": [
+          "P1",
+          "P12",
+          "P13"
+        ]
+      },
+      {
+        "id": "V5",
+        "element_id": "E43",
+        "bezeichnung": "Kabinenausführung",
+        "alternativen": [
+          "feste Kabine",
+          "neigbare Kabine",
+          "Nivellierung der gesamten Maschine"
+        ],
+        "auswahlkriterien": [
+          "Hangneigung und Arbeitszeit am Hang",
+          "Ergonomie und Vibrationsbelastung",
+          "Komplexität und Kosten"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E46",
+            "beschreibung": "Die Kabinenlagerung erhält Neigezylinder und Neigungssensoren."
+          },
+          {
+            "element_id": "E73",
+            "beschreibung": "Ein Steuergerät für die Neigungsregelung kommt hinzu."
+          },
+          {
+            "element_id": "E95",
+            "beschreibung": "Kameras und Scheinwerfer werden mit der Kabine geführt."
+          },
+          {
+            "element_id": "E3",
+            "beschreibung": "Bei Nivellierung der Maschine braucht die Tragstruktur verstellbare Anbindungen."
+          }
+        ],
+        "absatz_ids": [
+          "P10",
+          "P11",
+          "P20"
+        ]
+      }
+    ],
+    "klaerungsfragen": [
+      {
+        "id": "K1",
+        "frage": "Soll die Forstmaschine einen Diesel-Verbrennungsmotor mit hydrostatischem Fahrantrieb oder einen diesel-elektrischen Hybridantrieb erhalten?",
+        "element_ids": [
+          "E13",
+          "E25"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Hochvolt-Energiesystem, Nebenaggregatetrieb, Batterietemperierung und Energiemanagement ab.",
+        "variante_ids": [
+          "V1"
+        ]
+      },
+      {
+        "id": "K2",
+        "frage": "Soll die Maschine auf Rädern mit Knicklenkung oder auf einem Raupenfahrwerk mit drehbarem Oberwagen fahren?",
+        "element_ids": [
+          "E7",
+          "E35"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Lenkprinzip, Fahrantrieb, Kranaufstellung und Umsetzlogistik ab.",
+        "variante_ids": [
+          "V2"
+        ]
+      },
+      {
+        "id": "K3",
+        "frage": "Welche Achsanordnung ist für die Böden und die geforderte Zuladung im Einsatzgebiet vorgesehen?",
+        "element_ids": [
+          "E2",
+          "E7"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Kontaktflächendruck, Zahl der Antriebs- und Bremsstellen und die Rahmenlänge ab.",
+        "variante_ids": [
+          "V3"
+        ]
+      },
+      {
+        "id": "K4",
+        "frage": "Wird ein Harvester, ein Forwarder, ein Skidder oder eine umrüstbare Kombimaschine benötigt?",
+        "element_ids": [
+          "E51",
+          "E1"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Arbeitsausrüstung, Rahmenauslegung, Hydraulikleistung und Funktionsumfang des Bordcomputers ab.",
+        "variante_ids": [
+          "V4"
+        ]
+      },
+      {
+        "id": "K5",
+        "frage": "Muss die Kabine am Hang neigbar sein, oder genügt eine feste Kabine?",
+        "element_ids": [
+          "E43",
+          "E44"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Kabinenlagerung, Steuergeräte und die Führung von Kameras und Scheinwerfern ab.",
+        "variante_ids": [
+          "V5"
+        ]
+      },
+      {
+        "id": "K6",
+        "frage": "Wie lange soll die Maschine ohne Betankung arbeiten, und wie wird sie im Wald betankt?",
+        "element_ids": [
+          "E25",
+          "E27"
+        ],
+        "anlass": "betrieb",
+        "relevanz": "Davon hängen Tankgröße, Einbauort und Zugänglichkeit des Tankstutzens ab."
+      },
+      {
+        "id": "K7",
+        "frage": "Soll die Lenkeingabe über ein Lenkrad mit hydraulischem Lenkventil oder elektrisch über einen Lenkgeber im Joystick erfolgen?",
+        "element_ids": [
+          "E35",
+          "E36",
+          "E37"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Lenkventilbauart, Steuergeräte und die Rückfallebene bei elektrischem Ausfall ab."
+      },
+      {
+        "id": "K8",
+        "frage": "Soll die Arbeitsbremse beim Umschalten in den Kranbetrieb selbsttätig einfallen?",
+        "element_ids": [
+          "E39",
+          "E42"
+        ],
+        "anlass": "betrieb",
+        "relevanz": "Davon hängen Bremsansteuerung, Verriegelung mit dem Fahrantrieb und die Bedienlogik ab."
+      },
+      {
+        "id": "K9",
+        "frage": "Sollen Werkzeuge oder Anbaugeräte anderer Hersteller an den Fahrzeugbus angeschlossen werden können?",
+        "element_ids": [
+          "E67",
+          "E72"
+        ],
+        "anlass": "schnittstelle",
+        "relevanz": "Davon hängen Busprotokoll, Steckverbinder am Rotator und die Steuergerätearchitektur ab."
+      },
+      {
+        "id": "K10",
+        "frage": "In welchem Datenformat und über welchen Übertragungsweg sollen Produktionsdaten an den Forstbetrieb gehen?",
+        "element_ids": [
+          "E74",
+          "E81",
+          "E75"
+        ],
+        "anlass": "schnittstelle",
+        "relevanz": "Davon hängen Telematikeinheit, Datenmodell der Aufarbeitungssteuerung und die Anbindung an die Betriebssoftware ab."
+      },
+      {
+        "id": "K11",
+        "frage": "Welche Schutzaufbauten gegen Überschlag, herabfallende und eindringende Gegenstände fordert der Auftraggeber für den Einsatz?",
+        "element_ids": [
+          "E82",
+          "E83"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Kabinenstruktur, Verglasung und Masse der Kabine ab."
+      },
+      {
+        "id": "K12",
+        "frage": "Soll die Maschine auf öffentlichen Straßen umsetzen, und welche Beleuchtung fordert dafür der Zielmarkt?",
+        "element_ids": [
+          "E90",
+          "E93",
+          "E94"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Scheinwerfer, Leuchten und deren Anbauorte ab."
+      },
+      {
+        "id": "K13",
+        "frage": "In welchem Bereich der Umgebungstemperatur muss die Kühlung Dauerbetrieb der Hydraulik zulassen?",
+        "element_ids": [
+          "E98",
+          "E101"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Größe von Kühler und Hydraulikölkühler sowie die Lüfterauslegung ab."
+      },
+      {
+        "id": "K14",
+        "frage": "Schreibt der Waldeigentümer oder ein Zertifizierungssystem eine biologisch abbaubare Hydraulikflüssigkeit vor?",
+        "element_ids": [
+          "E107",
+          "E108"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Dichtungswerkstoffe, Ölwechselintervalle und die Auslegung der Arbeitshydraulik ab."
+      },
+      {
+        "id": "K15",
+        "frage": "Welche Kranreichweite und welches Hubmoment sind beim geplanten Rückegassenabstand erforderlich?",
+        "element_ids": [
+          "E51",
+          "E52"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Kranauslegung, Standsicherheit und Hydraulikleistung ab.",
+        "variante_ids": [
+          "V4"
+        ]
+      }
+    ],
+    "anforderungsthemen": [
+      {
+        "id": "R1",
+        "element_ids": [
+          "E2",
+          "E7"
+        ],
+        "thema": "Bodenschonung und Geländegängigkeit",
+        "kenngroessen": [
+          "Kontaktflächendruck",
+          "Radlast",
+          "Bodenfreiheit",
+          "Steigfähigkeit"
+        ]
+      },
+      {
+        "id": "R2",
+        "element_ids": [
+          "E13"
+        ],
+        "thema": "Fahrleistung",
+        "kenngroessen": [
+          "Zugkraft",
+          "Fahrgeschwindigkeit im Gelände",
+          "Fahrgeschwindigkeit beim Umsetzen",
+          "Kraftstoffverbrauch je Festmeter"
+        ]
+      },
+      {
+        "id": "R3",
+        "element_ids": [
+          "E25"
+        ],
+        "thema": "Einsatzdauer",
+        "kenngroessen": [
+          "Kraftstoffvorrat",
+          "Betriebsstunden je Tankfüllung",
+          "Batteriekapazität"
+        ]
+      },
+      {
+        "id": "R4",
+        "element_ids": [
+          "E35"
+        ],
+        "thema": "Wendigkeit",
+        "kenngroessen": [
+          "Knickwinkel",
+          "Wendekreis",
+          "Lenkgeschwindigkeit"
+        ]
+      },
+      {
+        "id": "R5",
+        "element_ids": [
+          "E39"
+        ],
+        "thema": "Bremsen und Halten am Hang",
+        "kenngroessen": [
+          "Haltevermögen am Hang",
+          "Bremsweg",
+          "Feststellbremskraft"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "ISO 11850 / EN ISO 11850 (international; als Europäische Norm in EU und EFTA mit Konformitätsvermutung zur Maschinenrichtlinie 2006/42/EG; selbstfahrende Forstmaschinen)",
+            "quellen_id": "Q7",
+            "fundstelle": "Inhaltsverzeichnis, Abschnitt 4.8 Braking systems"
+          }
+        ]
+      },
+      {
+        "id": "R6",
+        "element_ids": [
+          "E43"
+        ],
+        "thema": "Ergonomie des Fahrerplatzes",
+        "kenngroessen": [
+          "Ganzkörpervibration",
+          "Schalldruckpegel am Fahrerohr",
+          "Sichtfeld",
+          "Zugangsmaße"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "ISO 11850 / EN ISO 11850 (international; als Europäische Norm in EU und EFTA mit Konformitätsvermutung zur Maschinenrichtlinie 2006/42/EG; selbstfahrende Forstmaschinen)",
+            "quellen_id": "Q7",
+            "fundstelle": "Inhaltsverzeichnis, Abschnitte 4.3 bis 4.6, 4.15 und 4.16"
+          }
+        ]
+      },
+      {
+        "id": "R7",
+        "element_ids": [
+          "E51"
+        ],
+        "thema": "Kran- und Aggregatleistung",
+        "kenngroessen": [
+          "Kranreichweite",
+          "Hubmoment",
+          "Schwenkmoment",
+          "maximaler Schnittdurchmesser",
+          "Zuladung"
+        ]
+      },
+      {
+        "id": "R8",
+        "element_ids": [
+          "E67"
+        ],
+        "thema": "Elektromagnetische Verträglichkeit und Robustheit",
+        "kenngroessen": [
+          "Störfestigkeit",
+          "Schutzart der Steckverbinder",
+          "Leitungsschutz"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "ISO 11850 / EN ISO 11850 (international; als Europäische Norm in EU und EFTA mit Konformitätsvermutung zur Maschinenrichtlinie 2006/42/EG; selbstfahrende Forstmaschinen)",
+            "quellen_id": "Q7",
+            "fundstelle": "Inhaltsverzeichnis, Abschnitt 4.13 Electromagnetic compatibility"
+          }
+        ]
+      },
+      {
+        "id": "R9",
+        "element_ids": [
+          "E74"
+        ],
+        "thema": "Messgenauigkeit und Datenaustausch",
+        "kenngroessen": [
+          "Messabweichung bei Länge und Durchmesser",
+          "Kalibrierintervall",
+          "unterstützte Datenformate"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "StanForD und StanForD2010 (international genutzter De-facto-Standard für Forstmaschinendaten ohne offiziellen Status; Harvester, Forwarder, Feller-Buncher, Skidder)",
+            "quellen_id": "Q9",
+            "fundstelle": "Abschnitte StanForD, StanForD2010 und Focus"
+          }
+        ]
+      },
+      {
+        "id": "R10",
+        "element_ids": [
+          "E82"
+        ],
+        "thema": "Bedienerschutz und Standsicherheit",
+        "kenngroessen": [
+          "Energieaufnahme der Schutzaufbauten",
+          "Kippsicherheit bei ausgefahrenem Kran",
+          "Stillsetzzeit",
+          "Löschmittelreichweite"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "ISO 11850 / EN ISO 11850 (international; als Europäische Norm in EU und EFTA mit Konformitätsvermutung zur Maschinenrichtlinie 2006/42/EG; selbstfahrende Forstmaschinen)",
+            "quellen_id": "Q7",
+            "fundstelle": "Abstract; Inhaltsverzeichnis, Abschnitte 4.3, 4.11, 4.14 und 4.19"
+          }
+        ]
+      },
+      {
+        "id": "R11",
+        "element_ids": [
+          "E90"
+        ],
+        "thema": "Arbeitsbeleuchtung und Straßenfahrt",
+        "kenngroessen": [
+          "Beleuchtungsstärke im Kranarbeitsbereich",
+          "Sichtfeld nach hinten",
+          "Ausstattung für Straßenfahrt"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "Verordnung (EU) Nr. 167/2013 (EU; Zugmaschinen der Klassen T und C, Anhänger und gezogene Geräte; regelt nach Erwägungsgrund 6 die Verkehrssicherheit selbstfahrender mobiler Maschinen nicht)",
+            "quellen_id": "Q8",
+            "fundstelle": "Erwägungsgrund 6; Artikel 2 Absatz 1"
+          },
+          {
+            "bezeichnung": "ISO 11850 / EN ISO 11850 (international; als Europäische Norm in EU und EFTA mit Konformitätsvermutung zur Maschinenrichtlinie 2006/42/EG; selbstfahrende Forstmaschinen)",
+            "quellen_id": "Q7",
+            "fundstelle": "Abstract (Bedarf an Arbeitsleuchten und Verkehrssicherheit ausgenommen); Inhaltsverzeichnis, Abschnitte 4.6 und 4.7"
+          }
+        ]
+      },
+      {
+        "id": "R12",
+        "element_ids": [
+          "E98"
+        ],
+        "thema": "Kühlleistung",
+        "kenngroessen": [
+          "Hydrauliköltemperatur",
+          "Kühlmitteltemperatur",
+          "Umgebungstemperaturbereich"
+        ]
+      },
+      {
+        "id": "R13",
+        "element_ids": [
+          "E107"
+        ],
+        "thema": "Hydraulikleistung und Umweltschutz",
+        "kenngroessen": [
+          "Förderstrom",
+          "Systemdruck",
+          "biologische Abbaubarkeit der Hydraulikflüssigkeit",
+          "Leckagemenge"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "ISO 11850 / EN ISO 11850 (international; als Europäische Norm in EU und EFTA mit Konformitätsvermutung zur Maschinenrichtlinie 2006/42/EG; selbstfahrende Forstmaschinen)",
+            "quellen_id": "Q7",
+            "fundstelle": "Inhaltsverzeichnis, Abschnitt 4.20 Hydraulic systems"
+          }
+        ]
+      }
+    ]
+  },
+  "offene_punkte": [
+    "Glossarvorschlag: Bäume fällen und aufarbeiten (Funktion des Harvesteraggregats: greifen, fällen, entasten, ablängen)",
+    "Glossarvorschlag: Holzmengen erfassen (Vermessung und Mengenerfassung durch Messeinheit und Aufarbeitungssteuerung)",
+    "Glossarvorschlag: Holz beiseilen (Heranziehen von Stämmen mit der Seilwinde)",
+    "Recherche: Volltext Verordnung (EU) Nr. 167/2013 und Maschinenverordnung (EU) 2023/1230 auf EUR-Lex zur Einordnung selbstfahrender Forstmaschinen (EUR-Lex in diesem Lauf nicht abrufbar)",
+    "Recherche: ISO 8082, ISO 8083 und ISO 8084 (Überschlag-, Fallschutz- und Bedienerschutzaufbauten für Forstmaschinen) sowie ISO 6814 Begriffe (iso.org in diesem Lauf nicht abrufbar)",
+    "Recherche: Fahrzeug-Zulassungsverordnung § 2 selbstfahrende Arbeitsmaschine für die Straßenfahrt in Deutschland (gesetze-im-internet.de in diesem Lauf nicht erreichbar)",
+    "Recherche: Bremsanlage und Arbeitsbremse von Forwardern und Harvestern (Suchbegriffe: Arbeitsbremse Forwarder, Lamellenbremse Bogie)",
+    "Recherche: Aufbau diesel-elektrischer Hybridforwarder (Suchbegriffe: hybrid forwarder, Skogforsk, LWF Hybridforwarder)",
+    "Recherche: Feuerlöschanlagen und Brandschutz an Forstmaschinen (Suchbegriffe: Feuerlöschanlage Harvester, SVLFG Forstmaschinen Brandschutz)",
+    "Recherche: Kranaufbau mit Rotator, Teleskoparm und Standsicherheitsüberwachung (KWF-Prüfberichte, Suchbegriff: KWF Prüfung Forstkran)"
+  ]
+}

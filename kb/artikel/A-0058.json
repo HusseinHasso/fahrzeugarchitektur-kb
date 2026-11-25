@@ -1,0 +1,2930 @@
+{
+  "schema_version": "2.3",
+  "artikel_id": "A-0058",
+  "artikeltyp": "blatt",
+  "titel": "Landwirtschaftsanhänger",
+  "betrachtungsumfang": "Generische Referenzarchitektur des landwirtschaftlichen Transportanhängers hinter Traktoren, in den Bauarten Starrdeichsel- und Drehschemelanhänger, mit den Aufbauvarianten Kippbrücke, Ladewagen und Güllefass sowie optionaler Triebachse über die Wegezapfwelle. Der Anhänger besitzt keinen eigenen Energiespeicher und keinen Energiewandler für Fahrantrieb oder Bordnetz; mechanische, hydraulische, pneumatische und elektrische Leistung stammt vom Traktor, der nur als Schnittstellenpartner erscheint. Ausdrücklich ausgeschlossen sind Anhänger mit eigener Antriebsenergiequelle, etwa batterieelektrisch angetriebene Achsen, ferner Sattelanhänger, selbstfahrende Ladewagen, in den Unterlenkern aufgesattelte Geräte und gezogene Arbeitsmaschinen ohne Ladefunktion wie Feldspritzen oder Ballenpressen. Güllefass und Ladewagen sind als Aufbauvarianten einbezogen, auch wenn sie im Einzelfall als gezogene auswechselbare Maschine genehmigt werden.",
+  "status": "in_arbeit",
+  "quellenzugriff": "ja",
+  "kindartikel_ids": [],
+  "quellen": [
+    {
+      "quellen_id": "Q1",
+      "titel": "Regulation (EU) No 167/2013 of the European Parliament and of the Council of 5 February 2013 on the approval and market surveillance of agricultural and forestry vehicles (Artikel 2, 3 und 4)",
+      "urheber": "Europäisches Parlament und Rat der Europäischen Union; veröffentlicht von legislation.gov.uk (The National Archives, im Vereinigten Königreich fortgeltende Fassung)",
+      "stand": "revidierte Fassung, Änderungen bis 23.11.2026 eingearbeitet",
+      "url": "https://www.legislation.gov.uk/eur/2013/167/contents",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q2",
+      "titel": "Commission Delegated Regulation (EU) 2015/68 of 15 October 2014 supplementing Regulation (EU) No 167/2013 with regard to vehicle braking requirements for the approval of agricultural and forestry vehicles, Annex I",
+      "urheber": "Europäische Kommission; veröffentlicht von legislation.gov.uk (The National Archives, im Vereinigten Königreich fortgeltende Fassung)",
+      "stand": "revidierte Fassung",
+      "url": "https://www.legislation.gov.uk/eur/2015/68/annex/I",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q3",
+      "titel": "Anhänger",
+      "urheber": "Wikipedia, Die freie Enzyklopädie (deutschsprachig)",
+      "stand": "oldid 272071786",
+      "url": "https://de.wikipedia.org/wiki/Anh%C3%A4nger",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q4",
+      "titel": "Kippbrücke (Ladefläche)",
+      "urheber": "Wikipedia, Die freie Enzyklopädie (deutschsprachig)",
+      "stand": "oldid 246474824",
+      "url": "https://de.wikipedia.org/wiki/Kippbr%C3%BCcke_(Ladefl%C3%A4che)",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q5",
+      "titel": "Ladewagen",
+      "urheber": "Wikipedia, Die freie Enzyklopädie (deutschsprachig)",
+      "stand": "oldid 256173696",
+      "url": "https://de.wikipedia.org/wiki/Ladewagen",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q6",
+      "titel": "Güllefass",
+      "urheber": "Wikipedia, Die freie Enzyklopädie (deutschsprachig)",
+      "stand": "oldid 267658675",
+      "url": "https://de.wikipedia.org/wiki/G%C3%BCllefass",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q7",
+      "titel": "Nebenabtrieb (Weiterleitung von „Zapfwelle“)",
+      "urheber": "Wikipedia, Die freie Enzyklopädie (deutschsprachig)",
+      "stand": "oldid 258962569",
+      "url": "https://de.wikipedia.org/wiki/Nebenabtrieb",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q8",
+      "titel": "ISOBUS",
+      "urheber": "Wikipedia, Die freie Enzyklopädie (deutschsprachig)",
+      "stand": "oldid 268653745",
+      "url": "https://de.wikipedia.org/wiki/ISOBUS",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q9",
+      "titel": "Lenkung (Weiterleitung von „Drehschemellenkung“)",
+      "urheber": "Wikipedia, Die freie Enzyklopädie (deutschsprachig)",
+      "stand": "oldid 271300451",
+      "url": "https://de.wikipedia.org/wiki/Lenkung",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q10",
+      "titel": "Merkblatt Landwirtschaftliche Anhänger",
+      "urheber": "Landwirtschaftliches Zentrum Liebegg (Kanton Aargau, Schweiz), H. Furter",
+      "stand": "Version 04, 4.7.2025",
+      "url": "https://www.liebegg.ch/upload/rm/lt/25/lt-250704-anhaenger-a4-v04-1-1.pdf",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "behoerde"
+    }
+  ],
+  "abschnitte": [
+    {
+      "ueberschrift": "Einleitung",
+      "abschnittstyp": "gesamtsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P1",
+          "text": "Ein Anhänger ist ein Fahrzeug ohne eigenen Antrieb, das hinter einem Zugfahrzeug wie einem Traktor mitgeführt wird; die Last überträgt er über die eigenen Räder, bei einachsigen Bauarten bis auf die Stützlast, und die Zugkräfte überträgt die Deichsel. Die Verordnung (EU) Nr. 167/2013 über die Genehmigung land- und forstwirtschaftlicher Fahrzeuge (EU; abgerufen in der im Vereinigten Königreich fortgeltenden Fassung) definiert ihn als hauptsächlich von einer Zugmaschine gezogenes Fahrzeug, das hauptsächlich Lasten befördert oder Material verarbeitet, mit einem Verhältnis von technisch zulässiger Gesamtmasse zu Leermasse von mindestens 3,0. Die Klasse R gliedert sich nach der Summe der technisch zulässigen Achsmassen in R1 bis R4; der Index a steht für eine Höchstgeschwindigkeit bis 40 km/h, b für darüber.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Einleitung, Absatz 2 (kein eigener Antrieb, Zugfahrzeuge, Lastübertragung, Stützlast, Deichsel)"
+            },
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Artikel 3 Nr. 9 (Begriff „trailer“); Artikel 4 Nr. 10 bis 14 (Klasse R mit Indizes a und b, Klassen R1 bis R4)"
+            }
+          ],
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P2",
+          "text": "Architekturell ist der Landwirtschaftsanhänger ein Fahrzeug ohne eigene Energiequelle: Zugkraft, Bremssignal, Drucköl, Zapfwellenleistung, elektrische Energie und Daten übernimmt er vom Traktor. Die Systemgrenze verläuft an Zugöse und Versorgungsanschlüssen, der Traktor ist Schnittstellenpartner. Der Artikel zerlegt den Anhänger in Hauptsysteme, Subsysteme und Komponenten mit ihren mechanischen, pneumatischen, hydraulischen, elektrischen und informationstechnischen Schnittstellen.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P1",
+              "Q7: Zapfwelle des Traktors treibt Ladewagen an",
+              "Q8: Datenbus zwischen Traktor und Anbaugerät",
+              "Q3: Stromversorgung der Beleuchtung über das Zugfahrzeug"
+            ],
+            "schluss": "Ohne eigenen Antrieb hängt jeder Leistungs- und Informationsfluss des Anhängers an einer Schnittstelle zum Traktor; daraus folgt die Systemgrenze."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrzeugstruktur und Fahrwerk",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E2",
+      "absaetze": [
+        {
+          "absatz_id": "P3",
+          "text": "Bei Anhängern ist der Leiterrahmen mit Starrachsen die verbreitetste Fahrwerksbauart; ungefederte Starrachsen finden sich bei älteren Anhängern in Land- und Forstwirtschaft bis heute, gefederte Achsen nutzen meist Blattfedern, zunehmend auch Luftfederung. Beim Starrdeichselanhänger sind Deichsel und Achsen starr mit dem Rahmen verbunden; nah hintereinanderliegende Achsen brauchen keinen Drehschemel, verursachen aber höheren Reifenabrieb in engen Kurven. Achsen, Räder und Reifen müssen für Geschwindigkeit und Gewichte zugelassen sein, wobei die volle Reifentragfähigkeit nur beim maximalen Fülldruck erreicht wird.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Abschnitt „Fahrwerk und Federung“; Abschnitt „Starrdeichselanhänger“, Absätze 1 und 2"
+            },
+            {
+              "quellen_id": "Q10",
+              "fundstelle": "Abschnitt „Achsen, Räder, Reifen“"
+            }
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P4",
+          "text": "Der Rahmen nimmt den Aufbau auf und leitet Eigen- und Ladungsgewicht in das Fahrwerk aus Achse, Federung sowie Rädern und Reifen. Die Zugeinrichtung aus Deichsel, Zugöse und Stützeinrichtung leitet Zug- und Bremskräfte zwischen Traktor und Rahmen; beim Starrdeichselanhänger trägt sie zusätzlich die Stützlast, und die Stützeinrichtung hält die abgekuppelte Deichsel. Beim Drehschemelanhänger verbindet der Drehschemel des Lenksystems Deichsel und Vorderachse. Breite und Fülldruck der Bereifung bestimmen Tragfähigkeit, Bodenschonung und Fahrzeugbreite.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P3",
+              "Q3: Zugkräfte über die Deichsel, Stützlast bei einachsigen Anhängern, Stützeinrichtung am Starrdeichselanhänger",
+              "Q10: bodenschonende Breitreifen erhöhen die Fahrzeugbreite"
+            ],
+            "schluss": "Lastpfad und Kopplung zum Traktor folgen aus der Bauart mit Rahmen, Deichsel und Starrachsen."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Antriebssystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E12",
+      "absaetze": [
+        {
+          "absatz_id": "P5",
+          "text": "Pickup, Fördertrommel, Schneidwerk und Kratzboden eines Ladewagens treibt der Traktor über die Zapfwelle und teilweise hydraulisch an, ebenso die Pumpvorrichtung eines als Anhänger gebauten Güllefasses; teilweise treibt die Wegezapfwelle die Anhängerachse an (Triebachse). Die Wegezapfwelle nimmt ihr Drehmoment nach dem Fahrgetriebe ab, ihre Drehzahl hängt daher von Gang und Geschwindigkeit ab, und Triebachsanhänger verbessern so in schwierigem Gelände die Traktion. Auf den Wellenstummel der Zapfwelle wird eine Gelenkwelle gesteckt.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q5",
+              "fundstelle": "Abschnitt „Funktionsweise“, Absatz 5"
+            },
+            {
+              "quellen_id": "Q6",
+              "fundstelle": "Einleitung"
+            },
+            {
+              "quellen_id": "Q7",
+              "fundstelle": "Abschnitt „Direktantrieb“, Absatz 4 (Gelenkwelle auf dem Wellenstummel); Abschnitt „Zapfwellenarten“, „Wegezapfwelle“"
+            }
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P6",
+          "text": "Das Antriebssystem des Anhängers erzeugt keine Leistung, es verteilt die übernommene mechanische Leistung. Die Kraftübertragung führt von der Gelenkwelle über ein Verteilergetriebe und Antriebswellen zu Ladeaggregat oder Pumpe. Bei einer Triebachse führt ein weiterer Strang über einen zuschaltbaren Achsantrieb zur Achse; weil die Wegezapfwelle wegabhängig dreht, muss dessen Übersetzung die Räder auf die Zuggeschwindigkeit abstimmen. Ein reiner Kipper hat kein Antriebssystem.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P5",
+              "Physikalische Notwendigkeit: Angetriebene Anhängerräder dürfen nicht gegen den Zug arbeiten, ihre Drehzahl muss zur Fahrgeschwindigkeit passen"
+            ],
+            "schluss": "Mehrere Zapfwellenverbraucher und eine optionale Triebachse verlangen eine Verteilung der Gelenkwellenleistung auf getrennte Stränge."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Lenksystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E18",
+      "absaetze": [
+        {
+          "absatz_id": "P7",
+          "text": "Gelenkdeichselanhänger haben zwei oder mehr Achsen, deren vordere über einen Drehschemel oder seltener über einzeln gelenkte Achsschenkel gelenkt wird; die Bauart ist typisch für Lkw und Traktoren. Die Vorderachse sitzt auf dem Drehschemel und ist fest mit der Deichsel verbunden, die vertikal beweglich gelagert und von Federn gehalten ist und abgekuppelt den Boden nicht berühren darf. Die Deichsel steuert so zugleich die gelenkte Achse; beim Schwenken verkleinert sich jedoch die Aufstandsfläche vom Viereck zum Dreieck, was die Kippstabilität verringert.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Abschnitt „Gelenkdeichselanhänger“, Absätze 1 und 2"
+            },
+            {
+              "quellen_id": "Q9",
+              "fundstelle": "Abschnitt „Schwenkachs-/Drehschemellenkung“"
+            }
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P8",
+          "text": "Das Lenksystem hat keinen eigenen Sollwertgeber: Der Lenkimpuls entsteht aus dem Winkel zwischen Traktor und Anhänger und wird über die Deichsel eingeleitet. Beim Starrdeichselanhänger mit Tandem- oder Tridemachse kann eine Lenkachse mit Achsschenkeln den Reifenabrieb mindern. Sie läuft frei nach oder wird als Zwangslenkung über einen Lenkzylinder an den Knickwinkel zum Traktor gekoppelt; dann braucht sie eine hydraulische Verbindung zur Zugeinrichtung und eine Sperre für die Rückwärtsfahrt.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P3",
+              "P7",
+              "Funktionsprinzip: Ein gezogenes Fahrzeug folgt der Bahn des Zugfahrzeugs über die Kopplung"
+            ],
+            "schluss": "Die Lenkung des Anhängers wird aus der Kopplung zum Traktor gesteuert; Lenkachsen sind eine Variante der Starrdeichselbauart."
+          },
+          "sicherheit": "gering",
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Bremssystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E22",
+      "absaetze": [
+        {
+          "absatz_id": "P9",
+          "text": "Die Delegierte Verordnung (EU) 2015/68 regelt die Bremsen bei der Genehmigung land- und forstwirtschaftlicher Fahrzeuge (EU; abgerufen in der im Vereinigten Königreich fortgeltenden Fassung). Gezogene Fahrzeuge der Klassen R3 und R4 brauchen eine durchgehende oder halbdurchgehende Betriebsbremse, leichtere dürfen eine Auflaufbremse haben, Klasse R1a braucht keine Betriebsbremse. Vorgeschrieben sind, mit Ausnahmen für langsame Bauarten, eine automatische lastabhängige Bremskraftregelung, das selbsttätige Anhalten bei Kupplungstrennung und eine Feststellbremse, die am abgekuppelten Anhänger wirkt und vom Boden aus betätigt werden kann. Hydraulisch gebremste Anhänger sind über Steuer- und Zusatzleitung verbunden; wird die Zusatzleitung getrennt, bremst der Anhänger automatisch.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Anhang I Nr. 2.1.1.5 (lastabhängige Bremskraftregelung), Nr. 2.1.5.1.1 und 2.1.5.1.2 (Steuer- und Zusatzleitung), Nr. 2.2.2.1 bis 2.2.2.3 (Bremsart je Klasse), Nr. 2.2.2.9 (Kupplungstrennung), Nr. 2.2.2.10 (Feststellbremse), Nr. 2.2.2.12 (Trennung der Zusatzleitung)"
+            }
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P10",
+          "text": "Das Merkblatt des Landwirtschaftlichen Zentrums Liebegg fasst die Schweizer Vorschriften zusammen: Bei Anhängern ab Baujahr Mai 2019 muss eine durchgehende Betriebsbremse als hydraulisches oder pneumatisches Zweileitungssystem ausgeführt sein, und elektrische Bremskomponenten wie Notbremsventil, Lastenregler oder Drucküberwachung werden über eine genormte ABS-Steckdose versorgt. Die automatische lastabhängige Bremskraftregelung für 40 km/h setzt ein gefedertes Fahrwerk oder ein anderes Lastsignal voraus, etwa Deichselfederung oder Wiegeeinrichtung. Gebremst wird mit Bremstrommeln, deren Nocken die Beläge spreizen; Anhänger über 750 kg Gesamtgewicht brauchen einen Radkeil.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q10",
+              "fundstelle": "Abschnitte „Betriebsbremsen“ (Baujahr nach 1.5.2019), „Zusätzlich gilt ab Baujahr 1.5.2019“, „Bremsnocken“ und „Radkeil“"
+            }
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P11",
+          "text": "Im Modell umfasst die Betriebsbremse Bremsanschlüsse, Anhängerbremsventil, Vorratsbehälter, Bremszylinder und Radbremsen; daneben stehen Feststellbremse, Bremsregelung und Unterlegkeile. Der Traktor steuert über die Bremsanschlüsse das Anhängerbremsventil, das bei Druckluft Luft aus dem Vorratsbehälter an die Bremszylinder gibt; bei hydraulischer Übertragung wirkt der Leitungsdruck direkt. Die Bremsregelung passt den Druck an das Lastsignal von Federung oder Wiegeeinrichtung an. Reißt die Verbindung ab, bremst das Anhängerbremsventil voll. Die Feststellbremse wirkt mechanisch auf dieselben Radbremsen.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P9",
+              "P10",
+              "Q3: Vorrats- und Bremsleitung, Vollbremsung des Anhängers beim Abreißen der Vorratsleitung"
+            ],
+            "schluss": "Die Betriebsbremse ist eine vom Traktor gesteuerte Fremdkraftbremse mit lastabhängiger Regelung; die Feststellbremse arbeitet unabhängig davon."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Aufbau und Ladung",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E32",
+      "absaetze": [
+        {
+          "absatz_id": "P12",
+          "text": "Verbreitet sind Traktoranhänger mit Kippbrücke, die Erntegut von den Erntemaschinen aufnehmen und an der Lager- oder Verarbeitungsstelle abkippen. Die Kippbrücke ist eine über einen Kippmechanismus mit dem Fahrgestell verbundene Ladefläche, die zum Entladen schräg gestellt wird; Hinterkipper kippen nur nach hinten, beim Dreiseitenkipper sind außer der Vorderwand alle Bordwände beweglich. Kippantriebe arbeiten mit Luftdruck oder Hydraulikflüssigkeit. Beim Ladewagen nimmt eine Pickup Erntegut aus dem Schwad auf, ein Laderotor drückt es durch den Förderkanal mit zuschaltbarem Schneidwerk in den Laderaum, und ein Kratzboden fördert es beim Beladen und Entladen nach hinten.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q4",
+              "fundstelle": "Abschnitt „Bauformen“ mit „Einseitenkipper“ und „Dreiseitenkipper“; Abschnitt „Verwendung“, Absatz 2; Abschnitt „Geschichte“, Absatz 1"
+            },
+            {
+              "quellen_id": "Q5",
+              "fundstelle": "Abschnitt „Funktionsweise“, Absätze 1 und 2"
+            }
+          ],
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P13",
+          "text": "Beim Güllefass als Vakuum-Tankwagen saugt eine Vakuumpumpe, meist eine Drehschieberpumpe, Gülle in den Behälter, und zum Entleeren erzeugt der umgeschaltete Kompressor Überdruck, dem der Behälter standhalten muss. Pump-Tankwagen fördern mit Drehkolben- oder Exzenterschneckenpumpe, Schleuder-Tankwagen mit einer nicht selbst ansaugenden Kreiselpumpe, beide ohne druckfesten Tank. Verteilgeräte sind Breitverteiler wie der Prallkopfverteiler und Exaktverteiler wie Schleppschlauch oder Schleppschuh.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q6",
+              "fundstelle": "Abschnitte „Vakuum-Tankwagen“, „Verdrängerpumpen-Tankwagen“, „Kreiselpumpen-Tankwagen“ und „Verteiltechnik“"
+            }
+          ],
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P14",
+          "text": "Im Modell besteht Aufbau und Ladung je nach Variante aus dem Ladebehälter mit Ladeboden, Bordwänden und Zurrpunkten, der Kippeinrichtung mit Kippzylinder und Kipplager, dem Ladeaggregat mit Pickup, Laderotor, Schneidwerk und Kratzboden oder dem Gülletank mit Tankbehälter und Verteilgerät. Der Aufbau sitzt auf dem Rahmen und bezieht seine Arbeitsleistung von außen: den Kippzylinder versorgt die Anhängerhydraulik, den Laderotor die Kraftübertragung, die Tankfüllung leisten Unterdruckpumpe oder Förderpumpe.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P5",
+              "P12",
+              "P13",
+              "Q10: Transportanhänger brauchen Zurrpunkte zur Ladungssicherung"
+            ],
+            "schluss": "Die Aufbauvarianten unterscheiden sich in ihren Aggregaten und damit in den Versorgungsflüssen zum Traktor."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Elektrik und Elektronik",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E48",
+      "absaetze": [
+        {
+          "absatz_id": "P15",
+          "text": "Die Anhängerbeleuchtung wird über eine vereinheitlichte sieben- oder dreizehnpolige Steckverbindung vom Zugfahrzeug versorgt. Für die Kommunikation zwischen Traktor und Anbaugerät ist ISOBUS der weitverbreitete Industriestandard; die zugrunde liegende Normenreihe ISO 11783 legt Steckverbinder, Leitungen, Teilnehmer und Datenformate fest. Ohne Gerät endet der Bus terminiert im Breakaway-Stecker am Traktor, mit angekuppeltem Gerät verlängert ihn der Gerätestecker bis zum Gerätesteuergerät; der Stecker führt auch Versorgung und Masse.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Abschnitt „Elektrische und mechanische Verbindungen“, „Beleuchtung“"
+            },
+            {
+              "quellen_id": "Q8",
+              "fundstelle": "Einleitung, Absätze 1 und 2; Abschnitt „ISOBUS-Hardware“, „Gerätestecker“"
+            }
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P16",
+          "text": "Das Niedervolt-Bordnetz des Anhängers hat keine eigene Energiequelle: Über Beleuchtungssteckverbindung, Bremsensteckverbindung und Gerätestecker übernimmt es Strom vom Traktor und verteilt ihn über den Leitungssatz an Leuchten, Bremsregelung, Jobrechner, Sensorik und Hydraulikventile. Das Bussystem verbindet den Jobrechner mit dem Traktor; die Sensorik für Füllstand, Achslast oder Kippstellung meldet an den Jobrechner. Ein einfacher Kipper ohne Elektronik kommt ohne Gerätestecker aus.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P10",
+              "P15",
+              "P17"
+            ],
+            "schluss": "Alle elektrischen Verbraucher des Anhängers hängen über drei Steckverbindungen am Bordnetz des Traktors."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrzeugsteuerung und Information",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E56",
+      "absaetze": [
+        {
+          "absatz_id": "P17",
+          "text": "Der Jobrechner sitzt in der Regel auf dem Anbaugerät, steuert die Maschine, übernimmt die Anzeige von Daten und setzt Bedienereingaben um; seine Ein- und Ausgänge für Sensoren, Hydraulikventile oder Stellmotoren sind oft diagnosefähig. Bedient wird über das Virtual Terminal in der Fahrerkabine des Traktors, auf das der Jobrechner seinen Objectpool lädt. Das Traktorsteuergerät liefert Daten wie Fahrgeschwindigkeit und Zapfwellendrehzahl in den Bus.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q8",
+              "fundstelle": "Abschnitte „Jobrechner“, „Virtual Terminal“ und „Traktorsteuergerät“"
+            }
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P18",
+          "text": "Der Anhänger hat damit eine Steuerungsebene ohne eigenen Bedienplatz. Der Jobrechner koordiniert Kratzboden, Schneidwerk, Kippvorgang oder Ausbringmenge, verarbeitet Signale der Wiegeeinrichtung und meldet Zustände und Fehler über die Diagnose an das Terminal des Traktors. Ein einfacher Kipper kommt ohne Jobrechner aus; der Fahrer betätigt die Kipphydraulik dann direkt über ein Steuergerät des Traktors.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P12",
+              "P13",
+              "P17",
+              "Q10: Wiegeeinrichtung als Lastsignal"
+            ],
+            "schluss": "Die Steuerung des Anhängers ist ein Gerätesteuergerät, das vom Traktor aus bedient wird; ihr Umfang hängt vom Aufbau ab."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Assistenz und Sicherheit",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E60",
+      "absaetze": [
+        {
+          "absatz_id": "P19",
+          "text": "Nach der Delegierten Verordnung (EU) 2015/68 brauchen ungebremste gezogene Fahrzeuge der Klassen R1 und S1 neben der Hauptkupplung eine Sicherungsverbindung wie Kette oder Seil, die bei einer Trennung verhindert, dass die Deichsel den Boden berührt, und eine Restlenkwirkung erhält. Leichte auflaufgebremste Anhänger brauchen eine Einrichtung, die bei Trennung der Kupplung die Bremse betätigt; hydraulische Bremsleitungen müssen sich dabei mit unbedeutender Leckage lösen.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Anhang I Nr. 2.2.2.9.1 bis 2.2.2.9.3"
+            }
+          ],
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P20",
+          "text": "Je nach Ausstattung ergänzen eine Reifendrucküberwachung und eine Kippüberwachung das Hauptsystem Assistenz und Sicherheit. Die Reifendrucküberwachung warnt, wenn der Fülldruck nicht zur Last passt, etwa nach Feldarbeit mit abgesenktem Druck; die Kippüberwachung erfasst beim Kippen die Neigung des Anhängers und warnt oder stoppt bei Kippgefahr. Ohne Fahrer an Bord melden beide über den Jobrechner an das Terminal im Traktor.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "Q10: Tragfähigkeit des Reifens hängt vom Fülldruck ab",
+              "P12: Kippbrücke wird schräg gestellt, der Schwerpunkt steigt",
+              "P17"
+            ],
+            "schluss": "Last- und Kippzustand sind sicherheitsrelevant und ohne Fahrer an Bord nur über Sensorik und Meldung an den Traktor beherrschbar."
+          },
+          "sicherheit": "gering",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Beleuchtung und Sicht",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E64",
+      "absaetze": [
+        {
+          "absatz_id": "P21",
+          "text": "Anhänger brauchen in Deutschland wie Kraftfahrzeuge Schluss-, Brems- und Blinkleuchten, am Heck zwei rote dreieckige Rückstrahler und seitlich gelbe Rückstrahler. Das Merkblatt Liebegg nennt für landwirtschaftliche Anhänger in der Schweiz zusätzlich weiße Rückstrahler nach vorne, Positionslichter ab mehr als 2,10 m Breite, ein Höchstgeschwindigkeitszeichen und ab mehr als 1,30 m Breite die Heckmarkierungstafel „Langsam fahrendes Fahrzeug“; Überbreite ist nach vorne und hinten gut sichtbar zu markieren.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Abschnitt „Elektrische und mechanische Verbindungen“, „Beleuchtung“; Abschnitt „Rückstrahler und Reflektoren“"
+            },
+            {
+              "quellen_id": "Q10",
+              "fundstelle": "Abschnitt „Beleuchtung und Markierung“; Abschnitt „Abmessungen“"
+            }
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P22",
+          "text": "Im Modell bilden Leuchten, Rückstrahler und Warntafeln die Signal- und Markierungseinrichtung, die der Traktor über die Beleuchtungssteckverbindung schaltet. Optional kommen Scheinwerfer als Arbeitsbeleuchtung für Beladen und Kippen sowie ein Kamera-Monitor-System am Heck hinzu, das beim Rangieren den verdeckten Bereich hinter dem Anhänger auf einen Monitor im Traktor bringt; beide hängen am Niedervolt-Bordnetz.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P15",
+              "P21",
+              "Funktionsprinzip: Ein Anhänger ohne Fahrer an Bord kann Licht nur nach Vorgabe des Traktors schalten"
+            ],
+            "schluss": "Die vorgeschriebene Lichttechnik ist passiv geschaltet; Arbeitslicht und Kamera sind Zusatzausstattung."
+          },
+          "sicherheit": "gering",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Neben- und Versorgungssysteme",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E71",
+      "absaetze": [
+        {
+          "absatz_id": "P23",
+          "text": "Die Neben- und Versorgungssysteme stellen die Hilfsenergien des Aufbaus bereit. Kern ist die Anhängerhydraulik: Hydraulikkupplungen übernehmen Drucköl vom Traktor, ein Steuerblock mit elektrisch betätigten Ventilen verteilt es über Hydraulikleitungen an Kippzylinder, Kratzbodenantrieb, Lenkzylinder, Deichselfederung oder Befüllbeschleuniger, und der Rücklauf führt zum Traktor. Beim einfachen Kipper entfällt der Steuerblock. Am Güllefass treibt die Kraftübertragung die Unterdruckpumpe an, die den Tank evakuiert oder unter Überdruck setzt; alternativ fördert eine Förderpumpe die Gülle direkt.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P5",
+              "P12",
+              "P13",
+              "Q6: hydraulisch angetriebene Befüllbeschleuniger",
+              "Q10: Deichselfederung als Lastsignal"
+            ],
+            "schluss": "Hydraulische und pneumatische Hilfsenergie des Anhängers stammt aus Traktorhydraulik und Zapfwelle und wird im Anhänger nur verteilt oder gewandelt."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Zusammenfassung",
+      "abschnittstyp": "gesamtsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P24",
+          "text": "Auf oberster Ebene besteht der Landwirtschaftsanhänger aus Fahrzeugstruktur und Fahrwerk, Antriebssystem, Lenksystem, Bremssystem, Aufbau und Ladung, Elektrik und Elektronik, Fahrzeugsteuerung und Information, Assistenz und Sicherheit, Beleuchtung und Sicht sowie Neben- und Versorgungssystemen. Energieversorgung, Bedienraum und Thermomanagement entfallen, weil Energiequelle, Bedienplatz und Kühlung beim Traktor liegen. Fast jedes Hauptsystem hat eine Schnittstelle zum Traktor; die Aufbauvariante bestimmt, welche genutzt werden.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P2",
+              "P6",
+              "P14",
+              "P16",
+              "P23"
+            ],
+            "schluss": "Die Hauptsysteme sind über die Schnittstellen zum Traktor gekoppelt; die Aufbauvariante wählt die genutzten Schnittstellen."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Modellierungsbezug",
+      "abschnittstyp": "modellierung",
+      "absaetze": [
+        {
+          "absatz_id": "P25",
+          "text": "In SysML bildet der Block Landwirtschaftsanhänger das Gesamtsystem mit den Hauptsystemen als Teilen. Dekompositionspfade sind Landwirtschaftsanhänger → Fahrzeugstruktur und Fahrwerk → Zugeinrichtung → Zugöse, Landwirtschaftsanhänger → Bremssystem → Betriebsbremse → Anhängerbremsventil und Landwirtschaftsanhänger → Aufbau und Ladung → Ladeaggregat → Laderotor. Der Traktor ist ein externer Block mit Ports für Zugkraft und Stützlast, Bremssignal, Drucköl, Zapfwellenleistung, Bordnetzspannung und Busdaten. Blockdefinitionsdiagramme zeigen die Struktur, interne Blockdiagramme die Kopplung, Aktivitäts- und Zustandsdiagramme Ankuppeln, Bremsen und Kippen.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P2",
+              "P4",
+              "P11",
+              "P14",
+              "P24"
+            ],
+            "schluss": "Die Dekomposition folgt den Hauptsystemen; der Traktor wird über typisierte Ports angebunden."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Flüsse",
+      "abschnittstyp": "fluesse",
+      "absaetze": [
+        {
+          "absatz_id": "P26",
+          "text": "Zugkraft und Stützlast laufen von der Zugöse über Deichsel, Drehschemel und Rahmen ins Fahrwerk. Die Gelenkwelle leitet Zapfwellenleistung über Verteilergetriebe und Antriebswellen zu Laderotor und Unterdruckpumpe, bei der Triebachse über den Achsantrieb zur Achse. Die Bremsanschlüsse führen Steuer- und Vorratsdruck zu Anhängerbremsventil und Vorratsbehälter, das Ventil zu den Bremszylindern; Federung und Wiegeeinrichtung melden die Last an die Bremsregelung. Über den Steuerblock erhalten Kippzylinder, Kratzboden und Lenkzylinder Drucköl. Das Niedervolt-Bordnetz speist Leuchten, Scheinwerfer, Kamera und Jobrechner; über Bussystem und Gerätestecker tauscht der Jobrechner Daten mit dem Traktor und wertet Sensorik und Überwachungen aus. Die Unterdruckpumpe evakuiert den Tankbehälter, das Verteilgerät gibt Gülle ab.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P4",
+              "P6",
+              "P8",
+              "P11",
+              "P14",
+              "P16",
+              "P18",
+              "P20",
+              "P22",
+              "P23"
+            ],
+            "schluss": "Die Flüsse verbinden die Hauptsysteme über die benannten Schnittstellen."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Perspektiven",
+      "abschnittstyp": "perspektiven",
+      "absaetze": [
+        {
+          "absatz_id": "P27",
+          "text": "Funktionszuordnung: Fahrzeuglasten tragen Rahmen, Fahrwerk und Zugeinrichtung; Anhänger kuppeln Zugöse, Deichsel und Sicherungsverbindung; Fahrzeug fortbewegen Räder und Reifen sowie der Achsantrieb; Drehmoment übertragen die Kraftübertragung; Arbeitsgeräte versorgen Kraftübertragung und Anhängerhydraulik; Fahrzeug lenken Drehschemel, Lenkachse und Lenkzylinder; Fahrzeug verzögern Betriebsbremse, Radbremsen und Bremsregelung; Fahrzeug festhalten Feststellbremse und Unterlegkeile; Energie speichern der Vorratsbehälter; Ladung aufnehmen Ladebehälter, Ladeaggregat, Gülletank und Förderpumpe; Ladung entladen Kippeinrichtung und Kratzboden; Material ausbringen das Verteilgerät; Hydraulische Leistung bereitstellen die Anhängerhydraulik; Unterdruck bereitstellen die Unterdruckpumpe; Elektrische Energie verteilen Niedervolt-Bordnetz und Leitungssatz; Daten übertragen Bussystem und Gerätestecker; Fahrzeugzustand überwachen Jobrechner, Diagnose, Sensorik, Wiegeeinrichtung, Reifendrucküberwachung und Kippüberwachung; Lichtsignale abgeben Leuchten, Rückstrahler und Warntafeln; Fahrzeugumgebung ausleuchten die Scheinwerfer; Fahrersicht sicherstellen das Kamera-Monitor-System.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P4",
+              "P6",
+              "P8",
+              "P11",
+              "P14",
+              "P16",
+              "P18",
+              "P20",
+              "P22",
+              "P23"
+            ],
+            "schluss": "Jede Funktion hat mindestens ein ausführendes Element."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    }
+  ],
+  "modell": {
+    "elemente": [
+      {
+        "id": "E1",
+        "name": "Landwirtschaftsanhänger",
+        "typ": "gesamtsystem",
+        "eltern_id": null,
+        "absatz_ids": [
+          "P2",
+          "P24",
+          "P25"
+        ]
+      },
+      {
+        "id": "E2",
+        "name": "Fahrzeugstruktur und Fahrwerk",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P24",
+          "P25"
+        ],
+        "kategorie": "struktur_fahrwerk"
+      },
+      {
+        "id": "E3",
+        "name": "Rahmen",
+        "typ": "komponente",
+        "eltern_id": "E2",
+        "absatz_ids": [
+          "P3",
+          "P4",
+          "P14",
+          "P26",
+          "P27"
+        ]
+      },
+      {
+        "id": "E4",
+        "name": "Zugeinrichtung",
+        "typ": "subsystem",
+        "eltern_id": "E2",
+        "absatz_ids": [
+          "P4",
+          "P8",
+          "P25",
+          "P27"
+        ]
+      },
+      {
+        "id": "E5",
+        "name": "Deichsel",
+        "typ": "komponente",
+        "eltern_id": "E4",
+        "absatz_ids": [
+          "P1",
+          "P3",
+          "P4",
+          "P7",
+          "P8",
+          "P10",
+          "P19",
+          "P23",
+          "P26",
+          "P27"
+        ]
+      },
+      {
+        "id": "E6",
+        "name": "Zugöse",
+        "typ": "komponente",
+        "eltern_id": "E4",
+        "absatz_ids": [
+          "P2",
+          "P4",
+          "P25",
+          "P26",
+          "P27"
+        ]
+      },
+      {
+        "id": "E7",
+        "name": "Stützeinrichtung",
+        "typ": "komponente",
+        "eltern_id": "E4",
+        "absatz_ids": [
+          "P4"
+        ]
+      },
+      {
+        "id": "E8",
+        "name": "Fahrwerk",
+        "typ": "subsystem",
+        "eltern_id": "E2",
+        "absatz_ids": [
+          "P3",
+          "P4",
+          "P10",
+          "P24",
+          "P25",
+          "P26",
+          "P27"
+        ]
+      },
+      {
+        "id": "E9",
+        "name": "Achse",
+        "typ": "komponente",
+        "eltern_id": "E8",
+        "absatz_ids": [
+          "P3",
+          "P4",
+          "P6",
+          "P7",
+          "P26"
+        ]
+      },
+      {
+        "id": "E10",
+        "name": "Federung",
+        "typ": "komponente",
+        "eltern_id": "E8",
+        "absatz_ids": [
+          "P4",
+          "P11",
+          "P26"
+        ]
+      },
+      {
+        "id": "E11",
+        "name": "Räder und Reifen",
+        "typ": "komponente",
+        "eltern_id": "E8",
+        "absatz_ids": [
+          "P3",
+          "P27"
+        ]
+      },
+      {
+        "id": "E12",
+        "name": "Antriebssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P6",
+          "P24"
+        ],
+        "kategorie": "antrieb"
+      },
+      {
+        "id": "E13",
+        "name": "Kraftübertragung",
+        "typ": "subsystem",
+        "eltern_id": "E12",
+        "absatz_ids": [
+          "P6",
+          "P14",
+          "P23",
+          "P27"
+        ]
+      },
+      {
+        "id": "E14",
+        "name": "Gelenkwelle",
+        "typ": "komponente",
+        "eltern_id": "E13",
+        "absatz_ids": [
+          "P5",
+          "P6",
+          "P26"
+        ]
+      },
+      {
+        "id": "E15",
+        "name": "Verteilergetriebe",
+        "typ": "komponente",
+        "eltern_id": "E13",
+        "absatz_ids": [
+          "P6",
+          "P26"
+        ]
+      },
+      {
+        "id": "E16",
+        "name": "Antriebswelle",
+        "typ": "komponente",
+        "eltern_id": "E13",
+        "absatz_ids": [
+          "P6",
+          "P26"
+        ]
+      },
+      {
+        "id": "E17",
+        "name": "Achsantrieb",
+        "typ": "komponente",
+        "eltern_id": "E12",
+        "absatz_ids": [
+          "P6",
+          "P26",
+          "P27"
+        ]
+      },
+      {
+        "id": "E18",
+        "name": "Lenksystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P8",
+          "P24"
+        ],
+        "kategorie": "lenkung"
+      },
+      {
+        "id": "E19",
+        "name": "Drehschemel",
+        "typ": "komponente",
+        "eltern_id": "E18",
+        "absatz_ids": [
+          "P3",
+          "P4",
+          "P7",
+          "P26",
+          "P27"
+        ]
+      },
+      {
+        "id": "E20",
+        "name": "Lenkachse",
+        "typ": "komponente",
+        "eltern_id": "E18",
+        "absatz_ids": [
+          "P8",
+          "P27"
+        ]
+      },
+      {
+        "id": "E21",
+        "name": "Lenkzylinder",
+        "typ": "komponente",
+        "eltern_id": "E18",
+        "absatz_ids": [
+          "P8",
+          "P23",
+          "P26",
+          "P27"
+        ]
+      },
+      {
+        "id": "E22",
+        "name": "Bremssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P24",
+          "P25"
+        ],
+        "kategorie": "bremse"
+      },
+      {
+        "id": "E23",
+        "name": "Betriebsbremse",
+        "typ": "subsystem",
+        "eltern_id": "E22",
+        "absatz_ids": [
+          "P9",
+          "P10",
+          "P11",
+          "P25",
+          "P27"
+        ]
+      },
+      {
+        "id": "E24",
+        "name": "Bremsanschlüsse",
+        "typ": "komponente",
+        "eltern_id": "E23",
+        "absatz_ids": [
+          "P11",
+          "P26"
+        ]
+      },
+      {
+        "id": "E25",
+        "name": "Anhängerbremsventil",
+        "typ": "komponente",
+        "eltern_id": "E23",
+        "absatz_ids": [
+          "P11",
+          "P25",
+          "P26"
+        ]
+      },
+      {
+        "id": "E26",
+        "name": "Vorratsbehälter",
+        "typ": "komponente",
+        "eltern_id": "E23",
+        "absatz_ids": [
+          "P11",
+          "P26",
+          "P27"
+        ]
+      },
+      {
+        "id": "E27",
+        "name": "Bremszylinder",
+        "typ": "komponente",
+        "eltern_id": "E23",
+        "absatz_ids": [
+          "P11",
+          "P26"
+        ]
+      },
+      {
+        "id": "E28",
+        "name": "Radbremsen",
+        "typ": "komponente",
+        "eltern_id": "E23",
+        "absatz_ids": [
+          "P11",
+          "P27"
+        ]
+      },
+      {
+        "id": "E29",
+        "name": "Feststellbremse",
+        "typ": "komponente",
+        "eltern_id": "E22",
+        "absatz_ids": [
+          "P9",
+          "P11",
+          "P27"
+        ]
+      },
+      {
+        "id": "E30",
+        "name": "Bremsregelung",
+        "typ": "komponente",
+        "eltern_id": "E22",
+        "absatz_ids": [
+          "P11",
+          "P16",
+          "P26",
+          "P27"
+        ]
+      },
+      {
+        "id": "E31",
+        "name": "Unterlegkeile",
+        "typ": "komponente",
+        "eltern_id": "E22",
+        "absatz_ids": [
+          "P11",
+          "P27"
+        ]
+      },
+      {
+        "id": "E32",
+        "name": "Aufbau und Ladung",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P14",
+          "P24",
+          "P25"
+        ],
+        "kategorie": "aufbau_nutzlast"
+      },
+      {
+        "id": "E33",
+        "name": "Ladebehälter",
+        "typ": "subsystem",
+        "eltern_id": "E32",
+        "absatz_ids": [
+          "P14",
+          "P27"
+        ]
+      },
+      {
+        "id": "E34",
+        "name": "Ladeboden",
+        "typ": "komponente",
+        "eltern_id": "E33",
+        "absatz_ids": [
+          "P14"
+        ]
+      },
+      {
+        "id": "E35",
+        "name": "Bordwände",
+        "typ": "komponente",
+        "eltern_id": "E33",
+        "absatz_ids": [
+          "P12",
+          "P14"
+        ]
+      },
+      {
+        "id": "E36",
+        "name": "Zurrpunkte",
+        "typ": "komponente",
+        "eltern_id": "E33",
+        "absatz_ids": [
+          "P14"
+        ]
+      },
+      {
+        "id": "E37",
+        "name": "Kippeinrichtung",
+        "typ": "subsystem",
+        "eltern_id": "E32",
+        "absatz_ids": [
+          "P14",
+          "P27"
+        ]
+      },
+      {
+        "id": "E38",
+        "name": "Kippzylinder",
+        "typ": "komponente",
+        "eltern_id": "E37",
+        "absatz_ids": [
+          "P14",
+          "P23",
+          "P26"
+        ]
+      },
+      {
+        "id": "E39",
+        "name": "Kipplager",
+        "typ": "komponente",
+        "eltern_id": "E37",
+        "absatz_ids": [
+          "P14"
+        ]
+      },
+      {
+        "id": "E40",
+        "name": "Ladeaggregat",
+        "typ": "subsystem",
+        "eltern_id": "E32",
+        "absatz_ids": [
+          "P6",
+          "P14",
+          "P25",
+          "P27"
+        ]
+      },
+      {
+        "id": "E41",
+        "name": "Pickup",
+        "typ": "komponente",
+        "eltern_id": "E40",
+        "absatz_ids": [
+          "P5",
+          "P12",
+          "P14"
+        ]
+      },
+      {
+        "id": "E42",
+        "name": "Laderotor",
+        "typ": "komponente",
+        "eltern_id": "E40",
+        "absatz_ids": [
+          "P12",
+          "P14",
+          "P25",
+          "P26"
+        ]
+      },
+      {
+        "id": "E43",
+        "name": "Schneidwerk",
+        "typ": "komponente",
+        "eltern_id": "E40",
+        "absatz_ids": [
+          "P5",
+          "P12",
+          "P14",
+          "P18"
+        ]
+      },
+      {
+        "id": "E44",
+        "name": "Kratzboden",
+        "typ": "komponente",
+        "eltern_id": "E40",
+        "absatz_ids": [
+          "P5",
+          "P12",
+          "P14",
+          "P18",
+          "P23",
+          "P26",
+          "P27"
+        ]
+      },
+      {
+        "id": "E45",
+        "name": "Gülletank",
+        "typ": "subsystem",
+        "eltern_id": "E32",
+        "absatz_ids": [
+          "P14",
+          "P27"
+        ]
+      },
+      {
+        "id": "E46",
+        "name": "Tankbehälter",
+        "typ": "komponente",
+        "eltern_id": "E45",
+        "absatz_ids": [
+          "P14",
+          "P26"
+        ]
+      },
+      {
+        "id": "E47",
+        "name": "Verteilgerät",
+        "typ": "komponente",
+        "eltern_id": "E45",
+        "absatz_ids": [
+          "P13",
+          "P14",
+          "P26",
+          "P27"
+        ]
+      },
+      {
+        "id": "E48",
+        "name": "Elektrik und Elektronik",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P24"
+        ],
+        "kategorie": "elektrik_elektronik"
+      },
+      {
+        "id": "E49",
+        "name": "Niedervolt-Bordnetz",
+        "typ": "subsystem",
+        "eltern_id": "E48",
+        "absatz_ids": [
+          "P16",
+          "P22",
+          "P26",
+          "P27"
+        ]
+      },
+      {
+        "id": "E50",
+        "name": "Leitungssatz",
+        "typ": "komponente",
+        "eltern_id": "E49",
+        "absatz_ids": [
+          "P16",
+          "P27"
+        ]
+      },
+      {
+        "id": "E51",
+        "name": "Beleuchtungssteckverbindung",
+        "typ": "komponente",
+        "eltern_id": "E49",
+        "absatz_ids": [
+          "P16",
+          "P22"
+        ]
+      },
+      {
+        "id": "E52",
+        "name": "Bremsensteckverbindung",
+        "typ": "komponente",
+        "eltern_id": "E49",
+        "absatz_ids": [
+          "P16"
+        ]
+      },
+      {
+        "id": "E53",
+        "name": "Bussystem",
+        "typ": "komponente",
+        "eltern_id": "E48",
+        "absatz_ids": [
+          "P16",
+          "P26",
+          "P27"
+        ]
+      },
+      {
+        "id": "E54",
+        "name": "Gerätestecker",
+        "typ": "komponente",
+        "eltern_id": "E48",
+        "absatz_ids": [
+          "P15",
+          "P16",
+          "P26",
+          "P27"
+        ]
+      },
+      {
+        "id": "E55",
+        "name": "Sensorik",
+        "typ": "komponente",
+        "eltern_id": "E48",
+        "absatz_ids": [
+          "P16",
+          "P26",
+          "P27"
+        ]
+      },
+      {
+        "id": "E56",
+        "name": "Fahrzeugsteuerung und Information",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P24"
+        ],
+        "kategorie": "steuerung_information"
+      },
+      {
+        "id": "E57",
+        "name": "Jobrechner",
+        "typ": "komponente",
+        "eltern_id": "E56",
+        "absatz_ids": [
+          "P16",
+          "P17",
+          "P18",
+          "P20",
+          "P26",
+          "P27"
+        ]
+      },
+      {
+        "id": "E58",
+        "name": "Diagnose",
+        "typ": "komponente",
+        "eltern_id": "E56",
+        "absatz_ids": [
+          "P18",
+          "P27"
+        ]
+      },
+      {
+        "id": "E59",
+        "name": "Wiegeeinrichtung",
+        "typ": "komponente",
+        "eltern_id": "E56",
+        "absatz_ids": [
+          "P10",
+          "P11",
+          "P18",
+          "P26",
+          "P27"
+        ]
+      },
+      {
+        "id": "E60",
+        "name": "Assistenz und Sicherheit",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P20",
+          "P24"
+        ],
+        "kategorie": "assistenz_sicherheit"
+      },
+      {
+        "id": "E61",
+        "name": "Sicherungsverbindung",
+        "typ": "komponente",
+        "eltern_id": "E60",
+        "absatz_ids": [
+          "P19",
+          "P27"
+        ]
+      },
+      {
+        "id": "E62",
+        "name": "Reifendrucküberwachung",
+        "typ": "komponente",
+        "eltern_id": "E60",
+        "absatz_ids": [
+          "P20",
+          "P27"
+        ]
+      },
+      {
+        "id": "E63",
+        "name": "Kippüberwachung",
+        "typ": "komponente",
+        "eltern_id": "E60",
+        "absatz_ids": [
+          "P20",
+          "P27"
+        ]
+      },
+      {
+        "id": "E64",
+        "name": "Beleuchtung und Sicht",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P24"
+        ],
+        "kategorie": "beleuchtung_sicht"
+      },
+      {
+        "id": "E65",
+        "name": "Signal- und Markierungseinrichtung",
+        "typ": "subsystem",
+        "eltern_id": "E64",
+        "absatz_ids": [
+          "P22"
+        ]
+      },
+      {
+        "id": "E66",
+        "name": "Leuchten",
+        "typ": "komponente",
+        "eltern_id": "E65",
+        "absatz_ids": [
+          "P16",
+          "P22",
+          "P26",
+          "P27"
+        ]
+      },
+      {
+        "id": "E67",
+        "name": "Rückstrahler",
+        "typ": "komponente",
+        "eltern_id": "E65",
+        "absatz_ids": [
+          "P21",
+          "P22",
+          "P27"
+        ]
+      },
+      {
+        "id": "E68",
+        "name": "Warntafeln",
+        "typ": "komponente",
+        "eltern_id": "E65",
+        "absatz_ids": [
+          "P22",
+          "P27"
+        ]
+      },
+      {
+        "id": "E69",
+        "name": "Scheinwerfer",
+        "typ": "komponente",
+        "eltern_id": "E64",
+        "absatz_ids": [
+          "P22",
+          "P26",
+          "P27"
+        ]
+      },
+      {
+        "id": "E70",
+        "name": "Kamera-Monitor-System",
+        "typ": "komponente",
+        "eltern_id": "E64",
+        "absatz_ids": [
+          "P22",
+          "P27"
+        ]
+      },
+      {
+        "id": "E71",
+        "name": "Neben- und Versorgungssysteme",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P23",
+          "P24"
+        ],
+        "kategorie": "nebensysteme"
+      },
+      {
+        "id": "E72",
+        "name": "Anhängerhydraulik",
+        "typ": "subsystem",
+        "eltern_id": "E71",
+        "absatz_ids": [
+          "P14",
+          "P23",
+          "P27"
+        ]
+      },
+      {
+        "id": "E73",
+        "name": "Hydraulikkupplungen",
+        "typ": "komponente",
+        "eltern_id": "E72",
+        "absatz_ids": [
+          "P23"
+        ]
+      },
+      {
+        "id": "E74",
+        "name": "Steuerblock",
+        "typ": "komponente",
+        "eltern_id": "E72",
+        "absatz_ids": [
+          "P23",
+          "P26"
+        ]
+      },
+      {
+        "id": "E75",
+        "name": "Hydraulikleitungen",
+        "typ": "komponente",
+        "eltern_id": "E72",
+        "absatz_ids": [
+          "P23"
+        ]
+      },
+      {
+        "id": "E76",
+        "name": "Unterdruckpumpe",
+        "typ": "komponente",
+        "eltern_id": "E71",
+        "absatz_ids": [
+          "P14",
+          "P23",
+          "P26",
+          "P27"
+        ]
+      },
+      {
+        "id": "E77",
+        "name": "Förderpumpe",
+        "typ": "komponente",
+        "eltern_id": "E71",
+        "absatz_ids": [
+          "P14",
+          "P23",
+          "P27"
+        ]
+      }
+    ],
+    "funktionen": [
+      {
+        "id": "F1",
+        "name": "Fahrzeuglasten tragen",
+        "ausgefuehrt_von": [
+          "E3",
+          "E8",
+          "E4"
+        ],
+        "absatz_ids": [
+          "P4",
+          "P27"
+        ]
+      },
+      {
+        "id": "F2",
+        "name": "Anhänger kuppeln",
+        "ausgefuehrt_von": [
+          "E6",
+          "E5",
+          "E61"
+        ],
+        "absatz_ids": [
+          "P4",
+          "P19",
+          "P27"
+        ]
+      },
+      {
+        "id": "F3",
+        "name": "Fahrzeug fortbewegen",
+        "ausgefuehrt_von": [
+          "E11",
+          "E17"
+        ],
+        "absatz_ids": [
+          "P6",
+          "P27"
+        ]
+      },
+      {
+        "id": "F4",
+        "name": "Drehmoment übertragen",
+        "ausgefuehrt_von": [
+          "E13"
+        ],
+        "absatz_ids": [
+          "P6",
+          "P27"
+        ]
+      },
+      {
+        "id": "F5",
+        "name": "Arbeitsgeräte versorgen",
+        "ausgefuehrt_von": [
+          "E13",
+          "E72"
+        ],
+        "absatz_ids": [
+          "P6",
+          "P23",
+          "P27"
+        ]
+      },
+      {
+        "id": "F6",
+        "name": "Fahrzeug lenken",
+        "ausgefuehrt_von": [
+          "E19",
+          "E20",
+          "E21"
+        ],
+        "absatz_ids": [
+          "P8",
+          "P27"
+        ]
+      },
+      {
+        "id": "F7",
+        "name": "Fahrzeug verzögern",
+        "ausgefuehrt_von": [
+          "E23",
+          "E28",
+          "E30"
+        ],
+        "absatz_ids": [
+          "P11",
+          "P27"
+        ]
+      },
+      {
+        "id": "F8",
+        "name": "Fahrzeug festhalten",
+        "ausgefuehrt_von": [
+          "E29",
+          "E31"
+        ],
+        "absatz_ids": [
+          "P9",
+          "P11",
+          "P27"
+        ]
+      },
+      {
+        "id": "F9",
+        "name": "Energie speichern",
+        "ausgefuehrt_von": [
+          "E26"
+        ],
+        "absatz_ids": [
+          "P11",
+          "P27"
+        ]
+      },
+      {
+        "id": "F10",
+        "name": "Ladung aufnehmen",
+        "ausgefuehrt_von": [
+          "E33",
+          "E40",
+          "E45",
+          "E77"
+        ],
+        "absatz_ids": [
+          "P14",
+          "P27"
+        ]
+      },
+      {
+        "id": "F11",
+        "name": "Ladung entladen",
+        "ausgefuehrt_von": [
+          "E37",
+          "E44"
+        ],
+        "absatz_ids": [
+          "P12",
+          "P14",
+          "P27"
+        ]
+      },
+      {
+        "id": "F12",
+        "name": "Material ausbringen",
+        "ausgefuehrt_von": [
+          "E47"
+        ],
+        "absatz_ids": [
+          "P13",
+          "P27"
+        ]
+      },
+      {
+        "id": "F13",
+        "name": "Hydraulische Leistung bereitstellen",
+        "ausgefuehrt_von": [
+          "E72"
+        ],
+        "absatz_ids": [
+          "P23",
+          "P27"
+        ]
+      },
+      {
+        "id": "F14",
+        "name": "Unterdruck bereitstellen",
+        "ausgefuehrt_von": [
+          "E76"
+        ],
+        "absatz_ids": [
+          "P23",
+          "P27"
+        ]
+      },
+      {
+        "id": "F15",
+        "name": "Elektrische Energie verteilen",
+        "ausgefuehrt_von": [
+          "E49",
+          "E50"
+        ],
+        "absatz_ids": [
+          "P16",
+          "P27"
+        ]
+      },
+      {
+        "id": "F16",
+        "name": "Daten übertragen",
+        "ausgefuehrt_von": [
+          "E53",
+          "E54"
+        ],
+        "absatz_ids": [
+          "P16",
+          "P27"
+        ]
+      },
+      {
+        "id": "F17",
+        "name": "Fahrzeugzustand überwachen",
+        "ausgefuehrt_von": [
+          "E57",
+          "E58",
+          "E55",
+          "E59",
+          "E62",
+          "E63"
+        ],
+        "absatz_ids": [
+          "P18",
+          "P20",
+          "P27"
+        ]
+      },
+      {
+        "id": "F18",
+        "name": "Lichtsignale abgeben",
+        "ausgefuehrt_von": [
+          "E66",
+          "E67",
+          "E68"
+        ],
+        "absatz_ids": [
+          "P22",
+          "P27"
+        ]
+      },
+      {
+        "id": "F19",
+        "name": "Fahrzeugumgebung ausleuchten",
+        "ausgefuehrt_von": [
+          "E69"
+        ],
+        "absatz_ids": [
+          "P22",
+          "P27"
+        ]
+      },
+      {
+        "id": "F20",
+        "name": "Fahrersicht sicherstellen",
+        "ausgefuehrt_von": [
+          "E70"
+        ],
+        "absatz_ids": [
+          "P22",
+          "P27"
+        ]
+      }
+    ],
+    "fluesse": [
+      {
+        "id": "S1",
+        "von": "E6",
+        "nach": "E5",
+        "art": "mechanisch",
+        "medium": "Zugkraft und Stützlast",
+        "absatz_ids": [
+          "P4",
+          "P26"
+        ]
+      },
+      {
+        "id": "S2",
+        "von": "E5",
+        "nach": "E3",
+        "art": "mechanisch",
+        "medium": "Zugkraft und Stützlast",
+        "absatz_ids": [
+          "P4",
+          "P26"
+        ]
+      },
+      {
+        "id": "S3",
+        "von": "E3",
+        "nach": "E8",
+        "art": "mechanisch",
+        "medium": "Gewichtskraft",
+        "absatz_ids": [
+          "P4",
+          "P26"
+        ]
+      },
+      {
+        "id": "S4",
+        "von": "E5",
+        "nach": "E19",
+        "art": "mechanisch",
+        "medium": "Lenkimpuls und Zugkraft",
+        "absatz_ids": [
+          "P8",
+          "P26"
+        ],
+        "schnittstelle": "Deichselanlenkung am Drehschemel"
+      },
+      {
+        "id": "S5",
+        "von": "E19",
+        "nach": "E3",
+        "art": "mechanisch",
+        "medium": "Gewichtskraft",
+        "absatz_ids": [
+          "P4",
+          "P26"
+        ],
+        "schnittstelle": "Drehkranz am Rahmen"
+      },
+      {
+        "id": "S6",
+        "von": "E14",
+        "nach": "E15",
+        "art": "mechanisch",
+        "medium": "Drehmoment",
+        "absatz_ids": [
+          "P6",
+          "P26"
+        ]
+      },
+      {
+        "id": "S7",
+        "von": "E15",
+        "nach": "E16",
+        "art": "mechanisch",
+        "medium": "Drehmoment",
+        "absatz_ids": [
+          "P6",
+          "P26"
+        ]
+      },
+      {
+        "id": "S8",
+        "von": "E16",
+        "nach": "E42",
+        "art": "mechanisch",
+        "medium": "Drehmoment",
+        "absatz_ids": [
+          "P14",
+          "P26"
+        ],
+        "schnittstelle": "Antrieb Ladeaggregat"
+      },
+      {
+        "id": "S9",
+        "von": "E16",
+        "nach": "E76",
+        "art": "mechanisch",
+        "medium": "Drehmoment",
+        "absatz_ids": [
+          "P23",
+          "P26"
+        ],
+        "schnittstelle": "Pumpenantrieb"
+      },
+      {
+        "id": "S10",
+        "von": "E15",
+        "nach": "E17",
+        "art": "mechanisch",
+        "medium": "Drehmoment",
+        "absatz_ids": [
+          "P6",
+          "P26"
+        ]
+      },
+      {
+        "id": "S11",
+        "von": "E17",
+        "nach": "E9",
+        "art": "mechanisch",
+        "medium": "Drehmoment",
+        "absatz_ids": [
+          "P6",
+          "P26"
+        ],
+        "schnittstelle": "Triebachsantrieb"
+      },
+      {
+        "id": "S12",
+        "von": "E24",
+        "nach": "E25",
+        "art": "pneumatisch",
+        "medium": "Steuerdruck",
+        "absatz_ids": [
+          "P11",
+          "P26"
+        ]
+      },
+      {
+        "id": "S13",
+        "von": "E24",
+        "nach": "E26",
+        "art": "pneumatisch",
+        "medium": "Vorratsdruck",
+        "absatz_ids": [
+          "P11",
+          "P26"
+        ]
+      },
+      {
+        "id": "S14",
+        "von": "E26",
+        "nach": "E25",
+        "art": "pneumatisch",
+        "medium": "Druckluft",
+        "absatz_ids": [
+          "P11"
+        ]
+      },
+      {
+        "id": "S15",
+        "von": "E25",
+        "nach": "E27",
+        "art": "pneumatisch",
+        "medium": "Bremsdruck",
+        "absatz_ids": [
+          "P11",
+          "P26"
+        ]
+      },
+      {
+        "id": "S16",
+        "von": "E27",
+        "nach": "E28",
+        "art": "mechanisch",
+        "medium": "Spannkraft",
+        "absatz_ids": [
+          "P11"
+        ]
+      },
+      {
+        "id": "S17",
+        "von": "E10",
+        "nach": "E30",
+        "art": "information",
+        "medium": "Lastsignal",
+        "absatz_ids": [
+          "P11",
+          "P26"
+        ],
+        "schnittstelle": "Lastsignal Bremsregelung"
+      },
+      {
+        "id": "S18",
+        "von": "E59",
+        "nach": "E30",
+        "art": "information",
+        "medium": "Lastsignal",
+        "absatz_ids": [
+          "P11",
+          "P26"
+        ],
+        "schnittstelle": "Lastsignal Bremsregelung"
+      },
+      {
+        "id": "S19",
+        "von": "E30",
+        "nach": "E25",
+        "art": "information",
+        "medium": "Regelsignal",
+        "absatz_ids": [
+          "P11"
+        ]
+      },
+      {
+        "id": "S20",
+        "von": "E52",
+        "nach": "E30",
+        "art": "elektrisch",
+        "medium": "Bordnetzspannung",
+        "absatz_ids": [
+          "P16"
+        ],
+        "schnittstelle": "Versorgung Bremselektrik"
+      },
+      {
+        "id": "S21",
+        "von": "E73",
+        "nach": "E74",
+        "art": "hydraulisch",
+        "medium": "Drucköl",
+        "absatz_ids": [
+          "P23",
+          "P26"
+        ]
+      },
+      {
+        "id": "S22",
+        "von": "E74",
+        "nach": "E75",
+        "art": "hydraulisch",
+        "medium": "Drucköl",
+        "absatz_ids": [
+          "P23"
+        ]
+      },
+      {
+        "id": "S23",
+        "von": "E75",
+        "nach": "E38",
+        "art": "hydraulisch",
+        "medium": "Drucköl",
+        "absatz_ids": [
+          "P23",
+          "P26"
+        ],
+        "schnittstelle": "Hydraulikanschluss Kippeinrichtung"
+      },
+      {
+        "id": "S24",
+        "von": "E75",
+        "nach": "E44",
+        "art": "hydraulisch",
+        "medium": "Drucköl",
+        "absatz_ids": [
+          "P23",
+          "P26"
+        ],
+        "schnittstelle": "Hydraulikanschluss Kratzbodenantrieb"
+      },
+      {
+        "id": "S25",
+        "von": "E75",
+        "nach": "E21",
+        "art": "hydraulisch",
+        "medium": "Drucköl",
+        "absatz_ids": [
+          "P23",
+          "P26"
+        ],
+        "schnittstelle": "Hydraulikanschluss Zwangslenkung"
+      },
+      {
+        "id": "S26",
+        "von": "E38",
+        "nach": "E33",
+        "art": "mechanisch",
+        "medium": "Hubkraft",
+        "absatz_ids": [
+          "P14"
+        ]
+      },
+      {
+        "id": "S27",
+        "von": "E39",
+        "nach": "E3",
+        "art": "mechanisch",
+        "medium": "Gewichtskraft",
+        "absatz_ids": [
+          "P14"
+        ],
+        "schnittstelle": "Aufbaubefestigung am Rahmen"
+      },
+      {
+        "id": "S28",
+        "von": "E41",
+        "nach": "E42",
+        "art": "stoff",
+        "medium": "Erntegut",
+        "absatz_ids": [
+          "P12"
+        ]
+      },
+      {
+        "id": "S29",
+        "von": "E42",
+        "nach": "E44",
+        "art": "stoff",
+        "medium": "Erntegut",
+        "absatz_ids": [
+          "P12"
+        ]
+      },
+      {
+        "id": "S30",
+        "von": "E51",
+        "nach": "E50",
+        "art": "elektrisch",
+        "medium": "Bordnetzspannung",
+        "absatz_ids": [
+          "P16"
+        ]
+      },
+      {
+        "id": "S31",
+        "von": "E50",
+        "nach": "E66",
+        "art": "elektrisch",
+        "medium": "Bordnetzspannung",
+        "absatz_ids": [
+          "P16",
+          "P22",
+          "P26"
+        ],
+        "schnittstelle": "Lichtstromkreis"
+      },
+      {
+        "id": "S32",
+        "von": "E50",
+        "nach": "E69",
+        "art": "elektrisch",
+        "medium": "Bordnetzspannung",
+        "absatz_ids": [
+          "P22",
+          "P26"
+        ],
+        "schnittstelle": "Arbeitslichtstromkreis"
+      },
+      {
+        "id": "S33",
+        "von": "E50",
+        "nach": "E70",
+        "art": "elektrisch",
+        "medium": "Bordnetzspannung",
+        "absatz_ids": [
+          "P22",
+          "P26"
+        ],
+        "schnittstelle": "Kameraversorgung"
+      },
+      {
+        "id": "S34",
+        "von": "E50",
+        "nach": "E57",
+        "art": "elektrisch",
+        "medium": "Bordnetzspannung",
+        "absatz_ids": [
+          "P16",
+          "P26"
+        ],
+        "schnittstelle": "Versorgung Jobrechner"
+      },
+      {
+        "id": "S35",
+        "von": "E54",
+        "nach": "E53",
+        "art": "information",
+        "medium": "Busdaten",
+        "absatz_ids": [
+          "P15",
+          "P26"
+        ]
+      },
+      {
+        "id": "S36",
+        "von": "E53",
+        "nach": "E57",
+        "art": "information",
+        "medium": "Busdaten",
+        "absatz_ids": [
+          "P16",
+          "P26"
+        ],
+        "schnittstelle": "Busanschluss Jobrechner"
+      },
+      {
+        "id": "S37",
+        "von": "E57",
+        "nach": "E74",
+        "art": "information",
+        "medium": "Ventilansteuerung",
+        "absatz_ids": [
+          "P18",
+          "P26"
+        ],
+        "schnittstelle": "Ventilansteuerung Anhängerhydraulik"
+      },
+      {
+        "id": "S38",
+        "von": "E55",
+        "nach": "E57",
+        "art": "information",
+        "medium": "Sensorsignale",
+        "absatz_ids": [
+          "P16",
+          "P26"
+        ],
+        "schnittstelle": "Sensoreingänge Jobrechner"
+      },
+      {
+        "id": "S39",
+        "von": "E57",
+        "nach": "E58",
+        "art": "information",
+        "medium": "Fehlerspeicher",
+        "absatz_ids": [
+          "P18"
+        ]
+      },
+      {
+        "id": "S40",
+        "von": "E59",
+        "nach": "E57",
+        "art": "information",
+        "medium": "Wiegesignal",
+        "absatz_ids": [
+          "P18"
+        ]
+      },
+      {
+        "id": "S41",
+        "von": "E62",
+        "nach": "E57",
+        "art": "information",
+        "medium": "Zustandsmeldung",
+        "absatz_ids": [
+          "P20",
+          "P26"
+        ],
+        "schnittstelle": "Meldung Reifendruck"
+      },
+      {
+        "id": "S42",
+        "von": "E63",
+        "nach": "E57",
+        "art": "information",
+        "medium": "Zustandsmeldung",
+        "absatz_ids": [
+          "P20",
+          "P26"
+        ],
+        "schnittstelle": "Meldung Kippzustand"
+      },
+      {
+        "id": "S43",
+        "von": "E61",
+        "nach": "E5",
+        "art": "mechanisch",
+        "medium": "Haltekraft",
+        "absatz_ids": [
+          "P19"
+        ],
+        "schnittstelle": "Sicherungsverbindung an der Deichsel"
+      },
+      {
+        "id": "S44",
+        "von": "E76",
+        "nach": "E46",
+        "art": "pneumatisch",
+        "medium": "Unterdruck oder Überdruck",
+        "absatz_ids": [
+          "P23",
+          "P26"
+        ],
+        "schnittstelle": "Vakuumanschluss Tankbehälter"
+      },
+      {
+        "id": "S45",
+        "von": "E77",
+        "nach": "E46",
+        "art": "stoff",
+        "medium": "Gülle",
+        "absatz_ids": [
+          "P23"
+        ],
+        "schnittstelle": "Pumpenanschluss Tankbehälter"
+      },
+      {
+        "id": "S46",
+        "von": "E46",
+        "nach": "E47",
+        "art": "stoff",
+        "medium": "Gülle",
+        "absatz_ids": [
+          "P13",
+          "P26"
+        ]
+      }
+    ],
+    "entfallene_kategorien": [
+      {
+        "kategorie": "energieversorgung",
+        "grund": "Der Anhänger hat keinen eigenen Kraftstoff-, Batterie- oder Generatorspeicher; elektrische Energie übernimmt die Elektrik und Elektronik, hydraulische und mechanische Leistung übernehmen Neben- und Versorgungssysteme und Antriebssystem vom Traktor."
+      },
+      {
+        "kategorie": "bedienraum",
+        "grund": "Kein Bedienplatz und keine Person an Bord; bedient wird vom Fahrerhaus des Traktors über dessen Terminal und Steuergeräte."
+      },
+      {
+        "kategorie": "thermomanagement",
+        "grund": "Keine aktiv temperierten Komponenten; Bremswärme wird passiv abgegeben, Hydrauliköl wird im Traktor gekühlt."
+      }
+    ],
+    "varianten": [
+      {
+        "id": "V1",
+        "element_id": "E2",
+        "bezeichnung": "Deichsel- und Achsbauart",
+        "alternativen": [
+          "Starrdeichselanhänger mit Einzel-, Tandem- oder Tridemachse",
+          "Drehschemelanhänger mit gelenkter Vorderachse"
+        ],
+        "auswahlkriterien": [
+          "Stützlastaufnahme und Traktion des Traktors",
+          "Wendigkeit und Reifenabrieb",
+          "Kippstabilität beim Kurvenfahren und Kippen",
+          "Ankuppelaufwand und Rangierbarkeit"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E18",
+            "beschreibung": "Drehschemel beim Drehschemelanhänger, Lenkachse oder keine Lenkung beim Starrdeichselanhänger."
+          },
+          {
+            "element_id": "E5",
+            "beschreibung": "Starre, stützlasttragende Deichsel oder vertikal bewegliche, gefederte Deichsel am Drehschemel."
+          },
+          {
+            "element_id": "E7",
+            "beschreibung": "Stützeinrichtung nur beim Starrdeichselanhänger."
+          },
+          {
+            "element_id": "E22",
+            "beschreibung": "Zahl der gebremsten Achsen und der Unterlegkeile ändert sich."
+          }
+        ],
+        "absatz_ids": [
+          "P3",
+          "P4",
+          "P7",
+          "P8"
+        ]
+      },
+      {
+        "id": "V2",
+        "element_id": "E23",
+        "bezeichnung": "Bremsübertragung",
+        "alternativen": [
+          "Druckluft-Zweileitungsbremse",
+          "hydraulische Zweileitungsbremse",
+          "Auflaufbremse für leichte Anhänger"
+        ],
+        "auswahlkriterien": [
+          "Ausstattung der vorgesehenen Traktoren",
+          "bauartbedingte Höchstgeschwindigkeit und Fahrzeugklasse",
+          "Feinfühligkeit der Bremsung und Streckung des Zuges",
+          "Kosten und Wartung"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E26",
+            "beschreibung": "Vorratsbehälter nur bei Druckluftbremse."
+          },
+          {
+            "element_id": "E24",
+            "beschreibung": "Kupplungsköpfe für Vorrats- und Bremsleitung oder Steuer- und Zusatzleitung."
+          },
+          {
+            "element_id": "E52",
+            "beschreibung": "Bremsensteckverbindung für Notbremsventil, Lastenregler und Drucküberwachung bei durchgehender Bremse."
+          },
+          {
+            "element_id": "E61",
+            "beschreibung": "Bei Auflaufbremse Abreißeinrichtung statt Bremsauslösung über die Leitungen."
+          }
+        ],
+        "absatz_ids": [
+          "P9",
+          "P10",
+          "P11"
+        ]
+      },
+      {
+        "id": "V3",
+        "element_id": "E32",
+        "bezeichnung": "Aufbauart",
+        "alternativen": [
+          "Kippbrücke",
+          "Ladewagen mit Ladeaggregat",
+          "Güllefass mit Gülletank"
+        ],
+        "auswahlkriterien": [
+          "Transportgut und Ernteverfahren",
+          "Auslastung über das Jahr",
+          "verfügbare Zapfwellen- und Hydraulikleistung des Traktors",
+          "Nutzlast und Fahrzeugklasse"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E12",
+            "beschreibung": "Antriebssystem entfällt beim Kipper, Kraftübertragung beim Ladewagen und Güllefass."
+          },
+          {
+            "element_id": "E72",
+            "beschreibung": "Kipphydraulik, Rückwand- und Kratzbodenantrieb oder Befüllbeschleuniger bestimmen die Hydraulikkreise."
+          },
+          {
+            "element_id": "E76",
+            "beschreibung": "Unterdruckpumpe oder Förderpumpe nur beim Güllefass."
+          },
+          {
+            "element_id": "E57",
+            "beschreibung": "Jobrechner beim Ladewagen und Güllefass, beim Kipper oft entbehrlich."
+          },
+          {
+            "element_id": "E3",
+            "beschreibung": "Rahmen mit Kipplager, mit umbautem Laderaum oder mit Tankauflage."
+          }
+        ],
+        "absatz_ids": [
+          "P12",
+          "P13",
+          "P14",
+          "P18"
+        ]
+      },
+      {
+        "id": "V4",
+        "element_id": "E12",
+        "bezeichnung": "Triebachse",
+        "alternativen": [
+          "ungetriebene Achsen",
+          "Triebachse mit Achsantrieb über die Wegezapfwelle"
+        ],
+        "auswahlkriterien": [
+          "Gelände, Hangneigung und Bodenzustand",
+          "Ausstattung des Traktors mit Wegezapfwelle",
+          "Mehrgewicht und Kosten"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E9",
+            "beschreibung": "Achse mit Achsgetriebe statt einfacher Starrachse."
+          },
+          {
+            "element_id": "E15",
+            "beschreibung": "Verteilergetriebe braucht einen zusätzlichen Abtrieb."
+          },
+          {
+            "element_id": "E28",
+            "beschreibung": "Bremsen der angetriebenen Achse nehmen zusätzlich Antriebsmomente auf."
+          }
+        ],
+        "absatz_ids": [
+          "P5",
+          "P6"
+        ]
+      },
+      {
+        "id": "V5",
+        "element_id": "E71",
+        "bezeichnung": "Fördersystem des Güllefasses",
+        "alternativen": [
+          "Vakuum-Tankwagen mit Unterdruckpumpe",
+          "Pump-Tankwagen mit Verdrängerpumpe",
+          "Schleuder-Tankwagen mit Kreiselpumpe und externer Befüllung"
+        ],
+        "auswahlkriterien": [
+          "Selbstbefüllung aus der Güllegrube",
+          "Verschleiß durch Kontakt mit der Gülle",
+          "Nutzlast durch leichteren Tank",
+          "Verträglichkeit mit dem Verteilgerät"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E46",
+            "beschreibung": "Druck- und vakuumfester Stahlbehälter oder leichterer Behälter, etwa aus glasfaserverstärktem Kunststoff."
+          },
+          {
+            "element_id": "E47",
+            "beschreibung": "Förderdruck und Fördermenge bestimmen die nutzbare Verteiltechnik."
+          },
+          {
+            "element_id": "E13",
+            "beschreibung": "Antriebsleistung und Drehzahl der Pumpe bestimmen die Kraftübertragung."
+          }
+        ],
+        "absatz_ids": [
+          "P13",
+          "P23"
+        ]
+      },
+      {
+        "id": "V6",
+        "element_id": "E37",
+        "bezeichnung": "Kipprichtung",
+        "alternativen": [
+          "Hinterkipper",
+          "Dreiseitenkipper"
+        ],
+        "auswahlkriterien": [
+          "Entladeorte und Platzverhältnisse",
+          "Restladung und Gutart",
+          "Bauaufwand der Bordwände"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E35",
+            "beschreibung": "Beim Dreiseitenkipper sind alle Bordwände außer der Vorderwand beweglich."
+          },
+          {
+            "element_id": "E39",
+            "beschreibung": "Kipplager für eine oder drei Kipprichtungen."
+          },
+          {
+            "element_id": "E63",
+            "beschreibung": "Seitliches Kippen verschärft die Anforderungen an die Kippüberwachung."
+          }
+        ],
+        "absatz_ids": [
+          "P12",
+          "P14"
+        ]
+      }
+    ],
+    "klaerungsfragen": [
+      {
+        "id": "K1",
+        "frage": "Soll der Anhänger als Starrdeichselanhänger mit Tandem- oder Tridemachse oder als Drehschemelanhänger ausgeführt werden?",
+        "element_ids": [
+          "E2",
+          "E18"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Deichselbauart, Stützlast am Traktor, Lenksystem und Kippstabilität ab.",
+        "variante_ids": [
+          "V1"
+        ]
+      },
+      {
+        "id": "K2",
+        "frage": "Welche Anhängevorrichtungen der vorgesehenen Traktoren muss die Zugöse bedienen, etwa Zugmaul, Zugpendel oder Kugelkopf in unterer Anhängung?",
+        "element_ids": [
+          "E4",
+          "E6"
+        ],
+        "anlass": "schnittstelle",
+        "relevanz": "Davon hängen Bauart der Zugöse und die zulässige Stützlast ab."
+      },
+      {
+        "id": "K3",
+        "frage": "Braucht der Anhänger für Hang- oder Nassbodeneinsatz eine Triebachse, und besitzen die vorgesehenen Traktoren eine Wegezapfwelle?",
+        "element_ids": [
+          "E12",
+          "E17"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Achsantrieb, Verteilergetriebe und Achsbauart ab.",
+        "variante_ids": [
+          "V4"
+        ]
+      },
+      {
+        "id": "K4",
+        "frage": "Welche Zapfwellendrehzahl und welche Antriebsleistung stellen die vorgesehenen Traktoren für Ladeaggregat oder Pumpe bereit?",
+        "element_ids": [
+          "E13",
+          "E14"
+        ],
+        "anlass": "schnittstelle",
+        "relevanz": "Davon hängen Auslegung von Gelenkwelle und Verteilergetriebe sowie die Ladeleistung ab.",
+        "variante_ids": [
+          "V3"
+        ]
+      },
+      {
+        "id": "K5",
+        "frage": "Muss der Anhänger auf engen Hofflächen oder reifenschonend auf Grünland wenden, sodass eine Nachlauf- oder Zwangslenkung nötig ist?",
+        "element_ids": [
+          "E18",
+          "E20",
+          "E21"
+        ],
+        "anlass": "betrieb",
+        "relevanz": "Davon hängen Lenkachse, Lenkzylinder und ein zusätzlicher Hydraulikkreis ab.",
+        "variante_ids": [
+          "V1"
+        ]
+      },
+      {
+        "id": "K6",
+        "frage": "Soll die Betriebsbremse mit Druckluft oder hydraulisch im Zweileitungsprinzip angesteuert werden?",
+        "element_ids": [
+          "E22",
+          "E23"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Vorratsbehälter, Bremsanschlüsse und die Kompatibilität mit vorhandenen Traktoren ab.",
+        "variante_ids": [
+          "V2"
+        ]
+      },
+      {
+        "id": "K7",
+        "frage": "Für welche bauartbedingte Höchstgeschwindigkeit soll der Anhänger genehmigt werden?",
+        "element_ids": [
+          "E22",
+          "E30",
+          "E8"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Fahrzeugklasse, geforderte Bremswirkung, Bremskraftregelung und Federung ab.",
+        "variante_ids": [
+          "V2"
+        ]
+      },
+      {
+        "id": "K8",
+        "frage": "Welche Aufbauart braucht der Betrieb, Kippbrücke, Ladewagen oder Güllefass, und soll der Aufbau wechselbar sein?",
+        "element_ids": [
+          "E32"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Antriebssystem, Hydraulikkreise, Jobrechner und Rahmen ab.",
+        "variante_ids": [
+          "V3"
+        ]
+      },
+      {
+        "id": "K9",
+        "frage": "Soll die Kippbrücke nur nach hinten oder nach drei Seiten kippen?",
+        "element_ids": [
+          "E37",
+          "E35"
+        ],
+        "anlass": "betrieb",
+        "relevanz": "Davon hängen Bordwände, Kipplager und Kippüberwachung ab.",
+        "variante_ids": [
+          "V6"
+        ]
+      },
+      {
+        "id": "K10",
+        "frage": "Soll das Güllefass selbst aus der Grube ansaugen oder über eine Förderpumpe oder eine stationäre Pumpe befüllt werden?",
+        "element_ids": [
+          "E71",
+          "E76",
+          "E77"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Pumpenart, Tankbauweise und Nutzlast ab.",
+        "variante_ids": [
+          "V5"
+        ]
+      },
+      {
+        "id": "K11",
+        "frage": "Soll der Anhänger über ein Bussystem mit Terminal im Traktor bedient werden, oder genügt die direkte Betätigung über die Steuergeräte des Traktors?",
+        "element_ids": [
+          "E48",
+          "E53",
+          "E56"
+        ],
+        "anlass": "schnittstelle",
+        "relevanz": "Davon hängen Jobrechner, Gerätestecker, Sensorik und Steuerblock ab.",
+        "variante_ids": [
+          "V3"
+        ]
+      },
+      {
+        "id": "K12",
+        "frage": "Welche Daten zu Ladungsmasse, Ausbringmenge und Arbeitsort sollen erfasst und an die Betriebsdokumentation übergeben werden?",
+        "element_ids": [
+          "E56",
+          "E59"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Wiegeeinrichtung, Sensorik und Funktionsumfang des Jobrechners ab."
+      },
+      {
+        "id": "K13",
+        "frage": "Sollen Reifendruck und Kippzustand überwacht werden, und wie soll der Fahrer im Traktor gewarnt werden?",
+        "element_ids": [
+          "E60",
+          "E62",
+          "E63"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Sensorik, Jobrechner und Anzeigeumfang am Terminal ab.",
+        "variante_ids": [
+          "V6"
+        ]
+      },
+      {
+        "id": "K14",
+        "frage": "Wird der Anhänger regelmäßig bei Dunkelheit beladen oder rangiert, sodass Arbeitsscheinwerfer und eine Heckkamera vorzusehen sind?",
+        "element_ids": [
+          "E64",
+          "E69",
+          "E70"
+        ],
+        "anlass": "betrieb",
+        "relevanz": "Davon hängen Leitungssatz, Stromaufnahme und Monitor im Traktor ab."
+      },
+      {
+        "id": "K15",
+        "frage": "Welche Hydraulikkreise und welcher Ölvolumenstrom stehen am Traktor für den Anhänger zur Verfügung?",
+        "element_ids": [
+          "E71",
+          "E72"
+        ],
+        "anlass": "schnittstelle",
+        "relevanz": "Davon hängen Steuerblock, Zahl der Hydraulikkupplungen und Arbeitsgeschwindigkeit der Aggregate ab.",
+        "variante_ids": [
+          "V3"
+        ]
+      }
+    ],
+    "anforderungsthemen": [
+      {
+        "id": "R1",
+        "element_ids": [
+          "E2",
+          "E8",
+          "E11"
+        ],
+        "thema": "Achslasten, Gesamtmasse und Stützlast",
+        "kenngroessen": [
+          "technisch zulässige Achsmassen",
+          "technisch zulässige Gesamtmasse",
+          "Leermasse",
+          "Stützlast",
+          "Reifentragfähigkeit"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "Verordnung (EU) Nr. 167/2013, Fahrzeugklassen R1 bis R4 und Begriff Anhänger (EU)",
+            "quellen_id": "Q1",
+            "fundstelle": "Artikel 3 Nr. 9; Artikel 4 Nr. 10 bis 14"
+          }
+        ]
+      },
+      {
+        "id": "R2",
+        "element_ids": [
+          "E2",
+          "E4"
+        ],
+        "thema": "Abmessungen und Bodenschonung",
+        "kenngroessen": [
+          "Fahrzeugbreite",
+          "Fahrzeuglänge",
+          "Reifenbreite",
+          "Reifenfülldruck",
+          "Bodendruck"
+        ]
+      },
+      {
+        "id": "R3",
+        "element_ids": [
+          "E12",
+          "E13"
+        ],
+        "thema": "Leistungsbedarf der Arbeitsaggregate",
+        "kenngroessen": [
+          "Zapfwellendrehzahl",
+          "Antriebsleistung",
+          "Drehmomentgrenze der Gelenkwelle",
+          "Übersetzung der Triebachse"
+        ]
+      },
+      {
+        "id": "R4",
+        "element_ids": [
+          "E18"
+        ],
+        "thema": "Wendigkeit und Spurtreue",
+        "kenngroessen": [
+          "Wendekreis",
+          "Lenkeinschlag",
+          "Kippstabilität bei Kurvenfahrt",
+          "Reifenabrieb"
+        ]
+      },
+      {
+        "id": "R5",
+        "element_ids": [
+          "E22",
+          "E23",
+          "E29"
+        ],
+        "thema": "Bremswirkung und Bremssicherheit",
+        "kenngroessen": [
+          "Abbremsung",
+          "Bremsverzögerung",
+          "Feststellbremswirkung am Gefälle",
+          "Ansprechverhalten",
+          "lastabhängige Bremskraftregelung"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "Delegierte Verordnung (EU) 2015/68, Bremsanforderungen für gezogene Fahrzeuge der Klassen R und S (EU)",
+            "quellen_id": "Q2",
+            "fundstelle": "Anhang I Nr. 2.1.1.5 und Nr. 2.2.2"
+          }
+        ]
+      },
+      {
+        "id": "R6",
+        "element_ids": [
+          "E32",
+          "E33",
+          "E40",
+          "E45"
+        ],
+        "thema": "Ladevolumen und Entladeleistung",
+        "kenngroessen": [
+          "Ladevolumen",
+          "Nutzlast",
+          "Kippwinkel",
+          "Entladezeit",
+          "Ausbringbreite",
+          "Schnittlänge"
+        ]
+      },
+      {
+        "id": "R7",
+        "element_ids": [
+          "E48",
+          "E49"
+        ],
+        "thema": "Elektrische Schnittstellen zum Traktor",
+        "kenngroessen": [
+          "Bordnetzspannung",
+          "Stromaufnahme",
+          "Steckerbelegung",
+          "Schutzart"
+        ]
+      },
+      {
+        "id": "R8",
+        "element_ids": [
+          "E56",
+          "E57"
+        ],
+        "thema": "Bedienung und Dokumentation",
+        "kenngroessen": [
+          "Funktionsumfang am Terminal",
+          "Datenumfang der Dokumentation",
+          "Diagnosetiefe",
+          "Kompatibilität mit Traktoren"
+        ]
+      },
+      {
+        "id": "R9",
+        "element_ids": [
+          "E60",
+          "E61"
+        ],
+        "thema": "Absicherung bei Kupplungstrennung und Kippen",
+        "kenngroessen": [
+          "Haltefähigkeit der Sicherungsverbindung",
+          "Abreißbremswirkung",
+          "Kippstabilitätsgrenze",
+          "Warnschwelle Reifendruck"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "Delegierte Verordnung (EU) 2015/68, Verhalten bei Trennung der Kupplung (EU)",
+            "quellen_id": "Q2",
+            "fundstelle": "Anhang I Nr. 2.2.2.9 bis 2.2.2.9.3"
+          }
+        ]
+      },
+      {
+        "id": "R10",
+        "element_ids": [
+          "E64",
+          "E65"
+        ],
+        "thema": "Erkennbarkeit im Straßenverkehr",
+        "kenngroessen": [
+          "Leuchtenanordnung",
+          "Anbauhöhe",
+          "Sichtbarkeit der Markierung",
+          "Ausleuchtung des Arbeitsbereichs"
+        ]
+      },
+      {
+        "id": "R11",
+        "element_ids": [
+          "E71",
+          "E72",
+          "E76"
+        ],
+        "thema": "Hydraulische und pneumatische Versorgung",
+        "kenngroessen": [
+          "Ölvolumenstrom",
+          "Betriebsdruck",
+          "Zahl der Hydraulikkreise",
+          "Unterdruck im Tank"
+        ]
+      }
+    ]
+  },
+  "offene_punkte": [
+    "Glossarvorschlag: Funktion „Anhänger kuppeln“ (Verbindung des gezogenen Fahrzeugs mit dem Zugfahrzeug über Zugöse, Deichsel und Sicherungsverbindung; bereits in A-0009 aus Sicht des Zugfahrzeugs vorgeschlagen).",
+    "Glossarvorschlag: Funktion „Ladung entladen“ (Abkippen oder Austragen der Ladung über Kippeinrichtung oder Kratzboden; Gegenstück zu „Ladung aufnehmen“).",
+    "Glossarvorschlag: Funktion „Material ausbringen“ (dosiertes flächiges Verteilen von Gülle oder Streugut über ein Verteilgerät; nicht synonym zu „Ladung entladen“).",
+    "Recherche: Fachliteratur Landtechnik zu Fahrwerken, Nachlauf- und Zwangslenkachsen landwirtschaftlicher Anhänger, etwa H. Eichhorn (Hrsg.), Landtechnik, Ulmer; Zeitschrift LANDTECHNIK über 440ejournals.uni-hohenheim.de war in diesem Lauf nicht erreichbar.",
+    "Recherche: deutsche Vorschriften für land- und forstwirtschaftliche Anhänger (StVZO, FZV, Höchstgeschwindigkeiten, Kennzeichnung); die Broschüre „Landwirtschaftliche Fahrzeuge im Straßenverkehr“ auf landwirtschaft.sachsen.de lieferte beim Abruf 404.",
+    "Recherche: EU-Originalfassungen der Verordnung (EU) Nr. 167/2013 und der Delegierten Verordnung (EU) 2015/68 auf eur-lex.europa.eu prüfen; eur-lex lieferte keinen Inhalt, verwendet wurde die Fassung von legislation.gov.uk.",
+    "Recherche: Delegierte Verordnung (EU) 2015/208 (Anforderungen an die funktionale Sicherheit, darunter Beleuchtung und Verbindungseinrichtungen) für Beleuchtung, Zugösen und Stützeinrichtungen land- und forstwirtschaftlicher Anhänger.",
+    "Recherche: Quellen zu Reifendrucküberwachung und Kippüberwachung an Landwirtschaftsanhängern, Suchbegriffe „Reifendruckregelanlage Anhänger Landwirtschaft“, „Kippsicherung Muldenkipper Neigungssensor“; der Abschnitt Assistenz und Sicherheit stützt sich dafür nur auf Herleitung.",
+    "Recherche: Antriebsstrang von Ladewagen und Güllefass (Hauptgetriebe, Überlastkupplung, Verteilergetriebe), Suchbegriffe „Ladewagen Hauptgetriebe Nockenschaltkupplung“, „Triebachse Güllefass Übersetzung Voreilung“.",
+    "Recherche: Wikipedia-Artikel „Anhängersteckdose“ und die Norm ISO 7638 zur Belegung der Bremsensteckverbindung; die Wikimedia-Schnittstelle war in diesem Lauf zeitweise durch Ratenbegrenzung gesperrt."
+  ]
+}

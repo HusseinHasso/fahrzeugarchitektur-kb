@@ -1,0 +1,912 @@
+{
+  "schema_version": "2.3",
+  "artikel_id": "A-0044",
+  "artikeltyp": "blatt",
+  "titel": "Mähdrescher",
+  "betrachtungsumfang": "Selbstfahrender Mähdrescher für Getreide und andere Druschfrüchte mit dieselmotorischem Antrieb, als Rad- oder Raupenmaschine, mit wechselbaren Erntevorsätzen und tangentialem, axialem oder hybridem Dreschsystem einschließlich Hangausgleich. Ausgeschlossen sind gezogene Mähdrescher sowie batterieelektrische, hybride und wasserstoffbasierte Antriebe; Parzellen- und Kleinmähdrescher werden nicht gesondert betrachtet.",
+  "status": "in_arbeit",
+  "quellenzugriff": "ja",
+  "kindartikel_ids": [],
+  "quellen": [
+    {
+      "quellen_id": "Q1",
+      "titel": "Mähdrescher",
+      "urheber": "Wikipedia, Die freie Enzyklopädie (deutschsprachig)",
+      "stand": "Fassung vom Abrufdatum (Quelltext über action=raw gelesen)",
+      "url": "https://de.wikipedia.org/wiki/M%C3%A4hdrescher",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q2",
+      "titel": "Combine harvester",
+      "urheber": "Wikipedia, The Free Encyclopedia (englischsprachig)",
+      "stand": "Fassung vom Abrufdatum (Quelltext über action=raw gelesen)",
+      "url": "https://en.wikipedia.org/wiki/Combine_harvester",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q3",
+      "titel": "Straßenverkehrs-Zulassungs-Ordnung (StVZO), § 32 Abmessungen von Fahrzeugen und Fahrzeugkombinationen",
+      "urheber": "Bundesministerium der Justiz (gesetze-im-internet.de)",
+      "stand": "Fassung vom Abrufdatum",
+      "url": "https://www.gesetze-im-internet.de/stvzo_2012/__32.html",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q4",
+      "titel": "Preventing and responding to combine fires (EM 9326)",
+      "urheber": "Jacob Powell, Oregon State University Extension Service",
+      "stand": "Veröffentlicht Juli 2021, überprüft 2026",
+      "url": "https://extension.oregonstate.edu/catalog/em-9326-preventing-responding-combine-fires",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "fachliteratur"
+    }
+  ],
+  "abschnitte": [
+    {
+      "ueberschrift": "Einleitung",
+      "abschnittstyp": "gesamtsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P1",
+          "text": "Ein Mähdrescher ist eine landwirtschaftliche Erntemaschine für Getreide wie Weizen, Gerste, Roggen, Hafer oder Mais, die Mähen und Dreschen in einer Maschine verbindet. Das Korn wird von Spreu, Stroh und Verunreinigungen getrennt und in einem eingebauten Korntank gesammelt; das Stroh wird gehäckselt und auf dem Feld verteilt oder in Schwaden gelegt. Nach der Fortbewegungsart unterscheidet man Selbstfahrer mit eigenem Antrieb und gezogene Geräte, deren Arbeitsorgane über die Zapfwelle des Traktors oder einen Aufbaumotor angetrieben werden.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q1", "fundstelle": "Einleitung; Abschnitt Mähdreschertypen, Fahrantrieb"}
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "funktion"
+        },
+        {
+          "absatz_id": "P2",
+          "text": "Der Artikel beschreibt den selbstfahrenden Mähdrescher als Fahrzeug und mobile Verarbeitungsanlage zugleich: Das Erntegut durchläuft Erntevorsatz, Dreschwerk, Abscheidung und Reinigung bis zum Korntank, während der Fahrantrieb die Maschine mit einer an den Bestand angepassten Geschwindigkeit bewegt. Mechanische, hydraulische, elektrische, thermische, informationstechnische und stoffliche Schnittstellen koppeln die Systeme; die Dekomposition zerlegt jedes Hauptsystem in Subsysteme und Komponenten.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herangezogene_artikel_ids": [],
+          "herleitung": {
+            "praemissen": ["P1", "Q1: Baugruppenschema mit Erntevorsatz, Dreschwerk, Abscheidung, Reinigung und Korntank", "P7: Fahrgeschwindigkeit muss stufenlos an den Bestand angepasst werden"],
+            "schluss": "Der Mähdrescher vereint Fahrfunktion und einen durchgehenden Gutfluss; seine Systeme sind über Energie-, Stoff- und Informationsschnittstellen gekoppelt."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "funktion"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrzeugstruktur und Fahrwerk",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E2",
+      "absaetze": [
+        {
+          "absatz_id": "P3",
+          "text": "Die ganze Maschine sitzt auf einem Fahrwerk, das von zwei großen, breiten Rädern direkt hinter dem Schneidwerk und unterhalb der Kabine dominiert wird; gelenkt wird über die hinteren, kleineren Räder. In schwierigem Gelände kommen Allradantriebe und vermehrt Raupenlaufwerke zum Einsatz, die den Boden weniger verdichten und ruhiger laufen, was bei sehr breiten Schneidwerken wichtig ist. Als Hecklenker mit unmittelbar vor der Vorderachse montiertem Schneidwerk erreicht der Mähdrescher einen sehr engen Wendekreis.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q1", "fundstelle": "Abschnitt Beschreibung der Baugruppen, Fahrwerk (erster Absatz)"}
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P4",
+          "text": "Der Rahmen trägt Motor, Arbeitsausrüstung, Korntank und Fahrerhaus und leitet die Lasten über das Laufwerk mit Vorderachse, Lenkachse sowie Räder und Reifen oder Raupenlaufwerk in den Boden. Da Erntevorsatz, Kabine und Korntank weit vorn liegen, ist die Vorderachse Haupttrag- und Antriebsachse; der wechselnde Füllstand des Korntanks verschiebt die Achslasten während der Arbeit.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herangezogene_artikel_ids": [],
+          "herleitung": {
+            "praemissen": ["P3", "Q1: Baugruppenschema mit Motor, Korntank und Fahrerkabine über dem Fahrwerk", "Ein Vorratsbehälter mit wechselndem Füllstand verändert Masse und Schwerpunkt"],
+            "schluss": "Rahmen und Laufwerk sind auf eine vorderlastige, sich während der Arbeit ändernde Lastverteilung ausgelegt."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P5",
+          "text": "Für Hanglagen hebt oder senkt ein Hangfahrwerk die Maschine so, dass die Dreschorgane waagerecht liegen; heute geschieht dieser Hangausgleich in der Regel mit zwei Hydraulikzylindern, die den Mähdrescher einseitig von der Vorderachse abheben, während die pendelnd gelagerte Hinterachse keinen Ausgleich braucht. Das ist aufwendig, hält aber das Fahrzeug außer dem Schneidwerk waagerecht, sodass Reinigung und Korntankvolumen nicht durch die Seitenlage beeinträchtigt werden. Einfachere Lösungen sind Querbleche auf den Sieben oder ein Hangausgleich an der Reinigung, der nur Querneigungen ausgleicht.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q1", "fundstelle": "Abschnitt Hangmähdrescher, Unterabschnitte Hangfahrwerk, Querbleche und Hangausgleich"}
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "variante"
+        },
+        {
+          "absatz_id": "P6",
+          "text": "Ist der Erntevorsatz breiter als drei Meter, muss er für die Straßenfahrt abgebaut oder hydraulisch zusammengeklappt werden; das Schneidwerk wird dann mit einem Schneidwerkswagen transportiert. In Deutschland begrenzt die Straßenverkehrs-Zulassungs-Ordnung die Breite selbstfahrender land- oder forstwirtschaftlicher Arbeitsmaschinen beim Einsatz für land- oder forstwirtschaftliche Zwecke auf 3,00 m.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q1", "fundstelle": "Abschnitt Beschreibung der Baugruppen, Erntevorsatz"},
+            {"quellen_id": "Q3", "fundstelle": "§ 32 Absatz 1 Satz 1 Nummer 2"}
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Antriebssystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E10",
+      "absaetze": [
+        {
+          "absatz_id": "P7",
+          "text": "Die Motorleistung benötigen moderne Mähdrescher vor allem für Dreschaggregat, Abscheideorgane und Strohhäcksler; der Häcksler allein verbraucht je nach Erntebedingungen und Arbeitsbreite bis zu 20 % der Leistung. Wegen des Staubs beim Dreschen muss der Luftfilter maschinell sauber gehalten werden. Weil die optimale Fahrgeschwindigkeit unter anderem von Motorleistung, Dreschverlusten, Bestandsdichte und Lagergetreide abhängt, muss sie stufenlos veränderbar sein; dazu dienen meist Variator- oder hydrostatische Getriebe.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q1", "fundstelle": "Abschnitt Beschreibung der Baugruppen, Motor; Abschnitt Fahrwerk (zweiter Absatz)"}
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "funktion"
+        },
+        {
+          "absatz_id": "P8",
+          "text": "Der Verbrennungsmotor mit Luftfilter und Abgasnachbehandlung speist daher zwei Leistungspfade. Der Fahrantrieb führt die Leistung über ein hydrostatisches Getriebe, ein Schaltgetriebe, das Differenzial und Endantriebe an die Vorderachse. Der Arbeitsantrieb verteilt sie über eine Hauptkupplung sowie Riemen- und Kettentriebe an die Arbeitsorgane; eine Drehzahlverstelleinrichtung passt die Trommeldrehzahl an die Frucht an. Mit einem Variator entfällt der hydrostatische Kreis samt Ölkühlung und hydrostatischer Bremswirkung.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herangezogene_artikel_ids": [],
+          "herleitung": {
+            "praemissen": ["P7", "Q1, Abschnitt Dreschorgan: Trommeldrehzahl wird je nach Frucht variiert", "P3: angetriebene Vorderachse, Allrad nur bei schwierigem Gelände", "Ein Motor, der Fahrbewegung und Arbeitsorgane versorgt, braucht getrennte, einzeln schaltbare Leistungspfade"],
+            "schluss": "Das Antriebssystem gliedert sich in Verbrennungsmotor, Fahrantrieb und Arbeitsantrieb; die Getriebebauart des Fahrantriebs ist eine strukturändernde Variante."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P9",
+          "text": "Der Herstellerverband Association of Equipment Manufacturers teilt Mähdrescher nach ihrer Nennleistung in die Klassen 5 bis 10 ein; die Einteilung hat sich mit der Zeit zu größeren Maschinen hin verändert.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q2", "fundstelle": "Abschnitt Combine classes"}
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "variante"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Energieversorgungssystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E23",
+      "absaetze": [
+        {
+          "absatz_id": "P10",
+          "text": "Das Energieversorgungssystem versorgt den Verbrennungsmotor mit Kraftstoff und das Bordnetz mit elektrischer Energie. Die Kraftstoffversorgung besteht aus Kraftstofftank und Kraftstoffanlage mit Förderpumpe, Filter und Leitungen, bei katalytischer Abgasnachbehandlung ergänzt um einen Reduktionsmitteltank. Die Bordenergieversorgung umfasst Starterbatterie und Generator, den der Nebenaggregatetrieb antreibt. Eine Hochvoltebene besitzt der dieselmotorische Mähdrescher nicht.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herangezogene_artikel_ids": [],
+          "herleitung": {
+            "praemissen": ["P8: Verbrennungsmotor als einzige Energiewandlung", "Ein Verbrennungsmotor braucht Kraftstoffspeicher und Kraftstoffförderung", "Elektrischer Start und elektrische Verbraucher brauchen Speicher und Generator", "Betrachtungsumfang schließt elektrifizierte Antriebe aus"],
+            "schluss": "Das Energieversorgungssystem besteht aus Kraftstoffversorgung und Bordenergieversorgung ohne Hochvoltebene; der Reduktionsmitteltank gilt nur für Motoren mit katalytischer Abgasnachbehandlung."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Lenksystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E31",
+      "absaetze": [
+        {
+          "absatz_id": "P11",
+          "text": "Das Lenksystem lenkt den Hecklenker über die Lenkachse. Zur Lenkbetätigung gehören Lenkrad und Lenksäule; der Fahrer führt den Lenkradknauf mit der linken Hand, während die rechte den Fahrhebel bedient. Weil die Lenkachse weit hinter der Kabine liegt, arbeitet die Lenkhydraulik ohne mechanische Durchverbindung: Die Lenkunterstützung, eine hydraulische Lenkeinheit, dosiert Öl aus der Hydraulikversorgung zu den Lenkzylindern. Für den Spurführungsassistenten erhält sie ein elektrisch ansteuerbares Ventil. Auch mit Raupenlaufwerk bleibt die Hecklenkung erhalten.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herangezogene_artikel_ids": [],
+          "herleitung": {
+            "praemissen": ["P3: Lenkung über die hinteren Räder", "Q1, Abschnitt Fahrerkabine: linke Hand am Lenkradknauf, rechte Hand am Bedienhebel", "P22: selbsttätige Lenksysteme führen die Maschine", "Eine weit entfernte, hoch belastete Lenkachse lässt sich ohne lange mechanische Übertragung nur hydraulisch betätigen"],
+            "schluss": "Das Lenksystem besteht aus Lenkbetätigung und Lenkhydraulik mit Lenkunterstützung und Lenkzylindern und hat eine elektrische Eingriffsschnittstelle für die Spurführung."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Bremssystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E38",
+      "absaetze": [
+        {
+          "absatz_id": "P12",
+          "text": "Das Bremssystem verzögert die Maschine vor allem bei Straßenfahrt und hält sie im Stand fest. Bei hydrostatischem Fahrantrieb bremst bereits das Zurücknehmen des Fahrhebels, weil der hydrostatische Kreis im Schubbetrieb Leistung aufnimmt. Die Betriebsbremse an Vorderachse oder Endantrieben wird über ein Bremsventil betätigt, die Feststellbremse sichert die abgestellte Maschine. Beim Variator trägt die Betriebsbremse den gesamten Verzögerungsbedarf.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herangezogene_artikel_ids": [],
+          "herleitung": {
+            "praemissen": ["P7: Variator- oder hydrostatische Getriebe im Fahrantrieb", "Ein hydrostatischer Kreis kann im Schubbetrieb Leistung aufnehmen und so verzögern", "Annahme ohne Quelle: Anordnung der Betriebsbremse an Vorderachse oder Endantrieben"],
+            "schluss": "Der Verzögerungsbedarf verteilt sich je nach Getriebebauart unterschiedlich auf Fahrantrieb und Betriebsbremse."
+          },
+          "sicherheit": "gering",
+          "aussagetyp": "loesung"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrerhaus",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E42",
+      "absaetze": [
+        {
+          "absatz_id": "P13",
+          "text": "Moderne Mähdrescher besitzen fast ausnahmslos eine geschlossene Fahrerkabine hinter dem Schneidwerk über dem Schrägförderer, die vor Staub, Lärm und Hitze schützt und in der Regel klimatisiert ist. Sie enthält die elektronischen Steuerungen und Anzeigen zur Einstellung und Überwachung der Maschine. Schneidwerk, Abtankrohr und Fahrgeschwindigkeit steuert der Fahrer mit einem Hebel in der rechten Hand, bei modernen Maschinen einem Joystick, der die Elektronik ansteuert; Hebelgassen für empfindliche Einstellungen sind gegen versehentliches Verstellen gesichert.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q1", "fundstelle": "Abschnitt Beschreibung der Baugruppen, Fahrerkabine"}
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P14",
+          "text": "Das Fahrerhaus gliedert sich in die Kabine mit Kabinenstruktur, Sitze und Sicherheitsgurt sowie das Bedien- und Anzeigesystem mit Fahrhebel, weiteren Bedienelementen und Anzeigeelementen. Der Fahrhebel gibt Fahr- und Arbeitsbefehle über den Fahrzeugbus an die Steuergeräte; die Anzeigeelemente zeigen Zustände aus Maschinensteuerung und Informationssystem. Die erhöhte Lage gibt Sicht auf den Erntevorsatz.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herangezogene_artikel_ids": [],
+          "herleitung": {
+            "praemissen": ["P13", "Q1, Baugruppenschema: Fahrerkabine über dem Schrägförderer", "Ein Joystick, der die Elektronik ansteuert, setzt eine Datenverbindung zu den Steuergeräten voraus"],
+            "schluss": "Das Fahrerhaus besteht aus Kabine und Bedien- und Anzeigesystem; der Fahrhebel ist die zentrale Eingabeschnittstelle."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Arbeitsausrüstung",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E51",
+      "absaetze": [
+        {
+          "absatz_id": "P15",
+          "text": "Vorne am Mähdrescher sitzt der Erntevorsatz, dessen Bauart von der Druschfrucht abhängt. Ein Schneidwerk besteht aus Schneidtisch, Halmteilern, gegebenenfalls Ährenhebern, Haspel, Messerbalken und Einzugsschnecke oder Förderband; Maispflücker ziehen die Stängel durch einen Spalt und trennen die Kolben ab, eine Pickup nimmt Frucht aus dem Schwad auf. Der Schrägförderer übernimmt das Gut mit einer Einzugskette und führt es dem Dreschaggregat zu; an seinem Ende liegt die Steinfangmulde.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q1", "fundstelle": "Abschnitt Beschreibung der Baugruppen: Baugruppenliste, Erntevorsatz, Schneidwerke, Maisschneidwerke, Pickup, Schrägförderer, Steinfangmulde"}
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P16",
+          "text": "Im Dreschwerk dreht sich eine Dreschtrommel oder ein Rotor schnell in einem Dreschkorb; das Korn wird ausgerieben und fällt durch den Korb, Trommeldrehzahl und Dreschspalt bestimmen die Druschintensität. In der Abscheidung trennen Hordenschüttler oder axiale Abscheiderotoren Restkorn vom Stroh. Die Reinigung führt Korn und Nichtkornbestandteile etwa über einen Stufenboden auf Obersieb und Untersieb, die ein Gebläse von unten belüftet; die Überkehr wird mit einer Schnecke zurückgefördert, das Reinkorn über einen Elevator in den Korntank.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q1", "fundstelle": "Abschnitt Beschreibung der Baugruppen: Dreschorgan, Abscheidung, Reinigung"}
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P17",
+          "text": "Der Korntank wird über das Abtankrohr, oft parallel zum Drusch, auf Transportanhänger oder Überladewagen entleert. Das Stroh wird hinten ausgeworfen und auf Schwad gelegt oder vom Strohhäcksler gehäckselt und verteilt; die Spreu verteilen etwa scheibenförmige Spreuverteiler.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q1", "fundstelle": "Abschnitt Beschreibung der Baugruppen: Korn- und Strohmanagement; Reinigung (letzter Absatz)"}
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P18",
+          "text": "Die Arbeitsausrüstung gliedert sich so entlang des Gutflusses in Erntevorsatz, Schrägförderer, Dreschwerk, Abscheidung, Reinigung mit Überkehrschnecke sowie Korn- und Strohmanagement mit Kornelevator. Das Dreschsystem verändert diese Kette: Beim Axialmähdrescher übernimmt ein Rotor Drusch und Abscheidung, Dreschtrommel und Hordenschüttler entfallen, und der Arbeitsantrieb treibt den Rotor; der Hybridmähdrescher kombiniert Dreschtrommel und Abscheiderotor. Verstellungen bezieht die Arbeitsausrüstung aus der Hydraulikversorgung.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herangezogene_artikel_ids": [],
+          "herleitung": {
+            "praemissen": ["P15", "P16", "P17", "Q1, Abschnitt Arbeitsweise der Dreschorgane und Abscheidung: konventionell, axial, hybrid", "P13: Schneidwerk und Abtankrohr werden über Hydrauliksteuergeräte verstellt"],
+            "schluss": "Die Subsysteme der Arbeitsausrüstung folgen dem Gutfluss; das Dreschsystem bestimmt, welche Abscheideorgane vorhanden sind."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "variante"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Elektrik und Elektronik",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E78",
+      "absaetze": [
+        {
+          "absatz_id": "P19",
+          "text": "Das Niedervolt-Bordnetz speist aus Generator und Starterbatterie über Leitungssatz und Sicherungen die Steuergeräte, Aktoren, Leuchten und die Klimaanlage. Die Prozesssensorik erfasst Drehzahlen der Arbeitsorgane, Schneidwerkshöhe, Neigung und Klopfsignale eingezogener Steine; die Steuergeräte tauschen die Daten über den Fahrzeugbus aus. Weil elektrische Fehler als Brandursache gelten, sind Scheuerschutz und Abdichtung gegen Staub Auslegungsthemen.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herangezogene_artikel_ids": [],
+          "herleitung": {
+            "praemissen": ["P10", "P20: Sensoren erfassen Bodenunebenheiten und Gutmenge", "P22: Klopfsensoren erkennen Steine", "P5: neigungsabhängiger Hangausgleich", "P23: elektrische Fehler als Brandursache"],
+            "schluss": "Elektrik und Elektronik bestehen aus Niedervolt-Bordnetz, Prozesssensorik, Steuergeräten und Fahrzeugbus und müssen staub- und brandschutzgerecht ausgelegt sein."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrzeugsteuerung und Information",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E85",
+      "absaetze": [
+        {
+          "absatz_id": "P20",
+          "text": "Steuerungsaufgaben, die früher der Fahrer ausführte, übernehmen zunehmend automatisierte Einrichtungen. Das Schneidwerk wird auf einer vorgegebenen Schnitthöhe automatisch den Bodenunebenheiten nachgeführt, die Sensoren erfassen; die Steuerung verändert Arbeitshöhe und Neigung des Schneidwerks. Andere Systeme messen die Menge des Dreschgutes und passen die Geschwindigkeit so an, dass die Maschine stets mit optimaler Auslastung fährt.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q1", "fundstelle": "Abschnitt Beschreibung der Baugruppen, Automatisierung"}
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "funktion"
+        },
+        {
+          "absatz_id": "P21",
+          "text": "Die Maschinensteuerung umfasst daher Fahrzeugmanagement, Schneidwerksführung und Durchsatzregelung, das Informationssystem Ertragsmessung, Navigation, Diagnose und Telematikeinheit. Das Fahrzeugmanagement koordiniert Motor, Fahrantrieb und Arbeitsantrieb; die Durchsatzregelung greift auf den Fahrantrieb zu und koppelt so Antriebssystem und Arbeitsausrüstung. Die Ertragsmessung verknüpft Kornmengen mit Positionen der Navigation, die Diagnose überwacht Lager- und Motortemperaturen, die Telematikeinheit überträgt Maschinendaten an den Betrieb.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herangezogene_artikel_ids": [],
+          "herleitung": {
+            "praemissen": ["P20", "Q1, Abschnitt Fahrerkabine: Ertragsmessung, teilweise mit GPS-Erfassung", "P23: Überwachung von Lagertemperaturen empfohlen", "Annahme ohne Quelle: Telematikeinheit zur Datenübertragung an den Betrieb"],
+            "schluss": "Die Fahrzeugsteuerung und Information gliedert sich in Maschinensteuerung und Informationssystem; die Durchsatzregelung ist die zentrale Kopplung zwischen Fahrantrieb und Arbeitsausrüstung."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrerassistenz und Sicherheit",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E95",
+      "absaetze": [
+        {
+          "absatz_id": "P22",
+          "text": "Selbsttätige Lenksysteme bestimmen die Position per DGPS und führen den Mähdrescher parallel zur vorherigen Fahrspur; der Fahrer übernimmt das Steuer nur am Feldende zum Wenden. Weil Rotormähdrescher besonders empfindlich auf Steine reagieren, erkennen Klopfsensoren eingezogene Steine, und der Boden des Schrägförderers öffnet sich.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q1", "fundstelle": "Abschnitt Beschreibung der Baugruppen: Automatisierung; Steinfangmulde"}
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P23",
+          "text": "Nach einer Studie zu 9.000 Mähdrescherbränden in den USA begannen 77 % im Motor und Motorraum, häufig wenn Ernterückstände heiße Krümmer, Abgasanlage oder Turbolader berühren; weitere Ursachen sind defekte Lager, oft am Strohhäcksler, und elektrische Fehler.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q4", "fundstelle": "Einleitung; Abschnitte Keep the bearings and sickle bar cool und Keep combines clean"}
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "funktion"
+        },
+        {
+          "absatz_id": "P24",
+          "text": "Die Fahrerassistenz und Sicherheit umfasst daher den Spurführungsassistenten, der Navigation und Lenkhydraulik verknüpft, die Steinerkennung, die Prozesssensorik und Schrägförderer koppelt, und eine Brandschutzeinrichtung mit Feuerlöschern und Temperaturüberwachung von Lagern und Motorraum.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herangezogene_artikel_ids": [],
+          "herleitung": {
+            "praemissen": ["P22", "P23", "P11: Lenkhydraulik mit elektrisch ansteuerbarem Ventil", "Annahme ohne Quelle: Feuerlöscher als Bestandteil der Brandschutzeinrichtung"],
+            "schluss": "Spurführungsassistent, Steinerkennung und Brandschutzeinrichtung bilden die Komponenten des Hauptsystems."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Beleuchtung und Sicht",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E99",
+      "absaetze": [
+        {
+          "absatz_id": "P25",
+          "text": "Die Beleuchtung und Sicht unterstützt die Ernte bei Dunkelheit und die Straßenfahrt. Zur Beleuchtung gehören Scheinwerfer für Straße und Arbeitsbereich, etwa Erntevorsatz, Abtankrohr und Stoppel, sowie Signalleuchten zur Kennzeichnung der Maschine. Das Sichtsystem umfasst Scheibenwischer, Außenspiegel und ein Kamera-Monitor-System, das Rückraum und Abtankvorgang in die Kabine überträgt.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herangezogene_artikel_ids": [],
+          "herleitung": {
+            "praemissen": ["P17: Abtanken parallel zum Drusch", "P6: Straßenfahrt mit großer Maschinenbreite", "Annahme ohne Quelle: Ernte auch bei Dunkelheit"],
+            "schluss": "Beleuchtung und Sichtsystem decken Arbeitsbereiche, Abtankvorgang und Straßenfahrt ab."
+          },
+          "sicherheit": "gering",
+          "aussagetyp": "loesung"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Thermomanagement",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E107",
+      "absaetze": [
+        {
+          "absatz_id": "P26",
+          "text": "Weil beim Dreschen viel Staub entsteht, ist die Zuführung der Kühlluft problembehaftet; der Kühler wird durch Absaugung, rotierende Bürsten oder ein Lüfterwendegetriebe sauber gehalten, das ab einer bestimmten Temperatur die Drehrichtung des Kühlerventilators kurzzeitig umkehrt.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q1", "fundstelle": "Abschnitt Beschreibung der Baugruppen, Motor"}
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P27",
+          "text": "Die Motorkühlung führt Motorwärme über Kühlkreislauf, Kühlmittelpumpe und Kühler ab; bei hydrostatischem Fahrantrieb fällt dessen Verlustleistung als Wärme im Öl an und braucht einen Ölkühler im Kühlerpaket. Die Kabinenklimatisierung mit Heiz- und Klimaanlage und Klimakompressor schützt den Fahrer vor Hitze und filtert die staubhaltige Frischluft.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herangezogene_artikel_ids": [],
+          "herleitung": {
+            "praemissen": ["P8", "P13: klimatisierte Kabine als Schutz vor Staub und Hitze", "Verlustleistung von Verbrennungsmotor und Hydrostat fällt als Wärme an und muss abgeführt werden"],
+            "schluss": "Das Thermomanagement besteht aus Motorkühlung mit Ölkühler und Kabinenklimatisierung."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "loesung"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Neben- und Versorgungssysteme",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E117",
+      "absaetze": [
+        {
+          "absatz_id": "P28",
+          "text": "Die Neben- und Versorgungssysteme liefern Hilfsenergie: Die Hydraulikversorgung aus Hydraulikpumpe, Steuerventilblock und Hydrauliktank betätigt Schneidwerkshöhe, Haspelverstellung, Abtankrohr, das Klappen breiter Erntevorsätze, die Lenkhydraulik und den Hangausgleich. Der Nebenaggregatetrieb am Motor treibt Hydraulikpumpe, Generator und Klimakompressor. Ein Kompressor für Druckluft kann Luft zum Abblasen von Ernterückständen liefern, deren regelmäßiges Entfernen der Brandverhütung dient.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herangezogene_artikel_ids": [],
+          "herleitung": {
+            "praemissen": ["Q1, Abschnitt Fahrerkabine: Hydrauliksteuergeräte für Schneidwerkshöhe und Haspel", "P6: hydraulisches Zusammenklappen", "P5: Hydraulikzylinder des Hangausgleichs", "P11", "Q4, Abschnitt Keep combines clean: tägliches Abblasen mit Druckluft"],
+            "schluss": "Die Hydraulikversorgung ist zentrale Hilfsenergiequelle; ein Druckluftkompressor ist eine optionale Komponente."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Zusammenfassung",
+      "abschnittstyp": "gesamtsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P29",
+          "text": "Architekturell besteht der Mähdrescher auf oberster Ebene aus Fahrzeugstruktur und Fahrwerk, Antriebssystem, Energieversorgungssystem, Lenksystem, Bremssystem, Fahrerhaus, Arbeitsausrüstung, Elektrik und Elektronik, Fahrzeugsteuerung und Information, Fahrerassistenz und Sicherheit, Beleuchtung und Sicht, Thermomanagement sowie Neben- und Versorgungssystemen. Die Arbeitsausrüstung ist der größte Leistungsverbraucher, und Fahrgeschwindigkeit, Dreschwerkseinstellung und Hangausgleich sind über die Durchsatzregelung gekoppelt.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herangezogene_artikel_ids": [],
+          "herleitung": {
+            "praemissen": ["P7", "P20", "P5", "Abschnitte P3 bis P28"],
+            "schluss": "Die dreizehn Hauptsysteme bilden die oberste Ebene; Arbeitsausrüstung und Fahrantrieb sind über die Prozessregelung eng gekoppelt."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "funktion"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Modellierungsbezug",
+      "abschnittstyp": "modellierung",
+      "absaetze": [
+        {
+          "absatz_id": "P30",
+          "text": "Für eine Modellierung in SysML bildet der Block Mähdrescher das Gesamtsystem mit den dreizehn Hauptsystemen als Teilen. Dekompositionspfade sind etwa Arbeitsausrüstung → Dreschwerk → Dreschtrommel, Arbeitsausrüstung → Reinigung → Obersieb, Antriebssystem → Fahrantrieb → Differenzial und Fahrzeugsteuerung und Information → Informationssystem → Ertragsmessung. Ports und Konnektoren bilden Wellen- und Riemenschnittstellen, Hydraulikanschlüsse, Bordnetz, Fahrzeugbus und einen Stoffport für das Erntegut ab. Block Definition Diagrams zeigen die Struktur, Internal Block Diagrams die Flüsse, Aktivitätsdiagramme den Gutpfad und Zustandsautomaten die Betriebsarten Ernte, Abtanken und Straßenfahrt.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herangezogene_artikel_ids": [],
+          "herleitung": {
+            "praemissen": ["Modellblock dieses Artikels", "P8", "P18", "P21"],
+            "schluss": "Die Dekomposition lässt sich über mehrere Ebenen in Blöcken, Ports und Diagrammen abbilden."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "modellannahme"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Flüsse",
+      "abschnittstyp": "fluesse",
+      "absaetze": [
+        {
+          "absatz_id": "P31",
+          "text": "Stoff: Erntegut vom Erntevorsatz über Schrägförderer, Dreschwerk, Abscheidung und Reinigung zum Korntank, Überkehr zurück zum Dreschwerk, Korn über das Abtankrohr zum Transportfahrzeug, Stroh zum Strohhäcksler, Kraftstoff zum Verbrennungsmotor. Mechanisch: Motor an Fahrantrieb, Arbeitsantrieb und Nebenaggregatetrieb. Hydraulisch: Hydraulikversorgung an Erntevorsatz, Lenkhydraulik und Hangausgleich. Elektrisch: Generator ins Niedervolt-Bordnetz. Information: Prozesssensorik an Steuergeräte, Fahrhebel an Maschinensteuerung, Durchsatzregelung an Fahrantrieb, Navigation an Spurführungsassistent. Thermisch: Motor und Hydrostat an die Motorkühlung.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herangezogene_artikel_ids": [],
+          "herleitung": {
+            "praemissen": ["P8", "P11", "P15", "P16", "P17", "P19", "P21", "P27", "P28"],
+            "schluss": "Jeder Fluss verbindet ein Ursprungs- mit einem Zielelement des Modells."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "funktion"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Perspektiven",
+      "abschnittstyp": "perspektiven",
+      "absaetze": [
+        {
+          "absatz_id": "P32",
+          "text": "Funktionszuordnung: Rahmen und Laufwerk: Fahrzeuglasten tragen; Laufwerk und Fahrantrieb: Fahrzeug fortbewegen; Hangausgleich: Hangneigung ausgleichen; Verbrennungsmotor: Antriebsleistung erzeugen; Fahrantrieb und Arbeitsantrieb: Drehmoment übertragen; Arbeitsantrieb und Nebenaggregatetrieb: Arbeitsgeräte versorgen; Kraftstofftank und Starterbatterie: Energie speichern; Kraftstoffanlage: Treibstoff fördern; Lenkhydraulik und Spurführungsassistent: Fahrzeug lenken; Betriebsbremse und hydrostatisches Getriebe: Fahrzeug verzögern; Feststellbremse: Fahrzeug festhalten; Bedien- und Anzeigesystem: Fahrereingaben erfassen; Anzeigeelemente: Fahrerinformationen anzeigen; Kabine: Insassen schützen; Erntevorsatz und Schrägförderer: Erntegut aufnehmen; Dreschwerk: Erntegut dreschen; Abscheidung: Korn abscheiden; Reinigung: Korn reinigen; Korntank: Ladung aufnehmen; Abtankrohr: Korntank entleeren; Strohhäcksler und Spreuverteiler: Ernterückstände verteilen; Niedervolt-Bordnetz: Elektrische Energie verteilen; Fahrzeugbus: Daten übertragen; Prozesssensorik und Schneidwerksführung: Fahrzeugumfeld erfassen; Diagnose, Steinerkennung und Brandschutzeinrichtung: Fahrzeugzustand überwachen; Navigation: Fahrzeugposition bestimmen; Scheinwerfer: Fahrzeugumgebung ausleuchten; Signalleuchten: Lichtsignale abgeben; Sichtsystem: Fahrersicht sicherstellen; Motorkühlung: Betriebstemperatur regeln; Kabinenklimatisierung: Innenraum klimatisieren; Hydraulikversorgung: Hydraulische Leistung bereitstellen; Kompressor für Druckluft: Druckluft bereitstellen.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herangezogene_artikel_ids": [],
+          "herleitung": {
+            "praemissen": ["Funktionen und Elemente des Modellblocks", "Abschnitte P3 bis P28"],
+            "schluss": "Jede Funktion ist mindestens einem ausführenden Element zugeordnet."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "funktion"
+        }
+      ]
+    }
+  ],
+  "modell": {
+    "elemente": [
+      {"id": "E1", "name": "Mähdrescher", "typ": "gesamtsystem", "eltern_id": null, "absatz_ids": ["P1", "P2", "P29"]},
+
+      {"id": "E2", "name": "Fahrzeugstruktur und Fahrwerk", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P3", "P4", "P5", "P6", "P29"], "kategorie": "struktur_fahrwerk"},
+      {"id": "E3", "name": "Rahmen", "typ": "komponente", "eltern_id": "E2", "absatz_ids": ["P4"]},
+      {"id": "E4", "name": "Laufwerk", "typ": "subsystem", "eltern_id": "E2", "absatz_ids": ["P4"]},
+      {"id": "E5", "name": "Vorderachse", "typ": "komponente", "eltern_id": "E4", "absatz_ids": ["P3", "P4"]},
+      {"id": "E6", "name": "Lenkachse", "typ": "komponente", "eltern_id": "E4", "absatz_ids": ["P4", "P11"]},
+      {"id": "E7", "name": "Räder und Reifen", "typ": "komponente", "eltern_id": "E4", "absatz_ids": ["P4"]},
+      {"id": "E8", "name": "Raupenlaufwerk", "typ": "komponente", "eltern_id": "E4", "absatz_ids": ["P3", "P4"]},
+      {"id": "E9", "name": "Hangausgleich", "typ": "komponente", "eltern_id": "E2", "absatz_ids": ["P5"]},
+
+      {"id": "E10", "name": "Antriebssystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P7", "P8", "P9"], "kategorie": "antrieb"},
+      {"id": "E11", "name": "Verbrennungsmotor", "typ": "subsystem", "eltern_id": "E10", "absatz_ids": ["P8"]},
+      {"id": "E12", "name": "Luftfilter", "typ": "komponente", "eltern_id": "E11", "absatz_ids": ["P7", "P8"]},
+      {"id": "E13", "name": "Abgasnachbehandlung", "typ": "komponente", "eltern_id": "E11", "absatz_ids": ["P8"]},
+      {"id": "E14", "name": "Fahrantrieb", "typ": "subsystem", "eltern_id": "E10", "absatz_ids": ["P8"]},
+      {"id": "E15", "name": "Hydrostatisches Getriebe", "typ": "komponente", "eltern_id": "E14", "absatz_ids": ["P7", "P8"]},
+      {"id": "E16", "name": "Schaltgetriebe", "typ": "komponente", "eltern_id": "E14", "absatz_ids": ["P8"]},
+      {"id": "E17", "name": "Differenzial", "typ": "komponente", "eltern_id": "E14", "absatz_ids": ["P8"]},
+      {"id": "E18", "name": "Endantriebe", "typ": "komponente", "eltern_id": "E14", "absatz_ids": ["P8", "P12"]},
+      {"id": "E19", "name": "Arbeitsantrieb", "typ": "subsystem", "eltern_id": "E10", "absatz_ids": ["P8"]},
+      {"id": "E20", "name": "Hauptkupplung", "typ": "komponente", "eltern_id": "E19", "absatz_ids": ["P8"]},
+      {"id": "E21", "name": "Riemen- und Kettentriebe", "typ": "komponente", "eltern_id": "E19", "absatz_ids": ["P8"]},
+      {"id": "E22", "name": "Drehzahlverstelleinrichtung", "typ": "komponente", "eltern_id": "E19", "absatz_ids": ["P8"]},
+
+      {"id": "E23", "name": "Energieversorgungssystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P10"], "kategorie": "energieversorgung"},
+      {"id": "E24", "name": "Kraftstoffversorgung", "typ": "subsystem", "eltern_id": "E23", "absatz_ids": ["P10"]},
+      {"id": "E25", "name": "Kraftstofftank", "typ": "komponente", "eltern_id": "E24", "absatz_ids": ["P10"]},
+      {"id": "E26", "name": "Kraftstoffanlage", "typ": "komponente", "eltern_id": "E24", "absatz_ids": ["P10"]},
+      {"id": "E27", "name": "Reduktionsmitteltank", "typ": "komponente", "eltern_id": "E24", "absatz_ids": ["P10"]},
+      {"id": "E28", "name": "Bordenergieversorgung", "typ": "subsystem", "eltern_id": "E23", "absatz_ids": ["P10"]},
+      {"id": "E29", "name": "Starterbatterie", "typ": "komponente", "eltern_id": "E28", "absatz_ids": ["P10"]},
+      {"id": "E30", "name": "Generator", "typ": "komponente", "eltern_id": "E28", "absatz_ids": ["P10"]},
+
+      {"id": "E31", "name": "Lenksystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P11"], "kategorie": "lenkung"},
+      {"id": "E32", "name": "Lenkbetätigung", "typ": "subsystem", "eltern_id": "E31", "absatz_ids": ["P11"]},
+      {"id": "E33", "name": "Lenkrad", "typ": "komponente", "eltern_id": "E32", "absatz_ids": ["P11"]},
+      {"id": "E34", "name": "Lenksäule", "typ": "komponente", "eltern_id": "E32", "absatz_ids": ["P11"]},
+      {"id": "E35", "name": "Lenkhydraulik", "typ": "subsystem", "eltern_id": "E31", "absatz_ids": ["P11"]},
+      {"id": "E36", "name": "Lenkunterstützung", "typ": "komponente", "eltern_id": "E35", "absatz_ids": ["P11"]},
+      {"id": "E37", "name": "Lenkzylinder", "typ": "komponente", "eltern_id": "E35", "absatz_ids": ["P11"]},
+
+      {"id": "E38", "name": "Bremssystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P12"], "kategorie": "bremse"},
+      {"id": "E39", "name": "Betriebsbremse", "typ": "komponente", "eltern_id": "E38", "absatz_ids": ["P12"]},
+      {"id": "E40", "name": "Feststellbremse", "typ": "komponente", "eltern_id": "E38", "absatz_ids": ["P12"]},
+      {"id": "E41", "name": "Bremsventil", "typ": "komponente", "eltern_id": "E38", "absatz_ids": ["P12"]},
+
+      {"id": "E42", "name": "Fahrerhaus", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P13", "P14"], "kategorie": "bedienraum"},
+      {"id": "E43", "name": "Kabine", "typ": "subsystem", "eltern_id": "E42", "absatz_ids": ["P14"]},
+      {"id": "E44", "name": "Kabinenstruktur", "typ": "komponente", "eltern_id": "E43", "absatz_ids": ["P14"]},
+      {"id": "E45", "name": "Sitze", "typ": "komponente", "eltern_id": "E43", "absatz_ids": ["P14"]},
+      {"id": "E46", "name": "Sicherheitsgurt", "typ": "komponente", "eltern_id": "E43", "absatz_ids": ["P14"]},
+      {"id": "E47", "name": "Bedien- und Anzeigesystem", "typ": "subsystem", "eltern_id": "E42", "absatz_ids": ["P14"]},
+      {"id": "E48", "name": "Fahrhebel", "typ": "komponente", "eltern_id": "E47", "absatz_ids": ["P13", "P14"]},
+      {"id": "E49", "name": "Bedienelemente", "typ": "komponente", "eltern_id": "E47", "absatz_ids": ["P14"]},
+      {"id": "E50", "name": "Anzeigeelemente", "typ": "komponente", "eltern_id": "E47", "absatz_ids": ["P14"]},
+
+      {"id": "E51", "name": "Arbeitsausrüstung", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P15", "P16", "P17", "P18"], "kategorie": "aufbau_nutzlast"},
+      {"id": "E52", "name": "Erntevorsatz", "typ": "subsystem", "eltern_id": "E51", "absatz_ids": ["P15", "P18"]},
+      {"id": "E53", "name": "Haspel", "typ": "komponente", "eltern_id": "E52", "absatz_ids": ["P15"]},
+      {"id": "E54", "name": "Messerbalken", "typ": "komponente", "eltern_id": "E52", "absatz_ids": ["P15"]},
+      {"id": "E55", "name": "Halmteiler", "typ": "komponente", "eltern_id": "E52", "absatz_ids": ["P15"]},
+      {"id": "E56", "name": "Einzugsschnecke", "typ": "komponente", "eltern_id": "E52", "absatz_ids": ["P15"]},
+      {"id": "E57", "name": "Schrägförderer", "typ": "subsystem", "eltern_id": "E51", "absatz_ids": ["P15", "P18"]},
+      {"id": "E58", "name": "Einzugskette", "typ": "komponente", "eltern_id": "E57", "absatz_ids": ["P15"]},
+      {"id": "E59", "name": "Steinfangmulde", "typ": "komponente", "eltern_id": "E57", "absatz_ids": ["P15"]},
+      {"id": "E60", "name": "Dreschwerk", "typ": "subsystem", "eltern_id": "E51", "absatz_ids": ["P16", "P18"]},
+      {"id": "E61", "name": "Dreschtrommel", "typ": "komponente", "eltern_id": "E60", "absatz_ids": ["P16", "P18"]},
+      {"id": "E62", "name": "Dreschkorb", "typ": "komponente", "eltern_id": "E60", "absatz_ids": ["P16"]},
+      {"id": "E63", "name": "Abscheidung", "typ": "subsystem", "eltern_id": "E51", "absatz_ids": ["P16", "P18"]},
+      {"id": "E64", "name": "Hordenschüttler", "typ": "komponente", "eltern_id": "E63", "absatz_ids": ["P16", "P18"]},
+      {"id": "E65", "name": "Abscheiderotor", "typ": "komponente", "eltern_id": "E63", "absatz_ids": ["P16", "P18"]},
+      {"id": "E66", "name": "Reinigung", "typ": "subsystem", "eltern_id": "E51", "absatz_ids": ["P16", "P18"]},
+      {"id": "E67", "name": "Stufenboden", "typ": "komponente", "eltern_id": "E66", "absatz_ids": ["P16"]},
+      {"id": "E68", "name": "Gebläse", "typ": "komponente", "eltern_id": "E66", "absatz_ids": ["P16"]},
+      {"id": "E69", "name": "Obersieb", "typ": "komponente", "eltern_id": "E66", "absatz_ids": ["P16"]},
+      {"id": "E70", "name": "Untersieb", "typ": "komponente", "eltern_id": "E66", "absatz_ids": ["P16"]},
+      {"id": "E71", "name": "Überkehrschnecke", "typ": "komponente", "eltern_id": "E66", "absatz_ids": ["P16", "P18"]},
+      {"id": "E72", "name": "Korn- und Strohmanagement", "typ": "subsystem", "eltern_id": "E51", "absatz_ids": ["P17", "P18"]},
+      {"id": "E73", "name": "Kornelevator", "typ": "komponente", "eltern_id": "E72", "absatz_ids": ["P16", "P18"]},
+      {"id": "E74", "name": "Korntank", "typ": "komponente", "eltern_id": "E72", "absatz_ids": ["P17"]},
+      {"id": "E75", "name": "Abtankrohr", "typ": "komponente", "eltern_id": "E72", "absatz_ids": ["P17"]},
+      {"id": "E76", "name": "Strohhäcksler", "typ": "komponente", "eltern_id": "E72", "absatz_ids": ["P17"]},
+      {"id": "E77", "name": "Spreuverteiler", "typ": "komponente", "eltern_id": "E72", "absatz_ids": ["P17"]},
+
+      {"id": "E78", "name": "Elektrik und Elektronik", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P19"], "kategorie": "elektrik_elektronik"},
+      {"id": "E79", "name": "Niedervolt-Bordnetz", "typ": "subsystem", "eltern_id": "E78", "absatz_ids": ["P19"]},
+      {"id": "E80", "name": "Leitungssatz", "typ": "komponente", "eltern_id": "E79", "absatz_ids": ["P19"]},
+      {"id": "E81", "name": "Sicherungen", "typ": "komponente", "eltern_id": "E79", "absatz_ids": ["P19"]},
+      {"id": "E82", "name": "Fahrzeugbus", "typ": "komponente", "eltern_id": "E78", "absatz_ids": ["P19"]},
+      {"id": "E83", "name": "Steuergeräte", "typ": "komponente", "eltern_id": "E78", "absatz_ids": ["P19"]},
+      {"id": "E84", "name": "Prozesssensorik", "typ": "komponente", "eltern_id": "E78", "absatz_ids": ["P19"]},
+
+      {"id": "E85", "name": "Fahrzeugsteuerung und Information", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P20", "P21"], "kategorie": "steuerung_information"},
+      {"id": "E86", "name": "Maschinensteuerung", "typ": "subsystem", "eltern_id": "E85", "absatz_ids": ["P21"]},
+      {"id": "E87", "name": "Fahrzeugmanagement", "typ": "komponente", "eltern_id": "E86", "absatz_ids": ["P21"]},
+      {"id": "E88", "name": "Schneidwerksführung", "typ": "komponente", "eltern_id": "E86", "absatz_ids": ["P20", "P21"]},
+      {"id": "E89", "name": "Durchsatzregelung", "typ": "komponente", "eltern_id": "E86", "absatz_ids": ["P20", "P21"]},
+      {"id": "E90", "name": "Informationssystem", "typ": "subsystem", "eltern_id": "E85", "absatz_ids": ["P21"]},
+      {"id": "E91", "name": "Ertragsmessung", "typ": "komponente", "eltern_id": "E90", "absatz_ids": ["P21"]},
+      {"id": "E92", "name": "Navigation", "typ": "komponente", "eltern_id": "E90", "absatz_ids": ["P21"]},
+      {"id": "E93", "name": "Diagnose", "typ": "komponente", "eltern_id": "E90", "absatz_ids": ["P21"]},
+      {"id": "E94", "name": "Telematikeinheit", "typ": "komponente", "eltern_id": "E90", "absatz_ids": ["P21"]},
+
+      {"id": "E95", "name": "Fahrerassistenz und Sicherheit", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P22", "P23", "P24"], "kategorie": "assistenz_sicherheit"},
+      {"id": "E96", "name": "Spurführungsassistent", "typ": "komponente", "eltern_id": "E95", "absatz_ids": ["P22", "P24"]},
+      {"id": "E97", "name": "Steinerkennung", "typ": "komponente", "eltern_id": "E95", "absatz_ids": ["P22", "P24"]},
+      {"id": "E98", "name": "Brandschutzeinrichtung", "typ": "komponente", "eltern_id": "E95", "absatz_ids": ["P23", "P24"]},
+
+      {"id": "E99", "name": "Beleuchtung und Sicht", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P25"], "kategorie": "beleuchtung_sicht"},
+      {"id": "E100", "name": "Beleuchtung", "typ": "subsystem", "eltern_id": "E99", "absatz_ids": ["P25"]},
+      {"id": "E101", "name": "Scheinwerfer", "typ": "komponente", "eltern_id": "E100", "absatz_ids": ["P25"]},
+      {"id": "E102", "name": "Signalleuchten", "typ": "komponente", "eltern_id": "E100", "absatz_ids": ["P25"]},
+      {"id": "E103", "name": "Sichtsystem", "typ": "subsystem", "eltern_id": "E99", "absatz_ids": ["P25"]},
+      {"id": "E104", "name": "Scheibenwischer", "typ": "komponente", "eltern_id": "E103", "absatz_ids": ["P25"]},
+      {"id": "E105", "name": "Außenspiegel", "typ": "komponente", "eltern_id": "E103", "absatz_ids": ["P25"]},
+      {"id": "E106", "name": "Kamera-Monitor-System", "typ": "komponente", "eltern_id": "E103", "absatz_ids": ["P25"]},
+
+      {"id": "E107", "name": "Thermomanagement", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P26", "P27"], "kategorie": "thermomanagement"},
+      {"id": "E108", "name": "Motorkühlung", "typ": "subsystem", "eltern_id": "E107", "absatz_ids": ["P27"]},
+      {"id": "E109", "name": "Kühlkreislauf", "typ": "komponente", "eltern_id": "E108", "absatz_ids": ["P27"]},
+      {"id": "E110", "name": "Kühlmittelpumpe", "typ": "komponente", "eltern_id": "E108", "absatz_ids": ["P27"]},
+      {"id": "E111", "name": "Kühler", "typ": "komponente", "eltern_id": "E108", "absatz_ids": ["P26", "P27"]},
+      {"id": "E112", "name": "Lüfterwendegetriebe", "typ": "komponente", "eltern_id": "E108", "absatz_ids": ["P26"]},
+      {"id": "E113", "name": "Ölkühler", "typ": "komponente", "eltern_id": "E108", "absatz_ids": ["P27"]},
+      {"id": "E114", "name": "Kabinenklimatisierung", "typ": "subsystem", "eltern_id": "E107", "absatz_ids": ["P27"]},
+      {"id": "E115", "name": "Heiz- und Klimaanlage", "typ": "komponente", "eltern_id": "E114", "absatz_ids": ["P27"]},
+      {"id": "E116", "name": "Klimakompressor", "typ": "komponente", "eltern_id": "E114", "absatz_ids": ["P27", "P28"]},
+
+      {"id": "E117", "name": "Neben- und Versorgungssysteme", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P28"], "kategorie": "nebensysteme"},
+      {"id": "E118", "name": "Hydraulikversorgung", "typ": "subsystem", "eltern_id": "E117", "absatz_ids": ["P28"]},
+      {"id": "E119", "name": "Hydraulikpumpe", "typ": "komponente", "eltern_id": "E118", "absatz_ids": ["P28"]},
+      {"id": "E120", "name": "Steuerventilblock", "typ": "komponente", "eltern_id": "E118", "absatz_ids": ["P28"]},
+      {"id": "E121", "name": "Hydrauliktank", "typ": "komponente", "eltern_id": "E118", "absatz_ids": ["P28"]},
+      {"id": "E122", "name": "Nebenaggregatetrieb", "typ": "komponente", "eltern_id": "E117", "absatz_ids": ["P28"]},
+      {"id": "E123", "name": "Kompressor für Druckluft", "typ": "komponente", "eltern_id": "E117", "absatz_ids": ["P28"]}
+    ],
+    "funktionen": [
+      {"id": "F1", "name": "Fahrzeuglasten tragen", "ausgefuehrt_von": ["E3", "E4"], "absatz_ids": ["P4"]},
+      {"id": "F2", "name": "Fahrzeug fortbewegen", "ausgefuehrt_von": ["E4", "E14"], "absatz_ids": ["P3", "P8"]},
+      {"id": "F3", "name": "Hangneigung ausgleichen", "ausgefuehrt_von": ["E9"], "absatz_ids": ["P5"]},
+      {"id": "F4", "name": "Antriebsleistung erzeugen", "ausgefuehrt_von": ["E11"], "absatz_ids": ["P7", "P8"]},
+      {"id": "F5", "name": "Drehmoment übertragen", "ausgefuehrt_von": ["E14", "E19"], "absatz_ids": ["P8"]},
+      {"id": "F6", "name": "Arbeitsgeräte versorgen", "ausgefuehrt_von": ["E19", "E122"], "absatz_ids": ["P8", "P28"]},
+      {"id": "F7", "name": "Energie speichern", "ausgefuehrt_von": ["E25", "E29"], "absatz_ids": ["P10"]},
+      {"id": "F8", "name": "Treibstoff fördern", "ausgefuehrt_von": ["E26"], "absatz_ids": ["P10"]},
+      {"id": "F9", "name": "Fahrzeug lenken", "ausgefuehrt_von": ["E35", "E96"], "absatz_ids": ["P11", "P22"]},
+      {"id": "F10", "name": "Fahrzeug verzögern", "ausgefuehrt_von": ["E39", "E15"], "absatz_ids": ["P12"]},
+      {"id": "F11", "name": "Fahrzeug festhalten", "ausgefuehrt_von": ["E40"], "absatz_ids": ["P12"]},
+      {"id": "F12", "name": "Fahrereingaben erfassen", "ausgefuehrt_von": ["E47"], "absatz_ids": ["P13", "P14"]},
+      {"id": "F13", "name": "Fahrerinformationen anzeigen", "ausgefuehrt_von": ["E50"], "absatz_ids": ["P13", "P14"]},
+      {"id": "F14", "name": "Insassen schützen", "ausgefuehrt_von": ["E43"], "absatz_ids": ["P13", "P14"]},
+      {"id": "F15", "name": "Erntegut aufnehmen", "ausgefuehrt_von": ["E52", "E57"], "absatz_ids": ["P15"]},
+      {"id": "F16", "name": "Erntegut dreschen", "ausgefuehrt_von": ["E60"], "absatz_ids": ["P16"]},
+      {"id": "F17", "name": "Korn abscheiden", "ausgefuehrt_von": ["E63"], "absatz_ids": ["P16"]},
+      {"id": "F18", "name": "Korn reinigen", "ausgefuehrt_von": ["E66"], "absatz_ids": ["P16"]},
+      {"id": "F19", "name": "Ladung aufnehmen", "ausgefuehrt_von": ["E74"], "absatz_ids": ["P17"]},
+      {"id": "F20", "name": "Korntank entleeren", "ausgefuehrt_von": ["E75"], "absatz_ids": ["P17"]},
+      {"id": "F21", "name": "Ernterückstände verteilen", "ausgefuehrt_von": ["E76", "E77"], "absatz_ids": ["P17"]},
+      {"id": "F22", "name": "Elektrische Energie verteilen", "ausgefuehrt_von": ["E79"], "absatz_ids": ["P19"]},
+      {"id": "F23", "name": "Daten übertragen", "ausgefuehrt_von": ["E82"], "absatz_ids": ["P19"]},
+      {"id": "F24", "name": "Fahrzeugumfeld erfassen", "ausgefuehrt_von": ["E84", "E88"], "absatz_ids": ["P19", "P20"]},
+      {"id": "F25", "name": "Fahrzeugzustand überwachen", "ausgefuehrt_von": ["E93", "E97", "E98"], "absatz_ids": ["P21", "P24"]},
+      {"id": "F26", "name": "Fahrzeugposition bestimmen", "ausgefuehrt_von": ["E92"], "absatz_ids": ["P21", "P22"]},
+      {"id": "F27", "name": "Fahrzeugumgebung ausleuchten", "ausgefuehrt_von": ["E101"], "absatz_ids": ["P25"]},
+      {"id": "F28", "name": "Lichtsignale abgeben", "ausgefuehrt_von": ["E102"], "absatz_ids": ["P25"]},
+      {"id": "F29", "name": "Fahrersicht sicherstellen", "ausgefuehrt_von": ["E103"], "absatz_ids": ["P25"]},
+      {"id": "F30", "name": "Betriebstemperatur regeln", "ausgefuehrt_von": ["E108"], "absatz_ids": ["P26", "P27"]},
+      {"id": "F31", "name": "Innenraum klimatisieren", "ausgefuehrt_von": ["E114"], "absatz_ids": ["P27"]},
+      {"id": "F32", "name": "Hydraulische Leistung bereitstellen", "ausgefuehrt_von": ["E118"], "absatz_ids": ["P28"]},
+      {"id": "F33", "name": "Druckluft bereitstellen", "ausgefuehrt_von": ["E123"], "absatz_ids": ["P28"]}
+    ],
+    "fluesse": [
+      {"id": "S1", "von": "E52", "nach": "E57", "art": "stoff", "medium": "Erntegut", "absatz_ids": ["P15", "P31"]},
+      {"id": "S2", "von": "E57", "nach": "E60", "art": "stoff", "medium": "Erntegut", "absatz_ids": ["P15", "P31"]},
+      {"id": "S3", "von": "E60", "nach": "E63", "art": "stoff", "medium": "Stroh mit Restkorn", "absatz_ids": ["P16", "P31"]},
+      {"id": "S4", "von": "E60", "nach": "E66", "art": "stoff", "medium": "Korn und Nichtkornbestandteile", "absatz_ids": ["P16"]},
+      {"id": "S5", "von": "E63", "nach": "E66", "art": "stoff", "medium": "Restkorn und Spreu", "absatz_ids": ["P16"]},
+      {"id": "S6", "von": "E66", "nach": "E73", "art": "stoff", "medium": "Reinkorn", "absatz_ids": ["P16"]},
+      {"id": "S7", "von": "E73", "nach": "E74", "art": "stoff", "medium": "Reinkorn", "absatz_ids": ["P16", "P31"]},
+      {"id": "S8", "von": "E71", "nach": "E60", "art": "stoff", "medium": "Überkehr", "absatz_ids": ["P16", "P31"]},
+      {"id": "S9", "von": "E74", "nach": "E75", "art": "stoff", "medium": "Korn", "absatz_ids": ["P17", "P31"]},
+      {"id": "S10", "von": "E63", "nach": "E76", "art": "stoff", "medium": "Stroh", "absatz_ids": ["P17", "P31"]},
+      {"id": "S11", "von": "E24", "nach": "E11", "art": "stoff", "medium": "Dieselkraftstoff", "absatz_ids": ["P10", "P31"], "schnittstelle": "Kraftstoffzulauf Motor"},
+      {"id": "S12", "von": "E11", "nach": "E14", "art": "mechanisch", "medium": "Drehmoment", "absatz_ids": ["P8", "P31"]},
+      {"id": "S13", "von": "E11", "nach": "E19", "art": "mechanisch", "medium": "Drehmoment", "absatz_ids": ["P8", "P31"]},
+      {"id": "S14", "von": "E19", "nach": "E51", "art": "mechanisch", "medium": "Drehmoment über Riemen und Ketten", "absatz_ids": ["P8", "P18"], "schnittstelle": "Antriebswellen der Arbeitsorgane"},
+      {"id": "S15", "von": "E14", "nach": "E5", "art": "mechanisch", "medium": "Drehmoment", "absatz_ids": ["P8"], "schnittstelle": "Radantrieb Vorderachse"},
+      {"id": "S16", "von": "E11", "nach": "E122", "art": "mechanisch", "medium": "Drehmoment", "absatz_ids": ["P28", "P31"], "schnittstelle": "Nebenabtrieb Motor"},
+      {"id": "S17", "von": "E122", "nach": "E119", "art": "mechanisch", "medium": "Drehmoment", "absatz_ids": ["P28"]},
+      {"id": "S18", "von": "E122", "nach": "E30", "art": "mechanisch", "medium": "Drehmoment", "absatz_ids": ["P10", "P28"], "schnittstelle": "Generatorantrieb"},
+      {"id": "S19", "von": "E118", "nach": "E52", "art": "hydraulisch", "medium": "Hydrauliköl", "absatz_ids": ["P28", "P31"], "schnittstelle": "Hydraulikkupplung Erntevorsatz"},
+      {"id": "S20", "von": "E118", "nach": "E35", "art": "hydraulisch", "medium": "Hydrauliköl", "absatz_ids": ["P11", "P28"], "schnittstelle": "Lenkölversorgung"},
+      {"id": "S21", "von": "E118", "nach": "E9", "art": "hydraulisch", "medium": "Hydrauliköl", "absatz_ids": ["P5", "P28"], "schnittstelle": "Zylinderanschluss Hangausgleich"},
+      {"id": "S22", "von": "E30", "nach": "E79", "art": "elektrisch", "medium": "Niederspannung", "absatz_ids": ["P19", "P31"], "schnittstelle": "Generatoranschluss Bordnetz"},
+      {"id": "S23", "von": "E84", "nach": "E83", "art": "information", "medium": "Sensorsignale", "absatz_ids": ["P19", "P31"]},
+      {"id": "S24", "von": "E48", "nach": "E86", "art": "information", "medium": "Fahr- und Arbeitsbefehle", "absatz_ids": ["P14", "P31"], "schnittstelle": "Fahrzeugbus"},
+      {"id": "S25", "von": "E89", "nach": "E14", "art": "information", "medium": "Fahrgeschwindigkeitssollwert", "absatz_ids": ["P21", "P31"], "schnittstelle": "Fahrzeugbus"},
+      {"id": "S26", "von": "E92", "nach": "E96", "art": "information", "medium": "Positionsdaten", "absatz_ids": ["P24", "P31"], "schnittstelle": "Positionsdatenschnittstelle"},
+      {"id": "S27", "von": "E96", "nach": "E35", "art": "information", "medium": "Lenksollwert", "absatz_ids": ["P11", "P24"], "schnittstelle": "Lenkventilansteuerung"},
+      {"id": "S28", "von": "E11", "nach": "E108", "art": "thermisch", "medium": "Kühlmittel", "absatz_ids": ["P27", "P31"], "schnittstelle": "Kühlmittelanschluss Motor"},
+      {"id": "S29", "von": "E15", "nach": "E113", "art": "thermisch", "medium": "Hydrauliköl", "absatz_ids": ["P27", "P31"], "schnittstelle": "Ölkühleranschluss"},
+      {"id": "S30", "von": "E97", "nach": "E57", "art": "information", "medium": "Steuersignal Bodenklappe", "absatz_ids": ["P22", "P24"], "schnittstelle": "Ansteuerung Schrägförderer-Boden"},
+      {"id": "S31", "von": "E86", "nach": "E50", "art": "information", "medium": "Zustandsdaten", "absatz_ids": ["P14"], "schnittstelle": "Anzeigedaten über Fahrzeugbus"},
+      {"id": "S32", "von": "E122", "nach": "E116", "art": "mechanisch", "medium": "Drehmoment", "absatz_ids": ["P27", "P28"], "schnittstelle": "Klimakompressorantrieb"},
+      {"id": "S33", "von": "E41", "nach": "E39", "art": "hydraulisch", "medium": "Bremsdruck", "absatz_ids": ["P12"]},
+      {"id": "S34", "von": "E79", "nach": "E100", "art": "elektrisch", "medium": "Niederspannung", "absatz_ids": ["P19", "P25"], "schnittstelle": "Lichtstromkreise"},
+      {"id": "S35", "von": "E115", "nach": "E43", "art": "thermisch", "medium": "Klimatisierte Luft", "absatz_ids": ["P27"], "schnittstelle": "Kabinenluftführung"}
+    ],
+    "entfallene_kategorien": [],
+    "varianten": [
+      {
+        "id": "V1",
+        "element_id": "E60",
+        "bezeichnung": "Dreschsystem",
+        "alternativen": ["Tangentiales Dreschsystem mit Dreschtrommel und Hordenschüttler", "Axiales Dreschsystem mit Rotor für Drusch und Abscheidung", "Hybrides Dreschsystem mit Dreschtrommel und Abscheiderotor"],
+        "auswahlkriterien": ["Druschbedingungen und Feuchte des Ernteguts", "geforderter Durchsatz", "benötigte Strohqualität für Langstroh", "Herstell- und Wartungskosten"],
+        "auswirkungen": [
+          {"element_id": "E63", "beschreibung": "Beim axialen System entfällt die eigenständige Abscheidung mit Hordenschüttler; beim hybriden System tritt ein Abscheiderotor an ihre Stelle."},
+          {"element_id": "E19", "beschreibung": "Der Arbeitsantrieb treibt je nach Wahl Dreschtrommel und Schüttlerkurbelwellen oder einen Rotor."},
+          {"element_id": "E66", "beschreibung": "Rotorsysteme erzeugen mehr Strohbruch und belasten die Reinigung stärker."},
+          {"element_id": "E97", "beschreibung": "Rotormaschinen benötigen eine Steinerkennung dringender."}
+        ],
+        "absatz_ids": ["P16", "P18"]
+      },
+      {
+        "id": "V2",
+        "element_id": "E63",
+        "bezeichnung": "Abscheidesystem",
+        "alternativen": ["Hordenschüttler", "Abscheiderotor"],
+        "auswahlkriterien": ["Strohfeuchte", "Hangneigung im Einsatzgebiet", "geforderter Durchsatz", "Strohschonung"],
+        "auswirkungen": [
+          {"element_id": "E9", "beschreibung": "Ein Hordenschüttler ist hangempfindlicher und erhöht den Bedarf an Hangausgleich."},
+          {"element_id": "E66", "beschreibung": "Ein Abscheiderotor verändert Menge und Zusammensetzung des Reinigungsguts."},
+          {"element_id": "E11", "beschreibung": "Rotorabscheidung verändert den Leistungsbedarf am Verbrennungsmotor."}
+        ],
+        "absatz_ids": ["P16", "P18"]
+      },
+      {
+        "id": "V3",
+        "element_id": "E4",
+        "bezeichnung": "Laufwerksbauart",
+        "alternativen": ["Radlaufwerk mit angetriebener Vorderachse", "Radlaufwerk mit Allradantrieb", "Raupenlaufwerk an der Vorderachse mit gelenkter Hinterachse"],
+        "auswahlkriterien": ["Bodentragfähigkeit und Bodenverdichtung", "Laufruhe bei breiten Schneidwerken", "Gelände", "Kosten"],
+        "auswirkungen": [
+          {"element_id": "E14", "beschreibung": "Allradantrieb erfordert einen zusätzlichen Antriebspfad zur Lenkachse, ein Raupenlaufwerk andere Endantriebe."},
+          {"element_id": "E6", "beschreibung": "Bei Allradantrieb wird die Lenkachse zur angetriebenen Achse."},
+          {"element_id": "E39", "beschreibung": "Anordnung und Auslegung der Betriebsbremse ändern sich mit dem Laufwerk."}
+        ],
+        "absatz_ids": ["P3", "P4", "P11"]
+      },
+      {
+        "id": "V4",
+        "element_id": "E9",
+        "bezeichnung": "Prinzip des Hangausgleichs",
+        "alternativen": ["Querbleche auf den Sieben ohne aktiven Ausgleich", "Hangausgleich an der Reinigung", "Hangfahrwerk mit Hydraulikzylindern"],
+        "auswahlkriterien": ["Hangneigung im Einsatzgebiet", "Ausgleich nur quer oder auch längs", "Nutzung des Korntankvolumens", "technischer Aufwand und Kosten"],
+        "auswirkungen": [
+          {"element_id": "E66", "beschreibung": "Beim Hangausgleich an der Reinigung wird der Siebkasten bewegt oder geneigt."},
+          {"element_id": "E118", "beschreibung": "Ein Hangfahrwerk braucht zusätzliche Hydraulikzylinder und Ventile."},
+          {"element_id": "E84", "beschreibung": "Aktive Systeme benötigen eine Neigungserfassung."},
+          {"element_id": "E74", "beschreibung": "Nur das Hangfahrwerk erlaubt die volle Nutzung des Korntanks am Hang."}
+        ],
+        "absatz_ids": ["P5"]
+      },
+      {
+        "id": "V5",
+        "element_id": "E52",
+        "bezeichnung": "Bauart des Erntevorsatzes",
+        "alternativen": ["Schneidwerk mit Haspel und Einzugsschnecke", "Schneidwerk mit Förderband", "Maispflücker", "Pickup"],
+        "auswahlkriterien": ["Druschfrucht", "Bestandsform, etwa Lagergetreide oder Schwad", "Arbeitsbreite", "Straßentransport"],
+        "auswirkungen": [
+          {"element_id": "E19", "beschreibung": "Antriebsbedarf und Antriebsanschlüsse am Erntevorsatz ändern sich."},
+          {"element_id": "E118", "beschreibung": "Breite Vorsätze brauchen hydraulische Klappfunktionen."},
+          {"element_id": "E88", "beschreibung": "Die Schneidwerksführung muss auf die Vorsatzbauart abgestimmt werden."},
+          {"element_id": "E2", "beschreibung": "Breite Vorsätze erfordern Abbau und Transport auf einem Schneidwerkswagen."}
+        ],
+        "absatz_ids": ["P6", "P15"]
+      },
+      {
+        "id": "V6",
+        "element_id": "E14",
+        "bezeichnung": "Getriebebauart des Fahrantriebs",
+        "alternativen": ["Hydrostatisches Getriebe", "Variatorgetriebe"],
+        "auswahlkriterien": ["stufenlose Anpassung der Fahrgeschwindigkeit", "Wirkungsgrad und Wärmeeintrag", "Einbindung der Durchsatzregelung", "Kosten"],
+        "auswirkungen": [
+          {"element_id": "E38", "beschreibung": "Ohne Hydrostat fehlt dessen Bremswirkung, die Betriebsbremse trägt den gesamten Verzögerungsbedarf."},
+          {"element_id": "E113", "beschreibung": "Der Ölkühler für den Fahrantrieb entfällt beim Variator."},
+          {"element_id": "E89", "beschreibung": "Die Durchsatzregelung steuert je nach Wahl Hydrostat oder Variatorverstellung."}
+        ],
+        "absatz_ids": ["P7", "P8", "P12"]
+      },
+      {
+        "id": "V7",
+        "element_id": "E72",
+        "bezeichnung": "Strohablage",
+        "alternativen": ["Schwadablage für die spätere Bergung", "Häckseln und Verteilen über die Schnittbreite"],
+        "auswahlkriterien": ["Strohverwertung durch Ballenpresse oder Einarbeitung", "Leistungsbedarf", "Arbeitsbreite"],
+        "auswirkungen": [
+          {"element_id": "E11", "beschreibung": "Der Strohhäcksler erhöht den Leistungsbedarf am Verbrennungsmotor."},
+          {"element_id": "E19", "beschreibung": "Der Arbeitsantrieb braucht einen zusätzlichen Antriebsstrang für den Strohhäcksler."},
+          {"element_id": "E98", "beschreibung": "Häckslerlager sind eine zusätzliche Brandquelle und gehören in die Temperaturüberwachung."}
+        ],
+        "absatz_ids": ["P7", "P17"]
+      }
+    ],
+    "klaerungsfragen": [
+      {"id": "K1", "frage": "Welches Dreschsystem soll das Modell abbilden: tangential mit Hordenschüttler, axial oder hybrid?", "element_ids": ["E51", "E60"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Abscheidung, Arbeitsantrieb und Strohqualität ab.", "variante_ids": ["V1"]},
+      {"id": "K2", "frage": "Hat die Erhaltung von Langstroh Vorrang vor einem hohen Durchsatz bei feuchtem Stroh?", "element_ids": ["E51", "E63"], "anlass": "anforderung", "relevanz": "Die Antwort entscheidet zwischen Hordenschüttler und Abscheiderotor.", "variante_ids": ["V2", "V7"]},
+      {"id": "K3", "frage": "Auf welchen Böden und in welchem Gelände wird die Maschine eingesetzt, sodass Radlaufwerk, Allradantrieb oder Raupenlaufwerk zu wählen ist?", "element_ids": ["E2", "E4"], "anlass": "betrieb", "relevanz": "Davon hängen Laufwerk, Fahrantrieb und Bremsenanordnung ab.", "variante_ids": ["V3"]},
+      {"id": "K4", "frage": "Welche Quer- und Längsneigungen treten im Einsatzgebiet auf, und welche davon müssen ausgeglichen werden?", "element_ids": ["E2", "E9"], "anlass": "betrieb", "relevanz": "Davon hängt ab, ob Querbleche, ein Hangausgleich der Reinigung oder ein Hangfahrwerk nötig ist.", "variante_ids": ["V4"]},
+      {"id": "K5", "frage": "Welche Druschfrüchte und Bestandsformen, etwa Lagergetreide oder Schwad, muss die Maschine verarbeiten?", "element_ids": ["E51", "E52"], "anlass": "anforderung", "relevanz": "Davon hängen die vorzusehenden Erntevorsätze und ihre Antriebs- und Hydraulikschnittstellen ab.", "variante_ids": ["V5"]},
+      {"id": "K6", "frage": "Soll der Fahrantrieb hydrostatisch oder mit einem Variatorgetriebe ausgeführt werden?", "element_ids": ["E10", "E14"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Bremssystem, Ölkühlung und die Anbindung der Durchsatzregelung ab.", "variante_ids": ["V6"]},
+      {"id": "K7", "frage": "Soll das Stroh im Schwad abgelegt oder gehäckselt und verteilt werden, oder müssen beide Betriebsarten möglich sein?", "element_ids": ["E51", "E72"], "anlass": "betrieb", "relevanz": "Davon hängen Strohhäcksler, Leistungsbedarf und Arbeitsantrieb ab.", "variante_ids": ["V7"]},
+      {"id": "K8", "frage": "Welche Einsatzdauer muss die Maschine ohne Nachtanken erreichen, und wie wird sie auf dem Feld betankt?", "element_ids": ["E23", "E25"], "anlass": "anforderung", "relevanz": "Davon hängt die Größe des Kraftstofftanks ab."},
+      {"id": "K9", "frage": "Soll das Lenksystem für eine automatische Spurführung vorbereitet werden?", "element_ids": ["E31", "E35", "E96"], "anlass": "architekturentscheidung", "relevanz": "Davon hängt ab, ob die Lenkhydraulik eine elektrische Eingriffsschnittstelle erhält."},
+      {"id": "K10", "frage": "Mit welcher Höchstgeschwindigkeit soll die Maschine auf öffentlichen Straßen fahren?", "element_ids": ["E38", "E39"], "anlass": "anforderung", "relevanz": "Davon hängen Auslegung der Betriebsbremse und Zulassungsanforderungen ab."},
+      {"id": "K11", "frage": "Welche Funktionen müssen auf dem Fahrhebel liegen, und welche Einstellungen sind gegen versehentliches Verstellen zu sichern?", "element_ids": ["E42", "E48"], "anlass": "schnittstelle", "relevanz": "Davon hängen Belegung des Bedien- und Anzeigesystems und die Signale auf dem Fahrzeugbus ab."},
+      {"id": "K12", "frage": "Wird das Korn parallel zum Drusch auf Überladewagen abgetankt oder im Stand auf Transportfahrzeuge?", "element_ids": ["E51", "E74", "E75"], "anlass": "betrieb", "relevanz": "Davon hängen Reichweite des Abtankrohrs, Korntankgröße und Sichtsystem ab."},
+      {"id": "K13", "frage": "Welche Steuergeräte und Vorsätze anderer Hersteller sollen über den Fahrzeugbus eingebunden werden?", "element_ids": ["E78", "E82"], "anlass": "schnittstelle", "relevanz": "Davon hängen Busprotokoll und Steckverbinder an der Vorsatzschnittstelle ab."},
+      {"id": "K14", "frage": "Sollen Ertrags- und Maschinendaten an ein Betriebsmanagementsystem übertragen werden?", "element_ids": ["E85", "E91", "E94"], "anlass": "schnittstelle", "relevanz": "Davon hängt ab, ob eine Telematikeinheit und eine positionsbezogene Ertragsmessung vorzusehen sind."},
+      {"id": "K15", "frage": "Welche Brandschutzmaßnahmen sind gefordert, etwa Löschanlage im Motorraum oder Temperaturüberwachung der Lager?", "element_ids": ["E95", "E98"], "anlass": "anforderung", "relevanz": "Davon hängen Umfang der Brandschutzeinrichtung und zusätzliche Sensoren ab."},
+      {"id": "K16", "frage": "Wird die Maschine regelmäßig bei Dunkelheit eingesetzt, und welche Arbeitsbereiche müssen dann ausgeleuchtet werden?", "element_ids": ["E99", "E101"], "anlass": "betrieb", "relevanz": "Davon hängen Anzahl und Anordnung der Scheinwerfer und die elektrische Last ab."},
+      {"id": "K17", "frage": "Unter welchen Umgebungstemperaturen und Staubbelastungen muss die Kühlung ohne Leistungsminderung arbeiten?", "element_ids": ["E107", "E108"], "anlass": "anforderung", "relevanz": "Davon hängen Kühlergröße und Art der Kühlerreinigung ab."},
+      {"id": "K18", "frage": "Welche Verstellungen sollen hydraulisch und welche elektrisch ausgeführt werden?", "element_ids": ["E117", "E118"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Größe der Hydraulikversorgung und Last im Bordnetz ab."},
+      {"id": "K19", "frage": "Muss der Erntevorsatz für die Straßenfahrt klappbar sein, oder wird er auf einem Schneidwerkswagen mitgeführt?", "element_ids": ["E2", "E52"], "anlass": "betrieb", "relevanz": "Davon hängen Klappmechanik, Hydraulikbedarf und Anhängevorrichtung ab.", "variante_ids": ["V5"]},
+      {"id": "K20", "frage": "Welche Leistungsklasse soll der Mähdrescher für die geforderte Druschleistung erreichen?", "element_ids": ["E10", "E11"], "anlass": "anforderung", "relevanz": "Davon hängen Motor, Kühlung und Kraftstoffbedarf ab."}
+    ],
+    "anforderungsthemen": [
+      {"id": "R1", "element_ids": ["E2", "E4"], "thema": "Bodenschonung und Traktion", "kenngroessen": ["Kontaktflächendruck", "Achslast", "Wendekreis"]},
+      {"id": "R2", "element_ids": ["E2", "E52"], "thema": "Straßentransportmaße", "kenngroessen": ["Fahrzeugbreite", "Transportbreite des Erntevorsatzes", "Fahrzeughöhe"], "regelwerke": [{"bezeichnung": "StVZO § 32 Absatz 1 Satz 1 Nummer 2 (Deutschland; Breite selbstfahrender land- oder forstwirtschaftlicher Arbeitsmaschinen beim Einsatz für land- oder forstwirtschaftliche Zwecke)", "quellen_id": "Q3", "fundstelle": "§ 32 Absatz 1 Satz 1 Nummer 2"}]},
+      {"id": "R3", "element_ids": ["E10", "E11", "E14"], "thema": "Antriebsleistung und Fahrgeschwindigkeit", "kenngroessen": ["Motornennleistung", "Leistungsreserve für Strohhäcksler", "Arbeitsgeschwindigkeitsbereich", "Straßenhöchstgeschwindigkeit"]},
+      {"id": "R4", "element_ids": ["E23", "E25"], "thema": "Einsatzdauer", "kenngroessen": ["Kraftstofftankvolumen", "Kraftstoffverbrauch je Fläche"]},
+      {"id": "R5", "element_ids": ["E31", "E35"], "thema": "Lenkverhalten und Spurführung", "kenngroessen": ["Wendekreis", "Spurführungsgenauigkeit", "Lenkkraft"]},
+      {"id": "R6", "element_ids": ["E38"], "thema": "Bremsverhalten", "kenngroessen": ["Verzögerung", "Haltevermögen am Hang"]},
+      {"id": "R7", "element_ids": ["E42", "E43"], "thema": "Arbeitsplatz und Ergonomie", "kenngroessen": ["Schallpegel in der Kabine", "Staubkonzentration in der Kabine", "Innenraumtemperatur", "Sichtfeld"]},
+      {"id": "R8", "element_ids": ["E51"], "thema": "Druschleistung und Kornqualität", "kenngroessen": ["Durchsatz", "Kornverlust", "Kornreinheit", "Bruchkornanteil", "Korntankvolumen", "Abtankleistung"]},
+      {"id": "R9", "element_ids": ["E51", "E9"], "thema": "Hangtauglichkeit", "kenngroessen": ["ausgleichbare Querneigung", "ausgleichbare Längsneigung", "Verlustanstieg am Hang"]},
+      {"id": "R10", "element_ids": ["E78"], "thema": "Robustheit der Elektrik", "kenngroessen": ["Schutzart gegen Staub und Wasser", "Betriebstemperaturbereich", "Scheuerfestigkeit"]},
+      {"id": "R11", "element_ids": ["E85"], "thema": "Prozess- und Ertragsdatenerfassung", "kenngroessen": ["Messgenauigkeit der Ertragsmessung", "Positionsgenauigkeit", "Datenübertragungsrate"]},
+      {"id": "R12", "element_ids": ["E95", "E98"], "thema": "Brandschutz", "kenngroessen": ["Oberflächentemperatur im Motorraum", "Lagertemperatur", "Löschmittelmenge"]},
+      {"id": "R13", "element_ids": ["E99"], "thema": "Ausleuchtung und Sicht", "kenngroessen": ["Beleuchtungsstärke im Arbeitsbereich", "Sichtfeld nach hinten"]},
+      {"id": "R14", "element_ids": ["E107"], "thema": "Kühlleistung unter Staub", "kenngroessen": ["Kühlleistung", "Umgebungstemperaturbereich", "Reinigungsintervall des Kühlers"]},
+      {"id": "R15", "element_ids": ["E117", "E118"], "thema": "Hydraulikleistung", "kenngroessen": ["Volumenstrom", "Systemdruck", "Ansprechzeit der Verstellungen"]}
+    ]
+  },
+  "offene_punkte": [
+    "Glossarvorschlag: Hangneigung ausgleichen",
+    "Glossarvorschlag: Erntegut aufnehmen",
+    "Glossarvorschlag: Erntegut dreschen",
+    "Glossarvorschlag: Korn abscheiden",
+    "Glossarvorschlag: Korn reinigen",
+    "Glossarvorschlag: Korntank entleeren",
+    "Glossarvorschlag: Ernterückstände verteilen",
+    "Recherche Sicherheitsnorm: Sicherheitsanforderungen an Mähdrescher (Suchbegriff: ISO 4254-7 Mähdrescher); die ISO-Katalogseite war in diesem Lauf nicht abrufbar (Zugriffsschutz).",
+    "Recherche Fachliteratur: Aufbau von Fahrantrieb, Arbeitsantrieb, Bremse und Hydraulik selbstfahrender Mähdrescher, etwa Eichhorn, Landtechnik (Ulmer) oder Hanna/Quick, Grain Harvesting Machinery (Elsevier), um die hergeleiteten Absätze P8, P11, P12 und P28 zu belegen.",
+    "Recherche Bremse und Zulassung: Bremsanforderungen und Höchstgeschwindigkeit selbstfahrender land- oder forstwirtschaftlicher Arbeitsmaschinen (Suchbegriff: StVZO § 41 selbstfahrende Arbeitsmaschine Bremsanlage).",
+    "Recherche Abgasnachbehandlung: Einsatz von Reduktionsmitteltanks und Partikelfiltern an Mähdreschermotoren (Suchbegriff: Mähdrescher Abgasstufe V SCR Harnstoff).",
+    "Recherche Beleuchtung: lichttechnische Pflichtausstattung selbstfahrender Arbeitsmaschinen mit Überbreite (Suchbegriff: Merkblatt land- und forstwirtschaftliche Fahrzeuge Beleuchtung Überbreite)."
+  ]
+}

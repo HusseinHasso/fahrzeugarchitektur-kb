@@ -1,0 +1,982 @@
+{
+  "schema_version": "2.3",
+  "artikel_id": "A-0050",
+  "artikeltyp": "blatt",
+  "titel": "Geländetransporter",
+  "betrachtungsumfang": "Ungepanzerter militärischer Geländetransporter der leichten Klasse für eine kleine Gruppe Soldaten mit Ausrüstung oder einen austauschbaren Rüstsatz, entweder als allradgetriebenes Radfahrzeug (militärische Sonderentwicklung eines Geländewagens oder Ableitung eines kommerziellen Serienfahrzeugs) oder als zweigliedriges, gegebenenfalls schwimmfähiges Kettengelenkfahrzeug. Betrachtet wird ausschließlich der verbrennungsmotorische Antrieb (Dieselmotor, bei älteren Baureihen auch Ottomotor) mit Kraftstofftank als Energiespeicher. Ausgeschlossen sind batterieelektrische, hybride und wasserstoffbasierte Antriebe, gepanzerte oder geschützte Ableitungen, Militär-Lkw (eigener Artikel), Quads und Kleinstfahrzeuge sowie Bewaffnung und Waffenanlagen.",
+  "status": "in_arbeit",
+  "quellenzugriff": "ja",
+  "kindartikel_ids": [],
+  "quellen": [
+    {
+      "quellen_id": "Q1",
+      "titel": "Geländewagen",
+      "urheber": "Wikipedia, Die freie Enzyklopädie (deutschsprachig)",
+      "stand": "Fassung vom Abrufdatum (Quelltext über action=raw gelesen)",
+      "url": "https://de.wikipedia.org/wiki/Gel%C3%A4ndewagen",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q2",
+      "titel": "Bandvagn 206",
+      "urheber": "Wikipedia, Die freie Enzyklopädie (deutschsprachig)",
+      "stand": "Fassung vom Abrufdatum (Quelltext über action=raw gelesen)",
+      "url": "https://de.wikipedia.org/wiki/Bandvagn_206",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q3",
+      "titel": "Wolf (Fahrzeug)",
+      "urheber": "Wikipedia, Die freie Enzyklopädie (deutschsprachig)",
+      "stand": "Fassung vom Abrufdatum (Quelltext über action=raw gelesen; Artikel mit Wartungsbaustein „Belege fehlen“)",
+      "url": "https://de.wikipedia.org/wiki/Wolf_(Fahrzeug)",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q4",
+      "titel": "Geländegängigkeit",
+      "urheber": "Wikipedia, Die freie Enzyklopädie (deutschsprachig)",
+      "stand": "Fassung vom Abrufdatum (Quelltext über action=raw gelesen; Artikel mit Wartungsbaustein „Belege fehlen“)",
+      "url": "https://de.wikipedia.org/wiki/Gel%C3%A4ndeg%C3%A4ngigkeit",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q5",
+      "titel": "Reifendruckregelanlage",
+      "urheber": "Wikipedia, Die freie Enzyklopädie (deutschsprachig)",
+      "stand": "Fassung vom Abrufdatum (Quelltext über action=raw gelesen; Artikel mit Wartungsbaustein „Belege fehlen“)",
+      "url": "https://de.wikipedia.org/wiki/Reifendruckregelanlage",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q6",
+      "titel": "Regulation (EU) 2018/858 of the European Parliament and of the Council on the approval and market surveillance of motor vehicles and their trailers, Article 2 Scope",
+      "urheber": "The National Archives, legislation.gov.uk (im Vereinigten Königreich fortgeltende Fassung des EU-Rechts)",
+      "stand": "Fassung vom Abrufdatum auf legislation.gov.uk, einschließlich Änderungen durch S.I. 2022/1273",
+      "url": "https://www.legislation.gov.uk/eur/2018/858/article/2",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q7",
+      "titel": "Regulation (EU) 2018/858, Annex I (Requirements for the classification of vehicles), Part A",
+      "urheber": "The National Archives, legislation.gov.uk (im Vereinigten Königreich fortgeltende Fassung des EU-Rechts)",
+      "stand": "Fassung vom Abrufdatum auf legislation.gov.uk",
+      "url": "https://www.legislation.gov.uk/eur/2018/858/annex/I",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q8",
+      "titel": "The U.S. Army's Infantry Squad Vehicle (ISV), In Focus IF13092",
+      "urheber": "Congressional Research Service (abgerufen über EveryCRSReport.com)",
+      "stand": "Updated October 22, 2026",
+      "url": "https://www.everycrsreport.com/files/2026-10-22_IF13092_87cb405b20839ef67da5b67f394d27f3b3dc1839.html",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "behoerde"
+    }
+  ],
+  "abschnitte": [
+    {
+      "ueberschrift": "Einleitung",
+      "abschnittstyp": "gesamtsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P1",
+          "text": "Geländewagen sind Automobile zum Befahren von schwierigem Gelände abseits befestigter Straßen; heute werden sie vorwiegend von Streitkräften benötigt. Eines ihrer zentralen Merkmale ist der Allradantrieb, bei dem zur Erhöhung der Traktion Vorder- und Hinterachse angetrieben werden. Daneben gibt es Geländefahrzeuge mit Kettenlaufwerk wie den Bandvagn 206, ein schwimmfähiges Mehrzweckfahrzeug aus zwei gelenkig verbundenen Einheiten mit je zwei Raupenketten, das die Bundeswehr seit 1984 als Geländetransportfahrzeug Bv206D einsetzt. Die US Army beschreibt ihr Infantry Squad Vehicle als leichtes, ungepanzertes Bodentransportfahrzeug, das neun Soldaten mit Ausrüstung schnell durch Gelände bewegen soll.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q1", "fundstelle": "Einleitung (erster und zweiter Absatz)"},
+            {"quellen_id": "Q2", "fundstelle": "Einleitung; Abschnitt Varianten und Nutzer, Unterabschnitt Deutschland"},
+            {"quellen_id": "Q8", "fundstelle": "Abschnitt The Infantry Squad Vehicle (ISV)"}
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "funktion"
+        },
+        {
+          "absatz_id": "P2",
+          "text": "Ein Geländetransporter im Sinne dieses Artikels ist ein ungepanzertes Militärfahrzeug, das eine kleine Gruppe Soldaten mit Ausrüstung oder einen austauschbaren Rüstsatz abseits befestigter Wege befördert, als allradgetriebenes Radfahrzeug oder als zweigliedriges Kettengelenkfahrzeug. Er entsteht als militärische Sonderentwicklung eines Geländewagens oder als Ableitung eines kommerziellen Serienfahrzeugs. Seine Systeme sind über mechanische, elektrische, hydraulische, pneumatische, thermische und informationstechnische Schnittstellen gekoppelt; die Dekomposition zerlegt ihn in dreizehn Hauptsysteme mit Subsystemen und Komponenten.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herangezogene_artikel_ids": [],
+          "herleitung": {
+            "praemissen": [
+              "P1",
+              "Q3, Einleitung: Der Wolf ist eine Sonderentwicklung eines zivilen Geländewagens",
+              "Q8, Abschnitt Background: Das ISV basiert auf einem mittelgroßen Serien-Pickup und besteht überwiegend aus handelsüblichen Teilen",
+              "Q3, Abschnitt Ausstattung und Varianten: Ausstattung mit austauschbaren Rüstsätzen"
+            ],
+            "schluss": "Die Fahrzeugart umfasst Rad- und Kettenbauweisen ohne Panzerung, die aus Sonderentwicklungen oder Serienfahrzeugen entstehen und Personal oder Rüstsätze befördern."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "funktion"
+        },
+        {
+          "absatz_id": "P3",
+          "text": "Die Verordnung (EU) 2018/858, gelesen in der auf legislation.gov.uk veröffentlichten, im Vereinigten Königreich fortgeltenden Fassung, gilt für Kraftfahrzeuge der Klassen M und N für öffentliche Straßen, nicht aber für Gleiskettenfahrzeuge und für Fahrzeuge, die ausschließlich für die Streitkräfte konstruiert oder angepasst sind. Fahrzeuge der Klassen M1 und N1 gelten danach als Geländefahrzeuge, wenn mindestens eine Vorder- und eine Hinterachse gleichzeitig angetrieben werden können, mindestens eine Differenzialsperre oder ein Mechanismus ähnlicher Wirkung vorhanden ist, sie als Einzelfahrzeug mindestens 25 % Steigung bewältigen und fünf von sechs Mindestwerten für Böschungswinkel, Rampenwinkel und Bodenfreiheit erfüllen.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q6", "fundstelle": "Article 2 Absatz 1 und Absatz 2 Buchstaben c und d"},
+            {"quellen_id": "Q7", "fundstelle": "Part A, Nummer 4.1 Buchstaben a bis d"}
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "funktion"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrzeugstruktur und Fahrwerk",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E2",
+      "absaetze": [
+        {
+          "absatz_id": "P4",
+          "text": "Die Geländegängigkeit von Geländewagen begünstigen eine hohe Bodenfreiheit und kurze, oft abgeschrägte Karosserieüberhänge, die an starken Steigungen ein Aufsetzen vermeiden. Ein Unterfahrschutz schützt Tank, Motor, Getriebe und Differenziale. Hinzu kommen ein verschränkungsfähiges Fahrwerk, zum Teil noch mit Starrachsen, und grob profilierte Geländereifen; viele Geländewagen haben einen robusten Leiter-, Kasten- oder Zentralrohrrahmen mit aufgesetzter, nichttragender Karosserie.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q1", "fundstelle": "Abschnitt Konstruktive Kriterien für Geländewagen, erster Absatz"}
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P5",
+          "text": "Die Tragstruktur des radgetriebenen Geländetransporters besteht aus Rahmen, Karosserie und Unterfahrschutz. Lasten aus Insassen, Ladung und Rüstsatz laufen über die Karosserie in den Rahmen, über die Federung in jede Achse und über Räder und Reifen in den Boden. Anschlagösen am Rahmen nehmen beim Lufttransport als Außenlast die Hubkräfte auf. Das Radfahrwerk kann um eine Reifendruckregelanlage ergänzt werden.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herangezogene_artikel_ids": [],
+          "herleitung": {
+            "praemissen": [
+              "P4",
+              "Q3, Abschnitt Ausstattung und Varianten: Ösen für das Außenlastgeschirr sind am Fahrgestell befestigt und hoch belastbar",
+              "P7",
+              "Jede Last muss über Federung, Achsen und Räder in den Boden geleitet werden"
+            ],
+            "schluss": "Tragstruktur und Radfahrwerk bilden einen durchgehenden Lastpfad; die Anschlagpunkte für den Lufttransport sitzen am Rahmen."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P6",
+          "text": "Beim Bv206 besteht das Fahrgestell aus je einer gleichen Laufwerksgruppe unter Vorder- und Hinterwagen, gebildet aus Hauptrahmen, zwei Stahlblattfedern und zwei Kettenlaufwerken. Die Laufräder aus Aluminium sind je mit einem Tragarm am Laufrollenrahmen befestigt; als Kette dient ein mit Stahleinlagen verstärktes Gummi-Endloslaufband, das durch ein Laufbandrad geführt wird. Der Hinterwagen ist kein Anhänger, sondern ein fester Fahrzeugbestandteil, ohne den das Fahrzeug nicht fahrbar ist.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q2", "fundstelle": "Abschnitt Aufbau Bv 206, erster Absatz und Unterabschnitt Antrieb und Laufwerk, dritter Absatz"}
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "variante"
+        },
+        {
+          "absatz_id": "P7",
+          "text": "Eine Reifendruckregelanlage steuert den Reifeninnendruck luftbereifter Fahrzeuge und ist besonders häufig in Militärfahrzeugen verbaut. Der Druck lässt sich vom Fahrzeuginneren aus auch während der Fahrt dem Untergrund anpassen, was Geländegängigkeit und Bodenhaftung verbessert. Die Druckluft wird meist über eine hohle Achse beziehungsweise Nabe zum drehenden Reifen geführt, Nachrüstsysteme nutzen eine Drehdurchführung auf der Felge. Nachteilig ist, dass kleinere Reifenschäden automatisch ausgeglichen und deshalb nicht ohne Weiteres entdeckt werden.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q5", "fundstelle": "Einleitung; Abschnitte Technik sowie Vor- und Nachteile"}
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "variante"
+        },
+        {
+          "absatz_id": "P8",
+          "text": "Die Laufwerksart ist die folgenreichste Strukturentscheidung. Das Radfahrwerk erlaubt höhere Geschwindigkeiten und eine Achsschenkellenkung. Das Kettenlaufwerk erreicht zu Lasten der Geschwindigkeit eine sehr hohe Geländetauglichkeit, verlangt aber eine Knicklenkung zwischen den Wagen, einen Durchtrieb zu den Ketten des Hinterwagens und eine Hydraulikversorgung; Mannschaftsraum und Laderaum verteilen sich auf zwei Kabinen. Bei schwimmfähiger Auslegung müssen beide Wagenkästen wasserdicht sein.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herangezogene_artikel_ids": [],
+          "herleitung": {
+            "praemissen": [
+              "Q1, Abschnitt Rechtliches, letzter Satz: Ketten erzielen zu Lasten der Geschwindigkeit eine enorme Geländetauglichkeit",
+              "P6",
+              "P13",
+              "Q2, Abschnitt Aufbau Bv 206: Der Antrieb des Vorderwagens wirkt auch auf die Ketten des Hinterwagens",
+              "Ein schwimmendes Fahrzeug braucht einen wasserdichten Auftriebskörper"
+            ],
+            "schluss": "Die Wahl zwischen Rad- und Kettenlaufwerk ändert Lenksystem, Kraftübertragung, Nebensysteme und Aufbau."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "variante"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Antriebssystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E18",
+      "absaetze": [
+        {
+          "absatz_id": "P9",
+          "text": "Dem Vortrieb im Gelände dienen ein zuschaltbarer oder permanenter Allradantrieb, oft mit zuschaltbarer kurzer Geländeuntersetzung, sowie Differenzialsperren. Die Geländegängigkeit hängt unter anderem von der Gesamtuntersetzung und dem damit verbundenen Drehmoment an den angetriebenen Rädern ab sowie davon, ob Achs- und Zentraldifferenziale gesperrt oder Räder ohne Traktion automatisch abgebremst werden können, auch in Kombination mit einem Eingriff in die Motorsteuerung. Der Wolf besitzt einen während der Fahrt zuschaltbaren Allradantrieb mit Straßen- und Geländeübersetzung sowie eine Differenzialsperre für Vorder- und Hinterachse.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q1", "fundstelle": "Abschnitt Konstruktive Kriterien für Geländewagen, erster Absatz"},
+            {"quellen_id": "Q4", "fundstelle": "Abschnitt Voraussetzungen bei Automobilen"},
+            {"quellen_id": "Q3", "fundstelle": "Abschnitt Ausstattung und Varianten, dritter Absatz"}
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P10",
+          "text": "Im Radfahrzeug erzeugt der Verbrennungsmotor die Antriebsleistung, erhält Luft über die Luftansaugung und gibt Abgas an die Abgasanlage ab. Die Kraftübertragung führt die Leistung über das Getriebe in ein Verteilergetriebe mit Geländeuntersetzung, das sie auf beide Achsen verteilt oder die Vorderachse zuschaltet. Je eine Gelenkwelle führt zum Differenzial jeder Achse mit Differenzialsperre, Antriebswellen übertragen das Drehmoment an die Räder. Für Wasserdurchfahrten kann die Luftansaugung über einen Schnorchel hochgelegt werden.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herangezogene_artikel_ids": [],
+          "herleitung": {
+            "praemissen": [
+              "P9",
+              "Q1, Bildunterschrift im Abschnitt Konstruktive Kriterien: Geländewagen mit Schnorchel",
+              "Wer Vorder- und Hinterachse zugleich antreibt, braucht ein Element, das die Leistung auf beide Achsen aufteilt",
+              "Ein Verbrennungsmotor braucht Luftzufuhr und Abgasabfuhr"
+            ],
+            "schluss": "Das Antriebssystem besteht aus Verbrennungsmotor mit Luftansaugung und Abgasanlage sowie einer Kraftübertragung mit Verteilergetriebe, Gelenkwellen, Differenzialen mit Sperre und Antriebswellen."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "loesung"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Energieversorgungssystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E29",
+      "absaetze": [
+        {
+          "absatz_id": "P11",
+          "text": "Das Energieversorgungssystem gliedert sich in Kraftstoffversorgung und elektrische Energieversorgung. Der Kraftstofftank speichert den Kraftstoff geschützt hinter dem Unterfahrschutz, die Kraftstoffanlage fördert ihn zum Motor. Die Starterbatterie speichert Energie für den Motorstart, der Generator speist im Betrieb das Bordnetz. Zusatzbatterien versorgen Funkrüstsätze, eine Exportstromversorgung kann Führungssysteme während der Fahrt speisen. Der Strombedarf der Rüstsätze bestimmt so die Auslegung von Generator und Batterien.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herangezogene_artikel_ids": [],
+          "herleitung": {
+            "praemissen": [
+              "P4: Unterfahrschutz schützt den Tank",
+              "P12",
+              "Ein Verbrennungsmotor braucht Kraftstoffspeicher, Kraftstoffförderung und elektrische Energie für den Start"
+            ],
+            "schluss": "Die Energieversorgung umfasst Kraftstoffversorgung und elektrische Energieversorgung mit zusätzlichem Speicher und gegebenenfalls Exportleistung für Rüstsätze."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P12",
+          "text": "Im Wolf verfügen Fahrzeuge mit Funkgeräten über zwei zusätzliche Batterien im Tragegestell der Funkanlage, die über einen Schalter im Fußraum vom Bordnetz getrennt werden können; die Netzspannung zeigt eine Leuchtdiodenanzeige im Einbauschacht des Radios an. Für eine schwere Variante des Infantry Squad Vehicle sucht die US Army Bewerber mit exportierbarer Leistung, um Führungssysteme der mobilen Brigaden während der Fahrt zu versorgen.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q3", "fundstelle": "Abschnitt Ausstattung und Varianten, fünfter Absatz"},
+            {"quellen_id": "Q8", "fundstelle": "Abschnitt Army Seeks to Acquire a Heavy ISV Version"}
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "variante"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Lenksystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E38",
+      "absaetze": [
+        {
+          "absatz_id": "P13",
+          "text": "Vorder- und Hinterwagen des Bv206 sind durch eine hydraulische Knicklenkung verbunden, die die Stellung beider Wagen zueinander verändert und so das Gespann lenkt. Während reguläre Kettenfahrzeuge über unterschiedliche Umfangsgeschwindigkeiten der Ketten die Richtung ändern, lenkt der Bandvagn über das Verschränken von Vorder- und Hinterwagen, ähnlich wie ein Radlader. Der Wolf hat eine Servolenkung.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q2", "fundstelle": "Abschnitt Aufbau Bv 206, erster Absatz"},
+            {"quellen_id": "Q3", "fundstelle": "Infobox Technische Daten, Zeile Lenkung"}
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "variante"
+        },
+        {
+          "absatz_id": "P14",
+          "text": "Am Radfahrzeug wirkt die Lenkeingabe aus Lenkrad und Lenksäule auf das Lenkgetriebe der Achsschenkellenkung; eine Lenkunterstützung verringert die Lenkkraft, die Spurstange bewegt die gelenkten Räder der Vorderachse. Bei der Knicklenkung verdrehen Lenkzylinder, die von der Hydraulikversorgung gespeist und über das Lenkrad angesteuert werden, beide Wagen am Knickgelenk gegeneinander. Das Knickgelenk überträgt zugleich Zug- und Schubkräfte und führt den Durchtrieb zum Hinterwagen.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herangezogene_artikel_ids": [],
+          "herleitung": {
+            "praemissen": [
+              "P13",
+              "Analogie zur Achsschenkellenkung von Pkw und Lkw und zur hydraulischen Knicklenkung von Radladern",
+              "P8: Durchtrieb zum Hinterwagen"
+            ],
+            "schluss": "Das Lenksystem besteht aus Lenkeingabe und je nach Laufwerk aus Achsschenkellenkung oder Knicklenkung mit Knickgelenk und Lenkzylindern."
+          },
+          "sicherheit": "gering",
+          "aussagetyp": "loesung"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Bremssystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E49",
+      "absaetze": [
+        {
+          "absatz_id": "P15",
+          "text": "Das Bremssystem verzögert den Geländetransporter, hält ihn an Steigungen fest und unterstützt die Traktion. Die Radbremsanlage umfasst Betriebsbremse mit Bremskraftverstärker und Feststellbremse. Die Bremsregelung mit Antiblockiersystem und Antriebsschlupfregelung bremst ein durchdrehendes Rad gezielt ab und kann so eine mechanische Differenzialsperre ergänzen oder ersetzen; für den Eingriff in die Motorleistung tauscht sie Daten mit dem Fahrzeugmanagement aus. Beim Kettenlaufwerk laufen die Laufräder frei, daher muss die Bremse auf Antriebsstrang oder Laufbandrad wirken.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herangezogene_artikel_ids": [],
+          "herleitung": {
+            "praemissen": [
+              "P9: Räder ohne Traktion können automatisch abgebremst werden, auch mit Eingriff in die Motorsteuerung",
+              "P6: Das Laufband wird durch ein Laufbandrad geführt, die Laufräder sitzen an Tragarmen",
+              "Ein Fahrzeug muss verzögert und im Stand gesichert werden"
+            ],
+            "schluss": "Das Bremssystem besteht aus Radbremsanlage und Bremsregelung; die Traktionsregelung ist eine Alternative zur Differenzialsperre."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrerhaus",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E57",
+      "absaetze": [
+        {
+          "absatz_id": "P16",
+          "text": "Die mit einem Überrollschutz versehenen Kabinen des Bv206 bestehen aus schwer entflammbarem glasfaserverstärktem Kunststoff und sind über vier Gummipolster gefedert mit dem Fahrgestellrahmen verbunden; für Waffenträger gibt es eine Option mit Planenverdeck. Das Fahrzeug befördert bis zu 17 Personen, sechs im Vorder- und elf im Hinterwagen. Der Wolf unterscheidet sich von der Zivilversion unter anderem durch Gewehrhalterungen zwischen Fahrer- und Beifahrersitz und am Überrollbügel, und auch bei den Sitzen wurde auf Luxus verzichtet.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q2", "fundstelle": "Einleitung; Abschnitt Aufbau Bv 206, zweiter Absatz"},
+            {"quellen_id": "Q3", "fundstelle": "Abschnitt Ausstattung und Varianten, vierter Absatz"}
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P17",
+          "text": "Das Fahrerhaus gliedert sich in die Kabine mit Kabinenstruktur, Kabinenlagerung und gegebenenfalls Verdeck, die Innenausstattung mit Sitzen, Rückhaltesystem und Waffenhalterungen sowie das Bedien- und Anzeigesystem. Bedienelemente schalten Allradantrieb, Geländeuntersetzung, Differenzialsperren, Tarnlicht und gegebenenfalls den Reifendruck; Anzeigeelemente melden Fahrzeugzustand und Bordnetzspannung. Fahrer- und Mannschaftsraum können auf zwei Kabinen verteilt sein.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herangezogene_artikel_ids": [],
+          "herleitung": {
+            "praemissen": ["P16", "P9", "P7", "P12: Spannungsanzeige", "P20: Tarnlichtkreis"],
+            "schluss": "Das Fahrerhaus umfasst Kabine, Innenausstattung und ein Bedien- und Anzeigesystem für die geländespezifischen Schaltfunktionen."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Aufbau und Ladung",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E69",
+      "absaetze": [
+        {
+          "absatz_id": "P18",
+          "text": "Der Wolf wird mit Rüstsätzen ausgestattet; je nach Rüstsatz ändern sich Nutzlast und Anzahl der Sitzplätze. Die Rüstsätze werden mit Schienen im Fahrzeug befestigt und können binnen kurzer Zeit entfernt werden. Die verlängerte Sanitätsvariante trägt einen Kofferaufbau für eine liegende und zwei sitzende Personen. Für das Infantry Squad Vehicle gibt es eine Pritschenvariante mit zwei oder fünf Personen Besatzung; Dritthersteller liefern Bausätze für den Verwundetentransport und für Führungsaufgaben.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q3", "fundstelle": "Abschnitt Ausstattung und Varianten, fünfter Absatz; Unterabschnitt Grundvariante Station lang verlängert"},
+            {"quellen_id": "Q8", "fundstelle": "Abschnitt ISV Specifications, letzter Absatz"}
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "variante"
+        },
+        {
+          "absatz_id": "P19",
+          "text": "Das System besteht aus dem Ladungsträger mit Laderaum oder Kofferaufbau, dem Rüstsatzsystem aus Rüstsatzaufnahme und Rüstsatz sowie der Anhängevorrichtung. Die Rüstsatzaufnahme leitet die Lasten in den Rahmen; Funk- oder Sanitätsrüstsätze beziehen Energie aus dem Bordnetz und Daten über die Kommunikationsausstattung. Beim Kettengelenkfahrzeug dient der Hinterwagen als Laderaum. Die Anhängevorrichtung erlaubt das Ziehen eines Anhängers oder Geschützes.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herangezogene_artikel_ids": [],
+          "herleitung": {
+            "praemissen": [
+              "P18",
+              "Q2, Einleitung: Der Hinterwagen kann zum Materialtransport genutzt werden",
+              "Q2, Abschnitte Aufbau Bv 206 und Deutschland: schwimmfähiger Anhänger und Einsatz als Zugmittel für ein Geschütz",
+              "P12: Funkrüstsätze mit eigener Energieversorgung"
+            ],
+            "schluss": "Aufbau und Ladung gliedern sich in Ladungsträger, Rüstsatzsystem und Anhängevorrichtung mit mechanischen, elektrischen und informationstechnischen Schnittstellen."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Elektrik und Elektronik",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E77",
+      "absaetze": [
+        {
+          "absatz_id": "P20",
+          "text": "Die Bordnetzspannung des Wolf beträgt 24 V und entspricht damit dem Standard der Bundeswehr. Im Motorraum gibt es eine 24-V-Anschlussbuchse zum Fremdstarten, und die Fahrzeuge besitzen einen von der normalen Beleuchtung unabhängigen Tarnlichtkreis.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q3", "fundstelle": "Abschnitt Ausstattung und Varianten, dritter und vierter Absatz"}
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P21",
+          "text": "Das Niedervolt-Bordnetz verteilt die Energie von Generator und Batterien über Stromverteiler, Sicherungen und Leitungssatz an die Verbraucher aller Hauptsysteme, einschließlich Seilwinde und Rüstsätzen, und stellt den Fremdstartanschluss bereit. Ein Fahrzeugbus verbindet Fahrzeugmanagement, Bremsregelung und Anzeigeelemente. Wird ein Serienfahrzeug abgeleitet, übernimmt der Geländetransporter dessen zivile Bordnetz- und Busarchitektur, die an den militärischen Spannungsstandard und die Rüstsätze angepasst werden muss.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herangezogene_artikel_ids": [],
+          "herleitung": {
+            "praemissen": [
+              "P20",
+              "Q8, Abschnitt Background: überwiegend handelsübliche Teile des Basisfahrzeugs",
+              "Q1, Bildunterschrift: Geländewagen mit elektrischer Seilwinde",
+              "Annahme: Steuergeräte moderner Basisfahrzeuge kommunizieren über einen Fahrzeugbus"
+            ],
+            "schluss": "Das Bordnetz versorgt alle Verbraucher; bei Serienableitungen bestimmt das Basisfahrzeug die Bordnetz- und Busarchitektur."
+          },
+          "sicherheit": "gering",
+          "aussagetyp": "modellannahme"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrzeugsteuerung und Information",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E84",
+      "absaetze": [
+        {
+          "absatz_id": "P22",
+          "text": "Das System umfasst die Fahrzeugführung mit Fahrzeugmanagement und Diagnose sowie die Kommunikationsausstattung mit Navigation und Funkanlage. Das Fahrzeugmanagement koordiniert Motor, Getriebe, Allradschaltung und Differenzialsperren nach den Bedieneingaben, die Diagnose liefert Zustands- und Fehlerinformationen für die Instandsetzung. Funkanlage und Navigation werden oft als Rüstsatz eingebaut; sie machen das Fahrzeug zum Führungs- oder Funkfahrzeug und benötigen Energie, Antennenplätze und Halterungen.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herangezogene_artikel_ids": [],
+          "herleitung": {
+            "praemissen": [
+              "Q3, Abschnitte Ausstattung und Varianten sowie Grundversion lang geschlossen: Funkgeräte und Fahrzeug-Navigations-Anlage als Rüstsätze",
+              "P9",
+              "P18"
+            ],
+            "schluss": "Steuerung und Information teilen sich in die Fahrzeugführung und eine rüstsatzabhängige Kommunikationsausstattung."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrerassistenz und Sicherheit",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E91",
+      "absaetze": [
+        {
+          "absatz_id": "P23",
+          "text": "Das Infantry Squad Vehicle besitzt nach Angaben des Herstellers ein Überschlagschutzsystem (Roll Over Protection System). Der Bv206 kann gegen tiefhängende Äste mit einem Astabweiser an der Fahrzeugfront ausgestattet werden.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q8", "fundstelle": "Abschnitt ISV Specifications"},
+            {"quellen_id": "Q2", "fundstelle": "Abschnitt Aufbau Bv 206, zweiter Absatz"}
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P24",
+          "text": "Weil der Geländetransporter ungepanzert ist, beruht der Insassenschutz auf Überschlagschutz, Rückhaltesystem und Astabweiser. Hoher Schwerpunkt, Querneigung und unebener Boden machen den Überschlag zum maßgeblichen Unfallszenario; der Überschlagschutz ist deshalb am Rahmen befestigt und muss Dachlasten aufnehmen. Schutz gegen Beschuss liegt außerhalb dieser Fahrzeugart.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herangezogene_artikel_ids": [],
+          "herleitung": {
+            "praemissen": [
+              "P23",
+              "Q1, Abschnitt Kritik: hoher Schwerpunkt erhöht die Gefahr des Umkippens",
+              "P2: ungepanzerte Fahrzeugart"
+            ],
+            "schluss": "Das Sicherheitssystem konzentriert sich auf Überschlag- und Aufprallschutz; der Überschlagschutz ist eine tragende Struktur am Rahmen."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "funktion"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Beleuchtung und Sicht",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E94",
+      "absaetze": [
+        {
+          "absatz_id": "P25",
+          "text": "Die Beleuchtungsanlage umfasst Scheinwerfer, die die Umgebung ausleuchten, Leuchten, die Lichtsignale an andere Verkehrsteilnehmer abgeben, und eine Tarnlichtanlage mit eigenem Stromkreis für Fahrten mit stark verringerter Lichtabgabe; zusätzliche Dachscheinwerfer leuchten das Gelände aus. Das Sichtsystem mit Scheibenwischer und Außenspiegel sichert die Sicht des Fahrers. Geschaltet wird über die Bedienelemente des Fahrerhauses.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herangezogene_artikel_ids": [],
+          "herleitung": {
+            "praemissen": [
+              "P20: Tarnlichtkreis unabhängig von der normalen Beleuchtung",
+              "Q3, Bildunterschrift der Infobox: Tarnscheinwerfer neben dem Kennzeichen",
+              "Q1, Bildunterschrift: Geländewagen mit Dachleuchten"
+            ],
+            "schluss": "Beleuchtung und Sicht bestehen aus Beleuchtungsanlage mit Tarnlichtanlage und Sichtsystem."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Thermomanagement",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E102",
+      "absaetze": [
+        {
+          "absatz_id": "P26",
+          "text": "Das Thermomanagement führt die Verlustwärme des Motors über den Kühlkreislauf mit Kühlmittelpumpe, Kühler und Lüfter ab; bei langsamer Geländefahrt unter hoher Last fehlt der Fahrtwind, sodass der Lüfter den Luftstrom allein erzeugen muss. Die Innenraumheizung nutzt die Motorwärme, weil die Fahrzeuge auch bei sehr tiefen Temperaturen einsatzfähig sein sollen. Eine Klimaanlage ist eine Ausstattungsvariante, die bei geschlossenen Aufbauten an Bedeutung gewinnt.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herangezogene_artikel_ids": [],
+          "herleitung": {
+            "praemissen": [
+              "Q2, Abschnitt Entwicklung: Einsatzfähigkeit bei sehr tiefen Temperaturen gefordert",
+              "Q3, Abschnitt Weitere Varianten: Klimaanlage bei einer späteren Variante",
+              "Kühlleistung durch Fahrtwind sinkt mit der Fahrgeschwindigkeit"
+            ],
+            "schluss": "Das Thermomanagement besteht aus Kühlkreislauf, Innenraumheizung und optionaler Klimaanlage."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Neben- und Versorgungssysteme",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E109",
+      "absaetze": [
+        {
+          "absatz_id": "P27",
+          "text": "Die Neben- und Versorgungssysteme stellen Hilfsenergie bereit. Eine Reifendruckregelanlage benötigt eine Druckluftanlage mit Kompressor für Druckluft und Druckluftbehälter, eine hydraulische Knicklenkung eine Hydraulikversorgung mit Hydraulikpumpe und Hydraulikbehälter. Kompressor und Pumpe treibt der Nebenaggregatetrieb am Motor an. Eine elektrische Seilwinde zieht das eigene oder ein fremdes Fahrzeug frei.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herangezogene_artikel_ids": [],
+          "herleitung": {
+            "praemissen": [
+              "P7: Reifendruckregelung arbeitet mit Druckluft",
+              "P13: hydraulische Knicklenkung",
+              "Q1, Bildunterschrift: Geländewagen mit elektrischer Seilwinde",
+              "Druckluft und Hydraulikdruck müssen an Bord erzeugt und gespeichert werden"
+            ],
+            "schluss": "Druckluftanlage, Hydraulikversorgung, Nebenaggregatetrieb und Seilwinde bilden die Neben- und Versorgungssysteme."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "loesung"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Zusammenfassung",
+      "abschnittstyp": "gesamtsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P28",
+          "text": "Architekturell lässt sich der Geländetransporter auf oberster Ebene als Gesamtsystem mit den Hauptsystemen Fahrzeugstruktur und Fahrwerk, Antriebssystem, Energieversorgungssystem, Lenksystem, Bremssystem, Fahrerhaus, Aufbau und Ladung, Elektrik und Elektronik, Fahrzeugsteuerung und Information, Fahrerassistenz und Sicherheit, Beleuchtung und Sicht, Thermomanagement sowie Neben- und Versorgungssysteme auffassen. Prägend sind die Wahl zwischen Rad- und Kettenlaufwerk, die Traktionsausstattung und das Rüstsatzkonzept.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herangezogene_artikel_ids": [],
+          "herleitung": {
+            "praemissen": ["P8", "P10", "P18", "P19"],
+            "schluss": "Die dreizehn Hauptsysteme bilden die oberste Ebene; Laufwerk, Traktion und Rüstsätze sind die prägenden Entscheidungen."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "funktion"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Modellierungsbezug",
+      "abschnittstyp": "modellierung",
+      "absaetze": [
+        {
+          "absatz_id": "P29",
+          "text": "In SysML bildet der Block Geländetransporter das Gesamtsystem mit den dreizehn Hauptsystemen als Teilen. Dekompositionspfade sind etwa Antriebssystem → Kraftübertragung → Verteilergetriebe → Gelenkwelle → Differenzial, Fahrzeugstruktur und Fahrwerk → Kettenlaufwerk → Laufbandrad, Lenksystem → Knicklenkung → Lenkzylinder und Aufbau und Ladung → Rüstsatzsystem → Rüstsatzaufnahme. Die Laufwerksart wird als Variationspunkt mit den Spezialisierungen Radfahrwerk und Kettenlaufwerk modelliert. Ports bilden Radnabe, Drehdurchführung, Hydraulikanschlüsse, Rüstsatzschienen und Fahrzeugbus ab; Block Definition Diagrams zeigen die Struktur, Internal Block Diagrams die Flüsse, Aktivitätsdiagramme das Zuschalten des Allradantriebs.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herangezogene_artikel_ids": [],
+          "herleitung": {
+            "praemissen": ["P5", "P8", "P10", "P14", "P19"],
+            "schluss": "Die Dekomposition lässt sich als Blockhierarchie mit einem Variationspunkt für die Laufwerksart modellieren."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "modellannahme"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Flüsse",
+      "abschnittstyp": "fluesse",
+      "absaetze": [
+        {
+          "absatz_id": "P30",
+          "text": "Stoff: Kraftstoff vom Kraftstofftank über die Kraftstoffanlage zum Verbrennungsmotor, Luft von der Luftansaugung, Abgas zur Abgasanlage. Mechanisch: Motor an Kraftübertragung und Nebenaggregatetrieb, Antriebswellen an Räder und Reifen, Durchtrieb an das Laufbandrad, Lasten von Rüstsatz, Kabine, Überschlagschutz und Anhängevorrichtung in den Rahmen, Spurstange an Achse. Hydraulisch: Hydraulikversorgung an Lenkzylinder. Pneumatisch: Druckluftanlage an Reifendruckregelanlage. Elektrisch: Generator ins Niedervolt-Bordnetz, Bordnetz an Tarnlichtanlage, Seilwinde und Rüstsatz, Zusatzbatterien an Funkanlage, Exportstromversorgung an Rüstsatz. Thermisch: Motor an Kühlkreislauf, Heizung an Kabine. Information: Bedienelemente an Fahrzeugmanagement, Fahrzeugmanagement an Kraftübertragung und Anzeigeelemente, Bremsregelung an Fahrzeugmanagement, Navigation an Anzeigeelemente.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herangezogene_artikel_ids": [],
+          "herleitung": {
+            "praemissen": ["P5", "P10", "P11", "P14", "P15", "P19", "P21", "P26", "P27"],
+            "schluss": "Jeder Fluss hat Ursprung und Ziel in den beschriebenen Hauptsystemen."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "funktion"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Perspektiven",
+      "abschnittstyp": "perspektiven",
+      "absaetze": [
+        {
+          "absatz_id": "P31",
+          "text": "Funktionszuordnung: Tragstruktur, Radfahrwerk und Kettenlaufwerk: Fahrzeuglasten tragen; Radfahrwerk, Kettenlaufwerk und Kraftübertragung: Fahrzeug fortbewegen; Reifendruckregelanlage: Reifendruck regeln; Verbrennungsmotor: Antriebsleistung erzeugen; Kraftübertragung: Drehmoment übertragen; Kraftstofftank, Starterbatterie und Zusatzbatterien: Energie speichern; Kraftstoffanlage: Treibstoff fördern; Niedervolt-Bordnetz: Elektrische Energie verteilen; Achsschenkellenkung und Knicklenkung: Fahrzeug lenken; Radbremsanlage und Bremsregelung: Fahrzeug verzögern; Feststellbremse: Fahrzeug festhalten; Bedienelemente und Lenkeingabe: Fahrereingaben erfassen; Anzeigeelemente: Fahrerinformationen anzeigen; Überschlagschutz, Rückhaltesystem und Astabweiser: Insassen schützen; Ladungsträger und Rüstsatzsystem: Ladung aufnehmen; Anhängevorrichtung: Anhänger ziehen; Fahrzeugbus und Funkanlage: Daten übertragen; Fahrzeugmanagement und Diagnose: Fahrzeugzustand überwachen; Navigation: Fahrzeugposition bestimmen; Scheinwerfer und Tarnlichtanlage: Fahrzeugumgebung ausleuchten; Leuchten: Lichtsignale abgeben; Sichtsystem: Fahrersicht sicherstellen; Kühlkreislauf: Betriebstemperatur regeln; Innenraumheizung und Klimaanlage: Innenraum klimatisieren; Druckluftanlage: Druckluft bereitstellen; Hydraulikversorgung: Hydraulische Leistung bereitstellen; Nebenaggregatetrieb und Exportstromversorgung: Arbeitsgeräte versorgen; Seilwinde: Fahrzeug freiziehen.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herangezogene_artikel_ids": [],
+          "herleitung": {
+            "praemissen": ["P5", "P10", "P11", "P14", "P15", "P17", "P19", "P22", "P24", "P25", "P26", "P27"],
+            "schluss": "Jede Funktion des Modellblocks ist mindestens einem ausführenden Element zugeordnet."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "funktion"
+        }
+      ]
+    }
+  ],
+  "modell": {
+    "elemente": [
+      {"id": "E1", "name": "Geländetransporter", "typ": "gesamtsystem", "eltern_id": null, "absatz_ids": ["P2", "P28", "P29"]},
+      {"id": "E2", "name": "Fahrzeugstruktur und Fahrwerk", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P4", "P5", "P6", "P7", "P8", "P28"], "kategorie": "struktur_fahrwerk"},
+      {"id": "E3", "name": "Tragstruktur", "typ": "subsystem", "eltern_id": "E2", "absatz_ids": ["P5"]},
+      {"id": "E4", "name": "Rahmen", "typ": "komponente", "eltern_id": "E3", "absatz_ids": ["P4", "P5", "P24"]},
+      {"id": "E5", "name": "Karosserie", "typ": "komponente", "eltern_id": "E3", "absatz_ids": ["P4", "P5"]},
+      {"id": "E6", "name": "Unterfahrschutz", "typ": "komponente", "eltern_id": "E3", "absatz_ids": ["P4", "P5", "P11"]},
+      {"id": "E7", "name": "Anschlagösen", "typ": "komponente", "eltern_id": "E3", "absatz_ids": ["P5"]},
+      {"id": "E8", "name": "Radfahrwerk", "typ": "subsystem", "eltern_id": "E2", "absatz_ids": ["P5", "P8"]},
+      {"id": "E9", "name": "Achse", "typ": "komponente", "eltern_id": "E8", "absatz_ids": ["P5", "P10"]},
+      {"id": "E10", "name": "Federung", "typ": "komponente", "eltern_id": "E8", "absatz_ids": ["P5"]},
+      {"id": "E11", "name": "Räder und Reifen", "typ": "komponente", "eltern_id": "E8", "absatz_ids": ["P5", "P30"]},
+      {"id": "E12", "name": "Reifendruckregelanlage", "typ": "komponente", "eltern_id": "E8", "absatz_ids": ["P5", "P7", "P27"]},
+      {"id": "E13", "name": "Kettenlaufwerk", "typ": "subsystem", "eltern_id": "E2", "absatz_ids": ["P6", "P8"]},
+      {"id": "E14", "name": "Laufräder", "typ": "komponente", "eltern_id": "E13", "absatz_ids": ["P6", "P15"]},
+      {"id": "E15", "name": "Gummi-Endloslaufband", "typ": "komponente", "eltern_id": "E13", "absatz_ids": ["P6"]},
+      {"id": "E16", "name": "Laufbandrad", "typ": "komponente", "eltern_id": "E13", "absatz_ids": ["P6", "P15", "P30"]},
+      {"id": "E17", "name": "Stahlblattfeder", "typ": "komponente", "eltern_id": "E13", "absatz_ids": ["P6"]},
+      {"id": "E18", "name": "Antriebssystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P9", "P10", "P28"], "kategorie": "antrieb"},
+      {"id": "E19", "name": "Verbrennungsmotor", "typ": "komponente", "eltern_id": "E18", "absatz_ids": ["P10"]},
+      {"id": "E20", "name": "Luftansaugung", "typ": "komponente", "eltern_id": "E18", "absatz_ids": ["P10"]},
+      {"id": "E21", "name": "Abgasanlage", "typ": "komponente", "eltern_id": "E18", "absatz_ids": ["P10"]},
+      {"id": "E22", "name": "Kraftübertragung", "typ": "subsystem", "eltern_id": "E18", "absatz_ids": ["P10"]},
+      {"id": "E23", "name": "Getriebe", "typ": "komponente", "eltern_id": "E22", "absatz_ids": ["P10"]},
+      {"id": "E24", "name": "Verteilergetriebe", "typ": "komponente", "eltern_id": "E22", "absatz_ids": ["P10"]},
+      {"id": "E25", "name": "Gelenkwelle", "typ": "komponente", "eltern_id": "E22", "absatz_ids": ["P10"]},
+      {"id": "E26", "name": "Differenzial", "typ": "komponente", "eltern_id": "E22", "absatz_ids": ["P10"]},
+      {"id": "E27", "name": "Differenzialsperre", "typ": "komponente", "eltern_id": "E22", "absatz_ids": ["P9", "P10", "P15"]},
+      {"id": "E28", "name": "Antriebswelle", "typ": "komponente", "eltern_id": "E22", "absatz_ids": ["P10"]},
+      {"id": "E29", "name": "Energieversorgungssystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P11", "P12", "P28"], "kategorie": "energieversorgung"},
+      {"id": "E30", "name": "Kraftstoffversorgung", "typ": "subsystem", "eltern_id": "E29", "absatz_ids": ["P11"]},
+      {"id": "E31", "name": "Kraftstofftank", "typ": "komponente", "eltern_id": "E30", "absatz_ids": ["P11"]},
+      {"id": "E32", "name": "Kraftstoffanlage", "typ": "komponente", "eltern_id": "E30", "absatz_ids": ["P11"]},
+      {"id": "E33", "name": "Elektrische Energieversorgung", "typ": "subsystem", "eltern_id": "E29", "absatz_ids": ["P11"]},
+      {"id": "E34", "name": "Starterbatterie", "typ": "komponente", "eltern_id": "E33", "absatz_ids": ["P11"]},
+      {"id": "E35", "name": "Generator", "typ": "komponente", "eltern_id": "E33", "absatz_ids": ["P11", "P21"]},
+      {"id": "E36", "name": "Zusatzbatterien", "typ": "komponente", "eltern_id": "E33", "absatz_ids": ["P11", "P12"]},
+      {"id": "E37", "name": "Exportstromversorgung", "typ": "komponente", "eltern_id": "E33", "absatz_ids": ["P11", "P12"]},
+      {"id": "E38", "name": "Lenksystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P13", "P14", "P28"], "kategorie": "lenkung"},
+      {"id": "E39", "name": "Lenkeingabe", "typ": "subsystem", "eltern_id": "E38", "absatz_ids": ["P14"]},
+      {"id": "E40", "name": "Lenkrad", "typ": "komponente", "eltern_id": "E39", "absatz_ids": ["P14"]},
+      {"id": "E41", "name": "Lenksäule", "typ": "komponente", "eltern_id": "E39", "absatz_ids": ["P14"]},
+      {"id": "E42", "name": "Achsschenkellenkung", "typ": "subsystem", "eltern_id": "E38", "absatz_ids": ["P8", "P14"]},
+      {"id": "E43", "name": "Lenkgetriebe", "typ": "komponente", "eltern_id": "E42", "absatz_ids": ["P14"]},
+      {"id": "E44", "name": "Lenkunterstützung", "typ": "komponente", "eltern_id": "E42", "absatz_ids": ["P13", "P14"]},
+      {"id": "E45", "name": "Spurstange", "typ": "komponente", "eltern_id": "E42", "absatz_ids": ["P14"]},
+      {"id": "E46", "name": "Knicklenkung", "typ": "subsystem", "eltern_id": "E38", "absatz_ids": ["P8", "P13", "P14"]},
+      {"id": "E47", "name": "Knickgelenk", "typ": "komponente", "eltern_id": "E46", "absatz_ids": ["P14"]},
+      {"id": "E48", "name": "Lenkzylinder", "typ": "komponente", "eltern_id": "E46", "absatz_ids": ["P14", "P30"]},
+      {"id": "E49", "name": "Bremssystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P15", "P28"], "kategorie": "bremse"},
+      {"id": "E50", "name": "Radbremsanlage", "typ": "subsystem", "eltern_id": "E49", "absatz_ids": ["P15"]},
+      {"id": "E51", "name": "Betriebsbremse", "typ": "komponente", "eltern_id": "E50", "absatz_ids": ["P15"]},
+      {"id": "E52", "name": "Bremskraftverstärker", "typ": "komponente", "eltern_id": "E50", "absatz_ids": ["P15"]},
+      {"id": "E53", "name": "Feststellbremse", "typ": "komponente", "eltern_id": "E50", "absatz_ids": ["P15"]},
+      {"id": "E54", "name": "Bremsregelung", "typ": "subsystem", "eltern_id": "E49", "absatz_ids": ["P15", "P21"]},
+      {"id": "E55", "name": "Antiblockiersystem", "typ": "komponente", "eltern_id": "E54", "absatz_ids": ["P15"]},
+      {"id": "E56", "name": "Antriebsschlupfregelung", "typ": "komponente", "eltern_id": "E54", "absatz_ids": ["P15"]},
+      {"id": "E57", "name": "Fahrerhaus", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P16", "P17", "P28"], "kategorie": "bedienraum"},
+      {"id": "E58", "name": "Kabine", "typ": "subsystem", "eltern_id": "E57", "absatz_ids": ["P16", "P17"]},
+      {"id": "E59", "name": "Kabinenstruktur", "typ": "komponente", "eltern_id": "E58", "absatz_ids": ["P17"]},
+      {"id": "E60", "name": "Kabinenlagerung", "typ": "komponente", "eltern_id": "E58", "absatz_ids": ["P17"]},
+      {"id": "E61", "name": "Verdeck", "typ": "komponente", "eltern_id": "E58", "absatz_ids": ["P16", "P17"]},
+      {"id": "E62", "name": "Innenausstattung", "typ": "subsystem", "eltern_id": "E57", "absatz_ids": ["P17"]},
+      {"id": "E63", "name": "Sitze", "typ": "komponente", "eltern_id": "E62", "absatz_ids": ["P16", "P17"]},
+      {"id": "E64", "name": "Rückhaltesystem", "typ": "komponente", "eltern_id": "E62", "absatz_ids": ["P17", "P24"]},
+      {"id": "E65", "name": "Waffenhalterungen", "typ": "komponente", "eltern_id": "E62", "absatz_ids": ["P17"]},
+      {"id": "E66", "name": "Bedien- und Anzeigesystem", "typ": "subsystem", "eltern_id": "E57", "absatz_ids": ["P17"]},
+      {"id": "E67", "name": "Bedienelemente", "typ": "komponente", "eltern_id": "E66", "absatz_ids": ["P17", "P25"]},
+      {"id": "E68", "name": "Anzeigeelemente", "typ": "komponente", "eltern_id": "E66", "absatz_ids": ["P17", "P21"]},
+      {"id": "E69", "name": "Aufbau und Ladung", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P18", "P19", "P28"], "kategorie": "aufbau_nutzlast"},
+      {"id": "E70", "name": "Ladungsträger", "typ": "subsystem", "eltern_id": "E69", "absatz_ids": ["P19"]},
+      {"id": "E71", "name": "Laderaum", "typ": "komponente", "eltern_id": "E70", "absatz_ids": ["P8", "P19"]},
+      {"id": "E72", "name": "Kofferaufbau", "typ": "komponente", "eltern_id": "E70", "absatz_ids": ["P18", "P19"]},
+      {"id": "E73", "name": "Rüstsatzsystem", "typ": "subsystem", "eltern_id": "E69", "absatz_ids": ["P19"]},
+      {"id": "E74", "name": "Rüstsatzaufnahme", "typ": "komponente", "eltern_id": "E73", "absatz_ids": ["P19"]},
+      {"id": "E75", "name": "Rüstsatz", "typ": "komponente", "eltern_id": "E73", "absatz_ids": ["P18", "P19"]},
+      {"id": "E76", "name": "Anhängevorrichtung", "typ": "komponente", "eltern_id": "E69", "absatz_ids": ["P19"]},
+      {"id": "E77", "name": "Elektrik und Elektronik", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P20", "P21", "P28"], "kategorie": "elektrik_elektronik"},
+      {"id": "E78", "name": "Niedervolt-Bordnetz", "typ": "subsystem", "eltern_id": "E77", "absatz_ids": ["P21"]},
+      {"id": "E79", "name": "Leitungssatz", "typ": "komponente", "eltern_id": "E78", "absatz_ids": ["P21"]},
+      {"id": "E80", "name": "Stromverteiler", "typ": "komponente", "eltern_id": "E78", "absatz_ids": ["P21"]},
+      {"id": "E81", "name": "Sicherungen", "typ": "komponente", "eltern_id": "E78", "absatz_ids": ["P21"]},
+      {"id": "E82", "name": "Fremdstartanschluss", "typ": "komponente", "eltern_id": "E78", "absatz_ids": ["P20", "P21"]},
+      {"id": "E83", "name": "Fahrzeugbus", "typ": "komponente", "eltern_id": "E77", "absatz_ids": ["P21"]},
+      {"id": "E84", "name": "Fahrzeugsteuerung und Information", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P22", "P28"], "kategorie": "steuerung_information"},
+      {"id": "E85", "name": "Fahrzeugführung", "typ": "subsystem", "eltern_id": "E84", "absatz_ids": ["P22"]},
+      {"id": "E86", "name": "Fahrzeugmanagement", "typ": "komponente", "eltern_id": "E85", "absatz_ids": ["P15", "P22"]},
+      {"id": "E87", "name": "Diagnose", "typ": "komponente", "eltern_id": "E85", "absatz_ids": ["P22"]},
+      {"id": "E88", "name": "Kommunikationsausstattung", "typ": "subsystem", "eltern_id": "E84", "absatz_ids": ["P19", "P22"]},
+      {"id": "E89", "name": "Navigation", "typ": "komponente", "eltern_id": "E88", "absatz_ids": ["P22"]},
+      {"id": "E90", "name": "Funkanlage", "typ": "komponente", "eltern_id": "E88", "absatz_ids": ["P12", "P22"]},
+      {"id": "E91", "name": "Fahrerassistenz und Sicherheit", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P23", "P24", "P28"], "kategorie": "assistenz_sicherheit"},
+      {"id": "E92", "name": "Überschlagschutz", "typ": "komponente", "eltern_id": "E91", "absatz_ids": ["P23", "P24"]},
+      {"id": "E93", "name": "Astabweiser", "typ": "komponente", "eltern_id": "E91", "absatz_ids": ["P23", "P24"]},
+      {"id": "E94", "name": "Beleuchtung und Sicht", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P25", "P28"], "kategorie": "beleuchtung_sicht"},
+      {"id": "E95", "name": "Beleuchtungsanlage", "typ": "subsystem", "eltern_id": "E94", "absatz_ids": ["P25"]},
+      {"id": "E96", "name": "Scheinwerfer", "typ": "komponente", "eltern_id": "E95", "absatz_ids": ["P25"]},
+      {"id": "E97", "name": "Leuchten", "typ": "komponente", "eltern_id": "E95", "absatz_ids": ["P25"]},
+      {"id": "E98", "name": "Tarnlichtanlage", "typ": "komponente", "eltern_id": "E95", "absatz_ids": ["P20", "P25"]},
+      {"id": "E99", "name": "Sichtsystem", "typ": "subsystem", "eltern_id": "E94", "absatz_ids": ["P25"]},
+      {"id": "E100", "name": "Scheibenwischer", "typ": "komponente", "eltern_id": "E99", "absatz_ids": ["P25"]},
+      {"id": "E101", "name": "Außenspiegel", "typ": "komponente", "eltern_id": "E99", "absatz_ids": ["P25"]},
+      {"id": "E102", "name": "Thermomanagement", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P26", "P28"], "kategorie": "thermomanagement"},
+      {"id": "E103", "name": "Kühlkreislauf", "typ": "subsystem", "eltern_id": "E102", "absatz_ids": ["P26"]},
+      {"id": "E104", "name": "Kühler", "typ": "komponente", "eltern_id": "E103", "absatz_ids": ["P26"]},
+      {"id": "E105", "name": "Kühlmittelpumpe", "typ": "komponente", "eltern_id": "E103", "absatz_ids": ["P26"]},
+      {"id": "E106", "name": "Lüfter", "typ": "komponente", "eltern_id": "E103", "absatz_ids": ["P26"]},
+      {"id": "E107", "name": "Innenraumheizung", "typ": "komponente", "eltern_id": "E102", "absatz_ids": ["P26"]},
+      {"id": "E108", "name": "Klimaanlage", "typ": "komponente", "eltern_id": "E102", "absatz_ids": ["P26"]},
+      {"id": "E109", "name": "Neben- und Versorgungssysteme", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P27", "P28"], "kategorie": "nebensysteme"},
+      {"id": "E110", "name": "Druckluftanlage", "typ": "subsystem", "eltern_id": "E109", "absatz_ids": ["P27"]},
+      {"id": "E111", "name": "Kompressor für Druckluft", "typ": "komponente", "eltern_id": "E110", "absatz_ids": ["P27"]},
+      {"id": "E112", "name": "Druckluftbehälter", "typ": "komponente", "eltern_id": "E110", "absatz_ids": ["P27"]},
+      {"id": "E113", "name": "Hydraulikversorgung", "typ": "subsystem", "eltern_id": "E109", "absatz_ids": ["P14", "P27"]},
+      {"id": "E114", "name": "Hydraulikpumpe", "typ": "komponente", "eltern_id": "E113", "absatz_ids": ["P27"]},
+      {"id": "E115", "name": "Hydraulikbehälter", "typ": "komponente", "eltern_id": "E113", "absatz_ids": ["P27"]},
+      {"id": "E116", "name": "Nebenaggregatetrieb", "typ": "komponente", "eltern_id": "E109", "absatz_ids": ["P27"]},
+      {"id": "E117", "name": "Seilwinde", "typ": "komponente", "eltern_id": "E109", "absatz_ids": ["P21", "P27"]}
+    ],
+    "funktionen": [
+      {"id": "F1", "name": "Fahrzeuglasten tragen", "ausgefuehrt_von": ["E3", "E8", "E13"], "absatz_ids": ["P5", "P6", "P31"]},
+      {"id": "F2", "name": "Fahrzeug fortbewegen", "ausgefuehrt_von": ["E8", "E13", "E22"], "absatz_ids": ["P8", "P10", "P31"]},
+      {"id": "F3", "name": "Reifendruck regeln", "ausgefuehrt_von": ["E12"], "absatz_ids": ["P7", "P31"]},
+      {"id": "F4", "name": "Antriebsleistung erzeugen", "ausgefuehrt_von": ["E19"], "absatz_ids": ["P10", "P31"]},
+      {"id": "F5", "name": "Drehmoment übertragen", "ausgefuehrt_von": ["E22"], "absatz_ids": ["P10", "P31"]},
+      {"id": "F6", "name": "Energie speichern", "ausgefuehrt_von": ["E31", "E34", "E36"], "absatz_ids": ["P11", "P31"]},
+      {"id": "F7", "name": "Treibstoff fördern", "ausgefuehrt_von": ["E32"], "absatz_ids": ["P11", "P31"]},
+      {"id": "F8", "name": "Elektrische Energie verteilen", "ausgefuehrt_von": ["E78"], "absatz_ids": ["P21", "P31"]},
+      {"id": "F9", "name": "Fahrzeug lenken", "ausgefuehrt_von": ["E42", "E46"], "absatz_ids": ["P13", "P14", "P31"]},
+      {"id": "F10", "name": "Fahrzeug verzögern", "ausgefuehrt_von": ["E50", "E54"], "absatz_ids": ["P15", "P31"]},
+      {"id": "F11", "name": "Fahrzeug festhalten", "ausgefuehrt_von": ["E53"], "absatz_ids": ["P15", "P31"]},
+      {"id": "F12", "name": "Fahrereingaben erfassen", "ausgefuehrt_von": ["E67", "E39"], "absatz_ids": ["P14", "P17", "P31"]},
+      {"id": "F13", "name": "Fahrerinformationen anzeigen", "ausgefuehrt_von": ["E68"], "absatz_ids": ["P17", "P31"]},
+      {"id": "F14", "name": "Insassen schützen", "ausgefuehrt_von": ["E92", "E64", "E93"], "absatz_ids": ["P24", "P31"]},
+      {"id": "F15", "name": "Ladung aufnehmen", "ausgefuehrt_von": ["E70", "E73"], "absatz_ids": ["P19", "P31"]},
+      {"id": "F16", "name": "Anhänger ziehen", "ausgefuehrt_von": ["E76"], "absatz_ids": ["P19", "P31"]},
+      {"id": "F17", "name": "Daten übertragen", "ausgefuehrt_von": ["E83", "E90"], "absatz_ids": ["P21", "P22", "P31"]},
+      {"id": "F18", "name": "Fahrzeugzustand überwachen", "ausgefuehrt_von": ["E86", "E87"], "absatz_ids": ["P22", "P31"]},
+      {"id": "F19", "name": "Fahrzeugposition bestimmen", "ausgefuehrt_von": ["E89"], "absatz_ids": ["P22", "P31"]},
+      {"id": "F20", "name": "Fahrzeugumgebung ausleuchten", "ausgefuehrt_von": ["E96", "E98"], "absatz_ids": ["P25", "P31"]},
+      {"id": "F21", "name": "Lichtsignale abgeben", "ausgefuehrt_von": ["E97"], "absatz_ids": ["P25", "P31"]},
+      {"id": "F22", "name": "Fahrersicht sicherstellen", "ausgefuehrt_von": ["E99"], "absatz_ids": ["P25", "P31"]},
+      {"id": "F23", "name": "Betriebstemperatur regeln", "ausgefuehrt_von": ["E103"], "absatz_ids": ["P26", "P31"]},
+      {"id": "F24", "name": "Innenraum klimatisieren", "ausgefuehrt_von": ["E107", "E108"], "absatz_ids": ["P26", "P31"]},
+      {"id": "F25", "name": "Druckluft bereitstellen", "ausgefuehrt_von": ["E110"], "absatz_ids": ["P27", "P31"]},
+      {"id": "F26", "name": "Hydraulische Leistung bereitstellen", "ausgefuehrt_von": ["E113"], "absatz_ids": ["P27", "P31"]},
+      {"id": "F27", "name": "Arbeitsgeräte versorgen", "ausgefuehrt_von": ["E116", "E37"], "absatz_ids": ["P11", "P27", "P31"]},
+      {"id": "F28", "name": "Fahrzeug freiziehen", "ausgefuehrt_von": ["E117"], "absatz_ids": ["P27", "P31"]}
+    ],
+    "fluesse": [
+      {"id": "S1", "von": "E31", "nach": "E32", "art": "stoff", "medium": "Kraftstoff", "absatz_ids": ["P11", "P30"]},
+      {"id": "S2", "von": "E32", "nach": "E19", "art": "stoff", "medium": "Kraftstoff", "absatz_ids": ["P11", "P30"], "schnittstelle": "Kraftstoffanschluss Motor"},
+      {"id": "S3", "von": "E20", "nach": "E19", "art": "stoff", "medium": "Ansaugluft", "absatz_ids": ["P10", "P30"]},
+      {"id": "S4", "von": "E19", "nach": "E21", "art": "stoff", "medium": "Abgas", "absatz_ids": ["P10", "P30"]},
+      {"id": "S5", "von": "E19", "nach": "E22", "art": "mechanisch", "medium": "Drehmoment", "absatz_ids": ["P10", "P30"]},
+      {"id": "S6", "von": "E28", "nach": "E11", "art": "mechanisch", "medium": "Drehmoment", "absatz_ids": ["P10", "P30"], "schnittstelle": "Radnabe"},
+      {"id": "S7", "von": "E22", "nach": "E16", "art": "mechanisch", "medium": "Drehmoment", "absatz_ids": ["P8", "P30"], "schnittstelle": "Antriebsflansch Laufbandrad"},
+      {"id": "S8", "von": "E19", "nach": "E116", "art": "mechanisch", "medium": "Drehmoment", "absatz_ids": ["P27", "P30"], "schnittstelle": "Nebenabtrieb Motor"},
+      {"id": "S9", "von": "E110", "nach": "E12", "art": "pneumatisch", "medium": "Druckluft", "absatz_ids": ["P7", "P27", "P30"], "schnittstelle": "Drehdurchführung an der Nabe"},
+      {"id": "S10", "von": "E113", "nach": "E48", "art": "hydraulisch", "medium": "Hydrauliköl", "absatz_ids": ["P14", "P27", "P30"], "schnittstelle": "Hydraulikanschluss Lenkzylinder"},
+      {"id": "S11", "von": "E45", "nach": "E9", "art": "mechanisch", "medium": "Lenkbewegung", "absatz_ids": ["P14", "P30"], "schnittstelle": "Spurstangenanschluss am Achsschenkel"},
+      {"id": "S12", "von": "E39", "nach": "E43", "art": "mechanisch", "medium": "Lenkmoment", "absatz_ids": ["P14"]},
+      {"id": "S13", "von": "E35", "nach": "E78", "art": "elektrisch", "medium": "Gleichstrom", "absatz_ids": ["P11", "P21", "P30"], "schnittstelle": "Generatoranschluss Bordnetz"},
+      {"id": "S14", "von": "E78", "nach": "E98", "art": "elektrisch", "medium": "Gleichstrom", "absatz_ids": ["P20", "P25", "P30"], "schnittstelle": "Tarnlichtkreis"},
+      {"id": "S15", "von": "E78", "nach": "E117", "art": "elektrisch", "medium": "Gleichstrom", "absatz_ids": ["P21", "P30"], "schnittstelle": "Windenanschluss"},
+      {"id": "S16", "von": "E78", "nach": "E75", "art": "elektrisch", "medium": "Gleichstrom", "absatz_ids": ["P19", "P21", "P30"], "schnittstelle": "Rüstsatz-Stromanschluss"},
+      {"id": "S17", "von": "E36", "nach": "E90", "art": "elektrisch", "medium": "Gleichstrom", "absatz_ids": ["P11", "P12", "P30"], "schnittstelle": "Batterietrennschalter Funkanlage"},
+      {"id": "S18", "von": "E37", "nach": "E75", "art": "elektrisch", "medium": "Exportstrom", "absatz_ids": ["P11", "P30"], "schnittstelle": "Exportstromanschluss"},
+      {"id": "S19", "von": "E19", "nach": "E103", "art": "thermisch", "medium": "Kühlmittel", "absatz_ids": ["P26", "P30"], "schnittstelle": "Kühlmittelanschluss Motor"},
+      {"id": "S20", "von": "E107", "nach": "E58", "art": "thermisch", "medium": "Heizluft", "absatz_ids": ["P26", "P30"], "schnittstelle": "Heizluftauslass Kabine"},
+      {"id": "S21", "von": "E67", "nach": "E86", "art": "information", "medium": "Schaltbefehle", "absatz_ids": ["P17", "P22", "P30"], "schnittstelle": "Fahrzeugbus"},
+      {"id": "S22", "von": "E86", "nach": "E22", "art": "information", "medium": "Steuersignale Allrad und Sperren", "absatz_ids": ["P22", "P30"], "schnittstelle": "Steuerleitung Verteilergetriebe und Differenzialsperre"},
+      {"id": "S23", "von": "E86", "nach": "E68", "art": "information", "medium": "Zustandsdaten", "absatz_ids": ["P17", "P22", "P30"], "schnittstelle": "Fahrzeugbus"},
+      {"id": "S24", "von": "E54", "nach": "E86", "art": "information", "medium": "Anforderung Motoreingriff", "absatz_ids": ["P15", "P30"], "schnittstelle": "Fahrzeugbus"},
+      {"id": "S25", "von": "E89", "nach": "E68", "art": "information", "medium": "Positionsdaten", "absatz_ids": ["P22", "P30"], "schnittstelle": "Navigationsschnittstelle"},
+      {"id": "S26", "von": "E74", "nach": "E4", "art": "mechanisch", "medium": "Last", "absatz_ids": ["P19", "P30"], "schnittstelle": "Rüstsatzschienen"},
+      {"id": "S27", "von": "E58", "nach": "E4", "art": "mechanisch", "medium": "Last", "absatz_ids": ["P16", "P17", "P30"], "schnittstelle": "Kabinenlager"},
+      {"id": "S28", "von": "E92", "nach": "E4", "art": "mechanisch", "medium": "Last", "absatz_ids": ["P24", "P30"], "schnittstelle": "Befestigung Überschlagschutz"},
+      {"id": "S29", "von": "E76", "nach": "E4", "art": "mechanisch", "medium": "Zug- und Stützlast", "absatz_ids": ["P19", "P30"], "schnittstelle": "Anhängebock"},
+      {"id": "S30", "von": "E50", "nach": "E11", "art": "mechanisch", "medium": "Bremsmoment", "absatz_ids": ["P15"], "schnittstelle": "Radbremse"}
+    ],
+    "entfallene_kategorien": [],
+    "varianten": [
+      {
+        "id": "V1",
+        "element_id": "E2",
+        "bezeichnung": "Laufwerksart",
+        "alternativen": ["Radfahrwerk mit Allradantrieb", "Kettenlaufwerk mit zwei gelenkig verbundenen Wagen"],
+        "auswahlkriterien": ["Tragfähigkeit des Bodens in Schnee, Moor und Sumpf", "geforderte Straßen- und Marschgeschwindigkeit", "Schwimmfähigkeit", "Lufttransportfähigkeit", "Instandhaltungsaufwand"],
+        "auswirkungen": [
+          {"element_id": "E38", "beschreibung": "Radfahrwerk mit Achsschenkellenkung, Kettenlaufwerk mit hydraulischer Knicklenkung."},
+          {"element_id": "E22", "beschreibung": "Beim Kettenlaufwerk tritt ein Durchtrieb zu den Laufbandrädern beider Wagen an die Stelle von Verteilergetriebe und Achsdifferenzialen."},
+          {"element_id": "E113", "beschreibung": "Die Knicklenkung erfordert eine Hydraulikversorgung."},
+          {"element_id": "E69", "beschreibung": "Beim Kettengelenkfahrzeug dient der Hinterwagen als Laderaum und Mannschaftsraum."},
+          {"element_id": "E49", "beschreibung": "Beim Kettenlaufwerk wirkt die Bremse auf Antriebsstrang oder Laufbandrad statt auf die Räder."}
+        ],
+        "absatz_ids": ["P6", "P8", "P13", "P14", "P15"]
+      },
+      {
+        "id": "V2",
+        "element_id": "E22",
+        "bezeichnung": "Allradantriebsart",
+        "alternativen": ["Zuschaltbarer Allradantrieb mit Geländeuntersetzung", "Permanenter Allradantrieb mit Zentraldifferenzial und Geländeuntersetzung", "Allradantrieb ohne Geländeuntersetzung"],
+        "auswahlkriterien": ["Traktion und Kriechfähigkeit im Gelände", "Fahrstabilität auf befestigter Straße", "Verschleiß und Kraftstoffverbrauch", "Bedienaufwand für den Fahrer"],
+        "auswirkungen": [
+          {"element_id": "E67", "beschreibung": "Zuschaltung und Untersetzung brauchen eigene Bedienelemente."},
+          {"element_id": "E86", "beschreibung": "Das Fahrzeugmanagement steuert Zuschaltung und Zentraldifferenzial."},
+          {"element_id": "E54", "beschreibung": "Bei permanentem Allradantrieb übernimmt die Bremsregelung einen Teil der Traktionsverteilung."}
+        ],
+        "absatz_ids": ["P9", "P10"]
+      },
+      {
+        "id": "V3",
+        "element_id": "E27",
+        "bezeichnung": "Traktionshilfe",
+        "alternativen": ["Mechanische Differenzialsperren an Achsen und Zentraldifferenzial", "Antriebsschlupfregelung durch Bremseneingriff mit Eingriff in die Motorsteuerung", "Kombination beider Lösungen"],
+        "auswahlkriterien": ["Traktion bei starker Achsverschränkung", "Thermische Belastung der Bremsen", "Bedienaufwand", "Robustheit und Instandsetzbarkeit im Feld"],
+        "auswirkungen": [
+          {"element_id": "E54", "beschreibung": "Ohne mechanische Sperren muss die Bremsregelung eine Antriebsschlupfregelung enthalten."},
+          {"element_id": "E86", "beschreibung": "Die Schlupfregelung braucht einen Datenaustausch für den Motoreingriff."},
+          {"element_id": "E67", "beschreibung": "Mechanische Sperren erfordern Schalter im Fahrerhaus."}
+        ],
+        "absatz_ids": ["P9", "P15"]
+      },
+      {
+        "id": "V4",
+        "element_id": "E1",
+        "bezeichnung": "Herkunft des Basisfahrzeugs",
+        "alternativen": ["Militärische Sonderentwicklung eines Geländewagens", "Ableitung eines kommerziellen Serienfahrzeugs mit angepasster Struktur und Federung"],
+        "auswahlkriterien": ["Beschaffungskosten und Einführungszeit", "Robustheit und Nutzungsdauer", "Abhängigkeit von Lieferkette und Einzelhersteller", "Anpassbarkeit an militärische Bordnetz- und Rüstsatzstandards"],
+        "auswirkungen": [
+          {"element_id": "E8", "beschreibung": "Bei der Serienableitung müssen Federung und Tragfähigkeit verstärkt werden."},
+          {"element_id": "E78", "beschreibung": "Die zivile Bordnetz- und Busarchitektur muss an den militärischen Spannungsstandard angepasst werden."},
+          {"element_id": "E73", "beschreibung": "Die Rüstsatzaufnahme muss an eine nicht für Rüstsätze ausgelegte Struktur angepasst werden."}
+        ],
+        "absatz_ids": ["P2", "P21"]
+      },
+      {
+        "id": "V5",
+        "element_id": "E69",
+        "bezeichnung": "Aufbauausführung",
+        "alternativen": ["Offener Aufbau mit Verdeck", "Geschlossener Aufbau mit festem Dach", "Pritsche", "Kofferaufbau"],
+        "auswahlkriterien": ["Einsatzrolle des Rüstsatzes, etwa Funk, Sanität oder Waffenträger", "Klimatische Einsatzbedingungen", "Sitzplatzbedarf", "Lufttransportmaße"],
+        "auswirkungen": [
+          {"element_id": "E58", "beschreibung": "Offene Ausführungen erhalten ein Verdeck statt einer geschlossenen Kabinenstruktur."},
+          {"element_id": "E102", "beschreibung": "Geschlossene Aufbauten und Kofferaufbauten erhöhen den Bedarf an Innenraumheizung und Klimaanlage."},
+          {"element_id": "E29", "beschreibung": "Funk- und Sanitätsrüstsätze erfordern Zusatzbatterien oder Exportstromversorgung."}
+        ],
+        "absatz_ids": ["P16", "P17", "P18", "P19"]
+      },
+      {
+        "id": "V6",
+        "element_id": "E12",
+        "bezeichnung": "Reifendruckregelung",
+        "alternativen": ["Fester Reifendruck", "Reifendruckregelanlage mit Bedienung während der Fahrt"],
+        "auswahlkriterien": ["Anteil der Fahrten auf weichem oder unbefestigtem Untergrund", "Wartungsaufwand", "Erkennbarkeit von Reifenschäden"],
+        "auswirkungen": [
+          {"element_id": "E110", "beschreibung": "Die Regelanlage braucht eine Druckluftanlage mit Kompressor."},
+          {"element_id": "E9", "beschreibung": "Die Druckluftzuführung erfordert eine hohle Achse oder Nabe beziehungsweise eine Drehdurchführung."},
+          {"element_id": "E67", "beschreibung": "Der Fahrer benötigt Bedien- und Anzeigeelemente für den Reifendruck."}
+        ],
+        "absatz_ids": ["P7", "P27"]
+      },
+      {
+        "id": "V7",
+        "element_id": "E37",
+        "bezeichnung": "Elektrische Leistungsabgabe an Rüstsätze",
+        "alternativen": ["Versorgung nur aus dem Bordnetz", "Bordnetz mit Zusatzbatterien", "Zusätzliche Exportstromversorgung für Führungssysteme"],
+        "auswahlkriterien": ["Leistungsbedarf der Führungs- und Funksysteme während der Fahrt", "Betriebsdauer im Stand", "Bauraum und Masse"],
+        "auswirkungen": [
+          {"element_id": "E35", "beschreibung": "Eine Exportstromversorgung erfordert einen stärkeren Generator."},
+          {"element_id": "E103", "beschreibung": "Zusätzliche Leistungselektronik und Generatorlast erhöhen die abzuführende Wärme."},
+          {"element_id": "E78", "beschreibung": "Das Bordnetz braucht getrennte Kreise und Anschlüsse für die Rüstsätze."}
+        ],
+        "absatz_ids": ["P11", "P12"]
+      }
+    ],
+    "klaerungsfragen": [
+      {"id": "K1", "frage": "Soll der Geländetransporter mit Radfahrwerk oder als Kettengelenkfahrzeug mit zwei Wagen modelliert werden?", "element_ids": ["E2", "E8", "E13"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Lenksystem, Kraftübertragung, Hydraulikversorgung und die Aufteilung des Laderaums ab.", "variante_ids": ["V1"]},
+      {"id": "K2", "frage": "Welche Geländearten wie Schnee, Moor, Fels oder Wasserdurchfahrten muss das Fahrzeug bewältigen, und muss es schwimmfähig sein?", "element_ids": ["E2", "E20"], "anlass": "anforderung", "relevanz": "Die Antwort bestimmt Laufwerk, Abdichtung der Wagenkästen und Lage der Luftansaugung.", "variante_ids": ["V1"]},
+      {"id": "K3", "frage": "Soll der Allradantrieb permanent mit Zentraldifferenzial oder zuschaltbar ausgeführt werden, und ist eine Geländeuntersetzung gefordert?", "element_ids": ["E22", "E24"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Verteilergetriebe, Bedienelemente und Aufgaben der Bremsregelung ab.", "variante_ids": ["V2"]},
+      {"id": "K4", "frage": "Soll die Traktion über mechanische Differenzialsperren, über eine Antriebsschlupfregelung durch Bremseneingriff oder über beides gesichert werden?", "element_ids": ["E27", "E54"], "anlass": "architekturentscheidung", "relevanz": "Die Antwort legt fest, ob Sperren, Schalter oder eine Schlupfregelung mit Motoreingriff modelliert werden.", "variante_ids": ["V3"]},
+      {"id": "K5", "frage": "Soll das Fahrzeug als militärische Sonderentwicklung oder als Ableitung eines kommerziellen Serienfahrzeugs ausgelegt werden?", "element_ids": ["E1", "E8", "E78"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Fahrwerksverstärkung, Bordnetzarchitektur und Lieferkettenabhängigkeit ab.", "variante_ids": ["V4"]},
+      {"id": "K6", "frage": "Welche Führungs- und Funksysteme müssen während der Fahrt versorgt werden, und reicht dafür das Bordnetz oder ist eine Exportstromversorgung nötig?", "element_ids": ["E29", "E37"], "anlass": "anforderung", "relevanz": "Die Antwort bestimmt Generatorauslegung, Zusatzbatterien und Wärmeabfuhr.", "variante_ids": ["V7"]},
+      {"id": "K7", "frage": "Welche Wendigkeit auf engen Waldwegen und im Gebirge wird vom Lenksystem gefordert?", "element_ids": ["E38", "E42", "E46"], "anlass": "anforderung", "relevanz": "Davon hängen Lenkart, Lenkeinschlag beziehungsweise Knickwinkel und Radstand ab."},
+      {"id": "K8", "frage": "Muss das Fahrzeug mit voller Zuladung und Anhänger an steilen Gefällstrecken sicher verzögert und festgehalten werden können?", "element_ids": ["E49", "E50", "E53"], "anlass": "betrieb", "relevanz": "Die Antwort bestimmt die Auslegung von Radbremsanlage und Feststellbremse."},
+      {"id": "K9", "frage": "Wie viele Sitzplätze für Fahrer und Mannschaft sind gefordert, und soll die Kabine offen mit Verdeck oder geschlossen sein?", "element_ids": ["E57", "E58", "E62"], "anlass": "anforderung", "relevanz": "Davon hängen Kabinenstruktur, Innenausstattung und Klimatisierung ab.", "variante_ids": ["V5"]},
+      {"id": "K10", "frage": "Welche Rüstsätze wie Funk, Sanität, Waffenträger oder Pritsche muss das Grundfahrzeug aufnehmen können?", "element_ids": ["E69", "E73"], "anlass": "architekturentscheidung", "relevanz": "Die Antwort legt Rüstsatzaufnahme, Aufbauausführung und elektrische Schnittstellen fest.", "variante_ids": ["V5", "V7"]},
+      {"id": "K11", "frage": "Welche Bordnetzspannung ist vorgegeben, und muss das Fahrzeug andere Fahrzeuge über einen Fremdstartanschluss starten können?", "element_ids": ["E77", "E78", "E82"], "anlass": "schnittstelle", "relevanz": "Davon hängen Generator, Batterien und die Kompatibilität mit anderen Fahrzeugen und Rüstsätzen ab.", "variante_ids": ["V4"]},
+      {"id": "K12", "frage": "Welche Funk- und Navigationsgeräte werden fest eingebaut und welche als Rüstsatz geführt?", "element_ids": ["E84", "E88"], "anlass": "schnittstelle", "relevanz": "Die Antwort bestimmt Halterungen, Antennenplätze und Datenschnittstellen zum Fahrzeugbus."},
+      {"id": "K13", "frage": "Welchen Schutz müssen die Insassen bei Überschlag und bei Fahrten durch dichten Wald erhalten?", "element_ids": ["E91", "E92", "E93"], "anlass": "anforderung", "relevanz": "Davon hängen Auslegung des Überschlagschutzes, Rückhaltesystem und Astabweiser ab."},
+      {"id": "K14", "frage": "Muss das Fahrzeug mit Tarnlicht fahren können, und welche Leuchten müssen dabei abgeschaltet bleiben?", "element_ids": ["E94", "E98"], "anlass": "betrieb", "relevanz": "Die Antwort bestimmt Stromkreise, Schalter und Leuchtenanordnung."},
+      {"id": "K15", "frage": "In welchem Temperaturbereich muss das Fahrzeug starten und betrieben werden, und ist eine Klimaanlage gefordert?", "element_ids": ["E102", "E107", "E108"], "anlass": "anforderung", "relevanz": "Davon hängen Kühlkreislauf, Heizung, Klimaanlage und Starthilfen ab."},
+      {"id": "K16", "frage": "Ist eine Reifendruckregelanlage gefordert, die der Fahrer während der Fahrt bedienen kann?", "element_ids": ["E12", "E110"], "anlass": "architekturentscheidung", "relevanz": "Die Antwort entscheidet über Druckluftanlage, Achsausführung und Bedienelemente.", "variante_ids": ["V6"]},
+      {"id": "K17", "frage": "Wird eine Seilwinde zur Selbst- und Fremdbergung benötigt, und an welcher Fahrzeugseite soll sie angebracht sein?", "element_ids": ["E109", "E117"], "anlass": "betrieb", "relevanz": "Davon hängen Rahmenbefestigung, Bordnetzlast und Fahrzeugmasse ab."},
+      {"id": "K18", "frage": "Mit welchen Luftfahrzeugen und in welcher Form, als Innenlast, Außenlast oder Lastenabwurf, muss das Fahrzeug transportierbar sein?", "element_ids": ["E1", "E7"], "anlass": "anforderung", "relevanz": "Die Antwort begrenzt Masse und Abmessungen und bestimmt Anschlag- und Verzurrpunkte."}
+    ],
+    "anforderungsthemen": [
+      {"id": "R1", "element_ids": ["E2", "E8"], "thema": "Geländegängigkeit", "kenngroessen": ["Böschungswinkel vorn", "Böschungswinkel hinten", "Rampenwinkel", "Bodenfreiheit unter den Achsen", "Bodenfreiheit zwischen den Achsen", "Steigfähigkeit", "Wattiefe", "Achsverschränkung"], "regelwerke": [{"bezeichnung": "Verordnung (EU) 2018/858, Anhang I Teil A Nummer 4.1 (Geländefahrzeug-Kriterien für Fahrzeuge der Klassen M1 und N1 für öffentliche Straßen; gelesen in der im Vereinigten Königreich fortgeltenden Fassung; ausschließlich für Streitkräfte konstruierte Fahrzeuge sind nach Artikel 2 ausgenommen, daher nur als Bezugsmaßstab)", "quellen_id": "Q7", "fundstelle": "Part A, Nummer 4.1"}]},
+      {"id": "R2", "element_ids": ["E1", "E7"], "thema": "Lufttransportfähigkeit", "kenngroessen": ["Fahrzeugmasse", "Abmessungen", "Lage und Belastbarkeit der Anschlagösen", "Anzahl der Verzurrpunkte"]},
+      {"id": "R3", "element_ids": ["E1"], "thema": "Zulassung und Typgenehmigung", "kenngroessen": ["Fahrzeugklasse", "Genehmigungsart"], "regelwerke": [{"bezeichnung": "Verordnung (EU) 2018/858, Artikel 2 Absatz 2 Buchstaben c und d (Ausnahme von Gleiskettenfahrzeugen und ausschließlich für Streitkräfte konstruierten Fahrzeugen; gelesen in der im Vereinigten Königreich fortgeltenden Fassung)", "quellen_id": "Q6", "fundstelle": "Article 2 Absatz 2 Buchstaben c und d"}]},
+      {"id": "R4", "element_ids": ["E18", "E22"], "thema": "Traktion und Fahrleistung", "kenngroessen": ["Gesamtuntersetzung", "Zugkraft", "Höchstgeschwindigkeit an Land", "Geschwindigkeit im Wasser"]},
+      {"id": "R5", "element_ids": ["E29", "E33"], "thema": "Reichweite und elektrische Versorgung", "kenngroessen": ["Reichweite", "Tankvolumen", "Generatorleistung", "Batteriekapazität", "Exportleistung"]},
+      {"id": "R6", "element_ids": ["E38"], "thema": "Wendigkeit", "kenngroessen": ["Wendekreis", "Knickwinkel", "Lenkkraft"]},
+      {"id": "R7", "element_ids": ["E49"], "thema": "Bremsvermögen", "kenngroessen": ["Verzögerung", "Haltevermögen an Steigungen", "Bremsweg"]},
+      {"id": "R8", "element_ids": ["E57"], "thema": "Besatzung und Ergonomie", "kenngroessen": ["Sitzplatzzahl", "Zugänglichkeit", "Stauraum für persönliche Ausrüstung"]},
+      {"id": "R9", "element_ids": ["E69", "E73"], "thema": "Nutzlast und Rüstsatzschnittstelle", "kenngroessen": ["Nutzlast", "Ladeflächenmaße", "Anhängelast", "Rüstsatzwechselzeit"]},
+      {"id": "R10", "element_ids": ["E77", "E78"], "thema": "Bordnetz", "kenngroessen": ["Bordnetzspannung", "Leistungsreserve", "elektromagnetische Verträglichkeit"]},
+      {"id": "R11", "element_ids": ["E84", "E88"], "thema": "Führungsfähigkeit", "kenngroessen": ["Anzahl der Funkgeräte", "Positionsgenauigkeit", "Diagnoseumfang"]},
+      {"id": "R12", "element_ids": ["E91", "E92"], "thema": "Insassenschutz", "kenngroessen": ["Dachlast des Überschlagschutzes", "Rückhaltewirkung", "Überlebensfähigkeit"]},
+      {"id": "R13", "element_ids": ["E94", "E98"], "thema": "Tarnung und Sicht", "kenngroessen": ["Lichtabgabe im Tarnlichtbetrieb", "Sichtfeld des Fahrers"]},
+      {"id": "R14", "element_ids": ["E102"], "thema": "Klimatische Einsatzbedingungen", "kenngroessen": ["Einsatztemperaturbereich", "Kühlleistung", "Heizleistung"]},
+      {"id": "R15", "element_ids": ["E109", "E117"], "thema": "Hilfsenergie und Bergung", "kenngroessen": ["Zugkraft der Seilwinde", "Liefermenge der Druckluftanlage", "Hydraulikdruck"]}
+    ]
+  },
+  "offene_punkte": [
+    "Glossarvorschlag: Reifendruck regeln",
+    "Glossarvorschlag: Fahrzeug freiziehen",
+    "Recherche Regelwerk: EU-Fassung der Verordnung (EU) 2018/858, Artikel 2 und Anhang I Teil A Nummer 4, auf EUR-Lex prüfen (CELEX 32018R0858); EUR-Lex war in diesem Lauf durch eine Zugriffsschutzseite nicht abrufbar, gelesen wurde nur die im Vereinigten Königreich fortgeltende Fassung auf legislation.gov.uk.",
+    "Recherche Behörde: Ausrüstungsseiten der Bundeswehr zu Wolf, Caracal und Bv206 (Suchbegriff: bundeswehr.de Landsysteme geschützte und ungeschützte Fahrzeuge); die geprüfte Übersichtsseite lieferte in diesem Lauf einen Fehler.",
+    "Recherche Fachliteratur: Bremsanlage und Kraftübertragung von Kettengelenkfahrzeugen, etwa Herstellerdokumentation oder Fachbuch zu Bandvagn-Fahrzeugen (Suchbegriff: articulated tracked vehicle driveline brake), um die hergeleiteten Absätze P14 und P15 zu belegen.",
+    "Recherche Fachliteratur: Belastbare Quelle zur Reifendruckregelanlage an militärischen Radfahrzeugen (Suchbegriff: central tire inflation system military vehicle technical manual), da der Wikipedia-Artikel ohne Einzelbelege ist.",
+    "Recherche Norm: Anforderungen an Luftverlastbarkeit und Anschlagpunkte militärischer Fahrzeuge (Suchbegriff: STANAG air transportability vehicle lifting and tiedown provisions).",
+    "Recherche Norm: Anforderungen an Tarnlicht und Bordnetzspannung militärischer Fahrzeuge (Suchbegriff: Tarnlichtanlage Bundeswehr Vorschrift, NATO vehicle electrical system voltage)."
+  ]
+}

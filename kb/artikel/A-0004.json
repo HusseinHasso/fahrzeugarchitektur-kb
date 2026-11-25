@@ -132,7 +132,7 @@
       "absaetze": [
         {
           "absatz_id": "P4",
-          "text": "Fahrzeugstruktur und Fahrwerk tragen beim Van alle Fahrzeuglasten. Bei Vans auf Pkw-Plattform ersetzt die selbsttragende Karosserie den Rahmen: Die Bodengruppe nimmt Antrieb, Energiespeicher, Sitzverankerungen und Fahrwerk auf, die Fahrgastzelle umschließt den Innenraum. Fondzugänge können als Schiebetür mit Führungsschienen ausgeführt sein. Türschlösser und Schließsystem sichern alle Türen, verriegeln zentral und melden den Schließzustand an die Bedien- und Anzeigeelemente. Das Fahrwerk umfasst Vorderachse, Hinterachse, Federung und Dämpfung sowie Räder und Reifen.",
+          "text": "Fahrzeugstruktur und Fahrwerk tragen beim Van alle Fahrzeuglasten. Bei Vans auf Pkw-Plattform ersetzt die selbsttragende Karosserie den Rahmen: Die Bodengruppe nimmt Antrieb, Energiespeicher, Sitzverankerungen und Fahrwerk auf, die Fahrgastzelle umschließt den Innenraum. Fondzugänge können als Schiebetür mit Führungsschienen ausgeführt sein, hinten schließt eine Heckklappe die Karosserie. Türschlösser und Schließsystem sichern alle Türen und die Heckklappe, verriegeln zentral und melden den Schließzustand an die Bedien- und Anzeigeelemente. Das Fahrwerk umfasst Vorderachse, Hinterachse, Federung und Dämpfung sowie Räder und Reifen.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -210,7 +210,7 @@
       "absaetze": [
         {
           "absatz_id": "P7",
-          "text": "Das Energieversorgungssystem speichert die Antriebsenergie und stellt sie dem Antriebssystem bereit. Beim konventionellen Van besteht es aus der Kraftstoffanlage mit Kraftstofftank und Kraftstoffpumpe, die den Treibstoff zum Verbrennungsmotor fördert. Beim batterieelektrischen Van tritt an ihre Stelle das Hochvolt-Energiespeichersystem mit Traktionsbatterie, Batteriemanagementsystem und Ladeeinrichtung, über die die Traktionsbatterie aus dem Stromnetz geladen wird. Hybride Vans besitzen beide Pfade; eine Ladeeinrichtung hat nur der Plug-in-Hybrid, beim Vollhybrid wird die Traktionsbatterie ausschließlich über Traktionsmaschine und Rückgewinnung geladen, Mildhybride können statt eines Hochvoltsystems ein Niederspannungssystem nutzen. Liegt die Traktionsbatterie flach in der Bodengruppe, hebt sie den Fahrzeugboden an. Das Batteriemanagementsystem überwacht Zellen und Temperaturen und meldet den Ladezustand an das Fahrzeugmanagement.",
+          "text": "Das Energieversorgungssystem speichert die Antriebsenergie und stellt sie dem Antriebssystem bereit. Beim konventionellen Van besteht es aus der Kraftstoffanlage mit Kraftstofftank und Kraftstoffpumpe, die den Treibstoff zum Verbrennungsmotor fördert. Beim batterieelektrischen Van tritt an ihre Stelle das Hochvolt-Energiespeichersystem mit Traktionsbatterie, Batteriemanagementsystem und Ladeeinrichtung, über die die Traktionsbatterie aus dem Stromnetz geladen wird. Hybride Vans besitzen beide Pfade; eine Ladeeinrichtung hat nur der Plug-in-Hybrid, beim Vollhybrid wird die Traktionsbatterie ausschließlich über Traktionsmaschine und Rückgewinnung geladen, Mildhybride können statt eines Hochvoltsystems ein Niederspannungssystem nutzen. Liegt die Traktionsbatterie flach in der Bodengruppe, hebt sie den Fahrzeugboden an. Das Batteriemanagementsystem überwacht Zellen und Temperaturen und meldet den Ladezustand an das Fahrzeugmanagement. Für das Niedervolt-Bordnetz speichert eine Bordnetzbatterie Energie; beim elektrifizierten Van speist ein Gleichspannungswandler aus der Traktionsbatterie das Bordnetz anstelle eines Generators.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -218,7 +218,8 @@
               "P6",
               "Jeder Energiewandler braucht einen passenden Speicher und dessen Zuführung.",
               "Ein extern geladener Batteriespeicher braucht eine Ladeschnittstelle.",
-              "Ein Batteriespeicher braucht eine Überwachung."
+              "Ein Batteriespeicher braucht eine Überwachung.",
+              "Die Niederspannungsverbraucher brauchen einen eigenen Speicher und eine Einspeisung."
             ],
             "schluss": "Je nach Antriebsart besteht die Energieversorgung aus Kraftstoffanlage, Hochvolt-Energiespeichersystem oder beiden; eine Ladeeinrichtung gibt es nur bei externer Lademöglichkeit."
           },
@@ -332,16 +333,17 @@
         },
         {
           "absatz_id": "P13",
-          "text": "Laderaum und Anhängevorrichtung sind beim Van daher kein getrennter Aufbau, sondern Teil des einzigen Innenraums. Der Gepäckraum hinter der letzten Sitzreihe wächst, wenn Sitze umgeklappt oder ausgebaut werden, und wird über die Heckklappe beladen. Ladeboden, Verzurrpunkte und Trennnetz leiten Ladungslasten in die Bodengruppe. Die Anhängevorrichtung ist hinten an der Bodengruppe befestigt und braucht eine elektrische Anbindung für die Anhängerbeleuchtung.",
+          "text": "Laderaum und Anhängevorrichtung sind beim Van daher kein getrennter Aufbau, sondern Teil des einzigen Innenraums. Der Gepäckraum hinter der letzten Sitzreihe wächst, wenn Sitze umgeklappt oder ausgebaut werden, und wird über die Heckklappe der Karosserie beladen. Ladeboden, Verzurrpunkte und Trennnetz leiten Ladungslasten in die Bodengruppe. Die Anhängevorrichtung ist hinten an der Bodengruppe befestigt und braucht eine elektrische Anbindung für die Anhängerbeleuchtung.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "P2",
               "P12",
+              "P4",
               "Ladung muss gegen Verrutschen gesichert und ihre Last in die Struktur geleitet werden."
             ],
-            "schluss": "Der Laderaum des Van ist ein veränderlicher Teil des Innenraums mit Gepäckraum, Heckklappe und Anhängevorrichtung."
+            "schluss": "Der Laderaum des Van ist ein veränderlicher Teil des Innenraums mit Gepäckraum und Anhängevorrichtung, beladen über die Heckklappe."
           },
           "sicherheit": "mittel",
           "herangezogene_artikel_ids": [],
@@ -356,7 +358,7 @@
       "absaetze": [
         {
           "absatz_id": "P14",
-          "text": "Elektrik und Elektronik versorgen und vernetzen die übrigen Hauptsysteme. Das Niedervolt-Bordnetz besteht aus Bordnetzbatterie, Stromverteiler mit Sicherungen und dem Leitungssatz, der beim Van wegen der langen Karosserie, der beweglichen Schiebetüren und vieler Sitzplätze mit Gurtschlosssensoren und Steckdosen weit verzweigt ist. Beim elektrifizierten Van speist ein Gleichspannungswandler das Bordnetz aus der Traktionsbatterie anstelle eines Generators. Steuergeräte erfassen Sensorsignale und steuern Aktoren; sie tauschen Daten über das Fahrzeugkommunikationsnetz aus, das domänenweise oder zonal gegliedert sein kann. Arbeiten sicherheitsrelevante Funktionen wie Lenkunterstützung oder elektromechanische Bremse elektrisch, muss geklärt werden, ob ihre Versorgung redundant ausgeführt wird.",
+          "text": "Elektrik und Elektronik versorgen und vernetzen die übrigen Hauptsysteme. Das Niedervolt-Bordnetz besteht aus Stromverteiler mit Sicherungen und dem Leitungssatz, der beim Van wegen der langen Karosserie, der beweglichen Schiebetüren und vieler Sitzplätze mit Gurtschlosssensoren und Steckdosen weit verzweigt ist. Gespeist wird es aus der Bordnetzbatterie und beim elektrifizierten Van über den Gleichspannungswandler der Energieversorgung. Steuergeräte erfassen Sensorsignale und steuern Aktoren; sie tauschen Daten über das Fahrzeugkommunikationsnetz aus, das domänenweise oder zonal gegliedert sein kann. Arbeiten sicherheitsrelevante Funktionen wie Lenkunterstützung oder elektromechanische Bremse elektrisch, muss geklärt werden, ob ihre Versorgung redundant ausgeführt wird.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -567,7 +569,7 @@
       "absaetze": [
         {
           "absatz_id": "P23",
-          "text": "Stoff: Kraftstoffanlage an Verbrennungsmotor. Elektrisch: Traktionsbatterie an Leistungselektronik und Gleichspannungswandler, Leistungselektronik an Traktionsmaschine, Ladeeinrichtung an Traktionsbatterie, Stromverteiler an Steuergeräte und Verbraucher. Mechanisch: Antriebswellen an Räder und Reifen, Lenkgetriebe an Vorderachse, Schiebetürantrieb an Schiebetür, Sitzverankerungen und Anhängevorrichtung an Bodengruppe. Hydraulisch: Hauptbremszylinder an Radbremsen. Pneumatisch: Unterdruckpumpe an Bremskraftverstärker. Thermisch: Verbrennungsmotor an Kühlkreislauf, Batterietemperierung an Traktionsbatterie, Fondklimatisierung an Fahrgastraum. Information: Umfeldsensorik an Assistenzsteuergerät, dieses an Bremsregelsystem und Lenkunterstützung; Bremsregelsystem und Fahrzeugmanagement an Leistungselektronik; Fahrzeugmanagement mit Bedien- und Anzeigeelementen wechselseitig; Türschlösser, Rückfahrkamera an Anzeige; Insassenschutzsteuergerät an Airbags.",
+          "text": "Stoff: Kraftstoffanlage an Verbrennungsmotor. Elektrisch: Traktionsbatterie an Leistungselektronik und Gleichspannungswandler, Gleichspannungswandler und Bordnetzbatterie an Stromverteiler, Leistungselektronik an Traktionsmaschine, Ladeeinrichtung an Traktionsbatterie, Stromverteiler an Steuergeräte und Verbraucher. Mechanisch: Antriebswellen an Räder und Reifen, Lenkgetriebe an Vorderachse, Schiebetürantrieb an Schiebetür, Sitzverankerungen und Anhängevorrichtung an Bodengruppe. Hydraulisch: Hauptbremszylinder an Radbremsen. Pneumatisch: Unterdruckpumpe an Bremskraftverstärker. Thermisch: Verbrennungsmotor an Kühlkreislauf, Batterietemperierung an Traktionsbatterie, Fondklimatisierung an Fahrgastraum. Information: Umfeldsensorik an Assistenzsteuergerät, dieses an Bremsregelsystem und Lenkunterstützung; Bremsregelsystem und Fahrzeugmanagement an Leistungselektronik; Fahrzeugmanagement mit Bedien- und Anzeigeelementen wechselseitig; Türschlösser, Rückfahrkamera an Anzeige; Insassenschutzsteuergerät an Airbags.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -1157,8 +1159,9 @@
         "id": "E53",
         "name": "Heckklappe",
         "typ": "komponente",
-        "eltern_id": "E51",
+        "eltern_id": "E3",
         "absatz_ids": [
+          "P4",
           "P13"
         ]
       },
@@ -1197,8 +1200,9 @@
         "id": "E57",
         "name": "Bordnetzbatterie",
         "typ": "komponente",
-        "eltern_id": "E56",
+        "eltern_id": "E21",
         "absatz_ids": [
+          "P7",
           "P14"
         ]
       },
@@ -1224,8 +1228,9 @@
         "id": "E60",
         "name": "Gleichspannungswandler",
         "typ": "komponente",
-        "eltern_id": "E56",
+        "eltern_id": "E25",
         "absatz_ids": [
+          "P7",
           "P14"
         ]
       },
@@ -1897,10 +1902,10 @@
         "art": "elektrisch",
         "medium": "Hochvolt-Gleichstrom",
         "absatz_ids": [
+          "P7",
           "P14",
           "P23"
-        ],
-        "schnittstelle": "Hochvolt-Schnittstelle Gleichspannungswandler"
+        ]
       },
       {
         "id": "S6",
@@ -2199,6 +2204,32 @@
           "P23"
         ],
         "schnittstelle": "Bordnetzanschluss Schließsystem"
+      },
+      {
+        "id": "S31",
+        "von": "E60",
+        "nach": "E58",
+        "art": "elektrisch",
+        "medium": "Niedervolt-Gleichstrom",
+        "absatz_ids": [
+          "P7",
+          "P14",
+          "P23"
+        ],
+        "schnittstelle": "Bordnetzeinspeisung Gleichspannungswandler"
+      },
+      {
+        "id": "S32",
+        "von": "E57",
+        "nach": "E58",
+        "art": "elektrisch",
+        "medium": "Niedervolt-Gleichstrom",
+        "absatz_ids": [
+          "P7",
+          "P14",
+          "P23"
+        ],
+        "schnittstelle": "Bordnetzbatterieanschluss"
       }
     ],
     "entfallene_kategorien": [],
@@ -2243,7 +2274,7 @@
           },
           {
             "element_id": "E60",
-            "beschreibung": "Gleichspannungswandler statt Generator für das Niedervolt-Bordnetz"
+            "beschreibung": "Gleichspannungswandler statt Generator zur Einspeisung in das Niedervolt-Bordnetz"
           },
           {
             "element_id": "E28",

@@ -273,7 +273,7 @@
         },
         {
           "absatz_id": "P10",
-          "text": "Der Fahrgastraum wird nach oben durch das Verdecksystem abgeschlossen. Es umfasst Verdeckgestänge, Dachhaut, Heckscheibe, Dachdichtungen und die Verdeckverriegelung am Frontscheibenrahmen sowie als Verdeckantrieb Hydraulikzylinder oder elektrische Stellmotoren. Eine Verdeckklappe deckt bei vielen Bauarten den Verdeckkasten ab, in dem das Verdeckpaket abgelegt wird; bei anderen liegt das Verdeck gefaltet auf der Verdeckklappe. Die Verdeckverriegelung meldet ihren Zustand an die Verdecksteuerung. Zur Innenausstattung gehören Sitzanlage, Seitenscheiben und Fensterheber, Bedien- und Anzeigeelemente mit dem Verdeckschalter sowie das Windschott. Die Sitzanordnung als Zweisitzer oder Viersitzer bestimmt Verdecklänge und Ablageraum.",
+          "text": "Der Fahrgastraum wird nach oben durch das Verdecksystem abgeschlossen. Es umfasst Verdeckgestänge, Dachhaut, Heckscheibe, Dachdichtungen und die Verdeckverriegelung am Frontscheibenrahmen sowie als Verdeckantrieb Hydraulikzylinder oder elektrische Stellmotoren. Eine Verdeckklappe deckt bei vielen Bauarten den Verdeckkasten ab, in dem das Verdeckpaket abgelegt wird; bei anderen liegt das Verdeck gefaltet auf der Verdeckklappe. Die Verdeckverriegelung meldet ihren Zustand an die Verdecksteuerung. Zur Innenausstattung gehören Sitzanlage, Seitenscheiben und Fensterheber, Bedien- und Anzeigeelemente mit dem Verdeckschalter sowie das Windschott. Zum Fahrgastraum gehört zudem das Rückhaltesystem mit Sicherheitsgurten, Frontairbags und Seitenairbags; ohne B-Säule können Gurtumlenkung oder Gurtbringer in Sitz oder Seitenverkleidung liegen. Die Sitzanordnung als Zweisitzer oder Viersitzer bestimmt Verdecklänge und Ablageraum.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -282,9 +282,12 @@
               "P3",
               "P11",
               "Q1 Abschnitt „Ausführungen“ (versenkbare Seitenscheiben, in der Regel zwei- bis fünfsitzig)",
-              "Ein bewegliches Dach muss in geschlossener Lage gegen den Frontscheibenrahmen verriegelt und abgedichtet werden."
+              "Ein bewegliches Dach muss in geschlossener Lage gegen den Frontscheibenrahmen verriegelt und abgedichtet werden.",
+              "P16",
+              "P7",
+              "Ohne Dach und B-Säule fehlt der übliche obere Befestigungspunkt des Gurts."
             ],
-            "schluss": "Das Verdecksystem ist ein Subsystem des Fahrgastraums mit Gestänge, Dachhaut, Heckscheibe, Dichtungen, Verriegelung, Verdeckklappe und Verdeckantrieb; die Sitzanordnung bestimmt seine Größe."
+            "schluss": "Das Verdecksystem ist ein Subsystem des Fahrgastraums mit Gestänge, Dachhaut, Heckscheibe, Dichtungen, Verriegelung, Verdeckklappe und Verdeckantrieb; die Sitzanordnung bestimmt seine Größe. Das Rückhaltesystem ist ein eigenes Subsystem des Fahrgastraums; die Gurtführung verlagert sich in Sitz oder Seitenverkleidung."
           },
           "sicherheit": "mittel",
           "aussagetyp": "modellannahme",
@@ -425,16 +428,15 @@
         },
         {
           "absatz_id": "P17",
-          "text": "Im Modell besteht das Überschlagschutzsystem aus Überrollsensor, Überrollbügel und Auslöseeinheit. Das Rückhaltesystem umfasst Sicherheitsgurte, Frontairbags und Seitenairbags; ohne B-Säule können Gurtumlenkung oder Gurtbringer in Sitz oder Seitenverkleidung liegen. Eine Umfeldsensorik erfasst das Umfeld für Assistenzfunktionen.",
+          "text": "Im Modell besteht das Überschlagschutzsystem aus Überrollsensor, Überrollbügel und Auslöseeinheit; es wirkt beim Überschlag mit dem Rückhaltesystem des Fahrgastraums zusammen. Eine Umfeldsensorik erfasst das Umfeld für Assistenzfunktionen.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "P16",
-              "P7",
-              "Ohne Dach und B-Säule fehlt der übliche obere Befestigungspunkt des Gurts."
+              "P10"
             ],
-            "schluss": "Überschlagschutz und Rückhaltesystem sind getrennte Subsysteme; die Gurtführung verlagert sich in Sitz oder Seitenverkleidung."
+            "schluss": "Das Überschlagschutzsystem ist ein eigenes Subsystem der Fahrerassistenz und Sicherheit; das Rückhaltesystem gehört zum Fahrgastraum."
           },
           "sicherheit": "gering",
           "aussagetyp": "modellannahme",
@@ -1008,6 +1010,43 @@
         ]
       },
       {
+        "id": "E54",
+        "name": "Rückhaltesystem",
+        "typ": "subsystem",
+        "eltern_id": "E26",
+        "absatz_ids": [
+          "P10"
+        ]
+      },
+      {
+        "id": "E55",
+        "name": "Sicherheitsgurte",
+        "typ": "komponente",
+        "eltern_id": "E54",
+        "absatz_ids": [
+          "P10"
+        ]
+      },
+      {
+        "id": "E56",
+        "name": "Seitenairbags",
+        "typ": "komponente",
+        "eltern_id": "E54",
+        "absatz_ids": [
+          "P10",
+          "P16"
+        ]
+      },
+      {
+        "id": "E75",
+        "name": "Frontairbags",
+        "typ": "komponente",
+        "eltern_id": "E54",
+        "absatz_ids": [
+          "P10"
+        ]
+      },
+      {
         "id": "E36",
         "name": "Laderaum und Anhängevorrichtung",
         "typ": "hauptsystem",
@@ -1171,43 +1210,6 @@
         "eltern_id": "E50",
         "absatz_ids": [
           "P16",
-          "P17"
-        ]
-      },
-      {
-        "id": "E54",
-        "name": "Rückhaltesystem",
-        "typ": "subsystem",
-        "eltern_id": "E49",
-        "absatz_ids": [
-          "P17"
-        ]
-      },
-      {
-        "id": "E55",
-        "name": "Sicherheitsgurte",
-        "typ": "komponente",
-        "eltern_id": "E54",
-        "absatz_ids": [
-          "P17"
-        ]
-      },
-      {
-        "id": "E56",
-        "name": "Seitenairbags",
-        "typ": "komponente",
-        "eltern_id": "E54",
-        "absatz_ids": [
-          "P16",
-          "P17"
-        ]
-      },
-      {
-        "id": "E75",
-        "name": "Frontairbags",
-        "typ": "komponente",
-        "eltern_id": "E54",
-        "absatz_ids": [
           "P17"
         ]
       },
@@ -1486,6 +1488,7 @@
           "E5"
         ],
         "absatz_ids": [
+          "P10",
           "P16",
           "P17"
         ]

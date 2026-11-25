@@ -1,0 +1,834 @@
+{
+  "schema_version": "2.3",
+  "artikel_id": "A-0037",
+  "artikeltyp": "blatt",
+  "titel": "Zahnradbahn",
+  "betrachtungsumfang": "Generische Referenzarchitektur des Zahnradbahnfahrzeugs auf zweischienigem Gleis mit Zahnstange in Gleismitte: Zahnradtriebwagen und Zahnradtriebzüge sowie Zahnradlokomotiven mit Wagen und Vorstellwagen, für reine Zahnradbahnen und für gemischten Adhäsions- und Zahnradbetrieb, im Personen- und Güterverkehr. Betrachtete Antriebsarten: elektrischer Antrieb aus der Fahrleitung mit Gleichstrom, Einphasenwechselstrom oder Drehstrom (Energiewandler Traktionsstromrichter mit Traktionsmaschine, bei Wechselstrom zusätzlich Haupttransformator; Bordnetzbatterie als Hilfsenergiespeicher, kein Traktionsenergiespeicher) und dieselelektrischer Antrieb (Energiespeicher Kraftstofftank; Energiewandler Verbrennungsmotor mit Generator, Traktionsstromrichter und Traktionsmaschine). Zahnstange, Zahnstangeneinfahrten, Zahnstangenweichen, Fahrleitung und streckenseitige Zugsicherung sind Schnittstellen, nicht Bestandteil. Nicht betrachtet werden Dampf-, Batterie- und Wasserstoffantrieb, Treidellokomotiven, Standseilbahnen mit Bremszahnstange, Einschienen-Zahnradbahnen (Monorackbahnen) und Mittelschienen-Reibungssysteme wie das System Fell.",
+  "status": "in_arbeit",
+  "quellenzugriff": "ja",
+  "kindartikel_ids": [],
+  "quellen": [
+    {
+      "quellen_id": "Q1",
+      "titel": "Verordnung des BAV über die Ausführungsbestimmungen zur Eisenbahnverordnung (AB-EBV), SR 742.141.11; insbesondere AB 47.1, AB 50.1, AB 54.1.a, AB 54.2.b.1 bis AB 54.2.b.3 (Zahnradbahnen)",
+      "urheber": "Bundesamt für Verkehr (BAV), Schweiz",
+      "stand": "Stand am 1. Juli 2024",
+      "url": "https://www.bav.admin.ch/dam/de/sd-web/0jHc7IGNkQrY/ab-ebv-2024.pdf",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q2",
+      "titel": "Zahnradbahn",
+      "urheber": "Wikipedia, Die freie Enzyklopädie (deutschsprachig)",
+      "stand": null,
+      "url": "https://de.wikipedia.org/wiki/Zahnradbahn",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q3",
+      "titel": "Fahrzeuge für Zahnradbahnen",
+      "urheber": "Wikipedia, Die freie Enzyklopädie (deutschsprachig)",
+      "stand": null,
+      "url": "https://de.wikipedia.org/wiki/Fahrzeuge_f%C3%BCr_Zahnradbahnen",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q4",
+      "titel": "Rack railway",
+      "urheber": "Wikipedia, The Free Encyclopedia (englischsprachig)",
+      "stand": null,
+      "url": "https://en.wikipedia.org/wiki/Rack_railway",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q5",
+      "titel": "Research on information extension of mountainous rack railway engineering based on IFC standard. Scientific Reports 14, 21557",
+      "urheber": "Yongyi Yang, Jinsheng Li, Zizhen Zhang, Yanming Liu",
+      "stand": "2024",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11405406/fullTextXML",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "fachliteratur"
+    }
+  ],
+  "abschnitte": [
+    {
+      "ueberschrift": "Einleitung",
+      "abschnittstyp": "gesamtsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P1",
+          "text": "Eine Zahnradbahn ist ein schienengebundenes Verkehrsmittel, bei dem Vortriebs- oder Bremskraft zwischen Triebfahrzeug und Fahrbahn formschlüssig über ein Zahnstangengetriebe übertragen wird: Trieb- und Bremszahnräder des Fahrzeugs greifen in eine Zahnstange in Gleismitte. So lassen sich wesentlich größere Neigungen befahren als mit Reibungsschluss. Man unterscheidet reine Zahnradbahnen, deren Zahnradantrieb ständig im Eingriff ist, und Bahnen mit gemischtem Adhäsions- und Zahnradbetrieb. Zahnradbahnen dienen vor allem als Berg- und Ausflugsbahnen sowie als Verbindung zwischen städtischen Verkehrsknoten und Ausflugszielen und eignen sich für Personen- und Güterverkehr.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q2", "fundstelle": "Einleitung; Abschnitt Übersicht; Abschnitt Lage der Zahnstangen im Gleis; Abschnitt Eignung für Güterverkehr"},
+            {"quellen_id": "Q5", "fundstelle": "Introduction"}
+          ],
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P2",
+          "text": "Architekturell ist das Zahnradbahnfahrzeug, ob Triebwagen oder Zahnradlokomotive mit Wagen, ein Gesamtsystem aus Systemen, die mechanisch (Zahneingriff, Rad-Schiene-Kontakt, Kupplung), elektrisch, hydraulisch, pneumatisch, thermisch und informationstechnisch gekoppelt sind. Zahnstange, Weichen und Fahrleitung sind äußere Schnittstellen. Weil das Fahrzeug im Zahnradbetrieb nur über den Zahneingriff gebremst werden kann, sind Antrieb, Bremse und Sicherheitsüberwachung eng gekoppelt. Die folgenden Abschnitte zerlegen es in Hauptsysteme, Subsysteme und Komponenten.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": ["P1", "Q3 (Abschnitt Sicherheit gegen Entgleisen: im Zahnradbetrieb Bremsung einzig über den Zahneingriff)", "Ein Fahrzeug mit Fahrleitungsantrieb und Bremsbetätigung braucht elektrische, fluidische und informationstechnische Schnittstellen"],
+            "schluss": "Das Zahnradbahnfahrzeug ist ein über mehrere Schnittstellenarten gekoppeltes Gesamtsystem, dessen Zahneingriff Antrieb und Bremse verbindet."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrzeugstruktur und Fahrwerk",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E2",
+      "absaetze": [
+        {
+          "absatz_id": "P3",
+          "text": "Die Technik der Bergbahnen ist durch Masseoptimierung bestimmt. Wagenkästen reiner Zahnradbahnen sind vorwiegend in Stahlbauweise ausgeführt; bei gemischtem Betrieb werden Reisezugwagen oft in Aluminiumbauweise, Triebfahrzeuge wegen der schweren Antriebsausrüstung vorwiegend in Stahl gebaut. Drehgestelle mit je einer Trieb- und einer Laufachse belasten die Zahnstange gleichmäßig und sind bei einer Entgleisung sicherer als zwei Trieb- und zwei Laufdrehgestelle. Fahrzeuge für Normal- und Meterspur sind weniger kippgefährdet als solche schmalerer Spur, was bei Föhnstürmen von Bedeutung ist.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q3", "fundstelle": "Abschnitt Wagenkasten; Abschnitt Elektrische und dieselelektrische Triebfahrzeuge"},
+            {"quellen_id": "Q2", "fundstelle": "Abschnitt Spurweite"}
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P4",
+          "text": "Die Zugbildung hängt an der Sicherheit gegen Entgleisen. Auf reinen Zahnradbahnen steht das Triebfahrzeug talseitig der Wagen, oft ohne Kupplung, weil die Schwerkraft den Wagen gegen das Triebfahrzeug drückt. Bahnen mit Neigungen über 250 ‰ reihen die Wagen bergseitig ein und verzichten bei der Bergfahrt auf gezogene Züge; Wendezüge werden auf Zahnstangenabschnitten nach Möglichkeit bergwärts geschoben. Die Längskraft an der Kupplung erzeugt mit der Höhendifferenz zur Zahnstange ein Drehmoment, das das Triebfahrzeug bergseitig entlastet; daher ist die Zuglänge beschränkt, und starre Mittelpufferkupplungen sind vorteilhaft.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q3", "fundstelle": "Abschnitt Personen- und Güterwagen; Abschnitt Sicherheit gegen Entgleisen"},
+            {"quellen_id": "Q4", "fundstelle": "Abschnitt Rolling stock"}
+          ],
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P5",
+          "text": "Fahrzeugstruktur und Fahrwerk bestehen aus Wagenkasten, Drehgestell, Zug- und Stoßvorrichtung und Einstiegstüren. Das Drehgestell aus Drehgestellrahmen, Radsatz und Federung nimmt Zahnradantriebe und Bremszahnräder auf. Im reinen Zahnradbetrieb tragen und führen die Radsätze nur; Längskräfte gelangen vom Zahneingriff über den Drehgestellrahmen in den Wagenkasten und über die Zug- und Stoßvorrichtung zu den Wagen. Ein Triebwagen vereint Antrieb und Fahrgastraum, eine Zahnradlokomotive braucht Vorstellwagen.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": ["P3", "P4", "Q2 (Abschnitt Reine Zahnradbahnen: Laufräder der Triebfahrzeuge in der Regel nicht angetrieben)", "Q1 (AB 54.2.b.3 Ziff. 4: Vorstellwagen)", "Jede am Zahnrad eingeleitete Kraft braucht einen Lastpfad über Lagerung und Rahmen in den Wagenkasten"],
+            "schluss": "Das Fahrwerk trägt und führt, der Zahneingriff leitet die Längskräfte über Drehgestell und Wagenkasten zur Kupplung."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Antriebssystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E10",
+      "absaetze": [
+        {
+          "absatz_id": "P6",
+          "text": "Heutige elektrische Zahnradfahrzeuge haben Kompakteinheiten aus Motor, Getriebe, Bremstrommel und Triebzahnrad. Jeder Fahrmotor treibt ein am Radsatz frei drehend gelagertes Triebzahnrad an, das mit mindestens zwei Zähnen eingreift und tangential gefedert ist; das Getriebe hat meist eine doppelte Übersetzung. Können Antriebe bei Störungen größere Bremskräfte entwickeln als in der Entgleisungsuntersuchung angenommen, verlangen die schweizerischen Ausführungsbestimmungen ein Drehmoment-Begrenzungsorgan zwischen Antrieb und Zahnrad, das nicht zwischen dem Bremsorgan der mechanischen Anhaltebremse und dem Zahnrad liegen darf.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q3", "fundstelle": "Abschnitt Elektrische und dieselelektrische Triebfahrzeuge"},
+            {"quellen_id": "Q1", "fundstelle": "AB 54.2.b.1 Ziff. 2 und 2.1"}
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P7",
+          "text": "Bei gemischtem Betrieb wirken Antrieb und Bremse je nach Abschnitt über Laufräder oder Zahnräder. Beim verkuppelten Antrieb ergänzt ein Adhäsionsteil den Zahnradantrieb; eine Adhäsionskupplung kuppelt den Triebradsatz auf der Zahnstange ab. Beim getrennten Antrieb haben Zahnrad und Laufräder eigene Fahrmotoren; weil die richtige Zahnraddrehzahl vor der Einfahrt nicht gewährleistet ist, ist eine Synchronisierungseinrichtung unumgänglich. Der Differentialantrieb teilt das Motordrehmoment in einem Verteildifferential auf, wird bei neuen Fahrzeugen aber nicht mehr verwendet. Reine Zahnradbahnen brauchen Zahnstangen auf allen Gleisen.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q3", "fundstelle": "Abschnitte Verkuppelter Antrieb, Getrennter Adhäsions- und Zahnradantrieb, Differentialantrieb"},
+            {"quellen_id": "Q4", "fundstelle": "Abschnitt Rack-and-adhesion or pure-rack"}
+          ],
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P8",
+          "text": "Das Antriebssystem gliedert sich in den Zahnradantrieb mit Traktionsmaschine, Getriebe, Drehmoment-Begrenzungsorgan und Triebzahnrad, den Adhäsionsantrieb mit Adhäsionskupplung, Synchronisierungseinrichtung oder Verteildifferential sowie den Traktionsstromrichter; dieselelektrische Fahrzeuge haben zusätzlich einen Verbrennungsmotor. Die Leistung fließt vom Stromrichter bis zum Triebzahnrad, die Reaktion stützt sich am Drehgestell ab; bei Talfahrt bremst die Traktionsmaschine generatorisch. Vor der Einfahrt gibt die Synchronisierungseinrichtung dem Stromrichter die Solldrehzahl vor.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": ["P6", "P7", "Ein Drehstrom-Fahrmotor an einer Fahrleitung braucht einen Stromrichter", "Q2 (Abschnitt Umweltaspekte: elektrische Rekuperationsbremse bei talfahrenden Zügen)"],
+            "schluss": "Der Zahnradantrieb wandelt elektrische in formschlüssig übertragene Zugkraft; bei Talfahrt kehrt sich der Leistungsfluss um."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Energieversorgungssystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E22",
+      "absaetze": [
+        {
+          "absatz_id": "P9",
+          "text": "Elektrische Zahnradbahnen nutzen Gleichstrom, Einphasenwechselstrom, dessen Fahrzeuge einen schweren Transformator benötigen, oder Drehstrom, der zweipolige Oberleitungen verlangt, aber einfache Rekuperationsbremsen erlaubt; daneben gibt es dieselbetriebene Triebfahrzeuge. Der Energieverbrauch ist beträchtlich höher als im Adhäsionsbetrieb, ein Teil lässt sich bei der Talfahrt durch Rekuperation zurückgewinnen. Elektrische Antriebe sind in der Erstellung teurer als Dieselbetrieb, haben aber einen besseren Wirkungsgrad, sind lokal abgasfrei und leiser.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q3", "fundstelle": "Einleitung; Abschnitt Allgemeines"},
+            {"quellen_id": "Q2", "fundstelle": "Abschnitt Umweltaspekte"}
+          ],
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P10",
+          "text": "Das Energieversorgungssystem elektrischer Fahrzeuge besteht aus der Fahrleitungsanbindung mit Stromabnehmer, Hauptschalter und bei Wechselstrom Haupttransformator sowie aus Hilfsbetriebeumrichter und Bordnetzbatterie; bei Drehstrom ist die Stromabnahme zweipolig. Dieselelektrische Fahrzeuge ersetzen sie durch die Dieselstromerzeugung mit Kraftstofftank und vom Verbrennungsmotor angetriebenem Generator. Die Energie fließt zum Traktionsstromrichter und über den Hilfsbetriebeumrichter ins Bordnetz. Die Bordnetzbatterie versorgt bei Ausfall der Fahrleitungsspannung Überwachung und Bremsauslösung.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": ["P9", "Q1 (AB 54.2.b.2 Ziff. 1.1.4: Räumung der Zahnstangenstrecke bei Ausfall der Fahrdrahtspannung)", "Ein Fahrzeug mit Fahrleitungsantrieb braucht Stromabnahme, Schutzschaltung und Hilfsenergie"],
+            "schluss": "Die Energieversorgung koppelt Fahrleitung oder Dieselaggregat an Antrieb und Bordnetz und puffert die Sicherheitsfunktionen."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Bremssystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E32",
+      "absaetze": [
+        {
+          "absatz_id": "P11",
+          "text": "Nach den schweizerischen Ausführungsbestimmungen, die weltweit fast alle Bahnen und Behörden akzeptieren, braucht jede Zugskomposition eine Beharrungsbremse und zwei unabhängige mechanische Anhaltebremsen für die Talfahrt, von denen mindestens eine eine reine Zahnradbremse ist; gemeinsam sind beiden nur die Zahnräder, und jede muss den Zug allein anhalten. Zulässig sind zwei Zahnradbremsen, eine kombinierte Zahnrad- und Adhäsionsbremse mit Zahnradbremse oder bis 90 ‰ eine Adhäsionsbremse mit Zahnradbremse. Drehgestell-Triebfahrzeuge nutzen Getriebebremse und Zahnradbremse; ein Ansprechen beider Bremssysteme muss verhindert werden.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q1", "fundstelle": "AB 54.2.b.2 Ziff. 1.1, 1.2, 1.2.1, 1.2.3, 2.1 und 2.2"},
+            {"quellen_id": "Q3", "fundstelle": "Abschnitt Sicherheit und Bremsen; Abschnitt Bremsen"}
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P12",
+          "text": "Als Beharrungsbremse gelten Widerstands- und Rekuperationsbremse, Motorbremse, hydrodynamische Bremsen und Gegendruckbremse; bei Ausfall der Fahrdrahtspannung muss sie die Räumung der Strecke ermöglichen. Umrichterfahrzeuge verbinden dazu im Störfall die Fahrmotoren mit Bremswiderständen und Filterkondensatoren zu einer selbsterregten, nicht regelbaren Bremse. Eine Rücklaufsicherung verhindert bei der Bergfahrt das Rückwärtsrollen, als Klinkenbremse oder als Vorrichtung, die auf die Fahrrichtungsänderung reagiert. Fahrzeuge für gemischten Betrieb haben zusätzlich eine Adhäsionsbremse.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q1", "fundstelle": "AB 54.2.b.2 Ziff. 1.1.2 und 1.1.4; AB 54.2.b.1 Ziff. 4 und 4.1"},
+            {"quellen_id": "Q3", "fundstelle": "Abschnitt Bremsen; Abschnitt Selbsterregte Beharrungsbremse für Umrichterfahrzeuge"}
+          ],
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P13",
+          "text": "Das Bremssystem gliedert sich in die mechanischen Anhaltebremsen mit Getriebebremse, Zahnradbremse, Bremszahnrad und Klinkenbremse, die Beharrungsbremse mit Bremswiderstand und Selbsterregungsschaltung, die Adhäsionsbremse und bei steilen Adhäsionsabschnitten die Magnetschienenbremse. Bei der Talfahrt leitet die Beharrungsbremse die Lageenergie elektrisch in Fahrleitung oder Bremswiderstand, die Anhaltebremsen leiten ihr Moment über das Bremszahnrad in die Zahnstange. Schnittstellen bestehen zur auslösenden Sicherheitsbaugruppe, zu Hydraulikaggregat und Druckluftanlage und zu den Wagen.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": ["P11", "P12", "Q3 (Abschnitt Bremsen: Magnetschienenbremse bei steilen Adhäsionsstrecken)", "Q1 (AB 54.2.b.2 Ziff. 1.2.3.1: hydraulische Betätigung der Bremsorgane)"],
+            "schluss": "Dauerbremsung erfolgt elektrisch, das Anhalten formschlüssig über das Bremszahnrad; Betätigung und Auslösung kommen aus anderen Hauptsystemen."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Führerstand",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E43",
+      "absaetze": [
+        {
+          "absatz_id": "P14",
+          "text": "Auf Bahnen mit gemischtem Betrieb stellt der Triebfahrzeugführer den Wechsel zwischen Adhäsion und Zahnrad am Führertisch um; Gleismagnete oder Eurobalisen an den Zahnstangenein- und -ausfahrten überwachen die richtige Umstellung. Nach den schweizerischen Ausführungsbestimmungen muss in jedem Führerstand eine Schnellbremsung mit selbsttätiger Traktionsabschaltung möglich und im besetzten Führerstand eine Geschwindigkeitsanzeige vorhanden sein. In den engen Führerständen von Schmalspurfahrzeugen fehlt oft der Platz für ein genormtes Bediengerät der Zugbeeinflussung.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q3", "fundstelle": "Abschnitt Überwachungen; Abschnitt Sicherungs- und Signalanlagen"},
+            {"quellen_id": "Q1", "fundstelle": "AB 50.1 Ziff. 13.5 und 15"}
+          ],
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P15",
+          "text": "Der Führerstand besteht aus dem Führertisch mit Bedienelementen für Zug- und Bremskraft, Betriebsartenschalter und Anzeigeelementen sowie dem Führersitz. Triebwagen haben an beiden Enden einen Führerstand; geschobene Züge können bergseitig von einem Steuerwagen geführt werden. Die Eingaben gehen über den Fahrzeugbus an das Fahrzeugmanagement, Zustand, Betriebsart und Geschwindigkeit kommen auf die Anzeigeelemente zurück.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": ["P14", "Q3 (Bildunterschrift Wengernalpbahn: Triebwagen mit Steuerwagen)", "Jede Fahrereingabe braucht ein Bedienelement und einen Weg zur ausführenden Steuerung"],
+            "schluss": "Der Führerstand bündelt Fahr-, Brems- und Betriebsartenbedienung und bezieht seine Anzeigen aus der Fahrzeugsteuerung."
+          },
+          "sicherheit": "gering",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Aufbau und Ladung",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E49",
+      "absaetze": [
+        {
+          "absatz_id": "P16",
+          "text": "Für die Bremsbemessung ist die zulässige Zuladung maßgebend: Reisende nach angeschriebenen Sitz- und Stehplätzen, Güter und Schnee. Die schweizerischen Ausführungsbestimmungen setzen für Zahnradbahnen 6 Stehplätze je Quadratmeter und 75 kg je Person an. Die Wagen unterscheiden sich grundsätzlich nicht von denen der Adhäsionsbahnen, sind aber in der Regel mit einem Bremszahnrad ausgestattet. Güterwagen gibt es auch bei reinen Personenbahnen, weil Material zu schwer zugänglichen Baustellen oft nicht auf der Straße transportiert werden kann.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q1", "fundstelle": "AB 47.1 Ziff. 2.7.3; AB 54.2.b.2 Ziff. 2.2.1.1.1"},
+            {"quellen_id": "Q3", "fundstelle": "Abschnitt Personen- und Güterwagen"}
+          ],
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P17",
+          "text": "Aufbau und Ladung umfassen den Fahrgastraum mit Fahrgastsitzen und Stehplatzfläche, das Gepäck- und Güterabteil und bei lokbespannten Zügen den Vorstellwagen. Die Zuladung wirkt als Last auf den Wagenkasten und bestimmt die Bremskraft, die Anhalte- und Beharrungsbremse aufbringen müssen; zusätzliche Stehplatzfläche erhöht so die Anforderungen an das Bremssystem. Güter- und Dienstwagen ohne Bremszahnrad werden bergseitig geschoben.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": ["P16", "P4", "Q3 (Abschnitt Personen- und Güterwagen: Wagen ohne Bremszahnrad werden bergwärts geschoben)"],
+            "schluss": "Die Nutzlast ist Bemessungsgröße für Struktur und Bremse; ungebremste Wagen erzwingen eine bergseitige Einreihung."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Elektrik und Elektronik",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E55",
+      "absaetze": [
+        {
+          "absatz_id": "P18",
+          "text": "Elektrik und Elektronik umfassen Niedervolt-Bordnetz, Leitungssatz und Fahrzeugbus. Das Bordnetz wird vom Hilfsbetriebeumrichter gespeist, von der Bordnetzbatterie gestützt und versorgt Steuergeräte, Sicherheitsbaugruppe, Leuchten, Bremsventile und gegebenenfalls die Magnetschienenbremse. Da die sicherheitsrelevanten Funktionen redundant auszuführen sind, brauchen Sicherheitsbaugruppe und Bremsauslösung getrennt abgesicherte Stromkreise und direkte Verdrahtung. Der Fahrzeugbus verbindet Führertisch, Fahrzeugmanagement, Traktionsstromrichter, Diagnose und Fahrdatenregistrierung.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": ["Q1 (AB 50.1 Ziff. 13.4.4: sicherheitsrelevante Funktionen redundant)", "Q1 (AB 54.2.b.1 Ziff. 3.8: Bremsaktivierung möglichst direkt und rasch)", "P10"],
+            "schluss": "Das Bordnetz verteilt Hilfsenergie, der Bus die Daten; Sicherheitsfunktionen erhalten eigene, redundante Versorgungs- und Auslösewege."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrzeugsteuerung und Information",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E59",
+      "absaetze": [
+        {
+          "absatz_id": "P19",
+          "text": "Mit der Betriebsartenumschaltung zwischen Adhäsion und Zahnrad werden auf dem Triebfahrzeug umfangreiche, teils sicherheitsrelevante Funktionsänderungen vorgenommen. Triebfahrzeuge und Steuerwagen brauchen nach den schweizerischen Ausführungsbestimmungen eine Fahrdatenregistrierung mit bleibender Aufzeichnung des Geschwindigkeitsverlaufs und der Signalübertragung der Zugbeeinflussung; ob weitere Betätigungen wie die Getriebeumschaltung bei Zahnradbahnen registriert werden, wird im Zulassungsverfahren entschieden.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q3", "fundstelle": "Abschnitt Überwachungen"},
+            {"quellen_id": "Q1", "fundstelle": "AB 50.1 Ziff. 15, 15.2.2 und 15.2.3"}
+          ],
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P20",
+          "text": "Fahrzeugsteuerung und Information setzen die Betriebsart um: Das Fahrzeugmanagement verteilt bei gemischtem Antrieb die Zugkraft, steuert die Synchronisierung, schaltet Bremskraftanteile um und meldet Zustände an die Anzeigeelemente. Die Diagnose sammelt Fehler- und Wartungsdaten zu Bremsen, Zahnradantrieben und Sicherheitsbaugruppe. Die sicherheitsrelevanten Überwachungen liegen nicht im Fahrzeugmanagement, sondern in der Sicherheitsbaugruppe.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": ["P7", "P19", "Q1 (AB 50.1 Ziff. 13.4.4: Sicherheitsfunktionen in einer Sicherheitsbaugruppe)"],
+            "schluss": "Die Fahrzeugsteuerung koordiniert betriebsartabhängige Funktionen, die Sicherheitsfunktionen bleiben davon getrennt."
+          },
+          "sicherheit": "gering",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrerassistenz und Sicherheit",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E63",
+      "absaetze": [
+        {
+          "absatz_id": "P21",
+          "text": "Für Zahnradbahnfahrzeuge verlangen die schweizerischen Ausführungsbestimmungen eine redundant ausgeführte Sicherheitsbaugruppe für Betriebsartenüberwachung, Rückrollschutz, Übergeschwindigkeitsüberwachung und -auslösung sowie Verzögerungsüberwachung. Der Übergeschwindigkeitsauslöser bringt den Zug mit einer mechanischen Anhaltebremse selbsttätig zum Stillstand, sobald talwärts die zulässige Geschwindigkeit überschritten wird; reicht die Verzögerung nicht, wird zusätzlich die andere Anhaltebremse aktiviert. Er wird schlupffrei von einem Trieb- oder Bremszahnrad angetrieben. Auch die Sicherheitssteuerung kann eine Schnellbremsung auslösen.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q1", "fundstelle": "AB 50.1 Ziff. 13.4.4; AB 54.2.b.1 Ziff. 3, 3.2 und 3.7"},
+            {"quellen_id": "Q3", "fundstelle": "Abschnitt Überwachungen"}
+          ],
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P22",
+          "text": "Fahrerassistenz und Sicherheit bestehen aus der Sicherheitsbaugruppe mit Übergeschwindigkeitsauslöser, Betriebsartenüberwachung, Rückrollschutz und Verzögerungsüberwachung sowie der Sicherheitssteuerung und dem Fahrzeuggerät der Zugbeeinflussung. Die Zahnraddrehung liefert Geschwindigkeit und Fahrrichtung; die Sicherheitsbaugruppe vergleicht sie mit Grenzwerten, die Betriebsart mit der Gleisinformation, und löst bei Abweichung eine Anhaltebremse aus.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": ["P21", "P14", "Eine Überwachung braucht Messgröße, Sollwert und Stellglied"],
+            "schluss": "Zahnrad als Messglied, Sicherheitsbaugruppe als Vergleicher und Anhaltebremse als Stellglied bilden einen eigenen Sicherheitskreis."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Beleuchtung und Sicht",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E71",
+      "absaetze": [
+        {
+          "absatz_id": "P23",
+          "text": "Beleuchtung und Sicht umfassen Scheinwerfer, Signalleuchten und Scheibenwischer. Da reine Zahnradbahnen häufig im Folgezugbetrieb mit Fahrt auf Sicht verkehren, muss der Triebfahrzeugführer Strecke und vorausfahrenden Zug erkennen; das bestimmt Ausleuchtung und Wischfeld. Signalleuchten kennzeichnen Spitze und Schluss, Folgezugtafeln oder Leuchtzeichen zeigen dem Gegenverkehr weitere folgende Züge an. Die Verbraucher hängen am Niedervolt-Bordnetz.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": ["Q2 (Abschnitt Betrieb: Folgezugbetrieb mit Fahrt auf Sicht, Folgezugtafeln)", "Q3 (Abschnitt Sicherungs- und Signalanlagen: Folgefahrten auf Sicht)", "Fahrt auf Sicht setzt freie, ausgeleuchtete Sicht nach vorn voraus"],
+            "schluss": "Sicht- und Signaleinrichtungen sind auf den Folgezugbetrieb auszulegen."
+          },
+          "sicherheit": "gering",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Thermomanagement",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E75",
+      "absaetze": [
+        {
+          "absatz_id": "P24",
+          "text": "Das Thermomanagement umfasst den Kühlkreislauf für Traktionsstromrichter und Traktionsmaschine, den Bremswiderstandslüfter und die vom Hilfsbetriebeumrichter gespeiste Heiz- und Klimaanlage für den Fahrgastraum. Bei der Bergfahrt läuft der Antrieb lange mit hoher Zugkraft und geringer Geschwindigkeit, bei der Talfahrt setzt der Bremswiderstand Lageenergie in Wärme um. Die mechanischen Anhaltebremsen taugen thermisch nicht als Dauerbremse. Große Klimaunterschiede und rauer Winterbetrieb verlangen eine leistungsfähige Heizung.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": ["Q3 (Abschnitt Bremsen: Talfahrtgeschwindigkeit durch thermische Leistungsfähigkeit begrenzt; mechanische Bremse nicht als Beharrungsbremse)", "Q3 (Abschnitt Allgemeines: große Klimaunterschiede, rauer Winterbetrieb)", "P13"],
+            "schluss": "Wärme fällt vor allem in Antrieb und Bremswiderstand an und muss aktiv abgeführt werden."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Neben- und Versorgungssysteme",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E79",
+      "absaetze": [
+        {
+          "absatz_id": "P25",
+          "text": "Neben- und Versorgungssysteme liefern die Hilfsenergie der Bremsbetätigung. Kompressor für Druckluft und Druckluftbehälter versorgen Adhäsionsbremse und automatische Bremse im gemischten Betrieb; ein Hydraulikaggregat betätigt oder lüftet hydraulische Anhaltebremsen. Weil beide Anhaltebremsen unabhängig sein müssen, brauchen hydraulische Bremssysteme getrennte Kreise mit eigenen Rücklaufleitungen. Ob Druckluft, Hydraulik oder beides nötig ist, folgt aus der Bremsbauart.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": ["Q1 (AB 54.2.b.2 Ziff. 1.2.3.1: separate Rücklaufleitungen je Bremssystem)", "Q3 (Abschnitt Bremsen: automatische Bremse als regulierbare Anhaltebremse auf geringeren Neigungen)", "P11"],
+            "schluss": "Art und Aufteilung der Hilfsenergiequellen folgen aus der Zuordnung der Bremssysteme."
+          },
+          "sicherheit": "gering",
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Zusammenfassung der obersten Ebene",
+      "abschnittstyp": "gesamtsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P26",
+          "text": "Auf oberster Ebene besteht das Zahnradbahnfahrzeug aus Fahrzeugstruktur und Fahrwerk, Antriebssystem, Energieversorgungssystem, Bremssystem, Führerstand, Aufbau und Ladung, Elektrik und Elektronik, Fahrzeugsteuerung und Information, Fahrerassistenz und Sicherheit, Beleuchtung und Sicht, Thermomanagement sowie Neben- und Versorgungssystemen. Ein Lenksystem entfällt. Den Kern bilden Zahnradantrieb, Zahnradbremse und Sicherheitsbaugruppe am gemeinsamen Zahneingriff; reiner oder gemischter Betrieb verändert Antrieb, Bremse, Führerstand und Überwachung zugleich.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": ["P5", "P8", "P11", "P21"],
+            "schluss": "Die Fahrzeugart wird durch den gemeinsamen Zahneingriff von Antrieb, Bremse und Überwachung geprägt."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Modellierungsbezug",
+      "abschnittstyp": "modellierung",
+      "absaetze": [
+        {
+          "absatz_id": "P27",
+          "text": "In SysML bildet der Block Zahnradbahnfahrzeug das Gesamtsystem mit den Hauptsystemen als Teilen. Dekompositionspfade sind etwa Antriebssystem → Zahnradantrieb → Getriebe → Drehmoment-Begrenzungsorgan → Triebzahnrad, Bremssystem → Mechanische Anhaltebremsen → Zahnradbremse → Bremszahnrad, Fahrerassistenz und Sicherheit → Sicherheitsbaugruppe → Übergeschwindigkeitsauslöser sowie Energieversorgungssystem → Fahrleitungsanbindung → Stromabnehmer. Ports bilden Zahneingriff, Rad-Schiene-Kontakt, Fahrleitung, Gleisinformation und Kupplung ab. Block Definition Diagrams zeigen die Struktur, Internal Block Diagrams die Flüsse, Zustandsdiagramme die Betriebsarten sowie Berg- und Talfahrt.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": ["P8", "P13", "P22", "P10"],
+            "schluss": "Die Zerlegung des Artikels lässt sich unmittelbar als Blockhierarchie mit Ports und Zustandsmodell abbilden."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Flüsse",
+      "abschnittstyp": "fluesse",
+      "absaetze": [
+        {
+          "absatz_id": "P28",
+          "text": "Elektrisch: Fahrleitungsanbindung oder Dieselstromerzeugung an Traktionsstromrichter und Hilfsbetriebeumrichter, Bremsleistung zurück in Fahrleitung oder Bremswiderstand. Mechanisch: Triebzahnrad an Zahnstange, Zahnrad an Übergeschwindigkeitsauslöser. Information: Sicherheitsbaugruppe an Zahnradbremse, Führertisch über Fahrzeugbus an Fahrzeugmanagement. Thermisch: Kühlkreislauf und Bremswiderstandslüfter. Fluidisch: Hydraulikaggregat und Druckluftbehälter an die Bremsen.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": ["P8", "P10", "P13", "P18", "P22", "P24", "P25"],
+            "schluss": "Die Flüsse verbinden Energieversorgung, Antrieb, Bremse und Sicherheitskreis über benennbare Schnittstellen."
+          },
+          "sicherheit": "hoch",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Perspektiven",
+      "abschnittstyp": "perspektiven",
+      "absaetze": [
+        {
+          "absatz_id": "P29",
+          "text": "Funktionale Zuordnung:Fahrzeuglasten tragen – Wagenkasten, Drehgestell, Radsatz, Federung; Fahrzeug im Gleis führen – Radsatz, Drehgestell; Insassen schützen – Wagenkasten, Einstiegstüren; Antriebsleistung erzeugen – Traktionsstromrichter, Traktionsmaschine, Verbrennungsmotor; Drehmoment übertragen – Getriebe, Drehmoment-Begrenzungsorgan, Adhäsionskupplung, Verteildifferential; Fahrzeug fortbewegen – Triebzahnrad, Radsatz; Zahnrad synchronisieren – Synchronisierungseinrichtung; Elektrische Energie verteilen – Fahrleitungsanbindung, Hilfsbetriebeumrichter, Niedervolt-Bordnetz, Leitungssatz; Energie speichern – Bordnetzbatterie, Kraftstofftank, Druckluftbehälter; Fahrzeug verzögern – Mechanische Anhaltebremsen, Beharrungsbremse, Adhäsionsbremse, Magnetschienenbremse; Bremsenergie zurückgewinnen – Traktionsmaschine, Traktionsstromrichter; Fahrzeug festhalten – Klinkenbremse, Zahnradbremse; Druckluft bereitstellen – Kompressor für Druckluft, Druckluftbehälter; Hydraulische Leistung bereitstellen – Hydraulikaggregat; Fahrereingaben erfassen – Bedienelemente, Betriebsartenschalter; Fahrerinformationen anzeigen – Anzeigeelemente; Ladung aufnehmen – Fahrgastsitze, Stehplatzfläche, Gepäck- und Güterabteil, Vorstellwagen; Daten übertragen – Fahrzeugbus; Fahrzeugzustand überwachen – Fahrzeugmanagement, Diagnose, Fahrdatenregistrierung; Zugfahrt überwachen – Sicherheitsbaugruppe, Sicherheitssteuerung, Fahrzeuggerät der Zugbeeinflussung; Fahrersicht sicherstellen – Scheibenwischer; Fahrzeugumgebung ausleuchten – Scheinwerfer; Lichtsignale abgeben – Signalleuchten; Betriebstemperatur regeln – Kühlkreislauf, Bremswiderstandslüfter; Innenraum klimatisieren – Heiz- und Klimaanlage.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": ["P5", "P8", "P10", "P13", "P15", "P17", "P18", "P20", "P22", "P23", "P24", "P25"],
+            "schluss": "Jede Funktion des Modellblocks ist mindestens einem ausführenden Element zugeordnet."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    }
+  ],
+  "modell": {
+    "elemente": [
+      {"id": "E1", "name": "Zahnradbahnfahrzeug", "typ": "gesamtsystem", "eltern_id": null, "absatz_ids": ["P2", "P26", "P27"]},
+      {"id": "E2", "name": "Fahrzeugstruktur und Fahrwerk", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P3", "P4", "P5"], "kategorie": "struktur_fahrwerk"},
+      {"id": "E3", "name": "Wagenkasten", "typ": "komponente", "eltern_id": "E2", "absatz_ids": ["P3", "P5"]},
+      {"id": "E4", "name": "Drehgestell", "typ": "subsystem", "eltern_id": "E2", "absatz_ids": ["P3", "P5"]},
+      {"id": "E5", "name": "Drehgestellrahmen", "typ": "komponente", "eltern_id": "E4", "absatz_ids": ["P5"]},
+      {"id": "E6", "name": "Radsatz", "typ": "komponente", "eltern_id": "E4", "absatz_ids": ["P5", "P6"]},
+      {"id": "E7", "name": "Federung", "typ": "komponente", "eltern_id": "E4", "absatz_ids": ["P5"]},
+      {"id": "E8", "name": "Zug- und Stoßvorrichtung", "typ": "komponente", "eltern_id": "E2", "absatz_ids": ["P4", "P5"]},
+      {"id": "E9", "name": "Einstiegstüren", "typ": "komponente", "eltern_id": "E2", "absatz_ids": ["P5"]},
+      {"id": "E10", "name": "Antriebssystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P6", "P7", "P8"], "kategorie": "antrieb"},
+      {"id": "E11", "name": "Zahnradantrieb", "typ": "subsystem", "eltern_id": "E10", "absatz_ids": ["P6", "P8"]},
+      {"id": "E12", "name": "Traktionsmaschine", "typ": "komponente", "eltern_id": "E11", "absatz_ids": ["P8"]},
+      {"id": "E13", "name": "Getriebe", "typ": "komponente", "eltern_id": "E11", "absatz_ids": ["P6", "P8"]},
+      {"id": "E14", "name": "Drehmoment-Begrenzungsorgan", "typ": "komponente", "eltern_id": "E11", "absatz_ids": ["P6", "P8"]},
+      {"id": "E15", "name": "Triebzahnrad", "typ": "komponente", "eltern_id": "E11", "absatz_ids": ["P6", "P8"]},
+      {"id": "E16", "name": "Adhäsionsantrieb", "typ": "subsystem", "eltern_id": "E10", "absatz_ids": ["P7", "P8"]},
+      {"id": "E17", "name": "Adhäsionskupplung", "typ": "komponente", "eltern_id": "E16", "absatz_ids": ["P7", "P8"]},
+      {"id": "E18", "name": "Synchronisierungseinrichtung", "typ": "komponente", "eltern_id": "E16", "absatz_ids": ["P7", "P8"]},
+      {"id": "E19", "name": "Verteildifferential", "typ": "komponente", "eltern_id": "E16", "absatz_ids": ["P7", "P8"]},
+      {"id": "E20", "name": "Traktionsstromrichter", "typ": "komponente", "eltern_id": "E10", "absatz_ids": ["P8"]},
+      {"id": "E21", "name": "Verbrennungsmotor", "typ": "komponente", "eltern_id": "E10", "absatz_ids": ["P8", "P10"]},
+      {"id": "E22", "name": "Energieversorgungssystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P9", "P10"], "kategorie": "energieversorgung"},
+      {"id": "E23", "name": "Fahrleitungsanbindung", "typ": "subsystem", "eltern_id": "E22", "absatz_ids": ["P10"]},
+      {"id": "E24", "name": "Stromabnehmer", "typ": "komponente", "eltern_id": "E23", "absatz_ids": ["P10"]},
+      {"id": "E25", "name": "Hauptschalter", "typ": "komponente", "eltern_id": "E23", "absatz_ids": ["P10"]},
+      {"id": "E26", "name": "Haupttransformator", "typ": "komponente", "eltern_id": "E23", "absatz_ids": ["P9", "P10"]},
+      {"id": "E27", "name": "Dieselstromerzeugung", "typ": "subsystem", "eltern_id": "E22", "absatz_ids": ["P10"]},
+      {"id": "E28", "name": "Kraftstofftank", "typ": "komponente", "eltern_id": "E27", "absatz_ids": ["P10"]},
+      {"id": "E29", "name": "Generator", "typ": "komponente", "eltern_id": "E27", "absatz_ids": ["P10"]},
+      {"id": "E30", "name": "Hilfsbetriebeumrichter", "typ": "komponente", "eltern_id": "E22", "absatz_ids": ["P10"]},
+      {"id": "E31", "name": "Bordnetzbatterie", "typ": "komponente", "eltern_id": "E22", "absatz_ids": ["P10"]},
+      {"id": "E32", "name": "Bremssystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P11", "P12", "P13"], "kategorie": "bremse"},
+      {"id": "E33", "name": "Mechanische Anhaltebremsen", "typ": "subsystem", "eltern_id": "E32", "absatz_ids": ["P11", "P13"]},
+      {"id": "E34", "name": "Getriebebremse", "typ": "komponente", "eltern_id": "E33", "absatz_ids": ["P11", "P13"]},
+      {"id": "E35", "name": "Zahnradbremse", "typ": "komponente", "eltern_id": "E33", "absatz_ids": ["P11", "P13"]},
+      {"id": "E36", "name": "Bremszahnrad", "typ": "komponente", "eltern_id": "E33", "absatz_ids": ["P13"]},
+      {"id": "E37", "name": "Klinkenbremse", "typ": "komponente", "eltern_id": "E33", "absatz_ids": ["P12", "P13"]},
+      {"id": "E38", "name": "Beharrungsbremse", "typ": "subsystem", "eltern_id": "E32", "absatz_ids": ["P11", "P12", "P13"]},
+      {"id": "E39", "name": "Bremswiderstand", "typ": "komponente", "eltern_id": "E38", "absatz_ids": ["P13"]},
+      {"id": "E40", "name": "Selbsterregungsschaltung", "typ": "komponente", "eltern_id": "E38", "absatz_ids": ["P12", "P13"]},
+      {"id": "E41", "name": "Adhäsionsbremse", "typ": "komponente", "eltern_id": "E32", "absatz_ids": ["P11", "P12", "P13"]},
+      {"id": "E42", "name": "Magnetschienenbremse", "typ": "komponente", "eltern_id": "E32", "absatz_ids": ["P13"]},
+      {"id": "E43", "name": "Führerstand", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P14", "P15"], "kategorie": "bedienraum"},
+      {"id": "E44", "name": "Führertisch", "typ": "subsystem", "eltern_id": "E43", "absatz_ids": ["P14", "P15"]},
+      {"id": "E45", "name": "Bedienelemente", "typ": "komponente", "eltern_id": "E44", "absatz_ids": ["P15"]},
+      {"id": "E46", "name": "Betriebsartenschalter", "typ": "komponente", "eltern_id": "E44", "absatz_ids": ["P15"]},
+      {"id": "E47", "name": "Anzeigeelemente", "typ": "komponente", "eltern_id": "E44", "absatz_ids": ["P15"]},
+      {"id": "E48", "name": "Führersitz", "typ": "komponente", "eltern_id": "E43", "absatz_ids": ["P15"]},
+      {"id": "E49", "name": "Aufbau und Ladung", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P16", "P17"], "kategorie": "aufbau_nutzlast"},
+      {"id": "E50", "name": "Fahrgastraum", "typ": "subsystem", "eltern_id": "E49", "absatz_ids": ["P17"]},
+      {"id": "E51", "name": "Fahrgastsitze", "typ": "komponente", "eltern_id": "E50", "absatz_ids": ["P17"]},
+      {"id": "E52", "name": "Stehplatzfläche", "typ": "komponente", "eltern_id": "E50", "absatz_ids": ["P17"]},
+      {"id": "E53", "name": "Gepäck- und Güterabteil", "typ": "komponente", "eltern_id": "E49", "absatz_ids": ["P17"]},
+      {"id": "E54", "name": "Vorstellwagen", "typ": "komponente", "eltern_id": "E49", "absatz_ids": ["P5", "P17"]},
+      {"id": "E55", "name": "Elektrik und Elektronik", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P18"], "kategorie": "elektrik_elektronik"},
+      {"id": "E56", "name": "Niedervolt-Bordnetz", "typ": "komponente", "eltern_id": "E55", "absatz_ids": ["P18"]},
+      {"id": "E57", "name": "Leitungssatz", "typ": "komponente", "eltern_id": "E55", "absatz_ids": ["P18"]},
+      {"id": "E58", "name": "Fahrzeugbus", "typ": "komponente", "eltern_id": "E55", "absatz_ids": ["P18"]},
+      {"id": "E59", "name": "Fahrzeugsteuerung und Information", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P19", "P20"], "kategorie": "steuerung_information"},
+      {"id": "E60", "name": "Fahrzeugmanagement", "typ": "komponente", "eltern_id": "E59", "absatz_ids": ["P20"]},
+      {"id": "E61", "name": "Fahrdatenregistrierung", "typ": "komponente", "eltern_id": "E59", "absatz_ids": ["P19"]},
+      {"id": "E62", "name": "Diagnose", "typ": "komponente", "eltern_id": "E59", "absatz_ids": ["P20"]},
+      {"id": "E63", "name": "Fahrerassistenz und Sicherheit", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P21", "P22"], "kategorie": "assistenz_sicherheit"},
+      {"id": "E64", "name": "Sicherheitsbaugruppe", "typ": "subsystem", "eltern_id": "E63", "absatz_ids": ["P21", "P22"]},
+      {"id": "E65", "name": "Übergeschwindigkeitsauslöser", "typ": "komponente", "eltern_id": "E64", "absatz_ids": ["P21", "P22"]},
+      {"id": "E66", "name": "Betriebsartenüberwachung", "typ": "komponente", "eltern_id": "E64", "absatz_ids": ["P21", "P22"]},
+      {"id": "E67", "name": "Rückrollschutz", "typ": "komponente", "eltern_id": "E64", "absatz_ids": ["P21", "P22"]},
+      {"id": "E68", "name": "Verzögerungsüberwachung", "typ": "komponente", "eltern_id": "E64", "absatz_ids": ["P21", "P22"]},
+      {"id": "E69", "name": "Sicherheitssteuerung", "typ": "komponente", "eltern_id": "E63", "absatz_ids": ["P21", "P22"]},
+      {"id": "E70", "name": "Fahrzeuggerät der Zugbeeinflussung", "typ": "komponente", "eltern_id": "E63", "absatz_ids": ["P22"]},
+      {"id": "E71", "name": "Beleuchtung und Sicht", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P23"], "kategorie": "beleuchtung_sicht"},
+      {"id": "E72", "name": "Scheinwerfer", "typ": "komponente", "eltern_id": "E71", "absatz_ids": ["P23"]},
+      {"id": "E73", "name": "Signalleuchten", "typ": "komponente", "eltern_id": "E71", "absatz_ids": ["P23"]},
+      {"id": "E74", "name": "Scheibenwischer", "typ": "komponente", "eltern_id": "E71", "absatz_ids": ["P23"]},
+      {"id": "E75", "name": "Thermomanagement", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P24"], "kategorie": "thermomanagement"},
+      {"id": "E76", "name": "Kühlkreislauf", "typ": "komponente", "eltern_id": "E75", "absatz_ids": ["P24"]},
+      {"id": "E77", "name": "Bremswiderstandslüfter", "typ": "komponente", "eltern_id": "E75", "absatz_ids": ["P24"]},
+      {"id": "E78", "name": "Heiz- und Klimaanlage", "typ": "komponente", "eltern_id": "E75", "absatz_ids": ["P24"]},
+      {"id": "E79", "name": "Neben- und Versorgungssysteme", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P25"], "kategorie": "nebensysteme"},
+      {"id": "E80", "name": "Kompressor für Druckluft", "typ": "komponente", "eltern_id": "E79", "absatz_ids": ["P25"]},
+      {"id": "E81", "name": "Druckluftbehälter", "typ": "komponente", "eltern_id": "E79", "absatz_ids": ["P25"]},
+      {"id": "E82", "name": "Hydraulikaggregat", "typ": "komponente", "eltern_id": "E79", "absatz_ids": ["P25"]}
+    ],
+    "funktionen": [
+      {"id": "F1", "name": "Fahrzeuglasten tragen", "ausgefuehrt_von": ["E3", "E4", "E6", "E7"], "absatz_ids": ["P5", "P29"]},
+      {"id": "F2", "name": "Fahrzeug im Gleis führen", "ausgefuehrt_von": ["E6", "E4"], "absatz_ids": ["P5", "P29"]},
+      {"id": "F3", "name": "Insassen schützen", "ausgefuehrt_von": ["E3", "E9"], "absatz_ids": ["P5", "P29"]},
+      {"id": "F4", "name": "Antriebsleistung erzeugen", "ausgefuehrt_von": ["E20", "E12", "E21"], "absatz_ids": ["P8", "P29"]},
+      {"id": "F5", "name": "Drehmoment übertragen", "ausgefuehrt_von": ["E13", "E14", "E17", "E19"], "absatz_ids": ["P6", "P7", "P29"]},
+      {"id": "F6", "name": "Fahrzeug fortbewegen", "ausgefuehrt_von": ["E15", "E6"], "absatz_ids": ["P8", "P29"]},
+      {"id": "F7", "name": "Zahnrad synchronisieren", "ausgefuehrt_von": ["E18"], "absatz_ids": ["P7", "P8", "P29"]},
+      {"id": "F8", "name": "Elektrische Energie verteilen", "ausgefuehrt_von": ["E23", "E30", "E56", "E57"], "absatz_ids": ["P10", "P18", "P29"]},
+      {"id": "F9", "name": "Energie speichern", "ausgefuehrt_von": ["E31", "E28", "E81"], "absatz_ids": ["P10", "P25", "P29"]},
+      {"id": "F10", "name": "Fahrzeug verzögern", "ausgefuehrt_von": ["E33", "E38", "E41", "E42"], "absatz_ids": ["P11", "P13", "P29"]},
+      {"id": "F11", "name": "Bremsenergie zurückgewinnen", "ausgefuehrt_von": ["E12", "E20"], "absatz_ids": ["P9", "P8", "P29"]},
+      {"id": "F12", "name": "Fahrzeug festhalten", "ausgefuehrt_von": ["E37", "E35"], "absatz_ids": ["P12", "P29"]},
+      {"id": "F13", "name": "Druckluft bereitstellen", "ausgefuehrt_von": ["E80", "E81"], "absatz_ids": ["P25", "P29"]},
+      {"id": "F14", "name": "Hydraulische Leistung bereitstellen", "ausgefuehrt_von": ["E82"], "absatz_ids": ["P25", "P29"]},
+      {"id": "F15", "name": "Fahrereingaben erfassen", "ausgefuehrt_von": ["E45", "E46"], "absatz_ids": ["P15", "P29"]},
+      {"id": "F16", "name": "Fahrerinformationen anzeigen", "ausgefuehrt_von": ["E47"], "absatz_ids": ["P15", "P29"]},
+      {"id": "F17", "name": "Ladung aufnehmen", "ausgefuehrt_von": ["E51", "E52", "E53", "E54"], "absatz_ids": ["P17", "P29"]},
+      {"id": "F18", "name": "Daten übertragen", "ausgefuehrt_von": ["E58"], "absatz_ids": ["P18", "P29"]},
+      {"id": "F19", "name": "Fahrzeugzustand überwachen", "ausgefuehrt_von": ["E60", "E62", "E61"], "absatz_ids": ["P19", "P20", "P29"]},
+      {"id": "F20", "name": "Zugfahrt überwachen", "ausgefuehrt_von": ["E64", "E69", "E70"], "absatz_ids": ["P21", "P22", "P29"]},
+      {"id": "F21", "name": "Fahrersicht sicherstellen", "ausgefuehrt_von": ["E74"], "absatz_ids": ["P23", "P29"]},
+      {"id": "F22", "name": "Fahrzeugumgebung ausleuchten", "ausgefuehrt_von": ["E72"], "absatz_ids": ["P23", "P29"]},
+      {"id": "F23", "name": "Lichtsignale abgeben", "ausgefuehrt_von": ["E73"], "absatz_ids": ["P23", "P29"]},
+      {"id": "F24", "name": "Betriebstemperatur regeln", "ausgefuehrt_von": ["E76", "E77"], "absatz_ids": ["P24", "P29"]},
+      {"id": "F25", "name": "Innenraum klimatisieren", "ausgefuehrt_von": ["E78"], "absatz_ids": ["P24", "P29"]}
+    ],
+    "fluesse": [
+      {"id": "S1", "von": "E24", "nach": "E25", "art": "elektrisch", "medium": "Fahrleitungsstrom", "absatz_ids": ["P10"]},
+      {"id": "S2", "von": "E25", "nach": "E26", "art": "elektrisch", "medium": "Einphasenwechselstrom", "absatz_ids": ["P10"]},
+      {"id": "S3", "von": "E26", "nach": "E20", "art": "elektrisch", "medium": "Traktionsstrom", "absatz_ids": ["P10", "P28"], "schnittstelle": "Traktionsstromkreis"},
+      {"id": "S4", "von": "E25", "nach": "E30", "art": "elektrisch", "medium": "Fahrleitungsstrom", "absatz_ids": ["P10"]},
+      {"id": "S5", "von": "E20", "nach": "E12", "art": "elektrisch", "medium": "Drehstrom", "absatz_ids": ["P8", "P28"]},
+      {"id": "S6", "von": "E12", "nach": "E13", "art": "mechanisch", "medium": "Drehmoment", "absatz_ids": ["P8"]},
+      {"id": "S7", "von": "E13", "nach": "E14", "art": "mechanisch", "medium": "Drehmoment", "absatz_ids": ["P8"]},
+      {"id": "S8", "von": "E14", "nach": "E15", "art": "mechanisch", "medium": "Drehmoment", "absatz_ids": ["P8", "P28"]},
+      {"id": "S9", "von": "E15", "nach": "E5", "art": "mechanisch", "medium": "Zug- und Bremskraft", "absatz_ids": ["P5", "P8"], "schnittstelle": "Zahnradlagerung im Drehgestell"},
+      {"id": "S10", "von": "E5", "nach": "E3", "art": "mechanisch", "medium": "Längskräfte", "absatz_ids": ["P5"]},
+      {"id": "S11", "von": "E3", "nach": "E8", "art": "mechanisch", "medium": "Schub- und Zugkraft", "absatz_ids": ["P5"]},
+      {"id": "S12", "von": "E54", "nach": "E8", "art": "mechanisch", "medium": "Hangabtriebskraft des Vorstellwagens", "absatz_ids": ["P4", "P5"], "schnittstelle": "Zug- und Stoßvorrichtung zum Vorstellwagen"},
+      {"id": "S13", "von": "E12", "nach": "E20", "art": "elektrisch", "medium": "generatorische Bremsleistung", "absatz_ids": ["P8", "P13"]},
+      {"id": "S14", "von": "E20", "nach": "E39", "art": "elektrisch", "medium": "Bremsleistung", "absatz_ids": ["P13", "P28"], "schnittstelle": "Bremsstromkreis"},
+      {"id": "S15", "von": "E39", "nach": "E77", "art": "thermisch", "medium": "Abwärme", "absatz_ids": ["P24"], "schnittstelle": "Bremswiderstandskühlung"},
+      {"id": "S16", "von": "E20", "nach": "E76", "art": "thermisch", "medium": "Verlustwärme", "absatz_ids": ["P24"], "schnittstelle": "Kühlanschluss Traktionsstromrichter"},
+      {"id": "S17", "von": "E12", "nach": "E76", "art": "thermisch", "medium": "Verlustwärme", "absatz_ids": ["P24"], "schnittstelle": "Kühlanschluss Traktionsmaschine"},
+      {"id": "S18", "von": "E35", "nach": "E36", "art": "mechanisch", "medium": "Bremsmoment", "absatz_ids": ["P13"]},
+      {"id": "S19", "von": "E34", "nach": "E13", "art": "mechanisch", "medium": "Bremsmoment", "absatz_ids": ["P11", "P13"], "schnittstelle": "Bremstrommel am Antrieb"},
+      {"id": "S20", "von": "E15", "nach": "E65", "art": "mechanisch", "medium": "Zahnraddrehung", "absatz_ids": ["P21", "P22", "P28"], "schnittstelle": "Schlupffreier Auslöserantrieb"},
+      {"id": "S21", "von": "E64", "nach": "E35", "art": "information", "medium": "Bremsauslösung", "absatz_ids": ["P21", "P22", "P28"], "schnittstelle": "Bremsauslösung"},
+      {"id": "S22", "von": "E46", "nach": "E66", "art": "information", "medium": "Gewählte Betriebsart", "absatz_ids": ["P14", "P22"], "schnittstelle": "Betriebsartensignal"},
+      {"id": "S23", "von": "E70", "nach": "E66", "art": "information", "medium": "Gleisinformation zur Betriebsart", "absatz_ids": ["P22"]},
+      {"id": "S24", "von": "E45", "nach": "E58", "art": "information", "medium": "Fahr- und Bremsbefehle", "absatz_ids": ["P15", "P28"], "schnittstelle": "Fahrzeugbus"},
+      {"id": "S25", "von": "E58", "nach": "E60", "art": "information", "medium": "Fahr- und Bremsbefehle", "absatz_ids": ["P18", "P28"], "schnittstelle": "Fahrzeugbus"},
+      {"id": "S26", "von": "E60", "nach": "E20", "art": "information", "medium": "Zugkraftsollwert", "absatz_ids": ["P20", "P28"], "schnittstelle": "Fahrzeugbus"},
+      {"id": "S27", "von": "E60", "nach": "E47", "art": "information", "medium": "Zustand, Betriebsart, Geschwindigkeit", "absatz_ids": ["P15", "P20"], "schnittstelle": "Fahrzeugbus"},
+      {"id": "S28", "von": "E58", "nach": "E61", "art": "information", "medium": "Fahrdaten", "absatz_ids": ["P18"], "schnittstelle": "Fahrzeugbus"},
+      {"id": "S29", "von": "E58", "nach": "E62", "art": "information", "medium": "Fehler- und Zustandsdaten", "absatz_ids": ["P18", "P20"], "schnittstelle": "Fahrzeugbus"},
+      {"id": "S30", "von": "E30", "nach": "E56", "art": "elektrisch", "medium": "Bordnetzspannung", "absatz_ids": ["P10", "P18"], "schnittstelle": "Bordnetzeinspeisung"},
+      {"id": "S31", "von": "E56", "nach": "E31", "art": "elektrisch", "medium": "Ladestrom", "absatz_ids": ["P18"], "schnittstelle": "Batterieanschluss"},
+      {"id": "S32", "von": "E31", "nach": "E64", "art": "elektrisch", "medium": "Notversorgung", "absatz_ids": ["P10"], "schnittstelle": "Gepufferte Versorgung der Sicherheitsbaugruppe"},
+      {"id": "S33", "von": "E56", "nach": "E72", "art": "elektrisch", "medium": "Bordnetzspannung", "absatz_ids": ["P23"], "schnittstelle": "Bordnetz"},
+      {"id": "S34", "von": "E56", "nach": "E73", "art": "elektrisch", "medium": "Bordnetzspannung", "absatz_ids": ["P23"], "schnittstelle": "Bordnetz"},
+      {"id": "S35", "von": "E56", "nach": "E42", "art": "elektrisch", "medium": "Bordnetzspannung", "absatz_ids": ["P18"], "schnittstelle": "Bordnetz"},
+      {"id": "S36", "von": "E30", "nach": "E78", "art": "elektrisch", "medium": "Hilfsbetriebespannung", "absatz_ids": ["P24"], "schnittstelle": "Hilfsbetriebeversorgung"},
+      {"id": "S37", "von": "E78", "nach": "E50", "art": "thermisch", "medium": "Temperierte Luft", "absatz_ids": ["P24"], "schnittstelle": "Luftführung Fahrgastraum"},
+      {"id": "S38", "von": "E80", "nach": "E81", "art": "pneumatisch", "medium": "Druckluft", "absatz_ids": ["P25"]},
+      {"id": "S39", "von": "E81", "nach": "E41", "art": "pneumatisch", "medium": "Druckluft", "absatz_ids": ["P25", "P28"], "schnittstelle": "Bremsluftleitung"},
+      {"id": "S40", "von": "E82", "nach": "E35", "art": "hydraulisch", "medium": "Hydrauliköl", "absatz_ids": ["P13", "P25", "P28"], "schnittstelle": "Bremshydraulik"},
+      {"id": "S41", "von": "E28", "nach": "E21", "art": "stoff", "medium": "Dieselkraftstoff", "absatz_ids": ["P10"], "schnittstelle": "Kraftstoffleitung"},
+      {"id": "S42", "von": "E21", "nach": "E29", "art": "mechanisch", "medium": "Drehmoment", "absatz_ids": ["P10"], "schnittstelle": "Generatorwelle"},
+      {"id": "S43", "von": "E29", "nach": "E20", "art": "elektrisch", "medium": "Traktionsstrom", "absatz_ids": ["P10", "P28"], "schnittstelle": "Traktionsstromkreis"},
+      {"id": "S44", "von": "E13", "nach": "E17", "art": "mechanisch", "medium": "Drehmoment", "absatz_ids": ["P7", "P8"]},
+      {"id": "S45", "von": "E17", "nach": "E6", "art": "mechanisch", "medium": "Drehmoment", "absatz_ids": ["P7", "P8"], "schnittstelle": "Radsatzantrieb"},
+      {"id": "S46", "von": "E18", "nach": "E20", "art": "information", "medium": "Solldrehzahl des Zahnrads", "absatz_ids": ["P8"]},
+      {"id": "S47", "von": "E50", "nach": "E3", "art": "mechanisch", "medium": "Zuladung", "absatz_ids": ["P17"], "schnittstelle": "Einbau Fahrgastraum"},
+      {"id": "S48", "von": "E12", "nach": "E40", "art": "elektrisch", "medium": "Bremsleistung im Störfall", "absatz_ids": ["P12", "P13"], "schnittstelle": "Bremsstromkreis"},
+      {"id": "S49", "von": "E36", "nach": "E4", "art": "mechanisch", "medium": "Bremskraft", "absatz_ids": ["P13"], "schnittstelle": "Bremszahnradlagerung im Drehgestell"},
+      {"id": "S50", "von": "E69", "nach": "E33", "art": "information", "medium": "Schnellbremsbefehl", "absatz_ids": ["P21"], "schnittstelle": "Schnellbremsschleife"},
+      {"id": "S51", "von": "E24", "nach": "E20", "art": "elektrisch", "medium": "Gleichstrom oder Drehstrom", "absatz_ids": ["P10"], "schnittstelle": "Traktionsstromkreis"}
+    ],
+    "entfallene_kategorien": [
+      {"kategorie": "lenkung", "grund": "Das Zahnradbahnfahrzeug wird vom Gleis geführt; ein Lenksystem entfällt, die Spurführung übernehmen Radsätze und Drehgestelle (Funktion Fahrzeug im Gleis führen)."}
+    ],
+    "varianten": [
+      {
+        "id": "V1",
+        "element_id": "E10",
+        "bezeichnung": "Antriebskonzept für reinen oder gemischten Betrieb",
+        "alternativen": ["Reiner Zahnradantrieb mit nicht angetriebenen Laufrädern", "Verkuppelter Zahnrad- und Adhäsionsantrieb mit Adhäsionskupplung", "Getrennter Adhäsions- und Zahnradantrieb mit eigenen Fahrmotoren und Synchronisierungseinrichtung", "Differentialantrieb mit Verteildifferential"],
+        "auswahlkriterien": ["Anteil der Zahnstangenabschnitte an der Strecke", "Geschwindigkeit auf Adhäsionsabschnitten", "Größte Neigung", "Radverschleiß und Instandhaltungsaufwand", "Kosten mechanischer gegenüber elektrischer Komponenten"],
+        "auswirkungen": [
+          {"element_id": "E41", "beschreibung": "Adhäsionsbremse nur bei gemischtem Betrieb erforderlich"},
+          {"element_id": "E66", "beschreibung": "Betriebsartenüberwachung nur bei gemischtem Betrieb"},
+          {"element_id": "E46", "beschreibung": "Betriebsartenschalter am Führertisch nur bei gemischtem Betrieb"},
+          {"element_id": "E6", "beschreibung": "Zulässige Radreifenabnutzung und Höhenverstellung des Zahnrads je nach Kopplung von Zahnrad und Radsatz"},
+          {"element_id": "E60", "beschreibung": "Zugkraftaufteilung und Synchronisierung bei getrenntem Antrieb"},
+          {"element_id": "E42", "beschreibung": "Magnetschienenbremse bei steilen Adhäsionsabschnitten"}
+        ],
+        "absatz_ids": ["P7", "P8"]
+      },
+      {
+        "id": "V2",
+        "element_id": "E22",
+        "bezeichnung": "Energiequelle und Stromsystem",
+        "alternativen": ["Gleichstrom aus der Fahrleitung", "Einphasenwechselstrom mit Haupttransformator", "Drehstrom mit zweipoliger Fahrleitung", "Dieselelektrischer Betrieb mit Kraftstofftank, Verbrennungsmotor und Generator"],
+        "auswahlkriterien": ["Betriebslänge und Abstand der Unterwerke", "Fahrzeugmasse", "Rückspeisefähigkeit der Fahrleitung", "Lokale Emissionen und Lärm", "Vorhandene Infrastruktur"],
+        "auswirkungen": [
+          {"element_id": "E26", "beschreibung": "Haupttransformator nur bei Wechselstrom, mit Zusatzmasse"},
+          {"element_id": "E24", "beschreibung": "Zweipolige Stromabnahme bei Drehstrom"},
+          {"element_id": "E20", "beschreibung": "Eingangsstufe des Traktionsstromrichters je nach Stromsystem"},
+          {"element_id": "E21", "beschreibung": "Verbrennungsmotor nur bei dieselelektrischem Betrieb"},
+          {"element_id": "E38", "beschreibung": "Rekuperation nur bei aufnahmefähiger Fahrleitung, sonst Widerstands- oder Motorbremse"},
+          {"element_id": "E3", "beschreibung": "Masse und Einbauraum im Wagenkasten"}
+        ],
+        "absatz_ids": ["P9", "P10"]
+      },
+      {
+        "id": "V3",
+        "element_id": "E32",
+        "bezeichnung": "Zuordnung der mechanischen Anhaltebremsen zu den Bremssystemen",
+        "alternativen": ["Zwei Zahnradbremsen", "Kombinierte Zahnrad- und Adhäsionsbremse mit Zahnradbremse", "Adhäsionsbremse mit Zahnradbremse auf geringen Neigungen"],
+        "auswahlkriterien": ["Größte Neigung der Strecke", "Zugbildung und Verteilung der Bremsen auf die Wagen", "Adhäsionsverhältnisse und Radentlastung im Gefälle", "Instandhaltungsregime der Zugskomposition"],
+        "auswirkungen": [
+          {"element_id": "E54", "beschreibung": "Vorstellwagen und Wagen mit Bremszahnrad oder mit Adhäsionsbremse"},
+          {"element_id": "E4", "beschreibung": "Einbau von Bremszahnrädern in die Drehgestelle"},
+          {"element_id": "E81", "beschreibung": "Druckluftvorrat für den Adhäsionsanteil kombinierter Bremsen"},
+          {"element_id": "E64", "beschreibung": "Auslöselogik der Sicherheitsbaugruppe für die beiden Bremssysteme"}
+        ],
+        "absatz_ids": ["P11", "P13"]
+      },
+      {
+        "id": "V4",
+        "element_id": "E2",
+        "bezeichnung": "Zugbildung",
+        "alternativen": ["Triebwagen oder Triebzug mit verteilten Zahnradantrieben", "Zahnradlokomotive talseitig mit geschobenen Vorstellwagen", "Wendezug mit Steuerwagen und gezogenen Wagen"],
+        "auswahlkriterien": ["Größte Neigung", "Transportkapazität", "Sicherheit gegen Entgleisen in engen Bögen", "Anteil des Güterverkehrs"],
+        "auswirkungen": [
+          {"element_id": "E8", "beschreibung": "Starre Mittelpufferkupplung oder Verzicht auf Kupplung zum Vorstellwagen"},
+          {"element_id": "E54", "beschreibung": "Vorstellwagen nur bei lokbespannten Zügen"},
+          {"element_id": "E43", "beschreibung": "Führerstände an beiden Enden oder Steuerwagen an der Bergseite"},
+          {"element_id": "E33", "beschreibung": "Verteilung der Anhaltebremsen auf Triebfahrzeug und Wagen"},
+          {"element_id": "E50", "beschreibung": "Fahrgastraum im Triebfahrzeug oder nur in den Wagen"}
+        ],
+        "absatz_ids": ["P4", "P5"]
+      },
+      {
+        "id": "V5",
+        "element_id": "E33",
+        "bezeichnung": "Bauart der Rücklaufsicherung",
+        "alternativen": ["Klinkenbremse mit Freilauf bei Bergfahrt", "Fahrtrichtungserkennung mit Bremsauslösung über den Rückrollschutz"],
+        "auswahlkriterien": ["Neigungsverlauf in einer Fahrrichtung", "Aufwand für die Betriebsvorbereitung vor der Bergfahrt", "Redundanzkonzept der Sicherheitsbaugruppe"],
+        "auswirkungen": [
+          {"element_id": "E67", "beschreibung": "Rückrollschutz in der Sicherheitsbaugruppe löst eine Anhaltebremse aus"},
+          {"element_id": "E37", "beschreibung": "Klinkenbremse entfällt bei elektronischer Rücklaufsicherung"},
+          {"element_id": "E45", "beschreibung": "Bedienhandlungen zum Anziehen und Sichern der Klinkenbremse vor der Bergfahrt"}
+        ],
+        "absatz_ids": ["P12", "P13"]
+      },
+      {
+        "id": "V6",
+        "element_id": "E38",
+        "bezeichnung": "Ausführung der Beharrungsbremse",
+        "alternativen": ["Rekuperationsbremse mit Rückspeisung in die Fahrleitung", "Widerstandsbremse mit Bremswiderstand", "Selbsterregte Beharrungsbremse für den Störfall", "Motorbremse oder hydrodynamische Bremse bei thermischen Triebfahrzeugen"],
+        "auswahlkriterien": ["Aufnahmefähigkeit der Fahrleitung", "Räumung der Strecke bei Ausfall der Fahrleitungsspannung", "Energieverbrauch", "Wärmeabfuhr und Einbauraum"],
+        "auswirkungen": [
+          {"element_id": "E39", "beschreibung": "Dimensionierung des Bremswiderstands"},
+          {"element_id": "E77", "beschreibung": "Leistung des Bremswiderstandslüfters"},
+          {"element_id": "E20", "beschreibung": "Rückspeisefähigkeit des Traktionsstromrichters"},
+          {"element_id": "E40", "beschreibung": "Selbsterregungsschaltung bei Umrichterfahrzeugen"},
+          {"element_id": "E21", "beschreibung": "Motorbremse bei dieselelektrischem Betrieb"}
+        ],
+        "absatz_ids": ["P12", "P13"]
+      }
+    ],
+    "klaerungsfragen": [
+      {"id": "K1", "frage": "Soll das Fahrzeug als Triebwagen oder Triebzug oder als Zahnradlokomotive mit geschobenen Vorstellwagen ausgeführt werden?", "element_ids": ["E2", "E1"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Kupplung, Bremsenverteilung, Führerstände und Fahrgastraum ab.", "variante_ids": ["V4"]},
+      {"id": "K2", "frage": "Welche Spurweite, welche engsten Bogenradien und welches Lichtraumprofil muss das Fahrwerk auf der vorgesehenen Strecke einhalten?", "element_ids": ["E2", "E4"], "anlass": "schnittstelle", "relevanz": "Davon hängen Drehgestellbauart, Kippsicherheit und Sicherheit gegen Entgleisen ab."},
+      {"id": "K3", "frage": "Verkehrt das Fahrzeug nur auf durchgehender Zahnstange oder auch auf Adhäsionsabschnitten, und soll der Adhäsionsantrieb dann verkuppelt, getrennt oder über ein Differential ausgeführt werden?", "element_ids": ["E10", "E16"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Adhäsionsantrieb, Adhäsionsbremse, Betriebsartenüberwachung und Synchronisierung ab.", "variante_ids": ["V1"]},
+      {"id": "K4", "frage": "Welches Zahnstangensystem ist auf der Strecke verbaut, und in welcher Höhenlage zur Schienenoberkante muss das Triebzahnrad eingreifen?", "element_ids": ["E10", "E15"], "anlass": "schnittstelle", "relevanz": "Davon hängen Verzahnung, Lagerung und Höhenverstellung der Zahnräder sowie die Weichenbefahrbarkeit ab."},
+      {"id": "K5", "frage": "Welches Stromsystem hat die Fahrleitung, oder soll das Fahrzeug fahrleitungsunabhängig dieselelektrisch fahren?", "element_ids": ["E22", "E23", "E27"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Stromabnahme, Haupttransformator, Stromrichter und Beharrungsbremse ab.", "variante_ids": ["V2"]},
+      {"id": "K6", "frage": "Welche größte Neigung hat die Strecke, und welche Kombination mechanischer Anhaltebremsen soll den beiden Bremssystemen zugeordnet werden?", "element_ids": ["E32", "E33"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Bremsbauart, Ausrüstung der Wagen und Auslöselogik ab.", "variante_ids": ["V3"]},
+      {"id": "K7", "frage": "Soll die Beharrungsbremse in die Fahrleitung zurückspeisen, in Bremswiderständen wirken, und wie wird die Räumung der Strecke bei Ausfall der Fahrleitungsspannung sichergestellt?", "element_ids": ["E38", "E39"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Bremswiderstand, Kühlung, Stromrichter und das Störfallkonzept ab.", "variante_ids": ["V6"]},
+      {"id": "K8", "frage": "Befährt das Fahrzeug in derselben Fahrrichtung sowohl Steigungen als auch Gefälle, sodass statt einer Klinkenbremse ein fahrtrichtungsabhängiger Rückrollschutz nötig ist?", "element_ids": ["E33", "E37", "E67"], "anlass": "betrieb", "relevanz": "Davon hängt die Bauart der Rücklaufsicherung und die Bedienung vor der Bergfahrt ab.", "variante_ids": ["V5"]},
+      {"id": "K9", "frage": "Sollen beide Fahrzeugenden einen Führerstand erhalten oder soll ein Steuerwagen den geschobenen Zug von der Bergseite führen?", "element_ids": ["E43", "E44"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Anzahl der Führertische, Zugsteuerleitungen und Sicht des Triebfahrzeugführers ab."},
+      {"id": "K10", "frage": "Welche Anzahl Sitz- und Stehplätze und welcher Gepäck- und Güteranteil soll der Bremsbemessung zugrunde gelegt werden?", "element_ids": ["E49", "E50", "E53"], "anlass": "anforderung", "relevanz": "Davon hängen Bremskräfte, Achslasten und die thermische Auslegung der Bremsen ab."},
+      {"id": "K11", "frage": "Welche Verbraucher müssen bei Ausfall der Fahrleitungsspannung aus der Bordnetzbatterie weiterversorgt werden und wie lange?", "element_ids": ["E55", "E56", "E31"], "anlass": "betrieb", "relevanz": "Davon hängen Batteriekapazität und die Trennung sicherheitsrelevanter Stromkreise ab."},
+      {"id": "K12", "frage": "Welche Betätigungen außer dem Geschwindigkeitsverlauf, etwa Getriebe- oder Betriebsartenumschaltung, soll die Fahrdatenregistrierung aufzeichnen?", "element_ids": ["E59", "E61"], "anlass": "anforderung", "relevanz": "Davon hängen Signalumfang, Schnittstellen zur Sicherheitsbaugruppe und Zulassungsunterlagen ab."},
+      {"id": "K13", "frage": "Welches Zugbeeinflussungssystem ist auf der Strecke installiert, und meldet es dem Fahrzeug die geforderte Betriebsart an den Zahnstangeneinfahrten?", "element_ids": ["E63", "E70", "E66"], "anlass": "schnittstelle", "relevanz": "Davon hängen Fahrzeuggerät, Antennenlage und Betriebsartenüberwachung ab."},
+      {"id": "K14", "frage": "Wird im Folgezugbetrieb auf Sicht gefahren, und muss das Fahrzeug dem Gegenverkehr Folgezüge signalisieren?", "element_ids": ["E71", "E73"], "anlass": "betrieb", "relevanz": "Davon hängen Signalleuchten, Scheinwerferauslegung und Bedienelemente ab."},
+      {"id": "K15", "frage": "Welche Umgebungstemperaturen, Höhenlagen und Winterbedingungen muss das Fahrzeug abdecken?", "element_ids": ["E75", "E76", "E78"], "anlass": "anforderung", "relevanz": "Davon hängen Kühlleistung, Heizleistung und Bremswiderstandskühlung ab."},
+      {"id": "K16", "frage": "Sollen die Anhaltebremsen hydraulisch oder pneumatisch betätigt und gelüftet werden?", "element_ids": ["E79", "E82", "E80"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Hydraulikaggregat, Druckluftanlage und die Trennung der Bremskreise ab."}
+    ],
+    "anforderungsthemen": [
+      {"id": "R1", "element_ids": ["E2", "E4", "E8"], "thema": "Sicherheit gegen Entgleisen", "kenngroessen": ["Sicherheitsfaktor Längsstabilität", "Sicherheitsfaktor Entgleisungssicherheit", "Relative Radentlastung", "Zahnauftrieb", "Kupplungslängskraft"], "regelwerke": [{"bezeichnung": "AB-EBV (Verordnung des BAV über die Ausführungsbestimmungen zur Eisenbahnverordnung); Schweiz, nicht interoperable Fahrzeuge von Zahnradbahnen, Normal- und Schmalspur", "quellen_id": "Q1", "fundstelle": "AB 54.1.a Ziff. 1 bis 4"}]},
+      {"id": "R2", "element_ids": ["E10", "E11", "E15"], "thema": "Zahneingriff und Zugkraft", "kenngroessen": ["Zugkraft am Triebzahnrad", "Zahnbelastung", "Eingriffsverhältnisse", "Ansprechmoment des Drehmoment-Begrenzungsorgans", "Anzahl bremsbarer Zahnräder"], "regelwerke": [{"bezeichnung": "AB-EBV; Schweiz, Triebfahrzeuge nicht interoperabler Zahnradbahnen", "quellen_id": "Q1", "fundstelle": "AB 54.1.b; AB 54.2.b.1 Ziff. 1 und 2"}]},
+      {"id": "R3", "element_ids": ["E22", "E23", "E27"], "thema": "Energieversorgung und Energiebedarf", "kenngroessen": ["Fahrleitungsspannung", "Energiebedarf je Streckenkilometer", "Rückspeiseanteil", "Masse der Energieversorgungskomponenten"]},
+      {"id": "R4", "element_ids": ["E32", "E33", "E38"], "thema": "Bremsvermögen im Gefälle", "kenngroessen": ["Mittlere Verzögerung je Anhaltebremse", "Bremskraft je Bremssystem", "Thermische Belastbarkeit", "Höchstgeschwindigkeit bei Talfahrt", "Haltegeschwindigkeit der Beharrungsbremse"], "regelwerke": [{"bezeichnung": "AB-EBV; Schweiz, Zugskompositionen nicht interoperabler Zahnradbahnen", "quellen_id": "Q1", "fundstelle": "AB 54.2.b.2 Ziff. 1.1, 1.2 und 2.2"}]},
+      {"id": "R5", "element_ids": ["E43", "E44"], "thema": "Bedienbarkeit des Führerstands", "kenngroessen": ["Verfügbarkeit der Schnellbremsung", "Geschwindigkeitsanzeige", "Bedienplatzbedarf", "Sicht aus dem Führerstand"], "regelwerke": [{"bezeichnung": "AB-EBV; Schweiz, nicht interoperable Fahrzeuge, elektrische Systeme", "quellen_id": "Q1", "fundstelle": "AB 50.1 Ziff. 13.5 und 15"}]},
+      {"id": "R6", "element_ids": ["E49", "E50"], "thema": "Zuladung und Fahrgastkapazität", "kenngroessen": ["Sitzplätze", "Stehplatzdichte", "Masse je Person", "Gepäck- und Güterlast", "Schneelast"], "regelwerke": [{"bezeichnung": "AB-EBV; Schweiz, nicht interoperable Fahrzeuge einschließlich Zahnradbahnen", "quellen_id": "Q1", "fundstelle": "AB 47.1 Ziff. 2.7.3 und 2.7.4; AB 54.2.b.2 Ziff. 2.2.1.1.1"}]},
+      {"id": "R7", "element_ids": ["E55", "E56"], "thema": "Verfügbarkeit der Bordnetzversorgung", "kenngroessen": ["Batteriekapazität", "Überbrückungsdauer", "Redundanz der Sicherheitsstromkreise"]},
+      {"id": "R8", "element_ids": ["E59", "E61"], "thema": "Fahrdatenaufzeichnung", "kenngroessen": ["Aufgezeichnete Signale", "Aufzeichnungsdauer", "Auslesbarkeit"], "regelwerke": [{"bezeichnung": "AB-EBV; Schweiz, Triebfahrzeuge und Steuerwagen nicht interoperabler Bahnen", "quellen_id": "Q1", "fundstelle": "AB 50.1 Ziff. 15 bis 15.2.3"}]},
+      {"id": "R9", "element_ids": ["E63", "E64"], "thema": "Übergeschwindigkeits-, Rückroll- und Betriebsartenschutz", "kenngroessen": ["Ansprechgeschwindigkeit des Übergeschwindigkeitsauslösers", "Ansprechtoleranz", "Rückrollweg bis zum Stillstand", "Grenzwert der Verzögerungsüberwachung", "Redundanzgrad"], "regelwerke": [{"bezeichnung": "AB-EBV; Schweiz, Triebfahrzeuge nicht interoperabler Zahnradbahnen", "quellen_id": "Q1", "fundstelle": "AB 54.2.b.1 Ziff. 3 bis 4.2; AB 50.1 Ziff. 13.4.4"}]},
+      {"id": "R10", "element_ids": ["E71", "E72", "E73"], "thema": "Sicht und Signalisierung", "kenngroessen": ["Ausleuchtungsweite", "Signalbilder für Spitze, Schluss und Folgezug", "Wischfeld"]},
+      {"id": "R11", "element_ids": ["E75", "E76", "E77", "E78"], "thema": "Klimatische Einsatzbedingungen und Wärmeabfuhr", "kenngroessen": ["Umgebungstemperaturbereich", "Kühlleistung", "Heizleistung", "Dauerleistung des Bremswiderstands"]},
+      {"id": "R12", "element_ids": ["E79", "E82", "E81"], "thema": "Versorgung der Bremsbetätigung", "kenngroessen": ["Druckluftvorrat", "Hydraulikdruck", "Trennung der Bremskreise", "Lüftzeit der Anhaltebremsen"], "regelwerke": [{"bezeichnung": "AB-EBV; Schweiz, Zugskompositionen nicht interoperabler Zahnradbahnen", "quellen_id": "Q1", "fundstelle": "AB 54.2.b.2 Ziff. 1.2.3 bis 1.2.3.2"}]}
+    ]
+  },
+  "offene_punkte": [
+    "Glossarvorschlag: Fahrzeug im Gleis führen (fahrzeugartspezifische Funktion der Radsätze und Drehgestelle spurgebundener Fahrzeuge; ersetzt die entfallene Funktion Fahrzeug lenken, kein Synonym).",
+    "Glossarvorschlag: Zahnrad synchronisieren (Funktion der Synchronisierungseinrichtung bei getrenntem Antrieb: Drehzahl und Lage des Zahnrads vor der Zahnstangeneinfahrt angleichen; Drehmoment übertragen beschreibt diese Leistung nicht).",
+    "Glossarvorschlag: Zugfahrt überwachen (Funktion von Sicherheitsbaugruppe, Sicherheitssteuerung und Fahrzeuggerät der Zugbeeinflussung; Fahrzeugzustand überwachen betrifft den technischen Zustand, nicht Geschwindigkeit, Rückrollen und Betriebsart der Fahrt).",
+    "Glossarvorschlag: Für die Kategorie aufbau_nutzlast fehlt ein Hauptsystemname für Schienenfahrzeuge des Personenverkehrs; verwendet wurde „Aufbau und Ladung“.",
+    "Zuordnung: Die Fahrgastsitze stehen abweichend von der Zuordnungsliste (Sitze unter bedienraum) unter Aufbau und Ladung, weil sie zur Zuladung gehören; der Führersitz bleibt im Führerstand.",
+    "Recherche: Wortlaut der schweizerischen Eisenbahnverordnung zu Zahnradbahnen (Suchbegriffe: Eisenbahnverordnung Art. 54 Zahnradbahnen fedlex) ergänzen; in diesem Lauf wurden nur die Ausführungsbestimmungen gelesen.",
+    "Recherche: deutsche Rechtsgrundlage für Zahnradbahnen (Suchbegriffe: ESBO Zahnstangenstrecke; Bayerische Zugspitzbahn Zulassung Eisenbahn-Bundesamt); gesetze-im-internet.de brach die Verbindung in diesem Lauf ab.",
+    "Recherche: G. Borgeaud, Stand- und Entgleisungssicherheit bei Zahnradbahnen, Schweizerische Bauzeitung 1969 und 1978 (e-periodica.ch), sowie BAV-Richtlinie „Nachweis sicheres Fahrverhalten Meterspur-, Spezialspur- und Zahnradbahnen“ für P5 und R1 abrufen.",
+    "Recherche: Fachliteratur zu Bordnetz, Kühlung und Bremswiderständen von Zahnradtriebfahrzeugen (Suchbegriffe: Zahnradtriebwagen Bremswiderstand Dachkühlung; rack railcar auxiliary converter) zur Belegung von P18 und P24.",
+    "Recherche: Betätigung der Federspeicher-Bandbremsen (Suchbegriffe: Federspeicher-Bandbremse Zahnradbahn hydraulisch lüften) zur Belegung von P13 und P25.",
+    "Recherche: Folgezugsignale am Fahrzeug und Führerstandsgestaltung (Suchbegriffe: Folgezugtafel Zahnradbahn; Zahnradtriebwagen Führerstand Steuerwagen) zur Belegung von P15 und P23."
+  ]
+}

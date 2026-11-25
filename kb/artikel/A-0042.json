@@ -1,0 +1,2923 @@
+{
+  "schema_version": "2.3",
+  "artikel_id": "A-0042",
+  "artikeltyp": "blatt",
+  "titel": "Schneemobil",
+  "betrachtungsumfang": "Generische Referenzarchitektur des Schneemobils (Motorschlitten) als sitzend gefahrenes Kettenfahrzeug für ein bis zwei Personen mit Gleiskette am Heck und Lenkski vorn, für Freizeit-, Transport- und Arbeitseinsatz einschließlich Doppelraupen-Arbeitsfahrzeugen. Betrachtet werden Antriebe mit Zweitakt- oder Viertakt-Ottomotor (Energiespeicher Kraftstofftank) und elektrische Antriebe mit Traktionsbatterie. Nicht betrachtet werden Wasserstoff- und Hybridantriebe, propellergetriebene Schlitten, Snowbikes und Umbausätze für Motorräder, Pistenraupen und Schneekatzen sowie Raupenfahrzeuge, die durch Abbremsen einer Raupe gelenkt werden.",
+  "status": "in_arbeit",
+  "quellenzugriff": "ja",
+  "kindartikel_ids": [],
+  "quellen": [
+    {
+      "quellen_id": "Q1",
+      "titel": "Snowmobile",
+      "urheber": "Wikipedia, The Free Encyclopedia (englischsprachig)",
+      "stand": "oldid 1387375086 (23. November 2026)",
+      "url": "https://en.wikipedia.org/wiki/Snowmobile",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q2",
+      "titel": "Schneemobil",
+      "urheber": "Wikipedia, Die freie Enzyklopädie (deutschsprachig)",
+      "stand": "zum Abrufzeitpunkt aktuelle Fassung",
+      "url": "https://de.wikipedia.org/wiki/Schneemobil",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q3",
+      "titel": "Verordnung über die technischen Anforderungen an Strassenfahrzeuge (VTS), SR 741.41",
+      "urheber": "Schweizerischer Bundesrat (Fedlex, Systematische Rechtssammlung)",
+      "stand": "Stand am 1. Januar 2026",
+      "url": "https://www.fedlex.admin.ch/eli/cc/1995/4425_4425_4425/de",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q4",
+      "titel": "40 CFR § 1051.801 – What definitions apply to this part?",
+      "urheber": "U.S. Environmental Protection Agency (Code of Federal Regulations, Ausgabe 2023)",
+      "stand": "2023-07-01",
+      "url": "https://www.govinfo.gov/content/pkg/CFR-2023-title40-vol36/xml/CFR-2023-title40-vol36-sec1051-801.xml",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q5",
+      "titel": "40 CFR § 1051.103 – What are the exhaust emission standards for snowmobiles?",
+      "urheber": "U.S. Environmental Protection Agency (Code of Federal Regulations, Ausgabe 2023)",
+      "stand": "2023-07-01",
+      "url": "https://www.govinfo.gov/content/pkg/CFR-2023-title40-vol36/xml/CFR-2023-title40-vol36-sec1051-103.xml",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q6",
+      "titel": "40 CFR § 1051.1 – Does this part apply for my vehicles or engines?",
+      "urheber": "U.S. Environmental Protection Agency (Code of Federal Regulations, Ausgabe 2023)",
+      "stand": "2023-07-01",
+      "url": "https://www.govinfo.gov/content/pkg/CFR-2023-title40-vol36/xml/CFR-2023-title40-vol36-sec1051-1.xml",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q7",
+      "titel": "Motor Vehicle Safety Regulations (C.R.C., c. 1038)",
+      "urheber": "Government of Canada, Justice Laws Website",
+      "stand": "zuletzt geändert 2026-11-16",
+      "url": "https://laws-lois.justice.gc.ca/eng/regulations/C.R.C.,_c._1038/FullText.html",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q8",
+      "titel": "36 CFR § 7.13 – Yellowstone National Park",
+      "urheber": "National Park Service, U.S. Department of the Interior (Code of Federal Regulations, Ausgabe 2023)",
+      "stand": "2023-07-01",
+      "url": "https://www.govinfo.gov/content/pkg/CFR-2023-title36-vol1/xml/CFR-2023-title36-vol1-sec7-13.xml",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q9",
+      "titel": "Design of the University of Idaho Clean Snowmobile – Final Report (NIATT Report N01-16)",
+      "urheber": "K. R. Den Braven u. a., National Institute for Advanced Transportation Technology, University of Idaho; für das U.S. Department of Transportation",
+      "stand": "September 2001",
+      "url": "https://libraryarchives.metro.net/DPGTL/nonlocalagencies/idaho/2001-niatt-design-of-the-university-of-idaho-clean-snowmobile.pdf",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "fachliteratur"
+    }
+  ],
+  "abschnitte": [
+    {
+      "ueberschrift": "Einleitung",
+      "abschnittstyp": "gesamtsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P1",
+          "text": "Ein Schneemobil, auch Motorschlitten oder Schneemotorrad, ist ein Kraftfahrzeug für Fahrten und Freizeit im Winter auf Schnee, das ein bis zwei Personen befördert. Der Motor treibt meist eine Gleiskette am Heck an, Skier vorn geben die Richtung vor. Die kanadischen Motor Vehicle Safety Regulations (Kanada) definieren es als Fahrzeug mit höchstens 450 kg, vorrangig für Schnee ausgelegt, mit einem oder mehreren Lenkski und Antrieb über ein oder mehrere endlose Bänder mit Bodenkontakt. Nach der Schweizer VTS sind Motorschlitten Raupenfahrzeuge bis 0,45 t, die nicht durch Abbremsen einer Raupe gelenkt werden; die US-Umweltbehörde EPA (USA) zählt Fahrzeuge dazu, die nur über schneebedeckten Boden fahren und höchstens 1,5 m breit sind.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Einleitung, Absätze 1 und 2"
+            },
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Einleitung"
+            },
+            {
+              "quellen_id": "Q7",
+              "fundstelle": "Section 2(1), Definition „snowmobile“"
+            },
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Art. 14 Buchstabe c"
+            },
+            {
+              "quellen_id": "Q4",
+              "fundstelle": "§ 1051.801, Definition „Snowmobile“"
+            }
+          ],
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P2",
+          "text": "Architekturell ist das Schneemobil ein offenes, sitzend gefahrenes Kettenfahrzeug ohne Räder: Die Gleiskette trägt und treibt am Heck, die Lenkski tragen und lenken vorn. Zur Systemgrenze gehören Fahrerplatz, Anhängevorrichtung und beim Elektroantrieb die Ladeeinrichtung, nicht aber gezogene Schlitten, Schutzausrüstung und Wegenetz. Die Hauptsysteme sind über mechanische, elektrische, hydraulische, thermische, stoffliche und informationstechnische Schnittstellen gekoppelt. Für eine Dekomposition, etwa in SysML, wird das Schneemobil zuerst in diese Hauptsysteme und dann in Subsysteme und Komponenten zerlegt.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P1",
+              "Bodenkontakt nur über Gleiskette und Lenkski (P1)"
+            ],
+            "schluss": "Alle Trag-, Vortriebs-, Lenk- und Bremskräfte laufen über Gleiskette oder Lenkski; daraus folgen Systemgrenze und Kopplung der Hauptsysteme."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrzeugstruktur und Fahrwerk",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E2",
+      "absaetze": [
+        {
+          "absatz_id": "P3",
+          "text": "Die Motorleistung wird auf eine mittig angeordnete Antriebsraupe aus Gummi übertragen; moderne Gleisketten bestehen meist aus einem Kevlar-Verbundwerkstoff. Raupe und Ski sind mit Stoßdämpfern ausgestattet. Bergschlitten für Tiefschnee unterscheiden sich von Trailschlitten durch Masse, Gewichtsverteilung, Kettenlänge, Stollenhöhe und Leistung. Für Arbeitseinsätze gibt es Schneemobile mit zwei Gleisketten und zwei Ski vorn, die Vorräte und mehrere Personen befördern, Lastschlitten und Loipenspurgeräte ziehen und tiefen Schnee bewältigen.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Abschnitt „Technik“, Absatz 2"
+            },
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Abschnitt „Design“, Absatz 2"
+            },
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Abschnitt „Performance“, Absatz 4"
+            },
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Abschnitt „Brands“, Absatz 3, und Unterabschnitt „Alpina“, Absatz 2"
+            }
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P4",
+          "text": "Tragendes Element ist der Fahrzeugrahmen. Sein hinterer Teil, der Tunnel, überspannt die Gleiskette und trägt Sitzbank, Trittbretter und Anhängevorrichtung. Der Vorderrahmen nimmt Motoreinheit, Kraftübertragung, Lenksäule und Skiaufhängung auf; die Bodenwanne schließt den Motorraum nach unten, die Motorhaube nach oben ab. In der Skiaufhängung stützt sich jeder Lenkski über eine Skifederung am Vorderrahmen ab. Im Laufwerk läuft die Gleiskette über Gleitschienen und Laufrollen, die Laufwerkfederung verbindet die Gleitschienen mit dem Tunnel. Die Gewichtskraft fließt so über Laufwerkfederung und Skifederung flächig in den Schnee. Strukturändernd sind die Laufwerkauslegung mit kurzer oder langer Einzelraupe oder Doppelraupe und die Zahl der Lenkski.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P3",
+              "Q9 (S. 7, 12, 16 und 17: Tunnelboden, Spant des Motorraums, Bodenwanne und Haube des Serienfahrgestells)",
+              "Jede Last braucht einen Pfad bis zur Aufstandsfläche"
+            ],
+            "schluss": "Rahmen mit Tunnel und Vorderrahmen, gefederte Skiaufhängung und gefedertes Laufwerk bilden den Lastpfad zum Schnee."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Antriebssystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E16",
+      "absaetze": [
+        {
+          "absatz_id": "P5",
+          "text": "Moderne Schneemobile haben Zweitakt- oder Viertakt-Verbrennungsmotoren oder einen elektrischen Antrieb, etwa der Taiga TS2. Früher kamen ausschließlich luftgekühlte Zweitaktmotoren mit Seilzugstarter zum Einsatz, zuletzt vermehrt flüssigkeitsgekühlte Viertaktmotoren. Die Motorleistung gelangt über eine Keilriemenautomatik mit Fliehkraftkupplung zur Antriebsraupe. Beim Wettbewerbsfahrzeug der University of Idaho besteht der Antriebsstrang aus Adapterwelle, Primärkupplung, über einen Riemen gekoppelter Sekundärkupplung und einer Untersetzung im Kettenkasten zwischen Sekundärkupplung und Gleiskette; die Abgasanlage hat Katalysator und Schalldämpfer.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Abschnitt „Design“, Absatz 1"
+            },
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Abschnitt „Technik“, Absätze 1 und 2"
+            },
+            {
+              "quellen_id": "Q9",
+              "fundstelle": "S. 7, Abschnitt „Chassis“; S. 9, Abschnitt „Drivetrain“ und „Transmission“; S. 11–12, Abschnitt „Exhaust System“"
+            }
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P6",
+          "text": "Das Antriebssystem gliedert sich in Motoreinheit und Kraftübertragung. Zur Motoreinheit gehören Verbrennungsmotor oder Traktionsmaschine, beim Verbrennungsmotor auch Abgasanlage und Starteinrichtung. Die Kraftübertragung besteht aus Primärkupplung, Antriebsriemen, Sekundärkupplung, Kettenkasten und Antriebswelle. Die Leistung fließt von der Kurbelwelle über die drehzahlabhängig schließende Primärkupplung und den Antriebsriemen zur Sekundärkupplung, weiter über den Kettenkasten zur Antriebswelle, deren Antriebsräder in die Gleiskette greifen. Eine Traktionsmaschine liefert über einen weiten Drehzahlbereich Drehmoment, sodass die Keilriemenautomatik entfallen kann; sie kann beim Verzögern Bremsenergie zurückgewinnen.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P5",
+              "Funktionsprinzip der Keilriemenautomatik mit Fliehkraftkupplung",
+              "Elektrische Maschinen geben Drehmoment ab dem Stillstand ab"
+            ],
+            "schluss": "Leistungsfluss Motor, Keilriemenautomatik, Kettenkasten, Antriebswelle, Gleiskette; beim Elektroantrieb vereinfachte Kraftübertragung."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Energieversorgungssystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E28",
+      "absaetze": [
+        {
+          "absatz_id": "P7",
+          "text": "Beim Wettbewerbsfahrzeug der University of Idaho fördert eine externe elektrische Kraftstoffpumpe den Kraftstoff aus dem Kraftstofftank; nicht benötigter Kraftstoff fließt über den Druckregler in den Tank zurück. Das Bordnetz speist eine Zwölf-Volt-Batterie in einem Kunststoffkasten. Die Fahrzeugelektrik des Serienfahrgestells war für einen Zweitaktmotor mit Seilzugstart ausgelegt.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q9",
+              "fundstelle": "S. 13–14, Abschnitt „Fuel System“; S. 14, Abschnitt „Electrical System“; S. 16, Abschnitt „Safety“"
+            }
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P8",
+          "text": "Das Energieversorgungssystem gliedert sich in Kraftstoffversorgung, Bordnetzversorgung und beim Elektroantrieb den Hochvolt-Energiespeicher. Die Kraftstoffversorgung umfasst Kraftstofftank und Kraftstoffanlage mit Pumpe oder Vergaserzulauf und Leitungen. Die Bordnetzversorgung besteht aus dem vom Motor angetriebenen Generator und der Starterbatterie; bei Seilzugstart kann die Batterie entfallen. Der Hochvolt-Energiespeicher mit Traktionsbatterie und Ladeeinrichtung ersetzt die Kraftstoffversorgung und braucht den Bauraum, den sonst Kraftstofftank und Motor einnehmen.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P5",
+              "P7",
+              "Jede Antriebsart braucht ihren Energiespeicher"
+            ],
+            "schluss": "Je Antriebsart ein Energiespeicher, dazu eine Bordnetzversorgung, die bei Seilzugstart reduziert sein kann."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Lenksystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E38",
+      "absaetze": [
+        {
+          "absatz_id": "P9",
+          "text": "Schneemobile werden über Kufen gelenkt, meist mit einem motorradähnlichen Lenker. Gesteuert wird mit lenkbaren Stahlblechski, meist mit Kunststoffaufsätzen, unterstützt durch Verlagerung des Körpergewichts; mit Gewicht zur Bergseite kann das Fahrzeug steile Hänge queren, ohne abzurutschen. Die sowjetische Motosani MS-1 hatte vorn zwei Lenkkufen, der Buran von 1971 eine. Die Schweizer VTS erfasst als Motorschlitten nur Raupenfahrzeuge, die nicht durch Abbremsen einer Raupe gelenkt werden.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Abschnitt „Technik“, Absätze 1 und 2; Abschnitt „Geschichte“, Absatz 2"
+            },
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Abschnitt „Performance“, Absatz 2"
+            },
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Art. 14 Buchstabe c"
+            }
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P10",
+          "text": "Das Lenksystem besteht aus Lenker, Lenksäule und Spurstangen. Die Lenksäule führt den Lenkeinschlag vom Fahrerplatz durch den Vorderrahmen nach unten, die Spurstangen schwenken die Lenkski. Da die Gleiskette nicht gelenkt wird, erzeugen allein die Lenkski die Seitenführung vorn; die Gewichtsverlagerung des Fahrers ergänzt sie. Bei zwei Lenkski verbinden Spurstangen beide Ski, bei einem Ski kann die Lenksäule direkt wirken. Am Lenker sitzen auch Gas- und Bremshebel.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P9",
+              "Q3 (Art. 14 Buchstabe c)"
+            ],
+            "schluss": "Mechanische Lenkung vom Lenker über Lenksäule und Spurstangen auf die Lenkski, ergänzt durch Gewichtsverlagerung."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Bremssystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E42",
+      "absaetze": [
+        {
+          "absatz_id": "P11",
+          "text": "In der Schweiz müssen Motorschlitten eine Betriebs- und eine Feststellbremse haben. Sie dürfen gemeinsame Übertragungseinrichtungen haben, die Betätigungseinrichtungen müssen unabhängig sein, die der Feststellbremse mechanisch; Wirksamkeit und Prüfverfahren regelt Anhang 7 der VTS. Blockiert die Raupe, wird der Schlitten stark gebremst.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Art. 160 Absätze 1 und 2"
+            },
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Abschnitt „Technik“, Absatz 2"
+            }
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P12",
+          "text": "Ohne Räder kann die Betriebsbremse nur über die Gleiskette wirken, also an einem drehenden Glied der Kraftübertragung. Sie besteht aus Bremshebel am Lenker, Bremssattel und Bremsscheibe; das Bremsmoment fließt über Kettenkasten und Antriebswelle in die Gleiskette und von dort in den Schnee. Die Feststellbremse sperrt dieselbe Bremsscheibe über eine eigene mechanische Betätigung. Die Lenkski tragen nicht zur Verzögerung bei; beim Elektroantrieb ergänzt die Traktionsmaschine die Betriebsbremse.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P2",
+              "P11",
+              "P6"
+            ],
+            "schluss": "Verzögerung und Festhalten wirken ausschließlich über Kraftübertragung und Gleiskette."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrgastraum",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E48",
+      "absaetze": [
+        {
+          "absatz_id": "P13",
+          "text": "Ältere Schneemobile boten meist zwei Personen Platz, die meisten seit den 1990er Jahren gebauten nur einer; zweisitzige Touring-Modelle haben einen sehr kleinen Marktanteil. Außer einer Windschutzscheibe haben die meisten Schneemobile keine Verkleidung. Gas gegeben wird mit einem Daumengashebel wie bei Quads. Nach der Schweizer VTS brauchen Motorschlitten für Mitfahrer ein solid befestigtes Haltesystem aus Haltegurt oder Haltegriffen sowie Fußrasten oder Trittbretter für Fahrer und Mitfahrer.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Abschnitt „Design“, Absätze 3 und 4"
+            },
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Abschnitt „Technik“, Absatz 2"
+            },
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Art. 160 Absatz 3 in Verbindung mit Art. 146 Absätze 1 und 2"
+            }
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P14",
+          "text": "Der Fahrgastraum ist ein offener Fahrerplatz. Er gliedert sich in die Sitzanlage mit Sitzbank, Trittbrettern und Haltesystem, die Bedien- und Anzeigeeinheit mit Bedienelementen und Anzeigeelementen sowie die Windschutzscheibe. Sitzbank und Trittbretter liegen auf und am Tunnel. Zu den Bedienelementen gehören Daumengashebel, Bremshebel und Zündschloss. Ein zweiter Sitzplatz verlängert Sitzbank und Haltesystem nach hinten und verkleinert Gepäckträger und Gepäckraum.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P13",
+              "P4",
+              "P9"
+            ],
+            "schluss": "Offener Fahrerplatz mit Sitzanlage, Bedien- und Anzeigeeinheit und Windschutzscheibe; Sitzplatzzahl wirkt auf Tunnel und Laderaum."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Laderaum und Anhängevorrichtung",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E57",
+      "absaetze": [
+        {
+          "absatz_id": "P15",
+          "text": "Schneemobile dienen als Transportmittel in Skigebieten, als Arbeitsgerät für Forstarbeiter und Rentierzüchter und der Bergrettung; der Patient liegt dabei in einem Akia, quer auf dem Heck oder auf einem meist gefederten Anhänger. In der Schweiz gilt die Begrenzung der Anhängelast auf 50 Prozent des Gewichts nach Art. 136 Absatz 1, sofern sie über 80 kg liegt, für Motorschlitten nicht; der Drehpunkt der Verbindungseinrichtung muss in der Längsachse liegen.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Abschnitt „Verwendung“, Absatz 1"
+            },
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Art. 136 Absatz 3; Art. 160 Absatz 5 in Verbindung mit Art. 146 Absatz 4"
+            }
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P16",
+          "text": "Das Hauptsystem umfasst Anhängevorrichtung, Gepäckträger und Gepäckraum. Die Anhängevorrichtung am Tunnelheck leitet die Zuglast von Lastschlitten, Akia oder Anhänger in den Fahrzeugrahmen. Der Gepäckträger auf dem Tunnel nimmt Ladung oder Rettungsgerät auf, der Gepäckraum unter Sitzbank oder Motorhaube Kleinteile. Zuglast und Zuladung verschieben den Schwerpunkt nach hinten, entlasten die Lenkski und belasten Laufwerkfederung und Gleiskette.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P15",
+              "P4"
+            ],
+            "schluss": "Zug- und Ladungslasten gehen über den Tunnel in Laufwerk und Gleiskette."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Elektrik und Elektronik",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E61",
+      "absaetze": [
+        {
+          "absatz_id": "P17",
+          "text": "Beim Wettbewerbsfahrzeug der University of Idaho enthielt das Serienfahrgestell die Verkabelung für Beleuchtung und Griffwärmer sowie Reißleine und Notausschalter, die im Notfall den Motor stoppen und alle elektrischen Systeme abschalten. Reißleine, Notausschalter und Zündschlüssel liegen in Reihe; ist einer getrennt, sind Zündkreise, Kraftstoffpumpe und Fahrzeugelektrik stromlos. Steuergeräte für Einspritzung und Zündung sowie Sicherungen und Relais sitzen in Kästen im Motorraum hinter der Wand zur Instrumentenkonsole.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q9",
+              "fundstelle": "S. 14, Abschnitt „Electrical System“; S. 15, Abschnitt „Electrical System“; S. 15–16, Abschnitt „Safety“"
+            }
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P18",
+          "text": "Elektrik und Elektronik bilden das Niedervolt-Bordnetz aus Leitungssatz, Sicherungen und Stromverteiler. Der Leitungssatz verbindet Starterbatterie und Generator mit Motorsteuergerät, Kraftstoffanlage, Scheinwerfer, Leuchten, Griffheizung und Anzeigeelementen; der Stromverteiler bündelt Sicherungen und Relais. Der Abschaltkreis der Totmanneinrichtung liegt im Leitungssatz. Leitungen und Steckverbindungen sind Kälte, Nässe und Schneeeintrag ausgesetzt.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P17",
+              "P8",
+              "Einsatz im Schnee bei Frost"
+            ],
+            "schluss": "Ein einfaches Niedervolt-Bordnetz versorgt alle elektrischen Verbraucher und trägt den Abschaltkreis."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrzeugsteuerung und Information",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E66",
+      "absaetze": [
+        {
+          "absatz_id": "P19",
+          "text": "Fahrzeugsteuerung und Information bilden eine schlanke logische Ebene. Zentral ist das Motorsteuergerät, das bei Einspritzmotoren Einspritzung und Zündung regelt und bei fehlendem Luftdurchsatz die Kraftstoffpumpe abschaltet; bei Vergasermotoren bleibt die Zündsteuerung. Beim Elektroantrieb gibt es der Traktionsmaschine das Moment vor. Die Diagnose liest Fehlerspeicher über eine Werkstattschnittstelle. Eine Navigation mit Satellitenortung kann Position und Route auf den Anzeigeelementen zeigen.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "Q9 (S. 15–16: Steuergeräte für Einspritzung und Zündung, Abschaltung der Kraftstoffpumpe über den Luftmassensensor)",
+              "P5"
+            ],
+            "schluss": "Ein Motorsteuergerät bildet den Kern; Diagnose und Navigation sind Ausstattungsumfänge."
+          },
+          "sicherheit": "gering",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrerassistenz und Sicherheit",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E70",
+      "absaetze": [
+        {
+          "absatz_id": "P20",
+          "text": "Die meisten Schneemobile haben eine Reißleine an einem Notausschalter, der das Fahrzeug stoppt, wenn der Fahrer herunterfällt; nicht alle Fahrer nutzen sie bei jeder Fahrt. Wird die Totmanneinrichtung getrennt, schaltet sich der Motor ab. Beim Wettbewerbsfahrzeug der University of Idaho deckt ein Kupplungsschutz aus Aluminiumplatte Primär- und Sekundärkupplung ab und schützt Fahrer und Umstehende vor brechenden Teilen.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Abschnitt „Accidents and safety“, Absatz 2"
+            },
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Abschnitt „Technik“, Absatz 3"
+            },
+            {
+              "quellen_id": "Q9",
+              "fundstelle": "S. 16, Abschnitt „Safety“"
+            }
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P21",
+          "text": "Das Hauptsystem umfasst Totmanneinrichtung, Notausschalter und Kupplungsschutz. Ohne Rückhaltesysteme am offenen Fahrerplatz verhindert die Totmanneinrichtung, dass ein führerloses Fahrzeug weiterfährt. Der Kupplungsschutz trennt die drehende Keilriemenautomatik vom Fahrerplatz. Umfeldsensorik und Notbremsassistent gehören nicht zum Grundaufbau; der Schutz beruht zusätzlich auf Helm, Schutzanzug und Lawinenausrüstung außerhalb der Systemgrenze.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P20",
+              "P13",
+              "Q1 (Abschnitt „Accidents and safety“, Absatz 7: Helm und Schutzanzug empfohlen)"
+            ],
+            "schluss": "Sicherheit beruht auf Abschaltung bei Fahrerverlust und Abdeckung drehender Teile, nicht auf Insassenrückhaltung."
+          },
+          "sicherheit": "gering",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Beleuchtung und Sicht",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E74",
+      "absaetze": [
+        {
+          "absatz_id": "P22",
+          "text": "In Kanada müssen Schneemobile Scheinwerfer haben, die bei laufendem Motor ständig leuchten. In der Schweiz sind bei Motorschlitten Fernlicht, Kontrollschildbeleuchtung und Richtungsblinker nicht erforderlich; bei mehr als 1,00 m Breite sind zwei hintere Rückstrahler nötig. Zusammenstöße mit Elchen oder Hirschen geschehen meist nachts oder bei schlechter Sicht.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q7",
+              "fundstelle": "Schedule VI, Section 1201 Absatz 7"
+            },
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Art. 160 Absatz 4; Art. 142 Absatz 1"
+            },
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Abschnitt „Accidents and safety“, Absatz 5"
+            }
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P23",
+          "text": "Beleuchtung und Sicht umfassen Scheinwerfer, Leuchten und Rückstrahler. Der Scheinwerfer in der Motorhaube leuchtet die Fahrzeugumgebung aus; Schluss- und Bremsleuchte am Tunnelheck machen das Fahrzeug von hinten sichtbar. Alle Lichtquellen hängen am Leitungssatz; ohne Batterie bestimmt die Generatorleistung das verfügbare Licht. Eine Scheibenwischanlage entfällt, weil der Fahrer über die niedrige Windschutzscheibe blickt.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P22",
+              "P8",
+              "P13"
+            ],
+            "schluss": "Dauerlicht vorn, Kennzeichnung hinten, Versorgung über das Bordnetz; keine Sichtreinigung."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Thermomanagement",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E78",
+      "absaetze": [
+        {
+          "absatz_id": "P24",
+          "text": "Schneemobile sind üblicherweise mit Gashebelheizung ausgestattet. Beim Wettbewerbsfahrzeug der University of Idaho sitzt der Katalysator vorn in der Nase, wo ihn der Fahrtwind kühlt; kritische Flächen zwischen Abgasanlage und Kunststoff-Bodenwanne sind mit Hitzeschutz abgedeckt, der Kühlkreislauf liegt rechts vom Motor.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Abschnitt „Technik“, Absatz 1"
+            },
+            {
+              "quellen_id": "Q9",
+              "fundstelle": "S. 12, Abschnitt „Exhaust System“; S. 17, Abschnitt „Snowmobile Layout“"
+            }
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P25",
+          "text": "Das Thermomanagement umfasst den Kühlkreislauf mit Kühlmittelpumpe und Kühler, die Griffheizung und beim Elektroantrieb die Batterietemperierung. Bei verbreiteten Bauarten ist der Kühler als Wärmetauscher am Tunnel ausgeführt, auf den die Gleiskette Schnee wirft; auf hartem Untergrund sinkt dann die Kühlleistung. Bei Luftkühlung entfällt der Kühlkreislauf. Die Griffheizung wärmt Lenkergriffe und Daumengashebel aus dem Bordnetz, die Batterietemperierung hält die Traktionsbatterie bei Kälte im Arbeitsbereich.",
+          "begruendung": "modellwissen",
+          "belege": [],
+          "sicherheit": "gering",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Zusammenfassung",
+      "abschnittstyp": "gesamtsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P26",
+          "text": "Auf oberster Ebene besteht das Schneemobil aus Fahrzeugstruktur und Fahrwerk, Antriebssystem, Energieversorgungssystem, Lenksystem, Bremssystem, Fahrgastraum, Laderaum und Anhängevorrichtung, Elektrik und Elektronik, Fahrzeugsteuerung und Information, Fahrerassistenz und Sicherheit, Beleuchtung und Sicht sowie Thermomanagement. Neben- und Versorgungssysteme entfallen. Die Gleiskette koppelt Fahrwerk, Antrieb und Bremse, der Tunnel Fahrwerk, Fahrerplatz, Laderaum und Kühlung.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P2",
+              "P4",
+              "P6",
+              "P12",
+              "P16",
+              "P25"
+            ],
+            "schluss": "Gleiskette und Tunnel sind die zentralen Kopplungsstellen der Hauptsysteme."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Modellierungsbezug",
+      "abschnittstyp": "modellierung",
+      "absaetze": [
+        {
+          "absatz_id": "P27",
+          "text": "In SysML bildet der Block `Schneemobil` das Gesamtsystem. Dekompositionspfade sind `Fahrzeugstruktur und Fahrwerk → Laufwerk → Laufwerkfederung`, `Antriebssystem → Kraftübertragung → Sekundärkupplung` und `Energieversorgungssystem → Kraftstoffversorgung → Kraftstoffanlage`. Ports und Konnektoren bilden den Eingriff der Antriebsräder in die Gleiskette, die Spurstangenanlenkung am Lenkski, die Bremsscheibenaufnahme, die Anhängevorrichtung, den Ladeanschluss und den Abschaltkreis ab. Geeignet sind Block Definition Diagrams, Internal Block Diagrams, Aktivitätsdiagramme für den Leistungsfluss und Zustandsdiagramme für die Totmanneinrichtung.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P4",
+              "P6",
+              "P8",
+              "P14",
+              "P18"
+            ],
+            "schluss": "Die Dekomposition folgt den Hauptsystem-Abschnitten; die Schnittstellen folgen den Flüssen."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Flüsse",
+      "abschnittstyp": "fluesse",
+      "absaetze": [
+        {
+          "absatz_id": "P28",
+          "text": "Kraftstofftank liefert über die Kraftstoffanlage Kraftstoff an den Verbrennungsmotor, die Traktionsbatterie Hochvoltstrom an die Traktionsmaschine. Mechanische Leistung fließt von Verbrennungsmotor über Primärkupplung, Antriebsriemen, Sekundärkupplung, Kettenkasten und Antriebswelle zur Gleiskette, der Motor treibt den Generator. Lasten gehen über Laufwerkfederung und Skifederung in den Fahrzeugrahmen. Lenkbewegung läuft von Lenker über Lenksäule und Spurstangen zum Lenkski, Bremsdruck vom Bremshebel zum Bremssattel. Der Leitungssatz versorgt Verbraucher; Totmanneinrichtung, Notausschalter und Bedienelemente melden an Stromverteiler und Motorsteuergerät; Abgas strömt in die Abgasanlage, Kühlmittel zum Kühler.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P5",
+              "P6",
+              "P8",
+              "P10",
+              "P12",
+              "P18"
+            ],
+            "schluss": "Energie-, Stoff- und Informationsflüsse verbinden die Elemente der Hauptsysteme."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Perspektiven",
+      "abschnittstyp": "perspektiven",
+      "absaetze": [
+        {
+          "absatz_id": "P29",
+          "text": "Funktional ordnen sich zu: Fahrzeuglasten tragen dem Fahrzeugrahmen, der Skiaufhängung und dem Laufwerk; Energie speichern Kraftstofftank, Traktionsbatterie und Starterbatterie; Treibstoff fördern der Kraftstoffanlage; Traktionsbatterie laden der Ladeeinrichtung; Elektrische Energie verteilen dem Niedervolt-Bordnetz; Antriebsleistung erzeugen Verbrennungsmotor und Traktionsmaschine; Motor starten der Starteinrichtung; Drehmoment übertragen der Kraftübertragung; Fahrzeug fortbewegen Antriebswelle und Gleiskette; Fahrzeug lenken Lenksystem und Lenkski; Fahrzeug verzögern der Betriebsbremse; Bremsenergie zurückgewinnen der Traktionsmaschine; Fahrzeug festhalten der Feststellbremse; Fahrereingaben erfassen den Bedienelementen; Fahrerinformationen anzeigen den Anzeigeelementen; Insassen schützen Sitzanlage, Windschutzscheibe, Totmanneinrichtung, Notausschalter und Kupplungsschutz; Ladung aufnehmen Gepäckträger und Gepäckraum; Anhänger ziehen der Anhängevorrichtung; Fahrzeugzustand überwachen Motorsteuergerät und Diagnose; Fahrzeugposition bestimmen der Navigation; Fahrzeugumgebung ausleuchten dem Scheinwerfer; Lichtsignale abgeben Leuchten und Rückstrahlern; Betriebstemperatur regeln Kühlkreislauf und Batterietemperierung; Griffe beheizen der Griffheizung.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P4",
+              "P6",
+              "P8",
+              "P10",
+              "P12",
+              "P14",
+              "P16",
+              "P18",
+              "P19",
+              "P21",
+              "P23",
+              "P25"
+            ],
+            "schluss": "Jede Funktion hat ein ausführendes Element."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    }
+  ],
+  "modell": {
+    "elemente": [
+      {
+        "id": "E1",
+        "name": "Schneemobil",
+        "typ": "gesamtsystem",
+        "eltern_id": null,
+        "absatz_ids": [
+          "P1",
+          "P2",
+          "P26"
+        ]
+      },
+      {
+        "id": "E2",
+        "name": "Fahrzeugstruktur und Fahrwerk",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P3",
+          "P4",
+          "P26"
+        ],
+        "kategorie": "struktur_fahrwerk"
+      },
+      {
+        "id": "E3",
+        "name": "Fahrzeugrahmen",
+        "typ": "subsystem",
+        "eltern_id": "E2",
+        "absatz_ids": [
+          "P4",
+          "P16"
+        ]
+      },
+      {
+        "id": "E4",
+        "name": "Tunnel",
+        "typ": "komponente",
+        "eltern_id": "E3",
+        "absatz_ids": [
+          "P4",
+          "P14",
+          "P16"
+        ]
+      },
+      {
+        "id": "E5",
+        "name": "Vorderrahmen",
+        "typ": "komponente",
+        "eltern_id": "E3",
+        "absatz_ids": [
+          "P4",
+          "P10"
+        ]
+      },
+      {
+        "id": "E6",
+        "name": "Bodenwanne",
+        "typ": "komponente",
+        "eltern_id": "E3",
+        "absatz_ids": [
+          "P4",
+          "P24"
+        ]
+      },
+      {
+        "id": "E7",
+        "name": "Motorhaube",
+        "typ": "komponente",
+        "eltern_id": "E3",
+        "absatz_ids": [
+          "P4",
+          "P16",
+          "P23"
+        ]
+      },
+      {
+        "id": "E8",
+        "name": "Skiaufhängung",
+        "typ": "subsystem",
+        "eltern_id": "E2",
+        "absatz_ids": [
+          "P4"
+        ]
+      },
+      {
+        "id": "E9",
+        "name": "Lenkski",
+        "typ": "komponente",
+        "eltern_id": "E8",
+        "absatz_ids": [
+          "P1",
+          "P4",
+          "P10"
+        ]
+      },
+      {
+        "id": "E10",
+        "name": "Skifederung",
+        "typ": "komponente",
+        "eltern_id": "E8",
+        "absatz_ids": [
+          "P4"
+        ]
+      },
+      {
+        "id": "E11",
+        "name": "Laufwerk",
+        "typ": "subsystem",
+        "eltern_id": "E2",
+        "absatz_ids": [
+          "P3",
+          "P4"
+        ]
+      },
+      {
+        "id": "E12",
+        "name": "Gleiskette",
+        "typ": "komponente",
+        "eltern_id": "E11",
+        "absatz_ids": [
+          "P3",
+          "P4",
+          "P6"
+        ]
+      },
+      {
+        "id": "E13",
+        "name": "Gleitschienen",
+        "typ": "komponente",
+        "eltern_id": "E11",
+        "absatz_ids": [
+          "P4"
+        ]
+      },
+      {
+        "id": "E14",
+        "name": "Laufrollen",
+        "typ": "komponente",
+        "eltern_id": "E11",
+        "absatz_ids": [
+          "P4"
+        ]
+      },
+      {
+        "id": "E15",
+        "name": "Laufwerkfederung",
+        "typ": "komponente",
+        "eltern_id": "E11",
+        "absatz_ids": [
+          "P4",
+          "P16"
+        ]
+      },
+      {
+        "id": "E16",
+        "name": "Antriebssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P5",
+          "P6",
+          "P26"
+        ],
+        "kategorie": "antrieb"
+      },
+      {
+        "id": "E17",
+        "name": "Motoreinheit",
+        "typ": "subsystem",
+        "eltern_id": "E16",
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "E18",
+        "name": "Verbrennungsmotor",
+        "typ": "komponente",
+        "eltern_id": "E17",
+        "absatz_ids": [
+          "P5",
+          "P6"
+        ]
+      },
+      {
+        "id": "E19",
+        "name": "Traktionsmaschine",
+        "typ": "komponente",
+        "eltern_id": "E17",
+        "absatz_ids": [
+          "P6",
+          "P12"
+        ]
+      },
+      {
+        "id": "E20",
+        "name": "Abgasanlage",
+        "typ": "komponente",
+        "eltern_id": "E17",
+        "absatz_ids": [
+          "P5",
+          "P6",
+          "P24"
+        ]
+      },
+      {
+        "id": "E21",
+        "name": "Starteinrichtung",
+        "typ": "komponente",
+        "eltern_id": "E17",
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "E22",
+        "name": "Kraftübertragung",
+        "typ": "subsystem",
+        "eltern_id": "E16",
+        "absatz_ids": [
+          "P6",
+          "P12"
+        ]
+      },
+      {
+        "id": "E23",
+        "name": "Primärkupplung",
+        "typ": "komponente",
+        "eltern_id": "E22",
+        "absatz_ids": [
+          "P5",
+          "P6"
+        ]
+      },
+      {
+        "id": "E24",
+        "name": "Antriebsriemen",
+        "typ": "komponente",
+        "eltern_id": "E22",
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "E25",
+        "name": "Sekundärkupplung",
+        "typ": "komponente",
+        "eltern_id": "E22",
+        "absatz_ids": [
+          "P5",
+          "P6"
+        ]
+      },
+      {
+        "id": "E26",
+        "name": "Kettenkasten",
+        "typ": "komponente",
+        "eltern_id": "E22",
+        "absatz_ids": [
+          "P5",
+          "P6",
+          "P12"
+        ]
+      },
+      {
+        "id": "E27",
+        "name": "Antriebswelle",
+        "typ": "komponente",
+        "eltern_id": "E22",
+        "absatz_ids": [
+          "P6",
+          "P12"
+        ]
+      },
+      {
+        "id": "E28",
+        "name": "Energieversorgungssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P7",
+          "P8",
+          "P26"
+        ],
+        "kategorie": "energieversorgung"
+      },
+      {
+        "id": "E29",
+        "name": "Kraftstoffversorgung",
+        "typ": "subsystem",
+        "eltern_id": "E28",
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "E30",
+        "name": "Kraftstofftank",
+        "typ": "komponente",
+        "eltern_id": "E29",
+        "absatz_ids": [
+          "P7",
+          "P8"
+        ]
+      },
+      {
+        "id": "E31",
+        "name": "Kraftstoffanlage",
+        "typ": "komponente",
+        "eltern_id": "E29",
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "E32",
+        "name": "Bordnetzversorgung",
+        "typ": "subsystem",
+        "eltern_id": "E28",
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "E33",
+        "name": "Starterbatterie",
+        "typ": "komponente",
+        "eltern_id": "E32",
+        "absatz_ids": [
+          "P8",
+          "P18"
+        ]
+      },
+      {
+        "id": "E34",
+        "name": "Generator",
+        "typ": "komponente",
+        "eltern_id": "E32",
+        "absatz_ids": [
+          "P8",
+          "P18",
+          "P23"
+        ]
+      },
+      {
+        "id": "E35",
+        "name": "Hochvolt-Energiespeicher",
+        "typ": "subsystem",
+        "eltern_id": "E28",
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "E36",
+        "name": "Traktionsbatterie",
+        "typ": "komponente",
+        "eltern_id": "E35",
+        "absatz_ids": [
+          "P8",
+          "P25"
+        ]
+      },
+      {
+        "id": "E37",
+        "name": "Ladeeinrichtung",
+        "typ": "komponente",
+        "eltern_id": "E35",
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "E38",
+        "name": "Lenksystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P9",
+          "P10",
+          "P26"
+        ],
+        "kategorie": "lenkung"
+      },
+      {
+        "id": "E39",
+        "name": "Lenker",
+        "typ": "komponente",
+        "eltern_id": "E38",
+        "absatz_ids": [
+          "P9",
+          "P10"
+        ]
+      },
+      {
+        "id": "E40",
+        "name": "Lenksäule",
+        "typ": "komponente",
+        "eltern_id": "E38",
+        "absatz_ids": [
+          "P10"
+        ]
+      },
+      {
+        "id": "E41",
+        "name": "Spurstangen",
+        "typ": "komponente",
+        "eltern_id": "E38",
+        "absatz_ids": [
+          "P10"
+        ]
+      },
+      {
+        "id": "E42",
+        "name": "Bremssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P11",
+          "P12",
+          "P26"
+        ],
+        "kategorie": "bremse"
+      },
+      {
+        "id": "E43",
+        "name": "Betriebsbremse",
+        "typ": "subsystem",
+        "eltern_id": "E42",
+        "absatz_ids": [
+          "P11",
+          "P12"
+        ]
+      },
+      {
+        "id": "E44",
+        "name": "Bremshebel",
+        "typ": "komponente",
+        "eltern_id": "E43",
+        "absatz_ids": [
+          "P12",
+          "P14"
+        ]
+      },
+      {
+        "id": "E45",
+        "name": "Bremssattel",
+        "typ": "komponente",
+        "eltern_id": "E43",
+        "absatz_ids": [
+          "P12"
+        ]
+      },
+      {
+        "id": "E46",
+        "name": "Bremsscheibe",
+        "typ": "komponente",
+        "eltern_id": "E43",
+        "absatz_ids": [
+          "P12"
+        ]
+      },
+      {
+        "id": "E47",
+        "name": "Feststellbremse",
+        "typ": "komponente",
+        "eltern_id": "E42",
+        "absatz_ids": [
+          "P11",
+          "P12"
+        ]
+      },
+      {
+        "id": "E48",
+        "name": "Fahrgastraum",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P13",
+          "P14",
+          "P26"
+        ],
+        "kategorie": "bedienraum"
+      },
+      {
+        "id": "E49",
+        "name": "Sitzanlage",
+        "typ": "subsystem",
+        "eltern_id": "E48",
+        "absatz_ids": [
+          "P14"
+        ]
+      },
+      {
+        "id": "E50",
+        "name": "Sitzbank",
+        "typ": "komponente",
+        "eltern_id": "E49",
+        "absatz_ids": [
+          "P14"
+        ]
+      },
+      {
+        "id": "E51",
+        "name": "Trittbretter",
+        "typ": "komponente",
+        "eltern_id": "E49",
+        "absatz_ids": [
+          "P13",
+          "P14"
+        ]
+      },
+      {
+        "id": "E52",
+        "name": "Haltesystem",
+        "typ": "komponente",
+        "eltern_id": "E49",
+        "absatz_ids": [
+          "P13",
+          "P14"
+        ]
+      },
+      {
+        "id": "E53",
+        "name": "Bedien- und Anzeigeeinheit",
+        "typ": "subsystem",
+        "eltern_id": "E48",
+        "absatz_ids": [
+          "P14"
+        ]
+      },
+      {
+        "id": "E54",
+        "name": "Bedienelemente",
+        "typ": "komponente",
+        "eltern_id": "E53",
+        "absatz_ids": [
+          "P14"
+        ]
+      },
+      {
+        "id": "E55",
+        "name": "Anzeigeelemente",
+        "typ": "komponente",
+        "eltern_id": "E53",
+        "absatz_ids": [
+          "P14",
+          "P19"
+        ]
+      },
+      {
+        "id": "E56",
+        "name": "Windschutzscheibe",
+        "typ": "komponente",
+        "eltern_id": "E48",
+        "absatz_ids": [
+          "P13",
+          "P14",
+          "P23"
+        ]
+      },
+      {
+        "id": "E57",
+        "name": "Laderaum und Anhängevorrichtung",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P15",
+          "P16",
+          "P26"
+        ],
+        "kategorie": "aufbau_nutzlast"
+      },
+      {
+        "id": "E58",
+        "name": "Anhängevorrichtung",
+        "typ": "komponente",
+        "eltern_id": "E57",
+        "absatz_ids": [
+          "P15",
+          "P16"
+        ]
+      },
+      {
+        "id": "E59",
+        "name": "Gepäckträger",
+        "typ": "komponente",
+        "eltern_id": "E57",
+        "absatz_ids": [
+          "P16"
+        ]
+      },
+      {
+        "id": "E60",
+        "name": "Gepäckraum",
+        "typ": "komponente",
+        "eltern_id": "E57",
+        "absatz_ids": [
+          "P16"
+        ]
+      },
+      {
+        "id": "E61",
+        "name": "Elektrik und Elektronik",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P17",
+          "P18",
+          "P26"
+        ],
+        "kategorie": "elektrik_elektronik"
+      },
+      {
+        "id": "E62",
+        "name": "Niedervolt-Bordnetz",
+        "typ": "subsystem",
+        "eltern_id": "E61",
+        "absatz_ids": [
+          "P18"
+        ]
+      },
+      {
+        "id": "E63",
+        "name": "Leitungssatz",
+        "typ": "komponente",
+        "eltern_id": "E62",
+        "absatz_ids": [
+          "P18"
+        ]
+      },
+      {
+        "id": "E64",
+        "name": "Sicherungen",
+        "typ": "komponente",
+        "eltern_id": "E62",
+        "absatz_ids": [
+          "P17",
+          "P18"
+        ]
+      },
+      {
+        "id": "E65",
+        "name": "Stromverteiler",
+        "typ": "komponente",
+        "eltern_id": "E62",
+        "absatz_ids": [
+          "P18"
+        ]
+      },
+      {
+        "id": "E66",
+        "name": "Fahrzeugsteuerung und Information",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P19",
+          "P26"
+        ],
+        "kategorie": "steuerung_information"
+      },
+      {
+        "id": "E67",
+        "name": "Motorsteuergerät",
+        "typ": "komponente",
+        "eltern_id": "E66",
+        "absatz_ids": [
+          "P19"
+        ]
+      },
+      {
+        "id": "E68",
+        "name": "Diagnose",
+        "typ": "komponente",
+        "eltern_id": "E66",
+        "absatz_ids": [
+          "P19"
+        ]
+      },
+      {
+        "id": "E69",
+        "name": "Navigation",
+        "typ": "komponente",
+        "eltern_id": "E66",
+        "absatz_ids": [
+          "P19"
+        ]
+      },
+      {
+        "id": "E70",
+        "name": "Fahrerassistenz und Sicherheit",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P20",
+          "P21",
+          "P26"
+        ],
+        "kategorie": "assistenz_sicherheit"
+      },
+      {
+        "id": "E71",
+        "name": "Totmanneinrichtung",
+        "typ": "komponente",
+        "eltern_id": "E70",
+        "absatz_ids": [
+          "P20",
+          "P21"
+        ]
+      },
+      {
+        "id": "E72",
+        "name": "Notausschalter",
+        "typ": "komponente",
+        "eltern_id": "E70",
+        "absatz_ids": [
+          "P17",
+          "P20",
+          "P21"
+        ]
+      },
+      {
+        "id": "E73",
+        "name": "Kupplungsschutz",
+        "typ": "komponente",
+        "eltern_id": "E70",
+        "absatz_ids": [
+          "P20",
+          "P21"
+        ]
+      },
+      {
+        "id": "E74",
+        "name": "Beleuchtung und Sicht",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P22",
+          "P23",
+          "P26"
+        ],
+        "kategorie": "beleuchtung_sicht"
+      },
+      {
+        "id": "E75",
+        "name": "Scheinwerfer",
+        "typ": "komponente",
+        "eltern_id": "E74",
+        "absatz_ids": [
+          "P22",
+          "P23"
+        ]
+      },
+      {
+        "id": "E76",
+        "name": "Leuchten",
+        "typ": "komponente",
+        "eltern_id": "E74",
+        "absatz_ids": [
+          "P23"
+        ]
+      },
+      {
+        "id": "E77",
+        "name": "Rückstrahler",
+        "typ": "komponente",
+        "eltern_id": "E74",
+        "absatz_ids": [
+          "P22",
+          "P23"
+        ]
+      },
+      {
+        "id": "E78",
+        "name": "Thermomanagement",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P24",
+          "P25",
+          "P26"
+        ],
+        "kategorie": "thermomanagement"
+      },
+      {
+        "id": "E79",
+        "name": "Kühlkreislauf",
+        "typ": "subsystem",
+        "eltern_id": "E78",
+        "absatz_ids": [
+          "P24",
+          "P25"
+        ]
+      },
+      {
+        "id": "E80",
+        "name": "Kühlmittelpumpe",
+        "typ": "komponente",
+        "eltern_id": "E79",
+        "absatz_ids": [
+          "P25"
+        ]
+      },
+      {
+        "id": "E81",
+        "name": "Kühler",
+        "typ": "komponente",
+        "eltern_id": "E79",
+        "absatz_ids": [
+          "P25"
+        ]
+      },
+      {
+        "id": "E82",
+        "name": "Griffheizung",
+        "typ": "komponente",
+        "eltern_id": "E78",
+        "absatz_ids": [
+          "P25"
+        ]
+      },
+      {
+        "id": "E83",
+        "name": "Batterietemperierung",
+        "typ": "komponente",
+        "eltern_id": "E78",
+        "absatz_ids": [
+          "P25"
+        ]
+      }
+    ],
+    "funktionen": [
+      {
+        "id": "F1",
+        "name": "Fahrzeuglasten tragen",
+        "ausgefuehrt_von": [
+          "E3",
+          "E8",
+          "E11"
+        ],
+        "absatz_ids": [
+          "P4",
+          "P29"
+        ]
+      },
+      {
+        "id": "F2",
+        "name": "Energie speichern",
+        "ausgefuehrt_von": [
+          "E30",
+          "E36",
+          "E33"
+        ],
+        "absatz_ids": [
+          "P8",
+          "P29"
+        ]
+      },
+      {
+        "id": "F3",
+        "name": "Treibstoff fördern",
+        "ausgefuehrt_von": [
+          "E31"
+        ],
+        "absatz_ids": [
+          "P7",
+          "P8",
+          "P29"
+        ]
+      },
+      {
+        "id": "F4",
+        "name": "Traktionsbatterie laden",
+        "ausgefuehrt_von": [
+          "E37"
+        ],
+        "absatz_ids": [
+          "P8",
+          "P29"
+        ]
+      },
+      {
+        "id": "F5",
+        "name": "Elektrische Energie verteilen",
+        "ausgefuehrt_von": [
+          "E62"
+        ],
+        "absatz_ids": [
+          "P18",
+          "P29"
+        ]
+      },
+      {
+        "id": "F6",
+        "name": "Antriebsleistung erzeugen",
+        "ausgefuehrt_von": [
+          "E18",
+          "E19"
+        ],
+        "absatz_ids": [
+          "P5",
+          "P6",
+          "P29"
+        ]
+      },
+      {
+        "id": "F7",
+        "name": "Motor starten",
+        "ausgefuehrt_von": [
+          "E21"
+        ],
+        "absatz_ids": [
+          "P6",
+          "P29"
+        ]
+      },
+      {
+        "id": "F8",
+        "name": "Drehmoment übertragen",
+        "ausgefuehrt_von": [
+          "E22"
+        ],
+        "absatz_ids": [
+          "P5",
+          "P6",
+          "P29"
+        ]
+      },
+      {
+        "id": "F9",
+        "name": "Fahrzeug fortbewegen",
+        "ausgefuehrt_von": [
+          "E27",
+          "E12"
+        ],
+        "absatz_ids": [
+          "P6",
+          "P29"
+        ]
+      },
+      {
+        "id": "F10",
+        "name": "Fahrzeug lenken",
+        "ausgefuehrt_von": [
+          "E38",
+          "E9"
+        ],
+        "absatz_ids": [
+          "P9",
+          "P10",
+          "P29"
+        ]
+      },
+      {
+        "id": "F11",
+        "name": "Fahrzeug verzögern",
+        "ausgefuehrt_von": [
+          "E43"
+        ],
+        "absatz_ids": [
+          "P11",
+          "P12",
+          "P29"
+        ]
+      },
+      {
+        "id": "F12",
+        "name": "Bremsenergie zurückgewinnen",
+        "ausgefuehrt_von": [
+          "E19"
+        ],
+        "absatz_ids": [
+          "P6",
+          "P12",
+          "P29"
+        ]
+      },
+      {
+        "id": "F13",
+        "name": "Fahrzeug festhalten",
+        "ausgefuehrt_von": [
+          "E47"
+        ],
+        "absatz_ids": [
+          "P11",
+          "P12",
+          "P29"
+        ]
+      },
+      {
+        "id": "F14",
+        "name": "Fahrereingaben erfassen",
+        "ausgefuehrt_von": [
+          "E54"
+        ],
+        "absatz_ids": [
+          "P14",
+          "P29"
+        ]
+      },
+      {
+        "id": "F15",
+        "name": "Fahrerinformationen anzeigen",
+        "ausgefuehrt_von": [
+          "E55"
+        ],
+        "absatz_ids": [
+          "P14",
+          "P19",
+          "P29"
+        ]
+      },
+      {
+        "id": "F16",
+        "name": "Insassen schützen",
+        "ausgefuehrt_von": [
+          "E49",
+          "E56",
+          "E71",
+          "E72",
+          "E73"
+        ],
+        "absatz_ids": [
+          "P20",
+          "P21",
+          "P29"
+        ]
+      },
+      {
+        "id": "F17",
+        "name": "Ladung aufnehmen",
+        "ausgefuehrt_von": [
+          "E59",
+          "E60"
+        ],
+        "absatz_ids": [
+          "P16",
+          "P29"
+        ]
+      },
+      {
+        "id": "F18",
+        "name": "Anhänger ziehen",
+        "ausgefuehrt_von": [
+          "E58"
+        ],
+        "absatz_ids": [
+          "P15",
+          "P16",
+          "P29"
+        ]
+      },
+      {
+        "id": "F19",
+        "name": "Fahrzeugzustand überwachen",
+        "ausgefuehrt_von": [
+          "E67",
+          "E68"
+        ],
+        "absatz_ids": [
+          "P19",
+          "P29"
+        ]
+      },
+      {
+        "id": "F20",
+        "name": "Fahrzeugposition bestimmen",
+        "ausgefuehrt_von": [
+          "E69"
+        ],
+        "absatz_ids": [
+          "P19",
+          "P29"
+        ]
+      },
+      {
+        "id": "F21",
+        "name": "Fahrzeugumgebung ausleuchten",
+        "ausgefuehrt_von": [
+          "E75"
+        ],
+        "absatz_ids": [
+          "P22",
+          "P23",
+          "P29"
+        ]
+      },
+      {
+        "id": "F22",
+        "name": "Lichtsignale abgeben",
+        "ausgefuehrt_von": [
+          "E76",
+          "E77"
+        ],
+        "absatz_ids": [
+          "P23",
+          "P29"
+        ]
+      },
+      {
+        "id": "F23",
+        "name": "Betriebstemperatur regeln",
+        "ausgefuehrt_von": [
+          "E79",
+          "E83"
+        ],
+        "absatz_ids": [
+          "P25",
+          "P29"
+        ]
+      },
+      {
+        "id": "F24",
+        "name": "Griffe beheizen",
+        "ausgefuehrt_von": [
+          "E82"
+        ],
+        "absatz_ids": [
+          "P24",
+          "P25",
+          "P29"
+        ]
+      }
+    ],
+    "fluesse": [
+      {
+        "id": "S1",
+        "von": "E30",
+        "nach": "E31",
+        "art": "stoff",
+        "medium": "Kraftstoff",
+        "absatz_ids": [
+          "P7",
+          "P8",
+          "P28"
+        ]
+      },
+      {
+        "id": "S2",
+        "von": "E31",
+        "nach": "E18",
+        "art": "stoff",
+        "medium": "Kraftstoff",
+        "absatz_ids": [
+          "P7",
+          "P28"
+        ],
+        "schnittstelle": "Kraftstoffversorgung Verbrennungsmotor"
+      },
+      {
+        "id": "S3",
+        "von": "E36",
+        "nach": "E19",
+        "art": "elektrisch",
+        "medium": "Hochvolt-Gleichstrom",
+        "absatz_ids": [
+          "P8",
+          "P28"
+        ],
+        "schnittstelle": "Hochvoltanschluss Traktionsmaschine"
+      },
+      {
+        "id": "S4",
+        "von": "E37",
+        "nach": "E36",
+        "art": "elektrisch",
+        "medium": "Ladestrom",
+        "absatz_ids": [
+          "P8",
+          "P28"
+        ]
+      },
+      {
+        "id": "S5",
+        "von": "E18",
+        "nach": "E23",
+        "art": "mechanisch",
+        "medium": "Drehmoment",
+        "absatz_ids": [
+          "P6",
+          "P28"
+        ],
+        "schnittstelle": "Kurbelwellenstumpf mit Primärkupplungsaufnahme"
+      },
+      {
+        "id": "S6",
+        "von": "E23",
+        "nach": "E24",
+        "art": "mechanisch",
+        "medium": "Drehmoment",
+        "absatz_ids": [
+          "P6",
+          "P28"
+        ]
+      },
+      {
+        "id": "S7",
+        "von": "E24",
+        "nach": "E25",
+        "art": "mechanisch",
+        "medium": "Drehmoment",
+        "absatz_ids": [
+          "P6",
+          "P28"
+        ]
+      },
+      {
+        "id": "S8",
+        "von": "E25",
+        "nach": "E26",
+        "art": "mechanisch",
+        "medium": "Drehmoment",
+        "absatz_ids": [
+          "P5",
+          "P6",
+          "P28"
+        ]
+      },
+      {
+        "id": "S9",
+        "von": "E26",
+        "nach": "E27",
+        "art": "mechanisch",
+        "medium": "Drehmoment",
+        "absatz_ids": [
+          "P6",
+          "P28"
+        ]
+      },
+      {
+        "id": "S10",
+        "von": "E27",
+        "nach": "E12",
+        "art": "mechanisch",
+        "medium": "Vortriebskraft",
+        "absatz_ids": [
+          "P6",
+          "P28"
+        ],
+        "schnittstelle": "Eingriff der Antriebsräder in die Gleiskette"
+      },
+      {
+        "id": "S11",
+        "von": "E19",
+        "nach": "E26",
+        "art": "mechanisch",
+        "medium": "Drehmoment",
+        "absatz_ids": [
+          "P6",
+          "P28"
+        ]
+      },
+      {
+        "id": "S12",
+        "von": "E18",
+        "nach": "E34",
+        "art": "mechanisch",
+        "medium": "Drehmoment",
+        "absatz_ids": [
+          "P8",
+          "P28"
+        ],
+        "schnittstelle": "Generatorantrieb am Verbrennungsmotor"
+      },
+      {
+        "id": "S13",
+        "von": "E34",
+        "nach": "E33",
+        "art": "elektrisch",
+        "medium": "Ladestrom",
+        "absatz_ids": [
+          "P8",
+          "P28"
+        ]
+      },
+      {
+        "id": "S14",
+        "von": "E33",
+        "nach": "E63",
+        "art": "elektrisch",
+        "medium": "Niedervolt-Gleichstrom",
+        "absatz_ids": [
+          "P18",
+          "P28"
+        ],
+        "schnittstelle": "Batterieanschluss Bordnetz"
+      },
+      {
+        "id": "S15",
+        "von": "E63",
+        "nach": "E75",
+        "art": "elektrisch",
+        "medium": "Niedervolt-Gleichstrom",
+        "absatz_ids": [
+          "P18",
+          "P23",
+          "P28"
+        ],
+        "schnittstelle": "Lichtversorgung"
+      },
+      {
+        "id": "S16",
+        "von": "E63",
+        "nach": "E82",
+        "art": "elektrisch",
+        "medium": "Niedervolt-Gleichstrom",
+        "absatz_ids": [
+          "P18",
+          "P28"
+        ],
+        "schnittstelle": "Heizungsversorgung"
+      },
+      {
+        "id": "S17",
+        "von": "E63",
+        "nach": "E67",
+        "art": "elektrisch",
+        "medium": "Niedervolt-Gleichstrom",
+        "absatz_ids": [
+          "P18",
+          "P28"
+        ]
+      },
+      {
+        "id": "S18",
+        "von": "E15",
+        "nach": "E4",
+        "art": "mechanisch",
+        "medium": "Gewichts- und Stoßkräfte",
+        "absatz_ids": [
+          "P4",
+          "P28"
+        ],
+        "schnittstelle": "Laufwerkaufhängung am Tunnel"
+      },
+      {
+        "id": "S19",
+        "von": "E10",
+        "nach": "E5",
+        "art": "mechanisch",
+        "medium": "Gewichts- und Stoßkräfte",
+        "absatz_ids": [
+          "P4",
+          "P28"
+        ],
+        "schnittstelle": "Skiaufhängung am Vorderrahmen"
+      },
+      {
+        "id": "S20",
+        "von": "E39",
+        "nach": "E40",
+        "art": "mechanisch",
+        "medium": "Lenkmoment",
+        "absatz_ids": [
+          "P10",
+          "P28"
+        ]
+      },
+      {
+        "id": "S21",
+        "von": "E40",
+        "nach": "E41",
+        "art": "mechanisch",
+        "medium": "Lenkbewegung",
+        "absatz_ids": [
+          "P10",
+          "P28"
+        ]
+      },
+      {
+        "id": "S22",
+        "von": "E41",
+        "nach": "E9",
+        "art": "mechanisch",
+        "medium": "Lenkbewegung",
+        "absatz_ids": [
+          "P10",
+          "P28"
+        ],
+        "schnittstelle": "Spurstangenanlenkung am Lenkski"
+      },
+      {
+        "id": "S23",
+        "von": "E44",
+        "nach": "E45",
+        "art": "hydraulisch",
+        "medium": "Bremsflüssigkeit",
+        "absatz_ids": [
+          "P12",
+          "P28"
+        ]
+      },
+      {
+        "id": "S24",
+        "von": "E46",
+        "nach": "E26",
+        "art": "mechanisch",
+        "medium": "Bremsmoment",
+        "absatz_ids": [
+          "P12",
+          "P28"
+        ],
+        "schnittstelle": "Bremsscheibenaufnahme an der Kraftübertragung"
+      },
+      {
+        "id": "S25",
+        "von": "E71",
+        "nach": "E65",
+        "art": "information",
+        "medium": "Abschaltsignal",
+        "absatz_ids": [
+          "P17",
+          "P18",
+          "P28"
+        ],
+        "schnittstelle": "Abschaltkreis"
+      },
+      {
+        "id": "S26",
+        "von": "E72",
+        "nach": "E65",
+        "art": "information",
+        "medium": "Abschaltsignal",
+        "absatz_ids": [
+          "P17",
+          "P28"
+        ],
+        "schnittstelle": "Abschaltkreis"
+      },
+      {
+        "id": "S27",
+        "von": "E54",
+        "nach": "E67",
+        "art": "information",
+        "medium": "Gas- und Startwunsch",
+        "absatz_ids": [
+          "P14",
+          "P28"
+        ],
+        "schnittstelle": "Bedienschnittstelle am Lenker"
+      },
+      {
+        "id": "S28",
+        "von": "E67",
+        "nach": "E18",
+        "art": "information",
+        "medium": "Zünd- und Einspritzsignale",
+        "absatz_ids": [
+          "P19",
+          "P28"
+        ]
+      },
+      {
+        "id": "S29",
+        "von": "E67",
+        "nach": "E55",
+        "art": "information",
+        "medium": "Zustandsdaten",
+        "absatz_ids": [
+          "P19",
+          "P28"
+        ],
+        "schnittstelle": "Anzeigeschnittstelle"
+      },
+      {
+        "id": "S30",
+        "von": "E18",
+        "nach": "E20",
+        "art": "stoff",
+        "medium": "Abgas",
+        "absatz_ids": [
+          "P5",
+          "P28"
+        ]
+      },
+      {
+        "id": "S31",
+        "von": "E80",
+        "nach": "E81",
+        "art": "stoff",
+        "medium": "Kühlmittel",
+        "absatz_ids": [
+          "P25",
+          "P28"
+        ]
+      },
+      {
+        "id": "S32",
+        "von": "E18",
+        "nach": "E80",
+        "art": "thermisch",
+        "medium": "Kühlmittel",
+        "absatz_ids": [
+          "P25",
+          "P28"
+        ],
+        "schnittstelle": "Kühlmittelanschluss Motor"
+      },
+      {
+        "id": "S33",
+        "von": "E58",
+        "nach": "E4",
+        "art": "mechanisch",
+        "medium": "Zuglast",
+        "absatz_ids": [
+          "P16",
+          "P28"
+        ],
+        "schnittstelle": "Anhängepunkt am Tunnelheck"
+      },
+      {
+        "id": "S34",
+        "von": "E50",
+        "nach": "E4",
+        "art": "mechanisch",
+        "medium": "Gewichtskraft",
+        "absatz_ids": [
+          "P14",
+          "P28"
+        ]
+      },
+      {
+        "id": "S35",
+        "von": "E69",
+        "nach": "E55",
+        "art": "information",
+        "medium": "Positions- und Routendaten",
+        "absatz_ids": [
+          "P19",
+          "P28"
+        ]
+      }
+    ],
+    "entfallene_kategorien": [
+      {
+        "kategorie": "nebensysteme",
+        "grund": "Keine Druckluft-, Unterdruck-, Hydraulik- oder Nebenabtriebsversorgung; Hydraulik kommt nur innerhalb der Betriebsbremse vor, die Starteinrichtung gehört zum Antriebssystem."
+      }
+    ],
+    "varianten": [
+      {
+        "id": "V1",
+        "element_id": "E16",
+        "bezeichnung": "Antriebsart",
+        "alternativen": [
+          "Zweitakt-Ottomotor",
+          "Viertakt-Ottomotor",
+          "Elektrischer Antrieb mit Traktionsbatterie"
+        ],
+        "auswahlkriterien": [
+          "Masse und Gewichtsverteilung",
+          "Abgas- und Geräuschemission",
+          "Reichweite und Einsatzdauer bei Kälte",
+          "Kosten und Komplexität",
+          "Zugangsbeschränkungen in Schutzgebieten"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E29",
+            "beschreibung": "Kraftstoffversorgung entfällt beim elektrischen Antrieb."
+          },
+          {
+            "element_id": "E35",
+            "beschreibung": "Hochvolt-Energiespeicher mit Traktionsbatterie und Ladeeinrichtung kommt beim elektrischen Antrieb hinzu."
+          },
+          {
+            "element_id": "E20",
+            "beschreibung": "Abgasanlage entfällt beim elektrischen Antrieb."
+          },
+          {
+            "element_id": "E83",
+            "beschreibung": "Batterietemperierung kommt beim elektrischen Antrieb hinzu."
+          },
+          {
+            "element_id": "E22",
+            "beschreibung": "Keilriemenautomatik kann beim elektrischen Antrieb entfallen."
+          },
+          {
+            "element_id": "E43",
+            "beschreibung": "Rückgewinnung durch die Traktionsmaschine ergänzt die Betriebsbremse."
+          }
+        ],
+        "absatz_ids": [
+          "P5",
+          "P6",
+          "P8"
+        ]
+      },
+      {
+        "id": "V2",
+        "element_id": "E11",
+        "bezeichnung": "Laufwerkauslegung",
+        "alternativen": [
+          "Kurze Einzelraupe für präparierte Trails",
+          "Lange Einzelraupe mit hohen Stollen für Tiefschnee",
+          "Doppelraupe für Arbeitseinsatz"
+        ],
+        "auswahlkriterien": [
+          "Einsatzgelände und Schneeart",
+          "Zug- und Tragfähigkeit",
+          "Wendigkeit",
+          "Zulässige Fahrzeugbreite"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E4",
+            "beschreibung": "Tunnellänge und -breite folgen Kettenlänge und Raupenzahl."
+          },
+          {
+            "element_id": "E27",
+            "beschreibung": "Doppelraupe braucht eine breitere Antriebswelle mit zwei Antriebsradsätzen."
+          },
+          {
+            "element_id": "E18",
+            "beschreibung": "Tiefschnee und Arbeitseinsatz erfordern andere Leistungs- und Drehmomentauslegung."
+          },
+          {
+            "element_id": "E58",
+            "beschreibung": "Arbeitsausführung verlangt höhere Zuglast an der Anhängevorrichtung."
+          }
+        ],
+        "absatz_ids": [
+          "P3",
+          "P4"
+        ]
+      },
+      {
+        "id": "V3",
+        "element_id": "E8",
+        "bezeichnung": "Anzahl der Lenkski",
+        "alternativen": [
+          "Ein Lenkski",
+          "Zwei Lenkski"
+        ],
+        "auswahlkriterien": [
+          "Kippstabilität",
+          "Fahrgeschwindigkeit",
+          "Bauaufwand",
+          "Wendigkeit"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E41",
+            "beschreibung": "Bei einem Lenkski können die Spurstangen entfallen."
+          },
+          {
+            "element_id": "E5",
+            "beschreibung": "Zwei Lenkski verlangen breitere Aufnahmen der Skiaufhängung am Vorderrahmen."
+          }
+        ],
+        "absatz_ids": [
+          "P4",
+          "P9",
+          "P10"
+        ]
+      },
+      {
+        "id": "V4",
+        "element_id": "E79",
+        "bezeichnung": "Motorkühlung",
+        "alternativen": [
+          "Luftkühlung",
+          "Flüssigkeitskühlung mit Wärmetauscher am Tunnel"
+        ],
+        "auswahlkriterien": [
+          "Motorleistung und Wärmeanfall",
+          "Betrieb auf schneearmem oder hartem Untergrund",
+          "Masse und Bauraum"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E4",
+            "beschreibung": "Flüssigkeitskühlung nutzt den Tunnel als Träger des Wärmetauschers."
+          },
+          {
+            "element_id": "E15",
+            "beschreibung": "Wärmetauscher im Tunnel begrenzt den Freiraum über der Gleiskette."
+          },
+          {
+            "element_id": "E7",
+            "beschreibung": "Luftkühlung braucht Luftführung durch die Motorhaube."
+          }
+        ],
+        "absatz_ids": [
+          "P5",
+          "P24",
+          "P25"
+        ]
+      },
+      {
+        "id": "V5",
+        "element_id": "E21",
+        "bezeichnung": "Starteinrichtung",
+        "alternativen": [
+          "Seilzugstarter",
+          "Elektrostarter"
+        ],
+        "auswahlkriterien": [
+          "Masse",
+          "Bedienkomfort bei Kälte",
+          "Bordnetzaufwand"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E33",
+            "beschreibung": "Elektrostarter erfordert eine Starterbatterie, beim Seilzugstarter kann sie entfallen."
+          },
+          {
+            "element_id": "E34",
+            "beschreibung": "Generator muss beim Elektrostarter die Batterie nachladen."
+          },
+          {
+            "element_id": "E63",
+            "beschreibung": "Leitungssatz braucht beim Elektrostarter einen Starterstromkreis."
+          }
+        ],
+        "absatz_ids": [
+          "P5",
+          "P7",
+          "P8"
+        ]
+      },
+      {
+        "id": "V6",
+        "element_id": "E49",
+        "bezeichnung": "Sitzplatzanzahl",
+        "alternativen": [
+          "Einsitzer",
+          "Zweisitzer mit Mitfahrerplatz"
+        ],
+        "auswahlkriterien": [
+          "Einsatzzweck",
+          "Fahrzeuglänge und Masse",
+          "Ladungsbedarf"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E52",
+            "beschreibung": "Zweisitzer braucht ein Haltesystem für den Mitfahrer."
+          },
+          {
+            "element_id": "E4",
+            "beschreibung": "Zweisitzer verlängert den Tunnel oder belegt mehr Tunnelfläche."
+          },
+          {
+            "element_id": "E59",
+            "beschreibung": "Mitfahrerplatz verkleinert die Fläche des Gepäckträgers."
+          },
+          {
+            "element_id": "E15",
+            "beschreibung": "Höhere Hecklast verlangt eine andere Abstimmung der Laufwerkfederung."
+          }
+        ],
+        "absatz_ids": [
+          "P13",
+          "P14"
+        ]
+      }
+    ],
+    "klaerungsfragen": [
+      {
+        "id": "K1",
+        "frage": "Soll das Schneemobil mit Zweitaktmotor, Viertaktmotor oder elektrischem Antrieb ausgeführt werden?",
+        "element_ids": [
+          "E16",
+          "E28"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Energiespeicher, Abgasanlage, Kühlung und Kraftübertragung ab.",
+        "variante_ids": [
+          "V1"
+        ]
+      },
+      {
+        "id": "K2",
+        "frage": "Für welches Einsatzprofil wird das Laufwerk ausgelegt: präparierte Trails, Tiefschnee im Gebirge oder Arbeitseinsatz mit Lasten?",
+        "element_ids": [
+          "E2",
+          "E11"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Kettenlänge, Raupenzahl, Tunnel und Antriebsauslegung ab.",
+        "variante_ids": [
+          "V2"
+        ]
+      },
+      {
+        "id": "K3",
+        "frage": "Soll das Fahrzeug einen oder zwei Lenkski erhalten?",
+        "element_ids": [
+          "E8",
+          "E38"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Spurstangen, Vorderrahmen und Kippstabilität ab.",
+        "variante_ids": [
+          "V3"
+        ]
+      },
+      {
+        "id": "K4",
+        "frage": "Soll der Motor luftgekühlt oder flüssigkeitsgekühlt sein, und muss die Kühlung auch auf schneearmen oder vereisten Strecken ausreichen?",
+        "element_ids": [
+          "E78",
+          "E79"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Wärmetauscher, Zusatzkühler und Tunnelgestaltung ab.",
+        "variante_ids": [
+          "V4"
+        ]
+      },
+      {
+        "id": "K5",
+        "frage": "Genügt ein Seilzugstarter oder ist ein Elektrostarter gefordert?",
+        "element_ids": [
+          "E21",
+          "E28"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Starterbatterie, Generatorleistung und Leitungssatz ab.",
+        "variante_ids": [
+          "V5"
+        ]
+      },
+      {
+        "id": "K6",
+        "frage": "Soll das Fahrzeug einen Mitfahrerplatz haben?",
+        "element_ids": [
+          "E48",
+          "E49"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Haltesystem, Tunnellänge, Gepäckträger und Federabstimmung ab.",
+        "variante_ids": [
+          "V6"
+        ]
+      },
+      {
+        "id": "K7",
+        "frage": "Soll die Feststellbremse dieselbe Bremsscheibe sperren wie die Betriebsbremse oder als getrennte Sperre wirken?",
+        "element_ids": [
+          "E42",
+          "E47"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Bremssattel, Betätigung und Prüfaufwand ab."
+      },
+      {
+        "id": "K8",
+        "frage": "Welche Anhänger und Zuglasten muss die Anhängevorrichtung aufnehmen, etwa Lastschlitten, Akia oder gefederter Rettungsanhänger?",
+        "element_ids": [
+          "E57",
+          "E58"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Anhängepunkt, Tunnelheck und Laufwerkfederung ab."
+      },
+      {
+        "id": "K9",
+        "frage": "Welche zusätzlichen elektrischen Verbraucher wie Zusatzscheinwerfer, Sitzheizung oder Ladebuchsen muss das Bordnetz versorgen?",
+        "element_ids": [
+          "E61",
+          "E62"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Generatorleistung, Batterie und Absicherung ab."
+      },
+      {
+        "id": "K10",
+        "frage": "Soll das Fahrzeug eine Navigation und eine Diagnoseschnittstelle für Werkstätten erhalten?",
+        "element_ids": [
+          "E66",
+          "E68",
+          "E69"
+        ],
+        "anlass": "schnittstelle",
+        "relevanz": "Davon hängen Steuergeräteumfang, Anzeige und Wartungskonzept ab."
+      },
+      {
+        "id": "K11",
+        "frage": "Soll die Totmanneinrichtung nur Zündung und Kraftstoffpumpe abschalten oder auch den Antrieb elektrisch sperren und ein Warnsignal ausgeben?",
+        "element_ids": [
+          "E70",
+          "E71"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Abschaltkreis, Motorsteuergerät und Anzeige ab."
+      },
+      {
+        "id": "K12",
+        "frage": "In welchen Rechtsräumen soll das Fahrzeug zugelassen oder verkauft werden?",
+        "element_ids": [
+          "E74",
+          "E16",
+          "E2"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Beleuchtungsumfang, Abmessungen, Masse sowie Abgas- und Geräuschgrenzen ab."
+      }
+    ],
+    "anforderungsthemen": [
+      {
+        "id": "R1",
+        "element_ids": [
+          "E2",
+          "E3",
+          "E11"
+        ],
+        "thema": "Abmessungen, Masse und Tragfähigkeit",
+        "kenngroessen": [
+          "Fahrzeugbreite",
+          "Fahrzeuglänge",
+          "Fahrzeugmasse",
+          "Bodendruck",
+          "Federweg"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "VTS (Schweiz): Abmessungen von Motorschlitten",
+            "quellen_id": "Q3",
+            "fundstelle": "Art. 135 Absatz 3; Art. 14 Buchstabe c"
+          },
+          {
+            "bezeichnung": "Motor Vehicle Safety Regulations (Kanada): Definition Schneemobil mit Massegrenze",
+            "quellen_id": "Q7",
+            "fundstelle": "Section 2(1), Definition „snowmobile“"
+          },
+          {
+            "bezeichnung": "40 CFR Part 1051 (USA): Definition Snowmobile mit Breitengrenze",
+            "quellen_id": "Q4",
+            "fundstelle": "§ 1051.801, Definition „Snowmobile“"
+          }
+        ]
+      },
+      {
+        "id": "R2",
+        "element_ids": [
+          "E16",
+          "E18",
+          "E20"
+        ],
+        "thema": "Abgasemission",
+        "kenngroessen": [
+          "Kohlenwasserstoffemission",
+          "Kohlenmonoxidemission",
+          "Familienemissionsgrenzwert"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "40 CFR Part 1051 (USA, neue Freizeitfahrzeuge): Geltung für Schneemobile",
+            "quellen_id": "Q6",
+            "fundstelle": "§ 1051.1 Absatz (a)(1)"
+          },
+          {
+            "bezeichnung": "40 CFR Part 1051 (USA): Abgasgrenzwerte für Schneemobile",
+            "quellen_id": "Q5",
+            "fundstelle": "§ 1051.103 Absatz (a), Table 1"
+          },
+          {
+            "bezeichnung": "VTS (Schweiz): Abgasanforderungen an Motoren von Motorschlitten",
+            "quellen_id": "Q3",
+            "fundstelle": "Anhang 5 Ziffer 212a"
+          }
+        ]
+      },
+      {
+        "id": "R3",
+        "element_ids": [
+          "E16",
+          "E20"
+        ],
+        "thema": "Geräuschemission",
+        "kenngroessen": [
+          "Standgeräusch",
+          "Vorbeifahrgeräusch bei Reisegeschwindigkeit"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "VTS (Schweiz): Grenzwerte der Standmessung für Raupenfahrzeuge",
+            "quellen_id": "Q3",
+            "fundstelle": "Anhang 6 Ziffern 112 und 423"
+          },
+          {
+            "bezeichnung": "36 CFR 7.13 (USA, Yellowstone-Nationalpark): Enhanced emission standards für Schneemobile",
+            "quellen_id": "Q8",
+            "fundstelle": "§ 7.13 Absatz (l)(2), Definition „Enhanced emission standards“"
+          }
+        ]
+      },
+      {
+        "id": "R4",
+        "element_ids": [
+          "E28"
+        ],
+        "thema": "Reichweite und Energieinhalt",
+        "kenngroessen": [
+          "Kraftstofftankinhalt",
+          "Energieinhalt der Traktionsbatterie",
+          "Ladedauer",
+          "Kaltstartfähigkeit"
+        ]
+      },
+      {
+        "id": "R5",
+        "element_ids": [
+          "E38"
+        ],
+        "thema": "Lenkverhalten",
+        "kenngroessen": [
+          "Lenkkraft",
+          "Lenkeinschlag",
+          "Wendekreis"
+        ]
+      },
+      {
+        "id": "R6",
+        "element_ids": [
+          "E42"
+        ],
+        "thema": "Bremswirkung und Festhalten",
+        "kenngroessen": [
+          "Verzögerung",
+          "Haltevermögen am Hang",
+          "Betätigungskraft"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "VTS (Schweiz): Betriebs- und Feststellbremse von Motorschlitten",
+            "quellen_id": "Q3",
+            "fundstelle": "Art. 160 Absätze 1 und 2"
+          }
+        ]
+      },
+      {
+        "id": "R7",
+        "element_ids": [
+          "E48",
+          "E49"
+        ],
+        "thema": "Fahrerplatz und Mitfahrer",
+        "kenngroessen": [
+          "Sitzplatzanzahl",
+          "Haltesystem",
+          "Trittbrettfläche",
+          "Windschutz"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "VTS (Schweiz): Haltesystem, Fußrasten und Trittbretter",
+            "quellen_id": "Q3",
+            "fundstelle": "Art. 160 Absatz 3 in Verbindung mit Art. 146 Absätze 1 und 2"
+          }
+        ]
+      },
+      {
+        "id": "R8",
+        "element_ids": [
+          "E57",
+          "E58"
+        ],
+        "thema": "Anhängelast und Zuladung",
+        "kenngroessen": [
+          "Anhängelast",
+          "Stützlast",
+          "Zuladung"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "VTS (Schweiz): Anhängelast und Verbindungseinrichtung",
+            "quellen_id": "Q3",
+            "fundstelle": "Art. 136 Absatz 3; Art. 160 Absatz 5 in Verbindung mit Art. 146 Absatz 4"
+          }
+        ]
+      },
+      {
+        "id": "R9",
+        "element_ids": [
+          "E61",
+          "E62"
+        ],
+        "thema": "Bordnetzleistung und Kältefestigkeit",
+        "kenngroessen": [
+          "Generatorleistung",
+          "Batteriekapazität",
+          "Dichtheit der Steckverbindungen",
+          "Tieftemperaturfestigkeit"
+        ]
+      },
+      {
+        "id": "R10",
+        "element_ids": [
+          "E66"
+        ],
+        "thema": "Diagnosefähigkeit",
+        "kenngroessen": [
+          "Fehlerspeicherumfang",
+          "Diagnosezugang"
+        ]
+      },
+      {
+        "id": "R11",
+        "element_ids": [
+          "E70",
+          "E71"
+        ],
+        "thema": "Abschaltung bei Fahrerverlust",
+        "kenngroessen": [
+          "Abschaltzeit",
+          "Auslösekraft der Reißleine",
+          "Abdeckung drehender Teile"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "Motor Vehicle Safety Regulations (Kanada): Konformität mit SSCC/11 Supplement",
+            "quellen_id": "Q7",
+            "fundstelle": "Schedule VI, Section 1201 Absatz 1"
+          }
+        ]
+      },
+      {
+        "id": "R12",
+        "element_ids": [
+          "E74"
+        ],
+        "thema": "Sichtbarkeit und Beleuchtung",
+        "kenngroessen": [
+          "Leuchtweite",
+          "Anzahl der Rückstrahler",
+          "Dauerlicht bei laufendem Motor"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "Motor Vehicle Safety Regulations (Kanada): Scheinwerfer bei laufendem Motor",
+            "quellen_id": "Q7",
+            "fundstelle": "Schedule VI, Section 1201 Absatz 7"
+          },
+          {
+            "bezeichnung": "VTS (Schweiz): Beleuchtung von Motorschlitten",
+            "quellen_id": "Q3",
+            "fundstelle": "Art. 160 Absatz 4; Art. 142 Absatz 1"
+          }
+        ]
+      },
+      {
+        "id": "R13",
+        "element_ids": [
+          "E78",
+          "E79"
+        ],
+        "thema": "Wärmehaushalt bei Kälte",
+        "kenngroessen": [
+          "Kühlmitteltemperatur",
+          "Kühlleistung bei geringer Schneelage",
+          "Heizleistung der Griffheizung",
+          "Batterietemperatur"
+        ]
+      }
+    ]
+  },
+  "offene_punkte": [
+    "Glossarvorschlag: Funktion „Motor starten“ (Starten des Verbrennungsmotors über Seilzug- oder Elektrostarter; nicht synonym mit „Antriebsleistung erzeugen“).",
+    "Glossarvorschlag: Funktion „Griffe beheizen“ (elektrische Beheizung von Lenkergriffen und Daumengashebel; nicht synonym mit „Innenraum klimatisieren“, da kein Innenraum vorhanden ist).",
+    "Glossarvorschlag: Hauptsystemname „Fahrerplatz“ für bedienraum bei offenen Sitzfahrzeugen; wie in A-0014 wird vorläufig „Fahrgastraum“ verwendet, obwohl das Schneemobil keinen umschlossenen Raum hat. Für aufbau_nutzlast nennt das Glossar keinen Namen für Schneemobile; verwendet ist „Laderaum und Anhängevorrichtung“.",
+    "Abweichung von der Zuordnungsliste: Lenkrad (lenkung) entfällt und wird durch den Lenker ersetzt; Lenkgetriebe und Lenkunterstützung entfallen im Grundaufbau; Räder und Reifen, Achse und Radaufhängung (struktur_fahrwerk) werden durch Gleiskette, Laufwerk und Skiaufhängung ersetzt.",
+    "Recherche: SSCC/11 Supplement (Snowmobile Safety and Certification Committee, snowmobile.org) und SAE J44, J45, J1282 zu Bremse, Gashebel und Beleuchtung im Original lesen, um P12, P21 und P23 zu belegen; in diesem Lauf nicht frei abrufbar.",
+    "Recherche: Fachquelle zur Motorkühlung mit Wärmetauschern im Tunnel und zur Kühlleistung bei geringer Schneelage (Suchbegriffe: snowmobile tunnel heat exchanger, Schneemobil Kühlung Wärmetauscher), um P25 zu belegen; gefundene Treffer waren nur Patentschriften.",
+    "Recherche: Fachliteratur zu Laufwerk, Gleitschienenfederung und Skiaufhängung (Suchbegriffe: snowmobile skid frame slide rail suspension, snowmobile front suspension) sowie zur Lage der Bremsscheibe an der Kraftübertragung, um P4 und P12 zu belegen.",
+    "Recherche: Fachquelle zu elektrischen Schneemobilen (Hochvolt-Architektur, Batterietemperierung, Kraftübertragung ohne Keilriemenautomatik), um P6, P8 und P25 zu belegen.",
+    "Recherche: Weitere Berichte der University of Idaho (NIATT KLK347, webpages.uidaho.edu) und ROSA-P-Dokumente (rosap.ntl.bts.gov) zu Clean-Snowmobile-Entwicklungen waren in diesem Lauf gesperrt (HTTP 403).",
+    "Recherche: Oldid der abgerufenen Fassung von Q2 nachtragen; die Wikipedia-API lieferte in diesem Lauf eine Ratenbegrenzung.",
+    "Recherche: Zulassungs- und Emissionsrecht für Schneemobile in der EU sowie in Schweden, Norwegen und Finnland (Suchbegriffe: Verordnung (EU) 2016/1628 Schneemobil, snöskoter Transportstyrelsen, moottorikelkka Traficom), um R2, R3 und R12 für den europäischen Raum zu ergänzen."
+  ]
+}

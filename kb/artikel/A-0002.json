@@ -143,7 +143,7 @@
         },
         {
           "absatz_id": "P5",
-          "text": "Die Rohkarosserie des Kombis umfasst Vorderwagen, Bodengruppe, Seitenwände mit A- bis C-Säulen, Seitentüren, Dachstruktur mit D-Säulen und Heckrahmen um die Hecköffnung. Das Fahrwerk umfasst Vorderachse, Hinterachse, Federung und Dämpfung, Räder und Reifen sowie optional eine Niveauregulierung. Die Ladung stützt sich über die Bodengruppe vor allem auf die Hinterachse ab, deren Last stark mit der Beladung schwankt; die Niveauregulierung hält die Fahrzeughöhe, alternativ trägt eine straffere Stahlfederung.",
+          "text": "Die Rohkarosserie des Kombis umfasst Vorderwagen, Bodengruppe, Seitenwände mit A- bis C-Säulen, Seitentüren, Dachstruktur mit D-Säulen, Heckrahmen um die Hecköffnung sowie die Heckklappe, die als Karosserieteil die Hecköffnung verschließt. Das Fahrwerk umfasst Vorderachse, Hinterachse, Federung und Dämpfung, Räder und Reifen sowie optional eine Niveauregulierung. Die Ladung stützt sich über die Bodengruppe vor allem auf die Hinterachse ab, deren Last stark mit der Beladung schwankt; die Niveauregulierung hält die Fahrzeughöhe, alternativ trägt eine straffere Stahlfederung.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -154,7 +154,7 @@
               "P4: Kombis erhalten gegenüber der Limousine eine verstärkte Hinterachse oder eine Niveauregulierung.",
               "Der Laderaum liegt hinter der Rücksitzanlage und damit über oder hinter der Hinterachse (P1, P13)."
             ],
-            "schluss": "Die Rohkarosserie gliedert sich in Vorderwagen, Bodengruppe, Seitenwände mit Seitentüren, Dachstruktur mit D-Säulen und Heckrahmen; das Fahrwerk muss eine stark beladungsabhängige Hinterachslast tragen, wofür Niveauregulierung oder straffere Stahlfederung die Alternativen sind."
+            "schluss": "Die Rohkarosserie gliedert sich in Vorderwagen, Bodengruppe, Seitenwände mit Seitentüren, Dachstruktur mit D-Säulen, Heckrahmen und Heckklappe; das Fahrwerk muss eine stark beladungsabhängige Hinterachslast tragen, wofür Niveauregulierung oder straffere Stahlfederung die Alternativen sind."
           },
           "sicherheit": "mittel",
           "aussagetyp": "loesung",
@@ -350,7 +350,7 @@
         },
         {
           "absatz_id": "P15",
-          "text": "Das Hauptsystem Laderaum und Anhängevorrichtung gliedert sich in den Laderaum mit Heckklappe, Ladeboden, Laderaumabdeckung sowie Trennnetz oder Trenngitter, in die fest oder abnehmbar ausgeführte Anhängevorrichtung mit Kugelkopfkupplung mit Halterung und Anhängersteckdose sowie in die Dachreling. Ladeboden und Halterung leiten Gewichts-, Zug- und Stützkräfte in Bodengruppe und Heckrahmen, die Anhängersteckdose versorgt die Anhängerleuchten aus dem Bordnetz.",
+          "text": "Das Hauptsystem Laderaum und Anhängevorrichtung gliedert sich in den Laderaum mit Ladeboden, Laderaumabdeckung sowie Trennnetz oder Trenngitter, den die Heckklappe der Rohkarosserie nach hinten verschließt, in die fest oder abnehmbar ausgeführte Anhängevorrichtung mit Kugelkopfkupplung mit Halterung und Anhängersteckdose sowie in die Dachreling. Ladeboden und Halterung leiten Gewichts-, Zug- und Stützkräfte in Bodengruppe und Heckrahmen, die Anhängersteckdose versorgt die Anhängerleuchten aus dem Bordnetz.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -358,7 +358,8 @@
               "P13: Der Laderaum besitzt Heckklappe, Ladefläche, Abdeckung und optional Netze oder Gitter.",
               "P14: Die Anhängevorrichtung besteht aus Kupplungskugel und Halterung, fest oder abnehmbar.",
               "P5: Bodengruppe und Heckrahmen bilden die Tragstruktur im Heck.",
-              "Ein gezogener Anhänger braucht elektrische Versorgung seiner Leuchten vom Zugfahrzeug."
+              "Ein gezogener Anhänger braucht elektrische Versorgung seiner Leuchten vom Zugfahrzeug.",
+              "P5: Die Heckklappe gehört als Karosserieteil zur Rohkarosserie."
             ],
             "schluss": "Das Hauptsystem gliedert sich in Laderaum, Anhängevorrichtung und Dachreling; seine Lasten gehen in Bodengruppe und Heckrahmen, die Anhängersteckdose koppelt es an das Bordnetz."
           },
@@ -1122,8 +1123,9 @@
         "id": "E50",
         "name": "Heckklappe",
         "typ": "komponente",
-        "eltern_id": "E49",
+        "eltern_id": "E3",
         "absatz_ids": [
+          "P5",
           "P13",
           "P15",
           "P16"

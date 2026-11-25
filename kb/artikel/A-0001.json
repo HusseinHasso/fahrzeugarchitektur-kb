@@ -228,7 +228,7 @@
         },
         {
           "absatz_id": "P8",
-          "text": "Das Antriebssystem erzeugt Antriebsleistung und überträgt Drehmoment auf die angetriebenen Räder. Quelle ist ein Verbrennungsantrieb, ein Elektroantrieb aus Traktionsmaschine und Leistungselektronik, bei Hybriden beides, beim Brennstoffzellenantrieb ein Brennstoffzellensystem, das den Elektroantrieb speist. Zum Verbrennungsantrieb gehören Verbrennungsmotor, Luftversorgung, Abgasanlage mit Abgasnachbehandlung und Starter. Hybride koppeln beide Pfade seriell, parallel oder leistungsverzweigt. Die Kraftübertragung umfasst Getriebe, Differential und Antriebswellen; die Traktionsmaschine arbeitet im Schubbetrieb als Generator.",
+          "text": "Das Antriebssystem erzeugt Antriebsleistung und überträgt Drehmoment auf die angetriebenen Räder. Quelle ist ein Verbrennungsantrieb, ein Elektroantrieb aus Traktionsmaschine und Leistungselektronik, bei Hybriden beides, beim Brennstoffzellenantrieb ein Elektroantrieb, den das Brennstoffzellensystem des Energieversorgungssystems über das Hochvolt-Bordnetz speist. Zum Verbrennungsantrieb gehören Verbrennungsmotor, Luftversorgung, Abgasanlage mit Abgasnachbehandlung und Starter. Hybride koppeln beide Pfade seriell, parallel oder leistungsverzweigt. Die Kraftübertragung umfasst Getriebe, Differential und Antriebswellen; die Traktionsmaschine arbeitet im Schubbetrieb als Generator.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -241,7 +241,7 @@
               "Zwei Antriebspfade lassen sich in Reihe, parallel oder über ein Verzweigungsgetriebe koppeln",
               "Drehzahl und Drehmoment der Antriebsmaschine müssen an die Räder angepasst und verteilt werden"
             ],
-            "schluss": "Das Antriebssystem besteht je nach Antriebsart aus Verbrennungsantrieb, Elektroantrieb, Brennstoffzellensystem oder Kombinationen davon und einer Kraftübertragung aus Getriebe, Differential und Antriebswellen."
+            "schluss": "Das Antriebssystem besteht je nach Antriebsart aus Verbrennungsantrieb, Elektroantrieb oder beiden und einer Kraftübertragung aus Getriebe, Differential und Antriebswellen; beim Brennstoffzellenantrieb speist das Brennstoffzellensystem des Energieversorgungssystems den Elektroantrieb."
           },
           "sicherheit": "mittel",
           "aussagetyp": "loesung",
@@ -268,7 +268,7 @@
         },
         {
           "absatz_id": "P10",
-          "text": "Das Energieversorgungssystem speichert die Energie für Antrieb und Bordnetz. Beim Verbrennungsantrieb besteht es aus der Kraftstoffanlage mit Kraftstofftank und Kraftstoffpumpe. Elektrifizierte Pkw besitzen ein Hochvoltspeichersystem aus Traktionsbatterie und, wenn extern aufladbar, Ladeeinrichtung mit Fahrzeugeinlass; Plug-in-Hybride vereinen beide Pfade. Brennstoffzellen-Pkw besitzen statt der Kraftstoffanlage ein Wasserstoffspeichersystem aus Wasserstoff-Druckbehälter und Druckregler sowie eine Pufferbatterie im Hochvoltspeichersystem. Die Niedervoltversorgung besteht aus Bordnetzbatterie und Ladequelle, beim Verbrennungsantrieb einem Generator, bei elektrifizierten Pkw einem Gleichspannungswandler am Hochvolt-Bordnetz.",
+          "text": "Das Energieversorgungssystem speichert, wandelt und verteilt die Energie für Antrieb und Bordnetz. Beim Verbrennungsantrieb besteht es aus der Kraftstoffanlage mit Kraftstofftank und Kraftstoffpumpe. Elektrifizierte Pkw besitzen ein Hochvoltspeichersystem aus Traktionsbatterie und, wenn extern aufladbar, Ladeeinrichtung mit Fahrzeugeinlass; Plug-in-Hybride vereinen beide Pfade. Brennstoffzellen-Pkw besitzen statt der Kraftstoffanlage ein Wasserstoffspeichersystem aus Wasserstoff-Druckbehälter und Druckregler sowie eine Pufferbatterie im Hochvoltspeichersystem; das Brennstoffzellensystem wandelt den Wasserstoff in elektrische Energie und speist sie in das Hochvolt-Bordnetz ein. Das Hochvolt-Bordnetz verbindet bei elektrifizierten Pkw Traktionsbatterie, Ladeeinrichtung, Brennstoffzellensystem und Gleichspannungswandler mit der Leistungselektronik des Antriebssystems und den elektrischen Nebenaggregaten. Die Niedervoltversorgung besteht aus Bordnetzbatterie und Ladequelle, beim Verbrennungsantrieb einem Generator, bei elektrifizierten Pkw einem Gleichspannungswandler am Hochvolt-Bordnetz.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -279,9 +279,10 @@
               "Q6 Abs. 1.2 (Batterien für Start, Beleuchtung und Hilfssysteme sind vom Traktionsspeicher getrennt)",
               "Jeder Antriebspfad braucht einen eigenen Energiespeicher, ein Kraftstoff oder Wasserstoff zusätzlich eine Förderung oder Druckregelung zum Wandler",
               "Annahme: Wasserstoff wird im Pkw als Druckgas gespeichert",
-              "Eine Bordnetzbatterie braucht eine Ladequelle an Bord"
+              "Eine Bordnetzbatterie braucht eine Ladequelle an Bord",
+              "Elektrische Energie aus Traktionsbatterie oder Brennstoffzelle muss über Hochvoltleitungen zu Leistungselektronik, Gleichspannungswandler und Hochvoltverbrauchern gelangen"
             ],
-            "schluss": "Das Energieversorgungssystem gliedert sich je nach Antriebsart in Kraftstoffanlage, Wasserstoffspeichersystem, Hochvoltspeichersystem und Niedervoltversorgung."
+            "schluss": "Das Energieversorgungssystem gliedert sich je nach Antriebsart in Kraftstoffanlage, Wasserstoffspeichersystem mit Brennstoffzellensystem, Hochvoltspeichersystem mit Hochvolt-Bordnetz und Niedervoltversorgung."
           },
           "sicherheit": "mittel",
           "aussagetyp": "loesung",
@@ -477,7 +478,7 @@
         },
         {
           "absatz_id": "P21",
-          "text": "Das Hauptsystem Elektrik und Elektronik verteilt elektrische Energie und vernetzt die Steuergeräte. Die Bordnetze gliedern sich in das Niedervolt-Bordnetz mit Stromverteiler, Sicherungen und Kabelsatz und, bei elektrifizierten Pkw, das Hochvolt-Bordnetz zwischen Traktionsbatterie, Leistungselektronik, Ladeeinrichtung und elektrischen Nebenaggregaten. Steuergeräte werten Sensorsignale aus, steuern Aktoren und tauschen Daten über den Fahrzeugbus aus. Ob Funktionen auf Domänen- oder Zonensteuergeräte verteilt werden, ist eine Architekturentscheidung.",
+          "text": "Das Hauptsystem Elektrik und Elektronik verteilt elektrische Energie und vernetzt die Steuergeräte. Zu den Bordnetzen gehört das Niedervolt-Bordnetz mit Stromverteiler, Sicherungen und Kabelsatz; das Hochvolt-Bordnetz elektrifizierter Pkw gehört zum Energieversorgungssystem und speist das Niedervolt-Bordnetz über den Gleichspannungswandler. Steuergeräte werten Sensorsignale aus, steuern Aktoren und tauschen Daten über den Fahrzeugbus aus. Ob Funktionen auf Domänen- oder Zonensteuergeräte verteilt werden, ist eine Architekturentscheidung.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -488,7 +489,7 @@
               "Jeder elektrische Verbraucher braucht eine abgesicherte Zuleitung",
               "Verteilte Regelfunktionen erfordern einen Datenaustausch zwischen Steuergeräten"
             ],
-            "schluss": "Elektrik und Elektronik bestehen aus Niedervolt- und Hochvolt-Bordnetz, Steuergeräten und Fahrzeugbus; die Funktionsverteilung auf Steuergeräte ist eine offene Architekturentscheidung."
+            "schluss": "Elektrik und Elektronik bestehen aus dem Niedervolt-Bordnetz, Steuergeräten und Fahrzeugbus und sind über den Gleichspannungswandler an das Hochvolt-Bordnetz der Energieversorgung angebunden; die Funktionsverteilung auf Steuergeräte ist eine offene Architekturentscheidung."
           },
           "sicherheit": "mittel",
           "aussagetyp": "loesung",
@@ -739,7 +740,7 @@
       "absaetze": [
         {
           "absatz_id": "P33",
-          "text": "Kraftstoff, Wasserstoff und Hochvoltstrom fließen von der Energieversorgung zu Verbrennungsmotor, Brennstoffzellensystem und Leistungselektronik; Drehmoment fließt über die Kraftübertragung zu Rädern und Reifen, an denen auch die Radbremsen wirken. Unterdruck speist die Betätigungseinrichtung. Steuergeräte erhalten Fahrereingaben und Sensordaten und steuern über den Fahrzeugbus Bremsregelung, Lenkunterstützung und Lichtanlage an. Kühlmittel- und Kältemittelkreislauf führen Wärme ab.",
+          "text": "Innerhalb der Energieversorgung strömt Wasserstoff zum Brennstoffzellensystem, das wie die Traktionsbatterie Hochvoltstrom in das Hochvolt-Bordnetz speist; Kraftstoff und Hochvoltstrom fließen von dort zu Verbrennungsmotor und Leistungselektronik; Drehmoment fließt über die Kraftübertragung zu Rädern und Reifen, an denen auch die Radbremsen wirken. Unterdruck speist die Betätigungseinrichtung. Steuergeräte erhalten Fahrereingaben und Sensordaten und steuern über den Fahrzeugbus Bremsregelung, Lenkunterstützung und Lichtanlage an. Kühlmittel- und Kältemittelkreislauf führen Wärme ab.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -768,7 +769,7 @@
       "absaetze": [
         {
           "absatz_id": "P34",
-          "text": "Funktional tragen Karosserie und Fahrwerk die Fahrzeuglasten; Crashstruktur, Sitze und Sicherheitsgurte und Insassenschutzsystem schützen die Insassen. Verbrennungsmotor, Traktionsmaschine und Brennstoffzellensystem erzeugen Antriebsleistung, Kraftübertragung und Nebenaggregatetrieb übertragen Drehmoment, Antriebssystem und Räder bewegen das Fahrzeug fort. Kraftstofftank, Wasserstoff-Druckbehälter, Traktionsbatterie und Bordnetzbatterie speichern Energie, Kraftstoffpumpe und Druckregler fördern Treibstoff, die Ladeeinrichtung lädt die Traktionsbatterie, Bordnetze und Gleichspannungswandler verteilen elektrische Energie. Lenksystem und Notfall-Spurhalteassistent lenken, Betriebsbremsanlage, Bremsregelung und Notbremsassistent verzögern, Traktionsmaschine und Leistungselektronik gewinnen Bremsenergie zurück, die Feststellbremsanlage hält das Fahrzeug fest. Bedien- und Anzeigeelemente erfassen Fahrereingaben und zeigen Fahrerinformationen an, Heiz- und Klimagerät und Kältemittelkreislauf klimatisieren den Innenraum, Gepäckraum und Anhängevorrichtung nehmen Ladung auf. Fahrzeugbus und Telematikeinheit übertragen Daten, die Telematikeinheit bestimmt die Fahrzeugposition; Fahrzeugmanagement, Steuergeräte, Diagnoseschnittstelle, Unfalldatenspeicher und Reifendrucküberwachung überwachen den Fahrzeugzustand, das Müdigkeitswarnsystem den Fahrerzustand. Umfeldsensorik und Rückfahrassistent erfassen das Fahrzeugumfeld, Scheinwerfer leuchten die Fahrzeugumgebung aus, Signalleuchten geben Lichtsignale ab, Scheibenreinigungsanlage und Rückspiegel stellen die Fahrersicht sicher. Kühlmittelkreislauf, Kältemittelkreislauf und Kühlerlüftermodul regeln die Betriebstemperatur, die Unterdruckversorgung stellt Unterdruck bereit.",
+          "text": "Funktional tragen Karosserie und Fahrwerk die Fahrzeuglasten; Crashstruktur, Sitze und Sicherheitsgurte und Insassenschutzsystem schützen die Insassen. Verbrennungsmotor, Traktionsmaschine und Brennstoffzellensystem erzeugen Antriebsleistung, Kraftübertragung und Nebenaggregatetrieb übertragen Drehmoment, Antriebssystem und Räder bewegen das Fahrzeug fort. Kraftstofftank, Wasserstoff-Druckbehälter, Traktionsbatterie und Bordnetzbatterie speichern Energie, Kraftstoffpumpe und Druckregler fördern Treibstoff, die Ladeeinrichtung lädt die Traktionsbatterie, Niedervolt-Bordnetz, Hochvolt-Bordnetz und Gleichspannungswandler verteilen elektrische Energie. Lenksystem und Notfall-Spurhalteassistent lenken, Betriebsbremsanlage, Bremsregelung und Notbremsassistent verzögern, Traktionsmaschine und Leistungselektronik gewinnen Bremsenergie zurück, die Feststellbremsanlage hält das Fahrzeug fest. Bedien- und Anzeigeelemente erfassen Fahrereingaben und zeigen Fahrerinformationen an, Heiz- und Klimagerät und Kältemittelkreislauf klimatisieren den Innenraum, Gepäckraum und Anhängevorrichtung nehmen Ladung auf. Fahrzeugbus und Telematikeinheit übertragen Daten, die Telematikeinheit bestimmt die Fahrzeugposition; Fahrzeugmanagement, Steuergeräte, Diagnoseschnittstelle, Unfalldatenspeicher und Reifendrucküberwachung überwachen den Fahrzeugzustand, das Müdigkeitswarnsystem den Fahrerzustand. Umfeldsensorik und Rückfahrassistent erfassen das Fahrzeugumfeld, Scheinwerfer leuchten die Fahrzeugumgebung aus, Signalleuchten geben Lichtsignale ab, Scheibenreinigungsanlage und Rückspiegel stellen die Fahrersicht sicher. Kühlmittelkreislauf, Kältemittelkreislauf und Kühlerlüftermodul regeln die Betriebstemperatur, die Unterdruckversorgung stellt Unterdruck bereit.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -1322,10 +1323,12 @@
         "id": "E50",
         "name": "Hochvolt-Bordnetz",
         "typ": "komponente",
-        "eltern_id": "E48",
+        "eltern_id": "E19",
         "absatz_ids": [
           "P10",
-          "P21"
+          "P21",
+          "P33",
+          "P34"
         ]
       },
       {
@@ -1640,11 +1643,12 @@
         "id": "E81",
         "name": "Brennstoffzellensystem",
         "typ": "komponente",
-        "eltern_id": "E10",
+        "eltern_id": "E19",
         "absatz_ids": [
           "P8",
           "P33",
-          "P34"
+          "P34",
+          "P10"
         ]
       },
       {
@@ -1835,7 +1839,8 @@
         "id": "F9",
         "name": "Elektrische Energie verteilen",
         "ausgefuehrt_von": [
-          "E48",
+          "E49",
+          "E50",
           "E28"
         ],
         "absatz_ids": [
@@ -2685,7 +2690,7 @@
           },
           {
             "element_id": "E81",
-            "beschreibung": "Das Brennstoffzellensystem kommt nur beim Brennstoffzellenantrieb hinzu und speist den Elektroantrieb."
+            "beschreibung": "Das Brennstoffzellensystem im Energieversorgungssystem kommt nur beim Brennstoffzellenantrieb hinzu und speist den Elektroantrieb."
           }
         ],
         "absatz_ids": [
@@ -3012,7 +3017,7 @@
           "E19"
         ],
         "anlass": "architekturentscheidung",
-        "relevanz": "Davon hängen die Struktur von Antriebssystem, Energieversorgung, Hochvolt-Bordnetz, Thermomanagement und Nebensystemen ab.",
+        "relevanz": "Davon hängen die Struktur von Antriebssystem, Energieversorgung mit Hochvolt-Bordnetz und Brennstoffzellensystem, Thermomanagement und Nebensystemen ab.",
         "variante_ids": [
           "V1"
         ]
@@ -3355,8 +3360,9 @@
       {
         "id": "R9",
         "element_ids": [
-          "E47",
-          "E50"
+          "E19",
+          "E50",
+          "E47"
         ],
         "thema": "Elektrische Sicherheit",
         "kenngroessen": [

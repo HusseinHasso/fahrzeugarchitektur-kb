@@ -1,0 +1,1089 @@
+{
+  "schema_version": "2.3",
+  "artikel_id": "A-0052",
+  "artikeltyp": "blatt",
+  "titel": "Kampfpanzer",
+  "betrachtungsumfang": "Generische Referenzarchitektur moderner Kampfpanzer auf Gleisketten mit drehbarem Turm und Kanone als Hauptwaffe, wie sie die Begriffsbestimmung des KSE-Vertrags erfasst (Geltungsbereich: Vertragsstaaten, Anwendungsgebiet Atlantik bis Ural). Betrachtete Antriebsarten: Dieselmotor und Gasturbine (Energiespeicher Kraftstofftank, Energiewandler Verbrennungsmotor) sowie Hybrid mit elektrischem Antriebsstrang (zusätzlich Traktionsbatterie, Stromrichter und Traktionsmaschine). Ausgeschlossen sind rein batterieelektrische, Wasserstoff- und Brennstoffzellenantriebe, Radkampfpanzer, turmlose Kasemattpanzer, Ableitungen wie Berge- oder Pionierpanzer sowie Munitions- und Waffenwirkung im Detail.",
+  "status": "in_arbeit",
+  "quellenzugriff": "ja",
+  "kindartikel_ids": [],
+  "quellen": [
+    {
+      "quellen_id": "Q1",
+      "titel": "Treaty on Conventional Armed Forces in Europe (Vertrag über Konventionelle Streitkräfte in Europa, KSE-Vertrag)",
+      "urheber": "Vertragsstaaten des KSE-Vertrags; Veröffentlichung durch die OSZE",
+      "stand": "19. November 1990",
+      "url": "https://www.osce.org/files/f/documents/4/9/14087.pdf",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q2",
+      "titel": "Fahrmechanik der Kettenfahrzeuge",
+      "urheber": "Wolfgang Merhof; Ernst-Michael Hackbarth (Hrsg.), Universität der Bundeswehr München",
+      "stand": "Dezember 2015, ISBN 978-3-943207-13-2",
+      "url": "https://athene-forschung.unibw.de/doc/111331/111331.pdf",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "fachliteratur"
+    },
+    {
+      "quellen_id": "Q3",
+      "titel": "Kampfpanzer",
+      "urheber": "Wikipedia, die freie Enzyklopädie (deutschsprachig)",
+      "stand": "Version vom 23. September 2026, Revision 270736367",
+      "url": "https://de.wikipedia.org/wiki/Kampfpanzer",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q4",
+      "titel": "Main battle tank",
+      "urheber": "Wikipedia, the free encyclopedia (englischsprachig)",
+      "stand": "Revision 1387684057",
+      "url": "https://en.wikipedia.org/wiki/Main_battle_tank",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    }
+  ],
+  "abschnitte": [
+    {
+      "ueberschrift": "Einleitung",
+      "abschnittstyp": "gesamtsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P1",
+          "text": "Der Vertrag über Konventionelle Streitkräfte in Europa (KSE-Vertrag) bestimmt den Kampfpanzer als gepanzertes Kampffahrzeug mit Eigenantrieb, hoher Feuerkraft vor allem aus einer Kanone mit hoher Mündungsgeschwindigkeit, großer Geländegängigkeit und hohem Selbstschutz, das nicht vorrangig Kampftruppen transportiert. Erfasst sind Kettenkampffahrzeuge ab 16,5 t Leergewicht mit einer um 360 Grad schwenkbaren Kanone ab 75 mm Kaliber sowie Radkampffahrzeuge, die alle übrigen Kriterien erfüllen. Die Begriffsbestimmung gilt für die Vertragsstaaten im Anwendungsgebiet vom Atlantik bis zum Ural.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Artikel II Absatz 1 Buchstabe C (Begriffsbestimmung „battle tank“)"
+            },
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Artikel II Absatz 1 Buchstabe B (Anwendungsgebiet)"
+            }
+          ],
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P2",
+          "text": "Typischerweise sind Kampfpanzer gepanzerte Gleiskettenfahrzeuge mit einer Kanone als Hauptwaffe in einem rundum drehbaren Turm, ausgelegt als Kompromiss aus Panzerung, Feuerkraft und Beweglichkeit. Die meist drei- oder vierköpfige Besatzung besteht aus dem Fahrer in der Wanne sowie Kommandant, Richtschütze und, ohne Ladeautomat, einem Ladeschützen im Turm. Den Kampfwert bestimmen Beweglichkeit, Feuerkraft, Schutz, Führbarkeit und Verfügbarkeit, die miteinander verknüpft sind.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Einleitung des Artikels (Absätze zwei und drei)"
+            },
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Kap. 1 Einführung, S. 1"
+            }
+          ],
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P3",
+          "text": "Architekturell ist der Kampfpanzer ein Gesamtsystem, dessen Systeme über mechanische, elektrische, hydraulische, thermische, stoffliche und informationstechnische Schnittstellen gekoppelt sind. Prägend ist die Teilung in Wanne und drehbaren Turm, denn jeder Fluss zwischen beiden quert die Drehverbindung. Die Dekomposition führt die Waffenanlage unter Aufbau und Ladung, den Besatzungsraum unter Fahrerhaus und reicht bis zu den Komponenten.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P2",
+              "Ein rundum drehbarer Turm kann mit der Wanne nur über eine Drehverbindung Energie, Stoffe und Informationen austauschen.",
+              "Antrieb, Hydraulik, Kühlung, Kraftstoff und Steuergeräte erzeugen mechanische, hydraulische, thermische, stoffliche, elektrische und informationstechnische Kopplungen."
+            ],
+            "schluss": "Der Kampfpanzer ist als Gesamtsystem mit gekoppelten Hauptsystemen zu modellieren, dessen Schnittstellen wesentlich durch die Wanne-Turm-Drehverbindung geprägt sind."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrzeugstruktur und Fahrwerk",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E2",
+      "absaetze": [
+        {
+          "absatz_id": "P4",
+          "text": "Fahrzeugstruktur und Fahrwerk tragen beim Kampfpanzer Lasten und Schutz zugleich. Zentrales Element ist die Wanne, ein geschlossener Panzerkörper, der Triebwerk, Fahrerraum und Kraftstoff aufnimmt und über den Turmdrehkranz den Turm trägt. Die Panzerung ist Teil der tragenden Struktur, Zusatzpanzerung wird außen auf Wanne und Turm gesetzt. Federung und Schwingungsdämpfer verbinden das Kettenlaufwerk mit der Wanne, in die Gewichtskraft, Laufwerkskräfte und der Rückstoß der Hauptwaffe münden.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P2",
+              "P5",
+              "P6",
+              "Q3, Abschnitt Mobilität und Antrieb: Triebwerk in der Wanne (Heck oder Front)"
+            ],
+            "schluss": "Die gepanzerte Wanne ist tragende Struktur und Schutzträger zugleich; sie nimmt Triebwerk, Fahrerraum und Turm auf und leitet Laufwerks- und Rückstoßkräfte ab."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P5",
+          "text": "Seit den 1970er Jahren tragen Kampfpanzer normalerweise Verbundpanzerung aus Metall und Keramiken, teilweise ergänzt durch Reaktivpanzerung gegen Hohlladungsgeschosse. Zunehmend verbreitet ist modular aufmontierte Panzerung, die Reparatur, Wartung und spätere Anpassung des Schutzstandards erleichtert. Klassisch sind Bug und Turmfront stark, Boden, Dach und Heck relativ schwach gepanzert; Einsätze haben jedoch gezeigt, dass ausreichender Rundumschutz unverzichtbar ist.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Abschnitt Technik, Unterabschnitt Schutzeinrichtungen, Absätze eins und zwei"
+            }
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P6",
+          "text": "Das Kettenlaufwerk besteht im Wesentlichen aus dem Triebrad, je nach Antriebsart vorn oder hinten liegend, dem Leitrad mit Kettenspannvorrichtung auf der Gegenseite, den Laufrollen, die das Fahrzeuggewicht tragen und die Kette führen, und den Stützrollen für das obere Kettentrum. Die Gleiskette ist als Scharnier- oder Verbinderkette ausgeführt. Das Laufwerk überträgt Antriebs-, Brems- und Seitenkräfte, federt und dämpft den Aufbau, stabilisiert die Wanne als Schießplattform vor und fängt bei Kampffahrzeugen den Rückstoß der Bordwaffe ab.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Kap. 2.2.2.1 Aufbau der Kettenlaufwerke, S. 21–22"
+            },
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Inhaltsverzeichnis, Kap. 5.2.2.2 Leiträder mit Kettenspannvorrichtung"
+            },
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Kap. 5.1.1 Aufgaben des Laufwerks, S. 367–368"
+            }
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P7",
+          "text": "Bei der Drehstabfederung stützt sich die Laufrolle über einen Schwingarm auf eine meist an der gegenüberliegenden Wannenseite gelagerte Drehstabfeder; sie ist geschützt eingebaut und wartungsfrei, im Betrieb aber nicht regelbar. Hydropneumatische Feder-Dämpfer-Elemente nutzen die Kompressibilität eines Gases. Geregelte Laufwerke sollen Hub- und Nickbewegungen unterdrücken, die Besatzung entlasten, Niveauregulierung und Blockierung für den Waffeneinsatz ermöglichen und bei Ausfall eine passive Rückfallebene behalten.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Kap. 5.4.2.2 Federung mit Drehstab, S. 445"
+            },
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Kap. 5.4.2.3 Hydropneumatische Feder-Dämpfer-Elemente, S. 453"
+            },
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Kap. 5.5 Geregelte Laufwerke, S. 464"
+            }
+          ],
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Antriebssystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E14",
+      "absaetze": [
+        {
+          "absatz_id": "P8",
+          "text": "Vorherrschender Antrieb für Panzerfahrzeuge ist im 21. Jahrhundert der aufgeladene Dieselmotor. Die Gasturbine, etwa im M1 Abrams und im T-80, ist bei gleicher Leistung leichter, verbraucht aber wesentlich mehr Kraftstoff, was die Reichweite einschränkt und die Treibstoffnachführung erschwert. Das Triebwerk liegt bei vielen Modellen im Heck; Fronttriebler wie der Merkava nutzen es als zusätzlichen Schutz der Besatzung und erlauben eine Heckausstiegsluke, schränken aber den Waffenrichtbereich ein.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Abschnitt Technik, Unterabschnitt Mobilität und Antrieb, Absätze drei bis sieben"
+            }
+          ],
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P9",
+          "text": "Der Leistungsfluss verläuft vom Verbrennungsmotor des Triebwerks mit Luftfilteranlage und Abgasanlage über die Kraftübertragung zu den Triebrädern. Weil Dieselmotor und Gasturbine die Fahrwiderstände nicht ohne Kennungswandler abdecken, folgt ein lastschaltbares Getriebe mit hydrodynamischem Wandler, das mit dem Lenkgetriebe einen Block bildet; je Seite übersetzt ein Seitenvorgelege auf das Triebrad. Im hybriden Fall treibt der elektrische Antriebsstrang aus Stromrichter und je einer Traktionsmaschine pro Seite die Seitenvorgelege an.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "Q2, Kap. 2.2.1, S. 19–20: Motorleistung abzüglich Triebwerksverluste steht am Kettentriebrad an",
+              "Q2, Kap. 4.1, S. 183: Verbrennungsmotor und Gasturbine benötigen einen Kennungswandler",
+              "Q2, S. 208: für militärische Kettenfahrzeuge ist das lastschaltbare Automatikgetriebe mit hydrodynamischem Wandler vorzuziehen",
+              "Q2, Kap. 3.1, S. 108: Staubbelastung und Filterung sind Beurteilungskriterien des Antriebsmotors",
+              "Q3: Schalt-Lenkgetriebe als Block, Seitenvorgelege bei Frontantrieb",
+              "P10"
+            ],
+            "schluss": "Die Kraftübertragung folgt der Kette Verbrennungsmotor, Getriebe mit Wandler, Seitenvorgelege und Triebrad; im hybriden Fall ersetzen Traktionsmaschinen je Seite den mechanischen Pfad bis zum Seitenvorgelege."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P10",
+          "text": "Ein elektrischer Antrieb für Kettenfahrzeuge umfasst Energieversorgung, Stromrichter, Elektromotoren und Steuerung oder Regelung. Ein zusätzlicher Kennungswandler ist prinzipiell nicht erforderlich, und weil keine mechanische Verbindung zwischen Energieversorgung und Elektromotor nötig ist, ist die Raumaufteilung weniger eingeschränkt. Für die Kurvenfahrt bietet sich je ein Elektromotor links und rechts an, der Zwei-Ecken-Antrieb. Der Entwicklungsträger M1E3 sieht einen Hybridantriebsstrang vor.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Kap. 3.7 Elektrischer Antrieb und Kap. 3.7.1 Elektromotoren, S. 150–151"
+            },
+            {
+              "quellen_id": "Q4",
+              "fundstelle": "Abschnitt Current and future MBT development, Eintrag M1E3 Abrams"
+            }
+          ],
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Energieversorgungssystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E25",
+      "absaetze": [
+        {
+          "absatz_id": "P11",
+          "text": "Das Energieversorgungssystem stellt Kraftstoff und elektrische Energie bereit. Die Kraftstoffversorgung aus Kraftstofftank, Leitungen und Förderpumpen speist den Verbrennungsmotor. Die elektrische Energiebereitstellung umfasst den vom Triebwerk angetriebenen Generator, die Bordnetzbatterie und ein Hilfsstromaggregat für den Betrieb bei stehendem Triebwerk. Im hybriden Fall speist zusätzlich eine Traktionsbatterie über den Stromrichter die Traktionsmaschinen.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P8",
+              "P10",
+              "P12",
+              "Ein Verbrennungsmotor benötigt einen Kraftstoffspeicher und eine Förderung; ein Bordnetz benötigt Erzeuger und Speicher."
+            ],
+            "schluss": "Die Energieversorgung gliedert sich in Kraftstoffversorgung und elektrische Energiebereitstellung mit Generator, Bordnetzbatterie, Hilfsstromaggregat und im hybriden Fall Traktionsbatterie."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P12",
+          "text": "Weil Diesel- und Gasturbinentriebwerke im Leerlauf viel Treibstoff verbrauchen und die Batterien den Energiebedarf der Systeme beim längeren Verweilen in Stellungen oder beim Beobachtungshalt nur kurz decken, werden zusätzliche Stromerzeuger eingesetzt; diese Hilfsmotoren senken Treibstoffverbrauch, Infrarotsignatur und Geräuschentwicklung. Außenstauraum kann zusätzlichen Kraftstoff aufnehmen.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Abschnitt Technik, Unterabschnitt Mobilität und Antrieb, Absatz fünf"
+            },
+            {
+              "quellen_id": "Q4",
+              "fundstelle": "Abschnitt Storage, Absatz eins"
+            }
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Lenksystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E33",
+      "absaetze": [
+        {
+          "absatz_id": "P13",
+          "text": "Ein Kettenfahrzeug lenkt über unterschiedliche Drehzahlen der beiden Kettentriebräder, die das Lenkgetriebe erzeugt: Der Geradeausbewegung wird eine Wendebewegung überlagert, die den Kurvenradius bestimmt. Die meisten westlichen militärischen Kettenfahrzeuge nutzen symmetrische Lenkgetriebe, bei denen ein Ausgleichsorgan beide Triebräder verbindet und die Innenkette um so viel langsamer läuft, wie die Außenkette schneller angetrieben wird. Leopard 2, M1 A2 und Leclerc haben stufenlose Überlagerungs-Lenkgetriebe, T 80 U und T 90S Umlauf-Lenkgetriebe.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Kap. 4.2.1 Erzeugung der Lenkübersetzung und Kap. 4.2.1.2 Symmetrische Lenkgetriebe, S. 208–210"
+            },
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Kap. 1, Tabelle 1.1 Leistungsdaten ausgeführter Kampfpanzer, S. 3"
+            }
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P14",
+          "text": "Das Lenksystem verbindet die Lenkeingabe am Fahrerplatz mit dem Lenkgetriebe, das physisch mit dem Getriebe zum Schalt-Lenkgetriebe vereint ist. Beim stufenlosen Überlagerungs-Lenkgetriebe erzeugt ein hydrostatischer Lenkantrieb die Wendedrehzahl, die ein Summierungsgetriebe beiden Abtrieben überlagert. Beim elektrischen Zwei-Ecken-Antrieb entfällt das mechanische Lenkgetriebe; gelenkt wird über die Drehzahlvorgabe an beide Traktionsmaschinen, sodass Lenkung und Antriebssteuerung zusammenfallen.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P13",
+              "P10",
+              "Q2, Inhaltsverzeichnis Kap. 4.4.2.1.2 Bedeutung des Summierungsgetriebes und Kap. 4.4.2.3.3.1 Hydrostatische Lenkgetriebe",
+              "Q3: Motor und Schalt-Lenkgetriebe als Block"
+            ],
+            "schluss": "Das Lenksystem besteht aus Lenkeingabe, Lenkgetriebe und gegebenenfalls hydrostatischem Lenkantrieb; beim Zwei-Ecken-Antrieb geht die Lenkfunktion in die Ansteuerung der Traktionsmaschinen über."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Bremssystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E37",
+      "absaetze": [
+        {
+          "absatz_id": "P15",
+          "text": "Das Bremssystem verzögert den Kampfpanzer und hält ihn fest. Da nur die Triebräder formschlüssig in die Ketten greifen, wirken Betriebsbremse und Feststellbremse auf die Abtriebe zu den Triebrädern, nicht auf die Laufrollen. Eine verschleißfreie Dauerbremse, etwa ein Retarder im Getriebe, kann die Betriebsbremse entlasten. Manche Lenkgetriebe nutzen Lenkbremsen, sodass Brems- und Lenkfunktion konstruktiv verschränkt sind.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P6",
+              "Q2, S. 2: Bremseigenschaften gehören zur Beweglichkeit",
+              "Q2, S. 109: Bremswirkung des Antriebs als Anforderung an das Triebwerk",
+              "Q2, Abb. 4.20, S. 210: Lenkbremsen in Lenkgetrieben",
+              "Fachwissen: Lage der Betriebsbremse am Abtrieb und hydrodynamischer Retarder"
+            ],
+            "schluss": "Bremsmomente müssen über die Triebräder in die Kette eingeleitet werden; Dauerbremse und Lenkbremsen koppeln das Bremssystem an Getriebe und Lenkgetriebe."
+          },
+          "sicherheit": "gering",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrerhaus (Besatzungsraum)",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E41",
+      "absaetze": [
+        {
+          "absatz_id": "P16",
+          "text": "Den Bedienraum bildet kein abgesetztes Fahrerhaus, sondern der gepanzerte Besatzungsraum. Er gliedert sich in den Fahrerraum in der Wanne mit Luke, Bedienelementen für Fahrt, Lenkung und Bremse sowie Anzeigeelementen für den Fahrzeugzustand und den Kampfraum im Turm mit Kommandantenplatz, Richtschützenplatz und gegebenenfalls Ladeschützenplatz. Kommandant und Richtschütze bedienen dort die Feuerleitanlage, der Kommandant zusätzlich Funk und Führungsinformationssystem.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P2",
+              "P17",
+              "P20",
+              "P22"
+            ],
+            "schluss": "Der Bedienraum teilt sich in Fahrerraum in der Wanne und Kampfraum im Turm mit je eigenen Bedien- und Anzeigeumfängen."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P17",
+          "text": "Moderne Kampfpanzer haben drei bis vier Besatzungsmitglieder; Dreierbesatzungen ersetzen den Ladeschützen durch einen Ladeautomaten, etwa in sowjetischen und russischen Bauarten und im Leclerc. Versuchsfahrzeuge mit unbemanntem Turm bringen die Besatzung in der stark gepanzerten Wanne unter, was die Überlebensfähigkeit verbessert und die Silhouette verkleinert. Die Ermüdung der Besatzung begrenzt die Einsatzreichweite im Gefecht.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q4",
+              "fundstelle": "Abschnitt Crew, training and equipment"
+            },
+            {
+              "quellen_id": "Q4",
+              "fundstelle": "Abschnitt History, Unterabschnitt Asymmetrical warfare"
+            },
+            {
+              "quellen_id": "Q4",
+              "fundstelle": "Abschnitt Mobility (crew fatigue)"
+            }
+          ],
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Aufbau und Ladung (Turm und Waffenanlage)",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E49",
+      "absaetze": [
+        {
+          "absatz_id": "P18",
+          "text": "Aufbau und Ladung umfasst hier den Turm mit Waffenanlage und Munition. Der Turm besteht aus Turmstruktur, Turmdrehkranz und Richtantrieben. Die Waffenanlage umfasst Hauptwaffe, koaxiales Maschinengewehr und Waffenstation, die Feuerleitanlage Zieloptiken, Laserentfernungsmesser, Feuerleitrechner und Waffenstabilisierung, die Munitionsversorgung den Munitionsbunker und gegebenenfalls einen Ladeautomaten. Die Wirkungskette führt vom Erfassen des Ziels über Messen, Berechnen und Richten zum Laden und Abfeuern.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P1",
+              "P17",
+              "P19",
+              "P20",
+              "Direktes Richten setzt Zielerfassung, Entfernungsermittlung, Richten und Laden vor dem Schuss voraus."
+            ],
+            "schluss": "Aufbau und Ladung gliedert sich in Turm, Waffenanlage, Feuerleitanlage und Munitionsversorgung entlang einer Wirkungskette."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P19",
+          "text": "Hauptwaffe ist eine Kanone; im 21. Jahrhundert überwiegen Glattrohrkanonen mit Kalibern von 120 mm bis 125 mm, der Challenger 2 führt noch eine Zugrohrkanone. Sekundärwaffen sind Maschinengewehre koaxial zur Kanone und auf dem Turmdach, die zunehmend als fernbediente Waffenstation aus dem Inneren bedient werden. Der Munitionsbunker ist durch gepanzerte Türen vom Kampfraum abgeschottet und leitet Explosionsenergie über Sollbruchstellen nach außen ab; viele Kampfpanzer lagern Munition in einem Turmheck mit Ausblasflächen.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Abschnitt Bewaffnung, Unterabschnitte Hauptwaffe und Sekundärwaffen"
+            },
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Abschnitt Technik, Unterabschnitt Schutzeinrichtungen, Absatz drei"
+            },
+            {
+              "quellen_id": "Q4",
+              "fundstelle": "Abschnitt Weaponry and Ammunition (Remote Weapons Stations) und Abschnitt Storage (bustle, blow-out panels)"
+            }
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P20",
+          "text": "Kommandant und Richtschütze verfügen über unabhängige Optiken und Nachtsichtgeräte. Laserentfernungsmessung, Stabilisierung von Hauptwaffe und Sichtlinien sowie ein Feuerleitrechner ermöglichen das Treffen aus der Bewegung; der Rechner verarbeitet unter anderem Zielentfernung, Eigen- und Zielgeschwindigkeit und Munitionstyp zu Vorhalt und Aufsatz. Gerichtet wird mit elektrohydraulischen oder elektromechanischen Richtantrieben.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Abschnitt Bewaffnung, Unterabschnitt Zielerfassung"
+            }
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Elektrik und Elektronik",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E66",
+      "absaetze": [
+        {
+          "absatz_id": "P21",
+          "text": "Die Elektrik und Elektronik verteilt elektrische Energie und vernetzt die Steuergeräte. Das Niedervolt-Bordnetz mit Stromverteiler, Sicherungen und Leitungssatz versorgt Richtantriebe, Feuerleitrechner, Sensorik, Funk, Beleuchtung und Lüfter. Steuergeräte von Triebwerk, Getriebe, Feuerleitanlage und Schutzsystemen tauschen Daten über den Fahrzeugbus; ein Gateway koppelt Wannen- und Turmnetz, deren Leitungen ein Schleifringübertrager im Turmdrehkranz verbindet. Dessen Auslegung begrenzt Leistung und Datenrate zwischen Wanne und Turm.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P3",
+              "P12",
+              "P20",
+              "P23",
+              "Fachwissen: Schleifringübertrager als Drehübertragung für elektrische Leistung und Daten"
+            ],
+            "schluss": "Ein Niedervolt-Bordnetz mit Fahrzeugbus und Gateway versorgt und vernetzt Wanne und Turm; die Drehübertragung ist die kritische Schnittstelle."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrzeugsteuerung und Information",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E74",
+      "absaetze": [
+        {
+          "absatz_id": "P22",
+          "text": "Die Fahrzeugsteuerung und Information bildet die logische Ebene für Beweglichkeit, Verfügbarkeit und Führbarkeit. In der Fahrzeugkoordination stimmt das Fahrzeugmanagement Triebwerk, Getriebe, Lenkung und Energieversorgung ab, die Diagnose liefert Fehler- und Wartungsinformationen. Zu Führung und Kommunikation gehören Navigation, Funkanlage und ein Führungsinformationssystem, das Lage, Aufträge und Meldungen zusammenführt und der Besatzung anzeigt; Lageerfassung und Kommunikation zählen zu den Hauptfunktionen.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P2",
+              "Q4, Abschnitt Situational awareness: Lageerfassung und Kommunikation als eine von vier Hauptfunktionen",
+              "Q2, Kap. 1, S. 1: Führbarkeit und Verfügbarkeit als Kampfwertfaktoren",
+              "Verteilte Steuergeräte erfordern eine koordinierende Instanz und Diagnosezugang."
+            ],
+            "schluss": "Das Hauptsystem gliedert sich in Fahrzeugkoordination (Fahrzeugmanagement, Diagnose) sowie Führung und Kommunikation (Navigation, Funkanlage, Führungsinformationssystem)."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrerassistenz und Sicherheit",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E82",
+      "absaetze": [
+        {
+          "absatz_id": "P23",
+          "text": "Zum Selbstschutz besitzen Kampfpanzer eine Nebelmittelwurfanlage, die dem Gegner durch Nebel die Sicht nimmt. Automatische Brandunterdrückungsanlagen schützen die Besatzung; gegen ABC-Waffen wird der Besatzungsraum abgedichtet und über integrierte Filteranlagen unter Überdruck gesetzt. Aktive Schutzsysteme lenken Bedrohungen als Soft-Kill-Systeme ab oder zerstören sie als Hard-Kill-Systeme, die Sensoren mit einer Feuerleitung kombinieren, das Geschoss verfolgen und eine Gegenmaßnahme starten. Beim Soft-Kill-System Shtora melden Laserwarnsensoren der Besatzung die Bedrohungsrichtung.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Abschnitt Bewaffnung, Unterabschnitt Sekundärwaffen, Absatz zwei (Nebelmittelwurfanlage)"
+            },
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Abschnitt Technik, Unterabschnitt Schutzeinrichtungen, Absatz vier"
+            },
+            {
+              "quellen_id": "Q4",
+              "fundstelle": "Abschnitt Protection and countermeasures (Active Protection Systems, Shtora-1)"
+            }
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P24",
+          "text": "Im Modell gliedert sich Fahrerassistenz und Sicherheit in das Aktive Schutzsystem mit Warnsensoren und Gegenmaßnahmenwerfern, die Nebelmittelwurfanlage, den Besatzungsschutz mit ABC-Schutzanlage und Brandunterdrückungsanlage sowie eine Umfeldsensorik aus Außenkameras für die Rundumsicht. Warnsensoren lösen Nebelmittelwurfanlage und Gegenmaßnahmenwerfer aus; die Schutzsysteme brauchen daher Schnittstellen zu Bordnetz, Fahrzeugbus und Turm.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P23",
+              "Q4, Abschnitt Situational awareness: Außenkameras übertragen eine Rundumsicht auf Anzeigen der Besatzung",
+              "Sensoren, Auslösung und Werfer benötigen Energie und Datenverbindungen."
+            ],
+            "schluss": "Das Hauptsystem besteht aus aktivem Schutzsystem, Nebelmittelwurfanlage, Besatzungsschutz und Umfeldsensorik mit Schnittstellen zu Bordnetz, Fahrzeugbus und Turm."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Beleuchtung und Sicht",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E91",
+      "absaetze": [
+        {
+          "absatz_id": "P25",
+          "text": "Beleuchtung und Sicht sichern die Wahrnehmung des Fahrers und die Erkennbarkeit auf der Straße. Bei geschlossener Luke blickt der Fahrer durch Winkelspiegel, bei Dunkelheit über ein Nachtsichtgerät; ein Kamera-Monitor-System kann die Sicht nach hinten ergänzen. Scheinwerfer und Leuchten dienen der Straßenfahrt und sind im Gefecht abschaltbar, weil Licht die Signatur erhöht. Schießscheinwerfer zur nächtlichen Zielbeleuchtung sind durch Nachtsichtgeräte entfallen.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "Q4, Abschnitt Design, Übersichtsgrafik: Periskop und Fahreroptiken",
+              "Q3, Unterabschnitt Zielerfassung: früher Schießscheinwerfer zur Zielbeleuchtung, heute Nachtsichtgeräte",
+              "Fachwissen: abschaltbare Straßenbeleuchtung und rückwärtige Kamera bei Gefechtsfahrzeugen"
+            ],
+            "schluss": "Die Sicht des Fahrers beruht auf indirekten Sichtmitteln; die Beleuchtung dient der Straßenfahrt und muss im Gefecht abschaltbar sein."
+          },
+          "sicherheit": "gering",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Thermomanagement",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E99",
+      "absaetze": [
+        {
+          "absatz_id": "P26",
+          "text": "Die Kühlanlage ist oft mit Motor und Schalt-Lenkgetriebe zu einem schnell wechselbaren Block gebündelt. Die Heckanordnung des Triebwerks bietet eine günstige Infrarotsignatur der Front, kein Hitzeflimmern vor den Optiken und kürzere Kühl- und Abgasführung; die Frontanordnung erhöht Infrarotsignatur und Kühlaufwand. Die Lüfterleistung ist mitunter von der Motorleistung abzuziehen, und die Wärmesignatur ist ein Beurteilungskriterium des Antriebs.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Abschnitt Technik, Unterabschnitt Mobilität und Antrieb, Absätze sechs bis acht"
+            },
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Kap. 1, S. 2 (Lüfterleistung)"
+            },
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Kap. 3.1 Auswahlkriterien für die Motorisierung, S. 108–109"
+            }
+          ],
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P27",
+          "text": "Das Thermomanagement führt die Verlustwärme von Verbrennungsmotor, Getriebe mit Wandler, Hilfsstromaggregat und Elektronik ab. Der Kühlkreislauf umfasst Kühlmittelpumpe, Kühler und Lüfter. Eine Heiz- und Klimaanlage temperiert Fahrer- und Kampfraum und arbeitet mit der ABC-Schutzanlage zusammen, deren Überdruckluft in den Besatzungsraum strömt. Im hybriden Fall kommen Kühlkreise für Traktionsbatterie, Stromrichter und Traktionsmaschinen hinzu.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P26",
+              "P23",
+              "P9",
+              "P11",
+              "Jeder Energiewandler erzeugt Verlustwärme, die abgeführt werden muss."
+            ],
+            "schluss": "Das Thermomanagement besteht aus Kühlkreislauf und Heiz- und Klimaanlage und wächst beim hybriden Antrieb um Kühlkreise der elektrischen Komponenten."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Neben- und Versorgungssysteme",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E105",
+      "absaetze": [
+        {
+          "absatz_id": "P28",
+          "text": "Die Neben- und Versorgungssysteme stellen Hilfsenergien und Sonderfähigkeiten bereit. Eine Hydraulikanlage mit vom Triebwerk angetriebener Hydraulikpumpe und Hydraulikspeicher versorgt je nach Bauweise elektrohydraulische Richtantriebe, hydropneumatische Federungen und die Bremsbetätigung; bei elektromechanischen Richtantrieben und Drehstabfederung schrumpft sie oder entfällt. Die Tiefwatausrüstung mit Schnorchel und Abdichtungen erlaubt das Durchfahren von Gewässern.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P7",
+              "P20",
+              "Q2, Kap. 1, S. 2: Watfähigkeit und Unterwasserfahrfähigkeit als Teil der Beweglichkeit",
+              "Q4, Abschnitt Mobility: wasserdichte Ausführung mit Schnorchel"
+            ],
+            "schluss": "Hydraulikanlage und Tiefwatausrüstung bilden die Neben- und Versorgungssysteme; der Umfang der Hydraulik hängt von Richtantrieb und Federungsart ab."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Zusammenfassung",
+      "abschnittstyp": "gesamtsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P29",
+          "text": "Architekturell lässt sich der Kampfpanzer auf oberster Ebene als Gesamtsystem mit den Systemen Fahrzeugstruktur und Fahrwerk, Antriebssystem, Energieversorgungssystem, Lenksystem, Bremssystem, Fahrerhaus, Aufbau und Ladung, Elektrik und Elektronik, Fahrzeugsteuerung und Information, Fahrerassistenz und Sicherheit, Beleuchtung und Sicht, Thermomanagement sowie Neben- und Versorgungssysteme auffassen. Antrieb und Lenkung sind im Schalt-Lenkgetriebe verschränkt, die Teilung in Wanne und Turm prägt die Schnittstellen.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P3",
+              "P9",
+              "P14",
+              "P21"
+            ],
+            "schluss": "Die dreizehn Hauptsysteme bilden die oberste Ebene; Schalt-Lenkgetriebe und Wanne-Turm-Schnittstelle sind die prägenden Kopplungen."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Modellierungsbezug",
+      "abschnittstyp": "modellierung",
+      "absaetze": [
+        {
+          "absatz_id": "P30",
+          "text": "In SysML bildet der Block `Kampfpanzer` das Gesamtsystem mit den dreizehn Hauptsystemen als Bestandteilen. Dekompositionspfade sind etwa `Antriebssystem → Triebwerk → Verbrennungsmotor`, `Aufbau und Ladung → Feuerleitanlage → Feuerleitrechner` und `Fahrzeugstruktur und Fahrwerk → Kettenlaufwerk → Triebrad`. Die Wanne-Turm-Drehverbindung wird ein zusammengesetzter Port mit mechanischem, elektrischem, hydraulischem und Datenanteil, weitere Ports sind Triebradnabe und Kraftstoffanschluss. Block Definition Diagrams zeigen die Zerlegung, Internal Block Diagrams die Wanne-Turm-Schnittstelle, Aktivitätsdiagramme die Wirkungskette, Zustandsautomaten Marsch, Gefecht und Beobachtungshalt.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P3",
+              "P6",
+              "P9",
+              "P12",
+              "P18",
+              "P24"
+            ],
+            "schluss": "Die Hauptsysteme werden als Blöcke mit mehrstufigen Teil-von-Beziehungen modelliert; die Wanne-Turm-Drehverbindung ist ein zusammengesetzter Port."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Flüsse",
+      "abschnittstyp": "fluesse",
+      "absaetze": [
+        {
+          "absatz_id": "P31",
+          "text": "Kraftstoff fließt vom Kraftstofftank zum Verbrennungsmotor, Drehmoment über Getriebe, Lenkgetriebe und Seitenvorgelege zum Triebrad, Bremsmoment von der Betriebsbremse in die Seitenvorgelege. Generator und Hilfsstromaggregat speisen das Niedervolt-Bordnetz, dieses über den Schleifringübertrager die Richtantriebe; die Hydraulikpumpe speist Richtantriebe und Federung. Zieloptiken und Laserentfernungsmesser melden an den Feuerleitrechner, der die Richtantriebe stellt; Munition gelangt vom Munitionsbunker zur Hauptwaffe. Rückstoß und Federkräfte laufen in die Wanne, Wärme zum Kühler, Filter- und Klimaluft in den Kampfraum.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P4",
+              "P9",
+              "P11",
+              "P12",
+              "P19",
+              "P20",
+              "P21",
+              "P27",
+              "P28"
+            ],
+            "schluss": "Die Energie-, Stoff- und Informationsflüsse verbinden die Hauptsysteme über benennbare Schnittstellen."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Perspektiven",
+      "abschnittstyp": "perspektiven",
+      "absaetze": [
+        {
+          "absatz_id": "P32",
+          "text": "Funktionszuordnung: Fahrzeuglasten tragen Wanne und Kettenlaufwerk; Energie speichern Kraftstofftank, Bordnetzbatterie und Traktionsbatterie; Treibstoff fördern die Kraftstoffversorgung; Elektrische Energie verteilen Niedervolt-Bordnetz und Stromverteiler; Antriebsleistung erzeugen Verbrennungsmotor und Traktionsmaschine; Drehmoment übertragen Getriebe und Seitenvorgelege; Fahrzeug fortbewegen das Kettenlaufwerk; Fahrzeug lenken Lenkeingabe und Lenkgetriebe; Fahrzeug verzögern Betriebsbremse und Dauerbremse; Fahrzeug festhalten die Feststellbremse; Hydraulische Leistung bereitstellen die Hydraulikanlage; Fahrereingaben erfassen die Bedienelemente; Fahrerinformationen anzeigen die Anzeigeelemente; Fahrersicht sicherstellen Winkelspiegel, Nachtsichtgerät und Kamera-Monitor-System; Insassen schützen Panzerung, Zusatzpanzerung, Munitionsbunker und Besatzungsschutz; Ladung aufnehmen der Munitionsbunker; Ziele erfassen Zieloptiken und Laserentfernungsmesser; Waffe richten Richtantriebe, Waffenstabilisierung und Feuerleitrechner; Ziele bekämpfen Hauptwaffe, koaxiales Maschinengewehr, Waffenstation und Ladeautomat; Bedrohungen abwehren Aktives Schutzsystem und Nebelmittelwurfanlage; Daten übertragen Fahrzeugbus und Funkanlage; Fahrzeugzustand überwachen Fahrzeugmanagement und Diagnose; Fahrzeugposition bestimmen die Navigation; Fahrzeugumfeld erfassen Umfeldsensorik und Warnsensoren; Fahrzeugumgebung ausleuchten die Scheinwerfer; Lichtsignale abgeben die Leuchten; Betriebstemperatur regeln der Kühlkreislauf; Innenraum klimatisieren die Heiz- und Klimaanlage.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P4",
+              "P6",
+              "P9",
+              "P11",
+              "P14",
+              "P15",
+              "P16",
+              "P18",
+              "P21",
+              "P22",
+              "P24",
+              "P25",
+              "P27",
+              "P28"
+            ],
+            "schluss": "Jede Funktion des Modells ist ausführenden Systemen und Komponenten zugeordnet."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    }
+  ],
+  "modell": {
+    "elemente": [
+      {"id": "E1", "name": "Kampfpanzer", "typ": "gesamtsystem", "eltern_id": null, "absatz_ids": ["P1", "P2", "P3", "P29"]},
+      {"id": "E2", "name": "Fahrzeugstruktur und Fahrwerk", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P4", "P5", "P6", "P7"], "kategorie": "struktur_fahrwerk"},
+      {"id": "E3", "name": "Wanne", "typ": "subsystem", "eltern_id": "E2", "absatz_ids": ["P4"]},
+      {"id": "E4", "name": "Panzerung", "typ": "komponente", "eltern_id": "E3", "absatz_ids": ["P4", "P5"]},
+      {"id": "E5", "name": "Zusatzpanzerung", "typ": "komponente", "eltern_id": "E3", "absatz_ids": ["P4", "P5"]},
+      {"id": "E6", "name": "Kettenlaufwerk", "typ": "subsystem", "eltern_id": "E2", "absatz_ids": ["P4", "P6"]},
+      {"id": "E7", "name": "Triebrad", "typ": "komponente", "eltern_id": "E6", "absatz_ids": ["P6"]},
+      {"id": "E8", "name": "Leitrad", "typ": "komponente", "eltern_id": "E6", "absatz_ids": ["P6"]},
+      {"id": "E9", "name": "Laufrollen", "typ": "komponente", "eltern_id": "E6", "absatz_ids": ["P6"]},
+      {"id": "E10", "name": "Stützrollen", "typ": "komponente", "eltern_id": "E6", "absatz_ids": ["P6"]},
+      {"id": "E11", "name": "Gleiskette", "typ": "komponente", "eltern_id": "E6", "absatz_ids": ["P6"]},
+      {"id": "E12", "name": "Federung", "typ": "komponente", "eltern_id": "E6", "absatz_ids": ["P4", "P7"]},
+      {"id": "E13", "name": "Schwingungsdämpfer", "typ": "komponente", "eltern_id": "E6", "absatz_ids": ["P4", "P7"]},
+      {"id": "E14", "name": "Antriebssystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P8", "P9", "P10"], "kategorie": "antrieb"},
+      {"id": "E15", "name": "Triebwerk", "typ": "subsystem", "eltern_id": "E14", "absatz_ids": ["P8", "P9"]},
+      {"id": "E16", "name": "Verbrennungsmotor", "typ": "komponente", "eltern_id": "E15", "absatz_ids": ["P8", "P9"]},
+      {"id": "E17", "name": "Luftfilteranlage", "typ": "komponente", "eltern_id": "E15", "absatz_ids": ["P9"]},
+      {"id": "E18", "name": "Abgasanlage", "typ": "komponente", "eltern_id": "E15", "absatz_ids": ["P9"]},
+      {"id": "E19", "name": "Kraftübertragung", "typ": "subsystem", "eltern_id": "E14", "absatz_ids": ["P9"]},
+      {"id": "E20", "name": "Getriebe", "typ": "komponente", "eltern_id": "E19", "absatz_ids": ["P9"]},
+      {"id": "E21", "name": "Seitenvorgelege", "typ": "komponente", "eltern_id": "E19", "absatz_ids": ["P9"]},
+      {"id": "E22", "name": "Elektrischer Antriebsstrang", "typ": "subsystem", "eltern_id": "E14", "absatz_ids": ["P9", "P10"]},
+      {"id": "E23", "name": "Traktionsmaschine", "typ": "komponente", "eltern_id": "E22", "absatz_ids": ["P9", "P10"]},
+      {"id": "E24", "name": "Stromrichter", "typ": "komponente", "eltern_id": "E22", "absatz_ids": ["P9", "P10"]},
+      {"id": "E25", "name": "Energieversorgungssystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P11", "P12"], "kategorie": "energieversorgung"},
+      {"id": "E26", "name": "Kraftstoffversorgung", "typ": "subsystem", "eltern_id": "E25", "absatz_ids": ["P11"]},
+      {"id": "E27", "name": "Kraftstofftank", "typ": "komponente", "eltern_id": "E26", "absatz_ids": ["P11"]},
+      {"id": "E28", "name": "Elektrische Energiebereitstellung", "typ": "subsystem", "eltern_id": "E25", "absatz_ids": ["P11"]},
+      {"id": "E29", "name": "Generator", "typ": "komponente", "eltern_id": "E28", "absatz_ids": ["P11"]},
+      {"id": "E30", "name": "Bordnetzbatterie", "typ": "komponente", "eltern_id": "E28", "absatz_ids": ["P11"]},
+      {"id": "E31", "name": "Hilfsstromaggregat", "typ": "komponente", "eltern_id": "E28", "absatz_ids": ["P11", "P12"]},
+      {"id": "E32", "name": "Traktionsbatterie", "typ": "komponente", "eltern_id": "E28", "absatz_ids": ["P11"]},
+      {"id": "E33", "name": "Lenksystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P13", "P14"], "kategorie": "lenkung"},
+      {"id": "E34", "name": "Lenkeingabe", "typ": "komponente", "eltern_id": "E33", "absatz_ids": ["P14"]},
+      {"id": "E35", "name": "Lenkgetriebe", "typ": "komponente", "eltern_id": "E33", "absatz_ids": ["P13", "P14"]},
+      {"id": "E36", "name": "Hydrostatischer Lenkantrieb", "typ": "komponente", "eltern_id": "E33", "absatz_ids": ["P14"]},
+      {"id": "E37", "name": "Bremssystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P15"], "kategorie": "bremse"},
+      {"id": "E38", "name": "Betriebsbremse", "typ": "komponente", "eltern_id": "E37", "absatz_ids": ["P15"]},
+      {"id": "E39", "name": "Feststellbremse", "typ": "komponente", "eltern_id": "E37", "absatz_ids": ["P15"]},
+      {"id": "E40", "name": "Dauerbremse", "typ": "komponente", "eltern_id": "E37", "absatz_ids": ["P15"]},
+      {"id": "E41", "name": "Fahrerhaus", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P16", "P17"], "kategorie": "bedienraum"},
+      {"id": "E42", "name": "Fahrerraum", "typ": "subsystem", "eltern_id": "E41", "absatz_ids": ["P16"]},
+      {"id": "E43", "name": "Bedienelemente", "typ": "komponente", "eltern_id": "E42", "absatz_ids": ["P16"]},
+      {"id": "E44", "name": "Anzeigeelemente", "typ": "komponente", "eltern_id": "E42", "absatz_ids": ["P16"]},
+      {"id": "E45", "name": "Kampfraum", "typ": "subsystem", "eltern_id": "E41", "absatz_ids": ["P16"]},
+      {"id": "E46", "name": "Kommandantenplatz", "typ": "komponente", "eltern_id": "E45", "absatz_ids": ["P16"]},
+      {"id": "E47", "name": "Richtschützenplatz", "typ": "komponente", "eltern_id": "E45", "absatz_ids": ["P16"]},
+      {"id": "E48", "name": "Ladeschützenplatz", "typ": "komponente", "eltern_id": "E45", "absatz_ids": ["P16", "P17"]},
+      {"id": "E49", "name": "Aufbau und Ladung", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P18", "P19", "P20"], "kategorie": "aufbau_nutzlast"},
+      {"id": "E50", "name": "Turm", "typ": "subsystem", "eltern_id": "E49", "absatz_ids": ["P18"]},
+      {"id": "E51", "name": "Turmstruktur", "typ": "komponente", "eltern_id": "E50", "absatz_ids": ["P18"]},
+      {"id": "E52", "name": "Turmdrehkranz", "typ": "komponente", "eltern_id": "E50", "absatz_ids": ["P4", "P18"]},
+      {"id": "E53", "name": "Richtantriebe", "typ": "komponente", "eltern_id": "E50", "absatz_ids": ["P18", "P20"]},
+      {"id": "E54", "name": "Waffenanlage", "typ": "subsystem", "eltern_id": "E49", "absatz_ids": ["P18", "P19"]},
+      {"id": "E55", "name": "Hauptwaffe", "typ": "komponente", "eltern_id": "E54", "absatz_ids": ["P18", "P19"]},
+      {"id": "E56", "name": "Koaxiales Maschinengewehr", "typ": "komponente", "eltern_id": "E54", "absatz_ids": ["P18", "P19"]},
+      {"id": "E57", "name": "Waffenstation", "typ": "komponente", "eltern_id": "E54", "absatz_ids": ["P18", "P19"]},
+      {"id": "E58", "name": "Feuerleitanlage", "typ": "subsystem", "eltern_id": "E49", "absatz_ids": ["P18", "P20"]},
+      {"id": "E59", "name": "Zieloptiken", "typ": "komponente", "eltern_id": "E58", "absatz_ids": ["P18", "P20"]},
+      {"id": "E60", "name": "Laserentfernungsmesser", "typ": "komponente", "eltern_id": "E58", "absatz_ids": ["P18", "P20"]},
+      {"id": "E61", "name": "Feuerleitrechner", "typ": "komponente", "eltern_id": "E58", "absatz_ids": ["P18", "P20"]},
+      {"id": "E62", "name": "Waffenstabilisierung", "typ": "komponente", "eltern_id": "E58", "absatz_ids": ["P18", "P20"]},
+      {"id": "E63", "name": "Munitionsversorgung", "typ": "subsystem", "eltern_id": "E49", "absatz_ids": ["P18", "P19"]},
+      {"id": "E64", "name": "Munitionsbunker", "typ": "komponente", "eltern_id": "E63", "absatz_ids": ["P18", "P19"]},
+      {"id": "E65", "name": "Ladeautomat", "typ": "komponente", "eltern_id": "E63", "absatz_ids": ["P17", "P18"]},
+      {"id": "E66", "name": "Elektrik und Elektronik", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P21"], "kategorie": "elektrik_elektronik"},
+      {"id": "E67", "name": "Niedervolt-Bordnetz", "typ": "subsystem", "eltern_id": "E66", "absatz_ids": ["P21"]},
+      {"id": "E68", "name": "Stromverteiler", "typ": "komponente", "eltern_id": "E67", "absatz_ids": ["P21"]},
+      {"id": "E69", "name": "Sicherungen", "typ": "komponente", "eltern_id": "E67", "absatz_ids": ["P21"]},
+      {"id": "E70", "name": "Leitungssatz", "typ": "komponente", "eltern_id": "E67", "absatz_ids": ["P21"]},
+      {"id": "E71", "name": "Fahrzeugbus", "typ": "komponente", "eltern_id": "E66", "absatz_ids": ["P21"]},
+      {"id": "E72", "name": "Gateway", "typ": "komponente", "eltern_id": "E66", "absatz_ids": ["P21"]},
+      {"id": "E73", "name": "Schleifringübertrager", "typ": "komponente", "eltern_id": "E66", "absatz_ids": ["P21"]},
+      {"id": "E74", "name": "Fahrzeugsteuerung und Information", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P22"], "kategorie": "steuerung_information"},
+      {"id": "E75", "name": "Fahrzeugkoordination", "typ": "subsystem", "eltern_id": "E74", "absatz_ids": ["P22"]},
+      {"id": "E76", "name": "Fahrzeugmanagement", "typ": "komponente", "eltern_id": "E75", "absatz_ids": ["P22"]},
+      {"id": "E77", "name": "Diagnose", "typ": "komponente", "eltern_id": "E75", "absatz_ids": ["P22"]},
+      {"id": "E78", "name": "Führung und Kommunikation", "typ": "subsystem", "eltern_id": "E74", "absatz_ids": ["P22"]},
+      {"id": "E79", "name": "Navigation", "typ": "komponente", "eltern_id": "E78", "absatz_ids": ["P22"]},
+      {"id": "E80", "name": "Funkanlage", "typ": "komponente", "eltern_id": "E78", "absatz_ids": ["P22"]},
+      {"id": "E81", "name": "Führungsinformationssystem", "typ": "komponente", "eltern_id": "E78", "absatz_ids": ["P16", "P22"]},
+      {"id": "E82", "name": "Fahrerassistenz und Sicherheit", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P23", "P24"], "kategorie": "assistenz_sicherheit"},
+      {"id": "E83", "name": "Aktives Schutzsystem", "typ": "subsystem", "eltern_id": "E82", "absatz_ids": ["P23", "P24"]},
+      {"id": "E84", "name": "Warnsensoren", "typ": "komponente", "eltern_id": "E83", "absatz_ids": ["P23", "P24"]},
+      {"id": "E85", "name": "Gegenmaßnahmenwerfer", "typ": "komponente", "eltern_id": "E83", "absatz_ids": ["P24"]},
+      {"id": "E86", "name": "Nebelmittelwurfanlage", "typ": "komponente", "eltern_id": "E82", "absatz_ids": ["P23", "P24"]},
+      {"id": "E87", "name": "Besatzungsschutz", "typ": "subsystem", "eltern_id": "E82", "absatz_ids": ["P24"]},
+      {"id": "E88", "name": "ABC-Schutzanlage", "typ": "komponente", "eltern_id": "E87", "absatz_ids": ["P23", "P24"]},
+      {"id": "E89", "name": "Brandunterdrückungsanlage", "typ": "komponente", "eltern_id": "E87", "absatz_ids": ["P23", "P24"]},
+      {"id": "E90", "name": "Umfeldsensorik", "typ": "komponente", "eltern_id": "E82", "absatz_ids": ["P24"]},
+      {"id": "E91", "name": "Beleuchtung und Sicht", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P25"], "kategorie": "beleuchtung_sicht"},
+      {"id": "E92", "name": "Beleuchtung", "typ": "subsystem", "eltern_id": "E91", "absatz_ids": ["P25"]},
+      {"id": "E93", "name": "Scheinwerfer", "typ": "komponente", "eltern_id": "E92", "absatz_ids": ["P25"]},
+      {"id": "E94", "name": "Leuchten", "typ": "komponente", "eltern_id": "E92", "absatz_ids": ["P25"]},
+      {"id": "E95", "name": "Fahrersicht", "typ": "subsystem", "eltern_id": "E91", "absatz_ids": ["P25"]},
+      {"id": "E96", "name": "Winkelspiegel", "typ": "komponente", "eltern_id": "E95", "absatz_ids": ["P25"]},
+      {"id": "E97", "name": "Nachtsichtgerät", "typ": "komponente", "eltern_id": "E95", "absatz_ids": ["P25"]},
+      {"id": "E98", "name": "Kamera-Monitor-System", "typ": "komponente", "eltern_id": "E95", "absatz_ids": ["P25"]},
+      {"id": "E99", "name": "Thermomanagement", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P26", "P27"], "kategorie": "thermomanagement"},
+      {"id": "E100", "name": "Kühlkreislauf", "typ": "subsystem", "eltern_id": "E99", "absatz_ids": ["P26", "P27"]},
+      {"id": "E101", "name": "Kühler", "typ": "komponente", "eltern_id": "E100", "absatz_ids": ["P27"]},
+      {"id": "E102", "name": "Lüfter", "typ": "komponente", "eltern_id": "E100", "absatz_ids": ["P26", "P27"]},
+      {"id": "E103", "name": "Kühlmittelpumpe", "typ": "komponente", "eltern_id": "E100", "absatz_ids": ["P27"]},
+      {"id": "E104", "name": "Heiz- und Klimaanlage", "typ": "komponente", "eltern_id": "E99", "absatz_ids": ["P27"]},
+      {"id": "E105", "name": "Neben- und Versorgungssysteme", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P28"], "kategorie": "nebensysteme"},
+      {"id": "E106", "name": "Hydraulikanlage", "typ": "subsystem", "eltern_id": "E105", "absatz_ids": ["P28"]},
+      {"id": "E107", "name": "Hydraulikpumpe", "typ": "komponente", "eltern_id": "E106", "absatz_ids": ["P28"]},
+      {"id": "E108", "name": "Hydraulikspeicher", "typ": "komponente", "eltern_id": "E106", "absatz_ids": ["P28"]},
+      {"id": "E109", "name": "Tiefwatausrüstung", "typ": "komponente", "eltern_id": "E105", "absatz_ids": ["P28"]}
+    ],
+    "funktionen": [
+      {"id": "F1", "name": "Fahrzeuglasten tragen", "ausgefuehrt_von": ["E3", "E6"], "absatz_ids": ["P4", "P6", "P32"]},
+      {"id": "F2", "name": "Energie speichern", "ausgefuehrt_von": ["E27", "E30", "E32"], "absatz_ids": ["P11", "P32"]},
+      {"id": "F3", "name": "Treibstoff fördern", "ausgefuehrt_von": ["E26"], "absatz_ids": ["P11", "P32"]},
+      {"id": "F4", "name": "Elektrische Energie verteilen", "ausgefuehrt_von": ["E67", "E68"], "absatz_ids": ["P21", "P32"]},
+      {"id": "F5", "name": "Antriebsleistung erzeugen", "ausgefuehrt_von": ["E16", "E23"], "absatz_ids": ["P8", "P9", "P32"]},
+      {"id": "F6", "name": "Drehmoment übertragen", "ausgefuehrt_von": ["E20", "E21"], "absatz_ids": ["P9", "P32"]},
+      {"id": "F7", "name": "Fahrzeug fortbewegen", "ausgefuehrt_von": ["E6"], "absatz_ids": ["P6", "P32"]},
+      {"id": "F8", "name": "Fahrzeug lenken", "ausgefuehrt_von": ["E34", "E35"], "absatz_ids": ["P13", "P14", "P32"]},
+      {"id": "F9", "name": "Fahrzeug verzögern", "ausgefuehrt_von": ["E38", "E40"], "absatz_ids": ["P15", "P32"]},
+      {"id": "F10", "name": "Fahrzeug festhalten", "ausgefuehrt_von": ["E39"], "absatz_ids": ["P15", "P32"]},
+      {"id": "F11", "name": "Hydraulische Leistung bereitstellen", "ausgefuehrt_von": ["E106"], "absatz_ids": ["P28", "P32"]},
+      {"id": "F12", "name": "Fahrereingaben erfassen", "ausgefuehrt_von": ["E43"], "absatz_ids": ["P16", "P32"]},
+      {"id": "F13", "name": "Fahrerinformationen anzeigen", "ausgefuehrt_von": ["E44"], "absatz_ids": ["P16", "P32"]},
+      {"id": "F14", "name": "Fahrersicht sicherstellen", "ausgefuehrt_von": ["E96", "E97", "E98"], "absatz_ids": ["P25", "P32"]},
+      {"id": "F15", "name": "Insassen schützen", "ausgefuehrt_von": ["E4", "E5", "E64", "E87"], "absatz_ids": ["P5", "P19", "P23", "P32"]},
+      {"id": "F16", "name": "Ladung aufnehmen", "ausgefuehrt_von": ["E64"], "absatz_ids": ["P19", "P32"]},
+      {"id": "F17", "name": "Ziele erfassen", "ausgefuehrt_von": ["E59", "E60"], "absatz_ids": ["P18", "P20", "P32"]},
+      {"id": "F18", "name": "Waffe richten", "ausgefuehrt_von": ["E53", "E62", "E61"], "absatz_ids": ["P18", "P20", "P32"]},
+      {"id": "F19", "name": "Ziele bekämpfen", "ausgefuehrt_von": ["E55", "E56", "E57", "E65"], "absatz_ids": ["P18", "P19", "P32"]},
+      {"id": "F20", "name": "Bedrohungen abwehren", "ausgefuehrt_von": ["E83", "E86"], "absatz_ids": ["P23", "P24", "P32"]},
+      {"id": "F21", "name": "Daten übertragen", "ausgefuehrt_von": ["E71", "E80"], "absatz_ids": ["P21", "P22", "P32"]},
+      {"id": "F22", "name": "Fahrzeugzustand überwachen", "ausgefuehrt_von": ["E76", "E77"], "absatz_ids": ["P22", "P32"]},
+      {"id": "F23", "name": "Fahrzeugposition bestimmen", "ausgefuehrt_von": ["E79"], "absatz_ids": ["P22", "P32"]},
+      {"id": "F24", "name": "Fahrzeugumfeld erfassen", "ausgefuehrt_von": ["E90", "E84"], "absatz_ids": ["P24", "P32"]},
+      {"id": "F25", "name": "Fahrzeugumgebung ausleuchten", "ausgefuehrt_von": ["E93"], "absatz_ids": ["P25", "P32"]},
+      {"id": "F26", "name": "Lichtsignale abgeben", "ausgefuehrt_von": ["E94"], "absatz_ids": ["P25", "P32"]},
+      {"id": "F27", "name": "Betriebstemperatur regeln", "ausgefuehrt_von": ["E100"], "absatz_ids": ["P27", "P32"]},
+      {"id": "F28", "name": "Innenraum klimatisieren", "ausgefuehrt_von": ["E104"], "absatz_ids": ["P27", "P32"]}
+    ],
+    "fluesse": [
+      {"id": "S1", "von": "E27", "nach": "E16", "art": "stoff", "medium": "Kraftstoff", "absatz_ids": ["P11", "P31"], "schnittstelle": "Kraftstoffanschluss Triebwerk"},
+      {"id": "S2", "von": "E16", "nach": "E20", "art": "mechanisch", "medium": "Drehmoment", "absatz_ids": ["P9", "P31"]},
+      {"id": "S3", "von": "E20", "nach": "E35", "art": "mechanisch", "medium": "Drehmoment", "absatz_ids": ["P14", "P31"], "schnittstelle": "Schalt-Lenkgetriebe (Getriebe zu Lenkgetriebe)"},
+      {"id": "S4", "von": "E35", "nach": "E21", "art": "mechanisch", "medium": "Drehmoment je Seite", "absatz_ids": ["P9", "P31"], "schnittstelle": "Abtrieb Lenkgetriebe zu Seitenvorgelege"},
+      {"id": "S5", "von": "E21", "nach": "E7", "art": "mechanisch", "medium": "Drehmoment", "absatz_ids": ["P9", "P31"], "schnittstelle": "Triebradnabe"},
+      {"id": "S6", "von": "E7", "nach": "E11", "art": "mechanisch", "medium": "Zugkraft", "absatz_ids": ["P6", "P31"]},
+      {"id": "S7", "von": "E29", "nach": "E67", "art": "elektrisch", "medium": "Gleichstrom Bordnetz", "absatz_ids": ["P21", "P31"], "schnittstelle": "Bordnetzeinspeisung Generator"},
+      {"id": "S8", "von": "E31", "nach": "E67", "art": "elektrisch", "medium": "Gleichstrom Bordnetz", "absatz_ids": ["P12", "P31"], "schnittstelle": "Bordnetzeinspeisung Hilfsstromaggregat"},
+      {"id": "S9", "von": "E67", "nach": "E73", "art": "elektrisch", "medium": "Bordnetzenergie", "absatz_ids": ["P21"]},
+      {"id": "S10", "von": "E73", "nach": "E53", "art": "elektrisch", "medium": "Bordnetzenergie", "absatz_ids": ["P21", "P31"], "schnittstelle": "Turmdrehverbindung (elektrisch)"},
+      {"id": "S11", "von": "E59", "nach": "E61", "art": "information", "medium": "Zieldaten", "absatz_ids": ["P20", "P31"]},
+      {"id": "S12", "von": "E60", "nach": "E61", "art": "information", "medium": "Zielentfernung", "absatz_ids": ["P20", "P31"]},
+      {"id": "S13", "von": "E61", "nach": "E53", "art": "information", "medium": "Richtbefehle Vorhalt und Aufsatz", "absatz_ids": ["P20", "P31"]},
+      {"id": "S14", "von": "E61", "nach": "E46", "art": "information", "medium": "Feuerleitdaten", "absatz_ids": ["P16", "P31"], "schnittstelle": "Bediengerät Feuerleitanlage"},
+      {"id": "S15", "von": "E64", "nach": "E55", "art": "stoff", "medium": "Munition", "absatz_ids": ["P19", "P31"]},
+      {"id": "S16", "von": "E52", "nach": "E3", "art": "mechanisch", "medium": "Turmlasten und Rückstoß", "absatz_ids": ["P4", "P31"], "schnittstelle": "Turmdrehkranz"},
+      {"id": "S17", "von": "E12", "nach": "E3", "art": "mechanisch", "medium": "Federkräfte", "absatz_ids": ["P4", "P31"]},
+      {"id": "S18", "von": "E43", "nach": "E71", "art": "information", "medium": "Fahr-, Lenk- und Bremsbefehle", "absatz_ids": ["P16", "P21"], "schnittstelle": "Fahrerbedienschnittstelle"},
+      {"id": "S19", "von": "E34", "nach": "E35", "art": "information", "medium": "Lenkvorgabe", "absatz_ids": ["P14"]},
+      {"id": "S20", "von": "E71", "nach": "E76", "art": "information", "medium": "Zustands- und Steuerdaten", "absatz_ids": ["P21", "P22"], "schnittstelle": "Fahrzeugbus"},
+      {"id": "S21", "von": "E84", "nach": "E85", "art": "information", "medium": "Bedrohungsmeldung", "absatz_ids": ["P24"]},
+      {"id": "S22", "von": "E84", "nach": "E86", "art": "information", "medium": "Auslösebefehl", "absatz_ids": ["P24"]},
+      {"id": "S23", "von": "E90", "nach": "E44", "art": "information", "medium": "Videobild Rundumsicht", "absatz_ids": ["P24"], "schnittstelle": "Videoschnittstelle Rundumsicht"},
+      {"id": "S24", "von": "E16", "nach": "E101", "art": "thermisch", "medium": "Kühlmittel", "absatz_ids": ["P27", "P31"], "schnittstelle": "Kühlmittelanschluss Triebwerk"},
+      {"id": "S25", "von": "E20", "nach": "E101", "art": "thermisch", "medium": "Getriebeöl", "absatz_ids": ["P27", "P31"], "schnittstelle": "Ölkühleranschluss Getriebe"},
+      {"id": "S26", "von": "E88", "nach": "E45", "art": "stoff", "medium": "gefilterte Überdruckluft", "absatz_ids": ["P23", "P27", "P31"], "schnittstelle": "Überdruckluftzufuhr Besatzungsraum"},
+      {"id": "S27", "von": "E104", "nach": "E45", "art": "thermisch", "medium": "temperierte Luft", "absatz_ids": ["P27", "P31"], "schnittstelle": "Klimaluftzufuhr Besatzungsraum"},
+      {"id": "S28", "von": "E20", "nach": "E107", "art": "mechanisch", "medium": "Drehmoment", "absatz_ids": ["P28"], "schnittstelle": "Nebenabtrieb Triebwerk"},
+      {"id": "S29", "von": "E107", "nach": "E53", "art": "hydraulisch", "medium": "Hydrauliköl", "absatz_ids": ["P28", "P31"], "schnittstelle": "Hydraulische Drehdurchführung Turm"},
+      {"id": "S30", "von": "E107", "nach": "E12", "art": "hydraulisch", "medium": "Hydrauliköl", "absatz_ids": ["P28", "P31"], "schnittstelle": "Hydraulikanschluss Laufwerk"},
+      {"id": "S31", "von": "E38", "nach": "E21", "art": "mechanisch", "medium": "Bremsmoment", "absatz_ids": ["P15", "P31"], "schnittstelle": "Bremse am Abtrieb"},
+      {"id": "S32", "von": "E32", "nach": "E24", "art": "elektrisch", "medium": "Gleichstrom Traktion", "absatz_ids": ["P11"], "schnittstelle": "Traktionsanschluss Batterie"},
+      {"id": "S33", "von": "E24", "nach": "E23", "art": "elektrisch", "medium": "Wechselstrom Traktion", "absatz_ids": ["P9", "P10"]},
+      {"id": "S34", "von": "E23", "nach": "E21", "art": "mechanisch", "medium": "Drehmoment je Seite", "absatz_ids": ["P9"]},
+      {"id": "S35", "von": "E67", "nach": "E93", "art": "elektrisch", "medium": "Bordnetzenergie", "absatz_ids": ["P21", "P31"], "schnittstelle": "Lichtstromkreis"},
+      {"id": "S36", "von": "E98", "nach": "E44", "art": "information", "medium": "Videobild rückwärtig", "absatz_ids": ["P25"], "schnittstelle": "Videoschnittstelle Fahrer"},
+      {"id": "S37", "von": "E80", "nach": "E81", "art": "information", "medium": "Sprach- und Datenfunk", "absatz_ids": ["P22"]},
+      {"id": "S38", "von": "E79", "nach": "E81", "art": "information", "medium": "Positionsdaten", "absatz_ids": ["P22"]},
+      {"id": "S39", "von": "E71", "nach": "E77", "art": "information", "medium": "Fehler- und Zustandsdaten", "absatz_ids": ["P21", "P22"], "schnittstelle": "Fahrzeugbus"}
+    ],
+    "entfallene_kategorien": [],
+    "varianten": [
+      {
+        "id": "V1",
+        "element_id": "E14",
+        "bezeichnung": "Antriebsart",
+        "alternativen": ["Dieselmotor", "Gasturbine", "Hybrid mit elektrischem Antriebsstrang"],
+        "auswahlkriterien": ["Leistungsgewicht und Bauvolumen der Antriebsanlage", "Kraftstoffverbrauch und Fahrbereich", "Wärmesignatur und Geräuschemission", "Logistik der Treibstoffversorgung", "Lebenszykluskosten und Kampfwertsteigerung"],
+        "auswirkungen": [
+          {"element_id": "E25", "beschreibung": "Kraftstoffmenge und Hilfsstromaggregat richten sich nach dem Verbrauch; der Hybrid erfordert zusätzlich eine Traktionsbatterie."},
+          {"element_id": "E99", "beschreibung": "Kühlleistung und Luftführung ändern sich; der Hybrid braucht Kühlkreise für Batterie, Stromrichter und Traktionsmaschinen."},
+          {"element_id": "E33", "beschreibung": "Beim Zwei-Ecken-Antrieb entfällt das mechanische Lenkgetriebe, gelenkt wird über die Traktionsmaschinen."},
+          {"element_id": "E66", "beschreibung": "Der Hybrid fügt einen Traktionsstromkreis mit eigener Absicherung hinzu."}
+        ],
+        "absatz_ids": ["P8", "P9", "P10"]
+      },
+      {
+        "id": "V2",
+        "element_id": "E15",
+        "bezeichnung": "Triebwerkslage",
+        "alternativen": ["Heckanordnung", "Frontanordnung"],
+        "auswahlkriterien": ["Schutz der Besatzung", "Heckausstieg für Besatzung oder Personen", "Waffenrichtbereich und Rohrüberstand", "Infrarotsignatur der Front", "Kettenbelastung und Triebradlage"],
+        "auswirkungen": [
+          {"element_id": "E3", "beschreibung": "Die Frontanordnung erlaubt eine Heckausstiegsluke und nutzt das Triebwerk als Schutz, verändert aber die Wannenfront."},
+          {"element_id": "E7", "beschreibung": "Das Triebrad liegt auf der Seite des Triebwerks, vorn oder hinten."},
+          {"element_id": "E50", "beschreibung": "Bei Frontanordnung ist der Waffenrichtbereich des Turms eingeschränkt."},
+          {"element_id": "E100", "beschreibung": "Die Frontanordnung erhöht den Aufwand für Kühl- und Abgasführung."}
+        ],
+        "absatz_ids": ["P8", "P26"]
+      },
+      {
+        "id": "V3",
+        "element_id": "E63",
+        "bezeichnung": "Ladeverfahren der Hauptwaffe",
+        "alternativen": ["Ladeschütze", "Ladeautomat"],
+        "auswahlkriterien": ["Besatzungsstärke und Durchhaltefähigkeit", "Turmvolumen und Silhouette", "Munitionsanordnung und Schutz vor Munitionsexplosion", "Ausfallverhalten und Notbetrieb"],
+        "auswirkungen": [
+          {"element_id": "E45", "beschreibung": "Mit Ladeautomat entfällt der Ladeschützenplatz im Kampfraum."},
+          {"element_id": "E50", "beschreibung": "Ohne Ladeschützen kann der Turm kleiner ausfallen."},
+          {"element_id": "E64", "beschreibung": "Der Ladeautomat bestimmt Lage und Form des Munitionsbunkers."},
+          {"element_id": "E67", "beschreibung": "Der Ladeautomat ist ein zusätzlicher elektrischer Verbraucher."}
+        ],
+        "absatz_ids": ["P17", "P18"]
+      },
+      {
+        "id": "V4",
+        "element_id": "E12",
+        "bezeichnung": "Federungsart",
+        "alternativen": ["Drehstabfederung", "Hydropneumatische Feder-Dämpfer-Elemente", "Geregeltes Laufwerk"],
+        "auswahlkriterien": ["Federweg und Belastung der Besatzung", "Regelbarkeit, Niveauregulierung und Blockierung für den Waffeneinsatz", "Bauraum in der Wanne", "Entwicklungs-, Beschaffungs- und Unterhaltskosten", "Notbetrieb bei Ausfall"],
+        "auswirkungen": [
+          {"element_id": "E3", "beschreibung": "Drehstäbe quer durch den Wannenboden beanspruchen Bauraum, hydropneumatische Elemente sitzen außen an der Wanne."},
+          {"element_id": "E106", "beschreibung": "Hydropneumatische und geregelte Federungen benötigen hydraulische Versorgung."},
+          {"element_id": "E62", "beschreibung": "Die Vorstabilisierung der Wanne durch das Laufwerk entlastet die Waffenstabilisierung."},
+          {"element_id": "E76", "beschreibung": "Ein geregeltes Laufwerk braucht Regelfunktionen im Fahrzeugmanagement."}
+        ],
+        "absatz_ids": ["P6", "P7", "P28"]
+      },
+      {
+        "id": "V5",
+        "element_id": "E49",
+        "bezeichnung": "Turmkonzept und Besatzungsanordnung",
+        "alternativen": ["Bemannter Turm mit Kampfraum", "Unbemannter Turm mit Besatzung in der Wanne"],
+        "auswahlkriterien": ["Überlebensfähigkeit der Besatzung", "Silhouette und Masse", "Sicht und Lagebild der Besatzung", "Ausfallsicherheit der fernbedienten Waffenanlage"],
+        "auswirkungen": [
+          {"element_id": "E41", "beschreibung": "Beim unbemannten Turm wandern Kommandanten- und Richtschützenplatz in die Wanne."},
+          {"element_id": "E90", "beschreibung": "Die Besatzung ist auf eine kamerabasierte Rundumsicht angewiesen."},
+          {"element_id": "E73", "beschreibung": "Alle Bedien- und Videosignale laufen über die Drehübertragung."},
+          {"element_id": "E65", "beschreibung": "Der unbemannte Turm setzt einen Ladeautomaten voraus."}
+        ],
+        "absatz_ids": ["P17", "P18"]
+      },
+      {
+        "id": "V6",
+        "element_id": "E35",
+        "bezeichnung": "Lenkgetriebeart",
+        "alternativen": ["Stufenloses Überlagerungs-Lenkgetriebe mit hydrostatischem Lenkantrieb", "Umlauf-Lenkgetriebe", "Elektrische Lenkung über Zwei-Ecken-Antrieb"],
+        "auswahlkriterien": ["Lenkbarkeit und Kurvenradien", "Leistungsbilanz und Wirkungsgrad", "Bauraum und Masse", "Kopplung an die Antriebsart"],
+        "auswirkungen": [
+          {"element_id": "E20", "beschreibung": "Überlagerungs-Lenkgetriebe werden mit dem Getriebe zum Schalt-Lenkgetriebe vereint."},
+          {"element_id": "E23", "beschreibung": "Beim Zwei-Ecken-Antrieb übernehmen die Traktionsmaschinen die Lenkfunktion."},
+          {"element_id": "E37", "beschreibung": "Umlauf-Lenkgetriebe mit Lenkbremsen verschränken Brems- und Lenkfunktion."},
+          {"element_id": "E100", "beschreibung": "Lenkleistung im hydrostatischen Kreis fällt als zusätzliche Verlustwärme an."}
+        ],
+        "absatz_ids": ["P13", "P14"]
+      }
+    ],
+    "klaerungsfragen": [
+      {"id": "K1", "frage": "Welche Antriebsart soll das Modell abbilden: Dieselmotor, Gasturbine oder einen Hybrid mit elektrischem Antriebsstrang?", "element_ids": ["E14", "E25"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Energiespeicher, Kühlkreise, Lenkgetriebe und Bordnetz ab.", "variante_ids": ["V1"]},
+      {"id": "K2", "frage": "Soll das Triebwerk im Heck oder in der Front der Wanne liegen?", "element_ids": ["E15", "E3"], "anlass": "architekturentscheidung", "relevanz": "Die Antwort bestimmt Triebradlage, Heckausstieg, Waffenrichtbereich und Kühlluftführung.", "variante_ids": ["V2"]},
+      {"id": "K3", "frage": "Wird die Hauptwaffe von einem Ladeschützen oder von einem Ladeautomaten geladen?", "element_ids": ["E63", "E45"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Besatzungsstärke, Turmgröße und Anordnung des Munitionsbunkers ab.", "variante_ids": ["V3"]},
+      {"id": "K4", "frage": "Welche Federungsart ist vorgesehen, und muss das Laufwerk Niveauregulierung oder Blockierung für den Waffeneinsatz bieten?", "element_ids": ["E12", "E2"], "anlass": "anforderung", "relevanz": "Die Antwort entscheidet über Hydraulikversorgung, Bauraum in der Wanne und Regelfunktionen.", "variante_ids": ["V4"]},
+      {"id": "K5", "frage": "Sitzt die Besatzung im Turm oder geschützt in der Wanne unter einem unbemannten Turm?", "element_ids": ["E49", "E41"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Besatzungsraum, Rundumsichtsystem und Umfang der Drehübertragung ab.", "variante_ids": ["V5"]},
+      {"id": "K6", "frage": "Welche Lenkgetriebeart wird eingesetzt, und bildet sie mit dem Getriebe einen gemeinsamen Block?", "element_ids": ["E35", "E33", "E20"], "anlass": "architekturentscheidung", "relevanz": "Die Antwort legt fest, ob Lenk- und Antriebssystem getrennte oder gemeinsame Blöcke im Modell sind.", "variante_ids": ["V6"]},
+      {"id": "K7", "frage": "Gegen welche Bedrohungen und aus welchen Trefferrichtungen muss die Panzerung schützen, und soll Zusatzpanzerung modular nachrüstbar sein?", "element_ids": ["E2", "E4", "E5"], "anlass": "anforderung", "relevanz": "Davon hängen Masse, Wannengestaltung und Befestigungsschnittstellen der Zusatzpanzerung ab."},
+      {"id": "K8", "frage": "Wie lange soll der Kampfpanzer im Beobachtungshalt bei abgestelltem Triebwerk einsatzbereit bleiben?", "element_ids": ["E25", "E31"], "anlass": "betrieb", "relevanz": "Die Antwort bestimmt Batteriekapazität und Leistung des Hilfsstromaggregats."},
+      {"id": "K9", "frage": "Ist eine verschleißfreie Dauerbremse gefordert, und sind Betriebsbremse und Lenkbremsen getrennte Bauteile?", "element_ids": ["E37", "E40"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen die Kopplung von Bremssystem, Getriebe und Lenkgetriebe sowie die Wärmeabfuhr ab."},
+      {"id": "K10", "frage": "Welche Bedien- und Anzeigeelemente erhält jeder Besatzungsplatz, und muss ein Platz die Aufgaben eines anderen übernehmen können?", "element_ids": ["E41", "E43", "E44"], "anlass": "anforderung", "relevanz": "Die Antwort bestimmt Umfang der Bedienschnittstellen und Datenverbindungen zwischen Fahrerraum und Kampfraum."},
+      {"id": "K11", "frage": "Welche elektrische Leistung und welche Datenverbindungen müssen zwischen Wanne und Turm übertragen werden?", "element_ids": ["E66", "E73", "E72"], "anlass": "schnittstelle", "relevanz": "Davon hängen Auslegung des Schleifringübertragers und die Aufteilung der Steuergeräte auf Wanne und Turm ab."},
+      {"id": "K12", "frage": "An welche Führungsinformations- und Funksysteme des Verbands muss der Kampfpanzer angebunden werden?", "element_ids": ["E74", "E80", "E81"], "anlass": "schnittstelle", "relevanz": "Die Antwort legt Funkausstattung, Datenformate und Anzeigen am Kommandantenplatz fest."},
+      {"id": "K13", "frage": "Soll ein aktives Schutzsystem vorgesehen werden, und wenn ja, als ablenkendes oder abfangendes System?", "element_ids": ["E82", "E83"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Sensorik, Werfer am Turm, Energiebedarf und Gefährdung begleitender Infanterie ab."},
+      {"id": "K14", "frage": "Welche Sichtmittel braucht der Fahrer bei geschlossener Luke und bei Nacht, und muss das Fahrzeug mit Beleuchtung am Straßenverkehr teilnehmen?", "element_ids": ["E91", "E95", "E92"], "anlass": "anforderung", "relevanz": "Die Antwort bestimmt Umfang von Fahrersicht und Beleuchtung sowie deren Abschaltlogik."},
+      {"id": "K15", "frage": "Für welche Umgebungstemperaturen und welche zulässige Wärmesignatur ist das Thermomanagement auszulegen?", "element_ids": ["E99", "E100"], "anlass": "anforderung", "relevanz": "Davon hängen Kühlerfläche, Lüfterleistung und die Leistungsentnahme vom Triebwerk ab."},
+      {"id": "K16", "frage": "Muss der Kampfpanzer Gewässer watend oder mit Tiefwatausrüstung unter Wasser durchfahren können?", "element_ids": ["E105", "E109"], "anlass": "betrieb", "relevanz": "Die Antwort entscheidet über Tiefwatausrüstung, Abdichtung der Wanne und Luftversorgung des Triebwerks."}
+    ],
+    "anforderungsthemen": [
+      {"id": "R1", "element_ids": ["E1"], "thema": "Rüstungskontrollrechtliche Einstufung als Kampfpanzer", "kenngroessen": ["Leergewicht", "Kaliber der Kanone", "Schwenkbereich der Kanone", "Fahrwerksart"], "regelwerke": [{"bezeichnung": "Vertrag über Konventionelle Streitkräfte in Europa, Begriffsbestimmung Kampfpanzer (Geltungsbereich: Vertragsstaaten, Anwendungsgebiet vom Atlantik bis zum Ural)", "quellen_id": "Q1", "fundstelle": "Artikel II Absatz 1 Buchstaben B und C"}]},
+      {"id": "R2", "element_ids": ["E2", "E4", "E5"], "thema": "Ballistischer Schutz", "kenngroessen": ["Schutzniveau je Trefferzone", "Masse der Panzerung", "Nachrüstbarkeit der Zusatzpanzerung"]},
+      {"id": "R3", "element_ids": ["E2", "E6"], "thema": "Geländegängigkeit", "kenngroessen": ["spezifischer Bodendruck", "Grabenüberschreitfähigkeit", "Kletterfähigkeit", "Bodenfreiheit", "Steigfähigkeit", "Federweg"]},
+      {"id": "R4", "element_ids": ["E14"], "thema": "Fahrleistung", "kenngroessen": ["spezifische Leistung", "Höchstgeschwindigkeit", "Beschleunigung", "Triebradleistung"]},
+      {"id": "R5", "element_ids": ["E25"], "thema": "Fahrbereich und Durchhaltefähigkeit", "kenngroessen": ["Fahrbereich Straße", "Fahrbereich Gelände", "Kraftstoffvorrat", "Betriebsdauer im Beobachtungshalt"]},
+      {"id": "R6", "element_ids": ["E33"], "thema": "Lenkbarkeit", "kenngroessen": ["kleinster Kurvenradius", "Wenden auf der Stelle", "Lenkverhältnis"]},
+      {"id": "R7", "element_ids": ["E37"], "thema": "Bremsvermögen", "kenngroessen": ["mittlere Verzögerung", "Haltevermögen am Hang", "Dauerbremsleistung"]},
+      {"id": "R8", "element_ids": ["E41"], "thema": "Besatzungsarbeitsplatz", "kenngroessen": ["Besatzungsstärke", "Beschleunigungsbelastung der Besatzung", "Sichtbereich je Besatzungsplatz"]},
+      {"id": "R9", "element_ids": ["E49"], "thema": "Feuerkraft", "kenngroessen": ["Kaliber der Hauptwaffe", "Erstschusstrefferwahrscheinlichkeit", "Kampfentfernung", "Munitionsvorrat", "Richtgeschwindigkeit"]},
+      {"id": "R10", "element_ids": ["E66"], "thema": "Bordnetz und Vernetzung", "kenngroessen": ["elektrische Dauerleistung", "Datenrate des Fahrzeugbusses", "Übertragungsleistung der Drehverbindung", "elektromagnetische Verträglichkeit"]},
+      {"id": "R11", "element_ids": ["E74"], "thema": "Führungsfähigkeit", "kenngroessen": ["Funkreichweite", "Ortungsgenauigkeit", "Diagnosetiefe"]},
+      {"id": "R12", "element_ids": ["E82"], "thema": "Überlebensfähigkeit der Besatzung", "kenngroessen": ["Reaktionszeit des Schutzsystems", "Abdeckungswinkel", "Schutzgrad gegen ABC-Kampfstoffe", "Auslösezeit der Brandunterdrückung"]},
+      {"id": "R13", "element_ids": ["E91"], "thema": "Sicht und Lichtsignatur", "kenngroessen": ["Sichtfeld des Fahrers", "Nachtsichtreichweite", "Lichtsignatur im Gefechtsbetrieb"]},
+      {"id": "R14", "element_ids": ["E99"], "thema": "Thermische Auslegung", "kenngroessen": ["Kühlleistung", "zulässige Umgebungstemperatur", "Infrarotsignatur", "Innenraumtemperatur"]},
+      {"id": "R15", "element_ids": ["E105"], "thema": "Wassergängigkeit", "kenngroessen": ["Wattiefe ohne Vorbereitung", "Tiefwattiefe", "Vorbereitungszeit"]}
+    ]
+  },
+  "offene_punkte": [
+    "Recherche: Besatzungsaufgaben und Bedienumfänge je Platz aus aktueller Heeresvorschrift (ATP 3-20.15 Tank Platoon; armypubs.army.mil und irp.fas.org in diesem Lauf nicht abrufbar).",
+    "Recherche: Bauart und Lage der Betriebs-, Feststell- und Dauerbremse bei Kampfpanzern (Suchbegriff: Schalt-Lenkgetriebe Retarder Betriebsbremse Kampfpanzer; Q2 Kap. 4 und Anhang gezielt auswerten).",
+    "Recherche: Drehübertragung elektrischer Leistung und Daten zwischen Wanne und Turm (Suchbegriff: slip ring turret power data transmission main battle tank).",
+    "Recherche: behördliche Quelle zu Hybridantrieben für Kampfpanzer (CRS-Bericht IF11512 und army.mil in diesem Lauf blockiert; Suchbegriff: hybrid electric drive main battle tank Army report).",
+    "Recherche: Beleuchtung und Straßenverkehrszulassung von Kettenfahrzeugen der Streitkräfte (Suchbegriff: Tarnlicht Kettenfahrzeug Beleuchtung Ausnahmegenehmigung Bundeswehr).",
+    "Zuordnung: Lenkgetriebe steht gemäß Zuordnungsliste unter dem Lenksystem, obwohl es physisch mit dem Getriebe zum Schalt-Lenkgetriebe vereint ist; der Fluss S3 bildet diese Kopplung ab.",
+    "Glossarvorschlag: Hauptsystemname „Turm und Waffenanlage“ für die Kategorie aufbau_nutzlast bei Gefechtsfahrzeugen (hier vorläufig „Aufbau und Ladung“).",
+    "Glossarvorschlag: Hauptsystemname „Besatzungsraum“ für die Kategorie bedienraum bei Gefechtsfahrzeugen (hier vorläufig „Fahrerhaus“).",
+    "Glossarvorschlag: Funktion „Ziele erfassen“.",
+    "Glossarvorschlag: Funktion „Waffe richten“.",
+    "Glossarvorschlag: Funktion „Ziele bekämpfen“.",
+    "Glossarvorschlag: Funktion „Bedrohungen abwehren“."
+  ]
+}

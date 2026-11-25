@@ -1,0 +1,873 @@
+{
+  "schema_version": "2.3",
+  "artikel_id": "A-0030",
+  "artikeltyp": "blatt",
+  "titel": "Personenwagen",
+  "betrachtungsumfang": "Generische Referenzarchitektur des Personenwagens als nicht angetriebener, lokbespannter Reisezugwagen zur Fahrgastbeförderung (Sitzwagen) für Vollbahnen im Geltungsbereich der EU-Interoperabilitätsspezifikation für Lokomotiven und Personenwagen (Verordnung (EU) Nr. 1302/2014), im freizügigen Fahrbetrieb oder im Wagenzug, mit den Bauarten Abteilwagen und Großraumwagen, einstöckig oder als Doppelstockwagen, und mit der Variante Steuerwagen (Reisezugwagen mit Führerraum); Energieversorgung über die Zugsammelschiene, historisch über Achsgenerator. Eine Antriebsart wird ausdrücklich nicht betrachtet, da der Personenwagen keinen Fahrantrieb besitzt. Ausgeschlossen bzw. nur zur Abgrenzung: Schlaf- und Liegewagen (eigener Artikel), Speise-, Bar- und Salonwagen, Gepäck-, Post-, Autotransport- und Heizwagen, nicht angetriebene Mittelwagen von Triebzügen sowie Beiwagen von Straßenbahnen.",
+  "status": "in_arbeit",
+  "quellenzugriff": "ja",
+  "kindartikel_ids": [],
+  "quellen": [
+    {
+      "quellen_id": "Q1",
+      "titel": "Reisezugwagen",
+      "urheber": "Wikipedia-Autoren",
+      "stand": null,
+      "url": "https://de.wikipedia.org/wiki/Reisezugwagen",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q2",
+      "titel": "Zugsammelschiene",
+      "urheber": "Wikipedia-Autoren",
+      "stand": null,
+      "url": "https://de.wikipedia.org/wiki/Zugsammelschiene",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q3",
+      "titel": "Drehgestell",
+      "urheber": "Wikipedia-Autoren",
+      "stand": null,
+      "url": "https://de.wikipedia.org/wiki/Drehgestell",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q4",
+      "titel": "Druckluftbremse (Eisenbahn)",
+      "urheber": "Wikipedia-Autoren",
+      "stand": null,
+      "url": "https://de.wikipedia.org/wiki/Druckluftbremse_(Eisenbahn)",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q5",
+      "titel": "UIC-Kabel",
+      "urheber": "Wikipedia-Autoren",
+      "stand": null,
+      "url": "https://de.wikipedia.org/wiki/UIC-Kabel",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q6",
+      "titel": "Wagenübergang",
+      "urheber": "Wikipedia-Autoren",
+      "stand": null,
+      "url": "https://de.wikipedia.org/wiki/Wagenübergang",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q7",
+      "titel": "Steuerwagen",
+      "urheber": "Wikipedia-Autoren",
+      "stand": null,
+      "url": "https://de.wikipedia.org/wiki/Steuerwagen",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q8",
+      "titel": "Verordnung (EU) Nr. 1302/2014 der Kommission vom 18. November 2014 über eine technische Spezifikation für die Interoperabilität des Teilsystems „Fahrzeuge — Lokomotiven und Personenwagen“ des Eisenbahnsystems in der Europäischen Union (ABl. L 356 vom 12.12.2014)",
+      "urheber": "Europäische Kommission",
+      "stand": "2014-11-18 (Ursprungsfassung)",
+      "url": "https://publications.europa.eu/resource/cellar/330c52ff-81ca-11e4-89f7-01aa75ed71a1.0004.03/DOC_1",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q9",
+      "titel": "Grundlagen Schienenfahrzeugtechnik, Kapitel 2: Einteilung und Grundaufbau von Schienenfahrzeugen (Vorlesungsfolien, OER)",
+      "urheber": "Holger Fricke (Bildungsportal Sachsen, OPAL OER)",
+      "stand": "2022-04-12",
+      "url": "https://bildungsportal.sachsen.de/opal/oer/8fj_uSokDj10",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "fachliteratur"
+    },
+    {
+      "quellen_id": "Q10",
+      "titel": "Magnetschienenbremse",
+      "urheber": "Wikipedia-Autoren",
+      "stand": null,
+      "url": "https://de.wikipedia.org/wiki/Magnetschienenbremse",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-24",
+      "quellentyp": "nachschlagewerk"
+    }
+  ],
+  "abschnitte": [
+    {
+      "ueberschrift": "Einleitung",
+      "abschnittstyp": "gesamtsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P1",
+          "text": "Ein Personenwagen ist ein nicht angetriebener Reisezugwagen zur Beförderung von Personen im Reiseverkehr; die meisten Reisezugwagen sind Personenwagen, daneben zählen Gepäck-, Post-, Autoreise- und Heizwagen dazu. Die Verordnung (EU) Nr. 1302/2014 (TSI Lokomotiven und Personenwagen, Geltungsbereich EU, Spurweiten 1 435, 1 520, 1 524, 1 600 und 1 668 mm) definiert den Reisezugwagen als Einzelfahrzeug ohne Antrieb in fester oder variabler Zusammenstellung, das Fahrgäste befördern kann. Mit Führerraum heißt er Steuerwagen; Steuerwagen ersparen im Wendezug das Umsetzen der Lokomotive.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q1", "fundstelle": "Einleitung; Abschnitt Einteilung, Unterabschnitt Personenwagen"},
+            {"quellen_id": "Q8", "fundstelle": "Anhang, Abschnitt 2.2.2 Buchstabe C (Reisezugwagen und andere artverwandte Wagen) und Abschnitt 2.3.2 (Spurweite)"},
+            {"quellen_id": "Q7", "fundstelle": "Einleitung"}
+          ],
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P2",
+          "text": "Architektonisch ist der Personenwagen ein passives Glied des lokbespannten Zuges: Zugkraft, Bremssteuerung, Druckluft, elektrische Energie und Steuerinformationen erhält er über die Wagenenden vom Triebfahrzeug und leitet sie zum nächsten Wagen weiter. Seine Systeme sind mechanisch, pneumatisch, elektrisch, thermisch, stofflich und informationstechnisch gekoppelt. Für eine Dekomposition, etwa in SysML, zerlegt man den Wagen in die folgenden Hauptsysteme und diese in Subsysteme und Komponenten.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": ["P1", "P4", "P6", "P9", "P13", "Der Wagen besitzt keinen Fahrantrieb und keine eigene Drucklufterzeugung; alles, was er nicht selbst erzeugt, muss über die Fahrzeugübergänge zugeführt und durchgeleitet werden."],
+            "schluss": "Der Personenwagen ist ein Durchleitungsglied, dessen Hauptsysteme über die Wagenenden mit den Nachbarfahrzeugen gekoppelt sind."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrzeugstruktur und Fahrwerk",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E2",
+      "absaetze": [
+        {
+          "absatz_id": "P3",
+          "text": "Der Radsatz übernimmt den Lauf auf der Schiene, die Führung im Gleis und die Übertragung der anteiligen Fahrzeugmasse und der Bremskräfte auf das Gleis; die Radsatzlager übertragen alle vertikalen und horizontalen Kräfte. Der Wagenkasten besteht aus dem Tragverband aus Untergestell und mittragenden Kastenteilen sowie nichttragenden Aufbauten. Reisezugwagen werden heute in der Regel als vierachsige Drehgestellwagen gebaut; der Drehgestellrahmen stützt sich über die Primärfederung auf die Radsatzlager, der Wagenkasten über die Sekundärfederung auf den Drehgestellrahmen.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q9", "fundstelle": "Abschnitt 2.4, Folien Fahrzeugelemente (I) und (II), Nr. 1, 2, 9 und 10"},
+            {"quellen_id": "Q1", "fundstelle": "Abschnitt Geschichtliche Entwicklung, Unterabschnitt Laufwerk"},
+            {"quellen_id": "Q3", "fundstelle": "Abschnitt Aufbau, Unterabschnitte Federung, Primärfederung und Sekundärfederung"}
+          ],
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P4",
+          "text": "Die Zug- und Stoßeinrichtung aus Seitenpuffern und mittiger Zugeinrichtung nimmt die Kräfte aus Zugbildung und Zugförderung auf und dämpft Längsstöße im Zugverband. Manuell gekuppelte Einheiten im freizügigen Fahrbetrieb brauchen nach der TSI ein UIC-Kupplungssystem mit Puffern und Schraubenkupplung. Ein Übergang für Fahrgäste muss alle Relativbewegungen der Fahrzeuge im Betrieb mitvollziehen; Wagenübergänge sind als Gummiwulst- oder Faltenbalgübergänge ausgeführt.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q9", "fundstelle": "Abschnitt 2.4, Folie Fahrzeugelemente (II), Nr. 8 Zug- und Stoßeinrichtung"},
+            {"quellen_id": "Q8", "fundstelle": "Anhang, Abschnitt 4.2.2.2.3 Buchstabe b (B-1, B-2) und Abschnitt 4.2.2.3 Absatz 1"},
+            {"quellen_id": "Q6", "fundstelle": "Einleitung und Abschnitt Geschichte"}
+          ],
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P5",
+          "text": "Vertikallasten fließen vom Fahrgastraum über Untergestell, Sekundärfederung, Drehgestellrahmen, Primärfederung und Radsatzlager in den Radsatz, Längskräfte von Puffer und Schraubenkupplung durch das Untergestell zum Nachbarwagen. Außentüren und Wagenübergang schwächen den Tragverband und erfordern verstärkte Ausschnitte. Strukturändernd sind die Sekundärfederung mit Schraubenfedern oder Luftfedern, wobei Luftfedern Druckluft benötigen und ein Lastsignal für die Bremse liefern, sowie der Doppelstockwagen, der Kastenquerschnitt, Treppen und Türlage verändert.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": ["P3", "P4", "Q3 Abschnitt Aufbau, Sekundärfederung (Schraubenfedern oder Luftfedern bei Reisezugwagen)", "Q4 Abschnitt Bremsstellungen und Umstelleinrichtungen (Luftfederdruck als Lastsignal)", "Q1 Abschnitt Doppelstockwagen", "Öffnungen in einer tragenden Schale unterbrechen den Kraftfluss und müssen umgangen werden."],
+            "schluss": "Der Lastpfad läuft über die beiden Federstufen in den Radsatz; Federungsart und Stockwerkszahl ändern die interne Struktur und wirken auf Druckluftanlage, Bremse und Fahrgastraum."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Bremssystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E16",
+      "absaetze": [
+        {
+          "absatz_id": "P6",
+          "text": "Das Bremssystem beruht auf der indirekt wirkenden, selbsttätigen Druckluftbremse. Eine durchgehende Hauptluftleitung wird vom Führerbremsventil des Triebfahrzeugs oder Steuerwagens gesteuert; jeder Wagen hat einen Hilfsluftbehälter, der über das Steuerventil nachgefüllt wird, und Bremszylinder, die Bremsklötze an die Räder drücken oder Scheibenbremsen betätigen. Sinkt der Leitungsdruck, leiten die Steuerventile Luft aus den Hilfsluftbehältern in die Bremszylinder; bei Zugtrennung bremsen beide Zugteile. Auch Notbremsventile in Personenwagen lösen sie aus. In Reisezügen wird in der Regel die Hauptluftbehälterleitung mitgekuppelt; ein Gleitschutz verhindert das Blockieren der Räder.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q4", "fundstelle": "Einleitung; Abschnitt Indirekt wirkende Druckluftbremse, Unterabschnitt Prinzipieller Aufbau und Wirkungsweise; Abschnitt Bremsstellungen und Umstelleinrichtungen (Gleitschutz); Abschnitt Hochabbremsung, Unterabschnitt Reisezugwagen"}
+          ],
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P7",
+          "text": "Die TSI fordert eine Hauptbremsfunktion für Betriebs- und Schnellbremsungen mit durchgehendem Signal und selbsttätiger Aktivierung bei Unterbrechung der Steuerleitung sowie eine Feststellbremsfunktion, die ohne fahrzeugseitige Energieversorgung zeitlich unbeschränkt wirkt. Kraftschlussunabhängige Bremsen wie die Magnetschienenbremse dürfen ergänzen; diese wirkt nur bei Schnell-, Zwangs- und Notbremsungen und besitzt pneumatische Betätigungszylinder.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q8", "fundstelle": "Anhang, Abschnitt 4.2.4.2.1 Absätze 1 bis 5 und Abschnitt 4.2.4.8"},
+            {"quellen_id": "Q10", "fundstelle": "Einleitung und Abschnitt Verwendung"}
+          ],
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P8",
+          "text": "Der Bremsfluss in der Druckluftbremsanlage verläuft vom Druckabfall in der Hauptluftleitung über Steuerventil und Hilfsluftbehälter zum Bremszylinder und über die Reibungsbremse auf den Radsatz. Zur Zusatzbremsausrüstung gehören Feststellbremse, Gleitschutz und Magnetschienenbremse. Strukturändernd ist die Bremssteuerung: Eine elektropneumatische Steuerung überlagert die Druckluftsteuerung, verkürzt das Ansprechen und erlaubt die Notbremsüberbrückung, braucht aber zusätzliche Steuerleitungen und eine Kopplung mit dem Fahrgastalarm. Die Wahl zwischen Klotz- und Scheibenbremse bestimmt Anordnung und Wärmeabfuhr am Radsatz.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": ["P6", "P7", "Q4 Abschnitt Elektropneumatische Bremse (ep-Bremse) mit Notbremsüberbrückung", "Eine Reibungsbremse wandelt Bewegungsenergie dort in Wärme, wo sie angreift: an der Radlauffläche oder an der Bremsscheibe."],
+            "schluss": "Die Druckluftbremsanlage bildet den Hauptpfad, Bremssteuerung und Reibungsbremsbauart sind strukturändernde Entscheidungen mit Folgen für Datenleitungen, Fahrgastalarm und Radsatz."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Energieversorgungssystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E29",
+      "absaetze": [
+        {
+          "absatz_id": "P9",
+          "text": "Die Zugsammelschiene verbindet alle Wagen eines Reisezugs untereinander und mit der Lokomotive und versorgt sie zentral mit elektrischer Energie, heute nicht nur für die Heizung, sondern auch für Klimaanlagen, Beleuchtung und weitere Verbraucher. Im Bereich des UIC ist sie einpolig mit den Gleisen als Rückleiter, in China, Indien und den USA dreipolig. Früher speisten Achsgeneratoren mit Akkumulatoren die Beleuchtung; mit der Zugsammelschiene konnten sie entfallen und die Batteriekapazität etwa halbiert werden.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q2", "fundstelle": "Einleitung und Abschnitt Geschichte"},
+            {"quellen_id": "Q1", "fundstelle": "Abschnitt Geschichtliche Entwicklung, Unterabschnitte Heizung und Beleuchtung"}
+          ],
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P10",
+          "text": "Im Wagen formt ein Bordnetzumrichter mit Batterieladegerät die je nach Triebfahrzeug unterschiedliche Spannung der Zugsammelschiene für das Niedervolt-Bordnetz und die Klimaanlage um, während Heizregister direkt gespeist werden können. Die Bordnetzbatterie versorgt bei spannungsloser Zugsammelschiene Notbeleuchtung, Türsteuerung, Kommunikationsanlage und Magnetschienenbremse. Die Alternative Achsgenerator mit Batterie macht den Wagen unabhängig von der Zugenergieversorgung des Triebfahrzeugs, begrenzt aber die verfügbare Leistung und schließt eine Klimatisierung praktisch aus.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": ["P9", "Q2 Abschnitt Arten der Stromversorgung (unterschiedliche Spannungen und Frequenzen je Bahnstromsystem; Batterieladegeräte und Klimaanlagen als Last)", "Q8 Abschnitt 4.2.5.2 Absatz 3 (Kommunikationsanlage unabhängig von der Hauptenergieversorgung)", "Q8 Abschnitt 4.2.10.4.1 (Notbeleuchtung nach Ausfall der Hauptenergieversorgung)", "Verbraucher mit fester Bordnetzspannung brauchen einen Wandler zwischen veränderlicher Einspeisung und Bordnetz."],
+            "schluss": "Zwischen Zugsammelschiene und Verbrauchern liegt ein Umrichter, die Batterie stützt die sicherheitsrelevanten Verbraucher; die Achsgenerator-Variante ändert Leistungsbudget und Radsatz."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrgastraum",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E33",
+      "absaetze": [
+        {
+          "absatz_id": "P11",
+          "text": "Nach der Inneneinrichtung unterscheidet man Abteilwagen mit Abteilen und Großraumwagen mit einem oder wenigen Fahrgasträumen für eine größere Anzahl Reisender; die Ausstattung richtet sich nach der Wagenklasse, hinzu kommen Bereiche für Gepäck oder Fahrräder. Doppelstockwagen erhöhen bei begrenzter Zuglänge die Sitzplatzkapazität. Zu den wagenspezifischen Ausrüstungen gehören Einstiege, Türen, Wagenübergänge, Abteil- und Sitzgestaltung sowie Gepäckablagen.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q1", "fundstelle": "Abschnitt Einteilung, Unterabschnitt Personenwagen; Abschnitt Fahrgastraum, Unterabschnitt Doppelstockwagen"},
+            {"quellen_id": "Q9", "fundstelle": "Abschnitt 2.4, Folie Fahrzeugelemente (III), Verkehrs- und wagenspezifische Ausrüstungen an Reisezugwagen"}
+          ],
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P12",
+          "text": "Der Fahrgastraum gliedert sich in Einstiegsräume an den Wagenenden, den Sitzbereich mit Sitzen und Innenausstattung aus Trennwänden, Tischen und Gepäckablagen sowie gegebenenfalls ein Dienstabteil für das Zugbegleitpersonal. Fahrgäste gelangen über Außentüren und Einstiegsraum zum Sitz oder über den Wagenübergang in den Nachbarwagen. Die Raumaufteilung bestimmt, wie viele Alarmvorrichtungen, Luftauslässe, Leuchten und Brandschutztrennungen nötig sind; beim Steuerwagen verkürzt der Führerraum den Fahrgastraum.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": ["P11", "Q8 Abschnitt 4.2.5.3.2 Absatz 1 (Alarmvorrichtung in jedem Abteil und Vorraum)", "Q8 Abschnitt 2.2.2 Buchstabe C (Steuerwagen als Reisezugwagen mit Führerraum)", "Ein- und Ausstieg über Außentüren und Übergang zwischen Wagen erfordern Verkehrsflächen an den Wagenenden."],
+            "schluss": "Der Fahrgastraum besteht aus Einstiegs- und Sitzbereichen; die Raumaufteilung ist eine strukturändernde Entscheidung mit Folgen für Sicherheits-, Klima- und Beleuchtungssysteme."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Elektrik und Elektronik",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E37",
+      "absaetze": [
+        {
+          "absatz_id": "P13",
+          "text": "Das UIC-Kabel, in Deutschland IS-Leitung (Informations- und Steuerleitung) genannt, wird in den Wagenübergängen gekuppelt und bildet eine einheitliche Schnittstelle zwischen Lokomotive und Reisezugwagen für Lautsprecheranlage, Beleuchtung und Fernschließen der Türen; in Deutschland lief darüber auch die zeitmultiplexe Wendezugsteuerung. Die 18-polige Ausführung nach UIC-Merkblatt 558 nutzt zusätzliche Adern für die seitenselektive Türsteuerung und als Wire Train Bus, die 24-polige nach IRS 50558 ein Ethernet-Kabel für den Ethernet Train Bus.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q5", "fundstelle": "Einleitung; Abschnitte Standard UIC 568, Standard UIC 558 und Weiterentwicklung IRS 50558"}
+          ],
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P14",
+          "text": "Das Niedervolt-Bordnetz verteilt die Energie aus Bordnetzumrichter und Bordnetzbatterie über Stromverteiler, Sicherungen und Leitungen an Wagensteuergerät, Beleuchtung, Türantriebe und Fahrgastinformation. Informations- und Steuerleitung und Zugbus laufen durch jeden Wagen hindurch und verbinden die Wagensteuergeräte untereinander und mit dem Triebfahrzeug; ob Funktionen über Einzeladern oder über den Zugbus laufen, bestimmt die Kombinierbarkeit mit älteren Fahrzeugen.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": ["P10", "P13", "Jeder Verbraucher braucht eine abgesicherte Zuleitung aus einer Energiequelle; jede zugweite Funktion braucht eine durchgekuppelte Leitung."],
+            "schluss": "Elektrik und Elektronik bestehen aus dem Bordnetz für die Energieverteilung und den durchgehenden Daten- und Steuerleitungen."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrzeugsteuerung und Information",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E41",
+      "absaetze": [
+        {
+          "absatz_id": "P15",
+          "text": "Die Steuerung der Außentüren gilt als sicherheitsrelevante Funktion: Das Zugpersonal muss die Türen vor Abfahrt schließen und verriegeln können, und Traktionskraft darf nur bei geschlossenen und verriegelten Türen bereitgestellt werden. Eine akustische Kommunikationsanlage dient Durchsagen an die Fahrgäste und der Verständigung zwischen Triebfahrzeugführer und Zugpersonal und muss mindestens drei Stunden unabhängig von der Hauptenergieversorgung in Bereitschaft bleiben.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q8", "fundstelle": "Anhang, Abschnitte 4.2.5.5.1 Absatz 3, 4.2.5.5.3 Absatz 1, 4.2.5.5.7 Absatz 1 sowie 4.2.5.2 Absätze 2 und 3"}
+          ],
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P16",
+          "text": "Das Wagensteuergerät koordiniert Türen, Beleuchtung, Klimatisierung und Diagnose und empfängt zugweite Befehle über Informations- und Steuerleitung oder Zugbus. Die Türsteuerung umfasst Türtaster, Türsteuergerät und Verriegelungsüberwachung und meldet den Zustand aller Türen über eine durchgehende Schleife an das Triebfahrzeug. Das Fahrgastinformationssystem umfasst Lautsprecher und Anzeigen. Varianten betreffen die seitenselektive Türfreigabe und eine zentrale oder dezentrale Diagnose.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": ["P13", "P14", "P15", "Eine Traktionssperre setzt voraus, dass der Verriegelungszustand jeder Tür zugweit an das Triebfahrzeug gemeldet wird."],
+            "schluss": "Die Fahrzeugsteuerung besteht aus Wagensteuergerät, Türsteuerung und Fahrgastinformationssystem, die über die durchgehenden Leitungen mit dem Triebfahrzeug kommunizieren."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Assistenz und Sicherheit",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E45",
+      "absaetze": [
+        {
+          "absatz_id": "P17",
+          "text": "Jedes Abteil, jeder Einstiegsraum und jeder andere abgetrennte Fahrgastbereich außer Toiletten und Übergängen braucht eine Alarmvorrichtung, die den Triebfahrzeugführer informiert; quittiert er nicht innerhalb von zehn Sekunden, folgt eine automatische Betriebsbremsung, am Bahnsteig wird direkt gebremst. Einheiten unter 250 km/h auf anderen Spurweiten als 1 520 mm brauchen eine fahrzeug- oder streckenseitige Radsatzlagerüberwachung. Personenwagen der Kategorie B erhalten Trennwände über den gesamten Querschnitt in höchstens 30 m Abstand oder andere Systeme zur Brandeindämmung.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q8", "fundstelle": "Anhang, Abschnitte 4.2.5.3.2 Absatz 1, 4.2.5.3.3, 4.2.3.3.2 Absatz 3 und 4.2.10.3.4"}
+          ],
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P18",
+          "text": "Der Fahrgastalarm besteht aus Notgriffen, der Signalübertragung zum Führerraum und einer Sprechverbindung; bei rein pneumatischer Ausführung öffnet der Griff unmittelbar das Notbremsventil, bei elektropneumatischer Bremssteuerung kann der Triebfahrzeugführer die Bremsung überbrücken. Sensoren der Radsatzlagerüberwachung melden an das Wagensteuergerät. Die Brandschutzausrüstung umfasst Feuerlöscher, Brandmelder, Trennwände und schwer entflammbare Werkstoffe.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": ["P6", "P8", "P17", "Q8 Abschnitte 4.2.10.2.1, 4.2.10.3.1 und 4.2.10.3.2 (Werkstoffanforderungen, tragbare Feuerlöscher, Brandmeldeeinrichtungen)"],
+            "schluss": "Assistenz und Sicherheit gliedern sich in Fahrgastalarm, Radsatzlagerüberwachung und Brandschutzausrüstung, deren Ausführung von der Bremssteuerung abhängt."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Beleuchtung und Sicht",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E49",
+      "absaetze": [
+        {
+          "absatz_id": "P19",
+          "text": "Die Wagenbeleuchtung wurde mit dem UIC-Kabel zentral schaltbar und kann über die Zugsammelschiene versorgt werden. Die Notbeleuchtung muss bei Einheiten unter 250 km/h die Fahrgast- und Personalbereiche 90 Minuten nach Ausfall der Hauptenergieversorgung mit mindestens 5 lx auf Bodenhöhe ausleuchten. Einheiten am Zugende brauchen zwei rote Schlusslichter; Einheiten ohne Führerraum im freizügigen Betrieb dürfen tragbare Lampen verwenden.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q1", "fundstelle": "Abschnitt Geschichtliche Entwicklung, Unterabschnitt Beleuchtung"},
+            {"quellen_id": "Q8", "fundstelle": "Anhang, Abschnitte 4.2.10.4.1 Absätze 3 und 4 sowie 4.2.7.1.3 Absätze 1 und 2"}
+          ],
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P20",
+          "text": "Die Innenbeleuchtung hängt am Niedervolt-Bordnetz und wird vom Wagensteuergerät geschaltet, die Notbeleuchtung an der Bordnetzbatterie. Schlussleuchten sind fest eingebaut oder werden an Signalstützen aufgesteckt. Sichteinrichtungen für eine führende Person entfallen; nur der Steuerwagen erhält Frontscheinwerfer, Spitzenlichter, Stirnscheibe und Scheibenwischer.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": ["P10", "P14", "P19", "Q9 Folie Fahrzeugelemente (III), Signalstützen (Rücklichter)", "Q8 Abschnitte 4.2.7.1 und 4.2.9.2 (Außenleuchten und Stirnscheibe für Einheiten mit Führerraum)"],
+            "schluss": "Innen- und Notbeleuchtung hängen an verschiedenen Energiequellen; Sichtsysteme treten nur in der Variante Steuerwagen auf."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Thermomanagement",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E53",
+      "absaetze": [
+        {
+          "absatz_id": "P21",
+          "text": "Reisezugwagen wurden früher mit Öfen, Presskohle und Dampf der Lokomotive geheizt; seit dem Ende des Dampfbetriebs heizen die europäischen Bahnen elektrisch, und die ständig unter Spannung stehende Zugsammelschiene ermöglichte Klimaanlagen. Ein Lüftungssystem muss im Betrieb eine CO2-Konzentration von höchstens 5 000 ppm sichern; fällt die Hauptenergieversorgung aus, muss eine Notfallvorkehrung die Fahrgastbereiche mit Außenluft versorgen.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q1", "fundstelle": "Abschnitt Geschichtliche Entwicklung, Unterabschnitt Heizung"},
+            {"quellen_id": "Q8", "fundstelle": "Anhang, Abschnitt 4.2.5.8 Absätze 1 und 2"}
+          ],
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P22",
+          "text": "Die Klimaanlage als Dach- oder Unterflurgerät kühlt und entfeuchtet, die Innenraumheizung arbeitet mit Heizregistern im Luftkanal und Heizkörpern an Wand und Boden, die Lüftungsanlage mischt Frisch- und Umluft und verteilt sie über Kanäle. Das Wagensteuergerät regelt die Innentemperatur und schließt bei Rauch die Frischluftzufuhr. Strukturändernd ist die Wahl zwischen klimatisiertem Wagen mit festen Fenstern und unklimatisiertem Wagen mit öffnenden Fenstern, die Wagenkasten und Leistungsbedarf beeinflusst.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": ["P10", "P21", "Q8 Abschnitt 4.2.5.8 Absatz 2 (Abschalten der Frischluftzufuhr bei Rauchgasen)", "Q8 Abschnitt 4.2.5.9 (von Fahrgästen zu öffnende Seitenfenster)", "Kühlen erfordert einen Kältekreis mit Wärmeabgabe nach außen, der außerhalb des Fahrgastraums untergebracht werden muss."],
+            "schluss": "Das Thermomanagement besteht aus Klimaanlage, Innenraumheizung und Lüftungsanlage unter Regelung des Wagensteuergeräts; die Klimatisierung ist eine strukturändernde Entscheidung."
+          },
+          "sicherheit": "gering",
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Neben- und Versorgungssysteme",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E57",
+      "absaetze": [
+        {
+          "absatz_id": "P23",
+          "text": "Bis in die 1990er-Jahre entleerten offene Zugtoiletten direkt auf den Bahnkörper; mit dem Hochgeschwindigkeitsverkehr gingen die meisten Bahnen zu geschlossenen Toiletten mit Fäkalientank über, etwa mit Frischwasser-Druckspülung und Unterdruckabsaugung, die SBB setzen Bioreaktoren ein. Die TSI verlangt, dass sanitäre Systeme keine gesundheits- oder umweltschädlichen Stoffe freisetzen, und legt Anschlüsse für Toilettenentsorgung und Wasserbefüllung fest.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q1", "fundstelle": "Abschnitt Geschichtliche Entwicklung, Unterabschnitt Toiletten"},
+            {"quellen_id": "Q8", "fundstelle": "Anhang, Abschnitte 4.2.5.1 Absatz 2, 4.2.11.3 und 4.2.11.5"}
+          ],
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P24",
+          "text": "Eine eigene Drucklufterzeugung fehlt: Die Druckluftanlage speist Nebenluftbehälter aus der Hauptluftbehälterleitung und versorgt Türantriebe, Luftfedern, Toilettenspülung und die Zylinder der Magnetschienenbremse. Die Wasserversorgung mit Frischwassertank, Pumpe und frostgeschützten Leitungen speist Waschbecken und Toilettensystem; dieses arbeitet mit Unterdruckerzeugung, Fäkalientank und Entleerungsstutzen. Die Toilettenbauart bestimmt Tankvolumen, Druckluftbedarf und Entsorgungsschnittstellen.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": ["P5", "P6", "P7", "P23", "Der Wagen besitzt keinen Kompressor; pneumatische Nebenverbraucher können nur aus einer durchgekuppelten Leitung versorgt werden."],
+            "schluss": "Die Neben- und Versorgungssysteme bestehen aus Druckluftanlage, Wasserversorgung und Toilettensystem, deren Auslegung von der Toilettenbauart abhängt."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Zusammenfassung",
+      "abschnittstyp": "gesamtsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P25",
+          "text": "Auf oberster Ebene besteht der Personenwagen aus Fahrzeugstruktur und Fahrwerk, Bremssystem, Energieversorgungssystem, Fahrgastraum, Elektrik und Elektronik, Fahrzeugsteuerung und Information, Assistenz und Sicherheit, Beleuchtung und Sicht, Thermomanagement sowie den Neben- und Versorgungssystemen. Antriebssystem, Lenksystem sowie Aufbau und Ladung entfallen. Fast alle Systeme sind über die Wagenenden mit den Nachbarfahrzeugen verbunden.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": ["P2", "P3", "P6", "P9", "P11", "P13", "P15", "P17", "P19", "P21", "P23"],
+            "schluss": "Die zehn beschriebenen Hauptsysteme bilden die oberste Dekompositionsebene des Personenwagens."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Modellierungsbezug",
+      "abschnittstyp": "modellierung",
+      "absaetze": [
+        {
+          "absatz_id": "P26",
+          "text": "In SysML bildet der Block `Personenwagen` das Gesamtsystem mit den Hauptsystemen als Teilen. Dekompositionspfade sind etwa `Fahrzeugstruktur und Fahrwerk → Drehgestell → Radsatz`, `Bremssystem → Druckluftbremsanlage → Steuerventil`, `Fahrzeugstruktur und Fahrwerk → Zug- und Stoßeinrichtung → Schraubenkupplung` und `Personenwagen → Neben- und Versorgungssysteme → Toilettensystem`. Jedes Wagenende erhält Ports für Zugsammelschiene, Hauptluftleitung, Hauptluftbehälterleitung, Informations- und Steuerleitung, Zugbus, Kupplung und Wagenübergang, die interne Konnektoren durchverbinden. Block Definition Diagrams zeigen die Struktur, Internal Block Diagrams die Durchleitung, Aktivitätsdiagramme Bremsung und Fahrgastalarm, Zustandsautomaten die Türzustände.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": ["P2", "P4", "P6", "P9", "P13", "P15", "Ein Durchleitungsglied hat an beiden Enden gleichartige Schnittstellen."],
+            "schluss": "Der Wagen wird als Block mit symmetrischen Wagenend-Ports und durchgehenden Konnektoren modelliert."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P27",
+          "text": "Steuerwagen, Doppelstockwagen und luftgefederte Wagen lassen sich als Spezialisierungen des Blocks modellieren, die nur die geänderten Teile überschreiben, etwa den zusätzlichen Führerraum oder die Luftfeder samt Druckluftanschluss.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": ["P5", "P12", "P20", "Spezialisierung erlaubt, gemeinsame Struktur wiederzuverwenden und nur Abweichungen zu modellieren."],
+            "schluss": "Strukturändernde Varianten werden als Spezialisierungen des Grundblocks abgebildet."
+          },
+          "sicherheit": "gering",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Flüsse",
+      "abschnittstyp": "fluesse",
+      "absaetze": [
+        {
+          "absatz_id": "P28",
+          "text": "Mechanisch: Längskräfte von Puffer und Schraubenkupplung ins Untergestell; Vertikallasten vom Untergestell über Sekundärfederung, Drehgestellrahmen, Primärfederung und Radsatzlager in den Radsatz; Bremskraft von der Reibungsbremse auf den Radsatz. Pneumatisch: Hauptluftleitung über Steuerventil und Hilfsluftbehälter zum Bremszylinder; Notbremsventil entlüftet die Hauptluftleitung; Hauptluftbehälterleitung über die Druckluftanlage zu Außentüren, Sekundärfederung, Toilettensystem und Magnetschienenbremse. Elektrisch: Zugsammelschiene zu Bordnetzumrichter und Innenraumheizung, weiter zu Klimaanlage, Bordnetzbatterie und Niedervolt-Bordnetz. Information: Zugbus zum Wagensteuergerät, Informations- und Steuerleitung zum Fahrgastinformationssystem, Wagensteuergerät zu Türsteuerung, Innenbeleuchtung und Klimaanlage; Fahrgastalarm, Radsatzlagerüberwachung und Gleitschutz melden. Thermisch und stofflich: Klimaanlage und Lüftungsanlage zum Fahrgastraum, Wasserversorgung zum Toilettensystem.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": ["P5", "P8", "P10", "P14", "P16", "P18", "P22", "P24"],
+            "schluss": "Die Flüsse verbinden die Hauptsysteme entlang der in den Abschnitten beschriebenen Wirkketten."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Perspektiven",
+      "abschnittstyp": "perspektiven",
+      "absaetze": [
+        {
+          "absatz_id": "P29",
+          "text": "Funktionszuordnung: Fahrzeuglasten tragen – Wagenkasten, Drehgestell; Fahrzeug im Gleis führen – Radsatz, Drehgestell; Längskräfte im Zugverband übertragen – Zug- und Stoßeinrichtung; Fahrzeug verzögern – Druckluftbremsanlage, Reibungsbremse, Magnetschienenbremse, Gleitschutz; Fahrzeug festhalten – Feststellbremse; Energie speichern – Bordnetzbatterie, Hilfsluftbehälter; Elektrische Energie verteilen – Zugsammelschiene, Bordnetzumrichter, Niedervolt-Bordnetz; Druckluft bereitstellen – Hauptluftbehälterleitung, Druckluftanlage; Unterdruck bereitstellen – Toilettensystem; Daten übertragen – Informations- und Steuerleitung, Zugbus; Fahrzeugzustand überwachen – Wagensteuergerät, Radsatzlagerüberwachung; Insassen schützen – Wagenkasten, Fahrgastalarm, Notbremsventil, Brandschutzausrüstung; Fahrgäste aufnehmen – Sitze, Innenausstattung, Dienstabteil, Wagenübergang; Betriebstüren betätigen – Außentüren, Türsteuerung; Fahrgäste informieren – Fahrgastinformationssystem; Innenraum beleuchten – Innenbeleuchtung, Notbeleuchtung; Lichtsignale abgeben – Schlussleuchten; Innenraum klimatisieren – Klimaanlage, Innenraumheizung, Lüftungsanlage; Fahrgäste versorgen – Wasserversorgung, Toilettensystem.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": ["P3", "P4", "P8", "P10", "P12", "P14", "P16", "P18", "P20", "P22", "P24"],
+            "schluss": "Jede Funktion des Modellblocks ist mindestens einem ausführenden Element zugeordnet."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    }
+  ],
+  "modell": {
+    "elemente": [
+      {"id": "E1", "name": "Personenwagen", "typ": "gesamtsystem", "eltern_id": null, "absatz_ids": ["P1", "P2", "P25"]},
+      {"id": "E2", "name": "Fahrzeugstruktur und Fahrwerk", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P3", "P4", "P5"], "kategorie": "struktur_fahrwerk"},
+      {"id": "E3", "name": "Wagenkasten", "typ": "subsystem", "eltern_id": "E2", "absatz_ids": ["P3", "P5"]},
+      {"id": "E4", "name": "Untergestell", "typ": "komponente", "eltern_id": "E3", "absatz_ids": ["P3", "P5"]},
+      {"id": "E5", "name": "Außentüren", "typ": "komponente", "eltern_id": "E3", "absatz_ids": ["P5", "P12", "P15"]},
+      {"id": "E6", "name": "Wagenübergang", "typ": "komponente", "eltern_id": "E3", "absatz_ids": ["P4", "P5", "P12"]},
+      {"id": "E7", "name": "Drehgestell", "typ": "subsystem", "eltern_id": "E2", "absatz_ids": ["P3", "P5"]},
+      {"id": "E8", "name": "Drehgestellrahmen", "typ": "komponente", "eltern_id": "E7", "absatz_ids": ["P3", "P5"]},
+      {"id": "E9", "name": "Radsatz", "typ": "komponente", "eltern_id": "E7", "absatz_ids": ["P3", "P5"]},
+      {"id": "E10", "name": "Radsatzlager", "typ": "komponente", "eltern_id": "E7", "absatz_ids": ["P3", "P5"]},
+      {"id": "E11", "name": "Primärfederung", "typ": "komponente", "eltern_id": "E7", "absatz_ids": ["P3", "P5"]},
+      {"id": "E12", "name": "Sekundärfederung", "typ": "komponente", "eltern_id": "E7", "absatz_ids": ["P3", "P5"]},
+      {"id": "E13", "name": "Zug- und Stoßeinrichtung", "typ": "subsystem", "eltern_id": "E2", "absatz_ids": ["P4"]},
+      {"id": "E14", "name": "Puffer", "typ": "komponente", "eltern_id": "E13", "absatz_ids": ["P4", "P5"]},
+      {"id": "E15", "name": "Schraubenkupplung", "typ": "komponente", "eltern_id": "E13", "absatz_ids": ["P4", "P5"]},
+      {"id": "E16", "name": "Bremssystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P6", "P7", "P8"], "kategorie": "bremse"},
+      {"id": "E17", "name": "Druckluftbremsanlage", "typ": "subsystem", "eltern_id": "E16", "absatz_ids": ["P6", "P8"]},
+      {"id": "E18", "name": "Hauptluftleitung", "typ": "komponente", "eltern_id": "E17", "absatz_ids": ["P6", "P8"]},
+      {"id": "E19", "name": "Hauptluftbehälterleitung", "typ": "komponente", "eltern_id": "E17", "absatz_ids": ["P6", "P24"]},
+      {"id": "E20", "name": "Steuerventil", "typ": "komponente", "eltern_id": "E17", "absatz_ids": ["P6", "P8"]},
+      {"id": "E21", "name": "Hilfsluftbehälter", "typ": "komponente", "eltern_id": "E17", "absatz_ids": ["P6", "P8"]},
+      {"id": "E22", "name": "Bremszylinder", "typ": "komponente", "eltern_id": "E17", "absatz_ids": ["P6", "P8"]},
+      {"id": "E23", "name": "Reibungsbremse", "typ": "komponente", "eltern_id": "E17", "absatz_ids": ["P6", "P8"]},
+      {"id": "E24", "name": "Notbremsventil", "typ": "komponente", "eltern_id": "E17", "absatz_ids": ["P6", "P18"]},
+      {"id": "E25", "name": "Zusatzbremsausrüstung", "typ": "subsystem", "eltern_id": "E16", "absatz_ids": ["P7", "P8"]},
+      {"id": "E26", "name": "Feststellbremse", "typ": "komponente", "eltern_id": "E25", "absatz_ids": ["P7", "P8"]},
+      {"id": "E27", "name": "Gleitschutz", "typ": "komponente", "eltern_id": "E25", "absatz_ids": ["P6", "P8"]},
+      {"id": "E28", "name": "Magnetschienenbremse", "typ": "komponente", "eltern_id": "E25", "absatz_ids": ["P7", "P8"]},
+      {"id": "E29", "name": "Energieversorgungssystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P9", "P10"], "kategorie": "energieversorgung"},
+      {"id": "E30", "name": "Zugsammelschiene", "typ": "komponente", "eltern_id": "E29", "absatz_ids": ["P9", "P10"]},
+      {"id": "E31", "name": "Bordnetzumrichter", "typ": "komponente", "eltern_id": "E29", "absatz_ids": ["P10"]},
+      {"id": "E32", "name": "Bordnetzbatterie", "typ": "komponente", "eltern_id": "E29", "absatz_ids": ["P9", "P10"]},
+      {"id": "E33", "name": "Fahrgastraum", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P11", "P12"], "kategorie": "bedienraum"},
+      {"id": "E34", "name": "Sitze", "typ": "komponente", "eltern_id": "E33", "absatz_ids": ["P11", "P12"]},
+      {"id": "E35", "name": "Innenausstattung", "typ": "komponente", "eltern_id": "E33", "absatz_ids": ["P11", "P12"]},
+      {"id": "E36", "name": "Dienstabteil", "typ": "komponente", "eltern_id": "E33", "absatz_ids": ["P12"]},
+      {"id": "E37", "name": "Elektrik und Elektronik", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P13", "P14"], "kategorie": "elektrik_elektronik"},
+      {"id": "E38", "name": "Niedervolt-Bordnetz", "typ": "komponente", "eltern_id": "E37", "absatz_ids": ["P14"]},
+      {"id": "E39", "name": "Informations- und Steuerleitung", "typ": "komponente", "eltern_id": "E37", "absatz_ids": ["P13", "P14"]},
+      {"id": "E40", "name": "Zugbus", "typ": "komponente", "eltern_id": "E37", "absatz_ids": ["P13", "P14"]},
+      {"id": "E41", "name": "Fahrzeugsteuerung und Information", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P15", "P16"], "kategorie": "steuerung_information"},
+      {"id": "E42", "name": "Wagensteuergerät", "typ": "komponente", "eltern_id": "E41", "absatz_ids": ["P16"]},
+      {"id": "E43", "name": "Türsteuerung", "typ": "komponente", "eltern_id": "E41", "absatz_ids": ["P15", "P16"]},
+      {"id": "E44", "name": "Fahrgastinformationssystem", "typ": "komponente", "eltern_id": "E41", "absatz_ids": ["P15", "P16"]},
+      {"id": "E45", "name": "Assistenz und Sicherheit", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P17", "P18"], "kategorie": "assistenz_sicherheit"},
+      {"id": "E46", "name": "Fahrgastalarm", "typ": "komponente", "eltern_id": "E45", "absatz_ids": ["P17", "P18"]},
+      {"id": "E47", "name": "Radsatzlagerüberwachung", "typ": "komponente", "eltern_id": "E45", "absatz_ids": ["P17", "P18"]},
+      {"id": "E48", "name": "Brandschutzausrüstung", "typ": "komponente", "eltern_id": "E45", "absatz_ids": ["P17", "P18"]},
+      {"id": "E49", "name": "Beleuchtung und Sicht", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P19", "P20"], "kategorie": "beleuchtung_sicht"},
+      {"id": "E50", "name": "Innenbeleuchtung", "typ": "komponente", "eltern_id": "E49", "absatz_ids": ["P19", "P20"]},
+      {"id": "E51", "name": "Notbeleuchtung", "typ": "komponente", "eltern_id": "E49", "absatz_ids": ["P19", "P20"]},
+      {"id": "E52", "name": "Schlussleuchten", "typ": "komponente", "eltern_id": "E49", "absatz_ids": ["P19", "P20"]},
+      {"id": "E53", "name": "Thermomanagement", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P21", "P22"], "kategorie": "thermomanagement"},
+      {"id": "E54", "name": "Klimaanlage", "typ": "komponente", "eltern_id": "E53", "absatz_ids": ["P21", "P22"]},
+      {"id": "E55", "name": "Innenraumheizung", "typ": "komponente", "eltern_id": "E53", "absatz_ids": ["P21", "P22"]},
+      {"id": "E56", "name": "Lüftungsanlage", "typ": "komponente", "eltern_id": "E53", "absatz_ids": ["P21", "P22"]},
+      {"id": "E57", "name": "Neben- und Versorgungssysteme", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P23", "P24"], "kategorie": "nebensysteme"},
+      {"id": "E58", "name": "Druckluftanlage", "typ": "komponente", "eltern_id": "E57", "absatz_ids": ["P24"]},
+      {"id": "E59", "name": "Wasserversorgung", "typ": "komponente", "eltern_id": "E57", "absatz_ids": ["P23", "P24"]},
+      {"id": "E60", "name": "Toilettensystem", "typ": "komponente", "eltern_id": "E57", "absatz_ids": ["P23", "P24"]}
+    ],
+    "funktionen": [
+      {"id": "F1", "name": "Fahrzeuglasten tragen", "ausgefuehrt_von": ["E3", "E7"], "absatz_ids": ["P3", "P5"]},
+      {"id": "F2", "name": "Fahrzeug im Gleis führen", "ausgefuehrt_von": ["E9", "E7"], "absatz_ids": ["P3"]},
+      {"id": "F3", "name": "Längskräfte im Zugverband übertragen", "ausgefuehrt_von": ["E13"], "absatz_ids": ["P4", "P5"]},
+      {"id": "F4", "name": "Fahrzeug verzögern", "ausgefuehrt_von": ["E17", "E23", "E28", "E27"], "absatz_ids": ["P6", "P7", "P8"]},
+      {"id": "F5", "name": "Fahrzeug festhalten", "ausgefuehrt_von": ["E26"], "absatz_ids": ["P7"]},
+      {"id": "F6", "name": "Energie speichern", "ausgefuehrt_von": ["E32", "E21"], "absatz_ids": ["P6", "P10"]},
+      {"id": "F7", "name": "Elektrische Energie verteilen", "ausgefuehrt_von": ["E30", "E31", "E38"], "absatz_ids": ["P9", "P10", "P14"]},
+      {"id": "F8", "name": "Druckluft bereitstellen", "ausgefuehrt_von": ["E19", "E58"], "absatz_ids": ["P6", "P24"]},
+      {"id": "F9", "name": "Unterdruck bereitstellen", "ausgefuehrt_von": ["E60"], "absatz_ids": ["P23", "P24"]},
+      {"id": "F10", "name": "Daten übertragen", "ausgefuehrt_von": ["E39", "E40"], "absatz_ids": ["P13", "P14"]},
+      {"id": "F11", "name": "Fahrzeugzustand überwachen", "ausgefuehrt_von": ["E42", "E47"], "absatz_ids": ["P16", "P17", "P18"]},
+      {"id": "F12", "name": "Insassen schützen", "ausgefuehrt_von": ["E3", "E46", "E24", "E48"], "absatz_ids": ["P17", "P18"]},
+      {"id": "F13", "name": "Fahrgäste aufnehmen", "ausgefuehrt_von": ["E34", "E35", "E36", "E6"], "absatz_ids": ["P11", "P12"]},
+      {"id": "F14", "name": "Betriebstüren betätigen", "ausgefuehrt_von": ["E5", "E43"], "absatz_ids": ["P15", "P16"]},
+      {"id": "F15", "name": "Fahrgäste informieren", "ausgefuehrt_von": ["E44"], "absatz_ids": ["P15", "P16"]},
+      {"id": "F16", "name": "Innenraum beleuchten", "ausgefuehrt_von": ["E50", "E51"], "absatz_ids": ["P19", "P20"]},
+      {"id": "F17", "name": "Lichtsignale abgeben", "ausgefuehrt_von": ["E52"], "absatz_ids": ["P19", "P20"]},
+      {"id": "F18", "name": "Innenraum klimatisieren", "ausgefuehrt_von": ["E54", "E55", "E56"], "absatz_ids": ["P21", "P22"]},
+      {"id": "F19", "name": "Fahrgäste versorgen", "ausgefuehrt_von": ["E59", "E60"], "absatz_ids": ["P23", "P24"]}
+    ],
+    "fluesse": [
+      {"id": "S1", "von": "E14", "nach": "E4", "art": "mechanisch", "medium": "Druckkräfte (Längsstöße)", "absatz_ids": ["P4", "P5", "P28"]},
+      {"id": "S2", "von": "E15", "nach": "E4", "art": "mechanisch", "medium": "Zugkräfte", "absatz_ids": ["P4", "P5", "P28"]},
+      {"id": "S3", "von": "E4", "nach": "E12", "art": "mechanisch", "medium": "Vertikallast Wagenkasten", "absatz_ids": ["P5", "P28"]},
+      {"id": "S4", "von": "E12", "nach": "E8", "art": "mechanisch", "medium": "Vertikallast", "absatz_ids": ["P3", "P5", "P28"]},
+      {"id": "S5", "von": "E8", "nach": "E11", "art": "mechanisch", "medium": "Vertikallast", "absatz_ids": ["P3", "P5", "P28"]},
+      {"id": "S6", "von": "E11", "nach": "E10", "art": "mechanisch", "medium": "Vertikallast", "absatz_ids": ["P3", "P5", "P28"]},
+      {"id": "S7", "von": "E10", "nach": "E9", "art": "mechanisch", "medium": "Radsatzlast", "absatz_ids": ["P3", "P5", "P28"]},
+      {"id": "S8", "von": "E18", "nach": "E20", "art": "pneumatisch", "medium": "Druckluft (Steuerdruck und Nachfüllluft)", "absatz_ids": ["P6", "P8", "P28"]},
+      {"id": "S9", "von": "E20", "nach": "E21", "art": "pneumatisch", "medium": "Druckluft (Nachfüllen)", "absatz_ids": ["P6", "P8"]},
+      {"id": "S10", "von": "E21", "nach": "E22", "art": "pneumatisch", "medium": "Druckluft (Bremsluft über Steuerventil)", "absatz_ids": ["P6", "P8", "P28"]},
+      {"id": "S11", "von": "E22", "nach": "E23", "art": "mechanisch", "medium": "Zuspannkraft über Bremsgestänge", "absatz_ids": ["P6", "P8"]},
+      {"id": "S12", "von": "E23", "nach": "E9", "art": "mechanisch", "medium": "Bremskraft", "absatz_ids": ["P8", "P28"], "schnittstelle": "Reibpaarung an Radlauffläche oder Bremsscheibe"},
+      {"id": "S13", "von": "E24", "nach": "E18", "art": "pneumatisch", "medium": "Entlüftung der Hauptluftleitung", "absatz_ids": ["P6", "P28"]},
+      {"id": "S14", "von": "E19", "nach": "E58", "art": "pneumatisch", "medium": "Druckluft", "absatz_ids": ["P24", "P28"], "schnittstelle": "Nebenluftanschluss an der Hauptluftbehälterleitung"},
+      {"id": "S15", "von": "E58", "nach": "E5", "art": "pneumatisch", "medium": "Druckluft", "absatz_ids": ["P24", "P28"], "schnittstelle": "Türantrieb"},
+      {"id": "S16", "von": "E58", "nach": "E12", "art": "pneumatisch", "medium": "Druckluft", "absatz_ids": ["P5", "P24", "P28"], "schnittstelle": "Luftfederventil"},
+      {"id": "S17", "von": "E58", "nach": "E60", "art": "pneumatisch", "medium": "Druckluft", "absatz_ids": ["P24", "P28"]},
+      {"id": "S18", "von": "E58", "nach": "E28", "art": "pneumatisch", "medium": "Druckluft", "absatz_ids": ["P7", "P24", "P28"], "schnittstelle": "Betätigungszylinder der Magnetschienenbremse"},
+      {"id": "S19", "von": "E30", "nach": "E31", "art": "elektrisch", "medium": "Zugenergie", "absatz_ids": ["P10", "P28"]},
+      {"id": "S20", "von": "E30", "nach": "E55", "art": "elektrisch", "medium": "Heizstrom", "absatz_ids": ["P10", "P28"], "schnittstelle": "Heizstromkreis"},
+      {"id": "S21", "von": "E31", "nach": "E54", "art": "elektrisch", "medium": "Versorgung Klimaanlage", "absatz_ids": ["P10", "P28"], "schnittstelle": "Einspeisung Klimagerät"},
+      {"id": "S22", "von": "E31", "nach": "E32", "art": "elektrisch", "medium": "Ladestrom", "absatz_ids": ["P10", "P28"]},
+      {"id": "S23", "von": "E31", "nach": "E38", "art": "elektrisch", "medium": "Bordnetzspannung", "absatz_ids": ["P10", "P14", "P28"], "schnittstelle": "Bordnetzeinspeisung"},
+      {"id": "S24", "von": "E32", "nach": "E51", "art": "elektrisch", "medium": "Batteriestrom", "absatz_ids": ["P10", "P20"], "schnittstelle": "Batteriegestützter Notstromkreis"},
+      {"id": "S25", "von": "E32", "nach": "E28", "art": "elektrisch", "medium": "Batteriestrom", "absatz_ids": ["P10"], "schnittstelle": "Magnetstromkreis"},
+      {"id": "S26", "von": "E38", "nach": "E42", "art": "elektrisch", "medium": "Bordnetzspannung", "absatz_ids": ["P14"], "schnittstelle": "Steuerstromversorgung"},
+      {"id": "S27", "von": "E38", "nach": "E50", "art": "elektrisch", "medium": "Bordnetzspannung", "absatz_ids": ["P14", "P20"], "schnittstelle": "Beleuchtungsstromkreis"},
+      {"id": "S28", "von": "E39", "nach": "E44", "art": "information", "medium": "Durchsagen und Sprechverbindung", "absatz_ids": ["P13", "P16", "P28"], "schnittstelle": "Lautsprecheradern der Informations- und Steuerleitung"},
+      {"id": "S29", "von": "E40", "nach": "E42", "art": "information", "medium": "Zugweite Befehle und Statusdaten", "absatz_ids": ["P14", "P16", "P28"], "schnittstelle": "Zugbusknoten"},
+      {"id": "S30", "von": "E42", "nach": "E43", "art": "information", "medium": "Türfreigabe und Schließbefehl", "absatz_ids": ["P16", "P28"]},
+      {"id": "S31", "von": "E43", "nach": "E5", "art": "information", "medium": "Ansteuerung und Verriegelungsmeldung", "absatz_ids": ["P15", "P16"], "schnittstelle": "Türsteuergerät"},
+      {"id": "S32", "von": "E42", "nach": "E50", "art": "information", "medium": "Schaltbefehl", "absatz_ids": ["P20", "P28"], "schnittstelle": "Beleuchtungsschaltung"},
+      {"id": "S33", "von": "E42", "nach": "E54", "art": "information", "medium": "Temperatursollwert", "absatz_ids": ["P22", "P28"], "schnittstelle": "Klimaregelung"},
+      {"id": "S34", "von": "E46", "nach": "E24", "art": "mechanisch", "medium": "Zug am Notgriff", "absatz_ids": ["P18"], "schnittstelle": "Notbremsgriff"},
+      {"id": "S35", "von": "E46", "nach": "E39", "art": "information", "medium": "Fahrgastalarmsignal", "absatz_ids": ["P18", "P28"], "schnittstelle": "Alarmader zum Führerraum"},
+      {"id": "S36", "von": "E47", "nach": "E42", "art": "information", "medium": "Lagerzustand", "absatz_ids": ["P18", "P28"], "schnittstelle": "Sensorschnittstelle Radsatzlager"},
+      {"id": "S37", "von": "E27", "nach": "E17", "art": "information", "medium": "Gleitschutzsignal an Gleitschutzventile", "absatz_ids": ["P8", "P28"]},
+      {"id": "S38", "von": "E12", "nach": "E17", "art": "pneumatisch", "medium": "Luftfederdruck als Lastsignal", "absatz_ids": ["P5"], "schnittstelle": "Lastsignalanschluss"},
+      {"id": "S39", "von": "E54", "nach": "E33", "art": "thermisch", "medium": "Temperierte Luft", "absatz_ids": ["P22", "P28"], "schnittstelle": "Luftkanal und Luftauslässe"},
+      {"id": "S40", "von": "E56", "nach": "E33", "art": "stoff", "medium": "Frisch- und Umluft", "absatz_ids": ["P22", "P28"], "schnittstelle": "Luftkanal und Luftauslässe"},
+      {"id": "S41", "von": "E59", "nach": "E60", "art": "stoff", "medium": "Frischwasser", "absatz_ids": ["P24", "P28"]}
+    ],
+    "entfallene_kategorien": [
+      {"kategorie": "antrieb", "grund": "Personenwagen sind Einzelfahrzeuge ohne Antrieb; die Zugkraft kommt vom Triebfahrzeug über die Zug- und Stoßeinrichtung (P1, P4)."},
+      {"kategorie": "lenkung", "grund": "Die Spurführung übernehmen Radsatz und Drehgestell im Gleis; ein Lenksystem mit Lenkeingabe gibt es nicht (P3)."},
+      {"kategorie": "aufbau_nutzlast", "grund": "Fahrgäste und ihr Gepäck sind im Fahrgastraum untergebracht (Gepäckablagen, Gepäck- und Fahrradbereiche, P11); getrennte Lade- und Gepäckräume gehören zu Gepäckwagen, die außerhalb des Betrachtungsumfangs liegen."}
+    ],
+    "varianten": [
+      {
+        "id": "V1",
+        "element_id": "E33",
+        "bezeichnung": "Raumaufteilung des Fahrgastraums",
+        "alternativen": ["Abteilwagen mit Seitengang", "Großraumwagen mit Mittelgang"],
+        "auswahlkriterien": ["Verkehrsart (Nah- oder Fernverkehr)", "Platzangebot je Wagenlänge", "Ruhe und Privatheit", "Wagenklasse und Komfortanspruch"],
+        "auswirkungen": [
+          {"element_id": "E46", "beschreibung": "Beim Abteilwagen braucht jedes Abteil eine eigene Alarmvorrichtung des Fahrgastalarms."},
+          {"element_id": "E56", "beschreibung": "Die Luftverteilung muss beim Abteilwagen jedes Abteil einzeln erreichen."},
+          {"element_id": "E50", "beschreibung": "Leuchtenanordnung und Schaltgruppen folgen der Raumteilung."},
+          {"element_id": "E48", "beschreibung": "Lage der Brandschutztrennungen hängt von der Raumteilung ab."}
+        ],
+        "absatz_ids": ["P11", "P12"]
+      },
+      {
+        "id": "V2",
+        "element_id": "E3",
+        "bezeichnung": "Stockwerkszahl des Wagenkastens",
+        "alternativen": ["einstöckiger Wagen", "Doppelstockwagen"],
+        "auswahlkriterien": ["Sitzplatzkapazität bei begrenzter Zug- und Bahnsteiglänge", "verfügbare Fahrzeugbegrenzungslinie", "Fahrgastwechselzeit", "Barrierefreiheit des Einstiegs"],
+        "auswirkungen": [
+          {"element_id": "E33", "beschreibung": "Der Fahrgastraum verteilt sich auf zwei Ebenen mit Treppen."},
+          {"element_id": "E5", "beschreibung": "Die Außentüren rücken in den abgesenkten Bereich oder an die Wagenenden."},
+          {"element_id": "E54", "beschreibung": "Klimaanlage und Luftführung müssen zwei Ebenen versorgen."},
+          {"element_id": "E7", "beschreibung": "Abgesenkter Mittelteil des Wagenkastens beschränkt den Bauraum zwischen den Drehgestellen."}
+        ],
+        "absatz_ids": ["P5", "P11"]
+      },
+      {
+        "id": "V3",
+        "element_id": "E41",
+        "bezeichnung": "Führerraum im Wagen",
+        "alternativen": ["Reisezugwagen ohne Führerraum", "Steuerwagen mit Führerraum"],
+        "auswahlkriterien": ["Einsatz im Wendezug", "Wendezeit an Endbahnhöfen", "verfügbare Infrastruktur zum Umsetzen der Lokomotive", "Personaleinsatz"],
+        "auswirkungen": [
+          {"element_id": "E33", "beschreibung": "Der Führerraum verkürzt den Fahrgastraum an einem Wagenende."},
+          {"element_id": "E16", "beschreibung": "Ein Führerbremsventil und die Ansteuerung der Zusatzbremse des Triebfahrzeugs kommen hinzu."},
+          {"element_id": "E49", "beschreibung": "Frontscheinwerfer, Spitzenlichter, Stirnscheibe und Scheibenwischer kommen hinzu."},
+          {"element_id": "E39", "beschreibung": "Die Wendezugsteuerung des Triebfahrzeugs läuft über die Informations- und Steuerleitung oder den Zugbus."},
+          {"element_id": "E3", "beschreibung": "Das Wagenende wird als Steuerkopf mit Anforderungen an die passive Sicherheit ausgebildet."}
+        ],
+        "absatz_ids": ["P12", "P13", "P20"]
+      },
+      {
+        "id": "V4",
+        "element_id": "E29",
+        "bezeichnung": "Bordenergieversorgung",
+        "alternativen": ["Zugsammelschiene mit Bordnetzumrichter und Bordnetzbatterie", "Achsgenerator mit Bordnetzbatterie"],
+        "auswahlkriterien": ["Leistungsbedarf, insbesondere für Klimatisierung", "Zugenergieversorgung der vorgesehenen Triebfahrzeuge", "Versorgung im Stand", "Instandhaltungsaufwand und Laufwiderstand"],
+        "auswirkungen": [
+          {"element_id": "E9", "beschreibung": "Beim Achsgenerator wird ein Generatorantrieb am Radsatz nötig."},
+          {"element_id": "E32", "beschreibung": "Ohne Zugsammelschiene muss die Bordnetzbatterie größer ausgelegt werden."},
+          {"element_id": "E54", "beschreibung": "Eine Klimaanlage ist praktisch nur mit Zugsammelschiene möglich."},
+          {"element_id": "E55", "beschreibung": "Die elektrische Innenraumheizung setzt eine Zugsammelschiene voraus."}
+        ],
+        "absatz_ids": ["P9", "P10"]
+      },
+      {
+        "id": "V5",
+        "element_id": "E7",
+        "bezeichnung": "Bauart der Sekundärfederung",
+        "alternativen": ["Schraubenfedern (Flexicoil-Federung)", "Luftfedern"],
+        "auswahlkriterien": ["Fahrkomfort", "Kosten", "gleichbleibende Fußbodenhöhe bei wechselnder Zuladung", "Verfügbarkeit von Druckluft aus der Hauptluftbehälterleitung"],
+        "auswirkungen": [
+          {"element_id": "E58", "beschreibung": "Luftfedern brauchen eine Versorgung aus der Druckluftanlage."},
+          {"element_id": "E17", "beschreibung": "Der Luftfederdruck dient als Lastsignal der lastabhängigen Bremse, sonst ein Wiegeventil oder eine Gestängeänderung."}
+        ],
+        "absatz_ids": ["P5"]
+      },
+      {
+        "id": "V6",
+        "element_id": "E17",
+        "bezeichnung": "Bremssteuerung",
+        "alternativen": ["rein pneumatische Steuerung über die Hauptluftleitung", "elektropneumatische Steuerung mit indirekter Wirkung"],
+        "auswahlkriterien": ["Ansprechzeit im Zug", "Notbremsüberbrückung gefordert", "Kompatibilität im freizügigen Fahrbetrieb", "Höchstgeschwindigkeit"],
+        "auswirkungen": [
+          {"element_id": "E39", "beschreibung": "Elektropneumatische Steuerung braucht zusätzliche durchgekuppelte Steuerleitungen."},
+          {"element_id": "E46", "beschreibung": "Der Fahrgastalarm wird mit der Notbremsüberbrückung gekoppelt statt nur direkt auf das Notbremsventil zu wirken."},
+          {"element_id": "E42", "beschreibung": "Das Wagensteuergerät erhält Bremsstatus- und Diagnosesignale."}
+        ],
+        "absatz_ids": ["P8", "P18"]
+      },
+      {
+        "id": "V7",
+        "element_id": "E60",
+        "bezeichnung": "Toilettenbauart",
+        "alternativen": ["geschlossene Toilette mit Unterdruckabsaugung und Fäkalientank", "geschlossene Toilette mit Bioreaktor und Ablass behandelten Wassers"],
+        "auswahlkriterien": ["Entleerungsintervall und Entsorgungsinfrastruktur", "Umweltanforderungen an abgegebenes Wasser", "Investitions- und Betriebskosten", "Bauraum unter dem Wagenkasten"],
+        "auswirkungen": [
+          {"element_id": "E58", "beschreibung": "Unterdruckabsaugung und Spülung beanspruchen die Druckluftanlage."},
+          {"element_id": "E59", "beschreibung": "Wasserbedarf und Tankgröße hängen von der Spülart ab."},
+          {"element_id": "E38", "beschreibung": "Hygienisierung und Pumpen belasten das Niedervolt-Bordnetz."},
+          {"element_id": "E4", "beschreibung": "Tanks und Aggregate brauchen Bauraum und Befestigung am Untergestell."}
+        ],
+        "absatz_ids": ["P23", "P24"]
+      },
+      {
+        "id": "V8",
+        "element_id": "E53",
+        "bezeichnung": "Klimatisierung",
+        "alternativen": ["klimatisierter Wagen mit festen Fenstern", "unklimatisierter Wagen mit Heizung, Lüftung und öffnenden Fenstern"],
+        "auswahlkriterien": ["Komfortanspruch und Klimazone", "Leistungsbedarf an der Zugsammelschiene", "Rauchschutz in Tunneln", "Kosten"],
+        "auswirkungen": [
+          {"element_id": "E3", "beschreibung": "Fensterbauart und Wärmedämmung des Wagenkastens ändern sich."},
+          {"element_id": "E29", "beschreibung": "Die Klimaanlage erhöht den Leistungsbedarf an Zugsammelschiene und Bordnetzumrichter."},
+          {"element_id": "E42", "beschreibung": "Das Wagensteuergerät übernimmt die Klimaregelung und die Frischluftabschaltung."}
+        ],
+        "absatz_ids": ["P22"]
+      },
+      {
+        "id": "V9",
+        "element_id": "E23",
+        "bezeichnung": "Bauart der Reibungsbremse",
+        "alternativen": ["Klotzbremse auf der Radlauffläche", "Scheibenbremse auf der Radsatzwelle oder im Rad"],
+        "auswahlkriterien": ["Höchstgeschwindigkeit und thermische Belastung", "Rollgeräusch und Laufflächenzustand", "Instandhaltungsaufwand"],
+        "auswirkungen": [
+          {"element_id": "E9", "beschreibung": "Bremsscheiben sitzen auf der Radsatzwelle oder im Rad, Bremsklötze wirken auf die Lauffläche."},
+          {"element_id": "E8", "beschreibung": "Bremsgestänge, Zangen und Bremszylinder werden am Drehgestellrahmen anders angeordnet."},
+          {"element_id": "E27", "beschreibung": "Der Gleitschutz muss auf das Kraftschlussverhalten der gewählten Bremse abgestimmt werden."}
+        ],
+        "absatz_ids": ["P6", "P8"]
+      }
+    ],
+    "klaerungsfragen": [
+      {"id": "K1", "frage": "Soll der Wagen als Abteilwagen oder als Großraumwagen ausgeführt werden, und welche Bereiche für Gepäck, Fahrräder oder Rollstühle sind vorzusehen?", "element_ids": ["E33"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Sitzanordnung, Zahl der Alarmvorrichtungen, Luftverteilung und Brandschutztrennungen ab.", "variante_ids": ["V1"]},
+      {"id": "K2", "frage": "Ist auf den vorgesehenen Strecken ein Doppelstockwagen zulässig und gewünscht, oder genügt ein einstöckiger Wagen?", "element_ids": ["E3", "E2"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Kastenquerschnitt, Türlage, Treppen und die Auslegung der Klimaanlage ab.", "variante_ids": ["V2"]},
+      {"id": "K3", "frage": "Wird der Wagen im Wendezugbetrieb eingesetzt und braucht er deshalb einen Führerraum als Steuerwagen?", "element_ids": ["E41", "E33"], "anlass": "betrieb", "relevanz": "Davon hängen Führerraum, Außenbeleuchtung, Bremsansteuerung und die Übertragung der Wendezugsteuerung ab.", "variante_ids": ["V3"]},
+      {"id": "K4", "frage": "Stellen alle vorgesehenen Triebfahrzeuge eine Zugenergieversorgung bereit, und welche Spannungsarten muss der Wagen verarbeiten können?", "element_ids": ["E29"], "anlass": "schnittstelle", "relevanz": "Davon hängen Bauart des Bordnetzumrichters, Batteriegröße und die Möglichkeit einer Klimatisierung ab.", "variante_ids": ["V4"]},
+      {"id": "K5", "frage": "Wird eine Luftfederung gefordert, oder genügt eine Sekundärfederung mit Schraubenfedern?", "element_ids": ["E7", "E2"], "anlass": "anforderung", "relevanz": "Davon hängen Fahrkomfort, Druckluftbedarf und die Gewinnung des Lastsignals für die Bremse ab.", "variante_ids": ["V5"]},
+      {"id": "K6", "frage": "Soll die Bremssteuerung elektropneumatisch mit Notbremsüberbrückung ausgeführt werden, oder genügt die rein pneumatische Steuerung?", "element_ids": ["E16", "E17"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Steuerleitungen zwischen den Wagen, die Einbindung des Fahrgastalarms und die Kombinierbarkeit mit vorhandenen Fahrzeugen ab.", "variante_ids": ["V6"]},
+      {"id": "K7", "frage": "Welche Toilettenbauart und welches Entleerungsintervall passen zu den Entsorgungsanlagen des Betreibers?", "element_ids": ["E57", "E60"], "anlass": "betrieb", "relevanz": "Davon hängen Tankgrößen, Druckluft- und Wasserbedarf sowie die Entsorgungsschnittstellen ab.", "variante_ids": ["V7"]},
+      {"id": "K8", "frage": "Muss der Wagen klimatisiert werden, und welche Außentemperaturbereiche sind zu beherrschen?", "element_ids": ["E53"], "anlass": "anforderung", "relevanz": "Davon hängen Fensterbauart, Leistungsbedarf an der Zugsammelschiene und die Auslegung von Klimaanlage und Heizung ab.", "variante_ids": ["V8"]},
+      {"id": "K9", "frage": "Sollen die Radsätze mit Scheibenbremsen oder mit Klotzbremsen gebremst werden?", "element_ids": ["E16", "E23"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Radsatzgestaltung, Anordnung der Bremsausrüstung am Drehgestell und die Abstimmung des Gleitschutzes ab.", "variante_ids": ["V9"]},
+      {"id": "K10", "frage": "Welche Funktionen müssen weiterhin über die konventionelle Informations- und Steuerleitung laufen, damit der Wagen mit älteren Wagen und Triebfahrzeugen kombinierbar bleibt?", "element_ids": ["E37", "E39", "E40"], "anlass": "schnittstelle", "relevanz": "Davon hängen Adernbelegung, Steckerausführung und der Umfang der Zugbusfunktionen ab.", "variante_ids": ["V6"]},
+      {"id": "K11", "frage": "Sollen die Außentüren seitenselektiv freigegeben werden, und wer schließt sie vor Abfahrt: Triebfahrzeugführer oder Zugbegleitpersonal?", "element_ids": ["E41", "E43"], "anlass": "betrieb", "relevanz": "Davon hängen Türsteuerlogik, Bedienstellen und die benötigten Steueradern ab."},
+      {"id": "K12", "frage": "Welcher Brandschutzkategorie muss der Wagen genügen, etwa wegen langer Tunnel auf den vorgesehenen Strecken?", "element_ids": ["E45", "E48"], "anlass": "anforderung", "relevanz": "Davon hängen Trennwände, Brandmelde- und Löscheinrichtungen sowie die geforderte Fahrfähigkeit im Brandfall ab."},
+      {"id": "K13", "frage": "Soll der Wagen fest eingebaute Schlussleuchten erhalten, oder werden bei Bedarf tragbare Schlussleuchten aufgesteckt?", "element_ids": ["E49", "E52"], "anlass": "betrieb", "relevanz": "Davon hängen Leuchtenausrüstung, Stromkreise an den Wagenenden und betriebliche Abläufe bei der Zugbildung ab."},
+      {"id": "K14", "frage": "Welche Höchstgeschwindigkeit und welche Radsatzlast sind für die vorgesehenen Strecken anzusetzen?", "element_ids": ["E2", "E7"], "anlass": "anforderung", "relevanz": "Davon hängen Drehgestellbauart, Wagenkastenfestigkeit, Bremsausrüstung und die Pflicht zur fahrzeugseitigen Radsatzlagerüberwachung ab."}
+    ],
+    "anforderungsthemen": [
+      {"id": "R1", "element_ids": ["E2", "E3", "E13"], "thema": "Festigkeit, passive Sicherheit und Kupplungskompatibilität", "kenngroessen": ["Längsdruckkraft auf den Wagenkasten", "Lastzustände", "Radsatzlast", "Höchstgeschwindigkeit", "Puffer- und Kupplungsbauart"], "regelwerke": [
+        {"bezeichnung": "Verordnung (EU) Nr. 1302/2014 (TSI Lokomotiven und Personenwagen), EU, Fahrzeuge auf den Spurweiten nach Abschnitt 2.3.2", "quellen_id": "Q8", "fundstelle": "Anhang, Abschnitte 4.2.2.2.3, 4.2.2.4 und 4.2.2.5"}
+      ]},
+      {"id": "R2", "element_ids": ["E16", "E17", "E25"], "thema": "Bremsvermögen und Bremskompatibilität", "kenngroessen": ["Verzögerungsprofil", "äquivalente Ansprechzeit", "Bremshundertstel", "gebremste Masse", "Feststellbremskraft"], "regelwerke": [
+        {"bezeichnung": "Verordnung (EU) Nr. 1302/2014 (TSI Lokomotiven und Personenwagen), EU", "quellen_id": "Q8", "fundstelle": "Anhang, Abschnitte 4.2.4.1, 4.2.4.2.1 und 4.2.4.3"}
+      ]},
+      {"id": "R3", "element_ids": ["E29", "E30", "E32"], "thema": "Bordenergieversorgung", "kenngroessen": ["Spannungsart der Zugsammelschiene", "Leistungsaufnahme des Wagens", "Batteriekapazität", "Überbrückungsdauer ohne Zugenergieversorgung"]},
+      {"id": "R4", "element_ids": ["E33", "E34"], "thema": "Fahrgastkapazität und Zugänglichkeit", "kenngroessen": ["Sitzplatzzahl", "Rollstuhlplätze", "Einstiegshöhe", "lichte Gangbreite"], "regelwerke": [
+        {"bezeichnung": "TSI PRM, verwiesen in Verordnung (EU) Nr. 1302/2014, EU", "quellen_id": "Q8", "fundstelle": "Anhang, Abschnitt 4.2.5 (Einleitung)"}
+      ]},
+      {"id": "R5", "element_ids": ["E37", "E39", "E40"], "thema": "Fahrzeugübergreifende Daten- und Steuerleitungen", "kenngroessen": ["Adernzahl", "Adernbelegung", "Busart", "Übertragungsrate"], "regelwerke": [
+        {"bezeichnung": "UIC-Merkblatt 558 und IRS 50558 (Fernsteuer- und Informationsleitung), Mitgliedsbahnen des UIC", "quellen_id": "Q5", "fundstelle": "Abschnitte Standard UIC 558 und Weiterentwicklung IRS 50558"}
+      ]},
+      {"id": "R6", "element_ids": ["E41", "E43", "E44"], "thema": "Türsicherheit und Fahrgastinformation", "kenngroessen": ["Schließ- und Verriegelungszustand", "Tür-Traktionssperre", "Bereitschaftsdauer der Kommunikationsanlage", "Sprachverständlichkeit"], "regelwerke": [
+        {"bezeichnung": "Verordnung (EU) Nr. 1302/2014 (TSI Lokomotiven und Personenwagen), EU", "quellen_id": "Q8", "fundstelle": "Anhang, Abschnitte 4.2.5.2 und 4.2.5.5"}
+      ]},
+      {"id": "R7", "element_ids": ["E45", "E46", "E47", "E48"], "thema": "Fahrgastalarm, Radsatzlagerüberwachung und Brandschutz", "kenngroessen": ["Alarmverzögerung bis zur automatischen Bremsung", "Brandschutzkategorie", "Trennwandabstand", "Brandwiderstandsdauer"], "regelwerke": [
+        {"bezeichnung": "Verordnung (EU) Nr. 1302/2014 (TSI Lokomotiven und Personenwagen), EU", "quellen_id": "Q8", "fundstelle": "Anhang, Abschnitte 4.2.3.3.2, 4.2.5.3 und 4.2.10.3.4"}
+      ]},
+      {"id": "R8", "element_ids": ["E49", "E51", "E52"], "thema": "Notbeleuchtung und Zugschlusssignal", "kenngroessen": ["Beleuchtungsdauer nach Ausfall der Hauptenergieversorgung", "Beleuchtungsstärke auf Bodenhöhe", "Lichtfarbe und Lichtstärke der Schlusslichter"], "regelwerke": [
+        {"bezeichnung": "Verordnung (EU) Nr. 1302/2014 (TSI Lokomotiven und Personenwagen), EU", "quellen_id": "Q8", "fundstelle": "Anhang, Abschnitte 4.2.7.1.3 und 4.2.10.4.1"}
+      ]},
+      {"id": "R9", "element_ids": ["E53", "E54", "E56"], "thema": "Innenraumklima und Luftqualität", "kenngroessen": ["Kohlendioxidkonzentration", "Dauer der Notlüftung", "Innenraumtemperatur", "Luftfeuchte"], "regelwerke": [
+        {"bezeichnung": "Verordnung (EU) Nr. 1302/2014 (TSI Lokomotiven und Personenwagen), EU", "quellen_id": "Q8", "fundstelle": "Anhang, Abschnitt 4.2.5.8"}
+      ]},
+      {"id": "R10", "element_ids": ["E57", "E59", "E60"], "thema": "Sanitäre Systeme und Versorgungsschnittstellen", "kenngroessen": ["Qualität des abgegebenen Wassers", "Tankvolumen", "Entleerungsintervall", "Geometrie der Entleerungs- und Füllanschlüsse"], "regelwerke": [
+        {"bezeichnung": "Verordnung (EU) Nr. 1302/2014 (TSI Lokomotiven und Personenwagen), EU", "quellen_id": "Q8", "fundstelle": "Anhang, Abschnitte 4.2.5.1, 4.2.11.3 und 4.2.11.5"}
+      ]}
+    ]
+  },
+  "offene_punkte": [
+    "Glossarvorschlag: Fahrzeug im Gleis führen (Spurführung durch Radsatz und Drehgestell bei Schienenfahrzeugen; „Fahrzeug lenken“ setzt eine Lenkeingabe voraus und trifft nicht zu; bereits in Güter- und Schlafwagenartikel vorgeschlagen).",
+    "Glossarvorschlag: Längskräfte im Zugverband übertragen (Zug- und Druckkräfte über Puffer und Kupplung; „Anhänger ziehen“ und „Drehmoment übertragen“ treffen nicht zu; im Schlafwagenartikel gleichlautend, im Güterwagenartikel als „Längskräfte übertragen“ vorgeschlagen, Vereinheitlichung nötig).",
+    "Glossarvorschlag: Fahrgäste aufnehmen (Bereitstellen von Sitz-, Steh- und Verkehrsflächen für Reisende; „Ladung aufnehmen“ betrifft Güter und trifft nicht zu).",
+    "Glossarvorschlag: Betriebstüren betätigen (Schließen, Verriegeln und Freigeben der Einstiegstüren; „Schiebetür betätigen“ betrifft nur Schiebetüren von Vans; bereits im Schlafwagenartikel vorgeschlagen).",
+    "Glossarvorschlag: Fahrgäste informieren (Lautsprecheranlage und Fahrgastanzeigen; „Fahrerinformationen anzeigen“ betrifft nur die führende Person; bereits im Schlafwagenartikel vorgeschlagen).",
+    "Glossarvorschlag: Innenraum beleuchten (Innen- und Notbeleuchtung; „Fahrzeugumgebung ausleuchten“ betrifft nur die Außenbeleuchtung; bereits im Schlafwagenartikel vorgeschlagen).",
+    "Glossarvorschlag: Fahrgäste versorgen (Wasserversorgung und Toilettensystem; bereits in Reisebus- und Schlafwagenartikel vorgeschlagen).",
+    "Glossarvorschlag: Vorgaben für bedienraum um Reisezugwagen ohne Führerraum ergänzen; der Glossarname „Führerstand“ für Schienenfahrzeuge passt nicht, daher wurde wie im Schlafwagenartikel „Fahrgastraum“ verwendet, der das Dienstabteil einschließt. Der Führerraum des Steuerwagens erscheint nur als Variante V3.",
+    "Abweichung Zuordnungsliste: Statt der Komponenten „Räder und Reifen“ und „Achse“ wird für Schienenfahrzeuge die Einheit Radsatz verwendet (Rad und Radsatzwelle als Verbund, keine Reifen); sie bleibt unter Fahrzeugstruktur und Fahrwerk. Die Druckluftanlage steht ohne eigenen Kompressor unter Neben- und Versorgungssysteme, da sie nur aus der Hauptluftbehälterleitung gespeist wird.",
+    "Recherchebedarf: Fachliteratur zur Energieversorgungsanlage von Reisezugwagen (Bordnetzumrichter, Batterieladegerät, Mehrsystemfähigkeit, Lastabwurf), Suchbegriff Bordnetzumrichter Reisezugwagen Zugsammelschiene, zur Belegung von P10 und Variante V4.",
+    "Recherchebedarf: Handbuch Schienenfahrzeuge (Schindler, Hrsg., DVV Media) oder Hochschulskript zu Wagenkasten und Reisezugwagen-Drehgestellen (Luftfederung, Flexicoil, Doppelstock-Wagenkasten), zur Belegung von P5 und den Varianten V2 und V5.",
+    "Recherchebedarf: Wikipedia-Artikel „Türsteuerung (Schienenfahrzeug)“ und „Elektropneumatische Bremse“ sowie Fachliteratur zu Türsteuerungen und Wagensteuergeräten in Reisezugwagen, zur Belegung von P16, P18 und Variante V6.",
+    "Recherchebedarf: Fachliteratur oder Herstellerunterlagen zu Klimaanlagen für Reisezugwagen (Dach- oder Unterflurgerät, Heizregister, Frischluftklappen) sowie die Normenreihe EN 13129 und EN 14750, zur Belegung von P22, Variante V8 und R9.",
+    "Recherchebedarf: Fachliteratur zu Vakuum- und Bioreaktortoiletten in Reisezugwagen (Unterdruckerzeugung per Pumpe oder Ejektor, Druckluftbedarf, Tankanordnung), Suchbegriff Vakuumtoilette Reisezugwagen Bioreaktor, zur Belegung von P24 und Variante V7.",
+    "Recherchebedarf: Volltext der TSI PRM (Verordnung (EU) Nr. 1300/2014) für R4 sowie TSI SRT (Verordnung (EU) Nr. 1303/2014) und EN 45545 zu den Brandschutzkategorien für R7.",
+    "Recherchebedarf: konsolidierte Fassung der Verordnung (EU) Nr. 1302/2014 auf eur-lex.europa.eu; verwendet wurde die Ursprungsfassung von 2014, spätere Änderungen (u. a. zu Bremsen, Türen, Notbeleuchtung und Kupplung) für P4, P7, P15, P17 und P19 prüfen.",
+    "Nicht abrufbar in diesem Lauf: eur-lex.europa.eu (HTTP 202 ohne Inhalt; TSI über publications.europa.eu bezogen). Der Wikipedia-Eintrag „Personenwagen“ ist nur eine Weiterleitung auf „Reisezugwagen“."
+  ]
+}
