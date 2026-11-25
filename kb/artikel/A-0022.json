@@ -4,7 +4,7 @@
   "artikeltyp": "blatt",
   "titel": "E-Scooter",
   "betrachtungsumfang": "Generische Referenzarchitektur des E-Scooters (Elektro-Tretroller, E-Stehroller) als einspuriges, zweirädriges, elektrisch angetriebenes Fahrzeug ohne Sitz mit Trittbrett und Lenkstange, für den privaten Gebrauch und für stationsunabhängige Verleihsysteme, in Deutschland als Elektrokleinstfahrzeug nach § 1 Absatz 1 der Elektrokleinstfahrzeuge-Verordnung (bauartbedingte Höchstgeschwindigkeit mehr als 6 bis 20 km/h), mit Hinweisen auf andere europäische Staaten. Antriebsart: batterieelektrisch (Energiespeicher Traktionsbatterie, Energiewandler Traktionsmaschine als Radnabenmotor); Antriebe mit Reibrolle, Ketten- oder Riemenuntersetzung werden nicht betrachtet; das Abstoßen mit dem Fuß wird als Leistungsfluss außerhalb der Systemgrenze behandelt. Ausdrücklich nicht betrachtet werden E-Scooter mit Sitz und Motorroller, verbrennungsmotorisch angetriebene Stehroller, Brennstoffzellen-Batterie-Hybride, selbstbalancierende Elektrokleinstfahrzeuge, drei- und vierrädrige Elektrokleinstfahrzeuge, Kinderroller ohne Straßenzulassung sowie App, Betreiberserver, externes Ladegerät und Ladeinfrastruktur des Verleihs außerhalb des Fahrzeugs.",
-  "status": "in_arbeit",
+  "status": "zu_pruefen",
   "quellenzugriff": "ja",
   "kindartikel_ids": [],
   "quellen": [
@@ -344,7 +344,7 @@
         },
         {
           "absatz_id": "P10",
-          "text": "Das Lenksystem besteht aus Lenker, Lenkstange und Vorderradgabel. Die Lenkstange überträgt das Lenkmoment ohne Lenkgetriebe und Lenkunterstützung über das Lenkkopflager auf die Gabel und leitet die Haltekräfte der Person in das Trittbrett. Am Lenker sitzen Bedienelemente, Bremshebel, Anzeige, Glocke und oft Scheinwerfer und Fahrtrichtungsanzeiger, sodass die Lenkstange auch Leitungstrasse ist.",
+          "text": "Das Lenksystem gliedert sich in die Lenkerbaugruppe aus Lenker und Lenkstange und die Vorderradführung aus Lenkkopflager und Vorderradgabel. Die Lenkstange überträgt das Lenkmoment ohne Lenkgetriebe und Lenkunterstützung über das Lenkkopflager auf die Gabel und leitet die Haltekräfte der Person in das Trittbrett. Am Lenker sitzen Bedienelemente, Bremshebel, Anzeige, Glocke und oft Scheinwerfer und Fahrtrichtungsanzeiger, sodass die Lenkstange auch Leitungstrasse ist.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -353,7 +353,7 @@
               "P13 und P21: Bedienelement für die Motorleistung, Fahrtrichtungsanzeiger an Lenkerenden, Glocke",
               "Funktionsprinzip: geringe Lenkkräfte bei niedriger Geschwindigkeit erlauben direkte Lenkung"
             ],
-            "schluss": "Die Lenkung ist eine direkte mechanische Kette vom Lenker zum Vorderrad und zugleich Träger und Leitungsweg der Bedienung."
+            "schluss": "Die Lenkung ist eine direkte mechanische Kette vom Lenker zum Vorderrad, gegliedert in Lenkerbaugruppe und Vorderradführung, und zugleich Träger und Leitungsweg der Bedienung."
           },
           "sicherheit": "hoch",
           "aussagetyp": "loesung",
@@ -524,7 +524,7 @@
         },
         {
           "absatz_id": "P18",
-          "text": "Fahrzeugsteuerung und Information umfasst Fahrzeugmanagement, Telematikeinheit und Diagnose. Das Fahrzeugmanagement, auch in die Motorsteuerung integrierbar, setzt Eingaben in Sollwerte um, begrenzt die bauartbedingte Höchstgeschwindigkeit, verwaltet Fahrmodi und koordiniert Nutzbremse und Bremslicht. Die Telematikeinheit mit Satellitenortung und Mobilfunk ist beim Verleih notwendig, privat optional; die Diagnose speichert Fehler für Anzeige, App oder Service. Das Nutzungsmodell als Privat- oder Verleihfahrzeug ändert damit Telematik, Diebstahlsicherung, Anzeige und Batteriekonzept.",
+          "text": "Fahrzeugsteuerung und Information gliedert sich in den Fahrzeugrechner aus Fahrzeugmanagement und Diagnose und das Telematikmodul aus Telematikeinheit und, bei Verleihfahrzeugen mit Wechselakku, Pufferbatterie. Das Fahrzeugmanagement, auch in die Motorsteuerung integrierbar, setzt Eingaben in Sollwerte um, begrenzt die bauartbedingte Höchstgeschwindigkeit, verwaltet Fahrmodi und koordiniert Nutzbremse und Bremslicht. Die Telematikeinheit mit Satellitenortung und Mobilfunk ist beim Verleih notwendig, privat optional; die Diagnose speichert Fehler für Anzeige, App oder Service. Das Nutzungsmodell als Privat- oder Verleihfahrzeug ändert damit Telematik, Diebstahlsicherung, Anzeige und Batteriekonzept.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -532,9 +532,10 @@
               "P17: Entsperren per App, GPS-Tracker, Beeinflussung von Antrieb und Bremsen nach Standort",
               "P1: bauartbedingte Höchstgeschwindigkeit begrenzt",
               "P5 und P12: Regler mit Sollgeschwindigkeit, Bremsmomentvorgabe",
-              "P7: Akkutausch und Einsammeln der Verleihroller"
+              "P7: Akkutausch und Einsammeln der Verleihroller",
+              "P8: Pufferbatterie in der Telematikeinheit bei Verleihfahrzeugen mit Wechselakku"
             ],
-            "schluss": "Fahrzeugmanagement, Telematikeinheit und Diagnose bilden die logische Ebene; das Nutzungsmodell ist eine strukturändernde Entscheidung."
+            "schluss": "Fahrzeugrechner mit Fahrzeugmanagement und Diagnose sowie Telematikmodul mit Telematikeinheit und Pufferbatterie bilden die logische Ebene; das Nutzungsmodell ist eine strukturändernde Entscheidung."
           },
           "sicherheit": "mittel",
           "aussagetyp": "variante",
@@ -1035,10 +1036,19 @@
         "kategorie": "lenkung"
       },
       {
+        "id": "E62",
+        "name": "Lenkerbaugruppe",
+        "typ": "subsystem",
+        "eltern_id": "E24",
+        "absatz_ids": [
+          "P10"
+        ]
+      },
+      {
         "id": "E25",
         "name": "Lenker",
         "typ": "komponente",
-        "eltern_id": "E24",
+        "eltern_id": "E62",
         "absatz_ids": [
           "P9",
           "P10",
@@ -1050,7 +1060,7 @@
         "id": "E26",
         "name": "Lenkstange",
         "typ": "komponente",
-        "eltern_id": "E24",
+        "eltern_id": "E62",
         "absatz_ids": [
           "P1",
           "P3",
@@ -1064,10 +1074,19 @@
         ]
       },
       {
+        "id": "E63",
+        "name": "Vorderradführung",
+        "typ": "subsystem",
+        "eltern_id": "E24",
+        "absatz_ids": [
+          "P10"
+        ]
+      },
+      {
         "id": "E27",
         "name": "Vorderradgabel",
         "typ": "komponente",
-        "eltern_id": "E24",
+        "eltern_id": "E63",
         "absatz_ids": [
           "P4",
           "P10",
@@ -1079,7 +1098,7 @@
         "id": "E60",
         "name": "Lenkkopflager",
         "typ": "komponente",
-        "eltern_id": "E24",
+        "eltern_id": "E63",
         "absatz_ids": [
           "P4",
           "P10",
@@ -1271,10 +1290,19 @@
         "kategorie": "steuerung_information"
       },
       {
+        "id": "E64",
+        "name": "Fahrzeugrechner",
+        "typ": "subsystem",
+        "eltern_id": "E43",
+        "absatz_ids": [
+          "P18"
+        ]
+      },
+      {
         "id": "E44",
         "name": "Fahrzeugmanagement",
         "typ": "komponente",
-        "eltern_id": "E43",
+        "eltern_id": "E64",
         "absatz_ids": [
           "P6",
           "P18",
@@ -1284,10 +1312,29 @@
         ]
       },
       {
+        "id": "E46",
+        "name": "Diagnose",
+        "typ": "komponente",
+        "eltern_id": "E64",
+        "absatz_ids": [
+          "P18",
+          "P26"
+        ]
+      },
+      {
+        "id": "E65",
+        "name": "Telematikmodul",
+        "typ": "subsystem",
+        "eltern_id": "E43",
+        "absatz_ids": [
+          "P18"
+        ]
+      },
+      {
         "id": "E45",
         "name": "Telematikeinheit",
         "typ": "komponente",
-        "eltern_id": "E43",
+        "eltern_id": "E65",
         "absatz_ids": [
           "P2",
           "P16",
@@ -1297,22 +1344,13 @@
         ]
       },
       {
-        "id": "E46",
-        "name": "Diagnose",
-        "typ": "komponente",
-        "eltern_id": "E43",
-        "absatz_ids": [
-          "P18",
-          "P26"
-        ]
-      },
-      {
         "id": "E61",
         "name": "Pufferbatterie",
         "typ": "komponente",
-        "eltern_id": "E43",
+        "eltern_id": "E65",
         "absatz_ids": [
-          "P8"
+          "P8",
+          "P18"
         ]
       },
       {
