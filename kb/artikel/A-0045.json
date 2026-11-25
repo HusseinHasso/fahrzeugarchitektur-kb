@@ -3,8 +3,8 @@
   "artikel_id": "A-0045",
   "artikeltyp": "blatt",
   "titel": "Forstmaschine",
-  "betrachtungsumfang": "Generische Referenzarchitektur der selbstfahrenden, bemannten Forstmaschine der vollmechanisierten Holzernte: Radharvester, Forwarder (Tragschlepper) und Skidder beziehungsweise Forstspezialschlepper, mit Raupenharvester als Fahrwerksvariante. Antriebsarten: Diesel-Verbrennungsmotor mit hydrostatischem Fahrantrieb sowie diesel-elektrischer Hybrid mit Traktionsmaschine und Traktionsbatterie. Ausgeschlossen: batterieelektrische und Brennstoffzellenantriebe, landwirtschaftliche Schlepper mit Forstausrüstung, Rückewagen, Seilkrananlagen, funkferngesteuerte Fäll- und Rückeraupen, Schreit- und Schubharvester, Feller-Buncher, Mulcher, Motorsägen sowie Zusatzaggregate wie Hacker; Baum, Waldboden und Betriebssoftware nur als Schnittstelle.",
-  "status": "in_arbeit",
+  "betrachtungsumfang": "Generische Referenzarchitektur der selbstfahrenden, bemannten Forstmaschine der vollmechanisierten Holzernte: Radharvester, Forwarder (Tragschlepper) und Skidder beziehungsweise Forstspezialschlepper, mit Raupenharvester als Fahrwerksvariante. Antriebsarten: Diesel-Verbrennungsmotor mit hydrostatischem Fahrantrieb (belegt für Harvester und Forwarder; beim Skidder ist die Bauart des Fahrantriebs eine Variante, auch mechanisch mit Drehmomentwandler) sowie diesel-elektrischer Hybrid als Parallelhybrid oder serieller Hybrid mit Traktionsmaschine und Traktionsbatterie. Ausgeschlossen: batterieelektrische und Brennstoffzellenantriebe, landwirtschaftliche Schlepper mit Forstausrüstung, Rückewagen, Seilkrananlagen, funkferngesteuerte Fäll- und Rückeraupen, Schreit- und Schubharvester, Feller-Buncher, Mulcher, Motorsägen sowie Zusatzaggregate wie Hacker; Baum, Waldboden und Betriebssoftware nur als Schnittstelle.",
+  "status": "geprueft",
   "quellenzugriff": "ja",
   "kindartikel_ids": [],
   "quellen": [
@@ -97,6 +97,16 @@
       "abgerufen": true,
       "abrufdatum": "2026-11-24",
       "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q10",
+      "titel": "Regulation (EU) 2016/1628 of the European Parliament and of the Council of 14 September 2016 on requirements relating to gaseous and particulate pollutant emission limits and type-approval for internal combustion engines for non-road mobile machinery (Fassung wie angenommen), Artikel 2 und 4",
+      "urheber": "Europäisches Parlament und Rat der EU; Wiedergabe legislation.gov.uk (The National Archives)",
+      "stand": "Originalfassung vom 14. September 2016",
+      "url": "https://www.legislation.gov.uk/eur/2016/1628/article/2/adopted",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-25",
+      "quellentyp": "norm"
     }
   ],
   "abschnitte": [
@@ -131,12 +141,12 @@
         },
         {
           "absatz_id": "P2",
-          "text": "Der Artikel beschreibt die selbstfahrende, bemannte Forstmaschine der vollmechanisierten Holzernte als gemeinsames Grundmodell von Harvester, Forwarder und Skidder. Architekturell ist sie ein Gesamtsystem aus geländegängigem Basisfahrzeug und Arbeitsausrüstung, gekoppelt über mechanische, hydraulische, elektrische, thermische und informationstechnische Schnittstellen. Nach außen grenzen Baum und Holz, Waldboden, Fahrer und die Datenverarbeitung des Forstbetriebs sie ab. Für eine Dekomposition, etwa in SysML, wird sie in Hauptsysteme, Subsysteme und Komponenten zerlegt.",
+          "text": "Der Artikel beschreibt die selbstfahrende, bemannte Forstmaschine der vollmechanisierten Holzernte als Grundmodell von Harvester, Forwarder und Skidder: geländegängiges Basisfahrzeug und Arbeitsausrüstung, gekoppelt über mechanische, hydraulische, elektrische, thermische und informationstechnische Schnittstellen. Den hydrostatischen Fahrantrieb teilen nur Harvester und Forwarder. Systemgrenzen bilden Baum und Holz, Waldboden, Fahrer und die Datenverarbeitung des Forstbetriebs. Die Dekomposition, etwa in SysML, gliedert in Hauptsysteme, Subsysteme und Komponenten.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
-              "P1: Harvester, Forwarder und Skidder teilen Rahmenbauweise, Dieselmotor, Knicklenkung und hydrostatischen Antrieb",
+              "P1: Harvester und Forwarder teilen Rahmenbauweise, Dieselmotor, Knicklenkung und hydrostatischen Antrieb; Q6: Forstspezialschlepper haben Knicklenkung, Allradantrieb und Rahmenbauweise",
               "Funktionsprinzip: Fahrzeug mit Werkzeug wechselt zwischen Fahren und Arbeiten; Baum, Boden, Fahrer und Betrieb liegen außerhalb und wirken über Schnittstellen"
             ],
             "schluss": "Die Forstmaschine ist ein Gesamtsystem aus Basisfahrzeug und Arbeitsausrüstung mit benennbaren inneren und äußeren Schnittstellen."
@@ -171,7 +181,7 @@
         },
         {
           "absatz_id": "P4",
-          "text": "Die Tragstruktur besteht aus Vorder- und Hinterwagen, deren Rahmen über das Knickgelenk verbunden sind; beim Forwarder trägt der Vorderwagen Fahrerhaus und Motor, der Hinterwagen Kran und Laderaum. Die Lasten laufen vom Rahmen in die pendelnd gelagerte Bogie-Achse, die Bodenunebenheiten ausgleicht, und über Räder und Reifen in den Boden. Das Fahrwerk wird so zur strukturändernden Variante: Mehr Bogie-Achsen verteilen die Last, verlangen aber mehr Gelenkwellen und Radbremsen. Ersetzt ein Raupenfahrwerk die Räder, entfällt das Knickgelenk, und ein drehbarer Oberwagen trägt Kran und Kabine.",
+          "text": "Die Tragstruktur besteht aus Vorder- und Hinterwagen, verbunden über das Knickgelenk; beim Forwarder trägt der Vorderwagen Fahrerhaus und Motor, der Hinterwagen Kran und Laderaum. Lasten laufen vom Rahmen über die pendelnde Bogie-Achse und über Räder und Reifen in den Boden. Mehr Bogie-Achsen verteilen die Last, verlangen aber mehr Gelenkwellen und Radbremsen. Beim Raupenfahrwerk entfällt das Knickgelenk, ein drehbarer Oberwagen trägt Kran und Kabine.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -184,6 +194,19 @@
           },
           "sicherheit": "mittel",
           "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P34",
+          "text": "Mit Traktionsseilwinden, fest in der Rückemaschine verbaut oder als externe Unterstützung, etwa ein funksteuerbares Raupenfahrzeug, können Forwarder je nach Boden statt bis zu 30 % bis zu 50 % Hangneigung befahren.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q6",
+              "fundstelle": "Abschnitt Holzrückung, Absatz zum Forwarder (Einsatzbereich); Abschnitt Möglichkeiten bodenschonender Rückung (Verbesserung der Traktion)"
+            }
+          ],
+          "aussagetyp": "variante",
           "herangezogene_artikel_ids": []
         }
       ]
@@ -216,19 +239,38 @@
         },
         {
           "absatz_id": "P6",
-          "text": "Im Primärantrieb wandelt der Verbrennungsmotor Kraftstoff in mechanische Leistung, die Abgasnachbehandlung reinigt das Abgas. Der Nebenaggregatetrieb verteilt die Leistung auf Fahrpumpe und Arbeitshydraulikpumpe. Im hydrostatischen Fahrantrieb speist die verstellbare Fahrpumpe den hydraulischen Fahrmotor; die Kraftübertragung führt dessen Drehmoment über Getriebe, Gelenkwelle und sperrbares Differenzial in jede Bogie-Achse. Beim Hybrid unterstützt eine Traktionsmaschine mit Wechselrichter den Motor am Nebenaggregatetrieb, deckt Lastspitzen von Kran und Aggregat und speist beim Verzögern Energie zurück. Ein Raupenfahrwerk treibt der Fahrantrieb über Hydraulikmotoren an den Kettenrädern.",
+          "text": "Im Primärantrieb wandelt der Verbrennungsmotor Kraftstoff in mechanische Leistung, die Abgasnachbehandlung reinigt das Abgas, der Nebenaggregatetrieb treibt die Pumpen. Bei Harvester und Forwarder speist die verstellbare Fahrpumpe des hydrostatischen Fahrantriebs den hydraulischen Fahrmotor; die Kraftübertragung führt sein Drehmoment über Getriebe, Gelenkwelle und sperrbares Differenzial in jede Bogie-Achse, beim Raupenfahrwerk auf die Kettenräder. Beim Skidder ist die Bauart offen, denkbar sind Radmotoren oder ein Drehmomentwandler mit Lastschaltgetriebe.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
-              "P5: Dieselmotor, hydrostatischer Antrieb, Differenzialsperren, Hybridforwarder mit Elektroantrieb",
+              "P5: Dieselmotor, hydrostatischer Antrieb und Differenzialsperren für Harvester und Forwarder",
+              "P1: hydrostatischer Antrieb nur als Gemeinsamkeit von Harvester und Forwarder belegt, nicht für Skidder",
               "P3: Bogie-Achsen",
-              "Funktionsprinzip: ein hydrostatischer Antrieb braucht Pumpe und Motor, die Leistung gelangt über drehmomentanpassende Glieder zu den Rädern; eine elektrische Maschine kann motorisch und generatorisch arbeiten"
+              "Funktionsprinzip: ein hydrostatischer Antrieb braucht Pumpe und Motor, die Leistung gelangt über drehmomentanpassende Glieder zu den Rädern",
+              "Gegenprobe: Radmotoren und mechanischer Antrieb mit Drehmomentwandler sind andere Bauarten des Fahrantriebs; für Skidder und Forwarder ohne Quelle in diesem Lauf"
             ],
-            "schluss": "Das Antriebssystem besteht aus Primärantrieb, hydrostatischem Fahrantrieb und Kraftübertragung; der Hybrid ergänzt eine Traktionsmaschine."
+            "schluss": "Das Antriebssystem besteht aus Primärantrieb, Fahrantrieb und Kraftübertragung; der hydrostatische Fahrantrieb gilt für Harvester und Forwarder, die Bauart des Fahrantriebs ist eine strukturändernde Variante."
           },
           "sicherheit": "mittel",
           "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P29",
+          "text": "Angenommen: Im Parallelhybrid unterstützt eine Traktionsmaschine mit Wechselrichter den Motor am Nebenaggregatetrieb, deckt Lastspitzen und rekuperiert; im seriellen Hybrid speist sie als Generator elektrische Fahrmotoren statt des hydrostatischen Fahrantriebs.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P5: Hybridforwarder kombinieren Diesel- und Elektroantrieb, in Erprobung",
+              "Funktionsprinzip: eine elektrische Maschine kann motorisch und generatorisch arbeiten",
+              "Annahme ohne Quelle: Anordnung als Parallelhybrid am Nebenaggregatetrieb oder als serieller Hybrid mit elektrischen Fahrmotoren"
+            ],
+            "schluss": "Der Hybrid ergänzt eine Traktionsmaschine mit Wechselrichter, als Parallelhybrid oder als serieller Hybrid."
+          },
+          "sicherheit": "gering",
+          "aussagetyp": "modellannahme",
           "herangezogene_artikel_ids": []
         }
       ]
@@ -264,19 +306,35 @@
       "absaetze": [
         {
           "absatz_id": "P8",
-          "text": "Das Lenksystem lenkt über die Knicklenkung: Lenkzylinder zwischen Vorder- und Hinterwagen knicken das Fahrzeug im Knickgelenk ein, sodass die hinteren Räder in der Spur der vorderen laufen. Die Eingabe am Lenkrad oder an einem Lenkgeber im Joystick wirkt auf ein Lenkventil, das Drucköl aus der Arbeitshydraulik dosiert zu den Zylindern leitet; bei elektrischer Lenkeingabe steuert ein Steuergerät das Ventil. Beim Raupenfahrwerk entfällt die Knicklenkung, gelenkt wird über unterschiedliche Kettengeschwindigkeiten.",
+          "text": "Das Lenksystem lenkt über die Knicklenkung: Lenkzylinder zwischen Vorder- und Hinterwagen knicken das Fahrzeug im Knickgelenk ein, sodass die hinteren Räder in der Spur der vorderen laufen. Beim Raupenfahrwerk entfällt die Knicklenkung, gelenkt wird über unterschiedliche Kettengeschwindigkeiten.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "P3: Knicklenkung mit Spurtreue",
-              "P5: Kraft wird hydraulisch übertragen, Steuerung elektrisch oder hydraulisch vorgesteuert",
               "Funktionsprinzip: ein Knickgelenk wird durch Zylinder zwischen den Rahmenteilen verstellt; Kettenfahrzeuge lenken über Geschwindigkeitsunterschiede der Ketten"
             ],
-            "schluss": "Das Lenksystem besteht aus Lenkeingabe, Lenkventil und Lenkzylindern an der Knickstelle."
+            "schluss": "Das Lenksystem stellt das Knickgelenk über Lenkzylinder; beim Raupenfahrwerk lenken die Ketten."
           },
           "sicherheit": "hoch",
           "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P30",
+          "text": "Ohne Quelle angenommen wird die Ausführung: Lenkrad oder Lenkgeber im Joystick wirken auf ein Lenkventil, das Drucköl aus der Arbeitshydraulik zu den Lenkzylindern dosiert, bei elektrischer Lenkeingabe über ein Steuergerät.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P8: Lenkzylinder am Knickgelenk",
+              "P5: Kraft wird hydraulisch übertragen, Steuerung elektrisch oder hydraulisch vorgesteuert",
+              "Annahme ohne Quelle: Bauweise von Lenkeingabe, Lenkventil und Ölversorgung aus der Arbeitshydraulik"
+            ],
+            "schluss": "Lenkeingabe und Lenkventil steuern die Lenkzylinder; Ausführung und Ölversorgung sind Bauweisenannahmen."
+          },
+          "sicherheit": "gering",
+          "aussagetyp": "modellannahme",
           "herangezogene_artikel_ids": []
         }
       ]
@@ -338,13 +396,14 @@
         },
         {
           "absatz_id": "P11",
-          "text": "Das Fahrerhaus gliedert sich in die Kabine mit Kabinenstruktur und Kabinenlagerung sowie den Bedienplatz. Weil der Fahrer abwechselnd fährt und den Kran führt, müssen Sitze und Bedienplatz Blick auf Fahrweg und Kranarbeitsbereich bieten; beim Forwarder wendet der Sitz dazu zum Hinterwagen. Bedienelemente sind Joysticks an den Armlehnen, Pedale und Tastenfelder, Anzeigeelemente der Bildschirm des Bordcomputers. Eine neigbare Kabine braucht in der Kabinenlagerung Neigezylinder, Neigungssensoren und eine Regelung.",
+          "text": "Das Fahrerhaus gliedert sich in die Kabine mit Kabinenstruktur und Kabinenlagerung sowie den Bedienplatz. Der Bedienplatz braucht Blick auf Fahrweg und Kranarbeitsbereich; beim Forwarder wendet ein drehbarer Sitz zum Hinterwagen, ein Sicherheitsgurt hält den Fahrer. Bedienelemente sind Joysticks, Pedale und Tastenfelder, Anzeigeelement ist der Bildschirm des Bordcomputers. Eine neigbare Kabine braucht Neigezylinder, Neigungssensoren und eine Regelung.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "P10: vibrationsdämpfend gelagerte Kabine, Fahrzeug und Kran vom Fahrersitz aus gesteuert, neigbare Kabine",
               "P4: beim Forwarder sitzt der Kran am Hinterwagen",
+              "P31: Sicherheitsgurtsystem für alle Maschinen",
               "Funktionsprinzip: wer aus einem Sitz fährt und den Kran führt, braucht Sicht in beide Arbeitsrichtungen; eine geregelte Neigung braucht Aktor, Sensor und Regler"
             ],
             "schluss": "Das Fahrerhaus besteht aus Kabine und Bedienplatz; die Kabinenausführung ist eine strukturändernde Variante."
@@ -391,7 +450,7 @@
         },
         {
           "absatz_id": "P13",
-          "text": "Die Arbeitsausrüstung handhabt Bäume und Holz. Der Kran besteht aus der Kransäule mit Schwenkwerk auf dem Rahmen, dem Kranarm aus Hub-, Knick- und Teleskoparm und dem Rotator, der das Werkzeug dreht. Am Kranende sitzt das Harvesteraggregat mit seiner Sägeeinheit oder der Holzgreifer, versorgt aus dem Steuerventilblock. Der Maschinentyp ist die prägende Variante: Beim Harvester entfällt der Laderaum, beim Forwarder das Aggregat; die Wahl ändert Rahmenlänge, Achslastverteilung, Hydraulikleistung und Aufarbeitungssteuerung.",
+          "text": "Der Kran der Arbeitsausrüstung besteht aus der Kransäule mit Schwenkwerk, dem Kranarm aus Hub-, Knick- und Teleskoparm und dem Rotator, der das Werkzeug dreht. Am Kranende sitzt das Harvesteraggregat mit Sägeeinheit oder der Holzgreifer, versorgt aus dem Steuerventilblock. Prägende Variante ist der Maschinentyp: Beim Harvester entfällt der Laderaum, beim Forwarder das Aggregat; die Wahl bestimmt Rahmenlänge, Achslastverteilung, Hydraulikleistung und Aufarbeitungssteuerung.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -456,7 +515,7 @@
         },
         {
           "absatz_id": "P16",
-          "text": "Das Fahrzeugsteuerungs- und Informationssystem bildet die logische Ebene. Im Bordcomputer berechnet die Aufarbeitungssteuerung aus den Werten der Messeinheit und den vorgegebenen Sortimenten die Ablängschnitte und erfasst die Holzmengen; das Fahrzeugmanagement koordiniert Motordrehzahl, Fahrantrieb und Hydraulik, die Diagnose sammelt Zustands- und Fehlerinformationen. In Ortung und Kommunikation liefert die Navigation die Position, die Telematikeinheit tauscht Produktionsdaten und Aufträge mit dem Forstbetrieb aus.",
+          "text": "Das Fahrzeugsteuerungs- und Informationssystem bildet die logische Ebene. Im Bordcomputer berechnet die Aufarbeitungssteuerung aus Messwerten und Sortimentsvorgaben die Ablängschnitte und erfasst die Holzmengen; das Fahrzeugmanagement koordiniert Motor, Fahrantrieb und Hydraulik, die Diagnose sammelt Fehlerinformationen. Die Navigation liefert die Position, die Telematikeinheit tauscht Produktionsdaten und Aufträge mit dem Forstbetrieb.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -492,20 +551,35 @@
           "herangezogene_artikel_ids": []
         },
         {
+          "absatz_id": "P31",
+          "text": "Nach ISO 11850 brauchen alle Maschinen einen Schutz gegen herabfallende Gegenstände (FOPS) und ein Sicherheitsgurtsystem, je nach Anwendungsbereich von ISO 8082 und ISO 8084 auch Überschlagschutz (ROPS) und Bedienerschutzaufbau (OPS). Gegen Teile gerissener Sägeketten schützt eine Schutzverglasung aus Polycarbonat oder gleichwertigem Material, bei Kettensägeaggregaten ein Kettenschussschutz. Holz transportierende Maschinen brauchen ein Stirngitter zwischen Ladung und Fahrerplatz, mindestens so hoch wie dieser.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q7",
+              "fundstelle": "Abschnitte 4.3.2.1 bis 4.3.2.4 und 4.3.4 (Wortlaut der Leseprobe auf der Katalogseite)"
+            }
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
           "absatz_id": "P18",
-          "text": "Das Fahrerassistenz- und Sicherheitssystem schützt Fahrer und Maschine. Zu den Schutzaufbauten gehören der Überschlagschutz der Kabine, ein Schutz gegen herabfallende Äste und Stämme und die Schutzverglasung gegen eindringende Teile, etwa einer gerissenen Sägekette. Überwachung und Abschaltung umfassen die Standsicherheitsüberwachung, die aus Kranstellung, Last und Neigung die Kippgefahr bewertet und Kranbewegungen begrenzt, die Not-Halt-Einrichtung und eine Feuerlöscheinrichtung im Motorraum, wo Späne und Harz an heißen Bauteilen Brände auslösen können. Seilwinden stoppt eine Totmannschaltung, sobald die Bedienperson loslässt.",
+          "text": "Das Fahrerassistenz- und Sicherheitssystem schützt Fahrer und Maschine; die Schutzaufbauten hängen an der Kabinenstruktur. Zu Überwachung und Abschaltung gehören Not-Halt-Einrichtung, Totmannschaltung an Seilwinden und optional eine Standsicherheitsüberwachung, die aus Kranstellung, Last und Neigung die Kippgefahr bewertet und Kranbewegungen begrenzt, sowie eine Feuerlöscheinrichtung im Motorraum.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
-              "P17: Themen Fahrerplatz, Standsicherheit, Brandrisiken, Winden",
+              "P31: Schutzaufbauten gegen herabfallende Gegenstände, Überschlag und eindringende Teile",
+              "P17: Themen Fahrerplatz, Standsicherheit, Brandrisiken und Winden",
               "Q6: Abschnitt Seilwinden, Totmannschaltung",
               "P12: Kran mit großer Reichweite und Hubmoment",
-              "Funktionsprinzip: Bäume, Äste und Sägeketten können auf die Kabine wirken; eine weit ausladende Last verschiebt den Schwerpunkt"
+              "Funktionsprinzip: Schutzaufbauten stützen sich auf die Kabinenstruktur ab; eine weit ausladende Last verschiebt den Schwerpunkt",
+              "Annahme ohne Quelle: Standsicherheitsüberwachung mit Begrenzung der Kranbewegungen und fest eingebaute Feuerlöscheinrichtung als Ausstattungsvarianten"
             ],
-            "schluss": "Das Hauptsystem umfasst Schutzaufbauten sowie Überwachung und Abschaltung."
+            "schluss": "Das Hauptsystem umfasst Schutzaufbauten sowie Überwachung und Abschaltung; Standsicherheitsüberwachung und Feuerlöscheinrichtung sind Ausstattungsvarianten."
           },
-          "sicherheit": "mittel",
+          "sicherheit": "gering",
           "aussagetyp": "loesung",
           "herangezogene_artikel_ids": []
         }
@@ -539,12 +613,12 @@
         },
         {
           "absatz_id": "P20",
-          "text": "Das Beleuchtungs- und Sichtsystem leuchtet den Arbeitsbereich aus und sichert die Fahrersicht. Die Beleuchtung umfasst Arbeitsscheinwerfer an Kabine und Kran sowie Scheinwerfer und Leuchten für Fahrten auf öffentlichen Straßen, deren Ausführung durch die genannten EU-Rechtsakte nicht harmonisiert ist. Zu den Sichteinrichtungen zählen Scheibenwischer an den großen Scheiben und ein Kamera-Monitor-System für den Bereich hinter der Maschine. Bei neigbarer Kabine werden Scheinwerfer und Kameras mit der Kabine geführt.",
+          "text": "Das Beleuchtungs- und Sichtsystem leuchtet den Arbeitsbereich aus und sichert die Fahrersicht. Die Beleuchtung umfasst Arbeitsscheinwerfer an Kabine und Kran sowie Scheinwerfer und Leuchten für Straßenfahrten; deren Ausführung ist ohne Genehmigung als forstwirtschaftliche Zugmaschine durch die genannten EU-Rechtsakte nicht harmonisiert. Sichteinrichtungen sind Scheibenwischer und ein Kamera-Monitor-System für den rückwärtigen Bereich.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
-              "P19: Arbeitsscheinwerfer für Nachtarbeit, keine harmonisierten Straßenanforderungen",
+              "P19: Arbeitsscheinwerfer für Nachtarbeit; Verordnung gilt für Zugmaschinen, keine harmonisierten Straßenanforderungen für selbstfahrende mobile Maschinen",
               "P10: neigbare Kabine",
               "Annahme ohne Quelle: Kamera für den Bereich hinter der Maschine"
             ],
@@ -621,18 +695,19 @@
         },
         {
           "absatz_id": "P24",
-          "text": "Die Neben- und Versorgungssysteme stellen hydraulische Leistung bereit und versorgen die Arbeitsgeräte. Der Nebenaggregatetrieb, ein Pumpenverteilergetriebe am Motor, treibt Fahrpumpe und Arbeitshydraulikpumpe. In der Arbeitshydraulik saugt die Arbeitshydraulikpumpe aus dem Hydrauliktank und speist den Steuerventilblock für Kran, Harvesteraggregat, Seilwinde und Laderaum; sie versorgt auch Lenkung und Bremse. Absperrventil und Unterdruckpumpe begrenzen Ölverluste, eine Zentralschmieranlage schmiert Kran- und Gelenklager. Förderstrom und Systemdruck bestimmen so die Arbeitsleistung der ganzen Maschine.",
+          "text": "Die Neben- und Versorgungssysteme stellen hydraulische Leistung für die Arbeitsgeräte bereit. Der Nebenaggregatetrieb, angenommen als Pumpenverteilergetriebe, treibt Fahrpumpe und Arbeitshydraulikpumpe. Diese saugt aus dem Hydrauliktank und speist den Steuerventilblock für Kran, Harvesteraggregat, Seilwinde und Laderaum, angenommen auch Lenkung und Bremse. Absperrventil und Unterdruckpumpe begrenzen Ölverluste, eine Zentralschmieranlage kann Kran- und Gelenklager schmieren.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
             "praemissen": [
               "P23: Hydraulikanlage für Fahr-, Kran- und Anbauteilfunktionen, Vakuumpumpe, Absperrventil",
-              "P6: Nebenaggregatetrieb treibt die Pumpen",
-              "Funktionsprinzip: ein offener Hydraulikkreis braucht Pumpe, Tank und Ventile"
+              "P6: Nebenaggregatetrieb treibt die Pumpen (hergeleitet, mittel)",
+              "Funktionsprinzip: ein offener Hydraulikkreis braucht Pumpe, Tank und Ventile",
+              "Annahme ohne Quelle: Pumpenverteilergetriebe, Versorgung von Lenkung und Bremse aus der Arbeitshydraulik, Zentralschmieranlage als optionale Komponente"
             ],
-            "schluss": "Das Hauptsystem besteht aus Arbeitshydraulik, Nebenaggregatetrieb und Zentralschmieranlage."
+            "schluss": "Das Hauptsystem besteht aus Arbeitshydraulik und Nebenaggregatetrieb, optional ergänzt durch eine Zentralschmieranlage."
           },
-          "sicherheit": "hoch",
+          "sicherheit": "mittel",
           "aussagetyp": "loesung",
           "herangezogene_artikel_ids": []
         }
@@ -644,7 +719,7 @@
       "absaetze": [
         {
           "absatz_id": "P25",
-          "text": "Architekturell lässt sich die Forstmaschine auf oberster Ebene als Gesamtsystem mit den Hauptsystemen Fahrzeugstruktur und Fahrwerk, Antriebssystem, Energieversorgungssystem, Lenksystem, Bremssystem, Fahrerhaus, Arbeitsausrüstung, Elektrik und Elektronik, Fahrzeugsteuerung und Information, Fahrerassistenz und Sicherheit, Beleuchtung und Sicht, Thermomanagement sowie Neben- und Versorgungssysteme auffassen. Kennzeichnend sind die zentrale Hydraulik, die Fahren, Lenken, Bremsen und Arbeiten aus einer Motorleistung speist, und die enge Kopplung von Harvesteraggregat und Bordcomputer.",
+          "text": "Auf oberster Ebene besteht die Forstmaschine aus den Hauptsystemen Fahrzeugstruktur und Fahrwerk, Antriebssystem, Energieversorgungssystem, Lenksystem, Bremssystem, Fahrerhaus, Arbeitsausrüstung, Elektrik und Elektronik, Fahrzeugsteuerung und Information, Fahrerassistenz und Sicherheit, Beleuchtung und Sicht, Thermomanagement sowie Neben- und Versorgungssysteme. Kennzeichnend sind die zentrale Hydraulik, die Fahren, Lenken, Bremsen und Arbeiten aus einer Motorleistung speist, und die enge Kopplung von Harvesteraggregat und Bordcomputer.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -666,7 +741,7 @@
       "absaetze": [
         {
           "absatz_id": "P26",
-          "text": "In SysML bildet der Block Forstmaschine das Gesamtsystem mit den Hauptsystemen als Bestandteilen. Dekompositionspfade sind etwa Antriebssystem → Hydrostatischer Fahrantrieb → Fahrpumpe, Antriebssystem → Kraftübertragung → Differenzial, Arbeitsausrüstung → Harvesteraggregat → Messeinheit und Fahrzeugstruktur und Fahrwerk → Fahrwerk → Bogie-Achse. Ports bilden die Hydraulikanschlüsse am Steuerventilblock, die Abtriebe des Nebenaggregatetriebs, die Busanschlüsse und die Krankonsole am Rahmen ab, Konnektoren verbinden sie. Harvester, Forwarder und Skidder werden als Spezialisierungen eines Basisfahrzeugblocks modelliert. Geeignet sind Block Definition Diagrams, Internal Block Diagrams für Hydraulik- und Datenflüsse und Aktivitätsdiagramme für den Arbeitszyklus.",
+          "text": "In SysML bildet der Block Forstmaschine das Gesamtsystem mit den Hauptsystemen als Bestandteilen. Dekompositionspfade sind etwa Antriebssystem → Hydrostatischer Fahrantrieb → Fahrpumpe, Antriebssystem → Kraftübertragung → Differenzial, Arbeitsausrüstung → Harvesteraggregat → Messeinheit und Fahrzeugstruktur und Fahrwerk → Fahrwerk → Bogie-Achse. Ports bilden Hydraulikanschlüsse am Steuerventilblock, Abtriebe des Nebenaggregatetriebs, Busanschlüsse und die Krankonsole ab, Konnektoren verbinden sie. Harvester, Forwarder und Skidder sind Spezialisierungen eines Basisfahrzeugblocks. Geeignet sind Block Definition Diagrams, Internal Block Diagrams für Hydraulik- und Datenflüsse und Aktivitätsdiagramme für den Arbeitszyklus.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -689,7 +764,7 @@
       "absaetze": [
         {
           "absatz_id": "P27",
-          "text": "Kraftstoff fließt vom Kraftstofftank zum Verbrennungsmotor, mechanische Leistung vom Motor über den Nebenaggregatetrieb zu den Pumpen und vom Fahrmotor über Getriebe, Gelenkwelle und Differenzial zur Bogie-Achse. Drucköl fließt vom Steuerventilblock zu Kran, Harvesteraggregat und Seilwinde, von der Arbeitshydraulikpumpe zu Lenkventil und Betriebsbremse. Messwerte gehen von der Messeinheit zur Aufarbeitungssteuerung, Positionen und Produktionsdaten zwischen Navigation, Bordcomputer und Telematikeinheit, Bedienbefehle über den Fahrzeugbus zum Steuerventilblock. Wärme fließt zu Kühler und Hydraulikölkühler, Heizluft in die Kabine, Hochvolt-Energie beim Hybrid über den Wechselrichter zur Traktionsmaschine.",
+          "text": "Kraftstoff fließt vom Kraftstofftank zum Verbrennungsmotor, mechanische Leistung über den Nebenaggregatetrieb zu den Pumpen und vom Fahrmotor über Getriebe, Gelenkwelle und Differenzial zur Bogie-Achse. Drucköl fließt vom Steuerventilblock zu Kran, Harvesteraggregat und Seilwinde, von der Arbeitshydraulikpumpe zu Lenkventil und Betriebsbremse. Messwerte gehen von der Messeinheit zur Aufarbeitungssteuerung, Daten zwischen Navigation, Bordcomputer und Telematikeinheit, Bedienbefehle über den Fahrzeugbus zum Steuerventilblock. Wärme fließt zu Kühler und Hydraulikölkühler, Heizluft in die Kabine, beim Hybrid Hochvolt-Energie über den Wechselrichter zur Traktionsmaschine.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -710,7 +785,7 @@
       "absaetze": [
         {
           "absatz_id": "P28",
-          "text": "Funktionszuordnung: Fahrzeuglasten tragen und Fahrzeug fortbewegen – Tragstruktur, Fahrwerk mit Bogie-Achse, Räder und Reifen oder Raupenfahrwerk; Energie speichern – Kraftstofftank, Starterbatterie, Traktionsbatterie; Treibstoff fördern – Kraftstoffversorgung; Antriebsleistung erzeugen – Verbrennungsmotor, Traktionsmaschine; Bremsenergie zurückgewinnen – Traktionsmaschine; Drehmoment übertragen – Fahrantrieb, Kraftübertragung; Fahrzeug lenken – Lenksystem; Fahrzeug verzögern – Betriebsbremse, Fahrantrieb; Fahrzeug festhalten – Feststellbremse, Arbeitsbremse; Hydraulische Leistung bereitstellen und Arbeitsgeräte versorgen – Arbeitshydraulik, Nebenaggregatetrieb; Unterdruck bereitstellen – Unterdruckpumpe; Objekte handhaben – Kran, Holzgreifer; Bäume fällen und aufarbeiten – Harvesteraggregat; Ladung aufnehmen – Laderaum; Holz beiseilen – Seilwinde; Holzmengen erfassen – Messeinheit, Aufarbeitungssteuerung; Fahrereingaben erfassen – Bedienelemente; Fahrerinformationen anzeigen – Anzeigeelemente; Elektrische Energie verteilen – Niedervolt-Bordnetz; Daten übertragen – Fahrzeugbus, Telematikeinheit; Fahrzeugzustand überwachen – Diagnose, Standsicherheitsüberwachung; Fahrzeugposition bestimmen – Navigation; Insassen schützen – Schutzaufbauten; Fahrzeugumgebung ausleuchten – Arbeitsscheinwerfer; Lichtsignale abgeben – Leuchten; Fahrersicht sicherstellen – Sichteinrichtungen; Betriebstemperatur regeln – Kühlkreislauf; Innenraum klimatisieren – Klimatisierung.",
+          "text": "Funktionszuordnung: Fahrzeuglasten tragen und Fahrzeug fortbewegen – Tragstruktur, Fahrwerk mit Bogie-Achse, Räder und Reifen oder Raupenfahrwerk; Energie speichern – Kraftstofftank, Starterbatterie, Traktionsbatterie; Treibstoff fördern – Kraftstoffversorgung; Antriebsleistung erzeugen – Verbrennungsmotor, Traktionsmaschine; Bremsenergie zurückgewinnen – Traktionsmaschine; Drehmoment übertragen – Fahrantrieb, Kraftübertragung; Fahrzeug lenken – Lenksystem; Fahrzeug verzögern – Betriebsbremse, Fahrantrieb; Fahrzeug festhalten – Feststellbremse, Arbeitsbremse; Hydraulische Leistung bereitstellen und Arbeitsgeräte versorgen – Arbeitshydraulik, Nebenaggregatetrieb; Unterdruck bereitstellen – Unterdruckpumpe; Objekte handhaben – Kran, Holzgreifer; Bäume fällen und aufarbeiten – Harvesteraggregat; Ladung aufnehmen – Laderaum; Holz beiseilen – Seilwinde; Holzmengen erfassen – Messeinheit, Aufarbeitungssteuerung; Fahrereingaben erfassen – Bedienelemente; Fahrerinformationen anzeigen – Anzeigeelemente; Elektrische Energie verteilen – Niedervolt-Bordnetz; Daten übertragen – Fahrzeugbus, Telematikeinheit; Fahrzeugzustand überwachen – Diagnose, Standsicherheitsüberwachung; Fahrzeugposition bestimmen – Navigation; Insassen schützen – Schutzaufbauten, Kettenschussschutz, Sicherheitsgurt; Fahrzeugumgebung ausleuchten – Arbeitsscheinwerfer; Lichtsignale abgeben – Leuchten; Fahrersicht sicherstellen – Sichteinrichtungen; Betriebstemperatur regeln – Kühlkreislauf; Innenraum klimatisieren – Klimatisierung.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -748,6 +823,7 @@
         "absatz_ids": [
           "P3",
           "P4",
+          "P34",
           "P25",
           "P26"
         ],
@@ -906,7 +982,7 @@
         "typ": "komponente",
         "eltern_id": "E14",
         "absatz_ids": [
-          "P6",
+          "P29",
           "P27",
           "P28"
         ]
@@ -917,7 +993,7 @@
         "typ": "komponente",
         "eltern_id": "E14",
         "absatz_ids": [
-          "P6",
+          "P29",
           "P27"
         ]
       },
@@ -929,7 +1005,8 @@
         "absatz_ids": [
           "P6",
           "P26",
-          "P28"
+          "P28",
+          "P29"
         ]
       },
       {
@@ -1101,7 +1178,7 @@
         "typ": "komponente",
         "eltern_id": "E35",
         "absatz_ids": [
-          "P8"
+          "P30"
         ]
       },
       {
@@ -1110,7 +1187,7 @@
         "typ": "komponente",
         "eltern_id": "E35",
         "absatz_ids": [
-          "P8",
+          "P30",
           "P27"
         ]
       },
@@ -1120,7 +1197,8 @@
         "typ": "komponente",
         "eltern_id": "E35",
         "absatz_ids": [
-          "P8"
+          "P8",
+          "P30"
         ]
       },
       {
@@ -1211,7 +1289,8 @@
         "typ": "subsystem",
         "eltern_id": "E43",
         "absatz_ids": [
-          "P11"
+          "P11",
+          "P31"
         ]
       },
       {
@@ -1241,6 +1320,17 @@
         "eltern_id": "E47",
         "absatz_ids": [
           "P11",
+          "P28"
+        ]
+      },
+      {
+        "id": "E120",
+        "name": "Sicherheitsgurt",
+        "typ": "komponente",
+        "eltern_id": "E47",
+        "absatz_ids": [
+          "P11",
+          "P31",
           "P28"
         ]
       },
@@ -1351,6 +1441,16 @@
         ]
       },
       {
+        "id": "E118",
+        "name": "Kettenschussschutz",
+        "typ": "komponente",
+        "eltern_id": "E56",
+        "absatz_ids": [
+          "P31",
+          "P28"
+        ]
+      },
+      {
         "id": "E61",
         "name": "Laderaum",
         "typ": "subsystem",
@@ -1388,6 +1488,15 @@
           "P12",
           "P13",
           "P28"
+        ]
+      },
+      {
+        "id": "E119",
+        "name": "Stirngitter",
+        "typ": "komponente",
+        "eltern_id": "E61",
+        "absatz_ids": [
+          "P31"
         ]
       },
       {
@@ -1477,7 +1586,7 @@
         "typ": "komponente",
         "eltern_id": "E71",
         "absatz_ids": [
-          "P8",
+          "P30",
           "P14"
         ]
       },
@@ -1585,6 +1694,7 @@
         "eltern_id": "E82",
         "absatz_ids": [
           "P18",
+          "P31",
           "P28"
         ]
       },
@@ -1594,7 +1704,8 @@
         "typ": "komponente",
         "eltern_id": "E83",
         "absatz_ids": [
-          "P18"
+          "P18",
+          "P31"
         ]
       },
       {
@@ -1603,6 +1714,27 @@
         "typ": "komponente",
         "eltern_id": "E83",
         "absatz_ids": [
+          "P18",
+          "P31"
+        ]
+      },
+      {
+        "id": "E116",
+        "name": "Schutz gegen herabfallende Gegenstände",
+        "typ": "komponente",
+        "eltern_id": "E83",
+        "absatz_ids": [
+          "P31",
+          "P18"
+        ]
+      },
+      {
+        "id": "E117",
+        "name": "Bedienerschutzaufbau",
+        "typ": "komponente",
+        "eltern_id": "E83",
+        "absatz_ids": [
+          "P31",
           "P18"
         ]
       },
@@ -1968,6 +2100,7 @@
         ],
         "absatz_ids": [
           "P6",
+          "P29",
           "P28"
         ]
       },
@@ -2004,6 +2137,7 @@
         ],
         "absatz_ids": [
           "P8",
+          "P30",
           "P28"
         ]
       },
@@ -2038,7 +2172,7 @@
           "E17"
         ],
         "absatz_ids": [
-          "P6",
+          "P29",
           "P28"
         ]
       },
@@ -2196,10 +2330,13 @@
         "id": "F25",
         "name": "Insassen schützen",
         "ausgefuehrt_von": [
-          "E83"
+          "E83",
+          "E118",
+          "E120"
         ],
         "absatz_ids": [
           "P18",
+          "P31",
           "P28"
         ]
       },
@@ -2416,7 +2553,7 @@
         "art": "hydraulisch",
         "medium": "Hydrauliköl",
         "absatz_ids": [
-          "P8",
+          "P30",
           "P27"
         ],
         "schnittstelle": "Lenkhydraulik"
@@ -2536,7 +2673,7 @@
         "art": "elektrisch",
         "medium": "Hochvolt-Gleichstrom",
         "absatz_ids": [
-          "P6",
+          "P29",
           "P7",
           "P27"
         ],
@@ -2549,7 +2686,7 @@
         "art": "elektrisch",
         "medium": "Drehstrom",
         "absatz_ids": [
-          "P6",
+          "P29",
           "P27"
         ]
       },
@@ -2560,7 +2697,7 @@
         "art": "mechanisch",
         "medium": "Drehmoment",
         "absatz_ids": [
-          "P6"
+          "P29"
         ],
         "schnittstelle": "Hybridanbindung am Nebenaggregatetrieb"
       },
@@ -2645,7 +2782,8 @@
         "bezeichnung": "Antriebsart",
         "alternativen": [
           "Diesel-Verbrennungsmotor mit hydrostatischem Fahrantrieb",
-          "Diesel-elektrischer Hybrid mit Traktionsmaschine und Traktionsbatterie"
+          "Parallelhybrid mit Traktionsmaschine am Nebenaggregatetrieb",
+          "serieller Hybrid mit Generator und elektrischen Fahrmotoren"
         ],
         "auswahlkriterien": [
           "Lastprofil von Kran und Harvesteraggregat mit Lastspitzen",
@@ -2660,7 +2798,11 @@
           },
           {
             "element_id": "E114",
-            "beschreibung": "Der Nebenaggregatetrieb erhält eine Anbindung der Traktionsmaschine."
+            "beschreibung": "Beim Parallelhybrid erhält der Nebenaggregatetrieb eine Anbindung der Traktionsmaschine."
+          },
+          {
+            "element_id": "E18",
+            "beschreibung": "Beim seriellen Hybrid entfällt der hydrostatische Fahrantrieb; elektrische Fahrmotoren treiben die Achsen, die Traktionsmaschine arbeitet als Generator."
           },
           {
             "element_id": "E99",
@@ -2678,6 +2820,7 @@
         "absatz_ids": [
           "P5",
           "P6",
+          "P29",
           "P7"
         ]
       },
@@ -2796,17 +2939,18 @@
           },
           {
             "element_id": "E47",
-            "beschreibung": "Ausrichtung von Sitz und Bedienplatz folgt dem Kranarbeitsbereich."
+            "beschreibung": "Ausrichtung von Sitz und Bedienplatz folgt dem Kranarbeitsbereich; beim Forwarder ist ein drehbarer Sitz nötig."
           },
           {
             "element_id": "E87",
-            "beschreibung": "Die Standsicherheitsüberwachung berücksichtigt Kranlast und Zuladung."
+            "beschreibung": "Eine Standsicherheitsüberwachung, sofern vorhanden, berücksichtigt Kranlast und Zuladung."
           }
         ],
         "absatz_ids": [
           "P1",
           "P12",
-          "P13"
+          "P13",
+          "P11"
         ]
       },
       {
@@ -2846,18 +2990,93 @@
           "P11",
           "P20"
         ]
+      },
+      {
+        "id": "V6",
+        "element_id": "E18",
+        "bezeichnung": "Bauart des Fahrantriebs",
+        "alternativen": [
+          "hydrostatisch-mechanisch mit Fahrmotor und Getriebe",
+          "hydrostatisch mit Radmotoren",
+          "mechanisch mit Drehmomentwandler und Lastschaltgetriebe"
+        ],
+        "auswahlkriterien": [
+          "Maschinentyp",
+          "Fahrgeschwindigkeit beim Umsetzen",
+          "Zugkraftbedarf",
+          "Wirkungsgrad",
+          "Bauraum am Bogie"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E21",
+            "beschreibung": "Bei Radmotoren entfallen Gelenkwellen und Differenziale der Kraftübertragung."
+          },
+          {
+            "element_id": "E39",
+            "beschreibung": "Verzögern über den Fahrantrieb ist nur beim hydrostatischen Fahrantrieb möglich; beim mechanischen Antrieb trägt die Betriebsbremse allein."
+          },
+          {
+            "element_id": "E99",
+            "beschreibung": "Ölkühlung von Fahrantrieb oder Drehmomentwandler und Lastschaltgetriebe ändert sich mit der Bauart."
+          },
+          {
+            "element_id": "E77",
+            "beschreibung": "Die Fahrstrategie im Fahrzeugmanagement regelt Pumpe und Motoren oder steuert Schaltvorgänge des Lastschaltgetriebes."
+          }
+        ],
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "V7",
+        "element_id": "E2",
+        "bezeichnung": "Hangunterstützung",
+        "alternativen": [
+          "ohne Traktionshilfe",
+          "integrierte Traktionsseilwinde",
+          "externe Traktionshilfe durch separate Seilwindenmaschine"
+        ],
+        "auswahlkriterien": [
+          "Hangneigung",
+          "Bodentragfähigkeit",
+          "Einsatzhäufigkeit am Hang"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E3",
+            "beschreibung": "Eine integrierte Traktionsseilwinde braucht einen Windenanbau an der Tragstruktur."
+          },
+          {
+            "element_id": "E108",
+            "beschreibung": "Die Arbeitshydraulik versorgt den Windenantrieb der integrierten Traktionsseilwinde."
+          },
+          {
+            "element_id": "E77",
+            "beschreibung": "Das Fahrzeugmanagement synchronisiert Seilzug und Fahrantrieb."
+          },
+          {
+            "element_id": "E87",
+            "beschreibung": "Eine Standsicherheitsüberwachung berücksichtigt die Seilkraft am Hang."
+          }
+        ],
+        "absatz_ids": [
+          "P34"
+        ]
       }
     ],
     "klaerungsfragen": [
       {
         "id": "K1",
-        "frage": "Soll die Forstmaschine einen Diesel-Verbrennungsmotor mit hydrostatischem Fahrantrieb oder einen diesel-elektrischen Hybridantrieb erhalten?",
+        "frage": "Soll die Forstmaschine einen Diesel-Verbrennungsmotor mit hydrostatischem Fahrantrieb, einen Parallelhybrid oder einen seriellen Hybrid mit elektrischen Fahrmotoren erhalten?",
         "element_ids": [
           "E13",
-          "E25"
+          "E25",
+          "E18"
         ],
         "anlass": "architekturentscheidung",
-        "relevanz": "Davon hängen Hochvolt-Energiesystem, Nebenaggregatetrieb, Batterietemperierung und Energiemanagement ab.",
+        "relevanz": "Davon hängen Hochvolt-Energiesystem, Nebenaggregatetrieb, Fahrantrieb, Batterietemperierung und Energiemanagement ab.",
         "variante_ids": [
           "V1"
         ]
@@ -2968,13 +3187,14 @@
       },
       {
         "id": "K11",
-        "frage": "Welche Schutzaufbauten gegen Überschlag, herabfallende und eindringende Gegenstände fordert der Auftraggeber für den Einsatz?",
+        "frage": "Wird die Maschine mit Seilwinde, Kettensägeaggregat oder Kreissägeaggregat ausgerüstet, und soll das Fahrerhaus dafür über die Mindestschutzaufbauten hinaus geschützt werden?",
         "element_ids": [
           "E82",
-          "E83"
+          "E83",
+          "E118"
         ],
         "anlass": "anforderung",
-        "relevanz": "Davon hängen Kabinenstruktur, Verglasung und Masse der Kabine ab."
+        "relevanz": "Davon hängen Umfang des Bedienerschutzaufbaus, Verglasung, Kettenschussschutz und Kabinenmasse ab."
       },
       {
         "id": "K12",
@@ -3019,6 +3239,43 @@
         "variante_ids": [
           "V4"
         ]
+      },
+      {
+        "id": "K16",
+        "frage": "Welche Bauart des Fahrantriebs soll die Maschine erhalten, und welche Umsetzgeschwindigkeit und Zugkraft muss sie erreichen?",
+        "element_ids": [
+          "E18",
+          "E21"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Kraftübertragung, Bremskonzept, Ölkühlung und Fahrstrategie ab.",
+        "variante_ids": [
+          "V6"
+        ]
+      },
+      {
+        "id": "K17",
+        "frage": "Bis zu welcher Hangneigung und auf welchen Böden soll die Maschine ohne und mit Traktionshilfe arbeiten?",
+        "element_ids": [
+          "E2",
+          "E3"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Windenanbau, Hydraulikleistung, Synchronisierung von Seilzug und Fahrantrieb und die Standsicherheit ab.",
+        "variante_ids": [
+          "V7"
+        ]
+      },
+      {
+        "id": "K18",
+        "frage": "Soll die Maschine als forstwirtschaftliche Zugmaschine typgenehmigt oder als selbstfahrende Arbeitsmaschine in Verkehr gebracht werden?",
+        "element_ids": [
+          "E1",
+          "E39",
+          "E90"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Brems-, Beleuchtungs- und Zulassungsanforderungen sowie die anwendbaren Abgasvorschriften ab."
       }
     ],
     "anforderungsthemen": [
@@ -3167,20 +3424,22 @@
       {
         "id": "R10",
         "element_ids": [
-          "E82"
+          "E82",
+          "E119"
         ],
         "thema": "Bedienerschutz und Standsicherheit",
         "kenngroessen": [
           "Energieaufnahme der Schutzaufbauten",
           "Kippsicherheit bei ausgefahrenem Kran",
           "Stillsetzzeit",
-          "Löschmittelreichweite"
+          "Löschmittelreichweite",
+          "Festigkeit des Stirngitters"
         ],
         "regelwerke": [
           {
             "bezeichnung": "ISO 11850 / EN ISO 11850 (international; als Europäische Norm in EU und EFTA mit Konformitätsvermutung zur Maschinenrichtlinie 2006/42/EG; selbstfahrende Forstmaschinen)",
             "quellen_id": "Q7",
-            "fundstelle": "Abstract; Inhaltsverzeichnis, Abschnitte 4.3, 4.11, 4.14 und 4.19"
+            "fundstelle": "Abstract; Inhaltsverzeichnis, Abschnitte 4.3, 4.11, 4.14 und 4.19; Abschnitte 4.3.2.1 bis 4.3.2.4 im Wortlaut"
           }
         ]
       },
@@ -3197,7 +3456,7 @@
         ],
         "regelwerke": [
           {
-            "bezeichnung": "Verordnung (EU) Nr. 167/2013 (EU; Zugmaschinen der Klassen T und C, Anhänger und gezogene Geräte; regelt nach Erwägungsgrund 6 die Verkehrssicherheit selbstfahrender mobiler Maschinen nicht)",
+            "bezeichnung": "Verordnung (EU) Nr. 167/2013 (EU; land- und forstwirtschaftliche Zugmaschinen der Klassen T und C, Anhänger und gezogene Geräte; regelt nach Erwägungsgrund 6 die Verkehrssicherheit selbstfahrender mobiler Maschinen nicht, also nicht für Forstmaschinen, die nicht als Zugmaschine der Klassen T oder C genehmigt werden)",
             "quellen_id": "Q8",
             "fundstelle": "Erwägungsgrund 6; Artikel 2 Absatz 1"
           },
@@ -3239,6 +3498,28 @@
             "fundstelle": "Inhaltsverzeichnis, Abschnitt 4.20 Hydraulic systems"
           }
         ]
+      },
+      {
+        "id": "R14",
+        "element_ids": [
+          "E13",
+          "E15",
+          "E16"
+        ],
+        "thema": "Abgasemissionen",
+        "kenngroessen": [
+          "Emissionsstufe des Motors",
+          "Partikelmasse und Partikelanzahl",
+          "Stickoxidemission",
+          "Verbrauch an Reduktionsmittel"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "Verordnung (EU) 2016/1628 (EU; Verbrennungsmotoren in nicht für den Straßenverkehr bestimmten mobilen Maschinen und Geräten, Kategorie NRE; gilt nicht für Antriebsmotoren land- und forstwirtschaftlicher Zugmaschinen nach Verordnung (EU) Nr. 167/2013)",
+            "quellen_id": "Q10",
+            "fundstelle": "Artikel 2 Absatz 1 und Absatz 2 Buchstabe b; Artikel 4 Absatz 1 Nummer 1"
+          }
+        ]
       }
     ]
   },
@@ -3247,11 +3528,13 @@
     "Glossarvorschlag: Holzmengen erfassen (Vermessung und Mengenerfassung durch Messeinheit und Aufarbeitungssteuerung)",
     "Glossarvorschlag: Holz beiseilen (Heranziehen von Stämmen mit der Seilwinde)",
     "Recherche: Volltext Verordnung (EU) Nr. 167/2013 und Maschinenverordnung (EU) 2023/1230 auf EUR-Lex zur Einordnung selbstfahrender Forstmaschinen (EUR-Lex in diesem Lauf nicht abrufbar)",
-    "Recherche: ISO 8082, ISO 8083 und ISO 8084 (Überschlag-, Fallschutz- und Bedienerschutzaufbauten für Forstmaschinen) sowie ISO 6814 Begriffe (iso.org in diesem Lauf nicht abrufbar)",
+    "Recherche: Prüfverfahren und Leistungsanforderungen von ISO 8082, ISO 8083 und ISO 8084, auf die ISO 11850 nur verweist (Energieniveaus, Prüfaufbau, Anwendungsbereich von ROPS und OPS), sowie ISO 6814 Begriffe (iso.org in diesem Lauf nicht abrufbar)",
     "Recherche: Fahrzeug-Zulassungsverordnung § 2 selbstfahrende Arbeitsmaschine für die Straßenfahrt in Deutschland (gesetze-im-internet.de in diesem Lauf nicht erreichbar)",
     "Recherche: Bremsanlage und Arbeitsbremse von Forwardern und Harvestern (Suchbegriffe: Arbeitsbremse Forwarder, Lamellenbremse Bogie)",
     "Recherche: Aufbau diesel-elektrischer Hybridforwarder (Suchbegriffe: hybrid forwarder, Skogforsk, LWF Hybridforwarder)",
     "Recherche: Feuerlöschanlagen und Brandschutz an Forstmaschinen (Suchbegriffe: Feuerlöschanlage Harvester, SVLFG Forstmaschinen Brandschutz)",
-    "Recherche: Kranaufbau mit Rotator, Teleskoparm und Standsicherheitsüberwachung (KWF-Prüfberichte, Suchbegriff: KWF Prüfung Forstkran)"
+    "Recherche: Kranaufbau mit Rotator, Teleskoparm und Standsicherheitsüberwachung (KWF-Prüfberichte, Suchbegriff: KWF Prüfung Forstkran)",
+    "Recherche: Bauart des Fahrantriebs von Skiddern (hydrostatisch oder mechanisch mit Drehmomentwandler und Lastschaltgetriebe) und Radmotoren an Forwardern (Suchbegriffe: skidder hydrostatic drive, skidder torque converter powershift, forwarder wheel hub motor)",
+    "Recherche: Einordnung von Forstspezialschleppern und Skiddern als forstwirtschaftliche Zugmaschine oder selbstfahrende Arbeitsmaschine nach Verordnung (EU) Nr. 167/2013, Artikel 4 (Fahrzeugklassen)"
   ]
 }
