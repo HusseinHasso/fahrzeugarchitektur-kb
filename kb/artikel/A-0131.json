@@ -1,0 +1,1605 @@
+{
+  "schema_version": "2.3",
+  "artikel_id": "A-0131",
+  "artikeltyp": "uebersicht",
+  "titel": "Leichtfahrzeuge",
+  "betrachtungsumfang": "Übersicht über die Leichtfahrzeuge im Sinne dieser Wissensbasis, das heißt die von einer Person selbst geführten Straßenfahrzeuge der Mikromobilität mit Muskelkraft oder elektrischem Antrieb kleiner Leistung, mit den Kindartikeln Fahrrad, Pedelec, E-Bike, Lastenrad und E-Scooter: gemeinsame Architektur, Unterscheidungsmerkmale und gemeinsames Grundmodell auf Hauptsystemebene. Die Antriebsarten (Muskelkraft, paralleler oder serieller elektrischer Hilfsantrieb, rein batterieelektrischer Antrieb) werden auf Hauptsystemebene verglichen; Energiespeicher und Energiewandler beschreiben die Kindartikel. Vierrädrige Leichtkraftfahrzeuge der Klasse L, Krafträder außer den Kleinkraftrad-Varianten des E-Bikes, selbstbalancierende Elektrokleinstfahrzeuge, Velomobile und elektrische Skateboards nur zur Abgrenzung. Rechtliche Angaben für Deutschland und die Europäische Union.",
+  "status": "geprueft",
+  "quellenzugriff": "ja",
+  "kindartikel_ids": [
+    "A-0018",
+    "A-0019",
+    "A-0020",
+    "A-0021",
+    "A-0022"
+  ],
+  "quellen": [
+    {
+      "quellen_id": "Q1",
+      "titel": "Regulation (EU) No 168/2013 on the approval and market surveillance of two- or three-wheel vehicles and quadricycles, Article 2 Scope (Original as adopted)",
+      "urheber": "Europäisches Parlament und Rat der Europäischen Union",
+      "stand": "https://www.legislation.gov.uk/eur/2013/168/article/2/adopted",
+      "url": "2013-01-15",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q2",
+      "titel": "Elektrokleinstfahrzeuge-Verordnung (eKFV), § 1 Anwendungsbereich (Textwiedergabe)",
+      "urheber": "Bundesministerium für Verkehr",
+      "stand": "https://www.buzer.de/1_eKFV.htm",
+      "url": "Fassung vom 30. Januar 2026, in Kraft ab 1. April 2026",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q3",
+      "titel": "Straßenverkehrs-Zulassungs-Ordnung (StVZO), § 63a Fahrräder und Fahrradanhänger (Textwiedergabe)",
+      "urheber": "Bundesministerium für Verkehr",
+      "stand": "https://www.buzer.de/63a_StVZO.htm",
+      "url": "Fassung vom 25. Juni 2021, in Kraft ab 3. Juli 2021",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q4",
+      "titel": "Straßenverkehrsgesetz (StVG), § 1 Zulassung (Textwiedergabe)",
+      "urheber": "Deutscher Bundestag",
+      "stand": "https://www.buzer.de/1_StVG.htm",
+      "url": "Fassung vom 17. Juni 2013, in Kraft ab 21. Juni 2013",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q5",
+      "titel": "Leichtfahrzeug",
+      "urheber": "Wikipedia, die freie Enzyklopädie",
+      "stand": "https://de.wikipedia.org/wiki/Leichtfahrzeug",
+      "url": null,
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q6",
+      "titel": "Micromobility",
+      "urheber": "Wikipedia, the free encyclopedia",
+      "stand": "https://en.wikipedia.org/wiki/Micromobility",
+      "url": null,
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "nachschlagewerk"
+    }
+  ],
+  "abschnitte": [
+    {
+      "ueberschrift": "Einleitung",
+      "abschnittstyp": "gesamtsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P1",
+          "text": "Unter Mikromobilität versteht die englischsprachige Enzyklopädie die Nutzung kleiner, leichter Fahrzeuge für kurze Strecken in Städten, die ihre Nutzer selbst führen, etwa Fahrräder, Velomobile, E-Bikes, Lastenräder, E-Scooter, elektrische Skateboards und Pedelecs. Nach einem Standard von SAE International aus dem Jahr 2018 gehören Geräte mit Verbrennungsmotor oder mit mehr als 45 km/h Höchstgeschwindigkeit nicht dazu; viele dieser Fahrzeuge gelten zugleich als leichte Elektrofahrzeuge. Im Deutschen bezeichnet Leichtfahrzeug dagegen meist ein vierrädriges motorisiertes Fahrzeug, amtlich Leichtkraftfahrzeug, das deutlich leichter und kleiner als ein Automobil ist und die Lücke zwischen Motorrad oder Quad und Pkw schließt.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q6",
+              "fundstelle": "Einleitung (Definition, SAE-Standard 2018) und Abschnitt Light electric vehicles"
+            },
+            {
+              "quellen_id": "Q5",
+              "fundstelle": "Einleitung"
+            }
+          ],
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P2",
+          "text": "In Deutschland ist ein Fahrrad ein Fahrzeug mit mindestens zwei Rädern, das ausschließlich durch die Muskelkraft auf ihm befindlicher Personen mit Pedalen oder Handkurbeln angetrieben wird; als Fahrrad gilt auch ein solches Fahrzeug mit elektrischer Trethilfe bis 0,25 kW Nenndauerleistung, deren Unterstützung mit steigender Geschwindigkeit progressiv abnimmt und bei 25 km/h oder beim Einhalten im Treten endet. Solche Landfahrzeuge sind keine Kraftfahrzeuge. Elektrokleinstfahrzeuge sind dagegen Kraftfahrzeuge mit elektrischem Antrieb, mehr als 6 bis 20 km/h bauartbedingter Höchstgeschwindigkeit und Lenk- oder Haltestange, ohne Sitz oder selbstbalancierend, mit begrenzter Nenndauerleistung, höchstens 700 mm Breite, 1 400 mm Höhe, 2 000 mm Länge und 55 kg Masse ohne Fahrer. In der EU nimmt die Verordnung (EU) Nr. 168/2013 für Fahrzeuge der Klasse L Fahrräder mit Trethilfe bis 250 W, selbstbalancierende Fahrzeuge und Fahrzeuge ohne Sitzplatz aus.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "§ 63a Abs. 1 und Abs. 2 Satz 1"
+            },
+            {
+              "quellen_id": "Q4",
+              "fundstelle": "§ 1 Abs. 3 Satz 1"
+            },
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "§ 1 Abs. 1 Nr. 1 bis 5"
+            },
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Article 2(1) und 2(2)(h), (i) und (j)"
+            }
+          ],
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P3",
+          "text": "In dieser Wissensbasis umfasst das Elterntaxon Leichtfahrzeuge die Straßenfahrzeuge der Mikromobilität, die eine Person selbst führt und die mit Muskelkraft oder kleiner elektrischer Leistung fahren; rechtlich sind sie überwiegend Fahrräder oder Elektrokleinstfahrzeuge. Vierrädrige Leichtkraftfahrzeuge gehören nicht dazu. Krafträder gehören nur so weit dazu, wie der Kindartikel E-Bike das S-Pedelec und das E-Bike mit Gashebel als Kleinkraftrad-Varianten führt; für alle übrigen Krafträder gilt die Übersicht Krafträder. Die Übersicht stellt die Kindartikel gegenüber: Fahrrad, Pedelec und E-Bike beschreiben dieselbe zweirädrige Grundform mit zunehmender Elektrifizierung, das Lastenrad spezialisiert sie für den Transport von Gütern und Personen, und der E-Scooter weicht als stehend gefahrenes Kraftfahrzeug ohne Tretantrieb am stärksten ab.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P1",
+              "P2",
+              "A-0018/P1",
+              "A-0018/P2",
+              "A-0019/P1",
+              "A-0019/P2",
+              "A-0020/P1",
+              "A-0020/P3",
+              "A-0020/P4",
+              "A-0021/P1",
+              "A-0022/P1",
+              "Inventar: A-0130 Krafträder ist eine eigene Übersicht; für vierrädrige Leichtkraftfahrzeuge gibt es keinen Kindartikel"
+            ],
+            "schluss": "Das Taxon umfasst die selbst geführten, muskel- oder schwach elektrisch angetriebenen Straßenfahrzeuge überwiegend im Fahrrad- und Elektrokleinstfahrzeugrecht, mit den Kleinkraftrad-Varianten des E-Bikes als Randfall; die Kindartikel bilden eine Elektrifizierungsreihe der Zweiradgrundform, deren Transportspezialisierung und den E-Scooter als Sonderform."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [
+            "A-0018",
+            "A-0019",
+            "A-0020",
+            "A-0021",
+            "A-0022"
+          ]
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Gemeinsame Architektur",
+      "abschnittstyp": "querschnitt",
+      "absaetze": [
+        {
+          "absatz_id": "P4",
+          "text": "Alle Kindartikel teilen die Hauptsysteme Fahrzeugstruktur und Fahrwerk, Antriebssystem, Energieversorgungssystem, Lenksystem, Bremssystem, Elektrik und Elektronik, Fahrzeugsteuerung und Information sowie Beleuchtung und Sicht. Fast alle führen zudem einen Fahrerplatz (außer dem Fahrrad, das Sattel, Lenker und Bedieneinheit den ausführenden Systemen zuordnet), Aufbau und Ladung (außer dem E-Scooter, der weder Personen noch Anhänger mitnehmen darf) sowie Fahrerassistenz und Sicherheit (außer dem E-Bike, das die Sicherheitsabschaltungen dem Fahrzeugmanagement zuordnet). Ein Thermomanagement führt nur das Pedelec als eigenes, überwiegend passives System; Neben- und Versorgungssysteme fehlen überall. Die führende Person liegt stets außerhalb der Systemgrenze.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "A-0018/P26",
+              "A-0019/P28",
+              "A-0020/P28",
+              "A-0021/P24",
+              "A-0022/P23",
+              "A-0019/P27",
+              "A-0018/P2",
+              "A-0019/P3",
+              "A-0020/P4",
+              "A-0021/P2",
+              "A-0022/P2",
+              "A-0018 entfallene Kategorie bedienraum",
+              "A-0020 entfallene Kategorie assistenz_sicherheit",
+              "A-0022 entfallene Kategorie aufbau_nutzlast"
+            ],
+            "schluss": "Acht Hauptsysteme sind allen Kindartikeln gemeinsam, drei weiteren fehlt je ein Kindartikel; Thermomanagement und Neben- und Versorgungssysteme gehören nicht zum gemeinsamen Grundmodell."
+          },
+          "sicherheit": "hoch",
+          "herangezogene_artikel_ids": [
+            "A-0018",
+            "A-0019",
+            "A-0020",
+            "A-0021",
+            "A-0022"
+          ]
+        },
+        {
+          "absatz_id": "P5",
+          "text": "Mechanisch folgen alle Kindartikel demselben Muster: Eine leichte Tragstruktur, beim Zweirad der Rahmen mit Vorderradgabel und Hinterbau, beim E-Scooter das Trittbrett als Längsträger, leitet die Lasten von Person, Antrieb und Ladung über Räder und Reifen in die Fahrbahn; eine Federung ist überall Variante. Das Lenksystem hat weder Lenkgetriebe noch Lenkunterstützung: Beim Zweirad und E-Scooter drehen Lenker oder Lenkstange direkt die Gabel, beim Lastenrad mit vorgelagertem Vorderrad über Gestänge oder Seilzug; mehrspurige Lastenräder lenken über Drehschemel oder Achsschenkel (siehe Spurigkeit). Das Bremssystem besteht aus zwei voneinander unabhängigen Bremsen, meist am Lenker betätigt; mehrspurige Lastenräder ergänzen eine Feststellbremse. Beim Zweirad mit getriebelosem Nabenmotor kann eine Nutzbremse die Reibungsbremsen ergänzen, ohne eine zu ersetzen; beim E-Scooter kann die elektrische Bremse eine der beiden bilden, wenn eine Reibungsbremse spannungsunabhängig wirkt.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "A-0018/P3",
+              "A-0018/P5",
+              "A-0018/P12",
+              "A-0018/P13",
+              "A-0018/P14",
+              "A-0019/P4",
+              "A-0019/P12",
+              "A-0019/P14",
+              "A-0020/P5",
+              "A-0020/P13",
+              "A-0020/P16",
+              "A-0021/P4",
+              "A-0021/P10",
+              "A-0021/P11",
+              "A-0021/P12",
+              "A-0021/P13",
+              "A-0022/P3",
+              "A-0022/P4",
+              "A-0022/P10",
+              "A-0022/P11",
+              "A-0022/P12"
+            ],
+            "schluss": "Tragstruktur, ungestützte Lenkung ohne Lenkgetriebe und zwei unabhängige Bremsen bilden den gemeinsamen mechanischen Kern; Lenkübertragung und Feststellbremse hängen von Bauform und Spurigkeit ab, die Rolle der Nutzbremse vom Rechtsrahmen der Fahrzeugart."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [
+            "A-0018",
+            "A-0019",
+            "A-0020",
+            "A-0021",
+            "A-0022"
+          ]
+        },
+        {
+          "absatz_id": "P6",
+          "text": "Bei elektrischem Antrieb bilden überall dieselben Kernelemente den Energiepfad: Traktionsbatterie, Batteriemanagementsystem und Ladeeinrichtung im Energieversorgungssystem, Motorsteuerung und Traktionsmaschine im Antriebssystem sowie ein Niedervolt-Leitungssatz mit Bussystem in Elektrik und Elektronik. Der E-Scooter ergänzt im Antriebssystem einen Wechselrichter mit Zwischenkreis, je nach Bauweise im Energieversorgungssystem Gleichspannungswandler und Kleinspannungswandler; Verleihfahrzeuge mit Wechselakku können eine Pufferbatterie in der Telematikeinheit haben. Ein Hochvolt-Bordnetz und in der Grundbauweise eine eigene Bordnetzbatterie fehlen; die Traktionsbatterie kann auch Beleuchtung und Anzeige speisen. Beim rein muskelbetriebenen Fahrrad und Lastenrad bleibt davon nur die Lichtanlage mit Lichtmaschine oder Akkuleuchten. Die Verlustwärme geht passiv über die Gehäuse ab; Temperatursensoren, Motorsteuerung und Batteriemanagementsystem nehmen bei Überhitzung Leistung zurück.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "A-0018/P10",
+              "A-0018/P11",
+              "A-0018/P19",
+              "A-0019/P11",
+              "A-0019/P20",
+              "A-0019/P26",
+              "A-0019/P27",
+              "A-0020/P11",
+              "A-0020/P21",
+              "A-0021/P9",
+              "A-0021/P18",
+              "A-0022/P6",
+              "A-0022/P8",
+              "A-0022/P16"
+            ],
+            "schluss": "Der elektrische Energiepfad hat über alle elektrisch angetriebenen Kindartikel denselben rein niedervoltigen Kern; der E-Scooter ergänzt Wechselrichter und je nach Bauweise Spannungswandler und Pufferbatterie. Die Wärmeabfuhr ist passiv und wird informationstechnisch begrenzt."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [
+            "A-0018",
+            "A-0019",
+            "A-0020",
+            "A-0021",
+            "A-0022"
+          ]
+        },
+        {
+          "absatz_id": "P7",
+          "text": "In der Fahrzeugsteuerung und Information setzen alle elektrisch angetriebenen Kindartikel die rechtliche Einstufung technisch durch: Fahrzeugmanagement oder Motorsteuerung bilden aus Tretsensor oder Bedienelement, Geschwindigkeit und Batteriezustand den Sollwert und erzwingen Unterstützungsgrenze und Schiebehilfe oder die bauartbedingte Höchstgeschwindigkeit; hinzu kommen Diagnose und optionale Telematik. Fahrerassistenz und Sicherheit bleibt schwach ausgeprägt, weil die Person das Umfeld selbst wahrnimmt: Diebstahlsicherung oder Wegfahrsperre, beim Pedelec und E-Scooter auch Manipulationsschutz, statt Umfeldsensorik. Beleuchtung und Sicht umfasst Scheinwerfer, Schlussleuchte und Rückstrahler; die vorgeschriebene Glocke ordnen die Kindartikel teils hier, teils der Fahrerassistenz und Sicherheit zu. Der Fahrerplatz ist offen und ohne Rückhaltesystem, außer für mitfahrende Kinder im Lastenrad.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "A-0018/P21",
+              "A-0018/P23",
+              "A-0018/P24",
+              "A-0019/P17",
+              "A-0019/P21",
+              "A-0019/P23",
+              "A-0019/P24",
+              "A-0020/P18",
+              "A-0020/P24",
+              "A-0020/P27",
+              "A-0021/P15",
+              "A-0021/P20",
+              "A-0021/P21",
+              "A-0021/P23",
+              "A-0022/P14",
+              "A-0022/P18",
+              "A-0022/P20",
+              "A-0022/P22"
+            ],
+            "schluss": "Steuerung, Sicherheit, Beleuchtung und Fahrerplatz sind über die Kindartikel gleichartig schlank aufgebaut; die Steuerung ist der Ort, an dem die rechtliche Einstufung technisch gesichert wird."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [
+            "A-0018",
+            "A-0019",
+            "A-0020",
+            "A-0021",
+            "A-0022"
+          ]
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Unterscheidungsmerkmal Antriebsart",
+      "abschnittstyp": "variante",
+      "absaetze": [
+        {
+          "absatz_id": "P8",
+          "text": "Das stärkste Unterscheidungsmerkmal ist die Antriebsart. Fahrrad und unmotorisiertes Lastenrad fahren allein mit Muskelkraft über Tretkurbel, Kettentrieb und Gangschaltung. Pedelec, E-Bike und das Lastenrad mit Tretunterstützung ergänzen diesen Pfad parallel um einen elektrischen Hilfsantrieb, dessen Unterstützung an das Treten gebunden ist; das Fahrrad führt das Pedelec als Antriebsvariante. Das E-Bike führt zusätzlich das E-Bike mit Gashebel, dessen Hilfsantrieb ohne Tretbindung über ein Bedienelement am Lenker angesteuert wird. Das Lastenrad kennt zudem den seriellen Antrieb, bei dem ein Tretgenerator ohne Kette die Traktionsbatterie speist. Der E-Scooter hat keinen Tretantrieb, sondern nur einen Radnabenmotor; das Abstoßen mit dem Fuß liegt außerhalb der Systemgrenze. Ohne elektrischen Pfad schrumpfen Energieversorgung, Elektrik und Steuerung auf Lichtanlage und optionalen Fahrradcomputer.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "A-0018/P2",
+              "A-0018/P6",
+              "A-0018/P9",
+              "A-0018/P11",
+              "A-0018/P19",
+              "A-0018/P21",
+              "A-0019/P3",
+              "A-0019/P6",
+              "A-0019/P2",
+              "A-0020/P1",
+              "A-0020/P4",
+              "A-0020/P9",
+              "A-0021/P6",
+              "A-0021/P7",
+              "A-0021/P9",
+              "A-0021/P18",
+              "A-0022/P1",
+              "A-0022/P6",
+              "A-0022 Betrachtungsumfang: Abstoßen mit dem Fuß außerhalb der Systemgrenze"
+            ],
+            "schluss": "Die Antriebsart reicht von reiner Muskelkraft über parallele und serielle Tretunterstützung und den nicht an das Treten gebundenen Hilfsantrieb des E-Bikes mit Gashebel bis zum rein elektrischen Antrieb und bestimmt den Umfang von Energieversorgung, Elektrik und Steuerung."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": [
+            "A-0018",
+            "A-0019",
+            "A-0020",
+            "A-0021",
+            "A-0022"
+          ]
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Unterscheidungsmerkmal Anordnung der Traktionsmaschine",
+      "abschnittstyp": "variante",
+      "absaetze": [
+        {
+          "absatz_id": "P9",
+          "text": "Die Anordnung der Traktionsmaschine verändert Struktur, Bremse und Lenkung. Pedelec und E-Bike nennen den Mittelmotor an Tretkurbel oder Kette als verbreitetste Bauweise, das Lastenrad vor allem für Mini-Lastenrad und Long John; sein Moment durchläuft die Gangschaltung, und ein integrierter Mittelmotor braucht eine angepasste Rahmenaufnahme im Tretlagerbereich. Nabenmotoren erlauben einen Standardrahmen, verlangen aber eine Drehmomentstütze; nur getriebelose Direktläufer ermöglichen Rekuperation. Gewerbliche Lastenräder nutzen am häufigsten Nabenmotoren, schwere Lastenräder oft zwei an der Hinterachse. Der E-Scooter betrachtet nur den getriebelosen Radnabenmotor vorn, hinten oder in beiden Rädern; ein Vorderradmotor belastet wie beim Zweirad das gelenkte Rad und verlangt Leitungen durch die Gabel. Ebenso strukturwirksam ist die Lage der Traktionsbatterie: Gepäckträger-, Rahmen- oder Intube-Akku bei Pedelec und E-Bike, Trittbrett, Lenkstange oder Vorderrad beim E-Scooter; sie ändert Rahmenform, Leitungsführung und Lenkträgheit.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "A-0018/P8",
+              "A-0018/P11",
+              "A-0019/P5",
+              "A-0019/P8",
+              "A-0019/P9",
+              "A-0019/P12",
+              "A-0020/P6",
+              "A-0020/P7",
+              "A-0020/P8",
+              "A-0021/P5",
+              "A-0022/P5",
+              "A-0022/P6",
+              "A-0019/P10",
+              "A-0022/P7",
+              "A-0022/P8"
+            ],
+            "schluss": "Mittel- oder Nabenmotor ist eine Entscheidung mit Folgen für Rahmenaufnahme, Gangschaltung, Rekuperation und gelenktes Rad, die Batterielage eine weitere mit Folgen für Rahmenform, Leitungsführung und Lenkträgheit; die Kindartikel decken unterschiedliche Teilmengen der Alternativen ab."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": [
+            "A-0018",
+            "A-0019",
+            "A-0020",
+            "A-0021",
+            "A-0022"
+          ]
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Unterscheidungsmerkmal Spurigkeit und Haltung der Person",
+      "abschnittstyp": "variante",
+      "absaetze": [
+        {
+          "absatz_id": "P10",
+          "text": "Fahrrad, Pedelec, E-Bike und einspurige Lastenräder werden sitzend gefahren und durch Lenken im Gleichgewicht gehalten. Mehrspurige Lastenräder stehen im Stillstand stabil, brauchen aber Drehschemel-, Achsschenkel- oder Einzelradlenkung, gegebenenfalls einen Neigemechanismus, eine Feststellbremse gegen Wegrollen und bei großer Breite paarweise außen sitzende Leuchten. Der E-Scooter wird stehend gefahren: Das Trittbrett ist Tragstruktur, Standfläche und oft Batteriegehäuse, die Lenkstange zugleich Haltegriff und Leitungstrasse; die kleinen Räder machen Bereifung und Federung zur zentralen Auslegungsfrage, ein Klappmechanismus ist Variante.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "A-0018/P13",
+              "A-0019/P12",
+              "A-0020/P13",
+              "A-0021/P3",
+              "A-0021/P4",
+              "A-0021/P10",
+              "A-0021/P11",
+              "A-0021/P13",
+              "A-0021/P23",
+              "A-0022/P3",
+              "A-0022/P4",
+              "A-0022/P7",
+              "A-0022/P10"
+            ],
+            "schluss": "Spurigkeit und Haltung der Person verändern Lenksystem, Bremssystem, Beleuchtung, Fahrerplatz und Tragstruktur."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": [
+            "A-0018",
+            "A-0019",
+            "A-0020",
+            "A-0021",
+            "A-0022"
+          ]
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Unterscheidungsmerkmal rechtliche Einstufung",
+      "abschnittstyp": "variante",
+      "absaetze": [
+        {
+          "absatz_id": "P11",
+          "text": "Die rechtliche Einstufung legt fest, welche Grenzen die Steuerung durchsetzt. Fahrrad, Pedelec und Lastenrad bleiben im Fahrradrecht, solange der Hilfsantrieb an das Treten gebunden ist und bei der gesetzlichen Geschwindigkeit abschaltet; ein Tuning, das die Abregelung aufhebt, verlässt diese Kategorie. Das E-Bike führt zusätzlich S-Pedelec und E-Bike mit Gashebel als Varianten, die als Kleinkraftrad gelten; für das S-Pedelec gelten dann die Kraftfahrzeugvorschriften zur Beleuchtung. Der E-Scooter ist als Elektrokleinstfahrzeug ein Kraftfahrzeug: Seine Steuerung begrenzt die bauartbedingte Höchstgeschwindigkeit statt einer Unterstützung, und er braucht Betriebserlaubnis, Versicherungsplakette, eine Bremswirkung auch bei Spannungsausfall und Fahrtrichtungsanzeiger. Betroffen sind damit Steuerung, Bremse, Beleuchtung und Sicherheit.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P2",
+              "A-0018/P1",
+              "A-0019/P1",
+              "A-0019/P2",
+              "A-0019/P22",
+              "A-0020/P1",
+              "A-0020/P3",
+              "A-0020/P27",
+              "A-0021/P19",
+              "A-0022/P1",
+              "A-0022/P11",
+              "A-0022/P17",
+              "A-0022/P18",
+              "A-0022/P21"
+            ],
+            "schluss": "Fahrradrecht, Elektrokleinstfahrzeugrecht und Kleinkraftradrecht sind alternative Rahmen, die über Steuerungsgrenzen, Bremsen und Beleuchtung in die Architektur eingreifen."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": [
+            "A-0018",
+            "A-0019",
+            "A-0020",
+            "A-0021",
+            "A-0022"
+          ]
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Unterscheidungsmerkmal Ladungsaufnahme und Nutzungsmodell",
+      "abschnittstyp": "variante",
+      "absaetze": [
+        {
+          "absatz_id": "P12",
+          "text": "Aufbau und Ladung reicht vom optionalen Gepäckträger mit Anhängevorrichtung bei Fahrrad, Pedelec und E-Bike, der beim Gepäckträger-Akku zugleich die Traktionsbatterie trägt, über die Ladeplattform mit Montagepunkten und wechselbaren Transportbehältern des Lastenrads bis zum Fehlen des Hauptsystems beim E-Scooter. Beim Lastenrad prägt die Ladung Rahmen, Lenkung und Bremsen, und das Rückhaltesystem für mitfahrende Kinder koppelt Aufbau und Fahrerplatz. Quer dazu liegt das Nutzungsmodell: Verleih-E-Scooter brauchen Telematikeinheit, digitale Verriegelung und ein auf Einsammeln oder Akkutausch ausgelegtes Batteriekonzept, gewerbliche Lastenradflotten Ortung und gegebenenfalls Batterietausch an Stationen.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "A-0018/P16",
+              "A-0018/P17",
+              "A-0019/P18",
+              "A-0020/P19",
+              "A-0021/P9",
+              "A-0021/P15",
+              "A-0021/P16",
+              "A-0021/P17",
+              "A-0021/P20",
+              "A-0022/P7",
+              "A-0022/P8",
+              "A-0022/P17",
+              "A-0022/P18",
+              "A-0022 entfallene Kategorie aufbau_nutzlast"
+            ],
+            "schluss": "Ladungsaufnahme und Nutzungsmodell sind zwei unabhängige Merkmale: das eine ändert Aufbau, Tragstruktur, Lenkung und Bremsen, das andere Telematik, Diebstahlsicherung und Batteriekonzept."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": [
+            "A-0018",
+            "A-0019",
+            "A-0020",
+            "A-0021",
+            "A-0022"
+          ]
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Zusammenfassung",
+      "abschnittstyp": "gesamtsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P13",
+          "text": "Das Leichtfahrzeug lässt sich damit als Gesamtsystem aus acht gemeinsamen Hauptsystemen auffassen, ergänzt um die fast überall vorhandenen Systeme Fahrerplatz, Aufbau und Ladung sowie Fahrerassistenz und Sicherheit. Die Kindartikel unterscheiden sich vor allem in Antriebsart, Anordnung der Traktionsmaschine, Spurigkeit und Haltung der Person, rechtlicher Einstufung sowie Ladungsaufnahme und Nutzungsmodell.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P4",
+              "P5",
+              "P6",
+              "P7",
+              "P8",
+              "P9",
+              "P10",
+              "P11",
+              "P12"
+            ],
+            "schluss": "Gemeinsames Grundmodell und Unterscheidungsmerkmale ergeben sich aus dem Vergleich der Kindartikel."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [
+            "A-0018",
+            "A-0019",
+            "A-0020",
+            "A-0021",
+            "A-0022"
+          ]
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Modellierungsbezug",
+      "abschnittstyp": "modellierung",
+      "absaetze": [
+        {
+          "absatz_id": "P14",
+          "text": "Für eine Modellierung in SysML bildet ein abstrakter Block `Leichtfahrzeug` den gemeinsamen Grundblock mit den gemeinsamen Hauptsystemen als Teilen und der führenden Person als externem Akteur mit Ports an Sattel oder Standfläche, Lenker und gegebenenfalls Pedalen. Die Kindartikel spezialisieren ihn: `Fahrrad` mit Tretantrieb, `Pedelec` und `E-Bike` mit zusätzlichem elektrischem Hilfsantrieb, wobei das E-Bike auch die Kleinkraftrad-Varianten trägt, `Lastenrad` mit Ladeplattform und gegebenenfalls mehrspurigem Fahrwerk, `E-Scooter` mit Trittbrett, Radnabenantrieb und Stehplatz. Fahrerplatz, Aufbau und Ladung sowie Fahrerassistenz und Sicherheit werden als optionale Teile geführt.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P4",
+              "P8",
+              "P10",
+              "P11",
+              "A-0018/P27",
+              "A-0019/P29",
+              "A-0020/P29",
+              "A-0021/P25",
+              "A-0022/P24"
+            ],
+            "schluss": "Ein abstrakter Grundblock mit Generalisierung zu den Kindartikeln bildet Gemeinsamkeiten und Unterschiede ab."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": [
+            "A-0018",
+            "A-0019",
+            "A-0020",
+            "A-0021",
+            "A-0022"
+          ]
+        },
+        {
+          "absatz_id": "P15",
+          "text": "Wiederverwendbare Teilmodelle sind der Tretantrieb aus Tretkurbel, Kettentrieb und Gangschaltung für die Fahrradarten, der elektrische Hilfsantrieb aus Traktionsmaschine, Motorsteuerung und Tretsensorik mit einem Zustandsautomaten der Unterstützungsregelung für Pedelec, E-Bike und Lastenrad, das Batteriesystem aus Traktionsbatterie, Batteriemanagementsystem und Ladeeinrichtung als gemeinsamer Kern aller elektrisch angetriebenen Kindartikel, mit optionalen Spannungswandlern als Variationspunkt sowie die Betriebsbremse aus zwei unabhängigen Radbremsen. Gleich bleiben die Ports für Akkukontakt, Ladebuchse, Radnabe und Bussystem. Blockdefinitionsdiagramme zeigen Grundblock und Spezialisierungen, interne Blockdiagramme die Flüsse zwischen den Hauptsystemen.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P5",
+              "P6",
+              "P9",
+              "A-0019/P29",
+              "A-0020/P29",
+              "A-0021/P25",
+              "A-0022/P24",
+              "A-0018/P27"
+            ],
+            "schluss": "Teilmodelle, die in mehreren Kindartikeln gleich aufgebaut sind, lassen sich als eigene Blöcke einmal modellieren und wiederverwenden."
+          },
+          "sicherheit": "gering",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": [
+            "A-0018",
+            "A-0019",
+            "A-0020",
+            "A-0021",
+            "A-0022"
+          ]
+        }
+      ]
+    }
+  ],
+  "modell": {
+    "elemente": [
+      {
+        "id": "E1",
+        "name": "Leichtfahrzeug",
+        "typ": "gesamtsystem",
+        "eltern_id": null,
+        "absatz_ids": [
+          "P1",
+          "P3",
+          "P13",
+          "P14"
+        ]
+      },
+      {
+        "id": "E2",
+        "name": "Fahrzeugstruktur und Fahrwerk",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P5",
+          "P10"
+        ],
+        "kategorie": "struktur_fahrwerk"
+      },
+      {
+        "id": "E3",
+        "name": "Antriebssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P8",
+          "P9"
+        ],
+        "kategorie": "antrieb"
+      },
+      {
+        "id": "E4",
+        "name": "Energieversorgungssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P6",
+          "P8",
+          "P9"
+        ],
+        "kategorie": "energieversorgung"
+      },
+      {
+        "id": "E5",
+        "name": "Lenksystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P5",
+          "P10"
+        ],
+        "kategorie": "lenkung"
+      },
+      {
+        "id": "E6",
+        "name": "Bremssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P5",
+          "P11"
+        ],
+        "kategorie": "bremse"
+      },
+      {
+        "id": "E7",
+        "name": "Fahrerplatz",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P7",
+          "P12"
+        ],
+        "kategorie": "bedienraum"
+      },
+      {
+        "id": "E8",
+        "name": "Aufbau und Ladung",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P12"
+        ],
+        "kategorie": "aufbau_nutzlast"
+      },
+      {
+        "id": "E9",
+        "name": "Elektrik und Elektronik",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P6"
+        ],
+        "kategorie": "elektrik_elektronik"
+      },
+      {
+        "id": "E10",
+        "name": "Fahrzeugsteuerung und Information",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P7",
+          "P11"
+        ],
+        "kategorie": "steuerung_information"
+      },
+      {
+        "id": "E11",
+        "name": "Fahrerassistenz und Sicherheit",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P7"
+        ],
+        "kategorie": "assistenz_sicherheit"
+      },
+      {
+        "id": "E12",
+        "name": "Beleuchtung und Sicht",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P7",
+          "P10"
+        ],
+        "kategorie": "beleuchtung_sicht"
+      }
+    ],
+    "funktionen": [
+      {
+        "id": "F1",
+        "name": "Fahrzeuglasten tragen",
+        "ausgefuehrt_von": [
+          "E2"
+        ],
+        "absatz_ids": [
+          "P5"
+        ]
+      },
+      {
+        "id": "F2",
+        "name": "Antriebsleistung erzeugen",
+        "ausgefuehrt_von": [
+          "E3"
+        ],
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "F3",
+        "name": "Drehmoment übertragen",
+        "ausgefuehrt_von": [
+          "E3"
+        ],
+        "absatz_ids": [
+          "P8",
+          "P9"
+        ]
+      },
+      {
+        "id": "F4",
+        "name": "Fahrzeug fortbewegen",
+        "ausgefuehrt_von": [
+          "E3",
+          "E2"
+        ],
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "F5",
+        "name": "Energie speichern",
+        "ausgefuehrt_von": [
+          "E4"
+        ],
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "F6",
+        "name": "Traktionsbatterie laden",
+        "ausgefuehrt_von": [
+          "E4"
+        ],
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "F7",
+        "name": "Elektrische Energie verteilen",
+        "ausgefuehrt_von": [
+          "E9"
+        ],
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "F8",
+        "name": "Daten übertragen",
+        "ausgefuehrt_von": [
+          "E9"
+        ],
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "F9",
+        "name": "Fahrzeug lenken",
+        "ausgefuehrt_von": [
+          "E5"
+        ],
+        "absatz_ids": [
+          "P5"
+        ]
+      },
+      {
+        "id": "F10",
+        "name": "Fahrzeug stabilisieren",
+        "ausgefuehrt_von": [
+          "E5"
+        ],
+        "absatz_ids": [
+          "P5",
+          "P10"
+        ]
+      },
+      {
+        "id": "F11",
+        "name": "Fahrzeug verzögern",
+        "ausgefuehrt_von": [
+          "E6"
+        ],
+        "absatz_ids": [
+          "P5"
+        ]
+      },
+      {
+        "id": "F12",
+        "name": "Fahrzeug festhalten",
+        "ausgefuehrt_von": [
+          "E6"
+        ],
+        "absatz_ids": [
+          "P10"
+        ]
+      },
+      {
+        "id": "F13",
+        "name": "Bremsenergie zurückgewinnen",
+        "ausgefuehrt_von": [
+          "E3",
+          "E6"
+        ],
+        "absatz_ids": [
+          "P5",
+          "P9"
+        ]
+      },
+      {
+        "id": "F14",
+        "name": "Tretunterstützung regeln",
+        "ausgefuehrt_von": [
+          "E10"
+        ],
+        "absatz_ids": [
+          "P7"
+        ]
+      },
+      {
+        "id": "F15",
+        "name": "Höchstgeschwindigkeit begrenzen",
+        "ausgefuehrt_von": [
+          "E10"
+        ],
+        "absatz_ids": [
+          "P7",
+          "P11"
+        ]
+      },
+      {
+        "id": "F16",
+        "name": "Fahrzeugzustand überwachen",
+        "ausgefuehrt_von": [
+          "E10"
+        ],
+        "absatz_ids": [
+          "P7"
+        ]
+      },
+      {
+        "id": "F17",
+        "name": "Fahrzeugposition bestimmen",
+        "ausgefuehrt_von": [
+          "E10"
+        ],
+        "absatz_ids": [
+          "P12"
+        ]
+      },
+      {
+        "id": "F18",
+        "name": "Fahrereingaben erfassen",
+        "ausgefuehrt_von": [
+          "E7"
+        ],
+        "absatz_ids": [
+          "P7"
+        ]
+      },
+      {
+        "id": "F19",
+        "name": "Insassen schützen",
+        "ausgefuehrt_von": [
+          "E7"
+        ],
+        "absatz_ids": [
+          "P7",
+          "P12"
+        ]
+      },
+      {
+        "id": "F20",
+        "name": "Ladung aufnehmen",
+        "ausgefuehrt_von": [
+          "E8"
+        ],
+        "absatz_ids": [
+          "P12"
+        ]
+      },
+      {
+        "id": "F21",
+        "name": "Anhänger ziehen",
+        "ausgefuehrt_von": [
+          "E8"
+        ],
+        "absatz_ids": [
+          "P12"
+        ]
+      },
+      {
+        "id": "F22",
+        "name": "Unbefugte Benutzung verhindern",
+        "ausgefuehrt_von": [
+          "E11"
+        ],
+        "absatz_ids": [
+          "P7"
+        ]
+      },
+      {
+        "id": "F23",
+        "name": "Fahrzeugumgebung ausleuchten",
+        "ausgefuehrt_von": [
+          "E12"
+        ],
+        "absatz_ids": [
+          "P7"
+        ]
+      },
+      {
+        "id": "F24",
+        "name": "Lichtsignale abgeben",
+        "ausgefuehrt_von": [
+          "E12"
+        ],
+        "absatz_ids": [
+          "P7"
+        ]
+      },
+      {
+        "id": "F25",
+        "name": "Akustische Signale abgeben",
+        "ausgefuehrt_von": [
+          "E12",
+          "E11"
+        ],
+        "absatz_ids": [
+          "P7"
+        ]
+      }
+    ],
+    "fluesse": [
+      {
+        "id": "S1",
+        "von": "E4",
+        "nach": "E3",
+        "art": "elektrisch",
+        "medium": "Traktionsstrom",
+        "absatz_ids": [
+          "P6"
+        ],
+        "schnittstelle": "Akkukontakt und Leistungsanschluss der Motorsteuerung"
+      },
+      {
+        "id": "S2",
+        "von": "E3",
+        "nach": "E2",
+        "art": "mechanisch",
+        "medium": "Drehmoment",
+        "absatz_ids": [
+          "P8",
+          "P9"
+        ],
+        "schnittstelle": "Radnabe oder Kettentrieb zum Hinterrad"
+      },
+      {
+        "id": "S3",
+        "von": "E3",
+        "nach": "E4",
+        "art": "elektrisch",
+        "medium": "Rekuperationsstrom",
+        "absatz_ids": [
+          "P9"
+        ],
+        "schnittstelle": "Akkukontakt"
+      },
+      {
+        "id": "S4",
+        "von": "E5",
+        "nach": "E2",
+        "art": "mechanisch",
+        "medium": "Lenkmoment",
+        "absatz_ids": [
+          "P5"
+        ],
+        "schnittstelle": "Lenkkopflager und Gabel"
+      },
+      {
+        "id": "S5",
+        "von": "E6",
+        "nach": "E2",
+        "art": "mechanisch",
+        "medium": "Bremsmoment",
+        "absatz_ids": [
+          "P5"
+        ],
+        "schnittstelle": "Radbremse an Felge, Scheibe oder Nabe"
+      },
+      {
+        "id": "S6",
+        "von": "E7",
+        "nach": "E10",
+        "art": "information",
+        "medium": "Fahrereingaben",
+        "absatz_ids": [
+          "P7"
+        ],
+        "schnittstelle": "Bedienelemente am Lenker"
+      },
+      {
+        "id": "S7",
+        "von": "E10",
+        "nach": "E3",
+        "art": "information",
+        "medium": "Sollwert für die Motorsteuerung",
+        "absatz_ids": [
+          "P7"
+        ],
+        "schnittstelle": "Bussystem"
+      },
+      {
+        "id": "S8",
+        "von": "E4",
+        "nach": "E12",
+        "art": "elektrisch",
+        "medium": "Lichtstrom",
+        "absatz_ids": [
+          "P6"
+        ],
+        "schnittstelle": "Lichtausgang"
+      },
+      {
+        "id": "S9",
+        "von": "E8",
+        "nach": "E2",
+        "art": "mechanisch",
+        "medium": "Ladungslasten",
+        "absatz_ids": [
+          "P12"
+        ],
+        "schnittstelle": "Gepäckträgeraufnahme oder Montagepunkte"
+      }
+    ],
+    "entfallene_kategorien": [
+      {
+        "kategorie": "thermomanagement",
+        "grund": "Nicht Teil des gemeinsamen Grundmodells: nur das Pedelec führt ein eigenes, überwiegend passives Thermomanagement; die übrigen Kindartikel ordnen Temperaturüberwachung und Leistungsrücknahme Batteriemanagementsystem und Motorsteuerung zu."
+      },
+      {
+        "kategorie": "nebensysteme",
+        "grund": "Kein Kindartikel besitzt Druckluft-, Unterdruck-, Hydraulikversorgung oder Nebenabtriebe."
+      }
+    ],
+    "varianten": [
+      {
+        "id": "V1",
+        "element_id": "E3",
+        "bezeichnung": "Antriebsart",
+        "alternativen": [
+          "Reiner Muskelkraftantrieb über den Tretantrieb",
+          "Muskelkraft mit parallelem elektrischem Hilfsantrieb",
+          "Muskelkraft mit parallelem elektrischem Antrieb ohne Tretbindung (Gashebel)",
+          "Serieller Antrieb mit Tretgenerator ohne Kette",
+          "Rein elektrischer Radnabenantrieb ohne Tretantrieb"
+        ],
+        "auswahlkriterien": [
+          "Gewünschte Unterstützung: reine Muskelkraft bei Fahrrad und unmotorisiertem Lastenrad, paralleler Hilfsantrieb bei Pedelec, E-Bike, Lastenrad und der Pedelec-Variante des Fahrrads, Tretgenerator nur beim Lastenrad, rein elektrisch beim E-Scooter",
+          "Antrieb ohne Tretbindung über Gashebel nur als Kleinkraftrad-Variante des E-Bikes",
+          "Bindung der Unterstützung an das Treten als Voraussetzung des Fahrradstatus",
+          "Zuladung, Reichweite und Wartungsaufwand"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E4",
+            "beschreibung": "Mit elektrischem Pfad Traktionsbatterie, Batteriemanagementsystem und Ladeeinrichtung, beim seriellen Antrieb zusätzlich Tretgenerator; ohne ihn nur Lichtmaschine oder Akkuleuchten"
+          },
+          {
+            "element_id": "E9",
+            "beschreibung": "Leitungssatz und Bussystem zwischen Batterie, Motorsteuerung und Bedieneinheit nur mit elektrischem Pfad"
+          },
+          {
+            "element_id": "E10",
+            "beschreibung": "Fahrzeugmanagement mit Unterstützungsgrenze oder Höchstgeschwindigkeitsbegrenzung nur mit elektrischem Pfad"
+          },
+          {
+            "element_id": "E2",
+            "beschreibung": "Aufnahme von Motor, Batterie und Reaktionsmoment in der Tragstruktur"
+          },
+          {
+            "element_id": "E10",
+            "beschreibung": "Beim Gashebel Sollwert aus dem Gasgriff statt aus dem Tretsensor"
+          }
+        ],
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "V2",
+        "element_id": "E3",
+        "bezeichnung": "Anordnung der Traktionsmaschine",
+        "alternativen": [
+          "Mittelmotor an Tretkurbel oder Kette",
+          "Nabenmotor im Hinterrad",
+          "Nabenmotor im Vorderrad",
+          "Zwei Radnabenmotoren"
+        ],
+        "auswahlkriterien": [
+          "Mittelmotor als verbreitetste Bauweise bei Pedelec und E-Bike und bei Mini-Lastenrad und Long John; Nabenmotoren bei gewerblichen Lastenrädern, zwei Nabenmotoren bei schweren Lastenrädern, ausschließlich Radnabenmotoren beim E-Scooter",
+          "Steigfähigkeit und Nutzung der Gangschaltung",
+          "Verwendbarkeit eines Standardrahmens",
+          "Gewünschte Rekuperation"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E2",
+            "beschreibung": "Integrierter Mittelmotor: angepasste Rahmenaufnahme im Tretlagerbereich; Nabenmotor: Drehmomentstütze an Rahmen oder Gabel"
+          },
+          {
+            "element_id": "E6",
+            "beschreibung": "Nutzbremse nur mit getriebelosem Nabenmotor"
+          },
+          {
+            "element_id": "E5",
+            "beschreibung": "Vorderradmotor belastet das gelenkte Rad"
+          },
+          {
+            "element_id": "E9",
+            "beschreibung": "Leitung zum Laufrad durch Achse oder Gabel beim Nabenmotor"
+          }
+        ],
+        "absatz_ids": [
+          "P9"
+        ]
+      },
+      {
+        "id": "V3",
+        "element_id": "E2",
+        "bezeichnung": "Spurigkeit und Haltung der Person",
+        "alternativen": [
+          "Einspurig sitzend",
+          "Mehrspurig sitzend, mit oder ohne Neigetechnik",
+          "Einspurig stehend auf einem Trittbrett"
+        ],
+        "auswahlkriterien": [
+          "Einspurig sitzend bei Fahrrad, Pedelec, E-Bike und einspurigen Lastenrädern, mehrspurig bei Lastendreirad und Lastenvierrad, stehend beim E-Scooter",
+          "Stabilität im Stillstand und bei geringer Geschwindigkeit",
+          "Ladefläche und Fahrzeugbreite",
+          "Mitnahme in Verkehrsmitteln"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E5",
+            "beschreibung": "Mehrspurig: Drehschemel-, Achsschenkel- oder Einzelradlenkung; stehend: Lenkstange als Haltegriff und Leitungstrasse"
+          },
+          {
+            "element_id": "E6",
+            "beschreibung": "Mehrspurig: Feststellbremse gegen Wegrollen"
+          },
+          {
+            "element_id": "E12",
+            "beschreibung": "Breite mehrspurige Räder: Scheinwerfer und Leuchten paarweise außen"
+          },
+          {
+            "element_id": "E7",
+            "beschreibung": "Stehend: Standfläche statt Sattel"
+          },
+          {
+            "element_id": "E4",
+            "beschreibung": "Stehend: Traktionsbatterie oft im Trittbrett"
+          }
+        ],
+        "absatz_ids": [
+          "P10"
+        ]
+      },
+      {
+        "id": "V4",
+        "element_id": "E1",
+        "bezeichnung": "Rechtliche Einstufung",
+        "alternativen": [
+          "Fahrrad nach Fahrradrecht",
+          "Elektrokleinstfahrzeug",
+          "Kleinkraftrad"
+        ],
+        "auswahlkriterien": [
+          "Fahrradrecht bei Fahrrad, Pedelec und Lastenrad; Elektrokleinstfahrzeug beim E-Scooter; Kleinkraftrad bei den Varianten S-Pedelec und E-Bike mit Gashebel des E-Bikes",
+          "Gewünschte Unterstützungs- oder Höchstgeschwindigkeit und Leistung",
+          "Aufwand für Betriebserlaubnis, Versicherung und Fahrerlaubnis"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E10",
+            "beschreibung": "Unterstützungsgrenze mit Tretbindung oder Begrenzung der bauartbedingten Höchstgeschwindigkeit"
+          },
+          {
+            "element_id": "E6",
+            "beschreibung": "Elektrokleinstfahrzeug: Bremswirkung auch bei Spannungsausfall"
+          },
+          {
+            "element_id": "E12",
+            "beschreibung": "Elektrokleinstfahrzeug: Fahrtrichtungsanzeiger; S-Pedelec: Kraftfahrzeugvorschriften zur Beleuchtung"
+          },
+          {
+            "element_id": "E11",
+            "beschreibung": "Manipulationsschutz zur Sicherung der Einstufung"
+          }
+        ],
+        "absatz_ids": [
+          "P2",
+          "P11"
+        ]
+      },
+      {
+        "id": "V5",
+        "element_id": "E8",
+        "bezeichnung": "Ladungsaufnahme",
+        "alternativen": [
+          "Gepäckträger mit optionaler Anhängevorrichtung",
+          "Ladeplattform mit Montagepunkten und Transportbehälter",
+          "Kein Aufbau"
+        ],
+        "auswahlkriterien": [
+          "Gepäckträger bei Fahrrad, Pedelec und E-Bike, Ladeplattform beim Lastenrad, kein Aufbau beim E-Scooter",
+          "Art und Masse der Ladung, Beförderung von Kindern",
+          "Wechselbarkeit der Aufbauten"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E2",
+            "beschreibung": "Rahmen für Ladeplattform und höhere Gesamtmasse"
+          },
+          {
+            "element_id": "E5",
+            "beschreibung": "Lenkgestänge bei vorgelagertem Vorderrad"
+          },
+          {
+            "element_id": "E6",
+            "beschreibung": "Radbremsen auf die Zuladung ausgelegt"
+          },
+          {
+            "element_id": "E7",
+            "beschreibung": "Rückhaltesystem für mitfahrende Kinder"
+          },
+          {
+            "element_id": "E4",
+            "beschreibung": "Gepäckträger-Akku auf dem Gepäckträger"
+          }
+        ],
+        "absatz_ids": [
+          "P12"
+        ]
+      },
+      {
+        "id": "V6",
+        "element_id": "E10",
+        "bezeichnung": "Nutzungsmodell",
+        "alternativen": [
+          "Privatfahrzeug",
+          "Verleihfahrzeug oder gewerbliches Flottenfahrzeug"
+        ],
+        "auswahlkriterien": [
+          "Stationsunabhängiger Verleih beim E-Scooter, gewerbliche Flotten beim Lastenrad, private Nutzung bei allen Kindartikeln",
+          "Bedarf an Ortung, Fernverriegelung und zentralem Laden"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E4",
+            "beschreibung": "Batteriekonzept für Einsammeln, Akkutausch oder Batterietausch an Stationen"
+          },
+          {
+            "element_id": "E11",
+            "beschreibung": "Digitale Verriegelung und Wegfahrsperre über die Telematikeinheit"
+          },
+          {
+            "element_id": "E7",
+            "beschreibung": "Anzeige teilweise über das Smartphone"
+          }
+        ],
+        "absatz_ids": [
+          "P12"
+        ]
+      },
+      {
+        "id": "V7",
+        "element_id": "E4",
+        "bezeichnung": "Anordnung der Traktionsbatterie",
+        "alternativen": [
+          "Gepäckträger-Akku",
+          "Rahmen-Akku an Unter- oder Sitzrohr",
+          "Intube-Akku im Rahmen",
+          "Akku im oder unter dem Trittbrett",
+          "Akku an oder in der Lenkstange oder über dem Vorderrad"
+        ],
+        "auswahlkriterien": [
+          "Gepäckträger-, Rahmen- und Intube-Akku bei Pedelec und E-Bike, Trittbrett, Lenkstange oder Vorderrad beim E-Scooter",
+          "Entnehmbarkeit zum Laden",
+          "Schwerpunktlage"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E2",
+            "beschreibung": "Rahmenform und Rohrquerschnitt beim Intube-Akku, Trittbrett als Batteriegehäuse"
+          },
+          {
+            "element_id": "E8",
+            "beschreibung": "Gepäckträger als Batterieträger"
+          },
+          {
+            "element_id": "E5",
+            "beschreibung": "Höhere Lenkträgheit bei Akku an der Lenkstange"
+          },
+          {
+            "element_id": "E9",
+            "beschreibung": "Leitungsführung"
+          }
+        ],
+        "absatz_ids": [
+          "P9"
+        ]
+      }
+    ],
+    "klaerungsfragen": [
+      {
+        "id": "K1",
+        "frage": "Soll das Fahrzeug vor allem eine Person befördern oder Güter und Kinder transportieren, muss die Person treten oder genügt ein Bedienelement, und fährt sie sitzend oder stehend?",
+        "element_ids": [
+          "E1"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Aus den Antworten folgt die Fahrzeugart: ohne Elektrik Fahrrad, mit Tretbindung Pedelec oder E-Bike, mit Ladeplattform Lastenrad, stehend ohne Tretantrieb E-Scooter, und damit die Spezialisierung des Grundblocks.",
+        "variante_ids": [
+          "V1",
+          "V3",
+          "V4",
+          "V5"
+        ]
+      },
+      {
+        "id": "K2",
+        "frage": "Soll das Fahrzeug rechtlich als Fahrrad, als Elektrokleinstfahrzeug oder als Kleinkraftrad eingestuft werden?",
+        "element_ids": [
+          "E1",
+          "E10"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen die Grenzen der Steuerung, die Bremsanforderungen und die Beleuchtungsausstattung ab.",
+        "variante_ids": [
+          "V4"
+        ]
+      },
+      {
+        "id": "K3",
+        "frage": "Soll das Fahrzeug nur mit Muskelkraft, mit an das Treten gebundener elektrischer Unterstützung oder rein elektrisch fahren?",
+        "element_ids": [
+          "E3",
+          "E4"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängt ab, ob Traktionsbatterie, Ladeeinrichtung, Bussystem und Fahrzeugmanagement entstehen.",
+        "variante_ids": [
+          "V1"
+        ]
+      },
+      {
+        "id": "K4",
+        "frage": "Soll die Traktionsmaschine am Tretlager oder in der Nabe des Vorder- oder Hinterrads sitzen?",
+        "element_ids": [
+          "E3",
+          "E2"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Rahmenaufnahme, Drehmomentstütze, Wahl der Gangschaltung und Möglichkeit der Rekuperation ab.",
+        "variante_ids": [
+          "V2"
+        ]
+      },
+      {
+        "id": "K5",
+        "frage": "Soll das Fahrzeug einspurig oder mehrspurig sein, und fährt die Person sitzend oder stehend?",
+        "element_ids": [
+          "E2",
+          "E5",
+          "E7"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Lenkungsbauart, Feststellbremse, Tragstruktur und Gestaltung des Fahrerplatzes ab.",
+        "variante_ids": [
+          "V3"
+        ]
+      },
+      {
+        "id": "K6",
+        "frage": "Welche Ladung soll das Fahrzeug aufnehmen: Gepäck, Kinder, Güter auf einer Ladeplattform oder keine?",
+        "element_ids": [
+          "E8"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Aufbau, Rahmen, Bremsauslegung und Rückhaltesysteme ab.",
+        "variante_ids": [
+          "V5"
+        ]
+      },
+      {
+        "id": "K7",
+        "frage": "Wird das Fahrzeug privat genutzt oder in einem Verleihsystem oder einer gewerblichen Flotte betrieben?",
+        "element_ids": [
+          "E10",
+          "E4",
+          "E11"
+        ],
+        "anlass": "betrieb",
+        "relevanz": "Davon hängen Telematikeinheit, digitale Verriegelung und Batteriekonzept ab.",
+        "variante_ids": [
+          "V6"
+        ]
+      },
+      {
+        "id": "K8",
+        "frage": "Wo soll die Traktionsbatterie sitzen, und muss sie zum Laden entnehmbar sein?",
+        "element_ids": [
+          "E4",
+          "E2"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Rahmenform, Gepäckträger oder Trittbrett als Batterieträger, Leitungsführung und Lenkträgheit ab.",
+        "variante_ids": [
+          "V7"
+        ]
+      }
+    ],
+    "anforderungsthemen": [
+      {
+        "id": "R1",
+        "element_ids": [
+          "E10",
+          "E3"
+        ],
+        "thema": "Grenzen des elektrischen Hilfsantriebs",
+        "kenngroessen": [
+          "Nenndauerleistung",
+          "Abschaltgeschwindigkeit der Unterstützung",
+          "Geschwindigkeit der Anfahr- oder Schiebehilfe"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "§ 1 Abs. 3 StVG (Deutschland, durch Muskelkraft fortbewegte Landfahrzeuge mit elektromotorischem Hilfsantrieb)",
+            "quellen_id": "Q4",
+            "fundstelle": "§ 1 Abs. 3 Satz 1 und 2"
+          },
+          {
+            "bezeichnung": "§ 63a Abs. 2 StVZO (Deutschland, Fahrräder mit elektrischer Trethilfe)",
+            "quellen_id": "Q3",
+            "fundstelle": "§ 63a Abs. 2 Satz 1 und 2"
+          },
+          {
+            "bezeichnung": "Art. 2 Abs. 2 Buchst. h Verordnung (EU) Nr. 168/2013 (EU, Ausnahme von Fahrrädern mit Trethilfe aus der Typgenehmigung der Klasse L)",
+            "quellen_id": "Q1",
+            "fundstelle": "Article 2(2)(h)"
+          }
+        ]
+      },
+      {
+        "id": "R2",
+        "element_ids": [
+          "E2",
+          "E3"
+        ],
+        "thema": "Abmessungen, Masse und Leistung des Elektrokleinstfahrzeugs",
+        "kenngroessen": [
+          "Gesamtbreite",
+          "Gesamthöhe",
+          "Gesamtlänge",
+          "Fahrzeugmasse ohne Fahrer",
+          "Bauartbedingte Höchstgeschwindigkeit",
+          "Nenndauerleistung",
+          "Länge der Lenk- oder Haltestange"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "§ 1 Abs. 1 Elektrokleinstfahrzeuge-Verordnung (Deutschland, Elektrokleinstfahrzeuge)",
+            "quellen_id": "Q2",
+            "fundstelle": "§ 1 Abs. 1 Nr. 1 bis 5"
+          }
+        ]
+      },
+      {
+        "id": "R3",
+        "element_ids": [
+          "E6"
+        ],
+        "thema": "Bremswirkung",
+        "kenngroessen": [
+          "Bremsverzögerung",
+          "Unabhängigkeit der beiden Bremsen",
+          "Bremswirkung bei Ausfall der Spannungsversorgung"
+        ]
+      },
+      {
+        "id": "R4",
+        "element_ids": [
+          "E4"
+        ],
+        "thema": "Reichweite und Laden",
+        "kenngroessen": [
+          "Reichweite mit Unterstützung",
+          "Energieinhalt der Traktionsbatterie",
+          "Ladezeit"
+        ]
+      },
+      {
+        "id": "R5",
+        "element_ids": [
+          "E8",
+          "E2"
+        ],
+        "thema": "Zuladung",
+        "kenngroessen": [
+          "Zulässige Zuladung",
+          "Zulässige Gesamtmasse",
+          "Schwerpunktlage"
+        ]
+      }
+    ]
+  },
+  "offene_punkte": [
+    "Begriff und Taxonomie: Im Deutschen bezeichnet Leichtfahrzeug nach Q5 vierrädrige Leichtkraftfahrzeuge der Klassen L6e und L7e; das Taxon dieser Übersicht entspricht dagegen der Mikromobilität (Q6). Im Inventar klären, ob das Taxon umbenannt wird (etwa Mikromobilität oder Leichte Straßenfahrzeuge) und ob Leichtkraftfahrzeuge der Klassen L6e und L7e einen eigenen Blattartikel erhalten.",
+    "Taxonomie: A-0019 (Pedelec) und A-0020 (E-Bike, Bezugsbauweise Pedelec mit Mittelmotor) überschneiden sich weitgehend; A-0018 führt das Pedelec als Antriebsvariante und zweirädrige Lastenräder als Variante von Aufbau und Ladung, A-0020 P19 bezeichnet Lastenfahrräder als eigene Fahrzeugart. Abgrenzung der Kindartikel im Inventar klären.",
+    "Widerspruch zwischen Kindartikeln (Zuordnung): Fahrerplatz als Hauptsystem in A-0019 bis A-0022, in A-0018 entfallen; Glocke unter Fahrerassistenz und Sicherheit (A-0018, A-0019) gegenüber Beleuchtung und Sicht (A-0020, A-0021, A-0022); Thermomanagement als eigenes Hauptsystem nur in A-0019, in A-0018 und A-0020 bis A-0022 entfallen; Fahrerassistenz und Sicherheit in A-0020 entfallen, obwohl Wegfahrsperre und Manipulationsschutz wie in A-0019 vorkommen. Einheitliche Zuordnung festlegen.",
+    "Recherche: Primärquelle SAE J3194 (Taxonomy and Classification of Powered Micromobility Vehicles) zur Definition der Mikromobilität; die Seite sae.org war in diesem Lauf nicht lesbar (nur skriptbasierte Darstellung).",
+    "Recherche: Behörden- oder Fachliteratur zu Mikromobilität und Elektrokleinstfahrzeugen (Suchbegriffe: BASt Elektrokleinstfahrzeuge Bericht; ITF Safe Micromobility, in diesem Lauf mit 403 abgewiesen), um die gemeinsame Architektur (P4 bis P7) zu belegen.",
+    "Recherche: Verordnung (EU) Nr. 168/2013 Anhang I zu den Klassen L6e und L7e für die Abgrenzung der vierrädrigen Leichtkraftfahrzeuge; in diesem Lauf nur Artikel 2 gelesen."
+  ]
+}
