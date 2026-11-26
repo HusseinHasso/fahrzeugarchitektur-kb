@@ -1,0 +1,1507 @@
+{
+  "schema_version": "2.3",
+  "artikel_id": "A-0140",
+  "artikeltyp": "uebersicht",
+  "titel": "Arbeitsmaschinen",
+  "betrachtungsumfang": "Übersicht über bemannte, selbstfahrende Arbeitsmaschinen der Land- und Forstwirtschaft als Geländefahrzeuge (Recherchepfad Landfahrzeuge, Geländefahrzeuge, Arbeitsmaschinen) mit den Kindartikeln Traktor (A-0043), Mähdrescher (A-0044) und Forstmaschine (A-0045). Rechtliche Einordnung in Deutschland nach FZV § 2 als land- oder forstwirtschaftliche Zugmaschine oder selbstfahrende Arbeitsmaschine, in der EU nach Verordnung (EU) Nr. 167/2013 und Verordnung (EU) 2016/1628. Antriebsarten nur im Vergleich: dieselmotorisch in allen Kindartikeln, diesel-elektrisch, hybridelektrisch, batterieelektrisch und brennstoffzellenelektrisch beim Traktor, Parallel- und serieller Hybrid bei der Forstmaschine; Energiespeicher und Energiewandler (Kraftstofftank, Traktionsbatterie, Wasserstofftank; Verbrennungsmotor, Traktionsmaschine, Brennstoffzellensystem) sind in den Kindartikeln modelliert. Das Modell enthält nur das Gesamtsystem und die gemeinsamen Hauptsysteme. Ausgeschlossen: gezogene Arbeitsgeräte und Anhänger, Baumaschinen wie Bagger und Radlader, Stapler, Kommunal- und Sonderfahrzeuge sowie fahrerlose Arbeitsmaschinen.",
+  "status": "zu_pruefen",
+  "quellenzugriff": "ja",
+  "kindartikel_ids": [
+    "A-0043",
+    "A-0044",
+    "A-0045"
+  ],
+  "quellen": [
+    {
+      "quellen_id": "Q1",
+      "titel": "Fahrzeug-Zulassungsverordnung (FZV), § 2 Begriffsbestimmungen (Fassung der Verordnung vom 19. Dezember 2025, BGBl. 2025 I Nr. 382)",
+      "urheber": "Bundesministerium für Digitales und Verkehr (Verordnungsgeber); Textausgabe buzer.de",
+      "stand": "2025-12-31",
+      "url": "https://www.buzer.de/2_FZV.htm",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q2",
+      "titel": "Regulation (EU) No 167/2013 of the European Parliament and of the Council of 5 February 2013 on the approval and market surveillance of agricultural and forestry vehicles, Artikel 2 (Scope) und Artikel 3 (Definitions), Fassung wie angenommen",
+      "urheber": "Europäisches Parlament und Rat der Europäischen Union",
+      "stand": "2013-02-05",
+      "url": "https://www.legislation.gov.uk/eur/2013/167/article/2/adopted",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q3",
+      "titel": "Regulation (EU) 2016/1628 of the European Parliament and of the Council of 14 September 2016 on requirements relating to gaseous and particulate pollutant emission limits and type-approval for internal combustion engines for non-road mobile machinery, Artikel 2 (Scope) und Artikel 3 (Definitions), Fassung wie angenommen",
+      "urheber": "Europäisches Parlament und Rat der Europäischen Union",
+      "stand": "2016-09-14",
+      "url": "https://www.legislation.gov.uk/eur/2016/1628/article/2/adopted",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q4",
+      "titel": "Selbstfahrende Arbeitsmaschine",
+      "urheber": "Wikipedia-Autoren",
+      "stand": null,
+      "url": "https://de.wikipedia.org/wiki/Selbstfahrende_Arbeitsmaschine",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q5",
+      "titel": "Regulation (EU) No 167/2013 of the European Parliament and of the Council of 5 February 2013 on the approval and market surveillance of agricultural and forestry vehicles, Artikel 19 (Requirements for environmental performance), Fassung wie angenommen",
+      "urheber": "Europäisches Parlament und Rat der Europäischen Union",
+      "stand": "2013-02-05",
+      "url": "https://www.legislation.gov.uk/eur/2013/167/article/19/adopted",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "norm"
+    }
+  ],
+  "abschnitte": [
+    {
+      "ueberschrift": "Einleitung",
+      "abschnittstyp": "gesamtsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P1",
+          "text": "Die deutsche Fahrzeug-Zulassungsverordnung (FZV, § 2) kennt zwei arbeitende Fahrzeugarten. Die land- oder forstwirtschaftliche Zugmaschine ist ein Kraftfahrzeug, dessen Funktion im Wesentlichen in der Erzeugung einer Zugkraft besteht und das besonders zum Ziehen, Schieben, Tragen und zum Antrieb von auswechselbaren Geräten für land- oder forstwirtschaftliche Arbeiten oder zum Ziehen von Anhängern bestimmt und geeignet ist. Die selbstfahrende Arbeitsmaschine ist ein Kraftfahrzeug, das nach seiner Bauart und seinen besonderen, mit dem Fahrzeug fest verbundenen Einrichtungen zur Verrichtung von Arbeiten, jedoch nicht zur Beförderung von Personen oder Gütern bestimmt und geeignet ist. Darunter fällt auch ein Holzrückefahrzeug mit höchstens 25 km/h bauartbedingter Höchstgeschwindigkeit, das eine Vorrichtung für Lade- und Sortierprozesse besitzt und dessen im öffentlichen Straßenverkehr zulässige Nutzlast 500 kg nicht überschreitet. Als klassische selbstfahrende Arbeitsmaschinen gelten unter anderem Bagger, Radlader, Erntemaschinen und Mähdrescher.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "§ 2 Satz 1 Nummer 16 und 17, Satz 4 Nummer 2"
+            },
+            {
+              "quellen_id": "Q4",
+              "fundstelle": "Einleitung und Abschnitt Zulassungs- und Versicherungsrecht in Deutschland, letzter Absatz"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "funktion"
+        },
+        {
+          "absatz_id": "P2",
+          "text": "In der Europäischen Union gilt die Verordnung (EU) Nr. 167/2013 für land- und forstwirtschaftliche Fahrzeuge, nämlich Zugmaschinen der Klassen T und C, Anhänger und gezogene auswechselbare Geräte. Zugmaschine ist dort ein motorisiertes land- oder forstwirtschaftliches Rad- oder Kettenfahrzeug mit mindestens zwei Achsen und einer bauartbedingten Höchstgeschwindigkeit von mindestens 6 km/h, dessen Hauptfunktion in seiner Zugleistung liegt. Die Verordnung (EU) 2016/1628 gilt in der EU für Verbrennungsmotoren, die in nicht für den Straßenverkehr bestimmte mobile Maschinen eingebaut sind; das sind mobile Maschinen, transportable Ausrüstung oder Fahrzeuge, die nicht zur Beförderung von Personen oder Gütern auf der Straße bestimmt sind. Ausgenommen sind unter anderem Motoren für den Antrieb land- und forstwirtschaftlicher Zugmaschinen im Sinne der Verordnung (EU) Nr. 167/2013.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Artikel 2 Absatz 1; Artikel 3 Nummer 8"
+            },
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Artikel 2 Absatz 1 und Absatz 2 Buchstabe b; Artikel 3 Nummer 1"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "funktion"
+        },
+        {
+          "absatz_id": "P3",
+          "text": "Diese Übersicht fasst unter Arbeitsmaschinen bemannte, selbstfahrende Landfahrzeuge zusammen, die im Gelände der Land- und Forstwirtschaft einen großen Teil ihrer Motorleistung an eine Arbeitsausrüstung abgeben. Rechtlich gehören sie zu verschiedenen Fahrzeugarten: Der Traktor ist eine land- oder forstwirtschaftliche Zugmaschine, der Mähdrescher eine selbstfahrende Arbeitsmaschine, und die Forstmaschine mit Harvester, Forwarder und Skidder kann je nach Bauart und Genehmigung zu einer der beiden zählen. In der EU fallen daher der Traktor und eine als Zugmaschine genehmigte Forstmaschine unter die Verordnung über land- und forstwirtschaftliche Fahrzeuge, die Motoren des Mähdreschers und der übrigen Forstmaschinen unter die Verordnung über Motoren mobiler Maschinen. Nicht behandelt werden gezogene Arbeitsgeräte und Anhänger, Baumaschinen wie Bagger und Radlader sowie Maschinen ohne Fahrer an Bord.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herangezogene_artikel_ids": [
+            "A-0043",
+            "A-0044",
+            "A-0045"
+          ],
+          "herleitung": {
+            "praemissen": [
+              "P1",
+              "P2",
+              "A-0043/P1",
+              "A-0044/P1",
+              "A-0044/P2",
+              "A-0045/P1",
+              "A-0045/P2",
+              "A-0045/P19",
+              "Klärungsfrage K18 in A-0045",
+              "Betrachtungsumfang von A-0043, A-0044 und A-0045"
+            ],
+            "schluss": "Das Taxon umfasst bemannte, selbstfahrende land- und forstwirtschaftliche Fahrzeuge mit Arbeitsausrüstung, rechtlich Zugmaschinen oder selbstfahrende Arbeitsmaschinen, mit unterschiedlichen Genehmigungsgrundlagen."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "funktion"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Gemeinsames Grundmodell und Leistungsversorgung",
+      "abschnittstyp": "querschnitt",
+      "absaetze": [
+        {
+          "absatz_id": "P4",
+          "text": "Alle drei Kindartikel zerlegen ihre Fahrzeugart in dieselben dreizehn Hauptsysteme mit denselben Glossarnamen: Fahrzeugstruktur und Fahrwerk, Antriebssystem, Energieversorgungssystem, Lenksystem, Bremssystem, Fahrerhaus, Arbeitsausrüstung, Elektrik und Elektronik, Fahrzeugsteuerung und Information, Fahrerassistenz und Sicherheit, Beleuchtung und Sicht, Thermomanagement sowie Neben- und Versorgungssysteme. Keiner lässt eine Kategorie entfallen. Das gemeinsame Grundmodell umfasst daher alle dreizehn Hauptsysteme; die innere Gliederung unterscheidet sich vor allem in der Arbeitsausrüstung und den mit ihr gekoppelten Systemen.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herangezogene_artikel_ids": [
+            "A-0043",
+            "A-0044",
+            "A-0045"
+          ],
+          "herleitung": {
+            "praemissen": [
+              "A-0043/P31",
+              "A-0044/P29",
+              "A-0045/P25",
+              "Modellblöcke von A-0043, A-0044 und A-0045 ohne entfallene Kategorien"
+            ],
+            "schluss": "Alle Kindartikel teilen dieselben dreizehn Hauptsysteme; sie bilden den gemeinsamen Grundblock."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P5",
+          "text": "In der Bezugsbauweise jedes Kindartikels wandelt ein Dieselmotor als Verbrennungsmotor des Antriebssystems den Kraftstoff, den das Energieversorgungssystem aus dem Kraftstofftank fördert, in mechanische Leistung, die sich auf Fahren und Arbeiten verzweigt. Ein Teil fließt über Kraftübertragung oder Fahrantrieb an Achsen oder Laufwerk von Fahrzeugstruktur und Fahrwerk, ein anderer an Abtriebe für die Arbeit: beim Traktor an Zapfwelle und Hydraulikpumpe, beim Mähdrescher an Arbeitsantrieb und Nebenaggregatetrieb, bei der Forstmaschine an einen Nebenaggregatetrieb mit Fahrpumpe und Arbeitshydraulikpumpe. Das Fahrzeugmanagement stimmt Fahr- und Arbeitsleistung ab. Generator und Starterbatterie speisen in allen Kindartikeln das Niedervolt-Bordnetz von Elektrik und Elektronik.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herangezogene_artikel_ids": [
+            "A-0043",
+            "A-0044",
+            "A-0045"
+          ],
+          "herleitung": {
+            "praemissen": [
+              "A-0043/P5",
+              "A-0043/P6",
+              "A-0043/P9",
+              "A-0044/P8",
+              "A-0044/P10",
+              "A-0044/P21",
+              "A-0044/P28",
+              "A-0045/P5",
+              "A-0045/P6",
+              "A-0045/P7",
+              "A-0045/P16",
+              "A-0045/P24"
+            ],
+            "schluss": "Der dieselmotorische Leistungspfad mit Verzweigung auf Fahrantrieb und Arbeitsabtriebe und das Niedervolt-Bordnetz aus Generator und Starterbatterie sind allen Kindartikeln gemeinsam."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P6",
+          "text": "Die Neben- und Versorgungssysteme enthalten in allen Kindartikeln eine Hydraulikversorgung aus Pumpe, Tank und Ventilen, die die Arbeitsausrüstung betätigt. Neben der mechanischen Leistung ist die Hydraulik damit die zweite gemeinsame Leistungsschiene der Arbeitsmaschinen.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herangezogene_artikel_ids": [
+            "A-0043",
+            "A-0044",
+            "A-0045"
+          ],
+          "herleitung": {
+            "praemissen": [
+              "A-0043/P29",
+              "A-0044/P28",
+              "A-0045/P23",
+              "A-0045/P24"
+            ],
+            "schluss": "Eine zentrale Hydraulikversorgung für die Arbeitsausrüstung gehört zum gemeinsamen Grundmodell."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P18",
+          "text": "Aus derselben Hydraulikversorgung erhält auch das Lenksystem Drucköl: beim Traktor über ein Vorrangventil zur Lenkunterstützung, beim Mähdrescher über die Lenkhydraulik ohne mechanische Durchverbindung zur Lenkachse, bei der Forstmaschine nach der dort getroffenen Annahme über ein Lenkventil zu den Lenkzylindern. Bei der Forstmaschine bezieht nach derselben Annahme auch das Bremssystem sein Drucköl daraus. Beim Traktor versorgt die Hydraulikanlage bei hydraulischer Anhängerbremse die Anhängerbremsanlage. Das Grundmodell übernimmt diese Lenk- und Bremsversorgung deshalb nur als Annahme.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herangezogene_artikel_ids": [
+            "A-0043",
+            "A-0044",
+            "A-0045"
+          ],
+          "herleitung": {
+            "praemissen": [
+              "A-0043/P12",
+              "A-0043/P14",
+              "A-0043/P36",
+              "Variante V6 in A-0043",
+              "A-0044/P11",
+              "A-0045/P9",
+              "A-0045/P24",
+              "A-0045/P30"
+            ],
+            "schluss": "Die Lenkversorgung aus der Hydraulik ist in allen Kindartikeln beschrieben, bei der Forstmaschine und für das Vorrangventil des Traktors aber nur angenommen; die Hydraulik versorgt die Bremse bei der Forstmaschine nach Annahme als Betriebs- und Feststellbremse, beim Traktor als Anhängerbremsanlage."
+          },
+          "sicherheit": "gering",
+          "aussagetyp": "loesung"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Gemeinsame Bedien-, Steuer- und Schutzsysteme",
+      "abschnittstyp": "querschnitt",
+      "absaetze": [
+        {
+          "absatz_id": "P7",
+          "text": "Das Fahrerhaus ist in allen Kindartikeln eine geschlossene, klimatisierte Kabine, die den Fahrer vor Staub, Lärm, Vibration oder Hitze schützt. Fahrhebel, Joysticks und Multifunktionshebel steuern Fahren und Arbeiten zugleich und wirken über den Fahrzeugbus auf die Steuergeräte. Die Fahrzeugsteuerung und Information koordiniert im Fahrzeugmanagement Motor, Fahrantrieb und Arbeitsleistung und bestimmt mit der Navigation die Position. Traktor und Mähdrescher nutzen sie für die automatische Spurführung, alle drei für die Dokumentation der Arbeit, etwa als Applikationskarte, Ertragsmessung oder Holzliste, die eine Telematikeinheit an den Betrieb übertragen kann.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herangezogene_artikel_ids": [
+            "A-0043",
+            "A-0044",
+            "A-0045"
+          ],
+          "herleitung": {
+            "praemissen": [
+              "A-0043/P15",
+              "A-0043/P16",
+              "A-0043/P21",
+              "A-0043/P22",
+              "A-0043/P23",
+              "A-0044/P13",
+              "A-0044/P14",
+              "A-0044/P21",
+              "A-0044/P22",
+              "A-0044/P34",
+              "A-0045/P10",
+              "A-0045/P11",
+              "A-0045/P14",
+              "A-0045/P15",
+              "A-0045/P16"
+            ],
+            "schluss": "Kabine, busgestützte Bedienung, Fahrzeugmanagement, Navigation und Arbeitsdokumentation sind allen Kindartikeln gemeinsam; die automatische Spurführung beschreiben nur Traktor und Mähdrescher."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P8",
+          "text": "Das Thermomanagement kühlt in allen Kindartikeln neben dem Motor auch Getriebe- oder Hydrauliköl und klimatisiert die Kabine. Staub, Spreu, Laub und Späne setzen die Kühler zu; ein umsteuerbarer Lüfter oder eine andere Kühlerreinhaltung ist deshalb in allen Kindartikeln beschrieben oder empfohlen. Beleuchtung und Sicht ergänzen Scheinwerfer und Leuchten für die Straßenfahrt um Arbeitsscheinwerfer für die Nachtarbeit. Fahrerassistenz und Sicherheit schützt den Fahrer bei Traktor und Forstmaschine mit Schutzaufbauten wie dem Überschlagschutz; der Sicherheitsgurt gehört in allen Kindartikeln zum Fahrerhaus. Mähdrescher und Forstmaschine führen zusätzlich eine Brandschutz- oder Feuerlöscheinrichtung.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herangezogene_artikel_ids": [
+            "A-0043",
+            "A-0044",
+            "A-0045"
+          ],
+          "herleitung": {
+            "praemissen": [
+              "A-0043/P23",
+              "A-0043/P24",
+              "A-0043/P26",
+              "A-0043/P27",
+              "A-0043/P28",
+              "A-0044/P14",
+              "A-0044/P24",
+              "A-0044/P25",
+              "A-0044/P26",
+              "A-0044/P27",
+              "A-0045/P18",
+              "A-0045/P19",
+              "A-0045/P20",
+              "A-0045/P22",
+              "A-0045/P31",
+              "A-0043/P16",
+              "A-0045/P11"
+            ],
+            "schluss": "Ölkühlung mit Kühlerreinhaltung, Arbeitsbeleuchtung und Fahrerschutz sind gemeinsam; der Sicherheitsgurt liegt im Fahrerhaus, Schutzaufbauten und Brandschutz unterscheiden sich je Kindartikel."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Unterscheidungsmerkmal Arbeitsausrüstung und Leistungsabgabe",
+      "abschnittstyp": "variante",
+      "absaetze": [
+        {
+          "absatz_id": "P9",
+          "text": "Das prägende Unterscheidungsmerkmal ist die Arbeitsausrüstung. Der Traktor arbeitet mit auswechselbaren Anbaugeräten und Anhängern: Dreipunkt-Kraftheber, Anhängevorrichtung und Frontlader bilden die Koppelpunkte an Heck- und Frontanbauraum, Zapfwelle, Hydraulikkupplungen und ein genormter Anbaugerätebus führen Leistung und Daten nach außen. Der Mähdrescher trägt eine fest verbaute Verarbeitungskette aus Erntevorsatz, Schrägförderer, Dreschwerk, Abscheidung, Reinigung und Korntank, durch die das Erntegut als Stoffstrom läuft; gewechselt wird nur der Erntevorsatz. Die Forstmaschine arbeitet mit einem Kran, an dem je nach Maschinentyp das Harvesteraggregat oder ein Holzgreifer sitzt, dazu beim Forwarder ein Laderaum und beim Skidder Klemmbank oder Seilwinde.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herangezogene_artikel_ids": [
+            "A-0043",
+            "A-0044",
+            "A-0045"
+          ],
+          "herleitung": {
+            "praemissen": [
+              "A-0043/P17",
+              "A-0043/P18",
+              "A-0043/P19",
+              "A-0043/P29",
+              "A-0044/P15",
+              "A-0044/P16",
+              "A-0044/P17",
+              "A-0044/P18",
+              "A-0045/P12",
+              "A-0045/P13"
+            ],
+            "schluss": "Die Arbeitsausrüstung unterscheidet die Kindartikel grundlegend: Koppelpunkte für externe Geräte, fest verbaute Verarbeitungskette oder Kran mit wechselbarem Werkzeug."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "variante"
+        },
+        {
+          "absatz_id": "P10",
+          "text": "Nur der Traktor braucht in den Neben- und Versorgungssystemen eine Zapfwelle und eine Druckluftanlage für Anhängerbremsen und in Elektrik und Elektronik einen Anbaugerätebus mit Gateway. In der Fahrzeugsteuerung und Information setzt beim Traktor eine Auftragssteuerung Applikationskarten in Sollwerte für das Anbaugerät um, beim Mähdrescher koppelt die Durchsatzregelung Arbeitsausrüstung und Fahrantrieb, bei der Forstmaschine berechnet eine Aufarbeitungssteuerung die Ablängschnitte. Die Lasten der Arbeitsausrüstung bestimmen jeweils die Achslastverteilung: Gerätekombination und Ballastierung beim Traktor, der wechselnde Füllstand des Korntanks beim Mähdrescher, Kran und Zuladung bei der Forstmaschine.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herangezogene_artikel_ids": [
+            "A-0043",
+            "A-0044",
+            "A-0045"
+          ],
+          "herleitung": {
+            "praemissen": [
+              "P9",
+              "A-0043/P14",
+              "A-0043/P18",
+              "A-0043/P20",
+              "A-0043/P22",
+              "A-0043/P30",
+              "A-0044/P4",
+              "A-0044/P21",
+              "A-0045/P13",
+              "A-0045/P16"
+            ],
+            "schluss": "Die Art der Arbeitsausrüstung bestimmt Abtriebe, Busschnittstellen, Steuerungsfunktionen und Achslasten in anderen Hauptsystemen."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "variante"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Unterscheidungsmerkmal Lenkung und Laufwerk",
+      "abschnittstyp": "variante",
+      "absaetze": [
+        {
+          "absatz_id": "P11",
+          "text": "Der Standardschlepper lenkt mit Achsschenkellenkung an der Vorderachse und überträgt die Zugkraft über die große Hinterachse; Knicklenkung ist beim Traktor eine Variante vor allem für Forst- und Großtraktoren. Der Mähdrescher ist ein Hecklenker: Die Vorderachse unter Erntevorsatz und Kabine ist Haupttrag- und Antriebsachse, gelenkt wird über die hintere Lenkachse. Harvester und Forwarder lenken über die Knicklenkung zwischen Vorder- und Hinterwagen und laufen auf pendelnden Bogie-Achsen. Als Alternative zum Radfahrwerk nennen alle drei Kindartikel ein Raupen- oder Gleiskettenlaufwerk; beim Raupenschlepper und beim Raupenharvester lenkt dann die Kettengeschwindigkeit, beim Mähdrescher mit vorderem Raupenlaufwerk bleibt die Hecklenkung erhalten.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herangezogene_artikel_ids": [
+            "A-0043",
+            "A-0044",
+            "A-0045"
+          ],
+          "herleitung": {
+            "praemissen": [
+              "A-0043/P3",
+              "A-0043/P4",
+              "A-0043/P11",
+              "A-0044/P3",
+              "A-0044/P4",
+              "A-0044/P11",
+              "A-0045/P3",
+              "A-0045/P4",
+              "A-0045/P8"
+            ],
+            "schluss": "Achsschenkel-, Heck- und Knicklenkung sowie Rad- oder Raupenlaufwerk sind die Lösungen der Kindartikel; die Kettenlenkung tritt bei Traktor und Forstmaschine auf."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "variante"
+        },
+        {
+          "absatz_id": "P12",
+          "text": "Die Lenkungsbauart greift in die Fahrzeugstruktur ein: Die Knicklenkung teilt die Tragstruktur, und die Gelenkwelle muss das Knickgelenk überbrücken; das Raupenfahrwerk der Forstmaschine ersetzt das Knickgelenk durch einen drehbaren Oberwagen mit Kran und Kabine. Für Hanglagen haben die Kindartikel eigene Lösungen. Der Mähdrescher hält Dreschorgane und Korntank mit dem Hangausgleich waagerecht, die Forstmaschine neigt die Kabine oder nivelliert die ganze Maschine und kann eine Traktionsseilwinde nutzen; der Traktor-Artikel beschreibt keinen Hangausgleich.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herangezogene_artikel_ids": [
+            "A-0043",
+            "A-0044",
+            "A-0045"
+          ],
+          "herleitung": {
+            "praemissen": [
+              "A-0043/P12",
+              "A-0045/P4",
+              "A-0045/P10",
+              "A-0045/P34",
+              "A-0044/P5",
+              "Variante V3 in A-0043",
+              "Variante V2 in A-0045"
+            ],
+            "schluss": "Lenkungs- und Laufwerkswahl ändern Tragstruktur und Kraftübertragung; der Hangausgleich ist eine kindartikelspezifische Ergänzung."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "variante"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Unterscheidungsmerkmal Fahrantrieb und Antriebsart",
+      "abschnittstyp": "variante",
+      "absaetze": [
+        {
+          "absatz_id": "P13",
+          "text": "Beim Fahrantrieb überträgt der Traktor die Leistung mechanisch über Fahrkupplung und ein Stufen- oder Lastschaltgetriebe oder ein hydromechanisch leistungsverzweigtes stufenloses Getriebe zum Differenzial. Der Mähdrescher braucht eine stufenlos verstellbare Fahrgeschwindigkeit und nutzt ein hydrostatisches oder ein Variatorgetriebe. Harvester und Forwarder fahren hydrostatisch mit Fahrpumpe und hydraulischem Fahrmotor, beim Skidder ist auch ein mechanischer Fahrantrieb mit Drehmomentwandler denkbar. Ein hydrostatischer Fahrantrieb verzögert schon beim Zurücknehmen von Fahrhebel oder Fahrpumpe und bringt Verlustwärme ins Öl; beim Variator des Mähdreschers und beim mechanischen Fahrantrieb des Skidders trägt dagegen die Betriebsbremse den gesamten Verzögerungsbedarf, und der Ölkühler des Fahrantriebs entfällt.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herangezogene_artikel_ids": [
+            "A-0043",
+            "A-0044",
+            "A-0045"
+          ],
+          "herleitung": {
+            "praemissen": [
+              "A-0043/P5",
+              "A-0043/P6",
+              "A-0044/P7",
+              "A-0044/P8",
+              "A-0044/P12",
+              "A-0044/P27",
+              "A-0045/P6",
+              "A-0045/P9",
+              "Variante V6 in A-0044",
+              "Variante V6 in A-0045"
+            ],
+            "schluss": "Mechanische, hydrostatische und Variator-Fahrantriebe sind die Alternativen; die Wahl wirkt auf Bremssystem und Thermomanagement."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "variante"
+        },
+        {
+          "absatz_id": "P14",
+          "text": "Bei der Antriebsart beschreibt der Traktor-Artikel beschreibt dieselmechanische, diesel-elektrische, hybridelektrische, batterieelektrische und brennstoffzellenelektrische Antriebe, der Forstmaschinen-Artikel neben dem Dieselantrieb einen Parallelhybrid und einen seriellen Hybrid, der Mähdrescher-Artikel nur den dieselmotorischen Antrieb. Jede Elektrifizierung ergänzt im Antriebssystem eine Traktionsmaschine mit Wechselrichter, im Energieversorgungssystem eine Hochvoltebene mit Traktionsbatterie oder mit Wasserstofftank und Brennstoffzellensystem, im Thermomanagement eine Batterietemperierung und in der Fahrzeugsteuerung und Information ein Energiemanagement.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herangezogene_artikel_ids": [
+            "A-0043",
+            "A-0044",
+            "A-0045"
+          ],
+          "herleitung": {
+            "praemissen": [
+              "Betrachtungsumfang von A-0043, A-0044 und A-0045",
+              "A-0043/P7",
+              "A-0043/P8",
+              "A-0043/P9",
+              "A-0043/P28",
+              "A-0044/P10",
+              "A-0045/P7",
+              "A-0045/P22",
+              "A-0045/P29",
+              "Variante V1 in A-0043",
+              "Variante V1 in A-0045"
+            ],
+            "schluss": "Die Antriebsart ist eine gemeinsame Variationsachse mit gleichen Folgen für Energieversorgung, Thermomanagement und Steuerung; ihr Umfang ist je Kindartikel verschieden."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "variante"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Zusammenfassung",
+      "abschnittstyp": "gesamtsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P15",
+          "text": "Arbeitsmaschinen der Land- und Forstwirtschaft teilen ein Grundmodell aus dreizehn Hauptsystemen mit dieselmotorischem Leistungspfad, der sich auf Fahren und Arbeiten verzweigt, einer zentralen Hydraulikversorgung, einer geschlossenen Kabine und einem Fahrzeugmanagement, das beide Leistungsanteile abstimmt. Die Fahrzeugarten unterscheiden sich in der Arbeitsausrüstung, in Lenkung und Laufwerk, in der Bauart des Fahrantriebs und in der Antriebsart. Prägend ist die Arbeitsausrüstung, weil sie Abtriebe, Hydraulikbedarf, Achslasten und Steuerungsfunktionen der übrigen Hauptsysteme bestimmt.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herangezogene_artikel_ids": [
+            "A-0043",
+            "A-0044",
+            "A-0045"
+          ],
+          "herleitung": {
+            "praemissen": [
+              "P4",
+              "P5",
+              "P6",
+              "P7",
+              "P9",
+              "P10",
+              "P11",
+              "P13",
+              "P14"
+            ],
+            "schluss": "Das Taxon besteht aus einem gemeinsamen Grundmodell und vier Unterscheidungsmerkmalen, von denen die Arbeitsausrüstung die übrigen Hauptsysteme am stärksten prägt."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "funktion"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Modellierungsbezug",
+      "abschnittstyp": "modellierung",
+      "absaetze": [
+        {
+          "absatz_id": "P16",
+          "text": "In SysML bildet ein abstrakter Block Arbeitsmaschine den gemeinsamen Grundblock mit den dreizehn Hauptsystemen als Teilen. Traktor, Mähdrescher und Forstmaschine sind Spezialisierungen, die vor allem die Arbeitsausrüstung redefinieren: als Koppelpunkte für externe Anbaugeräte, als Verarbeitungskette mit Stoffport für das Erntegut oder als Kran mit wechselbarem Werkzeug. Die Forstmaschine spezialisiert ihren Basisfahrzeugblock weiter zu Harvester, Forwarder und Skidder. Fahrantrieb und Lenksystem erhalten in den Spezialisierungen ihre Bauart; ein optionales Hochvolt-Energiesystem bildet die Elektrifizierung ab.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herangezogene_artikel_ids": [
+            "A-0043",
+            "A-0044",
+            "A-0045"
+          ],
+          "herleitung": {
+            "praemissen": [
+              "P4",
+              "P9",
+              "P11",
+              "P13",
+              "P14",
+              "A-0043/P32",
+              "A-0044/P30",
+              "A-0045/P26"
+            ],
+            "schluss": "Ein abstrakter Grundblock mit Spezialisierung je Kindartikel und Redefinition der Arbeitsausrüstung bildet Gemeinsamkeiten ohne Doppelungen ab."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "modellannahme"
+        },
+        {
+          "absatz_id": "P17",
+          "text": "Wiederverwendbare Teilmodelle sind der Primärantrieb aus Verbrennungsmotor, Abgasnachbehandlung und Abtrieben zu Pumpen und Generator, die Hydraulikversorgung mit Pumpe, Tank, Steuerventilblock und Anschluss der Lenkung, die Kabine mit Sicherheitsgurt, die Schutzaufbauten unter Fahrerassistenz und Sicherheit bei Traktor und Forstmaschine, das Niedervolt-Bordnetz mit Fahrzeugbus sowie der Kühlkreislauf mit Kühlerreinhaltung. Ports bilden mechanische Abtriebe, Hydraulikanschlüsse, Busanschlüsse und bei Mähdrescher und Forstmaschine einen Stoffport für Erntegut oder Holz ab. Blockdefinitionsdiagramme zeigen die Spezialisierung, interne Blockdiagramme die Leistungsverzweigung und Aktivitätsdiagramme die Arbeitszyklen.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herangezogene_artikel_ids": [
+            "A-0043",
+            "A-0044",
+            "A-0045"
+          ],
+          "herleitung": {
+            "praemissen": [
+              "P5",
+              "P6",
+              "P18",
+              "P7",
+              "P8",
+              "A-0043/P32",
+              "A-0044/P30",
+              "A-0045/P26"
+            ],
+            "schluss": "Die gemeinsamen Baugruppen lassen sich einmal modellieren und in allen Spezialisierungen wiederverwenden."
+          },
+          "sicherheit": "gering",
+          "aussagetyp": "modellannahme"
+        }
+      ]
+    }
+  ],
+  "modell": {
+    "elemente": [
+      {
+        "id": "E1",
+        "name": "Arbeitsmaschine",
+        "typ": "gesamtsystem",
+        "eltern_id": null,
+        "absatz_ids": [
+          "P3",
+          "P15",
+          "P16"
+        ]
+      },
+      {
+        "id": "E2",
+        "name": "Fahrzeugstruktur und Fahrwerk",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P5",
+          "P10",
+          "P11",
+          "P12"
+        ],
+        "kategorie": "struktur_fahrwerk"
+      },
+      {
+        "id": "E3",
+        "name": "Antriebssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P5",
+          "P13",
+          "P14"
+        ],
+        "kategorie": "antrieb"
+      },
+      {
+        "id": "E4",
+        "name": "Energieversorgungssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P5",
+          "P14"
+        ],
+        "kategorie": "energieversorgung"
+      },
+      {
+        "id": "E5",
+        "name": "Lenksystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P18",
+          "P11",
+          "P16"
+        ],
+        "kategorie": "lenkung"
+      },
+      {
+        "id": "E6",
+        "name": "Bremssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P18",
+          "P13"
+        ],
+        "kategorie": "bremse"
+      },
+      {
+        "id": "E7",
+        "name": "Fahrerhaus",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P7",
+          "P8"
+        ],
+        "kategorie": "bedienraum"
+      },
+      {
+        "id": "E8",
+        "name": "Arbeitsausrüstung",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P3",
+          "P4",
+          "P6",
+          "P9",
+          "P10",
+          "P15",
+          "P16"
+        ],
+        "kategorie": "aufbau_nutzlast"
+      },
+      {
+        "id": "E9",
+        "name": "Elektrik und Elektronik",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P5",
+          "P7",
+          "P10"
+        ],
+        "kategorie": "elektrik_elektronik"
+      },
+      {
+        "id": "E10",
+        "name": "Fahrzeugsteuerung und Information",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P7",
+          "P10",
+          "P14"
+        ],
+        "kategorie": "steuerung_information"
+      },
+      {
+        "id": "E11",
+        "name": "Fahrerassistenz und Sicherheit",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P8"
+        ],
+        "kategorie": "assistenz_sicherheit"
+      },
+      {
+        "id": "E12",
+        "name": "Beleuchtung und Sicht",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P8"
+        ],
+        "kategorie": "beleuchtung_sicht"
+      },
+      {
+        "id": "E13",
+        "name": "Thermomanagement",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P8",
+          "P14"
+        ],
+        "kategorie": "thermomanagement"
+      },
+      {
+        "id": "E14",
+        "name": "Neben- und Versorgungssysteme",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P6",
+          "P10"
+        ],
+        "kategorie": "nebensysteme"
+      }
+    ],
+    "funktionen": [
+      {
+        "id": "F1",
+        "name": "Fahrzeuglasten tragen",
+        "ausgefuehrt_von": [
+          "E2"
+        ],
+        "absatz_ids": [
+          "P10"
+        ]
+      },
+      {
+        "id": "F2",
+        "name": "Fahrzeug fortbewegen",
+        "ausgefuehrt_von": [
+          "E2",
+          "E3"
+        ],
+        "absatz_ids": [
+          "P5",
+          "P11"
+        ]
+      },
+      {
+        "id": "F3",
+        "name": "Antriebsleistung erzeugen",
+        "ausgefuehrt_von": [
+          "E3"
+        ],
+        "absatz_ids": [
+          "P5",
+          "P14"
+        ]
+      },
+      {
+        "id": "F4",
+        "name": "Drehmoment übertragen",
+        "ausgefuehrt_von": [
+          "E3"
+        ],
+        "absatz_ids": [
+          "P5",
+          "P13"
+        ]
+      },
+      {
+        "id": "F5",
+        "name": "Energie speichern",
+        "ausgefuehrt_von": [
+          "E4"
+        ],
+        "absatz_ids": [
+          "P5",
+          "P14"
+        ]
+      },
+      {
+        "id": "F6",
+        "name": "Treibstoff fördern",
+        "ausgefuehrt_von": [
+          "E4"
+        ],
+        "absatz_ids": [
+          "P5"
+        ]
+      },
+      {
+        "id": "F7",
+        "name": "Fahrzeug lenken",
+        "ausgefuehrt_von": [
+          "E5"
+        ],
+        "absatz_ids": [
+          "P18",
+          "P11"
+        ]
+      },
+      {
+        "id": "F8",
+        "name": "Fahrzeug verzögern",
+        "ausgefuehrt_von": [
+          "E6",
+          "E3"
+        ],
+        "absatz_ids": [
+          "P13"
+        ]
+      },
+      {
+        "id": "F9",
+        "name": "Fahrereingaben erfassen",
+        "ausgefuehrt_von": [
+          "E7"
+        ],
+        "absatz_ids": [
+          "P7"
+        ]
+      },
+      {
+        "id": "F10",
+        "name": "Insassen schützen",
+        "ausgefuehrt_von": [
+          "E7",
+          "E11"
+        ],
+        "absatz_ids": [
+          "P7",
+          "P8"
+        ]
+      },
+      {
+        "id": "F11",
+        "name": "Objekte handhaben",
+        "ausgefuehrt_von": [
+          "E8"
+        ],
+        "absatz_ids": [
+          "P9"
+        ]
+      },
+      {
+        "id": "F12",
+        "name": "Ladung aufnehmen",
+        "ausgefuehrt_von": [
+          "E8"
+        ],
+        "absatz_ids": [
+          "P9"
+        ]
+      },
+      {
+        "id": "F13",
+        "name": "Anhänger ziehen",
+        "ausgefuehrt_von": [
+          "E8"
+        ],
+        "absatz_ids": [
+          "P9"
+        ]
+      },
+      {
+        "id": "F14",
+        "name": "Arbeitsgeräte versorgen",
+        "ausgefuehrt_von": [
+          "E14",
+          "E3"
+        ],
+        "absatz_ids": [
+          "P5",
+          "P9"
+        ]
+      },
+      {
+        "id": "F15",
+        "name": "Hydraulische Leistung bereitstellen",
+        "ausgefuehrt_von": [
+          "E14"
+        ],
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "F16",
+        "name": "Druckluft bereitstellen",
+        "ausgefuehrt_von": [
+          "E14"
+        ],
+        "absatz_ids": [
+          "P10"
+        ]
+      },
+      {
+        "id": "F17",
+        "name": "Elektrische Energie verteilen",
+        "ausgefuehrt_von": [
+          "E9"
+        ],
+        "absatz_ids": [
+          "P5"
+        ]
+      },
+      {
+        "id": "F18",
+        "name": "Daten übertragen",
+        "ausgefuehrt_von": [
+          "E9",
+          "E10"
+        ],
+        "absatz_ids": [
+          "P7",
+          "P9"
+        ]
+      },
+      {
+        "id": "F19",
+        "name": "Fahrzeugposition bestimmen",
+        "ausgefuehrt_von": [
+          "E10"
+        ],
+        "absatz_ids": [
+          "P7"
+        ]
+      },
+      {
+        "id": "F20",
+        "name": "Fahrzeugzustand überwachen",
+        "ausgefuehrt_von": [
+          "E10",
+          "E11"
+        ],
+        "absatz_ids": [
+          "P7",
+          "P8"
+        ]
+      },
+      {
+        "id": "F21",
+        "name": "Fahrzeugumgebung ausleuchten",
+        "ausgefuehrt_von": [
+          "E12"
+        ],
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "F22",
+        "name": "Betriebstemperatur regeln",
+        "ausgefuehrt_von": [
+          "E13"
+        ],
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "F23",
+        "name": "Innenraum klimatisieren",
+        "ausgefuehrt_von": [
+          "E13"
+        ],
+        "absatz_ids": [
+          "P7",
+          "P8"
+        ]
+      }
+    ],
+    "fluesse": [
+      {
+        "id": "S1",
+        "von": "E4",
+        "nach": "E3",
+        "art": "stoff",
+        "medium": "Dieselkraftstoff",
+        "absatz_ids": [
+          "P5"
+        ],
+        "schnittstelle": "Kraftstoffzufuhr zum Verbrennungsmotor"
+      },
+      {
+        "id": "S2",
+        "von": "E3",
+        "nach": "E2",
+        "art": "mechanisch",
+        "medium": "Antriebsleistung an Achsen oder Laufwerk",
+        "absatz_ids": [
+          "P5",
+          "P13"
+        ],
+        "schnittstelle": "Achs- oder Laufwerksantrieb"
+      },
+      {
+        "id": "S3",
+        "von": "E3",
+        "nach": "E14",
+        "art": "mechanisch",
+        "medium": "Antriebsleistung für Pumpen und Zapfwelle",
+        "absatz_ids": [
+          "P5"
+        ],
+        "schnittstelle": "Pumpen- und Nebenabtrieb"
+      },
+      {
+        "id": "S4",
+        "von": "E14",
+        "nach": "E8",
+        "art": "hydraulisch",
+        "medium": "Drucköl",
+        "absatz_ids": [
+          "P6",
+          "P9"
+        ],
+        "schnittstelle": "Hydraulikanschlüsse der Arbeitsausrüstung"
+      },
+      {
+        "id": "S5",
+        "von": "E14",
+        "nach": "E5",
+        "art": "hydraulisch",
+        "medium": "Drucköl für die Lenkung",
+        "absatz_ids": [
+          "P18"
+        ],
+        "schnittstelle": "Lenkhydraulikversorgung"
+      },
+      {
+        "id": "S6",
+        "von": "E4",
+        "nach": "E9",
+        "art": "elektrisch",
+        "medium": "Bordenergie aus Generator und Starterbatterie",
+        "absatz_ids": [
+          "P5"
+        ],
+        "schnittstelle": "Einspeisung Niedervolt-Bordnetz"
+      },
+      {
+        "id": "S7",
+        "von": "E7",
+        "nach": "E10",
+        "art": "information",
+        "medium": "Bedienbefehle",
+        "absatz_ids": [
+          "P7"
+        ],
+        "schnittstelle": "Fahrzeugbus"
+      },
+      {
+        "id": "S8",
+        "von": "E10",
+        "nach": "E3",
+        "art": "information",
+        "medium": "Sollwerte des Fahrzeugmanagements",
+        "absatz_ids": [
+          "P5",
+          "P7"
+        ],
+        "schnittstelle": "Fahrzeugbus"
+      },
+      {
+        "id": "S9",
+        "von": "E3",
+        "nach": "E13",
+        "art": "thermisch",
+        "medium": "Motor- und Ölwärme",
+        "absatz_ids": [
+          "P8",
+          "P13"
+        ],
+        "schnittstelle": "Kühlkreislauf"
+      },
+      {
+        "id": "S10",
+        "von": "E13",
+        "nach": "E7",
+        "art": "thermisch",
+        "medium": "klimatisierte Luft",
+        "absatz_ids": [
+          "P7",
+          "P8"
+        ],
+        "schnittstelle": "Kabinenluftführung"
+      }
+    ],
+    "entfallene_kategorien": [],
+    "varianten": [
+      {
+        "id": "V1",
+        "element_id": "E8",
+        "bezeichnung": "Art der Arbeitsausrüstung und Leistungsabgabe",
+        "alternativen": [
+          "Koppelpunkte für auswechselbare Anbaugeräte und Anhänger mit Zapfwelle, Hydraulikkupplungen und Anbaugerätebus",
+          "fest verbaute Verarbeitungskette mit wechselbarem Erntevorsatz und Stoffstrom bis zum Korntank",
+          "Kran mit wechselbarem Werkzeug, je nach Maschinentyp mit Harvesteraggregat, Laderaum, Klemmbank oder Seilwinde"
+        ],
+        "auswahlkriterien": [
+          "Arbeitsaufgabe: Geräte ziehen und antreiben (Traktor), Erntegut verarbeiten (Mähdrescher) oder Holz fällen, aufarbeiten und rücken (Forstmaschine)",
+          "Bedarf an Umrüstbarkeit für wechselnde Arbeiten",
+          "Leistungsbedarf der Arbeitsorgane",
+          "Achslasten und Gewichtsverteilung"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E14",
+            "beschreibung": "Zapfwelle und Druckluftanlage für Anhängerbremsen nur beim Traktor (A-0043); Hydraulikbedarf richtet sich nach den Werkzeugen."
+          },
+          {
+            "element_id": "E9",
+            "beschreibung": "Anbaugerätebus mit Gateway nur beim Traktor (A-0043)."
+          },
+          {
+            "element_id": "E10",
+            "beschreibung": "Auftragssteuerung (A-0043), Durchsatzregelung und Ertragsmessung (A-0044) oder Aufarbeitungssteuerung (A-0045)."
+          },
+          {
+            "element_id": "E2",
+            "beschreibung": "Achslastverteilung durch Ballastierung, Korntankfüllstand oder Kran und Zuladung."
+          }
+        ],
+        "absatz_ids": [
+          "P9",
+          "P10"
+        ]
+      },
+      {
+        "id": "V2",
+        "element_id": "E5",
+        "bezeichnung": "Lenkungsbauart",
+        "alternativen": [
+          "Achsschenkellenkung an der Vorderachse",
+          "Hecklenkung über die Lenkachse",
+          "Knicklenkung zwischen Vorder- und Hinterwagen",
+          "Lenkung über die Kettengeschwindigkeit"
+        ],
+        "auswahlkriterien": [
+          "Wendekreis und Spurtreue im Bestand",
+          "Lage der Haupttrag- und Antriebsachse: Hinterachse beim Traktor, Vorderachse beim Mähdrescher",
+          "Einsatz im Wald mit Bogie-Achsen (Forstmaschine)",
+          "Fahrwerksart"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E2",
+            "beschreibung": "Knicklenkung teilt die Tragstruktur in Vorder- und Hinterwagen (A-0043, A-0045)."
+          },
+          {
+            "element_id": "E3",
+            "beschreibung": "Gelenkwelle muss das Knickgelenk überbrücken; bei Kettenlenkung steuert der Fahrantrieb die Kettengeschwindigkeiten."
+          },
+          {
+            "element_id": "E6",
+            "beschreibung": "Bremse kann bei Kettenlenkung Lenkaufgaben übernehmen (A-0043)."
+          }
+        ],
+        "absatz_ids": [
+          "P11",
+          "P12"
+        ]
+      },
+      {
+        "id": "V3",
+        "element_id": "E3",
+        "bezeichnung": "Bauart des Fahrantriebs",
+        "alternativen": [
+          "mechanisch mit Stufen- oder Lastschaltgetriebe",
+          "hydromechanisch leistungsverzweigtes stufenloses Getriebe",
+          "hydrostatischer Fahrantrieb",
+          "Variatorgetriebe",
+          "mechanisch mit Drehmomentwandler"
+        ],
+        "auswahlkriterien": [
+          "stufenlose Anpassung der Fahrgeschwindigkeit an die Arbeit, nötig beim Mähdrescher",
+          "Zugkraftbedarf und Transportgeschwindigkeit, vor allem beim Traktor und Skidder",
+          "Wirkungsgrad und Wärmeeintrag",
+          "Bauraum"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E6",
+            "beschreibung": "Ohne hydrostatischen Fahrantrieb trägt die Betriebsbremse den gesamten Verzögerungsbedarf (A-0044, A-0045)."
+          },
+          {
+            "element_id": "E13",
+            "beschreibung": "Ölkühler für den hydrostatischen Fahrantrieb kommt hinzu oder entfällt."
+          },
+          {
+            "element_id": "E10",
+            "beschreibung": "Fahrzeugmanagement regelt Pumpe und Motoren oder koordiniert Motordrehzahl und Übersetzung."
+          }
+        ],
+        "absatz_ids": [
+          "P13"
+        ]
+      },
+      {
+        "id": "V4",
+        "element_id": "E3",
+        "bezeichnung": "Antriebsart",
+        "alternativen": [
+          "dieselmechanisch oder dieselhydrostatisch",
+          "diesel-elektrisch seriell",
+          "hybridelektrisch, auch als Parallelhybrid",
+          "batterieelektrisch",
+          "brennstoffzellenelektrisch"
+        ],
+        "auswahlkriterien": [
+          "Betrachtungsumfang: alle Alternativen beim Traktor, Diesel und Hybride bei der Forstmaschine, nur Diesel beim Mähdrescher",
+          "Einsatzdauer ohne Betanken oder Laden",
+          "Lastspitzen der Arbeitsausrüstung",
+          "Lade- oder Tankinfrastruktur am Einsatzort",
+          "Masse und Bauraum der Speicher"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E4",
+            "beschreibung": "Hochvoltebene mit Traktionsbatterie oder Wasserstofftank und Brennstoffzellensystem kommt hinzu."
+          },
+          {
+            "element_id": "E13",
+            "beschreibung": "Batterietemperierung wird erforderlich."
+          },
+          {
+            "element_id": "E10",
+            "beschreibung": "Fahrzeugmanagement erhält ein Energiemanagement."
+          }
+        ],
+        "absatz_ids": [
+          "P14"
+        ]
+      },
+      {
+        "id": "V5",
+        "element_id": "E2",
+        "bezeichnung": "Laufwerksart",
+        "alternativen": [
+          "Radfahrwerk",
+          "Raupen- oder Gleiskettenlaufwerk an einer Achse mit Rädern an der anderen",
+          "vollständiges Raupenfahrwerk"
+        ],
+        "auswahlkriterien": [
+          "Bodentragfähigkeit und Bodenschonung",
+          "Hangneigung im Einsatzgebiet",
+          "Anteil und Art des Umsetzens auf der Straße",
+          "Lenkungsbauart; Traktor, Mähdrescher und Forstmaschine nennen Raupenvarianten"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E5",
+            "beschreibung": "Beim vollständigen Raupenfahrwerk lenkt die Kettengeschwindigkeit (A-0043, A-0045), beim Mähdrescher bleibt die Hecklenkung (A-0044)."
+          },
+          {
+            "element_id": "E3",
+            "beschreibung": "Kraftübertragung treibt Kettenräder statt Räder."
+          },
+          {
+            "element_id": "E7",
+            "beschreibung": "Bei der Forstmaschine dreht die Kabine mit dem Oberwagen (A-0045)."
+          }
+        ],
+        "absatz_ids": [
+          "P11",
+          "P12"
+        ]
+      }
+    ],
+    "klaerungsfragen": [
+      {
+        "id": "K1",
+        "frage": "Soll die Arbeitsmaschine auswechselbare Geräte ziehen und antreiben, Erntegut in einer fest verbauten Verarbeitungskette verarbeiten oder Holz mit einem Kran fällen, aufarbeiten oder rücken?",
+        "element_ids": [
+          "E1",
+          "E8"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Die Antwort legt fest, ob der Grundblock als Traktor, Mähdrescher oder Forstmaschine spezialisiert wird.",
+        "variante_ids": [
+          "V1"
+        ]
+      },
+      {
+        "id": "K2",
+        "frage": "Soll die Maschine als land- oder forstwirtschaftliche Zugmaschine genehmigt oder als selbstfahrende Arbeitsmaschine in Verkehr gebracht werden?",
+        "element_ids": [
+          "E1"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen die anzuwendenden Genehmigungs- und Abgasvorschriften und damit Anforderungen an Bremse, Beleuchtung und Motor ab."
+      },
+      {
+        "id": "K8",
+        "frage": "Soll die Maschine auf öffentlichen Straßen selbst umsetzen, mit welcher bauartbedingten Höchstgeschwindigkeit, oder wird sie per Tieflader transportiert?",
+        "element_ids": [
+          "E1",
+          "E6",
+          "E8",
+          "E12"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Bremsauslegung, Straßenbeleuchtung, zulässige Breite und Klappbarkeit der Arbeitsausrüstung sowie die Wahl zwischen Rad- und Raupenlaufwerk ab.",
+        "variante_ids": [
+          "V5"
+        ]
+      },
+      {
+        "id": "K3",
+        "frage": "Wird enge Wendigkeit auf dem Feld, Spurtreue im Bestand oder Wenden auf der Stelle verlangt, sodass Achsschenkel-, Heck-, Knick- oder Kettenlenkung zu wählen ist?",
+        "element_ids": [
+          "E5",
+          "E2"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Die Lenkungsbauart bestimmt die Teilung der Tragstruktur und die Führung der Kraftübertragung.",
+        "variante_ids": [
+          "V2"
+        ]
+      },
+      {
+        "id": "K4",
+        "frage": "Muss die Fahrgeschwindigkeit während der Arbeit stufenlos an die Last angepasst werden, oder genügt ein mechanisches Getriebe mit Gangstufen?",
+        "element_ids": [
+          "E3"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Getriebebauart, Bremsauslegung und Ölkühlung ab.",
+        "variante_ids": [
+          "V3"
+        ]
+      },
+      {
+        "id": "K5",
+        "frage": "Welche Antriebsart soll die Maschine erhalten, und welche Lade- oder Tankinfrastruktur steht am Einsatzort zur Verfügung?",
+        "element_ids": [
+          "E3",
+          "E4"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Die Antwort entscheidet, ob Hochvoltebene, Batterietemperierung und Energiemanagement modelliert werden.",
+        "variante_ids": [
+          "V4"
+        ]
+      },
+      {
+        "id": "K6",
+        "frage": "Auf welchen Böden und in welchen Hangneigungen arbeitet die Maschine, sodass ein Rad- oder ein Raupenlaufwerk vorzusehen ist?",
+        "element_ids": [
+          "E2"
+        ],
+        "anlass": "betrieb",
+        "relevanz": "Die Laufwerkswahl ändert Lenksystem, Kraftübertragung und gegebenenfalls die Kabinenanordnung.",
+        "variante_ids": [
+          "V5"
+        ]
+      },
+      {
+        "id": "K7",
+        "frage": "Welche Geräte, Werkzeuge oder Vorsätze anderer Hersteller sollen über Hydraulik-, Leistungs- und Busschnittstellen angeschlossen werden?",
+        "element_ids": [
+          "E8",
+          "E9",
+          "E14"
+        ],
+        "anlass": "schnittstelle",
+        "relevanz": "Davon hängen Anzahl und Art der Ports zwischen Basisfahrzeug und Arbeitsausrüstung ab.",
+        "variante_ids": [
+          "V1"
+        ]
+      }
+    ],
+    "anforderungsthemen": [
+      {
+        "id": "R1",
+        "element_ids": [
+          "E1"
+        ],
+        "thema": "Fahrzeugeinordnung und Genehmigung",
+        "kenngroessen": [
+          "bauartbedingte Höchstgeschwindigkeit",
+          "Zweckbestimmung der fest verbundenen Einrichtungen",
+          "Fahrzeugklasse",
+          "Achszahl",
+          "im Straßenverkehr zulässige Nutzlast"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "Fahrzeug-Zulassungsverordnung, § 2 (Deutschland; land- oder forstwirtschaftliche Zugmaschinen und selbstfahrende Arbeitsmaschinen)",
+            "quellen_id": "Q1",
+            "fundstelle": "§ 2 Satz 1 Nummer 16 und 17, Satz 4"
+          },
+          {
+            "bezeichnung": "Verordnung (EU) Nr. 167/2013 (EU; Zugmaschinen der Klassen T und C, Anhänger und gezogene auswechselbare Geräte)",
+            "quellen_id": "Q2",
+            "fundstelle": "Artikel 2 Absatz 1; Artikel 3 Nummer 8"
+          }
+        ]
+      },
+      {
+        "id": "R2",
+        "element_ids": [
+          "E3"
+        ],
+        "thema": "Abgasemissionen und Außengeräusch des Verbrennungsmotors",
+        "kenngroessen": [
+          "Emissionsstufe",
+          "Motorkategorie",
+          "Nennleistung",
+          "Außengeräuschpegel"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "Verordnung (EU) 2016/1628 (EU; Verbrennungsmotoren in nicht für den Straßenverkehr bestimmten mobilen Maschinen, ohne Antriebsmotoren von Zugmaschinen nach Verordnung (EU) Nr. 167/2013)",
+            "quellen_id": "Q3",
+            "fundstelle": "Artikel 2 Absatz 1 und Absatz 2 Buchstabe b; Artikel 3 Nummer 1"
+          },
+          {
+            "bezeichnung": "Verordnung (EU) Nr. 167/2013, Artikel 19 (EU; Schadstoffemissionen und Außengeräusch von Zugmaschinen der Klassen T und C; verweist für Grenzwerte, Prüfverfahren und Anforderungen an die Schadstoffemissionen auf die Vorschriften für mobile Maschinen der Richtlinie 97/68/EG)",
+            "quellen_id": "Q5",
+            "fundstelle": "Artikel 19 Absatz 2 Buchstabe a und Absatz 3"
+          }
+        ]
+      },
+      {
+        "id": "R3",
+        "element_ids": [
+          "E14",
+          "E8"
+        ],
+        "thema": "Leistungsabgabe an die Arbeitsausrüstung",
+        "kenngroessen": [
+          "hydraulischer Förderstrom",
+          "Systemdruck",
+          "Abtriebsleistung",
+          "Abtriebsdrehzahl"
+        ]
+      },
+      {
+        "id": "R4",
+        "element_ids": [
+          "E7",
+          "E11"
+        ],
+        "thema": "Fahrerschutz und Arbeitsplatz",
+        "kenngroessen": [
+          "Schutzwirkung der Schutzaufbauten",
+          "Lärm am Fahrerplatz",
+          "Ganzkörpervibration",
+          "Sicht auf den Arbeitsbereich"
+        ]
+      }
+    ]
+  },
+  "offene_punkte": [
+    "Recherche: Fachliteratur zum gemeinsamen Aufbau mobiler land- und forstwirtschaftlicher Arbeitsmaschinen (Suchbegriffe: mobile Arbeitsmaschinen Antriebsstrang Leistungsverzweigung, Mobilhydraulik Landmaschinen, Lehrbuch Landtechnik) zur Belegung der aus den Kindartikeln hergeleiteten Absätze P4 bis P8.",
+    "Recherche: Einordnung von Forwardern, Skiddern und Forstspezialschleppern als forstwirtschaftliche Zugmaschine der Klassen T oder C oder als selbstfahrende Arbeitsmaschine (Verordnung (EU) Nr. 167/2013, Artikel 4 Fahrzeugklassen, konsolidierte Fassung auf EUR-Lex), zur Absicherung von P3.",
+    "Recherche: Abgrenzung der land- und forstwirtschaftlichen Arbeitsmaschinen von Baumaschinen (Suchbegriffe: Erdbaumaschinen Sicherheit EN 474, Baumaschine selbstfahrende Arbeitsmaschine Abgrenzung), um zu klären, ob Baumaschinen ein eigenes Elterntaxon erhalten.",
+    "Recherche: Anwendungsbereich der Maschinenverordnung (EU) 2023/1230 für selbstfahrende land- und forstwirtschaftliche Arbeitsmaschinen (Suchbegriff: Maschinenverordnung selbstfahrende Maschinen Land- und Forstwirtschaft), als mögliches gemeinsames Regelwerk für R4.",
+    "Vereinheitlichung Kindartikel: Die Hydraulikversorgung unter Neben- und Versorgungssysteme heißt im Traktor (A-0043) Hydraulikanlage, im Mähdrescher (A-0044) Hydraulikversorgung und in der Forstmaschine (A-0045) Arbeitshydraulik; für das wiederverwendbare Teilmodell bei der nächsten Revision einheitlich benennen.",
+    "Vereinheitlichung Kindartikel: Der Fahrantrieb ist im Traktor (A-0043) als Kraftübertragung, im Mähdrescher (A-0044) als Fahrantrieb und in der Forstmaschine (A-0045) als Hydrostatischer Fahrantrieb mit getrennter Kraftübertragung gegliedert; der Nebenaggregatetrieb fehlt im Traktor als Element. Für eine gemeinsame Spezialisierung des Antriebssystems angleichen."
+  ]
+}
