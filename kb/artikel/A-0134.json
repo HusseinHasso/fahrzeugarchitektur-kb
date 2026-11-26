@@ -1,0 +1,1551 @@
+{
+  "schema_version": "2.3",
+  "artikel_id": "A-0134",
+  "artikeltyp": "uebersicht",
+  "titel": "Triebfahrzeuge",
+  "betrachtungsumfang": "Übersicht über die Triebfahrzeuge der Vollbahn (angetriebene Regelfahrzeuge des Eisenbahnsystems) mit den Kindartikeln Lokomotive, Triebwagen und Hochgeschwindigkeitszug: gemeinsame Architektur, Unterscheidungsmerkmale und gemeinsames Grundmodell. Kleinlokomotiven, Antriebseinheiten ohne Führerraum, Triebköpfe als eigene Fahrzeugart, Dampf- und Zahnradtriebfahrzeuge, Straßen-, Stadt- und Untergrundbahnen sowie Nebenfahrzeuge mit Kraftantrieb nur zur Abgrenzung. Die Antriebsarten sind die der Kindartikel; Energiespeicher und Energiewandler je Antriebsart stehen dort.",
+  "status": "zu_pruefen",
+  "quellenzugriff": "ja",
+  "kindartikel_ids": [
+    "A-0027",
+    "A-0028",
+    "A-0029"
+  ],
+  "quellen": [
+    {
+      "quellen_id": "Q1",
+      "titel": "Verordnung (EU) Nr. 1302/2014 der Kommission vom 18. November 2014 über eine technische Spezifikation für die Interoperabilität des Teilsystems „Fahrzeuge — Lokomotiven und Personenwagen“ des Eisenbahnsystems in der Europäischen Union (TSI LOC&PAS), konsolidierter Text",
+      "urheber": "Europäische Kommission; Amt für Veröffentlichungen der Europäischen Union",
+      "stand": "Konsolidierte Fassung vom 28.09.2023",
+      "url": "https://publications.europa.eu/resource/celex/02014R1302-20230928",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q2",
+      "titel": "Eisenbahn-Bau- und Betriebsordnung (EBO), § 18 Einteilung, Begriffserklärungen (Textwiedergabe)",
+      "urheber": "Bundesrepublik Deutschland; Textwiedergabe LX Gesetze",
+      "stand": "zuletzt geändert am 22.7.2026",
+      "url": "https://lxgesetze.de/ebo/18",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q3",
+      "titel": "Eisenbahn-Bau- und Betriebsordnung (EBO), § 1 Geltungsbereich (Textwiedergabe)",
+      "urheber": "Bundesrepublik Deutschland; Textwiedergabe LX Gesetze",
+      "stand": "zuletzt geändert am 22.7.2026",
+      "url": "https://lxgesetze.de/ebo/1",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q4",
+      "titel": "Triebfahrzeug",
+      "urheber": "Wikipedia, die freie Enzyklopädie",
+      "stand": "Version oldid=271712504 (29. Oktober 2026)",
+      "url": "https://de.wikipedia.org/wiki/Triebfahrzeug",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q5",
+      "titel": "Alternative Antriebe im Schienenverkehr. Working Papers Sustainability and Innovation, No. S 01/2022",
+      "urheber": "Fabio Frank, Till Gnann; Fraunhofer-Institut für System- und Innovationsforschung ISI",
+      "stand": "Januar 2022",
+      "url": "https://www.isi.fraunhofer.de/content/dam/isi/dokumente/sustainability-innovation/2022/WP01-2022_Alternative_Antriebe_im_Schienenverkehr_Frank_Gnann.pdf",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "fachliteratur"
+    }
+  ],
+  "abschnitte": [
+    {
+      "ueberschrift": "Einleitung",
+      "abschnittstyp": "gesamtsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P1",
+          "text": "Ein Triebfahrzeug ist nach der Enzyklopädie ein angetriebenes Schienenfahrzeug, das sich selbst oder andere Fahrzeuge bewegt und dabei unmittelbar von einem führenden Fahrzeug aus bedient oder ferngesteuert wird; als Traktionsart dienen im Regelfall elektrische Energie, Diesel oder bei älteren Fahrzeugen Dampf. Die Eisenbahn-Bau- und Betriebsordnung (EBO), die in Deutschland für regelspurige Eisenbahnen gilt, unterscheidet die Regelfahrzeuge nach Triebfahrzeugen und Wagen und teilt die Triebfahrzeuge in Lokomotiven, Triebwagen und Kleinlokomotiven ein. Triebfahrzeuge werden danach unmittelbar bedient oder gesteuert; Steuerung ist die Regelung der Antriebs- und Bremskraft von einem führenden Fahrzeug aus, durch Fernsteuerung oder durch vollautomatisierte Systeme. Selbstfahrende Spezialfahrzeuge für bahnbetriebliche Aufgaben zählen in Deutschland nicht als Triebfahrzeuge, sondern als Nebenfahrzeuge mit Kraftantrieb.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q4",
+              "fundstelle": "Einleitungsabsatz; Abschnitt „Sonstige Triebfahrzeuge“"
+            },
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "§ 1 Abs. 1 Satz 1"
+            },
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "§ 18 Abs. 1 bis 4"
+            }
+          ],
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P2",
+          "text": "Die TSI LOC&PAS, Verordnung (EU) Nr. 1302/2014, für das Teilsystem Fahrzeuge des Eisenbahnsystems der Europäischen Union definiert die Lokomotive als Triebfahrzeug, das nicht für die Aufnahme einer Zuladung ausgelegt ist und im normalen Betrieb von einem Zug abgekuppelt und unabhängig betrieben werden kann. Ein angetriebenes Fahrzeug, dessen Entkupplung im normalen Betrieb nicht vorgesehen ist, heißt Antriebseinheit oder, wenn es an einem Ende des Triebzugs liegt und einen Führerstand hat, Triebkopf. Ein Triebzug ist ein nicht trennbarer Zugverband, dessen Konfiguration nur in einer Werkstatt geändert werden kann, aus angetriebenen oder aus angetriebenen und nicht angetriebenen Fahrzeugen; ein Triebwagen ist ein unabhängig betreibbares Einzelfahrzeug, das Fahrgäste, Gepäck, Post oder Fracht befördern kann. Rangierloks, vom übrigen Eisenbahnsystem funktionell getrennte Nahverkehrsfahrzeuge und Tram-train-Fahrzeuge fallen nicht unter diese TSI.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Anhang, Abschnitt 2.2.2 Buchstabe A Nr. 1 und 2; Abschnitt 2.3.1 Buchstabe A Nr. 1 und 2"
+            }
+          ],
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P3",
+          "text": "Das Elterntaxon Triebfahrzeuge umfasst damit die angetriebenen Regelfahrzeuge der Vollbahn. Die Übersicht stellt drei Kindartikel gegenüber: die Lokomotive als Triebfahrzeug ohne Zuladung, die wechselnde Wagenzüge im Strecken- und Rangierdienst befördert, den Triebwagen als angetriebenes Fahrzeug mit eigener Zuladung, das als Einzelfahrzeug oder Triebzug verkehrt, und den Hochgeschwindigkeitszug als elektrischen Triebzug fester Formation für den Personenfernverkehr. Dieselmechanische Kleinlokomotiven, Antriebseinheiten ohne Führerraum, Dampf- und Zahnradtriebfahrzeuge, Straßen-, Stadt- und Untergrundbahnen sowie Nebenfahrzeuge mit Kraftantrieb liegen außerhalb der Kindartikel; Triebköpfe erscheinen nur als Antriebskonzept des Hochgeschwindigkeitszugs. Alle drei sind über Rad-Schiene-Kontakt, Kupplungen, Stromabnehmer, Bremsleitung und Zugsicherung mechanisch, elektrisch, pneumatisch und informationstechnisch mit Fahrweg, Fahrleitung und anderen Fahrzeugen gekoppelt.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P1",
+              "P2",
+              "A-0027/P1",
+              "A-0027/P2",
+              "A-0028/P1",
+              "A-0028/P2",
+              "A-0029/P1",
+              "A-0029/P2",
+              "A-0029/P3",
+              "A-0029/P6",
+              "Betrachtungsumfang von A-0027, A-0028 und A-0029",
+              "Q4 (Abschnitte Triebköpfe, Antriebseinheiten, Sonstige Triebfahrzeuge)"
+            ],
+            "schluss": "Die drei Kindartikel decken Lokomotive, Triebwagen mit Triebzug und den Hochgeschwindigkeitstriebzug ab; weitere Triebfahrzeugarten liegen außerhalb."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [
+            "A-0027",
+            "A-0028",
+            "A-0029"
+          ]
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Gemeinsame Architektur",
+      "abschnittstyp": "querschnitt",
+      "absaetze": [
+        {
+          "absatz_id": "P4",
+          "text": "Alle drei Kindartikel zerlegen ihr Fahrzeug auf oberster Ebene in dieselben Hauptsysteme: Fahrzeugstruktur und Fahrwerk, Antriebssystem, Energieversorgungssystem, Bremssystem, Führerstand, Elektrik und Elektronik, Fahrzeugsteuerung und Information, Fahrerassistenz und Sicherheit, Beleuchtung und Sicht, Thermomanagement sowie Neben- und Versorgungssysteme. Das Lenksystem entfällt überall, weil Radsatz und Gleis das Fahrzeug im Gleis führen. Das Hauptsystem Aufbau und Ladung haben nur Triebwagen und Hochgeschwindigkeitszug; bei der Lokomotive entfällt es, und die Zug- und Stoßeinrichtung bildet dort die Schnittstelle zum Wagenzug.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "A-0027/P26",
+              "A-0028/P28",
+              "A-0029/P28",
+              "A-0027/P4",
+              "A-0029/P3",
+              "Modellblöcke der Kindartikel: entfallene Kategorien"
+            ],
+            "schluss": "Die oberste Zerlegungsebene ist für alle Triebfahrzeuge der Gruppe gleich; nur Aufbau und Ladung ist von der Zuladung abhängig."
+          },
+          "sicherheit": "hoch",
+          "herangezogene_artikel_ids": [
+            "A-0027",
+            "A-0028",
+            "A-0029"
+          ]
+        },
+        {
+          "absatz_id": "P5",
+          "text": "Gemeinsam ist der mechanische Grundaufbau. Ein Kasten mit Rahmen oder Rohbau ruht über Federung und Radsatzlager auf Radsätzen, meist in Drehgestellen; Gewichtskräfte laufen über das Laufwerk ins Gleis, Längskräfte über Endkupplung und Kasten. Ein Bahnräumer schützt bei allen Triebfahrzeugen mit Führerraum die Räder des führenden Radsatzes; dem Kindartikel des Hochgeschwindigkeitszugs fehlt er bisher. Das Bremssystem hat in allen Kindartikeln eine durchgehende, selbsttätige Hauptbremse, deren Befehl über Hauptluftleitung oder Bremsleitung alle Fahrzeuge erreicht, eine Feststellbremse, ein Gleitschutzsystem und bei elektrischer Kraftübertragung eine elektrodynamische Bremse, die Bremsenergie in Fahrleitung, Traktionsbatterie oder Bremswiderstand abgibt. Magnetschienen- oder Wirbelstrombremsen können ergänzen. Die Druckluftanlage der Neben- und Versorgungssysteme mit Kompressor für Druckluft und Hauptluftbehälter versorgt Bremse und weitere pneumatische Verbraucher; eine Sandstreueinrichtung verbessert den Kraftschluss.",
+          "begruendung": "gemischt",
+          "belege": [
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Anhang, Abschnitt 4.2.3.7 Nr. 1 und 2 (Bahnräumer)"
+            }
+          ],
+          "herleitung": {
+            "praemissen": [
+              "A-0027/P3",
+              "A-0027/P4",
+              "A-0027/P10",
+              "A-0027/P11",
+              "A-0027/P25",
+              "A-0028/P4",
+              "A-0028/P5",
+              "A-0028/P12",
+              "A-0028/P13",
+              "A-0028/P27",
+              "A-0029/P5",
+              "A-0029/P10",
+              "A-0029/P11",
+              "A-0029/P27",
+              "Q1 (Anhang, Abschnitt 4.2.3.7: Bahnräumer für alle Einheiten mit Führerraum)"
+            ],
+            "schluss": "Fahrzeugstruktur und Fahrwerk, Bremssystem und Druckluftversorgung haben in allen Kindartikeln denselben Grundaufbau; der Bahnräumer gehört nach der Interoperabilitätsspezifikation zu allen Einheiten mit Führerraum und fehlt bisher nur im Kindartikel des Hochgeschwindigkeitszugs."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [
+            "A-0027",
+            "A-0028",
+            "A-0029"
+          ]
+        },
+        {
+          "absatz_id": "P6",
+          "text": "Bei elektrischem Antrieb ist auch die Traktionskette gemeinsam: Stromabnehmer und Hauptschalter nehmen Fahrstrom aus der Fahrleitung, bei Wechselstrom setzt ein Haupttransformator die Spannung herab, der Traktionsstromrichter speist die Traktionsmaschine, und Radsatzantrieb oder Getriebe übertragen ihr Drehmoment auf den Radsatz. Ein Hilfsbetriebeumrichter versorgt Lüfter, Pumpen und Kompressor, eine Bordnetzbatterie hält Steuerung und Sicherheitsfunktionen ohne Hauptenergie aufrecht. Das Bahnstromsystem ist bei Lokomotive und Hochgeschwindigkeitszug eine Variante der Hochspannungsausrüstung, beim Triebwagen eine offene Frage. Das Fahrzeugmanagement setzt die Eingaben des Triebfahrzeugführers über den Fahrzeugbus in Sollwerte für Antrieb und Bremse um; Diagnose und Fahrdatenaufzeichnung überwachen den Zustand. Zugbeeinflussung und Sicherheitsfahrschaltung greifen über die Hauptbremse ein, Außenleuchten zeigen je nach Fahrtrichtung Spitzen- oder Schlussbild, ein Signalhorn gibt akustische Signale. Das Thermomanagement kühlt Transformator, Stromrichter und Fahrmotoren und klimatisiert die Innenräume.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "A-0027/P7",
+              "A-0027/P8",
+              "A-0027/P13",
+              "A-0027/P14",
+              "A-0027/P15",
+              "A-0027/P17",
+              "A-0027/P19",
+              "A-0027/P21",
+              "A-0027/P23",
+              "A-0028/P7",
+              "A-0028/P10",
+              "A-0028/P11",
+              "A-0028/P14",
+              "A-0028/P15",
+              "A-0028/P20",
+              "A-0028/P22",
+              "A-0028/P24",
+              "A-0028/P26",
+              "A-0029/P7",
+              "A-0029/P8",
+              "A-0029/P9",
+              "A-0029/P13",
+              "A-0029/P19",
+              "A-0029/P21",
+              "A-0029/P23",
+              "A-0029/P25",
+              "Variante Bahnstromsystem in A-0027 (V2) und Variante Stromsystemausstattung in A-0029 (V4); in A-0028 nur Stromsysteme in P10 und Klärungsfrage K8, keine Variante"
+            ],
+            "schluss": "Traktionskette, Hilfsbetriebe, Steuerung, Zugsicherung, Signalisierung und Kühlung bilden einen gemeinsamen elektrischen und informationstechnischen Kern."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [
+            "A-0027",
+            "A-0028",
+            "A-0029"
+          ]
+        },
+        {
+          "absatz_id": "P7",
+          "text": "Uneinheitlich zugeordnet sind einige Komponenten. Hilfsbetriebeumrichter und Batterieladegerät stehen bei der Lokomotive unter Elektrik und Elektronik, bei Triebwagen und Hochgeschwindigkeitszug unter dem Energieversorgungssystem. Der Bremswiderstand steht beim Triebwagen unter dem Antriebssystem, sonst unter dem Bremssystem; die Sandstreueinrichtung beim Hochgeschwindigkeitszug unter dem Bremssystem, sonst unter den Neben- und Versorgungssystemen. Zugfunk und Fahrdatenaufzeichnung führen Lokomotive und Triebwagen unter Fahrzeugsteuerung und Information, der Hochgeschwindigkeitszug unter Fahrerassistenz und Sicherheit; ebenso wechselt die Radsatzlagerüberwachung je nach Kindartikel zwischen beiden. Fahrgastsitze ordnet der Triebwagen dem Führerstand zu, der Hochgeschwindigkeitszug dem Hauptsystem Aufbau und Ladung. Das gemeinsame Grundmodell muss diese Zuordnungen festlegen.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "A-0027/P11",
+              "A-0027/P15",
+              "A-0027/P17",
+              "A-0027/P25",
+              "A-0028/P7",
+              "A-0028/P11",
+              "A-0028/P15",
+              "A-0028/P20",
+              "A-0028/P27",
+              "A-0029/P9",
+              "A-0029/P11",
+              "A-0029/P15",
+              "A-0029/P21",
+              "Modellblöcke der Kindartikel: Elternzuordnung der genannten Elemente"
+            ],
+            "schluss": "Die Kindartikel ordnen Hilfsbetriebeversorgung, Bremswiderstand, Sandstreueinrichtung, Aufzeichnung, Zugfunk und Fahrgastsitze unterschiedlichen Hauptsystemen zu."
+          },
+          "sicherheit": "hoch",
+          "herangezogene_artikel_ids": [
+            "A-0027",
+            "A-0028",
+            "A-0029"
+          ]
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Unterscheidungsmerkmal Zuladung und Zugbildung",
+      "abschnittstyp": "variante",
+      "absaetze": [
+        {
+          "absatz_id": "P8",
+          "text": "Das grundlegende Merkmal ist, ob das Triebfahrzeug selbst Zuladung aufnimmt und wie es Züge bildet. Die Lokomotive zieht ohne eigene Zuladung wechselnde Wagenzüge und muss freizügig kuppelbar sein: Schraubenkupplung mit Puffern oder Mittelpufferkupplung, eine mit fremden Wagen zusammenarbeitende Bremse, bei Elektrolokomotiven im Personenverkehr die Zugsammelschiene und die Druckluftversorgung des Wagenzugs. Triebwagen und Hochgeschwindigkeitszug haben das Hauptsystem Aufbau und Ladung mit Fahrgastbereich und Sanitärsystem. Im Triebzug verbinden innere Kupplungen oder Jakobs-Drehgestelle die Wagen dauerhaft, und die Bremsansteuerung darf im festen Verband herstellerspezifisch sein. Hinzu kommen Türsteuerung mit Traktionssperre, Fahrgastalarm, Fahrgastinformation und Fahrgastklimatisierung. Zur Zugbildung gehört die Führerstandsanordnung: Lokomotiven fahren in Mehrfachtraktion oder im Wendezug mit Steuerwagen, angebunden über Zugsteuerleitung oder Zugbus; Triebwagen ohne Steuerwagen brauchen zum Wenden Führerstände an beiden Enden, Triebzüge haben sie in den Endwagen, ein Triebkopfzug mit einem Triebkopf meist einen Steuerwagen.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P2",
+              "A-0027/P1",
+              "A-0027/P3",
+              "A-0027/P7",
+              "A-0027/P11",
+              "A-0027/P24",
+              "A-0027/P26",
+              "A-0027 Variante Art der Endkupplung (V7)",
+              "A-0028/P3",
+              "A-0028/P13",
+              "A-0028/P16",
+              "A-0028/P17",
+              "A-0028/P19",
+              "A-0029/P2",
+              "A-0029/P5",
+              "A-0029/P6",
+              "A-0029/P14",
+              "A-0029/P15",
+              "A-0029/P24",
+              "A-0027/P13",
+              "A-0027/P17",
+              "A-0027 Variante Anordnung der Führerstände (V5) und Klärungsfrage K12",
+              "A-0028/P15",
+              "A-0028 Variante Führerstandsanordnung und Zugbildung (V8) und Klärungsfrage K11",
+              "A-0029 Klärungsfrage K8"
+            ],
+            "schluss": "Die Zuladung trennt die Lokomotive von Triebwagen und Hochgeschwindigkeitszug und ändert Struktur, Kupplung, Bremse, Energieversorgung des Wagenzugs, Steuerung und Klimatisierung; Führerstandsanordnung, Wendezugbetrieb und Mehrfachtraktion kommen in allen Kindartikeln vor und ändern Führerstand, Zugsteuerung, Signalbild und Endkupplung."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [
+            "A-0027",
+            "A-0028",
+            "A-0029"
+          ]
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Unterscheidungsmerkmal Antriebsart und Energiequelle",
+      "abschnittstyp": "variante",
+      "absaetze": [
+        {
+          "absatz_id": "P9",
+          "text": "Nach einer Arbeit des Fraunhofer ISI über den deutschen Schienenpersonenverkehr sind S-Bahn und Hochgeschwindigkeitsverkehr bereits komplett elektrifiziert, und alternative Antriebe sind bisher nur für die im Regionalverkehr üblichen Triebwagen vorgestellt worden. Der Elektrotriebzug verfügt über keinen Energiespeicher und bezieht seine Traktionsenergie mittels Stromabnehmer aus einer Oberleitung; der Dieseltriebzug bezieht seine Energie aus mitgeführtem Dieselkraftstoff und existiert in dieselmechanischer, dieselhydraulischer und dieselelektrischer Ausführung. Als innovative Antriebe stellt die Arbeit Hybrid-Dieseltriebzug, Zweikrafttriebzug, batterieelektrischen Triebzug und Wasserstofftriebzug vor.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q5",
+              "fundstelle": "Abschnitt 2.1 und Abschnitt 2.2 mit Unterabschnitten 2.2.1 bis 2.2.4 (S. 9 f.)"
+            }
+          ],
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P10",
+          "text": "Die Antriebsart trennt die Kindartikel vor allem im Energieversorgungssystem. Der Hochgeschwindigkeitszug ist im Betrachtungsumfang seines Kindartikels auf elektrischen Antrieb aus der Oberleitung ohne Traktionsenergiespeicher festgelegt; Diesel- und Gasturbinenantriebe schließt dieser als seltene Ausnahme aus. Lokomotive und Triebwagen führen dagegen elektrische, dieselelektrische, dieselhydraulische, Zweikraft-, batterieelektrische und Brennstoffzellenantriebe, der Triebwagen zusätzlich dieselmechanische Kraftübertragung und Hybrid-Dieselantrieb. Je nach Wahl kommen Kraftstoffanlage, Traktionsbatterie mit Ladeeinrichtung oder Wasserstoffspeicher mit Brennstoffzellensystem in das Energieversorgungssystem, Verbrennungsmotor, Strömungsgetriebe und Abgasnachbehandlung in das Antriebssystem, Motorkühlung und Batterietemperierung in das Thermomanagement. Bei mehreren Energiequellen wählt das Fahrzeugmanagement; dieselhydraulische Lokomotiven bremsen hydrodynamisch statt elektrodynamisch.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P9",
+              "A-0027/P5",
+              "A-0027/P6",
+              "A-0027/P8",
+              "A-0027/P9",
+              "A-0027/P11",
+              "A-0027/P23",
+              "A-0028/P6",
+              "A-0028/P8",
+              "A-0028/P11",
+              "A-0028/P20",
+              "A-0028/P26",
+              "A-0029/P6",
+              "A-0029/P8",
+              "A-0029/P9",
+              "Betrachtungsumfang von A-0027, A-0028 und A-0029"
+            ],
+            "schluss": "Die Antriebsart ist bei Lokomotive und Triebwagen eine breite Variante mit Folgen für Energieversorgung, Antrieb, Thermomanagement und Steuerung; der Hochgeschwindigkeitszug ist im Betrachtungsumfang seines Kindartikels auf den elektrischen Antrieb festgelegt, Diesel- und Gasturbinenantriebe bleiben dort als Ausnahme ausgeschlossen."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [
+            "A-0027",
+            "A-0028",
+            "A-0029"
+          ]
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Unterscheidungsmerkmal Antriebsverteilung und Laufwerk",
+      "abschnittstyp": "variante",
+      "absaetze": [
+        {
+          "absatz_id": "P11",
+          "text": "Das dritte Merkmal sind Sitz der Antriebsausrüstung und Gliederung des Laufwerks. Bei der Lokomotive ist der Antrieb in einem Fahrzeug konzentriert; Drehgestell- oder Einrahmenbauweise und Achsfolge bestimmen Zahl der Traktionsmaschinen, Radsatzantriebe und Stromrichter. Beim Triebwagen sitzen Fahrmotoren und Stromrichter meist unterflur, angetrieben sind meist mehrere Drehgestelle. Der Hochgeschwindigkeitszug konzentriert den Antrieb in Triebköpfen an den Zugenden oder verteilt ihn über den Zug; der verteilte Antrieb senkt Achslast und Haftwertbeanspruchung und schafft Sitzplätze in den Endwagen. Beide Konzepte sind feste Formationen; fehlende Trennbarkeit und höhere Seitenwindanfälligkeit nennt der Kindartikel nur für eine Baureihe mit verteiltem Antrieb. Als Gliederzug auf Jakobs-Drehgestellen sparen Triebwagen und Hochgeschwindigkeitszug Laufwerke und ändern Wagenübergänge sowie die Verteilung von Antrieb und Bremse. Die Wahl verschiebt Transformatoren, Traktionskühlung, elektrodynamische Bremse und Platz für Zuladung.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "A-0027/P3",
+              "A-0027/P4",
+              "A-0028/P3",
+              "A-0028/P5",
+              "A-0028/P6",
+              "A-0028/P17",
+              "A-0029/P2",
+              "A-0029/P5",
+              "A-0029/P6",
+              "A-0029/P7",
+              "A-0029/P25"
+            ],
+            "schluss": "Antriebsverteilung und Laufwerksgliederung reichen vom konzentrierten Antrieb der Lokomotive bis zum verteilten Antrieb im Gliederzug und verändern Struktur, Energieversorgung, Bremse, Kühlung und Zuladung; die Trennbarkeit unterscheidet Triebkopfzug und verteilten Antrieb nicht, weil beide feste Formationen sind."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [
+            "A-0027",
+            "A-0028",
+            "A-0029"
+          ]
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Unterscheidungsmerkmal Geschwindigkeitsbereich",
+      "abschnittstyp": "variante",
+      "absaetze": [
+        {
+          "absatz_id": "P12",
+          "text": "Hohe Geschwindigkeiten erzeugen beim Hochgeschwindigkeitszug eigene Anforderungen. Druckertüchtigte Wagenkästen mit dauerhaft geschlossenen Fenstern und eine aktive oder passive Druckschutzeinrichtung im Thermomanagement halten Druckwellen in Tunneln von den Fahrgästen fern; Leichtbau senkt die Masse. Automatische Mittelpufferkupplungen an beiden Enden fester Formationen, Radumdrehungsüberwachung und bordseitige Radsatzlagerüberwachung verlangt die europäische Interoperabilitätsspezifikation für Lokomotiven und Personenwagen (EU) erst oberhalb einer Geschwindigkeitsgrenze, die nicht jeder Hochgeschwindigkeitszug des Kindartikels erreicht. Eine Wirbelstrombremse kann hinzukommen, die Magnetschienenbremse ist nur unterhalb einer Geschwindigkeitsgrenze zulässig. Eine den Zug führende Zugbeeinflussung verlangt die Eisenbahn-Bau- und Betriebsordnung (Deutschland) schon ab einer niedrigeren Grenze für jedes führende Fahrzeug, also auch für schnelle Lokomotiven und Triebwagen; beim Hochgeschwindigkeitszug, weil streckenseitige Signale schwer erkennbar werden.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "A-0029/P1",
+              "A-0029/P4",
+              "A-0029/P8",
+              "A-0029/P10",
+              "A-0029/P20",
+              "A-0029/P21",
+              "A-0029/P24",
+              "A-0029/P25",
+              "A-0027/P19",
+              "A-0028/P21"
+            ],
+            "schluss": "Der Geschwindigkeitsbereich erzeugt beim Hochgeschwindigkeitszug zusätzliche Teilsysteme in Struktur, Thermomanagement, Bremse, Zugsicherung und Steuerung; einige davon schreibt die Interoperabilitätsspezifikation erst oberhalb einer Grenze vor, die führende Zugbeeinflussung nach der Eisenbahn-Bau- und Betriebsordnung schon darunter für alle führenden Fahrzeuge."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [
+            "A-0027",
+            "A-0028",
+            "A-0029"
+          ]
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Zusammenfassung",
+      "abschnittstyp": "gesamtsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P13",
+          "text": "Triebfahrzeuge teilen damit ein Grundmodell aus elf gemeinsamen Hauptsystemen ohne Lenksystem, ergänzt um Aufbau und Ladung bei Fahrzeugen mit Zuladung. Die Fahrzeugart wird daraus in Stufen gewählt: Ohne eigene Zuladung, für wechselnde Wagenzüge, ist es die Lokomotive. Mit Zuladung entscheiden Geschwindigkeitsbereich und Druckschutz: Personenfernverkehr mit hohen Geschwindigkeiten auf elektrifizierten Strecken führt zum Hochgeschwindigkeitszug, sonst zum Triebwagen oder Triebzug, auch im Fernverkehr. Nicht elektrifizierte Netze schließen den Hochgeschwindigkeitszug des Kindartikels aus.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P4",
+              "P6",
+              "P8",
+              "P10",
+              "P11",
+              "P12",
+              "A-0028/P16",
+              "A-0028 Klärungsfrage K1 (Verkehrsart einschließlich Fernverkehr)"
+            ],
+            "schluss": "Ein Grundmodell mit wenigen strukturändernden Merkmalen deckt alle Kindartikel ab; die Wahl der Fahrzeugart folgt gestuft erst der Zuladung, dann Geschwindigkeitsbereich, Druckschutz und Elektrifizierung."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [
+            "A-0027",
+            "A-0028",
+            "A-0029"
+          ]
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Modellierungsbezug",
+      "abschnittstyp": "modellierung",
+      "absaetze": [
+        {
+          "absatz_id": "P14",
+          "text": "In SysML bildet ein abstrakter Block Triebfahrzeug den gemeinsamen Grundblock mit den gemeinsamen Hauptsystemen als Teilen; Aufbau und Ladung ist ein optionaler Teil, der bei der Lokomotive entfällt. Lokomotive, Triebwagen und Hochgeschwindigkeitszug spezialisieren ihn. Die Lokomotive ergänzt Zugsammelschiene und Druckluftversorgung des Wagenzugs und spezialisiert einen abstrakten Block Kraftübertragung je Antriebsart, etwa Antriebssystem → Kraftübertragung → Traktionsmaschine. Der Triebwagen ebenso, etwa Antriebssystem → Elektrischer Fahrantrieb → Traktionsmaschine. Der Hochgeschwindigkeitszug ergänzt etwa Thermomanagement → Fahrgastraumklimatisierung → Druckschutzeinrichtung und führt Triebkopfzug und verteilten Antrieb als Spezialisierungen.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P4",
+              "P8",
+              "P10",
+              "P12",
+              "A-0027/P27",
+              "A-0028/P29",
+              "A-0029/P25",
+              "A-0029/P29"
+            ],
+            "schluss": "Generalisierung über einen abstrakten Grundblock bildet Gemeinsamkeiten und Unterscheidungsmerkmale der Kindartikel ab."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [
+            "A-0027",
+            "A-0028",
+            "A-0029"
+          ],
+          "aussagetyp": "modellannahme"
+        },
+        {
+          "absatz_id": "P15",
+          "text": "Wiederverwendbare Teilmodelle sind Fahrzeugstruktur und Fahrwerk → Laufwerk → Drehgestell → Radsatz, Energieversorgungssystem → Stromabnahme und Hochspannungsausrüstung → Haupttransformator, die Hauptbremse mit Bremsleitung und Gleitschutzsystem, Neben- und Versorgungssysteme → Druckluftanlage → Hauptluftbehälter sowie Zugbeeinflussung und Sicherheitsfahrschaltung. Gemeinsame Ports sind Radsatz zu Gleis, Stromabnehmer zu Fahrleitung, die Endkupplung mit mechanischen, pneumatischen und Datenkontakten, die Hauptluftleitung und Zugbeeinflussung zu Strecke. Blockdefinitionsdiagramme zeigen Grundblock und Spezialisierungen, interne Blockdiagramme die Flüsse, Zustandsdiagramme Schnellbremsung, Tür-Traktionssperre und Systemwechsel.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P5",
+              "P6",
+              "P7",
+              "A-0027/P27",
+              "A-0028/P29",
+              "A-0029/P29"
+            ],
+            "schluss": "Die gemeinsamen Teilbäume und Ports lassen sich einmal modellieren und in allen Spezialisierungen wiederverwenden, sobald die Zuordnungen vereinheitlicht sind."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [
+            "A-0027",
+            "A-0028",
+            "A-0029"
+          ],
+          "aussagetyp": "modellannahme"
+        }
+      ]
+    }
+  ],
+  "modell": {
+    "elemente": [
+      {
+        "id": "E1",
+        "name": "Triebfahrzeug",
+        "typ": "gesamtsystem",
+        "eltern_id": null,
+        "absatz_ids": [
+          "P1",
+          "P3",
+          "P13",
+          "P14"
+        ]
+      },
+      {
+        "id": "E2",
+        "name": "Fahrzeugstruktur und Fahrwerk",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P5",
+          "P11",
+          "P15"
+        ],
+        "kategorie": "struktur_fahrwerk"
+      },
+      {
+        "id": "E3",
+        "name": "Antriebssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P6",
+          "P10",
+          "P11",
+          "P14"
+        ],
+        "kategorie": "antrieb"
+      },
+      {
+        "id": "E4",
+        "name": "Energieversorgungssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P6",
+          "P7",
+          "P10",
+          "P15"
+        ],
+        "kategorie": "energieversorgung"
+      },
+      {
+        "id": "E5",
+        "name": "Bremssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P5",
+          "P7",
+          "P12"
+        ],
+        "kategorie": "bremse"
+      },
+      {
+        "id": "E6",
+        "name": "Führerstand",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P6",
+          "P7",
+          "P8"
+        ],
+        "kategorie": "bedienraum"
+      },
+      {
+        "id": "E7",
+        "name": "Aufbau und Ladung",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P7",
+          "P8",
+          "P14"
+        ],
+        "kategorie": "aufbau_nutzlast"
+      },
+      {
+        "id": "E8",
+        "name": "Elektrik und Elektronik",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P6",
+          "P7"
+        ],
+        "kategorie": "elektrik_elektronik"
+      },
+      {
+        "id": "E9",
+        "name": "Fahrzeugsteuerung und Information",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P6",
+          "P7",
+          "P8"
+        ],
+        "kategorie": "steuerung_information"
+      },
+      {
+        "id": "E10",
+        "name": "Fahrerassistenz und Sicherheit",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P6",
+          "P7",
+          "P12"
+        ],
+        "kategorie": "assistenz_sicherheit"
+      },
+      {
+        "id": "E11",
+        "name": "Beleuchtung und Sicht",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P6",
+          "P8"
+        ],
+        "kategorie": "beleuchtung_sicht"
+      },
+      {
+        "id": "E12",
+        "name": "Thermomanagement",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P6",
+          "P10",
+          "P12",
+          "P14"
+        ],
+        "kategorie": "thermomanagement"
+      },
+      {
+        "id": "E13",
+        "name": "Neben- und Versorgungssysteme",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P5",
+          "P7",
+          "P15"
+        ],
+        "kategorie": "nebensysteme"
+      }
+    ],
+    "funktionen": [
+      {
+        "id": "F1",
+        "name": "Fahrzeuglasten tragen",
+        "ausgefuehrt_von": [
+          "E2"
+        ],
+        "absatz_ids": [
+          "P5"
+        ]
+      },
+      {
+        "id": "F2",
+        "name": "Fahrzeug im Gleis führen",
+        "ausgefuehrt_von": [
+          "E2"
+        ],
+        "absatz_ids": [
+          "P4"
+        ]
+      },
+      {
+        "id": "F3",
+        "name": "Längskräfte übertragen",
+        "ausgefuehrt_von": [
+          "E2"
+        ],
+        "absatz_ids": [
+          "P5"
+        ]
+      },
+      {
+        "id": "F4",
+        "name": "Antriebsleistung erzeugen",
+        "ausgefuehrt_von": [
+          "E3"
+        ],
+        "absatz_ids": [
+          "P6",
+          "P10"
+        ]
+      },
+      {
+        "id": "F5",
+        "name": "Drehmoment übertragen",
+        "ausgefuehrt_von": [
+          "E3"
+        ],
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "F6",
+        "name": "Fahrstrom abnehmen",
+        "ausgefuehrt_von": [
+          "E4"
+        ],
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "F7",
+        "name": "Energie speichern",
+        "ausgefuehrt_von": [
+          "E4"
+        ],
+        "absatz_ids": [
+          "P10"
+        ]
+      },
+      {
+        "id": "F8",
+        "name": "Traktionsbatterie laden",
+        "ausgefuehrt_von": [
+          "E4"
+        ],
+        "absatz_ids": [
+          "P10"
+        ]
+      },
+      {
+        "id": "F9",
+        "name": "Wagenzug mit Energie versorgen",
+        "ausgefuehrt_von": [
+          "E4"
+        ],
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "F10",
+        "name": "Elektrische Energie verteilen",
+        "ausgefuehrt_von": [
+          "E4",
+          "E8"
+        ],
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "F11",
+        "name": "Fahrzeug verzögern",
+        "ausgefuehrt_von": [
+          "E5"
+        ],
+        "absatz_ids": [
+          "P5"
+        ]
+      },
+      {
+        "id": "F12",
+        "name": "Fahrzeug festhalten",
+        "ausgefuehrt_von": [
+          "E5"
+        ],
+        "absatz_ids": [
+          "P5"
+        ]
+      },
+      {
+        "id": "F13",
+        "name": "Bremsenergie zurückgewinnen",
+        "ausgefuehrt_von": [
+          "E5",
+          "E3"
+        ],
+        "absatz_ids": [
+          "P5"
+        ]
+      },
+      {
+        "id": "F14",
+        "name": "Druckluft bereitstellen",
+        "ausgefuehrt_von": [
+          "E13"
+        ],
+        "absatz_ids": [
+          "P5"
+        ]
+      },
+      {
+        "id": "F15",
+        "name": "Kraftschluss verbessern",
+        "ausgefuehrt_von": [
+          "E13",
+          "E5"
+        ],
+        "absatz_ids": [
+          "P5"
+        ]
+      },
+      {
+        "id": "F16",
+        "name": "Fahrereingaben erfassen",
+        "ausgefuehrt_von": [
+          "E6"
+        ],
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "F17",
+        "name": "Ladung aufnehmen",
+        "ausgefuehrt_von": [
+          "E7"
+        ],
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "F18",
+        "name": "Fahrgäste informieren",
+        "ausgefuehrt_von": [
+          "E9"
+        ],
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "F19",
+        "name": "Türen betätigen",
+        "ausgefuehrt_von": [
+          "E9"
+        ],
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "F20",
+        "name": "Daten übertragen",
+        "ausgefuehrt_von": [
+          "E8"
+        ],
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "F21",
+        "name": "Fahrzeugzustand überwachen",
+        "ausgefuehrt_von": [
+          "E9"
+        ],
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "F22",
+        "name": "Zugfahrt überwachen",
+        "ausgefuehrt_von": [
+          "E10"
+        ],
+        "absatz_ids": [
+          "P6",
+          "P12"
+        ]
+      },
+      {
+        "id": "F23",
+        "name": "Fahrerzustand überwachen",
+        "ausgefuehrt_von": [
+          "E10"
+        ],
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "F24",
+        "name": "Lichtsignale abgeben",
+        "ausgefuehrt_von": [
+          "E11"
+        ],
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "F25",
+        "name": "Akustische Signale abgeben",
+        "ausgefuehrt_von": [
+          "E11"
+        ],
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "F26",
+        "name": "Betriebstemperatur regeln",
+        "ausgefuehrt_von": [
+          "E12"
+        ],
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "F27",
+        "name": "Innenraum klimatisieren",
+        "ausgefuehrt_von": [
+          "E12"
+        ],
+        "absatz_ids": [
+          "P6",
+          "P8"
+        ]
+      }
+    ],
+    "fluesse": [
+      {
+        "id": "S1",
+        "von": "E4",
+        "nach": "E3",
+        "art": "elektrisch",
+        "medium": "Traktionsenergie",
+        "absatz_ids": [
+          "P6"
+        ],
+        "schnittstelle": "Einspeisung Traktionsstromrichter"
+      },
+      {
+        "id": "S2",
+        "von": "E3",
+        "nach": "E2",
+        "art": "mechanisch",
+        "medium": "Drehmoment",
+        "absatz_ids": [
+          "P6"
+        ],
+        "schnittstelle": "Radsatzantrieb"
+      },
+      {
+        "id": "S3",
+        "von": "E13",
+        "nach": "E5",
+        "art": "pneumatisch",
+        "medium": "Druckluft",
+        "absatz_ids": [
+          "P5"
+        ],
+        "schnittstelle": "Hauptluftbehälter zur Bremsausrüstung"
+      },
+      {
+        "id": "S4",
+        "von": "E6",
+        "nach": "E9",
+        "art": "information",
+        "medium": "Fahrereingaben",
+        "absatz_ids": [
+          "P6"
+        ],
+        "schnittstelle": "Fahrzeugbus"
+      },
+      {
+        "id": "S5",
+        "von": "E9",
+        "nach": "E3",
+        "art": "information",
+        "medium": "Zugkraftsollwerte",
+        "absatz_ids": [
+          "P6"
+        ],
+        "schnittstelle": "Fahrzeugbus"
+      },
+      {
+        "id": "S6",
+        "von": "E9",
+        "nach": "E5",
+        "art": "information",
+        "medium": "Bremssollwerte",
+        "absatz_ids": [
+          "P6"
+        ],
+        "schnittstelle": "Fahrzeugbus"
+      },
+      {
+        "id": "S7",
+        "von": "E10",
+        "nach": "E5",
+        "art": "information",
+        "medium": "Zwangsbremsbefehl",
+        "absatz_ids": [
+          "P6"
+        ],
+        "schnittstelle": "Schnittstelle Zugsicherung zur Hauptbremse"
+      },
+      {
+        "id": "S8",
+        "von": "E5",
+        "nach": "E3",
+        "art": "information",
+        "medium": "Anforderung elektrodynamische Bremse",
+        "absatz_ids": [
+          "P5"
+        ],
+        "schnittstelle": "Bremskraftaufteilung"
+      },
+      {
+        "id": "S9",
+        "von": "E4",
+        "nach": "E8",
+        "art": "elektrisch",
+        "medium": "Hilfsbetriebe- und Bordnetzenergie",
+        "absatz_ids": [
+          "P6"
+        ],
+        "schnittstelle": "Hilfsbetriebeumrichter und Bordnetzbatterie"
+      },
+      {
+        "id": "S10",
+        "von": "E3",
+        "nach": "E12",
+        "art": "thermisch",
+        "medium": "Verlustwärme von Stromrichter und Fahrmotoren",
+        "absatz_ids": [
+          "P6"
+        ],
+        "schnittstelle": "Traktionskühlung"
+      },
+      {
+        "id": "S11",
+        "von": "E4",
+        "nach": "E12",
+        "art": "thermisch",
+        "medium": "Verlustwärme des Haupttransformators",
+        "absatz_ids": [
+          "P6"
+        ],
+        "schnittstelle": "Transformatorkühlung"
+      },
+      {
+        "id": "S12",
+        "von": "E8",
+        "nach": "E11",
+        "art": "elektrisch",
+        "medium": "Energie für Außenleuchten",
+        "absatz_ids": [
+          "P6"
+        ],
+        "schnittstelle": "Niedervolt-Bordnetz"
+      }
+    ],
+    "entfallene_kategorien": [
+      {
+        "kategorie": "lenkung",
+        "grund": "In allen Kindartikeln entfallen: Radsatz und Gleis führen das Fahrzeug, die Führungskräfte liegen im Laufwerk unter Fahrzeugstruktur und Fahrwerk."
+      }
+    ],
+    "varianten": [
+      {
+        "id": "V1",
+        "element_id": "E1",
+        "bezeichnung": "Zuladung und Zugbildung",
+        "alternativen": [
+          "Lokomotive ohne Zuladung, freizügig mit wechselnden Wagenzügen kuppelbar",
+          "Triebwagen oder Triebwagenzug mit eigener Zuladung",
+          "Triebzug in nicht trennbarer Formation mit eigener Zuladung"
+        ],
+        "auswahlkriterien": [
+          "Beförderung wechselnder Wagenzüge (Lokomotive) oder eigener Zuladung (Triebwagen, Hochgeschwindigkeitszug)",
+          "Trennen, Flügeln und Stärken im Betrieb",
+          "Kuppelbarkeit mit Fahrzeugen anderer Bauart",
+          "Sitzplatzbedarf bei gegebener Zuglänge"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E7",
+            "beschreibung": "Aufbau und Ladung entfällt bei der Lokomotive; Fahrgastbereich und Sanitärsystem bei Triebwagen und Hochgeschwindigkeitszug."
+          },
+          {
+            "element_id": "E2",
+            "beschreibung": "Lokomotivkasten mit Maschinenraum oder Wagenkasten mit Fahrgastbereich; Schraubenkupplung oder Mittelpufferkupplung, im Triebzug innere Kupplungen oder Jakobs-Drehgestelle."
+          },
+          {
+            "element_id": "E5",
+            "beschreibung": "Mit fremden Fahrzeugen zusammenarbeitende Hauptbremse bei der Lokomotive, herstellerspezifische Ansteuerung im festen Verband zulässig."
+          },
+          {
+            "element_id": "E4",
+            "beschreibung": "Zugsammelschiene zur Versorgung des Wagenzugs bei Elektrolokomotiven im Personenverkehr."
+          },
+          {
+            "element_id": "E9",
+            "beschreibung": "Türsteuerung mit Traktionssperre und Fahrgastinformation nur bei Fahrzeugen mit Fahrgästen."
+          },
+          {
+            "element_id": "E12",
+            "beschreibung": "Klimatisierung des Fahrgastbereichs bei Triebwagen und Hochgeschwindigkeitszug."
+          }
+        ],
+        "absatz_ids": [
+          "P2",
+          "P8"
+        ]
+      },
+      {
+        "id": "V2",
+        "element_id": "E3",
+        "bezeichnung": "Antriebsart und Energiequelle",
+        "alternativen": [
+          "Elektrischer Antrieb aus der Fahrleitung",
+          "Dieselantrieb mit mechanischer, hydrodynamischer oder elektrischer Kraftübertragung",
+          "Hybrid-Dieselantrieb",
+          "Zweikraftantrieb",
+          "Batterieelektrischer Antrieb",
+          "Brennstoffzellenantrieb mit Wasserstoffspeicher"
+        ],
+        "auswahlkriterien": [
+          "Elektrifizierung der Einsatzstrecken",
+          "Vorgaben zu lokalen Emissionen",
+          "verfügbare Lade- und Tankinfrastruktur",
+          "erforderliche Reichweite",
+          "Betrachtungsumfang der Kindartikel: Hochgeschwindigkeitszug nur elektrisch, dieselmechanische Kraftübertragung und Hybrid-Dieselantrieb nur beim Triebwagen, die übrigen bei Lokomotive und Triebwagen"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E4",
+            "beschreibung": "Kraftstoffanlage, Traktionsbatterie mit Ladeeinrichtung oder Wasserstoffspeicher mit Brennstoffzellensystem; Fahrleitungsanbindung bei elektrischem, Zweikraft- und batterieelektrischem Antrieb."
+          },
+          {
+            "element_id": "E12",
+            "beschreibung": "Motorkühlung bei Verbrennungsmotor, Batterietemperierung bei Traktionsbatterie."
+          },
+          {
+            "element_id": "E9",
+            "beschreibung": "Fahrzeugmanagement mit Wahl der Energiequelle bei mehreren Energiequellen."
+          },
+          {
+            "element_id": "E5",
+            "beschreibung": "Hydrodynamische statt elektrodynamischer Bremse bei dieselhydraulischen Lokomotiven."
+          }
+        ],
+        "absatz_ids": [
+          "P9",
+          "P10"
+        ]
+      },
+      {
+        "id": "V3",
+        "element_id": "E3",
+        "bezeichnung": "Antriebsverteilung",
+        "alternativen": [
+          "Antrieb konzentriert in einem Fahrzeug (Lokomotive)",
+          "Antrieb konzentriert in Triebköpfen an den Zugenden",
+          "Antrieb verteilt unterflur oder auf dem Dach über mehrere Wagen"
+        ],
+        "auswahlkriterien": [
+          "Achslast und Haftwertbeanspruchung",
+          "Beschleunigung",
+          "Sitzplatzangebot bei gegebener Zuglänge",
+          "Zugänglichkeit und Instandhaltung der Antriebsausrüstung"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E2",
+            "beschreibung": "Verteilung von Trieb- und Laufdrehgestellen."
+          },
+          {
+            "element_id": "E4",
+            "beschreibung": "Lage und Zahl der Transformatoren."
+          },
+          {
+            "element_id": "E12",
+            "beschreibung": "Anordnung der Traktionskühlung zentral oder verteilt."
+          },
+          {
+            "element_id": "E5",
+            "beschreibung": "Verteilung der elektrodynamischen Bremse auf viele oder wenige Radsätze."
+          },
+          {
+            "element_id": "E7",
+            "beschreibung": "Fahrgastplätze auch in den Endwagen nur beim verteilten Antrieb."
+          }
+        ],
+        "absatz_ids": [
+          "P11"
+        ]
+      },
+      {
+        "id": "V4",
+        "element_id": "E2",
+        "bezeichnung": "Laufwerksgliederung",
+        "alternativen": [
+          "Zwei eigene Drehgestelle je Fahrzeug",
+          "Jakobs-Drehgestelle zwischen zwei Wagenkästen (Gliederzug)",
+          "Einrahmenlaufwerk ohne Drehgestelle"
+        ],
+        "auswahlkriterien": [
+          "Achslast",
+          "Zahl der Laufwerke und Masse",
+          "Trennbarkeit der Fahrzeuge im Betrieb",
+          "Einsatz im Strecken- oder Rangierdienst (Einrahmenlaufwerk bei der Lokomotive)"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E3",
+            "beschreibung": "Zahl und Anordnung von Traktionsmaschinen und Radsatzantrieben."
+          },
+          {
+            "element_id": "E5",
+            "beschreibung": "Zahl und Lage der Bremsstellen."
+          },
+          {
+            "element_id": "E7",
+            "beschreibung": "Wagenübergang und Platz für Zuladung über dem gemeinsamen Drehgestell."
+          }
+        ],
+        "absatz_ids": [
+          "P11"
+        ]
+      },
+      {
+        "id": "V5",
+        "element_id": "E1",
+        "bezeichnung": "Geschwindigkeitsbereich",
+        "alternativen": [
+          "Konventioneller Geschwindigkeitsbereich",
+          "Hochgeschwindigkeitsverkehr"
+        ],
+        "auswahlkriterien": [
+          "Auslegungshöchstgeschwindigkeit",
+          "Tunnelanteil und Zugbegegnungen im Tunnel",
+          "Ausrüstung der Strecken mit Zugbeeinflussung",
+          "Kindartikel: Lokomotive und Triebwagen überwiegend konventionell, Hochgeschwindigkeitszug im Hochgeschwindigkeitsverkehr"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E12",
+            "beschreibung": "Druckschutzeinrichtung, aktiv oder passiv, beim Hochgeschwindigkeitszug."
+          },
+          {
+            "element_id": "E2",
+            "beschreibung": "Druckertüchtigter Leichtbau-Wagenkasten und automatische Mittelpufferkupplung an beiden Enden."
+          },
+          {
+            "element_id": "E5",
+            "beschreibung": "Radumdrehungsüberwachung, gegebenenfalls Wirbelstrombremse, Einschränkung der Magnetschienenbremse."
+          },
+          {
+            "element_id": "E10",
+            "beschreibung": "Führende Zugbeeinflussung und bordseitige Radsatzlagerüberwachung."
+          }
+        ],
+        "absatz_ids": [
+          "P12"
+        ]
+      },
+      {
+        "id": "V6",
+        "element_id": "E4",
+        "bezeichnung": "Bahnstromsystem",
+        "alternativen": [
+          "Einsystemausführung für Wechselstrom",
+          "Einsystemausführung für Gleichstrom",
+          "Mehrsystemausführung"
+        ],
+        "auswahlkriterien": [
+          "Stromsysteme der Einsatznetze",
+          "grenzüberschreitender Verkehr ohne Fahrzeugwechsel",
+          "Masse und Dachraum der Hochspannungsausrüstung",
+          "Kindartikel: Variante bei Lokomotive und Hochgeschwindigkeitszug, beim Triebwagen bisher nur als Klärungsfrage"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E3",
+            "beschreibung": "Eingangsstufe des Traktionsstromrichters je nach Stromart."
+          },
+          {
+            "element_id": "E12",
+            "beschreibung": "Transformatorkühlung nur bei Wechselstrombetrieb."
+          },
+          {
+            "element_id": "E9",
+            "beschreibung": "Fahrzeugmanagement steuert den Systemwechsel."
+          }
+        ],
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "V7",
+        "element_id": "E6",
+        "bezeichnung": "Führerstandsanordnung und Zugsteuerung",
+        "alternativen": [
+          "Führerstände an beiden Enden",
+          "ein Führerstand mit Steuerwagen am anderen Zugende",
+          "Führerstände nur in den Endwagen eines Triebzugs"
+        ],
+        "auswahlkriterien": [
+          "Wendebetrieb an Endpunkten ohne Umsetzen",
+          "Einsatz allein, in Mehrfachtraktion oder im Verband",
+          "Sicht in beide Fahrtrichtungen",
+          "Kindartikel: Variante und Klärungsfrage bei Lokomotive und Triebwagen, beim Hochgeschwindigkeitszug mit Triebkopf und Steuerwagen nur als Klärungsfrage"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E9",
+            "beschreibung": "Zugsteuerleitung oder Zugbus für Mehrfachtraktion und Wendezugbetrieb, Führerstandsaktivierung über den ganzen Verband."
+          },
+          {
+            "element_id": "E11",
+            "beschreibung": "Signalbild mit Spitzen- und Schlussbild an beiden Zugenden, fahrtrichtungsabhängig geschaltet."
+          },
+          {
+            "element_id": "E2",
+            "beschreibung": "Endkupplung mit Steuerkontakten an jedem Ende, an dem gekuppelt wird."
+          },
+          {
+            "element_id": "E10",
+            "beschreibung": "Fahrzeugausrüstung der Zugbeeinflussung je Führerstand."
+          }
+        ],
+        "absatz_ids": [
+          "P8"
+        ]
+      }
+    ],
+    "klaerungsfragen": [
+      {
+        "id": "K1",
+        "frage": "Soll das Triebfahrzeug selbst Fahrgäste oder Güter aufnehmen, oder soll es als Lokomotive ohne Zuladung wechselnde Wagenzüge befördern?",
+        "element_ids": [
+          "E1",
+          "E7"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängt ab, ob die Lokomotive oder ein Fahrzeug mit Zuladung (Triebwagen, Hochgeschwindigkeitszug) spezialisiert wird; die weitere Wahl folgt aus der Frage nach Auslegungshöchstgeschwindigkeit und Tunnelstrecken.",
+        "variante_ids": [
+          "V1"
+        ]
+      },
+      {
+        "id": "K2",
+        "frage": "Muss die Einheit im Betrieb getrennt, geflügelt oder mit Fahrzeugen anderer Bauart gekuppelt werden, oder genügt eine nur in der Werkstatt änderbare Formation?",
+        "element_ids": [
+          "E2",
+          "E5"
+        ],
+        "anlass": "betrieb",
+        "relevanz": "Davon hängen Endkupplung, innere Kupplungen, Laufwerksgliederung und die Kompatibilität der Hauptbremse ab.",
+        "variante_ids": [
+          "V1",
+          "V4"
+        ]
+      },
+      {
+        "id": "K3",
+        "frage": "Welche Abschnitte des Einsatznetzes sind elektrifiziert, und ist ein lokal emissionsfreier Betrieb gefordert?",
+        "element_ids": [
+          "E3",
+          "E4"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängt ab, welche Antriebsart mit welchem Energiespeicher und Energiewandler in Antriebssystem und Energieversorgungssystem vorzusehen ist.",
+        "variante_ids": [
+          "V2"
+        ]
+      },
+      {
+        "id": "K4",
+        "frage": "Soll der Antrieb in einem Fahrzeug oder in Triebköpfen konzentriert oder über mehrere Wagen verteilt werden?",
+        "element_ids": [
+          "E3",
+          "E2"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Achslast, Verteilung der Triebdrehgestelle, Lage der Transformatoren und Traktionskühlung sowie das Sitzplatzangebot ab.",
+        "variante_ids": [
+          "V3"
+        ]
+      },
+      {
+        "id": "K5",
+        "frage": "Sollen benachbarte Wagen eigene Drehgestelle erhalten oder als Gliederzug auf gemeinsamen Jakobs-Drehgestellen laufen?",
+        "element_ids": [
+          "E2"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Zahl der Laufwerke, Achslast, Trennbarkeit und die Verteilung von Antrieb und Bremse ab.",
+        "variante_ids": [
+          "V4"
+        ]
+      },
+      {
+        "id": "K6",
+        "frage": "Welche Auslegungshöchstgeschwindigkeit und welche Tunnelstrecken sind vorgesehen, und erfordern sie die Ausführung als Hochgeschwindigkeitszug mit Druckschutz?",
+        "element_ids": [
+          "E1",
+          "E12",
+          "E10"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängt ab, ob Druckschutzeinrichtung, führende Zugbeeinflussung, Radsatzlagerüberwachung und zusätzliche Bremsarten erforderlich sind.",
+        "variante_ids": [
+          "V5"
+        ]
+      },
+      {
+        "id": "K7",
+        "frage": "Welche Bahnstromsysteme muss das Triebfahrzeug auf seinen Einsatzstrecken beherrschen, und soll es ohne Fahrzeugwechsel grenzüberschreitend verkehren?",
+        "element_ids": [
+          "E4"
+        ],
+        "anlass": "schnittstelle",
+        "relevanz": "Davon hängen Stromabnehmer, Haupttransformator, Eingangsstufe des Traktionsstromrichters und Transformatorkühlung ab.",
+        "variante_ids": [
+          "V6"
+        ]
+      },
+      {
+        "id": "K8",
+        "frage": "Soll der Zug als Wendezug mit Steuerwagen, in Mehrfachtraktion oder als Triebzug mit Endführerständen betrieben werden?",
+        "element_ids": [
+          "E6",
+          "E9",
+          "E11"
+        ],
+        "anlass": "betrieb",
+        "relevanz": "Davon hängen Zahl und Lage der Führerstände, Zugsteuerleitung oder Zugbus, das Signalbild an beiden Zugenden und die Endkupplung ab.",
+        "variante_ids": [
+          "V7"
+        ]
+      }
+    ],
+    "anforderungsthemen": [
+      {
+        "id": "R1",
+        "element_ids": [
+          "E3",
+          "E4"
+        ],
+        "thema": "Antriebsleistung und Energieversorgung",
+        "kenngroessen": [
+          "Auslegungshöchstgeschwindigkeit",
+          "Zugkraftdiagramm",
+          "unterstützte Bahnstromsysteme",
+          "Reichweite ohne Fahrleitung"
+        ]
+      },
+      {
+        "id": "R2",
+        "element_ids": [
+          "E5"
+        ],
+        "thema": "Bremsvermögen",
+        "kenngroessen": [
+          "Bremsweg",
+          "Verzögerungsprofil",
+          "äquivalente Ansprechzeit",
+          "Haltevermögen der Feststellbremse"
+        ]
+      },
+      {
+        "id": "R3",
+        "element_ids": [
+          "E7",
+          "E2"
+        ],
+        "thema": "Zuladung und Zugverband",
+        "kenngroessen": [
+          "Sitzplatzzahl",
+          "Anzahl der Einzelfahrzeuge",
+          "Radsatzlast",
+          "Zug- und Druckkraft der Endkupplung"
+        ]
+      }
+    ]
+  },
+  "offene_punkte": [
+    "Widerspruch zwischen Kindartikeln (Zuordnung): Hilfsbetriebeumrichter und Batterieladegerät unter Elektrik und Elektronik (A-0027) gegenüber Energieversorgungssystem (A-0028, A-0029); Bremswiderstand unter Antriebssystem (A-0028) gegenüber Bremssystem (A-0027, A-0029); Sandstreueinrichtung unter Bremssystem (A-0029) gegenüber Neben- und Versorgungssystemen (A-0027, A-0028); Zugfunk, Fahrdaten- bzw. Ereignisaufzeichnung und Radsatzlagerüberwachung unter Fahrerassistenz und Sicherheit (A-0029) gegenüber Fahrzeugsteuerung und Information (A-0027, A-0028); Fahrgastsitze im Führerstand (A-0028) gegenüber Fahrgastbestuhlung unter Aufbau und Ladung (A-0029). Die Zuordnungsliste der Glossarausgabe regelt diese Komponenten nicht; Festlegung im Grundmodell und Abgleich der Kindartikel erforderlich.",
+    "Abgleich A-0028: Das Bahnstromsystem ist dort nur Aufzählung (P10) und Klärungsfrage (K8), keine Variante; Variante Bahnstromsystem am Energieversorgungssystem nachtragen. A-0029 betrachtet in V4 keine Einsystemausführung für Gleichstrom; die Alternative in V6 stützt sich nur auf A-0027.",
+    "Abgleich A-0029: Bahnräumer nach TSI LOC&PAS Anhang 4.2.3.7 (alle Einheiten mit Führerraum, Eisenbahnsystem der EU) fehlt dort als Komponente unter Fahrzeugstruktur und Fahrwerk; nachtragen.",
+    "Taxonomie: A-0028 umfasst nach seinem Betrachtungsumfang Triebzüge allgemein und nennt in K1 auch den Fernverkehr, A-0029 beschreibt den Hochgeschwindigkeitstriebzug; Abgrenzung im Inventar klären (A-0029 als Spezialisierung des Triebzugs aus A-0028 oder als gleichrangige Fahrzeugart).",
+    "Taxonomie: Die EBO-Klasse Kleinlokomotiven, Rangierloks außerhalb der TSI, Triebköpfe und Antriebseinheiten ohne Führerraum (Q1, Q4) haben keinen eigenen Kindartikel; A-0027 schließt nur dieselmechanische Kleinlokomotiven ausdrücklich aus. Prüfen, ob das Inventar weitere Blattartikel unter Triebfahrzeuge vorsieht.",
+    "Unterschiedlicher Betrachtungsumfang der Antriebsarten: Hybrid-Dieselantrieb und dieselmechanische Kraftübertragung nur in A-0028, Stromschienenbetrieb nur in A-0027 (in A-0028 ausdrücklich ausgeschlossen), Brennstoffzellenantrieb in A-0027 nur als Modellannahme (A-0027/P9, Sicherheit gering).",
+    "Vokabular der Kindartikel: A-0028 verwendet in den Perspektiven „Betriebstüren betätigen“, die Glossarvorgaben führen inzwischen „Türen betätigen“; A-0027 und A-0029 schlagen „Fahrleitungsstrom abnehmen“ und „Akustische Warnsignale abgeben“ vor, die Glossarvorgaben führen „Fahrstrom abnehmen“ und „Akustische Signale abgeben“. Angleichung bei der nächsten Revision der Kindartikel.",
+    "Recherche: Janicki, Reinhard, Rüffer: Schienenfahrzeugtechnik, 4. Auflage 2020 (in Q4 als Einzelnachweis genannt, nicht abgerufen) zur Belegung der Triebfahrzeugdefinition und des gemeinsamen Grundaufbaus (P4 bis P7).",
+    "Recherche: Schweizerische Fahrdienstvorschriften R 300.1, Ziffer 2.5.2 (in Q4 genannt, nicht abgerufen), die selbstfahrende Gleisbaumaschinen und Zweiwegefahrzeuge zu den Triebfahrzeugen zählt, als abweichende Einteilung außerhalb Deutschlands."
+  ]
+}
