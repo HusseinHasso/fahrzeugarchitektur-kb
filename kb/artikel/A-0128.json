@@ -1,0 +1,1521 @@
+{
+  "schema_version": "2.3",
+  "artikel_id": "A-0128",
+  "artikeltyp": "uebersicht",
+  "titel": "Nutzfahrzeuge",
+  "betrachtungsumfang": "Übersicht über die Nutzfahrzeuge zur Güterbeförderung auf der Straße (Kraftfahrzeuge der EU-Fahrzeugklasse N ohne Geländeeinstufung und ohne besondere Zweckbestimmung) mit den Kindartikeln Transporter, Lieferwagen, Lkw und Sattelzugmaschine: gemeinsame Architektur, Unterscheidungsmerkmale und gemeinsames Grundmodell. Antriebsarten wie in den Kindartikeln: verbrennungsmotorisch und batterieelektrisch, beim Lkw zusätzlich Hybrid- und Brennstoffzellenantrieb; deren Energiespeicher und Energiewandler sind in den Kindartikeln modelliert, die Übersicht führt nur die Hauptsysteme. Gasantriebe sind ausgeschlossen. Omnibusse und Kleinbusse, Sonderfahrzeuge, Gelände- und Militärfahrzeuge, Straßenzugmaschinen sowie Anhänger und Sattelauflieger erscheinen nur zur Abgrenzung oder als Schnittstellenpartner.",
+  "status": "geprueft",
+  "quellenzugriff": "ja",
+  "kindartikel_ids": [
+    "A-0006",
+    "A-0007",
+    "A-0008",
+    "A-0009"
+  ],
+  "quellen": [
+    {
+      "quellen_id": "Q1",
+      "titel": "Nutzfahrzeug",
+      "urheber": "Wikipedia, die freie Enzyklopädie",
+      "stand": "Version oldid=262571878",
+      "url": "https://de.wikipedia.org/w/index.php?title=Nutzfahrzeug&oldid=262571878",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q2",
+      "titel": "Fachkunde Nutzfahrzeugtechnik, 2. Auflage, Kapitel 1 Einteilung der Nutzfahrzeuge (Leseprobe)",
+      "urheber": "Gscheidle, R.; Hohmann, B.; Karch, W.; Lohuis, R.; Renz, D.; Varnhagen, J.; Verlag Europa-Lehrmittel",
+      "stand": "2. Auflage, Frühjahr 2026",
+      "url": "https://www.europa-lehrmittel.de/leseprobe/23711-2.pdf",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "fachliteratur"
+    },
+    {
+      "quellen_id": "Q3",
+      "titel": "Einführung in die Nutzfahrzeugtechnik. In: Hoepke, E.; Breuer, S. (Hrsg.): Nutzfahrzeugtechnik, ATZ/MTZ-Fachbuch, Kapitel 1, S. 1-35 (Leseprobe)",
+      "urheber": "E. Hoepke, S. Breuer (Hrsg.); Vieweg+Teubner Verlag, Springer Fachmedien Wiesbaden",
+      "stand": "2013",
+      "url": "https://www.heinrich-vogel-shop.de/img/asset/readings/23138_0_reading.pdf",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "fachliteratur"
+    },
+    {
+      "quellen_id": "Q4",
+      "titel": "Verordnung (EU) 2018/858, Anhang I: Allgemeine Begriffsbestimmungen, Kriterien für die Klasseneinteilung von Fahrzeugen, den Fahrzeugtypen und Arten des Aufbaus (Textwiedergabe)",
+      "urheber": "Europäisches Parlament und Rat der Europäischen Union; Textwiedergabe gesetze.legal",
+      "stand": null,
+      "url": "https://gesetze.legal/eu/vo_eu_2018_858/anhang_i",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q5",
+      "titel": "Verzeichnis zur Systematisierung von Kraftfahrzeugen und ihren Anhängern (SV 1)",
+      "urheber": "Kraftfahrt-Bundesamt",
+      "stand": "Mai 2024",
+      "url": "https://www.kba.de/SharedDocs/Downloads/DE/Statistik/SV/sv1_2024_05_pdf.pdf?__blob=publicationFile&v=4",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "behoerde"
+    }
+  ],
+  "abschnitte": [
+    {
+      "ueberschrift": "Einleitung",
+      "abschnittstyp": "gesamtsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P1",
+          "text": "Nach der Enzyklopädie ist ein Nutzfahrzeug im Sinne des Kraftfahrt-Bundesamts ein Kraftfahrzeug, das nach Bauart und Einrichtung zum Transport von Personen oder Gütern im Straßenverkehr oder zum Ziehen von Anhängefahrzeugen bestimmt ist, aber kein Personenkraftwagen oder Kraftrad ist; dazu zählen vorwiegend Lastkraftwagen, Omnibusse, Zugmaschinen für den Straßentransport und bestimmte Sonderfahrzeuge. Die Fachkunde Nutzfahrzeugtechnik unterteilt Nutzfahrzeuge nach Verwendungszweck, Motoranordnung, Antriebskonzept, zulässigem Gesamtgewicht, Abmessungen und Fahrerlaubnisklassen.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Einleitung, erster Absatz"
+            },
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Kapitel 1 Einteilung der Nutzfahrzeuge, S. 9"
+            }
+          ],
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P2",
+          "text": "In der EU-Typgenehmigung nach Verordnung (EU) 2018/858 umfasst die Klasse N Kraftfahrzeuge, die vorwiegend für die Beförderung von Gütern ausgelegt und gebaut sind; das Kraftfahrt-Bundesamt gliedert sie in N1 bis 3,5 t, N2 über 3,5 t bis 12 t und N3 über 12 t. Der Sitzbereich ist grundsätzlich vollständig vom Ladebereich zu trennen; Personen und Güter dürfen nur dann im selben Bereich befördert werden, wenn Sicherungseinrichtungen die Fahrgäste vor verrutschender Ladung schützen. Als Aufbauarten der Klasse N nennt die Verordnung Lastkraftwagen, Van mit Führerhaus und Ladebereich in derselben Einheit, Sattelzugmaschine, Straßenzugmaschine, Pick-up und Fahrgestell mit Führerhaus. Bei der Sattelzugmaschine zählt für die Klasseneinteilung die von der Sattelkupplung getragene Masse des Sattelanhängers mit.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q4",
+              "fundstelle": "Einleitung Nr. 2.2.1; Teil A Nr. 3.2 und 3.3; Teil C Nr. 4.1 bis 4.6"
+            },
+            {
+              "quellen_id": "Q5",
+              "fundstelle": "Teil A 1A, Nr. 4, 4.1, 4.3 und 4.5 (S. 23 ff.)"
+            }
+          ],
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P3",
+          "text": "Diese Übersicht beschränkt das Elterntaxon auf Straßenkraftfahrzeuge zur Güterbeförderung und zum Ziehen von Sattelanhängern. Omnibusse und Kleinbusse gehören in der Wissensbasis zur Personenbeförderung, Speziallastwagen wie Müll- und Feuerwehrfahrzeuge zu den Sonderfahrzeugen, Gelände- und Militärfahrzeuge sowie Anhänger und Sattelauflieger zu eigenen Gruppen. Die vier Kindartikel staffeln sich nach Masse und Nutzlastschnittstelle: Lieferwagen und Transporter sind leichte Nutzfahrzeuge, die mit der Pkw-Fahrerlaubnis gefahren werden; der Lkw umfasst die mittlere und schwere Klasse als Solo-Lkw, Motorwagen eines Lastzugs und Sattelzugmaschine; die Sattelzugmaschine spezialisiert ihn, indem die Sattelkupplung den Aufbau ersetzt. Zwischen Lieferwagen und Transporter gibt es keine scharfe Grenze. Nicht ausdrücklich abgedeckt sind schwere Transporter und Großraumkastenwagen oberhalb der Massengrenze der Pkw-Fahrerlaubnis sowie der Pick-up; sie lassen sich als Grenzfälle von Transporter und Lkw modellieren.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P1",
+              "P2",
+              "A-0006/P1",
+              "A-0007/P1",
+              "A-0007/P2",
+              "A-0008/P1",
+              "A-0008/P2",
+              "A-0009/P1",
+              "A-0009/P2",
+              "Inventar: Bus, Kleinbus, Müllfahrzeug, Feuerwehrfahrzeug, Geländewagen, Militär-Lkw und Sattelauflieger sind Blattartikel anderer Übersichten"
+            ],
+            "schluss": "Das Elterntaxon umfasst die güterbefördernden Straßenkraftfahrzeuge; die Kindartikel decken es entlang von Masse und Nutzlastschnittstelle weitgehend ab, schwere Transporter, Großraumkastenwagen und Pick-up nur als Grenzfälle."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": [
+            "A-0006",
+            "A-0007",
+            "A-0008",
+            "A-0009"
+          ]
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Gemeinsame Architektur",
+      "abschnittstyp": "querschnitt",
+      "absaetze": [
+        {
+          "absatz_id": "P4",
+          "text": "Als Hauptbaugruppen von Nutzfahrzeugen nennt die Fachkunde den Motor mit Kraftstoffversorgung und Abgasanlage, den Antriebsstrang mit Kupplung, Getriebe und Achsantrieb, das Fahrwerk mit Rahmen, Aufbauten, Federung, Rädern, Lenkung und Bremsanlage sowie Fahrzeugelektrik und Fahrzeugelektronik mit Datenbussystemen und Fahrerassistenzsystemen. Nach Hoepke und Breuer ist das Fahrgestell eines Nutzfahrzeugs universell und wird erst durch branchen- oder ladungsgerechte Aufbauten spezialisiert; die Transportaufgaben reichen vom leichten Verteilerverkehr mit Transportern über den schweren Verteilerverkehr mit Solo-Lkw bis zum Fernverkehr mit Sattelzügen.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Kapitel 1 Einteilung der Nutzfahrzeuge, S. 9"
+            },
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Abschn. 1.1 Transportaufgabe, S. 1"
+            }
+          ],
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P5",
+          "text": "Alle vier Kindartikel zerlegen ihr Fahrzeug in dieselben dreizehn Hauptsysteme mit denselben Glossarnamen und ohne entfallene Kategorie: Fahrzeugstruktur und Fahrwerk, Antriebssystem, Energieversorgungssystem, Lenksystem, Bremssystem, Fahrerhaus, Aufbau und Ladung, Elektrik und Elektronik, Fahrzeugsteuerung und Information, Fahrerassistenz und Sicherheit, Beleuchtung und Sicht, Thermomanagement sowie Neben- und Versorgungssysteme. Gemeinsam ist auch die Lage der Systemgrenze an den Befestigungs- und Versorgungsschnittstellen zu Aufbau, Ausbau, Anhänger oder Auflieger, die je nach Fahrzeugart ein Aufbauhersteller, ein Ausbauer oder ein eigenes Fahrzeug ergänzt.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "A-0006/P24",
+              "A-0007/P23",
+              "A-0008/P32",
+              "A-0009/P25",
+              "A-0006/P2",
+              "A-0007/P3",
+              "A-0008/P3",
+              "A-0009/P2"
+            ],
+            "schluss": "Die oberste Zerlegungsebene und die Lage der Systemgrenze sind für alle Nutzfahrzeuge der Gruppe gleich und bilden das gemeinsame Grundmodell."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": [
+            "A-0006",
+            "A-0007",
+            "A-0008",
+            "A-0009"
+          ]
+        },
+        {
+          "absatz_id": "P6",
+          "text": "Die energetischen Hauptsysteme folgen demselben Muster. Das Energieversorgungssystem speichert Energie im Kraftstofftank oder in der Traktionsbatterie eines Hochvolt-Energiesystems mit Ladeeinrichtung und Gleichspannungswandler, der ohne Verbrennungsmotor den Generator ersetzt. Das Antriebssystem erzeugt Antriebsleistung mit Verbrennungsmotor und Abgasnachbehandlung oder mit einer vom Wechselrichter gespeisten Traktionsmaschine, die Bremsenergie zurückgewinnt, und überträgt Drehmoment über Getriebe und Differenzial auf die Räder. Das Thermomanagement führt Abwärme über den Kühlkreislauf ab, temperiert die Traktionsbatterie und klimatisiert das Fahrerhaus. Verbrennungsmotorischer und batterieelektrischer Antrieb kommen in allen Kindartikeln vor, Hybrid- und Brennstoffzellenantrieb nur beim Lkw; die Antriebsart ist eine gemeinsame Variante, kein Unterscheidungsmerkmal. Sie ändert überall Energiespeicher, Kühlkreisläufe und den Antrieb der Nebenaggregate.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "A-0006/P5",
+              "A-0006/P6",
+              "A-0006/P7",
+              "A-0006/P22",
+              "A-0007/P6",
+              "A-0007/P8",
+              "A-0007/P21",
+              "A-0007/P22",
+              "A-0008/P7",
+              "A-0008/P9",
+              "A-0008/P29",
+              "A-0008/P31",
+              "A-0009/P6",
+              "A-0009/P8",
+              "A-0009/P23",
+              "A-0009/P24"
+            ],
+            "schluss": "Antrieb, Energieversorgung und Thermomanagement haben einen gemeinsamen, antriebsartabhängigen Grundaufbau, der als wiederverwendbares Teilmodell taugt."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": [
+            "A-0006",
+            "A-0007",
+            "A-0008",
+            "A-0009"
+          ]
+        },
+        {
+          "absatz_id": "P7",
+          "text": "Ebenso gemeinsam ist der Kern von Lenkung und Informationstechnik. Das Lenksystem führt die Fahrereingabe über Lenkrad, Lenksäule und Lenkgetriebe an die Vorderachse, hydraulisch, elektrohydraulisch oder elektrisch unterstützt; Eingriffe des Spurhalteassistenten setzen eine elektrische oder elektrisch überlagerte Unterstützung voraus. Elektrik und Elektronik verteilen Energie über das Niedervolt-Bordnetz und übertragen Daten über Fahrzeugbus und Gateway. Fahrzeugsteuerung und Information koordinieren Antrieb, Bremse und Energie, überwachen über die Diagnose den Fahrzeugzustand und binden über die Telematikeinheit den Flottenbetrieb an. Fahrerassistenz und Sicherheit erfassen das Fahrzeugumfeld mit Kamera und Radar und greifen über Bremssystem und Lenksystem ein; Beleuchtung und Sicht geben Lichtsignale ab und sichern die Fahrersicht mit Außenspiegel oder Kamera-Monitor-System.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "A-0006/P8",
+              "A-0006/P16",
+              "A-0006/P18",
+              "A-0006/P20",
+              "A-0006/P21",
+              "A-0007/P9",
+              "A-0007/P16",
+              "A-0007/P17",
+              "A-0007/P19",
+              "A-0007/P20",
+              "A-0008/P11",
+              "A-0008/P21",
+              "A-0008/P23",
+              "A-0008/P25",
+              "A-0008/P27",
+              "A-0009/P9",
+              "A-0009/P19",
+              "A-0009/P20",
+              "A-0009/P21",
+              "A-0009/P22"
+            ],
+            "schluss": "Lenksystem und die informationstechnischen Hauptsysteme lassen sich für alle Kindartikel mit demselben Kern modellieren."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": [
+            "A-0006",
+            "A-0007",
+            "A-0008",
+            "A-0009"
+          ]
+        },
+        {
+          "absatz_id": "P8",
+          "text": "Uneinheitlich sind einzelne Zuordnungen und Namen: Die Versorgung von Einbauten führt der Lieferwagen als Aufbaustromversorgung in den Neben- und Versorgungssystemen, der Transporter als Aufbauschnittstelle in Elektrik und Elektronik. Die Kabinenstruktur liegt bei der Sattelzugmaschine im Fahrerhaus, beim Lkw zusätzlich als Kabinenrohbau in der Fahrzeugstruktur. Den Unfalldatenspeicher nennt der Transporter Ereignisdatenspeicher, die Sattelzugmaschine führt ihn ebenso wenig wie Kontrollgerät und Geschwindigkeitsbegrenzer. Die Hochvoltverteilung heißt beim Lkw Hochvolt-Bordnetz.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "A-0006/P16",
+              "A-0007/P22",
+              "A-0008/P5",
+              "A-0008/P17",
+              "A-0009/P14",
+              "A-0006/P18",
+              "A-0007/P17",
+              "A-0008/P22",
+              "A-0008/P23",
+              "A-0009/P20",
+              "A-0006/P7",
+              "A-0007/P8",
+              "A-0008/P9"
+            ],
+            "schluss": "Vor der Wiederverwendung des Grundmodells sind wenige Zuordnungen und Benennungen zu vereinheitlichen."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": [
+            "A-0006",
+            "A-0007",
+            "A-0008",
+            "A-0009"
+          ]
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Unterscheidungsmerkmal Massenklasse und Bremsenergie",
+      "abschnittstyp": "variante",
+      "absaetze": [
+        {
+          "absatz_id": "P9",
+          "text": "Für das Nutzfahrzeugangebot in Deutschland beschreiben Hoepke und Breuer Klassen mit merkmalprägenden Eigenschaften; neben den Gewichtsklassen bestimmen die Anzahl angetriebener und gelenkter Räder, die Art der Federung und die Motorleistung das Fahrzeugkonzept. Der Pkw-Führerschein der Klasse B berechtigt nur zum Fahren von Fahrzeugen bis 3,5 t zulässigem Gesamtgewicht, während ein 7,5-Tonner mit Tandemanhänger und durchgehender Druckluftbremsanlage zu einem Lastkraftwagenzug kombiniert werden darf.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Abschn. 1.4 Lastkraftwagenangebot, S. 21, und Abschn. 1.4.3 Lastkraftwagenangebot nach Gewichtsklassen, S. 24 f."
+            }
+          ],
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P10",
+          "text": "Das am stärksten strukturändernde Merkmal ist die Massenklasse. Lieferwagen und Transporter bleiben in der Massengrenze der Pkw-Fahrerlaubnis; ihr Bremssystem verzögert mit hydraulischer Betriebsbremse und Bremskraftverstärker, den eine Unterdruckpumpe der Neben- und Versorgungssysteme versorgt oder der elektromechanisch arbeitet. Lkw und Sattelzugmaschine bremsen mit Druckluft: Die Neben- und Versorgungssysteme erhalten eine Druckluftanlage, die auch Luftfederung und Liftachse versorgt, die Feststellbremse hält als Federspeicherbremse das Fahrzeug fest, und Motorbremse oder Retarder kommen als Dauerbremse hinzu, deren Leistung die Kühlleistung des Thermomanagements begrenzt. Die hohen Achslasten verlangen eine Lenkunterstützung und gegebenenfalls weitere gelenkte Achsen; oberhalb der Massengrenze der Pkw-Fahrerlaubnis zeichnet bei Lkw und Sattelzugmaschine die Fahrzeugsteuerung mit dem Kontrollgerät Betriebsdaten auf, und ein Geschwindigkeitsbegrenzer begrenzt die Höchstgeschwindigkeit; im Kindartikel Sattelzugmaschine sind beide noch nicht modelliert. Auch die Assistenz unterscheidet sich: Für die leichten Kindartikel ist ein eingreifender Notfall-Spurhalteassistent vorgesehen, für den Lkw ein Spurhaltewarnsystem mit optional eingreifender Ausbaustufe; die Sattelzugmaschine führt einen eingreifenden Spurhalteassistenten.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P9",
+              "A-0006/P1",
+              "A-0007/P1",
+              "A-0006/P10",
+              "A-0007/P11",
+              "A-0006/P23",
+              "A-0007/P22",
+              "A-0008/P13",
+              "A-0008/P14",
+              "A-0008/P31",
+              "A-0009/P10",
+              "A-0009/P24",
+              "A-0008/P29",
+              "A-0009/P23",
+              "A-0008/P11",
+              "A-0009/P9",
+              "A-0008/P23",
+              "A-0006/P19",
+              "A-0007/P18",
+              "A-0008/P25",
+              "A-0008/P22",
+              "A-0008/P24",
+              "A-0009/P21",
+              "A-0006/P20"
+            ],
+            "schluss": "Die Massenklasse legt die Bremsenergieart fest und verändert damit Bremssystem, Neben- und Versorgungssysteme, Fahrwerk, Lenksystem, Thermomanagement und Assistenz."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": [
+            "A-0006",
+            "A-0007",
+            "A-0008",
+            "A-0009"
+          ]
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Unterscheidungsmerkmal Tragstruktur und Fahrerhaus",
+      "abschnittstyp": "variante",
+      "absaetze": [
+        {
+          "absatz_id": "P11",
+          "text": "Das technische Konzept der Kleintransporter ähnelt nach der Fachkunde stark dem eines Pkw. Hoepke und Breuer zufolge basieren leichte Lieferwagen auf Pkw-Karosserien, deren Frontpartien und Fahrerhäuser fast identisch übernommen sind; bei Transportern bis 3,5 t werden neben Kastenwagen verstärkt Lastkraftwagenfahrgestelle mit tragendem Leiterrahmen angeboten, und bis 7,5 t teilen sich teils selbsttragende Großraumkastenwagen und Klein-Lastkraftwagen mit tragendem Leiterrahmen das Angebot.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Kapitel 1, Abschn. 1.1 Unterscheidung von Nfz nach ihrem Verwendungszweck, Kleintransporter, S. 9"
+            },
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Abschn. 1.4.3 Lastkraftwagenangebot nach Gewichtsklassen, S. 24"
+            }
+          ],
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P12",
+          "text": "Daraus folgt das zweite Merkmal, die Tragstruktur mit der Einbindung des Fahrerhauses. Beim Lieferwagen ist die Karosserie meist selbsttragend und von Pkw oder Hochdachkombi abgeleitet; das Fahrerhaus ist Teil davon und nur durch die Trennwand vom Laderaum getrennt. Der Transporter verbindet beide Welten: als Kastenwagen mit Karosserie aus einer Einheit oder als Fahrgestell, dessen Rahmen hinter dem Fahrerhaus den Aufbau trägt. Lkw und Sattelzugmaschine bauen auf einem Rahmen auf, der alle Fahrzeuglasten trägt und das Fahrerhaus mit eigener Kabinenstruktur elastisch und beim Frontlenker kippbar lagert; beim Hauber liegt der Motor vor der Kabine. Mit dem Rahmen sitzt Aufbau und Ladung auf Hilfsrahmen oder Montageplatte statt im Rohbau, das Fahrerhaus kann Ruhebereich oder Schlafkabine erhalten, und die Energiespeicher liegen am Rahmen statt unter dem Ladeboden.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P11",
+              "A-0007/P2",
+              "A-0007/P5",
+              "A-0007/P13",
+              "A-0006/P3",
+              "A-0006/P4",
+              "A-0006/P7",
+              "A-0006/P12",
+              "A-0007/P8",
+              "A-0008/P2",
+              "A-0008/P5",
+              "A-0008/P15",
+              "A-0008/P17",
+              "A-0008/P19",
+              "A-0009/P3",
+              "A-0009/P4",
+              "A-0009/P8",
+              "A-0009/P13",
+              "A-0009/P14"
+            ],
+            "schluss": "Die Tragstruktur unterscheidet Pkw-abgeleitete, transportertypische und rahmenbasierte Nutzfahrzeuge und bestimmt Fahrerhaus, Aufbaubefestigung und Bauraum der Energiespeicher."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": [
+            "A-0006",
+            "A-0007",
+            "A-0008",
+            "A-0009"
+          ]
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Unterscheidungsmerkmal Nutzlastschnittstelle",
+      "abschnittstyp": "variante",
+      "absaetze": [
+        {
+          "absatz_id": "P13",
+          "text": "Das dritte Merkmal ist die Schnittstelle zur Nutzlast im Hauptsystem Aufbau und Ladung. Lieferwagen und Transporter-Kastenwagen nehmen Ladung in einem geschlossenen Laderaum auf und sichern sie mit Ladeboden, Trennwand und Zurrpunkten, die zugleich die Insassen schützen; die fehlende Sicht nach hinten ersetzen Außenspiegel, Kamera-Monitor-System und Rückfahrsensorik. Transporter-Fahrgestell und Solo-Lkw tragen einen Pritschen-, Koffer- oder Sonderaufbau, der über eine Aufbauschnittstelle Strom und Signale erhält; beim Lkw versorgt ein Nebenabtrieb Arbeitsgeräte mit hydraulischer Leistung. Die Sattelzugmaschine ersetzt den Aufbau durch die Sattelkupplung zum Kuppeln des Aufliegers: Anhängersteuerung im Bremssystem, Anhängersteckverbindungen mit eigenem Anhängerbus und die Druckluftanlage versorgen ihn, das Fahrzeugmanagement schätzt die wechselnde Zugmasse. Lieferwagen, Transporter und Lkw können zudem über eine Anhängevorrichtung Anhänger ziehen.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P2",
+              "A-0006/P15",
+              "A-0006/P16",
+              "A-0006/P20",
+              "A-0006/P21",
+              "A-0007/P14",
+              "A-0007/P15",
+              "A-0007/P19",
+              "A-0007/P20",
+              "A-0008/P18",
+              "A-0008/P19",
+              "A-0008/P31",
+              "A-0009/P12",
+              "A-0009/P17",
+              "A-0009/P19",
+              "A-0009/P20",
+              "A-0009/P24"
+            ],
+            "schluss": "Die Nutzlastschnittstelle bestimmt neben Aufbau und Ladung auch Bremssystem, Elektrik und Elektronik, Beleuchtung und Sicht, Neben- und Versorgungssysteme und Fahrzeugsteuerung."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": [
+            "A-0006",
+            "A-0007",
+            "A-0008",
+            "A-0009"
+          ]
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Zusammenfassung",
+      "abschnittstyp": "gesamtsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P14",
+          "text": "Nutzfahrzeuge zur Güterbeförderung teilen ein Grundmodell aus dreizehn Hauptsystemen mit gleichem Grundaufbau und der Antriebsart als gemeinsamer Variante. Sie unterscheiden sich in Massenklasse mit Bremsenergieart, Tragstruktur mit Fahrerhauseinbindung und Nutzlastschnittstelle. Stückgut im Verteilerverkehr mit Pkw-Fahrerlaubnis führt zu Lieferwagen oder Transporter, wechselnde Aufbauten zu Transporter-Fahrgestell oder Lkw, schwere Ladung mit getrennt wechselbaren Ladungsträgern zur Sattelzugmaschine.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P4",
+              "P5",
+              "P6",
+              "P7",
+              "P10",
+              "P12",
+              "P13",
+              "A-0008/P18",
+              "A-0009/P25"
+            ],
+            "schluss": "Ein Grundmodell mit drei strukturändernden Merkmalen deckt alle Kindartikel ab und leitet die Wahl der Fahrzeugart."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": [
+            "A-0006",
+            "A-0007",
+            "A-0008",
+            "A-0009"
+          ]
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Modellierungsbezug",
+      "abschnittstyp": "modellierung",
+      "absaetze": [
+        {
+          "absatz_id": "P15",
+          "text": "In SysML bildet ein abstrakter Block Nutzfahrzeug den gemeinsamen Grundblock mit den dreizehn Hauptsystemen als Teilen. Die erste Spezialisierungsebene folgt allein der Massenklasse mit der Bremsenergieart: Der Block Leichtes Nutzfahrzeug mit hydraulischer Betriebsbremse spezialisiert sich zu Lieferwagen und Transporter, der Block Schweres Nutzfahrzeug mit Rahmen und Druckluftanlage zum Lkw-Fahrgestellblock, den Solo-Lkw beziehungsweise Motorwagen und Sattelzugmaschine, wie im Lkw-Artikel vorgeschlagen, weiter spezialisieren. Tragstruktur und Nutzlastschnittstelle bilden keine eigene Ebene, sondern Variationspunkte innerhalb der Blöcke, beim Transporter etwa Kastenwagen mit Laderaum oder Fahrgestell mit Rahmen und Aufbau. Darunter zerlegen Dekompositionspfade die Spezialisierungen, etwa Lieferwagen → Aufbau und Ladung → Laderaum → Trennwand, Lastkraftwagen → Aufbau und Ladung → Koppeleinrichtung → Anhängevorrichtung und Sattelzugmaschine → Aufbau und Ladung → Sattelkupplung → Verriegelung.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P10",
+              "P12",
+              "P13",
+              "A-0006/P25",
+              "A-0007/P24",
+              "A-0008/P33",
+              "A-0009/P26"
+            ],
+            "schluss": "Grundblock, eine Spezialisierungsebene nach Massenklasse und Variationspunkte für Tragstruktur und Nutzlastschnittstelle bilden die Kindartikel ohne Doppelmodellierung ab."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": [
+            "A-0006",
+            "A-0007",
+            "A-0008",
+            "A-0009"
+          ]
+        },
+        {
+          "absatz_id": "P16",
+          "text": "Wiederverwendbare Teilmodelle sind die antriebsabhängigen Teilbäume von Antriebssystem, Energieversorgungssystem und Thermomanagement, das Lenksystem, die Umfeldsensorik mit den Assistenzfunktionen sowie für Rahmenfahrzeuge Druckluftanlage, Betriebsbremse mit Anhängersteuerung und Anhängersteckverbindungen. Ports wie Hochvolt-Schnittstelle, Radnabe, Fahrzeugbus, Aufbauschnittstelle und Anhängerschnittstelle bleiben über alle Spezialisierungen gleich, der Auflieger erscheint als externer Block. Vorher sind Zuordnung und Benennung von Aufbaustromversorgung, Kabinenstruktur, Unfalldatenspeicher und Hochvoltverteilung zu vereinheitlichen. Blockdefinitionsdiagramme zeigen Grundblock und Spezialisierungen, interne Blockdiagramme die Schnittstellen zu Aufbau und Anhänger.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P6",
+              "P7",
+              "P8",
+              "A-0006/P25",
+              "A-0007/P24",
+              "A-0008/P33",
+              "A-0009/P26"
+            ],
+            "schluss": "Die gemeinsamen Teilbäume und Ports lassen sich einmal modellieren und in allen Spezialisierungen wiederverwenden."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": [
+            "A-0006",
+            "A-0007",
+            "A-0008",
+            "A-0009"
+          ]
+        }
+      ]
+    }
+  ],
+  "modell": {
+    "elemente": [
+      {
+        "id": "E1",
+        "name": "Nutzfahrzeug",
+        "typ": "gesamtsystem",
+        "eltern_id": null,
+        "absatz_ids": [
+          "P1",
+          "P3",
+          "P5",
+          "P14",
+          "P15"
+        ]
+      },
+      {
+        "id": "E2",
+        "name": "Fahrzeugstruktur und Fahrwerk",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P5",
+          "P12"
+        ],
+        "kategorie": "struktur_fahrwerk"
+      },
+      {
+        "id": "E3",
+        "name": "Antriebssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P5",
+          "P6"
+        ],
+        "kategorie": "antrieb"
+      },
+      {
+        "id": "E4",
+        "name": "Energieversorgungssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P5",
+          "P6"
+        ],
+        "kategorie": "energieversorgung"
+      },
+      {
+        "id": "E5",
+        "name": "Lenksystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P5",
+          "P7",
+          "P10"
+        ],
+        "kategorie": "lenkung"
+      },
+      {
+        "id": "E6",
+        "name": "Bremssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P5",
+          "P10",
+          "P13"
+        ],
+        "kategorie": "bremse"
+      },
+      {
+        "id": "E7",
+        "name": "Fahrerhaus",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P5",
+          "P12"
+        ],
+        "kategorie": "bedienraum"
+      },
+      {
+        "id": "E8",
+        "name": "Aufbau und Ladung",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P5",
+          "P13"
+        ],
+        "kategorie": "aufbau_nutzlast"
+      },
+      {
+        "id": "E9",
+        "name": "Elektrik und Elektronik",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P5",
+          "P7",
+          "P13"
+        ],
+        "kategorie": "elektrik_elektronik"
+      },
+      {
+        "id": "E10",
+        "name": "Fahrzeugsteuerung und Information",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P5",
+          "P7",
+          "P10"
+        ],
+        "kategorie": "steuerung_information"
+      },
+      {
+        "id": "E11",
+        "name": "Fahrerassistenz und Sicherheit",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P5",
+          "P7",
+          "P10"
+        ],
+        "kategorie": "assistenz_sicherheit"
+      },
+      {
+        "id": "E12",
+        "name": "Beleuchtung und Sicht",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P5",
+          "P7"
+        ],
+        "kategorie": "beleuchtung_sicht"
+      },
+      {
+        "id": "E13",
+        "name": "Thermomanagement",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P5",
+          "P6",
+          "P10"
+        ],
+        "kategorie": "thermomanagement"
+      },
+      {
+        "id": "E14",
+        "name": "Neben- und Versorgungssysteme",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P5",
+          "P10",
+          "P13"
+        ],
+        "kategorie": "nebensysteme"
+      }
+    ],
+    "funktionen": [
+      {
+        "id": "F1",
+        "name": "Fahrzeuglasten tragen",
+        "ausgefuehrt_von": [
+          "E2"
+        ],
+        "absatz_ids": [
+          "P12"
+        ]
+      },
+      {
+        "id": "F2",
+        "name": "Antriebsleistung erzeugen",
+        "ausgefuehrt_von": [
+          "E3"
+        ],
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "F3",
+        "name": "Drehmoment übertragen",
+        "ausgefuehrt_von": [
+          "E3"
+        ],
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "F4",
+        "name": "Bremsenergie zurückgewinnen",
+        "ausgefuehrt_von": [
+          "E3"
+        ],
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "F5",
+        "name": "Energie speichern",
+        "ausgefuehrt_von": [
+          "E4"
+        ],
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "F6",
+        "name": "Traktionsbatterie laden",
+        "ausgefuehrt_von": [
+          "E4"
+        ],
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "F7",
+        "name": "Fahrzeug lenken",
+        "ausgefuehrt_von": [
+          "E5"
+        ],
+        "absatz_ids": [
+          "P7"
+        ]
+      },
+      {
+        "id": "F8",
+        "name": "Fahrzeug verzögern",
+        "ausgefuehrt_von": [
+          "E6"
+        ],
+        "absatz_ids": [
+          "P10"
+        ]
+      },
+      {
+        "id": "F9",
+        "name": "Fahrzeug festhalten",
+        "ausgefuehrt_von": [
+          "E6"
+        ],
+        "absatz_ids": [
+          "P10"
+        ]
+      },
+      {
+        "id": "F10",
+        "name": "Fahrereingaben erfassen",
+        "ausgefuehrt_von": [
+          "E7"
+        ],
+        "absatz_ids": [
+          "P7"
+        ]
+      },
+      {
+        "id": "F11",
+        "name": "Insassen schützen",
+        "ausgefuehrt_von": [
+          "E7",
+          "E8"
+        ],
+        "absatz_ids": [
+          "P13"
+        ]
+      },
+      {
+        "id": "F12",
+        "name": "Ladung aufnehmen",
+        "ausgefuehrt_von": [
+          "E8"
+        ],
+        "absatz_ids": [
+          "P13"
+        ]
+      },
+      {
+        "id": "F13",
+        "name": "Ladung sichern",
+        "ausgefuehrt_von": [
+          "E8"
+        ],
+        "absatz_ids": [
+          "P13"
+        ]
+      },
+      {
+        "id": "F14",
+        "name": "Fahrzeuge kuppeln",
+        "ausgefuehrt_von": [
+          "E8"
+        ],
+        "absatz_ids": [
+          "P13"
+        ]
+      },
+      {
+        "id": "F15",
+        "name": "Anhänger ziehen",
+        "ausgefuehrt_von": [
+          "E8"
+        ],
+        "absatz_ids": [
+          "P13"
+        ]
+      },
+      {
+        "id": "F16",
+        "name": "Anhänger versorgen",
+        "ausgefuehrt_von": [
+          "E6",
+          "E9",
+          "E14"
+        ],
+        "absatz_ids": [
+          "P13"
+        ]
+      },
+      {
+        "id": "F17",
+        "name": "Elektrische Energie verteilen",
+        "ausgefuehrt_von": [
+          "E9"
+        ],
+        "absatz_ids": [
+          "P7"
+        ]
+      },
+      {
+        "id": "F18",
+        "name": "Daten übertragen",
+        "ausgefuehrt_von": [
+          "E9"
+        ],
+        "absatz_ids": [
+          "P7"
+        ]
+      },
+      {
+        "id": "F19",
+        "name": "Fahrzeugzustand überwachen",
+        "ausgefuehrt_von": [
+          "E10"
+        ],
+        "absatz_ids": [
+          "P7"
+        ]
+      },
+      {
+        "id": "F20",
+        "name": "Betriebsdaten aufzeichnen",
+        "ausgefuehrt_von": [
+          "E10"
+        ],
+        "absatz_ids": [
+          "P10"
+        ]
+      },
+      {
+        "id": "F21",
+        "name": "Fahrzeugumfeld erfassen",
+        "ausgefuehrt_von": [
+          "E11"
+        ],
+        "absatz_ids": [
+          "P7"
+        ]
+      },
+      {
+        "id": "F22",
+        "name": "Lichtsignale abgeben",
+        "ausgefuehrt_von": [
+          "E12"
+        ],
+        "absatz_ids": [
+          "P7"
+        ]
+      },
+      {
+        "id": "F23",
+        "name": "Fahrersicht sicherstellen",
+        "ausgefuehrt_von": [
+          "E12"
+        ],
+        "absatz_ids": [
+          "P7",
+          "P13"
+        ]
+      },
+      {
+        "id": "F24",
+        "name": "Betriebstemperatur regeln",
+        "ausgefuehrt_von": [
+          "E13"
+        ],
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "F25",
+        "name": "Innenraum klimatisieren",
+        "ausgefuehrt_von": [
+          "E13"
+        ],
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "F26",
+        "name": "Druckluft bereitstellen",
+        "ausgefuehrt_von": [
+          "E14"
+        ],
+        "absatz_ids": [
+          "P10"
+        ]
+      },
+      {
+        "id": "F27",
+        "name": "Unterdruck bereitstellen",
+        "ausgefuehrt_von": [
+          "E14"
+        ],
+        "absatz_ids": [
+          "P10"
+        ]
+      },
+      {
+        "id": "F28",
+        "name": "Hydraulische Leistung bereitstellen",
+        "ausgefuehrt_von": [
+          "E14"
+        ],
+        "absatz_ids": [
+          "P13"
+        ]
+      },
+      {
+        "id": "F29",
+        "name": "Arbeitsgeräte versorgen",
+        "ausgefuehrt_von": [
+          "E14"
+        ],
+        "absatz_ids": [
+          "P13"
+        ]
+      }
+    ],
+    "fluesse": [
+      {
+        "id": "S1",
+        "von": "E4",
+        "nach": "E3",
+        "art": "stoff",
+        "medium": "Kraftstoff",
+        "absatz_ids": [
+          "P6"
+        ],
+        "schnittstelle": "Kraftstoffzulauf"
+      },
+      {
+        "id": "S2",
+        "von": "E4",
+        "nach": "E3",
+        "art": "elektrisch",
+        "medium": "Hochvoltstrom",
+        "absatz_ids": [
+          "P6"
+        ],
+        "schnittstelle": "Hochvolt-Schnittstelle"
+      },
+      {
+        "id": "S3",
+        "von": "E3",
+        "nach": "E2",
+        "art": "mechanisch",
+        "medium": "Drehmoment",
+        "absatz_ids": [
+          "P6"
+        ],
+        "schnittstelle": "Radnabe"
+      },
+      {
+        "id": "S4",
+        "von": "E3",
+        "nach": "E13",
+        "art": "thermisch",
+        "medium": "Abwärme von Motor oder Traktionsmaschine",
+        "absatz_ids": [
+          "P6"
+        ],
+        "schnittstelle": "Kühlmittelanschluss"
+      },
+      {
+        "id": "S5",
+        "von": "E13",
+        "nach": "E7",
+        "art": "thermisch",
+        "medium": "temperierte Luft",
+        "absatz_ids": [
+          "P6"
+        ],
+        "schnittstelle": "Luftverteilung des Fahrerhauses"
+      },
+      {
+        "id": "S6",
+        "von": "E14",
+        "nach": "E6",
+        "art": "pneumatisch",
+        "medium": "Unterdruck",
+        "absatz_ids": [
+          "P10"
+        ],
+        "schnittstelle": "Unterdruckanschluss am Bremskraftverstärker"
+      },
+      {
+        "id": "S7",
+        "von": "E14",
+        "nach": "E6",
+        "art": "pneumatisch",
+        "medium": "Druckluft",
+        "absatz_ids": [
+          "P10"
+        ],
+        "schnittstelle": "Druckluftanschluss der Betriebsbremse"
+      },
+      {
+        "id": "S8",
+        "von": "E14",
+        "nach": "E2",
+        "art": "pneumatisch",
+        "medium": "Druckluft für Luftfederung und Liftachse",
+        "absatz_ids": [
+          "P10"
+        ],
+        "schnittstelle": "Druckluftanschluss der Luftfederung"
+      },
+      {
+        "id": "S9",
+        "von": "E8",
+        "nach": "E2",
+        "art": "mechanisch",
+        "medium": "Ladungs-, Stütz- und Zuglasten",
+        "absatz_ids": [
+          "P12",
+          "P13"
+        ],
+        "schnittstelle": "Aufbaubefestigung oder Montageplatte der Sattelkupplung"
+      },
+      {
+        "id": "S10",
+        "von": "E9",
+        "nach": "E8",
+        "art": "elektrisch",
+        "medium": "Aufbaustrom und Fahrzeugsignale",
+        "absatz_ids": [
+          "P13"
+        ],
+        "schnittstelle": "Aufbauschnittstelle"
+      },
+      {
+        "id": "S11",
+        "von": "E14",
+        "nach": "E8",
+        "art": "hydraulisch",
+        "medium": "hydraulische Leistung für Arbeitsgeräte",
+        "absatz_ids": [
+          "P13"
+        ],
+        "schnittstelle": "Hydraulikanschluss am Nebenabtrieb"
+      },
+      {
+        "id": "S12",
+        "von": "E11",
+        "nach": "E6",
+        "art": "information",
+        "medium": "Verzögerungsanforderung",
+        "absatz_ids": [
+          "P7"
+        ],
+        "schnittstelle": "Fahrzeugbus"
+      },
+      {
+        "id": "S13",
+        "von": "E11",
+        "nach": "E5",
+        "art": "information",
+        "medium": "Lenkanforderung",
+        "absatz_ids": [
+          "P7"
+        ],
+        "schnittstelle": "Fahrzeugbus"
+      },
+      {
+        "id": "S14",
+        "von": "E7",
+        "nach": "E10",
+        "art": "information",
+        "medium": "Fahrereingaben",
+        "absatz_ids": [
+          "P7"
+        ],
+        "schnittstelle": "Fahrzeugbus"
+      }
+    ],
+    "entfallene_kategorien": [],
+    "varianten": [
+      {
+        "id": "V1",
+        "element_id": "E6",
+        "bezeichnung": "Massenklasse und Bremsenergieart",
+        "alternativen": [
+          "Leichtes Nutzfahrzeug mit hydraulischer Betriebsbremse und Unterdruck- oder elektromechanischer Bremskraftverstärkung",
+          "Schweres Nutzfahrzeug mit Druckluftbremsanlage, Federspeicher-Feststellbremse und Dauerbremse"
+        ],
+        "auswahlkriterien": [
+          "Zulässige Gesamtmasse und Fahrerlaubnis des vorgesehenen Fahrerkreises (leicht: Lieferwagen, Transporter; schwer: Lkw, Sattelzugmaschine)",
+          "Achslasten und Nutzlastbedarf",
+          "Anhängerbetrieb mit durchgehender Bremsanlage",
+          "Bremsbelastung bei langen Gefällen"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E14",
+            "beschreibung": "Leicht: Unterdruckpumpe oder keine Hilfsenergie; schwer: Druckluftanlage mit Kompressor, Luftaufbereitung und Druckluftbehältern"
+          },
+          {
+            "element_id": "E2",
+            "beschreibung": "Schwer: Luftfederung und Liftachse aus der Druckluftanlage"
+          },
+          {
+            "element_id": "E5",
+            "beschreibung": "Schwer: unverzichtbare Lenkunterstützung, gegebenenfalls weitere gelenkte Achsen"
+          },
+          {
+            "element_id": "E13",
+            "beschreibung": "Schwer: Kühlkreislauf begrenzt die Dauerbremsleistung des Retarders"
+          },
+          {
+            "element_id": "E10",
+            "beschreibung": "Schwer (Lkw und Sattelzugmaschine): Betriebsdatenerfassung mit Kontrollgerät und Geschwindigkeitsbegrenzer, im Kindartikel Sattelzugmaschine noch nicht modelliert"
+          },
+          {
+            "element_id": "E11",
+            "beschreibung": "Leicht: eingreifender Notfall-Spurhalteassistent; Lkw: Spurhaltewarnsystem mit optional eingreifender Ausbaustufe; Sattelzugmaschine: eingreifender Spurhalteassistent"
+          }
+        ],
+        "absatz_ids": [
+          "P9",
+          "P10"
+        ]
+      },
+      {
+        "id": "V2",
+        "element_id": "E2",
+        "bezeichnung": "Tragstruktur und Einbindung des Fahrerhauses",
+        "alternativen": [
+          "Pkw-abgeleitete selbsttragende Karosserie mit integriertem Fahrerhaus",
+          "Transporterkarosserie als Kastenwagen oder Fahrgestell mit Rahmen hinter dem Fahrerhaus",
+          "Rahmen mit Hilfsrahmen oder Montageplatte und elastisch gelagertem, gegebenenfalls kippbarem Fahrerhaus"
+        ],
+        "auswahlkriterien": [
+          "Ableitung von Pkw-, Transporter- oder Lkw-Plattform (Lieferwagen, Transporter, Lkw und Sattelzugmaschine)",
+          "Vielfalt der Aufbauten von Aufbauherstellern",
+          "Ladevolumen und Ladebodenhöhe gegenüber Nutzlast",
+          "Einsatz im Verteiler- oder Fernverkehr"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E7",
+            "beschreibung": "Fahrerhaus als Teil der Karosserie oder als eigene Kabine mit Kabinenlagerung, Ruhebereich oder Schlafkabine"
+          },
+          {
+            "element_id": "E8",
+            "beschreibung": "Laderaum im Rohbau oder Aufbau auf Rahmen, Hilfsrahmen oder Montageplatte"
+          },
+          {
+            "element_id": "E4",
+            "beschreibung": "Traktionsbatterie unter dem Ladeboden oder Energiespeicher am Rahmen"
+          },
+          {
+            "element_id": "E9",
+            "beschreibung": "Übergabepunkte des Leitungssatzes für Ausbau oder Aufbau"
+          }
+        ],
+        "absatz_ids": [
+          "P11",
+          "P12"
+        ]
+      },
+      {
+        "id": "V3",
+        "element_id": "E8",
+        "bezeichnung": "Nutzlastschnittstelle",
+        "alternativen": [
+          "Geschlossener Laderaum mit Trennwand und Zurrpunkten",
+          "Pritschen-, Koffer- oder Sonderaufbau auf dem Fahrgestell",
+          "Sattelkupplung für Sattelauflieger"
+        ],
+        "auswahlkriterien": [
+          "Art und Menge der Ladung (Laderaum: Lieferwagen, Transporter-Kastenwagen; Aufbau: Transporter-Fahrgestell, Solo-Lkw; Sattelkupplung: Sattelzugmaschine)",
+          "Wechsel von Ladungsträgern oder Aufliegern im Fuhrpark",
+          "Bedarf an Lade- und Arbeitseinrichtungen am Aufbau",
+          "Anhängerbetrieb"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E6",
+            "beschreibung": "Sattelkupplung oder Anhängerbetrieb schwerer Fahrzeuge: Anhängersteuerung oder Anhängerbremsanschluss"
+          },
+          {
+            "element_id": "E9",
+            "beschreibung": "Aufbauschnittstelle für Aufbauten; Anhängersteckverbindungen und vom Fahrzeugbus getrennter Anhängerbus für Auflieger"
+          },
+          {
+            "element_id": "E12",
+            "beschreibung": "Heckleuchten am Aufbau oder Auflieger; beim geschlossenen Laderaum Sicht nach hinten über Außenspiegel und Kamera-Monitor-System"
+          },
+          {
+            "element_id": "E11",
+            "beschreibung": "Rückfahrsensorik beim geschlossenen Laderaum; Auslegung auf den gekuppelten Auflieger"
+          },
+          {
+            "element_id": "E10",
+            "beschreibung": "Schätzung der wechselnden Zugmasse im Fahrzeugmanagement"
+          },
+          {
+            "element_id": "E14",
+            "beschreibung": "Nebenabtrieb mit Hydraulikversorgung für Arbeitsgeräte oder Kippauflieger"
+          }
+        ],
+        "absatz_ids": [
+          "P13"
+        ]
+      },
+      {
+        "id": "V4",
+        "element_id": "E3",
+        "bezeichnung": "Antriebsart",
+        "alternativen": [
+          "Verbrennungsmotorischer Antrieb mit Kraftstofftank",
+          "Batterieelektrischer Antrieb mit Traktionsmaschine und Traktionsbatterie",
+          "Hybridantrieb (nur Lkw)",
+          "Brennstoffzellenantrieb (nur Lkw)"
+        ],
+        "auswahlkriterien": [
+          "Einsatzprofil und Reichweite",
+          "Verfügbarkeit von Lade- oder Tankinfrastruktur",
+          "Nutzlastverlust durch die Masse des Energiespeichers"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E4",
+            "beschreibung": "Kraftstoffanlage oder Hochvolt-Energiesystem mit Ladeeinrichtung und Gleichspannungswandler"
+          },
+          {
+            "element_id": "E13",
+            "beschreibung": "Zusätzliche Batterietemperierung und Kühlung von Traktionsmaschine und Wechselrichter"
+          },
+          {
+            "element_id": "E14",
+            "beschreibung": "Elektrisch angetriebene Nebenaggregate statt Nebenaggregatetrieb"
+          }
+        ],
+        "absatz_ids": [
+          "P6"
+        ]
+      }
+    ],
+    "klaerungsfragen": [
+      {
+        "id": "K1",
+        "frage": "Soll die Ladung in einem in die Karosserie integrierten Laderaum, auf einem Aufbau auf dem Fahrgestell oder in einem gezogenen Sattelauflieger befördert werden, und welches Ladevolumen und welche Nutzlast sind gefordert?",
+        "element_ids": [
+          "E1",
+          "E8",
+          "E2"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Von der Antwort hängt die Wahl der Fahrzeugart ab: Integrierter Laderaum führt zu Lieferwagen oder Transporter-Kastenwagen (Unterscheidung über Ladevolumen und Plattform), Aufbau zu Transporter-Fahrgestell oder Solo-Lkw (Unterscheidung über die Fahrerlaubnis), Auflieger zur Sattelzugmaschine.",
+        "variante_ids": [
+          "V3",
+          "V2"
+        ]
+      },
+      {
+        "id": "K2",
+        "frage": "Muss das Fahrzeug mit der Pkw-Fahrerlaubnis geführt werden können, oder wird ein Fahrer mit Lkw-Fahrerlaubnis vorausgesetzt?",
+        "element_ids": [
+          "E6",
+          "E14"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Massengrenze, Bremsenergieart und Ausführung der Neben- und Versorgungssysteme ab.",
+        "variante_ids": [
+          "V1"
+        ]
+      },
+      {
+        "id": "K3",
+        "frage": "Soll das Fahrzeug von einer Pkw-Plattform, einer Transporterplattform oder einem Lkw-Fahrgestell mit Rahmen abgeleitet werden?",
+        "element_ids": [
+          "E2",
+          "E7"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Tragstruktur, Einbindung des Fahrerhauses und Bauraum der Energiespeicher ab.",
+        "variante_ids": [
+          "V2"
+        ]
+      },
+      {
+        "id": "K4",
+        "frage": "Liefert der Fahrzeughersteller Aufbau oder Laderaumausbau selbst, oder ergänzt sie ein Aufbauhersteller in einer weiteren Fertigungsstufe?",
+        "element_ids": [
+          "E8",
+          "E9"
+        ],
+        "anlass": "schnittstelle",
+        "relevanz": "Davon hängt ab, welche Befestigungspunkte, Stromabgriffe und Fahrzeugsignale das Basisfahrzeug als Schnittstelle bereitstellen muss.",
+        "variante_ids": [
+          "V2",
+          "V3"
+        ]
+      },
+      {
+        "id": "K5",
+        "frage": "Soll das Fahrzeug Anhänger oder Sattelauflieger ziehen, und müssen diese mit Druckluft, Strom und Daten versorgt werden?",
+        "element_ids": [
+          "E8",
+          "E6",
+          "E9"
+        ],
+        "anlass": "schnittstelle",
+        "relevanz": "Davon hängen Koppeleinrichtung, Anhängersteuerung, Anhängersteckverbindungen und die Trennung des Anhängerbusses ab.",
+        "variante_ids": [
+          "V3",
+          "V1"
+        ]
+      },
+      {
+        "id": "K6",
+        "frage": "Welche Antriebsarten muss die Fahrzeugfamilie abdecken, und sollen sie in einem gemeinsamen Modell als Varianten geführt werden?",
+        "element_ids": [
+          "E3",
+          "E4",
+          "E13"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängt ab, welche antriebsabhängigen Teilbäume von Antrieb, Energieversorgung und Thermomanagement im Grundmodell vorzuhalten sind.",
+        "variante_ids": [
+          "V4"
+        ]
+      },
+      {
+        "id": "K7",
+        "frage": "Fährt das Fahrzeug überwiegend im Verteilerverkehr mit vielen Stopps oder im Fernverkehr mit Ruhezeiten an Bord?",
+        "element_ids": [
+          "E7",
+          "E13"
+        ],
+        "anlass": "betrieb",
+        "relevanz": "Davon hängen Fahrerhausgröße, Ruhebereich, Einstieg und Standklimatisierung ab.",
+        "variante_ids": [
+          "V2"
+        ]
+      }
+    ],
+    "anforderungsthemen": [
+      {
+        "id": "R1",
+        "element_ids": [
+          "E1",
+          "E2",
+          "E4"
+        ],
+        "thema": "Nutzlast und Massengrenze",
+        "kenngroessen": [
+          "zulässige Gesamtmasse",
+          "Nutzlast",
+          "zulässige Achslasten",
+          "Masse in fahrbereitem Zustand"
+        ]
+      },
+      {
+        "id": "R5",
+        "element_ids": [
+          "E3",
+          "E4",
+          "E13"
+        ],
+        "thema": "Reichweite und Energieversorgung",
+        "kenngroessen": [
+          "Reichweite",
+          "nutzbarer Energieinhalt",
+          "Ladeleistung",
+          "Lade- oder Tankdauer",
+          "Masse des Energiespeichers"
+        ]
+      },
+      {
+        "id": "R2",
+        "element_ids": [
+          "E8",
+          "E7"
+        ],
+        "thema": "Trennung von Sitz- und Ladebereich und Ladungssicherung",
+        "kenngroessen": [
+          "Festigkeit der Trennvorrichtung",
+          "Belastbarkeit der Zurrpunkte"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "Verordnung (EU) 2018/858, Anhang I Teil A Nr. 3.2 bis 3.4 (EU-Typgenehmigung, Fahrzeuge der Klasse N; Trennvorrichtungen für Fahrzeuge bis 7,5 t)",
+            "quellen_id": "Q4",
+            "fundstelle": "Teil A Nr. 3.2 bis 3.4"
+          }
+        ]
+      },
+      {
+        "id": "R3",
+        "element_ids": [
+          "E6",
+          "E14",
+          "E13"
+        ],
+        "thema": "Bremsvermögen und Dauerbremsung",
+        "kenngroessen": [
+          "Bremsweg",
+          "Dauerbremsleistung im Gefälle",
+          "Druckluftvorrat"
+        ]
+      },
+      {
+        "id": "R4",
+        "element_ids": [
+          "E8",
+          "E9",
+          "E6"
+        ],
+        "thema": "Schnittstellen zu Aufbau und Anhänger",
+        "kenngroessen": [
+          "Stützlast",
+          "Anhängelast",
+          "verfügbare elektrische Leistung für Aufbauten",
+          "Umfang der Fahrzeugsignale an der Aufbauschnittstelle"
+        ]
+      }
+    ]
+  },
+  "offene_punkte": [
+    "Widerspruch zwischen Kindartikeln (Zuordnung und Benennung): Aufbaustromversorgung in den Neben- und Versorgungssystemen (A-0007) gegenüber Aufbauschnittstelle in Elektrik und Elektronik (A-0006); Kabinenrohbau in Fahrzeugstruktur und Fahrwerk neben der Fahrerhausstruktur im Fahrerhaus (A-0008) gegenüber Kabinenstruktur nur im Fahrerhaus (A-0009); Ereignisdatenspeicher (A-0006) gegenüber Unfalldatenspeicher (A-0007, A-0008); Hochvolt-Verteilung (A-0006), Hochvoltverteilung (A-0007) und Hochvolt-Bordnetz (A-0008); Antriebswechselrichter (A-0006) gegenüber Wechselrichter (A-0007 bis A-0009). Eine verbindliche Zuordnungs- und Benennungsregel im Glossar fehlt.",
+    "Lücke im Kindartikel A-0009: Kontrollgerät, Geschwindigkeitsbegrenzer, Unfalldatenspeicher sowie Abbiegeassistent, Rückfahrassistent, Müdigkeitswarnung und Reifendrucküberwachung fehlen, obwohl A-0008 (P22, P24) sie für die schweren Klassen nennt; Abgleich von A-0009 mit A-0008 erforderlich.",
+    "Abweichung zwischen Kindartikeln: A-0006 P20 nennt die befristete Ausnahme der Verordnung (EU) 2019/2144 für hydraulische Servolenkungen mit Spurhaltewarnsystem als Option, A-0007 P9 bezeichnet sie als ausgelaufen; Prüfung am Volltext der Verordnung (EU) 2019/2144, Anhang II, Anmerkung C.",
+    "Vokabular im Kindartikel A-0009: Der Glossarvorschlag „Anhänger kuppeln“ ist nach der Glossarregel ein Synonym von „Fahrzeuge kuppeln“; diese Übersicht verwendet „Fahrzeuge kuppeln“.",
+    "Unterschiedlicher Betrachtungsumfang der Antriebsarten: Hybrid- und Brennstoffzellenantrieb nur in A-0008, in A-0009 ausdrücklich ausgeschlossen, Gasantriebe in allen Kindartikeln ausgeschlossen. Abgleich der Antriebsvarianten über die Kindartikel erforderlich.",
+    "Taxonomie: A-0008 führt die Sattelzugmaschine als Grundbauform (Variante V2) und überschneidet sich mit A-0009; Lieferwagen (A-0007) und Transporter (A-0006) haben keine scharfe Grenze. Schwere Transporter und Kastenwagen oberhalb der Klasse N1 bis zum Bereich der leichten Lkw (nach Q3 bis 7,5 t) deckt kein Kindartikel ausdrücklich ab. Klärung im Inventar.",
+    "Recherche: Richtlinie 96/53/EG (höchstzulässige Abmessungen und Gewichte, EU) und Verordnung (EU) 2018/858 Artikel 4 (Klassendefinitionen) im Original auf eur-lex.europa.eu, um Massengrenzen und Achslasten nicht nur über KBA und Fachliteratur zu belegen.",
+    "Recherche: Norm DIN 70010 bzw. ISO 3833 (Systematik der Straßenfahrzeuge, Begriff Nutzfahrzeug) im Wortlaut zur Abgrenzung des Elterntaxons; der Enzyklopädieartikel Nutzfahrzeug ist als unzureichend belegt gekennzeichnet.",
+    "Recherche: Fachliteratur zum Vergleich der Bremsanlagen leichter und schwerer Nutzfahrzeuge (hydraulische Bremse mit Bremskraftverstärker gegenüber Druckluftbremse), Suchbegriffe „Bremsanlage leichte Nutzfahrzeuge hydraulisch Druckluft Grenze“, „Fachkunde Nutzfahrzeugtechnik Bremsanlagen“, zur Belegung von P10."
+  ]
+}
