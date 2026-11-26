@@ -1,0 +1,1494 @@
+{
+  "schema_version": "2.3",
+  "artikel_id": "A-0126",
+  "artikeltyp": "uebersicht",
+  "titel": "Straßenfahrzeuge",
+  "betrachtungsumfang": "Übersicht über die Straßenfahrzeuge im Sinne dieser Wissensbasis, das heißt die von einer Person geführten Landfahrzeuge mit Motor- oder Muskelantrieb ohne Bindung an Gleise oder Fahrleitung, mit den Kindartikeln Personenkraftfahrzeuge (A-0127), Nutzfahrzeuge (A-0128), Personenbeförderung (A-0129), Krafträder (A-0130), Leichtfahrzeuge (A-0131) und Sonderfahrzeuge (A-0132): gemeinsame Architektur, Unterscheidungsmerkmale und gemeinsames Grundmodell auf Hauptsystemebene. Antriebsarten im Umfang der Kindartikel (Muskelkraft mit oder ohne elektrischen Hilfsantrieb, Verbrennungsmotor, Gasmotor, Hybrid-, batterieelektrischer und Brennstoffzellenantrieb) werden nur vergleichend behandelt; ihre Energiespeicher und Energiewandler sind in den Kindartikeln modelliert. Rechtliche Abgrenzung für die EU (Verordnungen (EU) 2018/858 und (EU) Nr. 168/2013 in der Textwiedergabe von legislation.gov.uk) und Deutschland (Straßenverkehrsgesetz). Straßenbahnen, Obusse, Anhänger und Sattelauflieger, land- und forstwirtschaftliche Fahrzeuge, Gelände- und Militärfahrzeuge, Arbeitsmaschinen sowie Fahrzeuge ohne eigenen Antrieb nur zur Abgrenzung; drei- und vierrädrige Kraftfahrzeuge der Klasse L und Krafträder mit Beiwagen sind durch keinen Kindartikel abgedeckt.",
+  "status": "in_arbeit",
+  "quellenzugriff": "ja",
+  "kindartikel_ids": [
+    "A-0127",
+    "A-0128",
+    "A-0129",
+    "A-0130",
+    "A-0131",
+    "A-0132"
+  ],
+  "quellen": [
+    {
+      "quellen_id": "Q1",
+      "titel": "Glossary for transport statistics, 5th edition",
+      "urheber": "Eurostat, Vereinte Nationen (UNECE) und International Transport Forum (ITF)",
+      "stand": "2019",
+      "url": "https://ec.europa.eu/eurostat/documents/3859598/10013293/KS-GQ-19-004-EN-N.pdf",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "behoerde"
+    },
+    {
+      "quellen_id": "Q2",
+      "titel": "Regulation (EU) 2018/858, Article 2: Scope (in das Recht des Vereinigten Königreichs übernommene Fassung)",
+      "urheber": "Europäisches Parlament und Rat; Textwiedergabe legislation.gov.uk",
+      "stand": null,
+      "url": "https://www.legislation.gov.uk/eur/2018/858/article/2",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q3",
+      "titel": "Regulation (EU) 2018/858, Article 4: Vehicle categories (in das Recht des Vereinigten Königreichs übernommene Fassung)",
+      "urheber": "Europäisches Parlament und Rat; Textwiedergabe legislation.gov.uk",
+      "stand": null,
+      "url": "https://www.legislation.gov.uk/eur/2018/858/article/4",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q4",
+      "titel": "Regulation (EU) No 168/2013 on the approval and market surveillance of two- or three-wheel vehicles and quadricycles, Article 4: Vehicle categories",
+      "urheber": "Europäisches Parlament und Rat; Textwiedergabe legislation.gov.uk",
+      "stand": null,
+      "url": "https://www.legislation.gov.uk/eur/2013/168/article/4",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q5",
+      "titel": "Straßenverkehrsgesetz (StVG), § 1 Zulassung (Textwiedergabe)",
+      "urheber": "Bundesrepublik Deutschland; Textwiedergabe buzer.de",
+      "stand": "Fassung vom 17. Juni 2013, in Kraft ab 21. Juni 2013",
+      "url": "https://www.buzer.de/1_StVG.htm",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q6",
+      "titel": "Straßenfahrzeug",
+      "urheber": "Wikipedia",
+      "stand": "Version vom 16. Mai 2022",
+      "url": "https://de.wikipedia.org/w/index.php?title=Stra%C3%9Fenfahrzeug&oldid=222931342",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "nachschlagewerk"
+    }
+  ],
+  "abschnitte": [
+    {
+      "ueberschrift": "Einleitung",
+      "abschnittstyp": "gesamtsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P1",
+          "text": "Das Glossar für die Verkehrsstatistik von Eurostat, UN und ITF definiert das Straßenfahrzeug als Fahrzeug, das auf Rädern läuft und für die Benutzung auf Straßen bestimmt ist, und das Straßenkraftfahrzeug als Straßenfahrzeug, das seinen Antrieb allein aus einem eingebauten Motor bezieht. Fahrräder mit Hilfsantrieb wie Pedelecs zählt es zu den Fahrrädern, die schienengebundene Straßenbahn und den an Fahrleitungen gebundenen Obus zu den Straßenfahrzeugen. Nach der Enzyklopädie ist ein Straßenfahrzeug ein Landfahrzeug, das vorrangig für den Betrieb auf Straßen vorgesehen ist und seine Fahrtrichtung mithilfe der Haftreibung ohne Gleise beibehält oder ändert; es kann mit Muskelkraft, Wind, Schwerkraft oder Motor betrieben werden.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Abschnitt B.II, Begriffe B.II-01, B.II-05, B.II-07, B.II-17 und B.II-18"
+            },
+            {
+              "quellen_id": "Q6",
+              "fundstelle": "Einleitung und Gliederung nach Antriebsart"
+            }
+          ],
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P2",
+          "text": "In Deutschland gelten nach § 1 Abs. 2 StVG Landfahrzeuge, die durch Maschinenkraft bewegt werden, ohne an Bahngleise gebunden zu sein, als Kraftfahrzeuge. Durch Muskelkraft fortbewegte Landfahrzeuge mit elektromotorischem Hilfsantrieb bis 0,25 kW Nenndauerleistung, dessen Unterstützung spätestens bei 25 km/h oder beim Einhalten im Treten unterbrochen wird, sind keine Kraftfahrzeuge; für sie gelten die Vorschriften über Fahrräder. Die Verordnung (EU) 2018/858 regelt in der EU die Genehmigung von Kraftfahrzeugen der Klassen M zur Personen- und N zur Güterbeförderung und ihrer Anhänger der Klasse O für öffentliche Straßen, auch bei Bau in mehreren Stufen. Zwei- und dreirädrige Fahrzeuge, vierrädrige Leichtfahrzeuge, land- und forstwirtschaftliche Fahrzeuge, Kettenfahrzeuge und reine Militärfahrzeuge nimmt sie aus; für Fahrzeuge von Feuerwehr, Katastrophenschutz und Ordnungskräften ist sie wahlweise anwendbar. Die ausgenommenen motorisierten zwei-, drei- und vierrädrigen Fahrzeuge vom Fahrrad mit Antriebssystem bis zum schweren Vierradfahrzeug fasst die Verordnung (EU) Nr. 168/2013 als Klasse L zusammen und unterscheidet sie unter anderem nach Verbrennungs-, Elektro- und Hybridantrieb.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q5",
+              "fundstelle": "§ 1 Abs. 2 und Abs. 3 Satz 1 und 3"
+            },
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Article 2(1), 2(2)(a) bis (d) und 2(3)(b)"
+            },
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Article 4(1)(a) bis (c)"
+            },
+            {
+              "quellen_id": "Q4",
+              "fundstelle": "Article 4(1), 4(2) und 4(3)"
+            }
+          ],
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P3",
+          "text": "In dieser Wissensbasis umfasst das Elterntaxon Straßenfahrzeuge die von einer Person geführten Landfahrzeuge mit Motor- oder Muskelantrieb, die ohne Gleis und Fahrleitung auf öffentlichen Straßen fahren, vom Fahrrad bis zur Sattelzugmaschine. Die sechs Kindartikel sind Personenkraftfahrzeuge, Nutzfahrzeuge, Personenbeförderung, Krafträder, Leichtfahrzeuge und Sonderfahrzeuge. Sie überschneiden sich: Kleinbus und Taxi sind Personenkraftwagen, Sonderfahrzeuge bauen auf einem Personenkraftwagen oder Nutzfahrzeug auf, und die Kleinkraftrad-Varianten des E-Bikes gehören rechtlich zu den Krafträdern. Außerhalb liegen Straßenbahnen und Obusse, Anhänger und Sattelauflieger, die nur als Schnittstellenpartner erscheinen, land- und forstwirtschaftliche Fahrzeuge, Gelände- und Militärfahrzeuge sowie Fahrzeuge ohne eigenen Antrieb. Drei- und vierrädrige Leichtkraftfahrzeuge und Krafträder mit Beiwagen deckt kein Kindartikel ab.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herangezogene_artikel_ids": [
+            "A-0127",
+            "A-0128",
+            "A-0129",
+            "A-0130",
+            "A-0131",
+            "A-0132"
+          ],
+          "herleitung": {
+            "praemissen": [
+              "P1",
+              "P2",
+              "A-0127/P4",
+              "A-0128/P3",
+              "A-0129/P4",
+              "A-0130/P3",
+              "A-0131/P3",
+              "A-0132/P3",
+              "A-0132/P5",
+              "Inventar A-0126: Kindartikel A-0127 bis A-0132; kein Kindartikel für drei- und vierrädrige Fahrzeuge der Klasse L oder Krafträder mit Beiwagen"
+            ],
+            "schluss": "Das Taxon umfasst die geführten, motor- oder muskelbetriebenen Straßenfahrzeuge ohne Spurbindung in sechs sich teilweise überschneidenden Kindartikeln; Straßenbahn, Obus, Anhänger und land- und forstwirtschaftliche Fahrzeuge liegen außerhalb, drei- und vierrädrige Leichtkraftfahrzeuge bleiben eine Lücke."
+          },
+          "sicherheit": "mittel"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Gemeinsame Architektur: Hauptsysteme und Wirkketten",
+      "abschnittstyp": "querschnitt",
+      "absaetze": [
+        {
+          "absatz_id": "P4",
+          "text": "Alle sechs Kindartikel führen Fahrzeugstruktur und Fahrwerk, Antriebssystem, Energieversorgungssystem, Lenksystem, Bremssystem, Elektrik und Elektronik, Fahrzeugsteuerung und Information, Fahrerassistenz und Sicherheit sowie Beleuchtung und Sicht, dazu je einen Bedienraum und ein Nutzlast-Hauptsystem; nur bei den Leichtfahrzeugen fehlt Bedienraum, Nutzlast-Hauptsystem oder Fahrerassistenz und Sicherheit in je einem Kindartikel. Ein Thermomanagement fehlt nur im Grundmodell der Leichtfahrzeuge, wo es allein das Pedelec führt; Neben- und Versorgungssysteme haben die mehrspurigen Kraftfahrzeuge und unter den Krafträdern nur das Motorrad. Bedienraum und Nutzlast tragen je nach Fahrzeugart verschiedene Glossarnamen: Fahrgastraum bei Personenkraftfahrzeugen, Personenbeförderung und Polizeifahrzeug, Fahrerhaus bei Nutzfahrzeugen und den übrigen Sonderfahrzeugen, Fahrerplatz bei Krafträdern und Leichtfahrzeugen; Laderaum und Anhängevorrichtung bei Personenkraftwagen einschließlich Kleinbus, Taxi und Polizeifahrzeug, sonst Aufbau und Ladung.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herangezogene_artikel_ids": [
+            "A-0127",
+            "A-0128",
+            "A-0129",
+            "A-0130",
+            "A-0131",
+            "A-0132"
+          ],
+          "herleitung": {
+            "praemissen": [
+              "A-0127/P6",
+              "A-0128/P5",
+              "A-0129/P5",
+              "A-0130/P4",
+              "A-0131/P4",
+              "A-0132/P6",
+              "A-0130 entfallene Kategorie nebensysteme",
+              "A-0131 entfallene Kategorien thermomanagement und nebensysteme",
+              "Glossarvorgaben: Namen der Kategorien bedienraum und aufbau_nutzlast je Fahrzeugart"
+            ],
+            "schluss": "Elf Hauptsysteme sind allen Kindartikeln gemeinsam, davon Bedienraum und Nutzlast-Hauptsystem unter fahrzeugartspezifischen Namen; Thermomanagement fehlt nur den Leichtfahrzeugen, Neben- und Versorgungssysteme gehören zu den mehrspurigen Kraftfahrzeugen und dem Motorrad."
+          },
+          "sicherheit": "hoch"
+        },
+        {
+          "absatz_id": "P5",
+          "text": "Gemeinsam ist die Wirkkette der Fortbewegung. Das Energieversorgungssystem speichert Energie als Kraftstoff oder in einer Traktionsbatterie mit Ladeeinrichtung und liefert Kraftstoff oder Traktionsstrom an das Antriebssystem; beim Fahrrad ist die Person selbst die Energiequelle. Das Antriebssystem erzeugt Antriebsleistung und überträgt das Drehmoment über Getriebe, Kettentrieb oder direkt an die Radnabe. Fahrzeugstruktur und Fahrwerk leiten alle Fahrzeuglasten über Rahmen oder Karosserie, Räder und Reifen in die Fahrbahn. Das Lenksystem lenkt mindestens die vorderen Räder, das Bremssystem verzögert über Radbremsen, und bei motorisiertem Antrieb gibt Fahrzeugsteuerung und Information dem Antriebssystem den Sollwert vor.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herangezogene_artikel_ids": [
+            "A-0127",
+            "A-0128",
+            "A-0129",
+            "A-0130",
+            "A-0131",
+            "A-0132"
+          ],
+          "herleitung": {
+            "praemissen": [
+              "A-0127/P7",
+              "A-0127/P8",
+              "A-0128/P6",
+              "A-0128/P7",
+              "A-0129/P6",
+              "A-0130/P5",
+              "A-0130/P7",
+              "A-0131/P5",
+              "A-0131/P6",
+              "A-0131/P8",
+              "A-0132/P15",
+              "Funktionsprinzip: Jede Fortbewegung braucht einen Energiespeicher oder eine Energiequelle, einen Wandler und eine Übertragung an die Räder, die die Lasten in die Fahrbahn leiten"
+            ],
+            "schluss": "Energiespeicher, Antrieb, Tragstruktur mit Rädern, Lenkung und Radbremsen bilden in allen Kindartikeln dieselbe Wirkkette; die Bauweisen der Elemente unterscheiden sich."
+          },
+          "sicherheit": "hoch"
+        },
+        {
+          "absatz_id": "P6",
+          "text": "Ebenso gemeinsam ist ein informationstechnischer Kern, dessen Umfang mit der Fahrzeugart wächst. Elektrik und Elektronik verteilen elektrische Energie über ein Niedervolt-Bordnetz und übertragen Daten über einen Fahrzeugbus, den einfache Krafträder durch Einzelleitungen ersetzen. Fahrzeugsteuerung und Information überwacht über die Diagnose den Fahrzeugzustand und bindet bei gewerblicher Nutzung und im Verleih über eine Telematikeinheit Leitstelle, Betreiber oder Flotte an; beim rein muskelbetriebenen Fahrrad bleiben davon nur Lichtanlage und optionaler Fahrradcomputer. Beleuchtung und Sicht leuchtet die Fahrzeugumgebung aus und gibt Lichtsignale ab. Fahrerassistenz und Sicherheit reicht von der Sicherung gegen unbefugte Benutzung bei Zweirädern bis zur Umfeldsensorik mehrspuriger Kraftfahrzeuge.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herangezogene_artikel_ids": [
+            "A-0127",
+            "A-0128",
+            "A-0129",
+            "A-0130",
+            "A-0131",
+            "A-0132"
+          ],
+          "herleitung": {
+            "praemissen": [
+              "A-0127/P9",
+              "A-0128/P7",
+              "A-0129/P8",
+              "A-0129/P13",
+              "A-0130/P8",
+              "A-0130/P15",
+              "A-0131/P6",
+              "A-0131/P7",
+              "A-0131/P12",
+              "A-0132/P7"
+            ],
+            "schluss": "Bordnetz, Datenübertragung, Diagnose, Beleuchtung und Sicherheitsfunktionen sind allen Kindartikeln gemeinsam; ihr Umfang reicht von Einzelleitungen und Diebstahlsicherung bis zu Fahrzeugbus, Telematik und Umfeldsensorik."
+          },
+          "sicherheit": "mittel"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Unterscheidungsmerkmal Spurigkeit und Rechtsrahmen",
+      "abschnittstyp": "variante",
+      "absaetze": [
+        {
+          "absatz_id": "P7",
+          "text": "Das am weitesten reichende Unterscheidungsmerkmal ist die Spurigkeit mit ihrem Rechtsrahmen. Personenkraftfahrzeuge, Nutzfahrzeuge, Personenbeförderung und Sonderfahrzeuge sind mehrspurige, im Stand eigenstabile Kraftwagen im Geltungsbereich der EU-Typgenehmigung: Ihr Lenksystem überträgt das Handmoment über Lenksäule und Lenkgetriebe mit Lenkunterstützung, deren elektrische Ausführung Eingriffe der Fahrerassistenz und Sicherheit über Lenk- und Bremssystem erlaubt, und der umschlossene Bedienraum schützt die Insassen mit Rückhaltesystemen. Krafträder und die meisten Leichtfahrzeuge sind einspurig: Die Person hält das Fahrzeug durch Lenken im Gleichgewicht, das Lenksystem wirkt rein mechanisch ohne Lenkgetriebe und Lenkunterstützung, und der offene Fahrerplatz hat kein Rückhaltesystem für die führende Person. Sonderfälle sind mehrspurige Lastenräder mit Drehschemel- oder Achsschenkellenkung und der stehend gefahrene E-Scooter. Mit dem Rechtsrahmen wechseln die Grenzen, die die Fahrzeugsteuerung durchsetzt: die Höchstgeschwindigkeit bei Kleinkrafträdern und Elektrokleinstfahrzeugen, die an das Treten gebundene Unterstützung bei Pedelec und Lastenrad.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herangezogene_artikel_ids": [
+            "A-0127",
+            "A-0128",
+            "A-0129",
+            "A-0130",
+            "A-0131",
+            "A-0132"
+          ],
+          "herleitung": {
+            "praemissen": [
+              "P2",
+              "A-0127/P7",
+              "A-0127/P9",
+              "A-0128/P7",
+              "A-0129/P6",
+              "A-0129/P8",
+              "A-0132/P5",
+              "A-0130/P5",
+              "A-0130/P10",
+              "A-0131/P5",
+              "A-0131/P7",
+              "A-0131/P10",
+              "A-0131/P11"
+            ],
+            "schluss": "Die Spurigkeit trennt mehrspurige Kraftwagen mit unterstützter Lenkung und umschlossenem Bedienraum von einspurigen Fahrzeugen mit mechanischer Lenkung und offenem Fahrerplatz; der zugehörige Rechtsrahmen bestimmt die Grenzen, die die Fahrzeugsteuerung durchsetzt."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "variante"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Unterscheidungsmerkmal Massenklasse und Bremsenergie",
+      "abschnittstyp": "variante",
+      "absaetze": [
+        {
+          "absatz_id": "P8",
+          "text": "Innerhalb der mehrspurigen Kraftwagen bestimmt die Massenklasse die Bremsenergie. Personenkraftfahrzeuge, leichte Nutzfahrzeuge, Kleinbus, Taxi und leichte Sonderfahrzeuge verzögern mit hydraulischer Betriebsbremse und Bremskraftverstärker, den eine Unterdruckpumpe der Neben- und Versorgungssysteme speist oder der elektromechanisch arbeitet. Lkw, Sattelzugmaschine, schwere Busse und mittlere bis schwere Sonderfahrzeuge bremsen mit Druckluft: Die Druckluftanlage der Neben- und Versorgungssysteme versorgt Betriebsbremse und Luftfederung, eine Dauerbremse kommt hinzu, deren Dauerleistung vom Thermomanagement abhängt, und die hohen Achslasten verlangen Lenkunterstützung, gegebenenfalls weitere gelenkte Achsen. Bei Lkw und Kraftomnibussen zeichnet die Fahrzeugsteuerung zudem Betriebsdaten auf und begrenzt die Höchstgeschwindigkeit. Krafträder und Leichtfahrzeuge bremsen mit zwei Radbremsen, die die Person ohne Bremskraftverstärker über Hand- oder Fußhebel betätigt; das Antiblockiersystem hängt bei Krafträdern von der Leistungsstufe ab, und beim E-Scooter kann eine elektrische Bremse eine davon bilden, wenn die andere auch ohne Spannung wirkt.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herangezogene_artikel_ids": [
+            "A-0127",
+            "A-0128",
+            "A-0129",
+            "A-0130",
+            "A-0131",
+            "A-0132"
+          ],
+          "herleitung": {
+            "praemissen": [
+              "A-0127/P7",
+              "A-0127/P8",
+              "A-0128/P10",
+              "A-0129/P10",
+              "A-0132/P10",
+              "A-0130/P4",
+              "A-0130/P6",
+              "A-0130/P7",
+              "A-0130/P10",
+              "A-0131/P5",
+              "A-0131/P11",
+              "Funktionsprinzip: Eine Dauerbremse wandelt Bewegungsenergie in Wärme, die das Thermomanagement abführen muss"
+            ],
+            "schluss": "Hydraulische Bremse mit Bremskraftverstärker, Druckluftbremse mit Druckluftanlage und Dauerbremse sowie Radbremsen ohne Bremskraftverstärker sind drei Lösungen, die mit Masse und Spurigkeit wechseln und Neben- und Versorgungssysteme, Fahrwerk, Thermomanagement, Lenkung und Fahrzeugsteuerung mitverändern."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "variante"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Unterscheidungsmerkmal Beförderungsaufgabe und Nutzlastschnittstelle",
+      "abschnittstyp": "variante",
+      "absaetze": [
+        {
+          "absatz_id": "P9",
+          "text": "Das dritte Merkmal ist die Beförderungsaufgabe mit ihrer Nutzlastschnittstelle. Personenkraftfahrzeuge und Fahrzeuge zur Personenbeförderung vereinen Fahrer- und Fahrgastplätze im Fahrgastraum; das Raumkonzept reicht vom getrennten Gepäckraum über umklappbare Sitze bis zu Stehplatzflächen mit mehreren Betriebstüren, und das Thermomanagement klimatisiert entsprechend große Innenräume. Nutzfahrzeuge trennen das Fahrerhaus von Laderaum, Aufbau oder Sattelkupplung; ihre Systemgrenze liegt an Aufbaubefestigung und Aufbauschnittstelle, an die ein Aufbauhersteller, ein Anhänger oder ein Auflieger anschließt. Sonderfahrzeuge nutzen diese Schnittstelle für ihren Sonderausbau und ergänzen Signalanlage, Einsatz- oder Betriebskommunikation und Standbetrieb der Ausrüstung. Krafträder und Leichtfahrzeuge nehmen Ladung über Gepäckträger, Koffer, einen Gepäckraum unter der Sitzbank oder beim Lastenrad über eine Ladeplattform auf, die Rahmen, Lenkung und Bremsen prägt.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herangezogene_artikel_ids": [
+            "A-0127",
+            "A-0128",
+            "A-0129",
+            "A-0130",
+            "A-0131",
+            "A-0132"
+          ],
+          "herleitung": {
+            "praemissen": [
+              "A-0127/P13",
+              "A-0129/P5",
+              "A-0129/P11",
+              "A-0128/P5",
+              "A-0128/P12",
+              "A-0128/P13",
+              "A-0132/P5",
+              "A-0132/P7",
+              "A-0132/P8",
+              "A-0130/P8",
+              "A-0130/P12",
+              "A-0131/P12"
+            ],
+            "schluss": "Die Beförderungsaufgabe legt Bedienraum, Nutzlast-Hauptsystem und die Schnittstelle zu Aufbau, Anhänger oder Sonderausbau fest und verändert Thermomanagement, Elektrik und Elektronik sowie Beleuchtung und Sicht."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "variante"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Unterscheidungsmerkmal Antriebsart",
+      "abschnittstyp": "variante",
+      "absaetze": [
+        {
+          "absatz_id": "P10",
+          "text": "Die Antriebsart variiert in jedem Kindartikel; zwischen den Fahrzeugarten unterscheidet sich vor allem ihr Umfang. Verbrennungsmotor, Hybrid- und batterieelektrischen Antrieb betrachten alle Kindartikel außer den Leichtfahrzeugen, die ohne Verbrennungsmotor auskommen und Muskelkraft mit parallelem oder seriellem elektrischem Hilfsantrieb verbinden oder rein elektrisch fahren. Den Brennstoffzellenantrieb führen nur Personenkraftfahrzeuge, Nutzfahrzeuge und Personenbeförderung, den Gasmotor nur der Bus. Mit elektrischem Antrieb erhält das Energieversorgungssystem Traktionsbatterie, Batteriemanagement, Ladeeinrichtung und meist einen Gleichspannungswandler anstelle des Generators, bei Kraftwagen und Motorrad eine Hochvoltverteilung; Elektrik und Elektronik sichern den Antriebsstromkreis getrennt ab. Bei Kraftwagen und Krafträdern temperiert das Thermomanagement die Traktionsbatterie und führt die Abwärme der Traktionsmaschine ab, bei Kraftwagen laufen Nebenaggregate elektrisch, und bei Sonderfahrzeugen deckt die Traktionsbatterie auch den Standbetrieb. Die Traktionsmaschine kann Bremsenergie zurückgewinnen, bei Leichtfahrzeugen nur als getriebeloser Nabenmotor.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herangezogene_artikel_ids": [
+            "A-0127",
+            "A-0128",
+            "A-0129",
+            "A-0130",
+            "A-0131",
+            "A-0132"
+          ],
+          "herleitung": {
+            "praemissen": [
+              "P2",
+              "A-0127/P8",
+              "A-0128/P6",
+              "A-0129/P6",
+              "A-0130/P7",
+              "A-0130/P13",
+              "A-0130/P14",
+              "A-0131/P5",
+              "A-0131/P6",
+              "A-0131/P8",
+              "A-0131/P9",
+              "A-0132/P15"
+            ],
+            "schluss": "Die Antriebsart ist in jeder Fahrzeugart eine gemeinsame Variante mit unterschiedlichem Umfang; elektrischer Antrieb verändert Energieversorgung, Bordnetzabsicherung, Thermomanagement, Nebenaggregate und Bremsenergierückgewinnung."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "variante"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Zusammenfassung",
+      "abschnittstyp": "gesamtsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P11",
+          "text": "Straßenfahrzeuge teilen damit ein Grundmodell aus Fahrzeugstruktur und Fahrwerk, Antrieb, Energieversorgung, Lenkung, Bremse, Elektrik und Elektronik, Fahrzeugsteuerung und Information, Fahrerassistenz und Sicherheit, Beleuchtung und Sicht, einem Bedienraum und einem Nutzlast-Hauptsystem; außer bei den Leichtfahrzeugen kommt das Thermomanagement, bei mehrspurigen Kraftwagen kommen die Neben- und Versorgungssysteme hinzu. Sie unterscheiden sich in Spurigkeit und Rechtsrahmen, Massenklasse und Bremsenergie, Beförderungsaufgabe mit Nutzlastschnittstelle und Umfang der Antriebsarten. Ein offener Fahrerplatz führt je nach Leistung und Antrieb zu Kraftrad oder Leichtfahrzeug, ein umschlossener Bedienraum je nach Aufgabe zu Personenkraftfahrzeug, Fahrzeug zur Personenbeförderung, Nutzfahrzeug oder, bei einer Aufgabe über das Befördern hinaus, zum Sonderfahrzeug.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herangezogene_artikel_ids": [
+            "A-0127",
+            "A-0128",
+            "A-0129",
+            "A-0130",
+            "A-0131",
+            "A-0132"
+          ],
+          "herleitung": {
+            "praemissen": [
+              "P4",
+              "P5",
+              "P6",
+              "P7",
+              "P8",
+              "P9",
+              "P10",
+              "A-0127/P16",
+              "A-0128/P14",
+              "A-0129/P14",
+              "A-0130/P16",
+              "A-0131/P13",
+              "A-0132/P16"
+            ],
+            "schluss": "Gemeinsames Grundmodell und vier Unterscheidungsmerkmale ergeben sich aus dem Vergleich der Kindartikel; Bedienraumform und Aufgabe führen zur Fahrzeugart."
+          },
+          "sicherheit": "mittel"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Modellierungsbezug",
+      "abschnittstyp": "modellierung",
+      "absaetze": [
+        {
+          "absatz_id": "P12",
+          "text": "In SysML bildet ein abstrakter Block Straßenfahrzeug den Grundblock mit den gemeinsamen Hauptsystemen als Teilen; Bedienraum und Nutzlast-Hauptsystem sind abstrakte Teile, die die Spezialisierungen als Fahrgastraum, Fahrerhaus oder Fahrerplatz beziehungsweise als Aufbau und Ladung oder Laderaum und Anhängevorrichtung festlegen, Thermomanagement und Neben- und Versorgungssysteme sind optionale Teile. Die erste Spezialisierungsebene folgt der Spurigkeit: Ein Block Kraftwagen mit Lenkunterstützung und umschlossenem Bedienraum trägt Personenkraftfahrzeug, Nutzfahrzeug, Fahrzeug zur Personenbeförderung und Sonderfahrzeug, ein Block Fahrzeug mit offenem Fahrerplatz trägt Kraftrad und Leichtfahrzeug. Die Massenklasse ist ein Variationspunkt des Bremssystems, der Rechtsrahmen eine Eigenschaft mit Randbedingungen, und das Sonderfahrzeug referenziert sein Basisfahrzeug über die Aufbauschnittstelle. Dekompositionspfade sind etwa Nutzfahrzeug → Aufbau und Ladung → Sattelkupplung → Verriegelung und Kraftrad → Energieversorgungssystem → Traktionsbatteriesystem → Batteriemanagementsystem.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herangezogene_artikel_ids": [
+            "A-0127",
+            "A-0128",
+            "A-0129",
+            "A-0130",
+            "A-0131",
+            "A-0132"
+          ],
+          "herleitung": {
+            "praemissen": [
+              "P4",
+              "P7",
+              "P8",
+              "P9",
+              "A-0127/P17",
+              "A-0128/P15",
+              "A-0129/P15",
+              "A-0130/P17",
+              "A-0131/P14",
+              "A-0132/P17"
+            ],
+            "schluss": "Ein abstrakter Grundblock mit abstrakten und optionalen Teilen und einer ersten Spezialisierung nach der Spurigkeit bildet Gemeinsamkeiten und Unterschiede der Kindartikel ab."
+          },
+          "sicherheit": "gering",
+          "aussagetyp": "modellannahme"
+        },
+        {
+          "absatz_id": "P13",
+          "text": "Wiederverwendbare Teilmodelle sind die antriebsabhängigen Teilbäume von Antriebssystem, Energieversorgungssystem und Thermomanagement, das Batteriesystem aus Traktionsbatterie, Batteriemanagementsystem und Ladeeinrichtung, die Betriebsbremse mit Bremsregelung, die Druckluftanlage schwerer Kraftwagen sowie Aufbau- und Anhängerschnittstelle. Durchgängige Ports sind Kraftstoffzulauf, Hochvolt-Schnittstelle oder Traktionsbatterieanschluss, Radnabe, Fahrzeugbus, Aufbauschnittstelle und Diagnoseschnittstelle; zuvor sind die Namen von Bedienraum, Batteriesubsystem und externer Einspeisung über die Kindartikel zu vereinheitlichen. Blockdefinitionsdiagramme zeigen Grundblock und Spezialisierungen, interne Blockdiagramme die Flüsse, parametrische Diagramme die Klassengrenzen.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herangezogene_artikel_ids": [
+            "A-0127",
+            "A-0128",
+            "A-0129",
+            "A-0130",
+            "A-0131",
+            "A-0132"
+          ],
+          "herleitung": {
+            "praemissen": [
+              "A-0127/P18",
+              "A-0128/P16",
+              "A-0129/P16",
+              "A-0130/P18",
+              "A-0131/P15",
+              "A-0132/P9",
+              "A-0132/P18"
+            ],
+            "schluss": "Die in mehreren Übersichten genannten Teilmodelle und Ports lassen sich über das ganze Taxon wiederverwenden, sobald die Benennungen vereinheitlicht sind."
+          },
+          "sicherheit": "gering",
+          "aussagetyp": "modellannahme"
+        }
+      ]
+    }
+  ],
+  "modell": {
+    "elemente": [
+      {
+        "id": "E1",
+        "name": "Straßenfahrzeug",
+        "typ": "gesamtsystem",
+        "eltern_id": null,
+        "absatz_ids": [
+          "P3",
+          "P11",
+          "P12"
+        ]
+      },
+      {
+        "id": "E2",
+        "name": "Fahrzeugstruktur und Fahrwerk",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P5"
+        ],
+        "kategorie": "struktur_fahrwerk"
+      },
+      {
+        "id": "E3",
+        "name": "Antriebssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P5",
+          "P10"
+        ],
+        "kategorie": "antrieb"
+      },
+      {
+        "id": "E4",
+        "name": "Energieversorgungssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P5",
+          "P10"
+        ],
+        "kategorie": "energieversorgung"
+      },
+      {
+        "id": "E5",
+        "name": "Lenksystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P5",
+          "P7"
+        ],
+        "kategorie": "lenkung"
+      },
+      {
+        "id": "E6",
+        "name": "Bremssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P5",
+          "P8"
+        ],
+        "kategorie": "bremse"
+      },
+      {
+        "id": "E7",
+        "name": "Fahrgastraum",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P9"
+        ],
+        "kategorie": "bedienraum"
+      },
+      {
+        "id": "E8",
+        "name": "Fahrerhaus",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P9"
+        ],
+        "kategorie": "bedienraum"
+      },
+      {
+        "id": "E9",
+        "name": "Fahrerplatz",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P7"
+        ],
+        "kategorie": "bedienraum"
+      },
+      {
+        "id": "E10",
+        "name": "Aufbau und Ladung",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P9"
+        ],
+        "kategorie": "aufbau_nutzlast"
+      },
+      {
+        "id": "E11",
+        "name": "Laderaum und Anhängevorrichtung",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P12"
+        ],
+        "kategorie": "aufbau_nutzlast"
+      },
+      {
+        "id": "E12",
+        "name": "Elektrik und Elektronik",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P6",
+          "P10"
+        ],
+        "kategorie": "elektrik_elektronik"
+      },
+      {
+        "id": "E13",
+        "name": "Fahrzeugsteuerung und Information",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P5",
+          "P6",
+          "P7",
+          "P8"
+        ],
+        "kategorie": "steuerung_information"
+      },
+      {
+        "id": "E14",
+        "name": "Fahrerassistenz und Sicherheit",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P6",
+          "P7"
+        ],
+        "kategorie": "assistenz_sicherheit"
+      },
+      {
+        "id": "E15",
+        "name": "Beleuchtung und Sicht",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P6"
+        ],
+        "kategorie": "beleuchtung_sicht"
+      },
+      {
+        "id": "E16",
+        "name": "Thermomanagement",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P8",
+          "P9",
+          "P10"
+        ],
+        "kategorie": "thermomanagement"
+      },
+      {
+        "id": "E17",
+        "name": "Neben- und Versorgungssysteme",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P8"
+        ],
+        "kategorie": "nebensysteme"
+      }
+    ],
+    "funktionen": [
+      {
+        "id": "F1",
+        "name": "Fahrzeuglasten tragen",
+        "ausgefuehrt_von": [
+          "E2"
+        ],
+        "absatz_ids": [
+          "P5"
+        ]
+      },
+      {
+        "id": "F2",
+        "name": "Antriebsleistung erzeugen",
+        "ausgefuehrt_von": [
+          "E3"
+        ],
+        "absatz_ids": [
+          "P5"
+        ]
+      },
+      {
+        "id": "F3",
+        "name": "Drehmoment übertragen",
+        "ausgefuehrt_von": [
+          "E3"
+        ],
+        "absatz_ids": [
+          "P5"
+        ]
+      },
+      {
+        "id": "F4",
+        "name": "Energie speichern",
+        "ausgefuehrt_von": [
+          "E4"
+        ],
+        "absatz_ids": [
+          "P5"
+        ]
+      },
+      {
+        "id": "F5",
+        "name": "Traktionsbatterie laden",
+        "ausgefuehrt_von": [
+          "E4"
+        ],
+        "absatz_ids": [
+          "P5",
+          "P10"
+        ]
+      },
+      {
+        "id": "F6",
+        "name": "Fahrzeug lenken",
+        "ausgefuehrt_von": [
+          "E5"
+        ],
+        "absatz_ids": [
+          "P5",
+          "P7"
+        ]
+      },
+      {
+        "id": "F7",
+        "name": "Fahrzeug verzögern",
+        "ausgefuehrt_von": [
+          "E6"
+        ],
+        "absatz_ids": [
+          "P5",
+          "P8"
+        ]
+      },
+      {
+        "id": "F8",
+        "name": "Bremsenergie zurückgewinnen",
+        "ausgefuehrt_von": [
+          "E3"
+        ],
+        "absatz_ids": [
+          "P10"
+        ]
+      },
+      {
+        "id": "F9",
+        "name": "Insassen schützen",
+        "ausgefuehrt_von": [
+          "E7",
+          "E8"
+        ],
+        "absatz_ids": [
+          "P7"
+        ]
+      },
+      {
+        "id": "F10",
+        "name": "Ladung aufnehmen",
+        "ausgefuehrt_von": [
+          "E10",
+          "E11"
+        ],
+        "absatz_ids": [
+          "P9"
+        ]
+      },
+      {
+        "id": "F11",
+        "name": "Anhänger ziehen",
+        "ausgefuehrt_von": [
+          "E10"
+        ],
+        "absatz_ids": [
+          "P9"
+        ]
+      },
+      {
+        "id": "F12",
+        "name": "Elektrische Energie verteilen",
+        "ausgefuehrt_von": [
+          "E12"
+        ],
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "F13",
+        "name": "Daten übertragen",
+        "ausgefuehrt_von": [
+          "E12"
+        ],
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "F14",
+        "name": "Fahrzeugzustand überwachen",
+        "ausgefuehrt_von": [
+          "E13"
+        ],
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "F15",
+        "name": "Höchstgeschwindigkeit begrenzen",
+        "ausgefuehrt_von": [
+          "E13"
+        ],
+        "absatz_ids": [
+          "P7",
+          "P8"
+        ]
+      },
+      {
+        "id": "F16",
+        "name": "Tretunterstützung regeln",
+        "ausgefuehrt_von": [
+          "E13"
+        ],
+        "absatz_ids": [
+          "P7"
+        ]
+      },
+      {
+        "id": "F17",
+        "name": "Betriebsdaten aufzeichnen",
+        "ausgefuehrt_von": [
+          "E13"
+        ],
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "F18",
+        "name": "Fahrzeugumfeld erfassen",
+        "ausgefuehrt_von": [
+          "E14"
+        ],
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "F19",
+        "name": "Unbefugte Benutzung verhindern",
+        "ausgefuehrt_von": [
+          "E14"
+        ],
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "F20",
+        "name": "Fahrzeugumgebung ausleuchten",
+        "ausgefuehrt_von": [
+          "E15"
+        ],
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "F21",
+        "name": "Lichtsignale abgeben",
+        "ausgefuehrt_von": [
+          "E15"
+        ],
+        "absatz_ids": [
+          "P6",
+          "P9"
+        ]
+      },
+      {
+        "id": "F22",
+        "name": "Betriebstemperatur regeln",
+        "ausgefuehrt_von": [
+          "E16"
+        ],
+        "absatz_ids": [
+          "P8",
+          "P10"
+        ]
+      },
+      {
+        "id": "F23",
+        "name": "Innenraum klimatisieren",
+        "ausgefuehrt_von": [
+          "E16"
+        ],
+        "absatz_ids": [
+          "P9"
+        ]
+      },
+      {
+        "id": "F24",
+        "name": "Druckluft bereitstellen",
+        "ausgefuehrt_von": [
+          "E17"
+        ],
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "F25",
+        "name": "Unterdruck bereitstellen",
+        "ausgefuehrt_von": [
+          "E17"
+        ],
+        "absatz_ids": [
+          "P8"
+        ]
+      }
+    ],
+    "fluesse": [
+      {
+        "id": "S1",
+        "von": "E4",
+        "nach": "E3",
+        "art": "stoff",
+        "medium": "Kraftstoff",
+        "schnittstelle": "Kraftstoffzulauf",
+        "absatz_ids": [
+          "P5"
+        ]
+      },
+      {
+        "id": "S2",
+        "von": "E4",
+        "nach": "E3",
+        "art": "elektrisch",
+        "medium": "Traktionsstrom",
+        "schnittstelle": "Hochvolt-Schnittstelle oder Traktionsbatterieanschluss",
+        "absatz_ids": [
+          "P5",
+          "P10"
+        ]
+      },
+      {
+        "id": "S3",
+        "von": "E3",
+        "nach": "E2",
+        "art": "mechanisch",
+        "medium": "Drehmoment",
+        "schnittstelle": "Radnabe oder Kettentrieb",
+        "absatz_ids": [
+          "P5"
+        ]
+      },
+      {
+        "id": "S4",
+        "von": "E5",
+        "nach": "E2",
+        "art": "mechanisch",
+        "medium": "Lenkbewegung",
+        "schnittstelle": "Lenkgetriebe oder Lenkkopf",
+        "absatz_ids": [
+          "P5",
+          "P7"
+        ]
+      },
+      {
+        "id": "S5",
+        "von": "E6",
+        "nach": "E2",
+        "art": "mechanisch",
+        "medium": "Bremsmoment",
+        "schnittstelle": "Radbremse",
+        "absatz_ids": [
+          "P5",
+          "P8"
+        ]
+      },
+      {
+        "id": "S6",
+        "von": "E13",
+        "nach": "E3",
+        "art": "information",
+        "medium": "Sollwert für den Antrieb",
+        "schnittstelle": "Fahrzeugbus oder Einzelleitung",
+        "absatz_ids": [
+          "P5",
+          "P6"
+        ]
+      },
+      {
+        "id": "S7",
+        "von": "E17",
+        "nach": "E6",
+        "art": "pneumatisch",
+        "medium": "Unterdruck oder Druckluft",
+        "schnittstelle": "Unterdruck- oder Druckluftanschluss der Betriebsbremse",
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "S8",
+        "von": "E17",
+        "nach": "E2",
+        "art": "pneumatisch",
+        "medium": "Druckluft für die Luftfederung",
+        "schnittstelle": "Druckluftanschluss der Luftfederung",
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "S9",
+        "von": "E14",
+        "nach": "E6",
+        "art": "information",
+        "medium": "Verzögerungsanforderung",
+        "schnittstelle": "Fahrzeugbus",
+        "absatz_ids": [
+          "P7"
+        ]
+      },
+      {
+        "id": "S10",
+        "von": "E14",
+        "nach": "E5",
+        "art": "information",
+        "medium": "Lenkanforderung",
+        "schnittstelle": "Fahrzeugbus",
+        "absatz_ids": [
+          "P7"
+        ]
+      },
+      {
+        "id": "S11",
+        "von": "E10",
+        "nach": "E2",
+        "art": "mechanisch",
+        "medium": "Ladungs- und Aufbaulasten",
+        "schnittstelle": "Aufbaubefestigung oder Gepäckträgeraufnahme",
+        "absatz_ids": [
+          "P9"
+        ]
+      },
+      {
+        "id": "S12",
+        "von": "E12",
+        "nach": "E10",
+        "art": "elektrisch",
+        "medium": "Aufbaustrom und Fahrzeugsignale",
+        "schnittstelle": "Aufbauschnittstelle",
+        "absatz_ids": [
+          "P9"
+        ]
+      },
+      {
+        "id": "S13",
+        "von": "E3",
+        "nach": "E16",
+        "art": "thermisch",
+        "medium": "Abwärme der Traktionsmaschine oder des Motors",
+        "schnittstelle": "Kühlmittelanschluss",
+        "absatz_ids": [
+          "P10"
+        ]
+      },
+      {
+        "id": "S14",
+        "von": "E16",
+        "nach": "E7",
+        "art": "thermisch",
+        "medium": "temperierte Luft",
+        "schnittstelle": "Luftverteilung des Fahrgastraums",
+        "absatz_ids": [
+          "P9"
+        ]
+      }
+    ],
+    "entfallene_kategorien": [],
+    "varianten": [
+      {
+        "id": "V1",
+        "element_id": "E1",
+        "bezeichnung": "Spurigkeit und Rechtsrahmen",
+        "alternativen": [
+          "Mehrspuriger Kraftwagen im Geltungsbereich der EU-Typgenehmigung für Personen- und Güterkraftwagen",
+          "Einspuriges Kraftrad im Recht der zwei- bis vierrädrigen Kraftfahrzeuge",
+          "Ein- oder mehrspuriges Leichtfahrzeug im Fahrrad- oder Elektrokleinstfahrzeugrecht"
+        ],
+        "auswahlkriterien": [
+          "Mehrspuriger Kraftwagen bei Personenkraftfahrzeugen, Nutzfahrzeugen, Personenbeförderung und Sonderfahrzeugen; einspuriges Kraftrad bei Krafträdern; Leichtfahrzeug bei Fahrrad, Pedelec, E-Bike, Lastenrad und E-Scooter im Artikel Leichtfahrzeuge",
+          "Zahl der Insassen und Bedarf an Wetterschutz und Insassenschutz",
+          "Geforderte Höchstgeschwindigkeit und Antriebsleistung",
+          "Fahrerlaubnis, Zulassung und Versicherung der vorgesehenen Nutzer"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E5",
+            "beschreibung": "Mehrspurig: Lenksäule, Lenkgetriebe und Lenkunterstützung; einspurig: rein mechanische Lenkung ohne Lenkunterstützung, mehrspurige Lastenräder mit Drehschemel- oder Achsschenkellenkung"
+          },
+          {
+            "element_id": "E7",
+            "beschreibung": "Mehrspurig: umschlossener Bedienraum mit Rückhaltesystemen (Fahrgastraum oder Fahrerhaus)"
+          },
+          {
+            "element_id": "E9",
+            "beschreibung": "Einspurig: offener Fahrerplatz ohne Rückhaltesystem für die führende Person"
+          },
+          {
+            "element_id": "E14",
+            "beschreibung": "Mehrspurig: Umfeldsensorik mit Eingriffen über Lenk- und Bremssystem; Zweiräder: vor allem Sicherung gegen unbefugte Benutzung"
+          },
+          {
+            "element_id": "E13",
+            "beschreibung": "Begrenzung der Höchstgeschwindigkeit bei Kleinkrafträdern und Elektrokleinstfahrzeugen, tretgebundene Unterstützungsgrenze bei Pedelec und Lastenrad"
+          }
+        ],
+        "absatz_ids": [
+          "P2",
+          "P7"
+        ]
+      },
+      {
+        "id": "V2",
+        "element_id": "E6",
+        "bezeichnung": "Massenklasse und Bremsenergie",
+        "alternativen": [
+          "Hydraulische Betriebsbremse mit Bremskraftverstärker",
+          "Druckluftbremse mit Druckluftanlage und Dauerbremse",
+          "Radbremsen ohne Bremskraftverstärker, über Hand- oder Fußhebel betätigt"
+        ],
+        "auswahlkriterien": [
+          "Hydraulisch bei Personenkraftfahrzeugen, leichten Nutzfahrzeugen, Kleinbus und Taxi in der Personenbeförderung und leichten Sonderfahrzeugen; Druckluft bei Lkw und Sattelzugmaschine unter den Nutzfahrzeugen, schweren Bussen in der Personenbeförderung und mittleren bis schweren Sonderfahrzeugen; ohne Bremskraftverstärker bei Krafträdern und Leichtfahrzeugen",
+          "Zulässige Gesamtmasse und Achslasten",
+          "Anhängerbetrieb mit durchgehender Bremsanlage",
+          "Bremsbelastung bei langen Gefällen"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E17",
+            "beschreibung": "Unterdruckpumpe oder keine Hilfsenergie bei hydraulischer Bremse, Druckluftanlage bei Druckluftbremse"
+          },
+          {
+            "element_id": "E2",
+            "beschreibung": "Luftfederung aus der Druckluftanlage bei schweren Kraftwagen"
+          },
+          {
+            "element_id": "E16",
+            "beschreibung": "Dauerleistung der Dauerbremse hängt von der Kühlleistung ab"
+          },
+          {
+            "element_id": "E5",
+            "beschreibung": "Lenkunterstützung und gegebenenfalls weitere gelenkte Achsen bei hohen Achslasten"
+          },
+          {
+            "element_id": "E13",
+            "beschreibung": "Betriebsdatenaufzeichnung und Geschwindigkeitsbegrenzung bei Lkw und Kraftomnibussen"
+          }
+        ],
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "V3",
+        "element_id": "E1",
+        "bezeichnung": "Beförderungsaufgabe und Nutzlastschnittstelle",
+        "alternativen": [
+          "Fahrgastraum mit Gepäckraum, umklappbaren Sitzen oder Stehplatzfläche",
+          "Fahrerhaus mit Laderaum, Aufbau oder Sattelkupplung",
+          "Sonderausbau auf einem Basisfahrzeug über die Aufbauschnittstelle",
+          "Gepäckträger, Koffer, Gepäckraum oder Ladeplattform am Fahrzeug mit offenem Fahrerplatz"
+        ],
+        "auswahlkriterien": [
+          "Personen bei Personenkraftfahrzeugen und Personenbeförderung, Güter bei Nutzfahrzeugen, Sonderaufgabe bei Sonderfahrzeugen, Gepäck und Kleinladung bei Krafträdern und Leichtfahrzeugen",
+          "Art und Menge der Ladung oder Zahl der Fahrgäste",
+          "Arbeitsteilung mit Aufbau- oder Ausbauherstellern",
+          "Anhänger- oder Aufliegerbetrieb"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E7",
+            "beschreibung": "Fahrgastraum mit Raumkonzept von getrenntem Gepäckraum bis Stehplatzfläche bei Personenkraftfahrzeugen und Personenbeförderung"
+          },
+          {
+            "element_id": "E8",
+            "beschreibung": "Fahrerhaus getrennt vom Laderaum oder Aufbau bei Nutzfahrzeugen und Sonderfahrzeugen"
+          },
+          {
+            "element_id": "E10",
+            "beschreibung": "Laderaum, Aufbau, Sattelkupplung oder Sonderausbau an Aufbaubefestigung und Aufbauschnittstelle; Gepäckträger oder Ladeplattform bei offenen Fahrzeugen"
+          },
+          {
+            "element_id": "E12",
+            "beschreibung": "Aufbauschnittstelle für Strom und Fahrzeugsignale zu Aufbau, Anhänger oder Sonderausbau"
+          },
+          {
+            "element_id": "E15",
+            "beschreibung": "Signalanlage bei Sonderfahrzeugen"
+          },
+          {
+            "element_id": "E16",
+            "beschreibung": "Klimatisierung großer Innenräume bei Personenbeförderung"
+          }
+        ],
+        "absatz_ids": [
+          "P9"
+        ]
+      },
+      {
+        "id": "V4",
+        "element_id": "E3",
+        "bezeichnung": "Antriebsart",
+        "alternativen": [
+          "Muskelkraft",
+          "Muskelkraft mit parallelem oder seriellem elektrischem Hilfsantrieb",
+          "Verbrennungsmotor",
+          "Hybridantrieb",
+          "Batterieelektrischer Antrieb",
+          "Brennstoffzellenantrieb",
+          "Gasmotor"
+        ],
+        "auswahlkriterien": [
+          "Betrachtungsumfang der Kindartikel: Verbrennungsmotor, Hybrid und batterieelektrischer Antrieb bei Personenkraftfahrzeugen, Nutzfahrzeugen, Personenbeförderung, Krafträdern und Sonderfahrzeugen, Muskelkraft und elektrischer Hilfsantrieb nur bei Leichtfahrzeugen, Brennstoffzelle nur bei Personenkraftfahrzeugen, Nutzfahrzeugen und Personenbeförderung, Gasmotor nur beim Bus in der Personenbeförderung",
+          "Reichweite und Einsatzprofil",
+          "Lade- oder Tankinfrastruktur im Einsatzgebiet",
+          "Masse und Bauraum des Energiespeichers"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E4",
+            "beschreibung": "Kraftstoffanlage oder Traktionsbatterie mit Batteriemanagement, Ladeeinrichtung, Gleichspannungswandler und bei Kraftwagen und Motorrad Hochvoltverteilung"
+          },
+          {
+            "element_id": "E12",
+            "beschreibung": "Getrennt abgesicherter Antriebsstromkreis"
+          },
+          {
+            "element_id": "E16",
+            "beschreibung": "Batterietemperierung und Abwärme der Traktionsmaschine bei Kraftwagen und Krafträdern"
+          },
+          {
+            "element_id": "E17",
+            "beschreibung": "Elektrisch angetriebene Nebenaggregate bei Kraftwagen"
+          },
+          {
+            "element_id": "E6",
+            "beschreibung": "Abstimmung von Reibungsbremse und Rückgewinnung von Bremsenergie"
+          }
+        ],
+        "absatz_ids": [
+          "P10"
+        ]
+      }
+    ],
+    "klaerungsfragen": [
+      {
+        "id": "K1",
+        "frage": "Soll das Fahrzeug Personen befördern, Güter befördern oder eine Sonderaufgabe über das Befördern hinaus erfüllen, und soll die führende Person in einem umschlossenen Bedienraum oder auf einem offenen Fahrerplatz sitzen oder stehen?",
+        "element_ids": [
+          "E1"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängt ab, welcher Kindartikel als Grundmodell dient und welche Bedienraum- und Nutzlast-Hauptsysteme das Modell erhält.",
+        "variante_ids": [
+          "V1",
+          "V3"
+        ]
+      },
+      {
+        "id": "K2",
+        "frage": "Soll das Fahrzeug einspurig oder mehrspurig sein, und soll es als Kraftwagen, als Kraftrad, als Elektrokleinstfahrzeug oder als Fahrrad eingestuft werden?",
+        "element_ids": [
+          "E1",
+          "E5",
+          "E13"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Die Einstufung legt Lenkung, Insassenschutz und die Grenzen fest, die die Fahrzeugsteuerung durchsetzen muss.",
+        "variante_ids": [
+          "V1"
+        ]
+      },
+      {
+        "id": "K3",
+        "frage": "Welche zulässige Gesamtmasse und welche Fahrerlaubnis des vorgesehenen Fahrerkreises sind vorgegeben, und soll das Fahrzeug Anhänger mit durchgehender Bremsanlage ziehen?",
+        "element_ids": [
+          "E6",
+          "E17",
+          "E2"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Die Antwort entscheidet zwischen hydraulischer Bremse und Druckluftbremse mit Druckluftanlage, Dauerbremse und Luftfederung.",
+        "variante_ids": [
+          "V2"
+        ]
+      },
+      {
+        "id": "K4",
+        "frage": "Liefert der Fahrzeughersteller das vollständige Fahrzeug, oder ergänzt ein Aufbau- oder Ausbauhersteller Aufbau oder Sonderausrüstung, und wer verantwortet dann die Schnittstelle?",
+        "element_ids": [
+          "E10",
+          "E12",
+          "E13"
+        ],
+        "anlass": "schnittstelle",
+        "relevanz": "Davon hängt ab, ob Aufbaubefestigung, Aufbauschnittstelle und Gateway als externe Schnittstellen spezifiziert werden müssen.",
+        "variante_ids": [
+          "V3"
+        ]
+      },
+      {
+        "id": "K5",
+        "frage": "Welche Antriebsarten muss die Fahrzeugfamilie abdecken, und welche Lade- oder Tankinfrastruktur steht im Einsatzgebiet zur Verfügung?",
+        "element_ids": [
+          "E3",
+          "E4",
+          "E16"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Die Antwort bestimmt Energiespeicher, Bordnetzabsicherung, Thermomanagement und Nebenaggregate.",
+        "variante_ids": [
+          "V4"
+        ]
+      },
+      {
+        "id": "K6",
+        "frage": "Sollen Bedienraum und Nutzlast-Hauptsystem im gemeinsamen Grundmodell als abstrakte Teile mit fahrzeugartspezifischen Namen geführt werden oder je Fahrzeugart als eigene Hauptsysteme?",
+        "element_ids": [
+          "E7",
+          "E8",
+          "E9",
+          "E10",
+          "E11"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängt ab, ob Teilmodelle und Ports über alle Fahrzeugarten wiederverwendet werden können.",
+        "variante_ids": [
+          "V3"
+        ]
+      }
+    ],
+    "anforderungsthemen": [
+      {
+        "id": "R1",
+        "element_ids": [
+          "E1"
+        ],
+        "thema": "Fahrzeugklasse und rechtliche Einstufung",
+        "kenngroessen": [
+          "Zahl der Räder",
+          "Sitzplätze außer dem Fahrersitz",
+          "Höchstmasse",
+          "Bauartbedingte Höchstgeschwindigkeit",
+          "Nenndauerleistung des Hilfsantriebs"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "Verordnung (EU) 2018/858, Artikel 2 und 4 (EU-Typgenehmigung, Fahrzeuge der Klassen M, N und O)",
+            "quellen_id": "Q2",
+            "fundstelle": "Article 2(1) und 2(2)"
+          },
+          {
+            "bezeichnung": "Verordnung (EU) 2018/858, Artikel 4 (EU, Klassen M, N und O)",
+            "quellen_id": "Q3",
+            "fundstelle": "Article 4(1)"
+          },
+          {
+            "bezeichnung": "Verordnung (EU) Nr. 168/2013, Artikel 4 (EU, Fahrzeuge der Klasse L)",
+            "quellen_id": "Q4",
+            "fundstelle": "Article 4(1) bis 4(4)"
+          },
+          {
+            "bezeichnung": "Straßenverkehrsgesetz, § 1 (Deutschland, Kraftfahrzeuge und Fahrräder mit elektromotorischem Hilfsantrieb)",
+            "quellen_id": "Q5",
+            "fundstelle": "§ 1 Abs. 2 und 3"
+          }
+        ]
+      },
+      {
+        "id": "R2",
+        "element_ids": [
+          "E6",
+          "E17"
+        ],
+        "thema": "Bremsvermögen und Bremsenergieversorgung",
+        "kenngroessen": [
+          "Bremsverzögerung",
+          "Dauerbremsleistung",
+          "Druckluftvorrat",
+          "Bremswirkung bei Ausfall der Energieversorgung"
+        ]
+      },
+      {
+        "id": "R3",
+        "element_ids": [
+          "E3",
+          "E4"
+        ],
+        "thema": "Reichweite und Energieversorgung",
+        "kenngroessen": [
+          "Reichweite",
+          "Nutzbarer Energieinhalt",
+          "Ladeleistung",
+          "Lade- oder Tankdauer",
+          "Masse des Energiespeichers"
+        ]
+      },
+      {
+        "id": "R4",
+        "element_ids": [
+          "E10",
+          "E12"
+        ],
+        "thema": "Schnittstelle zu Aufbau, Anhänger und Sonderausbau",
+        "kenngroessen": [
+          "Zuladung",
+          "Stütz- und Anhängelast",
+          "Verfügbare elektrische Leistung an der Aufbauschnittstelle",
+          "Umfang der Fahrzeugsignale"
+        ]
+      }
+    ]
+  },
+  "offene_punkte": [
+    "Taxonomie: Kein Kindartikel deckt drei- und vierrädrige Kraftfahrzeuge der Klasse L (L2e, L5e, L6e, L7e nach Verordnung (EU) Nr. 168/2013 Art. 4) und Krafträder mit Beiwagen (L4e) ab; A-0130 und A-0131 schließen sie aus. Im Inventar klären, ob ein eigener Kindartikel (etwa Leichtkraftfahrzeuge und Trikes) angelegt wird.",
+    "Taxonomie: Überschneidungen zwischen Kindartikeln: Kleinbus und Taxi (A-0129) sind Personenkraftwagen der Klasse M1 wie A-0127; Sonderfahrzeuge (A-0132) bauen auf Basisfahrzeugen aus A-0127 und A-0128 auf; die Kleinkraftrad-Varianten des E-Bikes (A-0131) gehören rechtlich zu A-0130. Klären, ob diese Beziehungen im Inventar als Mehrfachzuordnung oder als Basisfahrzeugbeziehung geführt werden.",
+    "Glossar: Die Kategorien bedienraum (Fahrgastraum, Fahrerhaus, Fahrerplatz) und aufbau_nutzlast (Aufbau und Ladung, Laderaum und Anhängevorrichtung) haben je Fahrzeugart verschiedene Namen; das Modell dieser Übersicht führt deshalb fünf Hauptsysteme dieser zwei Kategorien (E7 bis E11). Ein übergreifender Name je Kategorie für Übersichten fehlt im Glossar.",
+    "Uneinheitliche Zuordnung über die Kindartikel: Neben- und Versorgungssysteme bei den Krafträdern nur im Motorrad (A-0130), bei den Leichtfahrzeugen gar nicht (A-0131); Thermomanagement in A-0131 entfallen, obwohl das Pedelec eines führt; externe Einspeisung in A-0132 auf drei Hauptsysteme verteilt; Benennung des Batteriesubsystems verschieden (A-0130 Traktionsbatteriesystem, A-0131 Batteriesystem). Vereinheitlichung bei der nächsten Revision der Kindartikel.",
+    "Unterschiedlicher Betrachtungsumfang der Antriebsarten: Brennstoffzellenantrieb nur in A-0127, A-0128 und A-0129, Gasmotor nur in A-0129 (Bus), in A-0128 und A-0132 ausgeschlossen; Hybridantrieb in A-0130 nur beim Leichtkraftrad. Abgleich der Antriebsvarianten über die Kindartikel erforderlich.",
+    "Abgrenzung: Das Eurostat-Glossar (Q1, B.II-18) zählt die schienengebundene Straßenbahn zu den Straßenfahrzeugen, die Enzyklopädie (Q6) und § 1 Abs. 2 StVG (Q5) setzen die fehlende Gleisbindung voraus; diese Übersicht folgt der zweiten Abgrenzung und schließt auch den Obus aus.",
+    "Recherche: Wiener Übereinkommen über den Straßenverkehr von 1968, Artikel 1 (Begriffe Fahrzeug, Kraftfahrzeug, Fahrrad), auf unece.org; in diesem Lauf mit einer Zugangsprüfung abgewiesen.",
+    "Recherche: Norm ISO 3833 bzw. DIN 70010 (Begriffe und Systematik der Straßenfahrzeuge) im Wortlaut zur Abgrenzung des Elterntaxons.",
+    "Recherche: Originalfassungen der Verordnungen (EU) 2018/858 und (EU) Nr. 168/2013 auf eur-lex.europa.eu prüfen; gelesen wurden die Textwiedergaben auf legislation.gov.uk.",
+    "Recherche: Fachliteratur zur fahrzeugartübergreifenden Architektur von Straßenfahrzeugen (Suchbegriffe: Kraftfahrzeugtechnik Fahrzeugkonzepte Systematik, Vieweg Handbuch Kraftfahrzeugtechnik Fahrzeugklassen), um die aus den Kindartikeln hergeleiteten Absätze P4 bis P10 zu belegen."
+  ]
+}
