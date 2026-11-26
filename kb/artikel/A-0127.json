@@ -309,7 +309,7 @@
         },
         {
           "absatz_id": "P9",
-          "text": "Die informationstechnischen Hauptsysteme haben einen gemeinsamen Kern, den das Cabriolet um Verdecksteuerung und Überschlagschutzsystem, das SUV um Fahrmodusverwaltung und Allradsteuerung ergänzt. Elektrik und Elektronik verteilen elektrische Energie über Niedervolt- und gegebenenfalls Hochvolt-Bordnetz und übertragen Daten zwischen den Steuergeräten über den Fahrzeugbus. Fahrzeugsteuerung und Information koordinieren Antriebs- und Energiemanagement und überwachen den Fahrzeugzustand über Diagnose und Telematik. Fahrerassistenz und Sicherheit erfassen das Fahrzeugumfeld mit Kamera, Radar und Ultraschall und greifen über Bremssystem und Lenksystem ein. Beleuchtung und Sicht leuchten die Fahrzeugumgebung aus und stellen mit Wischern, Spiegeln und Kameras die Fahrersicht sicher.",
+          "text": "Die informationstechnischen Hauptsysteme haben einen gemeinsamen Kern, den das Cabriolet um Verdecksteuerung und Überschlagschutzsystem, das SUV um die Fahrmodusverwaltung ergänzt. Elektrik und Elektronik verteilen elektrische Energie über Niedervolt- und gegebenenfalls Hochvolt-Bordnetz und übertragen Daten zwischen den Steuergeräten über den Fahrzeugbus. Fahrzeugsteuerung und Information koordinieren Antriebs- und Energiemanagement und überwachen den Fahrzeugzustand über Diagnose und Telematik. Fahrerassistenz und Sicherheit erfassen das Fahrzeugumfeld mit Kamera, Radar und Ultraschall und greifen über Bremssystem und Lenksystem ein. Beleuchtung und Sicht leuchten die Fahrzeugumgebung aus und stellen mit Wischern, Spiegeln und Kameras die Fahrersicht sicher.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -349,7 +349,7 @@
         },
         {
           "absatz_id": "P10",
-          "text": "Uneinheitlich zugeordnet sind: Heiz- und Klimagerät beim Pkw im Fahrgastraum, sonst im Thermomanagement; Rückhaltesysteme bei Kombi, SUV und Van im Fahrgastraum, beim Cabriolet in Fahrerassistenz und Sicherheit, beim Pkw in beiden; Bordnetzbatterie bei Pkw, Kombi und Cabriolet im Energieversorgungssystem, bei SUV und Van in Elektrik und Elektronik; Gleichspannungswandler bei Pkw, Kombi und SUV im Energieversorgungssystem, beim Van in Elektrik und Elektronik; Hochvolt-Bordnetz beim Pkw in Elektrik und Elektronik, bei Kombi und SUV im Energieversorgungssystem; Brennstoffzellensystem beim Pkw im Antriebssystem, beim Kombi im Energieversorgungssystem; Fahrdynamikregelung beim Pkw im Bremssystem, beim SUV in der Fahrzeugsteuerung; Heckklappe beim Pkw in der Karosserie, bei Kombi, SUV und Van im Laderaum.",
+          "text": "Uneinheitlich zugeordnet sind: Heiz- und Klimagerät beim Pkw im Fahrgastraum, sonst im Thermomanagement; Rückhaltesysteme bei Kombi, SUV, Van und Cabriolet im Fahrgastraum, beim Pkw aufgeteilt auf Fahrgastraum und Fahrerassistenz und Sicherheit; Bordnetzbatterie bei Pkw, Kombi, Van und Cabriolet im Energieversorgungssystem, beim SUV in Elektrik und Elektronik.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -363,23 +363,14 @@
               "A-0002/P12",
               "A-0003/P17",
               "A-0004/P10",
-              "A-0005/P17",
-              "A-0001/P8",
+              "A-0005/P10",
               "A-0001/P10",
               "A-0002/P8",
+              "A-0004/P7",
               "A-0005/P6",
-              "A-0003/P19",
-              "A-0004/P14",
-              "A-0001/P21",
-              "A-0003/P11",
-              "A-0001/P14",
-              "A-0003/P20",
-              "A-0001/P5",
-              "A-0002/P15",
-              "A-0003/P18",
-              "A-0004/P13"
+              "A-0003/P19"
             ],
-            "schluss": "Die Kindartikel widersprechen sich in der Zuordnung von Heiz- und Klimagerät, Rückhaltesystemen, Bordnetzbatterie, Gleichspannungswandler, Hochvolt-Bordnetz, Brennstoffzellensystem, Fahrdynamikregelung und Heckklappe; das Grundmodell muss diese Zuordnungen festlegen."
+            "schluss": "Die Kindartikel widersprechen sich in der Zuordnung von Heiz- und Klimagerät, Rückhaltesystemen und Bordnetzbatterie; das Grundmodell muss diese Zuordnungen festlegen."
           },
           "sicherheit": "hoch",
           "herangezogene_artikel_ids": [
@@ -726,8 +717,7 @@
         "eltern_id": "E1",
         "absatz_ids": [
           "P6",
-          "P7",
-          "P10"
+          "P7"
         ],
         "kategorie": "bremse"
       },
@@ -1367,15 +1357,12 @@
       },
       {
         "id": "K7",
-        "frage": "Welchem Hauptsystem sollen im gemeinsamen Grundmodell Heiz- und Klimagerät, Rückhaltesysteme, Bordnetzbatterie, Gleichspannungswandler, Hochvolt-Bordnetz, Brennstoffzellensystem, Fahrdynamikregelung und Heckklappe zugeordnet werden?",
+        "frage": "Welchem Hauptsystem sollen im gemeinsamen Grundmodell Heiz- und Klimagerät, Rückhaltesysteme und Bordnetzbatterie zugeordnet werden?",
         "element_ids": [
           "E13",
           "E7",
           "E4",
-          "E9",
-          "E3",
-          "E6",
-          "E8"
+          "E9"
         ],
         "anlass": "schnittstelle",
         "relevanz": "Davon hängt ab, ob Teilmodelle der Kindartikel ohne Umbau in den Grundblock übernommen werden können."
@@ -1464,7 +1451,7 @@
     ]
   },
   "offene_punkte": [
-    "Widerspruch zwischen Kindartikeln (Zuordnung): Heiz- und Klimagerät im Fahrgastraum (A-0001) gegenüber Thermomanagement (A-0002 bis A-0005); Rückhaltesysteme im Fahrgastraum (A-0002, A-0003, A-0004) gegenüber Fahrerassistenz und Sicherheit (A-0005) und Aufteilung in A-0001; Bordnetzbatterie im Energieversorgungssystem (A-0001, A-0002, A-0005) gegenüber Elektrik und Elektronik (A-0003, A-0004); Hochvolt-Bordnetz bzw. Hochvolt-Verteilung in Elektrik und Elektronik (A-0001) gegenüber Energieversorgungssystem (A-0002, A-0003); Fahrdynamikregelung im Bremssystem (A-0001) gegenüber Fahrzeugsteuerung und Information (A-0003); Heckklappe in der Karosserie (A-0001) gegenüber Laderaum und Anhängevorrichtung (A-0002, A-0003, A-0004). Gleichspannungswandler im Energieversorgungssystem (A-0001, A-0002, A-0003) gegenüber Elektrik und Elektronik (A-0004); Brennstoffzellensystem im Antriebssystem (A-0001) gegenüber Energieversorgungssystem (A-0002, unter der Wasserstoffanlage). Eine verbindliche Zuordnungsregel im Glossar oder Leitfaden fehlt.",
+    "Widerspruch zwischen Kindartikeln (Zuordnung): Heiz- und Klimagerät im Fahrgastraum (A-0001) gegenüber Thermomanagement (A-0002 bis A-0005); Rückhaltesysteme im Fahrgastraum (A-0002 bis A-0005) gegenüber Aufteilung auf Fahrgastraum und Fahrerassistenz und Sicherheit in A-0001; Bordnetzbatterie im Energieversorgungssystem (A-0001, A-0002, A-0004, A-0005) gegenüber Elektrik und Elektronik (A-0003). Die Zuordnungsliste der Glossarvorgaben legt Heiz- und Klimaanlage ins Thermomanagement, Rückhaltesystem, Sicherheitsgurt und Airbag in den Bedienraum (Fahrgastraum) und Bordnetzbatterie ins Energieversorgungssystem; A-0001 und A-0003 weichen davon ab.",
     "Begriff: A-0001 übernimmt die KBA-Schreibweise Kabrio-Limousine für die Aufbauart AE (nach UNECE R.E.3 Abs. 2.9.1.5 = Convertible), A-0005 verwendet Cabriolimousine für die Mischform mit stehenden Tür- und Fensterrahmen; kein Widerspruch in der Sache. Wortlaut ISO 3833:1977 Begriffe 3.1.1.2 und 3.1.1.6 zur Bestätigung beschaffen.",
     "Abweichung im Kindartikel A-0004: Absatz P25 beschreibt von Transportern abgeleitete Vans mit Leiterrahmen, Variante V2 führt die Transporterableitung dagegen als selbsttragenden Aufbau getrennt vom Leiterrahmen.",
     "Abweichung zwischen Quellen der Geländeeinstufung: A-0003 P3 nennt nach UNECE R.E.3 Abs. 2.8.1.1 eine Steigfähigkeit von 30 Prozent; Verordnung (EU) 2018/858 Anhang I Teil A Nr. 4.1 Buchstabe c nennt 25 %. Für EU-Typgenehmigungen ist der EU-Wert zu prüfen und in A-0003 zu ergänzen.",
