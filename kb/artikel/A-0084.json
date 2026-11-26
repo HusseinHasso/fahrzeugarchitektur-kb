@@ -1,0 +1,2725 @@
+{
+  "schema_version": "2.3",
+  "artikel_id": "A-0084",
+  "artikeltyp": "blatt",
+  "titel": "Unterwasserdrohne",
+  "betrachtungsumfang": "Generische Referenzarchitektur der kleinen, tragbaren, über einen Tether ferngesteuerten Unterwasserdrohne der Micro- und Mini-Klasse (Beobachtungs- und Inspektionsdrohne für Freizeit, Inspektion, Forschung und Behörden), die von einer Person vom Ufer oder von einem kleinen Boot aus betrieben wird, einschließlich Tether und Leitstand. Betrachtete Antriebsarten: batterieelektrisch (Energiespeicher Traktionsbatterie an Bord, Wandler elektrische Thruster mit Motorreglern) und elektrisch mit Speisung von der Oberfläche über den Tether (Energiequelle Oberflächenstromversorgung, Wandler elektrische Thruster mit Motorreglern). Nicht betrachtet werden Arbeits-ROV mit hydraulischen Antrieben, Versorgungskabel und Tether-Management-Garage (eigener Artikel ROV), autonome Unterwasserfahrzeuge ohne Kabel (eigener Artikel AUV), Unterwassergleiter, tauchfähige Luftdrohnen, geschleppte Systeme sowie militärische Großdrohnen und Unterwasserwaffen.",
+  "status": "in_arbeit",
+  "quellenzugriff": "ja",
+  "kindartikel_ids": [],
+  "quellen": [
+    {
+      "quellen_id": "Q1",
+      "titel": "Unbemanntes Unterwasserfahrzeug (Zielartikel der Weiterleitung „Unterwasserdrohne“)",
+      "urheber": "Wikipedia, Die freie Enzyklopädie (deutschsprachig)",
+      "stand": "am Abrufdatum abgerufene Fassung (Rohtext)",
+      "url": "https://de.wikipedia.org/wiki/Unbemanntes_Unterwasserfahrzeug",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q2",
+      "titel": "Remotely operated underwater vehicle",
+      "urheber": "Wikipedia, The Free Encyclopedia (englischsprachig)",
+      "stand": "am Abrufdatum abgerufene Fassung (Rohtext)",
+      "url": "https://en.wikipedia.org/wiki/Remotely_operated_underwater_vehicle",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q3",
+      "titel": "What is an ROV?",
+      "urheber": "NOAA Ocean Exploration, National Oceanic and Atmospheric Administration (USA)",
+      "stand": null,
+      "url": "https://oceanexplorer.noaa.gov/facts/rov.html",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "behoerde"
+    },
+    {
+      "quellen_id": "Q4",
+      "titel": "A Customisable Underwater Robot",
+      "urheber": "Guido Schillaci, Fabio Schillaci, Verena V. Hafner (Humboldt-Universität zu Berlin, Adaptive Systems Group), arXiv:1707.06564",
+      "stand": "v1, 20. Juli 2017",
+      "url": "https://arxiv.org/abs/1707.06564",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "fachliteratur"
+    },
+    {
+      "quellen_id": "Q5",
+      "titel": "BlueROV2 – Affordable and Capable Underwater ROV (Produktseite mit technischen Daten)",
+      "urheber": "Blue Robotics Inc.",
+      "stand": null,
+      "url": "https://bluerobotics.com/store/rov/bluerov2/",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "hersteller"
+    },
+    {
+      "quellen_id": "Q6",
+      "titel": "ArduSub Documentation: Safety Setup Page (Failsafes)",
+      "urheber": "ArduSub-Projekt (Blue Robotics), archivierte Dokumentation",
+      "stand": null,
+      "url": "https://www.ardusub.com/reference/ardusub/safety-setup-page.html",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "hersteller"
+    }
+  ],
+  "abschnitte": [
+    {
+      "ueberschrift": "Einleitung",
+      "abschnittstyp": "gesamtsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P1",
+          "text": "Eine Unterwasserdrohne ist ein unbemanntes Unterwasserfahrzeug (UUV), also ein Roboter, der im Wasser arbeitet. Unbemannte Unterwasserfahrzeuge gliedern sich in ferngesteuerte (ROV) und autonome Unterwasserfahrzeuge (AUV). Inzwischen gibt es auch kleinere Geräte für den Freizeitbereich, etwa für Unterwasserbeobachtungen oder beim Angeln. Einsatzgebiete sind unter anderem die Inspektion von Unterwasserbauwerken und Schiffshüllen, die Unterstützung von Tauchern, die Überwachung von Aquakulturen und militärisch die Minensuche.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Weiterleitung „Unterwasserdrohne“; Einleitung, Absatz zu kleineren Geräten im Freizeitbereich und Liste der Einsatzgebiete"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "funktion"
+        },
+        {
+          "absatz_id": "P2",
+          "text": "Ferngesteuerte Unterwasserfahrzeuge werden nach Größe, Gewicht, Fähigkeit oder Leistung klassifiziert. Micro-ROVs wiegen teils unter 3 kg und ersetzen Taucher in Abwasserkanälen, Rohrleitungen oder kleinen Hohlräumen. Mini-ROVs wiegen etwa 15 kg; eine Person kann das ganze System mit einem kleinen Boot transportieren, aussetzen und betreiben. Beide Klassen heißen auch „Eyeball“-Klasse, in Abgrenzung zu Fahrzeugen für Eingriffsaufgaben.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Abschnitt „Classification“, Punkte „Micro“ und „Mini“"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "variante"
+        },
+        {
+          "absatz_id": "P3",
+          "text": "Dieser Artikel beschreibt die Unterwasserdrohne als kleine, tragbare, über ein Kabel ferngesteuerte Beobachtungs- und Inspektionsdrohne dieser Klassen. Das Gesamtsystem umfasst Fahrzeug, Tether und Leitstand an der Oberfläche. Die Systeme sind über mechanische, elektrische, informationstechnische und hydrostatische Schnittstellen gekoppelt. Für eine Dekomposition, etwa in SysML, wird die Drohne zuerst in Hauptsysteme und diese in Subsysteme und Komponenten zerlegt.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P1",
+              "P2",
+              "Abgrenzung zu den eigenen Artikeln über Arbeits-ROV und AUV in der Wissensbasis",
+              "Ohne Tether und Leitstand ist eine ferngesteuerte Drohne nicht betreibbar"
+            ],
+            "schluss": "Die Systemgrenze schließt Fahrzeug, Tether und Leitstand ein; die Kopplung erfolgt über Kräfte, Energie, Daten und Auftrieb."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "modellannahme"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrzeugstruktur",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E2",
+      "absaetze": [
+        {
+          "absatz_id": "P4",
+          "text": "Ferngesteuerte Unterwasserfahrzeuge haben zwei Grundkonfigurationen: den offenen Rahmen, der Sensoren, Thruster und mechanische Komponenten aufnimmt und für freies Schwimmen bei schwacher Strömung taugt, und die Torpedoform mit geringem Strömungswiderstand, die bei langsamer Fahrt zu Instabilitäten neigt. Elektrische Komponenten sitzen in ölgefüllten oder Einatmosphären-Gehäusen, die vor Korrosion und Wasserdruck schützen. Kleinere ROVs haben sehr unterschiedliche Bauformen.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Abschnitte „Configurations“ und „Construction“, Absätze 2 und 3"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "variante"
+        },
+        {
+          "absatz_id": "P5",
+          "text": "Bei kostengünstigen Unterwasserdrohnen liegt die Elektronik in wasserdichten Behältern; die Thruster sind über Kabel und Kabelverschraubungen angeschlossen, alternativ wurde eine Magnetkupplung zu Motoren im Gehäuse erprobt. Ein Berliner Prototyp nutzt ein Gehäuserohr mit Endkappe aus Aluminium, eine Glaskuppel und O-Ring-gedichtete Flansche; Motorkabel und Tether laufen durch vergossene Kabeldurchführungen.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q4",
+              "fundstelle": "Abschnitt I „Introduction“, Absatz zu wasserdichten Gehäusen; Abschnitt III-A „Hardware description“"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P6",
+          "text": "Die Fahrzeugstruktur gliedert sich in den Rahmen und das Druckgehäuse mit Gehäuserohr, Endkappe, Sichtkuppel und Kabeldurchführung. Der Rahmen trägt Thruster, Auftriebskörper, Ballastgewichte, Leuchten und Nutzlast und leitet Schub- und Gewichtskräfte zwischen ihnen weiter. Das Druckgehäuse nimmt den Wasserdruck auf und hält Elektronik und Kamera trocken; jede Durchführung ist eine Dichtstelle. Ein offener Rahmen lässt Anbauraum, eine stromlinienförmige Hülle senkt den Widerstand, erschwert aber Langsamfahrt und Nutzlastanbau.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P4",
+              "P5",
+              "Jede Kraft braucht einen Lastpfad zwischen Angriffspunkt und tragender Struktur",
+              "Jede Leitung durch eine druckfeste Wand ist eine Dichtstelle"
+            ],
+            "schluss": "Rahmen als Lastträger, Druckgehäuse als trockener Raum mit Dichtstellen; die Bauform verschiebt Widerstand gegen Anbauraum."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P7",
+          "text": "Die BlueROV2 von Blue Robotics hat einen offenen Rahmen, der sich mit einem Nutzlastschlitten erweitern lässt. Ihre Gehäuse gibt es aus Acryl für Tauchtiefen bis 100 m und aus eloxiertem Aluminium bis 300 m.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q5",
+              "fundstelle": "Abschnitte „Depth Rating up to 300 meters“ und zum offenen Rahmen sowie Konfigurationsoption „Tube Configuration“"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "variante"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Auftriebs- und Trimmsystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E9",
+      "absaetze": [
+        {
+          "absatz_id": "P8",
+          "text": "Üblich ist, Unterwasserfahrzeuge positiv auftreibend auszulegen, damit sie bei einem Energieausfall auftauchen. Kostengünstige ROVs nutzen festen Ballast aus Blei, Auftriebskammern und syntaktischem Schaum und tauchen mit vertikalen Thrustern auf und ab; variabler Ballast erspart diesen Schub, ist aber teurer und aufwendiger. Der Berliner Prototyp nutzt zweigeteilte Ballastzylinder mit Stahlkugeln oder syntaktischem Schaum, um Auftrieb und Schwerpunkt einzustellen.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q4",
+              "fundstelle": "Abschnitt I „Introduction“, Absätze zu Auftrieb und Ballast; Abschnitt II, Absatz zum Ballastzylinder"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "variante"
+        },
+        {
+          "absatz_id": "P9",
+          "text": "Das Auftriebs- und Trimmsystem besteht aus Auftriebskörpern und Ballastgewichten. Es gleicht Gewicht und Verdrängung von Struktur, Batterie und Nutzlast bis auf einen geringen Restauftrieb aus und legt den Schwerpunkt unter den Auftriebsmittelpunkt. Jede Änderung an Nutzlast oder Batterie erfordert neues Austrimmen. Variabler Ballast brächte Tauchzelle, Pumpe und Regelung mit Energie- und Steuerschnittstellen hinzu.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P8",
+              "Q2 (Abschnitt „Construction“: Auftriebskörper oben, schwere Komponenten unten, Abstand der Schwerpunkte gibt Stabilität)",
+              "Archimedisches Prinzip: Auftrieb gleich Gewicht des verdrängten Wassers"
+            ],
+            "schluss": "Auftriebskörper und Ballastgewichte stellen Restauftrieb und aufrichtendes Moment ein; Massenänderungen erzwingen neuen Trimm."
+          },
+          "sicherheit": "hoch",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Antriebssystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E12",
+      "absaetze": [
+        {
+          "absatz_id": "P10",
+          "text": "Unterwasserdrohnen werden durch Propeller angetrieben, deren Anzahl und Ausrichtung die Freiheitsgrade festlegen. Mit drei Thrustern ermöglichen zwei horizontale Vor- und Rückwärtsfahrt und Gieren, ein vertikaler am Heck das Nicken, aber kein Auf- und Abtauchen. Zusätzliche vertikale Thruster nahe dem Schwerpunkt ermöglichen Auf- und Abtauchen, eine vektorierte Anordnung mit sechs Thrustern auch Seitwärtsfahrt und Rollen. Im Prototyp treibt je ein bürstenloser Motor einen Propeller, gesteuert über einen elektronischen Drehzahlregler mit Pulsweitenmodulation.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q4",
+              "fundstelle": "Abschnitt I, Absatz zu Propellern; Abschnitt II, Absätze zu den Rahmenkonfigurationen (Fig. 9 bis 11); Abschnitt III-A"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "variante"
+        },
+        {
+          "absatz_id": "P11",
+          "text": "Die BlueROV2 nutzt sechs Thruster in vektorierter Anordnung; ein Nachrüstsatz ergänzt zwei Thruster und zusätzlichen Auftrieb für Steuerung in allen sechs Freiheitsgraden, mehr Stabilität und mehr Nutzlast.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q5",
+              "fundstelle": "Abschnitt „Vectored Thruster Configuration and the Heavy Kit“; Konfigurationsoption „Heavy Configuration Upgrade“"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "variante"
+        },
+        {
+          "absatz_id": "P12",
+          "text": "Das Antriebssystem besteht aus Horizontalthrustern, Vertikalthrustern und Motorreglern. Der Steuerrechner verteilt die Sollbewegung auf die Thruster, die Motorregler stellen aus der Bordspannung Drehzahl und Drehrichtung, und die Thruster wandeln die elektrische Leistung in Schub, der über den Rahmen wirkt. Kursänderung und Abbremsen geschehen durch Schubdifferenz und Schubumkehr. Mit der Thrusteranordnung ändern sich Zahl der Motorregler, Abgänge am Stromverteiler, Leistungsbedarf und Schubverteilung im Steuerrechner.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P10",
+              "P11",
+              "Ein Propeller wandelt das Drehmoment des Motors in Schub",
+              "Ohne Ruder und Bremse bleibt zur Richtungsänderung und Verzögerung nur die Schubsteuerung"
+            ],
+            "schluss": "Kette Steuerrechner, Motorregler, Thruster, Rahmen; Lenken und Bremsen sind Schubfunktionen des Antriebssystems."
+          },
+          "sicherheit": "hoch",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "funktion"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Energieversorgungssystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E16",
+      "absaetze": [
+        {
+          "absatz_id": "P13",
+          "text": "Der Berliner Prototyp wird aus einem Lithium-Polymer-Akku versorgt. Eine Stromverteilerplatine speist die Drehzahlregler, ein Strommodul die Flugsteuerung und ein getakteter Spannungswandler den Begleitrechner; ein wasserdichter Schalter vor der Elektronik schaltet die Drohne, ohne das Gehäuse zu öffnen.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q4",
+              "fundstelle": "Abschnitt III-A „Hardware description“, Absätze zu Akku, Stromverteilung und Schalter"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P14",
+          "text": "Ferngesteuerte Unterwasserfahrzeuge erhalten Energie, Video und Daten meist über Tether oder Versorgungskabel; an Bord wird die Energie auf die Komponenten verteilt. Die BlueROV2 trägt dagegen eine Batterie an Bord, die sich in etwa 30 Sekunden tauschen lässt; Batterie und Ladegerät beschafft der Betreiber selbst.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Abschnitt „Description“, Absätze 1 und 2"
+            },
+            {
+              "quellen_id": "Q5",
+              "fundstelle": "Abschnitt „BlueROV2 Accessories and Add-ons“ und technische Daten zur Batterielaufzeit"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "variante"
+        },
+        {
+          "absatz_id": "P15",
+          "text": "Das Energieversorgungssystem gliedert sich in den Bordenergiespeicher mit Traktionsbatterie und Gleichspannungswandler und die Oberflächenversorgung mit Ladeeinrichtung und Oberflächenstromversorgung. Mit Bordbatterie begrenzt deren Kapazität die Einsatzdauer, und der Tether führt nur Daten. Bei Speisung von der Oberfläche liefert die Oberflächenstromversorgung über zusätzliche Leiter im dann dickeren Tether; an Bord bildet der Gleichspannungswandler die Bordspannung, und die Batterie mit ihrem Trimmeinfluss entfällt.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P13",
+              "P14",
+              "Q2 (Abschnitt „Tether management“: dicker Tether erhöht den Widerstand)",
+              "Gespeicherte Energie begrenzt die Betriebsdauer"
+            ],
+            "schluss": "Zwei Antriebsarten mit Traktionsbatterie oder Oberflächenstromversorgung als Quelle; die Wahl verändert Tether, Trimm und Einsatzdauer."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "variante"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Leitstand",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E23",
+      "absaetze": [
+        {
+          "absatz_id": "P16",
+          "text": "Ein ROV wird von einer Person an der Oberfläche mit einem Joystick gesteuert, ähnlich wie bei einem Videospiel. Bei der BlueROV2 dienen dazu ein Gamecontroller und ein Laptop mit Bodenkontrollsoftware für Fahrzeugsteuerung, Livevideo und Sensordaten. Beim Berliner Prototyp läuft die Bodenkontrollsoftware auf Rechner, Tablet oder Smartphone und übernimmt auch die Tauchplanung; eine einfache Videobrille mit Smartphone zeigt das Kamerabild.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Absatz 2"
+            },
+            {
+              "quellen_id": "Q5",
+              "fundstelle": "Abschnitt „Powered by the Navigator and BlueOS“, letzter Absatz"
+            },
+            {
+              "quellen_id": "Q4",
+              "fundstelle": "Abschnitte III-A und III-B"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P17",
+          "text": "Der Leitstand besteht aus Bedienelementen, Anzeigeelementen und dem Oberflächenrechner. Die Bedienelemente erfassen die Fahrereingaben, der Oberflächenrechner setzt sie in Steuerbefehle um und sendet sie über den Tether an das Fahrzeugmanagement; zurück kommen Video und Zustandsdaten für die Anzeigeelemente, die der Oberflächenrechner auch aufzeichnet. Ohne Fahrer an Bord ist der Leitstand die einzige Mensch-Maschine-Schnittstelle.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P16",
+              "P3",
+              "Ohne Person an Bord laufen alle Eingaben und Rückmeldungen über die Oberfläche"
+            ],
+            "schluss": "Leitstand mit Bedienelementen, Anzeigeelementen und Oberflächenrechner als Mensch-Maschine-Schnittstelle."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Nutzlastsystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E27",
+      "absaetze": [
+        {
+          "absatz_id": "P18",
+          "text": "Die meisten ROVs tragen mindestens Videokamera und Leuchten. Hinzu kommen je nach Aufgabe Sonar, Magnetometer, Fotokamera, Manipulator- oder Schneidarm, Wasserprobennehmer und Messgeräte etwa für Sichttiefe und Temperatur. Inspektions-ROVs werden in Klasse I (nur Beobachtung) und Klasse II (Beobachtung mit Nutzlast) unterteilt und tragen je nach Nutzlastkapazität Leuchten, Kameras, Sonar und eine USBL-Ortungsbake.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Abschnitt „Description“, Absatz 2; Abschnitt „Applications“, Unterabschnitt „Survey“"
+            },
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Absatz 3"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "variante"
+        },
+        {
+          "absatz_id": "P19",
+          "text": "Das Nutzlastsystem gliedert sich in die Messausrüstung mit bildgebendem Sonar und Messsonde und die Interventionsausrüstung mit Manipulator und Wasserprobennehmer. Die Pilotenkamera ordnet dieses Modell dem Beleuchtungs- und Sichtsystem zu. Jede Nutzlast hängt am Rahmen, am Stromverteiler und am Begleitrechner, verändert den Trimm und belegt eine Kabeldurchführung; Greifkräfte des Manipulators muss das Antriebssystem durch Gegenschub halten.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P18",
+              "P6",
+              "P9",
+              "Reaktionskräfte einer frei schwimmenden Drohne werden nur durch Schub abgestützt"
+            ],
+            "schluss": "Nutzlasten bilden eigene Mess- und Interventionsausrüstung mit Schnittstellen zu Struktur, Energie, Daten, Trimm und Antrieb."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "modellannahme"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Elektrik und Elektronik",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E34",
+      "absaetze": [
+        {
+          "absatz_id": "P20",
+          "text": "Die Elektrik und Elektronik umfasst Stromverteiler, Leitungssatz und Hauptschalter im Druckgehäuse. Der Stromverteiler verteilt die Bordspannung auf Motorregler, Steuerrechner, Begleitrechner, Leuchten und Nutzlast; der Leitungssatz verbindet sie und führt über die Kabeldurchführungen nach außen. Der Hauptschalter liegt vor der übrigen Elektronik. Weil eindringendes Wasser Kurzschlüsse auslösen kann, gehören Absicherung der Abgänge und Leckageüberwachung zusammen.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P13",
+              "P5",
+              "Q5 (Navigator mit Ausgängen für Thruster, Leuchten und Zubehör)",
+              "Wasser in elektrischen Anlagen verursacht Kurzschlüsse"
+            ],
+            "schluss": "Bordnetz aus Hauptschalter, Stromverteiler und Leitungssatz mit Abgängen je Verbraucher."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrzeugsteuerung und Information",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E38",
+      "absaetze": [
+        {
+          "absatz_id": "P21",
+          "text": "Kostengünstige Unterwasserdrohnen tragen wie Flugdrohnen Kameras und grundlegende Sensorik wie Inertialmesseinheit und Tiefensensor. Im Berliner Prototyp arbeitet ein Raspberry Pi als Begleitrechner einer Pixhawk-Flugsteuerung mit Gyroskop, Beschleunigungssensor, Magnetometer und Barometer, ergänzt um einen wasserdichten Druck- und Temperatursensor. Die Software ArduSub bietet Stabilitätsregelung, Tiefen- und Kurshaltung sowie autonome Navigation entlang vorprogrammierter Bahnen.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q4",
+              "fundstelle": "Abschnitt I, Absatz zu Kameras und Sensorik; Abschnitte III-A und III-B"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P22",
+          "text": "Die Fahrzeugsteuerung und Information gliedert sich in das Fahrzeugmanagement mit Steuerrechner und Begleitrechner, die Navigationssensorik mit Inertialmesseinheit, Magnetometer und Tiefensensor sowie die Unterwasserpositionierung. Der Steuerrechner regelt Lage, Tiefe und Kurs und gibt Stellwerte an die Motorregler; der Begleitrechner überträgt Video und Daten zum Leitstand. Da Funk im Wasser schnell absorbiert wird und Satellitenortung unter Wasser fehlt, bestimmt die Drohne ihre Position durch Koppelnavigation oder akustisch.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P21",
+              "P18",
+              "Q2 (Abschnitt „Description“: Funkwellen werden im Wasser schnell absorbiert)",
+              "Q6 (Arming Checks: eine GPS-Antenne funktioniert unter Wasser nicht, es braucht ein Unterwasser-Positionierungssystem)"
+            ],
+            "schluss": "Zweistufiges Fahrzeugmanagement mit Navigationssensorik; Position nur über Koppelnavigation oder akustische Ortung."
+          },
+          "sicherheit": "hoch",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Assistenz und Sicherheit",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E47",
+      "absaetze": [
+        {
+          "absatz_id": "P23",
+          "text": "Die Steuersoftware ArduSub löst Ausfallsicherungen aus, wenn der Herzschlag der Bodenkontrollstation ausbleibt, ein Leckdetektor ein Leck meldet, Batteriespannung oder Restkapazität unter einen Grenzwert fallen, Piloteneingaben ausbleiben oder Innentemperatur oder Innendruck des wasserdichten Gehäuses Grenzwerte überschreiten. Als Reaktion lassen sich Warnung, Abschalten der Motoren, Positions- oder Tiefenhaltung oder Auftauchen einstellen.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q6",
+              "fundstelle": "Abschnitte „Failsafe Triggers“ und „Failsafe Actions“"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "funktion"
+        },
+        {
+          "absatz_id": "P24",
+          "text": "Assistenz und Sicherheit umfasst Leckagesensor, Batteriewächter und Ausfallsicherung. Der Leckagesensor meldet Wasser im Druckgehäuse, der Batteriewächter überwacht Spannung und Strom der Traktionsbatterie, und die Ausfallsicherung im Steuerrechner wählt die Reaktion. Schaltet sie die Thruster ab, lässt der positive Restauftrieb die Drohne auftauchen. Warnungen gehen über den Tether an die Anzeigeelemente des Leitstands.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P23",
+              "P8",
+              "Q5 (technische Daten: Leckagesensor auf dem Navigator, Power Sense Module)"
+            ],
+            "schluss": "Sensoren liefern die Auslöser, die Ausfallsicherung die Reaktion, der Restauftrieb die passive Rückfallebene."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "funktion"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Beleuchtung und Sicht",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E51",
+      "absaetze": [
+        {
+          "absatz_id": "P25",
+          "text": "Die BlueROV2 trägt im Elektronikgehäuse eine nach vorn gerichtete Weitwinkelkamera für schwaches Licht auf einer Neigeeinheit, die der Pilot unabhängig vom Fahrzeug schwenkt, dazu zwei oder vier dimmbare Leuchten. Der Berliner Prototyp überträgt das Video eines Kameramoduls über den Begleitrechner an den Oberflächenrechner und trägt ein LED-Modul für schwaches Licht.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q5",
+              "fundstelle": "Abschnitt „Low-light Camera and Really Bright Lights“"
+            },
+            {
+              "quellen_id": "Q4",
+              "fundstelle": "Abschnitt III-A"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P26",
+          "text": "Das Beleuchtungs- und Sichtsystem besteht aus Kamera, Kameraneigeeinheit und Leuchten. Die Kamera blickt durch die Sichtkuppel, ihr Bild läuft über Begleitrechner und Tether zu den Anzeigeelementen; die Leuchten hängen am Stromverteiler und werden vom Steuerrechner gedimmt. Da die Führung allein auf diesem Bild beruht, begrenzen Trübung und Licht die sichere Führung; dann ergänzt das Sonar des Nutzlastsystems die Sicht.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P25",
+              "P5",
+              "P18",
+              "Ohne Person an Bord ist das Kamerabild die einzige Sicht des Piloten"
+            ],
+            "schluss": "Kamera, Kameraneigeeinheit und Leuchten bilden die Sichtkette zum Leitstand."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Neben- und Versorgungssysteme",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E55",
+      "absaetze": [
+        {
+          "absatz_id": "P27",
+          "text": "Am Gehäuse des Berliner Prototyps sitzt ein Ventil für Vakuum-Dichtheitsprüfungen, das auch das Öffnen und Schließen erleichtert. Zur BlueROV2 gehört eine Vakuumpumpe, mit der man prüft, ob die Gehäuse dicht sind, sowie Trockenmittelbeutel mit Feuchteanzeige.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q4",
+              "fundstelle": "Abschnitt III-A"
+            },
+            {
+              "quellen_id": "Q5",
+              "fundstelle": "Abschnitt „Depth Rating up to 300 meters“ und Lieferumfang"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P28",
+          "text": "Die Neben- und Versorgungssysteme umfassen Unterdruckpumpe und Prüfventil. Vor dem Tauchgang erzeugt die Unterdruckpumpe über das Prüfventil Unterdruck im Druckgehäuse; hält er, sind Dichtungen und Kabeldurchführungen dicht. Die Ausrüstung bleibt an der Oberfläche und bildet eine Wartungsschnittstelle zur Fahrzeugstruktur.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P27",
+              "P6",
+              "Ein gehaltener Unterdruck zeigt, dass keine Luft durch Dichtstellen nachströmt"
+            ],
+            "schluss": "Unterdruckpumpe und Prüfventil prüfen die Dichtheit vor dem Einsatz."
+          },
+          "sicherheit": "hoch",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "funktion"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Kabel- und Tether-Management-System",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E58",
+      "absaetze": [
+        {
+          "absatz_id": "P29",
+          "text": "ROVs brauchen anders als AUVs einen Tether oder ein Versorgungskabel, um Energie und Daten zwischen Fahrzeug und Oberfläche zu übertragen, denn Funkwellen werden im Wasser schnell absorbiert. Ein zu dicker Tether erhöht den Strömungswiderstand, ein zu dünner hält beim Aussetzen und Bergen womöglich nicht. Meist wird der Tether auf ein Tether-Management-System gespult, das Verheddern verhindert und teils als Winde dient.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Abschnitte „Description“ und „Tether management“"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "funktion"
+        },
+        {
+          "absatz_id": "P30",
+          "text": "Der Berliner Prototyp ist über einen neutral auftreibenden Netzwerkkabel-Tether mit dem Oberflächenrechner verbunden. Die BlueROV2 gibt es mit Standard- oder dünnem Tether von 25 bis 300 m Länge; ab 50 m empfiehlt der Hersteller eine Kabeltrommel, oberflächenseitig gehört eine Tether-Schnittstellenplatine zum Lieferumfang.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q4",
+              "fundstelle": "Abschnitt III-A"
+            },
+            {
+              "quellen_id": "Q5",
+              "fundstelle": "Konfigurationsoptionen „Tether“ und „Tether Spool“; Lieferumfang „Fathom-X Tether Interface (FXTI)“"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P31",
+          "text": "Das Kabel- und Tether-Management-System gliedert sich in die Kabelstrecke mit Tether und Kabeltrommel und die Signalumsetzung mit Tether-Schnittstelle und Funkboje. Die Kabeltrommel gibt den Tether beim Abtauchen aus und holt ihn beim Bergen ein; die Tether-Schnittstelle setzt das Leitungssignal in eine Netzwerkverbindung zum Oberflächenrechner um. Tetherlänge und Strömung begrenzen den Einsatzradius und erzeugen Zugkräfte, die das Antriebssystem ausgleichen muss.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P29",
+              "P30",
+              "Strömung auf ein langes Kabel erzeugt eine Zugkraft am Fahrzeug"
+            ],
+            "schluss": "Kabelstrecke und Signalumsetzung verbinden Fahrzeug und Leitstand; Tetherlänge und Strömung belasten das Antriebssystem."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P32",
+          "text": "Bei manchen Unterwasserdrohnen endet der Tether an einer schwimmenden Funkboje, die die Daten per Funk an den Leitstand weitergibt. Der Pilot gewinnt Bewegungsfreiheit am Ufer, die Funkstrecke wird aber zu einer zusätzlichen Fehlerquelle, und die Funkboje braucht eine eigene Energieversorgung.",
+          "begruendung": "modellwissen",
+          "belege": [],
+          "sicherheit": "gering",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "variante"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Zusammenfassung",
+      "abschnittstyp": "gesamtsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P33",
+          "text": "Architekturell ist die Unterwasserdrohne damit ein Gesamtsystem aus Fahrzeugstruktur, Auftriebs- und Trimmsystem, Antriebssystem, Energieversorgungssystem, Leitstand, Nutzlastsystem, Elektrik und Elektronik, Fahrzeugsteuerung und Information, Assistenz und Sicherheit, Beleuchtung und Sicht, Neben- und Versorgungssystemen sowie dem Kabel- und Tether-Management-System. Lenken und Bremsen übernimmt das Antriebssystem durch Schubsteuerung; die Abwärme geht über das Druckgehäuse an das umgebende Wasser.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P6",
+              "P9",
+              "P12",
+              "P15",
+              "P17",
+              "P19",
+              "P20",
+              "P22",
+              "P24",
+              "P26",
+              "P28",
+              "P31",
+              "Ein Gehäuse im Wasser gibt Wärme über die Wand an die Umgebung ab"
+            ],
+            "schluss": "Zwölf gekoppelte Hauptsysteme; Lenk-, Brems- und Thermomanagementfunktionen haben kein eigenes System."
+          },
+          "sicherheit": "hoch",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "modellannahme"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Modellierungsbezug",
+      "abschnittstyp": "modellierung",
+      "absaetze": [
+        {
+          "absatz_id": "P34",
+          "text": "In SysML bildet der Block `Unterwasserdrohne` das Gesamtsystem mit den Hauptsystemen als Bestandteilen. Dekompositionspfade sind etwa `Unterwasserdrohne → Fahrzeugstruktur → Druckgehäuse → Kabeldurchführung`, `Unterwasserdrohne → Energieversorgungssystem → Bordenergiespeicher → Traktionsbatterie`, `Unterwasserdrohne → Fahrzeugsteuerung und Information → Navigationssensorik → Tiefensensor` und `Unterwasserdrohne → Kabel- und Tether-Management-System → Kabelstrecke → Tether`. Ports bilden mechanische, elektrische, informationstechnische und hydrostatische Schnittstellen ab. Geeignet sind Block Definition Diagrams, Internal Block Diagrams, Aktivitätsdiagramme für den Tauchgang und Zustandsdiagramme für die Ausfallsicherung.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P6",
+              "P15",
+              "P22",
+              "P24",
+              "P31",
+              "SysML trennt Struktur (Blöcke, Ports) und Verhalten (Aktivitäten, Zustände)"
+            ],
+            "schluss": "Mehrstufige Pfade über Subsysteme bis zu Komponenten; Verhalten der Ausfallsicherung als Zustandsautomat."
+          },
+          "sicherheit": "hoch",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "modellannahme"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Flüsse",
+      "abschnittstyp": "fluesse",
+      "absaetze": [
+        {
+          "absatz_id": "P35",
+          "text": "Die Traktionsbatterie liefert über Hauptschalter und Stromverteiler elektrische Energie an Motorregler, Rechner, Leuchten und Nutzlast. Die Motorregler speisen die Thruster, deren Schub über den Rahmen wirkt; Auftriebskörper und Ballastgewichte bringen Auftrieb und Gewichtskraft ein. Steuerbefehle laufen von den Bedienelementen über Oberflächenrechner, Tether-Schnittstelle und Tether zum Begleitrechner, Video und Zustandsdaten zurück zu den Anzeigeelementen. Navigationssensorik, Leckagesensor und Batteriewächter melden an den Steuerrechner; die Unterdruckpumpe zieht Luft aus dem Druckgehäuse.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P12",
+              "P13",
+              "P17",
+              "P20",
+              "P22",
+              "P24",
+              "P28",
+              "Jeder Fluss braucht Ursprung und Ziel"
+            ],
+            "schluss": "Energie-, Kraft-, Daten- und Stoffflüsse nach dem Modellblock."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "funktion"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Perspektiven",
+      "abschnittstyp": "perspektiven",
+      "absaetze": [
+        {
+          "absatz_id": "P36",
+          "text": "Der Rahmen trägt die Fahrzeuglasten, Auftriebskörper und Ballastgewichte stellen Auftrieb bereit. Die Thruster erzeugen Antriebsleistung und bewegen das Fahrzeug fort; mit dem Steuerrechner manövrieren und stabilisieren sie es. Die Traktionsbatterie speichert Energie, die Ladeeinrichtung lädt sie, Stromverteiler und Gleichspannungswandler verteilen sie. Bedienelemente erfassen Fahrereingaben, Anzeigeelemente zeigen Fahrerinformationen, der Oberflächenrechner zeichnet Betriebsdaten auf. Tether, Tether-Schnittstelle, Funkboje und Begleitrechner übertragen Daten; die Kabeltrommel gibt den Tether aus und holt ihn ein, beide dienen dem Aussetzen und Bergen. Leckagesensor, Batteriewächter und Ausfallsicherung überwachen den Zustand, Navigationssensorik und Unterwasserpositionierung bestimmen die Position. Leuchten leuchten aus, Kamera und Kameraneigeeinheit sichern die Sicht, das Sonar erfasst das Umfeld, der Manipulator handhabt Objekte, Messsonde und Wasserprobennehmer messen und beproben, die Unterdruckpumpe stellt Unterdruck bereit.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P9",
+              "P12",
+              "P15",
+              "P17",
+              "P19",
+              "P20",
+              "P22",
+              "P24",
+              "P26",
+              "P28",
+              "P31",
+              "Jede Funktion braucht ein ausführendes Element"
+            ],
+            "schluss": "Vollständige Zuordnung aller Funktionen des Modellblocks zu Komponenten."
+          },
+          "sicherheit": "hoch",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "funktion"
+        }
+      ]
+    }
+  ],
+  "modell": {
+    "elemente": [
+      {
+        "id": "E1",
+        "name": "Unterwasserdrohne",
+        "typ": "gesamtsystem",
+        "eltern_id": null,
+        "absatz_ids": [
+          "P1",
+          "P3",
+          "P33"
+        ]
+      },
+      {
+        "id": "E2",
+        "name": "Fahrzeugstruktur",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P6",
+          "P33"
+        ],
+        "kategorie": "struktur_fahrwerk"
+      },
+      {
+        "id": "E3",
+        "name": "Rahmen",
+        "typ": "komponente",
+        "eltern_id": "E2",
+        "absatz_ids": [
+          "P4",
+          "P6",
+          "P7"
+        ]
+      },
+      {
+        "id": "E4",
+        "name": "Druckgehäuse",
+        "typ": "subsystem",
+        "eltern_id": "E2",
+        "absatz_ids": [
+          "P6",
+          "P7",
+          "P28"
+        ]
+      },
+      {
+        "id": "E5",
+        "name": "Gehäuserohr",
+        "typ": "komponente",
+        "eltern_id": "E4",
+        "absatz_ids": [
+          "P5",
+          "P6"
+        ]
+      },
+      {
+        "id": "E6",
+        "name": "Endkappe",
+        "typ": "komponente",
+        "eltern_id": "E4",
+        "absatz_ids": [
+          "P5",
+          "P6"
+        ]
+      },
+      {
+        "id": "E7",
+        "name": "Sichtkuppel",
+        "typ": "komponente",
+        "eltern_id": "E4",
+        "absatz_ids": [
+          "P6",
+          "P26"
+        ]
+      },
+      {
+        "id": "E8",
+        "name": "Kabeldurchführung",
+        "typ": "komponente",
+        "eltern_id": "E4",
+        "absatz_ids": [
+          "P5",
+          "P6",
+          "P28"
+        ]
+      },
+      {
+        "id": "E9",
+        "name": "Auftriebs- und Trimmsystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P8",
+          "P9",
+          "P33"
+        ],
+        "kategorie": "sonstig"
+      },
+      {
+        "id": "E10",
+        "name": "Auftriebskörper",
+        "typ": "komponente",
+        "eltern_id": "E9",
+        "absatz_ids": [
+          "P9"
+        ]
+      },
+      {
+        "id": "E11",
+        "name": "Ballastgewichte",
+        "typ": "komponente",
+        "eltern_id": "E9",
+        "absatz_ids": [
+          "P8",
+          "P9"
+        ]
+      },
+      {
+        "id": "E12",
+        "name": "Antriebssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P10",
+          "P11",
+          "P12",
+          "P33"
+        ],
+        "kategorie": "antrieb"
+      },
+      {
+        "id": "E13",
+        "name": "Horizontalthruster",
+        "typ": "komponente",
+        "eltern_id": "E12",
+        "absatz_ids": [
+          "P10",
+          "P12"
+        ]
+      },
+      {
+        "id": "E14",
+        "name": "Vertikalthruster",
+        "typ": "komponente",
+        "eltern_id": "E12",
+        "absatz_ids": [
+          "P10",
+          "P12"
+        ]
+      },
+      {
+        "id": "E15",
+        "name": "Motorregler",
+        "typ": "komponente",
+        "eltern_id": "E12",
+        "absatz_ids": [
+          "P10",
+          "P12"
+        ]
+      },
+      {
+        "id": "E16",
+        "name": "Energieversorgungssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P13",
+          "P14",
+          "P15",
+          "P33"
+        ],
+        "kategorie": "energieversorgung"
+      },
+      {
+        "id": "E17",
+        "name": "Bordenergiespeicher",
+        "typ": "subsystem",
+        "eltern_id": "E16",
+        "absatz_ids": [
+          "P15"
+        ]
+      },
+      {
+        "id": "E18",
+        "name": "Traktionsbatterie",
+        "typ": "komponente",
+        "eltern_id": "E17",
+        "absatz_ids": [
+          "P13",
+          "P15"
+        ]
+      },
+      {
+        "id": "E19",
+        "name": "Gleichspannungswandler",
+        "typ": "komponente",
+        "eltern_id": "E17",
+        "absatz_ids": [
+          "P13",
+          "P15"
+        ]
+      },
+      {
+        "id": "E20",
+        "name": "Oberflächenversorgung",
+        "typ": "subsystem",
+        "eltern_id": "E16",
+        "absatz_ids": [
+          "P15"
+        ]
+      },
+      {
+        "id": "E21",
+        "name": "Ladeeinrichtung",
+        "typ": "komponente",
+        "eltern_id": "E20",
+        "absatz_ids": [
+          "P14",
+          "P15"
+        ]
+      },
+      {
+        "id": "E22",
+        "name": "Oberflächenstromversorgung",
+        "typ": "komponente",
+        "eltern_id": "E20",
+        "absatz_ids": [
+          "P15"
+        ]
+      },
+      {
+        "id": "E23",
+        "name": "Leitstand",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P16",
+          "P17",
+          "P33"
+        ],
+        "kategorie": "bedienraum"
+      },
+      {
+        "id": "E24",
+        "name": "Bedienelemente",
+        "typ": "komponente",
+        "eltern_id": "E23",
+        "absatz_ids": [
+          "P16",
+          "P17"
+        ]
+      },
+      {
+        "id": "E25",
+        "name": "Anzeigeelemente",
+        "typ": "komponente",
+        "eltern_id": "E23",
+        "absatz_ids": [
+          "P16",
+          "P17"
+        ]
+      },
+      {
+        "id": "E26",
+        "name": "Oberflächenrechner",
+        "typ": "komponente",
+        "eltern_id": "E23",
+        "absatz_ids": [
+          "P16",
+          "P17"
+        ]
+      },
+      {
+        "id": "E27",
+        "name": "Nutzlastsystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P18",
+          "P19",
+          "P33"
+        ],
+        "kategorie": "aufbau_nutzlast"
+      },
+      {
+        "id": "E28",
+        "name": "Messausrüstung",
+        "typ": "subsystem",
+        "eltern_id": "E27",
+        "absatz_ids": [
+          "P19"
+        ]
+      },
+      {
+        "id": "E29",
+        "name": "Bildgebendes Sonar",
+        "typ": "komponente",
+        "eltern_id": "E28",
+        "absatz_ids": [
+          "P18",
+          "P19"
+        ]
+      },
+      {
+        "id": "E30",
+        "name": "Messsonde",
+        "typ": "komponente",
+        "eltern_id": "E28",
+        "absatz_ids": [
+          "P18",
+          "P19"
+        ]
+      },
+      {
+        "id": "E31",
+        "name": "Interventionsausrüstung",
+        "typ": "subsystem",
+        "eltern_id": "E27",
+        "absatz_ids": [
+          "P19"
+        ]
+      },
+      {
+        "id": "E32",
+        "name": "Manipulator",
+        "typ": "komponente",
+        "eltern_id": "E31",
+        "absatz_ids": [
+          "P18",
+          "P19"
+        ]
+      },
+      {
+        "id": "E33",
+        "name": "Wasserprobennehmer",
+        "typ": "komponente",
+        "eltern_id": "E31",
+        "absatz_ids": [
+          "P18",
+          "P19"
+        ]
+      },
+      {
+        "id": "E34",
+        "name": "Elektrik und Elektronik",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P20",
+          "P33"
+        ],
+        "kategorie": "elektrik_elektronik"
+      },
+      {
+        "id": "E35",
+        "name": "Stromverteiler",
+        "typ": "komponente",
+        "eltern_id": "E34",
+        "absatz_ids": [
+          "P13",
+          "P20"
+        ]
+      },
+      {
+        "id": "E36",
+        "name": "Leitungssatz",
+        "typ": "komponente",
+        "eltern_id": "E34",
+        "absatz_ids": [
+          "P20"
+        ]
+      },
+      {
+        "id": "E37",
+        "name": "Hauptschalter",
+        "typ": "komponente",
+        "eltern_id": "E34",
+        "absatz_ids": [
+          "P13",
+          "P20"
+        ]
+      },
+      {
+        "id": "E38",
+        "name": "Fahrzeugsteuerung und Information",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P21",
+          "P22",
+          "P33"
+        ],
+        "kategorie": "steuerung_information"
+      },
+      {
+        "id": "E39",
+        "name": "Fahrzeugmanagement",
+        "typ": "subsystem",
+        "eltern_id": "E38",
+        "absatz_ids": [
+          "P22"
+        ]
+      },
+      {
+        "id": "E40",
+        "name": "Steuerrechner",
+        "typ": "komponente",
+        "eltern_id": "E39",
+        "absatz_ids": [
+          "P21",
+          "P22"
+        ]
+      },
+      {
+        "id": "E41",
+        "name": "Begleitrechner",
+        "typ": "komponente",
+        "eltern_id": "E39",
+        "absatz_ids": [
+          "P21",
+          "P22"
+        ]
+      },
+      {
+        "id": "E42",
+        "name": "Navigationssensorik",
+        "typ": "subsystem",
+        "eltern_id": "E38",
+        "absatz_ids": [
+          "P22"
+        ]
+      },
+      {
+        "id": "E43",
+        "name": "Inertialmesseinheit",
+        "typ": "komponente",
+        "eltern_id": "E42",
+        "absatz_ids": [
+          "P21",
+          "P22"
+        ]
+      },
+      {
+        "id": "E44",
+        "name": "Magnetometer",
+        "typ": "komponente",
+        "eltern_id": "E42",
+        "absatz_ids": [
+          "P21",
+          "P22"
+        ]
+      },
+      {
+        "id": "E45",
+        "name": "Tiefensensor",
+        "typ": "komponente",
+        "eltern_id": "E42",
+        "absatz_ids": [
+          "P21",
+          "P22"
+        ]
+      },
+      {
+        "id": "E46",
+        "name": "Unterwasserpositionierung",
+        "typ": "komponente",
+        "eltern_id": "E38",
+        "absatz_ids": [
+          "P18",
+          "P22"
+        ]
+      },
+      {
+        "id": "E47",
+        "name": "Assistenz und Sicherheit",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P23",
+          "P24",
+          "P33"
+        ],
+        "kategorie": "assistenz_sicherheit"
+      },
+      {
+        "id": "E48",
+        "name": "Leckagesensor",
+        "typ": "komponente",
+        "eltern_id": "E47",
+        "absatz_ids": [
+          "P23",
+          "P24"
+        ]
+      },
+      {
+        "id": "E49",
+        "name": "Batteriewächter",
+        "typ": "komponente",
+        "eltern_id": "E47",
+        "absatz_ids": [
+          "P24"
+        ]
+      },
+      {
+        "id": "E50",
+        "name": "Ausfallsicherung",
+        "typ": "komponente",
+        "eltern_id": "E47",
+        "absatz_ids": [
+          "P23",
+          "P24"
+        ]
+      },
+      {
+        "id": "E51",
+        "name": "Beleuchtung und Sicht",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P25",
+          "P26",
+          "P33"
+        ],
+        "kategorie": "beleuchtung_sicht"
+      },
+      {
+        "id": "E52",
+        "name": "Kamera",
+        "typ": "komponente",
+        "eltern_id": "E51",
+        "absatz_ids": [
+          "P25",
+          "P26"
+        ]
+      },
+      {
+        "id": "E53",
+        "name": "Kameraneigeeinheit",
+        "typ": "komponente",
+        "eltern_id": "E51",
+        "absatz_ids": [
+          "P25",
+          "P26"
+        ]
+      },
+      {
+        "id": "E54",
+        "name": "Leuchten",
+        "typ": "komponente",
+        "eltern_id": "E51",
+        "absatz_ids": [
+          "P25",
+          "P26"
+        ]
+      },
+      {
+        "id": "E55",
+        "name": "Neben- und Versorgungssysteme",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P27",
+          "P28",
+          "P33"
+        ],
+        "kategorie": "nebensysteme"
+      },
+      {
+        "id": "E56",
+        "name": "Unterdruckpumpe",
+        "typ": "komponente",
+        "eltern_id": "E55",
+        "absatz_ids": [
+          "P28"
+        ]
+      },
+      {
+        "id": "E57",
+        "name": "Prüfventil",
+        "typ": "komponente",
+        "eltern_id": "E55",
+        "absatz_ids": [
+          "P27",
+          "P28"
+        ]
+      },
+      {
+        "id": "E58",
+        "name": "Kabel- und Tether-Management-System",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P29",
+          "P30",
+          "P31",
+          "P33"
+        ],
+        "kategorie": "sonstig"
+      },
+      {
+        "id": "E59",
+        "name": "Kabelstrecke",
+        "typ": "subsystem",
+        "eltern_id": "E58",
+        "absatz_ids": [
+          "P31"
+        ]
+      },
+      {
+        "id": "E60",
+        "name": "Tether",
+        "typ": "komponente",
+        "eltern_id": "E59",
+        "absatz_ids": [
+          "P29",
+          "P30",
+          "P31"
+        ]
+      },
+      {
+        "id": "E61",
+        "name": "Kabeltrommel",
+        "typ": "komponente",
+        "eltern_id": "E59",
+        "absatz_ids": [
+          "P30",
+          "P31"
+        ]
+      },
+      {
+        "id": "E62",
+        "name": "Signalumsetzung",
+        "typ": "subsystem",
+        "eltern_id": "E58",
+        "absatz_ids": [
+          "P31"
+        ]
+      },
+      {
+        "id": "E63",
+        "name": "Tether-Schnittstelle",
+        "typ": "komponente",
+        "eltern_id": "E62",
+        "absatz_ids": [
+          "P30",
+          "P31"
+        ]
+      },
+      {
+        "id": "E64",
+        "name": "Funkboje",
+        "typ": "komponente",
+        "eltern_id": "E62",
+        "absatz_ids": [
+          "P31",
+          "P32"
+        ]
+      }
+    ],
+    "funktionen": [
+      {
+        "id": "F1",
+        "name": "Fahrzeuglasten tragen",
+        "ausgefuehrt_von": [
+          "E3"
+        ],
+        "absatz_ids": [
+          "P6",
+          "P36"
+        ]
+      },
+      {
+        "id": "F2",
+        "name": "Auftrieb bereitstellen",
+        "ausgefuehrt_von": [
+          "E10",
+          "E11"
+        ],
+        "absatz_ids": [
+          "P9",
+          "P36"
+        ]
+      },
+      {
+        "id": "F3",
+        "name": "Antriebsleistung erzeugen",
+        "ausgefuehrt_von": [
+          "E13",
+          "E14",
+          "E15"
+        ],
+        "absatz_ids": [
+          "P12",
+          "P36"
+        ]
+      },
+      {
+        "id": "F4",
+        "name": "Fahrzeug fortbewegen",
+        "ausgefuehrt_von": [
+          "E13"
+        ],
+        "absatz_ids": [
+          "P10",
+          "P12",
+          "P36"
+        ]
+      },
+      {
+        "id": "F5",
+        "name": "Fahrzeug manövrieren",
+        "ausgefuehrt_von": [
+          "E13",
+          "E14",
+          "E40"
+        ],
+        "absatz_ids": [
+          "P12",
+          "P36"
+        ]
+      },
+      {
+        "id": "F6",
+        "name": "Fahrzeug stabilisieren",
+        "ausgefuehrt_von": [
+          "E40",
+          "E14"
+        ],
+        "absatz_ids": [
+          "P21",
+          "P22",
+          "P36"
+        ]
+      },
+      {
+        "id": "F7",
+        "name": "Energie speichern",
+        "ausgefuehrt_von": [
+          "E18"
+        ],
+        "absatz_ids": [
+          "P15",
+          "P36"
+        ]
+      },
+      {
+        "id": "F8",
+        "name": "Traktionsbatterie laden",
+        "ausgefuehrt_von": [
+          "E21"
+        ],
+        "absatz_ids": [
+          "P15",
+          "P36"
+        ]
+      },
+      {
+        "id": "F9",
+        "name": "Elektrische Energie verteilen",
+        "ausgefuehrt_von": [
+          "E35",
+          "E36",
+          "E19"
+        ],
+        "absatz_ids": [
+          "P20",
+          "P36"
+        ]
+      },
+      {
+        "id": "F10",
+        "name": "Fahrereingaben erfassen",
+        "ausgefuehrt_von": [
+          "E24"
+        ],
+        "absatz_ids": [
+          "P17",
+          "P36"
+        ]
+      },
+      {
+        "id": "F11",
+        "name": "Fahrerinformationen anzeigen",
+        "ausgefuehrt_von": [
+          "E25"
+        ],
+        "absatz_ids": [
+          "P17",
+          "P36"
+        ]
+      },
+      {
+        "id": "F12",
+        "name": "Betriebsdaten aufzeichnen",
+        "ausgefuehrt_von": [
+          "E26"
+        ],
+        "absatz_ids": [
+          "P17",
+          "P36"
+        ]
+      },
+      {
+        "id": "F13",
+        "name": "Daten übertragen",
+        "ausgefuehrt_von": [
+          "E60",
+          "E63",
+          "E64",
+          "E41"
+        ],
+        "absatz_ids": [
+          "P22",
+          "P31",
+          "P32",
+          "P36"
+        ]
+      },
+      {
+        "id": "F14",
+        "name": "Tether ausgeben und einholen",
+        "ausgefuehrt_von": [
+          "E61",
+          "E60"
+        ],
+        "absatz_ids": [
+          "P31",
+          "P36"
+        ]
+      },
+      {
+        "id": "F15",
+        "name": "Fahrzeug aussetzen und bergen",
+        "ausgefuehrt_von": [
+          "E60",
+          "E61"
+        ],
+        "absatz_ids": [
+          "P29",
+          "P36"
+        ]
+      },
+      {
+        "id": "F16",
+        "name": "Fahrzeugzustand überwachen",
+        "ausgefuehrt_von": [
+          "E48",
+          "E49",
+          "E50"
+        ],
+        "absatz_ids": [
+          "P23",
+          "P24",
+          "P36"
+        ]
+      },
+      {
+        "id": "F17",
+        "name": "Fahrzeugposition bestimmen",
+        "ausgefuehrt_von": [
+          "E43",
+          "E44",
+          "E45",
+          "E46"
+        ],
+        "absatz_ids": [
+          "P22",
+          "P36"
+        ]
+      },
+      {
+        "id": "F18",
+        "name": "Fahrzeugumgebung ausleuchten",
+        "ausgefuehrt_von": [
+          "E54"
+        ],
+        "absatz_ids": [
+          "P26",
+          "P36"
+        ]
+      },
+      {
+        "id": "F19",
+        "name": "Fahrersicht sicherstellen",
+        "ausgefuehrt_von": [
+          "E52",
+          "E53"
+        ],
+        "absatz_ids": [
+          "P26",
+          "P36"
+        ]
+      },
+      {
+        "id": "F20",
+        "name": "Fahrzeugumfeld erfassen",
+        "ausgefuehrt_von": [
+          "E29"
+        ],
+        "absatz_ids": [
+          "P19",
+          "P26",
+          "P36"
+        ]
+      },
+      {
+        "id": "F21",
+        "name": "Objekte handhaben",
+        "ausgefuehrt_von": [
+          "E32"
+        ],
+        "absatz_ids": [
+          "P19",
+          "P36"
+        ]
+      },
+      {
+        "id": "F22",
+        "name": "Umweltparameter messen",
+        "ausgefuehrt_von": [
+          "E30"
+        ],
+        "absatz_ids": [
+          "P19",
+          "P36"
+        ]
+      },
+      {
+        "id": "F23",
+        "name": "Wasserproben entnehmen",
+        "ausgefuehrt_von": [
+          "E33"
+        ],
+        "absatz_ids": [
+          "P19",
+          "P36"
+        ]
+      },
+      {
+        "id": "F24",
+        "name": "Unterdruck bereitstellen",
+        "ausgefuehrt_von": [
+          "E56",
+          "E57"
+        ],
+        "absatz_ids": [
+          "P28",
+          "P36"
+        ]
+      }
+    ],
+    "fluesse": [
+      {
+        "id": "S1",
+        "von": "E18",
+        "nach": "E37",
+        "art": "elektrisch",
+        "medium": "Gleichstrom (Bordspannung)",
+        "absatz_ids": [
+          "P13",
+          "P35"
+        ],
+        "schnittstelle": "Batterieanschluss"
+      },
+      {
+        "id": "S2",
+        "von": "E37",
+        "nach": "E35",
+        "art": "elektrisch",
+        "medium": "Gleichstrom (geschaltet)",
+        "absatz_ids": [
+          "P13",
+          "P20"
+        ]
+      },
+      {
+        "id": "S3",
+        "von": "E35",
+        "nach": "E15",
+        "art": "elektrisch",
+        "medium": "Gleichstrom",
+        "absatz_ids": [
+          "P12",
+          "P35"
+        ],
+        "schnittstelle": "Leistungsabgang Antrieb"
+      },
+      {
+        "id": "S4",
+        "von": "E15",
+        "nach": "E13",
+        "art": "elektrisch",
+        "medium": "Motorstrom",
+        "absatz_ids": [
+          "P12",
+          "P35"
+        ]
+      },
+      {
+        "id": "S5",
+        "von": "E15",
+        "nach": "E14",
+        "art": "elektrisch",
+        "medium": "Motorstrom",
+        "absatz_ids": [
+          "P12",
+          "P35"
+        ]
+      },
+      {
+        "id": "S6",
+        "von": "E13",
+        "nach": "E3",
+        "art": "mechanisch",
+        "medium": "Schubkraft",
+        "absatz_ids": [
+          "P6",
+          "P12",
+          "P35"
+        ],
+        "schnittstelle": "Thrusterbefestigung"
+      },
+      {
+        "id": "S7",
+        "von": "E14",
+        "nach": "E3",
+        "art": "mechanisch",
+        "medium": "Schubkraft",
+        "absatz_ids": [
+          "P6",
+          "P12",
+          "P35"
+        ],
+        "schnittstelle": "Thrusterbefestigung"
+      },
+      {
+        "id": "S8",
+        "von": "E10",
+        "nach": "E3",
+        "art": "mechanisch",
+        "medium": "Auftriebskraft",
+        "absatz_ids": [
+          "P9",
+          "P35"
+        ],
+        "schnittstelle": "Auftriebskörperbefestigung"
+      },
+      {
+        "id": "S9",
+        "von": "E11",
+        "nach": "E3",
+        "art": "mechanisch",
+        "medium": "Gewichtskraft",
+        "absatz_ids": [
+          "P9",
+          "P35"
+        ],
+        "schnittstelle": "Ballastbefestigung"
+      },
+      {
+        "id": "S10",
+        "von": "E24",
+        "nach": "E26",
+        "art": "information",
+        "medium": "Fahrereingaben",
+        "absatz_ids": [
+          "P17",
+          "P35"
+        ]
+      },
+      {
+        "id": "S11",
+        "von": "E26",
+        "nach": "E63",
+        "art": "information",
+        "medium": "Steuerbefehle",
+        "absatz_ids": [
+          "P31",
+          "P35"
+        ],
+        "schnittstelle": "Netzwerkanschluss Leitstand"
+      },
+      {
+        "id": "S12",
+        "von": "E63",
+        "nach": "E60",
+        "art": "information",
+        "medium": "Steuerbefehle",
+        "absatz_ids": [
+          "P31",
+          "P35"
+        ]
+      },
+      {
+        "id": "S13",
+        "von": "E60",
+        "nach": "E41",
+        "art": "information",
+        "medium": "Steuerbefehle",
+        "absatz_ids": [
+          "P22",
+          "P35"
+        ],
+        "schnittstelle": "Tetherdurchführung"
+      },
+      {
+        "id": "S14",
+        "von": "E41",
+        "nach": "E40",
+        "art": "information",
+        "medium": "Sollwerte",
+        "absatz_ids": [
+          "P22"
+        ]
+      },
+      {
+        "id": "S15",
+        "von": "E40",
+        "nach": "E15",
+        "art": "information",
+        "medium": "Stellwerte",
+        "absatz_ids": [
+          "P12",
+          "P22"
+        ],
+        "schnittstelle": "Motorregleransteuerung"
+      },
+      {
+        "id": "S16",
+        "von": "E43",
+        "nach": "E40",
+        "art": "information",
+        "medium": "Lage- und Drehratendaten",
+        "absatz_ids": [
+          "P22",
+          "P35"
+        ]
+      },
+      {
+        "id": "S17",
+        "von": "E45",
+        "nach": "E40",
+        "art": "information",
+        "medium": "Tiefe",
+        "absatz_ids": [
+          "P22",
+          "P35"
+        ]
+      },
+      {
+        "id": "S18",
+        "von": "E52",
+        "nach": "E41",
+        "art": "information",
+        "medium": "Videosignal",
+        "absatz_ids": [
+          "P26",
+          "P35"
+        ],
+        "schnittstelle": "Kameraanschluss"
+      },
+      {
+        "id": "S19",
+        "von": "E41",
+        "nach": "E60",
+        "art": "information",
+        "medium": "Video und Zustandsdaten",
+        "absatz_ids": [
+          "P22",
+          "P35"
+        ],
+        "schnittstelle": "Tetherdurchführung"
+      },
+      {
+        "id": "S20",
+        "von": "E63",
+        "nach": "E26",
+        "art": "information",
+        "medium": "Video und Zustandsdaten",
+        "absatz_ids": [
+          "P31",
+          "P35"
+        ],
+        "schnittstelle": "Netzwerkanschluss Leitstand"
+      },
+      {
+        "id": "S21",
+        "von": "E26",
+        "nach": "E25",
+        "art": "information",
+        "medium": "Video und Zustandsdaten",
+        "absatz_ids": [
+          "P17",
+          "P35"
+        ]
+      },
+      {
+        "id": "S22",
+        "von": "E48",
+        "nach": "E40",
+        "art": "information",
+        "medium": "Leckagemeldung",
+        "absatz_ids": [
+          "P24",
+          "P35"
+        ],
+        "schnittstelle": "Sensoranschluss Steuerrechner"
+      },
+      {
+        "id": "S23",
+        "von": "E49",
+        "nach": "E40",
+        "art": "information",
+        "medium": "Batteriezustand",
+        "absatz_ids": [
+          "P24",
+          "P35"
+        ],
+        "schnittstelle": "Sensoranschluss Steuerrechner"
+      },
+      {
+        "id": "S24",
+        "von": "E35",
+        "nach": "E54",
+        "art": "elektrisch",
+        "medium": "Gleichstrom",
+        "absatz_ids": [
+          "P26",
+          "P35"
+        ],
+        "schnittstelle": "Leuchtenanschluss"
+      },
+      {
+        "id": "S25",
+        "von": "E40",
+        "nach": "E54",
+        "art": "information",
+        "medium": "Dimmbefehle",
+        "absatz_ids": [
+          "P26"
+        ],
+        "schnittstelle": "Leuchtenanschluss"
+      },
+      {
+        "id": "S26",
+        "von": "E35",
+        "nach": "E29",
+        "art": "elektrisch",
+        "medium": "Gleichstrom",
+        "absatz_ids": [
+          "P19",
+          "P35"
+        ],
+        "schnittstelle": "Nutzlastanschluss"
+      },
+      {
+        "id": "S27",
+        "von": "E29",
+        "nach": "E41",
+        "art": "information",
+        "medium": "Sonardaten",
+        "absatz_ids": [
+          "P19"
+        ],
+        "schnittstelle": "Nutzlastanschluss"
+      },
+      {
+        "id": "S28",
+        "von": "E32",
+        "nach": "E3",
+        "art": "mechanisch",
+        "medium": "Reaktionskräfte",
+        "absatz_ids": [
+          "P19"
+        ],
+        "schnittstelle": "Nutzlastbefestigung"
+      },
+      {
+        "id": "S29",
+        "von": "E4",
+        "nach": "E56",
+        "art": "stoff",
+        "medium": "Luft",
+        "absatz_ids": [
+          "P28",
+          "P35"
+        ],
+        "schnittstelle": "Prüfventil am Druckgehäuse"
+      },
+      {
+        "id": "S30",
+        "von": "E21",
+        "nach": "E18",
+        "art": "elektrisch",
+        "medium": "Ladestrom",
+        "absatz_ids": [
+          "P15"
+        ]
+      },
+      {
+        "id": "S31",
+        "von": "E22",
+        "nach": "E60",
+        "art": "elektrisch",
+        "medium": "Versorgungsspannung (Variante Oberflächenspeisung)",
+        "absatz_ids": [
+          "P15"
+        ],
+        "schnittstelle": "Energieeinspeisung Tether"
+      },
+      {
+        "id": "S32",
+        "von": "E60",
+        "nach": "E19",
+        "art": "elektrisch",
+        "medium": "Versorgungsspannung (Variante Oberflächenspeisung)",
+        "absatz_ids": [
+          "P15"
+        ],
+        "schnittstelle": "Tetherdurchführung"
+      },
+      {
+        "id": "S33",
+        "von": "E64",
+        "nach": "E26",
+        "art": "information",
+        "medium": "Video, Zustandsdaten und Steuerbefehle (Variante Funkboje)",
+        "absatz_ids": [
+          "P32"
+        ],
+        "schnittstelle": "Funkstrecke"
+      },
+      {
+        "id": "S34",
+        "von": "E61",
+        "nach": "E60",
+        "art": "mechanisch",
+        "medium": "Zugkraft beim Einholen",
+        "absatz_ids": [
+          "P31"
+        ]
+      }
+    ],
+    "entfallene_kategorien": [
+      {
+        "kategorie": "lenkung",
+        "grund": "Kein Ruder und keine Lenkanlage; Kursänderungen entstehen durch Schubdifferenz der Thruster im Antriebssystem und den Steuerrechner (Funktion „Fahrzeug manövrieren“)."
+      },
+      {
+        "kategorie": "bremse",
+        "grund": "Keine Bremsanlage; Verzögerung durch Schubumkehr der Thruster und Wasserwiderstand, ein Festhalten entfällt bei frei schwimmendem Fahrzeug."
+      },
+      {
+        "kategorie": "thermomanagement",
+        "grund": "Keine eigenständige Baugruppe; die Abwärme von Elektronik, Motoren und Batterie geht passiv über Druckgehäuse und Thruster an das umgebende Wasser (Fahrzeugstruktur). Temperaturgrenzen werden durch die Ausfallsicherung überwacht."
+      }
+    ],
+    "varianten": [
+      {
+        "id": "V1",
+        "element_id": "E2",
+        "bezeichnung": "Bauform des Fahrzeugs",
+        "alternativen": [
+          "Offener Rahmen",
+          "Geschlossene stromlinienförmige Hülle (Torpedoform)"
+        ],
+        "auswahlkriterien": [
+          "Strömung im Einsatzgebiet",
+          "Anteil von Schwebe- und Langsamfahrt gegenüber Streckenfahrt",
+          "Anbauraum für Nutzlast",
+          "Transportmaß und Stoßschutz"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E12",
+            "beschreibung": "Der offene Rahmen erlaubt vektorierte Thruster in allen Richtungen, die Hülle meist nur Heckantrieb mit wenigen Freiheitsgraden."
+          },
+          {
+            "element_id": "E9",
+            "beschreibung": "Lage und Form der Auftriebskörper folgen der Bauform."
+          },
+          {
+            "element_id": "E27",
+            "beschreibung": "In der Hülle ist der Anbauraum für Manipulator und Sonar begrenzt."
+          },
+          {
+            "element_id": "E51",
+            "beschreibung": "Leuchten und Kamera sitzen am Rahmen frei oder in der Hülle hinter Fenstern."
+          }
+        ],
+        "absatz_ids": [
+          "P4",
+          "P6"
+        ]
+      },
+      {
+        "id": "V2",
+        "element_id": "E4",
+        "bezeichnung": "Gehäusewerkstoff des Druckgehäuses",
+        "alternativen": [
+          "Transparenter Kunststoff (Acryl)",
+          "Metall (eloxiertes Aluminium)"
+        ],
+        "auswahlkriterien": [
+          "Geforderte Tauchtiefe",
+          "Sichtprüfung des Innenraums",
+          "Wärmeabgabe an das Wasser",
+          "Masse und Kosten"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E9",
+            "beschreibung": "Unterschiedliche Masse und Verdrängung erfordern anderen Ballast."
+          },
+          {
+            "element_id": "E48",
+            "beschreibung": "Bei undurchsichtigem Gehäuse ist eindringendes Wasser nur über den Leckagesensor erkennbar."
+          },
+          {
+            "element_id": "E7",
+            "beschreibung": "Beim Metallgehäuse braucht die Kamera eine eigene Sichtkuppel."
+          }
+        ],
+        "absatz_ids": [
+          "P7",
+          "P6"
+        ]
+      },
+      {
+        "id": "V3",
+        "element_id": "E9",
+        "bezeichnung": "Ballastart",
+        "alternativen": [
+          "Fester Ballast mit vertikalen Thrustern",
+          "Variabler Ballast mit Tauchzelle und Pumpe"
+        ],
+        "auswahlkriterien": [
+          "Kosten und Komplexität",
+          "Energiebedarf für das Halten der Tiefe",
+          "Schweben ohne Schub für ruhige Messungen",
+          "Wartungsaufwand"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E14",
+            "beschreibung": "Bei festem Ballast sind Vertikalthruster für Auf- und Abtauchen nötig."
+          },
+          {
+            "element_id": "E16",
+            "beschreibung": "Variabler Ballast braucht Energie für die Pumpe."
+          },
+          {
+            "element_id": "E40",
+            "beschreibung": "Der Steuerrechner regelt bei variablem Ballast zusätzlich die Tauchzelle."
+          }
+        ],
+        "absatz_ids": [
+          "P8",
+          "P9"
+        ]
+      },
+      {
+        "id": "V4",
+        "element_id": "E12",
+        "bezeichnung": "Thrusteranordnung",
+        "alternativen": [
+          "Drei Thruster (zwei horizontal, einer vertikal)",
+          "Vier Thruster mit zwei vertikalen nahe dem Schwerpunkt",
+          "Sechs Thruster vektoriert",
+          "Acht Thruster vektoriert für alle Freiheitsgrade"
+        ],
+        "auswahlkriterien": [
+          "Benötigte Freiheitsgrade",
+          "Strömungsfestigkeit beim Positionshalten",
+          "Nutzlastmasse",
+          "Energiebedarf und Kosten"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E15",
+            "beschreibung": "Je Thruster ein Motorregler."
+          },
+          {
+            "element_id": "E35",
+            "beschreibung": "Zahl und Belastbarkeit der Abgänge wachsen."
+          },
+          {
+            "element_id": "E40",
+            "beschreibung": "Schubverteilung und Regelung hängen von der Anordnung ab."
+          },
+          {
+            "element_id": "E18",
+            "beschreibung": "Höherer Leistungsbedarf verkürzt die Einsatzdauer oder erfordert mehr Kapazität."
+          },
+          {
+            "element_id": "E3",
+            "beschreibung": "Der Rahmen braucht passende Befestigungspunkte."
+          }
+        ],
+        "absatz_ids": [
+          "P10",
+          "P11",
+          "P12"
+        ]
+      },
+      {
+        "id": "V5",
+        "element_id": "E16",
+        "bezeichnung": "Antriebsart und Energiequelle",
+        "alternativen": [
+          "Batterieelektrisch mit Traktionsbatterie an Bord",
+          "Elektrisch mit Oberflächenstromversorgung über den Tether"
+        ],
+        "auswahlkriterien": [
+          "Geforderte Einsatzdauer",
+          "Tetherdurchmesser und Strömungswiderstand",
+          "Energieverfügbarkeit am Einsatzort",
+          "Trimm und Fahrzeugmasse"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E60",
+            "beschreibung": "Bei Oberflächenspeisung führt der Tether zusätzliche Energieleiter und wird dicker."
+          },
+          {
+            "element_id": "E22",
+            "beschreibung": "Die Oberflächenstromversorgung kommt nur bei Oberflächenspeisung hinzu."
+          },
+          {
+            "element_id": "E9",
+            "beschreibung": "Mit der Traktionsbatterie entfällt oder kommt ein großer Trimmanteil."
+          },
+          {
+            "element_id": "E49",
+            "beschreibung": "Der Batteriewächter überwacht nur bei Bordbatterie die Restkapazität."
+          },
+          {
+            "element_id": "E19",
+            "beschreibung": "Der Gleichspannungswandler muss bei Oberflächenspeisung die Tetherspannung umsetzen."
+          }
+        ],
+        "absatz_ids": [
+          "P14",
+          "P15"
+        ]
+      },
+      {
+        "id": "V6",
+        "element_id": "E58",
+        "bezeichnung": "Datenverbindung zum Leitstand",
+        "alternativen": [
+          "Tether direkt zum Leitstand",
+          "Tether zur Funkboje mit Funkstrecke zum Leitstand"
+        ],
+        "auswahlkriterien": [
+          "Bewegungsfreiheit des Piloten",
+          "Zuverlässigkeit der Verbindung",
+          "Wellengang und Uferbedingungen"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E26",
+            "beschreibung": "Der Oberflächenrechner braucht bei Funkboje eine Funkschnittstelle."
+          },
+          {
+            "element_id": "E50",
+            "beschreibung": "Die Funkstrecke ist ein zusätzlicher Auslöser für Verbindungsverlust."
+          },
+          {
+            "element_id": "E16",
+            "beschreibung": "Die Funkboje braucht eine eigene Energieversorgung."
+          }
+        ],
+        "absatz_ids": [
+          "P31",
+          "P32"
+        ]
+      },
+      {
+        "id": "V7",
+        "element_id": "E27",
+        "bezeichnung": "Nutzlastausstattung",
+        "alternativen": [
+          "Nur Beobachtung",
+          "Beobachtung mit Nutzlast (Sonar, Manipulator, Probennahme)"
+        ],
+        "auswahlkriterien": [
+          "Aufgabe des Einsatzes",
+          "Nutzlastkapazität",
+          "Trimmreserve",
+          "Leistungs- und Datenbedarf"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E9",
+            "beschreibung": "Zusätzliche Nutzlast erfordert mehr Auftrieb."
+          },
+          {
+            "element_id": "E12",
+            "beschreibung": "Manipulatorkräfte und Mehrmasse verlangen mehr Schub."
+          },
+          {
+            "element_id": "E35",
+            "beschreibung": "Nutzlastanschlüsse belegen Abgänge."
+          },
+          {
+            "element_id": "E41",
+            "beschreibung": "Sonar und Messsonden belasten den Datenweg."
+          }
+        ],
+        "absatz_ids": [
+          "P18",
+          "P19"
+        ]
+      }
+    ],
+    "klaerungsfragen": [
+      {
+        "id": "K1",
+        "frage": "Soll die Drohne vorwiegend in ruhigem Wasser schweben und inspizieren oder auch Strecken in Strömung zurücklegen?",
+        "element_ids": [
+          "E2",
+          "E12"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Bauform, Thrusteranordnung und Anbauraum ab.",
+        "variante_ids": [
+          "V1"
+        ]
+      },
+      {
+        "id": "K2",
+        "frage": "Welche größte Einsatztiefe muss das Druckgehäuse dauerhaft aushalten, und ist eine Sichtprüfung des Innenraums erwünscht?",
+        "element_ids": [
+          "E4"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Gehäusewerkstoff, Ballast und Leckageüberwachung ab.",
+        "variante_ids": [
+          "V2"
+        ]
+      },
+      {
+        "id": "K3",
+        "frage": "Muss die Drohne ohne Thrusterschub in einer Tiefe schweben können, etwa für störungsarme Messungen?",
+        "element_ids": [
+          "E9"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängt ab, ob fester oder variabler Ballast vorgesehen wird.",
+        "variante_ids": [
+          "V3"
+        ]
+      },
+      {
+        "id": "K4",
+        "frage": "Welche Bewegungen muss die Drohne unabhängig voneinander ausführen können, insbesondere Seitwärtsfahrt, Rollen und Positionshalten in Strömung?",
+        "element_ids": [
+          "E12"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Zahl und Anordnung der Thruster, Motorregler und Abgänge ab.",
+        "variante_ids": [
+          "V4"
+        ]
+      },
+      {
+        "id": "K5",
+        "frage": "Wie lange muss ein Tauchgang ohne Batteriewechsel dauern, und steht am Einsatzort eine Stromquelle für eine Oberflächenspeisung bereit?",
+        "element_ids": [
+          "E16",
+          "E60"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängt ab, ob Bordbatterie oder Oberflächenspeisung gewählt wird und wie der Tether aufgebaut ist.",
+        "variante_ids": [
+          "V5"
+        ]
+      },
+      {
+        "id": "K6",
+        "frage": "Bedient eine einzelne Person die Drohne, oder gibt es getrennte Rollen für Pilot und Nutzlastbediener?",
+        "element_ids": [
+          "E23"
+        ],
+        "anlass": "betrieb",
+        "relevanz": "Davon hängen Zahl der Bedienelemente und Anzeigeelemente am Leitstand ab."
+      },
+      {
+        "id": "K7",
+        "frage": "Muss die Drohne Objekte greifen oder Wasserproben nehmen, oder genügt reine Beobachtung?",
+        "element_ids": [
+          "E27"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Interventionsausrüstung, Trimmreserve und Schubbedarf ab.",
+        "variante_ids": [
+          "V7"
+        ]
+      },
+      {
+        "id": "K8",
+        "frage": "Sollen Nutzlasten über einheitliche Anschlüsse für Energie und Daten nachrüstbar sein?",
+        "element_ids": [
+          "E34",
+          "E27"
+        ],
+        "anlass": "schnittstelle",
+        "relevanz": "Davon hängen Auslegung des Stromverteilers, Zahl der Kabeldurchführungen und Datenwege ab."
+      },
+      {
+        "id": "K9",
+        "frage": "Muss die Drohne ihre Position unter Wasser absolut kennen, oder genügt die Lage relativ zum Aussetzpunkt?",
+        "element_ids": [
+          "E38",
+          "E46"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängt ab, ob ein akustisches Ortungssystem zur Navigationssensorik hinzukommt."
+      },
+      {
+        "id": "K10",
+        "frage": "Wie soll sich die Drohne bei Verbindungsverlust, Leckage oder niedriger Batteriespannung verhalten: Motoren abschalten und auftauchen, Tiefe halten oder nur warnen?",
+        "element_ids": [
+          "E47",
+          "E50"
+        ],
+        "anlass": "betrieb",
+        "relevanz": "Davon hängen Konfiguration der Ausfallsicherung und erforderlicher Restauftrieb ab.",
+        "variante_ids": [
+          "V6"
+        ]
+      },
+      {
+        "id": "K11",
+        "frage": "Bei welcher Sichttrübung muss die Drohne noch sicher geführt werden können?",
+        "element_ids": [
+          "E51",
+          "E29"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Leuchten, Kamera und die Notwendigkeit eines bildgebenden Sonars ab."
+      },
+      {
+        "id": "K12",
+        "frage": "Soll eine Dichtheitsprüfung vor jedem Tauchgang verbindlicher Teil des Betriebsablaufs sein?",
+        "element_ids": [
+          "E55"
+        ],
+        "anlass": "betrieb",
+        "relevanz": "Davon hängt ab, ob Unterdruckpumpe und Prüfventil zur Grundausstattung gehören."
+      },
+      {
+        "id": "K13",
+        "frage": "Muss sich der Pilot während des Einsatzes frei am Ufer bewegen können, oder genügt ein fester Standort an der Kabeltrommel?",
+        "element_ids": [
+          "E58",
+          "E64"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängt ab, ob eine Funkboje vorgesehen wird.",
+        "variante_ids": [
+          "V6"
+        ]
+      },
+      {
+        "id": "K14",
+        "frage": "Welche Entfernung und welche Tiefe muss der Tether gleichzeitig abdecken, und in welcher Strömung?",
+        "element_ids": [
+          "E60",
+          "E61"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Tetherlänge, Tetherdurchmesser, Kabeltrommel und Schubreserve ab."
+      }
+    ],
+    "anforderungsthemen": [
+      {
+        "id": "R1",
+        "element_ids": [
+          "E2",
+          "E4"
+        ],
+        "thema": "Tauchtiefe und Druckfestigkeit",
+        "kenngroessen": [
+          "Zulässige Einsatztiefe",
+          "Prüfdruck des Druckgehäuses",
+          "Dichtheit der Kabeldurchführungen"
+        ]
+      },
+      {
+        "id": "R2",
+        "element_ids": [
+          "E9"
+        ],
+        "thema": "Trimm und Restauftrieb",
+        "kenngroessen": [
+          "Restauftrieb",
+          "Lage von Massen- und Auftriebsschwerpunkt",
+          "Trimmreserve für Nutzlast"
+        ]
+      },
+      {
+        "id": "R3",
+        "element_ids": [
+          "E12"
+        ],
+        "thema": "Manövrierfähigkeit und Strömungsfestigkeit",
+        "kenngroessen": [
+          "Fahrgeschwindigkeit",
+          "Zulässige Strömungsgeschwindigkeit beim Positionshalten",
+          "Zahl der steuerbaren Freiheitsgrade",
+          "Schub je Bewegungsrichtung"
+        ]
+      },
+      {
+        "id": "R4",
+        "element_ids": [
+          "E16"
+        ],
+        "thema": "Einsatzdauer und Energieversorgung",
+        "kenngroessen": [
+          "Einsatzdauer je Batterieladung",
+          "Batteriewechselzeit",
+          "Ladezeit",
+          "Nennkapazität der Traktionsbatterie"
+        ]
+      },
+      {
+        "id": "R5",
+        "element_ids": [
+          "E23"
+        ],
+        "thema": "Bedienbarkeit und Aufbauzeit",
+        "kenngroessen": [
+          "Zahl der Bediener",
+          "Verzögerung des Videobilds",
+          "Aufbauzeit bis zum ersten Tauchgang"
+        ]
+      },
+      {
+        "id": "R6",
+        "element_ids": [
+          "E27"
+        ],
+        "thema": "Nutzlastkapazität",
+        "kenngroessen": [
+          "Nutzlastmasse",
+          "Leistungsbedarf der Nutzlast",
+          "Zahl der Nutzlastanschlüsse",
+          "Greifkraft des Manipulators"
+        ]
+      },
+      {
+        "id": "R7",
+        "element_ids": [
+          "E34"
+        ],
+        "thema": "Elektrische Sicherheit",
+        "kenngroessen": [
+          "Absicherung je Abgang",
+          "Isolationszustand",
+          "Spannungsbereich des Bordnetzes"
+        ]
+      },
+      {
+        "id": "R8",
+        "element_ids": [
+          "E38"
+        ],
+        "thema": "Navigation und Regelgüte",
+        "kenngroessen": [
+          "Genauigkeit der Tiefenhaltung",
+          "Genauigkeit der Kurshaltung",
+          "Positionsgenauigkeit"
+        ]
+      },
+      {
+        "id": "R9",
+        "element_ids": [
+          "E47"
+        ],
+        "thema": "Ausfallverhalten",
+        "kenngroessen": [
+          "Reaktionszeit bei Verbindungsverlust",
+          "Erkennungszeit einer Leckage",
+          "Batteriegrenzwert für die Ausfallsicherung"
+        ]
+      },
+      {
+        "id": "R10",
+        "element_ids": [
+          "E51"
+        ],
+        "thema": "Sicht und Bildqualität",
+        "kenngroessen": [
+          "Bildauflösung",
+          "Lichtstrom der Leuchten",
+          "Neigewinkelbereich der Kamera"
+        ]
+      },
+      {
+        "id": "R11",
+        "element_ids": [
+          "E55"
+        ],
+        "thema": "Wartung und Prüfbarkeit",
+        "kenngroessen": [
+          "Prüfunterdruck",
+          "Haltezeit des Unterdrucks",
+          "Wartungsintervall der Dichtungen"
+        ]
+      },
+      {
+        "id": "R12",
+        "element_ids": [
+          "E58"
+        ],
+        "thema": "Reichweite und Belastbarkeit des Tethers",
+        "kenngroessen": [
+          "Tetherlänge",
+          "Tetherdurchmesser",
+          "Bruchlast",
+          "Auftrieb im Wasser",
+          "Datenrate"
+        ]
+      }
+    ]
+  },
+  "offene_punkte": [
+    "Glossarvorschlag: Funktion „Umweltparameter messen“ (Messgrößen des Wassers wie Temperatur, Sichttiefe oder Leitfähigkeit mit Sonden erfassen; nicht synonym mit „Fahrzeugumfeld erfassen“, das Hindernisse und Objekte betrifft).",
+    "Glossarvorschlag: Funktion „Wasserproben entnehmen“ (Wasser oder Sediment in Probenbehältern sammeln; nicht synonym mit „Objekte handhaben“, das Greifen und Bewegen von Gegenständen meint).",
+    "Abweichung von der Zuordnungsliste: Der Thruster (antrieb) erscheint als Horizontalthruster und Vertikalthruster; die Traktionsmaschine ist als bürstenloser Motor im Thruster enthalten und nicht separat modelliert. Getriebe, Differenzial, Gelenkwelle, Antriebswelle und Abgasanlage entfallen. Achse, Federung, Radaufhängung, Räder und Reifen, Türen und Karosserie (struktur_fahrwerk) entfallen mangels Fahrwerk. Lenkrad, Lenksäule und Lenkgetriebe (lenkung) sowie Betriebsbremse und Feststellbremse (bremse) entfallen. Sitze und Rückhaltesysteme (bedienraum) entfallen am Leitstand. Kühlkreislauf und Kühler (thermomanagement) entfallen bei passiver Wärmeabgabe.",
+    "Recherche: Quelle zur Variante mit Funkboje zwischen Tether und Leitstand (Suchbegriffe: underwater drone wifi buoy tether, Unterwasserdrohne Funkboje), um P32 zu belegen.",
+    "Recherche: Fachquelle zu oberflächengespeisten Mini-ROVs mit Energieleitern im Tether (Suchbegriffe: mini ROV surface powered tether, observation class ROV power supply), um P15 zu belegen.",
+    "Recherche: IMCA-Leitfäden zum ROV-Betrieb (etwa IMCA R 004 Code of practice for the safe and efficient operation of remotely operated vehicles) in diesem Lauf nicht abgerufen; als Regelwerk für Betrieb und Ausfallverhalten nachholen.",
+    "Recherche: Rechtliche Vorgaben für den Betrieb von Unterwasserdrohnen auf Bundeswasserstraßen, in Häfen und Naturschutzgebieten (Suchbegriffe: Unterwasserdrohne Genehmigung Wasserstraße, Hafenordnung Tauchroboter), um Regelwerke für den Betrieb zu ergänzen.",
+    "Recherche: Revisions-IDs der Wikipedia-Artikel Q1 und Q2 konnten wegen Ratenbegrenzung der Wikimedia-API nicht ermittelt werden; Stand beim nächsten Lauf nachtragen.",
+    "Recherche: Quelle zur akustischen Unterwasserpositionierung kleiner Drohnen (Suchbegriffe: USBL mini ROV positioning, Water Linked Underwater GPS), um die Unterwasserpositionierung in P22 zu belegen."
+  ]
+}

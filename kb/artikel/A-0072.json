@@ -1,0 +1,3601 @@
+{
+  "schema_version": "2.3",
+  "artikel_id": "A-0072",
+  "artikeltyp": "blatt",
+  "titel": "Containerschiff",
+  "betrachtungsumfang": "Generische Referenzarchitektur des Vollcontainerschiffs (zellenförmig ausgebautes Frachtschiff für ISO-Container) in der Seeschifffahrt, vom Feederschiff bis zum Ultra Large Container Ship, mit und ohne Bordkräne, mit Lukendeckeln oder lukendeckellosen Laderäumen und mit Single- oder Twin-Island-Aufbauten. Betrachtete Antriebsarten: Dieselmotor mit flüssigem Brennstoff (Energiespeicher Kraftstofftank, Wandler Verbrennungsmotor) und Zweistoffmotor mit Flüssigerdgas (Energiespeicher Gastank, Wandler Verbrennungsmotor in Zweistoffausführung). Nicht betrachtet werden Dampf- und Gasturbinenantriebe, dieselelektrische, batterieelektrische, hybride und Brennstoffzellenantriebe, Methanol- und Ammoniakantriebe, Semicontainerschiffe, Con-Ro-Schiffe und Binnencontainerschiffe sowie die Container selbst und die Umschlaganlagen der Häfen.",
+  "status": "in_arbeit",
+  "quellenzugriff": "ja",
+  "kindartikel_ids": [],
+  "quellen": [
+    {
+      "quellen_id": "Q1",
+      "titel": "Containerschiff",
+      "urheber": "Wikipedia, Die freie Enzyklopädie (deutschsprachig)",
+      "stand": "oldid 271409548 (17. Oktober 2026)",
+      "url": "https://de.wikipedia.org/wiki/Containerschiff",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q2",
+      "titel": "Container ship",
+      "urheber": "Wikipedia, The Free Encyclopedia (englischsprachig)",
+      "stand": "oldid 1381463139 (22. Oktober 2026)",
+      "url": "https://en.wikipedia.org/wiki/Container_ship",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q3",
+      "titel": "Contact of Containership Dali with Francis Scott Key Bridge and Subsequent Bridge Collapse, Baltimore, Maryland, March 26, 2024 (Marine Investigation Report MIR-25-40)",
+      "urheber": "National Transportation Safety Board (NTSB, USA)",
+      "stand": "2025",
+      "url": "https://www.ntsb.gov/investigations/AccidentReports/Reports/MIR2540.pdf",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "behoerde"
+    },
+    {
+      "quellen_id": "Q4",
+      "titel": "CARGOSAFE – Study investigating cost-efficient measures for reducing the risk from cargo fires on container vessels, Executive Summary (2021/EMSA/OP/17/2021)",
+      "urheber": "European Maritime Safety Agency (EMSA), Konsortium unter Leitung des Danish Institute of Fire and Security Technology (DBI)",
+      "stand": "14. März 2023",
+      "url": "https://www.emsa.europa.eu/containership-safety/cargosafe/download/7456/4909/23.html",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "behoerde"
+    },
+    {
+      "quellen_id": "Q5",
+      "titel": "The Geography of Transport Systems, Kapitel 5 (Maritime Transportation): The Evolution of Containerships",
+      "urheber": "Jean-Paul Rodrigue, Texas A&M University (Online-Ausgabe zum Lehrbuch, 6. Auflage, Routledge 2024)",
+      "stand": "zum Abrufzeitpunkt aktuelle Fassung",
+      "url": "https://transportgeography.org/contents/chapter5/maritime-transportation/evolution-containerships-classes/",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "fachliteratur"
+    }
+  ],
+  "abschnitte": [
+    {
+      "ueberschrift": "Einleitung",
+      "abschnittstyp": "gesamtsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P1",
+          "text": "Ein Containerschiff ist ein Schiffstyp für den Transport von ISO-Containern und befördert seine gesamte Ladung in Containern. Die Ladekapazität wird in TEU angegeben, der Zahl ladbarer 20-Fuß-Container; vorherrschend sind 40-Fuß-Container. Containerschiffe befördern den größten Teil der seewärtigen Fracht, die kein Massengut ist. Schiffe bis etwa 3400 TEU haben teilweise eigenes Ladegeschirr, größere werden an den Containerbrücken der Terminals umgeschlagen.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Einleitung, Absätze 1 bis 3"
+            },
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Einleitung, Absätze 1 bis 3"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "funktion"
+        },
+        {
+          "absatz_id": "P2",
+          "text": "Architekturell ist das Containerschiff ein Wasserfahrzeug ohne Fahrwerk, dessen Schiffskörper Auftrieb, Lastpfad und Laderaum zugleich bildet. Die Systemgrenze liegt an der Außenhaut zum Wasser, das Auftrieb, Vortrieb, Ruderkräfte, Kühl- und Ballastwasser liefert, am Terminal für Umschlag, Bunkern und Landstrom und an den Containern, die Lasten einleiten und als Kühlcontainer Strom beziehen. Ein Bremssystem fehlt; verzögert wird durch Umsteuern des Propellers. Die Hauptsysteme sind mechanisch, elektrisch, hydraulisch, pneumatisch, thermisch, stofflich und informationstechnisch gekoppelt und werden im Folgenden, etwa für SysML, bis zu den Komponenten zerlegt.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P1",
+              "P3",
+              "P7",
+              "Ein schwimmendes Fahrzeug ohne Bodenkontakt braucht kein Fahrwerk und kann nur über Schub und Wasserwiderstand verzögern"
+            ],
+            "schluss": "Systemgrenze an Außenhaut, Terminal und Container; Hauptfunktionen und Schnittstellenarten folgen aus Transportaufgabe und Schwimmprinzip."
+          },
+          "sicherheit": "hoch",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "funktion"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrzeugstruktur",
+      "abschnittstyp": "hauptsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P3",
+          "text": "Der Schiffskörper ist um einen kräftigen Kiel gebaut und nimmt Laderäume unter Deck, zahlreiche Tanks und den Maschinenraum auf, der bei den meisten neuen Schiffen achtern liegt. Spanten stehen rechtwinklig zum Kiel; Balken über die ganze Breite tragen das Hauptdeck und verstärken mit Deck, Spanten und Querschotten die Außenhaut. Ein Doppelboden bildet eine zweite wasserdichte Hülle und nimmt Brennstoff, Ballastwasser oder Frischwasser auf.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Abschnitt „Architecture“, Absätze 1 bis 3"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P4",
+          "text": "Brücke und Unterkunft lagen meist gemeinsam achtern. Um mehr Containerkapazität mit den Sichtanforderungen des SOLAS-Übereinkommens (Vertragsstaaten) zu vereinbaren, setzen manche große Schiffe die Brücke weiter nach vorn, getrennt vom Schornstein. Die EMSA-Studie CARGOSAFE unterscheidet Single-Island- und Twin-Island-Schiffe; Ultra Large Container Ships über 364 m Länge sind Twin-Island-Schiffe.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Abschnitt „Bridge“"
+            },
+            {
+              "quellen_id": "Q4",
+              "fundstelle": "Abschnitt 3.3, S. 7"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "variante"
+        },
+        {
+          "absatz_id": "P5",
+          "text": "Die Fahrzeugstruktur gliedert sich in den Schiffskörper mit Doppelboden, Spanten, Querschotte, Hauptdeck, Lukensüll und Bugwulst und die Decksaufbauten mit Deckshaus und Maschinenschacht. Containerlasten laufen über Zellführungen und Lukendeckel in Lukensüll, Querschotte und Doppelboden und über die Außenhaut ins Wasser. Die großen Lukenöffnungen machen den Querschnitt torsionsweich; Hauptdeck und Lukensüll müssen Biegung und Torsion aus dem Seegang aufnehmen. Bei Twin-Island-Bauweise werden die Wege zwischen Brücke und Maschinenraum länger.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P3",
+              "P4",
+              "P16",
+              "Q1 (Abschnitt „Lukendeckellose Containerschiffe“, Absatz 2: Torsion, höherfester Stahl, versteifte Gurtung)",
+              "Q2 (Infobox: Bugwulst)",
+              "Jede Last braucht einen Pfad bis zum tragenden Wasser"
+            ],
+            "schluss": "Schiffskörper mit Doppelboden, Spanten, Querschotten, Hauptdeck, Lukensüll und Bugwulst trägt die Lasten; die Lage der Decksaufbauten ist eine Variante."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        }
+      ],
+      "element_id": "E2"
+    },
+    {
+      "ueberschrift": "Auftriebs- und Trimmsystem",
+      "abschnittstyp": "hauptsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P6",
+          "text": "Das Auftriebs- und Trimmsystem hält Tiefgang, Trimm und Krängung bei wechselnder Ladung in Grenzen. Den Auftrieb liefert die Verdrängung des Schiffskörpers; die Ballastwasseranlage mit Ballasttanks im Doppelboden, Ballastpumpen und Krängungsausgleichsanlage regelt die Schwimmlage, auch während des Umschlags. Der Ladungs- und Stabilitätsrechner verknüpft Stauplan und Tankstände und zeigt Stabilität und Festigkeit an. Hohe Decksstapel heben den Schwerpunkt; parametrisches Rollen kann Laschung und Stapel überlasten.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P3 (Doppelboden nimmt Ballastwasser auf)",
+              "P16 (Bay, Reihe, Lage)",
+              "Q2 (Abschnitt „Losses and safety problems“, Absatz 2: parametrisches Rollen bei hohen Stapeln)",
+              "Ein schwimmender Körper trägt das Gewicht des verdrängten Wassers; wechselnde Ladung verschiebt Tiefgang, Trimm und Krängung"
+            ],
+            "schluss": "Ballastwasseranlage, Krängungsausgleich und Ladungs- und Stabilitätsrechner regeln die Schwimmlage; Ausführung der Krängungsausgleichsanlage ohne Quelle."
+          },
+          "sicherheit": "gering",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "modellannahme"
+        }
+      ],
+      "element_id": "E13"
+    },
+    {
+      "ueberschrift": "Antriebssystem",
+      "abschnittstyp": "hauptsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P7",
+          "text": "Auf der Dali, Baujahr 2015, trieb ein einziger langsamlaufender Dieselmotor direkt einen Propeller an; Anlassen und Drehrichtungsumkehr erfolgten mit Druckluft, Maschinentelegraf und Fernsteuerung über eine Fahrtregelanlage. Die ersten beiden Generationen von Containerschiffen hatten Einschraubenantrieb mit Dampfturbine oder Dieselmotor, schnelle Schiffe der dritten Generation zwei oder drei Schrauben; Gasturbinen erwiesen sich als unwirtschaftlich. Die Triple-E-Klasse hat zwei Hauptmaschinen und Zweischraubenantrieb.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Abschnitt 1.6.1, Tabelle 2, S. 78; Abschnitt 1.7.2.1.1, S. 85"
+            },
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Abschnitt „Antrieb“, Absatz 1; Abschnitt „Ultra Large Container Ships (ULCS)“, Absatz 1"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "variante"
+        },
+        {
+          "absatz_id": "P8",
+          "text": "Ein Bugstrahlruder mit Verstellpropeller half auf der Dali beim Manövrieren und war über 5 Knoten unwirksam; sein Motor hing an der Hochspannungsschalttafel. Für die seit 2020 geltenden Schwefelgrenzwerte nach MARPOL Anlage VI (IMO-Übereinkommen, weltweit, verschärft in Emissions-Überwachungsgebieten) rüstete der Eigner einen Abgaswäscher nach, der Schwefeloxide und Partikel entfernt und Schwerölbetrieb erlaubt.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Abschnitt 1.7.2.2, S. 88; Abschnitt 1.7.4.2, S. 90–91, mit Fußnote 89"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P9",
+          "text": "Das Antriebssystem gliedert sich in die Hauptmaschinenanlage mit Verbrennungsmotor, Abgasanlage und Abgasnachbehandlung, die Wellenanlage mit Antriebswelle und Propeller sowie das Bugstrahlruder. Der Verbrennungsmotor wandelt Brennstoff in Drehmoment, das die Antriebswelle ohne Getriebe zum Propeller leitet; Umsteuern kehrt den Schub zum Verzögern um. Weil Schmieröl-, Kühlwasser- und Brennstoffpumpen am Bordnetz hängen, trifft ein Stromausfall den Antrieb unmittelbar. Zweischraubenantrieb verdoppelt Hauptmaschinenanlage und Wellenanlage, der Zweistoffmotor ergänzt die Gasversorgung.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P7",
+              "P8",
+              "P10",
+              "Q3 (Abschnitt 1.7.2.1.3, S. 87: Neustart des Hauptmotors braucht Hoch- und Niederspannung für Schmieröl-, Hydrauliköl- und Kühlwasserpumpen)",
+              "Ein Festpropeller kehrt den Schub nur über die Drehrichtung der Welle um"
+            ],
+            "schluss": "Hauptmaschinenanlage, direkt wirkende Wellenanlage und Bugstrahlruder; der Antrieb hängt an der Stromerzeugung."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        }
+      ],
+      "element_id": "E19"
+    },
+    {
+      "ueberschrift": "Energieversorgungssystem",
+      "abschnittstyp": "hauptsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P10",
+          "text": "Auf der Dali speisten vier Dieselgeneratoren eine Hochspannungs-Sammelschiene, deren Schalttafel unter anderem Schmierölpumpen des Hauptmotors, Bugstrahlruder, Abgaswäscher und Kühlcontaineranlage versorgte; ohne laufenden Generator konnte der Hauptmotor nicht betrieben werden. Schweröl, schwefelarmes Schweröl und Marinegasöl lagerten in eigenen Tanks. Hauptmotor und Generatoren hatten getrennte Brennstoffsysteme mit doppelten Pumpen, die nach einem Stromausfall selbsttätig wieder anliefen.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Abschnitt 1.7.1.1, S. 80; Abschnitt 1.7.4.1, S. 90, mit Fußnote 87"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P11",
+          "text": "Das Energieversorgungssystem umfasst die Kraftstoffanlage mit Kraftstofftank, Brennstoffpumpen und Brennstoffaufbereitung, beim Zweistoffmotor ergänzt um einen isolierten Gastank, die Stromerzeugung mit Generator und unabhängigem Notstromaggregat, die Hochvoltverteilung und den Landstromanschluss. Die Hochvoltverteilung bündelt die Generatorleistung und speist Großverbraucher sowie über Transformatoren das Bordnetz. Am Liegeplatz kann Landstrom die Generatoren ersetzen; seine Anschlusstechnik ist eine eigene Terminalschnittstelle. Energiespeicher sind die Tanks.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P10",
+              "Q1 (Abschnitt „Umweltaspekte“, Absatz 2: Dieselversorgung im Hafen, fehlende Normung der Schiffs-Anschlusstechnik)",
+              "Q3 (Abschnitt 1.7.1.2, S. 82: unabhängiger Notgenerator)",
+              "Flüssigerdgas muss tiefkalt in isolierten Tanks gelagert werden"
+            ],
+            "schluss": "Kraftstoffanlage, Stromerzeugung mit Notstromaggregat, Hochvoltverteilung und Landstromanschluss; beim Zweistoffmotor zusätzlich Gastank."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        }
+      ],
+      "element_id": "E28"
+    },
+    {
+      "ueberschrift": "Lenksystem",
+      "abschnittstyp": "hauptsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P12",
+          "text": "Elektrisch angetriebene Rudermaschinenpumpen liefern das Drucköl, mit dem die Rudermaschine das Ruder bewegt. Auf der Dali hingen zwei der drei Pumpen an der Niederspannungs-Sammelschiene, eine an der Notschiene; als kritische Hilfsmaschinen laufen sie nach Spannungswiederkehr selbsttätig an. Nach dem ersten Stromausfall waren alle drei ohne Strom, und das Ruder ließ sich nicht bewegen.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Fußnote 24, S. 30; S. 38–39; Fußnote 91, S. 93"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P13",
+          "text": "Das Lenksystem besteht aus der Ruderanlage mit Ruder, Rudermaschine und Rudermaschinenpumpen und dem Steuerstand mit Steuerrad und Selbststeueranlage. Der vorgegebene Ruderwinkel wird hydraulisch eingestellt; das Ruder lenkt den Propellerstrahl ab und verliert bei langsamer Fahrt an Wirkung, wo das Bugstrahlruder hilft. Beim Zweischraubenantrieb kann jeder Propeller ein eigenes Ruder erhalten. Die Ruderlage geht an den Schiffsdatenschreiber.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P12",
+              "P8",
+              "P14",
+              "Q3 (Abschnitt 1.13.1, S. 108: Ruderlage als aufgezeichneter Parameter)",
+              "Ein Ruder erzeugt Querkraft nur bei Anströmung"
+            ],
+            "schluss": "Ruderanlage mit hydraulischer Rudermaschine und Steuerstand; bei langsamer Fahrt ergänzt das Bugstrahlruder."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        }
+      ],
+      "element_id": "E39"
+    },
+    {
+      "ueberschrift": "Fahrerhaus",
+      "abschnittstyp": "hauptsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P14",
+          "text": "Der Rudergänger führt die Ruderkommandos von Kapitän oder Lotse aus und meldet Kurs und Ruderlage zurück. Auf der Dali gab es Manöverstände für den Hauptmotor auf der Brücke und im Maschinenkontrollraum. Navigationsgeräte, Navigationslichter und Schiffsdatenschreiber hingen an einer Verteilung, die bei Ausfall der normalen Niederspannung selbsttätig auf die Notversorgung umschaltet.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Fußnote 20, S. 28; Fußnote 85, S. 87; Fußnote 77, S. 83"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "funktion"
+        },
+        {
+          "absatz_id": "P15",
+          "text": "Das Fahrerhaus steht beim Containerschiff für Brücke, Maschinenkontrollraum und Unterkünfte. Die Brücke trägt Bedienelemente wie Fahrhebel und Maschinentelegraf und Anzeigeelemente für Navigation, Maschinenzustand und Alarme; Kommandos gehen an Fahrtregelanlage und Rudermaschine, Rückmeldungen kommen zurück. Der Maschinenkontrollraum ist zweiter Bedienort der Maschine. Bei Twin-Island-Bauweise liegen Brücke und Unterkünfte vorn, der Maschinenkontrollraum achtern.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P4",
+              "P14",
+              "Q2 (Abschnitt „Bridge“: Brücke und Unterkunft als Einheit achtern)",
+              "Jede Fahrereingabe braucht ein Bedienelement, jede Rückmeldung ein Anzeigeelement"
+            ],
+            "schluss": "Brücke mit Bedien- und Anzeigeelementen, Maschinenkontrollraum und Unterkünfte; ihre Lage folgt der Aufbautenanordnung."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        }
+      ],
+      "element_id": "E47"
+    },
+    {
+      "ueberschrift": "Aufbau und Ladung",
+      "abschnittstyp": "hauptsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P16",
+          "text": "Vollcontainerschiffe bestehen aus Zellen, in denen Container auch unter Deck gestapelt werden. Die Lukenöffnungen reichen über die ganze Laderaumbreite; auf dem Lukensüll liegen Lukendeckel, die von Kränen abgehoben oder mit Hydraulikzylindern geöffnet werden. Zellführungen, vertikale Stahlschienen, führen die Container in Reihen und stützen sie gegen das Rollen. Der Stauplan verortet jeden Container nach Bay, Reihe und Lage.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q5",
+              "fundstelle": "Abschnitt zur zweiten Generation (fully cellular containerships), Absatz 2"
+            },
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Abschnitt „Cargo holds“, Absätze 1 bis 3"
+            },
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Abschnitt „Geschichte“, Absatz „Die Schiffe sind so eingerichtet …“"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P17",
+          "text": "Unter Deck fixieren Zellführungen und Staukonen die Container. An Deck sichern Laschsysteme aus Stangen, Drahtseilen oder Ketten mit Spannschrauben die Stapel, ergänzt durch Twistlocks zwischen den Containern. Einige große Schiffe nutzen ein Buttress-System aus Türmen an den Laderaumenden und Stapelrahmen.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Abschnitt „Lashing systems“, Absätze 1 und 2"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "variante"
+        },
+        {
+          "absatz_id": "P18",
+          "text": "Schiffe mit Bordkränen (geared) können Häfen ohne Containerbrücken anlaufen, sind aber teurer in Anschaffung, Wartung und Brennstoffverbrauch; über 4000 TEU sind sie fast nie mit Kränen ausgerüstet. Lukendeckellose Schiffe sparen Gewicht und Umschlagzeit, brauchen aber einen besonderen Bug, ein leistungsfähiges Pumpsystem, hohen Freibord, höherfesten Stahl und eine versteifte Gurtung. Die Emma-Mærsk-Klasse hat Anschlüsse für 1000 Kühlcontainer.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Abschnitt „Cargo cranes“, Absätze 1, 2 und 4"
+            },
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Abschnitt „Lukendeckellose Containerschiffe“, Absätze 1 und 2; Abschnitt „Very Large Container Ships (VLCS)“, Absatz 1"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "variante"
+        },
+        {
+          "absatz_id": "P19",
+          "text": "Aufbau und Ladung gliedern sich in den Laderaum mit Zellführungen und Lukendeckeln, die Ladungssicherung mit Twistlocks, Laschstangen und Laschbrücken, die Kühlcontaineranschlüsse an der Hochvoltverteilung und gegebenenfalls den Bordkran. Unter Deck tragen Zellführungen die Stapel seitlich ab, an Deck geben Lukendeckel die Stapellast ins Lukensüll, die Laschung nimmt Rollkräfte auf. Ein Bordkran braucht Fundamente, Energie und Krängungsausgleich.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P16",
+              "P17",
+              "P18",
+              "P10 (Kühlcontaineranlage an der Hochspannungsschalttafel)",
+              "P6"
+            ],
+            "schluss": "Laderaum, Ladungssicherung, Kühlcontaineranschlüsse und optionaler Bordkran; Lastpfade unter und über Deck unterscheiden sich."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        }
+      ],
+      "element_id": "E53"
+    },
+    {
+      "ueberschrift": "Elektrik und Elektronik",
+      "abschnittstyp": "hauptsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P20",
+          "text": "Auf der Dali speiste die Hochspannungs-Sammelschiene über zwei redundante Abspanntransformatoren die Niederspannungsschalttafel für Beleuchtung, Rudermaschinen-, Brennstoff- und Kühlwasserpumpen. Ein unabhängiges Notstromaggregat startet bei Ausfall selbsttätig und versorgt nur die Notschalttafel mit Navigation, Kommunikation und Notbeleuchtung, nach der IMO-Regel für Notstromquellen auf Frachtschiffen innerhalb von 45 Sekunden. Auslöser des Unfalls war eine lose Signalader in der Hochspannungsschalttafel, die einen Transformatorschalter öffnete.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Abschnitt 1.7.1.1, S. 80–81; Abschnitt 1.7.1.2, S. 82, mit Fußnote 74; „What We Found“, S. xii–xiii"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P21",
+          "text": "Elektrik und Elektronik umfassen das Niedervolt-Bordnetz mit Abspanntransformatoren, Niederspannungsschalttafel, Notschalttafel und Gruppenstartern sowie das Bussystem der Automation. Die Gruppenstarter legen fest, welche Hilfsmaschinen nach Spannungswiederkehr selbsttätig anlaufen. Die Notschalttafel bildet einen zweiten Pfad für sicherheitswichtige Verbraucher. Da Antrieb, Ruder und Brennstoffversorgung an diesem Netz hängen, bestimmen Umschaltautomatik und Selbstanlauf die Verfügbarkeit des Schiffs.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P20",
+              "P10",
+              "P12",
+              "Q3 (Fußnote 88, S. 90: Gruppenstarter mit verzögertem Anlauf)",
+              "Jeder elektrische Verbraucher braucht einen geschützten Abgang"
+            ],
+            "schluss": "Niedervolt-Bordnetz mit Normal- und Notpfad bestimmt die Verfügbarkeit von Antrieb und Ruder; das Bussystem koppelt die Automation."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        }
+      ],
+      "element_id": "E63"
+    },
+    {
+      "ueberschrift": "Fahrzeugsteuerung und Information",
+      "abschnittstyp": "hauptsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P22",
+          "text": "Ein integriertes Überwachungssystem zeigte auf der Dali Anlagenbilder, Tankstände und Alarme von Antrieb, Stromerzeugung und Hilfssystemen. Das Energiemanagementsystem verglich Netzlast und Generatorleistung, trennte bei Unterfrequenz den Generator und schaltete Reservegeneratoren nach Rangfolge zu. Ein Diagnoseprogramm speicherte Motorereignisse. Der Schiffsdatenschreiber zeichnete Brückengespräche und Daten wie Ruderlage, Kurs und Position auf.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Abschnitt 1.7.3, S. 88–89; Abschnitt 1.7.5, S. 94–95, mit Fußnote 94; Abschnitt 1.13.1, S. 108"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P23",
+          "text": "Fahrzeugsteuerung und Information gliedern sich in die Maschinenautomation mit Überwachungs- und Alarmsystem, Energiemanagementsystem, Fahrtregelanlage und Diagnose und das Schiffsführungssystem mit Navigation und Schiffsdatenschreiber. Die Maschinenautomation erfasst Messwerte über das Bussystem und greift in Stromerzeugung und Hauptmotor ein, etwa mit einer Abschaltung bei fehlendem Kühlwasserdruck. Die Navigation liefert Position, Kurs und Fahrt an Brücke, Selbststeueranlage und Schiffsdatenschreiber.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P22",
+              "P7",
+              "Q3 (Abschnitt 1.7.2.1.2, S. 86: abbrechbare und nicht abbrechbare Abschaltungen, niedriger Kühlwasserdruck)",
+              "Q3 (Abschnitt 1.13.1, S. 108: Position, Kurs und Wendegeschwindigkeit als Datenquellen)"
+            ],
+            "schluss": "Maschinenautomation und Schiffsführungssystem koordinieren Stromerzeugung, Hauptmotor und Navigation."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        }
+      ],
+      "element_id": "E70"
+    },
+    {
+      "ueberschrift": "Fahrerassistenz und Sicherheit",
+      "abschnittstyp": "hauptsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P24",
+          "text": "Ladungsbrände aus Containern sind ein bekanntes Unfallbild von Containerschiffen. Nach der Änderung der SOLAS-Regel II-2/10 durch MSC.365(93) (SOLAS-Vertragsstaaten) brauchen Neubauten ab 2016 mobile Wasserwerfer und mindestens eine Wassernebellanze. Unter Deck erkennen Rauchansauganlagen Brände, an Deck die Besatzung. Im Laderaum wird mit Kohlendioxid gelöscht, dessen Wirkung von der Dichtheit des Laderaums abhängt. Untersucht wurden feste Infrarotkameras und die Temperaturüberwachung einzelner Container.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q4",
+              "fundstelle": "Abschnitt 3.1, S. 6; Abschnitt 6, Step 1, S. 13; Step 3, S. 15"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "variante"
+        },
+        {
+          "absatz_id": "P25",
+          "text": "Fahrerassistenz und Sicherheit umfassen die Brandschutzanlage mit Rauchansauganlage, Kohlendioxid-Feuerlöschanlage, Feuerlöschpumpen, Wassernebellanze und Wasserwerfer, die Umfeldsensorik mit Radar und Schiffsidentifizierung sowie Rettungsmittel. Brandmeldungen laufen über das Überwachungs- und Alarmsystem zur Brücke, die Umfeldsensorik zeigt dort die Verkehrslage an. Infrarotkameras oder Containertemperaturen erfordern zusätzliche Sensoren und Auswertung.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P24",
+              "P22",
+              "Q2 (Abschnitt „Architecture“, Absatz 3: Feuerlöschpumpen im Maschinenraum)",
+              "Jede Erkennung braucht einen Meldeweg zur Schiffsführung"
+            ],
+            "schluss": "Brandschutzanlage mit Erkennung und Löschmitteln, Umfeldsensorik und Rettungsmittel; die Wahl der Branderkennung ändert die Automation."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        }
+      ],
+      "element_id": "E79"
+    },
+    {
+      "ueberschrift": "Beleuchtung und Sicht",
+      "abschnittstyp": "hauptsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P26",
+          "text": "Beleuchtung und Sicht gliedern sich in die Beleuchtungsanlage mit Navigationslichtern, Scheinwerfern und Notbeleuchtung und die Sicht- und Signaleinrichtung mit Scheibenwischern und Typhon. Navigationslichter und Notbeleuchtung sind über die Notversorgung abgesichert, Scheinwerfer leuchten Decks für Umschlag und Laschen aus. Die Sicht über die Decksstapel begrenzt die Stauhöhe vor der Brücke und bestimmt so die Lage des Deckshauses mit.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P4",
+              "P14",
+              "P20",
+              "Q2 (Abschnitt „Bridge“: Sichtanforderungen bestimmen die Brückenlage)"
+            ],
+            "schluss": "Beleuchtungsanlage und Sicht- und Signaleinrichtung; die Sicht über die Stapel koppelt an Struktur und Stauung."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        }
+      ],
+      "element_id": "E88"
+    },
+    {
+      "ueberschrift": "Thermomanagement",
+      "abschnittstyp": "hauptsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P27",
+          "text": "Das Thermomanagement gibt die Verlustwärme der Motoren an Seewasser ab. Im Kühlkreislauf fördert die Kühlmittelpumpe Kühlwasser durch die Motoren, der Kühler überträgt die Wärme an Seewasser, das die Seewasserpumpe ansaugt. Fällt der Kühlwasserdruck, kann die Automation den Hauptmotor abschalten. Die Klimaanlage versorgt Unterkünfte und Brücke, die Laderaumlüftung führt Wärme und Gase ab und wird im Brandfall geschlossen.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P20 (Kühlwasserpumpen an der Niederspannungsschalttafel)",
+              "Q3 (Abschnitt 1.7.2.1.2, S. 86: Abschaltung bei niedrigem Kühlwasserdruck; Fußnote 75, S. 83: Kühler und Klappe des Notstromaggregats)",
+              "Q2 (Abschnitt „Architecture“, Absatz 3: Klimaanlagen)",
+              "Q4 (Abschnitt 6, Step 1, S. 13: Schließen der Lüftungskanäle der Laderäume)",
+              "Verlustwärme braucht eine Wärmesenke; ständig verfügbar ist das Seewasser"
+            ],
+            "schluss": "Kühlkreislauf mit Seewasser als Wärmesenke, Klimaanlage und Laderaumlüftung."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        }
+      ],
+      "element_id": "E96"
+    },
+    {
+      "ueberschrift": "Neben- und Versorgungssysteme",
+      "abschnittstyp": "hauptsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P28",
+          "text": "Die Neben- und Versorgungssysteme umfassen Versorgungsanlagen und Decksausrüstung. Die Druckluftanlage liefert Anlassluft für den Hauptmotor, die Hydraulikversorgung bewegt Lukendeckel und Decksmaschinen; dazu kommen Frischwasseranlage, Abwasseranlage und Lenzanlage, die bei lukendeckellosen Laderäumen größer ausfällt. Zur Decksausrüstung gehören Ankerwinde und Festmachewinden, die das Schiff festhalten.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P7",
+              "P16",
+              "P18",
+              "Q3 (Abschnitt 1.7.4.1, S. 90: luftmotorgetriebene Notbrennstoffpumpe; Fußnote 31, S. 38: Ankerwinde und Kettenstopper)",
+              "Q2 (Abschnitt „Architecture“, Absatz 3: Frischwasser- und Abwassersysteme)"
+            ],
+            "schluss": "Druckluft-, Hydraulik-, Wasser- und Lenzversorgung sowie Anker- und Festmacheausrüstung."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        }
+      ],
+      "element_id": "E103"
+    },
+    {
+      "ueberschrift": "Zusammenfassung",
+      "abschnittstyp": "gesamtsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P29",
+          "text": "Auf oberster Ebene besteht das Containerschiff aus Fahrzeugstruktur, Auftriebs- und Trimmsystem, Antriebssystem, Energieversorgungssystem, Lenksystem, Fahrerhaus, Aufbau und Ladung, Elektrik und Elektronik, Fahrzeugsteuerung und Information, Fahrerassistenz und Sicherheit, Beleuchtung und Sicht, Thermomanagement sowie Neben- und Versorgungssystemen. Am stärksten koppelt das Bordnetz, an dem Antrieb, Ruder, Brennstoffversorgung und Kühlung hängen, daneben der Schiffskörper, der alle Lasten trägt.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P5",
+              "P6",
+              "P9",
+              "P11",
+              "P12",
+              "P19",
+              "P21"
+            ],
+            "schluss": "Dreizehn Hauptsysteme, gekoppelt vor allem über Bordnetz und Schiffskörper."
+          },
+          "sicherheit": "hoch",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "funktion"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Modellierungsbezug",
+      "abschnittstyp": "modellierung",
+      "absaetze": [
+        {
+          "absatz_id": "P30",
+          "text": "In SysML bildet der Block `Containerschiff` das Gesamtsystem. Dekompositionspfade sind etwa `Containerschiff → Antriebssystem → Wellenanlage → Propeller`, `Containerschiff → Energieversorgungssystem → Stromerzeugung → Notstromaggregat`, `Containerschiff → Elektrik und Elektronik → Niedervolt-Bordnetz → Notschalttafel` und `Containerschiff → Aufbau und Ladung → Ladungssicherung → Twistlocks`. Ports bilden Brennstoffzulauf, Wellenflansch, Schalttafelabgänge, Hydraulik-, Kühlwasser- und Busanschlüsse sowie die Außenschnittstellen zu Wasser, Terminal und Containern ab. Block Definition Diagrams zeigen die Zerlegung, Internal Block Diagrams Energie- und Signalpfade, Zustandsdiagramme Seefahrt, Manöver, Hafenliegezeit und Stromausfall.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "Elementhierarchie und Flüsse dieses Artikels",
+              "P9",
+              "P11",
+              "P21",
+              "P22"
+            ],
+            "schluss": "Dekompositionspfade, Ports und Diagrammarten folgen aus Struktur, Flüssen und Betriebsarten."
+          },
+          "sicherheit": "hoch",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "modellannahme"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Flüsse",
+      "abschnittstyp": "fluesse",
+      "absaetze": [
+        {
+          "absatz_id": "P31",
+          "text": "Brennstoff: Kraftstofftank über Brennstoffpumpen an Verbrennungsmotor und Generator, Gastank an Verbrennungsmotor. Mechanisch: Verbrennungsmotor über Antriebswelle an Propeller; Zellführungen an Schiffskörper, Lukendeckel an Lukensüll. Abgas: Verbrennungsmotor an Abgasanlage. Elektrisch: Generator und Landstromanschluss an Hochvoltverteilung, diese an Bugstrahlruder, Kühlcontaineranschlüsse und Abspanntransformatoren, diese an Niederspannungsschalttafel, diese an Rudermaschinenpumpen, Brennstoffpumpen, Beleuchtungsanlage und Decksausrüstung; Notstromaggregat an Notschalttafel, diese an Navigation. Hydraulisch: Rudermaschinenpumpen an Rudermaschine, Hydraulikversorgung an Lukendeckel. Pneumatisch: Druckluftanlage an Verbrennungsmotor. Thermisch: Kühlkreislauf an Hauptmaschinenanlage, Klimaanlage an Unterkünfte. Stoff: Ballastpumpen an Ballasttanks, Feuerlöschpumpen an Wasserwerfer. Information: Steuerstand an Rudermaschine, Bedienelemente an Fahrtregelanlage, diese an Verbrennungsmotor; Rauchansauganlage und Bussystem an Überwachungs- und Alarmsystem, dieses, Umfeldsensorik sowie Ladungs- und Stabilitätsrechner an Anzeigeelemente; Navigation an Schiffsdatenschreiber; Energiemanagementsystem an Stromerzeugung.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P5",
+              "P6",
+              "P9",
+              "P11",
+              "P13",
+              "P15",
+              "P19",
+              "P21",
+              "P23",
+              "P25",
+              "P26",
+              "P27",
+              "P28"
+            ],
+            "schluss": "Jeder Fluss hat Ursprung und Ziel in den beschriebenen Elementen."
+          },
+          "sicherheit": "hoch",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "funktion"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Perspektiven",
+      "abschnittstyp": "perspektiven",
+      "absaetze": [
+        {
+          "absatz_id": "P32",
+          "text": "Fahrzeuglasten tragen: Schiffskörper; Auftrieb bereitstellen: Schiffskörper, Ballastwasseranlage; Fahrzeug stabilisieren: Ballastwasseranlage, Krängungsausgleichsanlage, Ladungs- und Stabilitätsrechner; Energie speichern: Kraftstofftank, Gastank; Treibstoff fördern: Brennstoffpumpen; Elektrische Energie erzeugen: Generator, Notstromaggregat; Elektrische Energie verteilen: Hochvoltverteilung, Niedervolt-Bordnetz; Landstrom einspeisen: Landstromanschluss; Antriebsleistung erzeugen: Verbrennungsmotor; Drehmoment übertragen: Antriebswelle; Fahrzeug fortbewegen: Propeller; Fahrzeug manövrieren: Bugstrahlruder; Fahrzeug lenken: Ruderanlage; Fahrzeug verzögern: Verbrennungsmotor, Propeller, Druckluftanlage; Fahrzeug festhalten: Ankerwinde, Festmachewinden; Abgas reinigen: Abgasnachbehandlung; Fahrereingaben erfassen: Bedienelemente, Steuerrad; Fahrerinformationen anzeigen: Anzeigeelemente; Fahrersicht sicherstellen: Brücke, Scheibenwischer; Ladung aufnehmen: Laderaum, Zellführungen, Bordkran; Ladung entladen: Bordkran; Ladung sichern: Ladungssicherung; Ladung temperieren: Kühlcontaineranschlüsse; Daten übertragen: Bussystem; Fahrzeugzustand überwachen: Überwachungs- und Alarmsystem, Diagnose, Rauchansauganlage; Fahrzeugposition bestimmen: Navigation; Betriebsdaten aufzeichnen: Schiffsdatenschreiber; Fahrzeugumfeld erfassen: Umfeldsensorik; Brand bekämpfen: Kohlendioxid-Feuerlöschanlage, Feuerlöschpumpen, Wassernebellanze, Wasserwerfer; Insassen schützen: Brandschutzanlage, Rettungsmittel; Lichtsignale abgeben: Navigationslichter; Akustische Signale abgeben: Typhon; Fahrzeugumgebung ausleuchten: Scheinwerfer, Notbeleuchtung; Betriebstemperatur regeln: Kühlkreislauf, Laderaumlüftung; Innenraum klimatisieren: Klimaanlage; Druckluft bereitstellen: Druckluftanlage; Hydraulische Leistung bereitstellen: Hydraulikversorgung; Frischwasser bereitstellen: Frischwasseranlage; Abwasser sammeln: Abwasseranlage; Rumpf lenzen: Lenzanlage.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "Funktionszuordnung des Modellblocks",
+              "P5",
+              "P6",
+              "P9",
+              "P11",
+              "P13",
+              "P15",
+              "P19",
+              "P21",
+              "P23",
+              "P25",
+              "P26",
+              "P27",
+              "P28"
+            ],
+            "schluss": "Jede Funktion ist einem ausführenden System oder einer Komponente zugeordnet."
+          },
+          "sicherheit": "hoch",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "funktion"
+        }
+      ]
+    }
+  ],
+  "modell": {
+    "elemente": [
+      {
+        "id": "E1",
+        "name": "Containerschiff",
+        "typ": "gesamtsystem",
+        "eltern_id": null,
+        "absatz_ids": [
+          "P1",
+          "P2",
+          "P15",
+          "P29",
+          "P30"
+        ]
+      },
+      {
+        "id": "E2",
+        "name": "Fahrzeugstruktur",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P5",
+          "P29"
+        ],
+        "kategorie": "struktur_fahrwerk"
+      },
+      {
+        "id": "E3",
+        "name": "Schiffskörper",
+        "typ": "subsystem",
+        "eltern_id": "E2",
+        "absatz_ids": [
+          "P2",
+          "P3",
+          "P5",
+          "P29",
+          "P31",
+          "P32"
+        ]
+      },
+      {
+        "id": "E4",
+        "name": "Doppelboden",
+        "typ": "komponente",
+        "eltern_id": "E3",
+        "absatz_ids": [
+          "P3",
+          "P5",
+          "P6"
+        ]
+      },
+      {
+        "id": "E5",
+        "name": "Spanten",
+        "typ": "komponente",
+        "eltern_id": "E3",
+        "absatz_ids": [
+          "P3",
+          "P5"
+        ]
+      },
+      {
+        "id": "E6",
+        "name": "Querschotte",
+        "typ": "komponente",
+        "eltern_id": "E3",
+        "absatz_ids": [
+          "P5"
+        ]
+      },
+      {
+        "id": "E7",
+        "name": "Hauptdeck",
+        "typ": "komponente",
+        "eltern_id": "E3",
+        "absatz_ids": [
+          "P3",
+          "P5"
+        ]
+      },
+      {
+        "id": "E8",
+        "name": "Lukensüll",
+        "typ": "komponente",
+        "eltern_id": "E3",
+        "absatz_ids": [
+          "P5",
+          "P16",
+          "P19",
+          "P31"
+        ]
+      },
+      {
+        "id": "E9",
+        "name": "Bugwulst",
+        "typ": "komponente",
+        "eltern_id": "E3",
+        "absatz_ids": [
+          "P5"
+        ]
+      },
+      {
+        "id": "E10",
+        "name": "Decksaufbauten",
+        "typ": "subsystem",
+        "eltern_id": "E2",
+        "absatz_ids": [
+          "P5"
+        ]
+      },
+      {
+        "id": "E11",
+        "name": "Deckshaus",
+        "typ": "komponente",
+        "eltern_id": "E10",
+        "absatz_ids": [
+          "P5"
+        ]
+      },
+      {
+        "id": "E12",
+        "name": "Maschinenschacht",
+        "typ": "komponente",
+        "eltern_id": "E10",
+        "absatz_ids": [
+          "P5"
+        ]
+      },
+      {
+        "id": "E13",
+        "name": "Auftriebs- und Trimmsystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P6",
+          "P29"
+        ],
+        "kategorie": "sonstig"
+      },
+      {
+        "id": "E14",
+        "name": "Ballastwasseranlage",
+        "typ": "subsystem",
+        "eltern_id": "E13",
+        "absatz_ids": [
+          "P6",
+          "P32"
+        ]
+      },
+      {
+        "id": "E15",
+        "name": "Ballasttanks",
+        "typ": "komponente",
+        "eltern_id": "E14",
+        "absatz_ids": [
+          "P6",
+          "P31"
+        ]
+      },
+      {
+        "id": "E16",
+        "name": "Ballastpumpen",
+        "typ": "komponente",
+        "eltern_id": "E14",
+        "absatz_ids": [
+          "P6",
+          "P31"
+        ]
+      },
+      {
+        "id": "E17",
+        "name": "Krängungsausgleichsanlage",
+        "typ": "komponente",
+        "eltern_id": "E14",
+        "absatz_ids": [
+          "P6",
+          "P32"
+        ]
+      },
+      {
+        "id": "E18",
+        "name": "Ladungs- und Stabilitätsrechner",
+        "typ": "komponente",
+        "eltern_id": "E13",
+        "absatz_ids": [
+          "P6",
+          "P31",
+          "P32"
+        ]
+      },
+      {
+        "id": "E19",
+        "name": "Antriebssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P9",
+          "P29",
+          "P30"
+        ],
+        "kategorie": "antrieb"
+      },
+      {
+        "id": "E20",
+        "name": "Hauptmaschinenanlage",
+        "typ": "subsystem",
+        "eltern_id": "E19",
+        "absatz_ids": [
+          "P9",
+          "P31"
+        ]
+      },
+      {
+        "id": "E21",
+        "name": "Verbrennungsmotor",
+        "typ": "komponente",
+        "eltern_id": "E20",
+        "absatz_ids": [
+          "P9",
+          "P31",
+          "P32"
+        ]
+      },
+      {
+        "id": "E22",
+        "name": "Abgasanlage",
+        "typ": "komponente",
+        "eltern_id": "E20",
+        "absatz_ids": [
+          "P9",
+          "P31"
+        ]
+      },
+      {
+        "id": "E23",
+        "name": "Abgasnachbehandlung",
+        "typ": "komponente",
+        "eltern_id": "E20",
+        "absatz_ids": [
+          "P9",
+          "P32"
+        ]
+      },
+      {
+        "id": "E24",
+        "name": "Wellenanlage",
+        "typ": "subsystem",
+        "eltern_id": "E19",
+        "absatz_ids": [
+          "P9",
+          "P30"
+        ]
+      },
+      {
+        "id": "E25",
+        "name": "Antriebswelle",
+        "typ": "komponente",
+        "eltern_id": "E24",
+        "absatz_ids": [
+          "P9",
+          "P31",
+          "P32"
+        ]
+      },
+      {
+        "id": "E26",
+        "name": "Propeller",
+        "typ": "komponente",
+        "eltern_id": "E24",
+        "absatz_ids": [
+          "P7",
+          "P9",
+          "P13",
+          "P30",
+          "P31",
+          "P32"
+        ]
+      },
+      {
+        "id": "E27",
+        "name": "Bugstrahlruder",
+        "typ": "komponente",
+        "eltern_id": "E19",
+        "absatz_ids": [
+          "P8",
+          "P9",
+          "P10",
+          "P13",
+          "P31",
+          "P32"
+        ]
+      },
+      {
+        "id": "E28",
+        "name": "Energieversorgungssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P11",
+          "P29",
+          "P30"
+        ],
+        "kategorie": "energieversorgung"
+      },
+      {
+        "id": "E29",
+        "name": "Kraftstoffanlage",
+        "typ": "subsystem",
+        "eltern_id": "E28",
+        "absatz_ids": [
+          "P11"
+        ]
+      },
+      {
+        "id": "E30",
+        "name": "Kraftstofftank",
+        "typ": "komponente",
+        "eltern_id": "E29",
+        "absatz_ids": [
+          "P11",
+          "P31",
+          "P32"
+        ]
+      },
+      {
+        "id": "E31",
+        "name": "Gastank",
+        "typ": "komponente",
+        "eltern_id": "E29",
+        "absatz_ids": [
+          "P11",
+          "P31",
+          "P32"
+        ]
+      },
+      {
+        "id": "E32",
+        "name": "Brennstoffpumpen",
+        "typ": "komponente",
+        "eltern_id": "E29",
+        "absatz_ids": [
+          "P9",
+          "P11",
+          "P31",
+          "P32"
+        ]
+      },
+      {
+        "id": "E33",
+        "name": "Brennstoffaufbereitung",
+        "typ": "komponente",
+        "eltern_id": "E29",
+        "absatz_ids": [
+          "P11"
+        ]
+      },
+      {
+        "id": "E34",
+        "name": "Stromerzeugung",
+        "typ": "subsystem",
+        "eltern_id": "E28",
+        "absatz_ids": [
+          "P11",
+          "P22",
+          "P23",
+          "P30",
+          "P31"
+        ]
+      },
+      {
+        "id": "E35",
+        "name": "Generator",
+        "typ": "komponente",
+        "eltern_id": "E34",
+        "absatz_ids": [
+          "P10",
+          "P11",
+          "P22",
+          "P31",
+          "P32"
+        ]
+      },
+      {
+        "id": "E36",
+        "name": "Notstromaggregat",
+        "typ": "komponente",
+        "eltern_id": "E34",
+        "absatz_ids": [
+          "P11",
+          "P20",
+          "P30",
+          "P31",
+          "P32"
+        ]
+      },
+      {
+        "id": "E37",
+        "name": "Hochvoltverteilung",
+        "typ": "komponente",
+        "eltern_id": "E28",
+        "absatz_ids": [
+          "P11",
+          "P19",
+          "P31",
+          "P32"
+        ]
+      },
+      {
+        "id": "E38",
+        "name": "Landstromanschluss",
+        "typ": "komponente",
+        "eltern_id": "E28",
+        "absatz_ids": [
+          "P11",
+          "P31",
+          "P32"
+        ]
+      },
+      {
+        "id": "E39",
+        "name": "Lenksystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P13",
+          "P29"
+        ],
+        "kategorie": "lenkung"
+      },
+      {
+        "id": "E40",
+        "name": "Ruderanlage",
+        "typ": "subsystem",
+        "eltern_id": "E39",
+        "absatz_ids": [
+          "P13",
+          "P32"
+        ]
+      },
+      {
+        "id": "E41",
+        "name": "Ruder",
+        "typ": "komponente",
+        "eltern_id": "E40",
+        "absatz_ids": [
+          "P12",
+          "P13",
+          "P21",
+          "P29"
+        ]
+      },
+      {
+        "id": "E42",
+        "name": "Rudermaschine",
+        "typ": "komponente",
+        "eltern_id": "E40",
+        "absatz_ids": [
+          "P12",
+          "P13",
+          "P15",
+          "P31"
+        ]
+      },
+      {
+        "id": "E43",
+        "name": "Rudermaschinenpumpen",
+        "typ": "komponente",
+        "eltern_id": "E40",
+        "absatz_ids": [
+          "P12",
+          "P13",
+          "P31"
+        ]
+      },
+      {
+        "id": "E44",
+        "name": "Steuerstand",
+        "typ": "subsystem",
+        "eltern_id": "E39",
+        "absatz_ids": [
+          "P13",
+          "P31"
+        ]
+      },
+      {
+        "id": "E45",
+        "name": "Steuerrad",
+        "typ": "komponente",
+        "eltern_id": "E44",
+        "absatz_ids": [
+          "P13",
+          "P32"
+        ]
+      },
+      {
+        "id": "E46",
+        "name": "Selbststeueranlage",
+        "typ": "komponente",
+        "eltern_id": "E44",
+        "absatz_ids": [
+          "P13",
+          "P23"
+        ]
+      },
+      {
+        "id": "E47",
+        "name": "Fahrerhaus",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P15",
+          "P29"
+        ],
+        "kategorie": "bedienraum"
+      },
+      {
+        "id": "E48",
+        "name": "Brücke",
+        "typ": "subsystem",
+        "eltern_id": "E47",
+        "absatz_ids": [
+          "P4",
+          "P5",
+          "P14",
+          "P15",
+          "P23",
+          "P25",
+          "P26",
+          "P27",
+          "P32"
+        ]
+      },
+      {
+        "id": "E49",
+        "name": "Bedienelemente",
+        "typ": "komponente",
+        "eltern_id": "E48",
+        "absatz_ids": [
+          "P15",
+          "P31",
+          "P32"
+        ]
+      },
+      {
+        "id": "E50",
+        "name": "Anzeigeelemente",
+        "typ": "komponente",
+        "eltern_id": "E48",
+        "absatz_ids": [
+          "P15",
+          "P31",
+          "P32"
+        ]
+      },
+      {
+        "id": "E51",
+        "name": "Maschinenkontrollraum",
+        "typ": "komponente",
+        "eltern_id": "E47",
+        "absatz_ids": [
+          "P14",
+          "P15"
+        ]
+      },
+      {
+        "id": "E52",
+        "name": "Unterkünfte",
+        "typ": "komponente",
+        "eltern_id": "E47",
+        "absatz_ids": [
+          "P15",
+          "P27",
+          "P31"
+        ]
+      },
+      {
+        "id": "E53",
+        "name": "Aufbau und Ladung",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P19",
+          "P29",
+          "P30"
+        ],
+        "kategorie": "aufbau_nutzlast"
+      },
+      {
+        "id": "E54",
+        "name": "Laderaum",
+        "typ": "subsystem",
+        "eltern_id": "E53",
+        "absatz_ids": [
+          "P2",
+          "P19",
+          "P24",
+          "P32"
+        ]
+      },
+      {
+        "id": "E55",
+        "name": "Zellführungen",
+        "typ": "komponente",
+        "eltern_id": "E54",
+        "absatz_ids": [
+          "P5",
+          "P16",
+          "P17",
+          "P19",
+          "P31",
+          "P32"
+        ]
+      },
+      {
+        "id": "E56",
+        "name": "Lukendeckel",
+        "typ": "komponente",
+        "eltern_id": "E54",
+        "absatz_ids": [
+          "P5",
+          "P16",
+          "P19",
+          "P28",
+          "P31"
+        ]
+      },
+      {
+        "id": "E57",
+        "name": "Ladungssicherung",
+        "typ": "subsystem",
+        "eltern_id": "E53",
+        "absatz_ids": [
+          "P19",
+          "P30",
+          "P32"
+        ]
+      },
+      {
+        "id": "E58",
+        "name": "Twistlocks",
+        "typ": "komponente",
+        "eltern_id": "E57",
+        "absatz_ids": [
+          "P17",
+          "P19",
+          "P30"
+        ]
+      },
+      {
+        "id": "E59",
+        "name": "Laschstangen",
+        "typ": "komponente",
+        "eltern_id": "E57",
+        "absatz_ids": [
+          "P19"
+        ]
+      },
+      {
+        "id": "E60",
+        "name": "Laschbrücken",
+        "typ": "komponente",
+        "eltern_id": "E57",
+        "absatz_ids": [
+          "P19"
+        ]
+      },
+      {
+        "id": "E61",
+        "name": "Kühlcontaineranschlüsse",
+        "typ": "komponente",
+        "eltern_id": "E53",
+        "absatz_ids": [
+          "P19",
+          "P31",
+          "P32"
+        ]
+      },
+      {
+        "id": "E62",
+        "name": "Bordkran",
+        "typ": "komponente",
+        "eltern_id": "E53",
+        "absatz_ids": [
+          "P19",
+          "P32"
+        ]
+      },
+      {
+        "id": "E63",
+        "name": "Elektrik und Elektronik",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P21",
+          "P29",
+          "P30"
+        ],
+        "kategorie": "elektrik_elektronik"
+      },
+      {
+        "id": "E64",
+        "name": "Niedervolt-Bordnetz",
+        "typ": "subsystem",
+        "eltern_id": "E63",
+        "absatz_ids": [
+          "P21",
+          "P30",
+          "P32"
+        ]
+      },
+      {
+        "id": "E65",
+        "name": "Abspanntransformatoren",
+        "typ": "komponente",
+        "eltern_id": "E64",
+        "absatz_ids": [
+          "P20",
+          "P21",
+          "P31"
+        ]
+      },
+      {
+        "id": "E66",
+        "name": "Niederspannungsschalttafel",
+        "typ": "komponente",
+        "eltern_id": "E64",
+        "absatz_ids": [
+          "P20",
+          "P21",
+          "P31"
+        ]
+      },
+      {
+        "id": "E67",
+        "name": "Notschalttafel",
+        "typ": "komponente",
+        "eltern_id": "E64",
+        "absatz_ids": [
+          "P20",
+          "P21",
+          "P30",
+          "P31"
+        ]
+      },
+      {
+        "id": "E68",
+        "name": "Gruppenstarter",
+        "typ": "komponente",
+        "eltern_id": "E64",
+        "absatz_ids": [
+          "P21"
+        ]
+      },
+      {
+        "id": "E69",
+        "name": "Bussystem",
+        "typ": "komponente",
+        "eltern_id": "E63",
+        "absatz_ids": [
+          "P21",
+          "P23",
+          "P31",
+          "P32"
+        ]
+      },
+      {
+        "id": "E70",
+        "name": "Fahrzeugsteuerung und Information",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P23",
+          "P29"
+        ],
+        "kategorie": "steuerung_information"
+      },
+      {
+        "id": "E71",
+        "name": "Maschinenautomation",
+        "typ": "subsystem",
+        "eltern_id": "E70",
+        "absatz_ids": [
+          "P23"
+        ]
+      },
+      {
+        "id": "E72",
+        "name": "Überwachungs- und Alarmsystem",
+        "typ": "komponente",
+        "eltern_id": "E71",
+        "absatz_ids": [
+          "P23",
+          "P25",
+          "P31",
+          "P32"
+        ]
+      },
+      {
+        "id": "E73",
+        "name": "Energiemanagementsystem",
+        "typ": "komponente",
+        "eltern_id": "E71",
+        "absatz_ids": [
+          "P22",
+          "P23",
+          "P31"
+        ]
+      },
+      {
+        "id": "E74",
+        "name": "Fahrtregelanlage",
+        "typ": "komponente",
+        "eltern_id": "E71",
+        "absatz_ids": [
+          "P7",
+          "P15",
+          "P23",
+          "P31"
+        ]
+      },
+      {
+        "id": "E75",
+        "name": "Diagnose",
+        "typ": "komponente",
+        "eltern_id": "E71",
+        "absatz_ids": [
+          "P23",
+          "P32"
+        ]
+      },
+      {
+        "id": "E76",
+        "name": "Schiffsführungssystem",
+        "typ": "subsystem",
+        "eltern_id": "E70",
+        "absatz_ids": [
+          "P23"
+        ]
+      },
+      {
+        "id": "E77",
+        "name": "Navigation",
+        "typ": "komponente",
+        "eltern_id": "E76",
+        "absatz_ids": [
+          "P15",
+          "P20",
+          "P23",
+          "P31",
+          "P32"
+        ]
+      },
+      {
+        "id": "E78",
+        "name": "Schiffsdatenschreiber",
+        "typ": "komponente",
+        "eltern_id": "E76",
+        "absatz_ids": [
+          "P13",
+          "P14",
+          "P22",
+          "P23",
+          "P31",
+          "P32"
+        ]
+      },
+      {
+        "id": "E79",
+        "name": "Fahrerassistenz und Sicherheit",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P25",
+          "P29"
+        ],
+        "kategorie": "assistenz_sicherheit"
+      },
+      {
+        "id": "E80",
+        "name": "Brandschutzanlage",
+        "typ": "subsystem",
+        "eltern_id": "E79",
+        "absatz_ids": [
+          "P25",
+          "P32"
+        ]
+      },
+      {
+        "id": "E81",
+        "name": "Rauchansauganlage",
+        "typ": "komponente",
+        "eltern_id": "E80",
+        "absatz_ids": [
+          "P25",
+          "P31",
+          "P32"
+        ]
+      },
+      {
+        "id": "E82",
+        "name": "Kohlendioxid-Feuerlöschanlage",
+        "typ": "komponente",
+        "eltern_id": "E80",
+        "absatz_ids": [
+          "P25",
+          "P32"
+        ]
+      },
+      {
+        "id": "E83",
+        "name": "Feuerlöschpumpen",
+        "typ": "komponente",
+        "eltern_id": "E80",
+        "absatz_ids": [
+          "P25",
+          "P31",
+          "P32"
+        ]
+      },
+      {
+        "id": "E84",
+        "name": "Wassernebellanze",
+        "typ": "komponente",
+        "eltern_id": "E80",
+        "absatz_ids": [
+          "P24",
+          "P25",
+          "P32"
+        ]
+      },
+      {
+        "id": "E85",
+        "name": "Wasserwerfer",
+        "typ": "komponente",
+        "eltern_id": "E80",
+        "absatz_ids": [
+          "P24",
+          "P25",
+          "P31",
+          "P32"
+        ]
+      },
+      {
+        "id": "E86",
+        "name": "Umfeldsensorik",
+        "typ": "komponente",
+        "eltern_id": "E79",
+        "absatz_ids": [
+          "P25",
+          "P31",
+          "P32"
+        ]
+      },
+      {
+        "id": "E87",
+        "name": "Rettungsmittel",
+        "typ": "komponente",
+        "eltern_id": "E79",
+        "absatz_ids": [
+          "P25",
+          "P32"
+        ]
+      },
+      {
+        "id": "E88",
+        "name": "Beleuchtung und Sicht",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P26",
+          "P29"
+        ],
+        "kategorie": "beleuchtung_sicht"
+      },
+      {
+        "id": "E89",
+        "name": "Beleuchtungsanlage",
+        "typ": "subsystem",
+        "eltern_id": "E88",
+        "absatz_ids": [
+          "P26",
+          "P31"
+        ]
+      },
+      {
+        "id": "E90",
+        "name": "Navigationslichter",
+        "typ": "komponente",
+        "eltern_id": "E89",
+        "absatz_ids": [
+          "P14",
+          "P26",
+          "P32"
+        ]
+      },
+      {
+        "id": "E91",
+        "name": "Scheinwerfer",
+        "typ": "komponente",
+        "eltern_id": "E89",
+        "absatz_ids": [
+          "P26",
+          "P32"
+        ]
+      },
+      {
+        "id": "E92",
+        "name": "Notbeleuchtung",
+        "typ": "komponente",
+        "eltern_id": "E89",
+        "absatz_ids": [
+          "P20",
+          "P26",
+          "P32"
+        ]
+      },
+      {
+        "id": "E93",
+        "name": "Sicht- und Signaleinrichtung",
+        "typ": "subsystem",
+        "eltern_id": "E88",
+        "absatz_ids": [
+          "P26"
+        ]
+      },
+      {
+        "id": "E94",
+        "name": "Scheibenwischer",
+        "typ": "komponente",
+        "eltern_id": "E93",
+        "absatz_ids": [
+          "P32"
+        ]
+      },
+      {
+        "id": "E95",
+        "name": "Typhon",
+        "typ": "komponente",
+        "eltern_id": "E93",
+        "absatz_ids": [
+          "P26",
+          "P32"
+        ]
+      },
+      {
+        "id": "E96",
+        "name": "Thermomanagement",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P27",
+          "P29"
+        ],
+        "kategorie": "thermomanagement"
+      },
+      {
+        "id": "E97",
+        "name": "Kühlkreislauf",
+        "typ": "subsystem",
+        "eltern_id": "E96",
+        "absatz_ids": [
+          "P27",
+          "P31",
+          "P32"
+        ]
+      },
+      {
+        "id": "E98",
+        "name": "Kühlmittelpumpe",
+        "typ": "komponente",
+        "eltern_id": "E97",
+        "absatz_ids": [
+          "P27"
+        ]
+      },
+      {
+        "id": "E99",
+        "name": "Seewasserpumpe",
+        "typ": "komponente",
+        "eltern_id": "E97",
+        "absatz_ids": [
+          "P27"
+        ]
+      },
+      {
+        "id": "E100",
+        "name": "Kühler",
+        "typ": "komponente",
+        "eltern_id": "E97",
+        "absatz_ids": [
+          "P27"
+        ]
+      },
+      {
+        "id": "E101",
+        "name": "Klimaanlage",
+        "typ": "komponente",
+        "eltern_id": "E96",
+        "absatz_ids": [
+          "P27",
+          "P31",
+          "P32"
+        ]
+      },
+      {
+        "id": "E102",
+        "name": "Laderaumlüftung",
+        "typ": "komponente",
+        "eltern_id": "E96",
+        "absatz_ids": [
+          "P27",
+          "P32"
+        ]
+      },
+      {
+        "id": "E103",
+        "name": "Neben- und Versorgungssysteme",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P28"
+        ],
+        "kategorie": "nebensysteme"
+      },
+      {
+        "id": "E104",
+        "name": "Versorgungsanlagen",
+        "typ": "subsystem",
+        "eltern_id": "E103",
+        "absatz_ids": [
+          "P28"
+        ]
+      },
+      {
+        "id": "E105",
+        "name": "Druckluftanlage",
+        "typ": "komponente",
+        "eltern_id": "E104",
+        "absatz_ids": [
+          "P28",
+          "P31",
+          "P32"
+        ]
+      },
+      {
+        "id": "E106",
+        "name": "Hydraulikversorgung",
+        "typ": "komponente",
+        "eltern_id": "E104",
+        "absatz_ids": [
+          "P28",
+          "P31",
+          "P32"
+        ]
+      },
+      {
+        "id": "E107",
+        "name": "Frischwasseranlage",
+        "typ": "komponente",
+        "eltern_id": "E104",
+        "absatz_ids": [
+          "P28",
+          "P32"
+        ]
+      },
+      {
+        "id": "E108",
+        "name": "Abwasseranlage",
+        "typ": "komponente",
+        "eltern_id": "E104",
+        "absatz_ids": [
+          "P28",
+          "P32"
+        ]
+      },
+      {
+        "id": "E109",
+        "name": "Lenzanlage",
+        "typ": "komponente",
+        "eltern_id": "E104",
+        "absatz_ids": [
+          "P28",
+          "P32"
+        ]
+      },
+      {
+        "id": "E110",
+        "name": "Decksausrüstung",
+        "typ": "subsystem",
+        "eltern_id": "E103",
+        "absatz_ids": [
+          "P28",
+          "P31"
+        ]
+      },
+      {
+        "id": "E111",
+        "name": "Ankerwinde",
+        "typ": "komponente",
+        "eltern_id": "E110",
+        "absatz_ids": [
+          "P28",
+          "P32"
+        ]
+      },
+      {
+        "id": "E112",
+        "name": "Festmachewinden",
+        "typ": "komponente",
+        "eltern_id": "E110",
+        "absatz_ids": [
+          "P28",
+          "P32"
+        ]
+      }
+    ],
+    "funktionen": [
+      {
+        "id": "F1",
+        "name": "Fahrzeuglasten tragen",
+        "ausgefuehrt_von": [
+          "E3"
+        ],
+        "absatz_ids": [
+          "P3",
+          "P5",
+          "P32"
+        ]
+      },
+      {
+        "id": "F2",
+        "name": "Auftrieb bereitstellen",
+        "ausgefuehrt_von": [
+          "E3",
+          "E14"
+        ],
+        "absatz_ids": [
+          "P6",
+          "P32"
+        ]
+      },
+      {
+        "id": "F3",
+        "name": "Fahrzeug stabilisieren",
+        "ausgefuehrt_von": [
+          "E14",
+          "E17",
+          "E18"
+        ],
+        "absatz_ids": [
+          "P6",
+          "P32"
+        ]
+      },
+      {
+        "id": "F4",
+        "name": "Energie speichern",
+        "ausgefuehrt_von": [
+          "E30",
+          "E31"
+        ],
+        "absatz_ids": [
+          "P11",
+          "P32"
+        ]
+      },
+      {
+        "id": "F5",
+        "name": "Treibstoff fördern",
+        "ausgefuehrt_von": [
+          "E32"
+        ],
+        "absatz_ids": [
+          "P10",
+          "P11",
+          "P32"
+        ]
+      },
+      {
+        "id": "F6",
+        "name": "Elektrische Energie erzeugen",
+        "ausgefuehrt_von": [
+          "E35",
+          "E36"
+        ],
+        "absatz_ids": [
+          "P10",
+          "P11",
+          "P20",
+          "P32"
+        ]
+      },
+      {
+        "id": "F7",
+        "name": "Elektrische Energie verteilen",
+        "ausgefuehrt_von": [
+          "E37",
+          "E64"
+        ],
+        "absatz_ids": [
+          "P11",
+          "P20",
+          "P21",
+          "P32"
+        ]
+      },
+      {
+        "id": "F8",
+        "name": "Landstrom einspeisen",
+        "ausgefuehrt_von": [
+          "E38"
+        ],
+        "absatz_ids": [
+          "P11",
+          "P32"
+        ]
+      },
+      {
+        "id": "F9",
+        "name": "Antriebsleistung erzeugen",
+        "ausgefuehrt_von": [
+          "E21"
+        ],
+        "absatz_ids": [
+          "P7",
+          "P9",
+          "P32"
+        ]
+      },
+      {
+        "id": "F10",
+        "name": "Drehmoment übertragen",
+        "ausgefuehrt_von": [
+          "E25"
+        ],
+        "absatz_ids": [
+          "P9",
+          "P32"
+        ]
+      },
+      {
+        "id": "F11",
+        "name": "Fahrzeug fortbewegen",
+        "ausgefuehrt_von": [
+          "E26"
+        ],
+        "absatz_ids": [
+          "P7",
+          "P9",
+          "P32"
+        ]
+      },
+      {
+        "id": "F12",
+        "name": "Fahrzeug manövrieren",
+        "ausgefuehrt_von": [
+          "E27"
+        ],
+        "absatz_ids": [
+          "P8",
+          "P13",
+          "P32"
+        ]
+      },
+      {
+        "id": "F13",
+        "name": "Fahrzeug lenken",
+        "ausgefuehrt_von": [
+          "E40"
+        ],
+        "absatz_ids": [
+          "P12",
+          "P13",
+          "P32"
+        ]
+      },
+      {
+        "id": "F14",
+        "name": "Fahrzeug verzögern",
+        "ausgefuehrt_von": [
+          "E21",
+          "E26",
+          "E105"
+        ],
+        "absatz_ids": [
+          "P2",
+          "P7",
+          "P9",
+          "P32"
+        ]
+      },
+      {
+        "id": "F15",
+        "name": "Fahrzeug festhalten",
+        "ausgefuehrt_von": [
+          "E111",
+          "E112"
+        ],
+        "absatz_ids": [
+          "P28",
+          "P32"
+        ]
+      },
+      {
+        "id": "F16",
+        "name": "Abgas reinigen",
+        "ausgefuehrt_von": [
+          "E23"
+        ],
+        "absatz_ids": [
+          "P8",
+          "P9",
+          "P32"
+        ]
+      },
+      {
+        "id": "F17",
+        "name": "Fahrereingaben erfassen",
+        "ausgefuehrt_von": [
+          "E49",
+          "E45"
+        ],
+        "absatz_ids": [
+          "P14",
+          "P15",
+          "P32"
+        ]
+      },
+      {
+        "id": "F18",
+        "name": "Fahrerinformationen anzeigen",
+        "ausgefuehrt_von": [
+          "E50"
+        ],
+        "absatz_ids": [
+          "P15",
+          "P32"
+        ]
+      },
+      {
+        "id": "F19",
+        "name": "Fahrersicht sicherstellen",
+        "ausgefuehrt_von": [
+          "E48",
+          "E94"
+        ],
+        "absatz_ids": [
+          "P4",
+          "P26",
+          "P32"
+        ]
+      },
+      {
+        "id": "F20",
+        "name": "Ladung aufnehmen",
+        "ausgefuehrt_von": [
+          "E54",
+          "E55",
+          "E62"
+        ],
+        "absatz_ids": [
+          "P16",
+          "P19",
+          "P32"
+        ]
+      },
+      {
+        "id": "F21",
+        "name": "Ladung entladen",
+        "ausgefuehrt_von": [
+          "E62"
+        ],
+        "absatz_ids": [
+          "P18",
+          "P19",
+          "P32"
+        ]
+      },
+      {
+        "id": "F22",
+        "name": "Ladung sichern",
+        "ausgefuehrt_von": [
+          "E57"
+        ],
+        "absatz_ids": [
+          "P17",
+          "P19",
+          "P32"
+        ]
+      },
+      {
+        "id": "F23",
+        "name": "Ladung temperieren",
+        "ausgefuehrt_von": [
+          "E61"
+        ],
+        "absatz_ids": [
+          "P18",
+          "P19",
+          "P32"
+        ]
+      },
+      {
+        "id": "F24",
+        "name": "Daten übertragen",
+        "ausgefuehrt_von": [
+          "E69"
+        ],
+        "absatz_ids": [
+          "P21",
+          "P23",
+          "P32"
+        ]
+      },
+      {
+        "id": "F25",
+        "name": "Fahrzeugzustand überwachen",
+        "ausgefuehrt_von": [
+          "E72",
+          "E75",
+          "E81"
+        ],
+        "absatz_ids": [
+          "P22",
+          "P23",
+          "P24",
+          "P32"
+        ]
+      },
+      {
+        "id": "F26",
+        "name": "Fahrzeugposition bestimmen",
+        "ausgefuehrt_von": [
+          "E77"
+        ],
+        "absatz_ids": [
+          "P23",
+          "P32"
+        ]
+      },
+      {
+        "id": "F27",
+        "name": "Betriebsdaten aufzeichnen",
+        "ausgefuehrt_von": [
+          "E78"
+        ],
+        "absatz_ids": [
+          "P22",
+          "P32"
+        ]
+      },
+      {
+        "id": "F28",
+        "name": "Fahrzeugumfeld erfassen",
+        "ausgefuehrt_von": [
+          "E86"
+        ],
+        "absatz_ids": [
+          "P25",
+          "P32"
+        ]
+      },
+      {
+        "id": "F29",
+        "name": "Brand bekämpfen",
+        "ausgefuehrt_von": [
+          "E82",
+          "E83",
+          "E84",
+          "E85"
+        ],
+        "absatz_ids": [
+          "P24",
+          "P25",
+          "P32"
+        ]
+      },
+      {
+        "id": "F30",
+        "name": "Insassen schützen",
+        "ausgefuehrt_von": [
+          "E80",
+          "E87"
+        ],
+        "absatz_ids": [
+          "P25",
+          "P32"
+        ]
+      },
+      {
+        "id": "F31",
+        "name": "Lichtsignale abgeben",
+        "ausgefuehrt_von": [
+          "E90"
+        ],
+        "absatz_ids": [
+          "P26",
+          "P32"
+        ]
+      },
+      {
+        "id": "F32",
+        "name": "Akustische Signale abgeben",
+        "ausgefuehrt_von": [
+          "E95"
+        ],
+        "absatz_ids": [
+          "P26",
+          "P32"
+        ]
+      },
+      {
+        "id": "F33",
+        "name": "Fahrzeugumgebung ausleuchten",
+        "ausgefuehrt_von": [
+          "E91",
+          "E92"
+        ],
+        "absatz_ids": [
+          "P26",
+          "P32"
+        ]
+      },
+      {
+        "id": "F34",
+        "name": "Betriebstemperatur regeln",
+        "ausgefuehrt_von": [
+          "E97",
+          "E102"
+        ],
+        "absatz_ids": [
+          "P27",
+          "P32"
+        ]
+      },
+      {
+        "id": "F35",
+        "name": "Innenraum klimatisieren",
+        "ausgefuehrt_von": [
+          "E101"
+        ],
+        "absatz_ids": [
+          "P27",
+          "P32"
+        ]
+      },
+      {
+        "id": "F36",
+        "name": "Druckluft bereitstellen",
+        "ausgefuehrt_von": [
+          "E105"
+        ],
+        "absatz_ids": [
+          "P28",
+          "P32"
+        ]
+      },
+      {
+        "id": "F37",
+        "name": "Hydraulische Leistung bereitstellen",
+        "ausgefuehrt_von": [
+          "E106"
+        ],
+        "absatz_ids": [
+          "P28",
+          "P32"
+        ]
+      },
+      {
+        "id": "F38",
+        "name": "Frischwasser bereitstellen",
+        "ausgefuehrt_von": [
+          "E107"
+        ],
+        "absatz_ids": [
+          "P28",
+          "P32"
+        ]
+      },
+      {
+        "id": "F39",
+        "name": "Abwasser sammeln",
+        "ausgefuehrt_von": [
+          "E108"
+        ],
+        "absatz_ids": [
+          "P28",
+          "P32"
+        ]
+      },
+      {
+        "id": "F40",
+        "name": "Rumpf lenzen",
+        "ausgefuehrt_von": [
+          "E109"
+        ],
+        "absatz_ids": [
+          "P28",
+          "P32"
+        ]
+      }
+    ],
+    "fluesse": [
+      {
+        "id": "S1",
+        "von": "E30",
+        "nach": "E32",
+        "art": "stoff",
+        "medium": "Brennstoff",
+        "absatz_ids": [
+          "P10",
+          "P11",
+          "P31"
+        ]
+      },
+      {
+        "id": "S2",
+        "von": "E32",
+        "nach": "E21",
+        "art": "stoff",
+        "medium": "Brennstoff",
+        "absatz_ids": [
+          "P10",
+          "P31"
+        ],
+        "schnittstelle": "Brennstoffzulauf Hauptmotor"
+      },
+      {
+        "id": "S3",
+        "von": "E32",
+        "nach": "E35",
+        "art": "stoff",
+        "medium": "Brennstoff",
+        "absatz_ids": [
+          "P10",
+          "P31"
+        ]
+      },
+      {
+        "id": "S4",
+        "von": "E31",
+        "nach": "E21",
+        "art": "stoff",
+        "medium": "Flüssigerdgas",
+        "absatz_ids": [
+          "P9",
+          "P11",
+          "P31"
+        ],
+        "schnittstelle": "Gaszulauf Zweistoffmotor"
+      },
+      {
+        "id": "S5",
+        "von": "E21",
+        "nach": "E25",
+        "art": "mechanisch",
+        "medium": "Drehmoment",
+        "absatz_ids": [
+          "P9",
+          "P31"
+        ]
+      },
+      {
+        "id": "S6",
+        "von": "E25",
+        "nach": "E26",
+        "art": "mechanisch",
+        "medium": "Drehmoment",
+        "absatz_ids": [
+          "P9",
+          "P31"
+        ]
+      },
+      {
+        "id": "S7",
+        "von": "E21",
+        "nach": "E22",
+        "art": "stoff",
+        "medium": "Abgas",
+        "absatz_ids": [
+          "P9",
+          "P31"
+        ]
+      },
+      {
+        "id": "S8",
+        "von": "E35",
+        "nach": "E37",
+        "art": "elektrisch",
+        "medium": "Wechselstrom Hochspannung",
+        "absatz_ids": [
+          "P10",
+          "P11",
+          "P31"
+        ]
+      },
+      {
+        "id": "S9",
+        "von": "E38",
+        "nach": "E37",
+        "art": "elektrisch",
+        "medium": "Landstrom",
+        "absatz_ids": [
+          "P11",
+          "P31"
+        ]
+      },
+      {
+        "id": "S10",
+        "von": "E37",
+        "nach": "E27",
+        "art": "elektrisch",
+        "medium": "Wechselstrom Hochspannung",
+        "absatz_ids": [
+          "P8",
+          "P31"
+        ],
+        "schnittstelle": "Schalttafelabgang Bugstrahlruder"
+      },
+      {
+        "id": "S11",
+        "von": "E37",
+        "nach": "E61",
+        "art": "elektrisch",
+        "medium": "Wechselstrom",
+        "absatz_ids": [
+          "P10",
+          "P19",
+          "P31"
+        ],
+        "schnittstelle": "Kühlcontainerversorgung"
+      },
+      {
+        "id": "S12",
+        "von": "E37",
+        "nach": "E65",
+        "art": "elektrisch",
+        "medium": "Wechselstrom Hochspannung",
+        "absatz_ids": [
+          "P20",
+          "P21",
+          "P31"
+        ],
+        "schnittstelle": "Transformatorschalter Hochspannungsseite"
+      },
+      {
+        "id": "S13",
+        "von": "E65",
+        "nach": "E66",
+        "art": "elektrisch",
+        "medium": "Wechselstrom Niederspannung",
+        "absatz_ids": [
+          "P20",
+          "P21",
+          "P31"
+        ]
+      },
+      {
+        "id": "S14",
+        "von": "E66",
+        "nach": "E43",
+        "art": "elektrisch",
+        "medium": "Wechselstrom Niederspannung",
+        "absatz_ids": [
+          "P12",
+          "P20",
+          "P31"
+        ],
+        "schnittstelle": "Schalttafelabgang Rudermaschine"
+      },
+      {
+        "id": "S15",
+        "von": "E66",
+        "nach": "E32",
+        "art": "elektrisch",
+        "medium": "Wechselstrom Niederspannung",
+        "absatz_ids": [
+          "P10",
+          "P31"
+        ],
+        "schnittstelle": "Schalttafelabgang Brennstoffpumpen"
+      },
+      {
+        "id": "S16",
+        "von": "E66",
+        "nach": "E89",
+        "art": "elektrisch",
+        "medium": "Wechselstrom Niederspannung",
+        "absatz_ids": [
+          "P20",
+          "P26",
+          "P31"
+        ],
+        "schnittstelle": "Beleuchtungsverteilung"
+      },
+      {
+        "id": "S17",
+        "von": "E66",
+        "nach": "E110",
+        "art": "elektrisch",
+        "medium": "Wechselstrom Niederspannung",
+        "absatz_ids": [
+          "P28",
+          "P31"
+        ],
+        "schnittstelle": "Schalttafelabgang Decksmaschinen"
+      },
+      {
+        "id": "S18",
+        "von": "E36",
+        "nach": "E67",
+        "art": "elektrisch",
+        "medium": "Notstrom",
+        "absatz_ids": [
+          "P20",
+          "P21",
+          "P31"
+        ],
+        "schnittstelle": "Notgeneratorschalter"
+      },
+      {
+        "id": "S19",
+        "von": "E67",
+        "nach": "E77",
+        "art": "elektrisch",
+        "medium": "Notstrom",
+        "absatz_ids": [
+          "P14",
+          "P20",
+          "P31"
+        ],
+        "schnittstelle": "Brückenverteilung mit Umschaltung"
+      },
+      {
+        "id": "S20",
+        "von": "E43",
+        "nach": "E42",
+        "art": "hydraulisch",
+        "medium": "Drucköl",
+        "absatz_ids": [
+          "P12",
+          "P13",
+          "P31"
+        ]
+      },
+      {
+        "id": "S21",
+        "von": "E44",
+        "nach": "E42",
+        "art": "information",
+        "medium": "Ruderwinkel",
+        "absatz_ids": [
+          "P13",
+          "P31"
+        ],
+        "schnittstelle": "Ruderbefehl"
+      },
+      {
+        "id": "S22",
+        "von": "E49",
+        "nach": "E74",
+        "art": "information",
+        "medium": "Fahrbefehl",
+        "absatz_ids": [
+          "P14",
+          "P15",
+          "P31"
+        ],
+        "schnittstelle": "Maschinentelegraf"
+      },
+      {
+        "id": "S23",
+        "von": "E74",
+        "nach": "E21",
+        "art": "information",
+        "medium": "Stellbefehle Hauptmotor",
+        "absatz_ids": [
+          "P7",
+          "P23",
+          "P31"
+        ]
+      },
+      {
+        "id": "S24",
+        "von": "E105",
+        "nach": "E21",
+        "art": "pneumatisch",
+        "medium": "Anlassluft",
+        "absatz_ids": [
+          "P7",
+          "P28",
+          "P31"
+        ],
+        "schnittstelle": "Anlassluftanschluss"
+      },
+      {
+        "id": "S25",
+        "von": "E97",
+        "nach": "E20",
+        "art": "thermisch",
+        "medium": "Kühlwasser",
+        "absatz_ids": [
+          "P27",
+          "P31"
+        ],
+        "schnittstelle": "Kühlwasseranschlüsse Hauptmotor"
+      },
+      {
+        "id": "S26",
+        "von": "E101",
+        "nach": "E52",
+        "art": "thermisch",
+        "medium": "Zuluft",
+        "absatz_ids": [
+          "P27",
+          "P31"
+        ],
+        "schnittstelle": "Lüftungskanäle"
+      },
+      {
+        "id": "S27",
+        "von": "E55",
+        "nach": "E3",
+        "art": "mechanisch",
+        "medium": "Containerlasten",
+        "absatz_ids": [
+          "P5",
+          "P19",
+          "P31"
+        ],
+        "schnittstelle": "Zellführungsfundamente"
+      },
+      {
+        "id": "S28",
+        "von": "E56",
+        "nach": "E8",
+        "art": "mechanisch",
+        "medium": "Stapellasten",
+        "absatz_ids": [
+          "P5",
+          "P19",
+          "P31"
+        ],
+        "schnittstelle": "Lukendeckelauflager"
+      },
+      {
+        "id": "S29",
+        "von": "E106",
+        "nach": "E56",
+        "art": "hydraulisch",
+        "medium": "Hydrauliköl",
+        "absatz_ids": [
+          "P16",
+          "P28",
+          "P31"
+        ],
+        "schnittstelle": "Hydraulikanschluss Lukendeckel"
+      },
+      {
+        "id": "S30",
+        "von": "E16",
+        "nach": "E15",
+        "art": "stoff",
+        "medium": "Ballastwasser",
+        "absatz_ids": [
+          "P6",
+          "P31"
+        ]
+      },
+      {
+        "id": "S31",
+        "von": "E81",
+        "nach": "E72",
+        "art": "information",
+        "medium": "Brandmeldung",
+        "absatz_ids": [
+          "P24",
+          "P25",
+          "P31"
+        ],
+        "schnittstelle": "Brandmeldeschnittstelle"
+      },
+      {
+        "id": "S32",
+        "von": "E69",
+        "nach": "E72",
+        "art": "information",
+        "medium": "Messwerte und Zustände",
+        "absatz_ids": [
+          "P21",
+          "P23",
+          "P31"
+        ]
+      },
+      {
+        "id": "S33",
+        "von": "E77",
+        "nach": "E78",
+        "art": "information",
+        "medium": "Position, Kurs, Fahrt",
+        "absatz_ids": [
+          "P22",
+          "P23",
+          "P31"
+        ]
+      },
+      {
+        "id": "S34",
+        "von": "E72",
+        "nach": "E50",
+        "art": "information",
+        "medium": "Alarme und Zustände",
+        "absatz_ids": [
+          "P22",
+          "P31"
+        ],
+        "schnittstelle": "Alarmanzeige Brücke"
+      },
+      {
+        "id": "S35",
+        "von": "E86",
+        "nach": "E50",
+        "art": "information",
+        "medium": "Verkehrslage",
+        "absatz_ids": [
+          "P25",
+          "P31"
+        ],
+        "schnittstelle": "Radaranzeige"
+      },
+      {
+        "id": "S36",
+        "von": "E18",
+        "nach": "E50",
+        "art": "information",
+        "medium": "Stabilitäts- und Festigkeitswerte",
+        "absatz_ids": [
+          "P6",
+          "P31"
+        ],
+        "schnittstelle": "Ladungsrechneranzeige"
+      },
+      {
+        "id": "S37",
+        "von": "E73",
+        "nach": "E34",
+        "art": "information",
+        "medium": "Zu- und Abschaltbefehle",
+        "absatz_ids": [
+          "P22",
+          "P23",
+          "P31"
+        ],
+        "schnittstelle": "Generatorsteuerung"
+      },
+      {
+        "id": "S38",
+        "von": "E83",
+        "nach": "E85",
+        "art": "stoff",
+        "medium": "Löschwasser",
+        "absatz_ids": [
+          "P25",
+          "P31"
+        ]
+      }
+    ],
+    "entfallene_kategorien": [
+      {
+        "kategorie": "bremse",
+        "grund": "Kein eigenes Bremssystem: Verzögert wird durch Umsteuern von Verbrennungsmotor und Propeller (Antriebssystem), festgehalten durch Anker- und Festmachewinden (Neben- und Versorgungssysteme)."
+      }
+    ],
+    "varianten": [
+      {
+        "id": "V1",
+        "element_id": "E19",
+        "bezeichnung": "Antriebsart und Brennstoff",
+        "alternativen": [
+          "Dieselmotor mit Schweröl und Abgaswäscher",
+          "Dieselmotor mit schwefelarmem Brennstoff ohne Abgaswäscher",
+          "Zweistoffmotor mit Flüssigerdgas"
+        ],
+        "auswahlkriterien": [
+          "Emissionsvorgaben im Fahrtgebiet",
+          "Brennstoffkosten und Verfügbarkeit in den Bunkerhäfen",
+          "Raumbedarf der Tanks zulasten der Stellplätze",
+          "Investitions- und Wartungsaufwand"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E23",
+            "beschreibung": "Abgaswäscher nur beim Schwerölbetrieb erforderlich."
+          },
+          {
+            "element_id": "E31",
+            "beschreibung": "Gastank und Gasversorgung kommen beim Zweistoffmotor hinzu."
+          },
+          {
+            "element_id": "E33",
+            "beschreibung": "Vorwärmung und Reinigung hängen von der Brennstoffsorte ab."
+          },
+          {
+            "element_id": "E3",
+            "beschreibung": "Tankanordnung im Schiffskörper ändert Laderaumvolumen und Stellplätze."
+          },
+          {
+            "element_id": "E80",
+            "beschreibung": "Gasbetrieb erfordert zusätzliche Gaserkennung und Schutzmaßnahmen."
+          }
+        ],
+        "absatz_ids": [
+          "P8",
+          "P9",
+          "P10",
+          "P11"
+        ]
+      },
+      {
+        "id": "V2",
+        "element_id": "E19",
+        "bezeichnung": "Anzahl der Propeller",
+        "alternativen": [
+          "Einschraubenantrieb",
+          "Zweischraubenantrieb"
+        ],
+        "auswahlkriterien": [
+          "Geforderte Antriebsleistung und Propellerbelastung",
+          "Redundanz des Antriebs",
+          "Manövrierfähigkeit in engen Fahrwassern",
+          "Bau- und Betriebskosten"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E40",
+            "beschreibung": "Beim Zweischraubenantrieb kann jedem Propeller ein eigenes Ruder zugeordnet werden."
+          },
+          {
+            "element_id": "E20",
+            "beschreibung": "Hauptmaschinenanlage wird verdoppelt."
+          },
+          {
+            "element_id": "E74",
+            "beschreibung": "Fahrtregelanlage muss zwei Antriebsstränge koordinieren."
+          },
+          {
+            "element_id": "E3",
+            "beschreibung": "Hinterschiff mit zwei Wellenaustritten."
+          }
+        ],
+        "absatz_ids": [
+          "P7",
+          "P9",
+          "P13"
+        ]
+      },
+      {
+        "id": "V3",
+        "element_id": "E53",
+        "bezeichnung": "Ladegeschirr",
+        "alternativen": [
+          "Mit Bordkran (geared)",
+          "Ohne Bordkran (gearless)"
+        ],
+        "auswahlkriterien": [
+          "Ausstattung der angelaufenen Häfen mit Containerbrücken",
+          "Schiffsgröße und Fahrtgebiet",
+          "Anschaffungs-, Wartungs- und Brennstoffkosten"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E106",
+            "beschreibung": "Kranantrieb belastet Hydraulikversorgung oder Bordnetz."
+          },
+          {
+            "element_id": "E3",
+            "beschreibung": "Kranfundamente im Schiffskörper erforderlich."
+          },
+          {
+            "element_id": "E17",
+            "beschreibung": "Krängungsausgleich beim Bordumschlag wird erforderlich."
+          },
+          {
+            "element_id": "E35",
+            "beschreibung": "Stromerzeugung muss Kranlasten im Hafen decken."
+          }
+        ],
+        "absatz_ids": [
+          "P1",
+          "P18",
+          "P19"
+        ]
+      },
+      {
+        "id": "V4",
+        "element_id": "E54",
+        "bezeichnung": "Lukenbauweise",
+        "alternativen": [
+          "Laderäume mit Lukendeckeln",
+          "Lukendeckellose Laderäume"
+        ],
+        "auswahlkriterien": [
+          "Umschlagzeit im Hafen",
+          "Schiffsgröße und Torsionsfestigkeit",
+          "Seegang im Fahrtgebiet",
+          "Stahlgewicht und Kosten"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E3",
+            "beschreibung": "Ohne Lukendeckel höherfester Stahl, versteifte Gurtung und hoher Freibord."
+          },
+          {
+            "element_id": "E9",
+            "beschreibung": "Vorschiff mit besonderem Bug gegen überkommende See."
+          },
+          {
+            "element_id": "E109",
+            "beschreibung": "Leistungsfähiges Pumpsystem für eindringendes Wasser."
+          },
+          {
+            "element_id": "E82",
+            "beschreibung": "Gaslöschung setzt einen dichten Laderaum voraus."
+          }
+        ],
+        "absatz_ids": [
+          "P18",
+          "P19",
+          "P28"
+        ]
+      },
+      {
+        "id": "V5",
+        "element_id": "E10",
+        "bezeichnung": "Anordnung der Decksaufbauten",
+        "alternativen": [
+          "Deckshaus mit Brücke über dem Maschinenraum (Single Island)",
+          "Brücke und Unterkünfte vorn, Maschinenschacht achtern (Twin Island)"
+        ],
+        "auswahlkriterien": [
+          "Sicht von der Brücke über die Decksstapel",
+          "Schiffslänge und Stapelhöhe",
+          "Stellplatzkapazität",
+          "Leitungs- und Wegelängen"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E48",
+            "beschreibung": "Brückenlage und Sichtschatten ändern sich."
+          },
+          {
+            "element_id": "E69",
+            "beschreibung": "Längere Leitungswege zwischen Brücke und Maschinenraum."
+          },
+          {
+            "element_id": "E51",
+            "beschreibung": "Maschinenkontrollraum bleibt bei Twin Island räumlich von der Brücke getrennt."
+          },
+          {
+            "element_id": "E52",
+            "beschreibung": "Unterkünfte wandern mit der Brücke nach vorn."
+          }
+        ],
+        "absatz_ids": [
+          "P4",
+          "P5",
+          "P15",
+          "P26"
+        ]
+      },
+      {
+        "id": "V6",
+        "element_id": "E57",
+        "bezeichnung": "Ladungssicherung an Deck",
+        "alternativen": [
+          "Laschsystem mit Laschstangen, Spannschrauben und Twistlocks",
+          "Buttress-System mit Stütztürmen und Stapelrahmen"
+        ],
+        "auswahlkriterien": [
+          "Stapelhöhe und Rollbewegung",
+          "Arbeitsaufwand und Umschlagzeit",
+          "Masse und Kosten der Ausrüstung"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E60",
+            "beschreibung": "Laschbrücken entfallen teilweise oder werden durch Türme ersetzt."
+          },
+          {
+            "element_id": "E56",
+            "beschreibung": "Lasteinleitung über die Lukendeckel ändert sich."
+          },
+          {
+            "element_id": "E18",
+            "beschreibung": "Zulässige Stapellasten im Ladungs- und Stabilitätsrechner ändern sich."
+          }
+        ],
+        "absatz_ids": [
+          "P17",
+          "P19"
+        ]
+      },
+      {
+        "id": "V7",
+        "element_id": "E80",
+        "bezeichnung": "Branderkennung an Deck",
+        "alternativen": [
+          "Beobachtung durch die Besatzung",
+          "Feste Infrarotkameras",
+          "Temperaturüberwachung einzelner Container"
+        ],
+        "auswahlkriterien": [
+          "Erkennungszeit",
+          "Wetter- und Bewegungseinflüsse",
+          "Schutz der Sensoren beim Umschlag",
+          "Nachrüstbarkeit und Kosten"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E72",
+            "beschreibung": "Zusätzliche Auswertung und Alarmierung."
+          },
+          {
+            "element_id": "E69",
+            "beschreibung": "Zusätzliche Sensorleitungen und Busanschlüsse."
+          },
+          {
+            "element_id": "E50",
+            "beschreibung": "Anzeige von Kamerabildern oder Temperaturen auf der Brücke."
+          }
+        ],
+        "absatz_ids": [
+          "P24",
+          "P25"
+        ]
+      }
+    ],
+    "klaerungsfragen": [
+      {
+        "id": "K1",
+        "frage": "Mit welchem Brennstoff soll der Hauptmotor betrieben werden: Schweröl mit Abgaswäscher, schwefelarmer Brennstoff oder Flüssigerdgas im Zweistoffbetrieb?",
+        "element_ids": [
+          "E19",
+          "E28"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Tanks, Brennstoffaufbereitung, Abgasnachbehandlung und Brandschutz ab.",
+        "variante_ids": [
+          "V1"
+        ]
+      },
+      {
+        "id": "K2",
+        "frage": "Soll das Schiff einen Einschraubenantrieb oder einen Zweischraubenantrieb erhalten?",
+        "element_ids": [
+          "E19",
+          "E39"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Hauptmaschinenanlage, Ruderanlage, Fahrtregelanlage und Hinterschiff ab.",
+        "variante_ids": [
+          "V2"
+        ]
+      },
+      {
+        "id": "K3",
+        "frage": "Soll das Schiff am Liegeplatz Landstrom aufnehmen, und welche Verbraucher müssen dabei versorgt werden?",
+        "element_ids": [
+          "E28",
+          "E38"
+        ],
+        "anlass": "schnittstelle",
+        "relevanz": "Davon hängen Auslegung von Landstromanschluss und Hochvoltverteilung ab."
+      },
+      {
+        "id": "K4",
+        "frage": "Welche Rudermaschinenpumpen müssen aus der Notschalttafel versorgt werden, damit das Schiff bei Stromausfall steuerfähig bleibt?",
+        "element_ids": [
+          "E39",
+          "E63"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Notstromleistung und Verfügbarkeit der Steuerfähigkeit ab."
+      },
+      {
+        "id": "K5",
+        "frage": "Soll die Brücke mit den Unterkünften über dem Maschinenraum liegen oder als getrenntes Deckshaus weiter vorn?",
+        "element_ids": [
+          "E2",
+          "E47"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Sicht, Stellplätze und Leitungswege zwischen Brücke und Maschine ab.",
+        "variante_ids": [
+          "V5"
+        ]
+      },
+      {
+        "id": "K6",
+        "frage": "Welche Trimm- und Krängungslagen muss die Ballastwasseranlage während des Containerumschlags ausgleichen können?",
+        "element_ids": [
+          "E13",
+          "E14"
+        ],
+        "anlass": "betrieb",
+        "relevanz": "Davon hängen Pumpenleistung, Tankanordnung und Krängungsausgleich ab."
+      },
+      {
+        "id": "K7",
+        "frage": "Muss das Schiff Häfen ohne Containerbrücken bedienen und deshalb Bordkräne erhalten?",
+        "element_ids": [
+          "E53",
+          "E62"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Kranfundamente, Energieversorgung der Kräne und Krängungsausgleich ab.",
+        "variante_ids": [
+          "V3"
+        ]
+      },
+      {
+        "id": "K8",
+        "frage": "Sollen alle Laderäume Lukendeckel erhalten, oder werden einzelne Laderäume lukendeckellos ausgeführt?",
+        "element_ids": [
+          "E54",
+          "E2"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Torsionsfestigkeit, Freibord, Lenzanlage und Brandbekämpfung im Laderaum ab.",
+        "variante_ids": [
+          "V4"
+        ]
+      },
+      {
+        "id": "K9",
+        "frage": "Werden die Decksstapel mit Laschstangen und Twistlocks oder mit einem Buttress-System gesichert?",
+        "element_ids": [
+          "E57",
+          "E53"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Laschbrücken, Lukendeckellasten und zulässige Stapelhöhen ab.",
+        "variante_ids": [
+          "V6"
+        ]
+      },
+      {
+        "id": "K10",
+        "frage": "Wie viele Kühlcontainerstellplätze an und unter Deck sollen einen Stromanschluss erhalten?",
+        "element_ids": [
+          "E53",
+          "E61",
+          "E28"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Generatorleistung, Hochvoltverteilung und Laderaumlüftung ab."
+      },
+      {
+        "id": "K11",
+        "frage": "Von welchen Stellen aus soll der Hauptmotor gefahren werden können, nur von der Brücke oder auch aus dem Maschinenkontrollraum?",
+        "element_ids": [
+          "E47",
+          "E70"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Bedienelemente, Fahrtregelanlage und Übergabe der Kontrolle ab."
+      },
+      {
+        "id": "K12",
+        "frage": "Sollen die Abspanntransformatoren bei einem Ausfall selbsttätig umschalten, oder ist eine Handumschaltung durch die Besatzung zulässig?",
+        "element_ids": [
+          "E63",
+          "E65"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängt ab, wie schnell Ruder, Brennstoffpumpen und Beleuchtung nach einem Stromausfall wieder versorgt sind."
+      },
+      {
+        "id": "K13",
+        "frage": "Welche Daten soll der Schiffsdatenschreiber auch bei Ausfall der Hauptstromversorgung weiter aufzeichnen?",
+        "element_ids": [
+          "E70",
+          "E78"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Pufferversorgung und Anbindung der Datenquellen ab."
+      },
+      {
+        "id": "K14",
+        "frage": "Wie sollen Brände in Decksstapeln erkannt werden: durch Rundgänge der Besatzung, feste Infrarotkameras oder Temperaturüberwachung einzelner Container?",
+        "element_ids": [
+          "E79",
+          "E80"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Sensorik, Leitungen und Auswertung im Überwachungs- und Alarmsystem ab.",
+        "variante_ids": [
+          "V7"
+        ]
+      },
+      {
+        "id": "K15",
+        "frage": "Welche Leuchten und Signaleinrichtungen müssen aus der Notschalttafel versorgt werden?",
+        "element_ids": [
+          "E88",
+          "E67"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Umfang der Notversorgung und Leistung des Notstromaggregats ab."
+      },
+      {
+        "id": "K16",
+        "frage": "Bis zu welcher Seewassertemperatur muss der Kühlkreislauf die volle Antriebsleistung abführen können?",
+        "element_ids": [
+          "E96",
+          "E97"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Größe von Kühler, Kühlmittelpumpe und Seewasserpumpe ab."
+      },
+      {
+        "id": "K17",
+        "frage": "Sollen Lukendeckel und Decksmaschinen hydraulisch oder elektrisch angetrieben werden?",
+        "element_ids": [
+          "E103",
+          "E106"
+        ],
+        "anlass": "schnittstelle",
+        "relevanz": "Davon hängen Hydraulikversorgung, Bordnetzlasten und Leitungsführung an Deck ab."
+      }
+    ],
+    "anforderungsthemen": [
+      {
+        "id": "R1",
+        "element_ids": [
+          "E2"
+        ],
+        "thema": "Längs- und Torsionsfestigkeit des Schiffskörpers",
+        "kenngroessen": [
+          "Biegemoment",
+          "Torsionsmoment",
+          "Querkraft",
+          "Freibord"
+        ]
+      },
+      {
+        "id": "R2",
+        "element_ids": [
+          "E13"
+        ],
+        "thema": "Stabilität und Schwimmlage",
+        "kenngroessen": [
+          "Metazentrische Höhe",
+          "Trimm",
+          "Krängungswinkel",
+          "Tiefgang",
+          "Ballastwasserkapazität"
+        ]
+      },
+      {
+        "id": "R3",
+        "element_ids": [
+          "E19"
+        ],
+        "thema": "Antriebsleistung und Dienstgeschwindigkeit",
+        "kenngroessen": [
+          "Dienstgeschwindigkeit",
+          "Antriebsleistung",
+          "Brennstoffverbrauch",
+          "Umsteuerzeit"
+        ]
+      },
+      {
+        "id": "R4",
+        "element_ids": [
+          "E19",
+          "E23",
+          "E28"
+        ],
+        "thema": "Abgasemissionen",
+        "kenngroessen": [
+          "Schwefelgehalt des Brennstoffs",
+          "Schwefeloxidemission",
+          "Partikelemission"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "MARPOL Anlage VI, Verhütung der Luftverunreinigung durch Schiffe (IMO-Übereinkommen, Vertragsstaaten; weltweiter Schwefelgrenzwert, verschärft in Emissions-Überwachungsgebieten)",
+            "quellen_id": "Q3",
+            "fundstelle": "Abschnitt 1.7.4.2, S. 90–91, Fußnote 89"
+          }
+        ]
+      },
+      {
+        "id": "R5",
+        "element_ids": [
+          "E28"
+        ],
+        "thema": "Bunkerkapazität und Stromerzeugung",
+        "kenngroessen": [
+          "Bunkerkapazität",
+          "Generatorleistung",
+          "Reserveleistung",
+          "Anzahl gleichzeitig laufender Generatoren"
+        ]
+      },
+      {
+        "id": "R6",
+        "element_ids": [
+          "E39"
+        ],
+        "thema": "Steuerfähigkeit",
+        "kenngroessen": [
+          "Ruderlegezeit",
+          "Maximaler Ruderwinkel",
+          "Drehkreisdurchmesser",
+          "Wiederanlaufzeit der Rudermaschinenpumpen"
+        ]
+      },
+      {
+        "id": "R7",
+        "element_ids": [
+          "E47"
+        ],
+        "thema": "Sicht und Bedienbarkeit von der Brücke",
+        "kenngroessen": [
+          "Sichtschatten vor dem Bug",
+          "Anzahl der Manöverstände",
+          "Übergabezeit der Maschinenkontrolle"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "SOLAS-Sichtanforderungen an die Brücke (SOLAS-Übereinkommen, Vertragsstaaten)",
+            "quellen_id": "Q2",
+            "fundstelle": "Abschnitt „Bridge“"
+          }
+        ]
+      },
+      {
+        "id": "R8",
+        "element_ids": [
+          "E53"
+        ],
+        "thema": "Stellplatzkapazität und Ladungssicherung",
+        "kenngroessen": [
+          "Stellplatzkapazität in TEU",
+          "Stapelhöhe",
+          "Zulässige Stapellast",
+          "Anzahl der Kühlcontaineranschlüsse"
+        ]
+      },
+      {
+        "id": "R9",
+        "element_ids": [
+          "E63",
+          "E36"
+        ],
+        "thema": "Notstromversorgung und Wiederanlauf nach Stromausfall",
+        "kenngroessen": [
+          "Zeit bis zur Versorgung der Notschalttafel",
+          "Umschaltzeit der Abspanntransformatoren",
+          "Selbstanlauf kritischer Hilfsmaschinen"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "IMO-Regel 43, Notstromquelle auf Frachtschiffen (IMO-Vertragsstaaten, Frachtschiffe)",
+            "quellen_id": "Q3",
+            "fundstelle": "Abschnitt 1.7.1.2, S. 82, Fußnote 74"
+          }
+        ]
+      },
+      {
+        "id": "R10",
+        "element_ids": [
+          "E70"
+        ],
+        "thema": "Überwachung und Datenaufzeichnung",
+        "kenngroessen": [
+          "Umfang der Alarmüberwachung",
+          "Aufzeichnungsumfang des Schiffsdatenschreibers",
+          "Überbrückungszeit der Pufferversorgung"
+        ]
+      },
+      {
+        "id": "R11",
+        "element_ids": [
+          "E79"
+        ],
+        "thema": "Brandschutz für Containerladung",
+        "kenngroessen": [
+          "Erkennungszeit",
+          "Löschmittelvorrat",
+          "Wurfweite der Wasserwerfer",
+          "Erreichbare Stapellage"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "SOLAS-Regel II-2/10 in der Fassung der Entschließung MSC.365(93) (SOLAS-Vertragsstaaten; Containerschiffe, Neubauten ab 1. Januar 2016)",
+            "quellen_id": "Q4",
+            "fundstelle": "Abschnitt 3.1, S. 6"
+          }
+        ]
+      },
+      {
+        "id": "R12",
+        "element_ids": [
+          "E88"
+        ],
+        "thema": "Signalgebung und Sichtbarkeit",
+        "kenngroessen": [
+          "Tragweite der Navigationslichter",
+          "Hörweite des Typhons",
+          "Betriebsdauer der Notbeleuchtung"
+        ]
+      },
+      {
+        "id": "R13",
+        "element_ids": [
+          "E96"
+        ],
+        "thema": "Kühlleistung",
+        "kenngroessen": [
+          "Abzuführende Wärmeleistung",
+          "Auslegungstemperatur des Seewassers",
+          "Kühlwasserdruck"
+        ]
+      },
+      {
+        "id": "R14",
+        "element_ids": [
+          "E103"
+        ],
+        "thema": "Versorgung und Festmachen",
+        "kenngroessen": [
+          "Anlassluftvorrat",
+          "Frischwasserkapazität",
+          "Abwasserkapazität",
+          "Haltekraft der Ankerwinde"
+        ]
+      }
+    ]
+  },
+  "offene_punkte": [
+    "Glossarvorschlag: Funktion „Brand bekämpfen“ (Brände an Bord mit Löschmitteln bekämpfen; nicht synonym mit „Insassen schützen“, das auch Rettungsmittel umfasst).",
+    "Glossarvorschlag: Funktion „Rumpf lenzen“ (Leckwasser und eingedrungenes Wasser aus Rumpf und Laderäumen entfernen; bereits in A-0068 vorgeschlagen, nicht synonym mit „Abwasser sammeln“).",
+    "Glossarvorschlag: Funktion „Abgas reinigen“ (Schadstoffe wie Schwefeloxide und Partikel aus dem Abgas entfernen; bisher keine Funktion für Abgasnachbehandlung im Glossar).",
+    "Glossarvorschlag: Bedienraumname für Handelsschiffe (etwa „Brücke und Deckshaus“); verwendet wird mangels passender Vorgabe „Fahrerhaus“ (Nutzfahrzeuge).",
+    "Abweichung von der Zuordnungsliste: Lenkrad, Lenksäule, Lenkgetriebe und Lenkunterstützung (lenkung) entfallen, ersetzt durch Steuerrad, Selbststeueranlage und hydraulische Rudermaschine. Getriebe, Differenzial und Gelenkwelle (antrieb) entfallen wegen des direkt mit der Antriebswelle gekoppelten langsamlaufenden Motors. Der Thruster der Zuordnungsliste erscheint als Bugstrahlruder unter dem Antriebssystem. Rahmen, Radaufhängung, Federung, Räder und Reifen und Achse (struktur_fahrwerk) entfallen mangels Fahrwerk. Betriebsbremse, Feststellbremse und Antiblockiersystem (bremse) entfallen. Sitze, Rückhaltesystem und Airbag (bedienraum) sind für die Architektur nicht prägend und nicht modelliert.",
+    "Recherche: DNV-Regeln für Containerschiffe (DNV-RU-SHIP Pt.5 Ch.2, rules.dnv.com) waren in diesem Lauf nicht abrufbar (nur JavaScript-Startseite); für Lukendeckel, Laschung, Zellführungen und Torsionsfestigkeit nachholen, um P5 und P19 zu belegen.",
+    "Recherche: EUR-Lex (Verordnung (EU) 2023/1805 FuelEU Maritime, Verordnung (EU) 2023/1804 zur Infrastruktur für alternative Kraftstoffe) war in diesem Lauf nicht erreichbar; Landstrompflichten für Containerschiffe in EU-Häfen nachholen, um P11 und ein Regelwerk zum Landstromanschluss zu belegen.",
+    "Recherche: Fachquelle zu Zweistoffmotoren mit Flüssigerdgas auf Containerschiffen (Suchbegriffe: LNG dual-fuel container ship fuel gas supply system, LNG-Tank Containerschiff), um P9 und P11 zu belegen.",
+    "Recherche: Fachquelle zu Ballastwasseranlage und Krängungsausgleich (Suchbegriffe: container ship anti-heeling system, ballast water treatment container vessel), um P6 zu belegen.",
+    "Recherche: Fachquelle zu Zentralkühlsystem, Laderaumlüftung und Kühlcontainerbetrieb unter Deck (Suchbegriffe: central cooling system container ship, cargo hold ventilation reefer containers), um P27 zu belegen.",
+    "Recherche: Fachquelle zu Rettungsmitteln, Radar und Navigationsausrüstung von Containerschiffen (etwa SOLAS Kapitel III und V im Original), um P23, P25 und P26 zu belegen."
+  ]
+}

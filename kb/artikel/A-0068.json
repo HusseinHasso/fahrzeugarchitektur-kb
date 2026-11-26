@@ -1,0 +1,930 @@
+{
+  "schema_version": "2.3",
+  "artikel_id": "A-0068",
+  "artikeltyp": "blatt",
+  "titel": "Jetski",
+  "betrachtungsumfang": "Generische Referenzarchitektur des Jetskis (Wassermotorrad, Personal Watercraft) als Wasserfahrzeug ohne Bordwand mit eingebautem Antriebsmotor und Strahlpumpenantrieb, auf dem eine oder mehrere Personen sitzen oder stehen, in den Bauformen Sitzer und Steher für Freizeit-, Angel- und Rettungseinsatz. Betrachtet werden Antriebe mit Viertakt- oder Zweitakt-Ottomotor (Energiespeicher Kraftstofftank, Wandler Verbrennungsmotor) und elektrische Antriebe (Energiespeicher Traktionsbatterie, Wandler Traktionsmaschine mit Wechselrichter). Nicht betrachtet werden Diesel-, Wasserstoff- und Hybridantriebe, Jetboote mit Bordwand, Power-Jetboards, amphibische Jetskis, Kinderfahrzeuge mit aufblasbarem Rumpf sowie Bootstrailer, gezogene Wassersportgeräte und persönliche Schutzausrüstung.",
+  "status": "in_arbeit",
+  "quellenzugriff": "ja",
+  "kindartikel_ids": [],
+  "quellen": [
+    {
+      "quellen_id": "Q1",
+      "titel": "Jetski",
+      "urheber": "Wikipedia, Die freie Enzyklopädie (deutschsprachig)",
+      "stand": "oldid 272064869 (11. November 2026)",
+      "url": "https://de.wikipedia.org/wiki/Jetski",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q2",
+      "titel": "Jet ski",
+      "urheber": "Wikipedia, The Free Encyclopedia (englischsprachig)",
+      "stand": "zum Abrufzeitpunkt aktuelle Fassung",
+      "url": "https://en.wikipedia.org/wiki/Jet_ski",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q3",
+      "titel": "Wasserstrahlantrieb",
+      "urheber": "Wikipedia, Die freie Enzyklopädie (deutschsprachig)",
+      "stand": "oldid 271109386 (6. Oktober 2026)",
+      "url": "https://de.wikipedia.org/wiki/Wasserstrahlantrieb",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q4",
+      "titel": "Pump-jet",
+      "urheber": "Wikipedia, The Free Encyclopedia (englischsprachig)",
+      "stand": "oldid 1364870409 (19. Juli 2026)",
+      "url": "https://en.wikipedia.org/wiki/Pump-jet",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q5",
+      "titel": "Richtlinie 2013/53/EU des Europäischen Parlaments und des Rates vom 20. November 2013 über Sportboote und Wassermotorräder und zur Aufhebung der Richtlinie 94/25/EG",
+      "urheber": "Europäisches Parlament und Rat der Europäischen Union (Amtsblatt der EU, abgerufen über das Amt für Veröffentlichungen)",
+      "stand": "Originalfassung, ABl. L 354 vom 28.12.2013, S. 90",
+      "url": "https://publications.europa.eu/resource/celex/32013L0053",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q6",
+      "titel": "40 CFR § 1045.801 – What definitions apply to this part?",
+      "urheber": "U.S. Environmental Protection Agency (Electronic Code of Federal Regulations)",
+      "stand": "Fassung vom 1. Januar 2025",
+      "url": "https://www.ecfr.gov/api/versioner/v1/full/2025-01-01/title-40.xml?part=1045&section=1045.801",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q7",
+      "titel": "40 CFR § 1045.103 – What exhaust emission standards must my outboard and personal watercraft engines meet?",
+      "urheber": "U.S. Environmental Protection Agency (Electronic Code of Federal Regulations)",
+      "stand": "Fassung vom 1. Januar 2025",
+      "url": "https://www.ecfr.gov/api/versioner/v1/full/2025-01-01/title-40.xml?part=1045&section=1045.103",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q8",
+      "titel": "Personal Watercraft Safety. Safety Study NTSB/SS-98/01",
+      "urheber": "National Transportation Safety Board, Washington, D.C.",
+      "stand": "19. Mai 1998",
+      "url": "https://www.ntsb.gov/safety/safety-studies/Documents/SS9801.pdf",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "behoerde"
+    },
+    {
+      "quellen_id": "Q9",
+      "titel": "Personal Watercraft – PWC Safety: Having A Fun and Safe Experience (Seminar mit Begleittext)",
+      "urheber": "U.S. Coast Guard Auxiliary, Education Directorate",
+      "stand": "Juli 2023",
+      "url": "https://edept.cgaux.org/pdf/PWC%20Safety%20Seminar.pdf",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "behoerde"
+    }
+  ],
+  "abschnitte": [
+    {
+      "ueberschrift": "Einleitung",
+      "abschnittstyp": "gesamtsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P1",
+          "text": "Ein Jetski, amtlich Wassermotorrad, englisch Personal Watercraft (PWC), ist ein kleines motorisiertes Wasserfahrzeug ohne Bordwand, auf dem man wie auf einem Motorrad sitzt und das über einen Lenker gesteuert wird; der Bootskörper besteht aus glasfaserverstärktem Kunststoff, den Vortrieb erzeugt ein Wasserstrahlantrieb. Die Richtlinie 2013/53/EU (EU, Sport- und Freizeitzwecke) definiert Wassermotorräder als Wasserfahrzeuge unter 4 m Rumpflänge mit Strahlpumpenantrieb als Hauptantriebsquelle, deren Fahrer auf dem Rumpf sitzen, stehen oder knien. Das US-Emissionsrecht (USA, Ottomotoren in Wasserfahrzeugen) verlangt zudem einen eingebauten Fremdzündungsmotor und keinen offenen, Wasser haltenden Laderaum; Fahrzeuge mit Außenbordmotor als Hauptantrieb sind ausgenommen. Seit dem Modelljahr 2010 gelten dort für Jetski-Motoren gemeinsam mit Außenbordmotoren Abgasgrenzwerte für Kohlenwasserstoffe und Stickoxide sowie Kohlenmonoxid.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q1", "fundstelle": "Einleitung; Abschnitt „Begriffe“, Absätze 1 und 2"},
+            {"quellen_id": "Q5", "fundstelle": "Artikel 3 Nummer 3"},
+            {"quellen_id": "Q6", "fundstelle": "§ 1045.801, Definition „Personal watercraft“"},
+            {"quellen_id": "Q7", "fundstelle": "§ 1045.103 Absatz (a), Table 1"}
+          ],
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P2",
+          "text": "Architekturell ist der Jetski ein Wasserfahrzeug ohne Fahrwerk, bei dem ein einziger Wasserstrahl Vortrieb, Lenkwirkung und Verzögerung erzeugt; ohne Schub der Strahlpumpe lässt er sich weder lenken noch bremsen. Zur Systemgrenze gehören Fahrerplatz, Schleppvorrichtung und beim Elektroantrieb die Ladeeinrichtung, nicht aber Bootstrailer, gezogene Wassersportgeräte und Schutzausrüstung. Die Hauptsysteme sind mechanisch, elektrisch, thermisch, stofflich und informationstechnisch gekoppelt; für eine Dekomposition, etwa in SysML, wird der Jetski zuerst in Hauptsysteme und dann in Subsysteme und Komponenten zerlegt.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": ["P1", "P5", "P9", "P11", "Ein Fahrzeug ohne Bodenkontakt braucht kein Fahrwerk"],
+            "schluss": "Vortrieb, Lenkung und Verzögerung hängen am selben Wasserstrahl; daraus folgen Systemgrenze und Kopplung der Hauptsysteme."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrzeugstruktur",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E2",
+      "absaetze": [
+        {
+          "absatz_id": "P3",
+          "text": "Überbordfallen und Kentern sind beim Jetski erwartete Betriebsereignisse; die Eignerhandbücher beschreiben das Aufrichten eines gekenterten Fahrzeugs, und Jetskis werden mit anderen Zielen konstruiert als herkömmliche Boote. In den USA weisen die Hersteller ausreichenden Auftrieb mit Prüfdaten zu Bootsgewicht, Personenzahl und eingebautem Auftriebsmaterial nach (NTSB). Die Richtlinie 2013/53/EU (EU) verlangt ausreichende Festigkeit nach Entwurfskategorie und Höchstlast, Schwimmfähigkeit vollschlagender Wasserfahrzeuge unter 6 m Länge auch im überfluteten Zustand sowie Halterungen zum Ankern, Vertäuen und Schleppen.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q8", "fundstelle": "Kapitel 1, Abschnitt „Operating Characteristics of Personal Watercraft“, S. 10; Kapitel 5, Abschnitt „Coast Guard Exemptions“, S. 52, Fußnote 89"},
+            {"quellen_id": "Q5", "fundstelle": "Anhang I Teil A Nummern 3.1, 3.3 und 3.9"}
+          ],
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P4",
+          "text": "Tragendes Element ist der Bootskörper aus Rumpf und Deckschale, die gemeinsam den Motorraum umschließen. Der Rumpf trägt den Einlauf der Strahlpumpe, Motorlager und Pumpengehäuse, die Deckschale trägt Sitzbank, Trittflächen und Lenkerkonsole. Gewichts-, Schub- und Wellenstoßkräfte fließen über den Rumpf ins Wasser. Auftriebskörper in den Hohlräumen halten das Fahrzeug auch vollgelaufen schwimmfähig und aufrichtbar, Festmacheösen an Bug und Heck nehmen Festmache- und Schleppkräfte auf. Bootskörper und Auftriebsvolumen wachsen mit der Personenzahl vom Steher bis zum Mehrsitzer.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": ["P1", "P3", "Q9 (Folie 26: Einlass als Öffnung im Rumpf)", "Jede Last braucht einen Pfad bis zum tragenden Wasser"],
+            "schluss": "Bootskörper mit Rumpf, Deckschale und Motorraum, Auftriebskörper und Festmacheösen bilden Lastpfad und Schwimmfähigkeit."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Antriebssystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E9",
+      "absaetze": [
+        {
+          "absatz_id": "P5",
+          "text": "Angetrieben wird der Jetski meist von einem Viertakt-Ottomotor; frühe Modelle und besonders Steher hatten Zweitaktmotoren, die wegen der Umweltbelastung aus der Mode gekommen oder verboten worden sind. Zur Schalldämpfung wird der Abgasstrahl durch Wasserboxen geleitet. Elektrische Jetskis werden seit Anfang der 2020er Jahre vermarktet. Der Innenbordmotor treibt direkt den Impeller einer Strahlpumpe, einer Axialpumpe: Wasser tritt durch ein Gitter im Rumpf ein, wird im Gehäuse unter Druck gesetzt und durch eine kleinere Düse ausgestoßen, deren Rückstoß das Fahrzeug schiebt. Der umschlossene Rotor ist für Schwimmer sicherer als ein offener Propeller, und nur der Einlass muss eingetaucht sein.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q1", "fundstelle": "Abschnitt „Begriffe“, Absatz 1; Abschnitt „Technik“, Absätze 1 bis 3"},
+            {"quellen_id": "Q2", "fundstelle": "Einleitung, Absatz 3; Abschnitt „History“, letzter Absatz"},
+            {"quellen_id": "Q9", "fundstelle": "Folie 5 und Folie 7, jeweils Begleittext"},
+            {"quellen_id": "Q4", "fundstelle": "Abschnitt „Advantages“"},
+            {"quellen_id": "Q3", "fundstelle": "Abschnitt „Funktion und Vergleich zum konventionellen Antrieb“, vorletzter Absatz"}
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P6",
+          "text": "Das Antriebssystem gliedert sich in Motoreinheit, Antriebswelle und Strahlpumpe. Die Motoreinheit umfasst Verbrennungsmotor und Abgasanlage oder beim Elektroantrieb Traktionsmaschine und Wechselrichter. Die Antriebswelle verbindet Motor und Impeller ohne Kupplung und Getriebe, sodass die Drehzahl unmittelbar den Schub bestimmt. In der Strahlpumpe fließt das Wasser vom Einlaufgitter durch Impeller und Leitrad zur Austrittsdüse, hinter der Lenkdüse und Umkehrklappe in den Strahl eingreifen.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": ["P5", "Q4 (Abschnitt „Axial flow“: Druckaufbau an Impellerschaufeln und Leitschaufeln)", "Eine elektrische Maschine braucht einen Wechselrichter zur Ansteuerung"],
+            "schluss": "Motoreinheit, direkt wirkende Antriebswelle und Strahlpumpe mit Einlaufgitter, Impeller, Leitrad und Austrittsdüse bilden den Leistungs- und Wasserpfad."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Energieversorgungssystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E21",
+      "absaetze": [
+        {
+          "absatz_id": "P7",
+          "text": "Jetskis mit Verbrennungsmotor haben einen eingebauten Kraftstofftank von fünf bis zwanzig Gallonen je nach Hersteller und Modell; ältere Modelle haben einen Kraftstoffhahn mit Reservestellung. Die Richtlinie 2013/53/EU (EU) verlangt, die Brand- und Explosionsgefahr an Einfüll-, Lager-, Belüftungs- und Zufuhrvorrichtungen gering zu halten; Ottokraftstoffbehälter dürfen nicht Teil des Rumpfes sein, Batterien müssen befestigt, belüftet und vor eindringendem Wasser geschützt sein. Die von den großen Herstellern freiwillig angewandte SAE-Empfehlung J2046 (USA) verlangt, dass die Kraftstoffanlage beim Rollen um 180 Grad keinen flüssigen Kraftstoff ins Fahrzeug verliert.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q9", "fundstelle": "Folie 14, Begleittext"},
+            {"quellen_id": "Q5", "fundstelle": "Anhang I Teil A Nummern 5.2.1, 5.2.2 und 5.3"},
+            {"quellen_id": "Q8", "fundstelle": "Kapitel 5, Abschnitt „Industry Standards“, S. 52–53"}
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P8",
+          "text": "Das Energieversorgungssystem besteht aus der Kraftstoffanlage mit Kraftstofftank, Tankentlüftung und Kraftstoffpumpe, der Bordnetzversorgung mit Starterbatterie und vom Motor angetriebenem Generator sowie beim Elektroantrieb dem Hochvolt-Energiespeicher. Dort ersetzen Traktionsbatterie, Ladeeinrichtung und Gleichspannungswandler Kraftstoffanlage und Generator; die Traktionsbatterie speist den Wechselrichter, der Gleichspannungswandler das Bordnetz. Weil der Jetski kentert, müssen Tank, Tankentlüftung und Batteriegehäuse in jeder Lage dicht bleiben.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": ["P3", "P5", "P7", "Ein Verbrennungsmotor braucht Kraftstoffzufuhr, ein Bordnetz eine geladene Batterie"],
+            "schluss": "Kraftstoffanlage, Bordnetzversorgung und beim Elektroantrieb Hochvolt-Energiespeicher, alle lageunabhängig dicht."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Lenksystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E33",
+      "absaetze": [
+        {
+          "absatz_id": "P9",
+          "text": "Der Lenker bewegt eine schwenkbare Düse am Heck des Pumpengehäuses; sie richtet den Wasserstrahl seitlich aus und drückt das Heck zur Gegenseite. Ohne Schub gibt es kaum Lenkwirkung: Wer zum Ausweichen das Gas schließt, treibt in der ursprünglichen Richtung weiter. Die NTSB (USA) empfahl den Herstellern, Maßnahmen wie das Lenken ohne Gas zu prüfen, und manche Modelle haben Systeme dafür, die im Eignerhandbuch beschrieben sind.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q9", "fundstelle": "Folie 6, Begleittext (NOTE); Folie 9 und Folie 20, Begleittext"},
+            {"quellen_id": "Q8", "fundstelle": "Kapitel 1, Abschnitt „Operating Characteristics of Personal Watercraft“, S. 9; Kapitel 4, S. 50"}
+          ],
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P10",
+          "text": "Das Lenksystem besteht aus der Lenkbetätigung mit Lenker und Lenkseilzug, der Lenkdüse hinter der Austrittsdüse und gegebenenfalls der Lenkunterstützung bei Gaswegnahme. Diese erkennt Lenkeinschlag bei geschlossenem Gashebel und fordert über das Motorsteuergerät kurzzeitig Drehzahl an, damit wieder lenkender Schub entsteht. Ohne sie bleibt bei Gaswegnahme nur die geringe Lenkwirkung des Leerlaufschubs.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": ["P6", "P9", "Lenkwirkung entsteht nur aus abgelenktem Schub"],
+            "schluss": "Mechanische Lenkbetätigung zur Lenkdüse; eine Lenkunterstützung bei Gaswegnahme muss Schub über die Motordrehzahl anfordern."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Bremssystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E39",
+      "absaetze": [
+        {
+          "absatz_id": "P11",
+          "text": "Die NTSB (USA) stellte fest, dass Jetskis keine Bremseinrichtung hatten und ohne Lenkfähigkeit ausliefen. Neuere Modelle haben eine Schubumkehr: Eine schalenförmige Platte senkt sich vor den austretenden Strahl und schaltet von vorwärts auf neutral oder rückwärts. Bremswirkung entsteht durch Umlenken oder mechanisches Blockieren des Strahls, unterscheidet sich stark zwischen den Modellen und entspricht keiner echten Bremse. Bei mehr als Leerlaufdrehzahl gestellt, können Platte und Halterungen beschädigt werden. Rückwärts kehrt sich die Lenkung nicht um.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q8", "fundstelle": "Kapitel 1, Abschnitt „Operating Characteristics of Personal Watercraft“, S. 9"},
+            {"quellen_id": "Q9", "fundstelle": "Folie 6, Begleittext (Reverse Bucket); Folie 9, Folie 20 und Folie 52, Begleittext"},
+            {"quellen_id": "Q4", "fundstelle": "Abschnitt „Design“, Absätze 1 und 2"}
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P12",
+          "text": "Das Bremssystem besteht aus Umkehrklappe, Klappenbetätigung und Bremshebel. Die Klappenbetätigung ist ein Seilzug vom Bremshebel oder ein elektrischer Stellantrieb, den das Motorsteuergerät aus Hebelstellung und Drehzahl ansteuert; nur dieser erlaubt Bremsen mit gezielter Drehzahlanhebung und schützt die Klappe vor dem Stellen bei hoher Drehzahl. Betriebsbremse und Feststellbremse entfallen, festgehalten wird das Fahrzeug durch Festmachen.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": ["P6", "P11", "Verzögerung ohne Bodenkontakt nur über Strahl und Wasserwiderstand"],
+            "schluss": "Umkehrklappe mit mechanischer oder elektrischer Betätigung als einziges Verzögerungsmittel."
+          },
+          "sicherheit": "gering",
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrerplatz",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E43",
+      "absaetze": [
+        {
+          "absatz_id": "P13",
+          "text": "Verbreitet ist der Sitzer (Runabout) für meist nicht mehr als zwei oder drei Personen, die wie auf einem ATV oder Schneemobil auf dem Fahrzeug sitzen; der Steher für meist eine stehende Person dient eher Tricks, Rennen und Wettbewerben. Das Fahrzeug bietet keinen geschlossenen, strukturell geschützten Raum und hält die Fahrer nicht gegen Herausschleudern zurück.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q2", "fundstelle": "Einleitung, Absätze 1 und 3"},
+            {"quellen_id": "Q8", "fundstelle": "Kapitel 4, S. 50"}
+          ],
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P14",
+          "text": "Der Fahrerplatz gliedert sich in den Sitz- und Standbereich mit Sitzbank, Trittflächen und Haltegriffen und die Bedien- und Anzeigeeinheit. Die abnehmbare Sitzbank verschließt den Zugang zum Motorraum. Die Bedienelemente am Lenker umfassen Gashebel sowie Start- und Stopptaster, die Anzeigeelemente zeigen Drehzahl, Geschwindigkeit, Füll- oder Ladestand und Warnungen. Beim Steher entfallen Sitzbank und Mitfahrerplätze.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": ["P13", "Q9 (Folie 6: Gashebel regelt die Kraftstoffzufuhr; Folie 14: Sitz wird zur Geruchsprobe im Motorraum angehoben)", "Jede Fahrereingabe braucht ein Bedienelement"],
+            "schluss": "Sitz- und Standbereich mit Zugang zum Motorraum sowie Bedien- und Anzeigeeinheit am Lenker."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Aufbau und Ladung",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E51",
+      "absaetze": [
+        {
+          "absatz_id": "P15",
+          "text": "Jetskis ziehen Wasserskiläufer, Wasserbananen und Wasserschlitten. Angelmodelle wie der Sea-Doo Fish Pro (Bombardier) haben Rutenhalter und eine Kühlbox auf einer Plattform am Heck. Rettungsjetskis tragen in der vorderen Verkleidung eine Staubox für medizinische Ausrüstung und führen ein Rettungsbrett mit Haltegriffen hinter oder auf dem Fahrzeug mit.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q1", "fundstelle": "Abschnitte „Freizeitsport“, „Angelsport“ und „BOS-Dienste“"}
+          ],
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P16",
+          "text": "Aufbau und Ladung umfassen Staufach, Schleppvorrichtung und Heckplattform. Die Schleppvorrichtung am Heck leitet die Zugkraft der Schleppleine in den Rumpf; die Leine darf nicht in das Einlaufgitter gelangen. Die Heckplattform dient als Wiedereinstiegshilfe und trägt je nach Einsatz Kühlbox oder Rettungsplattform. Jede Einsatzausstattung verändert Masse, Schwerpunkt und Auftriebsbedarf.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": ["P15", "Q9 (Folie 30: Schleppleine kann in den Einlass gesaugt werden)", "Q5 (Anhang I Teil A Nummer 2.3: Wiedereinstiegsmittel)"],
+            "schluss": "Staufach, Schleppvorrichtung und Heckplattform tragen die Einsatzausstattung und koppeln an Rumpf und Auftrieb."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Elektrik und Elektronik",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E55",
+      "absaetze": [
+        {
+          "absatz_id": "P17",
+          "text": "Elektrik und Elektronik verbinden Starterbatterie, Steuergeräte, Kraftstoffpumpe, Stellantriebe sowie Bedien- und Anzeigeelemente. Das Niedervolt-Bordnetz besteht aus Leitungssatz, Stromverteiler und Sicherungen, ein Fahrzeugbus verbindet Motorsteuergerät, Anzeigeelemente und eine elektrische Klappenbetätigung. Weil Motorraum und Lenkerkonsole nass werden und das Fahrzeug kentert, sind Stromverteiler, Steckverbinder und Steuergeräte wasserdicht und funkenarm ausgeführt; der Anlasserstromkreis wird direkt aus der Starterbatterie gespeist.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": ["P3", "P8", "Q5 (Anhang I Teil A Nummer 5.3: Überlastschutz, Ausnahme Anlasserstromkreise)", "Q8 (Kapitel 5, S. 52: geringe Funkengefahr als Begründung der Ausnahmen)"],
+            "schluss": "Wasserdichtes, abgesichertes Niedervolt-Bordnetz mit Fahrzeugbus zwischen den Steuergeräten."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrzeugsteuerung und Information",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E61",
+      "absaetze": [
+        {
+          "absatz_id": "P18",
+          "text": "Die Fahrzeugsteuerung koordiniert Motor, Schubumkehr, Lenkunterstützung und Anzeige. Das Motorsteuergerät setzt die Gashebelstellung in Drosselklappe, Einspritzung und Zündung oder beim Elektroantrieb in eine Momentvorgabe an den Wechselrichter um und kann die Leistung für ungeübte Fahrer begrenzen. Die Diagnose speichert Fehler und Betriebsstunden; eine Navigation mit Fischfinder ist Zusatzausstattung von Angelmodellen.",
+          "begruendung": "modellwissen",
+          "belege": [],
+          "sicherheit": "gering",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrerassistenz und Sicherheit",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E65",
+      "absaetze": [
+        {
+          "absatz_id": "P19",
+          "text": "Nach der Richtlinie 2013/53/EU (EU) brauchen Wassermotorräder eine automatische Abschaltung des Antriebsmotors oder eine Vorrichtung, die das Fahrzeug in langsame, kreisförmige Vorwärtsfahrt bringt, wenn der Fahrer absteigt oder über Bord geht. Üblich ist eine Reißleine am Handgelenk, an der Kleidung oder an der Rettungsweste, die beim Sturz aus einem Schalter gezogen wird; der Schalter unterbricht den Stromkreis des Motors. Manche ältere Modelle kreisen stattdessen im Leerlauf. Zur Prüfung vor der Fahrt gehört der Feuerlöscher.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q5", "fundstelle": "Anhang I Teil A Nummer 5.1.5"},
+            {"quellen_id": "Q1", "fundstelle": "Abschnitt „Technik“, Absatz 4"},
+            {"quellen_id": "Q9", "fundstelle": "Folie 11; Folie 51 und Folie 61, jeweils Begleittext"}
+          ],
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P20",
+          "text": "Das System Fahrerassistenz und Sicherheit umfasst die Abschalteinrichtung aus Notstoppschalter und Reißleine oder die Selbstkreiseinrichtung sowie den Feuerlöscher. Der Notstoppschalter an der Lenkerkonsole wirkt über das Motorsteuergerät auf Zündung und Kraftstoffpumpe oder schaltet die Traktionsmaschine momentenfrei. Die Selbstkreiseinrichtung nimmt die Leistung auf Leerlauf zurück und hält die Lenkdüse eingeschlagen.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": ["P19", "P9", "P10", "Kreisfahrt braucht Leerlaufschub und abgelenkten Strahl"],
+            "schluss": "Abschalteinrichtung wirkt auf die Motorsteuerung; die Selbstkreiseinrichtung koppelt Leistungsrücknahme mit Lenkdüsenstellung."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Beleuchtung und Sicht",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E71",
+      "absaetze": [
+        {
+          "absatz_id": "P21",
+          "text": "In den USA haben Jetskis keine Navigationslichter, weshalb ihre zulässigen Betriebszeiten nach dem Recht der Bundesstaaten zu klären sind. Vorhandene Navigationslichter und akustische Signalanlagen müssen nach der Richtlinie 2013/53/EU (EU) den Kollisionsverhütungsregeln von 1972 oder den CEVNI-Empfehlungen entsprechen. Die Düse wirft bei Fahrt eine Wasserfontäne schräg nach oben, die die Sichtbarkeit für andere verbessert. Beim Schleppen erlauben einige Bundesstaaten einen Weitwinkelspiegel statt eines Beobachters.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q9", "fundstelle": "Folie 39, Begleittext; Abschnitt „Towing“ (Folie 30), Begleittext"},
+            {"quellen_id": "Q5", "fundstelle": "Anhang I Teil A Nummer 5.7"},
+            {"quellen_id": "Q1", "fundstelle": "Abschnitt „Technik“, Absatz 5"}
+          ],
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P22",
+          "text": "Das System Beleuchtung und Sicht umfasst damit Rückspiegel, optionale Navigationsleuchten aus dem Bordnetz und die Sichtbarkeitsfontäne, einen Teilstrom der Strahlpumpe, der nur bei Schub entsteht. Ohne Navigationsleuchten bleibt der Betrieb auf Tageslicht beschränkt.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": ["P21", "P5"],
+            "schluss": "Rückspiegel, optionale Navigationsleuchten und Sichtbarkeitsfontäne; Fontäne hängt am Schub der Strahlpumpe."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Thermomanagement",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E75",
+      "absaetze": [
+        {
+          "absatz_id": "P23",
+          "text": "Das Thermomanagement gibt die Verlustwärme von Motor und Abgasanlage, beim Elektroantrieb von Traktionsbatterie, Wechselrichter und Traktionsmaschine an das umgebende Wasser ab. Der Kühlkreislauf entnimmt über die Kühlwasserentnahme Druckwasser aus der Strahlpumpe und führt es über Kühlwasserleitungen durch Motor und Abgasanlage; gekühlt wird nur, solange die Pumpe fördert. Beim offenen Kühlkreislauf durchströmt Außenwasser den Motor, beim geschlossenen zirkuliert Kühlmittel über Kühlmittelpumpe und Wärmetauscher, was Salzablagerungen im Motor vermeidet. Eine Batterietemperierung hält die Traktionsbatterie im zulässigen Temperaturbereich.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": ["P5", "P6", "Verlustwärme braucht eine Wärmesenke; die einzige verfügbare ist das umgebende Wasser", "Die Strahlpumpe steht unter Druck, solange der Motor läuft"],
+            "schluss": "Kühlwasser wird aus der Strahlpumpe entnommen; offener oder geschlossener Kühlkreislauf, beim Elektroantrieb zusätzlich Batterietemperierung."
+          },
+          "sicherheit": "gering",
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Neben- und Versorgungssysteme",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E82",
+      "absaetze": [
+        {
+          "absatz_id": "P24",
+          "text": "Vor der Fahrt ist zu prüfen, dass der Bilgenstopfen sitzt; vor dem Slippen sind die Ablassstopfen einzusetzen, damit kein Wasser in den Rumpf dringt. Benzindämpfe in der Bilge sind explosionsgefährlich und werden nach dem Tanken unter dem angehobenen Sitz geprüft. Die Richtlinie 2013/53/EU (EU) verlangt einen belüfteten Motorraum mit möglichst geringem Wassereintritt und Vorrichtungen zum Entfernen von Wasser; eine Zwangsbelüftung mit Gebläse ist beim Jetski nicht anwendbar, weil er zum Kentern neigt und über die Gebläse Wasser aufnehmen könnte.",
+          "begruendung": "belegt",
+          "belege": [
+            {"quellen_id": "Q9", "fundstelle": "Folie 13; Folie 14 und Folie 22, Begleittext; Folie 26, Begleittext (Sniff Test)"},
+            {"quellen_id": "Q5", "fundstelle": "Anhang I Teil A Nummern 3.5 und 5.1.2"},
+            {"quellen_id": "Q8", "fundstelle": "Kapitel 5, Abschnitt „Coast Guard Exemptions“, S. 52"}
+          ],
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P25",
+          "text": "Die Neben- und Versorgungssysteme umfassen Lenzeinrichtung, Motorraumbelüftung und Ablassstopfen. Die Lenzeinrichtung saugt Leckwasser aus dem Rumpf, etwa über eine vom Pumpendruck betriebene Saugstrahlpumpe, und gibt es in die Strahlpumpe ab; die Motorraumbelüftung führt Verbrennungs- und Spülluft über spritzwassergeschützte Kanäle ohne Gebläse zu.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": ["P24", "P5", "Leckwasser braucht einen Weg nach außenbords"],
+            "schluss": "Lenzeinrichtung am Pumpenstrom, gebläselose Motorraumbelüftung und Ablassstopfen."
+          },
+          "sicherheit": "gering",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Zusammenfassung",
+      "abschnittstyp": "gesamtsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P26",
+          "text": "Architekturell lässt sich der Jetski auf oberster Ebene als Gesamtsystem mit den Systemen Fahrzeugstruktur, Antriebssystem, Energieversorgungssystem, Lenksystem, Bremssystem, Fahrerplatz, Aufbau und Ladung, Elektrik und Elektronik, Fahrzeugsteuerung und Information, Fahrerassistenz und Sicherheit, Beleuchtung und Sicht, Thermomanagement sowie Neben- und Versorgungssysteme auffassen. Der Wasserstrahl der Strahlpumpe koppelt Antrieb, Lenkung, Bremse, Kühlung und Lenzen; diese Kopplung prägt die meisten Entwurfsentscheidungen.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": ["P2", "P6", "P10", "P12", "P23", "P25"],
+            "schluss": "Dreizehn Hauptsysteme, gekoppelt über den gemeinsamen Wasserstrahl."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Modellierungsbezug",
+      "abschnittstyp": "modellierung",
+      "absaetze": [
+        {
+          "absatz_id": "P27",
+          "text": "In SysML bildet der Block `Jetski` das Gesamtsystem mit den Hauptsystemen als Bestandteilen. Dekompositionspfade sind etwa `Jetski → Antriebssystem → Strahlpumpe → Impeller`, `Jetski → Energieversorgungssystem → Kraftstoffanlage → Kraftstofftank`, `Jetski → Lenksystem → Lenkbetätigung → Lenkseilzug` und `Jetski → Fahrerassistenz und Sicherheit → Abschalteinrichtung → Notstoppschalter`. Ports bilden die Wasserführung vom Einlaufgitter bis zur Umkehrklappe, die Wellenverbindung, Kraftstoff-, Kühlwasser- und Luftanschlüsse, elektrische Anschlüsse und Signale wie Gashebelstellung und Notstopp ab. Block Definition Diagrams zeigen die Struktur, Internal Block Diagrams den Wasserstrahl als gemeinsamen Fluss, Aktivitätsdiagramme das Ausweichmanöver und Zustandsdiagramme die Fahrzustände Vorwärts, Neutral, Rückwärts und Notstopp.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": ["Elementhierarchie und Flüsse dieses Artikels", "P6", "P11", "P19"],
+            "schluss": "Dekompositionspfade, Ports und Diagrammarten folgen aus Struktur, Flüssen und Fahrzuständen."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Flüsse",
+      "abschnittstyp": "fluesse",
+      "absaetze": [
+        {
+          "absatz_id": "P28",
+          "text": "Die Kraftstoffanlage liefert Kraftstoff an den Verbrennungsmotor, beim Elektroantrieb die Traktionsbatterie elektrische Energie über den Wechselrichter an die Traktionsmaschine. Der Motor liefert Drehmoment über die Antriebswelle an den Impeller und treibt den Generator. Wasser strömt vom Einlaufgitter durch die Strahlpumpe zu Lenkdüse und Umkehrklappe; Teilströme versorgen Kühlkreislauf und Sichtbarkeitsfontäne, die Lenzeinrichtung gibt Leckwasser in die Strahlpumpe ab. Bedienelemente, Notstoppschalter und Lenkunterstützung liefern Signale an das Motorsteuergerät, das Motor, Klappenbetätigung und über den Fahrzeugbus die Anzeigeelemente ansteuert. Sitzbank, Schleppvorrichtung und Auftriebskörper leiten Gewichts-, Zug- und Auftriebskräfte in den Bootskörper.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": ["P4", "P6", "P8", "P10", "P12", "P17", "P20", "P23", "P25"],
+            "schluss": "Jeder Fluss hat Ursprung und Ziel in den beschriebenen Elementen."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Perspektiven",
+      "abschnittstyp": "perspektiven",
+      "absaetze": [
+        {
+          "absatz_id": "P29",
+          "text": "Funktional tragen Bootskörper und Rumpf die Fahrzeuglasten, Auftriebskörper und Rumpf stellen Auftrieb bereit, die Festmacheösen halten das Fahrzeug fest. Energie speichern Kraftstofftank, Starterbatterie und Traktionsbatterie; Treibstoff fördern übernimmt die Kraftstoffpumpe, Elektrische Energie erzeugen der Generator, Traktionsbatterie laden die Ladeeinrichtung, Elektrische Energie verteilen Niedervolt-Bordnetz und Gleichspannungswandler. Antriebsleistung erzeugen Verbrennungsmotor und Traktionsmaschine, Drehmoment übertragen die Antriebswelle, Fahrzeug fortbewegen die Strahlpumpe. Fahrzeug lenken übernehmen Lenkbetätigung und Lenkdüse, Fahrzeug manövrieren Lenkunterstützung bei Gaswegnahme und Umkehrklappe, Fahrzeug verzögern Umkehrklappe und Klappenbetätigung. Fahrereingaben erfassen Bedienelemente und Bremshebel, Fahrerinformationen anzeigen die Anzeigeelemente, Ladung aufnehmen Staufach und Heckplattform, Lasten ziehen die Schleppvorrichtung. Daten übertragen übernimmt der Fahrzeugbus, Fahrzeugzustand überwachen Motorsteuergerät und Diagnose, Fahrzeugposition bestimmen die Navigation. Fahrerzustand überwachen Reißleine und Notstoppschalter, Antriebsleistung begrenzen Notstoppschalter, Selbstkreiseinrichtung und Motorsteuergerät, Löschmittel fördern der Feuerlöscher. Fahrersicht sicherstellen übernimmt der Rückspiegel, Lichtsignale abgeben die Navigationsleuchten, Fahrzeug kenntlich machen die Sichtbarkeitsfontäne. Betriebstemperatur regeln Kühlkreislauf und Batterietemperierung, Rumpf lenzen Lenzeinrichtung und Ablassstopfen, Motorraum belüften die Motorraumbelüftung.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": ["Funktionszuordnung des Modellblocks", "P4", "P6", "P8", "P10", "P12", "P14", "P16", "P17", "P18", "P20", "P22", "P23", "P25"],
+            "schluss": "Jede Funktion ist einem ausführenden System oder einer Komponente zugeordnet."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    }
+  ],
+  "modell": {
+    "elemente": [
+      {"id": "E1", "name": "Jetski", "typ": "gesamtsystem", "eltern_id": null, "absatz_ids": ["P1", "P2", "P26", "P27"]},
+      {"id": "E2", "name": "Fahrzeugstruktur", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P3", "P4", "P26"], "kategorie": "struktur_fahrwerk"},
+      {"id": "E3", "name": "Bootskörper", "typ": "subsystem", "eltern_id": "E2", "absatz_ids": ["P1", "P4", "P28", "P29"]},
+      {"id": "E4", "name": "Rumpf", "typ": "komponente", "eltern_id": "E3", "absatz_ids": ["P4", "P16", "P29"]},
+      {"id": "E5", "name": "Deckschale", "typ": "komponente", "eltern_id": "E3", "absatz_ids": ["P4"]},
+      {"id": "E6", "name": "Motorraum", "typ": "komponente", "eltern_id": "E3", "absatz_ids": ["P4", "P14", "P24", "P25"]},
+      {"id": "E7", "name": "Auftriebskörper", "typ": "komponente", "eltern_id": "E2", "absatz_ids": ["P4", "P28", "P29"]},
+      {"id": "E8", "name": "Festmacheösen", "typ": "komponente", "eltern_id": "E2", "absatz_ids": ["P4", "P29"]},
+      {"id": "E9", "name": "Antriebssystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P5", "P6", "P26"], "kategorie": "antrieb"},
+      {"id": "E10", "name": "Motoreinheit", "typ": "subsystem", "eltern_id": "E9", "absatz_ids": ["P6"]},
+      {"id": "E11", "name": "Verbrennungsmotor", "typ": "komponente", "eltern_id": "E10", "absatz_ids": ["P5", "P6", "P28", "P29"]},
+      {"id": "E12", "name": "Abgasanlage", "typ": "komponente", "eltern_id": "E10", "absatz_ids": ["P5", "P6", "P23"]},
+      {"id": "E13", "name": "Traktionsmaschine", "typ": "komponente", "eltern_id": "E10", "absatz_ids": ["P6", "P20", "P28", "P29"]},
+      {"id": "E14", "name": "Wechselrichter", "typ": "komponente", "eltern_id": "E10", "absatz_ids": ["P6", "P8", "P18", "P28"]},
+      {"id": "E15", "name": "Antriebswelle", "typ": "komponente", "eltern_id": "E9", "absatz_ids": ["P6", "P28", "P29"]},
+      {"id": "E16", "name": "Strahlpumpe", "typ": "subsystem", "eltern_id": "E9", "absatz_ids": ["P5", "P6", "P28", "P29"]},
+      {"id": "E17", "name": "Einlaufgitter", "typ": "komponente", "eltern_id": "E16", "absatz_ids": ["P6", "P16", "P28"]},
+      {"id": "E18", "name": "Impeller", "typ": "komponente", "eltern_id": "E16", "absatz_ids": ["P5", "P6", "P28"]},
+      {"id": "E19", "name": "Leitrad", "typ": "komponente", "eltern_id": "E16", "absatz_ids": ["P6"]},
+      {"id": "E20", "name": "Austrittsdüse", "typ": "komponente", "eltern_id": "E16", "absatz_ids": ["P6", "P10"]},
+      {"id": "E21", "name": "Energieversorgungssystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P7", "P8", "P26"], "kategorie": "energieversorgung"},
+      {"id": "E22", "name": "Kraftstoffanlage", "typ": "subsystem", "eltern_id": "E21", "absatz_ids": ["P7", "P8", "P28"]},
+      {"id": "E23", "name": "Kraftstofftank", "typ": "komponente", "eltern_id": "E22", "absatz_ids": ["P7", "P8", "P29"]},
+      {"id": "E24", "name": "Tankentlüftung", "typ": "komponente", "eltern_id": "E22", "absatz_ids": ["P8"]},
+      {"id": "E25", "name": "Kraftstoffpumpe", "typ": "komponente", "eltern_id": "E22", "absatz_ids": ["P8", "P17", "P20", "P29"]},
+      {"id": "E26", "name": "Bordnetzversorgung", "typ": "subsystem", "eltern_id": "E21", "absatz_ids": ["P8"]},
+      {"id": "E27", "name": "Starterbatterie", "typ": "komponente", "eltern_id": "E26", "absatz_ids": ["P8", "P17", "P29"]},
+      {"id": "E28", "name": "Generator", "typ": "komponente", "eltern_id": "E26", "absatz_ids": ["P8", "P28", "P29"]},
+      {"id": "E29", "name": "Hochvolt-Energiespeicher", "typ": "subsystem", "eltern_id": "E21", "absatz_ids": ["P8"]},
+      {"id": "E30", "name": "Traktionsbatterie", "typ": "komponente", "eltern_id": "E29", "absatz_ids": ["P8", "P23", "P28", "P29"]},
+      {"id": "E31", "name": "Ladeeinrichtung", "typ": "komponente", "eltern_id": "E29", "absatz_ids": ["P2", "P8", "P29"]},
+      {"id": "E32", "name": "Gleichspannungswandler", "typ": "komponente", "eltern_id": "E29", "absatz_ids": ["P8", "P29"]},
+      {"id": "E33", "name": "Lenksystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P9", "P10", "P26"], "kategorie": "lenkung"},
+      {"id": "E34", "name": "Lenkbetätigung", "typ": "subsystem", "eltern_id": "E33", "absatz_ids": ["P10", "P29"]},
+      {"id": "E35", "name": "Lenker", "typ": "komponente", "eltern_id": "E34", "absatz_ids": ["P1", "P9", "P10"]},
+      {"id": "E36", "name": "Lenkseilzug", "typ": "komponente", "eltern_id": "E34", "absatz_ids": ["P10", "P27"]},
+      {"id": "E37", "name": "Lenkdüse", "typ": "komponente", "eltern_id": "E33", "absatz_ids": ["P6", "P9", "P10", "P20", "P28", "P29"]},
+      {"id": "E38", "name": "Lenkunterstützung bei Gaswegnahme", "typ": "komponente", "eltern_id": "E33", "absatz_ids": ["P10", "P18", "P28", "P29"]},
+      {"id": "E39", "name": "Bremssystem", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P11", "P12", "P26"], "kategorie": "bremse"},
+      {"id": "E40", "name": "Umkehrklappe", "typ": "komponente", "eltern_id": "E39", "absatz_ids": ["P6", "P11", "P12", "P28", "P29"]},
+      {"id": "E41", "name": "Klappenbetätigung", "typ": "komponente", "eltern_id": "E39", "absatz_ids": ["P12", "P17", "P28", "P29"]},
+      {"id": "E42", "name": "Bremshebel", "typ": "komponente", "eltern_id": "E39", "absatz_ids": ["P12", "P29"]},
+      {"id": "E43", "name": "Fahrerplatz", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P13", "P14", "P26"], "kategorie": "bedienraum"},
+      {"id": "E44", "name": "Sitz- und Standbereich", "typ": "subsystem", "eltern_id": "E43", "absatz_ids": ["P14"]},
+      {"id": "E45", "name": "Sitzbank", "typ": "komponente", "eltern_id": "E44", "absatz_ids": ["P4", "P14", "P28"]},
+      {"id": "E46", "name": "Trittflächen", "typ": "komponente", "eltern_id": "E44", "absatz_ids": ["P4", "P14"]},
+      {"id": "E47", "name": "Haltegriffe", "typ": "komponente", "eltern_id": "E44", "absatz_ids": ["P14", "P15"]},
+      {"id": "E48", "name": "Bedien- und Anzeigeeinheit", "typ": "subsystem", "eltern_id": "E43", "absatz_ids": ["P14"]},
+      {"id": "E49", "name": "Bedienelemente", "typ": "komponente", "eltern_id": "E48", "absatz_ids": ["P14", "P28", "P29"]},
+      {"id": "E50", "name": "Anzeigeelemente", "typ": "komponente", "eltern_id": "E48", "absatz_ids": ["P14", "P17", "P28", "P29"]},
+      {"id": "E51", "name": "Aufbau und Ladung", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P15", "P16", "P26"], "kategorie": "aufbau_nutzlast"},
+      {"id": "E52", "name": "Staufach", "typ": "komponente", "eltern_id": "E51", "absatz_ids": ["P16", "P29"]},
+      {"id": "E53", "name": "Schleppvorrichtung", "typ": "komponente", "eltern_id": "E51", "absatz_ids": ["P2", "P16", "P28", "P29"]},
+      {"id": "E54", "name": "Heckplattform", "typ": "komponente", "eltern_id": "E51", "absatz_ids": ["P16", "P29"]},
+      {"id": "E55", "name": "Elektrik und Elektronik", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P17", "P26"], "kategorie": "elektrik_elektronik"},
+      {"id": "E56", "name": "Niedervolt-Bordnetz", "typ": "subsystem", "eltern_id": "E55", "absatz_ids": ["P17", "P29"]},
+      {"id": "E57", "name": "Leitungssatz", "typ": "komponente", "eltern_id": "E56", "absatz_ids": ["P17"]},
+      {"id": "E58", "name": "Stromverteiler", "typ": "komponente", "eltern_id": "E56", "absatz_ids": ["P17"]},
+      {"id": "E59", "name": "Sicherungen", "typ": "komponente", "eltern_id": "E56", "absatz_ids": ["P17"]},
+      {"id": "E60", "name": "Fahrzeugbus", "typ": "komponente", "eltern_id": "E55", "absatz_ids": ["P17", "P28", "P29"]},
+      {"id": "E61", "name": "Fahrzeugsteuerung und Information", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P18", "P26"], "kategorie": "steuerung_information"},
+      {"id": "E62", "name": "Motorsteuergerät", "typ": "komponente", "eltern_id": "E61", "absatz_ids": ["P10", "P12", "P17", "P18", "P20", "P28", "P29"]},
+      {"id": "E63", "name": "Diagnose", "typ": "komponente", "eltern_id": "E61", "absatz_ids": ["P18", "P29"]},
+      {"id": "E64", "name": "Navigation", "typ": "komponente", "eltern_id": "E61", "absatz_ids": ["P18", "P29"]},
+      {"id": "E65", "name": "Fahrerassistenz und Sicherheit", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P19", "P20", "P26"], "kategorie": "assistenz_sicherheit"},
+      {"id": "E66", "name": "Abschalteinrichtung", "typ": "subsystem", "eltern_id": "E65", "absatz_ids": ["P20", "P27"]},
+      {"id": "E67", "name": "Notstoppschalter", "typ": "komponente", "eltern_id": "E66", "absatz_ids": ["P20", "P27", "P28", "P29"]},
+      {"id": "E68", "name": "Reißleine", "typ": "komponente", "eltern_id": "E66", "absatz_ids": ["P19", "P20", "P29"]},
+      {"id": "E69", "name": "Selbstkreiseinrichtung", "typ": "komponente", "eltern_id": "E65", "absatz_ids": ["P20", "P29"]},
+      {"id": "E70", "name": "Feuerlöscher", "typ": "komponente", "eltern_id": "E65", "absatz_ids": ["P19", "P20", "P29"]},
+      {"id": "E71", "name": "Beleuchtung und Sicht", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P21", "P22", "P26"], "kategorie": "beleuchtung_sicht"},
+      {"id": "E72", "name": "Rückspiegel", "typ": "komponente", "eltern_id": "E71", "absatz_ids": ["P22", "P29"]},
+      {"id": "E73", "name": "Navigationsleuchten", "typ": "komponente", "eltern_id": "E71", "absatz_ids": ["P22", "P29"]},
+      {"id": "E74", "name": "Sichtbarkeitsfontäne", "typ": "komponente", "eltern_id": "E71", "absatz_ids": ["P22", "P28", "P29"]},
+      {"id": "E75", "name": "Thermomanagement", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P23", "P26"], "kategorie": "thermomanagement"},
+      {"id": "E76", "name": "Kühlkreislauf", "typ": "subsystem", "eltern_id": "E75", "absatz_ids": ["P23", "P28", "P29"]},
+      {"id": "E77", "name": "Kühlwasserentnahme", "typ": "komponente", "eltern_id": "E76", "absatz_ids": ["P23"]},
+      {"id": "E78", "name": "Kühlwasserleitungen", "typ": "komponente", "eltern_id": "E76", "absatz_ids": ["P23"]},
+      {"id": "E79", "name": "Kühlmittelpumpe", "typ": "komponente", "eltern_id": "E76", "absatz_ids": ["P23"]},
+      {"id": "E80", "name": "Wärmetauscher", "typ": "komponente", "eltern_id": "E76", "absatz_ids": ["P23"]},
+      {"id": "E81", "name": "Batterietemperierung", "typ": "komponente", "eltern_id": "E75", "absatz_ids": ["P23", "P29"]},
+      {"id": "E82", "name": "Neben- und Versorgungssysteme", "typ": "hauptsystem", "eltern_id": "E1", "absatz_ids": ["P24", "P25", "P26"], "kategorie": "nebensysteme"},
+      {"id": "E83", "name": "Lenzeinrichtung", "typ": "komponente", "eltern_id": "E82", "absatz_ids": ["P25", "P28", "P29"]},
+      {"id": "E84", "name": "Motorraumbelüftung", "typ": "komponente", "eltern_id": "E82", "absatz_ids": ["P25", "P29"]},
+      {"id": "E85", "name": "Ablassstopfen", "typ": "komponente", "eltern_id": "E82", "absatz_ids": ["P24", "P25", "P29"]}
+    ],
+    "funktionen": [
+      {"id": "F1", "name": "Fahrzeuglasten tragen", "ausgefuehrt_von": ["E3", "E4"], "absatz_ids": ["P4", "P29"]},
+      {"id": "F2", "name": "Auftrieb bereitstellen", "ausgefuehrt_von": ["E7", "E4"], "absatz_ids": ["P3", "P4", "P29"]},
+      {"id": "F3", "name": "Fahrzeug festhalten", "ausgefuehrt_von": ["E8"], "absatz_ids": ["P4", "P12", "P29"]},
+      {"id": "F4", "name": "Energie speichern", "ausgefuehrt_von": ["E23", "E27", "E30"], "absatz_ids": ["P8", "P29"]},
+      {"id": "F5", "name": "Treibstoff fördern", "ausgefuehrt_von": ["E25"], "absatz_ids": ["P8", "P29"]},
+      {"id": "F6", "name": "Elektrische Energie erzeugen", "ausgefuehrt_von": ["E28"], "absatz_ids": ["P8", "P29"]},
+      {"id": "F7", "name": "Traktionsbatterie laden", "ausgefuehrt_von": ["E31"], "absatz_ids": ["P8", "P29"]},
+      {"id": "F8", "name": "Elektrische Energie verteilen", "ausgefuehrt_von": ["E56", "E32"], "absatz_ids": ["P8", "P17", "P29"]},
+      {"id": "F9", "name": "Antriebsleistung erzeugen", "ausgefuehrt_von": ["E11", "E13"], "absatz_ids": ["P5", "P6", "P29"]},
+      {"id": "F10", "name": "Drehmoment übertragen", "ausgefuehrt_von": ["E15"], "absatz_ids": ["P6", "P29"]},
+      {"id": "F11", "name": "Fahrzeug fortbewegen", "ausgefuehrt_von": ["E16"], "absatz_ids": ["P5", "P6", "P29"]},
+      {"id": "F12", "name": "Fahrzeug lenken", "ausgefuehrt_von": ["E34", "E37"], "absatz_ids": ["P9", "P10", "P29"]},
+      {"id": "F13", "name": "Fahrzeug manövrieren", "ausgefuehrt_von": ["E38", "E40"], "absatz_ids": ["P10", "P11", "P29"]},
+      {"id": "F14", "name": "Fahrzeug verzögern", "ausgefuehrt_von": ["E40", "E41"], "absatz_ids": ["P11", "P12", "P29"]},
+      {"id": "F15", "name": "Fahrereingaben erfassen", "ausgefuehrt_von": ["E49", "E42"], "absatz_ids": ["P12", "P14", "P29"]},
+      {"id": "F16", "name": "Fahrerinformationen anzeigen", "ausgefuehrt_von": ["E50"], "absatz_ids": ["P14", "P29"]},
+      {"id": "F17", "name": "Ladung aufnehmen", "ausgefuehrt_von": ["E52", "E54"], "absatz_ids": ["P15", "P16", "P29"]},
+      {"id": "F18", "name": "Lasten ziehen", "ausgefuehrt_von": ["E53"], "absatz_ids": ["P15", "P16", "P29"]},
+      {"id": "F19", "name": "Daten übertragen", "ausgefuehrt_von": ["E60"], "absatz_ids": ["P17", "P29"]},
+      {"id": "F20", "name": "Fahrzeugzustand überwachen", "ausgefuehrt_von": ["E62", "E63"], "absatz_ids": ["P18", "P29"]},
+      {"id": "F21", "name": "Fahrzeugposition bestimmen", "ausgefuehrt_von": ["E64"], "absatz_ids": ["P18", "P29"]},
+      {"id": "F22", "name": "Fahrerzustand überwachen", "ausgefuehrt_von": ["E68", "E67"], "absatz_ids": ["P19", "P20", "P29"]},
+      {"id": "F23", "name": "Antriebsleistung begrenzen", "ausgefuehrt_von": ["E67", "E69", "E62"], "absatz_ids": ["P18", "P20", "P29"]},
+      {"id": "F24", "name": "Löschmittel fördern", "ausgefuehrt_von": ["E70"], "absatz_ids": ["P19", "P20", "P29"]},
+      {"id": "F25", "name": "Fahrersicht sicherstellen", "ausgefuehrt_von": ["E72"], "absatz_ids": ["P21", "P22", "P29"]},
+      {"id": "F26", "name": "Lichtsignale abgeben", "ausgefuehrt_von": ["E73"], "absatz_ids": ["P21", "P22", "P29"]},
+      {"id": "F27", "name": "Fahrzeug kenntlich machen", "ausgefuehrt_von": ["E74"], "absatz_ids": ["P21", "P22", "P29"]},
+      {"id": "F28", "name": "Betriebstemperatur regeln", "ausgefuehrt_von": ["E76", "E81"], "absatz_ids": ["P23", "P29"]},
+      {"id": "F29", "name": "Rumpf lenzen", "ausgefuehrt_von": ["E83", "E85"], "absatz_ids": ["P24", "P25", "P29"]},
+      {"id": "F30", "name": "Motorraum belüften", "ausgefuehrt_von": ["E84"], "absatz_ids": ["P24", "P25", "P29"]}
+    ],
+    "fluesse": [
+      {"id": "S1", "von": "E23", "nach": "E25", "art": "stoff", "medium": "Kraftstoff", "absatz_ids": ["P8"]},
+      {"id": "S2", "von": "E25", "nach": "E11", "art": "stoff", "medium": "Kraftstoff", "absatz_ids": ["P8", "P28"], "schnittstelle": "Kraftstoffanschluss Verbrennungsmotor"},
+      {"id": "S3", "von": "E11", "nach": "E15", "art": "mechanisch", "medium": "Drehmoment", "absatz_ids": ["P6", "P28"]},
+      {"id": "S4", "von": "E13", "nach": "E15", "art": "mechanisch", "medium": "Drehmoment", "absatz_ids": ["P6"]},
+      {"id": "S5", "von": "E15", "nach": "E18", "art": "mechanisch", "medium": "Drehmoment", "absatz_ids": ["P6", "P28"]},
+      {"id": "S6", "von": "E17", "nach": "E18", "art": "stoff", "medium": "Wasser", "absatz_ids": ["P6", "P28"]},
+      {"id": "S7", "von": "E20", "nach": "E37", "art": "stoff", "medium": "Wasserstrahl", "absatz_ids": ["P6", "P10", "P28"], "schnittstelle": "Düsenanschluss Strahlpumpe–Lenkdüse"},
+      {"id": "S8", "von": "E37", "nach": "E40", "art": "stoff", "medium": "Wasserstrahl", "absatz_ids": ["P6", "P11", "P28"], "schnittstelle": "Strahlaustritt Lenkdüse–Umkehrklappe"},
+      {"id": "S9", "von": "E36", "nach": "E37", "art": "mechanisch", "medium": "Lenkbewegung", "absatz_ids": ["P10"]},
+      {"id": "S10", "von": "E35", "nach": "E36", "art": "mechanisch", "medium": "Lenkeinschlag", "absatz_ids": ["P10"]},
+      {"id": "S11", "von": "E42", "nach": "E41", "art": "mechanisch", "medium": "Hebelweg", "absatz_ids": ["P12"]},
+      {"id": "S12", "von": "E41", "nach": "E40", "art": "mechanisch", "medium": "Stellbewegung", "absatz_ids": ["P12"]},
+      {"id": "S13", "von": "E30", "nach": "E14", "art": "elektrisch", "medium": "Hochvolt-Gleichstrom", "absatz_ids": ["P8", "P28"], "schnittstelle": "Hochvoltanschluss Wechselrichter"},
+      {"id": "S14", "von": "E14", "nach": "E13", "art": "elektrisch", "medium": "Drehstrom", "absatz_ids": ["P6", "P28"]},
+      {"id": "S15", "von": "E31", "nach": "E30", "art": "elektrisch", "medium": "Ladestrom", "absatz_ids": ["P8"]},
+      {"id": "S16", "von": "E11", "nach": "E28", "art": "mechanisch", "medium": "Drehmoment", "absatz_ids": ["P8", "P28"], "schnittstelle": "Generatorantrieb am Verbrennungsmotor"},
+      {"id": "S17", "von": "E28", "nach": "E27", "art": "elektrisch", "medium": "Ladestrom", "absatz_ids": ["P8"]},
+      {"id": "S18", "von": "E27", "nach": "E58", "art": "elektrisch", "medium": "Niedervolt-Gleichstrom", "absatz_ids": ["P17"], "schnittstelle": "Batterieanschluss Bordnetz"},
+      {"id": "S19", "von": "E32", "nach": "E58", "art": "elektrisch", "medium": "Niedervolt-Gleichstrom", "absatz_ids": ["P8"], "schnittstelle": "Ausgang Gleichspannungswandler–Bordnetz"},
+      {"id": "S20", "von": "E58", "nach": "E25", "art": "elektrisch", "medium": "Niedervolt-Gleichstrom", "absatz_ids": ["P17"], "schnittstelle": "Versorgung Kraftstoffpumpe"},
+      {"id": "S21", "von": "E58", "nach": "E62", "art": "elektrisch", "medium": "Niedervolt-Gleichstrom", "absatz_ids": ["P17"], "schnittstelle": "Versorgung Motorsteuergerät"},
+      {"id": "S22", "von": "E49", "nach": "E62", "art": "information", "medium": "Gashebelstellung", "absatz_ids": ["P14", "P18", "P28"], "schnittstelle": "Gashebelsignal"},
+      {"id": "S23", "von": "E62", "nach": "E11", "art": "information", "medium": "Drosselklappen-, Einspritz- und Zündsignale", "absatz_ids": ["P18", "P28"], "schnittstelle": "Motoransteuerung"},
+      {"id": "S24", "von": "E62", "nach": "E60", "art": "information", "medium": "Betriebsdaten", "absatz_ids": ["P17", "P28"], "schnittstelle": "Busanschluss Motorsteuergerät"},
+      {"id": "S25", "von": "E60", "nach": "E50", "art": "information", "medium": "Anzeigedaten", "absatz_ids": ["P17", "P28"], "schnittstelle": "Busanschluss Anzeigeelemente"},
+      {"id": "S26", "von": "E62", "nach": "E41", "art": "information", "medium": "Stellsignal", "absatz_ids": ["P12", "P28"], "schnittstelle": "Stellsignal Klappenbetätigung"},
+      {"id": "S27", "von": "E38", "nach": "E62", "art": "information", "medium": "Drehzahlanforderung", "absatz_ids": ["P10", "P28"], "schnittstelle": "Drehzahlanforderung Lenkunterstützung"},
+      {"id": "S28", "von": "E68", "nach": "E67", "art": "mechanisch", "medium": "Zugkraft beim Abziehen", "absatz_ids": ["P19", "P20"]},
+      {"id": "S29", "von": "E67", "nach": "E62", "art": "information", "medium": "Abschaltsignal", "absatz_ids": ["P20", "P28"], "schnittstelle": "Notstoppkontakt"},
+      {"id": "S30", "von": "E16", "nach": "E77", "art": "stoff", "medium": "Kühlwasser", "absatz_ids": ["P23", "P28"], "schnittstelle": "Kühlwasseranschluss Pumpengehäuse"},
+      {"id": "S31", "von": "E77", "nach": "E78", "art": "stoff", "medium": "Kühlwasser", "absatz_ids": ["P23"]},
+      {"id": "S32", "von": "E11", "nach": "E78", "art": "thermisch", "medium": "Verlustwärme", "absatz_ids": ["P23"], "schnittstelle": "Kühlmantel Verbrennungsmotor"},
+      {"id": "S33", "von": "E78", "nach": "E12", "art": "stoff", "medium": "Kühlwasser", "absatz_ids": ["P23"], "schnittstelle": "Kühlwassereinleitung Abgasanlage"},
+      {"id": "S34", "von": "E81", "nach": "E30", "art": "thermisch", "medium": "Wärme oder Kälte", "absatz_ids": ["P23"], "schnittstelle": "Temperieranschluss Traktionsbatterie"},
+      {"id": "S35", "von": "E11", "nach": "E12", "art": "stoff", "medium": "Abgas", "absatz_ids": ["P5", "P6"]},
+      {"id": "S36", "von": "E83", "nach": "E16", "art": "stoff", "medium": "Leckwasser", "absatz_ids": ["P25", "P28"], "schnittstelle": "Lenzanschluss Strahlpumpe"},
+      {"id": "S37", "von": "E84", "nach": "E6", "art": "stoff", "medium": "Luft", "absatz_ids": ["P25"], "schnittstelle": "Luftkanal Motorraum"},
+      {"id": "S38", "von": "E53", "nach": "E4", "art": "mechanisch", "medium": "Zugkraft", "absatz_ids": ["P16", "P28"], "schnittstelle": "Befestigung Schleppvorrichtung am Rumpf"},
+      {"id": "S39", "von": "E45", "nach": "E5", "art": "mechanisch", "medium": "Gewichtskraft", "absatz_ids": ["P4", "P28"], "schnittstelle": "Sitzbankaufnahme Deckschale"},
+      {"id": "S40", "von": "E7", "nach": "E3", "art": "mechanisch", "medium": "Auftriebskraft", "absatz_ids": ["P4", "P28"]},
+      {"id": "S41", "von": "E16", "nach": "E74", "art": "stoff", "medium": "Wasser", "absatz_ids": ["P22", "P28"], "schnittstelle": "Fontänenauslass Strahlpumpe"},
+      {"id": "S42", "von": "E58", "nach": "E73", "art": "elektrisch", "medium": "Niedervolt-Gleichstrom", "absatz_ids": ["P22"], "schnittstelle": "Leuchtenanschluss Bordnetz"},
+      {"id": "S43", "von": "E70", "nach": "E6", "art": "stoff", "medium": "Löschmittel", "absatz_ids": ["P20"], "schnittstelle": "Löschzugang Motorraum"},
+      {"id": "S44", "von": "E62", "nach": "E63", "art": "information", "medium": "Fehler- und Betriebsdaten", "absatz_ids": ["P18"]},
+      {"id": "S45", "von": "E64", "nach": "E50", "art": "information", "medium": "Positionsdaten", "absatz_ids": ["P18"], "schnittstelle": "Navigationsanzeige"}
+    ],
+    "entfallene_kategorien": [],
+    "varianten": [
+      {
+        "id": "V1",
+        "element_id": "E9",
+        "bezeichnung": "Antriebsart",
+        "alternativen": ["Viertakt-Ottomotor", "Zweitakt-Ottomotor", "Elektrischer Antrieb mit Traktionsbatterie"],
+        "auswahlkriterien": ["Abgas- und Geräuschemission", "Befahrensbeschränkungen im Einsatzgebiet", "Einsatzdauer und Aufwand für Nachtanken oder Nachladen", "Masse und Schwerpunkt", "Kosten und Komplexität"],
+        "auswirkungen": [
+          {"element_id": "E22", "beschreibung": "Kraftstoffanlage entfällt beim elektrischen Antrieb."},
+          {"element_id": "E29", "beschreibung": "Hochvolt-Energiespeicher mit Traktionsbatterie, Ladeeinrichtung und Gleichspannungswandler kommt beim elektrischen Antrieb hinzu."},
+          {"element_id": "E12", "beschreibung": "Abgasanlage entfällt beim elektrischen Antrieb."},
+          {"element_id": "E14", "beschreibung": "Wechselrichter kommt beim elektrischen Antrieb hinzu."},
+          {"element_id": "E28", "beschreibung": "Generator entfällt beim elektrischen Antrieb, der Gleichspannungswandler versorgt das Bordnetz."},
+          {"element_id": "E81", "beschreibung": "Batterietemperierung kommt beim elektrischen Antrieb hinzu."},
+          {"element_id": "E76", "beschreibung": "Abgaskühlung entfällt, gekühlt werden Wechselrichter und Traktionsmaschine."},
+          {"element_id": "E62", "beschreibung": "Motorsteuergerät gibt beim elektrischen Antrieb eine Momentvorgabe an den Wechselrichter."},
+          {"element_id": "E7", "beschreibung": "Auftriebskörper müssen an Masse und Lage der Traktionsbatterie angepasst werden."}
+        ],
+        "absatz_ids": ["P5", "P6", "P8", "P23"]
+      },
+      {
+        "id": "V2",
+        "element_id": "E43",
+        "bezeichnung": "Bauform",
+        "alternativen": ["Sitzer (Runabout) für mehrere Personen", "Steher für eine stehende Person"],
+        "auswahlkriterien": ["Personenzahl", "Einsatzzweck Freizeit, Wettbewerb, Angeln oder Rettung", "Fahrkönnen der Zielgruppe"],
+        "auswirkungen": [
+          {"element_id": "E3", "beschreibung": "Bootskörper ist beim Steher kürzer und schmaler, beim Mehrsitzer größer."},
+          {"element_id": "E45", "beschreibung": "Sitzbank und Mitfahrerplätze entfallen beim Steher."},
+          {"element_id": "E7", "beschreibung": "Auftriebsvolumen richtet sich nach Personenzahl und Zuladung."},
+          {"element_id": "E54", "beschreibung": "Heckplattform und Einsatzausstattung nur beim Sitzer sinnvoll."}
+        ],
+        "absatz_ids": ["P4", "P13", "P14"]
+      },
+      {
+        "id": "V3",
+        "element_id": "E65",
+        "bezeichnung": "Sicherung bei Fahrerverlust",
+        "alternativen": ["Automatische Abschaltung über Notstoppschalter und Reißleine", "Selbstkreiseinrichtung mit langsamer Kreisfahrt"],
+        "auswahlkriterien": ["Vorgaben im Einsatzgebiet", "Gefährdung der gestürzten Person", "Erreichbarkeit des Fahrzeugs beim Wiederaufstieg"],
+        "auswirkungen": [
+          {"element_id": "E62", "beschreibung": "Abschalt- oder Leerlauflogik im Motorsteuergerät."},
+          {"element_id": "E37", "beschreibung": "Lenkdüse wird bei Selbstkreisfahrt eingeschlagen gehalten."},
+          {"element_id": "E25", "beschreibung": "Kraftstoffpumpe wird bei Abschaltung mit unterbrochen."},
+          {"element_id": "E13", "beschreibung": "Traktionsmaschine wird beim elektrischen Antrieb momentenfrei geschaltet."}
+        ],
+        "absatz_ids": ["P19", "P20"]
+      },
+      {
+        "id": "V4",
+        "element_id": "E39",
+        "bezeichnung": "Ausführung von Schubumkehr und Bremse",
+        "alternativen": ["Ohne Umkehrklappe", "Seilzugbetätigte Umkehrklappe", "Elektrisch gestellte Umkehrklappe mit Bremsfunktion"],
+        "auswahlkriterien": ["Anhalteweg und Ausweichfähigkeit", "Rangieren an Steg und Slipanlage", "Kosten und Komplexität"],
+        "auswirkungen": [
+          {"element_id": "E62", "beschreibung": "Motorsteuergerät steuert bei elektrischer Ausführung Klappe und Drehzahl gemeinsam an."},
+          {"element_id": "E60", "beschreibung": "Fahrzeugbus überträgt Stellsignale an die Klappenbetätigung."},
+          {"element_id": "E49", "beschreibung": "Bedienelemente erhalten einen Brems- und Rückwärtshebel oder entfallen hierfür."},
+          {"element_id": "E37", "beschreibung": "Lagerung der Umkehrklappe an Lenkdüse oder Pumpengehäuse."},
+          {"element_id": "E58", "beschreibung": "Stromverteiler versorgt den elektrischen Stellantrieb."}
+        ],
+        "absatz_ids": ["P11", "P12"]
+      },
+      {
+        "id": "V5",
+        "element_id": "E33",
+        "bezeichnung": "Lenkunterstützung bei Gaswegnahme",
+        "alternativen": ["Ohne Lenkunterstützung bei Gaswegnahme", "Mit Lenkunterstützung bei Gaswegnahme"],
+        "auswahlkriterien": ["Zielgruppe mit ungeübten Fahrern", "Ausweichfähigkeit bei Gaswegnahme", "Regelungsaufwand"],
+        "auswirkungen": [
+          {"element_id": "E62", "beschreibung": "Motorsteuergerät setzt Drehzahlanforderungen der Lenkunterstützung um."},
+          {"element_id": "E49", "beschreibung": "Gashebelstellung muss elektrisch erfasst werden."},
+          {"element_id": "E60", "beschreibung": "Fahrzeugbus überträgt Lenkeinschlag und Drehzahlanforderung."}
+        ],
+        "absatz_ids": ["P9", "P10"]
+      },
+      {
+        "id": "V6",
+        "element_id": "E75",
+        "bezeichnung": "Bauart des Kühlkreislaufs",
+        "alternativen": ["Offener Kühlkreislauf mit Außenwasser", "Geschlossener Kühlkreislauf mit Kühlmittelpumpe und Wärmetauscher"],
+        "auswahlkriterien": ["Betrieb in Salz- oder Süßwasser", "Wartungsaufwand und Korrosion", "Masse und Bauraum"],
+        "auswirkungen": [
+          {"element_id": "E11", "beschreibung": "Kühlmantel des Verbrennungsmotors führt Außenwasser oder Kühlmittel."},
+          {"element_id": "E12", "beschreibung": "Abgasanlage wird weiter mit Außenwasser gekühlt."},
+          {"element_id": "E4", "beschreibung": "Rumpf oder Pumpenstrom nimmt den Wärmetauscher auf."}
+        ],
+        "absatz_ids": ["P23"]
+      },
+      {
+        "id": "V7",
+        "element_id": "E51",
+        "bezeichnung": "Einsatzausstattung",
+        "alternativen": ["Freizeit mit Schleppvorrichtung", "Angeln mit Heckplattform, Kühlbox und Navigation", "Rettung mit Rettungsbrett und Staubox"],
+        "auswahlkriterien": ["Einsatzzweck", "Zuladung und Personenzahl", "Ausrüstung der Einsatzorganisation"],
+        "auswirkungen": [
+          {"element_id": "E7", "beschreibung": "Auftriebsbedarf steigt mit Ausstattung und Zuladung."},
+          {"element_id": "E64", "beschreibung": "Navigation mit Fischfinder bei Angelausstattung."},
+          {"element_id": "E45", "beschreibung": "Sitzbank für seitliche Sitzposition beim Angeln."},
+          {"element_id": "E52", "beschreibung": "Staufach als Staubox für medizinische Ausrüstung beim Rettungseinsatz."}
+        ],
+        "absatz_ids": ["P15", "P16"]
+      }
+    ],
+    "klaerungsfragen": [
+      {"id": "K1", "frage": "Soll der Jetski mit Viertaktmotor, Zweitaktmotor oder elektrischem Antrieb ausgeführt werden?", "element_ids": ["E9", "E21"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Energiespeicher, Abgasanlage, Kühlung und Bordnetzversorgung ab.", "variante_ids": ["V1"]},
+      {"id": "K2", "frage": "Wird ein Sitzer für mehrere Personen oder ein Steher für eine Person benötigt?", "element_ids": ["E43", "E3"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Größe des Bootskörpers, Auftriebsvolumen und Fahrerplatz ab.", "variante_ids": ["V2"]},
+      {"id": "K3", "frage": "Soll das Fahrzeug bei Fahrerverlust abschalten oder langsam weiterkreisen?", "element_ids": ["E65", "E62"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Abschalteinrichtung, Steuerlogik und Lenkdüsenstellung ab.", "variante_ids": ["V3"]},
+      {"id": "K4", "frage": "Wird eine Rückwärtsfahrt mit Bremsfunktion verlangt, und soll die Umkehrklappe mechanisch oder elektrisch betätigt werden?", "element_ids": ["E39", "E41"], "anlass": "anforderung", "relevanz": "Davon hängen Bedienelemente, Stellantrieb, Busanbindung und Anhalteweg ab.", "variante_ids": ["V4"]},
+      {"id": "K5", "frage": "Muss der Jetski auch bei geschlossenem Gashebel lenkbar bleiben?", "element_ids": ["E33", "E38"], "anlass": "anforderung", "relevanz": "Davon hängt ab, ob eine Lenkunterstützung bei Gaswegnahme mit elektrischer Gaserfassung vorzusehen ist.", "variante_ids": ["V5"]},
+      {"id": "K6", "frage": "Wird der Jetski überwiegend in Salzwasser oder in Süßwasser betrieben?", "element_ids": ["E75", "E76"], "anlass": "betrieb", "relevanz": "Davon hängt die Wahl zwischen offenem und geschlossenem Kühlkreislauf ab.", "variante_ids": ["V6"]},
+      {"id": "K7", "frage": "Für welchen Einsatz wird der Jetski ausgestattet: Freizeit mit Schleppbetrieb, Angeln oder Wasserrettung?", "element_ids": ["E51", "E54"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Heckplattform, Staufach, Navigation und Auftriebsbedarf ab.", "variante_ids": ["V7"]},
+      {"id": "K8", "frage": "Für welche Wellenbedingungen und welche Höchstlast muss der Bootskörper ausgelegt werden?", "element_ids": ["E2", "E3"], "anlass": "anforderung", "relevanz": "Davon hängen Entwurfskategorie, Festigkeit und Auftriebsvolumen ab."},
+      {"id": "K9", "frage": "Welche Einsatzdauer muss ohne Nachtanken oder Nachladen erreicht werden?", "element_ids": ["E21", "E23", "E30"], "anlass": "anforderung", "relevanz": "Davon hängen Tankvolumen oder Batteriekapazität und damit Masse und Bauraum ab.", "variante_ids": ["V1"]},
+      {"id": "K10", "frage": "Müssen Steuergeräte und Steckverbinder kurzzeitiges Untertauchen beim Kentern überstehen, oder genügt Spritzwasserschutz?", "element_ids": ["E55", "E58"], "anlass": "anforderung", "relevanz": "Davon hängen Schutzart, Gehäuse und Leitungsführung ab."},
+      {"id": "K11", "frage": "Soll eine vom Halter einstellbare Leistungsbegrenzung, etwa für Vermietung oder Anfänger, vorgesehen werden?", "element_ids": ["E61", "E62"], "anlass": "architekturentscheidung", "relevanz": "Davon hängen Betriebsarten des Motorsteuergeräts und Bedienelemente ab."},
+      {"id": "K12", "frage": "Soll der Jetski auch bei Dämmerung oder Dunkelheit betrieben werden dürfen?", "element_ids": ["E71", "E73"], "anlass": "betrieb", "relevanz": "Davon hängt ab, ob Navigationsleuchten und ihre Bordnetzversorgung vorzusehen sind."},
+      {"id": "K13", "frage": "Muss die Lenzeinrichtung auch bei stehendem Motor Leckwasser abführen?", "element_ids": ["E82", "E83"], "anlass": "anforderung", "relevanz": "Davon hängt ab, ob eine elektrische Lenzpumpe statt einer vom Pumpendruck betriebenen Lenzeinrichtung nötig ist."},
+      {"id": "K14", "frage": "In welchen Gewässern, mit welcher Mindestwassertiefe und welchem Treibgut soll der Jetski fahren?", "element_ids": ["E9", "E17"], "anlass": "betrieb", "relevanz": "Davon hängen Einlaufgitter, Schutz des Impellers und zulässige Einsatzgebiete ab."}
+    ],
+    "anforderungsthemen": [
+      {"id": "R1", "element_ids": ["E1"], "thema": "Einstufung als Wassermotorrad", "kenngroessen": ["Rumpflänge", "Hauptantriebsart", "Fahrerposition"], "regelwerke": [
+        {"bezeichnung": "Richtlinie 2013/53/EU (EU, Sport- und Freizeitwasserfahrzeuge): Begriff Wassermotorrad", "quellen_id": "Q5", "fundstelle": "Artikel 3 Nummer 3"},
+        {"bezeichnung": "40 CFR Part 1045 (USA, Ottomotoren in Wasserfahrzeugen): Definition Personal watercraft", "quellen_id": "Q6", "fundstelle": "§ 1045.801, Definition „Personal watercraft“"}
+      ]},
+      {"id": "R2", "element_ids": ["E2", "E3", "E7"], "thema": "Festigkeit, Auftrieb und Schwimmfähigkeit", "kenngroessen": ["Entwurfskategorie", "Höchstlast", "Restauftrieb im überfluteten Zustand", "Aufrichtbarkeit"], "regelwerke": [
+        {"bezeichnung": "Richtlinie 2013/53/EU (EU): Entwurfskategorien, Bauweise, Auftrieb und Schwimmfähigkeit", "quellen_id": "Q5", "fundstelle": "Anhang I Teil A Nummern 1, 3.1 und 3.3"}
+      ]},
+      {"id": "R3", "element_ids": ["E9", "E11", "E12"], "thema": "Abgasemission", "kenngroessen": ["Kohlenmonoxidemission", "Kohlenwasserstoff- und Stickoxidemission", "Motornennleistung"], "regelwerke": [
+        {"bezeichnung": "Richtlinie 2013/53/EU (EU): Abgasgrenzwerte für Wassermotorrad-Motoren", "quellen_id": "Q5", "fundstelle": "Anhang I Teil B Nummer 2.2, Tabelle 3"},
+        {"bezeichnung": "40 CFR Part 1045 (USA, ab Modelljahr 2010): Abgasgrenzwerte für Außenbord- und Jetski-Motoren", "quellen_id": "Q7", "fundstelle": "§ 1045.103 Absatz (a), Table 1"}
+      ]},
+      {"id": "R4", "element_ids": ["E9", "E12"], "thema": "Geräuschemission", "kenngroessen": ["Maximaler Schalldruckpegel", "Motornennleistung"], "regelwerke": [
+        {"bezeichnung": "Richtlinie 2013/53/EU (EU): Geräuschgrenzwerte für Wassermotorrad-Motoren", "quellen_id": "Q5", "fundstelle": "Anhang I Teil C Nummer 1.1"}
+      ]},
+      {"id": "R5", "element_ids": ["E21", "E22", "E27"], "thema": "Brand- und Explosionsschutz von Kraftstoffanlage und Batterie", "kenngroessen": ["Dichtheit bei Rollen und Überschlag", "Tankvolumen", "Belüftung der Batterie"], "regelwerke": [
+        {"bezeichnung": "Richtlinie 2013/53/EU (EU): Kraftstoffsystem und elektrisches System", "quellen_id": "Q5", "fundstelle": "Anhang I Teil A Nummern 5.2 und 5.3"},
+        {"bezeichnung": "SAE J2046 (USA, freiwillige Industrieempfehlung): Kraftstoffanlagen von Jetskis", "quellen_id": "Q8", "fundstelle": "Kapitel 5, Abschnitt „Industry Standards“, S. 52–53"}
+      ]},
+      {"id": "R6", "element_ids": ["E33", "E37", "E38"], "thema": "Manövrierfähigkeit und Lenken bei Gaswegnahme", "kenngroessen": ["Wendekreis", "Lenkwirkung bei geschlossenem Gashebel", "Ausweichweg"], "regelwerke": [
+        {"bezeichnung": "Richtlinie 2013/53/EU (EU): Manövrierfähigkeit und Steuerungssystem", "quellen_id": "Q5", "fundstelle": "Anhang I Teil A Nummern 1 und 5.4.1"}
+      ]},
+      {"id": "R7", "element_ids": ["E39", "E40"], "thema": "Verzögerung und Rückwärtsfahrt", "kenngroessen": ["Anhalteweg", "Rückwärtsschub", "Stellzeit der Umkehrklappe"]},
+      {"id": "R8", "element_ids": ["E43", "E44"], "thema": "Personenzahl und Wiedereinstieg", "kenngroessen": ["Zulässige Personenzahl", "Wiedereinstiegshöhe", "Lage der Haltegriffe"], "regelwerke": [
+        {"bezeichnung": "Richtlinie 2013/53/EU (EU): Herstellerplakette mit Personenzahl, Schutz vor Überbordfallen und Wiedereinstieg", "quellen_id": "Q5", "fundstelle": "Anhang I Teil A Nummern 2.2 und 2.3"}
+      ]},
+      {"id": "R9", "element_ids": ["E51", "E53", "E8"], "thema": "Zuladung und Schleppbetrieb", "kenngroessen": ["Höchstlast", "Schleppzugkraft", "Stauvolumen"], "regelwerke": [
+        {"bezeichnung": "Richtlinie 2013/53/EU (EU): Höchstlast sowie Ankern, Vertäuen und Schleppen", "quellen_id": "Q5", "fundstelle": "Anhang I Teil A Nummern 3.6 und 3.9"}
+      ]},
+      {"id": "R10", "element_ids": ["E55", "E56"], "thema": "Elektrische Sicherheit und Wasserdichtheit", "kenngroessen": ["Schutzart", "Überlastschutz", "Störfreiheit der Stromkreise"], "regelwerke": [
+        {"bezeichnung": "Richtlinie 2013/53/EU (EU): Elektrisches System", "quellen_id": "Q5", "fundstelle": "Anhang I Teil A Nummer 5.3"}
+      ]},
+      {"id": "R11", "element_ids": ["E61", "E62", "E63"], "thema": "Diagnose und Betriebsdatenerfassung", "kenngroessen": ["Fehlerspeicher", "Betriebsstundenzähler", "Auslesbarkeit"]},
+      {"id": "R12", "element_ids": ["E65", "E66", "E69"], "thema": "Sicherung bei Fahrerverlust", "kenngroessen": ["Abschaltzeit", "Kreisdurchmesser", "Kreisgeschwindigkeit", "Länge der Reißleine"], "regelwerke": [
+        {"bezeichnung": "Richtlinie 2013/53/EU (EU): Führerlose Wassermotorräder", "quellen_id": "Q5", "fundstelle": "Anhang I Teil A Nummer 5.1.5"}
+      ]},
+      {"id": "R13", "element_ids": ["E71", "E73", "E74"], "thema": "Erkennbarkeit und Lichterführung", "kenngroessen": ["Sichtweite der Leuchten", "Betriebszeitraum", "Höhe der Sichtbarkeitsfontäne"], "regelwerke": [
+        {"bezeichnung": "Richtlinie 2013/53/EU (EU): Navigationslichter, Signalkörper und akustische Signalanlagen", "quellen_id": "Q5", "fundstelle": "Anhang I Teil A Nummer 5.7"}
+      ]},
+      {"id": "R14", "element_ids": ["E75", "E76", "E81"], "thema": "Kühlung", "kenngroessen": ["Kühlwassertemperatur", "Zulässige Laufzeit ohne Wasserförderung", "Batterietemperatur"]},
+      {"id": "R15", "element_ids": ["E82", "E83", "E84"], "thema": "Motorraumbelüftung und Lenzen", "kenngroessen": ["Lenzleistung", "Luftwechsel im Motorraum", "Wassereintritt über Belüftungsöffnungen"], "regelwerke": [
+        {"bezeichnung": "Richtlinie 2013/53/EU (EU): Überflutung und Belüftung des Motorraums", "quellen_id": "Q5", "fundstelle": "Anhang I Teil A Nummern 3.5 und 5.1.2"}
+      ]}
+    ]
+  },
+  "offene_punkte": [
+    "Glossarvorschlag: Funktion „Rumpf lenzen“ (Leckwasser aus dem Rumpf eines Wasserfahrzeugs entfernen; nicht synonym mit „Abwasser sammeln“).",
+    "Glossarvorschlag: Funktion „Motorraum belüften“ (Verbrennungs- und Spülluft zuführen, Kraftstoffdämpfe abführen; nicht synonym mit „Innenraum klimatisieren“).",
+    "Abweichung von der Zuordnungsliste: Lenkrad, Lenksäule und Lenkgetriebe (lenkung) entfallen, ersetzt durch Lenker, Lenkseilzug und Lenkdüse; „Lenkunterstützung“ erscheint nur als Lenkunterstützung bei Gaswegnahme (Schubanforderung, keine Kraftverstärkung). Rahmen, Radaufhängung, Federung, Räder und Reifen und Achse (struktur_fahrwerk) entfallen, da kein Fahrwerk vorhanden ist. Getriebe und Differenzial (antrieb) entfallen wegen des Direktantriebs der Strahlpumpe. Betriebsbremse und Feststellbremse (bremse) entfallen; verzögert wird über die Umkehrklappe.",
+    "Recherche: Verordnung über das Fahren mit Wassermotorrädern auf den Binnenschifffahrtsstraßen (WasMotRV, gesetze-im-internet.de/wasmotrv) war in diesem Lauf nicht abrufbar (Verbindung abgebrochen); für deutsche Betriebs- und Ausrüstungsvorgaben nachholen.",
+    "Recherche: ISO 13590 sowie SAE J2608 (Off-Throttle-Steering), J1973, J2120 und J2034 im Original lesen, um P10, P12, P17 und P25 zu belegen; in diesem Lauf nur über die NTSB-Studie zugänglich.",
+    "Recherche: Fachquelle zur Motorkühlung von Jetskis (Suchbegriffe: personal watercraft closed loop cooling, Jetski Kühlsystem Wärmetauscher), um P23 zu belegen.",
+    "Recherche: Fachquelle zu elektrischen Jetskis (Hochvolt-Architektur, Batterietemperierung, Auftriebsauslegung), um P8 und P23 zu belegen.",
+    "Recherche: Fachquelle zu Lenzeinrichtung und Motorraumbelüftung (Suchbegriffe: personal watercraft bilge siphon venturi, PWC engine compartment ventilation), um P25 zu belegen.",
+    "Recherche: Fachquelle zu elektrisch gestellten Umkehrklappen mit Bremsfunktion und zur Lenkunterstützung bei Gaswegnahme (Suchbegriffe: PWC electronic brake reverse system, off-throttle assisted steering), um P10 und P12 zu belegen.",
+    "Recherche: Oldid der abgerufenen Fassung von Q2 nachtragen; die Wikipedia-API lieferte in diesem Lauf eine Ratenbegrenzung."
+  ]
+}

@@ -1,0 +1,2686 @@
+{
+  "schema_version": "2.3",
+  "artikel_id": "A-0086",
+  "artikeltyp": "blatt",
+  "titel": "AUV (autonomes Unterwasserfahrzeug)",
+  "betrachtungsumfang": "Generische Referenzarchitektur des autonomen Unterwasserfahrzeugs (AUV) ohne Kabelverbindung für Vermessung, Inspektion und Forschung, in Marschfahrtbauweise (torpedoförmiger Rumpf, Heckpropeller und Ruderflossen) und Schwebebauweise (mehrere Thruster), vom von einer Person auszusetzenden Klein-AUV bis zum schiffsgestützten Tiefsee-AUV, einschließlich Leitstand, Ladeeinrichtung und Aussetz- und Bergeeinrichtung der Trägerplattform. Betrachtete Antriebsart: batterieelektrisch (Energiespeicher Traktionsbatterie als wiederaufladbare Batterie oder Primärbatterie im Bordenergiespeicher, Energiewandler Traktionsmaschine im Propellerantrieb oder in Thrustern mit Motorreglern). Ausdrücklich ausgeschlossen sind AUVs mit Brennstoffzellen, Halbbrennstoffzellen, luftunabhängigen Verbrennungsmotoren oder Solarversorgung, Unterwassergleiter mit Auftriebsantrieb, Interventions-AUVs mit Manipulator, ferngesteuerte ROV und kabelgebundene Unterwasserdrohnen (eigene Artikel), Torpedos sowie bewaffnete unbemannte Unterwasserfahrzeuge.",
+  "status": "in_arbeit",
+  "quellenzugriff": "ja",
+  "kindartikel_ids": [],
+  "quellen": [
+    {
+      "quellen_id": "Q1",
+      "titel": "Autonomous underwater vehicle",
+      "urheber": "Wikipedia, The Free Encyclopedia (englischsprachig)",
+      "stand": "Revision oldid=1373522397, am Abrufdatum abgerufene Fassung",
+      "url": "https://en.wikipedia.org/wiki/Autonomous_underwater_vehicle",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q2",
+      "titel": "Autonomes Unterwasserfahrzeug",
+      "urheber": "Wikipedia, Die freie Enzyklopädie (deutschsprachig)",
+      "stand": "Revision oldid=268248684, zuletzt bearbeitet am 26. Juni 2026",
+      "url": "https://de.wikipedia.org/wiki/Autonomes_Unterwasserfahrzeug",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q3",
+      "titel": "What is an AUV?",
+      "urheber": "NOAA Ocean Exploration, National Oceanic and Atmospheric Administration (USA)",
+      "stand": "veröffentlicht 15. April 2013, zuletzt aktualisiert 29. September 2020",
+      "url": "https://oceanexplorer.noaa.gov/facts/auv.html",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "behoerde"
+    },
+    {
+      "quellen_id": "Q4",
+      "titel": "Autonomous Underwater Vehicles (Technology: Subs)",
+      "urheber": "NOAA Ocean Exploration, National Oceanic and Atmospheric Administration (USA)",
+      "stand": "veröffentlicht 22. Juni 2020, zuletzt aktualisiert 14. Oktober 2026",
+      "url": "https://oceanexplorer.noaa.gov/technology/subs/auvs/auvs.html",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "behoerde"
+    },
+    {
+      "quellen_id": "Q5",
+      "titel": "Design and Development of the MeCO Open-Source Autonomous Underwater Vehicle",
+      "urheber": "David Widhalm, Cory Ohnsted, Corey Knutson u. a., Junaed Sattar (University of Minnesota–Twin Cities), arXiv:2503.10928",
+      "stand": "v1, 13. März 2025",
+      "url": "https://arxiv.org/abs/2503.10928",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "fachliteratur"
+    },
+    {
+      "quellen_id": "Q6",
+      "titel": "Design and Experiments with LoCO AUV: A Low Cost Open-Source Autonomous Underwater Vehicle",
+      "urheber": "Chelsey Edge, Sadman Sakib Enan, Michael Fulton u. a., Junaed Sattar (University of Minnesota), arXiv:2003.09041",
+      "stand": "v1, 19. März 2020",
+      "url": "https://arxiv.org/abs/2003.09041",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "fachliteratur"
+    },
+    {
+      "quellen_id": "Q7",
+      "titel": "Design and Development of a Remotely-enabled Modular Release Mechanism for Autonomous Underwater Vehicles",
+      "urheber": "Demetrious T. Kutzke, Gustavo E. Miranda López, Robert J. Herman, Harryel Philippeaux (Naval Surface Warfare Center Panama City Division), arXiv:2401.04268",
+      "stand": "v1, 8. Januar 2024 (Manuskript vom 18. September 2021)",
+      "url": "https://arxiv.org/abs/2401.04268",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "fachliteratur"
+    },
+    {
+      "quellen_id": "Q8",
+      "titel": "REMUS (vehicle)",
+      "urheber": "Wikipedia, The Free Encyclopedia (englischsprachig)",
+      "stand": "Revision oldid=1387684904, am Abrufdatum abgerufene Fassung",
+      "url": "https://en.wikipedia.org/wiki/REMUS_(vehicle)",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "nachschlagewerk"
+    }
+  ],
+  "abschnitte": [
+    {
+      "ueberschrift": "Einleitung",
+      "abschnittstyp": "gesamtsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P1",
+          "text": "Ein autonomes Unterwasserfahrzeug (AUV) ist ein Roboter, der sich unter Wasser fortbewegt, ohne fortlaufende Eingaben eines Bedieners zu benötigen. Es gehört zu den unbemannten Unterwasserfahrzeugen, zu denen auch die ferngesteuerten, über ein Versorgungskabel betriebenen ROV zählen; Unterwassergleiter gelten als Unterklasse der AUVs. Ein AUV hat keine physische Verbindung zu seinem Bediener, der auf einem Schiff oder an Land programmiert, wo, wann und was beprobt wird. Alle Daten bleiben in Bordrechnern, bis das Fahrzeug am Ende des Tauchgangs geborgen ist.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Einleitung (Definition, Abgrenzung zu ROV, Gleiter als Unterklasse)"
+            },
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Absätze 2–3 (keine physische Verbindung zum Bediener, Programmierung, Datenspeicherung an Bord bis zur Bergung)"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "funktion"
+        },
+        {
+          "absatz_id": "P2",
+          "text": "Dieser Artikel beschreibt das AUV als batterieelektrisch angetriebenes Mess- und Vermessungsfahrzeug in Marsch- oder Schwebebauweise, einschließlich Leitstand und Aussetz- und Bergeeinrichtung der Trägerplattform. Die Hauptsysteme sind über mechanische, elektrische, thermische und informationstechnische Schnittstellen gekoppelt; zur Oberfläche besteht nur eine zeitweise akustische oder funkbasierte Verbindung. Für eine Dekomposition in SysML wird das autonome Unterwasserfahrzeug zuerst in seine Hauptsysteme und diese weiter in Subsysteme und Komponenten zerlegt.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P1",
+              "P11",
+              "P19",
+              "Ein Fahrzeug ohne Kabel muss Energie, Steuerung und Datenspeicherung an Bord tragen und kann nur drahtlos mit der Oberfläche verbunden sein."
+            ],
+            "schluss": "Systemgrenze und Schnittstellenarten des AUV folgen aus dem kabellosen, autonomen Betrieb."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "modellannahme"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrzeugstruktur",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E2",
+      "absaetze": [
+        {
+          "absatz_id": "P3",
+          "text": "Die meisten AUVs gehören zur Klasse der Vermessungs- oder Marschfahrt-AUVs mit zylindrischem oder torpedoförmigem Rumpf und angetriebenem Propeller; diese Form gilt als bester Kompromiss aus Größe, nutzbarem Volumen, hydrodynamischer Effizienz und Handhabung. Manche Fahrzeuge sind modular aufgebaut, sodass Bediener Komponenten leicht tauschen können. Einige neuere Entwicklungen weichen von der Zylinderform ab.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Abschnitt „Vehicle designs“, Absätze 3–4"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P4",
+          "text": "Die Fahrzeugstruktur gliedert sich in den Rumpf mit Bugsektion, Nutzlastsektion und Hecksektion und das Druckgehäuse mit Gehäuserohr, Endkappe und Kabeldurchführung. Der Rumpf gibt die Strömungsform vor und trägt Auftriebskörper, Nutzlast, Antrieb und Ruderflossen. Das Druckgehäuse hält Batterie und Elektronik trocken; Leitungen nach außen laufen durch die Kabeldurchführung in der Endkappe. Bei Schwebe-AUVs halten ein offener Rahmen oder Schellen mehrere Druckgehäuse nebeneinander. Die Tauchtiefe bestimmt Werkstoff und Wanddicke des Druckgehäuses und damit das Gewicht, das das Auftriebs- und Trimmsystem ausgleichen muss.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P3",
+              "Q6 (zwei wasserdichte Gehäuse, Endkappe mit Kabeldurchführungen, Tragstruktur mit Schellen)",
+              "Q5 (drei Rohre in einer Aluminiumstruktur)",
+              "Elektronik und Batterie müssen gegen den Außendruck trocken gehalten werden."
+            ],
+            "schluss": "Die Struktur besteht aus strömungsgünstigem Rumpf und druckfestem Gehäuse mit Durchführungen; die Anordnung hängt von der Bauweise ab."
+          },
+          "sicherheit": "hoch",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Auftriebs- und Trimmsystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E11",
+      "absaetze": [
+        {
+          "absatz_id": "P5",
+          "text": "Das MeCO-AUV ist ohne Ballast leichter als seine neutral auftreibende Masse, die in Salzwasser höher liegt als in Süßwasser, und bietet in jedem Rohr Platz für Ballast. So lässt sich der Schwerpunkt an Mission oder Regelungsart anpassen: Tiefer liegender Ballast macht das Fahrzeug vertikal stabil, ein Schwerpunkt nahe dem Auftriebsmittelpunkt erlaubt beliebige Lagen.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q5",
+              "fundstelle": "Abschnitt 3 „Physical Characteristics“, Absatz 2"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P6",
+          "text": "Das Auftriebs- und Trimmsystem besteht aus Auftriebskörpern, Ballastgewichten und Abwurfballast. Auftriebskörper und Ballastgewichte gleichen Masse und Verdrängung von Struktur, Batterie und Nutzlast aus und legen Schwerpunkt und Auftriebsmittelpunkt zueinander fest; jeder Nutzlastwechsel und jeder Wechsel des Gewässers verlangt neues Austrimmen. Der Abwurfballast wird bei Missionsende oder durch die Ausfallsicherung gelöst, damit das Fahrzeug ohne Antrieb auftaucht. Positiv auftreibende kleine AUVs kommen ohne Abwurfballast aus. Gleiter mit Pumpe zur Auftriebsänderung sind hier ausgeschlossen.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P5",
+              "P1",
+              "P21",
+              "Q1 (Gleiter ändern Auftrieb mit einer Pumpe)",
+              "Ein Fahrzeug ohne Kabel muss bei Fehlern ohne fremde Hilfe auftauchen können."
+            ],
+            "schluss": "Trimmung ist je Konfiguration nötig; ein lösbarer Ballast sichert das Auftauchen ohne Antrieb."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Antriebssystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E15",
+      "absaetze": [
+        {
+          "absatz_id": "P7",
+          "text": "Manche AUVs nutzen einen bürstenbehafteten oder bürstenlosen Elektromotor, ein Getriebe, eine Lippendichtung und einen Propeller mit oder ohne Düse, die in die Fahrzeugkonstruktion eingebaut sind; andere verwenden zur Wahrung der Modularität eine Thrustereinheit. Die meisten Einsätze nutzen den Marschfahrtmodus, in dem das Fahrzeug Daten auf einer vorgeplanten Route bei Geschwindigkeiten zwischen 1 und 4 Knoten sammelt.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Abschnitt „Propulsion“, Absatz 1; Abschnitt „Vehicle designs“, Absatz 2"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P8",
+          "text": "Das Antriebssystem besteht aus dem Propellerantrieb mit Traktionsmaschine, Getriebe, Wellendichtung und Propeller, aus Thrustern und aus Motorreglern. Die Motorregler formen den Batteriestrom nach dem Sollwert des Steuerrechners um, die Traktionsmaschine treibt über Getriebe und Wellendichtung den Propeller an, dessen Schub über die Hecksektion in den Rumpf geht. Marschfahrt-AUVs haben einen Heckpropeller und lenken über das Lenksystem. Schwebe-AUVs verteilen mehrere Thruster auf die Achsen, regeln so mehrere Freiheitsgrade direkt und brauchen dafür eine Schubaufteilung im Fahrzeugmanagement.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P7",
+              "Q5 (fünf Thruster für Regelung in sechs Freiheitsgraden, Motorsteuerung durch Mikrocontroller)",
+              "Ein Elektromotor braucht einen Stromrichter, und eine Welle durch die Druckgrenze braucht eine Dichtung."
+            ],
+            "schluss": "Der Antrieb besteht aus geregelten Elektromotoren mit Propeller oder Thrustern; die Anordnung bestimmt die direkt regelbaren Freiheitsgrade."
+          },
+          "sicherheit": "hoch",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "variante"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Lenksystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E23",
+      "absaetze": [
+        {
+          "absatz_id": "P9",
+          "text": "Alle Varianten der REMUS-Baureihe sind torpedoförmig und haben rekonfigurierbare Sensoren. Die neue Generation des REMUS 6000 hat eine modulare Architektur, die zusätzliche Nutzlasten wie Kundensensorpakete, Bugflossen und weitere Batteriesektionen aufnehmen kann.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q8",
+              "fundstelle": "Abschnitt „Models“, Einleitungssatz und Unterabschnitt „REMUS 6000“"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P10",
+          "text": "Das Lenksystem führt Marschfahrt-AUVs in Kurs und Tiefe. Es besteht aus Ruderflossen an der Hecksektion und dem Flossenstellantrieb. Der Steuerrechner vergleicht Sollbahn und Navigationslösung und stellt über den Flossenstellantrieb die Ruderflossen an; die Anströmung erzeugt Querkräfte, die das Fahrzeug um Hoch- und Querachse drehen. Die Wirkung setzt Fahrt voraus, langsames Schweben ist so nicht möglich. Bei Schwebe-AUVs entfällt das Lenksystem, und Antriebssystem und Fahrzeugmanagement übernehmen das Manövrieren über Schubdifferenz.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P3",
+              "P9",
+              "P7",
+              "Eine angeströmte Flosse erzeugt eine Querkraft, die mit der Anströmgeschwindigkeit wächst."
+            ],
+            "schluss": "Torpedoförmige AUVs mit einem Heckpropeller brauchen Flossen zum Lenken und Tauchen; ohne Fahrt wirken sie nicht."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "variante"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Energieversorgungssystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E26",
+      "absaetze": [
+        {
+          "absatz_id": "P11",
+          "text": "Die meisten heute eingesetzten AUVs werden aus wiederaufladbaren Batterien wie Lithium-Ionen-, Lithium-Polymer- oder Nickel-Metallhydrid-Akkus versorgt und haben ein Batteriemanagementsystem; manche nutzen Primärbatterien mit möglicherweise doppelter Ausdauer bei erheblichen Mehrkosten je Mission. Die gesamte Energie für Antrieb, Fahrzeugsensorik und Nutzlast muss an Bord mitgeführt werden; neben Batterien werden auch Brennstoffzellen und luftunabhängige Dieselmotoren verwendet.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Abschnitt „Power“"
+            },
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Abschnitt „Technische Voraussetzungen“, Absatz 2"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P12",
+          "text": "Das Energieversorgungssystem gliedert sich in den Bordenergiespeicher mit Traktionsbatterie, Batteriemanagementsystem und Gleichspannungswandler und in die Ladeeinrichtung der Trägerplattform. Die Traktionsbatterie liegt im Druckgehäuse oder in eigenen Batteriesektionen und speist über den Stromverteiler alle Verbraucher. Das Batteriemanagementsystem überwacht Zellen und Ladezustand und meldet den Energievorrat an das Fahrzeugmanagement, das daraus Rückkehr oder Abbruch ableitet. Der Gleichspannungswandler versorgt Elektronik und Sensorik. Bei Primärbatterien ersetzt der Batterietausch die Ladeeinrichtung; Brennstoffzellen und Verbrennungsmotoren sind hier ausgeschlossen.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P11",
+              "P9 (zusätzliche Batteriesektionen)",
+              "Q5 (eigener Niederspannungsbus je Rohr)",
+              "Ein Speicher an Bord begrenzt die Mission und muss zwischen den Tauchgängen geladen oder getauscht werden."
+            ],
+            "schluss": "Die Energieversorgung besteht aus überwachtem Bordspeicher mit Spannungswandlung und einer Lade- oder Tauschlösung an der Oberfläche."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "variante"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Leitstand",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E32",
+      "absaetze": [
+        {
+          "absatz_id": "P13",
+          "text": "Bei AUVs legen Forschende Bahn und Mission vor dem Tauchgang fest, setzen das Fahrzeug aus, holen es später zurück und laden die erfassten Daten zur Auswertung herunter. Die Fahrzeuge der REMUS-Baureihe teilen Steuersoftware und elektronische Subsysteme und lassen sich von einem Laptop aus betreiben.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q4",
+              "fundstelle": "Absatz „A benefit of AUV technology …“"
+            },
+            {
+              "quellen_id": "Q8",
+              "fundstelle": "Einleitung, Absatz 1"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "funktion"
+        },
+        {
+          "absatz_id": "P14",
+          "text": "Der Leitstand besteht aus Oberflächenrechner, Anzeigeelementen und akustischer Deckseinheit. Am Oberflächenrechner gibt der Bediener Mission, Sensoreinstellungen und Abbruchgrenzen ein; der Missionsplan geht vor dem Tauchgang an den Missionsrechner, danach liest der Oberflächenrechner den Datenspeicher aus. Während des Tauchgangs empfängt die akustische Deckseinheit Statusmeldungen und Positionen, die Anzeigeelemente stellen sie dar, und der Bediener kann einzelne Befehle wie einen Abbruch senden. Der Leitstand steht auf dem Trägerschiff, einem Boot oder an Land.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P13",
+              "P1",
+              "P19 (akustische Modems für Kommando und Kontrolle, Positionierung vom Begleitschiff)"
+            ],
+            "schluss": "Der Leitstand dient vor allem der Missionsvorbereitung und Datenübernahme und überwacht den Tauchgang nur schmalbandig."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "funktion"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Nutzlastsystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E36",
+      "absaetze": [
+        {
+          "absatz_id": "P15",
+          "text": "AUVs tragen Sensoren zur autonomen Navigation und zur Kartierung, etwa Kompasse, Tiefensensoren, Seitensichtsonare und andere Sonare, Magnetometer, Thermistoren und Leitfähigkeitssonden; manche zusätzlich Fluorometer sowie Trübungs-, pH- und Sauerstoffsensoren. Häufig erstellen AUVs mit Sonarsensoren detaillierte Karten des Meeresbodens, sie können aber auch mit LED-Leuchten und Kameras fotografieren und Bilder aufnehmen.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Abschnitt „Sensors“, Absatz 1"
+            },
+            {
+              "quellen_id": "Q4",
+              "fundstelle": "Absatz „Some AUVs are solar powered …“"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P16",
+          "text": "Das Nutzlastsystem gliedert sich in die akustische Vermessung mit Seitensichtsonar und Fächerecholot und die ozeanografische Sensorik mit CTD-Sonde und Fluorometer; je nach Auftrag kommen Magnetometer und Fotokamera hinzu. Die Sensoren sitzen in der Nutzlastsektion oder am Rahmen, werden über den Stromverteiler versorgt und schreiben Messdaten mit Zeit und Position in den Datenspeicher. Akustische Vermessung verlangt eine ruhige Bahn in festem Abstand zum Grund, Fotografie geringen Bodenabstand und Leuchten. Die Nutzlast bestimmt Rumpflänge und Energiebedarf und damit die Ausdauer.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P15",
+              "Q1 (Leitfähigkeits-Temperatur-Tiefen-Sensoren im Abschnitt „Research“)",
+              "Q3 (Sensoren werden nach Forschungsziel gewählt)",
+              "P3",
+              "Messdaten sind nur mit Position und Zeit auswertbar."
+            ],
+            "schluss": "Die Nutzlast besteht aus akustischen und ozeanografischen Sensorgruppen, die Bahn, Energie und Rumpf mitbestimmen."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Elektrik und Elektronik",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E45",
+      "absaetze": [
+        {
+          "absatz_id": "P17",
+          "text": "Beim MeCO-AUV werden die Seitenrohre einzeln versorgt und leiten Batterieleistung zum Mittelrohr; Energie und Signale laufen über Leitungen zwischen den Rohren mit gemeinsamer Masse. Ein einzelnes Seitenrohr kann das ganze Fahrzeug versorgen. Jedes Rohr hat einen eigenen 5-V-Bus für Hilfselektronik, und Mikrocontroller und Hauptrechner kommunizieren über Ethernet mit einem Switch im Mittelrohr.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q5",
+              "fundstelle": "Abschnitt 4 „Electronics“, Absätze 1–3"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P18",
+          "text": "Die Elektrik und Elektronik umfasst Stromverteiler, Leitungssatz und Bussystem. Der Stromverteiler verteilt die Batteriespannung abgesichert auf Motorregler, Rechner, Sensoren, Leuchten und Nutzlast; der Leitungssatz führt über Kabeldurchführungen zu den äußeren Verbrauchern. Das Bussystem verbindet Steuerrechner, Missionsrechner, Navigationssensorik, Motorregler und Nutzlast. Bei mehreren Druckgehäusen läuft der Leitungssatz außen zwischen den Gehäusen, und jede zusätzliche Durchführung ist eine mögliche Leckstelle.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P17",
+              "P4",
+              "Jeder elektrische Verbraucher braucht eine abgesicherte Zuleitung, jeder Rechner eine Datenverbindung."
+            ],
+            "schluss": "Die Bordelektrik verteilt Energie und Daten über Stromverteiler, Leitungssatz und Bus durch die Druckgrenze."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Fahrzeugsteuerung und Information",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E49",
+      "absaetze": [
+        {
+          "absatz_id": "P19",
+          "text": "Weil Funkwellen kaum ins Wasser eindringen, verliert ein AUV beim Abtauchen das GPS-Signal und navigiert durch Koppelnavigation: Ein Trägheitsnavigationssystem, gestützt durch ein Doppler-Geschwindigkeitslog, schätzt Position und Geschwindigkeit, ein Drucksensor misst die Tiefe. Akustische Positionierung über Transponder am Grund (LBL) oder vom Begleitschiff (USBL, SBL) und Auftauchen für eine GPS-Position verbessern die Lösung. Viele AUVs haben akustische Modems für Kommando und Kontrolle. Die meisten folgen ereignisbasiert einem Missionsplan; manche weichen adaptiv Hindernissen aus.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Abschnitt „Navigation“; Abschnitt „Communications“, Satz 1; Abschnitt „Vehicle designs“, Absatz 6"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P20",
+          "text": "Die Fahrzeugsteuerung und Information gliedert sich in das Fahrzeugmanagement mit Steuerrechner, Missionsrechner und Datenspeicher, die Navigationssensorik mit Trägheitsnavigationsanlage, Doppler-Geschwindigkeitslog, Drucksensor und GNSS-Empfänger und die Kommunikationseinrichtung mit Akustikmodem und Satellitenmodem. Der Missionsrechner arbeitet den Missionsplan ab und gibt die Sollbahn vor; der Steuerrechner regelt Kurs, Tiefe und Lage über Motorregler und Flossenstellantrieb. Der Datenspeicher zeichnet Mess- und Betriebsdaten auf. GNSS-Empfänger und Satellitenmodem arbeiten nur an der Oberfläche, das Akustikmodem hält unter Wasser die Verbindung zur akustischen Deckseinheit.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P19",
+              "Q5 (Aufteilung in Hauptrechner und echtzeitfähige Mikrocontroller, Datenträger für Missionsdaten)",
+              "Q4 (Auftauchen zur Positionsaktualisierung über Satellitenmodem)"
+            ],
+            "schluss": "Autonome Führung braucht getrennte Missions- und Regelungsebene, gestützte Navigation und zwei Kommunikationswege für Tauch- und Oberflächenphase."
+          },
+          "sicherheit": "hoch",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Assistenz und Sicherheit",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E62",
+      "absaetze": [
+        {
+          "absatz_id": "P21",
+          "text": "AUVs brauchen Steuerungssoftware, die Hindernisse auf der Route erkennt und ihnen ausweicht und auf technische Probleme wie ausgefallene Sensoren angemessen reagiert. Da Funksignale vom Wasser stark absorbiert werden, ist Kommunikation auch im Fehlerfall kaum möglich; daher müssen Notfallprotokolle eingerichtet werden. Unter Polareis können AUVs im Fehlerfall nicht auftauchen und gehen bei solchen Missionen verhältnismäßig häufig verloren.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Abschnitt „Technische Voraussetzungen“, Absatz 2"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "funktion"
+        },
+        {
+          "absatz_id": "P22",
+          "text": "Assistenz und Sicherheit umfasst die Umfeldsensorik, die Fehlerüberwachung mit Leckagesensor und Ausfallsicherung sowie die Ortungsbake. Die Umfeldsensorik, etwa ein vorausschauendes Sonar, meldet Hindernisse an den Missionsrechner. Der Leckagesensor meldet Wasser im Druckgehäuse; mit Meldungen des Batteriemanagementsystems und Grenzwerten für Tiefe und Zeit löst die Ausfallsicherung den Abbruch aus und gibt den Abwurfballast frei. Weil kein Bediener eingreifen kann, arbeitet sie unabhängig vom Missionsrechner. An der Oberfläche gibt die Ortungsbake akustische Signale und Funksignale zum Wiederfinden ab.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P21",
+              "P6",
+              "P12",
+              "P19 (adaptive Hindernisvermeidung)"
+            ],
+            "schluss": "Ohne Bediener im Regelkreis braucht das AUV eigene Hinderniserkennung, Fehlerüberwachung mit Abbruchlogik und Ortungshilfen."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "funktion"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Beleuchtung und Sicht",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E68",
+      "absaetze": [
+        {
+          "absatz_id": "P23",
+          "text": "Das LoCO-AUV ist in der Grundkonfiguration sichtgeführt und hat zwei Kameras; die flache Frontscheibe der Gehäuse mindert optische Verzerrung. Beim MeCO-AUV sitzen eine nach vorn gerichtete Stereokamera und Systemanzeigeleuchten im Mittelrohr, und LED-Ringe an den Seitenrohren zeigen Tauchern farbcodierte Meldungen.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q6",
+              "fundstelle": "Abschnitt 3 „System Design“, Absatz 1; Abschnitt 3.2"
+            },
+            {
+              "quellen_id": "Q5",
+              "fundstelle": "Abschnitt 3, Absatz 3; Abschnitt 5, Punkt 2"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P24",
+          "text": "Beleuchtung und Sicht umfasst Leuchten, Navigationskamera und Signalleuchten. Die Leuchten leuchten bei Fotografie und Sichtnavigation die Umgebung aus; wegen ihres Energiebedarfs schaltet das Fahrzeugmanagement sie nur in Bildabschnitten. Die Navigationskamera liefert Bilder zur Hinderniserkennung an den Missionsrechner. Signalleuchten zeigen Betriebszustände an und machen das aufgetauchte Fahrzeug bei der Bergung sichtbar. Reine Sonar-Vermessungs-AUVs kommen ohne Leuchten und Navigationskamera aus.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P23",
+              "P15 (Leuchten und Kameras für Bildaufnahmen)",
+              "Annahme: Ein aufgetauchtes Fahrzeug muss für die Bergung optisch auffindbar sein."
+            ],
+            "schluss": "Licht und Kamera sind nur bei optischen Aufgaben nötig, Signalleuchten bei jeder Bergung."
+          },
+          "sicherheit": "gering",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "variante"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Bergungs- und Landesystem",
+      "abschnittstyp": "hauptsystem",
+      "element_id": "E72",
+      "absaetze": [
+        {
+          "absatz_id": "P25",
+          "text": "Aussetz- und Bergevorrichtungen nutzen oft ein Seil oder eine Winde, um das AUV auszusetzen und an Bord zurückzuholen. Beim Fangstangenverfahren steuert das AUV über ein akustisches Signal eine Stange oder ein Seil an, das von einer Andockstation absteht. Bergen ist deutlich aufwendiger als Aussetzen. Das REMUS 6000 hält nach einem geplanten Tauchgang seine Position, bis es zur Bergung an die Oberfläche gerufen wird.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q7",
+              "fundstelle": "Abschnitt 2 „Related Work“, Absatz 1"
+            },
+            {
+              "quellen_id": "Q4",
+              "fundstelle": "Bildunterschrift zum REMUS 6000"
+            }
+          ],
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "loesung"
+        },
+        {
+          "absatz_id": "P26",
+          "text": "Das Bergungs- und Landesystem besteht aus der Aussetz- und Bergevorrichtung mit Winde auf der Trägerplattform und optional einer Andockstation. Die Vorrichtung nimmt das Fahrzeug an Hebepunkten des Rumpfs auf, die Winde bewegt es zwischen Deck und Wasser. Kleine AUVs werden von Hand ausgesetzt, Winde und Vorrichtung entfallen dann. Eine Andockstation unter Wasser erlaubt Laden und Datenauslesen ohne Bergung; sie verlangt akustische Zielführung im Fahrzeugmanagement, eine Ladeschnittstelle am Bordenergiespeicher und eine passende Bugform.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P25",
+              "Q6 (von einer Person auszusetzendes AUV)",
+              "Q7 (Andocken an Unterwasser-Ladestationen, Bergung von Hand)",
+              "Q8 (autonome Andockstation zum REMUS 100)"
+            ],
+            "schluss": "Die Bergungsart folgt aus Fahrzeugmasse und Plattform; eine Andockstation koppelt Bergung, Energie und Navigation."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "variante"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Zusammenfassung",
+      "abschnittstyp": "gesamtsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P27",
+          "text": "Architekturell ist das autonome Unterwasserfahrzeug ein Gesamtsystem aus Fahrzeugstruktur, Auftriebs- und Trimmsystem, Antriebssystem, Lenksystem, Energieversorgungssystem, Leitstand, Nutzlastsystem, Elektrik und Elektronik, Fahrzeugsteuerung und Information, Assistenz und Sicherheit, Beleuchtung und Sicht sowie Bergungs- und Landesystem; Bremse, Thermomanagement und Nebensysteme entfallen als eigene Systeme. Anders als beim ROV liegen Energie, Entscheidung und Datenspeicherung an Bord. Daraus folgen die prägenden Kopplungen: Der Energievorrat begrenzt Ausdauer und Nutzlast, die Navigationslösung bestimmt die Datenqualität, und die Ausfallsicherung ersetzt den Eingriff des Bedieners.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P4",
+              "P6",
+              "P8",
+              "P10",
+              "P12",
+              "P14",
+              "P16",
+              "P18",
+              "P20",
+              "P22",
+              "P24",
+              "P26"
+            ],
+            "schluss": "Die oberste Ebene ergibt sich aus den Hauptsystem-Abschnitten und dem kabellosen Betrieb."
+          },
+          "sicherheit": "hoch",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "funktion"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Modellierungsbezug",
+      "abschnittstyp": "modellierung",
+      "absaetze": [
+        {
+          "absatz_id": "P28",
+          "text": "In SysML bildet der Block `Autonomes Unterwasserfahrzeug` das Gesamtsystem mit den Hauptsystemen als Bestandteilen. Dekompositionspfade sind etwa `Antriebssystem → Propellerantrieb → Wellendichtung`, `Fahrzeugsteuerung und Information → Navigationssensorik → Doppler-Geschwindigkeitslog`, `Energieversorgungssystem → Bordenergiespeicher → Traktionsbatterie` und `Fahrzeugstruktur → Druckgehäuse → Kabeldurchführung`. Ports bilden die elektrischen Anschlüsse an den Kabeldurchführungen, die Busanschlüsse der Rechner, die Schubübertragung an der Hecksektion, die akustische Strecke zwischen Akustikmodem und Deckseinheit sowie Hebepunkte und Ladeschnittstelle ab. Block Definition Diagrams zeigen die Dekomposition, Internal Block Diagrams die Flüsse, Zustandsdiagramme den Missionsablauf mit Abtauchen, Vermessen, Auftauchen und Abbruch.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P4",
+              "P8",
+              "P12",
+              "P20",
+              "P26"
+            ],
+            "schluss": "Die Dekomposition und die Flüsse lassen sich direkt in Blöcke, Ports und Zustände überführen."
+          },
+          "sicherheit": "hoch",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "modellannahme"
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Flüsse",
+      "abschnittstyp": "fluesse",
+      "absaetze": [
+        {
+          "absatz_id": "P29",
+          "text": "Die Traktionsbatterie liefert über Stromverteiler und Leitungssatz elektrische Energie an Motorregler, Rechner, Nutzlast und Leuchten; Ladeeinrichtung oder Andockstation laden sie. Die Motorregler speisen die Traktionsmaschine, die über Getriebe und Wellendichtung den Propeller antreibt; der Schub geht über die Hecksektion in den Rumpf. Die Navigationssensorik liefert Messwerte, der Missionsrechner Sollbahnen an den Steuerrechner, der Sollwerte an Motorregler und Flossenstellantrieb sendet. Sonare und Sonden schreiben in den Datenspeicher. Oberflächenrechner und Missionsrechner tauschen vor und nach dem Tauchgang Missionsplan und Daten, währenddessen Akustikmodem und Deckseinheit Statusmeldungen. Leckagesensor, Batteriemanagementsystem und Umfeldsensorik melden an Ausfallsicherung und Missionsrechner; die Ausfallsicherung löst den Abwurfballast. Motorregler und Batterie geben Wärme über das Druckgehäuse ans Wasser ab; die Winde trägt das Fahrzeug beim Bergen.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P8",
+              "P10",
+              "P12",
+              "P14",
+              "P16",
+              "P18",
+              "P20",
+              "P22",
+              "P26"
+            ],
+            "schluss": "Die Flüsse verbinden die in den Hauptsystem-Abschnitten beschriebenen Ursprünge und Ziele."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Perspektiven",
+      "abschnittstyp": "perspektiven",
+      "absaetze": [
+        {
+          "absatz_id": "P30",
+          "text": "Rumpf und Druckgehäuse tragen die Fahrzeuglasten; Auftriebskörper, Ballastgewichte und Abwurfballast stellen Auftrieb bereit. Traktionsmaschine, Thruster und Motorregler erzeugen Antriebsleistung, Getriebe und Wellendichtung übertragen das Drehmoment, Propeller und Thruster bewegen das Fahrzeug fort. Ruderflossen und Flossenstellantrieb lenken, Thruster und Steuerrechner manövrieren, Ballastgewichte, Ruderflossen und Steuerrechner stabilisieren das Fahrzeug. Die Traktionsbatterie speichert Energie, Ladeeinrichtung und Andockstation laden sie; Stromverteiler, Leitungssatz und Gleichspannungswandler verteilen elektrische Energie. Bussystem, Akustikmodem, Satellitenmodem und Deckseinheit übertragen Daten. Missionsrechner und Steuerrechner führen die Mission autonom aus, Navigationssensorik und Deckseinheit bestimmen die Fahrzeugposition, der Datenspeicher zeichnet Betriebsdaten auf. Der Oberflächenrechner erfasst Fahrereingaben, Anzeigeelemente zeigen Fahrerinformationen an. Seitensichtsonar, Fächerecholot, Magnetometer und Fotokamera vermessen den Meeresboden, CTD-Sonde und Fluorometer messen Umweltparameter. Umfeldsensorik und Navigationskamera erfassen das Fahrzeugumfeld; Leckagesensor, Ausfallsicherung und Batteriemanagementsystem überwachen den Fahrzeugzustand. Leuchten leuchten die Umgebung aus, Signalleuchten geben Lichtsignale, die Ortungsbake akustische Signale ab. Aussetz- und Bergevorrichtung, Winde und Andockstation setzen das Fahrzeug aus und bergen es.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P4",
+              "P6",
+              "P8",
+              "P10",
+              "P12",
+              "P14",
+              "P16",
+              "P18",
+              "P20",
+              "P22",
+              "P24",
+              "P26"
+            ],
+            "schluss": "Jede Funktion des Modellblocks ist einem ausführenden Element zugeordnet."
+          },
+          "sicherheit": "hoch",
+          "herangezogene_artikel_ids": [],
+          "aussagetyp": "funktion"
+        }
+      ]
+    }
+  ],
+  "modell": {
+    "elemente": [
+      {
+        "id": "E1",
+        "name": "Autonomes Unterwasserfahrzeug",
+        "typ": "gesamtsystem",
+        "eltern_id": null,
+        "absatz_ids": [
+          "P1",
+          "P2",
+          "P27",
+          "P28"
+        ]
+      },
+      {
+        "id": "E2",
+        "name": "Fahrzeugstruktur",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P27"
+        ],
+        "kategorie": "struktur_fahrwerk"
+      },
+      {
+        "id": "E3",
+        "name": "Rumpf",
+        "typ": "subsystem",
+        "eltern_id": "E2",
+        "absatz_ids": [
+          "P3",
+          "P4",
+          "P26",
+          "P30"
+        ]
+      },
+      {
+        "id": "E4",
+        "name": "Bugsektion",
+        "typ": "komponente",
+        "eltern_id": "E3",
+        "absatz_ids": [
+          "P4",
+          "P26"
+        ]
+      },
+      {
+        "id": "E5",
+        "name": "Nutzlastsektion",
+        "typ": "komponente",
+        "eltern_id": "E3",
+        "absatz_ids": [
+          "P4",
+          "P16"
+        ]
+      },
+      {
+        "id": "E6",
+        "name": "Hecksektion",
+        "typ": "komponente",
+        "eltern_id": "E3",
+        "absatz_ids": [
+          "P4",
+          "P8",
+          "P10",
+          "P29"
+        ]
+      },
+      {
+        "id": "E7",
+        "name": "Druckgehäuse",
+        "typ": "subsystem",
+        "eltern_id": "E2",
+        "absatz_ids": [
+          "P4",
+          "P18",
+          "P29",
+          "P30"
+        ]
+      },
+      {
+        "id": "E8",
+        "name": "Gehäuserohr",
+        "typ": "komponente",
+        "eltern_id": "E7",
+        "absatz_ids": [
+          "P4"
+        ]
+      },
+      {
+        "id": "E9",
+        "name": "Endkappe",
+        "typ": "komponente",
+        "eltern_id": "E7",
+        "absatz_ids": [
+          "P4"
+        ]
+      },
+      {
+        "id": "E10",
+        "name": "Kabeldurchführung",
+        "typ": "komponente",
+        "eltern_id": "E7",
+        "absatz_ids": [
+          "P4",
+          "P18",
+          "P28"
+        ]
+      },
+      {
+        "id": "E11",
+        "name": "Auftriebs- und Trimmsystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P5",
+          "P6",
+          "P27"
+        ],
+        "kategorie": "sonstig"
+      },
+      {
+        "id": "E12",
+        "name": "Auftriebskörper",
+        "typ": "komponente",
+        "eltern_id": "E11",
+        "absatz_ids": [
+          "P6",
+          "P30"
+        ]
+      },
+      {
+        "id": "E13",
+        "name": "Ballastgewichte",
+        "typ": "komponente",
+        "eltern_id": "E11",
+        "absatz_ids": [
+          "P6",
+          "P30"
+        ]
+      },
+      {
+        "id": "E14",
+        "name": "Abwurfballast",
+        "typ": "komponente",
+        "eltern_id": "E11",
+        "absatz_ids": [
+          "P6",
+          "P22",
+          "P29"
+        ]
+      },
+      {
+        "id": "E15",
+        "name": "Antriebssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P8",
+          "P27"
+        ],
+        "kategorie": "antrieb"
+      },
+      {
+        "id": "E16",
+        "name": "Propellerantrieb",
+        "typ": "subsystem",
+        "eltern_id": "E15",
+        "absatz_ids": [
+          "P8",
+          "P28"
+        ]
+      },
+      {
+        "id": "E17",
+        "name": "Traktionsmaschine",
+        "typ": "komponente",
+        "eltern_id": "E16",
+        "absatz_ids": [
+          "P8",
+          "P29"
+        ]
+      },
+      {
+        "id": "E18",
+        "name": "Getriebe",
+        "typ": "komponente",
+        "eltern_id": "E16",
+        "absatz_ids": [
+          "P7",
+          "P8"
+        ]
+      },
+      {
+        "id": "E19",
+        "name": "Wellendichtung",
+        "typ": "komponente",
+        "eltern_id": "E16",
+        "absatz_ids": [
+          "P8",
+          "P28"
+        ]
+      },
+      {
+        "id": "E20",
+        "name": "Propeller",
+        "typ": "komponente",
+        "eltern_id": "E16",
+        "absatz_ids": [
+          "P7",
+          "P8",
+          "P29"
+        ]
+      },
+      {
+        "id": "E21",
+        "name": "Thruster",
+        "typ": "komponente",
+        "eltern_id": "E15",
+        "absatz_ids": [
+          "P8",
+          "P10",
+          "P30"
+        ]
+      },
+      {
+        "id": "E22",
+        "name": "Motorregler",
+        "typ": "komponente",
+        "eltern_id": "E15",
+        "absatz_ids": [
+          "P8",
+          "P18",
+          "P29"
+        ]
+      },
+      {
+        "id": "E23",
+        "name": "Lenksystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P10",
+          "P27"
+        ],
+        "kategorie": "lenkung"
+      },
+      {
+        "id": "E24",
+        "name": "Ruderflossen",
+        "typ": "komponente",
+        "eltern_id": "E23",
+        "absatz_ids": [
+          "P10",
+          "P30"
+        ]
+      },
+      {
+        "id": "E25",
+        "name": "Flossenstellantrieb",
+        "typ": "komponente",
+        "eltern_id": "E23",
+        "absatz_ids": [
+          "P10",
+          "P20",
+          "P29"
+        ]
+      },
+      {
+        "id": "E26",
+        "name": "Energieversorgungssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P11",
+          "P12",
+          "P27"
+        ],
+        "kategorie": "energieversorgung"
+      },
+      {
+        "id": "E27",
+        "name": "Bordenergiespeicher",
+        "typ": "subsystem",
+        "eltern_id": "E26",
+        "absatz_ids": [
+          "P12",
+          "P26",
+          "P28"
+        ]
+      },
+      {
+        "id": "E28",
+        "name": "Traktionsbatterie",
+        "typ": "komponente",
+        "eltern_id": "E27",
+        "absatz_ids": [
+          "P12",
+          "P29"
+        ]
+      },
+      {
+        "id": "E29",
+        "name": "Batteriemanagementsystem",
+        "typ": "komponente",
+        "eltern_id": "E27",
+        "absatz_ids": [
+          "P11",
+          "P12",
+          "P22"
+        ]
+      },
+      {
+        "id": "E30",
+        "name": "Gleichspannungswandler",
+        "typ": "komponente",
+        "eltern_id": "E27",
+        "absatz_ids": [
+          "P12",
+          "P30"
+        ]
+      },
+      {
+        "id": "E31",
+        "name": "Ladeeinrichtung",
+        "typ": "komponente",
+        "eltern_id": "E26",
+        "absatz_ids": [
+          "P12",
+          "P29"
+        ]
+      },
+      {
+        "id": "E32",
+        "name": "Leitstand",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P13",
+          "P14",
+          "P27"
+        ],
+        "kategorie": "bedienraum"
+      },
+      {
+        "id": "E33",
+        "name": "Oberflächenrechner",
+        "typ": "komponente",
+        "eltern_id": "E32",
+        "absatz_ids": [
+          "P14",
+          "P29"
+        ]
+      },
+      {
+        "id": "E34",
+        "name": "Anzeigeelemente",
+        "typ": "komponente",
+        "eltern_id": "E32",
+        "absatz_ids": [
+          "P14",
+          "P30"
+        ]
+      },
+      {
+        "id": "E35",
+        "name": "Akustische Deckseinheit",
+        "typ": "komponente",
+        "eltern_id": "E32",
+        "absatz_ids": [
+          "P14",
+          "P20",
+          "P29"
+        ]
+      },
+      {
+        "id": "E36",
+        "name": "Nutzlastsystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P15",
+          "P16",
+          "P27"
+        ],
+        "kategorie": "aufbau_nutzlast"
+      },
+      {
+        "id": "E37",
+        "name": "Akustische Vermessung",
+        "typ": "subsystem",
+        "eltern_id": "E36",
+        "absatz_ids": [
+          "P16"
+        ]
+      },
+      {
+        "id": "E38",
+        "name": "Seitensichtsonar",
+        "typ": "komponente",
+        "eltern_id": "E37",
+        "absatz_ids": [
+          "P15",
+          "P16"
+        ]
+      },
+      {
+        "id": "E39",
+        "name": "Fächerecholot",
+        "typ": "komponente",
+        "eltern_id": "E37",
+        "absatz_ids": [
+          "P16",
+          "P30"
+        ]
+      },
+      {
+        "id": "E40",
+        "name": "Ozeanografische Sensorik",
+        "typ": "subsystem",
+        "eltern_id": "E36",
+        "absatz_ids": [
+          "P16"
+        ]
+      },
+      {
+        "id": "E41",
+        "name": "CTD-Sonde",
+        "typ": "komponente",
+        "eltern_id": "E40",
+        "absatz_ids": [
+          "P16",
+          "P30"
+        ]
+      },
+      {
+        "id": "E42",
+        "name": "Fluorometer",
+        "typ": "komponente",
+        "eltern_id": "E40",
+        "absatz_ids": [
+          "P15",
+          "P16"
+        ]
+      },
+      {
+        "id": "E43",
+        "name": "Magnetometer",
+        "typ": "komponente",
+        "eltern_id": "E36",
+        "absatz_ids": [
+          "P15",
+          "P16"
+        ]
+      },
+      {
+        "id": "E44",
+        "name": "Fotokamera",
+        "typ": "komponente",
+        "eltern_id": "E36",
+        "absatz_ids": [
+          "P16",
+          "P30"
+        ]
+      },
+      {
+        "id": "E45",
+        "name": "Elektrik und Elektronik",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P17",
+          "P18",
+          "P27"
+        ],
+        "kategorie": "elektrik_elektronik"
+      },
+      {
+        "id": "E46",
+        "name": "Stromverteiler",
+        "typ": "komponente",
+        "eltern_id": "E45",
+        "absatz_ids": [
+          "P18",
+          "P29"
+        ]
+      },
+      {
+        "id": "E47",
+        "name": "Leitungssatz",
+        "typ": "komponente",
+        "eltern_id": "E45",
+        "absatz_ids": [
+          "P18",
+          "P29"
+        ]
+      },
+      {
+        "id": "E48",
+        "name": "Bussystem",
+        "typ": "komponente",
+        "eltern_id": "E45",
+        "absatz_ids": [
+          "P18",
+          "P30"
+        ]
+      },
+      {
+        "id": "E49",
+        "name": "Fahrzeugsteuerung und Information",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P19",
+          "P20",
+          "P27"
+        ],
+        "kategorie": "steuerung_information"
+      },
+      {
+        "id": "E50",
+        "name": "Fahrzeugmanagement",
+        "typ": "subsystem",
+        "eltern_id": "E49",
+        "absatz_ids": [
+          "P20",
+          "P8",
+          "P26"
+        ]
+      },
+      {
+        "id": "E51",
+        "name": "Steuerrechner",
+        "typ": "komponente",
+        "eltern_id": "E50",
+        "absatz_ids": [
+          "P20",
+          "P29"
+        ]
+      },
+      {
+        "id": "E52",
+        "name": "Missionsrechner",
+        "typ": "komponente",
+        "eltern_id": "E50",
+        "absatz_ids": [
+          "P20",
+          "P22",
+          "P29"
+        ]
+      },
+      {
+        "id": "E53",
+        "name": "Datenspeicher",
+        "typ": "komponente",
+        "eltern_id": "E50",
+        "absatz_ids": [
+          "P20",
+          "P14",
+          "P29"
+        ]
+      },
+      {
+        "id": "E54",
+        "name": "Navigationssensorik",
+        "typ": "subsystem",
+        "eltern_id": "E49",
+        "absatz_ids": [
+          "P20",
+          "P28",
+          "P29"
+        ]
+      },
+      {
+        "id": "E55",
+        "name": "Trägheitsnavigationsanlage",
+        "typ": "komponente",
+        "eltern_id": "E54",
+        "absatz_ids": [
+          "P20"
+        ]
+      },
+      {
+        "id": "E56",
+        "name": "Doppler-Geschwindigkeitslog",
+        "typ": "komponente",
+        "eltern_id": "E54",
+        "absatz_ids": [
+          "P19",
+          "P20",
+          "P28"
+        ]
+      },
+      {
+        "id": "E57",
+        "name": "Drucksensor",
+        "typ": "komponente",
+        "eltern_id": "E54",
+        "absatz_ids": [
+          "P19",
+          "P20"
+        ]
+      },
+      {
+        "id": "E58",
+        "name": "GNSS-Empfänger",
+        "typ": "komponente",
+        "eltern_id": "E54",
+        "absatz_ids": [
+          "P20"
+        ]
+      },
+      {
+        "id": "E59",
+        "name": "Kommunikationseinrichtung",
+        "typ": "subsystem",
+        "eltern_id": "E49",
+        "absatz_ids": [
+          "P20"
+        ]
+      },
+      {
+        "id": "E60",
+        "name": "Akustikmodem",
+        "typ": "komponente",
+        "eltern_id": "E59",
+        "absatz_ids": [
+          "P20",
+          "P28",
+          "P29"
+        ]
+      },
+      {
+        "id": "E61",
+        "name": "Satellitenmodem",
+        "typ": "komponente",
+        "eltern_id": "E59",
+        "absatz_ids": [
+          "P20",
+          "P30"
+        ]
+      },
+      {
+        "id": "E62",
+        "name": "Assistenz und Sicherheit",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P21",
+          "P22",
+          "P27"
+        ],
+        "kategorie": "assistenz_sicherheit"
+      },
+      {
+        "id": "E63",
+        "name": "Umfeldsensorik",
+        "typ": "komponente",
+        "eltern_id": "E62",
+        "absatz_ids": [
+          "P22",
+          "P29"
+        ]
+      },
+      {
+        "id": "E64",
+        "name": "Fehlerüberwachung",
+        "typ": "subsystem",
+        "eltern_id": "E62",
+        "absatz_ids": [
+          "P22"
+        ]
+      },
+      {
+        "id": "E65",
+        "name": "Leckagesensor",
+        "typ": "komponente",
+        "eltern_id": "E64",
+        "absatz_ids": [
+          "P22",
+          "P29"
+        ]
+      },
+      {
+        "id": "E66",
+        "name": "Ausfallsicherung",
+        "typ": "komponente",
+        "eltern_id": "E64",
+        "absatz_ids": [
+          "P22",
+          "P6",
+          "P29"
+        ]
+      },
+      {
+        "id": "E67",
+        "name": "Ortungsbake",
+        "typ": "komponente",
+        "eltern_id": "E62",
+        "absatz_ids": [
+          "P22",
+          "P30"
+        ]
+      },
+      {
+        "id": "E68",
+        "name": "Beleuchtung und Sicht",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P23",
+          "P24",
+          "P27"
+        ],
+        "kategorie": "beleuchtung_sicht"
+      },
+      {
+        "id": "E69",
+        "name": "Leuchten",
+        "typ": "komponente",
+        "eltern_id": "E68",
+        "absatz_ids": [
+          "P24",
+          "P29"
+        ]
+      },
+      {
+        "id": "E70",
+        "name": "Navigationskamera",
+        "typ": "komponente",
+        "eltern_id": "E68",
+        "absatz_ids": [
+          "P24",
+          "P30"
+        ]
+      },
+      {
+        "id": "E71",
+        "name": "Signalleuchten",
+        "typ": "komponente",
+        "eltern_id": "E68",
+        "absatz_ids": [
+          "P24",
+          "P30"
+        ]
+      },
+      {
+        "id": "E72",
+        "name": "Bergungs- und Landesystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P25",
+          "P26",
+          "P27"
+        ],
+        "kategorie": "sonstig"
+      },
+      {
+        "id": "E73",
+        "name": "Aussetz- und Bergevorrichtung",
+        "typ": "komponente",
+        "eltern_id": "E72",
+        "absatz_ids": [
+          "P25",
+          "P26",
+          "P30"
+        ]
+      },
+      {
+        "id": "E74",
+        "name": "Winde",
+        "typ": "komponente",
+        "eltern_id": "E72",
+        "absatz_ids": [
+          "P25",
+          "P26",
+          "P29"
+        ]
+      },
+      {
+        "id": "E75",
+        "name": "Andockstation",
+        "typ": "komponente",
+        "eltern_id": "E72",
+        "absatz_ids": [
+          "P25",
+          "P26",
+          "P29"
+        ]
+      }
+    ],
+    "funktionen": [
+      {
+        "id": "F1",
+        "name": "Fahrzeuglasten tragen",
+        "ausgefuehrt_von": [
+          "E3",
+          "E7"
+        ],
+        "absatz_ids": [
+          "P4",
+          "P30"
+        ]
+      },
+      {
+        "id": "F2",
+        "name": "Auftrieb bereitstellen",
+        "ausgefuehrt_von": [
+          "E12",
+          "E13",
+          "E14"
+        ],
+        "absatz_ids": [
+          "P6",
+          "P30"
+        ]
+      },
+      {
+        "id": "F3",
+        "name": "Fahrzeug stabilisieren",
+        "ausgefuehrt_von": [
+          "E13",
+          "E24",
+          "E51"
+        ],
+        "absatz_ids": [
+          "P5",
+          "P6",
+          "P30"
+        ]
+      },
+      {
+        "id": "F4",
+        "name": "Antriebsleistung erzeugen",
+        "ausgefuehrt_von": [
+          "E17",
+          "E21",
+          "E22"
+        ],
+        "absatz_ids": [
+          "P8",
+          "P30"
+        ]
+      },
+      {
+        "id": "F5",
+        "name": "Drehmoment übertragen",
+        "ausgefuehrt_von": [
+          "E18",
+          "E19"
+        ],
+        "absatz_ids": [
+          "P8",
+          "P30"
+        ]
+      },
+      {
+        "id": "F6",
+        "name": "Fahrzeug fortbewegen",
+        "ausgefuehrt_von": [
+          "E20",
+          "E21"
+        ],
+        "absatz_ids": [
+          "P8",
+          "P30"
+        ]
+      },
+      {
+        "id": "F7",
+        "name": "Fahrzeug lenken",
+        "ausgefuehrt_von": [
+          "E24",
+          "E25"
+        ],
+        "absatz_ids": [
+          "P10",
+          "P30"
+        ]
+      },
+      {
+        "id": "F8",
+        "name": "Fahrzeug manövrieren",
+        "ausgefuehrt_von": [
+          "E21",
+          "E51"
+        ],
+        "absatz_ids": [
+          "P8",
+          "P10",
+          "P30"
+        ]
+      },
+      {
+        "id": "F9",
+        "name": "Energie speichern",
+        "ausgefuehrt_von": [
+          "E28"
+        ],
+        "absatz_ids": [
+          "P12",
+          "P30"
+        ]
+      },
+      {
+        "id": "F10",
+        "name": "Traktionsbatterie laden",
+        "ausgefuehrt_von": [
+          "E31",
+          "E75"
+        ],
+        "absatz_ids": [
+          "P12",
+          "P26",
+          "P30"
+        ]
+      },
+      {
+        "id": "F11",
+        "name": "Elektrische Energie verteilen",
+        "ausgefuehrt_von": [
+          "E46",
+          "E47",
+          "E30"
+        ],
+        "absatz_ids": [
+          "P12",
+          "P18",
+          "P30"
+        ]
+      },
+      {
+        "id": "F12",
+        "name": "Daten übertragen",
+        "ausgefuehrt_von": [
+          "E48",
+          "E60",
+          "E61",
+          "E35"
+        ],
+        "absatz_ids": [
+          "P18",
+          "P20",
+          "P30"
+        ]
+      },
+      {
+        "id": "F13",
+        "name": "Mission autonom ausführen",
+        "ausgefuehrt_von": [
+          "E52",
+          "E51"
+        ],
+        "absatz_ids": [
+          "P20",
+          "P30"
+        ]
+      },
+      {
+        "id": "F14",
+        "name": "Fahrzeugposition bestimmen",
+        "ausgefuehrt_von": [
+          "E55",
+          "E56",
+          "E57",
+          "E58",
+          "E35"
+        ],
+        "absatz_ids": [
+          "P19",
+          "P20",
+          "P30"
+        ]
+      },
+      {
+        "id": "F15",
+        "name": "Betriebsdaten aufzeichnen",
+        "ausgefuehrt_von": [
+          "E53"
+        ],
+        "absatz_ids": [
+          "P20",
+          "P30"
+        ]
+      },
+      {
+        "id": "F16",
+        "name": "Fahrereingaben erfassen",
+        "ausgefuehrt_von": [
+          "E33"
+        ],
+        "absatz_ids": [
+          "P14",
+          "P30"
+        ]
+      },
+      {
+        "id": "F17",
+        "name": "Fahrerinformationen anzeigen",
+        "ausgefuehrt_von": [
+          "E34"
+        ],
+        "absatz_ids": [
+          "P14",
+          "P30"
+        ]
+      },
+      {
+        "id": "F18",
+        "name": "Meeresboden vermessen",
+        "ausgefuehrt_von": [
+          "E38",
+          "E39",
+          "E43",
+          "E44"
+        ],
+        "absatz_ids": [
+          "P16",
+          "P30"
+        ]
+      },
+      {
+        "id": "F19",
+        "name": "Umweltparameter messen",
+        "ausgefuehrt_von": [
+          "E41",
+          "E42"
+        ],
+        "absatz_ids": [
+          "P16",
+          "P30"
+        ]
+      },
+      {
+        "id": "F20",
+        "name": "Fahrzeugumfeld erfassen",
+        "ausgefuehrt_von": [
+          "E63",
+          "E70"
+        ],
+        "absatz_ids": [
+          "P22",
+          "P24",
+          "P30"
+        ]
+      },
+      {
+        "id": "F21",
+        "name": "Fahrzeugzustand überwachen",
+        "ausgefuehrt_von": [
+          "E65",
+          "E66",
+          "E29"
+        ],
+        "absatz_ids": [
+          "P12",
+          "P22",
+          "P30"
+        ]
+      },
+      {
+        "id": "F22",
+        "name": "Fahrzeugumgebung ausleuchten",
+        "ausgefuehrt_von": [
+          "E69"
+        ],
+        "absatz_ids": [
+          "P24",
+          "P30"
+        ]
+      },
+      {
+        "id": "F23",
+        "name": "Lichtsignale abgeben",
+        "ausgefuehrt_von": [
+          "E71"
+        ],
+        "absatz_ids": [
+          "P24",
+          "P30"
+        ]
+      },
+      {
+        "id": "F24",
+        "name": "Akustische Signale abgeben",
+        "ausgefuehrt_von": [
+          "E67"
+        ],
+        "absatz_ids": [
+          "P22",
+          "P30"
+        ]
+      },
+      {
+        "id": "F25",
+        "name": "Fahrzeug aussetzen und bergen",
+        "ausgefuehrt_von": [
+          "E73",
+          "E74",
+          "E75"
+        ],
+        "absatz_ids": [
+          "P26",
+          "P30"
+        ]
+      }
+    ],
+    "fluesse": [
+      {
+        "id": "S1",
+        "von": "E28",
+        "nach": "E46",
+        "art": "elektrisch",
+        "medium": "Batteriegleichstrom",
+        "absatz_ids": [
+          "P12",
+          "P29"
+        ],
+        "schnittstelle": "Hauptstromanschluss Bordenergiespeicher"
+      },
+      {
+        "id": "S2",
+        "von": "E46",
+        "nach": "E22",
+        "art": "elektrisch",
+        "medium": "Antriebsstrom",
+        "absatz_ids": [
+          "P18",
+          "P29"
+        ],
+        "schnittstelle": "Antriebsversorgung"
+      },
+      {
+        "id": "S3",
+        "von": "E22",
+        "nach": "E17",
+        "art": "elektrisch",
+        "medium": "Motorstrom",
+        "absatz_ids": [
+          "P8",
+          "P29"
+        ]
+      },
+      {
+        "id": "S4",
+        "von": "E17",
+        "nach": "E20",
+        "art": "mechanisch",
+        "medium": "Drehmoment über Getriebe und Welle",
+        "absatz_ids": [
+          "P8",
+          "P29"
+        ]
+      },
+      {
+        "id": "S5",
+        "von": "E20",
+        "nach": "E6",
+        "art": "mechanisch",
+        "medium": "Schubkraft",
+        "absatz_ids": [
+          "P8",
+          "P29"
+        ],
+        "schnittstelle": "Antriebslagerung Hecksektion"
+      },
+      {
+        "id": "S6",
+        "von": "E51",
+        "nach": "E22",
+        "art": "information",
+        "medium": "Drehzahlsollwert",
+        "absatz_ids": [
+          "P8",
+          "P20",
+          "P29"
+        ],
+        "schnittstelle": "Busanschluss Antrieb"
+      },
+      {
+        "id": "S7",
+        "von": "E51",
+        "nach": "E25",
+        "art": "information",
+        "medium": "Flossenstellwinkel",
+        "absatz_ids": [
+          "P10",
+          "P29"
+        ],
+        "schnittstelle": "Busanschluss Lenkung"
+      },
+      {
+        "id": "S8",
+        "von": "E55",
+        "nach": "E51",
+        "art": "information",
+        "medium": "Navigationslösung",
+        "absatz_ids": [
+          "P20",
+          "P29"
+        ]
+      },
+      {
+        "id": "S9",
+        "von": "E52",
+        "nach": "E51",
+        "art": "information",
+        "medium": "Sollbahn",
+        "absatz_ids": [
+          "P20",
+          "P29"
+        ]
+      },
+      {
+        "id": "S10",
+        "von": "E38",
+        "nach": "E53",
+        "art": "information",
+        "medium": "Messdaten",
+        "absatz_ids": [
+          "P16",
+          "P29"
+        ],
+        "schnittstelle": "Nutzlast-Datenschnittstelle"
+      },
+      {
+        "id": "S11",
+        "von": "E33",
+        "nach": "E52",
+        "art": "information",
+        "medium": "Missionsplan",
+        "absatz_ids": [
+          "P14",
+          "P29"
+        ],
+        "schnittstelle": "Missionsdatenschnittstelle"
+      },
+      {
+        "id": "S12",
+        "von": "E60",
+        "nach": "E35",
+        "art": "information",
+        "medium": "Statusmeldungen und Positionen",
+        "absatz_ids": [
+          "P14",
+          "P20",
+          "P29"
+        ],
+        "schnittstelle": "Akustische Kommunikationsstrecke"
+      },
+      {
+        "id": "S13",
+        "von": "E31",
+        "nach": "E28",
+        "art": "elektrisch",
+        "medium": "Ladestrom",
+        "absatz_ids": [
+          "P12",
+          "P29"
+        ]
+      },
+      {
+        "id": "S14",
+        "von": "E75",
+        "nach": "E28",
+        "art": "elektrisch",
+        "medium": "Ladestrom",
+        "absatz_ids": [
+          "P26",
+          "P29"
+        ],
+        "schnittstelle": "Ladeschnittstelle Andockstation"
+      },
+      {
+        "id": "S15",
+        "von": "E65",
+        "nach": "E66",
+        "art": "information",
+        "medium": "Leckmeldung",
+        "absatz_ids": [
+          "P22",
+          "P29"
+        ]
+      },
+      {
+        "id": "S16",
+        "von": "E66",
+        "nach": "E14",
+        "art": "information",
+        "medium": "Abwurfbefehl",
+        "absatz_ids": [
+          "P22",
+          "P29"
+        ],
+        "schnittstelle": "Auslöser Abwurfballast"
+      },
+      {
+        "id": "S17",
+        "von": "E63",
+        "nach": "E52",
+        "art": "information",
+        "medium": "Hindernismeldung",
+        "absatz_ids": [
+          "P22",
+          "P29"
+        ],
+        "schnittstelle": "Umfelddatenschnittstelle"
+      },
+      {
+        "id": "S18",
+        "von": "E46",
+        "nach": "E38",
+        "art": "elektrisch",
+        "medium": "Nutzlaststrom",
+        "absatz_ids": [
+          "P16",
+          "P29"
+        ],
+        "schnittstelle": "Nutzlastversorgung"
+      },
+      {
+        "id": "S19",
+        "von": "E46",
+        "nach": "E69",
+        "art": "elektrisch",
+        "medium": "Leuchtenstrom",
+        "absatz_ids": [
+          "P24",
+          "P29"
+        ],
+        "schnittstelle": "Leuchtenversorgung"
+      },
+      {
+        "id": "S20",
+        "von": "E22",
+        "nach": "E7",
+        "art": "thermisch",
+        "medium": "Abwärme",
+        "absatz_ids": [
+          "P29"
+        ],
+        "schnittstelle": "Wärmeübergang Druckgehäuse"
+      },
+      {
+        "id": "S21",
+        "von": "E74",
+        "nach": "E3",
+        "art": "mechanisch",
+        "medium": "Hebelast",
+        "absatz_ids": [
+          "P26",
+          "P29"
+        ],
+        "schnittstelle": "Hebepunkt Rumpf"
+      },
+      {
+        "id": "S22",
+        "von": "E29",
+        "nach": "E66",
+        "art": "information",
+        "medium": "Energievorrat und Zellzustand",
+        "absatz_ids": [
+          "P12",
+          "P22",
+          "P29"
+        ],
+        "schnittstelle": "Batteriestatus"
+      },
+      {
+        "id": "S23",
+        "von": "E61",
+        "nach": "E33",
+        "art": "information",
+        "medium": "Position an der Oberfläche",
+        "absatz_ids": [
+          "P20"
+        ],
+        "schnittstelle": "Satellitenverbindung"
+      }
+    ],
+    "entfallene_kategorien": [
+      {
+        "kategorie": "bremse",
+        "grund": "Keine Bremsanlage; Verzögerung durch Schubumkehr oder Abschalten des Antriebs und Wasserwiderstand, ein Festhalten entfällt bei frei schwimmendem Fahrzeug."
+      },
+      {
+        "kategorie": "thermomanagement",
+        "grund": "Keine eigenständige Baugruppe; Abwärme von Motorreglern, Batterie und Elektronik geht passiv über das Druckgehäuse an das umgebende Wasser (Fluss S20, Fahrzeugstruktur); Temperaturgrenzen überwacht das Batteriemanagementsystem."
+      },
+      {
+        "kategorie": "nebensysteme",
+        "grund": "Keine Druckluft-, Hydraulik- oder Nebenabtriebsversorgung; Lade- und Prüfmittel der Oberfläche sind in Energieversorgungssystem (Ladeeinrichtung) und Leitstand modelliert."
+      }
+    ],
+    "varianten": [
+      {
+        "id": "V1",
+        "element_id": "E15",
+        "bezeichnung": "Antriebsanordnung",
+        "alternativen": [
+          "Heckpropellerantrieb mit Ruderflossen (Marschfahrt)",
+          "Mehrere Thruster auf mehreren Achsen (Schwebefahrt)"
+        ],
+        "auswahlkriterien": [
+          "Missionsprofil Flächenvermessung oder Nahinspektion",
+          "Ausdauer und Fahrgeschwindigkeit",
+          "Manövrierbarkeit bei langsamer Fahrt",
+          "Strömungswiderstand"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E23",
+            "beschreibung": "Lenksystem mit Ruderflossen nur bei Heckpropeller; bei Thrustern entfällt es."
+          },
+          {
+            "element_id": "E3",
+            "beschreibung": "Torpedoförmiger Rumpf bei Marschfahrt, offener Rahmen mit Thrusterhalterungen bei Schwebefahrt."
+          },
+          {
+            "element_id": "E51",
+            "beschreibung": "Steuerrechner braucht bei Thrustern eine Schubaufteilung auf mehrere Achsen."
+          },
+          {
+            "element_id": "E28",
+            "beschreibung": "Höherer Energiebedarf je Strecke bei Schwebefahrt."
+          }
+        ],
+        "absatz_ids": [
+          "P7",
+          "P8",
+          "P10"
+        ]
+      },
+      {
+        "id": "V2",
+        "element_id": "E2",
+        "bezeichnung": "Rumpfbauweise",
+        "alternativen": [
+          "Torpedoförmiger Rumpf aus Sektionen",
+          "Offener Rahmen mit mehreren Druckgehäusen"
+        ],
+        "auswahlkriterien": [
+          "Hydrodynamischer Widerstand",
+          "Erweiterbarkeit und Austausch der Nutzlast",
+          "Handhabung beim Aussetzen und Bergen"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E36",
+            "beschreibung": "Nutzlast in einer Nutzlastsektion oder frei am Rahmen."
+          },
+          {
+            "element_id": "E47",
+            "beschreibung": "Leitungssatz läuft bei mehreren Gehäusen außen zwischen den Druckgehäusen."
+          },
+          {
+            "element_id": "E73",
+            "beschreibung": "Aufnahme und Hebepunkte der Aussetz- und Bergevorrichtung hängen von der Rumpfform ab."
+          },
+          {
+            "element_id": "E15",
+            "beschreibung": "Rahmenbauweise begünstigt verteilte Thruster."
+          }
+        ],
+        "absatz_ids": [
+          "P3",
+          "P4",
+          "P18"
+        ]
+      },
+      {
+        "id": "V3",
+        "element_id": "E27",
+        "bezeichnung": "Art des Energiespeichers",
+        "alternativen": [
+          "Wiederaufladbare Traktionsbatterie",
+          "Primärbatterie"
+        ],
+        "auswahlkriterien": [
+          "Ausdauer je Mission",
+          "Kosten je Mission",
+          "Umschlagzeit zwischen Tauchgängen",
+          "Transport- und Lagerlogistik"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E31",
+            "beschreibung": "Ladeeinrichtung entfällt bei Primärbatterie; an ihre Stelle tritt der Batterietausch."
+          },
+          {
+            "element_id": "E75",
+            "beschreibung": "Laden an der Andockstation nur mit wiederaufladbarer Batterie."
+          },
+          {
+            "element_id": "E29",
+            "beschreibung": "Batteriemanagementsystem mit Ladeüberwachung nur bei wiederaufladbarer Batterie."
+          },
+          {
+            "element_id": "E32",
+            "beschreibung": "Einsatzplanung am Leitstand berücksichtigt Lade- oder Tauschzeiten."
+          }
+        ],
+        "absatz_ids": [
+          "P11",
+          "P12"
+        ]
+      },
+      {
+        "id": "V4",
+        "element_id": "E54",
+        "bezeichnung": "Navigationsverfahren",
+        "alternativen": [
+          "Koppelnavigation mit Auftauchen für GNSS-Position",
+          "Akustische Positionierung über Transponder am Grund",
+          "Akustische Positionierung vom Begleitschiff"
+        ],
+        "auswahlkriterien": [
+          "Geforderte Positionsgenauigkeit",
+          "Dauer unter Wasser ohne Auftauchen",
+          "Verfügbarkeit eines Begleitschiffs",
+          "Wassertiefe und Einsatzgebiet"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E35",
+            "beschreibung": "Akustische Deckseinheit mit Positionierungsfunktion bei Positionierung vom Begleitschiff."
+          },
+          {
+            "element_id": "E58",
+            "beschreibung": "GNSS-Empfänger wird bei Koppelnavigation zur regelmäßigen Stützung gebraucht."
+          },
+          {
+            "element_id": "E52",
+            "beschreibung": "Missionsrechner plant Auftauchpunkte oder Bahnen im Transpondernetz."
+          },
+          {
+            "element_id": "E72",
+            "beschreibung": "Ausbringen und Bergen von Transpondern erweitert die Aufgaben der Trägerplattform."
+          }
+        ],
+        "absatz_ids": [
+          "P19",
+          "P20"
+        ]
+      },
+      {
+        "id": "V5",
+        "element_id": "E72",
+        "bezeichnung": "Bergungsart",
+        "alternativen": [
+          "Bergung an der Oberfläche mit Winde",
+          "Aussetzen und Bergen von Hand",
+          "Andocken an eine Unterwasser-Andockstation"
+        ],
+        "auswahlkriterien": [
+          "Fahrzeugmasse",
+          "Seegang und Größe der Trägerplattform",
+          "Einsatzdauer ohne Bergung"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E27",
+            "beschreibung": "Bordenergiespeicher braucht bei Andockstation eine Ladeschnittstelle."
+          },
+          {
+            "element_id": "E4",
+            "beschreibung": "Bugsektion muss bei Andockstation zur Fangeinrichtung passen."
+          },
+          {
+            "element_id": "E60",
+            "beschreibung": "Akustische Zielführung zur Andockstation über die Kommunikationseinrichtung."
+          },
+          {
+            "element_id": "E3",
+            "beschreibung": "Hebepunkte am Rumpf bei Bergung mit Winde."
+          }
+        ],
+        "absatz_ids": [
+          "P25",
+          "P26"
+        ]
+      },
+      {
+        "id": "V6",
+        "element_id": "E50",
+        "bezeichnung": "Autonomiestufe",
+        "alternativen": [
+          "Ereignisbasierte Autonomie nach festem Missionsplan",
+          "Adaptive Autonomie mit Bahnanpassung an Hindernisse"
+        ],
+        "auswahlkriterien": [
+          "Hindernisdichte im Einsatzgebiet",
+          "Rechenleistung und Energiebedarf",
+          "Nachweisbarkeit des Verhaltens"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E63",
+            "beschreibung": "Umfeldsensorik ist für adaptive Autonomie erforderlich."
+          },
+          {
+            "element_id": "E52",
+            "beschreibung": "Missionsrechner braucht mehr Rechenleistung für Bahnplanung an Bord."
+          },
+          {
+            "element_id": "E70",
+            "beschreibung": "Navigationskamera für sichtgestützte Hinderniserkennung."
+          },
+          {
+            "element_id": "E66",
+            "beschreibung": "Ausfallsicherung muss auch adaptive Bahnänderungen begrenzen."
+          }
+        ],
+        "absatz_ids": [
+          "P19",
+          "P20",
+          "P22"
+        ]
+      }
+    ],
+    "klaerungsfragen": [
+      {
+        "id": "K1",
+        "frage": "Soll das Fahrzeug vorwiegend Flächen in Marschfahrt vermessen oder auch langsam an Objekten schweben und sie inspizieren?",
+        "element_ids": [
+          "E15",
+          "E23"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Antriebsanordnung, Lenksystem und Rumpfform ab.",
+        "variante_ids": [
+          "V1"
+        ]
+      },
+      {
+        "id": "K2",
+        "frage": "Muss die Nutzlast im Einsatzgebiet ohne Werkstatt umgebaut werden können, oder genügt ein fester Sektionsaufbau?",
+        "element_ids": [
+          "E2",
+          "E36"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängt ab, ob ein Sektionsrumpf oder ein offener Rahmen gewählt wird.",
+        "variante_ids": [
+          "V2"
+        ]
+      },
+      {
+        "id": "K3",
+        "frage": "Welche größte Tauchtiefe muss das Druckgehäuse dauerhaft aushalten?",
+        "element_ids": [
+          "E7"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Werkstoff, Wanddicke, Masse und Auftriebsbedarf ab."
+      },
+      {
+        "id": "K4",
+        "frage": "Soll das Fahrzeug bei einem Ausfall durch Abwurfballast oder durch dauerhaften positiven Auftrieb sicher auftauchen?",
+        "element_ids": [
+          "E11",
+          "E14"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Auftriebsauslegung, Ausfallsicherung und Energiebedarf für das Tiefenhalten ab."
+      },
+      {
+        "id": "K5",
+        "frage": "Muss das Fahrzeug auch ohne Fahrt seinen Kurs und seine Tiefe ändern können?",
+        "element_ids": [
+          "E23",
+          "E21"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängt ab, ob Ruderflossen genügen oder zusätzliche Thruster nötig sind.",
+        "variante_ids": [
+          "V1"
+        ]
+      },
+      {
+        "id": "K6",
+        "frage": "Wie viele Tauchgänge am Tag sind gefordert, und darf die Batterie zwischen ihnen getauscht statt geladen werden?",
+        "element_ids": [
+          "E27",
+          "E31"
+        ],
+        "anlass": "betrieb",
+        "relevanz": "Davon hängen Batterieart, Ladeeinrichtung und Batteriezugang am Rumpf ab.",
+        "variante_ids": [
+          "V3"
+        ]
+      },
+      {
+        "id": "K7",
+        "frage": "Von welcher Plattform aus wird das Fahrzeug betrieben: großes Schiff, kleines Boot oder Ufer?",
+        "element_ids": [
+          "E32",
+          "E72"
+        ],
+        "anlass": "betrieb",
+        "relevanz": "Davon hängen Leitstandausstattung, akustische Deckseinheit und Bergungsart ab.",
+        "variante_ids": [
+          "V5"
+        ]
+      },
+      {
+        "id": "K8",
+        "frage": "Welche Messgrößen und welche Bodenauflösung muss die Nutzlast liefern?",
+        "element_ids": [
+          "E36"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Sensorauswahl, Bahnplanung und Energiebedarf ab."
+      },
+      {
+        "id": "K9",
+        "frage": "Muss die Energieverteilung bei Ausfall eines Batteriepakets das Fahrzeug weiter versorgen?",
+        "element_ids": [
+          "E45",
+          "E46"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Redundanz von Stromverteiler und Leitungssatz ab."
+      },
+      {
+        "id": "K10",
+        "frage": "Steht während der Mission ein Begleitschiff für die akustische Positionierung zur Verfügung, oder muss das Fahrzeug allein navigieren?",
+        "element_ids": [
+          "E54",
+          "E35"
+        ],
+        "anlass": "betrieb",
+        "relevanz": "Davon hängen Navigationsverfahren, Deckseinheit und Auftauchstrategie ab.",
+        "variante_ids": [
+          "V4"
+        ]
+      },
+      {
+        "id": "K11",
+        "frage": "Muss das Fahrzeug unbekannten Hindernissen selbständig ausweichen, oder fährt es nur in vorab vermessenen Gebieten?",
+        "element_ids": [
+          "E50",
+          "E63"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Umfeldsensorik, Rechenleistung und Autonomiestufe ab.",
+        "variante_ids": [
+          "V6"
+        ]
+      },
+      {
+        "id": "K12",
+        "frage": "Welche Fehler müssen zum Missionsabbruch führen, und welches Verhalten wird danach verlangt?",
+        "element_ids": [
+          "E62",
+          "E66"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Sensoren der Fehlerüberwachung und Abbruchlogik der Ausfallsicherung ab."
+      },
+      {
+        "id": "K13",
+        "frage": "Sind optische Aufnahmen Teil des Auftrags, sodass Leuchten und Kamera an Bord sein müssen?",
+        "element_ids": [
+          "E68",
+          "E44"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Energiebedarf, Bodenabstand der Bahn und Ausstattung von Beleuchtung und Sicht ab."
+      },
+      {
+        "id": "K14",
+        "frage": "Welche Masse darf das Fahrzeug höchstens haben, damit es von der vorgesehenen Plattform ausgesetzt und geborgen werden kann?",
+        "element_ids": [
+          "E72",
+          "E73"
+        ],
+        "anlass": "schnittstelle",
+        "relevanz": "Davon hängen Aussetz- und Bergevorrichtung, Winde und Rumpfgröße ab.",
+        "variante_ids": [
+          "V5"
+        ]
+      },
+      {
+        "id": "K15",
+        "frage": "Soll das Fahrzeug über längere Zeit ohne Bergung an einer Andockstation geladen und ausgelesen werden?",
+        "element_ids": [
+          "E75",
+          "E27"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Ladeschnittstelle, Bugform und akustische Zielführung ab.",
+        "variante_ids": [
+          "V5",
+          "V3"
+        ]
+      },
+      {
+        "id": "K16",
+        "frage": "Welche Daten müssen während des Tauchgangs an den Leitstand gemeldet werden, und welche genügen nach der Bergung?",
+        "element_ids": [
+          "E49",
+          "E59",
+          "E32"
+        ],
+        "anlass": "schnittstelle",
+        "relevanz": "Davon hängen Akustikmodem, Datenspeicher und Leitstandanzeigen ab."
+      }
+    ],
+    "anforderungsthemen": [
+      {
+        "id": "R1",
+        "element_ids": [
+          "E2",
+          "E7"
+        ],
+        "thema": "Tauchtiefe und Druckfestigkeit",
+        "kenngroessen": [
+          "maximale Betriebstiefe",
+          "Prüfdruck des Druckgehäuses",
+          "Dichtheit der Kabeldurchführungen"
+        ]
+      },
+      {
+        "id": "R2",
+        "element_ids": [
+          "E11"
+        ],
+        "thema": "Auftrieb und Trimmung",
+        "kenngroessen": [
+          "Auftriebsreserve",
+          "Abstand Schwerpunkt zu Auftriebsmittelpunkt",
+          "Auftauchzeit nach Ballastabwurf"
+        ]
+      },
+      {
+        "id": "R3",
+        "element_ids": [
+          "E15",
+          "E23"
+        ],
+        "thema": "Fahrleistung und Manövrierbarkeit",
+        "kenngroessen": [
+          "Marschgeschwindigkeit",
+          "Höchstgeschwindigkeit",
+          "Wendekreis",
+          "direkt geregelte Freiheitsgrade"
+        ]
+      },
+      {
+        "id": "R4",
+        "element_ids": [
+          "E26"
+        ],
+        "thema": "Ausdauer und Energie",
+        "kenngroessen": [
+          "Missionsdauer",
+          "Reichweite",
+          "nutzbarer Energieinhalt",
+          "Ladezeit"
+        ]
+      },
+      {
+        "id": "R5",
+        "element_ids": [
+          "E32"
+        ],
+        "thema": "Missionsplanung und Überwachung",
+        "kenngroessen": [
+          "Dauer der Missionsvorbereitung",
+          "Aktualisierungsrate der Statusmeldungen",
+          "Reichweite der akustischen Verbindung"
+        ]
+      },
+      {
+        "id": "R6",
+        "element_ids": [
+          "E36"
+        ],
+        "thema": "Messleistung der Nutzlast",
+        "kenngroessen": [
+          "Bodenauflösung",
+          "Abdeckungsbreite",
+          "Messgenauigkeit der Sonden",
+          "Nutzlastmasse"
+        ]
+      },
+      {
+        "id": "R7",
+        "element_ids": [
+          "E45"
+        ],
+        "thema": "Energie- und Signalverteilung",
+        "kenngroessen": [
+          "Absicherung je Verbraucher",
+          "Redundanz der Versorgung",
+          "Datenrate des Bussystems"
+        ]
+      },
+      {
+        "id": "R8",
+        "element_ids": [
+          "E49"
+        ],
+        "thema": "Navigationsgenauigkeit und Datenhaltung",
+        "kenngroessen": [
+          "Positionsfehler je Fahrstrecke",
+          "Tiefengenauigkeit",
+          "Speicherkapazität"
+        ]
+      },
+      {
+        "id": "R9",
+        "element_ids": [
+          "E62"
+        ],
+        "thema": "Fehlerbeherrschung und Fahrzeugverlust",
+        "kenngroessen": [
+          "Reaktionszeit der Ausfallsicherung",
+          "Ortungsreichweite der Ortungsbake",
+          "Ansprechschwelle des Leckagesensors"
+        ]
+      },
+      {
+        "id": "R10",
+        "element_ids": [
+          "E68"
+        ],
+        "thema": "Sicht und Kenntlichkeit",
+        "kenngroessen": [
+          "ausgeleuchtete Fläche",
+          "Sichtweite der Signalleuchten"
+        ]
+      },
+      {
+        "id": "R11",
+        "element_ids": [
+          "E72"
+        ],
+        "thema": "Aussetzen und Bergen",
+        "kenngroessen": [
+          "zulässiger Seegang",
+          "Fahrzeugmasse",
+          "Dauer des Bergevorgangs"
+        ]
+      }
+    ]
+  },
+  "offene_punkte": [
+    "Glossarvorschlag: Funktion „Mission autonom ausführen“ (Missionsplan an Bord ohne Bedienereingriff abarbeiten, Sollbahnen erzeugen und Ereignisse auslösen; nicht synonym mit „Zugfahrt automatisch steuern“, das an einen Fahrweg gebunden ist).",
+    "Glossarvorschlag: Funktion „Meeresboden vermessen“ (Bathymetrie, Bodenbilder und magnetische Anomalien mit Sonar, Magnetometer und Kamera erfassen; nicht synonym mit „Fahrzeugumfeld erfassen“, das Hindernisse für die Fahrzeugführung meint).",
+    "Glossarvorschlag: Funktion „Umweltparameter messen“ (Messgrößen des Wassers wie Leitfähigkeit, Temperatur oder Chlorophyll mit Sonden erfassen); bereits in A-0084 vorgeschlagen, hier gleichlautend verwendet.",
+    "Abweichung von der Zuordnungsliste: Traktionsmaschine, Getriebe und Thruster stehen unter dem Antriebssystem; Differenzial, Gelenkwelle, Antriebswelle, Abgasanlage und Abgasnachbehandlung entfallen. Achse, Federung, Radaufhängung, Räder und Reifen, Türen und Karosserie (struktur_fahrwerk) entfallen mangels Fahrwerk. Lenkrad, Lenksäule, Lenkgetriebe und Lenkunterstützung entfallen; an ihre Stelle treten Ruderflossen und Flossenstellantrieb. Betriebsbremse und Feststellbremse entfallen. Sitze und Rückhaltesysteme entfallen am Leitstand; die Bedienelemente sind im Oberflächenrechner zusammengefasst. Kühlkreislauf und Kühler entfallen bei passiver Wärmeabgabe.",
+    "Recherche: Primärquelle zum NATO-Standard JANUS (ANEP-87) für akustische Unterwasserkommunikation; die Seite des NATO CMRE (cmre.nato.int) war in diesem Lauf durch Cloudflare blockiert. Als Regelwerk für die akustische Kommunikationsstrecke (Geltungsbereich NATO) nachholen.",
+    "Recherche: Regelwerke und Leitfäden zum Betrieb autonomer Unterwasserfahrzeuge (Society for Underwater Technology: Recommended Code of Practice for the Operation of Autonomous Marine Vehicles; IMCA-Leitfäden; nationale Genehmigungen für Bundeswasserstraßen und Häfen), um unter regelwerke Betrieb, Bergung und Fahrzeugverlust zu belegen.",
+    "Recherche: Fachquelle zu Abwurfballast und Notauftauchen (Suchbegriffe: AUV drop weight emergency ascent, AUV abort weight release), um P6 und P22 zu belegen.",
+    "Recherche: Fachquelle zu Ruderflossen und Flossenstellantrieb bei Marschfahrt-AUVs (Suchbegriffe: AUV control fins actuator, torpedo AUV rudder elevator). Die WHOI-Seite zu REMUS („propeller and fins for steering and diving“) wurde gelesen, aber weggelassen, weil kein Quellentyp passt (private Forschungseinrichtung ohne Veröffentlichungscharakter).",
+    "Recherche: Quelle zu Ortungsbake, Funkbake und Blitzleuchte bei der AUV-Bergung (Suchbegriffe: AUV recovery strobe radio beacon acoustic pinger), um P22 und P24 zu belegen.",
+    "Recherche: Fachbuch zur AUV-Architektur (etwa Griffiths: Technology and Applications of Autonomous Underwater Vehicles), um Grundaufbau und Varianten unabhängig von Nachschlagewerken zu belegen."
+  ]
+}
