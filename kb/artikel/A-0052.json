@@ -90,7 +90,7 @@
         },
         {
           "absatz_id": "P3",
-          "text": "Architekturell ist der Kampfpanzer ein Gesamtsystem, dessen Systeme über mechanische, elektrische, hydraulische, thermische, stoffliche und informationstechnische Schnittstellen gekoppelt sind. Prägend ist die Teilung in Wanne und drehbaren Turm, denn jeder Fluss zwischen beiden quert die Drehverbindung. Die Dekomposition führt die Waffenanlage unter Aufbau und Ladung, den Besatzungsraum unter Fahrerhaus und reicht bis zu den Komponenten.",
+          "text": "Architekturell ist der Kampfpanzer ein Gesamtsystem, dessen Systeme über mechanische, elektrische, hydraulische, thermische, stoffliche und informationstechnische Schnittstellen gekoppelt sind. Prägend ist die Teilung in Wanne und drehbaren Turm, denn jeder Fluss zwischen beiden quert die Drehverbindung. Die Dekomposition führt die Waffenanlage unter Waffenanlage und Missionsausrüstung und den Besatzungsraum als eigenes Hauptsystem und reicht bis zu den Komponenten.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -373,7 +373,7 @@
       ]
     },
     {
-      "ueberschrift": "Fahrerhaus (Besatzungsraum)",
+      "ueberschrift": "Besatzungsraum",
       "abschnittstyp": "hauptsystem",
       "element_id": "E41",
       "absaetze": [
@@ -421,13 +421,13 @@
       ]
     },
     {
-      "ueberschrift": "Aufbau und Ladung (Turm und Waffenanlage)",
+      "ueberschrift": "Waffenanlage und Missionsausrüstung (Turm und Waffenanlage)",
       "abschnittstyp": "hauptsystem",
       "element_id": "E49",
       "absaetze": [
         {
           "absatz_id": "P18",
-          "text": "Aufbau und Ladung umfasst hier den Turm mit Waffenanlage und Munition. Der Turm besteht aus Turmstruktur, Turmdrehkranz und Richtantrieben. Die Waffenanlage umfasst Hauptwaffe, deren Rohrrücklaufeinrichtung mit Rohrbremse und Vorholer den Rückstoß in die Wanne leitet, koaxiales Maschinengewehr und Waffenstation, die Feuerleitanlage Zieloptiken, Laserentfernungsmesser, Feuerleitrechner und Waffenstabilisierung, die Munitionsversorgung den Munitionsbunker und gegebenenfalls einen Ladeautomaten. Die Wirkungskette führt vom Erfassen des Ziels über Messen, Berechnen und Richten zum Laden und Abfeuern.",
+          "text": "Waffenanlage und Missionsausrüstung umfasst hier den Turm mit Waffenanlage und Munition. Der Turm besteht aus Turmstruktur, Turmdrehkranz und Richtantrieben. Die Waffenanlage umfasst Hauptwaffe, deren Rohrrücklaufeinrichtung mit Rohrbremse und Vorholer den Rückstoß in die Wanne leitet, koaxiales Maschinengewehr und Waffenstation, die Feuerleitanlage Zieloptiken, Laserentfernungsmesser, Feuerleitrechner und Waffenstabilisierung, die Munitionsversorgung den Munitionsbunker und gegebenenfalls einen Ladeautomaten. Die Wirkungskette führt vom Erfassen des Ziels über Messen, Berechnen und Richten zum Laden und Abfeuern.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -440,7 +440,7 @@
               "P6",
               "Eine Kanone mit hoher Mündungsgeschwindigkeit erzeugt beim Schuss einen Rückstoß, der gebremst, in die Struktur eingeleitet und durch Rückführung des Rohrs in die Ausgangslage abgeschlossen werden muss."
             ],
-            "schluss": "Aufbau und Ladung gliedert sich in Turm, Waffenanlage, Feuerleitanlage und Munitionsversorgung entlang einer Wirkungskette."
+            "schluss": "Waffenanlage und Missionsausrüstung gliedert sich in Turm, Waffenanlage, Feuerleitanlage und Munitionsversorgung entlang einer Wirkungskette."
           },
           "sicherheit": "mittel",
           "aussagetyp": "modellannahme",
@@ -683,7 +683,7 @@
       "absaetze": [
         {
           "absatz_id": "P29",
-          "text": "Architekturell lässt sich der Kampfpanzer auf oberster Ebene als Gesamtsystem mit den Systemen Fahrzeugstruktur und Fahrwerk, Antriebssystem, Energieversorgungssystem, Lenksystem, Bremssystem, Fahrerhaus, Aufbau und Ladung, Elektrik und Elektronik, Fahrzeugsteuerung und Information, Fahrerassistenz und Sicherheit, Beleuchtung und Sicht, Thermomanagement sowie Neben- und Versorgungssysteme auffassen. Antrieb und Lenkung sind im Schalt-Lenkgetriebe verschränkt, die Teilung in Wanne und Turm prägt die Schnittstellen.",
+          "text": "Architekturell lässt sich der Kampfpanzer auf oberster Ebene als Gesamtsystem mit den Systemen Fahrzeugstruktur und Fahrwerk, Antriebssystem, Energieversorgungssystem, Lenksystem, Bremssystem, Besatzungsraum, Waffenanlage und Missionsausrüstung, Elektrik und Elektronik, Fahrzeugsteuerung und Information, Fahrerassistenz und Sicherheit, Beleuchtung und Sicht, Thermomanagement sowie Neben- und Versorgungssysteme auffassen. Antrieb und Lenkung sind im Schalt-Lenkgetriebe verschränkt, die Teilung in Wanne und Turm prägt die Schnittstellen.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -707,7 +707,7 @@
       "absaetze": [
         {
           "absatz_id": "P30",
-          "text": "In SysML bildet der Block `Kampfpanzer` das Gesamtsystem mit den dreizehn Hauptsystemen als Bestandteilen. Dekompositionspfade sind etwa `Antriebssystem → Triebwerk → Verbrennungsmotor`, `Aufbau und Ladung → Feuerleitanlage → Feuerleitrechner` und `Fahrzeugstruktur und Fahrwerk → Kettenlaufwerk → Triebrad`. Die Wanne-Turm-Drehverbindung wird ein zusammengesetzter Port mit mechanischem, elektrischem und Datenanteil, bei zentraler Hydraulik auch hydraulischem; weitere Ports sind Triebradnabe und Kraftstoffanschluss. Block Definition Diagrams zeigen die Zerlegung, Internal Block Diagrams die Wanne-Turm-Schnittstelle, Aktivitätsdiagramme die Wirkungskette, Zustandsautomaten Marsch, Gefecht und Beobachtungshalt.",
+          "text": "In SysML bildet der Block `Kampfpanzer` das Gesamtsystem mit den dreizehn Hauptsystemen als Bestandteilen. Dekompositionspfade sind etwa `Antriebssystem → Triebwerk → Verbrennungsmotor`, `Waffenanlage und Missionsausrüstung → Feuerleitanlage → Feuerleitrechner` und `Fahrzeugstruktur und Fahrwerk → Kettenlaufwerk → Triebrad`. Die Wanne-Turm-Drehverbindung wird ein zusammengesetzter Port mit mechanischem, elektrischem und Datenanteil, bei zentraler Hydraulik auch hydraulischem; weitere Ports sind Triebradnabe und Kraftstoffanschluss. Block Definition Diagrams zeigen die Zerlegung, Internal Block Diagrams die Wanne-Turm-Schnittstelle, Aktivitätsdiagramme die Wirkungskette, Zustandsautomaten Marsch, Gefecht und Beobachtungshalt.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -1205,7 +1205,7 @@
       },
       {
         "id": "E41",
-        "name": "Fahrerhaus",
+        "name": "Besatzungsraum",
         "typ": "hauptsystem",
         "eltern_id": "E1",
         "absatz_ids": [
@@ -1298,7 +1298,7 @@
       },
       {
         "id": "E49",
-        "name": "Aufbau und Ladung",
+        "name": "Waffenanlage und Missionsausrüstung",
         "typ": "hauptsystem",
         "eltern_id": "E1",
         "absatz_ids": [
@@ -3539,8 +3539,6 @@
     "Recherche: behördliche Quelle zu Hybridantrieben für Kampfpanzer (CRS-Bericht IF11512 und army.mil in diesem Lauf blockiert; Suchbegriff: hybrid electric drive main battle tank Army report).",
     "Recherche: Beleuchtung und Straßenverkehrszulassung von Kettenfahrzeugen der Streitkräfte (Suchbegriff: Tarnlicht Kettenfahrzeug Beleuchtung Ausnahmegenehmigung Bundeswehr).",
     "Zuordnung: Lenkgetriebe steht gemäß Zuordnungsliste unter dem Lenksystem, obwohl es physisch mit dem Getriebe zum Schalt-Lenkgetriebe vereint ist; der Fluss S3 bildet diese Kopplung ab.",
-    "Glossarvorschlag: Hauptsystemname „Turm und Waffenanlage“ für die Kategorie aufbau_nutzlast bei Gefechtsfahrzeugen (hier vorläufig „Aufbau und Ladung“).",
-    "Glossarvorschlag: Hauptsystemname „Besatzungsraum“ für die Kategorie bedienraum bei Gefechtsfahrzeugen (hier vorläufig „Fahrerhaus“).",
     "Glossarvorschlag: Funktion „Ziele erfassen“.",
     "Glossarvorschlag: Funktion „Waffe richten“.",
     "Glossarvorschlag: Funktion „Ziele bekämpfen“.",

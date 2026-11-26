@@ -430,7 +430,7 @@
       ]
     },
     {
-      "ueberschrift": "Fahrerhaus",
+      "ueberschrift": "Besatzungsraum",
       "abschnittstyp": "hauptsystem",
       "element_id": "E44",
       "absaetze": [
@@ -453,7 +453,7 @@
         },
         {
           "absatz_id": "P15",
-          "text": "Das Fahrerhaus umfasst im Modell den gesamten geschützten Kampfraum: die Besatzungsarbeitsplätze von Fahrer, Kommandant und Richtschütze mit Bedienelementen und Anzeigeelementen sowie den Schützentruppraum, dessen Sitze und Rückhaltesystem minensicher an der Wanne hängen. Anordnung und Sitzzahl folgen aus Triebwerkslage, Turmbauart und Heckklappe.",
+          "text": "Der Besatzungsraum umfasst im Modell den gesamten geschützten Kampfraum: die Besatzungsarbeitsplätze von Fahrer, Kommandant und Richtschütze mit Bedienelementen und Anzeigeelementen sowie den Schützentruppraum, dessen Sitze und Rückhaltesystem minensicher an der Wanne hängen. Anordnung und Sitzzahl folgen aus Triebwerkslage, Turmbauart und Heckklappe.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -462,7 +462,7 @@
               "P6 (Frontmotor ermöglicht Heckausstieg)",
               "P16 (unbemannter Turm, Besatzung in der Wanne)",
               "Q6: Fahrerplatz mit Lenkrad, Gangwahlschalter, Fahrtrichtungshebel, Pedalen und Instrumententafel (Bildtext Fahrerplatz Marder)",
-              "Glossarvorgabe: bedienraum mit dem Namen Fahrerhaus für Nutzfahrzeuge"
+              "Glossarvorgabe: bedienraum mit dem Namen Besatzungsraum für gepanzerte Gefechtsfahrzeuge"
             ],
             "schluss": "Der Bedienraum des Schützenpanzers ist der gesamte Kampfraum mit Besatzungsarbeitsplätzen und Schützentruppraum; seine Aufteilung hängt von Triebwerks- und Turmanordnung ab."
           },
@@ -473,7 +473,7 @@
       ]
     },
     {
-      "ueberschrift": "Aufbau und Ladung",
+      "ueberschrift": "Waffenanlage und Missionsausrüstung",
       "abschnittstyp": "hauptsystem",
       "element_id": "E51",
       "absaetze": [
@@ -507,7 +507,7 @@
               "Q3: Schneckenmagazin im Turmheck, Nachladen der Reserve nur von außen, Doppelgurtzuführer der Maschinenkanone (Abschnitt Bewaffnung, Unterabschnitt Primärbewaffnung, Absätze 1 und 3)",
               "Funktionsprinzip: Eine stabilisierte Waffe braucht einen Regelkreis aus Zielerfassung, Rechner und Richtantrieb"
             ],
-            "schluss": "Das Hauptsystem Aufbau und Ladung besteht aus Waffenanlage mit Munitionsmagazin und Zuführung, Sicht- und Feuerleitsystem und Stauraum; die Turmbauart bestimmt Arbeitsplätze und Übertragungswege zwischen Turm und Wanne."
+            "schluss": "Das Hauptsystem Waffenanlage und Missionsausrüstung besteht aus Waffenanlage mit Munitionsmagazin und Zuführung, Sicht- und Feuerleitsystem und Stauraum; die Turmbauart bestimmt Arbeitsplätze und Übertragungswege zwischen Turm und Wanne."
           },
           "sicherheit": "mittel",
           "aussagetyp": "variante",
@@ -776,7 +776,7 @@
       "absaetze": [
         {
           "absatz_id": "P29",
-          "text": "Auf oberster Ebene besteht der Schützenpanzer aus Fahrzeugstruktur und Fahrwerk, Antriebssystem, Energieversorgungssystem, Lenksystem, Bremssystem, Fahrerhaus, Aufbau und Ladung, Elektrik und Elektronik, Fahrzeugsteuerung und Information, Fahrerassistenz und Sicherheit, Beleuchtung und Sicht, Thermomanagement sowie Neben- und Versorgungssystemen. Prägend sind die Kopplung von Antrieb, Lenkung und Bremse im Triebwerksblock, die Wanne als Träger von Schutz und Last und die Schnittstelle zum Drehturm.",
+          "text": "Auf oberster Ebene besteht der Schützenpanzer aus Fahrzeugstruktur und Fahrwerk, Antriebssystem, Energieversorgungssystem, Lenksystem, Bremssystem, Besatzungsraum, Waffenanlage und Missionsausrüstung, Elektrik und Elektronik, Fahrzeugsteuerung und Information, Fahrerassistenz und Sicherheit, Beleuchtung und Sicht, Thermomanagement sowie Neben- und Versorgungssystemen. Prägend sind die Kopplung von Antrieb, Lenkung und Bremse im Triebwerksblock, die Wanne als Träger von Schutz und Last und die Schnittstelle zum Drehturm.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -803,7 +803,7 @@
       "absaetze": [
         {
           "absatz_id": "P30",
-          "text": "In SysML bildet der Block Schützenpanzer das Gesamtsystem mit den Hauptsystemen als Teilen. Dekompositionspfade sind etwa Fahrzeugstruktur und Fahrwerk → Kettenlaufwerk → Federung, Antriebssystem → Triebwerksblock → Drehmomentwandler, Lenksystem → Lenkübertragung → Hydraulikmotor und Aufbau und Ladung → Waffenanlage → Richt- und Stabilisierungsanlage. Ports bilden Schleifringübertrager, Triebradnabe, Schnelltrennkupplungen und Filterluftzuführung ab. Block Definition Diagrams zeigen die Zerlegung, Internal Block Diagrams Kraftfluss und Feuerleitkette, Zustandsautomaten die Betriebsarten Marsch, Gefecht und Stillstand.",
+          "text": "In SysML bildet der Block Schützenpanzer das Gesamtsystem mit den Hauptsystemen als Teilen. Dekompositionspfade sind etwa Fahrzeugstruktur und Fahrwerk → Kettenlaufwerk → Federung, Antriebssystem → Triebwerksblock → Drehmomentwandler, Lenksystem → Lenkübertragung → Hydraulikmotor und Waffenanlage und Missionsausrüstung → Waffenanlage → Richt- und Stabilisierungsanlage. Ports bilden Schleifringübertrager, Triebradnabe, Schnelltrennkupplungen und Filterluftzuführung ab. Block Definition Diagrams zeigen die Zerlegung, Internal Block Diagrams Kraftfluss und Feuerleitkette, Zustandsautomaten die Betriebsarten Marsch, Gefecht und Stillstand.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -866,7 +866,7 @@
       "absaetze": [
         {
           "absatz_id": "P32",
-          "text": "Funktionszuordnung: Fahrzeuglasten tragen Wanne, Laufrollen und Federung; Fahrzeug fortbewegen Gleiskette und Triebrad; Energie speichern Kraftstofftank, Bordnetzbatterie und Traktionsbatterie; Treibstoff fördern die Kraftstoffanlage; Elektrische Energie erzeugen Generator und Hilfsstromaggregat; Elektrische Energie verteilen Leistungselektronik, Gleichspannungswandler, Hochvolt-Bordnetz, Niedervolt-Bordnetz und Schleifringübertrager; Antriebsleistung erzeugen Verbrennungsmotor und Traktionsmaschine; Drehmoment übertragen Drehmomentwandler, Getriebe, Antriebswelle und Nebenaggregatetrieb; Fahrzeug lenken Lenkgetriebe und Hydraulikmotor; Hydraulische Leistung bereitstellen Hydraulikpumpe und Hydraulikversorgung; Fahrzeug verzögern Betriebsbremse und Retarder; Fahrzeug festhalten die Feststellbremse; Fahrereingaben erfassen Lenkrad und Bedienelemente; Fahrerinformationen anzeigen die Anzeigeelemente; Insassen schützen Grundpanzerung, Zusatzpanzerung, Sitze, Rückhaltesystem, Brandunterdrückungsanlage, Feuerlöschanlage und ABC-Schutzanlage; Ladung aufnehmen Schützentruppraum und Stauraum; Waffe richten Richt- und Stabilisierungsanlage und Feuerleitrechner; Ziele bekämpfen Maschinenkanone, Maschinengewehr und Lenkflugkörperstartgerät; Bedrohung abwehren Nebelmittelwurfanlage und Infrarotstörer; Fahrzeugumfeld erfassen Rundblickperiskop, Waffenoptik und Warnsensoren; Daten übertragen Fahrzeugbus, Gateway, Führungs- und Waffeneinsatzsystem, Funkanlage und Bordverständigungsanlage; Fahrzeugzustand überwachen Fahrzeugmanagement und Diagnose; Fahrzeugposition bestimmen die Navigation; Fahrersicht sicherstellen Winkelspiegel, Fahrernachtsichtgerät und Kamera-Monitor-System; Fahrzeugumgebung ausleuchten die Scheinwerfer; Lichtsignale abgeben die Leuchten; Betriebstemperatur regeln Kühler, Kühlerlüfter und Kühlkreislauf; Innenraum klimatisieren Klimaanlage und Klimakompressor.",
+          "text": "Funktionszuordnung: Fahrzeuglasten tragen Wanne, Laufrollen und Federung; Fahrzeug fortbewegen Gleiskette und Triebrad; Energie speichern Kraftstofftank, Bordnetzbatterie und Traktionsbatterie; Treibstoff fördern die Kraftstoffanlage; Elektrische Energie erzeugen Generator und Hilfsstromaggregat; Elektrische Energie verteilen Leistungselektronik, Gleichspannungswandler, Hochvolt-Bordnetz, Niedervolt-Bordnetz und Schleifringübertrager; Antriebsleistung erzeugen Verbrennungsmotor und Traktionsmaschine; Drehmoment übertragen Drehmomentwandler, Getriebe, Antriebswelle und Nebenaggregatetrieb; Fahrzeug lenken Lenkgetriebe und Hydraulikmotor; Hydraulische Leistung bereitstellen Hydraulikpumpe und Hydraulikversorgung; Fahrzeug verzögern Betriebsbremse und Retarder; Fahrzeug festhalten die Feststellbremse; Fahrereingaben erfassen Lenkrad und Bedienelemente; Fahrerinformationen anzeigen die Anzeigeelemente; Insassen schützen Grundpanzerung, Zusatzpanzerung, Sitze, Rückhaltesystem, Brandunterdrückungsanlage, Feuerlöschanlage und ABC-Schutzanlage; Ladung aufnehmen Schützentruppraum und Stauraum; Waffe richten Richt- und Stabilisierungsanlage und Feuerleitrechner; Ziele bekämpfen Maschinenkanone, Maschinengewehr und Lenkflugkörperstartgerät; Bedrohungen abwehren Nebelmittelwurfanlage und Infrarotstörer; Fahrzeugumfeld erfassen Rundblickperiskop, Waffenoptik und Warnsensoren; Daten übertragen Fahrzeugbus, Gateway, Führungs- und Waffeneinsatzsystem, Funkanlage und Bordverständigungsanlage; Fahrzeugzustand überwachen Fahrzeugmanagement und Diagnose; Fahrzeugposition bestimmen die Navigation; Fahrersicht sicherstellen Winkelspiegel, Fahrernachtsichtgerät und Kamera-Monitor-System; Fahrzeugumgebung ausleuchten die Scheinwerfer; Lichtsignale abgeben die Leuchten; Betriebstemperatur regeln Kühler, Kühlerlüfter und Kühlkreislauf; Innenraum klimatisieren Klimaanlage und Klimakompressor.",
           "begruendung": "hergeleitet",
           "belege": [],
           "herleitung": {
@@ -1360,7 +1360,7 @@
       },
       {
         "id": "E44",
-        "name": "Fahrerhaus",
+        "name": "Besatzungsraum",
         "typ": "hauptsystem",
         "eltern_id": "E1",
         "absatz_ids": [
@@ -1434,7 +1434,7 @@
       },
       {
         "id": "E51",
-        "name": "Aufbau und Ladung",
+        "name": "Waffenanlage und Missionsausrüstung",
         "typ": "hauptsystem",
         "eltern_id": "E1",
         "absatz_ids": [
@@ -3787,8 +3787,6 @@
     "Glossarvorschlag: Ziele bekämpfen (Funktion von Maschinenkanone, Maschinengewehr und Lenkflugkörperstartgerät; „Objekte handhaben“ meint Manipulation und ist kein Synonym).",
     "Glossarvorschlag: Bedrohung abwehren (Funktion von Nebelmittelwurfanlage und Infrarotstörer; „Insassen schützen“ deckt passiven Schutz ab, nicht das aktive Stören anfliegender Lenkflugkörper).",
     "Glossarvorschlag: Elektrische Energie erzeugen (Funktion von Generator und Hilfsstromaggregat; die Liste kennt nur Speichern und Verteilen elektrischer Energie).",
-    "Glossarvorschlag: Hauptsystemname für den Bedienraum gepanzerter Kampffahrzeuge, etwa Kampfraum (Kategorie bedienraum); verwendet wurde mangels passender Vorgabe Fahrerhaus.",
-    "Glossarvorschlag: Hauptsystemname für die Nutzlast von Kampffahrzeugen, etwa Waffen- und Missionsausrüstung (Kategorie aufbau_nutzlast); verwendet wurde mangels passender Vorgabe Aufbau und Ladung.",
     "Recherche: Fachliteratur zu Fahrmechanik, Lenkgetrieben und Bremsen von Kettenfahrzeugen (Merhof, Hackbarth: Fahrmechanik der Kettenfahrzeuge; Suchbegriffe: Kettenfahrzeug Lenkgetriebe Bremsanordnung) zur Belegung von P7, P11 und P13 mit Fachliteratur.",
     "Recherche: dieselelektrische und hybride Antriebe für Kettenkampffahrzeuge (Suchbegriffe: hybrid electric drive tracked combat vehicle; electric drive armoured vehicle) zur Belegung von P34, P35 und V4.",
     "Recherche: Schutzniveaus gepanzerter Fahrzeuge im NATO-Regelwerk (STANAG 4569, AEP-55) mit frei zugänglicher amtlicher Fassung für R1; die englische Wikipedia-Seite zu STANAG 4569 war in diesem Lauf nicht abrufbar.",
