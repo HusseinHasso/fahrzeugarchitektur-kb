@@ -1,0 +1,1376 @@
+{
+  "schema_version": "2.3",
+  "artikel_id": "A-0125",
+  "artikeltyp": "uebersicht",
+  "titel": "Landfahrzeuge",
+  "betrachtungsumfang": "Übersicht über die Landfahrzeuge, das heißt Fahrzeuge, die sich auf der Landfläche bewegen, schienenfrei oder spurgeführt, mit oder ohne eigenen Fahrantrieb, mit den Kindartikeln Straßenfahrzeuge (A-0126), Schienenfahrzeuge (A-0133), Geländefahrzeuge (A-0138), Militärfahrzeuge (A-0142) und Anhängefahrzeuge (A-0145): gemeinsame Architektur, Unterscheidungsmerkmale und gemeinsames Grundmodell auf Hauptsystemebene. Antriebsarten im Umfang der Kindartikel (Muskelkraft mit oder ohne elektrischen Hilfsantrieb, Verbrennungsmotor einschließlich Gasmotor, Hybrid-, dieselelektrischer, batterieelektrischer und Brennstoffzellenantrieb, Gasturbine, Fahrleitungs- und Stromschienenbetrieb, ortsfester Seilantrieb) werden nur vergleichend behandelt; ihre Energiespeicher und Energiewandler sind in den Kindartikeln und deren Kindartikeln modelliert. Begriffsabgrenzung für Deutschland (Straßenverkehrsgesetz, § 1) und nach dem statistischen Glossar von Eurostat, UN und ITF; weitere Regelwerke stehen in den Kindartikeln. Mehrraum- und Hybridfahrzeuge (Amphibien- und Zweiwegefahrzeuge) sowie Luft-, Wasser- und Raumfahrzeuge nur zur Abgrenzung; Fahrzeuge mit Zugtier- oder Windantrieb, Obusse, Nebenfahrzeuge der Eisenbahn und Magnetschwebebahnen sind durch keinen Kindartikel abgedeckt.",
+  "status": "geprueft",
+  "quellenzugriff": "ja",
+  "kindartikel_ids": [
+    "A-0126",
+    "A-0133",
+    "A-0138",
+    "A-0142",
+    "A-0145"
+  ],
+  "quellen": [
+    {
+      "quellen_id": "Q1",
+      "titel": "Landfahrzeug",
+      "urheber": "Wikipedia, Die freie Enzyklopädie (deutschsprachig)",
+      "stand": "oldid 257146701",
+      "url": "https://de.wikipedia.org/w/index.php?title=Landfahrzeug&oldid=257146701",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q2",
+      "titel": "Straßenverkehrsgesetz (StVG), § 1 Zulassung (Textwiedergabe)",
+      "urheber": "Bundesrepublik Deutschland; Textwiedergabe buzer.de",
+      "stand": "§ 1 in der Fassung des Gesetzes vom 17. Juni 2013; Gesetz zuletzt geändert durch Gesetz vom 20. November 2026",
+      "url": "https://www.buzer.de/1_StVG.htm",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q3",
+      "titel": "Glossary for transport statistics, 5th edition",
+      "urheber": "Eurostat, UNECE (UN) und International Transport Forum (ITF)",
+      "stand": "5. Ausgabe, Veröffentlichungsnummer KS-GQ-19-004",
+      "url": "https://ec.europa.eu/eurostat/documents/3859598/10013293/KS-GQ-19-004-EN-N.pdf",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "behoerde"
+    }
+  ],
+  "abschnitte": [
+    {
+      "ueberschrift": "Einleitung",
+      "abschnittstyp": "gesamtsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P1",
+          "text": "Nach der deutschsprachigen Enzyklopädie ist Landfahrzeug der Oberbegriff für ein Fahrzeug, das ausschließlich oder überwiegend auf der Landfläche eine Distanz überwindet; Gegenstücke sind Luft- und Wasserfahrzeuge. Landfahrzeuge sind alle Fahrzeuge zu Lande, schienenfreie und schienengebundene, ohne Rücksicht auf die Antriebsart. Unterschieden werden Militärfahrzeuge und nicht militärisch genutzte Fahrzeuge, diese nach der Antriebsart in Kraftfahrzeuge, muskelkraftbetriebene und durch Windkraft angetriebene Fahrzeuge. Landfahrzeuge haben im Regelfall Räder, seltener Kufen oder Gleisketten; Fahrzeuge mit nur einem Rad oder nur hintereinander angeordneten Rädern heißen einspurig, solche mit auch nebeneinander angeordneten Rädern mehrspurig. Mischformen sind das Amphibienfahrzeug zwischen Land- und Wasserfahrzeug und das Zweiwegefahrzeug zwischen Straßen- und Eisenbahnverkehr.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Einleitung, Absätze 1 bis 3; Abschnitt Technische Aspekte, Absatz 1; Abschnitt Arten, Absatz nach der Tabelle"
+            }
+          ],
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P2",
+          "text": "In Deutschland gelten nach § 1 Abs. 2 StVG Landfahrzeuge, die durch Maschinenkraft bewegt werden, ohne an Bahngleise gebunden zu sein, als Kraftfahrzeuge. Das Glossar für die Verkehrsstatistik von Eurostat, UN und ITF bestimmt das Schienenfahrzeug als bewegliches Gerät, das ausschließlich auf Schienen läuft und sich mit eigener Kraft bewegt (Triebfahrzeuge) oder von einem anderen Fahrzeug gezogen wird (Reisezugwagen, Beiwagen von Triebwagen, Güterwagen), und das Straßenfahrzeug als Fahrzeug, das auf Rädern läuft und für die Benutzung auf Straßen bestimmt ist. Den Anhänger führt es als von einem Straßenkraftfahrzeug gezogenes Güterstraßenfahrzeug, landwirtschaftliche Zugmaschine und landwirtschaftlichen Anhänger gesondert; Militärfahrzeuge soll die Bestandsstatistik der Straßenfahrzeuge nicht enthalten.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "§ 1 Abs. 2"
+            },
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Definitionen A.II-01 Railway vehicle, B.II-01 Road vehicle, B.II-02 Stock of road vehicles, B.II-27 Agricultural tractor, B.II-28 Trailer und B.II-29 Agricultural trailer"
+            }
+          ],
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P3",
+          "text": "In dieser Wissensbasis umfasst das Elterntaxon Landfahrzeuge alle Fahrzeuge auf der Landfläche, schienenfrei oder spurgeführt, mit oder ohne eigenen Fahrantrieb, in fünf Kindartikeln, die selbst Übersichten sind: Straßenfahrzeuge vom Fahrrad bis zur Sattelzugmaschine, Schienenfahrzeuge mit Triebfahrzeugen, Wagen, Stadtverkehr und Spezialbahnen, Geländefahrzeuge für Freizeit und Transport, Land- und Forstwirtschaft und Bau, ungepanzerte und gepanzerte Militärfahrzeuge sowie Anhängefahrzeuge für Straße und Arbeitseinsatz. Die Kindartikel grenzen eng aneinander: Geländewagen sind zugleich Personenkraftwagen oder leichte Nutzfahrzeuge, Militärfahrzeuge entstehen auch aus handelsüblichen Fahrzeugen, und Anhänger erscheinen bei den Straßenfahrzeugen nur als Schnittstellenpartner. Amphibien- und Zweiwegefahrzeuge gehören zu den Mehrraum- und Hybridfahrzeugen; Fahrzeuge mit Zugtier- oder Windantrieb und Obusse deckt kein Kindartikel ab.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P1",
+              "P2",
+              "Inventar A-0125: Kindartikel A-0126, A-0133, A-0138, A-0142, A-0145",
+              "A-0126/P3",
+              "A-0133/P3",
+              "A-0138/P2",
+              "A-0142/P1",
+              "A-0142/P4",
+              "A-0145/P4",
+              "A-0138/P17",
+              "Inventar: Amphibienfahrzeuge und Zweiwegefahrzeug unter Mehrraum- und Hybridfahrzeuge",
+              "Betrachtungsumfang A-0126: Muskel- oder Motorantrieb, Obusse nur zur Abgrenzung"
+            ],
+            "schluss": "Das Taxon umfasst schienenfreie und spurgeführte Landfahrzeuge mit oder ohne Fahrantrieb in fünf aneinandergrenzenden Kindartikeln; Mischformen liegen in einem eigenen Taxon, Zugtier-, Windfahrzeuge und Obusse sind nicht abgedeckt."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [
+            "A-0126",
+            "A-0133",
+            "A-0138",
+            "A-0142",
+            "A-0145"
+          ]
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Gemeinsame Architektur: Kern aller Landfahrzeuge",
+      "abschnittstyp": "querschnitt",
+      "absaetze": [
+        {
+          "absatz_id": "P4",
+          "text": "Der Vergleich ergibt einen Kern, den alle fünf Grundmodelle führen. Fahrzeugstruktur und Fahrwerk besitzt jede Fahrzeugart; es trägt die Fahrzeuglasten und leitet sie über Räder, Gleisketten oder Radsätze in Fahrbahn, Gelände oder Gleis. Bremssystem, Elektrik und Elektronik sowie Beleuchtung und Sicht, die Lichtsignale abgibt, gehören ebenfalls zu jedem Grundmodell; ohne Bremssystem kommen nur ungebremste leichte Anhänger aus, ohne die beiden anderen manche Güterwagen. Ein Nutzlast-Hauptsystem, das die Ladung aufnimmt und ihre Lasten in die Tragstruktur leitet, haben alle fünf unter wechselnden Glossarnamen: meist Aufbau und Ladung, beim Personenkraftwagen Laderaum und Anhängevorrichtung, bei Arbeits- und Baumaschinen Arbeitsausrüstung, bei gepanzerten Fahrzeugen Waffenanlage und Missionsausrüstung. Lokomotive, Stadtbahn, U-Bahn und Reisezugwagen sowie einzelne Leichtfahrzeuge führen keines.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "A-0126/P4",
+              "A-0126/P5",
+              "A-0133/P4",
+              "A-0133/P5",
+              "A-0138/P5",
+              "A-0138/P7",
+              "A-0142/P5",
+              "A-0145/P5",
+              "A-0145/P12"
+            ],
+            "schluss": "Fahrzeugstruktur und Fahrwerk, Bremssystem, Elektrik und Elektronik, Beleuchtung und Sicht und ein Nutzlast-Hauptsystem stehen in allen fünf Grundmodellen; nur Fahrzeugstruktur und Fahrwerk besitzt ausnahmslos jede Fahrzeugart."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [
+            "A-0126",
+            "A-0133",
+            "A-0138",
+            "A-0142",
+            "A-0145"
+          ]
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Gemeinsame Architektur: selbstfahrende Fahrzeuge und Wirkkette",
+      "abschnittstyp": "querschnitt",
+      "absaetze": [
+        {
+          "absatz_id": "P5",
+          "text": "Selbstfahrende Landfahrzeuge führen zusätzlich zum Kern nahezu durchgängig Antriebssystem und Bedienraum, als Fahrgastraum, Fahrerhaus, Fahrerplatz, Führerstand oder Besatzungsraum; Energieversorgungssystem, Fahrzeugsteuerung und Information, Fahrerassistenz und Sicherheit sowie Thermomanagement führen sie ebenfalls, Wagen der Schienenfahrzeuge in der Regel und Anhängefahrzeuge je nach Ausstattung auch. Ausnahmen liegen bei den Leichtfahrzeugen, deren Grundmodell etwa kein Thermomanagement hat. Die Wirkkette ist gleich: Das Energieversorgungssystem speichert Energie als Kraftstoff, Wasserstoff oder in einer Traktionsbatterie oder nimmt Fahrstrom ab, das Antriebssystem erzeugt Antriebsleistung und überträgt das Drehmoment an Radnabe, Antriebsrad der Kette oder Radsatz, die Fahrzeugsteuerung und Information gibt Sollwerte vor und überwacht den Fahrzeugzustand, das Thermomanagement regelt die Betriebstemperatur. Elektrik und Elektronik verteilen in Kraft- und Schienenfahrzeugen elektrische Energie über ein Niedervolt-Bordnetz und übertragen Daten über einen Fahrzeugbus.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "A-0126/P4",
+              "A-0126/P5",
+              "A-0126/P6",
+              "A-0133/P4",
+              "A-0133/P6",
+              "A-0133/P14",
+              "A-0138/P5",
+              "A-0138/P6",
+              "A-0142/P5",
+              "A-0142/P6",
+              "A-0142/P7",
+              "A-0145/P6",
+              "A-0145 modell.entfallene_kategorien: thermomanagement nur mit Wohnnutzung oder Kühlkoffer",
+              "Funktionsprinzip: Ein selbstfahrendes Fahrzeug braucht Energiequelle, Wandler, Kraftübertragung zum Fahrweg und Wärmeabfuhr"
+            ],
+            "schluss": "Antriebssystem und Bedienraum sind an den Bordantrieb gebunden; Energieversorgungssystem, Fahrzeugsteuerung und Information, Fahrerassistenz und Sicherheit sowie Thermomanagement führen selbstfahrende Fahrzeuge, in der Regel auch Wagen der Schienenfahrzeuge und je nach Ausstattung Anhängefahrzeuge; die Wirkkette von der Energieversorgung über den Antrieb zum Fahrwerk ist gleich."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [
+            "A-0126",
+            "A-0133",
+            "A-0138",
+            "A-0142",
+            "A-0145"
+          ]
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Gemeinsame Architektur: Hilfsenergie und Kupplungsstelle",
+      "abschnittstyp": "querschnitt",
+      "absaetze": [
+        {
+          "absatz_id": "P6",
+          "text": "Wiederkehrend sind zwei weitere Muster. Neben- und Versorgungssysteme stellen bei schweren Fahrzeugen Druckluft für das Bremssystem bereit, so bei Lkw und Bussen, beim Militär-Lkw, beim Sattelauflieger und im Eisenbahnzug, bei Arbeits- und Baumaschinen, Kettengelenkfahrzeug und Arbeitsanhängern hydraulische Leistung für Lenkung, Arbeitsausrüstung oder Kippeinrichtung. Und ziehende und gezogene Fahrzeuge sind über eine Kupplungsstelle verbunden, die Längskräfte, Bremsbefehle, Energie und Daten überträgt: Anhängevorrichtung und Sattelkupplung der Straßenfahrzeuge, Koppelpunkte mit Zapfwelle am Traktor, Anhängerbremsanschluss ungepanzerter Militärfahrzeuge, Kupplungselement und Steckverbindung der Anhängefahrzeuge, Fahrzeugende der Schienenfahrzeuge. Das Bremssystem verzögert gezogene Fahrzeuge auch nach einer Trennung: die selbsttätige Druckluftbremse der Eisenbahn bei Zugtrennung, die Auflaufbremse über das Abreißseil.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "A-0126/P8",
+              "A-0126/P9",
+              "A-0133/P5",
+              "A-0133/P12",
+              "A-0138/P7",
+              "A-0138/P9",
+              "A-0138/P10",
+              "A-0142/P11",
+              "A-0142/P15",
+              "A-0145/P4",
+              "A-0145/P6",
+              "A-0145/P10",
+              "A-0145/P11",
+              "Funktionsprinzip: Ein gezogenes Fahrzeug muss bei Trennung vom Zugfahrzeug selbst zum Stehen kommen"
+            ],
+            "schluss": "Druckluft- und Hydraulikversorgung der Neben- und Versorgungssysteme sowie eine Kupplungsstelle für Kräfte, Bremsbefehle, Energie und Daten kehren in allen fünf Kindartikeln wieder."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [
+            "A-0126",
+            "A-0133",
+            "A-0138",
+            "A-0142",
+            "A-0145"
+          ]
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Unterscheidungsmerkmal Ort des Fahrantriebs",
+      "abschnittstyp": "variante",
+      "absaetze": [
+        {
+          "absatz_id": "P7",
+          "text": "Das grundlegende Merkmal ist, ob das Fahrzeug selbst Antriebsleistung erzeugt. Straßen-, Gelände- und Militärfahrzeuge tragen den Fahrantrieb an Bord, ebenso Triebfahrzeuge, Stadtverkehr, Einschienen- und Zahnradbahn. Wagen und Anhängefahrzeuge werden gezogen: Ihnen fehlen Antriebssystem und, bis auf Steuerwagen und Leitstand des Spezialanhängers, ein Bedienraum; Zugkraft, Bremsbefehle und oft die Energie kommen über Fahrzeugende oder Kupplungsstelle, Energieversorgungssystem, Fahrzeugsteuerung und Information sowie Thermomanagement treten nur je nach Ausstattung auf. Die Standseilbahn verlegt den Antrieb in eine ortsfeste Station. Wohnwagen mit Rangierantrieb, elektrisch angetriebener Sattelauflieger und Landwirtschaftsanhänger mit Triebachse führen ein Antriebssystem nur als Variante.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "A-0133/P4",
+              "A-0133/P8",
+              "A-0133/P13",
+              "A-0145/P4",
+              "A-0145/P6",
+              "A-0145/P11",
+              "A-0145/P12",
+              "A-0126/P5",
+              "A-0138/P6",
+              "A-0142/P6",
+              "A-0145 modell.entfallene_kategorien: antrieb, thermomanagement, bedienraum"
+            ],
+            "schluss": "Selbstfahrend, gezogen oder ortsfest angetrieben ist das erste Unterscheidungsmerkmal; es trennt Wagen und Anhängefahrzeuge von den übrigen und bestimmt Antrieb, Energieversorgung, Bremse und Außenschnittstellen."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": [
+            "A-0126",
+            "A-0133",
+            "A-0138",
+            "A-0142",
+            "A-0145"
+          ]
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Unterscheidungsmerkmal Fahrweg, Laufwerk und Lenkprinzip",
+      "abschnittstyp": "variante",
+      "absaetze": [
+        {
+          "absatz_id": "P8",
+          "text": "Das zweite Merkmal ist die Führung auf dem Fahrweg. Schienenfahrzeuge sind spurgeführt: Gleis oder Fahrbalken geben die Richtung vor, das Laufwerk von Fahrzeugstruktur und Fahrwerk führt das Fahrzeug im Gleis, ein Lenksystem entfällt. Die übrigen Kindartikel lenken das Fahrzeug selbst, mit gelenkten Rädern über Lenksäule und Lenkgetriebe, mit Knicklenkung, über die Drehzahldifferenz der Gleisketten oder mit Lenkski; einspurige Zweiräder hält die Person durch Lenken im Gleichgewicht. Anhängefahrzeuge folgen dem Zugfahrzeug und besetzen ein Lenksystem nur mit Drehschemel oder Lenkachse. Kettenlaufwerke haben Schneemobil, Raupenbagger, Planierraupe sowie Kampf- und Schützenpanzer; bei Kettendrehzahllenkung wandert die Lenkfunktion in das Antriebssystem, und das Bremssystem kann an der Kraftübertragung wirken. Das Laufwerk ändert so Lenksystem, Antriebssystem, Bremssystem und Tragstruktur.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "A-0133/P4",
+              "A-0133/P5",
+              "A-0133/P11",
+              "A-0126/P7",
+              "A-0138/P11",
+              "A-0138/P12",
+              "A-0142/P11",
+              "A-0145/P6",
+              "A-0145/P9"
+            ],
+            "schluss": "Spurführung, Radlenkung, Knicklenkung, Kettendrehzahllenkung, Lenkski und passives Folgen sind die Lösungen des Merkmals; sie verändern Lenk-, Antriebs- und Bremssystem sowie die Tragstruktur."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": [
+            "A-0126",
+            "A-0133",
+            "A-0138",
+            "A-0142",
+            "A-0145"
+          ]
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Unterscheidungsmerkmal Aufgabe und Nutzlast",
+      "abschnittstyp": "variante",
+      "absaetze": [
+        {
+          "absatz_id": "P9",
+          "text": "Das dritte Merkmal ist die Aufgabe des Nutzlast-Hauptsystems. Straßen-, Schienen- und Anhängefahrzeuge befördern vor allem Personen oder Güter; Fahrgastbeförderung bringt Türsteuerung, Fahrgastinformation und Klimatisierung, Güterbeförderung eine Aufbauschnittstelle, Kupplung oder Ladeeinrichtung, und Sonderfahrzeuge nutzen die Aufbauschnittstelle für Aufgaben über das Befördern hinaus. Arbeits- und Baumaschinen geben einen großen Teil der Motorleistung an eine Arbeitsausrüstung ab, die Hydraulikversorgung oder Zapfwelle der Neben- und Versorgungssysteme speist und Funktionen der Fahrzeugsteuerung und Information führen; Arbeitsanhänger beziehen diese Energie vom Zugfahrzeug oder aus einem eigenen Aggregat. Gepanzerte Militärfahrzeuge wirken oder befördern unter Schutz: Waffenanlage und Missionsausrüstung leiten die Waffenlast über den Turmdrehkranz in die Wanne, Fahrerassistenz und Sicherheit schützt die Insassen mit dem Selbstschutz.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "A-0126/P9",
+              "A-0133/P12",
+              "A-0138/P9",
+              "A-0138/P10",
+              "A-0142/P8",
+              "A-0142/P9",
+              "A-0145/P8",
+              "A-0145/P11"
+            ],
+            "schluss": "Befördern, Arbeiten und Wirken unter Schutz sind die Aufgaben, nach denen sich das Nutzlast-Hauptsystem und mit ihm Neben- und Versorgungssysteme, Fahrzeugsteuerung und Sicherheitsausstattung unterscheiden."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": [
+            "A-0126",
+            "A-0133",
+            "A-0138",
+            "A-0142",
+            "A-0145"
+          ]
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Unterscheidungsmerkmal Energiezufuhr und Antriebsart",
+      "abschnittstyp": "variante",
+      "absaetze": [
+        {
+          "absatz_id": "P10",
+          "text": "Das vierte Merkmal ist die Herkunft der Fahrenergie. Straßen-, Gelände- und Militärfahrzeuge führen sie mit, Bezugsbauweise ist der Verbrennungsmotor mit Kraftstofftank. Batterieelektrische Antriebe betrachten Straßen-, Gelände- und Schienenfahrzeuge, Brennstoffzellenantriebe Straßen- und Schienenfahrzeuge sowie unter den Geländefahrzeugen der Traktor, die Militärfahrzeuge keinen von beiden; hybrid- oder dieselelektrische Antriebe kommen in allen vier selbstfahrenden Kindartikeln vor, Muskelkraft nur bei Leichtfahrzeugen, die Gasturbine nur beim Kampfpanzer. Schienenfahrzeuge beziehen Traktionsenergie auch über Oberleitung oder Stromschiene, Anhängefahrzeuge ihre Energie meist vom Zugfahrzeug. Elektrifizierung ergänzt im Antriebssystem eine Traktionsmaschine, die Bremsenergie zurückgewinnen kann, im Energieversorgungssystem Traktionsbatterie oder Wasserstofftank und Brennstoffzellensystem, im Thermomanagement weitere Kühlkreise.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "A-0126/P10",
+              "A-0133/P6",
+              "A-0133/P13",
+              "A-0138/P14",
+              "A-0142/P12",
+              "A-0145/P11",
+              "Betrachtungsumfang A-0142: batterieelektrische, Wasserstoff- und Brennstoffzellenantriebe ausgeschlossen"
+            ],
+            "schluss": "Die Kindartikel decken die Antriebsarten in unterschiedlichem Umfang ab; Elektrifizierung ändert in allen dieselben drei Hauptsysteme, externe Energiezufuhr kennzeichnet Schienen- und Anhängefahrzeuge."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": [
+            "A-0126",
+            "A-0133",
+            "A-0138",
+            "A-0142",
+            "A-0145"
+          ]
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Unterscheidungsmerkmal Rechtsrahmen und Einsatzumgebung",
+      "abschnittstyp": "variante",
+      "absaetze": [
+        {
+          "absatz_id": "P11",
+          "text": "Das fünfte Merkmal ist der Rechtsrahmen der Einsatzumgebung. Straßen- und Anhängefahrzeuge unterliegen in der Europäischen Union der Typgenehmigung für Kraftfahrzeuge und ihre Anhänger oder für zwei- bis vierrädrige Kraftfahrzeuge, in Deutschland Pedelecs dem Fahrradrecht, land- und forstwirtschaftliche Zugmaschinen und Anhänger einem eigenen Regime. Schienenfahrzeuge folgen in Deutschland Eisenbahn- oder Straßenbahnrecht, in der Europäischen Union Eisenbahnfahrzeuge zusätzlich der Interoperabilitätsrichtlinie für das Eisenbahnsystem, Spezialbahnen bauartspezifischen Regelwerken. Für Mähdrescher, Baumaschinen, Schneemobile und Gelände-ATV regelt die Europäische Union vor allem die Motoren mobiler Maschinen; rein militärische Fahrzeuge nimmt die zivile Typgenehmigung aus. Der Rechtsrahmen hängt von Einsatzumgebung und Zweck ab, verläuft teils quer zu den Kindartikeln, wie bei Straßen- und Anhängefahrzeugen oder Traktor und Landwirtschaftsanhänger, und bestimmt die Anforderungen an Beleuchtung und Sicht, Bremssystem sowie Fahrerassistenz und Sicherheit und die Grenzen, die die Fahrzeugsteuerung und Information durchsetzt, etwa Höchstgeschwindigkeit oder an das Treten gebundene Unterstützung.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P2",
+              "A-0126/P2",
+              "A-0126/P7",
+              "A-0133/P9",
+              "A-0133/P10",
+              "A-0138/P16",
+              "A-0138/P17",
+              "A-0142/P3",
+              "A-0145/P1",
+              "A-0145/P2",
+              "A-0145/P4",
+              "A-0145/P8"
+            ],
+            "schluss": "Der Rechtsrahmen folgt Einsatzumgebung und Zweck mit je genanntem Geltungsbereich, verläuft teils quer zu den Kindartikeln und bestimmt Anforderungen an Beleuchtung, Bremse, Sicherheitsausstattung und durchgesetzte Grenzen der Fahrzeugsteuerung."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": [
+            "A-0126",
+            "A-0133",
+            "A-0138",
+            "A-0142",
+            "A-0145"
+          ]
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Zusammenfassung",
+      "abschnittstyp": "gesamtsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P12",
+          "text": "Landfahrzeuge teilen damit ein Grundmodell in zwei Ringen: einen Kern aus Fahrzeugstruktur und Fahrwerk, Bremssystem, Elektrik und Elektronik, Beleuchtung und Sicht und einem Nutzlast-Hauptsystem, den auch gezogene Fahrzeuge besitzen, und einen zweiten Ring aus Antriebssystem, Energieversorgungssystem, Fahrzeugsteuerung und Information, Fahrerassistenz und Sicherheit, Thermomanagement und Bedienraum, bei selbstfahrenden durchgängig, bei gezogenen je nach Bauart und Ausstattung; Lenksystem sowie Neben- und Versorgungssysteme kommen je nach Fahrweg und Aufgabe hinzu. Den Kindartikel wählt man stufenweise. Zuerst scheidet aus, was kein Kindartikel abdeckt, etwa Zugtier- und Windfahrzeuge, Obusse, Fahrradanhänger, gezogene Arbeitsmaschinen ohne Ladefunktion und Mehrraumfahrzeuge; sie spezialisieren den Grundblock direkt oder bleiben offen. Danach ist ein spurgeführtes Fahrzeug ein Schienenfahrzeug, ein schienenfreies ohne eigenen Fahrantrieb, das von einem Kraftfahrzeug oder einer Zugmaschine gezogen wird, ein Anhängefahrzeug, ein für die Streitkräfte entwickeltes oder angepasstes ein Militärfahrzeug; ein selbstfahrendes Fahrzeug, das überwiegend abseits befestigter Straßen arbeitet, ist ein Geländefahrzeug, sonst ein Straßenfahrzeug.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P3",
+              "P4",
+              "P5",
+              "P6",
+              "P7",
+              "P8",
+              "P9",
+              "P10",
+              "P11",
+              "A-0126/P11",
+              "A-0133/P4",
+              "A-0133/P14",
+              "A-0138/P2",
+              "A-0138/P18",
+              "A-0142/P4",
+              "A-0142/P13",
+              "A-0145/P1",
+              "A-0145/P4",
+              "A-0145/P6",
+              "A-0145/P12",
+              "Betrachtungsumfang A-0126: ohne Bindung an Gleise oder Fahrleitung, Obusse nur zur Abgrenzung",
+              "Betrachtungsumfang A-0145: von einem Zugfahrzeug gezogen, Fahrradanhänger und gezogene Arbeitsmaschinen ohne Ladefunktion nur zur Abgrenzung",
+              "Betrachtungsumfang A-0142: Bespannfahrzeuge nicht Gegenstand"
+            ],
+            "schluss": "Das Grundmodell besteht aus Kern und zweitem Ring, der bei selbstfahrenden Fahrzeugen durchgängig und bei gezogenen je nach Bauart und Ausstattung auftritt; die Wahl des Kindartikels schließt zuerst nicht abgedeckte Fahrzeuge aus und folgt dann Spurführung, Fahrantrieb mit Zugfahrzeug, militärischer Zweckbestimmung und Einsatzumgebung."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [
+            "A-0126",
+            "A-0133",
+            "A-0138",
+            "A-0142",
+            "A-0145"
+          ]
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Modellierungsbezug",
+      "abschnittstyp": "modellierung",
+      "absaetze": [
+        {
+          "absatz_id": "P13",
+          "text": "In SysML bildet ein abstrakter Block Landfahrzeug den Grundblock. Pflichtteil ist nur Fahrzeugstruktur und Fahrwerk; Bremssystem, Aufbau und Ladung, Elektrik und Elektronik sowie Beleuchtung und Sicht erhalten eine Multiplizität, die ihr Fehlen bei ungebremstem Anhänger, Lokomotive oder Güterwagen zulässt, die übrigen Hauptsysteme sind optional, der Bedienraum ist ein abstrakter Teil. Die erste Spezialisierung trennt Schienenfahrzeug von einem Block Schienenfreies Landfahrzeug mit optionalem Lenksystem, unter dem Straßen-, Gelände-, Militär- und Anhängefahrzeug stehen; selbstfahrend oder gezogen bleibt Variationspunkt, weil Schienenfahrzeuge beides umfassen. Pfade sind etwa Landfahrzeug → Schienenfreies Landfahrzeug → Straßenfahrzeug → Nutzfahrzeug → Aufbau und Ladung → Sattelkupplung → Verriegelung, Landfahrzeug → Schienenfahrzeug → Wagen → Reisezugwagen → Schlafwagen und Landfahrzeug → Schienenfreies Landfahrzeug → Geländefahrzeug → Baumaschine → Radlader → Arbeitsausrüstung → Hubgerüst.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P4",
+              "P5",
+              "P7",
+              "P8",
+              "P12",
+              "A-0126/P12",
+              "A-0133/P15",
+              "A-0138/P19",
+              "A-0142/P14",
+              "A-0145/P13"
+            ],
+            "schluss": "Ein Grundblock mit einem Pflichtteil, Multiplizitäten für den Kern und optionalen Teilen trägt die Spezialisierung nach Spurführung und darunter die fünf Kindartikel; die Pfade der Kindartikel setzen sich darunter fort."
+          },
+          "sicherheit": "gering",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": [
+            "A-0126",
+            "A-0133",
+            "A-0138",
+            "A-0142",
+            "A-0145"
+          ]
+        },
+        {
+          "absatz_id": "P14",
+          "text": "Taxonweit wiederverwendbar sind der Teilbaum aus Verbrennungsmotor, Kraftstoffanlage und Abgasnachbehandlung, das Hochvolt-Energiesystem mit Traktionsbatterie, Ladeeinrichtung und Batterietemperierung, das Niedervolt-Bordnetz mit Fahrzeugbus, die Druckluftanlage mit Betriebsbremse, die Hydraulikversorgung sowie Kettenlaufwerk und Knicklenkung. Ein Schnittstellenmuster Kupplungsstelle mit Ports für Längs- und Stützkräfte, Bremsleitungen, Energie und Daten verbindet ziehende und gezogene Fahrzeuge, ein externer Block Fahrweg mit Ports für Tragen, Führen und Kraftübertragung bildet Fahrbahn, Gelände oder Gleis ab. Blockdefinitionsdiagramme zeigen Grundblock und Spezialisierungen, interne Blockdiagramme die Flüsse über Kupplungsstelle und Fahrweg, Zustandsdiagramme die Zustände gekuppelt, abgekuppelt und abgestellt.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P6",
+              "A-0126/P13",
+              "A-0133/P15",
+              "A-0133/P16",
+              "A-0138/P20",
+              "A-0142/P15",
+              "A-0145/P13",
+              "A-0145/P14"
+            ],
+            "schluss": "Die in mehreren Kindartikeln als wiederverwendbar genannten Teilmodelle und Ports lassen sich auf Ebene der Landfahrzeuge einmal festlegen, ergänzt um die Muster Kupplungsstelle und Fahrweg."
+          },
+          "sicherheit": "gering",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": [
+            "A-0126",
+            "A-0133",
+            "A-0138",
+            "A-0142",
+            "A-0145"
+          ]
+        }
+      ]
+    }
+  ],
+  "modell": {
+    "elemente": [
+      {
+        "id": "E1",
+        "name": "Landfahrzeug",
+        "typ": "gesamtsystem",
+        "eltern_id": null,
+        "absatz_ids": [
+          "P1",
+          "P3",
+          "P12",
+          "P13"
+        ]
+      },
+      {
+        "id": "E2",
+        "name": "Fahrzeugstruktur und Fahrwerk",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P8",
+          "P13"
+        ],
+        "kategorie": "struktur_fahrwerk"
+      },
+      {
+        "id": "E3",
+        "name": "Antriebssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P5",
+          "P7",
+          "P8",
+          "P10"
+        ],
+        "kategorie": "antrieb"
+      },
+      {
+        "id": "E4",
+        "name": "Energieversorgungssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P5",
+          "P7",
+          "P10"
+        ],
+        "kategorie": "energieversorgung"
+      },
+      {
+        "id": "E5",
+        "name": "Lenksystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P8",
+          "P12"
+        ],
+        "kategorie": "lenkung"
+      },
+      {
+        "id": "E6",
+        "name": "Bremssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P6",
+          "P8",
+          "P11"
+        ],
+        "kategorie": "bremse"
+      },
+      {
+        "id": "E7",
+        "name": "Aufbau und Ladung",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P9",
+          "P13"
+        ],
+        "kategorie": "aufbau_nutzlast"
+      },
+      {
+        "id": "E8",
+        "name": "Elektrik und Elektronik",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P5",
+          "P12"
+        ],
+        "kategorie": "elektrik_elektronik"
+      },
+      {
+        "id": "E9",
+        "name": "Fahrzeugsteuerung und Information",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P5",
+          "P9",
+          "P11"
+        ],
+        "kategorie": "steuerung_information"
+      },
+      {
+        "id": "E10",
+        "name": "Fahrerassistenz und Sicherheit",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P5",
+          "P9",
+          "P11"
+        ],
+        "kategorie": "assistenz_sicherheit"
+      },
+      {
+        "id": "E11",
+        "name": "Beleuchtung und Sicht",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P11"
+        ],
+        "kategorie": "beleuchtung_sicht"
+      },
+      {
+        "id": "E12",
+        "name": "Thermomanagement",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P5",
+          "P7",
+          "P10"
+        ],
+        "kategorie": "thermomanagement"
+      },
+      {
+        "id": "E13",
+        "name": "Neben- und Versorgungssysteme",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P6",
+          "P9",
+          "P12"
+        ],
+        "kategorie": "nebensysteme"
+      }
+    ],
+    "funktionen": [
+      {
+        "id": "F1",
+        "name": "Fahrzeuglasten tragen",
+        "ausgefuehrt_von": [
+          "E2"
+        ],
+        "absatz_ids": [
+          "P4"
+        ]
+      },
+      {
+        "id": "F2",
+        "name": "Fahrzeug fortbewegen",
+        "ausgefuehrt_von": [
+          "E3",
+          "E2"
+        ],
+        "absatz_ids": [
+          "P5"
+        ]
+      },
+      {
+        "id": "F3",
+        "name": "Antriebsleistung erzeugen",
+        "ausgefuehrt_von": [
+          "E3"
+        ],
+        "absatz_ids": [
+          "P5",
+          "P7"
+        ]
+      },
+      {
+        "id": "F4",
+        "name": "Drehmoment übertragen",
+        "ausgefuehrt_von": [
+          "E3"
+        ],
+        "absatz_ids": [
+          "P5"
+        ]
+      },
+      {
+        "id": "F5",
+        "name": "Energie speichern",
+        "ausgefuehrt_von": [
+          "E4"
+        ],
+        "absatz_ids": [
+          "P5",
+          "P10"
+        ]
+      },
+      {
+        "id": "F6",
+        "name": "Fahrstrom abnehmen",
+        "ausgefuehrt_von": [
+          "E4"
+        ],
+        "absatz_ids": [
+          "P5",
+          "P10"
+        ]
+      },
+      {
+        "id": "F7",
+        "name": "Fahrzeug lenken",
+        "ausgefuehrt_von": [
+          "E5"
+        ],
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "F8",
+        "name": "Fahrzeug im Gleis führen",
+        "ausgefuehrt_von": [
+          "E2"
+        ],
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "F9",
+        "name": "Fahrzeug verzögern",
+        "ausgefuehrt_von": [
+          "E6"
+        ],
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "F10",
+        "name": "Bremsenergie zurückgewinnen",
+        "ausgefuehrt_von": [
+          "E3"
+        ],
+        "absatz_ids": [
+          "P10"
+        ]
+      },
+      {
+        "id": "F11",
+        "name": "Ladung aufnehmen",
+        "ausgefuehrt_von": [
+          "E7"
+        ],
+        "absatz_ids": [
+          "P4",
+          "P9"
+        ]
+      },
+      {
+        "id": "F12",
+        "name": "Fahrzeuge kuppeln",
+        "ausgefuehrt_von": [
+          "E2",
+          "E8"
+        ],
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "F13",
+        "name": "Elektrische Energie verteilen",
+        "ausgefuehrt_von": [
+          "E8"
+        ],
+        "absatz_ids": [
+          "P5"
+        ]
+      },
+      {
+        "id": "F14",
+        "name": "Daten übertragen",
+        "ausgefuehrt_von": [
+          "E8"
+        ],
+        "absatz_ids": [
+          "P5"
+        ]
+      },
+      {
+        "id": "F15",
+        "name": "Fahrzeugzustand überwachen",
+        "ausgefuehrt_von": [
+          "E9"
+        ],
+        "absatz_ids": [
+          "P5"
+        ]
+      },
+      {
+        "id": "F16",
+        "name": "Insassen schützen",
+        "ausgefuehrt_von": [
+          "E10"
+        ],
+        "absatz_ids": [
+          "P9"
+        ]
+      },
+      {
+        "id": "F17",
+        "name": "Lichtsignale abgeben",
+        "ausgefuehrt_von": [
+          "E11"
+        ],
+        "absatz_ids": [
+          "P4"
+        ]
+      },
+      {
+        "id": "F18",
+        "name": "Betriebstemperatur regeln",
+        "ausgefuehrt_von": [
+          "E12"
+        ],
+        "absatz_ids": [
+          "P5"
+        ]
+      },
+      {
+        "id": "F19",
+        "name": "Druckluft bereitstellen",
+        "ausgefuehrt_von": [
+          "E13"
+        ],
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "F20",
+        "name": "Hydraulische Leistung bereitstellen",
+        "ausgefuehrt_von": [
+          "E13"
+        ],
+        "absatz_ids": [
+          "P6"
+        ]
+      }
+    ],
+    "fluesse": [
+      {
+        "id": "S1",
+        "von": "E4",
+        "nach": "E3",
+        "art": "stoff",
+        "medium": "Kraftstoff oder Wasserstoff",
+        "absatz_ids": [
+          "P5",
+          "P10"
+        ],
+        "schnittstelle": "Kraftstoff- oder Wasserstoffzulauf"
+      },
+      {
+        "id": "S2",
+        "von": "E4",
+        "nach": "E3",
+        "art": "elektrisch",
+        "medium": "Traktionsstrom aus Traktionsbatterie oder Fahrstrom",
+        "absatz_ids": [
+          "P5",
+          "P10"
+        ],
+        "schnittstelle": "Hochvolt-Schnittstelle oder Einspeisung des Traktionsstromrichters"
+      },
+      {
+        "id": "S3",
+        "von": "E3",
+        "nach": "E2",
+        "art": "mechanisch",
+        "medium": "Drehmoment",
+        "absatz_ids": [
+          "P5"
+        ],
+        "schnittstelle": "Radnabe, Antriebsrad der Kette oder Getriebeabtrieb zum Radsatz"
+      },
+      {
+        "id": "S4",
+        "von": "E5",
+        "nach": "E2",
+        "art": "mechanisch",
+        "medium": "Lenkbewegung",
+        "absatz_ids": [
+          "P8"
+        ],
+        "schnittstelle": "Achsschenkel, Knickgelenk, Drehschemel oder Lenkski"
+      },
+      {
+        "id": "S5",
+        "von": "E6",
+        "nach": "E2",
+        "art": "mechanisch",
+        "medium": "Bremsmoment",
+        "absatz_ids": [
+          "P6",
+          "P8"
+        ],
+        "schnittstelle": "Radbremse oder Bremse an der Kraftübertragung"
+      },
+      {
+        "id": "S6",
+        "von": "E7",
+        "nach": "E2",
+        "art": "mechanisch",
+        "medium": "Ladungs-, Arbeits- und Waffenlasten",
+        "absatz_ids": [
+          "P4",
+          "P9"
+        ],
+        "schnittstelle": "Aufbaubefestigung, Anlenkpunkte oder Turmdrehkranz"
+      },
+      {
+        "id": "S7",
+        "von": "E9",
+        "nach": "E3",
+        "art": "information",
+        "medium": "Sollwerte für den Antrieb",
+        "absatz_ids": [
+          "P5"
+        ],
+        "schnittstelle": "Fahrzeugbus"
+      },
+      {
+        "id": "S8",
+        "von": "E13",
+        "nach": "E6",
+        "art": "pneumatisch",
+        "medium": "Druckluft",
+        "absatz_ids": [
+          "P6"
+        ],
+        "schnittstelle": "Druckluftanschluss der Bremse oder Hauptluftleitung"
+      },
+      {
+        "id": "S9",
+        "von": "E13",
+        "nach": "E7",
+        "art": "hydraulisch",
+        "medium": "Drucköl",
+        "absatz_ids": [
+          "P6",
+          "P9"
+        ],
+        "schnittstelle": "Hydraulikanschlüsse der Arbeitsausrüstung"
+      },
+      {
+        "id": "S10",
+        "von": "E3",
+        "nach": "E12",
+        "art": "thermisch",
+        "medium": "Abwärme von Motor oder Traktionsmaschine",
+        "absatz_ids": [
+          "P5"
+        ],
+        "schnittstelle": "Kühlkreislauf"
+      },
+      {
+        "id": "S11",
+        "von": "E8",
+        "nach": "E11",
+        "art": "elektrisch",
+        "medium": "Versorgung und Schaltsignale der Leuchten",
+        "absatz_ids": [
+          "P4",
+          "P5"
+        ],
+        "schnittstelle": "Leitungssatz zu den Leuchten"
+      }
+    ],
+    "entfallene_kategorien": [
+      {
+        "kategorie": "bedienraum",
+        "grund": "Nicht als eigenes Element im Grundmodell: Der Bedienraum heißt je nach Fahrzeugart Fahrgastraum, Fahrerhaus, Fahrerplatz, Führerstand oder Besatzungsraum, Wagen (bis auf den Steuerwagen) und Anhängefahrzeuge (bis auf den Leitstand des Spezialanhängers) haben keinen; er erscheint als abstrakter Teil, den die Spezialisierungen festlegen; siehe Abschnitte zur gemeinsamen Architektur und zum Modellierungsbezug."
+      }
+    ],
+    "varianten": [
+      {
+        "id": "V1",
+        "element_id": "E3",
+        "bezeichnung": "Ort des Fahrantriebs",
+        "alternativen": [
+          "Fahrantrieb an Bord des Fahrzeugs",
+          "Kein Fahrantrieb, Zugkraft vom Zugfahrzeug über Fahrzeugende oder Kupplungsstelle",
+          "Ortsfester Seilantrieb in einer Antriebsstation",
+          "Gezogenes Fahrzeug mit eigenem Rangier- oder Hilfsantrieb"
+        ],
+        "auswahlkriterien": [
+          "Allein fahren oder im Verband mit einem Zugfahrzeug: Straßen-, Gelände- und Militärfahrzeuge sowie Triebfahrzeuge fahren selbst, Wagen der Schienenfahrzeuge und Anhängefahrzeuge werden gezogen",
+          "Steigung und Fahrweg, die einen ortsfesten Antrieb nahelegen (Standseilbahn bei den Schienenfahrzeugen)",
+          "Bedarf an Rangier- oder Fahrbewegung ohne Zugfahrzeug (Wohnwagen, elektrisch angetriebener Sattelauflieger, Landwirtschaftsanhänger bei den Anhängefahrzeugen)"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E4",
+            "beschreibung": "Ohne Fahrantrieb entfällt der Traktionsenergiespeicher; ein Energieversorgungssystem bleibt nur für Bordenergie, Wohnnutzung oder Arbeitsaggregate."
+          },
+          {
+            "element_id": "E6",
+            "beschreibung": "Gezogene Fahrzeuge erhalten Bremsbefehle über Fahrzeugende oder Kupplungsstelle und brauchen eine bei Trennung wirksame Bremse."
+          },
+          {
+            "element_id": "E12",
+            "beschreibung": "Traktionskühlung entfällt bei gezogenen Fahrzeugen; beim ortsfesten Seilantrieb wandert sie in die Station."
+          },
+          {
+            "element_id": "E2",
+            "beschreibung": "Fahrzeugende oder Kupplungselement mit Stützeinrichtung werden zur Systemgrenze."
+          }
+        ],
+        "absatz_ids": [
+          "P7"
+        ]
+      },
+      {
+        "id": "V2",
+        "element_id": "E2",
+        "bezeichnung": "Fahrweg, Laufwerk und Lenkprinzip",
+        "alternativen": [
+          "Spurführung durch Gleis oder Fahrbalken ohne Lenksystem",
+          "Radfahrwerk mit gelenkten Rädern",
+          "Radfahrwerk mit Knicklenkung und geteilter Tragstruktur",
+          "Kettenlaufwerk mit Lenkung über die Kettendrehzahl",
+          "Gleiskette mit Lenkski",
+          "Gezogenes Fahrwerk, das dem Zugfahrzeug folgt, wahlweise mit Drehschemel oder Lenkachse"
+        ],
+        "auswahlkriterien": [
+          "Fahrweg und Untergrund: Gleis oder Fahrbalken (Schienenfahrzeuge), Straße (Straßenfahrzeuge, Anhängefahrzeuge), weicher Boden, Schnee oder Gelände (Geländefahrzeuge, Militärfahrzeuge)",
+          "Beweglichkeit und Wendigkeit gegenüber Straßengeschwindigkeit und Kosten",
+          "Achslast, Bodendruck und Bauraum des Laufwerks"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E5",
+            "beschreibung": "Bei Spurführung entfällt das Lenksystem; bei Kettendrehzahllenkung geht die Lenkfunktion in den Fahrantrieb über, bei Anhängefahrzeugen ist es optional."
+          },
+          {
+            "element_id": "E3",
+            "beschreibung": "Die Kraftübertragung endet an Radnabe, Antriebsrad der Kette oder Radsatz; Knicklenkung verlangt Gelenkwellen über das Knickgelenk."
+          },
+          {
+            "element_id": "E6",
+            "beschreibung": "Bei Kettenlaufwerken kann die Bremse an der Kraftübertragung statt an Radbremsen wirken."
+          }
+        ],
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "V3",
+        "element_id": "E7",
+        "bezeichnung": "Aufgabe und Nutzlast",
+        "alternativen": [
+          "Personenbeförderung mit Fahrgastraum oder Fahrgastbereich",
+          "Güterbeförderung mit Laderaum, Aufbau, Kupplung oder Ladeeinrichtung",
+          "Arbeitsausrüstung mit Leistungsabgabe über Hydraulik oder Zapfwelle",
+          "Waffenanlage und Missionsausrüstung unter Panzerschutz",
+          "Sonderausbau auf einem Basisfahrzeug"
+        ],
+        "auswahlkriterien": [
+          "Hauptaufgabe Befördern (Straßenfahrzeuge, Schienenfahrzeuge, Straßenanhänger), Arbeiten (Arbeits- und Baumaschinen bei den Geländefahrzeugen, Arbeitsanhänger) oder Wirken unter Schutz (gepanzerte Militärfahrzeuge)",
+          "Leistungsbedarf der Nutzlast im Vergleich zum Fahrantrieb",
+          "Lasteinleitung in die Tragstruktur und Schwerpunktlage"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E13",
+            "beschreibung": "Arbeitsausrüstung und Kippaufbauten verlangen Hydraulikversorgung oder Zapfwelle."
+          },
+          {
+            "element_id": "E9",
+            "beschreibung": "Arbeitsspezifische Funktionen oder Türsteuerung und Fahrgastinformation kommen hinzu."
+          },
+          {
+            "element_id": "E10",
+            "beschreibung": "Unter Panzerschutz übernimmt Fahrerassistenz und Sicherheit den Selbstschutz der Insassen."
+          },
+          {
+            "element_id": "E12",
+            "beschreibung": "Fahrgastbeförderung bringt die Klimatisierung des Innenraums, Arbeitshydraulik einen Ölkühler."
+          }
+        ],
+        "absatz_ids": [
+          "P9"
+        ]
+      },
+      {
+        "id": "V4",
+        "element_id": "E4",
+        "bezeichnung": "Energiezufuhr und Antriebsart",
+        "alternativen": [
+          "Mitgeführter Kraftstoff mit Verbrennungsmotor",
+          "Hybrid- oder dieselelektrischer Antrieb",
+          "Traktionsbatterie mit Traktionsmaschine",
+          "Wasserstofftank mit Brennstoffzellensystem",
+          "Traktionsenergie von außen über Oberleitung oder Stromschiene",
+          "Energie vom Zugfahrzeug über die Kupplungsstelle",
+          "Muskelkraft mit oder ohne elektrischen Hilfsantrieb"
+        ],
+        "auswahlkriterien": [
+          "Im Kindartikel betrachtete Antriebsarten: batterieelektrisch bei Straßen-, Gelände- und Schienenfahrzeugen, Brennstoffzelle bei Straßen- und Schienenfahrzeugen und beim Traktor, bei Militärfahrzeugen keine von beiden",
+          "Verfügbarkeit von Fahrleitung, Lade- oder Tankinfrastruktur im Einsatzgebiet",
+          "Reichweite und Einsatzdauer ohne Nachladen oder Nachtanken"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E3",
+            "beschreibung": "Elektrifizierung ergänzt eine Traktionsmaschine, die Bremsenergie zurückgewinnen kann."
+          },
+          {
+            "element_id": "E12",
+            "beschreibung": "Batterie- und Brennstoffzellenantriebe bringen Batterietemperierung und weitere Kühlkreise."
+          },
+          {
+            "element_id": "E8",
+            "beschreibung": "Bei elektrischem Antrieb ersetzt oft ein Gleichspannungswandler den Generator als Quelle des Niedervolt-Bordnetzes."
+          }
+        ],
+        "absatz_ids": [
+          "P10"
+        ]
+      },
+      {
+        "id": "V5",
+        "element_id": "E1",
+        "bezeichnung": "Rechtsrahmen und Einsatzumgebung",
+        "alternativen": [
+          "Typgenehmigung für Kraftfahrzeuge und ihre Anhänger im öffentlichen Straßenverkehr",
+          "Genehmigung als land- oder forstwirtschaftliches Fahrzeug",
+          "Fahrradrecht für Pedelecs und Fahrräder",
+          "Eisenbahn- oder Straßenbahnrecht",
+          "Regelung nur der Motoren mobiler Maschinen ohne Straßenzulassung",
+          "Rein militärisches Fahrzeug außerhalb der zivilen Typgenehmigung"
+        ],
+        "auswahlkriterien": [
+          "Teilnahme am öffentlichen Straßenverkehr oder Betrieb auf einem Eisenbahn- oder Straßenbahnnetz (Straßenfahrzeuge, Anhängefahrzeuge, Schienenfahrzeuge)",
+          "Einsatz in Land- und Forstwirtschaft, auf Baustellen oder im Gelände (Geländefahrzeuge, Arbeitsanhänger)",
+          "Bestimmung für die Streitkräfte (Militärfahrzeuge)"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E11",
+            "beschreibung": "Lichtsignale, Kennzeichnung und Sichtanforderungen folgen dem Rechtsrahmen."
+          },
+          {
+            "element_id": "E6",
+            "beschreibung": "Bremsausführung und Rückfallebenen richten sich nach Straßen-, Eisenbahn- oder Straßenbahnrecht."
+          },
+          {
+            "element_id": "E9",
+            "beschreibung": "Die Fahrzeugsteuerung setzt Grenzen wie Höchstgeschwindigkeit oder an das Treten gebundene Unterstützung durch."
+          },
+          {
+            "element_id": "E10",
+            "beschreibung": "Sicherheitsausstattung und Zugbeeinflussung hängen vom Rechtsrahmen ab."
+          }
+        ],
+        "absatz_ids": [
+          "P11"
+        ]
+      }
+    ],
+    "klaerungsfragen": [
+      {
+        "id": "K1",
+        "frage": "Wird das Fahrzeug durch Gleis oder Fahrbalken geführt, wird es ohne eigenen Fahrantrieb von einem Kraftfahrzeug oder einer Zugmaschine gezogen, ist es für die Streitkräfte entwickelt oder angepasst, arbeitet es als selbstfahrendes Fahrzeug überwiegend auf Straßen oder abseits befestigter Straßen, oder gehört es keiner dieser Gruppen an, etwa weil es an eine Fahrleitung gebunden ist oder von Zugtieren oder Wind bewegt wird?",
+        "element_ids": [
+          "E1"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängt ab, ob Schienen-, Anhänge-, Militär-, Gelände- oder Straßenfahrzeuge das Grundmodell spezialisieren und welche Hauptsysteme entfallen, oder ob der Grundblock Landfahrzeug direkt zu spezialisieren ist.",
+        "variante_ids": [
+          "V1",
+          "V2",
+          "V5"
+        ]
+      },
+      {
+        "id": "K2",
+        "frage": "Soll das Fahrzeug selbst Antriebsleistung erzeugen, im Verband gezogen werden oder als gezogenes Fahrzeug einen eigenen Rangier- oder Hilfsantrieb erhalten?",
+        "element_ids": [
+          "E3",
+          "E4"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Antriebssystem, Traktionsenergiespeicher, Bedienraum und die Bremsansteuerung über die Kupplungsstelle ab.",
+        "variante_ids": [
+          "V1"
+        ]
+      },
+      {
+        "id": "K3",
+        "frage": "Auf welchem Fahrweg und Untergrund soll das Fahrzeug fahren, und soll es spurgeführt, mit gelenkten Rädern, mit Knicklenkung oder mit Gleisketten bewegt werden?",
+        "element_ids": [
+          "E2",
+          "E5"
+        ],
+        "anlass": "betrieb",
+        "relevanz": "Die Antwort legt Laufwerk, Lenkprinzip und Bremsangriff fest und entscheidet, ob ein Lenksystem vorhanden ist.",
+        "variante_ids": [
+          "V2"
+        ]
+      },
+      {
+        "id": "K4",
+        "frage": "Soll das Fahrzeug Personen oder Güter befördern, Leistung an eine Arbeitsausrüstung abgeben oder unter Schutz wirken, und welche Energie braucht die Nutzlast vom Fahrzeug?",
+        "element_ids": [
+          "E7",
+          "E13"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Art des Nutzlast-Hauptsystems, Hydraulik- oder Zapfwellenversorgung und arbeitsspezifische Steuerfunktionen ab.",
+        "variante_ids": [
+          "V3"
+        ]
+      },
+      {
+        "id": "K5",
+        "frage": "Woher bezieht das Fahrzeug Fahr- und Bordenergie, aus mitgeführtem Kraftstoff, Wasserstoff, einer Traktionsbatterie, aus Fahrleitung oder Stromschiene oder vom Zugfahrzeug, und welche Lade- oder Tankinfrastruktur steht im Einsatzgebiet zur Verfügung?",
+        "element_ids": [
+          "E4",
+          "E3",
+          "E12"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Die Antwort bestimmt Energiespeicher und Energiewandler sowie die Kühlkreise des Thermomanagements.",
+        "variante_ids": [
+          "V4"
+        ]
+      },
+      {
+        "id": "K6",
+        "frage": "Soll das Fahrzeug am öffentlichen Straßenverkehr oder auf einem Eisenbahn- oder Straßenbahnnetz teilnehmen, und nach welchem Genehmigungsregime soll es zugelassen werden?",
+        "element_ids": [
+          "E1",
+          "E11",
+          "E6"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen die Anforderungen an Beleuchtung und Sicht, Bremssystem und Sicherheitsausstattung ab.",
+        "variante_ids": [
+          "V5"
+        ]
+      },
+      {
+        "id": "K7",
+        "frage": "Mit welchen anderen Fahrzeugen soll das Fahrzeug gekuppelt werden, und welche Kräfte, Bremsbefehle, Energien und Daten muss die Kupplungsstelle übertragen?",
+        "element_ids": [
+          "E2",
+          "E6",
+          "E8"
+        ],
+        "anlass": "schnittstelle",
+        "relevanz": "Die Antwort legt Kupplungselement, Bremsleitungen und Steckverbindungen an der Systemgrenze fest.",
+        "variante_ids": [
+          "V1"
+        ]
+      },
+      {
+        "id": "K8",
+        "frage": "Wird das Fahrzeug von einer Person an Bord auf einem offenen Fahrerplatz, in einem umschlossenen oder geschützten Bedienraum, aus dem Zugfahrzeug, von einem Leitstand oder fahrerlos geführt?",
+        "element_ids": [
+          "E1",
+          "E10",
+          "E11"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Bedienraum-Spezialisierung, Rückhalte- und Schutzausstattung, Sichtsystem und Lenkeingabe ab."
+      }
+    ],
+    "anforderungsthemen": [
+      {
+        "id": "R1",
+        "element_ids": [
+          "E1"
+        ],
+        "thema": "Fahrzeugart und rechtliche Einstufung",
+        "kenngroessen": [
+          "Art des Fahrwegs",
+          "Antriebsart",
+          "Bauartbedingte Höchstgeschwindigkeit",
+          "Zulässige Gesamtmasse",
+          "Nenndauerleistung eines Hilfsantriebs"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "Straßenverkehrsgesetz, § 1 (Deutschland; Zulassung von Kraftfahrzeugen und ihren Anhängern für öffentliche Straßen, Begriff Kraftfahrzeug, Fahrräder mit elektromotorischem Hilfsantrieb)",
+            "quellen_id": "Q2",
+            "fundstelle": "§ 1 Abs. 1 bis 3"
+          }
+        ]
+      },
+      {
+        "id": "R2",
+        "element_ids": [
+          "E2",
+          "E6",
+          "E8"
+        ],
+        "thema": "Schnittstelle zu gekuppelten Fahrzeugen",
+        "kenngroessen": [
+          "Zug- und Stützkräfte",
+          "Anzahl der Brems-, Energie- und Datenleitungen",
+          "Bremswirkung bei Trennung"
+        ]
+      },
+      {
+        "id": "R3",
+        "element_ids": [
+          "E2",
+          "E5"
+        ],
+        "thema": "Schnittstelle zum Fahrweg",
+        "kenngroessen": [
+          "Achs- oder Radsatzlast",
+          "Bodendruck",
+          "Spurweite",
+          "Wendekreis"
+        ]
+      }
+    ]
+  },
+  "offene_punkte": [
+    "Taxonomie: Fahrzeuge mit Zugtier- oder Windantrieb (Q1), fahrleitungsgebundene Obusse (in A-0126 nur zur Abgrenzung), Nebenfahrzeuge und Bahndienstfahrzeuge, Dampftriebfahrzeuge und Magnetschwebebahnen (A-0133), drei- und vierrädrige Kraftfahrzeuge der Klasse L und Krafträder mit Beiwagen (A-0126), Side-by-Side-Fahrzeuge (A-0138), geschützte Transportfahrzeuge und Unterstützungspanzer (A-0142) sowie Deichselanhänger allgemeiner Bauart hinter Lastkraftwagen und Fahrradanhänger (A-0145) deckt kein Kindartikel ab; im Inventar klären, ob Artikel unter Landfahrzeuge vorgesehen sind.",
+    "Taxonomie: Militärische Anhänger sind weder in A-0142 noch in A-0145 ausdrücklich zugeordnet; die Wahlregel in P12 ordnet sie den Anhängefahrzeugen zu. Im Inventar bestätigen.",
+    "Taxonomie: Überschneidungen zwischen Kindartikeln (Geländewagen in A-0138 und Personenkraftwagen in A-0126; Militärfahrzeuge auf handelsüblicher Basis in A-0142 und Nutzfahrzeuge in A-0126; Straßenbahn in A-0133, die das Eurostat-Glossar Q3 unter B.II-18 auch bei den Straßenfahrzeugen führt) im Inventar als Mehrfachzuordnung oder Basisfahrzeugbeziehung festlegen.",
+    "Glossarklärung: Für Übersichten über Fahrzeugarten hinweg fehlt ein übergreifender Name der Kategorien bedienraum (Fahrgastraum, Fahrerhaus, Fahrerplatz, Führerstand, Besatzungsraum, Leitstand) und aufbau_nutzlast (Aufbau und Ladung, Laderaum und Anhängevorrichtung, Arbeitsausrüstung, Waffenanlage und Missionsausrüstung). Diese Übersicht führt bedienraum als entfallene Kategorie mit abstraktem Teil und aufbau_nutzlast als Aufbau und Ladung, den Namen der Mehrheit der Kindartikel.",
+    "Glossarklärung: Für assistenz_sicherheit verwenden Wagen (A-0133) und Anhängefahrzeuge (A-0145) Assistenz und Sicherheit, die übrigen Kindartikel Fahrerassistenz und Sicherheit; diese Übersicht folgt der Mehrheit.",
+    "Vereinheitlichung Kindartikel: Zuordnung der Druckluftanlage (Neben- und Versorgungssysteme oder Bremssystem, A-0133), des Kupplungselements (Fahrzeugstruktur und Fahrwerk oder Aufbau und Ladung, A-0145), der Leistungselektronik (Antriebssystem oder Energieversorgungssystem, A-0142) und der Hydraulikversorgung (A-0138) sowie die Funktionsnamen Fahrzeug im Gleis führen und Fahrzeug am Fahrweg führen (A-0133) angleichen, bevor das Grundmodell der Landfahrzeuge zusammengeführt wird.",
+    "Recherche Norm: ISO 3833 und DIN 70010 (Begriffe und Systematik der Straßenfahrzeuge) sowie DIN 25003 (Systematik der Schienenfahrzeuge) im Wortlaut, um die Abgrenzung der Kindartikel in P3 und P12 zu belegen.",
+    "Recherche Norm: Wiener Übereinkommen über den Straßenverkehr von 1968, Artikel 1 (Begriffe Fahrzeug, Kraftfahrzeug, Anhänger), auf unece.org; in A-0126 mit einer Zugangsprüfung abgewiesen, in diesem Lauf nicht erneut abgerufen.",
+    "Recherche Fachliteratur: fahrzeugartübergreifende Systematik der Landfahrzeuge (Suchbegriffe: Fahrzeugtechnik Systematik Landfahrzeuge, Rad-Schiene gegenüber Rad-Straße Fahrwiderstand, wheeled versus tracked vehicles terramechanics), um die aus den Kindartikeln hergeleiteten Absätze P4 bis P11 zu belegen."
+  ]
+}
