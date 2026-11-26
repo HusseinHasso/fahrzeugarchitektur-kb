@@ -1,0 +1,1473 @@
+{
+  "schema_version": "2.3",
+  "artikel_id": "A-0136",
+  "artikeltyp": "uebersicht",
+  "titel": "Stadtverkehr",
+  "betrachtungsumfang": "Übersicht über die Fahrzeuge des Stadtverkehrs: elektrisch angetriebene Personenfahrzeuge städtischer Schienenbahnen, die in Deutschland als Straßenbahnen nach § 4 PBefG gelten und der BOStrab unterliegen, mit den Kindartikeln Straßenbahn (A-0033), Stadtbahn (A-0034) und U-Bahn (A-0035): gemeinsame Architektur, Unterscheidungsmerkmale und gemeinsames Grundmodell. Regelwerksangaben gelten für Deutschland. Antriebsart: elektrischer Antrieb mit Energiezufuhr von außen über Oberleitung oder Stromschiene; Energiewandler (Traktionsstromrichter, Traktionsmaschine, beim Zweisystemfahrzeug Transformator und Gleichrichter) und optionale Traktionsenergiespeicher sind in den Kindartikeln modelliert, das Grundmodell bleibt auf Hauptsystemebene. Nicht betrachtet: S-Bahnen nach Eisenbahnrecht, Obusse und Busse, Schwebe-, Berg- und Seilbahnen, Betriebsfahrzeuge sowie die Infrastruktur.",
+  "status": "zu_pruefen",
+  "quellenzugriff": "ja",
+  "kindartikel_ids": [
+    "A-0033",
+    "A-0034",
+    "A-0035"
+  ],
+  "quellen": [
+    {
+      "quellen_id": "Q1",
+      "titel": "Personenbeförderungsgesetz (PBefG), § 4 Straßenbahnen, Obusse, Kraftfahrzeuge; konsolidierte Textwiedergabe",
+      "urheber": "Bundesrepublik Deutschland; Textwiedergabe buzer.de",
+      "stand": null,
+      "url": "https://www.buzer.de/s1.htm?g=PBefG&a=4",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q2",
+      "titel": "Verordnung über den Bau und Betrieb der Straßenbahnen (Straßenbahn-Bau- und Betriebsordnung – BOStrab), §§ 1, 16, 36, 40 und 49; konsolidierte Textwiedergabe, paragraphenweise abgerufen",
+      "urheber": "Bundesministerium für Verkehr; Textwiedergabe buzer.de",
+      "stand": null,
+      "url": "https://www.buzer.de/s1.htm?g=BOStrab&a=1",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q3",
+      "titel": "Vorlesungsfolien „Fahrzeuge SPNV – 1. Einführung“",
+      "urheber": "Holger Fricke",
+      "stand": "digital signiert 7. Oktober 2022",
+      "url": "https://bildungsportal.sachsen.de/opal/oer/3ZWOpq01Limk",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "fachliteratur"
+    }
+  ],
+  "abschnitte": [
+    {
+      "ueberschrift": "Einleitung",
+      "abschnittstyp": "gesamtsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P1",
+          "text": "Nach dem deutschen Personenbeförderungsgesetz sind Straßenbahnen Schienenbahnen, die den Verkehrsraum öffentlicher Straßen benutzen und sich der Eigenart des Straßenverkehrs anpassen oder einen besonderen Bahnkörper haben und in der Betriebsweise solchen Bahnen gleichen oder ähneln, und die überwiegend Personen im Orts- oder Nachbarschaftsbereich befördern. Als Straßenbahnen gelten auch Hoch- und Untergrundbahnen, Schwebebahnen und ähnliche Bahnen besonderer Bauart mit diesem Zweck, nicht aber Berg- und Seilbahnen. Die BOStrab gilt für Bau und Betrieb dieser Bahnen und unterscheidet straßenabhängige von unabhängigen Bahnen, die auf der gesamten Streckenlänge vom Straßenverkehr getrennt sind.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "§ 4 Abs. 1 und 2"
+            },
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "§ 1 Abs. 1 Satz 1 und Abs. 2"
+            }
+          ],
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P2",
+          "text": "Die Vorlesungsfolien zu Fahrzeugen des schienengebundenen Personennahverkehrs vergleichen die Systeme: Die Straßenbahn fährt im isolierten Netz im geteilten Verkehrsraum auf Sicht, überwiegend mit Niederflurfahrzeugen und teils oberleitungsfrei. Die Stadtbahn hat teils gesonderte Trassierung und Übergänge auf andere Netze, geteilten und getrennten Verkehrsraum, fährt auf Sicht und signalgeführt, teils mit Hochflur-, Zweisystem- oder Zweikraftfahrzeugen. Die U-Bahn fährt im getrennten Verkehrsraum signalgeführt, teils autonom, mit dichter Zugfolge und teils speziellen Fahrwerken. Genannt werden je Stunde und Richtung 8.000 bis 12.000 Fahrgäste für die Straßenbahn, 20.000 bis 30.000 für die Stadtbahn und 30.000 bis 40.000 für die U-Bahn, als Regelwerk die BOStrab, bei der Stadtbahn auch die EBO; die S-Bahn fährt nach EBO.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Folien „Vergleich von SPNV-Systemen (I)“ und „Vergleich von SPNV-Systemen (II)“"
+            }
+          ],
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P3",
+          "text": "Das Elterntaxon Stadtverkehr umfasst damit die elektrisch angetriebenen Personenfahrzeuge städtischer Schienenbahnen, die in Deutschland der Straßenbahn-Bau- und Betriebsordnung unterliegen. Die Übersicht stellt die Kindartikel Straßenbahn, Stadtbahn und U-Bahn gegenüber, die eine Reihe bilden vom Fahren auf Sicht im Straßenraum über das Mischsystem bis zum getrennten, signalgeführten Netz. Alle drei betrachten den elektrischen Antrieb mit Energiezufuhr von außen. S-Bahnen nach Eisenbahnrecht, Obusse, Busse, Schwebe-, Berg- und Seilbahnen, Betriebsfahrzeuge und die Infrastruktur liegen außerhalb.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P1",
+              "P2",
+              "A-0033/P1",
+              "A-0033/P2",
+              "A-0034/P1",
+              "A-0034/P2",
+              "A-0035/P1",
+              "A-0035/P2",
+              "Betrachtungsumfang von A-0033, A-0034 und A-0035"
+            ],
+            "schluss": "Das Taxon sind die Personenfahrzeuge der Bahnen nach der Straßenbahn-Bau- und Betriebsordnung; die Kindartikel ordnen sich nach der Trennung vom Straßenverkehr."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [
+            "A-0033",
+            "A-0034",
+            "A-0035"
+          ]
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Gemeinsame Hauptsysteme und elektrische Kette",
+      "abschnittstyp": "querschnitt",
+      "absaetze": [
+        {
+          "absatz_id": "P4",
+          "text": "Alle Kindartikel zerlegen das Fahrzeug des Stadtverkehrs in dieselben elf Hauptsysteme mit gleichen Glossarnamen: Fahrzeugstruktur und Fahrwerk, Antriebssystem, Energieversorgungssystem, Bremssystem, Führerstand, Elektrik und Elektronik, Fahrzeugsteuerung und Information, Fahrerassistenz und Sicherheit, Beleuchtung und Sicht, Thermomanagement sowie Neben- und Versorgungssysteme. Ein Lenksystem entfällt überall, weil Gleis oder Fahrweg die Richtung vorgeben; Fahrzeuglasten tragen und das Fahrzeug im Gleis führen übernehmen Wagenkasten und Fahrwerke. Nur die Straßenbahn führt den Fahrgastraum als eigenes Hauptsystem Aufbau und Ladung. Gemeinsam ist die Systemgrenze: Gleis, Fahrleitung oder Stromschiene, Bahnsteig, streckenseitige Zugsicherung und Betriebsstelle sind Umgebung.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "A-0033/P29",
+              "A-0034/P28",
+              "A-0035/P26",
+              "A-0033/P3",
+              "A-0034/P3",
+              "A-0035/P2",
+              "A-0033/P19",
+              "A-0034/P7",
+              "A-0035/P5"
+            ],
+            "schluss": "Die Kindartikel teilen elf Hauptsysteme und die Systemgrenze; Aufbau und Ladung ist nur bei der Straßenbahn eigenständig."
+          },
+          "sicherheit": "hoch",
+          "herangezogene_artikel_ids": [
+            "A-0033",
+            "A-0034",
+            "A-0035"
+          ]
+        },
+        {
+          "absatz_id": "P5",
+          "text": "Den Kern bildet überall dieselbe elektrische Kette. Der Stromabnehmer nimmt den Fahrstrom ab, ein Hauptschalter trennt vom Netz, der Traktionsstromrichter speist die Traktionsmaschine, und Getriebe und Antriebskupplung übertragen das Drehmoment auf die Radsätze; der Rückstrom fließt über Räder und Fahrschienen. Beim Bremsen arbeitet die Traktionsmaschine als Generator und speist zurück oder in den Bremswiderstand. Ein Hilfsbetriebeumrichter speist das Niedervolt-Bordnetz, und die Bordnetzbatterie hält Bremsansteuerung, Signale und Kommunikation ohne Fahrleitungsspannung verfügbar; diese Batteriestützung ist in allen Kindartikeln architekturbestimmend.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "A-0033/P8",
+              "A-0033/P9",
+              "A-0033/P12",
+              "A-0033/P20",
+              "A-0034/P9",
+              "A-0034/P12",
+              "A-0034/P18",
+              "A-0035/P7",
+              "A-0035/P8",
+              "A-0035/P10",
+              "A-0035/P16"
+            ],
+            "schluss": "Traktionskette, elektrodynamische Bremse und batteriegestützte Hilfsbetriebeversorgung sind allen Kindartikeln gemeinsam."
+          },
+          "sicherheit": "hoch",
+          "herangezogene_artikel_ids": [
+            "A-0033",
+            "A-0034",
+            "A-0035"
+          ]
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Gemeinsame Brems-, Betriebs- und Sicherheitseinrichtungen",
+      "abschnittstyp": "querschnitt",
+      "absaetze": [
+        {
+          "absatz_id": "P6",
+          "text": "Die BOStrab verlangt für alle Fahrzeuge mindestens zwei voneinander unabhängige Bremsen, deren Wirksamkeit auch bei Ausfall der Fahrleitungsspannung gesichert ist; eine muss das stillstehende Fahrzeug mit Nutzlast auf der größten Neigung des Netzes nach dem Federspeicherprinzip rein mechanisch festhalten. Nur bei Fahrzeugen straßenabhängiger Bahnen muss eine Bremse vom Kraftschluss zwischen Rad und Schiene unabhängig sein, und die übrigen Bremsen sind durch Sandstreueinrichtungen zu ergänzen. Im Zugverband sind die Bremsen so zu steuern, dass der Zug die vorgeschriebenen Bremseigenschaften erreicht. Die Fahrgast-Notbremsung darf auf Strecken ohne Sicherheitsraum und in Tunneln außerhalb von Haltestellen nicht zum Halten führen (Notbremsüberbrückung).",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "§ 36 Abs. 1, 5, 6, 8 und 10"
+            }
+          ],
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P7",
+          "text": "Entsprechend gliedern alle Kindartikel das Bremssystem in die mechanische Bremse mit Scheibenbremse und Federspeicher- oder Feststellbremse, die Bremsregelung mit Gleitschutz und die Fahrgast-Notbremse; die mechanische Bremse löst die elektrodynamische bei niedriger Geschwindigkeit ab. Magnetschienenbremse und Sandstreueinrichtung führen Straßenbahn und Stadtbahn, die U-Bahn als unabhängige Bahn nicht. Die Betätigung ist überall eine Variante: elektrohydraulisch ist bei der Straßenbahn verbreitet, elektropneumatisch bei der U-Bahn, die Stadtbahn nutzt beide. Davon hängt ab, ob die Neben- und Versorgungssysteme eine Druckluftanlage brauchen.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P6",
+              "A-0033/P14",
+              "A-0033/P15",
+              "A-0033/P28",
+              "A-0034/P14",
+              "A-0034/P15",
+              "A-0034/P27",
+              "A-0035/P12",
+              "A-0035/P13",
+              "A-0035/P25"
+            ],
+            "schluss": "Die Bremsarchitektur ist gemeinsam; kraftschlussunabhängige Bremse und Sandstreuung unterscheiden straßenabhängige von unabhängigen Fahrzeugen."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [
+            "A-0033",
+            "A-0034",
+            "A-0035"
+          ]
+        },
+        {
+          "absatz_id": "P8",
+          "text": "Auch die übrigen Hauptsysteme haben einen gemeinsamen Kern. Der Führerstand bündelt Fahr- und Bremsschalter, Anzeigeelemente und Fahrersitz. Fahrzeugsteuerung und Information umfassen das Fahrzeugmanagement mit Vorrang der Bremsbefehle, die Türsteuerung mit Anzeige geschlossener Türen, Fahrgastinformationssystem, Funk zur Betriebsstelle, Fahrdatenschreiber und Diagnose; die Steuergeräte tauschen über den Fahrzeugbus Daten aus. Fahrerassistenz und Sicherheit enthalten bei Betrieb mit Fahrzeugführer die Sicherheitsfahrschaltung, die über die Bremsregelung wirkt. Beleuchtung und Sicht umfassen Scheinwerfer, Signalleuchten, Innen- und Hilfsbeleuchtung und Scheibenwischer am batteriegestützten Bordnetz. Das Thermomanagement verbindet Heiz- und Klimaanlage mit der Kühlung der Traktionsausrüstung, als Flüssigkeitskreislauf oder bei luftgekühlten Bauarten über Lüfter.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "A-0033/P17",
+              "A-0033/P20",
+              "A-0033/P22",
+              "A-0033/P24",
+              "A-0033/P26",
+              "A-0033/P27",
+              "A-0034/P17",
+              "A-0034/P18",
+              "A-0034/P20",
+              "A-0034/P22",
+              "A-0034/P24",
+              "A-0034/P26",
+              "A-0035/P15",
+              "A-0035/P16",
+              "A-0035/P18",
+              "A-0035/P20",
+              "A-0035/P22",
+              "A-0035/P24"
+            ],
+            "schluss": "Führerstand, Steuerung, Sicherheit, Beleuchtung und Thermomanagement haben in allen Kindartikeln denselben Grundaufbau."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [
+            "A-0033",
+            "A-0034",
+            "A-0035"
+          ]
+        },
+        {
+          "absatz_id": "P9",
+          "text": "Uneinheitlich zugeordnet sind: der Fahrgastraum bei der Straßenbahn dem Hauptsystem Aufbau und Ladung, bei Stadtbahn und U-Bahn dem Wagenkasten unter Fahrzeugstruktur und Fahrwerk; die Fahrgastsitze bei Straßenbahn und Stadtbahn dem Führerstand, bei der U-Bahn dem Fahrgastraum im Wagenkasten; die Türantriebe bei Straßenbahn und Stadtbahn den Neben- und Versorgungssystemen, während die U-Bahn sie nicht gesondert ausweist. Die Druckluftanlage ist bei Straßenbahn und Stadtbahn optional, bei der U-Bahn Kern der Neben- und Versorgungssysteme.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "A-0033/P17",
+              "A-0033/P19",
+              "A-0033/P28",
+              "A-0034/P7",
+              "A-0034/P17",
+              "A-0034/P27",
+              "A-0035/P5",
+              "A-0035/P25"
+            ],
+            "schluss": "Die Kindartikel weichen in der Zuordnung von Fahrgastraum, Fahrgastsitzen, Türantrieben und Druckluftanlage voneinander ab."
+          },
+          "sicherheit": "hoch",
+          "herangezogene_artikel_ids": [
+            "A-0033",
+            "A-0034",
+            "A-0035"
+          ]
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Unterscheidungsmerkmal Verkehrsraum und Betriebsweise",
+      "abschnittstyp": "variante",
+      "absaetze": [
+        {
+          "absatz_id": "P10",
+          "text": "Die BOStrab unterscheidet straßenbündige, besondere und unabhängige Bahnkörper; unabhängige liegen außerhalb des Verkehrsraums öffentlicher Straßen. Den Abstand der Züge bewirkt beim Fahren auf Sicht der Fahrzeugführer, beim Fahren auf Zugsicherung gewährleisten ihn Zugsicherungsanlagen. Auf Sicht dürfen Züge unabhängiger Bahnen nicht fahren, Züge straßenabhängiger Bahnen nicht in Tunneln und nicht bei Streckenhöchstgeschwindigkeiten über 70 km/h. Bei Fahrbetrieb ohne Fahrzeugführer muss das unbefugte Betreten des Bahnkörpers verhindert sein. Alle Fahrzeuge brauchen im betriebsbedingt notwendigen Umfang Signaleinrichtungen, die die Zugsignale und das Achtungssignal eindeutig abgeben.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "§ 16 Abs. 4 und 6, § 40 Abs. 1 Satz 1, § 49 Abs. 1 und 2"
+            }
+          ],
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P11",
+          "text": "Daraus folgt das prägende Unterscheidungsmerkmal. Die Straßenbahn fährt im Straßenraum auf Sicht; Zugsicherungseinrichtungen braucht sie nur auf Strecken mit Zugsicherungsanlagen, Umfeldsensorik zur Kollisionswarnung ist optional. Die Stadtbahn fährt oberirdisch auf Sicht, in Tunneln und auf unabhängigen Abschnitten auf Zugsicherung, als Zweisystemfahrzeug zusätzlich mit Fahrzeuggeräten der Eisenbahn-Zugbeeinflussung. Die U-Bahn fährt stets signalgeführt bis zum fahrerlosen Betrieb; Fahrtrechner, Entgleisungsdetektion und Brandmeldeanlage kommen hinzu, der Führerstand schrumpft bis zum Hilfsfahrpult. Das Achtungssignal müssen alle drei Fahrzeugarten geben können; als straßenabhängige Fahrzeuge brauchen Straßenbahn und Stadtbahn zusätzlich Fahrtrichtungs- und Warnblinksignale, Rückspiegel und Läutewerk.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P2",
+              "P10",
+              "A-0033/P23",
+              "A-0033/P24",
+              "A-0033/P25",
+              "A-0034/P21",
+              "A-0034/P22",
+              "A-0034/P23",
+              "A-0035/P15",
+              "A-0035/P19",
+              "A-0035/P20"
+            ],
+            "schluss": "Lage im Verkehrsraum und Betriebsweise bestimmen Umfang von Fahrerassistenz und Sicherheit, Führerstand und Signaleinrichtungen."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [
+            "A-0033",
+            "A-0034",
+            "A-0035"
+          ]
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Unterscheidungsmerkmal Fahrstromzuführung und Stromsystem",
+      "abschnittstyp": "variante",
+      "absaetze": [
+        {
+          "absatz_id": "P12",
+          "text": "Das zweite Merkmal betrifft das Energieversorgungssystem. Die Straßenbahn bezieht Gleichstrom meist aus der Oberleitung, abschnittsweise und außerhalb Deutschlands über eine segmentierte Bodenstromschiene, und kann Doppelschichtkondensator oder Traktionsbatterie tragen, um Energie zu sparen, Netzspitzen abzubauen oder fahrleitungsfreie Abschnitte zu befahren. Die Stadtbahn fährt in Deutschland an der Oberleitung, weil seitliche oder mittige Stromschienen dort für straßenabhängige Fahrzeuge ausgeschlossen sind; als Zweisystemfahrzeug kommen Systemwahlschalter, Transformator und Gleichrichter hinzu, zurückgespeist wird nur unter Gleichspannung. Die U-Bahn nimmt den Fahrstrom meist mit Schleifschuhen am Drehgestell von einer seitlichen Stromschiene ab, seltener von einer mittigen Stromschiene oder aus der Oberleitung. Die Wahl verschiebt die Dachbelegung, bei Speichern Batterietemperierung und Energieflusskoordination im Fahrzeugmanagement, beim Zweisystemfahrzeug Bedienung im Führerstand und den Funk für zwei Netze.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "A-0033/P10",
+              "A-0033/P11",
+              "A-0033/P12",
+              "A-0033/P22",
+              "A-0033/P27",
+              "A-0034/P10",
+              "A-0034/P11",
+              "A-0034/P12",
+              "A-0034/P17",
+              "A-0034/P20",
+              "A-0035/P9",
+              "A-0035/P10"
+            ],
+            "schluss": "Die Fahrstromzuführung ändert das Energieversorgungssystem und wirkt auf Struktur, Thermomanagement, Steuerung und Führerstand."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [
+            "A-0033",
+            "A-0034",
+            "A-0035"
+          ]
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Unterscheidungsmerkmal Fahrzeugbreite, Flurhöhe und Bahnsteig",
+      "abschnittstyp": "variante",
+      "absaetze": [
+        {
+          "absatz_id": "P13",
+          "text": "Die Folien zur Einteilung der Schienenfahrzeuge nach DIN 25003 unterscheiden nach der Fahrzeugbreite Straßenbahn mit 2,20 oder 2,30 m, leichte Stadtbahn mit 2,30 oder 2,40 m und schwere Stadtbahn mit 2,65 m, nach der Fußbodenhöhe Niederflurfahrzeuge bis 350 mm, Mittelflurfahrzeuge mit 400 bis 600 mm und Hochflurfahrzeuge mit 650 bis 1000 mm.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Folie „Einteilung der Schienenfahrzeuge (nach DIN 25003:2001-09)“"
+            }
+          ],
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P14",
+          "text": "Breite und Flurhöhe unterscheiden vor allem Straßenbahn und Stadtbahn. Die Straßenbahn ist überwiegend Niederflurfahrzeug; durchgehende Niederflur lässt wenig Fahrwerksbauraum; gebräuchlich sind Losrad- oder Einzelradfahrwerke mit außenliegenden Einzelrad- oder Längsantrieben, innenliegende Quer- oder Längsantriebe und Fahrwerke mit gekoppelten Rädern, die elektrische Ausrüstung wandert weitgehend aufs Dach. Teilniederflur lässt Podeste über den Fahrwerken. Die Stadtbahn ist breiter und länger, teils Hoch- oder Mittelflurfahrzeug für Hochbahnsteige mit Klapp- oder ausfahrbaren Trittstufen. Der U-Bahn-Artikel führt keine Flurhöhenvariante; dort begrenzt das Tunnelprofil die Dachaufbauten, sodass Klimageräte flach oder unterflur sitzen. Betroffen sind Antriebsanordnung, Bauraum der Bremsen und Gerätelage im Thermomanagement.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P2",
+              "P13",
+              "A-0033/P5",
+              "A-0033/P8",
+              "A-0033/P10",
+              "A-0033/P19",
+              "A-0034/P2",
+              "A-0034/P6",
+              "A-0034/P7",
+              "A-0035/P23",
+              "A-0035/P24"
+            ],
+            "schluss": "Flurhöhe und Bahnsteigsystem bestimmen Fahrwerk, Antriebsanordnung und Gerätelage; bei der U-Bahn wirkt stattdessen das Tunnelprofil."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [
+            "A-0033",
+            "A-0034",
+            "A-0035"
+          ]
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Unterscheidungsmerkmal Zugbildung und Laufwerk",
+      "abschnittstyp": "variante",
+      "absaetze": [
+        {
+          "absatz_id": "P15",
+          "text": "Die Straßenbahn ist ein ein- oder mehrteiliges Fahrzeug, als Einzelgelenk-, Multigelenk- oder Gliederfahrzeug, mit Drehgestellen oder Losrad-Fahrwerken und gegebenenfalls einer Kupplungseinrichtung. Die Stadtbahn verkehrt in längeren Verbänden, deren Länge der Straßenverkehr begrenzt: Kupplungen führen elektrische Verbindungen, die Vielfachsteuerung überträgt Befehle, Einheiten mit nur einem Führerstand fahren nur gekuppelt, und Jakobs-Drehgestelle können zwei Wagenteile tragen. Die U-Bahn ist fest gekuppelter Triebzug oder kuppelbare Einheit mit verteilter Antriebsausrüstung; in Mehrfachtraktion laufen Fahrzeugbus und Zwangsbremsschleife über die Kupplung. Nur sie kennt gummibereifte Laufwerke mit Spurführungsreifen und Stahlrädern als Rückfallebene.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "A-0033/P5",
+              "A-0033/P6",
+              "A-0033/P20",
+              "A-0034/P2",
+              "A-0034/P7",
+              "A-0034/P17",
+              "A-0034/P18",
+              "A-0034/P20",
+              "A-0035/P3",
+              "A-0035/P5",
+              "A-0035/P6",
+              "A-0035/P16"
+            ],
+            "schluss": "Zugbildung und Laufwerk ändern Kupplung, Steuerung, Bordnetz und Fahrwerk; das gummibereifte Laufwerk ist auf die U-Bahn beschränkt."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [
+            "A-0033",
+            "A-0034",
+            "A-0035"
+          ]
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Zusammenfassung",
+      "abschnittstyp": "gesamtsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P16",
+          "text": "Die Fahrzeuge des Stadtverkehrs teilen ein Grundmodell aus elf Hauptsystemen mit derselben Traktionskette, derselben Bremsarchitektur und denselben Betriebs- und Sicherheitseinrichtungen. Sie unterscheiden sich in Verkehrsraum und Betriebsweise, Fahrstromzuführung, Breite und Flurhöhe sowie Zugbildung und Laufwerk. Ein Fahrzeug, das im Straßenraum mitfährt und niedrige Haltestellen bedient, führt zur Straßenbahn; ein Netz, das Straßenstrecken mit Tunneln, unabhängigen Abschnitten oder Eisenbahnstrecken verbindet, zur Stadtbahn; ein getrenntes, signalgeführtes Netz hoher Kapazität bis zum fahrerlosen Betrieb zur U-Bahn.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P2",
+              "P4",
+              "P5",
+              "P7",
+              "P8",
+              "P11",
+              "P12",
+              "P14",
+              "P15"
+            ],
+            "schluss": "Ein Grundmodell mit vier Unterscheidungsmerkmalen deckt alle Kindartikel ab; die Betriebsweise entscheidet zuerst über die Fahrzeugart."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [
+            "A-0033",
+            "A-0034",
+            "A-0035"
+          ]
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Modellierungsbezug",
+      "abschnittstyp": "modellierung",
+      "absaetze": [
+        {
+          "absatz_id": "P17",
+          "text": "In SysML bildet ein abstrakter Block Fahrzeug des Stadtverkehrs den Grundblock mit den elf Hauptsystemen und den Umgebungsblöcken Gleis, Fahrstromzuführung, Bahnsteig, Zugsicherung und Betriebsstelle. Gemeinsam ist der Teilbaum Antriebssystem → Traktionsausrüstung → Traktionsstromrichter. Die Kindartikel spezialisieren den Grundblock etwa entlang Straßenbahn → Energieversorgungssystem → Traktionsenergiespeicher, Stadtbahn → Energieversorgungssystem → Wechselstromausrüstung → Transformator und U-Bahn → Fahrerassistenz und Sicherheit → Zugsicherung und Automatisierung → Fahrtrechner.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P4",
+              "P5",
+              "A-0033/P30",
+              "A-0034/P29",
+              "A-0035/P27"
+            ],
+            "schluss": "Ein abstrakter Grundblock mit Spezialisierungen bildet die drei Fahrzeugarten ab."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": [
+            "A-0033",
+            "A-0034",
+            "A-0035"
+          ]
+        },
+        {
+          "absatz_id": "P18",
+          "text": "Wiederverwendbare Teilmodelle sind die Traktionskette vom Stromabnehmer bis zur Antriebskupplung, die Bremsarchitektur mit Bremsregelung und Gleitschutz, die batteriegestützte Hilfsbetriebeversorgung, die Fahr- und Türsteuerung und die Signaleinrichtungen; Ports wie Fahrstromanschluss, Rad-Schiene-Kontakt, Fahrzeugbus, Kupplung und Kühlmittelanschlüsse bleiben gleich. Zuvor sind Namen und Zuordnungen zu vereinheitlichen: Stromabnahme oder Fahrstromaufnahme, Hilfsbetriebe- oder Hilfsenergieversorgung, mechanische Bremse oder Reibungsbremse, Fahrgastraum unter Fahrzeugstruktur und Fahrwerk, Fahrgastsitze im Führerstand. Block Definition Diagrams zeigen Grundblock und Spezialisierungen, Internal Block Diagrams die Flüsse, Zustandsautomaten Türfreigabe und Systemwechsel.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P9",
+              "A-0033/P30",
+              "A-0034/P29",
+              "A-0035/P27",
+              "Glossarvorgaben: Zuordnung Sitze zum Bedienraum"
+            ],
+            "schluss": "Die gemeinsamen Teilmodelle sind nach Vereinheitlichung der Namen und Zuordnungen wiederverwendbar."
+          },
+          "sicherheit": "gering",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": [
+            "A-0033",
+            "A-0034",
+            "A-0035"
+          ]
+        }
+      ]
+    }
+  ],
+  "modell": {
+    "elemente": [
+      {
+        "id": "E1",
+        "name": "Fahrzeug des Stadtverkehrs",
+        "typ": "gesamtsystem",
+        "eltern_id": null,
+        "absatz_ids": [
+          "P4",
+          "P16",
+          "P17"
+        ]
+      },
+      {
+        "id": "E2",
+        "name": "Fahrzeugstruktur und Fahrwerk",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P9",
+          "P14",
+          "P15"
+        ],
+        "kategorie": "struktur_fahrwerk"
+      },
+      {
+        "id": "E3",
+        "name": "Antriebssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P5",
+          "P14"
+        ],
+        "kategorie": "antrieb"
+      },
+      {
+        "id": "E4",
+        "name": "Energieversorgungssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P5",
+          "P12"
+        ],
+        "kategorie": "energieversorgung"
+      },
+      {
+        "id": "E5",
+        "name": "Bremssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P6",
+          "P7"
+        ],
+        "kategorie": "bremse"
+      },
+      {
+        "id": "E6",
+        "name": "Führerstand",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P8",
+          "P11"
+        ],
+        "kategorie": "bedienraum"
+      },
+      {
+        "id": "E7",
+        "name": "Elektrik und Elektronik",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P5",
+          "P8"
+        ],
+        "kategorie": "elektrik_elektronik"
+      },
+      {
+        "id": "E8",
+        "name": "Fahrzeugsteuerung und Information",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P8",
+          "P12"
+        ],
+        "kategorie": "steuerung_information"
+      },
+      {
+        "id": "E9",
+        "name": "Fahrerassistenz und Sicherheit",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P8",
+          "P11"
+        ],
+        "kategorie": "assistenz_sicherheit"
+      },
+      {
+        "id": "E10",
+        "name": "Beleuchtung und Sicht",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P8",
+          "P11"
+        ],
+        "kategorie": "beleuchtung_sicht"
+      },
+      {
+        "id": "E11",
+        "name": "Thermomanagement",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P8",
+          "P12",
+          "P14"
+        ],
+        "kategorie": "thermomanagement"
+      },
+      {
+        "id": "E12",
+        "name": "Neben- und Versorgungssysteme",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P4",
+          "P7",
+          "P9"
+        ],
+        "kategorie": "nebensysteme"
+      }
+    ],
+    "funktionen": [
+      {
+        "id": "F1",
+        "name": "Fahrzeuglasten tragen",
+        "ausgefuehrt_von": [
+          "E2"
+        ],
+        "absatz_ids": [
+          "P4"
+        ]
+      },
+      {
+        "id": "F2",
+        "name": "Fahrzeug im Gleis führen",
+        "ausgefuehrt_von": [
+          "E2"
+        ],
+        "absatz_ids": [
+          "P4",
+          "P15"
+        ]
+      },
+      {
+        "id": "F3",
+        "name": "Fahrstrom abnehmen",
+        "ausgefuehrt_von": [
+          "E4"
+        ],
+        "absatz_ids": [
+          "P5",
+          "P12"
+        ]
+      },
+      {
+        "id": "F4",
+        "name": "Fahrstrom umformen",
+        "ausgefuehrt_von": [
+          "E4"
+        ],
+        "absatz_ids": [
+          "P12"
+        ]
+      },
+      {
+        "id": "F5",
+        "name": "Energie speichern",
+        "ausgefuehrt_von": [
+          "E4"
+        ],
+        "absatz_ids": [
+          "P5",
+          "P12"
+        ]
+      },
+      {
+        "id": "F6",
+        "name": "Elektrische Energie verteilen",
+        "ausgefuehrt_von": [
+          "E4",
+          "E7"
+        ],
+        "absatz_ids": [
+          "P5"
+        ]
+      },
+      {
+        "id": "F7",
+        "name": "Antriebsleistung erzeugen",
+        "ausgefuehrt_von": [
+          "E3"
+        ],
+        "absatz_ids": [
+          "P5"
+        ]
+      },
+      {
+        "id": "F8",
+        "name": "Drehmoment übertragen",
+        "ausgefuehrt_von": [
+          "E3"
+        ],
+        "absatz_ids": [
+          "P5"
+        ]
+      },
+      {
+        "id": "F9",
+        "name": "Bremsenergie zurückgewinnen",
+        "ausgefuehrt_von": [
+          "E3"
+        ],
+        "absatz_ids": [
+          "P5"
+        ]
+      },
+      {
+        "id": "F10",
+        "name": "Fahrzeug verzögern",
+        "ausgefuehrt_von": [
+          "E5",
+          "E3"
+        ],
+        "absatz_ids": [
+          "P5",
+          "P7"
+        ]
+      },
+      {
+        "id": "F11",
+        "name": "Fahrzeug festhalten",
+        "ausgefuehrt_von": [
+          "E5"
+        ],
+        "absatz_ids": [
+          "P6",
+          "P7"
+        ]
+      },
+      {
+        "id": "F12",
+        "name": "Kraftschluss verbessern",
+        "ausgefuehrt_von": [
+          "E5"
+        ],
+        "absatz_ids": [
+          "P6",
+          "P7"
+        ]
+      },
+      {
+        "id": "F13",
+        "name": "Fahrereingaben erfassen",
+        "ausgefuehrt_von": [
+          "E6"
+        ],
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "F14",
+        "name": "Fahrerinformationen anzeigen",
+        "ausgefuehrt_von": [
+          "E6"
+        ],
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "F15",
+        "name": "Daten übertragen",
+        "ausgefuehrt_von": [
+          "E7"
+        ],
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "F16",
+        "name": "Fahrzeugzustand überwachen",
+        "ausgefuehrt_von": [
+          "E8"
+        ],
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "F17",
+        "name": "Fahrgäste informieren",
+        "ausgefuehrt_von": [
+          "E8"
+        ],
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "F18",
+        "name": "Türen betätigen",
+        "ausgefuehrt_von": [
+          "E8",
+          "E12"
+        ],
+        "absatz_ids": [
+          "P8",
+          "P9"
+        ]
+      },
+      {
+        "id": "F19",
+        "name": "Fahrerzustand überwachen",
+        "ausgefuehrt_von": [
+          "E9"
+        ],
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "F20",
+        "name": "Zugfahrt sichern",
+        "ausgefuehrt_von": [
+          "E9"
+        ],
+        "absatz_ids": [
+          "P11"
+        ]
+      },
+      {
+        "id": "F21",
+        "name": "Zugfahrt automatisch steuern",
+        "ausgefuehrt_von": [
+          "E9"
+        ],
+        "absatz_ids": [
+          "P11"
+        ]
+      },
+      {
+        "id": "F22",
+        "name": "Lichtsignale abgeben",
+        "ausgefuehrt_von": [
+          "E10"
+        ],
+        "absatz_ids": [
+          "P8",
+          "P11"
+        ]
+      },
+      {
+        "id": "F23",
+        "name": "Fahrzeugumgebung ausleuchten",
+        "ausgefuehrt_von": [
+          "E10"
+        ],
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "F24",
+        "name": "Akustische Signale abgeben",
+        "ausgefuehrt_von": [
+          "E10"
+        ],
+        "absatz_ids": [
+          "P10",
+          "P11"
+        ]
+      },
+      {
+        "id": "F25",
+        "name": "Betriebstemperatur regeln",
+        "ausgefuehrt_von": [
+          "E11"
+        ],
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "F26",
+        "name": "Innenraum klimatisieren",
+        "ausgefuehrt_von": [
+          "E11"
+        ],
+        "absatz_ids": [
+          "P8"
+        ]
+      },
+      {
+        "id": "F27",
+        "name": "Druckluft bereitstellen",
+        "ausgefuehrt_von": [
+          "E12"
+        ],
+        "absatz_ids": [
+          "P7",
+          "P9"
+        ]
+      },
+      {
+        "id": "F28",
+        "name": "Fahrzeuge kuppeln",
+        "ausgefuehrt_von": [
+          "E2",
+          "E8"
+        ],
+        "absatz_ids": [
+          "P15"
+        ]
+      }
+    ],
+    "fluesse": [
+      {
+        "id": "S1",
+        "von": "E4",
+        "nach": "E3",
+        "art": "elektrisch",
+        "medium": "Fahrstrom",
+        "absatz_ids": [
+          "P5"
+        ],
+        "schnittstelle": "Fahrstromanschluss des Traktionsstromrichters"
+      },
+      {
+        "id": "S2",
+        "von": "E3",
+        "nach": "E4",
+        "art": "elektrisch",
+        "medium": "Rückgespeiste Bremsenergie",
+        "absatz_ids": [
+          "P5",
+          "P12"
+        ],
+        "schnittstelle": "Fahrstromanschluss des Traktionsstromrichters"
+      },
+      {
+        "id": "S3",
+        "von": "E3",
+        "nach": "E2",
+        "art": "mechanisch",
+        "medium": "Drehmoment",
+        "absatz_ids": [
+          "P5"
+        ],
+        "schnittstelle": "Antriebskupplung am Radsatz"
+      },
+      {
+        "id": "S4",
+        "von": "E4",
+        "nach": "E7",
+        "art": "elektrisch",
+        "medium": "Bordnetzspannung",
+        "absatz_ids": [
+          "P5"
+        ],
+        "schnittstelle": "Ausgang des Hilfsbetriebeumrichters"
+      },
+      {
+        "id": "S5",
+        "von": "E6",
+        "nach": "E8",
+        "art": "information",
+        "medium": "Fahr- und Bremssollwerte",
+        "absatz_ids": [
+          "P8"
+        ],
+        "schnittstelle": "Fahrzeugbus"
+      },
+      {
+        "id": "S6",
+        "von": "E8",
+        "nach": "E5",
+        "art": "information",
+        "medium": "Bremsbefehle",
+        "absatz_ids": [
+          "P8"
+        ],
+        "schnittstelle": "Fahrzeugbus"
+      },
+      {
+        "id": "S7",
+        "von": "E8",
+        "nach": "E3",
+        "art": "information",
+        "medium": "Zugkraftsollwerte",
+        "absatz_ids": [
+          "P8"
+        ],
+        "schnittstelle": "Fahrzeugbus"
+      },
+      {
+        "id": "S8",
+        "von": "E9",
+        "nach": "E5",
+        "art": "information",
+        "medium": "Zwangsbremsbefehl",
+        "absatz_ids": [
+          "P8",
+          "P15"
+        ],
+        "schnittstelle": "Zwangsbremsschleife"
+      },
+      {
+        "id": "S9",
+        "von": "E12",
+        "nach": "E5",
+        "art": "pneumatisch",
+        "medium": "Druckluft",
+        "absatz_ids": [
+          "P7"
+        ],
+        "schnittstelle": "Druckluftanschluss des Bremsgeräts"
+      },
+      {
+        "id": "S10",
+        "von": "E3",
+        "nach": "E11",
+        "art": "thermisch",
+        "medium": "Verlustwärme",
+        "absatz_ids": [
+          "P8"
+        ],
+        "schnittstelle": "Kühlmittelanschluss der Traktionsausrüstung"
+      },
+      {
+        "id": "S11",
+        "von": "E7",
+        "nach": "E10",
+        "art": "elektrisch",
+        "medium": "Bordnetzversorgung",
+        "absatz_ids": [
+          "P8"
+        ],
+        "schnittstelle": "Niedervolt-Bordnetz"
+      }
+    ],
+    "entfallene_kategorien": [
+      {
+        "kategorie": "lenkung",
+        "grund": "Alle Kindartikel sind spurgebunden; Gleis oder Fahrweg geben die Richtung vor, die Spurführung liegt bei den Fahrwerken (A-0033, A-0034, A-0035)."
+      },
+      {
+        "kategorie": "aufbau_nutzlast",
+        "grund": "Kein gemeinsames Hauptsystem: Stadtbahn und U-Bahn führen den Fahrgastraum unter Fahrzeugstruktur und Fahrwerk, nur die Straßenbahn als Aufbau und Ladung; das Grundmodell folgt der Mehrheit, die Straßenbahn kann es als Spezialisierung ergänzen."
+      }
+    ],
+    "varianten": [
+      {
+        "id": "V1",
+        "element_id": "E9",
+        "bezeichnung": "Betriebsweise und Automatisierungsgrad",
+        "alternativen": [
+          "Fahren auf Sicht im Verkehrsraum öffentlicher Straßen",
+          "Fahren auf Sicht oberirdisch und auf Zugsicherung in Tunneln und auf unabhängigen Abschnitten",
+          "Signalgeführtes Fahren mit Fahrzeugführer",
+          "Automatischer oder fahrerloser Betrieb"
+        ],
+        "auswahlkriterien": [
+          "Lage im Verkehrsraum: straßenbündiger oder besonderer Bahnkörper (Straßenbahn), gemischt (Stadtbahn), unabhängiger Bahnkörper (U-Bahn)",
+          "Anteil von Tunneln und unabhängigen Abschnitten",
+          "Angestrebte Zugfolge und Beförderungskapazität",
+          "Personaleinsatz an Bord"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E5",
+            "beschreibung": "Magnetschienenbremse und Sandstreueinrichtung nur bei straßenabhängigen Fahrzeugen (Straßenbahn, Stadtbahn)"
+          },
+          {
+            "element_id": "E6",
+            "beschreibung": "Führerstand bis zum Hilfsfahrpult reduziert im fahrerlosen Betrieb (U-Bahn)"
+          },
+          {
+            "element_id": "E10",
+            "beschreibung": "Fahrtrichtungs- und Warnblinksignale, Rückspiegel und Läutewerk bei straßenabhängigen Fahrzeugen (Straßenbahn, Stadtbahn)"
+          },
+          {
+            "element_id": "E8",
+            "beschreibung": "Fahrtrechner steuert über das Fahrzeugmanagement im Automatikbetrieb (U-Bahn)"
+          },
+          {
+            "element_id": "E5",
+            "beschreibung": "Notbremsüberbrückung auf Tunnelstrecken und Strecken ohne Sicherheitsraum (Stadtbahn, U-Bahn)"
+          }
+        ],
+        "absatz_ids": [
+          "P10",
+          "P11",
+          "P7",
+          "P6"
+        ]
+      },
+      {
+        "id": "V2",
+        "element_id": "E4",
+        "bezeichnung": "Fahrstromzuführung und Stromsystem",
+        "alternativen": [
+          "Gleichspannungs-Oberleitung ohne Traktionsenergiespeicher",
+          "Oberleitung mit Doppelschichtkondensator oder Traktionsbatterie",
+          "Abschnittsweise segmentierte Bodenstromschiene",
+          "Zweisystembetrieb an Gleich- und Einphasenwechselspannung",
+          "Seitliche Stromschiene mit Schleifschuh-Stromabnehmern"
+        ],
+        "auswahlkriterien": [
+          "Fahrleitungsfreie Abschnitte im Netz (Straßenbahn)",
+          "Übergang auf elektrifizierte Eisenbahnstrecken (Stadtbahn)",
+          "Vom Straßenverkehr getrennter Fahrweg mit Stromschiene (U-Bahn)",
+          "Energieeinsparung und Netzentlastung",
+          "Segmentierte Bodenstromschiene nur international, nicht in Deutschland (Straßenbahn)"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E2",
+            "beschreibung": "Stromabnehmer am Drehgestell bei Stromschiene (U-Bahn), Dachbelegung bei Oberleitung, Speicher oder Wechselstromausrüstung"
+          },
+          {
+            "element_id": "E11",
+            "beschreibung": "Batterietemperierung bei Traktionsbatterie (Straßenbahn)"
+          },
+          {
+            "element_id": "E8",
+            "beschreibung": "Energieflusskoordination bei Speicherfahrzeugen (Straßenbahn), Funk für zwei Netze beim Zweisystemfahrzeug (Stadtbahn)"
+          },
+          {
+            "element_id": "E6",
+            "beschreibung": "Bedienung und Anzeige des Stromsystems beim Zweisystemfahrzeug (Stadtbahn)"
+          },
+          {
+            "element_id": "E9",
+            "beschreibung": "Fahrzeuggeräte der Eisenbahn-Zugbeeinflussung beim Zweisystemfahrzeug (Stadtbahn)"
+          }
+        ],
+        "absatz_ids": [
+          "P12",
+          "P11"
+        ]
+      },
+      {
+        "id": "V3",
+        "element_id": "E2",
+        "bezeichnung": "Fahrzeugbreite, Flurhöhe und Bahnsteigsystem",
+        "alternativen": [
+          "Durchgehendes Niederflurfahrzeug",
+          "Teilniederflurfahrzeug",
+          "Mittelflurfahrzeug mit ausfahrbaren Trittstufen",
+          "Hochflurfahrzeug für Hochbahnsteige"
+        ],
+        "auswahlkriterien": [
+          "Bahnsteighöhen im Netz",
+          "Zulässige Fahrzeugbreite im Straßenraum (Straßenbahn, leichte oder schwere Stadtbahn)",
+          "Mitbenutzung von Eisenbahnbahnsteigen (Stadtbahn)",
+          "Bauraum für Antrieb und Bremse"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E3",
+            "beschreibung": "Antriebsanordnung im knappen Fahrwerksbauraum (außen- oder innenliegend, Losrad, Einzelrad oder gekoppelte Räder) bei durchgehender Niederflur (Straßenbahn)"
+          },
+          {
+            "element_id": "E5",
+            "beschreibung": "Knapper Bauraum für die mechanische Bremse bei Niederflur"
+          },
+          {
+            "element_id": "E11",
+            "beschreibung": "Gerätelage auf dem Dach bei Niederflur (Straßenbahn); flache oder unterflur eingebaute Klimageräte bei engem Tunnelprofil (U-Bahn)"
+          }
+        ],
+        "absatz_ids": [
+          "P13",
+          "P14"
+        ]
+      },
+      {
+        "id": "V4",
+        "element_id": "E2",
+        "bezeichnung": "Zugbildung",
+        "alternativen": [
+          "Ein- oder mehrteiliges Fahrzeug mit optionaler Kupplungseinrichtung",
+          "Kuppelbare Einheiten in Mehrfachtraktion",
+          "Fest gekuppelter, durchgängig begehbarer Triebzug"
+        ],
+        "auswahlkriterien": [
+          "Beförderungskapazität und Zuglänge",
+          "Begrenzung der Zuglänge durch den Straßenverkehr (Stadtbahn)",
+          "Einzelverwendung einer Einheit",
+          "Gemischter Betrieb verschiedener Baureihen"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E8",
+            "beschreibung": "Vielfachsteuerung für gekuppelte Fahrzeuge (Stadtbahn)"
+          },
+          {
+            "element_id": "E7",
+            "beschreibung": "Fahrzeugbus und Zwangsbremsschleife über die Kupplung (U-Bahn), elektrische Kupplungsverbindungen (Stadtbahn)"
+          },
+          {
+            "element_id": "E6",
+            "beschreibung": "Führerstände je Einheit oder nur an den Zugenden (Stadtbahn, U-Bahn)"
+          },
+          {
+            "element_id": "E5",
+            "beschreibung": "Bremssteuerung im Zugverband"
+          }
+        ],
+        "absatz_ids": [
+          "P15",
+          "P6"
+        ]
+      },
+      {
+        "id": "V5",
+        "element_id": "E2",
+        "bezeichnung": "Laufwerk und Spurführung",
+        "alternativen": [
+          "Drehgestelle mit Radsätzen",
+          "Jakobs-Drehgestelle unter dem Gelenk",
+          "Losrad- oder Einzelradfahrwerke",
+          "Gummibereiftes Laufwerk mit Spurführungsreifen"
+        ],
+        "auswahlkriterien": [
+          "Niederfluranteil (Straßenbahn)",
+          "Wagenteilung und Gelenkbauart (Stadtbahn)",
+          "Längsneigung, Beschleunigung und Bremsverzögerung (U-Bahn)",
+          "Gummibereiftes Laufwerk nur international, nicht in Deutschland (U-Bahn)"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E3",
+            "beschreibung": "Antriebsanordnung im Fahrwerk und Zahl der Triebfahrwerke"
+          },
+          {
+            "element_id": "E5",
+            "beschreibung": "Bei gummibereiftem Laufwerk wirken die Bremsen auf die Stahlräder (U-Bahn)"
+          },
+          {
+            "element_id": "E4",
+            "beschreibung": "Bei gummibereiftem Laufwerk dienen die Spurführungsschienen zugleich als Stromschienen (U-Bahn)"
+          }
+        ],
+        "absatz_ids": [
+          "P15",
+          "P14"
+        ]
+      }
+    ],
+    "klaerungsfragen": [
+      {
+        "id": "K1",
+        "frage": "Soll das Fahrzeug im Verkehrsraum öffentlicher Straßen mitfahren, abschnittsweise auf Tunnel- und unabhängigen Strecken verkehren oder ausschließlich auf einem vom Straßenverkehr getrennten Netz fahren?",
+        "element_ids": [
+          "E1",
+          "E9"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Die Antwort entscheidet zwischen Straßenbahn, Stadtbahn und U-Bahn und damit über Bremsausrüstung, Signaleinrichtungen und Zugsicherung.",
+        "variante_ids": [
+          "V1"
+        ]
+      },
+      {
+        "id": "K2",
+        "frage": "Welcher Automatisierungsgrad ist vorgesehen, und auf welchen Abschnitten fährt das Fahrzeug auf Sicht oder auf Zugsicherung?",
+        "element_ids": [
+          "E9",
+          "E6"
+        ],
+        "anlass": "betrieb",
+        "relevanz": "Davon hängen Fahrzeuggerät der Zugsicherung, Fahrtrechner, Überwachungseinrichtungen und der Umfang des Führerstands ab.",
+        "variante_ids": [
+          "V1"
+        ]
+      },
+      {
+        "id": "K3",
+        "frage": "Über welche Fahrstromzuführung wird das Netz versorgt, und gibt es fahrleitungsfreie Abschnitte oder Übergänge auf Eisenbahnstrecken mit anderem Stromsystem?",
+        "element_ids": [
+          "E4"
+        ],
+        "anlass": "schnittstelle",
+        "relevanz": "Die Antwort bestimmt Stromabnehmerbauart, Traktionsenergiespeicher oder Wechselstromausrüstung und deren Folgen für Dach, Thermomanagement und Steuerung.",
+        "variante_ids": [
+          "V2"
+        ]
+      },
+      {
+        "id": "K4",
+        "frage": "Welche Bahnsteighöhen und welche zulässige Fahrzeugbreite gibt das Netz vor, und muss das Fahrzeug unterschiedliche Bahnsteighöhen bedienen?",
+        "element_ids": [
+          "E2"
+        ],
+        "anlass": "schnittstelle",
+        "relevanz": "Davon hängen Flurhöhe, Trittstufen, Fahrwerksbauart und Einbauort von Antrieb und Klimageräten ab.",
+        "variante_ids": [
+          "V3"
+        ]
+      },
+      {
+        "id": "K5",
+        "frage": "Fährt das Fahrzeug einzeln, in Mehrfachtraktion kuppelbarer Einheiten oder als fest gekuppelter Triebzug, und mit welchen vorhandenen Baureihen muss es kuppelbar sein?",
+        "element_ids": [
+          "E2",
+          "E8",
+          "E7"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Die Antwort legt Kupplungseinrichtung, Vielfachsteuerung, durchgeschaltete Zugleitungen und die Zahl der Führerstände fest.",
+        "variante_ids": [
+          "V4"
+        ]
+      },
+      {
+        "id": "K6",
+        "frage": "Ist ein Rad-Schiene-Laufwerk vorgegeben, oder kommt wegen starker Längsneigungen ein gummibereiftes Laufwerk in Betracht?",
+        "element_ids": [
+          "E2",
+          "E3"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Fahrwerk, Antriebsanordnung, Bremswirkung und Fahrstromzuführung über die Spurführungsschienen ab.",
+        "variante_ids": [
+          "V5"
+        ]
+      },
+      {
+        "id": "K7",
+        "frage": "Soll die mechanische Bremse elektrohydraulisch, elektropneumatisch oder elektromechanisch betätigt werden, und ist eine Druckluftanlage für andere Verbraucher ohnehin vorgesehen?",
+        "element_ids": [
+          "E5",
+          "E12"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Die Antwort entscheidet, ob die Neben- und Versorgungssysteme eine Druckluftanlage enthalten und welche Schnittstelle das Bremsgerät hat."
+      }
+    ],
+    "anforderungsthemen": [
+      {
+        "id": "R1",
+        "element_ids": [
+          "E5"
+        ],
+        "thema": "Bremsausrüstung und Rückfallebenen",
+        "kenngroessen": [
+          "Anzahl unabhängiger Bremsen",
+          "Mittlere Bremsverzögerung bei Betriebs- und Gefahrbremsung",
+          "Festhaltevermögen auf der größten Streckenneigung",
+          "Wirksamkeit bei Ausfall der Fahrleitungsspannung",
+          "Notbremsüberbrückung"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "BOStrab § 36 Bremsen (Deutschland, Straßenbahnen nach § 4 PBefG einschließlich Hoch- und Untergrundbahnen)",
+            "quellen_id": "Q2",
+            "fundstelle": "§ 36 Abs. 1 bis 6, 8 und 10"
+          }
+        ]
+      },
+      {
+        "id": "R2",
+        "element_ids": [
+          "E10"
+        ],
+        "thema": "Signaleinrichtungen",
+        "kenngroessen": [
+          "Zugsignale an Front, Heck und Längsseiten",
+          "Unabhängigkeit von der Fahrleitungsspannung",
+          "Abblendbarkeit der Scheinwerfer",
+          "Achtungssignal"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "BOStrab § 40 Signaleinrichtungen (Deutschland; Abs. 2 nur für Fahrzeuge straßenabhängiger Bahnen)",
+            "quellen_id": "Q2",
+            "fundstelle": "§ 40 Abs. 1 und 2"
+          }
+        ]
+      },
+      {
+        "id": "R3",
+        "element_ids": [
+          "E9",
+          "E1"
+        ],
+        "thema": "Betriebsweise und Zugfolge",
+        "kenngroessen": [
+          "Streckenhöchstgeschwindigkeit bei Fahren auf Sicht",
+          "Zugfolgeabstand",
+          "Automatisierungsgrad"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "BOStrab § 49 Fahrordnung (Deutschland)",
+            "quellen_id": "Q2",
+            "fundstelle": "§ 49 Abs. 1 und 2"
+          }
+        ]
+      },
+      {
+        "id": "R4",
+        "element_ids": [
+          "E1"
+        ],
+        "thema": "Beförderungskapazität",
+        "kenngroessen": [
+          "Fahrgäste je Stunde und Richtung",
+          "Steh- und Sitzplätze je Fahrzeug",
+          "Zuglänge"
+        ]
+      }
+    ]
+  },
+  "offene_punkte": [
+    "Uneinheitliche Zuordnung zwischen Kindartikeln: Fahrgastraum als Hauptsystem Aufbau und Ladung (A-0033) gegenüber Wagenkasten unter Fahrzeugstruktur und Fahrwerk (A-0034, A-0035); Fahrgastsitze im Führerstand (A-0033, A-0034, gemäß Zuordnungsliste Sitze zum Bedienraum) gegenüber Fahrgastraum im Wagenkasten (A-0035/P5); Türantriebe in den Neben- und Versorgungssystemen (A-0033, A-0034), in A-0035 nicht als Element ausgewiesen. Angleichung der Kindartikel prüfen.",
+    "Uneinheitliche Subsystemnamen: Stromabnahme (A-0033, A-0034) gegenüber Fahrstromaufnahme (A-0035), Hilfsbetriebeversorgung (A-0033, A-0034) gegenüber Hilfsenergieversorgung (A-0035), Mechanische Bremse (A-0033, A-0034) gegenüber Reibungsbremse (A-0035).",
+    "Funktionsnamen in Kindartikeln entgegen Glossarregel: „Betriebstüren betätigen“ (A-0033/P32, A-0034/P31) und „Schiebetür betätigen“ (A-0035/P29) statt „Türen betätigen“; die Übersicht verwendet „Türen betätigen“.",
+    "Reichweite Stromschiene: A-0034/P10 schließt für Deutschland seitliche oder mittige Stromschienen bei Stadt- und Straßenbahnen aus, A-0033/P10 beschreibt segmentierte, nur unter dem Zug spannungsführende Bodenstromschienen; Geltungsbereich (Deutschland oder international) in A-0033 klarstellen.",
+    "Betrachtungsumfang: Traktionsenergiespeicher nur in A-0033, Zweisystembetrieb nur in A-0034; Zweikraftfahrzeuge nennt Q3 für die Stadtbahn, A-0034 schließt sie aus. Abgleich, ob Speicher und Zweikraftbetrieb in A-0034 und A-0035 ergänzt werden sollen.",
+    "Recherche: Fachliteratur zum Vergleich der Fahrzeugkonzepte von Straßenbahn, Stadtbahn und U-Bahn (Suchbegriff: Fahrzeugtechnik Straßenbahn Stadtbahn U-Bahn Fahrzeugkonzepte Lehrbuch, VDV-Schriften Stadtbahnfahrzeuge), um die hergeleiteten Absätze P4, P5, P7, P8 und P14 zu belegen.",
+    "Recherche: Wortlaut DIN 25003 (Systematik der Schienenfahrzeuge) beschaffen, um die Zuordnung der U-Bahn-Fahrzeuge und die Klassen nach Breite und Fußbodenhöhe aus der Primärquelle zu belegen.",
+    "Recherche: Fahrzeugbreiten und Lichtraumprofile von U-Bahn-Netzen (Suchbegriff: U-Bahn Fahrzeugbreite Kleinprofil Großprofil Lichtraumprofil) als Ergänzung zu Unterscheidungsmerkmal V3."
+  ]
+}
