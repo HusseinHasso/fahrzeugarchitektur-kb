@@ -1,0 +1,1589 @@
+{
+  "schema_version": "2.3",
+  "artikel_id": "A-0132",
+  "artikeltyp": "uebersicht",
+  "titel": "Sonderfahrzeuge",
+  "betrachtungsumfang": "Übersicht über die Sonderfahrzeuge als Straßenkraftfahrzeuge auf Basis eines Serien-Personenkraftwagens oder eines Nutzfahrzeugs, die durch Aufbau oder Ausrüstung eine Sonderaufgabe über das Befördern hinaus erfüllen, mit den Kindartikeln Krankenwagen, Feuerwehrfahrzeug, Polizeifahrzeug und Müllfahrzeug: gemeinsame Architektur, Unterscheidungsmerkmale und gemeinsames Grundmodell. Antriebsarten (Verbrennungsmotor, Hybrid- und batterieelektrischer Antrieb im Umfang der Kindartikel) werden nur vergleichend auf Hauptsystemebene behandelt; Energiespeicher und Energiewandler je Antriebsart sind in den Kindartikeln modelliert, Brennstoffzellen- und Gasantriebe sind ausgeschlossen. Herangezogene Regelwerke gelten für die EU-Typgenehmigung (Verordnung (EU) 2018/858) und die Ausrüstung mit Warnleuchten in Deutschland (StVZO); die statistische Abgrenzung folgt dem Glossar von Eurostat, UN und ITF. Wohnmobile, Leichenwagen, Mobilkrane, Abschleppwagen, selbstfahrende Arbeitsmaschinen, gepanzerte Sonderwagen und Militärfahrzeuge nur zur Abgrenzung.",
+  "status": "geprueft",
+  "quellenzugriff": "ja",
+  "kindartikel_ids": [
+    "A-0023",
+    "A-0024",
+    "A-0025",
+    "A-0026"
+  ],
+  "quellen": [
+    {
+      "quellen_id": "Q1",
+      "titel": "Verordnung (EU) 2018/858, Artikel 3: Begriffsbestimmungen (Textwiedergabe)",
+      "urheber": "Europäisches Parlament und Rat der Europäischen Union; Textwiedergabe gesetze.legal",
+      "stand": null,
+      "url": "https://gesetze.legal/eu/vo_eu_2018_858/3",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q2",
+      "titel": "Verordnung (EU) 2018/858, Anhang I: Allgemeine Begriffsbestimmungen, Kriterien für die Klasseneinteilung von Fahrzeugen, den Fahrzeugtypen und Arten des Aufbaus (Textwiedergabe)",
+      "urheber": "Europäisches Parlament und Rat der Europäischen Union; Textwiedergabe gesetze.legal",
+      "stand": null,
+      "url": "https://gesetze.legal/eu/vo_eu_2018_858/anhang_i",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q3",
+      "titel": "Glossary for transport statistics, 5th edition",
+      "urheber": "Eurostat, United Nations Economic Commission for Europe, International Transport Forum (OECD)",
+      "stand": "2019",
+      "url": "https://ec.europa.eu/eurostat/documents/3859598/10013293/KS-GQ-19-004-EN-N.pdf",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "behoerde"
+    },
+    {
+      "quellen_id": "Q4",
+      "titel": "Straßenverkehrs-Zulassungs-Ordnung (StVZO), § 52 Zusätzliche Scheinwerfer und Leuchten",
+      "urheber": "Bundesministerium für Verkehr; Textwiedergabe buzer.de",
+      "stand": "zuletzt geändert durch Artikel 1 V. v. 10.06.2024 BGBl. 2024 I Nr. 191",
+      "url": "https://www.buzer.de/52_StVZO.htm",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q5",
+      "titel": "Sonderkraftfahrzeug (aufgerufen über Sonderfahrzeug)",
+      "urheber": "Wikipedia, die freie Enzyklopädie",
+      "stand": "Version oldid=258502006 (1. August 2025)",
+      "url": "https://de.wikipedia.org/wiki/Sonderfahrzeug",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q6",
+      "titel": "Einsatzfahrzeug",
+      "urheber": "Wikipedia, die freie Enzyklopädie",
+      "stand": "Version oldid=267168396 (18. Mai 2026)",
+      "url": "https://de.wikipedia.org/wiki/Einsatzfahrzeug",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "nachschlagewerk"
+    }
+  ],
+  "abschnitte": [
+    {
+      "ueberschrift": "Einleitung",
+      "abschnittstyp": "gesamtsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P1",
+          "text": "Die Verordnung (EU) 2018/858 definiert für die EU-Typgenehmigung das Fahrzeug mit besonderer Zweckbestimmung als Fahrzeug der Klasse M, N oder O mit spezifischen technischen Merkmalen, mit denen eine Funktion erfüllt werden soll, für die spezielle Vorkehrungen oder eine besondere Ausrüstung erforderlich sind. Anhang I nennt als Typen unter anderem Wohnmobil, beschussgeschütztes Fahrzeug, Krankenwagen, Leichenwagen und Mobilkran und fasst die übrigen in der Sondergruppe zusammen. Enger fasst das Glossar für die Verkehrsstatistik von Eurostat, UN und ITF Sonderfahrzeuge als Straßenkraftfahrzeuge für andere Zwecke als die Beförderung von Personen oder Gütern, etwa Feuerwehrfahrzeuge, Mobilkrane, Abschleppwagen und Fahrbüchereien.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Art. 3 Nr. 31"
+            },
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Teil A Nr. 5.1 bis 5.8 (Fahrzeuge mit besonderer Zweckbestimmung)"
+            },
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Eintrag B.II-33 Special purpose road motor vehicle, S. 43"
+            }
+          ],
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P2",
+          "text": "In Deutschland werden laut Enzyklopädie Feuerwehr- und Rettungsdienstfahrzeuge, Unfallhilfswagen und Leichenwagen in den Fahrzeugpapieren als sonstige Kraftfahrzeuge eingetragen. Ein Einsatzfahrzeug kann ein normaler Pkw oder Lkw sein, den die Einsatzorganisation für Rettungsdienst, Feuerwehr, Katastrophenschutz oder Polizei ausrüstet.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q5",
+              "fundstelle": "Abschnitt Allgemeine Bezeichnungen, dritter Absatz"
+            },
+            {
+              "quellen_id": "Q6",
+              "fundstelle": "Abschnitt Kennzeichnung, dritter Absatz"
+            }
+          ],
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P3",
+          "text": "Diese Übersicht fasst unter Sonderfahrzeugen Straßenkraftfahrzeuge, die auf einem Serienfahrzeug aufbauen und durch Aufbau oder Ausrüstung eine Sonderaufgabe über das Befördern hinaus erfüllen. Sie stellt Krankenwagen, Feuerwehrfahrzeug, Polizeifahrzeug und Müllfahrzeug gegenüber. Krankenwagen und Müllfahrzeug befördern zwar Patienten beziehungsweise Abfall und fallen damit nicht unter die enge statistische Abgrenzung, wohl aber unter den funktionalen Begriff des Sonderfahrzeugs. Wohnmobile, Mobilkrane, selbstfahrende Arbeitsmaschinen, gepanzerte Sonderwagen und Militärfahrzeuge dienen nur der Abgrenzung.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P1",
+              "P2",
+              "A-0023/P1",
+              "A-0024/P1",
+              "A-0025/P1",
+              "A-0025/P2",
+              "A-0026/P1",
+              "Inventar: Kindartikel A-0023 bis A-0026 unter dem Pfad Landfahrzeuge, Straßenfahrzeuge, Sonderfahrzeuge"
+            ],
+            "schluss": "Das Taxon ist funktional über Serienbasis und Sonderausrüstung abgegrenzt; die vier Kindartikel decken Rettungsdienst, Feuerwehr, Polizei und Abfallsammlung ab."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": [
+            "A-0023",
+            "A-0024",
+            "A-0025",
+            "A-0026"
+          ]
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Gemeinsame Architektur: Basisfahrzeug und Sonderausbau",
+      "abschnittstyp": "querschnitt",
+      "absaetze": [
+        {
+          "absatz_id": "P4",
+          "text": "Für Fahrzeuge, die in mehreren Fertigungsstufen entstehen, sieht die Verordnung (EU) 2018/858 in der EU die Mehrstufen-Typgenehmigung vor. Das Basisfahrzeug wird für die erste Stufe verwendet, ein unvollständiges Fahrzeug muss mindestens eine weitere Vervollständigungsstufe durchlaufen, und das vervollständigte Fahrzeug ist das Ergebnis des Verfahrens. Soll ein unvollständiges Fahrzeug der Unterklasse der Fahrzeuge mit besonderer Zweckbestimmung zugeordnet werden, erhält seine Klassenbezeichnung zusätzlich den Buchstaben S.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Art. 3 Nr. 8 und Nr. 24 bis 26"
+            },
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Teil A Nr. 2.2.1"
+            }
+          ],
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P5",
+          "text": "Alle Kindartikel trennen ihr Fahrzeug in Basisfahrzeug und Sonderausbau: Patientenraum mit medizintechnischer Einrichtung, feuerwehrtechnischer Aufbau, Polizeiausrüstung oder Arbeitsaufbau aus Schüttung und Laderaum. Krankenwagen, Feuerwehr- und Müllfahrzeug entstehen aus Fahrgestell oder Kastenwagen eines Nutzfahrzeugs, das Polizeifahrzeug aus einem abgewandelten Serienfahrzeug mit Werksvorrüstung oder Nachrüstung. Die Trennlinie folgt der Arbeitsteilung zwischen Fahrgestell- und Aufbauhersteller, beim Polizeifahrzeug zwischen Werksvorrüstung und Ausbaubetrieb, und verläuft über die Aufbaubefestigung, eine elektrische Aufbauschnittstelle und ein Schnittstellenmodul oder Gateway am Fahrzeugbus. Krankenwagen und Polizeifahrzeug übernehmen Lenksystem sowie Fahrerassistenz und Sicherheit weitgehend vom Basisfahrzeug; Feuerwehr- und Müllfahrzeug ergänzen eine Zusatz- oder Nachlaufachslenkung und aufbaubezogene Sicherheitsfunktionen wie Abfahrwarnung, Rückraum- und Trittbrettüberwachung. Federung, Bremse und Kühlung werden für Zusatzlasten und Standbetrieb verstärkt oder abgestimmt.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P4",
+              "A-0023/P2",
+              "A-0023/P3",
+              "A-0023/P4",
+              "A-0023/P9",
+              "A-0023/P10",
+              "A-0023/P21",
+              "A-0024/P3",
+              "A-0024/P4",
+              "A-0024/P5",
+              "A-0024/P13",
+              "A-0024/P14",
+              "A-0024/P23",
+              "A-0024/P27",
+              "A-0025/P2",
+              "A-0025/P3",
+              "A-0025/P5",
+              "A-0025/P15",
+              "A-0025/P20",
+              "A-0026/P1",
+              "A-0026/P2",
+              "A-0026/P8",
+              "A-0026/P15",
+              "A-0026/P20"
+            ],
+            "schluss": "Die Trennung in Basisfahrzeug und Sonderausbau mit definierter mechanischer, elektrischer und informationstechnischer Schnittstelle ist allen Kindartikeln gemeinsam und bildet den Kern des Grundmodells; Lenksystem sowie Fahrerassistenz und Sicherheit bleiben nur bei Krankenwagen und Polizeifahrzeug weitgehend unverändert."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "loesung",
+          "herangezogene_artikel_ids": [
+            "A-0023",
+            "A-0024",
+            "A-0025",
+            "A-0026"
+          ]
+        },
+        {
+          "absatz_id": "P6",
+          "text": "Auf oberster Ebene zerlegen alle vier Kindartikel ihr Fahrzeug in dieselben dreizehn Hauptsysteme ohne entfallene Kategorie: Fahrzeugstruktur und Fahrwerk, Antriebssystem, Energieversorgungssystem, Lenksystem, Bremssystem, Fahrerhaus, Aufbau und Ladung, Elektrik und Elektronik, Fahrzeugsteuerung und Information, Fahrerassistenz und Sicherheit, Beleuchtung und Sicht, Thermomanagement sowie Neben- und Versorgungssysteme. Nur das Polizeifahrzeug benennt Bedienraum und Nutzlastbereich als Fahrgastraum sowie Laderaum und Anhängevorrichtung, weil es auf einem Personenkraftwagen aufbaut. Das Grundmodell Sonderfahrzeug übernimmt diese oberste Ebene unverändert.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "A-0023/P27",
+              "A-0024/P34",
+              "A-0025/P26",
+              "A-0026/P27",
+              "A-0025/P2",
+              "Glossarvorgaben: Fahrerhaus und Aufbau und Ladung für Nutzfahrzeuge, Fahrgastraum und Laderaum und Anhängevorrichtung für Pkw"
+            ],
+            "schluss": "Die oberste Zerlegungsebene ist für alle Sonderfahrzeuge der Gruppe identisch; nur die Benennung von Bedienraum und Nutzlastbereich folgt der Basisfahrzeugklasse."
+          },
+          "sicherheit": "hoch",
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": [
+            "A-0023",
+            "A-0024",
+            "A-0025",
+            "A-0026"
+          ]
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Gemeinsame Architektur: Sonderfunktionen über die Hauptsysteme",
+      "abschnittstyp": "querschnitt",
+      "absaetze": [
+        {
+          "absatz_id": "P7",
+          "text": "Quer über die Hauptsysteme teilen die Kindartikel drei Sonderfunktionen. Erstens machen alle das Fahrzeug im Verkehr kenntlich: Die Signalanlage liegt in Beleuchtung und Sicht, ihre Bedienung im Bedienraum und ihre Versorgung als Dauerlast in Elektrik und Elektronik; hinzu kommen Arbeits-, Umfeld- oder Suchscheinwerfer. Zweitens enthält Fahrzeugsteuerung und Information eine Einsatz- oder Betriebskommunikation: Krankenwagen, Feuerwehr- und Polizeifahrzeug binden sich über Funkanlage und Navigation an die Leitstelle an und zeichnen Einsatzfahrten oder Einsatzgeschehen auf, das Müllfahrzeug überträgt Wiege-, Touren- und Zustandsdaten per Telematikeinheit an den Betriebshof.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "A-0023/P12",
+              "A-0023/P18",
+              "A-0023/P19",
+              "A-0023/P23",
+              "A-0024/P17",
+              "A-0024/P24",
+              "A-0024/P25",
+              "A-0024/P29",
+              "A-0025/P12",
+              "A-0025/P19",
+              "A-0025/P23",
+              "A-0026/P17",
+              "A-0026/P22"
+            ],
+            "schluss": "Signalisierung und Einsatz- oder Betriebskommunikation sind gemeinsame Sonderfunktionen, deren Zuordnung zu Beleuchtung und Sicht, Bedienraum, Elektrik und Elektronik sowie Fahrzeugsteuerung und Information in allen Kindartikeln gleich ist."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": [
+            "A-0023",
+            "A-0024",
+            "A-0025",
+            "A-0026"
+          ]
+        },
+        {
+          "absatz_id": "P8",
+          "text": "Drittens arbeitet die Ausrüstung lange im Stand. Der Krankenwagen versorgt den Ausbau über Landstrom an der Wache und über Motorlauf mit Leerlaufdrehzahlanhebung am Einsatzort, das Feuerwehrfahrzeug treibt im Pumpenbetrieb stationär die Pumpe und hält in der Wache Batterie und Druckluftvorrat über eine Netzeinspeisung, das Polizeifahrzeug versorgt die Ausrüstung aus einer Zusatzbatterie und über eine Leerlaufsicherung, und das Müllfahrzeug lässt den Motor an jeder Ladestelle für die Hydraulik laufen. Gemeinsam folgen daraus ein Energiemanagement für den Standbetrieb und ein Thermomanagement, das ohne Fahrtwind Antrieb, Ausrüstung und Innenraum temperiert.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "A-0023/P7",
+              "A-0023/P16",
+              "A-0023/P19",
+              "A-0023/P25",
+              "A-0024/P11",
+              "A-0024/P31",
+              "A-0025/P8",
+              "A-0025/P9",
+              "A-0025/P24",
+              "A-0026/P24",
+              "A-0026/P26"
+            ],
+            "schluss": "Der Standbetrieb der Ausrüstung ist allen Kindartikeln gemeinsam und verlangt Energie- und Thermomanagement über Energieversorgungssystem, Neben- und Versorgungssysteme und Thermomanagement."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": [
+            "A-0023",
+            "A-0024",
+            "A-0025",
+            "A-0026"
+          ]
+        },
+        {
+          "absatz_id": "P9",
+          "text": "Uneinheitlich zugeordnet ist erstens die externe Einspeisung: beim Krankenwagen als Landstromeinspeisung in Elektrik und Elektronik, beim Feuerwehrfahrzeug als Netzeinspeisung im Energieversorgungssystem, beim Polizeifahrzeug als Fremdeinspeisung in den Neben- und Versorgungssystemen. Zweitens liegt die Überwachung vor dem Losfahren beim Krankenwagen als Warnanzeige im Fahrerhaus, beim Feuerwehrfahrzeug als Abfahrwarnung und beim Müllfahrzeug als Trittbrettüberwachung in Fahrerassistenz und Sicherheit. Als Modellannahme ordnet das Grundmodell die Einspeisung wie die Ladeeinrichtung dem Energieversorgungssystem und die Abfahrüberwachung der Fahrerassistenz und Sicherheit zu.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "A-0023/P11",
+              "A-0023/P17",
+              "A-0024/P11",
+              "A-0024/P27",
+              "A-0025/P25",
+              "A-0026/P20",
+              "Glossarvorgaben, Zuordnungsliste: Ladeeinrichtung unter energieversorgung"
+            ],
+            "schluss": "Die Kindartikel ordnen externe Einspeisung und Abfahrüberwachung verschiedenen Hauptsystemen zu; das Grundmodell legt die Zuordnung nach der Zuordnungsliste und der Mehrheit der Kindartikel fest."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": [
+            "A-0023",
+            "A-0024",
+            "A-0025",
+            "A-0026"
+          ]
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Unterscheidungsmerkmal Klasse des Basisfahrzeugs",
+      "abschnittstyp": "variante",
+      "absaetze": [
+        {
+          "absatz_id": "P10",
+          "text": "Das erste Unterscheidungsmerkmal ist die Klasse des Basisfahrzeugs. Das Polizeifahrzeug baut auf Limousine, Kombi, SUV oder Kleinbus auf, der Krankenwagen auf Kastenwagen oder Fahrgestell eines leichten bis mittelschweren Nutzfahrzeugs, das Feuerwehrfahrzeug auf Transporter- bis schweren Lkw-Fahrgestellen und das Müllfahrzeug auf einem Lkw-Fahrgestell. Mit der Klasse wechselt die Bremsbauart: Pkw, Kastenwagen und leichte Feuerwehrfahrzeuge bremsen hydraulisch mit Bremskraftverstärker, mittlere und schwere Feuerwehrfahrzeuge und das Müllfahrzeug bremsen mit Druckluft; schwere Fahrzeuge und das Müllfahrzeug haben zusätzlich eine Dauerbremse. Die Neben- und Versorgungssysteme liefern entsprechend bei Bedarf Unterdruck oder Druckluft, die auch Luftfederung, Lichtmast und Geräte versorgt.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "A-0025/P2",
+              "A-0025/P4",
+              "A-0025/P11",
+              "A-0025/P25",
+              "A-0023/P3",
+              "A-0023/P4",
+              "A-0023/P10",
+              "A-0024/P1",
+              "A-0024/P5",
+              "A-0024/P15",
+              "A-0024/P33",
+              "A-0024/P38",
+              "A-0026/P1",
+              "A-0026/P3",
+              "A-0026/P10",
+              "A-0026/P26"
+            ],
+            "schluss": "Die Basisfahrzeugklasse bestimmt Bremsbauart und Hilfsenergie der Neben- und Versorgungssysteme sowie die Benennung von Bedienraum und Nutzlastbereich; die Dauerbremse schwerer Feuerwehrfahrzeuge stützt sich nur auf Modellwissen im Kindartikel."
+          },
+          "sicherheit": "gering",
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": [
+            "A-0023",
+            "A-0024",
+            "A-0025",
+            "A-0026"
+          ]
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Unterscheidungsmerkmal Leistungsversorgung der Sonderausrüstung",
+      "abschnittstyp": "variante",
+      "absaetze": [
+        {
+          "absatz_id": "P11",
+          "text": "Das zweite Merkmal ist die Leistung, die die Sonderausrüstung dem Basisfahrzeug entnimmt. Beim Polizeifahrzeug ist sie überwiegend elektrisch: Signalanlagen, Funk, Einsatzrechner und Videoaufzeichnung hängen an einem getrennt abgesicherten Ausrüstungszweig und am Gateway. Der Krankenwagen braucht zusätzlich ein getrenntes Aufbaubordnetz mit Wechselspannungsnetz für Medizingeräte und eine medizinische Gasversorgung. Feuerwehr- und Müllfahrzeug entnehmen dagegen erhebliche mechanische Leistung über einen Nebenabtrieb, für die Feuerlöschkreiselpumpe oder für die Hydraulikpumpe, die Lifter, Verdichtungseinrichtung und Heckklappe bewegt. Damit kommen eine Aufbausteuerung oder Drehzahlregelung im Fahrzeugmanagement, Verriegelungen zwischen Arbeits- und Fahrbetrieb und Kühlung für Pumpe oder Hydrauliköl hinzu.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "A-0025/P15",
+              "A-0025/P19",
+              "A-0023/P15",
+              "A-0023/P16",
+              "A-0023/P17",
+              "A-0024/P6",
+              "A-0024/P18",
+              "A-0024/P25",
+              "A-0024/P30",
+              "A-0024/P32",
+              "A-0024/P33",
+              "A-0026/P14",
+              "A-0026/P17",
+              "A-0026/P24",
+              "A-0026/P25",
+              "A-0026/P26"
+            ],
+            "schluss": "Elektrisch versorgte Ausrüstung (Polizeifahrzeug, Krankenwagen) und über Nebenabtrieb mechanisch oder hydraulisch versorgte Arbeitsaufbauten (Feuerwehrfahrzeug, Müllfahrzeug) verändern Neben- und Versorgungssysteme, Fahrzeugsteuerung und Thermomanagement unterschiedlich."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": [
+            "A-0023",
+            "A-0024",
+            "A-0025",
+            "A-0026"
+          ]
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Unterscheidungsmerkmal Signalisierung",
+      "abschnittstyp": "variante",
+      "absaetze": [
+        {
+          "absatz_id": "P12",
+          "text": "In Deutschland dürfen nach § 52 Abs. 3 StVZO Kraftfahrzeuge des Vollzugsdienstes der Polizei, außen deutlich gekennzeichnete Einsatz- und Kommandofahrzeuge der Feuerwehren, des Zivil- und Katastrophenschutzes und des Rettungsdienstes sowie als Krankenkraftwagen anerkannte und gekennzeichnete Fahrzeuge des Rettungsdienstes Warnleuchten für blaues Blinklicht führen. Nach Abs. 3a dürfen Fahrzeuge der Polizeien des Bundes und der Länder zusätzlich ein Anhaltesignal und Signalgeber für Lichtschrift haben. Fahrzeuge der Müllabfuhr dürfen nach Abs. 4 gelbes Rundumlicht führen, wenn sie rot-weiße Warnmarkierungen tragen, und nach Abs. 7 Arbeitsscheinwerfer auch während einer Fahrt einschalten, die zum Arbeitsvorgang gehört.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q4",
+              "fundstelle": "Abs. 3 Satz 1 Nr. 1, 2 und 4; Abs. 3a Satz 1; Abs. 4 Nr. 1; Abs. 7 Satz 3"
+            }
+          ],
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P13",
+          "text": "Das dritte Merkmal ist daher die Signalisierung. Krankenwagen, Feuerwehr- und Polizeifahrzeug sind Einsatzfahrzeuge mit einer Sondersignalanlage aus Warnleuchten für blaues Blinklicht und Einsatzhorn, das der Krankenwagen-Artikel Folgetonhorn nennt. Nur das Polizeifahrzeug erhält zusätzlich eine Anhaltesignalanlage, die nicht zugleich mit dem blauen Blinklicht betrieben werden darf, und kann zivil mit verdeckten oder aufgesetzten Kennleuchten ausgeführt sein. Das Müllfahrzeug führt stattdessen gelbes Rundumlicht, Warnmarkierung und Arbeitsscheinwerfer für Schüttung und Umfeld. Die Wahl ändert Bedienelemente im Bedienraum, Dauerlast und Verdrahtung in Elektrik und Elektronik und die Aufzeichnung des Signalbetriebs in Fahrzeugsteuerung und Information.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P12",
+              "A-0023/P12",
+              "A-0023/P18",
+              "A-0023/P22",
+              "A-0023/P23",
+              "A-0024/P24",
+              "A-0024/P28",
+              "A-0024/P29",
+              "A-0025/P19",
+              "A-0025/P21",
+              "A-0025/P22",
+              "A-0025/P23",
+              "A-0025/P32",
+              "A-0026/P21",
+              "A-0026/P22"
+            ],
+            "schluss": "Die verkehrsrechtliche Stellung trennt die drei Einsatzfahrzeuge mit blauem Blinklicht vom Müllfahrzeug mit gelbem Rundumlicht; das Polizeifahrzeug ergänzt die Anhaltesignalanlage."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": [
+            "A-0023",
+            "A-0024",
+            "A-0025",
+            "A-0026"
+          ]
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Unterscheidungsmerkmal Personen im Sonderbereich",
+      "abschnittstyp": "variante",
+      "absaetze": [
+        {
+          "absatz_id": "P14",
+          "text": "Das vierte Merkmal sind die Personen, die außer dem Fahrer mitfahren oder mitarbeiten. Beim Krankenwagen trennt je nach Bauart eine Trennwand Fahrerhaus und Patientenraum (nach US-Spezifikation bei Kastenwagen und Kastenwagen-Fahrgestell); der Patientenraum braucht Rückhaltesysteme für die Sitzplätze, eine Tragenhalterung und eigene Klimatisierung. Das Feuerwehrfahrzeug befördert die Mannschaft in der Kabine, deren Länge als Trupp-, Staffel- oder Gruppenkabine den Geräteaufbau begrenzt. Das Polizeifahrzeug nutzt den Fondraum für Fahrgäste, festgenommene Personen hinter einer Trennwand oder einen Diensthund. Beim Müllfahrzeug fahren Lader auf Trittbrettern mit; Trittbrettüberwachung, Signalanlage und Not-Halt-Einrichtung in Fahrerassistenz und Sicherheit sichern sie.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "A-0023/P11",
+              "A-0023/P14",
+              "A-0023/P20",
+              "A-0023/P25",
+              "A-0024/P16",
+              "A-0024/P17",
+              "A-0025/P12",
+              "A-0025/P13",
+              "A-0025/P14",
+              "A-0026/P18",
+              "A-0026/P20"
+            ],
+            "schluss": "Art und Tätigkeit der mitfahrenden Personen verändern Bedienraum, Aufbau, Insassenschutz und Klimatisierung je Kindartikel verschieden."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": [
+            "A-0023",
+            "A-0024",
+            "A-0025",
+            "A-0026"
+          ]
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Unterscheidungsmerkmal Antriebsart im Arbeitsbetrieb",
+      "abschnittstyp": "variante",
+      "absaetze": [
+        {
+          "absatz_id": "P15",
+          "text": "Die Antriebsart variiert in allen Kindartikeln, aber mit unterschiedlichem Umfang: Den Verbrennungsmotor betrachten alle, den batterieelektrischen Antrieb Krankenwagen, Polizei- und Müllfahrzeug, den seriellen Hybrid Feuerwehr- und Müllfahrzeug, den Vollhybrid nur das Polizeifahrzeug. Das Energieversorgungssystem liefert dem Antriebssystem Kraftstoff oder Hochvoltstrom. Bei batterieelektrischem Antrieb deckt die Traktionsbatterie Fahrt und Standzeit gemeinsam und konkurriert mit der Nutzlast (Krankenwagen, Müllfahrzeug), und das Thermomanagement heizt ohne Motorabwärme elektrisch. Bei Feuerwehr- und Müllfahrzeug werden zusätzlich Pumpe oder Aufbauhydraulik elektrisch angetrieben, die Lenkunterstützung im Lenksystem und der Kompressor brauchen eigene Antriebe, und der Nebenabtrieb kann entfallen. Beim Polizeifahrzeug versorgen Zusatzbatterie oder Hilfsstrommodul die Ausrüstung.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "A-0023/P6",
+              "A-0023/P8",
+              "A-0023/P25",
+              "A-0024/P7",
+              "A-0024/P8",
+              "A-0024/P13",
+              "A-0025/P6",
+              "A-0025/P8",
+              "A-0025/P9",
+              "A-0026/P5",
+              "A-0026/P6",
+              "A-0026/P8",
+              "A-0026/P24",
+              "A-0026/P26",
+              "Betrachtungsumfang der Kindartikel A-0023 bis A-0026"
+            ],
+            "schluss": "Die Antriebsart ist eine gemeinsame Variante mit je Kindartikel verschiedenem Umfang; bei batterieelektrischem Antrieb verlagern sich Fahrt, Standzeit und Heizung auf die Traktionsbatterie, Arbeits- und Hilfsantriebe nur bei Feuerwehr- und Müllfahrzeug."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "variante",
+          "herangezogene_artikel_ids": [
+            "A-0023",
+            "A-0024",
+            "A-0025",
+            "A-0026"
+          ]
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Zusammenfassung",
+      "abschnittstyp": "gesamtsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P16",
+          "text": "Sonderfahrzeuge teilen ein Grundmodell aus Basisfahrzeug und Sonderausbau mit denselben Hauptsystemen, einer Signalanlage, einer Einsatz- oder Betriebskommunikation und dem Standbetrieb der Ausrüstung. Sie unterscheiden sich in Basisfahrzeugklasse, Leistungsversorgung der Ausrüstung, Signalisierung, Personen im Sonderbereich und Antriebsumfang. Patiententransport mit Behandlung führt zum Krankenwagen, Löschen und Hilfeleisten mit hoher Arbeitsleistung zum Feuerwehrfahrzeug, Streifen- und Verkehrsdienst auf Pkw-, SUV- oder Kleinbusbasis zum Polizeifahrzeug, Sammeln und Verdichten mit hydraulischem Arbeitsaufbau zum Müllfahrzeug.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P5",
+              "P6",
+              "P7",
+              "P8",
+              "P10",
+              "P11",
+              "P13",
+              "P14",
+              "P15"
+            ],
+            "schluss": "Ein gemeinsames Grundmodell mit fünf Unterscheidungsmerkmalen deckt alle Kindartikel ab und erlaubt die Wahl der Fahrzeugart über die Sonderaufgabe."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "funktion",
+          "herangezogene_artikel_ids": [
+            "A-0023",
+            "A-0024",
+            "A-0025",
+            "A-0026"
+          ]
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Modellierungsbezug",
+      "abschnittstyp": "modellierung",
+      "absaetze": [
+        {
+          "absatz_id": "P17",
+          "text": "In SysML bildet ein abstrakter Block Sonderfahrzeug den Grundblock mit den dreizehn Hauptsystemen als Teilen und einer ausdrücklich modellierten Schnittstelle zwischen Basisfahrzeug und Sonderausbau. Die Kindartikel spezialisieren ihn vor allem im Nutzlastbereich, etwa Krankenwagen → Aufbau und Ladung → Medizinische Gasversorgung → Druckminderer, Feuerwehrfahrzeug → Aufbau und Ladung → Löschanlage → Feuerlöschkreiselpumpe, Polizeifahrzeug → Beleuchtung und Sicht → Anhaltesignalanlage und Müllfahrzeug → Aufbau und Ladung → Verdichtungseinrichtung → Pressplatte. Beim Polizeifahrzeug ersetzen Fahrgastraum sowie Laderaum und Anhängevorrichtung die Teile Fahrerhaus und Aufbau und Ladung.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P5",
+              "P6",
+              "A-0023/P28",
+              "A-0024/P35",
+              "A-0025/P23",
+              "A-0025/P27",
+              "A-0026/P28"
+            ],
+            "schluss": "Die Kindartikel lassen sich als Spezialisierungen eines gemeinsamen Grundblocks mit ersetzten oder ergänzten Teilblöcken modellieren."
+          },
+          "sicherheit": "mittel",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": [
+            "A-0023",
+            "A-0024",
+            "A-0025",
+            "A-0026"
+          ]
+        },
+        {
+          "absatz_id": "P18",
+          "text": "Wiederverwendbare Teilmodelle sind die Sondersignalanlage mit Bedienteil und Versorgung, das Standbetriebsmodell aus externer Einspeisung, Batterie und Energiemanagement, die Einsatzkommunikation aus Funkanlage, Navigation und Datenschreiber sowie für Feuerwehr- und Müllfahrzeug der Nebenabtrieb mit Pumpe oder Hydraulikversorgung. Ports sind Aufbauschnittstelle, Gateway am Fahrzeugbus, Nebenabtriebsflansch, Einspeisestecker und Hochvolt-Schnittstelle. Block Definition Diagrams zeigen Grundblock und Spezialisierungen, Internal Block Diagrams die Flüsse über die Aufbauschnittstelle, Zustandsdiagramme die Betriebsarten Fahrt, Arbeitsbetrieb im Stand und Bereitschaft an Wache oder Betriebshof.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P7",
+              "P8",
+              "P9",
+              "P11",
+              "A-0023/P28",
+              "A-0024/P35",
+              "A-0025/P27",
+              "A-0025/P28",
+              "A-0026/P28"
+            ],
+            "schluss": "Signalanlage, Standbetrieb, Einsatzkommunikation und Nebenabtrieb sind über mehrere Kindartikel gleich aufgebaut und lassen sich als Teilmodelle mit gleichen Ports wiederverwenden."
+          },
+          "sicherheit": "gering",
+          "aussagetyp": "modellannahme",
+          "herangezogene_artikel_ids": [
+            "A-0023",
+            "A-0024",
+            "A-0025",
+            "A-0026"
+          ]
+        }
+      ]
+    }
+  ],
+  "modell": {
+    "elemente": [
+      {
+        "id": "E1",
+        "name": "Sonderfahrzeug",
+        "typ": "gesamtsystem",
+        "eltern_id": null,
+        "absatz_ids": [
+          "P3",
+          "P6",
+          "P16",
+          "P17"
+        ]
+      },
+      {
+        "id": "E2",
+        "name": "Fahrzeugstruktur und Fahrwerk",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P5",
+          "P6",
+          "P10"
+        ],
+        "kategorie": "struktur_fahrwerk"
+      },
+      {
+        "id": "E3",
+        "name": "Antriebssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P6",
+          "P11",
+          "P15"
+        ],
+        "kategorie": "antrieb"
+      },
+      {
+        "id": "E4",
+        "name": "Energieversorgungssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P6",
+          "P8",
+          "P9",
+          "P15"
+        ],
+        "kategorie": "energieversorgung"
+      },
+      {
+        "id": "E5",
+        "name": "Lenksystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P5",
+          "P6",
+          "P15"
+        ],
+        "kategorie": "lenkung"
+      },
+      {
+        "id": "E6",
+        "name": "Bremssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P5",
+          "P6",
+          "P10"
+        ],
+        "kategorie": "bremse"
+      },
+      {
+        "id": "E7",
+        "name": "Fahrerhaus",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P6",
+          "P7",
+          "P9",
+          "P13",
+          "P14",
+          "P17"
+        ],
+        "kategorie": "bedienraum"
+      },
+      {
+        "id": "E8",
+        "name": "Aufbau und Ladung",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P5",
+          "P6",
+          "P11",
+          "P14",
+          "P17"
+        ],
+        "kategorie": "aufbau_nutzlast"
+      },
+      {
+        "id": "E9",
+        "name": "Elektrik und Elektronik",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P5",
+          "P6",
+          "P7",
+          "P9",
+          "P11",
+          "P13"
+        ],
+        "kategorie": "elektrik_elektronik"
+      },
+      {
+        "id": "E10",
+        "name": "Fahrzeugsteuerung und Information",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P6",
+          "P7",
+          "P11",
+          "P13"
+        ],
+        "kategorie": "steuerung_information"
+      },
+      {
+        "id": "E11",
+        "name": "Fahrerassistenz und Sicherheit",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P5",
+          "P6",
+          "P9",
+          "P14"
+        ],
+        "kategorie": "assistenz_sicherheit"
+      },
+      {
+        "id": "E12",
+        "name": "Beleuchtung und Sicht",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P6",
+          "P7",
+          "P12",
+          "P13",
+          "P17"
+        ],
+        "kategorie": "beleuchtung_sicht"
+      },
+      {
+        "id": "E13",
+        "name": "Thermomanagement",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P6",
+          "P8",
+          "P11",
+          "P15"
+        ],
+        "kategorie": "thermomanagement"
+      },
+      {
+        "id": "E14",
+        "name": "Neben- und Versorgungssysteme",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P6",
+          "P9",
+          "P10",
+          "P11"
+        ],
+        "kategorie": "nebensysteme"
+      }
+    ],
+    "funktionen": [
+      {
+        "id": "F1",
+        "name": "Fahrzeuglasten tragen",
+        "ausgefuehrt_von": [
+          "E2"
+        ],
+        "absatz_ids": [
+          "P5",
+          "P10"
+        ]
+      },
+      {
+        "id": "F2",
+        "name": "Antriebsleistung erzeugen",
+        "ausgefuehrt_von": [
+          "E3"
+        ],
+        "absatz_ids": [
+          "P15"
+        ]
+      },
+      {
+        "id": "F3",
+        "name": "Energie speichern",
+        "ausgefuehrt_von": [
+          "E4"
+        ],
+        "absatz_ids": [
+          "P8",
+          "P15"
+        ]
+      },
+      {
+        "id": "F4",
+        "name": "Landstrom einspeisen",
+        "ausgefuehrt_von": [
+          "E4"
+        ],
+        "absatz_ids": [
+          "P8",
+          "P9"
+        ]
+      },
+      {
+        "id": "F5",
+        "name": "Fahrzeug lenken",
+        "ausgefuehrt_von": [
+          "E5"
+        ],
+        "absatz_ids": [
+          "P5",
+          "P15"
+        ]
+      },
+      {
+        "id": "F6",
+        "name": "Fahrzeug verzögern",
+        "ausgefuehrt_von": [
+          "E6"
+        ],
+        "absatz_ids": [
+          "P10"
+        ]
+      },
+      {
+        "id": "F7",
+        "name": "Fahrereingaben erfassen",
+        "ausgefuehrt_von": [
+          "E7"
+        ],
+        "absatz_ids": [
+          "P7",
+          "P13"
+        ]
+      },
+      {
+        "id": "F8",
+        "name": "Insassen schützen",
+        "ausgefuehrt_von": [
+          "E7",
+          "E11"
+        ],
+        "absatz_ids": [
+          "P14"
+        ]
+      },
+      {
+        "id": "F9",
+        "name": "Ladung aufnehmen",
+        "ausgefuehrt_von": [
+          "E8"
+        ],
+        "absatz_ids": [
+          "P5",
+          "P14"
+        ]
+      },
+      {
+        "id": "F10",
+        "name": "Elektrische Energie verteilen",
+        "ausgefuehrt_von": [
+          "E9"
+        ],
+        "absatz_ids": [
+          "P7",
+          "P11"
+        ]
+      },
+      {
+        "id": "F11",
+        "name": "Daten übertragen",
+        "ausgefuehrt_von": [
+          "E9",
+          "E10"
+        ],
+        "absatz_ids": [
+          "P5",
+          "P7"
+        ]
+      },
+      {
+        "id": "F12",
+        "name": "Betriebsdaten aufzeichnen",
+        "ausgefuehrt_von": [
+          "E10"
+        ],
+        "absatz_ids": [
+          "P7",
+          "P13"
+        ]
+      },
+      {
+        "id": "F13",
+        "name": "Fahrzeugzustand überwachen",
+        "ausgefuehrt_von": [
+          "E11"
+        ],
+        "absatz_ids": [
+          "P9",
+          "P14"
+        ]
+      },
+      {
+        "id": "F14",
+        "name": "Lichtsignale abgeben",
+        "ausgefuehrt_von": [
+          "E12"
+        ],
+        "absatz_ids": [
+          "P7",
+          "P12",
+          "P13"
+        ]
+      },
+      {
+        "id": "F15",
+        "name": "Akustische Signale abgeben",
+        "ausgefuehrt_von": [
+          "E12"
+        ],
+        "absatz_ids": [
+          "P13"
+        ]
+      },
+      {
+        "id": "F16",
+        "name": "Fahrzeugumgebung ausleuchten",
+        "ausgefuehrt_von": [
+          "E12"
+        ],
+        "absatz_ids": [
+          "P7",
+          "P13"
+        ]
+      },
+      {
+        "id": "F17",
+        "name": "Betriebstemperatur regeln",
+        "ausgefuehrt_von": [
+          "E13"
+        ],
+        "absatz_ids": [
+          "P8",
+          "P11"
+        ]
+      },
+      {
+        "id": "F18",
+        "name": "Arbeitsgeräte versorgen",
+        "ausgefuehrt_von": [
+          "E14"
+        ],
+        "absatz_ids": [
+          "P11"
+        ]
+      },
+      {
+        "id": "F19",
+        "name": "Druckluft bereitstellen",
+        "ausgefuehrt_von": [
+          "E14"
+        ],
+        "absatz_ids": [
+          "P10"
+        ]
+      },
+      {
+        "id": "F20",
+        "name": "Hydraulische Leistung bereitstellen",
+        "ausgefuehrt_von": [
+          "E14"
+        ],
+        "absatz_ids": [
+          "P11"
+        ]
+      }
+    ],
+    "fluesse": [
+      {
+        "id": "S1",
+        "von": "E4",
+        "nach": "E3",
+        "art": "stoff",
+        "medium": "Kraftstoff",
+        "absatz_ids": [
+          "P15"
+        ],
+        "schnittstelle": "Kraftstoffzulauf"
+      },
+      {
+        "id": "S2",
+        "von": "E4",
+        "nach": "E3",
+        "art": "elektrisch",
+        "medium": "Hochvoltstrom",
+        "absatz_ids": [
+          "P15"
+        ],
+        "schnittstelle": "Hochvolt-Schnittstelle"
+      },
+      {
+        "id": "S3",
+        "von": "E3",
+        "nach": "E14",
+        "art": "mechanisch",
+        "medium": "Drehmoment für den Arbeitsantrieb",
+        "absatz_ids": [
+          "P11"
+        ],
+        "schnittstelle": "Nebenabtriebsflansch"
+      },
+      {
+        "id": "S4",
+        "von": "E14",
+        "nach": "E8",
+        "art": "hydraulisch",
+        "medium": "Drucköl für Lifter, Verdichtungseinrichtung und Heckklappe",
+        "absatz_ids": [
+          "P11"
+        ],
+        "schnittstelle": "Hydraulikanschluss des Aufbaus"
+      },
+      {
+        "id": "S5",
+        "von": "E14",
+        "nach": "E8",
+        "art": "mechanisch",
+        "medium": "Antriebsleistung der Feuerlöschkreiselpumpe",
+        "absatz_ids": [
+          "P11"
+        ],
+        "schnittstelle": "Gelenkwelle zum Pumpenantrieb"
+      },
+      {
+        "id": "S6",
+        "von": "E9",
+        "nach": "E8",
+        "art": "elektrisch",
+        "medium": "Versorgung der Sonderausrüstung",
+        "absatz_ids": [
+          "P5",
+          "P11"
+        ],
+        "schnittstelle": "Aufbauschnittstelle"
+      },
+      {
+        "id": "S7",
+        "von": "E10",
+        "nach": "E8",
+        "art": "information",
+        "medium": "Fahrzeugsignale und Freigaben",
+        "absatz_ids": [
+          "P5",
+          "P11"
+        ],
+        "schnittstelle": "Gateway oder Schnittstellenmodul am Fahrzeugbus"
+      },
+      {
+        "id": "S8",
+        "von": "E7",
+        "nach": "E12",
+        "art": "information",
+        "medium": "Schaltbefehle der Signalanlage",
+        "absatz_ids": [
+          "P7",
+          "P13"
+        ],
+        "schnittstelle": "Signalbedienteil"
+      },
+      {
+        "id": "S9",
+        "von": "E9",
+        "nach": "E12",
+        "art": "elektrisch",
+        "medium": "Dauerlast der Signalanlage",
+        "absatz_ids": [
+          "P7",
+          "P13"
+        ],
+        "schnittstelle": "Stromverteiler"
+      },
+      {
+        "id": "S10",
+        "von": "E14",
+        "nach": "E6",
+        "art": "pneumatisch",
+        "medium": "Druckluft oder Unterdruck",
+        "absatz_ids": [
+          "P10"
+        ],
+        "schnittstelle": "Druckluft- oder Unterdruckanschluss der Betriebsbremse"
+      },
+      {
+        "id": "S11",
+        "von": "E8",
+        "nach": "E2",
+        "art": "mechanisch",
+        "medium": "Aufbau- und Ausrüstungslasten",
+        "absatz_ids": [
+          "P5"
+        ],
+        "schnittstelle": "Aufbaubefestigung"
+      },
+      {
+        "id": "S12",
+        "von": "E13",
+        "nach": "E7",
+        "art": "thermisch",
+        "medium": "temperierte Luft",
+        "absatz_ids": [
+          "P8"
+        ],
+        "schnittstelle": "Luftverteilung des Bedienraums"
+      },
+      {
+        "id": "S13",
+        "von": "E4",
+        "nach": "E9",
+        "art": "elektrisch",
+        "medium": "Niedervoltenergie für den Standbetrieb",
+        "absatz_ids": [
+          "P8",
+          "P9"
+        ],
+        "schnittstelle": "Batterie- und Einspeiseanschluss"
+      }
+    ],
+    "entfallene_kategorien": [],
+    "varianten": [
+      {
+        "id": "V1",
+        "element_id": "E2",
+        "bezeichnung": "Klasse des Basisfahrzeugs",
+        "alternativen": [
+          "Personenkraftwagen, SUV oder Kleinbus",
+          "Kastenwagen oder Fahrgestell eines leichten bis mittelschweren Nutzfahrzeugs",
+          "Lkw-Fahrgestell"
+        ],
+        "auswahlkriterien": [
+          "Masse und Bauraum der Sonderausrüstung (Pkw-Basis beim Polizeifahrzeug, Kastenwagen oder Fahrgestell beim Krankenwagen, Transporter- bis schweres Lkw-Fahrgestell beim Feuerwehrfahrzeug, Lkw-Fahrgestell beim Müllfahrzeug)",
+          "Zahl der mitfahrenden Personen und Größe des Sonderbereichs",
+          "Fahrdynamik bei Einsatzfahrten und Wendigkeit in engen Zufahrten"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E6",
+            "beschreibung": "Hydraulische Betriebsbremse mit Bremskraftverstärker (Pkw, Kastenwagen, leichtes Feuerwehrfahrzeug) oder Druckluftbremse (mittleres und schweres Feuerwehrfahrzeug, Müllfahrzeug), Dauerbremse bei schweren Fahrzeugen und beim Müllfahrzeug"
+          },
+          {
+            "element_id": "E14",
+            "beschreibung": "Unterdruckversorgung bei Bedarf (Polizeifahrzeug) oder Druckluftanlage für Bremse, Luftfederung, Lichtmast und Geräte (Lkw-Basis)"
+          },
+          {
+            "element_id": "E7",
+            "beschreibung": "Fahrgastraum beim Pkw-basierten Polizeifahrzeug statt Fahrerhaus"
+          },
+          {
+            "element_id": "E8",
+            "beschreibung": "Laderaum und Anhängevorrichtung beim Polizeifahrzeug statt Aufbau und Ladung"
+          }
+        ],
+        "absatz_ids": [
+          "P5",
+          "P6",
+          "P10"
+        ]
+      },
+      {
+        "id": "V2",
+        "element_id": "E8",
+        "bezeichnung": "Leistungsversorgung der Sonderausrüstung",
+        "alternativen": [
+          "Elektrische Versorgung über getrennt abgesicherten Ausrüstungszweig und Gateway",
+          "Getrenntes Aufbaubordnetz mit Wechselspannungsnetz und medizinischer Gasversorgung",
+          "Mechanische Leistung über Nebenabtrieb zur Pumpe",
+          "Hydraulische Leistung über Nebenabtrieb oder elektrischen Aufbauantrieb"
+        ],
+        "auswahlkriterien": [
+          "Art und Höhe des Leistungsbedarfs der Ausrüstung (elektrisch beim Polizeifahrzeug, elektrisch und Sauerstoff beim Krankenwagen, mechanisch beim Feuerwehrfahrzeug, hydraulisch beim Müllfahrzeug)",
+          "Dauer des Arbeitsbetriebs im Stand",
+          "Antriebsart des Basisfahrzeugs"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E14",
+            "beschreibung": "Nebenabtrieb mit Gelenkwelle oder Hydraulikversorgung bei mechanischem oder hydraulischem Arbeitsaufbau"
+          },
+          {
+            "element_id": "E10",
+            "beschreibung": "Aufbausteuerung oder Drehzahlregelung im Fahrzeugmanagement und Verriegelungen zwischen Arbeits- und Fahrbetrieb"
+          },
+          {
+            "element_id": "E13",
+            "beschreibung": "Kühlung für Pumpe, Motor im Stationärbetrieb oder Hydrauliköl"
+          },
+          {
+            "element_id": "E9",
+            "beschreibung": "Ausrüstungszweig oder getrenntes Aufbaubordnetz mit Wechselspannungsnetz"
+          },
+          {
+            "element_id": "E3",
+            "beschreibung": "Doppelte Nutzung des Antriebs für Fahrt und Arbeitsbetrieb beim Feuerwehrfahrzeug"
+          }
+        ],
+        "absatz_ids": [
+          "P8",
+          "P11"
+        ]
+      },
+      {
+        "id": "V3",
+        "element_id": "E12",
+        "bezeichnung": "Signalisierung",
+        "alternativen": [
+          "Sondersignalanlage mit blauem Blinklicht und Einsatzhorn",
+          "Sondersignalanlage mit zusätzlicher Anhaltesignalanlage",
+          "Verdeckt eingebaute oder bei Bedarf aufgesetzte Kennleuchten",
+          "Gelbes Rundumlicht mit Warnmarkierung und Arbeitsscheinwerfern"
+        ],
+        "auswahlkriterien": [
+          "Verkehrsrechtliche Stellung als Einsatzfahrzeug (Krankenwagen, Feuerwehr- und Polizeifahrzeug) oder als Fahrzeug der Müllabfuhr (Müllfahrzeug)",
+          "Befugnis zum Anhalten anderer Verkehrsteilnehmer (nur Polizeifahrzeug)",
+          "Erkennbares oder unauffälliges Erscheinungsbild (ziviles Polizeifahrzeug)"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E7",
+            "beschreibung": "Bedienelemente für Sondersignal und gegebenenfalls Anhaltesignal"
+          },
+          {
+            "element_id": "E9",
+            "beschreibung": "Dauerlast und Verdrahtung der Signalanlage, beim zivilen Fahrzeug Steckanschluss statt fester Dachleitungen"
+          },
+          {
+            "element_id": "E10",
+            "beschreibung": "Aufzeichnung von Warnlicht- und Signalbetrieb im Daten- oder Videoschreiber"
+          }
+        ],
+        "absatz_ids": [
+          "P7",
+          "P12",
+          "P13"
+        ]
+      },
+      {
+        "id": "V4",
+        "element_id": "E7",
+        "bezeichnung": "Personen im Sonderbereich",
+        "alternativen": [
+          "Patientenraum mit Betreuersitz, Tragenhalterung und Trennwand",
+          "Mannschaftsraum als Trupp-, Staffel- oder Gruppenkabine",
+          "Fondraum für Fahrgäste, festgenommene Personen oder Diensthund",
+          "Mitfahrt der Lader auf Trittbrettern am Heck"
+        ],
+        "auswahlkriterien": [
+          "Wer außer dem Fahrer befördert wird oder mitarbeitet (Patient und Betreuer beim Krankenwagen, Einsatzmannschaft beim Feuerwehrfahrzeug, Festgenommene oder Diensthund beim Polizeifahrzeug, Lader beim Müllfahrzeug)",
+          "Tätigkeit der Personen während der Fahrt",
+          "Häufigkeit des Ein- und Aussteigens"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E8",
+            "beschreibung": "Kabinenlänge begrenzt den Geräteaufbau (Feuerwehrfahrzeug); Patientenraum mit Tragenhalterung (Krankenwagen); Trittbretter am Aufbau (Müllfahrzeug)"
+          },
+          {
+            "element_id": "E11",
+            "beschreibung": "Rückhaltesysteme im Patientenraum, Trittbrettüberwachung und Not-Halt-Einrichtung"
+          },
+          {
+            "element_id": "E13",
+            "beschreibung": "Eigene Klimatisierung von Patientenraum oder Fondraum"
+          }
+        ],
+        "absatz_ids": [
+          "P14"
+        ]
+      },
+      {
+        "id": "V5",
+        "element_id": "E3",
+        "bezeichnung": "Antriebsart",
+        "alternativen": [
+          "Verbrennungsmotor",
+          "Hybridantrieb, seriell oder als Vollhybrid",
+          "Batterieelektrischer Antrieb"
+        ],
+        "auswahlkriterien": [
+          "Im Kindartikel betrachteter Umfang (batterieelektrisch nicht beim Feuerwehrfahrzeug, seriell hybrid bei Feuerwehr- und Müllfahrzeug, Vollhybrid nur beim Polizeifahrzeug)",
+          "Energiebedarf von Fahrt und Arbeitsbetrieb je Einsatz oder Tour",
+          "Lade- und Tankmöglichkeit an Wache oder Betriebshof"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E4",
+            "beschreibung": "Traktionsbatterie deckt Fahrt und Standzeit gemeinsam und konkurriert mit der Nutzlast"
+          },
+          {
+            "element_id": "E14",
+            "beschreibung": "Nebenabtrieb kann entfallen, Kompressor und Hydraulikpumpe werden elektrisch angetrieben (Feuerwehr- und Müllfahrzeug)"
+          },
+          {
+            "element_id": "E5",
+            "beschreibung": "Elektrisch angetriebene Lenkunterstützung ohne ständig laufenden Verbrennungsmotor (Feuerwehr- und Müllfahrzeug)"
+          },
+          {
+            "element_id": "E13",
+            "beschreibung": "Batterietemperierung und elektrische Heizung ohne Motorabwärme"
+          },
+          {
+            "element_id": "E8",
+            "beschreibung": "Elektrischer Pumpen- oder Aufbauantrieb (Feuerwehr- und Müllfahrzeug)"
+          }
+        ],
+        "absatz_ids": [
+          "P15"
+        ]
+      }
+    ],
+    "klaerungsfragen": [
+      {
+        "id": "K1",
+        "frage": "Welche Sonderaufgabe soll das Fahrzeug vorrangig erfüllen (Patientenbeförderung und -versorgung, Brandbekämpfung und technische Hilfeleistung, polizeilicher Einsatz- und Streifendienst einschließlich Personen- und Diensthundtransport, Sammeln und Verdichten von Abfall), und auf welcher Fahrzeugklasse soll sie umgesetzt werden?",
+        "element_ids": [
+          "E1",
+          "E8",
+          "E2"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Aufgabe und Basisfahrzeugklasse bestimmen gemeinsam, ob Krankenwagen, Feuerwehrfahrzeug, Polizeifahrzeug oder Müllfahrzeug als Spezialisierung des Grundmodells dient; Pkw-basierte Feuerwehr- oder Notarztfahrzeuge und Lkw-basierte Polizeifahrzeuge deckt keiner der Kindartikel vollständig ab.",
+        "variante_ids": [
+          "V1",
+          "V2",
+          "V4"
+        ]
+      },
+      {
+        "id": "K2",
+        "frage": "Auf welcher Klasse soll das Sonderfahrzeug aufbauen: Personenkraftwagen, SUV oder Kleinbus, Kastenwagen oder Fahrgestell eines leichten bis mittelschweren Nutzfahrzeugs oder Lkw-Fahrgestell?",
+        "element_ids": [
+          "E2",
+          "E6",
+          "E14"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Tragstruktur, Bremsbauart, Hilfsenergie und die Benennung von Bedienraum und Nutzlastbereich ab.",
+        "variante_ids": [
+          "V1"
+        ]
+      },
+      {
+        "id": "K3",
+        "frage": "Wie soll die Sonderausrüstung mit Leistung versorgt werden: elektrisch aus einem Ausrüstungszweig oder Aufbaubordnetz, mechanisch über einen Nebenabtrieb oder hydraulisch über Nebenabtrieb oder elektrischen Aufbauantrieb?",
+        "element_ids": [
+          "E8",
+          "E14",
+          "E9"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Nebenabtrieb, Hydraulikversorgung, Aufbausteuerung, Verriegelungen und Kühlung ab.",
+        "variante_ids": [
+          "V2"
+        ]
+      },
+      {
+        "id": "K4",
+        "frage": "Welche Sonder- und Warnsignale darf und soll das Fahrzeug im vorgesehenen Zulassungsstaat führen, und soll es erkennbar oder unauffällig ausgeführt werden?",
+        "element_ids": [
+          "E12",
+          "E7",
+          "E9"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Sondersignal- oder Anhaltesignalanlage, Warnmarkierung, Bedienelemente und Bordnetzlast ab.",
+        "variante_ids": [
+          "V3"
+        ]
+      },
+      {
+        "id": "K5",
+        "frage": "Welche Personen außer dem Fahrer fahren im Sonderbereich mit oder arbeiten dort, und müssen sie während der Fahrt tätig sein können?",
+        "element_ids": [
+          "E7",
+          "E11",
+          "E8"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Raumaufteilung, Trennwand, Rückhaltesysteme, Trittbrettüberwachung und Klimatisierung ab.",
+        "variante_ids": [
+          "V4"
+        ]
+      },
+      {
+        "id": "K6",
+        "frage": "Welche Antriebsart soll das Fahrzeug erhalten, und soll die Ausrüstung im Stand ohne laufenden Verbrennungsmotor arbeiten können?",
+        "element_ids": [
+          "E3",
+          "E4",
+          "E14"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Traktionsbatterie, Nebenabtrieb, elektrische Hilfsantriebe und Heizung ab.",
+        "variante_ids": [
+          "V5"
+        ]
+      },
+      {
+        "id": "K7",
+        "frage": "Welche Fertigungsstufen und Hersteller sind beteiligt, und wer verantwortet die Schnittstelle zwischen Basisfahrzeug und Sonderausbau?",
+        "element_ids": [
+          "E9",
+          "E10",
+          "E8"
+        ],
+        "anlass": "schnittstelle",
+        "relevanz": "Davon hängt ab, ob Aufbauschnittstelle, Gateway und Leitungen werksseitig vorbereitet oder nachgerüstet werden.",
+        "variante_ids": [
+          "V2"
+        ]
+      },
+      {
+        "id": "K8",
+        "frage": "Wie lange muss die Ausrüstung im Stand betrieben werden können, und steht dabei eine externe Einspeisung zur Verfügung?",
+        "element_ids": [
+          "E4",
+          "E14",
+          "E13"
+        ],
+        "anlass": "betrieb",
+        "relevanz": "Davon hängen Batteriegröße, Einspeisung, Leerlaufbetrieb und Kühlung im Stand ab.",
+        "variante_ids": [
+          "V2",
+          "V5"
+        ]
+      }
+    ],
+    "anforderungsthemen": [
+      {
+        "id": "R1",
+        "element_ids": [
+          "E12",
+          "E7"
+        ],
+        "thema": "Sonder- und Warnsignale und Kennzeichnung",
+        "kenngroessen": [
+          "Signalfarbe",
+          "Rundumwirkung",
+          "Abstrahlrichtung",
+          "Kennzeichnung des Fahrzeugs",
+          "Betriebsarten der Signalanlage"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "Straßenverkehrs-Zulassungs-Ordnung (StVZO), § 52 (Deutschland)",
+            "quellen_id": "Q4",
+            "fundstelle": "Abs. 3, 3a, 4 und 7"
+          }
+        ]
+      },
+      {
+        "id": "R2",
+        "element_ids": [
+          "E1",
+          "E8",
+          "E9"
+        ],
+        "thema": "Genehmigung in Fertigungsstufen und Einstufung der besonderen Zweckbestimmung",
+        "kenngroessen": [
+          "Fertigungsstufe",
+          "Fahrzeugklasse",
+          "Typ der besonderen Zweckbestimmung"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "Verordnung (EU) 2018/858, Artikel 3 (EU-Typgenehmigung)",
+            "quellen_id": "Q1",
+            "fundstelle": "Art. 3 Nr. 8, Nr. 24 bis 26 und Nr. 31"
+          },
+          {
+            "bezeichnung": "Verordnung (EU) 2018/858, Anhang I (EU-Typgenehmigung)",
+            "quellen_id": "Q2",
+            "fundstelle": "Teil A Nr. 2.2 und Nr. 5"
+          }
+        ]
+      },
+      {
+        "id": "R3",
+        "element_ids": [
+          "E4",
+          "E14",
+          "E13"
+        ],
+        "thema": "Standbetrieb der Ausrüstung",
+        "kenngroessen": [
+          "Dauer des Standbetriebs",
+          "Dauerlast der Ausrüstung",
+          "Ladezustand der Batterien",
+          "Kühlleistung ohne Fahrtwind"
+        ]
+      },
+      {
+        "id": "R4",
+        "element_ids": [
+          "E2",
+          "E8",
+          "E4"
+        ],
+        "thema": "Masse, Achslasten und Zuladung des Sonderausbaus",
+        "kenngroessen": [
+          "zulässige Gesamtmasse",
+          "Achslastverteilung",
+          "Masse der Sonderausrüstung",
+          "Zuladungsreserve",
+          "Schwerpunktlage"
+        ]
+      }
+    ]
+  },
+  "offene_punkte": [
+    "Uneinheitliche Zuordnung zwischen Kindartikeln: externe Einspeisung als Landstromeinspeisung in Elektrik und Elektronik (A-0023, E78), als Netzeinspeisung im Energieversorgungssystem (A-0024, E32) und als Fremdeinspeisung in den Neben- und Versorgungssystemen (A-0025, E118). Die Zuordnungsliste führt die Ladeeinrichtung unter energieversorgung; Vereinheitlichung in den Kindartikeln prüfen.",
+    "Uneinheitliche Zuordnung zwischen Kindartikeln: Überwachung vor dem Losfahren als Warnanzeige im Fahrerhaus (A-0023, E54), als Abfahrwarnung in Fahrerassistenz und Sicherheit (A-0024, E101) und als Trittbrettüberwachung in Fahrerassistenz und Sicherheit (A-0026, E111).",
+    "Benennung: A-0023 führt das Element Folgetonhorn, A-0024 und A-0025 das Einsatzhorn (Begriff nach § 55 Abs. 3 StVZO, A-0024/P28, A-0025/P22); Vereinheitlichung prüfen.",
+    "Recherche: typgenehmigungsrechtliche Einstufung von Feuerwehr-, Polizei- und Müllfahrzeugen (Sondergruppe SG oder Klasse M bzw. N ohne besondere Zweckbestimmung); Quelle: Kraftfahrt-Bundesamt, Verzeichnis zur Systematisierung von Kraftfahrzeugen und ihren Anhängern (SV 1), Aufbauarten der Klassen M und N.",
+    "Recherche: Fachliteratur oder Aufbaurichtlinien der Fahrgestellhersteller zur Schnittstelle zwischen Basisfahrzeug und Aufbau (Suchbegriff: Aufbaurichtlinie Nebenabtrieb Aufbauschnittstellenmodul Sonderfahrzeug), um P5 und P11 zu belegen.",
+    "Unterschiedlicher Betrachtungsumfang der Antriebsarten: batterieelektrischer Antrieb ohne Range Extender in A-0024 ausgeschlossen, Vollhybrid nur in A-0025, serieller Hybrid nur in A-0024 und A-0026; Abgleich der Antriebsvarianten über die Kindartikel erforderlich.",
+    "Taxonomie: Der statistische Begriff (Eurostat-Glossar B.II-33) schließt Fahrzeuge zur Personen- oder Güterbeförderung aus, der Typgenehmigungsbegriff (Verordnung (EU) 2018/858, Anhang I Teil A Nr. 5.3) führt den Krankenwagen ausdrücklich. Klärung im Inventar, ob das Taxon funktional (wie hier) oder rechtlich abgegrenzt wird und ob Leichenwagen, Abschleppwagen oder Wohnmobile eigene Kindartikel erhalten."
+  ]
+}
