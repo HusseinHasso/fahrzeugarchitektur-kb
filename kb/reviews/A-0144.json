@@ -1,0 +1,137 @@
+{
+  "artikel_id": "A-0144",
+  "leitfaden_version": "2.4",
+  "geprueft_am": "2026-11-26",
+  "stichprobe": [
+    {
+      "absatz_id": "P1",
+      "quellen_id": "Q1",
+      "ergebnis": "bestaetigt",
+      "anmerkung": "Artikel II Absatz 1: (B) Anwendungsgebiet vom Atlantik bis zum Ural, (C) battle tank mit allen genannten Merkmalen und dem Zusatz zu Radfahrzeugen, (D) armoured combat vehicle mit Eigenantrieb, Panzerschutz, Geländegängigkeit und den drei Unterarten. Kleine Verkürzung: Der Vertrag zählt nur Radfahrzeuge, die neu in Dienst gestellt werden (\"entering into service\"). Typ norm trifft für den Vertrag zu."
+    },
+    {
+      "absatz_id": "P2",
+      "quellen_id": "Q2",
+      "ergebnis": "bestaetigt",
+      "anmerkung": "In oldid 272310280 stehen in der Einleitung vor „Begriffe“ die Definition, die Unterstützungsfahrzeuge, die Unterscheidung nach Fahrwerksart sowie Panzerschutz, Geländegängigkeit und Feuerkraft als Kompromiss. Typ nachschlagewerk trifft zu."
+    },
+    {
+      "absatz_id": "P9",
+      "quellen_id": "Q2",
+      "ergebnis": "bestaetigt",
+      "anmerkung": "Die Unterabschnitte „Kettenantrieb“ und „Radantrieb“ (Technik, Mobilität) enthalten Geländegängigkeit, Schlamm, Gräben, Gewicht, Verbrauch, Straßengeschwindigkeit, die Kette als kritischen Angriffspunkt und die geringere Geländegängigkeit des Radantriebs."
+    },
+    {
+      "absatz_id": "P16",
+      "quellen_id": "Q2",
+      "ergebnis": "bestaetigt",
+      "anmerkung": "„Dieselmotoren“: vorherrschender Antrieb; „Gasturbinen“: leichter, mehr Verbrauch vor allem im Teillastbetrieb, höhere Infrarotsignatur; „Andere Fortbewegungen“: Kampfpanzer schwimmen selten und waten mit Schnorchel, leichtere Panzer, vor allem Radpanzer, schwimmen über Räder oder Ketten, Propeller oder Wasserstrahlantrieb."
+    },
+    {
+      "absatz_id": "P6",
+      "quellen_id": "Q3",
+      "ergebnis": "bestaetigt",
+      "anmerkung": "„Survivability“, erster Absatz (oldid 1387979943): wechselndes Schutzniveau (Kampfpanzer gegen Panzerkanonen und Lenkflugkörper, Aufklärer „just in case“), Nachteile schwerer Panzerung einschließlich Brücken, Verbundpanzerung statt Stahl und aktive Schutzsysteme."
+    },
+    {
+      "absatz_id": "P11",
+      "quellen_id": "Q3",
+      "ergebnis": "bestaetigt",
+      "anmerkung": "„Lethality“: Bewaffnung leichter Fahrzeuge und der Selbstfahrartillerie, Lafette, direkte Befestigung oder Turm, Rückstoß bestimmt die Größe von Turmdrehkranz und Fahrzeug, Turmstabilisierung erlaubt Feuern in der Bewegung."
+    }
+  ],
+  "befunde": [
+    {
+      "ref": "K1",
+      "schwere": "hoch",
+      "pruefschritt": 5,
+      "befund": "K1 ist die Frage zur Wahl der Fahrzeugart, ordnet aber jede Rolle genau einem Kindartikel zu: Kanone → Kampfpanzer, Infanteriegruppe → Schützenpanzer, wechselnde Missionsausrüstung → Radpanzer. Laut P3 ist der Radpanzer aber nach dem Fahrwerk abgegrenzt und umfasst auch Schützen- und Kampfrollen. Den Radkampfpanzer schließt A-0052 aus. Wer einen Radkampfpanzer modellieren will, landet nach K1 beim Kampfpanzer, also bei der falschen Fahrzeugart. Laut Relevanz soll K1 allein die Spezialisierung festlegen, obwohl dafür Rolle und Fahrwerk zusammen nötig sind. Die Frage führt also in die Irre. Dasselbe Missverständnis steckt im dritten Auswahlkriterium von V2 („Fahrzeugfamilie für wechselnde Rollen … (Radpanzer)“).",
+      "vorschlag": "K1 auf die Rolle beschränken: „Soll das Fahrzeug vorrangig gepanzerte Ziele mit einer Kanone bekämpfen, eine Infanteriegruppe transportieren und unterstützen oder eine andere Rolle wie Transport, Aufklärung, Führung oder Sanität erfüllen?“. Relevanz neu: „Zusammen mit K2 (Fahrwerksart) bestimmt die Antwort den Kindartikel: Kette und Kanone führen zu A-0052, Kette und Infanteriegruppe zu A-0053, Rad und jede Rolle zu A-0054. Den Radschützenpanzer behandelt A-0053 als Fahrwerksvariante.“ variante_ids auf [\"V2\", \"V1\"] erweitern. In V2 das dritte Auswahlkriterium ändern in „Transport-, Aufklärungs-, Führungs- oder Sanitätsrolle, beim Radpanzer auch als Fahrzeugfamilie mit tauschbarem Missionsmodul“."
+    },
+    {
+      "ref": "P19",
+      "schwere": "hoch",
+      "pruefschritt": 2,
+      "befund": "Die vorgeschlagene Hierarchie widerspricht sich. Unter dem Grundblock liegen die Fahrwerksblöcke Kettenpanzer und Radpanzer, die Rolle spezialisiert „danach“. Der Pfad `Schützenpanzer → Fahrzeugstruktur und Fahrwerk → Kettenlaufwerk → Federung` setzt den Schützenpanzer unter den Kettenpanzer. Erbt ein Radschützenpanzer „das Fahrwerk vom Radpanzer und die Nutzlast vom Schützenpanzer“, bekommt er über den Schützenpanzer auch das Kettenlaufwerk, und es kollidieren zwei Fahrwerke. Außerdem ist „Radpanzer“ einmal Zwischenspezialisierung nach Fahrwerk und einmal ein Kindartikel mit eigenen Rollen. Die Prämissen tragen den Schluss nicht, dass diese Hierarchie die Überlappungen abbildet (Sicherheit mittel).",
+      "vorschlag": "P19 so umschreiben, dass Rolle und Fahrwerk getrennte Achsen sind. Der abstrakte Grundblock `Gepanzertes Fahrzeug` hat zwei Fahrwerksspezialisierungen (`Kettenfahrzeug` mit Kettenlaufwerk und Schalt-Lenkgetriebe, `Radfahrzeug` mit Achsen, Achsschenkellenkung und Druckluftanlage). Davon getrennt stehen abstrakte Rollenblöcke für Waffenanlage und Missionsausrüstung und Besatzungsraum (Kanonenturm, Schützentrupp mit Maschinenkanone, Missionsmodul). Ein konkreter Block wie `Kampfpanzer` (Kettenfahrzeug + Kanonenturm), `Schützenpanzer` (Kettenfahrzeug + Schützentrupp), `Radschützenpanzer` (Radfahrzeug + Schützentrupp) oder `Radpanzer` (Radfahrzeug + Missionsmodul) entsteht aus einer Fahrwerks- und einer Rollenspezialisierung, wahlweise über Varianten- oder Konfigurationsmodellierung. Die Pfade auf die Fahrwerksblöcke beziehen (`Kettenfahrzeug → Fahrzeugstruktur und Fahrwerk → Kettenlaufwerk → Federung`). Den Schluss in herleitung anpassen."
+    },
+    {
+      "ref": "P3",
+      "schwere": "mittel",
+      "pruefschritt": 3,
+      "befund": "Laut P3 umfasst das Taxon die gepanzerten Militär-Landfahrzeuge, verteilt auf drei Kindartikel. Gepanzerte Mannschaftstransportwagen auf Ketten, etwa Transport- und Spähpanzer auf Kettenfahrwerk, deckt aber kein Kindartikel ab: A-0053 schließt Mannschaftstransportwagen aus, A-0054 betrachtet nur Radfahrzeuge, A-0052 nur Kampfpanzer. Laut P1 (KSE-Vertrag) und P2 gehören sie aber zum Elterntaxon. Die Übersicht nennt diese Lücke nicht. Ein Modellierer, der einen Kettentransportpanzer abbilden soll, findet keinen passenden Kindartikel und keinen Hinweis darauf.",
+      "vorschlag": "In P3 nach der Aufzählung der Kindartikel ergänzen: „Gepanzerte Mannschaftstransport- und Spähfahrzeuge auf Ketten führt kein Kindartikel; für sie lassen sich das Kettenfahrwerk aus A-0052 und A-0053 und die Rollenausstattung aus A-0054 kombinieren.“ Die Prämisse „A-0053: Betrachtungsumfang (Ausschluss gepanzerter Mannschaftstransportwagen)“ ergänzen. In offene_punkte aufnehmen: „Taxonomie: Kettentransportpanzer und Kettenspähpanzer sind durch keinen Kindartikel abgedeckt; Klärung im Inventar, ob ein eigener Artikel oder eine Erweiterung von A-0053 vorgesehen ist.“"
+    },
+    {
+      "ref": "P15",
+      "schwere": "mittel",
+      "pruefschritt": 5,
+      "befund": "P15 sagt, die Elektrifizierung ergänze das Energieversorgungssystem um Stromrichter. Auch V5 (Auswirkung auf E4) und der Betrachtungsumfang nennen „Stromrichter beziehungsweise Leistungselektronik“ im Energieversorgungssystem. A-0052 ordnet den Stromrichter aber dem Antriebssystem zu (E24 unter Elektrischer Antriebsstrang, E22). Nur A-0053 führt die Leistungselektronik im Energieversorgungssystem (E29). Die Übersicht widerspricht damit A-0052 und übergeht eine Zuordnungsabweichung, obwohl sie die beiden anderen (Hilfsstromaggregat, Zusatzpanzerung) in P7 und offene_punkte ausdrücklich führt.",
+      "vorschlag": "P15, zweiter Satz: „Elektrifizierung ergänzt das Energieversorgungssystem um Hochvolt-Bordnetz und gegebenenfalls Traktionsbatterie, das Antriebssystem um Traktionsmaschinen und das Thermomanagement um weitere Kühlkreise; den Stromrichter führt der Kampfpanzer im Antriebssystem, der Schützenpanzer die Leistungselektronik im Energieversorgungssystem.“ A-0053/P29 bleibt Prämisse, A-0052/P9 als Prämisse ergänzen. Die Auswirkung von V5 auf E4 entsprechend anpassen. In offene_punkte ergänzen: „Widerspruch zwischen Kindartikeln (Zuordnung): Stromrichter unter Antriebssystem (A-0052, E24) gegenüber Leistungselektronik unter Energieversorgungssystem (A-0053, E29); die Zuordnungsliste nennt beide nicht. Glossarklärung erforderlich.“"
+    },
+    {
+      "ref": "P5",
+      "schwere": "mittel",
+      "pruefschritt": 2,
+      "befund": "P5 schreibt allen drei Kindartikeln mit Sicherheit hoch zu, dass die Panzerwanne den Kraftstoff aufnimmt. Das sagt nur A-0052/P4. Der Stryker führt außen angebrachte Kraftstofftanks (A-0054/P11), beim Puma liegen die Hauptkraftstofftanks in den Laufwerksträgern (A-0053/P8), und A-0052/P12 nennt Außenstauraum für Kraftstoff. Die Reichweite ist zu weit gefasst, die Sicherheit zu hoch.",
+      "vorschlag": "Zweiten Satz ändern in: „Sie nimmt Triebwerk und Besatzung auf, trägt Fahrwerkskräfte und Waffenlasten und schützt zugleich mit ihrer Grundpanzerung; Kraftstoff liegt je nach Bauweise in der Wanne, in den Laufwerksträgern oder in außen angebrachten Tanks.“ A-0053/P8 und A-0054/P11 als Prämissen ergänzen."
+    },
+    {
+      "ref": "K7",
+      "schwere": "mittel",
+      "pruefschritt": 4,
+      "befund": "Es fehlt eine Klärungsfrage zum geforderten Schutzniveau, also zu Bedrohungen und Trefferrichtungen. Alle drei Kindartikel stellen sie (A-0052 K7, A-0053 K3, A-0054 K1), und laut P5 sind Schutzstand, Gefechtsmasse und Verlegbarkeit gemeinsam festzulegen. K7 fragt aber nur nach Masse und Transportmitteln, und R1 nennt das Schutzniveau nur als Anforderungsthema. Gerade diese Frage würde ein Systemarchitekt beim Taxon Gepanzert zuerst stellen.",
+      "vorschlag": "Neue Klärungsfrage K9 ergänzen: „Gegen welche Bedrohungen, etwa Beschuss, Artilleriesplitter, Minen und Sprengfallen, und aus welchen Richtungen muss die Grundpanzerung schützen, und welcher Schutz darf erst mit Zusatzpanzerung oder aktivem Schutzsystem erreicht werden?“; element_ids [\"E2\", \"E11\"], anlass anforderung, relevanz „Die Antwort legt Grund- und Zusatzpanzerung, die Schutzmasse und damit die Auslegung von Federung, Antrieb und Bremse fest.“. In der Relevanz von K7 auf K9 verweisen."
+    },
+    {
+      "ref": "E2",
+      "schwere": "mittel",
+      "pruefschritt": 5,
+      "befund": "Eine gemeinsame strukturändernde Variante fehlt: die Federungsbauart. Alle drei Kindartikel führen sie als Variante (A-0052 V4 Drehstab, hydropneumatisch, geregelt; A-0053 V2 Drehstab oder entkoppelte Hydropneumatik; A-0054 V11 Stahlfederung oder Hydropneumatik mit Niveauregulierung). Sie wirkt auf Bauraum am Wannenboden und Minenschutz sowie auf Neben- und Versorgungssysteme (Hydraulik), und die Masse koppelt sie mit dem Schutz. Text und Modellblock erwähnen sie nicht.",
+      "vorschlag": "In P5 einen Satz ergänzen: „Die Federungsbauart ist in allen Kindartikeln eine Variante: Drehstab- oder Stahlfederung gegenüber hydropneumatischer Federung mit Niveauregulierung, die Bauraum am Wannenboden frei macht, den Minenschutz verbessert und eine Hydraulikversorgung braucht.“ Prämissen A-0052/P7, A-0053/P5 und A-0054/P7 ergänzen. In modell.varianten V7 am Element E2 aufnehmen: bezeichnung „Federungsbauart“, alternativen [„Drehstab- oder Stahlfederung“, „Hydropneumatische Federung mit Niveauregulierung“], auswahlkriterien [„Bauraum am Wannenboden und Minenschutz“, „Niveauregulierung und Blockierung für den Waffeneinsatz (Kampfpanzer), Bodenfreiheit und Verladehöhe (Radpanzer)“, „Wartungsaufwand“], auswirkungen [{E14: „Hydraulikversorgung für Niveauregulierung“}, {E7: „Entkopplung der Sitze vom Wannenboden“}], absatz_ids [„P5“]. Dazu eine Klärungsfrage mit variante_ids [„V7“]."
+    },
+    {
+      "ref": "P7",
+      "schwere": "gering",
+      "pruefschritt": 5,
+      "befund": "Der Satz „Alle Kindartikel betrachten den Verbrennungsmotor als Dieselmotor“ übergeht die Gasturbine in A-0052. Der Satz zur Zuordnung der Zusatzpanzerung gehört nicht in einen Absatz über Energie, Information und Versorgung.",
+      "vorschlag": "Ersten Satz ändern in: „Gemeinsam ist der dieselbasierte Energiepfad: Alle Kindartikel betrachten den Dieselmotor, gespeist aus Kraftstofftank und Kraftstoffversorgung; der Kampfpanzer zusätzlich die Gasturbine.“ Den Satz zur Zusatzpanzerung mit den Prämissen A-0052/P4 und A-0053/P4 nach P5 verschieben."
+    },
+    {
+      "ref": "P20",
+      "schwere": "gering",
+      "pruefschritt": 5,
+      "befund": "P20 führt das Hilfsstromaggregat als festen Teil des wiederverwendbaren Energiepfads. In A-0054 (P12, V10) ist es aber eine Option und in A-0053/P28 „je nach Bauweise“ vorgesehen.",
+      "vorschlag": "„Energiepfad aus Kraftstoffversorgung, Generator, Bordnetzbatterie und optionalem Hilfsstromaggregat“ schreiben; ebenso in P18."
+    },
+    {
+      "ref": "V3",
+      "schwere": "gering",
+      "pruefschritt": 5,
+      "befund": "V3 lässt zwei Alternativen des Radpanzers weg, die offene Lafette und den Verzicht auf Bordbewaffnung (A-0054 V4). Damit fehlen sie in der Übersicht der Waffenträger.",
+      "vorschlag": "Als weitere Alternativen „Offene Lafette“ und „Keine Bordbewaffnung“ aufnehmen und im Auswahlkriterium zur Reife ergänzen: „offene Lafette und unbewaffnete Ausführungen nur beim Radpanzer“."
+    },
+    {
+      "ref": "V6",
+      "schwere": "gering",
+      "pruefschritt": 5,
+      "befund": "Das Auswahlkriterium „beim Schützenpanzer ausgeschlossen“ lässt sich so lesen, als schließe A-0053 jede Gewässerüberwindung aus. Ausgeschlossen sind dort nur schwimmfähige Ausführungen; Waten und Tiefwaten behandelt A-0053 nicht.",
+      "vorschlag": "Ändern in: „Tiefwatausrüstung beim Kampfpanzer, schwimmfähige Ausführungen beim Radpanzer; schwimmfähige Schützenpanzer schließt A-0053 aus, Waten behandelt er nicht“."
+    },
+    {
+      "ref": "P8",
+      "schwere": "gering",
+      "pruefschritt": 5,
+      "befund": "P8 stellt die Temperierung des Besatzungsraums im Verbund mit der ABC-Schutzanlage als gemeinsames Muster dar. A-0053/P33 nennt die Klimatisierung aber bauweisen- und einsatzabhängig, teils erst nachgerüstet.",
+      "vorschlag": "Letzten Satz ergänzen: „…; beim Schützenpanzer ist die Klimatisierung bauweisen- und einsatzabhängig.“"
+    },
+    {
+      "ref": "V5",
+      "schwere": "gering",
+      "pruefschritt": 5,
+      "befund": "V5 (Auswahlkriterium) und der Betrachtungsumfang ordnen den dieselelektrischen Antrieb auch dem Kampfpanzer zu. A-0052 betrachtet aber nur einen seriellen oder parallelen Hybrid; einen dieselelektrischen Antrieb ohne Traktionsbatterie nennt nur A-0053.",
+      "vorschlag": "Ändern in: „Betrachtungsumfang: Gasturbine nur Kampfpanzer, serieller und paralleler Hybrid Kampfpanzer, dieselelektrisch und hybrid Schützenpanzer, Radpanzer nur Dieselmotor“; den Betrachtungsumfang entsprechend anpassen."
+    }
+  ],
+  "gesamturteil": "Die Übersicht stellt die drei Kindartikel sorgfältig gegenüber, die Herleitungen sind mit genauen Absatzverweisen belegt, und alle sechs geprüften Belege sind gedeckt. Für die Auswahl der Fahrzeugart und für die Wiederverwendung des Grundmodells taugt sie aber noch nicht: Die Auswahlfrage K1 und die SysML-Hierarchie in P19 lösen die Kreuzung von Rolle und Fahrwerk nicht auf, obwohl P3 sie selbst benennt. Außerdem fehlen der Hinweis auf nicht abgedeckte Kettentransportpanzer, die Schutzfrage und die gemeinsame Federungsvariante."
+}
