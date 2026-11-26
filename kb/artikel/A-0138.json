@@ -1,0 +1,1505 @@
+{
+  "schema_version": "2.3",
+  "artikel_id": "A-0138",
+  "artikeltyp": "uebersicht",
+  "titel": "Geländefahrzeuge",
+  "betrachtungsumfang": "Übersicht über selbstfahrende Geländefahrzeuge der Landfahrzeuge (Recherchepfad Landfahrzeuge, Geländefahrzeuge) mit den Kindartikeln Freizeit und Transport (A-0139), Arbeitsmaschinen (A-0140) und Baumaschinen (A-0141): gemeinsame Architektur, Unterscheidungsmerkmale und gemeinsames Grundmodell. Antriebsarten nur im Vergleich und wie in den Kindartikeln: verbrennungsmotorisch in allen, batterieelektrisch, hybrid, dieselelektrisch und brennstoffzellenelektrisch je nach Fahrzeugart; Energiespeicher und Energiewandler (Kraftstofftank, Traktionsbatterie, Wasserstofftank; Verbrennungsmotor, Traktionsmaschine, Brennstoffzellensystem) sind in den Kindartikeln und deren Blattartikeln modelliert. Das Modell enthält nur das Gesamtsystem und die gemeinsamen Hauptsysteme. Regelwerk belegt für die EU (Motoren mobiler Maschinen), weitere Regelwerke in den Kindartikeln. Militärfahrzeuge, Anhängefahrzeuge, Straßenfahrzeuge ohne Geländeausstattung, Side-by-Side-Fahrzeuge und Amphibienfahrzeuge nur zur Abgrenzung.",
+  "status": "geprueft",
+  "quellenzugriff": "ja",
+  "kindartikel_ids": [
+    "A-0139",
+    "A-0140",
+    "A-0141"
+  ],
+  "quellen": [
+    {
+      "quellen_id": "Q1",
+      "titel": "Regulation (EU) 2016/1628 of the European Parliament and of the Council of 14 September 2016 on requirements relating to gaseous and particulate pollutant emission limits and type-approval for internal combustion engines for non-road mobile machinery, Artikel 2 (Scope), Artikel 3 (Definitions) und Artikel 4 (Engine categories), Fassung wie angenommen",
+      "urheber": "Europäisches Parlament und Rat der Europäischen Union; Textwiedergabe legislation.gov.uk",
+      "stand": "2016-09-14",
+      "url": "https://www.legislation.gov.uk/eur/2016/1628/article/2/adopted",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "norm"
+    },
+    {
+      "quellen_id": "Q2",
+      "titel": "Off-road vehicle",
+      "urheber": "Wikipedia-Autoren",
+      "stand": "Version 1373374399",
+      "url": "https://en.wikipedia.org/wiki/Off-road_vehicle",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "nachschlagewerk"
+    },
+    {
+      "quellen_id": "Q3",
+      "titel": "Geländewagen (Weiterleitung von Geländefahrzeug)",
+      "urheber": "Wikipedia-Autoren",
+      "stand": "Version 271551816",
+      "url": "https://de.wikipedia.org/wiki/Gel%C3%A4ndefahrzeug",
+      "abgerufen": true,
+      "abrufdatum": "2026-11-26",
+      "quellentyp": "nachschlagewerk"
+    }
+  ],
+  "abschnitte": [
+    {
+      "ueberschrift": "Einleitung",
+      "abschnittstyp": "gesamtsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P1",
+          "text": "Ein Geländefahrzeug (off-road vehicle, auch off-highway vehicle) ist nach der englischsprachigen Enzyklopädie ein Fahrzeug, das eigens für unbefestigte Wege und Flächen ausgelegt ist, etwa Pfade, Forstwege und anderes Gelände mit geringer Traktion. Genutzt werden Geländefahrzeuge in der Freizeit ebenso wie für praktische Aufgaben, etwa in Landwirtschaft und Bauwesen. Um abseits befestigter Fahrbahnen voranzukommen, brauchen sie geringen Bodendruck, große Bodenfreiheit und die Fähigkeit, auf unebenem Grund Rad- oder Kettenkontakt zu halten.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Einleitung, Absatz 1; Abschnitt Technical details, Absatz 1"
+            }
+          ],
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P2",
+          "text": "Das Elterntaxon Geländefahrzeuge umfasst die selbstfahrenden Landfahrzeuge, die überwiegend abseits befestigter Straßen arbeiten und in der Grundbauweise eine Person an Bord führen. Kindartikel sind Freizeit und Transport mit Geländewagen, Quad, ATV und Schneemobil, Arbeitsmaschinen der Land- und Forstwirtschaft mit Traktor, Mähdrescher und Forstmaschine sowie Baumaschinen mit Bagger, Radlader, Planierraupe und Muldenkipper. Militär- und Anhängefahrzeuge bilden eigene Taxa, Sport Utility Vehicles ohne Geländeausstattung und Kipper mit Straßenzulassung gehören zu den Straßenfahrzeugen; Side-by-Side- und Amphibienfahrzeuge dienen nur der Abgrenzung.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P1",
+              "A-0139/P3",
+              "A-0140/P3",
+              "A-0141/P4",
+              "Betrachtungsumfang von A-0139, A-0140 und A-0141",
+              "Inventar A-0138: Kindartikel A-0139, A-0140, A-0141",
+              "Inventare A-0126, A-0142 und A-0145: Geschwistertaxa Straßenfahrzeuge, Militärfahrzeuge und Anhängefahrzeuge"
+            ],
+            "schluss": "Das Taxon umfasst geländegängige Fahrzeuge für Transport, land- und forstwirtschaftliche Arbeit und Erdbau; Militär- und Anhängefahrzeuge liegen in Geschwistertaxa."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [
+            "A-0139",
+            "A-0140",
+            "A-0141"
+          ]
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Gemeinsame Anforderungen des Geländeeinsatzes",
+      "abschnittstyp": "querschnitt",
+      "absaetze": [
+        {
+          "absatz_id": "P3",
+          "text": "Geringen Bodendruck und sicheren Bodenkontakt erreichen Radfahrzeuge nach der englischsprachigen Enzyklopädie mit großen oder zusätzlichen Reifen und hoher, nachgiebiger Federung, Kettenfahrzeuge mit breiten Ketten und flexibler Federung der Laufrollen. Kettenlaufwerke sind teurer in Herstellung und Unterhalt, im Gelände aber leistungsfähiger; Radlaufwerke sind billiger und erlauben höhere Geschwindigkeiten. Die meisten Geländefahrzeuge haben eine niedrige Übersetzung für langsame Fahrt durch schwieriges Gelände, etwa einen sehr kurzen ersten Gang oder ein zusätzliches Untersetzungsgetriebe; manche nutzen dafür Drehmomentwandler.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q2",
+              "fundstelle": "Abschnitt Technical details, Absätze 1, 2 und 4"
+            }
+          ],
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P4",
+          "text": "Als Maßzahlen der Geländegängigkeit nennt die deutschsprachige Enzyklopädie für Geländewagen Wattiefe, Steigfähigkeit, Bodenfreiheit unter einer Achse und zwischen den Achsen, Böschungs- oder Überhangwinkel, Rampenwinkel, Kippwinkel und Achsverschränkung. Dem Vortrieb dienen Allradantrieb, oft mit zuschaltbarer Geländeuntersetzung, Differentialsperren, ein verschränkungsfähiges Fahrwerk und grob profilierte Geländereifen.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q3",
+              "fundstelle": "Abschnitt Konstruktive Kriterien für Geländewagen, Absatz 1, Sätze 3 und 4; Abschnitt Maßzahlen"
+            }
+          ],
+          "herangezogene_artikel_ids": []
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Gemeinsames Grundmodell",
+      "abschnittstyp": "querschnitt",
+      "absaetze": [
+        {
+          "absatz_id": "P5",
+          "text": "Zwölf Hauptsysteme besitzt jede Fahrzeugart aller drei Kindartikel: Fahrzeugstruktur und Fahrwerk, Antriebssystem, Energieversorgungssystem, Lenksystem, Bremssystem, einen Bedienraum, Aufbau und Ladung, Elektrik und Elektronik, Fahrzeugsteuerung und Information, Fahrerassistenz und Sicherheit, Beleuchtung und Sicht sowie Thermomanagement. Verschieden sind die Namen: Den Bedienraum nennen Arbeits- und Baumaschinen Fahrerhaus, Quad, ATV und Schneemobil Fahrerplatz, der Geländewagen Fahrgastraum; Aufbau und Ladung heißt bei Arbeits- und Baumaschinen Arbeitsausrüstung, beim Geländewagen Laderaum und Anhängevorrichtung. Neben- und Versorgungssysteme führen alle Arbeits- und Baumaschinen, unter Freizeit und Transport nur Geländewagen und ATV.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "A-0139/P5",
+              "A-0140/P4",
+              "A-0141/P6"
+            ],
+            "schluss": "Zwölf Hauptsysteme sind allen Fahrzeugarten gemeinsam; Neben- und Versorgungssysteme fehlen nur Quad und Schneemobil."
+          },
+          "sicherheit": "hoch",
+          "herangezogene_artikel_ids": [
+            "A-0139",
+            "A-0140",
+            "A-0141"
+          ]
+        },
+        {
+          "absatz_id": "P6",
+          "text": "Gemeinsam ist der Leistungspfad der Bezugsbauweise: Ein Verbrennungsmotor des Antriebssystems, bei Arbeits- und Baumaschinen ein Dieselmotor, wandelt Kraftstoff aus dem Kraftstofftank des Energieversorgungssystems in mechanische Leistung für Räder oder Gleiskette. Starterbatterie und Generator speisen das Niedervolt-Bordnetz der Elektrik und Elektronik. Das Thermomanagement führt die Motorwärme über einen Kühlkreislauf ab, bei Arbeits- und Baumaschinen auch die von Getriebe- oder Hydrauliköl. Leitungssatz und Steuergeräte sind überall Nässe, Schmutz und Erschütterungen ausgesetzt.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "A-0139/P6",
+              "A-0139/P7",
+              "A-0140/P5",
+              "A-0140/P8",
+              "A-0141/P7",
+              "A-0141/P16"
+            ],
+            "schluss": "Verbrennungsmotorischer Leistungspfad, Niedervolt-Bordnetz, Motorkühlung und robuste Elektrik sind allen Kindartikeln gemeinsam."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [
+            "A-0139",
+            "A-0140",
+            "A-0141"
+          ]
+        },
+        {
+          "absatz_id": "P7",
+          "text": "Arbeits- und Baumaschinen haben eine zweite Leistungsschiene: Über Abtriebe oder einen Nebenaggregatetrieb treibt der Motor Hydraulikpumpen der Neben- und Versorgungssysteme, deren Drucköl die Arbeitsausrüstung bewegt und je nach Bauart Lenksystem und Bremssystem versorgt. Dort stimmt das Fahrzeugmanagement der Fahrzeugsteuerung und Information Fahr- und Arbeitsleistung ab; bei Quad, ATV und Schneemobil beschränkt sich die Steuerung auf Motorsteuerung und Diagnose. Überall leitet Aufbau und Ladung Ladungs-, Arbeits- oder Zuglasten in die Tragstruktur und verschiebt Schwerpunkt und Achslasten.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "A-0139/P7",
+              "A-0140/P5",
+              "A-0140/P6",
+              "A-0140/P10",
+              "A-0140/P18",
+              "A-0141/P7",
+              "A-0141/P11"
+            ],
+            "schluss": "Die Hydraulikversorgung ist gemeinsames Element der Arbeits- und Baumaschinen; der Lastpfad vom Aufbau in die Struktur ist allen Kindartikeln gemeinsam."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [
+            "A-0139",
+            "A-0140",
+            "A-0141"
+          ]
+        },
+        {
+          "absatz_id": "P8",
+          "text": "Einzelne Komponenten ordnen die Kindartikel uneinheitlich zu. Die Seilwinde steht bei Geländewagen und ATV unter den Neben- und Versorgungssystemen, beim Quad unter Aufbau und Ladung. Die Hydraulikversorgung liegt beim Bagger im Antriebssystem, bei den übrigen Arbeits- und Baumaschinen in den Neben- und Versorgungssystemen und heißt bei Traktor, Mähdrescher und Forstmaschine jeweils anders. Überschlagschutz und Schutz gegen herabfallende Gegenstände stehen teils im Fahrerhaus, teils unter Fahrerassistenz und Sicherheit, wohin das Glossar den Überschlagschutz stellt.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "A-0139/P8",
+              "A-0141/P10",
+              "A-0140: offene Punkte (Benennung der Hydraulikversorgung)",
+              "Glossar-Zuordnungsliste: Überschlagschutz unter assistenz_sicherheit"
+            ],
+            "schluss": "Seilwinde, Hydraulikversorgung und Schutzaufbauten sind vor der Wiederverwendung einheitlich zuzuordnen."
+          },
+          "sicherheit": "hoch",
+          "herangezogene_artikel_ids": [
+            "A-0139",
+            "A-0140",
+            "A-0141"
+          ]
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Unterscheidungsmerkmal Leistungsabgabe und Arbeitsausrüstung",
+      "abschnittstyp": "variante",
+      "absaetze": [
+        {
+          "absatz_id": "P9",
+          "text": "Prägend ist, wofür die Motorleistung dient. Fahrzeuge für Freizeit und Transport nutzen sie vor allem zur Fortbewegung; Aufbau und Ladung besteht aus Gepäckträger oder Laderaum und Anhängevorrichtung. Arbeits- und Baumaschinen geben einen großen Teil an eine Arbeitsausrüstung ab, der Leistungspfad verzweigt sich auf Fahren und Arbeiten. Der Traktor bietet Koppelpunkte mit Zapfwelle, Hydraulikkupplungen und Anbaugerätebus für fremde Geräte, der Mähdrescher eine fest verbaute Verarbeitungskette, die Forstmaschine einen Kran mit wechselbarem Werkzeug. Baumaschinen bewegen Material mit Grabausrüstung, Hubgerüst, Planierschild oder Mulde.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "A-0139/P3",
+              "A-0139/P7",
+              "A-0140/P3",
+              "A-0140/P5",
+              "A-0140/P9",
+              "A-0141/P11"
+            ],
+            "schluss": "Die Leistungsabgabe an eine Arbeitsausrüstung trennt Freizeit und Transport von Arbeits- und Baumaschinen; innerhalb dieser unterscheidet sich die Arbeitsausrüstung je Fahrzeugart."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [
+            "A-0139",
+            "A-0140",
+            "A-0141"
+          ]
+        },
+        {
+          "absatz_id": "P10",
+          "text": "Mit der Arbeitsausrüstung ändern sich weitere Hauptsysteme. Die Neben- und Versorgungssysteme werden mit der Hydraulikversorgung zur tragenden Leistungsschiene, beim Traktor ergänzt um Zapfwelle und Druckluftanlage für Anhängerbremsen. Die Fahrzeugsteuerung und Information erhält arbeitsspezifische Funktionen wie Auftragssteuerung, Durchsatzregelung, Aufarbeitungssteuerung oder Wäge- und Nutzlasterfassung. Fahrzeugstruktur und Fahrwerk nehmen die Arbeitskräfte über Hubrahmen, Schubrahmen, Drehverbindung oder Kipplager auf, und Ballast, Gegengewicht oder wechselnde Zuladung bestimmen die Achslasten. Das Thermomanagement kühlt bei allen Arbeitsmaschinen, Bagger, Radlader und Planierraupe zusätzlich Hydraulik- oder Getriebeöl.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P9",
+              "A-0140/P8",
+              "A-0140/P10",
+              "A-0141/P7",
+              "A-0141/P10",
+              "A-0141/P11",
+              "Variante V1 in A-0141"
+            ],
+            "schluss": "Die Arbeitsausrüstung bestimmt Nebensysteme, Steuerungsfunktionen, Lastaufnahme und Kühlbedarf der übrigen Hauptsysteme."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [
+            "A-0139",
+            "A-0140",
+            "A-0141"
+          ]
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Unterscheidungsmerkmal Laufwerk und Lenkprinzip",
+      "abschnittstyp": "variante",
+      "absaetze": [
+        {
+          "absatz_id": "P11",
+          "text": "Das zweite Merkmal ist das Laufwerk mit seinem Lenkprinzip. Gleisketten tragen Schneemobil, Raupenbagger und Planierraupe, die übrigen Fahrzeugarten Räder; Traktor, Mähdrescher und Forstmaschine kennen Raupenlaufwerke als Variante, das Quad Raupen statt Rädern. Gelenkt wird über gelenkte Räder, beim Mähdrescher über die hintere Lenkachse, mit Knicklenkung bei Harvester, Forwarder, Radlader, Muldenkipper und Großtraktoren, über die Drehzahldifferenz der Ketten bei Raupenbagger, Planierraupe, Raupenschlepper und Raupenharvester und mit Lenkski beim Schneemobil.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P3",
+              "A-0139/P9",
+              "A-0140/P11",
+              "A-0141/P12"
+            ],
+            "schluss": "Rad- und Kettenlaufwerk mit ihren Lenkprinzipien kehren in allen Kindartikeln wieder."
+          },
+          "sicherheit": "hoch",
+          "herangezogene_artikel_ids": [
+            "A-0139",
+            "A-0140",
+            "A-0141"
+          ]
+        },
+        {
+          "absatz_id": "P12",
+          "text": "Die Laufwerkswahl ändert mehrere Hauptsysteme. Beim Kettenlaufwerk endet die Kraftübertragung des Antriebssystems an Antriebsrädern, die in die Kette greifen, bei Kettendrehzahllenkung wandert die Lenkfunktion in den Fahrantrieb, und das Bremssystem wirkt bei Schneemobil und Planierraupe an der Kraftübertragung statt an Radbremsen. Die Knicklenkung teilt die Tragstruktur in Vorder- und Hinterwagen; Gelenkwellen und Leitungssatz müssen das Knickgelenk überbrücken. Schneemobil und Planierraupe sind auf die Kette festgelegt, bei Bagger, Traktor, Mähdrescher und Forstmaschine ist das Laufwerk wählbar.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P3",
+              "A-0139/P9",
+              "A-0140/P12",
+              "A-0141/P12",
+              "Variante V2 in A-0141"
+            ],
+            "schluss": "Das Laufwerk koppelt Struktur, Antrieb, Lenkung, Bremse und Leitungsführung und ist je Fahrzeugart festgelegt oder wählbar."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [
+            "A-0139",
+            "A-0140",
+            "A-0141"
+          ]
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Unterscheidungsmerkmal Fahrantrieb",
+      "abschnittstyp": "variante",
+      "absaetze": [
+        {
+          "absatz_id": "P13",
+          "text": "Der Fahrantrieb liefert überall hohe Zugkraft bei geringer Geschwindigkeit: Geländewagen über Verteilergetriebe, Geländeuntersetzung und Differenzialsperren, Quad und ATV über Schaltgetriebe oder stufenloses Keilriemengetriebe, Schneemobil über Keilriemenautomatik, Traktor über Stufen-, Lastschalt- oder leistungsverzweigtes stufenloses Getriebe, Mähdrescher hydrostatisch oder über Variator, Harvester, Forwarder und Bagger hydrostatisch, Radlader und Planierraupe über Drehmomentwandler, große starre Muldenkipper dieselelektrisch. Hydrostatisch verzögert die Fahrpumpe, nötig wird ein Ölkühler im Thermomanagement; beim Variator-Mähdrescher und mechanischen Skidder verzögert allein die Betriebsbremse, der dieselelektrische Muldenkipper dauerbremst elektrisch.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P3",
+              "A-0139/P12",
+              "A-0140/P13",
+              "A-0141/P13",
+              "A-0141/P11",
+              "Variante V3 in A-0141"
+            ],
+            "schluss": "Jede Fahrzeugart wählt eine eigene Fahrantriebsbauart; die Wahl wirkt auf Bremssystem und Thermomanagement."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [
+            "A-0139",
+            "A-0140",
+            "A-0141"
+          ]
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Unterscheidungsmerkmal Antriebsart",
+      "abschnittstyp": "variante",
+      "absaetze": [
+        {
+          "absatz_id": "P14",
+          "text": "Viertes Merkmal ist die Antriebsart, Bezugsbauweise der Verbrennungsmotor. Die Kindartikel betrachten batterieelektrisch alle Fahrzeugarten für Freizeit und Transport, Traktor, Bagger, Radlader und Muldenkipper, hybrid Geländewagen, Traktor und Forstmaschine, dieselelektrisch Traktor, Radlader und Muldenkipper, mit Brennstoffzelle nur den Traktor. Jede Elektrifizierung ergänzt im Antriebssystem eine Traktionsmaschine mit Wechselrichter, in der Fahrzeugsteuerung und Information ein Energiemanagement. Batterie- und Brennstoffzellenantriebe ergänzen im Energieversorgungssystem eine Hochvoltebene mit Traktionsbatterie und Ladeeinrichtung oder Wasserstofftank und Brennstoffzellensystem, im Thermomanagement eine Batterietemperierung; batterieelektrisch rekuperiert die Traktionsmaschine Bremsenergie. Dieselelektrisch bleibt die Kraftstoffversorgung, ein Generator speist den Zwischenkreis, gekühlt werden Generator und Traktionsmaschinen.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "A-0139/P6",
+              "A-0140/P14",
+              "A-0141/P13",
+              "Variante V3 in A-0141",
+              "Betrachtungsumfang von A-0139, A-0140 und A-0141"
+            ],
+            "schluss": "Die Antriebsart ist eine taxonweite Variationsachse; jede Elektrifizierung ergänzt Traktionsmaschine und Energiemanagement, die Folgen für Energieversorgung und Thermomanagement unterscheiden sich zwischen batterie- und brennstoffzellenelektrischem und dieselelektrischem Antrieb; ihr Umfang ist je Fahrzeugart verschieden."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [
+            "A-0139",
+            "A-0140",
+            "A-0141"
+          ]
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Unterscheidungsmerkmal Bedienraum und Fahrerschutz",
+      "abschnittstyp": "variante",
+      "absaetze": [
+        {
+          "absatz_id": "P15",
+          "text": "Quad, ATV und Schneemobil haben einen offenen Fahrerplatz mit Reitsitz und Lenker, der Fahrer lenkt durch Gewichtsverlagerung mit; Fahrerassistenz und Sicherheit nutzen Motorstopp- oder Notausschalter, ein Überschlagschutz ist umstritten. Der Geländewagen hat einen Fahrgastraum mit Rückhaltesystem, Arbeits- und Baumaschinen ein geschlossenes, klimatisiertes Fahrerhaus mit Sicherheitsgurt, dessen Fahrhebel und Joysticks Fahren und Arbeiten über den Fahrzeugbus steuern; Überschlagschutz führen Traktor, Forstmaschine und alle Baumaschinen. Fernsteuerung verlegt die Bedienung an einen Leitstand. Das Bedienraumkonzept bestimmt Lenkeingabe, Aufnahmen der Tragstruktur und Klimatisierung durch das Thermomanagement.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "A-0139/P10",
+              "A-0139/P11",
+              "A-0140/P7",
+              "A-0140/P8",
+              "A-0141/P8",
+              "A-0141/P15"
+            ],
+            "schluss": "Offener Fahrerplatz, Fahrgastraum und geschlossenes Fahrerhaus mit Schutzaufbauten unterscheiden die Kindartikel und wirken auf Lenkung, Sicherheit, Struktur und Klimatisierung."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [
+            "A-0139",
+            "A-0140",
+            "A-0141"
+          ]
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Unterscheidungsmerkmal rechtliche Einordnung",
+      "abschnittstyp": "variante",
+      "absaetze": [
+        {
+          "absatz_id": "P16",
+          "text": "Die Verordnung (EU) 2016/1628 gilt in der EU für Motoren in nicht für den Straßenverkehr bestimmten mobilen Maschinen, also in mobilen Maschinen, transportablen Geräten oder Fahrzeugen, die nicht zur Beförderung von Personen oder Gütern auf der Straße bestimmt sind. Ausgenommen sind Antriebsmotoren von Fahrzeugen nach der Richtlinie 2007/46/EG, von land- und forstwirtschaftlichen Zugmaschinen nach der Verordnung (EU) Nr. 167/2013 und von Fahrzeugen nach der Verordnung (EU) Nr. 168/2013 sowie Freizeitfahrzeuge außer Schneemobilen, ATV und Side-by-Side-Fahrzeugen. Fremdgezündete Motoren für Schneemobile bilden die Kategorie SMB, für ATV und Side-by-Side-Fahrzeuge die Kategorie ATS; andere Motoren dieser Fahrzeuge zählen zur Sammelkategorie NRE.",
+          "begruendung": "belegt",
+          "belege": [
+            {
+              "quellen_id": "Q1",
+              "fundstelle": "Artikel 2 Absatz 1 und Absatz 2 Buchstaben a, b, c und j; Artikel 3 Nummer 1; Artikel 4 Absatz 1 Nummern 1, 9 und 10 (Fassung wie angenommen)"
+            }
+          ],
+          "herangezogene_artikel_ids": []
+        },
+        {
+          "absatz_id": "P17",
+          "text": "Geländewagen als Personenkraftwagen oder leichte Nutzfahrzeuge mit Geländeeinstufung, Traktoren, als Zugmaschine genehmigte Forstmaschinen und Straßenquads der Klasse L unterliegen Fahrzeugverordnungen; ihre Antriebsmotoren fallen also nicht unter die Verordnung über Motoren mobiler Maschinen. Diese erfasst die Motoren von Mähdrescher, übrigen Forstmaschinen, Baumaschinen, Schneemobilen und reinen Gelände-ATV und bestimmt die Abgasanforderungen an Verbrennungsmotor und Abgasnachbehandlung. Mähdrescher, Mobilbagger und Radlader können nach nationalem Recht als selbstfahrende Arbeitsmaschine am Straßenverkehr teilnehmen; ob Beleuchtung und Sicht und Bremssystem Straßenanforderungen erfüllen, entscheidet die Zulassung.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P16",
+              "A-0139/P2",
+              "A-0139/P14",
+              "A-0140/P1",
+              "A-0140/P2",
+              "A-0140/P3",
+              "A-0141/P3",
+              "A-0141/P12"
+            ],
+            "schluss": "Fahrzeug- und Motorregelwerke teilen das Taxon quer zu den Kindartikeln; die Motorregelung bestimmt den Abgasstrang, die Fahrzeugzulassung, auch als selbstfahrende Arbeitsmaschine, bestimmt Beleuchtung und Bremse."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [
+            "A-0139",
+            "A-0140",
+            "A-0141"
+          ]
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Zusammenfassung",
+      "abschnittstyp": "gesamtsystem",
+      "absaetze": [
+        {
+          "absatz_id": "P18",
+          "text": "Geländefahrzeuge teilen ein Grundmodell aus zwölf Hauptsystemen, meist ergänzt um Neben- und Versorgungssysteme, mit verbrennungsmotorischem Leistungspfad und zugkräftigem Fahrantrieb. Sie unterscheiden sich in Leistungsabgabe an eine Arbeitsausrüstung, Laufwerk mit Lenkprinzip, Fahrantrieb, Antriebsart, Bedienraumkonzept und rechtlicher Einordnung. Die Leistungsabgabe bestimmt das Kindtaxon: Freizeit und Transport, Arbeitsmaschinen oder Baumaschinen.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P5",
+              "P6",
+              "P9",
+              "P11",
+              "P13",
+              "P14",
+              "P15",
+              "P17"
+            ],
+            "schluss": "Ein Grundmodell mit sechs Unterscheidungsmerkmalen beschreibt das Taxon; die Leistungsabgabe wählt das Kindtaxon."
+          },
+          "sicherheit": "mittel",
+          "herangezogene_artikel_ids": [
+            "A-0139",
+            "A-0140",
+            "A-0141"
+          ]
+        }
+      ]
+    },
+    {
+      "ueberschrift": "Modellierungsbezug",
+      "abschnittstyp": "modellierung",
+      "absaetze": [
+        {
+          "absatz_id": "P19",
+          "text": "In SysML bildet ein abstrakter Block Geländefahrzeug den Grundblock mit den Hauptsystemen als Teilen; die Neben- und Versorgungssysteme sind dort optional, weil Quad und Schneemobil sie nicht besitzen. Die Blöcke der Kindartikel spezialisieren ihn: Freizeit und Transport redefiniert das Fahrerhaus als Fahrerplatz oder Fahrgastraum, Arbeitsmaschine und Baumaschine redefinieren Aufbau und Ladung als Arbeitsausrüstung. Eine Zwischenstufe arbeitender Geländemaschinen legt für beide Hydraulikversorgung, Leistungsverzweigung und Fahrerhaus mit Schutzaufbauten einmal fest. Pfade reichen dann etwa Geländefahrzeug → Baumaschine → Radlader → Arbeitsausrüstung → Hubgerüst.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P5",
+              "P7",
+              "P9",
+              "P15",
+              "A-0139/P16",
+              "A-0140/P16",
+              "A-0141/P17"
+            ],
+            "schluss": "Ein abstrakter Grundblock mit optionalen Nebensystemen, einer Zwischenstufe für Arbeits- und Baumaschinen und Redefinition von Bedienraum und Aufbau bildet das Taxon ohne Doppelungen ab."
+          },
+          "sicherheit": "gering",
+          "herangezogene_artikel_ids": [
+            "A-0139",
+            "A-0140",
+            "A-0141"
+          ],
+          "aussagetyp": "modellannahme"
+        },
+        {
+          "absatz_id": "P20",
+          "text": "Taxonweit wiederverwendbar sind der Teilbaum aus Verbrennungsmotor, Kraftstoffanlage und Abgasnachbehandlung, das Hochvolt-Energiesystem mit Traktionsbatterie, Ladeeinrichtung und Batterietemperierung, das Niedervolt-Bordnetz mit Fahrzeugbus, Kettenlaufwerk und Knicklenkung. Gleich bleiben Ports wie Kraftstoffzulauf, Hochvolt-Schnittstelle, Bordnetzanschluss, Hydraulikanschlüsse der Arbeitsausrüstung und Diagnoseschnittstelle; der Port zum Laufwerk ist Radnabe oder Antriebsrad der Kette. Die sechs Unterscheidungsmerkmale sind Variationspunkte. Blockdefinitionsdiagramme zeigen die Spezialisierungsstufen, interne Blockdiagramme die Leistungsverzweigung.",
+          "begruendung": "hergeleitet",
+          "belege": [],
+          "herleitung": {
+            "praemissen": [
+              "P6",
+              "P11",
+              "P12",
+              "P14",
+              "A-0139/P17",
+              "A-0140/P17",
+              "A-0141/P18"
+            ],
+            "schluss": "Teilbäume und Ports, die mehrere Kindartikel gleich beschreiben, lassen sich taxonweit wiederverwenden."
+          },
+          "sicherheit": "gering",
+          "herangezogene_artikel_ids": [
+            "A-0139",
+            "A-0140",
+            "A-0141"
+          ],
+          "aussagetyp": "modellannahme"
+        }
+      ]
+    }
+  ],
+  "modell": {
+    "elemente": [
+      {
+        "id": "E1",
+        "name": "Geländefahrzeug",
+        "typ": "gesamtsystem",
+        "eltern_id": null,
+        "absatz_ids": [
+          "P1",
+          "P2",
+          "P18",
+          "P19"
+        ]
+      },
+      {
+        "id": "E2",
+        "name": "Fahrzeugstruktur und Fahrwerk",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P5",
+          "P10",
+          "P11",
+          "P12"
+        ],
+        "kategorie": "struktur_fahrwerk"
+      },
+      {
+        "id": "E3",
+        "name": "Antriebssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P5",
+          "P6",
+          "P12",
+          "P13",
+          "P14"
+        ],
+        "kategorie": "antrieb"
+      },
+      {
+        "id": "E4",
+        "name": "Energieversorgungssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P5",
+          "P6",
+          "P14"
+        ],
+        "kategorie": "energieversorgung"
+      },
+      {
+        "id": "E5",
+        "name": "Lenksystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P5",
+          "P7",
+          "P11",
+          "P12"
+        ],
+        "kategorie": "lenkung"
+      },
+      {
+        "id": "E6",
+        "name": "Bremssystem",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P5",
+          "P7",
+          "P12",
+          "P13",
+          "P17"
+        ],
+        "kategorie": "bremse"
+      },
+      {
+        "id": "E7",
+        "name": "Fahrerhaus",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P5",
+          "P15",
+          "P19"
+        ],
+        "kategorie": "bedienraum"
+      },
+      {
+        "id": "E8",
+        "name": "Aufbau und Ladung",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P5",
+          "P7",
+          "P9",
+          "P19"
+        ],
+        "kategorie": "aufbau_nutzlast"
+      },
+      {
+        "id": "E9",
+        "name": "Elektrik und Elektronik",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P5",
+          "P6",
+          "P20"
+        ],
+        "kategorie": "elektrik_elektronik"
+      },
+      {
+        "id": "E10",
+        "name": "Fahrzeugsteuerung und Information",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P5",
+          "P7",
+          "P10",
+          "P14"
+        ],
+        "kategorie": "steuerung_information"
+      },
+      {
+        "id": "E11",
+        "name": "Fahrerassistenz und Sicherheit",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P5",
+          "P8",
+          "P15"
+        ],
+        "kategorie": "assistenz_sicherheit"
+      },
+      {
+        "id": "E12",
+        "name": "Beleuchtung und Sicht",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P5",
+          "P17"
+        ],
+        "kategorie": "beleuchtung_sicht"
+      },
+      {
+        "id": "E13",
+        "name": "Thermomanagement",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P5",
+          "P6",
+          "P10",
+          "P13",
+          "P14"
+        ],
+        "kategorie": "thermomanagement"
+      },
+      {
+        "id": "E14",
+        "name": "Neben- und Versorgungssysteme",
+        "typ": "hauptsystem",
+        "eltern_id": "E1",
+        "absatz_ids": [
+          "P5",
+          "P7",
+          "P8",
+          "P10",
+          "P19"
+        ],
+        "kategorie": "nebensysteme"
+      }
+    ],
+    "funktionen": [
+      {
+        "id": "F1",
+        "name": "Fahrzeuglasten tragen",
+        "ausgefuehrt_von": [
+          "E2"
+        ],
+        "absatz_ids": [
+          "P7",
+          "P10"
+        ]
+      },
+      {
+        "id": "F2",
+        "name": "Fahrzeug fortbewegen",
+        "ausgefuehrt_von": [
+          "E2",
+          "E3"
+        ],
+        "absatz_ids": [
+          "P6",
+          "P11"
+        ]
+      },
+      {
+        "id": "F3",
+        "name": "Antriebsleistung erzeugen",
+        "ausgefuehrt_von": [
+          "E3"
+        ],
+        "absatz_ids": [
+          "P6",
+          "P14"
+        ]
+      },
+      {
+        "id": "F4",
+        "name": "Drehmoment übertragen",
+        "ausgefuehrt_von": [
+          "E3"
+        ],
+        "absatz_ids": [
+          "P12",
+          "P13"
+        ]
+      },
+      {
+        "id": "F5",
+        "name": "Energie speichern",
+        "ausgefuehrt_von": [
+          "E4"
+        ],
+        "absatz_ids": [
+          "P6",
+          "P14"
+        ]
+      },
+      {
+        "id": "F6",
+        "name": "Treibstoff fördern",
+        "ausgefuehrt_von": [
+          "E4"
+        ],
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "F7",
+        "name": "Traktionsbatterie laden",
+        "ausgefuehrt_von": [
+          "E4"
+        ],
+        "absatz_ids": [
+          "P14"
+        ]
+      },
+      {
+        "id": "F8",
+        "name": "Bremsenergie zurückgewinnen",
+        "ausgefuehrt_von": [
+          "E3"
+        ],
+        "absatz_ids": [
+          "P14"
+        ]
+      },
+      {
+        "id": "F9",
+        "name": "Elektrische Energie verteilen",
+        "ausgefuehrt_von": [
+          "E9"
+        ],
+        "absatz_ids": [
+          "P6"
+        ]
+      },
+      {
+        "id": "F10",
+        "name": "Fahrzeug lenken",
+        "ausgefuehrt_von": [
+          "E5"
+        ],
+        "absatz_ids": [
+          "P11",
+          "P12"
+        ]
+      },
+      {
+        "id": "F11",
+        "name": "Fahrzeug verzögern",
+        "ausgefuehrt_von": [
+          "E6",
+          "E3"
+        ],
+        "absatz_ids": [
+          "P12",
+          "P13"
+        ]
+      },
+      {
+        "id": "F12",
+        "name": "Fahrereingaben erfassen",
+        "ausgefuehrt_von": [
+          "E7"
+        ],
+        "absatz_ids": [
+          "P15"
+        ]
+      },
+      {
+        "id": "F13",
+        "name": "Insassen schützen",
+        "ausgefuehrt_von": [
+          "E7",
+          "E11"
+        ],
+        "absatz_ids": [
+          "P15"
+        ]
+      },
+      {
+        "id": "F14",
+        "name": "Ladung aufnehmen",
+        "ausgefuehrt_von": [
+          "E8"
+        ],
+        "absatz_ids": [
+          "P7",
+          "P9"
+        ]
+      },
+      {
+        "id": "F15",
+        "name": "Anhänger ziehen",
+        "ausgefuehrt_von": [
+          "E8"
+        ],
+        "absatz_ids": [
+          "P9"
+        ]
+      },
+      {
+        "id": "F16",
+        "name": "Hydraulische Leistung bereitstellen",
+        "ausgefuehrt_von": [
+          "E14"
+        ],
+        "absatz_ids": [
+          "P7",
+          "P10"
+        ]
+      },
+      {
+        "id": "F17",
+        "name": "Arbeitsgeräte versorgen",
+        "ausgefuehrt_von": [
+          "E14",
+          "E3"
+        ],
+        "absatz_ids": [
+          "P9",
+          "P10"
+        ]
+      },
+      {
+        "id": "F18",
+        "name": "Fahrzeugzustand überwachen",
+        "ausgefuehrt_von": [
+          "E10"
+        ],
+        "absatz_ids": [
+          "P7"
+        ]
+      },
+      {
+        "id": "F19",
+        "name": "Fahrzeugumgebung ausleuchten",
+        "ausgefuehrt_von": [
+          "E12"
+        ],
+        "absatz_ids": [
+          "P17"
+        ]
+      },
+      {
+        "id": "F20",
+        "name": "Betriebstemperatur regeln",
+        "ausgefuehrt_von": [
+          "E13"
+        ],
+        "absatz_ids": [
+          "P6",
+          "P10"
+        ]
+      },
+      {
+        "id": "F21",
+        "name": "Innenraum klimatisieren",
+        "ausgefuehrt_von": [
+          "E13"
+        ],
+        "absatz_ids": [
+          "P15"
+        ]
+      }
+    ],
+    "fluesse": [
+      {
+        "id": "S1",
+        "von": "E4",
+        "nach": "E3",
+        "art": "stoff",
+        "medium": "Kraftstoff",
+        "absatz_ids": [
+          "P6"
+        ],
+        "schnittstelle": "Kraftstoffzulauf"
+      },
+      {
+        "id": "S2",
+        "von": "E4",
+        "nach": "E3",
+        "art": "elektrisch",
+        "medium": "Hochvoltstrom",
+        "absatz_ids": [
+          "P14"
+        ],
+        "schnittstelle": "Hochvolt-Schnittstelle"
+      },
+      {
+        "id": "S3",
+        "von": "E3",
+        "nach": "E2",
+        "art": "mechanisch",
+        "medium": "Drehmoment",
+        "absatz_ids": [
+          "P6",
+          "P12"
+        ],
+        "schnittstelle": "Radnabe oder Antriebsrad der Kette"
+      },
+      {
+        "id": "S4",
+        "von": "E3",
+        "nach": "E14",
+        "art": "mechanisch",
+        "medium": "Drehmoment für Hydraulikpumpen und Abtriebe",
+        "absatz_ids": [
+          "P7"
+        ],
+        "schnittstelle": "Nebenaggregatetrieb oder Abtrieb"
+      },
+      {
+        "id": "S5",
+        "von": "E14",
+        "nach": "E8",
+        "art": "hydraulisch",
+        "medium": "Drucköl",
+        "absatz_ids": [
+          "P7",
+          "P10"
+        ],
+        "schnittstelle": "Hydraulikanschlüsse der Arbeitsausrüstung"
+      },
+      {
+        "id": "S6",
+        "von": "E14",
+        "nach": "E5",
+        "art": "hydraulisch",
+        "medium": "Drucköl für die Lenkung",
+        "absatz_ids": [
+          "P7"
+        ],
+        "schnittstelle": "Lenkhydraulikanschluss"
+      },
+      {
+        "id": "S7",
+        "von": "E4",
+        "nach": "E9",
+        "art": "elektrisch",
+        "medium": "Niedervoltstrom",
+        "absatz_ids": [
+          "P6"
+        ],
+        "schnittstelle": "Bordnetzanschluss"
+      },
+      {
+        "id": "S8",
+        "von": "E7",
+        "nach": "E10",
+        "art": "information",
+        "medium": "Fahrereingaben",
+        "absatz_ids": [
+          "P15"
+        ],
+        "schnittstelle": "Fahrzeugbus"
+      },
+      {
+        "id": "S9",
+        "von": "E3",
+        "nach": "E13",
+        "art": "thermisch",
+        "medium": "Motor- und Ölwärme",
+        "absatz_ids": [
+          "P6",
+          "P10",
+          "P13"
+        ],
+        "schnittstelle": "Kühlkreislauf"
+      },
+      {
+        "id": "S10",
+        "von": "E8",
+        "nach": "E2",
+        "art": "mechanisch",
+        "medium": "Ladungs-, Arbeits- und Zuglasten",
+        "absatz_ids": [
+          "P7",
+          "P10"
+        ],
+        "schnittstelle": "Befestigungs- und Anlenkpunkte"
+      },
+      {
+        "id": "S11",
+        "von": "E5",
+        "nach": "E2",
+        "art": "mechanisch",
+        "medium": "Lenkbewegung",
+        "absatz_ids": [
+          "P11",
+          "P12"
+        ],
+        "schnittstelle": "Achsschenkel, Knickgelenk oder Lenkski"
+      },
+      {
+        "id": "S12",
+        "von": "E6",
+        "nach": "E2",
+        "art": "mechanisch",
+        "medium": "Bremsmoment",
+        "absatz_ids": [
+          "P12"
+        ],
+        "schnittstelle": "Radbremse oder Bremse an der Kraftübertragung"
+      },
+      {
+        "id": "S13",
+        "von": "E13",
+        "nach": "E7",
+        "art": "thermisch",
+        "medium": "klimatisierte Luft",
+        "absatz_ids": [
+          "P15"
+        ],
+        "schnittstelle": "Luftverteilung des Bedienraums"
+      }
+    ],
+    "entfallene_kategorien": [],
+    "varianten": [
+      {
+        "id": "V1",
+        "element_id": "E8",
+        "bezeichnung": "Leistungsabgabe und Arbeitsausrüstung",
+        "alternativen": [
+          "Aufbau und Ladung für Personen und kleine Lasten mit Gepäckträger oder Laderaum und Anhängevorrichtung",
+          "Koppelpunkte für auswechselbare Anbaugeräte mit Zapfwelle, Hydraulikkupplungen und Anbaugerätebus",
+          "Fest verbaute Verarbeitungskette mit wechselbarem Erntevorsatz",
+          "Kran mit wechselbarem Werkzeug",
+          "Erdbauausrüstung mit Grabausrüstung, Hubgerüst, Planierschild oder Mulde mit Kippeinrichtung"
+        ],
+        "auswahlkriterien": [
+          "Aufgabe: Personen und kleine Lasten befördern (Freizeit und Transport), land- oder forstwirtschaftlich arbeiten (Arbeitsmaschinen), Erdmassen lösen, laden, schieben oder befördern (Baumaschinen)",
+          "Anteil der Motorleistung, der an die Arbeitsausrüstung geht",
+          "Umrüstbarkeit für wechselnde Arbeiten"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E14",
+            "beschreibung": "Arbeits- und Baumaschinen: Hydraulikversorgung als tragende Leistungsschiene, beim Traktor zusätzlich Zapfwelle und Druckluftanlage; Freizeit und Transport: allenfalls Seilwinde"
+          },
+          {
+            "element_id": "E3",
+            "beschreibung": "Verzweigung der Motorleistung auf Fahren und Arbeiten über Abtriebe oder Nebenaggregatetrieb"
+          },
+          {
+            "element_id": "E10",
+            "beschreibung": "Arbeitsspezifische Steuerungsfunktionen wie Auftragssteuerung, Durchsatzregelung, Aufarbeitungssteuerung oder Nutzlasterfassung"
+          },
+          {
+            "element_id": "E2",
+            "beschreibung": "Aufnahme der Arbeitskräfte über Hubrahmen, Schubrahmen, Drehverbindung oder Kipplager; Achslasten durch Ballast, Gegengewicht oder Zuladung"
+          },
+          {
+            "element_id": "E13",
+            "beschreibung": "Hydraulik- oder Getriebeölkühlung bei allen Arbeitsmaschinen sowie bei Bagger, Radlader und Planierraupe"
+          }
+        ],
+        "absatz_ids": [
+          "P9",
+          "P10"
+        ]
+      },
+      {
+        "id": "V2",
+        "element_id": "E2",
+        "bezeichnung": "Laufwerk und Lenkprinzip",
+        "alternativen": [
+          "Radfahrwerk mit gelenkten Rädern",
+          "Radfahrwerk mit Hecklenkung",
+          "Radfahrwerk mit Knicklenkung und geteilter Tragstruktur",
+          "Kettenlaufwerk mit Lenkung über die Kettendrehzahl",
+          "Gleiskette mit Lenkski"
+        ],
+        "auswahlkriterien": [
+          "Bodentragfähigkeit, Bodendruck und Traktionsbedarf gegenüber Fahrgeschwindigkeit und Straßenfahrt",
+          "Fahrzeugart: Kette festgelegt bei Schneemobil und Planierraupe, wählbar bei Bagger, Traktor, Mähdrescher und Forstmaschine",
+          "Wendigkeit und Spurtreue im Einsatzgebiet"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E3",
+            "beschreibung": "Kette: Kraftübertragung endet an Antriebsrädern, Lenkfunktion im Fahrantrieb; Knicklenkung: Gelenkwelle durch das Knickgelenk"
+          },
+          {
+            "element_id": "E5",
+            "beschreibung": "Lenkzylinder am Knickgelenk, Achsschenkel, Lenkachse, Lenkski oder keine eigene Lenkmechanik bei Kettenlenkung"
+          },
+          {
+            "element_id": "E6",
+            "beschreibung": "Bei Schneemobil und Planierraupe Bremse an der Kraftübertragung statt Radbremsen"
+          },
+          {
+            "element_id": "E9",
+            "beschreibung": "Knicklenkung: Leitungssatz mit Bewegungsreserve durch das Knickgelenk"
+          }
+        ],
+        "absatz_ids": [
+          "P3",
+          "P11",
+          "P12"
+        ]
+      },
+      {
+        "id": "V3",
+        "element_id": "E3",
+        "bezeichnung": "Bauart des Fahrantriebs",
+        "alternativen": [
+          "Mechanisch mit Verteilergetriebe, Geländeuntersetzung und Differenzialsperren",
+          "Stufenloses Keilriemengetriebe oder Keilriemenautomatik",
+          "Stufen-, Lastschalt- oder leistungsverzweigtes stufenloses Getriebe",
+          "Hydrostatischer Fahrantrieb",
+          "Mechanisch mit Drehmomentwandler",
+          "Dieselelektrischer Fahrantrieb"
+        ],
+        "auswahlkriterien": [
+          "Zugkraftbedarf bei geringer Geschwindigkeit und Transportgeschwindigkeit",
+          "Stufenlose Anpassung der Fahrgeschwindigkeit an die Arbeit (Mähdrescher, Forstmaschine, Bagger)",
+          "Lösungen der Kindartikel: Geländewagen, Quad, ATV und Schneemobil (Freizeit und Transport); Traktor, Mähdrescher und Forstmaschine (Arbeitsmaschinen); Bagger, Radlader, Planierraupe und Muldenkipper (Baumaschinen)",
+          "Wirkungsgrad und Wärmeeintrag"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E6",
+            "beschreibung": "Hydrostatisch: Verzögerung über den Fahrantrieb; Variator oder mechanischer Fahrantrieb ohne Dauerbremse: Betriebsbremse trägt den gesamten Verzögerungsbedarf; dieselelektrisch: elektrische Dauerbremse über Bremswiderstand"
+          },
+          {
+            "element_id": "E13",
+            "beschreibung": "Ölkühler für den hydrostatischen Fahrantrieb kommt hinzu oder entfällt"
+          },
+          {
+            "element_id": "E10",
+            "beschreibung": "Regelung von Fahrpumpe und Fahrmotoren, Schaltstrategie oder Allradsteuerung"
+          }
+        ],
+        "absatz_ids": [
+          "P13"
+        ]
+      },
+      {
+        "id": "V4",
+        "element_id": "E3",
+        "bezeichnung": "Antriebsart",
+        "alternativen": [
+          "Verbrennungsmotor mit Kraftstofftank",
+          "Batterieelektrischer Antrieb mit Traktionsbatterie und Traktionsmaschine",
+          "Hybridantrieb",
+          "Dieselelektrischer Antrieb",
+          "Brennstoffzellenantrieb mit Wasserstofftank und Brennstoffzellensystem"
+        ],
+        "auswahlkriterien": [
+          "Betrachtungsumfang der Kindartikel: Verbrennungsmotor überall; batterieelektrisch bei allen Fahrzeugarten von Freizeit und Transport, beim Traktor und bei Bagger, Radlader und Muldenkipper; Brennstoffzelle nur beim Traktor",
+          "Einsatzdauer ohne Betanken oder Laden und Infrastruktur am Einsatzort",
+          "Lokale Emissionen und Geräusch"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E4",
+            "beschreibung": "Batterie- und brennstoffzellenelektrisch: Hochvoltebene mit Traktionsbatterie und Ladeeinrichtung oder mit Wasserstofftank und Brennstoffzellensystem"
+          },
+          {
+            "element_id": "E4",
+            "beschreibung": "Dieselelektrisch: Kraftstoffversorgung bleibt, Generator speist den Zwischenkreis"
+          },
+          {
+            "element_id": "E13",
+            "beschreibung": "Batterie- und brennstoffzellenelektrisch: Batterietemperierung"
+          },
+          {
+            "element_id": "E13",
+            "beschreibung": "Dieselelektrisch: Kühlung von Generator und Traktionsmaschinen"
+          },
+          {
+            "element_id": "E10",
+            "beschreibung": "Energiemanagement im Fahrzeugmanagement"
+          },
+          {
+            "element_id": "E6",
+            "beschreibung": "Rückgewinnung von Bremsenergie über die Traktionsmaschine"
+          }
+        ],
+        "absatz_ids": [
+          "P14"
+        ]
+      },
+      {
+        "id": "V5",
+        "element_id": "E7",
+        "bezeichnung": "Bedienraumkonzept und Fahrerschutz",
+        "alternativen": [
+          "Offener Fahrerplatz mit Reitsitz und Lenker",
+          "Fahrgastraum mit Rückhaltesystem",
+          "Geschlossenes, klimatisiertes Fahrerhaus mit Schutzaufbauten",
+          "Bedienung von einem Leitstand bei Fernsteuerung"
+        ],
+        "auswahlkriterien": [
+          "Mitführen durch Gewichtsverlagerung (Quad, ATV, Schneemobil) oder geschützter Arbeitsplatz (Arbeits- und Baumaschinen)",
+          "Gefährdung durch Überschlag und herabfallende Gegenstände",
+          "Dauer der Arbeitsschichten und Umgebungsbelastung durch Staub, Lärm und Witterung"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E5",
+            "beschreibung": "Lenker, Lenkrad oder Fahrhebel und Joysticks als Lenkeingabe"
+          },
+          {
+            "element_id": "E11",
+            "beschreibung": "Motorstopp- oder Notausschalter am offenen Fahrerplatz; Überschlagschutz und Schutz gegen herabfallende Gegenstände am Fahrerhaus"
+          },
+          {
+            "element_id": "E2",
+            "beschreibung": "Aufnahmen für Schutzaufbauten in der Tragstruktur"
+          },
+          {
+            "element_id": "E13",
+            "beschreibung": "Klimatisierung des geschlossenen Bedienraums"
+          }
+        ],
+        "absatz_ids": [
+          "P15"
+        ]
+      },
+      {
+        "id": "V6",
+        "element_id": "E1",
+        "bezeichnung": "Rechtliche Einordnung",
+        "alternativen": [
+          "Kraftfahrzeug der Klassen M oder N mit Geländeeinstufung",
+          "Fahrzeug der Klasse L",
+          "Land- oder forstwirtschaftliche Zugmaschine",
+          "Selbstfahrende Arbeitsmaschine mit Straßenzulassung nach nationalem Recht (etwa Mähdrescher, Mobilbagger, Radlader)",
+          "Nicht für den Straßenverkehr bestimmte mobile Maschine, einschließlich Schneemobil und Gelände-ATV"
+        ],
+        "auswahlkriterien": [
+          "Betrieb auf öffentlichen Straßen",
+          "Motorregelung: Antriebsmotoren von Geländewagen, Straßenquad, Traktor und als Zugmaschine genehmigter Forstmaschine nach ihrer Fahrzeugverordnung; Motoren von Mähdrescher, übrigen Forstmaschinen, Baumaschinen, Schneemobil und Gelände-ATV nach der Verordnung über Motoren mobiler Maschinen",
+          "Fahrzeugzulassung: Geländewagen als Kraftfahrzeug, Straßenquad als Fahrzeug der Klasse L, Traktor und Forstmaschine als Zugmaschine, Mähdrescher, Mobilbagger und Radlader als selbstfahrende Arbeitsmaschine nach nationalem Recht oder keine Straßenzulassung",
+          "Einsatzland mit seinem Regelwerk"
+        ],
+        "auswirkungen": [
+          {
+            "element_id": "E12",
+            "beschreibung": "Straßenzulassung verlangt Beleuchtung und Signaleinrichtungen für den Straßenverkehr"
+          },
+          {
+            "element_id": "E6",
+            "beschreibung": "Bremsanforderungen der jeweiligen Fahrzeugverordnung"
+          },
+          {
+            "element_id": "E3",
+            "beschreibung": "Abgasanforderungen an Verbrennungsmotor und Abgasnachbehandlung nach Fahrzeug- oder Motorregelwerk"
+          }
+        ],
+        "absatz_ids": [
+          "P16",
+          "P17"
+        ]
+      }
+    ],
+    "klaerungsfragen": [
+      {
+        "id": "K1",
+        "frage": "Gibt das Fahrzeug einen großen Teil seiner Motorleistung über Zapfwelle, Hydraulik oder fest verbaute Arbeitsorgane an eine Arbeitsausrüstung ab, und dient diese der Land- und Forstwirtschaft oder dem Lösen, Laden, Schieben oder Befördern von Erdmassen, oder befördert es vor allem Personen und kleine Lasten, auch im land- oder forstwirtschaftlichen Einsatz?",
+        "element_ids": [
+          "E1",
+          "E8"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Die Antwort wählt Freizeit und Transport, Arbeitsmaschine oder Baumaschine als Spezialisierung des Grundblocks und damit Arbeitsausrüstung und Nebensysteme.",
+        "variante_ids": [
+          "V1"
+        ]
+      },
+      {
+        "id": "K2",
+        "frage": "Auf welchem Untergrund und mit welchem Straßenanteil wird das Fahrzeug betrieben, und genügt ein Radfahrwerk oder ist ein Kettenlaufwerk nötig?",
+        "element_ids": [
+          "E2",
+          "E5",
+          "E6"
+        ],
+        "anlass": "betrieb",
+        "relevanz": "Davon hängen Laufwerk, Lenkprinzip, Ende der Kraftübertragung und Angriffsort der Bremsen ab.",
+        "variante_ids": [
+          "V2"
+        ]
+      },
+      {
+        "id": "K3",
+        "frage": "Muss die Fahrgeschwindigkeit während der Arbeit stufenlos an die Last angepasst werden, oder genügt ein Getriebe mit Gangstufen und Untersetzung?",
+        "element_ids": [
+          "E3",
+          "E6",
+          "E13"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Fahrantriebsbauart, Bremsauslegung und Ölkühlung ab.",
+        "variante_ids": [
+          "V3"
+        ]
+      },
+      {
+        "id": "K4",
+        "frage": "Welche Antriebsart ist vorgesehen, und welche Lade- oder Tankinfrastruktur steht im Einsatzgebiet zur Verfügung?",
+        "element_ids": [
+          "E3",
+          "E4"
+        ],
+        "anlass": "architekturentscheidung",
+        "relevanz": "Davon hängen Energiespeicher, Hochvoltebene, Batterietemperierung und Energiemanagement ab.",
+        "variante_ids": [
+          "V4"
+        ]
+      },
+      {
+        "id": "K5",
+        "frage": "Soll der Fahrer auf einem offenen Fahrerplatz, in einem Fahrgastraum oder in einem geschlossenen Fahrerhaus mit Schutzaufbauten sitzen, oder wird das Fahrzeug von einem Leitstand bedient?",
+        "element_ids": [
+          "E7",
+          "E11"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen Lenkeingabe, Sicherheitskonzept, Strukturaufnahmen und Klimatisierung ab.",
+        "variante_ids": [
+          "V5"
+        ]
+      },
+      {
+        "id": "K6",
+        "frage": "Soll das Fahrzeug auf öffentlichen Straßen fahren, und wenn ja, als Kraftfahrzeug, als Fahrzeug der Klasse L, als land- oder forstwirtschaftliche Zugmaschine oder als selbstfahrende Arbeitsmaschine?",
+        "element_ids": [
+          "E1",
+          "E12",
+          "E6"
+        ],
+        "anlass": "anforderung",
+        "relevanz": "Davon hängen anzuwendendes Fahrzeug- oder Motorregelwerk, Straßenbeleuchtung, Bremsanforderungen und Abgasstrang ab.",
+        "variante_ids": [
+          "V6"
+        ]
+      },
+      {
+        "id": "K7",
+        "frage": "Welche Verbraucher versorgt die Hydraulik gleichzeitig, und haben Lenksystem und Bremssystem Vorrang vor der Arbeitshydraulik?",
+        "element_ids": [
+          "E14",
+          "E5",
+          "E6",
+          "E8"
+        ],
+        "anlass": "schnittstelle",
+        "relevanz": "Davon hängen Pumpenauslegung, Vorrangschaltung und die Ports zwischen Neben- und Versorgungssystemen und Arbeitsausrüstung ab."
+      }
+    ],
+    "anforderungsthemen": [
+      {
+        "id": "R1",
+        "element_ids": [
+          "E1",
+          "E2",
+          "E3"
+        ],
+        "thema": "Geländegängigkeit",
+        "kenngroessen": [
+          "Wattiefe",
+          "Steigfähigkeit",
+          "Bodenfreiheit",
+          "Böschungswinkel",
+          "Rampenwinkel",
+          "Kippwinkel",
+          "Achsverschränkung",
+          "Bodendruck"
+        ]
+      },
+      {
+        "id": "R2",
+        "element_ids": [
+          "E3",
+          "E4"
+        ],
+        "thema": "Abgasemissionen der Verbrennungsmotoren mobiler Maschinen",
+        "kenngroessen": [
+          "Motorkategorie",
+          "Emission gasförmiger Schadstoffe",
+          "Partikelemission",
+          "Bezugsleistung"
+        ],
+        "regelwerke": [
+          {
+            "bezeichnung": "Verordnung (EU) 2016/1628 (EU; Verbrennungsmotoren in nicht für den Straßenverkehr bestimmten mobilen Maschinen einschließlich Schneemobilen, ATV und Side-by-Side-Fahrzeugen; ohne Antriebsmotoren von Kraftfahrzeugen, land- und forstwirtschaftlichen Zugmaschinen und Fahrzeugen der Klasse L)",
+            "quellen_id": "Q1",
+            "fundstelle": "Artikel 2 Absätze 1 und 2; Artikel 4 Absatz 1"
+          }
+        ]
+      },
+      {
+        "id": "R3",
+        "element_ids": [
+          "E7",
+          "E11"
+        ],
+        "thema": "Fahrerschutz bei Überschlag und herabfallenden Gegenständen",
+        "kenngroessen": [
+          "Schutzwirkung des Überschlagschutzes",
+          "Schutzwirkung gegen herabfallende Gegenstände",
+          "Rückhaltung des Fahrers"
+        ]
+      },
+      {
+        "id": "R4",
+        "element_ids": [
+          "E14",
+          "E8"
+        ],
+        "thema": "Leistungsabgabe an die Arbeitsausrüstung",
+        "kenngroessen": [
+          "Hydraulischer Förderstrom",
+          "Systemdruck",
+          "Abtriebsleistung"
+        ]
+      }
+    ]
+  },
+  "offene_punkte": [
+    "Glossarklärung: Für das Elterntaxon Geländefahrzeuge nennen die Glossarvorgaben keinen Namen der Kategorie bedienraum. Der Grundblock verwendet Fahrerhaus, den Namen der Mehrheit der Fahrzeugarten (A-0140, A-0141); A-0139 verwendet Fahrerplatz und beim Geländewagen Fahrgastraum. Festlegung im Glossar erforderlich.",
+    "Glossarklärung: Für aufbau_nutzlast nennen die Glossarvorgaben Aufbau und Ladung ausdrücklich für Geländefahrzeuge, für Arbeits- und Baumaschinen aber Arbeitsausrüstung; der Grundblock verwendet Aufbau und Ladung, A-0140 und A-0141 redefinieren es als Arbeitsausrüstung. Bestätigung im Glossar erforderlich.",
+    "Vereinheitlichung Kindartikel: Zuordnung von Seilwinde (A-0139/P8), Hydraulikversorgung (A-0141/P10; Benennung in A-0140 offen) sowie Überschlagschutz und Schutz gegen herabfallende Gegenstände (A-0141/P10, A-0139/P11) vor der taxonweiten Wiederverwendung angleichen.",
+    "Recherche: Fachliteratur zur Terramechanik von Rad- und Kettenlaufwerken, um P3, P11 und P12 über Nachschlagewerke hinaus zu belegen; Review Terramechanics Models for Tracked Vehicle Terrain Interaction Analysis (Defence Science Journal, publications.drdo.gov.in) antwortete mit Serverfehler, die Fassung auf core.ac.uk und der Vorabdruck Similarities between Wheels and Tracks (orca.cardiff.ac.uk) waren durch eine Browserprüfung gesperrt; Lehrbuch Wong: Terramechanics and Off-Road Vehicle Engineering.",
+    "Recherche: Konsolidierte Fassung der Verordnung (EU) 2016/1628 auf EUR-Lex abrufen; Q1 ist die Fassung wie angenommen, deren Ausnahme in Artikel 2 Absatz 2 Buchstabe a auf die Richtlinie 2007/46/EG verweist (Suchbegriff: 2016/1628 consolidated Article 2 2018/858).",
+    "Recherche: Normative Begriffsbestimmung des Geländefahrzeugs über Fahrzeugarten hinweg (Suchbegriffe: Geländefahrzeug Begriff Norm, off-road vehicle definition ISO); Q3 nennt die außer Kraft gesetzte Richtlinie 87/403/EWG und wurde dafür nicht als Beleg verwendet."
+  ]
+}
